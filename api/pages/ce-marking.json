@@ -16,21 +16,121 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:declaration-of-conformity",
+        "label": "Declaration of Conformity"
+      },
+      {
+        "id": "urn:ngm:class:technical-file",
+        "label": "Technical File"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "id": "urn:ngm:class:harmonised-standard",
+        "label": "Harmonised Standard"
+      },
+      {
+        "id": "urn:ngm:class:notified-body",
+        "label": "Notified Body"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:market-access",
+        "label": "Market Access"
+      },
+      {
+        "id": "urn:ngm:class:product-commercialisation",
+        "label": "Product Commercialisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machinery-regulation",
+        "label": "Machinery Regulation"
+      },
+      {
+        "id": "urn:ngm:class:emc-directive",
+        "label": "EMC Directive"
+      },
+      {
+        "id": "urn:ngm:class:low-voltage-directive",
+        "label": "Low Voltage Directive"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:eu-product-safety-framework",
+        "label": "EU Product Safety Framework"
+      },
+      {
+        "id": "urn:ngm:class:new-approach-directive",
+        "label": "New Approach Directive"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ul-certification",
+        "label": "UL Certification"
+      },
+      {
+        "id": "urn:ngm:class:fcc-certification",
+        "label": "FCC Certification"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
     "uses": [],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:robot-standard",
+        "label": "Robot Standard"
+      },
+      {
+        "id": "urn:ngm:class:iso-12100",
+        "label": "ISO 12100"
+      },
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:robot-standard",
         "label": "Robot Standard"
+      },
+      {
+        "id": "urn:ngm:class:product-liability",
+        "label": "Product Liability"
+      },
+      {
+        "id": "urn:ngm:class:european-economic-area",
+        "label": "European Economic Area"
+      },
+      {
+        "id": "urn:ngm:class:type-examination",
+        "label": "Type Examination"
       }
     ]
   },

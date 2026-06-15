@@ -43,9 +43,9 @@ public:: true
   "@type": "Class",
   "label": "RoBERTa",
   "definition": "RoBERTa (Robustly Optimised BERT Pretraining Approach) is a transformer-based language model that refines BERT by removing the next-sentence-prediction objective, adopting dynamic masking, training on substantially larger corpora (160 GB vs 16 GB), and using larger batch sizes. These training-procedure improvements yield consistent performance gains on NLP benchmarks without altering the underlying transformer encoder architecture.",
-  "domain": "artificial-intelligence",
+  "domain": "machine-learning",
   "maturity": "emerging",
-  "qualityScore": 0.7,
+  "qualityScore": 0.72,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-model-architecture",
@@ -55,24 +55,56 @@ public:: true
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"}
+      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"},
+      {"@id": "urn:ngm:class:masked-language-model", "label": "Masked Language Model"},
+      {"@id": "urn:ngm:class:large-scale-corpus", "label": "Large Scale Corpus"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:sentiment-analysis", "label": "Sentiment Analysis"},
-      {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"}
+      {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"},
+      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
+      {"@id": "urn:ngm:class:text-classification", "label": "Text Classification"},
+      {"@id": "urn:ngm:class:natural-language-inference", "label": "Natural Language Inference"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
+      {"@id": "urn:ngm:class:dynamic-masking", "label": "Dynamic Masking"},
+      {"@id": "urn:ngm:class:byte-pair-encoding", "label": "Byte Pair Encoding"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:self-supervised-learning", "label": "Self-Supervised Learning"},
+      {"@id": "urn:ngm:class:pretraining", "label": "Pretraining"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:bert", "label": "BERT"},
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:glue-benchmark", "label": "GLUE Benchmark"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:albert", "label": "ALBERT"}
+      {"@id": "urn:ngm:class:albert", "label": "ALBERT"},
+      {"@id": "urn:ngm:class:xlnet", "label": "XLNet"},
+      {"@id": "urn:ngm:class:deberta", "label": "DeBERTa"},
+      {"@id": "urn:ngm:class:distilbert", "label": "DistilBERT"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:pre-trained-language-model", "label": "Pre-Trained Language Model"},
+      {"@id": "urn:ngm:class:contextual-word-embedding", "label": "Contextual Word Embedding"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
     ]
   },
+  "sameAs": [
+    {"@id": "urn:ngm:class:robustly-optimised-bert-pretraining-approach", "label": "Robustly Optimised BERT Pretraining Approach"}
+  ],
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

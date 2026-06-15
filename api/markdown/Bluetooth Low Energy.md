@@ -31,22 +31,57 @@ public:: true
       {"@id": "urn:ngm:class:bluetooth-sig", "label": "Bluetooth SIG"}
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:bluetooth-le", "label": "Bluetooth LE"}
+      {"@id": "urn:ngm:class:bluetooth-le", "label": "Bluetooth LE"},
+      {"@id": "urn:ngm:class:generic-attribute-profile", "label": "Generic Attribute Profile"},
+      {"@id": "urn:ngm:class:generic-access-profile", "label": "Generic Access Profile"},
+      {"@id": "urn:ngm:class:security-manager-protocol", "label": "Security Manager Protocol"},
+      {"@id": "urn:ngm:class:attribute-protocol", "label": "Attribute Protocol"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:sensor-technology", "label": "Sensor Technology"},
-      {"@id": "urn:ngm:class:service-discovery", "label": "Service Discovery"}
+      {"@id": "urn:ngm:class:service-discovery", "label": "Service Discovery"},
+      {"@id": "urn:ngm:class:asset-tracking", "label": "Asset Tracking"},
+      {"@id": "urn:ngm:class:indoor-positioning", "label": "Indoor Positioning"},
+      {"@id": "urn:ngm:class:wearable-computing", "label": "Wearable Computing"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:2-4-ghz-ism-band", "label": "2.4 GHz ISM Band"},
+      {"@id": "urn:ngm:class:embedded-microcontroller", "label": "Embedded Microcontroller"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:frequency-hopping-spread-spectrum", "label": "Frequency Hopping Spread Spectrum"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
+      {"@id": "urn:ngm:class:mesh-networking", "label": "Mesh Networking"},
+      {"@id": "urn:ngm:class:lc3-codec", "label": "LC3 Codec"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:zigbee", "label": "Zigbee"},
       {"@id": "urn:ngm:class:thread-protocol", "label": "Thread Protocol"},
-      {"@id": "urn:ngm:class:near-field-communication", "label": "Near Field Communication"}
+      {"@id": "urn:ngm:class:near-field-communication", "label": "Near Field Communication"},
+      {"@id": "urn:ngm:class:ultra-wideband", "label": "Ultra Wideband"},
+      {"@id": "urn:ngm:class:matter-protocol", "label": "Matter Protocol"}
     ],
-    "uses": [
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"}
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:classic-bluetooth", "label": "Classic Bluetooth"},
+      {"@id": "urn:ngm:class:wi-fi", "label": "Wi-Fi"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:ble", "label": "BLE"},
+    {"@id": "urn:ngm:class:bluetooth-4-0-le", "label": "Bluetooth 4.0 LE"}
+  ],
+  "quality": 0.75,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

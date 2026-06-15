@@ -54,7 +54,7 @@ public:: true
   "@id": "urn:ngm:class:bolt-12",
   "@type": "Class",
   "label": "BOLT12",
-  "definition": "BOLT12 is a Lightning Network specification that defines offers, a reusable payment request format that improves on single-use invoices. It supports recurring and static payment requests.",
+  "definition": "BOLT12 is a Lightning Network specification that defines offers, a reusable payment request format that improves on single-use invoices. It supports recurring and static payment requests, onion messaging for invoice fetching, and improved privacy through blinded paths.",
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -65,24 +65,146 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:lightning-offer",
+        "label": "Lightning Offer"
+      },
+      {
+        "@id": "urn:ngm:class:onion-message",
+        "label": "Onion Message"
+      },
+      {
+        "@id": "urn:ngm:class:blinded-path",
+        "label": "Blinded Path"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:lightning-network-specification",
+        "label": "Lightning Network Specification"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:bolt",
         "label": "BOLT"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:onion-routing",
+        "label": "Onion Routing"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:phoenix",
         "label": "Phoenix"
+      },
+      {
+        "@id": "urn:ngm:class:recurring-payment",
+        "label": "Recurring Payment"
+      },
+      {
+        "@id": "urn:ngm:class:static-payment-code",
+        "label": "Static Payment Code"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-payment",
+        "label": "Privacy-Preserving Payment"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:offer-protocol",
+        "label": "Offer Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:tlv-encoding",
+        "label": "TLV Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:bech32m",
+        "label": "Bech32m"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      },
+      {
+        "@id": "urn:ngm:class:merchant-payment-flow",
+        "label": "Merchant Payment Flow"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:lightning-network-specification",
+        "label": "Lightning Network Specification"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:bolt-11",
+        "label": "BOLT11"
+      },
+      {
+        "@id": "urn:ngm:class:payment-request",
+        "label": "Payment Request"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:payment-protocol",
+        "label": "Payment Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:invoice",
+        "label": "Invoice"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-node",
+        "label": "Lightning Node"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:lightning-offers",
+      "label": "Lightning Offers"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

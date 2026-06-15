@@ -58,7 +58,7 @@ public:: true
   "@id": "urn:ngm:class:crypto-regulation",
   "@type": "Class",
   "label": "Crypto Regulation",
-  "definition": "Crypto regulation is the body of laws and supervisory rules governing the issuance, trading, custody and use of crypto-assets.",
+  "definition": "Crypto regulation is the body of laws and supervisory rules governing the issuance, trading, custody and use of crypto-assets, including authorisation of service providers, disclosure requirements, market conduct rules, client-asset custody standards, and anti-money-laundering obligations.",
   "domain": "governance",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -69,24 +69,158 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "@id": "urn:ngm:class:market-abuse-regulation",
+        "label": "Market Abuse Regulation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:regulatory-frameworks",
         "label": "Regulatory Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:licensing",
+        "label": "Licensing"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:investor-protection",
         "label": "Investor Protection"
+      },
+      {
+        "@id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:financial-action-task-force",
+        "label": "Financial Action Task Force"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:markets-in-crypto-assets-regulation",
+        "label": "Markets in Crypto-Assets Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:basel-committee-on-banking-supervision",
+        "label": "Basel Committee on Banking Supervision"
+      },
+      {
+        "@id": "urn:ngm:class:international-organization-of-securities-commissions",
+        "label": "International Organization of Securities Commissions"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "@id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:securities-law",
+        "label": "Securities Law"
+      },
+      {
+        "@id": "urn:ngm:class:taxation",
+        "label": "Taxation"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:cryptocurrency-regulation",
+      "label": "Cryptocurrency Regulation"
+    },
+    {
+      "@id": "urn:ngm:class:digital-asset-regulation",
+      "label": "Digital Asset Regulation"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

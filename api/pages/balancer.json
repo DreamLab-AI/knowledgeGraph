@@ -16,8 +16,30 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:vault",
+        "label": "Vault"
+      },
+      {
+        "id": "urn:ngm:class:boosted-pool",
+        "label": "Boosted Pool"
+      },
+      {
+        "id": "urn:ngm:class:managed-pool",
+        "label": "Managed Pool"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:arbitrage",
+        "label": "Arbitrage"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-provider",
+        "label": "Liquidity Provider"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:decentralized-finance-de-fi",
@@ -26,12 +48,42 @@
       {
         "id": "urn:ngm:class:asset-liquidity",
         "label": "Asset Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-portfolio-management",
+        "label": "On-Chain Portfolio Management"
+      },
+      {
+        "id": "urn:ngm:class:yield-bearing-liquidity",
+        "label": "Yield-Bearing Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:constant-product-amm",
+        "label": "Constant-Product AMM"
+      },
+      {
+        "id": "urn:ngm:class:order-book-exchange",
+        "label": "Order Book Exchange"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:finance",
+        "label": "Finance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:liquidity-pool",
@@ -40,6 +92,22 @@
       {
         "id": "urn:ngm:class:evm",
         "label": "EVM"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:weighted-pool",
+        "label": "Weighted Pool"
+      },
+      {
+        "id": "urn:ngm:class:stableswap-invariant",
+        "label": "StableSwap Invariant"
+      },
+      {
+        "id": "urn:ngm:class:vote-escrowed-token",
+        "label": "Vote-Escrowed Token"
       }
     ],
     "supports": [],
@@ -57,6 +125,18 @@
       {
         "id": "urn:ngm:class:concentrated-liquidity",
         "label": "Concentrated Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:curve-finance",
+        "label": "Curve Finance"
+      },
+      {
+        "id": "urn:ngm:class:uniswap",
+        "label": "Uniswap"
+      },
+      {
+        "id": "urn:ngm:class:liquid-staking-token",
+        "label": "Liquid Staking Token"
       }
     ]
   },

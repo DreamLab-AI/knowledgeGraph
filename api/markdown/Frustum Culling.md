@@ -28,18 +28,50 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
       {"@id": "urn:ngm:class:scene-optimization", "label": "Scene Optimization"},
-      {"@id": "urn:ngm:class:performance-optimization", "label": "Performance Optimization"}
+      {"@id": "urn:ngm:class:performance-optimization", "label": "Performance Optimization"},
+      {"@id": "urn:ngm:class:gpu-driven-rendering", "label": "GPU-Driven Rendering"},
+      {"@id": "urn:ngm:class:draw-call-batching", "label": "Draw Call Batching"}
     ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:occlusion-culling", "label": "Occlusion Culling"},
-      {"@id": "urn:ngm:class:level-of-detail", "label": "Level of Detail"},
-      {"@id": "urn:ngm:class:scene-management", "label": "Scene Management"}
+    "requires": [
+      {"@id": "urn:ngm:class:view-projection-matrix", "label": "View-Projection Matrix"},
+      {"@id": "urn:ngm:class:bounding-volume", "label": "Bounding Volume"},
+      {"@id": "urn:ngm:class:camera-model", "label": "Camera Model"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:scene-graph", "label": "Scene Graph"}
+      {"@id": "urn:ngm:class:scene-graph", "label": "Scene Graph"},
+      {"@id": "urn:ngm:class:bounding-volume-hierarchy", "label": "Bounding Volume Hierarchy"},
+      {"@id": "urn:ngm:class:octree", "label": "Octree"},
+      {"@id": "urn:ngm:class:axis-aligned-bounding-box", "label": "Axis-Aligned Bounding Box"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:plane-intersection-test", "label": "Plane Intersection Test"},
+      {"@id": "urn:ngm:class:sphere-frustum-test", "label": "Sphere-Frustum Test"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:occlusion-culling", "label": "Occlusion Culling"},
+      {"@id": "urn:ngm:class:backface-culling", "label": "Backface Culling"},
+      {"@id": "urn:ngm:class:portal-culling", "label": "Portal Culling"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:level-of-detail", "label": "Level of Detail"},
+      {"@id": "urn:ngm:class:scene-management", "label": "Scene Management"},
+      {"@id": "urn:ngm:class:clipping", "label": "Clipping"},
+      {"@id": "urn:ngm:class:spatial-indexing", "label": "Spatial Indexing"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:view-frustum-culling", "label": "View Frustum Culling"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

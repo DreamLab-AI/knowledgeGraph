@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Shamir Secret Sharing",
   "definition": "Shamir secret sharing splits a secret into shares so that any threshold number of them reconstructs it while fewer reveal nothing, using polynomial interpolation over a finite field.",
-  "domain": "metaverse",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [
@@ -69,20 +69,122 @@ public:: true
       {
         "@id": "urn:ngm:class:modular-arithmetic",
         "label": "Modular Arithmetic"
+      },
+      {
+        "@id": "urn:ngm:class:finite-field",
+        "label": "Finite Field"
+      },
+      {
+        "@id": "urn:ngm:class:polynomial-interpolation",
+        "label": "Polynomial Interpolation"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:threshold-cryptography",
         "label": "Threshold Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-key-management",
+        "label": "Distributed Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:secure-multiparty-computation",
+        "label": "Secure Multiparty Computation"
+      },
+      {
+        "@id": "urn:ngm:class:key-recovery",
+        "label": "Key Recovery"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:secret-sharing",
+        "label": "Secret Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:information-theoretic-security",
+        "label": "Information-Theoretic Security"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:lagrange-interpolation",
+        "label": "Lagrange Interpolation"
+      },
+      {
+        "@id": "urn:ngm:class:random-polynomial",
+        "label": "Random Polynomial"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:decentralized-key-storage",
+        "label": "Decentralized Key Storage"
+      },
+      {
+        "@id": "urn:ngm:class:wallet-backup",
+        "label": "Wallet Backup"
+      },
+      {
+        "@id": "urn:ngm:class:multi-signature",
+        "label": "Multi-Signature"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-secret-sharing",
+        "label": "Verifiable Secret Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:bip39",
+        "label": "BIP39"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:stark",
+        "label": "STARK"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:sss",
+      "label": "SSS"
+    },
+    {
+      "@id": "urn:ngm:class:threshold-secret-sharing",
+      "label": "Threshold Secret Sharing"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -45,7 +45,7 @@ public:: true
   "definition": "Safety Fine Tuning is a specialised training stage applied after general capability training to reduce harmful outputs and align model behaviour with safety principles. It employs safety-curated datasets, RLHF, and constitutional AI objectives to harden models against adversarial misuse and emergent misalignment.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "qualityScore": 0.7,
+  "qualityScore": 0.72,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
@@ -61,6 +61,16 @@ public:: true
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:safety-aligned-fine-tuning",
+      "label": "Safety-Aligned Fine Tuning"
+    },
+    {
+      "@id": "urn:ngm:class:alignment-fine-tuning",
+      "label": "Alignment Fine Tuning"
+    }
+  ],
   "relations": {
     "requires": [
       {
@@ -70,18 +80,74 @@ public:: true
       {
         "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:safety-dataset",
+        "label": "Safety Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
+      },
+      {
+        "@id": "urn:ngm:class:supervised-fine-tuning",
+        "label": "Supervised Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:harmless-ai",
+        "label": "Harmless AI"
+      },
+      {
+        "@id": "urn:ngm:class:refusal-behaviour",
+        "label": "Refusal Behaviour"
+      },
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
       }
     ],
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:adversarial-attack",
         "label": "Adversarial Attack"
+      },
+      {
+        "@id": "urn:ngm:class:jailbreaking",
+        "label": "Jailbreaking"
+      },
+      {
+        "@id": "urn:ngm:class:emergent-misalignment",
+        "label": "Emergent Misalignment"
       }
     ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:robustness",
         "label": "Robustness"
+      },
+      {
+        "@id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ],
     "supports": [
@@ -92,6 +158,30 @@ public:: true
       {
         "@id": "urn:ngm:class:value-alignment",
         "label": "Value Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:human-feedback",
+        "label": "Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:reward-model",
+        "label": "Reward Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ]
   }

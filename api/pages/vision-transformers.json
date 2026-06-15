@@ -4,8 +4,8 @@
   "slug": "vision-transformers",
   "public": true,
   "classIri": "urn:ngm:class:vision-transformers",
-  "domain": "ai",
-  "definition": "Transformer-based neural network architectures applied to images by splitting an image into patches and treating the patches as a sequence of tokens for self-attention.",
+  "domain": "machine-learning",
+  "definition": "Transformer-based neural network architectures applied to images by splitting an image into fixed-size patches and treating those patches as a sequence of tokens for self-attention, enabling global context modelling across the full image without relying on local convolutional receptive fields.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:vision-transformer",
@@ -13,10 +13,23 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "growing",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:patch-embedding",
+        "label": "Patch Embedding"
+      },
+      {
+        "id": "urn:ngm:class:multi-head-self-attention",
+        "label": "Multi-Head Self-Attention"
+      },
+      {
+        "id": "urn:ngm:class:feed-forward-network",
+        "label": "Feed-Forward Network"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:transformer",
@@ -25,23 +38,87 @@
       {
         "id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      },
+      {
+        "id": "urn:ngm:class:large-scale-pretraining",
+        "label": "Large-Scale Pretraining"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:image-segmentation",
         "label": "Image Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-learning",
+        "label": "Multimodal Learning"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:layer-normalisation",
+        "label": "Layer Normalisation"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "id": "urn:ngm:class:image-recognition",
+        "label": "Image Recognition"
+      }
+    ]
   },
   "wikilinks": [
     {

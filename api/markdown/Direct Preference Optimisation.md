@@ -50,9 +50,9 @@ public:: true
   "@id": "urn:ngm:class:direct-preference-optimisation",
   "@type": "Class",
   "label": "Direct Preference Optimisation",
-  "definition": "An alignment mod that directly uses preference data to fine-tune language models without training a separate reward model or using reinforcement learning, offering a simpler alternative to RLHF.",
-  "domain": "spatial-computing",
-  "maturity": "draft",
+  "definition": "An alignment method that directly uses preference data to fine-tune language models without training a separate reward model or using reinforcement learning, offering a simpler and more stable alternative to RLHF. DPO reparameterises the reward model objective to optimise the policy directly on preference comparison pairs.",
+  "domain": "machine-learning",
+  "maturity": "emerging",
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-content-and-assets",
@@ -62,22 +62,56 @@ public:: true
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:preference-learning", "label": "Preference Learning"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine-Tuning"},
+      {"@id": "urn:ngm:class:human-preference-data", "label": "Human Preference Data"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
+      {"@id": "urn:ngm:class:instruction-following", "label": "Instruction Following"},
+      {"@id": "urn:ngm:class:value-alignment", "label": "Value Alignment"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
+      {"@id": "urn:ngm:class:proximal-policy-optimisation", "label": "Proximal Policy Optimisation"},
+      {"@id": "urn:ngm:class:reward-modelling", "label": "Reward Modelling"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:policy-optimisation", "label": "Policy Optimisation"},
+      {"@id": "urn:ngm:class:bradley-terry-model", "label": "Bradley-Terry Model"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:language-model", "label": "Language Model"},
+      {"@id": "urn:ngm:class:reference-policy", "label": "Reference Policy"},
+      {"@id": "urn:ngm:class:kl-divergence", "label": "KL Divergence"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
+      {"@id": "urn:ngm:class:model-safety", "label": "Model Safety"},
+      {"@id": "urn:ngm:class:human-feedback", "label": "Human Feedback"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:pairwise-comparison", "label": "Pairwise Comparison"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:constitutional-ai", "label": "Constitutional AI"},
+      {"@id": "urn:ngm:class:self-supervised-learning", "label": "Self-Supervised Learning"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"}
     ]
   },
-  "maturity": "emerging",
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:direct-preference-optimization", "label": "Direct Preference Optimization"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

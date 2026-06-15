@@ -28,18 +28,54 @@ alias:: Bitcoin-Ordinals
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script", "label": "Bitcoin Script"},
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"}
-    ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:nft", "label": "NFT"},
-      {"@id": "urn:ngm:class:digital-art", "label": "Digital Art"},
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
+      {"@id": "urn:ngm:class:taproot", "label": "Taproot"},
+      {"@id": "urn:ngm:class:segwit", "label": "SegWit"},
+      {"@id": "urn:ngm:class:utxo", "label": "UTXO"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core", "label": "Bitcoin Core"}
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core", "label": "Bitcoin Core"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"},
+      {"@id": "urn:ngm:class:witness-data", "label": "Witness Data"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:inscription", "label": "Inscription"},
+      {"@id": "urn:ngm:class:brc-20", "label": "BRC-20"},
+      {"@id": "urn:ngm:class:satoshi", "label": "Satoshi"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:digital-ownership", "label": "Digital Ownership"},
+      {"@id": "urn:ngm:class:on-chain-storage", "label": "On-Chain Storage"},
+      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:nft", "label": "NFT"},
+      {"@id": "urn:ngm:class:erc-721", "label": "ERC-721"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-art", "label": "Digital Art"},
+      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
+      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"},
+      {"@id": "urn:ngm:class:mining", "label": "Mining"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
+      {"@id": "urn:ngm:class:digital-collectible", "label": "Digital Collectible"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:ordinal-inscription", "label": "Ordinal Inscription"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

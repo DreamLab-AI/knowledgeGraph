@@ -89,32 +89,72 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:difficulty-adjustment-algorithm", "label": "Difficulty Adjustment Algorithm"},
+      {"@id": "urn:ngm:class:block-interval", "label": "Block Interval"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"},
+      {"@id": "urn:ngm:class:network-synchrony-model", "label": "Network Synchrony Model"}
+    ],
     "requires": [
       {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:block-propagation", "label": "Block Propagation"}
+      {"@id": "urn:ngm:class:block-propagation", "label": "Block Propagation"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"},
+      {"@id": "urn:ngm:class:hash-rate", "label": "Hash Rate"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:transaction-confirmation", "label": "Transaction Confirmation"},
-      {"@id": "urn:ngm:class:transaction-finality", "label": "Transaction Finality"}
+      {"@id": "urn:ngm:class:transaction-finality", "label": "Transaction Finality"},
+      {"@id": "urn:ngm:class:network-throughput", "label": "Network Throughput"},
+      {"@id": "urn:ngm:class:uncle-block", "label": "Uncle Block"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:network-latency", "label": "Network Latency"},
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
+      {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
+      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:chain-security", "label": "Chain Security"},
+      {"@id": "urn:ngm:class:double-spend-prevention", "label": "Double Spend Prevention"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iso-iec-23257", "label": "ISO/IEC 23257"},
+      {"@id": "urn:ngm:class:ieee-2418-1", "label": "IEEE 2418.1"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
+      {"@id": "urn:ngm:class:block-size", "label": "Block Size"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:block-size", "label": "Block Size"},
       {"@id": "urn:ngm:class:block-height", "label": "Block Height"},
       {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
       {"@id": "urn:ngm:class:mining", "label": "Mining"},
-      {"@id": "urn:ngm:class:finality", "label": "Finality"}
+      {"@id": "urn:ngm:class:finality", "label": "Finality"},
+      {"@id": "urn:ngm:class:mempool", "label": "Mempool"},
+      {"@id": "urn:ngm:class:orphan-block", "label": "Orphan Block"}
     ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}
-    ],
-    "partOf": [
-      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-energy-optimisation", "label": "AI Energy Optimisation"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
     ]
   },
+  "sameAs": [
+    {"@id": "urn:ngm:class:interblock-time", "label": "Interblock Time"},
+    {"@id": "urn:ngm:class:block-interval", "label": "Block Interval"}
+  ],
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

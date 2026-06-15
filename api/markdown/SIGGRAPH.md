@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "SIGGRAPH",
   "definition": "SIGGRAPH (Special Interest Group on Computer Graphics and Interactive Techniques) is the ACM's premier annual conference on computer graphics and interactive technology, considered the world's most prestigious venue for publishing advances in rendering, animation, simulation, geometry processing, and human-computer interaction. First held in 1974, SIGGRAPH has been the introduction point for transformative techniques including ray tracing, physically based rendering, GPU shading languages, neural rendering, and real-time global illumination. Its technical papers programme is among the most selective in computer science, with acceptance rates typically below 25 per cent.",
-  "domain": "metaverse",
+  "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:computer-graphics", "label": "Computer Graphics"}],
   "relations": {
@@ -31,15 +31,52 @@ public:: true
       {"@id": "urn:ngm:class:global-illumination", "label": "Global Illumination"},
       {"@id": "urn:ngm:class:3-d-modeling", "label": "3D Modeling"},
       {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"},
-      {"@id": "urn:ngm:class:3-d-gaussian-splatting", "label": "3D Gaussian Splatting"}
+      {"@id": "urn:ngm:class:3-d-gaussian-splatting", "label": "3D Gaussian Splatting"},
+      {"@id": "urn:ngm:class:animation", "label": "Animation"},
+      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
+      {"@id": "urn:ngm:class:geometry-processing", "label": "Geometry Processing"},
+      {"@id": "urn:ngm:class:shading-language", "label": "Shading Language"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
       {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"},
-      {"@id": "urn:ngm:class:differentiable-rendering", "label": "Differentiable Rendering"}
+      {"@id": "urn:ngm:class:differentiable-rendering", "label": "Differentiable Rendering"},
+      {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"},
+      {"@id": "urn:ngm:class:gpu-programming", "label": "GPU Programming"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:technical-papers-programme", "label": "Technical Papers Programme"},
+      {"@id": "urn:ngm:class:electronic-theatre", "label": "Electronic Theatre"},
+      {"@id": "urn:ngm:class:emerging-technologies", "label": "Emerging Technologies"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:association-for-computing-machinery", "label": "Association for Computing Machinery"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:peer-review", "label": "Peer Review"},
+      {"@id": "urn:ngm:class:open-access", "label": "Open Access"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:computer-graphics", "label": "Computer Graphics"},
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:acm-siggraph", "label": "ACM SIGGRAPH"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

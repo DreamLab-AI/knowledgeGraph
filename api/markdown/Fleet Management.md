@@ -25,22 +25,57 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:asset-management", "label": "Asset Management"}],
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
-      {"@id": "urn:ngm:class:logistics-optimization", "label": "Logistics Optimization"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:telematics", "label": "Telematics"},
+      {"@id": "urn:ngm:class:route-optimisation", "label": "Route Optimisation"},
+      {"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"},
+      {"@id": "urn:ngm:class:driver-behaviour-monitoring", "label": "Driver Behaviour Monitoring"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:gnss-positioning", "label": "GNSS Positioning"},
+      {"@id": "urn:ngm:class:cellular-network", "label": "Cellular Network"},
+      {"@id": "urn:ngm:class:vehicle-diagnostics", "label": "Vehicle Diagnostics"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:real-time-monitoring", "label": "Real-Time Monitoring"},
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"}
+      {"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:technology-programme-delivery-planning", "label": "Technology Programme Delivery Planning"}
+      {"@id": "urn:ngm:class:technology-programme-delivery-planning", "label": "Technology Programme Delivery Planning"},
+      {"@id": "urn:ngm:class:usage-based-insurance", "label": "Usage-Based Insurance"},
+      {"@id": "urn:ngm:class:energy-management", "label": "Energy Management"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
+      {"@id": "urn:ngm:class:data-analytics", "label": "Data Analytics"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
+      {"@id": "urn:ngm:class:logistics-optimization", "label": "Logistics Optimization"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:vehicle-fleet-management", "label": "Vehicle Fleet Management"},
+    {"@id": "urn:ngm:class:transport-management", "label": "Transport Management"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

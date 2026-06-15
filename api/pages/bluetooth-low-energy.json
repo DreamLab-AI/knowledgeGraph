@@ -13,16 +13,41 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "mature",
   "relationships": {
     "hasPart": [
       {
         "id": "urn:ngm:class:bluetooth-le",
         "label": "Bluetooth LE"
+      },
+      {
+        "id": "urn:ngm:class:generic-attribute-profile",
+        "label": "Generic Attribute Profile"
+      },
+      {
+        "id": "urn:ngm:class:generic-access-profile",
+        "label": "Generic Access Profile"
+      },
+      {
+        "id": "urn:ngm:class:security-manager-protocol",
+        "label": "Security Manager Protocol"
+      },
+      {
+        "id": "urn:ngm:class:attribute-protocol",
+        "label": "Attribute Protocol"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:2-4-ghz-ism-band",
+        "label": "2.4 GHz ISM Band"
+      },
+      {
+        "id": "urn:ngm:class:embedded-microcontroller",
+        "label": "Embedded Microcontroller"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:sensor-technology",
@@ -31,16 +56,59 @@
       {
         "id": "urn:ngm:class:service-discovery",
         "label": "Service Discovery"
+      },
+      {
+        "id": "urn:ngm:class:asset-tracking",
+        "label": "Asset Tracking"
+      },
+      {
+        "id": "urn:ngm:class:indoor-positioning",
+        "label": "Indoor Positioning"
+      },
+      {
+        "id": "urn:ngm:class:wearable-computing",
+        "label": "Wearable Computing"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:frequency-hopping-spread-spectrum",
+        "label": "Frequency Hopping Spread Spectrum"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:classic-bluetooth",
+        "label": "Classic Bluetooth"
+      },
+      {
+        "id": "urn:ngm:class:wi-fi",
+        "label": "Wi-Fi"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:mesh-networking",
+        "label": "Mesh Networking"
+      },
+      {
+        "id": "urn:ngm:class:lc3-codec",
+        "label": "LC3 Codec"
       }
     ],
     "supports": [],
@@ -63,6 +131,14 @@
       {
         "id": "urn:ngm:class:near-field-communication",
         "label": "Near Field Communication"
+      },
+      {
+        "id": "urn:ngm:class:ultra-wideband",
+        "label": "Ultra Wideband"
+      },
+      {
+        "id": "urn:ngm:class:matter-protocol",
+        "label": "Matter Protocol"
       }
     ]
   },

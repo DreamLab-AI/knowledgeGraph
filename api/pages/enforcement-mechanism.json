@@ -17,7 +17,16 @@
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:violation-detection",
+        "label": "Violation Detection"
+      },
+      {
+        "id": "urn:ngm:class:penalty-mechanism",
+        "label": "Penalty Mechanism"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:sanctions-enforcement",
@@ -26,12 +35,55 @@
       {
         "id": "urn:ngm:class:legal-compliance",
         "label": "Legal Compliance"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:rule-of-law",
+        "label": "Rule of Law"
+      },
+      {
+        "id": "urn:ngm:class:deterrence",
+        "label": "Deterrence"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:voluntary-compliance",
+        "label": "Voluntary Compliance"
+      },
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-auditing",
+        "label": "Algorithmic Auditing"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:policy-enforcement-point",
@@ -40,9 +92,26 @@
       {
         "id": "urn:ngm:class:policy-engine",
         "label": "Policy Engine"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:monitoring-system",
+        "label": "Monitoring System"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -61,6 +130,14 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-authority",
+        "label": "Regulatory Authority"
+      },
+      {
+        "id": "urn:ngm:class:audit-mechanism",
+        "label": "Audit Mechanism"
       }
     ]
   },

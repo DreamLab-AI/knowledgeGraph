@@ -56,29 +56,119 @@ public:: true
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.35,
+  "quality": 0.65,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:digital-media",
+      "label": "Digital Media"
+    },
+    {
+      "@id": "urn:ngm:class:digital-information",
+      "label": "Digital Information"
+    }
+  ],
   "relations": {
     "hasPart": [
       {
         "@id": "urn:ngm:class:digital-asset",
         "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:information-ecosystem",
+        "label": "Information Ecosystem"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "@id": "urn:ngm:class:storage",
+        "label": "Storage"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:digital-content-creation",
         "label": "Digital Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "@id": "urn:ngm:class:monetisation",
+        "label": "Monetisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:encoding",
+        "label": "Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:digital-asset-management",
         "label": "Digital Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:compression",
+        "label": "Compression"
+      },
+      {
+        "@id": "urn:ngm:class:content-distribution",
+        "label": "Content Distribution"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:physical-media",
+        "label": "Physical Media"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "relatedTo": [
@@ -89,6 +179,14 @@ public:: true
       {
         "@id": "urn:ngm:class:nft",
         "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:intellectual-property",
+        "label": "Intellectual Property"
+      },
+      {
+        "@id": "urn:ngm:class:provenance",
+        "label": "Provenance"
       }
     ]
   }

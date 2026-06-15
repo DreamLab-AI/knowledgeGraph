@@ -4,8 +4,8 @@
   "slug": "archival-standards",
   "public": true,
   "classIri": "urn:ngm:class:archival-standards",
-  "domain": "spatial-computing",
-  "definition": "Archival Standards encompass frameworks, specifications, and best practices for long-term digital preservation, including metadata standards (PREMIS, METS), reference models (OAIS), and storage technologies that ensure digital content remains accessible, authentic, and interpretable across techno...",
+  "domain": "standards",
+  "definition": "Archival Standards encompass frameworks, specifications, and best practices for long-term digital preservation, including metadata standards (PREMIS, METS), reference models (OAIS), and storage technologies that ensure digital content remains accessible, authentic, and interpretable across technological changes.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-standards-and-interop",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.7,
   "maturity": "draft",
   "relationships": {
     "hasPart": [],
@@ -29,6 +29,14 @@
       {
         "id": "urn:ngm:class:storage-infrastructure",
         "label": "Storage Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:digital-preservation",
+        "label": "Digital Preservation"
+      },
+      {
+        "id": "urn:ngm:class:fixity-checking",
+        "label": "Fixity Checking"
       }
     ],
     "enables": [
@@ -43,22 +51,100 @@
       {
         "id": "urn:ngm:class:long-term-preservation",
         "label": "Long-Term Preservation"
+      },
+      {
+        "id": "urn:ngm:class:trusted-digital-repository",
+        "label": "Trusted Digital Repository"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:oais-reference-model",
+        "label": "OAIS Reference Model"
+      },
+      {
+        "id": "urn:ngm:class:premis-metadata-standard",
+        "label": "PREMIS Metadata Standard"
+      },
+      {
+        "id": "urn:ngm:class:mets-metadata-standard",
+        "label": "METS Metadata Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:backup-and-recovery",
+        "label": "Backup and Recovery"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:infra-legal-and-regulatory",
         "label": "Legal and Regulatory"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
       }
     ],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:checksum-verification",
+        "label": "Checksum Verification"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:information-governance",
+        "label": "Information Governance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-14721",
+        "label": "ISO 14721"
+      },
+      {
+        "id": "urn:ngm:class:iso-16363",
+        "label": "ISO 16363"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:preservation-standards",
+        "label": "Preservation Standards"
+      },
+      {
+        "id": "urn:ngm:class:records-management",
+        "label": "Records Management"
+      },
+      {
+        "id": "urn:ngm:class:open-archival-information-system",
+        "label": "Open Archival Information System"
+      }
+    ]
   },
   "wikilinks": [
     {

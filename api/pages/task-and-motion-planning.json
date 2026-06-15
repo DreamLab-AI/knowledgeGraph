@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:task-and-motion-planning",
   "domain": "robotics",
-  "definition": "Task and motion planning is an approach in robotics that combines high-level task planning with low-level motion planning to produce executable plans. It addresses both what to do and how to move.",
+  "definition": "Task and motion planning is an approach in robotics that combines high-level symbolic task planning with low-level geometric motion planning to produce fully executable robot plans. It jointly addresses what actions to perform and how to physically execute each movement, interleaving logical goal satisfaction with collision-free trajectory synthesis.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:motion-planning",
@@ -13,31 +13,113 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:planning",
         "label": "Planning"
+      },
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:robot-control",
         "label": "Robot Control"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-manipulation",
+        "label": "Autonomous Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:robot-task-execution",
+        "label": "Robot Task Execution"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:robot-perception",
+        "label": "Robot Perception"
+      },
+      {
+        "id": "urn:ngm:class:scene-representation",
+        "label": "Scene Representation"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:reactive-planning",
+        "label": "Reactive Planning"
+      },
+      {
+        "id": "urn:ngm:class:classical-planning",
+        "label": "Classical Planning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:pddl",
+        "label": "PDDL"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-roadmap",
+        "label": "Probabilistic Roadmap"
+      },
+      {
+        "id": "urn:ngm:class:rapidly-exploring-random-tree",
+        "label": "Rapidly-Exploring Random Tree"
+      },
+      {
+        "id": "urn:ngm:class:pathfinding-algorithm",
+        "label": "Pathfinding Algorithm"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:manipulation-planning",
+        "label": "Manipulation Planning"
+      }
+    ]
   },
   "wikilinks": [
     {

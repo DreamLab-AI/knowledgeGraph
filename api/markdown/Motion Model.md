@@ -25,23 +25,59 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:kinematics-model", "label": "Kinematics Model"}],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:process-noise-model", "label": "Process Noise Model"},
+      {"@id": "urn:ngm:class:state-transition-function", "label": "State Transition Function"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:state-space-representation", "label": "State Space Representation"},
+      {"@id": "urn:ngm:class:control-input", "label": "Control Input"}
+    ],
     "uses": [
       {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"},
       {"@id": "urn:ngm:class:rigid-body-dynamics", "label": "Rigid Body Dynamics"},
-      {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"}
+      {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"},
+      {"@id": "urn:ngm:class:differential-equations", "label": "Differential Equations"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
       {"@id": "urn:ngm:class:state-estimation", "label": "State Estimation"},
-      {"@id": "urn:ngm:class:trajectory-tracking", "label": "Trajectory Tracking"}
+      {"@id": "urn:ngm:class:trajectory-tracking", "label": "Trajectory Tracking"},
+      {"@id": "urn:ngm:class:robot-localisation", "label": "Robot Localisation"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"},
+      {"@id": "urn:ngm:class:particle-filter", "label": "Particle Filter"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
+      {"@id": "urn:ngm:class:model-predictive-control", "label": "Model Predictive Control"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:observation-model", "label": "Observation Model"},
+      {"@id": "urn:ngm:class:sensor-model", "label": "Sensor Model"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"},
       {"@id": "urn:ngm:class:robot-dynamics", "label": "Robot Dynamics"},
-      {"@id": "urn:ngm:class:newton-euler-dynamics", "label": "Newton-Euler Dynamics"}
+      {"@id": "urn:ngm:class:newton-euler-dynamics", "label": "Newton-Euler Dynamics"},
+      {"@id": "urn:ngm:class:odometry", "label": "Odometry"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:state-transition-model", "label": "State Transition Model"},
+    {"@id": "urn:ngm:class:dynamic-model", "label": "Dynamic Model"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

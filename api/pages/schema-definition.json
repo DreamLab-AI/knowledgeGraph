@@ -13,11 +13,20 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-type",
+        "label": "Data Type"
+      },
+      {
+        "id": "urn:ngm:class:namespace",
+        "label": "Namespace"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:knowledge-graph",
@@ -30,12 +39,34 @@
       {
         "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web Linked Data Standard"
+      },
+      {
+        "id": "urn:ngm:class:automated-validation",
+        "label": "Automated Validation"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:schemaless-data",
+        "label": "Schemaless Data"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:rdf",
@@ -48,6 +79,14 @@
       {
         "id": "urn:ngm:class:sparql",
         "label": "SPARQL"
+      },
+      {
+        "id": "urn:ngm:class:xml-schema-definition",
+        "label": "XML Schema Definition"
+      },
+      {
+        "id": "urn:ngm:class:protocol-buffers",
+        "label": "Protocol Buffers"
       }
     ],
     "supports": [
@@ -58,9 +97,26 @@
       {
         "id": "urn:ngm:class:owl-class-hierarchy",
         "label": "OWL Class Hierarchy"
+      },
+      {
+        "id": "urn:ngm:class:contract-testing",
+        "label": "Contract Testing"
+      },
+      {
+        "id": "urn:ngm:class:schema-registry",
+        "label": "Schema Registry"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -74,6 +130,14 @@
       {
         "id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:api-contract",
+        "label": "API Contract"
       }
     ]
   },

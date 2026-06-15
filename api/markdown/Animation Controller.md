@@ -28,23 +28,56 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:skeletal-animation", "label": "Skeletal Animation"},
       {"@id": "urn:ngm:class:state-machine", "label": "State Machine"},
-      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"}
+      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
+      {"@id": "urn:ngm:class:blend-tree", "label": "Blend Tree"},
+      {"@id": "urn:ngm:class:animation-clip", "label": "Animation Clip"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:blend-tree", "label": "Blend Tree"},
+      {"@id": "urn:ngm:class:animation-state", "label": "Animation State"},
+      {"@id": "urn:ngm:class:transition-condition", "label": "Transition Condition"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
+      {"@id": "urn:ngm:class:animation-runtime", "label": "Animation Runtime"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:character-rigging", "label": "Character Rigging"},
+      {"@id": "urn:ngm:class:animation-clip", "label": "Animation Clip"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
+      {"@id": "urn:ngm:class:animation-retargeting", "label": "Animation Retargeting"},
+      {"@id": "urn:ngm:class:procedural-animation", "label": "Procedural Animation"},
+      {"@id": "urn:ngm:class:motion-matching", "label": "Motion Matching"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"},
+      {"@id": "urn:ngm:class:game-logic", "label": "Game Logic"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:animation", "label": "Animation"},
       {"@id": "urn:ngm:class:character-animation", "label": "Character Animation"},
       {"@id": "urn:ngm:class:procedural-animation", "label": "Procedural Animation"},
-      {"@id": "urn:ngm:class:character-rigging", "label": "Character Rigging"}
+      {"@id": "urn:ngm:class:character-rigging", "label": "Character Rigging"},
+      {"@id": "urn:ngm:class:locomotion-system", "label": "Locomotion System"},
+      {"@id": "urn:ngm:class:ragdoll-physics", "label": "Ragdoll Physics"}
     ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"}
-    ],
-    "enables": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:animation-retargeting", "label": "Animation Retargeting"}
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:animator-controller", "label": "Animator Controller"},
+    {"@id": "urn:ngm:class:animation-state-machine", "label": "Animation State Machine"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

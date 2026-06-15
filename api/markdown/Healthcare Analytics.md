@@ -61,7 +61,7 @@ public:: true
   "definition": "The application of artificial intelligence and data science to healthcare data for population health management, operational efficiency optimisation, clinical outcome prediction, resource allocation, and healthcare policy decision-making. Healthcare analytics systems analyse electronic health records, claims data, public health datasets, and operational metrics to derive actionable insights for clinical and administrative improvement.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "qualityScore": 0.7,
+  "qualityScore": 0.72,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-application",
@@ -77,7 +77,45 @@ public:: true
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:health-data-analytics",
+      "label": "Health Data Analytics"
+    },
+    {
+      "@id": "urn:ngm:class:clinical-analytics",
+      "label": "Clinical Analytics"
+    }
+  ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:population-health-management",
+        "label": "Population Health Management"
+      },
+      {
+        "@id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:electronic-health-records",
+        "label": "Electronic Health Records"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:medical-ai",
@@ -86,6 +124,24 @@ public:: true
       {
         "@id": "urn:ngm:class:healthcare-technology",
         "label": "Healthcare Technology"
+      },
+      {
+        "@id": "urn:ngm:class:precision-medicine",
+        "label": "Precision Medicine"
+      },
+      {
+        "@id": "urn:ngm:class:value-based-care",
+        "label": "Value-Based Care"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-modelling",
+        "label": "Statistical Modelling"
       }
     ],
     "uses": [
@@ -96,6 +152,46 @@ public:: true
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:time-series-analysis",
+        "label": "Time Series Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:public-health-informatics",
+        "label": "Public Health Informatics"
+      },
+      {
+        "@id": "urn:ngm:class:health-policy",
+        "label": "Health Policy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:hl7-fhir",
+        "label": "HL7 FHIR"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
       }
     ],
     "relatedTo": [
@@ -110,6 +206,10 @@ public:: true
       {
         "@id": "urn:ngm:class:privacy-preserving-analytics",
         "label": "Privacy Preserving Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
       }
     ]
   }

@@ -94,8 +94,8 @@ public:: true
   "@id": "urn:ngm:class:digital-identity-standards",
   "@type": "Class",
   "label": "Digital Identity Standards",
-  "definition": "The technical specifications, protocols, and frameworks established by standards bodies such as W3C and ISO that define interoperable formats for digital identifiers, verifiable credentials, and authentication mechanisms enabling secure identity management across metaverse platforms and decentral...",
-  "domain": "infrastructure",
+  "definition": "The technical specifications, protocols, and frameworks established by standards bodies such as W3C and ISO that define interoperable formats for digital identifiers, verifiable credentials, and authentication mechanisms enabling secure identity management across metaverse platforms and decentralized systems.",
+  "domain": "security",
   "maturity": "draft",
   "subClassOf": [
     {
@@ -104,7 +104,21 @@ public:: true
     }
   ],
   "relations": {
-    "bridgesTo": [
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:authentication-protocol",
+        "label": "Authentication Protocol"
+      }
+    ],
+    "partOf": [
       {
         "@id": "urn:ngm:class:technical-standards",
         "label": "Technical Standards"
@@ -122,6 +136,14 @@ public:: true
       {
         "@id": "urn:ngm:class:standards-body",
         "label": "Standards Body"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
       }
     ],
     "enables": [
@@ -136,14 +158,86 @@ public:: true
       {
         "@id": "urn:ngm:class:trust-framework",
         "label": "Trust Framework"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-authentication",
+        "label": "Cross-Platform Authentication"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:w3c-did-core",
+        "label": "W3C DID Core"
+      },
+      {
+        "@id": "urn:ngm:class:eidas-2",
+        "label": "eIDAS 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-standards-forum",
+        "label": "Metaverse Standards Forum"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:centralized-identity",
+        "label": "Centralized Identity"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:technical-standards",
+        "label": "Technical Standards"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy by Design"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:digital-identity-framework",
+      "label": "Digital Identity Framework"
+    }
+  ],
+  "quality": 0.68,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

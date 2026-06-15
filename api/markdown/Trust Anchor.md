@@ -29,18 +29,50 @@ public:: true
       {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"},
       {"@id": "urn:ngm:class:digital-certificate", "label": "Digital Certificate"},
       {"@id": "urn:ngm:class:trust-framework-policy", "label": "Trust Framework Policy"},
-      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"}
+      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"},
+      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
+      {"@id": "urn:ngm:class:root-certificate", "label": "Root Certificate"},
+      {"@id": "urn:ngm:class:certificate-transparency", "label": "Certificate Transparency"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"},
-      {"@id": "urn:ngm:class:identity-federation", "label": "Identity Federation"}
+      {"@id": "urn:ngm:class:identity-federation", "label": "Identity Federation"},
+      {"@id": "urn:ngm:class:chain-of-trust", "label": "Chain of Trust"},
+      {"@id": "urn:ngm:class:certificate-validation", "label": "Certificate Validation"},
+      {"@id": "urn:ngm:class:secure-communication", "label": "Secure Communication"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:cryptographic-keys", "label": "Cryptographic Keys"}
+      {"@id": "urn:ngm:class:cryptographic-keys", "label": "Cryptographic Keys"},
+      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"},
+      {"@id": "urn:ngm:class:x509-certificate", "label": "X.509 Certificate"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:key-management", "label": "Key Management"},
+      {"@id": "urn:ngm:class:hardware-security-module", "label": "Hardware Security Module"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
+      {"@id": "urn:ngm:class:credential-verification", "label": "Credential Verification"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:web-of-trust", "label": "Web of Trust"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:decentralized-identifier", "label": "Decentralized Identifier"},
+      {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"},
+      {"@id": "urn:ngm:class:governance", "label": "Governance"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:root-of-trust", "label": "Root of Trust"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

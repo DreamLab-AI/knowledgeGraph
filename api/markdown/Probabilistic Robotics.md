@@ -77,6 +77,14 @@ public:: true
       {
         "@id": "urn:ngm:class:probability-theory",
         "label": "Probability Theory"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-model",
+        "label": "Sensor Model"
+      },
+      {
+        "@id": "urn:ngm:class:motion-model",
+        "label": "Motion Model"
       }
     ],
     "enables": [
@@ -87,14 +95,102 @@ public:: true
       {
         "@id": "urn:ngm:class:slam",
         "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:robot-navigation",
+        "label": "Robot Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-mobile-robot",
+        "label": "Autonomous Mobile Robot"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      },
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "@id": "urn:ngm:class:extended-kalman-filter",
+        "label": "Extended Kalman Filter"
+      },
+      {
+        "@id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bayes-filter",
+        "label": "Bayes Filter"
+      },
+      {
+        "@id": "urn:ngm:class:hidden-markov-model",
+        "label": "Hidden Markov Model"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:gaussian-distribution",
+        "label": "Gaussian Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-method",
+        "label": "Monte Carlo Method"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:deterministic-robotics",
+        "label": "Deterministic Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:simultaneous-localization-and-mapping",
+        "label": "Simultaneous Localization and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:robot-perception",
+        "label": "Robot Perception"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:stochastic-robotics",
+      "label": "Stochastic Robotics"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -50,7 +50,7 @@ public:: true
   "@id": "urn:ngm:class:wireless-connectivity",
   "@type": "Class",
   "label": "Wireless Connectivity",
-  "definition": "Wireless connectivity is the transmission of data between devices over radio frequencies without physical cabling. It spans short-range links such as Wi-Fi and Bluetooth and wide-area mobile networks such as 5G.",
+  "definition": "Wireless connectivity is the transmission of data between devices over radio frequencies without physical cabling. It encompasses short-range links such as Wi-Fi and Bluetooth, medium-range technologies such as Zigbee and LoRa, and wide-area mobile networks such as 4G LTE and 5G NR, all governed by spectrum allocation and standardised protocol stacks.",
   "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -61,10 +61,46 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:wi-fi",
+        "label": "Wi-Fi"
+      },
+      {
+        "@id": "urn:ngm:class:bluetooth",
+        "label": "Bluetooth"
+      },
+      {
+        "@id": "urn:ngm:class:5g",
+        "label": "5G"
+      },
+      {
+        "@id": "urn:ngm:class:lora",
+        "label": "LoRa"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:radio-frequency-spectrum",
+        "label": "Radio Frequency Spectrum"
+      },
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
       }
     ],
     "enables": [
@@ -75,14 +111,116 @@ public:: true
       {
         "@id": "urn:ngm:class:internet-of-things",
         "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-computing",
+        "label": "Mobile Computing"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:antenna-technology",
+        "label": "Antenna Technology"
+      },
+      {
+        "@id": "urn:ngm:class:signal-modulation",
+        "label": "Signal Modulation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:ieee-802-11",
+        "label": "IEEE 802.11"
+      },
+      {
+        "@id": "urn:ngm:class:3gpp-standards",
+        "label": "3GPP Standards"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "@id": "urn:ngm:class:3gpp",
+        "label": "3GPP"
+      },
+      {
+        "@id": "urn:ngm:class:itu",
+        "label": "ITU"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:wired-networking",
+        "label": "Wired Networking"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:network-latency",
+        "label": "Network Latency"
+      },
+      {
+        "@id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      },
+      {
+        "@id": "urn:ngm:class:mesh-network",
+        "label": "Mesh Network"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:wireless-networking",
+      "label": "Wireless Networking"
+    },
+    {
+      "@id": "urn:ngm:class:wireless-communication",
+      "label": "Wireless Communication"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

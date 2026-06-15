@@ -13,19 +13,103 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:mlperf",
+        "label": "MLPerf"
+      },
+      {
+        "id": "urn:ngm:class:peoples-speech-dataset",
+        "label": "People's Speech Dataset"
+      },
+      {
+        "id": "urn:ngm:class:mlperf-inference",
+        "label": "MLPerf Inference"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning-frameworks",
+        "label": "Deep Learning Frameworks"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:hardware-ai-benchmarking",
+        "label": "Hardware AI Benchmarking"
+      },
+      {
+        "id": "urn:ngm:class:ai-model-evaluation",
+        "label": "AI Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:fair-comparison",
+        "label": "Fair Comparison"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:benchmarking",
+        "label": "Benchmarking"
+      },
+      {
+        "id": "urn:ngm:class:reproducible-research",
+        "label": "Reproducible Research"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:spec-benchmark",
+        "label": "SPEC Benchmark"
+      },
+      {
+        "id": "urn:ngm:class:supercomputer-top500",
+        "label": "TOP500 Supercomputer List"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
     "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:open-datasets",
+        "label": "Open Datasets"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:industry-consortium",
+        "label": "Industry Consortium"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -35,6 +119,22 @@
       {
         "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
         "label": "Evaluation benchmarks and leaderboards"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
       }
     ]
   },

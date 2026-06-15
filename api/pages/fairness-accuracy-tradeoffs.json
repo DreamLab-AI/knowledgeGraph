@@ -16,7 +16,24 @@
   "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:demographic-parity",
+        "label": "Demographic Parity"
+      },
+      {
+        "id": "urn:ngm:class:equalised-odds",
+        "label": "Equalised Odds"
+      },
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      },
+      {
+        "id": "urn:ngm:class:pareto-frontier",
+        "label": "Pareto Frontier"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:algorithmic-bias",
@@ -25,9 +42,26 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:multi-objective-optimisation",
+        "label": "Multi-Objective Optimisation"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fair-machine-learning",
+        "label": "Fair Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
+    ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:bias-mitigation-techniques",
@@ -36,6 +70,14 @@
       {
         "id": "urn:ngm:class:ai-fairness",
         "label": "AI Fairness"
+      },
+      {
+        "id": "urn:ngm:class:statistical-learning-theory",
+        "label": "Statistical Learning Theory"
+      },
+      {
+        "id": "urn:ngm:class:protected-attribute",
+        "label": "Protected Attribute"
       }
     ],
     "implements": [],
@@ -43,14 +85,31 @@
       {
         "id": "urn:ngm:class:algorithmic-bias-and-variance",
         "label": "Algorithmic Bias and Variance"
+      },
+      {
+        "id": "urn:ngm:class:accuracy-maximisation",
+        "label": "Accuracy Maximisation"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      }
+    ],
     "uses": [],
     "supports": [
       {
         "id": "urn:ngm:class:responsible-ai-principles",
         "label": "Responsible AI Principles"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
       }
     ],
     "standardizedBy": [],
@@ -71,6 +130,14 @@
       {
         "id": "urn:ngm:class:accountability",
         "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
       }
     ]
   },

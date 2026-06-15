@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Panoptic Segmentation",
   "definition": "A computer vision task that unifies semantic segmentation and instance segmentation by assigning every image pixel both a class label and an instance identifier, providing holistic scene parsing that distinguishes countable foreground objects (\"things\") from amorphous background regions (\"stuff\"). Architectures such as Panoptic FPN, Panoptic-DeepLab, and MaskFormer formalise this unified representation.",
-  "domain": "spatial-computing",
+  "domain": "machine-learning",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [
@@ -64,12 +64,22 @@ public:: true
       "label": "Interaction Technology"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:unified-scene-segmentation",
+      "label": "Unified Scene Segmentation"
+    },
+    {
+      "@id": "urn:ngm:class:holistic-image-segmentation",
+      "label": "Holistic Image Segmentation"
+    }
+  ],
   "relations": {
     "hasPart": [
       {
@@ -79,24 +89,120 @@ public:: true
       {
         "@id": "urn:ngm:class:semantic-segmentation",
         "label": "Semantic Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:panoptic-quality-metric",
+        "label": "Panoptic Quality Metric"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
       }
     ],
     "requires": [
       {
         "@id": "urn:ngm:class:object-detection",
         "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:pixel-classification",
+        "label": "Pixel Classification"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:scene-understanding",
         "label": "Scene Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "@id": "urn:ngm:class:robot-perception",
+        "label": "Robot Perception"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:feature-pyramid-network",
+        "label": "Feature Pyramid Network"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:maskformer",
+        "label": "MaskFormer"
+      },
+      {
+        "@id": "urn:ngm:class:panoptic-deeplab",
+        "label": "Panoptic-DeepLab"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:coco-dataset",
+        "label": "COCO Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:cityscapes-dataset",
+        "label": "Cityscapes Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:mask-rcnn",
+        "label": "Mask R-CNN"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:instance-segmentation",
+        "label": "Instance Segmentation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:computer-vision-task",
         "label": "Computer Vision Task"
+      },
+      {
+        "@id": "urn:ngm:class:image-recognition",
+        "label": "Image Recognition"
       }
     ]
   }

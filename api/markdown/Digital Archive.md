@@ -84,43 +84,62 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:metadata-catalog", "label": "Metadata Catalog"},
+      {"@id": "urn:ngm:class:digital-object", "label": "Digital Object"},
+      {"@id": "urn:ngm:class:preservation-policy", "label": "Preservation Policy"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:knowledge-management-system", "label": "Knowledge Management System"}
+    ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:access-control",
-        "label": "Access Control"
-      },
-      {
-        "@id": "urn:ngm:class:metadata-standards",
-        "label": "Metadata Standards"
-      },
-      {
-        "@id": "urn:ngm:class:storage-infrastructure",
-        "label": "Storage Infrastructure"
-      }
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
+      {"@id": "urn:ngm:class:metadata-standards", "label": "Metadata Standards"},
+      {"@id": "urn:ngm:class:storage-infrastructure", "label": "Storage Infrastructure"},
+      {"@id": "urn:ngm:class:integrity-verification", "label": "Integrity Verification"},
+      {"@id": "urn:ngm:class:format-migration", "label": "Format Migration"}
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:cultural-heritage-access",
-        "label": "Cultural Heritage Access"
-      },
-      {
-        "@id": "urn:ngm:class:historical-research",
-        "label": "Historical Research"
-      },
-      {
-        "@id": "urn:ngm:class:knowledge-preservation",
-        "label": "Knowledge Preservation"
-      }
+      {"@id": "urn:ngm:class:cultural-heritage-access", "label": "Cultural Heritage Access"},
+      {"@id": "urn:ngm:class:historical-research", "label": "Historical Research"},
+      {"@id": "urn:ngm:class:knowledge-preservation", "label": "Knowledge Preservation"},
+      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"},
+      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
+      {"@id": "urn:ngm:class:content-addressing", "label": "Content Addressing"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:open-access", "label": "Open Access"},
+      {"@id": "urn:ngm:class:rights-management", "label": "Rights Management"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:ephemeral-storage", "label": "Ephemeral Storage"}
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-preservation", "label": "Digital Preservation"}
+      {"@id": "urn:ngm:class:digital-preservation", "label": "Digital Preservation"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:records-management", "label": "Records Management"},
+      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:digital-repository", "label": "Digital Repository"},
+    {"@id": "urn:ngm:class:digital-library", "label": "Digital Library"}
+  ],
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

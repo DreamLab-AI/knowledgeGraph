@@ -81,20 +81,130 @@ public:: true
       {
         "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
         "label": "Bitcoin Network"
+      },
+      {
+        "@id": "urn:ngm:class:multi-signature",
+        "label": "Multi-Signature"
+      },
+      {
+        "@id": "urn:ngm:class:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:bolt",
         "label": "BOLT"
+      },
+      {
+        "@id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      },
+      {
+        "@id": "urn:ngm:class:instant-payment",
+        "label": "Instant Payment"
+      },
+      {
+        "@id": "urn:ngm:class:streaming-payment",
+        "label": "Streaming Payment"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:payment-routing",
+        "label": "Payment Routing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:onion-routing",
+        "label": "Onion Routing"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "@id": "urn:ngm:class:channel-factory",
+        "label": "Channel Factory"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:bolt",
+        "label": "BOLT"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:on-chain-transaction",
+        "label": "On-Chain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-layer-2",
+        "label": "Ethereum Layer 2"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      },
+      {
+        "@id": "urn:ngm:class:watchtower",
+        "label": "Watchtower"
+      },
+      {
+        "@id": "urn:ngm:class:splicing",
+        "label": "Splicing"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:lightning-network-protocol",
+      "label": "Lightning Network Protocol"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

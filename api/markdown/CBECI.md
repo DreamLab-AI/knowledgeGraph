@@ -28,15 +28,49 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:hash-rate", "label": "Hash Rate"},
       {"@id": "urn:ngm:class:electricity-consumption", "label": "Electricity Consumption"},
-      {"@id": "urn:ngm:class:cbeci-methodology", "label": "CBECI Methodology"}
+      {"@id": "urn:ngm:class:cbeci-methodology", "label": "CBECI Methodology"},
+      {"@id": "urn:ngm:class:asic-mining-hardware", "label": "ASIC Mining Hardware"},
+      {"@id": "urn:ngm:class:network-difficulty", "label": "Network Difficulty"},
+      {"@id": "urn:ngm:class:mining-pool-data", "label": "Mining Pool Data"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:proof-of-work-energy-consumption", "label": "Proof-of-Work Energy Consumption"},
       {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues", "label": "Bitcoin Environmental Issues"},
-      {"@id": "urn:ngm:class:cambridge-centre-for-alternative-finance", "label": "Cambridge Centre for Alternative Finance"}
+      {"@id": "urn:ngm:class:cambridge-centre-for-alternative-finance", "label": "Cambridge Centre for Alternative Finance"},
+      {"@id": "urn:ngm:class:bitcoin-mining", "label": "Bitcoin Mining"},
+      {"@id": "urn:ngm:class:carbon-footprint", "label": "Carbon Footprint"},
+      {"@id": "urn:ngm:class:sustainable-bitcoin-protocol", "label": "Sustainable Bitcoin Protocol"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:energy-policy", "label": "Energy Policy"},
+      {"@id": "urn:ngm:class:carbon-accounting", "label": "Carbon Accounting"},
+      {"@id": "urn:ngm:class:renewable-energy-certification", "label": "Renewable Energy Certification"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:mica-regulation", "label": "MiCA Regulation"},
+      {"@id": "urn:ngm:class:cryptocurrency-regulation", "label": "Cryptocurrency Regulation"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"},
+      {"@id": "urn:ngm:class:governance", "label": "Governance"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:cambridge-bitcoin-electricity-consumption-index", "label": "Cambridge Bitcoin Electricity Consumption Index"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

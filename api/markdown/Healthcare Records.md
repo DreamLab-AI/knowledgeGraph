@@ -73,7 +73,7 @@ public:: true
   "definition": "Blockchain-based electronic health record systems that employ immutable distributed ledgers, smart contracts for consent management, and cryptographic security to enable secure patient data sharing across healthcare providers. These systems give patients controlled access to their own records whilst maintaining HIPAA and GDPR compliance through hybrid on-chain/off-chain architectures integrating HL7 FHIR standards.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "qualityScore": 0.7,
+  "qualityScore": 0.72,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-network-component",
@@ -81,27 +81,59 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:patient-consent-management", "label": "Patient Consent Management"},
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
+      {"@id": "urn:ngm:class:access-control-policy", "label": "Access Control Policy"}
+    ],
     "requires": [
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
       {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero Knowledge Proof"},
+      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
+      {"@id": "urn:ngm:class:patient-data-portability", "label": "Patient Data Portability"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
       {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"}
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
+      {"@id": "urn:ngm:class:decentralized-identifiers", "label": "Decentralized Identifiers"}
     ],
-    "enables": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:hl7-fhir", "label": "HL7 FHIR"},
+      {"@id": "urn:ngm:class:hipaa", "label": "HIPAA"},
+      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:hyperledger-fabric", "label": "Hyperledger Fabric"},
+      {"@id": "urn:ngm:class:permissioned-blockchain", "label": "Permissioned Blockchain"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:centralised-database", "label": "Centralised Database"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:clinical-trials", "label": "Clinical Trials"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
+      {"@id": "urn:ngm:class:digital-identity-wallet", "label": "Digital Identity Wallet"},
+      {"@id": "urn:ngm:class:data-sovereignty", "label": "Data Sovereignty"}
     ]
   },
+  "sameAs": [
+    {"@id": "urn:ngm:class:electronic-health-records", "label": "Electronic Health Records"},
+    {"@id": "urn:ngm:class:ehr-systems", "label": "EHR Systems"}
+  ],
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

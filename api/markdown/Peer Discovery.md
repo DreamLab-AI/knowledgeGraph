@@ -86,11 +86,40 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:gossip-protocol", "label": "Gossip Protocol"},
-      {"@id": "urn:ngm:class:bootstrap-node", "label": "Bootstrap Node"}
+      {"@id": "urn:ngm:class:bootstrap-node", "label": "Bootstrap Node"},
+      {"@id": "urn:ngm:class:distributed-hash-table", "label": "Distributed Hash Table"},
+      {"@id": "urn:ngm:class:dns-seed", "label": "DNS Seed"},
+      {"@id": "urn:ngm:class:kademlia", "label": "Kademlia"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
-      {"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"}
+      {"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"},
+      {"@id": "urn:ngm:class:network-resilience", "label": "Network Resilience"},
+      {"@id": "urn:ngm:class:decentralization", "label": "Decentralization"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:node-address", "label": "Node Address"},
+      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
+      {"@id": "urn:ngm:class:network-topology", "label": "Network Topology"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:overlay-network", "label": "Overlay Network"},
+      {"@id": "urn:ngm:class:address-propagation", "label": "Address Propagation"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
+      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:centralized-directory", "label": "Centralized Directory"},
+      {"@id": "urn:ngm:class:client-server-architecture", "label": "Client-Server Architecture"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:network-topology", "label": "Network Topology"},
@@ -98,10 +127,16 @@ public:: true
       {"@id": "urn:ngm:class:sybil-resistance", "label": "Sybil Resistance"},
       {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
       {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"},
-      {"@id": "urn:ngm:class:fork-choice-rule", "label": "Fork Choice Rule"}
+      {"@id": "urn:ngm:class:fork-choice-rule", "label": "Fork Choice Rule"},
+      {"@id": "urn:ngm:class:eclipse-attack", "label": "Eclipse Attack"},
+      {"@id": "urn:ngm:class:nat-traversal", "label": "NAT Traversal"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:node-discovery", "label": "Node Discovery"},
+    {"@id": "urn:ngm:class:network-bootstrapping", "label": "Network Bootstrapping"}
+  ],
+  "quality": 0.68,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

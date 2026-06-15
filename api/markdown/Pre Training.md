@@ -219,8 +219,8 @@ alias:: Pre-Training, Pre-training
   "@id": "urn:ngm:class:pre-training",
   "@type": "Class",
   "label": "Pre Training",
-  "definition": "The initial training phase where a model learns general representations from large amounts of unlabelled or weakly labelled data before being adapted to specific tasks. Pre-training establishes foundational knowledge that can be transferred across multiple downstream applications.",
-  "domain": "artificial-intelligence",
+  "definition": "The initial training phase where a model learns general representations from large amounts of unlabelled or weakly labelled data before being adapted to specific tasks. Pre-training establishes foundational knowledge that can be transferred across multiple downstream applications, forming the basis for modern large-scale foundation models.",
+  "domain": "machine-learning",
   "maturity": "emerging",
   "subClassOf": [
     {
@@ -232,21 +232,62 @@ alias:: Pre-Training, Pre-training
     "enables": [
       {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
       {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
+      {"@id": "urn:ngm:class:few-shot-learning", "label": "Few-Shot Learning"},
+      {"@id": "urn:ngm:class:zero-shot-learning", "label": "Zero-Shot Learning"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
+      {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"},
+      {"@id": "urn:ngm:class:self-supervised-learning", "label": "Self-Supervised Learning"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:masked-language-modelling", "label": "Masked Language Modelling"},
+      {"@id": "urn:ngm:class:next-token-prediction", "label": "Next Token Prediction"},
+      {"@id": "urn:ngm:class:unsupervised-representation-learning", "label": "Unsupervised Representation Learning"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:corpus", "label": "Corpus"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:representation-learning", "label": "Representation Learning"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:model-optimisation-and-performance", "label": "Model Optimisation and Performance"},
+      {"@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards", "label": "Evaluation Benchmarks and Leaderboards"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"}
+      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"},
+      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"},
+      {"@id": "urn:ngm:class:training-and-fine-tuning", "label": "Training and Fine Tuning"},
+      {"@id": "urn:ngm:class:lo-ra-do-ra-etc", "label": "LoRA DoRA etc"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:pre-training-phase", "label": "Pre-Training Phase"},
+    {"@id": "urn:ngm:class:unsupervised-pre-training", "label": "Unsupervised Pre-Training"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

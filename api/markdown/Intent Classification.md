@@ -21,16 +21,58 @@ public:: true
   "@type": "Class",
   "label": "Intent Classification",
   "definition": "Intent classification is a natural language processing task that assigns a user utterance to one or more predefined intent categories, enabling a system to determine the semantic goal behind an input. It forms the core routing component of conversational AI systems, mapping raw text to structured action labels such as 'book_flight', 'check_balance', or 'cancel_order'.",
-  "domain": "ai",
+  "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:nlptask", "label": "NLPTask"}],
   "relations": {
-    "requires": [{"@id": "urn:ngm:class:natural-language-understanding", "label": "Natural Language Understanding"}],
-    "enables": [{"@id": "urn:ngm:class:dialogue-system", "label": "Dialogue System"}, {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"}],
-    "relatedTo": [{"@id": "urn:ngm:class:intent-recognition", "label": "Intent Recognition"}, {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"}],
-    "uses": [{"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}]
+    "requires": [
+      {"@id": "urn:ngm:class:natural-language-understanding", "label": "Natural Language Understanding"},
+      {"@id": "urn:ngm:class:text-encoding", "label": "Text Encoding"},
+      {"@id": "urn:ngm:class:labelled-training-data", "label": "Labelled Training Data"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:dialogue-system", "label": "Dialogue System"},
+      {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"},
+      {"@id": "urn:ngm:class:slot-filling", "label": "Slot Filling"},
+      {"@id": "urn:ngm:class:task-oriented-dialogue", "label": "Task-Oriented Dialogue"},
+      {"@id": "urn:ngm:class:process-automation", "label": "Process Automation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:transformer-model", "label": "Transformer Model"},
+      {"@id": "urn:ngm:class:text-classification", "label": "Text Classification"},
+      {"@id": "urn:ngm:class:word-embedding", "label": "Word Embedding"},
+      {"@id": "urn:ngm:class:softmax-classifier", "label": "Softmax Classifier"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:utterance-representation", "label": "Utterance Representation"},
+      {"@id": "urn:ngm:class:intent-ontology", "label": "Intent Ontology"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"},
+      {"@id": "urn:ngm:class:sentiment-analysis", "label": "Sentiment Analysis"},
+      {"@id": "urn:ngm:class:out-of-domain-detection", "label": "Out-of-Domain Detection"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:intent-recognition", "label": "Intent Recognition"},
+      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
+      {"@id": "urn:ngm:class:zero-shot-learning", "label": "Zero-Shot Learning"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:robotic-process-automation", "label": "Robotic Process Automation"},
+      {"@id": "urn:ngm:class:voice-user-interface", "label": "Voice User Interface"}
+    ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:intent-recognition", "label": "Intent Recognition"},
+    {"@id": "urn:ngm:class:utterance-intent-detection", "label": "Utterance Intent Detection"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "quality": 0.75
 }
 ```
 

@@ -27,16 +27,54 @@ public:: true
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"},
-      {"@id": "urn:ngm:class:transaction-monitoring", "label": "Transaction Monitoring"}
+      {"@id": "urn:ngm:class:transaction-monitoring", "label": "Transaction Monitoring"},
+      {"@id": "urn:ngm:class:customer-due-diligence", "label": "Customer Due Diligence"},
+      {"@id": "urn:ngm:class:beneficial-ownership", "label": "Beneficial Ownership"},
+      {"@id": "urn:ngm:class:suspicious-activity-report", "label": "Suspicious Activity Report"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:financial-crime-detection", "label": "Financial Crime Detection"},
+      {"@id": "urn:ngm:class:law-enforcement-cooperation", "label": "Law Enforcement Cooperation"},
+      {"@id": "urn:ngm:class:sanctions-screening", "label": "Sanctions Screening"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:currency-transaction-report", "label": "Currency Transaction Report"},
+      {"@id": "urn:ngm:class:know-your-customer", "label": "Know Your Customer"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:financial-crimes-enforcement-network", "label": "Financial Crimes Enforcement Network"},
+      {"@id": "urn:ngm:class:fatf", "label": "FATF"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
+      {"@id": "urn:ngm:class:right-to-financial-privacy-act", "label": "Right to Financial Privacy Act"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:travel-rule", "label": "Travel Rule"},
+      {"@id": "urn:ngm:class:corporate-transparency-act", "label": "Corporate Transparency Act"},
+      {"@id": "urn:ngm:class:virtual-asset-service-provider", "label": "Virtual Asset Service Provider"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:fatf", "label": "FATF"},
-      {"@id": "urn:ngm:class:travel-rule", "label": "Travel Rule"},
-      {"@id": "urn:ngm:class:financial-crime-detection", "label": "Financial Crime Detection"},
-      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"}
+      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"},
+      {"@id": "urn:ngm:class:usa-patriot-act", "label": "USA PATRIOT Act"},
+      {"@id": "urn:ngm:class:anti-money-laundering-act-2020", "label": "Anti-Money Laundering Act 2020"},
+      {"@id": "urn:ngm:class:counter-terrorism-financing", "label": "Counter-Terrorism Financing"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:currency-and-foreign-transactions-reporting-act", "label": "Currency and Foreign Transactions Reporting Act"},
+    {"@id": "urn:ngm:class:bsa", "label": "BSA"}
+  ],
+  "quality": 0.75,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

@@ -54,7 +54,7 @@ public:: true
   "@id": "urn:ngm:class:differential-equations",
   "@type": "Class",
   "label": "Differential Equations",
-  "definition": "Equations relating a function to its derivatives, used to model how quantities change with respect to one or more independent variables.",
+  "definition": "Equations relating a function to its derivatives, used to model how quantities change with respect to one or more independent variables; foundational to physics, engineering, biology, and modern machine-learning architectures such as neural ODEs.",
   "domain": "machine-learning",
   "maturity": "mature",
   "qualityScore": 0.7,
@@ -69,6 +69,14 @@ public:: true
       {
         "@id": "urn:ngm:class:linear-algebra",
         "label": "Linear Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:calculus",
+        "label": "Calculus"
+      },
+      {
+        "@id": "urn:ngm:class:real-analysis",
+        "label": "Real Analysis"
       }
     ],
     "enables": [
@@ -79,14 +87,108 @@ public:: true
       {
         "@id": "urn:ngm:class:dynamical-systems-theory",
         "label": "Dynamical Systems Theory"
+      },
+      {
+        "@id": "urn:ngm:class:neural-ode",
+        "label": "Neural ODE"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:ordinary-differential-equation",
+        "label": "Ordinary Differential Equation"
+      },
+      {
+        "@id": "urn:ngm:class:partial-differential-equation",
+        "label": "Partial Differential Equation"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-differential-equation",
+        "label": "Stochastic Differential Equation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:finite-element-method",
+        "label": "Finite Element Method"
+      },
+      {
+        "@id": "urn:ngm:class:runge-kutta-method",
+        "label": "Runge-Kutta Method"
+      },
+      {
+        "@id": "urn:ngm:class:laplace-transform",
+        "label": "Laplace Transform"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:calculus",
+        "label": "Calculus"
+      },
+      {
+        "@id": "urn:ngm:class:functional-analysis",
+        "label": "Functional Analysis"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:algebraic-equations",
+        "label": "Algebraic Equations"
+      },
+      {
+        "@id": "urn:ngm:class:difference-equations",
+        "label": "Difference Equations"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:complex-systems",
+        "label": "Complex Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:fourier-analysis",
+        "label": "Fourier Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:optimization",
+        "label": "Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:differential-equation",
+      "label": "Differential Equation"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

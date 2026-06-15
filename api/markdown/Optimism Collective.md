@@ -25,22 +25,64 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"}],
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer 2 Scaling"},
+    "hasPart": [
+      {"@id": "urn:ngm:class:token-house", "label": "Token House"},
+      {"@id": "urn:ngm:class:citizens-house", "label": "Citizens' House"},
+      {"@id": "urn:ngm:class:optimism-foundation", "label": "Optimism Foundation"},
+      {"@id": "urn:ngm:class:retroactive-public-goods-funding", "label": "Retroactive Public Goods Funding"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:optimism-superchain", "label": "Optimism Superchain"}
+    ],
+    "requires": [
       {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
-      {"@id": "urn:ngm:class:collective-decision-making", "label": "Collective Decision Making"}
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:dao", "label": "DAO"},
-      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"}
+      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"},
+      {"@id": "urn:ngm:class:public-goods-funding", "label": "Public Goods Funding"},
+      {"@id": "urn:ngm:class:protocol-upgrade", "label": "Protocol Upgrade"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
+      {"@id": "urn:ngm:class:op-stack", "label": "OP Stack"},
+      {"@id": "urn:ngm:class:optimistic-rollup", "label": "Optimistic Rollup"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:bicameral-governance", "label": "Bicameral Governance"},
+      {"@id": "urn:ngm:class:token-weighted-voting", "label": "Token-Weighted Voting"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
-      {"@id": "urn:ngm:class:voting-mechanism", "label": "Voting Mechanism"}
+      {"@id": "urn:ngm:class:voting-mechanism", "label": "Voting Mechanism"},
+      {"@id": "urn:ngm:class:attestation", "label": "Attestation"},
+      {"@id": "urn:ngm:class:multisig-wallet", "label": "Multisig Wallet"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:single-token-governance", "label": "Single Token Governance"},
+      {"@id": "urn:ngm:class:plutocratic-voting", "label": "Plutocratic Voting"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer 2 Scaling"},
+      {"@id": "urn:ngm:class:collective-decision-making", "label": "Collective Decision Making"},
+      {"@id": "urn:ngm:class:sequencer", "label": "Sequencer"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
+      {"@id": "urn:ngm:class:governance", "label": "Governance"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:op-collective", "label": "OP Collective"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

@@ -42,8 +42,8 @@ public:: true
   "@id": "urn:ngm:class:byte-pair-encoding",
   "@type": "Class",
   "label": "Byte Pair Encoding",
-  "definition": "A subword tokenisation algorithm that iteratively merges the most frequent pairs of characters or character sequences to build a vocabulary, originally developed for data compression.",
-  "domain": "spatial-computing",
+  "definition": "A subword tokenisation algorithm that iteratively merges the most frequent pairs of characters or character sequences to build a vocabulary, originally developed for data compression and widely adopted in neural language models.",
+  "domain": "machine-learning",
   "maturity": "emerging",
   "subClassOf": [
     {
@@ -53,24 +53,59 @@ public:: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:neural-network-text-tokenisation", "label": "Neural Network Text Tokenisation"}
+      {"@id": "urn:ngm:class:neural-network-text-tokenisation", "label": "Neural Network Text Tokenisation"},
+      {"@id": "urn:ngm:class:subword-tokenisation", "label": "Subword Tokenisation"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:merge-rule", "label": "Merge Rule"},
+      {"@id": "urn:ngm:class:vocabulary", "label": "Vocabulary"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:training-corpus", "label": "Training Corpus"},
+      {"@id": "urn:ngm:class:character-sequence", "label": "Character Sequence"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:text-generation", "label": "Text Generation"}
+      {"@id": "urn:ngm:class:text-generation", "label": "Text Generation"},
+      {"@id": "urn:ngm:class:neural-machine-translation", "label": "Neural Machine Translation"},
+      {"@id": "urn:ngm:class:out-of-vocabulary-handling", "label": "Out-of-Vocabulary Handling"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
+      {"@id": "urn:ngm:class:frequency-counting", "label": "Frequency Counting"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:data-compression", "label": "Data Compression"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:multilingual-modelling", "label": "Multilingual Modelling"},
+      {"@id": "urn:ngm:class:low-resource-language-processing", "label": "Low-Resource Language Processing"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:wordpiece", "label": "WordPiece"},
+      {"@id": "urn:ngm:class:sentencepiece", "label": "SentencePiece"},
+      {"@id": "urn:ngm:class:unigram-language-model-tokenisation", "label": "Unigram Language Model Tokenisation"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"},
+      {"@id": "urn:ngm:class:gpt", "label": "GPT"},
+      {"@id": "urn:ngm:class:roberta", "label": "RoBERTa"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:data-compression", "label": "Data Compression"},
+      {"@id": "urn:ngm:class:information-theory", "label": "Information Theory"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:bpe-tokenisation", "label": "BPE Tokenisation"},
+    {"@id": "urn:ngm:class:byte-pair-encoding-algorithm", "label": "Byte Pair Encoding Algorithm"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

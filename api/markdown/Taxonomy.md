@@ -25,12 +25,61 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:classification-scheme", "label": "Classification Scheme"},
+      {"@id": "urn:ngm:class:controlled-vocabulary", "label": "Controlled Vocabulary"},
+      {"@id": "urn:ngm:class:hierarchical-category", "label": "Hierarchical Category"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:knowledge-organisation-system", "label": "Knowledge Organisation System"},
+      {"@id": "urn:ngm:class:information-architecture", "label": "Information Architecture"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:concept", "label": "Concept"},
+      {"@id": "urn:ngm:class:semantic-relation", "label": "Semantic Relation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:faceted-search", "label": "Faceted Search"},
+      {"@id": "urn:ngm:class:knowledge-retrieval", "label": "Knowledge Retrieval"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:naming-convention", "label": "Naming Convention"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:polyhierarchy", "label": "Polyhierarchy"},
+      {"@id": "urn:ngm:class:broader-narrower-relation", "label": "Broader-Narrower Relation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:skos", "label": "SKOS"},
+      {"@id": "urn:ngm:class:thesaurus", "label": "Thesaurus"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
+      {"@id": "urn:ngm:class:folksonomy", "label": "Folksonomy"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+    ],
     "relatedTo": [
       {"@id": "urn:ngm:class:etsi-metaverse-domain-taxonomy", "label": "Etsi Metaverse Domain Taxonomy"},
-      {"@id": "urn:ngm:class:domain-ontology", "label": "Domain Ontology"}
+      {"@id": "urn:ngm:class:domain-ontology", "label": "Domain Ontology"},
+      {"@id": "urn:ngm:class:metadata-schema", "label": "Metadata Schema"},
+      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
+      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"}
     ]
   },
-  "quality": 0.72
+  "sameAs": [
+    {"@id": "urn:ngm:class:hierarchical-classification", "label": "Hierarchical Classification"},
+    {"@id": "urn:ngm:class:classification-system", "label": "Classification System"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

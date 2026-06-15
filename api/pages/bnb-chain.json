@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:bnb-chain",
   "domain": "blockchain",
-  "definition": "A blockchain compatible with the Ethereum Virtual Machine, operated with a delegated validator set and used widely for trading, lending, and other on-chain applications.",
+  "definition": "A blockchain compatible with the Ethereum Virtual Machine, operated with a delegated Proof-of-Staked-Authority validator set and used widely for decentralised trading, lending, token issuance, and other on-chain applications within the Binance ecosystem.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:blockchain",
@@ -13,10 +13,23 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:bep-20-token",
+        "label": "BEP-20 Token"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:evm",
@@ -25,18 +38,98 @@
       {
         "id": "urn:ngm:class:proof-of-stake",
         "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:token-issuance",
+        "label": "Token Issuance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:binance",
+        "label": "Binance"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:evm-compatibility",
+        "label": "EVM Compatibility"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:solana",
+        "label": "Solana"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "id": "urn:ngm:class:web3",
+        "label": "Web3"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bnb-token",
+        "label": "BNB Token"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:gas-fee",
+        "label": "Gas Fee"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:layer-1-blockchain",
+        "label": "Layer 1 Blockchain"
+      }
+    ]
   },
   "wikilinks": [
     {

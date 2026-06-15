@@ -54,7 +54,7 @@ public:: true
   "@id": "urn:ngm:class:ethereum-smart-contract-platform-smart-contracts",
   "@type": "Class",
   "label": "Ethereum Smart Contracts",
-  "definition": "Programs deployed to the Ethereum blockchain that execute deterministically on the Ethereum Virtual Machine and maintain state enforced by network consensus.",
+  "definition": "Programs deployed to the Ethereum blockchain that execute deterministically on the Ethereum Virtual Machine and maintain state enforced by network consensus, enabling trustless automation of agreements and protocols through immutable on-chain code.",
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -73,20 +73,136 @@ public:: true
       {
         "@id": "urn:ngm:class:solidity",
         "label": "Solidity"
+      },
+      {
+        "@id": "urn:ngm:class:gas",
+        "label": "Gas"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-account",
+        "label": "Ethereum Account"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:erc-20",
         "label": "ERC-20"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:abi",
+        "label": "ABI"
+      },
+      {
+        "@id": "urn:ngm:class:bytecode",
+        "label": "Bytecode"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "@id": "urn:ngm:class:vyper",
+        "label": "Vyper"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:eip",
+        "label": "Ethereum Improvement Proposal"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:layer-2",
+        "label": "Layer 2"
+      },
+      {
+        "@id": "urn:ngm:class:oracle",
+        "label": "Oracle"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:eth-smart-contracts",
+      "label": "ETH Smart Contracts"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

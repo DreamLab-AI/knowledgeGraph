@@ -25,11 +25,54 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:data-protection-regulation", "label": "Data Protection Regulation"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:gdpr", "label": "GDPR"}, {"@id": "urn:ngm:class:ico", "label": "ICO"}, {"@id": "urn:ngm:class:data-protection-law", "label": "Data Protection Law"}],
-    "requires": [{"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"}, {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"}],
-    "enables": [{"@id": "urn:ngm:class:data-privacy", "label": "Data Privacy"}]
+    "relatedTo": [
+      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
+      {"@id": "urn:ngm:class:ico", "label": "ICO"},
+      {"@id": "urn:ngm:class:data-protection-law", "label": "Data Protection Law"},
+      {"@id": "urn:ngm:class:data-protection-act-2018", "label": "Data Protection Act 2018"},
+      {"@id": "urn:ngm:class:data-use-and-access-act-2025", "label": "Data Use and Access Act 2025"},
+      {"@id": "urn:ngm:class:adequacy-decision", "label": "Adequacy Decision"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
+      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"},
+      {"@id": "urn:ngm:class:data-protection-impact-assessment", "label": "Data Protection Impact Assessment"},
+      {"@id": "urn:ngm:class:records-of-processing-activities", "label": "Records of Processing Activities"},
+      {"@id": "urn:ngm:class:data-protection-officer", "label": "Data Protection Officer"},
+      {"@id": "urn:ngm:class:breach-notification", "label": "Breach Notification"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:data-privacy", "label": "Data Privacy"},
+      {"@id": "urn:ngm:class:data-subject-rights", "label": "Data Subject Rights"},
+      {"@id": "urn:ngm:class:right-to-erasure", "label": "Right to Erasure"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:accountability-principle", "label": "Accountability Principle"},
+      {"@id": "urn:ngm:class:lawful-basis-for-processing", "label": "Lawful Basis for Processing"},
+      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
+      {"@id": "urn:ngm:class:information-security", "label": "Information Security"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:data", "label": "Data"},
+      {"@id": "urn:ngm:class:security", "label": "Security"}
+    ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:united-kingdom-general-data-protection-regulation", "label": "United Kingdom General Data Protection Regulation"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "quality": 0.72
 }
 ```
 

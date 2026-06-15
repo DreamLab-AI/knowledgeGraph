@@ -62,8 +62,8 @@ public:: true
   "@id": "urn:ngm:class:intel-sgx",
   "@type": "Class",
   "label": "Intel SGX",
-  "definition": "Intel SGX is a set of processor instructions that create isolated memory regions called enclaves, protecting code and data from other software on the same system.",
-  "domain": "distributed-systems",
+  "definition": "Intel SGX (Software Guard Extensions) is a set of Intel processor instructions that create hardware-isolated memory regions called enclaves, protecting sensitive code and data from the operating system, hypervisor, and other privileged software on the same system, with remote attestation enabling third-party verification of enclave integrity.",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [
@@ -73,24 +73,156 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:enclave",
+        "label": "Enclave"
+      },
+      {
+        "@id": "urn:ngm:class:remote-attestation",
+        "label": "Remote Attestation"
+      },
+      {
+        "@id": "urn:ngm:class:memory-encryption-engine",
+        "label": "Memory Encryption Engine"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:intel",
+        "label": "Intel"
+      },
+      {
+        "@id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:intel",
         "label": "Intel"
+      },
+      {
+        "@id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:information-security",
         "label": "Information Security"
+      },
+      {
+        "@id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      },
+      {
+        "@id": "urn:ngm:class:secure-multiparty-computation",
+        "label": "Secure Multiparty Computation"
+      },
+      {
+        "@id": "urn:ngm:class:private-data-processing",
+        "label": "Private Data Processing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:aes-encryption",
+        "label": "AES Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:secure-computation",
+        "label": "Secure Computation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:arm-trustzone",
+        "label": "ARM TrustZone"
+      },
+      {
+        "@id": "urn:ngm:class:amd-sev",
+        "label": "AMD SEV"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:side-channel-attack",
+        "label": "Side-Channel Attack"
+      },
+      {
+        "@id": "urn:ngm:class:hypervisor",
+        "label": "Hypervisor"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:software-guard-extensions",
+      "label": "Software Guard Extensions"
+    },
+    {
+      "@id": "urn:ngm:class:intel-software-guard-extensions",
+      "label": "Intel Software Guard Extensions"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

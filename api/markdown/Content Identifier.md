@@ -28,15 +28,57 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:multihash", "label": "Multihash"},
       {"@id": "urn:ngm:class:ipld", "label": "IPLD"},
-      {"@id": "urn:ngm:class:merkle-dag", "label": "Merkle DAG"}
+      {"@id": "urn:ngm:class:merkle-dag", "label": "Merkle DAG"},
+      {"@id": "urn:ngm:class:multicodec", "label": "Multicodec"},
+      {"@id": "urn:ngm:class:multibase", "label": "Multibase"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
+      {"@id": "urn:ngm:class:hash-digest", "label": "Hash Digest"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:content-deduplication", "label": "Content Deduplication"},
+      {"@id": "urn:ngm:class:tamper-detection", "label": "Tamper Detection"},
+      {"@id": "urn:ngm:class:verifiable-data", "label": "Verifiable Data"},
+      {"@id": "urn:ngm:class:permanent-link", "label": "Permanent Link"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:content-addressing", "label": "Content Addressing"},
+      {"@id": "urn:ngm:class:self-describing-format", "label": "Self-Describing Format"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:ipfs", "label": "IPFS"},
+      {"@id": "urn:ngm:class:ipld", "label": "IPLD"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"},
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
+      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ipfs", "label": "IPFS"},
       {"@id": "urn:ngm:class:ipfs-content-addressing", "label": "IPFS Content Addressing"},
-      {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"}
+      {"@id": "urn:ngm:class:filecoin", "label": "Filecoin"},
+      {"@id": "urn:ngm:class:nft-metadata", "label": "NFT Metadata"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:uniform-resource-locator", "label": "Uniform Resource Locator"},
+      {"@id": "urn:ngm:class:location-addressing", "label": "Location Addressing"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:cid", "label": "CID"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

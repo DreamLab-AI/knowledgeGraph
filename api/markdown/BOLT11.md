@@ -54,7 +54,7 @@ public:: true
   "@id": "urn:ngm:class:bolt-11",
   "@type": "Class",
   "label": "BOLT11",
-  "definition": "BOLT11 is the Lightning Network specification for the invoice format used to request a single payment. It encodes payment details into a string that the payer scans or pastes.",
+  "definition": "BOLT11 is the Lightning Network specification for the invoice format used to request a single payment. It encodes payment amount, payment hash, description, expiry, and optional routing hints into a bech32-encoded string that the payer scans or pastes to initiate an off-chain payment.",
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -65,24 +65,150 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:payment-hash",
+        "label": "Payment Hash"
+      },
+      {
+        "@id": "urn:ngm:class:routing-hints",
+        "label": "Routing Hints"
+      },
+      {
+        "@id": "urn:ngm:class:bech32-encoding",
+        "label": "Bech32 Encoding"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:lightning-network-protocol",
+        "label": "Lightning Network Protocol"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:bolt",
         "label": "BOLT"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:payment-preimage",
+        "label": "Payment Preimage"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:lightning",
         "label": "Lightning"
+      },
+      {
+        "@id": "urn:ngm:class:off-chain-payment",
+        "label": "Off-Chain Payment"
+      },
+      {
+        "@id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "@id": "urn:ngm:class:hashed-time-lock-contract",
+        "label": "Hashed Time-Lock Contract"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:invoice-protocol",
+        "label": "Invoice Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:payment-request",
+        "label": "Payment Request"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:secp256k1",
+        "label": "Secp256k1"
+      },
+      {
+        "@id": "urn:ngm:class:sha256",
+        "label": "SHA256"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:point-of-sale",
+        "label": "Point of Sale"
+      },
+      {
+        "@id": "urn:ngm:class:qr-code",
+        "label": "QR Code"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:lightning-rfc",
+        "label": "Lightning RFC"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:bolt-12",
+        "label": "BOLT12"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-transaction",
+        "label": "On-Chain Transaction"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:finance",
+        "label": "Finance"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:lightning-wallet",
+        "label": "Lightning Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:node-id",
+        "label": "Node ID"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:lightning-invoice",
+      "label": "Lightning Invoice"
+    },
+    {
+      "@id": "urn:ngm:class:ln-invoice",
+      "label": "LN Invoice"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

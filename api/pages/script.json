@@ -17,11 +17,29 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:locking-script",
+        "label": "Locking Script"
+      },
+      {
+        "id": "urn:ngm:class:unlocking-script",
+        "label": "Unlocking Script"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:transaction-processing",
@@ -30,12 +48,51 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
+      },
+      {
+        "id": "urn:ngm:class:time-locked-transaction",
+        "label": "Time-Locked Transaction"
+      },
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:spending-condition",
+        "label": "Spending Condition"
+      },
+      {
+        "id": "urn:ngm:class:pay-to-public-key-hash",
+        "label": "Pay-To-Public-Key-Hash"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:turing-complete-language",
+        "label": "Turing-Complete Language"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:opcodes",
@@ -48,11 +105,28 @@
       {
         "id": "urn:ngm:class:utxo-model",
         "label": "UTXO Model"
+      },
+      {
+        "id": "urn:ngm:class:stack-machine",
+        "label": "Stack Machine"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:bitcoin-protocol",
+        "label": "Bitcoin Protocol"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:blockchain-transaction",
@@ -67,8 +141,12 @@
         "label": "Transaction Pool"
       },
       {
-        "id": "urn:ngm:class:digital-signature",
-        "label": "Digital Signature"
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:node-validation",
+        "label": "Node Validation"
       }
     ]
   },

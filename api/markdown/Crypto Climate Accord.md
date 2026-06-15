@@ -29,14 +29,49 @@ public:: true
       {"@id": "urn:ngm:class:blockchain-energy-consumption", "label": "Blockchain Energy Consumption"},
       {"@id": "urn:ngm:class:renewable-energy", "label": "Renewable Energy"},
       {"@id": "urn:ngm:class:carbon-credits", "label": "Carbon Credits"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
+      {"@id": "urn:ngm:class:paris-climate-agreement", "label": "Paris Climate Agreement"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"},
+      {"@id": "urn:ngm:class:energy-web-chain", "label": "Energy Web Chain"},
+      {"@id": "urn:ngm:class:scope-2-emissions", "label": "Scope 2 Emissions"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:esg-compliant-blockchain", "label": "ESG-Compliant Blockchain"},
-      {"@id": "urn:ngm:class:renewable-energy-tracking", "label": "Renewable Energy Tracking"}
+      {"@id": "urn:ngm:class:renewable-energy-tracking", "label": "Renewable Energy Tracking"},
+      {"@id": "urn:ngm:class:decarbonisation", "label": "Decarbonisation"},
+      {"@id": "urn:ngm:class:institutional-adoption", "label": "Institutional Adoption"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:renewable-energy-certificates", "label": "Renewable Energy Certificates"},
+      {"@id": "urn:ngm:class:carbon-accounting-standard", "label": "Carbon Accounting Standard"},
+      {"@id": "urn:ngm:class:24-7-carbon-free-energy", "label": "24/7 Carbon-Free Energy"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:power-purchase-agreement", "label": "Power Purchase Agreement"},
+      {"@id": "urn:ngm:class:emissions-reporting", "label": "Emissions Reporting"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:net-zero-blockchain", "label": "Net-Zero Blockchain"},
+      {"@id": "urn:ngm:class:voluntary-carbon-market", "label": "Voluntary Carbon Market"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:bitcoin-mining", "label": "Bitcoin Mining"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:governance", "label": "Governance"},
+      {"@id": "urn:ngm:class:sustainability-reporting", "label": "Sustainability Reporting"},
+      {"@id": "urn:ngm:class:mica-regulation", "label": "MiCA Regulation"}
     ]
   },
-  "quality": 0.82
+  "sameAs": [
+    {"@id": "urn:ngm:class:cca-crypto-climate-accord", "label": "CCA (Crypto Climate Accord)"}
+  ],
+  "quality": 0.82,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

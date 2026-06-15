@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -21,13 +21,52 @@
       {
         "id": "urn:ngm:class:know-your-customer",
         "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hashing",
+        "label": "Cryptographic Hashing"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:digital-onboarding",
+        "label": "Digital Onboarding"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti Money Laundering"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:knowledge-based-authentication",
+        "label": "Knowledge Based Authentication"
+      },
+      {
+        "id": "urn:ngm:class:password-authentication",
+        "label": "Password Authentication"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:biometric-verification",
@@ -40,10 +79,48 @@
       {
         "id": "urn:ngm:class:facial-recognition",
         "label": "Facial Recognition"
+      },
+      {
+        "id": "urn:ngm:class:optical-character-recognition",
+        "label": "Optical Character Recognition"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:liveness-detection",
+        "label": "Liveness Detection"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy Preserving Computation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist-sp-800-63",
+        "label": "NIST SP 800-63"
+      },
+      {
+        "id": "urn:ngm:class:eidas-regulation",
+        "label": "eIDAS Regulation"
+      },
+      {
+        "id": "urn:ngm:class:iso-30107",
+        "label": "ISO 30107"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -57,6 +134,10 @@
       {
         "id": "urn:ngm:class:digital-identity-framework",
         "label": "Digital Identity Framework"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
       }
     ]
   },

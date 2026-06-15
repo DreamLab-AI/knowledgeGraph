@@ -28,19 +28,48 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:predictive-personalization", "label": "Predictive Personalization"},
       {"@id": "urn:ngm:class:behavioral-analytics", "label": "Behavioral Analytics"},
-      {"@id": "urn:ngm:class:sentiment-analysis", "label": "Sentiment Analysis"}
+      {"@id": "urn:ngm:class:sentiment-analysis", "label": "Sentiment Analysis"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:journey-mapping", "label": "Journey Mapping"},
+      {"@id": "urn:ngm:class:voice-of-customer", "label": "Voice of Customer"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:customer-service-automation", "label": "Customer Service Automation"},
       {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper personalisation"},
-      {"@id": "urn:ngm:class:loyalty-programs", "label": "Loyalty Programs"}
+      {"@id": "urn:ngm:class:loyalty-programs", "label": "Loyalty Programs"},
+      {"@id": "urn:ngm:class:customer-retention", "label": "Customer Retention"},
+      {"@id": "urn:ngm:class:brand-advocacy", "label": "Brand Advocacy"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:omnichannel-orchestration", "label": "Omnichannel Orchestration"},
+      {"@id": "urn:ngm:class:net-promoter-score", "label": "Net Promoter Score"},
+      {"@id": "urn:ngm:class:customer-effort-score", "label": "Customer Effort Score"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:first-party-data", "label": "First-Party Data"},
+      {"@id": "urn:ngm:class:unified-customer-profile", "label": "Unified Customer Profile"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:digital-twin-of-the-customer", "label": "Digital Twin of the Customer"},
-      {"@id": "urn:ngm:class:customer-support", "label": "Customer Support"}
+      {"@id": "urn:ngm:class:customer-support", "label": "Customer Support"},
+      {"@id": "urn:ngm:class:service-design", "label": "Service Design"},
+      {"@id": "urn:ngm:class:data-privacy", "label": "Data Privacy"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:cx", "label": "CX"},
+    {"@id": "urn:ngm:class:customer-journey-experience", "label": "Customer Journey Experience"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

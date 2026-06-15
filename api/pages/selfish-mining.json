@@ -21,7 +21,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -33,10 +33,36 @@
       {
         "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:private-chain",
+        "label": "Private Chain"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:block-reward-manipulation",
+        "label": "Block Reward Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:mining-centralization",
+        "label": "Mining Centralization"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:network-propagation-delay",
+        "label": "Network Propagation Delay"
+      },
+      {
+        "id": "urn:ngm:class:fork-choice-rule",
+        "label": "Fork Choice Rule"
+      }
+    ],
     "implements": [],
     "contrastsWith": [
       {
@@ -46,13 +72,43 @@
       {
         "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:honest-mining",
+        "label": "Honest Mining"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain-attack-surface",
+        "label": "Blockchain Attack Surface"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:51-attack",
@@ -73,6 +129,22 @@
       {
         "id": "urn:ngm:class:longest-chain-rule",
         "label": "Longest Chain Rule"
+      },
+      {
+        "id": "urn:ngm:class:hash-rate",
+        "label": "Hash Rate"
+      },
+      {
+        "id": "urn:ngm:class:block-withholding-attack",
+        "label": "Block Withholding Attack"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
       }
     ]
   },

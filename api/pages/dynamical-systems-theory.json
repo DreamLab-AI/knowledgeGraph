@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:dynamical-systems-theory",
   "domain": "machine-learning",
-  "definition": "The mathematical study of systems that evolve over time according to fixed rules, focusing on long-term behaviour, stability, and qualitative structure.",
+  "definition": "The mathematical study of systems that evolve over time according to fixed rules, focusing on long-term behaviour, stability, attractors, bifurcations, and qualitative structure of trajectories in state space.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -13,10 +13,27 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:attractor",
+        "label": "Attractor"
+      },
+      {
+        "id": "urn:ngm:class:phase-space",
+        "label": "Phase Space"
+      },
+      {
+        "id": "urn:ngm:class:fixed-point",
+        "label": "Fixed Point"
+      },
+      {
+        "id": "urn:ngm:class:lyapunov-exponent",
+        "label": "Lyapunov Exponent"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:differential-equations",
@@ -25,23 +42,104 @@
       {
         "id": "urn:ngm:class:linear-algebra",
         "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:topology",
+        "label": "Topology"
+      },
+      {
+        "id": "urn:ngm:class:calculus",
+        "label": "Calculus"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:complex-systems",
         "label": "Complex Systems"
+      },
+      {
+        "id": "urn:ngm:class:chaos-theory",
+        "label": "Chaos Theory"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:stability-analysis",
+        "label": "Stability Analysis"
+      },
+      {
+        "id": "urn:ngm:class:bifurcation-analysis",
+        "label": "Bifurcation Analysis"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:stochastic-processes",
+        "label": "Stochastic Processes"
+      },
+      {
+        "id": "urn:ngm:class:static-optimization",
+        "label": "Static Optimization"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "id": "urn:ngm:class:state-space-representation",
+        "label": "State Space Representation"
+      },
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:neural-ordinary-differential-equations",
+        "label": "Neural Ordinary Differential Equations"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ergodic-theory",
+        "label": "Ergodic Theory"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
+    ]
   },
   "wikilinks": [
     {

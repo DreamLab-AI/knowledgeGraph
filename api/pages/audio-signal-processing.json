@@ -4,7 +4,7 @@
   "slug": "audio-signal-processing",
   "public": true,
   "classIri": "urn:ngm:class:audio-signal-processing",
-  "domain": "metaverse",
+  "domain": "ai",
   "definition": "Audio Signal Processing is the application of signal processing theory and algorithms to the analysis, transformation, synthesis, and encoding of audio-frequency signals, operating in either the time domain or frequency domain. It encompasses filtering, equalisation, dynamic range control, time-frequency analysis, psychoacoustic coding, and spatial rendering as applied to sound reproduction, communication, and computational audition systems.",
   "subClassOf": [
     {
@@ -16,8 +16,34 @@
   "qualityScore": 0.8,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:digital-filter",
+        "label": "Digital Filter"
+      },
+      {
+        "id": "urn:ngm:class:fast-fourier-transform",
+        "label": "Fast Fourier Transform"
+      },
+      {
+        "id": "urn:ngm:class:psychoacoustic-model",
+        "label": "Psychoacoustic Model"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-range-compression",
+        "label": "Dynamic Range Compression"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sampling-theorem",
+        "label": "Sampling Theorem"
+      },
+      {
+        "id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:spatial-audio",
@@ -29,13 +55,34 @@
       },
       {
         "id": "urn:ngm:class:speech-synthesis",
-        "label": "SpeechSynthesis"
+        "label": "Speech Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:audio-compression",
+        "label": "Audio Compression"
+      },
+      {
+        "id": "urn:ngm:class:noise-suppression",
+        "label": "Noise Suppression"
+      },
+      {
+        "id": "urn:ngm:class:acoustic-echo-cancellation",
+        "label": "Acoustic Echo Cancellation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:digital-signal-processing",
@@ -44,9 +91,26 @@
       {
         "id": "urn:ngm:class:audio-parameters",
         "label": "Audio Parameters"
+      },
+      {
+        "id": "urn:ngm:class:pulse-code-modulation",
+        "label": "Pulse-Code Modulation"
+      },
+      {
+        "id": "urn:ngm:class:convolution",
+        "label": "Convolution"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-audio-workstation",
+        "label": "Digital Audio Workstation"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -57,6 +121,14 @@
       {
         "id": "urn:ngm:class:audio-processing-system",
         "label": "Audio Processing System"
+      },
+      {
+        "id": "urn:ngm:class:neural-audio-codec",
+        "label": "Neural Audio Codec"
+      },
+      {
+        "id": "urn:ngm:class:source-separation",
+        "label": "Source Separation"
       }
     ]
   },

@@ -28,23 +28,58 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"},
       {"@id": "urn:ngm:class:ai-incident", "label": "AI Incident"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
+      {"@id": "urn:ngm:class:root-cause-analysis", "label": "Root Cause Analysis"},
+      {"@id": "urn:ngm:class:post-incident-review", "label": "Post-Incident Review"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
       {"@id": "urn:ngm:class:algorithmic-transparency-reports", "label": "Algorithmic Transparency Reports"},
-      {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"}
+      {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"},
+      {"@id": "urn:ngm:class:organisational-learning", "label": "Organisational Learning"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:compliance-audit-trail", "label": "Compliance Audit Trail"},
-      {"@id": "urn:ngm:class:ai-monitoring", "label": "AI Monitoring"}
+      {"@id": "urn:ngm:class:ai-monitoring", "label": "AI Monitoring"},
+      {"@id": "urn:ngm:class:incident-classification", "label": "Incident Classification"},
+      {"@id": "urn:ngm:class:threat-intelligence", "label": "Threat Intelligence"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:vulnerability", "label": "Vulnerability"},
-      {"@id": "urn:ngm:class:data-breach", "label": "Data Breach"}
+      {"@id": "urn:ngm:class:data-breach", "label": "Data Breach"},
+      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:stakeholder-notification", "label": "Stakeholder Notification"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:nis2-directive", "label": "NIS2 Directive"},
+      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
+      {"@id": "urn:ngm:class:iso-27035", "label": "ISO 27035"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:incident-triage", "label": "Incident Triage"},
+      {"@id": "urn:ngm:class:disclosure-notification", "label": "Disclosure Notification"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:security-through-obscurity", "label": "Security Through Obscurity"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:incident-disclosure", "label": "Incident Disclosure"},
+    {"@id": "urn:ngm:class:occurrence-reporting", "label": "Occurrence Reporting"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

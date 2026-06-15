@@ -84,23 +84,60 @@ public:: true
       {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
       {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
     ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:mining", "label": "Mining"},
-      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
-      {"@id": "urn:ngm:class:miner", "label": "Miner"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:target-hash", "label": "Target Hash"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:hash-rate", "label": "Hash Rate"},
+      {"@id": "urn:ngm:class:block-timestamp", "label": "Block Timestamp"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}
+      {"@id": "urn:ngm:class:network-security", "label": "Network Security"},
+      {"@id": "urn:ngm:class:block-production", "label": "Block Production"},
+      {"@id": "urn:ngm:class:mining-incentive", "label": "Mining Incentive"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:mining", "label": "Mining"},
+      {"@id": "urn:ngm:class:blockchain-node", "label": "Blockchain Node"},
+      {"@id": "urn:ngm:class:block-header", "label": "Block Header"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"},
+      {"@id": "urn:ngm:class:feedback-control-loop", "label": "Feedback Control Loop"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
+      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:decentralization", "label": "Decentralization"},
+      {"@id": "urn:ngm:class:51-percent-attack-resistance", "label": "51 Percent Attack Resistance"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof Of Stake"},
+      {"@id": "urn:ngm:class:delegated-proof-of-stake", "label": "Delegated Proof Of Stake"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"},
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
+      {"@id": "urn:ngm:class:miner", "label": "Miner"},
+      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"},
+      {"@id": "urn:ngm:class:halving", "label": "Halving"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:mining-difficulty-retargeting", "label": "Mining Difficulty Retargeting"},
+    {"@id": "urn:ngm:class:pow-difficulty-recalibration", "label": "PoW Difficulty Recalibration"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

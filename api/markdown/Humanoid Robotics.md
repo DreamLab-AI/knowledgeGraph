@@ -25,22 +25,55 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:humanoid-robot", "label": "Humanoid Robot"}],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:bipedal-locomotion", "label": "Bipedal Locomotion"},
+      {"@id": "urn:ngm:class:dexterous-manipulation", "label": "Dexterous Manipulation"},
+      {"@id": "urn:ngm:class:whole-body-control", "label": "Whole-Body Control"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
+      {"@id": "urn:ngm:class:real-time-control", "label": "Real-Time Control"},
+      {"@id": "urn:ngm:class:proprioception", "label": "Proprioception"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:model-predictive-control", "label": "Model Predictive Control"},
+      {"@id": "urn:ngm:class:imitation-learning", "label": "Imitation Learning"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:assistive-robotics", "label": "Assistive Robotics"},
+      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"},
+      {"@id": "urn:ngm:class:autonomous-manipulation", "label": "Autonomous Manipulation"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:sim-to-real-transfer", "label": "Sim-to-Real Transfer"},
+      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"}
+    ],
     "relatedTo": [
       {"@id": "urn:ngm:class:legged-locomotion", "label": "Legged Locomotion"},
       {"@id": "urn:ngm:class:manipulation", "label": "Manipulation"},
       {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:embodied-ai", "label": "Embodied AI"}
+      {"@id": "urn:ngm:class:embodied-ai", "label": "Embodied AI"},
+      {"@id": "urn:ngm:class:robot-perception", "label": "Robot Perception"},
+      {"@id": "urn:ngm:class:tactile-sensing", "label": "Tactile Sensing"}
     ],
-    "uses": [
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
-    ],
-    "enables": [
-      {"@id": "urn:ngm:class:assistive-robotics", "label": "Assistive Robotics"},
-      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"}
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:android-robotics", "label": "Android Robotics"},
+    {"@id": "urn:ngm:class:anthropomorphic-robot", "label": "Anthropomorphic Robot"}
+  ],
+  "quality": 0.75,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

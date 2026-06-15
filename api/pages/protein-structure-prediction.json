@@ -4,8 +4,8 @@
   "slug": "protein-structure-prediction",
   "public": true,
   "classIri": "urn:ngm:class:protein-structure-prediction",
-  "domain": "ai",
-  "definition": "Protein structure prediction is the computational determination of a protein's three-dimensional folded structure from its amino-acid sequence. Deep-learning systems such as AlphaFold, built on attention-based architectures, achieved near-experimental accuracy and transformed structural biology. It is a landmark AI application with deep impact on drug discovery and molecular biology.",
+  "domain": "artificial-intelligence",
+  "definition": "Protein structure prediction is the computational determination of a protein's three-dimensional folded structure from its amino-acid sequence. Deep-learning systems such as AlphaFold, built on attention-based architectures, achieved near-experimental accuracy and transformed structural biology. It is a landmark AI application with deep impact on drug discovery, molecular biology, and rational enzyme design.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -16,14 +16,113 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:inter-residue-distance-prediction",
+        "label": "Inter-Residue Distance Prediction"
+      },
+      {
+        "id": "urn:ngm:class:torsion-angle-prediction",
+        "label": "Torsion Angle Prediction"
+      },
+      {
+        "id": "urn:ngm:class:structure-refinement",
+        "label": "Structure Refinement"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:amino-acid-sequence",
+        "label": "Amino Acid Sequence"
+      },
+      {
+        "id": "urn:ngm:class:evolutionary-covariation",
+        "label": "Evolutionary Covariation"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:structure-based-drug-design",
+        "label": "Structure-Based Drug Design"
+      },
+      {
+        "id": "urn:ngm:class:protein-function-annotation",
+        "label": "Protein Function Annotation"
+      },
+      {
+        "id": "urn:ngm:class:enzyme-engineering",
+        "label": "Enzyme Engineering"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:protein-data-bank",
+        "label": "Protein Data Bank"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      },
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High Performance Computing"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:homology-modelling",
+        "label": "Homology Modelling"
+      },
+      {
+        "id": "urn:ngm:class:x-ray-crystallography",
+        "label": "X-Ray Crystallography"
+      },
+      {
+        "id": "urn:ngm:class:cryo-electron-microscopy",
+        "label": "Cryo-Electron Microscopy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformers",
+        "label": "Transformers"
+      },
+      {
+        "id": "urn:ngm:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:multiple-sequence-alignment",
+        "label": "Multiple Sequence Alignment"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-networks",
+        "label": "Graph Neural Networks"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
@@ -35,6 +134,14 @@
       {
         "id": "urn:ngm:class:attention",
         "label": "Attention"
+      },
+      {
+        "id": "urn:ngm:class:molecular-dynamics",
+        "label": "Molecular Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:bioinformatics",
+        "label": "Bioinformatics"
       }
     ]
   },

@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "GPT 4",
   "definition": "A large multimodal language model released by OpenAI in 2023, capable of accepting text and image inputs and producing text outputs, and a successor to the GPT-3.5 series.",
-  "domain": "ai",
+  "domain": "artificial-intelligence",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [
@@ -73,20 +73,112 @@ public:: true
       {
         "@id": "urn:ngm:class:openai-research-organisation",
         "label": "OpenAI Research Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning From Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:in-context-learning",
         "label": "In-Context Learning"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:text-summarisation",
+        "label": "Text Summarisation"
+      },
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-reasoning",
+        "label": "Multimodal Reasoning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-thought-prompting",
+        "label": "Chain Of Thought Prompting"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:instruction-following",
+        "label": "Instruction Following"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:gpt-3",
+        "label": "GPT 3"
+      },
+      {
+        "@id": "urn:ngm:class:llama",
+        "label": "LLaMA"
+      },
+      {
+        "@id": "urn:ngm:class:gemini",
+        "label": "Gemini"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:neural-scaling-laws",
+        "label": "Neural Scaling Laws"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:gpt4",
+      "label": "GPT4"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

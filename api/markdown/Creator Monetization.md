@@ -28,20 +28,54 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:platform-economy", "label": "Platform Economy"},
       {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
-      {"@id": "urn:ngm:class:nft-marketplace", "label": "NFT Marketplace"}
+      {"@id": "urn:ngm:class:nft-marketplace", "label": "NFT Marketplace"},
+      {"@id": "urn:ngm:class:attention-economy", "label": "Attention Economy"},
+      {"@id": "urn:ngm:class:gig-economy", "label": "Gig Economy"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:creator-royalty-token", "label": "Creator Royalty Token"},
       {"@id": "urn:ngm:class:smart-royalty-contract", "label": "Smart Royalty Contract"},
-      {"@id": "urn:ngm:class:royalty-distribution", "label": "Royalty Distribution"}
+      {"@id": "urn:ngm:class:royalty-distribution", "label": "Royalty Distribution"},
+      {"@id": "urn:ngm:class:subscription-model", "label": "Subscription Model"},
+      {"@id": "urn:ngm:class:payment-processing", "label": "Payment Processing"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:multi-party-royalties", "label": "Multi Party Royalties"},
       {"@id": "urn:ngm:class:digital-marketplace", "label": "Digital Marketplace"},
-      {"@id": "urn:ngm:class:non-fungible-token-nft", "label": "Non-Fungible Token (NFT)"}
+      {"@id": "urn:ngm:class:non-fungible-token-nft", "label": "Non-Fungible Token (NFT)"},
+      {"@id": "urn:ngm:class:fan-ownership", "label": "Fan Ownership"},
+      {"@id": "urn:ngm:class:direct-to-consumer", "label": "Direct-to-Consumer"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:audience-engagement", "label": "Audience Engagement"},
+      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:advertising-revenue-share", "label": "Advertising Revenue Share"},
+      {"@id": "urn:ngm:class:merchandise-sales", "label": "Merchandise Sales"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:content-distribution-platform", "label": "Content Distribution Platform"},
+      {"@id": "urn:ngm:class:digital-payment-infrastructure", "label": "Digital Payment Infrastructure"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:traditional-media-licensing", "label": "Traditional Media Licensing"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:creator-revenue-model", "label": "Creator Revenue Model"},
+    {"@id": "urn:ngm:class:content-creator-monetization", "label": "Content Creator Monetization"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

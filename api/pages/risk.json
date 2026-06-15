@@ -28,6 +28,14 @@
       {
         "id": "urn:ngm:class:algorithmic-bias",
         "label": "Algorithmic Bias"
+      },
+      {
+        "id": "urn:ngm:class:model-failure",
+        "label": "Model Failure"
+      },
+      {
+        "id": "urn:ngm:class:data-poisoning",
+        "label": "Data Poisoning"
       }
     ],
     "requires": [
@@ -38,18 +46,65 @@
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:bias-mitigation-techniques",
         "label": "Bias Mitigation Techniques"
+      },
+      {
+        "id": "urn:ngm:class:safety-engineering",
+        "label": "Safety Engineering"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:model-robustness",
+        "label": "Model Robustness"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      },
+      {
+        "id": "urn:ngm:class:safety",
+        "label": "Safety"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
@@ -70,6 +125,18 @@
       {
         "id": "urn:ngm:class:adversarial-robustness",
         "label": "Adversarial Robustness"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty",
+        "label": "Uncertainty"
+      },
+      {
+        "id": "urn:ngm:class:threat-model",
+        "label": "Threat Model"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
       }
     ]
   },

@@ -63,22 +63,49 @@ public:: true
     "requires": [
       {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"},
       {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
-      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"}
+      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
+      {"@id": "urn:ngm:class:dynamics-model", "label": "Dynamics Model"},
+      {"@id": "urn:ngm:class:state-estimation", "label": "State Estimation"}
     ],
     "hasPart": [
       {"@id": "urn:ngm:class:trajectory-generation", "label": "Trajectory Generation"},
       {"@id": "urn:ngm:class:trajectory-planning", "label": "Trajectory Planning"},
-      {"@id": "urn:ngm:class:velocity-control", "label": "VelocityControl"},
-      {"@id": "urn:ngm:class:position-control", "label": "PositionControl"}
+      {"@id": "urn:ngm:class:velocity-control", "label": "Velocity Control"},
+      {"@id": "urn:ngm:class:position-control", "label": "Position Control"},
+      {"@id": "urn:ngm:class:acceleration-profile", "label": "Acceleration Profile"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:pid-controller", "label": "PID Controller"},
+      {"@id": "urn:ngm:class:model-predictive-control", "label": "Model Predictive Control"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:robotic-manipulation", "label": "Robotic Manipulation"},
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:point-to-point-control", "label": "Point-to-Point Control"},
+      {"@id": "urn:ngm:class:position-control", "label": "Position Control"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
       {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
       {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"},
-      {"@id": "urn:ngm:class:collision-avoidance", "label": "Collision Avoidance"}
+      {"@id": "urn:ngm:class:collision-avoidance", "label": "Collision Avoidance"},
+      {"@id": "urn:ngm:class:optimal-control", "label": "Optimal Control"},
+      {"@id": "urn:ngm:class:joint-space-control", "label": "Joint Space Control"},
+      {"@id": "urn:ngm:class:task-space-control", "label": "Task Space Control"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:trajectory-tracking-control", "label": "Trajectory Tracking Control"},
+    {"@id": "urn:ngm:class:path-following-control", "label": "Path Following Control"}
+  ],
+  "quality": 0.80,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

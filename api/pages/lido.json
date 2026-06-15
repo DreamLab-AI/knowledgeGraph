@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:lido",
   "domain": "blockchain",
-  "definition": "A liquid staking protocol that stakes users' assets with network validators and issues a transferable token representing the staked position and its accruing rewards.",
+  "definition": "A liquid staking protocol that stakes users' assets with network validators and issues a transferable token representing the staked position and its accruing rewards, enabling holders to participate in DeFi while their principal remains staked.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:liquid-proof-of-stake",
@@ -13,10 +13,23 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:lido-dao",
+        "label": "Lido DAO"
+      },
+      {
+        "id": "urn:ngm:class:steth",
+        "label": "stETH"
+      },
+      {
+        "id": "urn:ngm:class:node-operator-registry",
+        "label": "Node Operator Registry"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:proof-of-stake",
@@ -25,23 +38,109 @@
       {
         "id": "urn:ngm:class:validator-node",
         "label": "Validator Node"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:liquidity-provision",
         "label": "Liquidity Provision"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "id": "urn:ngm:class:collateralization",
+        "label": "Collateralization"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:liquid-staking-token",
+        "label": "Liquid Staking Token"
+      },
+      {
+        "id": "urn:ngm:class:reward-distribution",
+        "label": "Reward Distribution"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:solo-staking",
+        "label": "Solo Staking"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:centralized-exchange",
+        "label": "Centralized Exchange"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      },
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralization",
+        "label": "Decentralization"
+      },
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      }
+    ]
   },
   "wikilinks": [
     {

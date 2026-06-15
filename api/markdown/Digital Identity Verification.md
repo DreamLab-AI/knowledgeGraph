@@ -28,18 +28,56 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:biometric-verification", "label": "Biometric Verification"},
       {"@id": "urn:ngm:class:biometric-authentication", "label": "Biometric Authentication"},
-      {"@id": "urn:ngm:class:facial-recognition", "label": "Facial Recognition"}
+      {"@id": "urn:ngm:class:facial-recognition", "label": "Facial Recognition"},
+      {"@id": "urn:ngm:class:optical-character-recognition", "label": "Optical Character Recognition"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:liveness-detection", "label": "Liveness Detection"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:know-your-customer", "label": "Know Your Customer"}
+      {"@id": "urn:ngm:class:know-your-customer", "label": "Know Your Customer"},
+      {"@id": "urn:ngm:class:cryptographic-hashing", "label": "Cryptographic Hashing"},
+      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
+      {"@id": "urn:ngm:class:digital-onboarding", "label": "Digital Onboarding"},
+      {"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti Money Laundering"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
+      {"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"},
+      {"@id": "urn:ngm:class:privacy-preserving-computation", "label": "Privacy Preserving Computation"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:knowledge-based-authentication", "label": "Knowledge Based Authentication"},
+      {"@id": "urn:ngm:class:password-authentication", "label": "Password Authentication"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:nist-sp-800-63", "label": "NIST SP 800-63"},
+      {"@id": "urn:ngm:class:eidas-regulation", "label": "eIDAS Regulation"},
+      {"@id": "urn:ngm:class:iso-30107", "label": "ISO 30107"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
       {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:digital-identity-framework", "label": "Digital Identity Framework"}
+      {"@id": "urn:ngm:class:digital-identity-framework", "label": "Digital Identity Framework"},
+      {"@id": "urn:ngm:class:decentralized-identifier", "label": "Decentralized Identifier"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:identity-proofing", "label": "Identity Proofing"},
+    {"@id": "urn:ngm:class:remote-identity-verification", "label": "Remote Identity Verification"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

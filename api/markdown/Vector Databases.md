@@ -54,7 +54,7 @@ public:: true
   "@id": "urn:ngm:class:vector-databases",
   "@type": "Class",
   "label": "Vector Databases",
-  "definition": "Database systems specialised for storing high-dimensional vector embeddings and performing similarity search over them, typically using approximate nearest neighbour indexing.",
+  "definition": "Database systems specialised for storing high-dimensional vector embeddings and performing similarity search over them, typically using approximate nearest neighbour indexing algorithms such as HNSW and IVF.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -69,6 +69,14 @@ public:: true
       {
         "@id": "urn:ngm:class:embeddings",
         "label": "Embeddings"
+      },
+      {
+        "@id": "urn:ngm:class:approximate-nearest-neighbour",
+        "label": "Approximate Nearest Neighbour"
+      },
+      {
+        "@id": "urn:ngm:class:vector-index",
+        "label": "Vector Index"
       }
     ],
     "enables": [
@@ -79,14 +87,110 @@ public:: true
       {
         "@id": "urn:ngm:class:retrieval-augmented-generation",
         "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:vector-index",
+        "label": "Vector Index"
+      },
+      {
+        "@id": "urn:ngm:class:similarity-metric",
+        "label": "Similarity Metric"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
+      },
+      {
+        "@id": "urn:ngm:class:euclidean-distance",
+        "label": "Euclidean Distance"
+      },
+      {
+        "@id": "urn:ngm:class:hnsw",
+        "label": "HNSW"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:relational-databases",
+        "label": "Relational Databases"
+      },
+      {
+        "@id": "urn:ngm:class:graph-databases",
+        "label": "Graph Databases"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:knowledge-graphs",
+        "label": "Knowledge Graphs"
+      },
+      {
+        "@id": "urn:ngm:class:feature-stores",
+        "label": "Feature Stores"
+      },
+      {
+        "@id": "urn:ngm:class:neural-information-retrieval",
+        "label": "Neural Information Retrieval"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:data",
+        "label": "Data"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:vector-database",
+      "label": "Vector Database"
+    },
+    {
+      "@id": "urn:ngm:class:embedding-database",
+      "label": "Embedding Database"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

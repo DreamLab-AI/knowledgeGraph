@@ -21,28 +21,62 @@ public:: true
   "@type": "Class",
   "label": "Llama 3",
   "definition": "Llama 3 is a family of open-weight large language models developed and released by Meta AI in April 2024, spanning 8 billion and 70 billion parameter base and instruction-tuned variants, with a 405 billion parameter model subsequently released in July 2024. Llama 3 models are trained on approximately 15 trillion tokens from a curated multilingual corpus, use a 128,000-token vocabulary with a custom BPE tokeniser, incorporate grouped-query attention for inference efficiency, and are post-trained with supervised fine-tuning and reinforcement learning from human feedback. The models are released under a custom Meta Llama 3 Community License that permits commercial use for most organisations while imposing restrictions on deployments exceeding 700 million monthly active users.",
-  "domain": "ai",
+  "domain": "machine-learning",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}],
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:rlhf", "label": "RLHF"},
       {"@id": "urn:ngm:class:instruction-tuning", "label": "Instruction Tuning"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:grouped-query-attention", "label": "Grouped Query Attention"},
+      {"@id": "urn:ngm:class:byte-pair-encoding", "label": "Byte Pair Encoding"},
+      {"@id": "urn:ngm:class:rotary-positional-embedding", "label": "Rotary Positional Embedding"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
       {"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"},
-      {"@id": "urn:ngm:class:open-source-ai", "label": "Open-Source AI"}
+      {"@id": "urn:ngm:class:open-source-ai", "label": "Open-Source AI"},
+      {"@id": "urn:ngm:class:on-device-inference", "label": "On-Device Inference"},
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval Augmented Generation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:gpu-cluster", "label": "GPU Cluster"},
+      {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"},
+      {"@id": "urn:ngm:class:pretraining-data", "label": "Pretraining Data"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:decoder-only-transformer", "label": "Decoder-Only Transformer"},
+      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine Tuning"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:gpt-4", "label": "GPT-4"},
+      {"@id": "urn:ngm:class:claude", "label": "Claude"},
+      {"@id": "urn:ngm:class:mistral", "label": "Mistral"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:meta-ai", "label": "Meta AI"},
       {"@id": "urn:ngm:class:model-weights", "label": "Model Weights"},
       {"@id": "urn:ngm:class:benchmarks", "label": "Benchmarks"},
-      {"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and alignment"}
+      {"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and alignment"},
+      {"@id": "urn:ngm:class:multimodal-models", "label": "Multimodal Models"},
+      {"@id": "urn:ngm:class:hugging-face", "label": "Hugging Face"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:enterprise-ai", "label": "Enterprise AI"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:llama-3", "label": "Llama 3"},
+    {"@id": "urn:ngm:class:meta-llama-3", "label": "Meta Llama 3"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

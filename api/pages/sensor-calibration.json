@@ -16,8 +16,30 @@
   "qualityScore": 0.8,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:intrinsic-calibration",
+        "label": "Intrinsic Calibration"
+      },
+      {
+        "id": "urn:ngm:class:extrinsic-calibration",
+        "label": "Extrinsic Calibration"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:reference-standard",
+        "label": "Reference Standard"
+      },
+      {
+        "id": "urn:ngm:class:point-correspondence",
+        "label": "Point Correspondence"
+      },
+      {
+        "id": "urn:ngm:class:reprojection-error",
+        "label": "Reprojection Error"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:sensor-fusion",
@@ -30,12 +52,47 @@
       {
         "id": "urn:ngm:class:localization",
         "label": "Localization"
+      },
+      {
+        "id": "urn:ngm:class:visual-inertial-odometry",
+        "label": "Visual-Inertial Odometry"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle-perception",
+        "label": "Autonomous Vehicle Perception"
+      },
+      {
+        "id": "urn:ngm:class:robot-perception",
+        "label": "Robot Perception"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "id": "urn:ngm:class:measurement-error-model",
+        "label": "Measurement Error Model"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:sensor-validation",
+        "label": "Sensor Validation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:calibration-target",
@@ -48,9 +105,30 @@
       {
         "id": "urn:ngm:class:camera-intrinsics",
         "label": "Camera Intrinsics"
+      },
+      {
+        "id": "urn:ngm:class:levenberg-marquardt-algorithm",
+        "label": "Levenberg-Marquardt Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:least-squares-optimisation",
+        "label": "Least-Squares Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:allan-variance",
+        "label": "Allan Variance"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:3d-reconstruction",
+        "label": "3D Reconstruction"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -65,6 +143,14 @@
       {
         "id": "urn:ngm:class:camera-calibration",
         "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:ngm:class:distortion-correction",
+        "label": "Distortion Correction"
+      },
+      {
+        "id": "urn:ngm:class:thermal-compensation",
+        "label": "Thermal Compensation"
       }
     ]
   },

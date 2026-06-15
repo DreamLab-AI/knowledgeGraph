@@ -54,8 +54,8 @@ public:: true
   "@id": "urn:ngm:class:distributed-systems-theory",
   "@type": "Class",
   "label": "Distributed Systems Theory",
-  "definition": "The theoretical study of computational systems whose components run on separate networked machines and coordinate by passing messages.",
-  "domain": "machine-learning",
+  "definition": "The theoretical study of computational systems whose components run on separate networked machines and coordinate by passing messages, encompassing fundamental impossibility results, consistency models, and formal proofs of consensus and replication protocols.",
+  "domain": "distributed-systems",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [
@@ -65,28 +65,142 @@ public:: true
     }
   ],
   "relations": {
-    "requires": [
+    "hasPart": [
       {
-        "@id": "urn:ngm:class:algorithm",
-        "label": "Algorithm"
-      }
-    ],
-    "enables": [
+        "@id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
       {
         "@id": "urn:ngm:class:consensus-algorithm",
         "label": "Consensus Algorithm"
       },
       {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:consistency-model",
+        "label": "Consistency Model"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:theoretical-computer-science",
+        "label": "Theoretical Computer Science"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:formal-proof",
+        "label": "Formal Proof"
+      },
+      {
+        "@id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      }
+    ],
+    "enables": [
+      {
         "@id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:replication-protocol",
+        "label": "Replication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:network-partition",
+        "label": "Network Partition"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      },
+      {
+        "@id": "urn:ngm:class:raft-consensus",
+        "label": "Raft Consensus"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:vector-clock",
+        "label": "Vector Clock"
+      },
+      {
+        "@id": "urn:ngm:class:logical-clock",
+        "label": "Logical Clock"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:centralised-computing",
+        "label": "Centralised Computing"
+      },
+      {
+        "@id": "urn:ngm:class:shared-memory-concurrency",
+        "label": "Shared Memory Concurrency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      },
+      {
+        "@id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      },
+      {
+        "@id": "urn:ngm:class:two-phase-commit",
+        "label": "Two-Phase Commit"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:distributed-computing-theory",
+      "label": "Distributed Computing Theory"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

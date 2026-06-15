@@ -25,21 +25,59 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:financial-system", "label": "Financial System"}],
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:atomic-settlement", "label": "Atomic Settlement"},
-      {"@id": "urn:ngm:class:instant-value-settlement", "label": "Instant value settlement"},
-      {"@id": "urn:ngm:class:securities-regulation", "label": "Securities Regulation"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:trade-clearing", "label": "Trade Clearing"},
+      {"@id": "urn:ngm:class:delivery-versus-payment", "label": "Delivery versus Payment"},
+      {"@id": "urn:ngm:class:trade-confirmation", "label": "Trade Confirmation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:central-securities-depository", "label": "Central Securities Depository"},
+      {"@id": "urn:ngm:class:central-counterparty-clearing", "label": "Central Counterparty Clearing"},
+      {"@id": "urn:ngm:class:custodian-bank", "label": "Custodian Bank"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:financial-infrastructure", "label": "Financial Infrastructure"},
+      {"@id": "urn:ngm:class:payment-system", "label": "Payment System"},
+      {"@id": "urn:ngm:class:real-time-gross-settlement", "label": "Real-Time Gross Settlement"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:digital-asset-infrastructure", "label": "Digital Asset Infrastructure"},
-      {"@id": "urn:ngm:class:financial-infrastructure", "label": "Financial Infrastructure"}
+      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:digital-asset-trading", "label": "Digital Asset Trading"},
-      {"@id": "urn:ngm:class:trustless-settlement", "label": "Trustless Settlement"}
+      {"@id": "urn:ngm:class:trustless-settlement", "label": "Trustless Settlement"},
+      {"@id": "urn:ngm:class:tokenised-securities", "label": "Tokenised Securities"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:securities-regulation", "label": "Securities Regulation"},
+      {"@id": "urn:ngm:class:central-securities-depositories-regulation", "label": "Central Securities Depositories Regulation"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:atomic-settlement", "label": "Atomic Settlement"},
+      {"@id": "urn:ngm:class:instant-value-settlement", "label": "Instant value settlement"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:counterparty-risk", "label": "Counterparty Risk"},
+      {"@id": "urn:ngm:class:systemic-risk", "label": "Systemic Risk"},
+      {"@id": "urn:ngm:class:financial-market-infrastructure", "label": "Financial Market Infrastructure"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:trade-settlement", "label": "Trade Settlement"},
+    {"@id": "urn:ngm:class:post-trade-settlement", "label": "Post-Trade Settlement"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

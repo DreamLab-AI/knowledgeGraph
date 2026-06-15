@@ -52,23 +52,125 @@ public:: true
       "label": "AI Technique"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:word-embedding",
+      "label": "Word Embedding"
+    },
+    {
+      "@id": "urn:ngm:class:input-embedding",
+      "label": "Input Embedding"
+    }
+  ],
   "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder Decoder Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:embedding-matrix",
+        "label": "Embedding Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:vocabulary",
+        "label": "Vocabulary"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:vocabulary",
+        "label": "Vocabulary"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:text-classification",
+        "label": "Text Classification"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:distributed-representation",
+        "label": "Distributed Representation"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:vector-space-model",
+        "label": "Vector Space Model"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:one-hot-encoding",
+        "label": "One Hot Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval Augmented Generation"
       }
     ],
     "relatedTo": [
@@ -79,16 +181,18 @@ public:: true
       {
         "@id": "urn:ngm:class:neural-network-layer",
         "label": "Neural Network Layer"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:transformer",
-        "label": "Transformer"
       },
       {
-        "@id": "urn:ngm:class:encoder-decoder-architecture",
-        "label": "Encoder Decoder Architecture"
+        "@id": "urn:ngm:class:contextual-embedding",
+        "label": "Contextual Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:weight-tying",
+        "label": "Weight Tying"
+      },
+      {
+        "@id": "urn:ngm:class:hidden-state",
+        "label": "Hidden State"
       }
     ]
   }

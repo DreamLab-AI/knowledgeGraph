@@ -16,8 +16,38 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-stewardship",
+        "label": "Data Stewardship"
+      },
+      {
+        "id": "urn:ngm:class:data-quality-management",
+        "label": "Data Quality Management"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:data-classification",
+        "label": "Data Classification"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      },
+      {
+        "id": "urn:ngm:class:metadata-registry",
+        "label": "Metadata Registry"
+      },
+      {
+        "id": "urn:ngm:class:data-catalogue",
+        "label": "Data Catalogue"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:privacy-and-data-governance",
@@ -30,12 +60,30 @@
       {
         "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-anarchy",
+        "label": "Data Anarchy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:metadata-management",
@@ -50,8 +98,26 @@
         "label": "Data Pipeline"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:dama-dmbok",
+        "label": "DAMA-DMBOK"
+      },
+      {
+        "id": "urn:ngm:class:iso-8000",
+        "label": "ISO 8000"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -63,8 +129,12 @@
         "label": "AI Governance Framework"
       },
       {
-        "id": "urn:ngm:class:metadata-registry",
-        "label": "Metadata Registry"
+        "id": "urn:ngm:class:master-data-management",
+        "label": "Master Data Management"
+      },
+      {
+        "id": "urn:ngm:class:data-ethics",
+        "label": "Data Ethics"
       }
     ]
   },

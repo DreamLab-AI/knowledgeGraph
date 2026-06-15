@@ -20,7 +20,20 @@
   "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:baker",
+        "label": "Baker"
+      },
+      {
+        "id": "urn:ngm:class:delegation",
+        "label": "Delegation"
+      },
+      {
+        "id": "urn:ngm:class:security-deposit",
+        "label": "Security Deposit"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:validator-node",
@@ -29,6 +42,10 @@
       {
         "id": "urn:ngm:class:epoch",
         "label": "Epoch"
+      },
+      {
+        "id": "urn:ngm:class:stake-snapshot",
+        "label": "Stake Snapshot"
       }
     ],
     "enables": [
@@ -39,6 +56,14 @@
       {
         "id": "urn:ngm:class:decentralized-autonomous-organization",
         "label": "Decentralized Autonomous Organization"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:staking-reward",
+        "label": "Staking Reward"
       }
     ],
     "dependsOn": [
@@ -49,16 +74,42 @@
       {
         "id": "urn:ngm:class:blockchain-governance",
         "label": "Blockchain Governance"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       }
     ],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:slashing",
+        "label": "Slashing"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:proof-of-work",
         "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof Of Stake"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:token-economics",
@@ -67,6 +118,10 @@
       {
         "id": "urn:ngm:class:validator-set",
         "label": "Validator Set"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
       }
     ],
     "supports": [],
@@ -80,6 +135,14 @@
       {
         "id": "urn:ngm:class:governance-token",
         "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:tezos",
+        "label": "Tezos"
+      },
+      {
+        "id": "urn:ngm:class:liquid-staking",
+        "label": "Liquid Staking"
       }
     ]
   },

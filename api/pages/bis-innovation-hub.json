@@ -4,8 +4,8 @@
   "slug": "bis-innovation-hub",
   "public": true,
   "classIri": "urn:ngm:class:bis-innovation-hub",
-  "domain": "governance",
-  "definition": "The innovation arm of the Bank for International Settlements, established to develop public goods for central banks and explore financial technology.",
+  "domain": "finance",
+  "definition": "The innovation arm of the Bank for International Settlements, established to develop public goods for central banks and explore financial technology including CBDCs, cross-border payments, tokenisation, and regulatory technology.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bis",
@@ -13,10 +13,23 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:eurosystem-hub-centre",
+        "label": "Eurosystem Hub Centre"
+      },
+      {
+        "id": "urn:ngm:class:project-nexus",
+        "label": "Project Nexus"
+      },
+      {
+        "id": "urn:ngm:class:project-mbridge",
+        "label": "Project mBridge"
+      }
+    ],
     "requires": [],
     "enables": [
       {
@@ -26,17 +39,91 @@
       {
         "id": "urn:ngm:class:wholesale-cbdc",
         "label": "Wholesale CBDC"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
       }
     ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:proof-of-concept",
+        "label": "Proof of Concept"
+      },
+      {
+        "id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      }
+    ],
     "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:bis",
+        "label": "BIS"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:financial-technology",
+        "label": "Financial Technology"
+      },
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ]
   },
   "wikilinks": [
     {

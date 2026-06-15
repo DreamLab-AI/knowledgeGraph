@@ -63,7 +63,7 @@ public:: true
   "@type": "Class",
   "label": "Number Theory",
   "definition": "Number Theory is the branch of pure mathematics concerned with the properties of integers and related structures, including divisibility, prime numbers, congruences and Diophantine equations. It ranges from elementary results, such as the fundamental theorem of arithmetic, to deep areas like analytic and algebraic number theory. Beyond its theoretical importance, it underpins much of modern cryptography, where the difficulty of certain number-theoretic problems provides security.",
-  "domain": "machine-learning",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [
@@ -81,6 +81,18 @@ public:: true
       {
         "@id": "urn:ngm:class:modular-arithmetic",
         "label": "Modular Arithmetic"
+      },
+      {
+        "@id": "urn:ngm:class:diophantine-equations",
+        "label": "Diophantine Equations"
+      },
+      {
+        "@id": "urn:ngm:class:algebraic-number-theory",
+        "label": "Algebraic Number Theory"
+      },
+      {
+        "@id": "urn:ngm:class:analytic-number-theory",
+        "label": "Analytic Number Theory"
       }
     ],
     "enables": [
@@ -89,16 +101,88 @@ public:: true
         "label": "Cryptography"
       },
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "@id": "urn:ngm:class:public-key-cryptography",
         "label": "Public-Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:algebra",
+        "label": "Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:discrete-mathematics",
+        "label": "Discrete Mathematics"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
+      },
+      {
+        "@id": "urn:ngm:class:group-theory",
+        "label": "Group Theory"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:continuous-mathematics",
+        "label": "Continuous Mathematics"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:arithmetic",
+      "label": "Arithmetic"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

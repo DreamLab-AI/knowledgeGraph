@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.7,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -32,15 +32,85 @@
       {
         "id": "urn:ngm:class:storage-infrastructure",
         "label": "Storage Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:networking-infrastructure",
+        "label": "Networking Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
       }
     ],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:energy-supply",
+        "label": "Energy Supply"
+      },
+      {
+        "id": "urn:ngm:class:cooling-systems",
+        "label": "Cooling Systems"
+      },
+      {
+        "id": "urn:ngm:class:semiconductor-manufacturing",
+        "label": "Semiconductor Manufacturing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High Performance Computing"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:hyperscale-computing",
+        "label": "Hyperscale Computing"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:edge-infrastructure",
+        "label": "Edge Infrastructure"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:virtualisation",
+        "label": "Virtualisation"
+      },
+      {
+        "id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:ai-infrastructure",
@@ -49,6 +119,10 @@
       {
         "id": "urn:ngm:class:blockchain-infrastructure",
         "label": "Blockchain Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
       }
     ],
     "standardizedBy": [],
@@ -61,6 +135,10 @@
       {
         "id": "urn:ngm:class:computing-infrastructure",
         "label": "Computing Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:resource-scheduling",
+        "label": "Resource Scheduling"
       }
     ]
   },

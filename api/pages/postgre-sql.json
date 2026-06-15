@@ -13,11 +13,25 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:query-planner",
+        "label": "Query Planner"
+      },
+      {
+        "id": "urn:ngm:class:extension-system",
+        "label": "Extension System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:storage-engine",
+        "label": "Storage Engine"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:machine-learning-discipline-infrastructure",
@@ -26,13 +40,48 @@
       {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:analytical-processing",
+        "label": "Analytical Processing"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:mysql",
+        "label": "MySQL"
+      },
+      {
+        "id": "urn:ngm:class:nosql-database",
+        "label": "NoSQL Database"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:b-tree-index",
+        "label": "B-Tree Index"
+      },
+      {
+        "id": "urn:ngm:class:write-ahead-log",
+        "label": "Write-Ahead Log"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:database-query",
@@ -45,6 +94,18 @@
       {
         "id": "urn:ngm:class:spatial-database",
         "label": "Spatial Database"
+      },
+      {
+        "id": "urn:ngm:class:full-text-search",
+        "label": "Full-Text Search"
+      },
+      {
+        "id": "urn:ngm:class:multi-version-concurrency-control",
+        "label": "Multi-Version Concurrency Control"
+      },
+      {
+        "id": "urn:ngm:class:logical-replication",
+        "label": "Logical Replication"
       }
     ],
     "standardizedBy": [],
@@ -61,6 +122,18 @@
       {
         "id": "urn:ngm:class:query-processor",
         "label": "Query Processor"
+      },
+      {
+        "id": "urn:ngm:class:acid-transaction",
+        "label": "ACID Transaction"
+      },
+      {
+        "id": "urn:ngm:class:sql",
+        "label": "SQL"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open-Source Software"
       }
     ]
   },

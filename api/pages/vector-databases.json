@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:vector-databases",
   "domain": "artificial-intelligence",
-  "definition": "Database systems specialised for storing high-dimensional vector embeddings and performing similarity search over them, typically using approximate nearest neighbour indexing.",
+  "definition": "Database systems specialised for storing high-dimensional vector embeddings and performing similarity search over them, typically using approximate nearest neighbour indexing algorithms such as HNSW and IVF.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:vector-database",
@@ -13,14 +13,31 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:vector-index",
+        "label": "Vector Index"
+      },
+      {
+        "id": "urn:ngm:class:similarity-metric",
+        "label": "Similarity Metric"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:embeddings",
         "label": "Embeddings"
+      },
+      {
+        "id": "urn:ngm:class:approximate-nearest-neighbour",
+        "label": "Approximate Nearest Neighbour"
+      },
+      {
+        "id": "urn:ngm:class:vector-index",
+        "label": "Vector Index"
       }
     ],
     "enables": [
@@ -31,17 +48,87 @@
       {
         "id": "urn:ngm:class:retrieval-augmented-generation",
         "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:relational-databases",
+        "label": "Relational Databases"
+      },
+      {
+        "id": "urn:ngm:class:graph-databases",
+        "label": "Graph Databases"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
+      },
+      {
+        "id": "urn:ngm:class:euclidean-distance",
+        "label": "Euclidean Distance"
+      },
+      {
+        "id": "urn:ngm:class:hnsw",
+        "label": "HNSW"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graphs",
+        "label": "Knowledge Graphs"
+      },
+      {
+        "id": "urn:ngm:class:feature-stores",
+        "label": "Feature Stores"
+      },
+      {
+        "id": "urn:ngm:class:neural-information-retrieval",
+        "label": "Neural Information Retrieval"
+      }
+    ]
   },
   "wikilinks": [
     {

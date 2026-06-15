@@ -58,21 +58,62 @@ public:: true
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:control-system", "label": "Control System"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:real-time-computing", "label": "Real-Time Computing"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
+      {"@id": "urn:ngm:class:endoscopy", "label": "Endoscopy"},
+      {"@id": "urn:ngm:class:stereo-vision", "label": "Stereo Vision"},
+      {"@id": "urn:ngm:class:image-guided-surgery", "label": "Image-Guided Surgery"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:robotic-arm", "label": "Robotic Arm"},
+      {"@id": "urn:ngm:class:surgeon-console", "label": "Surgeon Console"},
+      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
+      {"@id": "urn:ngm:class:medical-robotics", "label": "Medical Robotics"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:minimally-invasive-surgery", "label": "Minimally Invasive Surgery"},
+      {"@id": "urn:ngm:class:telesurgery", "label": "Telesurgery"},
+      {"@id": "urn:ngm:class:tremor-filtration", "label": "Tremor Filtration"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"},
+      {"@id": "urn:ngm:class:surgical-planning", "label": "Surgical Planning"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iec-80601-2-77", "label": "IEC 80601-2-77"},
+      {"@id": "urn:ngm:class:iso-8373", "label": "ISO 8373"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"},
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:medical-imaging", "label": "Medical Imaging"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:robotic-surgical-system", "label": "Robotic Surgical System"},
+    {"@id": "urn:ngm:class:medical-robot", "label": "Medical Robot"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```
@@ -114,9 +155,32 @@ public:: true
 - ### Relationships
   - requires [[Robot Kinematics]]
   - requires [[Sensor Fusion]]
+  - requires [[Control System]]
+  - requires [[Computer Vision]]
+  - requires [[Real-Time Computing]]
   - uses [[Haptic Feedback]]
   - uses [[Motion Planning]]
+  - uses [[Endoscopy]]
+  - uses [[Stereo Vision]]
+  - uses [[Image-Guided Surgery]]
+  - hasPart [[Robotic Arm]]
+  - hasPart [[Surgeon Console]]
+  - hasPart [[End Effector]]
   - partOf [[Robotics]]
+  - partOf [[Medical Robotics]]
+  - enables [[Minimally Invasive Surgery]]
+  - enables [[Telesurgery]]
+  - enables [[Tremor Filtration]]
+  - dependsOn [[Human-Robot Interaction]]
+  - dependsOn [[Surgical Planning]]
+  - standardizedBy [[IEC 80601-2-77]]
+  - standardizedBy [[ISO 8373]]
+  - contrastsWith [[Industrial Robot]]
+  - contrastsWith [[Autonomous Robot]]
+  - bridgesTo [[Artificial Intelligence]]
+  - bridgesTo [[Machine Learning]]
+  - relatedTo [[Digital Twin]]
+  - relatedTo [[Medical Imaging]]
 
 - ### Content
   - ### Primary Definition

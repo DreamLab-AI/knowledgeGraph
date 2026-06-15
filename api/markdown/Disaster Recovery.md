@@ -25,20 +25,54 @@ public:: true
   "maturity": "mature",
   "subClassOf": [{"@id": "urn:ngm:class:resilience", "label": "Resilience"}],
   "relations": {
-    "uses": [
+    "hasPart": [
+      {"@id": "urn:ngm:class:recovery-time-objective", "label": "Recovery Time Objective"},
+      {"@id": "urn:ngm:class:recovery-point-objective", "label": "Recovery Point Objective"},
+      {"@id": "urn:ngm:class:failover", "label": "Failover"},
+      {"@id": "urn:ngm:class:dr-runbook", "label": "DR Runbook"}
+    ],
+    "requires": [
       {"@id": "urn:ngm:class:backup-and-recovery", "label": "Backup and Recovery"},
       {"@id": "urn:ngm:class:replication", "label": "Replication"},
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"}
+      {"@id": "urn:ngm:class:data-centre", "label": "Data Centre"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
+      {"@id": "urn:ngm:class:infrastructure-as-code", "label": "Infrastructure as Code"},
+      {"@id": "urn:ngm:class:chaos-engineering", "label": "Chaos Engineering"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:high-availability", "label": "High Availability"},
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"}
+      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
+      {"@id": "urn:ngm:class:business-continuity", "label": "Business Continuity"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:network-redundancy", "label": "Network Redundancy"},
+      {"@id": "urn:ngm:class:storage-replication", "label": "Storage Replication"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:high-availability", "label": "High Availability"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:resilience-metric", "label": "Resilience Metric"}
+      {"@id": "urn:ngm:class:resilience-metric", "label": "Resilience Metric"},
+      {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"},
+      {"@id": "urn:ngm:class:ransomware", "label": "Ransomware"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:governance", "label": "Governance"},
+      {"@id": "urn:ngm:class:security", "label": "Security"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:dr", "label": "DR"},
+    {"@id": "urn:ngm:class:disaster-recovery-planning", "label": "Disaster Recovery Planning"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

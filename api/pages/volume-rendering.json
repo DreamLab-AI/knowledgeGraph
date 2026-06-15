@@ -4,7 +4,7 @@
   "slug": "volume-rendering",
   "public": true,
   "classIri": "urn:ngm:class:volume-rendering",
-  "domain": "metaverse",
+  "domain": "spatial-computing",
   "definition": "Volume rendering produces images directly from three-dimensional scalar or density fields by integrating colour and opacity along view rays, rather than rendering explicit surfaces.",
   "subClassOf": [
     {
@@ -13,31 +13,113 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:transfer-function",
+        "label": "Transfer Function"
+      },
+      {
+        "id": "urn:ngm:class:ray-casting",
+        "label": "Ray Casting"
+      },
+      {
+        "id": "urn:ngm:class:opacity-mapping",
+        "label": "Opacity Mapping"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:graphics-pipeline",
         "label": "Graphics Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:3d-scalar-field",
+        "label": "3D Scalar Field"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:neural-radiance-fields",
         "label": "Neural Radiance Fields"
+      },
+      {
+        "id": "urn:ngm:class:volumetric-video",
+        "label": "Volumetric Video"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging-visualization",
+        "label": "Medical Imaging Visualization"
+      },
+      {
+        "id": "urn:ngm:class:scientific-visualization",
+        "label": "Scientific Visualization"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:surface-rendering",
+        "label": "Surface Rendering"
+      },
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ray-marching",
+        "label": "Ray Marching"
+      },
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:texture-sampling",
+        "label": "Texture Sampling"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:voxel",
+        "label": "Voxel"
+      }
+    ]
   },
   "wikilinks": [
     {

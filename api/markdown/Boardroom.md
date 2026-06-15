@@ -27,21 +27,55 @@ public:: true
     {"@id": "urn:ngm:class:governance", "label": "Governance"}
   ],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:audit-committee", "label": "Audit Committee"},
+      {"@id": "urn:ngm:class:remuneration-committee", "label": "Remuneration Committee"},
+      {"@id": "urn:ngm:class:nomination-committee", "label": "Nomination Committee"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:corporate-governance", "label": "Corporate Governance"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:board-independence", "label": "Board Independence"},
+      {"@id": "urn:ngm:class:fiduciary-duty", "label": "Fiduciary Duty"},
+      {"@id": "urn:ngm:class:quorum", "label": "Quorum"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:board-level-oversight", "label": "Board-Level Oversight"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
+      {"@id": "urn:ngm:class:strategic-decision-making", "label": "Strategic Decision-Making"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
+      {"@id": "urn:ngm:class:board-information-system", "label": "Board Information System"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:executive-compensation", "label": "Executive Compensation"},
+      {"@id": "urn:ngm:class:succession-planning", "label": "Succession Planning"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:stakeholder", "label": "Stakeholder"},
       {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
-      {"@id": "urn:ngm:class:compliance", "label": "Compliance"}
+      {"@id": "urn:ngm:class:compliance", "label": "Compliance"},
+      {"@id": "urn:ngm:class:non-executive-director", "label": "Non-Executive Director"},
+      {"@id": "urn:ngm:class:shareholder-rights", "label": "Shareholder Rights"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:board-of-directors-meeting", "label": "Board of Directors Meeting"},
+    {"@id": "urn:ngm:class:directors-meeting", "label": "Directors Meeting"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

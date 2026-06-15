@@ -22,7 +22,7 @@ alias:: UsabilityTesting
   "@type": "Class",
   "label": "Usability Testing",
   "definition": "Usability testing is an empirical user research method in which representative users are observed attempting to complete realistic tasks with a product, system, or prototype, while the evaluator records errors, task completion times, help-seeking behaviour, and verbal commentary to identify usability problems and inform design improvements. Unlike expert-based heuristic evaluation, usability testing generates direct evidence of how real people interact with an interface under ecologically valid conditions. It is a core practice in human-computer interaction, product design, and user experience research, conducted through moderated in-person sessions, remote think-aloud protocols, or automated unmoderated testing platforms.",
-  "domain": "infrastructure",
+  "domain": "data",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:user-research", "label": "User Research"}],
   "relations": {
@@ -30,18 +30,57 @@ alias:: UsabilityTesting
       {"@id": "urn:ngm:class:user-experience", "label": "User Experience"},
       {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
       {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"},
-      {"@id": "urn:ngm:class:heuristic-methods", "label": "Heuristic Methods"}
+      {"@id": "urn:ngm:class:heuristic-methods", "label": "Heuristic Methods"},
+      {"@id": "urn:ngm:class:cognitive-load", "label": "Cognitive Load"},
+      {"@id": "urn:ngm:class:task-analysis", "label": "Task Analysis"},
+      {"@id": "urn:ngm:class:think-aloud-protocol", "label": "Think-Aloud Protocol"},
+      {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:product-design", "label": "Product Design"},
-      {"@id": "urn:ngm:class:user-interface", "label": "User Interface"}
+      {"@id": "urn:ngm:class:user-interface", "label": "User Interface"},
+      {"@id": "urn:ngm:class:iterative-design", "label": "Iterative Design"},
+      {"@id": "urn:ngm:class:evidence-based-design", "label": "Evidence-Based Design"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:quality-assurance", "label": "Quality Assurance"},
-      {"@id": "urn:ngm:class:software-testing", "label": "Software Testing"}
+      {"@id": "urn:ngm:class:software-testing", "label": "Software Testing"},
+      {"@id": "urn:ngm:class:participant-recruitment", "label": "Participant Recruitment"},
+      {"@id": "urn:ngm:class:observational-methods", "label": "Observational Methods"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:user-research", "label": "User Research"},
+      {"@id": "urn:ngm:class:prototype", "label": "Prototype"},
+      {"@id": "urn:ngm:class:research-protocol", "label": "Research Protocol"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:task-scenario", "label": "Task Scenario"},
+      {"@id": "urn:ngm:class:session-recording", "label": "Session Recording"},
+      {"@id": "urn:ngm:class:debrief-interview", "label": "Debrief Interview"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:heuristic-evaluation", "label": "Heuristic Evaluation"},
+      {"@id": "urn:ngm:class:a-b-testing", "label": "A/B Testing"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iso-9241", "label": "ISO 9241"},
+      {"@id": "urn:ngm:class:wcag", "label": "WCAG"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:user-testing", "label": "User Testing"},
+    {"@id": "urn:ngm:class:ux-testing", "label": "UX Testing"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

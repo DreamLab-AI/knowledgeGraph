@@ -52,24 +52,62 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:risk-prevention", "label": "Risk Prevention"},
+      {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
+      {"@id": "urn:ngm:class:risk-treatment", "label": "Risk Treatment"}
+    ],
     "requires": [
       {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:robustness", "label": "Robustness"}
+      {"@id": "urn:ngm:class:robustness", "label": "Robustness"},
+      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:defense-in-depth", "label": "Defense In Depth"},
+      {"@id": "urn:ngm:class:adversarial-training", "label": "Adversarial Training"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
+      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:nist-ai-risk-management-framework", "label": "NIST AI Risk Management Framework"},
+      {"@id": "urn:ngm:class:iso-iec-23894", "label": "ISO IEC 23894"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:risk-acceptance", "label": "Risk Acceptance"},
+      {"@id": "urn:ngm:class:risk-transfer", "label": "Risk Transfer"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:security", "label": "Security"},
+      {"@id": "urn:ngm:class:governance", "label": "Governance"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:bias-mitigation-techniques", "label": "Bias Mitigation Techniques"},
-      {"@id": "urn:ngm:class:ai-governance-principle", "label": "Ai Governance Principle"}
+      {"@id": "urn:ngm:class:ai-governance-principle", "label": "AI Governance Principle"},
+      {"@id": "urn:ngm:class:explainability", "label": "Explainability"}
     ]
   },
-  "quality": 0.7,
+  "sameAs": [
+    {"@id": "urn:ngm:class:risk-control", "label": "Risk Control"},
+    {"@id": "urn:ngm:class:risk-treatment-measure", "label": "Risk Treatment Measure"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

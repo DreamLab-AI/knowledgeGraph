@@ -25,9 +25,59 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:bc-network-component", "label": "Network Component"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"}]
+    "hasPart": [
+      {"@id": "urn:ngm:class:payment-channel", "label": "Payment Channel"},
+      {"@id": "urn:ngm:class:hash-time-locked-contract", "label": "Hash Time-Locked Contract"},
+      {"@id": "urn:ngm:class:onion-routing", "label": "Onion Routing"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:multisignature-wallet", "label": "Multisignature Wallet"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:timelock", "label": "Timelock"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:micropayment", "label": "Micropayment"},
+      {"@id": "urn:ngm:class:streaming-payment", "label": "Streaming Payment"},
+      {"@id": "urn:ngm:class:atomic-swap", "label": "Atomic Swap"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:layer-2-protocol", "label": "Layer 2 Protocol"},
+      {"@id": "urn:ngm:class:state-channel", "label": "State Channel"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:source-routing", "label": "Source Routing"},
+      {"@id": "urn:ngm:class:gossip-protocol", "label": "Gossip Protocol"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:rollup", "label": "Rollup"},
+      {"@id": "urn:ngm:class:sidechain", "label": "Sidechain"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
+      {"@id": "urn:ngm:class:finance", "label": "Finance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
+      {"@id": "urn:ngm:class:raiden-network", "label": "Raiden Network"},
+      {"@id": "urn:ngm:class:liquidity-management", "label": "Liquidity Management"},
+      {"@id": "urn:ngm:class:channel-rebalancing", "label": "Channel Rebalancing"}
+    ]
   },
-  "quality": 0.72
+  "sameAs": [
+    {"@id": "urn:ngm:class:off-chain-payment-network", "label": "Off-Chain Payment Network"},
+    {"@id": "urn:ngm:class:layer2-payment-network", "label": "Layer 2 Payment Network"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

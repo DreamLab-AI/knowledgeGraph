@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:fido-alliance",
   "domain": "security",
-  "definition": "An industry association that develops open authentication standards intended to reduce reliance on passwords through public key cryptography.",
+  "definition": "An industry consortium that develops open authentication standards\u2014UAF, U2F, FIDO2, and WebAuthn\u2014designed to replace passwords with phishing-resistant public-key cryptography, enabling strong authentication across browsers, devices, and online services.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:standards-body",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -21,6 +21,14 @@
       {
         "id": "urn:ngm:class:asymmetric-cryptography",
         "label": "Asymmetric Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-key",
+        "label": "Hardware Security Key"
       }
     ],
     "enables": [
@@ -31,17 +39,96 @@
       {
         "id": "urn:ngm:class:multi-factor-authentication",
         "label": "Multi-Factor Authentication"
+      },
+      {
+        "id": "urn:ngm:class:phishing-resistant-authentication",
+        "label": "Phishing-Resistant Authentication"
+      },
+      {
+        "id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:webauthn",
+        "label": "WebAuthn"
+      },
+      {
+        "id": "urn:ngm:class:fido2",
+        "label": "FIDO2"
+      },
+      {
+        "id": "urn:ngm:class:ctap",
+        "label": "CTAP"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:password-based-authentication",
+        "label": "Password-Based Authentication"
+      },
+      {
+        "id": "urn:ngm:class:one-time-password",
+        "label": "One-Time Password"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:trusted-platform-module",
+        "label": "Trusted Platform Module"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-security",
+        "label": "Zero Trust Security"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:open-authentication",
+        "label": "Open Authentication"
+      },
+      {
+        "id": "urn:ngm:class:security-key",
+        "label": "Security Key"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -49,7 +49,7 @@ public:: true
   "definition": "Hardware equipment designed to create or enhance extended reality experiences, encompassing virtual reality headsets, augmented reality glasses, mixed reality displays, haptic feedback systems, and motion tracking sensors that enable immersive interaction with digital content.",
   "domain": "spatial-computing",
   "maturity": "emerging",
-  "qualityScore": 0.7,
+  "qualityScore": 0.72,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:sc-display-and-rendering",
@@ -61,26 +61,63 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:display-panel", "label": "Display Panel"},
+      {"@id": "urn:ngm:class:inertial-measurement-unit", "label": "Inertial Measurement Unit"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
+      {"@id": "urn:ngm:class:six-degrees-of-freedom", "label": "Six Degrees of Freedom"},
+      {"@id": "urn:ngm:class:wireless-connectivity", "label": "Wireless Connectivity"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
       {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
+      {"@id": "urn:ngm:class:spatial-presence", "label": "Spatial Presence"},
+      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:motion-tracking", "label": "Motion Tracking"}
+      {"@id": "urn:ngm:class:motion-tracking", "label": "Motion Tracking"},
+      {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:enterprise-training", "label": "Enterprise Training"}
     ],
-    "partOf": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:openxr", "label": "OpenXR"},
+      {"@id": "urn:ngm:class:webxr", "label": "WebXR"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:flat-screen-display", "label": "Flat Screen Display"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:wearable-computing", "label": "Wearable Computing"}
     ]
   },
+  "sameAs": [
+    {"@id": "urn:ngm:class:xr-headset", "label": "XR Headset"},
+    {"@id": "urn:ngm:class:extended-reality-device", "label": "Extended Reality Device"}
+  ],
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

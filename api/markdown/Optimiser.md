@@ -43,7 +43,7 @@ public:: true
   "@type": "Class",
   "label": "Optimiser",
   "definition": "An Optimiser is an algorithm that adjusts model parameters during training to minimise a loss function, guiding convergence towards an optimal solution. Modern optimisers such as Adam, RMSProp, and AdaGrad extend stochastic gradient descent with adaptive learning rates, momentum accumulation, and second-moment estimates, enabling faster and more stable training of deep neural networks across diverse tasks.",
-  "domain": "spatial-computing",
+  "domain": "machine-learning",
   "maturity": "emerging",
   "subClassOf": [
     {
@@ -54,23 +54,52 @@ public:: true
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"}
+      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
+      {"@id": "urn:ngm:class:learning-rate", "label": "Learning Rate"},
+      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:convergence", "label": "Convergence"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"},
+      {"@id": "urn:ngm:class:momentum", "label": "Momentum"},
+      {"@id": "urn:ngm:class:adaptive-learning-rate", "label": "Adaptive Learning Rate"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:hyperparameter", "label": "Hyperparameter"},
+      {"@id": "urn:ngm:class:weight-initialisation", "label": "Weight Initialisation"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:second-order-optimisation", "label": "Second-Order Optimisation"},
+      {"@id": "urn:ngm:class:evolutionary-algorithm", "label": "Evolutionary Algorithm"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"},
-      {"@id": "urn:ngm:class:hyperparameter", "label": "Hyperparameter"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"}
+      {"@id": "urn:ngm:class:batch-normalisation", "label": "Batch Normalisation"},
+      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"},
+      {"@id": "urn:ngm:class:gradient-clipping", "label": "Gradient Clipping"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:optimization-algorithm", "label": "Optimization Algorithm"},
+    {"@id": "urn:ngm:class:gradient-based-optimizer", "label": "Gradient-Based Optimizer"}
+  ],
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -4,7 +4,7 @@
   "slug": "generator-network",
   "public": true,
   "classIri": "urn:ngm:class:generator-network",
-  "domain": "ai",
+  "domain": "machine-learning",
   "definition": "A generator network is the synthesis component of a generative deep learning architecture \u2014 most prominently within Generative Adversarial Networks (GANs) \u2014 that learns to map samples from a low-dimensional latent space into high-dimensional data outputs (images, audio, video, 3D shapes) whose statistical distribution matches that of a training dataset. The generator is trained in adversarial competition with a discriminator network, receiving gradient signal not from direct comparison with target samples but from the discriminator's attempt to distinguish generated from real samples, forcing the generator to produce increasingly realistic outputs. Generator networks are the conceptual precursors to the decoder components of VAEs and the denoising networks of diffusion models.",
   "subClassOf": [
     {
@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:transposed-convolution",
+        "label": "Transposed Convolution"
+      },
+      {
+        "id": "urn:ngm:class:upsampling-layer",
+        "label": "Upsampling Layer"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:discriminator-network",
+        "label": "Discriminator Network"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-training",
+        "label": "Adversarial Training"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:image-generation",
@@ -30,12 +52,46 @@
       {
         "id": "urn:ngm:class:synthetic-data-generator",
         "label": "Synthetic Data Generator"
+      },
+      {
+        "id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      },
+      {
+        "id": "urn:ngm:class:image-super-resolution",
+        "label": "Image Super-Resolution"
+      },
+      {
+        "id": "urn:ngm:class:text-to-image-synthesis",
+        "label": "Text-to-Image Synthesis"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:discriminator-network",
+        "label": "Discriminator Network"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoders",
+        "label": "Variational Autoencoders"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:neural-network-latent-space",
@@ -48,6 +104,18 @@
       {
         "id": "urn:ngm:class:generative-adversarial-network",
         "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
       }
     ],
     "supports": [],
@@ -55,12 +123,16 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:variational-autoencoders",
-        "label": "Variational Autoencoders"
-      },
-      {
         "id": "urn:ngm:class:deep-generative-model",
         "label": "Deep Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:noise-injection",
+        "label": "Noise Injection"
       }
     ]
   },

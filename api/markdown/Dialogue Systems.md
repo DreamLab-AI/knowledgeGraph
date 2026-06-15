@@ -54,8 +54,8 @@ public:: true
   "@id": "urn:ngm:class:dialogue-systems",
   "@type": "Class",
   "label": "Dialogue Systems",
-  "definition": "Dialogue systems are software systems that converse with users in natural language across one or more turns. They include task-oriented assistants and open-domain conversational agents.",
-  "domain": "ai",
+  "definition": "Dialogue systems are software systems that converse with users in natural language across one or more turns. They include task-oriented assistants, slot-filling pipelines, and open-domain conversational agents, managing intent recognition, dialogue state tracking, response selection and natural language generation.",
+  "domain": "artificial-intelligence",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [
@@ -65,10 +65,36 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:dialogue-state-tracking",
+        "label": "Dialogue State Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:intent-recognition",
+        "label": "Intent Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-generation",
+        "label": "Natural Language Generation"
+      },
+      {
+        "@id": "urn:ngm:class:response-selection",
+        "label": "Response Selection"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
       }
     ],
     "enables": [
@@ -79,14 +105,86 @@ public:: true
       {
         "@id": "urn:ngm:class:chatbot",
         "label": "Chatbot"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-assistant",
+        "label": "Virtual Assistant"
+      },
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:tool-augmented-reasoning",
+        "label": "Tool-Augmented Reasoning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:context-management",
+        "label": "Context Management"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:static-faq-systems",
+        "label": "Static FAQ Systems"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:conversational-systems",
+      "label": "Conversational Systems"
+    },
+    {
+      "@id": "urn:ngm:class:spoken-dialogue-systems",
+      "label": "Spoken Dialogue Systems"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -25,21 +25,55 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:monetary-policy", "label": "Monetary Policy"}],
   "relations": {
-    "relatedTo": [
+    "hasPart": [
+      {"@id": "urn:ngm:class:interest-rate-channel", "label": "Interest Rate Channel"},
+      {"@id": "urn:ngm:class:credit-channel", "label": "Credit Channel"},
+      {"@id": "urn:ngm:class:exchange-rate-channel", "label": "Exchange Rate Channel"},
+      {"@id": "urn:ngm:class:asset-price-channel", "label": "Asset Price Channel"},
+      {"@id": "urn:ngm:class:expectations-channel", "label": "Expectations Channel"}
+    ],
+    "requires": [
       {"@id": "urn:ngm:class:central-bank", "label": "Central Bank"},
-      {"@id": "urn:ngm:class:inflation", "label": "Inflation"},
-      {"@id": "urn:ngm:class:financial-system", "label": "Financial System"},
-      {"@id": "urn:ngm:class:monetary-policy-implementation", "label": "Monetary Policy Implementation"}
+      {"@id": "urn:ngm:class:banking-system", "label": "Banking System"},
+      {"@id": "urn:ngm:class:financial-markets", "label": "Financial Markets"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:inflation-control", "label": "Inflation Control"},
-      {"@id": "urn:ngm:class:financial-stability", "label": "Financial Stability"}
+      {"@id": "urn:ngm:class:financial-stability", "label": "Financial Stability"},
+      {"@id": "urn:ngm:class:price-stability", "label": "Price Stability"}
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:monetary-system", "label": "Monetary System"}
+      {"@id": "urn:ngm:class:monetary-system", "label": "Monetary System"},
+      {"@id": "urn:ngm:class:financial-system", "label": "Financial System"},
+      {"@id": "urn:ngm:class:inflation-expectations", "label": "Inflation Expectations"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:forward-guidance", "label": "Forward Guidance"},
+      {"@id": "urn:ngm:class:quantitative-easing", "label": "Quantitative Easing"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:fiscal-policy-transmission", "label": "Fiscal Policy Transmission"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:inflation", "label": "Inflation"},
+      {"@id": "urn:ngm:class:monetary-policy-implementation", "label": "Monetary Policy Implementation"},
+      {"@id": "urn:ngm:class:interest-rate", "label": "Interest Rate"},
+      {"@id": "urn:ngm:class:bank-lending", "label": "Bank Lending"},
+      {"@id": "urn:ngm:class:exchange-rate", "label": "Exchange Rate"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:monetary-transmission-mechanism", "label": "Monetary Transmission Mechanism"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

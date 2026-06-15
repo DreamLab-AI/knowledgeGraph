@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:system-interoperability",
   "@type": "Class",
   "label": "System Interoperability",
-  "definition": "System interoperability is the ability of different information technology systems, applications, and devices to exchange data, interpret shared information, and use it in a mutually useful way without requiring special translation or middleware.",
+  "definition": "System interoperability is the ability of different information technology systems, applications, and devices to exchange data, interpret shared information, and use it in a mutually useful way without requiring special translation or middleware. It enables diverse systems to communicate and work together seamlessly through adherence to common standards, protocols, and data formats, facilitating efficient information flow across organisational and technical boundaries.",
   "domain": "infrastructure",
   "maturity": "emerging",
   "subClassOf": [
@@ -76,10 +76,36 @@ public:: true
     }
   ],
   "relations": {
-    "bridgesTo": [
+    "hasPart": [
       {
-        "@id": "urn:ngm:class:sc-standards-and-interop",
-        "label": "Standards and Interoperability"
+        "@id": "urn:ngm:class:technical-interoperability",
+        "label": "Technical Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:syntactic-interoperability",
+        "label": "Syntactic Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:organisational-interoperability",
+        "label": "Organisational Interoperability"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      },
+      {
+        "@id": "urn:ngm:class:data-transformation",
+        "label": "Data Transformation"
       }
     ],
     "enables": [
@@ -94,6 +120,10 @@ public:: true
       {
         "@id": "urn:ngm:class:system-integration",
         "label": "System Integration"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
       }
     ],
     "implements": [
@@ -104,14 +134,80 @@ public:: true
       {
         "@id": "urn:ngm:class:standard-protocols",
         "label": "Standard Protocols"
+      },
+      {
+        "@id": "urn:ngm:class:restful-api",
+        "label": "RESTful API"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:open-api-specification",
+        "label": "OpenAPI Specification"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-standards",
+        "label": "ISO/IEC Standards"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:vendor-lock-in",
+        "label": "Vendor Lock-In"
+      },
+      {
+        "@id": "urn:ngm:class:proprietary-protocol",
+        "label": "Proprietary Protocol"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:sc-standards-and-interop",
+        "label": "Standards and Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service-Oriented Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-service-bus",
+        "label": "Enterprise Service Bus"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:systems-interoperability",
+      "label": "Systems Interoperability"
+    },
+    {
+      "@id": "urn:ngm:class:cross-system-compatibility",
+      "label": "Cross-System Compatibility"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

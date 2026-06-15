@@ -28,19 +28,60 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:benchmarks", "label": "Benchmarks"},
       {"@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards", "label": "Evaluation benchmarks and leaderboards"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"},
+      {"@id": "urn:ngm:class:statistical-significance-testing", "label": "Statistical Significance Testing"},
+      {"@id": "urn:ngm:class:held-out-test-set", "label": "Held-Out Test Set"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"},
       {"@id": "urn:ngm:class:model-evaluation-results", "label": "Model Evaluation Results"},
-      {"@id": "urn:ngm:class:fairness-accuracy-tradeoffs", "label": "Fairness Accuracy Tradeoffs"}
+      {"@id": "urn:ngm:class:fairness-accuracy-tradeoffs", "label": "Fairness Accuracy Tradeoffs"},
+      {"@id": "urn:ngm:class:reproducibility", "label": "Reproducibility"},
+      {"@id": "urn:ngm:class:benchmark-contamination", "label": "Benchmark Contamination"},
+      {"@id": "urn:ngm:class:leaderboard", "label": "Leaderboard"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:model-optimisation-and-performance", "label": "Model Optimisation and Performance"},
-      {"@id": "urn:ngm:class:ai-model-card", "label": "AI Model Card"}
+      {"@id": "urn:ngm:class:ai-model-card", "label": "AI Model Card"},
+      {"@id": "urn:ngm:class:model-selection", "label": "Model Selection"},
+      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:evaluation-dataset", "label": "Evaluation Dataset"},
+      {"@id": "urn:ngm:class:performance-metric", "label": "Performance Metric"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:ablation-study", "label": "Ablation Study"},
+      {"@id": "urn:ngm:class:baseline-model", "label": "Baseline Model"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:human-evaluation", "label": "Human Evaluation"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:pareto-optimality", "label": "Pareto Optimality"},
+      {"@id": "urn:ngm:class:multi-objective-optimisation", "label": "Multi-Objective Optimisation"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:helm-holistic-evaluation-of-language-models", "label": "HELM Holistic Evaluation of Language Models"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:governance", "label": "Governance"},
+      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:model-benchmarking", "label": "Model Benchmarking"},
+    {"@id": "urn:ngm:class:comparative-model-evaluation", "label": "Comparative Model Evaluation"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

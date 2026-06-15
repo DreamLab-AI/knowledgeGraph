@@ -28,19 +28,54 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop"},
       {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
-      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"}
+      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"},
+      {"@id": "urn:ngm:class:information-theory", "label": "Information Theory"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:adaptive-control", "label": "Adaptive Control"},
       {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:brain-computer-interfaces", "label": "Brain Computer Interfaces"}
+      {"@id": "urn:ngm:class:brain-computer-interfaces", "label": "Brain Computer Interfaces"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:self-organisation", "label": "Self Organisation"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:negative-feedback", "label": "Negative Feedback"},
+      {"@id": "urn:ngm:class:positive-feedback", "label": "Positive Feedback"},
+      {"@id": "urn:ngm:class:homeostasis", "label": "Homeostasis"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:systems-theory", "label": "Systems Theory"},
+      {"@id": "urn:ngm:class:information-theory", "label": "Information Theory"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
+      {"@id": "urn:ngm:class:autonomous-systems", "label": "Autonomous Systems"},
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:open-loop-control", "label": "Open Loop Control"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:cognitive-science", "label": "Cognitive Science"},
+      {"@id": "urn:ngm:class:governance", "label": "Governance"},
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:cognitive-science", "label": "Cognitive Science"},
-      {"@id": "urn:ngm:class:emergence", "label": "Emergence"}
+      {"@id": "urn:ngm:class:emergence", "label": "Emergence"},
+      {"@id": "urn:ngm:class:complex-adaptive-systems", "label": "Complex Adaptive Systems"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:regulatory-systems-science", "label": "Regulatory Systems Science"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

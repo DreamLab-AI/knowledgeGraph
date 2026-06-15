@@ -28,23 +28,57 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:timestamp", "label": "Timestamp"},
       {"@id": "urn:ngm:class:digital-certificate", "label": "Digital Certificate"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
+      {"@id": "urn:ngm:class:non-repudiation", "label": "Non-Repudiation"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
       {"@id": "urn:ngm:class:compliance-audit-trail", "label": "Compliance Audit Trail"},
-      {"@id": "urn:ngm:class:virtual-notary-service", "label": "Virtual Notary Service"}
+      {"@id": "urn:ngm:class:virtual-notary-service", "label": "Virtual Notary Service"},
+      {"@id": "urn:ngm:class:long-term-archival", "label": "Long-Term Archival"},
+      {"@id": "urn:ngm:class:document-authenticity", "label": "Document Authenticity"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"}
+      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"},
+      {"@id": "urn:ngm:class:x509-certificate", "label": "X.509 Certificate"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:digital-signature-verification", "label": "Digital Signature Verification"},
-      {"@id": "urn:ngm:class:archival-standards", "label": "Archival Standards"}
+      {"@id": "urn:ngm:class:archival-standards", "label": "Archival Standards"},
+      {"@id": "urn:ngm:class:electronic-contracting", "label": "Electronic Contracting"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:secure-clock", "label": "Secure Clock"},
+      {"@id": "urn:ngm:class:trust-service-provider", "label": "Trust Service Provider"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:rfc-3161", "label": "RFC 3161"},
+      {"@id": "urn:ngm:class:eidas-regulation", "label": "eIDAS Regulation"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:etsi", "label": "ETSI"},
+      {"@id": "urn:ngm:class:ietf", "label": "IETF"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:blockchain-timestamping", "label": "Blockchain Timestamping"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:governance", "label": "Governance"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:tsa", "label": "TSA"},
+    {"@id": "urn:ngm:class:trusted-timestamp-authority", "label": "Trusted Timestamp Authority"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Graphics Processing",
   "definition": "Graphics processing is the computation that transforms scene descriptions into rendered images, covering geometry transformation, shading, rasterisation and output to a display.",
-  "domain": "infrastructure",
+  "domain": "spatial-computing",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [
@@ -77,6 +77,14 @@ public:: true
       {
         "@id": "urn:ngm:class:rendering-pipeline",
         "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-memory",
+        "label": "Graphics Memory"
       }
     ],
     "enables": [
@@ -87,14 +95,116 @@ public:: true
       {
         "@id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      },
+      {
+        "@id": "urn:ngm:class:rasterisation",
+        "label": "Rasterisation"
+      },
+      {
+        "@id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:vertex-processing",
+        "label": "Vertex Processing"
+      },
+      {
+        "@id": "urn:ngm:class:fragment-processing",
+        "label": "Fragment Processing"
+      },
+      {
+        "@id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      },
+      {
+        "@id": "urn:ngm:class:opengl",
+        "label": "OpenGL"
+      },
+      {
+        "@id": "urn:ngm:class:direct3d",
+        "label": "Direct3D"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:cpu-computing",
+        "label": "CPU Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:gpu-rendering",
+      "label": "GPU Rendering"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

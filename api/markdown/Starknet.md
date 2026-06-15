@@ -54,7 +54,7 @@ public:: true
   "@id": "urn:ngm:class:starknet",
   "@type": "Class",
   "label": "Starknet",
-  "definition": "A Layer 2 validity rollup for Ethereum that uses STARK proofs to verify off-chain execution of transactions written for the Cairo virtual machine.",
+  "definition": "A Layer 2 validity rollup for Ethereum that uses STARK proofs to verify off-chain execution of transactions written in the Cairo programming language, enabling high-throughput, low-cost transactions while inheriting Ethereum's settlement security.",
   "domain": "blockchain",
   "maturity": "emerging",
   "qualityScore": 0.7,
@@ -73,20 +73,120 @@ public:: true
       {
         "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum Smart Contract Platform"
+      },
+      {
+        "@id": "urn:ngm:class:cairo-programming-language",
+        "label": "Cairo Programming Language"
+      },
+      {
+        "@id": "urn:ngm:class:proof-generation",
+        "label": "Proof Generation"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:scalability",
         "label": "Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "@id": "urn:ngm:class:provable-computation",
+        "label": "Provable Computation"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:stark-proof",
+        "label": "STARK Proof"
+      },
+      {
+        "@id": "urn:ngm:class:sequencer",
+        "label": "Sequencer"
+      },
+      {
+        "@id": "urn:ngm:class:prover",
+        "label": "Prover"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-ecosystem",
+        "label": "Ethereum Ecosystem"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:validity-proof",
+        "label": "Validity Proof"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:zkrollup",
+        "label": "ZK Rollup"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:zksync",
+        "label": "ZKSync"
+      },
+      {
+        "@id": "urn:ngm:class:polygon-zkevm",
+        "label": "Polygon zkEVM"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:starkware-starknet",
+      "label": "StarkWare Starknet"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

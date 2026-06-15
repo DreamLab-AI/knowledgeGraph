@@ -17,8 +17,34 @@
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "id": "urn:ngm:class:fungibility",
+        "label": "Fungibility"
+      },
+      {
+        "id": "urn:ngm:class:personal-autonomy",
+        "label": "Personal Autonomy"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [
@@ -29,9 +55,30 @@
       {
         "id": "urn:ngm:class:compliance-framework",
         "label": "Compliance Framework"
+      },
+      {
+        "id": "urn:ngm:class:transaction-monitoring",
+        "label": "Transaction Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:financial-surveillance",
+        "label": "Financial Surveillance"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:zero-knowledge",
@@ -44,6 +91,18 @@
       {
         "id": "urn:ngm:class:confidential-computing",
         "label": "Confidential Computing"
+      },
+      {
+        "id": "urn:ngm:class:stealth-address",
+        "label": "Stealth Address"
+      },
+      {
+        "id": "urn:ngm:class:ring-signature",
+        "label": "Ring Signature"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
       }
     ],
     "supports": [],
@@ -61,6 +120,18 @@
       {
         "id": "urn:ngm:class:differential-privacy",
         "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy by Design"
+      },
+      {
+        "id": "urn:ngm:class:surveillance-capitalism",
+        "label": "Surveillance Capitalism"
       }
     ]
   },

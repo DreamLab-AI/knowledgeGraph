@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:intrinsic-interpretability",
   "domain": "artificial-intelligence",
-  "definition": "The inherent transparency and understandability of a machine learning model's architecture and decision-making process, achieved through model design rather than external explanation techniques, enabling direct human comprehension without additional interpretability mods.",
+  "definition": "The inherent transparency and understandability of a machine learning model's architecture and decision-making process, achieved through model design rather than external explanation techniques, enabling direct human comprehension without additional interpretability methods.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -16,8 +16,34 @@
   "qualityScore": 0.0,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:decision-tree",
+        "label": "Decision Tree"
+      },
+      {
+        "id": "urn:ngm:class:linear-regression",
+        "label": "Linear Regression"
+      },
+      {
+        "id": "urn:ngm:class:rule-based-system",
+        "label": "Rule Based System"
+      },
+      {
+        "id": "urn:ngm:class:generalised-additive-model",
+        "label": "Generalised Additive Model"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:model-complexity-constraint",
+        "label": "Model Complexity Constraint"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:model-transparency",
@@ -26,6 +52,14 @@
       {
         "id": "urn:ngm:class:accountability",
         "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-auditing",
+        "label": "Algorithmic Auditing"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human In The Loop"
       }
     ],
     "dependsOn": [],
@@ -38,10 +72,36 @@
       {
         "id": "urn:ngm:class:explainable-ai",
         "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:black-box-model",
+        "label": "Black Box Model"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       }
     ],
-    "bridgesTo": [],
-    "uses": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:trustworthy-ai",
@@ -50,6 +110,14 @@
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:fairness-in-machine-learning",
+        "label": "Fairness In Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
       }
     ],
     "standardizedBy": [],
@@ -63,7 +131,20 @@
         "label": "Interpretable AI"
       }
     ],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "id": "urn:ngm:class:model-validation",
+        "label": "Model Validation"
+      },
+      {
+        "id": "urn:ngm:class:concept-bottleneck-model",
+        "label": "Concept Bottleneck Model"
+      }
+    ]
   },
   "wikilinks": [
     {

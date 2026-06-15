@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:epoch",
   "domain": "artificial-intelligence",
-  "definition": "In machine learning, an Epoch is one complete pass through the entire training dataset, during which model parameters are updated after each constituent batch. The number of epochs is a primary training hyperparameter: too few yield underfitting, whilst too many risk overfitting\u2014a trade-off managed by techniques such as early stopping and learning-rate scheduling.",
+  "definition": "In machine learning, an Epoch is one complete pass through the entire training dataset, during which model parameters are updated after each constituent batch. The number of epochs is a primary training hyperparameter: too few yield underfitting, whilst too many risk overfitting\u2014a trade-off managed by techniques such as early stopping and learning-rate scheduling. More broadly, an epoch denotes a fixed reference point or interval in time, as used in astronomical coordinate systems (e.g., J2000.0) and geological stratigraphy.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
@@ -20,10 +20,36 @@
       {
         "id": "urn:ngm:class:batch-size",
         "label": "Batch Size"
+      },
+      {
+        "id": "urn:ngm:class:mini-batch",
+        "label": "Mini-Batch"
+      },
+      {
+        "id": "urn:ngm:class:training-iteration",
+        "label": "Training Iteration"
       }
     ],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:training-dataset",
+        "label": "Training Dataset"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-convergence",
+        "label": "Model Convergence"
+      },
+      {
+        "id": "urn:ngm:class:weight-update",
+        "label": "Weight Update"
+      }
+    ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:deep-learning",
@@ -32,6 +58,10 @@
       {
         "id": "urn:ngm:class:early-stopping",
         "label": "Early Stopping"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
       }
     ],
     "implements": [],
@@ -39,13 +69,35 @@
       {
         "id": "urn:ngm:class:overfitting",
         "label": "Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:online-learning",
+        "label": "Online Learning"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:training-loop",
+        "label": "Training Loop"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:gradient-descent",
@@ -54,6 +106,22 @@
       {
         "id": "urn:ngm:class:hyperparameter",
         "label": "Hyperparameter"
+      },
+      {
+        "id": "urn:ngm:class:learning-rate",
+        "label": "Learning Rate"
+      },
+      {
+        "id": "urn:ngm:class:learning-rate-scheduling",
+        "label": "Learning Rate Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:validation-set",
+        "label": "Validation Set"
+      },
+      {
+        "id": "urn:ngm:class:underfitting",
+        "label": "Underfitting"
       }
     ]
   },

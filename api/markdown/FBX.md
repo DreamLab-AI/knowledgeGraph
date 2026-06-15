@@ -54,8 +54,8 @@ public:: true
   "@id": "urn:ngm:class:fbx",
   "@type": "Class",
   "label": "FBX",
-  "definition": "FBX is a proprietary 3D asset interchange format used to transfer geometry, materials, skeletal rigs and animation between digital content creation tools and game engines.",
-  "domain": "metaverse",
+  "definition": "FBX is a proprietary 3D asset interchange format used to transfer geometry, materials, skeletal rigs and animation between digital content creation tools and game engines. Developed by Kaydara and now owned by Autodesk, it stores scene graphs, mesh data, skinning weights, keyframed animation tracks, cameras, and lights, making it the dominant interchange format across 3D production and real-time engine pipelines.",
+  "domain": "spatial-computing",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [
@@ -65,10 +65,42 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "@id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      },
+      {
+        "@id": "urn:ngm:class:polygon-mesh",
+        "label": "Polygon Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:skinning",
+        "label": "Skinning"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:3d-asset-pipeline",
+        "label": "3D Asset Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:computer-graphics",
         "label": "Computer Graphics"
+      },
+      {
+        "@id": "urn:ngm:class:3d-modelling",
+        "label": "3D Modelling"
       }
     ],
     "enables": [
@@ -79,14 +111,124 @@ public:: true
       {
         "@id": "urn:ngm:class:game-engine",
         "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:character-rigging",
+        "label": "Character Rigging"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-pipeline",
+        "label": "Avatar Pipeline"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:autodesk",
+        "label": "Autodesk"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:3d-file-format",
+        "label": "3D File Format"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:binary-serialisation",
+        "label": "Binary Serialisation"
+      },
+      {
+        "@id": "urn:ngm:class:keyframe-animation",
+        "label": "Keyframe Animation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:morph-target-animation",
+        "label": "Morph Target Animation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:autodesk",
+        "label": "Autodesk"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:gl-tf",
+        "label": "glTF"
+      },
+      {
+        "@id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      },
+      {
+        "@id": "urn:ngm:class:collada",
+        "label": "COLLADA"
+      },
+      {
+        "@id": "urn:ngm:class:obj-format",
+        "label": "OBJ Format"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:unity",
+        "label": "Unity"
+      },
+      {
+        "@id": "urn:ngm:class:unreal-engine",
+        "label": "Unreal Engine"
+      },
+      {
+        "@id": "urn:ngm:class:blender",
+        "label": "Blender"
+      },
+      {
+        "@id": "urn:ngm:class:maya",
+        "label": "Maya"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:filmbox",
+      "label": "FilmBox"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

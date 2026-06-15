@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:screen-space-ambient-occlusion",
+        "label": "Screen Space Ambient Occlusion"
+      },
+      {
+        "id": "urn:ngm:class:ray-traced-ambient-occlusion",
+        "label": "Ray-Traced Ambient Occlusion"
+      },
+      {
+        "id": "urn:ngm:class:baked-lightmap",
+        "label": "Baked Lightmap"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:scene-geometry",
+        "label": "Scene Geometry"
+      },
+      {
+        "id": "urn:ngm:class:surface-normal",
+        "label": "Surface Normal"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:photorealistic-rendering",
@@ -26,12 +48,38 @@
       {
         "id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:depth-perception",
+        "label": "Depth Perception"
+      },
+      {
+        "id": "urn:ngm:class:contact-shadow",
+        "label": "Contact Shadow"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:direct-illumination",
+        "label": "Direct Illumination"
+      },
+      {
+        "id": "urn:ngm:class:shadow-mapping",
+        "label": "Shadow Mapping"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:physically-based-rendering",
@@ -40,11 +88,32 @@
       {
         "id": "urn:ngm:class:ray-tracing",
         "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:depth-buffer",
+        "label": "Depth Buffer"
+      },
+      {
+        "id": "urn:ngm:class:hemisphere-sampling",
+        "label": "Hemisphere Sampling"
+      },
+      {
+        "id": "urn:ngm:class:gpu-shader",
+        "label": "GPU Shader"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:dynamic-lighting",
@@ -57,6 +126,14 @@
       {
         "id": "urn:ngm:class:occlusion-culling",
         "label": "Occlusion Culling"
+      },
+      {
+        "id": "urn:ngm:class:lightmap",
+        "label": "Lightmap"
+      },
+      {
+        "id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
       }
     ]
   },

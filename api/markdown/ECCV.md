@@ -25,21 +25,58 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}],
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:cvpr", "label": "CVPR"},
-      {"@id": "urn:ngm:class:iccv", "label": "ICCV"},
-      {"@id": "urn:ngm:class:iclr", "label": "ICLR"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:challenge-workshop", "label": "Challenge Workshop"},
+      {"@id": "urn:ngm:class:tutorial", "label": "Tutorial"},
+      {"@id": "urn:ngm:class:conference-proceedings", "label": "Conference Proceedings"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:academic-conference", "label": "Academic Conference"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:double-blind-peer-review", "label": "Double-Blind Peer Review"},
+      {"@id": "urn:ngm:class:image-recognition", "label": "Image Recognition"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:benchmarks", "label": "Benchmarks"},
-      {"@id": "urn:ngm:class:model-evaluation-results", "label": "Model Evaluation Results"}
+      {"@id": "urn:ngm:class:model-evaluation-results", "label": "Model Evaluation Results"},
+      {"@id": "urn:ngm:class:state-of-the-art-results", "label": "State-of-the-Art Results"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
       {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
       {"@id": "urn:ngm:class:semantic-segmentation", "label": "Semantic Segmentation"},
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"}
+      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:autonomous-driving", "label": "Autonomous Driving"},
+      {"@id": "urn:ngm:class:medical-image-analysis", "label": "Medical Image Analysis"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:springer-lecture-notes-in-computer-science", "label": "Springer Lecture Notes in Computer Science"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:neurips", "label": "NeurIPS"},
+      {"@id": "urn:ngm:class:icml", "label": "ICML"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:cvpr", "label": "CVPR"},
+      {"@id": "urn:ngm:class:iccv", "label": "ICCV"},
+      {"@id": "urn:ngm:class:iclr", "label": "ICLR"},
+      {"@id": "urn:ngm:class:vision-language-model", "label": "Vision-Language Model"}
     ]
+  },
+  "sameAs": [],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "quality": 0.8
 }

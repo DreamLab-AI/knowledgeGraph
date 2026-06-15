@@ -47,7 +47,7 @@ public:: true
   "@type": "Class",
   "label": "Content Authentication",
   "definition": "Content Authentication is the process of verifying the origin, integrity, and provenance of digital content through cryptographic techniques such as digital signatures, watermarking, and blockchain-anchored certificates. It enables consumers and platforms to distinguish authentic content from synthetically generated or tampered media, particularly critical as generative AI proliferates.",
-  "domain": "infrastructure",
+  "domain": "security",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [
@@ -56,12 +56,22 @@ public:: true
       "label": "Security and Identity"
     }
   ],
-  "quality": 0.35,
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:media-provenance-verification",
+      "label": "Media Provenance Verification"
+    },
+    {
+      "@id": "urn:ngm:class:content-provenance",
+      "label": "Content Provenance"
+    }
+  ],
   "relations": {
     "requires": [
       {
@@ -71,6 +81,14 @@ public:: true
       {
         "@id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
       }
     ],
     "uses": [
@@ -81,6 +99,76 @@ public:: true
       {
         "@id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:watermarking",
+        "label": "Watermarking"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:deepfake-detection",
+        "label": "Deepfake Detection"
+      },
+      {
+        "@id": "urn:ngm:class:media-integrity-verification",
+        "label": "Media Integrity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:trust-chain-establishment",
+        "label": "Trust Chain Establishment"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:c2pa-standard",
+        "label": "C2PA Standard"
+      },
+      {
+        "@id": "urn:ngm:class:content-credentials",
+        "label": "Content Credentials"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:coalition-for-content-provenance-and-authenticity",
+        "label": "Coalition for Content Provenance and Authenticity"
+      },
+      {
+        "@id": "urn:ngm:class:iptc-photo-metadata-standard",
+        "label": "IPTC Photo Metadata Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "@id": "urn:ngm:class:deepfake",
+        "label": "Deepfake"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:information-integrity",
+        "label": "Information Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      },
+      {
+        "@id": "urn:ngm:class:misinformation-mitigation",
+        "label": "Misinformation Mitigation"
       }
     ],
     "relatedTo": [
@@ -89,8 +177,22 @@ public:: true
         "label": "Digital Rights Management"
       },
       {
-        "@id": "urn:ngm:class:cryptographic-hash-function",
-        "label": "Cryptographic Hash Function"
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
       }
     ]
   }

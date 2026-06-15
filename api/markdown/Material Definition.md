@@ -25,22 +25,53 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:rendering-technique", "label": "Rendering Technique"}],
   "relations": {
-    "uses": [
-      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"},
-      {"@id": "urn:ngm:class:shader", "label": "Shader"},
-      {"@id": "urn:ngm:class:texture-mapping", "label": "Texture Mapping"}
-    ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:render-pipeline", "label": "Render Pipeline"},
-      {"@id": "urn:ngm:class:open-usd", "label": "OpenUSD"},
-      {"@id": "urn:ngm:class:gltf-standard", "label": "Gltf Standard"},
-      {"@id": "urn:ngm:class:3-d-rendering", "label": "3D Rendering"}
-    ],
     "hasPart": [
       {"@id": "urn:ngm:class:compute-shader", "label": "Compute Shader"},
       {"@id": "urn:ngm:class:vertex-shader", "label": "Vertex Shader"},
-      {"@id": "urn:ngm:class:pixel-shader", "label": "Pixel Shader"}
+      {"@id": "urn:ngm:class:pixel-shader", "label": "Pixel Shader"},
+      {"@id": "urn:ngm:class:brdf", "label": "BRDF"},
+      {"@id": "urn:ngm:class:normal-map", "label": "Normal Map"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"},
+      {"@id": "urn:ngm:class:shader", "label": "Shader"},
+      {"@id": "urn:ngm:class:texture-mapping", "label": "Texture Mapping"},
+      {"@id": "urn:ngm:class:shading-model", "label": "Shading Model"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:render-pipeline", "label": "Render Pipeline"},
+      {"@id": "urn:ngm:class:gpu", "label": "GPU"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:photorealistic-rendering", "label": "Photorealistic Rendering"},
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
+      {"@id": "urn:ngm:class:asset-interchange", "label": "Asset Interchange"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:khronos-group", "label": "Khronos Group"},
+      {"@id": "urn:ngm:class:materialx", "label": "MaterialX"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:open-usd", "label": "OpenUSD"},
+      {"@id": "urn:ngm:class:gltf-standard", "label": "Gltf Standard"},
+      {"@id": "urn:ngm:class:3-d-rendering", "label": "3D Rendering"},
+      {"@id": "urn:ngm:class:scene-graph", "label": "Scene Graph"},
+      {"@id": "urn:ngm:class:level-of-detail", "label": "Level of Detail"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
     ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:surface-material", "label": "Surface Material"},
+    {"@id": "urn:ngm:class:shading-material", "label": "Shading Material"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "quality": 0.8
 }

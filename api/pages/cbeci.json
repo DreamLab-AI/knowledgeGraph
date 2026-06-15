@@ -13,16 +13,52 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:energy-policy",
+        "label": "Energy Policy"
+      },
+      {
+        "id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "id": "urn:ngm:class:renewable-energy-certification",
+        "label": "Renewable Energy Certification"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:hash-rate",
@@ -35,9 +71,30 @@
       {
         "id": "urn:ngm:class:cbeci-methodology",
         "label": "CBECI Methodology"
+      },
+      {
+        "id": "urn:ngm:class:asic-mining-hardware",
+        "label": "ASIC Mining Hardware"
+      },
+      {
+        "id": "urn:ngm:class:network-difficulty",
+        "label": "Network Difficulty"
+      },
+      {
+        "id": "urn:ngm:class:mining-pool-data",
+        "label": "Mining Pool Data"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:mica-regulation",
+        "label": "MiCA Regulation"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency-regulation",
+        "label": "Cryptocurrency Regulation"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -52,6 +109,18 @@
       {
         "id": "urn:ngm:class:cambridge-centre-for-alternative-finance",
         "label": "Cambridge Centre for Alternative Finance"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-bitcoin-protocol",
+        "label": "Sustainable Bitcoin Protocol"
       }
     ]
   },

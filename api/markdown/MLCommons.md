@@ -25,12 +25,59 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:mlperf", "label": "MLPerf"},
+      {"@id": "urn:ngm:class:peoples-speech-dataset", "label": "People's Speech Dataset"},
+      {"@id": "urn:ngm:class:mlperf-inference", "label": "MLPerf Inference"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:benchmarking", "label": "Benchmarking"},
+      {"@id": "urn:ngm:class:reproducible-research", "label": "Reproducible Research"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:hardware-ai-benchmarking", "label": "Hardware AI Benchmarking"},
+      {"@id": "urn:ngm:class:ai-model-evaluation", "label": "AI Model Evaluation"},
+      {"@id": "urn:ngm:class:fair-comparison", "label": "Fair Comparison"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:open-datasets", "label": "Open Datasets"},
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:data-quality", "label": "Data Quality"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"},
+      {"@id": "urn:ngm:class:deep-learning-frameworks", "label": "Deep Learning Frameworks"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:ieee", "label": "IEEE"},
+      {"@id": "urn:ngm:class:industry-consortium", "label": "Industry Consortium"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:spec-benchmark", "label": "SPEC Benchmark"},
+      {"@id": "urn:ngm:class:supercomputer-top500", "label": "TOP500 Supercomputer List"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"},
+      {"@id": "urn:ngm:class:governance", "label": "Governance"}
+    ],
     "relatedTo": [
       {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"},
-      {"@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards", "label": "Evaluation benchmarks and leaderboards"}
+      {"@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards", "label": "Evaluation benchmarks and leaderboards"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
+      {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"}
     ]
   },
-  "quality": 0.72
+  "sameAs": [
+    {"@id": "urn:ngm:class:ml-commons-consortium", "label": "ML Commons Consortium"}
+  ],
+  "quality": 0.74,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

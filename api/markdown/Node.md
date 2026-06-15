@@ -87,23 +87,55 @@ public:: true
     "hasPart": [
       {"@id": "urn:ngm:class:full-node", "label": "Full Node"},
       {"@id": "urn:ngm:class:archival-node", "label": "Archival Node"},
-      {"@id": "urn:ngm:class:bootstrap-node", "label": "Bootstrap Node"}
+      {"@id": "urn:ngm:class:bootstrap-node", "label": "Bootstrap Node"},
+      {"@id": "urn:ngm:class:light-node", "label": "Light Node"},
+      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"}
     ],
-    "relatedTo": [
+    "partOf": [
       {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:decentralization", "label": "Decentralization"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:blockchain-infrastructure", "label": "Blockchain Infrastructure"}
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}
+      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
+      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
+      {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
+      {"@id": "urn:ngm:class:transaction-validation", "label": "Transaction Validation"},
+      {"@id": "urn:ngm:class:block-propagation", "label": "Block Propagation"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:peer-discovery", "label": "Peer Discovery"},
+      {"@id": "urn:ngm:class:gossip-protocol", "label": "Gossip Protocol"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:decentralization", "label": "Decentralization"},
+      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:centralised-server", "label": "Centralised Server"},
+      {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"},
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain-infrastructure", "label": "Blockchain Infrastructure"},
+      {"@id": "urn:ngm:class:staking", "label": "Staking"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:network-node", "label": "Network Node"},
+    {"@id": "urn:ngm:class:blockchain-node", "label": "Blockchain Node"}
+  ],
+  "quality": 0.75,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

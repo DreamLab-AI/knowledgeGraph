@@ -25,11 +25,55 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:infra-security-and-identity", "label": "Security and Identity"}],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:secure-element", "label": "Secure Element"},
+      {"@id": "urn:ngm:class:private-key", "label": "Private Key"},
+      {"@id": "urn:ngm:class:firmware", "label": "Firmware"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:physical-confirmation", "label": "Physical Confirmation"},
+      {"@id": "urn:ngm:class:seed-phrase", "label": "Seed Phrase"},
+      {"@id": "urn:ngm:class:usb-interface", "label": "USB Interface"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:self-custody", "label": "Self Custody"},
+      {"@id": "urn:ngm:class:cold-storage", "label": "Cold Storage"},
+      {"@id": "urn:ngm:class:transaction-signing", "label": "Transaction Signing"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:bip39", "label": "BIP39"},
+      {"@id": "urn:ngm:class:bip44", "label": "BIP44"},
+      {"@id": "urn:ngm:class:hierarchical-deterministic-wallet", "label": "Hierarchical Deterministic Wallet"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:software-wallet", "label": "Software Wallet"},
+      {"@id": "urn:ngm:class:custodial-wallet", "label": "Custodial Wallet"},
+      {"@id": "urn:ngm:class:hot-wallet", "label": "Hot Wallet"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:institutional-custody", "label": "Institutional Custody"},
+      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:security", "label": "Security"},
+      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"}
+    ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:multi-sig-governance", "label": "Multi Sig Governance"}
+      {"@id": "urn:ngm:class:multi-sig-governance", "label": "Multi Sig Governance"},
+      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
+      {"@id": "urn:ngm:class:decentralized-finance", "label": "Decentralized Finance"}
     ]
   },
-  "quality": 0.72
+  "sameAs": [
+    {"@id": "urn:ngm:class:cold-hardware-wallet", "label": "Cold Hardware Wallet"},
+    {"@id": "urn:ngm:class:crypto-hardware-wallet", "label": "Crypto Hardware Wallet"}
+  ],
+  "quality": 0.73,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

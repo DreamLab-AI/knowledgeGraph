@@ -58,7 +58,7 @@ public:: true
   "@id": "urn:ngm:class:investor-protection",
   "@type": "Class",
   "label": "Investor Protection",
-  "definition": "Investor protection comprises the rules and mechanisms designed to safeguard investors from unfair, abusive or fraudulent practices in financial markets.",
+  "definition": "Investor protection comprises the rules, mechanisms and institutional arrangements designed to safeguard investors from unfair, abusive or fraudulent practices in financial markets, reducing information asymmetry and ensuring access to redress.",
   "domain": "governance",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -73,20 +73,118 @@ public:: true
       {
         "@id": "urn:ngm:class:regulatory-requirements",
         "label": "Regulatory Requirements"
+      },
+      {
+        "@id": "urn:ngm:class:disclosure-obligations",
+        "label": "Disclosure Obligations"
+      },
+      {
+        "@id": "urn:ngm:class:suitability-assessment",
+        "label": "Suitability Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:market-integrity",
         "label": "Market Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:investor-confidence",
+        "label": "Investor Confidence"
+      },
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:conduct-rules",
+        "label": "Conduct Rules"
+      },
+      {
+        "@id": "urn:ngm:class:redress-mechanism",
+        "label": "Redress Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:market-manipulation",
+        "label": "Market Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:insider-trading",
+        "label": "Insider Trading"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:securities-law",
+        "label": "Securities Law"
+      },
+      {
+        "@id": "urn:ngm:class:prudential-regulation",
+        "label": "Prudential Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:financial-ombudsman",
+        "label": "Financial Ombudsman"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:crypto-asset-regulation",
+        "label": "Crypto-Asset Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:retail-investor-protection",
+      "label": "Retail Investor Protection"
+    },
+    {
+      "@id": "urn:ngm:class:shareholder-protection",
+      "label": "Shareholder Protection"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

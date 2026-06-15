@@ -51,8 +51,8 @@ alias:: SecurityArchitecture
   "@id": "urn:ngm:class:security-architecture",
   "@type": "Class",
   "label": "Security Architecture",
-  "definition": "A comprehensive framework defining security controls, policies, and technologies protecting metaverse infrastructure, user data, and digital assets through defence-in-depth strategies including authentication, encryption, access control, and threat monitoring.",
-  "domain": "spatial-computing",
+  "definition": "A comprehensive framework defining security controls, policies, and technologies that protect systems, infrastructure, user data, and digital assets through defence-in-depth strategies including authentication, encryption, access control, threat monitoring, and zero-trust principles.",
+  "domain": "security",
   "maturity": "draft",
   "subClassOf": [
     {
@@ -61,24 +61,162 @@ alias:: SecurityArchitecture
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:threat-modelling",
+        "label": "Threat Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:system-architecture",
+        "label": "System Architecture"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:security-policy",
+        "label": "Security Policy"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:secure-systems",
         "label": "Secure Systems"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:defence-in-depth",
+        "label": "Defence in Depth"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:intrusion-detection-system",
+        "label": "Intrusion Detection System"
+      },
+      {
+        "@id": "urn:ngm:class:firewall",
+        "label": "Firewall"
+      },
+      {
+        "@id": "urn:ngm:class:security-information-and-event-management",
+        "label": "Security Information and Event Management"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:audit-and-accountability",
+        "label": "Audit and Accountability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      },
+      {
+        "@id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:security-by-obscurity",
+        "label": "Security by Obscurity"
       }
     ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:system-architecture",
         "label": "System Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      },
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "@id": "urn:ngm:class:security-operations-centre",
+        "label": "Security Operations Centre"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:cybersecurity-architecture",
+      "label": "Cybersecurity Architecture"
+    },
+    {
+      "@id": "urn:ngm:class:information-security-architecture",
+      "label": "Information Security Architecture"
+    }
+  ],
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

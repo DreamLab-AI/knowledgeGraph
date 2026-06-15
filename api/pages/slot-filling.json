@@ -4,7 +4,7 @@
   "slug": "slot-filling",
   "public": true,
   "classIri": "urn:ngm:class:slot-filling",
-  "domain": "ai",
+  "domain": "artificial-intelligence",
   "definition": "Slot filling is a natural language processing task in which a system extracts and populates predefined semantic fields (slots) from user utterances within a task-oriented dialogue context, enabling the system to gather the structured information required to fulfil a user request. It operates alongside intent classification to transform free-form text into actionable structured representations.",
   "subClassOf": [
     {
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -25,6 +25,14 @@
       {
         "id": "urn:ngm:class:named-entity-recognition",
         "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:sequence-labelling",
+        "label": "Sequence Labelling"
       }
     ],
     "enables": [
@@ -35,14 +43,79 @@
       {
         "id": "urn:ngm:class:conversational-ai",
         "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:task-oriented-dialogue",
+        "label": "Task-Oriented Dialogue"
+      },
+      {
+        "id": "urn:ngm:class:voice-assistant",
+        "label": "Voice Assistant"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:pretrained-language-model",
+        "label": "Pretrained Language Model"
+      },
+      {
+        "id": "urn:ngm:class:semantic-frame",
+        "label": "Semantic Frame"
+      },
+      {
+        "id": "urn:ngm:class:bio-tagging",
+        "label": "BIO Tagging"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:open-domain-information-extraction",
+        "label": "Open-Domain Information Extraction"
+      },
+      {
+        "id": "urn:ngm:class:relation-extraction",
+        "label": "Relation Extraction"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bert",
+        "label": "BERT"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:joint-training",
+        "label": "Joint Training"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-base-population",
+        "label": "Knowledge Base Population"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -53,6 +126,18 @@
       {
         "id": "urn:ngm:class:natural-language-understanding",
         "label": "Natural Language Understanding"
+      },
+      {
+        "id": "urn:ngm:class:semantic-parsing",
+        "label": "Semantic Parsing"
+      },
+      {
+        "id": "urn:ngm:class:coreference-resolution",
+        "label": "Coreference Resolution"
+      },
+      {
+        "id": "urn:ngm:class:few-shot-learning",
+        "label": "Few-Shot Learning"
       }
     ]
   },

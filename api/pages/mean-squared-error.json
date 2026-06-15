@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:mean-squared-error",
   "domain": "machine-learning",
-  "definition": "A measure of the average squared difference between predicted values and observed values, widely used to quantify estimation and prediction error.",
+  "definition": "A measure of the average squared difference between predicted values and observed values, widely used to quantify estimation and prediction error in regression and statistical learning.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:loss-function",
@@ -13,10 +13,19 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:bias-variance-tradeoff",
+        "label": "Bias-Variance Tradeoff"
+      },
+      {
+        "id": "urn:ngm:class:residual",
+        "label": "Residual"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:statistics",
@@ -25,23 +34,87 @@
       {
         "id": "urn:ngm:class:probability-theory",
         "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:regression",
+        "label": "Regression"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:supervised-learning",
         "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:mean-absolute-error",
+        "label": "Mean Absolute Error"
+      },
+      {
+        "id": "urn:ngm:class:cross-entropy-loss",
+        "label": "Cross-Entropy Loss"
+      },
+      {
+        "id": "urn:ngm:class:huber-loss",
+        "label": "Huber Loss"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      }
+    ],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:root-mean-squared-error",
+        "label": "Root Mean Squared Error"
+      },
+      {
+        "id": "urn:ngm:class:r-squared",
+        "label": "R-Squared"
+      },
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ]
   },
   "wikilinks": [
     {

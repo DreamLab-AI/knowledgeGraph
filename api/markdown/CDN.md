@@ -28,19 +28,62 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
       {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
-      {"@id": "urn:ngm:class:network-security", "label": "Network Security"}
+      {"@id": "urn:ngm:class:network-security", "label": "Network Security"},
+      {"@id": "urn:ngm:class:anycast-routing", "label": "Anycast Routing"},
+      {"@id": "urn:ngm:class:tls", "label": "TLS"},
+      {"@id": "urn:ngm:class:dns", "label": "DNS"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:point-of-presence", "label": "Point of Presence"},
+      {"@id": "urn:ngm:class:edge-cache", "label": "Edge Cache"},
+      {"@id": "urn:ngm:class:web-application-firewall", "label": "Web Application Firewall"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:internet-infrastructure", "label": "Internet Infrastructure"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:origin-server", "label": "Origin Server"},
+      {"@id": "urn:ngm:class:load-balancing", "label": "Load Balancing"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:bandwidth-optimization", "label": "Bandwidth Optimization"},
-      {"@id": "urn:ngm:class:latency", "label": "Latency"}
+      {"@id": "urn:ngm:class:latency", "label": "Latency"},
+      {"@id": "urn:ngm:class:ddos-mitigation", "label": "DDoS Mitigation"},
+      {"@id": "urn:ngm:class:serverless-edge-compute", "label": "Serverless Edge Compute"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
+      {"@id": "urn:ngm:class:border-gateway-protocol", "label": "Border Gateway Protocol"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:video-streaming", "label": "Video Streaming"},
+      {"@id": "urn:ngm:class:adaptive-bitrate-streaming", "label": "Adaptive Bitrate Streaming"},
+      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
       {"@id": "urn:ngm:class:internet-infrastructure", "label": "Internet Infrastructure"},
-      {"@id": "urn:ngm:class:content-delivery-network-cdn", "label": "Content Delivery Network (CDN)"}
+      {"@id": "urn:ngm:class:content-delivery-network-cdn", "label": "Content Delivery Network (CDN)"},
+      {"@id": "urn:ngm:class:http-caching", "label": "HTTP Caching"},
+      {"@id": "urn:ngm:class:ddos-protection", "label": "DDoS Protection"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

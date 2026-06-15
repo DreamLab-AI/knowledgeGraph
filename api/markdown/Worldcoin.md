@@ -54,7 +54,7 @@ public:: true
   "@id": "urn:ngm:class:worldcoin",
   "@type": "Class",
   "label": "Worldcoin",
-  "definition": "A digital identity and cryptocurrency project that uses iris biometrics to issue a unique identifier intended to distinguish individual humans online.",
+  "definition": "A digital identity and cryptocurrency project that uses iris biometrics to produce a cryptographic proof of unique human personhood, enabling sybil-resistant participation in online systems and distributing an associated cryptocurrency token.",
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -73,20 +73,112 @@ public:: true
       {
         "@id": "urn:ngm:class:facial-recognition",
         "label": "Facial Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:sybil-resistance",
         "label": "Sybil Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-personhood",
+        "label": "Proof of Personhood"
+      },
+      {
+        "@id": "urn:ngm:class:universal-basic-income",
+        "label": "Universal Basic Income"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:iris-recognition",
+        "label": "Iris Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:world-id",
+        "label": "World ID"
+      },
+      {
+        "@id": "urn:ngm:class:worldcoin-token",
+        "label": "Worldcoin Token"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "@id": "urn:ngm:class:centralised-identity",
+        "label": "Centralised Identity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:world-network",
+      "label": "World Network"
+    }
+  ],
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```
@@ -149,6 +241,13 @@ public:: true
   - bridges-to:: [[Digital Identity]], [[Identity Verification]]
   - requires:: [[Biometric Authentication]], [[Facial Recognition]]
   - enables:: [[Sybil Resistance]]
+  - requires:: [[Zero-Knowledge Proof]], [[Identity Verification]]
+  - enables:: [[Proof of Personhood]], [[Universal Basic Income]], [[Decentralized Identity]]
+  - uses:: [[Iris Recognition]], [[Cryptocurrency]], [[Blockchain]], [[Smart Contract]]
+  - hasPart:: [[World ID]], [[Worldcoin Token]]
+  - contrastsWith:: [[Know Your Customer]], [[Centralised Identity]]
+  - relatedTo:: [[Privacy-Preserving Computation]], [[Data Protection]], [[Consent Management]]
+  - bridgesTo:: [[Artificial Intelligence]], [[Governance]], [[Security]]
 
 - ### Content
   - Worldcoin is a project that issues a digital identifier derived from iris biometrics, with the stated aim of establishing proof of unique human identity for use in online systems. Enrolment involves a specialised device that captures an iris image and produces a code.

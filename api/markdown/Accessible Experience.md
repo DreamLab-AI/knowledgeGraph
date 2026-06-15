@@ -98,7 +98,7 @@ public:: true
   "@id": "urn:ngm:class:accessible-experience",
   "@type": "Class",
   "label": "Accessible Experience",
-  "definition": "An Accessible Experience is a virtual environment or application delivering equivalent functionality and engagement to users with disabilities through multimodal access pathways, assistive technology integration, and Accessible Design principles.",
+  "definition": "An Accessible Experience is a virtual environment or application delivering equivalent functionality and engagement to users with disabilities through multimodal access pathways, assistive technology integration, and Accessible Design principles, ensuring feature parity across visual, auditory, motor, and cognitive modalities.",
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": [
@@ -113,7 +113,9 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"}
+      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
+      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"}
     ],
     "requires": [
       {
@@ -127,6 +129,14 @@ public:: true
       {
         "@id": "urn:ngm:class:multimodal-ai-architecture-interfaces",
         "label": "Multimodal Interfaces"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility-standard",
+        "label": "Accessibility Standard"
+      },
+      {
+        "@id": "urn:ngm:class:accessible-design",
+        "label": "Accessible Design"
       }
     ],
     "enables": [
@@ -141,14 +151,80 @@ public:: true
       {
         "@id": "urn:ngm:class:universal-access",
         "label": "Universal Access"
+      },
+      {
+        "@id": "urn:ngm:class:inclusive-experience",
+        "label": "Inclusive Experience"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:3-d-user-interface",
+        "label": "3D User Interface"
+      },
+      {
+        "@id": "urn:ngm:class:voice-input",
+        "label": "Voice Input"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:caption-and-subtitling",
+        "label": "Caption and Subtitling"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:wcag",
+        "label": "WCAG"
+      },
+      {
+        "@id": "urn:ngm:class:section-508",
+        "label": "Section 508"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:universal-design",
+        "label": "Universal Design"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-accessibility",
+        "label": "Cognitive Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:screen-reader",
+        "label": "Screen Reader"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:inaccessible-design",
+        "label": "Inaccessible Design"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:inclusive-experience", "label": "Inclusive Experience"},
+    {"@id": "urn:ngm:class:barrier-free-experience", "label": "Barrier-Free Experience"}
+  ],
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

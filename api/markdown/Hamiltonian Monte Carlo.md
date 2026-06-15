@@ -21,25 +21,67 @@ public:: true
   "@type": "Class",
   "label": "Hamiltonian Monte Carlo",
   "definition": "Hamiltonian Monte Carlo (HMC) is a Markov chain Monte Carlo sampling algorithm that uses Hamiltonian dynamics to generate distant, low-autocorrelation proposals in high-dimensional parameter spaces. By treating the negative log-posterior as a potential energy and augmenting with auxiliary momentum variables, HMC can traverse the posterior landscape far more efficiently than random-walk Metropolis methods.",
-  "domain": "ai",
+  "domain": "machine-learning",
   "maturity": "established",
   "subClassOf": [
     {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"}
   ],
   "relations": {
+    "partOf": [
+      {"@id": "urn:ngm:class:markov-chain-monte-carlo", "label": "Markov Chain Monte Carlo"},
+      {"@id": "urn:ngm:class:probabilistic-programming", "label": "Probabilistic Programming"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:leapfrog-integrator", "label": "Leapfrog Integrator"},
+      {"@id": "urn:ngm:class:metropolis-hastings", "label": "Metropolis-Hastings"},
+      {"@id": "urn:ngm:class:no-u-turn-sampler", "label": "No-U-Turn Sampler"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:automatic-differentiation", "label": "Automatic Differentiation"},
+      {"@id": "urn:ngm:class:gradient-computation", "label": "Gradient Computation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:gaussian-distribution", "label": "Gaussian Distribution"},
+      {"@id": "urn:ngm:class:hamiltonian-dynamics", "label": "Hamiltonian Dynamics"},
+      {"@id": "urn:ngm:class:phase-space", "label": "Phase Space"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:bayesian-optimisation", "label": "Bayesian Optimisation"},
+      {"@id": "urn:ngm:class:posterior-inference", "label": "Posterior Inference"},
+      {"@id": "urn:ngm:class:uncertainty-quantification", "label": "Uncertainty Quantification"},
+      {"@id": "urn:ngm:class:hierarchical-modelling", "label": "Hierarchical Modelling"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
+      {"@id": "urn:ngm:class:detailed-balance", "label": "Detailed Balance"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:variational-inference", "label": "Variational Inference"},
+      {"@id": "urn:ngm:class:random-walk-metropolis", "label": "Random Walk Metropolis"},
+      {"@id": "urn:ngm:class:gibbs-sampling", "label": "Gibbs Sampling"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:molecular-dynamics", "label": "Molecular Dynamics"},
+      {"@id": "urn:ngm:class:quantum-field-theory", "label": "Quantum Field Theory"}
+    ],
     "relatedTo": [
       {"@id": "urn:ngm:class:gaussian-process", "label": "Gaussian Process"},
       {"@id": "urn:ngm:class:bayesian-deep-learning", "label": "Bayesian Deep Learning"},
-      {"@id": "urn:ngm:class:inference-algorithm", "label": "Inference Algorithm"}
-    ],
-    "uses": [
-      {"@id": "urn:ngm:class:gaussian-distribution", "label": "Gaussian Distribution"}
-    ],
-    "enables": [
-      {"@id": "urn:ngm:class:bayesian-optimisation", "label": "Bayesian Optimisation"}
+      {"@id": "urn:ngm:class:inference-algorithm", "label": "Inference Algorithm"},
+      {"@id": "urn:ngm:class:stan-language", "label": "Stan Language"},
+      {"@id": "urn:ngm:class:normalising-flow", "label": "Normalising Flow"},
+      {"@id": "urn:ngm:class:riemannian-manifold", "label": "Riemannian Manifold"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:hybrid-monte-carlo", "label": "Hybrid Monte Carlo"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

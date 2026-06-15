@@ -16,8 +16,34 @@
   "qualityScore": 0.8,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:generative-fill",
+        "label": "Generative Fill"
+      },
+      {
+        "id": "urn:ngm:class:text-effects",
+        "label": "Text Effects"
+      },
+      {
+        "id": "urn:ngm:class:vector-recolouring",
+        "label": "Vector Recolouring"
+      },
+      {
+        "id": "urn:ngm:class:firefly-services",
+        "label": "Firefly Services"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:content-licensing",
+        "label": "Content Licensing"
+      },
+      {
+        "id": "urn:ngm:class:licensed-training-data",
+        "label": "Licensed Training Data"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:image-generation",
@@ -26,12 +52,43 @@
       {
         "id": "urn:ngm:class:image-editing",
         "label": "Image Editing"
+      },
+      {
+        "id": "urn:ngm:class:brand-asset-management",
+        "label": "Brand Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-video-generation",
+        "label": "AI Video Generation"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:content-credentials",
+        "label": "Content Credentials"
+      },
+      {
+        "id": "urn:ngm:class:c2pa",
+        "label": "C2PA"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:midjourney",
+        "label": "Midjourney"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:diffusion-model",
@@ -40,23 +97,45 @@
       {
         "id": "urn:ngm:class:text-to-image",
         "label": "Text-to-Image"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:adobe-stock",
+        "label": "Adobe Stock"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:enterprise-ai-governance",
+        "label": "Enterprise AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:intellectual-property-indemnification",
+        "label": "Intellectual Property Indemnification"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "partOf": [
       {
         "id": "urn:ngm:class:adobe-creative-cloud",
         "label": "Adobe Creative Cloud"
-      },
-      {
-        "id": "urn:ngm:class:content-licensing",
-        "label": "Content Licensing"
-      },
+      }
+    ],
+    "relatedTo": [
       {
         "id": "urn:ngm:class:digital-content-provenance-marking",
         "label": "Digital Content Provenance Marking"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai-api",
+        "label": "Generative AI API"
+      },
+      {
+        "id": "urn:ngm:class:creative-workflow-automation",
+        "label": "Creative Workflow Automation"
       }
     ]
   },

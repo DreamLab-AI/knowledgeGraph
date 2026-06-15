@@ -28,17 +28,53 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
       {"@id": "urn:ngm:class:head-mounted-display", "label": "Head-Mounted Display"},
-      {"@id": "urn:ngm:class:gpu-acceleration", "label": "GPU Acceleration"}
+      {"@id": "urn:ngm:class:gpu-acceleration", "label": "GPU Acceleration"},
+      {"@id": "urn:ngm:class:openxr", "label": "OpenXR"},
+      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
+      {"@id": "urn:ngm:class:hand-tracking", "label": "Hand Tracking"},
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:immersive-computing", "label": "Immersive Computing"},
-      {"@id": "urn:ngm:class:augmented-reality-collaboration", "label": "Augmented Reality Collaboration"}
+      {"@id": "urn:ngm:class:augmented-reality-collaboration", "label": "Augmented Reality Collaboration"},
+      {"@id": "urn:ngm:class:remote-assistance", "label": "Remote Assistance"},
+      {"@id": "urn:ngm:class:surgical-simulation", "label": "Surgical Simulation"},
+      {"@id": "urn:ngm:class:virtual-training", "label": "Virtual Training"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"},
+      {"@id": "urn:ngm:class:spatial-anchoring", "label": "Spatial Anchoring"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:webxr", "label": "WebXR"},
+      {"@id": "urn:ngm:class:foveated-rendering", "label": "Foveated Rendering"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:enterprise-training", "label": "Enterprise Training"},
+      {"@id": "urn:ngm:class:industrial-maintenance", "label": "Industrial Maintenance"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:extended-reality-xr", "label": "Extended Reality (XR)"}
+      {"@id": "urn:ngm:class:extended-reality-xr", "label": "Extended Reality (XR)"},
+      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:scene-understanding", "label": "Scene Understanding"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:immersive-applications", "label": "Immersive Applications"},
+    {"@id": "urn:ngm:class:spatial-applications", "label": "Spatial Applications"}
+  ],
+  "quality": 0.68,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

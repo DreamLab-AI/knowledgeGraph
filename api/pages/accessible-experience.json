@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:accessible-experience",
   "domain": "spatial-computing",
-  "definition": "An Accessible Experience is a virtual environment or application delivering equivalent functionality and engagement to users with disabilities through multimodal access pathways, assistive technology integration, and Accessible Design principles.",
+  "definition": "An Accessible Experience is a virtual environment or application delivering equivalent functionality and engagement to users with disabilities through multimodal access pathways, assistive technology integration, and Accessible Design principles, ensuring feature parity across visual, auditory, motor, and cognitive modalities.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:sc-governance-and-safety",
@@ -17,7 +17,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.7,
   "maturity": "draft",
   "relationships": {
     "hasPart": [],
@@ -33,6 +33,14 @@
       {
         "id": "urn:ngm:class:multimodal-ai-architecture-interfaces",
         "label": "Multimodal Interfaces"
+      },
+      {
+        "id": "urn:ngm:class:accessibility-standard",
+        "label": "Accessibility Standard"
+      },
+      {
+        "id": "urn:ngm:class:accessible-design",
+        "label": "Accessible Design"
       }
     ],
     "enables": [
@@ -47,22 +55,87 @@
       {
         "id": "urn:ngm:class:universal-access",
         "label": "Universal Access"
+      },
+      {
+        "id": "urn:ngm:class:inclusive-experience",
+        "label": "Inclusive Experience"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:inaccessible-design",
+        "label": "Inaccessible Design"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:user-experience",
         "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
       }
     ],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:3-d-user-interface",
+        "label": "3D User Interface"
+      },
+      {
+        "id": "urn:ngm:class:voice-input",
+        "label": "Voice Input"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "id": "urn:ngm:class:caption-and-subtitling",
+        "label": "Caption and Subtitling"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:wcag",
+        "label": "WCAG"
+      },
+      {
+        "id": "urn:ngm:class:section-508",
+        "label": "Section 508"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:universal-design",
+        "label": "Universal Design"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-accessibility",
+        "label": "Cognitive Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:screen-reader",
+        "label": "Screen Reader"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -28,20 +28,55 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
       {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"},
-      {"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"}
+      {"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"},
+      {"@id": "urn:ngm:class:smart-city", "label": "Smart City"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
       {"@id": "urn:ngm:class:mqtt", "label": "MQTT"},
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"}
+      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
+      {"@id": "urn:ngm:class:lorawan", "label": "LoRaWAN"},
+      {"@id": "urn:ngm:class:5g-network", "label": "5G Network"},
+      {"@id": "urn:ngm:class:bluetooth-low-energy", "label": "Bluetooth Low Energy"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:io-t-ai-integration", "label": "IoT AI Integration"},
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:real-time-monitoring", "label": "Real-Time Monitoring"}
+      {"@id": "urn:ngm:class:real-time-monitoring", "label": "Real-Time Monitoring"},
+      {"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"},
+      {"@id": "urn:ngm:class:smart-grid", "label": "Smart Grid"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:device-identity-management", "label": "Device Identity Management"},
+      {"@id": "urn:ngm:class:over-the-air-update", "label": "Over-the-Air Update"},
+      {"@id": "urn:ngm:class:network-security", "label": "Network Security"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:edge-gateway", "label": "Edge Gateway"},
+      {"@id": "urn:ngm:class:cloud-platform", "label": "Cloud Platform"},
+      {"@id": "urn:ngm:class:device-management-platform", "label": "Device Management Platform"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:matter-protocol", "label": "Matter Protocol"},
+      {"@id": "urn:ngm:class:oneM2M", "label": "oneM2M"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:traditional-scada", "label": "Traditional SCADA"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:internet-of-things-infrastructure", "label": "Internet of Things Infrastructure"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

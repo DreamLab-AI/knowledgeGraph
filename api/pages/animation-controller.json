@@ -18,11 +18,28 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:game-engine",
-        "label": "Game Engine"
+        "id": "urn:ngm:class:blend-tree",
+        "label": "Blend Tree"
+      },
+      {
+        "id": "urn:ngm:class:animation-state",
+        "label": "Animation State"
+      },
+      {
+        "id": "urn:ngm:class:transition-condition",
+        "label": "Transition Condition"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:character-rigging",
+        "label": "Character Rigging"
+      },
+      {
+        "id": "urn:ngm:class:animation-clip",
+        "label": "Animation Clip"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:real-time-rendering",
@@ -31,12 +48,38 @@
       {
         "id": "urn:ngm:class:animation-retargeting",
         "label": "Animation Retargeting"
+      },
+      {
+        "id": "urn:ngm:class:procedural-animation",
+        "label": "Procedural Animation"
+      },
+      {
+        "id": "urn:ngm:class:motion-matching",
+        "label": "Motion Matching"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "id": "urn:ngm:class:game-logic",
+        "label": "Game Logic"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:skeletal-animation",
@@ -49,11 +92,28 @@
       {
         "id": "urn:ngm:class:inverse-kinematics",
         "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:blend-tree",
+        "label": "Blend Tree"
+      },
+      {
+        "id": "urn:ngm:class:animation-clip",
+        "label": "Animation Clip"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:animation-runtime",
+        "label": "Animation Runtime"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:animation",
@@ -70,6 +130,14 @@
       {
         "id": "urn:ngm:class:character-rigging",
         "label": "Character Rigging"
+      },
+      {
+        "id": "urn:ngm:class:locomotion-system",
+        "label": "Locomotion System"
+      },
+      {
+        "id": "urn:ngm:class:ragdoll-physics",
+        "label": "Ragdoll Physics"
       }
     ]
   },

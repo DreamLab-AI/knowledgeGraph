@@ -58,8 +58,8 @@ public:: true
   "@id": "urn:ngm:class:kerberos",
   "@type": "Class",
   "label": "Kerberos",
-  "definition": "Kerberos is a network authentication protocol that uses tickets and symmetric key cryptography to allow nodes to prove identity over an untrusted network.",
-  "domain": "distributed-systems",
+  "definition": "Kerberos is a network authentication protocol that uses tickets and symmetric key cryptography to allow nodes to prove their identity over an untrusted network, relying on a trusted Key Distribution Centre to issue time-limited session tickets without transmitting long-term credentials.",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [
@@ -73,20 +73,132 @@ public:: true
       {
         "@id": "urn:ngm:class:encryption",
         "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:symmetric-key-cryptography",
+        "label": "Symmetric Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:key-distribution-centre",
+        "label": "Key Distribution Centre"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-third-party",
+        "label": "Trusted Third Party"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:single-sign-on",
         "label": "Single Sign-On"
+      },
+      {
+        "@id": "urn:ngm:class:mutual-authentication",
+        "label": "Mutual Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:cryptographic-protocols",
+        "label": "Cryptographic Protocols"
+      },
+      {
+        "@id": "urn:ngm:class:ticket-based-authentication",
+        "label": "Ticket-Based Authentication"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:aes",
+        "label": "AES"
+      },
+      {
+        "@id": "urn:ngm:class:des",
+        "label": "DES"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:active-directory",
+        "label": "Active Directory"
+      },
+      {
+        "@id": "urn:ngm:class:ldap",
+        "label": "LDAP"
+      },
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:rfc-4120",
+        "label": "RFC 4120"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      },
+      {
+        "@id": "urn:ngm:class:saml",
+        "label": "SAML"
+      },
+      {
+        "@id": "urn:ngm:class:ntlm",
+        "label": "NTLM"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-security",
+        "label": "Zero Trust Security"
+      },
+      {
+        "@id": "urn:ngm:class:directory-services",
+        "label": "Directory Services"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:kerberos-authentication-protocol",
+      "label": "Kerberos Authentication Protocol"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

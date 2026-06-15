@@ -13,11 +13,20 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:append-only-log",
+        "label": "Append-Only Log"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:certificate-authority",
@@ -26,12 +35,64 @@
       {
         "id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:phishing-detection",
+        "label": "Phishing Detection"
+      },
+      {
+        "id": "urn:ngm:class:security-monitoring",
+        "label": "Security Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:web-pki",
+        "label": "Web PKI"
+      },
+      {
+        "id": "urn:ngm:class:domain-name-system",
+        "label": "Domain Name System"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:rfc-6962",
+        "label": "RFC 6962"
+      },
+      {
+        "id": "urn:ngm:class:rfc-9162",
+        "label": "RFC 9162"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:http-public-key-pinning",
+        "label": "HTTP Public Key Pinning"
+      },
+      {
+        "id": "urn:ngm:class:ocsp",
+        "label": "OCSP"
+      },
+      {
+        "id": "urn:ngm:class:dane",
+        "label": "DANE"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:cryptographic-hash-function",
@@ -44,10 +105,31 @@
       {
         "id": "urn:ngm:class:tls",
         "label": "TLS"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ca-browser-forum",
+        "label": "CA/Browser Forum"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -57,6 +139,14 @@
       {
         "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:signed-certificate-timestamp",
+        "label": "Signed Certificate Timestamp"
+      },
+      {
+        "id": "urn:ngm:class:subdomain-takeover",
+        "label": "Subdomain Takeover"
       }
     ]
   },

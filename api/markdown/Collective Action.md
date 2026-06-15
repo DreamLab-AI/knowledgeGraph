@@ -27,18 +27,52 @@ public:: true
   "relations": {
     "enables": [
       {"@id": "urn:ngm:class:collective-governance", "label": "Collective Governance"},
-      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding", "label": "Public Goods Funding"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding", "label": "Public Goods Funding"},
+      {"@id": "urn:ngm:class:public-goods", "label": "Public Goods"},
+      {"@id": "urn:ngm:class:social-coordination", "label": "Social Coordination"},
+      {"@id": "urn:ngm:class:institutional-design", "label": "Institutional Design"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:incentive-mechanism", "label": "Incentive Mechanism"},
+      {"@id": "urn:ngm:class:monitoring-and-enforcement", "label": "Monitoring and Enforcement"},
+      {"@id": "urn:ngm:class:trust", "label": "Trust"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:free-rider-problem", "label": "Free-Rider Problem"},
+      {"@id": "urn:ngm:class:selective-incentive", "label": "Selective Incentive"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:collective-intelligence", "label": "Collective Intelligence"},
       {"@id": "urn:ngm:class:community-governance", "label": "Community Governance"},
-      {"@id": "urn:ngm:class:common-pool-resources", "label": "Common Pool Resources"}
+      {"@id": "urn:ngm:class:common-pool-resources", "label": "Common Pool Resources"},
+      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"},
+      {"@id": "urn:ngm:class:social-contract", "label": "Social Contract"},
+      {"@id": "urn:ngm:class:prisoners-dilemma", "label": "Prisoner's Dilemma"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:coordination-protocol", "label": "Coordination Protocol"}
+      {"@id": "urn:ngm:class:coordination-protocol", "label": "Coordination Protocol"},
+      {"@id": "urn:ngm:class:voting-mechanism", "label": "Voting Mechanism"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:individual-rationality", "label": "Individual Rationality"},
+      {"@id": "urn:ngm:class:tragedy-of-the-commons", "label": "Tragedy of the Commons"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
+      {"@id": "urn:ngm:class:decentralized-autonomous-organization", "label": "Decentralized Autonomous Organization"},
+      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:collective-action-problem", "label": "Collective Action Problem"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "quality": 0.75
 }
 ```
 

@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Monte Carlo Integration",
   "definition": "Monte Carlo integration estimates the value of an integral by averaging the integrand over randomly sampled points, with error that decreases with the square root of the sample count regardless of dimension.",
-  "domain": "metaverse",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [
@@ -69,20 +69,122 @@ public:: true
       {
         "@id": "urn:ngm:class:random-number-generation",
         "label": "Random Number Generation"
+      },
+      {
+        "@id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:pseudorandom-number-generator",
+        "label": "Pseudorandom Number Generator"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:volume-rendering",
         "label": "Volume Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:path-tracing",
+        "label": "Path Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:importance-sampling",
+        "label": "Importance Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:variance-reduction",
+        "label": "Variance Reduction"
+      },
+      {
+        "@id": "urn:ngm:class:law-of-large-numbers",
+        "label": "Law of Large Numbers"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:quasi-monte-carlo",
+        "label": "Quasi-Monte Carlo"
+      },
+      {
+        "@id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:stochastic-methods",
+        "label": "Stochastic Methods"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:central-limit-theorem",
+        "label": "Central Limit Theorem"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-sampling",
+        "label": "Statistical Sampling"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:quadrature",
+        "label": "Quadrature"
+      },
+      {
+        "@id": "urn:ngm:class:deterministic-integration",
+        "label": "Deterministic Integration"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:sequential-monte-carlo",
+        "label": "Sequential Monte Carlo"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:financial-risk-modeling",
+        "label": "Financial Risk Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:physical-simulation",
+        "label": "Physical Simulation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:statistical-estimation",
+        "label": "Statistical Estimation"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:stochastic-integration",
+      "label": "Stochastic Integration"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

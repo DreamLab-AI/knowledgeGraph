@@ -64,18 +64,136 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:auditability",
+        "label": "Auditability"
+      },
+      {
+        "@id": "urn:ngm:class:feature-attribution",
+        "label": "Feature Attribution"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:model-documentation",
+        "label": "Model Documentation"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:trustworthy-ai-systems",
         "label": "Trustworthy AI Systems"
+      },
+      {
+        "@id": "urn:ngm:class:ai-accountability",
+        "label": "AI Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:bias-detection",
+        "label": "Bias Detection"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:shap",
+        "label": "SHAP"
+      },
+      {
+        "@id": "urn:ngm:class:lime",
+        "label": "LIME"
+      },
+      {
+        "@id": "urn:ngm:class:saliency-maps",
+        "label": "Saliency Maps"
+      },
+      {
+        "@id": "urn:ngm:class:counterfactual-explanations",
+        "label": "Counterfactual Explanations"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:black-box-model",
+        "label": "Black Box Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:data",
+        "label": "Data"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:fairness-in-ai",
+        "label": "Fairness in AI"
+      },
+      {
+        "@id": "urn:ngm:class:model-card",
+        "label": "Model Card"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:ai-interpretability",
+      "label": "AI Interpretability"
+    },
+    {
+      "@id": "urn:ngm:class:explainable-ai",
+      "label": "Explainable AI"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

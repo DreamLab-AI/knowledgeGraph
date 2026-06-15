@@ -54,7 +54,7 @@ public:: true
   "@id": "urn:ngm:class:synthetix",
   "@type": "Class",
   "label": "Synthetix",
-  "definition": "A protocol on Ethereum that issues synthetic assets tracking the price of external references, backed by a pooled collateral of its native token and other staked assets.",
+  "definition": "A protocol on Ethereum that issues synthetic assets (synths) tracking the price of external references such as fiat currencies, commodities, and indices, backed by a pooled collateral of its native SNX token and other staked assets; trades execute against the shared debt pool rather than an order book.",
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -65,6 +65,30 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:synthetic-asset",
+        "label": "Synthetic Asset"
+      },
+      {
+        "@id": "urn:ngm:class:debt-pool",
+        "label": "Debt Pool"
+      },
+      {
+        "@id": "urn:ngm:class:staking-mechanism",
+        "label": "Staking Mechanism"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:collateral-management",
@@ -73,20 +97,96 @@ public:: true
       {
         "@id": "urn:ngm:class:price-oracle",
         "label": "Price Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:liquidity-provision",
         "label": "Liquidity Provision"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:derivatives-trading",
+        "label": "Derivatives Trading"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:token",
+        "label": "Token"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "@id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:finance",
+        "label": "Finance"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:snx-protocol",
+      "label": "SNX Protocol"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

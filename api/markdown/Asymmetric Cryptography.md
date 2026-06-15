@@ -28,18 +28,56 @@ public:: true
     "hasPart": [
       {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key", "label": "Public Key"},
       {"@id": "urn:ngm:class:private-key", "label": "Private Key"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:key-pair", "label": "Key Pair"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:trapdoor-function", "label": "Trapdoor Function"},
+      {"@id": "urn:ngm:class:random-number-generation", "label": "Random Number Generation"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:tls", "label": "TLS"}
+      {"@id": "urn:ngm:class:tls", "label": "TLS"},
+      {"@id": "urn:ngm:class:non-repudiation", "label": "Non-Repudiation"},
+      {"@id": "urn:ngm:class:authentication", "label": "Authentication"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:rsa", "label": "RSA"},
+      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
+      {"@id": "urn:ngm:class:diffie-hellman-key-exchange", "label": "Diffie-Hellman Key Exchange"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:end-to-end-encryption", "label": "End-to-End Encryption"},
+      {"@id": "urn:ngm:class:code-signing", "label": "Code Signing"},
+      {"@id": "urn:ngm:class:ssh", "label": "SSH"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:key-management", "label": "Key Management"},
+      {"@id": "urn:ngm:class:hardware-security-module", "label": "Hardware Security Module"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:symmetric-cryptography", "label": "Symmetric Cryptography"},
+      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
-      {"@id": "urn:ngm:class:key-management", "label": "Key Management"}
+      {"@id": "urn:ngm:class:key-management", "label": "Key Management"},
+      {"@id": "urn:ngm:class:fido2", "label": "FIDO2"},
+      {"@id": "urn:ngm:class:certificate-transparency", "label": "Certificate Transparency"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

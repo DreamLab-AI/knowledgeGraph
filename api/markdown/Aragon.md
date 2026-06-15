@@ -81,20 +81,122 @@ public:: true
       {
         "@id": "urn:ngm:class:smart-contracts",
         "label": "Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:token-voting",
+        "label": "Token Voting"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:governance",
         "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-voting",
+        "label": "On-Chain Voting"
+      },
+      {
+        "@id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "@id": "urn:ngm:class:permissioned-roles",
+        "label": "Permissioned Roles"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:aragon-os",
+        "label": "AragonOS"
+      },
+      {
+        "@id": "urn:ngm:class:aragon-client",
+        "label": "Aragon Client"
+      },
+      {
+        "@id": "urn:ngm:class:aragon-app",
+        "label": "Aragon App"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:proxy-pattern",
+        "label": "Proxy Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:multisig-wallet",
+        "label": "Multisig Wallet"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:dao-governance-protocol",
+        "label": "DAO Governance Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:modular-smart-contract-architecture",
+        "label": "Modular Smart Contract Architecture"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:compound-governance",
+        "label": "Compound Governance"
+      },
+      {
+        "@id": "urn:ngm:class:moloch-dao",
+        "label": "MolochDAO"
+      },
+      {
+        "@id": "urn:ngm:class:snapshot",
+        "label": "Snapshot"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:aragon-network",
+      "label": "Aragon Network"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

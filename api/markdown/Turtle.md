@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Turtle",
   "definition": "Turtle (Terse RDF Triple Language) is a W3C-standardised serialisation syntax for expressing RDF graphs in a compact, human-readable plain-text form. It extends Notation3 (N3) by providing a concise prefix-based shorthand for IRIs, support for blank nodes, and literal datatypes, enabling structured linked-data documents to be authored and exchanged without the verbosity of RDF/XML.",
-  "domain": "ai",
+  "domain": "data",
   "maturity": "mature",
   "subClassOf": [
     {"@id": "urn:ngm:class:data-serialization", "label": "Data Serialization"}
@@ -31,17 +31,56 @@ public:: true
       {"@id": "urn:ngm:class:rdf", "label": "RDF"},
       {"@id": "urn:ngm:class:sparql", "label": "SPARQL"},
       {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:n-triples", "label": "N-Triples"}
+      {"@id": "urn:ngm:class:n-triples", "label": "N-Triples"},
+      {"@id": "urn:ngm:class:notation3", "label": "Notation3"},
+      {"@id": "urn:ngm:class:n-quads", "label": "N-Quads"},
+      {"@id": "urn:ngm:class:trig", "label": "TriG"},
+      {"@id": "urn:ngm:class:rdf-xml", "label": "RDF/XML"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"}
+      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
+      {"@id": "urn:ngm:class:shacl", "label": "SHACL"},
+      {"@id": "urn:ngm:class:shex", "label": "ShEx"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:owl", "label": "OWL"}
+      {"@id": "urn:ngm:class:owl", "label": "OWL"},
+      {"@id": "urn:ngm:class:iri", "label": "IRI"},
+      {"@id": "urn:ngm:class:prefix-declaration", "label": "Prefix Declaration"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:w3c", "label": "W3C"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:rdf-data-model", "label": "RDF Data Model"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:namespace", "label": "Namespace"},
+      {"@id": "urn:ngm:class:unicode", "label": "Unicode"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ontology-engineering", "label": "Ontology Engineering"},
+      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"},
+      {"@id": "urn:ngm:class:triple-store", "label": "Triple Store"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:json", "label": "JSON"},
+      {"@id": "urn:ngm:class:xml", "label": "XML"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:terse-rdf-triple-language", "label": "Terse RDF Triple Language"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

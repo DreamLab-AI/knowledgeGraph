@@ -28,19 +28,54 @@ public:: true
     "supports": [
       {"@id": "urn:ngm:class:database-query", "label": "Database Query"},
       {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
-      {"@id": "urn:ngm:class:spatial-database", "label": "Spatial Database"}
+      {"@id": "urn:ngm:class:spatial-database", "label": "Spatial Database"},
+      {"@id": "urn:ngm:class:full-text-search", "label": "Full-Text Search"},
+      {"@id": "urn:ngm:class:multi-version-concurrency-control", "label": "Multi-Version Concurrency Control"},
+      {"@id": "urn:ngm:class:logical-replication", "label": "Logical Replication"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:data-storage", "label": "Data Storage"},
       {"@id": "urn:ngm:class:graph-database", "label": "Graph Database"},
-      {"@id": "urn:ngm:class:query-processor", "label": "Query Processor"}
+      {"@id": "urn:ngm:class:query-processor", "label": "Query Processor"},
+      {"@id": "urn:ngm:class:acid-transaction", "label": "ACID Transaction"},
+      {"@id": "urn:ngm:class:sql", "label": "SQL"},
+      {"@id": "urn:ngm:class:open-source-software", "label": "Open-Source Software"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
+      {"@id": "urn:ngm:class:analytical-processing", "label": "Analytical Processing"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:query-planner", "label": "Query Planner"},
+      {"@id": "urn:ngm:class:extension-system", "label": "Extension System"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:storage-engine", "label": "Storage Engine"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:b-tree-index", "label": "B-Tree Index"},
+      {"@id": "urn:ngm:class:write-ahead-log", "label": "Write-Ahead Log"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:mysql", "label": "MySQL"},
+      {"@id": "urn:ngm:class:nosql-database", "label": "NoSQL Database"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:postgres", "label": "Postgres"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

@@ -13,21 +13,73 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:game-mechanics",
+        "label": "Game Mechanics"
+      },
+      {
+        "id": "urn:ngm:class:combinatorial-complexity",
+        "label": "Combinatorial Complexity"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:game-development",
         "label": "Game Development"
+      },
+      {
+        "id": "urn:ngm:class:open-ended-learning",
+        "label": "Open-Ended Learning"
+      },
+      {
+        "id": "urn:ngm:class:player-driven-narrative",
+        "label": "Player-Driven Narrative"
+      },
+      {
+        "id": "urn:ngm:class:emergent-narrative",
+        "label": "Emergent Narrative"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:player-interaction",
+        "label": "Player Interaction"
+      },
+      {
+        "id": "urn:ngm:class:non-linear-dynamics",
+        "label": "Non-Linear Dynamics"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:scripted-gameplay",
+        "label": "Scripted Gameplay"
+      },
+      {
+        "id": "urn:ngm:class:linear-game-design",
+        "label": "Linear Game Design"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:multi-agent-reinforcement-learning",
+        "label": "Multi-Agent Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:physics-simulation",
@@ -36,6 +88,14 @@
       {
         "id": "urn:ngm:class:game-engine",
         "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:rule-system",
+        "label": "Rule System"
+      },
+      {
+        "id": "urn:ngm:class:agent-based-modelling",
+        "label": "Agent-Based Modelling"
       }
     ],
     "supports": [],
@@ -61,6 +121,22 @@
       {
         "id": "urn:ngm:class:ai-game-agent",
         "label": "AI Game Agent"
+      },
+      {
+        "id": "urn:ngm:class:complex-adaptive-systems",
+        "label": "Complex Adaptive Systems"
+      },
+      {
+        "id": "urn:ngm:class:sandbox-game",
+        "label": "Sandbox Game"
+      },
+      {
+        "id": "urn:ngm:class:player-agency",
+        "label": "Player Agency"
+      },
+      {
+        "id": "urn:ngm:class:systems-theory",
+        "label": "Systems Theory"
       }
     ]
   },

@@ -54,7 +54,7 @@ public:: true
   "@id": "urn:ngm:class:tele-026-microsoft-mesh",
   "@type": "Class",
   "label": "TELE-026-microsoft-mesh",
-  "definition": "Microsoft Mesh is a platform for shared mixed reality experiences that lets people in different physical locations join a common virtual space using avatars or holographic representations.",
+  "definition": "Microsoft Mesh is a platform for shared mixed reality experiences that lets people in different physical locations join a common virtual space using avatars or holographic representations, integrating with Microsoft Teams to deliver immersive collaboration scenarios such as design review, training and distributed meetings.",
   "domain": "metaverse",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -65,6 +65,34 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-anchors",
+        "label": "Spatial Anchors"
+      },
+      {
+        "@id": "urn:ngm:class:holographic-rendering",
+        "label": "Holographic Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-scene-state",
+        "label": "Cloud Scene State"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:microsoft-teams",
+        "label": "Microsoft Teams"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:avatar-system",
@@ -73,20 +101,132 @@ public:: true
       {
         "@id": "urn:ngm:class:spatial-anchors",
         "label": "Spatial Anchors"
+      },
+      {
+        "@id": "urn:ngm:class:azure-cloud",
+        "label": "Azure Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality-headset",
+        "label": "Mixed Reality Headset"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:remote-collaboration",
         "label": "Remote Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-meeting",
+        "label": "Immersive Meeting"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-design-review",
+        "label": "Virtual Design Review"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:azure-cloud",
+        "label": "Azure Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-synchronisation",
+        "label": "Real-Time Synchronisation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:shared-virtual-environment",
+        "label": "Shared Virtual Environment"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:azure-spatial-anchors",
+        "label": "Azure Spatial Anchors"
+      },
+      {
+        "@id": "urn:ngm:class:holographic-rendering",
+        "label": "Holographic Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:webrtc",
+        "label": "WebRTC"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:enterprise-collaboration",
+        "label": "Enterprise Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:hololens",
+        "label": "HoloLens"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:meta-horizon-workrooms",
+        "label": "Meta Horizon Workrooms"
+      },
+      {
+        "@id": "urn:ngm:class:zoom",
+        "label": "Zoom"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:mesh-for-microsoft-teams",
+      "label": "Mesh for Microsoft Teams"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

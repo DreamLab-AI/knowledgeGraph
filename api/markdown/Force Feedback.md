@@ -29,19 +29,51 @@ alias:: ForceFeedback
     "uses": [
       {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
       {"@id": "urn:ngm:class:series-elastic-actuator", "label": "Series Elastic Actuator"},
-      {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"}
+      {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"},
+      {"@id": "urn:ngm:class:impedance-control", "label": "Impedance Control"},
+      {"@id": "urn:ngm:class:pid-controller", "label": "PID Controller"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
       {"@id": "urn:ngm:class:haptic-feedback-system", "label": "Haptic Feedback System"},
-      {"@id": "urn:ngm:class:tactile-sensing", "label": "Tactile Sensing"}
+      {"@id": "urn:ngm:class:tactile-sensing", "label": "Tactile Sensing"},
+      {"@id": "urn:ngm:class:proprioception", "label": "Proprioception"},
+      {"@id": "urn:ngm:class:bilateral-teleoperation", "label": "Bilateral Teleoperation"},
+      {"@id": "urn:ngm:class:vibrotactile-feedback", "label": "Vibrotactile Feedback"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:haptic-feedback-telepresence", "label": "Haptic Feedback Telepresence"},
-      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"}
+      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
+      {"@id": "urn:ngm:class:surgical-simulation", "label": "Surgical Simulation"},
+      {"@id": "urn:ngm:class:dexterous-manipulation", "label": "Dexterous Manipulation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:haptic-rendering", "label": "Haptic Rendering"},
+      {"@id": "urn:ngm:class:real-time-control", "label": "Real-Time Control"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"},
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:visual-feedback", "label": "Visual Feedback"},
+      {"@id": "urn:ngm:class:auditory-feedback", "label": "Auditory Feedback"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:kinesthetic-feedback", "label": "Kinesthetic Feedback"},
+    {"@id": "urn:ngm:class:force-reflection", "label": "Force Reflection"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

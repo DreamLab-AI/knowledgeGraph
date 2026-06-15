@@ -27,20 +27,56 @@ public:: true
   "relations": {
     "standardizedBy": [
       {"@id": "urn:ngm:class:digital-regulation", "label": "Digital Regulation"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
+      {"@id": "urn:ngm:class:communications-act-2003", "label": "Communications Act 2003"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:online-safety-act-2023", "label": "Online Safety Act 2023"},
       {"@id": "urn:ngm:class:uk-online-safety-act", "label": "UK Online Safety Act"},
       {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"},
-      {"@id": "urn:ngm:class:telecommunications-infrastructure", "label": "Telecommunications Infrastructure"}
+      {"@id": "urn:ngm:class:telecommunications-infrastructure", "label": "Telecommunications Infrastructure"},
+      {"@id": "urn:ngm:class:spectrum-management", "label": "Spectrum Management"},
+      {"@id": "urn:ngm:class:broadcasting-regulation", "label": "Broadcasting Regulation"},
+      {"@id": "urn:ngm:class:net-neutrality", "label": "Net Neutrality"},
+      {"@id": "urn:ngm:class:information-commissioner-office", "label": "Information Commissioner's Office"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:content-moderation-standards", "label": "Content Moderation Standards"},
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"}
+      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
+      {"@id": "urn:ngm:class:consumer-protection", "label": "Consumer Protection"},
+      {"@id": "urn:ngm:class:market-competition", "label": "Market Competition"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:child-safety-online", "label": "Child Safety Online"},
+      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
+      {"@id": "urn:ngm:class:media-plurality", "label": "Media Plurality"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:online-safety-regime", "label": "Online Safety Regime"},
+      {"@id": "urn:ngm:class:age-verification", "label": "Age Verification"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:transparency-reporting", "label": "Transparency Reporting"},
+      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:self-regulation", "label": "Self-Regulation"},
+      {"@id": "urn:ngm:class:co-regulation", "label": "Co-Regulation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:office-of-communications", "label": "Office of Communications"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

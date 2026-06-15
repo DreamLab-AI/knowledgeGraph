@@ -4,8 +4,8 @@
   "slug": "precision-recall-curve",
   "public": true,
   "classIri": "urn:ngm:class:precision-recall-curve",
-  "domain": "blockchain",
-  "definition": "A diagnostic plot that traces the trade-off between precision and recall across the decision thresholds of a binary classifier.",
+  "domain": "machine-learning",
+  "definition": "A diagnostic plot that traces the trade-off between precision and recall across the decision thresholds of a binary classifier, most informative under class imbalance where it focuses performance assessment on the minority positive class.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:confusion-matrix",
@@ -13,10 +13,19 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:decision-threshold",
+        "label": "Decision Threshold"
+      },
+      {
+        "id": "urn:ngm:class:area-under-the-curve",
+        "label": "Area Under the Curve"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:precision",
@@ -25,18 +34,93 @@
       {
         "id": "urn:ngm:class:recall",
         "label": "Recall"
+      },
+      {
+        "id": "urn:ngm:class:binary-classification",
+        "label": "Binary Classification"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:threshold-selection",
+        "label": "Threshold Selection"
+      },
+      {
+        "id": "urn:ngm:class:model-comparison",
+        "label": "Model Comparison"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      },
+      {
+        "id": "urn:ngm:class:class-imbalance",
+        "label": "Class Imbalance"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:roc-curve",
+        "label": "ROC Curve"
+      },
+      {
+        "id": "urn:ngm:class:accuracy",
+        "label": "Accuracy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:medical-diagnosis",
+        "label": "Medical Diagnosis"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:f1-score",
+        "label": "F1 Score"
+      },
+      {
+        "id": "urn:ngm:class:positive-predictive-value",
+        "label": "Positive Predictive Value"
+      },
+      {
+        "id": "urn:ngm:class:true-positive-rate",
+        "label": "True Positive Rate"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:average-precision",
+        "label": "Average Precision"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ]
   },
   "wikilinks": [
     {

@@ -58,7 +58,7 @@ public:: true
   "@id": "urn:ngm:class:exoskeleton",
   "@type": "Class",
   "label": "Exoskeleton",
-  "definition": "An exoskeleton is a wearable robotic structure that augments or supports human movement by applying forces in parallel with the wearer's limbs, used for assistance, rehabilitation and load support.",
+  "definition": "An exoskeleton is a wearable robotic structure that augments or supports human movement by applying forces in parallel with the wearer's limbs, used for assistance, rehabilitation, and load support.",
   "domain": "robotics",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -69,14 +69,40 @@ public:: true
     }
   ],
   "relations": {
-    "requires": [
+    "hasPart": [
       {
         "@id": "urn:ngm:class:actuator",
         "label": "Actuator"
       },
       {
+        "@id": "urn:ngm:class:joint-controller",
+        "label": "Joint Controller"
+      },
+      {
+        "@id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force Torque Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:wearable-device",
+        "label": "Wearable Device"
+      }
+    ],
+    "requires": [
+      {
         "@id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "@id": "urn:ngm:class:power-electronics",
+        "label": "Power Electronics"
       }
     ],
     "enables": [
@@ -87,14 +113,92 @@ public:: true
       {
         "@id": "urn:ngm:class:human-robot-collaboration",
         "label": "Human-Robot Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:rehabilitation-robotics",
+        "label": "Rehabilitation Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:occupational-safety",
+        "label": "Occupational Safety"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:electromyography",
+        "label": "Electromyography"
+      },
+      {
+        "@id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:physical-therapy",
+        "label": "Physical Therapy"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-physical-performance",
+        "label": "Augmented Physical Performance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:endoskeleton",
+        "label": "Endoskeleton"
+      },
+      {
+        "@id": "urn:ngm:class:prosthetics",
+        "label": "Prosthetics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:powered-exoskeleton",
+      "label": "Powered Exoskeleton"
+    },
+    {
+      "@id": "urn:ngm:class:wearable-robot",
+      "label": "Wearable Robot"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

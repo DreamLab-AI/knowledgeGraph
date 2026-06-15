@@ -13,11 +13,16 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hash-function-registry",
+        "label": "Hash Function Registry"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:content-addressed-storage",
@@ -26,26 +31,88 @@
       {
         "id": "urn:ngm:class:ipfs",
         "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:algorithm-agility",
+        "label": "Algorithm Agility"
+      },
+      {
+        "id": "urn:ngm:class:peer-identity",
+        "label": "Peer Identity"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:varint-encoding",
+        "label": "Varint Encoding"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:self-describing-format",
+        "label": "Self-Describing Format"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fixed-length-hash",
+        "label": "Fixed-Length Hash"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:binary-encoding",
         "label": "Binary Encoding"
+      },
+      {
+        "id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:cryptographic-verification",
         "label": "Cryptographic Verification"
+      },
+      {
+        "id": "urn:ngm:class:hash-algorithm-upgrade",
+        "label": "Hash Algorithm Upgrade"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
       }
     ],
-    "standardizedBy": [],
-    "partOf": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:protocol-labs",
+        "label": "Protocol Labs"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:multiformats",
+        "label": "Multiformats"
+      },
+      {
+        "id": "urn:ngm:class:ipld",
+        "label": "IPLD"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:cryptographic-hash-function",
@@ -58,6 +125,22 @@
       {
         "id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:multicodec",
+        "label": "Multicodec"
+      },
+      {
+        "id": "urn:ngm:class:multiformats",
+        "label": "Multiformats"
+      },
+      {
+        "id": "urn:ngm:class:content-identifier",
+        "label": "Content Identifier"
+      },
+      {
+        "id": "urn:ngm:class:varint",
+        "label": "Varint"
       }
     ]
   },

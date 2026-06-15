@@ -20,17 +20,62 @@ public:: true
   "@id": "urn:ngm:class:hybrid-search",
   "@type": "Class",
   "label": "Hybrid Search",
-  "definition": "Hybrid search is an information retrieval approach that combines sparse lexical retrieval — typically BM25 or TF-IDF — with dense vector search over neural embeddings, fusing their complementary strengths: precise keyword matching and semantic understanding respectively. The combination consistently outperforms either method alone across diverse query types, and has become the dominant retrieval pattern underpinning Retrieval-Augmented Generation pipelines.",
-  "domain": "ai",
+  "definition": "Hybrid search is an information retrieval approach that combines sparse lexical retrieval — typically BM25 or TF-IDF — with dense vector search over neural embeddings, fusing their complementary strengths: precise keyword matching and semantic understanding respectively. Score fusion via Reciprocal Rank Fusion or learned weighting combines ranked lists from both systems. The combination consistently outperforms either method alone across diverse query types, and has become the dominant retrieval pattern underpinning Retrieval-Augmented Generation pipelines.",
+  "domain": "machine-learning",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}],
   "relations": {
-    "uses": [{"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"}, {"@id": "urn:ngm:class:bm25", "label": "BM25"}, {"@id": "urn:ngm:class:vector-embedding", "label": "Vector Embedding"}],
-    "enables": [{"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}, {"@id": "urn:ngm:class:cross-encoder-reranking", "label": "Cross-Encoder Reranking"}],
-    "relatedTo": [{"@id": "urn:ngm:class:retrieval-augmented-generation-rag", "label": "Retrieval Augmented Generation - RAG"}, {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}],
-    "dependsOn": [{"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}]
+    "uses": [
+      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
+      {"@id": "urn:ngm:class:bm25", "label": "BM25"},
+      {"@id": "urn:ngm:class:vector-embedding", "label": "Vector Embedding"},
+      {"@id": "urn:ngm:class:reciprocal-rank-fusion", "label": "Reciprocal Rank Fusion"},
+      {"@id": "urn:ngm:class:inverted-index", "label": "Inverted Index"},
+      {"@id": "urn:ngm:class:approximate-nearest-neighbour", "label": "Approximate Nearest Neighbour"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
+      {"@id": "urn:ngm:class:cross-encoder-reranking", "label": "Cross-Encoder Reranking"},
+      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
+      {"@id": "urn:ngm:class:enterprise-search", "label": "Enterprise Search"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
+      {"@id": "urn:ngm:class:text-encoder", "label": "Text Encoder"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:transformer-model", "label": "Transformer Model"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:dense-retrieval", "label": "Dense Retrieval"},
+      {"@id": "urn:ngm:class:sparse-retrieval", "label": "Sparse Retrieval"},
+      {"@id": "urn:ngm:class:rank-fusion", "label": "Rank Fusion"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:keyword-search", "label": "Keyword Search"},
+      {"@id": "urn:ngm:class:pure-vector-search", "label": "Pure Vector Search"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:retrieval-augmented-generation-rag", "label": "Retrieval Augmented Generation - RAG"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:colbert", "label": "ColBERT"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:data", "label": "Data"}
+    ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:hybrid-retrieval", "label": "Hybrid Retrieval"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

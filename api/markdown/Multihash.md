@@ -28,20 +28,61 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
       {"@id": "urn:ngm:class:content-addressing", "label": "Content Addressing"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
+      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
+      {"@id": "urn:ngm:class:multicodec", "label": "Multicodec"},
+      {"@id": "urn:ngm:class:multiformats", "label": "Multiformats"},
+      {"@id": "urn:ngm:class:content-identifier", "label": "Content Identifier"},
+      {"@id": "urn:ngm:class:varint", "label": "Varint"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:content-addressed-storage", "label": "Content-Addressed Storage"},
-      {"@id": "urn:ngm:class:ipfs", "label": "IPFS"}
+      {"@id": "urn:ngm:class:ipfs", "label": "IPFS"},
+      {"@id": "urn:ngm:class:algorithm-agility", "label": "Algorithm Agility"},
+      {"@id": "urn:ngm:class:peer-identity", "label": "Peer Identity"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:binary-encoding", "label": "Binary Encoding"}
+      {"@id": "urn:ngm:class:binary-encoding", "label": "Binary Encoding"},
+      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"}
+      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"},
+      {"@id": "urn:ngm:class:hash-algorithm-upgrade", "label": "Hash Algorithm Upgrade"},
+      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:multiformats", "label": "Multiformats"},
+      {"@id": "urn:ngm:class:ipld", "label": "IPLD"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:hash-function-registry", "label": "Hash Function Registry"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:self-describing-format", "label": "Self-Describing Format"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:varint-encoding", "label": "Varint Encoding"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
+      {"@id": "urn:ngm:class:decentralised-identifier", "label": "Decentralised Identifier"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:fixed-length-hash", "label": "Fixed-Length Hash"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:protocol-labs", "label": "Protocol Labs"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:self-describing-hash", "label": "Self-Describing Hash"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

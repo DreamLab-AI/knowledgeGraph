@@ -21,26 +21,60 @@ public:: true
   "@type": "Class",
   "label": "Metadata",
   "definition": "Metadata is structured information that describes, contextualises, or categorises other data, enabling its discovery, management, interpretation, and interoperability. Metadata encompasses descriptive attributes (title, author, date), structural information (format, schema, relationships), administrative records (access rights, provenance, lifecycle), and technical parameters (resolution, encoding, checksum) attached to or associated with a primary data object.",
-  "domain": "ai",
+  "domain": "data",
   "maturity": "mature",
   "subClassOf": [{"@id": "urn:ngm:class:data-schema", "label": "Data Schema"}],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:descriptive-metadata", "label": "Descriptive Metadata"},
+      {"@id": "urn:ngm:class:structural-metadata", "label": "Structural Metadata"},
+      {"@id": "urn:ngm:class:administrative-metadata", "label": "Administrative Metadata"},
+      {"@id": "urn:ngm:class:technical-metadata", "label": "Technical Metadata"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:data-provenance", "label": "Data Provenance"},
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"}
+      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
+      {"@id": "urn:ngm:class:data-discovery", "label": "Data Discovery"},
+      {"@id": "urn:ngm:class:data-interoperability", "label": "Data Interoperability"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:data-schema", "label": "Data Schema"},
-      {"@id": "urn:ngm:class:data-standards", "label": "Data Standards"}
+      {"@id": "urn:ngm:class:data-standards", "label": "Data Standards"},
+      {"@id": "urn:ngm:class:controlled-vocabulary", "label": "Controlled Vocabulary"},
+      {"@id": "urn:ngm:class:rdf", "label": "RDF"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
+      {"@id": "urn:ngm:class:data-lineage", "label": "Data Lineage"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:dublin-core", "label": "Dublin Core"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:raw-data", "label": "Raw Data"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"},
       {"@id": "urn:ngm:class:metadata-schema", "label": "Metadata Schema"},
-      {"@id": "urn:ngm:class:dublin-core", "label": "Dublin Core"}
+      {"@id": "urn:ngm:class:data-catalog", "label": "Data Catalog"},
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:data-description", "label": "Data Description"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

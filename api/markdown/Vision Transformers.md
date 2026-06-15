@@ -54,8 +54,8 @@ public:: true
   "@id": "urn:ngm:class:vision-transformers",
   "@type": "Class",
   "label": "Vision Transformers",
-  "definition": "Transformer-based neural network architectures applied to images by splitting an image into patches and treating the patches as a sequence of tokens for self-attention.",
-  "domain": "ai",
+  "definition": "Transformer-based neural network architectures applied to images by splitting an image into fixed-size patches and treating those patches as a sequence of tokens for self-attention, enabling global context modelling across the full image without relying on local convolutional receptive fields.",
+  "domain": "machine-learning",
   "maturity": "growing",
   "qualityScore": 0.7,
   "subClassOf": [
@@ -73,20 +73,112 @@ public:: true
       {
         "@id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:large-scale-pretraining",
+        "label": "Large-Scale Pretraining"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:image-segmentation",
         "label": "Image Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-learning",
+        "label": "Multimodal Learning"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:patch-embedding",
+        "label": "Patch Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:multi-head-self-attention",
+        "label": "Multi-Head Self-Attention"
+      },
+      {
+        "@id": "urn:ngm:class:feed-forward-network",
+        "label": "Feed-Forward Network"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:layer-normalisation",
+        "label": "Layer Normalisation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "@id": "urn:ngm:class:image-recognition",
+        "label": "Image Recognition"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:vit",
+      "label": "ViT"
+    },
+    {
+      "@id": "urn:ngm:class:vision-transformer",
+      "label": "Vision Transformer"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

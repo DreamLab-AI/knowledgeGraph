@@ -28,18 +28,56 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:edge-ai", "label": "Edge AI"}
+      {"@id": "urn:ngm:class:edge-ai", "label": "Edge AI"},
+      {"@id": "urn:ngm:class:wireless-sensor-network", "label": "Wireless Sensor Network"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:context-aware-computing", "label": "Context Aware Computing"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:smart-home", "label": "Smart Home"},
+      {"@id": "urn:ngm:class:smart-building", "label": "Smart Building"},
+      {"@id": "urn:ngm:class:proactive-computing", "label": "Proactive Computing"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:low-power-wireless", "label": "Low Power Wireless"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:real-time-inference", "label": "Real Time Inference"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:personal-computing", "label": "Personal Computing"},
+      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
-      {"@id": "urn:ngm:class:io-t", "label": "IoT"}
+      {"@id": "urn:ngm:class:io-t", "label": "IoT"},
+      {"@id": "urn:ngm:class:industrial-iot", "label": "Industrial IoT"},
+      {"@id": "urn:ngm:class:privacy-preserving-computing", "label": "Privacy Preserving Computing"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:matter-protocol", "label": "Matter Protocol"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:ubiquitous-computing", "label": "Ubiquitous Computing"},
+    {"@id": "urn:ngm:class:calm-technology", "label": "Calm Technology"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

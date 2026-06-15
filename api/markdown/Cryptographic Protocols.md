@@ -59,7 +59,7 @@ public:: true
   "@type": "Class",
   "label": "Cryptographic Protocols",
   "definition": "Cryptographic protocols are sequences of operations using cryptographic primitives to achieve security goals such as confidentiality, integrity and authentication.",
-  "domain": "distributed-systems",
+  "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [
@@ -73,20 +73,138 @@ public:: true
       {
         "@id": "urn:ngm:class:encryption",
         "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signatures",
+        "label": "Digital Signatures"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-functions",
+        "label": "Cryptographic Hash Functions"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:kerberos",
         "label": "Kerberos"
+      },
+      {
+        "@id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:tls-transport-layer-security",
+        "label": "TLS (Transport Layer Security)"
+      },
+      {
+        "@id": "urn:ngm:class:ssh-secure-shell",
+        "label": "SSH (Secure Shell)"
+      },
+      {
+        "@id": "urn:ngm:class:ipsec",
+        "label": "IPsec"
+      },
+      {
+        "@id": "urn:ngm:class:diffie-hellman-key-exchange",
+        "label": "Diffie-Hellman Key Exchange"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "label": "Zero-Knowledge Proofs"
+      },
+      {
+        "@id": "urn:ngm:class:message-authentication-codes",
+        "label": "Message Authentication Codes"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:symmetric-key-cryptography",
+        "label": "Symmetric Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:asymmetric-key-cryptography",
+        "label": "Asymmetric Key Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:obfuscation",
+        "label": "Obfuscation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:security-protocols",
+      "label": "Security Protocols"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

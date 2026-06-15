@@ -29,20 +29,54 @@ public:: true
       {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
       {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
       {"@id": "urn:ngm:class:animation-retargeting", "label": "Animation Retargeting"},
-      {"@id": "urn:ngm:class:vrm-format", "label": "VRM Format"}
+      {"@id": "urn:ngm:class:vrm-format", "label": "VRM Format"},
+      {"@id": "urn:ngm:class:blend-tree", "label": "Blend Tree"},
+      {"@id": "urn:ngm:class:skeletal-animation", "label": "Skeletal Animation"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
       {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"},
       {"@id": "urn:ngm:class:avatar-interoperability", "label": "Avatar Interoperability"},
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"}
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:non-verbal-communication", "label": "Non-Verbal Communication"},
+      {"@id": "urn:ngm:class:embodiment", "label": "Embodiment"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
+      {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"},
+      {"@id": "urn:ngm:class:embodied-interaction", "label": "Embodied Interaction"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:facial-animation", "label": "Facial Animation"},
+      {"@id": "urn:ngm:class:lip-sync", "label": "Lip Sync"},
+      {"@id": "urn:ngm:class:gaze-tracking", "label": "Gaze Tracking"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:gltf", "label": "glTF"},
+      {"@id": "urn:ngm:class:metaverse-standards-forum", "label": "Metaverse Standards Forum"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:cinematic-animation", "label": "Cinematic Animation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:realtime-avatar-animation", "label": "Real-Time Avatar Animation"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

@@ -28,18 +28,60 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
       {"@id": "urn:ngm:class:audit-log", "label": "Audit Log"},
-      {"@id": "urn:ngm:class:tls", "label": "TLS"}
+      {"@id": "urn:ngm:class:tls", "label": "TLS"},
+      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:x-509-certificate", "label": "X.509 Certificate"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
+      {"@id": "urn:ngm:class:phishing-detection", "label": "Phishing Detection"},
+      {"@id": "urn:ngm:class:security-monitoring", "label": "Security Monitoring"},
+      {"@id": "urn:ngm:class:threat-intelligence", "label": "Threat Intelligence"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
+      {"@id": "urn:ngm:class:append-only-log", "label": "Append-Only Log"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:rfc-6962", "label": "RFC 6962"},
+      {"@id": "urn:ngm:class:rfc-9162", "label": "RFC 9162"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:ca-browser-forum", "label": "CA/Browser Forum"},
+      {"@id": "urn:ngm:class:ietf", "label": "IETF"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:http-public-key-pinning", "label": "HTTP Public Key Pinning"},
+      {"@id": "urn:ngm:class:ocsp", "label": "OCSP"},
+      {"@id": "urn:ngm:class:dane", "label": "DANE"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:web-pki", "label": "Web PKI"},
+      {"@id": "urn:ngm:class:domain-name-system", "label": "Domain Name System"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:tls-1-3", "label": "TLS 1.3"},
-      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"},
+      {"@id": "urn:ngm:class:signed-certificate-timestamp", "label": "Signed Certificate Timestamp"},
+      {"@id": "urn:ngm:class:subdomain-takeover", "label": "Subdomain Takeover"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
+      {"@id": "urn:ngm:class:supply-chain-security", "label": "Supply Chain Security"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:ct-logs", "label": "CT Logs"},
+    {"@id": "urn:ngm:class:rfc-6962", "label": "RFC 6962 Certificate Transparency"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

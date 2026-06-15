@@ -54,7 +54,7 @@ public:: true
   "@id": "urn:ngm:class:markov-chain",
   "@type": "Class",
   "label": "Markov Chain",
-  "definition": "A stochastic process in which the probability of each future state depends only on the current state and not on the sequence of preceding states.",
+  "definition": "A stochastic process in which the probability of each future state depends only on the current state and not on the sequence of preceding states (the Markov property), enabling tractable analysis of steady-state distributions, mixing times, and long-run behaviour.",
   "domain": "machine-learning",
   "maturity": "mature",
   "qualityScore": 0.7,
@@ -69,6 +69,14 @@ public:: true
       {
         "@id": "urn:ngm:class:probability-theory",
         "label": "Probability Theory"
+      },
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:transition-matrix",
+        "label": "Transition Matrix"
       }
     ],
     "enables": [
@@ -79,14 +87,100 @@ public:: true
       {
         "@id": "urn:ngm:class:markov-decision-process",
         "label": "Markov Decision Process"
+      },
+      {
+        "@id": "urn:ngm:class:hidden-markov-model",
+        "label": "Hidden Markov Model"
+      },
+      {
+        "@id": "urn:ngm:class:stationary-distribution",
+        "label": "Stationary Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:pagerank",
+        "label": "PageRank"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:state-space",
+        "label": "State Space"
+      },
+      {
+        "@id": "urn:ngm:class:transition-probability",
+        "label": "Transition Probability"
+      },
+      {
+        "@id": "urn:ngm:class:absorbing-state",
+        "label": "Absorbing State"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:random-walk",
+        "label": "Random Walk"
+      },
+      {
+        "@id": "urn:ngm:class:ergodicity",
+        "label": "Ergodicity"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:memoryless-property",
+        "label": "Memoryless Property"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:non-markovian-process",
+        "label": "Non-Markovian Process"
+      },
+      {
+        "@id": "urn:ngm:class:deterministic-automaton",
+        "label": "Deterministic Automaton"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:dynamical-systems-theory",
+        "label": "Dynamical Systems Theory"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:discrete-time-markov-chain",
+      "label": "Discrete-Time Markov Chain"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

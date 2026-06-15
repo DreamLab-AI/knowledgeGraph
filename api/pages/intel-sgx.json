@@ -4,8 +4,8 @@
   "slug": "intel-sgx",
   "public": true,
   "classIri": "urn:ngm:class:intel-sgx",
-  "domain": "distributed-systems",
-  "definition": "Intel SGX is a set of processor instructions that create isolated memory regions called enclaves, protecting code and data from other software on the same system.",
+  "domain": "security",
+  "definition": "Intel SGX (Software Guard Extensions) is a set of Intel processor instructions that create hardware-isolated memory regions called enclaves, protecting sensitive code and data from the operating system, hypervisor, and other privileged software on the same system, with remote attestation enabling third-party verification of enclave integrity.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:trusted-execution-environment",
@@ -13,31 +13,144 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:enclave",
+        "label": "Enclave"
+      },
+      {
+        "id": "urn:ngm:class:remote-attestation",
+        "label": "Remote Attestation"
+      },
+      {
+        "id": "urn:ngm:class:memory-encryption-engine",
+        "label": "Memory Encryption Engine"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:intel",
         "label": "Intel"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:information-security",
         "label": "Information Security"
+      },
+      {
+        "id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      },
+      {
+        "id": "urn:ngm:class:secure-multiparty-computation",
+        "label": "Secure Multiparty Computation"
+      },
+      {
+        "id": "urn:ngm:class:private-data-processing",
+        "label": "Private Data Processing"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:arm-trustzone",
+        "label": "ARM TrustZone"
+      },
+      {
+        "id": "urn:ngm:class:amd-sev",
+        "label": "AMD SEV"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:aes-encryption",
+        "label": "AES Encryption"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:secure-computation",
+        "label": "Secure Computation"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:intel",
+        "label": "Intel"
+      },
+      {
+        "id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:side-channel-attack",
+        "label": "Side-Channel Attack"
+      },
+      {
+        "id": "urn:ngm:class:hypervisor",
+        "label": "Hypervisor"
+      }
+    ]
   },
   "wikilinks": [
     {

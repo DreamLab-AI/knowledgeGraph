@@ -54,7 +54,7 @@ public:: true
   "@id": "urn:ngm:class:bnb-chain",
   "@type": "Class",
   "label": "BNB Chain",
-  "definition": "A blockchain compatible with the Ethereum Virtual Machine, operated with a delegated validator set and used widely for trading, lending, and other on-chain applications.",
+  "definition": "A blockchain compatible with the Ethereum Virtual Machine, operated with a delegated Proof-of-Staked-Authority validator set and used widely for decentralised trading, lending, token issuance, and other on-chain applications within the Binance ecosystem.",
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -73,14 +73,126 @@ public:: true
       {
         "@id": "urn:ngm:class:proof-of-stake",
         "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:bep-20-token",
+        "label": "BEP-20 Token"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:evm-compatibility",
+        "label": "EVM Compatibility"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:bnb-token",
+        "label": "BNB Token"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:gas-fee",
+        "label": "Gas Fee"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:token-issuance",
+        "label": "Token Issuance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:binance",
+        "label": "Binance"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:solana",
+        "label": "Solana"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "@id": "urn:ngm:class:web3",
+        "label": "Web3"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:layer-1-blockchain",
+        "label": "Layer 1 Blockchain"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:bsc",
+      "label": "BSC"
+    },
+    {
+      "@id": "urn:ngm:class:binance-smart-chain",
+      "label": "Binance Smart Chain"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

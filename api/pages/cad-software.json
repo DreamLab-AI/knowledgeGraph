@@ -16,8 +16,30 @@
   "qualityScore": 0.8,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:constraint-solver",
+        "label": "Constraint Solver"
+      },
+      {
+        "id": "urn:ngm:class:parametric-history-tree",
+        "label": "Parametric History Tree"
+      },
+      {
+        "id": "urn:ngm:class:geometric-kernel",
+        "label": "Geometric Kernel"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:nurbs-geometry",
+        "label": "NURBS Geometry"
+      },
+      {
+        "id": "urn:ngm:class:boundary-representation",
+        "label": "Boundary Representation"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:parametric-design-methodology-modeling",
@@ -30,20 +52,86 @@
       {
         "id": "urn:ngm:class:product-design",
         "label": "Product Design"
+      },
+      {
+        "id": "urn:ngm:class:finite-element-analysis",
+        "label": "Finite Element Analysis"
+      },
+      {
+        "id": "urn:ngm:class:generative-design",
+        "label": "Generative Design"
+      },
+      {
+        "id": "urn:ngm:class:additive-manufacturing",
+        "label": "Additive Manufacturing"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:geometric-kernel",
+        "label": "Geometric Kernel"
+      },
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:constructive-solid-geometry",
+        "label": "Constructive Solid Geometry"
+      },
+      {
+        "id": "urn:ngm:class:parametric-constraint-solving",
+        "label": "Parametric Constraint Solving"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:manual-drafting",
+        "label": "Manual Drafting"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:building-information-modeling",
+        "label": "Building Information Modeling"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:mesh-data",
         "label": "Mesh Data"
+      },
+      {
+        "id": "urn:ngm:class:step-file-format",
+        "label": "STEP File Format"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:simulation-driven-design",
+        "label": "Simulation-Driven Design"
+      },
+      {
+        "id": "urn:ngm:class:cnc-machining",
+        "label": "CNC Machining"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-10303-step",
+        "label": "ISO 10303 STEP"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -51,8 +139,8 @@
         "label": "Manufacturing Automation"
       },
       {
-        "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twin"
+        "id": "urn:ngm:class:electronic-design-automation",
+        "label": "Electronic Design Automation"
       }
     ]
   },

@@ -4,7 +4,7 @@
   "slug": "hamiltonian-monte-carlo",
   "public": true,
   "classIri": "urn:ngm:class:hamiltonian-monte-carlo",
-  "domain": "ai",
+  "domain": "machine-learning",
   "definition": "Hamiltonian Monte Carlo (HMC) is a Markov chain Monte Carlo sampling algorithm that uses Hamiltonian dynamics to generate distant, low-autocorrelation proposals in high-dimensional parameter spaces. By treating the negative log-posterior as a potential energy and augmenting with auxiliary momentum variables, HMC can traverse the posterior landscape far more efficiently than random-walk Metropolis methods.",
   "subClassOf": [
     {
@@ -13,30 +13,112 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:leapfrog-integrator",
+        "label": "Leapfrog Integrator"
+      },
+      {
+        "id": "urn:ngm:class:metropolis-hastings",
+        "label": "Metropolis-Hastings"
+      },
+      {
+        "id": "urn:ngm:class:no-u-turn-sampler",
+        "label": "No-U-Turn Sampler"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      },
+      {
+        "id": "urn:ngm:class:gradient-computation",
+        "label": "Gradient Computation"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:bayesian-optimisation",
         "label": "Bayesian Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:posterior-inference",
+        "label": "Posterior Inference"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "id": "urn:ngm:class:hierarchical-modelling",
+        "label": "Hierarchical Modelling"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:detailed-balance",
+        "label": "Detailed Balance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "id": "urn:ngm:class:random-walk-metropolis",
+        "label": "Random Walk Metropolis"
+      },
+      {
+        "id": "urn:ngm:class:gibbs-sampling",
+        "label": "Gibbs Sampling"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:molecular-dynamics",
+        "label": "Molecular Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:quantum-field-theory",
+        "label": "Quantum Field Theory"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:gaussian-distribution",
         "label": "Gaussian Distribution"
+      },
+      {
+        "id": "urn:ngm:class:hamiltonian-dynamics",
+        "label": "Hamiltonian Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:phase-space",
+        "label": "Phase Space"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-programming",
+        "label": "Probabilistic Programming"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:gaussian-process",
@@ -49,6 +131,18 @@
       {
         "id": "urn:ngm:class:inference-algorithm",
         "label": "Inference Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:stan-language",
+        "label": "Stan Language"
+      },
+      {
+        "id": "urn:ngm:class:normalising-flow",
+        "label": "Normalising Flow"
+      },
+      {
+        "id": "urn:ngm:class:riemannian-manifold",
+        "label": "Riemannian Manifold"
       }
     ]
   },

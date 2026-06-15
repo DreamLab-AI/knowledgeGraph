@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:sequence-node",
+        "label": "Sequence Node"
+      },
+      {
+        "id": "urn:ngm:class:selector-node",
+        "label": "Selector Node"
+      },
+      {
+        "id": "urn:ngm:class:decorator-node",
+        "label": "Decorator Node"
+      },
+      {
+        "id": "urn:ngm:class:blackboard",
+        "label": "Blackboard"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:autonomous-agent",
@@ -26,17 +48,38 @@
       {
         "id": "urn:ngm:class:npc-interaction",
         "label": "NPC Interaction"
+      },
+      {
+        "id": "urn:ngm:class:robot-mission-execution",
+        "label": "Robot Mission Execution"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:state-machine-replication",
-        "label": "State Machine Replication"
+        "id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      },
+      {
+        "id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite State Machine"
+      },
+      {
+        "id": "urn:ngm:class:hierarchical-task-network",
+        "label": "Hierarchical Task Network"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:pathfinding-algorithm",
@@ -45,6 +88,10 @@
       {
         "id": "urn:ngm:class:ai-agents",
         "label": "AI Agents"
+      },
+      {
+        "id": "urn:ngm:class:goal-oriented-action-planning",
+        "label": "Goal-Oriented Action Planning"
       }
     ],
     "supports": [
@@ -55,15 +102,15 @@
       {
         "id": "urn:ngm:class:game-development",
         "label": "Game Development"
+      },
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
       }
     ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:state-machine",
-        "label": "State Machine"
-      },
       {
         "id": "urn:ngm:class:intelligent-npc",
         "label": "Intelligent NPC"
@@ -71,6 +118,14 @@
       {
         "id": "urn:ngm:class:ai-game-agent",
         "label": "AI Game Agent"
+      },
+      {
+        "id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      },
+      {
+        "id": "urn:ngm:class:teleo-reactive-program",
+        "label": "Teleo-Reactive Program"
       }
     ]
   },

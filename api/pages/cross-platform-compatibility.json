@@ -16,8 +16,26 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:runtime-abstraction",
+        "label": "Runtime Abstraction"
+      },
+      {
+        "id": "urn:ngm:class:platform-shim",
+        "label": "Platform Shim"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:api-standardisation",
+        "label": "API Standardisation"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:portability",
@@ -26,12 +44,43 @@
       {
         "id": "urn:ngm:class:cross-platform-identity",
         "label": "Cross-Platform Identity"
+      },
+      {
+        "id": "urn:ngm:class:multi-platform-deployment",
+        "label": "Multi-Platform Deployment"
+      },
+      {
+        "id": "urn:ngm:class:vendor-neutrality",
+        "label": "Vendor Neutrality"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:webassembly",
+        "label": "WebAssembly"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:vendor-lock-in",
+        "label": "Vendor Lock-In"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:open-standard",
@@ -40,15 +89,36 @@
       {
         "id": "urn:ngm:class:compatibility-process",
         "label": "Compatibility Process"
+      },
+      {
+        "id": "urn:ngm:class:abstraction-layer",
+        "label": "Abstraction Layer"
+      },
+      {
+        "id": "urn:ngm:class:conformance-testing",
+        "label": "Conformance Testing"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:accessibility",
         "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -62,6 +132,14 @@
       {
         "id": "urn:ngm:class:interoperability-standard",
         "label": "Interoperability Standard"
+      },
+      {
+        "id": "urn:ngm:class:platform-fragmentation",
+        "label": "Platform Fragmentation"
+      },
+      {
+        "id": "urn:ngm:class:software-portability",
+        "label": "Software Portability"
       }
     ]
   },

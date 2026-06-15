@@ -56,26 +56,58 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:image-sensor", "label": "Image Sensor"},
+      {"@id": "urn:ngm:class:lens", "label": "Lens"},
+      {"@id": "urn:ngm:class:baseline", "label": "Baseline"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:robot-perception-system", "label": "Robot Perception System"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"},
+      {"@id": "urn:ngm:class:stereo-rectification", "label": "Stereo Rectification"},
+      {"@id": "urn:ngm:class:image-synchronisation", "label": "Image Synchronisation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
+      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
+      {"@id": "urn:ngm:class:spatial-mapping", "label": "Spatial Mapping"},
+      {"@id": "urn:ngm:class:obstacle-avoidance", "label": "Obstacle Avoidance"},
+      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:disparity-map", "label": "Disparity Map"},
+      {"@id": "urn:ngm:class:epipolar-geometry", "label": "Epipolar Geometry"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:stereo-vision", "label": "Stereo Vision"},
+      {"@id": "urn:ngm:class:triangulation", "label": "Triangulation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:camera-parameters", "label": "Camera Parameters"},
+      {"@id": "urn:ngm:class:stereo-matching-algorithm", "label": "Stereo Matching Algorithm"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:lidar", "label": "LiDAR"},
+      {"@id": "urn:ngm:class:time-of-flight-camera", "label": "Time-of-Flight Camera"}
+    ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:camera", "label": "Camera"}
+      {"@id": "urn:ngm:class:camera", "label": "Camera"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:monocular-camera", "label": "Monocular Camera"},
       {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
       {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:visual-odometry", "label": "Visual Odometry"},
-      {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"}
-    ],
-    "enables": [
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
-      {"@id": "urn:ngm:class:spatial-mapping", "label": "Spatial Mapping"}
-    ],
-    "uses": [
-      {"@id": "urn:ngm:class:camera-parameters", "label": "Camera Parameters"}
+      {"@id": "urn:ngm:class:visual-odometry", "label": "Visual Odometry"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:binocular-camera", "label": "Binocular Camera"},
+    {"@id": "urn:ngm:class:stereo-vision-camera", "label": "Stereo Vision Camera"}
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

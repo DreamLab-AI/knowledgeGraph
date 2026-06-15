@@ -17,7 +17,16 @@
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptocurrency-wallet",
+        "label": "Cryptocurrency Wallet"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:open-source-development",
@@ -30,12 +39,56 @@
       {
         "id": "urn:ngm:class:retroactive-public-goods-funding",
         "label": "Retroactive Public Goods Funding"
+      },
+      {
+        "id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:matching-funds",
+        "label": "Matching Funds"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-funding",
+        "label": "Decentralized Funding"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:venture-capital",
+        "label": "Venture Capital"
+      },
+      {
+        "id": "urn:ngm:class:centralized-grant-making",
+        "label": "Centralized Grant Making"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:quadratic-funding",
@@ -52,9 +105,22 @@
       {
         "id": "urn:ngm:class:sybil-resistance",
         "label": "Sybil Resistance"
+      },
+      {
+        "id": "urn:ngm:class:allo-protocol",
+        "label": "Allo Protocol"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:developer-ecosystem",
+        "label": "Developer Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-ecosystem",
+        "label": "Ethereum Ecosystem"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -69,6 +135,10 @@
       {
         "id": "urn:ngm:class:decentralized-autonomous-organization",
         "label": "Decentralized Autonomous Organization"
+      },
+      {
+        "id": "urn:ngm:class:crowdfunding",
+        "label": "Crowdfunding"
       }
     ]
   },

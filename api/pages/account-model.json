@@ -24,7 +24,20 @@
   "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:account-balance",
+        "label": "Account Balance"
+      },
+      {
+        "id": "urn:ngm:class:account-nonce",
+        "label": "Account Nonce"
+      },
+      {
+        "id": "urn:ngm:class:contract-storage",
+        "label": "Contract Storage"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:transaction",
@@ -33,6 +46,14 @@
       {
         "id": "urn:ngm:class:wallet",
         "label": "Wallet"
+      },
+      {
+        "id": "urn:ngm:class:nonce",
+        "label": "Nonce"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
       }
     ],
     "enables": [
@@ -43,19 +64,59 @@
       {
         "id": "urn:ngm:class:transaction-processing",
         "label": "Transaction Processing"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:merkle-patricia-trie",
+        "label": "Merkle Patricia Trie"
+      },
+      {
+        "id": "urn:ngm:class:state-root",
+        "label": "State Root"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ledger-model",
+        "label": "Ledger Model"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:utxo-model",
         "label": "UTXO Model"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:reentrancy-protection",
+        "label": "Reentrancy Protection"
+      },
+      {
+        "id": "urn:ngm:class:gas-mechanism",
+        "label": "Gas Mechanism"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [
       {
@@ -83,6 +144,10 @@
       {
         "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:externally-owned-account",
+        "label": "Externally Owned Account"
       }
     ]
   },

@@ -53,7 +53,7 @@ public:: true
   "definition": "The collaborative technology and innovation ecosystem spanning Manchester, Leeds, Liverpool, Sheffield, and Newcastle that constitutes the Northern Powerhouse. The corridor links world-class research universities, NHS trusts, advanced manufacturing facilities, and digital startups through coordinated investment, shared infrastructure, and regional development frameworks aimed at closing the productivity gap between North and South England.",
   "domain": "infrastructure",
   "maturity": "established",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
@@ -69,17 +69,50 @@ public:: true
       {"@id": "urn:ngm:class:newcastle-ai-and-health-innovation", "label": "Newcastle AI & Health Innovation"}
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:uk-tech-ecosystem", "label": "UK Tech Ecosystem"}
+      {"@id": "urn:ngm:class:uk-tech-ecosystem", "label": "UK Tech Ecosystem"},
+      {"@id": "urn:ngm:class:northern-powerhouse", "label": "Northern Powerhouse"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"},
+      {"@id": "urn:ngm:class:transport-connectivity", "label": "Transport Connectivity"},
+      {"@id": "urn:ngm:class:broadband-network", "label": "Broadband Network"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:regional-economic-development", "label": "Regional Economic Development"},
+      {"@id": "urn:ngm:class:technology-transfer", "label": "Technology Transfer"},
+      {"@id": "urn:ngm:class:startup-ecosystem", "label": "Startup Ecosystem"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:research-university", "label": "Research University"},
+      {"@id": "urn:ngm:class:public-investment", "label": "Public Investment"},
+      {"@id": "urn:ngm:class:nhs-digital-transformation", "label": "NHS Digital Transformation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:smart-city-platform", "label": "Smart City Platform"},
+      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:advanced-manufacturing", "label": "Advanced Manufacturing"},
+      {"@id": "urn:ngm:class:health-innovation", "label": "Health Innovation"},
+      {"@id": "urn:ngm:class:fintech", "label": "Fintech"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:digital-economy", "label": "Digital Economy"},
-      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"}
+      {"@id": "urn:ngm:class:productivity-gap", "label": "Productivity Gap"},
+      {"@id": "urn:ngm:class:uk-industrial-strategy", "label": "UK Industrial Strategy"}
     ]
   },
+  "sameAs": [
+    {"@id": "urn:ngm:class:northern-powerhouse-innovation-network", "label": "Northern Powerhouse Innovation Network"}
+  ],
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

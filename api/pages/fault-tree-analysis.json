@@ -13,29 +13,124 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:minimal-cut-set",
+        "label": "Minimal Cut Set"
+      },
+      {
+        "id": "urn:ngm:class:boolean-logic-gate",
+        "label": "Boolean Logic Gate"
+      },
+      {
+        "id": "urn:ngm:class:basic-event",
+        "label": "Basic Event"
+      },
+      {
+        "id": "urn:ngm:class:top-event",
+        "label": "Top Event"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:system-model",
+        "label": "System Model"
+      },
+      {
+        "id": "urn:ngm:class:failure-probability-data",
+        "label": "Failure Probability Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:safety-certification",
+        "label": "Safety Certification"
+      },
+      {
+        "id": "urn:ngm:class:single-point-of-failure-detection",
+        "label": "Single Point of Failure Detection"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-risk-assessment",
+        "label": "Probabilistic Risk Assessment"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:failure-mode-and-effects-analysis",
+        "label": "Failure Mode and Effects Analysis"
+      },
+      {
+        "id": "urn:ngm:class:event-tree-analysis",
+        "label": "Event Tree Analysis"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:boolean-algebra",
+        "label": "Boolean Algebra"
+      },
+      {
+        "id": "urn:ngm:class:deductive-reasoning",
+        "label": "Deductive Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:reliability-block-diagram",
+        "label": "Reliability Block Diagram"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:reliability-engineering",
         "label": "Reliability Engineering"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:system-safety",
+        "label": "System Safety"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iec-61025",
+        "label": "IEC 61025"
+      },
+      {
+        "id": "urn:ngm:class:mil-std-882",
+        "label": "MIL-STD-882"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:safety-evaluation",
         "label": "Safety Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:common-cause-failure",
+        "label": "Common Cause Failure"
+      },
+      {
+        "id": "urn:ngm:class:hazard-analysis",
+        "label": "Hazard Analysis"
       }
     ]
   },

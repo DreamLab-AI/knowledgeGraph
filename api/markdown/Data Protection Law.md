@@ -65,10 +65,42 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:ccpa",
+        "label": "CCPA"
+      },
+      {
+        "@id": "urn:ngm:class:data-subject-rights",
+        "label": "Data Subject Rights"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:data-protection",
         "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
       }
     ],
     "enables": [
@@ -79,14 +111,104 @@ public:: true
       {
         "@id": "urn:ngm:class:data-privacy",
         "label": "Data Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:personal-data",
+        "label": "Personal Data"
+      },
+      {
+        "@id": "urn:ngm:class:data-controller",
+        "label": "Data Controller"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy by Design"
+      },
+      {
+        "@id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:data-breach-notification",
+        "label": "Data Breach Notification"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection-impact-assessment",
+        "label": "Data Protection Impact Assessment"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-27701",
+        "label": "ISO 27701"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:surveillance-capitalism",
+        "label": "Surveillance Capitalism"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:right-to-be-forgotten",
+        "label": "Right to be Forgotten"
+      },
+      {
+        "@id": "urn:ngm:class:data-portability",
+        "label": "Data Portability"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:data-privacy-law",
+      "label": "Data Privacy Law"
+    },
+    {
+      "@id": "urn:ngm:class:privacy-law",
+      "label": "Privacy Law"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

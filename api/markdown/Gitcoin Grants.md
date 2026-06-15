@@ -29,18 +29,54 @@ public:: true
       {"@id": "urn:ngm:class:quadratic-funding", "label": "Quadratic Funding"},
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
       {"@id": "urn:ngm:class:gitcoin-passport", "label": "Gitcoin Passport"},
-      {"@id": "urn:ngm:class:sybil-resistance", "label": "Sybil Resistance"}
+      {"@id": "urn:ngm:class:sybil-resistance", "label": "Sybil Resistance"},
+      {"@id": "urn:ngm:class:allo-protocol", "label": "Allo Protocol"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:open-source-development", "label": "Open Source Development"},
       {"@id": "urn:ngm:class:dao", "label": "DAO"},
-      {"@id": "urn:ngm:class:retroactive-public-goods-funding", "label": "Retroactive Public Goods Funding"}
+      {"@id": "urn:ngm:class:retroactive-public-goods-funding", "label": "Retroactive Public Goods Funding"},
+      {"@id": "urn:ngm:class:community-governance", "label": "Community Governance"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:matching-funds", "label": "Matching Funds"},
+      {"@id": "urn:ngm:class:decentralized-funding", "label": "Decentralized Funding"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:cryptocurrency-wallet", "label": "Cryptocurrency Wallet"},
+      {"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
+      {"@id": "urn:ngm:class:decentralized-finance", "label": "Decentralized Finance"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:developer-ecosystem", "label": "Developer Ecosystem"},
+      {"@id": "urn:ngm:class:ethereum-ecosystem", "label": "Ethereum Ecosystem"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:venture-capital", "label": "Venture Capital"},
+      {"@id": "urn:ngm:class:centralized-grant-making", "label": "Centralized Grant Making"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:governance", "label": "Governance"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:gitcoin", "label": "Gitcoin"},
       {"@id": "urn:ngm:class:web3", "label": "Web3"},
-      {"@id": "urn:ngm:class:decentralized-autonomous-organization", "label": "Decentralized Autonomous Organization"}
+      {"@id": "urn:ngm:class:decentralized-autonomous-organization", "label": "Decentralized Autonomous Organization"},
+      {"@id": "urn:ngm:class:crowdfunding", "label": "Crowdfunding"}
     ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:gitcoin-grant-rounds", "label": "Gitcoin Grant Rounds"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "quality": 0.8
 }

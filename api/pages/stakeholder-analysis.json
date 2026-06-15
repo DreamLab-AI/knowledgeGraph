@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:power-interest-grid",
+        "label": "Power-Interest Grid"
+      },
+      {
+        "id": "urn:ngm:class:influence-mapping",
+        "label": "Influence Mapping"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-register",
+        "label": "Stakeholder Register"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:requirements-engineering",
+        "label": "Requirements Engineering"
+      },
+      {
+        "id": "urn:ngm:class:impact-assessment",
+        "label": "Impact Assessment"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:ai-impact-assessment",
@@ -30,13 +52,40 @@
       {
         "id": "urn:ngm:class:stakeholder-engagement-in-ai",
         "label": "Stakeholder Engagement in AI"
+      },
+      {
+        "id": "urn:ngm:class:change-management",
+        "label": "Change Management"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:expert-elicitation",
+        "label": "Expert Elicitation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:fundamental-rights-impact-assessment",
+        "label": "Fundamental Rights Impact Assessment"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:social-network-analysis",
+        "label": "Social Network Analysis"
+      },
+      {
+        "id": "urn:ngm:class:consultation-process",
+        "label": "Consultation Process"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:participatory-policy-making",
@@ -45,6 +94,10 @@
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ],
     "standardizedBy": [],
@@ -61,6 +114,14 @@
       {
         "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-theory",
+        "label": "Stakeholder Theory"
+      },
+      {
+        "id": "urn:ngm:class:conflict-of-interest",
+        "label": "Conflict of Interest"
       }
     ]
   },

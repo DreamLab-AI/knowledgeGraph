@@ -21,16 +21,66 @@ public:: true
   "@type": "Class",
   "label": "Information Asymmetry",
   "definition": "Information asymmetry is a condition in which one party to a transaction or interaction possesses more or better information than another, distorting decisions and market outcomes. It gives rise to adverse selection and moral hazard, and motivates institutions such as signalling, screening, disclosure rules, and reputation systems. It is a foundational concept in microeconomics and is increasingly relevant to AI systems whose training data and outputs can encode hidden biases.",
-  "domain": "governance",
+  "domain": "finance",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"}],
   "relations": {
-    "relatedTo": [
+    "hasPart": [
+      {"@id": "urn:ngm:class:adverse-selection", "label": "Adverse Selection"},
+      {"@id": "urn:ngm:class:moral-hazard", "label": "Moral Hazard"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:signalling", "label": "Signalling"},
+      {"@id": "urn:ngm:class:screening", "label": "Screening"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:market-failure", "label": "Market Failure"},
+      {"@id": "urn:ngm:class:principal-agent-problem", "label": "Principal-Agent Problem"}
+    ],
+    "dependsOn": [
       {"@id": "urn:ngm:class:economics", "label": "Economics"},
-      {"@id": "urn:ngm:class:bias-in-large-language-models", "label": "Bias in Large Language Models"}
+      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:disclosure-regulation", "label": "Disclosure Regulation"},
+      {"@id": "urn:ngm:class:reputation-system", "label": "Reputation System"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"},
+      {"@id": "urn:ngm:class:auction-theory", "label": "Auction Theory"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:contract-theory", "label": "Contract Theory"},
+      {"@id": "urn:ngm:class:market-microstructure", "label": "Market Microstructure"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:perfect-information", "label": "Perfect Information"},
+      {"@id": "urn:ngm:class:efficient-market-hypothesis", "label": "Efficient Market Hypothesis"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:bias-in-large-language-models", "label": "Bias in Large Language Models"},
+      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:decentralized-oracle", "label": "Decentralized Oracle"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:transaction-cost-economics", "label": "Transaction Cost Economics"},
+      {"@id": "urn:ngm:class:information-economics", "label": "Information Economics"},
+      {"@id": "urn:ngm:class:trust", "label": "Trust"},
+      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
     ]
   },
-  "quality": 0.72
+  "sameAs": [
+    {"@id": "urn:ngm:class:informational-asymmetry", "label": "Informational Asymmetry"},
+    {"@id": "urn:ngm:class:knowledge-gap", "label": "Knowledge Gap"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

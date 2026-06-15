@@ -30,21 +30,56 @@ alias:: RoboticControl
       {"@id": "urn:ngm:class:pid-control", "label": "PID Control"},
       {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
       {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"},
-      {"@id": "urn:ngm:class:force-control", "label": "Force Control"}
+      {"@id": "urn:ngm:class:force-control", "label": "Force Control"},
+      {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"},
+      {"@id": "urn:ngm:class:model-predictive-control", "label": "Model Predictive Control"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:torque-control", "label": "Torque Control"},
       {"@id": "urn:ngm:class:adaptive-control", "label": "Adaptive Control"},
       {"@id": "urn:ngm:class:optimal-control", "label": "Optimal Control"},
-      {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"}
+      {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"},
+      {"@id": "urn:ngm:class:impedance-control", "label": "Impedance Control"},
+      {"@id": "urn:ngm:class:visual-servoing", "label": "Visual Servoing"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
       {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"},
-      {"@id": "urn:ngm:class:multi-robot-systems", "label": "Multi-Robot Systems"}
+      {"@id": "urn:ngm:class:multi-robot-systems", "label": "Multi-Robot Systems"},
+      {"@id": "urn:ngm:class:robot-manipulation", "label": "Robot Manipulation"},
+      {"@id": "urn:ngm:class:robot-locomotion", "label": "Robot Locomotion"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"},
+      {"@id": "urn:ngm:class:robot-dynamics", "label": "Robot Dynamics"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:actuator", "label": "Actuator"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
+      {"@id": "urn:ngm:class:trajectory-planning", "label": "Trajectory Planning"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:real-time-computing", "label": "Real-Time Computing"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"},
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:robot-control-systems", "label": "Robot Control Systems"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

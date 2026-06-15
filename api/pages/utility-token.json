@@ -17,11 +17,20 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:decentralised-ledger",
+        "label": "Decentralised Ledger"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
@@ -30,6 +39,14 @@
       {
         "id": "urn:ngm:class:blockchain-application",
         "label": "Blockchain Application"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:protocol-incentive",
+        "label": "Protocol Incentive"
       }
     ],
     "dependsOn": [],
@@ -38,9 +55,26 @@
       {
         "id": "urn:ngm:class:nft",
         "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      },
+      {
+        "id": "urn:ngm:class:incentive-mechanism",
+        "label": "Incentive Mechanism"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:blockchain",
@@ -49,11 +83,24 @@
       {
         "id": "urn:ngm:class:blockchain-transaction",
         "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:governance-token",
@@ -74,6 +121,18 @@
       {
         "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:initial-coin-offering",
+        "label": "Initial Coin Offering"
+      },
+      {
+        "id": "urn:ngm:class:protocol-economy",
+        "label": "Protocol Economy"
       }
     ]
   },

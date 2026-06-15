@@ -29,18 +29,54 @@ public:: true
       {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
       {"@id": "urn:ngm:class:verifiable-credential-standard", "label": "Verifiable Credential Standard"},
       {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"},
-      {"@id": "urn:ngm:class:digital-certificate", "label": "Digital Certificate"}
+      {"@id": "urn:ngm:class:digital-certificate", "label": "Digital Certificate"},
+      {"@id": "urn:ngm:class:certificate-transparency", "label": "Certificate Transparency"},
+      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
+      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"},
-      {"@id": "urn:ngm:class:selective-disclosure", "label": "Selective Disclosure"}
+      {"@id": "urn:ngm:class:selective-disclosure", "label": "Selective Disclosure"},
+      {"@id": "urn:ngm:class:cryptographic-accumulator", "label": "Cryptographic Accumulator"},
+      {"@id": "urn:ngm:class:bitstring-status-list", "label": "Bitstring Status List"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"},
-      {"@id": "urn:ngm:class:credential-issuance", "label": "Credential Issuance"}
+      {"@id": "urn:ngm:class:credential-issuance", "label": "Credential Issuance"},
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
+      {"@id": "urn:ngm:class:trust-management", "label": "Trust Management"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:ocsp-protocol", "label": "OCSP Protocol"},
+      {"@id": "urn:ngm:class:certificate-revocation-list", "label": "Certificate Revocation List"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:privacy-preserving-protocol", "label": "Privacy-Preserving Protocol"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:credential-expiry", "label": "Credential Expiry"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:credential-status-registry", "label": "Credential Status Registry"},
+    {"@id": "urn:ngm:class:credential-revocation-list", "label": "Credential Revocation List"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

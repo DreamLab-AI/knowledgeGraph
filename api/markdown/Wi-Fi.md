@@ -58,7 +58,7 @@ public:: true
   "@id": "urn:ngm:class:wi-fi",
   "@type": "Class",
   "label": "Wi-Fi",
-  "definition": "Wi-Fi is a family of wireless networking technologies based on the IEEE 802.11 standards that allow devices to connect to a local area network and the internet. It is managed by the Wi-Fi Alliance.",
+  "definition": "Wi-Fi is a family of wireless networking technologies based on the IEEE 802.11 standards that allow devices to connect to a local area network and the internet without physical cabling. It is governed and certified by the Wi-Fi Alliance and operates primarily in the 2.4 GHz, 5 GHz, and 6 GHz radio bands.",
   "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -77,14 +77,128 @@ public:: true
       {
         "@id": "urn:ngm:class:network-communication",
         "label": "Network Communication"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-local-area-network",
+        "label": "Wireless Local Area Network"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-broadband",
+        "label": "Mobile Broadband"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:wireless-access-point",
+        "label": "Wireless Access Point"
+      },
+      {
+        "@id": "urn:ngm:class:radio-frequency-spectrum",
+        "label": "Radio Frequency Spectrum"
+      },
+      {
+        "@id": "urn:ngm:class:network-interface-controller",
+        "label": "Network Interface Controller"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:ieee-802-11",
+        "label": "IEEE 802.11"
+      },
+      {
+        "@id": "urn:ngm:class:wpa3",
+        "label": "WPA3"
+      },
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:wi-fi-alliance",
+        "label": "Wi-Fi Alliance"
+      },
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:orthogonal-frequency-division-multiplexing",
+        "label": "Orthogonal Frequency-Division Multiplexing"
+      },
+      {
+        "@id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:smart-home",
+        "label": "Smart Home"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:bluetooth",
+        "label": "Bluetooth"
+      },
+      {
+        "@id": "urn:ngm:class:5g",
+        "label": "5G"
+      },
+      {
+        "@id": "urn:ngm:class:ethernet",
+        "label": "Ethernet"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:mesh-network",
+        "label": "Mesh Network"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:wireless-fidelity",
+      "label": "Wireless Fidelity"
+    },
+    {
+      "@id": "urn:ngm:class:ieee-802-11-wireless-networking",
+      "label": "IEEE 802.11 Wireless Networking"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

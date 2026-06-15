@@ -54,7 +54,7 @@ public:: true
   "@id": "urn:ngm:class:federation",
   "@type": "Class",
   "label": "Federation",
-  "definition": "An architecture in which autonomous systems or organisations interoperate through agreed protocols and trust relationships while retaining independent control of their own resources.",
+  "definition": "An architecture in which autonomous systems or organisations interoperate through agreed protocols and trust relationships while retaining independent control of their own resources, enabling cross-domain data and service exchange without centralised authority.",
   "domain": "distributed-systems",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -73,20 +73,132 @@ public:: true
       {
         "@id": "urn:ngm:class:authentication",
         "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:interoperability",
         "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-domain-authentication",
+        "label": "Cross-Domain Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:federation-protocol",
+        "label": "Federation Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:trust-anchor",
+        "label": "Trust Anchor"
+      },
+      {
+        "@id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:saml",
+        "label": "SAML"
+      },
+      {
+        "@id": "urn:ngm:class:openid-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "@id": "urn:ngm:class:oauth2",
+        "label": "OAuth2"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:directory-service",
+        "label": "Directory Service"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:multi-tenancy",
+        "label": "Multi-Tenancy"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:centralised-authentication",
+        "label": "Centralised Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:siloed-system",
+        "label": "Siloed System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:federated-identity",
+      "label": "Federated Identity"
+    },
+    {
+      "@id": "urn:ngm:class:identity-federation",
+      "label": "Identity Federation"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

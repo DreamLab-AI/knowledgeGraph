@@ -4,7 +4,7 @@
   "slug": "object-recognition",
   "public": true,
   "classIri": "urn:ngm:class:object-recognition",
-  "domain": "ai",
+  "domain": "artificial-intelligence",
   "definition": "Object recognition is a computer vision task that involves identifying and localising instances of predefined object categories within images or video streams, producing class labels, bounding boxes, segmentation masks, or pose estimates depending on the task variant. It subsumes tasks including image classification, object detection, semantic segmentation, and instance segmentation, and has become a core capability of autonomous systems, augmented reality, and content understanding pipelines. Modern approaches are dominated by deep convolutional and transformer-based architectures trained on large annotated datasets.",
   "subClassOf": [
     {
@@ -13,11 +13,29 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:bounding-box-regression",
+        "label": "Bounding Box Regression"
+      },
+      {
+        "id": "urn:ngm:class:non-maximum-suppression",
+        "label": "Non-Maximum Suppression"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:annotated-dataset",
+        "label": "Annotated Dataset"
+      },
+      {
+        "id": "urn:ngm:class:ground-truth-labelling",
+        "label": "Ground Truth Labelling"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:autonomous-driving",
@@ -30,12 +48,34 @@
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:visual-question-answering",
+        "label": "Visual Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:convolutional-neural-network",
@@ -48,6 +88,18 @@
       {
         "id": "urn:ngm:class:feature-extraction",
         "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
       }
     ],
     "supports": [],
@@ -69,6 +121,14 @@
       {
         "id": "urn:ngm:class:pattern-recognition",
         "label": "Pattern Recognition"
+      },
+      {
+        "id": "urn:ngm:class:remote-sensing",
+        "label": "Remote Sensing"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
       }
     ]
   },

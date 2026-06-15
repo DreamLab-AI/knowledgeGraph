@@ -13,11 +13,20 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-meter",
+        "label": "Smart Meter"
+      },
+      {
+        "id": "urn:ngm:class:grid-communication-protocol",
+        "label": "Grid Communication Protocol"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:power-efficient-ai",
@@ -26,12 +35,47 @@
       {
         "id": "urn:ngm:class:renewable-energy-certificates",
         "label": "Renewable Energy Certificates"
+      },
+      {
+        "id": "urn:ngm:class:grid-stability",
+        "label": "Grid Stability"
+      },
+      {
+        "id": "urn:ngm:class:vehicle-to-grid",
+        "label": "Vehicle to Grid"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "id": "urn:ngm:class:energy-aggregator",
+        "label": "Energy Aggregator"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:peaking-power-plant",
+        "label": "Peaking Power Plant"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:io-t-sensor-network",
@@ -40,12 +84,32 @@
       {
         "id": "urn:ngm:class:io-t-ai-integration",
         "label": "IoT AI Integration"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:real-time-pricing",
+        "label": "Real-Time Pricing"
+      },
+      {
+        "id": "urn:ngm:class:advanced-metering-infrastructure",
+        "label": "Advanced Metering Infrastructure"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:machine-to-machine-payments",
         "label": "Machine to Machine Payments"
+      },
+      {
+        "id": "urn:ngm:class:renewable-energy-integration",
+        "label": "Renewable Energy Integration"
+      },
+      {
+        "id": "urn:ngm:class:carbon-emissions-reduction",
+        "label": "Carbon Emissions Reduction"
       }
     ],
     "standardizedBy": [],
@@ -62,6 +126,22 @@
       {
         "id": "urn:ngm:class:industrial-io-t",
         "label": "Industrial IoT"
+      },
+      {
+        "id": "urn:ngm:class:virtual-power-plant",
+        "label": "Virtual Power Plant"
+      },
+      {
+        "id": "urn:ngm:class:electricity-market",
+        "label": "Electricity Market"
+      },
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      },
+      {
+        "id": "urn:ngm:class:peak-load-management",
+        "label": "Peak Load Management"
       }
     ]
   },

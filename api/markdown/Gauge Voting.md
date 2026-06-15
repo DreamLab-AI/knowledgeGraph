@@ -54,7 +54,7 @@ public:: true
   "@id": "urn:ngm:class:gauge-voting",
   "@type": "Class",
   "label": "Gauge Voting",
-  "definition": "Gauge voting is a mechanism in protocols such as Curve where token holders allocate weights to liquidity pools, determining how reward emissions are distributed. Voting power is usually tied to time-locked governance tokens.",
+  "definition": "Gauge voting is a mechanism in DeFi protocols such as Curve where token holders allocate weights to liquidity pool gauges, determining how reward emissions are distributed across pools each epoch. Voting power is typically proportional to vote-escrowed (veToken) balances, creating direct economic incentives for bribe markets and liquidity direction.",
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -69,6 +69,14 @@ public:: true
       {
         "@id": "urn:ngm:class:curve-finance",
         "label": "Curve Finance"
+      },
+      {
+        "@id": "urn:ngm:class:vote-escrow",
+        "label": "Vote Escrow"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
       }
     ],
     "enables": [
@@ -79,14 +87,114 @@ public:: true
       {
         "@id": "urn:ngm:class:hidden-hand",
         "label": "Hidden Hand"
+      },
+      {
+        "@id": "urn:ngm:class:bribe-market",
+        "label": "Bribe Market"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-direction",
+        "label": "Liquidity Direction"
+      },
+      {
+        "@id": "urn:ngm:class:emission-distribution",
+        "label": "Emission Distribution"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:liquidity-gauge",
+        "label": "Liquidity Gauge"
+      },
+      {
+        "@id": "urn:ngm:class:epoch",
+        "label": "Epoch"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:vetoken",
+        "label": "veToken"
+      },
+      {
+        "@id": "urn:ngm:class:token-locking",
+        "label": "Token Locking"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:vote-weight-allocation",
+        "label": "Vote Weight Allocation"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:direct-governance-vote",
+        "label": "Direct Governance Vote"
+      },
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:curve-wars",
+        "label": "Curve Wars"
+      },
+      {
+        "@id": "urn:ngm:class:convex-finance",
+        "label": "Convex Finance"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-owned-liquidity",
+        "label": "Protocol-Owned Liquidity"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:gauge-weight-voting",
+      "label": "Gauge Weight Voting"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

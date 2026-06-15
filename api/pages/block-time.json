@@ -24,7 +24,16 @@
   "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:difficulty-adjustment-algorithm",
+        "label": "Difficulty Adjustment Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:block-interval",
+        "label": "Block Interval"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:consensus-mechanism",
@@ -33,6 +42,14 @@
       {
         "id": "urn:ngm:class:block-propagation",
         "label": "Block Propagation"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:hash-rate",
+        "label": "Hash Rate"
       }
     ],
     "enables": [
@@ -43,24 +60,94 @@
       {
         "id": "urn:ngm:class:transaction-finality",
         "label": "Transaction Finality"
+      },
+      {
+        "id": "urn:ngm:class:network-throughput",
+        "label": "Network Throughput"
+      },
+      {
+        "id": "urn:ngm:class:uncle-block",
+        "label": "Uncle Block"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-latency",
+        "label": "Network Latency"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:blockchain-scalability",
         "label": "Blockchain Scalability"
+      },
+      {
+        "id": "urn:ngm:class:block-size",
+        "label": "Block Size"
       }
     ],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-energy-optimisation",
+        "label": "AI Energy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:chain-security",
+        "label": "Chain Security"
+      },
+      {
+        "id": "urn:ngm:class:double-spend-prevention",
+        "label": "Double Spend Prevention"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-23257",
+        "label": "ISO/IEC 23257"
+      },
+      {
+        "id": "urn:ngm:class:ieee-2418-1",
+        "label": "IEEE 2418.1"
+      }
+    ],
     "partOf": [
       {
         "id": "urn:ngm:class:blockchain-protocol",
         "label": "Blockchain Protocol"
+      },
+      {
+        "id": "urn:ngm:class:network-synchrony-model",
+        "label": "Network Synchrony Model"
       }
     ],
     "relatedTo": [
@@ -83,6 +170,14 @@
       {
         "id": "urn:ngm:class:finality",
         "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "id": "urn:ngm:class:orphan-block",
+        "label": "Orphan Block"
       }
     ]
   },

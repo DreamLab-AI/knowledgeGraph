@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:investor-protection",
   "domain": "governance",
-  "definition": "Investor protection comprises the rules and mechanisms designed to safeguard investors from unfair, abusive or fraudulent practices in financial markets.",
+  "definition": "Investor protection comprises the rules, mechanisms and institutional arrangements designed to safeguard investors from unfair, abusive or fraudulent practices in financial markets, reducing information asymmetry and ensuring access to redress.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:financial-regulation",
@@ -13,31 +13,113 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:conduct-rules",
+        "label": "Conduct Rules"
+      },
+      {
+        "id": "urn:ngm:class:redress-mechanism",
+        "label": "Redress Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:regulatory-requirements",
         "label": "Regulatory Requirements"
+      },
+      {
+        "id": "urn:ngm:class:disclosure-obligations",
+        "label": "Disclosure Obligations"
+      },
+      {
+        "id": "urn:ngm:class:suitability-assessment",
+        "label": "Suitability Assessment"
+      },
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:market-integrity",
         "label": "Market Integrity"
+      },
+      {
+        "id": "urn:ngm:class:investor-confidence",
+        "label": "Investor Confidence"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:market-manipulation",
+        "label": "Market Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:insider-trading",
+        "label": "Insider Trading"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:crypto-asset-regulation",
+        "label": "Crypto-Asset Regulation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:securities-law",
+        "label": "Securities Law"
+      },
+      {
+        "id": "urn:ngm:class:prudential-regulation",
+        "label": "Prudential Regulation"
+      },
+      {
+        "id": "urn:ngm:class:financial-ombudsman",
+        "label": "Financial Ombudsman"
+      }
+    ]
   },
   "wikilinks": [
     {

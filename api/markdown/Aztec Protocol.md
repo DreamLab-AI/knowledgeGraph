@@ -54,7 +54,7 @@ public:: true
   "@id": "urn:ngm:class:aztec-protocol",
   "@type": "Class",
   "label": "Aztec Protocol",
-  "definition": "The protocol underlying the Aztec network that combines zero-knowledge proofs with an encrypted note model to provide confidential transactions and private contracts on Ethereum.",
+  "definition": "The protocol underlying the Aztec network that combines zero-knowledge proofs with an encrypted note model to provide confidential transactions and private smart contracts on Ethereum, enabling programmable privacy through a UTXO-style note commitment scheme verified by recursive ZK rollup proofs.",
   "domain": "blockchain",
   "maturity": "emerging",
   "qualityScore": 0.7,
@@ -73,20 +73,122 @@ public:: true
       {
         "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum Smart Contract Platform"
+      },
+      {
+        "@id": "urn:ngm:class:recursive-snark",
+        "label": "Recursive SNARK"
+      },
+      {
+        "@id": "urn:ngm:class:note-commitment-scheme",
+        "label": "Note Commitment Scheme"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:privacy",
         "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:confidential-transaction",
+        "label": "Confidential Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:private-smart-contract",
+        "label": "Private Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:programmable-privacy",
+        "label": "Programmable Privacy"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:zk-rollup",
+        "label": "ZK Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      },
+      {
+        "@id": "urn:ngm:class:plonk-proof-system",
+        "label": "PLONK Proof System"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:noir-programming-language",
+        "label": "Noir Programming Language"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:aztec-network",
+        "label": "Aztec Network"
+      },
+      {
+        "@id": "urn:ngm:class:aztec-connect",
+        "label": "Aztec Connect"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:tornado-cash",
+        "label": "Tornado Cash"
+      },
+      {
+        "@id": "urn:ngm:class:zcash",
+        "label": "Zcash"
+      },
+      {
+        "@id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:aztec-zk-rollup",
+      "label": "Aztec ZK Rollup"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

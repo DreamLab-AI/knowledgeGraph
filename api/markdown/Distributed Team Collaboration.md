@@ -21,26 +21,62 @@ public:: true
   "@type": "Class",
   "label": "Distributed Team Collaboration",
   "definition": "Distributed team collaboration encompasses the practices, tools, and organisational patterns that enable geographically dispersed individuals working across multiple time zones to coordinate effectively on shared goals without co-location. It integrates asynchronous communication protocols, synchronous video conferencing, shared digital workspaces, version-controlled artefacts, and social norms around documentation and decision-making transparency to replicate — and often surpass — the coordination bandwidth of co-located teams. The discipline has grown from a niche practice of open-source communities and multinational corporations into a mainstream organisational capability following the global shift to remote work accelerated by the 2020 pandemic.",
-  "domain": "governance",
+  "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}],
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:asynchronous-communication", "label": "Asynchronous Communication"},
       {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"},
-      {"@id": "urn:ngm:class:realtime-communication", "label": "Realtime Communication"}
+      {"@id": "urn:ngm:class:realtime-communication", "label": "Realtime Communication"},
+      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
+      {"@id": "urn:ngm:class:video-conferencing", "label": "Video Conferencing"},
+      {"@id": "urn:ngm:class:project-management-software", "label": "Project Management Software"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:remote-work", "label": "Remote Work"},
       {"@id": "urn:ngm:class:remote-collaboration", "label": "Remote Collaboration"},
-      {"@id": "urn:ngm:class:asynchronous-collaboration", "label": "Asynchronous Collaboration"}
+      {"@id": "urn:ngm:class:asynchronous-collaboration", "label": "Asynchronous Collaboration"},
+      {"@id": "urn:ngm:class:open-source-development", "label": "Open Source Development"},
+      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
-      {"@id": "urn:ngm:class:synchronous-collaboration", "label": "Synchronous Collaboration"}
+      {"@id": "urn:ngm:class:synchronous-collaboration", "label": "Synchronous Collaboration"},
+      {"@id": "urn:ngm:class:global-talent-access", "label": "Global Talent Access"},
+      {"@id": "urn:ngm:class:hybrid-work", "label": "Hybrid Work"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:documentation-culture", "label": "Documentation Culture"},
+      {"@id": "urn:ngm:class:digital-communication-infrastructure", "label": "Digital Communication Infrastructure"},
+      {"@id": "urn:ngm:class:trust-building", "label": "Trust Building"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:virtual-team", "label": "Virtual Team"},
+      {"@id": "urn:ngm:class:asynchronous-standup", "label": "Asynchronous Standup"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:organisational-resilience", "label": "Organisational Resilience"},
+      {"@id": "urn:ngm:class:agile-software-development", "label": "Agile Software Development"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:co-located-work", "label": "Co-Located Work"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:remote-team-collaboration", "label": "Remote Team Collaboration"},
+    {"@id": "urn:ngm:class:virtual-collaboration", "label": "Virtual Collaboration"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

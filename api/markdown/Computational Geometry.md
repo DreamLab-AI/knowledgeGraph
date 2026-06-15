@@ -62,7 +62,7 @@ public:: true
   "@id": "urn:ngm:class:computational-geometry",
   "@type": "Class",
   "label": "Computational Geometry",
-  "definition": "Computational geometry is the study of algorithms for solving geometric problems, such as finding convex hulls, intersections, and nearest points. It supports graphics, robotics, and geographic systems.",
+  "definition": "Computational geometry is the study of algorithms for solving geometric problems, such as finding convex hulls, intersections, and nearest points. It provides foundational techniques for computer graphics, robotics motion planning, geographic information systems, and computer-aided design.",
   "domain": "spatial-computing",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -73,10 +73,42 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:convex-hull",
+        "label": "Convex Hull"
+      },
+      {
+        "@id": "urn:ngm:class:delaunay-triangulation",
+        "label": "Delaunay Triangulation"
+      },
+      {
+        "@id": "urn:ngm:class:voronoi-diagram",
+        "label": "Voronoi Diagram"
+      },
+      {
+        "@id": "urn:ngm:class:polygon-clipping",
+        "label": "Polygon Clipping"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:data-structure",
         "label": "Data Structure"
+      },
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
       }
     ],
     "enables": [
@@ -87,14 +119,92 @@ public:: true
       {
         "@id": "urn:ngm:class:pathfinding",
         "label": "Pathfinding"
+      },
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "@id": "urn:ngm:class:geographic-information-system",
+        "label": "Geographic Information System"
+      },
+      {
+        "@id": "urn:ngm:class:computer-aided-design",
+        "label": "Computer-Aided Design"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:spatial-index",
+        "label": "Spatial Index"
+      },
+      {
+        "@id": "urn:ngm:class:bounding-volume-hierarchy",
+        "label": "Bounding Volume Hierarchy"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:mesh-processing",
+        "label": "Mesh Processing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:combinatorial-geometry",
+        "label": "Combinatorial Geometry"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      },
+      {
+        "@id": "urn:ngm:class:solid-modeling",
+        "label": "Solid Modeling"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:geometric-algorithms",
+      "label": "Geometric Algorithms"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

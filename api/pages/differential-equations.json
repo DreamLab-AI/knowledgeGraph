@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:differential-equations",
   "domain": "machine-learning",
-  "definition": "Equations relating a function to its derivatives, used to model how quantities change with respect to one or more independent variables.",
+  "definition": "Equations relating a function to its derivatives, used to model how quantities change with respect to one or more independent variables; foundational to physics, engineering, biology, and modern machine-learning architectures such as neural ODEs.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -13,14 +13,35 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ordinary-differential-equation",
+        "label": "Ordinary Differential Equation"
+      },
+      {
+        "id": "urn:ngm:class:partial-differential-equation",
+        "label": "Partial Differential Equation"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-differential-equation",
+        "label": "Stochastic Differential Equation"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:linear-algebra",
         "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:calculus",
+        "label": "Calculus"
+      },
+      {
+        "id": "urn:ngm:class:real-analysis",
+        "label": "Real Analysis"
       }
     ],
     "enables": [
@@ -31,17 +52,86 @@
       {
         "id": "urn:ngm:class:dynamical-systems-theory",
         "label": "Dynamical Systems Theory"
+      },
+      {
+        "id": "urn:ngm:class:neural-ode",
+        "label": "Neural ODE"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:calculus",
+        "label": "Calculus"
+      },
+      {
+        "id": "urn:ngm:class:functional-analysis",
+        "label": "Functional Analysis"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:algebraic-equations",
+        "label": "Algebraic Equations"
+      },
+      {
+        "id": "urn:ngm:class:difference-equations",
+        "label": "Difference Equations"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:complex-systems",
+        "label": "Complex Systems"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:finite-element-method",
+        "label": "Finite Element Method"
+      },
+      {
+        "id": "urn:ngm:class:runge-kutta-method",
+        "label": "Runge-Kutta Method"
+      },
+      {
+        "id": "urn:ngm:class:laplace-transform",
+        "label": "Laplace Transform"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fourier-analysis",
+        "label": "Fourier Analysis"
+      },
+      {
+        "id": "urn:ngm:class:optimization",
+        "label": "Optimization"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ]
   },
   "wikilinks": [
     {

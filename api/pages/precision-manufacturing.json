@@ -16,8 +16,38 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cnc-machining",
+        "label": "CNC Machining"
+      },
+      {
+        "id": "urn:ngm:class:electrical-discharge-machining",
+        "label": "Electrical Discharge Machining"
+      },
+      {
+        "id": "urn:ngm:class:statistical-process-control",
+        "label": "Statistical Process Control"
+      },
+      {
+        "id": "urn:ngm:class:coordinate-measuring-machine",
+        "label": "Coordinate Measuring Machine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:metrology",
+        "label": "Metrology"
+      },
+      {
+        "id": "urn:ngm:class:process-control",
+        "label": "Process Control"
+      },
+      {
+        "id": "urn:ngm:class:vibration-isolation",
+        "label": "Vibration Isolation"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:industrial-robot",
@@ -26,12 +56,29 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:semiconductor-fabrication",
+        "label": "Semiconductor Fabrication"
+      },
+      {
+        "id": "urn:ngm:class:medical-device-manufacturing",
+        "label": "Medical Device Manufacturing"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:industrial-inspection",
@@ -40,15 +87,37 @@
       {
         "id": "urn:ngm:class:smart-manufacturing",
         "label": "Smart Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:laser-interferometry",
+        "label": "Laser Interferometry"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:aerospace-manufacturing",
+        "label": "Aerospace Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:additive-manufacturing",
+        "label": "Additive Manufacturing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-standards",
+        "label": "ISO Standards"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:industrial-automation",
-        "label": "IndustrialAutomation"
+        "label": "Industrial Automation"
       },
       {
         "id": "urn:ngm:class:quality-assurance",

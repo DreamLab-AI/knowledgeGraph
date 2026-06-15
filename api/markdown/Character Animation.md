@@ -29,19 +29,51 @@ public:: true
       {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
       {"@id": "urn:ngm:class:forward-kinematics", "label": "Forward Kinematics"},
       {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
-      {"@id": "urn:ngm:class:character-rigging", "label": "Character Rigging"}
+      {"@id": "urn:ngm:class:character-rigging", "label": "Character Rigging"},
+      {"@id": "urn:ngm:class:skeletal-animation", "label": "Skeletal Animation"},
+      {"@id": "urn:ngm:class:blend-shapes", "label": "Blend Shapes"},
+      {"@id": "urn:ngm:class:keyframe-animation", "label": "Keyframe Animation"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:real-time-character-animation", "label": "Real Time Character Animation"},
       {"@id": "urn:ngm:class:dynamic-character-animation", "label": "Dynamic Character Animation"},
-      {"@id": "urn:ngm:class:avatar-animation", "label": "Avatar Animation"}
+      {"@id": "urn:ngm:class:avatar-animation", "label": "Avatar Animation"},
+      {"@id": "urn:ngm:class:virtual-human", "label": "Virtual Human"},
+      {"@id": "urn:ngm:class:facial-animation", "label": "Facial Animation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:3d-mesh", "label": "3D Mesh"},
+      {"@id": "urn:ngm:class:skin-weighting", "label": "Skin Weighting"},
+      {"@id": "urn:ngm:class:animation-state-machine", "label": "Animation State Machine"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:procedural-animation", "label": "Procedural Animation"},
+      {"@id": "urn:ngm:class:physics-based-animation", "label": "Physics-Based Animation"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:procedural-animation", "label": "Procedural Animation"},
-      {"@id": "urn:ngm:class:animation-retargeting", "label": "Animation Retargeting"}
+      {"@id": "urn:ngm:class:animation-retargeting", "label": "Animation Retargeting"},
+      {"@id": "urn:ngm:class:secondary-motion", "label": "Secondary Motion"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:universal-scene-description", "label": "Universal Scene Description"},
+      {"@id": "urn:ngm:class:openxr", "label": "OpenXR"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:digital-character-animation", "label": "Digital Character Animation"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

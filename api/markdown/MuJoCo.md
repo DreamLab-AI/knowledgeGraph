@@ -29,18 +29,57 @@ public:: true
       {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
       {"@id": "urn:ngm:class:embodied-ai-simulation", "label": "Embodied AI Simulation"},
       {"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"},
-      {"@id": "urn:ngm:class:robot-learning", "label": "Robot Learning"}
+      {"@id": "urn:ngm:class:robot-learning", "label": "Robot Learning"},
+      {"@id": "urn:ngm:class:sim-to-real-transfer", "label": "Sim-to-Real Transfer"},
+      {"@id": "urn:ngm:class:continuous-control", "label": "Continuous Control"},
+      {"@id": "urn:ngm:class:computational-neuroscience", "label": "Computational Neuroscience"},
+      {"@id": "urn:ngm:class:biomechanics", "label": "Biomechanics"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:humanoid-robotics", "label": "Humanoid Robotics"},
-      {"@id": "urn:ngm:class:legged-locomotion", "label": "Legged Locomotion"}
+      {"@id": "urn:ngm:class:legged-locomotion", "label": "Legged Locomotion"},
+      {"@id": "urn:ngm:class:dexterous-manipulation", "label": "Dexterous Manipulation"},
+      {"@id": "urn:ngm:class:policy-gradient-methods", "label": "Policy Gradient Methods"},
+      {"@id": "urn:ngm:class:domain-randomisation", "label": "Domain Randomisation"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:reinforcement-learning-algorithm", "label": "Reinforcement Learning Algorithm"},
-      {"@id": "urn:ngm:class:proximal-policy-optimisation", "label": "Proximal Policy Optimisation"}
+      {"@id": "urn:ngm:class:proximal-policy-optimisation", "label": "Proximal Policy Optimisation"},
+      {"@id": "urn:ngm:class:convex-optimisation", "label": "Convex Optimisation"},
+      {"@id": "urn:ngm:class:lagrangian-dynamics", "label": "Lagrangian Dynamics"},
+      {"@id": "urn:ngm:class:xml-model-definition", "label": "XML Model Definition"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:constraint-solver", "label": "Constraint Solver"},
+      {"@id": "urn:ngm:class:rigid-body-dynamics", "label": "Rigid Body Dynamics"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:contact-dynamics-model", "label": "Contact Dynamics Model"},
+      {"@id": "urn:ngm:class:musculoskeletal-model", "label": "Musculoskeletal Model"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:openai-gym", "label": "OpenAI Gym"},
+      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:isaac-gym", "label": "Isaac Gym"},
+      {"@id": "urn:ngm:class:pybullet", "label": "PyBullet"},
+      {"@id": "urn:ngm:class:gazebo", "label": "Gazebo"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:multi-joint-dynamics-with-contact", "label": "Multi-Joint Dynamics with Contact"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

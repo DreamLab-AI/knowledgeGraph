@@ -21,23 +21,65 @@ public:: true
   "@type": "Class",
   "label": "Immersive Computing",
   "definition": "Immersive computing is the broad discipline of designing and operating computing systems that surround users with synthetic or blended sensory environments — encompassing virtual reality, augmented reality, and mixed reality — to create a subjective sense of presence within a digitally mediated space. It integrates real-time 3D rendering, spatial tracking, haptic feedback, and multi-modal interaction to replace or augment the user's natural perceptual field.",
-  "domain": "metaverse",
+  "domain": "spatial-computing",
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}],
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"}
+      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
+      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
+      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
+      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
+      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:head-mounted-display", "label": "Head-Mounted Display"},
+      {"@id": "urn:ngm:class:six-degrees-of-freedom-tracking", "label": "Six-Degrees-of-Freedom Tracking"},
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
+      {"@id": "urn:ngm:class:graphics-processing-unit", "label": "Graphics Processing Unit"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:immersive-collaboration", "label": "Immersive Collaboration"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:virtual-training-simulation", "label": "Virtual Training Simulation"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:3-d-rendering", "label": "3D Rendering"},
+      {"@id": "urn:ngm:class:simultaneous-localization-and-mapping", "label": "Simultaneous Localization and Mapping"},
+      {"@id": "urn:ngm:class:openxr", "label": "OpenXR"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:khronos-group", "label": "Khronos Group"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:desktop-computing", "label": "Desktop Computing"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:immersive-collaboration", "label": "Immersive Collaboration"}
-    ],
-    "uses": [
-      {"@id": "urn:ngm:class:3-d-rendering", "label": "3D Rendering"}
+      {"@id": "urn:ngm:class:immersive-collaboration", "label": "Immersive Collaboration"},
+      {"@id": "urn:ngm:class:webxr", "label": "WebXR"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:extended-reality-computing", "label": "Extended Reality Computing"},
+    {"@id": "urn:ngm:class:xr-computing", "label": "XR Computing"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

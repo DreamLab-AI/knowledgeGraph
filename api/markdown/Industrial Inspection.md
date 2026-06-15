@@ -28,20 +28,53 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
       {"@id": "urn:ngm:class:computer-vision-system", "label": "Computer Vision System"},
-      {"@id": "urn:ngm:class:inspection-robot", "label": "Inspection Robot"}
+      {"@id": "urn:ngm:class:inspection-robot", "label": "Inspection Robot"},
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
+      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
+      {"@id": "urn:ngm:class:non-destructive-testing", "label": "Non-Destructive Testing"},
+      {"@id": "urn:ngm:class:machine-vision", "label": "Machine Vision"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"},
       {"@id": "urn:ngm:class:manufacturing-automation", "label": "Manufacturing Automation"},
-      {"@id": "urn:ngm:class:smart-manufacturing", "label": "Smart Manufacturing"}
+      {"@id": "urn:ngm:class:smart-manufacturing", "label": "Smart Manufacturing"},
+      {"@id": "urn:ngm:class:defect-detection", "label": "Defect Detection"},
+      {"@id": "urn:ngm:class:quality-control", "label": "Quality Control"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:labelled-dataset", "label": "Labelled Dataset"},
+      {"@id": "urn:ngm:class:sensor-array", "label": "Sensor Array"},
+      {"@id": "urn:ngm:class:image-processing", "label": "Image Processing"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"},
       {"@id": "urn:ngm:class:precision-manufacturing", "label": "Precision Manufacturing"},
-      {"@id": "urn:ngm:class:runtime-inspection", "label": "Runtime Inspection"}
+      {"@id": "urn:ngm:class:runtime-inspection", "label": "Runtime Inspection"},
+      {"@id": "urn:ngm:class:statistical-process-control", "label": "Statistical Process Control"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:automated-visual-inspection", "label": "Automated Visual Inspection"},
+    {"@id": "urn:ngm:class:non-destructive-evaluation", "label": "Non-Destructive Evaluation"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

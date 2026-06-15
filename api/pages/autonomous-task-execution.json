@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:perceive-plan-act-loop",
+        "label": "Perceive-Plan-Act Loop"
+      },
+      {
+        "id": "urn:ngm:class:tool-invocation",
+        "label": "Tool Invocation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:task-decomposition",
+        "label": "Task Decomposition"
+      },
+      {
+        "id": "urn:ngm:class:error-recovery",
+        "label": "Error Recovery"
+      },
+      {
+        "id": "urn:ngm:class:sandboxed-execution",
+        "label": "Sandboxed Execution"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:agentic-workflow",
@@ -26,12 +48,47 @@
       {
         "id": "urn:ngm:class:multi-agent-orchestration",
         "label": "Multi-Agent Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:process-automation",
+        "label": "Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:context-management",
+        "label": "Context Management"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:supervised-automation",
+        "label": "Supervised Automation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:large-language-models",
@@ -40,6 +97,18 @@
       {
         "id": "urn:ngm:class:automated-planning",
         "label": "Automated Planning"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:ngm:class:working-memory",
+        "label": "Working Memory"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
       }
     ],
     "supports": [],
@@ -53,6 +122,14 @@
       {
         "id": "urn:ngm:class:long-horizon-planning",
         "label": "Long-Horizon Planning"
+      },
+      {
+        "id": "urn:ngm:class:agent-benchmarking",
+        "label": "Agent Benchmarking"
+      },
+      {
+        "id": "urn:ngm:class:react-prompting",
+        "label": "ReAct Prompting"
       }
     ]
   },

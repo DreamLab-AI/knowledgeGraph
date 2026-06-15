@@ -28,20 +28,51 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
       {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"}
+      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"},
+      {"@id": "urn:ngm:class:theory-of-mind", "label": "Theory of Mind"},
+      {"@id": "urn:ngm:class:joint-attention", "label": "Joint Attention"},
+      {"@id": "urn:ngm:class:turn-taking", "label": "Turn Taking"},
+      {"@id": "urn:ngm:class:nonverbal-communication", "label": "Nonverbal Communication"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"},
       {"@id": "urn:ngm:class:emotion-aware-interaction", "label": "Emotion Aware Interaction"},
-      {"@id": "urn:ngm:class:social-network-graph", "label": "Social Network Graph"}
+      {"@id": "urn:ngm:class:social-network-graph", "label": "Social Network Graph"},
+      {"@id": "urn:ngm:class:collaborative-learning", "label": "Collaborative Learning"},
+      {"@id": "urn:ngm:class:trust-formation", "label": "Trust Formation"},
+      {"@id": "urn:ngm:class:consensus-building", "label": "Consensus Building"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:proxemics", "label": "Proxemics"},
       {"@id": "urn:ngm:class:natural-interaction", "label": "Natural Interaction"},
-      {"@id": "urn:ngm:class:emotional-intelligence", "label": "Emotional Intelligence"}
+      {"@id": "urn:ngm:class:emotional-intelligence", "label": "Emotional Intelligence"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:affective-computing", "label": "Affective Computing"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:shared-context", "label": "Shared Context"},
+      {"@id": "urn:ngm:class:communication-channel", "label": "Communication Channel"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:dialogue-management", "label": "Dialogue Management"},
+      {"@id": "urn:ngm:class:social-cue", "label": "Social Cue"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:interpersonal-interaction", "label": "Interpersonal Interaction"},
+    {"@id": "urn:ngm:class:social-communication", "label": "Social Communication"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

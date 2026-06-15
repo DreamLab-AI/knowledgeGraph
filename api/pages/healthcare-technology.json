@@ -4,7 +4,7 @@
   "slug": "healthcare-technology",
   "public": true,
   "classIri": "urn:ngm:class:healthcare-technology",
-  "domain": "spatial-computing",
+  "domain": "artificial-intelligence",
   "definition": "Healthcare Technology encompasses the digital tools, software systems, and AI-driven applications deployed in clinical and health management contexts, including medical imaging, electronic health records, clinical decision support, and telemedicine platforms. It bridges spatial computing, data analytics, and AI to improve diagnostic accuracy, treatment outcomes, and health system efficiency.",
   "subClassOf": [
     {
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.68,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [
@@ -24,27 +24,112 @@
       {
         "id": "urn:ngm:class:clinical-decision-support",
         "label": "Clinical Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:electronic-health-records",
+        "label": "Electronic Health Records"
+      },
+      {
+        "id": "urn:ngm:class:telemedicine",
+        "label": "Telemedicine"
+      },
+      {
+        "id": "urn:ngm:class:remote-patient-monitoring",
+        "label": "Remote Patient Monitoring"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:healthcare-analytics",
         "label": "Healthcare Analytics"
+      },
+      {
+        "id": "urn:ngm:class:personalised-medicine",
+        "label": "Personalised Medicine"
+      },
+      {
+        "id": "urn:ngm:class:population-health-management",
+        "label": "Population Health Management"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-medicine",
+        "label": "Traditional Medicine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:healthcare-ai",
         "label": "Healthcare AI"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:hl7-fhir",
+        "label": "HL7 FHIR"
+      },
+      {
+        "id": "urn:ngm:class:dicom",
+        "label": "DICOM"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -54,6 +139,10 @@
       {
         "id": "urn:ngm:class:financial-technology",
         "label": "Financial Technology"
+      },
+      {
+        "id": "urn:ngm:class:wearable-devices",
+        "label": "Wearable Devices"
       }
     ]
   },

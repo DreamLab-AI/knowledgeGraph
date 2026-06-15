@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "State Synchronisation",
   "definition": "State synchronisation is the process of ensuring that multiple distributed nodes or replicas of a system maintain consistent views of shared mutable state despite network partitions, concurrent updates, and node failures. It encompasses techniques including leader-based replication, consensus protocols, conflict-free replicated data types (CRDTs), and operational transformation to reconcile divergent states. State synchronisation defines the trade-off between consistency, availability, and partition tolerance as described by the CAP theorem, choosing different points on that spectrum depending on application requirements. It is fundamental to distributed databases, real-time collaboration tools, multiplayer games, and blockchain networks.",
-  "domain": "infrastructure",
+  "domain": "distributed-systems",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:distributed-system-protocol", "label": "Distributed System Protocol"}],
   "relations": {
@@ -29,20 +29,54 @@ public:: true
       {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"},
       {"@id": "urn:ngm:class:crdt", "label": "CRDT"},
       {"@id": "urn:ngm:class:data-replication", "label": "Data Replication"},
-      {"@id": "urn:ngm:class:state-machine-replication", "label": "State Machine Replication"}
+      {"@id": "urn:ngm:class:state-machine-replication", "label": "State Machine Replication"},
+      {"@id": "urn:ngm:class:vector-clock", "label": "Vector Clock"},
+      {"@id": "urn:ngm:class:operational-transformation", "label": "Operational Transformation"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:state-synchronization", "label": "State Synchronization"},
       {"@id": "urn:ngm:class:real-time-synchronization", "label": "Real-time Synchronization"},
       {"@id": "urn:ngm:class:distributed-consensus", "label": "Distributed Consensus"},
-      {"@id": "urn:ngm:class:conflict-resolution", "label": "Conflict Resolution"}
+      {"@id": "urn:ngm:class:conflict-resolution", "label": "Conflict Resolution"},
+      {"@id": "urn:ngm:class:cap-theorem", "label": "CAP Theorem"},
+      {"@id": "urn:ngm:class:eventual-consistency", "label": "Eventual Consistency"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:replication-system", "label": "Replication System"},
-      {"@id": "urn:ngm:class:realtime-collaboration", "label": "Realtime Collaboration"}
+      {"@id": "urn:ngm:class:realtime-collaboration", "label": "Realtime Collaboration"},
+      {"@id": "urn:ngm:class:distributed-database", "label": "Distributed Database"},
+      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:network-communication", "label": "Network Communication"},
+      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:raft-protocol", "label": "Raft Protocol"},
+      {"@id": "urn:ngm:class:paxos-protocol", "label": "Paxos Protocol"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:high-availability", "label": "High Availability"},
+      {"@id": "urn:ngm:class:offline-first", "label": "Offline-First"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:strong-consistency", "label": "Strong Consistency"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:state-synchronization", "label": "State Synchronization"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

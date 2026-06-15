@@ -73,14 +73,118 @@ public:: true
       {
         "@id": "urn:ngm:class:custody-infrastructure",
         "label": "Custody Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:reserve-management",
+        "label": "Reserve Management"
+      },
+      {
+        "@id": "urn:ngm:class:tether-limited",
+        "label": "Tether Limited"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:tron-blockchain",
+        "label": "Tron Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:solana",
+        "label": "Solana"
+      },
+      {
+        "@id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cross-border-payment",
+        "label": "Cross-Border Payment"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:crypto-trading",
+        "label": "Crypto Trading"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:usdc",
+        "label": "USDC"
+      },
+      {
+        "@id": "urn:ngm:class:dai",
+        "label": "DAI"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:stablecoin-ecosystem",
+        "label": "Stablecoin Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:defi",
+        "label": "DeFi"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "@id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "@id": "urn:ngm:class:crypto-exchange",
+        "label": "Crypto Exchange"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:tether",
+      "label": "Tether"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

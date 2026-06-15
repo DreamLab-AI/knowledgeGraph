@@ -58,7 +58,7 @@ public:: true
   "@id": "urn:ngm:class:physics-simulation-engine",
   "@type": "Class",
   "label": "Physics Simulation Engine",
-  "definition": "A physics simulation engine is software that computes the motion and interaction of objects according to physical laws, such as rigid body dynamics and collisions. It is used in games, robotics, and engineering.",
+  "definition": "A physics simulation engine is software that numerically integrates equations of motion over time to compute the movement, collision, and interaction of objects according to physical laws such as Newtonian mechanics, rigid-body dynamics, and contact resolution. It is used in real-time applications (games, XR), offline engineering simulation, and robotics training environments.",
   "domain": "spatial-computing",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -69,24 +69,142 @@ public:: true
     }
   ],
   "relations": {
-    "requires": [
+    "hasPart": [
       {
         "@id": "urn:ngm:class:rigid-body-dynamics",
         "label": "Rigid Body Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "@id": "urn:ngm:class:constraint-solver",
+        "label": "Constraint Solver"
+      },
+      {
+        "@id": "urn:ngm:class:soft-body-simulation",
+        "label": "Soft Body Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:fluid-simulation",
+        "label": "Fluid Simulation"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:simulation-environment",
+        "label": "Simulation Environment"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:numerical-integration",
+        "label": "Numerical Integration"
+      },
+      {
+        "@id": "urn:ngm:class:3d-engine",
+        "label": "3D Engine"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:simulation-environment",
         "label": "Simulation Environment"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-simulation",
+        "label": "Robotic Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:finite-element-method",
+        "label": "Finite Element Method"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-partitioning",
+        "label": "Spatial Partitioning"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:analytical-mechanics",
+        "label": "Analytical Mechanics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:physics-engine",
+      "label": "Physics Engine"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -4,7 +4,7 @@
   "slug": "game-ai",
   "public": true,
   "classIri": "urn:ngm:class:game-ai",
-  "domain": "ai",
+  "domain": "artificial-intelligence",
   "definition": "Game AI is the branch of artificial intelligence applied to interactive entertainment, encompassing the design and implementation of non-player character behaviour, opponent strategy, pathfinding, procedural content generation, and narrative decision systems within game engines. It prioritises perceived intelligence, responsiveness, and entertainment value over computational optimality, distinguishing it from classical AI research focused on provably correct or globally optimal solutions.",
   "subClassOf": [
     {
@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:pathfinding",
+        "label": "Pathfinding"
+      },
+      {
+        "id": "urn:ngm:class:behaviour-tree",
+        "label": "Behaviour Tree"
+      },
+      {
+        "id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite State Machine"
+      },
+      {
+        "id": "urn:ngm:class:utility-ai",
+        "label": "Utility AI"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
+      },
+      {
+        "id": "urn:ngm:class:decision-theory",
+        "label": "Decision Theory"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:game-mechanics",
@@ -26,12 +52,42 @@
       {
         "id": "urn:ngm:class:procedural-content-generation",
         "label": "Procedural Content Generation"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-gameplay",
+        "label": "Adaptive Gameplay"
+      },
+      {
+        "id": "urn:ngm:class:non-player-character",
+        "label": "Non-Player Character"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:classical-planning",
+        "label": "Classical Planning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:reinforcement-learning",
@@ -44,6 +100,18 @@
       {
         "id": "urn:ngm:class:game-engine",
         "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      },
+      {
+        "id": "urn:ngm:class:navigation-mesh",
+        "label": "Navigation Mesh"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ],
     "supports": [],
@@ -57,6 +125,14 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:hierarchical-task-network",
+        "label": "Hierarchical Task Network"
+      },
+      {
+        "id": "urn:ngm:class:player-modelling",
+        "label": "Player Modelling"
       }
     ]
   },

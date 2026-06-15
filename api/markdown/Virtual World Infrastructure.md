@@ -49,7 +49,7 @@ public:: true
   "definition": "The underlying technical foundation required to operate metaverse platforms, encompassing cloud computing services, edge networks, distributed systems, real-time rendering capabilities, networking protocols, and blockchain integration that together enable persistent, scalable virtual environments with low-latency user interactions.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "qualityScore": 0.7,
+  "qualityScore": 0.72,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:infra-computing-and-cloud",
@@ -63,8 +63,18 @@ public:: true
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:metaverse-infrastructure",
+      "label": "Metaverse Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:virtual-environment-platform",
+      "label": "Virtual Environment Platform"
+    }
+  ],
   "relations": {
     "hasPart": [
       {
@@ -82,12 +92,42 @@ public:: true
       {
         "@id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
       }
     ],
     "requires": [
       {
         "@id": "urn:ngm:class:network-latency",
         "label": "Network Latency"
+      },
+      {
+        "@id": "urn:ngm:class:high-bandwidth-networking",
+        "label": "High Bandwidth Networking"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
       }
     ],
     "enables": [
@@ -98,6 +138,24 @@ public:: true
       {
         "@id": "urn:ngm:class:virtual-experience",
         "label": "Virtual Experience"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:multiplayer-gaming",
+        "label": "Multiplayer Gaming"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:5g-network",
+        "label": "5G Network"
       }
     ],
     "uses": [
@@ -106,8 +164,38 @@ public:: true
         "label": "Blockchain"
       },
       {
-        "@id": "urn:ngm:class:content-delivery-network",
-        "label": "Content Delivery Network"
+        "@id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      },
+      {
+        "@id": "urn:ngm:class:webxr",
+        "label": "WebXR"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
       }
     ]
   }

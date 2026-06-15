@@ -29,20 +29,54 @@ public:: true
       {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
       {"@id": "urn:ngm:class:deep-reinforcement-learning", "label": "Deep Reinforcement Learning"},
       {"@id": "urn:ngm:class:simulation-environment", "label": "Simulation Environment"},
-      {"@id": "urn:ngm:class:reward-function", "label": "Reward Function"}
+      {"@id": "urn:ngm:class:reward-function", "label": "Reward Function"},
+      {"@id": "urn:ngm:class:policy-gradient-methods", "label": "Policy Gradient Methods"},
+      {"@id": "urn:ngm:class:domain-randomisation", "label": "Domain Randomisation"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:manipulation", "label": "Manipulation"},
       {"@id": "urn:ngm:class:legged-locomotion", "label": "Legged Locomotion"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
+      {"@id": "urn:ngm:class:dexterous-grasping", "label": "Dexterous Grasping"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:markov-decision-process", "label": "Markov Decision Process"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:sim-to-real-transfer", "label": "Sim-to-Real Transfer"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:sim-to-real-transfer", "label": "Sim-to-Real Transfer"},
       {"@id": "urn:ngm:class:imitation-learning", "label": "Imitation Learning"},
-      {"@id": "urn:ngm:class:curriculum-learning", "label": "Curriculum Learning"}
+      {"@id": "urn:ngm:class:curriculum-learning", "label": "Curriculum Learning"},
+      {"@id": "urn:ngm:class:model-based-reinforcement-learning", "label": "Model-Based Reinforcement Learning"},
+      {"@id": "urn:ngm:class:multi-agent-reinforcement-learning", "label": "Multi-Agent Reinforcement Learning"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:classical-motion-planning", "label": "Classical Motion Planning"},
+      {"@id": "urn:ngm:class:model-predictive-control", "label": "Model Predictive Control"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:robot-reinforcement-learning", "label": "Robot Reinforcement Learning"},
+    {"@id": "urn:ngm:class:rl-for-robotics", "label": "RL for Robotics"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

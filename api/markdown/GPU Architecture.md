@@ -58,8 +58,8 @@ public:: true
   "@id": "urn:ngm:class:gpu-architecture",
   "@type": "Class",
   "label": "GPU Architecture",
-  "definition": "GPU architecture describes the design of graphics processing units as massively parallel processors built around many simple cores, wide memory interfaces and hardware for graphics-specific tasks.",
-  "domain": "metaverse",
+  "definition": "GPU architecture describes the design of graphics processing units as massively parallel processors built around thousands of simple shader cores, wide high-bandwidth memory interfaces, and dedicated fixed-function units for texturing, rasterisation, ray tracing, and tensor computation.",
+  "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [
@@ -69,10 +69,38 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:shader-core",
+        "label": "Shader Core"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-core",
+        "label": "Tensor Core"
+      },
+      {
+        "@id": "urn:ngm:class:memory-hierarchy",
+        "label": "Memory Hierarchy"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:computer-hardware",
+        "label": "Computer Hardware"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:memory-hierarchy",
         "label": "Memory Hierarchy"
+      },
+      {
+        "@id": "urn:ngm:class:high-bandwidth-memory",
+        "label": "High-Bandwidth Memory"
       }
     ],
     "enables": [
@@ -83,14 +111,96 @@ public:: true
       {
         "@id": "urn:ngm:class:parallel-computing",
         "label": "Parallel Computing"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:single-instruction-multiple-thread",
+        "label": "Single Instruction Multiple Thread"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "@id": "urn:ngm:class:opencl",
+        "label": "OpenCL"
+      },
+      {
+        "@id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:cpu-architecture",
+        "label": "CPU Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-accelerator",
+        "label": "Hardware Accelerator"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:gpu-microarchitecture",
+      "label": "GPU Microarchitecture"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

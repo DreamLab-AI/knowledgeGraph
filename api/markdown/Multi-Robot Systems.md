@@ -28,20 +28,57 @@ public:: true
     "hasPart": [
       {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
       {"@id": "urn:ngm:class:swarm-robot", "label": "Swarm Robot"},
-      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"}
+      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"},
+      {"@id": "urn:ngm:class:task-allocation-mechanism", "label": "Task Allocation Mechanism"},
+      {"@id": "urn:ngm:class:inter-robot-communication", "label": "Inter-Robot Communication"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"},
+      {"@id": "urn:ngm:class:collision-avoidance", "label": "Collision Avoidance"},
+      {"@id": "urn:ngm:class:distributed-sensing", "label": "Distributed Sensing"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:search-and-rescue-robotics", "label": "Search and Rescue Robotics"},
+      {"@id": "urn:ngm:class:warehouse-automation", "label": "Warehouse Automation"},
+      {"@id": "urn:ngm:class:precision-agriculture", "label": "Precision Agriculture"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
+      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:robotic-control", "label": "Robotic Control"},
       {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"},
-      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"}
+      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:single-robot-system", "label": "Single Robot System"},
+      {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:swarm-robotics", "label": "Swarm Robotics"},
       {"@id": "urn:ngm:class:fleet-management", "label": "Fleet Management"},
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
+      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:multi-agent-robotics", "label": "Multi-Agent Robotics"},
+    {"@id": "urn:ngm:class:robot-team", "label": "Robot Team"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "quality": 0.72
 }
 ```
 

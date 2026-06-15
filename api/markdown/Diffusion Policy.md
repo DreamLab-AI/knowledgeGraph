@@ -28,19 +28,51 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
       {"@id": "urn:ngm:class:imitation-learning", "label": "Imitation Learning"},
-      {"@id": "urn:ngm:class:flow-matching", "label": "Flow Matching"}
+      {"@id": "urn:ngm:class:flow-matching", "label": "Flow Matching"},
+      {"@id": "urn:ngm:class:denoising-score-matching", "label": "Denoising Score Matching"},
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:robot-manipulation", "label": "Robot Manipulation"},
       {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"},
-      {"@id": "urn:ngm:class:embodied-ai", "label": "Embodied AI"}
+      {"@id": "urn:ngm:class:embodied-ai", "label": "Embodied AI"},
+      {"@id": "urn:ngm:class:dexterous-manipulation", "label": "Dexterous Manipulation"},
+      {"@id": "urn:ngm:class:bimanual-robot-control", "label": "Bimanual Robot Control"},
+      {"@id": "urn:ngm:class:multi-modal-action-distribution", "label": "Multi-Modal Action Distribution"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:demonstration-data", "label": "Demonstration Data"},
+      {"@id": "urn:ngm:class:proprioception", "label": "Proprioception"},
+      {"@id": "urn:ngm:class:visual-observation", "label": "Visual Observation"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:behavioural-cloning", "label": "Behavioural Cloning"},
+      {"@id": "urn:ngm:class:action-chunking", "label": "Action Chunking"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:gaussian-mixture-model", "label": "Gaussian Mixture Model"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"}
+      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"},
+      {"@id": "urn:ngm:class:consistency-policy", "label": "Consistency Policy"},
+      {"@id": "urn:ngm:class:score-based-generative-model", "label": "Score-Based Generative Model"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
+      {"@id": "urn:ngm:class:vision-language-model", "label": "Vision-Language Model"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:ddpm-robot-policy", "label": "DDPM Robot Policy"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

@@ -29,19 +29,55 @@ public:: true
       {"@id": "urn:ngm:class:yield-farming", "label": "Yield Farming"},
       {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"},
       {"@id": "urn:ngm:class:liquidity-provision", "label": "Liquidity Provision"},
-      {"@id": "urn:ngm:class:digital-asset-lending", "label": "Digital Asset Lending"}
+      {"@id": "urn:ngm:class:digital-asset-lending", "label": "Digital Asset Lending"},
+      {"@id": "urn:ngm:class:impermanent-loss", "label": "Impermanent Loss"},
+      {"@id": "urn:ngm:class:annual-percentage-yield", "label": "Annual Percentage Yield"},
+      {"@id": "urn:ngm:class:real-world-asset-tokenization", "label": "Real World Asset Tokenization"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:liquidity-mining", "label": "Liquidity Mining"},
-      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"}
+      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"},
+      {"@id": "urn:ngm:class:capital-efficiency", "label": "Capital Efficiency"},
+      {"@id": "urn:ngm:class:passive-income", "label": "Passive Income"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"},
       {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:liquid-staking", "label": "Liquid Staking"},
+      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:staking-reward", "label": "Staking Reward"},
+      {"@id": "urn:ngm:class:trading-fee", "label": "Trading Fee"},
+      {"@id": "urn:ngm:class:lending-interest", "label": "Lending Interest"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:collateral", "label": "Collateral"},
+      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:decentralized-exchange", "label": "Decentralized Exchange"},
+      {"@id": "urn:ngm:class:oracle", "label": "Oracle"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:traditional-finance", "label": "Traditional Finance"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:finance", "label": "Finance"},
+      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:defi-yield", "label": "DeFi Yield"},
+    {"@id": "urn:ngm:class:crypto-yield", "label": "Crypto Yield"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

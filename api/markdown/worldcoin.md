@@ -10,6 +10,13 @@
   - bridges-to:: [[Digital Identity]], [[Identity Verification]]
   - requires:: [[Biometric Authentication]], [[Facial Recognition]]
   - enables:: [[Sybil Resistance]]
+  - requires:: [[Zero-Knowledge Proof]], [[Identity Verification]]
+  - enables:: [[Proof of Personhood]], [[Universal Basic Income]], [[Decentralized Identity]]
+  - uses:: [[Iris Recognition]], [[Cryptocurrency]], [[Blockchain]], [[Smart Contract]]
+  - hasPart:: [[World ID]], [[Worldcoin Token]]
+  - contrastsWith:: [[Know Your Customer]], [[Centralised Identity]]
+  - relatedTo:: [[Privacy-Preserving Computation]], [[Data Protection]], [[Consent Management]]
+  - bridgesTo:: [[Artificial Intelligence]], [[Governance]], [[Security]]
 
 - ### Content
   - Worldcoin is a project that issues a digital identifier derived from iris biometrics, with the stated aim of establishing proof of unique human identity for use in online systems. Enrolment involves a specialised device that captures an iris image and produces a code.

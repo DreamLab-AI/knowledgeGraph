@@ -26,22 +26,58 @@ alias:: HashRate
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"}],
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:network-hash-rate", "label": "Network Hash Rate"},
-      {"@id": "urn:ngm:class:difficulty", "label": "Difficulty"},
-      {"@id": "urn:ngm:class:difficulty-adjustment", "label": "Difficulty Adjustment"},
-      {"@id": "urn:ngm:class:mining", "label": "Mining"},
-      {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"},
-      {"@id": "urn:ngm:class:51-attack", "label": "51% Attack"},
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:network-hash-rate", "label": "Network Hash Rate"}
     ],
-    "uses": [
+    "requires": [
       {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
       {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:compute-resources", "label": "Compute Resources"}
+      {"@id": "urn:ngm:class:compute-resources", "label": "Compute Resources"},
+      {"@id": "urn:ngm:class:application-specific-integrated-circuit", "label": "Application-Specific Integrated Circuit"},
+      {"@id": "urn:ngm:class:energy-consumption", "label": "Energy Consumption"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
+      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"},
+      {"@id": "urn:ngm:class:double-spend-prevention", "label": "Double Spend Prevention"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:mining", "label": "Mining"},
+      {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"},
+      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
+      {"@id": "urn:ngm:class:mining-profitability", "label": "Mining Profitability"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:network-security", "label": "Network Security"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof Of Stake"},
+      {"@id": "urn:ngm:class:validator-stake", "label": "Validator Stake"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:difficulty", "label": "Difficulty"},
+      {"@id": "urn:ngm:class:difficulty-adjustment", "label": "Difficulty Adjustment"},
+      {"@id": "urn:ngm:class:51-attack", "label": "51% Attack"},
+      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"},
+      {"@id": "urn:ngm:class:halving", "label": "Halving"},
+      {"@id": "urn:ngm:class:block-time", "label": "Block Time"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:energy-efficiency", "label": "Energy Efficiency"},
+      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:mining-hash-rate", "label": "Mining Hash Rate"},
+    {"@id": "urn:ngm:class:network-hashpower", "label": "Network Hashpower"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

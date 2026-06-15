@@ -80,6 +80,30 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:bounding-volume",
+        "label": "Bounding Volume"
+      },
+      {
+        "@id": "urn:ngm:class:leaf-node",
+        "label": "Leaf Node"
+      },
+      {
+        "@id": "urn:ngm:class:internal-node",
+        "label": "Internal Node"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:spatial-data-structure",
+        "label": "Spatial Data Structure"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:bounding-volume",
@@ -92,6 +116,10 @@ public:: true
       {
         "@id": "urn:ngm:class:tree-construction",
         "label": "Tree Construction"
+      },
+      {
+        "@id": "urn:ngm:class:axis-aligned-bounding-box",
+        "label": "Axis-Aligned Bounding Box"
       }
     ],
     "enables": [
@@ -106,17 +134,106 @@ public:: true
       {
         "@id": "urn:ngm:class:ray-tracing",
         "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:occlusion-culling",
+        "label": "Occlusion Culling"
+      },
+      {
+        "@id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "@id": "urn:ngm:class:geometric-primitive",
+        "label": "Geometric Primitive"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:spatial-partitioning",
+        "label": "Spatial Partitioning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:surface-area-heuristic",
+        "label": "Surface Area Heuristic"
+      },
+      {
+        "@id": "urn:ngm:class:depth-first-search",
+        "label": "Depth-First Search"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:kd-tree",
+        "label": "KD-Tree"
+      },
+      {
+        "@id": "urn:ngm:class:octree",
+        "label": "Octree"
+      },
+      {
+        "@id": "urn:ngm:class:uniform-grid",
+        "label": "Uniform Grid"
       }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-data-structure", "label": "Spatial Data Structure"}
+      {
+        "@id": "urn:ngm:class:spatial-data-structure",
+        "label": "Spatial Data Structure"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:bvh",
+      "label": "BVH"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

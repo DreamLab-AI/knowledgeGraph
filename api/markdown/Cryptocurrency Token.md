@@ -45,7 +45,7 @@ public:: true
   "definition": "A programmable digital asset implemented via smart contracts on a blockchain platform, categorised into utility tokens (access rights), security tokens (equity or debt instruments), governance tokens (protocol voting rights), and non-fungible tokens (NFTs, unique digital ownership). Token behaviour and interoperability are defined by standards such as ERC-20, ERC-721, and ERC-1155.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "qualityScore": 0.7,
+  "qualityScore": 0.72,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:bc-token-and-asset",
@@ -57,6 +57,16 @@ public:: true
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:digital-token",
+      "label": "Digital Token"
+    },
+    {
+      "@id": "urn:ngm:class:crypto-token",
+      "label": "Crypto Token"
+    }
+  ],
   "relations": {
     "hasPart": [
       {
@@ -70,6 +80,28 @@ public:: true
       {
         "@id": "urn:ngm:class:utility-token",
         "label": "Utility Token"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "@id": "urn:ngm:class:wrapped-token",
+        "label": "Wrapped Token"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "@id": "urn:ngm:class:token-economy",
+        "label": "Token Economy"
       }
     ],
     "requires": [
@@ -80,12 +112,72 @@ public:: true
       {
         "@id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "@id": "urn:ngm:class:staking",
+        "label": "Staking"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:erc-1155",
+        "label": "ERC-1155"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
       }
     ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:token-economics",
         "label": "Token Economics"
+      },
+      {
+        "@id": "urn:ngm:class:initial-coin-offering",
+        "label": "Initial Coin Offering"
+      },
+      {
+        "@id": "urn:ngm:class:airdrop",
+        "label": "Airdrop"
+      },
+      {
+        "@id": "urn:ngm:class:soul-bound-token",
+        "label": "Soul-Bound Token"
       }
     ],
     "standardizedBy": [
@@ -100,6 +192,30 @@ public:: true
       {
         "@id": "urn:ngm:class:erc-721",
         "label": "ERC-721"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:finance",
+        "label": "Finance"
       }
     ]
   }

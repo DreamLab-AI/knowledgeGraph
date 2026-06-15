@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Normalising Flows",
   "definition": "Normalising flows are a class of generative models that learn complex probability distributions by composing a series of invertible, differentiable transformations that map a simple base distribution (typically Gaussian) to the target distribution, with exact log-likelihood computation via the change-of-variables formula and the Jacobian determinant. Both sampling and density evaluation are tractable.",
-  "domain": "ai",
+  "domain": "machine-learning",
   "maturity": "established",
   "subClassOf": [
     {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
@@ -29,16 +29,51 @@ public:: true
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:gaussian-process", "label": "Gaussian Process"}
+      {"@id": "urn:ngm:class:gaussian-process", "label": "Gaussian Process"},
+      {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"},
+      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
+      {"@id": "urn:ngm:class:neural-ordinary-differential-equation", "label": "Neural Ordinary Differential Equation"},
+      {"@id": "urn:ngm:class:flow-matching", "label": "Flow Matching"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:gaussian-distribution", "label": "Gaussian Distribution"}
+      {"@id": "urn:ngm:class:gaussian-distribution", "label": "Gaussian Distribution"},
+      {"@id": "urn:ngm:class:change-of-variables", "label": "Change of Variables"},
+      {"@id": "urn:ngm:class:jacobian-determinant", "label": "Jacobian Determinant"},
+      {"@id": "urn:ngm:class:maximum-likelihood-estimation", "label": "Maximum Likelihood Estimation"},
+      {"@id": "urn:ngm:class:autoregressive-model", "label": "Autoregressive Model"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"}
+      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
+      {"@id": "urn:ngm:class:density-estimation", "label": "Density Estimation"},
+      {"@id": "urn:ngm:class:generative-modelling", "label": "Generative Modelling"},
+      {"@id": "urn:ngm:class:latent-variable-model", "label": "Latent Variable Model"},
+      {"@id": "urn:ngm:class:posterior-approximation", "label": "Posterior Approximation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:invertible-neural-network", "label": "Invertible Neural Network"},
+      {"@id": "urn:ngm:class:differentiable-programming", "label": "Differentiable Programming"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:probabilistic-generative-model", "label": "Probabilistic Generative Model"},
+      {"@id": "urn:ngm:class:variational-inference", "label": "Variational Inference"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:markov-chain-monte-carlo", "label": "Markov Chain Monte Carlo"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:scientific-machine-learning", "label": "Scientific Machine Learning"},
+      {"@id": "urn:ngm:class:probabilistic-programming", "label": "Probabilistic Programming"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:normalizing-flows", "label": "Normalizing Flows"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

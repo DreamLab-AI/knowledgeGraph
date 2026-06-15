@@ -58,8 +58,8 @@ public:: true
   "@id": "urn:ngm:class:low-rank-adaptation",
   "@type": "Class",
   "label": "Low-Rank Adaptation",
-  "definition": "Low-Rank Adaptation is a parameter-efficient fine-tuning method that adds small trainable low-rank matrices to a frozen pre-trained model. It reduces the cost of adapting large models.",
-  "domain": "artificial-intelligence",
+  "definition": "Low-Rank Adaptation (LoRA) is a parameter-efficient fine-tuning method that injects trainable low-rank decomposition matrices into the weight matrices of a frozen pre-trained model, enabling task adaptation with a fraction of the trainable parameters required by full fine-tuning.",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [
@@ -73,20 +73,144 @@ public:: true
       {
         "@id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:pre-trained-model",
+        "label": "Pre-Trained Model"
+      },
+      {
+        "@id": "urn:ngm:class:matrix-decomposition",
+        "label": "Matrix Decomposition"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-fine-tuning",
+        "label": "Model Fine-Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:multi-task-learning",
+        "label": "Multi-Task Learning"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:low-rank-matrix",
+        "label": "Low-Rank Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:adapter-module",
+        "label": "Adapter Module"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:model-adaptation",
+        "label": "Model Adaptation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:singular-value-decomposition",
+        "label": "Singular Value Decomposition"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:on-device-ai",
+        "label": "On-Device AI"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:weight-matrix",
+        "label": "Weight Matrix"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:full-fine-tuning",
+        "label": "Full Fine-Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-tuning",
+        "label": "Prompt Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:prefix-tuning",
+        "label": "Prefix Tuning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:quantization",
+        "label": "Quantization"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "@id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:lora",
+      "label": "LoRA"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

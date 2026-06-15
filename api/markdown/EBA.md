@@ -21,30 +21,70 @@ public:: true
   "@type": "Class",
   "label": "EBA",
   "definition": "The European Banking Authority (EBA) is an independent EU regulatory agency established in 2011 to ensure consistent prudential regulation and supervision across the European banking sector. It develops binding technical standards and guidelines that national supervisors must implement, conducts EU-wide stress tests to assess banking system resilience, and plays a central role in developing anti-money laundering supervisory frameworks. The EBA's remit has expanded into digital finance, including technical standards for crypto-asset service providers under the MiCA Regulation and guidelines on ICT risk management.",
-  "domain": "governance",
+  "domain": "finance",
   "maturity": "established",
   "subClassOf": [
     {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}
   ],
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"},
-      {"@id": "urn:ngm:class:regulatory-standards", "label": "Regulatory Standards"},
-      {"@id": "urn:ngm:class:european-commission", "label": "European Commission"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:binding-technical-standards", "label": "Binding Technical Standards"},
+      {"@id": "urn:ngm:class:stress-testing", "label": "Stress Testing"},
+      {"@id": "urn:ngm:class:supervisory-convergence", "label": "Supervisory Convergence"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:european-system-of-financial-supervision", "label": "European System of Financial Supervision"},
+      {"@id": "urn:ngm:class:eu-financial-regulatory-architecture", "label": "EU Financial Regulatory Architecture"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:national-competent-authority", "label": "National Competent Authority"},
+      {"@id": "urn:ngm:class:prudential-regulation", "label": "Prudential Regulation"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"}
+      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"},
+      {"@id": "urn:ngm:class:single-rulebook", "label": "Single Rulebook"},
+      {"@id": "urn:ngm:class:supervisory-transparency", "label": "Supervisory Transparency"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:eu-banking-directives", "label": "EU Banking Directives"},
+      {"@id": "urn:ngm:class:basel-accords", "label": "Basel Accords"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:capital-requirements-regulation", "label": "Capital Requirements Regulation"},
+      {"@id": "urn:ngm:class:digital-operational-resilience-act", "label": "Digital Operational Resilience Act"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:financial-stability", "label": "Financial Stability"},
-      {"@id": "urn:ngm:class:systemic-risk", "label": "Systemic Risk"}
+      {"@id": "urn:ngm:class:systemic-risk", "label": "Systemic Risk"},
+      {"@id": "urn:ngm:class:consumer-protection", "label": "Consumer Protection"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:european-commission", "label": "European Commission"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:ecb-banking-supervision", "label": "ECB Banking Supervision"},
+      {"@id": "urn:ngm:class:esma", "label": "ESMA"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:mi-ca-regulation", "label": "MiCA Regulation"}
+      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"},
+      {"@id": "urn:ngm:class:mi-ca-regulation", "label": "MiCA Regulation"},
+      {"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:european-banking-authority", "label": "European Banking Authority"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

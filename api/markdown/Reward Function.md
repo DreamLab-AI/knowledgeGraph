@@ -50,8 +50,8 @@ public:: true
   "@id": "urn:ngm:class:reward-function",
   "@type": "Class",
   "label": "Reward Function",
-  "definition": "A mathematical formulation in reinforcement learning that maps state-action pairs to scalar values, guiding AI agent behaviour toward desired outcomes in game environments, virtual worlds, and autonomous systems through feedback signals.",
-  "domain": "spatial-computing",
+  "definition": "A mathematical formulation in reinforcement learning that maps state-action pairs to scalar values, guiding AI agent behaviour toward desired outcomes through feedback signals; central to policy optimisation, agent training, and objective specification in machine learning systems.",
+  "domain": "machine-learning",
   "maturity": "draft",
   "subClassOf": [
     {
@@ -60,24 +60,148 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:reward-signal",
+        "label": "Reward Signal"
+      },
+      {
+        "@id": "urn:ngm:class:discount-factor",
+        "label": "Discount Factor"
+      },
+      {
+        "@id": "urn:ngm:class:cumulative-return",
+        "label": "Cumulative Return"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:state-space",
+        "label": "State Space"
+      },
+      {
+        "@id": "urn:ngm:class:action-space",
+        "label": "Action Space"
+      },
+      {
+        "@id": "urn:ngm:class:environment-model",
+        "label": "Environment Model"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:autonomous-agent-learning",
         "label": "Autonomous Agent Learning"
+      },
+      {
+        "@id": "urn:ngm:class:policy-optimisation",
+        "label": "Policy Optimisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:credit-assignment",
+        "label": "Credit Assignment"
+      },
+      {
+        "@id": "urn:ngm:class:objective-specification",
+        "label": "Objective Specification"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bellman-equation",
+        "label": "Bellman Equation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:value-function",
+        "label": "Value Function"
+      },
+      {
+        "@id": "urn:ngm:class:temporal-difference-learning",
+        "label": "Temporal Difference Learning"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:inverse-reinforcement-learning",
+        "label": "Inverse Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reward-shaping",
+        "label": "Reward Shaping"
+      },
+      {
+        "@id": "urn:ngm:class:multi-objective-optimisation",
+        "label": "Multi-Objective Optimisation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:heuristic-function",
+        "label": "Heuristic Function"
       }
     ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:reward-hacking",
+        "label": "Reward Hacking"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:alignment",
+        "label": "Alignment"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:objective-function",
+      "label": "Objective Function"
+    },
+    {
+      "@id": "urn:ngm:class:utility-function",
+      "label": "Utility Function"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

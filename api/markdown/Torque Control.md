@@ -60,27 +60,74 @@ public:: true
     }
   ],
   "relations": {
-    "relatedTo": [
+    "hasPart": [
+      {"@id": "urn:ngm:class:torque-sensor", "label": "Torque Sensor"},
+      {"@id": "urn:ngm:class:current-control-loop", "label": "Current Control Loop"},
+      {"@id": "urn:ngm:class:inner-control-loop", "label": "Inner Control Loop"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:robo-actuation-and-control", "label": "Actuation and Control"},
+      {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:torque-sensor", "label": "Torque Sensor"},
       {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
+      {"@id": "urn:ngm:class:motor-driver", "label": "Motor Driver"},
+      {"@id": "urn:ngm:class:real-time-control-system", "label": "Real-Time Control System"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"},
+      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
+      {"@id": "urn:ngm:class:compliant-manipulation", "label": "Compliant Manipulation"},
+      {"@id": "urn:ngm:class:force-control", "label": "Force Control"},
+      {"@id": "urn:ngm:class:impedance-control", "label": "Impedance Control"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
       {"@id": "urn:ngm:class:pid-control", "label": "PID Control"},
+      {"@id": "urn:ngm:class:robot-dynamics", "label": "Robot Dynamics"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
+      {"@id": "urn:ngm:class:inverse-dynamics-control", "label": "Inverse Dynamics Control"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
+      {"@id": "urn:ngm:class:robot-actuator", "label": "Robot Actuator"},
       {"@id": "urn:ngm:class:servo-control", "label": "Servo Control"},
       {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"},
       {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"}
     ],
-    "uses": [
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:robot-actuator", "label": "Robot Actuator"}
+    "supports": [
+      {"@id": "urn:ngm:class:dexterous-manipulation", "label": "Dexterous Manipulation"},
+      {"@id": "urn:ngm:class:physical-human-robot-interaction", "label": "Physical Human-Robot Interaction"},
+      {"@id": "urn:ngm:class:robot-safety", "label": "Robot Safety"}
     ],
-    "enables": [
-      {"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"}
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:position-control", "label": "Position Control"},
+      {"@id": "urn:ngm:class:velocity-control", "label": "Velocity Control"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:pid-control", "label": "PID Control"},
+      {"@id": "urn:ngm:class:servo-control", "label": "Servo Control"},
+      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"},
+      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
+      {"@id": "urn:ngm:class:admittance-control", "label": "Admittance Control"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:joint-torque-control", "label": "Joint Torque Control"},
+    {"@id": "urn:ngm:class:direct-torque-control", "label": "Direct Torque Control"}
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

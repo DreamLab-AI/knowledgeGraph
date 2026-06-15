@@ -86,7 +86,7 @@ public:: true
   "@id": "urn:ngm:class:3-d-user-interface",
   "@type": "Class",
   "label": "3D User Interface",
-  "definition": "A 3D User Interface (3DUI) is an interactive control system within three-dimensional virtual environments enabling users to manipulate objects, navigate spaces, and access functionality through spatial gestures, hand tracking, gaze-based selection, and voice commands.",
+  "definition": "A 3D User Interface (3DUI) is an interactive control system within three-dimensional virtual environments enabling users to manipulate objects, navigate spaces, and access functionality through spatial gestures, hand tracking, gaze-based selection, and voice commands. 3DUI design balances accessibility standards with intuitive spatial affordances appropriate for VR, AR, and metaverse interactions.",
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": [
@@ -96,14 +96,36 @@ public:: true
     }
   ],
   "relations": {
-    "bridgesTo": [
+    "hasPart": [
       {
-        "@id": "urn:ngm:class:interaction-design",
-        "label": "Interaction Design"
+        "@id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
       },
       {
-        "@id": "urn:ngm:class:user-interface",
-        "label": "User Interface"
+        "@id": "urn:ngm:class:gaze-tracking",
+        "label": "Gaze Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:voice-input",
+        "label": "Voice Input"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
       }
     ],
     "requires": [
@@ -122,6 +144,10 @@ public:: true
       {
         "@id": "urn:ngm:class:haptic-feedback",
         "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-input",
+        "label": "Sensor Input"
       }
     ],
     "enables": [
@@ -136,14 +162,94 @@ public:: true
       {
         "@id": "urn:ngm:class:user-navigation",
         "label": "User Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "@id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:accessibility-standard",
+        "label": "Accessibility Standard"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-interaction",
+        "label": "Multimodal Interaction"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      },
+      {
+        "@id": "urn:ngm:class:graphical-user-interface",
+        "label": "Graphical User Interface"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:embodied-interaction",
+        "label": "Embodied Interaction"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:3dui",
+      "label": "3DUI"
+    },
+    {
+      "@id": "urn:ngm:class:spatial-user-interface",
+      "label": "Spatial User Interface"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -4,7 +4,7 @@
   "slug": "distributed-team-collaboration",
   "public": true,
   "classIri": "urn:ngm:class:distributed-team-collaboration",
-  "domain": "governance",
+  "domain": "distributed-collaboration",
   "definition": "Distributed team collaboration encompasses the practices, tools, and organisational patterns that enable geographically dispersed individuals working across multiple time zones to coordinate effectively on shared goals without co-location. It integrates asynchronous communication protocols, synchronous video conferencing, shared digital workspaces, version-controlled artefacts, and social norms around documentation and decision-making transparency to replicate \u2014 and often surpass \u2014 the coordination bandwidth of co-located teams. The discipline has grown from a niche practice of open-source communities and multinational corporations into a mainstream organisational capability following the global shift to remote work accelerated by the 2020 pandemic.",
   "subClassOf": [
     {
@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:virtual-team",
+        "label": "Virtual Team"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-standup",
+        "label": "Asynchronous Standup"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:documentation-culture",
+        "label": "Documentation Culture"
+      },
+      {
+        "id": "urn:ngm:class:digital-communication-infrastructure",
+        "label": "Digital Communication Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:trust-building",
+        "label": "Trust Building"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:telecollaboration",
@@ -26,12 +48,34 @@
       {
         "id": "urn:ngm:class:synchronous-collaboration",
         "label": "Synchronous Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:global-talent-access",
+        "label": "Global Talent Access"
+      },
+      {
+        "id": "urn:ngm:class:hybrid-work",
+        "label": "Hybrid Work"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:co-located-work",
+        "label": "Co-Located Work"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:asynchronous-communication",
@@ -44,9 +88,30 @@
       {
         "id": "urn:ngm:class:realtime-communication",
         "label": "Realtime Communication"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      },
+      {
+        "id": "urn:ngm:class:project-management-software",
+        "label": "Project Management Software"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:organisational-resilience",
+        "label": "Organisational Resilience"
+      },
+      {
+        "id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Software Development"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -61,6 +126,14 @@
       {
         "id": "urn:ngm:class:asynchronous-collaboration",
         "label": "Asynchronous Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:open-source-development",
+        "label": "Open Source Development"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
       }
     ]
   },

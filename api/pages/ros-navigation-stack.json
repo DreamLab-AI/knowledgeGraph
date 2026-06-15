@@ -13,11 +13,45 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:amcl",
+        "label": "AMCL"
+      },
+      {
+        "id": "urn:ngm:class:move-base",
+        "label": "Move Base"
+      },
+      {
+        "id": "urn:ngm:class:costmap-2d",
+        "label": "Costmap 2D"
+      },
+      {
+        "id": "urn:ngm:class:global-planner",
+        "label": "Global Planner"
+      },
+      {
+        "id": "urn:ngm:class:local-planner",
+        "label": "Local Planner"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:occupancy-grid-map",
+        "label": "Occupancy Grid Map"
+      },
+      {
+        "id": "urn:ngm:class:odometry",
+        "label": "Odometry"
+      },
+      {
+        "id": "urn:ngm:class:transform-tree",
+        "label": "Transform Tree"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:path-planning",
@@ -30,12 +64,30 @@
       {
         "id": "urn:ngm:class:autonomous-robot",
         "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ros-middleware",
+        "label": "ROS Middleware"
+      },
+      {
+        "id": "urn:ngm:class:publish-subscribe-messaging",
+        "label": "Publish-Subscribe Messaging"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:sensor-fusion",
@@ -48,11 +100,24 @@
       {
         "id": "urn:ngm:class:localisation",
         "label": "Localisation"
+      },
+      {
+        "id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:ros-2",
@@ -63,8 +128,12 @@
         "label": "Gazebo Simulator"
       },
       {
-        "id": "urn:ngm:class:autonomous-navigation",
-        "label": "Autonomous Navigation"
+        "id": "urn:ngm:class:nav2",
+        "label": "Nav2"
+      },
+      {
+        "id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
       }
     ]
   },

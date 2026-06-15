@@ -43,7 +43,7 @@ public:: true
   "@type": "Class",
   "label": "Healthcare Technology",
   "definition": "Healthcare Technology encompasses the digital tools, software systems, and AI-driven applications deployed in clinical and health management contexts, including medical imaging, electronic health records, clinical decision support, and telemedicine platforms. It bridges spatial computing, data analytics, and AI to improve diagnostic accuracy, treatment outcomes, and health system efficiency.",
-  "domain": "spatial-computing",
+  "domain": "artificial-intelligence",
   "maturity": "emerging",
   "qualityScore": 0.7,
   "subClassOf": [
@@ -52,12 +52,22 @@ public:: true
       "label": "Platform and Environment"
     }
   ],
-  "quality": 0.35,
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:health-informatics",
+      "label": "Health Informatics"
+    },
+    {
+      "@id": "urn:ngm:class:digital-health",
+      "label": "Digital Health"
+    }
+  ],
   "relations": {
     "hasPart": [
       {
@@ -67,18 +77,108 @@ public:: true
       {
         "@id": "urn:ngm:class:clinical-decision-support",
         "label": "Clinical Decision Support"
+      },
+      {
+        "@id": "urn:ngm:class:electronic-health-records",
+        "label": "Electronic Health Records"
+      },
+      {
+        "@id": "urn:ngm:class:telemedicine",
+        "label": "Telemedicine"
+      },
+      {
+        "@id": "urn:ngm:class:remote-patient-monitoring",
+        "label": "Remote Patient Monitoring"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:healthcare-analytics",
         "label": "Healthcare Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:personalised-medicine",
+        "label": "Personalised Medicine"
+      },
+      {
+        "@id": "urn:ngm:class:population-health-management",
+        "label": "Population Health Management"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:healthcare-ai",
         "label": "Healthcare AI"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:hl7-fhir",
+        "label": "HL7 FHIR"
+      },
+      {
+        "@id": "urn:ngm:class:dicom",
+        "label": "DICOM"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:traditional-medicine",
+        "label": "Traditional Medicine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
       }
     ],
     "relatedTo": [
@@ -89,6 +189,10 @@ public:: true
       {
         "@id": "urn:ngm:class:financial-technology",
         "label": "Financial Technology"
+      },
+      {
+        "@id": "urn:ngm:class:wearable-devices",
+        "label": "Wearable Devices"
       }
     ]
   }

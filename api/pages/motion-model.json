@@ -16,8 +16,26 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:process-noise-model",
+        "label": "Process Noise Model"
+      },
+      {
+        "id": "urn:ngm:class:state-transition-function",
+        "label": "State Transition Function"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:state-space-representation",
+        "label": "State Space Representation"
+      },
+      {
+        "id": "urn:ngm:class:control-input",
+        "label": "Control Input"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:motion-planning",
@@ -30,12 +48,43 @@
       {
         "id": "urn:ngm:class:trajectory-tracking",
         "label": "Trajectory Tracking"
+      },
+      {
+        "id": "urn:ngm:class:robot-localisation",
+        "label": "Robot Localisation"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:observation-model",
+        "label": "Observation Model"
+      },
+      {
+        "id": "urn:ngm:class:sensor-model",
+        "label": "Sensor Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:kinematics",
@@ -48,9 +97,22 @@
       {
         "id": "urn:ngm:class:probabilistic-model",
         "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:differential-equations",
+        "label": "Differential Equations"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -65,6 +127,10 @@
       {
         "id": "urn:ngm:class:newton-euler-dynamics",
         "label": "Newton-Euler Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:odometry",
+        "label": "Odometry"
       }
     ]
   },

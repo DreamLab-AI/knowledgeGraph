@@ -4,7 +4,7 @@
   "slug": "cryptographic-protocols",
   "public": true,
   "classIri": "urn:ngm:class:cryptographic-protocols",
-  "domain": "distributed-systems",
+  "domain": "security",
   "definition": "Cryptographic protocols are sequences of operations using cryptographic primitives to achieve security goals such as confidentiality, integrity and authentication.",
   "subClassOf": [
     {
@@ -13,31 +13,135 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:tls-transport-layer-security",
+        "label": "TLS (Transport Layer Security)"
+      },
+      {
+        "id": "urn:ngm:class:ssh-secure-shell",
+        "label": "SSH (Secure Shell)"
+      },
+      {
+        "id": "urn:ngm:class:ipsec",
+        "label": "IPsec"
+      },
+      {
+        "id": "urn:ngm:class:diffie-hellman-key-exchange",
+        "label": "Diffie-Hellman Key Exchange"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:encryption",
         "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:digital-signatures",
+        "label": "Digital Signatures"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-functions",
+        "label": "Cryptographic Hash Functions"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:kerberos",
         "label": "Kerberos"
+      },
+      {
+        "id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      },
+      {
+        "id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proofs",
+        "label": "Zero-Knowledge Proofs"
+      },
+      {
+        "id": "urn:ngm:class:message-authentication-codes",
+        "label": "Message Authentication Codes"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:obfuscation",
+        "label": "Obfuscation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:symmetric-key-cryptography",
+        "label": "Symmetric Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:asymmetric-key-cryptography",
+        "label": "Asymmetric Key Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
+    ]
   },
   "wikilinks": [
     {

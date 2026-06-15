@@ -57,7 +57,7 @@ public:: true
   "definition": "Heuristic methods in AI are problem-solving approaches that employ practical, experience-based techniques to find satisfactory solutions when optimal solutions are computationally infeasible. They include search heuristics such as A* and hill climbing, rule-of-thumb strategies, and metaheuristics such as genetic algorithms and simulated annealing, trading completeness for efficiency in combinatorial optimisation and planning tasks.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "qualityScore": 0.7,
+  "qualityScore": 0.72,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-technique",
@@ -69,7 +69,51 @@ public:: true
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:heuristic-search",
+      "label": "Heuristic Search"
+    },
+    {
+      "@id": "urn:ngm:class:approximate-algorithms",
+      "label": "Approximate Algorithms"
+    }
+  ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:metaheuristics",
+        "label": "Metaheuristics"
+      },
+      {
+        "@id": "urn:ngm:class:local-search",
+        "label": "Local Search"
+      },
+      {
+        "@id": "urn:ngm:class:greedy-algorithm",
+        "label": "Greedy Algorithm"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:combinatorial-optimization",
+        "label": "Combinatorial Optimization"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:problem-formulation",
+        "label": "Problem Formulation"
+      },
+      {
+        "@id": "urn:ngm:class:evaluation-function",
+        "label": "Evaluation Function"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:automated-planning",
@@ -78,12 +122,38 @@ public:: true
       {
         "@id": "urn:ngm:class:pathfinding-algorithm",
         "label": "Pathfinding Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      },
+      {
+        "@id": "urn:ngm:class:scheduling",
+        "label": "Scheduling"
       }
     ],
     "dependsOn": [
       {
         "@id": "urn:ngm:class:search-algorithm",
         "label": "Search Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:state-space-representation",
+        "label": "State Space Representation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:simulated-annealing",
+        "label": "Simulated Annealing"
+      },
+      {
+        "@id": "urn:ngm:class:genetic-algorithm",
+        "label": "Genetic Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:hill-climbing",
+        "label": "Hill Climbing"
       }
     ],
     "uses": [
@@ -94,12 +164,54 @@ public:: true
       {
         "@id": "urn:ngm:class:optimization-algorithm",
         "label": "Optimization Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:domain-knowledge",
+        "label": "Domain Knowledge"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:exact-algorithm",
+        "label": "Exact Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:brute-force-search",
+        "label": "Brute Force Search"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
       }
     ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:planning-and-scheduling",
         "label": "Planning and Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:computational-complexity",
+        "label": "Computational Complexity"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-reasoning",
+        "label": "Probabilistic Reasoning"
       }
     ]
   }

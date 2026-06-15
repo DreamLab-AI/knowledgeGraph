@@ -29,18 +29,55 @@ public:: true
       {"@id": "urn:ngm:class:policy-enforcement", "label": "Policy Enforcement"},
       {"@id": "urn:ngm:class:legal-framework", "label": "Legal Framework"},
       {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:regulatory-authority", "label": "Regulatory Authority"},
+      {"@id": "urn:ngm:class:audit-mechanism", "label": "Audit Mechanism"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:sanctions-enforcement", "label": "Sanctions Enforcement"},
-      {"@id": "urn:ngm:class:legal-compliance", "label": "Legal Compliance"}
+      {"@id": "urn:ngm:class:legal-compliance", "label": "Legal Compliance"},
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
+      {"@id": "urn:ngm:class:rule-of-law", "label": "Rule of Law"},
+      {"@id": "urn:ngm:class:deterrence", "label": "Deterrence"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:policy-enforcement-point", "label": "Policy Enforcement Point"},
-      {"@id": "urn:ngm:class:policy-engine", "label": "Policy Engine"}
+      {"@id": "urn:ngm:class:policy-engine", "label": "Policy Engine"},
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
+      {"@id": "urn:ngm:class:monitoring-system", "label": "Monitoring System"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:violation-detection", "label": "Violation Detection"},
+      {"@id": "urn:ngm:class:penalty-mechanism", "label": "Penalty Mechanism"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:trust-framework", "label": "Trust Framework"},
+      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
+      {"@id": "urn:ngm:class:algorithmic-auditing", "label": "Algorithmic Auditing"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:voluntary-compliance", "label": "Voluntary Compliance"},
+      {"@id": "urn:ngm:class:self-regulation", "label": "Self-Regulation"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:compliance-mechanism", "label": "Compliance Mechanism"},
+    {"@id": "urn:ngm:class:regulatory-mechanism", "label": "Regulatory Mechanism"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

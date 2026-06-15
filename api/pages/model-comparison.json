@@ -16,8 +16,26 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ablation-study",
+        "label": "Ablation Study"
+      },
+      {
+        "id": "urn:ngm:class:baseline-model",
+        "label": "Baseline Model"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:evaluation-dataset",
+        "label": "Evaluation Dataset"
+      },
+      {
+        "id": "urn:ngm:class:performance-metric",
+        "label": "Performance Metric"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:model-optimisation-and-performance",
@@ -26,12 +44,48 @@
       {
         "id": "urn:ngm:class:ai-model-card",
         "label": "AI Model Card"
+      },
+      {
+        "id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:pareto-optimality",
+        "label": "Pareto Optimality"
+      },
+      {
+        "id": "urn:ngm:class:multi-objective-optimisation",
+        "label": "Multi-Objective Optimisation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:human-evaluation",
+        "label": "Human Evaluation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:benchmarks",
@@ -44,10 +98,23 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
+      },
+      {
+        "id": "urn:ngm:class:statistical-significance-testing",
+        "label": "Statistical Significance Testing"
+      },
+      {
+        "id": "urn:ngm:class:held-out-test-set",
+        "label": "Held-Out Test Set"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:helm-holistic-evaluation-of-language-models",
+        "label": "HELM Holistic Evaluation of Language Models"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -61,6 +128,18 @@
       {
         "id": "urn:ngm:class:fairness-accuracy-tradeoffs",
         "label": "Fairness Accuracy Tradeoffs"
+      },
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-contamination",
+        "label": "Benchmark Contamination"
+      },
+      {
+        "id": "urn:ngm:class:leaderboard",
+        "label": "Leaderboard"
       }
     ]
   },

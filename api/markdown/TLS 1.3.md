@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "TLS 1.3",
   "definition": "TLS 1.3 (Transport Layer Security version 1.3, standardised in RFC 8446, August 2018) is the current major version of the TLS protocol, redesigned to eliminate legacy cryptographic weaknesses, reduce handshake round-trips from two to one (zero for session resumption), mandate forward secrecy on every connection, and restrict the cipher suite to a small set of authenticated encryption algorithms. It replaces TLS 1.2 as the baseline secure transport for HTTPS, QUIC, and virtually all authenticated internet communications.",
-  "domain": "infrastructure",
+  "domain": "security",
   "maturity": "mature",
   "subClassOf": [
     {"@id": "urn:ngm:class:transport-layer-security", "label": "Transport Layer Security"},
@@ -30,20 +30,51 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:key-exchange", "label": "Key Exchange"},
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}
+      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
+      {"@id": "urn:ngm:class:elliptic-curve-diffie-hellman", "label": "Elliptic Curve Diffie-Hellman"},
+      {"@id": "urn:ngm:class:authenticated-encryption", "label": "Authenticated Encryption"},
+      {"@id": "urn:ngm:class:digital-certificate", "label": "Digital Certificate"},
+      {"@id": "urn:ngm:class:x-509", "label": "X.509"}
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"}
+      {"@id": "urn:ngm:class:ietf", "label": "IETF"},
+      {"@id": "urn:ngm:class:rfc-8446", "label": "RFC 8446"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:quic", "label": "QUIC"},
-      {"@id": "urn:ngm:class:network-security", "label": "Network Security"}
+      {"@id": "urn:ngm:class:network-security", "label": "Network Security"},
+      {"@id": "urn:ngm:class:https", "label": "HTTPS"},
+      {"@id": "urn:ngm:class:forward-secrecy", "label": "Forward Secrecy"},
+      {"@id": "urn:ngm:class:zero-round-trip-resumption", "label": "Zero Round Trip Resumption"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
+      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:tls-1-2", "label": "TLS 1.2"},
+      {"@id": "urn:ngm:class:ssl", "label": "SSL"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:certificate-transparency", "label": "Certificate Transparency"}
+      {"@id": "urn:ngm:class:certificate-transparency", "label": "Certificate Transparency"},
+      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"},
+      {"@id": "urn:ngm:class:http-3", "label": "HTTP/3"},
+      {"@id": "urn:ngm:class:mutual-tls", "label": "Mutual TLS"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:transport-layer-security-1-3", "label": "Transport Layer Security 1.3"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

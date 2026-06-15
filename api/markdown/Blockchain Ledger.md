@@ -28,19 +28,53 @@ alias:: BlockchainLedger
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:immutable-record", "label": "Immutable Record"}
+      {"@id": "urn:ngm:class:immutable-record", "label": "Immutable Record"},
+      {"@id": "urn:ngm:class:genesis-block", "label": "Genesis Block"},
+      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
+      {"@id": "urn:ngm:class:utxo-set", "label": "UTXO Set"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:blockchain-consensus", "label": "Blockchain Consensus"},
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"}
+      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"},
+      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+      {"@id": "urn:ngm:class:node", "label": "Node"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"},
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
+      {"@id": "urn:ngm:class:append-only-log", "label": "Append-Only Log"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:record-keeping-system", "label": "Record Keeping System"},
+      {"@id": "urn:ngm:class:centralised-database", "label": "Centralised Database"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:data-provenance", "label": "Data Provenance"},
+      {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:record-keeping-system", "label": "Record Keeping System"}
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"},
+      {"@id": "urn:ngm:class:state-channel", "label": "State Channel"}
     ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
+    {"@id": "urn:ngm:class:chain-of-blocks", "label": "Chain of Blocks"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "quality": 0.8
 }

@@ -74,10 +74,10 @@ public:: true
   "@id": "urn:ngm:class:intrinsic-interpretability",
   "@type": "Class",
   "label": "Intrinsic Interpretability",
-  "definition": "The inherent transparency and understandability of a machine learning model's architecture and decision-making process, achieved through model design rather than external explanation techniques, enabling direct human comprehension without additional interpretability mods.",
+  "definition": "The inherent transparency and understandability of a machine learning model's architecture and decision-making process, achieved through model design rather than external explanation techniques, enabling direct human comprehension without additional interpretability methods.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "qualityScore": 0.7,
+  "qualityScore": 0.72,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
@@ -87,25 +87,58 @@ public:: true
   "relations": {
     "contrastsWith": [
       {"@id": "urn:ngm:class:post-hoc-explanation", "label": "Post Hoc Explanation"},
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"}
+      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
+      {"@id": "urn:ngm:class:black-box-model", "label": "Black Box Model"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
     ],
     "partOf": [
       {"@id": "urn:ngm:class:model-interpretability", "label": "Model Interpretability"},
       {"@id": "urn:ngm:class:interpretable-ai", "label": "Interpretable AI"}
     ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:decision-tree", "label": "Decision Tree"},
+      {"@id": "urn:ngm:class:linear-regression", "label": "Linear Regression"},
+      {"@id": "urn:ngm:class:rule-based-system", "label": "Rule Based System"},
+      {"@id": "urn:ngm:class:generalised-additive-model", "label": "Generalised Additive Model"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:model-transparency", "label": "Model Transparency"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
+      {"@id": "urn:ngm:class:algorithmic-auditing", "label": "Algorithmic Auditing"},
+      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human In The Loop"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:fairness-in-machine-learning", "label": "Fairness In Machine Learning"},
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"},
+      {"@id": "urn:ngm:class:model-complexity-constraint", "label": "Model Complexity Constraint"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"},
+      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:causal-inference", "label": "Causal Inference"},
+      {"@id": "urn:ngm:class:model-validation", "label": "Model Validation"},
+      {"@id": "urn:ngm:class:concept-bottleneck-model", "label": "Concept Bottleneck Model"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:governance", "label": "Governance"},
+      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}
     ]
   },
+  "sameAs": [
+    {"@id": "urn:ngm:class:glass-box-model", "label": "Glass Box Model"},
+    {"@id": "urn:ngm:class:transparent-model", "label": "Transparent Model"}
+  ],
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

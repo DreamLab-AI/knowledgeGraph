@@ -28,18 +28,56 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:erasure-coding", "label": "Erasure Coding"},
       {"@id": "urn:ngm:class:data-availability", "label": "Data Availability"},
-      {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"}
+      {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"},
+      {"@id": "urn:ngm:class:finite-field-arithmetic", "label": "Finite Field Arithmetic"},
+      {"@id": "urn:ngm:class:galois-field", "label": "Galois Field"},
+      {"@id": "urn:ngm:class:coding-theory", "label": "Coding Theory"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"}
+      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"},
+      {"@id": "urn:ngm:class:data-availability-sampling", "label": "Data Availability Sampling"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:polynomial-commitment", "label": "Polynomial Commitment"},
+      {"@id": "urn:ngm:class:stark-proof", "label": "STARK Proof"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:maximum-distance-separable-code", "label": "Maximum Distance Separable Code"},
+      {"@id": "urn:ngm:class:singleton-bound", "label": "Singleton Bound"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:polynomial-interpolation", "label": "Polynomial Interpolation"},
+      {"@id": "urn:ngm:class:berlekamp-massey-algorithm", "label": "Berlekamp-Massey Algorithm"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:cyclic-redundancy-check", "label": "Cyclic Redundancy Check"},
+      {"@id": "urn:ngm:class:block-code", "label": "Block Code"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:parity-check-symbol", "label": "Parity Check Symbol"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:turbo-code", "label": "Turbo Code"},
+      {"@id": "urn:ngm:class:low-density-parity-check-code", "label": "Low-Density Parity-Check Code"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:rs-codes", "label": "RS Codes"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

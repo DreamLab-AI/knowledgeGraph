@@ -77,20 +77,120 @@ public:: true
       {
         "@id": "urn:ngm:class:real-time-operating-system",
         "label": "Real-Time Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:dds-middleware",
+        "label": "DDS Middleware"
+      },
+      {
+        "@id": "urn:ngm:class:microcontroller",
+        "label": "Microcontroller"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:real-time-control",
         "label": "Real-Time Control"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-integration",
+        "label": "Sensor Integration"
+      },
+      {
+        "@id": "urn:ngm:class:actuator-control",
+        "label": "Actuator Control"
+      },
+      {
+        "@id": "urn:ngm:class:ros-node",
+        "label": "ROS Node"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:ros2",
+        "label": "ROS 2"
+      },
+      {
+        "@id": "urn:ngm:class:publish-subscribe-messaging",
+        "label": "Publish-Subscribe Messaging"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:rmw-microxrcedds",
+        "label": "rmw_microxrcedds"
+      },
+      {
+        "@id": "urn:ngm:class:micro-xrce-dds",
+        "label": "Micro XRCE-DDS"
+      },
+      {
+        "@id": "urn:ngm:class:freertos",
+        "label": "FreeRTOS"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:embedded-robotics",
+        "label": "Embedded Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:rosserial",
+        "label": "rosserial"
+      },
+      {
+        "@id": "urn:ngm:class:ros",
+        "label": "ROS"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:robot-middleware",
+        "label": "Robot Middleware"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:micro-ros-framework",
+      "label": "micro-ROS Framework"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

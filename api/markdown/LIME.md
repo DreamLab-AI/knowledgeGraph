@@ -69,20 +69,118 @@ public:: true
       {
         "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:black-box-model",
+        "label": "Black-Box Model"
+      },
+      {
+        "@id": "urn:ngm:class:perturbation-sampling",
+        "label": "Perturbation Sampling"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:explainable-ai",
         "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:local-feature-attribution",
+        "label": "Local Feature Attribution"
+      },
+      {
+        "@id": "urn:ngm:class:model-debugging",
+        "label": "Model Debugging"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-transparency",
+        "label": "Algorithmic Transparency"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:linear-model",
+        "label": "Linear Model"
+      },
+      {
+        "@id": "urn:ngm:class:surrogate-model",
+        "label": "Surrogate Model"
+      },
+      {
+        "@id": "urn:ngm:class:weighted-sampling",
+        "label": "Weighted Sampling"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:shap",
+        "label": "SHAP"
+      },
+      {
+        "@id": "urn:ngm:class:global-model-explanation",
+        "label": "Global Model Explanation"
+      },
+      {
+        "@id": "urn:ngm:class:integrated-gradients",
+        "label": "Integrated Gradients"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:feature-importance",
+        "label": "Feature Importance"
+      },
+      {
+        "@id": "urn:ngm:class:counterfactual-explanation",
+        "label": "Counterfactual Explanation"
+      },
+      {
+        "@id": "urn:ngm:class:anchor-rules",
+        "label": "Anchor Rules"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:explainability-framework",
+        "label": "Explainability Framework"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:local-interpretable-model-agnostic-explanations",
+      "label": "Local Interpretable Model-agnostic Explanations"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

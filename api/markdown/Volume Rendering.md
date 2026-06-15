@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Volume Rendering",
   "definition": "Volume rendering produces images directly from three-dimensional scalar or density fields by integrating colour and opacity along view rays, rather than rendering explicit surfaces.",
-  "domain": "metaverse",
+  "domain": "spatial-computing",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [
@@ -65,20 +65,114 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:transfer-function",
+        "label": "Transfer Function"
+      },
+      {
+        "@id": "urn:ngm:class:ray-casting",
+        "label": "Ray Casting"
+      },
+      {
+        "@id": "urn:ngm:class:opacity-mapping",
+        "label": "Opacity Mapping"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:graphics-pipeline",
         "label": "Graphics Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:3d-scalar-field",
+        "label": "3D Scalar Field"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:neural-radiance-fields",
         "label": "Neural Radiance Fields"
+      },
+      {
+        "@id": "urn:ngm:class:volumetric-video",
+        "label": "Volumetric Video"
+      },
+      {
+        "@id": "urn:ngm:class:medical-imaging-visualization",
+        "label": "Medical Imaging Visualization"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-visualization",
+        "label": "Scientific Visualization"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ray-marching",
+        "label": "Ray Marching"
+      },
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "@id": "urn:ngm:class:texture-sampling",
+        "label": "Texture Sampling"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:surface-rendering",
+        "label": "Surface Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:voxel",
+        "label": "Voxel"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:direct-volume-rendering",
+      "label": "Direct Volume Rendering"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-29T00:00:00Z",

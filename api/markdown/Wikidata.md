@@ -27,15 +27,48 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"}
+      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
+      {"@id": "urn:ngm:class:sparql", "label": "SPARQL"},
+      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"},
+      {"@id": "urn:ngm:class:entity-resolution", "label": "Entity Resolution"}
     ],
     "enables": [
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"}
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
+      {"@id": "urn:ngm:class:open-data", "label": "Open Data"},
+      {"@id": "urn:ngm:class:federated-query", "label": "Federated Query"},
+      {"@id": "urn:ngm:class:entity-disambiguation", "label": "Entity Disambiguation"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:structured-data", "label": "Structured Data"},
+      {"@id": "urn:ngm:class:authority-control", "label": "Authority Control"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:wikimedia-foundation", "label": "Wikimedia Foundation"},
+      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"}
+      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
+      {"@id": "urn:ngm:class:open-knowledge-graph", "label": "Open Knowledge Graph"},
+      {"@id": "urn:ngm:class:collaborative-editing", "label": "Collaborative Editing"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
     ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:wikidata-knowledge-base", "label": "Wikidata Knowledge Base"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "quality": 0.8
 }

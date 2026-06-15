@@ -25,22 +25,59 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:spatial-mesh", "label": "Spatial Mesh"}],
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
-      {"@id": "urn:ngm:class:three-dimensional-graphics", "label": "Three Dimensional Graphics"},
-      {"@id": "urn:ngm:class:computer-graphics", "label": "Computer Graphics"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:vertex-buffer", "label": "Vertex Buffer"},
+      {"@id": "urn:ngm:class:index-buffer", "label": "Index Buffer"},
+      {"@id": "urn:ngm:class:surface-normal", "label": "Surface Normal"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:coordinate-system", "label": "Coordinate System"},
+      {"@id": "urn:ngm:class:topology", "label": "Topology"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"},
       {"@id": "urn:ngm:class:differentiable-rendering", "label": "Differentiable Rendering"},
-      {"@id": "urn:ngm:class:3-d-rendering", "label": "3D Rendering"}
+      {"@id": "urn:ngm:class:3-d-rendering", "label": "3D Rendering"},
+      {"@id": "urn:ngm:class:collision-detection", "label": "Collision Detection"},
+      {"@id": "urn:ngm:class:finite-element-analysis", "label": "Finite Element Analysis"},
+      {"@id": "urn:ngm:class:level-of-detail", "label": "Level of Detail"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:vertex-shader", "label": "Vertex Shader"},
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"}
+      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
+      {"@id": "urn:ngm:class:lidar", "label": "LiDAR"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:universal-scene-description", "label": "Universal Scene Description"},
+      {"@id": "urn:ngm:class:khronos-group", "label": "Khronos Group"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:voxel-grid", "label": "Voxel Grid"},
+      {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"},
+      {"@id": "urn:ngm:class:implicit-surface", "label": "Implicit Surface"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
+      {"@id": "urn:ngm:class:three-dimensional-graphics", "label": "Three Dimensional Graphics"},
+      {"@id": "urn:ngm:class:computer-graphics", "label": "Computer Graphics"},
+      {"@id": "urn:ngm:class:texture-mapping", "label": "Texture Mapping"},
+      {"@id": "urn:ngm:class:gaussian-splatting", "label": "Gaussian Splatting"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:polygon-mesh", "label": "Polygon Mesh"},
+    {"@id": "urn:ngm:class:triangle-mesh", "label": "Triangle Mesh"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

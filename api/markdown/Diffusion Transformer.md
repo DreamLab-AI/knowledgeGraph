@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Diffusion Transformer",
   "definition": "A Diffusion Transformer (DiT) is a generative model architecture that replaces the convolutional U-Net backbone traditionally used in diffusion models with a scalable transformer architecture operating in a compressed latent space. DiT conditions the denoising process on class labels or text embeddings injected via adaptive layer normalisation or cross-attention, and processes image or video patches as sequences of tokens, enabling the model to leverage the scaling laws well-established for language transformers. Introduced by Peebles and Xie (2023), DiT demonstrated that transformer-based denoisers match or surpass U-Net performance while scaling predictably with model size and compute, forming the basis for state-of-the-art image and video generation systems including Stable Diffusion 3, FLUX, and OpenAI's Sora.",
-  "domain": "ai",
+  "domain": "machine-learning",
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:generative-model", "label": "Generative Model"}],
   "relations": {
@@ -29,20 +29,55 @@ public:: true
       {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
       {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
       {"@id": "urn:ngm:class:latent-diffusion", "label": "Latent Diffusion"},
-      {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"}
+      {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"},
+      {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"},
+      {"@id": "urn:ngm:class:adaptive-layer-normalisation", "label": "Adaptive Layer Normalisation"},
+      {"@id": "urn:ngm:class:patch-embedding", "label": "Patch Embedding"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
       {"@id": "urn:ngm:class:video-generation", "label": "Video Generation"},
-      {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"}
+      {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"},
+      {"@id": "urn:ngm:class:3d-generation", "label": "3D Generation"},
+      {"@id": "urn:ngm:class:audio-generation", "label": "Audio Generation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:diffusion-process", "label": "Diffusion Process"},
+      {"@id": "urn:ngm:class:noise-scheduling", "label": "Noise Scheduling"},
+      {"@id": "urn:ngm:class:denoising-score-matching", "label": "Denoising Score Matching"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:scalable-architecture", "label": "Scalable Architecture"},
+      {"@id": "urn:ngm:class:conditional-generation", "label": "Conditional Generation"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:u-net", "label": "U-Net"},
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
       {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:flow-matching", "label": "Flow Matching"}
+      {"@id": "urn:ngm:class:flow-matching", "label": "Flow Matching"},
+      {"@id": "urn:ngm:class:score-based-model", "label": "Score-Based Model"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:dit", "label": "DiT"},
+    {"@id": "urn:ngm:class:scalable-diffusion-model", "label": "Scalable Diffusion Model"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

@@ -16,8 +16,26 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:advertising-revenue-share",
+        "label": "Advertising Revenue Share"
+      },
+      {
+        "id": "urn:ngm:class:merchandise-sales",
+        "label": "Merchandise Sales"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:audience-engagement",
+        "label": "Audience Engagement"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:multi-party-royalties",
@@ -30,12 +48,43 @@
       {
         "id": "urn:ngm:class:non-fungible-token-nft",
         "label": "Non-Fungible Token (NFT)"
+      },
+      {
+        "id": "urn:ngm:class:fan-ownership",
+        "label": "Fan Ownership"
+      },
+      {
+        "id": "urn:ngm:class:direct-to-consumer",
+        "label": "Direct-to-Consumer"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:content-distribution-platform",
+        "label": "Content Distribution Platform"
+      },
+      {
+        "id": "urn:ngm:class:digital-payment-infrastructure",
+        "label": "Digital Payment Infrastructure"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-media-licensing",
+        "label": "Traditional Media Licensing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:creator-royalty-token",
@@ -48,6 +97,14 @@
       {
         "id": "urn:ngm:class:royalty-distribution",
         "label": "Royalty Distribution"
+      },
+      {
+        "id": "urn:ngm:class:subscription-model",
+        "label": "Subscription Model"
+      },
+      {
+        "id": "urn:ngm:class:payment-processing",
+        "label": "Payment Processing"
       }
     ],
     "supports": [],
@@ -65,6 +122,14 @@
       {
         "id": "urn:ngm:class:nft-marketplace",
         "label": "NFT Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:attention-economy",
+        "label": "Attention Economy"
+      },
+      {
+        "id": "urn:ngm:class:gig-economy",
+        "label": "Gig Economy"
       }
     ]
   },

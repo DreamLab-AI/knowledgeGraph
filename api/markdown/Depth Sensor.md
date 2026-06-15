@@ -25,24 +25,63 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:exteroceptive-sensor", "label": "Exteroceptive Sensor"}],
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"},
-      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"},
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:infrared-emitter", "label": "Infrared Emitter"},
+      {"@id": "urn:ngm:class:image-sensor", "label": "Image Sensor"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:perception-system", "label": "Perception System"},
+      {"@id": "urn:ngm:class:robotic-sensor-suite", "label": "Robotic Sensor Suite"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"},
+      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
+      {"@id": "urn:ngm:class:simultaneous-localization-and-mapping", "label": "Simultaneous Localization and Mapping"},
+      {"@id": "urn:ngm:class:obstacle-avoidance", "label": "Obstacle Avoidance"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:structured-light", "label": "Structured Light"},
+      {"@id": "urn:ngm:class:time-of-flight", "label": "Time of Flight"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
-      {"@id": "urn:ngm:class:camera", "label": "Camera"}
-    ],
-    "enables": [
-      {"@id": "urn:ngm:class:perception-system", "label": "Perception System"},
-      {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"}
+      {"@id": "urn:ngm:class:camera", "label": "Camera"},
+      {"@id": "urn:ngm:class:stereo-vision", "label": "Stereo Vision"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}
+      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
+      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:rgb-camera", "label": "RGB Camera"},
+      {"@id": "urn:ngm:class:radar-sensor", "label": "Radar Sensor"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"},
+      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"},
+      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
+      {"@id": "urn:ngm:class:depth-map", "label": "Depth Map"},
+      {"@id": "urn:ngm:class:scene-understanding", "label": "Scene Understanding"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:range-sensor", "label": "Range Sensor"},
+    {"@id": "urn:ngm:class:3d-sensor", "label": "3D Sensor"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

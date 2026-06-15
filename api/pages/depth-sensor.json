@@ -13,25 +13,78 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:perception-system",
-        "label": "Perception System"
+        "id": "urn:ngm:class:infrared-emitter",
+        "label": "Infrared Emitter"
       },
+      {
+        "id": "urn:ngm:class:image-sensor",
+        "label": "Image Sensor"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "enables": [
       {
         "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localization-and-mapping",
+        "label": "Simultaneous Localization and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:structured-light",
+        "label": "Structured Light"
+      },
+      {
+        "id": "urn:ngm:class:time-of-flight",
+        "label": "Time of Flight"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rgb-camera",
+        "label": "RGB Camera"
+      },
+      {
+        "id": "urn:ngm:class:radar-sensor",
+        "label": "Radar Sensor"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:lidar",
@@ -40,16 +93,33 @@
       {
         "id": "urn:ngm:class:camera",
         "label": "Camera"
+      },
+      {
+        "id": "urn:ngm:class:stereo-vision",
+        "label": "Stereo Vision"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:autonomous-robot",
         "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
       }
     ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      },
+      {
+        "id": "urn:ngm:class:robotic-sensor-suite",
+        "label": "Robotic Sensor Suite"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:depth-sensing",
@@ -62,6 +132,14 @@
       {
         "id": "urn:ngm:class:point-cloud",
         "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:depth-map",
+        "label": "Depth Map"
+      },
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
       }
     ]
   },

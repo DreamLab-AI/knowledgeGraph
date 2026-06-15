@@ -4,7 +4,7 @@
   "slug": "sequential-monte-carlo",
   "public": true,
   "classIri": "urn:ngm:class:sequential-monte-carlo",
-  "domain": "metaverse",
+  "domain": "machine-learning",
   "definition": "Sequential Monte Carlo is a family of methods that approximate evolving probability distributions using a set of weighted samples updated recursively as new observations arrive.",
   "subClassOf": [
     {
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -21,23 +21,118 @@
       {
         "id": "urn:ngm:class:monte-carlo-integration",
         "label": "Monte Carlo Integration"
+      },
+      {
+        "id": "urn:ngm:class:importance-sampling",
+        "label": "Importance Sampling"
+      },
+      {
+        "id": "urn:ngm:class:resampling",
+        "label": "Resampling"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:particle-filter",
         "label": "Particle Filter"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "id": "urn:ngm:class:real-time-tracking",
+        "label": "Real-Time Tracking"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localization-and-mapping",
+        "label": "Simultaneous Localization and Mapping"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-processes",
+        "label": "Stochastic Processes"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:hidden-markov-model",
+        "label": "Hidden Markov Model"
+      },
+      {
+        "id": "urn:ngm:class:state-space-model",
+        "label": "State Space Model"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-graphical-model",
+        "label": "Probabilistic Graphical Model"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:nonlinear-filtering",
+        "label": "Nonlinear Filtering"
+      },
+      {
+        "id": "urn:ngm:class:parameter-estimation",
+        "label": "Parameter Estimation"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:expectation-maximization",
+        "label": "Expectation Maximization"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      }
+    ]
   },
   "wikilinks": [
     {

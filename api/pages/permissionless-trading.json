@@ -17,7 +17,20 @@
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:public-blockchain",
+        "label": "Public Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-liquidity",
+        "label": "On-Chain Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:non-custodial-wallet",
+        "label": "Non-Custodial Wallet"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:asset-trading",
@@ -26,12 +39,46 @@
       {
         "id": "urn:ngm:class:yield-farming",
         "label": "Yield Farming"
+      },
+      {
+        "id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      },
+      {
+        "id": "urn:ngm:class:arbitrage",
+        "label": "Arbitrage"
+      },
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralized-exchange",
+        "label": "Centralized Exchange"
+      },
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:automated-market-maker",
@@ -44,6 +91,14 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-wallet",
+        "label": "Blockchain Wallet"
+      },
+      {
+        "id": "urn:ngm:class:dex-aggregator",
+        "label": "DEX Aggregator"
       }
     ],
     "supports": [],
@@ -65,6 +120,18 @@
       {
         "id": "urn:ngm:class:uniswap",
         "label": "Uniswap"
+      },
+      {
+        "id": "urn:ngm:class:slippage",
+        "label": "Slippage"
+      },
+      {
+        "id": "urn:ngm:class:concentrated-liquidity",
+        "label": "Concentrated Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
       }
     ]
   },

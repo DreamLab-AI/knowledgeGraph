@@ -28,24 +28,56 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
       {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:json-data-interchange-format-schema", "label": "JSON Schema"}
+      {"@id": "urn:ngm:class:json-data-interchange-format-schema", "label": "JSON Schema"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:api-contract", "label": "API Contract"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:rdf", "label": "RDF"},
       {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:sparql", "label": "SPARQL"}
+      {"@id": "urn:ngm:class:sparql", "label": "SPARQL"},
+      {"@id": "urn:ngm:class:xml-schema-definition", "label": "XML Schema Definition"},
+      {"@id": "urn:ngm:class:protocol-buffers", "label": "Protocol Buffers"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
       {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"}
+      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
+      {"@id": "urn:ngm:class:automated-validation", "label": "Automated Validation"},
+      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:data-schema", "label": "Data Schema"},
-      {"@id": "urn:ngm:class:owl-class-hierarchy", "label": "OWL Class Hierarchy"}
+      {"@id": "urn:ngm:class:owl-class-hierarchy", "label": "OWL Class Hierarchy"},
+      {"@id": "urn:ngm:class:contract-testing", "label": "Contract Testing"},
+      {"@id": "urn:ngm:class:schema-registry", "label": "Schema Registry"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:data-type", "label": "Data Type"},
+      {"@id": "urn:ngm:class:namespace", "label": "Namespace"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:w3c", "label": "W3C"},
+      {"@id": "urn:ngm:class:ietf", "label": "IETF"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:schemaless-data", "label": "Schemaless Data"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:data-schema", "label": "Data Schema"},
+    {"@id": "urn:ngm:class:formal-schema", "label": "Formal Schema"}
+  ],
+  "quality": 0.75,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

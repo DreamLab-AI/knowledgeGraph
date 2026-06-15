@@ -26,20 +26,60 @@ alias:: BlindSignatures
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:cryptographic-primitive", "label": "Cryptographic Primitive"}],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:blinding-factor", "label": "Blinding Factor"},
+      {"@id": "urn:ngm:class:unblinding-operation", "label": "Unblinding Operation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"},
+      {"@id": "urn:ngm:class:rsa-cryptosystem", "label": "RSA Cryptosystem"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:ecash", "label": "ecash"},
-      {"@id": "urn:ngm:class:privacy-enhancing-technologies", "label": "Privacy Enhancing Technologies"}
+      {"@id": "urn:ngm:class:privacy-enhancing-technologies", "label": "Privacy Enhancing Technologies"},
+      {"@id": "urn:ngm:class:anonymous-credential", "label": "Anonymous Credential"},
+      {"@id": "urn:ngm:class:unlinkability", "label": "Unlinkability"},
+      {"@id": "urn:ngm:class:privacy-pass", "label": "Privacy Pass"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:cryptographic-algorithm", "label": "Cryptographic Algorithm"}
+      {"@id": "urn:ngm:class:cryptographic-algorithm", "label": "Cryptographic Algorithm"},
+      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:unlinkability", "label": "Unlinkability"},
+      {"@id": "urn:ngm:class:signer-privacy", "label": "Signer Privacy"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:ietf-rfc", "label": "IETF RFC"},
+      {"@id": "urn:ngm:class:w3c-verifiable-credentials", "label": "W3C Verifiable Credentials"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:ring-signature", "label": "Ring Signature"},
+      {"@id": "urn:ngm:class:threshold-signature", "label": "Threshold Signature"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"}
+      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
+      {"@id": "urn:ngm:class:selective-disclosure", "label": "Selective Disclosure"},
+      {"@id": "urn:ngm:class:oblivious-http", "label": "Oblivious HTTP"},
+      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:finance", "label": "Finance"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:blind-digital-signature", "label": "Blind Digital Signature"},
+    {"@id": "urn:ngm:class:chaum-blind-signature", "label": "Chaum Blind Signature"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

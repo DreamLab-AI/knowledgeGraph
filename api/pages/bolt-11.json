@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:bolt-11",
   "domain": "blockchain",
-  "definition": "BOLT11 is the Lightning Network specification for the invoice format used to request a single payment. It encodes payment details into a string that the payer scans or pastes.",
+  "definition": "BOLT11 is the Lightning Network specification for the invoice format used to request a single payment. It encodes payment amount, payment hash, description, expiry, and optional routing hints into a bech32-encoded string that the payer scans or pastes to initiate an off-chain payment.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bolt",
@@ -13,31 +13,137 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:payment-hash",
+        "label": "Payment Hash"
+      },
+      {
+        "id": "urn:ngm:class:routing-hints",
+        "label": "Routing Hints"
+      },
+      {
+        "id": "urn:ngm:class:bech32-encoding",
+        "label": "Bech32 Encoding"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:bolt",
         "label": "BOLT"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:payment-preimage",
+        "label": "Payment Preimage"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:lightning",
         "label": "Lightning"
+      },
+      {
+        "id": "urn:ngm:class:off-chain-payment",
+        "label": "Off-Chain Payment"
+      },
+      {
+        "id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "id": "urn:ngm:class:hashed-time-lock-contract",
+        "label": "Hashed Time-Lock Contract"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:invoice-protocol",
+        "label": "Invoice Protocol"
+      },
+      {
+        "id": "urn:ngm:class:payment-request",
+        "label": "Payment Request"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bolt-12",
+        "label": "BOLT12"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-transaction",
+        "label": "On-Chain Transaction"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:finance",
+        "label": "Finance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:secp256k1",
+        "label": "Secp256k1"
+      },
+      {
+        "id": "urn:ngm:class:sha256",
+        "label": "SHA256"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:point-of-sale",
+        "label": "Point of Sale"
+      },
+      {
+        "id": "urn:ngm:class:qr-code",
+        "label": "QR Code"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:lightning-rfc",
+        "label": "Lightning RFC"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:lightning-network-protocol",
+        "label": "Lightning Network Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:lightning-wallet",
+        "label": "Lightning Wallet"
+      },
+      {
+        "id": "urn:ngm:class:node-id",
+        "label": "Node ID"
+      }
+    ]
   },
   "wikilinks": [
     {

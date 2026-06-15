@@ -58,7 +58,7 @@ public:: true
   "@id": "urn:ngm:class:the-sandbox",
   "@type": "Class",
   "label": "The Sandbox",
-  "definition": "The Sandbox is a blockchain-based virtual world and game-creation platform where users build, own and monetise voxel-based experiences and assets recorded as tokens.",
+  "definition": "The Sandbox is a blockchain-based virtual world and game-creation platform where users build, own and monetise voxel-based experiences and assets recorded as non-fungible tokens on Ethereum, combining user-generated content authoring tools with a decentralised token economy centred on virtual land and in-world items.",
   "domain": "metaverse",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -69,6 +69,30 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:voxedit",
+        "label": "VoxEdit"
+      },
+      {
+        "@id": "urn:ngm:class:game-maker",
+        "label": "Game Maker"
+      },
+      {
+        "@id": "urn:ngm:class:sand-token",
+        "label": "SAND Token"
+      },
+      {
+        "@id": "urn:ngm:class:land-nft",
+        "label": "LAND NFT"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:ethereum-smart-contract-platform",
@@ -77,6 +101,14 @@ public:: true
       {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency-wallet",
+        "label": "Cryptocurrency Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
       }
     ],
     "enables": [
@@ -87,14 +119,76 @@ public:: true
       {
         "@id": "urn:ngm:class:blockchain-gaming",
         "label": "Blockchain Gaming"
+      },
+      {
+        "@id": "urn:ngm:class:user-generated-content",
+        "label": "User-Generated Content"
+      },
+      {
+        "@id": "urn:ngm:class:play-to-earn",
+        "label": "Play-to-Earn"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:decentraland",
+        "label": "Decentraland"
+      },
+      {
+        "@id": "urn:ngm:class:roblox",
+        "label": "Roblox"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:virtual-land",
+        "label": "Virtual Land"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:sandbox-metaverse",
+      "label": "Sandbox Metaverse"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

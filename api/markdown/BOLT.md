@@ -73,10 +73,50 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:bolt-11",
+        "label": "BOLT11"
+      },
+      {
+        "@id": "urn:ngm:class:bolt-12",
+        "label": "BOLT12"
+      },
+      {
+        "@id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:onion-routing",
+        "label": "Onion Routing"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:lightning",
         "label": "Lightning"
+      },
+      {
+        "@id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:hashed-timelock-contract",
+        "label": "Hashed Timelock Contract"
       }
     ],
     "enables": [
@@ -87,14 +127,78 @@ public:: true
       {
         "@id": "urn:ngm:class:bolt-12",
         "label": "BOLT12"
+      },
+      {
+        "@id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-payment",
+        "label": "Peer-to-Peer Payment"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:payment-channel-network",
+        "label": "Payment Channel Network"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-protocol",
+        "label": "Layer 2 Protocol"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:lightning-network-specification",
+        "label": "Lightning Network Specification"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:on-chain-transaction",
+        "label": "On-Chain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:invoice",
+        "label": "Invoice"
+      },
+      {
+        "@id": "urn:ngm:class:node-announcement",
+        "label": "Node Announcement"
+      },
+      {
+        "@id": "urn:ngm:class:channel-update",
+        "label": "Channel Update"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:basis-of-lightning-technology",
+      "label": "Basis of Lightning Technology"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

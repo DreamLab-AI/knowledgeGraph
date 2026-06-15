@@ -50,8 +50,8 @@ public:: true
   "@id": "urn:ngm:class:knowledge-sharing",
   "@type": "Class",
   "label": "Knowledge Sharing",
-  "definition": "Collaborative practices and platforms within metaverse environments that facilitate the exchange of information, expertise, and learning experiences among users through immersive virtual spaces, avatars, and AI-enhanced interactions.",
-  "domain": "spatial-computing",
+  "definition": "Collaborative practices and platforms that facilitate the exchange of information, expertise, and learning experiences among users, encompassing immersive virtual environments, AI-enhanced interactions, distributed team workflows, and structured knowledge transfer processes across organisations and disciplines.",
+  "domain": "distributed-collaboration",
   "maturity": "draft",
   "subClassOf": [
     {
@@ -64,20 +64,136 @@ public:: true
       {
         "@id": "urn:ngm:class:distributed-team-collaboration",
         "label": "Distributed Team Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:organisational-learning",
+        "label": "Organisational Learning"
+      },
+      {
+        "@id": "urn:ngm:class:community-of-practice",
+        "label": "Community of Practice"
+      },
+      {
+        "@id": "urn:ngm:class:innovation",
+        "label": "Innovation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "@id": "urn:ngm:class:trust",
+        "label": "Trust"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:tacit-knowledge-transfer",
+        "label": "Tacit Knowledge Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:explicit-knowledge-codification",
+        "label": "Explicit Knowledge Codification"
+      },
+      {
+        "@id": "urn:ngm:class:peer-learning",
+        "label": "Peer Learning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:collaborative-technology",
+        "label": "Collaborative Technology"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:open-source-collaboration",
+        "label": "Open Source Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:information-hoarding",
+        "label": "Information Hoarding"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-silos",
+        "label": "Knowledge Silos"
       }
     ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:collaborative-systems-modality-technology",
         "label": "Collaborative Technology"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:social-learning",
+        "label": "Social Learning"
+      },
+      {
+        "@id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:knowledge-transfer",
+      "label": "Knowledge Transfer"
+    },
+    {
+      "@id": "urn:ngm:class:information-sharing",
+      "label": "Information Sharing"
+    }
+  ],
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

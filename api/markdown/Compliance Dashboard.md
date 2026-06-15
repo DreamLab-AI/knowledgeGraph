@@ -74,8 +74,8 @@ public:: true
   "@id": "urn:ngm:class:compliance-dashboard",
   "@type": "Class",
   "label": "Compliance Dashboard",
-  "definition": "A visual interface and monitoring system that provides real-time visibility into regulatory compliance status, risk metrics, and audit trails across blockchain networks and digital platforms, enabling organizations to track adherence to legal requirements, detect anomalies, and demonstrate compli...",
-  "domain": "artificial-intelligence",
+  "definition": "A visual interface and monitoring system that provides real-time visibility into regulatory compliance status, risk metrics, and audit trails across blockchain networks and digital platforms, enabling organizations to track adherence to legal requirements, detect anomalies, and demonstrate compliance to regulators through transparent reporting.",
+  "domain": "governance",
   "maturity": "draft",
   "subClassOf": [
     {
@@ -84,6 +84,30 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:risk-visualization",
+        "label": "Risk Visualization"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:alert-notification-system",
+        "label": "Alert Notification System"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      },
+      {
+        "@id": "urn:ngm:class:governance-information-system",
+        "label": "Governance Information System"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:analytics-engine",
@@ -96,6 +120,10 @@ public:: true
       {
         "@id": "urn:ngm:class:data-integration",
         "label": "Data Integration"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
       }
     ],
     "enables": [
@@ -104,26 +132,100 @@ public:: true
         "label": "Real-Time Monitoring"
       },
       {
-        "@id": "urn:ngm:class:risk-visualization",
-        "label": "Risk Visualization"
-      },
-      {
         "@id": "urn:ngm:class:regulatory-reporting",
         "label": "Regulatory Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:aml-compliance",
+        "label": "AML Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:kyc-verification",
+        "label": "KYC Verification"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:financial-compliance",
+        "label": "Financial Compliance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:manual-audit",
+        "label": "Manual Audit"
       }
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:regulatory-technology",
-        "label": "Regulatory Technology"
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:transaction-monitoring",
+        "label": "Transaction Monitoring"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:regulatory-compliance-dashboard",
+      "label": "Regulatory Compliance Dashboard"
+    },
+    {
+      "@id": "urn:ngm:class:compliance-monitoring-platform",
+      "label": "Compliance Monitoring Platform"
+    }
+  ],
+  "quality": 0.68,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -27,18 +27,55 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:automated-planning", "label": "Automated Planning"}
+      {"@id": "urn:ngm:class:automated-planning", "label": "Automated Planning"},
+      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"},
+      {"@id": "urn:ngm:class:working-memory", "label": "Working Memory"},
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
-      {"@id": "urn:ngm:class:multi-agent-orchestration", "label": "Multi-Agent Orchestration"}
+      {"@id": "urn:ngm:class:multi-agent-orchestration", "label": "Multi-Agent Orchestration"},
+      {"@id": "urn:ngm:class:process-automation", "label": "Process Automation"},
+      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human-in-the-Loop"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:task-decomposition", "label": "Task Decomposition"},
+      {"@id": "urn:ngm:class:error-recovery", "label": "Error Recovery"},
+      {"@id": "urn:ngm:class:sandboxed-execution", "label": "Sandboxed Execution"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:perceive-plan-act-loop", "label": "Perceive-Plan-Act Loop"},
+      {"@id": "urn:ngm:class:tool-invocation", "label": "Tool Invocation"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"},
+      {"@id": "urn:ngm:class:context-management", "label": "Context Management"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:robotic-process-automation", "label": "Robotic Process Automation"},
+      {"@id": "urn:ngm:class:supervised-automation", "label": "Supervised Automation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:llm-agents", "label": "LLM Agents"},
-      {"@id": "urn:ngm:class:long-horizon-planning", "label": "Long-Horizon Planning"}
+      {"@id": "urn:ngm:class:long-horizon-planning", "label": "Long-Horizon Planning"},
+      {"@id": "urn:ngm:class:agent-benchmarking", "label": "Agent Benchmarking"},
+      {"@id": "urn:ngm:class:react-prompting", "label": "ReAct Prompting"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:agentic-task-execution", "label": "Agentic Task Execution"},
+    {"@id": "urn:ngm:class:ai-agent-execution", "label": "AI Agent Execution"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

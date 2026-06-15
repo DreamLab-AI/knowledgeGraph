@@ -17,10 +17,23 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:emotion-recognition",
+        "label": "Emotion Recognition"
+      },
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:social-behavior",
+        "label": "Social Behavior"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:communication-capabilities",
@@ -29,6 +42,14 @@
       {
         "id": "urn:ngm:class:social-intelligence",
         "label": "Social Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:social-awareness",
+        "label": "Social Awareness"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
       }
     ],
     "enables": [
@@ -39,12 +60,39 @@
       {
         "id": "urn:ngm:class:human-robot-collaboration",
         "label": "Human-Robot Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:companion-robotics",
+        "label": "Companion Robotics"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:industrial-robotics",
+        "label": "Industrial Robotics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:social-sciences",
+        "label": "Social Sciences"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:affective-computing",
@@ -57,12 +105,47 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:speech-synthesis",
+        "label": "Speech Synthesis"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:healthcare",
+        "label": "Healthcare"
+      },
+      {
+        "id": "urn:ngm:class:education",
+        "label": "Education"
+      },
+      {
+        "id": "urn:ngm:class:service-industry",
+        "label": "Service Industry"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:social-agent",
+        "label": "Social Agent"
+      },
+      {
+        "id": "urn:ngm:class:emotional-expression",
+        "label": "Emotional Expression"
+      },
+      {
+        "id": "urn:ngm:class:theory-of-mind",
+        "label": "Theory of Mind"
+      }
+    ]
   },
   "wikilinks": [
     {

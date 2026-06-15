@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:ethernet",
   "@type": "Class",
   "label": "Ethernet",
-  "definition": "Ethernet is a family of wired networking technologies, standardised as IEEE 802.3, used to connect devices in local area networks.",
+  "definition": "Ethernet is a family of wired networking technologies, standardised as IEEE 802.3, used to connect devices in local area networks (LANs) and data centres via twisted-pair, fibre, and coaxial cabling at speeds from 10 Mbit/s to 400 Gbit/s.",
   "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -52,11 +52,72 @@ public:: true
       "label": "Network Protocol"
     }
   ],
-  "quality": 0.6,
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:mac-address", "label": "MAC Address"},
+      {"@id": "urn:ngm:class:ethernet-frame", "label": "Ethernet Frame"},
+      {"@id": "urn:ngm:class:physical-layer", "label": "Physical Layer"},
+      {"@id": "urn:ngm:class:data-link-layer", "label": "Data Link Layer"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:local-area-network", "label": "Local Area Network"},
+      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:network-switch", "label": "Network Switch"},
+      {"@id": "urn:ngm:class:network-cable", "label": "Network Cable"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:local-area-network", "label": "Local Area Network"},
+      {"@id": "urn:ngm:class:data-centre-networking", "label": "Data Centre Networking"},
+      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:ieee-802-3", "label": "IEEE 802.3"},
+      {"@id": "urn:ngm:class:csma-cd", "label": "CSMA/CD"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:ieee-802-3", "label": "IEEE 802.3"},
+      {"@id": "urn:ngm:class:osi-model", "label": "OSI Model"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:twisted-pair-cabling", "label": "Twisted Pair Cabling"},
+      {"@id": "urn:ngm:class:fibre-optic-cable", "label": "Fibre Optic Cable"},
+      {"@id": "urn:ngm:class:full-duplex-communication", "label": "Full Duplex Communication"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:tcp-ip", "label": "TCP/IP"},
+      {"@id": "urn:ngm:class:vlan", "label": "VLAN"},
+      {"@id": "urn:ngm:class:power-over-ethernet", "label": "Power over Ethernet"},
+      {"@id": "urn:ngm:class:time-sensitive-networking", "label": "Time-Sensitive Networking"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:ieee", "label": "IEEE"},
+      {"@id": "urn:ngm:class:ieee-802-3", "label": "IEEE 802.3"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:wi-fi", "label": "Wi-Fi"},
+      {"@id": "urn:ngm:class:infiniband", "label": "InfiniBand"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
+      {"@id": "urn:ngm:class:ip-address", "label": "IP Address"},
+      {"@id": "urn:ngm:class:bandwidth", "label": "Bandwidth"}
+    ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:ieee-802-3", "label": "IEEE 802.3"}
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

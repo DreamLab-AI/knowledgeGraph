@@ -21,26 +21,64 @@ public:: true
   "@type": "Class",
   "label": "Pharmaceutical Supply Chain",
   "definition": "The Pharmaceutical Supply Chain encompasses all entities, processes, and systems involved in the production, storage, distribution, and dispensing of medicinal products, from active pharmaceutical ingredient (API) synthesis through to patient delivery. It is subject to stringent regulatory serialisation and traceability requirements designed to prevent counterfeit medicines from entering the legitimate supply chain.",
-  "domain": "governance",
+  "domain": "supply-chain",
   "maturity": "mature",
   "subClassOf": [
     {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}
   ],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:pharmaceutical-logistics", "label": "Pharmaceutical Logistics"},
+      {"@id": "urn:ngm:class:cold-chain-monitoring", "label": "Cold Chain Monitoring"},
+      {"@id": "urn:ngm:class:drug-distribution-network", "label": "Drug Distribution Network"},
+      {"@id": "urn:ngm:class:serialisation-system", "label": "Serialisation System"}
+    ],
     "requires": [
       {"@id": "urn:ngm:class:rfid", "label": "RFID"},
       {"@id": "urn:ngm:class:dscsa-compliance", "label": "DSCSA Compliance"},
-      {"@id": "urn:ngm:class:pharmaceutical-traceability", "label": "Pharmaceutical Traceability"}
-    ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:cold-chain-monitoring", "label": "Cold Chain Monitoring"},
-      {"@id": "urn:ngm:class:blockchain-provenance", "label": "Blockchain Provenance"}
+      {"@id": "urn:ngm:class:pharmaceutical-traceability", "label": "Pharmaceutical Traceability"},
+      {"@id": "urn:ngm:class:gs1-standards", "label": "GS1 Standards"},
+      {"@id": "urn:ngm:class:electronic-product-information", "label": "Electronic Product Information"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:pharmaceutical-logistics", "label": "Pharmaceutical Logistics"}
+      {"@id": "urn:ngm:class:barcode-scanning", "label": "Barcode Scanning"},
+      {"@id": "urn:ngm:class:iot-sensor", "label": "IoT Sensor"},
+      {"@id": "urn:ngm:class:enterprise-resource-planning", "label": "Enterprise Resource Planning"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:gs1-standards", "label": "GS1 Standards"},
+      {"@id": "urn:ngm:class:eu-falsified-medicines-directive", "label": "EU Falsified Medicines Directive"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:counterfeit-drug-detection", "label": "Counterfeit Drug Detection"},
+      {"@id": "urn:ngm:class:product-recall-management", "label": "Product Recall Management"},
+      {"@id": "urn:ngm:class:medication-safety", "label": "Medication Safety"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:api-manufacturing", "label": "API Manufacturing"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:blockchain-provenance", "label": "Blockchain Provenance"},
+      {"@id": "urn:ngm:class:antimicrobial-resistance", "label": "Antimicrobial Resistance"},
+      {"@id": "urn:ngm:class:supply-chain-resilience", "label": "Supply Chain Resilience"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"},
+      {"@id": "urn:ngm:class:governance", "label": "Governance"}
     ]
   },
-  "quality": 0.85
+  "sameAs": [
+    {"@id": "urn:ngm:class:pharma-supply-chain", "label": "Pharma Supply Chain"},
+    {"@id": "urn:ngm:class:drug-supply-chain", "label": "Drug Supply Chain"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

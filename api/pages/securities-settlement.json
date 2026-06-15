@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:trade-clearing",
+        "label": "Trade Clearing"
+      },
+      {
+        "id": "urn:ngm:class:delivery-versus-payment",
+        "label": "Delivery versus Payment"
+      },
+      {
+        "id": "urn:ngm:class:trade-confirmation",
+        "label": "Trade Confirmation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:central-securities-depository",
+        "label": "Central Securities Depository"
+      },
+      {
+        "id": "urn:ngm:class:central-counterparty-clearing",
+        "label": "Central Counterparty Clearing"
+      },
+      {
+        "id": "urn:ngm:class:custodian-bank",
+        "label": "Custodian Bank"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:digital-asset-trading",
@@ -26,26 +52,28 @@
       {
         "id": "urn:ngm:class:trustless-settlement",
         "label": "Trustless Settlement"
+      },
+      {
+        "id": "urn:ngm:class:tokenised-securities",
+        "label": "Tokenised Securities"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [
-      {
-        "id": "urn:ngm:class:digital-asset-infrastructure",
-        "label": "Digital Asset Infrastructure"
-      },
+    "dependsOn": [
       {
         "id": "urn:ngm:class:financial-infrastructure",
         "label": "Financial Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "id": "urn:ngm:class:real-time-gross-settlement",
+        "label": "Real-Time Gross Settlement"
       }
     ],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "implements": [],
+    "contrastsWith": [
       {
         "id": "urn:ngm:class:atomic-settlement",
         "label": "Atomic Settlement"
@@ -53,10 +81,56 @@
       {
         "id": "urn:ngm:class:instant-value-settlement",
         "label": "Instant value settlement"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-asset-infrastructure",
+        "label": "Digital Asset Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
       {
         "id": "urn:ngm:class:securities-regulation",
         "label": "Securities Regulation"
+      },
+      {
+        "id": "urn:ngm:class:central-securities-depositories-regulation",
+        "label": "Central Securities Depositories Regulation"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:counterparty-risk",
+        "label": "Counterparty Risk"
+      },
+      {
+        "id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      },
+      {
+        "id": "urn:ngm:class:financial-market-infrastructure",
+        "label": "Financial Market Infrastructure"
       }
     ]
   },

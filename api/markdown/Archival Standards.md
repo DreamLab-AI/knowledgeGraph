@@ -82,8 +82,8 @@ public:: true
   "@id": "urn:ngm:class:archival-standards",
   "@type": "Class",
   "label": "Archival Standards",
-  "definition": "Archival Standards encompass frameworks, specifications, and best practices for long-term digital preservation, including metadata standards (PREMIS, METS), reference models (OAIS), and storage technologies that ensure digital content remains accessible, authentic, and interpretable across techno...",
-  "domain": "spatial-computing",
+  "definition": "Archival Standards encompass frameworks, specifications, and best practices for long-term digital preservation, including metadata standards (PREMIS, METS), reference models (OAIS), and storage technologies that ensure digital content remains accessible, authentic, and interpretable across technological changes.",
+  "domain": "standards",
   "maturity": "draft",
   "subClassOf": [
     {
@@ -92,12 +92,6 @@ public:: true
     }
   ],
   "relations": {
-    "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:infra-legal-and-regulatory",
-        "label": "Legal and Regulatory"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:preservation-planning",
@@ -110,6 +104,14 @@ public:: true
       {
         "@id": "urn:ngm:class:storage-infrastructure",
         "label": "Storage Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:digital-preservation",
+        "label": "Digital Preservation"
+      },
+      {
+        "@id": "urn:ngm:class:fixity-checking",
+        "label": "Fixity Checking"
       }
     ],
     "enables": [
@@ -124,14 +126,114 @@ public:: true
       {
         "@id": "urn:ngm:class:long-term-preservation",
         "label": "Long-Term Preservation"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-digital-repository",
+        "label": "Trusted Digital Repository"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:oais-reference-model",
+        "label": "OAIS Reference Model"
+      },
+      {
+        "@id": "urn:ngm:class:premis-metadata-standard",
+        "label": "PREMIS Metadata Standard"
+      },
+      {
+        "@id": "urn:ngm:class:mets-metadata-standard",
+        "label": "METS Metadata Standard"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:checksum-verification",
+        "label": "Checksum Verification"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:information-governance",
+        "label": "Information Governance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-14721",
+        "label": "ISO 14721"
+      },
+      {
+        "@id": "urn:ngm:class:iso-16363",
+        "label": "ISO 16363"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:backup-and-recovery",
+        "label": "Backup and Recovery"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infra-legal-and-regulatory",
+        "label": "Legal and Regulatory"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:preservation-standards",
+        "label": "Preservation Standards"
+      },
+      {
+        "@id": "urn:ngm:class:records-management",
+        "label": "Records Management"
+      },
+      {
+        "@id": "urn:ngm:class:open-archival-information-system",
+        "label": "Open Archival Information System"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:preservation-standards",
+      "label": "Preservation Standards"
+    },
+    {
+      "@id": "urn:ngm:class:digital-archiving-standards",
+      "label": "Digital Archiving Standards"
+    }
+  ],
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

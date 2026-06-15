@@ -27,6 +27,17 @@ public:: true
     {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
   ],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:data-stewardship", "label": "Data Stewardship"},
+      {"@id": "urn:ngm:class:data-quality-management", "label": "Data Quality Management"},
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
+      {"@id": "urn:ngm:class:data-classification", "label": "Data Classification"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:data-lineage", "label": "Data Lineage"},
+      {"@id": "urn:ngm:class:metadata-registry", "label": "Metadata Registry"},
+      {"@id": "urn:ngm:class:data-catalogue", "label": "Data Catalogue"}
+    ],
     "uses": [
       {"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"},
       {"@id": "urn:ngm:class:data-mesh", "label": "Data Mesh"},
@@ -35,15 +46,41 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:privacy-and-data-governance", "label": "Privacy and Data Governance"},
       {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"}
+      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
+      {"@id": "urn:ngm:class:regulatory-reporting", "label": "Regulatory Reporting"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"},
+      {"@id": "urn:ngm:class:data-sovereignty", "label": "Data Sovereignty"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:dama-dmbok", "label": "DAMA-DMBOK"},
+      {"@id": "urn:ngm:class:iso-8000", "label": "ISO 8000"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:data-anarchy", "label": "Data Anarchy"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:security", "label": "Security"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
       {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
-      {"@id": "urn:ngm:class:metadata-registry", "label": "Metadata Registry"}
+      {"@id": "urn:ngm:class:master-data-management", "label": "Master Data Management"},
+      {"@id": "urn:ngm:class:data-ethics", "label": "Data Ethics"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:data-management-framework", "label": "Data Management Framework"},
+    {"@id": "urn:ngm:class:enterprise-data-governance", "label": "Enterprise Data Governance"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

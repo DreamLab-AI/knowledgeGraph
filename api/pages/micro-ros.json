@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -25,23 +25,110 @@
       {
         "id": "urn:ngm:class:real-time-operating-system",
         "label": "Real-Time Operating System"
+      },
+      {
+        "id": "urn:ngm:class:dds-middleware",
+        "label": "DDS Middleware"
+      },
+      {
+        "id": "urn:ngm:class:microcontroller",
+        "label": "Microcontroller"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:real-time-control",
         "label": "Real-Time Control"
+      },
+      {
+        "id": "urn:ngm:class:sensor-integration",
+        "label": "Sensor Integration"
+      },
+      {
+        "id": "urn:ngm:class:actuator-control",
+        "label": "Actuator Control"
+      },
+      {
+        "id": "urn:ngm:class:ros-node",
+        "label": "ROS Node"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ros2",
+        "label": "ROS 2"
+      },
+      {
+        "id": "urn:ngm:class:publish-subscribe-messaging",
+        "label": "Publish-Subscribe Messaging"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rosserial",
+        "label": "rosserial"
+      },
+      {
+        "id": "urn:ngm:class:ros",
+        "label": "ROS"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rmw-microxrcedds",
+        "label": "rmw_microxrcedds"
+      },
+      {
+        "id": "urn:ngm:class:micro-xrce-dds",
+        "label": "Micro XRCE-DDS"
+      },
+      {
+        "id": "urn:ngm:class:freertos",
+        "label": "FreeRTOS"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:embedded-robotics",
+        "label": "Embedded Robotics"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robot-middleware",
+        "label": "Robot Middleware"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ]
   },
   "wikilinks": [
     {

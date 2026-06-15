@@ -54,7 +54,7 @@ public:: true
   "@id": "urn:ngm:class:bayesian-deep-learning",
   "@type": "Class",
   "label": "Bayesian Deep Learning",
-  "definition": "Bayesian deep learning combines neural networks with Bayesian inference to represent uncertainty over model parameters and predictions. It treats network weights as random variables with distributions rather than fixed values.",
+  "definition": "Bayesian deep learning combines neural networks with Bayesian inference to represent uncertainty over model parameters and predictions. It treats network weights as random variables with prior and posterior distributions rather than fixed point estimates, enabling calibrated uncertainty quantification over both model parameters and outputs.",
   "domain": "machine-learning",
   "maturity": "emerging",
   "qualityScore": 0.7,
@@ -73,20 +73,122 @@ public:: true
       {
         "@id": "urn:ngm:class:bayesian-inference",
         "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-inference",
+        "label": "Probabilistic Inference"
+      },
+      {
+        "@id": "urn:ngm:class:prior-distribution",
+        "label": "Prior Distribution"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:uncertainty-quantification",
         "label": "Uncertainty Quantification"
+      },
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "@id": "urn:ngm:class:out-of-distribution-detection",
+        "label": "Out-of-Distribution Detection"
+      },
+      {
+        "@id": "urn:ngm:class:calibrated-predictions",
+        "label": "Calibrated Predictions"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-dropout",
+        "label": "Monte Carlo Dropout"
+      },
+      {
+        "@id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "@id": "urn:ngm:class:deep-ensembles",
+        "label": "Deep Ensembles"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:probabilistic-machine-learning",
+        "label": "Probabilistic Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:posterior-approximation",
+        "label": "Posterior Approximation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:safe-ai",
+        "label": "Safe AI"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:frequentist-deep-learning",
+        "label": "Frequentist Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:deterministic-neural-network",
+        "label": "Deterministic Neural Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "@id": "urn:ngm:class:model-calibration",
+        "label": "Model Calibration"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:ai",
+        "label": "AI"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:probabilistic-deep-learning",
+      "label": "Probabilistic Deep Learning"
+    },
+    {
+      "@id": "urn:ngm:class:stochastic-deep-learning",
+      "label": "Stochastic Deep Learning"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

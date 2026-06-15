@@ -28,23 +28,54 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
       {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"}
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
+      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:information-security", "label": "Information Security"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
       {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
       {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"},
-      {"@id": "urn:ngm:class:secure-multi-party-computation", "label": "Secure Multi-Party Computation"}
+      {"@id": "urn:ngm:class:secure-multi-party-computation", "label": "Secure Multi-Party Computation"},
+      {"@id": "urn:ngm:class:trusted-execution-environment", "label": "Trusted Execution Environment"},
+      {"@id": "urn:ngm:class:pseudonymisation", "label": "Pseudonymisation"},
+      {"@id": "urn:ngm:class:synthetic-data", "label": "Synthetic Data"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:privacy-preserving-analytics", "label": "Privacy Preserving Analytics"},
-      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"}
+      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"},
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:confidential-computing", "label": "Confidential Computing"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:data-protection-regulation", "label": "Data Protection Regulation"}
+      {"@id": "urn:ngm:class:data-protection-regulation", "label": "Data Protection Regulation"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
+      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:nist", "label": "NIST"},
+      {"@id": "urn:ngm:class:iso-iec-29101", "label": "ISO/IEC 29101"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:surveillance-technology", "label": "Surveillance Technology"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:pets", "label": "PETs"},
+    {"@id": "urn:ngm:class:privacy-preserving-computation", "label": "Privacy Preserving Computation"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

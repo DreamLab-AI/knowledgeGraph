@@ -13,18 +13,109 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.73,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:arrows-impossibility-theorem",
+        "label": "Arrow's Impossibility Theorem"
+      },
+      {
+        "id": "urn:ngm:class:gibbard-satterthwaite-theorem",
+        "label": "Gibbard-Satterthwaite Theorem"
+      },
+      {
+        "id": "urn:ngm:class:condorcet-method",
+        "label": "Condorcet Method"
+      },
+      {
+        "id": "urn:ngm:class:welfare-function",
+        "label": "Welfare Function"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:preference-aggregation",
+        "label": "Preference Aggregation"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:ranked-choice-voting",
+        "label": "Ranked-Choice Voting"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:individual-rationality",
+        "label": "Individual Rationality"
+      },
+      {
+        "id": "urn:ngm:class:market-mechanism",
+        "label": "Market Mechanism"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:utility-theory",
+        "label": "Utility Theory"
+      },
+      {
+        "id": "urn:ngm:class:formal-logic",
+        "label": "Formal Logic"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:collective-decision-making",
+        "label": "Collective Decision-Making"
+      },
+      {
+        "id": "urn:ngm:class:public-choice-theory",
+        "label": "Public Choice Theory"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -35,6 +126,14 @@
       {
         "id": "urn:ngm:class:governance",
         "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:political-science",
+        "label": "Political Science"
+      },
+      {
+        "id": "urn:ngm:class:axiomatic-method",
+        "label": "Axiomatic Method"
       }
     ]
   },

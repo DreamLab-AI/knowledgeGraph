@@ -27,14 +27,55 @@ public:: true
     {"@id": "urn:ngm:class:compliance", "label": "Compliance"}
   ],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:hazard-analysis-and-critical-control-points", "label": "Hazard Analysis and Critical Control Points"},
+      {"@id": "urn:ngm:class:cold-chain-monitoring", "label": "Cold Chain Monitoring"},
+      {"@id": "urn:ngm:class:traceability", "label": "Traceability"}
+    ],
     "requires": [
       {"@id": "urn:ngm:class:rfid", "label": "RFID"},
-      {"@id": "urn:ngm:class:blockchain-provenance", "label": "Blockchain Provenance"}
+      {"@id": "urn:ngm:class:blockchain-provenance", "label": "Blockchain Provenance"},
+      {"@id": "urn:ngm:class:iot-sensor", "label": "IoT Sensor"},
+      {"@id": "urn:ngm:class:supply-chain-visibility", "label": "Supply Chain Visibility"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:recall-management", "label": "Recall Management"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"},
+      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:blockchain-traceability", "label": "Blockchain Traceability"},
+      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
+      {"@id": "urn:ngm:class:digital-product-passport", "label": "Digital Product Passport"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:public-health", "label": "Public Health"},
+      {"@id": "urn:ngm:class:consumer-protection", "label": "Consumer Protection"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:codex-alimentarius", "label": "Codex Alimentarius"},
+      {"@id": "urn:ngm:class:food-safety-modernization-act", "label": "Food Safety Modernization Act"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:food-safety-blockchain", "label": "Food Safety Blockchain"},
       {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}
     ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:food-hygiene", "label": "Food Hygiene"},
+    {"@id": "urn:ngm:class:food-quality-assurance", "label": "Food Quality Assurance"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "quality": 0.85
 }

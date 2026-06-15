@@ -29,15 +29,53 @@ alias:: Bulletproofs+
     "uses": [
       {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
       {"@id": "urn:ngm:class:commitment-scheme", "label": "Commitment Scheme"},
-      {"@id": "urn:ngm:class:schnorr-signature", "label": "Schnorr Signature"}
+      {"@id": "urn:ngm:class:schnorr-signature", "label": "Schnorr Signature"},
+      {"@id": "urn:ngm:class:fiat-shamir-transform", "label": "Fiat-Shamir Transform"},
+      {"@id": "urn:ngm:class:pedersen-commitment", "label": "Pedersen Commitment"},
+      {"@id": "urn:ngm:class:inner-product-argument", "label": "Inner Product Argument"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:confidential-transactions", "label": "Confidential Transactions"},
-      {"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"}
+      {"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"},
+      {"@id": "urn:ngm:class:range-proof", "label": "Range Proof"},
+      {"@id": "urn:ngm:class:batch-verification", "label": "Batch Verification"},
+      {"@id": "urn:ngm:class:privacy-preserving-computation", "label": "Privacy-Preserving Computation"}
     ],
-    "relatedTo": [{"@id": "urn:ngm:class:privacy-preserving-blockchain", "label": "Privacy Preserving Blockchain"}]
+    "implements": [
+      {"@id": "urn:ngm:class:non-interactive-proof", "label": "Non-Interactive Proof"},
+      {"@id": "urn:ngm:class:arithmetic-circuit-satisfiability", "label": "Arithmetic Circuit Satisfiability"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:discrete-logarithm-assumption", "label": "Discrete Logarithm Assumption"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:zk-snark", "label": "zk-SNARK"},
+      {"@id": "urn:ngm:class:zk-stark", "label": "zk-STARK"},
+      {"@id": "urn:ngm:class:groth16", "label": "Groth16"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:monero", "label": "Monero"},
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:privacy-preserving-blockchain", "label": "Privacy Preserving Blockchain"},
+      {"@id": "urn:ngm:class:multi-party-computation", "label": "Multi-Party Computation"},
+      {"@id": "urn:ngm:class:proof-aggregation", "label": "Proof Aggregation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:security", "label": "Security"},
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+    ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:bulletproofs-plus", "label": "Bulletproofs+"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

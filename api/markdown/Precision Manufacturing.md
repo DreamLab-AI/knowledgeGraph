@@ -25,22 +25,57 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:manufacturing-automation", "label": "Manufacturing Automation"}],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:cnc-machining", "label": "CNC Machining"},
+      {"@id": "urn:ngm:class:electrical-discharge-machining", "label": "Electrical Discharge Machining"},
+      {"@id": "urn:ngm:class:statistical-process-control", "label": "Statistical Process Control"},
+      {"@id": "urn:ngm:class:coordinate-measuring-machine", "label": "Coordinate Measuring Machine"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:metrology", "label": "Metrology"},
+      {"@id": "urn:ngm:class:process-control", "label": "Process Control"},
+      {"@id": "urn:ngm:class:vibration-isolation", "label": "Vibration Isolation"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:semiconductor-fabrication", "label": "Semiconductor Fabrication"},
+      {"@id": "urn:ngm:class:medical-device-manufacturing", "label": "Medical Device Manufacturing"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:industrial-inspection", "label": "Industrial Inspection"},
+      {"@id": "urn:ngm:class:smart-manufacturing", "label": "Smart Manufacturing"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:laser-interferometry", "label": "Laser Interferometry"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:aerospace-manufacturing", "label": "Aerospace Manufacturing"},
+      {"@id": "urn:ngm:class:additive-manufacturing", "label": "Additive Manufacturing"}
+    ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"},
+      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"},
       {"@id": "urn:ngm:class:quality-assurance", "label": "Quality Assurance"},
       {"@id": "urn:ngm:class:display-metrology", "label": "Display Metrology"},
       {"@id": "urn:ngm:class:digital-fabrication", "label": "Digital Fabrication"}
     ],
-    "enables": [
-      {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
     ],
-    "uses": [
-      {"@id": "urn:ngm:class:industrial-inspection", "label": "Industrial Inspection"},
-      {"@id": "urn:ngm:class:smart-manufacturing", "label": "Smart Manufacturing"}
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iso-standards", "label": "ISO Standards"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:high-precision-machining", "label": "High-Precision Machining"},
+    {"@id": "urn:ngm:class:ultra-precision-manufacturing", "label": "Ultra-Precision Manufacturing"}
+  ],
+  "quality": 0.80,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

@@ -30,18 +30,54 @@ alias:: TimelockController
       {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
       {"@id": "urn:ngm:class:open-zeppelin-governor", "label": "OpenZeppelin Governor"},
       {"@id": "urn:ngm:class:hash-time-locked-contract", "label": "Hash Time-Locked Contract"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:role-based-access-control", "label": "Role-Based Access Control"},
+      {"@id": "urn:ngm:class:multisignature-wallet", "label": "Multisignature Wallet"},
+      {"@id": "urn:ngm:class:protocol-upgrade", "label": "Protocol Upgrade"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
+      {"@id": "urn:ngm:class:decentralised-protocol-administration", "label": "Decentralised Protocol Administration"},
+      {"@id": "urn:ngm:class:emergency-pause-mechanism", "label": "Emergency Pause Mechanism"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:proposal-system", "label": "Proposal System"},
-      {"@id": "urn:ngm:class:voting-mechanism", "label": "Voting Mechanism"}
+      {"@id": "urn:ngm:class:voting-mechanism", "label": "Voting Mechanism"},
+      {"@id": "urn:ngm:class:operation-queue", "label": "Operation Queue"},
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:smart-contract-executor", "label": "Smart Contract Executor"},
+      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:time-delay-enforcement", "label": "Time-Delay Enforcement"},
+      {"@id": "urn:ngm:class:governance-security-pattern", "label": "Governance Security Pattern"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:immediate-execution-governance", "label": "Immediate Execution Governance"},
+      {"@id": "urn:ngm:class:centralised-admin-key", "label": "Centralised Admin Key"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:defi-protocol", "label": "DeFi Protocol"},
+      {"@id": "urn:ngm:class:treasury-management", "label": "Treasury Management"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:security", "label": "Security"},
+      {"@id": "urn:ngm:class:governance", "label": "Governance"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:timelock-contract", "label": "Timelock Contract"},
+    {"@id": "urn:ngm:class:governance-timelock", "label": "Governance Timelock"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

@@ -54,8 +54,8 @@ public:: true
   "@id": "urn:ngm:class:sustainable-development",
   "@type": "Class",
   "label": "Sustainable Development",
-  "definition": "AI should contribute to the United Nations Sustainable Development Goals by addressing global challenges including climate change, resource depletion, biodiversity loss, and environmental degradation whilst ensuring development meets present needs without compromising future generations' ability ...",
-  "domain": "spatial-computing",
+  "definition": "AI should contribute to the United Nations Sustainable Development Goals by addressing global challenges including climate change, resource depletion, biodiversity loss, and environmental degradation whilst ensuring development meets present needs without compromising future generations' ability to meet their own needs. Grounded in the Brundtland Commission (1987) definition and operationalised through the 17 SDGs adopted in 2015, it encompasses economic, social, and environmental pillars requiring coordinated policy, governance, and technological action.",
+  "domain": "governance",
   "maturity": "draft",
   "subClassOf": [
     {
@@ -76,14 +76,126 @@ public:: true
       {
         "@id": "urn:ngm:class:sustainable-ai-operations",
         "label": "sustainable AI operations"
+      },
+      {
+        "@id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      },
+      {
+        "@id": "urn:ngm:class:climate-action",
+        "label": "Climate Action"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:environmental-governance",
+        "label": "Environmental Governance"
+      },
+      {
+        "@id": "urn:ngm:class:policy-framework",
+        "label": "Policy Framework"
+      },
+      {
+        "@id": "urn:ngm:class:multi-stakeholder-engagement",
+        "label": "Multi-Stakeholder Engagement"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:sdgs",
+        "label": "Sustainable Development Goals"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:inclusive-growth",
+        "label": "Inclusive Growth"
+      },
+      {
+        "@id": "urn:ngm:class:social-inclusion",
+        "label": "Social Inclusion"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:biodiversity-conservation",
+        "label": "Biodiversity Conservation"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-footprint-reduction",
+        "label": "Carbon Footprint Reduction"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      },
+      {
+        "@id": "urn:ngm:class:un-2030-agenda",
+        "label": "UN 2030 Agenda"
+      },
+      {
+        "@id": "urn:ngm:class:iso-14001",
+        "label": "ISO 14001 Environmental Management"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:extractive-economy",
+        "label": "Extractive Economy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:well-being",
+        "label": "Well-Being"
+      },
+      {
+        "@id": "urn:ngm:class:planetary-boundaries",
+        "label": "Planetary Boundaries"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:sustainable-development-goals",
+      "label": "Sustainable Development Goals"
+    },
+    {
+      "@id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

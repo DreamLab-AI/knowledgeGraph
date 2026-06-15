@@ -25,9 +25,40 @@
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:price-appreciation",
+        "label": "Price Appreciation"
+      },
+      {
+        "id": "urn:ngm:class:long-term-holding",
+        "label": "Long-Term Holding"
+      },
+      {
+        "id": "urn:ngm:class:economic-incentive",
+        "label": "Economic Incentive"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
     "implements": [],
     "contrastsWith": [
       {
@@ -37,9 +68,30 @@
       {
         "id": "urn:ngm:class:native-token",
         "label": "Native Token"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:elastic-supply-token",
+        "label": "Elastic Supply Token"
       }
     ],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:burning-mechanism",
@@ -48,6 +100,14 @@
       {
         "id": "urn:ngm:class:supply-cap",
         "label": "Supply Cap"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
       }
     ],
     "supports": [],
@@ -56,6 +116,10 @@
       {
         "id": "urn:ngm:class:token-economics",
         "label": "Token Economics"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ],
     "relatedTo": [
@@ -78,6 +142,18 @@
       {
         "id": "urn:ngm:class:transaction-fee",
         "label": "Transaction Fee"
+      },
+      {
+        "id": "urn:ngm:class:scarcity",
+        "label": "Scarcity"
+      },
+      {
+        "id": "urn:ngm:class:store-of-value",
+        "label": "Store of Value"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
       }
     ]
   },

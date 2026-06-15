@@ -125,6 +125,30 @@ alias:: Closed Loop Control, RB-1002-closed-loop-control
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:feedback-mechanism",
+        "label": "Feedback Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:error-signal",
+        "label": "Error Signal"
+      },
+      {
+        "@id": "urn:ngm:class:setpoint",
+        "label": "Setpoint"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "@id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:actuator",
@@ -141,16 +165,38 @@ alias:: Closed Loop Control, RB-1002-closed-loop-control
       {
         "@id": "urn:ngm:class:feedback-mechanism",
         "label": "Feedback Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:stability",
+        "label": "Stability"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:rb-1007-trajectory-generation",
-        "label": "RB-1007-trajectory-generation"
+        "label": "Trajectory Generation"
       },
       {
         "@id": "urn:ngm:class:rb-1013-localization",
-        "label": "RB 1013 localization"
+        "label": "Localization"
+      },
+      {
+        "@id": "urn:ngm:class:disturbance-rejection",
+        "label": "Disturbance Rejection"
+      },
+      {
+        "@id": "urn:ngm:class:accuracy",
+        "label": "Accuracy"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:rb-1015-kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "@id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
       }
     ],
     "implements": [
@@ -161,6 +207,14 @@ alias:: Closed Loop Control, RB-1002-closed-loop-control
       {
         "@id": "urn:ngm:class:adaptive-control",
         "label": "Adaptive Control"
+      },
+      {
+        "@id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      },
+      {
+        "@id": "urn:ngm:class:robust-control",
+        "label": "Robust Control"
       }
     ],
     "uses": [
@@ -175,14 +229,78 @@ alias:: Closed Loop Control, RB-1002-closed-loop-control
       {
         "@id": "urn:ngm:class:sensor-system",
         "label": "Sensor System"
+      },
+      {
+        "@id": "urn:ngm:class:state-space-representation",
+        "label": "State Space Representation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-8373-2021",
+        "label": "ISO 8373:2021"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:open-loop-control",
+        "label": "Open-Loop Control"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:adaptability",
+        "label": "Adaptability"
+      },
+      {
+        "@id": "urn:ngm:class:system-identification",
+        "label": "System Identification"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:feedback-control",
+      "label": "Feedback Control"
+    },
+    {
+      "@id": "urn:ngm:class:feedback-control-system",
+      "label": "Feedback Control System"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

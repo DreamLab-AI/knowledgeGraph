@@ -58,7 +58,7 @@ public:: true
   "@id": "urn:ngm:class:consensus-mechanisms",
   "@type": "Class",
   "label": "Consensus Mechanisms",
-  "definition": "The family of protocols by which distributed participants agree on a single shared state or ordering of events without relying on a central authority.",
+  "definition": "The family of protocols by which distributed participants agree on a single shared state or ordering of events without relying on a central authority, spanning classical fault-tolerant algorithms, probabilistic approaches, and cryptoeconomic incentive designs.",
   "domain": "distributed-systems",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -73,6 +73,40 @@ public:: true
       {
         "@id": "urn:ngm:class:consensus",
         "label": "Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:practical-byzantine-fault-tolerance",
+        "label": "Practical Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:tendermint",
+        "label": "Tendermint"
+      },
+      {
+        "@id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
       }
     ],
     "enables": [
@@ -83,14 +117,94 @@ public:: true
       {
         "@id": "urn:ngm:class:distributed-ledger",
         "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signatures",
+        "label": "Digital Signatures"
+      },
+      {
+        "@id": "urn:ngm:class:hash-functions",
+        "label": "Hash Functions"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:centralized-authority",
+        "label": "Centralized Authority"
+      },
+      {
+        "@id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:decentralization",
+        "label": "Decentralization"
+      },
+      {
+        "@id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "@id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:network-finality",
+        "label": "Network Finality"
+      },
+      {
+        "@id": "urn:ngm:class:validator-nodes",
+        "label": "Validator Nodes"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:distributed-agreement-protocols",
+      "label": "Distributed Agreement Protocols"
+    },
+    {
+      "@id": "urn:ngm:class:blockchain-consensus",
+      "label": "Blockchain Consensus"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

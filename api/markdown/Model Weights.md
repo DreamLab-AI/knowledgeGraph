@@ -52,13 +52,43 @@ public:: true
       "label": "AI Technique"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:model-parameters",
+      "label": "Model Parameters"
+    },
+    {
+      "@id": "urn:ngm:class:learned-parameters",
+      "label": "Learned Parameters"
+    }
+  ],
   "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning-model",
+        "label": "Deep Learning Model"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:weight-matrix",
+        "label": "Weight Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:bias",
+        "label": "Bias"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:training",
@@ -67,6 +97,10 @@ public:: true
       {
         "@id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
       }
     ],
     "enables": [
@@ -77,6 +111,54 @@ public:: true
       {
         "@id": "urn:ngm:class:fine-tuning",
         "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:optimiser",
+        "label": "Optimiser"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      },
+      {
+        "@id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:pruning",
+        "label": "Pruning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:hyperparameters",
+        "label": "Hyperparameters"
+      },
+      {
+        "@id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-iec-22989",
+        "label": "ISO/IEC 22989"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
       }
     ],
     "relatedTo": [
@@ -87,12 +169,24 @@ public:: true
       {
         "@id": "urn:ngm:class:ai-safety",
         "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:model-serialisation",
+        "label": "Model Serialisation"
       }
     ],
-    "partOf": [
+    "bridgesTo": [
       {
-        "@id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "@id": "urn:ngm:class:intellectual-property",
+        "label": "Intellectual Property"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       }
     ]
   }

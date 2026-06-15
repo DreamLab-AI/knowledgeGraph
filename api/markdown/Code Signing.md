@@ -27,21 +27,54 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"}
+      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
+      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"},
+      {"@id": "urn:ngm:class:asymmetric-cryptography", "label": "Asymmetric Cryptography"},
+      {"@id": "urn:ngm:class:x509-certificate", "label": "X.509 Certificate"},
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
+      {"@id": "urn:ngm:class:transparency-log", "label": "Transparency Log"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"},
       {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"},
-      {"@id": "urn:ngm:class:trusted-execution-environment", "label": "Trusted Execution Environment"}
+      {"@id": "urn:ngm:class:trusted-execution-environment", "label": "Trusted Execution Environment"},
+      {"@id": "urn:ngm:class:software-integrity-verification", "label": "Software Integrity Verification"},
+      {"@id": "urn:ngm:class:secure-boot", "label": "Secure Boot"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:private-key-management", "label": "Private Key Management"},
+      {"@id": "urn:ngm:class:certificate-revocation", "label": "Certificate Revocation"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:software-supply-chain-security", "label": "Software Supply Chain Security"},
+      {"@id": "urn:ngm:class:non-repudiation", "label": "Non-Repudiation"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:software-bill-of-materials", "label": "Software Bill of Materials"},
+      {"@id": "urn:ngm:class:slsa-framework", "label": "SLSA Framework"},
+      {"@id": "urn:ngm:class:container-image-security", "label": "Container Image Security"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:notary-service", "label": "Notary Service"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
+      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"},
+      {"@id": "urn:ngm:class:sigstore", "label": "Sigstore"},
+      {"@id": "urn:ngm:class:keyless-signing", "label": "Keyless Signing"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"},
       {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:software-signing", "label": "Software Signing"},
+    {"@id": "urn:ngm:class:authenticode", "label": "Authenticode"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "quality": 0.72
 }
 ```
 

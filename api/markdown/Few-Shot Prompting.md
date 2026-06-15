@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Few-Shot Prompting",
   "definition": "Few-shot prompting is a prompt engineering technique in which a small number of input-output demonstration examples are included directly in the context provided to a large language model, guiding the model to produce outputs conforming to the demonstrated pattern without any parameter updates. The approach exploits the in-context learning capability of transformer-based models, allowing task specification through examples rather than task-specific fine-tuning.",
-  "domain": "ai",
+  "domain": "machine-learning",
   "maturity": "established",
   "subClassOf": [
     {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
@@ -29,20 +29,52 @@ public:: true
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:in-context-learning", "label": "In-Context Learning"},
-      {"@id": "urn:ngm:class:few-shot-examples", "label": "Few-Shot Examples"}
+      {"@id": "urn:ngm:class:few-shot-examples", "label": "Few-Shot Examples"},
+      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
+      {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:zero-shot-prompting", "label": "Zero-Shot Prompting"},
-      {"@id": "urn:ngm:class:chain-of-thought-prompting", "label": "Chain-of-Thought Prompting"}
+      {"@id": "urn:ngm:class:chain-of-thought-prompting", "label": "Chain-of-Thought Prompting"},
+      {"@id": "urn:ngm:class:instruction-tuning", "label": "Instruction Tuning"},
+      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
+      {"@id": "urn:ngm:class:meta-learning", "label": "Meta-Learning"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:context-window", "label": "Context Window"}
+      {"@id": "urn:ngm:class:context-window", "label": "Context Window"},
+      {"@id": "urn:ngm:class:demonstration-examples", "label": "Demonstration Examples"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:few-shot-learning", "label": "Few-Shot Learning"}
+      {"@id": "urn:ngm:class:few-shot-learning", "label": "Few-Shot Learning"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"},
+      {"@id": "urn:ngm:class:zero-shot-prompting", "label": "Zero-Shot Prompting"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:task-adaptation", "label": "Task Adaptation"},
+      {"@id": "urn:ngm:class:structured-output-generation", "label": "Structured Output Generation"},
+      {"@id": "urn:ngm:class:information-extraction", "label": "Information Extraction"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
+      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:few-shot-in-context-learning", "label": "Few-Shot In-Context Learning"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

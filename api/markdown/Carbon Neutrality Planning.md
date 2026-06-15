@@ -75,7 +75,7 @@ public:: true
   "@type": "Class",
   "label": "Carbon Neutrality Planning",
   "definition": "The strategic process of developing a comprehensive roadmap to achieve net-zero greenhouse gas emissions, encompassing emission measurement, science-based reduction targets, interim milestones, decarbonization actions, and residual emission neutralization through permanent carbon removal.",
-  "domain": "spatial-computing",
+  "domain": "governance",
   "maturity": "draft",
   "subClassOf": [
     {
@@ -100,6 +100,14 @@ public:: true
       {
         "@id": "urn:ngm:class:reduction-targets",
         "label": "Reduction Targets"
+      },
+      {
+        "@id": "urn:ngm:class:emissions-inventory",
+        "label": "Emissions Inventory"
+      },
+      {
+        "@id": "urn:ngm:class:science-based-targets",
+        "label": "Science-Based Targets"
       }
     ],
     "enables": [
@@ -114,14 +122,110 @@ public:: true
       {
         "@id": "urn:ngm:class:net-zero-achievement",
         "label": "Net Zero Achievement"
+      },
+      {
+        "@id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-offset-procurement",
+        "label": "Carbon Offset Procurement"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:scope-1-emissions",
+        "label": "Scope 1 Emissions"
+      },
+      {
+        "@id": "urn:ngm:class:scope-2-emissions",
+        "label": "Scope 2 Emissions"
+      },
+      {
+        "@id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-removal",
+        "label": "Carbon Removal"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      },
+      {
+        "@id": "urn:ngm:class:sbti-corporate-net-zero-standard",
+        "label": "SBTi Corporate Net-Zero Standard"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:issb-standards",
+        "label": "ISSB Standards"
+      },
+      {
+        "@id": "urn:ngm:class:ghg-protocol",
+        "label": "GHG Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:carbon-offsetting",
+        "label": "Carbon Offsetting"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:sustainability-reporting",
+        "label": "Sustainability Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:net-zero-planning",
+      "label": "Net Zero Planning"
+    },
+    {
+      "@id": "urn:ngm:class:climate-transition-planning",
+      "label": "Climate Transition Planning"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:depth-map-estimation",
+        "label": "Depth Map Estimation"
+      },
+      {
+        "id": "urn:ngm:class:depth-map-fusion",
+        "label": "Depth Map Fusion"
+      },
+      {
+        "id": "urn:ngm:class:patch-match",
+        "label": "PatchMatch"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:ngm:class:feature-matching",
+        "label": "Feature Matching"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:point-cloud-generation",
@@ -26,12 +48,55 @@
       {
         "id": "urn:ngm:class:3-d-scanning",
         "label": "3D Scanning"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:textured-mesh",
+        "label": "Textured Mesh"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure-from-Motion"
+      },
+      {
+        "id": "urn:ngm:class:photometric-consistency",
+        "label": "Photometric Consistency"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:lidar-scanning",
+        "label": "Lidar Scanning"
+      },
+      {
+        "id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      },
+      {
+        "id": "urn:ngm:class:3d-gaussian-splatting",
+        "label": "3D Gaussian Splatting"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:depth-estimation",
@@ -42,17 +107,39 @@
         "label": "Stereo Vision"
       },
       {
-        "id": "urn:ngm:class:structure-from-motion",
-        "label": "Structure-from-Motion"
+        "id": "urn:ngm:class:plane-sweep-stereo",
+        "label": "Plane-Sweep Stereo"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:reality-capture",
+        "label": "Reality Capture"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle-mapping",
+        "label": "Autonomous Vehicle Mapping"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:3d-reconstruction",
+        "label": "3D Reconstruction"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:point-cloud-processing",
         "label": "Point Cloud Processing"
+      },
+      {
+        "id": "urn:ngm:class:visual-simultaneous-localisation-and-mapping",
+        "label": "Visual Simultaneous Localisation and Mapping"
       }
     ]
   },

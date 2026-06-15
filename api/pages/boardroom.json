@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:audit-committee",
+        "label": "Audit Committee"
+      },
+      {
+        "id": "urn:ngm:class:remuneration-committee",
+        "label": "Remuneration Committee"
+      },
+      {
+        "id": "urn:ngm:class:nomination-committee",
+        "label": "Nomination Committee"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:board-independence",
+        "label": "Board Independence"
+      },
+      {
+        "id": "urn:ngm:class:fiduciary-duty",
+        "label": "Fiduciary Duty"
+      },
+      {
+        "id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:board-level-oversight",
@@ -26,12 +52,25 @@
       {
         "id": "urn:ngm:class:accountability",
         "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:strategic-decision-making",
+        "label": "Strategic Decision-Making"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:governance-framework",
@@ -40,11 +79,29 @@
       {
         "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:board-information-system",
+        "label": "Board Information System"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:executive-compensation",
+        "label": "Executive Compensation"
+      },
+      {
+        "id": "urn:ngm:class:succession-planning",
+        "label": "Succession Planning"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:stakeholder",
@@ -57,6 +114,14 @@
       {
         "id": "urn:ngm:class:compliance",
         "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:non-executive-director",
+        "label": "Non-Executive Director"
+      },
+      {
+        "id": "urn:ngm:class:shareholder-rights",
+        "label": "Shareholder Rights"
       }
     ]
   },

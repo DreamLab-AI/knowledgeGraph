@@ -28,7 +28,60 @@ public:: true
       "label": "Thing"
     }
   ],
-  "quality": 0.9
+  "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
+      {"@id": "urn:ngm:class:networking", "label": "Networking"},
+      {"@id": "urn:ngm:class:data-storage", "label": "Data Storage"},
+      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"},
+      {"@id": "urn:ngm:class:security", "label": "Security"},
+      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:data-center", "label": "Data Center"},
+      {"@id": "urn:ngm:class:operating-system", "label": "Operating System"},
+      {"@id": "urn:ngm:class:hardware", "label": "Hardware"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:scalability", "label": "Scalability"},
+      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
+      {"@id": "urn:ngm:class:high-availability", "label": "High Availability"},
+      {"@id": "urn:ngm:class:containerization", "label": "Containerization"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:open-standards", "label": "Open Standards"},
+      {"@id": "urn:ngm:class:iso-iec", "label": "ISO/IEC"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:application-layer", "label": "Application Layer"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:governance", "label": "Governance"},
+      {"@id": "urn:ngm:class:data", "label": "Data"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:devops", "label": "DevOps"},
+      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
+      {"@id": "urn:ngm:class:microservices", "label": "Microservices"}
+    ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:it-infrastructure", "label": "IT Infrastructure"},
+    {"@id": "urn:ngm:class:technology-stack", "label": "Technology Stack"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

@@ -50,7 +50,7 @@ public:: true
   "@id": "urn:ngm:class:tor",
   "@type": "Class",
   "label": "Tor",
-  "definition": "A free overlay network and software that provides anonymous communication by routing traffic through a series of volunteer-operated relays using layered encryption.",
+  "definition": "A free overlay network and software that provides anonymous communication by routing traffic through a series of volunteer-operated relays using layered encryption, enabling censorship resistance, traffic-analysis resistance, and onion service hosting.",
   "domain": "security",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -69,16 +69,114 @@ public:: true
       {
         "@id": "urn:ngm:class:encryption",
         "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:relay-network",
+        "label": "Relay Network"
+      },
+      {
+        "@id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:privacy",
         "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:anonymity",
+        "label": "Anonymity"
+      },
+      {
+        "@id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:traffic-analysis-resistance",
+        "label": "Traffic Analysis Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:onion-services",
+        "label": "Onion Services"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:tor-exit-node",
+        "label": "Tor Exit Node"
+      },
+      {
+        "@id": "urn:ngm:class:tor-relay",
+        "label": "Tor Relay"
+      },
+      {
+        "@id": "urn:ngm:class:tor-directory-authority",
+        "label": "Tor Directory Authority"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:onion-routing",
+        "label": "Onion Routing"
+      },
+      {
+        "@id": "urn:ngm:class:circuit-based-routing",
+        "label": "Circuit-Based Routing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      },
+      {
+        "@id": "urn:ngm:class:volunteer-infrastructure",
+        "label": "Volunteer Infrastructure"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:vpn",
+        "label": "VPN"
+      },
+      {
+        "@id": "urn:ngm:class:i2p",
+        "label": "I2P"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:dark-web",
+        "label": "Dark Web"
+      },
+      {
+        "@id": "urn:ngm:class:surveillance",
+        "label": "Surveillance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:the-onion-router",
+      "label": "The Onion Router"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-29T00:00:00Z",

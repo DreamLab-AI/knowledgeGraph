@@ -69,20 +69,120 @@ public:: true
       {
         "@id": "urn:ngm:class:transparency",
         "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:legal-certainty",
+        "label": "Legal Certainty"
+      },
+      {
+        "@id": "urn:ngm:class:rule-of-law",
+        "label": "Rule of Law"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:compliance",
         "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:market-confidence",
+        "label": "Market Confidence"
+      },
+      {
+        "@id": "urn:ngm:class:investment-certainty",
+        "label": "Investment Certainty"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:innovation",
+        "label": "Innovation"
+      },
+      {
+        "@id": "urn:ngm:class:market-development",
+        "label": "Market Development"
+      },
+      {
+        "@id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:legislation",
+        "label": "Legislation"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-guidance",
+        "label": "Regulatory Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:enforcement-consistency",
+        "label": "Enforcement Consistency"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:regulatory-uncertainty",
+        "label": "Regulatory Uncertainty"
+      },
+      {
+        "@id": "urn:ngm:class:legal-ambiguity",
+        "label": "Legal Ambiguity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:policy",
+        "label": "Policy"
+      },
+      {
+        "@id": "urn:ngm:class:jurisdiction",
+        "label": "Jurisdiction"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:digital-assets",
+        "label": "Digital Assets"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:legal-clarity",
+      "label": "Legal Clarity"
+    },
+    {
+      "@id": "urn:ngm:class:regulatory-certainty",
+      "label": "Regulatory Certainty"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

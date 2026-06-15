@@ -21,26 +21,63 @@ public:: true
   "@type": "Class",
   "label": "Data Schema",
   "definition": "A Data Schema is a formal specification that defines the structure, types, constraints, and semantics of data within a system or exchange protocol. It enumerates fields, their data types, cardinality rules, allowed values, and relationships between entities, enabling machines to validate conformance and enabling humans to understand data contracts. Data schemas are expressed in formalisms such as JSON Schema, XML Schema Definition, RDF SHACL, or OWL, and are versioned to manage evolution over time. They underpin interoperability between systems, database design, API contracts, and linked-data publishing.",
-  "domain": "ai",
+  "domain": "data",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:schema-definition", "label": "Schema Definition"}],
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:json-data-interchange-format-schema", "label": "JSON Schema"},
       {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"}
+      {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"},
+      {"@id": "urn:ngm:class:xml-schema-definition", "label": "XML Schema Definition"},
+      {"@id": "urn:ngm:class:shacl", "label": "SHACL"},
+      {"@id": "urn:ngm:class:owl", "label": "OWL"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:schema-registry", "label": "Schema Registry"}
+      {"@id": "urn:ngm:class:schema-registry", "label": "Schema Registry"},
+      {"@id": "urn:ngm:class:data-validation", "label": "Data Validation"},
+      {"@id": "urn:ngm:class:api-contract", "label": "API Contract"},
+      {"@id": "urn:ngm:class:data-interoperability", "label": "Data Interoperability"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:data-type", "label": "Data Type"},
+      {"@id": "urn:ngm:class:namespace", "label": "Namespace"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:field-definition", "label": "Field Definition"},
+      {"@id": "urn:ngm:class:constraint", "label": "Constraint"},
+      {"@id": "urn:ngm:class:cardinality-rule", "label": "Cardinality Rule"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:schema-versioning", "label": "Schema Versioning"},
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
       {"@id": "urn:ngm:class:metadata-schema", "label": "Metadata Schema"},
-      {"@id": "urn:ngm:class:credential-schema", "label": "Credential Schema"}
+      {"@id": "urn:ngm:class:credential-schema", "label": "Credential Schema"},
+      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:schemaless-database", "label": "Schemaless Database"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:data-model", "label": "Data Model"},
+    {"@id": "urn:ngm:class:schema", "label": "Schema"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  },
+  "quality": 0.72
 }
 ```
 

@@ -54,8 +54,8 @@ public:: true
   "@id": "urn:ngm:class:tally",
   "@type": "Class",
   "label": "Tally",
-  "definition": "A web platform and toolset for creating and managing on-chain decentralised autonomous organisations, providing interfaces for proposal creation, delegation and governance voting.",
-  "domain": "governance",
+  "definition": "A web platform and toolset for creating and managing on-chain decentralised autonomous organisations, providing interfaces for proposal creation, delegation and governance voting across widely used governance contract frameworks.",
+  "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [
@@ -73,20 +73,110 @@ public:: true
       {
         "@id": "urn:ngm:class:governance-token",
         "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:governance",
         "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-voting",
+        "label": "On-Chain Voting"
+      },
+      {
+        "@id": "urn:ngm:class:vote-delegation",
+        "label": "Vote Delegation"
+      },
+      {
+        "@id": "urn:ngm:class:proposal-creation",
+        "label": "Proposal Creation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:governor-bravo",
+        "label": "Governor Bravo"
+      },
+      {
+        "@id": "urn:ngm:class:openzeppelin-governor",
+        "label": "OpenZeppelin Governor"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:web3-wallet",
+        "label": "Web3 Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "@id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      },
+      {
+        "@id": "urn:ngm:class:delegate-profile",
+        "label": "Delegate Profile"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:snapshot",
+        "label": "Snapshot"
+      },
+      {
+        "@id": "urn:ngm:class:aragon",
+        "label": "Aragon"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:multisig-wallet",
+        "label": "Multisig Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:timelock-controller",
+        "label": "Timelock Controller"
+      },
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:tally-governance-platform",
+      "label": "Tally Governance Platform"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

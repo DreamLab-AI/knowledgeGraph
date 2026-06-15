@@ -82,24 +82,57 @@ public:: true
   "relations": {
     "partOf": [
       {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder Decoder Architecture"}
+      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder Decoder Architecture"},
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:multi-head-attention", "label": "Multi Head Attention"},
+      {"@id": "urn:ngm:class:attention-weight", "label": "Attention Weight"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:query-key-value", "label": "Query Key Value"}
+      {"@id": "urn:ngm:class:query-key-value", "label": "Query Key Value"},
+      {"@id": "urn:ngm:class:softmax-function", "label": "Softmax Function"},
+      {"@id": "urn:ngm:class:scaled-dot-product-attention", "label": "Scaled Dot Product Attention"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"},
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-understanding", "label": "Multimodal Understanding"},
+      {"@id": "urn:ngm:class:machine-translation", "label": "Machine Translation"},
+      {"@id": "urn:ngm:class:image-captioning", "label": "Image Captioning"},
+      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:embedding", "label": "Embedding"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:sequence-to-sequence-model", "label": "Sequence To Sequence Model"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:positional-encoding", "label": "Positional Encoding"},
+      {"@id": "urn:ngm:class:layer-normalisation", "label": "Layer Normalisation"}
     ],
     "contrastsWith": [
       {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"}
     ],
-    "enables": [
-      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"},
-      {"@id": "urn:ngm:class:multimodal-ai-architecture-understanding", "label": "Multimodal Understanding"}
+    "relatedTo": [
+      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
+      {"@id": "urn:ngm:class:bert", "label": "BERT"},
+      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {"@id": "urn:ngm:class:inter-sequence-attention", "label": "Inter Sequence Attention"}
+  ],
+  "quality": 0.70,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

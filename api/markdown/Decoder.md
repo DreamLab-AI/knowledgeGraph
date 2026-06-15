@@ -56,12 +56,22 @@ public:: true
       "label": "AI Model Architecture"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:autoregressive-decoder",
+      "label": "Autoregressive Decoder"
+    },
+    {
+      "@id": "urn:ngm:class:transformer-decoder",
+      "label": "Transformer Decoder"
+    }
+  ],
   "relations": {
     "uses": [
       {
@@ -75,20 +85,28 @@ public:: true
       {
         "@id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:feed-forward-network",
+        "label": "Feed Forward Network"
+      },
+      {
+        "@id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
       }
     ],
-    "relatedTo": [
+    "hasPart": [
       {
-        "@id": "urn:ngm:class:encoder",
-        "label": "Encoder"
+        "@id": "urn:ngm:class:masked-self-attention",
+        "label": "Masked Self Attention"
       },
       {
-        "@id": "urn:ngm:class:large-language-models",
-        "label": "Large Language Models"
+        "@id": "urn:ngm:class:residual-connection",
+        "label": "Residual Connection"
       },
       {
-        "@id": "urn:ngm:class:gpt",
-        "label": "GPT"
+        "@id": "urn:ngm:class:layer-normalisation",
+        "label": "Layer Normalisation"
       }
     ],
     "partOf": [
@@ -99,6 +117,68 @@ public:: true
       {
         "@id": "urn:ngm:class:transformer",
         "label": "Transformer"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:sequence-to-sequence",
+        "label": "Sequence To Sequence"
+      },
+      {
+        "@id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "@id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:non-autoregressive-decoding",
+        "label": "Non Autoregressive Decoding"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      },
+      {
+        "@id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      },
+      {
+        "@id": "urn:ngm:class:causal-language-model",
+        "label": "Causal Language Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:time-series-forecasting",
+        "label": "Time Series Forecasting"
       }
     ]
   }

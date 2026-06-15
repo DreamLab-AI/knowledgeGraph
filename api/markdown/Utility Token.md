@@ -65,25 +65,49 @@ public:: true
       {"@id": "urn:ngm:class:crypto-token", "label": "Crypto Token"},
       {"@id": "urn:ngm:class:asset-tokenization", "label": "Asset Tokenization"},
       {"@id": "urn:ngm:class:blockchain-economics", "label": "Blockchain Economics"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
+      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
+      {"@id": "urn:ngm:class:initial-coin-offering", "label": "Initial Coin Offering"},
+      {"@id": "urn:ngm:class:protocol-economy", "label": "Protocol Economy"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"}
+      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:erc-20", "label": "ERC-20"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"},
-      {"@id": "urn:ngm:class:blockchain-application", "label": "Blockchain Application"}
+      {"@id": "urn:ngm:class:blockchain-application", "label": "Blockchain Application"},
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
+      {"@id": "urn:ngm:class:protocol-incentive", "label": "Protocol Incentive"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:nft", "label": "NFT"}
+      {"@id": "urn:ngm:class:nft", "label": "NFT"},
+      {"@id": "urn:ngm:class:security-token", "label": "Security Token"},
+      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:decentralised-ledger", "label": "Decentralised Ledger"},
+      {"@id": "urn:ngm:class:token-standard", "label": "Token Standard"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:digital-economy", "label": "Digital Economy"},
+      {"@id": "urn:ngm:class:incentive-mechanism", "label": "Incentive Mechanism"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:app-token", "label": "App Token"},
+    {"@id": "urn:ngm:class:protocol-token", "label": "Protocol Token"}
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

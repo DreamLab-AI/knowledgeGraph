@@ -21,28 +21,60 @@ public:: true
   "@type": "Class",
   "label": "NVIDIA Jetson",
   "definition": "NVIDIA Jetson is a family of system-on-module (SoM) and developer kit edge computing platforms that combine NVIDIA GPU cores with ARM-based CPU clusters, purpose-built for deploying deep learning inference, computer vision, and robotics workloads at the edge with constrained power budgets. Modules in the Jetson family — including Nano, TX2, Xavier, and Orin — span from entry-level embedded devices to high-performance autonomous machine platforms, all running NVIDIA's JetPack SDK which provides CUDA, cuDNN, TensorRT, and ROS integration.",
-  "domain": "infrastructure",
+  "domain": "robotics",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:edge-ai-accelerator", "label": "Edge AI Accelerator"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
       {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
-      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"}
+      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"},
+      {"@id": "urn:ngm:class:system-on-module", "label": "System-on-Module"},
+      {"@id": "urn:ngm:class:autonomous-mobile-robot", "label": "Autonomous Mobile Robot"},
+      {"@id": "urn:ngm:class:smart-camera", "label": "Smart Camera"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"}
+      {"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"},
+      {"@id": "urn:ngm:class:real-time-inference", "label": "Real-Time Inference"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:inference-hardware", "label": "Inference Hardware"},
-      {"@id": "urn:ngm:class:edge-computing-node", "label": "Edge Computing Node"}
+      {"@id": "urn:ngm:class:edge-computing-node", "label": "Edge Computing Node"},
+      {"@id": "urn:ngm:class:ros", "label": "Robot Operating System"},
+      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
+      {"@id": "urn:ngm:class:cuda", "label": "CUDA"},
+      {"@id": "urn:ngm:class:tensorrt", "label": "TensorRT"},
+      {"@id": "urn:ngm:class:arm-processor", "label": "ARM Processor"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:jetpack-sdk", "label": "JetPack SDK"},
+      {"@id": "urn:ngm:class:linux-operating-system", "label": "Linux Operating System"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:qualcomm-snapdragon", "label": "Qualcomm Snapdragon"},
+      {"@id": "urn:ngm:class:neural-processing-unit", "label": "Neural Processing Unit"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:jetson-platform", "label": "Jetson Platform"},
+    {"@id": "urn:ngm:class:nvidia-jetson-module", "label": "NVIDIA Jetson Module"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

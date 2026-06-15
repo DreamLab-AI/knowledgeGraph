@@ -27,18 +27,51 @@ public:: true
   "relations": {
     "enables": [
       {"@id": "urn:ngm:class:text-generation", "label": "Text Generation"},
-      {"@id": "urn:ngm:class:machine-translation", "label": "Machine Translation"}
+      {"@id": "urn:ngm:class:machine-translation", "label": "Machine Translation"},
+      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
+      {"@id": "urn:ngm:class:sequence-to-sequence-learning", "label": "Sequence-to-Sequence Learning"},
+      {"@id": "urn:ngm:class:automatic-summarisation", "label": "Automatic Summarisation"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:language-model", "label": "Language Model"},
-      {"@id": "urn:ngm:class:heuristic-methods", "label": "Heuristic Methods"}
+      {"@id": "urn:ngm:class:heuristic-methods", "label": "Heuristic Methods"},
+      {"@id": "urn:ngm:class:log-probability-scoring", "label": "Log-Probability Scoring"},
+      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder-Decoder Architecture"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:probability-distribution", "label": "Probability Distribution"},
+      {"@id": "urn:ngm:class:sequence-model", "label": "Sequence Model"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:greedy-decoding", "label": "Greedy Decoding"},
+      {"@id": "urn:ngm:class:nucleus-sampling", "label": "Nucleus Sampling"},
+      {"@id": "urn:ngm:class:monte-carlo-tree-search", "label": "Monte Carlo Tree Search"},
+      {"@id": "urn:ngm:class:viterbi-algorithm", "label": "Viterbi Algorithm"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:best-first-search", "label": "Best-First Search"},
+      {"@id": "urn:ngm:class:breadth-first-search", "label": "Breadth-First Search"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:beam-search-decoding", "label": "Beam Search Decoding"},
-      {"@id": "urn:ngm:class:monte-carlo-tree-search", "label": "Monte Carlo Tree Search"}
+      {"@id": "urn:ngm:class:diverse-beam-search", "label": "Diverse Beam Search"},
+      {"@id": "urn:ngm:class:constrained-decoding", "label": "Constrained Decoding"},
+      {"@id": "urn:ngm:class:speculative-decoding", "label": "Speculative Decoding"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:beam-search-decoding", "label": "Beam Search Decoding"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

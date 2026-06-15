@@ -21,7 +21,7 @@ public:: true
   "@type": "Class",
   "label": "Agent Communication Protocol",
   "definition": "An Agent Communication Protocol is a formalised specification governing the syntax, semantics, and pragmatics of message exchange between autonomous software agents, enabling them to coordinate actions, share information, delegate tasks, and negotiate goals across heterogeneous runtime environments. Such protocols define the speech act primitives, message envelope formats, conversation policies, and error-handling procedures that agents must implement to participate in a multi-agent system.",
-  "domain": "ai",
+  "domain": "artificial-intelligence",
   "maturity": "emerging",
   "subClassOf": [
     {"@id": "urn:ngm:class:coordination-protocol", "label": "Coordination Protocol"}
@@ -30,17 +30,54 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:inter-agent-communication", "label": "Inter-Agent Communication"},
       {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
-      {"@id": "urn:ngm:class:autonomous-task-execution", "label": "Autonomous Task Execution"}
+      {"@id": "urn:ngm:class:autonomous-task-execution", "label": "Autonomous Task Execution"},
+      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
+      {"@id": "urn:ngm:class:task-delegation", "label": "Task Delegation"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:message-passing", "label": "Message Passing"}
+      {"@id": "urn:ngm:class:message-passing", "label": "Message Passing"},
+      {"@id": "urn:ngm:class:speech-act-theory", "label": "Speech Act Theory"},
+      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"},
+      {"@id": "urn:ngm:class:websocket", "label": "WebSocket"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:message-envelope", "label": "Message Envelope"},
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
+      {"@id": "urn:ngm:class:conversation-policy", "label": "Conversation Policy"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:fipa-acl", "label": "FIPA ACL"},
+      {"@id": "urn:ngm:class:contract-net-protocol", "label": "Contract Net Protocol"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:capability-advertisement", "label": "Capability Advertisement"},
+      {"@id": "urn:ngm:class:error-handling", "label": "Error Handling"},
+      {"@id": "urn:ngm:class:negotiation", "label": "Negotiation"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:remote-procedure-call", "label": "Remote Procedure Call"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:agent-to-agent-protocol", "label": "Agent-to-Agent Protocol"},
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"}
+      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
+      {"@id": "urn:ngm:class:kqml", "label": "KQML"},
+      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:agent-messaging-protocol", "label": "Agent Messaging Protocol"},
+    {"@id": "urn:ngm:class:multi-agent-communication-protocol", "label": "Multi-Agent Communication Protocol"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

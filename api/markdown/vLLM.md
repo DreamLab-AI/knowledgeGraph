@@ -58,8 +58,8 @@ public:: true
   "@id": "urn:ngm:class:v-llm",
   "@type": "Class",
   "label": "vLLM",
-  "definition": "vLLM is an open-source library for high-throughput serving of large language models. It introduced paged attention, a memory management technique that reduces waste in the key-value cache during generation.",
-  "domain": "ai",
+  "definition": "vLLM is an open-source library for high-throughput serving of large language models. It introduced paged attention, a memory management technique that reduces waste in the key-value cache during generation by managing attention KV cache in fixed-size blocks analogous to virtual memory paging.",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [
@@ -77,6 +77,10 @@ public:: true
       {
         "@id": "urn:ngm:class:gpu",
         "label": "GPU"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
       }
     ],
     "enables": [
@@ -87,14 +91,110 @@ public:: true
       {
         "@id": "urn:ngm:class:inference-serving",
         "label": "Inference Serving"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-batching",
+        "label": "Continuous Batching"
+      },
+      {
+        "@id": "urn:ngm:class:high-throughput-inference",
+        "label": "High-Throughput Inference"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:paged-attention",
+        "label": "Paged Attention"
+      },
+      {
+        "@id": "urn:ngm:class:openai-api",
+        "label": "OpenAI API"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:tensor-parallelism",
+        "label": "Tensor Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "@id": "urn:ngm:class:python",
+        "label": "Python"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:open-weight-models",
+        "label": "Open-Weight Models"
+      },
+      {
+        "@id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:triton-inference-server",
+        "label": "Triton Inference Server"
+      },
+      {
+        "@id": "urn:ngm:class:text-generation-inference",
+        "label": "Text Generation Inference"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      },
+      {
+        "@id": "urn:ngm:class:quantization",
+        "label": "Quantization"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:vllm-inference-engine",
+      "label": "vLLM Inference Engine"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

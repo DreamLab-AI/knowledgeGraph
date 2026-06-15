@@ -25,21 +25,56 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:optimization-algorithm", "label": "Optimization Algorithm"}],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:constraint-propagation", "label": "Constraint Propagation"},
+      {"@id": "urn:ngm:class:backtracking-search", "label": "Backtracking Search"},
+      {"@id": "urn:ngm:class:arc-consistency", "label": "Arc Consistency"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:constraint", "label": "Constraint"},
+      {"@id": "urn:ngm:class:search-algorithm", "label": "Search Algorithm"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:automated-planning", "label": "Automated Planning"},
       {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:planning-and-scheduling", "label": "Planning and Scheduling"}
+      {"@id": "urn:ngm:class:planning-and-scheduling", "label": "Planning and Scheduling"},
+      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"},
+      {"@id": "urn:ngm:class:combinatorial-optimisation", "label": "Combinatorial Optimisation"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:logic-programming", "label": "Logic Programming"},
-      {"@id": "urn:ngm:class:constraint", "label": "Constraint"}
+      {"@id": "urn:ngm:class:sat-solving", "label": "SAT Solving"},
+      {"@id": "urn:ngm:class:smt-solving", "label": "SMT Solving"},
+      {"@id": "urn:ngm:class:linear-programming", "label": "Linear Programming"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
+      {"@id": "urn:ngm:class:computer-aided-design", "label": "Computer-Aided Design"},
+      {"@id": "urn:ngm:class:neuro-symbolic-integration", "label": "Neuro-Symbolic Integration"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:heuristic-search", "label": "Heuristic Search"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:constraint-based-design", "label": "Constraint Based Design"},
-      {"@id": "urn:ngm:class:trajectory-planning", "label": "Trajectory Planning"}
+      {"@id": "urn:ngm:class:trajectory-planning", "label": "Trajectory Planning"},
+      {"@id": "urn:ngm:class:mixed-integer-programming", "label": "Mixed-Integer Programming"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:constraint-satisfaction-solver", "label": "Constraint Satisfaction Solver"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

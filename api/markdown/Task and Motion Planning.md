@@ -58,7 +58,7 @@ public:: true
   "@id": "urn:ngm:class:task-and-motion-planning",
   "@type": "Class",
   "label": "Task and Motion Planning",
-  "definition": "Task and motion planning is an approach in robotics that combines high-level task planning with low-level motion planning to produce executable plans. It addresses both what to do and how to move.",
+  "definition": "Task and motion planning is an approach in robotics that combines high-level symbolic task planning with low-level geometric motion planning to produce fully executable robot plans. It jointly addresses what actions to perform and how to physically execute each movement, interleaving logical goal satisfaction with collision-free trajectory synthesis.",
   "domain": "robotics",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -73,20 +73,118 @@ public:: true
       {
         "@id": "urn:ngm:class:planning",
         "label": "Planning"
+      },
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "@id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:robot-control",
         "label": "Robot Control"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-manipulation",
+        "label": "Autonomous Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:robot-task-execution",
+        "label": "Robot Task Execution"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:pddl",
+        "label": "PDDL"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-roadmap",
+        "label": "Probabilistic Roadmap"
+      },
+      {
+        "@id": "urn:ngm:class:rapidly-exploring-random-tree",
+        "label": "Rapidly-Exploring Random Tree"
+      },
+      {
+        "@id": "urn:ngm:class:pathfinding-algorithm",
+        "label": "Pathfinding Algorithm"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:robot-perception",
+        "label": "Robot Perception"
+      },
+      {
+        "@id": "urn:ngm:class:scene-representation",
+        "label": "Scene Representation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:reactive-planning",
+        "label": "Reactive Planning"
+      },
+      {
+        "@id": "urn:ngm:class:classical-planning",
+        "label": "Classical Planning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:manipulation-planning",
+        "label": "Manipulation Planning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:tamp",
+      "label": "TAMP"
+    },
+    {
+      "@id": "urn:ngm:class:combined-task-and-motion-planning",
+      "label": "Combined Task and Motion Planning"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

@@ -73,20 +73,128 @@ public:: true
       {
         "@id": "urn:ngm:class:timelock",
         "label": "Timelock"
+      },
+      {
+        "@id": "urn:ngm:class:preimage",
+        "label": "Preimage"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:atomic-swap",
         "label": "Atomic Swap"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-transfer",
+        "label": "Cross-Chain Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:payment-routing",
+        "label": "Payment Routing"
+      },
+      {
+        "@id": "urn:ngm:class:trustless-escrow",
+        "label": "Trustless Escrow"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:conditional-payment",
+        "label": "Conditional Payment"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:trusted-third-party",
+        "label": "Trusted Third Party"
+      },
+      {
+        "@id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "@id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:htlc",
+      "label": "HTLC"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

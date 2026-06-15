@@ -51,7 +51,7 @@ public:: true
   "@type": "Class",
   "label": "Edge Computing Architecture",
   "definition": "A distributed computing paradigm that positions computational resources closer to end-user devices such as VR headsets and AR glasses, reducing latency, improving responsiveness, and enabling scalable metaverse experiences by offloading processing from centralised cloud servers.",
-  "domain": "spatial-computing",
+  "domain": "infrastructure",
   "maturity": "draft",
   "subClassOf": [
     {
@@ -64,18 +64,162 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:edge-node",
+        "label": "Edge Node"
+      },
+      {
+        "@id": "urn:ngm:class:fog-computing-layer",
+        "label": "Fog Computing Layer"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:distributed-system-architecture",
+        "label": "Distributed System Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:network-bandwidth",
+        "label": "Network Bandwidth"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-data-processing",
+        "label": "Real-Time Data Processing"
+      },
+      {
+        "@id": "urn:ngm:class:latency-management",
+        "label": "Latency Management"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:low-latency-experiences",
         "label": "Low-Latency Experiences"
+      },
+      {
+        "@id": "urn:ngm:class:compute-offloading",
+        "label": "Compute Offloading"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-xr-experience",
+        "label": "Immersive XR Experience"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:5g-network",
+        "label": "5G Network"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:multi-access-edge-computing",
+        "label": "Multi-Access Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-edge-computing",
+        "label": "Mobile Edge Computing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-accelerated-computing",
+        "label": "GPU Accelerated Computing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:etsi-mec",
+        "label": "ETSI MEC"
+      },
+      {
+        "@id": "urn:ngm:class:openapi-specification",
+        "label": "OpenAPI Specification"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:centralised-cloud-architecture",
+        "label": "Centralised Cloud Architecture"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:network-slicing",
+        "label": "Network Slicing"
+      },
+      {
+        "@id": "urn:ngm:class:cybersickness-prevention",
+        "label": "Cybersickness Prevention"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:multi-access-edge-computing",
+      "label": "Multi-Access Edge Computing"
+    },
+    {
+      "@id": "urn:ngm:class:fog-edge-computing",
+      "label": "Fog-Edge Computing"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

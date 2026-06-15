@@ -21,16 +21,65 @@ public:: true
   "@type": "Class",
   "label": "CRM",
   "definition": "Customer Relationship Management (CRM) is a category of enterprise software and associated business processes that centralises the storage, tracking, and analysis of all interactions between an organisation and its customers, prospects, and partners across the full sales, marketing, and service lifecycle. A CRM system provides a shared record of each contact and account, enabling sales pipelines, service-case management, marketing campaign tracking, and analytical reporting from a single platform.",
-  "domain": "ai",
+  "domain": "data",
   "maturity": "mature",
   "subClassOf": [{"@id": "urn:ngm:class:enterprise-software-platform", "label": "Enterprise Software Platform"}],
   "relations": {
-    "hasPart": [{"@id": "urn:ngm:class:crm-systems", "label": "CRM Systems"}, {"@id": "urn:ngm:class:crm-integration", "label": "CRM Integration"}],
-    "enables": [{"@id": "urn:ngm:class:customer-experience-management", "label": "Customer Experience Management"}, {"@id": "urn:ngm:class:customer-support-automation", "label": "Customer Support Automation"}],
-    "relatedTo": [{"@id": "urn:ngm:class:customer-data-platform", "label": "Customer Data Platform"}, {"@id": "urn:ngm:class:omnichannel", "label": "Omnichannel"}],
-    "uses": [{"@id": "urn:ngm:class:enterprise-workflow", "label": "Enterprise Workflow"}]
+    "hasPart": [
+      {"@id": "urn:ngm:class:crm-systems", "label": "CRM Systems"},
+      {"@id": "urn:ngm:class:crm-integration", "label": "CRM Integration"},
+      {"@id": "urn:ngm:class:sales-pipeline-management", "label": "Sales Pipeline Management"},
+      {"@id": "urn:ngm:class:contact-management", "label": "Contact Management"},
+      {"@id": "urn:ngm:class:campaign-management", "label": "Campaign Management"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:customer-experience-management", "label": "Customer Experience Management"},
+      {"@id": "urn:ngm:class:customer-support-automation", "label": "Customer Support Automation"},
+      {"@id": "urn:ngm:class:revenue-operations", "label": "Revenue Operations"},
+      {"@id": "urn:ngm:class:lead-qualification", "label": "Lead Qualification"},
+      {"@id": "urn:ngm:class:churn-prediction", "label": "Churn Prediction"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:data-integration", "label": "Data Integration"},
+      {"@id": "urn:ngm:class:identity-resolution", "label": "Identity Resolution"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
+      {"@id": "urn:ngm:class:rest-api", "label": "REST API"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:enterprise-workflow", "label": "Enterprise Workflow"},
+      {"@id": "urn:ngm:class:marketing-automation", "label": "Marketing Automation"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:omnichannel", "label": "Omnichannel"},
+      {"@id": "urn:ngm:class:customer-360", "label": "Customer 360"},
+      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:customer-data-platform", "label": "Customer Data Platform"},
+      {"@id": "urn:ngm:class:enterprise-resource-planning", "label": "Enterprise Resource Planning"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:data-warehouse", "label": "Data Warehouse"},
+      {"@id": "urn:ngm:class:business-intelligence", "label": "Business Intelligence"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+    ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:customer-relationship-management", "label": "Customer Relationship Management"},
+    {"@id": "urn:ngm:class:sales-force-automation", "label": "Sales Force Automation"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

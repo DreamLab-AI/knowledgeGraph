@@ -28,15 +28,49 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:sustainable-bitcoin-certificates", "label": "Sustainable Bitcoin Certificates"},
       {"@id": "urn:ngm:class:renewable-energy-certificates", "label": "Renewable Energy Certificates"},
-      {"@id": "urn:ngm:class:green-mining-pool", "label": "Green Mining Pool"}
+      {"@id": "urn:ngm:class:green-mining-pool", "label": "Green Mining Pool"},
+      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"},
+      {"@id": "urn:ngm:class:blockchain-attestation", "label": "Blockchain Attestation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:third-party-energy-auditing", "label": "Third-Party Energy Auditing"},
+      {"@id": "urn:ngm:class:metering-data-verification", "label": "Metering Data Verification"},
+      {"@id": "urn:ngm:class:bitcoin-mining", "label": "Bitcoin Mining"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:green-bitcoin-premium", "label": "Green Bitcoin Premium"},
+      {"@id": "urn:ngm:class:esg-investment", "label": "ESG Investment"},
+      {"@id": "urn:ngm:class:environmental-attribute-certificate", "label": "Environmental Attribute Certificate"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:net-zero-commitment", "label": "Net-Zero Commitment"},
+      {"@id": "urn:ngm:class:carbon-accounting", "label": "Carbon Accounting"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:bitcoin-mining-council", "label": "Bitcoin Mining Council"},
+      {"@id": "urn:ngm:class:voluntary-carbon-market", "label": "Voluntary Carbon Market"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:stranded-energy-monetisation", "label": "Stranded Energy Monetisation"},
       {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues", "label": "Bitcoin Environmental Issues"},
-      {"@id": "urn:ngm:class:carbon-neutral-blockchain", "label": "Carbon Neutral Blockchain"}
+      {"@id": "urn:ngm:class:carbon-neutral-blockchain", "label": "Carbon Neutral Blockchain"},
+      {"@id": "urn:ngm:class:additionality", "label": "Additionality"},
+      {"@id": "urn:ngm:class:energy-provenance-tracking", "label": "Energy Provenance Tracking"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:governance", "label": "Governance"},
+      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:sbp-certification", "label": "SBP Certification"}
+  ],
+  "quality": 0.68,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

@@ -54,7 +54,7 @@ public:: true
   "@id": "urn:ngm:class:wave-net",
   "@type": "Class",
   "label": "WaveNet",
-  "definition": "A deep autoregressive neural network for generating raw audio waveforms one sample at a time, using stacks of dilated causal convolutions.",
+  "definition": "A deep autoregressive neural network developed by DeepMind for generating raw audio waveforms one sample at a time, using stacks of dilated causal convolutions to capture long-range temporal dependencies in audio.",
   "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -73,20 +73,106 @@ public:: true
       {
         "@id": "urn:ngm:class:autoregressive-model",
         "label": "Autoregressive Model"
+      },
+      {
+        "@id": "urn:ngm:class:dilated-convolution",
+        "label": "Dilated Convolution"
+      },
+      {
+        "@id": "urn:ngm:class:causal-convolution",
+        "label": "Causal Convolution"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:text-to-speech",
         "label": "Text-to-Speech"
+      },
+      {
+        "@id": "urn:ngm:class:speech-synthesis",
+        "label": "Speech Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      },
+      {
+        "@id": "urn:ngm:class:music-generation",
+        "label": "Music Generation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:residual-network",
+        "label": "Residual Network"
+      },
+      {
+        "@id": "urn:ngm:class:gated-activation-unit",
+        "label": "Gated Activation Unit"
+      },
+      {
+        "@id": "urn:ngm:class:softmax",
+        "label": "Softmax"
+      },
+      {
+        "@id": "urn:ngm:class:mu-law-encoding",
+        "label": "Mu-Law Encoding"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "@id": "urn:ngm:class:parallel-wavenet",
+        "label": "Parallel WaveNet"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:neural-audio-codec",
+        "label": "Neural Audio Codec"
+      },
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:voice-assistant",
+        "label": "Voice Assistant"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:wavenet-vocoder",
+      "label": "WaveNet Vocoder"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

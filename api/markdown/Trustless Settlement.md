@@ -25,23 +25,59 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:atomic-settlement", "label": "Atomic Settlement"}],
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:atomic-swap", "label": "Atomic Swap"},
-      {"@id": "urn:ngm:class:securities-settlement", "label": "Securities Settlement"},
-      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:hash-timelock-contract", "label": "Hash Timelock Contract"},
+      {"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"},
+      {"@id": "urn:ngm:class:settlement-finality", "label": "Settlement Finality"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
+      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:smart-contract-coordination", "label": "Smart Contract Coordination"},
       {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:zero-knowledge", "label": "Zero Knowledge"}
+      {"@id": "urn:ngm:class:zero-knowledge", "label": "Zero Knowledge"},
+      {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:permissionless-trading", "label": "Permissionless Trading"},
-      {"@id": "urn:ngm:class:decentralized-exchange-dex", "label": "Decentralized Exchange (DEX)"}
+      {"@id": "urn:ngm:class:decentralized-exchange-dex", "label": "Decentralized Exchange (DEX)"},
+      {"@id": "urn:ngm:class:cross-border-payment", "label": "Cross-Border Payment"},
+      {"@id": "urn:ngm:class:tokenized-securities", "label": "Tokenized Securities"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:instant-value-settlement", "label": "Instant value settlement"}
+      {"@id": "urn:ngm:class:instant-value-settlement", "label": "Instant value settlement"},
+      {"@id": "urn:ngm:class:programmable-money", "label": "Programmable Money"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:network-consensus", "label": "Network Consensus"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:custodial-settlement", "label": "Custodial Settlement"},
+      {"@id": "urn:ngm:class:central-counterparty-clearing", "label": "Central Counterparty Clearing"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:atomic-swap", "label": "Atomic Swap"},
+      {"@id": "urn:ngm:class:securities-settlement", "label": "Securities Settlement"},
+      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"},
+      {"@id": "urn:ngm:class:zk-rollup", "label": "ZK Rollup"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:finance", "label": "Finance"},
+      {"@id": "urn:ngm:class:correspondent-banking", "label": "Correspondent Banking"}
     ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:atomic-settlement-protocol", "label": "Atomic Settlement Protocol"},
+    {"@id": "urn:ngm:class:non-custodial-settlement", "label": "Non-Custodial Settlement"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "quality": 0.8
 }

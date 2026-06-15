@@ -21,13 +21,70 @@ public:: true
   "@type": "Class",
   "label": "Mechanistic Interpretability",
   "definition": "Mechanistic interpretability is a research area that seeks to reverse-engineer the internal computations of neural networks into human-understandable algorithms. It studies features, circuits, and representations within model weights and activations to explain how specific behaviours arise. The field aims to make models transparent enough to predict, audit, and align, supporting AI safety.",
-  "domain": "ai",
+  "domain": "machine-learning",
   "maturity": "experimental",
   "subClassOf": [{"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and alignment"}, {"@id": "urn:ngm:class:ai-risks", "label": "AI Risks"}]
+    "hasPart": [
+      {"@id": "urn:ngm:class:circuit-analysis", "label": "Circuit Analysis"},
+      {"@id": "urn:ngm:class:sparse-autoencoder", "label": "Sparse Autoencoder"},
+      {"@id": "urn:ngm:class:activation-patching", "label": "Activation Patching"},
+      {"@id": "urn:ngm:class:feature-visualization", "label": "Feature Visualization"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
+      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
+      {"@id": "urn:ngm:class:model-auditing", "label": "Model Auditing"},
+      {"@id": "urn:ngm:class:deception-detection", "label": "Deception Detection"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:representation-learning", "label": "Representation Learning"},
+      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:causal-tracing", "label": "Causal Tracing"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:probing-classifier", "label": "Probing Classifier"},
+      {"@id": "urn:ngm:class:logit-lens", "label": "Logit Lens"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and Alignment"},
+      {"@id": "urn:ngm:class:ai-risks", "label": "AI Risks"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:black-box-interpretability", "label": "Black-Box Interpretability"},
+      {"@id": "urn:ngm:class:post-hoc-explanation", "label": "Post-Hoc Explanation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:governance", "label": "Governance"},
+      {"@id": "urn:ngm:class:security", "label": "Security"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and Alignment"},
+      {"@id": "urn:ngm:class:ai-risks", "label": "AI Risks"},
+      {"@id": "urn:ngm:class:superposition-hypothesis", "label": "Superposition Hypothesis"},
+      {"@id": "urn:ngm:class:polysemanticity", "label": "Polysemanticity"},
+      {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"}
+    ]
   },
-  "quality": 0.72
+  "sameAs": [
+    {"@id": "urn:ngm:class:neural-network-interpretability", "label": "Neural Network Interpretability"},
+    {"@id": "urn:ngm:class:reverse-engineering-neural-networks", "label": "Reverse Engineering Neural Networks"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

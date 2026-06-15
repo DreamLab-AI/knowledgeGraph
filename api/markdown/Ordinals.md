@@ -54,7 +54,7 @@ public:: true
   "@id": "urn:ngm:class:ordinals",
   "@type": "Class",
   "label": "Ordinals",
-  "definition": "A scheme for numbering individual satoshis by order of issuance and transfer, allowing arbitrary data to be inscribed onto specific satoshis on the Bitcoin blockchain.",
+  "definition": "A scheme for numbering individual satoshis by order of issuance and transfer, allowing arbitrary data to be inscribed onto specific satoshis on the Bitcoin blockchain via the witness field of Taproot transactions.",
   "domain": "blockchain",
   "maturity": "emerging",
   "qualityScore": 0.7,
@@ -73,20 +73,120 @@ public:: true
       {
         "@id": "urn:ngm:class:utxo",
         "label": "UTXO"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:brc-20",
         "label": "BRC-20"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-nft",
+        "label": "Bitcoin NFT"
+      },
+      {
+        "@id": "urn:ngm:class:digital-artifact",
+        "label": "Digital Artifact"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:inscription",
+        "label": "Inscription"
+      },
+      {
+        "@id": "urn:ngm:class:satoshi-numbering",
+        "label": "Satoshi Numbering"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:witness-data",
+        "label": "Witness Data"
+      },
+      {
+        "@id": "urn:ngm:class:first-in-first-out",
+        "label": "First-In-First-Out"
+      },
+      {
+        "@id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:segwit",
+        "label": "SegWit"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-blockchain",
+        "label": "Bitcoin Blockchain"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:ethereum-nft",
+        "label": "Ethereum NFT"
+      },
+      {
+        "@id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-storage",
+        "label": "On-Chain Storage"
+      },
+      {
+        "@id": "urn:ngm:class:digital-collectible",
+        "label": "Digital Collectible"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
+      },
+      {
+        "@id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:bitcoin-ordinals",
+      "label": "Bitcoin Ordinals"
+    },
+    {
+      "@id": "urn:ngm:class:ordinal-theory",
+      "label": "Ordinal Theory"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

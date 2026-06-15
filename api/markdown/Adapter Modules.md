@@ -56,27 +56,93 @@ public:: true
       "label": "Parameter-Efficient Fine-Tuning"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.65,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:adapter-layers",
+      "label": "Adapter Layers"
+    },
+    {
+      "@id": "urn:ngm:class:bottleneck-adapters",
+      "label": "Bottleneck Adapters"
+    }
+  ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:bottleneck-architecture",
+        "label": "Bottleneck Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:residual-connection",
+        "label": "Residual Connection"
+      },
+      {
+        "@id": "urn:ngm:class:down-projection",
+        "label": "Down-Projection"
+      },
+      {
+        "@id": "urn:ngm:class:up-projection",
+        "label": "Up-Projection"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:fine-tuning",
         "label": "Fine Tuning"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:prefix-tuning",
-        "label": "Prefix Tuning"
       },
       {
-        "@id": "urn:ngm:class:prompt-tuning",
-        "label": "Prompt Tuning"
+        "@id": "urn:ngm:class:pre-trained-model",
+        "label": "Pre-Trained Model"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:multi-task-learning",
+        "label": "Multi-Task Learning"
+      },
+      {
+        "@id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation"
+      },
+      {
+        "@id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:modular-neural-network",
+        "label": "Modular Neural Network"
       }
     ],
     "uses": [
@@ -87,12 +153,58 @@ public:: true
       {
         "@id": "urn:ngm:class:neural-network-layer",
         "label": "Neural Network Layer"
+      },
+      {
+        "@id": "urn:ngm:class:non-linearity",
+        "label": "Non-Linearity"
       }
     ],
-    "partOf": [
+    "supports": [
       {
-        "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
-        "label": "Parameter-Efficient Fine-Tuning"
+        "@id": "urn:ngm:class:cross-lingual-transfer",
+        "label": "Cross-Lingual Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:prefix-tuning",
+        "label": "Prefix Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-tuning",
+        "label": "Prompt Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:lora",
+        "label": "LoRA"
+      },
+      {
+        "@id": "urn:ngm:class:full-fine-tuning",
+        "label": "Full Fine-Tuning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:adapterfusion",
+        "label": "AdapterFusion"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-learning",
+        "label": "Multimodal Learning"
       }
     ]
   }

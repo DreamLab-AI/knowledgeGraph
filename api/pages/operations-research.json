@@ -16,8 +16,34 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:linear-programming",
+        "label": "Linear Programming"
+      },
+      {
+        "id": "urn:ngm:class:network-flow",
+        "label": "Network Flow"
+      },
+      {
+        "id": "urn:ngm:class:queuing-theory",
+        "label": "Queuing Theory"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:mathematical-modelling",
+        "label": "Mathematical Modelling"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:logistics-optimization",
@@ -30,12 +56,38 @@
       {
         "id": "urn:ngm:class:planning-and-scheduling",
         "label": "Planning and Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:resource-allocation",
+        "label": "Resource Allocation"
+      },
+      {
+        "id": "urn:ngm:class:fleet-management",
+        "label": "Fleet Management"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:optimization-algorithm",
@@ -52,6 +104,14 @@
       {
         "id": "urn:ngm:class:monte-carlo-methods",
         "label": "Monte Carlo Methods"
+      },
+      {
+        "id": "urn:ngm:class:integer-programming",
+        "label": "Integer Programming"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-modelling",
+        "label": "Stochastic Modelling"
       }
     ],
     "supports": [],
@@ -69,6 +129,14 @@
       {
         "id": "urn:ngm:class:simulation",
         "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:systems-engineering",
+        "label": "Systems Engineering"
+      },
+      {
+        "id": "urn:ngm:class:decision-theory",
+        "label": "Decision Theory"
       }
     ]
   },

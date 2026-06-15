@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:plane-intersection-test",
+        "label": "Plane Intersection Test"
+      },
+      {
+        "id": "urn:ngm:class:sphere-frustum-test",
+        "label": "Sphere-Frustum Test"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:view-projection-matrix",
+        "label": "View-Projection Matrix"
+      },
+      {
+        "id": "urn:ngm:class:bounding-volume",
+        "label": "Bounding Volume"
+      },
+      {
+        "id": "urn:ngm:class:camera-model",
+        "label": "Camera Model"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:real-time-rendering",
@@ -30,16 +52,58 @@
       {
         "id": "urn:ngm:class:performance-optimization",
         "label": "Performance Optimization"
+      },
+      {
+        "id": "urn:ngm:class:gpu-driven-rendering",
+        "label": "GPU-Driven Rendering"
+      },
+      {
+        "id": "urn:ngm:class:draw-call-batching",
+        "label": "Draw Call Batching"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:occlusion-culling",
+        "label": "Occlusion Culling"
+      },
+      {
+        "id": "urn:ngm:class:backface-culling",
+        "label": "Backface Culling"
+      },
+      {
+        "id": "urn:ngm:class:portal-culling",
+        "label": "Portal Culling"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:scene-graph",
         "label": "Scene Graph"
+      },
+      {
+        "id": "urn:ngm:class:bounding-volume-hierarchy",
+        "label": "Bounding Volume Hierarchy"
+      },
+      {
+        "id": "urn:ngm:class:octree",
+        "label": "Octree"
+      },
+      {
+        "id": "urn:ngm:class:axis-aligned-bounding-box",
+        "label": "Axis-Aligned Bounding Box"
       }
     ],
     "supports": [],
@@ -47,16 +111,20 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:occlusion-culling",
-        "label": "Occlusion Culling"
-      },
-      {
         "id": "urn:ngm:class:level-of-detail",
         "label": "Level of Detail"
       },
       {
         "id": "urn:ngm:class:scene-management",
         "label": "Scene Management"
+      },
+      {
+        "id": "urn:ngm:class:clipping",
+        "label": "Clipping"
+      },
+      {
+        "id": "urn:ngm:class:spatial-indexing",
+        "label": "Spatial Indexing"
       }
     ]
   },

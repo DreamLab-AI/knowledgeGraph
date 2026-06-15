@@ -30,17 +30,54 @@ public:: true
       {"@id": "urn:ngm:class:symmetric-encryption", "label": "Symmetric Encryption"},
       {"@id": "urn:ngm:class:digital-certificate", "label": "Digital Certificate"},
       {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"},
-      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"}
+      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"},
+      {"@id": "urn:ngm:class:elliptic-curve-diffie-hellman", "label": "Elliptic Curve Diffie-Hellman"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:secure-communication", "label": "Secure Communication"},
-      {"@id": "urn:ngm:class:network-security", "label": "Network Security"}
+      {"@id": "urn:ngm:class:network-security", "label": "Network Security"},
+      {"@id": "urn:ngm:class:https", "label": "HTTPS"},
+      {"@id": "urn:ngm:class:forward-secrecy", "label": "Forward Secrecy"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:x509-certificate", "label": "X.509 Certificate"},
+      {"@id": "urn:ngm:class:cipher-suite", "label": "Cipher Suite"},
+      {"@id": "urn:ngm:class:tcp-ip", "label": "TCP/IP"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:transport-layer-security", "label": "Transport Layer Security"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:mutual-authentication", "label": "Mutual Authentication"},
+      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"},
+      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:ssl", "label": "SSL"},
+      {"@id": "urn:ngm:class:ipsec", "label": "IPsec"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:tls", "label": "TLS"},
       {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"},
-      {"@id": "urn:ngm:class:key-derivation-function", "label": "Key Derivation Function"}
+      {"@id": "urn:ngm:class:key-derivation-function", "label": "Key Derivation Function"},
+      {"@id": "urn:ngm:class:certificate-transparency", "label": "Certificate Transparency"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
     ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:transport-layer-security-encryption", "label": "Transport Layer Security Encryption"},
+    {"@id": "urn:ngm:class:tls-protocol", "label": "TLS Protocol"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "quality": 0.8
 }

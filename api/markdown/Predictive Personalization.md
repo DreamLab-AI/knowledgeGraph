@@ -55,22 +55,56 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:behavioral-analytics", "label": "Behavioral Analytics"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"}
-    ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:recommendation-engine", "label": "Recommendation Engine"},
-      {"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"},
-      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
-    ],
-    "enables": [
-      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"}
+      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"},
+      {"@id": "urn:ngm:class:collaborative-filtering", "label": "Collaborative Filtering"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:user-profiling", "label": "User Profiling"}
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:real-time-data-processing", "label": "Real-Time Data Processing"},
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
+      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"},
+      {"@id": "urn:ngm:class:dynamic-content-delivery", "label": "Dynamic Content Delivery"},
+      {"@id": "urn:ngm:class:customer-engagement", "label": "Customer Engagement"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:data-collection", "label": "Data Collection"},
+      {"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"},
+      {"@id": "urn:ngm:class:privacy-preserving-computation", "label": "Privacy-Preserving Computation"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:recommendation-engine", "label": "Recommendation Engine"},
+      {"@id": "urn:ngm:class:exploration-exploitation-tradeoff", "label": "Exploration-Exploitation Tradeoff"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:digital-marketing", "label": "Digital Marketing"},
+      {"@id": "urn:ngm:class:e-commerce", "label": "E-Commerce"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:reactive-recommendation", "label": "Reactive Recommendation"},
+      {"@id": "urn:ngm:class:rule-based-personalization", "label": "Rule-Based Personalization"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy by Design"},
+      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
+      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:context-awareness", "label": "Context Awareness"},
+      {"@id": "urn:ngm:class:a-b-testing", "label": "A/B Testing"}
     ]
   },
-  "quality": 0.8,
+  "sameAs": [
+    {"@id": "urn:ngm:class:adaptive-personalization", "label": "Adaptive Personalization"},
+    {"@id": "urn:ngm:class:proactive-recommendation", "label": "Proactive Recommendation"}
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

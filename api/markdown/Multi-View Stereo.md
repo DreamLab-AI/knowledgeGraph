@@ -25,20 +25,63 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"}],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:depth-map-estimation", "label": "Depth Map Estimation"},
+      {"@id": "urn:ngm:class:depth-map-fusion", "label": "Depth Map Fusion"},
+      {"@id": "urn:ngm:class:patch-match", "label": "PatchMatch"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
+      {"@id": "urn:ngm:class:3d-reconstruction", "label": "3D Reconstruction"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"},
+      {"@id": "urn:ngm:class:feature-matching", "label": "Feature Matching"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:point-cloud-generation", "label": "Point Cloud Generation"},
-      {"@id": "urn:ngm:class:3-d-scanning", "label": "3D Scanning"}
+      {"@id": "urn:ngm:class:3-d-scanning", "label": "3D Scanning"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:textured-mesh", "label": "Textured Mesh"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure-from-Motion"},
+      {"@id": "urn:ngm:class:photometric-consistency", "label": "Photometric Consistency"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"},
       {"@id": "urn:ngm:class:stereo-vision", "label": "Stereo Vision"},
-      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure-from-Motion"}
+      {"@id": "urn:ngm:class:plane-sweep-stereo", "label": "Plane-Sweep Stereo"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:reality-capture", "label": "Reality Capture"},
+      {"@id": "urn:ngm:class:autonomous-vehicle-mapping", "label": "Autonomous Vehicle Mapping"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:lidar-scanning", "label": "Lidar Scanning"},
+      {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"},
+      {"@id": "urn:ngm:class:3d-gaussian-splatting", "label": "3D Gaussian Splatting"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:photorealistic-rendering", "label": "Photorealistic Rendering"},
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:point-cloud-processing", "label": "Point Cloud Processing"}
+      {"@id": "urn:ngm:class:point-cloud-processing", "label": "Point Cloud Processing"},
+      {"@id": "urn:ngm:class:visual-simultaneous-localisation-and-mapping", "label": "Visual Simultaneous Localisation and Mapping"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:mvs", "label": "MVS"},
+    {"@id": "urn:ngm:class:dense-stereo-reconstruction", "label": "Dense Stereo Reconstruction"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

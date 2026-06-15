@@ -29,18 +29,57 @@ public:: true
       {"@id": "urn:ngm:class:policy-enforcement-point", "label": "Policy Enforcement Point"},
       {"@id": "urn:ngm:class:policy-enforcement", "label": "Policy Enforcement"},
       {"@id": "urn:ngm:class:policy-engine", "label": "Policy Engine"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
+      {"@id": "urn:ngm:class:policy-administration-point", "label": "Policy Administration Point"},
+      {"@id": "urn:ngm:class:policy-information-point", "label": "Policy Information Point"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
-      {"@id": "urn:ngm:class:policy-framework", "label": "Policy Framework"}
+      {"@id": "urn:ngm:class:policy-framework", "label": "Policy Framework"},
+      {"@id": "urn:ngm:class:fine-grained-authorization", "label": "Fine-Grained Authorization"},
+      {"@id": "urn:ngm:class:continuous-authorization", "label": "Continuous Authorization"}
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"}
+      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"},
+      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:authorization-policy", "label": "Authorization Policy"},
+      {"@id": "urn:ngm:class:attribute-based-access-control", "label": "Attribute-Based Access Control"},
+      {"@id": "urn:ngm:class:xacml", "label": "XACML"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
+      {"@id": "urn:ngm:class:open-policy-agent", "label": "Open Policy Agent"},
+      {"@id": "urn:ngm:class:json-web-token", "label": "JSON Web Token"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
+      {"@id": "urn:ngm:class:identity-federation", "label": "Identity Federation"},
+      {"@id": "urn:ngm:class:cloud-iam", "label": "Cloud IAM"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:oasis", "label": "OASIS"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:network-perimeter-security", "label": "Network Perimeter Security"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:service-mesh", "label": "Service Mesh"},
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:pdp", "label": "PDP"},
+    {"@id": "urn:ngm:class:authorization-decision-engine", "label": "Authorization Decision Engine"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

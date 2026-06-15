@@ -28,18 +28,56 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
       {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
-      {"@id": "urn:ngm:class:occupancy-grid", "label": "Occupancy Grid"}
+      {"@id": "urn:ngm:class:occupancy-grid", "label": "Occupancy Grid"},
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"},
+      {"@id": "urn:ngm:class:voxel-grid", "label": "Voxel Grid"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
+      {"@id": "urn:ngm:class:task-planning", "label": "Task Planning"},
+      {"@id": "urn:ngm:class:collision-avoidance", "label": "Collision Avoidance"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:depth-sensor", "label": "Depth Sensor"},
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
+      {"@id": "urn:ngm:class:inertial-measurement-unit", "label": "Inertial Measurement Unit"},
+      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:semantic-map", "label": "Semantic Map"},
+      {"@id": "urn:ngm:class:topological-map", "label": "Topological Map"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:state-estimation", "label": "State Estimation"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:reactive-control", "label": "Reactive Control"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:embodied-ai", "label": "Embodied AI"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:depth-sensor", "label": "Depth Sensor"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"}
+      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
+      {"@id": "urn:ngm:class:gaussian-splatting", "label": "Gaussian Splatting"},
+      {"@id": "urn:ngm:class:embodied-agent", "label": "Embodied Agent"},
+      {"@id": "urn:ngm:class:world-model", "label": "World Model"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:world-model", "label": "World Model"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

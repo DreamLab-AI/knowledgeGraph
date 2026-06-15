@@ -56,12 +56,22 @@ public:: true
       "label": "Content and Assets"
     }
   ],
-  "quality": 0.35,
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:media-production-pipeline",
+      "label": "Media Production Pipeline"
+    },
+    {
+      "@id": "urn:ngm:class:creative-pipeline",
+      "label": "Creative Pipeline"
+    }
+  ],
   "relations": {
     "hasPart": [
       {
@@ -71,24 +81,108 @@ public:: true
       {
         "@id": "urn:ngm:class:rendering-pipeline",
         "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:review-and-approval",
+        "label": "Review and Approval"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:media-production",
+        "label": "Media Production"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:asset-pipeline",
+        "label": "Asset Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:digital-content",
         "label": "Digital Content"
+      },
+      {
+        "@id": "urn:ngm:class:content-distribution",
+        "label": "Content Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-tools",
+        "label": "Collaborative Tools"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:traditional-broadcast-workflow",
+        "label": "Traditional Broadcast Workflow"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
       }
     ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:metaverse-content-pipeline",
         "label": "Metaverse Content Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:3d-content-pipeline",
+        "label": "3D Content Pipeline"
       }
     ]
   }

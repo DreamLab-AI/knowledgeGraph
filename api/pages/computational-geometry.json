@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:computational-geometry",
   "domain": "spatial-computing",
-  "definition": "Computational geometry is the study of algorithms for solving geometric problems, such as finding convex hulls, intersections, and nearest points. It supports graphics, robotics, and geographic systems.",
+  "definition": "Computational geometry is the study of algorithms for solving geometric problems, such as finding convex hulls, intersections, and nearest points. It provides foundational techniques for computer graphics, robotics motion planning, geographic information systems, and computer-aided design.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:algorithm",
@@ -13,14 +13,39 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:convex-hull",
+        "label": "Convex Hull"
+      },
+      {
+        "id": "urn:ngm:class:delaunay-triangulation",
+        "label": "Delaunay Triangulation"
+      },
+      {
+        "id": "urn:ngm:class:voronoi-diagram",
+        "label": "Voronoi Diagram"
+      },
+      {
+        "id": "urn:ngm:class:polygon-clipping",
+        "label": "Polygon Clipping"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:data-structure",
         "label": "Data Structure"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
       }
     ],
     "enables": [
@@ -31,17 +56,88 @@
       {
         "id": "urn:ngm:class:pathfinding",
         "label": "Pathfinding"
+      },
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "id": "urn:ngm:class:geographic-information-system",
+        "label": "Geographic Information System"
+      },
+      {
+        "id": "urn:ngm:class:computer-aided-design",
+        "label": "Computer-Aided Design"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:combinatorial-geometry",
+        "label": "Combinatorial Geometry"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:spatial-index",
+        "label": "Spatial Index"
+      },
+      {
+        "id": "urn:ngm:class:bounding-volume-hierarchy",
+        "label": "Bounding Volume Hierarchy"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:mesh-processing",
+        "label": "Mesh Processing"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      },
+      {
+        "id": "urn:ngm:class:solid-modeling",
+        "label": "Solid Modeling"
+      }
+    ]
   },
   "wikilinks": [
     {

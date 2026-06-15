@@ -56,9 +56,9 @@ elevatedFrom:: [[Python and PyTorch]]
   "@type": "Class",
   "label": "Python PyTorch Deep Learning Stack",
   "definition": "Python and PyTorch together form the dominant open-source stack for deep learning research and production. Python provides the high-level scripting environment and ecosystem (NumPy, Hugging Face, spaCy), whilst PyTorch supplies dynamic computational graph execution, autograd differentiation, and GPU acceleration via CUDA, enabling rapid prototyping and deployment of neural network models.",
-  "domain": "artificial-intelligence",
+  "domain": "machine-learning",
   "maturity": "emerging",
-  "qualityScore": 0.7,
+  "qualityScore": 0.72,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-infrastructure",
@@ -66,24 +66,58 @@ elevatedFrom:: [[Python and PyTorch]]
     }
   ],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:pytorch", "label": "PyTorch"},
+      {"@id": "urn:ngm:class:python-programming-language", "label": "Python Programming Language"},
+      {"@id": "urn:ngm:class:autograd", "label": "Autograd"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
+      {"@id": "urn:ngm:class:cuda", "label": "CUDA"},
+      {"@id": "urn:ngm:class:numpy", "label": "NumPy"}
+    ],
     "enables": [
       {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
       {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:machine-learning-discipline-framework", "label": "Machine Learning Framework"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+      {"@id": "urn:ngm:class:hugging-face", "label": "Hugging Face"},
+      {"@id": "urn:ngm:class:dynamic-computational-graph", "label": "Dynamic Computational Graph"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"},
+      {"@id": "urn:ngm:class:high-performance-computing", "label": "High Performance Computing"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:tensorflow", "label": "TensorFlow"},
+      {"@id": "urn:ngm:class:jax", "label": "JAX"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:model-inference", "label": "Model Inference"},
+      {"@id": "urn:ngm:class:spacy", "label": "spaCy"}
     ]
   },
+  "sameAs": [
+    {"@id": "urn:ngm:class:python-and-pytorch", "label": "Python and PyTorch"}
+  ],
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

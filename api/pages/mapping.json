@@ -13,11 +13,33 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:semantic-mapping",
+        "label": "Semantic Mapping"
+      },
+      {
+        "id": "urn:ngm:class:metric-map",
+        "label": "Metric Map"
+      },
+      {
+        "id": "urn:ngm:class:topological-map",
+        "label": "Topological Map"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:data-integration",
@@ -30,12 +52,42 @@
       {
         "id": "urn:ngm:class:knowledge-graph-construction",
         "label": "Knowledge Graph Construction"
+      },
+      {
+        "id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:localization",
+        "label": "Localization"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:slam",
@@ -44,6 +96,18 @@
       {
         "id": "urn:ngm:class:localization",
         "label": "Localization"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      },
+      {
+        "id": "urn:ngm:class:depth-camera",
+        "label": "Depth Camera"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
       }
     ],
     "supports": [],
@@ -61,6 +125,18 @@
       {
         "id": "urn:ngm:class:geospatial-technology",
         "label": "Geospatial Technology"
+      },
+      {
+        "id": "urn:ngm:class:ontology-alignment",
+        "label": "Ontology Alignment"
+      },
+      {
+        "id": "urn:ngm:class:schema-matching",
+        "label": "Schema Matching"
+      },
+      {
+        "id": "urn:ngm:class:coordinate-system",
+        "label": "Coordinate System"
       }
     ]
   },

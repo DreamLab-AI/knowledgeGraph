@@ -84,6 +84,34 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:polygonal-mesh",
+        "label": "Polygonal Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:skeletal-rig",
+        "label": "Skeletal Rig"
+      },
+      {
+        "@id": "urn:ngm:class:blend-shape",
+        "label": "Blend Shape"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:3-d-model",
+        "label": "3D Model"
+      },
+      {
+        "@id": "urn:ngm:class:game-asset-pipeline",
+        "label": "Game Asset Pipeline"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:3-d-modeling-software",
@@ -94,8 +122,8 @@ public:: true
         "label": "Topology Design"
       },
       {
-        "@id": "urn:ngm:class:texture-mapping",
-        "label": "Texture Mapping"
+        "@id": "urn:ngm:class:uv-unwrapping",
+        "label": "UV Unwrapping"
       }
     ],
     "enables": [
@@ -110,14 +138,92 @@ public:: true
       {
         "@id": "urn:ngm:class:virtual-avatars",
         "label": "Virtual Avatars"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:retopology",
+        "label": "Retopology"
+      },
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:normal-map",
+        "label": "Normal Map"
+      },
+      {
+        "@id": "urn:ngm:class:skinning",
+        "label": "Skinning"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:procedural-character",
+        "label": "Procedural Character"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:glb-format",
+        "label": "GLB Format"
       }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:character-mesh",
+      "label": "Character Mesh"
+    },
+    {
+      "@id": "urn:ngm:class:game-character-asset",
+      "label": "Game Character Asset"
+    }
+  ],
+  "quality": 0.68,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

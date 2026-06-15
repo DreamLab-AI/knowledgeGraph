@@ -58,7 +58,7 @@ public:: true
   "@id": "urn:ngm:class:search-algorithms",
   "@type": "Class",
   "label": "Search Algorithms",
-  "definition": "Search Algorithms is a artificial intelligence concept and a type of Artificial Intelligence. that enables Pathfinding, Planning and Scheduling.",
+  "definition": "Computational methods for systematically navigating problem spaces to find solutions, optimal paths, or goal states, employing strategies such as breadth-first, depth-first, heuristic-guided, or adversarial search to efficiently discover answers to complex problems.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "subClassOf": [
@@ -68,6 +68,38 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:breadth-first-search",
+        "label": "Breadth-First Search"
+      },
+      {
+        "@id": "urn:ngm:class:depth-first-search",
+        "label": "Depth-First Search"
+      },
+      {
+        "@id": "urn:ngm:class:a-star-algorithm",
+        "label": "A-Star Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:minimax-algorithm",
+        "label": "Minimax Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "@id": "urn:ngm:class:heuristic-functions",
+        "label": "Heuristic Functions"
+      }
+    ],
     "enables": [
       {
         "@id": "urn:ngm:class:pathfinding",
@@ -76,14 +108,98 @@ public:: true
       {
         "@id": "urn:ngm:class:planning-and-scheduling",
         "label": "Planning and Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:game-playing",
+        "label": "Game Playing"
+      },
+      {
+        "@id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:optimization",
+        "label": "Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:state-space-representation",
+        "label": "State Space Representation"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:data-structures",
+        "label": "Data Structures"
+      },
+      {
+        "@id": "urn:ngm:class:priority-queues",
+        "label": "Priority Queues"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:random-sampling",
+        "label": "Random Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:exhaustive-enumeration",
+        "label": "Exhaustive Enumeration"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:complexity-theory",
+        "label": "Complexity Theory"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:search-methods",
+      "label": "Search Methods"
+    },
+    {
+      "@id": "urn:ngm:class:search-strategies",
+      "label": "Search Strategies"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

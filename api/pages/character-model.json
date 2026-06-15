@@ -13,10 +13,27 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.68,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:polygonal-mesh",
+        "label": "Polygonal Mesh"
+      },
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "id": "urn:ngm:class:skeletal-rig",
+        "label": "Skeletal Rig"
+      },
+      {
+        "id": "urn:ngm:class:blend-shape",
+        "label": "Blend Shape"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:3-d-modeling-software",
@@ -27,8 +44,8 @@
         "label": "Topology Design"
       },
       {
-        "id": "urn:ngm:class:texture-mapping",
-        "label": "Texture Mapping"
+        "id": "urn:ngm:class:uv-unwrapping",
+        "label": "UV Unwrapping"
       }
     ],
     "enables": [
@@ -43,17 +60,88 @@
       {
         "id": "urn:ngm:class:virtual-avatars",
         "label": "Virtual Avatars"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:retopology",
+        "label": "Retopology"
+      },
+      {
+        "id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:procedural-character",
+        "label": "Procedural Character"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:normal-map",
+        "label": "Normal Map"
+      },
+      {
+        "id": "urn:ngm:class:skinning",
+        "label": "Skinning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:3-d-model",
+        "label": "3D Model"
+      },
+      {
+        "id": "urn:ngm:class:game-asset-pipeline",
+        "label": "Game Asset Pipeline"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:glb-format",
+        "label": "GLB Format"
+      }
+    ]
   },
   "wikilinks": [
     {

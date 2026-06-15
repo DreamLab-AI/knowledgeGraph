@@ -13,11 +13,20 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:secure-clock",
+        "label": "Secure Clock"
+      },
+      {
+        "id": "urn:ngm:class:trust-service-provider",
+        "label": "Trust Service Provider"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:audit-trail",
@@ -30,12 +39,43 @@
       {
         "id": "urn:ngm:class:virtual-notary-service",
         "label": "Virtual Notary Service"
+      },
+      {
+        "id": "urn:ngm:class:long-term-archival",
+        "label": "Long-Term Archival"
+      },
+      {
+        "id": "urn:ngm:class:document-authenticity",
+        "label": "Document Authenticity"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:rfc-3161",
+        "label": "RFC 3161"
+      },
+      {
+        "id": "urn:ngm:class:eidas-regulation",
+        "label": "eIDAS Regulation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:blockchain-timestamping",
+        "label": "Blockchain Timestamping"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:cryptographic-hash-function",
@@ -44,6 +84,10 @@
       {
         "id": "urn:ngm:class:cryptographic-signature",
         "label": "Cryptographic Signature"
+      },
+      {
+        "id": "urn:ngm:class:x509-certificate",
+        "label": "X.509 Certificate"
       }
     ],
     "supports": [
@@ -54,9 +98,22 @@
       {
         "id": "urn:ngm:class:archival-standards",
         "label": "Archival Standards"
+      },
+      {
+        "id": "urn:ngm:class:electronic-contracting",
+        "label": "Electronic Contracting"
       }
     ],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -70,6 +127,14 @@
       {
         "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
       }
     ]
   },

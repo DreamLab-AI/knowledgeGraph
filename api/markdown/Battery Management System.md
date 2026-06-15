@@ -27,22 +27,67 @@ public:: true
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:current-sensor", "label": "Current Sensor"},
-      {"@id": "urn:ngm:class:monitoring-system", "label": "Monitoring System"}
+      {"@id": "urn:ngm:class:monitoring-system", "label": "Monitoring System"},
+      {"@id": "urn:ngm:class:voltage-sensor", "label": "Voltage Sensor"},
+      {"@id": "urn:ngm:class:temperature-sensor", "label": "Temperature Sensor"},
+      {"@id": "urn:ngm:class:cell-balancing-circuit", "label": "Cell Balancing Circuit"},
+      {"@id": "urn:ngm:class:microcontroller-unit", "label": "Microcontroller Unit"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:electric-vehicle", "label": "Electric Vehicle"},
+      {"@id": "urn:ngm:class:energy-storage-system", "label": "Energy Storage System"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:can-bus", "label": "CAN Bus"},
+      {"@id": "urn:ngm:class:firmware", "label": "Firmware"},
+      {"@id": "urn:ngm:class:battery-pack", "label": "Battery Pack"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:control-system", "label": "Control System"},
-      {"@id": "urn:ngm:class:power-management", "label": "Power Management"}
+      {"@id": "urn:ngm:class:power-management", "label": "Power Management"},
+      {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"},
+      {"@id": "urn:ngm:class:coulomb-counting", "label": "Coulomb Counting"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:power-supply", "label": "Power Supply"},
+      {"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"},
+      {"@id": "urn:ngm:class:thermal-management", "label": "Thermal Management"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"},
+      {"@id": "urn:ngm:class:fleet-management", "label": "Fleet Management"},
+      {"@id": "urn:ngm:class:grid-energy-storage", "label": "Grid Energy Storage"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iso-26262", "label": "ISO 26262"},
+      {"@id": "urn:ngm:class:iec-62133", "label": "IEC 62133"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:protection-circuit", "label": "Protection Circuit"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:energy-management", "label": "Energy Management"},
       {"@id": "urn:ngm:class:energy-and-power", "label": "Energy and Power"},
-      {"@id": "urn:ngm:class:hardware-component", "label": "Hardware Component"}
-    ],
-    "enables": [
-      {"@id": "urn:ngm:class:power-supply", "label": "Power Supply"}
+      {"@id": "urn:ngm:class:hardware-component", "label": "Hardware Component"},
+      {"@id": "urn:ngm:class:state-of-charge", "label": "State of Charge"},
+      {"@id": "urn:ngm:class:solid-state-battery", "label": "Solid State Battery"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:bms", "label": "BMS"},
+    {"@id": "urn:ngm:class:battery-protection-system", "label": "Battery Protection System"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

@@ -28,23 +28,56 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:central-bank", "label": "Central Bank"},
       {"@id": "urn:ngm:class:cbdcs", "label": "CBDCs"},
-      {"@id": "urn:ngm:class:financial-infrastructure", "label": "Financial Infrastructure"}
+      {"@id": "urn:ngm:class:financial-infrastructure", "label": "Financial Infrastructure"},
+      {"@id": "urn:ngm:class:real-time-gross-settlement", "label": "Real-Time Gross Settlement"},
+      {"@id": "urn:ngm:class:correspondent-banking", "label": "Correspondent Banking"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:instant-value-settlement", "label": "Instant value settlement"},
       {"@id": "urn:ngm:class:cross-border-payments", "label": "Cross-Border Payments"},
-      {"@id": "urn:ngm:class:monetary-policy-implementation", "label": "Monetary Policy Implementation"}
+      {"@id": "urn:ngm:class:monetary-policy-implementation", "label": "Monetary Policy Implementation"},
+      {"@id": "urn:ngm:class:delivery-versus-payment", "label": "Delivery Versus Payment"},
+      {"@id": "urn:ngm:class:atomic-swap", "label": "Atomic Swap"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:digital-payment-system", "label": "Digital Payment System"},
-      {"@id": "urn:ngm:class:interoperability-protocol", "label": "Interoperability Protocol"}
+      {"@id": "urn:ngm:class:interoperability-protocol", "label": "Interoperability Protocol"},
+      {"@id": "urn:ngm:class:permissioned-distributed-ledger", "label": "Permissioned Distributed Ledger"},
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:monetary-sovereignty", "label": "Monetary Sovereignty"},
-      {"@id": "urn:ngm:class:monetary-system", "label": "Monetary System"}
+      {"@id": "urn:ngm:class:monetary-system", "label": "Monetary System"},
+      {"@id": "urn:ngm:class:financial-stability", "label": "Financial Stability"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:kyc-aml-compliance", "label": "KYC/AML Compliance"},
+      {"@id": "urn:ngm:class:central-bank-oversight", "label": "Central Bank Oversight"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:retail-cbdc", "label": "Retail CBDC"},
+      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iso-20022", "label": "ISO 20022"},
+      {"@id": "urn:ngm:class:bank-for-international-settlements", "label": "Bank for International Settlements"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:tokenised-securities", "label": "Tokenised Securities"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:wCBDC", "label": "wCBDC"},
+    {"@id": "urn:ngm:class:interbank-digital-currency", "label": "Interbank Digital Currency"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

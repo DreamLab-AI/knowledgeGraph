@@ -25,12 +25,61 @@ public:: true
   "maturity": "mature",
   "subClassOf": [{"@id": "urn:ngm:class:runtime-inspection", "label": "Runtime Inspection"}],
   "relations": {
-    "enables": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}, {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"}],
-    "uses": [{"@id": "urn:ngm:class:runtime-environment", "label": "Runtime Environment"}],
-    "relatedTo": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}, {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}],
-    "supports": [{"@id": "urn:ngm:class:computer-vision-system", "label": "Computer Vision System"}]
+    "enables": [
+      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
+      {"@id": "urn:ngm:class:progressive-enhancement", "label": "Progressive Enhancement"},
+      {"@id": "urn:ngm:class:graceful-degradation", "label": "Graceful Degradation"},
+      {"@id": "urn:ngm:class:image-segmentation", "label": "Image Segmentation"},
+      {"@id": "urn:ngm:class:augmented-reality-tracking", "label": "Augmented Reality Tracking"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:runtime-environment", "label": "Runtime Environment"},
+      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
+      {"@id": "urn:ngm:class:keypoint-descriptor", "label": "Keypoint Descriptor"},
+      {"@id": "urn:ngm:class:image-processing", "label": "Image Processing"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:computer-vision-system", "label": "Computer Vision System"},
+      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
+      {"@id": "urn:ngm:class:webxr", "label": "WebXR"},
+      {"@id": "urn:ngm:class:cross-browser-compatibility", "label": "Cross-Browser Compatibility"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:sensor-data", "label": "Sensor Data"},
+      {"@id": "urn:ngm:class:capability-api", "label": "Capability API"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"},
+      {"@id": "urn:ngm:class:browser-api", "label": "Browser API"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:user-agent-sniffing", "label": "User-Agent Sniffing"},
+      {"@id": "urn:ngm:class:version-detection", "label": "Version Detection"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
+      {"@id": "urn:ngm:class:edge-detection", "label": "Edge Detection"},
+      {"@id": "urn:ngm:class:corner-detection", "label": "Corner Detection"},
+      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
+      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+    ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:capability-detection", "label": "Capability Detection"},
+    {"@id": "urn:ngm:class:keypoint-detection", "label": "Keypoint Detection"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

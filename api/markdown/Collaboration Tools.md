@@ -55,7 +55,7 @@ public:: true
   "@type": "Class",
   "label": "Collaboration Tools",
   "definition": "Software that supports people working together on shared tasks or documents, including communication, coordination and concurrent editing features.",
-  "domain": "distributed-systems",
+  "domain": "distributed-collaboration",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [
@@ -69,20 +69,132 @@ public:: true
       {
         "@id": "urn:ngm:class:network-architecture",
         "label": "Network Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:operational-transformation",
         "label": "Operational Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-teams",
+        "label": "Distributed Teams"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:task-management",
+        "label": "Task Management"
+      },
+      {
+        "@id": "urn:ngm:class:document-collaboration",
+        "label": "Document Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      },
+      {
+        "@id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:websocket",
+        "label": "WebSocket"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:agile-development",
+        "label": "Agile Development"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-development",
+        "label": "Open Source Development"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:email",
+        "label": "Email"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "@id": "urn:ngm:class:notification-system",
+        "label": "Notification System"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:groupware",
+      "label": "Groupware"
+    },
+    {
+      "@id": "urn:ngm:class:collaborative-software",
+      "label": "Collaborative Software"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

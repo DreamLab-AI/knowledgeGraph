@@ -16,8 +16,30 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:procedural-animation",
+        "label": "Procedural Animation"
+      },
+      {
+        "id": "urn:ngm:class:physics-based-animation",
+        "label": "Physics-Based Animation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:3d-mesh",
+        "label": "3D Mesh"
+      },
+      {
+        "id": "urn:ngm:class:skin-weighting",
+        "label": "Skin Weighting"
+      },
+      {
+        "id": "urn:ngm:class:animation-state-machine",
+        "label": "Animation State Machine"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:real-time-character-animation",
@@ -30,12 +52,33 @@
       {
         "id": "urn:ngm:class:avatar-animation",
         "label": "Avatar Animation"
+      },
+      {
+        "id": "urn:ngm:class:virtual-human",
+        "label": "Virtual Human"
+      },
+      {
+        "id": "urn:ngm:class:facial-animation",
+        "label": "Facial Animation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:inverse-kinematics",
@@ -52,19 +95,44 @@
       {
         "id": "urn:ngm:class:character-rigging",
         "label": "Character Rigging"
+      },
+      {
+        "id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      },
+      {
+        "id": "urn:ngm:class:blend-shapes",
+        "label": "Blend Shapes"
+      },
+      {
+        "id": "urn:ngm:class:keyframe-animation",
+        "label": "Keyframe Animation"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      },
+      {
+        "id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:procedural-animation",
-        "label": "Procedural Animation"
-      },
-      {
         "id": "urn:ngm:class:animation-retargeting",
         "label": "Animation Retargeting"
+      },
+      {
+        "id": "urn:ngm:class:secondary-motion",
+        "label": "Secondary Motion"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
       }
     ]
   },

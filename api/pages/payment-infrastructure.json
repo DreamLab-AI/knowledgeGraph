@@ -4,7 +4,7 @@
   "slug": "payment-infrastructure",
   "public": true,
   "classIri": "urn:ngm:class:payment-infrastructure",
-  "domain": "blockchain",
+  "domain": "finance",
   "definition": "Payment infrastructure is the aggregate of networks, protocols, clearing houses, settlement systems, and regulatory frameworks that enable the transfer of monetary value between parties. It spans card networks, interbank messaging (SWIFT, ISO 20022), real-time gross settlement (RTGS) systems, and emerging digital-asset rails including stablecoins and central bank digital currencies. The infrastructure defines latency, finality, cost, and access characteristics that shape the global economy.",
   "subClassOf": [
     {
@@ -28,16 +28,91 @@
       {
         "id": "urn:ngm:class:payment-system",
         "label": "Payment System"
+      },
+      {
+        "id": "urn:ngm:class:clearing-house",
+        "label": "Clearing House"
+      },
+      {
+        "id": "urn:ngm:class:real-time-gross-settlement",
+        "label": "Real-Time Gross Settlement"
       }
     ],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:interbank-messaging",
+        "label": "Interbank Messaging"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-payment",
+        "label": "Cross-Border Payment"
+      },
+      {
+        "id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      },
+      {
+        "id": "urn:ngm:class:swift-messaging",
+        "label": "SWIFT Messaging"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-commerce",
+        "label": "Digital Commerce"
+      },
+      {
+        "id": "urn:ngm:class:wholesale-settlement",
+        "label": "Wholesale Settlement"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -52,6 +127,14 @@
       {
         "id": "urn:ngm:class:lightning-network",
         "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:correspondent-banking",
+        "label": "Correspondent Banking"
       }
     ]
   },

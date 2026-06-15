@@ -50,7 +50,7 @@ public:: true
   "@id": "urn:ngm:class:product-liability",
   "@type": "Class",
   "label": "Product Liability",
-  "definition": "The area of law concerning the responsibility of producers and sellers for harm caused by defective or unsafe products placed on the market.",
+  "definition": "The area of law concerning the responsibility of producers and sellers for harm caused by defective or unsafe products placed on the market, covering manufacturing defects, design defects, and failure to warn.",
   "domain": "governance",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -61,10 +61,42 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:strict-liability",
+        "label": "Strict Liability"
+      },
+      {
+        "@id": "urn:ngm:class:negligence",
+        "label": "Negligence"
+      },
+      {
+        "@id": "urn:ngm:class:warranty",
+        "label": "Warranty"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:tort-law",
+        "label": "Tort Law"
+      },
+      {
+        "@id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:consumer-protection",
         "label": "Consumer Protection"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ],
     "enables": [
@@ -75,14 +107,94 @@ public:: true
       {
         "@id": "urn:ngm:class:safety",
         "label": "Safety"
+      },
+      {
+        "@id": "urn:ngm:class:redress",
+        "label": "Redress"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:product-safety-standards",
+        "label": "Product Safety Standards"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:due-diligence",
+        "label": "Due Diligence"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:market-surveillance",
+        "label": "Market Surveillance"
+      },
+      {
+        "@id": "urn:ngm:class:product-recall",
+        "label": "Product Recall"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:product-liability-directive",
+        "label": "Product Liability Directive"
+      },
+      {
+        "@id": "urn:ngm:class:iso-standards",
+        "label": "ISO Standards"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:contributory-negligence",
+        "label": "Contributory Negligence"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:insurance",
+        "label": "Insurance"
+      },
+      {
+        "@id": "urn:ngm:class:intellectual-property",
+        "label": "Intellectual Property"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:products-liability",
+      "label": "Products Liability"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

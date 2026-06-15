@@ -66,7 +66,7 @@ public:: true
   "@id": "urn:ngm:class:relayer",
   "@type": "Class",
   "label": "Relayer",
-  "definition": "Infrastructure operator that facilitates cross-chain message passing by monitoring source chains for events, generating cryptographic proofs of state, and submitting verified transactions to destination chains.",
+  "definition": "Infrastructure operator that facilitates cross-chain message passing by monitoring source chains for events, generating cryptographic proofs of state, and submitting verified transactions to destination chains. Relayers provide non-custodial connectivity for interoperability protocols such as IBC, LayerZero, and Chainlink CCIP without holding user assets.",
   "domain": "blockchain",
   "maturity": "emerging",
   "subClassOf": [
@@ -84,26 +84,136 @@ public:: true
       {
         "@id": "urn:ngm:class:cross-chain-bridge",
         "label": "Cross-Chain Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-messaging",
+        "label": "Cross-Chain Messaging"
+      },
+      {
+        "@id": "urn:ngm:class:meta-transaction",
+        "label": "Meta-Transaction"
       }
     ],
     "implements": [
       {
         "@id": "urn:ngm:class:message-passing",
         "label": "Message Passing"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:ibc-protocol",
+        "label": "IBC Protocol"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:light-client",
         "label": "Light Client"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:event-listener",
+        "label": "Event Listener"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      },
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:gas-fee",
+        "label": "Gas Fee"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-liquidity",
+        "label": "Cross-Chain Liquidity"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:custodial-bridge",
+        "label": "Custodial Bridge"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:mev",
+        "label": "Maximal Extractable Value"
+      },
+      {
+        "@id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "@id": "urn:ngm:class:slashing",
+        "label": "Slashing"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:cross-chain-relayer",
+      "label": "Cross-Chain Relayer"
+    },
+    {
+      "@id": "urn:ngm:class:message-relayer",
+      "label": "Message Relayer"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

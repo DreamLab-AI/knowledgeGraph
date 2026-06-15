@@ -25,21 +25,63 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:distributed-hash-table", "label": "Distributed Hash Table"}],
   "relations": {
-    "relatedTo": [
+    "hasPart": [
+      {"@id": "urn:ngm:class:k-bucket", "label": "K-Bucket"},
+      {"@id": "urn:ngm:class:xor-metric", "label": "XOR Metric"},
+      {"@id": "urn:ngm:class:routing-table", "label": "Routing Table"},
+      {"@id": "urn:ngm:class:node-identifier", "label": "Node Identifier"}
+    ],
+    "requires": [
       {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
-      {"@id": "urn:ngm:class:distributed-system-protocol", "label": "Distributed System Protocol"}
+      {"@id": "urn:ngm:class:remote-procedure-call", "label": "Remote Procedure Call"},
+      {"@id": "urn:ngm:class:bootstrap-node", "label": "Bootstrap Node"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:ipfs", "label": "IPFS"},
       {"@id": "urn:ngm:class:libp2p", "label": "libp2p"},
-      {"@id": "urn:ngm:class:filecoin", "label": "Filecoin"}
+      {"@id": "urn:ngm:class:filecoin", "label": "Filecoin"},
+      {"@id": "urn:ngm:class:content-routing", "label": "Content Routing"},
+      {"@id": "urn:ngm:class:peer-discovery", "label": "Peer Discovery"},
+      {"@id": "urn:ngm:class:decentralised-storage", "label": "Decentralised Storage"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:distributed-hash-table", "label": "Distributed Hash Table"},
+      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:distributed-system-protocol", "label": "Distributed System Protocol"},
+      {"@id": "urn:ngm:class:overlay-network", "label": "Overlay Network"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
+      {"@id": "urn:ngm:class:udp", "label": "UDP"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:chord-dht", "label": "Chord DHT"},
+      {"@id": "urn:ngm:class:pastry-dht", "label": "Pastry DHT"},
+      {"@id": "urn:ngm:class:central-index-server", "label": "Central Index Server"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
+      {"@id": "urn:ngm:class:sybil-attack", "label": "Sybil Attack"},
+      {"@id": "urn:ngm:class:eclipse-attack", "label": "Eclipse Attack"},
+      {"@id": "urn:ngm:class:ethereum-node-discovery", "label": "Ethereum Node Discovery"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:kad-dht", "label": "Kad DHT"},
+    {"@id": "urn:ngm:class:mainline-dht", "label": "Mainline DHT"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

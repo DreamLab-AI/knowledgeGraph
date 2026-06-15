@@ -25,9 +25,61 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:hardware", "label": "Hardware"}],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:hardware-and-edge", "label": "Hardware and Edge"}, {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"}]
+    "hasPart": [
+      {"@id": "urn:ngm:class:memory-bus", "label": "Memory Bus"},
+      {"@id": "urn:ngm:class:memory-channel", "label": "Memory Channel"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:hardware", "label": "Hardware"},
+      {"@id": "urn:ngm:class:memory-hierarchy", "label": "Memory Hierarchy"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:high-bandwidth-memory", "label": "High Bandwidth Memory"},
+      {"@id": "urn:ngm:class:memory-controller", "label": "Memory Controller"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:gpu-accelerated-computing", "label": "GPU Accelerated Computing"},
+      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
+      {"@id": "urn:ngm:class:deep-learning-inference", "label": "Deep Learning Inference"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:dram", "label": "DRAM"},
+      {"@id": "urn:ngm:class:cache-memory", "label": "Cache Memory"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:ddr-memory", "label": "DDR Memory"},
+      {"@id": "urn:ngm:class:interconnect", "label": "Interconnect"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:neural-network-training", "label": "Neural Network Training"},
+      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"},
+      {"@id": "urn:ngm:class:hardware-and-edge", "label": "Hardware and Edge"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:compute-throughput", "label": "Compute Throughput"},
+      {"@id": "urn:ngm:class:memory-latency", "label": "Memory Latency"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:hardware-and-edge", "label": "Hardware and Edge"},
+      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"},
+      {"@id": "urn:ngm:class:operator-fusion", "label": "Operator Fusion"},
+      {"@id": "urn:ngm:class:quantisation", "label": "Quantisation"},
+      {"@id": "urn:ngm:class:on-chip-caching", "label": "On-Chip Caching"}
+    ]
   },
-  "quality": 0.72
+  "sameAs": [
+    {"@id": "urn:ngm:class:memory-throughput", "label": "Memory Throughput"}
+  ],
+  "quality": 0.74,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

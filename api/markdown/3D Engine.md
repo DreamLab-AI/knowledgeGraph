@@ -58,7 +58,7 @@ public:: true
   "@id": "urn:ngm:class:3-d-engine",
   "@type": "Class",
   "label": "3D Engine",
-  "definition": "A 3D engine is software that handles the representation, rendering, and often the physics and animation of three-dimensional scenes. It forms the core of many games and simulations.",
+  "definition": "A 3D engine is software that handles the representation, rendering, physics simulation, and animation of three-dimensional scenes, providing an abstraction layer over GPU hardware and platform-specific graphics APIs so developers can build interactive applications and simulations without writing low-level graphics code.",
   "domain": "spatial-computing",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -69,24 +69,130 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation-engine",
+        "label": "Physics Simulation Engine"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "@id": "urn:ngm:class:animation-system",
+        "label": "Animation System"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:computational-geometry",
         "label": "Computational Geometry"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:3-d-engine",
-        "label": "3D Engine"
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-simulation",
+        "label": "Real-Time Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      },
+      {
+        "@id": "urn:ngm:class:opengl",
+        "label": "OpenGL"
+      },
+      {
+        "@id": "urn:ngm:class:directx",
+        "label": "DirectX"
+      },
+      {
+        "@id": "urn:ngm:class:webgpu",
+        "label": "WebGPU"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:2-d-engine",
+        "label": "2D Engine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:graphics-engine",
+      "label": "Graphics Engine"
+    },
+    {
+      "@id": "urn:ngm:class:real-time-rendering-engine",
+      "label": "Real-Time Rendering Engine"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

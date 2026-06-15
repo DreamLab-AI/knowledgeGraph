@@ -27,20 +27,61 @@ public:: true
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"},
-      {"@id": "urn:ngm:class:monitoring-system", "label": "Monitoring System"}
+      {"@id": "urn:ngm:class:monitoring-system", "label": "Monitoring System"},
+      {"@id": "urn:ngm:class:asset-register", "label": "Asset Register"},
+      {"@id": "urn:ngm:class:work-order-management", "label": "Work Order Management"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
+      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"},
+      {"@id": "urn:ngm:class:audit-logging", "label": "Audit Logging"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:compliance-audit-trail", "label": "Compliance Audit Trail"},
       {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
-      {"@id": "urn:ngm:class:quality-assurance", "label": "Quality Assurance"}
+      {"@id": "urn:ngm:class:quality-assurance", "label": "Quality Assurance"},
+      {"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"},
+      {"@id": "urn:ngm:class:total-cost-of-ownership", "label": "Total Cost of Ownership"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:enterprise-resource-planning", "label": "Enterprise Resource Planning"},
+      {"@id": "urn:ngm:class:database-management-system", "label": "Database Management System"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:iso-55001", "label": "ISO 55001"},
+      {"@id": "urn:ngm:class:computerised-maintenance-management-system", "label": "Computerised Maintenance Management System"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
+      {"@id": "urn:ngm:class:iot-sensor", "label": "IoT Sensor"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:lifecycle-management", "label": "Lifecycle Management"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:configuration-management-database", "label": "Configuration Management Database"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {"@id": "urn:ngm:class:enterprise-asset-management", "label": "Enterprise Asset Management"},
+      {"@id": "urn:ngm:class:financial-reporting", "label": "Financial Reporting"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:enterprise-asset-management-system", "label": "Enterprise Asset Management System"},
+    {"@id": "urn:ngm:class:fixed-asset-management-system", "label": "Fixed Asset Management System"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

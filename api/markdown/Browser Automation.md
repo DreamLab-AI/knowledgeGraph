@@ -28,21 +28,58 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:computer-use-and-browser-agents", "label": "Computer Use and Browser Agents"},
       {"@id": "urn:ngm:class:web-scraping", "label": "Web Scraping"},
-      {"@id": "urn:ngm:class:software-testing", "label": "Software Testing"}
+      {"@id": "urn:ngm:class:software-testing", "label": "Software Testing"},
+      {"@id": "urn:ngm:class:robotic-process-automation", "label": "Robotic Process Automation"},
+      {"@id": "urn:ngm:class:headless-browser", "label": "Headless Browser"},
+      {"@id": "urn:ngm:class:dom-manipulation", "label": "DOM Manipulation"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:customer-service-automation", "label": "Customer Service Automation"},
-      {"@id": "urn:ngm:class:testing-infrastructure", "label": "Testing Infrastructure"}
+      {"@id": "urn:ngm:class:testing-infrastructure", "label": "Testing Infrastructure"},
+      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"},
+      {"@id": "urn:ngm:class:end-to-end-testing", "label": "End-to-End Testing"},
+      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:testing-process", "label": "Testing Process"}
+      {"@id": "urn:ngm:class:testing-process", "label": "Testing Process"},
+      {"@id": "urn:ngm:class:chrome-devtools-protocol", "label": "Chrome DevTools Protocol"},
+      {"@id": "urn:ngm:class:webdriver", "label": "WebDriver"},
+      {"@id": "urn:ngm:class:javascript", "label": "JavaScript"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:adversarial-testing", "label": "Adversarial Testing"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"}
+      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"},
+      {"@id": "urn:ngm:class:accessibility-testing", "label": "Accessibility Testing"},
+      {"@id": "urn:ngm:class:regression-testing", "label": "Regression Testing"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:web-browser", "label": "Web Browser"},
+      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:w3c-webdriver-standard", "label": "W3C WebDriver Standard"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:manual-testing", "label": "Manual Testing"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:security", "label": "Security"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:web-automation", "label": "Web Automation"},
+    {"@id": "urn:ngm:class:browser-scripting", "label": "Browser Scripting"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

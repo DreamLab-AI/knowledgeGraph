@@ -4,7 +4,7 @@
   "slug": "deep-reinforcement-learning",
   "public": true,
   "classIri": "urn:ngm:class:deep-reinforcement-learning",
-  "domain": "ai",
+  "domain": "machine-learning",
   "definition": "Deep Reinforcement Learning (DRL) is a machine learning paradigm that combines deep neural networks with reinforcement learning, enabling agents to learn optimal policies for sequential decision-making tasks by interacting with an environment, receiving scalar reward signals, and updating neural network parameters through gradient-based optimisation. It has produced superhuman performance in games, robotics control, and language model alignment.",
   "subClassOf": [
     {
@@ -13,11 +13,24 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:simulation-environment",
+        "label": "Simulation Environment"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:experience-replay",
+        "label": "Experience Replay"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:agent",
@@ -26,12 +39,51 @@
       {
         "id": "urn:ngm:class:agentic-ai",
         "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robotics",
+        "label": "Autonomous Robotics"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:q-learning",
+        "label": "Q-Learning"
+      },
+      {
+        "id": "urn:ngm:class:actor-critic-architecture",
+        "label": "Actor-Critic Architecture"
+      },
+      {
+        "id": "urn:ngm:class:temporal-difference-learning",
+        "label": "Temporal Difference Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:action-space",
@@ -44,6 +96,18 @@
       {
         "id": "urn:ngm:class:gpu-acceleration",
         "label": "GPU Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:policy-gradient",
+        "label": "Policy Gradient"
+      },
+      {
+        "id": "urn:ngm:class:reward-signal",
+        "label": "Reward Signal"
       }
     ],
     "supports": [],
@@ -53,6 +117,14 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:model-based-reinforcement-learning",
+        "label": "Model-Based Reinforcement Learning"
       }
     ]
   },

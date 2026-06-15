@@ -25,28 +25,55 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:automated-planning", "label": "Automated Planning"}],
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:state-machine", "label": "State Machine"},
-      {"@id": "urn:ngm:class:intelligent-npc", "label": "Intelligent NPC"},
-      {"@id": "urn:ngm:class:ai-game-agent", "label": "AI Game Agent"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:sequence-node", "label": "Sequence Node"},
+      {"@id": "urn:ngm:class:selector-node", "label": "Selector Node"},
+      {"@id": "urn:ngm:class:decorator-node", "label": "Decorator Node"},
+      {"@id": "urn:ngm:class:blackboard", "label": "Blackboard"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:task-planning", "label": "Task Planning"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
-      {"@id": "urn:ngm:class:npc-interaction", "label": "NPC Interaction"}
+      {"@id": "urn:ngm:class:npc-interaction", "label": "NPC Interaction"},
+      {"@id": "urn:ngm:class:robot-mission-execution", "label": "Robot Mission Execution"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:pathfinding-algorithm", "label": "Pathfinding Algorithm"},
-      {"@id": "urn:ngm:class:ai-agents", "label": "AI Agents"}
+      {"@id": "urn:ngm:class:ai-agents", "label": "AI Agents"},
+      {"@id": "urn:ngm:class:goal-oriented-action-planning", "label": "Goal-Oriented Action Planning"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:game-development", "label": "Game Development"}
+      {"@id": "urn:ngm:class:game-development", "label": "Game Development"},
+      {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"}
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:state-machine-replication", "label": "State Machine Replication"}
+      {"@id": "urn:ngm:class:state-machine", "label": "State Machine"},
+      {"@id": "urn:ngm:class:finite-state-machine", "label": "Finite State Machine"},
+      {"@id": "urn:ngm:class:hierarchical-task-network", "label": "Hierarchical Task Network"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:intelligent-npc", "label": "Intelligent NPC"},
+      {"@id": "urn:ngm:class:ai-game-agent", "label": "AI Game Agent"},
+      {"@id": "urn:ngm:class:automated-planning", "label": "Automated Planning"},
+      {"@id": "urn:ngm:class:teleo-reactive-program", "label": "Teleo-Reactive Program"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:behavior-tree", "label": "Behavior Tree"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

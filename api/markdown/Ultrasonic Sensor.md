@@ -42,7 +42,7 @@ public:: true
   "@id": "urn:ngm:class:ultrasonic-sensor",
   "@type": "Class",
   "label": "Ultrasonic Sensor",
-  "definition": "Ultrasonic Sensor is a robotics and autonomous systems concept and a type of robotics.",
+  "definition": "An electronic sensor that emits ultrasonic sound waves (typically ~40 kHz) and measures the time-of-flight of reflected echoes to determine the distance to objects, widely used in robotics for obstacle detection, proximity sensing, and autonomous navigation.",
   "domain": "robotics",
   "maturity": "draft",
   "subClassOf": [
@@ -51,21 +51,65 @@ public:: true
       "label": "Perception and Sensing"
     }
   ],
-  "quality": 0.5,
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
+  "sameAs": [
+    {"@id": "urn:ngm:class:sonar-sensor", "label": "Sonar Sensor"},
+    {"@id": "urn:ngm:class:ultrasonic-transducer", "label": "Ultrasonic Transducer"},
+    {"@id": "urn:ngm:class:acoustic-range-sensor", "label": "Acoustic Range Sensor"}
+  ],
   "relations": {
-    "bridgesTo": [
-      {"@id": "urn:ngm:class:sensor", "label": "Sensor"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:ultrasonic-transmitter", "label": "Ultrasonic Transmitter"},
+      {"@id": "urn:ngm:class:ultrasonic-receiver", "label": "Ultrasonic Receiver"},
+      {"@id": "urn:ngm:class:piezoelectric-transducer", "label": "Piezoelectric Transducer"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:robot-perception-system", "label": "Robot Perception System"},
+      {"@id": "urn:ngm:class:obstacle-detection-system", "label": "Obstacle Detection System"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:microcontroller", "label": "Microcontroller"},
+      {"@id": "urn:ngm:class:embedded-system", "label": "Embedded System"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:obstacle-avoidance", "label": "Obstacle Avoidance"},
+      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
+      {"@id": "urn:ngm:class:distance-measurement", "label": "Distance Measurement"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:time-of-flight-measurement", "label": "Time-of-Flight Measurement"},
+      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"}
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:robotics",
-        "label": "Robotics"
-      }
+      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
+      {"@id": "urn:ngm:class:echolocation", "label": "Echolocation"},
+      {"@id": "urn:ngm:class:pulse-echo-technique", "label": "Pulse-Echo Technique"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
+      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:iso-13482", "label": "ISO 13482 Robot Safety"},
+      {"@id": "urn:ngm:class:iec-61508", "label": "IEC 61508 Functional Safety"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:lidar", "label": "LiDAR"},
+      {"@id": "urn:ngm:class:infrared-sensor", "label": "Infrared Sensor"},
+      {"@id": "urn:ngm:class:radar-sensor", "label": "Radar Sensor"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:sensor", "label": "Sensor"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
+      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"}
     ]
   }
 }

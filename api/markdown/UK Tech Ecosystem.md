@@ -70,7 +70,7 @@ public:: true
   "@id": "urn:ngm:class:uk-tech-ecosystem",
   "@type": "Class",
   "label": "UK Tech Ecosystem",
-  "definition": "The United Kingdom's technology industry landscape, ranked as Europe's leading tech ecosystem with a combined market of 2 and over VC-backed startups.",
+  "definition": "The United Kingdom's technology industry landscape, ranked as Europe's leading tech ecosystem with a combined market valuation of $1.2 trillion and over 17,000 VC-backed startups; the third-largest AI market globally after the US and China, encompassing unicorns, regional clusters (London, Cambridge), venture capital flows, and national policy frameworks for digital innovation.",
   "domain": "infrastructure",
   "maturity": "emerging",
   "subClassOf": [
@@ -96,14 +96,130 @@ public:: true
       {
         "@id": "urn:ngm:class:ai-development",
         "label": "AI Development"
+      },
+      {
+        "@id": "urn:ngm:class:technology-commercialisation",
+        "label": "Technology Commercialisation"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:london-tech-cluster",
+        "label": "London Tech Cluster"
+      },
+      {
+        "@id": "urn:ngm:class:cambridge-science-cluster",
+        "label": "Cambridge Science Cluster"
+      },
+      {
+        "@id": "urn:ngm:class:venture-capital",
+        "label": "Venture Capital"
+      },
+      {
+        "@id": "urn:ngm:class:unicorn-company",
+        "label": "Unicorn Company"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:stem-talent-pipeline",
+        "label": "STEM Talent Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:research-and-development",
+        "label": "Research and Development"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "@id": "urn:ngm:class:intellectual-property-law",
+        "label": "Intellectual Property Law"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:economic-development",
+        "label": "Economic Development"
+      },
+      {
+        "@id": "urn:ngm:class:national-ai-strategy",
+        "label": "National AI Strategy"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:silicon-valley-ecosystem",
+        "label": "Silicon Valley Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:european-tech-ecosystem",
+        "label": "European Tech Ecosystem"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:fintech",
+        "label": "FinTech"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:innovation",
+        "label": "Innovation"
+      },
+      {
+        "@id": "urn:ngm:class:technology-industry",
+        "label": "Technology Industry"
+      },
+      {
+        "@id": "urn:ngm:class:science-and-technology-policy",
+        "label": "Science and Technology Policy"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:uk-technology-industry",
+      "label": "UK Technology Industry"
+    },
+    {
+      "@id": "urn:ngm:class:british-tech-sector",
+      "label": "British Tech Sector"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

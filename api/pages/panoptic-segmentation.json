@@ -4,7 +4,7 @@
   "slug": "panoptic-segmentation",
   "public": true,
   "classIri": "urn:ngm:class:panoptic-segmentation",
-  "domain": "spatial-computing",
+  "domain": "machine-learning",
   "definition": "A computer vision task that unifies semantic segmentation and instance segmentation by assigning every image pixel both a class label and an instance identifier, providing holistic scene parsing that distinguishes countable foreground objects (\"things\") from amorphous background regions (\"stuff\"). Architectures such as Panoptic FPN, Panoptic-DeepLab, and MaskFormer formalise this unified representation.",
   "subClassOf": [
     {
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.68,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [
@@ -24,32 +24,122 @@
       {
         "id": "urn:ngm:class:semantic-segmentation",
         "label": "Semantic Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:panoptic-quality-metric",
+        "label": "Panoptic Quality Metric"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:object-detection",
         "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:pixel-classification",
+        "label": "Pixel Classification"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:scene-understanding",
         "label": "Scene Understanding"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:robot-perception",
+        "label": "Robot Perception"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:feature-pyramid-network",
+        "label": "Feature Pyramid Network"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:maskformer",
+        "label": "MaskFormer"
+      },
+      {
+        "id": "urn:ngm:class:panoptic-deeplab",
+        "label": "Panoptic-DeepLab"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:instance-segmentation",
+        "label": "Instance Segmentation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:coco-dataset",
+        "label": "COCO Dataset"
+      },
+      {
+        "id": "urn:ngm:class:cityscapes-dataset",
+        "label": "Cityscapes Dataset"
+      },
+      {
+        "id": "urn:ngm:class:mask-rcnn",
+        "label": "Mask R-CNN"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:computer-vision-task",
         "label": "Computer Vision Task"
+      },
+      {
+        "id": "urn:ngm:class:image-recognition",
+        "label": "Image Recognition"
       }
     ]
   },

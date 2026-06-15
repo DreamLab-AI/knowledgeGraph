@@ -54,7 +54,7 @@ public:: true
   "@id": "urn:ngm:class:mean-squared-error",
   "@type": "Class",
   "label": "Mean Squared Error",
-  "definition": "A measure of the average squared difference between predicted values and observed values, widely used to quantify estimation and prediction error.",
+  "definition": "A measure of the average squared difference between predicted values and observed values, widely used to quantify estimation and prediction error in regression and statistical learning.",
   "domain": "machine-learning",
   "maturity": "mature",
   "qualityScore": 0.7,
@@ -73,20 +73,112 @@ public:: true
       {
         "@id": "urn:ngm:class:probability-theory",
         "label": "Probability Theory"
+      },
+      {
+        "@id": "urn:ngm:class:regression",
+        "label": "Regression"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:supervised-learning",
         "label": "Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:bias-variance-tradeoff",
+        "label": "Bias-Variance Tradeoff"
+      },
+      {
+        "@id": "urn:ngm:class:residual",
+        "label": "Residual"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:mean-absolute-error",
+        "label": "Mean Absolute Error"
+      },
+      {
+        "@id": "urn:ngm:class:cross-entropy-loss",
+        "label": "Cross-Entropy Loss"
+      },
+      {
+        "@id": "urn:ngm:class:huber-loss",
+        "label": "Huber Loss"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:root-mean-squared-error",
+        "label": "Root Mean Squared Error"
+      },
+      {
+        "@id": "urn:ngm:class:r-squared",
+        "label": "R-Squared"
+      },
+      {
+        "@id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:data",
+        "label": "Data"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:mse",
+      "label": "MSE"
+    },
+    {
+      "@id": "urn:ngm:class:l2-loss",
+      "label": "L2 Loss"
+    },
+    {
+      "@id": "urn:ngm:class:quadratic-loss",
+      "label": "Quadratic Loss"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

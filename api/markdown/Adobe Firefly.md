@@ -25,19 +25,57 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [{"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}],
   "relations": {
+    "hasPart": [
+      {"@id": "urn:ngm:class:generative-fill", "label": "Generative Fill"},
+      {"@id": "urn:ngm:class:text-effects", "label": "Text Effects"},
+      {"@id": "urn:ngm:class:vector-recolouring", "label": "Vector Recolouring"},
+      {"@id": "urn:ngm:class:firefly-services", "label": "Firefly Services"}
+    ],
+    "partOf": [
+      {"@id": "urn:ngm:class:adobe-creative-cloud", "label": "Adobe Creative Cloud"}
+    ],
     "uses": [
       {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"}
+      {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"},
+      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
+      {"@id": "urn:ngm:class:adobe-stock", "label": "Adobe Stock"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:image-editing", "label": "Image Editing"}
+      {"@id": "urn:ngm:class:image-editing", "label": "Image Editing"},
+      {"@id": "urn:ngm:class:brand-asset-management", "label": "Brand Asset Management"},
+      {"@id": "urn:ngm:class:ai-video-generation", "label": "AI Video Generation"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:content-licensing", "label": "Content Licensing"},
+      {"@id": "urn:ngm:class:licensed-training-data", "label": "Licensed Training Data"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:content-credentials", "label": "Content Credentials"},
+      {"@id": "urn:ngm:class:c2pa", "label": "C2PA"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:enterprise-ai-governance", "label": "Enterprise AI Governance"},
+      {"@id": "urn:ngm:class:intellectual-property-indemnification", "label": "Intellectual Property Indemnification"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:stable-diffusion", "label": "Stable Diffusion"},
+      {"@id": "urn:ngm:class:midjourney", "label": "Midjourney"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:adobe-creative-cloud", "label": "Adobe Creative Cloud"},
-      {"@id": "urn:ngm:class:content-licensing", "label": "Content Licensing"},
-      {"@id": "urn:ngm:class:digital-content-provenance-marking", "label": "Digital Content Provenance Marking"}
+      {"@id": "urn:ngm:class:digital-content-provenance-marking", "label": "Digital Content Provenance Marking"},
+      {"@id": "urn:ngm:class:generative-ai-api", "label": "Generative AI API"},
+      {"@id": "urn:ngm:class:creative-workflow-automation", "label": "Creative Workflow Automation"}
     ]
+  },
+  "sameAs": [],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "quality": 0.8
 }

@@ -60,24 +60,150 @@ public:: true
     }
   ],
   "relations": {
-    "enables": [
+    "hasPart": [
       {
-        "@id": "urn:ngm:class:scalable-systems",
-        "label": "Scalable Systems"
+        "@id": "urn:ngm:class:architectural-pattern",
+        "label": "Architectural Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:design-pattern",
+        "label": "Design Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:architectural-layer",
+        "label": "Architectural Layer"
       }
     ],
-    "bridgesTo": [
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      },
       {
         "@id": "urn:ngm:class:software-architecture",
         "label": "Software Architecture"
       }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:architecture-decision-record",
+        "label": "Architecture Decision Record"
+      },
+      {
+        "@id": "urn:ngm:class:technical-standard",
+        "label": "Technical Standard"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:scalable-systems",
+        "label": "Scalable Systems"
+      },
+      {
+        "@id": "urn:ngm:class:system-interoperability",
+        "label": "System Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:best-practice",
+        "label": "Best Practice"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:domain-model",
+        "label": "Domain Model"
+      },
+      {
+        "@id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event-Driven Architecture"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:system-integration",
+        "label": "System Integration"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:togaf",
+        "label": "TOGAF"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-42010",
+        "label": "ISO/IEC 42010"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:bespoke-architecture",
+        "label": "Bespoke Architecture"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:domain-driven-design",
+        "label": "Domain-Driven Design"
+      },
+      {
+        "@id": "urn:ngm:class:well-architected-framework",
+        "label": "Well-Architected Framework"
+      }
     ]
   },
-  "quality": 0.35,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:architectural-blueprint",
+      "label": "Architectural Blueprint"
+    },
+    {
+      "@id": "urn:ngm:class:architecture-template",
+      "label": "Architecture Template"
+    }
+  ],
+  "quality": 0.68,
   "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

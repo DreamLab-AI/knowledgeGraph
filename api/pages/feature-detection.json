@@ -13,11 +13,20 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.72,
   "maturity": "mature",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-data",
+        "label": "Sensor Data"
+      },
+      {
+        "id": "urn:ngm:class:capability-api",
+        "label": "Capability API"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:computer-vision",
@@ -26,22 +35,89 @@
       {
         "id": "urn:ngm:class:object-detection",
         "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:progressive-enhancement",
+        "label": "Progressive Enhancement"
+      },
+      {
+        "id": "urn:ngm:class:graceful-degradation",
+        "label": "Graceful Degradation"
+      },
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality-tracking",
+        "label": "Augmented Reality Tracking"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:browser-api",
+        "label": "Browser API"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:user-agent-sniffing",
+        "label": "User-Agent Sniffing"
+      },
+      {
+        "id": "urn:ngm:class:version-detection",
+        "label": "Version Detection"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:runtime-environment",
         "label": "Runtime Environment"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:keypoint-descriptor",
+        "label": "Keypoint Descriptor"
+      },
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:computer-vision-system",
         "label": "Computer Vision System"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:webxr",
+        "label": "WebXR"
+      },
+      {
+        "id": "urn:ngm:class:cross-browser-compatibility",
+        "label": "Cross-Browser Compatibility"
       }
     ],
     "standardizedBy": [],
@@ -54,6 +130,22 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:edge-detection",
+        "label": "Edge Detection"
+      },
+      {
+        "id": "urn:ngm:class:corner-detection",
+        "label": "Corner Detection"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
       }
     ]
   },

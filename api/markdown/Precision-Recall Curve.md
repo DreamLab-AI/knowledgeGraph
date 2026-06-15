@@ -54,8 +54,8 @@ public:: true
   "@id": "urn:ngm:class:precision-recall-curve",
   "@type": "Class",
   "label": "Precision-Recall Curve",
-  "definition": "A diagnostic plot that traces the trade-off between precision and recall across the decision thresholds of a binary classifier.",
-  "domain": "blockchain",
+  "definition": "A diagnostic plot that traces the trade-off between precision and recall across the decision thresholds of a binary classifier, most informative under class imbalance where it focuses performance assessment on the minority positive class.",
+  "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
   "subClassOf": [
@@ -73,14 +73,112 @@ public:: true
       {
         "@id": "urn:ngm:class:recall",
         "label": "Recall"
+      },
+      {
+        "@id": "urn:ngm:class:binary-classification",
+        "label": "Binary Classification"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:decision-threshold",
+        "label": "Decision Threshold"
+      },
+      {
+        "@id": "urn:ngm:class:area-under-the-curve",
+        "label": "Area Under the Curve"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:threshold-selection",
+        "label": "Threshold Selection"
+      },
+      {
+        "@id": "urn:ngm:class:model-comparison",
+        "label": "Model Comparison"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:class-imbalance",
+        "label": "Class Imbalance"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:f1-score",
+        "label": "F1 Score"
+      },
+      {
+        "@id": "urn:ngm:class:positive-predictive-value",
+        "label": "Positive Predictive Value"
+      },
+      {
+        "@id": "urn:ngm:class:true-positive-rate",
+        "label": "True Positive Rate"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:roc-curve",
+        "label": "ROC Curve"
+      },
+      {
+        "@id": "urn:ngm:class:accuracy",
+        "label": "Accuracy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:average-precision",
+        "label": "Average Precision"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:medical-diagnosis",
+        "label": "Medical Diagnosis"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:pr-curve",
+      "label": "PR Curve"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

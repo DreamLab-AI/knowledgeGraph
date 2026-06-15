@@ -16,13 +16,75 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:fee-income",
+        "label": "Fee Income"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-position",
+        "label": "Liquidity Position"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:token-pair",
+        "label": "Token Pair"
+      },
+      {
+        "id": "urn:ngm:class:capital",
+        "label": "Capital"
+      },
+      {
+        "id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      },
+      {
+        "id": "urn:ngm:class:trade-execution",
+        "label": "Trade Execution"
+      },
+      {
+        "id": "urn:ngm:class:market-depth",
+        "label": "Market Depth"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:price-oracle",
+        "label": "Price Oracle"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      },
+      {
+        "id": "urn:ngm:class:market-maker",
+        "label": "Market Maker"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:traditional-finance",
+        "label": "Traditional Finance"
+      },
+      {
+        "id": "urn:ngm:class:real-world-asset",
+        "label": "Real-World Asset"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:automated-market-maker",
@@ -35,11 +97,24 @@
       {
         "id": "urn:ngm:class:lp-token",
         "label": "LP Token"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
       }
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:impermanent-loss",
@@ -52,6 +127,18 @@
       {
         "id": "urn:ngm:class:decentralized-exchange",
         "label": "Decentralized Exchange"
+      },
+      {
+        "id": "urn:ngm:class:total-value-locked",
+        "label": "Total Value Locked"
+      },
+      {
+        "id": "urn:ngm:class:slippage",
+        "label": "Slippage"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
       }
     ]
   },

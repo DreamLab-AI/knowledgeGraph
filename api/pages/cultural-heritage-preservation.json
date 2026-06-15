@@ -4,7 +4,7 @@
   "slug": "cultural-heritage-preservation",
   "public": true,
   "classIri": "urn:ngm:class:cultural-heritage-preservation",
-  "domain": "metaverse",
+  "domain": "spatial-computing",
   "definition": "Cultural Heritage Preservation encompasses the methodologies, technologies, and institutional practices used to document, conserve, and transmit tangible and intangible cultural assets to future generations. Digital preservation extends these goals through high-fidelity capture technologies\u2014photogrammetry, LiDAR scanning, and multispectral imaging\u2014combined with long-lived archival formats and distributed storage. Immersive technologies increasingly enable experiential access to heritage sites and artefacts that physical access cannot support. The discipline spans archaeology, architecture, performing arts, indigenous knowledge, and language revitalisation, requiring interdisciplinary collaboration between cultural practitioners and technologists.",
   "subClassOf": [
     {
@@ -17,7 +17,20 @@
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:long-term-storage",
+        "label": "Long-Term Storage"
+      },
+      {
+        "id": "urn:ngm:class:metadata-standard",
+        "label": "Metadata Standard"
+      },
+      {
+        "id": "urn:ngm:class:institutional-repository",
+        "label": "Institutional Repository"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:cultural-heritage-xr-experience",
@@ -30,12 +43,42 @@
       {
         "id": "urn:ngm:class:collective-memory-archive",
         "label": "Collective Memory Archive"
+      },
+      {
+        "id": "urn:ngm:class:virtual-heritage-tour",
+        "label": "Virtual Heritage Tour"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality-overlay",
+        "label": "Augmented Reality Overlay"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "id": "urn:ngm:class:data-format-standard",
+        "label": "Data Format Standard"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
-    "bridgesTo": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:photogrammetry",
@@ -48,10 +91,31 @@
       {
         "id": "urn:ngm:class:point-cloud",
         "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:multispectral-imaging",
+        "label": "Multispectral Imaging"
+      },
+      {
+        "id": "urn:ngm:class:3d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:gltf",
+        "label": "glTF"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-14721",
+        "label": "ISO 14721"
+      },
+      {
+        "id": "urn:ngm:class:dublin-core",
+        "label": "Dublin Core"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -65,6 +129,14 @@
       {
         "id": "urn:ngm:class:digital-preservation",
         "label": "Digital Preservation"
+      },
+      {
+        "id": "urn:ngm:class:intangible-cultural-heritage",
+        "label": "Intangible Cultural Heritage"
+      },
+      {
+        "id": "urn:ngm:class:open-archival-information-system",
+        "label": "Open Archival Information System"
       }
     ]
   },

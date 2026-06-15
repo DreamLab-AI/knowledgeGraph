@@ -58,7 +58,7 @@ public:: true
   "@id": "urn:ngm:class:cosmos-sdk",
   "@type": "Class",
   "label": "Cosmos SDK",
-  "definition": "The Cosmos SDK is an open-source framework for building application-specific blockchains in the Cosmos ecosystem. It provides modular components and works with the Tendermint consensus engine.",
+  "definition": "The Cosmos SDK is an open-source modular framework for building application-specific blockchains in the Cosmos ecosystem. It provides composable modules for accounts, staking, governance, and token management, and integrates with the Tendermint BFT consensus engine to enable sovereign, interoperable chains connected via the Inter-Blockchain Communication protocol.",
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -73,20 +73,135 @@ public:: true
       {
         "@id": "urn:ngm:class:tendermint",
         "label": "Tendermint"
+      },
+      {
+        "@id": "urn:ngm:class:go-programming-language",
+        "label": "Go Programming Language"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:ibc",
         "label": "IBC"
+      },
+      {
+        "@id": "urn:ngm:class:application-specific-blockchain",
+        "label": "Application-Specific Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:cosmos-sdk-module",
+        "label": "Cosmos SDK Module"
+      },
+      {
+        "@id": "urn:ngm:class:abci",
+        "label": "ABCI"
+      },
+      {
+        "@id": "urn:ngm:class:baseapp",
+        "label": "BaseApp"
+      },
+      {
+        "@id": "urn:ngm:class:keyring",
+        "label": "Keyring"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:cosmos",
+        "label": "Cosmos"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:protobuf",
+        "label": "Protobuf"
+      },
+      {
+        "@id": "urn:ngm:class:iavl-tree",
+        "label": "IAVL Tree"
+      },
+      {
+        "@id": "urn:ngm:class:bech32-address",
+        "label": "Bech32 Address"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:cosmos-hub",
+        "label": "Cosmos Hub"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:substrate",
+        "label": "Substrate"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:atom-token",
+        "label": "ATOM Token"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```

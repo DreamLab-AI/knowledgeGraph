@@ -28,19 +28,57 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
       {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"}
+      {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"},
+      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
+      {"@id": "urn:ngm:class:document-question-answering", "label": "Document Question Answering"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:embeddings", "label": "Embeddings"},
       {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
+      {"@id": "urn:ngm:class:transformer-models", "label": "Transformer Models"},
+      {"@id": "urn:ngm:class:approximate-nearest-neighbour-search", "label": "Approximate Nearest Neighbour Search"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:document-chunking", "label": "Document Chunking"},
+      {"@id": "urn:ngm:class:text-embedding", "label": "Text Embedding"},
+      {"@id": "urn:ngm:class:python", "label": "Python"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:query-pipeline", "label": "Query Pipeline"},
+      {"@id": "urn:ngm:class:data-connectors", "label": "Data Connectors"},
+      {"@id": "urn:ngm:class:reranking", "label": "Reranking"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:rag-pipeline", "label": "RAG Pipeline"},
+      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:enterprise-ai", "label": "Enterprise AI"},
+      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:lang-chain", "label": "LangChain"}
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:lang-chain", "label": "LangChain"},
-      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}
+      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
+      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
+      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:data", "label": "Data"},
+      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:gpt-index", "label": "GPT Index"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

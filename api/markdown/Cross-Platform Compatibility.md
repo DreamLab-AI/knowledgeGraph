@@ -30,21 +30,59 @@ public:: true
     "relatedTo": [
       {"@id": "urn:ngm:class:cross-platform-interoperability", "label": "Cross-Platform Interoperability"},
       {"@id": "urn:ngm:class:compatibility-standards", "label": "Compatibility Standards"},
-      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}
+      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"},
+      {"@id": "urn:ngm:class:platform-fragmentation", "label": "Platform Fragmentation"},
+      {"@id": "urn:ngm:class:software-portability", "label": "Software Portability"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:portability", "label": "Portability"},
-      {"@id": "urn:ngm:class:cross-platform-identity", "label": "Cross-Platform Identity"}
+      {"@id": "urn:ngm:class:cross-platform-identity", "label": "Cross-Platform Identity"},
+      {"@id": "urn:ngm:class:multi-platform-deployment", "label": "Multi-Platform Deployment"},
+      {"@id": "urn:ngm:class:vendor-neutrality", "label": "Vendor Neutrality"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"},
-      {"@id": "urn:ngm:class:compatibility-process", "label": "Compatibility Process"}
+      {"@id": "urn:ngm:class:compatibility-process", "label": "Compatibility Process"},
+      {"@id": "urn:ngm:class:abstraction-layer", "label": "Abstraction Layer"},
+      {"@id": "urn:ngm:class:conformance-testing", "label": "Conformance Testing"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}
+      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"},
+      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:api-standardisation", "label": "API Standardisation"},
+      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:runtime-abstraction", "label": "Runtime Abstraction"},
+      {"@id": "urn:ngm:class:platform-shim", "label": "Platform Shim"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:openxr", "label": "OpenXR"},
+      {"@id": "urn:ngm:class:webassembly", "label": "WebAssembly"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:vendor-lock-in", "label": "Vendor Lock-In"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+    ],
+    "standardizedBy": [
+      {"@id": "urn:ngm:class:w3c", "label": "W3C"},
+      {"@id": "urn:ngm:class:khronos-group", "label": "Khronos Group"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:cross-platform-support", "label": "Cross-Platform Support"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

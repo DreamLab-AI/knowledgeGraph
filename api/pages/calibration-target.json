@@ -13,10 +13,23 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.5,
+  "qualityScore": 0.72,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:checkerboard-pattern",
+        "label": "Checkerboard Pattern"
+      },
+      {
+        "id": "urn:ngm:class:fiducial-marker",
+        "label": "Fiducial Marker"
+      },
+      {
+        "id": "urn:ngm:class:circle-grid",
+        "label": "Circle Grid"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:flatness-control",
@@ -29,6 +42,10 @@
       {
         "id": "urn:ngm:class:precision-manufacturing",
         "label": "Precision Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:controlled-illumination",
+        "label": "Controlled Illumination"
       }
     ],
     "enables": [
@@ -43,22 +60,87 @@
       {
         "id": "urn:ngm:class:lens-distortion-correction",
         "label": "Lens Distortion Correction"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:3d-reconstruction",
+        "label": "3D Reconstruction"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:scene-geometry",
+        "label": "Scene Geometry"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:reference-standard",
         "label": "Reference Standard"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:machine-vision",
+        "label": "Machine Vision"
+      },
+      {
+        "id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:camera-calibration-pipeline",
+        "label": "Camera Calibration Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:intrinsic-parameters",
+        "label": "Intrinsic Parameters"
+      },
+      {
+        "id": "urn:ngm:class:extrinsic-parameters",
+        "label": "Extrinsic Parameters"
+      },
+      {
+        "id": "urn:ngm:class:ground-truth",
+        "label": "Ground Truth"
+      }
+    ]
   },
   "wikilinks": [
     {

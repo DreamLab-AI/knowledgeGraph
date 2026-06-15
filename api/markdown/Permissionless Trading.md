@@ -28,18 +28,49 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"},
       {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+      {"@id": "urn:ngm:class:blockchain-wallet", "label": "Blockchain Wallet"},
+      {"@id": "urn:ngm:class:dex-aggregator", "label": "DEX Aggregator"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:asset-trading", "label": "Asset Trading"},
+      {"@id": "urn:ngm:class:yield-farming", "label": "Yield Farming"},
+      {"@id": "urn:ngm:class:flash-loan", "label": "Flash Loan"},
+      {"@id": "urn:ngm:class:arbitrage", "label": "Arbitrage"},
+      {"@id": "urn:ngm:class:financial-inclusion", "label": "Financial Inclusion"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:public-blockchain", "label": "Public Blockchain"},
+      {"@id": "urn:ngm:class:on-chain-liquidity", "label": "On-Chain Liquidity"},
+      {"@id": "urn:ngm:class:non-custodial-wallet", "label": "Non-Custodial Wallet"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:centralized-exchange", "label": "Centralized Exchange"},
+      {"@id": "urn:ngm:class:know-your-customer", "label": "Know Your Customer"},
+      {"@id": "urn:ngm:class:order-book", "label": "Order Book"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:decentralized-exchange", "label": "Decentralized Exchange"},
       {"@id": "urn:ngm:class:token-swapping", "label": "Token Swapping"},
       {"@id": "urn:ngm:class:permissionless-network", "label": "Permissionless Network"},
-      {"@id": "urn:ngm:class:uniswap", "label": "Uniswap"}
+      {"@id": "urn:ngm:class:uniswap", "label": "Uniswap"},
+      {"@id": "urn:ngm:class:slippage", "label": "Slippage"},
+      {"@id": "urn:ngm:class:concentrated-liquidity", "label": "Concentrated Liquidity"},
+      {"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"}
     ],
-    "enables": [
-      {"@id": "urn:ngm:class:asset-trading", "label": "Asset Trading"},
-      {"@id": "urn:ngm:class:yield-farming", "label": "Yield Farming"}
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:governance", "label": "Governance"},
+      {"@id": "urn:ngm:class:finance", "label": "Finance"}
     ]
+  },
+  "sameAs": [
+    {"@id": "urn:ngm:class:open-trading", "label": "Open Trading"},
+    {"@id": "urn:ngm:class:trustless-trading", "label": "Trustless Trading"}
+  ],
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   },
   "quality": 0.8
 }

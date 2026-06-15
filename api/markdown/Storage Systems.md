@@ -29,19 +29,49 @@ public:: true
       {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"},
       {"@id": "urn:ngm:class:cloud-storage", "label": "Cloud Storage"},
       {"@id": "urn:ngm:class:persistent-storage", "label": "Persistent Storage"},
-      {"@id": "urn:ngm:class:content-addressed-storage", "label": "Content-Addressed Storage"}
+      {"@id": "urn:ngm:class:content-addressed-storage", "label": "Content-Addressed Storage"},
+      {"@id": "urn:ngm:class:object-storage", "label": "Object Storage"},
+      {"@id": "urn:ngm:class:block-storage", "label": "Block Storage"},
+      {"@id": "urn:ngm:class:file-system", "label": "File System"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:data-storage-layer", "label": "Data Storage Layer"},
-      {"@id": "urn:ngm:class:storage-hardware", "label": "Storage Hardware"}
+      {"@id": "urn:ngm:class:storage-hardware", "label": "Storage Hardware"},
+      {"@id": "urn:ngm:class:erasure-coding", "label": "Erasure Coding"},
+      {"@id": "urn:ngm:class:raid", "label": "RAID"},
+      {"@id": "urn:ngm:class:cap-theorem", "label": "CAP Theorem"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:data-replication", "label": "Data Replication"},
       {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"}
+      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"},
+      {"@id": "urn:ngm:class:data-persistence", "label": "Data Persistence"},
+      {"@id": "urn:ngm:class:backup-and-recovery", "label": "Backup and Recovery"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:networking", "label": "Networking"},
+      {"@id": "urn:ngm:class:data-consistency", "label": "Data Consistency"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:database-management-system", "label": "Database Management System"},
+      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:decentralised-storage", "label": "Decentralised Storage"},
+      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:data-storage", "label": "Data Storage"},
+    {"@id": "urn:ngm:class:storage-architecture", "label": "Storage Architecture"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

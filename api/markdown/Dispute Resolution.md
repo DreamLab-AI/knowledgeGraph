@@ -25,23 +25,61 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:dispute-resolution-mechanism", "label": "Dispute Resolution Mechanism"}],
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:conflict-resolution", "label": "Conflict Resolution"},
+    "hasPart": [
+      {"@id": "urn:ngm:class:negotiation", "label": "Negotiation"},
+      {"@id": "urn:ngm:class:mediation", "label": "Mediation"},
       {"@id": "urn:ngm:class:arbitration-process", "label": "Arbitration Process"},
+      {"@id": "urn:ngm:class:online-dispute-resolution", "label": "Online Dispute Resolution"}
+    ],
+    "requires": [
       {"@id": "urn:ngm:class:legal-framework", "label": "Legal Framework"},
-      {"@id": "urn:ngm:class:dao-legal-structures", "label": "DAO Legal Structures"}
+      {"@id": "urn:ngm:class:evidence-collection", "label": "Evidence Collection"},
+      {"@id": "urn:ngm:class:procedural-fairness", "label": "Procedural Fairness"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:e-contract-arbitration", "label": "E-Contract Arbitration"},
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"}
+      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
+      {"@id": "urn:ngm:class:contract-enforcement", "label": "Contract Enforcement"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
       {"@id": "urn:ngm:class:arbitration-decision-engine", "label": "Arbitration Decision Engine"},
-      {"@id": "urn:ngm:class:legal-compliance", "label": "Legal Compliance"}
+      {"@id": "urn:ngm:class:legal-compliance", "label": "Legal Compliance"},
+      {"@id": "urn:ngm:class:oracle", "label": "Oracle"},
+      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
+      {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:dao-legal-structures", "label": "DAO Legal Structures"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:cryptoeconomic-incentive", "label": "Cryptoeconomic Incentive"},
+      {"@id": "urn:ngm:class:escrow", "label": "Escrow"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:litigation", "label": "Litigation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
+      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:conflict-resolution", "label": "Conflict Resolution"},
+      {"@id": "urn:ngm:class:schelling-point", "label": "Schelling Point"},
+      {"@id": "urn:ngm:class:reputation-system", "label": "Reputation System"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:alternative-dispute-resolution", "label": "Alternative Dispute Resolution"},
+    {"@id": "urn:ngm:class:adr", "label": "ADR"}
+  ],
+  "quality": 0.72,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

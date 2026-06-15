@@ -94,7 +94,7 @@ public:: true
   "@id": "urn:ngm:class:ethical-ai",
   "@type": "Class",
   "label": "Ethical AI",
-  "definition": "The development, deployment, and use of artificial intelligence systems in accordance with moral principles and values that respect human dignity, rights, and wellbeing, incorporating considerations of fairness, transparency, accountability, privacy, safety, and beneficence throughout the AI life...",
+  "definition": "The development, deployment, and use of artificial intelligence systems in accordance with moral principles and values that respect human dignity, rights, and wellbeing, incorporating considerations of fairness, transparency, accountability, privacy, safety, and beneficence throughout the AI lifecycle, whilst promoting human flourishing, social justice, and the common good through deliberate design choices, governance mechanisms, and operational practices that embed ethical reasoning into AI system functioning and organisational decision-making.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "subClassOf": [
@@ -104,6 +104,24 @@ public:: true
     }
   ],
   "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
     "requires": [
       {
         "@id": "urn:ngm:class:stakeholder-engagement",
@@ -112,6 +130,14 @@ public:: true
       {
         "@id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:human-rights",
+        "label": "Human Rights"
+      },
+      {
+        "@id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
       }
     ],
     "enables": [
@@ -122,10 +148,94 @@ public:: true
       {
         "@id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:ethics-by-design",
+        "label": "Ethics by Design"
+      },
+      {
+        "@id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:bias-mitigation",
+        "label": "Bias Mitigation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:digital-inclusion",
+        "label": "Digital Inclusion"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO/IEC 42001"
+      },
+      {
+        "@id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:autonomous-weapons",
+        "label": "Autonomous Weapons"
+      },
+      {
+        "@id": "urn:ngm:class:surveillance-capitalism",
+        "label": "Surveillance Capitalism"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-decision-making",
+        "label": "Algorithmic Decision Making"
       }
     ]
   },
-  "quality": 0.5,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "@id": "urn:ngm:class:trustworthy-ai",
+      "label": "Trustworthy AI"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

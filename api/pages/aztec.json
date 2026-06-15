@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:aztec",
   "domain": "blockchain",
-  "definition": "A privacy-focused Layer 2 network for Ethereum that uses zero-knowledge proofs to enable confidential transactions and private smart contract execution.",
+  "definition": "A privacy-focused Layer 2 network for Ethereum that uses zero-knowledge proofs to enable confidential transactions and private smart contract execution, supporting encrypted notes, private state transitions, and programmable privacy at the application layer.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:layer-2-networks",
@@ -13,10 +13,19 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:encrypted-note",
+        "label": "Encrypted Note"
+      },
+      {
+        "id": "urn:ngm:class:aztec-protocol",
+        "label": "Aztec Protocol"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:zero-knowledge-proof",
@@ -25,23 +34,127 @@
       {
         "id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum Smart Contract Platform"
+      },
+      {
+        "id": "urn:ngm:class:zk-snark",
+        "label": "ZK-SNARK"
+      },
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:privacy",
         "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:confidential-transaction",
+        "label": "Confidential Transaction"
+      },
+      {
+        "id": "urn:ngm:class:private-smart-contract",
+        "label": "Private Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:programmable-privacy",
+        "label": "Programmable Privacy"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:transparent-blockchain",
+        "label": "Transparent Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:optimism",
+        "label": "Optimism"
+      },
+      {
+        "id": "urn:ngm:class:arbitrum",
+        "label": "Arbitrum"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:noir-programming-language",
+        "label": "Noir Programming Language"
+      },
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ethereum-ecosystem",
+        "label": "Ethereum Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:starknet",
+        "label": "StarkNet"
+      },
+      {
+        "id": "urn:ngm:class:polygon-zkevm",
+        "label": "Polygon zkEVM"
+      },
+      {
+        "id": "urn:ngm:class:tornado-cash",
+        "label": "Tornado Cash"
+      }
+    ]
   },
   "wikilinks": [
     {

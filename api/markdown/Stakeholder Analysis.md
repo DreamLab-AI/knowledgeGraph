@@ -25,22 +25,54 @@ public:: true
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:stakeholder", "label": "Stakeholder"}],
   "relations": {
-    "relatedTo": [
-      {"@id": "urn:ngm:class:stakeholder-engagement", "label": "Stakeholder Engagement"},
-      {"@id": "urn:ngm:class:stakeholder-trust", "label": "Stakeholder Trust"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+    "hasPart": [
+      {"@id": "urn:ngm:class:power-interest-grid", "label": "Power-Interest Grid"},
+      {"@id": "urn:ngm:class:influence-mapping", "label": "Influence Mapping"},
+      {"@id": "urn:ngm:class:stakeholder-register", "label": "Stakeholder Register"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:requirements-engineering", "label": "Requirements Engineering"},
+      {"@id": "urn:ngm:class:impact-assessment", "label": "Impact Assessment"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"},
       {"@id": "urn:ngm:class:privacy-impact-assessment", "label": "Privacy Impact Assessment"},
-      {"@id": "urn:ngm:class:stakeholder-engagement-in-ai", "label": "Stakeholder Engagement in AI"}
+      {"@id": "urn:ngm:class:stakeholder-engagement-in-ai", "label": "Stakeholder Engagement in AI"},
+      {"@id": "urn:ngm:class:change-management", "label": "Change Management"}
+    ],
+    "uses": [
+      {"@id": "urn:ngm:class:social-network-analysis", "label": "Social Network Analysis"},
+      {"@id": "urn:ngm:class:consultation-process", "label": "Consultation Process"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:participatory-policy-making", "label": "Participatory Policy Making"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:stakeholder-engagement", "label": "Stakeholder Engagement"},
+      {"@id": "urn:ngm:class:stakeholder-trust", "label": "Stakeholder Trust"},
+      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
+      {"@id": "urn:ngm:class:stakeholder-theory", "label": "Stakeholder Theory"},
+      {"@id": "urn:ngm:class:conflict-of-interest", "label": "Conflict of Interest"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:expert-elicitation", "label": "Expert Elicitation"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
+      {"@id": "urn:ngm:class:fundamental-rights-impact-assessment", "label": "Fundamental Rights Impact Assessment"}
     ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:stakeholder-mapping", "label": "Stakeholder Mapping"}
+  ],
+  "quality": 0.75,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

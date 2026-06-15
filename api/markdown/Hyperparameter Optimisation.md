@@ -21,16 +21,62 @@ public:: true
   "@type": "Class",
   "label": "Hyperparameter Optimisation",
   "definition": "Hyperparameter optimisation is the automated search process for the configuration values — such as learning rate, regularisation strength, architecture depth, and batch size — that govern a machine learning model's training dynamics but are not learned directly from data, with the aim of maximising held-out validation performance. It encompasses grid search, random search, Bayesian optimisation, and gradient-based meta-learning, operating over an outer loop that wraps the inner model training procedure.",
-  "domain": "ai",
+  "domain": "machine-learning",
   "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:hyperparameter", "label": "Hyperparameter"}],
   "relations": {
-    "uses": [{"@id": "urn:ngm:class:neural-architecture-search", "label": "Neural Architecture Search"}, {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}, {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"}],
-    "enables": [{"@id": "urn:ngm:class:model-training", "label": "Model Training"}, {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"}],
-    "relatedTo": [{"@id": "urn:ngm:class:hyperparameter-tuning", "label": "Hyperparameter Tuning"}, {"@id": "urn:ngm:class:learning-rate-schedule", "label": "Learning Rate Schedule"}],
-    "dependsOn": [{"@id": "urn:ngm:class:machine-learning-discipline-framework", "label": "Machine Learning Framework"}]
+    "uses": [
+      {"@id": "urn:ngm:class:neural-architecture-search", "label": "Neural Architecture Search"},
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
+      {"@id": "urn:ngm:class:bayesian-optimisation", "label": "Bayesian Optimisation"},
+      {"@id": "urn:ngm:class:gaussian-process", "label": "Gaussian Process"},
+      {"@id": "urn:ngm:class:random-search", "label": "Random Search"},
+      {"@id": "urn:ngm:class:grid-search", "label": "Grid Search"}
+    ],
+    "enables": [
+      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
+      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"},
+      {"@id": "urn:ngm:class:automated-machine-learning", "label": "Automated Machine Learning"},
+      {"@id": "urn:ngm:class:model-selection", "label": "Model Selection"}
+    ],
+    "requires": [
+      {"@id": "urn:ngm:class:validation-set", "label": "Validation Set"},
+      {"@id": "urn:ngm:class:cross-validation", "label": "Cross-Validation"},
+      {"@id": "urn:ngm:class:objective-function", "label": "Objective Function"}
+    ],
+    "relatedTo": [
+      {"@id": "urn:ngm:class:hyperparameter-tuning", "label": "Hyperparameter Tuning"},
+      {"@id": "urn:ngm:class:learning-rate-schedule", "label": "Learning Rate Schedule"},
+      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"},
+      {"@id": "urn:ngm:class:early-stopping", "label": "Early Stopping"},
+      {"@id": "urn:ngm:class:meta-learning", "label": "Meta-Learning"}
+    ],
+    "dependsOn": [
+      {"@id": "urn:ngm:class:machine-learning-discipline-framework", "label": "Machine Learning Framework"},
+      {"@id": "urn:ngm:class:compute-resource", "label": "Compute Resource"}
+    ],
+    "supports": [
+      {"@id": "urn:ngm:class:mlops", "label": "MLOps"},
+      {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:manual-tuning", "label": "Manual Tuning"}
+    ],
+    "bridgesTo": [
+      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
+      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+    ]
   },
-  "quality": 0.8
+  "sameAs": [
+    {"@id": "urn:ngm:class:hyperparameter-tuning", "label": "Hyperparameter Tuning"}
+  ],
+  "quality": 0.8,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
+  }
 }
 ```
 

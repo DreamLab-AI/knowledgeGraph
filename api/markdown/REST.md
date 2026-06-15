@@ -58,7 +58,7 @@ public:: true
   "@id": "urn:ngm:class:rest",
   "@type": "Class",
   "label": "REST",
-  "definition": "REST is an architectural style for distributed systems that uses stateless requests over HTTP and a uniform interface based on resources and standard methods.",
+  "definition": "REST (Representational State Transfer) is an architectural style for distributed hypermedia systems, defined by Roy Fielding, that uses stateless client-server communication over HTTP with a uniform resource-based interface, cacheable responses, and layered system constraints.",
   "domain": "distributed-systems",
   "maturity": "established",
   "qualityScore": 0.7,
@@ -73,20 +73,148 @@ public:: true
       {
         "@id": "urn:ngm:class:http",
         "label": "HTTP"
+      },
+      {
+        "@id": "urn:ngm:class:url",
+        "label": "URL"
+      },
+      {
+        "@id": "urn:ngm:class:stateless-communication",
+        "label": "Stateless Communication"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:payment-protocol",
         "label": "Payment Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:web-api",
+        "label": "Web API"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:client-server-architecture",
+        "label": "Client-Server Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:uniform-interface",
+        "label": "Uniform Interface"
+      },
+      {
+        "@id": "urn:ngm:class:resource-oriented-architecture",
+        "label": "Resource-Oriented Architecture"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:json",
+        "label": "JSON"
+      },
+      {
+        "@id": "urn:ngm:class:xml",
+        "label": "XML"
+      },
+      {
+        "@id": "urn:ngm:class:http-status-codes",
+        "label": "HTTP Status Codes"
+      },
+      {
+        "@id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:caching",
+        "label": "Caching"
+      },
+      {
+        "@id": "urn:ngm:class:content-negotiation",
+        "label": "Content Negotiation"
+      },
+      {
+        "@id": "urn:ngm:class:hateoas",
+        "label": "HATEOAS"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:graphql",
+        "label": "GraphQL"
+      },
+      {
+        "@id": "urn:ngm:class:grpc",
+        "label": "gRPC"
+      },
+      {
+        "@id": "urn:ngm:class:soap",
+        "label": "SOAP"
+      },
+      {
+        "@id": "urn:ngm:class:rpc",
+        "label": "RPC"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
+      },
+      {
+        "@id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      },
+      {
+        "@id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service-Oriented Architecture"
       }
     ]
   },
-  "quality": 0.6,
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:representational-state-transfer",
+      "label": "Representational State Transfer"
+    },
+    {
+      "@id": "urn:ngm:class:restful-api",
+      "label": "RESTful API"
+    }
+  ],
+  "quality": 0.72,
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-29T00:00:00Z",
-    "inferenceRule": "GapFillTier5"
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```
