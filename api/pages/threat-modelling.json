@@ -18,16 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:threat-enumeration",
-        "label": "Threat Enumeration"
-      },
-      {
         "id": "urn:ngm:class:trust-boundary",
         "label": "Trust Boundary"
-      },
-      {
-        "id": "urn:ngm:class:attack-surface-analysis",
-        "label": "Attack Surface Analysis"
       }
     ],
     "requires": [
@@ -60,10 +52,6 @@
       {
         "id": "urn:ngm:class:vulnerability-analysis",
         "label": "Vulnerability Analysis"
-      },
-      {
-        "id": "urn:ngm:class:reactive-security",
-        "label": "Reactive Security"
       }
     ],
     "bridgesTo": [
@@ -90,28 +78,11 @@
         "label": "Data Flow Diagram"
       },
       {
-        "id": "urn:ngm:class:attack-tree",
-        "label": "Attack Tree"
-      },
-      {
-        "id": "urn:ngm:class:stride",
-        "label": "STRIDE"
-      },
-      {
         "id": "urn:ngm:class:cvss",
         "label": "CVSS"
       }
     ],
-    "supports": [
-      {
-        "id": "urn:ngm:class:secure-software-development-lifecycle",
-        "label": "Secure Software Development Lifecycle"
-      },
-      {
-        "id": "urn:ngm:class:security-controls",
-        "label": "Security Controls"
-      }
-    ],
+    "supports": [],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:nist-sp-800-30",
@@ -131,10 +102,6 @@
       {
         "id": "urn:ngm:class:penetration-testing",
         "label": "Penetration Testing"
-      },
-      {
-        "id": "urn:ngm:class:security-risk-management",
-        "label": "Security Risk Management"
       }
     ]
   },

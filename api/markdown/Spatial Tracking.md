@@ -65,12 +65,6 @@ public:: true
         "@id": "urn:ngm:class:motion-tracking",
         "label": "Motion Tracking"
       }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:immersive-vr",
-        "label": "Immersive VR"
-      }
     ]
   },
   "quality": 0.35,

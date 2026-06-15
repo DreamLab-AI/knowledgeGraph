@@ -487,7 +487,7 @@ alias:: PoseEstimation
         "label": "6DoF Estimation"
       },
       {
-        "@id": "urn:ngm:class:body-model",
+        "@id": "urn:ngm:class:smpl-body-model",
         "label": "Body Model"
       },
       {
@@ -501,10 +501,6 @@ alias:: PoseEstimation
       {
         "@id": "urn:ngm:class:mesh-recovery",
         "label": "Mesh Recovery"
-      },
-      {
-        "@id": "urn:ngm:class:skeleton-graph",
-        "label": "Skeleton Graph"
       },
       {
         "@id": "urn:ngm:class:temporal-smoothing",
@@ -549,10 +545,6 @@ alias:: PoseEstimation
       {
         "@id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
-      },
-      {
-        "@id": "urn:ngm:class:rehabilitation-monitoring",
-        "label": "Rehabilitation Monitoring"
       },
       {
         "@id": "urn:ngm:class:robotic-grasping",
@@ -609,12 +601,8 @@ alias:: PoseEstimation
         "label": "RTMPose"
       },
       {
-        "@id": "urn:ngm:class:smpl",
+        "@id": "urn:ngm:class:smpl-body-model",
         "label": "SMPL"
-      },
-      {
-        "@id": "urn:ngm:class:smpl-x",
-        "label": "SMPL-X"
       },
       {
         "@id": "urn:ngm:class:vi-tpose",
@@ -661,10 +649,6 @@ alias:: PoseEstimation
         "label": "Gaze Estimation"
       },
       {
-        "@id": "urn:ngm:class:hand-pose-estimation",
-        "label": "Hand Pose Estimation"
-      },
-      {
         "@id": "urn:ngm:class:human-parsing",
         "label": "Human Parsing"
       },
@@ -679,7 +663,7 @@ alias:: PoseEstimation
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:animation-pipeline",
+        "@id": "urn:ngm:class:animation",
         "label": "Animation Pipeline"
       },
       {

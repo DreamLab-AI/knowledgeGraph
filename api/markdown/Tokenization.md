@@ -190,7 +190,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:token-standard-protocol",
+        "@id": "urn:ngm:class:token-standard",
         "label": "Token Standard Protocol"
       },
       {
@@ -225,10 +225,6 @@ public:: true
       }
     ],
     "partOf": [
-      {
-        "@id": "urn:ngm:class:blockchain-economy",
-        "label": "Blockchain Economy"
-      },
       {
         "@id": "urn:ngm:class:digital-asset-management",
         "label": "Digital Asset Management"

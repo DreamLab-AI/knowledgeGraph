@@ -99,7 +99,7 @@ public:: true
         "label": "Self-Custody"
       },
       {
-        "@id": "urn:ngm:class:token-swap",
+        "@id": "urn:ngm:class:token-swapping",
         "label": "Token Swap"
       },
       {
@@ -145,10 +145,6 @@ public:: true
       {
         "@id": "urn:ngm:class:centralised-exchange",
         "label": "Centralised Exchange"
-      },
-      {
-        "@id": "urn:ngm:class:custodial-trading",
-        "label": "Custodial Trading"
       }
     ],
     "relatedTo": [

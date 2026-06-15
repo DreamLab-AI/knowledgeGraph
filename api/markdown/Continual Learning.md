@@ -76,15 +76,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:elastic-weight-consolidation",
-        "label": "Elastic Weight Consolidation"
-      },
-      {
         "@id": "urn:ngm:class:experience-replay",
         "label": "Experience Replay"
       },
       {
-        "@id": "urn:ngm:class:progressive-neural-networks",
+        "@id": "urn:ngm:class:neural-network",
         "label": "Progressive Neural Networks"
       },
       {
@@ -96,10 +92,6 @@ public:: true
       {
         "@id": "urn:ngm:class:online-learning",
         "label": "Online Learning"
-      },
-      {
-        "@id": "urn:ngm:class:task-incremental-learning",
-        "label": "Task-Incremental Learning"
       }
     ],
     "enables": [
@@ -112,13 +104,13 @@ public:: true
         "label": "Few-Shot Learning"
       },
       {
-        "@id": "urn:ngm:class:autonomous-agents",
+        "@id": "urn:ngm:class:autonomous-agent",
         "label": "Autonomous Agents"
       }
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:neural-networks",
+        "@id": "urn:ngm:class:neural-network",
         "label": "Neural Networks"
       },
       {
@@ -136,19 +128,11 @@ public:: true
         "label": "Catastrophic Forgetting"
       },
       {
-        "@id": "urn:ngm:class:batch-learning",
-        "label": "Batch Learning"
-      },
-      {
         "@id": "urn:ngm:class:multi-task-learning",
         "label": "Multi Task Learning"
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:memory-replay",
-        "label": "Memory Replay"
-      },
       {
         "@id": "urn:ngm:class:generative-adversarial-networks",
         "label": "Generative Adversarial Networks"
@@ -176,10 +160,6 @@ public:: true
       {
         "@id": "urn:ngm:class:curriculum-learning",
         "label": "Curriculum Learning"
-      },
-      {
-        "@id": "urn:ngm:class:neural-plasticity",
-        "label": "Neural Plasticity"
       }
     ],
     "bridgesTo": [

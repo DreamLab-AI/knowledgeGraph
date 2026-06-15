@@ -38,49 +38,93 @@ public:: true
   ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:ai-safety-research", "label": "AI Safety Research"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"},
-      {"@id": "urn:ngm:class:capability-elicitation", "label": "Capability Elicitation"},
-      {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"}
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "@id": "urn:ngm:class:capability-elicitation",
+        "label": "Capability Elicitation"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-evaluation-results", "label": "Model Evaluation Results"},
-      {"@id": "urn:ngm:class:pre-deployment-safety-testing", "label": "Pre-Deployment Safety Testing"},
-      {"@id": "urn:ngm:class:international-ai-cooperation", "label": "International AI Cooperation"}
+      {
+        "@id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      },
+      {
+        "@id": "urn:ngm:class:international-ai-cooperation",
+        "label": "International AI Cooperation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:bletchley-declaration", "label": "Bletchley Declaration"},
-      {"@id": "urn:ngm:class:ai-safety-evaluation-framework", "label": "AI Safety Evaluation Framework"}
+      {
+        "@id": "urn:ngm:class:bletchley-declaration",
+        "label": "Bletchley Declaration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:frontier-model-forum", "label": "Frontier Model Forum"},
-      {"@id": "urn:ngm:class:us-ai-safety-institute", "label": "US AI Safety Institute"},
-      {"@id": "urn:ngm:class:eu-ai-office", "label": "EU AI Office"},
-      {"@id": "urn:ngm:class:oecd-ai-policy-observatory", "label": "OECD AI Policy Observatory"},
-      {"@id": "urn:ngm:class:deceptive-alignment", "label": "Deceptive Alignment"},
-      {"@id": "urn:ngm:class:autonomous-replication", "label": "Autonomous Replication"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:inspect-evaluation-framework", "label": "Inspect Evaluation Framework"}
-    ],
-    "partOf": [
-      {"@id": "urn:ngm:class:department-for-science-innovation-and-technology", "label": "Department for Science, Innovation and Technology"}
+      {
+        "@id": "urn:ngm:class:frontier-model-forum",
+        "label": "Frontier Model Forum"
+      },
+      {
+        "@id": "urn:ngm:class:us-ai-safety-institute",
+        "label": "US AI Safety Institute"
+      },
+      {
+        "@id": "urn:ngm:class:ai-office",
+        "label": "EU AI Office"
+      },
+      {
+        "@id": "urn:ngm:class:oecd-ai-policy-observatory",
+        "label": "OECD AI Policy Observatory"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ai-self-regulation", "label": "AI Self-Regulation"}
+      {
+        "@id": "urn:ngm:class:ai-self-regulation",
+        "label": "AI Self-Regulation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:biosecurity", "label": "Biosecurity"},
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}
+      {
+        "@id": "urn:ngm:class:biosecurity",
+        "label": "Biosecurity"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:aisi", "label": "AISI"}
+    {
+      "@id": "urn:ngm:class:aisi",
+      "label": "AISI"
+    }
   ],
   "quality": 0.74,
   "provenance": {

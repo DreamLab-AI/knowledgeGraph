@@ -35,28 +35,15 @@
         "label": "Blockchain Network"
       },
       {
-        "id": "urn:ngm:class:private-chain",
+        "id": "urn:ngm:class:private-blockchain",
         "label": "Private Chain"
       }
     ],
-    "enables": [
-      {
-        "id": "urn:ngm:class:block-reward-manipulation",
-        "label": "Block Reward Manipulation"
-      },
-      {
-        "id": "urn:ngm:class:mining-centralization",
-        "label": "Mining Centralization"
-      }
-    ],
+    "enables": [],
     "dependsOn": [
       {
         "id": "urn:ngm:class:proof-of-work",
         "label": "Proof of Work"
-      },
-      {
-        "id": "urn:ngm:class:network-propagation-delay",
-        "label": "Network Propagation Delay"
       },
       {
         "id": "urn:ngm:class:fork-choice-rule",
@@ -72,10 +59,6 @@
       {
         "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
-      },
-      {
-        "id": "urn:ngm:class:honest-mining",
-        "label": "Honest Mining"
       },
       {
         "id": "urn:ngm:class:proof-of-stake",
@@ -100,10 +83,6 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [
-      {
-        "id": "urn:ngm:class:blockchain-attack-surface",
-        "label": "Blockchain Attack Surface"
-      },
       {
         "id": "urn:ngm:class:security",
         "label": "Security"
@@ -133,10 +112,6 @@
       {
         "id": "urn:ngm:class:hash-rate",
         "label": "Hash Rate"
-      },
-      {
-        "id": "urn:ngm:class:block-withholding-attack",
-        "label": "Block Withholding Attack"
       },
       {
         "id": "urn:ngm:class:proof-of-work",

@@ -37,10 +37,6 @@
         "label": "Sovereign Cloud"
       },
       {
-        "id": "urn:ngm:class:indigenous-data-sovereignty",
-        "label": "Indigenous Data Sovereignty"
-      },
-      {
         "id": "urn:ngm:class:national-ai-strategy",
         "label": "National AI Strategy"
       }
@@ -130,7 +126,7 @@
         "label": "Cloud Computing"
       },
       {
-        "id": "urn:ngm:class:cross-border-data-flows",
+        "id": "urn:ngm:class:cross-border-data-transfer",
         "label": "Cross-Border Data Flows"
       }
     ]

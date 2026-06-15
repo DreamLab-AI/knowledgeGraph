@@ -69,7 +69,7 @@ public:: true
         "label": "Cryptography"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -101,12 +101,8 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:credential",
+        "@id": "urn:ngm:class:verifiable-credential-standard",
         "label": "Credential"
-      },
-      {
-        "@id": "urn:ngm:class:verifiable-claim",
-        "label": "Verifiable Claim"
       },
       {
         "@id": "urn:ngm:class:decentralised-identifier",
@@ -157,7 +153,7 @@ public:: true
         "label": "Digital Twin"
       },
       {
-        "@id": "urn:ngm:class:reputation",
+        "@id": "urn:ngm:class:reputation-system",
         "label": "Reputation"
       }
     ],
@@ -173,7 +169,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:w3c-did-core",
+        "@id": "urn:ngm:class:w3-c-did-core",
         "label": "W3C DID Core"
       },
       {

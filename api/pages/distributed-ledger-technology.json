@@ -40,7 +40,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       },
       {
@@ -91,7 +91,7 @@
         "label": "Centralised Database"
       },
       {
-        "id": "urn:ngm:class:traditional-payment-system",
+        "id": "urn:ngm:class:payment-system",
         "label": "Traditional Payment System"
       }
     ],

@@ -19,10 +19,6 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:identifier",
-        "label": "Identifier"
-      },
-      {
         "id": "urn:ngm:class:key-pair",
         "label": "Key Pair"
       }
@@ -52,7 +48,7 @@
         "label": "Decentralized Identifier"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential",
+        "id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       }
     ],
@@ -60,14 +56,6 @@
       {
         "id": "urn:ngm:class:anonymity",
         "label": "Anonymity"
-      },
-      {
-        "id": "urn:ngm:class:identity-disclosure",
-        "label": "Identity Disclosure"
-      },
-      {
-        "id": "urn:ngm:class:real-name-policy",
-        "label": "Real-Name Policy"
       }
     ],
     "bridgesTo": [
@@ -80,13 +68,13 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:tor-network",
+        "id": "urn:ngm:class:tor",
         "label": "Tor Network"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       },
       {
@@ -105,7 +93,7 @@
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:w3c-did-core",
+        "id": "urn:ngm:class:w3-c-did-core",
         "label": "W3C DID Core"
       },
       {
@@ -122,10 +110,6 @@
       {
         "id": "urn:ngm:class:unlinkability",
         "label": "Unlinkability"
-      },
-      {
-        "id": "urn:ngm:class:contextual-integrity",
-        "label": "Contextual Integrity"
       },
       {
         "id": "urn:ngm:class:deanonymisation",

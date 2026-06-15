@@ -118,27 +118,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:payment-distribution",
-        "label": "Payment Distribution"
-      },
-      {
-        "@id": "urn:ngm:class:rights-registry",
-        "label": "Rights Registry"
-      },
-      {
-        "@id": "urn:ngm:class:royalty-calculation",
-        "label": "Royalty Calculation"
-      },
-      {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:creator-wallet",
-        "label": "Creator Wallet"
-      },
       {
         "@id": "urn:ngm:class:blockchain-infrastructure",
         "label": "Blockchain Infrastructure"
@@ -152,14 +136,6 @@ public:: true
       {
         "@id": "urn:ngm:class:creator-compensation",
         "label": "Creator Compensation"
-      },
-      {
-        "@id": "urn:ngm:class:perpetual-revenue",
-        "label": "Perpetual Revenue"
-      },
-      {
-        "@id": "urn:ngm:class:rights-enforcement",
-        "label": "Rights Enforcement"
       }
     ],
     "partOf": [

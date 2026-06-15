@@ -64,24 +64,16 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:algorithms",
-        "label": "Algorithms"
-      },
-      {
         "@id": "urn:ngm:class:data-structures",
         "label": "Data Structures"
       },
       {
-        "@id": "urn:ngm:class:operating-systems",
+        "@id": "urn:ngm:class:operating-system",
         "label": "Operating Systems"
       },
       {
-        "@id": "urn:ngm:class:programming-languages",
+        "@id": "urn:ngm:class:programming-language",
         "label": "Programming Languages"
-      },
-      {
-        "@id": "urn:ngm:class:computer-networks",
-        "label": "Computer Networks"
       },
       {
         "@id": "urn:ngm:class:database-systems",
@@ -92,7 +84,7 @@ public:: true
         "label": "Computability Theory"
       },
       {
-        "@id": "urn:ngm:class:computational-complexity",
+        "@id": "urn:ngm:class:computational-complexity-theory",
         "label": "Computational Complexity"
       }
     ],

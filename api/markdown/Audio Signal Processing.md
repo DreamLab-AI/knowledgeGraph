@@ -23,50 +23,109 @@ public:: true
   "definition": "Audio Signal Processing is the application of signal processing theory and algorithms to the analysis, transformation, synthesis, and encoding of audio-frequency signals, operating in either the time domain or frequency domain. It encompasses filtering, equalisation, dynamic range control, time-frequency analysis, psychoacoustic coding, and spatial rendering as applied to sound reproduction, communication, and computational audition systems.",
   "domain": "ai",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:signal-processing",
+      "label": "Signal Processing"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:digital-filter", "label": "Digital Filter"},
-      {"@id": "urn:ngm:class:fast-fourier-transform", "label": "Fast Fourier Transform"},
-      {"@id": "urn:ngm:class:psychoacoustic-model", "label": "Psychoacoustic Model"},
-      {"@id": "urn:ngm:class:dynamic-range-compression", "label": "Dynamic Range Compression"}
+      {
+        "@id": "urn:ngm:class:digital-filter",
+        "label": "Digital Filter"
+      },
+      {
+        "@id": "urn:ngm:class:fast-fourier-transform",
+        "label": "Fast Fourier Transform"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:digital-signal-processing", "label": "Digital Signal Processing"},
-      {"@id": "urn:ngm:class:audio-parameters", "label": "Audio Parameters"},
-      {"@id": "urn:ngm:class:pulse-code-modulation", "label": "Pulse-Code Modulation"},
-      {"@id": "urn:ngm:class:convolution", "label": "Convolution"}
+      {
+        "@id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:audio-parameters",
+        "label": "Audio Parameters"
+      },
+      {
+        "@id": "urn:ngm:class:pulse-code-modulation",
+        "label": "Pulse-Code Modulation"
+      },
+      {
+        "@id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
-      {"@id": "urn:ngm:class:speech-synthesis", "label": "Speech Synthesis"},
-      {"@id": "urn:ngm:class:audio-compression", "label": "Audio Compression"},
-      {"@id": "urn:ngm:class:noise-suppression", "label": "Noise Suppression"},
-      {"@id": "urn:ngm:class:acoustic-echo-cancellation", "label": "Acoustic Echo Cancellation"}
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:speech-synthesis",
+        "label": "Speech Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:audio-compression",
+        "label": "Audio Compression"
+      },
+      {
+        "@id": "urn:ngm:class:noise-suppression",
+        "label": "Noise Suppression"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:sampling-theorem", "label": "Sampling Theorem"},
-      {"@id": "urn:ngm:class:real-time-computing", "label": "Real-Time Computing"}
+      {
+        "@id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:digital-audio-workstation", "label": "Digital Audio Workstation"},
-      {"@id": "urn:ngm:class:telecommunications", "label": "Telecommunications"}
+      {
+        "@id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:audio-engine", "label": "Audio Engine"},
-      {"@id": "urn:ngm:class:audio-processing-system", "label": "Audio Processing System"},
-      {"@id": "urn:ngm:class:neural-audio-codec", "label": "Neural Audio Codec"},
-      {"@id": "urn:ngm:class:source-separation", "label": "Source Separation"}
+      {
+        "@id": "urn:ngm:class:audio-engine",
+        "label": "Audio Engine"
+      },
+      {
+        "@id": "urn:ngm:class:audio-processing-system",
+        "label": "Audio Processing System"
+      },
+      {
+        "@id": "urn:ngm:class:neural-audio-codec",
+        "label": "Neural Audio Codec"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:digital-audio-processing", "label": "Digital Audio Processing"},
-    {"@id": "urn:ngm:class:acoustic-signal-processing", "label": "Acoustic Signal Processing"}
+    {
+      "@id": "urn:ngm:class:digital-audio-processing",
+      "label": "Digital Audio Processing"
+    },
+    {
+      "@id": "urn:ngm:class:acoustic-signal-processing",
+      "label": "Acoustic Signal Processing"
+    }
   ],
   "quality": 0.8,
   "provenance": {

@@ -394,32 +394,16 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:graph-optimiser",
-        "label": "Graph Optimiser"
-      },
-      {
         "@id": "urn:ngm:class:loop-closure-detection",
         "label": "Loop Closure Detection"
       },
       {
-        "@id": "urn:ngm:class:place-node",
-        "label": "Place Node"
-      },
-      {
-        "@id": "urn:ngm:class:place-recognition-module",
+        "@id": "urn:ngm:class:visual-place-recognition",
         "label": "Place Recognition Module"
       },
       {
         "@id": "urn:ngm:class:pose-graph",
         "label": "Pose Graph"
-      },
-      {
-        "@id": "urn:ngm:class:semantic-label",
-        "label": "Semantic Label"
-      },
-      {
-        "@id": "urn:ngm:class:transition-edge",
-        "label": "Transition Edge"
       }
     ],
     "requires": [
@@ -446,20 +430,12 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:lifelong-mapping",
-        "label": "Lifelong Mapping"
-      },
-      {
         "@id": "urn:ngm:class:long-range-navigation",
         "label": "Long-Range Navigation"
       },
       {
         "@id": "urn:ngm:class:multi-robot-systems",
         "label": "Multi-Robot Systems"
-      },
-      {
-        "@id": "urn:ngm:class:semantic-navigation",
-        "label": "Semantic Navigation"
       },
       {
         "@id": "urn:ngm:class:human-robot-interaction",
@@ -472,10 +448,6 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:fab-map",
-        "label": "FAB-MAP"
-      },
-      {
         "@id": "urn:ngm:class:pose-graph",
         "label": "Pose Graph"
       },
@@ -484,19 +456,11 @@ public:: true
         "label": "RTAB-Map"
       },
       {
-        "@id": "urn:ngm:class:spatial-semantic-hierarchy",
-        "label": "Spatial Semantic Hierarchy"
-      },
-      {
         "@id": "urn:ngm:class:visual-place-recognition",
         "label": "Visual Place Recognition"
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:bag-of-words-model",
-        "label": "Bag-of-Words Model"
-      },
       {
         "@id": "urn:ngm:class:bundle-adjustment",
         "label": "Bundle Adjustment"
@@ -562,10 +526,6 @@ public:: true
       {
         "@id": "urn:ngm:class:ieee-ras",
         "label": "IEEE RAS"
-      },
-      {
-        "@id": "urn:ngm:class:open-slam",
-        "label": "OpenSLAM"
       },
       {
         "@id": "urn:ngm:class:ros-navigation-stack",

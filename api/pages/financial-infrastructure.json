@@ -58,7 +58,7 @@
         "label": "Monetary Policy"
       },
       {
-        "id": "urn:ngm:class:cross-border-payment",
+        "id": "urn:ngm:class:cross-border-payments",
         "label": "Cross-Border Payment"
       },
       {
@@ -126,7 +126,7 @@
         "label": "ISO 20022"
       },
       {
-        "id": "urn:ngm:class:swift-network",
+        "id": "urn:ngm:class:swift",
         "label": "SWIFT Network"
       }
     ],

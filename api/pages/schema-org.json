@@ -28,35 +28,18 @@
         "label": "Semantic Web Linked Data Standard"
       },
       {
-        "id": "urn:ngm:class:rich-snippet",
-        "label": "Rich Snippet"
-      },
-      {
-        "id": "urn:ngm:class:structured-data-markup",
-        "label": "Structured Data Markup"
-      },
-      {
-        "id": "urn:ngm:class:entity-recognition",
+        "id": "urn:ngm:class:named-entity-recognition",
         "label": "Entity Recognition"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:web-ontology-language",
+        "id": "urn:ngm:class:owl-2-web-ontology-language",
         "label": "Web Ontology Language"
-      },
-      {
-        "id": "urn:ngm:class:resource-description-framework-schema",
-        "label": "RDF Schema"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:microformat",
-        "label": "Microformat"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:large-language-model",
@@ -79,14 +62,6 @@
       {
         "id": "urn:ngm:class:controlled-vocabulary",
         "label": "Controlled Vocabulary"
-      },
-      {
-        "id": "urn:ngm:class:microdata",
-        "label": "Microdata"
-      },
-      {
-        "id": "urn:ngm:class:rdfa",
-        "label": "RDFa"
       }
     ],
     "supports": [
@@ -103,12 +78,7 @@
         "label": "Information Extraction"
       }
     ],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:w3c-community-group",
-        "label": "W3C Community Group"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
@@ -120,7 +90,7 @@
         "label": "Search Engine"
       },
       {
-        "id": "urn:ngm:class:open-graph-protocol",
+        "id": "urn:ngm:class:open-graph-link-preview-protocol",
         "label": "Open Graph Protocol"
       },
       {

@@ -22,10 +22,6 @@
         "label": "Lossless Compression"
       },
       {
-        "id": "urn:ngm:class:lossy-compression",
-        "label": "Lossy Compression"
-      },
-      {
         "id": "urn:ngm:class:entropy-coding",
         "label": "Entropy Coding"
       }
@@ -64,12 +60,7 @@
         "label": "Information Theory"
       }
     ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:rate-distortion-theory",
-        "label": "Rate-Distortion Theory"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:full-precision-model",
@@ -94,10 +85,6 @@
       {
         "id": "urn:ngm:class:quantisation",
         "label": "Quantisation"
-      },
-      {
-        "id": "urn:ngm:class:huffman-coding",
-        "label": "Huffman Coding"
       },
       {
         "id": "urn:ngm:class:autoencoder",
@@ -125,7 +112,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:model-optimisation",
+        "id": "urn:ngm:class:model-optimisation-and-performance",
         "label": "Model Optimisation"
       }
     ],

@@ -217,10 +217,6 @@ alias:: Robotics Core Concepts
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:computational-methods",
-        "label": "ComputationalMethods"
-      },
-      {
         "@id": "urn:ngm:class:hardware-design",
         "label": "HardwareDesign"
       },
@@ -229,7 +225,7 @@ alias:: Robotics Core Concepts
         "label": "Mathematical Foundations"
       },
       {
-        "@id": "urn:ngm:class:physics-modeling",
+        "@id": "urn:ngm:class:physics-simulation",
         "label": "PhysicsModeling"
       },
       {
@@ -245,14 +241,6 @@ alias:: Robotics Core Concepts
       {
         "@id": "urn:ngm:class:industrial-automation",
         "label": "IndustrialAutomation"
-      },
-      {
-        "@id": "urn:ngm:class:robotics-education",
-        "label": "RoboticsEducation"
-      },
-      {
-        "@id": "urn:ngm:class:robotics-research",
-        "label": "RoboticsResearch"
       },
       {
         "@id": "urn:ngm:class:service-robotics",

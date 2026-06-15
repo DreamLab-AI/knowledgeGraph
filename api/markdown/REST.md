@@ -73,14 +73,6 @@ public:: true
       {
         "@id": "urn:ngm:class:http",
         "label": "HTTP"
-      },
-      {
-        "@id": "urn:ngm:class:url",
-        "label": "URL"
-      },
-      {
-        "@id": "urn:ngm:class:stateless-communication",
-        "label": "Stateless Communication"
       }
     ],
     "enables": [
@@ -107,26 +99,18 @@ public:: true
         "label": "Client-Server Architecture"
       },
       {
-        "@id": "urn:ngm:class:uniform-interface",
+        "@id": "urn:ngm:class:interface",
         "label": "Uniform Interface"
-      },
-      {
-        "@id": "urn:ngm:class:resource-oriented-architecture",
-        "label": "Resource-Oriented Architecture"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:json",
+        "@id": "urn:ngm:class:json-data-interchange-format",
         "label": "JSON"
       },
       {
         "@id": "urn:ngm:class:xml",
         "label": "XML"
-      },
-      {
-        "@id": "urn:ngm:class:http-status-codes",
-        "label": "HTTP Status Codes"
       },
       {
         "@id": "urn:ngm:class:oauth",
@@ -171,7 +155,7 @@ public:: true
         "label": "SOAP"
       },
       {
-        "@id": "urn:ngm:class:rpc",
+        "@id": "urn:ngm:class:json-data-interchange-format-rpc",
         "label": "RPC"
       }
     ],

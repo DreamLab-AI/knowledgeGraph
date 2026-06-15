@@ -24,59 +24,124 @@ public:: true
   "domain": "governance",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:digital-regulation", "label": "Digital Regulation"}
+    {
+      "@id": "urn:ngm:class:digital-regulation",
+      "label": "Digital Regulation"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:duty-of-care", "label": "Duty of Care"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:age-verification", "label": "Age Verification"},
-      {"@id": "urn:ngm:class:transparency-reporting", "label": "Transparency Reporting"}
-    ],
-    "partOf": [
-      {"@id": "urn:ngm:class:uk-technology-policy", "label": "UK Technology Policy"}
+      {
+        "@id": "urn:ngm:class:duty-of-care",
+        "label": "Duty of Care"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:age-verification",
+        "label": "Age Verification"
+      },
+      {
+        "@id": "urn:ngm:class:transparency-reporting",
+        "label": "Transparency Reporting"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:age-assurance", "label": "Age Assurance"}
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:age-verification",
+        "label": "Age Assurance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:trust-and-safety", "label": "Trust and Safety"},
-      {"@id": "urn:ngm:class:child-online-protection", "label": "Child Online Protection"},
-      {"@id": "urn:ngm:class:platform-accountability", "label": "Platform Accountability"}
+      {
+        "@id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      },
+      {
+        "@id": "urn:ngm:class:child-online-protection",
+        "label": "Child Online Protection"
+      },
+      {
+        "@id": "urn:ngm:class:platform-accountability",
+        "label": "Platform Accountability"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:ofcom", "label": "Ofcom"},
-      {"@id": "urn:ngm:class:codes-of-practice", "label": "Codes of Practice"}
+      {
+        "@id": "urn:ngm:class:ofcom",
+        "label": "Ofcom"
+      },
+      {
+        "@id": "urn:ngm:class:codes-of-practice",
+        "label": "Codes of Practice"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:online-harm-reduction", "label": "Online Harm Reduction"},
-      {"@id": "urn:ngm:class:platform-governance", "label": "Platform Governance"}
+      {
+        "@id": "urn:ngm:class:platform-governance",
+        "label": "Platform Governance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:digital-services-act", "label": "Digital Services Act"},
-      {"@id": "urn:ngm:class:first-amendment-doctrine", "label": "First Amendment Doctrine"}
+      {
+        "@id": "urn:ngm:class:digital-services-act",
+        "label": "Digital Services Act"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-safety", "label": "Digital Safety"},
-      {"@id": "urn:ngm:class:end-to-end-encryption", "label": "End-to-End Encryption"},
-      {"@id": "urn:ngm:class:illegal-content", "label": "Illegal Content"},
-      {"@id": "urn:ngm:class:csam-detection", "label": "CSAM Detection"},
-      {"@id": "urn:ngm:class:age-appropriate-design-code", "label": "Age Appropriate Design Code"}
+      {
+        "@id": "urn:ngm:class:digital-safety",
+        "label": "Digital Safety"
+      },
+      {
+        "@id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:csam-detection",
+        "label": "CSAM Detection"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:client-side-scanning", "label": "Client-Side Scanning"},
-      {"@id": "urn:ngm:class:privacy-enhancing-technologies", "label": "Privacy Enhancing Technologies"}
+      {
+        "@id": "urn:ngm:class:client-side-scanning",
+        "label": "Client-Side Scanning"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-enhancing-technologies",
+        "label": "Privacy Enhancing Technologies"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ofcom", "label": "Ofcom"},
-      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"}
+      {
+        "@id": "urn:ngm:class:ofcom",
+        "label": "Ofcom"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:osa-2023", "label": "OSA 2023"},
-    {"@id": "urn:ngm:class:online-safety-bill", "label": "Online Safety Bill"}
+    {
+      "@id": "urn:ngm:class:osa-2023",
+      "label": "OSA 2023"
+    },
+    {
+      "@id": "urn:ngm:class:online-safety-bill",
+      "label": "Online Safety Bill"
+    }
   ],
   "quality": 0.74,
   "provenance": {

@@ -95,10 +95,6 @@
       {
         "id": "urn:ngm:class:eye-tracking",
         "label": "Eye Tracking"
-      },
-      {
-        "id": "urn:ngm:class:caption-and-subtitling",
-        "label": "Caption and Subtitling"
       }
     ],
     "supports": [
@@ -113,7 +109,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:wcag",
+        "id": "urn:ngm:class:wcag-2-2",
         "label": "WCAG"
       },
       {

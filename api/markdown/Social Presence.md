@@ -64,50 +64,115 @@ alias:: SocialPresence
   },
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
-      {"@id": "urn:ngm:class:immersive-communication", "label": "Immersive Communication"},
-      {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:copresence", "label": "Co-presence"},
-      {"@id": "urn:ngm:class:mutual-awareness", "label": "Mutual Awareness"}
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      },
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:awareness",
+        "label": "Mutual Awareness"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-collaboration", "label": "Virtual Collaboration"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:trust-building", "label": "Trust Building"},
-      {"@id": "urn:ngm:class:group-cohesion", "label": "Group Cohesion"}
+      {
+        "@id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:trust-building",
+        "label": "Trust Building"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:dc-communication", "label": "Communication Technology"},
-      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"}
+      {
+        "@id": "urn:ngm:class:dc-communication",
+        "label": "Communication Technology"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:video-conferencing", "label": "Video Conferencing"},
-      {"@id": "urn:ngm:class:web-rtc", "label": "WebRTC"},
-      {"@id": "urn:ngm:class:presence-detection", "label": "Presence Detection"},
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
-      {"@id": "urn:ngm:class:avatar-animation", "label": "Avatar Animation"}
+      {
+        "@id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      },
+      {
+        "@id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC"
+      },
+      {
+        "@id": "urn:ngm:class:presence-detection",
+        "label": "Presence Detection"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-animation",
+        "label": "Avatar Animation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:real-time-communication", "label": "Real-Time Communication"},
-      {"@id": "urn:ngm:class:low-latency-network", "label": "Low-Latency Network"}
+      {
+        "@id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      },
+      {
+        "@id": "urn:ngm:class:low-latency-network",
+        "label": "Low-Latency Network"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:media-richness", "label": "Media Richness"},
-      {"@id": "urn:ngm:class:nonverbal-cues", "label": "Nonverbal Cues"}
+      {
+        "@id": "urn:ngm:class:media-richness-theory",
+        "label": "Media Richness"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:asynchronous-communication", "label": "Asynchronous Communication"}
+      {
+        "@id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:presence", "label": "Presence"},
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:metaverse-social-layer", "label": "Metaverse Social Layer"}
+      {
+        "@id": "urn:ngm:class:presence",
+        "label": "Presence"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:social-telepresence", "label": "Social Telepresence"},
-    {"@id": "urn:ngm:class:interpersonal-presence", "label": "Interpersonal Presence"}
+    {
+      "@id": "urn:ngm:class:social-telepresence",
+      "label": "Social Telepresence"
+    },
+    {
+      "@id": "urn:ngm:class:interpersonal-presence",
+      "label": "Interpersonal Presence"
+    }
   ],
   "quality": 0.72,
   "provenance": {

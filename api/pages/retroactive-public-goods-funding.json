@@ -19,10 +19,6 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:impact-evaluation",
-        "label": "Impact Evaluation"
-      },
-      {
         "id": "urn:ngm:class:sybil-resistance",
         "label": "Sybil Resistance"
       },
@@ -37,11 +33,11 @@
         "label": "Open Source Sustainability"
       },
       {
-        "id": "urn:ngm:class:protocol-revenue-distribution",
+        "id": "urn:ngm:class:revenue-distribution",
         "label": "Protocol Revenue Distribution"
       },
       {
-        "id": "urn:ngm:class:contributor-incentive-alignment",
+        "id": "urn:ngm:class:incentive-alignment",
         "label": "Contributor Incentive Alignment"
       }
     ],
@@ -51,14 +47,6 @@
       {
         "id": "urn:ngm:class:quadratic-funding",
         "label": "Quadratic Funding"
-      },
-      {
-        "id": "urn:ngm:class:prospective-grant-funding",
-        "label": "Prospective Grant Funding"
-      },
-      {
-        "id": "urn:ngm:class:token-launch",
-        "label": "Token Launch"
       }
     ],
     "bridgesTo": [
@@ -85,10 +73,6 @@
         "label": "Treasury Management"
       },
       {
-        "id": "urn:ngm:class:impact-attestation",
-        "label": "Impact Attestation"
-      },
-      {
         "id": "urn:ngm:class:quadratic-voting",
         "label": "Quadratic Voting"
       },
@@ -101,7 +85,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:public-goods-funding",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
         "label": "Public Goods Funding"
       },
       {
@@ -127,11 +111,7 @@
         "label": "Mechanism Design"
       },
       {
-        "id": "urn:ngm:class:coordination-failure",
-        "label": "Coordination Failure"
-      },
-      {
-        "id": "urn:ngm:class:ethereum-ecosystem",
+        "id": "urn:ngm:class:ethereum",
         "label": "Ethereum Ecosystem"
       }
     ]

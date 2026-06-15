@@ -16,20 +16,7 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:pathogen-surveillance",
-        "label": "Pathogen Surveillance"
-      },
-      {
-        "id": "urn:ngm:class:laboratory-containment",
-        "label": "Laboratory Containment"
-      },
-      {
-        "id": "urn:ngm:class:select-agent-regulation",
-        "label": "Select Agent Regulation"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:international-treaty",
@@ -48,40 +35,19 @@
       {
         "id": "urn:ngm:class:pandemic-preparedness",
         "label": "Pandemic Preparedness"
-      },
-      {
-        "id": "urn:ngm:class:biodefense",
-        "label": "Biodefense"
       }
     ],
     "dependsOn": [
-      {
-        "id": "urn:ngm:class:public-health-infrastructure",
-        "label": "Public Health Infrastructure"
-      },
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
       }
     ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:dual-use-research-oversight",
-        "label": "Dual-Use Research Oversight"
-      },
-      {
-        "id": "urn:ngm:class:biosafety-standards",
-        "label": "Biosafety Standards"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:bio-terror",
         "label": "Bio Terror"
-      },
-      {
-        "id": "urn:ngm:class:biological-weapons",
-        "label": "Biological Weapons"
       }
     ],
     "bridgesTo": [
@@ -99,16 +65,7 @@
       }
     ],
     "uses": [],
-    "supports": [
-      {
-        "id": "urn:ngm:class:global-health-security",
-        "label": "Global Health Security"
-      },
-      {
-        "id": "urn:ngm:class:arms-control",
-        "label": "Arms Control"
-      }
-    ],
+    "supports": [],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [

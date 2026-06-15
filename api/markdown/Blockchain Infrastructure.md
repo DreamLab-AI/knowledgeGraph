@@ -114,7 +114,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:distributed-systems-infrastructure",
+        "@id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems Infrastructure"
       },
       {
@@ -204,7 +204,7 @@ public:: true
         "label": "Centralized Database"
       },
       {
-        "@id": "urn:ngm:class:traditional-financial-infrastructure",
+        "@id": "urn:ngm:class:financial-infrastructure",
         "label": "Traditional Financial Infrastructure"
       }
     ],

@@ -91,10 +91,6 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:small-language-model",
-        "label": "Small Language Model"
-      },
-      {
         "id": "urn:ngm:class:recurrent-neural-network",
         "label": "Recurrent Neural Network"
       }
@@ -140,7 +136,7 @@
         "label": "Fine Tuning"
       },
       {
-        "id": "urn:ngm:class:mixture-of-experts",
+        "id": "urn:ngm:class:mixture-of-experts-architecture",
         "label": "Mixture of Experts"
       },
       {

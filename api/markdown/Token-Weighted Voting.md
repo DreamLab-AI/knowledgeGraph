@@ -38,57 +38,137 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:on-chain-voting", "label": "On Chain Voting"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:vote-escrow", "label": "Vote Escrow"},
-      {"@id": "urn:ngm:class:liquid-democracy", "label": "Liquid Democracy"}
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-voting",
+        "label": "On Chain Voting"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:vote-escrow",
+        "label": "Vote Escrow"
+      },
+      {
+        "@id": "urn:ngm:class:liquid-democracy",
+        "label": "Liquid Democracy"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:quadratic-voting", "label": "Quadratic Voting"},
-      {"@id": "urn:ngm:class:conviction-voting", "label": "Conviction Voting"},
-      {"@id": "urn:ngm:class:one-person-one-vote", "label": "One Person One Vote"},
-      {"@id": "urn:ngm:class:reputation-based-voting", "label": "Reputation-Based Voting"}
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "@id": "urn:ngm:class:conviction-voting",
+        "label": "Conviction Voting"
+      },
+      {
+        "@id": "urn:ngm:class:one-person-one-vote",
+        "label": "One Person One Vote"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
-      {"@id": "urn:ngm:class:snapshot-voting", "label": "Snapshot Voting"},
-      {"@id": "urn:ngm:class:defi-protocol", "label": "DeFi Protocol"},
-      {"@id": "urn:ngm:class:plutocracy", "label": "Plutocracy"},
-      {"@id": "urn:ngm:class:voter-turnout", "label": "Voter Turnout"},
-      {"@id": "urn:ngm:class:governance-attack", "label": "Governance Attack"}
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      },
+      {
+        "@id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:plutocracy",
+        "label": "Plutocracy"
+      },
+      {
+        "@id": "urn:ngm:class:governance-attack",
+        "label": "Governance Attack"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:erc-20-token", "label": "ERC-20 Token"},
-      {"@id": "urn:ngm:class:quorum-threshold", "label": "Quorum Threshold"},
-      {"@id": "urn:ngm:class:proposal-mechanism", "label": "Proposal Mechanism"}
+      {
+        "@id": "urn:ngm:class:erc-20-tokens",
+        "label": "ERC-20 Token"
+      },
+      {
+        "@id": "urn:ngm:class:quorum-threshold",
+        "label": "Quorum Threshold"
+      },
+      {
+        "@id": "urn:ngm:class:proposal-mechanism",
+        "label": "Proposal Mechanism"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:protocol-upgrade", "label": "Protocol Upgrade"},
-      {"@id": "urn:ngm:class:treasury-management", "label": "Treasury Management"},
-      {"@id": "urn:ngm:class:parameter-governance", "label": "Parameter Governance"},
-      {"@id": "urn:ngm:class:decentralised-decision-making", "label": "Decentralised Decision-Making"}
+      {
+        "@id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      },
+      {
+        "@id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      },
+      {
+        "@id": "urn:ngm:class:parameter-governance",
+        "label": "Parameter Governance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-decision-making",
+        "label": "Decentralised Decision-Making"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"}
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"},
-      {"@id": "urn:ngm:class:social-choice-theory", "label": "Social Choice Theory"},
-      {"@id": "urn:ngm:class:sybil-resistance", "label": "Sybil Resistance"}
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "@id": "urn:ngm:class:social-choice-theory",
+        "label": "Social Choice Theory"
+      },
+      {
+        "@id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
     ],
     "sameAs": [
-      {"@id": "urn:ngm:class:token-vote-governance", "label": "Token Vote Governance"},
-      {"@id": "urn:ngm:class:plutocratic-voting", "label": "Plutocratic Voting"}
+      {
+        "@id": "urn:ngm:class:plutocratic-voting",
+        "label": "Plutocratic Voting"
+      }
     ]
   },
   "qualityScore": 0.74,
-  "maturity": "established",
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",

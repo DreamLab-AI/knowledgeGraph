@@ -63,14 +63,7 @@ public:: true
       "label": "Platform and Environment"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:collaborative-systems-modality-ar-experiences",
-        "label": "Collaborative AR Experiences"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

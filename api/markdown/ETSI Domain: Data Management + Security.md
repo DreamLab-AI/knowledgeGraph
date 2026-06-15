@@ -132,7 +132,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:security-and-privacy",
+        "@id": "urn:ngm:class:etsi-domain-security-and-privacy",
         "label": "Security & Privacy"
       },
       {
@@ -142,12 +142,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:access-control-enforcement",
+        "@id": "urn:ngm:class:access-control",
         "label": "Access Control Enforcement"
-      },
-      {
-        "@id": "urn:ngm:class:data-at-rest-protection",
-        "label": "Data-at-Rest Protection"
       },
       {
         "@id": "urn:ngm:class:threat-detection",

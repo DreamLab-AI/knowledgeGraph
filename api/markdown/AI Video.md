@@ -496,31 +496,11 @@ public:: true
         "label": "Diffusion Transformer"
       },
       {
-        "@id": "urn:ngm:class:sampling-scheduler",
-        "label": "Sampling Scheduler"
-      },
-      {
-        "@id": "urn:ngm:class:spatiotemporal-autoencoder",
-        "label": "Spatiotemporal Autoencoder"
-      },
-      {
-        "@id": "urn:ngm:class:temporal-attention-module",
-        "label": "Temporal Attention Module"
-      },
-      {
         "@id": "urn:ngm:class:text-encoder",
         "label": "Text Encoder"
-      },
-      {
-        "@id": "urn:ngm:class:video-tokeniser",
-        "label": "Video Tokeniser"
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:captioning-pipeline",
-        "label": "Captioning Pipeline"
-      },
       {
         "@id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
@@ -534,46 +514,22 @@ public:: true
         "label": "Latent Diffusion"
       },
       {
-        "@id": "urn:ngm:class:video-text-training-corpus",
-        "label": "Video-Text Training Corpus"
-      },
-      {
         "@id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:ai-avatar-synthesis",
-        "label": "AI Avatar Synthesis"
-      },
-      {
         "@id": "urn:ngm:class:deepfakes",
         "label": "Deepfakes"
-      },
-      {
-        "@id": "urn:ngm:class:image-to-video-generation",
-        "label": "Image-to-Video Generation"
       },
       {
         "@id": "urn:ngm:class:performance-capture",
         "label": "Performance Capture"
       },
       {
-        "@id": "urn:ngm:class:synthetic-advertising",
-        "label": "Synthetic Advertising"
-      },
-      {
-        "@id": "urn:ngm:class:synthetic-pre-visualisation",
-        "label": "Synthetic Pre-visualisation"
-      },
-      {
         "@id": "urn:ngm:class:text-to-video-generation",
         "label": "Text-to-Video Generation"
-      },
-      {
-        "@id": "urn:ngm:class:video-to-video-translation",
-        "label": "Video-to-Video Translation"
       }
     ],
     "implements": [
@@ -582,25 +538,17 @@ public:: true
         "label": "Classifier-Free Guidance"
       },
       {
-        "@id": "urn:ngm:class:latent-video-diffusion",
+        "@id": "urn:ngm:class:latent-diffusion",
         "label": "Latent Video Diffusion"
       },
       {
-        "@id": "urn:ngm:class:rectified-flow-training",
+        "@id": "urn:ngm:class:rectified-flow",
         "label": "Rectified Flow Training"
-      },
-      {
-        "@id": "urn:ngm:class:score-based-generative-modelling",
-        "label": "Score-Based Generative Modelling"
-      },
-      {
-        "@id": "urn:ngm:class:spacetime-patch-tokenisation",
-        "label": "Spacetime Patch Tokenisation"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:3-d-causal-vae",
+        "@id": "urn:ngm:class:vae",
         "label": "3D Causal VAE"
       },
       {
@@ -616,7 +564,7 @@ public:: true
         "label": "Convolution"
       },
       {
-        "@id": "urn:ngm:class:lo-ra-adapter",
+        "@id": "urn:ngm:class:lo-ra",
         "label": "LoRA Adapter"
       },
       {
@@ -672,24 +620,8 @@ public:: true
         "label": "Advertising"
       },
       {
-        "@id": "urn:ngm:class:corporate-training-video",
-        "label": "Corporate Training Video"
-      },
-      {
-        "@id": "urn:ngm:class:film-pre-visualisation",
-        "label": "Film Pre-visualisation"
-      },
-      {
-        "@id": "urn:ngm:class:social-media-platform-infrastructure-short-form",
+        "@id": "urn:ngm:class:social-media-platform-infrastructure",
         "label": "Social Media Short-form"
-      },
-      {
-        "@id": "urn:ngm:class:video-dubbing",
-        "label": "Video Dubbing"
-      },
-      {
-        "@id": "urn:ngm:class:video-game-cinematic",
-        "label": "Video Game Cinematic"
       },
       {
         "@id": "urn:ngm:class:synthetic-data-generation",
@@ -698,28 +630,12 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:bbc-generative-ai-principles",
-        "label": "BBC Generative AI Principles"
-      },
-      {
         "@id": "urn:ngm:class:c2-pa",
         "label": "C2PA"
       },
       {
-        "@id": "urn:ngm:class:fvd",
-        "label": "FVD"
-      },
-      {
         "@id": "urn:ngm:class:online-safety-act-2023",
         "label": "Online Safety Act 2023"
-      },
-      {
-        "@id": "urn:ngm:class:sag-aftra-tv-theatrical-contract",
-        "label": "SAG-AFTRA TV-Theatrical Contract"
-      },
-      {
-        "@id": "urn:ngm:class:vbench",
-        "label": "VBench"
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",

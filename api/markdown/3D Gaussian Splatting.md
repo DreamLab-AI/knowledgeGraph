@@ -83,10 +83,6 @@ alias:: TELE-051-3d-gaussian-splatting
       {
         "@id": "urn:ngm:class:spherical-harmonics",
         "label": "Spherical Harmonics"
-      },
-      {
-        "@id": "urn:ngm:class:adaptive-density-control",
-        "label": "Adaptive Density Control"
       }
     ],
     "partOf": [
@@ -103,10 +99,6 @@ alias:: TELE-051-3d-gaussian-splatting
       {
         "@id": "urn:ngm:class:structure-from-motion",
         "label": "Structure-from-Motion"
-      },
-      {
-        "@id": "urn:ngm:class:gpu-rasterisation",
-        "label": "GPU Rasterisation"
       }
     ],
     "enables": [
@@ -115,15 +107,15 @@ alias:: TELE-051-3d-gaussian-splatting
         "label": "Photorealistic Telepresence"
       },
       {
-        "@id": "urn:ngm:class:volumetric-video-conferencing",
+        "@id": "urn:ngm:class:tele-053-volumetric-video-conferencing",
         "label": "Volumetric Video Conferencing"
       },
       {
-        "@id": "urn:ngm:class:real-time-novel-view-synthesis",
+        "@id": "urn:ngm:class:novel-view-synthesis",
         "label": "Real-Time Novel View Synthesis"
       },
       {
-        "@id": "urn:ngm:class:photorealistic-avatar",
+        "@id": "urn:ngm:class:avatar",
         "label": "Photorealistic Avatar"
       }
     ],
@@ -145,10 +137,6 @@ alias:: TELE-051-3d-gaussian-splatting
       {
         "@id": "urn:ngm:class:alpha-blending",
         "label": "Alpha Blending"
-      },
-      {
-        "@id": "urn:ngm:class:painters-algorithm",
-        "label": "Painter's Algorithm"
       }
     ],
     "uses": [
@@ -167,11 +155,7 @@ alias:: TELE-051-3d-gaussian-splatting
         "label": "Neural Radiance Fields"
       },
       {
-        "@id": "urn:ngm:class:mesh-based-rendering",
-        "label": "Mesh-Based Rendering"
-      },
-      {
-        "@id": "urn:ngm:class:instant-ngp",
+        "@id": "urn:ngm:class:tele-060-instant-ngp",
         "label": "Instant NGP"
       }
     ],

@@ -1456,10 +1456,6 @@ public:: true
         "label": "ASIC"
       },
       {
-        "@id": "urn:ngm:class:nonce-search",
-        "label": "Nonce Search"
-      },
-      {
         "@id": "urn:ngm:class:sha-256-hashing",
         "label": "SHA-256 Hashing"
       },
@@ -1494,16 +1490,12 @@ public:: true
         "label": "ASIC Hardware"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-full-node",
+        "@id": "urn:ngm:class:full-node",
         "label": "Bitcoin Full Node"
       },
       {
         "@id": "urn:ngm:class:cooling-system",
         "label": "Cooling System"
-      },
-      {
-        "@id": "urn:ngm:class:electricity",
-        "label": "Electricity"
       },
       {
         "@id": "urn:ngm:class:network-connectivity",
@@ -1516,24 +1508,16 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-issuance",
-        "label": "Bitcoin Issuance"
-      },
-      {
         "@id": "urn:ngm:class:blockchain-security",
         "label": "Blockchain Security"
       },
       {
-        "@id": "urn:ngm:class:demand-response-services",
+        "@id": "urn:ngm:class:demand-response",
         "label": "Demand Response Services"
       },
       {
         "@id": "urn:ngm:class:double-spend-prevention",
         "label": "Double-Spend Prevention"
-      },
-      {
-        "@id": "urn:ngm:class:permissionless-settlement",
-        "label": "Permissionless Settlement"
       },
       {
         "@id": "urn:ngm:class:transaction-confirmation",
@@ -1542,11 +1526,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:coinbase-reward-distribution",
-        "label": "Coinbase Reward Distribution"
-      },
-      {
-        "@id": "urn:ngm:class:difficulty-adjustment-algorithm",
+        "@id": "urn:ngm:class:difficulty-adjustment",
         "label": "Difficulty Adjustment Algorithm"
       },
       {
@@ -1564,24 +1544,12 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:double-hashing",
-        "label": "Double Hashing"
-      },
-      {
-        "@id": "urn:ngm:class:hashboards",
-        "label": "Hashboards"
-      },
-      {
         "@id": "urn:ngm:class:immersion-cooling",
         "label": "Immersion Cooling"
       },
       {
-        "@id": "urn:ngm:class:merkle-root-construction",
+        "@id": "urn:ngm:class:merkle-root",
         "label": "Merkle Root Construction"
-      },
-      {
-        "@id": "urn:ngm:class:stratum-v1",
-        "label": "Stratum V1"
       },
       {
         "@id": "urn:ngm:class:stratum-v2",
@@ -1594,14 +1562,6 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:ai-hpc-pivot",
-        "label": "AI HPC Pivot"
-      },
-      {
-        "@id": "urn:ngm:class:asic-manufacturer",
-        "label": "ASIC Manufacturer"
-      },
-      {
         "@id": "urn:ngm:class:demand-response",
         "label": "Demand Response"
       },
@@ -1612,10 +1572,6 @@ public:: true
       {
         "@id": "urn:ngm:class:renewable-energy",
         "label": "Renewable Energy"
-      },
-      {
-        "@id": "urn:ngm:class:stranded-gas",
-        "label": "Stranded Gas"
       },
       {
         "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
@@ -1632,16 +1588,8 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network-security",
-        "label": "Bitcoin Network Security"
-      },
-      {
         "@id": "urn:ngm:class:decentralisation",
         "label": "Decentralisation"
-      },
-      {
-        "@id": "urn:ngm:class:energy-grid-stability",
-        "label": "Energy Grid Stability"
       },
       {
         "@id": "urn:ngm:class:sound-money",
@@ -1654,19 +1602,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:bip-34",
-        "label": "BIP 34"
-      },
-      {
-        "@id": "urn:ngm:class:bip-9",
-        "label": "BIP 9"
-      },
-      {
-        "@id": "urn:ngm:class:bip-91",
-        "label": "BIP 91"
-      },
-      {
-        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core-reference-implementation",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
         "label": "Bitcoin Core Reference Implementation"
       },
       {
@@ -1674,7 +1610,7 @@ public:: true
         "label": "CBECI Methodology"
       },
       {
-        "@id": "urn:ngm:class:stratum-v2-specification",
+        "@id": "urn:ngm:class:stratum-v2",
         "label": "Stratum V2 Specification"
       }
     ]

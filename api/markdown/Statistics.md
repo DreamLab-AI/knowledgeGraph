@@ -75,24 +75,16 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:hypothesis-testing",
-        "label": "Hypothesis Testing"
-      },
-      {
         "@id": "urn:ngm:class:estimation-theory",
         "label": "Estimation Theory"
       },
       {
-        "@id": "urn:ngm:class:regression-analysis",
+        "@id": "urn:ngm:class:regression",
         "label": "Regression Analysis"
       },
       {
         "@id": "urn:ngm:class:bayesian-inference",
         "label": "Bayesian Inference"
-      },
-      {
-        "@id": "urn:ngm:class:descriptive-statistics",
-        "label": "Descriptive Statistics"
       }
     ],
     "enables": [
@@ -133,30 +125,10 @@ public:: true
         "label": "Maximum Likelihood Estimation"
       }
     ],
-    "uses": [
-      {
-        "@id": "urn:ngm:class:confidence-intervals",
-        "label": "Confidence Intervals"
-      },
-      {
-        "@id": "urn:ngm:class:p-values",
-        "label": "P-Values"
-      }
-    ],
     "supports": [
-      {
-        "@id": "urn:ngm:class:empirical-science",
-        "label": "Empirical Science"
-      },
       {
         "@id": "urn:ngm:class:causal-inference",
         "label": "Causal Inference"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:deterministic-modelling",
-        "label": "Deterministic Modelling"
       }
     ],
     "bridgesTo": [

@@ -125,10 +125,6 @@
       {
         "id": "urn:ngm:class:metrology",
         "label": "Metrology"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-standard",
-        "label": "Cryptographic Standard"
       }
     ]
   },

@@ -18,11 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:gateway-smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Gateway Smart Contract"
       },
       {
-        "id": "urn:ngm:class:axl-token",
+        "id": "urn:ngm:class:token",
         "label": "AXL Token"
       },
       {
@@ -54,7 +54,7 @@
         "label": "Omnichain Application"
       },
       {
-        "id": "urn:ngm:class:cross-chain-dex-aggregation",
+        "id": "urn:ngm:class:cross-chain-dex",
         "label": "Cross-Chain DEX Aggregation"
       },
       {
@@ -107,13 +107,13 @@
         "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:ngm:class:general-message-passing",
+        "id": "urn:ngm:class:message-passing",
         "label": "General Message Passing"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:evm-chain",
+        "id": "urn:ngm:class:evm",
         "label": "EVM Chain"
       },
       {
@@ -128,13 +128,13 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:cosmos-ecosystem",
+        "id": "urn:ngm:class:cosmos",
         "label": "Cosmos Ecosystem"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:blockchain-bridge",
+        "id": "urn:ngm:class:bridge",
         "label": "Blockchain Bridge"
       },
       {

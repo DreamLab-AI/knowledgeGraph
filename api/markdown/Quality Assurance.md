@@ -49,54 +49,141 @@ alias:: QualityAssurance
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:software-testing", "label": "Software Testing"},
-      {"@id": "urn:ngm:class:code-review", "label": "Code Review"},
-      {"@id": "urn:ngm:class:test-automation", "label": "Test Automation"},
-      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"}
+      {
+        "@id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      },
+      {
+        "@id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      },
+      {
+        "@id": "urn:ngm:class:test-automation",
+        "label": "Test Automation"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:requirements-engineering", "label": "Requirements Engineering"},
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
-      {"@id": "urn:ngm:class:data-validation", "label": "Data Validation"}
+      {
+        "@id": "urn:ngm:class:requirements-engineering",
+        "label": "Requirements Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
-      {"@id": "urn:ngm:class:continuous-delivery", "label": "Continuous Delivery"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:model-governance", "label": "Model Governance"}
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:model-governance",
+        "label": "Model Governance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:adversarial-testing", "label": "Adversarial Testing"},
-      {"@id": "urn:ngm:class:regression-testing", "label": "Regression Testing"},
-      {"@id": "urn:ngm:class:static-analysis", "label": "Static Analysis"},
-      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"}
+      {
+        "@id": "urn:ngm:class:adversarial-testing",
+        "label": "Adversarial Testing"
+      },
+      {
+        "@id": "urn:ngm:class:regression-testing",
+        "label": "Regression Testing"
+      },
+      {
+        "@id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"},
-      {"@id": "urn:ngm:class:devops", "label": "DevOps"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:fairness-in-ai", "label": "Fairness in AI"}
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:ai-fairness",
+        "label": "Fairness in AI"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-25010", "label": "ISO-IEC 25010"},
-      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO IEC 42001"},
-      {"@id": "urn:ngm:class:ieee-829", "label": "IEEE 829"}
+      {
+        "@id": "urn:ngm:class:iso-iec-25010",
+        "label": "ISO-IEC 25010"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-829",
+        "label": "IEEE 829"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:quality-control", "label": "Quality Control"}
+      {
+        "@id": "urn:ngm:class:quality-control",
+        "label": "Quality Control"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"},
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"}
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:technical-debt", "label": "Technical Debt"},
-      {"@id": "urn:ngm:class:observability", "label": "Observability"}
+      {
+        "@id": "urn:ngm:class:technical-debt",
+        "label": "Technical Debt"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:qa", "label": "QA"},
-    {"@id": "urn:ngm:class:software-quality-assurance", "label": "Software Quality Assurance"}
+    {
+      "@id": "urn:ngm:class:qa",
+      "label": "QA"
+    },
+    {
+      "@id": "urn:ngm:class:software-quality-assurance",
+      "label": "Software Quality Assurance"
+    }
   ],
   "quality": 0.72,
   "provenance": {

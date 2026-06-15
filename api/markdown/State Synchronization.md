@@ -166,23 +166,19 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:conflict-resolution-engine",
+        "@id": "urn:ngm:class:conflict-resolution",
         "label": "Conflict Resolution Engine"
-      },
-      {
-        "@id": "urn:ngm:class:consistency-protocol",
-        "label": "Consistency Protocol"
       },
       {
         "@id": "urn:ngm:class:delta-compression",
         "label": "Delta Compression"
       },
       {
-        "@id": "urn:ngm:class:state-replication",
+        "@id": "urn:ngm:class:replication",
         "label": "State Replication"
       },
       {
-        "@id": "urn:ngm:class:timestamp-ordering",
+        "@id": "urn:ngm:class:timestamp",
         "label": "Timestamp Ordering"
       }
     ],
@@ -206,7 +202,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:consistent-user-experience",
+        "@id": "urn:ngm:class:user-experience",
         "label": "Consistent User Experience"
       },
       {
@@ -214,19 +210,11 @@ public:: true
         "label": "Distributed Collaboration"
       },
       {
-        "@id": "urn:ngm:class:multiplayer-interaction",
-        "label": "Multiplayer Interaction"
-      },
-      {
         "@id": "urn:ngm:class:shared-virtual-world",
         "label": "Shared Virtual World"
       }
     ],
     "partOf": [
-      {
-        "@id": "urn:ngm:class:multiplayer-infrastructure",
-        "label": "Multiplayer Infrastructure"
-      },
       {
         "@id": "urn:ngm:class:digital-twin-interop-protocol",
         "label": "Digital Twin Interop Protocol"

@@ -112,10 +112,6 @@ public:: true
       {
         "@id": "urn:ngm:class:sparql",
         "label": "SPARQL"
-      },
-      {
-        "@id": "urn:ngm:class:gremlin-traversal-language",
-        "label": "Gremlin Traversal Language"
       }
     ],
     "requires": [
@@ -132,14 +128,6 @@ public:: true
       {
         "@id": "urn:ngm:class:relational-databases",
         "label": "Relational Databases"
-      },
-      {
-        "@id": "urn:ngm:class:document-stores",
-        "label": "Document Stores"
-      },
-      {
-        "@id": "urn:ngm:class:columnar-databases",
-        "label": "Columnar Databases"
       }
     ],
     "bridgesTo": [

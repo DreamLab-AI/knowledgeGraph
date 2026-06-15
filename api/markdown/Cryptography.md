@@ -200,7 +200,7 @@ public:: true
         "label": "Number Theory"
       },
       {
-        "@id": "urn:ngm:class:computational-complexity",
+        "@id": "urn:ngm:class:computational-complexity-theory",
         "label": "Computational Complexity"
       }
     ],
@@ -210,7 +210,7 @@ public:: true
         "label": "Blockchain"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -246,7 +246,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:quantum-computing",
+        "@id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
       },
       {
@@ -283,7 +283,7 @@ public:: true
       "label": "Cryptographic Science"
     }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

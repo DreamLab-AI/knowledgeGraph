@@ -37,57 +37,136 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:lexer", "label": "Lexer"},
-    {"@id": "urn:ngm:class:text-tokeniser", "label": "Text Tokeniser"}
+    {
+      "@id": "urn:ngm:class:lexer",
+      "label": "Lexer"
+    },
+    {
+      "@id": "urn:ngm:class:text-tokeniser",
+      "label": "Text Tokeniser"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:byte-pair-encoding", "label": "Byte Pair Encoding"},
-      {"@id": "urn:ngm:class:wordpiece", "label": "WordPiece"},
-      {"@id": "urn:ngm:class:sentencepiece", "label": "SentencePiece"},
-      {"@id": "urn:ngm:class:unigram-language-model-tokeniser", "label": "Unigram Language Model Tokeniser"}
+      {
+        "@id": "urn:ngm:class:byte-pair-encoding",
+        "label": "Byte Pair Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:wordpiece",
+        "label": "WordPiece"
+      },
+      {
+        "@id": "urn:ngm:class:sentencepiece",
+        "label": "SentencePiece"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:natural-language-processing-pipeline", "label": "Natural Language Processing Pipeline"},
-      {"@id": "urn:ngm:class:language-model-pre-training", "label": "Language Model Pre-Training"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:pre-training",
+        "label": "Language Model Pre-Training"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:vocabulary", "label": "Vocabulary"},
-      {"@id": "urn:ngm:class:unicode-normalisation", "label": "Unicode Normalisation"},
-      {"@id": "urn:ngm:class:text-preprocessing", "label": "Text Preprocessing"}
+      {
+        "@id": "urn:ngm:class:vocabulary",
+        "label": "Vocabulary"
+      },
+      {
+        "@id": "urn:ngm:class:unicode-normalisation",
+        "label": "Unicode Normalisation"
+      },
+      {
+        "@id": "urn:ngm:class:text-preprocessing",
+        "label": "Text Preprocessing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"},
-      {"@id": "urn:ngm:class:machine-translation", "label": "Machine Translation"},
-      {"@id": "urn:ngm:class:multimodal-learning", "label": "Multimodal Learning"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-learning",
+        "label": "Multimodal Learning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:subword-tokenisation", "label": "Subword Tokenisation"},
-      {"@id": "urn:ngm:class:token-embedding", "label": "Token Embedding"}
+      {
+        "@id": "urn:ngm:class:subword-tokenisation",
+        "label": "Subword Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:token-embedding",
+        "label": "Token Embedding"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:multilingual-models", "label": "Multilingual Models"},
-      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"}
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:multilingual-models",
+        "label": "Multilingual Models"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:character-level-model", "label": "Character-Level Model"},
-      {"@id": "urn:ngm:class:word-level-tokenisation", "label": "Word-Level Tokenisation"}
+      {
+        "@id": "urn:ngm:class:character-level-model",
+        "label": "Character-Level Model"
+      },
+      {
+        "@id": "urn:ngm:class:word-level-tokenisation",
+        "label": "Word-Level Tokenisation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:tokeniser-fertility", "label": "Tokeniser Fertility"},
-      {"@id": "urn:ngm:class:context-window", "label": "Context Window"}
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:tokeniser-fertility",
+        "label": "Tokeniser Fertility"
+      },
+      {
+        "@id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ]
   },
   "qualityScore": 0.76,
-  "maturity": "established",
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",

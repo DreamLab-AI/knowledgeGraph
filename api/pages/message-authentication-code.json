@@ -46,14 +46,6 @@
       {
         "id": "urn:ngm:class:hmac",
         "label": "HMAC"
-      },
-      {
-        "id": "urn:ngm:class:cmac",
-        "label": "CMAC"
-      },
-      {
-        "id": "urn:ngm:class:poly1305",
-        "label": "Poly1305"
       }
     ],
     "contrastsWith": [
@@ -92,10 +84,6 @@
       {
         "id": "urn:ngm:class:pseudorandom-function",
         "label": "Pseudorandom Function"
-      },
-      {
-        "id": "urn:ngm:class:shared-secret-key",
-        "label": "Shared Secret Key"
       }
     ],
     "supports": [
@@ -106,10 +94,6 @@
       {
         "id": "urn:ngm:class:ipsec",
         "label": "IPsec"
-      },
-      {
-        "id": "urn:ngm:class:api-authentication",
-        "label": "API Authentication"
       }
     ],
     "standardizedBy": [

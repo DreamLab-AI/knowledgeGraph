@@ -174,14 +174,6 @@ public:: true
       {
         "@id": "urn:ngm:class:ambient-occlusion",
         "label": "Ambient Occlusion"
-      },
-      {
-        "@id": "urn:ngm:class:screen-space-reflections",
-        "label": "Screen-Space Reflections"
-      },
-      {
-        "@id": "urn:ngm:class:temporal-antialiasing",
-        "label": "Temporal Antialiasing"
       }
     ],
     "bridgesTo": [

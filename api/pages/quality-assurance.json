@@ -116,7 +116,7 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:fairness-in-ai",
+        "id": "urn:ngm:class:ai-fairness",
         "label": "Fairness in AI"
       }
     ],

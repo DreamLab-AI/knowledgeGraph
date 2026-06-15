@@ -54,52 +54,117 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"},
-      {"@id": "urn:ngm:class:masked-language-model", "label": "Masked Language Model"},
-      {"@id": "urn:ngm:class:large-scale-corpus", "label": "Large Scale Corpus"}
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:masked-language-model",
+        "label": "Masked Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:large-scale-corpus",
+        "label": "Large Scale Corpus"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:sentiment-analysis", "label": "Sentiment Analysis"},
-      {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"},
-      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
-      {"@id": "urn:ngm:class:text-classification", "label": "Text Classification"},
-      {"@id": "urn:ngm:class:natural-language-inference", "label": "Natural Language Inference"}
+      {
+        "@id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "@id": "urn:ngm:class:text-classification",
+        "label": "Text Classification"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:dynamic-masking", "label": "Dynamic Masking"},
-      {"@id": "urn:ngm:class:byte-pair-encoding", "label": "Byte Pair Encoding"}
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:byte-pair-encoding",
+        "label": "Byte Pair Encoding"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:self-supervised-learning", "label": "Self-Supervised Learning"},
-      {"@id": "urn:ngm:class:pretraining", "label": "Pretraining"}
+      {
+        "@id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:pretraining",
+        "label": "Pretraining"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:bert", "label": "BERT"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+      {
+        "@id": "urn:ngm:class:bert",
+        "label": "BERT"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:glue-benchmark", "label": "GLUE Benchmark"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:glue-benchmark",
+        "label": "GLUE Benchmark"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:albert", "label": "ALBERT"},
-      {"@id": "urn:ngm:class:xlnet", "label": "XLNet"},
-      {"@id": "urn:ngm:class:deberta", "label": "DeBERTa"},
-      {"@id": "urn:ngm:class:distilbert", "label": "DistilBERT"}
+      {
+        "@id": "urn:ngm:class:albert",
+        "label": "ALBERT"
+      },
+      {
+        "@id": "urn:ngm:class:xlnet",
+        "label": "XLNet"
+      },
+      {
+        "@id": "urn:ngm:class:distilbert",
+        "label": "DistilBERT"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:pre-trained-language-model", "label": "Pre-Trained Language Model"},
-      {"@id": "urn:ngm:class:contextual-word-embedding", "label": "Contextual Word Embedding"}
+      {
+        "@id": "urn:ngm:class:pre-trained-language-model",
+        "label": "Pre-Trained Language Model"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:robustly-optimised-bert-pretraining-approach", "label": "Robustly Optimised BERT Pretraining Approach"}
+    {
+      "@id": "urn:ngm:class:robustly-optimised-bert-pretraining-approach",
+      "label": "Robustly Optimised BERT Pretraining Approach"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

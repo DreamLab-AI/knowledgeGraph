@@ -63,14 +63,7 @@ public:: true
       "label": "Augmented Reality"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:social-ar-interaction",
-        "label": "Social AR Interaction"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

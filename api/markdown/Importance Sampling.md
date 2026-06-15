@@ -23,54 +23,113 @@ public:: true
   "definition": "Importance sampling is a variance-reduction technique in Monte Carlo estimation that draws samples from a proposal distribution that concentrates probability mass in regions contributing most to the quantity being estimated, then corrects for the distributional mismatch using importance weights. It is foundational to Bayesian inference, reinforcement learning, path-tracing renderers, and off-policy evaluation. Importance sampling allows tractable estimation of expectations under distributions that are difficult or impossible to sample from directly. Poor choice of proposal distribution can however lead to high-variance or even infinite-variance estimators, necessitating careful design.",
   "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:monte-carlo-methods", "label": "Monte Carlo Methods"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:monte-carlo-methods",
+      "label": "Monte Carlo Methods"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:sampling", "label": "Sampling"},
-      {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"},
-      {"@id": "urn:ngm:class:variational-inference", "label": "Variational Inference"},
-      {"@id": "urn:ngm:class:proposal-distribution", "label": "Proposal Distribution"},
-      {"@id": "urn:ngm:class:importance-weights", "label": "Importance Weights"}
+      {
+        "@id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "@id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "@id": "urn:ngm:class:proposal-distribution",
+        "label": "Proposal Distribution"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:off-policy-evaluation", "label": "Off-Policy Evaluation"},
-      {"@id": "urn:ngm:class:variance-reduction", "label": "Variance Reduction"},
-      {"@id": "urn:ngm:class:prioritised-experience-replay", "label": "Prioritised Experience Replay"}
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:variance-reduction",
+        "label": "Variance Reduction"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:probability-distribution", "label": "Probability Distribution"},
-      {"@id": "urn:ngm:class:expectation-estimation", "label": "Expectation Estimation"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:self-normalised-importance-sampling", "label": "Self-Normalised Importance Sampling"},
-      {"@id": "urn:ngm:class:multiple-importance-sampling", "label": "Multiple Importance Sampling"}
+      {
+        "@id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:policy-gradient-methods", "label": "Policy Gradient Methods"},
-      {"@id": "urn:ngm:class:sequential-monte-carlo", "label": "Sequential Monte Carlo"}
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:policy-gradient-methods",
+        "label": "Policy Gradient Methods"
+      },
+      {
+        "@id": "urn:ngm:class:sequential-monte-carlo",
+        "label": "Sequential Monte Carlo"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:monte-carlo-tree-search", "label": "Monte Carlo Tree Search"},
-      {"@id": "urn:ngm:class:optimization-algorithm", "label": "Optimization Algorithm"},
-      {"@id": "urn:ngm:class:state-estimation", "label": "State Estimation"},
-      {"@id": "urn:ngm:class:markov-chain-monte-carlo", "label": "Markov Chain Monte Carlo"},
-      {"@id": "urn:ngm:class:effective-sample-size", "label": "Effective Sample Size"}
+      {
+        "@id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      },
+      {
+        "@id": "urn:ngm:class:optimization-algorithm",
+        "label": "Optimization Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "@id": "urn:ngm:class:effective-sample-size",
+        "label": "Effective Sample Size"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rejection-sampling", "label": "Rejection Sampling"},
-      {"@id": "urn:ngm:class:uniform-sampling", "label": "Uniform Sampling"}
+      {
+        "@id": "urn:ngm:class:rejection-sampling",
+        "label": "Rejection Sampling"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:path-tracing", "label": "Path Tracing"},
-      {"@id": "urn:ngm:class:particle-filter", "label": "Particle Filter"}
+      {
+        "@id": "urn:ngm:class:path-tracing",
+        "label": "Path Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:weighted-sampling", "label": "Weighted Sampling"},
-    {"@id": "urn:ngm:class:likelihood-ratio-estimation", "label": "Likelihood Ratio Estimation"}
+    {
+      "@id": "urn:ngm:class:weighted-sampling",
+      "label": "Weighted Sampling"
+    },
+    {
+      "@id": "urn:ngm:class:likelihood-ratio-estimation",
+      "label": "Likelihood Ratio Estimation"
+    }
   ],
   "quality": 0.8,
   "provenance": {

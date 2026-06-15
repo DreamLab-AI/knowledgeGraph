@@ -16,33 +16,16 @@
   "qualityScore": 0.74,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:zigbee-coordinator",
-        "label": "Zigbee Coordinator"
-      },
-      {
-        "id": "urn:ngm:class:zigbee-router",
-        "label": "Zigbee Router"
-      },
-      {
-        "id": "urn:ngm:class:zigbee-end-device",
-        "label": "Zigbee End Device"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:ieee-802-15-4",
         "label": "IEEE 802.15.4"
-      },
-      {
-        "id": "urn:ngm:class:aes-128",
-        "label": "AES-128"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:home-automation",
+        "id": "urn:ngm:class:automation",
         "label": "Home Automation"
       },
       {
@@ -70,11 +53,11 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:mesh-routing",
+        "id": "urn:ngm:class:mesh-routing-software",
         "label": "Mesh Routing"
       },
       {
-        "id": "urn:ngm:class:aodv-routing",
+        "id": "urn:ngm:class:routing-protocol",
         "label": "AODV Routing"
       }
     ],
@@ -90,19 +73,11 @@
       {
         "id": "urn:ngm:class:thread-protocol",
         "label": "Thread Protocol"
-      },
-      {
-        "id": "urn:ngm:class:wi-fi-halow",
-        "label": "Wi-Fi HaLow"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:ip-networking",
-        "label": "IP Networking"
-      },
-      {
-        "id": "urn:ngm:class:cloud-iot-platform",
+        "id": "urn:ngm:class:cloud-platform",
         "label": "Cloud IoT Platform"
       }
     ],
@@ -110,10 +85,6 @@
       {
         "id": "urn:ngm:class:aes-encryption",
         "label": "AES Encryption"
-      },
-      {
-        "id": "urn:ngm:class:direct-sequence-spread-spectrum",
-        "label": "Direct Sequence Spread Spectrum"
       },
       {
         "id": "urn:ngm:class:csma-ca",
@@ -132,17 +103,13 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:connectivity-standards-alliance",
-        "label": "Connectivity Standards Alliance"
-      },
-      {
         "id": "urn:ngm:class:ieee",
         "label": "IEEE"
       }
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:iot-protocol-stack",
+        "id": "urn:ngm:class:protocol-stack",
         "label": "IoT Protocol Stack"
       }
     ],
@@ -156,7 +123,7 @@
         "label": "Smart Home"
       },
       {
-        "id": "urn:ngm:class:industrial-iot",
+        "id": "urn:ngm:class:industrial-io-t",
         "label": "Industrial IoT"
       },
       {

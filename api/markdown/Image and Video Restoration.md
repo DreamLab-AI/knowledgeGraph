@@ -362,7 +362,7 @@ public:: true
         "label": "Face Restoration Module"
       },
       {
-        "@id": "urn:ngm:class:inpainting-model",
+        "@id": "urn:ngm:class:inpainting",
         "label": "Inpainting Model"
       },
       {
@@ -374,7 +374,7 @@ public:: true
         "label": "Quality Assessment Metric"
       },
       {
-        "@id": "urn:ngm:class:super-resolution-model",
+        "@id": "urn:ngm:class:super-resolution",
         "label": "Super-Resolution Model"
       }
     ],
@@ -432,40 +432,16 @@ public:: true
         "label": "CodeFormer"
       },
       {
-        "@id": "urn:ngm:class:dif-face",
-        "label": "DifFace"
-      },
-      {
-        "@id": "urn:ngm:class:dn-cnn",
-        "label": "DnCNN"
-      },
-      {
         "@id": "urn:ngm:class:gfpgan",
         "label": "GFPGAN"
-      },
-      {
-        "@id": "urn:ngm:class:la-ma-inpainting",
-        "label": "LaMa Inpainting"
-      },
-      {
-        "@id": "urn:ngm:class:nafnet",
-        "label": "NAFNet"
       },
       {
         "@id": "urn:ngm:class:real-esrgan",
         "label": "Real-ESRGAN"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion-image-model-inpaint",
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion Inpaint"
-      },
-      {
-        "@id": "urn:ngm:class:stable-sr",
-        "label": "StableSR"
-      },
-      {
-        "@id": "urn:ngm:class:swin-ir",
-        "label": "SwinIR"
       }
     ],
     "uses": [
@@ -530,7 +506,7 @@ public:: true
         "label": "Cultural Heritage Preservation"
       },
       {
-        "@id": "urn:ngm:class:film-and-television-production",
+        "@id": "urn:ngm:class:film-production",
         "label": "Film and Television Production"
       },
       {
@@ -566,14 +542,6 @@ public:: true
       {
         "@id": "urn:ngm:class:neur-ips",
         "label": "NeurIPS"
-      },
-      {
-        "@id": "urn:ngm:class:ntire-workshop",
-        "label": "NTIRE Workshop"
-      },
-      {
-        "@id": "urn:ngm:class:pirm-challenge",
-        "label": "PIRM Challenge"
       }
     ],
     "bridgesTo": [

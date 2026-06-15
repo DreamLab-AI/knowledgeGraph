@@ -22,12 +22,7 @@
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [
-      {
-        "id": "urn:ngm:class:cross-platform-avatars",
-        "label": "Cross-Platform Avatars"
-      }
-    ],
+    "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],

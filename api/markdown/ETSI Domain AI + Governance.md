@@ -85,16 +85,6 @@ alias:: ETSI Domain AI Governance
         "label": "Artificial Intelligence"
       }
     ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:ai-ethics-classification",
-        "label": "AI Ethics Classification"
-      },
-      {
-        "@id": "urn:ngm:class:explainability-categorization",
-        "label": "Explainability Categorization"
-      }
-    ],
     "partOf": [
       {
         "@id": "urn:ngm:class:etsi-domain-taxonomy",

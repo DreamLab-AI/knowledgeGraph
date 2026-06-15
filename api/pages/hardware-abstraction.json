@@ -22,17 +22,13 @@
         "label": "Hardware Abstraction Layer (HAL)"
       },
       {
-        "id": "urn:ngm:class:device-driver",
+        "id": "urn:ngm:class:device-drivers",
         "label": "Device Driver"
-      },
-      {
-        "id": "urn:ngm:class:firmware-interface",
-        "label": "Firmware Interface"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:device-driver",
+        "id": "urn:ngm:class:device-drivers",
         "label": "Device Driver"
       },
       {
@@ -77,10 +73,6 @@
       {
         "id": "urn:ngm:class:bare-metal-programming",
         "label": "Bare-Metal Programming"
-      },
-      {
-        "id": "urn:ngm:class:hardware-specific-optimisation",
-        "label": "Hardware-Specific Optimisation"
       }
     ],
     "bridgesTo": [
@@ -109,10 +101,6 @@
       {
         "id": "urn:ngm:class:system-call-interface",
         "label": "System Call Interface"
-      },
-      {
-        "id": "urn:ngm:class:unified-extensible-firmware-interface",
-        "label": "Unified Extensible Firmware Interface"
       }
     ],
     "supports": [
@@ -130,21 +118,8 @@
       }
     ],
     "standardizedBy": [],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:operating-system-architecture",
-        "label": "Operating System Architecture"
-      },
-      {
-        "id": "urn:ngm:class:system-software-stack",
-        "label": "System Software Stack"
-      }
-    ],
+    "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:software-abstraction",
-        "label": "Software Abstraction"
-      },
       {
         "id": "urn:ngm:class:hardware",
         "label": "Hardware"
@@ -152,10 +127,6 @@
       {
         "id": "urn:ngm:class:memory-management",
         "label": "Memory Management"
-      },
-      {
-        "id": "urn:ngm:class:interrupt-handling",
-        "label": "Interrupt Handling"
       }
     ]
   },

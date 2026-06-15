@@ -134,10 +134,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:remediation-process",
-        "label": "Remediation Process"
-      },
-      {
         "@id": "urn:ngm:class:user-monitoring",
         "label": "User Monitoring"
       },
@@ -160,37 +156,17 @@ public:: true
         "label": "Monitoring System"
       },
       {
-        "@id": "urn:ngm:class:user-agreement",
-        "label": "User Agreement"
-      },
-      {
         "@id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:platform-safety",
-        "label": "Platform Safety"
-      },
-      {
-        "@id": "urn:ngm:class:policy-adherence",
-        "label": "Policy Adherence"
-      },
-      {
-        "@id": "urn:ngm:class:user-accountability",
-        "label": "User Accountability"
-      },
-      {
         "@id": "urn:ngm:class:risk-mitigation",
         "label": "Risk Mitigation"
       }
     ],
     "partOf": [
-      {
-        "@id": "urn:ngm:class:platform-management",
-        "label": "Platform Management"
-      },
       {
         "@id": "urn:ngm:class:governance-framework",
         "label": "Governance Framework"

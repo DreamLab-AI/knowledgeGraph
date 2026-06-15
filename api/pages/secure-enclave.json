@@ -94,7 +94,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       },
       {
@@ -124,7 +124,7 @@
         "label": "Intel SGX"
       },
       {
-        "id": "urn:ngm:class:arm-trustzone",
+        "id": "urn:ngm:class:arm-trust-zone",
         "label": "ARM TrustZone"
       },
       {

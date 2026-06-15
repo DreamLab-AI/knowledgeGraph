@@ -74,7 +74,7 @@ public:: true
         "label": "AI Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:edge-computing-stack",
+        "@id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing Stack"
       }
     ],
@@ -98,7 +98,7 @@ public:: true
         "label": "Edge AI"
       },
       {
-        "@id": "urn:ngm:class:large-language-model-serving",
+        "@id": "urn:ngm:class:model-serving",
         "label": "Large Language Model Serving"
       },
       {
@@ -108,7 +108,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:machine-learning-model",
+        "@id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
       },
       {
@@ -118,11 +118,11 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:asic-design",
+        "@id": "urn:ngm:class:asic",
         "label": "ASIC Design"
       },
       {
-        "@id": "urn:ngm:class:fpga-acceleration",
+        "@id": "urn:ngm:class:fpga",
         "label": "FPGA Acceleration"
       }
     ],
@@ -146,15 +146,11 @@ public:: true
         "label": "Training Hardware"
       },
       {
-        "@id": "urn:ngm:class:general-purpose-gpu",
+        "@id": "urn:ngm:class:gpu",
         "label": "General-Purpose GPU"
       }
     ],
     "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:spatial-computing-hardware",
-        "label": "Spatial Computing Hardware"
-      },
       {
         "@id": "urn:ngm:class:autonomous-robotics",
         "label": "Autonomous Robotics"

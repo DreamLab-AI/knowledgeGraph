@@ -68,10 +68,6 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
-      },
-      {
-        "id": "urn:ngm:class:multi-tenant-architecture",
-        "label": "Multi-Tenant Architecture"
       }
     ],
     "dependsOn": [
@@ -106,7 +102,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:ai-inference-service",
+        "id": "urn:ngm:class:ai-inference",
         "label": "AI Inference Service"
       },
       {
@@ -134,7 +130,7 @@
         "label": "Observability"
       },
       {
-        "id": "urn:ngm:class:horizontal-scaling",
+        "id": "urn:ngm:class:horizontal-scalability",
         "label": "Horizontal Scaling"
       }
     ],
@@ -160,7 +156,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:serverless-computing",
+        "id": "urn:ngm:class:serverless-architecture",
         "label": "Serverless Computing"
       },
       {

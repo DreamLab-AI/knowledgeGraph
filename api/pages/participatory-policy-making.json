@@ -18,12 +18,7 @@
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [
-      {
-        "id": "urn:ngm:class:policy-legitimacy",
-        "label": "Policy Legitimacy"
-      }
-    ],
+    "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],

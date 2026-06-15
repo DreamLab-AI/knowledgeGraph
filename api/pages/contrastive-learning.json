@@ -20,18 +20,6 @@
       {
         "id": "urn:ngm:class:infonce-loss",
         "label": "InfoNCE Loss"
-      },
-      {
-        "id": "urn:ngm:class:positive-pair",
-        "label": "Positive Pair"
-      },
-      {
-        "id": "urn:ngm:class:negative-pair",
-        "label": "Negative Pair"
-      },
-      {
-        "id": "urn:ngm:class:projection-head",
-        "label": "Projection Head"
       }
     ],
     "requires": [
@@ -40,7 +28,7 @@
         "label": "Data Augmentation"
       },
       {
-        "id": "urn:ngm:class:encoder-network",
+        "id": "urn:ngm:class:encoder",
         "label": "Encoder Network"
       },
       {
@@ -77,10 +65,6 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:simclr",
-        "label": "SimCLR"
-      },
-      {
         "id": "urn:ngm:class:momentum-contrast",
         "label": "Momentum Contrast"
       },
@@ -104,10 +88,6 @@
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:multimodal-foundation-model",
-        "label": "Multimodal Foundation Model"
-      },
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"

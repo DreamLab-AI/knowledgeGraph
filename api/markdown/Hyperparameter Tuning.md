@@ -23,53 +23,135 @@ public:: true
   "definition": "Hyperparameter tuning is the systematic process of searching over the configuration space of parameters that govern the training process of a machine learning model — distinct from the learnable parameters updated during training itself. Common hyperparameters include learning rate, batch size, network depth and width, regularisation coefficients, dropout rate, optimiser choice, and architectural decisions such as kernel size or number of attention heads. The tuning process employs search strategies — including grid search, random search, Bayesian optimisation, population-based methods, and evolutionary algorithms — to identify configurations that maximise model performance on a held-out validation set while controlling for overfitting. Efficient hyperparameter optimisation is critical to practical machine learning deployment because model generalisation is often highly sensitive to these configuration choices, and naive exhaustive search is computationally intractable in high-dimensional spaces.",
   "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
-      {"@id": "urn:ngm:class:auto-ml", "label": "AutoML"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:auto-ml",
+        "label": "AutoML"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:validation-set", "label": "Validation Set"},
-      {"@id": "urn:ngm:class:cross-validation", "label": "Cross-Validation"},
-      {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"}
+      {
+        "@id": "urn:ngm:class:validation-set",
+        "label": "Validation Set"
+      },
+      {
+        "@id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:bayesian-optimisation", "label": "Bayesian Optimisation"},
-      {"@id": "urn:ngm:class:gaussian-process", "label": "Gaussian Process"},
-      {"@id": "urn:ngm:class:random-search", "label": "Random Search"},
-      {"@id": "urn:ngm:class:grid-search", "label": "Grid Search"},
-      {"@id": "urn:ngm:class:evolutionary-algorithm", "label": "Evolutionary Algorithm"}
+      {
+        "@id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "@id": "urn:ngm:class:random-search",
+        "label": "Random Search"
+      },
+      {
+        "@id": "urn:ngm:class:grid-search",
+        "label": "Grid Search"
+      },
+      {
+        "@id": "urn:ngm:class:evolutionary-algorithm",
+        "label": "Evolutionary Algorithm"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-generalisation", "label": "Model Generalisation"},
-      {"@id": "urn:ngm:class:neural-architecture-search", "label": "Neural Architecture Search"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:model-generalisation",
+        "label": "Model Generalisation"
+      },
+      {
+        "@id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:objective-function", "label": "Objective Function"},
-      {"@id": "urn:ngm:class:early-stopping", "label": "Early Stopping"},
-      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"}
+      {
+        "@id": "urn:ngm:class:objective-function",
+        "label": "Objective Function"
+      },
+      {
+        "@id": "urn:ngm:class:early-stopping",
+        "label": "Early Stopping"
+      },
+      {
+        "@id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"},
-      {"@id": "urn:ngm:class:manual-feature-engineering", "label": "Manual Feature Engineering"}
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Manual Feature Engineering"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:meta-learning", "label": "Meta-Learning"},
-      {"@id": "urn:ngm:class:experiment-tracking", "label": "Experiment Tracking"},
-      {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"},
-      {"@id": "urn:ngm:class:machine-learning-optimisation", "label": "Machine Learning Optimisation"}
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:meta-learning",
+        "label": "Meta-Learning"
+      },
+      {
+        "@id": "urn:ngm:class:experiment-tracking",
+        "label": "Experiment Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:hyperparameter-optimisation", "label": "Hyperparameter Optimisation"},
-    {"@id": "urn:ngm:class:model-selection", "label": "Model Selection"}
+    {
+      "@id": "urn:ngm:class:hyperparameter-optimisation",
+      "label": "Hyperparameter Optimisation"
+    },
+    {
+      "@id": "urn:ngm:class:model-selection",
+      "label": "Model Selection"
+    }
   ],
   "quality": 0.74,
   "provenance": {

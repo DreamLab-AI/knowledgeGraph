@@ -18,21 +18,13 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:environmental-criteria",
-        "label": "Environmental Criteria"
-      },
-      {
-        "id": "urn:ngm:class:social-criteria",
-        "label": "Social Criteria"
-      },
-      {
         "id": "urn:ngm:class:corporate-governance",
         "label": "Corporate Governance"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:esg-data-disclosure",
+        "id": "urn:ngm:class:esg",
         "label": "ESG Data Disclosure"
       },
       {
@@ -42,7 +34,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:green-bond",
+        "id": "urn:ngm:class:green-bond-market",
         "label": "Green Bond"
       },
       {
@@ -56,12 +48,8 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:esg-rating",
+        "id": "urn:ngm:class:esg",
         "label": "ESG Rating"
-      },
-      {
-        "id": "urn:ngm:class:non-financial-reporting",
-        "label": "Non-Financial Reporting"
       }
     ],
     "implements": [],
@@ -85,17 +73,17 @@
         "label": "Decentralised Autonomous Organisation"
       },
       {
-        "id": "urn:ngm:class:carbon-credit",
+        "id": "urn:ngm:class:carbon-credits",
         "label": "Carbon Credit"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:portfolio-screening",
+        "id": "urn:ngm:class:sanctions-screening",
         "label": "Portfolio Screening"
       },
       {
-        "id": "urn:ngm:class:proxy-voting",
+        "id": "urn:ngm:class:on-chain-voting",
         "label": "Proxy Voting"
       },
       {
@@ -149,10 +137,6 @@
       {
         "id": "urn:ngm:class:sustainability",
         "label": "Sustainability"
-      },
-      {
-        "id": "urn:ngm:class:socially-responsible-investing",
-        "label": "Socially Responsible Investing"
       }
     ]
   },

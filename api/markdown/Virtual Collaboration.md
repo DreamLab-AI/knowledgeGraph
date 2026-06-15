@@ -153,7 +153,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:distributed-team",
+        "@id": "urn:ngm:class:distributed-teams",
         "label": "Distributed Team"
       },
       {

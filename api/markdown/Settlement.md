@@ -68,20 +68,12 @@ public:: true
       {
         "@id": "urn:ngm:class:delivery-versus-payment",
         "label": "Delivery-Versus-Payment"
-      },
-      {
-        "@id": "urn:ngm:class:netting",
-        "label": "Netting"
       }
     ],
     "partOf": [
       {
         "@id": "urn:ngm:class:financial-infrastructure",
         "label": "Financial Infrastructure"
-      },
-      {
-        "@id": "urn:ngm:class:post-trade-processing",
-        "label": "Post-Trade Processing"
       }
     ],
     "requires": [
@@ -90,7 +82,7 @@ public:: true
         "label": "Clearing"
       },
       {
-        "@id": "urn:ngm:class:counterparty-risk-management",
+        "@id": "urn:ngm:class:risk-management",
         "label": "Counterparty Risk Management"
       },
       {
@@ -108,7 +100,7 @@ public:: true
         "label": "Cross-Border Settlement"
       },
       {
-        "@id": "urn:ngm:class:securities-transfer",
+        "@id": "urn:ngm:class:securities-settlement",
         "label": "Securities Transfer"
       }
     ],

@@ -62,52 +62,129 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:department-of-computer-science", "label": "Department of Computer Science"},
-      {"@id": "urn:ngm:class:alan-turing-institute", "label": "Alan Turing Institute"},
-      {"@id": "urn:ngm:class:manchester-institute-of-biotechnology", "label": "Manchester Institute of Biotechnology"}
+      {
+        "@id": "urn:ngm:class:computer-science",
+        "label": "Department of Computer Science"
+      },
+      {
+        "@id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:russell-group", "label": "Russell Group"},
-      {"@id": "urn:ngm:class:n8-research-partnership", "label": "N8 Research Partnership"}
+      {
+        "@id": "urn:ngm:class:russell-group",
+        "label": "Russell Group"
+      },
+      {
+        "@id": "urn:ngm:class:n8-research-partnership",
+        "label": "N8 Research Partnership"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:research-funding", "label": "Research Funding"},
-      {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"}
+      {
+        "@id": "urn:ngm:class:research-funding",
+        "label": "Research Funding"
+      },
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-research", "label": "Machine Learning Research"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:machine-learning-research",
+        "label": "Machine Learning Research"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:graphene", "label": "Graphene"},
-      {"@id": "urn:ngm:class:stored-program-computer", "label": "Stored-Program Computer"}
+      {
+        "@id": "urn:ngm:class:graphene",
+        "label": "Graphene"
+      },
+      {
+        "@id": "urn:ngm:class:stored-program-computer",
+        "label": "Stored-Program Computer"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:open-science", "label": "Open Science"},
-      {"@id": "urn:ngm:class:technology-transfer", "label": "Technology Transfer"},
-      {"@id": "urn:ngm:class:data-science", "label": "Data Science"}
+      {
+        "@id": "urn:ngm:class:open-science",
+        "label": "Open Science"
+      },
+      {
+        "@id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:research-university", "label": "Research University"},
-      {"@id": "urn:ngm:class:university-of-cambridge", "label": "University of Cambridge"},
-      {"@id": "urn:ngm:class:imperial-college-london", "label": "Imperial College London"},
-      {"@id": "urn:ngm:class:university-of-edinburgh", "label": "University of Edinburgh"},
-      {"@id": "urn:ngm:class:alan-turing", "label": "Alan Turing"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:research-university",
+        "label": "Research University"
+      },
+      {
+        "@id": "urn:ngm:class:university-of-cambridge",
+        "label": "University of Cambridge"
+      },
+      {
+        "@id": "urn:ngm:class:imperial-college-london",
+        "label": "Imperial College London"
+      },
+      {
+        "@id": "urn:ngm:class:university-of-edinburgh",
+        "label": "University of Edinburgh"
+      },
+      {
+        "@id": "urn:ngm:class:alan-turing",
+        "label": "Alan Turing"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:private-research-institution", "label": "Private Research Institution"}
+      {
+        "@id": "urn:ngm:class:private-research-institution",
+        "label": "Private Research Institution"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:uom", "label": "UoM"},
-    {"@id": "urn:ngm:class:victoria-university-of-manchester", "label": "Victoria University of Manchester"}
+    {
+      "@id": "urn:ngm:class:uom",
+      "label": "UoM"
+    },
+    {
+      "@id": "urn:ngm:class:victoria-university-of-manchester",
+      "label": "Victoria University of Manchester"
+    }
   ],
   "quality": 0.74,
   "provenance": {

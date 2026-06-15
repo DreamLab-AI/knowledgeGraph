@@ -92,10 +92,6 @@ public:: true
       {
         "@id": "urn:ngm:class:nonlinearity",
         "label": "Nonlinearity"
-      },
-      {
-        "@id": "urn:ngm:class:derivative",
-        "label": "Derivative"
       }
     ],
     "requires": [
@@ -124,10 +120,6 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:weighted-sum",
-        "label": "Weighted Sum"
-      },
-      {
         "@id": "urn:ngm:class:neuron",
         "label": "Neuron"
       }
@@ -150,16 +142,6 @@ public:: true
       {
         "@id": "urn:ngm:class:recurrent-neural-network",
         "label": "Recurrent Neural Network"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:linear-activation",
-        "label": "Linear Activation"
-      },
-      {
-        "@id": "urn:ngm:class:step-function",
-        "label": "Step Function"
       }
     ],
     "relatedTo": [

@@ -79,55 +79,133 @@ public:: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:multi-head-attention", "label": "Multi-Head Attention"}
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:multi-head-attention",
+        "label": "Multi-Head Attention"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:scaled-dot-product-attention", "label": "Scaled Dot Product Attention"},
-      {"@id": "urn:ngm:class:query-key-value-projection", "label": "Query-Key-Value Projection"}
+      {
+        "@id": "urn:ngm:class:scaled-dot-product-attention",
+        "label": "Scaled Dot Product Attention"
+      },
+      {
+        "@id": "urn:ngm:class:query-key-value",
+        "label": "Query-Key-Value Projection"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:positional-encoding", "label": "Positional Encoding"},
-      {"@id": "urn:ngm:class:input-embeddings", "label": "Input Embeddings"}
+      {
+        "@id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:embeddings",
+        "label": "Input Embeddings"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:vision-transformer", "label": "Vision Transformer"},
-      {"@id": "urn:ngm:class:sequence-to-sequence-learning", "label": "Sequence-to-Sequence Learning"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:sequence-to-sequence-learning",
+        "label": "Sequence-to-Sequence Learning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:matrix-multiplication", "label": "Matrix Multiplication"},
-      {"@id": "urn:ngm:class:softmax-function", "label": "Softmax Function"}
+      {
+        "@id": "urn:ngm:class:matrix-multiplication",
+        "label": "Matrix Multiplication"
+      },
+      {
+        "@id": "urn:ngm:class:softmax-function",
+        "label": "Softmax Function"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:weight-matrix", "label": "Weight Matrix"},
-      {"@id": "urn:ngm:class:feed-forward-neural-network", "label": "Feed-Forward Neural Network"}
+      {
+        "@id": "urn:ngm:class:weight-matrix",
+        "label": "Weight Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:feedforward-neural-network",
+        "label": "Feed-Forward Neural Network"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:parallel-computation", "label": "Parallel Computation"},
-      {"@id": "urn:ngm:class:long-range-dependency-modelling", "label": "Long-Range Dependency Modelling"}
+      {
+        "@id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computation"
+      },
+      {
+        "@id": "urn:ngm:class:long-range-dependency-modelling",
+        "label": "Long-Range Dependency Modelling"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"},
-      {"@id": "urn:ngm:class:state-space-model", "label": "State Space Model"},
-      {"@id": "urn:ngm:class:cross-attention", "label": "Cross Attention"}
+      {
+        "@id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:state-space-model",
+        "label": "State Space Model"
+      },
+      {
+        "@id": "urn:ngm:class:cross-attention",
+        "label": "Cross Attention"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:graph-attention-network", "label": "Graph Attention Network"}
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:graph-attention-network",
+        "label": "Graph Attention Network"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:bioinformatics", "label": "Bioinformatics"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:bioinformatics",
+        "label": "Bioinformatics"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:intra-sequence-attention", "label": "Intra-Sequence Attention"}
+    {
+      "@id": "urn:ngm:class:intra-sequence-attention",
+      "label": "Intra-Sequence Attention"
+    }
   ],
   "quality": 0.72,
   "provenance": {

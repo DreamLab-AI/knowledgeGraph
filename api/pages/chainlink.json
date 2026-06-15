@@ -24,18 +24,6 @@
       {
         "id": "urn:ngm:class:chainlink-ccip",
         "label": "Chainlink CCIP"
-      },
-      {
-        "id": "urn:ngm:class:chainlink-vrf",
-        "label": "Chainlink VRF"
-      },
-      {
-        "id": "urn:ngm:class:chainlink-automation",
-        "label": "Chainlink Automation"
-      },
-      {
-        "id": "urn:ngm:class:chainlink-functions",
-        "label": "Chainlink Functions"
       }
     ],
     "requires": [
@@ -60,14 +48,6 @@
       {
         "id": "urn:ngm:class:cross-chain-interoperability",
         "label": "Cross-Chain Interoperability"
-      },
-      {
-        "id": "urn:ngm:class:on-chain-automation",
-        "label": "On-Chain Automation"
-      },
-      {
-        "id": "urn:ngm:class:verifiable-randomness",
-        "label": "Verifiable Randomness"
       }
     ],
     "dependsOn": [
@@ -85,20 +65,7 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:pyth-network",
-        "label": "Pyth Network"
-      },
-      {
-        "id": "urn:ngm:class:band-protocol",
-        "label": "Band Protocol"
-      },
-      {
-        "id": "urn:ngm:class:api3",
-        "label": "API3"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:traditional-finance",
@@ -107,10 +74,6 @@
       {
         "id": "urn:ngm:class:internet-of-things",
         "label": "Internet of Things"
-      },
-      {
-        "id": "urn:ngm:class:enterprise-data-integration",
-        "label": "Enterprise Data Integration"
       }
     ],
     "uses": [
@@ -119,12 +82,8 @@
         "label": "Off-Chain Reporting"
       },
       {
-        "id": "urn:ngm:class:threshold-signature",
+        "id": "urn:ngm:class:threshold-signature-scheme",
         "label": "Threshold Signature"
-      },
-      {
-        "id": "urn:ngm:class:decentralized-computing",
-        "label": "Decentralized Computing"
       }
     ],
     "supports": [
@@ -158,7 +117,7 @@
         "label": "Cross-Chain Messaging"
       },
       {
-        "id": "urn:ngm:class:decentralized-autonomous-organisation",
+        "id": "urn:ngm:class:decentralized-autonomous-organization",
         "label": "Decentralised Autonomous Organisation"
       }
     ]

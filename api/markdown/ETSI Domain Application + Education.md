@@ -82,10 +82,6 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:education-application-classification",
-        "label": "Education Application Classification"
-      },
-      {
         "@id": "urn:ngm:class:learning-platform-categorization",
         "label": "Learning Platform Categorization"
       }

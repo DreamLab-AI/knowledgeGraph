@@ -110,10 +110,6 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:bias-compensation",
-        "label": "Bias Compensation"
-      },
-      {
         "@id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
       }
@@ -122,21 +118,9 @@ public:: true
       {
         "@id": "urn:ngm:class:balance-control",
         "label": "Balance Control"
-      },
-      {
-        "@id": "urn:ngm:class:drone-stabilisation",
-        "label": "Drone Stabilisation"
-      },
-      {
-        "@id": "urn:ngm:class:orientation-reference",
-        "label": "Orientation Reference"
       }
     ],
     "partOf": [
-      {
-        "@id": "urn:ngm:class:attitude-determination",
-        "label": "Attitude Determination"
-      },
       {
         "@id": "urn:ngm:class:inertial-measurement-unit",
         "label": "Inertial Measurement Unit"
@@ -149,7 +133,10 @@ public:: true
       }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:sensor", "label": "Sensor"}
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
     ]
   },
   "quality": 0.56,

@@ -150,16 +150,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:lineage-tracker",
+        "@id": "urn:ngm:class:data-lineage-tracking",
         "label": "Lineage Tracker"
       },
       {
-        "@id": "urn:ngm:class:provenance-recorder",
+        "@id": "urn:ngm:class:provenance",
         "label": "Provenance Recorder"
-      },
-      {
-        "@id": "urn:ngm:class:signature-validator",
-        "label": "Signature Validator"
       },
       {
         "@id": "urn:ngm:class:timestamp-service",
@@ -194,7 +190,7 @@ public:: true
         "label": "Compliance Audit"
       },
       {
-        "@id": "urn:ngm:class:data-quality-assessment",
+        "@id": "urn:ngm:class:data-quality",
         "label": "Data Quality Assessment"
       },
       {

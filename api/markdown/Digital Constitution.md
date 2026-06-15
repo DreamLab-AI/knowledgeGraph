@@ -182,28 +182,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:amendment-procedure",
-        "label": "Amendment Procedure"
-      },
-      {
-        "@id": "urn:ngm:class:bill-of-rights",
-        "label": "Bill of Rights"
-      },
-      {
-        "@id": "urn:ngm:class:checks-and-balances",
-        "label": "Checks and Balances"
-      },
-      {
-        "@id": "urn:ngm:class:constitutional-rights",
-        "label": "Constitutional Rights"
-      },
-      {
         "@id": "urn:ngm:class:enforcement-mechanism",
         "label": "Enforcement Mechanism"
-      },
-      {
-        "@id": "urn:ngm:class:judicial-system",
-        "label": "Judicial System"
       },
       {
         "@id": "urn:ngm:class:digital-citizenship",
@@ -237,10 +217,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:legitimate-authority",
-        "label": "Legitimate Authority"
-      },
       {
         "@id": "urn:ngm:class:rights-protection",
         "label": "Rights Protection"

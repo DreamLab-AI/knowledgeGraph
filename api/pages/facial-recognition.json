@@ -19,10 +19,6 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:face-detection",
-        "label": "Face Detection"
-      },
-      {
         "id": "urn:ngm:class:image-preprocessing",
         "label": "Image Preprocessing"
       },
@@ -47,10 +43,6 @@
       {
         "id": "urn:ngm:class:surveillance",
         "label": "Surveillance"
-      },
-      {
-        "id": "urn:ngm:class:border-control",
-        "label": "Border Control"
       }
     ],
     "dependsOn": [],
@@ -59,10 +51,6 @@
       {
         "id": "urn:ngm:class:deepfake-detection",
         "label": "Deepfake Detection"
-      },
-      {
-        "id": "urn:ngm:class:fingerprint-recognition",
-        "label": "Fingerprint Recognition"
       },
       {
         "id": "urn:ngm:class:iris-recognition",
@@ -97,11 +85,7 @@
         "label": "Camera"
       },
       {
-        "id": "urn:ngm:class:face-embedding",
-        "label": "Face Embedding"
-      },
-      {
-        "id": "urn:ngm:class:approximate-nearest-neighbour-search",
+        "id": "urn:ngm:class:nearest-neighbor-search",
         "label": "Approximate Nearest Neighbour Search"
       }
     ],
@@ -110,10 +94,6 @@
       {
         "id": "urn:ngm:class:iso-iec-19794",
         "label": "ISO/IEC 19794"
-      },
-      {
-        "id": "urn:ngm:class:nist-frvt",
-        "label": "NIST FRVT"
       }
     ],
     "partOf": [],
@@ -131,7 +111,7 @@
         "label": "Algorithmic Bias"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ]

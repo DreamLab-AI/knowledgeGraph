@@ -20,15 +20,11 @@
       {
         "id": "urn:ngm:class:blinding-factor",
         "label": "Blinding Factor"
-      },
-      {
-        "id": "urn:ngm:class:unblinding-operation",
-        "label": "Unblinding Operation"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       },
       {
@@ -52,10 +48,6 @@
       {
         "id": "urn:ngm:class:unlinkability",
         "label": "Unlinkability"
-      },
-      {
-        "id": "urn:ngm:class:privacy-pass",
-        "label": "Privacy Pass"
       }
     ],
     "dependsOn": [],
@@ -63,10 +55,6 @@
       {
         "id": "urn:ngm:class:unlinkability",
         "label": "Unlinkability"
-      },
-      {
-        "id": "urn:ngm:class:signer-privacy",
-        "label": "Signer Privacy"
       }
     ],
     "contrastsWith": [
@@ -75,7 +63,7 @@
         "label": "Ring Signature"
       },
       {
-        "id": "urn:ngm:class:threshold-signature",
+        "id": "urn:ngm:class:threshold-signature-scheme",
         "label": "Threshold Signature"
       }
     ],
@@ -110,7 +98,7 @@
         "label": "IETF RFC"
       },
       {
-        "id": "urn:ngm:class:w3c-verifiable-credentials",
+        "id": "urn:ngm:class:w3-c-verifiable-credentials",
         "label": "W3C Verifiable Credentials"
       }
     ],
@@ -127,10 +115,6 @@
       {
         "id": "urn:ngm:class:selective-disclosure",
         "label": "Selective Disclosure"
-      },
-      {
-        "id": "urn:ngm:class:oblivious-http",
-        "label": "Oblivious HTTP"
       },
       {
         "id": "urn:ngm:class:post-quantum-cryptography",

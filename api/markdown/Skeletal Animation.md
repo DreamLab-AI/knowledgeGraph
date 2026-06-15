@@ -23,51 +23,132 @@ public:: true
   "definition": "Skeletal animation is a character animation technique in which a hierarchical rig of joints defines the articulated structure of a character or creature, and mesh vertices are deformed by the weighted influence of surrounding joints through a process known as skinning. Artists author motion by keyframing or procedurally driving joint transforms over time; the underlying mesh deforms accordingly in real time on the GPU via linear blend skinning or dual-quaternion skinning. The approach is the dominant method for animating characters in games, virtual reality, film visual effects, and virtual avatar systems due to its runtime efficiency, compact data representation, and amenability to motion capture retargeting and machine-learning-driven synthesis.",
   "domain": "spatial-computing",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:character-animation", "label": "Character Animation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:character-animation",
+      "label": "Character Animation"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:rigged-animation", "label": "Rigged Animation"},
-    {"@id": "urn:ngm:class:bone-based-animation", "label": "Bone-Based Animation"}
+    {
+      "@id": "urn:ngm:class:rigged-animation",
+      "label": "Rigged Animation"
+    },
+    {
+      "@id": "urn:ngm:class:bone-based-animation",
+      "label": "Bone-Based Animation"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:character-rigging", "label": "Character Rigging"},
-      {"@id": "urn:ngm:class:linear-blend-skinning", "label": "Linear Blend Skinning"},
-      {"@id": "urn:ngm:class:animation-state-machine", "label": "Animation State Machine"},
-      {"@id": "urn:ngm:class:blend-tree", "label": "Blend Tree"}
+      {
+        "@id": "urn:ngm:class:character-rigging",
+        "label": "Character Rigging"
+      },
+      {
+        "@id": "urn:ngm:class:animation-state-machine",
+        "label": "Animation State Machine"
+      },
+      {
+        "@id": "urn:ngm:class:blend-tree",
+        "label": "Blend Tree"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
-      {"@id": "urn:ngm:class:animation-retargeting", "label": "Animation Retargeting"},
-      {"@id": "urn:ngm:class:forward-kinematics", "label": "Forward Kinematics"},
-      {"@id": "urn:ngm:class:vertex-shader", "label": "Vertex Shader"}
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:animation-retargeting",
+        "label": "Animation Retargeting"
+      },
+      {
+        "@id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:vertex-shader",
+        "label": "Vertex Shader"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:avatar-animation", "label": "Avatar Animation"},
-      {"@id": "urn:ngm:class:real-time-character-animation", "label": "Real Time Character Animation"},
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
-      {"@id": "urn:ngm:class:facial-animation", "label": "Facial Animation"},
-      {"@id": "urn:ngm:class:virtual-production", "label": "Virtual Production"}
+      {
+        "@id": "urn:ngm:class:avatar-animation",
+        "label": "Avatar Animation"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-character-animation",
+        "label": "Real Time Character Animation"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:facial-animation",
+        "label": "Facial Animation"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:scene-graph", "label": "Scene Graph"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:physics-based-animation", "label": "Physics-Based Animation"},
-      {"@id": "urn:ngm:class:procedural-animation", "label": "Procedural Animation"},
-      {"@id": "urn:ngm:class:gl-tf-3-d-file-format", "label": "glTF (3D File Format)"},
-      {"@id": "urn:ngm:class:animation-controller", "label": "Animation Controller"},
-      {"@id": "urn:ngm:class:morph-target-animation", "label": "Morph Target Animation"},
-      {"@id": "urn:ngm:class:level-of-detail", "label": "Level of Detail"}
+      {
+        "@id": "urn:ngm:class:physics-based-animation",
+        "label": "Physics-Based Animation"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-animation",
+        "label": "Procedural Animation"
+      },
+      {
+        "@id": "urn:ngm:class:gl-tf-3-d-file-format",
+        "label": "glTF (3D File Format)"
+      },
+      {
+        "@id": "urn:ngm:class:animation-controller",
+        "label": "Animation Controller"
+      },
+      {
+        "@id": "urn:ngm:class:morph-target-animation",
+        "label": "Morph Target Animation"
+      },
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:neural-motion-synthesis", "label": "Neural Motion Synthesis"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:biomechanical-simulation", "label": "Biomechanical Simulation"}
+      {
+        "@id": "urn:ngm:class:neural-motion-synthesis",
+        "label": "Neural Motion Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:gltf-specification", "label": "glTF Specification"}
+      {
+        "@id": "urn:ngm:class:gltf-standard",
+        "label": "glTF Specification"
+      }
     ]
   },
   "quality": 0.74,

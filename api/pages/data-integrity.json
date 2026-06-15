@@ -66,10 +66,6 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:data-corruption",
-        "label": "Data Corruption"
-      },
-      {
         "id": "urn:ngm:class:eventual-consistency",
         "label": "Eventual Consistency"
       }
@@ -100,10 +96,6 @@
       {
         "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
-      },
-      {
-        "id": "urn:ngm:class:checksum",
-        "label": "Checksum"
       },
       {
         "id": "urn:ngm:class:access-control",

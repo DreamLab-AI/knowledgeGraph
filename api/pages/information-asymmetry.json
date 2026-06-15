@@ -20,10 +20,6 @@
       {
         "id": "urn:ngm:class:adverse-selection",
         "label": "Adverse Selection"
-      },
-      {
-        "id": "urn:ngm:class:moral-hazard",
-        "label": "Moral Hazard"
       }
     ],
     "requires": [
@@ -32,15 +28,11 @@
         "label": "Signalling"
       },
       {
-        "id": "urn:ngm:class:screening",
+        "id": "urn:ngm:class:sanctions-screening",
         "label": "Screening"
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:market-failure",
-        "label": "Market Failure"
-      },
       {
         "id": "urn:ngm:class:principal-agent-problem",
         "label": "Principal-Agent Problem"
@@ -58,19 +50,11 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:disclosure-regulation",
-        "label": "Disclosure Regulation"
-      },
-      {
         "id": "urn:ngm:class:reputation-system",
         "label": "Reputation System"
       }
     ],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:perfect-information",
-        "label": "Perfect Information"
-      },
       {
         "id": "urn:ngm:class:efficient-market-hypothesis",
         "label": "Efficient Market Hypothesis"
@@ -94,7 +78,7 @@
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:decentralized-oracle",
+        "id": "urn:ngm:class:oracle",
         "label": "Decentralized Oracle"
       }
     ],
@@ -126,7 +110,7 @@
         "label": "Transaction Cost Economics"
       },
       {
-        "id": "urn:ngm:class:information-economics",
+        "id": "urn:ngm:class:economics",
         "label": "Information Economics"
       },
       {

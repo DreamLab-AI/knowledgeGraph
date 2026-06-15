@@ -28,10 +28,6 @@
       {
         "id": "urn:ngm:class:coordination-protocol",
         "label": "Coordination Protocol"
-      },
-      {
-        "id": "urn:ngm:class:agent-environment",
-        "label": "Agent Environment"
       }
     ],
     "requires": [
@@ -58,11 +54,11 @@
         "label": "Collective Decision Making"
       },
       {
-        "id": "urn:ngm:class:autonomous-software-engineering",
+        "id": "urn:ngm:class:software-engineering-agents",
         "label": "Autonomous Software Engineering"
       },
       {
-        "id": "urn:ngm:class:emergent-behaviour",
+        "id": "urn:ngm:class:emergent-behavior",
         "label": "Emergent Behaviour"
       }
     ],
@@ -92,7 +88,7 @@
         "label": "Centralised AI"
       },
       {
-        "id": "urn:ngm:class:monolithic-agent",
+        "id": "urn:ngm:class:agent",
         "label": "Monolithic Agent"
       }
     ],

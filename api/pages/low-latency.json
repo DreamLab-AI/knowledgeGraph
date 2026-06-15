@@ -65,10 +65,6 @@
       {
         "id": "urn:ngm:class:propagation-delay",
         "label": "Propagation Delay"
-      },
-      {
-        "id": "urn:ngm:class:queuing-delay",
-        "label": "Queuing Delay"
       }
     ],
     "implements": [],
@@ -104,10 +100,6 @@
       {
         "id": "urn:ngm:class:hardware-acceleration",
         "label": "Hardware Acceleration"
-      },
-      {
-        "id": "urn:ngm:class:kernel-bypass-networking",
-        "label": "Kernel-Bypass Networking"
       },
       {
         "id": "urn:ngm:class:fpga",

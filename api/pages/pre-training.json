@@ -26,7 +26,7 @@
         "label": "Next Token Prediction"
       },
       {
-        "id": "urn:ngm:class:unsupervised-representation-learning",
+        "id": "urn:ngm:class:representation-learning",
         "label": "Unsupervised Representation Learning"
       }
     ],

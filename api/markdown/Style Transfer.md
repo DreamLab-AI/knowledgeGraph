@@ -99,48 +99,103 @@ public:: true
   },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:gram-matrix", "label": "Gram Matrix"},
-      {"@id": "urn:ngm:class:perceptual-loss", "label": "Perceptual Loss"},
-      {"@id": "urn:ngm:class:vgg-network", "label": "VGG Network"}
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:3-d-content-generation", "label": "3D Content Generation"},
-      {"@id": "urn:ngm:class:video-stylisation", "label": "Video Stylisation"},
-      {"@id": "urn:ngm:class:artistic-rendering", "label": "Artistic Rendering"}
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-content-generation",
+        "label": "3D Content Generation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
-      {"@id": "urn:ngm:class:neural-network-training", "label": "Neural Network Training"}
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:texture-synthesis", "label": "Texture Synthesis"},
-      {"@id": "urn:ngm:class:image-segmentation", "label": "Image Segmentation"}
+      {
+        "@id": "urn:ngm:class:texture-synthesis",
+        "label": "Texture Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"},
-      {"@id": "urn:ngm:class:lora-fine-tuning", "label": "LoRA Fine-Tuning"},
-      {"@id": "urn:ngm:class:controlnet", "label": "ControlNet"}
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "@id": "urn:ngm:class:lo-ra-fine-tuning",
+        "label": "LoRA Fine-Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:controlnet",
+        "label": "ControlNet"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:neural-style-transfer", "label": "Neural Style Transfer"},
-    {"@id": "urn:ngm:class:artistic-style-transfer", "label": "Artistic Style Transfer"}
+    {
+      "@id": "urn:ngm:class:neural-style-transfer",
+      "label": "Neural Style Transfer"
+    },
+    {
+      "@id": "urn:ngm:class:artistic-style-transfer",
+      "label": "Artistic Style Transfer"
+    }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

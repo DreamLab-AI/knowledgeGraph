@@ -24,53 +24,107 @@ alias:: TimelockController
   "definition": "A timelock controller is a smart contract governance primitive that enforces a mandatory waiting period — the timelock delay — between the scheduling of an on-chain operation (such as a protocol upgrade, parameter change, or treasury disbursement) and its execution, giving token holders, security researchers, and affected parties an opportunity to review, object to, or exit before the change takes effect. Operations must be queued with their full parameters, remain in the queue for the configured delay, and then be explicitly executed; they may also be cancelled by authorised roles during the waiting period. Timelock controllers are a fundamental safety mechanism in DeFi and DAO governance, protecting against malicious or erroneous governance proposals.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:on-chain-governance",
+      "label": "On-chain Governance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:open-zeppelin-governor", "label": "OpenZeppelin Governor"},
-      {"@id": "urn:ngm:class:hash-time-locked-contract", "label": "Hash Time-Locked Contract"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:role-based-access-control", "label": "Role-Based Access Control"},
-      {"@id": "urn:ngm:class:multisignature-wallet", "label": "Multisignature Wallet"},
-      {"@id": "urn:ngm:class:protocol-upgrade", "label": "Protocol Upgrade"}
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:open-zeppelin-governor",
+        "label": "OpenZeppelin Governor"
+      },
+      {
+        "@id": "urn:ngm:class:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:multisignature-wallets",
+        "label": "Multisignature Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
-      {"@id": "urn:ngm:class:decentralised-protocol-administration", "label": "Decentralised Protocol Administration"},
-      {"@id": "urn:ngm:class:emergency-pause-mechanism", "label": "Emergency Pause Mechanism"}
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:proposal-system", "label": "Proposal System"},
-      {"@id": "urn:ngm:class:voting-mechanism", "label": "Voting Mechanism"},
-      {"@id": "urn:ngm:class:operation-queue", "label": "Operation Queue"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}
+      {
+        "@id": "urn:ngm:class:proposal-system",
+        "label": "Proposal System"
+      },
+      {
+        "@id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:operation-queue",
+        "label": "Operation Queue"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:smart-contract-executor", "label": "Smart Contract Executor"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:time-delay-enforcement", "label": "Time-Delay Enforcement"},
-      {"@id": "urn:ngm:class:governance-security-pattern", "label": "Governance Security Pattern"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:immediate-execution-governance", "label": "Immediate Execution Governance"},
-      {"@id": "urn:ngm:class:centralised-admin-key", "label": "Centralised Admin Key"}
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:defi-protocol", "label": "DeFi Protocol"},
-      {"@id": "urn:ngm:class:treasury-management", "label": "Treasury Management"}
+      {
+        "@id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:security", "label": "Security"},
-      {"@id": "urn:ngm:class:governance", "label": "Governance"}
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:timelock-contract", "label": "Timelock Contract"},
-    {"@id": "urn:ngm:class:governance-timelock", "label": "Governance Timelock"}
+    {
+      "@id": "urn:ngm:class:timelock-contract",
+      "label": "Timelock Contract"
+    },
+    {
+      "@id": "urn:ngm:class:governance-timelock",
+      "label": "Governance Timelock"
+    }
   ],
   "quality": 0.72,
   "provenance": {

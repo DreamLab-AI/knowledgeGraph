@@ -92,55 +92,131 @@ alias:: MotionPlanning
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:robot-autonomy", "label": "Robot Autonomy"}
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:robot-autonomy",
+        "label": "Robot Autonomy"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:trajectory-optimisation", "label": "Trajectory Optimisation"},
-      {"@id": "urn:ngm:class:collision-avoidance", "label": "Collision Avoidance"},
-      {"@id": "urn:ngm:class:kinodynamic-planning", "label": "Kinodynamic Planning"}
+      {
+        "@id": "urn:ngm:class:trajectory-optimisation",
+        "label": "Trajectory Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
-      {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"},
-      {"@id": "urn:ngm:class:configuration-space", "label": "Configuration Space"},
-      {"@id": "urn:ngm:class:obstacle-representation", "label": "Obstacle Representation"}
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "@id": "urn:ngm:class:configuration-space",
+        "label": "Configuration Space"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
-      {"@id": "urn:ngm:class:robotic-manipulation", "label": "Robotic Manipulation"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"}
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-manipulation",
+        "label": "Robotic Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:environment-mapping", "label": "Environment Mapping"},
-      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:environment-mapping",
+        "label": "Environment Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:rapidly-exploring-random-tree", "label": "Rapidly-Exploring Random Tree"},
-      {"@id": "urn:ngm:class:model-predictive-control", "label": "Model Predictive Control"},
-      {"@id": "urn:ngm:class:potential-field-method", "label": "Potential Field Method"}
+      {
+        "@id": "urn:ngm:class:rapidly-exploring-random-tree",
+        "label": "Rapidly-Exploring Random Tree"
+      },
+      {
+        "@id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "@id": "urn:ngm:class:potential-field-method",
+        "label": "Potential Field Method"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:sampling-based-planning", "label": "Sampling-Based Planning"},
-      {"@id": "urn:ngm:class:optimization-algorithm", "label": "Optimization Algorithm"}
+      {
+        "@id": "urn:ngm:class:sampling-based-planning",
+        "label": "Sampling-Based Planning"
+      },
+      {
+        "@id": "urn:ngm:class:optimization-algorithm",
+        "label": "Optimization Algorithm"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:reactive-control", "label": "Reactive Control"}
+      {
+        "@id": "urn:ngm:class:reactive-control",
+        "label": "Reactive Control"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
-      {"@id": "urn:ngm:class:task-planning", "label": "Task Planning"}
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:robot-motion-planning", "label": "Robot Motion Planning"},
-    {"@id": "urn:ngm:class:trajectory-planning", "label": "Trajectory Planning"}
+    {
+      "@id": "urn:ngm:class:robot-motion-planning",
+      "label": "Robot Motion Planning"
+    },
+    {
+      "@id": "urn:ngm:class:trajectory-planning",
+      "label": "Trajectory Planning"
+    }
   ],
   "quality": 0.72,
   "provenance": {

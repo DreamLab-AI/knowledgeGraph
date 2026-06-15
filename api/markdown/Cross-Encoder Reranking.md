@@ -23,50 +23,115 @@ public:: true
   "definition": "Cross-Encoder Reranking is a two-stage information retrieval technique in which a cross-encoder transformer model receives a query and a candidate document concatenated as a single input sequence, performs full bidirectional self-attention across both, and outputs a relevance score used to re-order an initial candidate set retrieved by a faster but less accurate first-stage retriever. It typically yields substantially higher ranking quality than bi-encoder first-stage retrieval at the cost of higher computational latency.",
   "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    }
+  ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:transformer-model", "label": "Transformer Model"},
-      {"@id": "urn:ngm:class:first-stage-retrieval", "label": "First-Stage Retrieval"}
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer Model"
+      },
+      {
+        "@id": "urn:ngm:class:hybrid-retrieval",
+        "label": "First-Stage Retrieval"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"},
-      {"@id": "urn:ngm:class:bert", "label": "BERT"},
-      {"@id": "urn:ngm:class:self-attention", "label": "Self-Attention"},
-      {"@id": "urn:ngm:class:pointwise-ranking", "label": "Pointwise Ranking"}
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "@id": "urn:ngm:class:bert",
+        "label": "BERT"
+      },
+      {
+        "@id": "urn:ngm:class:self-attention",
+        "label": "Self-Attention"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
-      {"@id": "urn:ngm:class:document-retrieval", "label": "Document Retrieval"}
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "@id": "urn:ngm:class:document-retrieval",
+        "label": "Document Retrieval"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:rag-pipeline", "label": "RAG Pipeline"},
-      {"@id": "urn:ngm:class:enterprise-search", "label": "Enterprise Search"},
-      {"@id": "urn:ngm:class:neural-information-retrieval", "label": "Neural Information Retrieval"}
+      {
+        "@id": "urn:ngm:class:rag-pipeline",
+        "label": "RAG Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-search",
+        "label": "Enterprise Search"
+      },
+      {
+        "@id": "urn:ngm:class:neural-information-retrieval",
+        "label": "Neural Information Retrieval"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:cosine-similarity", "label": "Cosine Similarity"},
-      {"@id": "urn:ngm:class:bi-encoder", "label": "Bi-Encoder"},
-      {"@id": "urn:ngm:class:bm25", "label": "BM25"}
+      {
+        "@id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
+      },
+      {
+        "@id": "urn:ngm:class:bi-encoder",
+        "label": "Bi-Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:bm25",
+        "label": "BM25"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:approximate-nearest-neighbour-search", "label": "Approximate Nearest Neighbour Search"},
-      {"@id": "urn:ngm:class:gpu-inference", "label": "GPU Inference"}
+      {
+        "@id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Approximate Nearest Neighbour Search"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-inference",
+        "label": "GPU Inference"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:learning-to-rank", "label": "Learning to Rank"},
-      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"},
-      {"@id": "urn:ngm:class:listwise-ranking", "label": "Listwise Ranking"}
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:reranking", "label": "Reranking"},
-    {"@id": "urn:ngm:class:retrieve-and-rerank", "label": "Retrieve-and-Rerank"}
+    {
+      "@id": "urn:ngm:class:reranking",
+      "label": "Reranking"
+    },
+    {
+      "@id": "urn:ngm:class:retrieve-and-rerank",
+      "label": "Retrieve-and-Rerank"
+    }
   ],
   "quality": 0.8,
   "provenance": {

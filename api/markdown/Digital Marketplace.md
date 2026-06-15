@@ -108,7 +108,7 @@ public:: true
         "label": "NFT Trading"
       },
       {
-        "@id": "urn:ngm:class:virtual-asset-exchange",
+        "@id": "urn:ngm:class:virtual-asset-trading",
         "label": "Virtual Asset Exchange"
       },
       {

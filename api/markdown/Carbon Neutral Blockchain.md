@@ -558,14 +558,6 @@ public:: true
         "label": "Carbon Offset Programme"
       },
       {
-        "@id": "urn:ngm:class:energy-metering-system",
-        "label": "Energy Metering System"
-      },
-      {
-        "@id": "urn:ngm:class:ghg-protocol-accounting",
-        "label": "GHG Protocol Accounting"
-      },
-      {
         "@id": "urn:ngm:class:renewable-energy-certificates",
         "label": "Renewable Energy Certificates"
       },
@@ -574,7 +566,7 @@ public:: true
         "label": "Renewable Energy Integration"
       },
       {
-        "@id": "urn:ngm:class:sustainability-reporting-framework",
+        "@id": "urn:ngm:class:sustainability-reporting",
         "label": "Sustainability Reporting Framework"
       },
       {
@@ -646,7 +638,7 @@ public:: true
         "label": "Green Finance"
       },
       {
-        "@id": "urn:ngm:class:on-chain-carbon-markets",
+        "@id": "urn:ngm:class:carbon-markets",
         "label": "On-Chain Carbon Markets"
       },
       {
@@ -654,11 +646,7 @@ public:: true
         "label": "Science Based Targets"
       },
       {
-        "@id": "urn:ngm:class:sustainable-supply-chain",
-        "label": "Sustainable Supply Chain"
-      },
-      {
-        "@id": "urn:ngm:class:tokenized-carbon-credits",
+        "@id": "urn:ngm:class:carbon-credits",
         "label": "Tokenized Carbon Credits"
       },
       {
@@ -676,7 +664,7 @@ public:: true
         "label": "Corporate Sustainability Reporting"
       },
       {
-        "@id": "urn:ngm:class:environmental-accounting-standard",
+        "@id": "urn:ngm:class:environmental-accounting",
         "label": "Environmental Accounting Standard"
       },
       {
@@ -688,11 +676,11 @@ public:: true
         "label": "Net-Zero Commitment"
       },
       {
-        "@id": "urn:ngm:class:paris-agreement-alignment",
+        "@id": "urn:ngm:class:paris-agreement",
         "label": "Paris Agreement Alignment"
       },
       {
-        "@id": "urn:ngm:class:pas-2060-carbon-neutrality",
+        "@id": "urn:ngm:class:carbon-neutrality",
         "label": "PAS 2060 Carbon Neutrality"
       },
       {
@@ -706,16 +694,8 @@ public:: true
         "label": "Carbon Offset"
       },
       {
-        "@id": "urn:ngm:class:climate-trade",
-        "label": "ClimateTrade"
-      },
-      {
-        "@id": "urn:ngm:class:energy-tag-granular-certificate",
+        "@id": "urn:ngm:class:energy-attribute-certificates",
         "label": "EnergyTag Granular Certificate"
-      },
-      {
-        "@id": "urn:ngm:class:hashgraph-consensus",
-        "label": "Hashgraph Consensus"
       },
       {
         "@id": "urn:ngm:class:klima-dao",
@@ -822,10 +802,6 @@ public:: true
         "label": "Impact Investing"
       },
       {
-        "@id": "urn:ngm:class:task-force-on-climate-related-financial-disclosures",
-        "label": "Task Force on Climate-related Financial Disclosures"
-      },
-      {
         "@id": "urn:ngm:class:environmental-sustainability",
         "label": "Environmental Sustainability"
       },
@@ -840,7 +816,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:energy-tag-granular-certificate-standard",
+        "@id": "urn:ngm:class:energy-attribute-certificates",
         "label": "EnergyTag Granular Certificate Standard"
       },
       {
@@ -868,7 +844,7 @@ public:: true
         "label": "PAS 2060"
       },
       {
-        "@id": "urn:ngm:class:verra-verified-carbon-standard",
+        "@id": "urn:ngm:class:verra-vcs-standard",
         "label": "Verra Verified Carbon Standard"
       }
     ],

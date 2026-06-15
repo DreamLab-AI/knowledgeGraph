@@ -24,10 +24,6 @@
       {
         "id": "urn:ngm:class:health-check",
         "label": "Health Check"
-      },
-      {
-        "id": "urn:ngm:class:service-registration",
-        "label": "Service Registration"
       }
     ],
     "requires": [
@@ -50,7 +46,7 @@
         "label": "Operational Resilience"
       },
       {
-        "id": "urn:ngm:class:horizontal-scaling",
+        "id": "urn:ngm:class:horizontal-scalability",
         "label": "Horizontal Scaling"
       },
       {
@@ -75,7 +71,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:static-configuration",
+        "id": "urn:ngm:class:configuration",
         "label": "Static Configuration"
       },
       {
@@ -128,7 +124,7 @@
         "label": "Microservices Architecture"
       },
       {
-        "id": "urn:ngm:class:cloud-native-computing",
+        "id": "urn:ngm:class:cloud-native",
         "label": "Cloud-Native Computing"
       }
     ],

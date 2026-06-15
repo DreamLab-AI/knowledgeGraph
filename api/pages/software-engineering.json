@@ -36,10 +36,6 @@
       {
         "id": "urn:ngm:class:continuous-integration",
         "label": "Continuous Integration"
-      },
-      {
-        "id": "urn:ngm:class:software-design-patterns",
-        "label": "Software Design Patterns"
       }
     ],
     "requires": [
@@ -48,7 +44,7 @@
         "label": "Version Control"
       },
       {
-        "id": "urn:ngm:class:agile-methodology",
+        "id": "urn:ngm:class:agile-software-development",
         "label": "Agile Methodology"
       },
       {
@@ -80,10 +76,6 @@
       {
         "id": "urn:ngm:class:computer-science",
         "label": "Computer Science"
-      },
-      {
-        "id": "urn:ngm:class:hardware-engineering",
-        "label": "Hardware Engineering"
       }
     ],
     "bridgesTo": [
@@ -115,20 +107,7 @@
       }
     ],
     "supports": [],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:iso-iec-12207",
-        "label": "ISO/IEC 12207"
-      },
-      {
-        "id": "urn:ngm:class:ieee-std-730",
-        "label": "IEEE Std 730"
-      },
-      {
-        "id": "urn:ngm:class:swebok",
-        "label": "SWEBOK"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {

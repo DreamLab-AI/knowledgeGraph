@@ -48,58 +48,121 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:surface-normal", "label": "Surface Normal"},
-      {"@id": "urn:ngm:class:voxel", "label": "Voxel"}
+      {
+        "@id": "urn:ngm:class:surface-normal",
+        "label": "Surface Normal"
+      },
+      {
+        "@id": "urn:ngm:class:voxel",
+        "label": "Voxel"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:3-d-scene-representation", "label": "3D Scene Representation"}
+      {
+        "@id": "urn:ngm:class:3-d-scene-representation",
+        "label": "3D Scene Representation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
-      {"@id": "urn:ngm:class:coordinate-system", "label": "Coordinate System"}
+      {
+        "@id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:coordinate-system",
+        "label": "Coordinate System"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"},
-      {"@id": "urn:ngm:class:spatial-mapping", "label": "Spatial Mapping"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"}
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:spatial-registration", "label": "Spatial Registration"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
-      {"@id": "urn:ngm:class:structured-light", "label": "Structured Light"},
-      {"@id": "urn:ngm:class:time-of-flight", "label": "Time-of-Flight"}
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:structured-light",
+        "label": "Structured Light"
+      },
+      {
+        "@id": "urn:ngm:class:time-of-flight",
+        "label": "Time-of-Flight"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:robotics-perception", "label": "Robotics Perception"}
-    ],
-    "standardizedBy": [
-      {"@id": "urn:ngm:class:las-format", "label": "LAS Format"},
-      {"@id": "urn:ngm:class:e57-format", "label": "E57 Format"}
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:polygon-mesh", "label": "Polygon Mesh"},
-      {"@id": "urn:ngm:class:voxel-grid", "label": "Voxel Grid"}
-    ],
-    "bridgesTo": [
-      {"@id": "urn:ngm:class:pointnet", "label": "PointNet"},
-      {"@id": "urn:ngm:class:3-d-object-segmentation", "label": "3D Object Segmentation"}
+      {
+        "@id": "urn:ngm:class:polygon-mesh",
+        "label": "Polygon Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:voxel-grid",
+        "label": "Voxel Grid"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure-from-Motion"},
-      {"@id": "urn:ngm:class:occupancy-mapping", "label": "Occupancy Mapping"},
-      {"@id": "urn:ngm:class:geospatial-data", "label": "Geospatial Data"}
+      {
+        "@id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure-from-Motion"
+      },
+      {
+        "@id": "urn:ngm:class:occupancy-mapping",
+        "label": "Occupancy Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:geospatial-data",
+        "label": "Geospatial Data"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:3-d-point-set", "label": "3D Point Set"}
+    {
+      "@id": "urn:ngm:class:3-d-point-set",
+      "label": "3D Point Set"
+    }
   ],
   "quality": 0.72,
   "provenance": {

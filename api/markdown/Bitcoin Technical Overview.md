@@ -626,16 +626,8 @@ public:: true
         "label": "Decentralised Finance"
       },
       {
-        "@id": "urn:ngm:class:layer-2-protocols",
-        "label": "Layer 2 Protocols"
-      },
-      {
         "@id": "urn:ngm:class:programmable-money",
         "label": "Programmable Money"
-      },
-      {
-        "@id": "urn:ngm:class:trustless-payments",
-        "label": "Trustless Payments"
       },
       {
         "@id": "urn:ngm:class:digital-currency",
@@ -684,14 +676,6 @@ public:: true
       {
         "@id": "urn:ngm:class:bloom-filter",
         "label": "Bloom Filter"
-      },
-      {
-        "@id": "urn:ngm:class:compact-block-relay",
-        "label": "Compact Block Relay"
-      },
-      {
-        "@id": "urn:ngm:class:ripemd-160",
-        "label": "RIPEMD-160"
       },
       {
         "@id": "urn:ngm:class:schnorr-signature",
@@ -770,10 +754,6 @@ public:: true
         "label": "Taproot"
       },
       {
-        "@id": "urn:ngm:class:time-locked-contracts",
-        "label": "Time-locked Contracts"
-      },
-      {
         "@id": "urn:ngm:class:lightning-network",
         "label": "Lightning Network"
       }
@@ -798,10 +778,6 @@ public:: true
       {
         "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
         "label": "Bitcoin Core"
-      },
-      {
-        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-optech",
-        "label": "Bitcoin Optech"
       },
       {
         "@id": "urn:ngm:class:bolt-specifications",

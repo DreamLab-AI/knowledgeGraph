@@ -148,10 +148,6 @@ public:: true
         "label": "API Specification"
       },
       {
-        "@id": "urn:ngm:class:authentication-layer",
-        "label": "Authentication Layer"
-      },
-      {
         "@id": "urn:ngm:class:data-exchange-format",
         "label": "Data Exchange Format"
       },
@@ -187,18 +183,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:federated-simulation",
-        "label": "Federated Simulation"
-      },
-      {
-        "@id": "urn:ngm:class:real-time-state-sync",
-        "label": "Real-Time State Sync"
-      },
-      {
-        "@id": "urn:ngm:class:twin-composition",
-        "label": "Twin Composition"
-      },
       {
         "@id": "urn:ngm:class:cross-platform-digital-twins",
         "label": "Cross Platform Digital Twins"

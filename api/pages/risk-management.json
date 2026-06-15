@@ -64,7 +64,7 @@
         "label": "Risk Register"
       },
       {
-        "id": "urn:ngm:class:threat-modeling",
+        "id": "urn:ngm:class:threat-modelling",
         "label": "Threat Modeling"
       }
     ],
@@ -74,7 +74,7 @@
         "label": "NIST AI RMF"
       },
       {
-        "id": "urn:ngm:class:iso-23894",
+        "id": "urn:ngm:class:iso-iec-23894",
         "label": "ISO 23894"
       }
     ],
@@ -95,7 +95,7 @@
         "label": "Failure Mode Analysis"
       },
       {
-        "id": "urn:ngm:class:bias-detection",
+        "id": "urn:ngm:class:bias-detection-methods",
         "label": "Bias Detection"
       }
     ],
@@ -119,7 +119,7 @@
         "label": "ISO 31000"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],

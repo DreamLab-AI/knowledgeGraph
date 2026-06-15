@@ -1030,42 +1030,22 @@ public:: true
         "label": "NFT Issuance"
       },
       {
-        "@id": "urn:ngm:class:stablecoin-on-bitcoin",
-        "label": "Stablecoin on Bitcoin"
-      },
-      {
         "@id": "urn:ngm:class:dao-governance",
         "label": "DAO Governance"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:alu-vm-validation",
-        "label": "AluVM Validation"
-      },
-      {
         "@id": "urn:ngm:class:client-side-validation-theory",
         "label": "Client-Side Validation Theory"
-      },
-      {
-        "@id": "urn:ngm:class:consignment-protocol",
-        "label": "Consignment Protocol"
       },
       {
         "@id": "urn:ngm:class:deterministic-bitcoin-commitment",
         "label": "Deterministic Bitcoin Commitment"
       },
       {
-        "@id": "urn:ngm:class:schema-1-standard",
-        "label": "Schema 1 Standard"
-      },
-      {
         "@id": "urn:ngm:class:strict-encoding",
         "label": "Strict Encoding"
-      },
-      {
-        "@id": "urn:ngm:class:utxo-seal-mechanism",
-        "label": "UTXO Seal Mechanism"
       }
     ],
     "uses": [
@@ -1086,69 +1066,29 @@ public:: true
         "label": "Hash Time-Locked Contract"
       },
       {
-        "@id": "urn:ngm:class:op-ret",
-        "label": "OpRet"
-      },
-      {
         "@id": "urn:ngm:class:pedersen-commitment",
         "label": "Pedersen Commitment"
       },
       {
-        "@id": "urn:ngm:class:stark-proofs",
+        "@id": "urn:ngm:class:stark",
         "label": "STARK Proofs"
       },
       {
         "@id": "urn:ngm:class:strict-types",
         "label": "Strict Types"
-      },
-      {
-        "@id": "urn:ngm:class:tapret",
-        "label": "Tapret"
-      },
-      {
-        "@id": "urn:ngm:class:zk-alu-vm",
-        "label": "zk-AluVM"
       }
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:bi-tmask",
-        "label": "BiTMASK"
-      },
-      {
-        "@id": "urn:ngm:class:bitmask-wallet",
-        "label": "Bitmask Wallet"
-      },
-      {
-        "@id": "urn:ngm:class:diba-inc",
-        "label": "DIBA Inc"
-      },
-      {
-        "@id": "urn:ngm:class:kaleidoswap",
-        "label": "Kaleidoswap"
-      },
-      {
         "@id": "urn:ngm:class:lnp-bp-standards-association",
         "label": "LNP-BP Standards Association"
-      },
-      {
-        "@id": "urn:ngm:class:maxim-orlovsky",
-        "label": "Maxim Orlovsky"
-      },
-      {
-        "@id": "urn:ngm:class:my-citadel-wallet",
-        "label": "MyCitadel Wallet"
       },
       {
         "@id": "urn:ngm:class:peter-todd",
         "label": "Peter Todd"
       },
       {
-        "@id": "urn:ngm:class:rgb-working-group",
-        "label": "RGB Working Group"
-      },
-      {
-        "@id": "urn:ngm:class:tether-usdt",
+        "@id": "urn:ngm:class:usdt",
         "label": "Tether USDT"
       }
     ],
@@ -1162,49 +1102,33 @@ public:: true
         "label": "Asset Interoperability"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-layer-3-ecosystem",
-        "label": "Bitcoin Layer 3 Ecosystem"
-      },
-      {
         "@id": "urn:ngm:class:decentralized-exchange",
         "label": "Decentralized Exchange"
       },
       {
-        "@id": "urn:ngm:class:micropayment-infrastructure",
-        "label": "Micropayment Infrastructure"
-      },
-      {
-        "@id": "urn:ngm:class:privacy-preserving-transactions",
+        "@id": "urn:ngm:class:privacy-preserving",
         "label": "Privacy-Preserving Transactions"
       }
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:alu-vm-specification",
+        "@id": "urn:ngm:class:alu-vm",
         "label": "AluVM Specification"
       },
       {
-        "@id": "urn:ngm:class:iacr-e-print-2025-1400",
-        "label": "IACR ePrint 2025/1400"
-      },
-      {
-        "@id": "urn:ngm:class:lnp-bp-standards",
+        "@id": "urn:ngm:class:lnp-bp-standards-association",
         "label": "LNP/BP Standards"
       },
       {
-        "@id": "urn:ngm:class:rgb-blackpaper",
+        "@id": "urn:ngm:class:rgb",
         "label": "RGB Blackpaper"
       },
       {
-        "@id": "urn:ngm:class:rgb-specification",
+        "@id": "urn:ngm:class:rgb-protocol",
         "label": "RGB Specification"
       },
       {
-        "@id": "urn:ngm:class:rgb-wg-git-hub",
-        "label": "RGB-WG GitHub"
-      },
-      {
-        "@id": "urn:ngm:class:strict-types-specification",
+        "@id": "urn:ngm:class:strict-types",
         "label": "Strict Types Specification"
       }
     ]

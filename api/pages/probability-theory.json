@@ -86,10 +86,6 @@
       {
         "id": "urn:ngm:class:sigma-algebra",
         "label": "Sigma-Algebra"
-      },
-      {
-        "id": "urn:ngm:class:lebesgue-integration",
-        "label": "Lebesgue Integration"
       }
     ],
     "implements": [],
@@ -97,10 +93,6 @@
       {
         "id": "urn:ngm:class:fuzzy-logic",
         "label": "Fuzzy Logic"
-      },
-      {
-        "id": "urn:ngm:class:deterministic-computation",
-        "label": "Deterministic Computation"
       }
     ],
     "bridgesTo": [
@@ -111,10 +103,6 @@
       {
         "id": "urn:ngm:class:conformal-prediction",
         "label": "Conformal Prediction"
-      },
-      {
-        "id": "urn:ngm:class:financial-mathematics",
-        "label": "Financial Mathematics"
       }
     ],
     "uses": [],
@@ -124,11 +112,7 @@
         "label": "Machine Learning"
       },
       {
-        "id": "urn:ngm:class:bayesian-networks",
-        "label": "Bayesian Networks"
-      },
-      {
-        "id": "urn:ngm:class:probabilistic-graphical-models",
+        "id": "urn:ngm:class:graphical-model",
         "label": "Probabilistic Graphical Models"
       }
     ],
@@ -146,10 +130,6 @@
       {
         "id": "urn:ngm:class:causal-inference",
         "label": "Causal Inference"
-      },
-      {
-        "id": "urn:ngm:class:information-geometry",
-        "label": "Information Geometry"
       },
       {
         "id": "urn:ngm:class:optimal-transport",

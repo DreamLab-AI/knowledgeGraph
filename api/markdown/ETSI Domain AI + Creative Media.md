@@ -87,10 +87,6 @@ alias:: ETSI Domain AI Creative Media
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:generative-content-classification",
-        "label": "Generative Content Classification"
-      },
-      {
         "@id": "urn:ngm:class:ai-art-categorization",
         "label": "Ai Art Categorization"
       }

@@ -22,10 +22,6 @@
         "label": "Token-Weighted Voting"
       },
       {
-        "id": "urn:ngm:class:multi-sig-treasury",
-        "label": "Multi-Sig Treasury"
-      },
-      {
         "id": "urn:ngm:class:conviction-voting",
         "label": "Conviction Voting"
       }
@@ -54,7 +50,7 @@
         "label": "Permissionless Participation"
       },
       {
-        "id": "urn:ngm:class:on-chain-treasury-management",
+        "id": "urn:ngm:class:treasury-management",
         "label": "On-Chain Treasury Management"
       }
     ],
@@ -63,10 +59,6 @@
       {
         "id": "urn:ngm:class:mechanism-design",
         "label": "Mechanism Design"
-      },
-      {
-        "id": "urn:ngm:class:ostrom-design-principles",
-        "label": "Ostrom Design Principles"
       }
     ],
     "contrastsWith": [

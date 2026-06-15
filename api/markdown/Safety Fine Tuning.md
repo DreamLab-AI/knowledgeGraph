@@ -82,17 +82,13 @@ public:: true
         "label": "Reinforcement Learning from Human Feedback"
       },
       {
-        "@id": "urn:ngm:class:safety-dataset",
-        "label": "Safety Dataset"
-      },
-      {
         "@id": "urn:ngm:class:red-teaming",
         "label": "Red Teaming"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:constitutional-ai",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
       },
       {
@@ -106,14 +102,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:harmless-ai",
-        "label": "Harmless AI"
-      },
-      {
-        "@id": "urn:ngm:class:refusal-behaviour",
-        "label": "Refusal Behaviour"
-      },
-      {
         "@id": "urn:ngm:class:trustworthy-ai",
         "label": "Trustworthy AI"
       }
@@ -126,10 +114,6 @@ public:: true
       {
         "@id": "urn:ngm:class:jailbreaking",
         "label": "Jailbreaking"
-      },
-      {
-        "@id": "urn:ngm:class:emergent-misalignment",
-        "label": "Emergent Misalignment"
       }
     ],
     "relatedTo": [

@@ -63,63 +63,164 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:relational-database", "label": "Relational Database"},
-      {"@id": "urn:ngm:class:query-engine", "label": "Query Engine"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:transaction-management", "label": "Transaction Management"}
+      {
+        "@id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      },
+      {
+        "@id": "urn:ngm:class:query-engine",
+        "label": "Query Engine"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-manager",
+        "label": "Transaction Management"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:information-system", "label": "Information System"},
-      {"@id": "urn:ngm:class:data-management", "label": "Data Management"}
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
-      {"@id": "urn:ngm:class:data-storage", "label": "Data Storage"},
-      {"@id": "urn:ngm:class:backup-and-recovery", "label": "Backup and Recovery"}
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "@id": "urn:ngm:class:backup-and-recovery",
+        "label": "Backup and Recovery"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:acid-compliance", "label": "ACID Compliance"},
-      {"@id": "urn:ngm:class:data-consistency", "label": "Data Consistency"},
-      {"@id": "urn:ngm:class:centralised-access-control", "label": "Centralised Access Control"}
+      {
+        "@id": "urn:ngm:class:acid-compliance",
+        "label": "ACID Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:data-consistency",
+        "label": "Data Consistency"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Centralised Access Control"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:server-infrastructure", "label": "Server Infrastructure"},
-      {"@id": "urn:ngm:class:operating-system", "label": "Operating System"}
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Server Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:sql", "label": "SQL"},
-      {"@id": "urn:ngm:class:acid-transactions", "label": "ACID Transactions"}
+      {
+        "@id": "urn:ngm:class:sql",
+        "label": "SQL"
+      },
+      {
+        "@id": "urn:ngm:class:acid-transactions",
+        "label": "ACID Transactions"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:indexing", "label": "Indexing"},
-      {"@id": "urn:ngm:class:query-optimisation", "label": "Query Optimisation"},
-      {"@id": "urn:ngm:class:replication", "label": "Replication"}
+      {
+        "@id": "urn:ngm:class:indexing",
+        "label": "Indexing"
+      },
+      {
+        "@id": "urn:ngm:class:optimisation",
+        "label": "Query Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:replication",
+        "label": "Replication"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:audit-logging", "label": "Audit Logging"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-9075", "label": "ISO/IEC 9075 (SQL Standard)"},
-      {"@id": "urn:ngm:class:ansi-sql", "label": "ANSI SQL"}
+      {
+        "@id": "urn:ngm:class:iso-iec-9075",
+        "label": "ISO/IEC 9075 (SQL Standard)"
+      },
+      {
+        "@id": "urn:ngm:class:ansi-sql",
+        "label": "ANSI SQL"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:distributed-database", "label": "Distributed Database"},
-      {"@id": "urn:ngm:class:decentralised-storage", "label": "Decentralised Storage"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+      {
+        "@id": "urn:ngm:class:distributed-databases",
+        "label": "Distributed Database"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:data-lake", "label": "Data Lake"},
-      {"@id": "urn:ngm:class:cloud-storage", "label": "Cloud Storage"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-warehouse", "label": "Data Warehouse"},
-      {"@id": "urn:ngm:class:nosql-database", "label": "NoSQL Database"},
-      {"@id": "urn:ngm:class:single-point-of-failure", "label": "Single Point of Failure"},
-      {"@id": "urn:ngm:class:cap-theorem", "label": "CAP Theorem"}
+      {
+        "@id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      },
+      {
+        "@id": "urn:ngm:class:nosql-database",
+        "label": "NoSQL Database"
+      },
+      {
+        "@id": "urn:ngm:class:single-point-of-failure",
+        "label": "Single Point of Failure"
+      },
+      {
+        "@id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      }
     ]
   },
   "quality": 0.72,

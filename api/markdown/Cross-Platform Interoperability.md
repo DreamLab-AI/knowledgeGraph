@@ -88,7 +88,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:message-passing-protocol",
+        "@id": "urn:ngm:class:message-passing",
         "label": "Message Passing Protocol"
       },
       {
@@ -124,10 +124,6 @@ public:: true
       {
         "@id": "urn:ngm:class:atomic-swap",
         "label": "Atomic Swap"
-      },
-      {
-        "@id": "urn:ngm:class:interchain-account",
-        "label": "Interchain Account"
       }
     ],
     "dependsOn": [
@@ -136,13 +132,13 @@ public:: true
         "label": "Layer 0"
       },
       {
-        "@id": "urn:ngm:class:api-standardisation",
+        "@id": "urn:ngm:class:api-standard",
         "label": "API Standardisation"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:ibc-protocol",
+        "@id": "urn:ngm:class:ibc",
         "label": "IBC Protocol"
       },
       {
@@ -176,11 +172,11 @@ public:: true
         "label": "ERC-5164"
       },
       {
-        "@id": "urn:ngm:class:w3c-did",
+        "@id": "urn:ngm:class:w3-c-did",
         "label": "W3C DID"
       },
       {
-        "@id": "urn:ngm:class:ieee-blockchain-standards",
+        "@id": "urn:ngm:class:ieee",
         "label": "IEEE Blockchain Standards"
       }
     ],

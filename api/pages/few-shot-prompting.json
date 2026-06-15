@@ -21,10 +21,6 @@
       {
         "id": "urn:ngm:class:context-window",
         "label": "Context Window"
-      },
-      {
-        "id": "urn:ngm:class:demonstration-examples",
-        "label": "Demonstration Examples"
       }
     ],
     "enables": [
@@ -33,7 +29,7 @@
         "label": "Task Adaptation"
       },
       {
-        "id": "urn:ngm:class:structured-output-generation",
+        "id": "urn:ngm:class:structured-output",
         "label": "Structured Output Generation"
       },
       {

@@ -31,56 +31,126 @@ public:: true
   "domain": "blockchain",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:token-standard", "label": "Token Standard"}
+    {
+      "@id": "urn:ngm:class:token-standard",
+      "label": "Token Standard"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:fungible-token", "label": "Fungible Token"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ethereum-virtual-machine", "label": "Ethereum Virtual Machine"},
-      {"@id": "urn:ngm:class:solidity", "label": "Solidity"}
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:decentralised-exchange", "label": "Decentralised Exchange"},
-      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
-      {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:ethereum-improvement-proposal", "label": "Ethereum Improvement Proposal"}
+      {
+        "@id": "urn:ngm:class:ethereum-improvement-proposal",
+        "label": "Ethereum Improvement Proposal"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
-      {"@id": "urn:ngm:class:evm-compatible-network", "label": "EVM-Compatible Network"}
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:token-composability", "label": "Token Composability"},
-      {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"}
+      {
+        "@id": "urn:ngm:class:token-composability",
+        "label": "Token Composability"
+      },
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ethereum-foundation", "label": "Ethereum Foundation"}
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-foundation",
+        "label": "Ethereum Foundation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:erc-721", "label": "ERC-721"},
-      {"@id": "urn:ngm:class:erc-1155", "label": "ERC-1155"},
-      {"@id": "urn:ngm:class:erc-777", "label": "ERC-777"},
-      {"@id": "urn:ngm:class:spl-token", "label": "SPL Token"}
+      {
+        "@id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "@id": "urn:ngm:class:erc-1155",
+        "label": "ERC-1155"
+      },
+      {
+        "@id": "urn:ngm:class:erc-777",
+        "label": "ERC-777"
+      },
+      {
+        "@id": "urn:ngm:class:spl-token",
+        "label": "SPL Token"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:erc-2612", "label": "ERC-2612"},
-      {"@id": "urn:ngm:class:wrapped-token", "label": "Wrapped Token"},
-      {"@id": "urn:ngm:class:token-approval", "label": "Token Approval"}
+      {
+        "@id": "urn:ngm:class:erc-2612-permit",
+        "label": "ERC-2612"
+      },
+      {
+        "@id": "urn:ngm:class:wrapped-token",
+        "label": "Wrapped Token"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
-      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"}
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:eip-20", "label": "EIP-20"}
+    {
+      "@id": "urn:ngm:class:eip-20",
+      "label": "EIP-20"
+    }
   ],
   "quality": 0.72,
   "qualityScore": 0.75,

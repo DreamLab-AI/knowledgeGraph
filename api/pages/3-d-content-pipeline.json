@@ -34,17 +34,13 @@
         "label": "Level of Detail"
       },
       {
-        "id": "urn:ngm:class:pbr-texturing",
-        "label": "PBR Texturing"
-      },
-      {
-        "id": "urn:ngm:class:rigging-and-skinning",
+        "id": "urn:ngm:class:character-rigging",
         "label": "Rigging and Skinning"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:digital-content-creation-tools",
+        "id": "urn:ngm:class:digital-content-creation",
         "label": "Digital Content Creation Tools"
       },
       {
@@ -52,7 +48,7 @@
         "label": "Game Engine"
       },
       {
-        "id": "urn:ngm:class:version-control-system",
+        "id": "urn:ngm:class:version-control",
         "label": "Version Control System"
       }
     ],
@@ -80,22 +76,13 @@
         "label": "Asset Management System"
       },
       {
-        "id": "urn:ngm:class:ci-cd-pipeline",
+        "id": "urn:ngm:class:ci-cd-automation",
         "label": "CI/CD Pipeline"
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:2-d-content-pipeline",
-        "label": "2D Content Pipeline"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:artificial-intelligence-assisted-art",
-        "label": "AI-Assisted Art Generation"
-      },
       {
         "id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing"
@@ -115,10 +102,6 @@
       {
         "id": "urn:ngm:class:distributed-team-collaboration",
         "label": "Distributed Team Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:continuous-asset-delivery",
-        "label": "Continuous Asset Delivery"
       }
     ],
     "standardizedBy": [

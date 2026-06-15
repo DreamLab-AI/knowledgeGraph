@@ -82,16 +82,6 @@ public:: true
     "label": "Information Architecture"
   },
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:preferred-term",
-        "label": "Preferred Term"
-      },
-      {
-        "@id": "urn:ngm:class:synonym-ring",
-        "label": "Synonym Ring"
-      }
-    ],
     "partOf": [
       {
         "@id": "urn:ngm:class:knowledge-organization-system",
@@ -100,30 +90,18 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:domain-expertise",
-        "label": "Domain Expertise"
-      },
-      {
-        "@id": "urn:ngm:class:maintenance-process",
+        "@id": "urn:ngm:class:process",
         "label": "Maintenance Process"
-      },
-      {
-        "@id": "urn:ngm:class:term-governance",
-        "label": "Term Governance"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:accurate-retrieval",
+        "@id": "urn:ngm:class:information-retrieval",
         "label": "Accurate Retrieval"
       },
       {
         "@id": "urn:ngm:class:content-discovery",
         "label": "Content Discovery"
-      },
-      {
-        "@id": "urn:ngm:class:data-standardization",
-        "label": "Data Standardization"
       },
       {
         "@id": "urn:ngm:class:semantic-interoperability",
@@ -146,7 +124,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:skos",
+        "@id": "urn:ngm:class:skos-vocabulary",
         "label": "SKOS"
       }
     ],
@@ -164,10 +142,6 @@ public:: true
       {
         "@id": "urn:ngm:class:knowledge-management",
         "label": "Knowledge Management"
-      },
-      {
-        "@id": "urn:ngm:class:library-cataloging",
-        "label": "Library Cataloging"
       }
     ],
     "standardizedBy": [
@@ -196,7 +170,7 @@ public:: true
         "label": "Blockchain"
       },
       {
-        "@id": "urn:ngm:class:semantic-web",
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       }
     ],
@@ -221,7 +195,7 @@ public:: true
       "label": "Subject Heading List"
     }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

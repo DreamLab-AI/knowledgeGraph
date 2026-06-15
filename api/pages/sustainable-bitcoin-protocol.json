@@ -19,29 +19,17 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:third-party-energy-auditing",
-        "label": "Third-Party Energy Auditing"
-      },
-      {
-        "id": "urn:ngm:class:metering-data-verification",
-        "label": "Metering Data Verification"
-      },
-      {
-        "id": "urn:ngm:class:bitcoin-mining",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
         "label": "Bitcoin Mining"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:green-bitcoin-premium",
-        "label": "Green Bitcoin Premium"
-      },
-      {
-        "id": "urn:ngm:class:esg-investment",
+        "id": "urn:ngm:class:esg-investing",
         "label": "ESG Investment"
       },
       {
-        "id": "urn:ngm:class:environmental-attribute-certificate",
+        "id": "urn:ngm:class:environmental-certificate",
         "label": "Environmental Attribute Certificate"
       }
     ],
@@ -119,7 +107,7 @@
         "label": "Additionality"
       },
       {
-        "id": "urn:ngm:class:energy-provenance-tracking",
+        "id": "urn:ngm:class:provenance-tracking",
         "label": "Energy Provenance Tracking"
       }
     ]

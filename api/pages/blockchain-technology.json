@@ -22,7 +22,7 @@
         "label": "Genesis Block"
       },
       {
-        "id": "urn:ngm:class:transaction-mempool",
+        "id": "urn:ngm:class:mempool",
         "label": "Transaction Mempool"
       },
       {
@@ -114,7 +114,7 @@
         "label": "Digital Signature"
       },
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       },
       {

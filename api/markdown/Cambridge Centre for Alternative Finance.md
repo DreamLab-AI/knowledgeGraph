@@ -61,53 +61,115 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:cambridge-bitcoin-electricity-consumption-index", "label": "Cambridge Bitcoin Electricity Consumption Index"},
-      {"@id": "urn:ngm:class:global-cryptoasset-benchmarking-study", "label": "Global Cryptoasset Benchmarking Study"},
-      {"@id": "urn:ngm:class:global-alternative-finance-market-benchmarking-report", "label": "Global Alternative Finance Market Benchmarking Report"}
+      {
+        "@id": "urn:ngm:class:cambridge-bitcoin-electricity-consumption-index",
+        "label": "Cambridge Bitcoin Electricity Consumption Index"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:cambridge-judge-business-school", "label": "Cambridge Judge Business School"}
+      {
+        "@id": "urn:ngm:class:cambridge-judge-business-school",
+        "label": "Cambridge Judge Business School"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:empirical-research-methodology", "label": "Empirical Research Methodology"},
-      {"@id": "urn:ngm:class:survey-based-data-collection", "label": "Survey-Based Data Collection"}
+      {
+        "@id": "urn:ngm:class:research-methods",
+        "label": "Empirical Research Methodology"
+      },
+      {
+        "@id": "urn:ngm:class:data-collection",
+        "label": "Survey-Based Data Collection"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cryptocurrency-regulation", "label": "Cryptocurrency Regulation"},
-      {"@id": "urn:ngm:class:cryptoasset-policy", "label": "Cryptoasset Policy"},
-      {"@id": "urn:ngm:class:fintech-benchmarking", "label": "Fintech Benchmarking"}
+      {
+        "@id": "urn:ngm:class:cryptocurrency-regulation",
+        "label": "Cryptocurrency Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:cryptoasset-regulatory-framework",
+        "label": "Cryptoasset Policy"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:blockchain-network-data", "label": "Blockchain Network Data"},
-      {"@id": "urn:ngm:class:open-data-publishing", "label": "Open Data Publishing"}
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network Data"
+      },
+      {
+        "@id": "urn:ngm:class:open-data",
+        "label": "Open Data Publishing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:peer-to-peer-lending", "label": "Peer-to-Peer Lending"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-trading",
+        "label": "Peer-to-Peer Lending"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
-      {"@id": "urn:ngm:class:sustainable-finance", "label": "Sustainable Finance"},
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"}
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-finance",
+        "label": "Sustainable Finance"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:traditional-banking", "label": "Traditional Banking"},
-      {"@id": "urn:ngm:class:incumbent-financial-system", "label": "Incumbent Financial System"}
+      {
+        "@id": "urn:ngm:class:traditional-banking",
+        "label": "Traditional Banking"
+      },
+      {
+        "@id": "urn:ngm:class:financial-system",
+        "label": "Incumbent Financial System"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:bitcoin-environmental-issues", "label": "Bitcoin Environmental Issues"},
-      {"@id": "urn:ngm:class:energy-consumption-monitoring", "label": "Energy Consumption Monitoring"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues",
+        "label": "Bitcoin Environmental Issues"
+      },
+      {
+        "@id": "urn:ngm:class:energy-consumption",
+        "label": "Energy Consumption Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
-      {"@id": "urn:ngm:class:crowdfunding", "label": "Crowdfunding"},
-      {"@id": "urn:ngm:class:alternative-finance", "label": "Alternative Finance"}
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:crowdfunding",
+        "label": "Crowdfunding"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ccaf", "label": "CCAF"}
+    {
+      "@id": "urn:ngm:class:ccaf",
+      "label": "CCAF"
+    }
   ],
   "quality": 0.72,
   "qualityScore": 0.72,

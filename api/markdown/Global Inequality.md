@@ -350,20 +350,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:compute-divide",
-        "label": "Compute Divide"
-      },
-      {
         "@id": "urn:ngm:class:digital-divide",
         "label": "Digital Divide"
       },
       {
         "@id": "urn:ngm:class:financial-inclusion",
         "label": "Financial Inclusion"
-      },
-      {
-        "@id": "urn:ngm:class:gender-pay-gap",
-        "label": "Gender Pay Gap"
       },
       {
         "@id": "urn:ngm:class:gini-coefficient",
@@ -374,33 +366,17 @@ public:: true
         "label": "Income Inequality"
       },
       {
-        "@id": "urn:ngm:class:intergenerational-mobility",
-        "label": "Intergenerational Mobility"
-      },
-      {
-        "@id": "urn:ngm:class:labour-income-share",
-        "label": "Labour Income Share"
-      },
-      {
         "@id": "urn:ngm:class:wealth-inequality",
         "label": "Wealth Inequality"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:distributional-data",
-        "label": "Distributional Data"
-      },
-      {
-        "@id": "urn:ngm:class:household-survey-data",
-        "label": "Household Survey Data"
-      },
-      {
         "@id": "urn:ngm:class:national-accounts",
         "label": "National Accounts"
       },
       {
-        "@id": "urn:ngm:class:corporate-tax-compliance-framework-record-microdata",
+        "@id": "urn:ngm:class:corporate-tax-compliance-framework",
         "label": "Tax Record Microdata"
       },
       {
@@ -410,35 +386,11 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:digital-infrastructure-investment",
-        "label": "Digital Infrastructure Investment"
-      },
-      {
-        "@id": "urn:ngm:class:policy-design",
-        "label": "Policy Design"
-      },
-      {
-        "@id": "urn:ngm:class:progressive-wealth-tax",
-        "label": "Progressive Wealth Tax"
-      },
-      {
-        "@id": "urn:ngm:class:redistributive-taxation",
-        "label": "Redistributive Taxation"
-      },
-      {
-        "@id": "urn:ngm:class:social-protection",
-        "label": "Social Protection"
-      },
-      {
         "@id": "urn:ngm:class:universal-basic-income",
         "label": "Universal Basic Income"
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:atkinson-index",
-        "label": "Atkinson Index"
-      },
       {
         "@id": "urn:ngm:class:gini-coefficient",
         "label": "Gini Coefficient"
@@ -446,40 +398,12 @@ public:: true
       {
         "@id": "urn:ngm:class:human-development-index",
         "label": "Human Development Index"
-      },
-      {
-        "@id": "urn:ngm:class:palma-ratio",
-        "label": "Palma Ratio"
-      },
-      {
-        "@id": "urn:ngm:class:s80-s20-ratio",
-        "label": "S80/S20 Ratio"
-      },
-      {
-        "@id": "urn:ngm:class:top-income-shares",
-        "label": "Top Income Shares"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:ilo-weso",
-        "label": "ILO WESO"
-      },
-      {
-        "@id": "urn:ngm:class:imf-article-iv-consultations",
-        "label": "IMF Article IV Consultations"
-      },
-      {
-        "@id": "urn:ngm:class:oecd-income-distribution-database",
-        "label": "OECD Income Distribution Database"
-      },
-      {
-        "@id": "urn:ngm:class:undp-human-development-index",
+        "@id": "urn:ngm:class:human-development-index",
         "label": "UNDP Human Development Index"
-      },
-      {
-        "@id": "urn:ngm:class:world-bank-findex",
-        "label": "World Bank Findex"
       },
       {
         "@id": "urn:ngm:class:world-inequality-database",
@@ -488,36 +412,12 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:ai-labour-displacement",
-        "label": "AI Labour Displacement"
-      },
-      {
-        "@id": "urn:ngm:class:austerity",
-        "label": "Austerity"
-      },
-      {
         "@id": "urn:ngm:class:climate-change",
         "label": "Climate Change"
       },
       {
-        "@id": "urn:ngm:class:financialisation",
-        "label": "Financialisation"
-      },
-      {
         "@id": "urn:ngm:class:human-development-index",
         "label": "Human Development Index"
-      },
-      {
-        "@id": "urn:ngm:class:migration",
-        "label": "Migration"
-      },
-      {
-        "@id": "urn:ngm:class:poverty",
-        "label": "Poverty"
-      },
-      {
-        "@id": "urn:ngm:class:social-mobility",
-        "label": "Social Mobility"
       },
       {
         "@id": "urn:ngm:class:universal-basic-income",
@@ -534,16 +434,8 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:climate-justice",
-        "label": "Climate Justice"
-      },
-      {
         "@id": "urn:ngm:class:financial-inclusion",
         "label": "Financial Inclusion"
-      },
-      {
-        "@id": "urn:ngm:class:global-digital-compact",
-        "label": "Global Digital Compact"
       },
       {
         "@id": "urn:ngm:class:just-transition",
@@ -560,20 +452,8 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:ilo-decent-work-agenda",
-        "label": "ILO Decent Work Agenda"
-      },
-      {
-        "@id": "urn:ngm:class:oecd-guidelines-on-measuring-inequality",
-        "label": "OECD Guidelines on Measuring Inequality"
-      },
-      {
-        "@id": "urn:ngm:class:united-nations-sustainable-development-goals",
+        "@id": "urn:ngm:class:sustainable-development-goals",
         "label": "United Nations Sustainable Development Goals"
-      },
-      {
-        "@id": "urn:ngm:class:world-bank-povcal-net-standards",
-        "label": "World Bank PovcalNet Standards"
       }
     ],
     "bridgesTo": [

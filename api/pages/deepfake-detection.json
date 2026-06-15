@@ -23,7 +23,7 @@
         "label": "Training Dataset"
       },
       {
-        "id": "urn:ngm:class:video-analysis",
+        "id": "urn:ngm:class:computer-vision-video-analysis",
         "label": "Video Analysis"
       }
     ],
@@ -39,10 +39,6 @@
       {
         "id": "urn:ngm:class:media-forensics",
         "label": "Media Forensics"
-      },
-      {
-        "id": "urn:ngm:class:disinformation-mitigation",
-        "label": "Disinformation Mitigation"
       }
     ],
     "dependsOn": [
@@ -98,10 +94,6 @@
         "label": "Vision Transformer"
       },
       {
-        "id": "urn:ngm:class:frequency-domain-analysis",
-        "label": "Frequency Domain Analysis"
-      },
-      {
         "id": "urn:ngm:class:face-recognition",
         "label": "Face Recognition"
       }
@@ -112,7 +104,7 @@
         "label": "Content Provenance"
       },
       {
-        "id": "urn:ngm:class:platform-trust-and-safety",
+        "id": "urn:ngm:class:trust-and-safety",
         "label": "Platform Trust and Safety"
       }
     ],
@@ -126,10 +118,6 @@
       {
         "id": "urn:ngm:class:diffusion-model",
         "label": "Diffusion Model"
-      },
-      {
-        "id": "urn:ngm:class:audio-forensics",
-        "label": "Audio Forensics"
       }
     ]
   },

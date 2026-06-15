@@ -64,53 +64,133 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:model-registry", "label": "Model Registry"},
-      {"@id": "urn:ngm:class:inference-server", "label": "Inference Server"},
-      {"@id": "urn:ngm:class:monitoring-system", "label": "Monitoring System"},
-      {"@id": "urn:ngm:class:load-balancer", "label": "Load Balancer"}
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring-system",
+        "label": "Monitoring System"
+      },
+      {
+        "@id": "urn:ngm:class:load-balancer",
+        "label": "Load Balancer"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:container-orchestration", "label": "Container Orchestration"},
-      {"@id": "urn:ngm:class:networking", "label": "Networking"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:networking",
+        "label": "Networking"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"},
-      {"@id": "urn:ngm:class:high-availability", "label": "High Availability"},
-      {"@id": "urn:ngm:class:elastic-scaling", "label": "Elastic Scaling"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "@id": "urn:ngm:class:elastic-scaling",
+        "label": "Elastic Scaling"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:infrastructure-as-code", "label": "Infrastructure as Code"},
-      {"@id": "urn:ngm:class:service-mesh", "label": "Service Mesh"}
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:multi-tenancy", "label": "Multi-Tenancy"}
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:multi-tenancy",
+        "label": "Multi-Tenancy"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"},
-      {"@id": "urn:ngm:class:devops", "label": "DevOps"}
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:model-architecture", "label": "Model Architecture"},
-      {"@id": "urn:ngm:class:monolithic-architecture", "label": "Monolithic Architecture"}
+      {
+        "@id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:monolithic-architecture",
+        "label": "Monolithic Architecture"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"},
-      {"@id": "urn:ngm:class:security-architecture", "label": "Security Architecture"}
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:security-architecture",
+        "label": "Security Architecture"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:technical-architecture", "label": "Technical Architecture"},
-    {"@id": "urn:ngm:class:solution-architecture", "label": "Solution Architecture"}
+    {
+      "@id": "urn:ngm:class:technical-architecture",
+      "label": "Technical Architecture"
+    },
+    {
+      "@id": "urn:ngm:class:solution-architecture",
+      "label": "Solution Architecture"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

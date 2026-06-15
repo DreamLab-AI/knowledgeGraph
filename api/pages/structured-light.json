@@ -99,14 +99,6 @@
       {
         "id": "urn:ngm:class:triangulation",
         "label": "Triangulation"
-      },
-      {
-        "id": "urn:ngm:class:phase-shifting",
-        "label": "Phase Shifting"
-      },
-      {
-        "id": "urn:ngm:class:gray-code",
-        "label": "Gray Code"
       }
     ],
     "supports": [],
@@ -130,12 +122,8 @@
         "label": "Camera Calibration"
       },
       {
-        "id": "urn:ngm:class:time-of-flight-sensing",
+        "id": "urn:ngm:class:time-of-flight-sensor",
         "label": "Time-of-Flight Sensing"
-      },
-      {
-        "id": "urn:ngm:class:optical-profilometry",
-        "label": "Optical Profilometry"
       }
     ]
   },

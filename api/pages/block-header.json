@@ -40,10 +40,6 @@
       {
         "id": "urn:ngm:class:difficulty",
         "label": "Difficulty"
-      },
-      {
-        "id": "urn:ngm:class:previous-block-hash",
-        "label": "Previous Block Hash"
       }
     ],
     "requires": [
@@ -53,10 +49,6 @@
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:chain-validation",
-        "label": "Chain Validation"
-      },
       {
         "id": "urn:ngm:class:light-client",
         "label": "Light Client"
@@ -73,12 +65,7 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:block-body",
-        "label": "Block Body"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:distributed-systems",
@@ -115,7 +102,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-iec-23257",
+        "id": "urn:ngm:class:iso-iec-23257-2021",
         "label": "ISO/IEC 23257"
       },
       {

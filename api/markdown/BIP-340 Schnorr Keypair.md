@@ -24,57 +24,140 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:cryptographic-keys", "label": "Cryptographic Keys"}
+    {
+      "@id": "urn:ngm:class:cryptographic-keys",
+      "label": "Cryptographic Keys"
+    }
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:schnorr-signature", "label": "Schnorr Signature"},
-      {"@id": "urn:ngm:class:secp256k1", "label": "secp256k1"},
-      {"@id": "urn:ngm:class:bip-340", "label": "BIP-340"},
-      {"@id": "urn:ngm:class:bip-341", "label": "BIP-341"},
-      {"@id": "urn:ngm:class:discrete-logarithm-problem", "label": "Discrete Logarithm Problem"},
-      {"@id": "urn:ngm:class:bip-327", "label": "BIP-327"}
+      {
+        "@id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "@id": "urn:ngm:class:secp256k1",
+        "label": "secp256k1"
+      },
+      {
+        "@id": "urn:ngm:class:bip-340",
+        "label": "BIP-340"
+      },
+      {
+        "@id": "urn:ngm:class:bip-341",
+        "label": "BIP-341"
+      },
+      {
+        "@id": "urn:ngm:class:discrete-logarithm-problem",
+        "label": "Discrete Logarithm Problem"
+      },
+      {
+        "@id": "urn:ngm:class:bip-327",
+        "label": "BIP-327"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:taproot-assets", "label": "Taproot Assets"},
-      {"@id": "urn:ngm:class:multi-sig-governance", "label": "Multi Sig Governance"},
-      {"@id": "urn:ngm:class:tapscript", "label": "Tapscript"},
-      {"@id": "urn:ngm:class:musig2", "label": "MuSig2"},
-      {"@id": "urn:ngm:class:nostr-protocol", "label": "Nostr Protocol"},
-      {"@id": "urn:ngm:class:key-aggregation", "label": "Key Aggregation"}
+      {
+        "@id": "urn:ngm:class:taproot-assets",
+        "label": "Taproot Assets"
+      },
+      {
+        "@id": "urn:ngm:class:multi-sig-governance",
+        "label": "Multi Sig Governance"
+      },
+      {
+        "@id": "urn:ngm:class:bip-342-tapscript",
+        "label": "Tapscript"
+      },
+      {
+        "@id": "urn:ngm:class:musig2",
+        "label": "MuSig2"
+      },
+      {
+        "@id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:key-aggregation",
+        "label": "Key Aggregation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
-      {"@id": "urn:ngm:class:x-only-public-key", "label": "X-Only Public Key"},
-      {"@id": "urn:ngm:class:random-oracle-model", "label": "Random Oracle Model"}
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:x-only-public-key",
+        "label": "X-Only Public Key"
+      },
+      {
+        "@id": "urn:ngm:class:random-oracle-model",
+        "label": "Random Oracle Model"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals", "label": "Bitcoin Improvement Proposals"},
-      {"@id": "urn:ngm:class:taproot-upgrade", "label": "Taproot Upgrade"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
+        "label": "Bitcoin Improvement Proposals"
+      },
+      {
+        "@id": "urn:ngm:class:taproot",
+        "label": "Taproot Upgrade"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:secp256k1-elliptic-curve", "label": "secp256k1 Elliptic Curve"},
-      {"@id": "urn:ngm:class:private-key", "label": "Private Key"}
+      {
+        "@id": "urn:ngm:class:secp256k1-elliptic-curve",
+        "label": "secp256k1 Elliptic Curve"
+      },
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ecdsa", "label": "ECDSA"},
-      {"@id": "urn:ngm:class:compressed-public-key", "label": "Compressed Public Key"}
+      {
+        "@id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:bitcoin-core-development", "label": "Bitcoin Core Development"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
+        "label": "Bitcoin Core Development"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:decentralized-identifier", "label": "Decentralized Identifier"}
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:tagged-hash", "label": "Tagged Hash"}
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:tagged-hash",
+        "label": "Tagged Hash"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:schnorr-keypair", "label": "Schnorr Keypair"},
-    {"@id": "urn:ngm:class:taproot-keypair", "label": "Taproot Keypair"}
+    {
+      "@id": "urn:ngm:class:schnorr-keypair",
+      "label": "Schnorr Keypair"
+    },
+    {
+      "@id": "urn:ngm:class:taproot-keypair",
+      "label": "Taproot Keypair"
+    }
   ],
   "quality": 0.72,
   "provenance": {

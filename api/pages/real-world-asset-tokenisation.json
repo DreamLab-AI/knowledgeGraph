@@ -22,10 +22,6 @@
         "label": "Token Issuance"
       },
       {
-        "id": "urn:ngm:class:transfer-restriction-mechanism",
-        "label": "Transfer Restriction Mechanism"
-      },
-      {
         "id": "urn:ngm:class:redemption-mechanism",
         "label": "Redemption Mechanism"
       }
@@ -68,10 +64,6 @@
       {
         "id": "urn:ngm:class:automated-market-maker",
         "label": "Automated Market Maker"
-      },
-      {
-        "id": "urn:ngm:class:on-chain-collateral",
-        "label": "On-Chain Collateral"
       }
     ],
     "dependsOn": [],
@@ -146,10 +138,6 @@
       {
         "id": "urn:ngm:class:security-token-offering",
         "label": "Security Token Offering"
-      },
-      {
-        "id": "urn:ngm:class:tokenised-fund",
-        "label": "Tokenised Fund"
       },
       {
         "id": "urn:ngm:class:stablecoin",

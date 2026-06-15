@@ -18,10 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:game-design",
-        "label": "Game Design"
-      },
-      {
         "id": "urn:ngm:class:game-engine",
         "label": "Game Engine"
       },
@@ -30,16 +26,8 @@
         "label": "Real-Time Rendering"
       },
       {
-        "id": "urn:ngm:class:audio-engineering",
-        "label": "Audio Engineering"
-      },
-      {
         "id": "urn:ngm:class:quality-assurance",
         "label": "Quality Assurance"
-      },
-      {
-        "id": "urn:ngm:class:game-physics",
-        "label": "Game Physics"
       }
     ],
     "requires": [
@@ -60,10 +48,6 @@
       {
         "id": "urn:ngm:class:npc-interaction",
         "label": "NPC Interaction"
-      },
-      {
-        "id": "urn:ngm:class:serious-games",
-        "label": "Serious Games"
       },
       {
         "id": "urn:ngm:class:digital-twin",
@@ -127,7 +111,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:interactive-software-development",
+        "id": "urn:ngm:class:software-development",
         "label": "Interactive Software Development"
       },
       {

@@ -24,10 +24,6 @@
       {
         "id": "urn:ngm:class:mini-batch",
         "label": "Mini-Batch"
-      },
-      {
-        "id": "urn:ngm:class:training-iteration",
-        "label": "Training Iteration"
       }
     ],
     "requires": [
@@ -42,7 +38,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:model-convergence",
+        "id": "urn:ngm:class:convergence",
         "label": "Model Convergence"
       },
       {
@@ -112,7 +108,7 @@
         "label": "Learning Rate"
       },
       {
-        "id": "urn:ngm:class:learning-rate-scheduling",
+        "id": "urn:ngm:class:learning-rate-schedule",
         "label": "Learning Rate Scheduling"
       },
       {

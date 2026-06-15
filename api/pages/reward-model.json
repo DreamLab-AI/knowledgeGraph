@@ -16,16 +16,7 @@
   "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:reward-head",
-        "label": "Reward Head"
-      },
-      {
-        "id": "urn:ngm:class:preference-prediction",
-        "label": "Preference Prediction"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:human-feedback",
@@ -63,10 +54,6 @@
       }
     ],
     "dependsOn": [
-      {
-        "id": "urn:ngm:class:base-language-model",
-        "label": "Base Language Model"
-      },
       {
         "id": "urn:ngm:class:human-annotation",
         "label": "Human Annotation"
@@ -113,10 +100,6 @@
       {
         "id": "urn:ngm:class:rlhf-pipeline",
         "label": "RLHF Pipeline"
-      },
-      {
-        "id": "urn:ngm:class:post-training-pipeline",
-        "label": "Post-Training Pipeline"
       }
     ],
     "relatedTo": [
@@ -133,7 +116,7 @@
         "label": "Preference Learning"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai",
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
       }
     ]

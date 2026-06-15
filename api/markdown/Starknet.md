@@ -75,12 +75,8 @@ public:: true
         "label": "Ethereum Smart Contract Platform"
       },
       {
-        "@id": "urn:ngm:class:cairo-programming-language",
+        "@id": "urn:ngm:class:programming-language",
         "label": "Cairo Programming Language"
-      },
-      {
-        "@id": "urn:ngm:class:proof-generation",
-        "label": "Proof Generation"
       }
     ],
     "enables": [
@@ -93,22 +89,18 @@ public:: true
         "label": "Decentralised Application"
       },
       {
-        "@id": "urn:ngm:class:provable-computation",
+        "@id": "urn:ngm:class:verifiable-computation",
         "label": "Provable Computation"
       }
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:stark-proof",
+        "@id": "urn:ngm:class:stark",
         "label": "STARK Proof"
       },
       {
         "@id": "urn:ngm:class:sequencer",
         "label": "Sequencer"
-      },
-      {
-        "@id": "urn:ngm:class:prover",
-        "label": "Prover"
       }
     ],
     "partOf": [
@@ -117,7 +109,7 @@ public:: true
         "label": "Blockchain"
       },
       {
-        "@id": "urn:ngm:class:ethereum-ecosystem",
+        "@id": "urn:ngm:class:ethereum",
         "label": "Ethereum Ecosystem"
       }
     ],
@@ -145,10 +137,6 @@ public:: true
       {
         "@id": "urn:ngm:class:optimistic-rollup",
         "label": "Optimistic Rollup"
-      },
-      {
-        "@id": "urn:ngm:class:zkrollup",
-        "label": "ZK Rollup"
       }
     ],
     "bridgesTo": [
@@ -162,10 +150,6 @@ public:: true
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:zksync",
-        "label": "ZKSync"
-      },
       {
         "@id": "urn:ngm:class:polygon-zkevm",
         "label": "Polygon zkEVM"

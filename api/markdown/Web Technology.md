@@ -49,55 +49,137 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:http", "label": "HTTP"},
-      {"@id": "urn:ngm:class:html", "label": "HTML"},
-      {"@id": "urn:ngm:class:css", "label": "CSS"},
-      {"@id": "urn:ngm:class:javascript", "label": "JavaScript"},
-      {"@id": "urn:ngm:class:webassembly", "label": "WebAssembly"},
-      {"@id": "urn:ngm:class:ipfs", "label": "IPFS"},
-      {"@id": "urn:ngm:class:ens", "label": "ENS"},
-      {"@id": "urn:ngm:class:web3", "label": "Web3"}
+      {
+        "@id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "@id": "urn:ngm:class:html",
+        "label": "HTML"
+      },
+      {
+        "@id": "urn:ngm:class:css",
+        "label": "CSS"
+      },
+      {
+        "@id": "urn:ngm:class:javascript",
+        "label": "JavaScript"
+      },
+      {
+        "@id": "urn:ngm:class:webassembly",
+        "label": "WebAssembly"
+      },
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "@id": "urn:ngm:class:ens",
+        "label": "ENS"
+      },
+      {
+        "@id": "urn:ngm:class:web3",
+        "label": "Web3"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:content-addressing", "label": "Content Addressing"},
-      {"@id": "urn:ngm:class:progressive-web-app", "label": "Progressive Web App"},
-      {"@id": "urn:ngm:class:real-time-communication", "label": "Real-Time Communication"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      },
+      {
+        "@id": "urn:ngm:class:progressive-web-app",
+        "label": "Progressive Web App"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:dns", "label": "DNS"},
-      {"@id": "urn:ngm:class:tls", "label": "TLS"},
-      {"@id": "urn:ngm:class:tcp-ip", "label": "TCP/IP"}
+      {
+        "@id": "urn:ngm:class:dns",
+        "label": "DNS"
+      },
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "@id": "urn:ngm:class:tcp-ip",
+        "label": "TCP/IP"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:decentralized-storage", "label": "Decentralized Storage"},
-      {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
-      {"@id": "urn:ngm:class:graphql", "label": "GraphQL"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
+      },
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:graphql",
+        "label": "GraphQL"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:w3c", "label": "W3C"},
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"},
-      {"@id": "urn:ngm:class:whatwg", "label": "WHATWG"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:native-application", "label": "Native Application"},
-      {"@id": "urn:ngm:class:centralized-cloud", "label": "Centralised Cloud"}
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:whatwg",
+        "label": "WHATWG"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:web-browser", "label": "Web Browser"},
-      {"@id": "urn:ngm:class:web-server", "label": "Web Server"},
-      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"}
+      {
+        "@id": "urn:ngm:class:web-browser",
+        "label": "Web Browser"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:web-stack", "label": "Web Stack"},
-    {"@id": "urn:ngm:class:internet-technology", "label": "Internet Technology"}
+    {
+      "@id": "urn:ngm:class:web-stack",
+      "label": "Web Stack"
+    },
+    {
+      "@id": "urn:ngm:class:internet-technology",
+      "label": "Internet Technology"
+    }
   ],
   "quality": 0.72,
   "provenance": {

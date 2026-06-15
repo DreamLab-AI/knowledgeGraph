@@ -110,11 +110,11 @@ public:: true
         "label": "continuous improvement"
       },
       {
-        "@id": "urn:ngm:class:effective-governance",
+        "@id": "urn:ngm:class:governance",
         "label": "Effective governance"
       },
       {
-        "@id": "urn:ngm:class:redress",
+        "@id": "urn:ngm:class:redress-procedure",
         "label": "redress"
       }
     ],

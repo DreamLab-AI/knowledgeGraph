@@ -526,7 +526,7 @@ public:: true
         "label": "Continual Learning"
       },
       {
-        "@id": "urn:ngm:class:decision-support-system",
+        "@id": "urn:ngm:class:decision-support",
         "label": "Decision Support System"
       },
       {
@@ -544,28 +544,8 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:act-r",
-        "label": "ACT-R"
-      },
-      {
-        "@id": "urn:ngm:class:clarion",
-        "label": "CLARION"
-      },
-      {
-        "@id": "urn:ngm:class:co-ala",
-        "label": "CoALA"
-      },
-      {
         "@id": "urn:ngm:class:companion-cognitive-architecture",
         "label": "Companion Cognitive Architecture"
-      },
-      {
-        "@id": "urn:ngm:class:lida",
-        "label": "LIDA"
-      },
-      {
-        "@id": "urn:ngm:class:nars",
-        "label": "NARS"
       },
       {
         "@id": "urn:ngm:class:sigma-architecture",
@@ -652,23 +632,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:aaai-cognitive-systems",
-        "label": "AAAI Cognitive Systems"
-      },
-      {
-        "@id": "urn:ngm:class:advances-in-cognitive-systems-journal",
-        "label": "Advances in Cognitive Systems Journal"
-      },
-      {
-        "@id": "urn:ngm:class:cognitive-science-society",
-        "label": "Cognitive Science Society"
-      },
-      {
-        "@id": "urn:ngm:class:iccm-conference",
-        "label": "ICCM Conference"
-      },
-      {
-        "@id": "urn:ngm:class:soar-workshop",
+        "@id": "urn:ngm:class:soar",
         "label": "Soar Workshop"
       }
     ]

@@ -22,16 +22,12 @@
         "label": "NFT"
       },
       {
-        "id": "urn:ngm:class:virtual-real-estate",
+        "id": "urn:ngm:class:digital-real-estate",
         "label": "Virtual Real Estate"
       },
       {
         "id": "urn:ngm:class:avatar",
         "label": "Avatar"
-      },
-      {
-        "id": "urn:ngm:class:in-game-item",
-        "label": "In-Game Item"
       }
     ],
     "requires": [
@@ -54,7 +50,7 @@
         "label": "Peer-to-Peer Trading"
       },
       {
-        "id": "urn:ngm:class:play-to-earn",
+        "id": "urn:ngm:class:play-to-earn-p2-e",
         "label": "Play-to-Earn"
       }
     ],
@@ -83,10 +79,6 @@
       {
         "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
-      },
-      {
-        "id": "urn:ngm:class:virtual-asset-taxation",
-        "label": "Virtual Asset Taxation"
       }
     ],
     "uses": [
@@ -132,10 +124,6 @@
       {
         "id": "urn:ngm:class:metaverse-platform",
         "label": "Metaverse Platform"
-      },
-      {
-        "id": "urn:ngm:class:collectible",
-        "label": "Collectible"
       },
       {
         "id": "urn:ngm:class:procedural-generation",

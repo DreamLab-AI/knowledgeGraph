@@ -21,10 +21,6 @@
       {
         "id": "urn:ngm:class:validator-set",
         "label": "Validator Set"
-      },
-      {
-        "id": "urn:ngm:class:membership-protocol",
-        "label": "Membership Protocol"
       }
     ],
     "enables": [
@@ -90,11 +86,11 @@
         "label": "Consensus Protocol"
       },
       {
-        "id": "urn:ngm:class:threshold-signature",
+        "id": "urn:ngm:class:threshold-signature-scheme",
         "label": "Threshold Signature"
       },
       {
-        "id": "urn:ngm:class:stake-weighted-voting",
+        "id": "urn:ngm:class:token-weighted-voting",
         "label": "Stake-weighted Voting"
       }
     ],

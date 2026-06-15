@@ -87,7 +87,7 @@
         "label": "Batch Processing"
       },
       {
-        "id": "urn:ngm:class:historical-analytics",
+        "id": "urn:ngm:class:data-analytics",
         "label": "Historical Analytics"
       }
     ],
@@ -133,7 +133,7 @@
         "label": "SCADA"
       },
       {
-        "id": "urn:ngm:class:ml-ops",
+        "id": "urn:ngm:class:model-ops",
         "label": "MLOps"
       }
     ],

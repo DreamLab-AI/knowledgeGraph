@@ -26,7 +26,7 @@
         "label": "Statement of Applicability"
       },
       {
-        "id": "urn:ngm:class:risk-treatment-plan",
+        "id": "urn:ngm:class:risk-treatment",
         "label": "Risk Treatment Plan"
       }
     ],
@@ -38,10 +38,6 @@
       {
         "id": "urn:ngm:class:internal-audit",
         "label": "Internal Audit"
-      },
-      {
-        "id": "urn:ngm:class:management-review",
-        "label": "Management Review"
       }
     ],
     "enables": [
@@ -115,7 +111,7 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:iso-iec-27000-family",
+        "id": "urn:ngm:class:iso-iec-27001",
         "label": "ISO/IEC 27000 Family"
       }
     ],

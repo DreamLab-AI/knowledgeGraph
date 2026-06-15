@@ -62,7 +62,7 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:parallel-training",
+        "@id": "urn:ngm:class:training",
         "label": "Parallel Training"
       }
     ]

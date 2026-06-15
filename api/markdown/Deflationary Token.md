@@ -94,53 +94,131 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:burning-mechanism", "label": "Burning Mechanism"},
-      {"@id": "urn:ngm:class:supply-cap", "label": "Supply Cap"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"}
+      {
+        "@id": "urn:ngm:class:burning-mechanism",
+        "label": "Burning Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:supply-cap",
+        "label": "Supply Cap"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:inflationary-token", "label": "Inflationary Token"},
-      {"@id": "urn:ngm:class:native-token", "label": "Native Token"},
-      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
-      {"@id": "urn:ngm:class:elastic-supply-token", "label": "Elastic Supply Token"}
+      {
+        "@id": "urn:ngm:class:inflationary-token",
+        "label": "Inflationary Token"
+      },
+      {
+        "@id": "urn:ngm:class:native-token",
+        "label": "Native Token"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:blockchain-economics", "label": "Blockchain Economics"},
-      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"},
-      {"@id": "urn:ngm:class:scarcity", "label": "Scarcity"},
-      {"@id": "urn:ngm:class:store-of-value", "label": "Store of Value"},
-      {"@id": "urn:ngm:class:monetary-policy", "label": "Monetary Policy"}
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      },
+      {
+        "@id": "urn:ngm:class:scarcity",
+        "label": "Scarcity"
+      },
+      {
+        "@id": "urn:ngm:class:store-of-value",
+        "label": "Store of Value"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-Chain Governance"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:price-appreciation", "label": "Price Appreciation"},
-      {"@id": "urn:ngm:class:long-term-holding", "label": "Long-Term Holding"},
-      {"@id": "urn:ngm:class:economic-incentive", "label": "Economic Incentive"}
+      {
+        "@id": "urn:ngm:class:economic-incentive",
+        "label": "Economic Incentive"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
-      {"@id": "urn:ngm:class:token-standard", "label": "Token Standard"}
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"},
-      {"@id": "urn:ngm:class:decentralized-finance", "label": "Decentralized Finance"},
-      {"@id": "urn:ngm:class:non-fungible-token", "label": "Non-Fungible Token"}
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:burn-token", "label": "Burn Token"},
-    {"@id": "urn:ngm:class:deflationary-cryptocurrency", "label": "Deflationary Cryptocurrency"}
+    {
+      "@id": "urn:ngm:class:burn-token",
+      "label": "Burn Token"
+    },
+    {
+      "@id": "urn:ngm:class:deflationary-cryptocurrency",
+      "label": "Deflationary Cryptocurrency"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

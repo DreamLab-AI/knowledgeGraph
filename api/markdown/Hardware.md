@@ -53,57 +53,145 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:hardware-component", "label": "Hardware Component"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:central-processing-unit", "label": "Central Processing Unit"},
-      {"@id": "urn:ngm:class:memory-subsystem", "label": "Memory Subsystem"},
-      {"@id": "urn:ngm:class:storage-device", "label": "Storage Device"},
-      {"@id": "urn:ngm:class:sensor", "label": "Sensor"}
+      {
+        "@id": "urn:ngm:class:hardware-component",
+        "label": "Hardware Component"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:central-processing-unit",
+        "label": "Central Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:memory-subsystem",
+        "label": "Memory Subsystem"
+      },
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:on-device-inference", "label": "On-Device Inference"}
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:on-device-inference",
+        "label": "On-Device Inference"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:operating-system", "label": "Operating System"},
-      {"@id": "urn:ngm:class:device-driver", "label": "Device Driver"},
-      {"@id": "urn:ngm:class:power-management", "label": "Power Management"}
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:device-drivers",
+        "label": "Device Driver"
+      },
+      {
+        "@id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:semiconductor-fabrication", "label": "Semiconductor Fabrication"},
-      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"}
+      {
+        "@id": "urn:ngm:class:semiconductor-fabrication",
+        "label": "Semiconductor Fabrication"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:hardware-abstraction", "label": "Hardware Abstraction"},
-      {"@id": "urn:ngm:class:hardware-and-edge", "label": "Hardware and Edge"},
-      {"@id": "urn:ngm:class:firmware", "label": "Firmware"},
-      {"@id": "urn:ngm:class:hardware-security-module", "label": "Hardware Security Module"}
+      {
+        "@id": "urn:ngm:class:hardware-abstraction",
+        "label": "Hardware Abstraction"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-and-edge",
+        "label": "Hardware and Edge"
+      },
+      {
+        "@id": "urn:ngm:class:firmware",
+        "label": "Firmware"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ieee", "label": "IEEE"},
-      {"@id": "urn:ngm:class:jedec", "label": "JEDEC"}
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "@id": "urn:ngm:class:jedec",
+        "label": "JEDEC"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:software", "label": "Software"},
-      {"@id": "urn:ngm:class:virtual-machine", "label": "Virtual Machine"}
+      {
+        "@id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:neural-processing-unit", "label": "Neural Processing Unit"},
-      {"@id": "urn:ngm:class:trusted-execution-environment", "label": "Trusted Execution Environment"}
+      {
+        "@id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:computer-hardware", "label": "Computer Hardware"},
-    {"@id": "urn:ngm:class:physical-computing-components", "label": "Physical Computing Components"}
+    {
+      "@id": "urn:ngm:class:computer-hardware",
+      "label": "Computer Hardware"
+    },
+    {
+      "@id": "urn:ngm:class:physical-computing-components",
+      "label": "Physical Computing Components"
+    }
   ],
   "quality": 0.74,
   "provenance": {

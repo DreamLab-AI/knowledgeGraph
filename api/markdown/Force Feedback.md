@@ -24,49 +24,117 @@ alias:: ForceFeedback
   "definition": "Force feedback is a class of haptic technology that renders mechanical forces — including resistance, weight, texture, and impact — directly to a user's body through a controlled actuator system, enabling the sense of touch and proprioception to convey information about virtual or remote physical environments. Distinguished from simpler vibrotactile feedback by its ability to generate directional, grounded forces (requiring a mechanical linkage to the user), force feedback systems are used in surgical simulators, teleoperation of remote robots, vehicle simulation, and advanced XR interfaces. The fidelity of the rendered force field is constrained by the bandwidth, peak force, backdrivability, and transparency of the underlying actuator mechanism.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:haptics", "label": "Haptics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:haptics",
+      "label": "Haptics"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:series-elastic-actuator", "label": "Series Elastic Actuator"},
-      {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"},
-      {"@id": "urn:ngm:class:impedance-control", "label": "Impedance Control"},
-      {"@id": "urn:ngm:class:pid-controller", "label": "PID Controller"}
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:series-elastic-actuator",
+        "label": "Series Elastic Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "@id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "@id": "urn:ngm:class:pid-controller",
+        "label": "PID Controller"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:haptic-feedback-system", "label": "Haptic Feedback System"},
-      {"@id": "urn:ngm:class:tactile-sensing", "label": "Tactile Sensing"},
-      {"@id": "urn:ngm:class:proprioception", "label": "Proprioception"},
-      {"@id": "urn:ngm:class:bilateral-teleoperation", "label": "Bilateral Teleoperation"},
-      {"@id": "urn:ngm:class:vibrotactile-feedback", "label": "Vibrotactile Feedback"}
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback-system",
+        "label": "Haptic Feedback System"
+      },
+      {
+        "@id": "urn:ngm:class:tactile-sensing",
+        "label": "Tactile Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:proprioception",
+        "label": "Proprioception"
+      },
+      {
+        "@id": "urn:ngm:class:teleoperation",
+        "label": "Bilateral Teleoperation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:haptic-feedback-telepresence", "label": "Haptic Feedback Telepresence"},
-      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
-      {"@id": "urn:ngm:class:surgical-simulation", "label": "Surgical Simulation"},
-      {"@id": "urn:ngm:class:dexterous-manipulation", "label": "Dexterous Manipulation"}
+      {
+        "@id": "urn:ngm:class:haptic-feedback-telepresence",
+        "label": "Haptic Feedback Telepresence"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-simulation",
+        "label": "Surgical Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:dexterous-manipulation",
+        "label": "Dexterous Manipulation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:haptic-rendering", "label": "Haptic Rendering"},
-      {"@id": "urn:ngm:class:real-time-control", "label": "Real-Time Control"}
+      {
+        "@id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"}
+      {
+        "@id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:visual-feedback", "label": "Visual Feedback"},
-      {"@id": "urn:ngm:class:auditory-feedback", "label": "Auditory Feedback"}
+      {
+        "@id": "urn:ngm:class:visual-feedback",
+        "label": "Visual Feedback"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:kinesthetic-feedback", "label": "Kinesthetic Feedback"},
-    {"@id": "urn:ngm:class:force-reflection", "label": "Force Reflection"}
+    {
+      "@id": "urn:ngm:class:kinesthetic-feedback",
+      "label": "Kinesthetic Feedback"
+    },
+    {
+      "@id": "urn:ngm:class:force-reflection",
+      "label": "Force Reflection"
+    }
   ],
   "quality": 0.72,
   "provenance": {

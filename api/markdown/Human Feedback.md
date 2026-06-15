@@ -55,55 +55,117 @@ public:: true
   },
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:reward-model", "label": "Reward Model"},
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:preference-learning", "label": "Preference Learning"},
-      {"@id": "urn:ngm:class:constitutional-ai", "label": "Constitutional AI"}
+      {
+        "@id": "urn:ngm:class:reward-model",
+        "label": "Reward Model"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:preference-learning",
+        "label": "Preference Learning"
+      },
+      {
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine Tuning"},
-      {"@id": "urn:ngm:class:human-annotator", "label": "Human Annotator"},
-      {"@id": "urn:ngm:class:annotation-guideline", "label": "Annotation Guideline"}
+      {
+        "@id": "urn:ngm:class:supervised-fine-tuning",
+        "label": "Supervised Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:human-annotator",
+        "label": "Human Annotator"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:pairwise-ranking", "label": "Pairwise Ranking"},
-      {"@id": "urn:ngm:class:demonstration-data", "label": "Demonstration Data"},
-      {"@id": "urn:ngm:class:preference-dataset", "label": "Preference Dataset"}
-    ],
-    "partOf": [
-      {"@id": "urn:ngm:class:alignment-training-pipeline", "label": "Alignment Training Pipeline"}
+      {
+        "@id": "urn:ngm:class:demonstration-data",
+        "label": "Demonstration Data"
+      },
+      {
+        "@id": "urn:ngm:class:preference-dataset",
+        "label": "Preference Dataset"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"},
-      {"@id": "urn:ngm:class:inter-annotator-agreement", "label": "Inter-Annotator Agreement"}
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "@id": "urn:ngm:class:inter-annotator-agreement",
+        "label": "Inter-Annotator Agreement"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:labelling-workforce", "label": "Labelling Workforce"}
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ai-feedback", "label": "AI Feedback"},
-      {"@id": "urn:ngm:class:implicit-feedback", "label": "Implicit Feedback"}
+      {
+        "@id": "urn:ngm:class:ai-feedback",
+        "label": "AI Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:implicit-feedback",
+        "label": "Implicit Feedback"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"},
-      {"@id": "urn:ngm:class:bias-mitigation", "label": "Bias Mitigation"},
-      {"@id": "urn:ngm:class:instruction-following", "label": "Instruction Following"},
-      {"@id": "urn:ngm:class:training-signal", "label": "Training Signal"}
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
+      {
+        "@id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation"
+      },
+      {
+        "@id": "urn:ngm:class:instruction-following",
+        "label": "Instruction Following"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:human-preference-signal", "label": "Human Preference Signal"},
-    {"@id": "urn:ngm:class:human-label", "label": "Human Label"}
+    {
+      "@id": "urn:ngm:class:human-preference-signal",
+      "label": "Human Preference Signal"
+    },
+    {
+      "@id": "urn:ngm:class:human-label",
+      "label": "Human Label"
+    }
   ],
   "quality": 0.72,
   "provenance": {

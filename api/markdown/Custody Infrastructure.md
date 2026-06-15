@@ -24,60 +24,146 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:custody", "label": "Custody"}
+    {
+      "@id": "urn:ngm:class:custody",
+      "label": "Custody"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:hardware-security-module", "label": "Hardware Security Module"},
-      {"@id": "urn:ngm:class:cold-storage", "label": "Cold Storage"},
-      {"@id": "urn:ngm:class:key-management-system", "label": "Key Management System"},
-      {"@id": "urn:ngm:class:policy-engine", "label": "Policy Engine"}
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "@id": "urn:ngm:class:cold-storage",
+        "label": "Cold Storage"
+      },
+      {
+        "@id": "urn:ngm:class:key-management-system",
+        "label": "Key Management System"
+      },
+      {
+        "@id": "urn:ngm:class:policy-engine",
+        "label": "Policy Engine"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:digital-asset-infrastructure", "label": "Digital Asset Infrastructure"},
-      {"@id": "urn:ngm:class:financial-market-infrastructure", "label": "Financial Market Infrastructure"}
+      {
+        "@id": "urn:ngm:class:digital-asset-infrastructure",
+        "label": "Digital Asset Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:financial-market-infrastructure",
+        "label": "Financial Market Infrastructure"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:multi-signature", "label": "Multi-Signature"},
-      {"@id": "urn:ngm:class:multi-party-computation", "label": "Multi-Party Computation"},
-      {"@id": "urn:ngm:class:threshold-signature-scheme", "label": "Threshold Signature Scheme"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:multi-signature",
+        "label": "Multi-Signature"
+      },
+      {
+        "@id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:institutional-digital-asset-custody", "label": "Institutional Digital Asset Custody"},
-      {"@id": "urn:ngm:class:tokenised-real-world-assets", "label": "Tokenised Real World Assets"},
-      {"@id": "urn:ngm:class:digital-asset-etf", "label": "Digital Asset ETF"}
+      {
+        "@id": "urn:ngm:class:institutional-digital-asset-custody",
+        "label": "Institutional Digital Asset Custody"
+      },
+      {
+        "@id": "urn:ngm:class:tokenised-real-world-assets",
+        "label": "Tokenised Real World Assets"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-etf",
+        "label": "Digital Asset ETF"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:blockchain-analytics", "label": "Blockchain Analytics"},
-      {"@id": "urn:ngm:class:air-gap", "label": "Air Gap"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:air-gap",
+        "label": "Air Gap"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:institutional-defi", "label": "Institutional DeFi"},
-      {"@id": "urn:ngm:class:qualified-custodian", "label": "Qualified Custodian"}
+      {
+        "@id": "urn:ngm:class:institutional-defi",
+        "label": "Institutional DeFi"
+      },
+      {
+        "@id": "urn:ngm:class:qualified-custodian",
+        "label": "Qualified Custodian"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:mica-regulation", "label": "MiCA Regulation"},
-      {"@id": "urn:ngm:class:occ-interpretive-letter", "label": "OCC Interpretive Letter"}
+      {
+        "@id": "urn:ngm:class:bc-0482-eu-mica-regulation",
+        "label": "MiCA Regulation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:self-custody", "label": "Self-Custody"},
-      {"@id": "urn:ngm:class:exchange-custody", "label": "Exchange Custody"}
+      {
+        "@id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "@id": "urn:ngm:class:exchange-custody",
+        "label": "Exchange Custody"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:traditional-securities-custody", "label": "Traditional Securities Custody"},
-      {"@id": "urn:ngm:class:distributed-key-management", "label": "Distributed Key Management"}
+      {
+        "@id": "urn:ngm:class:traditional-securities-custody",
+        "label": "Traditional Securities Custody"
+      },
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Distributed Key Management"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
-      {"@id": "urn:ngm:class:cryptographic-key", "label": "Cryptographic Key"},
-      {"@id": "urn:ngm:class:transaction-signing", "label": "Transaction Signing"}
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-signing",
+        "label": "Transaction Signing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:digital-asset-custody-infrastructure", "label": "Digital Asset Custody Infrastructure"},
-    {"@id": "urn:ngm:class:crypto-custody-infrastructure", "label": "Crypto Custody Infrastructure"}
+    {
+      "@id": "urn:ngm:class:digital-asset-custody-infrastructure",
+      "label": "Digital Asset Custody Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:crypto-custody-infrastructure",
+      "label": "Crypto Custody Infrastructure"
+    }
   ],
   "quality": 0.74,
   "provenance": {

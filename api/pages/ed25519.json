@@ -25,10 +25,6 @@
       {
         "id": "urn:ngm:class:public-key",
         "label": "Public Key"
-      },
-      {
-        "id": "urn:ngm:class:sha-512",
-        "label": "SHA-512"
       }
     ],
     "enables": [
@@ -57,7 +53,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public-Key Cryptography"
       },
       {
@@ -89,32 +85,19 @@
         "label": "Nostr Protocol"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential",
+        "id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       }
     ],
-    "uses": [
-      {
-        "id": "urn:ngm:class:deterministic-signing",
-        "label": "Deterministic Signing"
-      },
-      {
-        "id": "urn:ngm:class:constant-time-algorithm",
-        "label": "Constant-Time Algorithm"
-      }
-    ],
+    "uses": [],
     "supports": [
       {
         "id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential",
+        "id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
-      },
-      {
-        "id": "urn:ngm:class:secure-shell",
-        "label": "Secure Shell"
       }
     ],
     "standardizedBy": [
@@ -141,10 +124,6 @@
       {
         "id": "urn:ngm:class:x25519",
         "label": "X25519"
-      },
-      {
-        "id": "urn:ngm:class:ed448",
-        "label": "Ed448"
       },
       {
         "id": "urn:ngm:class:post-quantum-cryptography",

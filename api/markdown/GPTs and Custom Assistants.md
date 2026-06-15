@@ -438,10 +438,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:conversation-starter",
-        "label": "Conversation Starter"
-      },
-      {
         "@id": "urn:ngm:class:knowledge-base",
         "label": "Knowledge Base"
       },
@@ -450,7 +446,7 @@ public:: true
         "label": "Model Configuration"
       },
       {
-        "@id": "urn:ngm:class:open-api-schema",
+        "@id": "urn:ngm:class:open-api-specification",
         "label": "OpenAPI Schema"
       },
       {
@@ -464,10 +460,6 @@ public:: true
       {
         "@id": "urn:ngm:class:vector-store",
         "label": "Vector Store"
-      },
-      {
-        "@id": "urn:ngm:class:visibility-setting",
-        "label": "Visibility Setting"
       }
     ],
     "requires": [
@@ -494,24 +486,12 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:bot-marketplaces",
-        "label": "Bot Marketplaces"
-      },
-      {
-        "@id": "urn:ngm:class:document-q-and-a",
-        "label": "Document Q&A"
-      },
-      {
         "@id": "urn:ngm:class:enterprise-knowledge-surfacing",
         "label": "Enterprise Knowledge Surfacing"
       },
       {
         "@id": "urn:ngm:class:personalised-ai",
         "label": "Personalised AI"
-      },
-      {
-        "@id": "urn:ngm:class:task-specific-assistant",
-        "label": "Task-Specific Assistant"
       },
       {
         "@id": "urn:ngm:class:workflow-automation",
@@ -576,10 +556,6 @@ public:: true
         "label": "Google Gemini"
       },
       {
-        "@id": "urn:ngm:class:plugins",
-        "label": "Plugins"
-      },
-      {
         "@id": "urn:ngm:class:agent-frameworks",
         "label": "Agent Frameworks"
       },
@@ -610,16 +586,8 @@ public:: true
         "label": "Education"
       },
       {
-        "@id": "urn:ngm:class:healthcare-triage",
-        "label": "Healthcare Triage"
-      },
-      {
         "@id": "urn:ngm:class:legal-research",
         "label": "Legal Research"
-      },
-      {
-        "@id": "urn:ngm:class:newsroom-workflows",
-        "label": "Newsroom Workflows"
       },
       {
         "@id": "urn:ngm:class:code-generation",
@@ -644,7 +612,7 @@ public:: true
         "label": "OAuth 2.0"
       },
       {
-        "@id": "urn:ngm:class:open-api-3-0",
+        "@id": "urn:ngm:class:open-api-specification",
         "label": "OpenAPI 3.0"
       },
       {

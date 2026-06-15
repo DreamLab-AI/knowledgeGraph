@@ -53,52 +53,135 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"},
-      {"@id": "urn:ngm:class:particle-filter", "label": "Particle Filter"},
-      {"@id": "urn:ngm:class:extended-kalman-filter", "label": "Extended Kalman Filter"},
-      {"@id": "urn:ngm:class:factor-graph", "label": "Factor Graph"}
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "@id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      },
+      {
+        "@id": "urn:ngm:class:extended-kalman-filter",
+        "label": "Extended Kalman Filter"
+      },
+      {
+        "@id": "urn:ngm:class:factor-graph",
+        "label": "Factor Graph"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:imu", "label": "IMU"},
-      {"@id": "urn:ngm:class:probabilistic-models", "label": "Probabilistic Models"},
-      {"@id": "urn:ngm:class:system-dynamics", "label": "System Dynamics"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Models"
+      },
+      {
+        "@id": "urn:ngm:class:system-dynamics",
+        "label": "System Dynamics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:navigation", "label": "Navigation"},
-      {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"},
-      {"@id": "urn:ngm:class:autonomous-systems", "label": "Autonomous Systems"}
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
-      {"@id": "urn:ngm:class:stochastic-processes", "label": "Stochastic Processes"},
-      {"@id": "urn:ngm:class:linear-algebra", "label": "Linear Algebra"}
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-processes",
+        "label": "Stochastic Processes"
+      },
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
-      {"@id": "urn:ngm:class:visual-odometry", "label": "Visual Odometry"},
-      {"@id": "urn:ngm:class:wheel-odometry", "label": "Wheel Odometry"},
-      {"@id": "urn:ngm:class:gps", "label": "Gps"}
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:wheel-odometry",
+        "label": "Wheel Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:gps",
+        "label": "Gps"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:deterministic-control", "label": "Deterministic Control"},
-      {"@id": "urn:ngm:class:open-loop-control", "label": "Open-Loop Control"}
+      {
+        "@id": "urn:ngm:class:open-loop-control",
+        "label": "Open-Loop Control"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:robot-dynamics", "label": "Robot Dynamics"},
-      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
-      {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"},
-      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"}
+      {
+        "@id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:state-inference", "label": "State Inference"},
-    {"@id": "urn:ngm:class:belief-estimation", "label": "Belief Estimation"}
+    {
+      "@id": "urn:ngm:class:state-inference",
+      "label": "State Inference"
+    },
+    {
+      "@id": "urn:ngm:class:belief-estimation",
+      "label": "Belief Estimation"
+    }
   ],
   "quality": 0.74,
   "provenance": {

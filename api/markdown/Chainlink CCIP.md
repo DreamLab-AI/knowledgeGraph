@@ -24,51 +24,105 @@ alias:: Chainlink-CCIP
   "definition": "Chainlink Cross-Chain Interoperability Protocol (CCIP) is a cross-chain messaging and token transfer standard developed by Chainlink Labs that enables smart contracts on different blockchain networks to securely send messages and transfer assets across chain boundaries, backed by a decentralised oracle network providing an independent risk management layer that monitors and validates cross-chain transactions. CCIP introduces a programmable token transfer abstraction allowing arbitrary data payloads to accompany token movements, enabling complex cross-chain application logic.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:cross-chain-interoperability",
+    "label": "Cross-Chain Interoperability"
+  },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:chainlink-oracles", "label": "Chainlink Oracles"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:blockchain-oracle", "label": "Blockchain Oracle"},
-      {"@id": "urn:ngm:class:decentralised-oracle-network", "label": "Decentralised Oracle Network"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
+      {
+        "@id": "urn:ngm:class:chainlink-oracles",
+        "label": "Chainlink Oracles"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:oracle-network",
+        "label": "Decentralised Oracle Network"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cross-chain-asset-transfer", "label": "Cross Chain Asset Transfer"},
-      {"@id": "urn:ngm:class:cross-chain-messaging", "label": "Cross-Chain Messaging"},
-      {"@id": "urn:ngm:class:programmable-token-transfer", "label": "Programmable Token Transfer"},
-      {"@id": "urn:ngm:class:cross-chain-defi", "label": "Cross-Chain DeFi"},
-      {"@id": "urn:ngm:class:tokenised-real-world-asset", "label": "Tokenised Real-World Asset"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:risk-management-network", "label": "Risk Management Network"},
-      {"@id": "urn:ngm:class:onramp-contract", "label": "OnRamp Contract"},
-      {"@id": "urn:ngm:class:offramp-contract", "label": "OffRamp Contract"},
-      {"@id": "urn:ngm:class:commit-store", "label": "CommitStore"}
+      {
+        "@id": "urn:ngm:class:cross-chain-asset-transfer",
+        "label": "Cross Chain Asset Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-messaging",
+        "label": "Cross-Chain Messaging"
+      },
+      {
+        "@id": "urn:ngm:class:tokenised-real-world-assets",
+        "label": "Tokenised Real-World Asset"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:evm-compatible-blockchain", "label": "EVM-Compatible Blockchain"},
-      {"@id": "urn:ngm:class:link-token", "label": "LINK Token"}
+      {
+        "@id": "urn:ngm:class:evm-compatible-blockchain",
+        "label": "EVM-Compatible Blockchain"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"},
-      {"@id": "urn:ngm:class:layerzero", "label": "LayerZero"},
-      {"@id": "urn:ngm:class:wormhole", "label": "Wormhole"},
-      {"@id": "urn:ngm:class:ibc-protocol", "label": "IBC Protocol"}
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:layerzero",
+        "label": "LayerZero"
+      },
+      {
+        "@id": "urn:ngm:class:wormhole",
+        "label": "Wormhole"
+      },
+      {
+        "@id": "urn:ngm:class:ibc",
+        "label": "IBC Protocol"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"},
-      {"@id": "urn:ngm:class:oracle-network", "label": "Oracle Network"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:token-bridge", "label": "Token Bridge"}
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:token-bridge",
+        "label": "Token Bridge"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:traditional-finance", "label": "Traditional Finance"},
-      {"@id": "urn:ngm:class:swift-messaging", "label": "SWIFT Messaging"}
+      {
+        "@id": "urn:ngm:class:traditional-finance",
+        "label": "Traditional Finance"
+      },
+      {
+        "@id": "urn:ngm:class:swift-messaging",
+        "label": "SWIFT Messaging"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:cross-chain-interoperability-protocol", "label": "Cross-Chain Interoperability Protocol"}
+    {
+      "@id": "urn:ngm:class:cross-chain-interoperability-protocol",
+      "label": "Cross-Chain Interoperability Protocol"
+    }
   ],
   "quality": 0.75,
   "provenance": {

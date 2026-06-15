@@ -79,24 +79,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:lebesgue-integral",
-        "label": "Lebesgue Integral"
-      },
-      {
         "@id": "urn:ngm:class:sigma-algebra",
         "label": "Sigma-Algebra"
-      },
-      {
-        "@id": "urn:ngm:class:measurable-function",
-        "label": "Measurable Function"
-      },
-      {
-        "@id": "urn:ngm:class:borel-set",
-        "label": "Borel Set"
-      },
-      {
-        "@id": "urn:ngm:class:measure-space",
-        "label": "Measure Space"
       }
     ],
     "requires": [
@@ -137,11 +121,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:countable-additivity",
-        "label": "Countable Additivity"
-      },
-      {
-        "@id": "urn:ngm:class:convergence-theorems",
+        "@id": "urn:ngm:class:convergence",
         "label": "Convergence Theorems"
       }
     ],
@@ -153,30 +133,12 @@ public:: true
       {
         "@id": "urn:ngm:class:monte-carlo-methods",
         "label": "Monte Carlo Methods"
-      },
-      {
-        "@id": "urn:ngm:class:neural-network-theory",
-        "label": "Neural Network Theory"
       }
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:axiomatic-set-theory",
+        "@id": "urn:ngm:class:set-theory",
         "label": "Axiomatic Set Theory"
-      },
-      {
-        "@id": "urn:ngm:class:metric-space",
-        "label": "Metric Space"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:riemann-integral",
-        "label": "Riemann Integral"
-      },
-      {
-        "@id": "urn:ngm:class:non-measurable-set",
-        "label": "Non-Measurable Set"
       }
     ],
     "bridgesTo": [
@@ -195,20 +157,8 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:lebesgue-dominated-convergence",
-        "label": "Lebesgue Dominated Convergence Theorem"
-      },
-      {
-        "@id": "urn:ngm:class:radon-nikodym-theorem",
-        "label": "Radon-Nikodym Theorem"
-      },
-      {
         "@id": "urn:ngm:class:fourier-analysis",
         "label": "Fourier Analysis"
-      },
-      {
-        "@id": "urn:ngm:class:mathematical-analysis",
-        "label": "Mathematical Analysis"
       }
     ]
   },

@@ -99,7 +99,7 @@ public:: true
         "label": "Asset Issuance"
       },
       {
-        "@id": "urn:ngm:class:fast-settlement",
+        "@id": "urn:ngm:class:real-time-settlement",
         "label": "Fast Settlement"
       },
       {
@@ -111,19 +111,9 @@ public:: true
         "label": "Stablecoin"
       }
     ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:liquid-bitcoin",
-        "label": "Liquid Bitcoin"
-      },
-      {
-        "@id": "urn:ngm:class:federated-block-production",
-        "label": "Federated Block Production"
-      }
-    ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:bitcoin-layer-2-ecosystem",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-layer-2",
         "label": "Bitcoin Layer-2 Ecosystem"
       }
     ],
@@ -133,7 +123,7 @@ public:: true
         "label": "Sidechain"
       },
       {
-        "@id": "urn:ngm:class:confidential-assets-protocol",
+        "@id": "urn:ngm:class:confidential-transactions",
         "label": "Confidential Assets Protocol"
       }
     ],
@@ -143,13 +133,13 @@ public:: true
         "label": "Elements Project"
       },
       {
-        "@id": "urn:ngm:class:script-multisig",
+        "@id": "urn:ngm:class:multisig",
         "label": "Script Multisig"
       }
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:bitcoin-lightning-network",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-lightning-network",
         "label": "Bitcoin Lightning Network"
       },
       {

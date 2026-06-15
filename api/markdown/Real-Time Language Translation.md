@@ -86,12 +86,6 @@ alias:: TELE-105-real-time-language-translation
         "@id": "urn:ngm:class:neural-machine-translation",
         "label": "Neural Machine Translation"
       }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:cross-lingual-collaboration",
-        "label": "CrossLingualCollaboration"
-      }
     ]
   },
   "quality": 0.5,

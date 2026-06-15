@@ -71,7 +71,7 @@ public:: true
         "label": "EVM-Compatible Blockchain"
       },
       {
-        "@id": "urn:ngm:class:json-rpc",
+        "@id": "urn:ngm:class:json-data-interchange-format-rpc",
         "label": "JSON-RPC"
       },
       {
@@ -99,10 +99,6 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:eip-1193",
-        "label": "EIP-1193"
-      },
-      {
         "@id": "urn:ngm:class:bip-32",
         "label": "BIP-32"
       }
@@ -127,11 +123,11 @@ public:: true
         "label": "Self-Custody"
       },
       {
-        "@id": "urn:ngm:class:token-standard-erc-20",
+        "@id": "urn:ngm:class:erc-20-token-standard",
         "label": "ERC-20"
       },
       {
-        "@id": "urn:ngm:class:token-standard-erc-721",
+        "@id": "urn:ngm:class:erc-721-standard",
         "label": "ERC-721"
       },
       {
@@ -147,10 +143,6 @@ public:: true
       {
         "@id": "urn:ngm:class:coinbase-wallet",
         "label": "Coinbase Wallet"
-      },
-      {
-        "@id": "urn:ngm:class:trust-wallet",
-        "label": "Trust Wallet"
       }
     ],
     "bridgesTo": [
@@ -171,10 +163,6 @@ public:: true
       {
         "@id": "urn:ngm:class:gas-fee",
         "label": "Gas Fee"
-      },
-      {
-        "@id": "urn:ngm:class:network-rpc-endpoint",
-        "label": "Network RPC Endpoint"
       }
     ]
   },

@@ -23,55 +23,133 @@ public:: true
   "definition": "A video codec (coder-decoder) is an algorithm or hardware implementation that compresses and decompresses digital video by exploiting spatial redundancy within frames (intra-prediction), temporal redundancy across frames (inter-prediction with motion compensation), and transform coding of residuals, enabling practical storage and transmission of video at bitrates orders of magnitude lower than uncompressed formats whilst maintaining perceptual quality.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder Decoder Architecture"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:encoder-decoder-architecture",
+      "label": "Encoder Decoder Architecture"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:encoder", "label": "Encoder"},
-      {"@id": "urn:ngm:class:decoder", "label": "Decoder"},
-      {"@id": "urn:ngm:class:motion-estimation", "label": "Motion Estimation"},
-      {"@id": "urn:ngm:class:entropy-coding", "label": "Entropy Coding"}
+      {
+        "@id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:decoder",
+        "label": "Decoder"
+      },
+      {
+        "@id": "urn:ngm:class:motion-estimation",
+        "label": "Motion Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:entropy-coding",
+        "label": "Entropy Coding"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:discrete-cosine-transform", "label": "Discrete Cosine Transform"},
-      {"@id": "urn:ngm:class:rate-distortion-optimization", "label": "Rate Distortion Optimization"},
-      {"@id": "urn:ngm:class:convolution", "label": "Convolution"}
+      {
+        "@id": "urn:ngm:class:discrete-cosine-transform",
+        "label": "Discrete Cosine Transform"
+      },
+      {
+        "@id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:video-encoding", "label": "Video Encoding"},
-      {"@id": "urn:ngm:class:adaptive-bitrate-streaming", "label": "Adaptive Bitrate Streaming"},
-      {"@id": "urn:ngm:class:bandwidth-optimization", "label": "Bandwidth Optimization"},
-      {"@id": "urn:ngm:class:computer-vision-video-analysis", "label": "Computer Vision Video Analysis"}
+      {
+        "@id": "urn:ngm:class:video-encoding",
+        "label": "Video Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-bitrate-streaming",
+        "label": "Adaptive Bitrate Streaming"
+      },
+      {
+        "@id": "urn:ngm:class:bandwidth-optimization",
+        "label": "Bandwidth Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision-video-analysis",
+        "label": "Computer Vision Video Analysis"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:quantization", "label": "Quantization"},
-      {"@id": "urn:ngm:class:transform-coding", "label": "Transform Coding"},
-      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"}
+      {
+        "@id": "urn:ngm:class:quantization",
+        "label": "Quantization"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:video-streaming", "label": "Video Streaming"},
-      {"@id": "urn:ngm:class:video-conferencing", "label": "Video Conferencing"},
-      {"@id": "urn:ngm:class:cdn", "label": "CDN"}
+      {
+        "@id": "urn:ngm:class:video-streaming",
+        "label": "Video Streaming"
+      },
+      {
+        "@id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      },
+      {
+        "@id": "urn:ngm:class:cdn",
+        "label": "CDN"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:compliance-standards", "label": "Compliance Standards"},
-      {"@id": "urn:ngm:class:open-media-alliance", "label": "Open Media Alliance"}
+      {
+        "@id": "urn:ngm:class:compliance-standards",
+        "label": "Compliance Standards"
+      },
+      {
+        "@id": "urn:ngm:class:open-media-alliance",
+        "label": "Open Media Alliance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:audio-codec", "label": "Audio Codec"},
-      {"@id": "urn:ngm:class:lossless-compression", "label": "Lossless Compression"}
+      {
+        "@id": "urn:ngm:class:audio-codec",
+        "label": "Audio Codec"
+      },
+      {
+        "@id": "urn:ngm:class:lossless-compression",
+        "label": "Lossless Compression"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bandwidth-adaptation", "label": "Bandwidth Adaptation"},
-      {"@id": "urn:ngm:class:digital-rights-management", "label": "Digital Rights Management"}
+      {
+        "@id": "urn:ngm:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:video-compression-codec", "label": "Video Compression Codec"},
-    {"@id": "urn:ngm:class:video-coder-decoder", "label": "Video Coder Decoder"}
+    {
+      "@id": "urn:ngm:class:video-compression-codec",
+      "label": "Video Compression Codec"
+    },
+    {
+      "@id": "urn:ngm:class:video-coder-decoder",
+      "label": "Video Coder Decoder"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

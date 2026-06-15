@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:signing-quorum",
+        "id": "urn:ngm:class:quorum",
         "label": "Signing Quorum"
       },
       {
@@ -116,11 +116,11 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:bitcoin-script",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
         "label": "Bitcoin Script"
       },
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       }
     ],

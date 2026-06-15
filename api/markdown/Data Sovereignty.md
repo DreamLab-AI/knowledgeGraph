@@ -38,53 +38,127 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:data-localisation", "label": "Data Localisation"},
-      {"@id": "urn:ngm:class:jurisdiction", "label": "Jurisdiction"}
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:data-localisation",
+        "label": "Data Localisation"
+      },
+      {
+        "@id": "urn:ngm:class:jurisdiction",
+        "label": "Jurisdiction"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:sovereign-cloud", "label": "Sovereign Cloud"},
-      {"@id": "urn:ngm:class:indigenous-data-sovereignty", "label": "Indigenous Data Sovereignty"},
-      {"@id": "urn:ngm:class:national-ai-strategy", "label": "National AI Strategy"}
+      {
+        "@id": "urn:ngm:class:sovereign-cloud",
+        "label": "Sovereign Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:national-ai-strategy",
+        "label": "National AI Strategy"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:data-residency", "label": "Data Residency"},
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
+      {
+        "@id": "urn:ngm:class:data-residency",
+        "label": "Data Residency"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"}
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:confidential-computing", "label": "Confidential Computing"},
-      {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      },
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
-      {"@id": "urn:ngm:class:digital-autonomy", "label": "Digital Autonomy"},
-      {"@id": "urn:ngm:class:national-security", "label": "National Security"}
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:digital-autonomy",
+        "label": "Digital Autonomy"
+      },
+      {
+        "@id": "urn:ngm:class:national-security",
+        "label": "National Security"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-27701", "label": "ISO-IEC 27701"}
+      {
+        "@id": "urn:ngm:class:iso-iec-27701",
+        "label": "ISO-IEC 27701"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:data-free-flow", "label": "Data Free Flow"},
-      {"@id": "urn:ngm:class:cloud-portability", "label": "Cloud Portability"}
+      {
+        "@id": "urn:ngm:class:data-free-flow",
+        "label": "Data Free Flow"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-portability",
+        "label": "Cloud Portability"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:cross-border-data-flows", "label": "Cross-Border Data Flows"}
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-data-transfer",
+        "label": "Cross-Border Data Flows"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:digital-sovereignty", "label": "Digital Sovereignty"},
-    {"@id": "urn:ngm:class:data-nationalism", "label": "Data Nationalism"}
+    {
+      "@id": "urn:ngm:class:digital-sovereignty",
+      "label": "Digital Sovereignty"
+    },
+    {
+      "@id": "urn:ngm:class:data-nationalism",
+      "label": "Data Nationalism"
+    }
   ],
   "quality": 0.76,
   "provenance": {

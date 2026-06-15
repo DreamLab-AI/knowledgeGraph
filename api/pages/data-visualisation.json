@@ -18,20 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:chart",
-        "label": "Chart"
-      },
-      {
         "id": "urn:ngm:class:dashboard",
         "label": "Dashboard"
-      },
-      {
-        "id": "urn:ngm:class:geospatial-map",
-        "label": "Geospatial Map"
-      },
-      {
-        "id": "urn:ngm:class:network-graph",
-        "label": "Network Graph"
       }
     ],
     "requires": [
@@ -54,7 +42,7 @@
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:decision-support-system",
+        "id": "urn:ngm:class:decision-support",
         "label": "Decision Support System"
       },
       {
@@ -73,16 +61,7 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:data-table",
-        "label": "Data Table"
-      },
-      {
-        "id": "urn:ngm:class:text-report",
-        "label": "Text Report"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:spatial-computing",
@@ -107,10 +86,6 @@
         "label": "Dimensionality Reduction"
       },
       {
-        "id": "urn:ngm:class:colour-theory",
-        "label": "Colour Theory"
-      },
-      {
         "id": "urn:ngm:class:human-computer-interaction",
         "label": "Human Computer Interaction"
       }
@@ -133,16 +108,8 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:information-design",
-        "label": "Information Design"
-      },
-      {
         "id": "urn:ngm:class:scientific-visualisation",
         "label": "Scientific Visualisation"
-      },
-      {
-        "id": "urn:ngm:class:visual-analytics",
-        "label": "Visual Analytics"
       }
     ]
   },

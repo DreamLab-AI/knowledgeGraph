@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:masked-self-attention",
+        "id": "urn:ngm:class:self-attention",
         "label": "Masked Self Attention"
       },
       {
@@ -42,10 +42,6 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:sequence-to-sequence",
-        "label": "Sequence To Sequence"
-      },
-      {
         "id": "urn:ngm:class:text-generation",
         "label": "Text Generation"
       },
@@ -60,10 +56,6 @@
       {
         "id": "urn:ngm:class:encoder",
         "label": "Encoder"
-      },
-      {
-        "id": "urn:ngm:class:non-autoregressive-decoding",
-        "label": "Non Autoregressive Decoding"
       }
     ],
     "bridgesTo": [
@@ -124,7 +116,7 @@
         "label": "Speculative Decoding"
       },
       {
-        "id": "urn:ngm:class:causal-language-model",
+        "id": "urn:ngm:class:causal-language-modelling",
         "label": "Causal Language Model"
       }
     ]

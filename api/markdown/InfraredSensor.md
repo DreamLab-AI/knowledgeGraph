@@ -175,24 +175,8 @@ alias:: Infrared Sensor
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:analog-digital-converter",
+        "@id": "urn:ngm:class:analog-to-digital-converter",
         "label": "AnalogDigitalConverter"
-      },
-      {
-        "@id": "urn:ngm:class:iremitter",
-        "label": "IREmitter"
-      },
-      {
-        "@id": "urn:ngm:class:irreceiver",
-        "label": "IRReceiver"
-      },
-      {
-        "@id": "urn:ngm:class:lens-assembly",
-        "label": "LensAssembly"
-      },
-      {
-        "@id": "urn:ngm:class:optical-filter",
-        "label": "OpticalFilter"
       },
       {
         "@id": "urn:ngm:class:signal-amplifier",
@@ -203,14 +187,6 @@ alias:: Infrared Sensor
       {
         "@id": "urn:ngm:class:calibration",
         "label": "Calibration"
-      },
-      {
-        "@id": "urn:ngm:class:optical-alignment",
-        "label": "OpticalAlignment"
-      },
-      {
-        "@id": "urn:ngm:class:temperature-compensation",
-        "label": "TemperatureCompensation"
       },
       {
         "@id": "urn:ngm:class:power-supply",
@@ -225,18 +201,6 @@ alias:: Infrared Sensor
       {
         "@id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
-      },
-      {
-        "@id": "urn:ngm:class:line-following",
-        "label": "LineFollowing"
-      },
-      {
-        "@id": "urn:ngm:class:navigation-control",
-        "label": "NavigationControl"
-      },
-      {
-        "@id": "urn:ngm:class:thermal-inspection",
-        "label": "ThermalInspection"
       },
       {
         "@id": "urn:ngm:class:obstacle-avoidance",

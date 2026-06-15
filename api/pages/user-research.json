@@ -22,10 +22,6 @@
         "label": "Usability Testing"
       },
       {
-        "id": "urn:ngm:class:contextual-inquiry",
-        "label": "Contextual Inquiry"
-      },
-      {
         "id": "urn:ngm:class:think-aloud-protocol",
         "label": "Think Aloud Protocol"
       }
@@ -42,10 +38,6 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:experience-design",
-        "label": "Experience Design"
-      },
-      {
         "id": "urn:ngm:class:interaction-design",
         "label": "Interaction Design"
       },
@@ -60,10 +52,6 @@
       {
         "id": "urn:ngm:class:market-research",
         "label": "Market Research"
-      },
-      {
-        "id": "urn:ngm:class:expert-review",
-        "label": "Expert Review"
       }
     ],
     "bridgesTo": [
@@ -88,10 +76,6 @@
       {
         "id": "urn:ngm:class:telemetry",
         "label": "Telemetry"
-      },
-      {
-        "id": "urn:ngm:class:biometric-sensor",
-        "label": "Biometric Sensor"
       }
     ],
     "supports": [
@@ -110,10 +94,6 @@
     ],
     "standardizedBy": [],
     "partOf": [
-      {
-        "id": "urn:ngm:class:ux-design-process",
-        "label": "UX Design Process"
-      },
       {
         "id": "urn:ngm:class:human-centred-design",
         "label": "Human Centred Design"

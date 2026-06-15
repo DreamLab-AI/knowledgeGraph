@@ -87,11 +87,11 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:bitcoin-network",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
         "label": "Bitcoin Network"
       },
       {
-        "@id": "urn:ngm:class:blockchain-finality",
+        "@id": "urn:ngm:class:finality",
         "label": "Blockchain Finality"
       },
       {
@@ -103,14 +103,6 @@ public:: true
       {
         "@id": "urn:ngm:class:signature-verification",
         "label": "Signature Verification"
-      },
-      {
-        "@id": "urn:ngm:class:script-execution",
-        "label": "Script Execution"
-      },
-      {
-        "@id": "urn:ngm:class:fee-validation",
-        "label": "Fee Validation"
       }
     ],
     "partOf": [
@@ -131,15 +123,11 @@ public:: true
       {
         "@id": "urn:ngm:class:transaction",
         "label": "Transaction"
-      },
-      {
-        "@id": "urn:ngm:class:protocol-rules",
-        "label": "Protocol Rules"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:bitcoin-script",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
         "label": "Bitcoin Script"
       },
       {
@@ -153,13 +141,13 @@ public:: true
         "label": "Hash Function"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:decentralised-ledger",
+        "@id": "urn:ngm:class:ledger",
         "label": "Decentralised Ledger"
       },
       {
@@ -169,11 +157,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:centralised-transaction-processing",
-        "label": "Centralised Transaction Processing"
-      },
-      {
-        "@id": "urn:ngm:class:permissioned-ledger",
+        "@id": "urn:ngm:class:permissioned-blockchain",
         "label": "Permissioned Ledger"
       }
     ],

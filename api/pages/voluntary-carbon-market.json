@@ -20,19 +20,11 @@
       {
         "id": "urn:ngm:class:carbon-credits",
         "label": "Carbon Credits"
-      },
-      {
-        "id": "urn:ngm:class:carbon-registries",
-        "label": "Carbon Registries"
-      },
-      {
-        "id": "urn:ngm:class:carbon-project-developers",
-        "label": "Carbon Project Developers"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:carbon-verification",
+        "id": "urn:ngm:class:carbon-neutrality-verification",
         "label": "Carbon Verification"
       },
       {
@@ -54,10 +46,6 @@
         "label": "Climate Change Mitigation"
       },
       {
-        "id": "urn:ngm:class:biodiversity-co-benefits",
-        "label": "Biodiversity Co-Benefits"
-      },
-      {
         "id": "urn:ngm:class:nature-based-solutions",
         "label": "Nature-Based Solutions"
       }
@@ -76,16 +64,8 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:blockchain-carbon-tokens",
-        "label": "Blockchain Carbon Tokens"
-      },
-      {
         "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
-      },
-      {
-        "id": "urn:ngm:class:digital-mrvs",
-        "label": "Digital MRVs"
       }
     ],
     "uses": [
@@ -122,7 +102,7 @@
         "label": "Integrity Council for the Voluntary Carbon Market"
       },
       {
-        "id": "urn:ngm:class:verra-verified-carbon-standard",
+        "id": "urn:ngm:class:verra-vcs-standard",
         "label": "Verra Verified Carbon Standard"
       },
       {
@@ -142,7 +122,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:article-6-paris-agreement",
+        "id": "urn:ngm:class:paris-agreement-article-6",
         "label": "Article 6 Paris Agreement"
       },
       {

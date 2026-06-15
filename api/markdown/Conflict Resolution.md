@@ -23,47 +23,109 @@ public:: true
   "definition": "Conflict Resolution encompasses the structured methods, protocols, and mechanisms used to identify, address, and settle disputes between parties — whether human individuals, organisations, autonomous agents, or distributed systems. In technical contexts it includes algorithmic approaches for reconciling inconsistencies in distributed data systems, consensus protocols that converge divergent states, and governance frameworks for mediating disagreements in decentralised organisations. In social and legal contexts it spans negotiation, mediation, arbitration, and adjudication, with increasing automation and AI-assisted facilitation. Across all domains, effective conflict resolution preserves relationships, maintains system integrity, and enables continued collaboration.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:dispute-resolution-mechanism", "label": "Dispute Resolution Mechanism"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:dispute-resolution-mechanism",
+    "label": "Dispute Resolution Mechanism"
+  },
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:arbitration-process", "label": "Arbitration Process"},
-      {"@id": "urn:ngm:class:arbitration-decision-engine", "label": "Arbitration Decision Engine"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:negotiation-protocol", "label": "Negotiation Protocol"},
-      {"@id": "urn:ngm:class:mediation", "label": "Mediation"}
+      {
+        "@id": "urn:ngm:class:arbitration-process",
+        "label": "Arbitration Process"
+      },
+      {
+        "@id": "urn:ngm:class:arbitration-decision-engine",
+        "label": "Arbitration Decision Engine"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:negotiation-protocol",
+        "label": "Negotiation Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:mediation",
+        "label": "Mediation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract-coordination", "label": "Smart Contract Coordination"},
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"}
+      {
+        "@id": "urn:ngm:class:smart-contract-coordination",
+        "label": "Smart Contract Coordination"
+      },
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:community-governance-model", "label": "Community Governance Model"},
-      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"},
-      {"@id": "urn:ngm:class:trustless-coordination", "label": "Trustless Coordination"}
+      {
+        "@id": "urn:ngm:class:community-governance-model",
+        "label": "Community Governance Model"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      },
+      {
+        "@id": "urn:ngm:class:trustless-coordination",
+        "label": "Trustless Coordination"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:organisational-resilience", "label": "Organisational Resilience"}
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:organisational-resilience",
+        "label": "Organisational Resilience"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"},
-      {"@id": "urn:ngm:class:trust-model", "label": "Trust Model"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:adversarial-coordination", "label": "Adversarial Coordination"},
-      {"@id": "urn:ngm:class:deadlock", "label": "Deadlock"}
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:trust-model",
+        "label": "Trust Model"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:value-alignment", "label": "Value Alignment"}
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:dispute-resolution", "label": "Dispute Resolution"},
-    {"@id": "urn:ngm:class:conflict-management", "label": "Conflict Management"}
+    {
+      "@id": "urn:ngm:class:dispute-resolution",
+      "label": "Dispute Resolution"
+    },
+    {
+      "@id": "urn:ngm:class:conflict-management",
+      "label": "Conflict Management"
+    }
   ],
   "quality": 0.74,
   "provenance": {

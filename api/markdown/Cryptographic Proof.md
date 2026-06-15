@@ -24,57 +24,151 @@ alias:: CryptographicProof
   "definition": "A cryptographic proof is a mathematical construction that enables one party to demonstrate the truth of a statement or possession of secret knowledge to a verifying party in a computationally sound and tamper-evident manner, without necessarily revealing the underlying information itself. Rooted in complexity theory and interactive proof systems, cryptographic proofs provide infeasibility guarantees: a computationally bounded adversary cannot forge a valid proof for a false statement. The field spans classical constructions such as hash-based commitments and digital signatures, through to advanced non-interactive arguments including zk-SNARKs and STARKs, and underpins security across blockchain, identity, and privacy-preserving computation domains.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptography",
+      "label": "Cryptography"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:interactive-proof-system", "label": "Interactive Proof System"},
-      {"@id": "urn:ngm:class:non-interactive-proof", "label": "Non-Interactive Proof"},
-      {"@id": "urn:ngm:class:commitment-scheme", "label": "Commitment Scheme"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:interactive-proof-system",
+        "label": "Interactive Proof System"
+      },
+      {
+        "@id": "urn:ngm:class:non-interactive-proof",
+        "label": "Non-Interactive Proof"
+      },
+      {
+        "@id": "urn:ngm:class:commitment-scheme",
+        "label": "Commitment Scheme"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"}
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:zk-rollup", "label": "ZK-Rollup"},
-      {"@id": "urn:ngm:class:privacy-preserving-blockchain", "label": "Privacy Preserving Blockchain"},
-      {"@id": "urn:ngm:class:verifiable-computation", "label": "Verifiable Computation"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:zk-rollup",
+        "label": "ZK-Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-blockchain",
+        "label": "Privacy Preserving Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-computation",
+        "label": "Verifiable Computation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"}
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"},
-      {"@id": "urn:ngm:class:verification", "label": "VERIFICATION"},
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:non-repudiation", "label": "Non-Repudiation"}
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:verification",
+        "label": "VERIFICATION"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:trusted-execution-environment", "label": "Trusted Execution Environment"},
-      {"@id": "urn:ngm:class:multi-party-computation", "label": "Multi-Party Computation"}
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "@id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-model-attestation", "label": "AI Model Attestation"},
-      {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"},
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"}
+      {
+        "@id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"},
-      {"@id": "urn:ngm:class:secure-multi-party-computation", "label": "Secure Multi-Party Computation"},
-      {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      },
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:proof-of-knowledge", "label": "Proof of Knowledge"},
-    {"@id": "urn:ngm:class:cryptographic-argument", "label": "Cryptographic Argument"}
+    {
+      "@id": "urn:ngm:class:proof-of-knowledge",
+      "label": "Proof of Knowledge"
+    },
+    {
+      "@id": "urn:ngm:class:cryptographic-argument",
+      "label": "Cryptographic Argument"
+    }
   ],
   "quality": 0.74,
   "provenance": {

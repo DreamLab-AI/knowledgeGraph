@@ -134,22 +134,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:community-contributions",
-        "label": "Community Contributions"
-      },
-      {
-        "@id": "urn:ngm:class:memory-records",
-        "label": "Memory Records"
-      },
-      {
-        "@id": "urn:ngm:class:preservation-metadata",
-        "label": "Preservation Metadata"
-      },
-      {
-        "@id": "urn:ngm:class:temporal-index",
-        "label": "Temporal Index"
-      },
-      {
         "@id": "urn:ngm:class:access-control-system",
         "label": "Access Control System"
       }
@@ -170,26 +154,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:community-storytelling",
-        "label": "Community Storytelling"
-      },
-      {
         "@id": "urn:ngm:class:cultural-preservation",
         "label": "Cultural Preservation"
-      },
-      {
-        "@id": "urn:ngm:class:heritage-access",
-        "label": "Heritage Access"
-      },
-      {
-        "@id": "urn:ngm:class:historical-documentation",
-        "label": "Historical Documentation"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:community-knowledge-systems",
-        "label": "Community Knowledge Systems"
       }
     ]
   },

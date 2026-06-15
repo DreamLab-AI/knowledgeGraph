@@ -23,52 +23,137 @@ public:: true
   "definition": "Mapping is the process of creating structured correspondences between two or more domains, spaces, or data representations — including cartographic, semantic, and data-schema contexts. In spatial computing it denotes the construction of environment models; in knowledge engineering it describes the alignment of ontologies, schemas, or concept hierarchies; in AI it encompasses learned transformations between input and output spaces. Mapping is foundational to navigation, data integration, and cross-domain reasoning.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:knowledge-graph",
+      "label": "Knowledge Graph"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
-      {"@id": "urn:ngm:class:spatial-mapping", "label": "Spatial Mapping"},
-      {"@id": "urn:ngm:class:geospatial-technology", "label": "Geospatial Technology"},
-      {"@id": "urn:ngm:class:ontology-alignment", "label": "Ontology Alignment"},
-      {"@id": "urn:ngm:class:schema-matching", "label": "Schema Matching"},
-      {"@id": "urn:ngm:class:coordinate-system", "label": "Coordinate System"}
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:geospatial-technology",
+        "label": "Geospatial Technology"
+      },
+      {
+        "@id": "urn:ngm:class:ontology-alignment",
+        "label": "Ontology Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:coordinate-system",
+        "label": "Coordinate System"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:data-integration", "label": "Data Integration"},
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"},
-      {"@id": "urn:ngm:class:semantic-interoperability", "label": "Semantic Interoperability"},
-      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
-      {"@id": "urn:ngm:class:scene-understanding", "label": "Scene Understanding"}
+      {
+        "@id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:localization", "label": "Localization"},
-      {"@id": "urn:ngm:class:lidar", "label": "LiDAR"},
-      {"@id": "urn:ngm:class:depth-camera", "label": "Depth Camera"},
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"}
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:localization",
+        "label": "Localization"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      },
+      {
+        "@id": "urn:ngm:class:depth-camera",
+        "label": "Depth Camera"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:semantic-mapping", "label": "Semantic Mapping"},
-      {"@id": "urn:ngm:class:metric-map", "label": "Metric Map"},
-      {"@id": "urn:ngm:class:topological-map", "label": "Topological Map"}
+      {
+        "@id": "urn:ngm:class:semantic-mapping",
+        "label": "Semantic Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:metric-map",
+        "label": "Metric Map"
+      },
+      {
+        "@id": "urn:ngm:class:topological-map",
+        "label": "Topological Map"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:data", "label": "Data"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:data",
+        "label": "Data"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:localization", "label": "Localization"}
+      {
+        "@id": "urn:ngm:class:localization",
+        "label": "Localization"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:environment-modelling", "label": "Environment Modelling"},
-    {"@id": "urn:ngm:class:cartography", "label": "Cartography"}
+    {
+      "@id": "urn:ngm:class:environment-modelling",
+      "label": "Environment Modelling"
+    },
+    {
+      "@id": "urn:ngm:class:cartography",
+      "label": "Cartography"
+    }
   ],
   "quality": 0.75,
   "provenance": {

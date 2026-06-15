@@ -18,19 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:pool-operator",
-        "label": "Pool Operator"
-      },
-      {
-        "id": "urn:ngm:class:mining-worker",
+        "id": "urn:ngm:class:mining",
         "label": "Mining Worker"
       },
       {
-        "id": "urn:ngm:class:pool-server",
-        "label": "Pool Server"
-      },
-      {
-        "id": "urn:ngm:class:reward-distribution-mechanism",
+        "id": "urn:ngm:class:reward-distribution",
         "label": "Reward Distribution Mechanism"
       }
     ],
@@ -56,10 +48,6 @@
       {
         "id": "urn:ngm:class:block-validation",
         "label": "Block Validation"
-      },
-      {
-        "id": "urn:ngm:class:income-smoothing",
-        "label": "Income Smoothing"
       }
     ],
     "dependsOn": [
@@ -87,7 +75,7 @@
         "label": "Proof of Stake"
       },
       {
-        "id": "urn:ngm:class:merged-mining",
+        "id": "urn:ngm:class:mining",
         "label": "Merged Mining"
       }
     ],
@@ -129,10 +117,6 @@
       {
         "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
-      },
-      {
-        "id": "urn:ngm:class:cryptocurrency-mining-ecosystem",
-        "label": "Cryptocurrency Mining Ecosystem"
       }
     ],
     "relatedTo": [
@@ -153,11 +137,7 @@
         "label": "Mempool"
       },
       {
-        "id": "urn:ngm:class:network-hashrate-distribution",
-        "label": "Network Hashrate Distribution"
-      },
-      {
-        "id": "urn:ngm:class:51-percent-attack",
+        "id": "urn:ngm:class:51-attack",
         "label": "51 Percent Attack"
       },
       {

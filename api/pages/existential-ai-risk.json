@@ -58,14 +58,6 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:ai-misuse-risk",
-        "label": "AI Misuse Risk"
-      },
-      {
-        "id": "urn:ngm:class:near-term-ai-harm",
-        "label": "Near-Term AI Harm"
-      },
-      {
         "id": "urn:ngm:class:ai-bias",
         "label": "AI Bias"
       }
@@ -103,7 +95,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:value-alignment-problem",
+        "id": "urn:ngm:class:value-alignment",
         "label": "Value Alignment Problem"
       },
       {
@@ -115,20 +107,12 @@
         "label": "Superintelligence"
       },
       {
-        "id": "urn:ngm:class:power-seeking-behaviour",
-        "label": "Power-Seeking Behaviour"
-      },
-      {
         "id": "urn:ngm:class:reward-hacking",
         "label": "Reward Hacking"
       },
       {
         "id": "urn:ngm:class:mesa-optimisation",
         "label": "Mesa-Optimisation"
-      },
-      {
-        "id": "urn:ngm:class:ai-control-problem",
-        "label": "AI Control Problem"
       }
     ]
   },

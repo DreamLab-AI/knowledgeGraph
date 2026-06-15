@@ -18,19 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:forward-dynamics",
+        "id": "urn:ngm:class:dynamics",
         "label": "Forward Dynamics"
       },
       {
-        "id": "urn:ngm:class:inverse-dynamics",
-        "label": "Inverse Dynamics"
-      },
-      {
-        "id": "urn:ngm:class:lagrangian-mechanics",
-        "label": "Lagrangian Mechanics"
-      },
-      {
-        "id": "urn:ngm:class:newton-euler-algorithm",
+        "id": "urn:ngm:class:newton-euler-dynamics",
         "label": "Newton-Euler Algorithm"
       }
     ],
@@ -40,7 +32,7 @@
         "label": "Kinematics"
       },
       {
-        "id": "urn:ngm:class:rigid-body-mechanics",
+        "id": "urn:ngm:class:rigid-body-dynamics",
         "label": "Rigid Body Mechanics"
       },
       {
@@ -91,10 +83,6 @@
       {
         "id": "urn:ngm:class:denavit-hartenberg-parameters",
         "label": "Denavit-Hartenberg Parameters"
-      },
-      {
-        "id": "urn:ngm:class:spatial-algebra",
-        "label": "Spatial Algebra"
       },
       {
         "id": "urn:ngm:class:jacobian-matrix",

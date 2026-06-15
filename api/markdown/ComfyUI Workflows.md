@@ -478,48 +478,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:checkpoint-loader",
-        "label": "CheckpointLoader"
-      },
-      {
-        "@id": "urn:ngm:class:cliptext-encode",
-        "label": "CLIPTextEncode"
-      },
-      {
         "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-manager",
         "label": "ComfyUI Manager"
-      },
-      {
-        "@id": "urn:ngm:class:control-net-node",
-        "label": "ControlNet Node"
-      },
-      {
-        "@id": "urn:ngm:class:ksampler",
-        "label": "KSampler"
-      },
-      {
-        "@id": "urn:ngm:class:latent-tensor",
-        "label": "Latent Tensor"
-      },
-      {
-        "@id": "urn:ngm:class:lo-ra-loader",
-        "label": "LoRA Loader"
-      },
-      {
-        "@id": "urn:ngm:class:node-link",
-        "label": "Node Link"
-      },
-      {
-        "@id": "urn:ngm:class:vaedecode",
-        "label": "VAEDecode"
-      },
-      {
-        "@id": "urn:ngm:class:workflow-json-format",
-        "label": "Workflow JSON Format"
-      },
-      {
-        "@id": "urn:ngm:class:workflow-node",
-        "label": "Workflow Node"
       }
     ],
     "requires": [
@@ -550,32 +510,16 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:batch-image-processing",
-        "label": "Batch Image Processing"
-      },
-      {
         "@id": "urn:ngm:class:control-net-conditioning",
         "label": "ControlNet Conditioning"
       },
       {
-        "@id": "urn:ngm:class:face-restoration",
-        "label": "Face Restoration"
-      },
-      {
-        "@id": "urn:ngm:class:image-to-image-generation",
+        "@id": "urn:ngm:class:image-to-image",
         "label": "Image-to-Image Generation"
       },
       {
         "@id": "urn:ngm:class:image-upscaling",
         "label": "Image Upscaling"
-      },
-      {
-        "@id": "urn:ngm:class:latent-upscaling",
-        "label": "Latent Upscaling"
-      },
-      {
-        "@id": "urn:ngm:class:lo-ra-stacking",
-        "label": "LoRA Stacking"
       },
       {
         "@id": "urn:ngm:class:text-to-image-generation",
@@ -596,24 +540,8 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:api-server-protocol",
-        "label": "API Server Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:diffusion-model-inference",
-        "label": "Diffusion Model Inference"
-      },
-      {
         "@id": "urn:ngm:class:directed-acyclic-graph-execution",
         "label": "Directed Acyclic Graph Execution"
-      },
-      {
-        "@id": "urn:ngm:class:latent-diffusion-pipeline",
-        "label": "Latent Diffusion Pipeline"
-      },
-      {
-        "@id": "urn:ngm:class:workflow-serialisation",
-        "label": "Workflow Serialisation"
       }
     ],
     "uses": [
@@ -632,10 +560,6 @@ public:: true
       {
         "@id": "urn:ngm:class:json-data-interchange-format-serialisation",
         "label": "JSON Serialisation"
-      },
-      {
-        "@id": "urn:ngm:class:png-metadata-embedding",
-        "label": "PNG Metadata Embedding"
       },
       {
         "@id": "urn:ngm:class:py-torch",
@@ -702,16 +626,12 @@ public:: true
         "label": "ControlNet"
       },
       {
-        "@id": "urn:ngm:class:esrgan-upscaling",
+        "@id": "urn:ngm:class:real-esrgan",
         "label": "ESRGAN Upscaling"
       },
       {
-        "@id": "urn:ngm:class:gfpgan-face-restoration",
+        "@id": "urn:ngm:class:gfpgan",
         "label": "GFPGAN Face Restoration"
-      },
-      {
-        "@id": "urn:ngm:class:wan2-1-video",
-        "label": "Wan2.1 Video"
       },
       {
         "@id": "urn:ngm:class:ai-upscaling-and-super-resolution",
@@ -736,24 +656,15 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:civitai-workflow-sharing",
-        "label": "Civitai Workflow Sharing"
-      },
-      {
-        "@id": "urn:ngm:class:comfy-org-git-hub-organisation",
-        "label": "Comfy-Org GitHub Organisation"
-      },
-      {
         "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-api-specification",
         "label": "ComfyUI API Specification"
-      },
-      {
-        "@id": "urn:ngm:class:open-art-workflow-registry",
-        "label": "OpenArt Workflow Registry"
       }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
     ]
   },
   "quality": 0.52,

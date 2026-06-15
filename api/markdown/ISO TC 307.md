@@ -39,45 +39,99 @@ alias:: ISO TC307, ISO/TC 307
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:blockchain-terminology", "label": "Blockchain Terminology"},
-      {"@id": "urn:ngm:class:smart-contract-standards", "label": "Smart Contract Standards"},
-      {"@id": "urn:ngm:class:dlt-security-framework", "label": "DLT Security Framework"},
-      {"@id": "urn:ngm:class:blockchain-governance-framework", "label": "Blockchain Governance Framework"}
+      {
+        "@id": "urn:ngm:class:security-framework",
+        "label": "DLT Security Framework"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance Framework"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"},
-      {"@id": "urn:ngm:class:cross-chain-communication", "label": "Cross-Chain Communication"},
-      {"@id": "urn:ngm:class:digital-identity-standards", "label": "Digital Identity Standards"}
-    ],
-    "standardizedBy": [
-      {"@id": "urn:ngm:class:international-organization-for-standardization", "label": "International Organization for Standardization"}
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-communication",
+        "label": "Cross-Chain Communication"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-standards",
+        "label": "Digital Identity Standards"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:decentralised-governance", "label": "Decentralised Governance"}
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:permissioned-blockchain", "label": "Permissioned Blockchain"},
-      {"@id": "urn:ngm:class:permissionless-blockchain", "label": "Permissionless Blockchain"},
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:w3c-decentralised-identifier", "label": "W3C Decentralised Identifier"},
-      {"@id": "urn:ngm:class:hyperledger-fabric", "label": "Hyperledger Fabric"},
-      {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identifier",
+        "label": "W3C Decentralised Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:iso-technical-committee-307", "label": "ISO Technical Committee 307"}
+    {
+      "@id": "urn:ngm:class:iso-technical-committee-307",
+      "label": "ISO Technical Committee 307"
+    }
   ],
   "quality": 0.74,
   "provenance": {

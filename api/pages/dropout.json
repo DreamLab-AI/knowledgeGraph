@@ -52,7 +52,7 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:ensemble-learning",
+        "id": "urn:ngm:class:ensemble-methods",
         "label": "Ensemble Learning"
       },
       {
@@ -90,11 +90,7 @@
         "label": "Bernoulli Distribution"
       },
       {
-        "id": "urn:ngm:class:random-masking",
-        "label": "Random Masking"
-      },
-      {
-        "id": "urn:ngm:class:monte-carlo-approximation",
+        "id": "urn:ngm:class:monte-carlo-methods",
         "label": "Monte Carlo Approximation"
       }
     ],

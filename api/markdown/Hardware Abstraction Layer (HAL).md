@@ -102,11 +102,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:abstraction-modules",
-        "label": "Abstraction Modules"
-      },
-      {
-        "@id": "urn:ngm:class:api-interfaces",
+        "@id": "urn:ngm:class:api",
         "label": "API Interfaces"
       },
       {
@@ -125,10 +121,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:device-portability",
-        "label": "Device Portability"
-      },
       {
         "@id": "urn:ngm:class:platform-independence",
         "label": "Platform Independence"

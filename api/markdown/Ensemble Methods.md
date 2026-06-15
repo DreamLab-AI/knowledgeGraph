@@ -75,44 +75,97 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      { "@id": "urn:ngm:class:bagging", "label": "Bagging" },
-      { "@id": "urn:ngm:class:boosting", "label": "Boosting" },
-      { "@id": "urn:ngm:class:stacking", "label": "Stacking" },
-      { "@id": "urn:ngm:class:voting-classifier", "label": "Voting Classifier" }
+      {
+        "@id": "urn:ngm:class:bagging",
+        "label": "Bagging"
+      },
+      {
+        "@id": "urn:ngm:class:boosting",
+        "label": "Boosting"
+      },
+      {
+        "@id": "urn:ngm:class:stacking",
+        "label": "Stacking"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:base-learner", "label": "Base Learner" },
-      { "@id": "urn:ngm:class:training-data", "label": "Training Data" }
+      {
+        "@id": "urn:ngm:class:base-learner",
+        "label": "Base Learner"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:model-combination", "label": "Model Combination" },
-      { "@id": "urn:ngm:class:generalization", "label": "Generalization" },
-      { "@id": "urn:ngm:class:variance-reduction", "label": "Variance Reduction" },
-      { "@id": "urn:ngm:class:bias-reduction", "label": "Bias Reduction" }
+      {
+        "@id": "urn:ngm:class:variance-reduction",
+        "label": "Variance Reduction"
+      },
+      {
+        "@id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Reduction"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:decision-tree", "label": "Decision Tree" },
-      { "@id": "urn:ngm:class:random-forest", "label": "Random Forest" },
-      { "@id": "urn:ngm:class:gradient-boosting", "label": "Gradient Boosting" },
-      { "@id": "urn:ngm:class:cross-validation", "label": "Cross-Validation" }
+      {
+        "@id": "urn:ngm:class:decision-tree",
+        "label": "Decision Tree"
+      },
+      {
+        "@id": "urn:ngm:class:random-forest",
+        "label": "Random Forest"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-boosting",
+        "label": "Gradient Boosting"
+      },
+      {
+        "@id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      }
     ],
     "contrastsWith": [
-      { "@id": "urn:ngm:class:single-model", "label": "Single Model" },
-      { "@id": "urn:ngm:class:neural-network", "label": "Neural Network" }
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:bias-variance-tradeoff", "label": "Bias-Variance Tradeoff" },
-      { "@id": "urn:ngm:class:overfitting", "label": "Overfitting" },
-      { "@id": "urn:ngm:class:hyperparameter-tuning", "label": "Hyperparameter Tuning" }
+      {
+        "@id": "urn:ngm:class:bias-variance-tradeoff",
+        "label": "Bias-Variance Tradeoff"
+      },
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:digital-twin", "label": "Digital Twin" },
-      { "@id": "urn:ngm:class:federated-learning", "label": "Federated Learning" }
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ]
   },
   "sameAs": [
-    { "@id": "urn:ngm:class:ensemble-learning", "label": "Ensemble Learning" },
-    { "@id": "urn:ngm:class:model-ensemble", "label": "Model Ensemble" }
+    {
+      "@id": "urn:ngm:class:ensemble-learning",
+      "label": "Ensemble Learning"
+    },
+    {
+      "@id": "urn:ngm:class:model-ensemble",
+      "label": "Model Ensemble"
+    }
   ],
   "quality": 0.72,
   "provenance": {

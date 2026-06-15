@@ -142,14 +142,6 @@ public:: true
       {
         "@id": "urn:ngm:class:stakeholder-engagement",
         "label": "Stakeholder Engagement"
-      },
-      {
-        "@id": "urn:ngm:class:risk-mitigation-planning",
-        "label": "Risk Mitigation Planning"
-      },
-      {
-        "@id": "urn:ngm:class:documentation-and-reporting",
-        "label": "Documentation and Reporting"
       }
     ],
     "partOf": [
@@ -208,10 +200,6 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:dpia",
-        "label": "DPIA"
-      },
-      {
         "@id": "urn:ngm:class:algorithmic-impact-assessment",
         "label": "Algorithmic Impact Assessment"
       },
@@ -240,7 +228,7 @@ public:: true
         "label": "ISO-IEC 23894 2023"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act-article-27",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act Article 27"
       }
     ],

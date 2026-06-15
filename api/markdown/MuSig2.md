@@ -73,10 +73,6 @@ public:: true
       {
         "@id": "urn:ngm:class:key-aggregation",
         "label": "Key Aggregation"
-      },
-      {
-        "@id": "urn:ngm:class:nonce-commitment",
-        "label": "Nonce Commitment"
       }
     ],
     "enables": [
@@ -85,15 +81,15 @@ public:: true
         "label": "Taproot"
       },
       {
-        "@id": "urn:ngm:class:threshold-signatures",
+        "@id": "urn:ngm:class:threshold-signature-scheme",
         "label": "Threshold Signatures"
       },
       {
-        "@id": "urn:ngm:class:privacy-preserving-transactions",
+        "@id": "urn:ngm:class:privacy-preserving",
         "label": "Privacy-Preserving Transactions"
       },
       {
-        "@id": "urn:ngm:class:collaborative-custody",
+        "@id": "urn:ngm:class:custody",
         "label": "Collaborative Custody"
       }
     ],
@@ -101,10 +97,6 @@ public:: true
       {
         "@id": "urn:ngm:class:bip-327",
         "label": "BIP-327"
-      },
-      {
-        "@id": "urn:ngm:class:key-aggregation-protocol",
-        "label": "Key Aggregation Protocol"
       }
     ],
     "uses": [
@@ -137,25 +129,13 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:musig",
-        "label": "MuSig"
-      },
-      {
-        "@id": "urn:ngm:class:frost",
-        "label": "FROST"
-      },
-      {
-        "@id": "urn:ngm:class:ecdsa-multisig",
-        "label": "ECDSA Multisig"
-      },
-      {
         "@id": "urn:ngm:class:shamir-secret-sharing",
         "label": "Shamir Secret Sharing"
       }
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:bitcoin-improvement-proposal",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
         "label": "Bitcoin Improvement Proposal"
       }
     ],
@@ -167,18 +147,6 @@ public:: true
       {
         "@id": "urn:ngm:class:proof-of-work",
         "label": "Proof Of Work"
-      },
-      {
-        "@id": "urn:ngm:class:script-less-contracts",
-        "label": "Script-less Contracts"
-      },
-      {
-        "@id": "urn:ngm:class:adaptor-signatures",
-        "label": "Adaptor Signatures"
-      },
-      {
-        "@id": "urn:ngm:class:discrete-logarithm",
-        "label": "Discrete Logarithm"
       }
     ],
     "bridgesTo": [

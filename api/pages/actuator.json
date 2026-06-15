@@ -34,7 +34,7 @@
         "label": "Series Elastic Actuator"
       },
       {
-        "id": "urn:ngm:class:linear-actuator",
+        "id": "urn:ngm:class:electric-linear-actuator",
         "label": "Linear Actuator"
       }
     ],
@@ -84,7 +84,7 @@
         "label": "Pid Controller"
       },
       {
-        "id": "urn:ngm:class:embedded-system",
+        "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded System"
       }
     ],
@@ -118,11 +118,7 @@
         "label": "Robot"
       },
       {
-        "id": "urn:ngm:class:mechatronic-system",
-        "label": "Mechatronic System"
-      },
-      {
-        "id": "urn:ngm:class:cyber-physical-system",
+        "id": "urn:ngm:class:cyber-physical-systems",
         "label": "Cyber-Physical System"
       }
     ],

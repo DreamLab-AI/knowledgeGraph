@@ -142,10 +142,6 @@ public:: true
         "label": "Audit Mechanism"
       },
       {
-        "@id": "urn:ngm:class:compliance-policy",
-        "label": "Compliance Policy"
-      },
-      {
         "@id": "urn:ngm:class:ai-ethics-checklist",
         "label": "AI Ethics Checklist"
       },
@@ -178,11 +174,11 @@ public:: true
         "label": "AI Accountability"
       },
       {
-        "@id": "urn:ngm:class:ai-transparency",
+        "@id": "urn:ngm:class:ai-transparency-framework",
         "label": "AI Transparency"
       },
       {
-        "@id": "urn:ngm:class:ethical-ai-operation",
+        "@id": "urn:ngm:class:ethical-ai",
         "label": "Ethical AI Operation"
       },
       {

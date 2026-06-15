@@ -38,48 +38,106 @@ alias:: ISO/IEC 42001
     }
   ],
   "relations": {
-    "implements": [
-      {"@id": "urn:ngm:class:ai-management-system", "label": "AI Management System"},
-      {"@id": "urn:ngm:class:plan-do-check-act", "label": "Plan-Do-Check-Act"}
-    ],
     "supports": [
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
-      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ai-system-impact-assessment", "label": "AI System Impact Assessment"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"}
+      {
+        "@id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI System Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:iso-9001", "label": "ISO 9001"},
-      {"@id": "urn:ngm:class:iso-iec-27001", "label": "ISO/IEC 27001"},
-      {"@id": "urn:ngm:class:iso-iec-27701", "label": "ISO-IEC 27701"}
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:iso-9001",
+        "label": "ISO 9001"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-27701",
+        "label": "ISO-IEC 27701"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
-      {"@id": "urn:ngm:class:iso-iec-jtc1-sc42", "label": "ISO IEC JTC1 SC42"}
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-jtc1-sc42",
+        "label": "ISO IEC JTC1 SC42"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"}
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:iso-iec-23894", "label": "ISO-IEC 23894"},
-      {"@id": "urn:ngm:class:ieee-7000", "label": "IEEE 7000"}
+      {
+        "@id": "urn:ngm:class:iso-iec-23894",
+        "label": "ISO-IEC 23894"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-7000",
+        "label": "IEEE 7000"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:third-party-audit", "label": "Third-Party Audit"},
-      {"@id": "urn:ngm:class:continuous-improvement", "label": "continuous improvement"},
-      {"@id": "urn:ngm:class:ai-supply-chain-management", "label": "AI Supply Chain Management"}
+      {
+        "@id": "urn:ngm:class:third-party-audit",
+        "label": "Third-Party Audit"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-improvement",
+        "label": "continuous improvement"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:aims-standard", "label": "AIMS Standard"}
+    {
+      "@id": "urn:ngm:class:aims-standard",
+      "label": "AIMS Standard"
+    }
   ],
   "quality": 0.74,
   "provenance": {

@@ -16,16 +16,7 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:key-projection",
-        "label": "Key Projection"
-      },
-      {
-        "id": "urn:ngm:class:value-projection",
-        "label": "Value Projection"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:gpu-memory",
@@ -72,10 +63,6 @@
       {
         "id": "urn:ngm:class:paged-attention",
         "label": "PagedAttention"
-      },
-      {
-        "id": "urn:ngm:class:prefix-sharing",
-        "label": "Prefix Sharing"
       }
     ],
     "contrastsWith": [

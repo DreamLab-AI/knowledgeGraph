@@ -45,14 +45,14 @@
         "label": "Sequence-to-Sequence Learning"
       },
       {
-        "id": "urn:ngm:class:automatic-summarisation",
+        "id": "urn:ngm:class:text-summarisation",
         "label": "Automatic Summarisation"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:best-first-search",
+        "id": "urn:ngm:class:search-algorithm",
         "label": "Best-First Search"
       },
       {
@@ -72,10 +72,6 @@
       {
         "id": "urn:ngm:class:monte-carlo-tree-search",
         "label": "Monte Carlo Tree Search"
-      },
-      {
-        "id": "urn:ngm:class:viterbi-algorithm",
-        "label": "Viterbi Algorithm"
       }
     ],
     "bridgesTo": [
@@ -98,10 +94,6 @@
         "label": "Heuristic Methods"
       },
       {
-        "id": "urn:ngm:class:log-probability-scoring",
-        "label": "Log-Probability Scoring"
-      },
-      {
         "id": "urn:ngm:class:encoder-decoder-architecture",
         "label": "Encoder-Decoder Architecture"
       }
@@ -113,10 +105,6 @@
       {
         "id": "urn:ngm:class:beam-search-decoding",
         "label": "Beam Search Decoding"
-      },
-      {
-        "id": "urn:ngm:class:diverse-beam-search",
-        "label": "Diverse Beam Search"
       },
       {
         "id": "urn:ngm:class:constrained-decoding",

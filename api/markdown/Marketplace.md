@@ -150,15 +150,11 @@ public:: true
         "label": "Payment Gateway"
       },
       {
-        "@id": "urn:ngm:class:product-listing",
-        "label": "Product Listing"
-      },
-      {
-        "@id": "urn:ngm:class:search-and-discovery",
+        "@id": "urn:ngm:class:search-discovery",
         "label": "Search & Discovery"
       },
       {
-        "@id": "urn:ngm:class:transaction-engine",
+        "@id": "urn:ngm:class:transaction-processing",
         "label": "Transaction Engine"
       },
       {
@@ -186,15 +182,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:economic-activity",
-        "label": "Economic Activity"
-      },
-      {
-        "@id": "urn:ngm:class:secure-transaction",
-        "label": "Secure Transaction"
-      },
-      {
-        "@id": "urn:ngm:class:value-exchange",
+        "@id": "urn:ngm:class:value-transfer",
         "label": "Value Exchange"
       },
       {

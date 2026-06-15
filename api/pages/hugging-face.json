@@ -22,7 +22,7 @@
         "label": "Transformers Library"
       },
       {
-        "id": "urn:ngm:class:diffusers-library",
+        "id": "urn:ngm:class:hugging-face-diffusers",
         "label": "Diffusers Library"
       },
       {
@@ -66,7 +66,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:openai-api",
+        "id": "urn:ngm:class:openai-research-organisation-api",
         "label": "OpenAI API"
       },
       {
@@ -90,11 +90,11 @@
         "label": "Transformer Architecture"
       },
       {
-        "id": "urn:ngm:class:pytorch",
+        "id": "urn:ngm:class:python-pytorch-deep-learning-stack",
         "label": "PyTorch"
       },
       {
-        "id": "urn:ngm:class:model-card",
+        "id": "urn:ngm:class:ai-model-card",
         "label": "Model Card"
       }
     ],
@@ -104,7 +104,7 @@
         "label": "Large Language Models"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai",
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       },
       {

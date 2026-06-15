@@ -83,7 +83,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:blockchain-middleware",
+        "@id": "urn:ngm:class:middleware",
         "label": "Blockchain Middleware"
       }
     ],
@@ -107,7 +107,7 @@ public:: true
         "label": "DeFi"
       },
       {
-        "@id": "urn:ngm:class:prediction-market",
+        "@id": "urn:ngm:class:prediction-markets",
         "label": "Prediction Market"
       },
       {
@@ -125,13 +125,13 @@ public:: true
         "label": "External Data Source"
       },
       {
-        "@id": "urn:ngm:class:api-provider",
+        "@id": "urn:ngm:class:provider",
         "label": "API Provider"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:decentralised-oracle-network",
+        "@id": "urn:ngm:class:oracle-network",
         "label": "Decentralised Oracle Network"
       }
     ],

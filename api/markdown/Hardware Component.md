@@ -53,63 +53,153 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:processor", "label": "Processor"},
-      {"@id": "urn:ngm:class:memory-module", "label": "Memory Module"},
-      {"@id": "urn:ngm:class:sensor", "label": "Sensor"},
-      {"@id": "urn:ngm:class:display-hardware", "label": "Display Hardware"},
-      {"@id": "urn:ngm:class:network-interface", "label": "Network Interface"},
-      {"@id": "urn:ngm:class:power-management-unit", "label": "Power Management Unit"}
+      {
+        "@id": "urn:ngm:class:processor",
+        "label": "Processor"
+      },
+      {
+        "@id": "urn:ngm:class:memory-module",
+        "label": "Memory Module"
+      },
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:display-hardware",
+        "label": "Display Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:network-interface",
+        "label": "Network Interface"
+      },
+      {
+        "@id": "urn:ngm:class:power-management",
+        "label": "Power Management Unit"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:embedded-system", "label": "Embedded System"},
-      {"@id": "urn:ngm:class:edge-computing-node", "label": "Edge Computing Node"}
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded System"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing-node",
+        "label": "Edge Computing Node"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:firmware", "label": "Firmware"},
-      {"@id": "urn:ngm:class:hardware-abstraction-layer", "label": "Hardware Abstraction Layer"},
-      {"@id": "urn:ngm:class:power-supply", "label": "Power Supply"}
+      {
+        "@id": "urn:ngm:class:firmware",
+        "label": "Firmware"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-abstraction-layer",
+        "label": "Hardware Abstraction Layer"
+      },
+      {
+        "@id": "urn:ngm:class:power-supply",
+        "label": "Power Supply"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"},
-      {"@id": "urn:ngm:class:edge-inference", "label": "Edge Inference"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      },
+      {
+        "@id": "urn:ngm:class:edge-inference",
+        "label": "Edge Inference"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:semiconductor-fabrication", "label": "Semiconductor Fabrication"},
-      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}
+      {
+        "@id": "urn:ngm:class:semiconductor-fabrication",
+        "label": "Semiconductor Fabrication"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:bus-interface", "label": "Bus Interface"},
-      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:device-driver", "label": "Device Driver"},
-      {"@id": "urn:ngm:class:operating-system", "label": "Operating System"}
+      {
+        "@id": "urn:ngm:class:device-drivers",
+        "label": "Device Driver"
+      },
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ieee-standards", "label": "IEEE Standards"},
-      {"@id": "urn:ngm:class:jedec", "label": "JEDEC"}
+      {
+        "@id": "urn:ngm:class:ieee-standards",
+        "label": "IEEE Standards"
+      },
+      {
+        "@id": "urn:ngm:class:jedec",
+        "label": "JEDEC"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:software-component", "label": "Software Component"},
-      {"@id": "urn:ngm:class:virtual-machine", "label": "Virtual Machine"}
+      {
+        "@id": "urn:ngm:class:component",
+        "label": "Software Component"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:neuromorphic-chip", "label": "Neuromorphic Chip"},
-      {"@id": "urn:ngm:class:ai-accelerator", "label": "AI Accelerator"}
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:neuromorphic-chip",
+        "label": "Neuromorphic Chip"
+      },
+      {
+        "@id": "urn:ngm:class:ai-accelerator",
+        "label": "AI Accelerator"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:physical-system", "label": "Physical System"},
-      {"@id": "urn:ngm:class:printed-circuit-board", "label": "Printed Circuit Board"},
-      {"@id": "urn:ngm:class:system-on-chip", "label": "System-on-Chip"},
-      {"@id": "urn:ngm:class:field-programmable-gate-array", "label": "Field-Programmable Gate Array"}
+      {
+        "@id": "urn:ngm:class:system-on-chip",
+        "label": "System-on-Chip"
+      },
+      {
+        "@id": "urn:ngm:class:field-programmable-gate-array",
+        "label": "Field-Programmable Gate Array"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:hardware-module", "label": "Hardware Module"},
-    {"@id": "urn:ngm:class:electronic-component", "label": "Electronic Component"}
+    {
+      "@id": "urn:ngm:class:hardware-module",
+      "label": "Hardware Module"
+    },
+    {
+      "@id": "urn:ngm:class:electronic-component",
+      "label": "Electronic Component"
+    }
   ],
   "quality": 0.72,
   "provenance": {

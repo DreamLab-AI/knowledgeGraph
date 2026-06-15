@@ -47,56 +47,137 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:os", "label": "OS"},
-    {"@id": "urn:ngm:class:system-software", "label": "System Software"}
+    {
+      "@id": "urn:ngm:class:os",
+      "label": "OS"
+    },
+    {
+      "@id": "urn:ngm:class:system-software",
+      "label": "System Software"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:kernel", "label": "Kernel"},
-      {"@id": "urn:ngm:class:process-scheduler", "label": "Process Scheduler"},
-      {"@id": "urn:ngm:class:memory-management-unit", "label": "Memory Management Unit"},
-      {"@id": "urn:ngm:class:file-system", "label": "File System"},
-      {"@id": "urn:ngm:class:device-driver", "label": "Device Driver"},
-      {"@id": "urn:ngm:class:network-stack", "label": "Network Stack"},
-      {"@id": "urn:ngm:class:system-call-interface", "label": "System Call Interface"}
+      {
+        "@id": "urn:ngm:class:kernel",
+        "label": "Kernel"
+      },
+      {
+        "@id": "urn:ngm:class:process-scheduler",
+        "label": "Process Scheduler"
+      },
+      {
+        "@id": "urn:ngm:class:memory-management-unit",
+        "label": "Memory Management Unit"
+      },
+      {
+        "@id": "urn:ngm:class:file-system",
+        "label": "File System"
+      },
+      {
+        "@id": "urn:ngm:class:device-drivers",
+        "label": "Device Driver"
+      },
+      {
+        "@id": "urn:ngm:class:system-call-interface",
+        "label": "System Call Interface"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-machine", "label": "Virtual Machine"},
-      {"@id": "urn:ngm:class:containerisation", "label": "Containerisation"},
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
+      {
+        "@id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:hardware", "label": "Hardware"},
-      {"@id": "urn:ngm:class:cpu", "label": "CPU"},
-      {"@id": "urn:ngm:class:memory", "label": "Memory"}
+      {
+        "@id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:cpu",
+        "label": "CPU"
+      },
+      {
+        "@id": "urn:ngm:class:memory",
+        "label": "Memory"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:posix", "label": "POSIX"},
-      {"@id": "urn:ngm:class:openxr", "label": "OpenXR"}
+      {
+        "@id": "urn:ngm:class:posix",
+        "label": "POSIX"
+      },
+      {
+        "@id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:virtualisation", "label": "Virtualisation"},
-      {"@id": "urn:ngm:class:hypervisor", "label": "Hypervisor"}
+      {
+        "@id": "urn:ngm:class:virtualisation",
+        "label": "Virtualisation"
+      },
+      {
+        "@id": "urn:ngm:class:hypervisor",
+        "label": "Hypervisor"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:multithreading", "label": "Multithreading"},
-      {"@id": "urn:ngm:class:inter-process-communication", "label": "Inter-Process Communication"},
-      {"@id": "urn:ngm:class:security-isolation", "label": "Security Isolation"}
+      {
+        "@id": "urn:ngm:class:multithreading",
+        "label": "Multithreading"
+      },
+      {
+        "@id": "urn:ngm:class:inter-process-communication",
+        "label": "Inter-Process Communication"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:real-time-operating-system", "label": "Real-Time Operating System"},
-      {"@id": "urn:ngm:class:bare-metal", "label": "Bare Metal"}
+      {
+        "@id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:resource-management", "label": "Resource Management"},
-      {"@id": "urn:ngm:class:firmware", "label": "Firmware"},
-      {"@id": "urn:ngm:class:middleware", "label": "Middleware"}
+      {
+        "@id": "urn:ngm:class:resource-management",
+        "label": "Resource Management"
+      },
+      {
+        "@id": "urn:ngm:class:firmware",
+        "label": "Firmware"
+      },
+      {
+        "@id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ]
   },
   "quality": 0.74,

@@ -19,10 +19,6 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:cluster-membership",
-        "label": "Cluster Membership"
-      },
-      {
         "id": "urn:ngm:class:failure-detector",
         "label": "Failure Detector"
       },
@@ -53,34 +49,17 @@
         "label": "Log Replication"
       },
       {
-        "id": "urn:ngm:class:primary-backup-replication",
+        "id": "urn:ngm:class:replication",
         "label": "Primary-Backup Replication"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:bully-algorithm",
-        "label": "Bully Algorithm"
-      },
-      {
-        "id": "urn:ngm:class:ring-election",
-        "label": "Ring Election"
-      },
-      {
-        "id": "urn:ngm:class:leaderless-consensus",
-        "label": "Leaderless Consensus"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:delegated-proof-of-stake",
         "label": "Delegated Proof of Stake"
-      },
-      {
-        "id": "urn:ngm:class:kubernetes-operator",
-        "label": "Kubernetes Operator"
       }
     ],
     "uses": [
@@ -101,10 +80,6 @@
         "label": "Paxos"
       },
       {
-        "id": "urn:ngm:class:randomised-timeout",
-        "label": "Randomised Timeout"
-      },
-      {
         "id": "urn:ngm:class:quorum",
         "label": "Quorum"
       }
@@ -120,10 +95,6 @@
       {
         "id": "urn:ngm:class:participant-coordination",
         "label": "Participant Coordination"
-      },
-      {
-        "id": "urn:ngm:class:split-brain",
-        "label": "Split Brain"
       },
       {
         "id": "urn:ngm:class:etcd",

@@ -18,20 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:gait-planning",
-        "label": "Gait Planning"
-      },
-      {
-        "id": "urn:ngm:class:foothold-selection",
-        "label": "Foothold Selection"
-      },
-      {
         "id": "urn:ngm:class:balance-control",
         "label": "Balance Control"
-      },
-      {
-        "id": "urn:ngm:class:swing-leg-control",
-        "label": "Swing Leg Control"
       }
     ],
     "requires": [
@@ -62,10 +50,6 @@
         "label": "Motion Planning"
       },
       {
-        "id": "urn:ngm:class:terrain-traversal",
-        "label": "Terrain Traversal"
-      },
-      {
         "id": "urn:ngm:class:autonomous-navigation",
         "label": "Autonomous Navigation"
       },
@@ -77,10 +61,6 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:wheeled-locomotion",
-        "label": "Wheeled Locomotion"
-      },
       {
         "id": "urn:ngm:class:aerial-robotics",
         "label": "Aerial Robotics"
@@ -135,16 +115,8 @@
         "label": "Quadruped Robot"
       },
       {
-        "id": "urn:ngm:class:bipedal-robot",
-        "label": "Bipedal Robot"
-      },
-      {
         "id": "urn:ngm:class:biomechanics",
         "label": "Biomechanics"
-      },
-      {
-        "id": "urn:ngm:class:zero-moment-point",
-        "label": "Zero-Moment Point"
       }
     ]
   },

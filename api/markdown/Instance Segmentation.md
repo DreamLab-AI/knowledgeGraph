@@ -91,10 +91,6 @@ public:: true
       {
         "@id": "urn:ngm:class:convolutional-neural-network",
         "label": "Convolutional Neural Network"
-      },
-      {
-        "@id": "urn:ngm:class:region-proposal-network",
-        "label": "Region Proposal Network"
       }
     ],
     "enables": [
@@ -133,19 +129,11 @@ public:: true
       {
         "@id": "urn:ngm:class:mask-r-cnn",
         "label": "Mask R-CNN"
-      },
-      {
-        "@id": "urn:ngm:class:yolact",
-        "label": "YOLACT"
-      },
-      {
-        "@id": "urn:ngm:class:solov2",
-        "label": "SOLOv2"
       }
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:image-feature-extraction",
+        "@id": "urn:ngm:class:feature-extraction",
         "label": "Image Feature Extraction"
       },
       {

@@ -71,20 +71,6 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:cliff-period",
-        "label": "Cliff Period"
-      },
-      {
-        "@id": "urn:ngm:class:release-interval",
-        "label": "Release Interval"
-      },
-      {
-        "@id": "urn:ngm:class:revocation-clause",
-        "label": "Revocation Clause"
-      }
-    ],
     "partOf": [
       {
         "@id": "urn:ngm:class:tokenomics",
@@ -95,20 +81,12 @@ public:: true
       {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
-      },
-      {
-        "@id": "urn:ngm:class:token-allocation",
-        "label": "Token Allocation"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:incentive-alignment",
         "label": "Incentive Alignment"
-      },
-      {
-        "@id": "urn:ngm:class:supply-schedule",
-        "label": "Supply Schedule"
       }
     ],
     "dependsOn": [
@@ -129,7 +107,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:escrow",
+        "@id": "urn:ngm:class:escrow-system",
         "label": "Escrow"
       },
       {
@@ -148,10 +126,6 @@ public:: true
       }
     ],
     "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:immediate-token-release",
-        "label": "Immediate Token Release"
-      },
       {
         "@id": "urn:ngm:class:airdrop",
         "label": "Airdrop"
@@ -176,10 +150,6 @@ public:: true
       }
     ],
     "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:equity-vesting",
-        "label": "Equity Vesting"
-      },
       {
         "@id": "urn:ngm:class:defi-protocol",
         "label": "DeFi Protocol"

@@ -18,14 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:fx-settlement",
-        "label": "FX Settlement"
-      },
-      {
-        "id": "urn:ngm:class:payment-finality",
-        "label": "Payment Finality"
-      },
-      {
         "id": "urn:ngm:class:sanctions-screening",
         "label": "Sanctions Screening"
       }
@@ -36,7 +28,7 @@
         "label": "Currency Conversion"
       },
       {
-        "id": "urn:ngm:class:aml-compliance",
+        "id": "urn:ngm:class:aml-kyc-compliance",
         "label": "AML Compliance"
       },
       {
@@ -46,7 +38,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:international-trade-finance",
+        "id": "urn:ngm:class:trade-finance",
         "label": "International Trade Finance"
       },
       {
@@ -76,33 +68,16 @@
       {
         "id": "urn:ngm:class:iso-20022",
         "label": "ISO 20022"
-      },
-      {
-        "id": "urn:ngm:class:payment-versus-payment",
-        "label": "Payment-Versus-Payment"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:domestic-settlement",
-        "label": "Domestic Settlement"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:cbdc-cross-border-settlement",
         "label": "CBDC Cross-Border Settlement"
-      },
-      {
-        "id": "urn:ngm:class:stablecoin-payments",
-        "label": "Stablecoin Payments"
       }
     ],
     "uses": [
-      {
-        "id": "urn:ngm:class:cls-bank",
-        "label": "CLS Bank"
-      },
       {
         "id": "urn:ngm:class:real-time-gross-settlement",
         "label": "Real-Time Gross Settlement"
@@ -114,14 +89,14 @@
         "label": "FSB Cross-Border Payments Roadmap"
       },
       {
-        "id": "urn:ngm:class:g20-cross-border-payments",
+        "id": "urn:ngm:class:cross-border-payments",
         "label": "G20 Cross-Border Payments Initiative"
       }
     ],
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:international-payments-system",
+        "id": "urn:ngm:class:cross-border-payments",
         "label": "International Payments System"
       }
     ],

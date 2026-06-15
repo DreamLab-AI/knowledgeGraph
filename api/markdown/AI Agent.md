@@ -119,12 +119,8 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:react-pattern",
+        "@id": "urn:ngm:class:re-act-pattern",
         "label": "ReAct Pattern"
-      },
-      {
-        "@id": "urn:ngm:class:sense-plan-act",
-        "label": "Sense-Plan-Act"
       }
     ],
     "dependsOn": [
@@ -133,7 +129,7 @@ public:: true
         "label": "Foundation Model"
       },
       {
-        "@id": "urn:ngm:class:api-interface",
+        "@id": "urn:ngm:class:api",
         "label": "API Interface"
       }
     ],
@@ -143,7 +139,7 @@ public:: true
         "label": "Chatbot"
       },
       {
-        "@id": "urn:ngm:class:rule-based-system",
+        "@id": "urn:ngm:class:rule-based-systems",
         "label": "Rule-Based System"
       }
     ],

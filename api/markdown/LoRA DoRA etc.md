@@ -342,36 +342,12 @@ public:: true
         "label": "DoRA"
       },
       {
-        "@id": "urn:ngm:class:ga-lore",
-        "label": "GaLore"
-      },
-      {
-        "@id": "urn:ngm:class:ia3",
-        "label": "IA3"
-      },
-      {
-        "@id": "urn:ngm:class:long-lo-ra",
+        "@id": "urn:ngm:class:lo-ra",
         "label": "LongLoRA"
       },
       {
         "@id": "urn:ngm:class:ly-coris",
         "label": "LyCORIS"
-      },
-      {
-        "@id": "urn:ngm:class:re-lo-ra",
-        "label": "ReLoRA"
-      },
-      {
-        "@id": "urn:ngm:class:ve-ra",
-        "label": "VeRA"
-      },
-      {
-        "@id": "urn:ngm:class:x-lo-ra",
-        "label": "X-LoRA"
-      },
-      {
-        "@id": "urn:ngm:class:lo-ra",
-        "label": "Lo RA"
       },
       {
         "@id": "urn:ngm:class:prefix-tuning",
@@ -410,7 +386,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:diffusion-model-customisation",
+        "@id": "urn:ngm:class:diffusion-model",
         "label": "Diffusion Model Customisation"
       },
       {
@@ -418,16 +394,12 @@ public:: true
         "label": "Domain Adaptation"
       },
       {
-        "@id": "urn:ngm:class:llm-fine-tuning",
+        "@id": "urn:ngm:class:fine-tuning",
         "label": "LLM Fine-Tuning"
       },
       {
         "@id": "urn:ngm:class:memory-efficient-training",
         "label": "Memory-Efficient Training"
-      },
-      {
-        "@id": "urn:ngm:class:on-device-training",
-        "label": "On-Device Training"
       },
       {
         "@id": "urn:ngm:class:multi-task-learning",
@@ -462,11 +434,7 @@ public:: true
         "label": "Gradient Checkpointing"
       },
       {
-        "@id": "urn:ngm:class:parameter-sharing",
-        "label": "Parameter Sharing"
-      },
-      {
-        "@id": "urn:ngm:class:rank-decomposition",
+        "@id": "urn:ngm:class:low-rank-adaptation",
         "label": "Rank Decomposition"
       },
       {
@@ -532,11 +500,11 @@ public:: true
         "label": "Hugging Face"
       },
       {
-        "@id": "urn:ngm:class:meta-ai-research",
+        "@id": "urn:ngm:class:meta-ai",
         "label": "Meta AI Research"
       },
       {
-        "@id": "urn:ngm:class:microsoft-research",
+        "@id": "urn:ngm:class:microsoft",
         "label": "Microsoft Research"
       },
       {
@@ -545,7 +513,10 @@ public:: true
       }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
     ]
   },
   "quality": 0.52,

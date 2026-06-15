@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:classification-scheme",
+        "id": "urn:ngm:class:classification",
         "label": "Classification Scheme"
       },
       {
@@ -26,25 +26,12 @@
         "label": "Controlled Vocabulary"
       },
       {
-        "id": "urn:ngm:class:hierarchical-category",
+        "id": "urn:ngm:class:category-hierarchies",
         "label": "Hierarchical Category"
       }
     ],
-    "requires": [
-      {
-        "id": "urn:ngm:class:concept",
-        "label": "Concept"
-      },
-      {
-        "id": "urn:ngm:class:semantic-relation",
-        "label": "Semantic Relation"
-      }
-    ],
+    "requires": [],
     "enables": [
-      {
-        "id": "urn:ngm:class:faceted-search",
-        "label": "Faceted Search"
-      },
       {
         "id": "urn:ngm:class:knowledge-retrieval",
         "label": "Knowledge Retrieval"
@@ -54,22 +41,8 @@
         "label": "Data Governance"
       }
     ],
-    "dependsOn": [
-      {
-        "id": "urn:ngm:class:naming-convention",
-        "label": "Naming Convention"
-      }
-    ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:polyhierarchy",
-        "label": "Polyhierarchy"
-      },
-      {
-        "id": "urn:ngm:class:broader-narrower-relation",
-        "label": "Broader-Narrower Relation"
-      }
-    ],
+    "dependsOn": [],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:ontology",
@@ -92,7 +65,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:skos",
+        "id": "urn:ngm:class:skos-vocabulary",
         "label": "SKOS"
       },
       {
@@ -104,7 +77,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:knowledge-organisation-system",
+        "id": "urn:ngm:class:knowledge-organization-system",
         "label": "Knowledge Organisation System"
       },
       {

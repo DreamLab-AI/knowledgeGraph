@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:evasion-attack",
+        "id": "urn:ngm:class:adversarial-attack",
         "label": "Evasion Attack"
       },
       {
@@ -26,12 +26,8 @@
         "label": "Backdoor Attack"
       },
       {
-        "id": "urn:ngm:class:membership-inference-attack",
+        "id": "urn:ngm:class:membership-inference",
         "label": "Membership Inference Attack"
-      },
-      {
-        "id": "urn:ngm:class:model-stealing",
-        "label": "Model Stealing"
       }
     ],
     "requires": [
@@ -54,7 +50,7 @@
         "label": "Model Robustness"
       },
       {
-        "id": "urn:ngm:class:ai-red-teaming",
+        "id": "urn:ngm:class:red-teaming",
         "label": "AI Red Teaming"
       },
       {
@@ -75,12 +71,8 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:standard-machine-learning",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Standard Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:certified-defence",
-        "label": "Certified Defence"
       }
     ],
     "bridgesTo": [
@@ -103,7 +95,7 @@
         "label": "Gradient Descent"
       },
       {
-        "id": "urn:ngm:class:deep-neural-networks",
+        "id": "urn:ngm:class:neural-network",
         "label": "Deep Neural Networks"
       },
       {

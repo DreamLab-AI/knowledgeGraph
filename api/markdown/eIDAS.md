@@ -73,16 +73,12 @@ public:: true
         "label": "Digital Signature"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
         "@id": "urn:ngm:class:certificate-authority",
         "label": "Certificate Authority"
-      },
-      {
-        "@id": "urn:ngm:class:qualified-trust-service-provider",
-        "label": "Qualified Trust Service Provider"
       }
     ],
     "enables": [
@@ -99,11 +95,7 @@ public:: true
         "label": "Cross-Border Authentication"
       },
       {
-        "@id": "urn:ngm:class:electronic-seal",
-        "label": "Electronic Seal"
-      },
-      {
-        "@id": "urn:ngm:class:electronic-timestamp",
+        "@id": "urn:ngm:class:timestamp",
         "label": "Electronic Timestamp"
       }
     ],
@@ -111,10 +103,6 @@ public:: true
       {
         "@id": "urn:ngm:class:eu-digital-single-market",
         "label": "EU Digital Single Market"
-      },
-      {
-        "@id": "urn:ngm:class:mutual-recognition-principle",
-        "label": "Mutual Recognition Principle"
       }
     ],
     "standardizedBy": [
@@ -135,10 +123,6 @@ public:: true
       {
         "@id": "urn:ngm:class:qualified-electronic-signature",
         "label": "Qualified Electronic Signature"
-      },
-      {
-        "@id": "urn:ngm:class:secure-signature-creation-device",
-        "label": "Secure Signature Creation Device"
       }
     ],
     "supports": [
@@ -147,7 +131,7 @@ public:: true
         "label": "GDPR"
       },
       {
-        "@id": "urn:ngm:class:european-digital-identity-wallet",
+        "@id": "urn:ngm:class:digital-identity-wallet",
         "label": "European Digital Identity Wallet"
       },
       {
@@ -167,7 +151,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:verifiable-credential",
+        "@id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       },
       {
@@ -183,10 +167,6 @@ public:: true
       {
         "@id": "urn:ngm:class:know-your-customer",
         "label": "Know Your Customer"
-      },
-      {
-        "@id": "urn:ngm:class:electronic-government",
-        "label": "Electronic Government"
       }
     ]
   },

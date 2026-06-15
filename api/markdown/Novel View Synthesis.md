@@ -23,52 +23,133 @@ public:: true
   "definition": "Novel view synthesis (NVS) is a computer vision and computer graphics task that involves generating photorealistic images of a scene from camera viewpoints not present in the original set of captured images, given a collection of reference photographs and their corresponding camera poses. The task requires learning an implicit or explicit representation of the scene's geometry and appearance that supports free-viewpoint rendering with high fidelity. It is a foundational capability for immersive media, telepresence, and spatial computing applications, and has been dramatically advanced by neural scene representations such as Neural Radiance Fields and 3D Gaussian Splatting.",
   "domain": "spatial-computing",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:computer-vision-task", "label": "Computer Vision Task"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computer-vision-task",
+      "label": "Computer Vision Task"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"},
-      {"@id": "urn:ngm:class:3-d-gaussian-splatting", "label": "3D Gaussian Splatting"},
-      {"@id": "urn:ngm:class:differentiable-rendering", "label": "Differentiable Rendering"},
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
-      {"@id": "urn:ngm:class:image-based-rendering", "label": "Image-Based Rendering"},
-      {"@id": "urn:ngm:class:3d-scene-reconstruction", "label": "3D Scene Reconstruction"}
+      {
+        "@id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-gaussian-splatting",
+        "label": "3D Gaussian Splatting"
+      },
+      {
+        "@id": "urn:ngm:class:differentiable-rendering",
+        "label": "Differentiable Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-scene-reconstruction",
+        "label": "3D Scene Reconstruction"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:volumetric-capture", "label": "Volumetric Capture"},
-      {"@id": "urn:ngm:class:virtual-reality-telepresence", "label": "Virtual Reality Telepresence"},
-      {"@id": "urn:ngm:class:free-viewpoint-video", "label": "Free-Viewpoint Video"},
-      {"@id": "urn:ngm:class:immersive-media-production", "label": "Immersive Media Production"},
-      {"@id": "urn:ngm:class:synthetic-training-data-generation", "label": "Synthetic Training Data Generation"}
+      {
+        "@id": "urn:ngm:class:volumetric-capture",
+        "label": "Volumetric Capture"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality-telepresence",
+        "label": "Virtual Reality Telepresence"
+      },
+      {
+        "@id": "urn:ngm:class:free-viewpoint-video",
+        "label": "Free-Viewpoint Video"
+      },
+      {
+        "@id": "urn:ngm:class:media-production",
+        "label": "Immersive Media Production"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Training Data Generation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"},
-      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"},
-      {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"},
-      {"@id": "urn:ngm:class:volume-rendering", "label": "Volume Rendering"},
-      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure-from-Motion"},
-      {"@id": "urn:ngm:class:multi-layer-perceptron", "label": "Multi-Layer Perceptron"}
+      {
+        "@id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:volume-rendering",
+        "label": "Volume Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure-from-Motion"
+      },
+      {
+        "@id": "urn:ngm:class:multi-layer-perceptron",
+        "label": "Multi-Layer Perceptron"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:camera-pose-estimation", "label": "Camera Pose Estimation"},
-      {"@id": "urn:ngm:class:multi-view-images", "label": "Multi-View Images"}
+      {
+        "@id": "urn:ngm:class:camera-pose-estimation",
+        "label": "Camera Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:multi-view-images",
+        "label": "Multi-View Images"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:scene-representation", "label": "Scene Representation"},
-      {"@id": "urn:ngm:class:ray-casting", "label": "Ray Casting"}
+      {
+        "@id": "urn:ngm:class:scene-representation",
+        "label": "Scene Representation"
+      },
+      {
+        "@id": "urn:ngm:class:ray-casting",
+        "label": "Ray Casting"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:traditional-3d-modelling", "label": "Traditional 3D Modelling"},
-      {"@id": "urn:ngm:class:stereo-reconstruction", "label": "Stereo Reconstruction"}
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "Stereo Reconstruction"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:autonomous-driving-simulation", "label": "Autonomous Driving Simulation"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-driving-simulation",
+        "label": "Autonomous Driving Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:view-synthesis", "label": "View Synthesis"},
-    {"@id": "urn:ngm:class:free-viewpoint-rendering", "label": "Free-Viewpoint Rendering"}
+    {
+      "@id": "urn:ngm:class:view-synthesis",
+      "label": "View Synthesis"
+    },
+    {
+      "@id": "urn:ngm:class:free-viewpoint-rendering",
+      "label": "Free-Viewpoint Rendering"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

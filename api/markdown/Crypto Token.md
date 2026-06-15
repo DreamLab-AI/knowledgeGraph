@@ -183,10 +183,6 @@ alias:: CryptoToken
         "label": "Governance Voting"
       },
       {
-        "@id": "urn:ngm:class:programmable-value",
-        "label": "Programmable Value"
-      },
-      {
         "@id": "urn:ngm:class:decentralized-exchange",
         "label": "Decentralized Exchange"
       },

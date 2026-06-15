@@ -75,16 +75,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:enclave",
+        "@id": "urn:ngm:class:secure-enclave",
         "label": "Enclave"
       },
       {
         "@id": "urn:ngm:class:remote-attestation",
         "label": "Remote Attestation"
-      },
-      {
-        "@id": "urn:ngm:class:memory-encryption-engine",
-        "label": "Memory Encryption Engine"
       }
     ],
     "partOf": [
@@ -121,12 +117,8 @@ public:: true
         "label": "Confidential Computing"
       },
       {
-        "@id": "urn:ngm:class:secure-multiparty-computation",
+        "@id": "urn:ngm:class:secure-multi-party-computation",
         "label": "Secure Multiparty Computation"
-      },
-      {
-        "@id": "urn:ngm:class:private-data-processing",
-        "label": "Private Data Processing"
       }
     ],
     "dependsOn": [
@@ -159,7 +151,7 @@ public:: true
         "label": "AES Encryption"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -169,13 +161,13 @@ public:: true
         "label": "Zero-Knowledge Proof"
       },
       {
-        "@id": "urn:ngm:class:secure-computation",
+        "@id": "urn:ngm:class:secure-multi-party-computation",
         "label": "Secure Computation"
       }
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:arm-trustzone",
+        "@id": "urn:ngm:class:arm-trust-zone",
         "label": "ARM TrustZone"
       },
       {

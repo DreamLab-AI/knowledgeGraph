@@ -67,11 +67,11 @@
         "label": "Cryptographic Hash Function"
       },
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       },
       {
-        "id": "urn:ngm:class:economic-incentive-design",
+        "id": "urn:ngm:class:economic-model",
         "label": "Economic Incentive Design"
       }
     ],
@@ -81,7 +81,7 @@
         "label": "Fork Choice Rule"
       },
       {
-        "id": "urn:ngm:class:mempool-propagation",
+        "id": "urn:ngm:class:mempool",
         "label": "Mempool Propagation"
       }
     ],
@@ -91,7 +91,7 @@
         "label": "Permissioned Blockchain"
       },
       {
-        "id": "urn:ngm:class:transaction-filtering",
+        "id": "urn:ngm:class:transaction",
         "label": "Transaction Filtering"
       },
       {
@@ -131,7 +131,7 @@
         "label": "Miner Extractable Value"
       },
       {
-        "id": "urn:ngm:class:51-percent-attack",
+        "id": "urn:ngm:class:51-attack",
         "label": "51% Attack"
       }
     ]

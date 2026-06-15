@@ -52,7 +52,7 @@
         "label": "Blockchain Oracle"
       },
       {
-        "id": "urn:ngm:class:cryptographic-wallet",
+        "id": "urn:ngm:class:wallet",
         "label": "Cryptographic Wallet"
       }
     ],
@@ -70,7 +70,7 @@
         "label": "Flash Loan"
       },
       {
-        "id": "urn:ngm:class:real-world-asset-tokenization",
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
         "label": "Real-World Asset Tokenization"
       }
     ],

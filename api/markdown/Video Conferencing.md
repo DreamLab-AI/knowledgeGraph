@@ -124,7 +124,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:real-time-communication-protocols",
+        "@id": "urn:ngm:class:real-time-communication",
         "label": "Real-Time Communication Protocols"
       },
       {
@@ -137,10 +137,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:face-to-face-interaction",
-        "label": "Face-to-Face Interaction"
-      },
       {
         "@id": "urn:ngm:class:remote-work",
         "label": "Remote Work"
@@ -168,7 +164,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:ai-meeting-assistants",
+        "@id": "urn:ngm:class:meeting-ai-assistant",
         "label": "AI Meeting Assistants"
       },
       {
@@ -196,10 +192,6 @@ public:: true
       {
         "@id": "urn:ngm:class:asynchronous-communication",
         "label": "Asynchronous Communication"
-      },
-      {
-        "@id": "urn:ngm:class:audio-conferencing",
-        "label": "Audio Conferencing"
       }
     ],
     "bridgesTo": [
@@ -218,11 +210,11 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:5g-telepresence",
+        "@id": "urn:ngm:class:telepresence",
         "label": "5G Telepresence"
       },
       {
-        "@id": "urn:ngm:class:zero-trust-security",
+        "@id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero-Trust Security"
       }
     ]

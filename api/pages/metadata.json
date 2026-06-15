@@ -16,24 +16,7 @@
   "qualityScore": 0.72,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:descriptive-metadata",
-        "label": "Descriptive Metadata"
-      },
-      {
-        "id": "urn:ngm:class:structural-metadata",
-        "label": "Structural Metadata"
-      },
-      {
-        "id": "urn:ngm:class:administrative-metadata",
-        "label": "Administrative Metadata"
-      },
-      {
-        "id": "urn:ngm:class:technical-metadata",
-        "label": "Technical Metadata"
-      }
-    ],
+    "hasPart": [],
     "requires": [],
     "enables": [
       {
@@ -71,7 +54,7 @@
         "label": "Artificial Intelligence"
       },
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       }
     ],

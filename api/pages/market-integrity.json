@@ -18,10 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:trade-surveillance",
-        "label": "Trade Surveillance"
-      },
-      {
         "id": "urn:ngm:class:disclosure-requirements",
         "label": "Disclosure Requirements"
       },
@@ -34,10 +30,6 @@
       {
         "id": "urn:ngm:class:price-discovery",
         "label": "Price Discovery"
-      },
-      {
-        "id": "urn:ngm:class:order-book-transparency",
-        "label": "Order Book Transparency"
       },
       {
         "id": "urn:ngm:class:anti-money-laundering",
@@ -122,10 +114,6 @@
       {
         "id": "urn:ngm:class:digital-asset-market",
         "label": "Digital Asset Market"
-      },
-      {
-        "id": "urn:ngm:class:wash-trading",
-        "label": "Wash Trading"
       },
       {
         "id": "urn:ngm:class:front-running",

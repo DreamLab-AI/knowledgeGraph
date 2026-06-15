@@ -52,59 +52,116 @@ alias:: ImmersiveExperience
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:presence", "label": "Presence"}
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:presence",
+        "label": "Presence"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:head-mounted-display", "label": "Head-Mounted Display"},
-      {"@id": "urn:ngm:class:motion-tracking", "label": "Motion Tracking"}
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      },
+      {
+        "@id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
-      {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"},
-      {"@id": "urn:ngm:class:experiential-learning", "label": "Experiential Learning"},
-      {"@id": "urn:ngm:class:flow-state", "label": "Flow State"}
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "@id": "urn:ngm:class:experiential-learning",
+        "label": "Experiential Learning"
+      },
+      {
+        "@id": "urn:ngm:class:flow-state",
+        "label": "Flow State"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:low-latency-network", "label": "Low Latency Network"},
-      {"@id": "urn:ngm:class:gpu-rendering-pipeline", "label": "GPU Rendering Pipeline"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:presence-theory", "label": "Presence Theory"},
-      {"@id": "urn:ngm:class:flow-theory", "label": "Flow Theory"}
+      {
+        "@id": "urn:ngm:class:low-latency-network",
+        "label": "Low Latency Network"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "GPU Rendering Pipeline"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:natural-user-interface", "label": "Natural User Interface"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:vr-therapy", "label": "VR Therapy"},
-      {"@id": "urn:ngm:class:virtual-collaboration", "label": "Virtual Collaboration"},
-      {"@id": "urn:ngm:class:experiential-marketing", "label": "Experiential Marketing"}
+      {
+        "@id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:openxr", "label": "OpenXR"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:passive-media-consumption", "label": "Passive Media Consumption"},
-      {"@id": "urn:ngm:class:flat-screen-interface", "label": "Flat Screen Interface"}
+      {
+        "@id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:sensory-fidelity", "label": "Sensory Fidelity"}
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
     ]
   },
   "quality": 0.72,

@@ -112,10 +112,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:interface-design-validation",
-        "label": "Interface Design Validation"
-      },
-      {
         "@id": "urn:ngm:class:performance-optimization",
         "label": "Performance Optimization"
       }
@@ -126,7 +122,7 @@ public:: true
         "label": "Usability Testing"
       },
       {
-        "@id": "urn:ngm:class:user-experience-assessment",
+        "@id": "urn:ngm:class:user-experience",
         "label": "User Experience Assessment"
       }
     ]

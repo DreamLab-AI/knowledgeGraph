@@ -154,7 +154,7 @@ public:: true
         "label": "Computer Vision"
       },
       {
-        "@id": "urn:ngm:class:multimodal-learning",
+        "@id": "urn:ngm:class:multimodal-ai-architecture-learning",
         "label": "Multimodal Learning"
       },
       {

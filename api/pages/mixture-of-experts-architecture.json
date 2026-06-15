@@ -20,18 +20,6 @@
       {
         "id": "urn:ngm:class:sparse-mixture-of-experts",
         "label": "Sparse Mixture of Experts"
-      },
-      {
-        "id": "urn:ngm:class:expert-network",
-        "label": "Expert Network"
-      },
-      {
-        "id": "urn:ngm:class:gating-network",
-        "label": "Gating Network"
-      },
-      {
-        "id": "urn:ngm:class:sparse-activation",
-        "label": "Sparse Activation"
       }
     ],
     "requires": [
@@ -54,11 +42,7 @@
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:efficient-scaling",
-        "label": "Efficient Scaling"
-      },
-      {
-        "id": "urn:ngm:class:parameter-efficient-training",
+        "id": "urn:ngm:class:parameter-efficient-fine-tuning",
         "label": "Parameter-Efficient Training"
       }
     ],
@@ -77,10 +61,6 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:dense-model",
-        "label": "Dense Model"
       }
     ],
     "bridgesTo": [
@@ -97,32 +77,24 @@
       {
         "id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanism"
-      },
-      {
-        "id": "urn:ngm:class:softmax-routing",
-        "label": "Softmax Routing"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:model-scaling",
         "label": "Model Scaling"
-      },
-      {
-        "id": "urn:ngm:class:inference-efficiency",
-        "label": "Inference Efficiency"
       }
     ],
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:ensemble-learning",
+        "id": "urn:ngm:class:ensemble-methods",
         "label": "Ensemble Learning"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:switch-transformer",
+        "id": "urn:ngm:class:transformer",
         "label": "Switch Transformer"
       },
       {

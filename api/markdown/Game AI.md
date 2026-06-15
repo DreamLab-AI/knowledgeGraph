@@ -24,51 +24,133 @@ alias:: GameAI
   "definition": "Game AI is the branch of artificial intelligence applied to interactive entertainment, encompassing the design and implementation of non-player character behaviour, opponent strategy, pathfinding, procedural content generation, and narrative decision systems within game engines. It prioritises perceived intelligence, responsiveness, and entertainment value over computational optimality, distinguishing it from classical AI research focused on provably correct or globally optimal solutions.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:pathfinding", "label": "Pathfinding"},
-      {"@id": "urn:ngm:class:behaviour-tree", "label": "Behaviour Tree"},
-      {"@id": "urn:ngm:class:finite-state-machine", "label": "Finite State Machine"},
-      {"@id": "urn:ngm:class:utility-ai", "label": "Utility AI"}
+      {
+        "@id": "urn:ngm:class:pathfinding",
+        "label": "Pathfinding"
+      },
+      {
+        "@id": "urn:ngm:class:behaviour-tree",
+        "label": "Behaviour Tree"
+      },
+      {
+        "@id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite State Machine"
+      },
+      {
+        "@id": "urn:ngm:class:utility-ai",
+        "label": "Utility AI"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:procedural-generation", "label": "Procedural Generation"},
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:monte-carlo-tree-search", "label": "Monte Carlo Tree Search"},
-      {"@id": "urn:ngm:class:navigation-mesh", "label": "Navigation Mesh"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      },
+      {
+        "@id": "urn:ngm:class:navigation-mesh",
+        "label": "Navigation Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:game-mechanics", "label": "Game Mechanics"},
-      {"@id": "urn:ngm:class:procedural-content-generation", "label": "Procedural Content Generation"},
-      {"@id": "urn:ngm:class:adaptive-gameplay", "label": "Adaptive Gameplay"},
-      {"@id": "urn:ngm:class:non-player-character", "label": "Non-Player Character"}
+      {
+        "@id": "urn:ngm:class:game-mechanics",
+        "label": "Game Mechanics"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      },
+      {
+        "@id": "urn:ngm:class:non-player-character",
+        "label": "Non-Player Character"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:real-time-computing", "label": "Real-Time Computing"},
-      {"@id": "urn:ngm:class:decision-theory", "label": "Decision Theory"}
+      {
+        "@id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
+      },
+      {
+        "@id": "urn:ngm:class:decision-theory",
+        "label": "Decision Theory"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:artificial-general-intelligence", "label": "Artificial General Intelligence"},
-      {"@id": "urn:ngm:class:classical-planning", "label": "Classical Planning"}
+      {
+        "@id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:classical-planning",
+        "label": "Classical Planning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:hierarchical-task-network", "label": "Hierarchical Task Network"},
-      {"@id": "urn:ngm:class:player-modelling", "label": "Player Modelling"}
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:hierarchical-task-network",
+        "label": "Hierarchical Task Network"
+      },
+      {
+        "@id": "urn:ngm:class:player-modelling",
+        "label": "Player Modelling"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:video-game-artificial-intelligence", "label": "Video Game Artificial Intelligence"},
-    {"@id": "urn:ngm:class:interactive-entertainment-ai", "label": "Interactive Entertainment AI"}
+    {
+      "@id": "urn:ngm:class:video-game-artificial-intelligence",
+      "label": "Video Game Artificial Intelligence"
+    },
+    {
+      "@id": "urn:ngm:class:interactive-entertainment-ai",
+      "label": "Interactive Entertainment AI"
+    }
   ],
   "quality": 0.72,
   "provenance": {

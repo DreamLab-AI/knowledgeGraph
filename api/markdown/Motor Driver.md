@@ -24,56 +24,139 @@ alias:: MotorDriver
   "definition": "A Motor Driver is an electronic circuit or integrated circuit module that translates low-power control signals from a microcontroller or digital signal processor into the high-current, high-voltage waveforms required to operate electric motors, including DC brushed motors, brushless DC motors, and stepper motors. Motor drivers implement switching topologies such as H-bridge configurations and PWM (pulse-width modulation) generation to control motor direction, speed, and torque. Protection circuitry for over-current, over-temperature, and back-EMF clamping is typically integrated. Motor drivers are fundamental building blocks of robotic systems, electric vehicles, CNC machinery, and consumer appliances.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:power-electronics", "label": "Power Electronics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:power-electronics",
+      "label": "Power Electronics"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:h-bridge", "label": "H-Bridge"},
-      {"@id": "urn:ngm:class:gate-driver", "label": "Gate Driver"},
-      {"@id": "urn:ngm:class:current-sensing", "label": "Current Sensing"}
+      {
+        "@id": "urn:ngm:class:h-bridge",
+        "label": "H-Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:gate-driver",
+        "label": "Gate Driver"
+      },
+      {
+        "@id": "urn:ngm:class:current-sensor",
+        "label": "Current Sensing"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:robotic-system", "label": "Robotic System"},
-      {"@id": "urn:ngm:class:motor-control-system", "label": "Motor Control System"}
+      {
+        "@id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      },
+      {
+        "@id": "urn:ngm:class:motor-control-system",
+        "label": "Motor Control System"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:microcontroller", "label": "Microcontroller"},
-      {"@id": "urn:ngm:class:pulse-width-modulation", "label": "Pulse-Width Modulation"},
-      {"@id": "urn:ngm:class:power-supply", "label": "Power Supply"}
+      {
+        "@id": "urn:ngm:class:microcontroller",
+        "label": "Microcontroller"
+      },
+      {
+        "@id": "urn:ngm:class:pulse-width-modulation",
+        "label": "Pulse-Width Modulation"
+      },
+      {
+        "@id": "urn:ngm:class:power-supply",
+        "label": "Power Supply"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:servo-control", "label": "Servo Control"},
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"},
-      {"@id": "urn:ngm:class:field-oriented-control", "label": "Field-Oriented Control"}
+      {
+        "@id": "urn:ngm:class:servo-control",
+        "label": "Servo Control"
+      },
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "@id": "urn:ngm:class:field-oriented-control",
+        "label": "Field-Oriented Control"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:mosfet", "label": "MOSFET"},
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"}
+      {
+        "@id": "urn:ngm:class:mosfet",
+        "label": "MOSFET"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:real-time-control", "label": "Real-Time Control"},
-      {"@id": "urn:ngm:class:dc-servo-motor", "label": "DC Servo Motor"},
-      {"@id": "urn:ngm:class:encoder", "label": "Encoder"}
+      {
+        "@id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      },
+      {
+        "@id": "urn:ngm:class:dc-servo-motor",
+        "label": "DC Servo Motor"
+      },
+      {
+        "@id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:electric-motor", "label": "Electric Motor"},
-      {"@id": "urn:ngm:class:stepper-motor", "label": "Stepper Motor"},
-      {"@id": "urn:ngm:class:brushless-dc-motor", "label": "Brushless DC Motor"}
+      {
+        "@id": "urn:ngm:class:electric-motor",
+        "label": "Electric Motor"
+      },
+      {
+        "@id": "urn:ngm:class:stepper-motor",
+        "label": "Stepper Motor"
+      },
+      {
+        "@id": "urn:ngm:class:dc-servo-motor",
+        "label": "Brushless DC Motor"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:servo-amplifier", "label": "Servo Amplifier"}
+      {
+        "@id": "urn:ngm:class:servo-amplifier",
+        "label": "Servo Amplifier"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:can-bus", "label": "CAN Bus"},
-      {"@id": "urn:ngm:class:ethercat", "label": "EtherCAT"}
+      {
+        "@id": "urn:ngm:class:can-bus",
+        "label": "CAN Bus"
+      },
+      {
+        "@id": "urn:ngm:class:ethercat",
+        "label": "EtherCAT"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:servo-motor", "label": "Servo Motor"},
-      {"@id": "urn:ngm:class:thermal-management", "label": "Thermal Management"}
+      {
+        "@id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      },
+      {
+        "@id": "urn:ngm:class:thermal-management",
+        "label": "Thermal Management"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:motor-controller-ic", "label": "Motor Controller IC"}
+    {
+      "@id": "urn:ngm:class:motor-controller-ic",
+      "label": "Motor Controller IC"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -60,10 +60,6 @@
       {
         "id": "urn:ngm:class:calibration",
         "label": "Calibration"
-      },
-      {
-        "id": "urn:ngm:class:truthfulness",
-        "label": "Truthfulness"
       }
     ],
     "bridgesTo": [

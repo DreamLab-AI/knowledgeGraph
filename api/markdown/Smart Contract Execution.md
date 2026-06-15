@@ -38,57 +38,149 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:ethereum-virtual-machine", "label": "Ethereum Virtual Machine"},
-      {"@id": "urn:ngm:class:bytecode", "label": "Bytecode"},
-      {"@id": "urn:ngm:class:application-binary-interface", "label": "Application Binary Interface"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:bytecode",
+        "label": "Bytecode"
+      },
+      {
+        "@id": "urn:ngm:class:application-binary-interface",
+        "label": "Application Binary Interface"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:gas", "label": "Gas"},
-      {"@id": "urn:ngm:class:blockchain-node", "label": "Blockchain Node"},
-      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:gas",
+        "label": "Gas"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-node",
+        "label": "Blockchain Node"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:token-transfer", "label": "Token Transfer"},
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"},
-      {"@id": "urn:ngm:class:non-fungible-token", "label": "Non-Fungible Token"},
-      {"@id": "urn:ngm:class:cross-chain-messaging", "label": "Cross-Chain Messaging"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:token-transfer",
+        "label": "Token Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-messaging",
+        "label": "Cross-Chain Messaging"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
-      {"@id": "urn:ngm:class:state-machine", "label": "State Machine"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:solidity", "label": "Solidity"},
-      {"@id": "urn:ngm:class:eip-1559", "label": "EIP-1559"}
+      {
+        "@id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      },
+      {
+        "@id": "urn:ngm:class:eip-1559",
+        "label": "EIP-1559"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"},
-      {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer 2 Scaling"},
-      {"@id": "urn:ngm:class:oracle-network", "label": "Oracle Network"}
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:traditional-contract", "label": "Traditional Contract"},
-      {"@id": "urn:ngm:class:centralised-execution", "label": "Centralised Execution"}
+      {
+        "@id": "urn:ngm:class:traditional-contract",
+        "label": "Traditional Contract"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:trusted-execution-environment", "label": "Trusted Execution Environment"},
-      {"@id": "urn:ngm:class:decentralised-ai-inference", "label": "Decentralised AI Inference"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-ai-inference",
+        "label": "Decentralised AI Inference"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:smart-contract-audit", "label": "Smart Contract Audit"},
-      {"@id": "urn:ngm:class:mev", "label": "MEV"},
-      {"@id": "urn:ngm:class:inter-blockchain-communication", "label": "Inter-Blockchain Communication"}
+      {
+        "@id": "urn:ngm:class:smart-contract-audit",
+        "label": "Smart Contract Audit"
+      },
+      {
+        "@id": "urn:ngm:class:mev",
+        "label": "MEV"
+      },
+      {
+        "@id": "urn:ngm:class:inter-blockchain-communication",
+        "label": "Inter-Blockchain Communication"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:on-chain-computation", "label": "On-Chain Computation"},
-    {"@id": "urn:ngm:class:contract-invocation", "label": "Contract Invocation"}
+    {
+      "@id": "urn:ngm:class:on-chain-computation",
+      "label": "On-Chain Computation"
+    },
+    {
+      "@id": "urn:ngm:class:contract-invocation",
+      "label": "Contract Invocation"
+    }
   ],
   "quality": 0.74,
   "qualityScore": 0.74,

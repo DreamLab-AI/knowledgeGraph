@@ -57,52 +57,106 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {"@id": "urn:ngm:class:department-of-computing", "label": "Department of Computing"},
-      {"@id": "urn:ngm:class:faculty-of-medicine", "label": "Faculty of Medicine"},
-      {"@id": "urn:ngm:class:white-city-innovation-district", "label": "White City Innovation District"}
-    ],
     "partOf": [
-      {"@id": "urn:ngm:class:russell-group", "label": "Russell Group"},
-      {"@id": "urn:ngm:class:united-kingdom-research-base", "label": "United Kingdom Research Base"}
+      {
+        "@id": "urn:ngm:class:russell-group",
+        "label": "Russell Group"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:research-funding", "label": "Research Funding"},
-      {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"}
+      {
+        "@id": "urn:ngm:class:research-funding",
+        "label": "Research Funding"
+      },
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:technology-transfer", "label": "Technology Transfer"},
-      {"@id": "urn:ngm:class:open-science", "label": "Open Science"},
-      {"@id": "urn:ngm:class:spin-out-company", "label": "Spin-out Company"}
+      {
+        "@id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:open-science",
+        "label": "Open Science"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:artificial-intelligence-research", "label": "Artificial Intelligence Research"},
-      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"},
-      {"@id": "urn:ngm:class:interdisciplinary-research", "label": "Interdisciplinary Research"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence-research",
+        "label": "Artificial Intelligence Research"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:university-of-cambridge", "label": "University of Cambridge"},
-      {"@id": "urn:ngm:class:university-of-edinburgh", "label": "University of Edinburgh"},
-      {"@id": "urn:ngm:class:oxford-university", "label": "University of Oxford"},
-      {"@id": "urn:ngm:class:alan-turing-institute", "label": "Alan Turing Institute"},
-      {"@id": "urn:ngm:class:ukri", "label": "UKRI"},
-      {"@id": "urn:ngm:class:research-institution", "label": "Research Institution"}
+      {
+        "@id": "urn:ngm:class:university-of-cambridge",
+        "label": "University of Cambridge"
+      },
+      {
+        "@id": "urn:ngm:class:university-of-edinburgh",
+        "label": "University of Edinburgh"
+      },
+      {
+        "@id": "urn:ngm:class:university-of-oxford",
+        "label": "University of Oxford"
+      },
+      {
+        "@id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      },
+      {
+        "@id": "urn:ngm:class:ukri",
+        "label": "UKRI"
+      },
+      {
+        "@id": "urn:ngm:class:research-institution",
+        "label": "Research Institution"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:blockchain-research", "label": "Blockchain Research"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:imperial-college", "label": "Imperial College"},
-    {"@id": "urn:ngm:class:icl", "label": "ICL"}
+    {
+      "@id": "urn:ngm:class:imperial-college",
+      "label": "Imperial College"
+    },
+    {
+      "@id": "urn:ngm:class:icl",
+      "label": "ICL"
+    }
   ],
   "quality": 0.72,
   "provenance": {

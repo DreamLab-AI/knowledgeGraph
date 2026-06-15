@@ -130,20 +130,6 @@ public:: true
       {
         "@id": "urn:ngm:class:distributed-teamwork",
         "label": "Distributed Teamwork"
-      },
-      {
-        "@id": "urn:ngm:class:virtual-education",
-        "label": "Virtual Education"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:videoconferencing",
-        "label": "Videoconferencing"
-      },
-      {
-        "@id": "urn:ngm:class:text-based-communication",
-        "label": "Text-Based Communication"
       }
     ],
     "bridgesTo": [

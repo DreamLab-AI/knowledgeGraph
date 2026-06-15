@@ -74,7 +74,7 @@ public:: true
         "label": "Decision Tree"
       },
       {
-        "@id": "urn:ngm:class:ensemble-method",
+        "@id": "urn:ngm:class:ensemble-methods",
         "label": "Ensemble Method"
       },
       {
@@ -164,11 +164,11 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:rule-based-system",
+        "@id": "urn:ngm:class:rule-based-systems",
         "label": "Rule-Based System"
       },
       {
-        "@id": "urn:ngm:class:expert-system",
+        "@id": "urn:ngm:class:expert-systems",
         "label": "Expert System"
       }
     ],

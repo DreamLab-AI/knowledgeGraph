@@ -103,7 +103,7 @@
         "label": "Cosmos SDK"
       },
       {
-        "id": "urn:ngm:class:p2p-gossip-protocol",
+        "id": "urn:ngm:class:gossip-protocol",
         "label": "P2P Gossip Protocol"
       }
     ],
@@ -111,7 +111,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:cosmos-network",
+        "id": "urn:ngm:class:cosmos",
         "label": "Cosmos Network"
       }
     ],

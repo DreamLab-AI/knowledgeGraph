@@ -35,20 +35,7 @@
         "label": "Spatial Mapping"
       }
     ],
-    "enables": [
-      {
-        "id": "urn:ngm:class:content-composition",
-        "label": "Content Composition"
-      },
-      {
-        "id": "urn:ngm:class:dynamic-rendering",
-        "label": "Dynamic Rendering"
-      },
-      {
-        "id": "urn:ngm:class:layer-management",
-        "label": "Layer Management"
-      }
-    ],
+    "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],

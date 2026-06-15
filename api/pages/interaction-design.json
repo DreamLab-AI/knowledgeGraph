@@ -18,10 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:interaction-flow",
-        "label": "Interaction Flow"
-      },
-      {
         "id": "urn:ngm:class:affordance",
         "label": "Affordance"
       },
@@ -60,10 +56,6 @@
       {
         "id": "urn:ngm:class:inclusive-design",
         "label": "Inclusive Design"
-      },
-      {
-        "id": "urn:ngm:class:conversational-interface",
-        "label": "Conversational Interface"
       }
     ],
     "dependsOn": [],
@@ -71,7 +63,7 @@
     "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:spatial-user-interface",
+        "id": "urn:ngm:class:spatial-user-interfaces",
         "label": "Spatial User Interface"
       },
       {
@@ -95,10 +87,6 @@
       {
         "id": "urn:ngm:class:task-analysis",
         "label": "Task Analysis"
-      },
-      {
-        "id": "urn:ngm:class:wireframing",
-        "label": "Wireframing"
       }
     ],
     "supports": [],
@@ -131,7 +119,7 @@
         "label": "Usability Testing"
       },
       {
-        "id": "urn:ngm:class:design-system",
+        "id": "urn:ngm:class:design-systems",
         "label": "Design System"
       }
     ]

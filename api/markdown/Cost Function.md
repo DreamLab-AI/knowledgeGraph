@@ -38,54 +38,124 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"},
-      {"@id": "urn:ngm:class:penalty-term", "label": "Penalty Term"}
+      {
+        "@id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:differentiability", "label": "Differentiability"}
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:differentiability",
+        "label": "Differentiability"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:optimal-control", "label": "Optimal Control"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:loss-landscape", "label": "Loss Landscape"},
-      {"@id": "urn:ngm:class:parametric-model", "label": "Parametric Model"}
+      {
+        "@id": "urn:ngm:class:loss-landscape",
+        "label": "Loss Landscape"
+      },
+      {
+        "@id": "urn:ngm:class:parametric-design-methodology-modeling",
+        "label": "Parametric Model"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:maximum-likelihood-estimation", "label": "Maximum Likelihood Estimation"},
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"}
+      {
+        "@id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
-      {"@id": "urn:ngm:class:automatic-differentiation", "label": "Automatic Differentiation"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:reward-function", "label": "Reward Function"},
-      {"@id": "urn:ngm:class:utility-function", "label": "Utility Function"}
+      {
+        "@id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      },
+      {
+        "@id": "urn:ngm:class:utility-function",
+        "label": "Utility Function"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:convex-optimisation", "label": "Convex Optimisation"},
-      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"},
-      {"@id": "urn:ngm:class:hyperparameter-tuning", "label": "Hyperparameter Tuning"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+      {
+        "@id": "urn:ngm:class:convex-optimisation",
+        "label": "Convex Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:inverse-reinforcement-learning", "label": "Inverse Reinforcement Learning"},
-      {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"}
+      {
+        "@id": "urn:ngm:class:inverse-reinforcement-learning",
+        "label": "Inverse Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
-    {"@id": "urn:ngm:class:objective-loss", "label": "Objective Loss"}
+    {
+      "@id": "urn:ngm:class:loss-function",
+      "label": "Loss Function"
+    },
+    {
+      "@id": "urn:ngm:class:objective-loss",
+      "label": "Objective Loss"
+    }
   ],
   "quality": 0.73,
   "qualityScore": 0.73,
-  "maturity": "mature",
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",

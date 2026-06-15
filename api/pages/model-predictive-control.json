@@ -22,10 +22,6 @@
         "label": "Prediction Horizon"
       },
       {
-        "id": "urn:ngm:class:control-horizon",
-        "label": "Control Horizon"
-      },
-      {
         "id": "urn:ngm:class:cost-function",
         "label": "Cost Function"
       },
@@ -44,7 +40,7 @@
         "label": "System Identification"
       },
       {
-        "id": "urn:ngm:class:mathematical-optimisation",
+        "id": "urn:ngm:class:optimisation",
         "label": "Mathematical Optimisation"
       },
       {
@@ -91,7 +87,7 @@
         "label": "PID Control"
       },
       {
-        "id": "urn:ngm:class:lqr-control",
+        "id": "urn:ngm:class:state-space-control",
         "label": "LQR Control"
       }
     ],
@@ -115,7 +111,7 @@
         "label": "State Space Model"
       },
       {
-        "id": "urn:ngm:class:nonlinear-programming",
+        "id": "urn:ngm:class:quadratic-programming",
         "label": "Nonlinear Programming"
       }
     ],

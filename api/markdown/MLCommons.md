@@ -23,54 +23,129 @@ public:: true
   "definition": "MLCommons is an open engineering consortium that builds benchmarks, datasets, and best practices to accelerate machine learning innovation in a fair and reproducible way. It is best known for the MLPerf benchmark suites, which measure training and inference performance across hardware and software stacks. Membership includes major chip vendors, cloud providers, and research institutions.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:mlperf", "label": "MLPerf"},
-      {"@id": "urn:ngm:class:peoples-speech-dataset", "label": "People's Speech Dataset"},
-      {"@id": "urn:ngm:class:mlperf-inference", "label": "MLPerf Inference"}
+      {
+        "@id": "urn:ngm:class:mlperf",
+        "label": "MLPerf"
+      },
+      {
+        "@id": "urn:ngm:class:peoples-speech-dataset",
+        "label": "People's Speech Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:mlperf-inference",
+        "label": "MLPerf Inference"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:benchmarking", "label": "Benchmarking"},
-      {"@id": "urn:ngm:class:reproducible-research", "label": "Reproducible Research"}
+      {
+        "@id": "urn:ngm:class:benchmarking",
+        "label": "Benchmarking"
+      },
+      {
+        "@id": "urn:ngm:class:reproducible-research",
+        "label": "Reproducible Research"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:hardware-ai-benchmarking", "label": "Hardware AI Benchmarking"},
-      {"@id": "urn:ngm:class:ai-model-evaluation", "label": "AI Model Evaluation"},
-      {"@id": "urn:ngm:class:fair-comparison", "label": "Fair Comparison"}
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "AI Model Evaluation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:open-datasets", "label": "Open Datasets"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:data-quality", "label": "Data Quality"}
+      {
+        "@id": "urn:ngm:class:open-data",
+        "label": "Open Datasets"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"},
-      {"@id": "urn:ngm:class:deep-learning-frameworks", "label": "Deep Learning Frameworks"}
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning-framework",
+        "label": "Deep Learning Frameworks"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ieee", "label": "IEEE"},
-      {"@id": "urn:ngm:class:industry-consortium", "label": "Industry Consortium"}
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "@id": "urn:ngm:class:industry-consortium",
+        "label": "Industry Consortium"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:spec-benchmark", "label": "SPEC Benchmark"},
-      {"@id": "urn:ngm:class:supercomputer-top500", "label": "TOP500 Supercomputer List"}
+      {
+        "@id": "urn:ngm:class:spec-benchmark",
+        "label": "SPEC Benchmark"
+      },
+      {
+        "@id": "urn:ngm:class:supercomputer-top500",
+        "label": "TOP500 Supercomputer List"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"},
-      {"@id": "urn:ngm:class:governance", "label": "Governance"}
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"},
-      {"@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards", "label": "Evaluation benchmarks and leaderboards"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"}
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation benchmarks and leaderboards"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ml-commons-consortium", "label": "ML Commons Consortium"}
+    {
+      "@id": "urn:ngm:class:ml-commons-consortium",
+      "label": "ML Commons Consortium"
+    }
   ],
   "quality": 0.74,
   "provenance": {

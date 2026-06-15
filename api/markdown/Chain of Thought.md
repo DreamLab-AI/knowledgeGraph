@@ -38,53 +38,139 @@ alias:: Chain-of-Thought
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:chain-of-thought-prompting", "label": "Chain-of-Thought Prompting"},
-    {"@id": "urn:ngm:class:cot-prompting", "label": "CoT Prompting"},
-    {"@id": "urn:ngm:class:chain-of-thought-reasoning", "label": "Chain-of-Thought Reasoning"}
+    {
+      "@id": "urn:ngm:class:chain-of-thought-prompting",
+      "label": "Chain-of-Thought Prompting"
+    },
+    {
+      "@id": "urn:ngm:class:cot-prompting",
+      "label": "CoT Prompting"
+    },
+    {
+      "@id": "urn:ngm:class:chain-of-thought-reasoning",
+      "label": "Chain-of-Thought Reasoning"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:autoregressive-language-model", "label": "Autoregressive Language Model"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:autoregressive-language-model",
+        "label": "Autoregressive Language Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"},
-      {"@id": "urn:ngm:class:mathematical-reasoning", "label": "Mathematical Reasoning"},
-      {"@id": "urn:ngm:class:commonsense-reasoning", "label": "Commonsense Reasoning"},
-      {"@id": "urn:ngm:class:multi-hop-reasoning", "label": "Multi-Hop Reasoning"},
-      {"@id": "urn:ngm:class:inference-time-compute-scaling", "label": "Inference-Time Compute Scaling"}
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:mathematical-reasoning",
+        "label": "Mathematical Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:commonsense-reasoning",
+        "label": "Commonsense Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:multi-hop-reasoning",
+        "label": "Multi-Hop Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:inference-time-compute-scaling",
+        "label": "Inference-Time Compute Scaling"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:zero-shot-chain-of-thought", "label": "Zero-Shot Chain of Thought"},
-      {"@id": "urn:ngm:class:self-consistency", "label": "Self-Consistency"},
-      {"@id": "urn:ngm:class:tree-of-thought", "label": "Tree of Thought"},
-      {"@id": "urn:ngm:class:process-reward-model", "label": "Process Reward Model"}
+      {
+        "@id": "urn:ngm:class:self-consistency",
+        "label": "Self-Consistency"
+      },
+      {
+        "@id": "urn:ngm:class:tree-of-thoughts",
+        "label": "Tree of Thought"
+      },
+      {
+        "@id": "urn:ngm:class:process-reward-model",
+        "label": "Process Reward Model"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:in-context-learning", "label": "In-Context Learning"},
-      {"@id": "urn:ngm:class:few-shot-learning", "label": "Few-Shot Learning"},
-      {"@id": "urn:ngm:class:token-generation", "label": "Token Generation"}
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      },
+      {
+        "@id": "urn:ngm:class:few-shot-learning",
+        "label": "Few-Shot Learning"
+      },
+      {
+        "@id": "urn:ngm:class:token-generation",
+        "label": "Token Generation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:emergent-capabilities", "label": "Emergent Capabilities"},
-      {"@id": "urn:ngm:class:model-scale", "label": "Model Scale"}
+      {
+        "@id": "urn:ngm:class:emergent-capabilities",
+        "label": "Emergent Capabilities"
+      },
+      {
+        "@id": "urn:ngm:class:model-scale",
+        "label": "Model Scale"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:standard-prompting", "label": "Standard Prompting"},
-      {"@id": "urn:ngm:class:direct-answer-prompting", "label": "Direct Answer Prompting"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
+      {
+        "@id": "urn:ngm:class:standard-prompting",
+        "label": "Standard Prompting"
+      },
+      {
+        "@id": "urn:ngm:class:direct-answer-prompting",
+        "label": "Direct Answer Prompting"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:scratchpad-reasoning", "label": "Scratchpad Reasoning"},
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
-      {"@id": "urn:ngm:class:planning", "label": "Planning"},
-      {"@id": "urn:ngm:class:ai-agent", "label": "AI Agent"}
+      {
+        "@id": "urn:ngm:class:scratchpad-reasoning",
+        "label": "Scratchpad Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:planning",
+        "label": "Planning"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:symbolic-ai", "label": "Symbolic AI"},
-      {"@id": "urn:ngm:class:search-algorithms", "label": "Search Algorithms"}
+      {
+        "@id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "@id": "urn:ngm:class:search-algorithms",
+        "label": "Search Algorithms"
+      }
     ]
   },
   "quality": 0.74,

@@ -190,24 +190,8 @@ public:: true
         "label": "Asset Optimization"
       },
       {
-        "@id": "urn:ngm:class:cdn-distribution",
+        "@id": "urn:ngm:class:content-delivery-network-cdn",
         "label": "CDN Distribution"
-      },
-      {
-        "@id": "urn:ngm:class:content-storage",
-        "label": "Content Storage"
-      },
-      {
-        "@id": "urn:ngm:class:lod-generation",
-        "label": "LOD Generation"
-      },
-      {
-        "@id": "urn:ngm:class:runtime-loading",
-        "label": "Runtime Loading"
-      },
-      {
-        "@id": "urn:ngm:class:texture-baking",
-        "label": "Texture Baking"
       },
       {
         "@id": "urn:ngm:class:3-d-modeling",
@@ -220,12 +204,8 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:3-d-authoring-tools",
+        "@id": "urn:ngm:class:authoring-tool",
         "label": "3D Authoring Tools"
-      },
-      {
-        "@id": "urn:ngm:class:asset-compression",
-        "label": "Asset Compression"
       },
       {
         "@id": "urn:ngm:class:asset-management-system",
@@ -234,10 +214,6 @@ public:: true
       {
         "@id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
-      },
-      {
-        "@id": "urn:ngm:class:format-conversion",
-        "label": "Format Conversion"
       },
       {
         "@id": "urn:ngm:class:real-time-rendering-engine",
@@ -252,10 +228,6 @@ public:: true
       {
         "@id": "urn:ngm:class:cross-platform-content",
         "label": "Cross-Platform Content"
-      },
-      {
-        "@id": "urn:ngm:class:dynamic-asset-loading",
-        "label": "Dynamic Asset Loading"
       },
       {
         "@id": "urn:ngm:class:user-generated-content",

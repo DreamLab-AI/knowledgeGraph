@@ -18,11 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:two-sided-market",
-        "label": "Two-Sided Market"
-      },
-      {
-        "id": "urn:ngm:class:network-effect",
+        "id": "urn:ngm:class:network-effects",
         "label": "Network Effect"
       },
       {
@@ -75,10 +71,6 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:vertically-integrated-firm",
-        "label": "Vertically Integrated Firm"
-      },
-      {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
       }
@@ -89,7 +81,7 @@
         "label": "Decentralised Finance"
       },
       {
-        "id": "urn:ngm:class:tokenised-economy",
+        "id": "urn:ngm:class:token-economy",
         "label": "Tokenised Economy"
       }
     ],

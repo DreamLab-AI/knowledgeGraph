@@ -24,52 +24,131 @@ alias:: CoordinationMechanisms
   "definition": "Coordination Mechanisms are the structural arrangements, protocols, and incentive designs that enable multiple autonomous agents—whether human organisations, software processes, or robotic systems—to align their actions toward shared goals whilst managing conflicts, resource contention, and information asymmetries. They include market-based mechanisms, hierarchical authority structures, consensus protocols, and shared state systems.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:auction-mechanism", "label": "Auction Mechanism"},
-      {"@id": "urn:ngm:class:incentive-structure", "label": "Incentive Structure"},
-      {"@id": "urn:ngm:class:shared-memory", "label": "Shared Memory"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:auction-mechanism",
+        "label": "Auction Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:incentive-structures",
+        "label": "Incentive Structure"
+      },
+      {
+        "@id": "urn:ngm:class:shared-memory",
+        "label": "Shared Memory"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
-      {"@id": "urn:ngm:class:collective-action", "label": "Collective Action"},
-      {"@id": "urn:ngm:class:decentralised-governance", "label": "Decentralised Governance"},
-      {"@id": "urn:ngm:class:task-allocation", "label": "Task Allocation"}
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:collective-action",
+        "label": "Collective Action"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "@id": "urn:ngm:class:task-allocation",
+        "label": "Task Allocation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:coordination-protocol", "label": "Coordination Protocol"},
-      {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"},
-      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"},
-      {"@id": "urn:ngm:class:contract-net-protocol", "label": "Contract Net Protocol"}
+      {
+        "@id": "urn:ngm:class:coordination-protocol",
+        "label": "Coordination Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "@id": "urn:ngm:class:contract-net-protocol",
+        "label": "Contract Net Protocol"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"},
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"},
-      {"@id": "urn:ngm:class:swarm-intelligence", "label": "Swarm Intelligence"}
+      {
+        "@id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "@id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"},
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
-      {"@id": "urn:ngm:class:information-exchange", "label": "Information Exchange"}
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:information-exchange",
+        "label": "Information Exchange"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:voting-mechanism", "label": "Voting Mechanism"}
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:hierarchical-control", "label": "Hierarchical Control"},
-      {"@id": "urn:ngm:class:market-mechanism", "label": "Market Mechanism"}
+      {
+        "@id": "urn:ngm:class:market-mechanism",
+        "label": "Market Mechanism"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:coordination-protocol", "label": "Coordination Protocol"}
+    {
+      "@id": "urn:ngm:class:coordination-protocol",
+      "label": "Coordination Protocol"
+    }
   ],
   "quality": 0.72,
   "provenance": {

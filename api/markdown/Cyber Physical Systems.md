@@ -29,65 +29,169 @@ alias:: Cyber-Physical Systems
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"},
-    {"@id": "urn:ngm:class:networked-embedded-systems", "label": "Networked Embedded Systems"}
+    {
+      "@id": "urn:ngm:class:cyber-physical-systems",
+      "label": "Cyber Physical Systems"
+    },
+    {
+      "@id": "urn:ngm:class:networked-embedded-systems",
+      "label": "Networked Embedded Systems"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
-      {"@id": "urn:ngm:class:sensor-network", "label": "Sensor Network"},
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:real-time-operating-system", "label": "Real-Time Operating System"},
-      {"@id": "urn:ngm:class:control-loop", "label": "Control Loop"}
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-network",
+        "label": "Sensor Network"
+      },
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:control-loop",
+        "label": "Control Loop"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:real-time-computing", "label": "Real-Time Computing"},
-      {"@id": "urn:ngm:class:wireless-communication", "label": "Wireless Communication"},
-      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"},
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"}
+      {
+        "@id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-communication",
+        "label": "Wireless Communication"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"},
-      {"@id": "urn:ngm:class:smart-grid", "label": "Smart Grid"},
-      {"@id": "urn:ngm:class:precision-medicine", "label": "Precision Medicine"},
-      {"@id": "urn:ngm:class:smart-city", "label": "Smart City"}
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "@id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "@id": "urn:ngm:class:precision-medicine",
+        "label": "Precision Medicine"
+      },
+      {
+        "@id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:network-protocols", "label": "Network Protocols"}
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocols"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
-      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"}
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "@id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:model-predictive-control", "label": "Model Predictive Control"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:industrial-internet-of-things", "label": "Industrial Internet of Things"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iec-61508", "label": "IEC 61508"},
-      {"@id": "urn:ngm:class:iso-26262", "label": "ISO 26262"},
-      {"@id": "urn:ngm:class:nist-cps-framework", "label": "NIST CPS Framework"}
+      {
+        "@id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "@id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:information-technology", "label": "Information Technology"},
-      {"@id": "urn:ngm:class:operational-technology", "label": "Operational Technology"}
+      {
+        "@id": "urn:ngm:class:information-technology",
+        "label": "Information Technology"
+      },
+      {
+        "@id": "urn:ngm:class:operational-technology",
+        "label": "Operational Technology"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:scada", "label": "SCADA"},
-      {"@id": "urn:ngm:class:cyber-security", "label": "Cyber Security"}
+      {
+        "@id": "urn:ngm:class:scada",
+        "label": "SCADA"
+      },
+      {
+        "@id": "urn:ngm:class:cyber-security",
+        "label": "Cyber Security"
+      }
     ]
   },
   "provenance": {

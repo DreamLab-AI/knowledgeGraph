@@ -38,54 +38,129 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:proportional-control", "label": "Proportional Control"},
-      {"@id": "urn:ngm:class:integral-control", "label": "Integral Control"},
-      {"@id": "urn:ngm:class:derivative-control", "label": "Derivative Control"}
+      {
+        "@id": "urn:ngm:class:proportional-control",
+        "label": "Proportional Control"
+      },
+      {
+        "@id": "urn:ngm:class:derivative-control",
+        "label": "Derivative Control"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:sensor", "label": "Sensor"},
-      {"@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop"},
-      {"@id": "urn:ngm:class:setpoint", "label": "Setpoint"}
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "@id": "urn:ngm:class:setpoint",
+        "label": "Setpoint"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:force-control", "label": "Force Control"},
-      {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"},
-      {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"},
-      {"@id": "urn:ngm:class:temperature-regulation", "label": "Temperature Regulation"}
+      {
+        "@id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "@id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "@id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:error-signal", "label": "Error Signal"},
-      {"@id": "urn:ngm:class:gain-tuning", "label": "Gain Tuning"}
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:error-signal",
+        "label": "Error Signal"
+      },
+      {
+        "@id": "urn:ngm:class:gain-tuning",
+        "label": "Gain Tuning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"},
-      {"@id": "urn:ngm:class:stability-analysis", "label": "Stability Analysis"}
+      {
+        "@id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "@id": "urn:ngm:class:stability-analysis",
+        "label": "Stability Analysis"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:closed-loop-control", "label": "Closed-Loop Control"}
+      {
+        "@id": "urn:ngm:class:closed-loop-control",
+        "label": "Closed-Loop Control"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:impedance-control", "label": "Impedance Control"},
-      {"@id": "urn:ngm:class:model-predictive-control", "label": "Model Predictive Control"},
-      {"@id": "urn:ngm:class:sliding-mode-control", "label": "Sliding Mode Control"},
-      {"@id": "urn:ngm:class:open-loop-control", "label": "Open-Loop Control"}
+      {
+        "@id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "@id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "@id": "urn:ngm:class:sliding-mode-control",
+        "label": "Sliding Mode Control"
+      },
+      {
+        "@id": "urn:ngm:class:open-loop-control",
+        "label": "Open-Loop Control"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cascade-control", "label": "Cascade Control"},
-      {"@id": "urn:ngm:class:adaptive-control", "label": "Adaptive Control"},
-      {"@id": "urn:ngm:class:ziegler-nichols-method", "label": "Ziegler-Nichols Method"},
-      {"@id": "urn:ngm:class:anti-windup", "label": "Anti-Windup"},
-      {"@id": "urn:ngm:class:bode-plot", "label": "Bode Plot"}
+      {
+        "@id": "urn:ngm:class:cascade-control",
+        "label": "Cascade Control"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "@id": "urn:ngm:class:anti-windup",
+        "label": "Anti-Windup"
+      },
+      {
+        "@id": "urn:ngm:class:bode-plot",
+        "label": "Bode Plot"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:proportional-integral-derivative-controller", "label": "Proportional-Integral-Derivative Controller"},
-    {"@id": "urn:ngm:class:three-term-controller", "label": "Three-Term Controller"}
+    {
+      "@id": "urn:ngm:class:proportional-integral-derivative-controller",
+      "label": "Proportional-Integral-Derivative Controller"
+    },
+    {
+      "@id": "urn:ngm:class:three-term-controller",
+      "label": "Three-Term Controller"
+    }
   ],
   "quality": 0.76,
   "provenance": {

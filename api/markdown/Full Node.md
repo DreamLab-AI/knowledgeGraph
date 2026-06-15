@@ -75,55 +75,135 @@ public:: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:node", "label": "Node"},
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
+      {
+        "@id": "urn:ngm:class:node",
+        "label": "Node"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:transaction-validation-engine", "label": "Transaction Validation Engine"},
-      {"@id": "urn:ngm:class:blockchain-ledger", "label": "Blockchain Ledger"},
-      {"@id": "urn:ngm:class:mempool", "label": "Mempool"}
+      {
+        "@id": "urn:ngm:class:transaction-validation",
+        "label": "Transaction Validation Engine"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-ledger",
+        "label": "Blockchain Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"},
-      {"@id": "urn:ngm:class:trustless-participation", "label": "Trustless Participation"},
-      {"@id": "urn:ngm:class:independent-verification", "label": "Independent Verification"}
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-verification",
+        "label": "Cryptographic Verification"
+      },
+      {
+        "@id": "urn:ngm:class:independent-verification",
+        "label": "Independent Verification"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
-      {"@id": "urn:ngm:class:genesis-block", "label": "Genesis Block"}
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:genesis-block",
+        "label": "Genesis Block"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:consensus-rule", "label": "Consensus Rule"},
-      {"@id": "urn:ngm:class:bitcoin-protocol", "label": "Bitcoin Protocol"}
+      {
+        "@id": "urn:ngm:class:consensus-rule",
+        "label": "Consensus Rule"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-protocol",
+        "label": "Bitcoin Protocol"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:decentralization", "label": "Decentralization"},
-      {"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"}
+      {
+        "@id": "urn:ngm:class:decentralization",
+        "label": "Decentralization"
+      },
+      {
+        "@id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:light-client", "label": "Light Client"},
-      {"@id": "urn:ngm:class:simplified-payment-verification", "label": "Simplified Payment Verification"},
-      {"@id": "urn:ngm:class:mining-node", "label": "Mining Node"}
+      {
+        "@id": "urn:ngm:class:light-client",
+        "label": "Light Client"
+      },
+      {
+        "@id": "urn:ngm:class:simplified-payment-verification",
+        "label": "Simplified Payment Verification"
+      },
+      {
+        "@id": "urn:ngm:class:mining-node",
+        "label": "Mining Node"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:archival-node", "label": "Archival Node"},
-      {"@id": "urn:ngm:class:blockchain-infrastructure", "label": "Blockchain Infrastructure"},
-      {"@id": "urn:ngm:class:network-synchronisation", "label": "Network Synchronisation"}
+      {
+        "@id": "urn:ngm:class:archival-node",
+        "label": "Archival Node"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:network-synchronisation",
+        "label": "Network Synchronisation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:network-security", "label": "Network Security"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:validating-node", "label": "Validating Node"},
-    {"@id": "urn:ngm:class:archiving-full-node", "label": "Archiving Full Node"}
+    {
+      "@id": "urn:ngm:class:validating-node",
+      "label": "Validating Node"
+    },
+    {
+      "@id": "urn:ngm:class:archiving-full-node",
+      "label": "Archiving Full Node"
+    }
   ],
   "quality": 0.8,
   "provenance": {

@@ -16,19 +16,10 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:merkle-node",
-        "label": "Merkle Node"
-      },
-      {
-        "id": "urn:ngm:class:typed-link",
-        "label": "Typed Link"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:hash-collision-resistance",
+        "id": "urn:ngm:class:collision-resistance",
         "label": "Hash Collision Resistance"
       },
       {
@@ -64,13 +55,13 @@
         "label": "Peer-to-Peer Network"
       },
       {
-        "id": "urn:ngm:class:immutable-data-model",
+        "id": "urn:ngm:class:immutable-record",
         "label": "Immutable Data Model"
       }
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:authenticated-data-structure",
+        "id": "urn:ngm:class:data-structure",
         "label": "Authenticated Data Structure"
       }
     ],
@@ -120,10 +111,6 @@
       {
         "id": "urn:ngm:class:reproducible-builds",
         "label": "Reproducible Builds"
-      },
-      {
-        "id": "urn:ngm:class:decentralised-data-streaming",
-        "label": "Decentralised Data Streaming"
       }
     ],
     "standardizedBy": [],

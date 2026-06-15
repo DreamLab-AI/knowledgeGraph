@@ -18,19 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:signalling-protocol",
-        "label": "Signalling Protocol"
-      },
-      {
-        "id": "urn:ngm:class:media-codec",
-        "label": "Media Codec"
-      },
-      {
         "id": "urn:ngm:class:transport-layer",
         "label": "Transport Layer"
       },
       {
-        "id": "urn:ngm:class:presence-system",
+        "id": "urn:ngm:class:presence",
         "label": "Presence System"
       }
     ],
@@ -76,24 +68,12 @@
       {
         "id": "urn:ngm:class:asynchronous-messaging",
         "label": "Asynchronous Messaging"
-      },
-      {
-        "id": "urn:ngm:class:store-and-forward",
-        "label": "Store and Forward"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:spatial-audio",
         "label": "Spatial Audio"
-      },
-      {
-        "id": "urn:ngm:class:ai-voice-synthesis",
-        "label": "AI Voice Synthesis"
-      },
-      {
-        "id": "urn:ngm:class:avatar-streaming",
-        "label": "Avatar Streaming"
       }
     ],
     "uses": [
@@ -120,7 +100,7 @@
         "label": "Metaverse and Telecollaboration"
       },
       {
-        "id": "urn:ngm:class:virtual-worlds",
+        "id": "urn:ngm:class:virtual-world",
         "label": "Virtual Worlds"
       },
       {

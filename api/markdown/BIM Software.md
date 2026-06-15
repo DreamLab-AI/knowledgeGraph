@@ -86,10 +86,6 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:cad-capabilities",
-        "label": "CAD Capabilities"
-      },
-      {
         "@id": "urn:ngm:class:collaboration-tools",
         "label": "Collaboration Tools"
       },
@@ -99,10 +95,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:construction-coordination",
-        "label": "Construction Coordination"
-      },
       {
         "@id": "urn:ngm:class:facility-management",
         "label": "Facility Management"

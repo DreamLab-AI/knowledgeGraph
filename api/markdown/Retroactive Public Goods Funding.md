@@ -38,48 +38,109 @@ public:: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:public-goods-funding", "label": "Public Goods Funding"},
-      {"@id": "urn:ngm:class:decentralised-governance", "label": "Decentralised Governance"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
+        "label": "Public Goods Funding"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:dao", "label": "DAO"},
-      {"@id": "urn:ngm:class:treasury-management", "label": "Treasury Management"},
-      {"@id": "urn:ngm:class:impact-attestation", "label": "Impact Attestation"},
-      {"@id": "urn:ngm:class:quadratic-voting", "label": "Quadratic Voting"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"}
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "@id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      },
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:impact-evaluation", "label": "Impact Evaluation"},
-      {"@id": "urn:ngm:class:sybil-resistance", "label": "Sybil Resistance"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:open-source-sustainability", "label": "Open Source Sustainability"},
-      {"@id": "urn:ngm:class:protocol-revenue-distribution", "label": "Protocol Revenue Distribution"},
-      {"@id": "urn:ngm:class:contributor-incentive-alignment", "label": "Contributor Incentive Alignment"}
+      {
+        "@id": "urn:ngm:class:open-source-sustainability",
+        "label": "Open Source Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:revenue-distribution",
+        "label": "Protocol Revenue Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:incentive-alignment",
+        "label": "Contributor Incentive Alignment"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:quadratic-funding", "label": "Quadratic Funding"},
-      {"@id": "urn:ngm:class:prospective-grant-funding", "label": "Prospective Grant Funding"},
-      {"@id": "urn:ngm:class:token-launch", "label": "Token Launch"}
+      {
+        "@id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:quadratic-funding", "label": "Quadratic Funding"},
-      {"@id": "urn:ngm:class:optimism-collective", "label": "Optimism Collective"},
-      {"@id": "urn:ngm:class:gitcoin-grants", "label": "Gitcoin Grants"},
-      {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"},
-      {"@id": "urn:ngm:class:coordination-failure", "label": "Coordination Failure"},
-      {"@id": "urn:ngm:class:ethereum-ecosystem", "label": "Ethereum Ecosystem"}
+      {
+        "@id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
+      },
+      {
+        "@id": "urn:ngm:class:optimism-collective",
+        "label": "Optimism Collective"
+      },
+      {
+        "@id": "urn:ngm:class:gitcoin-grants",
+        "label": "Gitcoin Grants"
+      },
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum Ecosystem"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"},
-      {"@id": "urn:ngm:class:commons-governance", "label": "Commons Governance"},
-      {"@id": "urn:ngm:class:impact-investing", "label": "Impact Investing"}
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "@id": "urn:ngm:class:commons-governance",
+        "label": "Commons Governance"
+      },
+      {
+        "@id": "urn:ngm:class:impact-investing",
+        "label": "Impact Investing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:retropgf", "label": "RetroPGF"},
-    {"@id": "urn:ngm:class:retroactive-funding", "label": "Retroactive Funding"}
+    {
+      "@id": "urn:ngm:class:retropgf",
+      "label": "RetroPGF"
+    },
+    {
+      "@id": "urn:ngm:class:retroactive-funding",
+      "label": "Retroactive Funding"
+    }
   ],
   "quality": 0.72,
   "provenance": {

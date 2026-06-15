@@ -66,12 +66,8 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:json-schema",
+        "id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
-      },
-      {
-        "id": "urn:ngm:class:sql-schema",
-        "label": "SQL Schema"
       }
     ],
     "bridgesTo": [
@@ -90,7 +86,7 @@
         "label": "SPARQL"
       },
       {
-        "id": "urn:ngm:class:turtle-serialisation",
+        "id": "urn:ngm:class:turtle",
         "label": "Turtle Serialisation"
       },
       {
@@ -123,18 +119,6 @@
       {
         "id": "urn:ngm:class:owl-2-web-ontology-language",
         "label": "OWL 2 Web Ontology Language"
-      },
-      {
-        "id": "urn:ngm:class:protege-ontology-editor",
-        "label": "Protege Ontology Editor"
-      },
-      {
-        "id": "urn:ngm:class:gene-ontology",
-        "label": "Gene Ontology"
-      },
-      {
-        "id": "urn:ngm:class:snomed-ct",
-        "label": "SNOMED CT"
       }
     ]
   },

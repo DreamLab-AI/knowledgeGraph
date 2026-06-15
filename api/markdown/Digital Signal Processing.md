@@ -112,15 +112,11 @@ public:: true
         "label": "Algorithm"
       },
       {
-        "@id": "urn:ngm:class:dsp-hardware",
-        "label": "DSP Hardware"
-      },
-      {
         "@id": "urn:ngm:class:sensor",
         "label": "Sensor"
       },
       {
-        "@id": "urn:ngm:class:analog-to-digital-conversion",
+        "@id": "urn:ngm:class:analog-to-digital-converter",
         "label": "Analog-to-Digital Conversion"
       },
       {
@@ -130,7 +126,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:audio-enhancement",
+        "@id": "urn:ngm:class:neural-audio-enhancement",
         "label": "Audio Enhancement"
       },
       {
@@ -178,12 +174,6 @@ public:: true
       {
         "@id": "urn:ngm:class:real-time-systems",
         "label": "Real-Time Systems"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:analog-signal-processing",
-        "label": "Analog Signal Processing"
       }
     ],
     "bridgesTo": [

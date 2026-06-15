@@ -63,51 +63,121 @@ public:: true
   },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:encoder", "label": "Encoder"},
-      {"@id": "urn:ngm:class:bert", "label": "BERT"},
-      {"@id": "urn:ngm:class:roberta", "label": "RoBERTa"},
-      {"@id": "urn:ngm:class:conditional-random-field", "label": "Conditional Random Field"},
-      {"@id": "urn:ngm:class:bilstm", "label": "BiLSTM"}
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:bert",
+        "label": "BERT"
+      },
+      {
+        "@id": "urn:ngm:class:roberta",
+        "label": "RoBERTa"
+      },
+      {
+        "@id": "urn:ngm:class:conditional-random-field",
+        "label": "Conditional Random Field"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"},
-      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
-      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
-      {"@id": "urn:ngm:class:relation-extraction", "label": "Relation Extraction"},
-      {"@id": "urn:ngm:class:event-extraction", "label": "Event Extraction"},
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "@id": "urn:ngm:class:relation-extraction",
+        "label": "Relation Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:event-extraction",
+        "label": "Event Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:information-extraction", "label": "Information Extraction"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:annotated-corpus", "label": "Annotated Corpus"},
-      {"@id": "urn:ngm:class:sequence-labelling", "label": "Sequence Labelling"},
-      {"@id": "urn:ngm:class:word-embedding", "label": "Word Embedding"}
+      {
+        "@id": "urn:ngm:class:sequence-labelling",
+        "label": "Sequence Labelling"
+      },
+      {
+        "@id": "urn:ngm:class:word-embedding",
+        "label": "Word Embedding"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"},
-      {"@id": "urn:ngm:class:part-of-speech-tagging", "label": "Part-of-Speech Tagging"}
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:part-of-speech-tagging",
+        "label": "Part-of-Speech Tagging"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:text-classification", "label": "Text Classification"},
-      {"@id": "urn:ngm:class:coreference-resolution", "label": "Coreference Resolution"}
+      {
+        "@id": "urn:ngm:class:text-classification",
+        "label": "Text Classification"
+      },
+      {
+        "@id": "urn:ngm:class:coreference-resolution",
+        "label": "Coreference Resolution"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:entity-linking", "label": "Entity Linking"},
-      {"@id": "urn:ngm:class:knowledge-base", "label": "Knowledge Base"}
+      {
+        "@id": "urn:ngm:class:entity-linking",
+        "label": "Entity Linking"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:entity-extraction", "label": "Entity Extraction"},
-    {"@id": "urn:ngm:class:named-entity-identification", "label": "Named Entity Identification"}
+    {
+      "@id": "urn:ngm:class:entity-extraction",
+      "label": "Entity Extraction"
+    },
+    {
+      "@id": "urn:ngm:class:named-entity-identification",
+      "label": "Named Entity Identification"
+    }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

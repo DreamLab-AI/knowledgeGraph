@@ -26,16 +26,12 @@
         "label": "Vertex Shader"
       },
       {
-        "id": "urn:ngm:class:fragment-shader",
+        "id": "urn:ngm:class:pixel-shader",
         "label": "Fragment Shader"
       },
       {
         "id": "urn:ngm:class:compute-shader",
         "label": "Compute Shader"
-      },
-      {
-        "id": "urn:ngm:class:rasteriser",
-        "label": "Rasteriser"
       },
       {
         "id": "urn:ngm:class:depth-buffer",
@@ -86,10 +82,6 @@
       {
         "id": "urn:ngm:class:memory-bandwidth",
         "label": "Memory Bandwidth"
-      },
-      {
-        "id": "urn:ngm:class:driver-model",
-        "label": "Driver Model"
       }
     ],
     "implements": [],

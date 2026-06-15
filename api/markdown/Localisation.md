@@ -38,50 +38,133 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
-      {"@id": "urn:ngm:class:particle-filter", "label": "Particle Filter"},
-      {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"},
-      {"@id": "urn:ngm:class:inertial-measurement-unit", "label": "Inertial Measurement Unit"},
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
-      {"@id": "urn:ngm:class:occupancy-grid", "label": "Occupancy Grid"}
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      },
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "@id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:occupancy-grid",
+        "label": "Occupancy Grid"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
-      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
-      {"@id": "urn:ngm:class:spatial-anchoring", "label": "Spatial Anchoring"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-anchoring",
+        "label": "Spatial Anchoring"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:probabilistic-inference", "label": "Probabilistic Inference"},
-      {"@id": "urn:ngm:class:coordinate-frame", "label": "Coordinate Frame"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-inference",
+        "label": "Probabilistic Inference"
+      },
+      {
+        "@id": "urn:ngm:class:coordinate-frame",
+        "label": "Coordinate Frame"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:odometry", "label": "Odometry"},
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
-      {"@id": "urn:ngm:class:loop-closure-detection", "label": "Loop Closure Detection"}
+      {
+        "@id": "urn:ngm:class:odometry",
+        "label": "Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:loop-closure-detection",
+        "label": "Loop Closure Detection"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:dead-reckoning", "label": "Dead Reckoning"},
-      {"@id": "urn:ngm:class:global-navigation-satellite-system", "label": "Global Navigation Satellite System"},
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
-      {"@id": "urn:ngm:class:map-matching", "label": "Map Matching"}
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:dead-reckoning",
+        "label": "Dead Reckoning"
+      },
+      {
+        "@id": "urn:ngm:class:navigation",
+        "label": "Global Navigation Satellite System"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:indoor-positioning-system", "label": "Indoor Positioning System"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:indoor-positioning-system",
+        "label": "Indoor Positioning System"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:global-localisation", "label": "Global Localisation"},
-      {"@id": "urn:ngm:class:position-tracking", "label": "Position Tracking"}
+      {
+        "@id": "urn:ngm:class:global-localisation",
+        "label": "Global Localisation"
+      },
+      {
+        "@id": "urn:ngm:class:position-control",
+        "label": "Position Tracking"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:robot-localisation", "label": "Robot Localisation"},
-    {"@id": "urn:ngm:class:self-localisation", "label": "Self-Localisation"}
+    {
+      "@id": "urn:ngm:class:robot-localisation",
+      "label": "Robot Localisation"
+    },
+    {
+      "@id": "urn:ngm:class:self-localisation",
+      "label": "Self-Localisation"
+    }
   ],
   "quality": 0.74,
   "provenance": {

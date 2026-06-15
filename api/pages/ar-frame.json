@@ -26,11 +26,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:battery",
-        "label": "Battery"
-      },
-      {
-        "id": "urn:ngm:class:eye-tracking-sensor",
+        "id": "urn:ngm:class:eye-tracking",
         "label": "Eye-Tracking Sensor"
       },
       {
@@ -46,37 +42,21 @@
         "label": "Microphone Array"
       },
       {
-        "id": "urn:ngm:class:onboard-so-c",
-        "label": "Onboard SoC"
-      },
-      {
-        "id": "urn:ngm:class:optical-combiner",
-        "label": "Optical Combiner"
-      },
-      {
         "id": "urn:ngm:class:wireless-radio",
         "label": "Wireless Radio"
-      },
-      {
-        "id": "urn:ngm:class:world-facing-camera",
-        "label": "World-Facing Camera"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:inertial-sensors",
+        "id": "urn:ngm:class:imu-sensors",
         "label": "Inertial Sensors"
-      },
-      {
-        "id": "urn:ngm:class:optical-display",
-        "label": "Optical Display"
       },
       {
         "id": "urn:ngm:class:power-management",
         "label": "Power Management"
       },
       {
-        "id": "urn:ngm:class:slam-algorithm",
+        "id": "urn:ngm:class:slam",
         "label": "SLAM Algorithm"
       },
       {
@@ -90,23 +70,11 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:environmental-awareness",
-        "label": "Environmental Awareness"
-      },
-      {
-        "id": "urn:ngm:class:hands-free-interaction",
-        "label": "Hands-Free Interaction"
-      },
-      {
-        "id": "urn:ngm:class:heads-up-display",
-        "label": "Heads-Up Display"
-      },
-      {
         "id": "urn:ngm:class:persistent-content-anchoring",
         "label": "Persistent Content Anchoring"
       },
       {
-        "id": "urn:ngm:class:remote-expert-guidance",
+        "id": "urn:ngm:class:remote-assistance",
         "label": "Remote Expert Guidance"
       },
       {
@@ -125,15 +93,11 @@
         "label": "Foveated Rendering"
       },
       {
-        "id": "urn:ngm:class:late-stage-reprojection",
-        "label": "Late-Stage Reprojection"
-      },
-      {
-        "id": "urn:ngm:class:open-xr-runtime",
+        "id": "urn:ngm:class:xr-runtime-environment",
         "label": "OpenXR Runtime"
       },
       {
-        "id": "urn:ngm:class:slam-tracking",
+        "id": "urn:ngm:class:slam",
         "label": "SLAM Tracking"
       },
       {
@@ -145,36 +109,16 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:birdbath-optics",
-        "label": "Birdbath Optics"
-      },
-      {
         "id": "urn:ngm:class:bluetooth-low-energy",
         "label": "Bluetooth Low Energy"
       },
       {
-        "id": "urn:ngm:class:holographic-waveguide",
+        "id": "urn:ngm:class:waveguide-optics",
         "label": "Holographic Waveguide"
-      },
-      {
-        "id": "urn:ngm:class:micro-led-display",
-        "label": "MicroLED Display"
       },
       {
         "id": "urn:ngm:class:micro-oled-display",
         "label": "Micro-OLED Display"
-      },
-      {
-        "id": "urn:ngm:class:snapdragon-ar-so-c",
-        "label": "Snapdragon AR SoC"
-      },
-      {
-        "id": "urn:ngm:class:waveguide-optics",
-        "label": "Waveguide Optics"
-      },
-      {
-        "id": "urn:ngm:class:wi-fi-6",
-        "label": "Wi-Fi 6"
       }
     ],
     "supports": [
@@ -187,24 +131,12 @@
         "label": "AI Assistant"
       },
       {
-        "id": "urn:ngm:class:field-service",
-        "label": "Field Service"
-      },
-      {
         "id": "urn:ngm:class:industrial-inspection",
         "label": "Industrial Inspection"
       },
       {
-        "id": "urn:ngm:class:retail-assistance",
-        "label": "Retail Assistance"
-      },
-      {
         "id": "urn:ngm:class:surgical-navigation",
         "label": "Surgical Navigation"
-      },
-      {
-        "id": "urn:ngm:class:tourism-guidance",
-        "label": "Tourism Guidance"
       }
     ],
     "standardizedBy": [
@@ -223,14 +155,6 @@
       {
         "id": "urn:ngm:class:khronos-open-xr",
         "label": "Khronos OpenXR"
-      },
-      {
-        "id": "urn:ngm:class:mpeg-i",
-        "label": "MPEG-I"
-      },
-      {
-        "id": "urn:ngm:class:usb-if",
-        "label": "USB-IF"
       },
       {
         "id": "urn:ngm:class:w-3-c-web-xr",

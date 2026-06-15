@@ -30,7 +30,7 @@
         "label": "Activation Function"
       },
       {
-        "id": "urn:ngm:class:skip-connection",
+        "id": "urn:ngm:class:residual-connection",
         "label": "Skip Connection"
       },
       {
@@ -82,7 +82,7 @@
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:convolutional-neural-networks",
+        "id": "urn:ngm:class:convolutional-neural-network",
         "label": "Convolutional Neural Networks"
       },
       {
@@ -133,7 +133,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:deep-learning-system",
+        "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning System"
       }
     ],

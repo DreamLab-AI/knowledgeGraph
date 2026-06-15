@@ -20,10 +20,6 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:standardised-workflows",
-        "label": "Standardised Workflows"
-      },
-      {
         "id": "urn:ngm:class:onboarding",
         "label": "Onboarding"
       }

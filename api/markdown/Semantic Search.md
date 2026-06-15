@@ -318,12 +318,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:approximate-nearest-neighbour",
+        "@id": "urn:ngm:class:nearest-neighbor-search",
         "label": "Approximate Nearest Neighbour"
-      },
-      {
-        "@id": "urn:ngm:class:document-encoder",
-        "label": "Document Encoder"
       },
       {
         "@id": "urn:ngm:class:embedding-model",
@@ -352,7 +348,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:evaluation-benchmark",
+        "@id": "urn:ngm:class:benchmark-evaluation",
         "label": "Evaluation Benchmark"
       },
       {
@@ -374,20 +370,12 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:conversational-search",
-        "label": "Conversational Search"
-      },
-      {
         "@id": "urn:ngm:class:document-retrieval",
         "label": "Document Retrieval"
       },
       {
         "@id": "urn:ngm:class:enterprise-search",
         "label": "Enterprise Search"
-      },
-      {
-        "@id": "urn:ngm:class:knowledge-graph-query",
-        "label": "Knowledge Graph Query"
       },
       {
         "@id": "urn:ngm:class:retrieval-augmented-generation",
@@ -400,16 +388,8 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:bi-encoder-architecture",
-        "label": "Bi-Encoder Architecture"
-      },
-      {
         "@id": "urn:ngm:class:bm25",
         "label": "BM25"
-      },
-      {
-        "@id": "urn:ngm:class:col-bert-late-interaction",
-        "label": "ColBERT Late Interaction"
       },
       {
         "@id": "urn:ngm:class:cross-encoder-reranking",
@@ -430,10 +410,6 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:chroma",
-        "label": "Chroma"
-      },
-      {
         "@id": "urn:ngm:class:cosine-similarity",
         "label": "Cosine Similarity"
       },
@@ -446,16 +422,8 @@ public:: true
         "label": "Inner Product"
       },
       {
-        "@id": "urn:ngm:class:pgvector",
-        "label": "pgvector"
-      },
-      {
         "@id": "urn:ngm:class:pinecone",
         "label": "Pinecone"
-      },
-      {
-        "@id": "urn:ngm:class:qdrant",
-        "label": "Qdrant"
       },
       {
         "@id": "urn:ngm:class:weaviate",
@@ -490,20 +458,12 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:biomedical-information-retrieval",
+        "@id": "urn:ngm:class:information-retrieval",
         "label": "Biomedical Information Retrieval"
-      },
-      {
-        "@id": "urn:ngm:class:e-commerce-search",
-        "label": "E-Commerce Search"
       },
       {
         "@id": "urn:ngm:class:enterprise-search",
         "label": "Enterprise Search"
-      },
-      {
-        "@id": "urn:ngm:class:legal-document-retrieval",
-        "label": "Legal Document Retrieval"
       },
       {
         "@id": "urn:ngm:class:retrieval-augmented-generation",
@@ -520,20 +480,8 @@ public:: true
         "label": "BEIR Benchmark"
       },
       {
-        "@id": "urn:ngm:class:ms-marco",
-        "label": "MS MARCO"
-      },
-      {
         "@id": "urn:ngm:class:mteb-benchmark",
         "label": "MTEB Benchmark"
-      },
-      {
-        "@id": "urn:ngm:class:nist-ir-evaluation",
-        "label": "NIST IR Evaluation"
-      },
-      {
-        "@id": "urn:ngm:class:trec",
-        "label": "TREC"
       }
     ],
     "bridgesTo": [

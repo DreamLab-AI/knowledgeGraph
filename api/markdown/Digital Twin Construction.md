@@ -90,7 +90,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:bim",
+        "@id": "urn:ngm:class:bim-virtual-model",
         "label": "BIM"
       },
       {
@@ -103,14 +103,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:building-lifecycle-management",
-        "label": "Building Lifecycle Management"
-      },
-      {
-        "@id": "urn:ngm:class:construction-optimization",
-        "label": "Construction Optimization"
-      },
       {
         "@id": "urn:ngm:class:predictive-maintenance",
         "label": "Predictive Maintenance"

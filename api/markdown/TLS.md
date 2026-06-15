@@ -23,54 +23,142 @@ public:: true
   "definition": "Transport Layer Security (TLS) is an IETF-standardised cryptographic protocol that provides authenticated, confidential, and integrity-protected communication channels over reliable transports such as TCP and QUIC. TLS 1.3 (RFC 8446, 2018) achieves a one-round-trip handshake using ephemeral Diffie-Hellman key exchange with mandatory forward secrecy, encrypting the server certificate within the handshake to prevent passive fingerprinting. It is the security foundation of HTTPS, gRPC, MQTT, SMTP-over-TLS, LDAPS, and virtually every application-layer protocol requiring channel security, with mutual TLS (mTLS) extending the model to bidirectional client and server authentication.",
   "domain": "security",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:ssl", "label": "SSL"},
-    {"@id": "urn:ngm:class:transport-layer-security", "label": "Transport Layer Security"}
+    {
+      "@id": "urn:ngm:class:ssl",
+      "label": "SSL"
+    },
+    {
+      "@id": "urn:ngm:class:transport-layer-security",
+      "label": "Transport Layer Security"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:digital-certificate", "label": "Digital Certificate"}
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
-      {"@id": "urn:ngm:class:diffie-hellman-key-exchange", "label": "Diffie-Hellman Key Exchange"},
-      {"@id": "urn:ngm:class:aead-cipher", "label": "AEAD Cipher"},
-      {"@id": "urn:ngm:class:hkdf", "label": "HKDF"}
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:diffie-hellman-key-exchange",
+        "label": "Diffie-Hellman Key Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:hkdf",
+        "label": "HKDF"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:https", "label": "HTTPS"},
-      {"@id": "urn:ngm:class:network-security", "label": "Network Security"},
-      {"@id": "urn:ngm:class:mutual-tls", "label": "Mutual TLS"},
-      {"@id": "urn:ngm:class:encrypted-communication", "label": "Encrypted Communication"}
+      {
+        "@id": "urn:ngm:class:https",
+        "label": "HTTPS"
+      },
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:mutual-tls",
+        "label": "Mutual TLS"
+      },
+      {
+        "@id": "urn:ngm:class:secure-communication",
+        "label": "Encrypted Communication"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:forward-secrecy", "label": "Forward Secrecy"},
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"}
+      {
+        "@id": "urn:ngm:class:forward-secrecy",
+        "label": "Forward Secrecy"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:zero-trust-security", "label": "Zero Trust Security"},
-      {"@id": "urn:ngm:class:service-mesh", "label": "Service Mesh"},
-      {"@id": "urn:ngm:class:api-security", "label": "API Security"}
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Security"
+      },
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:api-security",
+        "label": "API Security"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ssl", "label": "SSL"},
-      {"@id": "urn:ngm:class:ipsec", "label": "IPsec"},
-      {"@id": "urn:ngm:class:wireguard", "label": "WireGuard"}
+      {
+        "@id": "urn:ngm:class:ssl",
+        "label": "SSL"
+      },
+      {
+        "@id": "urn:ngm:class:ipsec",
+        "label": "IPsec"
+      },
+      {
+        "@id": "urn:ngm:class:wireguard",
+        "label": "WireGuard"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
-      {"@id": "urn:ngm:class:x509-certificate", "label": "X.509 Certificate"},
-      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"},
-      {"@id": "urn:ngm:class:quic", "label": "QUIC"},
-      {"@id": "urn:ngm:class:encrypted-client-hello", "label": "Encrypted Client Hello"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:quic",
+        "label": "QUIC"
+      },
+      {
+        "@id": "urn:ngm:class:encrypted-client-hello",
+        "label": "Encrypted Client Hello"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ]
   },
   "quality": 0.76,

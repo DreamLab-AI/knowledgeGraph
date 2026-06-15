@@ -109,16 +109,12 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:github-actions",
+        "@id": "urn:ngm:class:git-hub-actions",
         "label": "GitHub Actions"
       },
       {
         "@id": "urn:ngm:class:github-copilot",
         "label": "GitHub Copilot"
-      },
-      {
-        "@id": "urn:ngm:class:github-packages",
-        "label": "GitHub Packages"
       },
       {
         "@id": "urn:ngm:class:pull-request",
@@ -159,18 +155,8 @@ public:: true
         "label": "DevOps"
       },
       {
-        "@id": "urn:ngm:class:agile-development",
+        "@id": "urn:ngm:class:agile-software-development",
         "label": "Agile Development"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:gitlab",
-        "label": "GitLab"
-      },
-      {
-        "@id": "urn:ngm:class:bitbucket",
-        "label": "Bitbucket"
       }
     ],
     "bridgesTo": [
@@ -184,10 +170,6 @@ public:: true
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:package-registry",
-        "label": "Package Registry"
-      },
       {
         "@id": "urn:ngm:class:issue-tracking",
         "label": "Issue Tracking"

@@ -63,14 +63,7 @@ public:: true
       "label": "Educational Technology"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:structured-training",
-        "label": "Structured Training"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

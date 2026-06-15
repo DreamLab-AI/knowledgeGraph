@@ -16,20 +16,7 @@
   "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:ieee-transactions-on-automatic-control",
-        "label": "IEEE Transactions on Automatic Control"
-      },
-      {
-        "id": "urn:ngm:class:conference-on-decision-and-control",
-        "label": "Conference on Decision and Control"
-      },
-      {
-        "id": "urn:ngm:class:ieee-control-systems-magazine",
-        "label": "IEEE Control Systems Magazine"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:control-theory",
@@ -46,7 +33,7 @@
         "label": "Autonomous System"
       },
       {
-        "id": "urn:ngm:class:cyber-physical-system",
+        "id": "urn:ngm:class:cyber-physical-systems",
         "label": "Cyber-Physical System"
       },
       {
@@ -133,12 +120,8 @@
         "label": "Embedded Systems"
       },
       {
-        "id": "urn:ngm:class:safety-critical-system",
+        "id": "urn:ngm:class:safety-critical-systems",
         "label": "Safety-Critical System"
-      },
-      {
-        "id": "urn:ngm:class:networked-control-system",
-        "label": "Networked Control System"
       }
     ]
   },

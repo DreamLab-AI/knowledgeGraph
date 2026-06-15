@@ -73,14 +73,6 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:greater-manchester-combined-authority",
-        "label": "Greater Manchester Combined Authority"
-      },
-      {
-        "@id": "urn:ngm:class:manchester-science-park",
-        "label": "Manchester Science Park"
-      },
-      {
         "@id": "urn:ngm:class:university-of-manchester",
         "label": "University of Manchester"
       }
@@ -107,10 +99,6 @@ public:: true
       {
         "@id": "urn:ngm:class:open-data",
         "label": "Open Data"
-      },
-      {
-        "@id": "urn:ngm:class:regional-connectivity",
-        "label": "Regional Connectivity"
       }
     ],
     "requires": [
@@ -129,27 +117,11 @@ public:: true
         "label": "Leeds"
       },
       {
-        "@id": "urn:ngm:class:liverpool",
-        "label": "Liverpool"
-      },
-      {
-        "@id": "urn:ngm:class:salford",
-        "label": "Salford"
-      },
-      {
         "@id": "urn:ngm:class:graphene",
         "label": "Graphene"
-      },
-      {
-        "@id": "urn:ngm:class:urban-region",
-        "label": "Urban Region"
       }
     ],
     "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:ai-research-cluster",
-        "label": "AI Research Cluster"
-      },
       {
         "@id": "urn:ngm:class:fintech",
         "label": "FinTech"
@@ -157,12 +129,6 @@ public:: true
       {
         "@id": "urn:ngm:class:data-centre",
         "label": "Data Centre"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:london",
-        "label": "London"
       }
     ]
   },

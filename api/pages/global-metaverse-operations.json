@@ -20,7 +20,7 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:unified-virtual-experience",
+        "id": "urn:ngm:class:virtual-experience",
         "label": "Unified Virtual Experience"
       }
     ],

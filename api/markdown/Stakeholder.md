@@ -98,51 +98,111 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:ai-user", "label": "AI User"},
-      {"@id": "urn:ngm:class:ai-operator", "label": "AI Operator"},
-      {"@id": "urn:ngm:class:ai-provider", "label": "AI Provider"},
-      {"@id": "urn:ngm:class:civil-society", "label": "Civil Society"},
-      {"@id": "urn:ngm:class:regulator", "label": "Regulator"}
+      {
+        "@id": "urn:ngm:class:ai-user",
+        "label": "AI User"
+      },
+      {
+        "@id": "urn:ngm:class:ai-operator",
+        "label": "AI Operator"
+      },
+      {
+        "@id": "urn:ngm:class:ai-provider",
+        "label": "AI Provider"
+      },
+      {
+        "@id": "urn:ngm:class:civil-society",
+        "label": "Civil Society"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
-      {"@id": "urn:ngm:class:participation", "label": "Participation"}
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:participation",
+        "label": "Participation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
-      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"},
-      {"@id": "urn:ngm:class:human-rights-due-diligence", "label": "Human Rights Due Diligence"}
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:human-rights-due-diligence",
+        "label": "Human Rights Due Diligence"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:stakeholder-engagement", "label": "Stakeholder Engagement"},
-      {"@id": "urn:ngm:class:power-dynamics", "label": "Power Dynamics"}
+      {
+        "@id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:shareholder", "label": "Shareholder"}
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"},
-      {"@id": "urn:ngm:class:trust", "label": "Trust"},
-      {"@id": "urn:ngm:class:social-licence", "label": "Social Licence"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:trust",
+        "label": "Trust"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:interested-party", "label": "Interested Party"}
+    {
+      "@id": "urn:ngm:class:interested-party",
+      "label": "Interested Party"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

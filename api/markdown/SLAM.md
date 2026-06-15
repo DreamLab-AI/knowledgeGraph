@@ -163,51 +163,117 @@ public:: true
   },
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:probabilistic-state-estimation", "label": "Probabilistic State Estimation"},
-      {"@id": "urn:ngm:class:loop-closure", "label": "Loop Closure"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:state-estimation",
+        "label": "Probabilistic State Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:loop-closure-detection",
+        "label": "Loop Closure"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:localization", "label": "Localization"},
-      {"@id": "urn:ngm:class:map-construction", "label": "Map Construction"},
-      {"@id": "urn:ngm:class:occupancy-grid", "label": "Occupancy Grid"},
-      {"@id": "urn:ngm:class:pose-graph-optimization", "label": "Pose Graph Optimization"}
+      {
+        "@id": "urn:ngm:class:localization",
+        "label": "Localization"
+      },
+      {
+        "@id": "urn:ngm:class:occupancy-grid",
+        "label": "Occupancy Grid"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
-      {"@id": "urn:ngm:class:visual-odometry", "label": "Visual Odometry"},
-      {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:inertial-measurement-unit", "label": "Inertial Measurement Unit"},
-      {"@id": "urn:ngm:class:point-cloud-processing", "label": "Point Cloud Processing"}
+      {
+        "@id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:gps-navigation", "label": "GPS Navigation"}
+      {
+        "@id": "urn:ngm:class:gps-navigation",
+        "label": "GPS Navigation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
-      {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:graph-optimization", "label": "Graph Optimization"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:simultaneous-localization-and-mapping", "label": "Simultaneous Localization and Mapping"},
-    {"@id": "urn:ngm:class:concurrent-mapping-and-localization", "label": "Concurrent Mapping and Localization"}
+    {
+      "@id": "urn:ngm:class:simultaneous-localization-and-mapping",
+      "label": "Simultaneous Localization and Mapping"
+    },
+    {
+      "@id": "urn:ngm:class:concurrent-mapping-and-localization",
+      "label": "Concurrent Mapping and Localization"
+    }
   ],
   "quality": 0.65,
   "provenance": {

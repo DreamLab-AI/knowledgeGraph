@@ -655,10 +655,6 @@ alias:: ConsensusMechanism
         "label": "Validator Set"
       },
       {
-        "@id": "urn:ngm:class:view-change",
-        "label": "View Change"
-      },
-      {
         "@id": "urn:ngm:class:voting-round",
         "label": "Voting Round"
       },
@@ -673,7 +669,7 @@ alias:: ConsensusMechanism
         "label": "Economic Incentive"
       },
       {
-        "@id": "urn:ngm:class:synchronised-clock",
+        "@id": "urn:ngm:class:clock-synchronization",
         "label": "Synchronised Clock"
       },
       {
@@ -733,7 +729,7 @@ alias:: ConsensusMechanism
         "label": "Avalanche"
       },
       {
-        "@id": "urn:ngm:class:hashgraph",
+        "@id": "urn:ngm:class:hedera-hashgraph",
         "label": "Hashgraph"
       },
       {
@@ -813,7 +809,7 @@ alias:: ConsensusMechanism
         "label": "Decentralisation"
       },
       {
-        "@id": "urn:ngm:class:throughput-scalability",
+        "@id": "urn:ngm:class:scalability",
         "label": "Throughput Scalability"
       },
       {
@@ -855,7 +851,7 @@ alias:: ConsensusMechanism
         "label": "Distributed Ledger Technology"
       },
       {
-        "@id": "urn:ngm:class:layer-2-rollups",
+        "@id": "urn:ngm:class:layer-2-solutions",
         "label": "Layer 2 Rollups"
       },
       {
@@ -865,27 +861,27 @@ alias:: ConsensusMechanism
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-bips",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin BIPs"
       },
       {
-        "@id": "urn:ngm:class:cosmos-ics-standards",
+        "@id": "urn:ngm:class:cosmos",
         "label": "Cosmos ICS Standards"
       },
       {
-        "@id": "urn:ngm:class:ethereum-smart-contract-platform-eips",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum EIPs"
       },
       {
-        "@id": "urn:ngm:class:ietf-rfc-7574-bit-torrent-like-gossip",
+        "@id": "urn:ngm:class:ietf",
         "label": "IETF RFC 7574 BitTorrent-like Gossip"
       },
       {
-        "@id": "urn:ngm:class:iso-tc-307-blockchain",
+        "@id": "urn:ngm:class:iso-tc-307-blockchain-standards",
         "label": "ISO TC 307 Blockchain"
       },
       {
-        "@id": "urn:ngm:class:nist-fips-204-post-quantum",
+        "@id": "urn:ngm:class:nist-post-quantum-cryptography",
         "label": "NIST FIPS 204 Post-Quantum"
       }
     ],

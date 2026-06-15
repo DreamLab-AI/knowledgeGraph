@@ -82,10 +82,6 @@ public:: true
       {
         "@id": "urn:ngm:class:erc-1155",
         "label": "ERC-1155"
-      },
-      {
-        "@id": "urn:ngm:class:token-interface",
-        "label": "Token Interface"
       }
     ],
     "partOf": [
@@ -124,7 +120,7 @@ public:: true
         "label": "Blockchain"
       },
       {
-        "@id": "urn:ngm:class:ethereum-virtual-machine",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       }
     ],
@@ -132,10 +128,6 @@ public:: true
       {
         "@id": "urn:ngm:class:fungibility",
         "label": "Fungibility"
-      },
-      {
-        "@id": "urn:ngm:class:token-approval-mechanism",
-        "label": "Token Approval Mechanism"
       }
     ],
     "uses": [
@@ -170,17 +162,17 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:native-currency",
+        "@id": "urn:ngm:class:native-token",
         "label": "Native Currency"
       },
       {
-        "@id": "urn:ngm:class:cbdc",
+        "@id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "CBDC"
       }
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:digital-asset-standard",
+        "@id": "urn:ngm:class:digital-asset-standards",
         "label": "Digital Asset Standard"
       },
       {

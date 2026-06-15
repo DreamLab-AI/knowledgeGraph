@@ -32,10 +32,6 @@
       {
         "id": "urn:ngm:class:learning-analytics",
         "label": "Learning Analytics"
-      },
-      {
-        "id": "urn:ngm:class:automated-assessment",
-        "label": "Automated Assessment"
       }
     ],
     "requires": [
@@ -72,12 +68,7 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:traditional-classroom-instruction",
-        "label": "Traditional Classroom Instruction"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:augmented-reality",
@@ -121,10 +112,6 @@
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:ieee-learning-technology",
-        "label": "IEEE Learning Technology Standards Committee"
-      },
-      {
         "id": "urn:ngm:class:scorm",
         "label": "SCORM"
       },
@@ -142,10 +129,6 @@
       {
         "id": "urn:ngm:class:gamification",
         "label": "Gamification"
-      },
-      {
-        "id": "urn:ngm:class:open-educational-resources",
-        "label": "Open Educational Resources"
       },
       {
         "id": "urn:ngm:class:knowledge-graph",

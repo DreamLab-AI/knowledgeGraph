@@ -18,14 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:hierarchical-z-buffer",
-        "label": "Hierarchical Z-Buffer"
-      },
-      {
-        "id": "urn:ngm:class:occlusion-query",
-        "label": "Occlusion Query"
-      },
-      {
         "id": "urn:ngm:class:portal-culling",
         "label": "Portal Culling"
       },
@@ -83,10 +75,6 @@
         "label": "Frustum Culling"
       },
       {
-        "id": "urn:ngm:class:back-face-culling",
-        "label": "Back-Face Culling"
-      },
-      {
         "id": "urn:ngm:class:level-of-detail",
         "label": "Level of Detail"
       }
@@ -109,10 +97,6 @@
       {
         "id": "urn:ngm:class:frustum-culling",
         "label": "Frustum Culling"
-      },
-      {
-        "id": "urn:ngm:class:potential-visibility-set",
-        "label": "Potential Visibility Set"
       }
     ],
     "supports": [],
@@ -121,24 +105,12 @@
       {
         "id": "urn:ngm:class:render-pipeline",
         "label": "Render Pipeline"
-      },
-      {
-        "id": "urn:ngm:class:visibility-determination",
-        "label": "Visibility Determination"
       }
     ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:collision-detection",
         "label": "Collision Detection"
-      },
-      {
-        "id": "urn:ngm:class:draw-call-batching",
-        "label": "Draw Call Batching"
-      },
-      {
-        "id": "urn:ngm:class:indirect-rendering",
-        "label": "Indirect Rendering"
       },
       {
         "id": "urn:ngm:class:spatial-partitioning",

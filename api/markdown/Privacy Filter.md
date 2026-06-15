@@ -186,14 +186,6 @@ public:: true
         "label": "Pattern Matching"
       },
       {
-        "@id": "urn:ngm:class:pii-detection",
-        "label": "PII Detection"
-      },
-      {
-        "@id": "urn:ngm:class:redaction-engine",
-        "label": "Redaction Engine"
-      },
-      {
         "@id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail"
       },
@@ -208,25 +200,17 @@ public:: true
         "label": "Classification Rules"
       },
       {
-        "@id": "urn:ngm:class:machine-learning-discipline-optional",
+        "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning (optional)"
       },
       {
         "@id": "urn:ngm:class:privacy-policy",
         "label": "Privacy Policy"
-      },
-      {
-        "@id": "urn:ngm:class:regular-expressions",
-        "label": "Regular Expressions"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:compliance-with-ccpa",
-        "label": "Compliance with CCPA"
-      },
-      {
-        "@id": "urn:ngm:class:compliance-with-gdpr",
+        "@id": "urn:ngm:class:gdpr-compliance",
         "label": "Compliance with GDPR"
       },
       {
@@ -244,16 +228,8 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:data-anonymisation",
+        "@id": "urn:ngm:class:anonymisation",
         "label": "Data Anonymisation"
-      },
-      {
-        "@id": "urn:ngm:class:privacy-preserving-data-emission",
-        "label": "Privacy-Preserving Data Emission"
-      },
-      {
-        "@id": "urn:ngm:class:redaction-policies",
-        "label": "Redaction Policies"
       }
     ]
   },

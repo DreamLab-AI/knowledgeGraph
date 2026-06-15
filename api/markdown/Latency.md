@@ -128,10 +128,6 @@ public:: true
         "label": "Processing Delay"
       },
       {
-        "@id": "urn:ngm:class:queuing-delay",
-        "label": "Queuing Delay"
-      },
-      {
         "@id": "urn:ngm:class:transmission-delay",
         "label": "Transmission Delay"
       }
@@ -148,31 +144,11 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:measurement-tools",
-        "label": "Measurement Tools"
-      },
-      {
         "@id": "urn:ngm:class:monitoring-system",
         "label": "Monitoring System"
-      },
-      {
-        "@id": "urn:ngm:class:timestamp-synchronization",
-        "label": "Timestamp Synchronization"
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:quality-assessment",
-        "label": "Quality Assessment"
-      },
-      {
-        "@id": "urn:ngm:class:sla-monitoring",
-        "label": "SLA Monitoring"
-      },
-      {
-        "@id": "urn:ngm:class:user-experience-tuning",
-        "label": "User Experience Tuning"
-      },
       {
         "@id": "urn:ngm:class:performance-optimization",
         "label": "Performance Optimization"
@@ -212,10 +188,6 @@ public:: true
       {
         "@id": "urn:ngm:class:jitter",
         "label": "Jitter"
-      },
-      {
-        "@id": "urn:ngm:class:packet-loss",
-        "label": "Packet Loss"
       }
     ],
     "relatedTo": [

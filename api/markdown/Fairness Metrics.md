@@ -71,52 +71,125 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:demographic-parity", "label": "Demographic Parity"},
-      {"@id": "urn:ngm:class:equalized-odds", "label": "Equalized Odds"},
-      {"@id": "urn:ngm:class:equal-opportunity", "label": "Equal Opportunity"},
-      {"@id": "urn:ngm:class:predictive-parity", "label": "Predictive Parity"},
-      {"@id": "urn:ngm:class:individual-fairness", "label": "Individual Fairness"}
+      {
+        "@id": "urn:ngm:class:demographic-parity",
+        "label": "Demographic Parity"
+      },
+      {
+        "@id": "urn:ngm:class:equalized-odds",
+        "label": "Equalized Odds"
+      },
+      {
+        "@id": "urn:ngm:class:group-vs-individual-fairness",
+        "label": "Individual Fairness"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:confusion-matrix", "label": "Confusion Matrix"},
-      {"@id": "urn:ngm:class:protected-attributes", "label": "Protected Attributes"},
-      {"@id": "urn:ngm:class:statistical-testing", "label": "Statistical Testing"}
+      {
+        "@id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:protected-attributes",
+        "label": "Protected Attributes"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-testing",
+        "label": "Statistical Testing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bias-mitigation-techniques", "label": "Bias Mitigation Techniques"},
-      {"@id": "urn:ngm:class:ai-audit", "label": "AI Audit"},
-      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"}
+      {
+        "@id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation Techniques"
+      },
+      {
+        "@id": "urn:ngm:class:ai-audit",
+        "label": "AI Audit"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
-      {"@id": "urn:ngm:class:disparate-impact", "label": "Disparate Impact"}
+      {
+        "@id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "@id": "urn:ngm:class:disparate-impact",
+        "label": "Disparate Impact"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:bias-detection-methods", "label": "Bias Detection Methods"},
-      {"@id": "urn:ngm:class:machine-learning-model-evaluation", "label": "Machine Learning Model Evaluation"}
+      {
+        "@id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection Methods"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Machine Learning Model Evaluation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:diversity-non-discrimination-and-fairness", "label": "Diversity, Non-Discrimination, and Fairness"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:diversity-non-discrimination-and-fairness",
+        "label": "Diversity, Non-Discrimination, and Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ieee-p7003-2021", "label": "IEEE P7003-2021"},
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"},
-      {"@id": "urn:ngm:class:iso-iec-tr-24027", "label": "ISO-IEC TR 24027"}
+      {
+        "@id": "urn:ngm:class:ieee-p-7003-2021",
+        "label": "IEEE P7003-2021"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-tr-24027",
+        "label": "ISO-IEC TR 24027"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-fairness", "label": "AI Fairness"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+      {
+        "@id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:algorithmic-fairness-measures", "label": "Algorithmic Fairness Measures"},
-    {"@id": "urn:ngm:class:equity-metrics", "label": "Equity Metrics"}
+    {
+      "@id": "urn:ngm:class:algorithmic-fairness-measures",
+      "label": "Algorithmic Fairness Measures"
+    },
+    {
+      "@id": "urn:ngm:class:equity-metrics",
+      "label": "Equity Metrics"
+    }
   ],
   "quality": 0.8,
   "provenance": {

@@ -18,15 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:amcl",
-        "label": "AMCL"
-      },
-      {
         "id": "urn:ngm:class:move-base",
         "label": "Move Base"
       },
       {
-        "id": "urn:ngm:class:costmap-2d",
+        "id": "urn:ngm:class:costmap",
         "label": "Costmap 2D"
       },
       {
@@ -40,7 +36,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:occupancy-grid-map",
+        "id": "urn:ngm:class:occupancy-grid",
         "label": "Occupancy Grid Map"
       },
       {
@@ -71,10 +67,6 @@
       }
     ],
     "dependsOn": [
-      {
-        "id": "urn:ngm:class:ros-middleware",
-        "label": "ROS Middleware"
-      },
       {
         "id": "urn:ngm:class:publish-subscribe-messaging",
         "label": "Publish-Subscribe Messaging"

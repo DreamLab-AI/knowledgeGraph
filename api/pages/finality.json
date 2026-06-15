@@ -44,10 +44,6 @@
         "label": "Transaction Confirmation"
       },
       {
-        "id": "urn:ngm:class:validator-quorum",
-        "label": "Validator Quorum"
-      },
-      {
         "id": "urn:ngm:class:cryptographic-signature",
         "label": "Cryptographic Signature"
       }
@@ -87,7 +83,7 @@
         "label": "Chain Reorganization"
       },
       {
-        "id": "urn:ngm:class:double-spend-attack",
+        "id": "urn:ngm:class:double-spending",
         "label": "Double-Spend Attack"
       },
       {
@@ -99,10 +95,6 @@
       {
         "id": "urn:ngm:class:settlement-finality",
         "label": "Settlement Finality"
-      },
-      {
-        "id": "urn:ngm:class:legal-finality",
-        "label": "Legal Finality"
       }
     ],
     "uses": [],
@@ -114,7 +106,7 @@
         "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:ngm:class:blockchain-security-model",
+        "id": "urn:ngm:class:blockchain-security",
         "label": "Blockchain Security Model"
       }
     ],

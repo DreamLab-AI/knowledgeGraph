@@ -16,21 +16,8 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:log-entry",
-        "label": "Log Entry"
-      },
-      {
-        "id": "urn:ngm:class:event-record",
-        "label": "Event Record"
-      }
-    ],
+    "hasPart": [],
     "requires": [
-      {
-        "id": "urn:ngm:class:append-only-storage",
-        "label": "Append-Only Storage"
-      },
       {
         "id": "urn:ngm:class:access-control",
         "label": "Access Control"
@@ -66,19 +53,10 @@
       {
         "id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hash Function"
-      },
-      {
-        "id": "urn:ngm:class:log-integrity-verification",
-        "label": "Log Integrity Verification"
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:application-logging",
-        "label": "Application Logging"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:data-provenance",
@@ -114,7 +92,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:nist-sp-800-92",
+        "id": "urn:ngm:class:nist",
         "label": "NIST SP 800-92"
       },
       {

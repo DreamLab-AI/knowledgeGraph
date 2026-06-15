@@ -50,10 +50,6 @@
         "label": "Balance of Payments Financing"
       },
       {
-        "id": "urn:ngm:class:exchange-rate-stability",
-        "label": "Exchange Rate Stability"
-      },
-      {
         "id": "urn:ngm:class:sovereign-debt-restructuring",
         "label": "Sovereign Debt Restructuring"
       }
@@ -64,10 +60,6 @@
       {
         "id": "urn:ngm:class:world-bank",
         "label": "World Bank"
-      },
-      {
-        "id": "urn:ngm:class:brics-payment-system",
-        "label": "BRICS Payment System"
       }
     ],
     "bridgesTo": [
@@ -76,7 +68,7 @@
         "label": "Finternet"
       },
       {
-        "id": "urn:ngm:class:tokenised-central-bank-money",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Tokenised Central Bank Money"
       },
       {
@@ -103,12 +95,7 @@
         "label": "Macroprudential Policy"
       }
     ],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:articles-of-agreement",
-        "label": "Articles of Agreement"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [
       {
         "id": "urn:ngm:class:bretton-woods-system",
@@ -135,14 +122,6 @@
       {
         "id": "urn:ngm:class:g20",
         "label": "G20"
-      },
-      {
-        "id": "urn:ngm:class:global-financial-stability-report",
-        "label": "Global Financial Stability Report"
-      },
-      {
-        "id": "urn:ngm:class:world-economic-outlook",
-        "label": "World Economic Outlook"
       },
       {
         "id": "urn:ngm:class:intergovernmental-organisation",

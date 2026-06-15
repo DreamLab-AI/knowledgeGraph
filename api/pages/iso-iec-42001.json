@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:ai-system-impact-assessment",
+        "id": "urn:ngm:class:ai-impact-assessment",
         "label": "AI System Impact Assessment"
       },
       {
@@ -39,23 +39,10 @@
       {
         "id": "urn:ngm:class:continuous-improvement",
         "label": "continuous improvement"
-      },
-      {
-        "id": "urn:ngm:class:ai-supply-chain-management",
-        "label": "AI Supply Chain Management"
       }
     ],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:ai-management-system",
-        "label": "AI Management System"
-      },
-      {
-        "id": "urn:ngm:class:plan-do-check-act",
-        "label": "Plan-Do-Check-Act"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:iso-iec-23894",
@@ -68,7 +55,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {

@@ -30,7 +30,7 @@
         "label": "Basel III"
       },
       {
-        "id": "urn:ngm:class:capital-adequacy-framework",
+        "id": "urn:ngm:class:capital-adequacy",
         "label": "Capital Adequacy Framework"
       }
     ],
@@ -48,25 +48,12 @@
         "label": "Liquidity Coverage Ratio"
       }
     ],
-    "enables": [
-      {
-        "id": "urn:ngm:class:prudential-banking-supervision",
-        "label": "Prudential Banking Supervision"
-      },
-      {
-        "id": "urn:ngm:class:cross-border-banking-cooperation",
-        "label": "Cross-Border Banking Cooperation"
-      }
-    ],
+    "enables": [],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:minimum-capital-requirements",
+        "id": "urn:ngm:class:capital-adequacy",
         "label": "Minimum Capital Requirements"
-      },
-      {
-        "id": "urn:ngm:class:leverage-ratio",
-        "label": "Leverage Ratio"
       }
     ],
     "contrastsWith": [],
@@ -131,10 +118,6 @@
       {
         "id": "urn:ngm:class:central-bank",
         "label": "Central Bank"
-      },
-      {
-        "id": "urn:ngm:class:bank-supervision",
-        "label": "Bank Supervision"
       }
     ]
   },

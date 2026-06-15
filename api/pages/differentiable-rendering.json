@@ -37,16 +37,8 @@
         "label": "Neural Radiance Field"
       },
       {
-        "id": "urn:ngm:class:inverse-rendering",
-        "label": "Inverse Rendering"
-      },
-      {
-        "id": "urn:ngm:class:object-pose-estimation",
+        "id": "urn:ngm:class:pose-estimation",
         "label": "Object Pose Estimation"
-      },
-      {
-        "id": "urn:ngm:class:3-d-generative-model",
-        "label": "3D Generative Model"
       }
     ],
     "dependsOn": [],
@@ -60,16 +52,7 @@
         "label": "Physically Based Rendering"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:classical-rendering",
-        "label": "Classical Rendering"
-      },
-      {
-        "id": "urn:ngm:class:non-differentiable-simulation",
-        "label": "Non-Differentiable Simulation"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:augmented-reality",

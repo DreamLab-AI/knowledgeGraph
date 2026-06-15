@@ -23,49 +23,129 @@ public:: true
   "definition": "A trust anchor is an authoritative entity or cryptographic artifact that serves as the root of a chain of trust, providing the foundational level of trust from which all subsequent trust assertions in a system are derived. In public key infrastructure (PKI), the trust anchor is typically a root certificate authority (CA) whose self-signed certificate is pre-installed in operating systems and browsers as inherently trusted, enabling the validation of all subordinate certificate chains. In decentralised identity systems, trust anchors may be governance-designated issuers, DID-based root entities, or on-chain registries whose cryptographic material is considered authoritative for a particular trust domain. Trust anchors define the scope and boundaries of a trust framework and are the entities that must be trusted by all relying parties in the system.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:trust-framework", "label": "Trust Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:trust-framework",
+      "label": "Trust Framework"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"},
-      {"@id": "urn:ngm:class:digital-certificate", "label": "Digital Certificate"},
-      {"@id": "urn:ngm:class:trust-framework-policy", "label": "Trust Framework Policy"},
-      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:root-certificate", "label": "Root Certificate"},
-      {"@id": "urn:ngm:class:certificate-transparency", "label": "Certificate Transparency"}
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:trust-framework-policy",
+        "label": "Trust Framework Policy"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-verification",
+        "label": "Cryptographic Verification"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:root-certificate",
+        "label": "Root Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-transparency",
+        "label": "Certificate Transparency"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"},
-      {"@id": "urn:ngm:class:identity-federation", "label": "Identity Federation"},
-      {"@id": "urn:ngm:class:chain-of-trust", "label": "Chain of Trust"},
-      {"@id": "urn:ngm:class:certificate-validation", "label": "Certificate Validation"},
-      {"@id": "urn:ngm:class:secure-communication", "label": "Secure Communication"}
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "@id": "urn:ngm:class:identity-federation",
+        "label": "Identity Federation"
+      },
+      {
+        "@id": "urn:ngm:class:trust",
+        "label": "Chain of Trust"
+      },
+      {
+        "@id": "urn:ngm:class:x-509-certificate",
+        "label": "Certificate Validation"
+      },
+      {
+        "@id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:cryptographic-keys", "label": "Cryptographic Keys"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"},
-      {"@id": "urn:ngm:class:x509-certificate", "label": "X.509 Certificate"}
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:key-management", "label": "Key Management"},
-      {"@id": "urn:ngm:class:hardware-security-module", "label": "Hardware Security Module"}
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
-      {"@id": "urn:ngm:class:credential-verification", "label": "Credential Verification"}
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:credential-verification",
+        "label": "Credential Verification"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:web-of-trust", "label": "Web of Trust"}
+      {
+        "@id": "urn:ngm:class:web-of-trust",
+        "label": "Web of Trust"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralized-identifier", "label": "Decentralized Identifier"},
-      {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"},
-      {"@id": "urn:ngm:class:governance", "label": "Governance"}
+      {
+        "@id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:root-of-trust", "label": "Root of Trust"}
+    {
+      "@id": "urn:ngm:class:root-of-trust",
+      "label": "Root of Trust"
+    }
   ],
   "quality": 0.72,
   "provenance": {

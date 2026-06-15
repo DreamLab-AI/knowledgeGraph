@@ -514,10 +514,6 @@ public:: true
         "label": "Controller"
       },
       {
-        "@id": "urn:ngm:class:disturbance-model",
-        "label": "Disturbance Model"
-      },
-      {
         "@id": "urn:ngm:class:feedback-loop",
         "label": "Feedback Loop"
       },
@@ -570,20 +566,12 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:closed-loop-operation",
+        "@id": "urn:ngm:class:closed-loop-control",
         "label": "Closed-Loop Operation"
-      },
-      {
-        "@id": "urn:ngm:class:flight-stability",
-        "label": "Flight Stability"
       },
       {
         "@id": "urn:ngm:class:process-regulation",
         "label": "Process Regulation"
-      },
-      {
-        "@id": "urn:ngm:class:robust-performance",
-        "label": "Robust Performance"
       },
       {
         "@id": "urn:ngm:class:trajectory-tracking",
@@ -599,14 +587,6 @@ public:: true
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:backstepping",
-        "label": "Backstepping"
-      },
-      {
-        "@id": "urn:ngm:class:h-control",
-        "label": "H∞ Control"
-      },
       {
         "@id": "urn:ngm:class:linear-quadratic-regulator",
         "label": "Linear Quadratic Regulator"
@@ -640,18 +620,6 @@ public:: true
       {
         "@id": "urn:ngm:class:cost-function",
         "label": "Cost Function"
-      },
-      {
-        "@id": "urn:ngm:class:lyapunov-function",
-        "label": "Lyapunov Function"
-      },
-      {
-        "@id": "urn:ngm:class:nyquist-diagram",
-        "label": "Nyquist Diagram"
-      },
-      {
-        "@id": "urn:ngm:class:root-locus",
-        "label": "Root Locus"
       },
       {
         "@id": "urn:ngm:class:state-space-model",
@@ -702,16 +670,8 @@ public:: true
         "label": "Biomedical Engineering"
       },
       {
-        "@id": "urn:ngm:class:hvac-systems",
-        "label": "HVAC Systems"
-      },
-      {
         "@id": "urn:ngm:class:power-systems",
         "label": "Power Systems"
-      },
-      {
-        "@id": "urn:ngm:class:process-industries",
-        "label": "Process Industries"
       },
       {
         "@id": "urn:ngm:class:robotics",
@@ -724,7 +684,7 @@ public:: true
         "label": "ARP4754A"
       },
       {
-        "@id": "urn:ngm:class:do-178-c-avionics",
+        "@id": "urn:ngm:class:do-178-c",
         "label": "DO-178C Avionics"
       },
       {
@@ -732,7 +692,7 @@ public:: true
         "label": "IEC 61131-3"
       },
       {
-        "@id": "urn:ngm:class:iec-61508-functional-safety",
+        "@id": "urn:ngm:class:iec-61508",
         "label": "IEC 61508 Functional Safety"
       },
       {

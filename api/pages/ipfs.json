@@ -18,10 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:bitswap",
-        "label": "Bitswap"
-      },
-      {
         "id": "urn:ngm:class:ipld",
         "label": "IPLD"
       },

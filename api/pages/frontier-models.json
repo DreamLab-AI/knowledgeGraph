@@ -18,11 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:mixture-of-experts",
+        "id": "urn:ngm:class:mixture-of-experts-architecture",
         "label": "Mixture of Experts"
       },
       {
-        "id": "urn:ngm:class:extended-context-window",
+        "id": "urn:ngm:class:context-window",
         "label": "Extended Context Window"
       },
       {
@@ -58,7 +58,7 @@
         "label": "Multimodal AI"
       },
       {
-        "id": "urn:ngm:class:autonomous-agents",
+        "id": "urn:ngm:class:autonomous-agent",
         "label": "Autonomous Agents"
       },
       {
@@ -66,7 +66,7 @@
         "label": "AI Coding Assistants"
       },
       {
-        "id": "urn:ngm:class:scientific-discovery-ai",
+        "id": "urn:ngm:class:scientific-discovery",
         "label": "Scientific Discovery AI"
       }
     ],
@@ -78,7 +78,7 @@
         "label": "Small Language Models"
       },
       {
-        "id": "urn:ngm:class:open-source-ai-models",
+        "id": "urn:ngm:class:open-source-ai",
         "label": "Open-Source AI Models"
       }
     ],
@@ -103,13 +103,13 @@
         "label": "AI Alignment"
       },
       {
-        "id": "urn:ngm:class:responsible-scaling-policies",
+        "id": "urn:ngm:class:responsible-scaling-policy",
         "label": "Responsible Scaling Policies"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {

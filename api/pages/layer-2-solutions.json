@@ -79,10 +79,6 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:layer-1-scaling",
-        "label": "Layer 1 Scaling"
-      },
-      {
         "id": "urn:ngm:class:sharding",
         "label": "Sharding"
       }

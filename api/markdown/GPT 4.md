@@ -101,13 +101,13 @@ public:: true
         "label": "Question Answering"
       },
       {
-        "@id": "urn:ngm:class:multimodal-reasoning",
+        "@id": "urn:ngm:class:multimodal-ai-architecture-reasoning",
         "label": "Multimodal Reasoning"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:multimodal-ai",
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       },
       {
@@ -131,15 +131,15 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:gpt-3",
+        "@id": "urn:ngm:class:gpt",
         "label": "GPT 3"
       },
       {
-        "@id": "urn:ngm:class:llama",
+        "@id": "urn:ngm:class:meta-llama-model-family",
         "label": "LLaMA"
       },
       {
-        "@id": "urn:ngm:class:gemini",
+        "@id": "urn:ngm:class:gemini-multimodal-language-model",
         "label": "Gemini"
       }
     ],

@@ -81,7 +81,7 @@ public:: true
         "label": "Digital Signature"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -155,7 +155,7 @@ public:: true
         "label": "NIST Cryptographic Standards"
       },
       {
-        "@id": "urn:ngm:class:x509-certificate-standard",
+        "@id": "urn:ngm:class:x-509-certificate",
         "label": "X.509 Certificate Standard"
       }
     ],
@@ -189,7 +189,7 @@ public:: true
         "label": "Smart Contract"
       },
       {
-        "@id": "urn:ngm:class:verifiable-credential",
+        "@id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       }
     ]

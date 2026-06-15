@@ -100,7 +100,7 @@ public:: true
         "label": "Stakeholder Participation"
       },
       {
-        "@id": "urn:ngm:class:accountability-mechanisms",
+        "@id": "urn:ngm:class:accountability-mechanism",
         "label": "Accountability Mechanisms"
       },
       {
@@ -114,7 +114,7 @@ public:: true
         "label": "Collective Decision Making"
       },
       {
-        "@id": "urn:ngm:class:commons-management",
+        "@id": "urn:ngm:class:commons-stack",
         "label": "Commons Management"
       },
       {
@@ -134,7 +134,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:token-voting",
+        "@id": "urn:ngm:class:token-weighted-voting",
         "label": "Token Voting"
       },
       {
@@ -156,12 +156,8 @@ public:: true
         "label": "Decentralised Autonomous Organisation"
       },
       {
-        "@id": "urn:ngm:class:open-source-project",
+        "@id": "urn:ngm:class:open-source",
         "label": "Open-Source Project"
-      },
-      {
-        "@id": "urn:ngm:class:platform-cooperative",
-        "label": "Platform Cooperative"
       }
     ],
     "contrastsWith": [
@@ -189,14 +185,6 @@ public:: true
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:ostrom-principles",
-        "label": "Ostrom Principles"
-      },
-      {
-        "@id": "urn:ngm:class:metagovernance",
-        "label": "Metagovernance"
-      },
       {
         "@id": "urn:ngm:class:rough-consensus",
         "label": "Rough Consensus"

@@ -430,7 +430,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:accelerate-training-framework",
+        "@id": "urn:ngm:class:hugging-face-accelerate",
         "label": "Accelerate Training Framework"
       },
       {
@@ -438,23 +438,15 @@ public:: true
         "label": "BLIP-2 Captioner"
       },
       {
-        "@id": "urn:ngm:class:dataset-captioner",
-        "label": "Dataset Captioner"
-      },
-      {
         "@id": "urn:ngm:class:do-ra",
         "label": "DoRA"
-      },
-      {
-        "@id": "urn:ngm:class:dreambooth",
-        "label": "Dreambooth"
       },
       {
         "@id": "urn:ngm:class:ly-coris",
         "label": "LyCORIS"
       },
       {
-        "@id": "urn:ngm:class:noise-scheduler",
+        "@id": "urn:ngm:class:noise-schedule",
         "label": "Noise Scheduler"
       },
       {
@@ -476,14 +468,6 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:base-model",
-        "label": "Base Model"
-      },
-      {
-        "@id": "urn:ngm:class:caption-files",
-        "label": "Caption Files"
-      },
-      {
         "@id": "urn:ngm:class:cuda",
         "label": "CUDA"
       },
@@ -494,10 +478,6 @@ public:: true
       {
         "@id": "urn:ngm:class:py-torch",
         "label": "PyTorch"
-      },
-      {
-        "@id": "urn:ngm:class:python-environment",
-        "label": "Python Environment"
       },
       {
         "@id": "urn:ngm:class:training-dataset",
@@ -514,28 +494,16 @@ public:: true
         "label": "AI Art Generation"
       },
       {
-        "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflow-integration",
+        "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
         "label": "ComfyUI Workflow Integration"
       },
       {
-        "@id": "urn:ngm:class:concept-lo-ra-training",
+        "@id": "urn:ngm:class:lo-ra-fine-tuning",
         "label": "Concept LoRA Training"
       },
       {
-        "@id": "urn:ngm:class:custom-image-generation",
+        "@id": "urn:ngm:class:image-generation",
         "label": "Custom Image Generation"
-      },
-      {
-        "@id": "urn:ngm:class:flux-lo-ra",
-        "label": "FLUX LoRA"
-      },
-      {
-        "@id": "urn:ngm:class:lo-ra-marketplace-distribution",
-        "label": "LoRA Marketplace Distribution"
-      },
-      {
-        "@id": "urn:ngm:class:subject-fidelity",
-        "label": "Subject Fidelity"
       },
       {
         "@id": "urn:ngm:class:style-transfer",
@@ -544,20 +512,12 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:cached-latent-encoding",
-        "label": "Cached Latent Encoding"
-      },
-      {
         "@id": "urn:ngm:class:do-ra",
         "label": "DoRA"
       },
       {
-        "@id": "urn:ngm:class:dream-booth-lo-ra",
+        "@id": "urn:ngm:class:lo-ra-fine-tuning",
         "label": "DreamBooth LoRA"
-      },
-      {
-        "@id": "urn:ngm:class:dreambooth-training",
-        "label": "Dreambooth Training"
       },
       {
         "@id": "urn:ngm:class:low-rank-adaptation",
@@ -566,14 +526,6 @@ public:: true
       {
         "@id": "urn:ngm:class:ly-coris",
         "label": "LyCORIS"
-      },
-      {
-        "@id": "urn:ngm:class:min-snr-gamma-weighting",
-        "label": "Min-SNR Gamma Weighting"
-      },
-      {
-        "@id": "urn:ngm:class:pivotal-tuning",
-        "label": "Pivotal Tuning"
       },
       {
         "@id": "urn:ngm:class:resolution-bucketing",
@@ -586,11 +538,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:adafactor-optimiser",
-        "label": "Adafactor Optimiser"
-      },
-      {
-        "@id": "urn:ngm:class:adam-w-optimiser",
+        "@id": "urn:ngm:class:adam-optimiser",
         "label": "AdamW Optimiser"
       },
       {
@@ -604,10 +552,6 @@ public:: true
       {
         "@id": "urn:ngm:class:lla-va",
         "label": "LLaVA"
-      },
-      {
-        "@id": "urn:ngm:class:prodigy-optimiser",
-        "label": "Prodigy Optimiser"
       },
       {
         "@id": "urn:ngm:class:safetensors-format",
@@ -628,7 +572,7 @@ public:: true
         "label": "ControlNet"
       },
       {
-        "@id": "urn:ngm:class:generative-image-models",
+        "@id": "urn:ngm:class:generative-models",
         "label": "Generative Image Models"
       },
       {
@@ -696,20 +640,12 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:black-forest-labs-flux-api",
-        "label": "Black Forest Labs FLUX API"
-      },
-      {
-        "@id": "urn:ngm:class:civitai-model-standards",
+        "@id": "urn:ngm:class:civitai",
         "label": "Civitai Model Standards"
       },
       {
         "@id": "urn:ngm:class:hugging-face-peft",
         "label": "Hugging Face PEFT"
-      },
-      {
-        "@id": "urn:ngm:class:kohya-naming-convention",
-        "label": "Kohya Naming Convention"
       }
     ]
   },

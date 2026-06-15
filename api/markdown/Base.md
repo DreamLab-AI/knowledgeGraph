@@ -87,15 +87,7 @@ public:: true
         "label": "DeFi"
       },
       {
-        "@id": "urn:ngm:class:onchain-consumer-applications",
-        "label": "Onchain Consumer Applications"
-      },
-      {
-        "@id": "urn:ngm:class:low-cost-blockchain-transactions",
-        "label": "Low-Cost Blockchain Transactions"
-      },
-      {
-        "@id": "urn:ngm:class:erc-20-token",
+        "@id": "urn:ngm:class:erc-20-tokens",
         "label": "ERC-20 Token"
       }
     ],
@@ -109,7 +101,7 @@ public:: true
         "label": "Fraud Proof"
       },
       {
-        "@id": "urn:ngm:class:ethereum-virtual-machine",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       }
     ],

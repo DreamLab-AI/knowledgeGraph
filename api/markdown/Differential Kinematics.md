@@ -164,43 +164,15 @@ public:: true
       {
         "@id": "urn:ngm:class:jacobian-matrix",
         "label": "Jacobian Matrix"
-      },
-      {
-        "@id": "urn:ngm:class:singularity-condition",
-        "label": "Singularity Condition"
-      },
-      {
-        "@id": "urn:ngm:class:velocity-transformation",
-        "label": "Velocity Transformation"
       }
     ],
     "requires": [
       {
         "@id": "urn:ngm:class:joint-configuration",
         "label": "Joint Configuration"
-      },
-      {
-        "@id": "urn:ngm:class:position-kinematics",
-        "label": "Position Kinematics"
-      },
-      {
-        "@id": "urn:ngm:class:velocity-inputs",
-        "label": "Velocity Inputs"
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:end-effector-velocity-control",
-        "label": "End-Effector Velocity Control"
-      },
-      {
-        "@id": "urn:ngm:class:force-torque-transformation",
-        "label": "Force/Torque Transformation"
-      },
-      {
-        "@id": "urn:ngm:class:singularity-detection",
-        "label": "Singularity Detection"
-      },
       {
         "@id": "urn:ngm:class:inverse-kinematics",
         "label": "Inverse Kinematics"

@@ -114,10 +114,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:cognitive-immersion",
-        "label": "Cognitive Immersion"
-      },
-      {
         "@id": "urn:ngm:class:sensory-immersion",
         "label": "Sensory Immersion"
       },
@@ -128,16 +124,8 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:content-quality",
-        "label": "Content Quality"
-      },
-      {
         "@id": "urn:ngm:class:display-technology",
         "label": "Display Technology"
-      },
-      {
-        "@id": "urn:ngm:class:interaction-mechanism",
-        "label": "Interaction Mechanism"
       }
     ],
     "enables": [

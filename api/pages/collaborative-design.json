@@ -25,10 +25,6 @@
       {
         "id": "urn:ngm:class:shared-workspace",
         "label": "Shared Workspace"
-      },
-      {
-        "id": "urn:ngm:class:facilitation",
-        "label": "Facilitation"
       }
     ],
     "enables": [
@@ -45,7 +41,7 @@
         "label": "Co-Creation"
       },
       {
-        "id": "urn:ngm:class:iterative-prototyping",
+        "id": "urn:ngm:class:rapid-prototyping",
         "label": "Iterative Prototyping"
       }
     ],
@@ -60,12 +56,7 @@
         "label": "Human-Centred Design"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:expert-driven-design",
-        "label": "Expert-Driven Design"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:spatial-computing",
@@ -100,7 +91,7 @@
         "label": "Design Sprint"
       },
       {
-        "id": "urn:ngm:class:agile-development",
+        "id": "urn:ngm:class:agile-software-development",
         "label": "Agile Development"
       }
     ],

@@ -38,50 +38,127 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:identity-provider", "label": "Identity Provider"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:digital-certificate", "label": "Digital Certificate"},
-      {"@id": "urn:ngm:class:trust-framework", "label": "Trust Framework"}
+      {
+        "@id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:digital-identity-management", "label": "Digital Identity Management"},
-      {"@id": "urn:ngm:class:federated-identity", "label": "Federated Identity"},
-      {"@id": "urn:ngm:class:zero-trust-security", "label": "Zero Trust Security"}
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-management",
+        "label": "Digital Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Security"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:oauth2", "label": "OAuth 2.0"},
-      {"@id": "urn:ngm:class:openid-connect", "label": "OpenID Connect"},
-      {"@id": "urn:ngm:class:saml", "label": "SAML"},
-      {"@id": "urn:ngm:class:kerberos", "label": "Kerberos"}
+      {
+        "@id": "urn:ngm:class:oauth2",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "@id": "urn:ngm:class:saml",
+        "label": "SAML"
+      },
+      {
+        "@id": "urn:ngm:class:kerberos",
+        "label": "Kerberos"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:json-web-token", "label": "JSON Web Token"},
-      {"@id": "urn:ngm:class:session-management", "label": "Session Management"},
-      {"@id": "urn:ngm:class:multi-factor-authentication", "label": "Multi-Factor Authentication"}
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-web-token",
+        "label": "JSON Web Token"
+      },
+      {
+        "@id": "urn:ngm:class:session-management",
+        "label": "Session Management"
+      },
+      {
+        "@id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:role-based-access-control", "label": "Role-Based Access Control"},
-      {"@id": "urn:ngm:class:audit-logging", "label": "Audit Logging"},
-      {"@id": "urn:ngm:class:user-provisioning", "label": "User Provisioning"}
+      {
+        "@id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      },
+      {
+        "@id": "urn:ngm:class:user-provisioning",
+        "label": "User Provisioning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:password-manager", "label": "Password Manager"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:federated-credential-exchange", "label": "Federated Credential Exchange"},
-      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"},
-      {"@id": "urn:ngm:class:directory-services", "label": "Directory Services"},
-      {"@id": "urn:ngm:class:authentication-standards", "label": "Authentication Standards"}
+      {
+        "@id": "urn:ngm:class:federated-credential-exchange",
+        "label": "Federated Credential Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:directory-service",
+        "label": "Directory Services"
+      },
+      {
+        "@id": "urn:ngm:class:authentication-standards",
+        "label": "Authentication Standards"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"}
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:web-sso", "label": "Web SSO"}
+    {
+      "@id": "urn:ngm:class:web-sso",
+      "label": "Web SSO"
+    }
   ],
   "qualityScore": 0.74,
   "provenance": {

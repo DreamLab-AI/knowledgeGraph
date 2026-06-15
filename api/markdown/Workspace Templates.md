@@ -23,15 +23,23 @@ public:: true
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:dc-workspace-tools", "label": "Workspace Tools"}
+    {
+      "@id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    }
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:standardised-workflows", "label": "Standardised Workflows"},
-      {"@id": "urn:ngm:class:onboarding", "label": "Onboarding"}
+      {
+        "@id": "urn:ngm:class:onboarding",
+        "label": "Onboarding"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:kanban-board", "label": "Kanban Board"}
+      {
+        "@id": "urn:ngm:class:kanban-board",
+        "label": "Kanban Board"
+      }
     ]
   },
   "quality": 0.7

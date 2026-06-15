@@ -516,32 +516,12 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:biometric-authentication-subsystem",
+        "@id": "urn:ngm:class:biometric-authentication",
         "label": "Biometric Authentication Subsystem"
-      },
-      {
-        "@id": "urn:ngm:class:credential-schema-registry",
-        "label": "Credential Schema Registry"
-      },
-      {
-        "@id": "urn:ngm:class:presentation-definition-engine",
-        "label": "Presentation Definition Engine"
-      },
-      {
-        "@id": "urn:ngm:class:private-key-store",
-        "label": "Private Key Store"
-      },
-      {
-        "@id": "urn:ngm:class:revocation-status-cache",
-        "label": "Revocation Status Cache"
       },
       {
         "@id": "urn:ngm:class:secure-enclave",
         "label": "Secure Enclave"
-      },
-      {
-        "@id": "urn:ngm:class:trust-framework-configuration",
-        "label": "Trust Framework Configuration"
       },
       {
         "@id": "urn:ngm:class:decentralized-identifiers",
@@ -558,20 +538,12 @@ public:: true
         "label": "Cryptographic Library"
       },
       {
-        "@id": "urn:ngm:class:mobile-operating-system",
-        "label": "Mobile Operating System"
-      },
-      {
         "@id": "urn:ngm:class:network-connectivity",
         "label": "Network Connectivity"
       },
       {
         "@id": "urn:ngm:class:secure-element",
         "label": "Secure Element"
-      },
-      {
-        "@id": "urn:ngm:class:trust-anchor-list",
-        "label": "Trust Anchor List"
       },
       {
         "@id": "urn:ngm:class:trusted-execution-environment",
@@ -592,24 +564,8 @@ public:: true
         "label": "Credential Portability"
       },
       {
-        "@id": "urn:ngm:class:cross-border-identity-verification",
-        "label": "Cross-Border Identity Verification"
-      },
-      {
-        "@id": "urn:ngm:class:kyc-reuse",
-        "label": "KYC Reuse"
-      },
-      {
-        "@id": "urn:ngm:class:offline-authentication",
-        "label": "Offline Authentication"
-      },
-      {
         "@id": "urn:ngm:class:privacy-preserving-authentication",
         "label": "Privacy-Preserving Authentication"
-      },
-      {
-        "@id": "urn:ngm:class:pseudonymous-authentication",
-        "label": "Pseudonymous Authentication"
       },
       {
         "@id": "urn:ngm:class:selective-disclosure",
@@ -624,10 +580,6 @@ public:: true
       {
         "@id": "urn:ngm:class:iso-iec-18013-5-m-dl",
         "label": "ISO-IEC 18013-5 mDL"
-      },
-      {
-        "@id": "urn:ngm:class:mdoc-cbor",
-        "label": "mdoc-cbor"
       },
       {
         "@id": "urn:ngm:class:open-id4-vci",
@@ -660,10 +612,6 @@ public:: true
         "label": "Bluetooth Low Energy"
       },
       {
-        "@id": "urn:ngm:class:deep-linking",
-        "label": "Deep Linking"
-      },
-      {
         "@id": "urn:ngm:class:ed-dsa",
         "label": "EdDSA"
       },
@@ -674,10 +622,6 @@ public:: true
       {
         "@id": "urn:ngm:class:qr-code",
         "label": "QR Code"
-      },
-      {
-        "@id": "urn:ngm:class:salted-hash",
-        "label": "Salted Hash"
       },
       {
         "@id": "urn:ngm:class:ecdsa",
@@ -698,7 +642,7 @@ public:: true
         "label": "Open Badges"
       },
       {
-        "@id": "urn:ngm:class:payment-wallet",
+        "@id": "urn:ngm:class:wallet",
         "label": "Payment Wallet"
       },
       {
@@ -736,10 +680,6 @@ public:: true
         "label": "Online Safety Act 2023"
       },
       {
-        "@id": "urn:ngm:class:psd2-strong-customer-authentication",
-        "label": "PSD2 Strong Customer Authentication"
-      },
-      {
         "@id": "urn:ngm:class:uk-diatf",
         "label": "UK DIATF"
       }
@@ -752,10 +692,6 @@ public:: true
       {
         "@id": "urn:ngm:class:etsi",
         "label": "ETSI"
-      },
-      {
-        "@id": "urn:ngm:class:european-commission-eudi-arf",
-        "label": "European Commission EUDI ARF"
       },
       {
         "@id": "urn:ngm:class:iso-iec-jtc-1-sc-17",

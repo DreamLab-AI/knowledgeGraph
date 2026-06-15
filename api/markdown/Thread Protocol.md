@@ -23,65 +23,145 @@ public:: true
   "definition": "Thread is an IPv6-based, low-power wireless mesh networking protocol designed for IoT devices in home and commercial environments, using IEEE 802.15.4 as its radio layer and providing self-healing, self-configuring mesh topology with native IP routing, secure device commissioning, and no single point of failure. Thread is managed by the Thread Group and forms the network and transport foundation for the Matter smart-home application protocol.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ieee-802-15-4", "label": "IEEE 802.15.4"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ieee-802-15-4",
+      "label": "IEEE 802.15.4"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:thread-border-router", "label": "Thread Border Router"},
-      {"@id": "urn:ngm:class:openthread", "label": "OpenThread"},
-      {"@id": "urn:ngm:class:thread-commissioning-protocol", "label": "Thread Commissioning Protocol"}
-    ],
-    "partOf": [
-      {"@id": "urn:ngm:class:iot-networking-stack", "label": "IoT Networking Stack"}
+      {
+        "@id": "urn:ngm:class:openthread",
+        "label": "OpenThread"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ieee-802-15-4", "label": "IEEE 802.15.4"},
-      {"@id": "urn:ngm:class:6lowpan", "label": "6LoWPAN"},
-      {"@id": "urn:ngm:class:ipv6", "label": "IPv6"}
+      {
+        "@id": "urn:ngm:class:ieee-802-15-4",
+        "label": "IEEE 802.15.4"
+      },
+      {
+        "@id": "urn:ngm:class:6lowpan",
+        "label": "6LoWPAN"
+      },
+      {
+        "@id": "urn:ngm:class:ipv6",
+        "label": "IPv6"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:matter-protocol", "label": "Matter Protocol"},
-      {"@id": "urn:ngm:class:smart-home-automation", "label": "Smart Home Automation"},
-      {"@id": "urn:ngm:class:industrial-iot", "label": "Industrial IoT"}
+      {
+        "@id": "urn:ngm:class:matter-protocol",
+        "label": "Matter Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:smart-home-automation",
+        "label": "Smart Home Automation"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:aes-128-encryption", "label": "AES-128 Encryption"},
-      {"@id": "urn:ngm:class:dtls", "label": "DTLS"}
+      {
+        "@id": "urn:ngm:class:symmetric-encryption",
+        "label": "AES-128 Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:dtls",
+        "label": "DTLS"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:mesh-networking", "label": "Mesh Networking"},
-      {"@id": "urn:ngm:class:link-state-routing", "label": "Link-State Routing"}
+      {
+        "@id": "urn:ngm:class:mesh-networking",
+        "label": "Mesh Networking"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:network-layer", "label": "Network Layer"},
-      {"@id": "urn:ngm:class:coap", "label": "CoAP"},
-      {"@id": "urn:ngm:class:udp", "label": "UDP"}
+      {
+        "@id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      },
+      {
+        "@id": "urn:ngm:class:coap",
+        "label": "CoAP"
+      },
+      {
+        "@id": "urn:ngm:class:udp",
+        "label": "UDP"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:low-power-device", "label": "Low-Power Device"},
-      {"@id": "urn:ngm:class:device-commissioning", "label": "Device Commissioning"}
+      {
+        "@id": "urn:ngm:class:low-power-device",
+        "label": "Low-Power Device"
+      },
+      {
+        "@id": "urn:ngm:class:device-commissioning",
+        "label": "Device Commissioning"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:thread-group", "label": "Thread Group"}
+      {
+        "@id": "urn:ngm:class:thread-group",
+        "label": "Thread Group"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:zigbee", "label": "Zigbee"},
-      {"@id": "urn:ngm:class:z-wave", "label": "Z-Wave"},
-      {"@id": "urn:ngm:class:bluetooth-mesh", "label": "Bluetooth Mesh"}
+      {
+        "@id": "urn:ngm:class:zigbee",
+        "label": "Zigbee"
+      },
+      {
+        "@id": "urn:ngm:class:z-wave",
+        "label": "Z-Wave"
+      },
+      {
+        "@id": "urn:ngm:class:bluetooth-mesh",
+        "label": "Bluetooth Mesh"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:local-area-network", "label": "Local Area Network"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+      {
+        "@id": "urn:ngm:class:local-area-network",
+        "label": "Local Area Network"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:mesh-routing-software", "label": "Mesh Routing Software"},
-      {"@id": "urn:ngm:class:wireless-radio", "label": "Wireless Radio"},
-      {"@id": "urn:ngm:class:home-area-network", "label": "Home Area Network"},
-      {"@id": "urn:ngm:class:building-automation", "label": "Building Automation"}
+      {
+        "@id": "urn:ngm:class:mesh-routing-software",
+        "label": "Mesh Routing Software"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-radio",
+        "label": "Wireless Radio"
+      },
+      {
+        "@id": "urn:ngm:class:home-area-network",
+        "label": "Home Area Network"
+      },
+      {
+        "@id": "urn:ngm:class:building-automation",
+        "label": "Building Automation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:thread-1-3", "label": "Thread 1.3"},
-    {"@id": "urn:ngm:class:openthread-protocol", "label": "OpenThread Protocol"}
+    {
+      "@id": "urn:ngm:class:thread-1-3",
+      "label": "Thread 1.3"
+    },
+    {
+      "@id": "urn:ngm:class:openthread-protocol",
+      "label": "OpenThread Protocol"
+    }
   ],
   "quality": 0.8,
   "provenance": {

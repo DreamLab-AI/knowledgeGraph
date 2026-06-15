@@ -16,30 +16,8 @@
   "qualityScore": 0.85,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:rfid-tag",
-        "label": "RFID Tag"
-      },
-      {
-        "id": "urn:ngm:class:rfid-reader",
-        "label": "RFID Reader"
-      },
-      {
-        "id": "urn:ngm:class:rfid-antenna",
-        "label": "RFID Antenna"
-      }
-    ],
-    "requires": [
-      {
-        "id": "urn:ngm:class:electromagnetic-spectrum",
-        "label": "Electromagnetic Spectrum"
-      },
-      {
-        "id": "urn:ngm:class:backscatter-communication",
-        "label": "Backscatter Communication"
-      }
-    ],
+    "hasPart": [],
+    "requires": [],
     "enables": [
       {
         "id": "urn:ngm:class:food-safety",
@@ -90,34 +68,13 @@
         "label": "Communication Infrastructure"
       },
       {
-        "id": "urn:ngm:class:ultra-high-frequency-radio",
-        "label": "Ultra-High Frequency Radio"
-      },
-      {
         "id": "urn:ngm:class:near-field-communication",
         "label": "Near Field Communication"
       }
     ],
     "supports": [],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:iso-18000",
-        "label": "ISO 18000"
-      },
-      {
-        "id": "urn:ngm:class:gs1-epc",
-        "label": "GS1 EPC"
-      },
-      {
-        "id": "urn:ngm:class:epc-global-gen2",
-        "label": "EPC Global Gen 2"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [
-      {
-        "id": "urn:ngm:class:automatic-identification-and-data-capture",
-        "label": "Automatic Identification and Data Capture"
-      },
       {
         "id": "urn:ngm:class:internet-of-things",
         "label": "Internet of Things"

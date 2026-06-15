@@ -58,7 +58,7 @@
         "label": "Immersive Collaboration"
       },
       {
-        "id": "urn:ngm:class:virtual-training-simulation",
+        "id": "urn:ngm:class:virtual-training",
         "label": "Virtual Training Simulation"
       },
       {
@@ -137,7 +137,7 @@
         "label": "Computer Graphics"
       },
       {
-        "id": "urn:ngm:class:presence-telepresence",
+        "id": "urn:ngm:class:telepresence",
         "label": "Presence and Telepresence"
       }
     ]

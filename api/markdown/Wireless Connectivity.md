@@ -121,24 +121,10 @@ public:: true
         "label": "Edge Computing"
       }
     ],
-    "dependsOn": [
-      {
-        "@id": "urn:ngm:class:antenna-technology",
-        "label": "Antenna Technology"
-      },
-      {
-        "@id": "urn:ngm:class:signal-modulation",
-        "label": "Signal Modulation"
-      }
-    ],
     "implements": [
       {
         "@id": "urn:ngm:class:ieee-802-11",
         "label": "IEEE 802.11"
-      },
-      {
-        "@id": "urn:ngm:class:3gpp-standards",
-        "label": "3GPP Standards"
       }
     ],
     "uses": [
@@ -173,12 +159,6 @@ public:: true
       {
         "@id": "urn:ngm:class:itu",
         "label": "ITU"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:wired-networking",
-        "label": "Wired Networking"
       }
     ],
     "bridgesTo": [

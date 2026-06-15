@@ -79,29 +79,17 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:zk-sync-era",
-        "label": "zkSync Era"
-      },
-      {
-        "@id": "urn:ngm:class:zk-stack",
-        "label": "ZK Stack"
-      },
-      {
-        "@id": "urn:ngm:class:zk-sync-lite",
-        "label": "zkSync Lite"
-      },
-      {
         "@id": "urn:ngm:class:validity-proof",
         "label": "Validity Proof"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:ethereum-ecosystem",
+        "@id": "urn:ngm:class:ethereum",
         "label": "Ethereum Ecosystem"
       },
       {
-        "@id": "urn:ngm:class:layer-2-scaling-ecosystem",
+        "@id": "urn:ngm:class:layer-2-scaling",
         "label": "Layer-2 Scaling Ecosystem"
       }
     ],
@@ -119,10 +107,6 @@ public:: true
         "label": "Zero-Knowledge Proof"
       },
       {
-        "@id": "urn:ngm:class:zk-prover",
-        "label": "ZK Prover"
-      },
-      {
         "@id": "urn:ngm:class:data-availability",
         "label": "Data Availability"
       }
@@ -133,17 +117,17 @@ public:: true
         "label": "Decentralised Finance"
       },
       {
-        "@id": "urn:ngm:class:low-cost-blockchain-transaction",
+        "@id": "urn:ngm:class:blockchain-transaction",
         "label": "Low-Cost Blockchain Transaction"
       },
       {
-        "@id": "urn:ngm:class:cross-chain-bridging",
+        "@id": "urn:ngm:class:cross-chain-bridge",
         "label": "Cross-Chain Bridging"
       }
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:ethereum-mainnet",
+        "@id": "urn:ngm:class:ethereum",
         "label": "Ethereum Mainnet"
       },
       {
@@ -171,7 +155,7 @@ public:: true
         "label": "ZK-SNARK"
       },
       {
-        "@id": "urn:ngm:class:zk-stark",
+        "@id": "urn:ngm:class:zk-starks",
         "label": "ZK-STARK"
       },
       {
@@ -181,7 +165,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:erc-20-token",
+        "@id": "urn:ngm:class:erc-20-tokens",
         "label": "ERC-20 Token"
       },
       {
@@ -231,7 +215,7 @@ public:: true
         "label": "Polygon zkEVM"
       },
       {
-        "@id": "urn:ngm:class:layer-2-network",
+        "@id": "urn:ngm:class:layer-2-networks",
         "label": "Layer-2 Network"
       }
     ]

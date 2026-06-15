@@ -24,55 +24,146 @@ alias:: Content Addressed Storage
   "definition": "Content-addressed storage (CAS) is a data storage paradigm in which each piece of data is identified and retrieved by a cryptographic hash of its content rather than by its location or a human-assigned name. Because the identifier is derived deterministically from the data itself, identical content always maps to the same address, enabling automatic deduplication and verifiable integrity without requiring trust in the storage provider. Content-addressed storage forms the basis of distributed systems such as IPFS, Git, and Arweave, and underlies the content-integrity mechanisms of blockchain data layers. It is fundamentally different from location-addressed storage, where the same content can exist at multiple addresses or the same address can point to different content over time.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-storage", "label": "Data Storage"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-storage",
+      "label": "Data Storage"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:content-addressable-storage", "label": "Content-Addressable Storage"},
-    {"@id": "urn:ngm:class:cas", "label": "CAS"}
+    {
+      "@id": "urn:ngm:class:content-addressable-storage",
+      "label": "Content-Addressable Storage"
+    },
+    {
+      "@id": "urn:ngm:class:cas",
+      "label": "CAS"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:content-addressing", "label": "Content Addressing"},
-      {"@id": "urn:ngm:class:distributed-hash-table", "label": "Distributed Hash Table"},
-      {"@id": "urn:ngm:class:kzg-commitment", "label": "KZG Commitment"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      },
+      {
+        "@id": "urn:ngm:class:kzg-commitment",
+        "label": "KZG Commitment"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:data-availability", "label": "Data Availability"},
-      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"},
-      {"@id": "urn:ngm:class:data-deduplication", "label": "Data Deduplication"},
-      {"@id": "urn:ngm:class:tamper-evidence", "label": "Tamper Evidence"},
-      {"@id": "urn:ngm:class:reproducible-builds", "label": "Reproducible Builds"},
-      {"@id": "urn:ngm:class:verifiable-provenance", "label": "Verifiable Provenance"}
+      {
+        "@id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-verification",
+        "label": "Cryptographic Verification"
+      },
+      {
+        "@id": "urn:ngm:class:data-deduplication",
+        "label": "Data Deduplication"
+      },
+      {
+        "@id": "urn:ngm:class:tamper-evidence",
+        "label": "Tamper Evidence"
+      },
+      {
+        "@id": "urn:ngm:class:reproducible-builds",
+        "label": "Reproducible Builds"
+      },
+      {
+        "@id": "urn:ngm:class:provenance",
+        "label": "Verifiable Provenance"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:ipfs", "label": "IPFS"},
-      {"@id": "urn:ngm:class:git", "label": "Git"},
-      {"@id": "urn:ngm:class:arweave", "label": "Arweave"},
-      {"@id": "urn:ngm:class:filecoin", "label": "Filecoin"}
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "@id": "urn:ngm:class:git",
+        "label": "Git"
+      },
+      {
+        "@id": "urn:ngm:class:arweave",
+        "label": "Arweave"
+      },
+      {
+        "@id": "urn:ngm:class:filecoin",
+        "label": "Filecoin"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:content-identifier", "label": "Content Identifier"}
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:content-identifier",
+        "label": "Content Identifier"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:decentralized-storage", "label": "Decentralized Storage"},
-      {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"}
+      {
+        "@id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:location-addressed-storage", "label": "Location-Addressed Storage"},
-      {"@id": "urn:ngm:class:object-storage", "label": "Object Storage"}
+      {
+        "@id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain-data-layer", "label": "Blockchain Data Layer"},
-      {"@id": "urn:ngm:class:dataset-versioning", "label": "Dataset Versioning"},
-      {"@id": "urn:ngm:class:model-registry", "label": "Model Registry"}
+      {
+        "@id": "urn:ngm:class:data-layer",
+        "label": "Blockchain Data Layer"
+      },
+      {
+        "@id": "urn:ngm:class:data-versioning",
+        "label": "Dataset Versioning"
+      },
+      {
+        "@id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
     ]
   },
   "quality": 0.74,

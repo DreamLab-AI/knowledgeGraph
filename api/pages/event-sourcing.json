@@ -65,19 +65,14 @@
         "label": "CQRS"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:crud-architecture",
-        "label": "CRUD Architecture"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:distributed-ledger",
         "label": "Distributed Ledger"
       },
       {
-        "id": "urn:ngm:class:ai-agent-memory",
+        "id": "urn:ngm:class:agent-memory",
         "label": "AI Agent Memory"
       }
     ],

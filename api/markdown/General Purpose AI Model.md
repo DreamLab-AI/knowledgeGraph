@@ -102,7 +102,7 @@ public:: true
         "label": "Large Language Models"
       },
       {
-        "@id": "urn:ngm:class:multimodal-ai",
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       },
       {
@@ -176,22 +176,14 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
-      },
-      {
-        "@id": "urn:ngm:class:general-purpose-ai-code-of-practice",
-        "label": "General Purpose AI Code Of Practice"
       }
     ],
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:narrow-ai",
         "label": "Narrow AI"
-      },
-      {
-        "@id": "urn:ngm:class:special-purpose-ai-system",
-        "label": "Special Purpose AI System"
       }
     ],
     "bridgesTo": [

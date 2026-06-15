@@ -24,54 +24,123 @@ alias:: GraspPlanning
   "definition": "Grasp planning is the computational problem of determining stable contact configurations between a robotic end-effector and an object, such that the resulting grasp resists external disturbances and enables the desired manipulation task. It combines geometric modelling of object shape, force-closure analysis, kinematics constraints, and task-level objectives to synthesise executable grasp poses.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:manipulation", "label": "Manipulation"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:manipulation",
+    "label": "Manipulation"
+  },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
-      {"@id": "urn:ngm:class:force-closure", "label": "Force Closure"},
-      {"@id": "urn:ngm:class:grasp-quality-metric", "label": "Grasp Quality Metric"},
-      {"@id": "urn:ngm:class:depth-sensor", "label": "Depth Sensor"},
-      {"@id": "urn:ngm:class:collision-detection", "label": "Collision Detection"}
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:force-control",
+        "label": "Force Closure"
+      },
+      {
+        "@id": "urn:ngm:class:depth-sensor",
+        "label": "Depth Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"},
-      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
-      {"@id": "urn:ngm:class:object-recognition", "label": "Object Recognition"},
-      {"@id": "urn:ngm:class:3d-shape-representation", "label": "3D Shape Representation"}
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:object-recognition",
+        "label": "Object Recognition"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:contact-model", "label": "Contact Model"},
-      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"},
-      {"@id": "urn:ngm:class:perception-system", "label": "Perception System"}
+      {
+        "@id": "urn:ngm:class:contact-model",
+        "label": "Contact Model"
+      },
+      {
+        "@id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:pick-and-place", "label": "Pick and Place"},
-      {"@id": "urn:ngm:class:in-hand-manipulation", "label": "In-Hand Manipulation"},
-      {"@id": "urn:ngm:class:task-execution", "label": "Task Execution"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:grasp-candidate-generation", "label": "Grasp Candidate Generation"},
-      {"@id": "urn:ngm:class:grasp-evaluation", "label": "Grasp Evaluation"}
+      {
+        "@id": "urn:ngm:class:pick-and-place",
+        "label": "Pick and Place"
+      },
+      {
+        "@id": "urn:ngm:class:in-hand-manipulation",
+        "label": "In-Hand Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:task-execution",
+        "label": "Task Execution"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:dexterous-manipulation", "label": "Dexterous Manipulation"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:tactile-sensing", "label": "Tactile Sensing"},
-      {"@id": "urn:ngm:class:sim-to-real-transfer", "label": "Sim-to-Real Transfer"}
+      {
+        "@id": "urn:ngm:class:dexterous-manipulation",
+        "label": "Dexterous Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:tactile-sensing",
+        "label": "Tactile Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:sim-to-real-transfer",
+        "label": "Sim-to-Real Transfer"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:sampling-based-planning", "label": "Sampling-Based Planning"},
-      {"@id": "urn:ngm:class:deep-learning-for-robotics", "label": "Deep Learning for Robotics"}
+      {
+        "@id": "urn:ngm:class:sampling-based-planning",
+        "label": "Sampling-Based Planning"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning for Robotics"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:robotic-grasping", "label": "Robotic Grasping"},
-    {"@id": "urn:ngm:class:grasp-synthesis", "label": "Grasp Synthesis"}
+    {
+      "@id": "urn:ngm:class:robotic-grasping",
+      "label": "Robotic Grasping"
+    },
+    {
+      "@id": "urn:ngm:class:grasp-synthesis",
+      "label": "Grasp Synthesis"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -510,44 +510,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-desktop-app",
-        "label": "ComfyUI Desktop App"
-      },
-      {
         "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-manager",
         "label": "ComfyUI Manager"
       },
       {
-        "@id": "urn:ngm:class:custom-node-system",
-        "label": "Custom Node System"
-      },
-      {
-        "@id": "urn:ngm:class:model-library-browser",
-        "label": "Model Library Browser"
-      },
-      {
-        "@id": "urn:ngm:class:node-graph-editor",
+        "@id": "urn:ngm:class:node-based-editor",
         "label": "Node Graph Editor"
-      },
-      {
-        "@id": "urn:ngm:class:preview-node",
-        "label": "Preview Node"
-      },
-      {
-        "@id": "urn:ngm:class:prompt-queue-manager",
-        "label": "Prompt Queue Manager"
-      },
-      {
-        "@id": "urn:ngm:class:vae-preview",
-        "label": "VAE Preview"
-      },
-      {
-        "@id": "urn:ngm:class:web-socket-client",
-        "label": "WebSocket Client"
-      },
-      {
-        "@id": "urn:ngm:class:workflow-browser",
-        "label": "Workflow Browser"
       }
     ],
     "requires": [
@@ -560,11 +528,7 @@ public:: true
         "label": "GPU Computing"
       },
       {
-        "@id": "urn:ngm:class:http-api",
-        "label": "HTTP API"
-      },
-      {
-        "@id": "urn:ngm:class:node-graph",
+        "@id": "urn:ngm:class:node-graph-visual-programming-interface",
         "label": "Node Graph"
       },
       {
@@ -590,24 +554,8 @@ public:: true
         "label": "API Integration"
       },
       {
-        "@id": "urn:ngm:class:control-net-guidance",
+        "@id": "urn:ngm:class:control-net-conditioning",
         "label": "ControlNet Guidance"
-      },
-      {
-        "@id": "urn:ngm:class:custom-node-development",
-        "label": "Custom Node Development"
-      },
-      {
-        "@id": "urn:ngm:class:neural-network-latent-space-exploration",
-        "label": "Latent Space Exploration"
-      },
-      {
-        "@id": "urn:ngm:class:lo-ra-application",
-        "label": "LoRA Application"
-      },
-      {
-        "@id": "urn:ngm:class:model-chaining",
-        "label": "Model Chaining"
       },
       {
         "@id": "urn:ngm:class:video-generation",
@@ -632,23 +580,11 @@ public:: true
         "label": "Directed Acyclic Graph Execution"
       },
       {
-        "@id": "urn:ngm:class:json-data-interchange-format-workflow-serialisation",
-        "label": "JSON Workflow Serialisation"
-      },
-      {
         "@id": "urn:ngm:class:observer-pattern",
         "label": "Observer Pattern"
       },
       {
-        "@id": "urn:ngm:class:plugin-architecture",
-        "label": "Plugin Architecture"
-      },
-      {
-        "@id": "urn:ngm:class:queue-management-pattern",
-        "label": "Queue Management Pattern"
-      },
-      {
-        "@id": "urn:ngm:class:rest-api-pattern",
+        "@id": "urn:ngm:class:rest-api",
         "label": "REST API Pattern"
       },
       {
@@ -658,32 +594,12 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:aiohttp",
-        "label": "aiohttp"
-      },
-      {
-        "@id": "urn:ngm:class:electron",
-        "label": "Electron"
-      },
-      {
-        "@id": "urn:ngm:class:lite-graph-js",
-        "label": "LiteGraph.js"
-      },
-      {
         "@id": "urn:ngm:class:rest-api",
         "label": "REST API"
       },
       {
         "@id": "urn:ngm:class:type-script",
         "label": "TypeScript"
-      },
-      {
-        "@id": "urn:ngm:class:vite",
-        "label": "Vite"
-      },
-      {
-        "@id": "urn:ngm:class:vue-js",
-        "label": "Vue.js"
       },
       {
         "@id": "urn:ngm:class:web-socket",
@@ -704,16 +620,8 @@ public:: true
         "label": "GPU Computing"
       },
       {
-        "@id": "urn:ngm:class:node-based-interface",
+        "@id": "urn:ngm:class:node-graph-visual-programming-interface",
         "label": "Node Based Interface"
-      },
-      {
-        "@id": "urn:ngm:class:replicate",
-        "label": "Replicate"
-      },
-      {
-        "@id": "urn:ngm:class:run-pod",
-        "label": "RunPod"
       },
       {
         "@id": "urn:ngm:class:sdxl",
@@ -758,10 +666,6 @@ public:: true
         "label": "Image-to-Image"
       },
       {
-        "@id": "urn:ngm:class:video-diffusion",
-        "label": "Video Diffusion"
-      },
-      {
         "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
         "label": "ComfyUI Workflows"
       },
@@ -784,19 +688,11 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:comfy-org",
-        "label": "Comfy-Org"
-      },
-      {
         "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-api-specification",
         "label": "ComfyUI API Specification"
       },
       {
-        "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-node-registry",
-        "label": "ComfyUI Node Registry"
-      },
-      {
-        "@id": "urn:ngm:class:web-socket-rfc-6455",
+        "@id": "urn:ngm:class:web-socket-protocol",
         "label": "WebSocket RFC 6455"
       }
     ]

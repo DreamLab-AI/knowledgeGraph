@@ -69,30 +69,14 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:reconnaissance",
-        "label": "Reconnaissance"
-      },
-      {
         "@id": "urn:ngm:class:vulnerability-scanning",
         "label": "Vulnerability Scanning"
-      },
-      {
-        "@id": "urn:ngm:class:exploit-development",
-        "label": "Exploit Development"
-      },
-      {
-        "@id": "urn:ngm:class:post-exploitation",
-        "label": "Post-Exploitation"
       }
     ],
     "requires": [
       {
         "@id": "urn:ngm:class:threat-modelling",
         "label": "Threat Modelling"
-      },
-      {
-        "@id": "urn:ngm:class:rules-of-engagement",
-        "label": "Rules of Engagement"
       },
       {
         "@id": "urn:ngm:class:vulnerability-management",
@@ -107,38 +91,22 @@ public:: true
       {
         "@id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
-      },
-      {
-        "@id": "urn:ngm:class:security-hardening",
-        "label": "Security Hardening"
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:exploit-framework",
-        "label": "Exploit Framework"
-      },
       {
         "@id": "urn:ngm:class:social-engineering",
         "label": "Social Engineering"
       },
       {
-        "@id": "urn:ngm:class:network-protocol-analysis",
+        "@id": "urn:ngm:class:network-analysis",
         "label": "Network Protocol Analysis"
       }
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:ptes",
-        "label": "PTES"
-      },
-      {
         "@id": "urn:ngm:class:owasp",
         "label": "OWASP"
-      },
-      {
-        "@id": "urn:ngm:class:nist-sp-800-115",
-        "label": "NIST SP 800-115"
       }
     ],
     "contrastsWith": [
@@ -149,17 +117,9 @@ public:: true
       {
         "@id": "urn:ngm:class:security-audit",
         "label": "Security Audit"
-      },
-      {
-        "@id": "urn:ngm:class:bug-bounty-programme",
-        "label": "Bug Bounty Programme"
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:ethical-hacking",
-        "label": "Ethical Hacking"
-      },
       {
         "@id": "urn:ngm:class:threat-intelligence",
         "label": "Threat Intelligence"
@@ -169,7 +129,7 @@ public:: true
         "label": "Incident Response"
       },
       {
-        "@id": "urn:ngm:class:zero-day-vulnerability",
+        "@id": "urn:ngm:class:zero-day-exploits",
         "label": "Zero-Day Vulnerability"
       }
     ],

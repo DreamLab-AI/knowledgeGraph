@@ -143,11 +143,7 @@ alias:: ComputeLayer
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:ai-processing-service",
-        "label": "AI Processing Service"
-      },
-      {
-        "@id": "urn:ngm:class:compute-orchestrator",
+        "@id": "urn:ngm:class:compute-infrastructure",
         "label": "Compute Orchestrator"
       },
       {

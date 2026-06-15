@@ -80,15 +80,7 @@ public:: true
         "label": "Batch Size"
       },
       {
-        "@id": "urn:ngm:class:job-scheduler",
-        "label": "Job Scheduler"
-      },
-      {
-        "@id": "urn:ngm:class:checkpoint",
-        "label": "Checkpoint"
-      },
-      {
-        "@id": "urn:ngm:class:dead-letter-queue",
+        "@id": "urn:ngm:class:message-queue",
         "label": "Dead Letter Queue"
       }
     ],
@@ -118,7 +110,7 @@ public:: true
         "label": "Machine Learning Pipeline"
       },
       {
-        "@id": "urn:ngm:class:etl",
+        "@id": "urn:ngm:class:etl-pipeline",
         "label": "ETL"
       },
       {
@@ -134,10 +126,6 @@ public:: true
       {
         "@id": "urn:ngm:class:workflow-orchestration",
         "label": "Workflow Orchestration"
-      },
-      {
-        "@id": "urn:ngm:class:mapreduce",
-        "label": "MapReduce"
       }
     ],
     "uses": [
@@ -148,10 +136,6 @@ public:: true
       {
         "@id": "urn:ngm:class:apache-spark",
         "label": "Apache Spark"
-      },
-      {
-        "@id": "urn:ngm:class:apache-hadoop",
-        "label": "Apache Hadoop"
       }
     ],
     "contrastsWith": [

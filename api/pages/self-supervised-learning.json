@@ -30,16 +30,7 @@
         "label": "Masked Image Modelling"
       }
     ],
-    "requires": [
-      {
-        "id": "urn:ngm:class:unlabelled-data",
-        "label": "Unlabelled Data"
-      },
-      {
-        "id": "urn:ngm:class:pretext-task",
-        "label": "Pretext Task"
-      }
-    ],
+    "requires": [],
     "enables": [
       {
         "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
@@ -134,7 +125,7 @@
         "label": "Generative Adversarial Network"
       },
       {
-        "id": "urn:ngm:class:multimodal-learning",
+        "id": "urn:ngm:class:multimodal-ai-architecture-learning",
         "label": "Multimodal Learning"
       }
     ]

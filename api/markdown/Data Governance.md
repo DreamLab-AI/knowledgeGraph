@@ -81,10 +81,6 @@ alias:: DataGovernance
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:data-ownership",
-        "label": "Data Ownership"
-      },
-      {
         "@id": "urn:ngm:class:access-control",
         "label": "Access Control"
       },
@@ -103,7 +99,7 @@ alias:: DataGovernance
         "label": "Data Interoperability"
       },
       {
-        "@id": "urn:ngm:class:analytics",
+        "@id": "urn:ngm:class:data-analytics",
         "label": "Analytics"
       },
       {
@@ -112,10 +108,6 @@ alias:: DataGovernance
       }
     ],
     "dependsOn": [
-      {
-        "@id": "urn:ngm:class:organisational-policy",
-        "label": "Organisational Policy"
-      },
       {
         "@id": "urn:ngm:class:data-architecture",
         "label": "Data Architecture"

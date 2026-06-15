@@ -80,16 +80,12 @@
         "label": "Latency"
       },
       {
-        "id": "urn:ngm:class:network-reliability",
+        "id": "urn:ngm:class:reliability",
         "label": "Network Reliability"
       }
     ],
     "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:network-isolation",
-        "label": "Network Isolation"
-      },
       {
         "id": "urn:ngm:class:air-gap",
         "label": "Air Gap"

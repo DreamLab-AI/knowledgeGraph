@@ -16,16 +16,7 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:grasp-candidate-generation",
-        "label": "Grasp Candidate Generation"
-      },
-      {
-        "id": "urn:ngm:class:grasp-evaluation",
-        "label": "Grasp Evaluation"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:contact-model",
@@ -66,10 +57,6 @@
       {
         "id": "urn:ngm:class:object-recognition",
         "label": "Object Recognition"
-      },
-      {
-        "id": "urn:ngm:class:3d-shape-representation",
-        "label": "3D Shape Representation"
       }
     ],
     "implements": [
@@ -78,7 +65,7 @@
         "label": "Sampling-Based Planning"
       },
       {
-        "id": "urn:ngm:class:deep-learning-for-robotics",
+        "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning for Robotics"
       }
     ],
@@ -103,12 +90,8 @@
         "label": "Pose Estimation"
       },
       {
-        "id": "urn:ngm:class:force-closure",
+        "id": "urn:ngm:class:force-control",
         "label": "Force Closure"
-      },
-      {
-        "id": "urn:ngm:class:grasp-quality-metric",
-        "label": "Grasp Quality Metric"
       },
       {
         "id": "urn:ngm:class:depth-sensor",

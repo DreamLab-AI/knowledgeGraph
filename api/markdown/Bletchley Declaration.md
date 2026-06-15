@@ -38,46 +38,103 @@ public:: true
   ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:ai-safety-research", "label": "AI Safety Research"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:international-cooperation", "label": "International Cooperation"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"}
+      {
+        "@id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:international-cooperation",
+        "label": "International Cooperation"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:pre-deployment-evaluation", "label": "Pre-Deployment Evaluation"},
-      {"@id": "urn:ngm:class:ai-safety-institute", "label": "AI Safety Institute"},
-      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"}
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:pre-deployment-evaluation",
+        "label": "Pre-Deployment Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety-institute",
+        "label": "AI Safety Institute"
+      },
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:frontier-ai", "label": "Frontier AI"},
-      {"@id": "urn:ngm:class:foundation-models", "label": "Foundation Models"}
+      {
+        "@id": "urn:ngm:class:frontier-ai",
+        "label": "Frontier AI"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Models"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
-      {"@id": "urn:ngm:class:existential-risk", "label": "Existential Risk"},
-      {"@id": "urn:ngm:class:dual-use-technology", "label": "Dual-Use Technology"},
-      {"@id": "urn:ngm:class:biosecurity", "label": "Biosecurity"},
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:multilateral-governance", "label": "Multilateral Governance"},
-      {"@id": "urn:ngm:class:soft-law", "label": "Soft Law"}
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:existential-risk",
+        "label": "Existential Risk"
+      },
+      {
+        "@id": "urn:ngm:class:biosecurity",
+        "label": "Biosecurity"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
-      {"@id": "urn:ngm:class:binding-regulation", "label": "Binding Regulation"}
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:capability-evaluation", "label": "Capability Evaluation"},
-      {"@id": "urn:ngm:class:interpretability", "label": "Interpretability"},
-      {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"}
+      {
+        "@id": "urn:ngm:class:capability-evaluation",
+        "label": "Capability Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ai-safety-summit-declaration", "label": "AI Safety Summit Declaration"},
-    {"@id": "urn:ngm:class:bletchley-park-declaration", "label": "Bletchley Park Declaration"}
+    {
+      "@id": "urn:ngm:class:ai-safety-summit-declaration",
+      "label": "AI Safety Summit Declaration"
+    },
+    {
+      "@id": "urn:ngm:class:bletchley-park-declaration",
+      "label": "Bletchley Park Declaration"
+    }
   ],
   "quality": 0.74,
   "provenance": {

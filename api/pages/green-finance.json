@@ -22,10 +22,6 @@
         "label": "Green Bonds"
       },
       {
-        "id": "urn:ngm:class:sustainability-linked-loans",
-        "label": "Sustainability-Linked Loans"
-      },
-      {
         "id": "urn:ngm:class:carbon-markets",
         "label": "Carbon Markets"
       },
@@ -44,7 +40,7 @@
         "label": "ESG Reporting"
       },
       {
-        "id": "urn:ngm:class:green-taxonomy",
+        "id": "urn:ngm:class:eu-taxonomy",
         "label": "Green Taxonomy"
       },
       {

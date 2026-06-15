@@ -118,15 +118,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:display-manager",
-        "label": "Display Manager"
-      },
-      {
         "@id": "urn:ngm:class:graphics-pipeline",
         "label": "Graphics Pipeline"
       },
       {
-        "@id": "urn:ngm:class:shader-system",
+        "@id": "urn:ngm:class:shader",
         "label": "Shader System"
       },
       {
@@ -150,22 +146,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:user-interface-rendering",
-        "label": "User Interface Rendering"
-      },
-      {
-        "@id": "urn:ngm:class:visual-output",
-        "label": "Visual Output"
-      },
-      {
         "@id": "urn:ngm:class:immersive-experiences",
         "label": "Immersive Experiences"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:presentation-infrastructure",
-        "label": "Presentation Infrastructure"
       }
     ]
   },

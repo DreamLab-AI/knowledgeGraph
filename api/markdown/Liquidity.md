@@ -109,7 +109,7 @@ public:: true
         "label": "Price Discovery"
       },
       {
-        "@id": "urn:ngm:class:token-swap",
+        "@id": "urn:ngm:class:token-swapping",
         "label": "Token Swap"
       }
     ],
@@ -117,10 +117,6 @@ public:: true
       {
         "@id": "urn:ngm:class:market-making",
         "label": "Market Making"
-      },
-      {
-        "@id": "urn:ngm:class:trading-volume",
-        "label": "Trading Volume"
       }
     ],
     "uses": [
@@ -149,23 +145,11 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:illiquidity",
-        "label": "Illiquidity"
-      },
-      {
-        "@id": "urn:ngm:class:price-slippage",
-        "label": "Price Slippage"
-      },
-      {
         "@id": "urn:ngm:class:impermanent-loss",
         "label": "Impermanent Loss"
       }
     ],
     "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:central-bank-liquidity",
-        "label": "Central Bank Liquidity"
-      },
       {
         "@id": "urn:ngm:class:treasury-management",
         "label": "Treasury Management"

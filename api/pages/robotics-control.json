@@ -75,10 +75,6 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:classical-control",
-        "label": "Classical Control"
-      },
-      {
         "id": "urn:ngm:class:teleoperation",
         "label": "Teleoperation"
       }

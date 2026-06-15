@@ -54,42 +54,106 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"},
-      {"@id": "urn:ngm:class:historical-data", "label": "Historical Data"},
-      {"@id": "urn:ngm:class:statistical-modelling", "label": "Statistical Modelling"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-modelling",
+        "label": "Statistical Modelling"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:cross-validation", "label": "Cross-Validation"},
-      {"@id": "urn:ngm:class:regression-analysis", "label": "Regression Analysis"},
-      {"@id": "urn:ngm:class:classification", "label": "Classification"},
-      {"@id": "urn:ngm:class:ensemble-methods", "label": "Ensemble Methods"},
-      {"@id": "urn:ngm:class:time-series-analysis", "label": "Time-Series Analysis"}
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      },
+      {
+        "@id": "urn:ngm:class:regression",
+        "label": "Regression Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:classification",
+        "label": "Classification"
+      },
+      {
+        "@id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Methods"
+      },
+      {
+        "@id": "urn:ngm:class:time-series-analysis",
+        "label": "Time-Series Analysis"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
-      {"@id": "urn:ngm:class:demand-forecasting", "label": "Demand Forecasting"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:recommendation-system", "label": "Recommendation System"},
-      {"@id": "urn:ngm:class:decision-support-system", "label": "Decision Support System"}
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "@id": "urn:ngm:class:decision-support",
+        "label": "Decision Support System"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:business-intelligence", "label": "Business Intelligence"}
+      {
+        "@id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:descriptive-analytics", "label": "Descriptive Analytics"},
-      {"@id": "urn:ngm:class:prescriptive-analytics", "label": "Prescriptive Analytics"}
+      {
+        "@id": "urn:ngm:class:descriptive-analytics",
+        "label": "Descriptive Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:prescriptive-analytics",
+        "label": "Prescriptive Analytics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:exploratory-data-analysis", "label": "Exploratory Data Analysis"},
-      {"@id": "urn:ngm:class:model-inference", "label": "Model Inference"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:exploratory-data-analysis",
+        "label": "Exploratory Data Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:model-inference",
+        "label": "Model Inference"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-analytics", "label": "Spatial Analytics"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "quality": 0.74,

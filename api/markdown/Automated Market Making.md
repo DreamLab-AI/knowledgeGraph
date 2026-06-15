@@ -92,7 +92,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:price-oracle-integration",
+        "@id": "urn:ngm:class:price-oracle",
         "label": "Price Oracle Integration"
       },
       {
@@ -112,10 +112,6 @@ public:: true
       {
         "@id": "urn:ngm:class:liquidity-mining",
         "label": "Liquidity Mining"
-      },
-      {
-        "@id": "urn:ngm:class:token-accessibility",
-        "label": "Token Accessibility"
       }
     ]
   },

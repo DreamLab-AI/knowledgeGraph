@@ -38,53 +38,117 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
-      {"@id": "urn:ngm:class:ecdsa", "label": "ECDSA"},
-      {"@id": "urn:ngm:class:schnorr-signature", "label": "Schnorr Signature"},
-      {"@id": "urn:ngm:class:finite-field-arithmetic", "label": "Finite Field Arithmetic"}
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "@id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "@id": "urn:ngm:class:finite-field-arithmetic",
+        "label": "Finite Field Arithmetic"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
-      {"@id": "urn:ngm:class:bitcoin-transaction", "label": "Bitcoin Transaction"},
-      {"@id": "urn:ngm:class:wallet-address-derivation", "label": "Wallet Address Derivation"},
-      {"@id": "urn:ngm:class:taproot", "label": "Taproot"},
-      {"@id": "urn:ngm:class:threshold-signature", "label": "Threshold Signature"}
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-transaction",
+        "label": "Bitcoin Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:private-key", "label": "Private Key"},
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:random-number-generation", "label": "Random Number Generation"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:sec-2-standard", "label": "SEC 2 Standard"}
-    ],
-    "standardizedBy": [
-      {"@id": "urn:ngm:class:standards-for-efficient-cryptography-group", "label": "Standards for Efficient Cryptography Group"}
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:nist-p-256", "label": "NIST P-256"},
-      {"@id": "urn:ngm:class:ed25519", "label": "Ed25519"},
-      {"@id": "urn:ngm:class:curve25519", "label": "Curve25519"}
+      {
+        "@id": "urn:ngm:class:ed25519",
+        "label": "Ed25519"
+      },
+      {
+        "@id": "urn:ngm:class:curve25519",
+        "label": "Curve25519"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:bitcoin", "label": "Bitcoin"},
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
-      {"@id": "urn:ngm:class:nostr-protocol", "label": "Nostr Protocol"},
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"}
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:multi-party-computation", "label": "Multi-Party Computation"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:key-derivation-function", "label": "Key Derivation Function"},
-      {"@id": "urn:ngm:class:hierarchical-deterministic-wallet", "label": "Hierarchical Deterministic Wallet"},
-      {"@id": "urn:ngm:class:blockchain-security", "label": "Blockchain Security"}
+      {
+        "@id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
+      },
+      {
+        "@id": "urn:ngm:class:hierarchical-deterministic-wallet",
+        "label": "Hierarchical Deterministic Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain Security"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:secg-secp256k1", "label": "SECG secp256k1"}
+    {
+      "@id": "urn:ngm:class:secg-secp256k1",
+      "label": "SECG secp256k1"
+    }
   ],
   "quality": 0.74,
   "provenance": {

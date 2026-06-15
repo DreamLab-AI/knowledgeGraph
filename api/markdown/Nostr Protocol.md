@@ -238,11 +238,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:nip-architecture",
-        "label": "NIP Architecture"
-      },
-      {
-        "@id": "urn:ngm:class:nostr-client",
+        "@id": "urn:ngm:class:nostr",
         "label": "Nostr Client"
       },
       {
@@ -282,7 +278,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:agent-to-agent-communication",
+        "@id": "urn:ngm:class:inter-agent-communication",
         "label": "Agent-to-Agent Communication"
       },
       {
@@ -294,39 +290,27 @@ public:: true
         "label": "Data Vending Machine"
       },
       {
-        "@id": "urn:ngm:class:lightning-zap-payments",
+        "@id": "urn:ngm:class:lightning-network",
         "label": "Lightning Zap Payments"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:nip-01-core-protocol",
-        "label": "NIP-01 Core Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:nip-05-identity-verification",
+        "@id": "urn:ngm:class:identity-verification",
         "label": "NIP-05 Identity Verification"
       },
       {
-        "@id": "urn:ngm:class:nip-47-wallet-connect",
-        "label": "NIP-47 Wallet Connect"
-      },
-      {
-        "@id": "urn:ngm:class:nip-90-data-vending-machines",
-        "label": "NIP-90 Data Vending Machines"
-      },
-      {
-        "@id": "urn:ngm:class:cryptographic-identity-system",
+        "@id": "urn:ngm:class:identity-system",
         "label": "Cryptographic Identity System"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-ecosystem",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin Ecosystem"
       },
       {
-        "@id": "urn:ngm:class:decentralised-social-web",
+        "@id": "urn:ngm:class:decentralised-web",
         "label": "Decentralised Social Web"
       }
     ]

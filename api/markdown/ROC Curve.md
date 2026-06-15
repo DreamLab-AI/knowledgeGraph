@@ -140,12 +140,8 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:binary-classification",
+        "@id": "urn:ngm:class:classification",
         "label": "Binary Classification"
-      },
-      {
-        "@id": "urn:ngm:class:probabilistic-classifier",
-        "label": "Probabilistic Classifier"
       },
       {
         "@id": "urn:ngm:class:confusion-matrix",
@@ -180,16 +176,6 @@ public:: true
         "label": "Classification Threshold"
       }
     ],
-    "uses": [
-      {
-        "@id": "urn:ngm:class:signal-detection-theory",
-        "label": "Signal Detection Theory"
-      },
-      {
-        "@id": "urn:ngm:class:youdens-index",
-        "label": "Youden's Index"
-      }
-    ],
     "supports": [
       {
         "@id": "urn:ngm:class:model-selection",
@@ -212,7 +198,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:medical-diagnostics",
+        "@id": "urn:ngm:class:medical-diagnosis-ai",
         "label": "Medical Diagnostics"
       },
       {

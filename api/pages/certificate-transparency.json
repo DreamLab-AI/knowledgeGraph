@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -37,10 +37,6 @@
         "label": "Audit Trail"
       },
       {
-        "id": "urn:ngm:class:phishing-detection",
-        "label": "Phishing Detection"
-      },
-      {
         "id": "urn:ngm:class:security-monitoring",
         "label": "Security Monitoring"
       },
@@ -51,36 +47,15 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:web-pki",
-        "label": "Web PKI"
-      },
-      {
         "id": "urn:ngm:class:domain-name-system",
         "label": "Domain Name System"
       }
     ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:rfc-6962",
-        "label": "RFC 6962"
-      },
-      {
-        "id": "urn:ngm:class:rfc-9162",
-        "label": "RFC 9162"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:http-public-key-pinning",
-        "label": "HTTP Public Key Pinning"
-      },
       {
         "id": "urn:ngm:class:ocsp",
         "label": "OCSP"
-      },
-      {
-        "id": "urn:ngm:class:dane",
-        "label": "DANE"
       }
     ],
     "bridgesTo": [
@@ -139,14 +114,6 @@
       {
         "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public-Key Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:signed-certificate-timestamp",
-        "label": "Signed Certificate Timestamp"
-      },
-      {
-        "id": "urn:ngm:class:subdomain-takeover",
-        "label": "Subdomain Takeover"
       }
     ]
   },

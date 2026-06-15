@@ -110,10 +110,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:content-verification",
-        "label": "Content Verification"
-      },
-      {
         "@id": "urn:ngm:class:deepfake-detection",
         "label": "Deepfake Detection"
       },

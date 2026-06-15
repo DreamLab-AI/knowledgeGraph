@@ -37,49 +37,119 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:language-understanding", "label": "Language Understanding"},
-    {"@id": "urn:ngm:class:nlu", "label": "NLU"}
+    {
+      "@id": "urn:ngm:class:language-understanding",
+      "label": "Language Understanding"
+    },
+    {
+      "@id": "urn:ngm:class:nlu",
+      "label": "NLU"
+    }
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:computational-linguistics", "label": "Computational Linguistics"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:computational-linguistics",
+        "label": "Computational Linguistics"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"},
-      {"@id": "urn:ngm:class:semantic-role-labelling", "label": "Semantic Role Labelling"},
-      {"@id": "urn:ngm:class:coreference-resolution", "label": "Coreference Resolution"},
-      {"@id": "urn:ngm:class:intent-classification", "label": "Intent Classification"},
-      {"@id": "urn:ngm:class:relation-extraction", "label": "Relation Extraction"}
+      {
+        "@id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:coreference-resolution",
+        "label": "Coreference Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:intent-classification",
+        "label": "Intent Classification"
+      },
+      {
+        "@id": "urn:ngm:class:relation-extraction",
+        "label": "Relation Extraction"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:word-embedding", "label": "Word Embedding"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:word-embedding",
+        "label": "Word Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:semantic-parsing", "label": "Semantic Parsing"},
-      {"@id": "urn:ngm:class:syntactic-parsing", "label": "Syntactic Parsing"}
+      {
+        "@id": "urn:ngm:class:semantic-parsing",
+        "label": "Semantic Parsing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
-      {"@id": "urn:ngm:class:sentiment-analysis", "label": "Sentiment Analysis"},
-      {"@id": "urn:ngm:class:dialogue-management", "label": "Dialogue Management"},
-      {"@id": "urn:ngm:class:information-extraction", "label": "Information Extraction"},
-      {"@id": "urn:ngm:class:machine-translation", "label": "Machine Translation"}
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "@id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:dialogue-management",
+        "label": "Dialogue Management"
+      },
+      {
+        "@id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:natural-language-generation", "label": "Natural Language Generation"}
+      {
+        "@id": "urn:ngm:class:natural-language-generation",
+        "label": "Natural Language Generation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"}
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      }
     ]
   },
   "quality": 0.74,

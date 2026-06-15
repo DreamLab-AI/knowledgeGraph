@@ -77,10 +77,6 @@ public:: true
         "label": "Audit Committee"
       },
       {
-        "@id": "urn:ngm:class:remuneration-policy",
-        "label": "Remuneration Policy"
-      },
-      {
         "@id": "urn:ngm:class:shareholder-rights",
         "label": "Shareholder Rights"
       }
@@ -137,10 +133,6 @@ public:: true
       {
         "@id": "urn:ngm:class:governance-code",
         "label": "Governance Code"
-      },
-      {
-        "@id": "urn:ngm:class:listing-rules",
-        "label": "Listing Rules"
       }
     ],
     "standardizedBy": [

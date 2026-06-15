@@ -23,53 +23,135 @@ public:: true
   "definition": "Robot manipulation is the sub-field of robotics concerned with the planning and execution of purposeful physical interactions between robotic systems and objects in the world, encompassing grasping, assembly, in-hand manipulation, and tool use. It integrates kinematics, dynamics, perception, and motion planning to move objects from one configuration to another while adapting to uncertainty in object shape, pose, surface properties, and environmental dynamics. Robust manipulation requires coordinating end-effectors, force-torque sensing, and real-time control loops to achieve reliable contact-rich behaviour. The field bridges classical planning and modern machine learning, increasingly leveraging deep visuomotor policies and foundation models trained on large-scale demonstration data.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:manipulation", "label": "Manipulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:manipulation",
+      "label": "Manipulation"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:grasp-planning", "label": "Grasp Planning"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"},
-      {"@id": "urn:ngm:class:in-hand-manipulation", "label": "In-Hand Manipulation"}
+      {
+        "@id": "urn:ngm:class:grasp-planning",
+        "label": "Grasp Planning"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      },
+      {
+        "@id": "urn:ngm:class:in-hand-manipulation",
+        "label": "In-Hand Manipulation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
-      {"@id": "urn:ngm:class:force-control", "label": "Force Control"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:point-cloud-processing", "label": "Point Cloud Processing"},
-      {"@id": "urn:ngm:class:impedance-control", "label": "Impedance Control"}
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      },
+      {
+        "@id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:robot-perception", "label": "Robot Perception"},
-      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"},
-      {"@id": "urn:ngm:class:contact-mechanics", "label": "Contact Mechanics"}
+      {
+        "@id": "urn:ngm:class:robot-perception",
+        "label": "Robot Perception"
+      },
+      {
+        "@id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:contact-mechanics",
+        "label": "Contact Mechanics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:robot-learning", "label": "Robot Learning"},
-      {"@id": "urn:ngm:class:surgical-robotics", "label": "Surgical Robotics"},
-      {"@id": "urn:ngm:class:warehouse-automation", "label": "Warehouse Automation"}
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:robot-learning",
+        "label": "Robot Learning"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:object-manipulation", "label": "Object Manipulation"},
-      {"@id": "urn:ngm:class:industrial-manipulation", "label": "Industrial Manipulation"},
-      {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"},
-      {"@id": "urn:ngm:class:bimanual-manipulation", "label": "Bimanual Manipulation"},
-      {"@id": "urn:ngm:class:sim-to-real-transfer", "label": "Sim-to-Real Transfer"}
+      {
+        "@id": "urn:ngm:class:object-manipulation",
+        "label": "Object Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-manipulation",
+        "label": "Industrial Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "@id": "urn:ngm:class:sim-to-real-transfer",
+        "label": "Sim-to-Real Transfer"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:robotic-arm", "label": "Robotic Arm"},
-      {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"}
+      {
+        "@id": "urn:ngm:class:robotic-arm",
+        "label": "Robotic Arm"
+      },
+      {
+        "@id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:imitation-learning", "label": "Imitation Learning"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:robot-locomotion", "label": "Robot Locomotion"}
+      {
+        "@id": "urn:ngm:class:robot-locomotion",
+        "label": "Robot Locomotion"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:robotic-manipulation", "label": "Robotic Manipulation"}
+    {
+      "@id": "urn:ngm:class:robotic-manipulation",
+      "label": "Robotic Manipulation"
+    }
   ],
   "quality": 0.74,
   "provenance": {

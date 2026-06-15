@@ -71,18 +71,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:voxedit",
-        "label": "VoxEdit"
-      },
-      {
-        "@id": "urn:ngm:class:game-maker",
-        "label": "Game Maker"
-      },
-      {
-        "@id": "urn:ngm:class:sand-token",
-        "label": "SAND Token"
-      },
-      {
         "@id": "urn:ngm:class:land-nft",
         "label": "LAND NFT"
       }
@@ -125,7 +113,7 @@ public:: true
         "label": "User-Generated Content"
       },
       {
-        "@id": "urn:ngm:class:play-to-earn",
+        "@id": "urn:ngm:class:play-to-earn-p2-e",
         "label": "Play-to-Earn"
       },
       {

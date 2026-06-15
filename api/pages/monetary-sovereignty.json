@@ -22,10 +22,6 @@
         "label": "Central Bank Digital Currency"
       },
       {
-        "id": "urn:ngm:class:currency-issuance",
-        "label": "Currency Issuance"
-      },
-      {
         "id": "urn:ngm:class:monetary-policy",
         "label": "Monetary Policy"
       }
@@ -36,19 +32,11 @@
         "label": "Central Bank"
       },
       {
-        "id": "urn:ngm:class:legal-tender-framework",
-        "label": "Legal Tender Framework"
-      },
-      {
-        "id": "urn:ngm:class:financial-regulatory-authority",
+        "id": "urn:ngm:class:regulatory-authority",
         "label": "Financial Regulatory Authority"
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:national-financial-control",
-        "label": "National Financial Control"
-      },
       {
         "id": "urn:ngm:class:sanctions-policy",
         "label": "Sanctions Policy"

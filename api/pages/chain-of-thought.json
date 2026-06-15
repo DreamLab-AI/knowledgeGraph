@@ -18,15 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:zero-shot-chain-of-thought",
-        "label": "Zero-Shot Chain of Thought"
-      },
-      {
         "id": "urn:ngm:class:self-consistency",
         "label": "Self-Consistency"
       },
       {
-        "id": "urn:ngm:class:tree-of-thought",
+        "id": "urn:ngm:class:tree-of-thoughts",
         "label": "Tree of Thought"
       },
       {

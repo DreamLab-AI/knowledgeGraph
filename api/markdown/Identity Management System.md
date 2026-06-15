@@ -310,28 +310,16 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:authorisation-engine",
-        "label": "Authorisation Engine"
-      },
-      {
         "@id": "urn:ngm:class:directory-service",
         "label": "Directory Service"
-      },
-      {
-        "@id": "urn:ngm:class:mfa-service",
-        "label": "MFA Service"
       },
       {
         "@id": "urn:ngm:class:policy-decision-point",
         "label": "Policy Decision Point"
       },
       {
-        "@id": "urn:ngm:class:privilege-access-management",
+        "@id": "urn:ngm:class:privileged-access-management",
         "label": "Privilege Access Management"
-      },
-      {
-        "@id": "urn:ngm:class:provisioning-engine",
-        "label": "Provisioning Engine"
       },
       {
         "@id": "urn:ngm:class:session-manager",
@@ -394,10 +382,6 @@ public:: true
         "label": "Single Sign-On"
       },
       {
-        "@id": "urn:ngm:class:user-lifecycle-management",
-        "label": "User Lifecycle Management"
-      },
-      {
         "@id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Architecture"
       },
@@ -411,10 +395,6 @@ public:: true
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:fapi-2-0",
-        "label": "FAPI 2.0"
-      },
       {
         "@id": "urn:ngm:class:fido2",
         "label": "FIDO2"
@@ -434,10 +414,6 @@ public:: true
       {
         "@id": "urn:ngm:class:saml-2-0",
         "label": "SAML 2.0"
-      },
-      {
-        "@id": "urn:ngm:class:scim-2-0",
-        "label": "SCIM 2.0"
       },
       {
         "@id": "urn:ngm:class:web-authn",

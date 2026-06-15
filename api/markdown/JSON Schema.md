@@ -38,50 +38,115 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:json-data-interchange-format", "label": "JSON Data Interchange Format"},
-      {"@id": "urn:ngm:class:schema-validation", "label": "Schema Validation"}
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format",
+        "label": "JSON Data Interchange Format"
+      },
+      {
+        "@id": "urn:ngm:class:schema-validation",
+        "label": "Schema Validation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
-      {"@id": "urn:ngm:class:credential-schema", "label": "Credential Schema"},
-      {"@id": "urn:ngm:class:api-contract-testing", "label": "API Contract Testing"},
-      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"},
-      {"@id": "urn:ngm:class:form-generation", "label": "Form Generation"}
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:credential-schema",
+        "label": "Credential Schema"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:ietf-standard", "label": "IETF Standard"},
-      {"@id": "urn:ngm:class:declarative-constraint-specification", "label": "Declarative Constraint Specification"}
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF Standard"
+      },
+      {
+        "@id": "urn:ngm:class:constraint-specification",
+        "label": "Declarative Constraint Specification"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:keyword-vocabulary", "label": "Keyword Vocabulary"},
-      {"@id": "urn:ngm:class:regular-expression", "label": "Regular Expression"},
-      {"@id": "urn:ngm:class:uri-reference", "label": "URI Reference"}
+      {
+        "@id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Keyword Vocabulary"
+      },
+      {
+        "@id": "urn:ngm:class:regular-expression",
+        "label": "Regular Expression"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:openapi", "label": "OpenAPI"},
-      {"@id": "urn:ngm:class:asyncapi", "label": "AsyncAPI"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"}
+      {
+        "@id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
+      },
+      {
+        "@id": "urn:ngm:class:asyncapi",
+        "label": "AsyncAPI"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:xml-schema-definition", "label": "XML Schema Definition"},
-      {"@id": "urn:ngm:class:apache-avro", "label": "Apache Avro"},
-      {"@id": "urn:ngm:class:protocol-buffers", "label": "Protocol Buffers"}
+      {
+        "@id": "urn:ngm:class:xml-schema-definition",
+        "label": "XML Schema Definition"
+      },
+      {
+        "@id": "urn:ngm:class:apache-avro",
+        "label": "Apache Avro"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-buffers",
+        "label": "Protocol Buffers"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:data-format", "label": "Data Format"},
-      {"@id": "urn:ngm:class:open-api-specification", "label": "OpenAPI Specification"},
-      {"@id": "urn:ngm:class:graphql-schema", "label": "GraphQL Schema"},
-      {"@id": "urn:ngm:class:schema-language", "label": "Schema Language"}
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      },
+      {
+        "@id": "urn:ngm:class:open-api-specification",
+        "label": "OpenAPI Specification"
+      },
+      {
+        "@id": "urn:ngm:class:graphql-schema",
+        "label": "GraphQL Schema"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:infrastructure-as-code", "label": "Infrastructure as Code"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:json-validation-schema", "label": "JSON Validation Schema"}
+    {
+      "@id": "urn:ngm:class:json-validation-schema",
+      "label": "JSON Validation Schema"
+    }
   ],
   "quality": 0.72,
   "provenance": {

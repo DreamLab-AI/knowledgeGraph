@@ -38,53 +38,113 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:analogue-to-digital-conversion", "label": "Analogue-to-Digital Conversion"},
-      {"@id": "urn:ngm:class:instrumentation-amplifier", "label": "Instrumentation Amplifier"},
-      {"@id": "urn:ngm:class:anti-aliasing-filter", "label": "Anti-Aliasing Filter"},
-      {"@id": "urn:ngm:class:galvanic-isolation", "label": "Galvanic Isolation"},
-      {"@id": "urn:ngm:class:calibration", "label": "Calibration"}
+      {
+        "@id": "urn:ngm:class:analogue-to-digital-conversion",
+        "label": "Analogue-to-Digital Conversion"
+      },
+      {
+        "@id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:data-acquisition", "label": "Data Acquisition"},
-      {"@id": "urn:ngm:class:robo-perception", "label": "Perception and Sensing"}
+      {
+        "@id": "urn:ngm:class:data-acquisition",
+        "label": "Data Acquisition"
+      },
+      {
+        "@id": "urn:ngm:class:robo-perception",
+        "label": "Perception and Sensing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:sensor", "label": "Sensor"},
-      {"@id": "urn:ngm:class:analogue-circuit", "label": "Analogue Circuit"}
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"},
-      {"@id": "urn:ngm:class:closed-loop-control", "label": "Closed-Loop Control"},
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "@id": "urn:ngm:class:closed-loop-control",
+        "label": "Closed-Loop Control"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:imu", "label": "IMU"},
-      {"@id": "urn:ngm:class:digital-signal-processing", "label": "Digital Signal Processing"},
-      {"@id": "urn:ngm:class:fir-filter", "label": "FIR Filter"},
-      {"@id": "urn:ngm:class:iir-filter", "label": "IIR Filter"}
+      {
+        "@id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"},
-      {"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"}
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:raw-sensor-data", "label": "Raw Sensor Data"}
+      {
+        "@id": "urn:ngm:class:sensor-data",
+        "label": "Raw Sensor Data"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:accelerometer", "label": "Accelerometer"},
-      {"@id": "urn:ngm:class:force-torque-sensor", "label": "Force Torque Sensor"},
-      {"@id": "urn:ngm:class:noise-reduction", "label": "Noise Reduction"},
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"}
+      {
+        "@id": "urn:ngm:class:accelerometer",
+        "label": "Accelerometer"
+      },
+      {
+        "@id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force Torque Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:noise-reduction",
+        "label": "Noise Reduction"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:edge-inference", "label": "Edge Inference"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:edge-inference",
+        "label": "Edge Inference"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:sensor-signal-processing", "label": "Sensor Signal Processing"}
+    {
+      "@id": "urn:ngm:class:sensor-signal-processing",
+      "label": "Sensor Signal Processing"
+    }
   ],
   "quality": 0.74,
   "provenance": {

@@ -24,54 +24,140 @@ alias:: Blockchain-Security
   "definition": "Blockchain security is the multidisciplinary field concerned with protecting distributed ledger systems against attacks on their consensus mechanisms, smart contract logic, cryptographic primitives, and network topology, while preserving the properties of immutability, censorship resistance, and trustless operation. It encompasses threat modelling, formal verification of on-chain code, cryptographic auditing, and economic game-theory analysis to prevent incentive manipulation. The discipline extends across permissionless and permissioned blockchain architectures, addressing layer-specific attack surfaces from peer-to-peer networking through execution environments to cross-chain interoperability bridges.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:distributed-ledger-security", "label": "Distributed Ledger Security"},
-    {"@id": "urn:ngm:class:decentralised-system-security", "label": "Decentralised System Security"}
+    {
+      "@id": "urn:ngm:class:distributed-ledger-security",
+      "label": "Distributed Ledger Security"
+    },
+    {
+      "@id": "urn:ngm:class:decentralised-system-security",
+      "label": "Decentralised System Security"
+    }
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:distributed-systems-security", "label": "Distributed Systems Security"}
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems-security",
+        "label": "Distributed Systems Security"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:smart-contract-audit", "label": "Smart Contract Audit"},
-      {"@id": "urn:ngm:class:consensus-security", "label": "Consensus Security"},
-      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"}
+      {
+        "@id": "urn:ngm:class:smart-contract-audit",
+        "label": "Smart Contract Audit"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-security",
+        "label": "Consensus Security"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"}
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:trustless-system", "label": "Trustless System"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:immutability", "label": "Immutability"}
+      {
+        "@id": "urn:ngm:class:trustless-system",
+        "label": "Trustless System"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:multi-signature-scheme", "label": "Multi-Signature Scheme"},
-      {"@id": "urn:ngm:class:oracle-network", "label": "Oracle Network"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:multi-signature",
+        "label": "Multi-Signature Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:51-attack", "label": "51% Attack"},
-      {"@id": "urn:ngm:class:sybil-attack", "label": "Sybil Attack"},
-      {"@id": "urn:ngm:class:double-spending", "label": "Double Spending"},
-      {"@id": "urn:ngm:class:reentrancy-attack", "label": "Reentrancy Attack"}
+      {
+        "@id": "urn:ngm:class:51-attack",
+        "label": "51% Attack"
+      },
+      {
+        "@id": "urn:ngm:class:sybil-attack",
+        "label": "Sybil Attack"
+      },
+      {
+        "@id": "urn:ngm:class:double-spending",
+        "label": "Double Spending"
+      },
+      {
+        "@id": "urn:ngm:class:reentrancy-attack",
+        "label": "Reentrancy Attack"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"},
-      {"@id": "urn:ngm:class:miner-extractable-value", "label": "Miner Extractable Value"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      },
+      {
+        "@id": "urn:ngm:class:miner-extractable-value",
+        "label": "Miner Extractable Value"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-security", "label": "AI Security"},
-      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"}
+      {
+        "@id": "urn:ngm:class:ai-security",
+        "label": "AI Security"
+      },
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist-cybersecurity-framework", "label": "NIST Cybersecurity Framework"}
+      {
+        "@id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      }
     ]
   },
   "quality": 0.76,

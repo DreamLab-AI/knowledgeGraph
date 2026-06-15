@@ -41,7 +41,7 @@
         "label": "Inclusive Participation"
       },
       {
-        "id": "urn:ngm:class:digital-equity",
+        "id": "urn:ngm:class:digital-technology-access-equity",
         "label": "Digital Equity"
       },
       {
@@ -100,16 +100,12 @@
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:wcag",
+        "id": "urn:ngm:class:wcag-2-2",
         "label": "WCAG"
       },
       {
         "id": "urn:ngm:class:wai-aria",
         "label": "WAI-ARIA"
-      },
-      {
-        "id": "urn:ngm:class:european-accessibility-act",
-        "label": "European Accessibility Act"
       }
     ],
     "partOf": [],

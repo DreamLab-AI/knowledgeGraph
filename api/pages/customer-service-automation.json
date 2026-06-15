@@ -28,25 +28,13 @@
       {
         "id": "urn:ngm:class:virtual-agent",
         "label": "Virtual Agent"
-      },
-      {
-        "id": "urn:ngm:class:escalation-management",
-        "label": "Escalation Management"
       }
     ],
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:omnichannel-support",
+        "id": "urn:ngm:class:omnichannel",
         "label": "Omnichannel Support"
-      },
-      {
-        "id": "urn:ngm:class:self-service-portal",
-        "label": "Self-Service Portal"
-      },
-      {
-        "id": "urn:ngm:class:intelligent-ticket-routing",
-        "label": "Intelligent Ticket Routing"
       }
     ],
     "dependsOn": [
@@ -70,11 +58,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:human-agent-assistance",
-        "label": "Human Agent Assistance"
-      },
-      {
-        "id": "urn:ngm:class:rule-based-automation",
+        "id": "urn:ngm:class:automation",
         "label": "Rule-Based Automation"
       }
     ],

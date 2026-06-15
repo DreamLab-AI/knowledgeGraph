@@ -56,51 +56,129 @@ alias:: DistributedSystems
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:replication", "label": "Replication"},
-      {"@id": "urn:ngm:class:message-passing", "label": "Message Passing"},
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:replication",
+        "label": "Replication"
+      },
+      {
+        "@id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
-      {"@id": "urn:ngm:class:clock-synchronisation", "label": "Clock Synchronisation"}
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:clock-synchronization",
+        "label": "Clock Synchronisation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:horizontal-scalability", "label": "Horizontal Scalability"},
-      {"@id": "urn:ngm:class:high-availability", "label": "High Availability"}
+      {
+        "@id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:horizontal-scalability",
+        "label": "Horizontal Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:cap-theorem", "label": "CAP Theorem"},
-      {"@id": "urn:ngm:class:eventual-consistency", "label": "Eventual Consistency"}
+      {
+        "@id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "@id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:remote-procedure-call", "label": "Remote Procedure Call"},
-      {"@id": "urn:ngm:class:service-discovery", "label": "Service Discovery"}
+      {
+        "@id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      },
+      {
+        "@id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:stream-processing", "label": "Stream Processing"}
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:centralised-computing", "label": "Centralised Computing"},
-      {"@id": "urn:ngm:class:monolithic-architecture", "label": "Monolithic Architecture"}
+      {
+        "@id": "urn:ngm:class:centralised-computing",
+        "label": "Centralised Computing"
+      },
+      {
+        "@id": "urn:ngm:class:monolithic-architecture",
+        "label": "Monolithic Architecture"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:decentralised-governance", "label": "Decentralised Governance"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+      {
+        "@id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
-    {"@id": "urn:ngm:class:decentralised-systems", "label": "Decentralised Systems"}
+    {
+      "@id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "@id": "urn:ngm:class:decentralised-systems",
+      "label": "Decentralised Systems"
+    }
   ],
   "quality": 0.72,
   "provenance": {

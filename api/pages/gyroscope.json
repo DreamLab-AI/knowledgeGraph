@@ -19,10 +19,6 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:bias-compensation",
-        "label": "Bias Compensation"
-      },
-      {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
       }
@@ -31,14 +27,6 @@
       {
         "id": "urn:ngm:class:balance-control",
         "label": "Balance Control"
-      },
-      {
-        "id": "urn:ngm:class:drone-stabilisation",
-        "label": "Drone Stabilisation"
-      },
-      {
-        "id": "urn:ngm:class:orientation-reference",
-        "label": "Orientation Reference"
       }
     ],
     "dependsOn": [],
@@ -59,10 +47,6 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [
-      {
-        "id": "urn:ngm:class:attitude-determination",
-        "label": "Attitude Determination"
-      },
       {
         "id": "urn:ngm:class:inertial-measurement-unit",
         "label": "Inertial Measurement Unit"

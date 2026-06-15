@@ -62,7 +62,7 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:unified-metaverse",
+        "@id": "urn:ngm:class:metaverse",
         "label": "Unified Metaverse"
       }
     ],

@@ -73,7 +73,7 @@ public:: true
         "label": "Self-Organisation"
       },
       {
-        "@id": "urn:ngm:class:emergent-behaviour",
+        "@id": "urn:ngm:class:emergent-behavior",
         "label": "Emergent Behaviour"
       }
     ],
@@ -87,10 +87,6 @@ public:: true
       {
         "@id": "urn:ngm:class:local-interaction-rules",
         "label": "Local Interaction Rules"
-      },
-      {
-        "@id": "urn:ngm:class:decentralised-control",
-        "label": "Decentralised Control"
       }
     ],
     "enables": [
@@ -109,10 +105,6 @@ public:: true
       {
         "@id": "urn:ngm:class:ant-colony-optimisation",
         "label": "Ant Colony Optimisation"
-      },
-      {
-        "@id": "urn:ngm:class:particle-swarm-optimisation",
-        "label": "Particle Swarm Optimisation"
       }
     ],
     "dependsOn": [
@@ -121,44 +113,26 @@ public:: true
         "label": "Multi-Agent Systems"
       },
       {
-        "@id": "urn:ngm:class:agent-communication",
+        "@id": "urn:ngm:class:inter-agent-communication",
         "label": "Agent Communication"
-      }
-    ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:bio-inspired-computing",
-        "label": "Bio-Inspired Computing"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:positive-feedback-mechanisms",
+        "@id": "urn:ngm:class:positive-feedback",
         "label": "Positive Feedback Mechanisms"
-      },
-      {
-        "@id": "urn:ngm:class:pheromone-signalling",
-        "label": "Pheromone Signalling"
       }
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:fault-tolerant-systems",
+        "@id": "urn:ngm:class:fault-tolerance-system",
         "label": "Fault-Tolerant Systems"
-      },
-      {
-        "@id": "urn:ngm:class:scalable-coordination",
-        "label": "Scalable Coordination"
       }
     ],
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:centralised-control",
         "label": "Centralised Control"
-      },
-      {
-        "@id": "urn:ngm:class:hierarchical-planning",
-        "label": "Hierarchical Planning"
       }
     ],
     "bridgesTo": [
@@ -177,16 +151,8 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:evolutionary-algorithms",
-        "label": "Evolutionary Algorithms"
-      },
-      {
         "@id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
-      },
-      {
-        "@id": "urn:ngm:class:flocking-behaviour",
-        "label": "Flocking Behaviour"
       }
     ]
   },

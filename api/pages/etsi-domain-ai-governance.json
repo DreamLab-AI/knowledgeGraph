@@ -23,16 +23,7 @@
       }
     ],
     "requires": [],
-    "enables": [
-      {
-        "id": "urn:ngm:class:ai-ethics-classification",
-        "label": "AI Ethics Classification"
-      },
-      {
-        "id": "urn:ngm:class:explainability-categorization",
-        "label": "Explainability Categorization"
-      }
-    ],
+    "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],

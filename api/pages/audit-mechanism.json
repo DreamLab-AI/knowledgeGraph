@@ -20,15 +20,11 @@
       {
         "id": "urn:ngm:class:event-log",
         "label": "Event Log"
-      },
-      {
-        "id": "urn:ngm:class:tamper-evident-log",
-        "label": "Tamper-Evident Log"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:data-retention-policy",
+        "id": "urn:ngm:class:retention-policy",
         "label": "Data Retention Policy"
       },
       {
@@ -62,10 +58,6 @@
       {
         "id": "urn:ngm:class:secure-storage",
         "label": "Secure Storage"
-      },
-      {
-        "id": "urn:ngm:class:time-stamping",
-        "label": "Time Stamping"
       }
     ],
     "implements": [],
@@ -127,10 +119,6 @@
       {
         "id": "urn:ngm:class:security-information-and-event-management",
         "label": "Security Information and Event Management"
-      },
-      {
-        "id": "urn:ngm:class:governance-risk-and-compliance",
-        "label": "Governance Risk and Compliance"
       }
     ],
     "relatedTo": [

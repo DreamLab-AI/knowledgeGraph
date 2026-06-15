@@ -717,36 +717,12 @@ alias:: BC-0434-blockchain-as-a-service
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:blockchain-api-gateway",
-        "label": "Blockchain API Gateway"
-      },
-      {
-        "@id": "urn:ngm:class:certificate-authority-service",
+        "@id": "urn:ngm:class:certificate-authority",
         "label": "Certificate Authority Service"
       },
       {
-        "@id": "urn:ngm:class:consensus-service",
-        "label": "Consensus Service"
-      },
-      {
-        "@id": "urn:ngm:class:identity-management-integration",
+        "@id": "urn:ngm:class:identity-management",
         "label": "Identity Management Integration"
-      },
-      {
-        "@id": "urn:ngm:class:ledger-storage",
-        "label": "Ledger Storage"
-      },
-      {
-        "@id": "urn:ngm:class:managed-node-hosting",
-        "label": "Managed Node Hosting"
-      },
-      {
-        "@id": "urn:ngm:class:network-provisioning-templates",
-        "label": "Network Provisioning Templates"
-      },
-      {
-        "@id": "urn:ngm:class:smart-contract-deployment-pipeline",
-        "label": "Smart Contract Deployment Pipeline"
       },
       {
         "@id": "urn:ngm:class:monitoring-dashboard",
@@ -805,7 +781,7 @@ alias:: BC-0434-blockchain-as-a-service
         "label": "Digital Identity Verification"
       },
       {
-        "@id": "urn:ngm:class:permissioned-blockchain-network",
+        "@id": "urn:ngm:class:permissioned-blockchain",
         "label": "Permissioned Blockchain Network"
       },
       {
@@ -825,10 +801,6 @@ alias:: BC-0434-blockchain-as-a-service
       {
         "@id": "urn:ngm:class:crash-fault-tolerance",
         "label": "Crash Fault Tolerance"
-      },
-      {
-        "@id": "urn:ngm:class:fisco-bcos",
-        "label": "FISCO BCOS"
       },
       {
         "@id": "urn:ngm:class:quorum",
@@ -865,18 +837,6 @@ alias:: BC-0434-blockchain-as-a-service
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:aws-iam",
-        "label": "AWS IAM"
-      },
-      {
-        "@id": "urn:ngm:class:azure-active-directory",
-        "label": "Azure Active Directory"
-      },
-      {
-        "@id": "urn:ngm:class:couch-db",
-        "label": "CouchDB"
-      },
-      {
         "@id": "urn:ngm:class:g-rpc",
         "label": "gRPC"
       },
@@ -891,10 +851,6 @@ alias:: BC-0434-blockchain-as-a-service
       {
         "@id": "urn:ngm:class:kubernetes",
         "label": "Kubernetes"
-      },
-      {
-        "@id": "urn:ngm:class:level-db",
-        "label": "LevelDB"
       },
       {
         "@id": "urn:ngm:class:postgre-sql",
@@ -961,20 +917,12 @@ alias:: BC-0434-blockchain-as-a-service
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:financial-services-compliance",
-        "label": "Financial Services Compliance"
-      },
-      {
         "@id": "urn:ngm:class:gdpr-compliance",
         "label": "GDPR Compliance"
       },
       {
-        "@id": "urn:ngm:class:hipaa-compliance",
+        "@id": "urn:ngm:class:hipaa",
         "label": "HIPAA Compliance"
-      },
-      {
-        "@id": "urn:ngm:class:multi-cloud-deployment",
-        "label": "Multi-Cloud Deployment"
       },
       {
         "@id": "urn:ngm:class:sovereign-cloud",
@@ -1003,20 +951,12 @@ alias:: BC-0434-blockchain-as-a-service
         "label": "Hyperledger Foundation"
       },
       {
-        "@id": "urn:ngm:class:ietf-satp",
-        "label": "IETF SATP"
-      },
-      {
         "@id": "urn:ngm:class:iso-tc-307",
         "label": "ISO TC 307"
       },
       {
         "@id": "urn:ngm:class:lf-decentralized-trust",
         "label": "LF Decentralized Trust"
-      },
-      {
-        "@id": "urn:ngm:class:nist-sp-800-235",
-        "label": "NIST SP 800-235"
       },
       {
         "@id": "urn:ngm:class:w3-c-did-specification",

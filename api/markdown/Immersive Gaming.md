@@ -63,14 +63,7 @@ public:: true
       "label": "Digital Gaming"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:vr-gaming-experience",
-        "label": "VR Gaming Experience"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

@@ -49,7 +49,7 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:secure-multiparty-computation",
+        "id": "urn:ngm:class:secure-multi-party-computation",
         "label": "Secure Multiparty Computation"
       }
     ],

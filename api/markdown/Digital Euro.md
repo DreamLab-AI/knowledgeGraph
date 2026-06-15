@@ -23,62 +23,109 @@ public:: true
   "definition": "The digital euro is a prospective retail central bank digital currency (CBDC) to be issued by the European Central Bank, providing eurozone households and businesses with a risk-free digital form of public money usable for everyday payments alongside cash, without requiring a bank account at a commercial institution.",
   "domain": "finance",
   "maturity": "emerging",
-  "subClassOf": {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:central-bank-digital-currency",
+    "label": "Central Bank Digital Currency"
+  },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:eurozone-monetary-system", "label": "Eurozone Monetary System"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:offline-digital-euro", "label": "Offline Digital Euro"},
-      {"@id": "urn:ngm:class:digital-euro-holding-limit", "label": "Digital Euro Holding Limit"}
-    ],
-    "requires": [
-      {"@id": "urn:ngm:class:digital-euro-legislative-framework", "label": "Digital Euro Legislative Framework"},
-      {"@id": "urn:ngm:class:payment-intermediary", "label": "Payment Intermediary"}
+      {
+        "@id": "urn:ngm:class:monetary-system",
+        "label": "Eurozone Monetary System"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:risk-free-retail-payments", "label": "Risk-Free Retail Payments"},
-      {"@id": "urn:ngm:class:programmable-payments", "label": "Programmable Payments"},
-      {"@id": "urn:ngm:class:financial-inclusion", "label": "Financial Inclusion"}
+      {
+        "@id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Payments"
+      },
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:european-central-bank", "label": "European Central Bank"},
-      {"@id": "urn:ngm:class:two-tier-banking-system", "label": "Two-Tier Banking System"}
+      {
+        "@id": "urn:ngm:class:european-central-bank",
+        "label": "European Central Bank"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:monetary-sovereignty", "label": "Monetary Sovereignty"},
-      {"@id": "urn:ngm:class:ecb-digital-euro-regulation-proposal", "label": "ECB Digital Euro Regulation Proposal"}
+      {
+        "@id": "urn:ngm:class:monetary-sovereignty",
+        "label": "Monetary Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:ecb-digital-euro-regulation-proposal",
+        "label": "ECB Digital Euro Regulation Proposal"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:pseudonymous-transaction-model", "label": "Pseudonymous Transaction Model"},
-      {"@id": "urn:ngm:class:tokenised-settlement", "label": "Tokenised Settlement"}
+      {
+        "@id": "urn:ngm:class:settlement",
+        "label": "Tokenised Settlement"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:monetary-policy-transmission", "label": "Monetary Policy Transmission"},
-      {"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"}
+      {
+        "@id": "urn:ngm:class:monetary-policy-transmission",
+        "label": "Monetary Policy Transmission"
+      },
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:european-parliament", "label": "European Parliament"},
-      {"@id": "urn:ngm:class:ecb-digital-euro-regulation", "label": "ECB Digital Euro Regulation"}
+      {
+        "@id": "urn:ngm:class:european-parliament",
+        "label": "European Parliament"
+      },
+      {
+        "@id": "urn:ngm:class:ecb-digital-euro-regulation",
+        "label": "ECB Digital Euro Regulation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:e-cny", "label": "e-CNY"},
-      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
-      {"@id": "urn:ngm:class:commercial-bank-deposit", "label": "Commercial Bank Deposit"}
+      {
+        "@id": "urn:ngm:class:e-cny",
+        "label": "e-CNY"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:commercial-bank-deposit",
+        "label": "Commercial Bank Deposit"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:payment-data-privacy", "label": "Payment Data Privacy"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:data-privacy",
+        "label": "Payment Data Privacy"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cbdc-frameworks", "label": "CBDC Frameworks"},
-      {"@id": "urn:ngm:class:e-krona", "label": "e-Krona"},
-      {"@id": "urn:ngm:class:sand-dollar", "label": "Sand Dollar"}
+      {
+        "@id": "urn:ngm:class:cbdc-frameworks",
+        "label": "CBDC Frameworks"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:euro-cbdc", "label": "Euro CBDC"},
-    {"@id": "urn:ngm:class:ecb-digital-currency", "label": "ECB Digital Currency"}
+    {
+      "@id": "urn:ngm:class:euro-cbdc",
+      "label": "Euro CBDC"
+    },
+    {
+      "@id": "urn:ngm:class:ecb-digital-currency",
+      "label": "ECB Digital Currency"
+    }
   ],
   "quality": 0.72,
   "provenance": {

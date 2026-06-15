@@ -89,7 +89,7 @@ public:: true
         "label": "Distributed Ledger"
       },
       {
-        "@id": "urn:ngm:class:replicated-state-machine",
+        "@id": "urn:ngm:class:state-machine-replication",
         "label": "Replicated State Machine"
       },
       {
@@ -97,7 +97,7 @@ public:: true
         "label": "Atomic Broadcast"
       },
       {
-        "@id": "urn:ngm:class:distributed-database",
+        "@id": "urn:ngm:class:distributed-databases",
         "label": "Distributed Database"
       }
     ],
@@ -121,7 +121,7 @@ public:: true
         "label": "Raft"
       },
       {
-        "@id": "urn:ngm:class:byzantine-fault-tolerant",
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
         "label": "Byzantine Fault Tolerant"
       }
     ],

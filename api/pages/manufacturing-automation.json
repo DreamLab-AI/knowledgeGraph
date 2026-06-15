@@ -114,12 +114,8 @@
         "label": "Precision Manufacturing"
       },
       {
-        "id": "urn:ngm:class:collaborative-robotics",
+        "id": "urn:ngm:class:collaborative-systems-modality-robotics",
         "label": "Collaborative Robotics"
-      },
-      {
-        "id": "urn:ngm:class:manufacturing-execution-system",
-        "label": "Manufacturing Execution System"
       }
     ]
   },

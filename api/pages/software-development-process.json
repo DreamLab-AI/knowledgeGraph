@@ -22,10 +22,6 @@
         "label": "Requirements Engineering"
       },
       {
-        "id": "urn:ngm:class:software-design",
-        "label": "Software Design"
-      },
-      {
         "id": "urn:ngm:class:software-testing",
         "label": "Software Testing"
       },
@@ -68,7 +64,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:agile-development",
+        "id": "urn:ngm:class:agile-software-development",
         "label": "Agile Development"
       },
       {
@@ -90,10 +86,6 @@
       {
         "id": "urn:ngm:class:waterfall-model",
         "label": "Waterfall Model"
-      },
-      {
-        "id": "urn:ngm:class:ad-hoc-development",
-        "label": "Ad Hoc Development"
       }
     ],
     "bridgesTo": [

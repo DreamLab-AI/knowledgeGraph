@@ -85,14 +85,6 @@ public:: true
       {
         "@id": "urn:ngm:class:staking",
         "label": "Staking"
-      },
-      {
-        "@id": "urn:ngm:class:bonded-stake",
-        "label": "Bonded Stake"
-      },
-      {
-        "@id": "urn:ngm:class:equivocation-detection",
-        "label": "Equivocation Detection"
       }
     ],
     "enables": [
@@ -103,10 +95,6 @@ public:: true
       {
         "@id": "urn:ngm:class:byzantine-fault-tolerance",
         "label": "Byzantine Fault Tolerance"
-      },
-      {
-        "@id": "urn:ngm:class:validator-accountability",
-        "label": "Validator Accountability"
       }
     ],
     "dependsOn": [
@@ -123,10 +111,6 @@ public:: true
       {
         "@id": "urn:ngm:class:proof-of-work",
         "label": "Proof Of Work"
-      },
-      {
-        "@id": "urn:ngm:class:inactivity-leak",
-        "label": "Inactivity Leak"
       }
     ],
     "relatedTo": [
@@ -149,10 +133,6 @@ public:: true
       {
         "@id": "urn:ngm:class:block-production",
         "label": "Block Production"
-      },
-      {
-        "@id": "urn:ngm:class:unbonding-period",
-        "label": "Unbonding Period"
       }
     ],
     "bridgesTo": [

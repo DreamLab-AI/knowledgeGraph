@@ -24,50 +24,124 @@ public:: true
   "domain": "security",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:transport-layer-security", "label": "Transport Layer Security"},
-    {"@id": "urn:ngm:class:encryption-protocol", "label": "Encryption Protocol"}
+    {
+      "@id": "urn:ngm:class:transport-layer-security",
+      "label": "Transport Layer Security"
+    },
+    {
+      "@id": "urn:ngm:class:encryption-protocol",
+      "label": "Encryption Protocol"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:key-exchange", "label": "Key Exchange"},
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:elliptic-curve-diffie-hellman", "label": "Elliptic Curve Diffie-Hellman"},
-      {"@id": "urn:ngm:class:authenticated-encryption", "label": "Authenticated Encryption"},
-      {"@id": "urn:ngm:class:digital-certificate", "label": "Digital Certificate"},
-      {"@id": "urn:ngm:class:x-509", "label": "X.509"}
+      {
+        "@id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-diffie-hellman",
+        "label": "Elliptic Curve Diffie-Hellman"
+      },
+      {
+        "@id": "urn:ngm:class:authenticated-encryption",
+        "label": "Authenticated Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"},
-      {"@id": "urn:ngm:class:rfc-8446", "label": "RFC 8446"}
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:rfc-8446",
+        "label": "RFC 8446"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:quic", "label": "QUIC"},
-      {"@id": "urn:ngm:class:network-security", "label": "Network Security"},
-      {"@id": "urn:ngm:class:https", "label": "HTTPS"},
-      {"@id": "urn:ngm:class:forward-secrecy", "label": "Forward Secrecy"},
-      {"@id": "urn:ngm:class:zero-round-trip-resumption", "label": "Zero Round Trip Resumption"}
+      {
+        "@id": "urn:ngm:class:quic",
+        "label": "QUIC"
+      },
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:https",
+        "label": "HTTPS"
+      },
+      {
+        "@id": "urn:ngm:class:forward-secrecy",
+        "label": "Forward Secrecy"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:tls-1-2", "label": "TLS 1.2"},
-      {"@id": "urn:ngm:class:ssl", "label": "SSL"}
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "TLS 1.2"
+      },
+      {
+        "@id": "urn:ngm:class:ssl",
+        "label": "SSL"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:certificate-transparency", "label": "Certificate Transparency"},
-      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"},
-      {"@id": "urn:ngm:class:http-3", "label": "HTTP/3"},
-      {"@id": "urn:ngm:class:mutual-tls", "label": "Mutual TLS"}
+      {
+        "@id": "urn:ngm:class:certificate-transparency",
+        "label": "Certificate Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:http-protocol",
+        "label": "HTTP/3"
+      },
+      {
+        "@id": "urn:ngm:class:mutual-tls",
+        "label": "Mutual TLS"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:transport-layer-security-1-3", "label": "Transport Layer Security 1.3"}
+    {
+      "@id": "urn:ngm:class:transport-layer-security-1-3",
+      "label": "Transport Layer Security 1.3"
+    }
   ],
   "quality": 0.72,
   "provenance": {

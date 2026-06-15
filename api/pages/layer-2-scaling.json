@@ -70,7 +70,7 @@
         "label": "Micropayment"
       },
       {
-        "id": "urn:ngm:class:gas-optimisation",
+        "id": "urn:ngm:class:gas-optimization",
         "label": "Gas Optimisation"
       }
     ],
@@ -134,10 +134,6 @@
       {
         "id": "urn:ngm:class:eip-4844",
         "label": "EIP-4844"
-      },
-      {
-        "id": "urn:ngm:class:bridge-protocol",
-        "label": "Bridge Protocol"
       }
     ]
   },

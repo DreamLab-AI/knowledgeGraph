@@ -70,7 +70,7 @@ public:: true
         "label": "Data Exchange"
       },
       {
-        "@id": "urn:ngm:class:federated-systems",
+        "@id": "urn:ngm:class:federated-system",
         "label": "Federated Systems"
       },
       {
@@ -88,7 +88,7 @@ public:: true
         "label": "API Specification"
       },
       {
-        "@id": "urn:ngm:class:conformance-testing",
+        "@id": "urn:ngm:class:standards-conformance-testing",
         "label": "Conformance Testing"
       }
     ],
@@ -108,7 +108,7 @@ public:: true
         "label": "Communication Protocols"
       },
       {
-        "@id": "urn:ngm:class:semantic-web",
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       },
       {
@@ -132,7 +132,7 @@ public:: true
         "label": "Distributed Systems"
       },
       {
-        "@id": "urn:ngm:class:network-protocols",
+        "@id": "urn:ngm:class:network-protocol",
         "label": "Network Protocols"
       },
       {

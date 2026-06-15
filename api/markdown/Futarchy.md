@@ -23,51 +23,115 @@ public:: true
   "definition": "Futarchy is a governance mechanism proposed by economist Robin Hanson in which policy decisions are made by first defining measurable societal welfare metrics and then adopting whichever policy candidate is predicted by speculative prediction markets to maximise those metrics. Under futarchy, democratic institutions vote on the values or welfare criteria to optimise, while market prices — which aggregate information from many participants through financial incentives — determine the means by which those values are pursued, on the premise that markets are better information aggregators than committees for empirical questions about causal consequences.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": {"@id": "urn:ngm:class:voting-mechanism", "label": "Voting Mechanism"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:voting-mechanism",
+    "label": "Voting Mechanism"
+  },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"},
-      {"@id": "urn:ngm:class:collective-decision-making", "label": "Collective Decision Making"},
-      {"@id": "urn:ngm:class:on-chain-voting", "label": "On Chain Voting"},
-      {"@id": "urn:ngm:class:prediction-market", "label": "Prediction Market"},
-      {"@id": "urn:ngm:class:conditional-futures-market", "label": "Conditional Futures Market"},
-      {"@id": "urn:ngm:class:welfare-metric", "label": "Welfare Metric"}
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "@id": "urn:ngm:class:collective-decision-making",
+        "label": "Collective Decision Making"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-voting",
+        "label": "On Chain Voting"
+      },
+      {
+        "@id": "urn:ngm:class:prediction-markets",
+        "label": "Prediction Market"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"},
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
-      {"@id": "urn:ngm:class:transparent-decision-making", "label": "Transparent Decision Making"},
-      {"@id": "urn:ngm:class:information-aggregation", "label": "Information Aggregation"},
-      {"@id": "urn:ngm:class:evidence-based-policy", "label": "Evidence-Based Policy"}
+      {
+        "@id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      },
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:transparent-decision-making",
+        "label": "Transparent Decision Making"
+      },
+      {
+        "@id": "urn:ngm:class:evidence-based-policy",
+        "label": "Evidence-Based Policy"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:liquid-prediction-market", "label": "Liquid Prediction Market"},
-      {"@id": "urn:ngm:class:measurable-welfare-criterion", "label": "Measurable Welfare Criterion"},
-      {"@id": "urn:ngm:class:market-making", "label": "Market Making"}
+      {
+        "@id": "urn:ngm:class:market-making",
+        "label": "Market Making"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:quadratic-voting", "label": "Quadratic Voting"},
-      {"@id": "urn:ngm:class:conviction-voting", "label": "Conviction Voting"},
-      {"@id": "urn:ngm:class:token-weighted-voting", "label": "Token-Weighted Voting"},
-      {"@id": "urn:ngm:class:representative-democracy", "label": "Representative Democracy"}
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "@id": "urn:ngm:class:conviction-voting",
+        "label": "Conviction Voting"
+      },
+      {
+        "@id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      },
+      {
+        "@id": "urn:ngm:class:representative-democracy",
+        "label": "Representative Democracy"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:efficient-market-hypothesis", "label": "Efficient Market Hypothesis"},
-      {"@id": "urn:ngm:class:wisdom-of-crowds", "label": "Wisdom of Crowds"}
+      {
+        "@id": "urn:ngm:class:efficient-market-hypothesis",
+        "label": "Efficient Market Hypothesis"
+      },
+      {
+        "@id": "urn:ngm:class:wisdom-of-crowds",
+        "label": "Wisdom of Crowds"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:decision-market", "label": "Decision Market"},
-      {"@id": "urn:ngm:class:epistocracy", "label": "Epistocracy"},
-      {"@id": "urn:ngm:class:technocracy", "label": "Technocracy"}
+      {
+        "@id": "urn:ngm:class:decision-market",
+        "label": "Decision Market"
+      },
+      {
+        "@id": "urn:ngm:class:epistocracy",
+        "label": "Epistocracy"
+      },
+      {
+        "@id": "urn:ngm:class:technocracy",
+        "label": "Technocracy"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralized-finance", "label": "Decentralized Finance"},
-      {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"}
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:vote-on-values-bet-on-beliefs", "label": "Vote on Values, Bet on Beliefs"},
-    {"@id": "urn:ngm:class:market-based-governance", "label": "Market-Based Governance"}
+    {
+      "@id": "urn:ngm:class:vote-on-values-bet-on-beliefs",
+      "label": "Vote on Values, Bet on Beliefs"
+    },
+    {
+      "@id": "urn:ngm:class:market-based-governance",
+      "label": "Market-Based Governance"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -618,10 +618,6 @@ public:: true
         "label": "Tool Schema"
       },
       {
-        "@id": "urn:ngm:class:virtual-machine-sandbox",
-        "label": "Virtual Machine Sandbox"
-      },
-      {
         "@id": "urn:ngm:class:vision-language-model",
         "label": "Vision Language Model"
       }
@@ -630,10 +626,6 @@ public:: true
       {
         "@id": "urn:ngm:class:browser-engine",
         "label": "Browser Engine"
-      },
-      {
-        "@id": "urn:ngm:class:display-server",
-        "label": "Display Server"
       },
       {
         "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
@@ -682,20 +674,8 @@ public:: true
         "label": "Computer Use"
       },
       {
-        "@id": "urn:ngm:class:end-to-end-ui-testing",
-        "label": "End-to-End UI Testing"
-      },
-      {
-        "@id": "urn:ngm:class:form-filling-automation",
+        "@id": "urn:ngm:class:automation",
         "label": "Form Filling Automation"
-      },
-      {
-        "@id": "urn:ngm:class:visual-web-research",
-        "label": "Visual Web Research"
-      },
-      {
-        "@id": "urn:ngm:class:web-navigation",
-        "label": "Web Navigation"
       },
       {
         "@id": "urn:ngm:class:agentic-internet",
@@ -718,10 +698,6 @@ public:: true
       {
         "@id": "urn:ngm:class:reflexion",
         "label": "Reflexion"
-      },
-      {
-        "@id": "urn:ngm:class:screen2-tree-parsing",
-        "label": "Screen2Tree Parsing"
       },
       {
         "@id": "urn:ngm:class:set-of-mark-prompting",
@@ -822,7 +798,7 @@ public:: true
         "label": "Personal Assistance"
       },
       {
-        "@id": "urn:ngm:class:quality-assurance-testing",
+        "@id": "urn:ngm:class:quality-assurance",
         "label": "Quality Assurance Testing"
       },
       {
@@ -848,7 +824,7 @@ public:: true
         "label": "Chrome DevTools Protocol"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument-article-50-2024",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument-article-50",
         "label": "EU AI Act Article 50 (2024)"
       },
       {
@@ -858,10 +834,6 @@ public:: true
       {
         "@id": "urn:ngm:class:owasp-llm-top-10-2025",
         "label": "OWASP LLM Top 10 2025"
-      },
-      {
-        "@id": "urn:ngm:class:web-driver-bi-di-w3-c-2024",
-        "label": "WebDriver BiDi (W3C 2024)"
       }
     ],
     "bridgesTo": [

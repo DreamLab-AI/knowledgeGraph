@@ -130,16 +130,12 @@ public:: true
         "label": "Communication Interface"
       },
       {
-        "@id": "urn:ngm:class:input-sensors",
+        "@id": "urn:ngm:class:sensor-input",
         "label": "Input Sensors"
       },
       {
-        "@id": "urn:ngm:class:output-actuators",
+        "@id": "urn:ngm:class:actuators",
         "label": "Output Actuators"
-      },
-      {
-        "@id": "urn:ngm:class:tracking-components",
-        "label": "Tracking Components"
       },
       {
         "@id": "urn:ngm:class:haptics",
@@ -162,10 +158,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:user-input",
-        "label": "User Input"
-      },
-      {
         "@id": "urn:ngm:class:haptic-feedback",
         "label": "Haptic Feedback"
       },
@@ -176,12 +168,6 @@ public:: true
       {
         "@id": "urn:ngm:class:spatial-interaction",
         "label": "Spatial Interaction"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:interaction-system",
-        "label": "Interaction System"
       }
     ]
   },

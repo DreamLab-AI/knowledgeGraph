@@ -43,10 +43,6 @@
       {
         "id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Architecture"
-      },
-      {
-        "id": "urn:ngm:class:secure-remote-access",
-        "label": "Secure Remote Access"
       }
     ],
     "dependsOn": [
@@ -69,12 +65,7 @@
         "label": "VPN"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:plaintext-communication",
-        "label": "Plaintext Communication"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:data-governance",
@@ -103,7 +94,7 @@
         "label": "Digital Signature"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {

@@ -37,7 +37,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:mobile-money",
+        "id": "urn:ngm:class:money",
         "label": "Mobile Money"
       },
       {

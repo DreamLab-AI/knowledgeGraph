@@ -80,10 +80,6 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:ai-detection-systems",
-        "label": "AI Detection Systems"
-      },
-      {
         "@id": "urn:ngm:class:human-moderators",
         "label": "Human Moderators"
       },

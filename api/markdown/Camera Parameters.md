@@ -104,14 +104,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:object-measurement",
-        "label": "Object Measurement"
-      },
-      {
-        "@id": "urn:ngm:class:scene-localization",
-        "label": "Scene Localization"
-      },
-      {
         "@id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
       }

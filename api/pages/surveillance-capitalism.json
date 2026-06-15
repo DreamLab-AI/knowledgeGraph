@@ -32,7 +32,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:mass-data-collection",
+        "id": "urn:ngm:class:data-collection",
         "label": "Mass Data Collection"
       },
       {

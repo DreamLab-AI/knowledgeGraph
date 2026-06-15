@@ -191,50 +191,131 @@ public:: true
   },
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:neural-networks", "label": "Neural Networks"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"},
-      {"@id": "urn:ngm:class:summarisation", "label": "Summarisation"},
-      {"@id": "urn:ngm:class:translation", "label": "Translation"},
-      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:text-summarisation",
+        "label": "Summarisation"
+      },
+      {
+        "@id": "urn:ngm:class:translation",
+        "label": "Translation"
+      },
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:sampling", "label": "Sampling"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+      {
+        "@id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:autoregressive-generation", "label": "Autoregressive Generation"},
-      {"@id": "urn:ngm:class:beam-search", "label": "Beam Search"}
+      {
+        "@id": "urn:ngm:class:autoregressive-generation",
+        "label": "Autoregressive Generation"
+      },
+      {
+        "@id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"},
-      {"@id": "urn:ngm:class:latent-space", "label": "Latent Space"}
+      {
+        "@id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-latent-space",
+        "label": "Latent Space"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:speech-and-voice", "label": "Speech and Voice"}
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:speech-and-voice",
+        "label": "Speech and Voice"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks"},
-      {"@id": "urn:ngm:class:knowledge-graphing", "label": "Knowledge Graphing"}
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graphing",
+        "label": "Knowledge Graphing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:gpt", "label": "GPT"},
-      {"@id": "urn:ngm:class:deepfakes-and-fraudulent-content", "label": "Deepfakes and fraudulent content"}
+      {
+        "@id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      },
+      {
+        "@id": "urn:ngm:class:deepfakes-and-fraudulent-content",
+        "label": "Deepfakes and fraudulent content"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:natural-language-generation", "label": "Natural Language Generation"},
-    {"@id": "urn:ngm:class:language-generation", "label": "Language Generation"}
+    {
+      "@id": "urn:ngm:class:natural-language-generation",
+      "label": "Natural Language Generation"
+    },
+    {
+      "@id": "urn:ngm:class:language-generation",
+      "label": "Language Generation"
+    }
   ],
   "quality": 0.72,
   "provenance": {

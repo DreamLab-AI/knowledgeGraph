@@ -138,11 +138,11 @@ public:: true
         "label": "Accountability Framework"
       },
       {
-        "@id": "urn:ngm:class:bias-detection-protocol",
+        "@id": "urn:ngm:class:bias-detection-methods",
         "label": "Bias Detection Protocol"
       },
       {
-        "@id": "urn:ngm:class:fairness-assessment-criteria",
+        "@id": "urn:ngm:class:fairness-assessment",
         "label": "Fairness Assessment Criteria"
       },
       {
@@ -152,21 +152,17 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:ai-system-documentation",
+        "@id": "urn:ngm:class:ai-documentation-standards",
         "label": "AI System Documentation"
       },
       {
-        "@id": "urn:ngm:class:assessment-methodology",
-        "label": "Assessment Methodology"
-      },
-      {
-        "@id": "urn:ngm:class:ethical-guidelines",
+        "@id": "urn:ngm:class:ethical-framework",
         "label": "Ethical Guidelines"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:ethical-ai-deployment",
+        "@id": "urn:ngm:class:ethical-ai",
         "label": "Ethical AI Deployment"
       },
       {

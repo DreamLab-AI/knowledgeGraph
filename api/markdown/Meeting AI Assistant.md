@@ -382,24 +382,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:action-item-extraction",
-        "label": "Action Item Extraction"
-      },
-      {
         "@id": "urn:ngm:class:automatic-speech-recognition",
         "label": "Automatic Speech Recognition"
-      },
-      {
-        "@id": "urn:ngm:class:integration-connector",
-        "label": "Integration Connector"
-      },
-      {
-        "@id": "urn:ngm:class:meeting-minutes-generation",
-        "label": "Meeting Minutes Generation"
-      },
-      {
-        "@id": "urn:ngm:class:meeting-summarisation",
-        "label": "Meeting Summarisation"
       },
       {
         "@id": "urn:ngm:class:speaker-diarisation",
@@ -416,23 +400,11 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:audio-stream",
-        "label": "Audio Stream"
-      },
-      {
-        "@id": "urn:ngm:class:llm-based-text-generation",
-        "label": "LLM-based Text Generation"
-      },
-      {
-        "@id": "urn:ngm:class:meeting-platform-access",
-        "label": "Meeting Platform Access"
-      },
-      {
-        "@id": "urn:ngm:class:speaker-identity-model",
+        "@id": "urn:ngm:class:speaker-diarisation",
         "label": "Speaker Identity Model"
       },
       {
-        "@id": "urn:ngm:class:transcription-engine",
+        "@id": "urn:ngm:class:meeting-transcription",
         "label": "Transcription Engine"
       },
       {
@@ -442,33 +414,21 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:asynchronous-meeting-access",
-        "label": "Asynchronous Meeting Access"
-      },
-      {
-        "@id": "urn:ngm:class:decision-audit-trail",
+        "@id": "urn:ngm:class:audit-trail",
         "label": "Decision Audit Trail"
       },
       {
-        "@id": "urn:ngm:class:distributed-team-coordination",
+        "@id": "urn:ngm:class:tc-0080-team-coordination",
         "label": "Distributed Team Coordination"
       },
       {
         "@id": "urn:ngm:class:knowledge-preservation",
         "label": "Knowledge Preservation"
-      },
-      {
-        "@id": "urn:ngm:class:meeting-automation",
-        "label": "Meeting Automation"
-      },
-      {
-        "@id": "urn:ngm:class:post-meeting-workflow",
-        "label": "Post-Meeting Workflow"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:abstractive-summarisation",
+        "@id": "urn:ngm:class:text-summarisation",
         "label": "Abstractive Summarisation"
       },
       {
@@ -476,11 +436,7 @@ public:: true
         "label": "Automatic Speech Recognition"
       },
       {
-        "@id": "urn:ngm:class:extractive-summarisation",
-        "label": "Extractive Summarisation"
-      },
-      {
-        "@id": "urn:ngm:class:intent-detection",
+        "@id": "urn:ngm:class:intent-recognition",
         "label": "Intent Detection"
       },
       {
@@ -498,7 +454,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:diarisation-models",
+        "@id": "urn:ngm:class:speaker-diarisation",
         "label": "Diarisation Models"
       },
       {
@@ -510,11 +466,11 @@ public:: true
         "label": "Speech Processing"
       },
       {
-        "@id": "urn:ngm:class:summarisation-models",
+        "@id": "urn:ngm:class:text-summarisation",
         "label": "Summarisation Models"
       },
       {
-        "@id": "urn:ngm:class:transformer-models",
+        "@id": "urn:ngm:class:transformer",
         "label": "Transformer Models"
       },
       {
@@ -532,10 +488,6 @@ public:: true
         "label": "CRM Systems"
       },
       {
-        "@id": "urn:ngm:class:employee-monitoring",
-        "label": "Employee Monitoring"
-      },
-      {
         "@id": "urn:ngm:class:gdpr",
         "label": "GDPR"
       },
@@ -548,12 +500,8 @@ public:: true
         "label": "UK GDPR"
       },
       {
-        "@id": "urn:ngm:class:virtual-meeting-platforms",
+        "@id": "urn:ngm:class:virtual-meeting",
         "label": "Virtual Meeting Platforms"
-      },
-      {
-        "@id": "urn:ngm:class:workplace-privacy",
-        "label": "Workplace Privacy"
       },
       {
         "@id": "urn:ngm:class:knowledge-management",
@@ -562,24 +510,12 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:customer-success",
-        "label": "Customer Success"
-      },
-      {
         "@id": "urn:ngm:class:distributed-teams",
         "label": "Distributed Teams"
       },
       {
-        "@id": "urn:ngm:class:hr-performance-review",
-        "label": "HR Performance Review"
-      },
-      {
         "@id": "urn:ngm:class:remote-work",
         "label": "Remote Work"
-      },
-      {
-        "@id": "urn:ngm:class:sales-enablement",
-        "label": "Sales Enablement"
       },
       {
         "@id": "urn:ngm:class:asynchronous-collaboration",
@@ -598,10 +534,6 @@ public:: true
       {
         "@id": "urn:ngm:class:gdpr",
         "label": "GDPR"
-      },
-      {
-        "@id": "urn:ngm:class:ico-guidance-on-workplace-monitoring-2024",
-        "label": "ICO Guidance on Workplace Monitoring 2024"
       },
       {
         "@id": "urn:ngm:class:iso-iec-27001",

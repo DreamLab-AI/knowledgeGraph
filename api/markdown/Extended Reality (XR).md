@@ -183,10 +183,6 @@ alias:: Extended Reality Xr, ExtendedRealityXR
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:cross-reality-transitions",
-        "label": "Cross-Reality Transitions"
-      },
-      {
         "@id": "urn:ngm:class:immersive-experiences",
         "label": "Immersive Experiences"
       },

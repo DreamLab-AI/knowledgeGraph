@@ -126,20 +126,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:liquidity-mechanism",
+        "@id": "urn:ngm:class:liquidity",
         "label": "Liquidity Mechanism"
       },
       {
-        "@id": "urn:ngm:class:pricing-formula",
+        "@id": "urn:ngm:class:constant-product-formula",
         "label": "Pricing Formula"
-      },
-      {
-        "@id": "urn:ngm:class:reserve-pool",
-        "label": "Reserve Pool"
-      },
-      {
-        "@id": "urn:ngm:class:supply-function",
-        "label": "Supply Function"
       }
     ],
     "requires": [
@@ -148,7 +140,7 @@ public:: true
         "label": "Price Oracle"
       },
       {
-        "@id": "urn:ngm:class:reserve-token",
+        "@id": "urn:ngm:class:reserve-asset",
         "label": "Reserve Token"
       },
       {
@@ -158,16 +150,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:automated-trading",
-        "label": "Automated Trading"
-      },
-      {
-        "@id": "urn:ngm:class:continuous-liquidity",
+        "@id": "urn:ngm:class:liquidity",
         "label": "Continuous Liquidity"
-      },
-      {
-        "@id": "urn:ngm:class:predictable-pricing",
-        "label": "Predictable Pricing"
       },
       {
         "@id": "urn:ngm:class:decentralized-exchange",

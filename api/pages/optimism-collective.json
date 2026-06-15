@@ -18,18 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:token-house",
-        "label": "Token House"
-      },
-      {
-        "id": "urn:ngm:class:citizens-house",
-        "label": "Citizens' House"
-      },
-      {
-        "id": "urn:ngm:class:optimism-foundation",
-        "label": "Optimism Foundation"
-      },
-      {
         "id": "urn:ngm:class:retroactive-public-goods-funding",
         "label": "Retroactive Public Goods Funding"
       }
@@ -58,7 +46,7 @@
         "label": "Decentralized Governance"
       },
       {
-        "id": "urn:ngm:class:public-goods-funding",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
         "label": "Public Goods Funding"
       },
       {
@@ -82,7 +70,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:bicameral-governance",
+        "id": "urn:ngm:class:governance",
         "label": "Bicameral Governance"
       },
       {
@@ -92,7 +80,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:single-token-governance",
+        "id": "urn:ngm:class:governance-token",
         "label": "Single Token Governance"
       },
       {
@@ -132,7 +120,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:optimism-superchain",
+        "id": "urn:ngm:class:optimism",
         "label": "Optimism Superchain"
       }
     ],

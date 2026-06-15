@@ -126,16 +126,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:identity-node",
-        "label": "Identity Node"
-      },
-      {
         "@id": "urn:ngm:class:relationship-edge",
         "label": "Relationship Edge"
-      },
-      {
-        "@id": "urn:ngm:class:trust-attribute",
-        "label": "Trust Attribute"
       },
       {
         "@id": "urn:ngm:class:graph-database",

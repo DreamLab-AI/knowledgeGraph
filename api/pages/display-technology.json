@@ -24,10 +24,6 @@
       {
         "id": "urn:ngm:class:waveguide-optics",
         "label": "Waveguide Optics"
-      },
-      {
-        "id": "urn:ngm:class:display-driver-ic",
-        "label": "Display Driver IC"
       }
     ],
     "requires": [
@@ -125,12 +121,7 @@
         "label": "Human Computer Interaction"
       }
     ],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:display-industry-standards",
-        "label": "Display Industry Standards"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {

@@ -26,11 +26,7 @@
         "label": "Cold Chain Monitoring"
       },
       {
-        "id": "urn:ngm:class:drug-distribution-network",
-        "label": "Drug Distribution Network"
-      },
-      {
-        "id": "urn:ngm:class:serialisation-system",
+        "id": "urn:ngm:class:serialisation-format",
         "label": "Serialisation System"
       }
     ],
@@ -50,17 +46,9 @@
       {
         "id": "urn:ngm:class:gs1-standards",
         "label": "GS1 Standards"
-      },
-      {
-        "id": "urn:ngm:class:electronic-product-information",
-        "label": "Electronic Product Information"
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:counterfeit-drug-detection",
-        "label": "Counterfeit Drug Detection"
-      },
       {
         "id": "urn:ngm:class:product-recall-management",
         "label": "Product Recall Management"
@@ -71,10 +59,6 @@
       }
     ],
     "dependsOn": [
-      {
-        "id": "urn:ngm:class:api-manufacturing",
-        "label": "API Manufacturing"
-      },
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
@@ -126,10 +110,6 @@
       {
         "id": "urn:ngm:class:blockchain-provenance",
         "label": "Blockchain Provenance"
-      },
-      {
-        "id": "urn:ngm:class:antimicrobial-resistance",
-        "label": "Antimicrobial Resistance"
       },
       {
         "id": "urn:ngm:class:supply-chain-resilience",

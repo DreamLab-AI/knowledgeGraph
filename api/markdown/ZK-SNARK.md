@@ -108,10 +108,6 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:rank-1-constraint-system",
-        "label": "Rank-1 Constraint System"
-      },
-      {
         "@id": "urn:ngm:class:polynomial-commitment",
         "label": "Polynomial Commitment"
       },
@@ -136,16 +132,12 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:zk-stark",
+        "@id": "urn:ngm:class:zk-starks",
         "label": "ZK-STARK"
       },
       {
         "@id": "urn:ngm:class:interactive-proof",
         "label": "Interactive Proof"
-      },
-      {
-        "@id": "urn:ngm:class:bulletproof",
-        "label": "Bulletproof"
       }
     ],
     "bridgesTo": [
@@ -156,10 +148,6 @@ public:: true
       {
         "@id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
-      },
-      {
-        "@id": "urn:ngm:class:machine-learning-privacy",
-        "label": "Machine Learning Privacy"
       }
     ],
     "relatedTo": [

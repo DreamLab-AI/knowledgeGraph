@@ -38,46 +38,117 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"},
-      {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"}
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:yield-farming", "label": "Yield Farming"},
-      {"@id": "urn:ngm:class:decentralized-exchange", "label": "Decentralized Exchange"},
-      {"@id": "urn:ngm:class:protocol-bootstrapping", "label": "Protocol Bootstrapping"},
-      {"@id": "urn:ngm:class:decentralized-autonomous-organization", "label": "Decentralized Autonomous Organization"}
+      {
+        "@id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:decentralized-finance", "label": "Decentralized Finance"},
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:lp-token", "label": "LP Token"},
-      {"@id": "urn:ngm:class:bonding-curve", "label": "Bonding Curve"},
-      {"@id": "urn:ngm:class:vote-escrow", "label": "Vote Escrow"}
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:lp-token",
+        "label": "LP Token"
+      },
+      {
+        "@id": "urn:ngm:class:token-bonding-curve",
+        "label": "Bonding Curve"
+      },
+      {
+        "@id": "urn:ngm:class:vote-escrow",
+        "label": "Vote Escrow"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:order-book-exchange", "label": "Order Book Exchange"},
-      {"@id": "urn:ngm:class:traditional-market-making", "label": "Traditional Market Making"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:order-book-exchange",
+        "label": "Order Book Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:market-making",
+        "label": "Traditional Market Making"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:impermanent-loss", "label": "Impermanent Loss"},
-      {"@id": "urn:ngm:class:staking", "label": "Staking"},
-      {"@id": "urn:ngm:class:token-emission-schedule", "label": "Token Emission Schedule"},
-      {"@id": "urn:ngm:class:concentrated-liquidity", "label": "Concentrated Liquidity"}
+      {
+        "@id": "urn:ngm:class:impermanent-loss",
+        "label": "Impermanent Loss"
+      },
+      {
+        "@id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "@id": "urn:ngm:class:emission-schedule",
+        "label": "Token Emission Schedule"
+      },
+      {
+        "@id": "urn:ngm:class:concentrated-liquidity",
+        "label": "Concentrated Liquidity"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"},
-      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"}
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:defi-mining", "label": "DeFi Mining"}
+    {
+      "@id": "urn:ngm:class:defi-mining",
+      "label": "DeFi Mining"
+    }
   ],
   "quality": 0.72,
   "provenance": {

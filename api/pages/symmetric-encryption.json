@@ -22,12 +22,8 @@
         "label": "Initialization Vector"
       },
       {
-        "id": "urn:ngm:class:authentication-tag",
+        "id": "urn:ngm:class:message-authentication-code",
         "label": "Authentication Tag"
-      },
-      {
-        "id": "urn:ngm:class:cipher-algorithm",
-        "label": "Cipher Algorithm"
       }
     ],
     "requires": [
@@ -70,11 +66,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:advanced-encryption-standard",
-        "label": "Advanced Encryption Standard"
-      },
-      {
-        "id": "urn:ngm:class:chacha20-poly1305",
+        "id": "urn:ngm:class:cha-cha20-poly1305",
         "label": "ChaCha20-Poly1305"
       }
     ],
@@ -126,7 +118,7 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:hybrid-encryption",
+        "id": "urn:ngm:class:encryption",
         "label": "Hybrid Encryption"
       },
       {

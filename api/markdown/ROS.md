@@ -67,27 +67,9 @@ public:: true
     "label": "Robot Operating System"
   },
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:ros-node",
-        "label": "ROS Node"
-      },
-      {
-        "@id": "urn:ngm:class:ros-topic",
-        "label": "ROS Topic"
-      },
-      {
-        "@id": "urn:ngm:class:ros-package",
-        "label": "ROS Package"
-      },
-      {
-        "@id": "urn:ngm:class:tf2",
-        "label": "TF2 Transform Library"
-      }
-    ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:robotics-software-ecosystem",
+        "@id": "urn:ngm:class:robotics-platform",
         "label": "Robotics Software Ecosystem"
       }
     ],
@@ -101,7 +83,7 @@ public:: true
         "label": "Middleware"
       },
       {
-        "@id": "urn:ngm:class:linux-operating-system",
+        "@id": "urn:ngm:class:operating-system",
         "label": "Linux Operating System"
       }
     ],
@@ -149,10 +131,6 @@ public:: true
         "label": "Gazebo Simulator"
       },
       {
-        "@id": "urn:ngm:class:rviz",
-        "label": "RViz Visualisation Tool"
-      },
-      {
         "@id": "urn:ngm:class:colcon-build-system",
         "label": "Colcon Build System"
       }
@@ -163,22 +141,12 @@ public:: true
         "label": "Real-Time Control"
       },
       {
-        "@id": "urn:ngm:class:embedded-robotics",
+        "@id": "urn:ngm:class:robotics",
         "label": "Embedded Robotics"
       },
       {
         "@id": "urn:ngm:class:micro-ros",
         "label": "micro-ROS"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:orocos-rtt",
-        "label": "Orocos RTT"
-      },
-      {
-        "@id": "urn:ngm:class:lcm",
-        "label": "Lightweight Communications and Marshalling"
       }
     ],
     "bridgesTo": [

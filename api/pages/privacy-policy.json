@@ -65,7 +65,7 @@
         "label": "Transparency Principle"
       },
       {
-        "id": "urn:ngm:class:accountability-principle",
+        "id": "urn:ngm:class:accountability",
         "label": "Accountability Principle"
       }
     ],
@@ -81,7 +81,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:ai-transparency",
+        "id": "urn:ngm:class:ai-transparency-framework",
         "label": "AI Transparency"
       },
       {
@@ -93,10 +93,6 @@
       {
         "id": "urn:ngm:class:data-privacy-vocabulary",
         "label": "Data Privacy Vocabulary"
-      },
-      {
-        "id": "urn:ngm:class:odrl",
-        "label": "ODRL"
       }
     ],
     "supports": [

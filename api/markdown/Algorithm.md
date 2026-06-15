@@ -55,59 +55,143 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
-      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:software-system", "label": "Software System"},
-      {"@id": "urn:ngm:class:computational-model", "label": "Computational Model"}
+      {
+        "@id": "urn:ngm:class:software-system",
+        "label": "Software System"
+      },
+      {
+        "@id": "urn:ngm:class:computational-model",
+        "label": "Computational Model"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-structure", "label": "Data Structure"},
-      {"@id": "urn:ngm:class:computational-complexity", "label": "Computational Complexity"}
+      {
+        "@id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
+      },
+      {
+        "@id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Computational Complexity"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:automation", "label": "Automation"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:automation",
+        "label": "Automation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:mathematical-logic", "label": "Mathematical Logic"},
-      {"@id": "urn:ngm:class:formal-language", "label": "Formal Language"}
+      {
+        "@id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      },
+      {
+        "@id": "urn:ngm:class:formal-language",
+        "label": "Formal Language"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:turing-machine", "label": "Turing Machine"}
+      {
+        "@id": "urn:ngm:class:turing-machine",
+        "label": "Turing Machine"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:inference", "label": "Inference"},
-      {"@id": "urn:ngm:class:heuristic", "label": "Heuristic"}
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist", "label": "NIST"},
-      {"@id": "urn:ngm:class:ieee", "label": "IEEE"}
+      {
+        "@id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:heuristic", "label": "Heuristic"}
+      {
+        "@id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:robotic-process-automation", "label": "Robotic Process Automation"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:algorithmic-framework", "label": "Algorithmic Framework"},
-      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-framework",
+        "label": "Algorithmic Framework"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:computational-procedure", "label": "Computational Procedure"},
-    {"@id": "urn:ngm:class:procedure", "label": "Procedure"}
+    {
+      "@id": "urn:ngm:class:computational-procedure",
+      "label": "Computational Procedure"
+    },
+    {
+      "@id": "urn:ngm:class:procedure",
+      "label": "Procedure"
+    }
   ],
   "quality": 0.75,
   "provenance": {

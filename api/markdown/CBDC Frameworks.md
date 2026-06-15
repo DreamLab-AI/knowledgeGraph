@@ -534,40 +534,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:aml-cft-compliance-layer",
+        "@id": "urn:ngm:class:compliance-layer",
         "label": "AML CFT Compliance Layer"
       },
       {
-        "@id": "urn:ngm:class:core-ledger",
-        "label": "Core Ledger"
-      },
-      {
-        "@id": "urn:ngm:class:cross-border-protocol",
-        "label": "Cross-Border Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:holding-limit-mechanism",
-        "label": "Holding Limit Mechanism"
-      },
-      {
-        "@id": "urn:ngm:class:interoperability-layer",
+        "@id": "urn:ngm:class:interoperability",
         "label": "Interoperability Layer"
-      },
-      {
-        "@id": "urn:ngm:class:kyc-tier-system",
-        "label": "KYC Tier System"
-      },
-      {
-        "@id": "urn:ngm:class:offline-payment-capability",
-        "label": "Offline Payment Capability"
-      },
-      {
-        "@id": "urn:ngm:class:programmability-layer",
-        "label": "Programmability Layer"
-      },
-      {
-        "@id": "urn:ngm:class:two-tier-cbdc-architecture",
-        "label": "Two-Tier CBDC Architecture"
       },
       {
         "@id": "urn:ngm:class:privacy-framework",
@@ -576,7 +548,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:aml-cft-framework",
+        "@id": "urn:ngm:class:aml",
         "label": "AML CFT Framework"
       },
       {
@@ -600,15 +572,7 @@ public:: true
         "label": "DLT"
       },
       {
-        "@id": "urn:ngm:class:kyc-compliance",
-        "label": "KYC Compliance"
-      },
-      {
-        "@id": "urn:ngm:class:legal-tender-designation",
-        "label": "Legal Tender Designation"
-      },
-      {
-        "@id": "urn:ngm:class:operational-resilience-standards",
+        "@id": "urn:ngm:class:operational-resilience",
         "label": "Operational Resilience Standards"
       },
       {
@@ -646,39 +610,15 @@ public:: true
         "label": "Programmable Money"
       },
       {
-        "@id": "urn:ngm:class:retail-cbdc-issuance",
+        "@id": "urn:ngm:class:retail-cbdc",
         "label": "Retail CBDC Issuance"
       },
       {
-        "@id": "urn:ngm:class:targeted-fiscal-transfers",
-        "label": "Targeted Fiscal Transfers"
-      },
-      {
-        "@id": "urn:ngm:class:wholesale-cbdc-settlement",
+        "@id": "urn:ngm:class:wholesale-cbdc",
         "label": "Wholesale CBDC Settlement"
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:bis-cbdc-principles",
-        "label": "BIS CBDC Principles"
-      },
-      {
-        "@id": "urn:ngm:class:cpmi-cross-border-payment-standards",
-        "label": "CPMI Cross Border Payment Standards"
-      },
-      {
-        "@id": "urn:ngm:class:fsb-financial-stability-recommendations",
-        "label": "FSB Financial Stability Recommendations"
-      },
-      {
-        "@id": "urn:ngm:class:g7-public-policy-principles-for-retail-cbdcs",
-        "label": "G7 Public Policy Principles for Retail CBDCs"
-      },
-      {
-        "@id": "urn:ngm:class:imf-5-p-methodology",
-        "label": "IMF 5P Methodology"
-      },
       {
         "@id": "urn:ngm:class:two-tier-distribution-model",
         "label": "Two-Tier Distribution Model"
@@ -806,10 +746,6 @@ public:: true
         "label": "Financial Stability"
       },
       {
-        "@id": "urn:ngm:class:payment-system-efficiency",
-        "label": "Payment System Efficiency"
-      },
-      {
         "@id": "urn:ngm:class:programmable-money",
         "label": "Programmable Money"
       },
@@ -828,36 +764,16 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:bis-cbdc-design-principles-2020",
-        "label": "BIS CBDC Design Principles 2020"
-      },
-      {
-        "@id": "urn:ngm:class:cpmi-fast-payment-system-standards",
-        "label": "CPMI Fast Payment System Standards"
-      },
-      {
         "@id": "urn:ngm:class:ecb-digital-euro-regulation-proposal",
         "label": "ECB Digital Euro Regulation Proposal"
       },
       {
-        "@id": "urn:ngm:class:fatf-aml-cft-standards",
+        "@id": "urn:ngm:class:fatf-recommendations",
         "label": "FATF AML CFT Standards"
-      },
-      {
-        "@id": "urn:ngm:class:fsb-cbdc-financial-stability-recommendations-2023",
-        "label": "FSB CBDC Financial Stability Recommendations 2023"
-      },
-      {
-        "@id": "urn:ngm:class:g7-public-policy-principles-for-retail-cbdcs-2021",
-        "label": "G7 Public Policy Principles for Retail CBDCs 2021"
       },
       {
         "@id": "urn:ngm:class:gdpr",
         "label": "GDPR"
-      },
-      {
-        "@id": "urn:ngm:class:imf-cbdc-virtual-handbook",
-        "label": "IMF CBDC Virtual Handbook"
       }
     ],
     "bridgesTo": [

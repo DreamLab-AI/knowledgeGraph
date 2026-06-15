@@ -104,14 +104,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:contextual-information",
-        "label": "Contextual Information"
-      },
-      {
-        "@id": "urn:ngm:class:enhanced-visualization",
-        "label": "Enhanced Visualization"
-      },
-      {
         "@id": "urn:ngm:class:interactive-learning",
         "label": "Interactive Learning"
       }

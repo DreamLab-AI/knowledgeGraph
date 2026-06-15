@@ -106,25 +106,9 @@ public:: true
       {
         "@id": "urn:ngm:class:format-compliance",
         "label": "Format Compliance"
-      },
-      {
-        "@id": "urn:ngm:class:metadata-specification",
-        "label": "Metadata Specification"
-      },
-      {
-        "@id": "urn:ngm:class:skeleton-configuration",
-        "label": "Skeleton Configuration"
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:platform-independent-identities",
-        "label": "Platform-Independent Identities"
-      },
-      {
-        "@id": "urn:ngm:class:standardized-rigging",
-        "label": "Standardized Rigging"
-      },
       {
         "@id": "urn:ngm:class:avatar-interoperability",
         "label": "Avatar Interoperability"

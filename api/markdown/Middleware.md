@@ -178,10 +178,6 @@ public:: true
         "label": "Distributed Communication"
       },
       {
-        "@id": "urn:ngm:class:resource-abstraction",
-        "label": "Resource Abstraction"
-      },
-      {
         "@id": "urn:ngm:class:service-integration",
         "label": "Service Integration"
       },

@@ -23,49 +23,125 @@ public:: true
   "definition": "Coordinated behaviour by a group of individuals or organisations toward a shared goal that no single actor could achieve unilaterally. It is characterised by interdependence, the risk of free-riding, and the need for mechanisms — such as incentives, norms, or contracts — to align individual contributions with the group objective.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:coordination-mechanisms", "label": "Coordination Mechanisms"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:coordination-mechanisms",
+      "label": "Coordination Mechanisms"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:collective-governance", "label": "Collective Governance"},
-      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding", "label": "Public Goods Funding"},
-      {"@id": "urn:ngm:class:public-goods", "label": "Public Goods"},
-      {"@id": "urn:ngm:class:social-coordination", "label": "Social Coordination"},
-      {"@id": "urn:ngm:class:institutional-design", "label": "Institutional Design"}
+      {
+        "@id": "urn:ngm:class:collective-governance",
+        "label": "Collective Governance"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
+        "label": "Public Goods Funding"
+      },
+      {
+        "@id": "urn:ngm:class:public-goods",
+        "label": "Public Goods"
+      },
+      {
+        "@id": "urn:ngm:class:social-interaction",
+        "label": "Social Coordination"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-design",
+        "label": "Institutional Design"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:incentive-mechanism", "label": "Incentive Mechanism"},
-      {"@id": "urn:ngm:class:monitoring-and-enforcement", "label": "Monitoring and Enforcement"},
-      {"@id": "urn:ngm:class:trust", "label": "Trust"}
+      {
+        "@id": "urn:ngm:class:incentive-mechanism",
+        "label": "Incentive Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring",
+        "label": "Monitoring and Enforcement"
+      },
+      {
+        "@id": "urn:ngm:class:trust",
+        "label": "Trust"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:free-rider-problem", "label": "Free-Rider Problem"},
-      {"@id": "urn:ngm:class:selective-incentive", "label": "Selective Incentive"}
+      {
+        "@id": "urn:ngm:class:free-rider-problem",
+        "label": "Free-Rider Problem"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:collective-intelligence", "label": "Collective Intelligence"},
-      {"@id": "urn:ngm:class:community-governance", "label": "Community Governance"},
-      {"@id": "urn:ngm:class:common-pool-resources", "label": "Common Pool Resources"},
-      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"},
-      {"@id": "urn:ngm:class:social-contract", "label": "Social Contract"},
-      {"@id": "urn:ngm:class:prisoners-dilemma", "label": "Prisoner's Dilemma"}
+      {
+        "@id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      },
+      {
+        "@id": "urn:ngm:class:common-pool-resources",
+        "label": "Common Pool Resources"
+      },
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "@id": "urn:ngm:class:social-contract",
+        "label": "Social Contract"
+      },
+      {
+        "@id": "urn:ngm:class:prisoners-dilemma",
+        "label": "Prisoner's Dilemma"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:coordination-protocol", "label": "Coordination Protocol"},
-      {"@id": "urn:ngm:class:voting-mechanism", "label": "Voting Mechanism"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:coordination-protocol",
+        "label": "Coordination Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:individual-rationality", "label": "Individual Rationality"},
-      {"@id": "urn:ngm:class:tragedy-of-the-commons", "label": "Tragedy of the Commons"}
+      {
+        "@id": "urn:ngm:class:individual-rationality",
+        "label": "Individual Rationality"
+      },
+      {
+        "@id": "urn:ngm:class:tragedy-of-the-commons",
+        "label": "Tragedy of the Commons"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
-      {"@id": "urn:ngm:class:decentralized-autonomous-organization", "label": "Decentralized Autonomous Organization"},
-      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"}
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:collective-action-problem", "label": "Collective Action Problem"}
+    {
+      "@id": "urn:ngm:class:collective-action-problem",
+      "label": "Collective Action Problem"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

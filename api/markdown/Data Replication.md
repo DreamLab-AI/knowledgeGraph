@@ -102,10 +102,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:consistency-guarantees",
-        "label": "Consistency Guarantees"
-      },
-      {
         "@id": "urn:ngm:class:data-availability",
         "label": "Data Availability"
       },
@@ -138,11 +134,11 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:raft-protocol",
+        "@id": "urn:ngm:class:raft",
         "label": "Raft Protocol"
       },
       {
-        "@id": "urn:ngm:class:paxos-protocol",
+        "@id": "urn:ngm:class:paxos",
         "label": "Paxos Protocol"
       },
       {
@@ -162,7 +158,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:data-sharding",
+        "@id": "urn:ngm:class:sharding",
         "label": "Data Sharding"
       },
       {
@@ -172,7 +168,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:distributed-database",
+        "@id": "urn:ngm:class:distributed-databases",
         "label": "Distributed Database"
       },
       {
@@ -188,10 +184,6 @@ public:: true
       {
         "@id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
-      },
-      {
-        "@id": "urn:ngm:class:metaverse-state-management",
-        "label": "Metaverse State Management"
       }
     ]
   },

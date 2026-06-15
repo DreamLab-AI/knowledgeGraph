@@ -73,20 +73,12 @@ public:: true
       {
         "@id": "urn:ngm:class:black-box-model",
         "label": "Black-Box Model"
-      },
-      {
-        "@id": "urn:ngm:class:perturbation-sampling",
-        "label": "Perturbation Sampling"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:explainable-ai",
         "label": "Explainable AI"
-      },
-      {
-        "@id": "urn:ngm:class:local-feature-attribution",
-        "label": "Local Feature Attribution"
       },
       {
         "@id": "urn:ngm:class:model-debugging",
@@ -99,16 +91,8 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:linear-model",
-        "label": "Linear Model"
-      },
-      {
         "@id": "urn:ngm:class:surrogate-model",
         "label": "Surrogate Model"
-      },
-      {
-        "@id": "urn:ngm:class:weighted-sampling",
-        "label": "Weighted Sampling"
       }
     ],
     "contrastsWith": [
@@ -117,7 +101,7 @@ public:: true
         "label": "SHAP"
       },
       {
-        "@id": "urn:ngm:class:global-model-explanation",
+        "@id": "urn:ngm:class:global-explanation",
         "label": "Global Model Explanation"
       },
       {
@@ -137,16 +121,6 @@ public:: true
       {
         "@id": "urn:ngm:class:counterfactual-explanation",
         "label": "Counterfactual Explanation"
-      },
-      {
-        "@id": "urn:ngm:class:anchor-rules",
-        "label": "Anchor Rules"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:explainability-framework",
-        "label": "Explainability Framework"
       }
     ],
     "supports": [

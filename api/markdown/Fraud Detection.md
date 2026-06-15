@@ -38,50 +38,112 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"},
-      {"@id": "urn:ngm:class:graph-neural-networks", "label": "Graph Neural Networks"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:behavioural-biometrics", "label": "Behavioural Biometrics"},
-      {"@id": "urn:ngm:class:data-stream-processing", "label": "Data Stream Processing"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:graph-neural-networks",
+        "label": "Graph Neural Networks"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:stream-processing",
+        "label": "Data Stream Processing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"}
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"},
-      {"@id": "urn:ngm:class:data-labelling", "label": "Data Labelling"},
-      {"@id": "urn:ngm:class:real-time-data-pipelines", "label": "Real-Time Data Pipelines"}
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:data-labelling",
+        "label": "Data Labelling"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"}
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:intrusion-detection-systems", "label": "Intrusion Detection Systems"},
-      {"@id": "urn:ngm:class:threat-intelligence", "label": "Threat Intelligence"}
+      {
+        "@id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:know-your-customer", "label": "Know Your Customer"},
-      {"@id": "urn:ngm:class:credit-risk", "label": "Credit Risk"}
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "@id": "urn:ngm:class:credit-risk",
+        "label": "Credit Risk"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain-analytics", "label": "Blockchain Analytics"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:fraud-analytics", "label": "Fraud Analytics"},
-    {"@id": "urn:ngm:class:financial-crime-detection", "label": "Financial Crime Detection"}
+    {
+      "@id": "urn:ngm:class:fraud-analytics",
+      "label": "Fraud Analytics"
+    },
+    {
+      "@id": "urn:ngm:class:financial-crime-detection",
+      "label": "Financial Crime Detection"
+    }
   ],
   "quality": 0.72,
   "qualityScore": 0.72,
-  "maturity": "established",
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",

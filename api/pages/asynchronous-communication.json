@@ -17,16 +17,7 @@
   "maturity": "mature",
   "relationships": {
     "hasPart": [],
-    "requires": [
-      {
-        "id": "urn:ngm:class:message-durability",
-        "label": "Message Durability"
-      },
-      {
-        "id": "urn:ngm:class:delivery-guarantees",
-        "label": "Delivery Guarantees"
-      }
-    ],
+    "requires": [],
     "enables": [
       {
         "id": "urn:ngm:class:asynchronous-execution",

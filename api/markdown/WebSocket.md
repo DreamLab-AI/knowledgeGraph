@@ -38,53 +38,127 @@ public:: true
   ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:full-duplex-communication", "label": "Full-Duplex Communication"},
-      {"@id": "urn:ngm:class:rfc-6455", "label": "RFC 6455"}
+      {
+        "@id": "urn:ngm:class:full-duplex-communication",
+        "label": "Full-Duplex Communication"
+      },
+      {
+        "@id": "urn:ngm:class:rfc-6455",
+        "label": "RFC 6455"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:transmission-control-protocol", "label": "Transmission Control Protocol"},
-      {"@id": "urn:ngm:class:hypertext-transfer-protocol", "label": "Hypertext Transfer Protocol"}
+      {
+        "@id": "urn:ngm:class:transmission-control-protocol",
+        "label": "Transmission Control Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:hypertext-transfer-protocol",
+        "label": "Hypertext Transfer Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
-      {"@id": "urn:ngm:class:server-sent-push", "label": "Server-Sent Push"},
-      {"@id": "urn:ngm:class:collaborative-editing", "label": "Collaborative Editing"}
+      {
+        "@id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:server-sent-events",
+        "label": "Server-Sent Push"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-editing",
+        "label": "Collaborative Editing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:transport-layer-security", "label": "Transport Layer Security"},
-      {"@id": "urn:ngm:class:protocol-buffers", "label": "Protocol Buffers"},
-      {"@id": "urn:ngm:class:message-framing", "label": "Message Framing"}
+      {
+        "@id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-buffers",
+        "label": "Protocol Buffers"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
-      {"@id": "urn:ngm:class:server-sent-events", "label": "Server-Sent Events"},
-      {"@id": "urn:ngm:class:long-polling", "label": "Long Polling"},
-      {"@id": "urn:ngm:class:webrtc", "label": "WebRTC"}
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:server-sent-events",
+        "label": "Server-Sent Events"
+      },
+      {
+        "@id": "urn:ngm:class:long-polling",
+        "label": "Long Polling"
+      },
+      {
+        "@id": "urn:ngm:class:webrtc",
+        "label": "WebRTC"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:load-balancer", "label": "Load Balancer"},
-      {"@id": "urn:ngm:class:publish-subscribe-pattern", "label": "Publish-Subscribe Pattern"}
+      {
+        "@id": "urn:ngm:class:load-balancer",
+        "label": "Load Balancer"
+      },
+      {
+        "@id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:message-queue", "label": "Message Queue"},
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"}
+      {
+        "@id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:internet-engineering-task-force", "label": "Internet Engineering Task Force"},
-      {"@id": "urn:ngm:class:world-wide-web-consortium", "label": "World Wide Web Consortium"}
+      {
+        "@id": "urn:ngm:class:internet-engineering-task-force",
+        "label": "Internet Engineering Task Force"
+      },
+      {
+        "@id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:ai-inference-serving", "label": "AI Inference Serving"}
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:inference-serving",
+        "label": "AI Inference Serving"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:latency", "label": "Latency"},
-      {"@id": "urn:ngm:class:grpc", "label": "gRPC"}
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:grpc",
+        "label": "gRPC"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ws-protocol", "label": "WS Protocol"}
+    {
+      "@id": "urn:ngm:class:ws-protocol",
+      "label": "WS Protocol"
+    }
   ],
   "quality": 0.72,
   "provenance": {

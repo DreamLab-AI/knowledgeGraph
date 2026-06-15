@@ -74,12 +74,7 @@
         "label": "Event-Driven Architecture"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:bespoke-architecture",
-        "label": "Bespoke Architecture"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:distributed-collaboration",

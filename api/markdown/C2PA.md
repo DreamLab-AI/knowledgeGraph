@@ -38,54 +38,113 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:c2-pa-content-credentials", "label": "C2PA Content Credentials"},
-      {"@id": "urn:ngm:class:c2-pa-manifest", "label": "C2PA Manifest"},
-      {"@id": "urn:ngm:class:c2-pa-assertion", "label": "C2PA Assertion"},
-      {"@id": "urn:ngm:class:c2-pa-trust-list", "label": "C2PA Trust List"}
+      {
+        "@id": "urn:ngm:class:c2-pa-content-credentials",
+        "label": "C2PA Content Credentials"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"}
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:provenance-verification", "label": "Provenance Verification"},
-      {"@id": "urn:ngm:class:media-authentication", "label": "Media Authentication"},
-      {"@id": "urn:ngm:class:ai-disclosure", "label": "AI Disclosure"}
+      {
+        "@id": "urn:ngm:class:provenance-verification",
+        "label": "Provenance Verification"
+      },
+      {
+        "@id": "urn:ngm:class:media-authentication",
+        "label": "Media Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:ai-generated-content-disclosure",
+        "label": "AI Disclosure"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:jumbf", "label": "JUMBF"},
-      {"@id": "urn:ngm:class:cose", "label": "COSE"},
-      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"},
-      {"@id": "urn:ngm:class:x-509-certificate", "label": "X.509 Certificate"}
+      {
+        "@id": "urn:ngm:class:cose",
+        "label": "COSE"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:content-authenticity-initiative", "label": "Content Authenticity Initiative"},
-      {"@id": "urn:ngm:class:project-origin", "label": "Project Origin"}
+      {
+        "@id": "urn:ngm:class:content-authenticity",
+        "label": "Content Authenticity Initiative"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:disinformation-countermeasures", "label": "Disinformation Countermeasures"},
-      {"@id": "urn:ngm:class:media-integrity", "label": "Media Integrity"},
-      {"@id": "urn:ngm:class:supply-chain-transparency", "label": "Supply Chain Transparency"}
+      {
+        "@id": "urn:ngm:class:disinformation-countermeasures",
+        "label": "Disinformation Countermeasures"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:deepfakes", "label": "Deepfakes"},
-      {"@id": "urn:ngm:class:synthetic-media", "label": "Synthetic Media"}
+      {
+        "@id": "urn:ngm:class:deepfakes",
+        "label": "Deepfakes"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"},
-      {"@id": "urn:ngm:class:watermarking", "label": "Watermarking"},
-      {"@id": "urn:ngm:class:prov-o", "label": "PROV-O"}
+      {
+        "@id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:watermarking-service",
+        "label": "Watermarking"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-ontology-prov-o",
+        "label": "PROV-O"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:open-media-alliance", "label": "Open Media Alliance"},
-      {"@id": "urn:ngm:class:w3c-verifiable-credentials", "label": "W3C Verifiable Credentials"},
-      {"@id": "urn:ngm:class:joint-development-foundation", "label": "Joint Development Foundation"},
-      {"@id": "urn:ngm:class:digital-media-standards", "label": "Digital Media Standards"}
+      {
+        "@id": "urn:ngm:class:open-media-alliance",
+        "label": "Open Media Alliance"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-verifiable-credentials",
+        "label": "W3C Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:joint-development-foundation",
+        "label": "Joint Development Foundation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:coalition-for-content-provenance-and-authenticity", "label": "Coalition for Content Provenance and Authenticity"}
+    {
+      "@id": "urn:ngm:class:coalition-for-content-provenance-and-authenticity",
+      "label": "Coalition for Content Provenance and Authenticity"
+    }
   ],
   "quality": 0.74,
   "provenance": {

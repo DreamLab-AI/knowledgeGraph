@@ -103,7 +103,7 @@ public:: true
         "label": "Optimistic Rollup"
       },
       {
-        "@id": "urn:ngm:class:interactive-fraud-proof",
+        "@id": "urn:ngm:class:fraud-proof",
         "label": "Interactive Fraud Proof"
       },
       {
@@ -115,14 +115,6 @@ public:: true
       {
         "@id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
-      },
-      {
-        "@id": "urn:ngm:class:low-cost-transaction",
-        "label": "Low-Cost Transaction"
-      },
-      {
-        "@id": "urn:ngm:class:high-throughput-blockchain",
-        "label": "High-Throughput Blockchain"
       }
     ],
     "uses": [
@@ -139,34 +131,16 @@ public:: true
         "label": "Governance Token"
       }
     ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:arbitrum-one",
-        "label": "Arbitrum One"
-      },
-      {
-        "@id": "urn:ngm:class:arbitrum-nova",
-        "label": "Arbitrum Nova"
-      },
-      {
-        "@id": "urn:ngm:class:arbitrum-orbit",
-        "label": "Arbitrum Orbit"
-      }
-    ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:ethereum-ecosystem",
+        "@id": "urn:ngm:class:ethereum",
         "label": "Ethereum Ecosystem"
       }
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:ethereum-data-availability",
+        "@id": "urn:ngm:class:data-availability",
         "label": "Ethereum Data Availability"
-      },
-      {
-        "@id": "urn:ngm:class:challenge-period",
-        "label": "Challenge Period"
       }
     ],
     "supports": [
@@ -209,7 +183,7 @@ public:: true
         "label": "Plasma"
       },
       {
-        "@id": "urn:ngm:class:layer-2-scaling-solution",
+        "@id": "urn:ngm:class:layer-2-scaling",
         "label": "Layer-2 Scaling Solution"
       }
     ]

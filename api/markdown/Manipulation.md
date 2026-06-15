@@ -53,51 +53,135 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:grasp-planning", "label": "Grasp Planning"},
-      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"},
-      {"@id": "urn:ngm:class:force-control", "label": "Force Control"},
-      {"@id": "urn:ngm:class:trajectory-generation", "label": "Trajectory Generation"}
+      {
+        "@id": "urn:ngm:class:grasp-planning",
+        "label": "Grasp Planning"
+      },
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      },
+      {
+        "@id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory-generation",
+        "label": "Trajectory Generation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
-      {"@id": "urn:ngm:class:object-pose-estimation", "label": "Object Pose Estimation"},
-      {"@id": "urn:ngm:class:collision-detection", "label": "Collision Detection"}
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Object Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:forward-kinematics", "label": "Forward Kinematics"},
-      {"@id": "urn:ngm:class:impedance-control", "label": "Impedance Control"},
-      {"@id": "urn:ngm:class:tactile-sensing", "label": "Tactile Sensing"},
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"}
+      {
+        "@id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "@id": "urn:ngm:class:tactile-sensing",
+        "label": "Tactile Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:assembly-automation", "label": "Assembly Automation"},
-      {"@id": "urn:ngm:class:surgical-robotics", "label": "Surgical Robotics"},
-      {"@id": "urn:ngm:class:pick-and-place", "label": "Pick and Place"},
-      {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"}
+      {
+        "@id": "urn:ngm:class:assembly-automation",
+        "label": "Assembly Automation"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:pick-and-place",
+        "label": "Pick and Place"
+      },
+      {
+        "@id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"},
-      {"@id": "urn:ngm:class:robot-dynamics", "label": "Robot Dynamics"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {
+        "@id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:locomotion", "label": "Locomotion"}
+      {
+        "@id": "urn:ngm:class:locomotion",
+        "label": "Locomotion"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:haptics", "label": "Haptics"},
-      {"@id": "urn:ngm:class:dexterous-manipulation", "label": "Dexterous Manipulation"},
-      {"@id": "urn:ngm:class:task-and-motion-planning", "label": "Task and Motion Planning"}
+      {
+        "@id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      },
+      {
+        "@id": "urn:ngm:class:dexterous-manipulation",
+        "label": "Dexterous Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:task-and-motion-planning",
+        "label": "Task and Motion Planning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:imitation-learning", "label": "Imitation Learning"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:robotic-manipulation", "label": "Robotic Manipulation"},
-    {"@id": "urn:ngm:class:object-manipulation", "label": "Object Manipulation"}
+    {
+      "@id": "urn:ngm:class:robotic-manipulation",
+      "label": "Robotic Manipulation"
+    },
+    {
+      "@id": "urn:ngm:class:object-manipulation",
+      "label": "Object Manipulation"
+    }
   ],
   "quality": 0.74,
   "provenance": {

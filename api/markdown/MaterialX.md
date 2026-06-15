@@ -75,10 +75,6 @@ public:: true
       {
         "@id": "urn:ngm:class:texture-mapping",
         "label": "Texture Mapping"
-      },
-      {
-        "@id": "urn:ngm:class:shading-network",
-        "label": "Shading Network"
       }
     ],
     "enables": [
@@ -89,14 +85,6 @@ public:: true
       {
         "@id": "urn:ngm:class:asset-interoperability",
         "label": "Asset Interoperability"
-      },
-      {
-        "@id": "urn:ngm:class:look-development",
-        "label": "Look Development"
-      },
-      {
-        "@id": "urn:ngm:class:renderer-independent-material",
-        "label": "Renderer-Independent Material"
       }
     ],
     "implements": [
@@ -105,7 +93,7 @@ public:: true
         "label": "Open Standard"
       },
       {
-        "@id": "urn:ngm:class:node-graph",
+        "@id": "urn:ngm:class:node-graph-visual-programming-interface",
         "label": "Node Graph"
       }
     ],
@@ -123,50 +111,22 @@ public:: true
       {
         "@id": "urn:ngm:class:procedural-texture",
         "label": "Procedural Texture"
-      },
-      {
-        "@id": "urn:ngm:class:node-definition",
-        "label": "Node Definition"
       }
     ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:shading-model",
         "label": "Shading Model"
-      },
-      {
-        "@id": "urn:ngm:class:material-graph",
-        "label": "Material Graph"
-      }
-    ],
-    "dependsOn": [
-      {
-        "@id": "urn:ngm:class:physically-based-shading",
-        "label": "Physically Based Shading"
       }
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:3d-asset-pipeline",
+        "@id": "urn:ngm:class:asset-pipeline",
         "label": "3D Asset Pipeline"
-      },
-      {
-        "@id": "urn:ngm:class:vfx-production",
-        "label": "VFX Production"
       },
       {
         "@id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:mdl",
-        "label": "MDL"
-      },
-      {
-        "@id": "urn:ngm:class:osl",
-        "label": "OSL"
       }
     ],
     "bridgesTo": [
@@ -177,16 +137,6 @@ public:: true
       {
         "@id": "urn:ngm:class:universal-scene-description",
         "label": "Universal Scene Description"
-      },
-      {
-        "@id": "urn:ngm:class:open-color-io",
-        "label": "OpenColorIO"
-      }
-    ],
-    "relatedTo": [
-      {
-        "@id": "urn:ngm:class:vfx-reference-platform",
-        "label": "VFX Reference Platform"
       }
     ]
   },

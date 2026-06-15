@@ -37,49 +37,113 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:source-control", "label": "Source Control"},
-    {"@id": "urn:ngm:class:revision-control", "label": "Revision Control"},
-    {"@id": "urn:ngm:class:scm", "label": "Source Code Management"}
+    {
+      "@id": "urn:ngm:class:source-control",
+      "label": "Source Control"
+    },
+    {
+      "@id": "urn:ngm:class:revision-control",
+      "label": "Revision Control"
+    },
+    {
+      "@id": "urn:ngm:class:scm",
+      "label": "Source Code Management"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:git", "label": "Git"},
-      {"@id": "urn:ngm:class:branching-strategy", "label": "Branching Strategy"},
-      {"@id": "urn:ngm:class:merge-conflict-resolution", "label": "Merge Conflict Resolution"},
-      {"@id": "urn:ngm:class:commit", "label": "Commit"}
+      {
+        "@id": "urn:ngm:class:git",
+        "label": "Git"
+      },
+      {
+        "@id": "urn:ngm:class:commit",
+        "label": "Commit"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:collaboration", "label": "Collaboration"},
-      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"},
-      {"@id": "urn:ngm:class:code-review", "label": "Code Review"},
-      {"@id": "urn:ngm:class:infrastructure-as-code", "label": "Infrastructure as Code"}
+      {
+        "@id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "@id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-augmented-software-engineering", "label": "AI-Augmented Software Engineering"},
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"},
-      {"@id": "urn:ngm:class:devops", "label": "DevOps"}
+      {
+        "@id": "urn:ngm:class:ai-augmented-software-engineering",
+        "label": "AI-Augmented Software Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cryptographic-hashing", "label": "Cryptographic Hashing"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hashing"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:file-system", "label": "File System"},
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}
+      {
+        "@id": "urn:ngm:class:file-system",
+        "label": "File System"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-provenance", "label": "Data Provenance"},
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
-      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:dataset-versioning", "label": "Dataset Versioning"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:centralised-version-control", "label": "Centralised Version Control"}
+      {
+        "@id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:data-versioning",
+        "label": "Dataset Versioning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:data-lineage", "label": "Data Lineage"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ]
   },
   "quality": 0.74,

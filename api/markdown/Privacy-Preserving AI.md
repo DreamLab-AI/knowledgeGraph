@@ -181,11 +181,11 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:model-inversion-attack",
+        "@id": "urn:ngm:class:model-inversion",
         "label": "Model Inversion Attack"
       },
       {
-        "@id": "urn:ngm:class:membership-inference-attack",
+        "@id": "urn:ngm:class:membership-inference",
         "label": "Membership Inference Attack"
       },
       {

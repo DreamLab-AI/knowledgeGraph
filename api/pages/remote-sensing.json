@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:synthetic-aperture-radar",
+        "id": "urn:ngm:class:radar",
         "label": "Synthetic Aperture Radar"
       },
       {
@@ -26,19 +26,15 @@
         "label": "Hyperspectral Imaging"
       },
       {
-        "id": "urn:ngm:class:multispectral-sensor",
+        "id": "urn:ngm:class:sensor",
         "label": "Multispectral Sensor"
       },
       {
-        "id": "urn:ngm:class:thermal-infrared-sensing",
+        "id": "urn:ngm:class:infrared-sensor",
         "label": "Thermal Infrared Sensing"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:satellite-platform",
-        "label": "Satellite Platform"
-      },
       {
         "id": "urn:ngm:class:sensor-calibration",
         "label": "Sensor Calibration"
@@ -66,7 +62,7 @@
         "label": "Disaster Response"
       },
       {
-        "id": "urn:ngm:class:land-cover-classification",
+        "id": "urn:ngm:class:classification",
         "label": "Land Cover Classification"
       }
     ],

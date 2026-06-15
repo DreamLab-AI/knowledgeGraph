@@ -466,31 +466,19 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:audio-buffering",
-        "label": "Audio Buffering"
-      },
-      {
         "@id": "urn:ngm:class:automatic-speech-recognition",
         "label": "Automatic Speech Recognition"
-      },
-      {
-        "@id": "urn:ngm:class:confidence-scoring",
-        "label": "Confidence Scoring"
       },
       {
         "@id": "urn:ngm:class:domain-adaptation",
         "label": "Domain Adaptation"
       },
       {
-        "@id": "urn:ngm:class:language-detection",
-        "label": "Language Detection"
-      },
-      {
         "@id": "urn:ngm:class:neural-machine-translation",
         "label": "Neural Machine Translation"
       },
       {
-        "@id": "urn:ngm:class:simultaneous-machine-translation",
+        "@id": "urn:ngm:class:machine-translation",
         "label": "Simultaneous Machine Translation"
       },
       {
@@ -498,11 +486,7 @@ public:: true
         "label": "Speaker Diarisation"
       },
       {
-        "@id": "urn:ngm:class:streaming-asr",
-        "label": "Streaming ASR"
-      },
-      {
-        "@id": "urn:ngm:class:text-to-speech-synthesis",
+        "@id": "urn:ngm:class:text-to-speech",
         "label": "Text-to-Speech Synthesis"
       }
     ],
@@ -512,15 +496,15 @@ public:: true
         "label": "Audio Capture"
       },
       {
-        "@id": "urn:ngm:class:gpu-inference-hardware",
+        "@id": "urn:ngm:class:inference-hardware",
         "label": "GPU Inference Hardware"
       },
       {
-        "@id": "urn:ngm:class:low-latency-ml-pipeline",
+        "@id": "urn:ngm:class:low-latency",
         "label": "Low-latency ML Pipeline"
       },
       {
-        "@id": "urn:ngm:class:multi-language-model",
+        "@id": "urn:ngm:class:language-model",
         "label": "Multi-language Model"
       },
       {
@@ -532,7 +516,7 @@ public:: true
         "label": "Parallel Corpus"
       },
       {
-        "@id": "urn:ngm:class:streaming-inference",
+        "@id": "urn:ngm:class:inference",
         "label": "Streaming Inference"
       },
       {
@@ -542,23 +526,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:accessible-communication",
-        "label": "Accessible Communication"
-      },
-      {
-        "@id": "urn:ngm:class:cross-language-collaboration",
-        "label": "Cross-language Collaboration"
-      },
-      {
-        "@id": "urn:ngm:class:equitable-global-meetings",
-        "label": "Equitable Global Meetings"
-      },
-      {
-        "@id": "urn:ngm:class:global-workforce-integration",
-        "label": "Global Workforce Integration"
-      },
-      {
-        "@id": "urn:ngm:class:inclusive-remote-work",
+        "@id": "urn:ngm:class:remote-work",
         "label": "Inclusive Remote Work"
       },
       {
@@ -566,12 +534,8 @@ public:: true
         "label": "Market Expansion"
       },
       {
-        "@id": "urn:ngm:class:multilingual-video-conferencing",
+        "@id": "urn:ngm:class:video-conferencing",
         "label": "Multilingual Video Conferencing"
-      },
-      {
-        "@id": "urn:ngm:class:reduced-code-switching",
-        "label": "Reduced Code-switching"
       }
     ],
     "implements": [
@@ -582,14 +546,6 @@ public:: true
       {
         "@id": "urn:ngm:class:connectionist-temporal-classification",
         "label": "Connectionist Temporal Classification"
-      },
-      {
-        "@id": "urn:ngm:class:neural-sequence-transduction",
-        "label": "Neural Sequence Transduction"
-      },
-      {
-        "@id": "urn:ngm:class:wait-k-policy",
-        "label": "Wait-k Policy"
       },
       {
         "@id": "urn:ngm:class:attention-mechanism",
@@ -606,43 +562,23 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:average-lagging-metric",
-        "label": "Average Lagging Metric"
-      },
-      {
         "@id": "urn:ngm:class:bleu-score",
         "label": "BLEU Score"
-      },
-      {
-        "@id": "urn:ngm:class:ccaligned-dataset",
-        "label": "CCAligned Dataset"
       },
       {
         "@id": "urn:ngm:class:comet-metric",
         "label": "COMET Metric"
       },
       {
-        "@id": "urn:ngm:class:flores-200",
-        "label": "FLORES-200"
-      },
-      {
-        "@id": "urn:ngm:class:opus-corpus",
+        "@id": "urn:ngm:class:parallel-corpus",
         "label": "OPUS Corpus"
       },
       {
-        "@id": "urn:ngm:class:wmt-benchmark",
+        "@id": "urn:ngm:class:benchmark-evaluation",
         "label": "WMT Benchmark"
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:accent-adaptation",
-        "label": "Accent Adaptation"
-      },
-      {
-        "@id": "urn:ngm:class:code-switching",
-        "label": "Code-switching"
-      },
       {
         "@id": "urn:ngm:class:dialogue-system",
         "label": "Dialogue System"
@@ -670,10 +606,6 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:conference-interpreting",
-        "label": "Conference Interpreting"
-      },
-      {
         "@id": "urn:ngm:class:customer-support",
         "label": "Customer Support"
       },
@@ -682,15 +614,11 @@ public:: true
         "label": "Education Technology"
       },
       {
-        "@id": "urn:ngm:class:international-diplomacy",
-        "label": "International Diplomacy"
-      },
-      {
         "@id": "urn:ngm:class:legal-proceedings",
         "label": "Legal Proceedings"
       },
       {
-        "@id": "urn:ngm:class:multilingual-teams",
+        "@id": "urn:ngm:class:distributed-teams",
         "label": "Multilingual Teams"
       },
       {
@@ -704,11 +632,11 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:google-ai-technology-corporation-cloud-translation-api",
+        "@id": "urn:ngm:class:google-ai-technology-corporation-cloud",
         "label": "Google Cloud Translation API"
       },
       {
-        "@id": "urn:ngm:class:ietf-bcp-47",
+        "@id": "urn:ngm:class:ietf",
         "label": "IETF BCP 47"
       },
       {
@@ -716,11 +644,11 @@ public:: true
         "label": "ISO 639 Language Codes"
       },
       {
-        "@id": "urn:ngm:class:itu-t-g-711-audio-codec",
+        "@id": "urn:ngm:class:itu-t",
         "label": "ITU-T G.711 Audio Codec"
       },
       {
-        "@id": "urn:ngm:class:microsoft-azure-cognitive-services",
+        "@id": "urn:ngm:class:azure",
         "label": "Microsoft Azure Cognitive Services"
       },
       {

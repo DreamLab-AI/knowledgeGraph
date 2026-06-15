@@ -158,11 +158,11 @@ public:: true
         "label": "Asset Database"
       },
       {
-        "@id": "urn:ngm:class:bim-model",
+        "@id": "urn:ngm:class:bim-virtual-model",
         "label": "BIM Model"
       },
       {
-        "@id": "urn:ngm:class:energy-management-system",
+        "@id": "urn:ngm:class:energy-management",
         "label": "Energy Management System"
       },
       {

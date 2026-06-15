@@ -376,14 +376,6 @@ public:: true
       {
         "@id": "urn:ngm:class:trust-anchor",
         "label": "Trust Anchor"
-      },
-      {
-        "@id": "urn:ngm:class:trust-list",
-        "label": "Trust List"
-      },
-      {
-        "@id": "urn:ngm:class:trust-mark",
-        "label": "Trust Mark"
       }
     ],
     "requires": [
@@ -444,7 +436,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:e-idas-2",
+        "@id": "urn:ngm:class:e-idas-2-0",
         "label": "eIDAS 2"
       },
       {
@@ -460,7 +452,7 @@ public:: true
         "label": "OpenID Federation"
       },
       {
-        "@id": "urn:ngm:class:trust-over-ip",
+        "@id": "urn:ngm:class:trust-over-ip-stack",
         "label": "Trust over IP"
       },
       {

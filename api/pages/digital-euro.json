@@ -16,33 +16,11 @@
   "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:offline-digital-euro",
-        "label": "Offline Digital Euro"
-      },
-      {
-        "id": "urn:ngm:class:digital-euro-holding-limit",
-        "label": "Digital Euro Holding Limit"
-      }
-    ],
-    "requires": [
-      {
-        "id": "urn:ngm:class:digital-euro-legislative-framework",
-        "label": "Digital Euro Legislative Framework"
-      },
-      {
-        "id": "urn:ngm:class:payment-intermediary",
-        "label": "Payment Intermediary"
-      }
-    ],
+    "hasPart": [],
+    "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:risk-free-retail-payments",
-        "label": "Risk-Free Retail Payments"
-      },
-      {
-        "id": "urn:ngm:class:programmable-payments",
+        "id": "urn:ngm:class:programmable-money",
         "label": "Programmable Payments"
       },
       {
@@ -54,10 +32,6 @@
       {
         "id": "urn:ngm:class:european-central-bank",
         "label": "European Central Bank"
-      },
-      {
-        "id": "urn:ngm:class:two-tier-banking-system",
-        "label": "Two-Tier Banking System"
       }
     ],
     "implements": [
@@ -90,17 +64,13 @@
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:payment-data-privacy",
+        "id": "urn:ngm:class:data-privacy",
         "label": "Payment Data Privacy"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:pseudonymous-transaction-model",
-        "label": "Pseudonymous Transaction Model"
-      },
-      {
-        "id": "urn:ngm:class:tokenised-settlement",
+        "id": "urn:ngm:class:settlement",
         "label": "Tokenised Settlement"
       }
     ],
@@ -126,7 +96,7 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:eurozone-monetary-system",
+        "id": "urn:ngm:class:monetary-system",
         "label": "Eurozone Monetary System"
       }
     ],
@@ -134,14 +104,6 @@
       {
         "id": "urn:ngm:class:cbdc-frameworks",
         "label": "CBDC Frameworks"
-      },
-      {
-        "id": "urn:ngm:class:e-krona",
-        "label": "e-Krona"
-      },
-      {
-        "id": "urn:ngm:class:sand-dollar",
-        "label": "Sand Dollar"
       }
     ]
   },

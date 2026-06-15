@@ -92,30 +92,12 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:blockchain-integration",
+        "@id": "urn:ngm:class:blockchain",
         "label": "Blockchain Integration"
       },
       {
-        "@id": "urn:ngm:class:evidence-authentication",
+        "@id": "urn:ngm:class:authentication",
         "label": "Evidence Authentication"
-      },
-      {
-        "@id": "urn:ngm:class:rule-encoding",
-        "label": "Rule Encoding"
-      }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:decentralized-arbitration",
-        "label": "Decentralized Arbitration"
-      },
-      {
-        "@id": "urn:ngm:class:self-enforcing-awards",
-        "label": "Self-Enforcing Awards"
-      },
-      {
-        "@id": "urn:ngm:class:smart-contract-resolution",
-        "label": "Smart Contract Resolution"
       }
     ]
   },

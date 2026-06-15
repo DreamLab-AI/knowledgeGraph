@@ -24,10 +24,6 @@
       {
         "id": "urn:ngm:class:technical-committee",
         "label": "Technical Committee"
-      },
-      {
-        "id": "urn:ngm:class:iso-high-level-structure",
-        "label": "ISO High Level Structure"
       }
     ],
     "requires": [
@@ -36,7 +32,7 @@
         "label": "Consensus Process"
       },
       {
-        "id": "urn:ngm:class:national-standards-body",
+        "id": "urn:ngm:class:standards-body",
         "label": "National Standards Body"
       }
     ],
@@ -52,23 +48,10 @@
       {
         "id": "urn:ngm:class:interoperability-standard",
         "label": "Interoperability Standard"
-      },
-      {
-        "id": "urn:ngm:class:mutual-recognition-agreement",
-        "label": "Mutual Recognition Agreement"
       }
     ],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:voluntary-standard",
-        "label": "Voluntary Standard"
-      },
-      {
-        "id": "urn:ngm:class:management-system-standard",
-        "label": "Management System Standard"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:ieee",
@@ -89,7 +72,7 @@
         "label": "AI Governance"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
@@ -137,7 +120,7 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:international-standards-ecosystem",
+        "id": "urn:ngm:class:standards",
         "label": "International Standards Ecosystem"
       }
     ],

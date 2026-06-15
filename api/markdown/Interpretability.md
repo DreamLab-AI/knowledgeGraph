@@ -118,10 +118,6 @@ public:: true
       {
         "@id": "urn:ngm:class:model-complexity",
         "label": "Model Complexity"
-      },
-      {
-        "@id": "urn:ngm:class:sparse-representations",
-        "label": "Sparse Representations"
       }
     ],
     "contrastsWith": [
@@ -140,7 +136,7 @@ public:: true
         "label": "Attention Mechanism"
       },
       {
-        "@id": "urn:ngm:class:sparse-autoencoder",
+        "@id": "urn:ngm:class:sparse-autoencoders",
         "label": "Sparse Autoencoder"
       },
       {
@@ -160,16 +156,6 @@ public:: true
       {
         "@id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
-      }
-    ],
-    "relatedTo": [
-      {
-        "@id": "urn:ngm:class:circuit-discovery",
-        "label": "Circuit Discovery"
-      },
-      {
-        "@id": "urn:ngm:class:probing",
-        "label": "Probing"
       }
     ],
     "bridgesTo": [

@@ -73,7 +73,7 @@ public:: true
         "label": "Video Conferencing"
       },
       {
-        "@id": "urn:ngm:class:shared-document-editing",
+        "@id": "urn:ngm:class:tc-0002-collaborative-document-editing",
         "label": "Shared Document Editing"
       },
       {
@@ -109,7 +109,7 @@ public:: true
         "label": "Remote Work"
       },
       {
-        "@id": "urn:ngm:class:distributed-team-coordination",
+        "@id": "urn:ngm:class:tc-0080-team-coordination",
         "label": "Distributed Team Coordination"
       }
     ],
@@ -137,22 +137,8 @@ public:: true
         "label": "Enterprise Security"
       },
       {
-        "@id": "urn:ngm:class:compliance-and-governance",
-        "label": "Compliance and Governance"
-      },
-      {
         "@id": "urn:ngm:class:knowledge-management",
         "label": "Knowledge Management"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:point-to-point-communication",
-        "label": "Point-to-Point Communication"
-      },
-      {
-        "@id": "urn:ngm:class:email-system",
-        "label": "Email System"
       }
     ],
     "bridgesTo": [

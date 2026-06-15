@@ -18,16 +18,12 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:department-of-computer-science",
+        "id": "urn:ngm:class:computer-science",
         "label": "Department of Computer Science"
       },
       {
         "id": "urn:ngm:class:alan-turing-institute",
         "label": "Alan Turing Institute"
-      },
-      {
-        "id": "urn:ngm:class:manchester-institute-of-biotechnology",
-        "label": "Manchester Institute of Biotechnology"
       }
     ],
     "requires": [

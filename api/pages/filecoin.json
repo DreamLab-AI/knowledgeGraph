@@ -37,16 +37,8 @@
         "label": "Decentralized Application"
       },
       {
-        "id": "urn:ngm:class:data-dao",
+        "id": "urn:ngm:class:dao",
         "label": "Data DAO"
-      },
-      {
-        "id": "urn:ngm:class:nft-storage",
-        "label": "NFT Storage"
-      },
-      {
-        "id": "urn:ngm:class:web3-storage",
-        "label": "Web3 Storage"
       }
     ],
     "dependsOn": [],
@@ -76,11 +68,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:ai-dataset-management",
-        "label": "AI Dataset Management"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-infrastructure",
+        "id": "urn:ngm:class:machine-learning-discipline-infrastructure",
         "label": "Machine Learning Infrastructure"
       }
     ],
@@ -119,7 +107,7 @@
         "label": "Peer-to-Peer Network"
       },
       {
-        "id": "urn:ngm:class:decentralized-autonomous-organisation",
+        "id": "urn:ngm:class:decentralized-autonomous-organization",
         "label": "Decentralized Autonomous Organisation"
       },
       {

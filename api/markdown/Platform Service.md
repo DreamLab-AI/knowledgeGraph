@@ -49,65 +49,163 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:authentication-service", "label": "Authentication Service"},
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
-      {"@id": "urn:ngm:class:notification-system", "label": "Notification System"},
-      {"@id": "urn:ngm:class:object-storage", "label": "Object Storage"},
-      {"@id": "urn:ngm:class:message-queue", "label": "Message Queue"},
-      {"@id": "urn:ngm:class:service-mesh", "label": "Service Mesh"}
+      {
+        "@id": "urn:ngm:class:authentication-service",
+        "label": "Authentication Service"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:notification-system",
+        "label": "Notification System"
+      },
+      {
+        "@id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      },
+      {
+        "@id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:platform-as-a-service", "label": "Platform-as-a-Service"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
+      {
+        "@id": "urn:ngm:class:platform-as-a-service",
+        "label": "Platform-as-a-Service"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:api-design", "label": "API Design"},
-      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"},
-      {"@id": "urn:ngm:class:service-level-agreement", "label": "Service Level Agreement"}
+      {
+        "@id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      },
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:service-level-agreement",
+        "label": "Service Level Agreement"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cloud-native-applications", "label": "Cloud-Native Applications"},
-      {"@id": "urn:ngm:class:metaverse-platform", "label": "Metaverse Platform"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:multi-tenant-architecture", "label": "Multi-Tenant Architecture"}
+      {
+        "@id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:container-orchestration", "label": "Container Orchestration"},
-      {"@id": "urn:ngm:class:infrastructure-as-code", "label": "Infrastructure-as-Code"}
+      {
+        "@id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure-as-Code"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"}
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:restful-api", "label": "RESTful API"},
-      {"@id": "urn:ngm:class:grpc", "label": "gRPC"},
-      {"@id": "urn:ngm:class:oauth2", "label": "OAuth2"}
+      {
+        "@id": "urn:ngm:class:restful-api",
+        "label": "RESTful API"
+      },
+      {
+        "@id": "urn:ngm:class:grpc",
+        "label": "gRPC"
+      },
+      {
+        "@id": "urn:ngm:class:oauth2",
+        "label": "OAuth2"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:observability", "label": "Observability"},
-      {"@id": "urn:ngm:class:horizontal-scaling", "label": "Horizontal Scaling"}
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "@id": "urn:ngm:class:horizontal-scalability",
+        "label": "Horizontal Scaling"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:openapi-specification", "label": "OpenAPI Specification"},
-      {"@id": "urn:ngm:class:cloud-native-computing-foundation", "label": "Cloud Native Computing Foundation"}
+      {
+        "@id": "urn:ngm:class:openapi-specification",
+        "label": "OpenAPI Specification"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:infrastructure-as-a-service", "label": "Infrastructure-as-a-Service"},
-      {"@id": "urn:ngm:class:software-as-a-service", "label": "Software-as-a-Service"}
+      {
+        "@id": "urn:ngm:class:infrastructure-as-a-service",
+        "label": "Infrastructure-as-a-Service"
+      },
+      {
+        "@id": "urn:ngm:class:software-as-a-service",
+        "label": "Software-as-a-Service"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-inference-service", "label": "AI Inference Service"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference Service"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:serverless-computing", "label": "Serverless Computing"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:serverless-architecture",
+        "label": "Serverless Computing"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:managed-service", "label": "Managed Service"},
-    {"@id": "urn:ngm:class:backend-service", "label": "Backend Service"}
+    {
+      "@id": "urn:ngm:class:managed-service",
+      "label": "Managed Service"
+    },
+    {
+      "@id": "urn:ngm:class:backend-service",
+      "label": "Backend Service"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

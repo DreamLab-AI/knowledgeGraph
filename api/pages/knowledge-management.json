@@ -18,20 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:knowledge-repository",
-        "label": "Knowledge Repository"
-      },
-      {
         "id": "urn:ngm:class:community-of-practice",
         "label": "Community of Practice"
-      },
-      {
-        "id": "urn:ngm:class:knowledge-audit",
-        "label": "Knowledge Audit"
-      },
-      {
-        "id": "urn:ngm:class:lessons-learned",
-        "label": "Lessons Learned"
       }
     ],
     "requires": [
@@ -54,7 +42,7 @@
         "label": "Organisational Learning"
       },
       {
-        "id": "urn:ngm:class:decision-support-system",
+        "id": "urn:ngm:class:decision-support",
         "label": "Decision Support System"
       }
     ],
@@ -64,10 +52,6 @@
       {
         "id": "urn:ngm:class:data-management",
         "label": "Data Management"
-      },
-      {
-        "id": "urn:ngm:class:document-management",
-        "label": "Document Management"
       }
     ],
     "bridgesTo": [

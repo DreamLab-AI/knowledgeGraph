@@ -128,7 +128,7 @@ public:: true
         "label": "Confusion Matrix"
       },
       {
-        "@id": "urn:ngm:class:binary-classification",
+        "@id": "urn:ngm:class:classification",
         "label": "Binary Classification"
       }
     ],
@@ -136,22 +136,12 @@ public:: true
       {
         "@id": "urn:ngm:class:threshold-optimisation",
         "label": "Threshold Optimisation"
-      },
-      {
-        "@id": "urn:ngm:class:false-positive-minimisation",
-        "label": "False Positive Minimisation"
       }
     ],
     "dependsOn": [
       {
         "@id": "urn:ngm:class:classification-threshold",
         "label": "Classification Threshold"
-      }
-    ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:performance-measurement",
-        "label": "Performance Measurement"
       }
     ],
     "uses": [
@@ -222,7 +212,7 @@ public:: true
         "label": "Class Imbalance"
       },
       {
-        "@id": "urn:ngm:class:model-card",
+        "@id": "urn:ngm:class:ai-model-card",
         "label": "Model Card"
       },
       {

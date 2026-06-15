@@ -102,10 +102,6 @@
       {
         "id": "urn:ngm:class:waterfall-development",
         "label": "Waterfall Development"
-      },
-      {
-        "id": "urn:ngm:class:siloed-operations",
-        "label": "Siloed Operations"
       }
     ],
     "bridgesTo": [
@@ -120,7 +116,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:docker",
+        "id": "urn:ngm:class:docker-containerisation-platform",
         "label": "Docker"
       },
       {
@@ -128,7 +124,7 @@
         "label": "Kubernetes"
       },
       {
-        "id": "urn:ngm:class:github-actions",
+        "id": "urn:ngm:class:git-hub-actions",
         "label": "GitHub Actions"
       },
       {
@@ -163,7 +159,7 @@
         "label": "Feature Flags"
       },
       {
-        "id": "urn:ngm:class:observability-platform",
+        "id": "urn:ngm:class:observability",
         "label": "Observability Platform"
       }
     ]

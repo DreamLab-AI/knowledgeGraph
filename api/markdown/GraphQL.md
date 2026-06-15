@@ -23,57 +23,109 @@ public:: true
   "definition": "GraphQL is a query language and runtime for APIs, developed by Facebook and open-sourced in 2015, that allows clients to specify precisely the data they need in a single request rather than consuming fixed-shape REST endpoints. It is defined by a strongly typed schema that describes the graph of types and fields the API exposes, and a runtime that resolves client queries against that schema by executing resolver functions. GraphQL eliminates the over-fetching and under-fetching problems inherent in REST by shifting data shape control to the client, and its introspection capability enables rich developer tooling and automatic documentation generation.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:api-standard", "label": "API Standard"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:api-standard",
+    "label": "API Standard"
+  },
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
-      {"@id": "urn:ngm:class:api-management", "label": "API Management"},
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
-      {"@id": "urn:ngm:class:grpc", "label": "gRPC"},
-      {"@id": "urn:ngm:class:openapi-specification", "label": "OpenAPI Specification"}
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:api-management",
+        "label": "API Management"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:grpc",
+        "label": "gRPC"
+      },
+      {
+        "@id": "urn:ngm:class:openapi-specification",
+        "label": "OpenAPI Specification"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:json-data-interchange-format", "label": "JSON Data Interchange Format"},
-      {"@id": "urn:ngm:class:schema-definition", "label": "Schema Definition"},
-      {"@id": "urn:ngm:class:http-protocol", "label": "HTTP Protocol"},
-      {"@id": "urn:ngm:class:type-system", "label": "Type System"}
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format",
+        "label": "JSON Data Interchange Format"
+      },
+      {
+        "@id": "urn:ngm:class:schema-definition",
+        "label": "Schema Definition"
+      },
+      {
+        "@id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:type-system",
+        "label": "Type System"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:api-integration", "label": "API Integration"},
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:schema-introspection", "label": "Schema Introspection"},
-      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:graphql-schema-definition-language", "label": "GraphQL Schema Definition Language"},
-      {"@id": "urn:ngm:class:graphql-query", "label": "GraphQL Query"},
-      {"@id": "urn:ngm:class:graphql-subscription", "label": "GraphQL Subscription"}
+      {
+        "@id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      },
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:type-system", "label": "Type System"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:declarative-data-fetching", "label": "Declarative Data Fetching"}
+      {
+        "@id": "urn:ngm:class:type-system",
+        "label": "Type System"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:federation-pattern", "label": "Federation Pattern"},
-      {"@id": "urn:ngm:class:dataloader-pattern", "label": "DataLoader Pattern"}
+      {
+        "@id": "urn:ngm:class:federation",
+        "label": "Federation Pattern"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
-      {"@id": "urn:ngm:class:grpc", "label": "gRPC"}
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:grpc",
+        "label": "gRPC"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:graphql-foundation", "label": "GraphQL Foundation"},
-      {"@id": "urn:ngm:class:linux-foundation", "label": "Linux Foundation"}
+      {
+        "@id": "urn:ngm:class:linux-foundation",
+        "label": "Linux Foundation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:graph-query-language", "label": "Graph Query Language"}
+    {
+      "@id": "urn:ngm:class:graph-query-language",
+      "label": "Graph Query Language"
+    }
   ],
   "quality": 0.72,
   "provenance": {

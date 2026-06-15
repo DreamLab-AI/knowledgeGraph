@@ -411,36 +411,16 @@ alias:: PhysicalLayer
         "label": "Bluetooth LE"
       },
       {
-        "@id": "urn:ngm:class:cable-plant",
-        "label": "Cable Plant"
-      },
-      {
         "@id": "urn:ngm:class:clock-recovery",
         "label": "Clock Recovery"
-      },
-      {
-        "@id": "urn:ngm:class:co-packaged-optics",
-        "label": "Co-Packaged Optics"
       },
       {
         "@id": "urn:ngm:class:connector-standards",
         "label": "Connector Standards"
       },
       {
-        "@id": "urn:ngm:class:ethernet-phy",
-        "label": "Ethernet PHY"
-      },
-      {
         "@id": "urn:ngm:class:forward-error-correction",
         "label": "Forward Error Correction"
-      },
-      {
-        "@id": "urn:ngm:class:line-coding",
-        "label": "Line Coding"
-      },
-      {
-        "@id": "urn:ngm:class:modulation",
-        "label": "Modulation"
       },
       {
         "@id": "urn:ngm:class:network-interface-card",
@@ -449,18 +429,6 @@ alias:: PhysicalLayer
       {
         "@id": "urn:ngm:class:optical-fibre",
         "label": "Optical Fibre"
-      },
-      {
-        "@id": "urn:ngm:class:photonic-integrated-circuit",
-        "label": "Photonic Integrated Circuit"
-      },
-      {
-        "@id": "urn:ngm:class:ser-des",
-        "label": "SerDes"
-      },
-      {
-        "@id": "urn:ngm:class:transceiver",
-        "label": "Transceiver"
       },
       {
         "@id": "urn:ngm:class:wireless-radio",
@@ -477,10 +445,6 @@ alias:: PhysicalLayer
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:channel-equalisation",
-        "label": "Channel Equalisation"
-      },
-      {
         "@id": "urn:ngm:class:clock-recovery",
         "label": "Clock Recovery"
       },
@@ -491,27 +455,11 @@ alias:: PhysicalLayer
       {
         "@id": "urn:ngm:class:forward-error-correction",
         "label": "Forward Error Correction"
-      },
-      {
-        "@id": "urn:ngm:class:physical-medium",
-        "label": "Physical Medium"
-      },
-      {
-        "@id": "urn:ngm:class:power-budget",
-        "label": "Power Budget"
-      },
-      {
-        "@id": "urn:ngm:class:signal-encoding",
-        "label": "Signal Encoding"
-      },
-      {
-        "@id": "urn:ngm:class:signal-integrity",
-        "label": "Signal Integrity"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:5-g-nr",
+        "@id": "urn:ngm:class:5-g",
         "label": "5G NR"
       },
       {
@@ -525,10 +473,6 @@ alias:: PhysicalLayer
       {
         "@id": "urn:ngm:class:high-performance-computing",
         "label": "High-Performance Computing"
-      },
-      {
-        "@id": "urn:ngm:class:hyperscale-data-centre",
-        "label": "Hyperscale Data Centre"
       },
       {
         "@id": "urn:ngm:class:industrial-io-t",
@@ -553,18 +497,6 @@ alias:: PhysicalLayer
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:3-gpp-nr",
-        "label": "3GPP NR"
-      },
-      {
-        "@id": "urn:ngm:class:bluetooth-core-specification",
-        "label": "Bluetooth Core Specification"
-      },
-      {
-        "@id": "urn:ngm:class:ieee-802-11be",
-        "label": "IEEE 802.11be"
-      },
-      {
         "@id": "urn:ngm:class:ieee-802-15-4",
         "label": "IEEE 802.15.4"
       },
@@ -573,27 +505,11 @@ alias:: PhysicalLayer
         "label": "IEEE 802.3"
       },
       {
-        "@id": "urn:ngm:class:itu-t-g-694-1",
-        "label": "ITU-T G.694.1"
-      },
-      {
-        "@id": "urn:ngm:class:lo-ra-wan-specification",
+        "@id": "urn:ngm:class:lo-ra-wan",
         "label": "LoRaWAN Specification"
-      },
-      {
-        "@id": "urn:ngm:class:oif-common-electrical-interface",
-        "label": "OIF Common Electrical Interface"
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:chirp-spread-spectrum",
-        "label": "Chirp Spread Spectrum"
-      },
-      {
-        "@id": "urn:ngm:class:dsp",
-        "label": "DSP"
-      },
       {
         "@id": "urn:ngm:class:ldpc-codes",
         "label": "LDPC Codes"
@@ -603,20 +519,8 @@ alias:: PhysicalLayer
         "label": "MIMO Antenna"
       },
       {
-        "@id": "urn:ngm:class:nrz-signalling",
-        "label": "NRZ Signalling"
-      },
-      {
         "@id": "urn:ngm:class:ofdm",
         "label": "OFDM"
-      },
-      {
-        "@id": "urn:ngm:class:pam-4-modulation",
-        "label": "PAM-4 Modulation"
-      },
-      {
-        "@id": "urn:ngm:class:qam",
-        "label": "QAM"
       },
       {
         "@id": "urn:ngm:class:reed-solomon-codes",
@@ -627,10 +531,6 @@ alias:: PhysicalLayer
       {
         "@id": "urn:ngm:class:channel-coding",
         "label": "Channel Coding"
-      },
-      {
-        "@id": "urn:ngm:class:dispersion-compensation",
-        "label": "Dispersion Compensation"
       },
       {
         "@id": "urn:ngm:class:mimo-antenna",
@@ -645,26 +545,14 @@ alias:: PhysicalLayer
         "label": "Optical Transport Network"
       },
       {
-        "@id": "urn:ngm:class:propagation-loss",
-        "label": "Propagation Loss"
-      },
-      {
         "@id": "urn:ngm:class:radio-access-network",
         "label": "Radio Access Network"
-      },
-      {
-        "@id": "urn:ngm:class:switch-fabric",
-        "label": "Switch Fabric"
       }
     ],
     "supports": [
       {
         "@id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicle"
-      },
-      {
-        "@id": "urn:ngm:class:financial-trading-networks",
-        "label": "Financial Trading Networks"
       },
       {
         "@id": "urn:ngm:class:high-performance-computing",
@@ -705,28 +593,12 @@ alias:: PhysicalLayer
         "label": "ETSI"
       },
       {
-        "@id": "urn:ngm:class:ieee-802-11-working-group",
-        "label": "IEEE 802.11 Working Group"
-      },
-      {
-        "@id": "urn:ngm:class:ieee-802-3-task-force",
-        "label": "IEEE 802.3 Task Force"
-      },
-      {
         "@id": "urn:ngm:class:iso-iec-jtc-1",
         "label": "ISO/IEC JTC 1"
       },
       {
-        "@id": "urn:ngm:class:itu-t-sg15",
-        "label": "ITU-T SG15"
-      },
-      {
         "@id": "urn:ngm:class:lo-ra-alliance",
         "label": "LoRa Alliance"
-      },
-      {
-        "@id": "urn:ngm:class:oif",
-        "label": "OIF"
       }
     ]
   },

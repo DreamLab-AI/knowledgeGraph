@@ -38,50 +38,129 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"},
-      {"@id": "urn:ngm:class:public-goods-funding", "label": "Public Goods Funding"},
-      {"@id": "urn:ngm:class:sybil-resistance", "label": "Sybil Resistance"},
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
+        "label": "Public Goods Funding"
+      },
+      {
+        "@id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:dao", "label": "DAO"},
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"},
-      {"@id": "urn:ngm:class:open-source-sustainability", "label": "Open Source Sustainability"},
-      {"@id": "urn:ngm:class:democratic-resource-allocation", "label": "Democratic Resource Allocation"}
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-sustainability",
+        "label": "Open Source Sustainability"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:welfare-economics", "label": "Welfare Economics"},
-      {"@id": "urn:ngm:class:matching-funds", "label": "Matching Funds"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"}
+      {
+        "@id": "urn:ngm:class:welfare-economics",
+        "label": "Welfare Economics"
+      },
+      {
+        "@id": "urn:ngm:class:matching-funds",
+        "label": "Matching Funds"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:quadratic-voting", "label": "Quadratic Voting"},
-      {"@id": "urn:ngm:class:one-person-one-vote", "label": "One Person One Vote"},
-      {"@id": "urn:ngm:class:plutocratic-voting", "label": "Plutocratic Voting"},
-      {"@id": "urn:ngm:class:linear-matching", "label": "Linear Matching"}
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "@id": "urn:ngm:class:one-person-one-vote",
+        "label": "One Person One Vote"
+      },
+      {
+        "@id": "urn:ngm:class:plutocratic-voting",
+        "label": "Plutocratic Voting"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:quadratic-voting", "label": "Quadratic Voting"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:gitcoin-grants", "label": "Gitcoin Grants"},
-      {"@id": "urn:ngm:class:collective-action-problem", "label": "Collective Action Problem"},
-      {"@id": "urn:ngm:class:public-goods", "label": "Public Goods"},
-      {"@id": "urn:ngm:class:liberal-radicalism", "label": "Liberal Radicalism"}
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:gitcoin-grants",
+        "label": "Gitcoin Grants"
+      },
+      {
+        "@id": "urn:ngm:class:collective-action",
+        "label": "Collective Action Problem"
+      },
+      {
+        "@id": "urn:ngm:class:public-goods",
+        "label": "Public Goods"
+      },
+      {
+        "@id": "urn:ngm:class:liberal-radicalism",
+        "label": "Liberal Radicalism"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:cooperative-game-theory", "label": "Cooperative Game Theory"},
-      {"@id": "urn:ngm:class:social-choice-theory", "label": "Social Choice Theory"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+      {
+        "@id": "urn:ngm:class:cooperative-game-theory",
+        "label": "Cooperative Game Theory"
+      },
+      {
+        "@id": "urn:ngm:class:social-choice-theory",
+        "label": "Social Choice Theory"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:bc-defi-and-economics", "label": "DeFi and Economics"}
+      {
+        "@id": "urn:ngm:class:bc-defi-and-economics",
+        "label": "DeFi and Economics"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:liberal-radicalism-funding", "label": "Liberal Radicalism Funding"},
-    {"@id": "urn:ngm:class:qf", "label": "QF"}
+    {
+      "@id": "urn:ngm:class:liberal-radicalism-funding",
+      "label": "Liberal Radicalism Funding"
+    },
+    {
+      "@id": "urn:ngm:class:qf",
+      "label": "QF"
+    }
   ],
   "quality": 0.74,
   "provenance": {

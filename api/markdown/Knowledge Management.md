@@ -53,46 +53,105 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:knowledge-repository", "label": "Knowledge Repository"},
-      {"@id": "urn:ngm:class:community-of-practice", "label": "Community of Practice"},
-      {"@id": "urn:ngm:class:knowledge-audit", "label": "Knowledge Audit"},
-      {"@id": "urn:ngm:class:lessons-learned", "label": "Lessons Learned"}
+      {
+        "@id": "urn:ngm:class:community-of-practice",
+        "label": "Community of Practice"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:taxonomy", "label": "Taxonomy"},
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:taxonomy",
+        "label": "Taxonomy"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:organisational-learning", "label": "Organisational Learning"},
-      {"@id": "urn:ngm:class:decision-support-system", "label": "Decision Support System"}
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:organisational-learning",
+        "label": "Organisational Learning"
+      },
+      {
+        "@id": "urn:ngm:class:decision-support",
+        "label": "Decision Support System"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:metadata", "label": "Metadata"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:data-management", "label": "Data Management"},
-      {"@id": "urn:ngm:class:document-management", "label": "Document Management"}
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web Linked Data Standard"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:information-architecture", "label": "Information Architecture"},
-      {"@id": "urn:ngm:class:enterprise-search", "label": "Enterprise Search"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:information-management", "label": "Information Management"}
+      {
+        "@id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-search",
+        "label": "Enterprise Search"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:information-management",
+        "label": "Information Management"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:km", "label": "KM"},
-    {"@id": "urn:ngm:class:enterprise-knowledge-management", "label": "Enterprise Knowledge Management"}
+    {
+      "@id": "urn:ngm:class:km",
+      "label": "KM"
+    },
+    {
+      "@id": "urn:ngm:class:enterprise-knowledge-management",
+      "label": "Enterprise Knowledge Management"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -18,12 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:content-distribution-platform",
+        "id": "urn:ngm:class:content-distribution",
         "label": "Content Distribution Platform"
-      },
-      {
-        "id": "urn:ngm:class:monetization-system",
-        "label": "Monetization System"
       },
       {
         "id": "urn:ngm:class:token-economy",

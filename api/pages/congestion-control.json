@@ -18,21 +18,13 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:slow-start",
-        "label": "Slow Start"
-      },
-      {
-        "id": "urn:ngm:class:congestion-avoidance",
-        "label": "Congestion Avoidance"
-      },
-      {
         "id": "urn:ngm:class:active-queue-management",
         "label": "Active Queue Management"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:packet-loss-detection",
+        "id": "urn:ngm:class:packet-loss-recovery",
         "label": "Packet Loss Detection"
       },
       {
@@ -50,7 +42,7 @@
         "label": "Latency Management Protocol"
       },
       {
-        "id": "urn:ngm:class:network-fairness",
+        "id": "urn:ngm:class:fairness",
         "label": "Network Fairness"
       }
     ],
@@ -74,7 +66,7 @@
         "label": "BBR Algorithm"
       },
       {
-        "id": "urn:ngm:class:quic-transport",
+        "id": "urn:ngm:class:quic",
         "label": "QUIC Transport"
       }
     ],
@@ -99,10 +91,6 @@
       }
     ],
     "uses": [
-      {
-        "id": "urn:ngm:class:explicit-congestion-notification",
-        "label": "Explicit Congestion Notification"
-      },
       {
         "id": "urn:ngm:class:sliding-window-protocol",
         "label": "Sliding Window Protocol"

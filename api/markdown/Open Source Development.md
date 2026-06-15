@@ -23,54 +23,129 @@ public:: true
   "definition": "Open source development is a software production methodology in which source code is made publicly available under licences permitting inspection, modification, and redistribution, enabling distributed communities of contributors to collaboratively build and maintain software. The model contrasts with proprietary development by prioritising transparency, peer review, and meritocratic contribution over closed, hierarchical ownership. It encompasses practices including version-controlled public repositories, issue tracking, pull-request-based code review, and community governance structures. Open source development has become the dominant paradigm for infrastructure software, AI frameworks, and blockchain protocols.",
   "domain": "distributed-collaboration",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:software-development", "label": "Software Development"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:software-development",
+    "label": "Software Development"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:code-review", "label": "Code Review"},
-      {"@id": "urn:ngm:class:pull-request", "label": "Pull Request"},
-      {"@id": "urn:ngm:class:issue-tracking", "label": "Issue Tracking"},
-      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"}
+      {
+        "@id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      },
+      {
+        "@id": "urn:ngm:class:pull-request",
+        "label": "Pull Request"
+      },
+      {
+        "@id": "urn:ngm:class:issue-tracking",
+        "label": "Issue Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
-      {"@id": "urn:ngm:class:open-source-licence", "label": "Open Source Licence"},
-      {"@id": "urn:ngm:class:software-development-process", "label": "Software Development Process"}
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-licence",
+        "label": "Open Source Licence"
+      },
+      {
+        "@id": "urn:ngm:class:software-development-process",
+        "label": "Software Development Process"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:open-source-ai", "label": "Open-Source AI"},
-      {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"},
-      {"@id": "urn:ngm:class:knowledge-commons", "label": "Knowledge Commons"},
-      {"@id": "urn:ngm:class:supply-chain-transparency", "label": "Supply Chain Transparency"}
+      {
+        "@id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      },
+      {
+        "@id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:software-development-process", "label": "Software Development Process"},
-      {"@id": "urn:ngm:class:distributed-version-control", "label": "Distributed Version Control"},
-      {"@id": "urn:ngm:class:software-bill-of-materials", "label": "Software Bill of Materials"}
+      {
+        "@id": "urn:ngm:class:software-development-process",
+        "label": "Software Development Process"
+      },
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Distributed Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:software-bill-of-materials",
+        "label": "Software Bill of Materials"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:community-governance", "label": "Community Governance"},
-      {"@id": "urn:ngm:class:ai-augmented-software-engineering", "label": "AI-Augmented Software Engineering"},
-      {"@id": "urn:ngm:class:decentralised-governance", "label": "Decentralised Governance"}
+      {
+        "@id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-augmented-software-engineering",
+        "label": "AI-Augmented Software Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proprietary-software", "label": "Proprietary Software"},
-      {"@id": "urn:ngm:class:closed-source-development", "label": "Closed-Source Development"}
+      {
+        "@id": "urn:ngm:class:proprietary-software",
+        "label": "Proprietary Software"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"},
-      {"@id": "urn:ngm:class:ai-model-release", "label": "AI Model Release"},
-      {"@id": "urn:ngm:class:supply-chain-security", "label": "Supply Chain Security"}
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:ai-model",
+        "label": "AI Model Release"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"},
-      {"@id": "urn:ngm:class:open-source-framework", "label": "Open Source Framework"},
-      {"@id": "urn:ngm:class:open-source-sustainability", "label": "Open Source Sustainability"},
-      {"@id": "urn:ngm:class:software-foundation", "label": "Software Foundation"}
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-framework",
+        "label": "Open Source Framework"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-sustainability",
+        "label": "Open Source Sustainability"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:free-and-open-source-software-development", "label": "Free and Open Source Software Development"},
-    {"@id": "urn:ngm:class:foss-development", "label": "FOSS Development"}
+    {
+      "@id": "urn:ngm:class:free-and-open-source-software-development",
+      "label": "Free and Open Source Software Development"
+    },
+    {
+      "@id": "urn:ngm:class:foss-development",
+      "label": "FOSS Development"
+    }
   ],
   "quality": 0.72,
   "provenance": {

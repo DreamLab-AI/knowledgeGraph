@@ -42,15 +42,11 @@
         "label": "Counterfactual Analysis"
       },
       {
-        "id": "urn:ngm:class:intersectional-analysis",
+        "id": "urn:ngm:class:intersectional-fairness",
         "label": "Intersectional Analysis"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:protected-attribute-data",
-        "label": "Protected Attribute Data"
-      },
       {
         "id": "urn:ngm:class:ground-truth-labels",
         "label": "Ground Truth Labels"
@@ -62,15 +58,15 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:bias-mitigation",
+        "id": "urn:ngm:class:bias-mitigation-techniques",
         "label": "Bias Mitigation"
       },
       {
-        "id": "urn:ngm:class:ai-fairness-certification",
+        "id": "urn:ngm:class:ai-fairness",
         "label": "AI Fairness Certification"
       },
       {
-        "id": "urn:ngm:class:regulatory-compliance-reporting",
+        "id": "urn:ngm:class:regulatory-reporting",
         "label": "Regulatory Compliance Reporting"
       }
     ],
@@ -78,7 +74,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:bias-amplification",
+        "id": "urn:ngm:class:bias",
         "label": "Bias Amplification"
       }
     ],
@@ -98,7 +94,7 @@
         "label": "Causal Inference"
       },
       {
-        "id": "urn:ngm:class:machine-learning-model-evaluation",
+        "id": "urn:ngm:class:model-evaluation",
         "label": "Machine Learning Model Evaluation"
       },
       {
@@ -126,7 +122,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:ieee-p7003-2021",
+        "id": "urn:ngm:class:ieee-p-7003-2021",
         "label": "IEEE P7003-2021"
       },
       {

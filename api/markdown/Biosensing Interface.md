@@ -184,35 +184,11 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:electrocardiogram-sensor",
-        "label": "Electrocardiogram Sensor"
-      },
-      {
-        "@id": "urn:ngm:class:electroencephalography-sensor",
-        "label": "Electroencephalography Sensor"
-      },
-      {
-        "@id": "urn:ngm:class:galvanic-skin-response-sensor",
-        "label": "Galvanic Skin Response Sensor"
-      },
-      {
-        "@id": "urn:ngm:class:pulse-oximeter",
-        "label": "Pulse Oximeter"
-      },
-      {
         "@id": "urn:ngm:class:signal-processing-unit",
         "label": "Signal Processing Unit"
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:skin-contact-electrodes",
-        "label": "Skin Contact Electrodes"
-      },
-      {
-        "@id": "urn:ngm:class:wireless-communication-module",
-        "label": "Wireless Communication Module"
-      },
       {
         "@id": "urn:ngm:class:analog-to-digital-converter",
         "label": "Analog To Digital Converter"
@@ -224,30 +200,14 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:biofeedback-systems",
-        "label": "Biofeedback Systems"
-      },
-      {
-        "@id": "urn:ngm:class:emotional-state-detection",
-        "label": "Emotional State Detection"
-      },
-      {
-        "@id": "urn:ngm:class:stress-monitoring",
-        "label": "Stress Monitoring"
-      },
-      {
         "@id": "urn:ngm:class:adaptive-virtual-experience",
         "label": "Adaptive Virtual Experience"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:affective-computing-framework",
+        "@id": "urn:ngm:class:affective-computing",
         "label": "Affective Computing Framework"
-      },
-      {
-        "@id": "urn:ngm:class:physiological-computing-system",
-        "label": "Physiological Computing System"
       }
     ]
   },

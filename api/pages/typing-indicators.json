@@ -20,7 +20,7 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:conversational-presence",
+        "id": "urn:ngm:class:presence",
         "label": "Conversational Presence"
       }
     ],

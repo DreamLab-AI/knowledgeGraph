@@ -354,7 +354,7 @@ public:: true
         "label": "Health Index"
       },
       {
-        "@id": "urn:ngm:class:iio-t-sensors",
+        "@id": "urn:ngm:class:io-t-sensors",
         "label": "IIoT Sensors"
       },
       {
@@ -432,14 +432,6 @@ public:: true
         "label": "Convolutional Neural Network"
       },
       {
-        "@id": "urn:ngm:class:envelope-analysis",
-        "label": "Envelope Analysis"
-      },
-      {
-        "@id": "urn:ngm:class:fft",
-        "label": "FFT"
-      },
-      {
         "@id": "urn:ngm:class:gradient-boosting",
         "label": "Gradient Boosting"
       },
@@ -458,14 +450,6 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:c-mapss-dataset",
-        "label": "C-MAPSS Dataset"
-      },
-      {
-        "@id": "urn:ngm:class:ibm-maximo",
-        "label": "IBM Maximo"
-      },
-      {
         "@id": "urn:ngm:class:iso-10816",
         "label": "ISO 10816"
       },
@@ -478,23 +462,11 @@ public:: true
         "label": "OPC UA"
       },
       {
-        "@id": "urn:ngm:class:siemens-xcelerator",
-        "label": "Siemens Xcelerator"
-      },
-      {
         "@id": "urn:ngm:class:nvidia-corporation-omniverse-platform",
         "label": "NVIDIA Omniverse Platform"
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:non-destructive-evaluation",
-        "label": "Non-Destructive Evaluation"
-      },
-      {
-        "@id": "urn:ngm:class:prognostics-and-health-management",
-        "label": "Prognostics and Health Management"
-      },
       {
         "@id": "urn:ngm:class:reliability-engineering",
         "label": "Reliability Engineering"
@@ -512,37 +484,7 @@ public:: true
         "label": "Robotics"
       }
     ],
-    "supports": [
-      {
-        "@id": "urn:ngm:class:aerospace-mro",
-        "label": "Aerospace MRO"
-      },
-      {
-        "@id": "urn:ngm:class:manufacturing-quality-control",
-        "label": "Manufacturing Quality Control"
-      },
-      {
-        "@id": "urn:ngm:class:oil-and-gas-operations",
-        "label": "Oil and Gas Operations"
-      },
-      {
-        "@id": "urn:ngm:class:power-generation",
-        "label": "Power Generation"
-      },
-      {
-        "@id": "urn:ngm:class:railway-maintenance",
-        "label": "Railway Maintenance"
-      },
-      {
-        "@id": "urn:ngm:class:wind-energy",
-        "label": "Wind Energy"
-      }
-    ],
     "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:iec-61499",
-        "label": "IEC 61499"
-      },
       {
         "@id": "urn:ngm:class:ieee-1451",
         "label": "IEEE 1451"
@@ -550,22 +492,6 @@ public:: true
       {
         "@id": "urn:ngm:class:iso-10816",
         "label": "ISO 10816"
-      },
-      {
-        "@id": "urn:ngm:class:iso-13374",
-        "label": "ISO 13374"
-      },
-      {
-        "@id": "urn:ngm:class:iso-13379",
-        "label": "ISO 13379"
-      },
-      {
-        "@id": "urn:ngm:class:iso-20816",
-        "label": "ISO 20816"
-      },
-      {
-        "@id": "urn:ngm:class:iso-55000",
-        "label": "ISO 55000"
       }
     ],
     "bridgesTo": [

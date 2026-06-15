@@ -38,48 +38,119 @@ public:: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money", "label": "Bitcoin As Money"},
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition", "label": "Bitcoin Value Proposition"},
-      {"@id": "urn:ngm:class:monetary-system", "label": "Monetary System"},
-      {"@id": "urn:ngm:class:austrian-economics", "label": "Austrian Economics"},
-      {"@id": "urn:ngm:class:sound-money", "label": "Sound Money"},
-      {"@id": "urn:ngm:class:monetary-sovereignty", "label": "Monetary Sovereignty"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-as-money",
+        "label": "Bitcoin As Money"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-value-proposition",
+        "label": "Bitcoin Value Proposition"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-system",
+        "label": "Monetary System"
+      },
+      {
+        "@id": "urn:ngm:class:austrian-economics",
+        "label": "Austrian Economics"
+      },
+      {
+        "@id": "urn:ngm:class:sound-money",
+        "label": "Sound Money"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-sovereignty",
+        "label": "Monetary Sovereignty"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
-      {"@id": "urn:ngm:class:bitcoin-mining", "label": "Bitcoin Mining"},
-      {"@id": "urn:ngm:class:halving", "label": "Halving"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "@id": "urn:ngm:class:halving",
+        "label": "Halving"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:inflation", "label": "Inflation"},
-      {"@id": "urn:ngm:class:fiat-currency", "label": "Fiat Currency"},
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"}
+      {
+        "@id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      },
+      {
+        "@id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:decentralisation", "label": "Decentralisation"},
-      {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bitcoin-treasury-reserve", "label": "Bitcoin Treasury Reserve"},
-      {"@id": "urn:ngm:class:sovereign-bitcoin-adoption", "label": "Sovereign Bitcoin Adoption"},
-      {"@id": "urn:ngm:class:bitcoin-etf", "label": "Bitcoin ETF"}
+      {
+        "@id": "urn:ngm:class:strategic-bitcoin-reserve",
+        "label": "Bitcoin Treasury Reserve"
+      },
+      {
+        "@id": "urn:ngm:class:sovereign-bitcoin-adoption",
+        "label": "Sovereign Bitcoin Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf",
+        "label": "Bitcoin ETF"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:network-effect", "label": "Network Effect"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"}
+      {
+        "@id": "urn:ngm:class:network-effects",
+        "label": "Network Effect"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-asset-governance", "label": "Digital Asset Governance"},
-      {"@id": "urn:ngm:class:macroeconomics", "label": "Macroeconomics"}
+      {
+        "@id": "urn:ngm:class:digital-asset-governance",
+        "label": "Digital Asset Governance"
+      },
+      {
+        "@id": "urn:ngm:class:macroeconomics",
+        "label": "Macroeconomics"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:bitcoin-monetary-standard", "label": "Bitcoin Monetary Standard"}
+    {
+      "@id": "urn:ngm:class:bitcoin-monetary-standard",
+      "label": "Bitcoin Monetary Standard"
+    }
   ],
   "qualityScore": 0.72,
-  "maturity": "emerging",
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",

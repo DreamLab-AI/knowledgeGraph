@@ -23,53 +23,129 @@ public:: true
   "definition": "A revocation registry is a data structure or service that maintains the validity status of issued verifiable credentials or digital certificates, allowing verifiers to check whether a credential has been revoked by its issuer before accepting a presentation. In traditional PKI systems this role is fulfilled by Certificate Revocation Lists (CRLs) and OCSP responders; in self-sovereign identity ecosystems, revocation registries are implemented as privacy-preserving mechanisms including W3C Status List 2021 (bitstring-based), Hyperledger AnonCreds revocation with cryptographic accumulators, and on-chain smart contract registries. A well-designed revocation registry balances timely status updates, verifier privacy (preventing issuers from tracking when credentials are checked), and scalability to large credential populations.",
   "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:credential-verification", "label": "Credential Verification"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:credential-verification",
+      "label": "Credential Verification"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:verifiable-credential-standard", "label": "Verifiable Credential Standard"},
-      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"},
-      {"@id": "urn:ngm:class:digital-certificate", "label": "Digital Certificate"},
-      {"@id": "urn:ngm:class:certificate-transparency", "label": "Certificate Transparency"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential-standard",
+        "label": "Verifiable Credential Standard"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-transparency",
+        "label": "Certificate Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"},
-      {"@id": "urn:ngm:class:selective-disclosure", "label": "Selective Disclosure"},
-      {"@id": "urn:ngm:class:cryptographic-accumulator", "label": "Cryptographic Accumulator"},
-      {"@id": "urn:ngm:class:bitstring-status-list", "label": "Bitstring Status List"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "@id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-accumulator",
+        "label": "Cryptographic Accumulator"
+      },
+      {
+        "@id": "urn:ngm:class:bitstring-status-list",
+        "label": "Bitstring Status List"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"},
-      {"@id": "urn:ngm:class:credential-issuance", "label": "Credential Issuance"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:trust-management", "label": "Trust Management"}
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "@id": "urn:ngm:class:credential-issuance",
+        "label": "Credential Issuance"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:trust-management",
+        "label": "Trust Management"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:ocsp-protocol", "label": "OCSP Protocol"},
-      {"@id": "urn:ngm:class:certificate-revocation-list", "label": "Certificate Revocation List"}
+      {
+        "@id": "urn:ngm:class:certificate-revocation-list",
+        "label": "Certificate Revocation List"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:privacy-preserving-protocol", "label": "Privacy-Preserving Protocol"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:credential-expiry", "label": "Credential Expiry"}
+      {
+        "@id": "urn:ngm:class:privacy-preserving-protocol",
+        "label": "Privacy-Preserving Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:credential-status-registry", "label": "Credential Status Registry"},
-    {"@id": "urn:ngm:class:credential-revocation-list", "label": "Credential Revocation List"}
+    {
+      "@id": "urn:ngm:class:credential-status-registry",
+      "label": "Credential Status Registry"
+    },
+    {
+      "@id": "urn:ngm:class:credential-revocation-list",
+      "label": "Credential Revocation List"
+    }
   ],
   "quality": 0.72,
   "provenance": {

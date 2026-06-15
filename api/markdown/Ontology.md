@@ -38,47 +38,115 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:owl-class-hierarchy", "label": "OWL Class Hierarchy"},
-      {"@id": "urn:ngm:class:description-logics", "label": "Description Logics"},
-      {"@id": "urn:ngm:class:sparql", "label": "SPARQL"}
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:owl-class-hierarchy",
+        "label": "OWL Class Hierarchy"
+      },
+      {
+        "@id": "urn:ngm:class:description-logic",
+        "label": "Description Logics"
+      },
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:automated-reasoning", "label": "Automated Reasoning"},
-      {"@id": "urn:ngm:class:linked-open-data", "label": "Linked Open Data"},
-      {"@id": "urn:ngm:class:semantic-interoperability", "label": "Semantic Interoperability"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:linked-open-data",
+        "label": "Linked Open Data"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:formal-language", "label": "Formal Language"},
-      {"@id": "urn:ngm:class:axiom", "label": "Axiom"}
+      {
+        "@id": "urn:ngm:class:formal-language",
+        "label": "Formal Language"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:class-hierarchy", "label": "Class Hierarchy"},
-      {"@id": "urn:ngm:class:object-property", "label": "Object Property"},
-      {"@id": "urn:ngm:class:data-property", "label": "Data Property"}
+      {
+        "@id": "urn:ngm:class:owl-class-hierarchy",
+        "label": "Class Hierarchy"
+      },
+      {
+        "@id": "urn:ngm:class:object-property",
+        "label": "Object Property"
+      },
+      {
+        "@id": "urn:ngm:class:data-property",
+        "label": "Data Property"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:database-schema", "label": "Database Schema"},
-      {"@id": "urn:ngm:class:taxonomy", "label": "Taxonomy"}
+      {
+        "@id": "urn:ngm:class:database-schema",
+        "label": "Database Schema"
+      },
+      {
+        "@id": "urn:ngm:class:taxonomy",
+        "label": "Taxonomy"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:upper-ontology", "label": "Upper Ontology"}
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:upper-ontology",
+        "label": "Upper Ontology"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:formal-ontology", "label": "Formal Ontology"},
-    {"@id": "urn:ngm:class:computational-ontology", "label": "Computational Ontology"}
+    {
+      "@id": "urn:ngm:class:formal-ontology",
+      "label": "Formal Ontology"
+    },
+    {
+      "@id": "urn:ngm:class:computational-ontology",
+      "label": "Computational Ontology"
+    }
   ],
   "quality": 0.74,
   "provenance": {

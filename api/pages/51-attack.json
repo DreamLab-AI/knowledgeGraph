@@ -45,7 +45,7 @@
         "label": "Transaction Censorship"
       },
       {
-        "id": "urn:ngm:class:blockchain-reorganization",
+        "id": "urn:ngm:class:chain-reorganization",
         "label": "Blockchain Reorganization"
       }
     ],
@@ -95,10 +95,6 @@
       {
         "id": "urn:ngm:class:blockchain-security",
         "label": "Blockchain Security"
-      },
-      {
-        "id": "urn:ngm:class:consensus-attack",
-        "label": "Consensus Attack"
       }
     ],
     "relatedTo": [
@@ -115,12 +111,8 @@
         "label": "Transaction"
       },
       {
-        "id": "urn:ngm:class:ethereum-classic",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-classic",
         "label": "Ethereum Classic"
-      },
-      {
-        "id": "urn:ngm:class:bitcoin-gold",
-        "label": "Bitcoin Gold"
       }
     ]
   },

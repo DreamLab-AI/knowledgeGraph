@@ -155,24 +155,12 @@ alias:: KnowledgeGraph
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:entity-node",
-        "label": "Entity Node"
-      },
-      {
         "@id": "urn:ngm:class:inference-engine",
         "label": "Inference Engine"
       },
       {
-        "@id": "urn:ngm:class:ontology-schema",
-        "label": "Ontology Schema"
-      },
-      {
         "@id": "urn:ngm:class:relationship-edge",
         "label": "Relationship Edge"
-      },
-      {
-        "@id": "urn:ngm:class:semantic-property",
-        "label": "Semantic Property"
       }
     ],
     "requires": [
@@ -195,7 +183,7 @@ alias:: KnowledgeGraph
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:ai-reasoning",
+        "@id": "urn:ngm:class:reasoning",
         "label": "AI Reasoning"
       },
       {

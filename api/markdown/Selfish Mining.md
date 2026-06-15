@@ -89,48 +89,103 @@ public:: true
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:51-attack", "label": "51% Attack"},
-      {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"},
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"},
-      {"@id": "urn:ngm:class:double-spending", "label": "Double Spending"},
-      {"@id": "urn:ngm:class:longest-chain-rule", "label": "Longest Chain Rule"},
-      {"@id": "urn:ngm:class:hash-rate", "label": "Hash Rate"},
-      {"@id": "urn:ngm:class:block-withholding-attack", "label": "Block Withholding Attack"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"},
-      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"}
+      {
+        "@id": "urn:ngm:class:51-attack",
+        "label": "51% Attack"
+      },
+      {
+        "@id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "@id": "urn:ngm:class:double-spending",
+        "label": "Double Spending"
+      },
+      {
+        "@id": "urn:ngm:class:longest-chain-rule",
+        "label": "Longest Chain Rule"
+      },
+      {
+        "@id": "urn:ngm:class:hash-rate",
+        "label": "Hash Rate"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "@id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:decentralization", "label": "Decentralization"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:honest-mining", "label": "Honest Mining"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+      {
+        "@id": "urn:ngm:class:decentralization",
+        "label": "Decentralization"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:block", "label": "Block"},
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:private-chain", "label": "Private Chain"}
-    ],
-    "enables": [
-      {"@id": "urn:ngm:class:block-reward-manipulation", "label": "Block Reward Manipulation"},
-      {"@id": "urn:ngm:class:mining-centralization", "label": "Mining Centralization"}
+      {
+        "@id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:private-blockchain",
+        "label": "Private Chain"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"},
-      {"@id": "urn:ngm:class:network-propagation-delay", "label": "Network Propagation Delay"},
-      {"@id": "urn:ngm:class:fork-choice-rule", "label": "Fork Choice Rule"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "@id": "urn:ngm:class:fork-choice-rule",
+        "label": "Fork Choice Rule"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:blockchain-attack-surface", "label": "Blockchain Attack Surface"},
-      {"@id": "urn:ngm:class:security", "label": "Security"}
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"},
-      {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:block-withholding-attack", "label": "Block Withholding Attack"}
+    {
+      "@id": "urn:ngm:class:block-withholding-attack",
+      "label": "Block Withholding Attack"
+    }
   ],
   "quality": 0.72,
   "provenance": {

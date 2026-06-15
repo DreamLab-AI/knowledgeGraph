@@ -60,10 +60,6 @@ public:: true
       {
         "@id": "urn:ngm:class:graph-theory",
         "label": "Graph Theory"
-      },
-      {
-        "@id": "urn:ngm:class:modularity-optimisation",
-        "label": "Modularity Optimisation"
       }
     ],
     "hasPart": [
@@ -78,14 +74,6 @@ public:: true
       {
         "@id": "urn:ngm:class:spectral-clustering",
         "label": "Spectral Clustering"
-      },
-      {
-        "@id": "urn:ngm:class:label-propagation",
-        "label": "Label Propagation"
-      },
-      {
-        "@id": "urn:ngm:class:stochastic-block-model",
-        "label": "Stochastic Block Model"
       }
     ],
     "enables": [
@@ -114,17 +102,9 @@ public:: true
       {
         "@id": "urn:ngm:class:matrix-factorisation",
         "label": "Matrix Factorisation"
-      },
-      {
-        "@id": "urn:ngm:class:random-walks",
-        "label": "Random Walks"
       }
     ],
     "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:graph-partitioning",
-        "label": "Graph Partitioning"
-      },
       {
         "@id": "urn:ngm:class:hierarchical-clustering",
         "label": "Hierarchical Clustering"

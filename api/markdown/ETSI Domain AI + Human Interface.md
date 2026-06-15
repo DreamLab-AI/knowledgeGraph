@@ -85,16 +85,6 @@ alias:: ETSI Domain AI Human Interface
     }
   ],
   "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:conversational-ai-classification",
-        "label": "Conversational AI Classification"
-      },
-      {
-        "@id": "urn:ngm:class:intelligent-ux-categorization",
-        "label": "Intelligent UX Categorization"
-      }
-    ],
     "partOf": [
       {
         "@id": "urn:ngm:class:etsi-domain-taxonomy",

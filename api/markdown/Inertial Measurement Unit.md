@@ -38,51 +38,127 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:accelerometer", "label": "Accelerometer"},
-      {"@id": "urn:ngm:class:gyroscope", "label": "Gyroscope"},
-      {"@id": "urn:ngm:class:magnetometer", "label": "Magnetometer"}
+      {
+        "@id": "urn:ngm:class:accelerometer",
+        "label": "Accelerometer"
+      },
+      {
+        "@id": "urn:ngm:class:gyroscope",
+        "label": "Gyroscope"
+      },
+      {
+        "@id": "urn:ngm:class:magnetometer",
+        "label": "Magnetometer"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:robot-hardware", "label": "Robot Hardware"},
-      {"@id": "urn:ngm:class:flight-control-system", "label": "Flight Control System"},
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"}
+      {
+        "@id": "urn:ngm:class:robot-hardware",
+        "label": "Robot Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:flight-control-system",
+        "label": "Flight Control System"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:odometry", "label": "Odometry"},
-      {"@id": "urn:ngm:class:dead-reckoning", "label": "Dead Reckoning"},
-      {"@id": "urn:ngm:class:attitude-estimation", "label": "Attitude Estimation"},
-      {"@id": "urn:ngm:class:visual-inertial-odometry", "label": "Visual-Inertial Odometry"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:odometry",
+        "label": "Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:dead-reckoning",
+        "label": "Dead Reckoning"
+      },
+      {
+        "@id": "urn:ngm:class:attitude-estimation",
+        "label": "Attitude Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:visual-inertial-odometry",
+        "label": "Visual-Inertial Odometry"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"},
-      {"@id": "urn:ngm:class:imu-calibration", "label": "IMU Calibration"}
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "@id": "urn:ngm:class:imu-calibration",
+        "label": "IMU Calibration"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:mems", "label": "MEMS"},
-      {"@id": "urn:ngm:class:extended-kalman-filter", "label": "Extended Kalman Filter"},
-      {"@id": "urn:ngm:class:complementary-filter", "label": "Complementary Filter"}
+      {
+        "@id": "urn:ngm:class:mems",
+        "label": "MEMS"
+      },
+      {
+        "@id": "urn:ngm:class:extended-kalman-filter",
+        "label": "Extended Kalman Filter"
+      },
+      {
+        "@id": "urn:ngm:class:complementary-filter",
+        "label": "Complementary Filter"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
-      {"@id": "urn:ngm:class:gnss", "label": "GNSS"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
-      {"@id": "urn:ngm:class:allan-variance", "label": "Allan Variance"}
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:gnss",
+        "label": "GNSS"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:allan-variance",
+        "label": "Allan Variance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:optical-flow-sensor", "label": "Optical Flow Sensor"},
-      {"@id": "urn:ngm:class:wheel-odometry", "label": "Wheel Odometry"}
+      {
+        "@id": "urn:ngm:class:wheel-odometry",
+        "label": "Wheel Odometry"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:augmented-reality-tracking", "label": "Augmented Reality Tracking"},
-      {"@id": "urn:ngm:class:pedestrian-dead-reckoning", "label": "Pedestrian Dead Reckoning"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality-tracking",
+        "label": "Augmented Reality Tracking"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:imu", "label": "IMU"},
-    {"@id": "urn:ngm:class:inertial-navigation-unit", "label": "Inertial Navigation Unit"}
+    {
+      "@id": "urn:ngm:class:imu",
+      "label": "IMU"
+    },
+    {
+      "@id": "urn:ngm:class:inertial-navigation-unit",
+      "label": "Inertial Navigation Unit"
+    }
   ],
   "quality": 0.74,
   "provenance": {

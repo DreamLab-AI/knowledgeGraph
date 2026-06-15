@@ -76,16 +76,7 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:deterministic-algorithms",
-        "label": "Deterministic Algorithms"
-      },
-      {
-        "id": "urn:ngm:class:numerical-quadrature",
-        "label": "Numerical Quadrature"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:financial-modelling",

@@ -777,10 +777,6 @@ alias:: AML/KYC Compliance, BC-0457-aml-kyc-compliance, BC-0476-aml-kyc-complian
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:adverse-media-screening",
-        "label": "Adverse Media Screening"
-      },
-      {
         "@id": "urn:ngm:class:beneficial-ownership-disclosure",
         "label": "Beneficial Ownership Disclosure"
       },
@@ -797,28 +793,12 @@ alias:: AML/KYC Compliance, BC-0457-aml-kyc-compliance, BC-0476-aml-kyc-complian
         "label": "Enhanced Due Diligence"
       },
       {
-        "@id": "urn:ngm:class:pep-screening",
+        "@id": "urn:ngm:class:sanctions-screening",
         "label": "PEP Screening"
       },
       {
         "@id": "urn:ngm:class:record-keeping",
         "label": "Record Keeping"
-      },
-      {
-        "@id": "urn:ngm:class:sanctions-screening",
-        "label": "Sanctions Screening"
-      },
-      {
-        "@id": "urn:ngm:class:simplified-due-diligence",
-        "label": "Simplified Due Diligence"
-      },
-      {
-        "@id": "urn:ngm:class:source-of-funds-verification",
-        "label": "Source of Funds Verification"
-      },
-      {
-        "@id": "urn:ngm:class:source-of-wealth-verification",
-        "label": "Source of Wealth Verification"
       },
       {
         "@id": "urn:ngm:class:suspicious-activity-report",
@@ -829,7 +809,7 @@ alias:: AML/KYC Compliance, BC-0457-aml-kyc-compliance, BC-0476-aml-kyc-complian
         "label": "Transaction Monitoring"
       },
       {
-        "@id": "urn:ngm:class:travel-rule-compliance",
+        "@id": "urn:ngm:class:travel-rule",
         "label": "Travel Rule Compliance"
       }
     ],
@@ -839,76 +819,36 @@ alias:: AML/KYC Compliance, BC-0457-aml-kyc-compliance, BC-0476-aml-kyc-complian
         "label": "Board-Level Oversight"
       },
       {
-        "@id": "urn:ngm:class:compliance-officer",
-        "label": "Compliance Officer"
-      },
-      {
-        "@id": "urn:ngm:class:customer-identification-documentation",
-        "label": "Customer Identification Documentation"
-      },
-      {
-        "@id": "urn:ngm:class:fiu-reporting-channel",
-        "label": "FIU Reporting Channel"
-      },
-      {
-        "@id": "urn:ngm:class:independent-audit-function",
+        "@id": "urn:ngm:class:audit-function",
         "label": "Independent Audit Function"
       },
       {
         "@id": "urn:ngm:class:risk-based-approach",
         "label": "Risk-Based Approach"
-      },
-      {
-        "@id": "urn:ngm:class:sanctions-list-feed",
-        "label": "Sanctions List Feed"
-      },
-      {
-        "@id": "urn:ngm:class:staff-training-programme",
-        "label": "Staff Training Programme"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:banking-correspondent-relationships",
+        "@id": "urn:ngm:class:correspondent-banking",
         "label": "Banking Correspondent Relationships"
-      },
-      {
-        "@id": "urn:ngm:class:cross-border-payment-compliance",
-        "label": "Cross-Border Payment Compliance"
-      },
-      {
-        "@id": "urn:ngm:class:financial-system-integrity",
-        "label": "Financial System Integrity"
-      },
-      {
-        "@id": "urn:ngm:class:proceeds-of-crime-recovery",
-        "label": "Proceeds of Crime Recovery"
       },
       {
         "@id": "urn:ngm:class:sanctions-enforcement",
         "label": "Sanctions Enforcement"
       },
       {
-        "@id": "urn:ngm:class:corporate-tax-compliance-framework-evasion-detection",
+        "@id": "urn:ngm:class:corporate-tax-compliance-framework",
         "label": "Tax Evasion Detection"
       },
       {
-        "@id": "urn:ngm:class:terrorist-financing-disruption",
+        "@id": "urn:ngm:class:counter-terrorist-financing",
         "label": "Terrorist Financing Disruption"
-      },
-      {
-        "@id": "urn:ngm:class:vasp-market-access",
-        "label": "VASP Market Access"
       }
     ],
     "implements": [
       {
         "@id": "urn:ngm:class:bank-secrecy-act",
         "label": "Bank Secrecy Act"
-      },
-      {
-        "@id": "urn:ngm:class:eu-amlr-single-rulebook",
-        "label": "EU AMLR Single Rulebook"
       },
       {
         "@id": "urn:ngm:class:fatf-40-recommendations",
@@ -919,16 +859,8 @@ alias:: AML/KYC Compliance, BC-0457-aml-kyc-compliance, BC-0476-aml-kyc-complian
         "label": "FATF Travel Rule"
       },
       {
-        "@id": "urn:ngm:class:proceeds-of-crime-act-2002",
-        "label": "Proceeds of Crime Act 2002"
-      },
-      {
-        "@id": "urn:ngm:class:risk-based-approach-methodology",
+        "@id": "urn:ngm:class:risk-based-approach",
         "label": "Risk-Based Approach Methodology"
-      },
-      {
-        "@id": "urn:ngm:class:sanctions-and-anti-money-laundering-act-2018",
-        "label": "Sanctions and Anti-Money Laundering Act 2018"
       },
       {
         "@id": "urn:ngm:class:uk-mlr-2017",
@@ -937,35 +869,19 @@ alias:: AML/KYC Compliance, BC-0457-aml-kyc-compliance, BC-0476-aml-kyc-complian
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:biometric-liveness-detection",
-        "label": "Biometric Liveness Detection"
-      },
-      {
         "@id": "urn:ngm:class:blockchain-analytics-platform",
         "label": "Blockchain Analytics Platform"
       },
       {
-        "@id": "urn:ngm:class:document-authentication-ocr",
-        "label": "Document Authentication OCR"
-      },
-      {
-        "@id": "urn:ngm:class:electronic-identity-verification",
+        "@id": "urn:ngm:class:identity-verification",
         "label": "Electronic Identity Verification"
-      },
-      {
-        "@id": "urn:ngm:class:machine-learning-discipline-risk-scoring",
-        "label": "Machine Learning Risk Scoring"
       },
       {
         "@id": "urn:ngm:class:network-analysis",
         "label": "Network Analysis"
       },
       {
-        "@id": "urn:ngm:class:nfc-chip-reading",
-        "label": "NFC Chip Reading"
-      },
-      {
-        "@id": "urn:ngm:class:sanctions-screening-engine",
+        "@id": "urn:ngm:class:sanctions-screening",
         "label": "Sanctions Screening Engine"
       },
       {
@@ -979,28 +895,12 @@ alias:: AML/KYC Compliance, BC-0457-aml-kyc-compliance, BC-0476-aml-kyc-complian
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:amla",
-        "label": "AMLA"
-      },
-      {
-        "@id": "urn:ngm:class:austrac",
-        "label": "AUSTRAC"
-      },
-      {
         "@id": "urn:ngm:class:beneficial-ownership",
         "label": "Beneficial Ownership"
       },
       {
-        "@id": "urn:ngm:class:binance-settlement-2023",
-        "label": "Binance Settlement 2023"
-      },
-      {
         "@id": "urn:ngm:class:chainalysis",
         "label": "Chainalysis"
-      },
-      {
-        "@id": "urn:ngm:class:comply-advantage",
-        "label": "ComplyAdvantage"
       },
       {
         "@id": "urn:ngm:class:elliptic",
@@ -1035,14 +935,6 @@ alias:: AML/KYC Compliance, BC-0457-aml-kyc-compliance, BC-0476-aml-kyc-complian
         "label": "Onfido"
       },
       {
-        "@id": "urn:ngm:class:sumsub",
-        "label": "Sumsub"
-      },
-      {
-        "@id": "urn:ngm:class:td-bank-aml-settlement",
-        "label": "TD Bank AML Settlement"
-      },
-      {
         "@id": "urn:ngm:class:tornado-cash",
         "label": "Tornado Cash"
       },
@@ -1057,33 +949,17 @@ alias:: AML/KYC Compliance, BC-0457-aml-kyc-compliance, BC-0476-aml-kyc-complian
         "label": "Correspondent Banking"
       },
       {
-        "@id": "urn:ngm:class:de-risking-avoidance",
-        "label": "De-Risking Avoidance"
-      },
-      {
-        "@id": "urn:ngm:class:fca-cryptoasset-registration",
-        "label": "FCA Cryptoasset Registration"
-      },
-      {
         "@id": "urn:ngm:class:financial-inclusion",
         "label": "Financial Inclusion"
       },
       {
-        "@id": "urn:ngm:class:listed-company-compliance",
-        "label": "Listed Company Compliance"
-      },
-      {
-        "@id": "urn:ngm:class:mi-ca-authorisation",
-        "label": "MiCA Authorisation"
-      },
-      {
-        "@id": "urn:ngm:class:vasp-licensing",
+        "@id": "urn:ngm:class:licensing-requirements",
         "label": "VASP Licensing"
       }
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:bank-secrecy-act-1970",
+        "@id": "urn:ngm:class:bank-secrecy-act",
         "label": "Bank Secrecy Act 1970"
       },
       {
@@ -1091,40 +967,20 @@ alias:: AML/KYC Compliance, BC-0457-aml-kyc-compliance, BC-0476-aml-kyc-complian
         "label": "eIDAS 2.0"
       },
       {
-        "@id": "urn:ngm:class:eccta-2023",
-        "label": "ECCTA 2023"
-      },
-      {
-        "@id": "urn:ngm:class:eu-amla-regulation-2024-1620",
-        "label": "EU AMLA Regulation 2024/1620"
-      },
-      {
-        "@id": "urn:ngm:class:eu-amld6-2024-1640",
-        "label": "EU AMLD6 2024/1640"
-      },
-      {
-        "@id": "urn:ngm:class:eu-amlr-2024-1624",
-        "label": "EU AMLR 2024/1624"
-      },
-      {
         "@id": "urn:ngm:class:fatf-40-recommendations",
         "label": "FATF 40 Recommendations"
       },
       {
-        "@id": "urn:ngm:class:fatf-recommendation-15",
+        "@id": "urn:ngm:class:fatf-recommendations",
         "label": "FATF Recommendation 15"
       },
       {
-        "@id": "urn:ngm:class:fatf-recommendation-16-travel-rule",
+        "@id": "urn:ngm:class:fatf-travel-rule",
         "label": "FATF Recommendation 16 Travel Rule"
       },
       {
-        "@id": "urn:ngm:class:iso-20022-payment-messaging",
+        "@id": "urn:ngm:class:iso-20022",
         "label": "ISO 20022 Payment Messaging"
-      },
-      {
-        "@id": "urn:ngm:class:iso-iec-30107-3-pad",
-        "label": "ISO/IEC 30107-3 PAD"
       },
       {
         "@id": "urn:ngm:class:uk-mlr-2017",

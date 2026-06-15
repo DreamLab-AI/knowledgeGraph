@@ -24,23 +24,15 @@
       {
         "id": "urn:ngm:class:torque-sensor",
         "label": "Torque Sensor"
-      },
-      {
-        "id": "urn:ngm:class:motor-gearbox",
-        "label": "Motor-Gearbox"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:spring-stiffness-selection",
-        "label": "Spring Stiffness Selection"
-      },
       {
         "id": "urn:ngm:class:position-encoder",
         "label": "Position Encoder"
       },
       {
-        "id": "urn:ngm:class:torque-control-loop",
+        "id": "urn:ngm:class:torque-control",
         "label": "Torque Control Loop"
       }
     ],
@@ -58,7 +50,7 @@
         "label": "Admittance Control"
       },
       {
-        "id": "urn:ngm:class:safe-physical-human-robot-interaction",
+        "id": "urn:ngm:class:safe-human-robot-interaction",
         "label": "Safe Physical Human-Robot Interaction"
       }
     ],
@@ -70,10 +62,6 @@
       {
         "id": "urn:ngm:class:pid-controller",
         "label": "Pid Controller"
-      },
-      {
-        "id": "urn:ngm:class:mechanical-compliance",
-        "label": "Mechanical Compliance"
       }
     ],
     "implements": [],
@@ -83,7 +71,7 @@
         "label": "Variable Stiffness Actuator"
       },
       {
-        "id": "urn:ngm:class:rigid-actuator",
+        "id": "urn:ngm:class:actuator",
         "label": "Rigid Actuator"
       },
       {
@@ -105,10 +93,6 @@
       {
         "id": "urn:ngm:class:hookes-law",
         "label": "Hooke's Law"
-      },
-      {
-        "id": "urn:ngm:class:deflection-measurement",
-        "label": "Deflection Measurement"
       },
       {
         "id": "urn:ngm:class:rotary-encoder",
@@ -143,10 +127,6 @@
       {
         "id": "urn:ngm:class:robot-joint",
         "label": "Robot Joint"
-      },
-      {
-        "id": "urn:ngm:class:compliant-robot",
-        "label": "Compliant Robot"
       }
     ],
     "relatedTo": [
@@ -155,11 +135,7 @@
         "label": "Backdrivability"
       },
       {
-        "id": "urn:ngm:class:torque-bandwidth-tradeoff",
-        "label": "Torque-Bandwidth Tradeoff"
-      },
-      {
-        "id": "urn:ngm:class:collaborative-robot",
+        "id": "urn:ngm:class:collaborative-systems-modality-robot",
         "label": "Collaborative Robot"
       }
     ]

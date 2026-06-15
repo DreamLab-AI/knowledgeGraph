@@ -23,51 +23,121 @@ public:: true
   "definition": "Code Signing is a cryptographic practice in which software publishers digitally sign executables, scripts, container images, and other software artefacts using a private key, enabling recipients to verify the artefact's authenticity and integrity through the corresponding public key certificate. Implemented via asymmetric cryptography and X.509 certificate chains anchored to trusted Certificate Authorities or transparency logs, code signing is a fundamental control in software supply chain security, preventing the distribution of tampered or malicious software. Modern approaches include keyless signing via short-lived certificates and cryptographic transparency logs.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-signing", "label": "Cryptographic Signing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-signing",
+      "label": "Cryptographic Signing"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"},
-      {"@id": "urn:ngm:class:asymmetric-cryptography", "label": "Asymmetric Cryptography"},
-      {"@id": "urn:ngm:class:x509-certificate", "label": "X.509 Certificate"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:transparency-log", "label": "Transparency Log"}
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"},
-      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"},
-      {"@id": "urn:ngm:class:trusted-execution-environment", "label": "Trusted Execution Environment"},
-      {"@id": "urn:ngm:class:software-integrity-verification", "label": "Software Integrity Verification"},
-      {"@id": "urn:ngm:class:secure-boot", "label": "Secure Boot"}
+      {
+        "@id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "@id": "urn:ngm:class:secure-boot",
+        "label": "Secure Boot"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:private-key-management", "label": "Private Key Management"},
-      {"@id": "urn:ngm:class:certificate-revocation", "label": "Certificate Revocation"}
+      {
+        "@id": "urn:ngm:class:private-key-management",
+        "label": "Private Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-revocation",
+        "label": "Certificate Revocation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:software-supply-chain-security", "label": "Software Supply Chain Security"},
-      {"@id": "urn:ngm:class:non-repudiation", "label": "Non-Repudiation"}
+      {
+        "@id": "urn:ngm:class:supply-chain-security",
+        "label": "Software Supply Chain Security"
+      },
+      {
+        "@id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:software-bill-of-materials", "label": "Software Bill of Materials"},
-      {"@id": "urn:ngm:class:slsa-framework", "label": "SLSA Framework"},
-      {"@id": "urn:ngm:class:container-image-security", "label": "Container Image Security"}
+      {
+        "@id": "urn:ngm:class:software-bill-of-materials",
+        "label": "Software Bill of Materials"
+      },
+      {
+        "@id": "urn:ngm:class:slsa-framework",
+        "label": "SLSA Framework"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:notary-service", "label": "Notary Service"},
-      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"},
-      {"@id": "urn:ngm:class:sigstore", "label": "Sigstore"},
-      {"@id": "urn:ngm:class:keyless-signing", "label": "Keyless Signing"}
+      {
+        "@id": "urn:ngm:class:notary-service",
+        "label": "Notary Service"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:sigstore",
+        "label": "Sigstore"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"},
-      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"}
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:software-signing", "label": "Software Signing"},
-    {"@id": "urn:ngm:class:authenticode", "label": "Authenticode"}
+    {
+      "@id": "urn:ngm:class:software-signing",
+      "label": "Software Signing"
+    },
+    {
+      "@id": "urn:ngm:class:authenticode",
+      "label": "Authenticode"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

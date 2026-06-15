@@ -150,19 +150,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:authentication-record",
-        "label": "Authentication Record"
-      },
-      {
-        "@id": "urn:ngm:class:condition-report",
-        "label": "Condition Report"
-      },
-      {
-        "@id": "urn:ngm:class:cultural-context",
-        "label": "Cultural Context"
-      },
-      {
-        "@id": "urn:ngm:class:ownership-chain",
+        "@id": "urn:ngm:class:ownership-transfer",
         "label": "Ownership Chain"
       },
       {
@@ -174,10 +162,6 @@ public:: true
       {
         "@id": "urn:ngm:class:blockchain-ledger",
         "label": "Blockchain Ledger"
-      },
-      {
-        "@id": "urn:ngm:class:conservation-database",
-        "label": "Conservation Database"
       },
       {
         "@id": "urn:ngm:class:digital-signature",
@@ -194,7 +178,7 @@ public:: true
         "label": "Authenticity Certification"
       },
       {
-        "@id": "urn:ngm:class:cultural-heritage-tracking",
+        "@id": "urn:ngm:class:cultural-heritage-preservation",
         "label": "Cultural Heritage Tracking"
       },
       {
@@ -204,16 +188,6 @@ public:: true
       {
         "@id": "urn:ngm:class:provenance-verification",
         "label": "Provenance Verification"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:cultural-heritage-management-system",
-        "label": "Cultural Heritage Management System"
-      },
-      {
-        "@id": "urn:ngm:class:museum-information-system",
-        "label": "Museum Information System"
       }
     ]
   },

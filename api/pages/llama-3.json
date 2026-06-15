@@ -25,10 +25,6 @@
       {
         "id": "urn:ngm:class:distributed-training",
         "label": "Distributed Training"
-      },
-      {
-        "id": "urn:ngm:class:pretraining-data",
-        "label": "Pretraining Data"
       }
     ],
     "enables": [
@@ -55,10 +51,6 @@
     ],
     "dependsOn": [],
     "implements": [
-      {
-        "id": "urn:ngm:class:decoder-only-transformer",
-        "label": "Decoder-Only Transformer"
-      },
       {
         "id": "urn:ngm:class:supervised-fine-tuning",
         "label": "Supervised Fine Tuning"
@@ -110,7 +102,7 @@
         "label": "Byte Pair Encoding"
       },
       {
-        "id": "urn:ngm:class:rotary-positional-embedding",
+        "id": "urn:ngm:class:positional-encoding",
         "label": "Rotary Positional Embedding"
       }
     ],
@@ -135,7 +127,7 @@
         "label": "Safety and alignment"
       },
       {
-        "id": "urn:ngm:class:multimodal-models",
+        "id": "urn:ngm:class:multimodal-ai-architecture-models",
         "label": "Multimodal Models"
       },
       {

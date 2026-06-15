@@ -75,7 +75,7 @@ public:: true
         "label": "Smart Contract"
       },
       {
-        "@id": "urn:ngm:class:router",
+        "@id": "urn:ngm:class:squid-router",
         "label": "Router"
       }
     ],
@@ -159,10 +159,6 @@ public:: true
       {
         "@id": "urn:ngm:class:cross-chain-bridge",
         "label": "Cross-Chain Bridge"
-      },
-      {
-        "@id": "urn:ngm:class:bridge-aggregator",
-        "label": "Bridge Aggregator"
       },
       {
         "@id": "urn:ngm:class:intent-based-bridging",

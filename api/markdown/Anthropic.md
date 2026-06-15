@@ -38,45 +38,117 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:constitutional-ai-training-methodology", "label": "Constitutional AI Training Methodology"},
-      {"@id": "urn:ngm:class:responsible-scaling-policy", "label": "Responsible Scaling Policy"},
-      {"@id": "urn:ngm:class:mechanistic-interpretability", "label": "Mechanistic Interpretability"}
+      {
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI Training Methodology"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-scaling-policy",
+        "label": "Responsible Scaling Policy"
+      },
+      {
+        "@id": "urn:ngm:class:mechanistic-interpretability",
+        "label": "Mechanistic Interpretability"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:scalable-oversight", "label": "Scalable Oversight"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:scalable-oversight",
+        "label": "Scalable Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:claude-model-family", "label": "Claude Model Family"},
-      {"@id": "urn:ngm:class:model-api", "label": "Model API"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
+      {
+        "@id": "urn:ngm:class:claude",
+        "label": "Claude Model Family"
+      },
+      {
+        "@id": "urn:ngm:class:api",
+        "label": "Model API"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:openai", "label": "OpenAI"},
-      {"@id": "urn:ngm:class:google-deepmind", "label": "Google DeepMind"},
-      {"@id": "urn:ngm:class:meta-ai", "label": "Meta AI"}
+      {
+        "@id": "urn:ngm:class:openai-research-organisation",
+        "label": "OpenAI"
+      },
+      {
+        "@id": "urn:ngm:class:google-ai-technology-corporation-deep-mind",
+        "label": "Google DeepMind"
+      },
+      {
+        "@id": "urn:ngm:class:meta-ai",
+        "label": "Meta AI"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:interpretability", "label": "Interpretability"},
-      {"@id": "urn:ngm:class:superposition-hypothesis", "label": "Superposition Hypothesis"},
-      {"@id": "urn:ngm:class:ai-safety-evaluation", "label": "AI Safety Evaluation"},
-      {"@id": "urn:ngm:class:frontier-ai", "label": "Frontier AI"},
-      {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}
+      {
+        "@id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:superposition-hypothesis",
+        "label": "Superposition Hypothesis"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety-evaluation",
+        "label": "AI Safety Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:frontier-ai",
+        "label": "Frontier AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:model-cards", "label": "Model Cards"}
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:model-cards",
+        "label": "Model Cards"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:anthropic-pbc", "label": "Anthropic PBC"}
+    {
+      "@id": "urn:ngm:class:anthropic-pbc",
+      "label": "Anthropic PBC"
+    }
   ],
   "quality": 0.74,
   "provenance": {

@@ -70,7 +70,7 @@ public:: true
     "@id": "urn:ngm:class:sc-display-and-rendering",
     "label": "Display and Rendering"
   },
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -149,7 +149,7 @@ public:: true
         "label": "Deferred Rendering"
       },
       {
-        "@id": "urn:ngm:class:screen-space-ambient-occlusion",
+        "@id": "urn:ngm:class:ambient-occlusion",
         "label": "Screen Space Ambient Occlusion"
       }
     ],
@@ -178,10 +178,6 @@ public:: true
       }
     ],
     "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:machine-learning-on-gpu",
-        "label": "Machine Learning on GPU"
-      },
       {
         "@id": "urn:ngm:class:xr-rendering",
         "label": "XR Rendering"

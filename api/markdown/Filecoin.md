@@ -23,48 +23,113 @@ public:: true
   "definition": "Filecoin is a decentralised storage network and blockchain protocol developed by Protocol Labs that creates a peer-to-peer marketplace for file storage and retrieval, using cryptographic proofs—Proof of Replication (PoRep) and Proof of Spacetime (PoSt)—to verifiably demonstrate that storage providers are dedicating physical disk space to client data over time. Storage providers earn FIL tokens by fulfilling storage deals and continuously proving their commitments on-chain, while clients pay FIL to store data with economic guarantees backed by the provider's staked collateral. Built on top of IPFS (InterPlanetary File System) for content-addressed data retrieval, Filecoin provides the economic incentive layer designed to make decentralised storage commercially viable, and has since expanded via the Filecoin Virtual Machine (FVM) to support programmable storage deals and decentralised autonomous organisations governing shared datasets.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:decentralized-storage", "label": "Decentralized Storage"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:decentralized-storage",
+      "label": "Decentralized Storage"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:ipfs", "label": "IPFS"},
-      {"@id": "urn:ngm:class:libp2p", "label": "libp2p"},
-      {"@id": "urn:ngm:class:content-addressed-storage", "label": "Content-Addressed Storage"},
-      {"@id": "urn:ngm:class:proof-of-spacetime", "label": "Proof of Spacetime"},
-      {"@id": "urn:ngm:class:proof-of-replication", "label": "Proof of Replication"}
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "@id": "urn:ngm:class:libp2p",
+        "label": "libp2p"
+      },
+      {
+        "@id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-spacetime",
+        "label": "Proof of Spacetime"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-replication",
+        "label": "Proof of Replication"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:staking", "label": "Staking"}
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:staking",
+        "label": "Staking"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralized-application", "label": "Decentralized Application"},
-      {"@id": "urn:ngm:class:data-dao", "label": "Data DAO"},
-      {"@id": "urn:ngm:class:nft-storage", "label": "NFT Storage"},
-      {"@id": "urn:ngm:class:web3-storage", "label": "Web3 Storage"}
+      {
+        "@id": "urn:ngm:class:decentralized-application",
+        "label": "Decentralized Application"
+      },
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "Data DAO"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"}
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
-      {"@id": "urn:ngm:class:decentralized-autonomous-organisation", "label": "Decentralized Autonomous Organisation"},
-      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}
+      {
+        "@id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:arweave", "label": "Arweave"},
-      {"@id": "urn:ngm:class:storj", "label": "Storj"},
-      {"@id": "urn:ngm:class:centralised-cloud-storage", "label": "Centralised Cloud Storage"}
+      {
+        "@id": "urn:ngm:class:arweave",
+        "label": "Arweave"
+      },
+      {
+        "@id": "urn:ngm:class:storj",
+        "label": "Storj"
+      },
+      {
+        "@id": "urn:ngm:class:centralised-cloud-storage",
+        "label": "Centralised Cloud Storage"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-dataset-management", "label": "AI Dataset Management"},
-      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:fil-network", "label": "FIL Network"}
+    {
+      "@id": "urn:ngm:class:fil-network",
+      "label": "FIL Network"
+    }
   ],
   "quality": 0.72,
   "provenance": {

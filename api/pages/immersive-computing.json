@@ -48,10 +48,6 @@
         "label": "Head-Mounted Display"
       },
       {
-        "id": "urn:ngm:class:six-degrees-of-freedom-tracking",
-        "label": "Six-Degrees-of-Freedom Tracking"
-      },
-      {
         "id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
       },
@@ -70,7 +66,7 @@
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:virtual-training-simulation",
+        "id": "urn:ngm:class:virtual-training",
         "label": "Virtual Training Simulation"
       }
     ],
@@ -102,7 +98,7 @@
         "label": "3D Rendering"
       },
       {
-        "id": "urn:ngm:class:simultaneous-localization-and-mapping",
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
         "label": "Simultaneous Localization and Mapping"
       },
       {

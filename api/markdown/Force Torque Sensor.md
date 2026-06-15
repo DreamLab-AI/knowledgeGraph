@@ -123,10 +123,6 @@ alias:: Force-Torque Sensor, Force/Torque Sensor
         "label": "Haptic Feedback System"
       },
       {
-        "@id": "urn:ngm:class:wrist-assembly",
-        "label": "Wrist Assembly"
-      },
-      {
         "@id": "urn:ngm:class:robotic-arm",
         "label": "Robotic Arm"
       }
@@ -135,10 +131,6 @@ alias:: Force-Torque Sensor, Force/Torque Sensor
       {
         "@id": "urn:ngm:class:calibration",
         "label": "Calibration"
-      },
-      {
-        "@id": "urn:ngm:class:signal-amplification",
-        "label": "Signal Amplification"
       },
       {
         "@id": "urn:ngm:class:data-processing",
@@ -151,20 +143,12 @@ alias:: Force-Torque Sensor, Force/Torque Sensor
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:precision-assembly",
-        "label": "Precision Assembly"
-      },
-      {
-        "@id": "urn:ngm:class:soft-robotic-grasping",
+        "@id": "urn:ngm:class:robotic-grasping",
         "label": "Soft Robotic Grasping"
       },
       {
         "@id": "urn:ngm:class:impedance-control",
         "label": "Impedance Control"
-      },
-      {
-        "@id": "urn:ngm:class:contact-detection",
-        "label": "Contact Detection"
       },
       {
         "@id": "urn:ngm:class:force-feedback",
@@ -181,7 +165,7 @@ alias:: Force-Torque Sensor, Force/Torque Sensor
         "label": "Robot Wrist"
       },
       {
-        "@id": "urn:ngm:class:real-time-control-system",
+        "@id": "urn:ngm:class:real-time-control",
         "label": "Real-Time Control System"
       }
     ],
@@ -201,7 +185,7 @@ alias:: Force-Torque Sensor, Force/Torque Sensor
         "label": "Human Robot Interaction"
       },
       {
-        "@id": "urn:ngm:class:collaborative-robotics",
+        "@id": "urn:ngm:class:collaborative-systems-modality-robotics",
         "label": "Collaborative Robotics"
       },
       {
@@ -234,8 +218,7 @@ alias:: Force-Torque Sensor, Force/Torque Sensor
         "@id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       }
-    ],
-    "relatedTo": []
+    ]
   },
   "sameAs": [
     {
@@ -247,7 +230,7 @@ alias:: Force-Torque Sensor, Force/Torque Sensor
       "label": "F/T Sensor"
     }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

@@ -102,7 +102,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -164,7 +164,7 @@ public:: true
         "label": "Decentralised Identity"
       },
       {
-        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "@id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proofs"
       }
     ],
@@ -184,7 +184,7 @@ public:: true
         "label": "NIST Cryptographic Standards"
       },
       {
-        "@id": "urn:ngm:class:fips-186",
+        "@id": "urn:ngm:class:nist-fips-186",
         "label": "FIPS 186"
       }
     ],

@@ -668,60 +668,10 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:access-log-emitter",
-        "label": "Access Log Emitter"
-      },
-      {
-        "@id": "urn:ngm:class:authentication-handler",
-        "label": "Authentication Handler"
-      },
-      {
-        "@id": "urn:ngm:class:distributed-tracing-collector",
-        "label": "Distributed Tracing Collector"
-      },
-      {
-        "@id": "urn:ngm:class:health-checker",
-        "label": "Health Checker"
-      },
-      {
-        "@id": "urn:ngm:class:plugin-runtime",
-        "label": "Plugin Runtime"
-      },
-      {
-        "@id": "urn:ngm:class:rate-limiter",
-        "label": "Rate Limiter"
-      },
-      {
-        "@id": "urn:ngm:class:request-router",
-        "label": "Request Router"
-      },
-      {
-        "@id": "urn:ngm:class:request-transformer",
-        "label": "Request Transformer"
-      },
-      {
-        "@id": "urn:ngm:class:response-cache",
-        "label": "Response Cache"
-      },
-      {
-        "@id": "urn:ngm:class:tls-terminator",
-        "label": "TLS Terminator"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:certificate-authority",
         "label": "Certificate Authority"
-      },
-      {
-        "@id": "urn:ngm:class:configuration-store",
-        "label": "Configuration Store"
-      },
-      {
-        "@id": "urn:ngm:class:observability-pipeline",
-        "label": "Observability Pipeline"
       },
       {
         "@id": "urn:ngm:class:service-discovery",
@@ -734,16 +684,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:api-lifecycle-management",
+        "@id": "urn:ngm:class:api-management",
         "label": "API Lifecycle Management"
-      },
-      {
-        "@id": "urn:ngm:class:backend-for-frontend",
-        "label": "Backend-for-Frontend"
-      },
-      {
-        "@id": "urn:ngm:class:graph-ql-federation",
-        "label": "GraphQL Federation"
       },
       {
         "@id": "urn:ngm:class:microservices",
@@ -754,57 +696,25 @@ public:: true
         "label": "Multi-Tenancy"
       },
       {
-        "@id": "urn:ngm:class:strangler-fig-pattern",
-        "label": "Strangler Fig Pattern"
-      },
-      {
         "@id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Architecture"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:bulkhead-pattern",
-        "label": "Bulkhead Pattern"
-      },
-      {
         "@id": "urn:ngm:class:circuit-breaker",
         "label": "Circuit Breaker"
-      },
-      {
-        "@id": "urn:ngm:class:jwt",
-        "label": "JWT"
-      },
-      {
-        "@id": "urn:ngm:class:m-tls",
-        "label": "mTLS"
       },
       {
         "@id": "urn:ngm:class:oauth-2-0",
         "label": "OAuth 2.0"
       },
       {
-        "@id": "urn:ngm:class:oidc",
-        "label": "OIDC"
-      },
-      {
         "@id": "urn:ngm:class:rate-limiting",
         "label": "Rate Limiting"
-      },
-      {
-        "@id": "urn:ngm:class:retry-pattern",
-        "label": "Retry Pattern"
-      },
-      {
-        "@id": "urn:ngm:class:token-bucket-algorithm",
-        "label": "Token Bucket Algorithm"
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:async-api",
-        "label": "AsyncAPI"
-      },
       {
         "@id": "urn:ngm:class:open-api-specification",
         "label": "OpenAPI Specification"
@@ -820,17 +730,9 @@ public:: true
       {
         "@id": "urn:ngm:class:protocol-buffer",
         "label": "Protocol Buffer"
-      },
-      {
-        "@id": "urn:ngm:class:w3-c-trace-context",
-        "label": "W3C Trace Context"
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:ai-gateway",
-        "label": "AI Gateway"
-      },
       {
         "@id": "urn:ngm:class:api-management",
         "label": "API Management"
@@ -838,10 +740,6 @@ public:: true
       {
         "@id": "urn:ngm:class:cdn",
         "label": "CDN"
-      },
-      {
-        "@id": "urn:ngm:class:identity-aware-proxy",
-        "label": "Identity-Aware Proxy"
       },
       {
         "@id": "urn:ngm:class:ingress-controller",
@@ -898,14 +796,6 @@ public:: true
       {
         "@id": "urn:ngm:class:ietf",
         "label": "IETF"
-      },
-      {
-        "@id": "urn:ngm:class:kubernetes-gateway-api",
-        "label": "Kubernetes Gateway API"
-      },
-      {
-        "@id": "urn:ngm:class:open-api-initiative",
-        "label": "OpenAPI Initiative"
       }
     ]
   },

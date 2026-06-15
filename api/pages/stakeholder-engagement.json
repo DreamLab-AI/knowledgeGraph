@@ -76,11 +76,7 @@
         "label": "AI Impact Assessment"
       },
       {
-        "id": "urn:ngm:class:deliberative-polling",
-        "label": "Deliberative Polling"
-      },
-      {
-        "id": "urn:ngm:class:citizen-assembly",
+        "id": "urn:ngm:class:digital-citizens-assembly",
         "label": "Citizen Assembly"
       }
     ],
@@ -90,19 +86,11 @@
         "label": "Ethical AI"
       },
       {
-        "id": "urn:ngm:class:responsible-innovation",
-        "label": "Responsible Innovation"
-      },
-      {
         "id": "urn:ngm:class:human-rights-impact-assessment",
         "label": "Human Rights Impact Assessment"
       }
     ],
     "standardizedBy": [
-      {
-        "id": "urn:ngm:class:iap2-spectrum",
-        "label": "IAP2 Public Participation Spectrum"
-      },
       {
         "id": "urn:ngm:class:oecd-ai-principles",
         "label": "OECD AI Principles"
@@ -129,10 +117,6 @@
       {
         "id": "urn:ngm:class:deliberative-democracy",
         "label": "Deliberative Democracy"
-      },
-      {
-        "id": "urn:ngm:class:public-consultation",
-        "label": "Public Consultation"
       },
       {
         "id": "urn:ngm:class:participatory-design",

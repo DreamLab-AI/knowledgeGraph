@@ -27,7 +27,7 @@
         "label": "Seed Phrase"
       },
       {
-        "id": "urn:ngm:class:secure-random-number-generation",
+        "id": "urn:ngm:class:random-number-generation",
         "label": "Secure Random Number Generation"
       }
     ],
@@ -53,10 +53,6 @@
         "label": "Custodial Exchange"
       },
       {
-        "id": "urn:ngm:class:third-party-custody",
-        "label": "Third-Party Custody"
-      },
-      {
         "id": "urn:ngm:class:qualified-custodian",
         "label": "Qualified Custodian"
       }
@@ -67,7 +63,7 @@
         "label": "Self Sovereign Identity"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential",
+        "id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       }
     ],

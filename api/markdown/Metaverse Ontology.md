@@ -99,68 +99,165 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:metaverse-agent", "label": "Metaverse Agent"},
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
-      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"},
-      {"@id": "urn:ngm:class:governance-structure", "label": "Governance Structure"}
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      },
+      {
+        "@id": "urn:ngm:class:governance-structure",
+        "label": "Governance Structure"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:owl-web-ontology-language", "label": "OWL Web Ontology Language"},
-      {"@id": "urn:ngm:class:rdf-schema", "label": "RDF Schema"}
+      {
+        "@id": "urn:ngm:class:owl-2-web-ontology-language",
+        "label": "OWL Web Ontology Language"
+      },
+      {
+        "@id": "urn:ngm:class:rdf-schema",
+        "label": "RDF Schema"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
-      {"@id": "urn:ngm:class:knowledge-graphing", "label": "Knowledge Graphing"},
-      {"@id": "urn:ngm:class:cross-platform-interoperability", "label": "Cross-Platform Interoperability"},
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graphing",
+        "label": "Knowledge Graphing"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:open-world-assumption", "label": "Open World Assumption"},
-      {"@id": "urn:ngm:class:description-logic", "label": "Description Logic"}
+      {
+        "@id": "urn:ngm:class:open-world-assumption",
+        "label": "Open World Assumption"
+      },
+      {
+        "@id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:nostr-protocol", "label": "Nostr Protocol"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"},
-      {"@id": "urn:ngm:class:digital-ownership", "label": "Digital Ownership"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "@id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:metaverse-standards-forum", "label": "Metaverse Standards Forum"},
-      {"@id": "urn:ngm:class:w3c", "label": "W3C"}
+      {
+        "@id": "urn:ngm:class:metaverse-standards-forum",
+        "label": "Metaverse Standards Forum"
+      },
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:game-engine-scene-graph", "label": "Game Engine Scene Graph"},
-      {"@id": "urn:ngm:class:linked-json", "label": "Linked-JSON"}
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Game Engine Scene Graph"
+      },
+      {
+        "@id": "urn:ngm:class:linked-json",
+        "label": "Linked-JSON"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:bitcoin", "label": "Bitcoin"},
-      {"@id": "urn:ngm:class:rgb-and-client-side-validation", "label": "RGB and Client Side Validation"},
-      {"@id": "urn:ngm:class:lightning-and-similar-l2", "label": "Lightning and Similar L2"}
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:rgb-and-client-side-validation",
+        "label": "RGB and Client Side Validation"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-and-similar-l2",
+        "label": "Lightning and Similar L2"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:metaverse-ontology-schema", "label": "Metaverse Ontology Schema"},
-      {"@id": "urn:ngm:class:ontology-conversation-with-ais", "label": "Ontology Conversation with AIs"},
-      {"@id": "urn:ngm:class:universal-scene-description", "label": "Universal Scene Description"}
+      {
+        "@id": "urn:ngm:class:metaverse-ontology-schema",
+        "label": "Metaverse Ontology Schema"
+      },
+      {
+        "@id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:immersive-web-ontology", "label": "Immersive Web Ontology"},
-    {"@id": "urn:ngm:class:virtual-world-ontology", "label": "Virtual World Ontology"}
+    {
+      "@id": "urn:ngm:class:immersive-web-ontology",
+      "label": "Immersive Web Ontology"
+    },
+    {
+      "@id": "urn:ngm:class:virtual-world-ontology",
+      "label": "Virtual World Ontology"
+    }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

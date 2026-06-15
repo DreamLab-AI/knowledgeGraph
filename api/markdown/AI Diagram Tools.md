@@ -470,24 +470,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:diagram-grammar-compiler",
-        "label": "Diagram Grammar Compiler"
-      },
-      {
-        "@id": "urn:ngm:class:editor-surface",
-        "label": "Editor Surface"
-      },
-      {
-        "@id": "urn:ngm:class:export-pipeline",
-        "label": "Export Pipeline"
-      },
-      {
         "@id": "urn:ngm:class:layout-algorithm",
         "label": "Layout Algorithm"
-      },
-      {
-        "@id": "urn:ngm:class:llm-backend",
-        "label": "LLM Backend"
       },
       {
         "@id": "urn:ngm:class:prompt-template",
@@ -500,14 +484,6 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:browser-runtime",
-        "label": "Browser Runtime"
-      },
-      {
-        "@id": "urn:ngm:class:diagram-specification-language",
-        "label": "Diagram Specification Language"
-      },
-      {
         "@id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
       },
@@ -516,60 +492,8 @@ public:: true
         "label": "Layout Engine"
       },
       {
-        "@id": "urn:ngm:class:markdown-diagramming-as-code-tool-syntax",
+        "@id": "urn:ngm:class:markdown-diagramming-as-code-tool",
         "label": "Mermaid Syntax"
-      }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:adr-generation",
-        "label": "ADR Generation"
-      },
-      {
-        "@id": "urn:ngm:class:architecture-documentation",
-        "label": "Architecture Documentation"
-      },
-      {
-        "@id": "urn:ngm:class:onboarding-diagram-production",
-        "label": "Onboarding Diagram Production"
-      },
-      {
-        "@id": "urn:ngm:class:prd-visualisation",
-        "label": "PRD Visualisation"
-      },
-      {
-        "@id": "urn:ngm:class:rapid-diagramming",
-        "label": "Rapid Diagramming"
-      },
-      {
-        "@id": "urn:ngm:class:system-design-communication",
-        "label": "System Design Communication"
-      }
-    ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:code-to-diagram-reverse-engineering",
-        "label": "Code-to-Diagram Reverse Engineering"
-      },
-      {
-        "@id": "urn:ngm:class:screenshot-to-diagram-conversion",
-        "label": "Screenshot-to-Diagram Conversion"
-      },
-      {
-        "@id": "urn:ngm:class:sugiyama-hierarchical-layout",
-        "label": "Sugiyama Hierarchical Layout"
-      },
-      {
-        "@id": "urn:ngm:class:text-to-dot-generation",
-        "label": "Text-to-DOT Generation"
-      },
-      {
-        "@id": "urn:ngm:class:text-to-mermaid-generation",
-        "label": "Text-to-Mermaid Generation"
-      },
-      {
-        "@id": "urn:ngm:class:text-to-plant-uml-generation",
-        "label": "Text-to-PlantUML Generation"
       }
     ],
     "uses": [
@@ -578,20 +502,8 @@ public:: true
         "label": "Few-Shot Prompting"
       },
       {
-        "@id": "urn:ngm:class:force-directed-layout",
-        "label": "Force-Directed Layout"
-      },
-      {
         "@id": "urn:ngm:class:markdown",
         "label": "Markdown"
-      },
-      {
-        "@id": "urn:ngm:class:svg-rendering",
-        "label": "SVG Rendering"
-      },
-      {
-        "@id": "urn:ngm:class:tree-sitter-parsing",
-        "label": "Tree Sitter Parsing"
       },
       {
         "@id": "urn:ngm:class:prompt-engineering",
@@ -604,61 +516,33 @@ public:: true
         "label": "C4 Model"
       },
       {
-        "@id": "urn:ngm:class:claude-artifacts",
+        "@id": "urn:ngm:class:claude",
         "label": "Claude Artifacts"
-      },
-      {
-        "@id": "urn:ngm:class:eraser-diagram-gpt",
-        "label": "Eraser DiagramGPT"
       },
       {
         "@id": "urn:ngm:class:excalidraw",
         "label": "Excalidraw"
       },
       {
-        "@id": "urn:ngm:class:lucidchart-ai",
-        "label": "Lucidchart AI"
-      },
-      {
-        "@id": "urn:ngm:class:markdown-diagramming-as-code-tool-chart",
+        "@id": "urn:ngm:class:markdown-diagramming-as-code-tool",
         "label": "Mermaid Chart"
       },
       {
-        "@id": "urn:ngm:class:miro-ai",
+        "@id": "urn:ngm:class:miro",
         "label": "Miro AI"
-      },
-      {
-        "@id": "urn:ngm:class:napkin-ai",
-        "label": "Napkin AI"
       },
       {
         "@id": "urn:ngm:class:structurizr-dsl",
         "label": "Structurizr DSL"
-      },
-      {
-        "@id": "urn:ngm:class:whimsical-ai",
-        "label": "Whimsical AI"
       }
     ],
     "supports": [
-      {
-        "@id": "urn:ngm:class:diagram-driven-development",
-        "label": "Diagram-Driven Development"
-      },
       {
         "@id": "urn:ngm:class:product-management",
         "label": "Product Management"
       },
       {
-        "@id": "urn:ngm:class:software-architecture-documentation",
-        "label": "Software Architecture Documentation"
-      },
-      {
-        "@id": "urn:ngm:class:system-design-interview-prep",
-        "label": "System Design Interview Prep"
-      },
-      {
-        "@id": "urn:ngm:class:technical-writing",
+        "@id": "urn:ngm:class:technical-documentation",
         "label": "Technical Writing"
       },
       {
@@ -668,28 +552,23 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:c4-model-convention",
+        "@id": "urn:ngm:class:c4-model",
         "label": "C4 Model Convention"
       },
       {
-        "@id": "urn:ngm:class:markdown-diagramming-as-code-tool-specification",
+        "@id": "urn:ngm:class:markdown-diagramming-as-code-tool",
         "label": "Mermaid Specification"
       },
       {
-        "@id": "urn:ngm:class:omg-uml-2-5",
-        "label": "OMG UML 2.5"
-      },
-      {
-        "@id": "urn:ngm:class:plant-uml-standard",
-        "label": "PlantUML Standard"
-      },
-      {
-        "@id": "urn:ngm:class:structurizr-dsl-specification",
+        "@id": "urn:ngm:class:structurizr-dsl",
         "label": "Structurizr DSL Specification"
       }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
     ]
   },
   "quality": 0.52,

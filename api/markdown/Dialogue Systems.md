@@ -143,10 +143,6 @@ public:: true
       {
         "@id": "urn:ngm:class:information-retrieval",
         "label": "Information Retrieval"
-      },
-      {
-        "@id": "urn:ngm:class:static-faq-systems",
-        "label": "Static FAQ Systems"
       }
     ],
     "bridgesTo": [

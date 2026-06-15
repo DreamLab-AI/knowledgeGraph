@@ -86,24 +86,6 @@ public:: true
     "inferenceRule": "RelationEnrichment"
   },
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:discrete-lod",
-        "label": "Discrete LOD"
-      },
-      {
-        "@id": "urn:ngm:class:continuous-lod",
-        "label": "Continuous LOD"
-      },
-      {
-        "@id": "urn:ngm:class:hierarchical-lod",
-        "label": "Hierarchical LOD"
-      },
-      {
-        "@id": "urn:ngm:class:mipmapping",
-        "label": "Mipmapping"
-      }
-    ],
     "partOf": [
       {
         "@id": "urn:ngm:class:rendering-pipeline",
@@ -116,10 +98,6 @@ public:: true
         "label": "3D Asset"
       },
       {
-        "@id": "urn:ngm:class:mesh-decimation",
-        "label": "Mesh Decimation"
-      },
-      {
         "@id": "urn:ngm:class:scene-graph",
         "label": "Scene Graph"
       }
@@ -128,20 +106,12 @@ public:: true
       {
         "@id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
-      },
-      {
-        "@id": "urn:ngm:class:open-world-streaming",
-        "label": "Open World Streaming"
       }
     ],
     "dependsOn": [
       {
         "@id": "urn:ngm:class:graphics-processing-unit",
         "label": "Graphics Processing Unit"
-      },
-      {
-        "@id": "urn:ngm:class:camera-frustum",
-        "label": "Camera Frustum"
       }
     ],
     "uses": [
@@ -152,10 +122,6 @@ public:: true
       {
         "@id": "urn:ngm:class:shader",
         "label": "Shader"
-      },
-      {
-        "@id": "urn:ngm:class:screen-space-coverage",
-        "label": "Screen-Space Coverage"
       }
     ],
     "supports": [
@@ -184,23 +150,11 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:asset-streaming",
-        "label": "Asset Streaming"
-      },
-      {
         "@id": "urn:ngm:class:spatial-index",
         "label": "Spatial Index"
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:instancing",
-        "label": "Instancing"
-      },
-      {
-        "@id": "urn:ngm:class:progressive-mesh",
-        "label": "Progressive Mesh"
-      },
       {
         "@id": "urn:ngm:class:texture-atlas",
         "label": "Texture Atlas"

@@ -75,10 +75,6 @@ public:: true
       {
         "@id": "urn:ngm:class:compute-shader",
         "label": "Compute Shader"
-      },
-      {
-        "@id": "urn:ngm:class:texture-unit",
-        "label": "Texture Unit"
       }
     ],
     "partOf": [
@@ -93,7 +89,7 @@ public:: true
         "label": "Video Memory"
       },
       {
-        "@id": "urn:ngm:class:device-driver",
+        "@id": "urn:ngm:class:device-drivers",
         "label": "Device Driver"
       }
     ],
@@ -126,10 +122,6 @@ public:: true
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:single-instruction-multiple-data",
-        "label": "Single Instruction Multiple Data"
-      },
       {
         "@id": "urn:ngm:class:parallel-computing",
         "label": "Parallel Computing"
@@ -177,10 +169,6 @@ public:: true
       {
         "@id": "urn:ngm:class:extended-reality",
         "label": "Extended Reality"
-      },
-      {
-        "@id": "urn:ngm:class:cryptocurrency-mining",
-        "label": "Cryptocurrency Mining"
       }
     ],
     "relatedTo": [

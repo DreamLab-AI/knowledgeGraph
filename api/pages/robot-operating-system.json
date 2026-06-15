@@ -30,24 +30,8 @@
         "label": "colcon Build System"
       },
       {
-        "id": "urn:ngm:class:ros-action",
-        "label": "ROS Action"
-      },
-      {
-        "id": "urn:ngm:class:ros-node",
+        "id": "urn:ngm:class:ros",
         "label": "ROS Node"
-      },
-      {
-        "id": "urn:ngm:class:ros-package",
-        "label": "ROS Package"
-      },
-      {
-        "id": "urn:ngm:class:ros-service",
-        "label": "ROS Service"
-      },
-      {
-        "id": "urn:ngm:class:ros-topic",
-        "label": "ROS Topic"
       },
       {
         "id": "urn:ngm:class:urdf-robot-model",
@@ -55,10 +39,6 @@
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:cmake-build-system",
-        "label": "CMake Build System"
-      },
       {
         "id": "urn:ngm:class:data-distribution-service",
         "label": "Data Distribution Service"
@@ -93,16 +73,8 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:dds-rtps-protocol",
-        "label": "DDS RTPS Protocol"
-      },
-      {
-        "id": "urn:ngm:class:rep-standards",
+        "id": "urn:ngm:class:ros-rep",
         "label": "REP Standards"
-      },
-      {
-        "id": "urn:ngm:class:sros2-security",
-        "label": "SROS2 Security"
       }
     ],
     "contrastsWith": [],
@@ -112,12 +84,8 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:autonomous-systems-platform",
+        "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems Platform"
-      },
-      {
-        "id": "urn:ngm:class:robotic-software-stack",
-        "label": "Robotic Software Stack"
       }
     ],
     "relatedTo": []

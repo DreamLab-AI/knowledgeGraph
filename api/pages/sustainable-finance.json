@@ -45,7 +45,7 @@
         "label": "Sustainability-Linked Loan"
       },
       {
-        "id": "urn:ngm:class:carbon-credit-market",
+        "id": "urn:ngm:class:voluntary-carbon-market",
         "label": "Carbon Credit Market"
       }
     ],
@@ -55,7 +55,7 @@
         "label": "Paris Agreement"
       },
       {
-        "id": "urn:ngm:class:un-sustainable-development-goals",
+        "id": "urn:ngm:class:sustainable-development-goals",
         "label": "UN Sustainable Development Goals"
       }
     ],
@@ -73,10 +73,6 @@
       {
         "id": "urn:ngm:class:conventional-finance",
         "label": "Conventional Finance"
-      },
-      {
-        "id": "urn:ngm:class:socially-responsible-investment",
-        "label": "Socially Responsible Investment"
       }
     ],
     "bridgesTo": [
@@ -103,7 +99,7 @@
         "label": "TCFD"
       },
       {
-        "id": "urn:ngm:class:ifrs-s1-s2",
+        "id": "urn:ngm:class:ifrs-s1",
         "label": "IFRS S1 S2"
       }
     ],
@@ -127,10 +123,6 @@
       {
         "id": "urn:ngm:class:climate-finance",
         "label": "Climate Finance"
-      },
-      {
-        "id": "urn:ngm:class:stranded-assets",
-        "label": "Stranded Assets"
       }
     ]
   },

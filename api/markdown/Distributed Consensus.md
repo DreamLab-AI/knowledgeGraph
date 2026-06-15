@@ -24,58 +24,155 @@ alias:: DistributedConsensus
   "definition": "Distributed consensus is the fundamental computer science problem of achieving reliable agreement on a shared value or sequence of values across a set of independent processes in a distributed system, despite the possibility of node crashes, network partitions, message delays, and Byzantine (arbitrarily malicious) behaviour. The problem is formalised through three core properties: agreement (all non-faulty nodes decide the same value), validity (the decided value was proposed by some participant), and termination (every non-faulty node eventually decides). The Fischer-Lynch-Paterson (FLP) impossibility theorem establishes that deterministic consensus in a fully asynchronous system is impossible even with one crash-faulty process, forcing all practical protocols to make synchrony assumptions or adopt probabilistic termination.",
   "domain": "distributed-systems",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
-      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"},
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:leader-election", "label": "Leader Election"},
-      {"@id": "urn:ngm:class:quorum-system", "label": "Quorum System"}
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      },
+      {
+        "@id": "urn:ngm:class:quorum-system",
+        "label": "Quorum System"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
-      {"@id": "urn:ngm:class:decentralised-trust", "label": "Decentralised Trust"},
-      {"@id": "urn:ngm:class:replicated-state-machine", "label": "Replicated State Machine"},
-      {"@id": "urn:ngm:class:distributed-database", "label": "Distributed Database"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-trust",
+        "label": "Decentralised Trust"
+      },
+      {
+        "@id": "urn:ngm:class:state-machine-replication",
+        "label": "Replicated State Machine"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-databases",
+        "label": "Distributed Database"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:network-communication", "label": "Network Communication"},
-      {"@id": "urn:ngm:class:message-passing", "label": "Message Passing"},
-      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"}
+      {
+        "@id": "urn:ngm:class:network-communication",
+        "label": "Network Communication"
+      },
+      {
+        "@id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:paxos", "label": "Paxos"},
-      {"@id": "urn:ngm:class:raft", "label": "Raft"},
-      {"@id": "urn:ngm:class:pbft", "label": "PBFT"},
-      {"@id": "urn:ngm:class:hotstuff", "label": "HotStuff"},
-      {"@id": "urn:ngm:class:tendermint", "label": "Tendermint"}
+      {
+        "@id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      },
+      {
+        "@id": "urn:ngm:class:raft",
+        "label": "Raft"
+      },
+      {
+        "@id": "urn:ngm:class:pbft",
+        "label": "PBFT"
+      },
+      {
+        "@id": "urn:ngm:class:hotstuff",
+        "label": "HotStuff"
+      },
+      {
+        "@id": "urn:ngm:class:tendermint",
+        "label": "Tendermint"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
-      {"@id": "urn:ngm:class:cap-theorem", "label": "CAP Theorem"},
-      {"@id": "urn:ngm:class:atomic-broadcast", "label": "Atomic Broadcast"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "@id": "urn:ngm:class:atomic-broadcast",
+        "label": "Atomic Broadcast"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:centralised-coordination", "label": "Centralised Coordination"},
-      {"@id": "urn:ngm:class:eventual-consistency", "label": "Eventual Consistency"}
+      {
+        "@id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:multi-agent-coordination", "label": "Multi-Agent Coordination"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-coordination",
+        "label": "Multi-Agent Coordination"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ieee", "label": "IEEE"},
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"}
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:agreement-problem", "label": "Agreement Problem"},
-    {"@id": "urn:ngm:class:distributed-agreement", "label": "Distributed Agreement"}
+    {
+      "@id": "urn:ngm:class:agreement-problem",
+      "label": "Agreement Problem"
+    },
+    {
+      "@id": "urn:ngm:class:distributed-agreement",
+      "label": "Distributed Agreement"
+    }
   ],
   "quality": 0.74,
   "provenance": {

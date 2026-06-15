@@ -306,10 +306,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:dangerous-capability-evaluations",
-        "label": "Dangerous Capability Evaluations"
-      },
-      {
         "@id": "urn:ngm:class:debate",
         "label": "Debate"
       },
@@ -348,7 +344,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:evaluation-benchmarks",
+        "@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
         "label": "Evaluation Benchmarks"
       },
       {
@@ -356,7 +352,7 @@ public:: true
         "label": "Governance Framework"
       },
       {
-        "@id": "urn:ngm:class:interpretability-tools",
+        "@id": "urn:ngm:class:interpretability",
         "label": "Interpretability Tools"
       },
       {
@@ -374,10 +370,6 @@ public:: true
         "label": "Catastrophic Risk Reduction"
       },
       {
-        "@id": "urn:ngm:class:responsible-scaling",
-        "label": "Responsible Scaling"
-      },
-      {
         "@id": "urn:ngm:class:safe-ai-deployment",
         "label": "Safe AI Deployment"
       },
@@ -392,15 +384,11 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:adversarial-red-teaming",
+        "@id": "urn:ngm:class:red-teaming",
         "label": "Adversarial Red Teaming"
       },
       {
-        "@id": "urn:ngm:class:debate-protocol",
-        "label": "Debate Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:mechanistic-circuits-analysis",
+        "@id": "urn:ngm:class:mechanistic-interpretability",
         "label": "Mechanistic Circuits Analysis"
       },
       {
@@ -494,10 +482,6 @@ public:: true
         "label": "Responsible Scaling Policy"
       },
       {
-        "@id": "urn:ngm:class:seoul-ai-summit",
-        "label": "Seoul AI Summit"
-      },
-      {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act Regulatory Instrument"
       }
@@ -514,10 +498,6 @@ public:: true
       {
         "@id": "urn:ngm:class:nist-ai-rmf",
         "label": "NIST AI RMF"
-      },
-      {
-        "@id": "urn:ngm:class:uk-aisi-evaluation-protocols",
-        "label": "UK AISI Evaluation Protocols"
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",

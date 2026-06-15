@@ -38,51 +38,131 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:servo-motor", "label": "Servo Motor"},
-      {"@id": "urn:ngm:class:hydraulic-actuator", "label": "Hydraulic Actuator"},
-      {"@id": "urn:ngm:class:pneumatic-actuator", "label": "Pneumatic Actuator"},
-      {"@id": "urn:ngm:class:series-elastic-actuator", "label": "Series Elastic Actuator"},
-      {"@id": "urn:ngm:class:linear-actuator", "label": "Linear Actuator"}
+      {
+        "@id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      },
+      {
+        "@id": "urn:ngm:class:hydraulic-actuator",
+        "label": "Hydraulic Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:pneumatic-actuator",
+        "label": "Pneumatic Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:series-elastic-actuator",
+        "label": "Series Elastic Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:electric-linear-actuator",
+        "label": "Linear Actuator"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:robot", "label": "Robot"},
-      {"@id": "urn:ngm:class:mechatronic-system", "label": "Mechatronic System"},
-      {"@id": "urn:ngm:class:cyber-physical-system", "label": "Cyber-Physical System"}
+      {
+        "@id": "urn:ngm:class:robot",
+        "label": "Robot"
+      },
+      {
+        "@id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber-Physical System"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:control-system", "label": "Control System"},
-      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
-      {"@id": "urn:ngm:class:power-electronics", "label": "Power Electronics"},
-      {"@id": "urn:ngm:class:sensor", "label": "Sensor"}
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "@id": "urn:ngm:class:power-electronics",
+        "label": "Power Electronics"
+      },
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
+      {
+        "@id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:encoder", "label": "Encoder"},
-      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"},
-      {"@id": "urn:ngm:class:embedded-system", "label": "Embedded System"}
+      {
+        "@id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded System"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:passive-mechanism", "label": "Passive Mechanism"},
-      {"@id": "urn:ngm:class:transducer", "label": "Transducer"}
+      {
+        "@id": "urn:ngm:class:passive-mechanism",
+        "label": "Passive Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:transducer",
+        "label": "Transducer"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:torque-control", "label": "Torque Control"},
-      {"@id": "urn:ngm:class:impedance-control", "label": "Impedance Control"},
-      {"@id": "urn:ngm:class:soft-robotics", "label": "Soft Robotics"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"}
+      {
+        "@id": "urn:ngm:class:torque-control",
+        "label": "Torque Control"
+      },
+      {
+        "@id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "@id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:effector", "label": "Effector"}
+    {
+      "@id": "urn:ngm:class:effector",
+      "label": "Effector"
+    }
   ],
   "quality": 0.74,
   "provenance": {

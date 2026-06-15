@@ -34,10 +34,6 @@
         "label": "Inverse Kinematics"
       },
       {
-        "id": "urn:ngm:class:keyframe",
-        "label": "Keyframe"
-      },
-      {
         "id": "urn:ngm:class:blend-tree",
         "label": "Blend Tree"
       }
@@ -48,17 +44,13 @@
         "label": "Rendering Pipeline"
       },
       {
-        "id": "urn:ngm:class:rigging",
+        "id": "urn:ngm:class:character-rigging",
         "label": "Rigging"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:character-controller",
-        "label": "Character Controller"
-      },
-      {
-        "id": "urn:ngm:class:user-presence",
+        "id": "urn:ngm:class:presence",
         "label": "User Presence"
       },
       {
@@ -77,12 +69,7 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:static-mesh",
-        "label": "Static Mesh"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:neural-motion-synthesis",
@@ -101,10 +88,6 @@
       {
         "id": "urn:ngm:class:rendering-engine",
         "label": "Rendering Engine"
-      },
-      {
-        "id": "urn:ngm:class:bezier-spline",
-        "label": "Bezier Spline"
       }
     ],
     "supports": [

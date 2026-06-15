@@ -106,7 +106,7 @@ public:: true
         "label": "XR Device"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing-platform",
+        "@id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing Platform"
       }
     ],
@@ -130,10 +130,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:immersive-visualization",
-        "label": "Immersive Visualization"
-      },
-      {
         "@id": "urn:ngm:class:mixed-reality",
         "label": "Mixed Reality"
       },
@@ -152,18 +148,8 @@ public:: true
         "label": "GPU"
       },
       {
-        "@id": "urn:ngm:class:embedded-system-on-chip",
+        "@id": "urn:ngm:class:embedded-systems",
         "label": "Embedded System-on-Chip"
-      }
-    ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:oled-technology",
-        "label": "OLED Technology"
-      },
-      {
-        "@id": "urn:ngm:class:micro-led-technology",
-        "label": "Micro-LED Technology"
       }
     ],
     "supports": [

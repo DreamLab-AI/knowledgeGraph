@@ -24,54 +24,124 @@ public:: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:network-analysis", "label": "Network Analysis"}
+    {
+      "@id": "urn:ngm:class:network-analysis",
+      "label": "Network Analysis"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:community-detection", "label": "Community Detection"},
-      {"@id": "urn:ngm:class:link-prediction", "label": "Link Prediction"},
-      {"@id": "urn:ngm:class:centrality-analysis", "label": "Centrality Analysis"},
-      {"@id": "urn:ngm:class:pathfinding-algorithm", "label": "Pathfinding Algorithm"},
-      {"@id": "urn:ngm:class:graph-embedding", "label": "Graph Embedding"}
+      {
+        "@id": "urn:ngm:class:community-detection",
+        "label": "Community Detection"
+      },
+      {
+        "@id": "urn:ngm:class:link-prediction",
+        "label": "Link Prediction"
+      },
+      {
+        "@id": "urn:ngm:class:pathfinding-algorithm",
+        "label": "Pathfinding Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:graph-embedding",
+        "label": "Graph Embedding"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:graph-neural-network", "label": "Graph Neural Network"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:graph-database", "label": "Graph Database"},
-      {"@id": "urn:ngm:class:sparse-matrix", "label": "Sparse Matrix"}
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "@id": "urn:ngm:class:sparse-matrix",
+        "label": "Sparse Matrix"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:graph-data-model", "label": "Graph Data Model"},
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"}
+      {
+        "@id": "urn:ngm:class:graph-data-model",
+        "label": "Graph Data Model"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"},
-      {"@id": "urn:ngm:class:recommendation-system", "label": "Recommendation System"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:graph-theory", "label": "Graph Theory"}
+      {
+        "@id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:relational-database", "label": "Relational Database"},
-      {"@id": "urn:ngm:class:tabular-data-analysis", "label": "Tabular Data Analysis"}
+      {
+        "@id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:drug-discovery", "label": "Drug Discovery"},
-      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"}
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:social-network-analysis", "label": "Social Network Analysis"},
-      {"@id": "urn:ngm:class:pagerank", "label": "PageRank"}
+      {
+        "@id": "urn:ngm:class:social-network-analysis",
+        "label": "Social Network Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:pagerank",
+        "label": "PageRank"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:graph-based-analytics", "label": "Graph-Based Analytics"}
+    {
+      "@id": "urn:ngm:class:graph-based-analytics",
+      "label": "Graph-Based Analytics"
+    }
   ],
   "quality": 0.72,
   "provenance": {

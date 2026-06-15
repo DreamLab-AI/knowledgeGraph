@@ -158,10 +158,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:actuator-command",
-        "label": "ActuatorCommand"
-      },
-      {
         "@id": "urn:ngm:class:control-law",
         "label": "Control Law"
       },
@@ -192,30 +188,14 @@ public:: true
         "label": "Motor Driver"
       },
       {
-        "@id": "urn:ngm:class:position-feedback",
-        "label": "PositionFeedback"
-      },
-      {
         "@id": "urn:ngm:class:power-supply",
         "label": "Power Supply"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:homing",
-        "label": "Homing"
-      },
-      {
-        "@id": "urn:ngm:class:path-following",
-        "label": "PathFollowing"
-      },
-      {
         "@id": "urn:ngm:class:pick-and-place",
         "label": "Pick and Place"
-      },
-      {
-        "@id": "urn:ngm:class:synchronization",
-        "label": "Synchronization"
       },
       {
         "@id": "urn:ngm:class:trajectory-tracking",

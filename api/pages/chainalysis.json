@@ -56,10 +56,6 @@
       {
         "id": "urn:ngm:class:cryptocurrency-investigation",
         "label": "Cryptocurrency Investigation"
-      },
-      {
-        "id": "urn:ngm:class:ransomware-attribution",
-        "label": "Ransomware Attribution"
       }
     ],
     "dependsOn": [],

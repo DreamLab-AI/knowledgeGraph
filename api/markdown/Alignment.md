@@ -23,58 +23,129 @@ public:: true
   "definition": "The technical and philosophical research programme aimed at ensuring that AI systems reliably pursue goals, exhibit behaviours, and produce outcomes that accord with human values, intentions, and oversight requirements. Alignment addresses the fundamental challenge that learned objectives may diverge from intended objectives—a problem that becomes increasingly consequential as AI systems grow more capable and autonomous. The field encompasses specification of human preferences, training methods that instil those preferences, and verification techniques that confirm alignment properties are preserved at deployment.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-alignment",
+    "label": "AI Alignment"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:value-learning", "label": "Value Learning"},
-      {"@id": "urn:ngm:class:scalable-oversight", "label": "Scalable Oversight"},
-      {"@id": "urn:ngm:class:reward-modelling", "label": "Reward Modelling"},
-      {"@id": "urn:ngm:class:constitutional-ai", "label": "Constitutional AI"}
+      {
+        "@id": "urn:ngm:class:scalable-oversight",
+        "label": "Scalable Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:reward-modelling",
+        "label": "Reward Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:ai-safety-research", "label": "AI Safety Research"}
+      {
+        "@id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:human-feedback", "label": "Human Feedback"},
-      {"@id": "urn:ngm:class:preference-elicitation", "label": "Preference Elicitation"},
-      {"@id": "urn:ngm:class:interpretability", "label": "Interpretability"}
+      {
+        "@id": "urn:ngm:class:human-feedback",
+        "label": "Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"},
-      {"@id": "urn:ngm:class:safe-deployment", "label": "Safe Deployment"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "@id": "urn:ngm:class:safe-deployment",
+        "label": "Safe Deployment"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
-      {"@id": "urn:ngm:class:mechanistic-interpretability", "label": "Mechanistic Interpretability"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:mechanistic-interpretability",
+        "label": "Mechanistic Interpretability"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"},
-      {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"},
-      {"@id": "urn:ngm:class:debate", "label": "Debate"},
-      {"@id": "urn:ngm:class:amplification", "label": "Amplification"}
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:debate",
+        "label": "Debate"
+      },
+      {
+        "@id": "urn:ngm:class:intelligence-amplification",
+        "label": "Amplification"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:misalignment", "label": "Misalignment"},
-      {"@id": "urn:ngm:class:reward-hacking", "label": "Reward Hacking"}
+      {
+        "@id": "urn:ngm:class:reward-hacking",
+        "label": "Reward Hacking"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:machine-ethics", "label": "Machine Ethics"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:frontier-ai", "label": "Frontier AI"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:existential-risk", "label": "Existential Risk"}
+      {
+        "@id": "urn:ngm:class:frontier-ai",
+        "label": "Frontier AI"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:existential-risk",
+        "label": "Existential Risk"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-    {"@id": "urn:ngm:class:machine-alignment", "label": "Machine Alignment"}
+    {
+      "@id": "urn:ngm:class:ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "@id": "urn:ngm:class:machine-alignment",
+      "label": "Machine Alignment"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

@@ -63,14 +63,7 @@ public:: true
       "label": "Audio Processing System"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:3-d-sound-rendering",
-        "label": "3D Sound Rendering"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

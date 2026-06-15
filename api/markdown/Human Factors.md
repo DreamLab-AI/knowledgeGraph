@@ -154,7 +154,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:cognitive-load-analysis",
+        "@id": "urn:ngm:class:cognitive-load-metric",
         "label": "Cognitive Load Analysis"
       },
       {
@@ -164,10 +164,6 @@ public:: true
       {
         "@id": "urn:ngm:class:safety-assessment",
         "label": "Safety Assessment"
-      },
-      {
-        "@id": "urn:ngm:class:trust-calibration",
-        "label": "Trust Calibration"
       },
       {
         "@id": "urn:ngm:class:usability-testing",
@@ -194,20 +190,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:efficient-collaboration",
+        "@id": "urn:ngm:class:collaboration",
         "label": "Efficient Collaboration"
-      },
-      {
-        "@id": "urn:ngm:class:intuitive-control",
-        "label": "Intuitive Control"
-      },
-      {
-        "@id": "urn:ngm:class:operator-safety",
-        "label": "Operator Safety"
-      },
-      {
-        "@id": "urn:ngm:class:user-acceptance",
-        "label": "User Acceptance"
       }
     ],
     "bridgesTo": [

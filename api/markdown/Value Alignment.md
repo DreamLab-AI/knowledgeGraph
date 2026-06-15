@@ -156,23 +156,11 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:beneficial-ai",
-        "label": "Beneficial AI"
-      },
-      {
         "@id": "urn:ngm:class:trustworthy-ai",
         "label": "Trustworthy AI"
       }
     ],
     "hasPart": [
-      {
-        "@id": "urn:ngm:class:outer-alignment",
-        "label": "Outer Alignment"
-      },
-      {
-        "@id": "urn:ngm:class:inner-alignment",
-        "label": "Inner Alignment"
-      },
       {
         "@id": "urn:ngm:class:corrigibility",
         "label": "Corrigibility"
@@ -180,7 +168,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:constitutional-ai",
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
       },
       {
@@ -208,10 +196,6 @@ public:: true
       {
         "@id": "urn:ngm:class:existential-risk",
         "label": "Existential Risk"
-      },
-      {
-        "@id": "urn:ngm:class:goal-misgeneralisation",
-        "label": "Goal Misgeneralisation"
       }
     ],
     "supports": [

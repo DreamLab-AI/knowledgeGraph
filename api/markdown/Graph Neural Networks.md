@@ -75,10 +75,6 @@ public:: true
       {
         "@id": "urn:ngm:class:adjacency-matrix",
         "label": "Adjacency Matrix"
-      },
-      {
-        "@id": "urn:ngm:class:node-feature-vectors",
-        "label": "Node Feature Vectors"
       }
     ],
     "enables": [
@@ -99,10 +95,6 @@ public:: true
         "label": "Graph Classification"
       },
       {
-        "@id": "urn:ngm:class:molecular-property-prediction",
-        "label": "Molecular Property Prediction"
-      },
-      {
         "@id": "urn:ngm:class:recommendation-systems",
         "label": "Recommendation Systems"
       }
@@ -115,34 +107,18 @@ public:: true
       {
         "@id": "urn:ngm:class:graph-attention-network",
         "label": "Graph Attention Network"
-      },
-      {
-        "@id": "urn:ngm:class:graph-sage",
-        "label": "GraphSAGE"
       }
     ],
     "partOf": [
       {
         "@id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
-      },
-      {
-        "@id": "urn:ngm:class:geometric-deep-learning",
-        "label": "Geometric Deep Learning"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:aggregation-function",
-        "label": "Aggregation Function"
-      },
-      {
         "@id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
-      },
-      {
-        "@id": "urn:ngm:class:graph-pooling",
-        "label": "Graph Pooling"
       }
     ],
     "dependsOn": [
@@ -151,7 +127,7 @@ public:: true
         "label": "Graph-Structured Data"
       },
       {
-        "@id": "urn:ngm:class:embedding-representations",
+        "@id": "urn:ngm:class:embedding",
         "label": "Embedding Representations"
       }
     ],
@@ -191,10 +167,6 @@ public:: true
       {
         "@id": "urn:ngm:class:semi-supervised-learning",
         "label": "Semi-Supervised Learning"
-      },
-      {
-        "@id": "urn:ngm:class:over-smoothing",
-        "label": "Over-Smoothing"
       }
     ]
   },

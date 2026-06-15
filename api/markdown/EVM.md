@@ -23,61 +23,142 @@ public:: true
   "definition": "The Ethereum Virtual Machine (EVM) is a stack-based, sandboxed, quasi-Turing-complete virtual machine that executes smart contract bytecode on the Ethereum network and EVM-compatible blockchains. It defines a deterministic computation environment in which all nodes independently execute the same transactions to reach identical state transitions, using a gas metering system to bound computation and prevent denial-of-service attacks. The EVM specification encompasses opcodes, memory model, call semantics, and the gas cost schedule governing the economic cost of each computational step. As an open industry standard maintained by the Enterprise Ethereum Alliance, the EVM has been adopted by hundreds of alternative blockchain networks, establishing it as the dominant cross-chain execution environment.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:virtual-machine", "label": "Virtual Machine"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:virtual-machine",
+      "label": "Virtual Machine"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:ethereum-virtual-machine", "label": "Ethereum Virtual Machine"}
+    {
+      "@id": "urn:ngm:class:ethereum-virtual-machine",
+      "label": "Ethereum Virtual Machine"
+    }
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:smart-contract-execution", "label": "Smart Contract Execution"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:smart-contract-platform", "label": "Smart Contract Platform"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:nft", "label": "NFT"}
+      {
+        "@id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:opcodes", "label": "Opcodes"},
-      {"@id": "urn:ngm:class:solidity", "label": "Solidity"},
-      {"@id": "urn:ngm:class:bytecode", "label": "Bytecode"},
-      {"@id": "urn:ngm:class:gas", "label": "Gas"},
-      {"@id": "urn:ngm:class:merkle-patricia-trie", "label": "Merkle Patricia Trie"}
+      {
+        "@id": "urn:ngm:class:opcodes",
+        "label": "Opcodes"
+      },
+      {
+        "@id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      },
+      {
+        "@id": "urn:ngm:class:bytecode",
+        "label": "Bytecode"
+      },
+      {
+        "@id": "urn:ngm:class:gas",
+        "label": "Gas"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-patricia-trie",
+        "label": "Merkle Patricia Trie"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ethereum-node", "label": "Ethereum Node"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {
+        "@id": "urn:ngm:class:ethereum-node",
+        "label": "Ethereum Node"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:evm-stack", "label": "EVM Stack"},
-      {"@id": "urn:ngm:class:evm-memory", "label": "EVM Memory"},
-      {"@id": "urn:ngm:class:evm-storage", "label": "EVM Storage"},
-      {"@id": "urn:ngm:class:gas-metering", "label": "Gas Metering"}
+      {
+        "@id": "urn:ngm:class:evm-stack",
+        "label": "EVM Stack"
+      },
+      {
+        "@id": "urn:ngm:class:evm-memory",
+        "label": "EVM Memory"
+      },
+      {
+        "@id": "urn:ngm:class:gas-metering",
+        "label": "Gas Metering"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:ethereum-yellow-paper", "label": "Ethereum Yellow Paper"},
-      {"@id": "urn:ngm:class:eip", "label": "EIP"}
+      {
+        "@id": "urn:ngm:class:ethereum-yellow-paper",
+        "label": "Ethereum Yellow Paper"
+      },
+      {
+        "@id": "urn:ngm:class:eip",
+        "label": "EIP"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:layer-2-rollup", "label": "Layer 2 Rollup"},
-      {"@id": "urn:ngm:class:zk-rollup", "label": "ZK-Rollup"},
-      {"@id": "urn:ngm:class:optimistic-rollup", "label": "Optimistic Rollup"}
+      {
+        "@id": "urn:ngm:class:layer-2-rollup",
+        "label": "Layer 2 Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:zk-rollup",
+        "label": "ZK-Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:enterprise-ethereum-alliance", "label": "Enterprise Ethereum Alliance"}
+      {
+        "@id": "urn:ngm:class:enterprise-ethereum-alliance",
+        "label": "Enterprise Ethereum Alliance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:wasm", "label": "WASM"},
-      {"@id": "urn:ngm:class:bitcoin-script", "label": "Bitcoin Script"},
-      {"@id": "urn:ngm:class:move-vm", "label": "Move VM"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
+        "label": "Bitcoin Script"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:gas-optimization", "label": "Gas Optimization"},
-      {"@id": "urn:ngm:class:solidity-abi", "label": "Solidity ABI"},
-      {"@id": "urn:ngm:class:eof", "label": "EVM Object Format"},
-      {"@id": "urn:ngm:class:vyper", "label": "Vyper"}
+      {
+        "@id": "urn:ngm:class:gas-optimization",
+        "label": "Gas Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:vyper",
+        "label": "Vyper"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
     ]
   },
   "quality": 0.75,

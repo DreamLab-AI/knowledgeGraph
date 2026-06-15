@@ -23,62 +23,141 @@ public:: true
   "definition": "A Merkle Directed Acyclic Graph (DAG) is a data structure combining Merkle tree hash-linking with a generalised directed acyclic graph topology, allowing nodes to have multiple parents and enabling content-addressed, tamper-evident storage of arbitrary graph-shaped data. Unlike a binary Merkle tree, each node's cryptographic hash is derived from all its children, forming a unique, immutable identifier for any subgraph.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:content-addressing", "label": "Content Addressing"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:content-addressing",
+    "label": "Content Addressing"
+  },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:content-identifier", "label": "Content Identifier"},
-      {"@id": "urn:ngm:class:directed-acyclic-graph", "label": "Directed Acyclic Graph"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:merkle-node", "label": "Merkle Node"},
-      {"@id": "urn:ngm:class:typed-link", "label": "Typed Link"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:content-identifier",
+        "label": "Content Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:directed-acyclic-graph",
+        "label": "Directed Acyclic Graph"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:ipld", "label": "IPLD"}
+      {
+        "@id": "urn:ngm:class:ipld",
+        "label": "IPLD"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:hash-collision-resistance", "label": "Hash Collision Resistance"},
-      {"@id": "urn:ngm:class:content-addressing", "label": "Content Addressing"}
+      {
+        "@id": "urn:ngm:class:collision-resistance",
+        "label": "Hash Collision Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"},
-      {"@id": "urn:ngm:class:ipfs", "label": "IPFS"},
-      {"@id": "urn:ngm:class:deduplication", "label": "Deduplication"},
-      {"@id": "urn:ngm:class:tamper-evident-storage", "label": "Tamper-Evident Storage"},
-      {"@id": "urn:ngm:class:verifiable-computation", "label": "Verifiable Computation"}
+      {
+        "@id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "@id": "urn:ngm:class:deduplication",
+        "label": "Deduplication"
+      },
+      {
+        "@id": "urn:ngm:class:tamper-evident-storage",
+        "label": "Tamper-Evident Storage"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-computation",
+        "label": "Verifiable Computation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
-      {"@id": "urn:ngm:class:immutable-data-model", "label": "Immutable Data Model"}
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:immutable-record",
+        "label": "Immutable Data Model"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:authenticated-data-structure", "label": "Authenticated Data Structure"}
+      {
+        "@id": "urn:ngm:class:data-structure",
+        "label": "Authenticated Data Structure"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
-      {"@id": "urn:ngm:class:reproducible-builds", "label": "Reproducible Builds"},
-      {"@id": "urn:ngm:class:decentralised-data-streaming", "label": "Decentralised Data Streaming"}
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:reproducible-builds",
+        "label": "Reproducible Builds"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:merkle-patricia-trie", "label": "Merkle Patricia Trie"}
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-patricia-trie",
+        "label": "Merkle Patricia Trie"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:git", "label": "Git"},
-      {"@id": "urn:ngm:class:filecoin", "label": "Filecoin"}
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:git",
+        "label": "Git"
+      },
+      {
+        "@id": "urn:ngm:class:filecoin",
+        "label": "Filecoin"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:data-structure", "label": "Data Structure"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"}
+      {
+        "@id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ipld-dag", "label": "IPLD DAG"},
-    {"@id": "urn:ngm:class:hash-linked-dag", "label": "Hash-Linked DAG"}
+    {
+      "@id": "urn:ngm:class:ipld-dag",
+      "label": "IPLD DAG"
+    },
+    {
+      "@id": "urn:ngm:class:hash-linked-dag",
+      "label": "Hash-Linked DAG"
+    }
   ],
   "quality": 0.8,
   "provenance": {

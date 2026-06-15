@@ -77,12 +77,7 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:choreography",
-        "label": "Choreography"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:ai-inference",
@@ -97,10 +92,6 @@
       {
         "id": "urn:ngm:class:kubernetes",
         "label": "Kubernetes"
-      },
-      {
-        "id": "urn:ngm:class:declarative-configuration",
-        "label": "Declarative Configuration"
       },
       {
         "id": "urn:ngm:class:load-balancing",
@@ -124,7 +115,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:cloud-native-computing",
+        "id": "urn:ngm:class:cloud-native",
         "label": "Cloud Native Computing"
       }
     ],

@@ -126,7 +126,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:consumer-safety",
+        "@id": "urn:ngm:class:consumer-protection",
         "label": "Consumer Safety"
       },
       {
@@ -156,7 +156,7 @@ public:: true
         "label": "GDPR"
       },
       {
-        "@id": "urn:ngm:class:ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "AI Act"
       }
     ],

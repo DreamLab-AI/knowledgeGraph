@@ -153,11 +153,7 @@ alias:: ProposalSystem
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:temperature-check",
-        "label": "Temperature Check"
-      },
-      {
-        "@id": "urn:ngm:class:timelock-delay",
+        "@id": "urn:ngm:class:timelock",
         "label": "Timelock Delay"
       },
       {
@@ -175,7 +171,7 @@ alias:: ProposalSystem
         "label": "Decentralized Autonomous Organization"
       },
       {
-        "@id": "urn:ngm:class:dao-governance-framework",
+        "@id": "urn:ngm:class:dao-governance",
         "label": "DAO Governance Framework"
       }
     ],
@@ -209,10 +205,6 @@ alias:: ProposalSystem
       {
         "@id": "urn:ngm:class:treasury-management",
         "label": "Treasury Management"
-      },
-      {
-        "@id": "urn:ngm:class:parameter-change",
-        "label": "Parameter Change"
       }
     ],
     "dependsOn": [
@@ -221,7 +213,7 @@ alias:: ProposalSystem
         "label": "Blockchain Network"
       },
       {
-        "@id": "urn:ngm:class:eip-712-signature",
+        "@id": "urn:ngm:class:eip-712",
         "label": "EIP-712 Signature"
       },
       {
@@ -231,7 +223,7 @@ alias:: ProposalSystem
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:governor-bravo",
+        "@id": "urn:ngm:class:compound-governor-bravo",
         "label": "Governor Bravo"
       },
       {
@@ -241,12 +233,8 @@ alias:: ProposalSystem
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:tally-governance",
+        "@id": "urn:ngm:class:tally",
         "label": "Tally Governance"
-      },
-      {
-        "@id": "urn:ngm:class:discourse-forum",
-        "label": "Discourse Forum"
       },
       {
         "@id": "urn:ngm:class:multisig-wallet",
@@ -257,20 +245,12 @@ alias:: ProposalSystem
       {
         "@id": "urn:ngm:class:community-participation",
         "label": "Community Participation"
-      },
-      {
-        "@id": "urn:ngm:class:protocol-security",
-        "label": "Protocol Security"
       }
     ],
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:corporate-governance",
         "label": "Corporate Governance"
-      },
-      {
-        "@id": "urn:ngm:class:emergency-multisig-action",
-        "label": "Emergency Multisig Action"
       }
     ],
     "bridgesTo": [
@@ -284,10 +264,6 @@ alias:: ProposalSystem
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:voter-fatigue",
-        "label": "Voter Fatigue"
-      },
       {
         "@id": "urn:ngm:class:sybil-resistance",
         "label": "Sybil Resistance"

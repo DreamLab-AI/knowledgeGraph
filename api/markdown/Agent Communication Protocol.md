@@ -24,53 +24,126 @@ public:: true
   "domain": "artificial-intelligence",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:coordination-protocol", "label": "Coordination Protocol"}
+    {
+      "@id": "urn:ngm:class:coordination-protocol",
+      "label": "Coordination Protocol"
+    }
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:inter-agent-communication", "label": "Inter-Agent Communication"},
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
-      {"@id": "urn:ngm:class:autonomous-task-execution", "label": "Autonomous Task Execution"},
-      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
-      {"@id": "urn:ngm:class:task-delegation", "label": "Task Delegation"}
+      {
+        "@id": "urn:ngm:class:inter-agent-communication",
+        "label": "Inter-Agent Communication"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:task-delegation",
+        "label": "Task Delegation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:message-passing", "label": "Message Passing"},
-      {"@id": "urn:ngm:class:speech-act-theory", "label": "Speech Act Theory"},
-      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:websocket", "label": "WebSocket"}
+      {
+        "@id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "@id": "urn:ngm:class:speech-act-theory",
+        "label": "Speech Act Theory"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:websocket",
+        "label": "WebSocket"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:message-envelope", "label": "Message Envelope"},
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:conversation-policy", "label": "Conversation Policy"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:fipa-acl", "label": "FIPA ACL"},
-      {"@id": "urn:ngm:class:contract-net-protocol", "label": "Contract Net Protocol"}
+      {
+        "@id": "urn:ngm:class:fipa-acl",
+        "label": "FIPA ACL"
+      },
+      {
+        "@id": "urn:ngm:class:contract-net-protocol",
+        "label": "Contract Net Protocol"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:capability-advertisement", "label": "Capability Advertisement"},
-      {"@id": "urn:ngm:class:error-handling", "label": "Error Handling"},
-      {"@id": "urn:ngm:class:negotiation", "label": "Negotiation"}
+      {
+        "@id": "urn:ngm:class:capability-advertisement",
+        "label": "Capability Advertisement"
+      },
+      {
+        "@id": "urn:ngm:class:error-handling",
+        "label": "Error Handling"
+      },
+      {
+        "@id": "urn:ngm:class:negotiation",
+        "label": "Negotiation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:remote-procedure-call", "label": "Remote Procedure Call"}
+      {
+        "@id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:agent-to-agent-protocol", "label": "Agent-to-Agent Protocol"},
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
-      {"@id": "urn:ngm:class:kqml", "label": "KQML"},
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:agent-to-agent-protocol",
+        "label": "Agent-to-Agent Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:kqml",
+        "label": "KQML"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:agent-messaging-protocol", "label": "Agent Messaging Protocol"},
-    {"@id": "urn:ngm:class:multi-agent-communication-protocol", "label": "Multi-Agent Communication Protocol"}
+    {
+      "@id": "urn:ngm:class:agent-messaging-protocol",
+      "label": "Agent Messaging Protocol"
+    },
+    {
+      "@id": "urn:ngm:class:multi-agent-communication-protocol",
+      "label": "Multi-Agent Communication Protocol"
+    }
   ],
   "quality": 0.72,
   "provenance": {

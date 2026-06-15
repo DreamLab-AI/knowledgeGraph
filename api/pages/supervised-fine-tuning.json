@@ -78,10 +78,6 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:behaviour-cloning",
-        "label": "Behaviour Cloning"
-      },
-      {
         "id": "urn:ngm:class:supervised-learning",
         "label": "Supervised Learning"
       }
@@ -126,10 +122,6 @@
       {
         "id": "urn:ngm:class:rlhf-pipeline",
         "label": "RLHF Pipeline"
-      },
-      {
-        "id": "urn:ngm:class:alignment-pipeline",
-        "label": "Alignment Pipeline"
       }
     ],
     "relatedTo": [
@@ -142,7 +134,7 @@
         "label": "Catastrophic Forgetting"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai",
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
       }
     ]

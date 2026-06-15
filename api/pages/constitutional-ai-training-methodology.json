@@ -20,18 +20,6 @@
       {
         "id": "urn:ngm:class:supervised-fine-tuning",
         "label": "Supervised Fine Tuning"
-      },
-      {
-        "id": "urn:ngm:class:reinforcement-learning-from-ai-feedback",
-        "label": "Reinforcement Learning from AI Feedback"
-      },
-      {
-        "id": "urn:ngm:class:self-critique-and-revision",
-        "label": "Self-Critique and Revision"
-      },
-      {
-        "id": "urn:ngm:class:preference-model",
-        "label": "Preference Model"
       }
     ],
     "requires": [
@@ -78,10 +66,6 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:principle-based-alignment",
-        "label": "Principle-Based Alignment"
-      },
-      {
         "id": "urn:ngm:class:value-alignment",
         "label": "Value Alignment"
       }
@@ -90,17 +74,9 @@
       {
         "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "Reinforcement Learning from Human Feedback"
-      },
-      {
-        "id": "urn:ngm:class:supervised-learning-from-human-feedback",
-        "label": "Supervised Learning from Human Feedback"
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:legal-ai-compliance",
-        "label": "Legal AI Compliance"
-      },
       {
         "id": "urn:ngm:class:ai-regulation",
         "label": "AI Regulation"
@@ -139,7 +115,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:model-safety-evaluation",
+        "id": "urn:ngm:class:safety-evaluation",
         "label": "Model Safety Evaluation"
       }
     ]

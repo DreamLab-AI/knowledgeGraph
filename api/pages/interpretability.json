@@ -66,10 +66,6 @@
       {
         "id": "urn:ngm:class:model-complexity",
         "label": "Model Complexity"
-      },
-      {
-        "id": "urn:ngm:class:sparse-representations",
-        "label": "Sparse Representations"
       }
     ],
     "implements": [],
@@ -99,7 +95,7 @@
         "label": "Attention Mechanism"
       },
       {
-        "id": "urn:ngm:class:sparse-autoencoder",
+        "id": "urn:ngm:class:sparse-autoencoders",
         "label": "Sparse Autoencoder"
       },
       {
@@ -128,16 +124,7 @@
         "label": "AI Trustworthiness"
       }
     ],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:circuit-discovery",
-        "label": "Circuit Discovery"
-      },
-      {
-        "id": "urn:ngm:class:probing",
-        "label": "Probing"
-      }
-    ]
+    "relatedTo": []
   },
   "wikilinks": [
     {

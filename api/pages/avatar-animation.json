@@ -62,7 +62,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:cinematic-animation",
+        "id": "urn:ngm:class:animation",
         "label": "Cinematic Animation"
       }
     ],
@@ -105,7 +105,7 @@
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:gltf",
+        "id": "urn:ngm:class:gltf-standard",
         "label": "glTF"
       },
       {

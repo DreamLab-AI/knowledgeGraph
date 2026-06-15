@@ -38,54 +38,137 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
-      {"@id": "urn:ngm:class:network-topology", "label": "Network Topology"},
-      {"@id": "urn:ngm:class:routing-protocol", "label": "Routing Protocol"},
-      {"@id": "urn:ngm:class:physical-layer", "label": "Physical Layer"}
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      },
+      {
+        "@id": "urn:ngm:class:routing-protocol",
+        "label": "Routing Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ip-addressing", "label": "IP Addressing"},
-      {"@id": "urn:ngm:class:dns", "label": "DNS"},
-      {"@id": "urn:ngm:class:network-interface", "label": "Network Interface"}
+      {
+        "@id": "urn:ngm:class:ip-addressing",
+        "label": "IP Addressing"
+      },
+      {
+        "@id": "urn:ngm:class:dns",
+        "label": "DNS"
+      },
+      {
+        "@id": "urn:ngm:class:network-interface",
+        "label": "Network Interface"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:real-time-communication", "label": "Real-Time Communication"}
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:bandwidth", "label": "Bandwidth"},
-      {"@id": "urn:ngm:class:latency", "label": "Latency"},
-      {"@id": "urn:ngm:class:network-reliability", "label": "Network Reliability"}
+      {
+        "@id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      },
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:reliability",
+        "label": "Network Reliability"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:software-defined-networking", "label": "Software-Defined Networking"},
-      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"}
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ieee-802", "label": "IEEE 802"},
-      {"@id": "urn:ngm:class:ietf-rfc", "label": "IETF RFC"}
+      {
+        "@id": "urn:ngm:class:ieee-802",
+        "label": "IEEE 802"
+      },
+      {
+        "@id": "urn:ngm:class:ietf-rfc",
+        "label": "IETF RFC"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:network-isolation", "label": "Network Isolation"},
-      {"@id": "urn:ngm:class:air-gap", "label": "Air Gap"}
+      {
+        "@id": "urn:ngm:class:air-gap",
+        "label": "Air Gap"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:network-security", "label": "Network Security"},
-      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality Of Service"}
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:quality-of-service",
+        "label": "Quality Of Service"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:network-interconnection", "label": "Network Interconnection"},
-    {"@id": "urn:ngm:class:network-access", "label": "Network Access"}
+    {
+      "@id": "urn:ngm:class:network-interconnection",
+      "label": "Network Interconnection"
+    },
+    {
+      "@id": "urn:ngm:class:network-access",
+      "label": "Network Access"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -86,10 +86,6 @@ public:: true
         "label": "EIP-2981"
       },
       {
-        "@id": "urn:ngm:class:operator-filter-registry",
-        "label": "Operator Filter Registry"
-      },
-      {
         "@id": "urn:ngm:class:token-standard",
         "label": "Token Standard"
       }
@@ -100,11 +96,11 @@ public:: true
         "label": "Creator Economy"
       },
       {
-        "@id": "urn:ngm:class:programmable-revenue",
+        "@id": "urn:ngm:class:programmable-money",
         "label": "Programmable Revenue"
       },
       {
-        "@id": "urn:ngm:class:decentralised-marketplace",
+        "@id": "urn:ngm:class:marketplace",
         "label": "Decentralised Marketplace"
       }
     ],
@@ -124,21 +120,17 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:traditional-copyright",
-        "label": "Traditional Copyright"
-      },
-      {
-        "@id": "urn:ngm:class:zero-royalty-marketplace",
+        "@id": "urn:ngm:class:marketplace",
         "label": "Zero-Royalty Marketplace"
       }
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:intellectual-property",
+        "@id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Intellectual Property"
       },
       {
-        "@id": "urn:ngm:class:royalty-splitting",
+        "@id": "urn:ngm:class:royalty-distribution",
         "label": "Royalty Splitting"
       },
       {
@@ -156,7 +148,7 @@ public:: true
         "label": "Digital Ownership"
       },
       {
-        "@id": "urn:ngm:class:creator-monetisation",
+        "@id": "urn:ngm:class:creator-monetization",
         "label": "Creator Monetisation"
       }
     ],

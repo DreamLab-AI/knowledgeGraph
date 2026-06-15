@@ -37,50 +37,119 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:financial-conduct-authority", "label": "Financial Conduct Authority"}
+    {
+      "@id": "urn:ngm:class:financial-conduct-authority",
+      "label": "Financial Conduct Authority"
+    }
   ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:financial-services-and-markets-act", "label": "Financial Services and Markets Act"},
-      {"@id": "urn:ngm:class:money-laundering-regulations", "label": "Money Laundering Regulations"}
+      {
+        "@id": "urn:ngm:class:financial-services-and-markets-act",
+        "label": "Financial Services and Markets Act"
+      },
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Money Laundering Regulations"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:fatf", "label": "FATF"},
-      {"@id": "urn:ngm:class:iosco", "label": "IOSCO"},
-      {"@id": "urn:ngm:class:financial-stability-board", "label": "Financial Stability Board"}
+      {
+        "@id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      },
+      {
+        "@id": "urn:ngm:class:iosco",
+        "label": "IOSCO"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"},
-      {"@id": "urn:ngm:class:consumer-protection", "label": "Consumer Protection"},
-      {"@id": "urn:ngm:class:financial-stability", "label": "Financial Stability"},
-      {"@id": "urn:ngm:class:market-integrity", "label": "Market Integrity"}
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "@id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:kyc", "label": "KYC"},
-      {"@id": "urn:ngm:class:aml-cft", "label": "AML/CFT"}
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:kyc",
+        "label": "KYC"
+      },
+      {
+        "@id": "urn:ngm:class:aml",
+        "label": "AML/CFT"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:regulatory-sandbox", "label": "Regulatory Sandbox"},
-      {"@id": "urn:ngm:class:fintech-innovation", "label": "FinTech Innovation"},
-      {"@id": "urn:ngm:class:financial-promotion", "label": "Financial Promotion"}
+      {
+        "@id": "urn:ngm:class:regulatory-sandbox",
+        "label": "Regulatory Sandbox"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:financial-regulator", "label": "Financial Regulator"},
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
-      {"@id": "urn:ngm:class:prudential-regulation-authority", "label": "Prudential Regulation Authority"},
-      {"@id": "urn:ngm:class:hm-treasury", "label": "HM Treasury"},
-      {"@id": "urn:ngm:class:bank-of-england", "label": "Bank of England"}
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:prudential-regulation-authority",
+        "label": "Prudential Regulation Authority"
+      },
+      {
+        "@id": "urn:ngm:class:hm-treasury",
+        "label": "HM Treasury"
+      },
+      {
+        "@id": "urn:ngm:class:bank-of-england",
+        "label": "Bank of England"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:crypto-asset-regulation", "label": "Crypto-Asset Regulation"},
-      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
-      {"@id": "urn:ngm:class:digital-asset-custody", "label": "Digital Asset Custody"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:crypto-regulation",
+        "label": "Crypto-Asset Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-custody",
+        "label": "Digital Asset Custody"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:sec", "label": "SEC"},
-      {"@id": "urn:ngm:class:esma", "label": "ESMA"}
+      {
+        "@id": "urn:ngm:class:sec",
+        "label": "SEC"
+      },
+      {
+        "@id": "urn:ngm:class:esma",
+        "label": "ESMA"
+      }
     ]
   },
   "quality": 0.73,

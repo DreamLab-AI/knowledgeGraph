@@ -23,55 +23,143 @@ public:: true
   "definition": "A quorum is the minimum number or proportion of participants—nodes, validators, voters, or signers—that must concur or be present for a decision, transaction, or consensus round to be considered valid in a distributed system or governance process. In distributed computing, quorum systems are collections of node subsets with the intersection property: any two quorums share at least one member, preventing contradictory decisions across network partitions. In blockchain and DAO governance, quorum thresholds set the participation floor required before a vote or proposal carries binding weight, balancing decision liveness against resistance to minority capture. Threshold signature schemes and multi-signature wallets operationalise quorum as an m-of-n approval requirement that eliminates single points of failure in key custody.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:consensus-mechanism",
+      "label": "Consensus Mechanism"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
-      {"@id": "urn:ngm:class:network-partition", "label": "Network Partition"},
-      {"@id": "urn:ngm:class:liveness", "label": "Liveness"},
-      {"@id": "urn:ngm:class:safety", "label": "Safety"}
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:network-partition",
+        "label": "Network Partition"
+      },
+      {
+        "@id": "urn:ngm:class:liveness",
+        "label": "Liveness"
+      },
+      {
+        "@id": "urn:ngm:class:safety",
+        "label": "Safety"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:linearisability", "label": "Linearisability"},
-      {"@id": "urn:ngm:class:decentralised-decision-making", "label": "Decentralised Decision-Making"}
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:linearisability",
+        "label": "Linearisability"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-decision-making",
+        "label": "Decentralised Decision-Making"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:voting-mechanism", "label": "Voting Mechanism"},
-      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"},
-      {"@id": "urn:ngm:class:threshold-signature", "label": "Threshold Signature"},
-      {"@id": "urn:ngm:class:stake-weighted-voting", "label": "Stake-weighted Voting"}
+      {
+        "@id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature"
+      },
+      {
+        "@id": "urn:ngm:class:token-weighted-voting",
+        "label": "Stake-weighted Voting"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
-      {"@id": "urn:ngm:class:multi-signature-wallet", "label": "Multi-Signature Wallet"},
-      {"@id": "urn:ngm:class:treasury-management", "label": "Treasury Management"}
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:multi-signature-wallet",
+        "label": "Multi-Signature Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:validator-set", "label": "Validator Set"},
-      {"@id": "urn:ngm:class:membership-protocol", "label": "Membership Protocol"}
+      {
+        "@id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:paxos", "label": "Paxos"},
-      {"@id": "urn:ngm:class:raft", "label": "Raft"},
-      {"@id": "urn:ngm:class:tendermint", "label": "Tendermint"}
+      {
+        "@id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      },
+      {
+        "@id": "urn:ngm:class:raft",
+        "label": "Raft"
+      },
+      {
+        "@id": "urn:ngm:class:tendermint",
+        "label": "Tendermint"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:longest-chain-rule", "label": "Longest Chain Rule"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:longest-chain-rule",
+        "label": "Longest Chain Rule"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:distributed-ai-training", "label": "Distributed AI Training"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ai-training",
+        "label": "Distributed AI Training"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:quorum-threshold", "label": "Quorum Threshold"},
-    {"@id": "urn:ngm:class:voting-quorum", "label": "Voting Quorum"}
+    {
+      "@id": "urn:ngm:class:quorum-threshold",
+      "label": "Quorum Threshold"
+    },
+    {
+      "@id": "urn:ngm:class:voting-quorum",
+      "label": "Voting Quorum"
+    }
   ],
   "quality": 0.75,
   "provenance": {

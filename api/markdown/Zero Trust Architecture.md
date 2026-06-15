@@ -39,52 +39,117 @@ alias:: Zero-Trust Architecture, ZeroTrustArchitecture
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"},
-      {"@id": "urn:ngm:class:multi-factor-authentication", "label": "Multi-Factor Authentication"},
-      {"@id": "urn:ngm:class:device-attestation", "label": "Device Attestation"}
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:policy-engine", "label": "Policy Engine"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:micro-segmentation", "label": "Micro-Segmentation"},
-      {"@id": "urn:ngm:class:mutual-tls", "label": "Mutual TLS"},
-      {"@id": "urn:ngm:class:behavioural-analytics", "label": "Behavioural Analytics"}
+      {
+        "@id": "urn:ngm:class:policy-engine",
+        "label": "Policy Engine"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:mutual-tls",
+        "label": "Mutual TLS"
+      },
+      {
+        "@id": "urn:ngm:class:behavioural-analytics",
+        "label": "Behavioural Analytics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:least-privilege-access", "label": "Least Privilege Access"},
-      {"@id": "urn:ngm:class:continuous-monitoring", "label": "Continuous Monitoring"},
-      {"@id": "urn:ngm:class:just-in-time-access", "label": "Just-in-Time Access"}
+      {
+        "@id": "urn:ngm:class:continuous-monitoring",
+        "label": "Continuous Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:just-in-time-access",
+        "label": "Just-in-Time Access"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:software-defined-perimeter", "label": "Software-Defined Perimeter"},
-      {"@id": "urn:ngm:class:secure-access-service-edge", "label": "Secure Access Service Edge"}
+      {
+        "@id": "urn:ngm:class:software-defined-perimeter",
+        "label": "Software-Defined Perimeter"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:cloud-security", "label": "Cloud Security"},
-      {"@id": "urn:ngm:class:privileged-access-management", "label": "Privileged Access Management"}
+      {
+        "@id": "urn:ngm:class:cloud-security",
+        "label": "Cloud Security"
+      },
+      {
+        "@id": "urn:ngm:class:privileged-access-management",
+        "label": "Privileged Access Management"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:perimeter-security", "label": "Perimeter Security"},
-      {"@id": "urn:ngm:class:virtual-private-network", "label": "Virtual Private Network"}
+      {
+        "@id": "urn:ngm:class:perimeter-security",
+        "label": "Perimeter Security"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-private-network",
+        "label": "Virtual Private Network"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:confidential-computing", "label": "Confidential Computing"},
-      {"@id": "urn:ngm:class:endpoint-detection-and-response", "label": "Endpoint Detection and Response"},
-      {"@id": "urn:ngm:class:security-information-and-event-management", "label": "Security Information and Event Management"},
-      {"@id": "urn:ngm:class:supply-chain-security", "label": "Supply Chain Security"}
+      {
+        "@id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      },
+      {
+        "@id": "urn:ngm:class:endpoint-detection-and-response",
+        "label": "Endpoint Detection and Response"
+      },
+      {
+        "@id": "urn:ngm:class:security-information-and-event-management",
+        "label": "Security Information and Event Management"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist-sp-800-207", "label": "NIST SP 800-207"}
+      {
+        "@id": "urn:ngm:class:nist-sp-800-207",
+        "label": "NIST SP 800-207"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-driven-threat-detection", "label": "AI-Driven Threat Detection"},
-      {"@id": "urn:ngm:class:federated-identity", "label": "Federated Identity"}
+      {
+        "@id": "urn:ngm:class:threat-detection",
+        "label": "AI-Driven Threat Detection"
+      },
+      {
+        "@id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:zero-trust-network-access", "label": "Zero Trust Network Access"},
-    {"@id": "urn:ngm:class:zta", "label": "ZTA"}
+    {
+      "@id": "urn:ngm:class:zero-trust-network-access",
+      "label": "Zero Trust Network Access"
+    },
+    {
+      "@id": "urn:ngm:class:zta",
+      "label": "ZTA"
+    }
   ],
   "quality": 0.74,
   "provenance": {

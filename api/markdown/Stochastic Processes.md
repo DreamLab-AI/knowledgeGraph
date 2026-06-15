@@ -105,10 +105,6 @@ public:: true
       {
         "@id": "urn:ngm:class:measure-theory",
         "label": "Measure Theory"
-      },
-      {
-        "@id": "urn:ngm:class:random-variables",
-        "label": "Random Variables"
       }
     ],
     "enables": [
@@ -119,10 +115,6 @@ public:: true
       {
         "@id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
-      },
-      {
-        "@id": "urn:ngm:class:stochastic-calculus",
-        "label": "Stochastic Calculus"
       },
       {
         "@id": "urn:ngm:class:queueing-theory",
@@ -159,10 +151,6 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:deterministic-systems",
-        "label": "Deterministic Systems"
-      },
-      {
         "@id": "urn:ngm:class:chaos-theory",
         "label": "Chaos Theory"
       }
@@ -187,11 +175,7 @@ public:: true
         "label": "Ergodic Theory"
       },
       {
-        "@id": "urn:ngm:class:stationarity",
-        "label": "Stationarity"
-      },
-      {
-        "@id": "urn:ngm:class:gaussian-processes",
+        "@id": "urn:ngm:class:gaussian-process",
         "label": "Gaussian Processes"
       }
     ]

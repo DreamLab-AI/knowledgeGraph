@@ -26,23 +26,15 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:mask-decoder",
+        "id": "urn:ngm:class:decoder",
         "label": "Mask Decoder"
       },
       {
-        "id": "urn:ngm:class:medical-segmentation",
+        "id": "urn:ngm:class:medical-imaging",
         "label": "Medical Segmentation"
       },
       {
-        "id": "urn:ngm:class:open-vocabulary-segmentation",
-        "label": "Open-Vocabulary Segmentation"
-      },
-      {
-        "id": "urn:ngm:class:pixel-classification-head",
-        "label": "Pixel Classification Head"
-      },
-      {
-        "id": "urn:ngm:class:promptable-segmentation",
+        "id": "urn:ngm:class:image-segmentation",
         "label": "Promptable Segmentation"
       },
       {
@@ -68,10 +60,6 @@
         "label": "Annotated Training Data"
       },
       {
-        "id": "urn:ngm:class:backbone-network",
-        "label": "Backbone Network"
-      },
-      {
         "id": "urn:ngm:class:convolutional-neural-network",
         "label": "Convolutional Neural Network"
       },
@@ -90,15 +78,11 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:ar-content-removal",
-        "label": "AR Content Removal"
-      },
-      {
         "id": "urn:ngm:class:autonomous-driving-perception",
         "label": "Autonomous Driving Perception"
       },
       {
-        "id": "urn:ngm:class:industrial-quality-control",
+        "id": "urn:ngm:class:quality-control",
         "label": "Industrial Quality Control"
       },
       {
@@ -106,70 +90,30 @@
         "label": "Medical Image Analysis"
       },
       {
-        "id": "urn:ngm:class:satellite-earth-observation",
+        "id": "urn:ngm:class:satellite-monitoring",
         "label": "Satellite Earth Observation"
       },
       {
-        "id": "urn:ngm:class:surgical-robotics-vision",
+        "id": "urn:ngm:class:surgical-robotics",
         "label": "Surgical Robotics Vision"
-      },
-      {
-        "id": "urn:ngm:class:video-editing-automation",
-        "label": "Video Editing Automation"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:deep-lab",
-        "label": "DeepLab"
-      },
-      {
         "id": "urn:ngm:class:detr",
         "label": "DETR"
-      },
-      {
-        "id": "urn:ngm:class:grounded-sam",
-        "label": "Grounded SAM"
       },
       {
         "id": "urn:ngm:class:mask-r-cnn",
         "label": "Mask R-CNN"
       },
       {
-        "id": "urn:ngm:class:mask2-former",
-        "label": "Mask2Former"
-      },
-      {
-        "id": "urn:ngm:class:med-sam",
-        "label": "MedSAM"
-      },
-      {
-        "id": "urn:ngm:class:nn-unet",
-        "label": "nnUNet"
-      },
-      {
-        "id": "urn:ngm:class:owlv2",
-        "label": "OWLv2"
-      },
-      {
-        "id": "urn:ngm:class:panoptic-fpn",
+        "id": "urn:ngm:class:panoptic-segmentation",
         "label": "Panoptic FPN"
       },
       {
-        "id": "urn:ngm:class:sam-2",
-        "label": "SAM 2"
-      },
-      {
-        "id": "urn:ngm:class:seg-former",
-        "label": "SegFormer"
-      },
-      {
-        "id": "urn:ngm:class:segment-anything-model",
-        "label": "Segment Anything Model"
-      },
-      {
-        "id": "urn:ngm:class:x-decoder",
+        "id": "urn:ngm:class:decoder",
         "label": "X-Decoder"
       }
     ],
@@ -181,16 +125,8 @@
         "label": "Cross-Entropy Loss"
       },
       {
-        "id": "urn:ngm:class:dice-loss",
+        "id": "urn:ngm:class:loss-function",
         "label": "Dice Loss"
-      },
-      {
-        "id": "urn:ngm:class:hungarian-matching",
-        "label": "Hungarian Matching"
-      },
-      {
-        "id": "urn:ngm:class:io-u-metric",
-        "label": "IoU Metric"
       },
       {
         "id": "urn:ngm:class:mean-average-precision",
@@ -207,11 +143,7 @@
         "label": "ADE20K"
       },
       {
-        "id": "urn:ngm:class:bdd100-k",
-        "label": "BDD100K"
-      },
-      {
-        "id": "urn:ngm:class:cityscapes-benchmark",
+        "id": "urn:ngm:class:benchmark-evaluation",
         "label": "Cityscapes Benchmark"
       },
       {
@@ -221,28 +153,20 @@
       {
         "id": "urn:ngm:class:medical-segmentation-decathlon",
         "label": "Medical Segmentation Decathlon"
-      },
-      {
-        "id": "urn:ngm:class:nu-scenes",
-        "label": "nuScenes"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:cityscapes-evaluation",
+        "id": "urn:ngm:class:model-evaluation",
         "label": "Cityscapes Evaluation"
       },
       {
-        "id": "urn:ngm:class:coco-benchmark",
+        "id": "urn:ngm:class:coco-dataset",
         "label": "COCO Benchmark"
       },
       {
         "id": "urn:ngm:class:medical-segmentation-decathlon",
         "label": "Medical Segmentation Decathlon"
-      },
-      {
-        "id": "urn:ngm:class:pascal-voc-protocol",
-        "label": "Pascal VOC Protocol"
       }
     ],
     "partOf": [],

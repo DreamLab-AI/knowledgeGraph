@@ -92,49 +92,115 @@ public:: true
   },
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:model-interpretability", "label": "Model Interpretability"},
-      {"@id": "urn:ngm:class:global-explanation", "label": "Global Explanation"},
-      {"@id": "urn:ngm:class:feature-selection", "label": "Feature Selection"},
-      {"@id": "urn:ngm:class:model-debugging", "label": "Model Debugging"},
-      {"@id": "urn:ngm:class:bias-detection", "label": "Bias Detection"}
+      {
+        "@id": "urn:ngm:class:model-interpretability",
+        "label": "Model Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:global-explanation",
+        "label": "Global Explanation"
+      },
+      {
+        "@id": "urn:ngm:class:feature-selection",
+        "label": "Feature Selection"
+      },
+      {
+        "@id": "urn:ngm:class:model-debugging",
+        "label": "Model Debugging"
+      },
+      {
+        "@id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:dimensionality-reduction", "label": "Dimensionality Reduction"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:random-forest", "label": "Random Forest"},
-      {"@id": "urn:ngm:class:gradient-boosting", "label": "Gradient Boosting"},
-      {"@id": "urn:ngm:class:shapley-values", "label": "Shapley Values"}
+      {
+        "@id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:random-forest",
+        "label": "Random Forest"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-boosting",
+        "label": "Gradient Boosting"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:permutation-importance", "label": "Permutation Importance"},
-      {"@id": "urn:ngm:class:feature-attribution", "label": "Feature Attribution"},
-      {"@id": "urn:ngm:class:partial-dependence-plot", "label": "Partial Dependence Plot"}
+      {
+        "@id": "urn:ngm:class:feature-attribution",
+        "label": "Feature Attribution"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:trained-model", "label": "Trained Model"},
-      {"@id": "urn:ngm:class:validation-dataset", "label": "Validation Dataset"}
+      {
+        "@id": "urn:ngm:class:trained-model",
+        "label": "Trained Model"
+      },
+      {
+        "@id": "urn:ngm:class:validation-dataset",
+        "label": "Validation Dataset"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:causal-inference", "label": "Causal Inference"},
-      {"@id": "urn:ngm:class:local-explanation", "label": "Local Explanation"}
+      {
+        "@id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "@id": "urn:ngm:class:local-explanation",
+        "label": "Local Explanation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"},
-      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"}
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:variable-importance", "label": "Variable Importance"},
-    {"@id": "urn:ngm:class:predictor-importance", "label": "Predictor Importance"}
+    {
+      "@id": "urn:ngm:class:variable-importance",
+      "label": "Variable Importance"
+    },
+    {
+      "@id": "urn:ngm:class:predictor-importance",
+      "label": "Predictor Importance"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

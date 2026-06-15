@@ -93,7 +93,7 @@ public:: true
         "label": "Real-Time Tracking"
       },
       {
-        "@id": "urn:ngm:class:simultaneous-localization-and-mapping",
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
         "label": "Simultaneous Localization and Mapping"
       }
     ],
@@ -107,7 +107,7 @@ public:: true
         "label": "Markov Chain Monte Carlo"
       },
       {
-        "@id": "urn:ngm:class:probabilistic-graphical-model",
+        "@id": "urn:ngm:class:graphical-model",
         "label": "Probabilistic Graphical Model"
       }
     ],
@@ -132,10 +132,6 @@ public:: true
       }
     ],
     "supports": [
-      {
-        "@id": "urn:ngm:class:nonlinear-filtering",
-        "label": "Nonlinear Filtering"
-      },
       {
         "@id": "urn:ngm:class:parameter-estimation",
         "label": "Parameter Estimation"
@@ -171,7 +167,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:expectation-maximization",
+        "@id": "urn:ngm:class:expectation-maximisation",
         "label": "Expectation Maximization"
       },
       {

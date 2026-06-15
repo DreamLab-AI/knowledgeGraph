@@ -142,14 +142,6 @@ public:: true
         "label": "Bulletproofs"
       },
       {
-        "@id": "urn:ngm:class:interactive-zkp",
-        "label": "Interactive ZKP"
-      },
-      {
-        "@id": "urn:ngm:class:non-interactive-zkp",
-        "label": "Non-Interactive ZKP"
-      },
-      {
         "@id": "urn:ngm:class:plonk",
         "label": "PLONK"
       },
@@ -168,7 +160,7 @@ public:: true
         "label": "Cryptographic Hash Function"
       },
       {
-        "@id": "urn:ngm:class:polynomial-commitment-scheme",
+        "@id": "urn:ngm:class:commitment-scheme",
         "label": "Polynomial Commitment Scheme"
       },
       {
@@ -186,17 +178,13 @@ public:: true
         "label": "Privacy-Preserving Identity"
       },
       {
-        "@id": "urn:ngm:class:private-authentication",
-        "label": "Private Authentication"
-      },
-      {
         "@id": "urn:ngm:class:verifiable-computation",
         "label": "Verifiable Computation"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:cryptographic-verification-system",
+        "@id": "urn:ngm:class:cryptographic-verification",
         "label": "Cryptographic Verification System"
       },
       {

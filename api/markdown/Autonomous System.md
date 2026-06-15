@@ -29,60 +29,147 @@ alias:: Autonomous Systems
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:autonomous-systems", "label": "Autonomous Systems"},
-    {"@id": "urn:ngm:class:self-governing-system", "label": "Self-Governing System"}
+    {
+      "@id": "urn:ngm:class:autonomous-systems",
+      "label": "Autonomous Systems"
+    },
+    {
+      "@id": "urn:ngm:class:self-governing-system",
+      "label": "Self-Governing System"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:perception-module", "label": "Perception Module"},
-      {"@id": "urn:ngm:class:world-model", "label": "World Model"},
-      {"@id": "urn:ngm:class:planning-module", "label": "Planning Module"},
-      {"@id": "urn:ngm:class:actuation-system", "label": "Actuation System"},
-      {"@id": "urn:ngm:class:sensor", "label": "Sensor"}
+      {
+        "@id": "urn:ngm:class:perception-module",
+        "label": "Perception Module"
+      },
+      {
+        "@id": "urn:ngm:class:world-model",
+        "label": "World Model"
+      },
+      {
+        "@id": "urn:ngm:class:planning-module",
+        "label": "Planning Module"
+      },
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:state-estimation", "label": "State Estimation"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:real-time-computing", "label": "Real-Time Computing"}
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
-      {"@id": "urn:ngm:class:unmanned-aerial-vehicle", "label": "Unmanned Aerial Vehicle"},
-      {"@id": "urn:ngm:class:autonomous-warehouse-robot", "label": "Autonomous Warehouse Robot"},
-      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"}
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "@id": "urn:ngm:class:unmanned-aerial-vehicle",
+        "label": "Unmanned Aerial Vehicle"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
-      {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"}
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:multi-robot-systems", "label": "Multi-Robot Systems"}
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:multi-robot-systems",
+        "label": "Multi-Robot Systems"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-42010", "label": "ISO/IEC 42010"},
-      {"@id": "urn:ngm:class:sae-levels-of-driving-automation", "label": "SAE Levels of Driving Automation"}
+      {
+        "@id": "urn:ngm:class:iso-iec-42010",
+        "label": "ISO/IEC 42010"
+      },
+      {
+        "@id": "urn:ngm:class:sae-j-3016",
+        "label": "SAE Levels of Driving Automation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:teleoperated-system", "label": "Teleoperated System"},
-      {"@id": "urn:ngm:class:semi-autonomous-system", "label": "Semi-Autonomous System"}
+      {
+        "@id": "urn:ngm:class:teleoperated-robot",
+        "label": "Teleoperated System"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:robot-safety", "label": "Robot Safety"},
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"},
-      {"@id": "urn:ngm:class:cyber-physical-system", "label": "Cyber-Physical System"}
+      {
+        "@id": "urn:ngm:class:robot-safety",
+        "label": "Robot Safety"
+      },
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "@id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber-Physical System"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ]
   },
   "provenance": {

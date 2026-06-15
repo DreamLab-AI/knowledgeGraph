@@ -74,7 +74,7 @@ public:: true
         "label": "Working Memory"
       },
       {
-        "@id": "urn:ngm:class:conflict-resolution-strategy",
+        "@id": "urn:ngm:class:conflict-resolution",
         "label": "Conflict Resolution Strategy"
       }
     ],
@@ -94,10 +94,6 @@ public:: true
         "label": "Expert Systems"
       },
       {
-        "@id": "urn:ngm:class:decision-automation",
-        "label": "Decision Automation"
-      },
-      {
         "@id": "urn:ngm:class:business-rules-engine",
         "label": "Business Rules Engine"
       },
@@ -107,10 +103,6 @@ public:: true
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:production-system-model",
-        "label": "Production System Model"
-      },
       {
         "@id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
@@ -124,10 +116,6 @@ public:: true
       {
         "@id": "urn:ngm:class:pattern-matching",
         "label": "Pattern Matching"
-      },
-      {
-        "@id": "urn:ngm:class:rete-algorithm",
-        "label": "Rete Algorithm"
       }
     ],
     "supports": [
@@ -146,12 +134,8 @@ public:: true
         "label": "Machine Learning"
       },
       {
-        "@id": "urn:ngm:class:neural-networks",
+        "@id": "urn:ngm:class:neural-network",
         "label": "Neural Networks"
-      },
-      {
-        "@id": "urn:ngm:class:case-based-reasoning",
-        "label": "Case-Based Reasoning"
       }
     ],
     "bridgesTo": [
@@ -180,10 +164,6 @@ public:: true
       {
         "@id": "urn:ngm:class:constraint-satisfaction",
         "label": "Constraint Satisfaction"
-      },
-      {
-        "@id": "urn:ngm:class:knowledge-based-systems",
-        "label": "Knowledge-Based Systems"
       }
     ]
   },

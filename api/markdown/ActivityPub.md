@@ -24,54 +24,94 @@ public:: true
   "domain": "distributed-systems",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:distributed-protocol", "label": "Distributed Protocol"}
+    {
+      "@id": "urn:ngm:class:distributed-protocol",
+      "label": "Distributed Protocol"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:activity-streams-2", "label": "ActivityStreams 2.0"},
-      {"@id": "urn:ngm:class:http-signatures", "label": "HTTP Signatures"},
-      {"@id": "urn:ngm:class:webfinger", "label": "WebFinger"}
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signatures",
+        "label": "HTTP Signatures"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:federated-social-networks", "label": "Federated Social Networks"},
-      {"@id": "urn:ngm:class:decentralised-web", "label": "Decentralised Web"},
-      {"@id": "urn:ngm:class:server-to-server-federation", "label": "Server-to-Server Federation"},
-      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"}
+      {
+        "@id": "urn:ngm:class:federated-social-networks",
+        "label": "Federated Social Networks"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-web",
+        "label": "Decentralised Web"
+      },
+      {
+        "@id": "urn:ngm:class:federation",
+        "label": "Server-to-Server Federation"
+      },
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:web-standard", "label": "Web Standard"},
-      {"@id": "urn:ngm:class:interoperability-protocol", "label": "Interoperability Protocol"}
+      {
+        "@id": "urn:ngm:class:web-standard",
+        "label": "Web Standard"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:world-wide-web-consortium", "label": "W3C"},
-      {"@id": "urn:ngm:class:fediverse-enhancement-proposal", "label": "Fediverse Enhancement Proposal"}
+      {
+        "@id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "W3C"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:https-transport", "label": "HTTPS Transport"},
-      {"@id": "urn:ngm:class:actor-inbox-outbox", "label": "Actor Inbox/Outbox"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:client-to-server-protocol", "label": "Client-to-Server Protocol"},
-      {"@id": "urn:ngm:class:server-to-server-protocol", "label": "Server-to-Server Protocol"}
+      {
+        "@id": "urn:ngm:class:transport-protocol",
+        "label": "HTTPS Transport"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ostatus", "label": "OStatus"},
-      {"@id": "urn:ngm:class:at-protocol", "label": "AT Protocol"}
+      {
+        "@id": "urn:ngm:class:at-protocol",
+        "label": "AT Protocol"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:ipfs", "label": "IPFS"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
-      {"@id": "urn:ngm:class:mastodon", "label": "Mastodon"},
-      {"@id": "urn:ngm:class:fediverse", "label": "Fediverse"}
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web Linked Data Standard"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:w3c-activity-pub-recommendation", "label": "W3C ActivityPub Recommendation"}
+    {
+      "@id": "urn:ngm:class:w3c-activity-pub-recommendation",
+      "label": "W3C ActivityPub Recommendation"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

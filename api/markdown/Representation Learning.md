@@ -23,50 +23,131 @@ public:: true
   "definition": "Representation learning is a subfield of machine learning concerned with automatically discovering the data transformations and feature spaces — representations — that make subsequent learning tasks easier, more accurate, or more data-efficient. Rather than relying on hand-crafted features, representation learning systems learn to encode raw inputs such as images, text, or sensor readings into dense, structured latent vectors that capture semantically meaningful variation. Deep neural networks, particularly transformers and convolutional architectures, have made learned representations ubiquitous across computer vision, natural language processing, and multi-modal AI. The quality of learned representations directly determines the performance ceiling of downstream models trained on top of them.",
   "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:machine-learning-discipline-technique",
+    "label": "Machine Learning Technique"
+  },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:embeddings", "label": "Embeddings"},
-      {"@id": "urn:ngm:class:neural-network-latent-space", "label": "Neural Network Latent Space"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:autoencoder", "label": "Autoencoder"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"}
+      {
+        "@id": "urn:ngm:class:embeddings",
+        "label": "Embeddings"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-latent-space",
+        "label": "Neural Network Latent Space"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:autoencoder",
+        "label": "Autoencoder"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"},
-      {"@id": "urn:ngm:class:self-supervised-learning", "label": "Self-Supervised Learning"},
-      {"@id": "urn:ngm:class:zero-shot-learning", "label": "Zero-Shot Learning"},
-      {"@id": "urn:ngm:class:few-shot-learning", "label": "Few-Shot Learning"},
-      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "@id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:zero-shot-learning",
+        "label": "Zero-Shot Learning"
+      },
+      {
+        "@id": "urn:ngm:class:few-shot-learning",
+        "label": "Few-Shot Learning"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:encoder", "label": "Encoder"},
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"}
+      {
+        "@id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"},
-      {"@id": "urn:ngm:class:symbolic-ai", "label": "Symbolic AI"}
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
-      {"@id": "urn:ngm:class:dimensionality-reduction", "label": "Dimensionality Reduction"},
-      {"@id": "urn:ngm:class:word-embedding", "label": "Word Embedding"},
-      {"@id": "urn:ngm:class:multimodal-learning", "label": "Multimodal Learning"}
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "@id": "urn:ngm:class:word-embedding",
+        "label": "Word Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-learning",
+        "label": "Multimodal Learning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:feature-learning", "label": "Feature Learning"},
-    {"@id": "urn:ngm:class:learned-representations", "label": "Learned Representations"}
+    {
+      "@id": "urn:ngm:class:feature-learning",
+      "label": "Feature Learning"
+    },
+    {
+      "@id": "urn:ngm:class:learned-representations",
+      "label": "Learned Representations"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

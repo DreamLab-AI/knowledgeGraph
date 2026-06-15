@@ -22,10 +22,6 @@
         "label": "Named Entity Recognition"
       },
       {
-        "id": "urn:ngm:class:semantic-role-labelling",
-        "label": "Semantic Role Labelling"
-      },
-      {
         "id": "urn:ngm:class:coreference-resolution",
         "label": "Coreference Resolution"
       },
@@ -42,10 +38,6 @@
       {
         "id": "urn:ngm:class:semantic-parsing",
         "label": "Semantic Parsing"
-      },
-      {
-        "id": "urn:ngm:class:syntactic-parsing",
-        "label": "Syntactic Parsing"
       }
     ],
     "enables": [
@@ -84,7 +76,7 @@
         "label": "Knowledge Representation"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai",
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       }
     ],

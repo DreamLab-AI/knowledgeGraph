@@ -24,15 +24,11 @@
       {
         "id": "urn:ngm:class:cloud-platform",
         "label": "Cloud Platform"
-      },
-      {
-        "id": "urn:ngm:class:device-management-platform",
-        "label": "Device Management Platform"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:device-identity-management",
+        "id": "urn:ngm:class:identity-management",
         "label": "Device Identity Management"
       },
       {
@@ -96,10 +92,6 @@
       {
         "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded Systems"
-      },
-      {
-        "id": "urn:ngm:class:lorawan",
-        "label": "LoRaWAN"
       },
       {
         "id": "urn:ngm:class:5g-network",

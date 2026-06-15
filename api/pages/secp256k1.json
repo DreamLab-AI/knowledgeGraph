@@ -37,7 +37,7 @@
         "label": "Digital Signature"
       },
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public-Key Cryptography"
       },
       {
@@ -45,30 +45,17 @@
         "label": "Bitcoin Transaction"
       },
       {
-        "id": "urn:ngm:class:wallet-address-derivation",
-        "label": "Wallet Address Derivation"
-      },
-      {
         "id": "urn:ngm:class:taproot",
         "label": "Taproot"
       },
       {
-        "id": "urn:ngm:class:threshold-signature",
+        "id": "urn:ngm:class:threshold-signature-scheme",
         "label": "Threshold Signature"
       }
     ],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:sec-2-standard",
-        "label": "SEC 2 Standard"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:nist-p-256",
-        "label": "NIST P-256"
-      },
       {
         "id": "urn:ngm:class:ed25519",
         "label": "Ed25519"
@@ -124,12 +111,7 @@
         "label": "Lightning Network"
       }
     ],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:standards-for-efficient-cryptography-group",
-        "label": "Standards for Efficient Cryptography Group"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {

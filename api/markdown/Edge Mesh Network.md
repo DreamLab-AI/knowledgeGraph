@@ -122,15 +122,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:failover-mechanism",
-        "label": "Failover Mechanism"
-      },
-      {
         "@id": "urn:ngm:class:load-balancer",
         "label": "Load Balancer"
       },
       {
-        "@id": "urn:ngm:class:mesh-router",
+        "@id": "urn:ngm:class:mesh-routing-software",
         "label": "Mesh Router"
       },
       {
@@ -144,7 +140,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:distributed-coordination-protocol",
+        "@id": "urn:ngm:class:coordination-protocol",
         "label": "Distributed Coordination Protocol"
       },
       {
@@ -158,16 +154,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:decentralized-computation",
-        "label": "Decentralized Computation"
-      },
-      {
-        "@id": "urn:ngm:class:dynamic-load-balancing",
+        "@id": "urn:ngm:class:load-balancing",
         "label": "Dynamic Load Balancing"
-      },
-      {
-        "@id": "urn:ngm:class:redundant-processing",
-        "label": "Redundant Processing"
       },
       {
         "@id": "urn:ngm:class:fault-tolerance",

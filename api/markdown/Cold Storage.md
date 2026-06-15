@@ -23,48 +23,121 @@ public:: true
   "definition": "Cold Storage in the context of digital assets and cryptocurrency refers to the practice of holding private keys in an offline environment — physically disconnected from any network — to eliminate the attack surface presented by internet-connected systems. Hardware wallets, air-gapped computers, and paper wallets are common cold storage implementations. By contrast with hot wallets (internet-connected), cold storage sacrifices transaction convenience for maximum security, and is the industry standard for custodying large quantities of cryptocurrency at exchanges, institutional custodians, and high-net-worth individual holders.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:custody-infrastructure", "label": "Custody Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:custody-infrastructure",
+      "label": "Custody Infrastructure"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"},
-      {"@id": "urn:ngm:class:hardware-security-module", "label": "Hardware Security Module"},
-      {"@id": "urn:ngm:class:multisignature", "label": "Multisignature"},
-      {"@id": "urn:ngm:class:hardware-wallet", "label": "Hardware Wallet"},
-      {"@id": "urn:ngm:class:air-gapped-computer", "label": "Air-Gapped Computer"},
-      {"@id": "urn:ngm:class:bip39-mnemonic", "label": "BIP39 Mnemonic"}
+      {
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "@id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-wallet",
+        "label": "Hardware Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:air-gapped-computer",
+        "label": "Air-Gapped Computer"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:self-custody", "label": "Self-Custody"},
-      {"@id": "urn:ngm:class:institutional-custody", "label": "Institutional Custody"},
-      {"@id": "urn:ngm:class:digital-asset-custody", "label": "Digital Asset Custody"},
-      {"@id": "urn:ngm:class:key-ceremony", "label": "Key Ceremony"}
+      {
+        "@id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-custody",
+        "label": "Institutional Custody"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-custody",
+        "label": "Digital Asset Custody"
+      },
+      {
+        "@id": "urn:ngm:class:key-ceremony",
+        "label": "Key Ceremony"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:private-key", "label": "Private Key"},
-      {"@id": "urn:ngm:class:physical-security", "label": "Physical Security"}
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "@id": "urn:ngm:class:physical-security",
+        "label": "Physical Security"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:hot-wallet", "label": "Hot Wallet"},
-      {"@id": "urn:ngm:class:warm-storage", "label": "Warm Storage"}
+      {
+        "@id": "urn:ngm:class:hot-wallet",
+        "label": "Hot Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:warm-storage",
+        "label": "Warm Storage"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:threshold-signature-scheme", "label": "Threshold Signature Scheme"},
-      {"@id": "urn:ngm:class:multisignature-wallets", "label": "Multisignature Wallets"},
-      {"@id": "urn:ngm:class:partially-signed-bitcoin-transaction", "label": "Partially Signed Bitcoin Transaction"}
+      {
+        "@id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:multisignature-wallets",
+        "label": "Multisignature Wallets"
+      },
+      {
+        "@id": "urn:ngm:class:partially-signed-bitcoin-transaction",
+        "label": "Partially Signed Bitcoin Transaction"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network", "label": "Bitcoin Network"},
-      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"},
-      {"@id": "urn:ngm:class:digital-asset-exchange", "label": "Digital Asset Exchange"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-exchange",
+        "label": "Digital Asset Exchange"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:security", "label": "Security"},
-      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:offline-key-storage", "label": "Offline Key Storage"},
-    {"@id": "urn:ngm:class:air-gapped-wallet-storage", "label": "Air-Gapped Wallet Storage"}
+    {
+      "@id": "urn:ngm:class:offline-key-storage",
+      "label": "Offline Key Storage"
+    },
+    {
+      "@id": "urn:ngm:class:air-gapped-wallet-storage",
+      "label": "Air-Gapped Wallet Storage"
+    }
   ],
   "quality": 0.75,
   "provenance": {

@@ -80,12 +80,8 @@ public:: true
         "label": "Fee Market"
       },
       {
-        "@id": "urn:ngm:class:token-emission-schedule",
+        "@id": "urn:ngm:class:emission-schedule",
         "label": "Token Emission Schedule"
-      },
-      {
-        "@id": "urn:ngm:class:validator-incentive",
-        "label": "Validator Incentive"
       }
     ],
     "requires": [
@@ -144,7 +140,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:traditional-monetary-policy",
+        "@id": "urn:ngm:class:monetary-policy",
         "label": "Traditional Monetary Policy"
       }
     ],

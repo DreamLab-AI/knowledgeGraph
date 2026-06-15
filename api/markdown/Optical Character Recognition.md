@@ -106,7 +106,7 @@ public:: true
         "label": "Legal Research"
       },
       {
-        "@id": "urn:ngm:class:digital-accessibility",
+        "@id": "urn:ngm:class:accessibility",
         "label": "Digital Accessibility"
       },
       {
@@ -130,16 +130,6 @@ public:: true
       {
         "@id": "urn:ngm:class:language-model",
         "label": "Language Model"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:intelligent-character-recognition",
-        "label": "Intelligent Character Recognition"
-      },
-      {
-        "@id": "urn:ngm:class:optical-mark-recognition",
-        "label": "Optical Mark Recognition"
       }
     ],
     "bridgesTo": [

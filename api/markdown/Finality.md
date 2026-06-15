@@ -75,51 +75,127 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:probabilistic-finality", "label": "Probabilistic Finality"},
-      {"@id": "urn:ngm:class:deterministic-finality", "label": "Deterministic Finality"},
-      {"@id": "urn:ngm:class:transaction-finality", "label": "Transaction Finality"},
-      {"@id": "urn:ngm:class:economic-finality", "label": "Economic Finality"}
+      {
+        "@id": "urn:ngm:class:probabilistic-finality",
+        "label": "Probabilistic Finality"
+      },
+      {
+        "@id": "urn:ngm:class:deterministic-finality",
+        "label": "Deterministic Finality"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-finality",
+        "label": "Transaction Finality"
+      },
+      {
+        "@id": "urn:ngm:class:economic-finality",
+        "label": "Economic Finality"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:blockchain-security-model", "label": "Blockchain Security Model"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain Security Model"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"},
-      {"@id": "urn:ngm:class:transaction-confirmation", "label": "Transaction Confirmation"},
-      {"@id": "urn:ngm:class:validator-quorum", "label": "Validator Quorum"},
-      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"}
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-confirmation",
+        "label": "Transaction Confirmation"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:payment-settlement", "label": "Payment Settlement"},
-      {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"},
-      {"@id": "urn:ngm:class:smart-contract-execution", "label": "Smart Contract Execution"},
-      {"@id": "urn:ngm:class:atomic-swap", "label": "Atomic Swap"}
+      {
+        "@id": "urn:ngm:class:payment-settlement",
+        "label": "Payment Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      },
+      {
+        "@id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:network-synchrony", "label": "Network Synchrony"}
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:network-synchrony",
+        "label": "Network Synchrony"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:chain-reorganization", "label": "Chain Reorganization"},
-      {"@id": "urn:ngm:class:double-spend-attack", "label": "Double-Spend Attack"},
-      {"@id": "urn:ngm:class:fork", "label": "Fork"}
+      {
+        "@id": "urn:ngm:class:chain-reorganization",
+        "label": "Chain Reorganization"
+      },
+      {
+        "@id": "urn:ngm:class:double-spending",
+        "label": "Double-Spend Attack"
+      },
+      {
+        "@id": "urn:ngm:class:fork",
+        "label": "Fork"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:settlement-finality", "label": "Settlement Finality"},
-      {"@id": "urn:ngm:class:legal-finality", "label": "Legal Finality"}
+      {
+        "@id": "urn:ngm:class:settlement-finality",
+        "label": "Settlement Finality"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:byzantine-agreement", "label": "Byzantine Agreement"},
-      {"@id": "urn:ngm:class:tendermint", "label": "Tendermint"}
+      {
+        "@id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-agreement",
+        "label": "Byzantine Agreement"
+      },
+      {
+        "@id": "urn:ngm:class:tendermint",
+        "label": "Tendermint"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:transaction-irreversibility", "label": "Transaction Irreversibility"},
-    {"@id": "urn:ngm:class:ledger-finality", "label": "Ledger Finality"}
+    {
+      "@id": "urn:ngm:class:transaction-irreversibility",
+      "label": "Transaction Irreversibility"
+    },
+    {
+      "@id": "urn:ngm:class:ledger-finality",
+      "label": "Ledger Finality"
+    }
   ],
   "quality": 0.8,
   "provenance": {

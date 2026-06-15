@@ -52,49 +52,125 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"},
-    {"@id": "urn:ngm:class:token-design", "label": "Token Design"}
+    {
+      "@id": "urn:ngm:class:token-economics",
+      "label": "Token Economics"
+    },
+    {
+      "@id": "urn:ngm:class:token-design",
+      "label": "Token Design"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:digital-token", "label": "Digital Token"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:token",
+        "label": "Digital Token"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:token-supply", "label": "Token Supply"},
-      {"@id": "urn:ngm:class:token-distribution", "label": "Token Distribution"},
-      {"@id": "urn:ngm:class:staking", "label": "Staking"},
-      {"@id": "urn:ngm:class:token-burn", "label": "Token Burn"},
-      {"@id": "urn:ngm:class:vesting-schedule", "label": "Vesting Schedule"},
-      {"@id": "urn:ngm:class:bonding-curve", "label": "Bonding Curve"}
+      {
+        "@id": "urn:ngm:class:token-distribution",
+        "label": "Token Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "@id": "urn:ngm:class:vesting-schedule",
+        "label": "Vesting Schedule"
+      },
+      {
+        "@id": "urn:ngm:class:token-bonding-curve",
+        "label": "Bonding Curve"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:dao", "label": "DAO"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:payment-system", "label": "Payment System"},
-      {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"},
-      {"@id": "urn:ngm:class:play-to-earn", "label": "Play-to-Earn"}
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:play-to-earn-p2-e",
+        "label": "Play-to-Earn"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"},
-      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"}
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:nft", "label": "NFT"},
-      {"@id": "urn:ngm:class:monetary-policy", "label": "Monetary Policy"},
-      {"@id": "urn:ngm:class:decentralised-exchange", "label": "Decentralised Exchange"},
-      {"@id": "urn:ngm:class:initial-coin-offering", "label": "Initial Coin Offering"}
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:initial-coin-offering",
+        "label": "Initial Coin Offering"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:fiat-currency", "label": "Fiat Currency"},
-      {"@id": "urn:ngm:class:centralised-finance", "label": "Centralised Finance"}
+      {
+        "@id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "@id": "urn:ngm:class:centralised-finance",
+        "label": "Centralised Finance"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:incentive-alignment", "label": "Incentive Alignment"},
-      {"@id": "urn:ngm:class:digital-economy", "label": "Digital Economy"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+      {
+        "@id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
     ]
   },
   "quality": 0.72,

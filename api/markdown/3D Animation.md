@@ -72,7 +72,7 @@ public:: true
         "label": "Keyframe Animation"
       },
       {
-        "@id": "urn:ngm:class:skeletal-rigging",
+        "@id": "urn:ngm:class:character-rigging",
         "label": "Skeletal Rigging"
       },
       {
@@ -90,7 +90,7 @@ public:: true
         "label": "Content and Assets"
       },
       {
-        "@id": "urn:ngm:class:visual-effects-pipeline",
+        "@id": "urn:ngm:class:visual-effects",
         "label": "Visual Effects Pipeline"
       }
     ],
@@ -102,10 +102,6 @@ public:: true
       {
         "@id": "urn:ngm:class:3-d-asset",
         "label": "3D Asset"
-      },
-      {
-        "@id": "urn:ngm:class:3-d-modelling",
-        "label": "3D Modelling"
       }
     ],
     "enables": [
@@ -114,7 +110,7 @@ public:: true
         "label": "Digital Twin"
       },
       {
-        "@id": "urn:ngm:class:virtual-avatar",
+        "@id": "urn:ngm:class:avatar",
         "label": "Virtual Avatar"
       },
       {
@@ -162,7 +158,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:gltf-specification",
+        "@id": "urn:ngm:class:gltf-standard",
         "label": "glTF Specification"
       },
       {
@@ -176,12 +172,8 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:2-d-animation",
+        "@id": "urn:ngm:class:animation",
         "label": "2D Animation"
-      },
-      {
-        "@id": "urn:ngm:class:stop-motion-animation",
-        "label": "Stop Motion Animation"
       }
     ],
     "bridgesTo": [

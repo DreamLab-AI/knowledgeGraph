@@ -104,11 +104,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:educational-experiences",
-        "label": "Educational Experiences"
-      },
-      {
-        "@id": "urn:ngm:class:heritage-preservation",
+        "@id": "urn:ngm:class:cultural-heritage-preservation",
         "label": "Heritage Preservation"
       },
       {

@@ -141,7 +141,7 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:self-attention-layer",
+        "@id": "urn:ngm:class:self-attention",
         "label": "Self-Attention Layer"
       },
       {
@@ -175,7 +175,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:multimodal-ai",
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       },
       {

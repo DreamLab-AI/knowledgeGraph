@@ -486,38 +486,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:control-activity",
-        "label": "Control Activity"
-      },
-      {
-        "@id": "urn:ngm:class:control-evidence",
-        "label": "Control Evidence"
-      },
-      {
-        "@id": "urn:ngm:class:control-library",
-        "label": "Control Library"
-      },
-      {
-        "@id": "urn:ngm:class:control-maturity-assessment",
-        "label": "Control Maturity Assessment"
-      },
-      {
-        "@id": "urn:ngm:class:control-objective",
-        "label": "Control Objective"
-      },
-      {
-        "@id": "urn:ngm:class:control-owner",
-        "label": "Control Owner"
-      },
-      {
-        "@id": "urn:ngm:class:control-testing",
-        "label": "Control Testing"
-      },
-      {
-        "@id": "urn:ngm:class:exception-management",
-        "label": "Exception Management"
-      },
-      {
         "@id": "urn:ngm:class:remediation-plan",
         "label": "Remediation Plan"
       },
@@ -532,24 +500,8 @@ public:: true
         "label": "Business Process Management"
       },
       {
-        "@id": "urn:ngm:class:control-documentation",
-        "label": "Control Documentation"
-      },
-      {
-        "@id": "urn:ngm:class:it-general-controls",
-        "label": "IT General Controls"
-      },
-      {
-        "@id": "urn:ngm:class:management-oversight",
-        "label": "Management Oversight"
-      },
-      {
         "@id": "urn:ngm:class:policy-framework",
         "label": "Policy Framework"
-      },
-      {
-        "@id": "urn:ngm:class:regulatory-mapping",
-        "label": "Regulatory Mapping"
       },
       {
         "@id": "urn:ngm:class:segregation-of-duties",
@@ -566,36 +518,20 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:basel-iii-compliance",
+        "@id": "urn:ngm:class:basel-iii",
         "label": "Basel III Compliance"
       },
       {
-        "@id": "urn:ngm:class:consumer-duty-compliance",
+        "@id": "urn:ngm:class:fca-consumer-duty",
         "label": "Consumer Duty Compliance"
       },
       {
-        "@id": "urn:ngm:class:dora-compliance",
-        "label": "DORA Compliance"
-      },
-      {
-        "@id": "urn:ngm:class:gdpr-accountability",
+        "@id": "urn:ngm:class:gdpr",
         "label": "GDPR Accountability"
       },
       {
-        "@id": "urn:ngm:class:iso-27001-certification",
+        "@id": "urn:ngm:class:iso-27001",
         "label": "ISO 27001 Certification"
-      },
-      {
-        "@id": "urn:ngm:class:regulatory-assurance",
-        "label": "Regulatory Assurance"
-      },
-      {
-        "@id": "urn:ngm:class:smcr-compliance",
-        "label": "SMCR Compliance"
-      },
-      {
-        "@id": "urn:ngm:class:soc-2-type-ii-attestation",
-        "label": "SOC 2 Type II Attestation"
       },
       {
         "@id": "urn:ngm:class:sox-compliance",
@@ -604,11 +540,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:continuous-controls-monitoring",
-        "label": "Continuous Controls Monitoring"
-      },
-      {
-        "@id": "urn:ngm:class:coso-internal-control-framework",
+        "@id": "urn:ngm:class:control-framework",
         "label": "COSO Internal Control Framework"
       },
       {
@@ -626,32 +558,16 @@ public:: true
       {
         "@id": "urn:ngm:class:nist-cybersecurity-framework",
         "label": "NIST Cybersecurity Framework"
-      },
-      {
-        "@id": "urn:ngm:class:reg-tech-automation",
-        "label": "RegTech Automation"
-      },
-      {
-        "@id": "urn:ngm:class:three-lines-of-defence",
-        "label": "Three Lines of Defence"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:audit-management-system",
+        "@id": "urn:ngm:class:audit",
         "label": "Audit Management System"
       },
       {
         "@id": "urn:ngm:class:data-loss-prevention",
         "label": "Data Loss Prevention"
-      },
-      {
-        "@id": "urn:ngm:class:grc-software",
-        "label": "GRC Software"
-      },
-      {
-        "@id": "urn:ngm:class:policy-management-platform",
-        "label": "Policy Management Platform"
       },
       {
         "@id": "urn:ngm:class:siem",
@@ -710,16 +626,8 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:conduct-risk-management",
+        "@id": "urn:ngm:class:risk-management",
         "label": "Conduct Risk Management"
-      },
-      {
-        "@id": "urn:ngm:class:cyber-risk-management",
-        "label": "Cyber Risk Management"
-      },
-      {
-        "@id": "urn:ngm:class:financial-reporting-integrity",
-        "label": "Financial Reporting Integrity"
       },
       {
         "@id": "urn:ngm:class:operational-resilience",
@@ -758,10 +666,6 @@ public:: true
       {
         "@id": "urn:ngm:class:fca",
         "label": "FCA"
-      },
-      {
-        "@id": "urn:ngm:class:iia",
-        "label": "IIA"
       },
       {
         "@id": "urn:ngm:class:isaca",

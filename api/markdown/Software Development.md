@@ -24,56 +24,132 @@ public:: true
   "domain": "infrastructure",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
+    {
+      "@id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:software-testing", "label": "Software Testing"},
-      {"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"},
-      {"@id": "urn:ngm:class:requirements-engineering", "label": "Requirements Engineering"},
-      {"@id": "urn:ngm:class:code-review", "label": "Code Review"}
+      {
+        "@id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      },
+      {
+        "@id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:requirements-engineering",
+        "label": "Requirements Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:programming-language", "label": "Programming Language"},
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
-      {"@id": "urn:ngm:class:software-development-process", "label": "Software Development Process"},
-      {"@id": "urn:ngm:class:integrated-development-environment", "label": "Integrated Development Environment"},
-      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"}
+      {
+        "@id": "urn:ngm:class:programming-language",
+        "label": "Programming Language"
+      },
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:software-development-process",
+        "label": "Software Development Process"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:programming-paradigm", "label": "Programming Paradigm"},
-      {"@id": "urn:ngm:class:software-design-pattern", "label": "Software Design Pattern"}
+      {
+        "@id": "urn:ngm:class:programming-paradigm",
+        "label": "Programming Paradigm"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-augmented-software-engineering", "label": "AI-Augmented Software Engineering"},
-      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"},
-      {"@id": "urn:ngm:class:cloud-native-application", "label": "Cloud-Native Application"},
-      {"@id": "urn:ngm:class:devops", "label": "DevOps"}
+      {
+        "@id": "urn:ngm:class:ai-augmented-software-engineering",
+        "label": "AI-Augmented Software Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Application"
+      },
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:containerisation", "label": "Containerisation"}
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:digital-transformation", "label": "Digital Transformation"},
-      {"@id": "urn:ngm:class:software-supply-chain", "label": "Software Supply Chain"}
+      {
+        "@id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:software-supply-chain",
+        "label": "Software Supply Chain"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:waterfall-model", "label": "Waterfall Model"}
+      {
+        "@id": "urn:ngm:class:waterfall-model",
+        "label": "Waterfall Model"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning-engineering", "label": "Machine Learning Engineering"},
-      {"@id": "urn:ngm:class:ai-code-generation", "label": "AI Code Generation"}
+      {
+        "@id": "urn:ngm:class:machine-learning-engineering",
+        "label": "Machine Learning Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "AI Code Generation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:open-source-development", "label": "Open Source Development"},
-      {"@id": "urn:ngm:class:agile-methodology", "label": "Agile Methodology"},
-      {"@id": "urn:ngm:class:technical-debt", "label": "Technical Debt"}
+      {
+        "@id": "urn:ngm:class:open-source-development",
+        "label": "Open Source Development"
+      },
+      {
+        "@id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Methodology"
+      },
+      {
+        "@id": "urn:ngm:class:technical-debt",
+        "label": "Technical Debt"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:software-construction", "label": "Software Construction"},
-    {"@id": "urn:ngm:class:application-development", "label": "Application Development"}
+    {
+      "@id": "urn:ngm:class:software-construction",
+      "label": "Software Construction"
+    },
+    {
+      "@id": "urn:ngm:class:application-development",
+      "label": "Application Development"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -168,7 +168,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:device-camera",
+        "@id": "urn:ngm:class:camera",
         "label": "Device Camera"
       },
       {
@@ -185,14 +185,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:contextual-information-overlay",
-        "label": "Contextual Information Overlay"
-      },
-      {
-        "@id": "urn:ngm:class:interactive-holograms",
-        "label": "Interactive Holograms"
-      },
       {
         "@id": "urn:ngm:class:object-recognition",
         "label": "Object Recognition"

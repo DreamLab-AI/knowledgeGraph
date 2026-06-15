@@ -62,10 +62,6 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:single-signature",
-        "label": "Single Signature"
-      },
-      {
         "id": "urn:ngm:class:mpc-wallet",
         "label": "MPC Wallet"
       }
@@ -90,7 +86,7 @@
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       },
       {
@@ -101,7 +97,7 @@
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:bitcoin-improvement-proposal",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
         "label": "Bitcoin Improvement Proposal"
       },
       {

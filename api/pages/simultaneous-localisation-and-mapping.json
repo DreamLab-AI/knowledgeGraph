@@ -23,7 +23,7 @@
         "label": "Sensor Fusion"
       },
       {
-        "id": "urn:ngm:class:loop-closure",
+        "id": "urn:ngm:class:loop-closure-detection",
         "label": "Loop Closure"
       },
       {
@@ -41,7 +41,7 @@
         "label": "Visual Odometry"
       },
       {
-        "id": "urn:ngm:class:autonomous-vehicles",
+        "id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
       },
       {
@@ -54,10 +54,6 @@
       }
     ],
     "dependsOn": [
-      {
-        "id": "urn:ngm:class:non-linear-optimisation",
-        "label": "Non-Linear Optimisation"
-      },
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
@@ -139,7 +135,7 @@
         "label": "Structure-from-Motion"
       },
       {
-        "id": "urn:ngm:class:place-recognition",
+        "id": "urn:ngm:class:visual-place-recognition",
         "label": "Place Recognition"
       }
     ]

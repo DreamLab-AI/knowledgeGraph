@@ -20,10 +20,6 @@
       {
         "id": "urn:ngm:class:technical-committee",
         "label": "Technical Committee"
-      },
-      {
-        "id": "urn:ngm:class:publicly-available-specification",
-        "label": "Publicly Available Specification"
       }
     ],
     "requires": [],
@@ -39,10 +35,6 @@
       {
         "id": "urn:ngm:class:federated-identity",
         "label": "Federated Identity"
-      },
-      {
-        "id": "urn:ngm:class:consensus-based-governance",
-        "label": "Consensus-Based Governance"
       }
     ],
     "dependsOn": [],
@@ -54,14 +46,6 @@
       {
         "id": "urn:ngm:class:xacml",
         "label": "XACML"
-      },
-      {
-        "id": "urn:ngm:class:opendocument-format",
-        "label": "OpenDocument Format"
-      },
-      {
-        "id": "urn:ngm:class:odata",
-        "label": "OData"
       }
     ],
     "contrastsWith": [
@@ -78,10 +62,6 @@
       {
         "id": "urn:ngm:class:access-control",
         "label": "Access Control"
-      },
-      {
-        "id": "urn:ngm:class:digital-publishing",
-        "label": "Digital Publishing"
       }
     ],
     "uses": [
@@ -102,10 +82,6 @@
       {
         "id": "urn:ngm:class:virtual-environment-specification",
         "label": "Virtual Environment Specification"
-      },
-      {
-        "id": "urn:ngm:class:iot-messaging",
-        "label": "IoT Messaging"
       },
       {
         "id": "urn:ngm:class:enterprise-security",

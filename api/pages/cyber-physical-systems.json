@@ -88,7 +88,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:network-protocols",
+        "id": "urn:ngm:class:network-protocol",
         "label": "Network Protocols"
       }
     ],
@@ -142,7 +142,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:industrial-internet-of-things",
+        "id": "urn:ngm:class:industrial-io-t",
         "label": "Industrial Internet of Things"
       },
       {
@@ -158,10 +158,6 @@
       {
         "id": "urn:ngm:class:iso-26262",
         "label": "ISO 26262"
-      },
-      {
-        "id": "urn:ngm:class:nist-cps-framework",
-        "label": "NIST CPS Framework"
       }
     ],
     "partOf": [],

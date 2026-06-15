@@ -40,7 +40,7 @@
         "label": "Distributed Storage"
       },
       {
-        "id": "urn:ngm:class:serialization-format",
+        "id": "urn:ngm:class:serialisation-format",
         "label": "Serialization Format"
       }
     ],

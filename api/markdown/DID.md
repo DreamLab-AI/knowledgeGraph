@@ -107,7 +107,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:w3c-did-core",
+        "@id": "urn:ngm:class:w3-c-did-core",
         "label": "W3C DID Core"
       },
       {
@@ -117,11 +117,11 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:json-ld",
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
@@ -151,7 +151,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:centralized-identity",
+        "@id": "urn:ngm:class:centralized-identity-provider",
         "label": "Centralized Identity"
       },
       {

@@ -81,10 +81,6 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:bep-20-token",
-        "label": "BEP-20 Token"
-      },
-      {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       },

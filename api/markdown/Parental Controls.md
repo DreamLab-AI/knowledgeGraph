@@ -63,14 +63,7 @@ public:: true
       "label": "Digital Safety"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:safe-online-environment",
-        "label": "Safe Online Environment"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

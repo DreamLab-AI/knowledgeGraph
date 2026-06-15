@@ -329,17 +329,12 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:creative-industries", "label": "Creative Industries"}
+      {
+        "@id": "urn:ngm:class:creative-industries",
+        "label": "Creative Industries"
+      }
     ],
     "hasPart": [
-      {
-        "@id": "urn:ngm:class:ai-styling",
-        "label": "AI Styling"
-      },
-      {
-        "@id": "urn:ngm:class:aura-blockchain",
-        "label": "Aura Blockchain"
-      },
       {
         "@id": "urn:ngm:class:digital-fashion",
         "label": "Digital Fashion"
@@ -349,20 +344,8 @@ public:: true
         "label": "Generative Design"
       },
       {
-        "@id": "urn:ngm:class:on-demand-manufacturing",
-        "label": "On-Demand Manufacturing"
-      },
-      {
-        "@id": "urn:ngm:class:product-passport",
+        "@id": "urn:ngm:class:digital-product-passport",
         "label": "Product Passport"
-      },
-      {
-        "@id": "urn:ngm:class:sustainability-metrics",
-        "label": "Sustainability Metrics"
-      },
-      {
-        "@id": "urn:ngm:class:trend-forecasting",
-        "label": "Trend Forecasting"
       },
       {
         "@id": "urn:ngm:class:virtual-try-on",
@@ -374,10 +357,6 @@ public:: true
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:body-estimation-networks",
-        "label": "Body Estimation Networks"
-      },
       {
         "@id": "urn:ngm:class:nft",
         "label": "NFT"
@@ -409,14 +388,6 @@ public:: true
         "label": "Mass Customisation"
       },
       {
-        "@id": "urn:ngm:class:personalised-retail",
-        "label": "Personalised Retail"
-      },
-      {
-        "@id": "urn:ngm:class:sustainable-production",
-        "label": "Sustainable Production"
-      },
-      {
         "@id": "urn:ngm:class:carbon-credit-tracking",
         "label": "Carbon Credit Tracking"
       },
@@ -437,10 +408,6 @@ public:: true
       {
         "@id": "urn:ngm:class:collaborative-systems-modality-filtering",
         "label": "Collaborative Filtering"
-      },
-      {
-        "@id": "urn:ngm:class:neural-garment-warping",
-        "label": "Neural Garment Warping"
       },
       {
         "@id": "urn:ngm:class:nft",
@@ -567,23 +534,19 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:eu-digital-product-passport",
+        "@id": "urn:ngm:class:digital-product-passport",
         "label": "EU Digital Product Passport"
       },
       {
-        "@id": "urn:ngm:class:gots-organic-textile-standard",
-        "label": "GOTS Organic Textile Standard"
-      },
-      {
-        "@id": "urn:ngm:class:gri-sustainability-standards",
+        "@id": "urn:ngm:class:gri-standards",
         "label": "GRI Sustainability Standards"
       },
       {
-        "@id": "urn:ngm:class:iso-14040-lca",
+        "@id": "urn:ngm:class:iso-14040",
         "label": "ISO 14040 LCA"
       },
       {
-        "@id": "urn:ngm:class:sa8000-labour-standard",
+        "@id": "urn:ngm:class:sa8000",
         "label": "SA8000 Labour Standard"
       }
     ]

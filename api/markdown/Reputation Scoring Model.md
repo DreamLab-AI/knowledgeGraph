@@ -132,33 +132,7 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:behavioral-data-aggregator",
-        "label": "Behavioral Data Aggregator"
-      },
-      {
-        "@id": "urn:ngm:class:temporal-decay-engine",
-        "label": "Temporal Decay Engine"
-      },
-      {
-        "@id": "urn:ngm:class:threshold-evaluator",
-        "label": "Threshold Evaluator"
-      },
-      {
-        "@id": "urn:ngm:class:weighted-scoring-function",
-        "label": "Weighted Scoring Function"
-      }
-    ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:behavioral-models",
-        "label": "Behavioral Models"
-      },
-      {
-        "@id": "urn:ngm:class:scoring-algorithms",
-        "label": "Scoring Algorithms"
-      },
       {
         "@id": "urn:ngm:class:validation-rules",
         "label": "Validation Rules"
@@ -172,10 +146,6 @@ public:: true
       {
         "@id": "urn:ngm:class:access-control-decisions",
         "label": "Access Control Decisions"
-      },
-      {
-        "@id": "urn:ngm:class:governance-voting-weight",
-        "label": "Governance Voting Weight"
       },
       {
         "@id": "urn:ngm:class:risk-assessment",

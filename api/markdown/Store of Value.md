@@ -23,60 +23,153 @@ public:: true
   "definition": "A store of value is any asset that retains purchasing power over time, enabling the owner to defer consumption and retrieve real wealth in the future with minimal loss to inflation, confiscation, or degradation. Classical monetary theory identifies store-of-value function alongside medium-of-exchange and unit-of-account as the three primary functions of money, though assets can serve one function without the others.",
   "domain": "finance",
   "maturity": "mature",
-  "subClassOf": {"@id": "urn:ngm:class:bc-defi-and-economics", "label": "DeFi and Economics"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:bc-defi-and-economics",
+    "label": "DeFi and Economics"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:scarcity", "label": "Scarcity"},
-      {"@id": "urn:ngm:class:durability", "label": "Durability"},
-      {"@id": "urn:ngm:class:portability", "label": "Portability"}
+      {
+        "@id": "urn:ngm:class:scarcity",
+        "label": "Scarcity"
+      },
+      {
+        "@id": "urn:ngm:class:durability",
+        "label": "Durability"
+      },
+      {
+        "@id": "urn:ngm:class:portability",
+        "label": "Portability"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:functions-of-money", "label": "Functions of Money"}
+      {
+        "@id": "urn:ngm:class:functions-of-money",
+        "label": "Functions of Money"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:scarcity", "label": "Scarcity"},
-      {"@id": "urn:ngm:class:asset-liquidity", "label": "Asset Liquidity"}
+      {
+        "@id": "urn:ngm:class:scarcity",
+        "label": "Scarcity"
+      },
+      {
+        "@id": "urn:ngm:class:asset-liquidity",
+        "label": "Asset Liquidity"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:intertemporal-exchange", "label": "Intertemporal Exchange"},
-      {"@id": "urn:ngm:class:capital-preservation", "label": "Capital Preservation"},
-      {"@id": "urn:ngm:class:portfolio-hedging", "label": "Portfolio Hedging"}
+      {
+        "@id": "urn:ngm:class:intertemporal-exchange",
+        "label": "Intertemporal Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:capital-preservation",
+        "label": "Capital Preservation"
+      },
+      {
+        "@id": "urn:ngm:class:portfolio-hedging",
+        "label": "Portfolio Hedging"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:property-rights", "label": "Property Rights"},
-      {"@id": "urn:ngm:class:market-confidence", "label": "Market Confidence"}
+      {
+        "@id": "urn:ngm:class:property-rights",
+        "label": "Property Rights"
+      },
+      {
+        "@id": "urn:ngm:class:market-confidence",
+        "label": "Market Confidence"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:commodity-money", "label": "Commodity Money"},
-      {"@id": "urn:ngm:class:inflation-linked-bonds", "label": "Inflation-Linked Bonds"}
+      {
+        "@id": "urn:ngm:class:commodity-money",
+        "label": "Commodity Money"
+      },
+      {
+        "@id": "urn:ngm:class:inflation-linked-bonds",
+        "label": "Inflation-Linked Bonds"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:austrian-hard-money-theory", "label": "Austrian Hard Money Theory"},
-      {"@id": "urn:ngm:class:fixed-supply-monetary-policy", "label": "Fixed Supply Monetary Policy"}
+      {
+        "@id": "urn:ngm:class:austrian-hard-money-theory",
+        "label": "Austrian Hard Money Theory"
+      },
+      {
+        "@id": "urn:ngm:class:fixed-supply-monetary-policy",
+        "label": "Fixed Supply Monetary Policy"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:medium-of-exchange", "label": "Medium of Exchange"},
-      {"@id": "urn:ngm:class:unit-of-account", "label": "Unit of Account"},
-      {"@id": "urn:ngm:class:fiat-currency", "label": "Fiat Currency"}
+      {
+        "@id": "urn:ngm:class:medium-of-exchange",
+        "label": "Medium of Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:unit-of-account",
+        "label": "Unit of Account"
+      },
+      {
+        "@id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:bitcoin-protocol", "label": "Bitcoin Protocol"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:tokenisation-of-assets", "label": "Tokenisation of Assets"}
+      {
+        "@id": "urn:ngm:class:bitcoin-protocol",
+        "label": "Bitcoin Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:asset-tokenisation",
+        "label": "Tokenisation of Assets"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:monetary-function", "label": "Monetary Function"},
-      {"@id": "urn:ngm:class:hard-money", "label": "Hard Money"},
-      {"@id": "urn:ngm:class:inflation-hedge", "label": "Inflation Hedge"},
-      {"@id": "urn:ngm:class:gold-standard", "label": "Gold Standard"},
-      {"@id": "urn:ngm:class:currency-debasement", "label": "Currency Debasement"},
-      {"@id": "urn:ngm:class:monetary-policy", "label": "Monetary Policy"},
-      {"@id": "urn:ngm:class:purchasing-power", "label": "Purchasing Power"}
+      {
+        "@id": "urn:ngm:class:monetary-function",
+        "label": "Monetary Function"
+      },
+      {
+        "@id": "urn:ngm:class:hard-money",
+        "label": "Hard Money"
+      },
+      {
+        "@id": "urn:ngm:class:inflation-hedge",
+        "label": "Inflation Hedge"
+      },
+      {
+        "@id": "urn:ngm:class:gold-standard",
+        "label": "Gold Standard"
+      },
+      {
+        "@id": "urn:ngm:class:currency-debasement",
+        "label": "Currency Debasement"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "@id": "urn:ngm:class:purchasing-power",
+        "label": "Purchasing Power"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:value-reserve", "label": "Value Reserve"},
-    {"@id": "urn:ngm:class:wealth-preservation-asset", "label": "Wealth Preservation Asset"}
+    {
+      "@id": "urn:ngm:class:value-reserve",
+      "label": "Value Reserve"
+    },
+    {
+      "@id": "urn:ngm:class:wealth-preservation-asset",
+      "label": "Wealth Preservation Asset"
+    }
   ],
   "quality": 0.85,
   "provenance": {

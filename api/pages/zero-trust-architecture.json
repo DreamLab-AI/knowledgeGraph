@@ -29,17 +29,9 @@
       {
         "id": "urn:ngm:class:multi-factor-authentication",
         "label": "Multi-Factor Authentication"
-      },
-      {
-        "id": "urn:ngm:class:device-attestation",
-        "label": "Device Attestation"
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:least-privilege-access",
-        "label": "Least Privilege Access"
-      },
       {
         "id": "urn:ngm:class:continuous-monitoring",
         "label": "Continuous Monitoring"
@@ -54,10 +46,6 @@
       {
         "id": "urn:ngm:class:software-defined-perimeter",
         "label": "Software-Defined Perimeter"
-      },
-      {
-        "id": "urn:ngm:class:secure-access-service-edge",
-        "label": "Secure Access Service Edge"
       }
     ],
     "contrastsWith": [
@@ -72,7 +60,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:ai-driven-threat-detection",
+        "id": "urn:ngm:class:threat-detection",
         "label": "AI-Driven Threat Detection"
       },
       {
@@ -88,10 +76,6 @@
       {
         "id": "urn:ngm:class:access-control",
         "label": "Access Control"
-      },
-      {
-        "id": "urn:ngm:class:micro-segmentation",
-        "label": "Micro-Segmentation"
       },
       {
         "id": "urn:ngm:class:mutual-tls",

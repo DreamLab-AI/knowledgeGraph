@@ -115,10 +115,6 @@ public:: true
         "label": "Augmented Reality"
       },
       {
-        "@id": "urn:ngm:class:real-time-simulation",
-        "label": "Real-Time Simulation"
-      },
-      {
         "@id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
       }
@@ -149,12 +145,6 @@ public:: true
       {
         "@id": "urn:ngm:class:metaverse",
         "label": "Metaverse"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:2-d-engine",
-        "label": "2D Engine"
       }
     ],
     "bridgesTo": [

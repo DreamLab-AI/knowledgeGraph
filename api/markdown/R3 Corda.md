@@ -413,36 +413,8 @@ alias:: R3Corda
         "label": "CorDapp"
       },
       {
-        "@id": "urn:ngm:class:corda-node",
-        "label": "Corda Node"
-      },
-      {
-        "@id": "urn:ngm:class:corda-vault",
-        "label": "Corda Vault"
-      },
-      {
-        "@id": "urn:ngm:class:deterministic-jvm",
-        "label": "Deterministic JVM"
-      },
-      {
-        "@id": "urn:ngm:class:doorman",
-        "label": "Doorman"
-      },
-      {
-        "@id": "urn:ngm:class:flow-framework",
-        "label": "Flow Framework"
-      },
-      {
-        "@id": "urn:ngm:class:network-map-service",
-        "label": "Network Map Service"
-      },
-      {
-        "@id": "urn:ngm:class:notary",
+        "@id": "urn:ngm:class:notary-service",
         "label": "Notary"
-      },
-      {
-        "@id": "urn:ngm:class:state-object",
-        "label": "State Object"
       }
     ],
     "requires": [
@@ -467,10 +439,6 @@ alias:: R3Corda
         "label": "TLS Encryption"
       },
       {
-        "@id": "urn:ngm:class:x-509-identity",
-        "label": "X.509 Identity"
-      },
-      {
         "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
@@ -489,16 +457,8 @@ alias:: R3Corda
         "label": "Delivery-Versus-Payment"
       },
       {
-        "@id": "urn:ngm:class:legal-agreement-automation",
-        "label": "Legal Agreement Automation"
-      },
-      {
-        "@id": "urn:ngm:class:privacy-preserving-ledger",
+        "@id": "urn:ngm:class:privacy-preserving-blockchain",
         "label": "Privacy-Preserving Ledger"
-      },
-      {
-        "@id": "urn:ngm:class:tokenised-asset-issuance",
-        "label": "Tokenised Asset Issuance"
       },
       {
         "@id": "urn:ngm:class:regulatory-reporting",
@@ -507,24 +467,12 @@ alias:: R3Corda
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:flow-coroutine",
-        "label": "Flow Coroutine"
-      },
-      {
-        "@id": "urn:ngm:class:notary-consensus",
-        "label": "Notary Consensus"
-      },
-      {
         "@id": "urn:ngm:class:point-to-point-messaging",
         "label": "Point-to-Point Messaging"
       },
       {
         "@id": "urn:ngm:class:raft-consensus",
         "label": "RAFT Consensus"
-      },
-      {
-        "@id": "urn:ngm:class:ricardian-contract",
-        "label": "Ricardian Contract"
       },
       {
         "@id": "urn:ngm:class:two-phase-commit",
@@ -553,7 +501,7 @@ alias:: R3Corda
         "label": "Gradle"
       },
       {
-        "@id": "urn:ngm:class:http-rest-api",
+        "@id": "urn:ngm:class:rest-api",
         "label": "HTTP REST API"
       },
       {
@@ -561,16 +509,8 @@ alias:: R3Corda
         "label": "Kotlin"
       },
       {
-        "@id": "urn:ngm:class:oracle-db",
-        "label": "Oracle DB"
-      },
-      {
         "@id": "urn:ngm:class:postgre-sql",
         "label": "PostgreSQL"
-      },
-      {
-        "@id": "urn:ngm:class:sql-server",
-        "label": "SQL Server"
       },
       {
         "@id": "urn:ngm:class:docker-containerisation-platform",
@@ -585,14 +525,6 @@ alias:: R3Corda
       {
         "@id": "urn:ngm:class:digital-security",
         "label": "Digital Security"
-      },
-      {
-        "@id": "urn:ngm:class:fnality",
-        "label": "Fnality"
-      },
-      {
-        "@id": "urn:ngm:class:regulated-liability-network",
-        "label": "Regulated Liability Network"
       },
       {
         "@id": "urn:ngm:class:blockchain-network",
@@ -613,20 +545,8 @@ alias:: R3Corda
         "label": "Asset Tokenisation"
       },
       {
-        "@id": "urn:ngm:class:insurance-processing",
-        "label": "Insurance Processing"
-      },
-      {
-        "@id": "urn:ngm:class:interbank-reconciliation",
-        "label": "Interbank Reconciliation"
-      },
-      {
         "@id": "urn:ngm:class:securities-settlement",
         "label": "Securities Settlement"
-      },
-      {
-        "@id": "urn:ngm:class:syndicated-lending",
-        "label": "Syndicated Lending"
       },
       {
         "@id": "urn:ngm:class:trade-finance",

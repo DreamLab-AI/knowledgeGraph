@@ -23,63 +23,137 @@ public:: true
   "definition": "Supply chain security is the practice of protecting the integrity, provenance, and trustworthiness of the components, dependencies, and processes that compose a product, with particular emphasis on software supply chains. It addresses threats such as compromised dependencies, malicious build tooling, and tampered artefacts through measures like signed releases, software bills of materials, and reproducible builds. It has become a critical discipline as systems increasingly assemble third-party code and hardware.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:cybersecurity",
+    "label": "Cybersecurity"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:software-bill-of-materials", "label": "Software Bill of Materials"},
-      {"@id": "urn:ngm:class:reproducible-builds", "label": "Reproducible Builds"},
-      {"@id": "urn:ngm:class:dependency-pinning", "label": "Dependency Pinning"},
-      {"@id": "urn:ngm:class:provenance-attestation", "label": "Provenance Attestation"}
+      {
+        "@id": "urn:ngm:class:software-bill-of-materials",
+        "label": "Software Bill of Materials"
+      },
+      {
+        "@id": "urn:ngm:class:reproducible-builds",
+        "label": "Reproducible Builds"
+      },
+      {
+        "@id": "urn:ngm:class:provenance",
+        "label": "Provenance Attestation"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cryptographic-signing", "label": "Cryptographic Signing"},
-      {"@id": "urn:ngm:class:code-signing", "label": "Code Signing"},
-      {"@id": "urn:ngm:class:vulnerability-management", "label": "Vulnerability Management"}
+      {
+        "@id": "urn:ngm:class:cryptographic-signing",
+        "label": "Cryptographic Signing"
+      },
+      {
+        "@id": "urn:ngm:class:code-signing",
+        "label": "Code Signing"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:secure-software-development", "label": "Secure Software Development"},
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"}
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:package-repository", "label": "Package Repository"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:package-repository",
+        "label": "Package Repository"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:slsa-framework", "label": "SLSA Framework"},
-      {"@id": "urn:ngm:class:in-toto-attestation", "label": "in-toto Attestation"}
+      {
+        "@id": "urn:ngm:class:slsa-framework",
+        "label": "SLSA Framework"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:sigstore", "label": "Sigstore"},
-      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"}
+      {
+        "@id": "urn:ngm:class:sigstore",
+        "label": "Sigstore"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:compliance", "label": "Compliance"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist-cybersecurity-framework", "label": "NIST Cybersecurity Framework"},
-      {"@id": "urn:ngm:class:executive-order-14028", "label": "Executive Order 14028"}
+      {
+        "@id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:perimeter-security", "label": "Perimeter Security"}
+      {
+        "@id": "urn:ngm:class:perimeter-security",
+        "label": "Perimeter Security"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:devops", "label": "DevOps"},
-      {"@id": "urn:ngm:class:governance", "label": "Governance"}
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cyber-security-and-cryptography", "label": "Cyber Security and Cryptography"},
-      {"@id": "urn:ngm:class:third-party-risk-management", "label": "Third-Party Risk Management"},
-      {"@id": "urn:ngm:class:secure-boot", "label": "Secure Boot"},
-      {"@id": "urn:ngm:class:hardware-security", "label": "Hardware Security"}
+      {
+        "@id": "urn:ngm:class:cyber-security-and-cryptography",
+        "label": "Cyber Security and Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:third-party-risk-management",
+        "label": "Third-Party Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:secure-boot",
+        "label": "Secure Boot"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security",
+        "label": "Hardware Security"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:software-supply-chain-security", "label": "Software Supply Chain Security"}
+    {
+      "@id": "urn:ngm:class:software-supply-chain-security",
+      "label": "Software Supply Chain Security"
+    }
   ],
   "quality": 0.73,
   "provenance": {

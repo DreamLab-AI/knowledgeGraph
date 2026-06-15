@@ -28,10 +28,6 @@
       {
         "id": "urn:ngm:class:reasoning-engine",
         "label": "Reasoning Engine"
-      },
-      {
-        "id": "urn:ngm:class:action-module",
-        "label": "Action Module"
       }
     ],
     "requires": [
@@ -54,7 +50,7 @@
         "label": "Task Automation"
       },
       {
-        "id": "urn:ngm:class:emergent-behaviour",
+        "id": "urn:ngm:class:emergent-behavior",
         "label": "Emergent Behaviour"
       }
     ],
@@ -72,18 +68,9 @@
       {
         "id": "urn:ngm:class:bdi-model",
         "label": "BDI Model"
-      },
-      {
-        "id": "urn:ngm:class:sense-think-act-loop",
-        "label": "Sense-Think-Act Loop"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:reflex-agent",
-        "label": "Reflex Agent"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:smart-contract",

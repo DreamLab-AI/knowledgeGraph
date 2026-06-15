@@ -51,53 +51,129 @@ public:: true
   },
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
-      {"@id": "urn:ngm:class:differentiable-function", "label": "Differentiable Function"},
-      {"@id": "urn:ngm:class:learning-rate", "label": "Learning Rate"}
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:differentiable-function",
+        "label": "Differentiable Function"
+      },
+      {
+        "@id": "urn:ngm:class:learning-rate",
+        "label": "Learning Rate"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:neural-network-training", "label": "Neural Network Training"},
-      {"@id": "urn:ngm:class:convergence", "label": "Convergence"}
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      },
+      {
+        "@id": "urn:ngm:class:convergence",
+        "label": "Convergence"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:hyperparameter", "label": "Hyperparameter"},
-      {"@id": "urn:ngm:class:gradient", "label": "Gradient"},
-      {"@id": "urn:ngm:class:mini-batch", "label": "Mini-Batch"}
+      {
+        "@id": "urn:ngm:class:hyperparameter",
+        "label": "Hyperparameter"
+      },
+      {
+        "@id": "urn:ngm:class:gradient",
+        "label": "Gradient"
+      },
+      {
+        "@id": "urn:ngm:class:mini-batch",
+        "label": "Mini-Batch"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"},
-      {"@id": "urn:ngm:class:batch-gradient-descent", "label": "Batch Gradient Descent"},
-      {"@id": "urn:ngm:class:mini-batch-gradient-descent", "label": "Mini-Batch Gradient Descent"}
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:batch-gradient-descent",
+        "label": "Batch Gradient Descent"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:first-order-optimisation", "label": "First-Order Optimisation"},
-      {"@id": "urn:ngm:class:numerical-optimisation", "label": "Numerical Optimisation"}
+      {
+        "@id": "urn:ngm:class:first-order-optimisation",
+        "label": "First-Order Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:numerical-optimisation",
+        "label": "Numerical Optimisation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:objective-function", "label": "Objective Function"},
-      {"@id": "urn:ngm:class:parameter-space", "label": "Parameter Space"}
+      {
+        "@id": "urn:ngm:class:objective-function",
+        "label": "Objective Function"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:second-order-optimisation", "label": "Second-Order Optimisation"},
-      {"@id": "urn:ngm:class:evolutionary-algorithm", "label": "Evolutionary Algorithm"}
+      {
+        "@id": "urn:ngm:class:second-order-optimisation",
+        "label": "Second-Order Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:evolutionary-algorithm",
+        "label": "Evolutionary Algorithm"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:adam-optimiser", "label": "Adam Optimiser"},
-      {"@id": "urn:ngm:class:rmsprop", "label": "RMSProp"},
-      {"@id": "urn:ngm:class:momentum", "label": "Momentum"},
-      {"@id": "urn:ngm:class:weight-initialisation", "label": "Weight Initialisation"}
+      {
+        "@id": "urn:ngm:class:adam-optimiser",
+        "label": "Adam Optimiser"
+      },
+      {
+        "@id": "urn:ngm:class:rmsprop",
+        "label": "RMSProp"
+      },
+      {
+        "@id": "urn:ngm:class:momentum",
+        "label": "Momentum"
+      },
+      {
+        "@id": "urn:ngm:class:weight-initialisation",
+        "label": "Weight Initialisation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:steepest-descent", "label": "Steepest Descent"},
-    {"@id": "urn:ngm:class:gradient-based-optimisation", "label": "Gradient-Based Optimisation"}
+    {
+      "@id": "urn:ngm:class:steepest-descent",
+      "label": "Steepest Descent"
+    },
+    {
+      "@id": "urn:ngm:class:gradient-based-optimisation",
+      "label": "Gradient-Based Optimisation"
+    }
   ],
   "quality": 0.72,
   "provenance": {

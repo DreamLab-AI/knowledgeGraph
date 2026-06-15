@@ -38,52 +38,103 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:scope-1-emissions", "label": "Scope 1 Emissions"},
-      {"@id": "urn:ngm:class:scope-2-emissions", "label": "Scope 2 Emissions"},
-      {"@id": "urn:ngm:class:scope-3-emissions", "label": "Scope 3 Emissions"}
+      {
+        "@id": "urn:ngm:class:scope-1-emissions",
+        "label": "Scope 1 Emissions"
+      },
+      {
+        "@id": "urn:ngm:class:scope-2-emissions",
+        "label": "Scope 2 Emissions"
+      },
+      {
+        "@id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:carbon-accounting", "label": "Carbon Accounting"}
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:greenhouse-gas-inventory", "label": "Greenhouse Gas Inventory"},
-      {"@id": "urn:ngm:class:emissions-factor", "label": "Emissions Factor"}
+      {
+        "@id": "urn:ngm:class:greenhouse-gas-inventory",
+        "label": "Greenhouse Gas Inventory"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"},
-      {"@id": "urn:ngm:class:science-based-targets", "label": "Science Based Targets"},
-      {"@id": "urn:ngm:class:carbon-offsetting", "label": "Carbon Offsetting"},
-      {"@id": "urn:ngm:class:carbon-neutral-certification", "label": "Carbon Neutral Certification"}
+      {
+        "@id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:science-based-targets",
+        "label": "Science Based Targets"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-offsetting",
+        "label": "Carbon Offsetting"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:corporate-sustainability-reporting", "label": "Corporate Sustainability Reporting"}
+      {
+        "@id": "urn:ngm:class:corporate-sustainability-reporting",
+        "label": "Corporate Sustainability Reporting"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:life-cycle-assessment", "label": "Life Cycle Assessment"},
-      {"@id": "urn:ngm:class:carbon-footprint-measurement", "label": "Carbon Footprint Measurement"}
+      {
+        "@id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-14064", "label": "ISO 14064"},
-      {"@id": "urn:ngm:class:world-resources-institute", "label": "World Resources Institute"}
+      {
+        "@id": "urn:ngm:class:iso-14064",
+        "label": "ISO 14064"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:iso-14067", "label": "ISO 14067"},
-      {"@id": "urn:ngm:class:pas-2060", "label": "PAS 2060"}
+      {
+        "@id": "urn:ngm:class:iso-14067",
+        "label": "ISO 14067"
+      },
+      {
+        "@id": "urn:ngm:class:pas-2060",
+        "label": "PAS 2060"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain-carbon-credits", "label": "Blockchain Carbon Credits"},
-      {"@id": "urn:ngm:class:supply-chain-transparency", "label": "Supply Chain Transparency"},
-      {"@id": "urn:ngm:class:digital-product-passport", "label": "Digital Product Passport"}
+      {
+        "@id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:tcfd", "label": "TCFD"},
-      {"@id": "urn:ngm:class:eu-csrd", "label": "EU CSRD"},
-      {"@id": "urn:ngm:class:cdp-reporting", "label": "CDP Reporting"},
-      {"@id": "urn:ngm:class:net-zero-transition", "label": "Net Zero Transition"}
+      {
+        "@id": "urn:ngm:class:tcfd",
+        "label": "TCFD"
+      },
+      {
+        "@id": "urn:ngm:class:net-zero-transition",
+        "label": "Net Zero Transition"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:greenhouse-gas-protocol", "label": "Greenhouse Gas Protocol"}
+    {
+      "@id": "urn:ngm:class:greenhouse-gas-protocol",
+      "label": "Greenhouse Gas Protocol"
+    }
   ],
   "quality": 0.74,
   "provenance": {

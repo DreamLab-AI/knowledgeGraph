@@ -23,53 +23,117 @@ public:: true
   "definition": "A shading and rendering technique that approximates the degree to which each point on a surface is occluded from ambient environmental light by surrounding geometry, producing soft shadows in crevices, corners, and contact areas that significantly enhance the perception of three-dimensional form and material grounding. Unlike direct illumination algorithms, ambient occlusion is view-independent and operates on the assumption that ambient light arrives uniformly from all directions, making it computationally tractable as either a pre-baked texture or a real-time screen-space approximation. It is a foundational element of physically plausible rendering pipelines.",
   "domain": "spatial-computing",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:rendering-technique", "label": "Rendering Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:rendering-technique",
+      "label": "Rendering Technique"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"},
-      {"@id": "urn:ngm:class:ray-tracing", "label": "Ray Tracing"},
-      {"@id": "urn:ngm:class:depth-buffer", "label": "Depth Buffer"},
-      {"@id": "urn:ngm:class:hemisphere-sampling", "label": "Hemisphere Sampling"},
-      {"@id": "urn:ngm:class:gpu-shader", "label": "GPU Shader"}
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:depth-buffer",
+        "label": "Depth Buffer"
+      },
+      {
+        "@id": "urn:ngm:class:sampling",
+        "label": "Hemisphere Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-shader",
+        "label": "GPU Shader"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:photorealistic-rendering", "label": "Photorealistic Rendering"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:depth-perception", "label": "Depth Perception"},
-      {"@id": "urn:ngm:class:contact-shadow", "label": "Contact Shadow"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:screen-space-ambient-occlusion", "label": "Screen Space Ambient Occlusion"},
-      {"@id": "urn:ngm:class:ray-traced-ambient-occlusion", "label": "Ray-Traced Ambient Occlusion"},
-      {"@id": "urn:ngm:class:baked-lightmap", "label": "Baked Lightmap"}
+      {
+        "@id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:perception",
+        "label": "Depth Perception"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:global-illumination", "label": "Global Illumination"},
-      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"}
+      {
+        "@id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:scene-geometry", "label": "Scene Geometry"},
-      {"@id": "urn:ngm:class:surface-normal", "label": "Surface Normal"}
+      {
+        "@id": "urn:ngm:class:scene-geometry",
+        "label": "Scene Geometry"
+      },
+      {
+        "@id": "urn:ngm:class:surface-normal",
+        "label": "Surface Normal"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:direct-illumination", "label": "Direct Illumination"},
-      {"@id": "urn:ngm:class:shadow-mapping", "label": "Shadow Mapping"}
+      {
+        "@id": "urn:ngm:class:direct-illumination",
+        "label": "Direct Illumination"
+      },
+      {
+        "@id": "urn:ngm:class:shadow-mapping",
+        "label": "Shadow Mapping"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:dynamic-lighting", "label": "Dynamic Lighting"},
-      {"@id": "urn:ngm:class:ar-occlusion", "label": "AR Occlusion"},
-      {"@id": "urn:ngm:class:occlusion-culling", "label": "Occlusion Culling"},
-      {"@id": "urn:ngm:class:lightmap", "label": "Lightmap"},
-      {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"}
+      {
+        "@id": "urn:ngm:class:dynamic-lighting",
+        "label": "Dynamic Lighting"
+      },
+      {
+        "@id": "urn:ngm:class:ar-occlusion",
+        "label": "AR Occlusion"
+      },
+      {
+        "@id": "urn:ngm:class:occlusion-culling",
+        "label": "Occlusion Culling"
+      },
+      {
+        "@id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ao", "label": "AO"},
-    {"@id": "urn:ngm:class:environment-occlusion", "label": "Environment Occlusion"}
+    {
+      "@id": "urn:ngm:class:ao",
+      "label": "AO"
+    },
+    {
+      "@id": "urn:ngm:class:environment-occlusion",
+      "label": "Environment Occlusion"
+    }
   ],
   "quality": 0.75,
   "provenance": {

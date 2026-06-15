@@ -22,19 +22,11 @@
         "label": "Gaussian Splatting"
       },
       {
-        "id": "urn:ngm:class:neural-texture",
-        "label": "Neural Texture"
-      },
-      {
         "id": "urn:ngm:class:neural-scene-representation",
         "label": "Neural Scene Representation"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:multi-view-imaging",
-        "label": "Multi-View Imaging"
-      },
       {
         "id": "urn:ngm:class:graphics-processing-unit",
         "label": "Graphics Processing Unit"
@@ -58,12 +50,8 @@
         "label": "Novel View Synthesis"
       },
       {
-        "id": "urn:ngm:class:photorealistic-avatar",
+        "id": "urn:ngm:class:avatar",
         "label": "Photorealistic Avatar"
-      },
-      {
-        "id": "urn:ngm:class:immersive-environment",
-        "label": "Immersive Environment"
       }
     ],
     "dependsOn": [
@@ -136,7 +124,7 @@
         "label": "Scene Understanding"
       },
       {
-        "id": "urn:ngm:class:light-field-imaging",
+        "id": "urn:ngm:class:light-field",
         "label": "Light Field Imaging"
       },
       {

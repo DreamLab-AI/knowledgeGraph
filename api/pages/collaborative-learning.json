@@ -16,20 +16,7 @@
   "qualityScore": 0.68,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:peer-instruction",
-        "label": "Peer Instruction"
-      },
-      {
-        "id": "urn:ngm:class:group-discussion",
-        "label": "Group Discussion"
-      },
-      {
-        "id": "urn:ngm:class:collaborative-problem-solving",
-        "label": "Collaborative Problem Solving"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:communication-tools",
@@ -68,7 +55,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:avatar-representation",
+        "id": "urn:ngm:class:avatar",
         "label": "Avatar Representation"
       },
       {
@@ -76,26 +63,8 @@
         "label": "Network Infrastructure"
       }
     ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:zone-of-proximal-development",
-        "label": "Zone of Proximal Development"
-      },
-      {
-        "id": "urn:ngm:class:situated-learning",
-        "label": "Situated Learning"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:individual-learning",
-        "label": "Individual Learning"
-      },
-      {
-        "id": "urn:ngm:class:traditional-classroom-instruction",
-        "label": "Traditional Classroom Instruction"
-      }
-    ],
+    "implements": [],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:telecollaboration",
@@ -116,7 +85,7 @@
         "label": "Spatial Audio"
       },
       {
-        "id": "urn:ngm:class:real-time-collaboration-platform",
+        "id": "urn:ngm:class:collaboration-platform",
         "label": "Real-Time Collaboration Platform"
       }
     ],

@@ -142,31 +142,15 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:facial-recognition-sensor",
+        "@id": "urn:ngm:class:facial-recognition",
         "label": "Facial Recognition Sensor"
       },
       {
-        "@id": "urn:ngm:class:fingerprint-scanner",
-        "label": "Fingerprint Scanner"
-      },
-      {
-        "@id": "urn:ngm:class:iris-recognition-camera",
-        "label": "Iris Recognition Camera"
-      },
-      {
-        "@id": "urn:ngm:class:secure-element-chip",
+        "@id": "urn:ngm:class:secure-enclave",
         "label": "Secure Element Chip"
-      },
-      {
-        "@id": "urn:ngm:class:template-matching-processor",
-        "label": "Template Matching Processor"
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:anti-spoofing-module",
-        "label": "Anti-Spoofing Module"
-      },
       {
         "@id": "urn:ngm:class:encrypted-storage",
         "label": "Encrypted Storage"
@@ -204,7 +188,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:zero-trust-security-framework",
+        "@id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Security Framework"
       },
       {

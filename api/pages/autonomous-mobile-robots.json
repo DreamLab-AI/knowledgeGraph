@@ -32,10 +32,6 @@
         "label": "Real-Time Computing"
       },
       {
-        "id": "urn:ngm:class:motor-control",
-        "label": "Motor Control"
-      },
-      {
         "id": "urn:ngm:class:functional-safety",
         "label": "Functional Safety"
       }
@@ -60,12 +56,7 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:automated-guided-vehicles",
-        "label": "Automated Guided Vehicles"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:artificial-intelligence",
@@ -98,10 +89,6 @@
         "label": "Robot Operating System"
       },
       {
-        "id": "urn:ngm:class:occupancy-grid-mapping",
-        "label": "Occupancy Grid Mapping"
-      },
-      {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
       }
@@ -130,10 +117,6 @@
       {
         "id": "urn:ngm:class:mobile-robot-platform",
         "label": "Mobile Robot Platform"
-      },
-      {
-        "id": "urn:ngm:class:multi-agent-path-finding",
-        "label": "Multi-Agent Path Finding"
       },
       {
         "id": "urn:ngm:class:human-robot-interaction",

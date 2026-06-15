@@ -38,53 +38,129 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
-      {"@id": "urn:ngm:class:state-machine", "label": "State Machine"}
+      {
+        "@id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
-      {"@id": "urn:ngm:class:business-process-management", "label": "Business Process Management"},
-      {"@id": "urn:ngm:class:hyperautomation", "label": "Hyperautomation"},
-      {"@id": "urn:ngm:class:intelligent-process-automation", "label": "Intelligent Process Automation"}
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      },
+      {
+        "@id": "urn:ngm:class:hyperautomation",
+        "label": "Hyperautomation"
+      },
+      {
+        "@id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Process Automation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:api-integration", "label": "API Integration"},
-      {"@id": "urn:ngm:class:event-streaming", "label": "Event Streaming"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+      {
+        "@id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      },
+      {
+        "@id": "urn:ngm:class:event-streaming",
+        "label": "Event Streaming"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:robotic-process-automation", "label": "Robotic Process Automation"},
-      {"@id": "urn:ngm:class:task-scheduling", "label": "Task Scheduling"},
-      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"}
+      {
+        "@id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "@id": "urn:ngm:class:task-scheduling",
+        "label": "Task Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:planning-and-scheduling", "label": "Planning and Scheduling"},
-      {"@id": "urn:ngm:class:observability", "label": "Observability"},
-      {"@id": "urn:ngm:class:idempotency", "label": "Idempotency"}
+      {
+        "@id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "@id": "urn:ngm:class:idempotency",
+        "label": "Idempotency"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:manual-processing", "label": "Manual Processing"},
-      {"@id": "urn:ngm:class:batch-processing", "label": "Batch Processing"}
+      {
+        "@id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:low-code-platforms", "label": "Low-Code Platforms"},
-      {"@id": "urn:ngm:class:integration-platform-as-a-service", "label": "Integration Platform as a Service"}
+      {
+        "@id": "urn:ngm:class:low-code-platforms",
+        "label": "Low-Code Platforms"
+      },
+      {
+        "@id": "urn:ngm:class:integration-platform-as-a-service",
+        "label": "Integration Platform as a Service"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:bpmn", "label": "BPMN"},
-      {"@id": "urn:ngm:class:dmn", "label": "DMN"}
+      {
+        "@id": "urn:ngm:class:bpmn",
+        "label": "BPMN"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:process-automation", "label": "Process Automation"},
-    {"@id": "urn:ngm:class:business-process-automation", "label": "Business Process Automation"}
+    {
+      "@id": "urn:ngm:class:process-automation",
+      "label": "Process Automation"
+    },
+    {
+      "@id": "urn:ngm:class:business-process-automation",
+      "label": "Business Process Automation"
+    }
   ],
   "quality": 0.74,
   "provenance": {

@@ -21,14 +21,6 @@
       {
         "id": "urn:ngm:class:relying-party",
         "label": "Relying Party"
-      },
-      {
-        "id": "urn:ngm:class:authenticator",
-        "label": "Authenticator"
-      },
-      {
-        "id": "urn:ngm:class:origin-binding",
-        "label": "Origin Binding"
       }
     ],
     "enables": [
@@ -56,10 +48,6 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:fido-ctap",
-        "label": "FIDO CTAP"
-      },
-      {
         "id": "urn:ngm:class:w3c-recommendation",
         "label": "W3C Recommendation"
       }
@@ -80,13 +68,13 @@
         "label": "Decentralised Identity"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential",
+        "id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public-Key Cryptography"
       },
       {

@@ -24,54 +24,112 @@ public:: true
   "domain": "governance",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:digital-regulation", "label": "Digital Regulation"}
+    {
+      "@id": "urn:ngm:class:digital-regulation",
+      "label": "Digital Regulation"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:age-verification", "label": "Age Verification"},
-      {"@id": "urn:ngm:class:transparency-reporting", "label": "Transparency Reporting"},
-      {"@id": "urn:ngm:class:content-risk-assessment", "label": "Content Risk Assessment"}
+      {
+        "@id": "urn:ngm:class:age-verification",
+        "label": "Age Verification"
+      },
+      {
+        "@id": "urn:ngm:class:transparency-reporting",
+        "label": "Transparency Reporting"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:platform-accountability", "label": "Platform Accountability"}
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:platform-accountability",
+        "label": "Platform Accountability"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:user-safety", "label": "User Safety"},
-      {"@id": "urn:ngm:class:trust-and-safety", "label": "Trust and Safety"},
-      {"@id": "urn:ngm:class:child-protection-online", "label": "Child Protection Online"}
+      {
+        "@id": "urn:ngm:class:user-safety",
+        "label": "User Safety"
+      },
+      {
+        "@id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:content-moderation-standards", "label": "Content Moderation Standards"},
-      {"@id": "urn:ngm:class:regulatory-reporting", "label": "Regulatory Reporting"},
-      {"@id": "urn:ngm:class:risk-assessment-framework", "label": "Risk Assessment Framework"}
+      {
+        "@id": "urn:ngm:class:content-moderation-standards",
+        "label": "Content Moderation Standards"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:freedom-of-expression", "label": "Freedom of Expression"},
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"}
+      {
+        "@id": "urn:ngm:class:freedom-of-expression",
+        "label": "Freedom of Expression"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ofcom", "label": "Ofcom"},
-      {"@id": "urn:ngm:class:uk-parliament", "label": "UK Parliament"}
+      {
+        "@id": "urn:ngm:class:ofcom",
+        "label": "Ofcom"
+      },
+      {
+        "@id": "urn:ngm:class:uk-parliament",
+        "label": "UK Parliament"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:digital-services-act", "label": "Digital Services Act"},
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
-      {"@id": "urn:ngm:class:us-section-230", "label": "US Section 230"}
+      {
+        "@id": "urn:ngm:class:digital-services-act",
+        "label": "Digital Services Act"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:end-to-end-encryption", "label": "End-to-End Encryption"},
-      {"@id": "urn:ngm:class:platform-governance", "label": "Platform Governance"},
-      {"@id": "urn:ngm:class:illegal-content-detection", "label": "Illegal Content Detection"}
+      {
+        "@id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:platform-governance",
+        "label": "Platform Governance"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:client-side-scanning", "label": "Client-Side Scanning"}
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:client-side-scanning",
+        "label": "Client-Side Scanning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:online-safety-act-2023", "label": "Online Safety Act 2023"}
+    {
+      "@id": "urn:ngm:class:online-safety-act-2023",
+      "label": "Online Safety Act 2023"
+    }
   ],
   "quality": 0.74,
   "provenance": {

@@ -84,7 +84,7 @@ public:: true
         "label": "Collision Response"
       },
       {
-        "@id": "urn:ngm:class:constraint-solving",
+        "@id": "urn:ngm:class:constraint-satisfaction",
         "label": "Constraint Solving"
       },
       {
@@ -98,7 +98,7 @@ public:: true
         "label": "Linear Algebra"
       },
       {
-        "@id": "urn:ngm:class:quaternion-mathematics",
+        "@id": "urn:ngm:class:quaternion-math",
         "label": "Quaternion Mathematics"
       },
       {
@@ -116,7 +116,7 @@ public:: true
         "label": "Physics-Based Animation"
       },
       {
-        "@id": "urn:ngm:class:robot-motion-planning",
+        "@id": "urn:ngm:class:motion-planning",
         "label": "Robot Motion Planning"
       },
       {
@@ -130,7 +130,7 @@ public:: true
         "label": "Real-time Processing"
       },
       {
-        "@id": "urn:ngm:class:3d-coordinate-systems",
+        "@id": "urn:ngm:class:coordinate-system",
         "label": "3D Coordinate Systems"
       }
     ],

@@ -19,25 +19,13 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:reference-materials",
-        "label": "Reference Materials"
-      },
-      {
-        "id": "urn:ngm:class:traceability-chain",
+        "id": "urn:ngm:class:traceability",
         "label": "Traceability Chain"
-      },
-      {
-        "id": "urn:ngm:class:validation-procedures",
-        "label": "Validation Procedures"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:device-alignment",
-        "label": "Device Alignment"
-      },
-      {
-        "id": "urn:ngm:class:measurement-accuracy",
+        "id": "urn:ngm:class:accuracy",
         "label": "Measurement Accuracy"
       },
       {

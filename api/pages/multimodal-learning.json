@@ -26,15 +26,11 @@
         "label": "Modality-Specific Encoder"
       },
       {
-        "id": "urn:ngm:class:cross-attention-fusion",
+        "id": "urn:ngm:class:cross-attention",
         "label": "Cross-Attention Fusion"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:paired-multimodal-dataset",
-        "label": "Paired Multimodal Dataset"
-      },
       {
         "id": "urn:ngm:class:contrastive-learning",
         "label": "Contrastive Learning"
@@ -56,10 +52,6 @@
       {
         "id": "urn:ngm:class:text-to-image-generation",
         "label": "Text-to-Image Generation"
-      },
-      {
-        "id": "urn:ngm:class:zero-shot-transfer",
-        "label": "Zero-Shot Transfer"
       }
     ],
     "dependsOn": [],
@@ -70,10 +62,6 @@
       }
     ],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:unimodal-learning",
-        "label": "Unimodal Learning"
-      },
       {
         "id": "urn:ngm:class:self-supervised-learning",
         "label": "Self-Supervised Learning"
@@ -105,10 +93,6 @@
       {
         "id": "urn:ngm:class:vision-transformer",
         "label": "Vision Transformer"
-      },
-      {
-        "id": "urn:ngm:class:embedding-space-alignment",
-        "label": "Embedding Space Alignment"
       }
     ],
     "supports": [],
@@ -116,7 +100,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:foundation-models",
+        "id": "urn:ngm:class:foundation-model",
         "label": "Foundation Models"
       },
       {

@@ -49,55 +49,139 @@ alias:: NetworkInfrastructure
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:software-defined-networking", "label": "Software-Defined Networking"},
-      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"},
-      {"@id": "urn:ngm:class:network-component", "label": "Network Component"},
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "@id": "urn:ngm:class:network-component",
+        "label": "Network Component"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"}
+      {
+        "@id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:physical-layer", "label": "Physical Layer"},
-      {"@id": "urn:ngm:class:network-security", "label": "Network Security"},
-      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"}
+      {
+        "@id": "urn:ngm:class:physical-layer",
+        "label": "Physical Layer"
+      },
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:real-time-communication", "label": "Real-Time Communication"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:telecommunications-infrastructure", "label": "Telecommunications Infrastructure"},
-      {"@id": "urn:ngm:class:power-infrastructure", "label": "Power Infrastructure"}
+      {
+        "@id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:power-infrastructure",
+        "label": "Power Infrastructure"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"},
-      {"@id": "urn:ngm:class:autonomous-systems", "label": "Autonomous Systems"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ieee-802", "label": "IEEE 802 Standards"},
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"},
-      {"@id": "urn:ngm:class:3gpp", "label": "3GPP"}
+      {
+        "@id": "urn:ngm:class:ieee-802",
+        "label": "IEEE 802 Standards"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:3gpp",
+        "label": "3GPP"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:overlay-network", "label": "Overlay Network"}
+      {
+        "@id": "urn:ngm:class:overlay-network",
+        "label": "Overlay Network"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:network-topology", "label": "Network Topology"},
-      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality Of Service"}
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      },
+      {
+        "@id": "urn:ngm:class:quality-of-service",
+        "label": "Quality Of Service"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:communications-infrastructure", "label": "Communications Infrastructure"}
+    {
+      "@id": "urn:ngm:class:communications-infrastructure",
+      "label": "Communications Infrastructure"
+    }
   ],
   "quality": 0.72,
   "provenance": {

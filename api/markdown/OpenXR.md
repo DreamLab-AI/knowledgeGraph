@@ -220,53 +220,27 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:open-xr-action-system",
-        "label": "OpenXR Action System"
-      },
-      {
-        "@id": "urn:ngm:class:open-xr-extension",
-        "label": "OpenXR Extension"
-      },
-      {
-        "@id": "urn:ngm:class:open-xr-loader",
-        "label": "OpenXR Loader"
-      },
-      {
-        "@id": "urn:ngm:class:open-xr-session",
-        "label": "OpenXR Session"
-      },
-      {
-        "@id": "urn:ngm:class:open-xr-space",
-        "label": "OpenXR Space"
-      },
-      {
-        "@id": "urn:ngm:class:open-xr-swapchain",
-        "label": "OpenXR Swapchain"
-      }
-    ],
     "requires": [
       {
-        "@id": "urn:ngm:class:open-gl-es",
+        "@id": "urn:ngm:class:open-gl",
         "label": "OpenGL ES"
       },
       {
-        "@id": "urn:ngm:class:vulkan-api",
+        "@id": "urn:ngm:class:vulkan",
         "label": "Vulkan API"
       },
       {
-        "@id": "urn:ngm:class:xr-hardware-device",
+        "@id": "urn:ngm:class:xr-hardware",
         "label": "XR Hardware Device"
       },
       {
-        "@id": "urn:ngm:class:xr-runtime",
+        "@id": "urn:ngm:class:xr-runtime-environment",
         "label": "XR Runtime"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:hardware-agnostic-xr-development",
+        "@id": "urn:ngm:class:hardware-platform-agnostic",
         "label": "Hardware-Agnostic XR Development"
       },
       {
@@ -288,17 +262,13 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:khronos-open-xr-1-0-specification",
+        "@id": "urn:ngm:class:khronos-open-xr-1-1-specification",
         "label": "Khronos OpenXR 1.0 Specification"
-      },
-      {
-        "@id": "urn:ngm:class:open-xr-extension-registry",
-        "label": "OpenXR Extension Registry"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:xr-technology-stack",
+        "@id": "urn:ngm:class:technology-stack",
         "label": "XR Technology Stack"
       },
       {

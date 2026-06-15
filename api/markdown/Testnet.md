@@ -472,14 +472,6 @@ public:: true
         "label": "Block Explorer"
       },
       {
-        "@id": "urn:ngm:class:faucet",
-        "label": "Faucet"
-      },
-      {
-        "@id": "urn:ngm:class:mining-staking-pool",
-        "label": "Mining/Staking Pool"
-      },
-      {
         "@id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
       },
@@ -506,7 +498,7 @@ public:: true
         "label": "Cryptographic Primitive"
       },
       {
-        "@id": "urn:ngm:class:native-token-distribution",
+        "@id": "urn:ngm:class:native-token",
         "label": "Native Token Distribution"
       },
       {
@@ -518,31 +510,9 @@ public:: true
         "label": "State Management"
       }
     ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:consensus-research",
-        "label": "Consensus Research"
-      },
-      {
-        "@id": "urn:ngm:class:cross-chain-integration",
-        "label": "Cross-Chain Integration"
-      },
-      {
-        "@id": "urn:ngm:class:d-app-deployment",
-        "label": "dApp Deployment"
-      },
-      {
-        "@id": "urn:ngm:class:protocol-testing",
-        "label": "Protocol Testing"
-      },
-      {
-        "@id": "urn:ngm:class:smart-contract-development",
-        "label": "Smart Contract Development"
-      }
-    ],
     "implements": [
       {
-        "@id": "urn:ngm:class:pbft-consensus",
+        "@id": "urn:ngm:class:pbft",
         "label": "PBFT Consensus"
       },
       {
@@ -568,11 +538,7 @@ public:: true
         "label": "Merkle Tree"
       },
       {
-        "@id": "urn:ngm:class:rlp-encoding",
-        "label": "RLP Encoding"
-      },
-      {
-        "@id": "urn:ngm:class:transaction-mempool",
+        "@id": "urn:ngm:class:mempool",
         "label": "Transaction Mempool"
       },
       {
@@ -594,34 +560,18 @@ public:: true
         "label": "Protocol Upgrade"
       },
       {
-        "@id": "urn:ngm:class:staging-environment",
-        "label": "Staging Environment"
-      },
-      {
         "@id": "urn:ngm:class:validator-economics",
         "label": "Validator Economics"
       }
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:bug-discovery",
-        "label": "Bug Discovery"
-      },
-      {
-        "@id": "urn:ngm:class:developer-onboarding",
-        "label": "Developer Onboarding"
-      },
-      {
-        "@id": "urn:ngm:class:performance-benchmarking",
+        "@id": "urn:ngm:class:performance-benchmarks",
         "label": "Performance Benchmarking"
       },
       {
-        "@id": "urn:ngm:class:security-auditing",
+        "@id": "urn:ngm:class:security-audit",
         "label": "Security Auditing"
-      },
-      {
-        "@id": "urn:ngm:class:validator-training",
-        "label": "Validator Training"
       }
     ],
     "standardizedBy": [
@@ -630,11 +580,11 @@ public:: true
         "label": "Bitcoin Core"
       },
       {
-        "@id": "urn:ngm:class:ethereum-smart-contract-platform-specification",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum Specification"
       },
       {
-        "@id": "urn:ngm:class:polkadot-runtime",
+        "@id": "urn:ngm:class:polkadot",
         "label": "Polkadot Runtime"
       },
       {

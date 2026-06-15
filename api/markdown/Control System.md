@@ -175,10 +175,6 @@ alias:: Control Systems
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:actuator-driver",
-        "label": "Actuator Driver"
-      },
-      {
         "@id": "urn:ngm:class:controller",
         "label": "Controller"
       },
@@ -193,7 +189,7 @@ alias:: Control Systems
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:actuator-output",
+        "@id": "urn:ngm:class:actuator",
         "label": "Actuator Output"
       },
       {
@@ -205,7 +201,7 @@ alias:: Control Systems
         "label": "Sensor Input"
       },
       {
-        "@id": "urn:ngm:class:timing-synchronisation",
+        "@id": "urn:ngm:class:time-synchronisation",
         "label": "Timing Synchronisation"
       }
     ],
@@ -213,10 +209,6 @@ alias:: Control Systems
       {
         "@id": "urn:ngm:class:adaptive-behaviour",
         "label": "Adaptive Behaviour"
-      },
-      {
-        "@id": "urn:ngm:class:stabilisation",
-        "label": "Stabilisation"
       },
       {
         "@id": "urn:ngm:class:task-execution",

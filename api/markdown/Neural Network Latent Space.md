@@ -44,57 +44,131 @@ elevatedFrom:: [[latent space]]
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:latent-space", "label": "Latent Space"},
-    {"@id": "urn:ngm:class:embedding-space", "label": "Embedding Space"}
+    {
+      "@id": "urn:ngm:class:latent-space",
+      "label": "Latent Space"
+    },
+    {
+      "@id": "urn:ngm:class:embedding-space",
+      "label": "Embedding Space"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:latent-vector", "label": "Latent Vector"},
-      {"@id": "urn:ngm:class:encoder-network", "label": "Encoder Network"},
-      {"@id": "urn:ngm:class:decoder-network", "label": "Decoder Network"},
-      {"@id": "urn:ngm:class:latent-code", "label": "Latent Code"}
+      {
+        "@id": "urn:ngm:class:encoder",
+        "label": "Encoder Network"
+      },
+      {
+        "@id": "urn:ngm:class:decoder-network",
+        "label": "Decoder Network"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"},
-      {"@id": "urn:ngm:class:representation-learning", "label": "Representation Learning"}
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder Decoder Architecture"},
-      {"@id": "urn:ngm:class:dimensionality-reduction", "label": "Dimensionality Reduction"}
+      {
+        "@id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder Decoder Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:image-synthesis", "label": "Image Synthesis"},
-      {"@id": "urn:ngm:class:text-to-image-generation", "label": "Text-to-Image Generation"},
-      {"@id": "urn:ngm:class:disentangled-representation", "label": "Disentangled Representation"},
-      {"@id": "urn:ngm:class:style-transfer", "label": "Style Transfer"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:image-synthesis",
+        "label": "Image Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-image-generation",
+        "label": "Text-to-Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:disentangled-representation",
+        "label": "Disentangled Representation"
+      },
+      {
+        "@id": "urn:ngm:class:style-transfer",
+        "label": "Style Transfer"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"},
-      {"@id": "urn:ngm:class:variational-inference", "label": "Variational Inference"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"}
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "@id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:deep-neural-network", "label": "Deep Neural Network"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+      {
+        "@id": "urn:ngm:class:deep-neural-network",
+        "label": "Deep Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:variational-autoencoders", "label": "Variational Autoencoders"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"}
+      {
+        "@id": "urn:ngm:class:variational-autoencoders",
+        "label": "Variational Autoencoders"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:symbolic-ai", "label": "Symbolic AI"},
-      {"@id": "urn:ngm:class:explicit-knowledge-representation", "label": "Explicit Knowledge Representation"}
+      {
+        "@id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Explicit Knowledge Representation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-data-representation", "label": "Spatial Data Representation"},
-      {"@id": "urn:ngm:class:3d-scene-understanding", "label": "3D Scene Understanding"}
+      {
+        "@id": "urn:ngm:class:scene-understanding",
+        "label": "3D Scene Understanding"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:semantic-embedding", "label": "Semantic Embedding"},
-      {"@id": "urn:ngm:class:principal-component-analysis", "label": "Principal Component Analysis"},
-      {"@id": "urn:ngm:class:manifold-hypothesis", "label": "Manifold Hypothesis"}
+      {
+        "@id": "urn:ngm:class:embedding",
+        "label": "Semantic Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:principal-component-analysis",
+        "label": "Principal Component Analysis"
+      }
     ]
   },
   "quality": 0.74,

@@ -38,55 +38,143 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
-      {"@id": "urn:ngm:class:hd-maps", "label": "HD Maps"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:model-predictive-control", "label": "Model Predictive Control"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
-      {"@id": "urn:ngm:class:robotaxi", "label": "Robotaxi"},
-      {"@id": "urn:ngm:class:last-mile-delivery", "label": "Last-Mile Delivery"}
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "@id": "urn:ngm:class:robotaxi",
+        "label": "Robotaxi"
+      },
+      {
+        "@id": "urn:ngm:class:last-mile-delivery",
+        "label": "Last-Mile Delivery"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:v2x-communication", "label": "V2X Communication"},
-      {"@id": "urn:ngm:class:gnss", "label": "GNSS"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:v2x-communication",
+        "label": "V2X Communication"
+      },
+      {
+        "@id": "urn:ngm:class:gnss",
+        "label": "GNSS"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:sae-j3016", "label": "SAE J3016"},
-      {"@id": "urn:ngm:class:iso-26262", "label": "ISO 26262"},
-      {"@id": "urn:ngm:class:un-ece-wp29", "label": "UN ECE WP.29"}
+      {
+        "@id": "urn:ngm:class:sae-j-3016",
+        "label": "SAE J3016"
+      },
+      {
+        "@id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:advanced-driver-assistance-systems", "label": "Advanced Driver Assistance Systems"},
-      {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"}
+      {
+        "@id": "urn:ngm:class:advanced-driver-assistance-systems",
+        "label": "Advanced Driver Assistance Systems"
+      },
+      {
+        "@id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:smart-city-infrastructure", "label": "Smart City Infrastructure"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:5g-networks", "label": "5G Networks"}
+      {
+        "@id": "urn:ngm:class:smart-city-infrastructure",
+        "label": "Smart City Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:5g-networks",
+        "label": "5G Networks"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:safety-critical-systems", "label": "Safety-Critical Systems"},
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:safety-critical-systems",
+        "label": "Safety-Critical Systems"
+      },
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:self-driving-vehicle-technology", "label": "Self-Driving Vehicle Technology"},
-    {"@id": "urn:ngm:class:driverless-driving", "label": "Driverless Driving"}
+    {
+      "@id": "urn:ngm:class:self-driving-vehicle-technology",
+      "label": "Self-Driving Vehicle Technology"
+    },
+    {
+      "@id": "urn:ngm:class:driverless-driving",
+      "label": "Driverless Driving"
+    }
   ],
   "quality": 0.73,
   "provenance": {

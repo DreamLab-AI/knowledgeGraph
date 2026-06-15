@@ -203,14 +203,6 @@ alias:: GameEngine
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:interactive-experience",
-        "label": "Interactive Experience"
-      },
-      {
-        "@id": "urn:ngm:class:multiplayer-gameplay",
-        "label": "Multiplayer Gameplay"
-      },
-      {
         "@id": "urn:ngm:class:procedural-content-generation",
         "label": "Procedural Content Generation"
       },
@@ -225,7 +217,7 @@ alias:: GameEngine
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:development-infrastructure",
+        "@id": "urn:ngm:class:infrastructure",
         "label": "Development Infrastructure"
       },
       {

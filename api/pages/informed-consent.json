@@ -20,30 +20,9 @@
       {
         "id": "urn:ngm:class:disclosure",
         "label": "Disclosure"
-      },
-      {
-        "id": "urn:ngm:class:voluntariness",
-        "label": "Voluntariness"
-      },
-      {
-        "id": "urn:ngm:class:decision-making-capacity",
-        "label": "Decision-Making Capacity"
       }
     ],
-    "requires": [
-      {
-        "id": "urn:ngm:class:patient-autonomy",
-        "label": "Patient Autonomy"
-      },
-      {
-        "id": "urn:ngm:class:comprehension",
-        "label": "Comprehension"
-      },
-      {
-        "id": "urn:ngm:class:right-to-withdraw",
-        "label": "Right to Withdraw"
-      }
-    ],
+    "requires": [],
     "enables": [
       {
         "id": "urn:ngm:class:clinical-trials",
@@ -56,36 +35,14 @@
       {
         "id": "urn:ngm:class:granular-consent-control",
         "label": "Granular Consent Control"
-      },
-      {
-        "id": "urn:ngm:class:research-ethics",
-        "label": "Research Ethics"
       }
     ],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:belmont-report",
-        "label": "Belmont Report"
-      },
-      {
-        "id": "urn:ngm:class:declaration-of-helsinki",
-        "label": "Declaration of Helsinki"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:implied-consent",
-        "label": "Implied Consent"
-      },
-      {
-        "id": "urn:ngm:class:blanket-consent",
-        "label": "Blanket Consent"
-      }
-    ],
+    "implements": [],
+    "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:ai-transparency",
+        "id": "urn:ngm:class:ai-transparency-framework",
         "label": "AI Transparency"
       },
       {
@@ -107,10 +64,6 @@
       {
         "id": "urn:ngm:class:gdpr",
         "label": "GDPR"
-      },
-      {
-        "id": "urn:ngm:class:common-rule",
-        "label": "Common Rule"
       }
     ],
     "partOf": [],
@@ -130,10 +83,6 @@
       {
         "id": "urn:ngm:class:ethical-ai",
         "label": "Ethical AI"
-      },
-      {
-        "id": "urn:ngm:class:proxy-consent",
-        "label": "Proxy Consent"
       }
     ]
   },

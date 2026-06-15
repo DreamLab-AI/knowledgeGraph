@@ -53,7 +53,7 @@
         "label": "Fractional Ownership"
       },
       {
-        "id": "urn:ngm:class:secondary-market-trading",
+        "id": "urn:ngm:class:secondary-market-integration",
         "label": "Secondary Market Trading"
       },
       {
@@ -133,10 +133,6 @@
       {
         "id": "urn:ngm:class:tokenomics",
         "label": "Tokenomics"
-      },
-      {
-        "id": "urn:ngm:class:token-offering",
-        "label": "Token Offering"
       }
     ]
   },

@@ -95,44 +95,20 @@ public:: true
         "label": "Network Protocol"
       },
       {
-        "@id": "urn:ngm:class:layered-architecture",
+        "@id": "urn:ngm:class:architecture",
         "label": "Layered Architecture"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:protocol-interoperability",
-        "label": "Protocol Interoperability"
-      },
-      {
-        "@id": "urn:ngm:class:network-troubleshooting",
-        "label": "Network Troubleshooting"
-      },
-      {
         "@id": "urn:ngm:class:vendor-neutrality",
         "label": "Vendor Neutrality"
-      }
-    ],
-    "dependsOn": [
-      {
-        "@id": "urn:ngm:class:standardisation",
-        "label": "Standardisation"
       }
     ],
     "implements": [
       {
         "@id": "urn:ngm:class:separation-of-concerns",
         "label": "Separation of Concerns"
-      }
-    ],
-    "uses": [
-      {
-        "@id": "urn:ngm:class:encapsulation",
-        "label": "Encapsulation"
-      },
-      {
-        "@id": "urn:ngm:class:protocol-data-unit",
-        "label": "Protocol Data Unit"
       }
     ],
     "standardizedBy": [

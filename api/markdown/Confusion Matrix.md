@@ -154,7 +154,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:classification-model",
+        "@id": "urn:ngm:class:classification",
         "label": "Classification Model"
       },
       {
@@ -230,10 +230,6 @@ public:: true
       {
         "@id": "urn:ngm:class:roc-curve",
         "label": "ROC Curve"
-      },
-      {
-        "@id": "urn:ngm:class:aggregate-metric",
-        "label": "Aggregate Metric"
       }
     ],
     "bridgesTo": [
@@ -256,7 +252,7 @@ public:: true
         "label": "Class Imbalance"
       },
       {
-        "@id": "urn:ngm:class:model-card",
+        "@id": "urn:ngm:class:ai-model-card",
         "label": "Model Card"
       }
     ]

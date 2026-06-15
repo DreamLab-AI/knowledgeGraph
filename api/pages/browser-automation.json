@@ -41,10 +41,6 @@
         "label": "Continuous Integration"
       },
       {
-        "id": "urn:ngm:class:end-to-end-testing",
-        "label": "End-to-End Testing"
-      },
-      {
         "id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
       }
@@ -55,18 +51,8 @@
         "label": "Infrastructure"
       }
     ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:w3c-webdriver-standard",
-        "label": "W3C WebDriver Standard"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:manual-testing",
-        "label": "Manual Testing"
-      }
-    ],
+    "implements": [],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:artificial-intelligence",
@@ -83,14 +69,6 @@
         "label": "Testing Process"
       },
       {
-        "id": "urn:ngm:class:chrome-devtools-protocol",
-        "label": "Chrome DevTools Protocol"
-      },
-      {
-        "id": "urn:ngm:class:webdriver",
-        "label": "WebDriver"
-      },
-      {
         "id": "urn:ngm:class:javascript",
         "label": "JavaScript"
       }
@@ -105,7 +83,7 @@
         "label": "Industrial Automation"
       },
       {
-        "id": "urn:ngm:class:accessibility-testing",
+        "id": "urn:ngm:class:accessibility-audit-tool",
         "label": "Accessibility Testing"
       },
       {
@@ -135,10 +113,6 @@
       {
         "id": "urn:ngm:class:headless-browser",
         "label": "Headless Browser"
-      },
-      {
-        "id": "urn:ngm:class:dom-manipulation",
-        "label": "DOM Manipulation"
       }
     ]
   },

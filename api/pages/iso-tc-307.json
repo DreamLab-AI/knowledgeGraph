@@ -18,19 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:blockchain-terminology",
-        "label": "Blockchain Terminology"
-      },
-      {
-        "id": "urn:ngm:class:smart-contract-standards",
-        "label": "Smart Contract Standards"
-      },
-      {
-        "id": "urn:ngm:class:dlt-security-framework",
+        "id": "urn:ngm:class:security-framework",
         "label": "DLT Security Framework"
       },
       {
-        "id": "urn:ngm:class:blockchain-governance-framework",
+        "id": "urn:ngm:class:blockchain-governance",
         "label": "Blockchain Governance Framework"
       }
     ],
@@ -94,20 +86,11 @@
         "label": "Permissioned Blockchain"
       },
       {
-        "id": "urn:ngm:class:permissionless-blockchain",
-        "label": "Permissionless Blockchain"
-      },
-      {
         "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       }
     ],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:international-organization-for-standardization",
-        "label": "International Organization for Standardization"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
@@ -115,7 +98,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:w3c-decentralised-identifier",
+        "id": "urn:ngm:class:decentralised-identifier",
         "label": "W3C Decentralised Identifier"
       },
       {

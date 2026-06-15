@@ -16,32 +16,11 @@
   "qualityScore": 0.73,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:distributed-clocks",
-        "label": "Distributed Clocks"
-      },
-      {
-        "id": "urn:ngm:class:safety-over-ethercat",
-        "label": "Safety over EtherCAT"
-      },
-      {
-        "id": "urn:ngm:class:ethercat-automation-protocol",
-        "label": "EtherCAT Automation Protocol"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:ethernet",
         "label": "Ethernet"
-      },
-      {
-        "id": "urn:ngm:class:ethercat-master",
-        "label": "EtherCAT Master"
-      },
-      {
-        "id": "urn:ngm:class:ethercat-slave-controller",
-        "label": "EtherCAT Slave Controller"
       }
     ],
     "enables": [
@@ -52,14 +31,6 @@
       {
         "id": "urn:ngm:class:real-time-communication",
         "label": "Real-Time Communication"
-      },
-      {
-        "id": "urn:ngm:class:distributed-clock-synchronisation",
-        "label": "Distributed Clock Synchronisation"
-      },
-      {
-        "id": "urn:ngm:class:multi-axis-control",
-        "label": "Multi-Axis Control"
       }
     ],
     "dependsOn": [],
@@ -67,28 +38,12 @@
       {
         "id": "urn:ngm:class:iec-61158",
         "label": "IEC 61158"
-      },
-      {
-        "id": "urn:ngm:class:iec-61784",
-        "label": "IEC 61784"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:profinet",
         "label": "PROFINET"
-      },
-      {
-        "id": "urn:ngm:class:ethernetip",
-        "label": "EtherNet/IP"
-      },
-      {
-        "id": "urn:ngm:class:powerlink",
-        "label": "POWERLINK"
-      },
-      {
-        "id": "urn:ngm:class:sercos-iii",
-        "label": "SERCOS III"
       }
     ],
     "bridgesTo": [
@@ -97,7 +52,7 @@
         "label": "Time-Sensitive Networking"
       },
       {
-        "id": "urn:ngm:class:industrial-internet-of-things",
+        "id": "urn:ngm:class:industrial-io-t",
         "label": "Industrial Internet of Things"
       }
     ],
@@ -121,10 +76,6 @@
       }
     ],
     "standardizedBy": [
-      {
-        "id": "urn:ngm:class:ethercat-technology-group",
-        "label": "EtherCAT Technology Group"
-      },
       {
         "id": "urn:ngm:class:iec",
         "label": "IEC"

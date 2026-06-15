@@ -30,50 +30,121 @@
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:asynchronous-execution", "label": "Asynchronous Execution"},
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
-      {"@id": "urn:ngm:class:stream-processing", "label": "Stream Processing"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:asynchronous-execution",
+        "label": "Asynchronous Execution"
+      },
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:message-queue", "label": "Message Queue"},
-      {"@id": "urn:ngm:class:message-broker", "label": "Message Broker"},
-      {"@id": "urn:ngm:class:publish-subscribe-pattern", "label": "Publish-Subscribe Pattern"},
-      {"@id": "urn:ngm:class:protocol-buffers", "label": "Protocol Buffers"}
+      {
+        "@id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "@id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      },
+      {
+        "@id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-buffers",
+        "label": "Protocol Buffers"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:parallel-processing", "label": "Parallel Processing"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:backpressure", "label": "Backpressure"}
-    ],
-    "requires": [
-      {"@id": "urn:ngm:class:message-durability", "label": "Message Durability"},
-      {"@id": "urn:ngm:class:delivery-guarantees", "label": "Delivery Guarantees"}
+      {
+        "@id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:backpressure",
+        "label": "Backpressure"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:synchronous-communication", "label": "Synchronous Communication"},
-      {"@id": "urn:ngm:class:remote-procedure-call", "label": "Remote Procedure Call"}
+      {
+        "@id": "urn:ngm:class:synchronous-communication",
+        "label": "Synchronous Communication"
+      },
+      {
+        "@id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"},
-      {"@id": "urn:ngm:class:cloud-native-architecture", "label": "Cloud Native Architecture"},
-      {"@id": "urn:ngm:class:eventual-consistency", "label": "Eventual Consistency"},
-      {"@id": "urn:ngm:class:reactive-programming", "label": "Reactive Programming"}
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-native-architecture",
+        "label": "Cloud Native Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      },
+      {
+        "@id": "urn:ngm:class:reactive-programming",
+        "label": "Reactive Programming"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:amqp", "label": "AMQP"},
-      {"@id": "urn:ngm:class:mqtt", "label": "MQTT"}
+      {
+        "@id": "urn:ngm:class:amqp",
+        "label": "AMQP"
+      },
+      {
+        "@id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:non-blocking-communication", "label": "Non-Blocking Communication"},
-    {"@id": "urn:ngm:class:message-passing", "label": "Message Passing"}
+    {
+      "@id": "urn:ngm:class:non-blocking-communication",
+      "label": "Non-Blocking Communication"
+    },
+    {
+      "@id": "urn:ngm:class:message-passing",
+      "label": "Message Passing"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

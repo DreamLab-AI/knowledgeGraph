@@ -523,11 +523,7 @@ alias:: CrossChainBridge
         "label": "Cryptographic Proof System"
       },
       {
-        "@id": "urn:ngm:class:message-verification-module",
-        "label": "Message Verification Module"
-      },
-      {
-        "@id": "urn:ngm:class:settlement-contract",
+        "@id": "urn:ngm:class:settlement",
         "label": "Settlement Contract"
       },
       {
@@ -557,7 +553,7 @@ alias:: CrossChainBridge
         "label": "Destination Chain Execution"
       },
       {
-        "@id": "urn:ngm:class:source-chain-finality",
+        "@id": "urn:ngm:class:finality",
         "label": "Source Chain Finality"
       },
       {
@@ -574,10 +570,6 @@ alias:: CrossChainBridge
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:chain-abstraction",
-        "label": "Chain Abstraction"
-      },
       {
         "@id": "urn:ngm:class:cross-chain-asset-transfer",
         "label": "Cross Chain Asset Transfer"
@@ -613,12 +605,8 @@ alias:: CrossChainBridge
         "label": "Hash Time-Locked Contract"
       },
       {
-        "@id": "urn:ngm:class:intent-based-bridge",
+        "@id": "urn:ngm:class:bridge",
         "label": "Intent-Based Bridge"
-      },
-      {
-        "@id": "urn:ngm:class:liquidity-pool-bridge",
-        "label": "Liquidity Pool Bridge"
       },
       {
         "@id": "urn:ngm:class:lock-and-mint-bridge",
@@ -629,7 +617,7 @@ alias:: CrossChainBridge
         "label": "Optimistic Verification"
       },
       {
-        "@id": "urn:ngm:class:zero-knowledge-light-client",
+        "@id": "urn:ngm:class:light-client",
         "label": "Zero-Knowledge Light Client"
       },
       {
@@ -639,20 +627,12 @@ alias:: CrossChainBridge
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:decentralised-verifier-network",
-        "label": "Decentralised Verifier Network"
-      },
-      {
         "@id": "urn:ngm:class:fraud-proof",
         "label": "Fraud Proof"
       },
       {
         "@id": "urn:ngm:class:multi-signature",
         "label": "Multi-Signature"
-      },
-      {
-        "@id": "urn:ngm:class:solver-network",
-        "label": "Solver Network"
       },
       {
         "@id": "urn:ngm:class:threshold-signature-scheme",
@@ -689,40 +669,12 @@ alias:: CrossChainBridge
         "label": "Hyperlane"
       },
       {
-        "@id": "urn:ngm:class:jumper-exchange",
-        "label": "Jumper Exchange"
-      },
-      {
         "@id": "urn:ngm:class:layer-zero",
         "label": "LayerZero"
       },
       {
-        "@id": "urn:ngm:class:li-fi",
-        "label": "LI.FI"
-      },
-      {
-        "@id": "urn:ngm:class:nexus-mutual",
-        "label": "Nexus Mutual"
-      },
-      {
-        "@id": "urn:ngm:class:polygon-zk-evm-bridge",
-        "label": "Polygon zkEVM Bridge"
-      },
-      {
-        "@id": "urn:ngm:class:polymer-hub",
-        "label": "Polymer Hub"
-      },
-      {
         "@id": "urn:ngm:class:squid-router",
         "label": "Squid Router"
-      },
-      {
-        "@id": "urn:ngm:class:stargate",
-        "label": "Stargate"
-      },
-      {
-        "@id": "urn:ngm:class:synapse-protocol",
-        "label": "Synapse Protocol"
       },
       {
         "@id": "urn:ngm:class:wormhole",
@@ -731,11 +683,11 @@ alias:: CrossChainBridge
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:bridged-stablecoin",
+        "@id": "urn:ngm:class:stablecoin",
         "label": "Bridged Stablecoin"
       },
       {
-        "@id": "urn:ngm:class:chain-abstraction-wallet",
+        "@id": "urn:ngm:class:wallet",
         "label": "Chain Abstraction Wallet"
       },
       {
@@ -751,23 +703,11 @@ alias:: CrossChainBridge
         "label": "Cross-Chain NFT"
       },
       {
-        "@id": "urn:ngm:class:multi-chain-lending",
-        "label": "Multi-Chain Lending"
-      },
-      {
         "@id": "urn:ngm:class:tokenised-real-world-asset-transfer",
         "label": "Tokenised Real World Asset Transfer"
       }
     ],
     "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:chain-agnostic-standards-alliance",
-        "label": "Chain Agnostic Standards Alliance"
-      },
-      {
-        "@id": "urn:ngm:class:erc-7281",
-        "label": "ERC-7281"
-      },
       {
         "@id": "urn:ngm:class:erc-7683",
         "label": "ERC-7683"

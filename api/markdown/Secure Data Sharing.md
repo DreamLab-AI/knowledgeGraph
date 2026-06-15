@@ -60,12 +60,6 @@ public:: true
     }
   ],
   "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:confidential-collaboration",
-        "label": "Confidential Collaboration"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:data-security",

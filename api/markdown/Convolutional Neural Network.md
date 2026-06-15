@@ -80,57 +80,133 @@ alias:: Convolutional Neural Networks, ConvolutionalNeuralNetwork
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:convolutional-layer", "label": "Convolutional Layer"},
-      {"@id": "urn:ngm:class:pooling-layer", "label": "Pooling Layer"},
-      {"@id": "urn:ngm:class:activation-function", "label": "Activation Function"},
-      {"@id": "urn:ngm:class:fully-connected-layer", "label": "Fully Connected Layer"}
+      {
+        "@id": "urn:ngm:class:convolutional-layer",
+        "label": "Convolutional Layer"
+      },
+      {
+        "@id": "urn:ngm:class:pooling-layer",
+        "label": "Pooling Layer"
+      },
+      {
+        "@id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"}
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
-      {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"},
-      {"@id": "urn:ngm:class:batch-normalisation", "label": "Batch Normalisation"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:image-classification", "label": "Image Classification"},
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
-      {"@id": "urn:ngm:class:semantic-segmentation", "label": "Semantic Segmentation"},
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"}
+      {
+        "@id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:medical-image-analysis", "label": "Medical Image Analysis"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:medical-image-analysis",
+        "label": "Medical Image Analysis"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+      {
+        "@id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:feedforward-neural-network", "label": "Feedforward Neural Network"}
+      {
+        "@id": "urn:ngm:class:feedforward-neural-network",
+        "label": "Feedforward Neural Network"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:weight-sharing", "label": "Weight Sharing"},
-      {"@id": "urn:ngm:class:gradient-descent-optimisation", "label": "Gradient Descent Optimisation"}
+      {
+        "@id": "urn:ngm:class:weight-sharing",
+        "label": "Weight Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent Optimisation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:autonomous-vehicle-perception", "label": "Autonomous Vehicle Perception"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle-perception",
+        "label": "Autonomous Vehicle Perception"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:resnet", "label": "ResNet"},
-      {"@id": "urn:ngm:class:adversarial-robustness", "label": "Adversarial Robustness"}
+      {
+        "@id": "urn:ngm:class:adversarial-robustness",
+        "label": "Adversarial Robustness"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:convnet", "label": "ConvNet"},
-    {"@id": "urn:ngm:class:deep-convolutional-network", "label": "Deep Convolutional Network"}
+    {
+      "@id": "urn:ngm:class:convnet",
+      "label": "ConvNet"
+    },
+    {
+      "@id": "urn:ngm:class:deep-convolutional-network",
+      "label": "Deep Convolutional Network"
+    }
   ],
   "quality": 0.72,
   "provenance": {

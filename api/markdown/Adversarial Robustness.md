@@ -64,62 +64,139 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:adversarial-training", "label": "Adversarial Training"},
-      {"@id": "urn:ngm:class:randomised-smoothing", "label": "Randomised Smoothing"},
-      {"@id": "urn:ngm:class:certified-defense", "label": "Certified Defense"}
+      {
+        "@id": "urn:ngm:class:adversarial-training",
+        "label": "Adversarial Training"
+      },
+      {
+        "@id": "urn:ngm:class:certified-defense",
+        "label": "Certified Defense"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"},
-      {"@id": "urn:ngm:class:model-robustness", "label": "Model Robustness"}
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "@id": "urn:ngm:class:model-robustness",
+        "label": "Model Robustness"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:security", "label": "Security"},
-      {"@id": "urn:ngm:class:threat-model", "label": "Threat Model"}
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "@id": "urn:ngm:class:threat-model",
+        "label": "Threat Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:safe-deployment", "label": "Safe Deployment"},
-      {"@id": "urn:ngm:class:reliable-inference", "label": "Reliable Inference"}
+      {
+        "@id": "urn:ngm:class:safe-deployment",
+        "label": "Safe Deployment"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:perturbation-defense", "label": "Perturbation Defense"},
-      {"@id": "urn:ngm:class:ensemble-method", "label": "Ensemble Method"}
+      {
+        "@id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Method"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:gradient-based-attack", "label": "Gradient-Based Attack"},
-      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"}
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"},
-      {"@id": "urn:ngm:class:iso-iec-tr-24029-1", "label": "ISO/IEC TR 24029-1:2021"}
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-tr-24029-1-2021",
+        "label": "ISO/IEC TR 24029-1:2021"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:attack-vector", "label": "Attack Vector"},
-      {"@id": "urn:ngm:class:vulnerability", "label": "Vulnerability"},
-      {"@id": "urn:ngm:class:adversarial-attack", "label": "Adversarial Attack"}
+      {
+        "@id": "urn:ngm:class:attack-vector",
+        "label": "Attack Vector"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      },
+      {
+        "@id": "urn:ngm:class:adversarial-attack",
+        "label": "Adversarial Attack"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:autonomous-systems", "label": "Autonomous Systems"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:resilience", "label": "Resilience"},
-      {"@id": "urn:ngm:class:risk", "label": "Risk"},
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
-      {"@id": "urn:ngm:class:fairness", "label": "Fairness"}
+      {
+        "@id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "@id": "urn:ngm:class:risk",
+        "label": "Risk"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:robust-machine-learning", "label": "Robust Machine Learning"},
-    {"@id": "urn:ngm:class:adversarial-machine-learning-defense", "label": "Adversarial Machine Learning Defense"}
+    {
+      "@id": "urn:ngm:class:robust-machine-learning",
+      "label": "Robust Machine Learning"
+    },
+    {
+      "@id": "urn:ngm:class:adversarial-machine-learning-defense",
+      "label": "Adversarial Machine Learning Defense"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

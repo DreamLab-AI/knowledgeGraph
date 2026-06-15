@@ -23,56 +23,117 @@ public:: true
   "definition": "Cross-validation is a statistical resampling technique for evaluating machine learning model performance by partitioning available data into complementary training and validation subsets, training the model on each partition in turn, and averaging the resulting error estimates. It provides a less optimistic and more generalisable estimate of out-of-sample predictive performance than a single train–test split.",
   "domain": "machine-learning",
   "maturity": "mature",
-  "subClassOf": {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:model-evaluation",
+    "label": "Model Evaluation"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:k-fold-cross-validation", "label": "K-Fold Cross-Validation"},
-      {"@id": "urn:ngm:class:stratified-sampling", "label": "Stratified Sampling"},
-      {"@id": "urn:ngm:class:leave-one-out-cross-validation", "label": "Leave-One-Out Cross-Validation"}
+      {
+        "@id": "urn:ngm:class:sampling",
+        "label": "Stratified Sampling"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:model-selection", "label": "Model Selection"},
-      {"@id": "urn:ngm:class:applied-machine-learning", "label": "Applied Machine Learning"}
+      {
+        "@id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      },
+      {
+        "@id": "urn:ngm:class:applied-machine-learning",
+        "label": "Applied Machine Learning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:labelled-dataset", "label": "Labelled Dataset"},
-      {"@id": "urn:ngm:class:resampling", "label": "Resampling"}
+      {
+        "@id": "urn:ngm:class:labelled-dataset",
+        "label": "Labelled Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:resampling",
+        "label": "Resampling"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:generalisation-error-estimation", "label": "Generalisation Error Estimation"},
-      {"@id": "urn:ngm:class:hyperparameter-tuning", "label": "Hyperparameter Tuning"},
-      {"@id": "urn:ngm:class:bias-variance-tradeoff", "label": "Bias-Variance Tradeoff"}
+      {
+        "@id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:bias-variance-tradeoff",
+        "label": "Bias-Variance Tradeoff"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:train-test-split", "label": "Train-Test Split"},
-      {"@id": "urn:ngm:class:statistical-estimation", "label": "Statistical Estimation"}
+      {
+        "@id": "urn:ngm:class:statistical-estimation",
+        "label": "Statistical Estimation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:performance-metric", "label": "Performance Metric"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"}
+      {
+        "@id": "urn:ngm:class:performance-metrics",
+        "label": "Performance Metric"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:applied-machine-learning", "label": "Applied Machine Learning"},
-      {"@id": "urn:ngm:class:model-comparison", "label": "Model Comparison"},
-      {"@id": "urn:ngm:class:overfitting-prevention", "label": "Overfitting Prevention"}
+      {
+        "@id": "urn:ngm:class:applied-machine-learning",
+        "label": "Applied Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-comparison",
+        "label": "Model Comparison"
+      },
+      {
+        "@id": "urn:ngm:class:overfitting-prevention",
+        "label": "Overfitting Prevention"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:holdout-validation", "label": "Holdout Validation"},
-      {"@id": "urn:ngm:class:annotated-training-data", "label": "Annotated Training Data"}
+      {
+        "@id": "urn:ngm:class:annotated-training-data",
+        "label": "Annotated Training Data"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:benign-overfitting", "label": "Benign Overfitting"},
-      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"},
-      {"@id": "urn:ngm:class:ensemble-learning", "label": "Ensemble Learning"}
+      {
+        "@id": "urn:ngm:class:benign-overfitting",
+        "label": "Benign Overfitting"
+      },
+      {
+        "@id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "@id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Learning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:statistical-inference", "label": "Statistical Inference"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:statistical-inference",
+        "label": "Statistical Inference"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:resampling-validation", "label": "Resampling Validation"},
-    {"@id": "urn:ngm:class:k-fold-validation", "label": "K-Fold Validation"}
+    {
+      "@id": "urn:ngm:class:resampling-validation",
+      "label": "Resampling Validation"
+    },
+    {
+      "@id": "urn:ngm:class:k-fold-validation",
+      "label": "K-Fold Validation"
+    }
   ],
   "quality": 0.72,
   "provenance": {

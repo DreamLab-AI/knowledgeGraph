@@ -43,16 +43,7 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:adversarial-coordination",
-        "label": "Adversarial Coordination"
-      },
-      {
-        "id": "urn:ngm:class:deadlock",
-        "label": "Deadlock"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:byzantine-fault-tolerance",

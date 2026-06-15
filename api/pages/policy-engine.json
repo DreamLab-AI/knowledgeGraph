@@ -29,10 +29,6 @@
       {
         "id": "urn:ngm:class:identity-management",
         "label": "Identity Management"
-      },
-      {
-        "id": "urn:ngm:class:policy-specification-language",
-        "label": "Policy Specification Language"
       }
     ],
     "enables": [
@@ -68,16 +64,7 @@
         "label": "Role-Based Access Control"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:manual-moderation",
-        "label": "Manual Moderation"
-      },
-      {
-        "id": "urn:ngm:class:hardcoded-access-control",
-        "label": "Hardcoded Access Control"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:smart-contract",

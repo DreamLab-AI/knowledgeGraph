@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:identity-document-verification",
+        "id": "urn:ngm:class:identity-verification",
         "label": "Identity Document Verification"
       },
       {
@@ -39,10 +39,6 @@
       {
         "id": "urn:ngm:class:access-control",
         "label": "Access Control"
-      },
-      {
-        "id": "urn:ngm:class:harm-reduction",
-        "label": "Harm Reduction"
       }
     ],
     "dependsOn": [],
@@ -51,10 +47,6 @@
       {
         "id": "urn:ngm:class:anonymous-access",
         "label": "Anonymous Access"
-      },
-      {
-        "id": "urn:ngm:class:vpn-circumvention",
-        "label": "VPN Circumvention"
       }
     ],
     "bridgesTo": [
@@ -71,10 +63,6 @@
       {
         "id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proof"
-      },
-      {
-        "id": "urn:ngm:class:biometric-age-estimation",
-        "label": "Biometric Age Estimation"
       },
       {
         "id": "urn:ngm:class:verifiable-credentials",
@@ -97,11 +85,11 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-29115",
+        "id": "urn:ngm:class:iso",
         "label": "ISO 29115"
       },
       {
-        "id": "urn:ngm:class:w3c-verifiable-credentials",
+        "id": "urn:ngm:class:w3-c-verifiable-credentials",
         "label": "W3C Verifiable Credentials"
       }
     ],
@@ -122,10 +110,6 @@
       {
         "id": "urn:ngm:class:data-protection",
         "label": "Data Protection"
-      },
-      {
-        "id": "urn:ngm:class:child-online-safety",
-        "label": "Child Online Safety"
       },
       {
         "id": "urn:ngm:class:identity-proofing",

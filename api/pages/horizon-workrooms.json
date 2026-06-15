@@ -27,12 +27,7 @@
         "label": "AI Avatars"
       }
     ],
-    "enables": [
-      {
-        "id": "urn:ngm:class:virtual-whiteboarding",
-        "label": "VirtualWhiteboarding"
-      }
-    ],
+    "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],

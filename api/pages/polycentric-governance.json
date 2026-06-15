@@ -18,10 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:nested-institutions",
-        "label": "Nested Institutions"
-      },
-      {
         "id": "urn:ngm:class:meta-governance",
         "label": "Meta-Governance"
       }
@@ -30,10 +26,6 @@
       {
         "id": "urn:ngm:class:conflict-resolution",
         "label": "Conflict Resolution"
-      },
-      {
-        "id": "urn:ngm:class:subsidiarity-principle",
-        "label": "Subsidiarity Principle"
       }
     ],
     "enables": [
@@ -46,10 +38,6 @@
         "label": "Participatory Policy Making"
       },
       {
-        "id": "urn:ngm:class:regulatory-experimentation",
-        "label": "Regulatory Experimentation"
-      },
-      {
         "id": "urn:ngm:class:multi-stakeholder-governance",
         "label": "Multi-Stakeholder Governance"
       }
@@ -60,14 +48,6 @@
       {
         "id": "urn:ngm:class:governance-architecture",
         "label": "Governance Architecture"
-      },
-      {
-        "id": "urn:ngm:class:hierarchical-governance",
-        "label": "Hierarchical Governance"
-      },
-      {
-        "id": "urn:ngm:class:monocentric-governance",
-        "label": "Monocentric Governance"
       }
     ],
     "bridgesTo": [
@@ -80,7 +60,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:federated-systems",
+        "id": "urn:ngm:class:federated-system",
         "label": "Federated Systems"
       }
     ],
@@ -123,7 +103,7 @@
         "label": "Community Governance"
       },
       {
-        "id": "urn:ngm:class:common-pool-resource-management",
+        "id": "urn:ngm:class:common-pool-resources",
         "label": "Common-Pool Resource Management"
       },
       {

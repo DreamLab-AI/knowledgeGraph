@@ -34,12 +34,8 @@
         "label": "File System"
       },
       {
-        "id": "urn:ngm:class:device-driver",
+        "id": "urn:ngm:class:device-drivers",
         "label": "Device Driver"
-      },
-      {
-        "id": "urn:ngm:class:network-stack",
-        "label": "Network Stack"
       },
       {
         "id": "urn:ngm:class:system-call-interface",
@@ -97,10 +93,6 @@
       {
         "id": "urn:ngm:class:real-time-operating-system",
         "label": "Real-Time Operating System"
-      },
-      {
-        "id": "urn:ngm:class:bare-metal",
-        "label": "Bare Metal"
       }
     ],
     "bridgesTo": [
@@ -131,10 +123,6 @@
       {
         "id": "urn:ngm:class:inter-process-communication",
         "label": "Inter-Process Communication"
-      },
-      {
-        "id": "urn:ngm:class:security-isolation",
-        "label": "Security Isolation"
       }
     ],
     "standardizedBy": [],

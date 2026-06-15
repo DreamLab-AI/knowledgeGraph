@@ -96,11 +96,11 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:spatial-computing-platform",
+        "@id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing Platform"
       },
       {
-        "@id": "urn:ngm:class:extended-reality-system",
+        "@id": "urn:ngm:class:extended-reality",
         "label": "Extended Reality System"
       }
     ],
@@ -166,19 +166,13 @@ public:: true
         "label": "Low-Latency Networking"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:visual-processing-system",
-        "label": "Visual Processing System"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
       },
       {
-        "@id": "urn:ngm:class:machine-learning-inference",
+        "@id": "urn:ngm:class:inference",
         "label": "Machine Learning Inference"
       }
     ],
@@ -186,10 +180,6 @@ public:: true
       {
         "@id": "urn:ngm:class:haptic-feedback-system",
         "label": "Haptic Feedback System"
-      },
-      {
-        "@id": "urn:ngm:class:spatial-audio-standard",
-        "label": "Spatial Audio Standard"
       }
     ]
   }

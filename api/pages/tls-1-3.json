@@ -23,7 +23,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -47,17 +47,13 @@
       {
         "id": "urn:ngm:class:forward-secrecy",
         "label": "Forward Secrecy"
-      },
-      {
-        "id": "urn:ngm:class:zero-round-trip-resumption",
-        "label": "Zero Round Trip Resumption"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:tls-1-2",
+        "id": "urn:ngm:class:tls",
         "label": "TLS 1.2"
       },
       {
@@ -97,7 +93,7 @@
         "label": "Digital Certificate"
       },
       {
-        "id": "urn:ngm:class:x-509",
+        "id": "urn:ngm:class:x-509-certificate",
         "label": "X.509"
       }
     ],
@@ -123,7 +119,7 @@
         "label": "Post-Quantum Cryptography"
       },
       {
-        "id": "urn:ngm:class:http-3",
+        "id": "urn:ngm:class:http-protocol",
         "label": "HTTP/3"
       },
       {

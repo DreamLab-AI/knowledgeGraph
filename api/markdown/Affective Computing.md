@@ -23,53 +23,137 @@ public:: true
   "definition": "Affective computing is a branch of artificial intelligence and human-computer interaction concerned with systems that can recognise, interpret, process, and simulate human emotions and affective states. It draws on psychology, cognitive science, and machine learning to endow machines with emotional intelligence, enabling them to adapt their behaviour in response to detected user affect. The field encompasses technologies for emotion detection from facial expressions, speech, physiological signals, and body language, as well as methods for generating emotionally congruent responses. Foundational work by Rosalind Picard at MIT established that recognising and appropriately responding to affect is essential for natural, effective human-machine communication.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:sentiment-analysis", "label": "Sentiment Analysis"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
-      {"@id": "urn:ngm:class:physiological-signal-processing", "label": "Physiological Signal Processing"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"}
+      {
+        "@id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:physiological-signal-processing",
+        "label": "Physiological Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:emotion-aware-interaction", "label": "Emotion Aware Interaction"},
-      {"@id": "urn:ngm:class:emotional-analytics-engine", "label": "Emotional Analytics Engine"},
-      {"@id": "urn:ngm:class:cognitive-feedback-interface", "label": "Cognitive Feedback Interface"},
-      {"@id": "urn:ngm:class:adaptive-learning-system", "label": "Adaptive Learning System"},
-      {"@id": "urn:ngm:class:mental-health-monitoring", "label": "Mental Health Monitoring"}
+      {
+        "@id": "urn:ngm:class:emotion-aware-interaction",
+        "label": "Emotion Aware Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:emotional-analytics-engine",
+        "label": "Emotional Analytics Engine"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-feedback-interface",
+        "label": "Cognitive Feedback Interface"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-learning",
+        "label": "Adaptive Learning System"
+      },
+      {
+        "@id": "urn:ngm:class:mental-health-monitoring",
+        "label": "Mental Health Monitoring"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:multimodal-fusion", "label": "Multimodal Fusion"},
-      {"@id": "urn:ngm:class:emotion-recognition", "label": "Emotion Recognition"},
-      {"@id": "urn:ngm:class:annotated-dataset", "label": "Annotated Dataset"}
+      {
+        "@id": "urn:ngm:class:emotion-recognition",
+        "label": "Emotion Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:annotated-training-data",
+        "label": "Annotated Dataset"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:emotional-intelligence", "label": "Emotional Intelligence"},
-      {"@id": "urn:ngm:class:cognitive-science", "label": "Cognitive Science"},
-      {"@id": "urn:ngm:class:user-experience-design", "label": "User Experience Design"},
-      {"@id": "urn:ngm:class:wearable-computing", "label": "Wearable Computing"},
-      {"@id": "urn:ngm:class:biometric-sensing", "label": "Biometric Sensing"}
+      {
+        "@id": "urn:ngm:class:emotional-intelligence",
+        "label": "Emotional Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      },
+      {
+        "@id": "urn:ngm:class:wearable-computing",
+        "label": "Wearable Computing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rational-agent", "label": "Rational Agent"},
-      {"@id": "urn:ngm:class:symbolic-ai", "label": "Symbolic AI"}
+      {
+        "@id": "urn:ngm:class:rational-agent",
+        "label": "Rational Agent"
+      },
+      {
+        "@id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:digital-health", "label": "Digital Health"},
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"}
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:digital-health",
+        "label": "Digital Health"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:data-labelling", "label": "Data Labelling"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:data-labelling",
+        "label": "Data Labelling"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:emotion-ai", "label": "Emotion AI"},
-    {"@id": "urn:ngm:class:emotional-machine-intelligence", "label": "Emotional Machine Intelligence"}
+    {
+      "@id": "urn:ngm:class:emotion-ai",
+      "label": "Emotion AI"
+    },
+    {
+      "@id": "urn:ngm:class:emotional-machine-intelligence",
+      "label": "Emotional Machine Intelligence"
+    }
   ],
   "quality": 0.72,
   "provenance": {

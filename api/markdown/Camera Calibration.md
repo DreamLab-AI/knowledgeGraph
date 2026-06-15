@@ -39,49 +39,115 @@ alias:: CameraCalibration
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"},
-      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"},
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
-      {"@id": "urn:ngm:class:visual-odometry", "label": "Visual Odometry"}
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:camera", "label": "Camera"},
-      {"@id": "urn:ngm:class:image-processing", "label": "Image Processing"},
-      {"@id": "urn:ngm:class:optimisation", "label": "Optimisation"}
+      {
+        "@id": "urn:ngm:class:camera",
+        "label": "Camera"
+      },
+      {
+        "@id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
+        "@id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:homography", "label": "Homography"},
-      {"@id": "urn:ngm:class:non-linear-least-squares", "label": "Non-Linear Least Squares"},
-      {"@id": "urn:ngm:class:chessboard-pattern", "label": "Chessboard Pattern"}
+      {
+        "@id": "urn:ngm:class:homography",
+        "label": "Homography"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:feature-detection", "label": "Feature Detection"},
-      {"@id": "urn:ngm:class:corner-detection", "label": "Corner Detection"}
+      {
+        "@id": "urn:ngm:class:feature-detection",
+        "label": "Feature Detection"
+      },
+      {
+        "@id": "urn:ngm:class:corner-detection",
+        "label": "Corner Detection"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:stereo-vision", "label": "Stereo Vision"},
-      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure-from-Motion"}
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:stereo-vision",
+        "label": "Stereo Vision"
+      },
+      {
+        "@id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure-from-Motion"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:self-calibration", "label": "Self-Calibration"},
-      {"@id": "urn:ngm:class:radiometric-calibration", "label": "Radiometric Calibration"}
+      {
+        "@id": "urn:ngm:class:calibration",
+        "label": "Self-Calibration"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotics-perception", "label": "Robotics Perception"},
-      {"@id": "urn:ngm:class:autonomous-vehicles", "label": "Autonomous Vehicles"},
-      {"@id": "urn:ngm:class:lidar-camera-fusion", "label": "LiDAR-Camera Fusion"}
+      {
+        "@id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "LiDAR-Camera Fusion"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:projective-geometry", "label": "Projective Geometry"},
-      {"@id": "urn:ngm:class:epipolar-geometry", "label": "Epipolar Geometry"}
+      {
+        "@id": "urn:ngm:class:projective-geometry",
+        "label": "Projective Geometry"
+      },
+      {
+        "@id": "urn:ngm:class:epipolar-geometry",
+        "label": "Epipolar Geometry"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:camera-parameter-estimation", "label": "Camera Parameter Estimation"}
+    {
+      "@id": "urn:ngm:class:camera-parameter-estimation",
+      "label": "Camera Parameter Estimation"
+    }
   ],
   "quality": 0.74,
   "provenance": {

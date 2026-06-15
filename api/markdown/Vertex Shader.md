@@ -131,10 +131,6 @@ public:: true
       {
         "@id": "urn:ngm:class:hlsl",
         "label": "HLSL"
-      },
-      {
-        "@id": "urn:ngm:class:matrix-transformation",
-        "label": "Matrix Transformation"
       }
     ],
     "requires": [
@@ -148,10 +144,6 @@ public:: true
       }
     ],
     "dependsOn": [
-      {
-        "@id": "urn:ngm:class:model-view-projection-matrix",
-        "label": "Model-View-Projection Matrix"
-      },
       {
         "@id": "urn:ngm:class:vertex-attribute",
         "label": "Vertex Attribute"

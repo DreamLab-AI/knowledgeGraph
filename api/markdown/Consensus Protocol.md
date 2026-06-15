@@ -105,7 +105,7 @@ alias:: Consensus-Protocol, ConsensusProtocol
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:replicated-state-machine",
+        "@id": "urn:ngm:class:state-machine-replication",
         "label": "Replicated State Machine"
       },
       {

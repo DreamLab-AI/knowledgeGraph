@@ -376,7 +376,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:human-feedback-data",
+        "@id": "urn:ngm:class:human-feedback",
         "label": "Human Feedback Data"
       },
       {
@@ -390,10 +390,6 @@ public:: true
       {
         "@id": "urn:ngm:class:rlhf",
         "label": "RLHF"
-      },
-      {
-        "@id": "urn:ngm:class:safety-testing",
-        "label": "Safety Testing"
       },
       {
         "@id": "urn:ngm:class:red-teaming",

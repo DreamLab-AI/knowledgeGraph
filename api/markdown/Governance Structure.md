@@ -374,24 +374,12 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:cobit-framework",
-        "label": "COBIT Framework"
-      },
-      {
         "@id": "urn:ngm:class:iso-42001",
         "label": "ISO 42001"
       },
       {
-        "@id": "urn:ngm:class:itil-framework",
-        "label": "ITIL Framework"
-      },
-      {
         "@id": "urn:ngm:class:nist-ai-rmf",
         "label": "NIST AI RMF"
-      },
-      {
-        "@id": "urn:ngm:class:oecd-corporate-governance-principles",
-        "label": "OECD Corporate Governance Principles"
       },
       {
         "@id": "urn:ngm:class:uk-corporate-governance-code",
@@ -465,10 +453,6 @@ public:: true
       }
     ],
     "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:companies-act",
-        "label": "Companies Act"
-      },
       {
         "@id": "urn:ngm:class:oecd-guidelines",
         "label": "OECD Guidelines"

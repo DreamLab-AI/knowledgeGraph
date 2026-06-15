@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:encoder-network",
+        "id": "urn:ngm:class:encoder",
         "label": "Encoder Network"
       },
       {
@@ -26,7 +26,7 @@
         "label": "Decoder Network"
       },
       {
-        "id": "urn:ngm:class:latent-space",
+        "id": "urn:ngm:class:neural-network-latent-space",
         "label": "Latent Space"
       }
     ],
@@ -92,11 +92,11 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       },
       {
-        "id": "urn:ngm:class:multimodal-learning",
+        "id": "urn:ngm:class:multimodal-ai-architecture-learning",
         "label": "Multimodal Learning"
       }
     ],
@@ -117,20 +117,7 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:vq-vae",
-        "label": "VQ-VAE"
-      },
-      {
-        "id": "urn:ngm:class:beta-vae",
-        "label": "Beta-VAE"
-      },
-      {
-        "id": "urn:ngm:class:hierarchical-vae",
-        "label": "Hierarchical VAE"
-      }
-    ]
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

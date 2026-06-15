@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:credential-vault",
+        "id": "urn:ngm:class:credential-store",
         "label": "Credential Vault"
       },
       {
@@ -48,14 +48,6 @@
       {
         "id": "urn:ngm:class:compliance-audit-trail",
         "label": "Compliance Audit Trail"
-      },
-      {
-        "id": "urn:ngm:class:least-privilege-principle",
-        "label": "Least Privilege Principle"
-      },
-      {
-        "id": "urn:ngm:class:forensic-audit",
-        "label": "Forensic Audit"
       }
     ],
     "dependsOn": [
@@ -68,7 +60,7 @@
         "label": "Identity Management"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -77,20 +69,12 @@
       {
         "id": "urn:ngm:class:discretionary-access-control",
         "label": "Discretionary Access Control"
-      },
-      {
-        "id": "urn:ngm:class:shared-account",
-        "label": "Shared Account"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:cloud-identity-and-access-management",
+        "id": "urn:ngm:class:identity-and-access-management",
         "label": "Cloud Identity and Access Management"
-      },
-      {
-        "id": "urn:ngm:class:devops-secrets-management",
-        "label": "DevOps Secrets Management"
       }
     ],
     "uses": [

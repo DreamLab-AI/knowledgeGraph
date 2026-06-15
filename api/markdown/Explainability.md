@@ -98,10 +98,6 @@ public:: true
         "label": "Accountability (AI-0068)"
       },
       {
-        "@id": "urn:ngm:class:contestability-ai-0043",
-        "label": "Contestability (AI-0043)"
-      },
-      {
         "@id": "urn:ngm:class:ai-auditing",
         "label": "AI Auditing"
       },
@@ -122,16 +118,12 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:shap-shapley-additive-explanations",
+        "@id": "urn:ngm:class:shap",
         "label": "SHAP (Shapley Additive Explanations)"
       },
       {
-        "@id": "urn:ngm:class:lime-local-interpretable-model-agnostic-explanations",
+        "@id": "urn:ngm:class:lime",
         "label": "LIME (Local Interpretable Model-Agnostic Explanations)"
-      },
-      {
-        "@id": "urn:ngm:class:gradient-based-saliency",
-        "label": "Gradient-Based Saliency"
       }
     ],
     "uses": [
@@ -150,7 +142,7 @@ public:: true
         "label": "Fairness Assessment"
       },
       {
-        "@id": "urn:ngm:class:bias-detection",
+        "@id": "urn:ngm:class:bias-detection-methods",
         "label": "Bias Detection"
       },
       {
@@ -160,7 +152,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {

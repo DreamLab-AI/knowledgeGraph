@@ -71,7 +71,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:classical-motion-planning",
+        "id": "urn:ngm:class:motion-planning",
         "label": "Classical Motion Planning"
       },
       {

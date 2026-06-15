@@ -16,27 +16,14 @@
   "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:graph-node",
-        "label": "Graph Node"
-      },
-      {
-        "id": "urn:ngm:class:graph-edge",
-        "label": "Graph Edge"
-      },
-      {
-        "id": "urn:ngm:class:community-structure",
-        "label": "Community Structure"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:digital-identity",
         "label": "Digital Identity"
       },
       {
-        "id": "urn:ngm:class:graph-traversal-algorithm",
+        "id": "urn:ngm:class:graph-algorithms",
         "label": "Graph Traversal Algorithm"
       }
     ],
@@ -44,10 +31,6 @@
       {
         "id": "urn:ngm:class:community-detection",
         "label": "Community Detection"
-      },
-      {
-        "id": "urn:ngm:class:influence-analysis",
-        "label": "Influence Analysis"
       },
       {
         "id": "urn:ngm:class:recommendation-system",
@@ -73,10 +56,6 @@
       {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
-      },
-      {
-        "id": "urn:ngm:class:citation-network",
-        "label": "Citation Network"
       }
     ],
     "bridgesTo": [
@@ -111,10 +90,6 @@
       {
         "id": "urn:ngm:class:sybil-resistance",
         "label": "Sybil Resistance"
-      },
-      {
-        "id": "urn:ngm:class:social-media-analytics",
-        "label": "Social Media Analytics"
       }
     ],
     "standardizedBy": [],

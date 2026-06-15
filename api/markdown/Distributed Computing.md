@@ -482,12 +482,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:coordination-service",
+        "@id": "urn:ngm:class:coordination-layer",
         "label": "Coordination Service"
-      },
-      {
-        "@id": "urn:ngm:class:distributed-lock",
-        "label": "Distributed Lock"
       },
       {
         "@id": "urn:ngm:class:leader-election",
@@ -502,7 +498,7 @@ public:: true
         "label": "Message Queue"
       },
       {
-        "@id": "urn:ngm:class:replication-mechanism",
+        "@id": "urn:ngm:class:replication",
         "label": "Replication Mechanism"
       },
       {
@@ -516,10 +512,6 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:identity-and-naming",
-        "label": "Identity and Naming"
-      },
-      {
         "@id": "urn:ngm:class:message-passing",
         "label": "Message Passing"
       },
@@ -528,7 +520,7 @@ public:: true
         "label": "Network Communication"
       },
       {
-        "@id": "urn:ngm:class:partial-failure-tolerance",
+        "@id": "urn:ngm:class:fault-tolerance",
         "label": "Partial Failure Tolerance"
       },
       {
@@ -544,10 +536,6 @@ public:: true
       {
         "@id": "urn:ngm:class:distributed-ai-training",
         "label": "Distributed AI Training"
-      },
-      {
-        "@id": "urn:ngm:class:elastic-capacity",
-        "label": "Elastic Capacity"
       },
       {
         "@id": "urn:ngm:class:geographic-distribution",
@@ -570,10 +558,6 @@ public:: true
       {
         "@id": "urn:ngm:class:actor-model",
         "label": "Actor Model"
-      },
-      {
-        "@id": "urn:ngm:class:bulk-synchronous-parallel",
-        "label": "Bulk Synchronous Parallel"
       },
       {
         "@id": "urn:ngm:class:map-reduce",
@@ -630,16 +614,8 @@ public:: true
         "label": "Kubernetes"
       },
       {
-        "@id": "urn:ngm:class:ray",
-        "label": "Ray"
-      },
-      {
         "@id": "urn:ngm:class:service-mesh",
         "label": "Service Mesh"
-      },
-      {
-        "@id": "urn:ngm:class:zoo-keeper",
-        "label": "ZooKeeper"
       }
     ],
     "relatedTo": [
@@ -652,7 +628,7 @@ public:: true
         "label": "High-Performance Computing"
       },
       {
-        "@id": "urn:ngm:class:peer-to-peer-computing",
+        "@id": "urn:ngm:class:peer-to-peer-network",
         "label": "Peer-to-Peer Computing"
       },
       {
@@ -682,10 +658,6 @@ public:: true
         "label": "Microservices"
       },
       {
-        "@id": "urn:ngm:class:streaming-analytics",
-        "label": "Streaming Analytics"
-      },
-      {
         "@id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing"
       }
@@ -700,16 +672,12 @@ public:: true
         "label": "CNCF"
       },
       {
-        "@id": "urn:ngm:class:g-rpc-specification",
+        "@id": "urn:ngm:class:g-rpc",
         "label": "gRPC Specification"
       },
       {
-        "@id": "urn:ngm:class:ietf-quic",
+        "@id": "urn:ngm:class:quic",
         "label": "IETF QUIC"
-      },
-      {
-        "@id": "urn:ngm:class:mpi-forum",
-        "label": "MPI Forum"
       },
       {
         "@id": "urn:ngm:class:open-telemetry",

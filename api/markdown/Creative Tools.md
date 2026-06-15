@@ -38,55 +38,134 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:multimodal-model", "label": "Multimodal Model"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-models",
+        "label": "Multimodal Model"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"},
-      {"@id": "urn:ngm:class:video-synthesis", "label": "Video Synthesis"},
-      {"@id": "urn:ngm:class:music-generation", "label": "Music Generation"},
-      {"@id": "urn:ngm:class:3d-asset-creation", "label": "3D Asset Creation"},
-      {"@id": "urn:ngm:class:content-creation", "label": "Content Creation"}
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "@id": "urn:ngm:class:video-synthesis",
+        "label": "Video Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:music-generation",
+        "label": "Music Generation"
+      },
+      {
+        "@id": "urn:ngm:class:asset-creation",
+        "label": "3D Asset Creation"
+      },
+      {
+        "@id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:api-endpoint", "label": "API Endpoint"}
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:api",
+        "label": "API Endpoint"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:creative-economy", "label": "Creative Economy"}
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:traditional-design-software", "label": "Traditional Design Software"},
-      {"@id": "urn:ngm:class:rule-based-procedural-generation", "label": "Rule-Based Procedural Generation"}
+      {
+        "@id": "urn:ngm:class:design-software",
+        "label": "Traditional Design Software"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Rule-Based Procedural Generation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:metaverse-content", "label": "Metaverse Content"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-content",
+        "label": "Metaverse Content"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-application", "label": "AI Application"},
-      {"@id": "urn:ngm:class:content-provenance", "label": "Content Provenance"},
-      {"@id": "urn:ngm:class:intellectual-property", "label": "Intellectual Property"},
-      {"@id": "urn:ngm:class:human-ai-collaboration", "label": "Human-AI Collaboration"}
+      {
+        "@id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      },
+      {
+        "@id": "urn:ngm:class:content-provenance",
+        "label": "Content Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:intellectual-property-rights-framework",
+        "label": "Intellectual Property"
+      },
+      {
+        "@id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ai-creative-software", "label": "AI Creative Software"},
-    {"@id": "urn:ngm:class:generative-creative-tools", "label": "Generative Creative Tools"}
+    {
+      "@id": "urn:ngm:class:ai-creative-software",
+      "label": "AI Creative Software"
+    },
+    {
+      "@id": "urn:ngm:class:generative-creative-tools",
+      "label": "Generative Creative Tools"
+    }
   ],
   "quality": 0.72,
   "qualityScore": 0.72,
-  "maturity": "emerging",
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",

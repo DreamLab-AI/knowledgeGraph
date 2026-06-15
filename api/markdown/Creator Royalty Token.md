@@ -167,27 +167,19 @@ alias:: CreatorRoyaltyToken
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:ip-rights-metadata",
-        "label": "IP Rights Metadata"
-      },
-      {
         "@id": "urn:ngm:class:ownership-record",
         "label": "Ownership Record"
       },
       {
-        "@id": "urn:ngm:class:revenue-distribution-logic",
+        "@id": "urn:ngm:class:revenue-distribution",
         "label": "Revenue Distribution Logic"
       },
       {
-        "@id": "urn:ngm:class:royalty-smart-contract",
+        "@id": "urn:ngm:class:smart-royalty-contract",
         "label": "Royalty Smart Contract"
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:royalty-tracking-system",
-        "label": "Royalty Tracking System"
-      },
       {
         "@id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
@@ -203,7 +195,7 @@ alias:: CreatorRoyaltyToken
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:automated-royalty-distribution",
+        "@id": "urn:ngm:class:royalty-distribution",
         "label": "Automated Royalty Distribution"
       },
       {
@@ -211,23 +203,11 @@ alias:: CreatorRoyaltyToken
         "label": "Creator Compensation"
       },
       {
-        "@id": "urn:ngm:class:fan-investment",
-        "label": "Fan Investment"
-      },
-      {
-        "@id": "urn:ngm:class:ip-monetization",
-        "label": "IP Monetization"
-      },
-      {
         "@id": "urn:ngm:class:revenue-sharing",
         "label": "Revenue Sharing"
       }
     ],
     "partOf": [
-      {
-        "@id": "urn:ngm:class:intellectual-property-system",
-        "label": "Intellectual Property System"
-      },
       {
         "@id": "urn:ngm:class:creator-economy",
         "label": "Creator Economy"

@@ -80,10 +80,6 @@ public:: true
         "label": "Cross-Entropy Loss"
       },
       {
-        "@id": "urn:ngm:class:hinge-loss",
-        "label": "Hinge Loss"
-      },
-      {
         "@id": "urn:ngm:class:mean-absolute-error",
         "label": "Mean Absolute Error"
       }
@@ -98,10 +94,6 @@ public:: true
       {
         "@id": "urn:ngm:class:ground-truth-label",
         "label": "Ground Truth Label"
-      },
-      {
-        "@id": "urn:ngm:class:model-prediction",
-        "label": "Model Prediction"
       }
     ],
     "enables": [
@@ -114,7 +106,7 @@ public:: true
         "label": "Backpropagation"
       },
       {
-        "@id": "urn:ngm:class:model-convergence",
+        "@id": "urn:ngm:class:convergence",
         "label": "Model Convergence"
       }
     ],
@@ -128,17 +120,7 @@ public:: true
         "label": "Training Data"
       }
     ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:statistical-risk-minimisation",
-        "label": "Statistical Risk Minimisation"
-      }
-    ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:calculus-chain-rule",
-        "label": "Calculus Chain Rule"
-      },
       {
         "@id": "urn:ngm:class:automatic-differentiation",
         "label": "Automatic Differentiation"
@@ -178,10 +160,6 @@ public:: true
       {
         "@id": "urn:ngm:class:evaluation-metric",
         "label": "Evaluation Metric"
-      },
-      {
-        "@id": "urn:ngm:class:optimisation-theory",
-        "label": "Optimisation Theory"
       }
     ],
     "relatedTo": [

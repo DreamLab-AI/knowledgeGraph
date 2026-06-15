@@ -47,16 +47,7 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:operational-log",
-        "label": "Operational Log"
-      },
-      {
-        "id": "urn:ngm:class:debug-log",
-        "label": "Debug Log"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:blockchain",
@@ -83,10 +74,6 @@
       {
         "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
-      },
-      {
-        "id": "urn:ngm:class:append-only-data-structure",
-        "label": "Append-Only Data Structure"
       }
     ],
     "supports": [
@@ -113,16 +100,12 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:nist-sp-800-92",
+        "id": "urn:ngm:class:nist",
         "label": "NIST SP 800-92"
       },
       {
         "id": "urn:ngm:class:iso-27001",
         "label": "ISO 27001"
-      },
-      {
-        "id": "urn:ngm:class:common-event-format",
-        "label": "Common Event Format"
       }
     ],
     "partOf": [],

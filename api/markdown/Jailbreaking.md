@@ -282,43 +282,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:ascii-art-attack",
-        "label": "ASCII Art Attack"
-      },
-      {
-        "@id": "urn:ngm:class:best-of-n-jailbreaking",
-        "label": "Best-of-N Jailbreaking"
-      },
-      {
-        "@id": "urn:ngm:class:crescendo-attack",
-        "label": "Crescendo Attack"
-      },
-      {
-        "@id": "urn:ngm:class:low-resource-language-attack",
-        "label": "Low-Resource Language Attack"
-      },
-      {
-        "@id": "urn:ngm:class:many-shot-jailbreaking",
-        "label": "Many-Shot Jailbreaking"
-      },
-      {
-        "@id": "urn:ngm:class:persona-attack",
-        "label": "Persona Attack"
-      },
-      {
         "@id": "urn:ngm:class:prompt-injection",
         "label": "Prompt Injection"
-      },
-      {
-        "@id": "urn:ngm:class:skeleton-key-attack",
-        "label": "Skeleton Key Attack"
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:safety-training",
-        "label": "Safety Training"
-      },
       {
         "@id": "urn:ngm:class:instruction-tuning",
         "label": "Instruction Tuning"
@@ -334,16 +302,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:adversarial-evaluation",
+        "@id": "urn:ngm:class:adversarial-testing",
         "label": "Adversarial Evaluation"
-      },
-      {
-        "@id": "urn:ngm:class:harmful-content-generation",
-        "label": "Harmful Content Generation"
-      },
-      {
-        "@id": "urn:ngm:class:policy-circumvention",
-        "label": "Policy Circumvention"
       },
       {
         "@id": "urn:ngm:class:red-teaming",
@@ -351,18 +311,6 @@ public:: true
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:constitutional-classifiers",
-        "label": "Constitutional Classifiers"
-      },
-      {
-        "@id": "urn:ngm:class:guardrails-ai",
-        "label": "Guardrails AI"
-      },
-      {
-        "@id": "urn:ngm:class:meta-llama-model-family-guard",
-        "label": "Llama Guard"
-      },
       {
         "@id": "urn:ngm:class:rlhf",
         "label": "RLHF"
@@ -373,10 +321,6 @@ public:: true
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:classifier-models",
-        "label": "Classifier Models"
-      },
       {
         "@id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
@@ -426,7 +370,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:ai-red-teaming",
+        "@id": "urn:ngm:class:red-teaming",
         "label": "AI Red Teaming"
       },
       {
@@ -461,7 +405,10 @@ public:: true
       }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:adversarial-machine-learning", "label": "Adversarial Machine Learning"}
+      {
+        "@id": "urn:ngm:class:adversarial-machine-learning",
+        "label": "Adversarial Machine Learning"
+      }
     ]
   },
   "quality": 0.52,

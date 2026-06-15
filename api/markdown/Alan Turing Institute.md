@@ -65,32 +65,14 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:data-science-programme",
-        "label": "Data Science Programme"
-      },
-      {
         "@id": "urn:ngm:class:ai-safety-research",
         "label": "AI Safety Research"
-      },
-      {
-        "@id": "urn:ngm:class:public-policy-programme",
-        "label": "Public Policy Programme"
       }
     ],
     "partOf": [
       {
         "@id": "urn:ngm:class:uk-national-ai-strategy",
         "label": "UK National AI Strategy"
-      }
-    ],
-    "requires": [
-      {
-        "@id": "urn:ngm:class:university-partnership",
-        "label": "University Partnership"
-      },
-      {
-        "@id": "urn:ngm:class:government-funding",
-        "label": "Government Funding"
       }
     ],
     "enables": [
@@ -129,10 +111,6 @@ public:: true
       {
         "@id": "urn:ngm:class:open-data",
         "label": "Open Data"
-      },
-      {
-        "@id": "urn:ngm:class:national-health-service",
-        "label": "National Health Service"
       }
     ],
     "dependsOn": [
@@ -149,12 +127,6 @@ public:: true
         "label": "UK Research and Innovation"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:private-ai-laboratory",
-        "label": "Private AI Laboratory"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:defence-and-security",
@@ -163,10 +135,6 @@ public:: true
       {
         "@id": "urn:ngm:class:digital-health",
         "label": "Digital Health"
-      },
-      {
-        "@id": "urn:ngm:class:public-sector-data",
-        "label": "Public Sector Data"
       }
     ],
     "relatedTo": [

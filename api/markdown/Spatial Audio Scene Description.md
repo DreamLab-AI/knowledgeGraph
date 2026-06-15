@@ -162,33 +162,13 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:acoustic-properties",
-        "label": "Acoustic Properties"
-      },
-      {
-        "@id": "urn:ngm:class:ambisonics-representation",
-        "label": "Ambisonics Representation"
-      },
-      {
-        "@id": "urn:ngm:class:audio-object",
-        "label": "Audio Object"
-      },
-      {
-        "@id": "urn:ngm:class:listener-position",
-        "label": "Listener Position"
-      },
-      {
-        "@id": "urn:ngm:class:sound-source-position",
-        "label": "Sound Source Position"
-      },
-      {
         "@id": "urn:ngm:class:spatial-metadata",
         "label": "Spatial Metadata"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:3-d-coordinate-system",
+        "@id": "urn:ngm:class:coordinate-system",
         "label": "3D Coordinate System"
       },
       {
@@ -206,20 +186,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:acoustic-realism",
-        "label": "Acoustic Realism"
-      },
-      {
-        "@id": "urn:ngm:class:ambisonics-playback",
-        "label": "Ambisonics Playback"
-      },
-      {
         "@id": "urn:ngm:class:binaural-rendering",
         "label": "Binaural Rendering"
-      },
-      {
-        "@id": "urn:ngm:class:dynamic-audio-mixing",
-        "label": "Dynamic Audio Mixing"
       },
       {
         "@id": "urn:ngm:class:object-based-audio",
@@ -228,7 +196,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:3-d-scene-graph",
+        "@id": "urn:ngm:class:scene-graph",
         "label": "3D Scene Graph"
       },
       {

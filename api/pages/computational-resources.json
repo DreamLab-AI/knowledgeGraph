@@ -30,7 +30,7 @@
         "label": "Memory Subsystem"
       },
       {
-        "id": "urn:ngm:class:storage",
+        "id": "urn:ngm:class:storage-systems",
         "label": "Storage"
       },
       {
@@ -136,7 +136,7 @@
         "label": "Scalability"
       },
       {
-        "id": "urn:ngm:class:performance-optimisation",
+        "id": "urn:ngm:class:optimisation",
         "label": "Performance Optimisation"
       }
     ]

@@ -54,55 +54,127 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:bnb-token", "label": "BNB Token"},
-      {"@id": "urn:ngm:class:bnb-chain", "label": "BNB Chain"},
-      {"@id": "urn:ngm:class:binance-smart-chain", "label": "Binance Smart Chain"},
-      {"@id": "urn:ngm:class:binance-launchpad", "label": "Binance Launchpad"}
-    ],
-    "partOf": [
-      {"@id": "urn:ngm:class:cryptocurrency-exchange-ecosystem", "label": "Cryptocurrency Exchange Ecosystem"}
+      {
+        "@id": "urn:ngm:class:bnb-token",
+        "label": "BNB Token"
+      },
+      {
+        "@id": "urn:ngm:class:bnb-chain",
+        "label": "BNB Chain"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:order-book", "label": "Order Book"},
-      {"@id": "urn:ngm:class:liquidity-provision", "label": "Liquidity Provision"},
-      {"@id": "urn:ngm:class:kyc-aml-compliance", "label": "KYC/AML Compliance"}
+      {
+        "@id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "@id": "urn:ngm:class:kyc-aml-compliance",
+        "label": "KYC/AML Compliance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:spot-trading", "label": "Spot Trading"},
-      {"@id": "urn:ngm:class:derivatives-trading", "label": "Derivatives Trading"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:token-staking", "label": "Token Staking"}
+      {
+        "@id": "urn:ngm:class:spot-trading",
+        "label": "Spot Trading"
+      },
+      {
+        "@id": "urn:ngm:class:derivatives-trading",
+        "label": "Derivatives Trading"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:staking",
+        "label": "Token Staking"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:proof-of-staked-authority", "label": "Proof of Staked Authority"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:ethereum-virtual-machine", "label": "Ethereum Virtual Machine"},
-      {"@id": "urn:ngm:class:matching-engine", "label": "Matching Engine"},
-      {"@id": "urn:ngm:class:crypto-wallet", "label": "Crypto Wallet"}
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:matching-engine",
+        "label": "Matching Engine"
+      },
+      {
+        "@id": "urn:ngm:class:crypto-wallet",
+        "label": "Crypto Wallet"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:coinbase", "label": "Coinbase"},
-      {"@id": "urn:ngm:class:kraken", "label": "Kraken"},
-      {"@id": "urn:ngm:class:decentralised-exchange", "label": "Decentralised Exchange"}
+      {
+        "@id": "urn:ngm:class:coinbase",
+        "label": "Coinbase"
+      },
+      {
+        "@id": "urn:ngm:class:kraken",
+        "label": "Kraken"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
-      {"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"},
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
-      {"@id": "urn:ngm:class:web3", "label": "Web3"}
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:web3",
+        "label": "Web3"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:non-fungible-token", "label": "Non-Fungible Token"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:binance-exchange", "label": "Binance Exchange"}
+    {
+      "@id": "urn:ngm:class:binance-exchange",
+      "label": "Binance Exchange"
+    }
   ],
   "quality": 0.72,
   "provenance": {

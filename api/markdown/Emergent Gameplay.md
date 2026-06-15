@@ -23,52 +23,101 @@ public:: true
   "definition": "Emergent Gameplay refers to complex, often unanticipated play behaviours, strategies, and narratives that arise spontaneously from the interaction of relatively simple, well-defined game rules, systems, and player agency, rather than being explicitly scripted or designed by the game's creators. It occurs when the combinatorial space of game mechanics, physics simulations, AI agent behaviours, and player decisions produces outcomes that exceed the designers' explicit intentions, creating novel experiences from the bottom up. Emergent gameplay is a hallmark of open-world, sandbox, and simulation genres, and is increasingly studied in the context of AI game agents and procedural content generation.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:game-mechanics", "label": "Game Mechanics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:game-mechanics",
+      "label": "Game Mechanics"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:procedural-content-generation", "label": "Procedural Content Generation"},
-      {"@id": "urn:ngm:class:procedural-generation", "label": "Procedural Generation"},
-      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
-      {"@id": "urn:ngm:class:open-world", "label": "Open World"},
-      {"@id": "urn:ngm:class:ai-game-agent", "label": "AI Game Agent"},
-      {"@id": "urn:ngm:class:complex-adaptive-systems", "label": "Complex Adaptive Systems"},
-      {"@id": "urn:ngm:class:sandbox-game", "label": "Sandbox Game"},
-      {"@id": "urn:ngm:class:player-agency", "label": "Player Agency"},
-      {"@id": "urn:ngm:class:systems-theory", "label": "Systems Theory"}
+      {
+        "@id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:open-world",
+        "label": "Open World"
+      },
+      {
+        "@id": "urn:ngm:class:ai-game-agent",
+        "label": "AI Game Agent"
+      },
+      {
+        "@id": "urn:ngm:class:complex-adaptive-systems",
+        "label": "Complex Adaptive Systems"
+      },
+      {
+        "@id": "urn:ngm:class:player-agency",
+        "label": "Player Agency"
+      },
+      {
+        "@id": "urn:ngm:class:systems-theory",
+        "label": "Systems Theory"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:game-development", "label": "Game Development"},
-      {"@id": "urn:ngm:class:open-ended-learning", "label": "Open-Ended Learning"},
-      {"@id": "urn:ngm:class:player-driven-narrative", "label": "Player-Driven Narrative"},
-      {"@id": "urn:ngm:class:emergent-narrative", "label": "Emergent Narrative"}
+      {
+        "@id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      },
+      {
+        "@id": "urn:ngm:class:open-ended-learning",
+        "label": "Open-Ended Learning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:rule-system", "label": "Rule System"},
-      {"@id": "urn:ngm:class:agent-based-modelling", "label": "Agent-Based Modelling"}
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:agent-based-modelling",
+        "label": "Agent-Based Modelling"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:game-mechanics", "label": "Game Mechanics"},
-      {"@id": "urn:ngm:class:combinatorial-complexity", "label": "Combinatorial Complexity"}
-    ],
-    "dependsOn": [
-      {"@id": "urn:ngm:class:player-interaction", "label": "Player Interaction"},
-      {"@id": "urn:ngm:class:non-linear-dynamics", "label": "Non-Linear Dynamics"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:scripted-gameplay", "label": "Scripted Gameplay"},
-      {"@id": "urn:ngm:class:linear-game-design", "label": "Linear Game Design"}
+      {
+        "@id": "urn:ngm:class:game-mechanics",
+        "label": "Game Mechanics"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:multi-agent-reinforcement-learning", "label": "Multi-Agent Reinforcement Learning"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:multi-agent-reinforcement-learning",
+        "label": "Multi-Agent Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:emergent-behavior-in-games", "label": "Emergent Behavior in Games"},
-    {"@id": "urn:ngm:class:systemic-gameplay", "label": "Systemic Gameplay"}
+    {
+      "@id": "urn:ngm:class:emergent-behavior-in-games",
+      "label": "Emergent Behavior in Games"
+    },
+    {
+      "@id": "urn:ngm:class:systemic-gameplay",
+      "label": "Systemic Gameplay"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

@@ -58,51 +58,127 @@ alias:: BC-0044-supply-chain-management
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:demand-forecasting", "label": "Demand Forecasting"},
-      {"@id": "urn:ngm:class:inventory-management", "label": "Inventory Management"},
-      {"@id": "urn:ngm:class:procurement", "label": "Procurement"},
-      {"@id": "urn:ngm:class:logistics-optimization", "label": "Logistics Optimization"},
-      {"@id": "urn:ngm:class:supplier-relationship-management", "label": "Supplier Relationship Management"}
+      {
+        "@id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      },
+      {
+        "@id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      },
+      {
+        "@id": "urn:ngm:class:procurement",
+        "label": "Procurement"
+      },
+      {
+        "@id": "urn:ngm:class:logistics-optimization",
+        "label": "Logistics Optimization"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-integration", "label": "Data Integration"},
-      {"@id": "urn:ngm:class:enterprise-resource-planning", "label": "Enterprise Resource Planning"},
-      {"@id": "urn:ngm:class:iot-sensor", "label": "IoT Sensor"}
+      {
+        "@id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      },
+      {
+        "@id": "urn:ngm:class:iot-sensor",
+        "label": "IoT Sensor"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"},
-      {"@id": "urn:ngm:class:trade-finance", "label": "Trade Finance"},
-      {"@id": "urn:ngm:class:sustainability-reporting", "label": "SustainabilityReporting"}
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability-reporting",
+        "label": "SustainabilityReporting"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:rfid", "label": "RFID"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:gs1-standards", "label": "GS1 Standards"},
-      {"@id": "urn:ngm:class:iso-28000", "label": "ISO 28000"}
+      {
+        "@id": "urn:ngm:class:gs1-standards",
+        "label": "GS1 Standards"
+      },
+      {
+        "@id": "urn:ngm:class:iso-28000",
+        "label": "ISO 28000"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:value-chain-management", "label": "Value Chain Management"},
-      {"@id": "urn:ngm:class:just-in-time-manufacturing", "label": "Just-In-Time Manufacturing"}
+      {
+        "@id": "urn:ngm:class:just-in-time-manufacturing",
+        "label": "Just-In-Time Manufacturing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:ai-agent", "label": "AI Agent"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:resilience-engineering", "label": "Resilience Engineering"},
-      {"@id": "urn:ngm:class:circular-economy", "label": "Circular Economy"},
-      {"@id": "urn:ngm:class:trade-compliance", "label": "Trade Compliance"}
+      {
+        "@id": "urn:ngm:class:resilience-engineering",
+        "label": "Resilience Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "@id": "urn:ngm:class:trade-compliance",
+        "label": "Trade Compliance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:scm", "label": "SCM"},
-    {"@id": "urn:ngm:class:value-network-management", "label": "Value Network Management"}
+    {
+      "@id": "urn:ngm:class:scm",
+      "label": "SCM"
+    },
+    {
+      "@id": "urn:ngm:class:value-network-management",
+      "label": "Value Network Management"
+    }
   ],
   "quality": 0.72,
   "provenance": {

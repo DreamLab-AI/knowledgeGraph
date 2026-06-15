@@ -124,19 +124,15 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:incident-response-protocol",
+        "@id": "urn:ngm:class:incident-response",
         "label": "Incident Response Protocol"
       },
       {
-        "@id": "urn:ngm:class:risk-assessment-procedure",
+        "@id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment Procedure"
       },
       {
-        "@id": "urn:ngm:class:safety-guideline",
-        "label": "Safety Guideline"
-      },
-      {
-        "@id": "urn:ngm:class:user-protection-measure",
+        "@id": "urn:ngm:class:user-protection",
         "label": "User Protection Measure"
       }
     ],
@@ -156,7 +152,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:user-well-being",
+        "@id": "urn:ngm:class:well-being",
         "label": "User Well-being"
       },
       {

@@ -28,12 +28,8 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:annotated-dataset",
+        "id": "urn:ngm:class:annotated-training-data",
         "label": "Annotated Dataset"
-      },
-      {
-        "id": "urn:ngm:class:ground-truth-labelling",
-        "label": "Ground Truth Labelling"
       }
     ],
     "enables": [

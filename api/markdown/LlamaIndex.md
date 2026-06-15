@@ -23,55 +23,137 @@ public:: true
   "definition": "LlamaIndex (formerly GPT Index) is an open-source data framework and Python library that provides the abstractions and tooling needed to connect large language models with external data sources through structured indexing, retrieval, and query pipelines, primarily enabling production-grade retrieval-augmented generation (RAG) applications. It handles the full pipeline from document ingestion and chunking, through embedding and vector storage, to query decomposition, retrieval, reranking, and response synthesis, providing high-level abstractions over underlying LLMs, embedding models, and vector databases. LlamaIndex is positioned as the data orchestration complement to LangChain's agent orchestration focus, with particular strength in structured data retrieval and multi-document reasoning.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:agent-frameworks",
+      "label": "Agent Frameworks"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"},
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
-      {"@id": "urn:ngm:class:document-question-answering", "label": "Document Question Answering"}
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Document Question Answering"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:embeddings", "label": "Embeddings"},
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:transformer-models", "label": "Transformer Models"},
-      {"@id": "urn:ngm:class:approximate-nearest-neighbour-search", "label": "Approximate Nearest Neighbour Search"}
+      {
+        "@id": "urn:ngm:class:embeddings",
+        "label": "Embeddings"
+      },
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer Models"
+      },
+      {
+        "@id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Approximate Nearest Neighbour Search"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:document-chunking", "label": "Document Chunking"},
-      {"@id": "urn:ngm:class:text-embedding", "label": "Text Embedding"},
-      {"@id": "urn:ngm:class:python", "label": "Python"}
+      {
+        "@id": "urn:ngm:class:chunking",
+        "label": "Document Chunking"
+      },
+      {
+        "@id": "urn:ngm:class:text-embeddings",
+        "label": "Text Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:python",
+        "label": "Python"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:query-pipeline", "label": "Query Pipeline"},
-      {"@id": "urn:ngm:class:data-connectors", "label": "Data Connectors"},
-      {"@id": "urn:ngm:class:reranking", "label": "Reranking"}
+      {
+        "@id": "urn:ngm:class:data-connectors",
+        "label": "Data Connectors"
+      },
+      {
+        "@id": "urn:ngm:class:reranking",
+        "label": "Reranking"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:rag-pipeline", "label": "RAG Pipeline"},
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"}
+      {
+        "@id": "urn:ngm:class:rag-pipeline",
+        "label": "RAG Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:enterprise-ai", "label": "Enterprise AI"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:enterprise-ai",
+        "label": "Enterprise AI"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:lang-chain", "label": "LangChain"}
+      {
+        "@id": "urn:ngm:class:lang-chain",
+        "label": "LangChain"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine-Tuning"}
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:data", "label": "Data"},
-      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}
+      {
+        "@id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:gpt-index", "label": "GPT Index"}
+    {
+      "@id": "urn:ngm:class:gpt-index",
+      "label": "GPT Index"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -366,18 +366,6 @@ public:: true
         "label": "Hazard Identification"
       },
       {
-        "@id": "urn:ngm:class:impact-modelling",
-        "label": "Impact Modelling"
-      },
-      {
-        "@id": "urn:ngm:class:likelihood-estimation",
-        "label": "Likelihood Estimation"
-      },
-      {
-        "@id": "urn:ngm:class:residual-risk-calculation",
-        "label": "Residual Risk Calculation"
-      },
-      {
         "@id": "urn:ngm:class:risk-evaluation",
         "label": "Risk Evaluation"
       },
@@ -386,7 +374,7 @@ public:: true
         "label": "Risk Register"
       },
       {
-        "@id": "urn:ngm:class:risk-treatment-plan",
+        "@id": "urn:ngm:class:risk-treatment",
         "label": "Risk Treatment Plan"
       },
       {
@@ -422,10 +410,6 @@ public:: true
         "label": "Incident Response"
       },
       {
-        "@id": "urn:ngm:class:model-assurance",
-        "label": "Model Assurance"
-      },
-      {
         "@id": "urn:ngm:class:operational-resilience",
         "label": "Operational Resilience"
       },
@@ -443,10 +427,6 @@ public:: true
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:bow-tie-analysis",
-        "label": "Bow-Tie Analysis"
-      },
       {
         "@id": "urn:ngm:class:fault-tree-analysis",
         "label": "Fault Tree Analysis"
@@ -468,23 +448,11 @@ public:: true
         "label": "NIST AI RMF"
       },
       {
-        "@id": "urn:ngm:class:owasp-llm-top-10",
+        "@id": "urn:ngm:class:owasp-llm-top-10-2025",
         "label": "OWASP LLM Top 10"
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:ai-incident-database",
-        "label": "AI Incident Database"
-      },
-      {
-        "@id": "urn:ngm:class:attack-trees",
-        "label": "Attack Trees"
-      },
-      {
-        "@id": "urn:ngm:class:helm",
-        "label": "HELM"
-      },
       {
         "@id": "urn:ngm:class:monte-carlo-simulation",
         "label": "Monte Carlo Simulation"
@@ -504,10 +472,6 @@ public:: true
         "label": "Operational Resilience"
       },
       {
-        "@id": "urn:ngm:class:oracle-risk",
-        "label": "Oracle Risk"
-      },
-      {
         "@id": "urn:ngm:class:ai-liability",
         "label": "AI Liability"
       },
@@ -525,10 +489,6 @@ public:: true
       }
     ],
     "supports": [
-      {
-        "@id": "urn:ngm:class:de-fi-risk",
-        "label": "DeFi Risk"
-      },
       {
         "@id": "urn:ngm:class:financial-stability",
         "label": "Financial Stability"
@@ -554,10 +514,6 @@ public:: true
       {
         "@id": "urn:ngm:class:basel-iii",
         "label": "Basel III"
-      },
-      {
-        "@id": "urn:ngm:class:fca-ps21-3",
-        "label": "FCA PS21/3"
       },
       {
         "@id": "urn:ngm:class:fsb",

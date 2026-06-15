@@ -30,7 +30,7 @@
         "label": "Accuracy"
       },
       {
-        "id": "urn:ngm:class:precision-recall",
+        "id": "urn:ngm:class:precision-recall-curve",
         "label": "Precision-Recall"
       },
       {
@@ -58,7 +58,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:model-optimisation",
+        "id": "urn:ngm:class:model-optimisation-and-performance",
         "label": "Model Optimisation"
       },
       {
@@ -76,7 +76,7 @@
         "label": "Observability"
       },
       {
-        "id": "urn:ngm:class:logging",
+        "id": "urn:ngm:class:audit-logging",
         "label": "Logging"
       }
     ],
@@ -85,10 +85,6 @@
       {
         "id": "urn:ngm:class:model-evaluation-results",
         "label": "Model Evaluation Results"
-      },
-      {
-        "id": "urn:ngm:class:qualitative-assessment",
-        "label": "Qualitative Assessment"
       }
     ],
     "bridgesTo": [

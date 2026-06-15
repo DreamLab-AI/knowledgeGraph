@@ -126,11 +126,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:content-labeling-metadata",
-        "label": "Content Labeling Metadata"
-      },
-      {
-        "@id": "urn:ngm:class:disclosure-enforcement-mechanism",
+        "@id": "urn:ngm:class:enforcement-mechanism",
         "label": "Disclosure Enforcement Mechanism"
       },
       {

@@ -23,54 +23,125 @@ public:: true
   "definition": "Robotic platforms capable of self-directed locomotion through environments, navigating without fixed infrastructure guidance by using onboard sensing, mapping, localisation, and path-planning capabilities. Autonomous mobile robots (AMRs) operate in dynamic, human-shared spaces and are distinguished from automated guided vehicles (AGVs) by their ability to adapt routes in real time rather than following pre-defined paths.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:mobile-robotics", "label": "Mobile Robotics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:mobile-robotics",
+      "label": "Mobile Robotics"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:lidar", "label": "LiDAR"},
-      {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"},
-      {"@id": "urn:ngm:class:occupancy-grid-mapping", "label": "Occupancy Grid Mapping"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      },
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:warehouse-automation", "label": "Warehouse Automation"},
-      {"@id": "urn:ngm:class:logistics-automation", "label": "Logistics Automation"},
-      {"@id": "urn:ngm:class:mobile-manipulation", "label": "Mobile Manipulation"},
-      {"@id": "urn:ngm:class:autonomous-delivery", "label": "Autonomous Delivery"}
+      {
+        "@id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "@id": "urn:ngm:class:logistics-automation",
+        "label": "Logistics Automation"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-manipulation",
+        "label": "Mobile Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-delivery",
+        "label": "Autonomous Delivery"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:real-time-computing", "label": "Real-Time Computing"},
-      {"@id": "urn:ngm:class:motor-control", "label": "Motor Control"},
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"}
+      {
+        "@id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
+      },
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:navigation-stack", "label": "Navigation Stack"},
-      {"@id": "urn:ngm:class:collision-avoidance", "label": "Collision Avoidance"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:automated-guided-vehicles", "label": "Automated Guided Vehicles"}
+      {
+        "@id": "urn:ngm:class:navigation-stack",
+        "label": "Navigation Stack"
+      },
+      {
+        "@id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-13482", "label": "ISO 13482"},
-      {"@id": "urn:ngm:class:iec-61508", "label": "IEC 61508"}
+      {
+        "@id": "urn:ngm:class:iso-13482",
+        "label": "ISO 13482"
+      },
+      {
+        "@id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:fleet-management", "label": "Fleet Management"},
-      {"@id": "urn:ngm:class:ros-navigation-stack", "label": "ROS Navigation Stack"},
-      {"@id": "urn:ngm:class:mobile-robot-platform", "label": "Mobile Robot Platform"},
-      {"@id": "urn:ngm:class:multi-agent-path-finding", "label": "Multi-Agent Path Finding"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"}
+      {
+        "@id": "urn:ngm:class:fleet-management",
+        "label": "Fleet Management"
+      },
+      {
+        "@id": "urn:ngm:class:ros-navigation-stack",
+        "label": "ROS Navigation Stack"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-robot-platform",
+        "label": "Mobile Robot Platform"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:amr", "label": "AMR"},
-    {"@id": "urn:ngm:class:mobile-autonomous-robot", "label": "Mobile Autonomous Robot"}
+    {
+      "@id": "urn:ngm:class:amr",
+      "label": "AMR"
+    },
+    {
+      "@id": "urn:ngm:class:mobile-autonomous-robot",
+      "label": "Mobile Autonomous Robot"
+    }
   ],
   "quality": 0.8,
   "provenance": {

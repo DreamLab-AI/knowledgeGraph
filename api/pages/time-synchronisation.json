@@ -24,29 +24,9 @@
       {
         "id": "urn:ngm:class:precision-time-protocol",
         "label": "Precision Time Protocol"
-      },
-      {
-        "id": "urn:ngm:class:clock-drift",
-        "label": "Clock Drift"
-      },
-      {
-        "id": "urn:ngm:class:stratum-hierarchy",
-        "label": "Stratum Hierarchy"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:reference-clock",
-        "label": "Reference Clock"
-      },
-      {
-        "id": "urn:ngm:class:gps-receiver",
-        "label": "GPS Receiver"
-      },
-      {
-        "id": "urn:ngm:class:atomic-clock",
-        "label": "Atomic Clock"
-      },
       {
         "id": "urn:ngm:class:network-protocol",
         "label": "Network Protocol"
@@ -60,10 +40,6 @@
       {
         "id": "urn:ngm:class:distributed-system",
         "label": "Distributed System"
-      },
-      {
-        "id": "urn:ngm:class:event-ordering",
-        "label": "Event Ordering"
       },
       {
         "id": "urn:ngm:class:digital-certificate",
@@ -99,10 +75,6 @@
       {
         "id": "urn:ngm:class:cryptographic-protocol",
         "label": "Cryptographic Protocol"
-      },
-      {
-        "id": "urn:ngm:class:iot-device-management",
-        "label": "IoT Device Management"
       }
     ],
     "uses": [],
@@ -114,10 +86,6 @@
       {
         "id": "urn:ngm:class:real-time-system",
         "label": "Real-Time System"
-      },
-      {
-        "id": "urn:ngm:class:financial-trading-infrastructure",
-        "label": "Financial Trading Infrastructure"
       },
       {
         "id": "urn:ngm:class:industrial-automation",
@@ -143,10 +111,6 @@
       {
         "id": "urn:ngm:class:network-synchronization",
         "label": "Network Synchronization"
-      },
-      {
-        "id": "urn:ngm:class:clock-skew",
-        "label": "Clock Skew"
       },
       {
         "id": "urn:ngm:class:latency",

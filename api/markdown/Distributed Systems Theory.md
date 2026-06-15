@@ -89,7 +89,7 @@ public:: true
         "label": "Distributed Systems"
       },
       {
-        "@id": "urn:ngm:class:theoretical-computer-science",
+        "@id": "urn:ngm:class:computer-science",
         "label": "Theoretical Computer Science"
       }
     ],
@@ -155,10 +155,6 @@ public:: true
       {
         "@id": "urn:ngm:class:centralised-computing",
         "label": "Centralised Computing"
-      },
-      {
-        "@id": "urn:ngm:class:shared-memory-concurrency",
-        "label": "Shared Memory Concurrency"
       }
     ],
     "bridgesTo": [

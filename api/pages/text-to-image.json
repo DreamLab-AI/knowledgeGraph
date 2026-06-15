@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:text-embedding",
+        "id": "urn:ngm:class:text-embeddings",
         "label": "Text Embedding"
       },
       {
@@ -47,22 +47,14 @@
       {
         "id": "urn:ngm:class:inpainting",
         "label": "Inpainting"
-      },
-      {
-        "id": "urn:ngm:class:concept-visualisation",
-        "label": "Concept Visualisation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:text-to-video",
+        "id": "urn:ngm:class:text-to-video-generation",
         "label": "Text-to-Video"
-      },
-      {
-        "id": "urn:ngm:class:image-to-text",
-        "label": "Image-to-Text"
       }
     ],
     "bridgesTo": [
@@ -113,7 +105,7 @@
         "label": "Generative AI Engineering"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai",
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       }
     ],
@@ -127,7 +119,7 @@
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       },
       {

@@ -23,53 +23,131 @@ public:: true
   "definition": "The Bank for International Settlements (BIS) is an international financial institution owned by 63 member central banks, founded in 1930 and headquartered in Basel, Switzerland. It acts as banker to central banks, providing settlement, custody, and asset management services while fostering monetary and financial cooperation through research, policy forums, and standard-setting committees. The BIS hosts the Basel Committee on Banking Supervision, the Financial Stability Board secretariat, and the Committee on Payments and Market Infrastructures, which together produce globally binding prudential and operational standards such as the Basel Accords and CPMI principles. Through the BIS Innovation Hub it actively researches central bank digital currencies, tokenisation of financial assets, and cyber resilience for financial market infrastructures.",
   "domain": "finance",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-legal-and-regulatory", "label": "Legal and Regulatory"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:basel-committee-on-banking-supervision", "label": "Basel Committee on Banking Supervision"},
-      {"@id": "urn:ngm:class:financial-stability-board", "label": "Financial Stability Board"},
-      {"@id": "urn:ngm:class:committee-on-payments-and-market-infrastructures", "label": "Committee on Payments and Market Infrastructures"},
-      {"@id": "urn:ngm:class:bis-innovation-hub", "label": "BIS Innovation Hub"}
+      {
+        "@id": "urn:ngm:class:basel-committee-on-banking-supervision",
+        "label": "Basel Committee on Banking Supervision"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      },
+      {
+        "@id": "urn:ngm:class:bis-innovation-hub",
+        "label": "BIS Innovation Hub"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cross-border-payments", "label": "Cross-Border Payments"},
-      {"@id": "urn:ngm:class:monetary-policy-implementation", "label": "Monetary Policy Implementation"},
-      {"@id": "urn:ngm:class:prudential-regulation", "label": "Prudential Regulation"},
-      {"@id": "urn:ngm:class:financial-stability", "label": "Financial Stability"}
+      {
+        "@id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-policy-implementation",
+        "label": "Monetary Policy Implementation"
+      },
+      {
+        "@id": "urn:ngm:class:prudential-regulation",
+        "label": "Prudential Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:basel-accords", "label": "Basel Accords"},
-      {"@id": "urn:ngm:class:capital-adequacy-framework", "label": "Capital Adequacy Framework"}
+      {
+        "@id": "urn:ngm:class:basel-accords",
+        "label": "Basel Accords"
+      },
+      {
+        "@id": "urn:ngm:class:capital-adequacy",
+        "label": "Capital Adequacy Framework"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:central-bank", "label": "Central Bank"},
-      {"@id": "urn:ngm:class:financial-infrastructure", "label": "Financial Infrastructure"},
-      {"@id": "urn:ngm:class:financial-system", "label": "Financial System"},
-      {"@id": "urn:ngm:class:systemic-risk-management", "label": "Systemic Risk Management"}
+      {
+        "@id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "@id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:financial-system",
+        "label": "Financial System"
+      },
+      {
+        "@id": "urn:ngm:class:systemic-risk-management",
+        "label": "Systemic Risk Management"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"}
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"},
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
-      {"@id": "urn:ngm:class:international-monetary-fund", "label": "International Monetary Fund"},
-      {"@id": "urn:ngm:class:financial-technology", "label": "Financial Technology"},
-      {"@id": "urn:ngm:class:payment-system", "label": "Payment System"},
-      {"@id": "urn:ngm:class:international-financial-institution", "label": "International Financial Institution"}
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:international-monetary-fund",
+        "label": "International Monetary Fund"
+      },
+      {
+        "@id": "urn:ngm:class:financial-technology",
+        "label": "Financial Technology"
+      },
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:regtech", "label": "RegTech"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:cyber-resilience", "label": "Cyber Resilience"}
+      {
+        "@id": "urn:ngm:class:regtech",
+        "label": "RegTech"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:cyber-resilience",
+        "label": "Cyber Resilience"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:commercial-bank", "label": "Commercial Bank"}
+      {
+        "@id": "urn:ngm:class:commercial-bank",
+        "label": "Commercial Bank"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:bank-for-international-settlements", "label": "Bank for International Settlements"}
+    {
+      "@id": "urn:ngm:class:bank-for-international-settlements",
+      "label": "Bank for International Settlements"
+    }
   ],
   "quality": 0.75,
   "provenance": {

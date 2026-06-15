@@ -75,14 +75,6 @@ public:: true
         "label": "Autoregressive Model"
       },
       {
-        "@id": "urn:ngm:class:dilated-convolution",
-        "label": "Dilated Convolution"
-      },
-      {
-        "@id": "urn:ngm:class:causal-convolution",
-        "label": "Causal Convolution"
-      },
-      {
         "@id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
       }
@@ -111,16 +103,8 @@ public:: true
         "label": "Residual Network"
       },
       {
-        "@id": "urn:ngm:class:gated-activation-unit",
-        "label": "Gated Activation Unit"
-      },
-      {
         "@id": "urn:ngm:class:softmax",
         "label": "Softmax"
-      },
-      {
-        "@id": "urn:ngm:class:mu-law-encoding",
-        "label": "Mu-Law Encoding"
       }
     ],
     "contrastsWith": [
@@ -131,10 +115,6 @@ public:: true
       {
         "@id": "urn:ngm:class:generative-adversarial-network",
         "label": "Generative Adversarial Network"
-      },
-      {
-        "@id": "urn:ngm:class:parallel-wavenet",
-        "label": "Parallel WaveNet"
       }
     ],
     "relatedTo": [

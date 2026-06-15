@@ -23,61 +23,139 @@ public:: true
   "definition": "A Coordination Protocol is a formally specified set of rules, message formats, and interaction sequences that govern how distributed agents or system components communicate and synchronise their actions to achieve a common objective. It defines the obligations, permissions, and commitments of each participant at each state of an interaction, ensuring predictable collective behaviour despite independent agent decision-making.",
   "domain": "distributed-systems",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:communication-protocol",
+    "label": "Communication Protocol"
+  },
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:coordination-mechanisms", "label": "Coordination Mechanisms"},
-      {"@id": "urn:ngm:class:finite-state-machine", "label": "Finite State Machine"},
-      {"@id": "urn:ngm:class:speech-act-theory", "label": "Speech Act Theory"}
+      {
+        "@id": "urn:ngm:class:coordination-mechanisms",
+        "label": "Coordination Mechanisms"
+      },
+      {
+        "@id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite State Machine"
+      },
+      {
+        "@id": "urn:ngm:class:speech-act-theory",
+        "label": "Speech Act Theory"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:message-passing", "label": "Message Passing"},
-      {"@id": "urn:ngm:class:agent-communication-language", "label": "Agent Communication Language"},
-      {"@id": "urn:ngm:class:publish-subscribe-pattern", "label": "Publish-Subscribe Pattern"}
+      {
+        "@id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "@id": "urn:ngm:class:agent-communication-language",
+        "label": "Agent Communication Language"
+      },
+      {
+        "@id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
-      {"@id": "urn:ngm:class:distributed-transaction", "label": "Distributed Transaction"},
-      {"@id": "urn:ngm:class:replicated-state-machine", "label": "Replicated State Machine"}
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-transaction",
+        "label": "Distributed Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:state-machine-replication",
+        "label": "Replicated State Machine"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:message-schema", "label": "Message Schema"},
-      {"@id": "urn:ngm:class:role-specification", "label": "Role Specification"},
-      {"@id": "urn:ngm:class:network-transport", "label": "Network Transport"}
+      {
+        "@id": "urn:ngm:class:message-format",
+        "label": "Message Schema"
+      },
+      {
+        "@id": "urn:ngm:class:network-transport",
+        "label": "Network Transport"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
-      {"@id": "urn:ngm:class:formal-specification", "label": "Formal Specification"}
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:formal-specification",
+        "label": "Formal Specification"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:deadlock-freedom", "label": "Deadlock Freedom"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"},
-      {"@id": "urn:ngm:class:data-serialization-format", "label": "Data Serialisation Format"}
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:serialisation-format",
+        "label": "Data Serialisation Format"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:two-phase-commit", "label": "Two-Phase Commit"},
-      {"@id": "urn:ngm:class:contract-net-protocol", "label": "Contract Net Protocol"}
+      {
+        "@id": "urn:ngm:class:two-phase-commit",
+        "label": "Two-Phase Commit"
+      },
+      {
+        "@id": "urn:ngm:class:contract-net-protocol",
+        "label": "Contract Net Protocol"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:fipa", "label": "FIPA"},
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"}
+      {
+        "@id": "urn:ngm:class:fipa",
+        "label": "FIPA"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:llm-agent-framework", "label": "LLM Agent Framework"},
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"}
+      {
+        "@id": "urn:ngm:class:llm-application-framework",
+        "label": "LLM Agent Framework"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:process-algebra", "label": "Process Algebra"},
-      {"@id": "urn:ngm:class:raft-consensus", "label": "RAFT Consensus"}
+      {
+        "@id": "urn:ngm:class:raft-consensus",
+        "label": "RAFT Consensus"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:interaction-protocol", "label": "Interaction Protocol"},
-    {"@id": "urn:ngm:class:agent-interaction-protocol", "label": "Agent Interaction Protocol"}
+    {
+      "@id": "urn:ngm:class:interaction-protocol",
+      "label": "Interaction Protocol"
+    },
+    {
+      "@id": "urn:ngm:class:agent-interaction-protocol",
+      "label": "Agent Interaction Protocol"
+    }
   ],
   "quality": 0.72,
   "provenance": {

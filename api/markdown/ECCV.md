@@ -23,53 +23,114 @@ public:: true
   "definition": "ECCV, the European Conference on Computer Vision, is a biennial premier venue for research in computer vision and pattern recognition, held in alternating years with ICCV to provide the community with annual high-quality publication opportunities. Founded in 1990, it attracts thousands of submissions covering topics from low-level image processing and 3D reconstruction to high-level scene understanding and video analysis. ECCV proceedings published through Springer LNCS constitute one of the most-cited bodies of literature in artificial intelligence. Acceptance at ECCV carries high prestige, signalling rigorous peer review and methodological significance.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:challenge-workshop", "label": "Challenge Workshop"},
-      {"@id": "urn:ngm:class:tutorial", "label": "Tutorial"},
-      {"@id": "urn:ngm:class:conference-proceedings", "label": "Conference Proceedings"}
+      {
+        "@id": "urn:ngm:class:tutorial",
+        "label": "Tutorial"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:academic-conference", "label": "Academic Conference"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:academic-conference",
+        "label": "Academic Conference"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:double-blind-peer-review", "label": "Double-Blind Peer Review"},
-      {"@id": "urn:ngm:class:image-recognition", "label": "Image Recognition"}
+      {
+        "@id": "urn:ngm:class:image-recognition",
+        "label": "Image Recognition"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:benchmarks", "label": "Benchmarks"},
-      {"@id": "urn:ngm:class:model-evaluation-results", "label": "Model Evaluation Results"},
-      {"@id": "urn:ngm:class:state-of-the-art-results", "label": "State-of-the-Art Results"}
+      {
+        "@id": "urn:ngm:class:benchmarks",
+        "label": "Benchmarks"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:semantic-segmentation", "label": "Semantic Segmentation"},
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:autonomous-driving", "label": "Autonomous Driving"},
-      {"@id": "urn:ngm:class:medical-image-analysis", "label": "Medical Image Analysis"}
-    ],
-    "standardizedBy": [
-      {"@id": "urn:ngm:class:springer-lecture-notes-in-computer-science", "label": "Springer Lecture Notes in Computer Science"}
+      {
+        "@id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "@id": "urn:ngm:class:medical-image-analysis",
+        "label": "Medical Image Analysis"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:neurips", "label": "NeurIPS"},
-      {"@id": "urn:ngm:class:icml", "label": "ICML"}
+      {
+        "@id": "urn:ngm:class:neurips",
+        "label": "NeurIPS"
+      },
+      {
+        "@id": "urn:ngm:class:icml",
+        "label": "ICML"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cvpr", "label": "CVPR"},
-      {"@id": "urn:ngm:class:iccv", "label": "ICCV"},
-      {"@id": "urn:ngm:class:iclr", "label": "ICLR"},
-      {"@id": "urn:ngm:class:vision-language-model", "label": "Vision-Language Model"}
+      {
+        "@id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      },
+      {
+        "@id": "urn:ngm:class:iccv",
+        "label": "ICCV"
+      },
+      {
+        "@id": "urn:ngm:class:iclr",
+        "label": "ICLR"
+      },
+      {
+        "@id": "urn:ngm:class:vision-language-model",
+        "label": "Vision-Language Model"
+      }
     ]
   },
   "sameAs": [],

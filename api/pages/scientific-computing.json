@@ -18,11 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:numerical-analysis",
+        "id": "urn:ngm:class:numerical-methods",
         "label": "Numerical Analysis"
       },
       {
-        "id": "urn:ngm:class:parallel-programming",
+        "id": "urn:ngm:class:parallel-computing",
         "label": "Parallel Programming"
       },
       {
@@ -38,10 +38,6 @@
       {
         "id": "urn:ngm:class:distributed-computing",
         "label": "Distributed Computing"
-      },
-      {
-        "id": "urn:ngm:class:numerical-libraries",
-        "label": "Numerical Libraries"
       }
     ],
     "enables": [
@@ -84,10 +80,6 @@
         "label": "Machine Learning"
       },
       {
-        "id": "urn:ngm:class:physics-informed-neural-networks",
-        "label": "Physics-Informed Neural Networks"
-      },
-      {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
       }
@@ -118,10 +110,6 @@
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:computational-science",
-        "label": "Computational Science"
-      },
       {
         "id": "urn:ngm:class:data-science",
         "label": "Data Science"

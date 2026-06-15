@@ -174,10 +174,6 @@ public:: true
       {
         "@id": "urn:ngm:class:airdrop",
         "label": "Airdrop"
-      },
-      {
-        "@id": "urn:ngm:class:soul-bound-token",
-        "label": "Soul-Bound Token"
       }
     ],
     "standardizedBy": [

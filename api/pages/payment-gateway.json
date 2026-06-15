@@ -36,11 +36,7 @@
         "label": "PCI DSS"
       },
       {
-        "id": "urn:ngm:class:acquiring-bank",
-        "label": "Acquiring Bank"
-      },
-      {
-        "id": "urn:ngm:class:ssl-tls",
+        "id": "urn:ngm:class:tls",
         "label": "SSL/TLS"
       }
     ],
@@ -58,11 +54,7 @@
         "label": "x402 and l402 payment protocols"
       },
       {
-        "id": "urn:ngm:class:recurring-billing",
-        "label": "Recurring Billing"
-      },
-      {
-        "id": "urn:ngm:class:cross-border-payment",
+        "id": "urn:ngm:class:cross-border-payments",
         "label": "Cross-Border Payment"
       }
     ],
@@ -70,14 +62,6 @@
       {
         "id": "urn:ngm:class:card-network",
         "label": "Card Network"
-      },
-      {
-        "id": "urn:ngm:class:issuing-bank",
-        "label": "Issuing Bank"
-      },
-      {
-        "id": "urn:ngm:class:iso-8583",
-        "label": "ISO 8583"
       }
     ],
     "implements": [],

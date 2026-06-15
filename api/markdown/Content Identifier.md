@@ -23,55 +23,125 @@ public:: true
   "definition": "A Content Identifier (CID) is a self-describing, cryptographically derived label used in the InterPlanetary File System and IPLD ecosystem to uniquely identify and verify content through its hash, encoding the hash function used, the hash digest, and a multicodec descriptor for the serialised data format into a compact, version-aware multihash structure.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:content-addressing", "label": "Content Addressing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:content-addressing",
+      "label": "Content Addressing"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:multihash", "label": "Multihash"},
-      {"@id": "urn:ngm:class:ipld", "label": "IPLD"},
-      {"@id": "urn:ngm:class:merkle-dag", "label": "Merkle DAG"},
-      {"@id": "urn:ngm:class:multicodec", "label": "Multicodec"},
-      {"@id": "urn:ngm:class:multibase", "label": "Multibase"}
+      {
+        "@id": "urn:ngm:class:multihash",
+        "label": "Multihash"
+      },
+      {
+        "@id": "urn:ngm:class:ipld",
+        "label": "IPLD"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-dag",
+        "label": "Merkle DAG"
+      },
+      {
+        "@id": "urn:ngm:class:multicodec",
+        "label": "Multicodec"
+      },
+      {
+        "@id": "urn:ngm:class:multibase",
+        "label": "Multibase"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:hash-digest", "label": "Hash Digest"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:content-deduplication", "label": "Content Deduplication"},
-      {"@id": "urn:ngm:class:tamper-detection", "label": "Tamper Detection"},
-      {"@id": "urn:ngm:class:verifiable-data", "label": "Verifiable Data"},
-      {"@id": "urn:ngm:class:permanent-link", "label": "Permanent Link"}
+      {
+        "@id": "urn:ngm:class:deduplication",
+        "label": "Content Deduplication"
+      },
+      {
+        "@id": "urn:ngm:class:tamper-detection",
+        "label": "Tamper Detection"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-data-registry",
+        "label": "Verifiable Data"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:content-addressing", "label": "Content Addressing"},
-      {"@id": "urn:ngm:class:self-describing-format", "label": "Self-Describing Format"}
+      {
+        "@id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:ipfs", "label": "IPFS"},
-      {"@id": "urn:ngm:class:ipld", "label": "IPLD"}
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "@id": "urn:ngm:class:ipld",
+        "label": "IPLD"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
-      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"}
+      {
+        "@id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ipfs-content-addressing", "label": "IPFS Content Addressing"},
-      {"@id": "urn:ngm:class:filecoin", "label": "Filecoin"},
-      {"@id": "urn:ngm:class:nft-metadata", "label": "NFT Metadata"}
+      {
+        "@id": "urn:ngm:class:ipfs-content-addressing",
+        "label": "IPFS Content Addressing"
+      },
+      {
+        "@id": "urn:ngm:class:filecoin",
+        "label": "Filecoin"
+      },
+      {
+        "@id": "urn:ngm:class:nft-metadata",
+        "label": "NFT Metadata"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:uniform-resource-locator", "label": "Uniform Resource Locator"},
-      {"@id": "urn:ngm:class:location-addressing", "label": "Location Addressing"}
+      {
+        "@id": "urn:ngm:class:content-addressing",
+        "label": "Location Addressing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:cid", "label": "CID"}
+    {
+      "@id": "urn:ngm:class:cid",
+      "label": "CID"
+    }
   ],
   "quality": 0.72,
   "provenance": {

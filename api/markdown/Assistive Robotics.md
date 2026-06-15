@@ -23,61 +23,131 @@ public:: true
   "definition": "Assistive Robotics is a branch of robotics concerned with designing, building, and deploying robotic systems that augment, restore, or substitute impaired human physical and cognitive functions for people with disabilities, age-related decline, or rehabilitation needs. Systems span powered exoskeletons for gait restoration, robotic prostheses with sensorimotor feedback, autonomous mobility aids, and socially interactive companion robots that provide cognitive and emotional support. Operating in close physical proximity to humans, these devices must satisfy stringent requirements for safety, transparency, and user control while integrating sensing, AI-driven intent inference, and adaptive interfaces that respond to changing physiological states.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robotic-system", "label": "Robotic System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robotic-system",
+      "label": "Robotic System"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:exoskeleton-robot", "label": "Exoskeleton Robot"},
-      {"@id": "urn:ngm:class:robotic-prosthesis", "label": "Robotic Prosthesis"},
-      {"@id": "urn:ngm:class:social-robotics", "label": "Social Robotics"}
-    ],
-    "partOf": [
-      {"@id": "urn:ngm:class:rehabilitation-engineering", "label": "Rehabilitation Engineering"}
+      {
+        "@id": "urn:ngm:class:exoskeleton-robot",
+        "label": "Exoskeleton Robot"
+      },
+      {
+        "@id": "urn:ngm:class:social-robotics",
+        "label": "Social Robotics"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"},
-      {"@id": "urn:ngm:class:independent-living", "label": "Independent Living"},
-      {"@id": "urn:ngm:class:motor-rehabilitation", "label": "Motor Rehabilitation"}
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:independent-living",
+        "label": "Independent Living"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:real-time-control", "label": "Real-Time Control"},
-      {"@id": "urn:ngm:class:battery-management", "label": "Battery Management"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      },
+      {
+        "@id": "urn:ngm:class:battery-management-system",
+        "label": "Battery Management"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:lower-limb-exoskeleton", "label": "Lower Limb Exoskeleton"},
-      {"@id": "urn:ngm:class:brain-computer-interface", "label": "Brain-Computer Interface"},
-      {"@id": "urn:ngm:class:electromyography", "label": "Electromyography"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:lower-limb-exoskeleton",
+        "label": "Lower Limb Exoskeleton"
+      },
+      {
+        "@id": "urn:ngm:class:brain-computer-interfaces",
+        "label": "Brain-Computer Interface"
+      },
+      {
+        "@id": "urn:ngm:class:electromyography",
+        "label": "Electromyography"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:elderly-care", "label": "Elderly Care"},
-      {"@id": "urn:ngm:class:disability-inclusion", "label": "Disability Inclusion"}
+      {
+        "@id": "urn:ngm:class:disability-inclusion",
+        "label": "Disability Inclusion"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-13482", "label": "ISO 13482"},
-      {"@id": "urn:ngm:class:medical-device-regulation", "label": "Medical Device Regulation"}
+      {
+        "@id": "urn:ngm:class:iso-13482",
+        "label": "ISO 13482"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:industrial-robotics", "label": "Industrial Robotics"}
+      {
+        "@id": "urn:ngm:class:industrial-robotics",
+        "label": "Industrial Robotics"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-companions", "label": "AI companions"},
-      {"@id": "urn:ngm:class:affective-computing", "label": "Affective Computing"}
+      {
+        "@id": "urn:ngm:class:ai-companions",
+        "label": "AI companions"
+      },
+      {
+        "@id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:neuroprosthetics", "label": "Neuroprosthetics"},
-      {"@id": "urn:ngm:class:compliant-actuation", "label": "Compliant Actuation"},
-      {"@id": "urn:ngm:class:wearable-robotics", "label": "Wearable Robotics"}
+      {
+        "@id": "urn:ngm:class:neuroprosthetics",
+        "label": "Neuroprosthetics"
+      },
+      {
+        "@id": "urn:ngm:class:compliant-actuation",
+        "label": "Compliant Actuation"
+      },
+      {
+        "@id": "urn:ngm:class:wearable-robotics",
+        "label": "Wearable Robotics"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:rehabilitation-robotics", "label": "Rehabilitation Robotics"}
+    {
+      "@id": "urn:ngm:class:rehabilitation-robotics",
+      "label": "Rehabilitation Robotics"
+    }
   ],
   "quality": 0.75,
   "provenance": {

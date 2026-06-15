@@ -87,10 +87,6 @@ public:: true
       {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
-      },
-      {
-        "@id": "urn:ngm:class:endpoint-contract",
-        "label": "Endpoint Contract"
       }
     ],
     "enables": [
@@ -113,7 +109,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:cross-chain-interoperability-protocol",
+        "@id": "urn:ngm:class:cross-chain-interoperability",
         "label": "Cross-Chain Interoperability Protocol"
       },
       {
@@ -123,11 +119,11 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:ultra-light-node",
+        "@id": "urn:ngm:class:light-node",
         "label": "Ultra Light Node"
       },
       {
-        "@id": "urn:ngm:class:transaction-proof",
+        "@id": "urn:ngm:class:transaction",
         "label": "Transaction Proof"
       },
       {
@@ -141,7 +137,7 @@ public:: true
         "label": "EVM-Compatible Blockchain"
       },
       {
-        "@id": "urn:ngm:class:decentralized-oracle-network",
+        "@id": "urn:ngm:class:oracle-network",
         "label": "Decentralized Oracle Network"
       }
     ],
@@ -169,7 +165,7 @@ public:: true
         "label": "Axelar"
       },
       {
-        "@id": "urn:ngm:class:ibc-protocol",
+        "@id": "urn:ngm:class:ibc",
         "label": "IBC Protocol"
       },
       {
@@ -193,11 +189,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:stargate-finance",
-        "label": "Stargate Finance"
-      },
-      {
-        "@id": "urn:ngm:class:omni-fungible-token",
+        "@id": "urn:ngm:class:fungible-token",
         "label": "Omni Fungible Token"
       },
       {

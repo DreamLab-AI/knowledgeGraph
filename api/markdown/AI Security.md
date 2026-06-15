@@ -76,7 +76,7 @@ public:: true
         "label": "Red Teaming"
       },
       {
-        "@id": "urn:ngm:class:ai-model-monitoring",
+        "@id": "urn:ngm:class:ai-monitoring",
         "label": "AI Model Monitoring"
       },
       {
@@ -100,19 +100,11 @@ public:: true
         "label": "Adversarial Training"
       },
       {
-        "@id": "urn:ngm:class:input-validation",
-        "label": "Input Validation"
-      },
-      {
         "@id": "urn:ngm:class:access-control",
         "label": "Access Control"
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:secure-ai-deployment",
-        "label": "Secure AI Deployment"
-      },
       {
         "@id": "urn:ngm:class:trustworthy-ai",
         "label": "Trustworthy AI"
@@ -124,7 +116,7 @@ public:: true
         "label": "Machine Learning"
       },
       {
-        "@id": "urn:ngm:class:threat-modeling",
+        "@id": "urn:ngm:class:threat-modelling",
         "label": "Threat Modeling"
       }
     ],

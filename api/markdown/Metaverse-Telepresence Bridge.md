@@ -117,12 +117,6 @@ public:: true
         "@id": "urn:ngm:class:virtual-reality-telepresence",
         "label": "Virtual Reality Telepresence"
       }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:embodied-metaverse-collaboration",
-        "label": "EmbodiedMetaverseCollaboration"
-      }
     ]
   },
   "quality": 0.6,

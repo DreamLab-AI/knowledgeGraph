@@ -175,10 +175,6 @@ alias:: BlockchainScalability
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:high-throughput",
-        "label": "High Throughput"
-      },
-      {
         "@id": "urn:ngm:class:low-latency",
         "label": "Low Latency"
       },
@@ -211,10 +207,6 @@ alias:: BlockchainScalability
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:proof-of-validity",
-        "label": "Proof of Validity"
-      },
-      {
         "@id": "urn:ngm:class:fraud-proof",
         "label": "Fraud Proof"
       }
@@ -227,10 +219,6 @@ alias:: BlockchainScalability
       {
         "@id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Tree"
-      },
-      {
-        "@id": "urn:ngm:class:protocol-architecture",
-        "label": "Protocol Architecture"
       }
     ],
     "contrastsWith": [
@@ -249,7 +237,7 @@ alias:: BlockchainScalability
         "label": "AI Energy Optimisation"
       },
       {
-        "@id": "urn:ngm:class:system-performance",
+        "@id": "urn:ngm:class:performance",
         "label": "System Performance"
       },
       {

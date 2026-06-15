@@ -22,7 +22,7 @@
         "label": "End Effector"
       },
       {
-        "id": "urn:ngm:class:vision-system",
+        "id": "urn:ngm:class:computer-vision-system",
         "label": "Vision System"
       },
       {
@@ -52,14 +52,6 @@
       {
         "id": "urn:ngm:class:precision-agriculture",
         "label": "Precision Agriculture"
-      },
-      {
-        "id": "urn:ngm:class:variable-rate-application",
-        "label": "Variable Rate Application"
-      },
-      {
-        "id": "urn:ngm:class:crop-monitoring",
-        "label": "Crop Monitoring"
       }
     ],
     "dependsOn": [
@@ -101,10 +93,6 @@
       {
         "id": "urn:ngm:class:lidar",
         "label": "Lidar"
-      },
-      {
-        "id": "urn:ngm:class:rtk-gps",
-        "label": "RTK-GPS"
       },
       {
         "id": "urn:ngm:class:unmanned-aerial-vehicle",

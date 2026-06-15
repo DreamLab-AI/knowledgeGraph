@@ -91,21 +91,9 @@ public:: true
       {
         "@id": "urn:ngm:class:bribe-market",
         "label": "Bribe Market"
-      },
-      {
-        "@id": "urn:ngm:class:liquidity-direction",
-        "label": "Liquidity Direction"
-      },
-      {
-        "@id": "urn:ngm:class:emission-distribution",
-        "label": "Emission Distribution"
       }
     ],
     "hasPart": [
-      {
-        "@id": "urn:ngm:class:liquidity-gauge",
-        "label": "Liquidity Gauge"
-      },
       {
         "@id": "urn:ngm:class:epoch",
         "label": "Epoch"
@@ -113,23 +101,11 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:vetoken",
-        "label": "veToken"
-      },
-      {
-        "@id": "urn:ngm:class:token-locking",
-        "label": "Token Locking"
-      },
-      {
         "@id": "urn:ngm:class:decentralized-autonomous-organization",
         "label": "Decentralized Autonomous Organization"
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:vote-weight-allocation",
-        "label": "Vote Weight Allocation"
-      },
       {
         "@id": "urn:ngm:class:tokenomics",
         "label": "Tokenomics"
@@ -146,10 +122,6 @@ public:: true
       }
     ],
     "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:direct-governance-vote",
-        "label": "Direct Governance Vote"
-      },
       {
         "@id": "urn:ngm:class:quadratic-voting",
         "label": "Quadratic Voting"

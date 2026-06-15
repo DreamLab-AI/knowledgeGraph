@@ -39,46 +39,121 @@ alias:: Structure from Motion
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
-      {"@id": "urn:ngm:class:3d-reconstruction", "label": "3D Reconstruction"}
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:feature-matching", "label": "Feature Matching"},
-      {"@id": "urn:ngm:class:bundle-adjustment", "label": "Bundle Adjustment"},
-      {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"}
+      {
+        "@id": "urn:ngm:class:feature-matching",
+        "label": "Feature Matching"
+      },
+      {
+        "@id": "urn:ngm:class:bundle-adjustment",
+        "label": "Bundle Adjustment"
+      },
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
-      {"@id": "urn:ngm:class:multi-view-stereo", "label": "Multi-View Stereo"},
-      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"},
-      {"@id": "urn:ngm:class:3d-mapping", "label": "3D Mapping"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:multi-view-stereo",
+        "label": "Multi-View Stereo"
+      },
+      {
+        "@id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:3d-mapping",
+        "label": "3D Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:feature-detection", "label": "Feature Detection"},
-      {"@id": "urn:ngm:class:epipolar-geometry", "label": "Epipolar Geometry"},
-      {"@id": "urn:ngm:class:ransac", "label": "RANSAC"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:feature-detection",
+        "label": "Feature Detection"
+      },
+      {
+        "@id": "urn:ngm:class:epipolar-geometry",
+        "label": "Epipolar Geometry"
+      },
+      {
+        "@id": "urn:ngm:class:ransac",
+        "label": "RANSAC"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:visual-odometry", "label": "Visual Odometry"},
-      {"@id": "urn:ngm:class:lidar-scanning", "label": "Lidar Scanning"}
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:lidar-scanning",
+        "label": "Lidar Scanning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:neural-radiance-fields", "label": "Neural Radiance Fields"},
-      {"@id": "urn:ngm:class:gaussian-splatting", "label": "Gaussian Splatting"},
-      {"@id": "urn:ngm:class:scene-reconstruction", "label": "Scene Reconstruction"},
-      {"@id": "urn:ngm:class:stereo-vision", "label": "Stereo Vision"}
+      {
+        "@id": "urn:ngm:class:neural-radiance-fields",
+        "label": "Neural Radiance Fields"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      },
+      {
+        "@id": "urn:ngm:class:scene-reconstruction",
+        "label": "Scene Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:stereo-vision",
+        "label": "Stereo Vision"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:autonomous-vehicles", "label": "Autonomous Vehicles"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:sfm", "label": "SfM"}
+    {
+      "@id": "urn:ngm:class:sfm",
+      "label": "SfM"
+    }
   ],
   "quality": 0.72,
   "provenance": {

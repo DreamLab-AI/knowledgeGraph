@@ -96,10 +96,6 @@ public:: true
       {
         "@id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
-      },
-      {
-        "@id": "urn:ngm:class:data-encoding",
-        "label": "Data Encoding"
       }
     ],
     "implements": [
@@ -120,10 +116,6 @@ public:: true
       {
         "@id": "urn:ngm:class:flow-control",
         "label": "Flow Control"
-      },
-      {
-        "@id": "urn:ngm:class:cryptographic-handshake",
-        "label": "Cryptographic Handshake"
       }
     ],
     "supports": [

@@ -38,57 +38,135 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
-      {"@id": "urn:ngm:class:technical-documentation", "label": "Technical Documentation"},
-      {"@id": "urn:ngm:class:auditability", "label": "Auditability"}
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:technical-documentation",
+        "label": "Technical Documentation"
+      },
+      {
+        "@id": "urn:ngm:class:auditability",
+        "label": "Auditability"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:market-access", "label": "Market Access"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"}
+      {
+        "@id": "urn:ngm:class:market-access",
+        "label": "Market Access"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:consumer-protection", "label": "Consumer Protection"}
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
-      {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"},
-      {"@id": "urn:ngm:class:bias-testing", "label": "Bias Testing"},
-      {"@id": "urn:ngm:class:robustness-testing", "label": "Robustness Testing"}
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:robustness-testing",
+        "label": "Robustness Testing"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
-      {"@id": "urn:ngm:class:iso-iec-17000", "label": "ISO/IEC 17000"},
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"}
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-jtc1-sc42", "label": "ISO/IEC JTC1/SC42"},
-      {"@id": "urn:ngm:class:etsi", "label": "ETSI"},
-      {"@id": "urn:ngm:class:nist", "label": "NIST"}
+      {
+        "@id": "urn:ngm:class:iso-iec-jtc1-sc42",
+        "label": "ISO/IEC JTC1/SC42"
+      },
+      {
+        "@id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      },
+      {
+        "@id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:self-certification", "label": "Self-Certification"},
-      {"@id": "urn:ngm:class:voluntary-disclosure", "label": "Voluntary Disclosure"}
+      {
+        "@id": "urn:ngm:class:self-certification",
+        "label": "Self-Certification"
+      },
+      {
+        "@id": "urn:ngm:class:voluntary-disclosure",
+        "label": "Voluntary Disclosure"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:post-market-surveillance", "label": "Post-Market Surveillance"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:market-surveillance",
+        "label": "Post-Market Surveillance"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:certification", "label": "Certification"},
-      {"@id": "urn:ngm:class:accreditation", "label": "Accreditation"}
+      {
+        "@id": "urn:ngm:class:certification",
+        "label": "Certification"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:model-cards", "label": "Model Cards"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-cards",
+        "label": "Model Cards"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:conformance-assessment", "label": "Conformance Assessment"},
-    {"@id": "urn:ngm:class:compliance-assessment", "label": "Compliance Assessment"}
+    {
+      "@id": "urn:ngm:class:conformance-assessment",
+      "label": "Conformance Assessment"
+    },
+    {
+      "@id": "urn:ngm:class:compliance-assessment",
+      "label": "Compliance Assessment"
+    }
   ],
   "quality": 0.74,
   "provenance": {

@@ -23,58 +23,131 @@ public:: true
   "definition": "Kademlia DHT is a distributed hash table protocol introduced by Petar Maymounkov and David Mazières in 2002 that organises participating nodes into a structured peer-to-peer overlay network using XOR metric distances between 160-bit node identifiers, enabling efficient O(log n) key-value lookup, storage, and routing with provable convergence guarantees. Each node maintains a routing table of k-buckets covering progressively finer-grained regions of the identifier space, and uses iterative or recursive RPC-based lookups to locate the nodes closest to a target key in at most O(log n) network hops. Kademlia's XOR metric is the defining technical innovation that enables symmetric routing—every lookup converges along the same path regardless of direction—making it the most widely deployed DHT protocol underlying BitTorrent, Ethereum, IPFS, and numerous other decentralised systems.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-hash-table", "label": "Distributed Hash Table"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-hash-table",
+      "label": "Distributed Hash Table"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:k-bucket", "label": "K-Bucket"},
-      {"@id": "urn:ngm:class:xor-metric", "label": "XOR Metric"},
-      {"@id": "urn:ngm:class:routing-table", "label": "Routing Table"},
-      {"@id": "urn:ngm:class:node-identifier", "label": "Node Identifier"}
+      {
+        "@id": "urn:ngm:class:k-bucket",
+        "label": "K-Bucket"
+      },
+      {
+        "@id": "urn:ngm:class:xor-metric",
+        "label": "XOR Metric"
+      },
+      {
+        "@id": "urn:ngm:class:routing-table",
+        "label": "Routing Table"
+      },
+      {
+        "@id": "urn:ngm:class:node-identifier",
+        "label": "Node Identifier"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
-      {"@id": "urn:ngm:class:remote-procedure-call", "label": "Remote Procedure Call"},
-      {"@id": "urn:ngm:class:bootstrap-node", "label": "Bootstrap Node"}
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      },
+      {
+        "@id": "urn:ngm:class:bootstrap-node",
+        "label": "Bootstrap Node"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ipfs", "label": "IPFS"},
-      {"@id": "urn:ngm:class:libp2p", "label": "libp2p"},
-      {"@id": "urn:ngm:class:filecoin", "label": "Filecoin"},
-      {"@id": "urn:ngm:class:content-routing", "label": "Content Routing"},
-      {"@id": "urn:ngm:class:peer-discovery", "label": "Peer Discovery"},
-      {"@id": "urn:ngm:class:decentralised-storage", "label": "Decentralised Storage"}
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "@id": "urn:ngm:class:libp2p",
+        "label": "libp2p"
+      },
+      {
+        "@id": "urn:ngm:class:filecoin",
+        "label": "Filecoin"
+      },
+      {
+        "@id": "urn:ngm:class:peer-discovery",
+        "label": "Peer Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:distributed-hash-table", "label": "Distributed Hash Table"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}
+      {
+        "@id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:distributed-system-protocol", "label": "Distributed System Protocol"},
-      {"@id": "urn:ngm:class:overlay-network", "label": "Overlay Network"}
+      {
+        "@id": "urn:ngm:class:distributed-system-protocol",
+        "label": "Distributed System Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:overlay-network",
+        "label": "Overlay Network"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:udp", "label": "UDP"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:chord-dht", "label": "Chord DHT"},
-      {"@id": "urn:ngm:class:pastry-dht", "label": "Pastry DHT"},
-      {"@id": "urn:ngm:class:central-index-server", "label": "Central Index Server"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:udp",
+        "label": "UDP"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
-      {"@id": "urn:ngm:class:sybil-attack", "label": "Sybil Attack"},
-      {"@id": "urn:ngm:class:eclipse-attack", "label": "Eclipse Attack"},
-      {"@id": "urn:ngm:class:ethereum-node-discovery", "label": "Ethereum Node Discovery"}
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:sybil-attack",
+        "label": "Sybil Attack"
+      },
+      {
+        "@id": "urn:ngm:class:eclipse-attack",
+        "label": "Eclipse Attack"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:kad-dht", "label": "Kad DHT"},
-    {"@id": "urn:ngm:class:mainline-dht", "label": "Mainline DHT"}
+    {
+      "@id": "urn:ngm:class:kad-dht",
+      "label": "Kad DHT"
+    },
+    {
+      "@id": "urn:ngm:class:mainline-dht",
+      "label": "Mainline DHT"
+    }
   ],
   "quality": 0.72,
   "provenance": {

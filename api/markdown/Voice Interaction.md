@@ -135,10 +135,6 @@ alias:: VoiceInteraction
         "label": "Natural Language Understanding"
       },
       {
-        "@id": "urn:ngm:class:voice-commands",
-        "label": "Voice Commands"
-      },
-      {
         "@id": "urn:ngm:class:speech-recognition",
         "label": "Speech Recognition"
       },
@@ -167,11 +163,7 @@ alias:: VoiceInteraction
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:hands-free-control",
-        "label": "Hands-Free Control"
-      },
-      {
-        "@id": "urn:ngm:class:natural-communication",
+        "@id": "urn:ngm:class:natural-interaction",
         "label": "Natural Communication"
       },
       {
@@ -185,7 +177,7 @@ alias:: VoiceInteraction
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:multimodal-ai-architecture-interaction",
+        "@id": "urn:ngm:class:multimodal-ai-architecture",
         "label": "Multimodal Interaction"
       }
     ]

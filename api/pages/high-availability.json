@@ -28,10 +28,6 @@
       {
         "id": "urn:ngm:class:data-replication",
         "label": "Data Replication"
-      },
-      {
-        "id": "urn:ngm:class:automatic-failover",
-        "label": "Automatic Failover"
       }
     ],
     "requires": [
@@ -72,7 +68,7 @@
         "label": "Network Infrastructure"
       },
       {
-        "id": "urn:ngm:class:storage-replication",
+        "id": "urn:ngm:class:replication",
         "label": "Storage Replication"
       }
     ],
@@ -107,7 +103,7 @@
         "label": "Cloud Infrastructure"
       },
       {
-        "id": "urn:ngm:class:consensus-algorithms",
+        "id": "urn:ngm:class:consensus-algorithm",
         "label": "Consensus Algorithms"
       },
       {

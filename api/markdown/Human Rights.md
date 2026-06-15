@@ -104,20 +104,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:privacy-rights",
-        "label": "Privacy Rights"
-      },
-      {
         "@id": "urn:ngm:class:digital-rights",
         "label": "Digital Rights"
       },
       {
         "@id": "urn:ngm:class:freedom-of-expression",
         "label": "Freedom of Expression"
-      },
-      {
-        "@id": "urn:ngm:class:right-to-fair-trial",
-        "label": "Right to Fair Trial"
       }
     ],
     "partOf": [
@@ -164,23 +156,13 @@ public:: true
         "label": "Data Protection"
       }
     ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:universal-declaration-of-human-rights",
-        "label": "Universal Declaration of Human Rights"
-      },
-      {
-        "@id": "urn:ngm:class:council-of-europe-ai-treaty",
-        "label": "Council of Europe AI Treaty"
-      }
-    ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
-        "@id": "urn:ngm:class:oecd-ai-principles-2024",
+        "@id": "urn:ngm:class:oecd-ai-principles",
         "label": "OECD AI Principles 2024"
       },
       {
@@ -192,10 +174,6 @@ public:: true
       {
         "@id": "urn:ngm:class:surveillance-technology",
         "label": "Surveillance Technology"
-      },
-      {
-        "@id": "urn:ngm:class:social-scoring",
-        "label": "Social Scoring"
       }
     ],
     "bridgesTo": [
@@ -222,7 +200,7 @@ public:: true
         "label": "Algorithmic Bias"
       },
       {
-        "@id": "urn:ngm:class:consent",
+        "@id": "urn:ngm:class:informed-consent",
         "label": "Consent"
       }
     ]

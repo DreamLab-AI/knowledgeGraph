@@ -104,26 +104,6 @@ public:: true
     }
   ],
   "relations": {
-    "requires": [
-      {
-        "@id": "urn:ngm:class:control-algorithm-tuning",
-        "label": "Control Algorithm Tuning"
-      },
-      {
-        "@id": "urn:ngm:class:mechanical-compensation",
-        "label": "Mechanical Compensation"
-      }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:backlash-measurement",
-        "label": "Backlash Measurement"
-      },
-      {
-        "@id": "urn:ngm:class:performance-degradation-detection",
-        "label": "Performance Degradation Detection"
-      }
-    ],
     "partOf": [
       {
         "@id": "urn:ngm:class:joint-mechanics",

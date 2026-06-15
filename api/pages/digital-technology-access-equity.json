@@ -24,10 +24,6 @@
       {
         "id": "urn:ngm:class:digital-literacy",
         "label": "Digital Literacy"
-      },
-      {
-        "id": "urn:ngm:class:affordable-access",
-        "label": "Affordable Access"
       }
     ],
     "requires": [
@@ -102,12 +98,8 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:itu-standards",
+        "id": "urn:ngm:class:itu-t",
         "label": "ITU Standards"
-      },
-      {
-        "id": "urn:ngm:class:un-broadband-commission",
-        "label": "UN Broadband Commission"
       }
     ],
     "partOf": [
@@ -130,7 +122,7 @@
         "label": "Data Sovereignty"
       },
       {
-        "id": "urn:ngm:class:human-rights-and-technology",
+        "id": "urn:ngm:class:human-rights",
         "label": "Human Rights and Technology"
       }
     ]

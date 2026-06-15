@@ -138,19 +138,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:blockchain-storage",
-        "label": "Blockchain Storage"
-      },
-      {
         "@id": "urn:ngm:class:cache-layer",
         "label": "Cache Layer"
       },
       {
-        "@id": "urn:ngm:class:cdn-storage",
-        "label": "CDN Storage"
-      },
-      {
-        "@id": "urn:ngm:class:object-storage-service",
+        "@id": "urn:ngm:class:object-storage",
         "label": "Object Storage Service"
       },
       {
@@ -160,7 +152,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:backup-systems",
+        "@id": "urn:ngm:class:backup-and-recovery",
         "label": "Backup Systems"
       },
       {
@@ -174,19 +166,11 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:asset-persistence",
-        "label": "Asset Persistence"
-      },
-      {
         "@id": "urn:ngm:class:content-distribution",
         "label": "Content Distribution"
       },
       {
-        "@id": "urn:ngm:class:user-profile-storage",
-        "label": "User Profile Storage"
-      },
-      {
-        "@id": "urn:ngm:class:world-state-management",
+        "@id": "urn:ngm:class:state-management",
         "label": "World State Management"
       },
       {

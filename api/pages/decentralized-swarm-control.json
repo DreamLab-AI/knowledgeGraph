@@ -22,20 +22,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:agent-autonomy",
-        "label": "Agent Autonomy"
-      },
-      {
-        "id": "urn:ngm:class:emergent-behaviour",
+        "id": "urn:ngm:class:emergent-behavior",
         "label": "Emergent Behaviour"
-      },
-      {
-        "id": "urn:ngm:class:local-decision-logic",
-        "label": "Local Decision Logic"
-      },
-      {
-        "id": "urn:ngm:class:neighbourhood-communication",
-        "label": "Neighbourhood Communication"
       }
     ],
     "requires": [
@@ -44,26 +32,14 @@
         "label": "Asynchronous Coordination"
       },
       {
-        "id": "urn:ngm:class:distributed-algorithm",
-        "label": "Distributed Algorithm"
-      },
-      {
         "id": "urn:ngm:class:inter-agent-communication",
         "label": "Inter-Agent Communication"
-      },
-      {
-        "id": "urn:ngm:class:local-sensing",
-        "label": "Local Sensing"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:adaptive-swarm-behaviour",
+        "id": "urn:ngm:class:adaptive-behaviour",
         "label": "Adaptive Swarm Behaviour"
-      },
-      {
-        "id": "urn:ngm:class:emergent-task-performance",
-        "label": "Emergent Task Performance"
       },
       {
         "id": "urn:ngm:class:scalability",

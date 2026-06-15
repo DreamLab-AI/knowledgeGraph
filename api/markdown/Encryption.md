@@ -37,54 +37,141 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:ciphering", "label": "Ciphering"},
-    {"@id": "urn:ngm:class:data-encryption", "label": "Data Encryption"}
+    {
+      "@id": "urn:ngm:class:ciphering",
+      "label": "Ciphering"
+    },
+    {
+      "@id": "urn:ngm:class:data-encryption",
+      "label": "Data Encryption"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:key-management", "label": "Key Management"},
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:random-number-generation", "label": "Random Number Generation"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:confidential-computing", "label": "Confidential Computing"},
-      {"@id": "urn:ngm:class:end-to-end-encryption", "label": "End-to-End Encryption"},
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
-      {"@id": "urn:ngm:class:secure-communication", "label": "Secure Communication"}
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      },
+      {
+        "@id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:aes", "label": "AES"},
-      {"@id": "urn:ngm:class:rsa", "label": "RSA"},
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
-      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"}
+      {
+        "@id": "urn:ngm:class:aes",
+        "label": "AES"
+      },
+      {
+        "@id": "urn:ngm:class:rsa",
+        "label": "RSA"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:key-exchange", "label": "Key Exchange"}
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:transport-layer-security", "label": "Transport Layer Security"},
-      {"@id": "urn:ngm:class:secure-multiparty-computation", "label": "Secure Multiparty Computation"}
+      {
+        "@id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      },
+      {
+        "@id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multiparty Computation"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist", "label": "NIST"},
-      {"@id": "urn:ngm:class:iso-iec-18033", "label": "ISO-IEC 18033"}
+      {
+        "@id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-18033",
+        "label": "ISO-IEC 18033"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:steganography", "label": "Steganography"},
-      {"@id": "urn:ngm:class:obfuscation", "label": "Obfuscation"}
+      {
+        "@id": "urn:ngm:class:steganography",
+        "label": "Steganography"
+      },
+      {
+        "@id": "urn:ngm:class:obfuscation",
+        "label": "Obfuscation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:zero-knowledge", "label": "Zero Knowledge"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge",
+        "label": "Zero Knowledge"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ]
   },
   "quality": 0.74,

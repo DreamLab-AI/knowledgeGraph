@@ -584,54 +584,18 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:ai-infrastructure-providers",
+        "@id": "urn:ngm:class:ai-infrastructure",
         "label": "AI Infrastructure Providers"
       },
       {
-        "@id": "urn:ngm:class:ai-research-laboratory",
-        "label": "AI Research Laboratory"
-      },
-      {
-        "@id": "urn:ngm:class:application-ai-companies",
-        "label": "Application AI Companies"
-      },
-      {
-        "@id": "urn:ngm:class:capital-base",
-        "label": "Capital Base"
-      },
-      {
-        "@id": "urn:ngm:class:foundation-model-labs",
-        "label": "Foundation Model Labs"
-      },
-      {
-        "@id": "urn:ngm:class:founding-team",
-        "label": "Founding Team"
-      },
-      {
-        "@id": "urn:ngm:class:open-source-ai-platforms",
+        "@id": "urn:ngm:class:open-source-ai",
         "label": "Open Source AI Platforms"
-      },
-      {
-        "@id": "urn:ngm:class:vertical-ai-specialists",
-        "label": "Vertical AI Specialists"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:capital-investment",
-        "label": "Capital Investment"
-      },
-      {
         "@id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
-      },
-      {
-        "@id": "urn:ngm:class:regulatory-license",
-        "label": "Regulatory License"
-      },
-      {
-        "@id": "urn:ngm:class:talent-pool",
-        "label": "Talent Pool"
       },
       {
         "@id": "urn:ngm:class:cloud-infrastructure",
@@ -648,10 +612,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:ai-apis",
-        "label": "AI APIs"
-      },
-      {
         "@id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
       },
@@ -660,15 +620,11 @@ public:: true
         "label": "Enterprise AI Adoption"
       },
       {
-        "@id": "urn:ngm:class:foundation-model-licensing",
-        "label": "Foundation Model Licensing"
-      },
-      {
-        "@id": "urn:ngm:class:generative-ai-products",
+        "@id": "urn:ngm:class:generative-ai",
         "label": "Generative AI Products"
       },
       {
-        "@id": "urn:ngm:class:synthetic-media-creation",
+        "@id": "urn:ngm:class:synthetic-media",
         "label": "Synthetic Media Creation"
       },
       {
@@ -678,10 +634,6 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:commercial-productisation",
-        "label": "Commercial Productisation"
-      },
-      {
         "@id": "urn:ngm:class:frontier-model-training",
         "label": "Frontier Model Training"
       },
@@ -690,15 +642,11 @@ public:: true
         "label": "Inference Serving"
       },
       {
-        "@id": "urn:ngm:class:model-distribution",
-        "label": "Model Distribution"
-      },
-      {
-        "@id": "urn:ngm:class:rlhf-alignment",
+        "@id": "urn:ngm:class:rlhf",
         "label": "RLHF Alignment"
       },
       {
-        "@id": "urn:ngm:class:safety-research-programmes",
+        "@id": "urn:ngm:class:ai-safety-research",
         "label": "Safety Research Programmes"
       }
     ],
@@ -734,28 +682,12 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:agi-race",
-        "label": "AGI Race"
-      },
-      {
-        "@id": "urn:ngm:class:ai-acquisitions-and-m-and-a",
-        "label": "AI Acquisitions and M&A"
-      },
-      {
-        "@id": "urn:ngm:class:ai-funding-landscape",
-        "label": "AI Funding Landscape"
-      },
-      {
         "@id": "urn:ngm:class:ai-talent-war",
         "label": "AI Talent War"
       },
       {
         "@id": "urn:ngm:class:compute-cluster",
         "label": "Compute Cluster"
-      },
-      {
-        "@id": "urn:ngm:class:hyperscaler-cloud",
-        "label": "Hyperscaler Cloud"
       },
       {
         "@id": "urn:ngm:class:sovereign-ai",
@@ -768,10 +700,6 @@ public:: true
         "label": "Creative Industries"
       },
       {
-        "@id": "urn:ngm:class:defence-and-security-ai",
-        "label": "Defence and Security AI"
-      },
-      {
         "@id": "urn:ngm:class:education-technology",
         "label": "Education Technology"
       },
@@ -782,10 +710,6 @@ public:: true
       {
         "@id": "urn:ngm:class:healthcare-ai",
         "label": "Healthcare AI"
-      },
-      {
-        "@id": "urn:ngm:class:legal-tech",
-        "label": "Legal Tech"
       },
       {
         "@id": "urn:ngm:class:national-ai-strategy",
@@ -814,12 +738,8 @@ public:: true
         "label": "Partnership on AI"
       },
       {
-        "@id": "urn:ngm:class:uk-ai-security-institute",
+        "@id": "urn:ngm:class:uk-ai-safety-institute",
         "label": "UK AI Security Institute"
-      },
-      {
-        "@id": "urn:ngm:class:white-house-voluntary-ai-commitments",
-        "label": "White House Voluntary AI Commitments"
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",

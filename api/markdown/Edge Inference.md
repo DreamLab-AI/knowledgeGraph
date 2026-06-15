@@ -61,16 +61,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:model-quantisation",
+        "@id": "urn:ngm:class:neural-network-quantisation",
         "label": "Model Quantisation"
       },
       {
         "@id": "urn:ngm:class:model-pruning",
         "label": "Model Pruning"
-      },
-      {
-        "@id": "urn:ngm:class:on-device-runtime",
-        "label": "On-Device Runtime"
       }
     ],
     "partOf": [
@@ -93,7 +89,7 @@ public:: true
         "label": "Knowledge Distillation"
       },
       {
-        "@id": "urn:ngm:class:neural-network-compression",
+        "@id": "urn:ngm:class:neural-network-quantisation",
         "label": "Neural Network Compression"
       },
       {
@@ -107,7 +103,7 @@ public:: true
         "label": "Real-Time AI"
       },
       {
-        "@id": "urn:ngm:class:on-device-privacy",
+        "@id": "urn:ngm:class:on-device-inference",
         "label": "On-Device Privacy"
       },
       {
@@ -127,7 +123,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:machine-learning-inference",
+        "@id": "urn:ngm:class:inference",
         "label": "Machine Learning Inference"
       }
     ],
@@ -137,7 +133,7 @@ public:: true
         "label": "ONNX Runtime"
       },
       {
-        "@id": "urn:ngm:class:tensorflow-lite",
+        "@id": "urn:ngm:class:tensor-flow-lite",
         "label": "TensorFlow Lite"
       },
       {

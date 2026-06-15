@@ -41,16 +41,8 @@
         "label": "Attack Vector"
       },
       {
-        "id": "urn:ngm:class:51-percent-attack",
+        "id": "urn:ngm:class:51-attack",
         "label": "51% Attack"
-      },
-      {
-        "id": "urn:ngm:class:race-attack",
-        "label": "Race Attack"
-      },
-      {
-        "id": "urn:ngm:class:finney-attack",
-        "label": "Finney Attack"
       }
     ],
     "dependsOn": [

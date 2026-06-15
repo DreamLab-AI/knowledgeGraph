@@ -38,45 +38,107 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:text-to-speech", "label": "Text-to-Speech"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:speaker-embedding", "label": "Speaker Embedding"},
-      {"@id": "urn:ngm:class:vocoder", "label": "Vocoder"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
+      {
+        "@id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:speaker-embedding",
+        "label": "Speaker Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:speech-corpus", "label": "Speech Corpus"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:mel-spectrogram", "label": "Mel-Spectrogram"}
+      {
+        "@id": "urn:ngm:class:speech-corpus",
+        "label": "Speech Corpus"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:personalised-voice-assistant", "label": "Personalised Voice Assistant"},
-      {"@id": "urn:ngm:class:audiobook-narration", "label": "Audiobook Narration"},
-      {"@id": "urn:ngm:class:accessibility-technology", "label": "Accessibility Technology"},
-      {"@id": "urn:ngm:class:audio-deepfake", "label": "Audio Deepfake"}
+      {
+        "@id": "urn:ngm:class:voice-assistant",
+        "label": "Personalised Voice Assistant"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility-technology",
+        "label": "Accessibility Technology"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:deepfakes", "label": "Deepfakes"},
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:biometric-authentication", "label": "Biometric Authentication"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:synthetic-media", "label": "Synthetic Media"}
+      {
+        "@id": "urn:ngm:class:deepfakes",
+        "label": "Deepfakes"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:voice-conversion", "label": "Voice Conversion"},
-      {"@id": "urn:ngm:class:concatenative-synthesis", "label": "Concatenative Synthesis"}
+      {
+        "@id": "urn:ngm:class:voice-conversion",
+        "label": "Voice Conversion"
+      },
+      {
+        "@id": "urn:ngm:class:speech-synthesis",
+        "label": "Concatenative Synthesis"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:digital-watermarking", "label": "Digital Watermarking"},
-      {"@id": "urn:ngm:class:content-provenance", "label": "Content Provenance"}
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:digital-watermarking",
+        "label": "Digital Watermarking"
+      },
+      {
+        "@id": "urn:ngm:class:content-provenance",
+        "label": "Content Provenance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:voice-synthesis", "label": "Voice Synthesis"},
-    {"@id": "urn:ngm:class:speaker-cloning", "label": "Speaker Cloning"}
+    {
+      "@id": "urn:ngm:class:voice-synthesis",
+      "label": "Voice Synthesis"
+    },
+    {
+      "@id": "urn:ngm:class:speaker-cloning",
+      "label": "Speaker Cloning"
+    }
   ],
   "quality": 0.74,
   "provenance": {

@@ -24,53 +24,131 @@ alias:: HashRate
   "definition": "Hash rate is the aggregate computational throughput of a proof-of-work blockchain network, measured as the number of hash function evaluations performed per unit of time across all participating mining nodes. It serves as the primary quantitative indicator of a network's security: a higher hash rate means an attacker must control and operate more hardware to execute a 51% attack, making double-spend attacks proportionally more expensive. Hash rate is typically expressed in hashes per second (H/s) with SI prefixes (kH/s, MH/s, GH/s, TH/s, PH/s, EH/s) and fluctuates with the entry or exit of miners, hardware efficiency improvements, and changes in mining profitability.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:proof-of-work",
+      "label": "Proof Of Work"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:network-hash-rate", "label": "Network Hash Rate"}
+      {
+        "@id": "urn:ngm:class:network-hash-rate",
+        "label": "Network Hash Rate"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:compute-resources", "label": "Compute Resources"},
-      {"@id": "urn:ngm:class:application-specific-integrated-circuit", "label": "Application-Specific Integrated Circuit"},
-      {"@id": "urn:ngm:class:energy-consumption", "label": "Energy Consumption"}
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:compute-resources",
+        "label": "Compute Resources"
+      },
+      {
+        "@id": "urn:ngm:class:application-specific-integrated-circuit",
+        "label": "Application-Specific Integrated Circuit"
+      },
+      {
+        "@id": "urn:ngm:class:energy-consumption",
+        "label": "Energy Consumption"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"},
-      {"@id": "urn:ngm:class:double-spend-prevention", "label": "Double Spend Prevention"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:double-spend-prevention",
+        "label": "Double Spend Prevention"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:mining", "label": "Mining"},
-      {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"},
-      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
-      {"@id": "urn:ngm:class:mining-profitability", "label": "Mining Profitability"}
+      {
+        "@id": "urn:ngm:class:mining",
+        "label": "Mining"
+      },
+      {
+        "@id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      },
+      {
+        "@id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:network-security", "label": "Network Security"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof Of Stake"},
-      {"@id": "urn:ngm:class:validator-stake", "label": "Validator Stake"}
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof Of Stake"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:difficulty", "label": "Difficulty"},
-      {"@id": "urn:ngm:class:difficulty-adjustment", "label": "Difficulty Adjustment"},
-      {"@id": "urn:ngm:class:51-attack", "label": "51% Attack"},
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"},
-      {"@id": "urn:ngm:class:halving", "label": "Halving"},
-      {"@id": "urn:ngm:class:block-time", "label": "Block Time"}
+      {
+        "@id": "urn:ngm:class:difficulty",
+        "label": "Difficulty"
+      },
+      {
+        "@id": "urn:ngm:class:difficulty-adjustment",
+        "label": "Difficulty Adjustment"
+      },
+      {
+        "@id": "urn:ngm:class:51-attack",
+        "label": "51% Attack"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "@id": "urn:ngm:class:halving",
+        "label": "Halving"
+      },
+      {
+        "@id": "urn:ngm:class:block-time",
+        "label": "Block Time"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:energy-efficiency", "label": "Energy Efficiency"},
-      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}
+      {
+        "@id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:mining-hash-rate", "label": "Mining Hash Rate"},
-    {"@id": "urn:ngm:class:network-hashpower", "label": "Network Hashpower"}
+    {
+      "@id": "urn:ngm:class:mining-hash-rate",
+      "label": "Mining Hash Rate"
+    },
+    {
+      "@id": "urn:ngm:class:network-hashpower",
+      "label": "Network Hashpower"
+    }
   ],
   "quality": 0.72,
   "provenance": {

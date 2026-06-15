@@ -93,7 +93,7 @@ alias:: AccessControl
         "label": "Audit Logging"
       },
       {
-        "@id": "urn:ngm:class:permission-management",
+        "@id": "urn:ngm:class:identity-and-access-management",
         "label": "Permission Management"
       }
     ],
@@ -113,7 +113,7 @@ alias:: AccessControl
         "label": "Compliance"
       },
       {
-        "@id": "urn:ngm:class:system-security",
+        "@id": "urn:ngm:class:security",
         "label": "System Security"
       },
       {
@@ -159,7 +159,7 @@ alias:: AccessControl
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:zero-trust-security",
+        "@id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Security"
       },
       {
@@ -203,7 +203,7 @@ alias:: AccessControl
         "label": "Multi-Factor Authentication"
       },
       {
-        "@id": "urn:ngm:class:security-mechanism",
+        "@id": "urn:ngm:class:security",
         "label": "Security Mechanism"
       }
     ]

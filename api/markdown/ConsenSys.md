@@ -59,20 +59,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:metamask",
-        "label": "MetaMask"
-      },
-      {
         "@id": "urn:ngm:class:infura",
         "label": "Infura"
-      },
-      {
-        "@id": "urn:ngm:class:linea",
-        "label": "Linea"
-      },
-      {
-        "@id": "urn:ngm:class:truffle-suite",
-        "label": "Truffle Suite"
       }
     ],
     "requires": [
@@ -115,7 +103,7 @@ public:: true
         "label": "Smart Contract"
       },
       {
-        "@id": "urn:ngm:class:json-rpc",
+        "@id": "urn:ngm:class:json-data-interchange-format-rpc",
         "label": "JSON-RPC"
       },
       {
@@ -125,7 +113,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:ethereum-virtual-machine",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       },
       {
@@ -141,10 +129,6 @@ public:: true
       {
         "@id": "urn:ngm:class:coinbase",
         "label": "Coinbase"
-      },
-      {
-        "@id": "urn:ngm:class:alchemy",
-        "label": "Alchemy"
       }
     ],
     "bridgesTo": [
@@ -159,7 +143,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:ethereum-foundation",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-foundation",
         "label": "Ethereum Foundation"
       },
       {
@@ -169,10 +153,6 @@ public:: true
       {
         "@id": "urn:ngm:class:token-standard",
         "label": "Token Standard"
-      },
-      {
-        "@id": "urn:ngm:class:blockchain-software-company",
-        "label": "Blockchain Software Company"
       }
     ]
   },

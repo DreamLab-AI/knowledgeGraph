@@ -346,24 +346,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:battery-storage",
-        "label": "Battery Storage"
-      },
-      {
-        "@id": "urn:ngm:class:carbon-intensity",
-        "label": "Carbon Intensity"
-      },
-      {
         "@id": "urn:ngm:class:data-centre",
         "label": "Data Centre"
       },
       {
         "@id": "urn:ngm:class:demand-response",
         "label": "Demand Response"
-      },
-      {
-        "@id": "urn:ngm:class:grid-connection",
-        "label": "Grid Connection"
       },
       {
         "@id": "urn:ngm:class:nuclear-energy",
@@ -386,7 +374,7 @@ public:: true
         "label": "Transmission Network"
       },
       {
-        "@id": "urn:ngm:class:water-cooling",
+        "@id": "urn:ngm:class:liquid-cooling",
         "label": "Water Cooling"
       },
       {
@@ -396,24 +384,8 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:balancing-services",
-        "label": "Balancing Services"
-      },
-      {
-        "@id": "urn:ngm:class:capacity-market",
-        "label": "Capacity Market"
-      },
-      {
         "@id": "urn:ngm:class:demand-forecasting",
         "label": "Demand Forecasting"
-      },
-      {
-        "@id": "urn:ngm:class:generation-capacity",
-        "label": "Generation Capacity"
-      },
-      {
-        "@id": "urn:ngm:class:grid-connection-queue",
-        "label": "Grid Connection Queue"
       },
       {
         "@id": "urn:ngm:class:grid-infrastructure",
@@ -425,18 +397,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:ai-data-centres",
-        "label": "AI Data Centres"
-      },
-      {
-        "@id": "urn:ngm:class:electrification",
-        "label": "Electrification"
-      },
-      {
-        "@id": "urn:ngm:class:hyperscaler-operations",
-        "label": "Hyperscaler Operations"
-      },
       {
         "@id": "urn:ngm:class:net-zero-targets",
         "label": "Net Zero Targets"
@@ -460,24 +420,12 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:behind-the-meter-generation",
-        "label": "Behind-the-Meter Generation"
-      },
-      {
-        "@id": "urn:ngm:class:capacity-markets",
-        "label": "Capacity Markets"
-      },
-      {
         "@id": "urn:ngm:class:carbon-offsetting",
         "label": "Carbon Offsetting"
       },
       {
         "@id": "urn:ngm:class:demand-response",
         "label": "Demand Response"
-      },
-      {
-        "@id": "urn:ngm:class:power-purchase-agreements",
-        "label": "Power Purchase Agreements"
       },
       {
         "@id": "urn:ngm:class:small-modular-reactors",
@@ -490,10 +438,6 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:battery-energy-storage",
-        "label": "Battery Energy Storage"
-      },
-      {
         "@id": "urn:ngm:class:green-hydrogen",
         "label": "Green Hydrogen"
       },
@@ -502,20 +446,8 @@ public:: true
         "label": "Nuclear Energy"
       },
       {
-        "@id": "urn:ngm:class:offshore-wind",
-        "label": "Offshore Wind"
-      },
-      {
-        "@id": "urn:ngm:class:pumped-hydro-storage",
-        "label": "Pumped Hydro Storage"
-      },
-      {
         "@id": "urn:ngm:class:small-modular-reactors",
         "label": "Small Modular Reactors"
-      },
-      {
-        "@id": "urn:ngm:class:solar-pv",
-        "label": "Solar PV"
       }
     ],
     "relatedTo": [
@@ -584,36 +516,6 @@ public:: true
       {
         "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
         "label": "Instruction-Following Conversational AI System"
-      }
-    ],
-    "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:epri-standards",
-        "label": "EPRI Standards"
-      },
-      {
-        "@id": "urn:ngm:class:ferc-regulations",
-        "label": "FERC Regulations"
-      },
-      {
-        "@id": "urn:ngm:class:iea-electricity-reports",
-        "label": "IEA Electricity Reports"
-      },
-      {
-        "@id": "urn:ngm:class:ieee-power-standards",
-        "label": "IEEE Power Standards"
-      },
-      {
-        "@id": "urn:ngm:class:national-grid-eso",
-        "label": "National Grid ESO"
-      },
-      {
-        "@id": "urn:ngm:class:ofgem",
-        "label": "Ofgem"
-      },
-      {
-        "@id": "urn:ngm:class:sbti-net-zero-standard",
-        "label": "SBTi Net-Zero Standard"
       }
     ]
   },

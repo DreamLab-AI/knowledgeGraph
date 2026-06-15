@@ -22,12 +22,8 @@
         "label": "Micro-OLED Display"
       },
       {
-        "id": "urn:ngm:class:apple-r1-chip",
+        "id": "urn:ngm:class:apple-inc-technology-corporation",
         "label": "Apple R1 Chip"
-      },
-      {
-        "id": "urn:ngm:class:apple-m2-chip",
-        "label": "Apple M2 Chip"
       },
       {
         "id": "urn:ngm:class:visionos",
@@ -58,7 +54,7 @@
         "label": "Immersive Experience"
       },
       {
-        "id": "urn:ngm:class:spatial-user-interface",
+        "id": "urn:ngm:class:spatial-user-interfaces",
         "label": "Spatial User Interface"
       }
     ],
@@ -70,7 +66,7 @@
         "label": "Meta Quest"
       },
       {
-        "id": "urn:ngm:class:microsoft-hololens",
+        "id": "urn:ngm:class:tele-025-microsoft-hololens",
         "label": "Microsoft HoloLens"
       }
     ],
@@ -106,20 +102,11 @@
         "label": "RealityKit"
       }
     ],
-    "supports": [
-      {
-        "id": "urn:ngm:class:enterprise-xr",
-        "label": "Enterprise Extended Reality"
-      },
-      {
-        "id": "urn:ngm:class:immersive-training-simulation",
-        "label": "Immersive Training Simulation"
-      }
-    ],
+    "supports": [],
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:apple-ecosystem",
+        "id": "urn:ngm:class:apple-inc-technology-corporation",
         "label": "Apple Ecosystem"
       }
     ],

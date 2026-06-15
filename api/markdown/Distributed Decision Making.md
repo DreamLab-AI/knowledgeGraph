@@ -312,10 +312,6 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:appeal-mechanism",
-        "label": "Appeal Mechanism"
-      },
-      {
         "@id": "urn:ngm:class:conflict-resolution",
         "label": "Conflict Resolution"
       },
@@ -324,16 +320,8 @@ public:: true
         "label": "Consensus Protocol"
       },
       {
-        "@id": "urn:ngm:class:decision-documentation",
-        "label": "Decision Documentation"
-      },
-      {
-        "@id": "urn:ngm:class:delegation-mechanisms",
+        "@id": "urn:ngm:class:delegation-system",
         "label": "Delegation Mechanisms"
-      },
-      {
-        "@id": "urn:ngm:class:quorum-systems",
-        "label": "Quorum Systems"
       },
       {
         "@id": "urn:ngm:class:voting-mechanism",
@@ -342,20 +330,8 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:explicit-decision-criteria",
-        "label": "Explicit Decision Criteria"
-      },
-      {
         "@id": "urn:ngm:class:incentive-compatibility",
         "label": "Incentive Compatibility"
-      },
-      {
-        "@id": "urn:ngm:class:time-boxed-feedback-windows",
-        "label": "Time-boxed Feedback Windows"
-      },
-      {
-        "@id": "urn:ngm:class:transparent-information-access",
-        "label": "Transparent Information Access"
       },
       {
         "@id": "urn:ngm:class:byzantine-fault-tolerance",
@@ -368,14 +344,6 @@ public:: true
         "label": "Decentralised Autonomous Organisation"
       },
       {
-        "@id": "urn:ngm:class:decision-traceability",
-        "label": "Decision Traceability"
-      },
-      {
-        "@id": "urn:ngm:class:equitable-voice-across-time-zones",
-        "label": "Equitable Voice Across Time Zones"
-      },
-      {
         "@id": "urn:ngm:class:polycentric-governance",
         "label": "Polycentric Governance"
       },
@@ -385,10 +353,6 @@ public:: true
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:lazy-consensus",
-        "label": "Lazy Consensus"
-      },
       {
         "@id": "urn:ngm:class:liquid-democracy",
         "label": "Liquid Democracy"
@@ -416,7 +380,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:commit-reveal-schemes",
+        "@id": "urn:ngm:class:commit-reveal-scheme",
         "label": "Commit-Reveal Schemes"
       },
       {
@@ -438,15 +402,15 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:asynchronous-collaboration-patterns",
+        "@id": "urn:ngm:class:asynchronous-collaboration",
         "label": "Asynchronous Collaboration Patterns"
       },
       {
-        "@id": "urn:ngm:class:collective-action-problems",
+        "@id": "urn:ngm:class:collective-action",
         "label": "Collective Action Problems"
       },
       {
-        "@id": "urn:ngm:class:common-pool-resource-governance",
+        "@id": "urn:ngm:class:common-pool-resources",
         "label": "Common-Pool Resource Governance"
       },
       {
@@ -460,16 +424,12 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:dao-treasury-management",
+        "@id": "urn:ngm:class:treasury-management",
         "label": "DAO Treasury Management"
       },
       {
         "@id": "urn:ngm:class:multi-agent-systems",
         "label": "Multi-Agent Systems"
-      },
-      {
-        "@id": "urn:ngm:class:open-source-project-governance",
-        "label": "Open-Source Project Governance"
       },
       {
         "@id": "urn:ngm:class:blockchain-governance",
@@ -486,19 +446,11 @@ public:: true
         "label": "Bitcoin Improvement Proposals"
       },
       {
-        "@id": "urn:ngm:class:ethereum-smart-contract-platform-improvement-proposals",
-        "label": "Ethereum Improvement Proposals"
-      },
-      {
-        "@id": "urn:ngm:class:ietf-rfc-process",
-        "label": "IETF RFC Process"
-      },
-      {
         "@id": "urn:ngm:class:iso-31000-risk-management",
         "label": "ISO 31000 Risk Management"
       },
       {
-        "@id": "urn:ngm:class:w3-c-decentralised-identifiers",
+        "@id": "urn:ngm:class:decentralised-identifiers",
         "label": "W3C Decentralised Identifiers"
       }
     ]

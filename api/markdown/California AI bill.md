@@ -430,32 +430,16 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:ab-1008",
-        "label": "AB 1008"
-      },
-      {
-        "@id": "urn:ngm:class:ab-2013",
-        "label": "AB 2013"
-      },
-      {
-        "@id": "urn:ngm:class:ab-489",
-        "label": "AB 489"
-      },
-      {
-        "@id": "urn:ngm:class:compliance-statement",
+        "@id": "urn:ngm:class:compliance",
         "label": "Compliance Statement"
       },
       {
-        "@id": "urn:ngm:class:critical-safety-incident-reporting",
+        "@id": "urn:ngm:class:incident-reporting",
         "label": "Critical Safety Incident Reporting"
       },
       {
         "@id": "urn:ngm:class:frontier-ai-framework",
         "label": "Frontier AI Framework"
-      },
-      {
-        "@id": "urn:ngm:class:frontier-model-division",
-        "label": "Frontier Model Division"
       },
       {
         "@id": "urn:ngm:class:kill-switch-mandate",
@@ -466,23 +450,11 @@ public:: true
         "label": "SB 1047"
       },
       {
-        "@id": "urn:ngm:class:sb-53",
-        "label": "SB 53"
-      },
-      {
-        "@id": "urn:ngm:class:sb-942",
-        "label": "SB 942"
-      },
-      {
         "@id": "urn:ngm:class:whistleblower-protection",
         "label": "Whistleblower Protection"
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:attorney-general-enforcement",
-        "label": "Attorney General Enforcement"
-      },
       {
         "@id": "urn:ngm:class:compute-threshold",
         "label": "Compute Threshold"
@@ -510,24 +482,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:ai-safety-transparency",
-        "label": "AI Safety Transparency"
-      },
-      {
-        "@id": "urn:ngm:class:consumer-privacy-in-ai",
-        "label": "Consumer Privacy in AI"
-      },
-      {
-        "@id": "urn:ngm:class:healthcare-ai-accountability",
-        "label": "Healthcare AI Accountability"
-      },
-      {
         "@id": "urn:ngm:class:incident-reporting",
         "label": "Incident Reporting"
-      },
-      {
-        "@id": "urn:ngm:class:training-data-disclosure",
-        "label": "Training Data Disclosure"
       },
       {
         "@id": "urn:ngm:class:whistleblower-protection",
@@ -544,23 +500,15 @@ public:: true
         "label": "Critical Harm Framework"
       },
       {
-        "@id": "urn:ngm:class:dual-threshold-regulation",
-        "label": "Dual Threshold Regulation"
-      },
-      {
-        "@id": "urn:ngm:class:pre-deployment-safety-checks",
-        "label": "Pre-Deployment Safety Checks"
-      },
-      {
-        "@id": "urn:ngm:class:risk-based-ai-governance",
+        "@id": "urn:ngm:class:ai-governance",
         "label": "Risk-Based AI Governance"
       },
       {
-        "@id": "urn:ngm:class:transparency-mandate",
+        "@id": "urn:ngm:class:transparency",
         "label": "Transparency Mandate"
       },
       {
-        "@id": "urn:ngm:class:whistleblower-mechanism",
+        "@id": "urn:ngm:class:whistleblower-protection",
         "label": "Whistleblower Mechanism"
       }
     ],
@@ -588,10 +536,6 @@ public:: true
       {
         "@id": "urn:ngm:class:revenue-threshold",
         "label": "Revenue Threshold"
-      },
-      {
-        "@id": "urn:ngm:class:third-party-safety-audit",
-        "label": "Third-Party Safety Audit"
       }
     ],
     "relatedTo": [
@@ -650,10 +594,6 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:federal-preemption-debate",
-        "label": "Federal Preemption Debate"
-      },
-      {
         "@id": "urn:ngm:class:open-source-ai",
         "label": "Open-Source AI"
       },
@@ -675,14 +615,6 @@ public:: true
       }
     ],
     "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:california-attorney-general",
-        "label": "California Attorney General"
-      },
-      {
-        "@id": "urn:ngm:class:california-legislature",
-        "label": "California Legislature"
-      },
       {
         "@id": "urn:ngm:class:california-office-of-emergency-services",
         "label": "California Office of Emergency Services"

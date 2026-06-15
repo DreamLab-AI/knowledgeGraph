@@ -339,10 +339,6 @@ alias:: Model-based Control
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:constraint-set",
-        "label": "Constraint Set"
-      },
-      {
         "@id": "urn:ngm:class:contact-model",
         "label": "Contact Model"
       },
@@ -353,10 +349,6 @@ alias:: Model-based Control
       {
         "@id": "urn:ngm:class:differential-dynamic-programming",
         "label": "Differential Dynamic Programming"
-      },
-      {
-        "@id": "urn:ngm:class:i-lqr",
-        "label": "iLQR"
       },
       {
         "@id": "urn:ngm:class:model-predictive-control",
@@ -389,15 +381,7 @@ alias:: Model-based Control
         "label": "Inertia Tensor"
       },
       {
-        "@id": "urn:ngm:class:jacobian-computation",
-        "label": "Jacobian Computation"
-      },
-      {
-        "@id": "urn:ngm:class:optimisation-solver",
-        "label": "Optimisation Solver"
-      },
-      {
-        "@id": "urn:ngm:class:state-estimator",
+        "@id": "urn:ngm:class:state-estimation",
         "label": "State Estimator"
       }
     ],
@@ -415,15 +399,7 @@ alias:: Model-based Control
         "label": "Constraint Satisfaction"
       },
       {
-        "@id": "urn:ngm:class:real-time-motion-planning",
-        "label": "Real Time Motion Planning"
-      },
-      {
-        "@id": "urn:ngm:class:robust-locomotion",
-        "label": "Robust Locomotion"
-      },
-      {
-        "@id": "urn:ngm:class:sample-efficient-learning",
+        "@id": "urn:ngm:class:data-efficient-learning",
         "label": "Sample Efficient Learning"
       }
     ],
@@ -433,64 +409,24 @@ alias:: Model-based Control
         "label": "Differential Dynamic Programming"
       },
       {
-        "@id": "urn:ngm:class:interior-point-methods",
-        "label": "Interior Point Methods"
-      },
-      {
-        "@id": "urn:ngm:class:koopman-operator-methods",
-        "label": "Koopman Operator Methods"
-      },
-      {
         "@id": "urn:ngm:class:quadratic-programming",
         "label": "Quadratic Programming"
-      },
-      {
-        "@id": "urn:ngm:class:receding-horizon-control",
-        "label": "Receding Horizon Control"
-      },
-      {
-        "@id": "urn:ngm:class:sequential-quadratic-programming",
-        "label": "Sequential Quadratic Programming"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:acados",
-        "label": "acados"
-      },
-      {
-        "@id": "urn:ngm:class:cas-adi",
-        "label": "CasADi"
-      },
-      {
-        "@id": "urn:ngm:class:drake-toolbox",
+        "@id": "urn:ngm:class:drake",
         "label": "Drake Toolbox"
-      },
-      {
-        "@id": "urn:ngm:class:hpipm",
-        "label": "HPIPM"
       },
       {
         "@id": "urn:ngm:class:mu-jo-co",
         "label": "MuJoCo"
-      },
-      {
-        "@id": "urn:ngm:class:osqp-solver",
-        "label": "OSQP Solver"
-      },
-      {
-        "@id": "urn:ngm:class:pinocchio",
-        "label": "Pinocchio"
       }
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:gaussian-processes",
+        "@id": "urn:ngm:class:gaussian-process",
         "label": "Gaussian Processes"
-      },
-      {
-        "@id": "urn:ngm:class:neural-odes",
-        "label": "Neural ODEs"
       },
       {
         "@id": "urn:ngm:class:sim-to-real-transfer",

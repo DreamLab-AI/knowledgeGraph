@@ -23,63 +23,133 @@ public:: true
   "definition": "A systematic, independent examination of records, systems, processes, or controls carried out by a qualified party to assess their accuracy, completeness, and conformance with applicable standards, regulations, or policies. Audits generate structured, documented evidence that supports accountability, risk management, and informed decision-making by management, stakeholders, and regulators. The discipline spans financial, operational, information-security, algorithmic, and sustainability domains, each governed by domain-specific professional standards and methodologies. Audit outputs — opinions, findings, and recommendations — are foundational instruments of organisational governance and public trust.",
   "domain": "governance",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:accountability-mechanism", "label": "Accountability Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:accountability-mechanism",
+      "label": "Accountability Mechanism"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:audit-log", "label": "Audit Log"},
-      {"@id": "urn:ngm:class:audit-mechanism", "label": "Audit Mechanism"},
-      {"@id": "urn:ngm:class:audit-opinion", "label": "Audit Opinion"},
-      {"@id": "urn:ngm:class:audit-finding", "label": "Audit Finding"},
-      {"@id": "urn:ngm:class:audit-report", "label": "Audit Report"}
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:audit-log",
+        "label": "Audit Log"
+      },
+      {
+        "@id": "urn:ngm:class:audit-mechanism",
+        "label": "Audit Mechanism"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:compliance", "label": "Compliance"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
-      {"@id": "urn:ngm:class:trust", "label": "Trust"},
-      {"@id": "urn:ngm:class:regulatory-reporting", "label": "Regulatory Reporting"}
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:trust",
+        "label": "Trust"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:independence", "label": "Independence"},
-      {"@id": "urn:ngm:class:professional-judgement", "label": "Professional Judgement"},
-      {"@id": "urn:ngm:class:evidence", "label": "Evidence"},
-      {"@id": "urn:ngm:class:documentation", "label": "Documentation"}
+      {
+        "@id": "urn:ngm:class:documentation",
+        "label": "Documentation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:internal-controls", "label": "Internal Controls"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:governance", "label": "Governance"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
-      {"@id": "urn:ngm:class:corporate-governance", "label": "Corporate Governance"},
-      {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"}
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      },
+      {
+        "@id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:international-standards-on-auditing", "label": "International Standards on Auditing"},
-      {"@id": "urn:ngm:class:iso-iec-27001", "label": "ISO/IEC 27001"},
-      {"@id": "urn:ngm:class:cobit", "label": "COBIT"},
-      {"@id": "urn:ngm:class:soc-2", "label": "SOC 2"}
+      {
+        "@id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      },
+      {
+        "@id": "urn:ngm:class:cobit",
+        "label": "COBIT"
+      },
+      {
+        "@id": "urn:ngm:class:soc-2",
+        "label": "SOC 2"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:inspection", "label": "Inspection"},
-      {"@id": "urn:ngm:class:review", "label": "Review"},
-      {"@id": "urn:ngm:class:monitoring", "label": "Monitoring"}
+      {
+        "@id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:zero-trust", "label": "Zero Trust"}
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:algorithmic-auditing", "label": "Algorithmic Auditing"},
-      {"@id": "urn:ngm:class:smart-contract-audit", "label": "Smart Contract Audit"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:algorithmic-auditing",
+        "label": "Algorithmic Auditing"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-audit",
+        "label": "Smart Contract Audit"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:assurance-engagement", "label": "Assurance Engagement"}
+    {
+      "@id": "urn:ngm:class:assurance-engagement",
+      "label": "Assurance Engagement"
+    }
   ],
   "quality": 0.74,
   "provenance": {

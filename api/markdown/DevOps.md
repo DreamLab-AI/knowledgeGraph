@@ -24,66 +24,167 @@ public:: true
   "domain": "infrastructure",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
+    {
+      "@id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering"
+    }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:development-operations", "label": "Development Operations"},
-    {"@id": "urn:ngm:class:devops-culture", "label": "DevOps Culture"}
+    {
+      "@id": "urn:ngm:class:development-operations",
+      "label": "Development Operations"
+    },
+    {
+      "@id": "urn:ngm:class:devops-culture",
+      "label": "DevOps Culture"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"},
-      {"@id": "urn:ngm:class:continuous-delivery", "label": "Continuous Delivery"},
-      {"@id": "urn:ngm:class:continuous-deployment", "label": "Continuous Deployment"},
-      {"@id": "urn:ngm:class:infrastructure-as-code", "label": "Infrastructure as Code"},
-      {"@id": "urn:ngm:class:monitoring-system", "label": "Monitoring System"},
-      {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"}
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-deployment",
+        "label": "Continuous Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring-system",
+        "label": "Monitoring System"
+      },
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:software-delivery-lifecycle", "label": "Software Delivery Lifecycle"}
+      {
+        "@id": "urn:ngm:class:software-delivery-lifecycle",
+        "label": "Software Delivery Lifecycle"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
-      {"@id": "urn:ngm:class:build-automation", "label": "Build Automation"},
-      {"@id": "urn:ngm:class:automated-testing", "label": "Automated Testing"}
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:build-automation",
+        "label": "Build Automation"
+      },
+      {
+        "@id": "urn:ngm:class:automated-testing",
+        "label": "Automated Testing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:site-reliability-engineering", "label": "Site Reliability Engineering"},
-      {"@id": "urn:ngm:class:platform-engineering", "label": "Platform Engineering"},
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"}
+      {
+        "@id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:platform-engineering",
+        "label": "Platform Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:containerisation", "label": "Containerisation"},
-      {"@id": "urn:ngm:class:microservices", "label": "Microservices"}
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:agile-software-development", "label": "Agile Software Development"},
-      {"@id": "urn:ngm:class:lean-software-development", "label": "Lean Software Development"},
-      {"@id": "urn:ngm:class:shift-left-testing", "label": "Shift-Left Testing"}
+      {
+        "@id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Software Development"
+      },
+      {
+        "@id": "urn:ngm:class:lean-software-development",
+        "label": "Lean Software Development"
+      },
+      {
+        "@id": "urn:ngm:class:shift-left-testing",
+        "label": "Shift-Left Testing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:docker", "label": "Docker"},
-      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"},
-      {"@id": "urn:ngm:class:github-actions", "label": "GitHub Actions"},
-      {"@id": "urn:ngm:class:terraform", "label": "Terraform"}
+      {
+        "@id": "urn:ngm:class:docker-containerisation-platform",
+        "label": "Docker"
+      },
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:git-hub-actions",
+        "label": "GitHub Actions"
+      },
+      {
+        "@id": "urn:ngm:class:terraform",
+        "label": "Terraform"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:software-development", "label": "Software Development"},
-      {"@id": "urn:ngm:class:cloud-platform", "label": "Cloud Platform"},
-      {"@id": "urn:ngm:class:security-scanning", "label": "Security Scanning"}
+      {
+        "@id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-platform",
+        "label": "Cloud Platform"
+      },
+      {
+        "@id": "urn:ngm:class:security-scanning",
+        "label": "Security Scanning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:waterfall-development", "label": "Waterfall Development"},
-      {"@id": "urn:ngm:class:siloed-operations", "label": "Siloed Operations"}
+      {
+        "@id": "urn:ngm:class:waterfall-development",
+        "label": "Waterfall Development"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"},
-      {"@id": "urn:ngm:class:devsecops", "label": "DevSecOps"}
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "@id": "urn:ngm:class:devsecops",
+        "label": "DevSecOps"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:feature-flags", "label": "Feature Flags"},
-      {"@id": "urn:ngm:class:observability-platform", "label": "Observability Platform"}
+      {
+        "@id": "urn:ngm:class:feature-flags",
+        "label": "Feature Flags"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability Platform"
+      }
     ]
   },
   "quality": 0.72,

@@ -112,7 +112,7 @@ public:: true
         "label": "Error Correction"
       },
       {
-        "@id": "urn:ngm:class:ethical-alignment",
+        "@id": "urn:ngm:class:alignment",
         "label": "Ethical Alignment"
       },
       {
@@ -124,7 +124,7 @@ public:: true
         "label": "AI Governance"
       },
       {
-        "@id": "urn:ngm:class:decision-audit-trail",
+        "@id": "urn:ngm:class:audit-trail",
         "label": "Decision Audit Trail"
       }
     ],
@@ -150,10 +150,6 @@ public:: true
       {
         "@id": "urn:ngm:class:human-on-the-loop",
         "label": "Human-on-the-Loop"
-      },
-      {
-        "@id": "urn:ngm:class:full-automation",
-        "label": "Full Automation"
       },
       {
         "@id": "urn:ngm:class:automation-bias",
@@ -188,15 +184,11 @@ public:: true
       {
         "@id": "urn:ngm:class:ai-monitoring",
         "label": "AI Monitoring"
-      },
-      {
-        "@id": "urn:ngm:class:human-expertise",
-        "label": "Human Expertise"
       }
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:social-contract-and-jobs",
+        "@id": "urn:ngm:class:employment-social-contract-under-automation",
         "label": "Employment Social Contract Under Automation"
       },
       {
@@ -204,7 +196,7 @@ public:: true
         "label": "Annotated Training Data"
       },
       {
-        "@id": "urn:ngm:class:consent",
+        "@id": "urn:ngm:class:informed-consent",
         "label": "Consent"
       }
     ],

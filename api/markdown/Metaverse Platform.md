@@ -84,7 +84,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:cloud-computing-infrastructure",
+        "@id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing Infrastructure"
       },
       {
@@ -98,7 +98,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:virtual-social-interaction",
+        "@id": "urn:ngm:class:social-interaction",
         "label": "Virtual Social Interaction"
       },
       {
@@ -150,13 +150,13 @@ public:: true
         "label": "Virtual Event"
       },
       {
-        "@id": "urn:ngm:class:digital-advertising",
+        "@id": "urn:ngm:class:advertising",
         "label": "Digital Advertising"
       }
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:traditional-social-media-platform",
+        "@id": "urn:ngm:class:social-media-platform-infrastructure",
         "label": "Traditional Social Media Platform"
       }
     ],

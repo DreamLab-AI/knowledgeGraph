@@ -26,20 +26,8 @@
         "label": "LDPC Codes"
       },
       {
-        "id": "urn:ngm:class:turbo-codes",
-        "label": "Turbo Codes"
-      },
-      {
-        "id": "urn:ngm:class:polar-codes",
-        "label": "Polar Codes"
-      },
-      {
         "id": "urn:ngm:class:hamming-codes",
         "label": "Hamming Codes"
-      },
-      {
-        "id": "urn:ngm:class:parity-check-matrix",
-        "label": "Parity-Check Matrix"
       }
     ],
     "requires": [
@@ -58,51 +46,30 @@
         "label": "Packet Loss Recovery"
       },
       {
-        "id": "urn:ngm:class:reliable-data-transmission",
-        "label": "Reliable Data Transmission"
-      },
-      {
-        "id": "urn:ngm:class:real-time-media-streaming",
+        "id": "urn:ngm:class:real-time-streaming",
         "label": "Real-Time Media Streaming"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:shannon-information-theory",
+        "id": "urn:ngm:class:information-theory",
         "label": "Shannon Information Theory"
-      },
-      {
-        "id": "urn:ngm:class:algebraic-coding-theory",
-        "label": "Algebraic Coding Theory"
       }
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:error-control-coding",
+        "id": "urn:ngm:class:error-correction",
         "label": "Error Control Coding"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:automatic-repeat-request",
-        "label": "Automatic Repeat Request"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:quantum-error-correction",
         "label": "Quantum Error Correction"
-      },
-      {
-        "id": "urn:ngm:class:neural-network-decoding",
-        "label": "Neural Network Decoding"
       }
     ],
     "uses": [
-      {
-        "id": "urn:ngm:class:soft-decision-decoding",
-        "label": "Soft-Decision Decoding"
-      },
       {
         "id": "urn:ngm:class:belief-propagation",
         "label": "Belief Propagation"
@@ -116,23 +83,11 @@
       {
         "id": "urn:ngm:class:satellite-communications",
         "label": "Satellite Communications"
-      },
-      {
-        "id": "urn:ngm:class:optical-networking",
-        "label": "Optical Networking"
-      },
-      {
-        "id": "urn:ngm:class:flash-storage",
-        "label": "Flash Storage"
       }
     ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:5g-nr",
-        "label": "5G NR"
-      },
       {
         "id": "urn:ngm:class:erasure-coding",
         "label": "Erasure Coding"

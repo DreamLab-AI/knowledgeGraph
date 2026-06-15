@@ -26,10 +26,6 @@
         "label": "EVM Memory"
       },
       {
-        "id": "urn:ngm:class:evm-storage",
-        "label": "EVM Storage"
-      },
-      {
         "id": "urn:ngm:class:gas-metering",
         "label": "Gas Metering"
       }
@@ -79,16 +75,8 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:wasm",
-        "label": "WASM"
-      },
-      {
-        "id": "urn:ngm:class:bitcoin-script",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
         "label": "Bitcoin Script"
-      },
-      {
-        "id": "urn:ngm:class:move-vm",
-        "label": "Move VM"
       }
     ],
     "bridgesTo": [
@@ -148,14 +136,6 @@
       {
         "id": "urn:ngm:class:gas-optimization",
         "label": "Gas Optimization"
-      },
-      {
-        "id": "urn:ngm:class:solidity-abi",
-        "label": "Solidity ABI"
-      },
-      {
-        "id": "urn:ngm:class:eof",
-        "label": "EVM Object Format"
       },
       {
         "id": "urn:ngm:class:vyper",

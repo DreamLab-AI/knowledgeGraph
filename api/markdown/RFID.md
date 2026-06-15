@@ -24,55 +24,90 @@ public:: true
   "domain": "infrastructure",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:communication-network", "label": "Communication Network"}
+    {
+      "@id": "urn:ngm:class:communication-network",
+      "label": "Communication Network"
+    }
   ],
   "relations": {
-    "hasPart": [
-      {"@id": "urn:ngm:class:rfid-tag", "label": "RFID Tag"},
-      {"@id": "urn:ngm:class:rfid-reader", "label": "RFID Reader"},
-      {"@id": "urn:ngm:class:rfid-antenna", "label": "RFID Antenna"}
-    ],
     "partOf": [
-      {"@id": "urn:ngm:class:automatic-identification-and-data-capture", "label": "Automatic Identification and Data Capture"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
-    ],
-    "requires": [
-      {"@id": "urn:ngm:class:electromagnetic-spectrum", "label": "Electromagnetic Spectrum"},
-      {"@id": "urn:ngm:class:backscatter-communication", "label": "Backscatter Communication"}
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:food-safety", "label": "Food Safety"},
-      {"@id": "urn:ngm:class:pharmaceutical-supply-chain", "label": "Pharmaceutical Supply Chain"},
-      {"@id": "urn:ngm:class:inventory-management", "label": "Inventory Management"},
-      {"@id": "urn:ngm:class:supply-chain-visibility", "label": "Supply Chain Visibility"},
-      {"@id": "urn:ngm:class:asset-tracking", "label": "Asset Tracking"}
+      {
+        "@id": "urn:ngm:class:food-safety",
+        "label": "Food Safety"
+      },
+      {
+        "@id": "urn:ngm:class:pharmaceutical-supply-chain",
+        "label": "Pharmaceutical Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-visibility",
+        "label": "Supply Chain Visibility"
+      },
+      {
+        "@id": "urn:ngm:class:asset-tracking",
+        "label": "Asset Tracking"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:communication-infrastructure", "label": "Communication Infrastructure"},
-      {"@id": "urn:ngm:class:ultra-high-frequency-radio", "label": "Ultra-High Frequency Radio"},
-      {"@id": "urn:ngm:class:near-field-communication", "label": "Near Field Communication"}
-    ],
-    "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-18000", "label": "ISO 18000"},
-      {"@id": "urn:ngm:class:gs1-epc", "label": "GS1 EPC"},
-      {"@id": "urn:ngm:class:epc-global-gen2", "label": "EPC Global Gen 2"}
+      {
+        "@id": "urn:ngm:class:communication-infrastructure",
+        "label": "Communication Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:near-field-communication",
+        "label": "Near Field Communication"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:barcode", "label": "Barcode"},
-      {"@id": "urn:ngm:class:qr-code", "label": "QR Code"}
+      {
+        "@id": "urn:ngm:class:barcode",
+        "label": "Barcode"
+      },
+      {
+        "@id": "urn:ngm:class:qr-code",
+        "label": "QR Code"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain-provenance", "label": "Blockchain Provenance"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:blockchain-provenance",
+        "label": "Blockchain Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:network-communication", "label": "Network Communication"},
-      {"@id": "urn:ngm:class:sensor-network", "label": "Sensor Network"},
-      {"@id": "urn:ngm:class:logistics", "label": "Logistics"}
+      {
+        "@id": "urn:ngm:class:network-communication",
+        "label": "Network Communication"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-network",
+        "label": "Sensor Network"
+      },
+      {
+        "@id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:radio-frequency-identification", "label": "Radio-Frequency Identification"}
+    {
+      "@id": "urn:ngm:class:radio-frequency-identification",
+      "label": "Radio-Frequency Identification"
+    }
   ],
   "quality": 0.85,
   "provenance": {

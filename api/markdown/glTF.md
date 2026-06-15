@@ -77,7 +77,7 @@ public:: true
         "label": "Scene Graph"
       },
       {
-        "@id": "urn:ngm:class:physically-based-rendering-material",
+        "@id": "urn:ngm:class:physically-based-rendering",
         "label": "Physically Based Rendering Material"
       },
       {
@@ -87,7 +87,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:3-d-asset-pipeline",
+        "@id": "urn:ngm:class:asset-pipeline",
         "label": "3D Asset Pipeline"
       }
     ],
@@ -111,11 +111,11 @@ public:: true
         "label": "Real-Time Rendering"
       },
       {
-        "@id": "urn:ngm:class:web-based-3-d-rendering",
+        "@id": "urn:ngm:class:3-d-rendering",
         "label": "Web-Based 3D Rendering"
       },
       {
-        "@id": "urn:ngm:class:augmented-reality-content-delivery",
+        "@id": "urn:ngm:class:content-delivery",
         "label": "Augmented Reality Content Delivery"
       }
     ],
@@ -125,38 +125,26 @@ public:: true
         "label": "WebGL"
       },
       {
-        "@id": "urn:ngm:class:json",
+        "@id": "urn:ngm:class:json-data-interchange-format",
         "label": "JSON"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:khronos-group-standard",
+        "@id": "urn:ngm:class:khronos-group",
         "label": "Khronos Group Standard"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:draco-mesh-compression",
-        "label": "Draco Mesh Compression"
-      },
-      {
-        "@id": "urn:ngm:class:meshopt-compression",
+        "@id": "urn:ngm:class:data-compression",
         "label": "Meshopt Compression"
-      },
-      {
-        "@id": "urn:ngm:class:ktx2-texture",
-        "label": "KTX2 Texture"
       }
     ],
     "supports": [
       {
         "@id": "urn:ngm:class:web-xr",
         "label": "WebXR"
-      },
-      {
-        "@id": "urn:ngm:class:threejs",
-        "label": "Three.js"
       },
       {
         "@id": "urn:ngm:class:babylon-js",
@@ -175,7 +163,7 @@ public:: true
         "label": "FBX"
       },
       {
-        "@id": "urn:ngm:class:obj-file-format",
+        "@id": "urn:ngm:class:3-d-file-format",
         "label": "OBJ File Format"
       },
       {
@@ -195,7 +183,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:usd-universal-scene-description",
+        "@id": "urn:ngm:class:universal-scene-description",
         "label": "USD Universal Scene Description"
       },
       {

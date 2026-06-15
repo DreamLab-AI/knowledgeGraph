@@ -38,47 +38,113 @@ public:: true
   ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:digital-sovereignty", "label": "Digital Sovereignty"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:digital-sovereignty",
+        "label": "Digital Sovereignty"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
-      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"},
-      {"@id": "urn:ngm:class:ai-audit", "label": "AI Audit"}
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:ai-audit",
+        "label": "AI Audit"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:technology-policy", "label": "Technology Policy"},
-      {"@id": "urn:ngm:class:competition-policy", "label": "Competition Policy"},
-      {"@id": "urn:ngm:class:intellectual-property", "label": "Intellectual Property"}
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:intellectual-property-rights-framework",
+        "label": "Intellectual Property"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:impact-assessment", "label": "Impact Assessment"},
-      {"@id": "urn:ngm:class:stakeholder-consultation", "label": "Stakeholder Consultation"}
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:impact-assessment",
+        "label": "Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-consultation",
+        "label": "Stakeholder Consultation"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:oecd-ai-principles", "label": "OECD AI Principles"},
-      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO IEC 42001"},
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"}
+      {
+        "@id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:self-regulation", "label": "Self-Regulation"},
-      {"@id": "urn:ngm:class:laissez-faire-innovation-policy", "label": "Laissez-Faire Innovation Policy"}
+      {
+        "@id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:cybersecurity-policy", "label": "Cybersecurity Policy"},
-      {"@id": "urn:ngm:class:semiconductor-export-controls", "label": "Semiconductor Export Controls"},
-      {"@id": "urn:ngm:class:human-rights-law", "label": "Human Rights Law"}
+      {
+        "@id": "urn:ngm:class:cybersecurity-policy",
+        "label": "Cybersecurity Policy"
+      },
+      {
+        "@id": "urn:ngm:class:export-controls",
+        "label": "Semiconductor Export Controls"
+      },
+      {
+        "@id": "urn:ngm:class:human-rights-law",
+        "label": "Human Rights Law"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:artificial-intelligence-policy", "label": "Artificial Intelligence Policy"},
-    {"@id": "urn:ngm:class:national-ai-strategy", "label": "National AI Strategy"}
+    {
+      "@id": "urn:ngm:class:artificial-intelligence-policy",
+      "label": "Artificial Intelligence Policy"
+    },
+    {
+      "@id": "urn:ngm:class:national-ai-strategy",
+      "label": "National AI Strategy"
+    }
   ],
   "quality": 0.74,
   "provenance": {

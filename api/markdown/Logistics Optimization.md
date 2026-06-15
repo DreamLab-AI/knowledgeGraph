@@ -446,7 +446,7 @@ public:: true
         "label": "Last-Mile Delivery"
       },
       {
-        "@id": "urn:ngm:class:route-optimisation",
+        "@id": "urn:ngm:class:logistics-optimisation",
         "label": "Route Optimisation"
       },
       {
@@ -454,20 +454,8 @@ public:: true
         "label": "Supply Chain Visibility"
       },
       {
-        "@id": "urn:ngm:class:transport-management-system",
-        "label": "Transport Management System"
-      },
-      {
-        "@id": "urn:ngm:class:vehicle-routing-problem",
-        "label": "Vehicle Routing Problem"
-      },
-      {
         "@id": "urn:ngm:class:warehouse-management-system",
         "label": "Warehouse Management System"
-      },
-      {
-        "@id": "urn:ngm:class:warehouse-slotting",
-        "label": "Warehouse Slotting"
       },
       {
         "@id": "urn:ngm:class:digital-twin",
@@ -492,10 +480,6 @@ public:: true
         "label": "Operations Research"
       },
       {
-        "@id": "urn:ngm:class:real-time-data-streams",
-        "label": "Real-Time Data Streams"
-      },
-      {
         "@id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing"
       },
@@ -510,10 +494,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:autonomous-warehousing",
-        "label": "Autonomous Warehousing"
-      },
-      {
         "@id": "urn:ngm:class:carbon-footprint-reduction",
         "label": "Carbon Footprint Reduction"
       },
@@ -526,11 +506,7 @@ public:: true
         "label": "Dynamic Pricing"
       },
       {
-        "@id": "urn:ngm:class:just-in-time-inventory",
-        "label": "Just-in-Time Inventory"
-      },
-      {
-        "@id": "urn:ngm:class:resilient-supply-chains",
+        "@id": "urn:ngm:class:supply-chain",
         "label": "Resilient Supply Chains"
       },
       {
@@ -544,7 +520,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:attention-model",
+        "@id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Model"
       },
       {
@@ -560,16 +536,8 @@ public:: true
         "label": "Simulated Annealing"
       },
       {
-        "@id": "urn:ngm:class:temporal-fusion-transformer",
-        "label": "Temporal Fusion Transformer"
-      },
-      {
-        "@id": "urn:ngm:class:transformer-networks",
+        "@id": "urn:ngm:class:transformer",
         "label": "Transformer Networks"
-      },
-      {
-        "@id": "urn:ngm:class:vrptw-solver",
-        "label": "VRPTW Solver"
       },
       {
         "@id": "urn:ngm:class:digital-twin",
@@ -584,22 +552,6 @@ public:: true
       {
         "@id": "urn:ngm:class:apache-kafka",
         "label": "Apache Kafka"
-      },
-      {
-        "@id": "urn:ngm:class:arm-cortex",
-        "label": "ARM Cortex"
-      },
-      {
-        "@id": "urn:ngm:class:google-ai-technology-corporation-or-tools",
-        "label": "Google OR-Tools"
-      },
-      {
-        "@id": "urn:ngm:class:gurobi",
-        "label": "Gurobi"
-      },
-      {
-        "@id": "urn:ngm:class:hexaly",
-        "label": "Hexaly"
       },
       {
         "@id": "urn:ngm:class:kubernetes",
@@ -654,32 +606,20 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:e-commerce-fulfilment",
+        "@id": "urn:ngm:class:e-commerce",
         "label": "E-Commerce Fulfilment"
-      },
-      {
-        "@id": "urn:ngm:class:intermodal-transport",
-        "label": "Intermodal Transport"
       },
       {
         "@id": "urn:ngm:class:pharmaceutical-logistics",
         "label": "Pharmaceutical Logistics"
       },
       {
-        "@id": "urn:ngm:class:port-operations",
-        "label": "Port Operations"
-      },
-      {
-        "@id": "urn:ngm:class:retail-supply-chain",
+        "@id": "urn:ngm:class:supply-chain",
         "label": "Retail Supply Chain"
       },
       {
         "@id": "urn:ngm:class:reverse-logistics",
         "label": "Reverse Logistics"
-      },
-      {
-        "@id": "urn:ngm:class:urban-freight",
-        "label": "Urban Freight"
       },
       {
         "@id": "urn:ngm:class:cold-chain-monitoring",
@@ -688,11 +628,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:glec-framework",
-        "label": "GLEC Framework"
-      },
-      {
-        "@id": "urn:ngm:class:gri-supply-chain-standards",
+        "@id": "urn:ngm:class:gri-standards",
         "label": "GRI Supply Chain Standards"
       },
       {
@@ -700,16 +636,8 @@ public:: true
         "label": "GS1"
       },
       {
-        "@id": "urn:ngm:class:iata",
-        "label": "IATA"
-      },
-      {
         "@id": "urn:ngm:class:iso-28000",
         "label": "ISO 28000"
-      },
-      {
-        "@id": "urn:ngm:class:world-customs-organisation",
-        "label": "World Customs Organisation"
       }
     ],
     "bridgesTo": [

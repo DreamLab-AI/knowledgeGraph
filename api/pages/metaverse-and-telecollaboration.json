@@ -26,7 +26,7 @@
         "label": "Spatial Audio"
       },
       {
-        "id": "urn:ngm:class:shared-virtual-workspace",
+        "id": "urn:ngm:class:virtual-workspace",
         "label": "Shared Virtual Workspace"
       }
     ],
@@ -119,10 +119,6 @@
       {
         "id": "urn:ngm:class:nonverbal-communication",
         "label": "Nonverbal Communication"
-      },
-      {
-        "id": "urn:ngm:class:gaze-and-eye-contact",
-        "label": "Gaze and Eye Contact"
       }
     ],
     "standardizedBy": [],

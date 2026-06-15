@@ -94,28 +94,6 @@ public:: true
       {
         "@id": "urn:ngm:class:classification-rules",
         "label": "Classification Rules"
-      },
-      {
-        "@id": "urn:ngm:class:corporate-tax-compliance-frameworkonomy-design",
-        "label": "Taxonomy Design"
-      },
-      {
-        "@id": "urn:ngm:class:term-relationships",
-        "label": "Term Relationships"
-      }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:content-classification",
-        "label": "Content Classification"
-      },
-      {
-        "@id": "urn:ngm:class:navigation-structure",
-        "label": "Navigation Structure"
-      },
-      {
-        "@id": "urn:ngm:class:semantic-organization",
-        "label": "Semantic Organization"
       }
     ]
   },

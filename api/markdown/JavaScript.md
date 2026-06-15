@@ -50,52 +50,117 @@ public:: true
   ],
   "relations": {
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ecmascript", "label": "ECMAScript"},
-      {"@id": "urn:ngm:class:ecma-international", "label": "ECMA International"}
+      {
+        "@id": "urn:ngm:class:ecmascript",
+        "label": "ECMAScript"
+      },
+      {
+        "@id": "urn:ngm:class:ecma-international",
+        "label": "ECMA International"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:javascript-engine", "label": "JavaScript Engine"},
-      {"@id": "urn:ngm:class:event-loop", "label": "Event Loop"}
+      {
+        "@id": "urn:ngm:class:event-loop",
+        "label": "Event Loop"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:dom-api", "label": "DOM API"},
-      {"@id": "urn:ngm:class:node-js", "label": "Node.js"},
-      {"@id": "urn:ngm:class:web-assembly", "label": "WebAssembly"},
-      {"@id": "urn:ngm:class:typescript", "label": "TypeScript"}
+      {
+        "@id": "urn:ngm:class:node-js",
+        "label": "Node.js"
+      },
+      {
+        "@id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      },
+      {
+        "@id": "urn:ngm:class:typescript",
+        "label": "TypeScript"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:web-application", "label": "Web Application"},
-      {"@id": "urn:ngm:class:single-page-application", "label": "Single Page Application"},
-      {"@id": "urn:ngm:class:progressive-web-app", "label": "Progressive Web App"},
-      {"@id": "urn:ngm:class:serverless-computing", "label": "Serverless Computing"}
+      {
+        "@id": "urn:ngm:class:web-application",
+        "label": "Web Application"
+      },
+      {
+        "@id": "urn:ngm:class:progressive-web-app",
+        "label": "Progressive Web App"
+      },
+      {
+        "@id": "urn:ngm:class:serverless-architecture",
+        "label": "Serverless Computing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:prototype-chain", "label": "Prototype Chain"},
-      {"@id": "urn:ngm:class:asynchronous-programming", "label": "Asynchronous Programming"},
-      {"@id": "urn:ngm:class:json", "label": "JSON"},
-      {"@id": "urn:ngm:class:rest-api", "label": "REST API"}
+      {
+        "@id": "urn:ngm:class:asynchronous-programming",
+        "label": "Asynchronous Programming"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format",
+        "label": "JSON"
+      },
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:ecmascript", "label": "ECMAScript"}
+      {
+        "@id": "urn:ngm:class:ecmascript",
+        "label": "ECMAScript"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:python", "label": "Python"},
-      {"@id": "urn:ngm:class:webassembly", "label": "WebAssembly"}
+      {
+        "@id": "urn:ngm:class:python",
+        "label": "Python"
+      },
+      {
+        "@id": "urn:ngm:class:webassembly",
+        "label": "WebAssembly"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:html", "label": "HTML"},
-      {"@id": "urn:ngm:class:css", "label": "CSS"},
-      {"@id": "urn:ngm:class:web-browser", "label": "Web Browser"},
-      {"@id": "urn:ngm:class:npm", "label": "NPM"}
+      {
+        "@id": "urn:ngm:class:html",
+        "label": "HTML"
+      },
+      {
+        "@id": "urn:ngm:class:css",
+        "label": "CSS"
+      },
+      {
+        "@id": "urn:ngm:class:web-browser",
+        "label": "Web Browser"
+      },
+      {
+        "@id": "urn:ngm:class:npm",
+        "label": "NPM"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ecmascript", "label": "ECMAScript"},
-    {"@id": "urn:ngm:class:js", "label": "JS"}
+    {
+      "@id": "urn:ngm:class:ecmascript",
+      "label": "ECMAScript"
+    },
+    {
+      "@id": "urn:ngm:class:js",
+      "label": "JS"
+    }
   ],
   "quality": 0.75,
   "provenance": {

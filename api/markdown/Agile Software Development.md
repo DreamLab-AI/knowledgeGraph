@@ -58,50 +58,97 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:scrum", "label": "Scrum"},
-      {"@id": "urn:ngm:class:kanban", "label": "Kanban"},
-      {"@id": "urn:ngm:class:extreme-programming", "label": "Extreme Programming"},
-      {"@id": "urn:ngm:class:sprint", "label": "Sprint"},
-      {"@id": "urn:ngm:class:retrospective", "label": "Retrospective"}
+      {
+        "@id": "urn:ngm:class:extreme-programming",
+        "label": "Extreme Programming"
+      },
+      {
+        "@id": "urn:ngm:class:retrospective",
+        "label": "Retrospective"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:software-development", "label": "Software Development"},
-      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"},
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"}
+      {
+        "@id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:devops", "label": "DevOps"},
-      {"@id": "urn:ngm:class:continuous-delivery", "label": "Continuous Delivery"},
-      {"@id": "urn:ngm:class:test-driven-development", "label": "Test-Driven Development"},
-      {"@id": "urn:ngm:class:lean-software-development", "label": "Lean Software Development"}
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
+      },
+      {
+        "@id": "urn:ngm:class:test-driven-development",
+        "label": "Test-Driven Development"
+      },
+      {
+        "@id": "urn:ngm:class:lean-software-development",
+        "label": "Lean Software Development"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:user-story", "label": "User Story"},
-      {"@id": "urn:ngm:class:product-backlog", "label": "Product Backlog"},
-      {"@id": "urn:ngm:class:pair-programming", "label": "Pair Programming"}
+      {
+        "@id": "urn:ngm:class:pair-programming",
+        "label": "Pair Programming"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:waterfall-model", "label": "Waterfall Model"},
-      {"@id": "urn:ngm:class:big-design-up-front", "label": "Big Design Up Front"}
-    ],
-    "standardizedBy": [
-      {"@id": "urn:ngm:class:agile-manifesto", "label": "Agile Manifesto"},
-      {"@id": "urn:ngm:class:scaled-agile-framework", "label": "Scaled Agile Framework"}
+      {
+        "@id": "urn:ngm:class:waterfall-model",
+        "label": "Waterfall Model"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:project-management", "label": "Project Management"},
-      {"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"},
-      {"@id": "urn:ngm:class:distributed-teams", "label": "Distributed Teams"}
+      {
+        "@id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "@id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-teams",
+        "label": "Distributed Teams"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"},
-      {"@id": "urn:ngm:class:organisational-learning", "label": "Organisational Learning"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "@id": "urn:ngm:class:organisational-learning",
+        "label": "Organisational Learning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:agile-methods", "label": "Agile Methods"},
-    {"@id": "urn:ngm:class:agile-methodology", "label": "Agile Methodology"}
+    {
+      "@id": "urn:ngm:class:agile-methods",
+      "label": "Agile Methods"
+    },
+    {
+      "@id": "urn:ngm:class:agile-methodology",
+      "label": "Agile Methodology"
+    }
   ],
   "quality": 0.74,
   "provenance": {

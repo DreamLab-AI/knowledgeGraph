@@ -90,44 +90,20 @@ public:: true
         "label": "Digital Innovation"
       },
       {
-        "@id": "urn:ngm:class:tech-entrepreneurship",
-        "label": "Tech Entrepreneurship"
-      },
-      {
         "@id": "urn:ngm:class:ai-development",
         "label": "AI Development"
-      },
-      {
-        "@id": "urn:ngm:class:technology-commercialisation",
-        "label": "Technology Commercialisation"
       }
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:london-tech-cluster",
-        "label": "London Tech Cluster"
-      },
-      {
-        "@id": "urn:ngm:class:cambridge-science-cluster",
-        "label": "Cambridge Science Cluster"
-      },
-      {
         "@id": "urn:ngm:class:venture-capital",
         "label": "Venture Capital"
-      },
-      {
-        "@id": "urn:ngm:class:unicorn-company",
-        "label": "Unicorn Company"
       }
     ],
     "requires": [
       {
         "@id": "urn:ngm:class:digital-infrastructure",
         "label": "Digital Infrastructure"
-      },
-      {
-        "@id": "urn:ngm:class:stem-talent-pipeline",
-        "label": "STEM Talent Pipeline"
       },
       {
         "@id": "urn:ngm:class:research-and-development",
@@ -162,16 +138,6 @@ public:: true
         "label": "Open Source Software"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:silicon-valley-ecosystem",
-        "label": "Silicon Valley Ecosystem"
-      },
-      {
-        "@id": "urn:ngm:class:european-tech-ecosystem",
-        "label": "European Tech Ecosystem"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:artificial-intelligence",
@@ -194,14 +160,6 @@ public:: true
       {
         "@id": "urn:ngm:class:innovation",
         "label": "Innovation"
-      },
-      {
-        "@id": "urn:ngm:class:technology-industry",
-        "label": "Technology Industry"
-      },
-      {
-        "@id": "urn:ngm:class:science-and-technology-policy",
-        "label": "Science and Technology Policy"
       }
     ]
   },

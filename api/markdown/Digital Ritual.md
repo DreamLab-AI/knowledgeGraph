@@ -166,22 +166,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:ceremonial-space",
-        "label": "Ceremonial Space"
-      },
-      {
-        "@id": "urn:ngm:class:community-bonding",
-        "label": "Community Bonding"
-      },
-      {
-        "@id": "urn:ngm:class:ritual-design",
-        "label": "Ritual Design"
-      },
-      {
-        "@id": "urn:ngm:class:symbolic-enactment",
-        "label": "Symbolic Enactment"
-      },
-      {
         "@id": "urn:ngm:class:participant-coordination",
         "label": "Participant Coordination"
       },
@@ -191,10 +175,6 @@ public:: true
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:audio-visual-environment",
-        "label": "Audio-Visual Environment"
-      },
       {
         "@id": "urn:ngm:class:synchronization-protocol",
         "label": "Synchronization Protocol"
@@ -214,35 +194,11 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:commemoration-event",
-        "label": "Commemoration Event"
-      },
-      {
-        "@id": "urn:ngm:class:cultural-festival",
-        "label": "Cultural Festival"
-      },
-      {
-        "@id": "urn:ngm:class:initiation-rite",
-        "label": "Initiation Rite"
-      },
-      {
-        "@id": "urn:ngm:class:memorial-service",
-        "label": "Memorial Service"
-      },
-      {
-        "@id": "urn:ngm:class:religious-ceremony",
-        "label": "Religious Ceremony"
-      },
-      {
         "@id": "urn:ngm:class:virtual-wedding",
         "label": "Virtual Wedding"
       }
     ],
     "partOf": [
-      {
-        "@id": "urn:ngm:class:cultural-expression-system",
-        "label": "Cultural Expression System"
-      },
       {
         "@id": "urn:ngm:class:virtual-community-practice",
         "label": "Virtual Community Practice"

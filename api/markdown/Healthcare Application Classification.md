@@ -61,12 +61,9 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:healthcare-technology", "label": "Healthcare Technology"}
-    ],
-    "enables": [
       {
-        "@id": "urn:ngm:class:structured-healthcare-innovation",
-        "label": "Structured Healthcare Innovation"
+        "@id": "urn:ngm:class:healthcare-technology",
+        "label": "Healthcare Technology"
       }
     ]
   },

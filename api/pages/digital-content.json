@@ -36,7 +36,7 @@
         "label": "Content Delivery Network"
       },
       {
-        "id": "urn:ngm:class:storage",
+        "id": "urn:ngm:class:storage-systems",
         "label": "Storage"
       }
     ],
@@ -48,10 +48,6 @@
       {
         "id": "urn:ngm:class:user-experience",
         "label": "User Experience"
-      },
-      {
-        "id": "urn:ngm:class:monetisation",
-        "label": "Monetisation"
       }
     ],
     "dependsOn": [
@@ -65,12 +61,7 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:physical-media",
-        "label": "Physical Media"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:artificial-intelligence",
@@ -87,7 +78,7 @@
         "label": "Digital Asset Management"
       },
       {
-        "id": "urn:ngm:class:compression",
+        "id": "urn:ngm:class:data-compression",
         "label": "Compression"
       },
       {
@@ -110,12 +101,7 @@
       }
     ],
     "standardizedBy": [],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:information-ecosystem",
-        "label": "Information Ecosystem"
-      }
-    ],
+    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:content-moderation",
@@ -126,7 +112,7 @@
         "label": "NFT"
       },
       {
-        "id": "urn:ngm:class:intellectual-property",
+        "id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Intellectual Property"
       },
       {

@@ -38,45 +38,117 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:data-standards", "label": "Data Standards"},
-      {"@id": "urn:ngm:class:controlled-vocabulary", "label": "Controlled Vocabulary"},
-      {"@id": "urn:ngm:class:schema-mapping", "label": "Schema Mapping"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:data-standards",
+        "label": "Data Standards"
+      },
+      {
+        "@id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
+      },
+      {
+        "@id": "urn:ngm:class:schema-mapping",
+        "label": "Schema Mapping"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:data-interoperability", "label": "Data Interoperability"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:federated-data-sharing", "label": "Federated Data Sharing"},
-      {"@id": "urn:ngm:class:machine-readable-compliance", "label": "Machine-Readable Compliance"}
+      {
+        "@id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:federated-data-sharing",
+        "label": "Federated Data Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:machine-readable-compliance",
+        "label": "Machine-Readable Compliance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:owl", "label": "OWL"},
-      {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:sparql", "label": "SPARQL"},
-      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"}
+      {
+        "@id": "urn:ngm:class:owl",
+        "label": "OWL"
+      },
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:w3c", "label": "W3C"},
-      {"@id": "urn:ngm:class:hl7-fhir", "label": "HL7 FHIR"},
-      {"@id": "urn:ngm:class:iso-iec-11179", "label": "ISO/IEC 11179"}
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "@id": "urn:ngm:class:hl7-fhir",
+        "label": "HL7 FHIR"
+      },
+      {
+        "@id": "urn:ngm:class:iso-11179",
+        "label": "ISO/IEC 11179"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:syntactic-interoperability", "label": "Syntactic Interoperability"},
-      {"@id": "urn:ngm:class:structural-interoperability", "label": "Structural Interoperability"}
+      {
+        "@id": "urn:ngm:class:syntactic-interoperability",
+        "label": "Syntactic Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:structural-interoperability",
+        "label": "Structural Interoperability"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-knowledge-base", "label": "AI Knowledge Base"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:ai-knowledge-base",
+        "label": "AI Knowledge Base"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:meaning-preserving-interoperability", "label": "Meaning-Preserving Interoperability"}
+    {
+      "@id": "urn:ngm:class:meaning-preserving-interoperability",
+      "label": "Meaning-Preserving Interoperability"
+    }
   ],
   "quality": 0.74,
   "provenance": {

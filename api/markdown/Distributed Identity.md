@@ -532,15 +532,11 @@ public:: true
         "label": "DID Document"
       },
       {
-        "@id": "urn:ngm:class:holder-issuer-verifier-triangle",
-        "label": "Holder Issuer Verifier Triangle"
-      },
-      {
         "@id": "urn:ngm:class:revocation-registry",
         "label": "Revocation Registry"
       },
       {
-        "@id": "urn:ngm:class:selective-disclosure-mechanism",
+        "@id": "urn:ngm:class:selective-disclosure",
         "label": "Selective Disclosure Mechanism"
       },
       {
@@ -566,11 +562,11 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:cryptographic-wallet",
+        "@id": "urn:ngm:class:wallet",
         "label": "Cryptographic Wallet"
       },
       {
-        "@id": "urn:ngm:class:identity-resolver",
+        "@id": "urn:ngm:class:identity-resolution",
         "label": "Identity Resolver"
       },
       {
@@ -596,10 +592,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:cross-border-recognition",
-        "label": "Cross-Border Recognition"
-      },
-      {
         "@id": "urn:ngm:class:privacy-preserving-authentication",
         "label": "Privacy-Preserving Authentication"
       },
@@ -610,14 +602,6 @@ public:: true
       {
         "@id": "urn:ngm:class:selective-disclosure",
         "label": "Selective Disclosure"
-      },
-      {
-        "@id": "urn:ngm:class:unlinkable-revocation",
-        "label": "Unlinkable Revocation"
-      },
-      {
-        "@id": "urn:ngm:class:zk-kyc",
-        "label": "ZK-KYC"
       },
       {
         "@id": "urn:ngm:class:self-sovereign-identity",
@@ -638,7 +622,7 @@ public:: true
         "label": "AnonCreds"
       },
       {
-        "@id": "urn:ngm:class:bbs-plus-signatures",
+        "@id": "urn:ngm:class:bbs-signatures",
         "label": "BBS Plus Signatures"
       },
       {
@@ -646,7 +630,7 @@ public:: true
         "label": "DIDComm"
       },
       {
-        "@id": "urn:ngm:class:iso-18013-5-m-dl",
+        "@id": "urn:ngm:class:iso-iec-18013-5-m-dl",
         "label": "ISO 18013-5 mDL"
       },
       {
@@ -684,10 +668,6 @@ public:: true
         "label": "Cryptographic Accumulator"
       },
       {
-        "@id": "urn:ngm:class:jose-cose",
-        "label": "JOSE/COSE"
-      },
-      {
         "@id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
@@ -708,10 +688,6 @@ public:: true
       {
         "@id": "urn:ngm:class:bluesky-at-protocol",
         "label": "Bluesky AT Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:keybase",
-        "label": "Keybase"
       },
       {
         "@id": "urn:ngm:class:nostr",
@@ -744,16 +720,8 @@ public:: true
         "label": "Age Verification"
       },
       {
-        "@id": "urn:ngm:class:digital-government-services",
-        "label": "Digital Government Services"
-      },
-      {
         "@id": "urn:ngm:class:educational-credentials",
         "label": "Educational Credentials"
-      },
-      {
-        "@id": "urn:ngm:class:employment-verification",
-        "label": "Employment Verification"
       },
       {
         "@id": "urn:ngm:class:financial-inclusion",
@@ -766,10 +734,6 @@ public:: true
       {
         "@id": "urn:ngm:class:supply-chain-transparency",
         "label": "Supply Chain Transparency"
-      },
-      {
-        "@id": "urn:ngm:class:travel-documents",
-        "label": "Travel Documents"
       },
       {
         "@id": "urn:ngm:class:healthcare-records",

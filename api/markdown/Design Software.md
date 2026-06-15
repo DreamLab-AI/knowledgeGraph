@@ -58,54 +58,137 @@ public:: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:3-d-content-generation", "label": "3D Content Generation"},
-      {"@id": "urn:ngm:class:film-production", "label": "Film Production"},
-      {"@id": "urn:ngm:class:virtual-production-workflow", "label": "Virtual Production Workflow"},
-      {"@id": "urn:ngm:class:user-interface-design", "label": "User Interface Design"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:3-d-content-generation",
+        "label": "3D Content Generation"
+      },
+      {
+        "@id": "urn:ngm:class:film-production",
+        "label": "Film Production"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production-workflow",
+        "label": "Virtual Production Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:user-interface-design",
+        "label": "User Interface Design"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:3-d-rendering-engine", "label": "3D Rendering Engine"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:procedural-generation", "label": "Procedural Generation"},
-      {"@id": "urn:ngm:class:rasterisation", "label": "Rasterisation"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      },
+      {
+        "@id": "urn:ngm:class:rasterisation",
+        "label": "Rasterisation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:graphics-processing-unit", "label": "Graphics Processing Unit"},
-      {"@id": "urn:ngm:class:file-format-standard", "label": "File Format Standard"}
+      {
+        "@id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:file-format-standard",
+        "label": "File Format Standard"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:creative-technology-stack", "label": "Creative Technology Stack"},
-      {"@id": "urn:ngm:class:content-pipeline", "label": "Content Pipeline"}
+      {
+        "@id": "urn:ngm:class:technology-stack",
+        "label": "Creative Technology Stack"
+      },
+      {
+        "@id": "urn:ngm:class:content-pipeline",
+        "label": "Content Pipeline"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:vector-graphics-editor", "label": "Vector Graphics Editor"},
-      {"@id": "urn:ngm:class:3-d-modeling", "label": "3D Modeling"},
-      {"@id": "urn:ngm:class:animation-software", "label": "Animation Software"},
-      {"@id": "urn:ngm:class:cad-tool", "label": "CAD Tool"}
+      {
+        "@id": "urn:ngm:class:3-d-modeling",
+        "label": "3D Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:animation-software",
+        "label": "Animation Software"
+      },
+      {
+        "@id": "urn:ngm:class:cad-software",
+        "label": "CAD Tool"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"}
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:building-information-modelling", "label": "Building Information Modelling"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:building-information-modelling",
+        "label": "Building Information Modelling"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"},
-      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"},
-      {"@id": "urn:ngm:class:colour-management", "label": "Colour Management"}
+      {
+        "@id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:colour-management",
+        "label": "Colour Management"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:creative-software", "label": "Creative Software"},
-    {"@id": "urn:ngm:class:authoring-tool", "label": "Authoring Tool"}
+    {
+      "@id": "urn:ngm:class:creative-software",
+      "label": "Creative Software"
+    },
+    {
+      "@id": "urn:ngm:class:authoring-tool",
+      "label": "Authoring Tool"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

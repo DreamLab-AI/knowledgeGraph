@@ -37,14 +37,6 @@
         "label": "Blockchain Scalability"
       },
       {
-        "id": "urn:ngm:class:sovereign-rollup",
-        "label": "Sovereign Rollup"
-      },
-      {
-        "id": "urn:ngm:class:rollup-as-a-service",
-        "label": "Rollup-as-a-Service"
-      },
-      {
         "id": "urn:ngm:class:modular-blockchain",
         "label": "Modular Blockchain"
       }
@@ -98,10 +90,6 @@
         "label": "Reed-Solomon Erasure Coding"
       },
       {
-        "id": "urn:ngm:class:namespaced-merkle-tree",
-        "label": "Namespaced Merkle Tree"
-      },
-      {
         "id": "urn:ngm:class:inter-blockchain-communication",
         "label": "Inter-Blockchain Communication"
       }
@@ -110,22 +98,14 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:cosmos-ecosystem",
+        "id": "urn:ngm:class:cosmos",
         "label": "Cosmos Ecosystem"
-      },
-      {
-        "id": "urn:ngm:class:modular-blockchain-stack",
-        "label": "Modular Blockchain Stack"
       }
     ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:cosmos",
         "label": "Cosmos"
-      },
-      {
-        "id": "urn:ngm:class:eigenda",
-        "label": "EigenDA"
       },
       {
         "id": "urn:ngm:class:avail",

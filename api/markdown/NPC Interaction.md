@@ -66,7 +66,7 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:immersive-gameplay",
+        "@id": "urn:ngm:class:immersive-gaming",
         "label": "Immersive Gameplay"
       }
     ]

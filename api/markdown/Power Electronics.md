@@ -163,13 +163,13 @@ public:: true
         "label": "IEEE Standards"
       },
       {
-        "@id": "urn:ngm:class:iec-61800",
+        "@id": "urn:ngm:class:iec-61800-adjustable-speed-electrical-power-drive-systems",
         "label": "IEC 61800"
       }
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:linear-power-supply",
+        "@id": "urn:ngm:class:power-supply",
         "label": "Linear Power Supply"
       }
     ],

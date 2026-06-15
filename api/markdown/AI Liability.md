@@ -498,95 +498,21 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:breach-of-duty",
-        "label": "Breach of Duty"
-      },
-      {
-        "@id": "urn:ngm:class:causation",
-        "label": "Causation"
-      },
-      {
         "@id": "urn:ngm:class:conformity-assessment",
         "label": "Conformity Assessment"
       },
       {
-        "@id": "urn:ngm:class:damages",
-        "label": "Damages"
-      },
-      {
         "@id": "urn:ngm:class:duty-of-care",
         "label": "Duty of Care"
-      },
-      {
-        "@id": "urn:ngm:class:foreseeability",
-        "label": "Foreseeability"
-      },
-      {
-        "@id": "urn:ngm:class:post-market-monitoring",
-        "label": "Post-Market Monitoring"
-      },
-      {
-        "@id": "urn:ngm:class:strict-liability-standard",
-        "label": "Strict Liability Standard"
-      }
-    ],
-    "requires": [
-      {
-        "@id": "urn:ngm:class:causal-linkage",
-        "label": "Causal Linkage"
-      },
-      {
-        "@id": "urn:ngm:class:compensable-harm",
-        "label": "Compensable Harm"
-      },
-      {
-        "@id": "urn:ngm:class:evidentiary-record",
-        "label": "Evidentiary Record"
-      },
-      {
-        "@id": "urn:ngm:class:identifiable-legal-person",
-        "label": "Identifiable Legal Person"
-      },
-      {
-        "@id": "urn:ngm:class:jurisdictional-framework",
-        "label": "Jurisdictional Framework"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:compensation-for-victims",
-        "label": "Compensation for Victims"
-      },
-      {
-        "@id": "urn:ngm:class:deterrence-of-harm",
-        "label": "Deterrence of Harm"
-      },
-      {
-        "@id": "urn:ngm:class:insurance-pricing",
-        "label": "Insurance Pricing"
-      },
-      {
         "@id": "urn:ngm:class:regulatory-enforcement",
         "label": "Regulatory Enforcement"
-      },
-      {
-        "@id": "urn:ngm:class:risk-internalisation",
-        "label": "Risk Internalisation"
-      },
-      {
-        "@id": "urn:ngm:class:safety-investment",
-        "label": "Safety Investment"
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:abnormally-dangerous-activity-doctrine",
-        "label": "Abnormally Dangerous Activity Doctrine"
-      },
-      {
-        "@id": "urn:ngm:class:negligence-standard",
-        "label": "Negligence Standard"
-      },
       {
         "@id": "urn:ngm:class:product-liability-directive",
         "label": "Product Liability Directive"
@@ -596,7 +522,7 @@ public:: true
         "label": "Strict Liability"
       },
       {
-        "@id": "urn:ngm:class:vicarious-liability",
+        "@id": "urn:ngm:class:product-liability",
         "label": "Vicarious Liability"
       },
       {
@@ -605,26 +531,6 @@ public:: true
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:caparo-three-stage-test",
-        "label": "Caparo Three-Stage Test"
-      },
-      {
-        "@id": "urn:ngm:class:daubert-standard",
-        "label": "Daubert Standard"
-      },
-      {
-        "@id": "urn:ngm:class:foreseeability-test",
-        "label": "Foreseeability Test"
-      },
-      {
-        "@id": "urn:ngm:class:reasonable-care-standard",
-        "label": "Reasonable Care Standard"
-      },
-      {
-        "@id": "urn:ngm:class:restatement-second-of-torts-402-a",
-        "label": "Restatement (Second) of Torts § 402A"
-      },
       {
         "@id": "urn:ngm:class:risk-benefit-analysis",
         "label": "Risk-Benefit Analysis"
@@ -666,10 +572,6 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:ai-insurance",
-        "label": "AI Insurance"
-      },
-      {
         "@id": "urn:ngm:class:algorithmic-auditing",
         "label": "Algorithmic Auditing"
       },
@@ -692,11 +594,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:consumer-protection-act-1987",
-        "label": "Consumer Protection Act 1987"
-      },
-      {
-        "@id": "urn:ngm:class:ieee-7000-series",
+        "@id": "urn:ngm:class:ieee-7000",
         "label": "IEEE 7000 Series"
       },
       {

@@ -23,63 +23,153 @@ public:: true
   "definition": "The ERC-20 Token Standard is the foundational Ethereum Request for Comments specification that defines a common interface for fungible tokens on the Ethereum blockchain, enabling seamless interoperability between token contracts, wallets, decentralised exchanges, and other smart contract systems. Proposed by Fabian Vogelsteller in 2015 and formalised as an Ethereum Improvement Proposal, it specifies six mandatory functions—totalSupply, balanceOf, transfer, transferFrom, approve, and allowance—and two events. ERC-20 standardisation catalysed the 2017 ICO boom and remains the dominant token interface in decentralised finance, with thousands of tokens deployed to this specification. Its simplicity has made it the basis for numerous extended standards including ERC-777, ERC-1400, and ERC-3643.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:enterprise-token-standards", "label": "Enterprise Token Standards"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:smart-contract-abi", "label": "Smart Contract ABI"},
-      {"@id": "urn:ngm:class:token-allowance-mechanism", "label": "Token Allowance Mechanism"},
-      {"@id": "urn:ngm:class:transfer-event", "label": "Transfer Event"}
+      {
+        "@id": "urn:ngm:class:transfer-event",
+        "label": "Transfer Event"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ethereum-virtual-machine", "label": "Ethereum Virtual Machine"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:ethereum-improvement-proposal", "label": "Ethereum Improvement Proposal"},
-      {"@id": "urn:ngm:class:fungible-token", "label": "Fungible Token"}
+      {
+        "@id": "urn:ngm:class:ethereum-improvement-proposal",
+        "label": "Ethereum Improvement Proposal"
+      },
+      {
+        "@id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:asset-tokenisation", "label": "Asset Tokenisation"},
-      {"@id": "urn:ngm:class:decentralized-exchange-dex", "label": "Decentralized Exchange (DEX)"},
-      {"@id": "urn:ngm:class:token-composability", "label": "Token Composability"},
-      {"@id": "urn:ngm:class:initial-coin-offering", "label": "Initial Coin Offering"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-exchange-dex",
+        "label": "Decentralized Exchange (DEX)"
+      },
+      {
+        "@id": "urn:ngm:class:token-composability",
+        "label": "Token Composability"
+      },
+      {
+        "@id": "urn:ngm:class:initial-coin-offering",
+        "label": "Initial Coin Offering"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
-      {"@id": "urn:ngm:class:solidity", "label": "Solidity"}
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:enterprise-smart-contracts", "label": "Enterprise Smart Contracts"},
-      {"@id": "urn:ngm:class:evm-compatible-blockchain", "label": "EVM-Compatible Blockchain"}
+      {
+        "@id": "urn:ngm:class:enterprise-smart-contracts",
+        "label": "Enterprise Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:evm-compatible-blockchain",
+        "label": "EVM-Compatible Blockchain"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:cryptocurrency-wallet", "label": "Cryptocurrency Wallet"},
-      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"}
+      {
+        "@id": "urn:ngm:class:cryptocurrency-wallet",
+        "label": "Cryptocurrency Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ethereum-foundation", "label": "Ethereum Foundation"}
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-foundation",
+        "label": "Ethereum Foundation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:erc-721", "label": "ERC-721"},
-      {"@id": "urn:ngm:class:erc-1155", "label": "ERC-1155"},
-      {"@id": "urn:ngm:class:erc-777", "label": "ERC-777"}
+      {
+        "@id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "@id": "urn:ngm:class:erc-1155",
+        "label": "ERC-1155"
+      },
+      {
+        "@id": "urn:ngm:class:erc-777",
+        "label": "ERC-777"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:erc-20", "label": "ERC-20"},
-      {"@id": "urn:ngm:class:erc1400-standard", "label": "ERC1400 Standard"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:utility-token", "label": "Utility Token"},
-      {"@id": "urn:ngm:class:erc3643-standard", "label": "ERC3643 Standard"},
-      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"}
+      {
+        "@id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "@id": "urn:ngm:class:erc1400-standard",
+        "label": "ERC1400 Standard"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:utility-token",
+        "label": "Utility Token"
+      },
+      {
+        "@id": "urn:ngm:class:erc3643-standard",
+        "label": "ERC3643 Standard"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:security-token", "label": "Security Token"},
-      {"@id": "urn:ngm:class:tokenized-asset", "label": "Tokenized Asset"}
+      {
+        "@id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "@id": "urn:ngm:class:tokenized-asset",
+        "label": "Tokenized Asset"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:erc-20", "label": "ERC-20"}
+    {
+      "@id": "urn:ngm:class:erc-20",
+      "label": "ERC-20"
+    }
   ],
   "quality": 0.72,
   "provenance": {

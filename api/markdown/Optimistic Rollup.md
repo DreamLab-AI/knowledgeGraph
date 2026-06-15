@@ -69,10 +69,6 @@ public:: true
         "label": "Fraud Proof"
       },
       {
-        "@id": "urn:ngm:class:challenge-period",
-        "label": "Challenge Period"
-      },
-      {
         "@id": "urn:ngm:class:sequencer",
         "label": "Sequencer"
       }
@@ -83,7 +79,7 @@ public:: true
         "label": "Layer 2 Scaling"
       },
       {
-        "@id": "urn:ngm:class:ethereum-ecosystem",
+        "@id": "urn:ngm:class:ethereum",
         "label": "Ethereum Ecosystem"
       }
     ],
@@ -185,12 +181,8 @@ public:: true
         "label": "Arbitrum"
       },
       {
-        "@id": "urn:ngm:class:base-chain",
+        "@id": "urn:ngm:class:base",
         "label": "Base Chain"
-      },
-      {
-        "@id": "urn:ngm:class:withdrawal-delay",
-        "label": "Withdrawal Delay"
       }
     ]
   },

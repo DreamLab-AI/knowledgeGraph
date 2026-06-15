@@ -39,49 +39,127 @@ alias:: Anti Money Laundering
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:customer-due-diligence", "label": "Customer Due Diligence"},
-      {"@id": "urn:ngm:class:transaction-monitoring", "label": "Transaction Monitoring"},
-      {"@id": "urn:ngm:class:suspicious-activity-reporting", "label": "Suspicious Activity Reporting"},
-      {"@id": "urn:ngm:class:sanctions-screening", "label": "Sanctions Screening"},
-      {"@id": "urn:ngm:class:know-your-customer", "label": "Know Your Customer"}
+      {
+        "@id": "urn:ngm:class:customer-due-diligence",
+        "label": "Customer Due Diligence"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-monitoring",
+        "label": "Transaction Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:suspicious-activity-reporting",
+        "label": "Suspicious Activity Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
+      },
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"},
-      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
-      {"@id": "urn:ngm:class:graph-neural-network", "label": "Graph Neural Network"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:financial-intelligence", "label": "Financial Intelligence"},
-      {"@id": "urn:ngm:class:asset-recovery", "label": "Asset Recovery"}
+      {
+        "@id": "urn:ngm:class:financial-intelligence",
+        "label": "Financial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:asset-recovery",
+        "label": "Asset Recovery"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:financial-action-task-force", "label": "Financial Action Task Force"},
-      {"@id": "urn:ngm:class:basel-committee-on-banking-supervision", "label": "Basel Committee on Banking Supervision"}
+      {
+        "@id": "urn:ngm:class:financial-action-task-force",
+        "label": "Financial Action Task Force"
+      },
+      {
+        "@id": "urn:ngm:class:basel-committee-on-banking-supervision",
+        "label": "Basel Committee on Banking Supervision"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:privacy-preserving-computation", "label": "Privacy-Preserving Computation"},
-      {"@id": "urn:ngm:class:financial-anonymity", "label": "Financial Anonymity"}
+      {
+        "@id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      },
+      {
+        "@id": "urn:ngm:class:financial-privacy",
+        "label": "Financial Anonymity"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"},
-      {"@id": "urn:ngm:class:counter-terrorist-financing", "label": "Counter-Terrorist Financing"},
-      {"@id": "urn:ngm:class:financial-crime", "label": "Financial Crime"},
-      {"@id": "urn:ngm:class:regtech", "label": "RegTech"}
+      {
+        "@id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:counter-terrorist-financing",
+        "label": "Counter-Terrorist Financing"
+      },
+      {
+        "@id": "urn:ngm:class:financial-crime-detection",
+        "label": "Financial Crime"
+      },
+      {
+        "@id": "urn:ngm:class:regtech",
+        "label": "RegTech"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:aml-compliance", "label": "AML Compliance"},
-    {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"}
+    {
+      "@id": "urn:ngm:class:aml-compliance",
+      "label": "AML Compliance"
+    },
+    {
+      "@id": "urn:ngm:class:aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    }
   ],
   "quality": 0.74,
   "provenance": {

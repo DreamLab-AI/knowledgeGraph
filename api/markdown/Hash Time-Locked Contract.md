@@ -24,53 +24,142 @@ alias:: Hash Time Locked Contract
   "definition": "A Hash Time-Locked Contract (HTLC) is a type of smart contract that conditionally releases funds to a recipient only if they present a valid cryptographic preimage satisfying a specified hash condition within a defined time window; if the condition remains unmet before the timeout expires, the funds automatically revert to the sender. HTLCs combine two complementary mechanisms—a hashlock, which binds settlement to knowledge of a secret, and a timelock, which enforces a bounded settlement window—to achieve trustless atomicity across one or more blockchain ledgers. They are foundational to payment channel networks such as the Lightning Network and to cross-chain atomic swap protocols, enabling conditional payment routing without custodial intermediaries or mutual trust. As a composable on-chain primitive, HTLCs underpin a wide range of decentralised finance and interoperability constructs.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:htlc", "label": "HTLC"}
+    {
+      "@id": "urn:ngm:class:htlc",
+      "label": "HTLC"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:timelock", "label": "Timelock"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:timelock",
+        "label": "Timelock"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
-      {"@id": "urn:ngm:class:atomic-swap", "label": "Atomic Swap"},
-      {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"},
-      {"@id": "urn:ngm:class:micropayments", "label": "Micropayments"},
-      {"@id": "urn:ngm:class:payment-channel", "label": "Payment Channel"},
-      {"@id": "urn:ngm:class:trustless-transaction", "label": "Trustless Transaction"}
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      },
+      {
+        "@id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "@id": "urn:ngm:class:trustless-transaction",
+        "label": "Trustless Transaction"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:atomic-swap", "label": "Atomic Swap"},
-      {"@id": "urn:ngm:class:conditional-payment", "label": "Conditional Payment"}
+      {
+        "@id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "@id": "urn:ngm:class:conditional-payment",
+        "label": "Conditional Payment"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"},
-      {"@id": "urn:ngm:class:script", "label": "Script"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"}
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "@id": "urn:ngm:class:script",
+        "label": "Script"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:point-time-locked-contract", "label": "Point Time-Locked Contract"},
-      {"@id": "urn:ngm:class:custodial-exchange", "label": "Custodial Exchange"},
-      {"@id": "urn:ngm:class:trusted-third-party", "label": "Trusted Third Party"}
+      {
+        "@id": "urn:ngm:class:point-time-locked-contract",
+        "label": "Point Time-Locked Contract"
+      },
+      {
+        "@id": "urn:ngm:class:custodial-exchange",
+        "label": "Custodial Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-third-party",
+        "label": "Trusted Third Party"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"},
-      {"@id": "urn:ngm:class:payment-system", "label": "Payment System"},
-      {"@id": "urn:ngm:class:de-fi", "label": "DeFi"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:adaptor-signature", "label": "Adaptor Signature"}
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "@id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:adaptor-signature",
+        "label": "Adaptor Signature"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
     ]
   },
   "quality": 0.74,

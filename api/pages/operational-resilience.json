@@ -45,7 +45,7 @@
         "label": "Business Continuity"
       },
       {
-        "id": "urn:ngm:class:service-reliability",
+        "id": "urn:ngm:class:reliability",
         "label": "Service Reliability"
       },
       {
@@ -59,24 +59,11 @@
         "label": "Redundancy"
       },
       {
-        "id": "urn:ngm:class:monitoring-and-observability",
-        "label": "Monitoring and Observability"
-      },
-      {
         "id": "urn:ngm:class:chaos-engineering",
         "label": "Chaos Engineering"
       }
     ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:dora-regulation",
-        "label": "DORA Regulation"
-      },
-      {
-        "id": "urn:ngm:class:iso-22301",
-        "label": "ISO 22301"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:disaster-recovery",
@@ -116,16 +103,12 @@
         "label": "Compliance Framework"
       },
       {
-        "id": "urn:ngm:class:supply-chain-risk",
+        "id": "urn:ngm:class:supply-chain",
         "label": "Supply Chain Risk"
       },
       {
         "id": "urn:ngm:class:third-party-risk-management",
         "label": "Third-Party Risk Management"
-      },
-      {
-        "id": "urn:ngm:class:cyber-risk",
-        "label": "Cyber Risk"
       },
       {
         "id": "urn:ngm:class:service-level-agreement",

@@ -23,54 +23,133 @@ public:: true
   "definition": "Data Serialization is the process of converting structured in-memory data objects — including primitive types, collections, and complex graphs — into a byte-sequence or character-stream representation that can be stored persistently, transmitted across a network boundary, or reconstructed (deserialised) into an equivalent in-memory representation on a different machine or at a different time, potentially running different software. Serialization formats vary along axes of human readability (JSON, YAML, XML versus binary), schema enforcement (Protocol Buffers, Apache Avro with mandatory schemas versus schemaless JSON), compactness, and cross-language support, making format selection a critical engineering decision that affects system interoperability, performance, and evolvability.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-format", "label": "Data Format"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-format",
+      "label": "Data Format"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:json-data-interchange-format", "label": "JSON Data Interchange Format"},
-      {"@id": "urn:ngm:class:protocol-buffer", "label": "Protocol Buffer"},
-      {"@id": "urn:ngm:class:schema-registry", "label": "Schema Registry"},
-      {"@id": "urn:ngm:class:data-format-standard", "label": "Data Format Standard"},
-      {"@id": "urn:ngm:class:binary-encoding", "label": "Binary Encoding"},
-      {"@id": "urn:ngm:class:messagepack", "label": "MessagePack"},
-      {"@id": "urn:ngm:class:apache-avro", "label": "Apache Avro"},
-      {"@id": "urn:ngm:class:xml", "label": "XML"},
-      {"@id": "urn:ngm:class:yaml", "label": "YAML"}
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format",
+        "label": "JSON Data Interchange Format"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-buffer",
+        "label": "Protocol Buffer"
+      },
+      {
+        "@id": "urn:ngm:class:schema-registry",
+        "label": "Schema Registry"
+      },
+      {
+        "@id": "urn:ngm:class:data-format-standard",
+        "label": "Data Format Standard"
+      },
+      {
+        "@id": "urn:ngm:class:binary-encoding",
+        "label": "Binary Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:messagepack",
+        "label": "MessagePack"
+      },
+      {
+        "@id": "urn:ngm:class:apache-avro",
+        "label": "Apache Avro"
+      },
+      {
+        "@id": "urn:ngm:class:xml",
+        "label": "XML"
+      },
+      {
+        "@id": "urn:ngm:class:yaml",
+        "label": "YAML"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:interoperability-protocol", "label": "Interoperability Protocol"},
-      {"@id": "urn:ngm:class:remote-procedure-call", "label": "Remote Procedure Call"},
-      {"@id": "urn:ngm:class:message-passing", "label": "Message Passing"}
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      },
+      {
+        "@id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:data-schema", "label": "Data Schema"},
-      {"@id": "urn:ngm:class:encoding-scheme", "label": "Encoding Scheme"},
-      {"@id": "urn:ngm:class:type-system", "label": "Type System"}
+      {
+        "@id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      },
+      {
+        "@id": "urn:ngm:class:type-system",
+        "label": "Type System"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:data-storage", "label": "Data Storage"},
-      {"@id": "urn:ngm:class:network-communication", "label": "Network Communication"},
-      {"@id": "urn:ngm:class:event-streaming", "label": "Event Streaming"}
+      {
+        "@id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "@id": "urn:ngm:class:network-communication",
+        "label": "Network Communication"
+      },
+      {
+        "@id": "urn:ngm:class:event-streaming",
+        "label": "Event Streaming"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:schema-evolution", "label": "Schema Evolution"},
-      {"@id": "urn:ngm:class:backward-compatibility", "label": "Backward Compatibility"}
+      {
+        "@id": "urn:ngm:class:schema-evolution",
+        "label": "Schema Evolution"
+      },
+      {
+        "@id": "urn:ngm:class:backward-compatibility",
+        "label": "Backward Compatibility"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:internet-engineering-task-force", "label": "Internet Engineering Task Force"},
-      {"@id": "urn:ngm:class:w3c", "label": "W3C"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:in-memory-representation", "label": "In-Memory Representation"}
+      {
+        "@id": "urn:ngm:class:internet-engineering-task-force",
+        "label": "Internet Engineering Task Force"
+      },
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:object-serialization", "label": "Object Serialization"},
-    {"@id": "urn:ngm:class:data-marshalling", "label": "Data Marshalling"}
+    {
+      "@id": "urn:ngm:class:object-serialization",
+      "label": "Object Serialization"
+    },
+    {
+      "@id": "urn:ngm:class:data-marshalling",
+      "label": "Data Marshalling"
+    }
   ],
   "quality": 0.72,
   "provenance": {

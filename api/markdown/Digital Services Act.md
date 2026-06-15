@@ -88,7 +88,7 @@ public:: true
         "label": "Compliance Systems"
       },
       {
-        "@id": "urn:ngm:class:moderation-infrastructure",
+        "@id": "urn:ngm:class:content-moderation",
         "label": "Moderation Infrastructure"
       },
       {
@@ -118,26 +118,8 @@ public:: true
         "label": "User Protection"
       },
       {
-        "@id": "urn:ngm:class:illegal-content-removal",
-        "label": "Illegal Content Removal"
-      },
-      {
         "@id": "urn:ngm:class:minor-protection",
         "label": "Minor Protection"
-      }
-    ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:very-large-online-platform-obligations",
-        "label": "Very Large Online Platform Obligations"
-      },
-      {
-        "@id": "urn:ngm:class:notice-and-action-mechanism",
-        "label": "Notice and Action Mechanism"
-      },
-      {
-        "@id": "urn:ngm:class:trusted-flaggers-regime",
-        "label": "Trusted Flaggers Regime"
       }
     ],
     "partOf": [
@@ -150,10 +132,6 @@ public:: true
       {
         "@id": "urn:ngm:class:platform-governance",
         "label": "Platform Governance"
-      },
-      {
-        "@id": "urn:ngm:class:data-access-rights",
-        "label": "Data Access Rights"
       }
     ],
     "contrastsWith": [
@@ -182,7 +160,7 @@ public:: true
         "label": "Content Moderation"
       },
       {
-        "@id": "urn:ngm:class:recommendation-algorithms",
+        "@id": "urn:ngm:class:recommendation-system",
         "label": "Recommendation Algorithms"
       }
     ],
@@ -211,7 +189,7 @@ public:: true
       "label": "EU Digital Services Regulation"
     }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

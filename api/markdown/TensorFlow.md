@@ -105,23 +105,11 @@ public:: true
         "label": "Keras"
       },
       {
-        "@id": "urn:ngm:class:tensorflow-serving",
-        "label": "TensorFlow Serving"
-      },
-      {
-        "@id": "urn:ngm:class:tensorflow-lite",
+        "@id": "urn:ngm:class:tensor-flow-lite",
         "label": "TensorFlow Lite"
-      },
-      {
-        "@id": "urn:ngm:class:tensorflow-hub",
-        "label": "TensorFlow Hub"
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:dataflow-graph",
-        "label": "Dataflow Graph"
-      },
       {
         "@id": "urn:ngm:class:computational-graph",
         "label": "Computational Graph"

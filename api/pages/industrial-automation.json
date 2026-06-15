@@ -102,14 +102,14 @@
         "label": "Fieldbus"
       },
       {
-        "id": "urn:ngm:class:human-machine-interface",
+        "id": "urn:ngm:class:human-computer-interface",
         "label": "Human-Machine Interface"
       }
     ],
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iec-61131",
+        "id": "urn:ngm:class:iec-61131-3",
         "label": "IEC 61131"
       },
       {
@@ -132,7 +132,7 @@
         "label": "Real-time Processing"
       },
       {
-        "id": "urn:ngm:class:collaborative-robot",
+        "id": "urn:ngm:class:collaborative-systems-modality-robot",
         "label": "Collaborative Robot"
       }
     ]

@@ -77,10 +77,6 @@ public:: true
         "label": "Decentralised Storage"
       },
       {
-        "@id": "urn:ngm:class:rpc-endpoint",
-        "label": "RPC Endpoint"
-      },
-      {
         "@id": "urn:ngm:class:cross-chain-bridge",
         "label": "Cross-Chain Bridge"
       },
@@ -133,13 +129,13 @@ public:: true
         "label": "Consensus Mechanism"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:ethereum-protocol",
+        "@id": "urn:ngm:class:ethereum",
         "label": "Ethereum Protocol"
       }
     ],
@@ -169,7 +165,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:centralised-cloud-infrastructure",
+        "@id": "urn:ngm:class:cloud-infrastructure",
         "label": "Centralised Cloud Infrastructure"
       }
     ],

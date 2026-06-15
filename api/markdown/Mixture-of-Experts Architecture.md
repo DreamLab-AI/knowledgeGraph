@@ -61,53 +61,103 @@ alias:: Mixture-of-Experts
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:sparse-mixture-of-experts", "label": "Sparse Mixture of Experts"},
-      {"@id": "urn:ngm:class:expert-network", "label": "Expert Network"},
-      {"@id": "urn:ngm:class:gating-network", "label": "Gating Network"},
-      {"@id": "urn:ngm:class:sparse-activation", "label": "Sparse Activation"}
+      {
+        "@id": "urn:ngm:class:sparse-mixture-of-experts",
+        "label": "Sparse Mixture of Experts"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:ensemble-learning", "label": "Ensemble Learning"}
+      {
+        "@id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Learning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:load-balancing", "label": "Load Balancing"},
-      {"@id": "urn:ngm:class:expert-parallelism", "label": "Expert Parallelism"}
+      {
+        "@id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      },
+      {
+        "@id": "urn:ngm:class:expert-parallelism",
+        "label": "Expert Parallelism"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:efficient-scaling", "label": "Efficient Scaling"},
-      {"@id": "urn:ngm:class:parameter-efficient-training", "label": "Parameter-Efficient Training"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Training"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:softmax-routing", "label": "Softmax Routing"}
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:model-scaling", "label": "Model Scaling"},
-      {"@id": "urn:ngm:class:inference-efficiency", "label": "Inference Efficiency"}
+      {
+        "@id": "urn:ngm:class:model-scaling",
+        "label": "Model Scaling"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:dense-model", "label": "Dense Model"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:switch-transformer", "label": "Switch Transformer"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Switch Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:mixture-of-experts", "label": "Mixture of Experts"},
-    {"@id": "urn:ngm:class:moe-architecture", "label": "MoE Architecture"},
-    {"@id": "urn:ngm:class:sparsely-gated-mixture-of-experts", "label": "Sparsely-Gated Mixture-of-Experts"}
+    {
+      "@id": "urn:ngm:class:mixture-of-experts",
+      "label": "Mixture of Experts"
+    },
+    {
+      "@id": "urn:ngm:class:moe-architecture",
+      "label": "MoE Architecture"
+    },
+    {
+      "@id": "urn:ngm:class:sparsely-gated-mixture-of-experts",
+      "label": "Sparsely-Gated Mixture-of-Experts"
+    }
   ],
   "quality": 0.72,
   "provenance": {

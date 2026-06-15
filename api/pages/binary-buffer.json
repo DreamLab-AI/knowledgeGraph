@@ -19,27 +19,11 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:buffer-management",
-        "label": "Buffer Management"
-      },
-      {
-        "id": "urn:ngm:class:data-formatting",
-        "label": "Data Formatting"
-      },
-      {
         "id": "urn:ngm:class:memory-allocation",
         "label": "Memory Allocation"
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:data-transfer",
-        "label": "Data Transfer"
-      },
-      {
-        "id": "urn:ngm:class:graphics-rendering",
-        "label": "Graphics Rendering"
-      },
       {
         "id": "urn:ngm:class:stream-processing",
         "label": "Stream Processing"

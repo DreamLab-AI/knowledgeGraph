@@ -291,7 +291,7 @@ alias:: GenerativeAI
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:ai-art",
+        "@id": "urn:ngm:class:ai-art-generation",
         "label": "AI Art"
       },
       {

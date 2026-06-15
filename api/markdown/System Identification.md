@@ -38,46 +38,121 @@ public:: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:whole-body-control", "label": "Whole Body Control"},
-      {"@id": "urn:ngm:class:model-predictive-control", "label": "Model Predictive Control"},
-      {"@id": "urn:ngm:class:adaptive-control", "label": "Adaptive Control"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:whole-body-control",
+        "label": "Whole Body Control"
+      },
+      {
+        "@id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:excitation-trajectory", "label": "Excitation Trajectory"},
-      {"@id": "urn:ngm:class:state-estimation", "label": "State Estimation"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {
+        "@id": "urn:ngm:class:excitation-trajectory",
+        "label": "Excitation Trajectory"
+      },
+      {
+        "@id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:least-squares-regression", "label": "Least-Squares Regression"},
-      {"@id": "urn:ngm:class:gaussian-process-regression", "label": "Gaussian Process Regression"},
-      {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"},
-      {"@id": "urn:ngm:class:neural-ode", "label": "Neural ODE"},
-      {"@id": "urn:ngm:class:maximum-likelihood-estimation", "label": "Maximum Likelihood Estimation"}
+      {
+        "@id": "urn:ngm:class:regression",
+        "label": "Least-Squares Regression"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-process-regression",
+        "label": "Gaussian Process Regression"
+      },
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "@id": "urn:ngm:class:neural-ode",
+        "label": "Neural ODE"
+      },
+      {
+        "@id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
-      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"},
-      {"@id": "urn:ngm:class:experimental-design", "label": "Experimental Design"}
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:experimental-design",
+        "label": "Experimental Design"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:domain-randomisation", "label": "Domain Randomisation"},
-      {"@id": "urn:ngm:class:model-free-control", "label": "Model-Free Control"}
+      {
+        "@id": "urn:ngm:class:domain-randomisation",
+        "label": "Domain Randomisation"
+      },
+      {
+        "@id": "urn:ngm:class:model-free-control",
+        "label": "Model-Free Control"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:observer-design", "label": "Observer Design"},
-      {"@id": "urn:ngm:class:parameter-estimation", "label": "Parameter Estimation"},
-      {"@id": "urn:ngm:class:structural-dynamics", "label": "Structural Dynamics"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:observer-design",
+        "label": "Observer Design"
+      },
+      {
+        "@id": "urn:ngm:class:parameter-estimation",
+        "label": "Parameter Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:structural-dynamics",
+        "label": "Structural Dynamics"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:physics-informed-neural-network", "label": "Physics-Informed Neural Network"},
-      {"@id": "urn:ngm:class:sim-to-real-transfer", "label": "Sim-to-Real Transfer"}
+      {
+        "@id": "urn:ngm:class:physics-informed-neural-network",
+        "label": "Physics-Informed Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:sim-to-real-transfer",
+        "label": "Sim-to-Real Transfer"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:plant-identification", "label": "Plant Identification"},
-    {"@id": "urn:ngm:class:model-identification", "label": "Model Identification"}
+    {
+      "@id": "urn:ngm:class:plant-identification",
+      "label": "Plant Identification"
+    },
+    {
+      "@id": "urn:ngm:class:model-identification",
+      "label": "Model Identification"
+    }
   ],
   "quality": 0.73,
   "provenance": {

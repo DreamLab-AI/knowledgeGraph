@@ -170,7 +170,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:access-control-layer",
+        "@id": "urn:ngm:class:access-control",
         "label": "Access Control Layer"
       },
       {
@@ -178,7 +178,7 @@ public:: true
         "label": "Data Catalog"
       },
       {
-        "@id": "urn:ngm:class:data-integration-service",
+        "@id": "urn:ngm:class:data-integration",
         "label": "Data Integration Service"
       },
       {

@@ -19,14 +19,6 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:liquid-prediction-market",
-        "label": "Liquid Prediction Market"
-      },
-      {
-        "id": "urn:ngm:class:measurable-welfare-criterion",
-        "label": "Measurable Welfare Criterion"
-      },
-      {
         "id": "urn:ngm:class:market-making",
         "label": "Market Making"
       }
@@ -43,10 +35,6 @@
       {
         "id": "urn:ngm:class:transparent-decision-making",
         "label": "Transparent Decision Making"
-      },
-      {
-        "id": "urn:ngm:class:information-aggregation",
-        "label": "Information Aggregation"
       },
       {
         "id": "urn:ngm:class:evidence-based-policy",
@@ -106,16 +94,8 @@
         "label": "On Chain Voting"
       },
       {
-        "id": "urn:ngm:class:prediction-market",
+        "id": "urn:ngm:class:prediction-markets",
         "label": "Prediction Market"
-      },
-      {
-        "id": "urn:ngm:class:conditional-futures-market",
-        "label": "Conditional Futures Market"
-      },
-      {
-        "id": "urn:ngm:class:welfare-metric",
-        "label": "Welfare Metric"
       }
     ],
     "supports": [],

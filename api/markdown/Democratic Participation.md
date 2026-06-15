@@ -106,16 +106,12 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:civic-engagement",
+        "@id": "urn:ngm:class:civic-participation",
         "label": "Civic Engagement"
       },
       {
         "@id": "urn:ngm:class:community-decision-making",
         "label": "Community Decision Making"
-      },
-      {
-        "@id": "urn:ngm:class:virtual-voting",
-        "label": "Virtual Voting"
       }
     ]
   },

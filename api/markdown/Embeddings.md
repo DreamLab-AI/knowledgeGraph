@@ -23,53 +23,138 @@ public:: true
   "definition": "Embeddings are dense, low-dimensional vector representations of discrete objects—words, sentences, images, code, graphs, or arbitrary entities—learned by neural networks such that geometric relationships in the vector space correspond to semantic or functional relationships between the original objects. The core property is that semantically similar inputs map to nearby vectors, enabling tasks like similarity search, clustering, and retrieval to be performed as efficient geometric operations. Embeddings are the foundational representation layer of modern deep learning, underpinning language models, recommendation systems, search engines, and retrieval-augmented generation pipelines. They transform high-dimensional sparse inputs into compact continuous representations that downstream neural architectures—particularly attention-based transformers—can process and reason over.",
   "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:representation-learning", "label": "Representation Learning"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:representation-learning",
+      "label": "Representation Learning"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:vector-representation", "label": "Vector Representation"},
-    {"@id": "urn:ngm:class:neural-embedding", "label": "Neural Embedding"},
-    {"@id": "urn:ngm:class:latent-representation", "label": "Latent Representation"}
+    {
+      "@id": "urn:ngm:class:vector-representation",
+      "label": "Vector Representation"
+    },
+    {
+      "@id": "urn:ngm:class:neural-embedding",
+      "label": "Neural Embedding"
+    },
+    {
+      "@id": "urn:ngm:class:latent-representation",
+      "label": "Latent Representation"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:token-embedding", "label": "Token Embedding"},
-      {"@id": "urn:ngm:class:soft-prompt-embedding", "label": "Soft Prompt Embedding"},
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"},
-      {"@id": "urn:ngm:class:positional-encoding", "label": "Positional Encoding"}
+      {
+        "@id": "urn:ngm:class:token-embedding",
+        "label": "Token Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:soft-prompt-embedding",
+        "label": "Soft Prompt Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "@id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
-      {"@id": "urn:ngm:class:recommendation-system", "label": "Recommendation System"},
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"}
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"},
-      {"@id": "urn:ngm:class:dimensionality-reduction", "label": "Dimensionality Reduction"}
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "@id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"}
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:one-hot-encoding", "label": "One-Hot Encoding"},
-      {"@id": "urn:ngm:class:bag-of-words", "label": "Bag of Words"},
-      {"@id": "urn:ngm:class:symbolic-representation", "label": "Symbolic Representation"}
+      {
+        "@id": "urn:ngm:class:one-hot-encoding",
+        "label": "One-Hot Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:bag-of-words",
+        "label": "Bag of Words"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cosine-similarity", "label": "Cosine Similarity"},
-      {"@id": "urn:ngm:class:approximate-nearest-neighbour", "label": "Approximate Nearest Neighbour"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:multimodal-learning", "label": "Multimodal Learning"}
+      {
+        "@id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
+      },
+      {
+        "@id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Approximate Nearest Neighbour"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-learning",
+        "label": "Multimodal Learning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:knowledge-graph-embedding", "label": "Knowledge Graph Embedding"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-embedding",
+        "label": "Knowledge Graph Embedding"
+      }
     ]
   },
   "quality": 0.76,

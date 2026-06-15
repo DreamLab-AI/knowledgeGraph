@@ -23,54 +23,129 @@ public:: true
   "definition": "A motion model is a mathematical or learned representation that describes how the state of a moving entity—a robot, vehicle, or articulated body—evolves over time given control inputs and noise. In probabilistic robotics it forms the prediction step of filters such as Kalman and particle filters, characterising uncertainty in state transitions. Motion models range from simple kinematic approximations (constant velocity, unicycle) to full rigid-body dynamic equations and learned neural representations derived from data. Accuracy of the motion model directly determines the quality of localisation, planning, and control outcomes.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:kinematics-model", "label": "Kinematics Model"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:kinematics-model",
+      "label": "Kinematics Model"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:process-noise-model", "label": "Process Noise Model"},
-      {"@id": "urn:ngm:class:state-transition-function", "label": "State Transition Function"}
+      {
+        "@id": "urn:ngm:class:state-transition-function",
+        "label": "State Transition Function"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:state-space-representation", "label": "State Space Representation"},
-      {"@id": "urn:ngm:class:control-input", "label": "Control Input"}
+      {
+        "@id": "urn:ngm:class:state-space-representation",
+        "label": "State Space Representation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"},
-      {"@id": "urn:ngm:class:rigid-body-dynamics", "label": "Rigid Body Dynamics"},
-      {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"},
-      {"@id": "urn:ngm:class:differential-equations", "label": "Differential Equations"}
+      {
+        "@id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "@id": "urn:ngm:class:differential-equations",
+        "label": "Differential Equations"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:state-estimation", "label": "State Estimation"},
-      {"@id": "urn:ngm:class:trajectory-tracking", "label": "Trajectory Tracking"},
-      {"@id": "urn:ngm:class:robot-localisation", "label": "Robot Localisation"}
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory-tracking",
+        "label": "Trajectory Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:robot-localisation",
+        "label": "Robot Localisation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"},
-      {"@id": "urn:ngm:class:particle-filter", "label": "Particle Filter"}
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "@id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
-      {"@id": "urn:ngm:class:model-predictive-control", "label": "Model Predictive Control"}
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:observation-model", "label": "Observation Model"},
-      {"@id": "urn:ngm:class:sensor-model", "label": "Sensor Model"}
+      {
+        "@id": "urn:ngm:class:observation-model",
+        "label": "Observation Model"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-model",
+        "label": "Sensor Model"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"},
-      {"@id": "urn:ngm:class:robot-dynamics", "label": "Robot Dynamics"},
-      {"@id": "urn:ngm:class:newton-euler-dynamics", "label": "Newton-Euler Dynamics"},
-      {"@id": "urn:ngm:class:odometry", "label": "Odometry"}
+      {
+        "@id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "@id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:newton-euler-dynamics",
+        "label": "Newton-Euler Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:odometry",
+        "label": "Odometry"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:state-transition-model", "label": "State Transition Model"},
-    {"@id": "urn:ngm:class:dynamic-model", "label": "Dynamic Model"}
+    {
+      "@id": "urn:ngm:class:state-transition-model",
+      "label": "State Transition Model"
+    },
+    {
+      "@id": "urn:ngm:class:dynamic-model",
+      "label": "Dynamic Model"
+    }
   ],
   "quality": 0.8,
   "provenance": {

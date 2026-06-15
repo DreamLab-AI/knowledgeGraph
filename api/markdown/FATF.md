@@ -38,54 +38,125 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:fatf-travel-rule", "label": "FATF Travel Rule"},
-      {"@id": "urn:ngm:class:forty-recommendations", "label": "Forty Recommendations"},
-      {"@id": "urn:ngm:class:mutual-evaluation", "label": "Mutual Evaluation"},
-      {"@id": "urn:ngm:class:grey-list", "label": "Grey List"}
+      {
+        "@id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "@id": "urn:ngm:class:fatf-40-recommendations",
+        "label": "Forty Recommendations"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"},
-      {"@id": "urn:ngm:class:counter-terrorist-financing", "label": "Counter-Terrorist Financing"},
-      {"@id": "urn:ngm:class:financial-stability", "label": "Financial Stability"},
-      {"@id": "urn:ngm:class:proliferation-financing-controls", "label": "Proliferation Financing Controls"}
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:counter-terrorist-financing",
+        "label": "Counter-Terrorist Financing"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:customer-due-diligence", "label": "Customer Due Diligence"},
-      {"@id": "urn:ngm:class:suspicious-activity-report", "label": "Suspicious Activity Report"},
-      {"@id": "urn:ngm:class:know-your-customer", "label": "Know Your Customer"}
+      {
+        "@id": "urn:ngm:class:customer-due-diligence",
+        "label": "Customer Due Diligence"
+      },
+      {
+        "@id": "urn:ngm:class:suspicious-activity-report",
+        "label": "Suspicious Activity Report"
+      },
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:financial-intelligence-unit", "label": "Financial Intelligence Unit"},
-      {"@id": "urn:ngm:class:risk-based-approach", "label": "Risk-Based Approach"}
+      {
+        "@id": "urn:ngm:class:financial-intelligence-unit",
+        "label": "Financial Intelligence Unit"
+      },
+      {
+        "@id": "urn:ngm:class:risk-based-approach",
+        "label": "Risk-Based Approach"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:correspondent-banking", "label": "Correspondent Banking"},
-      {"@id": "urn:ngm:class:international-sanctions", "label": "International Sanctions"},
-      {"@id": "urn:ngm:class:financial-crime-prevention", "label": "Financial Crime Prevention"}
+      {
+        "@id": "urn:ngm:class:correspondent-banking",
+        "label": "Correspondent Banking"
+      },
+      {
+        "@id": "urn:ngm:class:international-sanctions",
+        "label": "International Sanctions"
+      },
+      {
+        "@id": "urn:ngm:class:financial-crime-prevention",
+        "label": "Financial Crime Prevention"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:virtual-asset", "label": "Virtual Asset"},
-      {"@id": "urn:ngm:class:virtual-asset-service-provider", "label": "Virtual Asset Service Provider"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"}
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-asset",
+        "label": "Virtual Asset"
+      },
+      {
+        "@id": "urn:ngm:class:bc-0456-virtual-asset-service-providers",
+        "label": "Virtual Asset Service Provider"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:standards-organization", "label": "Standards Organization"},
-      {"@id": "urn:ngm:class:g7", "label": "G7"},
-      {"@id": "urn:ngm:class:financial-stability-board", "label": "Financial Stability Board"}
+      {
+        "@id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:self-regulatory-organisation", "label": "Self-Regulatory Organisation"}
+      {
+        "@id": "urn:ngm:class:self-regulatory-organisation",
+        "label": "Self-Regulatory Organisation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain-analytics", "label": "Blockchain Analytics"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+      {
+        "@id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:financial-action-task-force", "label": "Financial Action Task Force"},
-    {"@id": "urn:ngm:class:gafi", "label": "GAFI"}
+    {
+      "@id": "urn:ngm:class:financial-action-task-force",
+      "label": "Financial Action Task Force"
+    },
+    {
+      "@id": "urn:ngm:class:gafi",
+      "label": "GAFI"
+    }
   ],
   "quality": 0.74,
   "provenance": {

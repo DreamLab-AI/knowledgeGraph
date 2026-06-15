@@ -22,10 +22,6 @@
         "label": "Adversarial Training"
       },
       {
-        "id": "urn:ngm:class:randomised-smoothing",
-        "label": "Randomised Smoothing"
-      },
-      {
         "id": "urn:ngm:class:certified-defense",
         "label": "Certified Defense"
       }
@@ -44,10 +40,6 @@
       {
         "id": "urn:ngm:class:safe-deployment",
         "label": "Safe Deployment"
-      },
-      {
-        "id": "urn:ngm:class:reliable-inference",
-        "label": "Reliable Inference"
       }
     ],
     "dependsOn": [
@@ -62,11 +54,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:perturbation-defense",
-        "label": "Perturbation Defense"
-      },
-      {
-        "id": "urn:ngm:class:ensemble-method",
+        "id": "urn:ngm:class:ensemble-methods",
         "label": "Ensemble Method"
       }
     ],
@@ -94,15 +82,11 @@
         "label": "Cybersecurity"
       },
       {
-        "id": "urn:ngm:class:autonomous-systems",
+        "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
       }
     ],
     "uses": [
-      {
-        "id": "urn:ngm:class:gradient-based-attack",
-        "label": "Gradient-Based Attack"
-      },
       {
         "id": "urn:ngm:class:formal-verification",
         "label": "Formal Verification"
@@ -124,7 +108,7 @@
         "label": "NIST AI RMF"
       },
       {
-        "id": "urn:ngm:class:iso-iec-tr-24029-1",
+        "id": "urn:ngm:class:iso-iec-tr-24029-1-2021",
         "label": "ISO/IEC TR 24029-1:2021"
       }
     ],

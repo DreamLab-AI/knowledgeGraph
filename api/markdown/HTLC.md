@@ -97,15 +97,11 @@ public:: true
       {
         "@id": "urn:ngm:class:cross-chain-bridge",
         "label": "Cross-Chain Bridge"
-      },
-      {
-        "@id": "urn:ngm:class:multi-hop-payment",
-        "label": "Multi-Hop Payment"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:bitcoin-script",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
         "label": "Bitcoin Script"
       },
       {
@@ -149,11 +145,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:ptlc",
-        "label": "PTLC"
-      },
-      {
-        "@id": "urn:ngm:class:trusted-escrow",
+        "@id": "urn:ngm:class:escrow-system",
         "label": "Trusted Escrow"
       }
     ],

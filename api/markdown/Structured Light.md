@@ -23,50 +23,127 @@ public:: true
   "definition": "Structured light is a 3D surface measurement technique that projects one or more known patterns — typically binary stripe sequences, sinusoidal fringes, or dot grids — onto a scene using a projector or laser, then captures the deformed pattern with one or more calibrated cameras. Because the geometry of the projection and capture system is precisely known, the per-pixel deformation of the projected pattern encodes depth, allowing a complete 3D point cloud or depth map of the object surface to be recovered through triangulation. Structured light systems achieve sub-millimetre to micrometre-scale depth accuracy and are widely deployed in industrial metrology, 3D scanning, face recognition, robotic guidance, and augmented reality depth sensing.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:depth-sensing",
+      "label": "Depth Sensing"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:stereo-camera", "label": "Stereo Camera"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
-      {"@id": "urn:ngm:class:depth-sensor", "label": "Depth Sensor"},
-      {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"},
-      {"@id": "urn:ngm:class:time-of-flight-sensing", "label": "Time-of-Flight Sensing"},
-      {"@id": "urn:ngm:class:optical-profilometry", "label": "Optical Profilometry"}
+      {
+        "@id": "urn:ngm:class:stereo-camera",
+        "label": "Stereo Camera"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:depth-sensor",
+        "label": "Depth Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:time-of-flight-sensor",
+        "label": "Time-of-Flight Sensing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"},
-      {"@id": "urn:ngm:class:point-cloud-processing", "label": "Point Cloud Processing"},
-      {"@id": "urn:ngm:class:industrial-inspection", "label": "Industrial Inspection"},
-      {"@id": "urn:ngm:class:face-recognition", "label": "Face Recognition"},
-      {"@id": "urn:ngm:class:robotic-grasping", "label": "Robotic Grasping"},
-      {"@id": "urn:ngm:class:reverse-engineering", "label": "Reverse Engineering"}
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-inspection",
+        "label": "Industrial Inspection"
+      },
+      {
+        "@id": "urn:ngm:class:face-recognition",
+        "label": "Face Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-grasping",
+        "label": "Robotic Grasping"
+      },
+      {
+        "@id": "urn:ngm:class:reverse-engineering",
+        "label": "Reverse Engineering"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"},
-      {"@id": "urn:ngm:class:triangulation", "label": "Triangulation"},
-      {"@id": "urn:ngm:class:phase-shifting", "label": "Phase Shifting"},
-      {"@id": "urn:ngm:class:gray-code", "label": "Gray Code"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:triangulation",
+        "label": "Triangulation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"},
-      {"@id": "urn:ngm:class:infrared-projector", "label": "Infrared Projector"},
-      {"@id": "urn:ngm:class:image-sensor", "label": "Image Sensor"}
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:infrared-projector",
+        "label": "Infrared Projector"
+      },
+      {
+        "@id": "urn:ngm:class:image-sensor",
+        "label": "Image Sensor"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:stereo-camera", "label": "Stereo Camera"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"}
+      {
+        "@id": "urn:ngm:class:stereo-camera",
+        "label": "Stereo Camera"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:fringe-projection-profilometry", "label": "Fringe Projection Profilometry"},
-    {"@id": "urn:ngm:class:active-depth-sensing", "label": "Active Depth Sensing"}
+    {
+      "@id": "urn:ngm:class:fringe-projection-profilometry",
+      "label": "Fringe Projection Profilometry"
+    },
+    {
+      "@id": "urn:ngm:class:active-depth-sensing",
+      "label": "Active Depth Sensing"
+    }
   ],
   "quality": 0.72,
   "provenance": {

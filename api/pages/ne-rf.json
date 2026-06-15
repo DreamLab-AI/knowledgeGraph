@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:multi-view-imagery",
+        "id": "urn:ngm:class:multi-view-stereo",
         "label": "Multi-View Imagery"
       },
       {
@@ -83,7 +83,7 @@
         "label": "Metaverse"
       },
       {
-        "id": "urn:ngm:class:robotics-navigation",
+        "id": "urn:ngm:class:navigation",
         "label": "Robotics Navigation"
       },
       {
@@ -101,7 +101,7 @@
         "label": "Differentiable Rendering"
       },
       {
-        "id": "urn:ngm:class:volumetric-ray-marching",
+        "id": "urn:ngm:class:ray-marching",
         "label": "Volumetric Ray Marching"
       },
       {

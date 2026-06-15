@@ -24,18 +24,35 @@ public:: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
+    {
+      "@id": "urn:ngm:class:retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:embedding-search", "label": "Embedding Search"},
-      {"@id": "urn:ngm:class:vector-store", "label": "Vector Store"},
-      {"@id": "urn:ngm:class:chunking", "label": "Chunking"}
+      {
+        "@id": "urn:ngm:class:embedding-search",
+        "label": "Embedding Search"
+      },
+      {
+        "@id": "urn:ngm:class:vector-store",
+        "label": "Vector Store"
+      },
+      {
+        "@id": "urn:ngm:class:chunking",
+        "label": "Chunking"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rag-pipeline", "label": "RAG Pipeline"},
-      {"@id": "urn:ngm:class:agentic-rag", "label": "Agentic RAG"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:agentic-rag",
+        "label": "Agentic RAG"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ]
   },
   "quality": 0.8

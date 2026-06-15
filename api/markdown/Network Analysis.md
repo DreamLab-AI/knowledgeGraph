@@ -24,51 +24,131 @@ public:: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:graph-theory", "label": "Graph Theory"}
+    {
+      "@id": "urn:ngm:class:graph-theory",
+      "label": "Graph Theory"
+    }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:graph-analytics", "label": "Graph Analytics"},
-    {"@id": "urn:ngm:class:social-network-analysis", "label": "Social Network Analysis"}
+    {
+      "@id": "urn:ngm:class:graph-analytics",
+      "label": "Graph Analytics"
+    },
+    {
+      "@id": "urn:ngm:class:social-network-analysis",
+      "label": "Social Network Analysis"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:centrality-measure", "label": "Centrality Measure"},
-      {"@id": "urn:ngm:class:community-detection", "label": "Community Detection"},
-      {"@id": "urn:ngm:class:link-prediction", "label": "Link Prediction"},
-      {"@id": "urn:ngm:class:graph-embedding", "label": "Graph Embedding"}
+      {
+        "@id": "urn:ngm:class:community-detection",
+        "label": "Community Detection"
+      },
+      {
+        "@id": "urn:ngm:class:link-prediction",
+        "label": "Link Prediction"
+      },
+      {
+        "@id": "urn:ngm:class:graph-embedding",
+        "label": "Graph Embedding"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:graph-neural-network", "label": "Graph Neural Network"},
-      {"@id": "urn:ngm:class:social-network-graph", "label": "Social Network Graph"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:matrix-factorisation", "label": "Matrix Factorisation"},
-      {"@id": "urn:ngm:class:pagerank", "label": "PageRank"}
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:social-network-graph",
+        "label": "Social Network Graph"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:matrix-factorisation",
+        "label": "Matrix Factorisation"
+      },
+      {
+        "@id": "urn:ngm:class:pagerank",
+        "label": "PageRank"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"},
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
-      {"@id": "urn:ngm:class:influence-maximisation", "label": "Influence Maximisation"},
-      {"@id": "urn:ngm:class:recommendation-system", "label": "Recommendation System"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:influence-maximisation",
+        "label": "Influence Maximisation"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:graph-database", "label": "Graph Database"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+      {
+        "@id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:graph-theory", "label": "Graph Theory"},
-      {"@id": "urn:ngm:class:linear-algebra", "label": "Linear Algebra"}
+      {
+        "@id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:complex-systems", "label": "Complex Systems"}
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:complex-systems",
+        "label": "Complex Systems"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:supply-chain-resilience", "label": "Supply Chain Resilience"},
-      {"@id": "urn:ngm:class:epidemiological-modelling", "label": "Epidemiological Modelling"}
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-resilience",
+        "label": "Supply Chain Resilience"
+      },
+      {
+        "@id": "urn:ngm:class:epidemiological-modelling",
+        "label": "Epidemiological Modelling"
+      }
     ]
   },
   "quality": 0.72,

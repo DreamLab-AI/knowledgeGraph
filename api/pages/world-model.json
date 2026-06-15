@@ -18,27 +18,15 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:latent-state-space",
+        "id": "urn:ngm:class:neural-network-latent-space",
         "label": "Latent State Space"
-      },
-      {
-        "id": "urn:ngm:class:forward-dynamics-model",
-        "label": "Forward Dynamics Model"
       },
       {
         "id": "urn:ngm:class:reward-model",
         "label": "Reward Model"
-      },
-      {
-        "id": "urn:ngm:class:state-encoder",
-        "label": "State Encoder"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:sensory-observation",
-        "label": "Sensory Observation"
-      },
       {
         "id": "urn:ngm:class:state-representation",
         "label": "State Representation"
@@ -69,7 +57,7 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:predictive-coding",
+        "id": "urn:ngm:class:predictive-processing",
         "label": "Predictive Coding"
       },
       {
@@ -79,7 +67,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:model-free-reinforcement-learning",
+        "id": "urn:ngm:class:reinforcement-learning",
         "label": "Model-Free Reinforcement Learning"
       }
     ],

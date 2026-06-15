@@ -91,27 +91,11 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:entrepreneurship",
-        "label": "Entrepreneurship"
-      },
-      {
-        "@id": "urn:ngm:class:innovation-management",
-        "label": "Innovation Management"
-      },
-      {
-        "@id": "urn:ngm:class:ai-in-education",
+        "@id": "urn:ngm:class:education-and-ai",
         "label": "AI in Education"
-      },
-      {
-        "@id": "urn:ngm:class:knowledge-work-augmentation",
-        "label": "Knowledge Work Augmentation"
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:wharton-school",
-        "label": "Wharton School"
-      },
       {
         "@id": "urn:ngm:class:organisational-learning",
         "label": "Organisational Learning"
@@ -125,19 +109,11 @@ public:: true
         "label": "ChatGPT"
       },
       {
-        "@id": "urn:ngm:class:co-intelligence",
-        "label": "Co-Intelligence"
-      },
-      {
         "@id": "urn:ngm:class:ai-policy",
         "label": "AI Policy"
       }
     ],
     "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:management-science",
-        "label": "Management Science"
-      },
       {
         "@id": "urn:ngm:class:educational-technology",
         "label": "Educational Technology"
@@ -145,16 +121,6 @@ public:: true
       {
         "@id": "urn:ngm:class:behavioural-economics",
         "label": "Behavioural Economics"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:ai-doomerism",
-        "label": "AI Doomerism"
-      },
-      {
-        "@id": "urn:ngm:class:ai-scepticism",
-        "label": "AI Scepticism"
       }
     ]
   },

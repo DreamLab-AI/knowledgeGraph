@@ -83,10 +83,6 @@ public:: true
       {
         "@id": "urn:ngm:class:large-scale-compute",
         "label": "Large-Scale Compute"
-      },
-      {
-        "@id": "urn:ngm:class:scientific-datasets",
-        "label": "Scientific Datasets"
       }
     ],
     "enables": [
@@ -99,7 +95,7 @@ public:: true
         "label": "Protein Structure Prediction"
       },
       {
-        "@id": "urn:ngm:class:game-playing-ai",
+        "@id": "urn:ngm:class:game-ai",
         "label": "Game-Playing AI"
       },
       {
@@ -117,12 +113,8 @@ public:: true
         "label": "AlphaFold"
       },
       {
-        "@id": "urn:ngm:class:gemini",
+        "@id": "urn:ngm:class:gemini-multimodal-language-model",
         "label": "Gemini"
-      },
-      {
-        "@id": "urn:ngm:class:gato",
-        "label": "Gato"
       }
     ],
     "partOf": [
@@ -131,7 +123,7 @@ public:: true
         "label": "Alphabet Inc"
       },
       {
-        "@id": "urn:ngm:class:google-ai-ecosystem",
+        "@id": "urn:ngm:class:ai-ecosystem",
         "label": "Google AI Ecosystem"
       }
     ],
@@ -151,7 +143,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:openai",
+        "@id": "urn:ngm:class:openai-research-organisation",
         "label": "OpenAI"
       },
       {
@@ -165,13 +157,13 @@ public:: true
         "label": "Computational Biology"
       },
       {
-        "@id": "urn:ngm:class:energy-optimisation",
+        "@id": "urn:ngm:class:ai-energy-optimisation",
         "label": "Energy Optimisation"
       }
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:artificial-intelligence-research-laboratory",
+        "@id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence Research Laboratory"
       },
       {

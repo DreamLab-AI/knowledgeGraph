@@ -62,13 +62,13 @@
         "label": "Workflow Automation"
       },
       {
-        "id": "urn:ngm:class:software-engineering-automation",
+        "id": "urn:ngm:class:software-development-automation",
         "label": "Software Engineering Automation"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:foundation-models",
+        "id": "urn:ngm:class:foundation-model",
         "label": "Foundation Models"
       },
       {
@@ -85,10 +85,6 @@
       {
         "id": "urn:ngm:class:conversational-ai",
         "label": "Conversational AI"
-      },
-      {
-        "id": "urn:ngm:class:reactive-system",
-        "label": "Reactive System"
       }
     ],
     "bridgesTo": [

@@ -23,48 +23,113 @@ public:: true
   "definition": "Beam search is a heuristic search algorithm that explores a graph by expanding the most promising nodes within a fixed-width frontier, called the beam, at each step. In sequence generation tasks it retains the top-k candidate sequences at each decoding step rather than pursuing a single greedy choice, balancing exploration against computational cost.",
   "domain": "ai",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:search-algorithm", "label": "Search Algorithm"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:search-algorithm",
+      "label": "Search Algorithm"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:text-generation", "label": "Text Generation"},
-      {"@id": "urn:ngm:class:machine-translation", "label": "Machine Translation"},
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
-      {"@id": "urn:ngm:class:sequence-to-sequence-learning", "label": "Sequence-to-Sequence Learning"},
-      {"@id": "urn:ngm:class:automatic-summarisation", "label": "Automatic Summarisation"}
+      {
+        "@id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "@id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:sequence-to-sequence-learning",
+        "label": "Sequence-to-Sequence Learning"
+      },
+      {
+        "@id": "urn:ngm:class:text-summarisation",
+        "label": "Automatic Summarisation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:language-model", "label": "Language Model"},
-      {"@id": "urn:ngm:class:heuristic-methods", "label": "Heuristic Methods"},
-      {"@id": "urn:ngm:class:log-probability-scoring", "label": "Log-Probability Scoring"},
-      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder-Decoder Architecture"}
+      {
+        "@id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      },
+      {
+        "@id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder-Decoder Architecture"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:probability-distribution", "label": "Probability Distribution"},
-      {"@id": "urn:ngm:class:sequence-model", "label": "Sequence Model"}
+      {
+        "@id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:sequence-model",
+        "label": "Sequence Model"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:greedy-decoding", "label": "Greedy Decoding"},
-      {"@id": "urn:ngm:class:nucleus-sampling", "label": "Nucleus Sampling"},
-      {"@id": "urn:ngm:class:monte-carlo-tree-search", "label": "Monte Carlo Tree Search"},
-      {"@id": "urn:ngm:class:viterbi-algorithm", "label": "Viterbi Algorithm"}
+      {
+        "@id": "urn:ngm:class:greedy-decoding",
+        "label": "Greedy Decoding"
+      },
+      {
+        "@id": "urn:ngm:class:nucleus-sampling",
+        "label": "Nucleus Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:best-first-search", "label": "Best-First Search"},
-      {"@id": "urn:ngm:class:breadth-first-search", "label": "Breadth-First Search"}
+      {
+        "@id": "urn:ngm:class:search-algorithm",
+        "label": "Best-First Search"
+      },
+      {
+        "@id": "urn:ngm:class:breadth-first-search",
+        "label": "Breadth-First Search"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:beam-search-decoding", "label": "Beam Search Decoding"},
-      {"@id": "urn:ngm:class:diverse-beam-search", "label": "Diverse Beam Search"},
-      {"@id": "urn:ngm:class:constrained-decoding", "label": "Constrained Decoding"},
-      {"@id": "urn:ngm:class:speculative-decoding", "label": "Speculative Decoding"}
+      {
+        "@id": "urn:ngm:class:beam-search-decoding",
+        "label": "Beam Search Decoding"
+      },
+      {
+        "@id": "urn:ngm:class:constrained-decoding",
+        "label": "Constrained Decoding"
+      },
+      {
+        "@id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:beam-search-decoding", "label": "Beam Search Decoding"}
+    {
+      "@id": "urn:ngm:class:beam-search-decoding",
+      "label": "Beam Search Decoding"
+    }
   ],
   "quality": 0.8,
   "provenance": {

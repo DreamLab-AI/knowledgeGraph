@@ -159,50 +159,97 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:haptic-interface", "label": "Haptic Interface"},
-      {"@id": "urn:ngm:class:bilateral-control", "label": "Bilateral Control"},
-      {"@id": "urn:ngm:class:control-loop", "label": "Control Loop"}
+      {
+        "@id": "urn:ngm:class:haptic-interface",
+        "label": "Haptic Interface"
+      },
+      {
+        "@id": "urn:ngm:class:control-loop",
+        "label": "Control Loop"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
-      {"@id": "urn:ngm:class:low-latency-network", "label": "Low-Latency Network"},
-      {"@id": "urn:ngm:class:encrypted-channel", "label": "Encrypted Channel"}
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "@id": "urn:ngm:class:low-latency-network",
+        "label": "Low-Latency Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"},
-      {"@id": "urn:ngm:class:surgical-robotics", "label": "Surgical Robotics"},
-      {"@id": "urn:ngm:class:rescue-operations", "label": "Rescue Operations"},
-      {"@id": "urn:ngm:class:deep-sea-exploration", "label": "Deep Sea Exploration"}
+      {
+        "@id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:5g", "label": "5G"},
-      {"@id": "urn:ngm:class:shared-autonomy", "label": "Shared Autonomy"}
+      {
+        "@id": "urn:ngm:class:5g",
+        "label": "5G"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"}
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
-      {"@id": "urn:ngm:class:remote-control", "label": "Remote Control"}
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "@id": "urn:ngm:class:remote-control",
+        "label": "Remote Control"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:immersive-control", "label": "Immersive Control"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:operator-workload", "label": "Operator Workload"},
-      {"@id": "urn:ngm:class:situational-awareness", "label": "Situational Awareness"}
+      {
+        "@id": "urn:ngm:class:situational-awareness",
+        "label": "Situational Awareness"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:remote-operation", "label": "Remote Operation"},
-    {"@id": "urn:ngm:class:telemanipulation", "label": "Telemanipulation"}
+    {
+      "@id": "urn:ngm:class:remote-operation",
+      "label": "Remote Operation"
+    },
+    {
+      "@id": "urn:ngm:class:telemanipulation",
+      "label": "Telemanipulation"
+    }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

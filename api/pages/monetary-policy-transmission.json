@@ -16,28 +16,7 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:interest-rate-channel",
-        "label": "Interest Rate Channel"
-      },
-      {
-        "id": "urn:ngm:class:credit-channel",
-        "label": "Credit Channel"
-      },
-      {
-        "id": "urn:ngm:class:exchange-rate-channel",
-        "label": "Exchange Rate Channel"
-      },
-      {
-        "id": "urn:ngm:class:asset-price-channel",
-        "label": "Asset Price Channel"
-      },
-      {
-        "id": "urn:ngm:class:expectations-channel",
-        "label": "Expectations Channel"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:central-bank",
@@ -46,10 +25,6 @@
       {
         "id": "urn:ngm:class:banking-system",
         "label": "Banking System"
-      },
-      {
-        "id": "urn:ngm:class:financial-markets",
-        "label": "Financial Markets"
       }
     ],
     "enables": [
@@ -74,19 +49,10 @@
       {
         "id": "urn:ngm:class:financial-system",
         "label": "Financial System"
-      },
-      {
-        "id": "urn:ngm:class:inflation-expectations",
-        "label": "Inflation Expectations"
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:fiscal-policy-transmission",
-        "label": "Fiscal Policy Transmission"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:central-bank-digital-currency",
@@ -118,10 +84,6 @@
       {
         "id": "urn:ngm:class:interest-rate",
         "label": "Interest Rate"
-      },
-      {
-        "id": "urn:ngm:class:bank-lending",
-        "label": "Bank Lending"
       },
       {
         "id": "urn:ngm:class:exchange-rate",

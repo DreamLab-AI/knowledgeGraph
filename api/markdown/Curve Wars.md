@@ -72,12 +72,8 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:gauge-weight-voting",
+        "@id": "urn:ngm:class:gauge-voting",
         "label": "Gauge Weight Voting"
-      },
-      {
-        "@id": "urn:ngm:class:bribery-market",
-        "label": "Bribery Market"
       }
     ],
     "uses": [
@@ -128,7 +124,7 @@ public:: true
         "label": "Proof Of Work"
       },
       {
-        "@id": "urn:ngm:class:traditional-market-making",
+        "@id": "urn:ngm:class:market-making",
         "label": "Traditional Market Making"
       }
     ],

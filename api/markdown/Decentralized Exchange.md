@@ -715,7 +715,7 @@ alias:: DecentralizedExchange
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:concentrated-liquidity-position",
+        "@id": "urn:ngm:class:concentrated-liquidity",
         "label": "Concentrated Liquidity Position"
       },
       {
@@ -723,16 +723,8 @@ alias:: DecentralizedExchange
         "label": "Fee Tier"
       },
       {
-        "@id": "urn:ngm:class:liquidity-provider-token",
-        "label": "Liquidity Provider Token"
-      },
-      {
         "@id": "urn:ngm:class:order-book",
         "label": "Order Book"
-      },
-      {
-        "@id": "urn:ngm:class:pool-manager",
-        "label": "Pool Manager"
       },
       {
         "@id": "urn:ngm:class:router-contract",
@@ -765,7 +757,7 @@ alias:: DecentralizedExchange
         "label": "Blockchain Consensus"
       },
       {
-        "@id": "urn:ngm:class:self-custody-wallet",
+        "@id": "urn:ngm:class:self-custody",
         "label": "Self-Custody Wallet"
       },
       {
@@ -783,16 +775,8 @@ alias:: DecentralizedExchange
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:composable-finance",
-        "label": "Composable Finance"
-      },
-      {
         "@id": "urn:ngm:class:financial-inclusion",
         "label": "Financial Inclusion"
-      },
-      {
-        "@id": "urn:ngm:class:long-tail-asset-listing",
-        "label": "Long-Tail Asset Listing"
       },
       {
         "@id": "urn:ngm:class:permissionless-trading",
@@ -817,28 +801,12 @@ alias:: DecentralizedExchange
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:batch-auction-matching",
-        "label": "Batch Auction Matching"
-      },
-      {
-        "@id": "urn:ngm:class:coincidence-of-wants",
-        "label": "Coincidence of Wants"
-      },
-      {
         "@id": "urn:ngm:class:concentrated-liquidity",
         "label": "Concentrated Liquidity"
       },
       {
-        "@id": "urn:ngm:class:constant-product-invariant",
+        "@id": "urn:ngm:class:constant-product-formula",
         "label": "Constant Product Invariant"
-      },
-      {
-        "@id": "urn:ngm:class:intent-based-execution",
-        "label": "Intent-Based Execution"
-      },
-      {
-        "@id": "urn:ngm:class:native-asset-cross-chain-swap",
-        "label": "Native Asset Cross-Chain Swap"
       }
     ],
     "uses": [
@@ -851,35 +819,15 @@ alias:: DecentralizedExchange
         "label": "Dutch Auction"
       },
       {
-        "@id": "urn:ngm:class:flash-accounting",
-        "label": "Flash Accounting"
-      },
-      {
-        "@id": "urn:ngm:class:geometric-mean-invariant",
-        "label": "Geometric Mean Invariant"
-      },
-      {
-        "@id": "urn:ngm:class:hooks-pattern",
-        "label": "Hooks Pattern"
-      },
-      {
         "@id": "urn:ngm:class:stable-swap-invariant",
         "label": "Stable Swap Invariant"
       },
       {
         "@id": "urn:ngm:class:threshold-signature-scheme",
         "label": "Threshold Signature Scheme"
-      },
-      {
-        "@id": "urn:ngm:class:tick-based-liquidity",
-        "label": "Tick-Based Liquidity"
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:aggregator",
-        "label": "Aggregator"
-      },
       {
         "@id": "urn:ngm:class:flash-loan",
         "label": "Flash Loan"
@@ -895,10 +843,6 @@ alias:: DecentralizedExchange
       {
         "@id": "urn:ngm:class:maximal-extractable-value",
         "label": "Maximal Extractable Value"
-      },
-      {
-        "@id": "urn:ngm:class:vampire-attack",
-        "label": "Vampire Attack"
       },
       {
         "@id": "urn:ngm:class:yield-farming",
@@ -919,10 +863,6 @@ alias:: DecentralizedExchange
         "label": "Composability"
       },
       {
-        "@id": "urn:ngm:class:crypto-aggregation",
-        "label": "Crypto Aggregation"
-      },
-      {
         "@id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
@@ -937,14 +877,6 @@ alias:: DecentralizedExchange
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:curve-stable-swap-paper",
-        "label": "Curve StableSwap Paper"
-      },
-      {
-        "@id": "urn:ngm:class:eip-1153-transient-storage",
-        "label": "EIP-1153 Transient Storage"
-      },
-      {
         "@id": "urn:ngm:class:erc-20",
         "label": "ERC-20"
       },
@@ -953,16 +885,8 @@ alias:: DecentralizedExchange
         "label": "ERC-2612 Permit"
       },
       {
-        "@id": "urn:ngm:class:mi-ca-regulation-eu-2023-1114",
+        "@id": "urn:ngm:class:mi-ca-regulation",
         "label": "MiCA Regulation EU 2023-1114"
-      },
-      {
-        "@id": "urn:ngm:class:uniswap-v2-whitepaper",
-        "label": "Uniswap V2 Whitepaper"
-      },
-      {
-        "@id": "urn:ngm:class:uniswap-v3-whitepaper",
-        "label": "Uniswap V3 Whitepaper"
       }
     ]
   },

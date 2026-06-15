@@ -128,12 +128,8 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:community-token",
+        "@id": "urn:ngm:class:token",
         "label": "Community Token"
-      },
-      {
-        "@id": "urn:ngm:class:creator-token",
-        "label": "Creator Token"
       },
       {
         "@id": "urn:ngm:class:governance-rights",
@@ -162,14 +158,6 @@ public:: true
       {
         "@id": "urn:ngm:class:creator-monetization",
         "label": "Creator Monetization"
-      },
-      {
-        "@id": "urn:ngm:class:fan-engagement",
-        "label": "Fan Engagement"
-      },
-      {
-        "@id": "urn:ngm:class:value-distribution",
-        "label": "Value Distribution"
       },
       {
         "@id": "urn:ngm:class:community-governance",

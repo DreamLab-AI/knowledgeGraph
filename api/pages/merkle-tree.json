@@ -34,16 +34,7 @@
         "label": "Internal Node"
       }
     ],
-    "requires": [
-      {
-        "id": "urn:ngm:class:collision-resistant-hash",
-        "label": "Collision-Resistant Hash"
-      },
-      {
-        "id": "urn:ngm:class:deterministic-ordering",
-        "label": "Deterministic Ordering"
-      }
-    ],
+    "requires": [],
     "enables": [
       {
         "id": "urn:ngm:class:blockchain-transaction",
@@ -68,15 +59,11 @@
       {
         "id": "urn:ngm:class:patricia-trie",
         "label": "Patricia Trie"
-      },
-      {
-        "id": "urn:ngm:class:linked-list",
-        "label": "Linked List"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:content-addressable-storage",
+        "id": "urn:ngm:class:content-addressed-storage",
         "label": "Content-Addressable Storage"
       },
       {
@@ -84,7 +71,7 @@
         "label": "Distributed File System"
       },
       {
-        "id": "urn:ngm:class:version-control-system",
+        "id": "urn:ngm:class:version-control",
         "label": "Version Control System"
       }
     ],
@@ -100,20 +87,12 @@
       {
         "id": "urn:ngm:class:sha-256",
         "label": "SHA-256"
-      },
-      {
-        "id": "urn:ngm:class:binary-tree",
-        "label": "Binary Tree"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:proof-of-inclusion",
         "label": "Proof of Inclusion"
-      },
-      {
-        "id": "urn:ngm:class:proof-of-exclusion",
-        "label": "Proof of Exclusion"
       },
       {
         "id": "urn:ngm:class:blockchain-scalability",

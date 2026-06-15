@@ -24,54 +24,129 @@ alias:: ComputeResources
   "definition": "Compute resources are the aggregate processing capacity available to execute computational workloads, encompassing CPUs, GPUs, specialised accelerators (TPUs, NPUs), memory, network bandwidth, and associated storage I/O. They are quantified by metrics such as FLOPS, memory bandwidth, core count, and clock speed, and are provisioned via physical hardware, virtualised cloud instances, or serverless functions. Effective allocation and scheduling of compute resources is the foundational concern of cloud computing, high-performance computing, and AI infrastructure.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:computational-resources", "label": "Computational Resources"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computational-resources",
+      "label": "Computational Resources"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:gpu-resources", "label": "GPU Resources"},
-      {"@id": "urn:ngm:class:compute-layer", "label": "Compute Layer"},
-      {"@id": "urn:ngm:class:cpu", "label": "CPU"},
-      {"@id": "urn:ngm:class:memory-bandwidth", "label": "Memory Bandwidth"},
-      {"@id": "urn:ngm:class:network-bandwidth", "label": "Network Bandwidth"}
+      {
+        "@id": "urn:ngm:class:gpu-resources",
+        "label": "GPU Resources"
+      },
+      {
+        "@id": "urn:ngm:class:compute-layer",
+        "label": "Compute Layer"
+      },
+      {
+        "@id": "urn:ngm:class:cpu",
+        "label": "CPU"
+      },
+      {
+        "@id": "urn:ngm:class:memory-bandwidth",
+        "label": "Memory Bandwidth"
+      },
+      {
+        "@id": "urn:ngm:class:network-bandwidth",
+        "label": "Network Bandwidth"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:data-centre", "label": "Data Centre"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
+      {
+        "@id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:power-infrastructure", "label": "Power Infrastructure"},
-      {"@id": "urn:ngm:class:cooling-systems", "label": "Cooling Systems"}
+      {
+        "@id": "urn:ngm:class:power-infrastructure",
+        "label": "Power Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:cooling-system",
+        "label": "Cooling Systems"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"},
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"},
-      {"@id": "urn:ngm:class:inference", "label": "Inference"},
-      {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"}
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:hardware-accelerators", "label": "Hardware Accelerators"},
-      {"@id": "urn:ngm:class:virtualisation", "label": "Virtualisation"}
+      {
+        "@id": "urn:ngm:class:virtualisation",
+        "label": "Virtualisation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:workload-scheduling", "label": "Workload Scheduling"},
-      {"@id": "urn:ngm:class:containerisation", "label": "Containerisation"}
+      {
+        "@id": "urn:ngm:class:workload-scheduling",
+        "label": "Workload Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"},
-      {"@id": "urn:ngm:class:resource-allocation", "label": "Resource Allocation"},
-      {"@id": "urn:ngm:class:sovereign-compute", "label": "Sovereign Compute"}
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:resource-allocation",
+        "label": "Resource Allocation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:computing-resources", "label": "Computing Resources"},
-    {"@id": "urn:ngm:class:computational-capacity", "label": "Computational Capacity"}
+    {
+      "@id": "urn:ngm:class:computing-resources",
+      "label": "Computing Resources"
+    },
+    {
+      "@id": "urn:ngm:class:computational-capacity",
+      "label": "Computational Capacity"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

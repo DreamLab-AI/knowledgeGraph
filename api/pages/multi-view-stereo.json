@@ -18,16 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:depth-map-estimation",
+        "id": "urn:ngm:class:depth-estimation",
         "label": "Depth Map Estimation"
-      },
-      {
-        "id": "urn:ngm:class:depth-map-fusion",
-        "label": "Depth Map Fusion"
-      },
-      {
-        "id": "urn:ngm:class:patch-match",
-        "label": "PatchMatch"
       }
     ],
     "requires": [
@@ -52,20 +44,12 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
-      },
-      {
-        "id": "urn:ngm:class:textured-mesh",
-        "label": "Textured Mesh"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:structure-from-motion",
         "label": "Structure-from-Motion"
-      },
-      {
-        "id": "urn:ngm:class:photometric-consistency",
-        "label": "Photometric Consistency"
       }
     ],
     "implements": [],
@@ -79,7 +63,7 @@
         "label": "Neural Radiance Field"
       },
       {
-        "id": "urn:ngm:class:3d-gaussian-splatting",
+        "id": "urn:ngm:class:3-d-gaussian-splatting",
         "label": "3D Gaussian Splatting"
       }
     ],
@@ -105,20 +89,12 @@
       {
         "id": "urn:ngm:class:stereo-vision",
         "label": "Stereo Vision"
-      },
-      {
-        "id": "urn:ngm:class:plane-sweep-stereo",
-        "label": "Plane-Sweep Stereo"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:reality-capture",
         "label": "Reality Capture"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-vehicle-mapping",
-        "label": "Autonomous Vehicle Mapping"
       }
     ],
     "standardizedBy": [],
@@ -128,7 +104,7 @@
         "label": "Photogrammetry"
       },
       {
-        "id": "urn:ngm:class:3d-reconstruction",
+        "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
       }
     ],
@@ -138,7 +114,7 @@
         "label": "Point Cloud Processing"
       },
       {
-        "id": "urn:ngm:class:visual-simultaneous-localisation-and-mapping",
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
         "label": "Visual Simultaneous Localisation and Mapping"
       }
     ]

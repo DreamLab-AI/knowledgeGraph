@@ -128,50 +128,121 @@ alias:: SoftRobotics
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:pneumatic-actuation", "label": "Pneumatic Actuation"},
-      {"@id": "urn:ngm:class:compliant-actuator", "label": "Compliant Actuator"},
-      {"@id": "urn:ngm:class:soft-sensor", "label": "Soft Sensor"}
+      {
+        "@id": "urn:ngm:class:pneumatic-actuator",
+        "label": "Pneumatic Actuation"
+      },
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Compliant Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Soft Sensor"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:finite-element-analysis", "label": "Finite Element Analysis"},
-      {"@id": "urn:ngm:class:bio-inspired-design", "label": "Bio-Inspired Design"}
+      {
+        "@id": "urn:ngm:class:finite-element-analysis",
+        "label": "Finite Element Analysis"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
-      {"@id": "urn:ngm:class:generative-design", "label": "Generative Design"},
-      {"@id": "urn:ngm:class:3d-printing", "label": "3D Printing"}
+      {
+        "@id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:generative-design",
+        "label": "Generative Design"
+      },
+      {
+        "@id": "urn:ngm:class:3d-printing",
+        "label": "3D Printing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"},
-      {"@id": "urn:ngm:class:adaptive-grasping", "label": "Adaptive Grasping"},
-      {"@id": "urn:ngm:class:safe-human-robot-interaction", "label": "Safe Human-Robot Interaction"},
-      {"@id": "urn:ngm:class:surgical-robotics", "label": "Surgical Robotics"}
+      {
+        "@id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Grasping"
+      },
+      {
+        "@id": "urn:ngm:class:safe-human-robot-interaction",
+        "label": "Safe Human-Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:materials-science", "label": "Materials Science"},
-      {"@id": "urn:ngm:class:control-theory", "label": "Control Theory"}
+      {
+        "@id": "urn:ngm:class:materials-science",
+        "label": "Materials Science"
+      },
+      {
+        "@id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:wearable-robotics", "label": "Wearable Robotics"},
-      {"@id": "urn:ngm:class:collaborative-robotics", "label": "Collaborative Robotics"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:wearable-robotics",
+        "label": "Wearable Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-robotics",
+        "label": "Collaborative Robotics"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rigid-body-robotics", "label": "Rigid Body Robotics"}
+      {
+        "@id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Robotics"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:biomedical-engineering", "label": "Biomedical Engineering"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:biomedical-engineering",
+        "label": "Biomedical Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:compliant-robotics", "label": "Compliant Robotics"},
-    {"@id": "urn:ngm:class:flexible-robotics", "label": "Flexible Robotics"}
+    {
+      "@id": "urn:ngm:class:compliant-robotics",
+      "label": "Compliant Robotics"
+    },
+    {
+      "@id": "urn:ngm:class:flexible-robotics",
+      "label": "Flexible Robotics"
+    }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

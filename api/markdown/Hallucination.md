@@ -57,45 +57,113 @@ public:: true
   ],
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:factual-grounding", "label": "Factual Grounding"},
-      {"@id": "urn:ngm:class:calibration", "label": "Calibration"},
-      {"@id": "urn:ngm:class:truthfulness", "label": "Truthfulness"}
+      {
+        "@id": "urn:ngm:class:factual-grounding",
+        "label": "Factual Grounding"
+      },
+      {
+        "@id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:output-verification", "label": "Output Verification"},
-      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"}
+      {
+        "@id": "urn:ngm:class:output-verification",
+        "label": "Output Verification"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:misinformation", "label": "Misinformation"},
-      {"@id": "urn:ngm:class:ai-safety-research", "label": "AI Safety Research"}
+      {
+        "@id": "urn:ngm:class:misinformation",
+        "label": "Misinformation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:autoregressive-generation", "label": "Autoregressive Generation"}
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:autoregressive-generation",
+        "label": "Autoregressive Generation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-risk", "label": "AI Risk"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"},
-      {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"},
-      {"@id": "urn:ngm:class:uncertainty-quantification", "label": "Uncertainty Quantification"}
+      {
+        "@id": "urn:ngm:class:ai-risk",
+        "label": "AI Risk"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:tool-augmented-reasoning", "label": "Tool-Augmented Reasoning"},
-      {"@id": "urn:ngm:class:chain-of-thought-prompting", "label": "Chain-of-Thought Prompting"}
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:tool-augmented-reasoning",
+        "label": "Tool-Augmented Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-thought-prompting",
+        "label": "Chain-of-Thought Prompting"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:information-integrity", "label": "Information Integrity"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:trust-and-safety", "label": "Trust and Safety"}
+      {
+        "@id": "urn:ngm:class:information-integrity",
+        "label": "Information Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:confabulation", "label": "Confabulation"},
-    {"@id": "urn:ngm:class:model-confabulation", "label": "Model Confabulation"}
+    {
+      "@id": "urn:ngm:class:confabulation",
+      "label": "Confabulation"
+    },
+    {
+      "@id": "urn:ngm:class:model-confabulation",
+      "label": "Model Confabulation"
+    }
   ],
   "quality": 0.74,
   "qualityScore": 0.74,

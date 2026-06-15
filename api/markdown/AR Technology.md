@@ -122,15 +122,11 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:industrial-guidance",
-        "label": "Industrial Guidance"
-      },
-      {
         "@id": "urn:ngm:class:remote-assistance",
         "label": "Remote Assistance"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing-paradigm-applications",
+        "@id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing Applications"
       },
       {

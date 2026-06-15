@@ -16,79 +16,11 @@
   "qualityScore": 0.89,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:bead-adapter",
-        "label": "Bead Adapter"
-      },
-      {
-        "id": "urn:ngm:class:event-adapter",
-        "label": "Event Adapter"
-      },
-      {
-        "id": "urn:ngm:class:memory-adapter",
-        "label": "Memory Adapter"
-      },
-      {
-        "id": "urn:ngm:class:orchestrator-adapter",
-        "label": "Orchestrator Adapter"
-      },
-      {
-        "id": "urn:ngm:class:pod-adapter",
-        "label": "Pod Adapter"
-      }
-    ],
-    "requires": [
-      {
-        "id": "urn:ngm:class:interface-specification",
-        "label": "Interface Specification"
-      },
-      {
-        "id": "urn:ngm:class:manifest-declaration",
-        "label": "Manifest Declaration"
-      },
-      {
-        "id": "urn:ngm:class:runtime-initialization",
-        "label": "Runtime Initialization"
-      }
-    ],
-    "enables": [
-      {
-        "id": "urn:ngm:class:deployment-flexibility",
-        "label": "Deployment Flexibility"
-      },
-      {
-        "id": "urn:ngm:class:pluggable-memory",
-        "label": "Pluggable Memory"
-      },
-      {
-        "id": "urn:ngm:class:pluggable-storage",
-        "label": "Pluggable Storage"
-      },
-      {
-        "id": "urn:ngm:class:pluggable-telemetry",
-        "label": "Pluggable Telemetry"
-      },
-      {
-        "id": "urn:ngm:class:pluggable-work-distribution",
-        "label": "Pluggable Work Distribution"
-      }
-    ],
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:adapter-pattern",
-        "label": "Adapter Pattern"
-      },
-      {
-        "id": "urn:ngm:class:dependency-injection",
-        "label": "Dependency Injection"
-      },
-      {
-        "id": "urn:ngm:class:strategy-pattern",
-        "label": "Strategy Pattern"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],

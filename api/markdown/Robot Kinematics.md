@@ -55,52 +55,133 @@ public:: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:robot-dynamics", "label": "Robot Dynamics"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:forward-kinematics", "label": "Forward Kinematics"},
-      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
-      {"@id": "urn:ngm:class:denavit-hartenberg-convention", "label": "Denavit-Hartenberg Convention"},
-      {"@id": "urn:ngm:class:jacobian-matrix", "label": "Jacobian Matrix"}
+      {
+        "@id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:denavit-hartenberg-parameters",
+        "label": "Denavit-Hartenberg Convention"
+      },
+      {
+        "@id": "urn:ngm:class:jacobian-matrix",
+        "label": "Jacobian Matrix"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:transformation-matrix", "label": "Transformation Matrix"},
-      {"@id": "urn:ngm:class:degrees-of-freedom", "label": "Degrees of Freedom"},
-      {"@id": "urn:ngm:class:coordinate-frames", "label": "Coordinate Frames"}
+      {
+        "@id": "urn:ngm:class:coordinate-transformation",
+        "label": "Transformation Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0023-degrees-of-freedom",
+        "label": "Degrees of Freedom"
+      },
+      {
+        "@id": "urn:ngm:class:coordinate-frame",
+        "label": "Coordinate Frames"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:trajectory-planning", "label": "Trajectory Planning"},
-      {"@id": "urn:ngm:class:robot-programming", "label": "Robot Programming"},
-      {"@id": "urn:ngm:class:end-effector-control", "label": "End-Effector Control"}
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      },
+      {
+        "@id": "urn:ngm:class:robot-programming",
+        "label": "Robot Programming"
+      },
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End-Effector Control"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:linear-algebra", "label": "Linear Algebra"},
-      {"@id": "urn:ngm:class:quaternion-representation", "label": "Quaternion Representation"}
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:quaternion-math",
+        "label": "Quaternion Representation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:robot-dynamics", "label": "Robot Dynamics"}
+      {
+        "@id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-8373", "label": "ISO 8373"}
+      {
+        "@id": "urn:ngm:class:iso-8373",
+        "label": "ISO 8373"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:surgical-robot", "label": "Surgical Robot"},
-      {"@id": "urn:ngm:class:service-robot", "label": "Service Robot"},
-      {"@id": "urn:ngm:class:industrial-manipulator", "label": "Industrial Manipulator"},
-      {"@id": "urn:ngm:class:humanoid-robot", "label": "Humanoid Robot"},
-      {"@id": "urn:ngm:class:soft-robotics", "label": "Soft Robotics"}
+      {
+        "@id": "urn:ngm:class:surgical-robot",
+        "label": "Surgical Robot"
+      },
+      {
+        "@id": "urn:ngm:class:service-robot",
+        "label": "Service Robot"
+      },
+      {
+        "@id": "urn:ngm:class:manipulator",
+        "label": "Industrial Manipulator"
+      },
+      {
+        "@id": "urn:ngm:class:humanoid-robot",
+        "label": "Humanoid Robot"
+      },
+      {
+        "@id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:kinematic-analysis-of-robots", "label": "Kinematic Analysis of Robots"},
-    {"@id": "urn:ngm:class:robotic-kinematics", "label": "Robotic Kinematics"}
+    {
+      "@id": "urn:ngm:class:kinematic-analysis-of-robots",
+      "label": "Kinematic Analysis of Robots"
+    },
+    {
+      "@id": "urn:ngm:class:robotic-kinematics",
+      "label": "Robotic Kinematics"
+    }
   ],
   "quality": 0.72,
   "provenance": {

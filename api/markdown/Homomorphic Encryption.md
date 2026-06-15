@@ -38,60 +38,111 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:bgv-scheme", "label": "BGV Scheme"},
-      {"@id": "urn:ngm:class:ckks-scheme", "label": "CKKS Scheme"},
-      {"@id": "urn:ngm:class:tfhe-scheme", "label": "TFHE Scheme"},
-      {"@id": "urn:ngm:class:bootstrapping", "label": "Bootstrapping"}
+      {
+        "@id": "urn:ngm:class:encryption-scheme",
+        "label": "BGV Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:ckks-scheme",
+        "label": "CKKS Scheme"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:privacy-preserving-technology", "label": "Privacy Preserving Technology"}
+      {
+        "@id": "urn:ngm:class:privacy-preserving-technology",
+        "label": "Privacy Preserving Technology"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:lattice-based-cryptography", "label": "Lattice-Based Cryptography"},
-      {"@id": "urn:ngm:class:learning-with-errors", "label": "Learning With Errors"}
+      {
+        "@id": "urn:ngm:class:lattice-cryptography",
+        "label": "Lattice-Based Cryptography"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:secure-multi-party-computation", "label": "Secure Multi-Party Computation"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:private-information-retrieval", "label": "Private Information Retrieval"},
-      {"@id": "urn:ngm:class:encrypted-machine-learning", "label": "Encrypted Machine Learning"}
+      {
+        "@id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption-for-machine-learning",
+        "label": "Encrypted Machine Learning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"},
-      {"@id": "urn:ngm:class:noise-management", "label": "Noise Management"}
-    ],
-    "uses": [
-      {"@id": "urn:ngm:class:ring-learning-with-errors", "label": "Ring Learning With Errors"},
-      {"@id": "urn:ngm:class:number-theoretic-transform", "label": "Number Theoretic Transform"}
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:healthcare-data-privacy", "label": "Healthcare Data Privacy"},
-      {"@id": "urn:ngm:class:genomic-data-analysis", "label": "Genomic Data Analysis"}
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-data-privacy",
+        "label": "Healthcare Data Privacy"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:homomorphicencryption-org", "label": "HomomorphicEncryption.org"},
-      {"@id": "urn:ngm:class:iso-iec-jtc1-sc27", "label": "ISO/IEC JTC1 SC27"}
+      {
+        "@id": "urn:ngm:class:iso-iec-jtc-1",
+        "label": "ISO/IEC JTC1 SC27"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
-      {"@id": "urn:ngm:class:secure-enclaves", "label": "Secure Enclaves"},
-      {"@id": "urn:ngm:class:garbled-circuits", "label": "Garbled Circuits"}
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclaves"
+      },
+      {
+        "@id": "urn:ngm:class:garbled-circuits",
+        "label": "Garbled Circuits"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:confidential-computing", "label": "Confidential Computing"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:oblivious-ram", "label": "Oblivious RAM"},
-      {"@id": "urn:ngm:class:functional-encryption", "label": "Functional Encryption"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:oblivious-ram",
+        "label": "Oblivious RAM"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:fhe", "label": "FHE"},
-    {"@id": "urn:ngm:class:fully-homomorphic-encryption", "label": "Fully Homomorphic Encryption"}
+    {
+      "@id": "urn:ngm:class:fhe",
+      "label": "FHE"
+    },
+    {
+      "@id": "urn:ngm:class:fully-homomorphic-encryption",
+      "label": "Fully Homomorphic Encryption"
+    }
   ],
   "quality": 0.74,
   "provenance": {

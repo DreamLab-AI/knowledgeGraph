@@ -25,54 +25,144 @@ alias:: BlockchainTechnology
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"}
+    {
+      "@id": "urn:ngm:class:distributed-ledger-technology",
+      "label": "Distributed Ledger Technology"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:blockchain-provenance", "label": "Blockchain Provenance"},
-      {"@id": "urn:ngm:class:non-fungible-token", "label": "Non-Fungible Token"},
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"},
-      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-provenance",
+        "label": "Blockchain Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:genesis-block", "label": "Genesis Block"},
-      {"@id": "urn:ngm:class:transaction-mempool", "label": "Transaction Mempool"},
-      {"@id": "urn:ngm:class:block-header", "label": "Block Header"}
+      {
+        "@id": "urn:ngm:class:genesis-block",
+        "label": "Genesis Block"
+      },
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Transaction Mempool"
+      },
+      {
+        "@id": "urn:ngm:class:block-header",
+        "label": "Block Header"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:immutability", "label": "Immutability"},
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:network-node", "label": "Network Node"}
+      {
+        "@id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:network-node",
+        "label": "Network Node"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:centralised-database", "label": "Centralised Database"},
-      {"@id": "urn:ngm:class:traditional-financial-system", "label": "Traditional Financial System"}
+      {
+        "@id": "urn:ngm:class:centralised-database",
+        "label": "Centralised Database"
+      },
+      {
+        "@id": "urn:ngm:class:traditional-financial-system",
+        "label": "Traditional Financial System"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"},
-      {"@id": "urn:ngm:class:sidechain", "label": "Sidechain"},
-      {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer 2 Scaling"}
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:distributed-blockchain", "label": "Distributed Blockchain"}
+    {
+      "@id": "urn:ngm:class:distributed-blockchain",
+      "label": "Distributed Blockchain"
+    }
   ],
   "quality": 0.76,
   "provenance": {

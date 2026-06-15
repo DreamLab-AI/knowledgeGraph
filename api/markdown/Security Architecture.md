@@ -101,10 +101,6 @@ alias:: SecurityArchitecture
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:secure-systems",
-        "label": "Secure Systems"
-      },
-      {
         "@id": "urn:ngm:class:data-protection",
         "label": "Data Protection"
       },
@@ -119,7 +115,7 @@ alias:: SecurityArchitecture
         "label": "Cryptography"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -167,12 +163,6 @@ alias:: SecurityArchitecture
         "label": "NIST Cybersecurity Framework"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:security-by-obscurity",
-        "label": "Security by Obscurity"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:system-architecture",
@@ -212,7 +202,7 @@ alias:: SecurityArchitecture
       "label": "Information Security Architecture"
     }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

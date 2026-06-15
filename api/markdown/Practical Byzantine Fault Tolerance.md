@@ -56,52 +56,129 @@ alias:: PracticalByzantineFaultTolerance
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:pre-prepare-phase", "label": "Pre-Prepare Phase"},
-      {"@id": "urn:ngm:class:prepare-phase", "label": "Prepare Phase"},
-      {"@id": "urn:ngm:class:commit-phase", "label": "Commit Phase"}
+      {
+        "@id": "urn:ngm:class:pre-prepare-phase",
+        "label": "Pre-Prepare Phase"
+      },
+      {
+        "@id": "urn:ngm:class:commit-phase",
+        "label": "Commit Phase"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:quorum-certificate", "label": "Quorum Certificate"},
-      {"@id": "urn:ngm:class:message-authentication-code", "label": "Message Authentication Code"},
-      {"@id": "urn:ngm:class:state-machine-replication", "label": "State Machine Replication"}
+      {
+        "@id": "urn:ngm:class:quorum-certificate",
+        "label": "Quorum Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      },
+      {
+        "@id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:finality", "label": "Finality"},
-      {"@id": "urn:ngm:class:deterministic-finality", "label": "Deterministic Finality"},
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
-      {"@id": "urn:ngm:class:permissioned-blockchain", "label": "Permissioned Blockchain"}
+      {
+        "@id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "@id": "urn:ngm:class:deterministic-finality",
+        "label": "Deterministic Finality"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"}
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"}
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:hyperledger-fabric", "label": "Hyperledger Fabric"}
+      {
+        "@id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"}
+      {
+        "@id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:fault-tolerant-computing", "label": "Fault Tolerant Computing"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerant-computing",
+        "label": "Fault Tolerant Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:federated-byzantine-fault-tolerance", "label": "Federated Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:hot-stuff-consensus", "label": "HotStuff Consensus"},
-      {"@id": "urn:ngm:class:leader-based-protocol", "label": "Leader Based Protocol"},
-      {"@id": "urn:ngm:class:total-order-broadcast", "label": "Total Order Broadcast"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:federated-byzantine-fault-tolerance",
+        "label": "Federated Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:hot-stuff-consensus",
+        "label": "HotStuff Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:leader-based-protocol",
+        "label": "Leader Based Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:total-order-broadcast",
+        "label": "Total Order Broadcast"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:pbft", "label": "PBFT"}
+    {
+      "@id": "urn:ngm:class:pbft",
+      "label": "PBFT"
+    }
   ],
   "quality": 0.75,
   "provenance": {

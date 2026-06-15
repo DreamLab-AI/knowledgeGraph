@@ -95,17 +95,13 @@ public:: true
         "label": "Representation Learning"
       },
       {
-        "@id": "urn:ngm:class:latent-space-interpolation",
-        "label": "Latent Space Interpolation"
-      },
-      {
         "@id": "urn:ngm:class:drug-discovery",
         "label": "Drug Discovery"
       }
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:encoder-network",
+        "@id": "urn:ngm:class:encoder",
         "label": "Encoder Network"
       },
       {
@@ -113,7 +109,7 @@ public:: true
         "label": "Decoder Network"
       },
       {
-        "@id": "urn:ngm:class:latent-space",
+        "@id": "urn:ngm:class:neural-network-latent-space",
         "label": "Latent Space"
       }
     ],
@@ -137,7 +133,7 @@ public:: true
         "label": "Generative Model"
       },
       {
-        "@id": "urn:ngm:class:probabilistic-graphical-model",
+        "@id": "urn:ngm:class:graphical-model",
         "label": "Probabilistic Graphical Model"
       }
     ],
@@ -163,12 +159,6 @@ public:: true
       {
         "@id": "urn:ngm:class:unsupervised-learning",
         "label": "Unsupervised Learning"
-      }
-    ],
-    "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:molecular-design",
-        "label": "Molecular Design"
       }
     ]
   },

@@ -23,64 +23,146 @@ public:: true
   "definition": "A policy framework is a structured set of principles, rules, standards, and processes established by a government body, standards organisation, or institution to guide decision-making, regulate behaviour, and ensure accountability within a defined domain. It translates high-level objectives — such as safety, fairness, or interoperability — into operational requirements and compliance mechanisms. Policy frameworks provide the normative scaffolding that enables coordinated action across organisations and jurisdictions.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:compliance-framework",
+    "label": "Compliance Framework"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:risk-classification", "label": "Risk Classification"},
-      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"},
-      {"@id": "urn:ngm:class:enforcement-mechanism", "label": "Enforcement Mechanism"},
-      {"@id": "urn:ngm:class:codes-of-practice", "label": "Codes of Practice"}
+      {
+        "@id": "urn:ngm:class:risk-classification",
+        "label": "Risk Classification"
+      },
+      {
+        "@id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:enforcement-mechanism",
+        "label": "Enforcement Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:codes-of-practice",
+        "label": "Codes of Practice"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:regulatory-regime", "label": "Regulatory Regime"},
-      {"@id": "urn:ngm:class:governance-ecosystem", "label": "Governance Ecosystem"}
+      {
+        "@id": "urn:ngm:class:governance-ecosystem",
+        "label": "Governance Ecosystem"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:stakeholder-consultation", "label": "Stakeholder Consultation"},
-      {"@id": "urn:ngm:class:impact-assessment", "label": "Impact Assessment"}
+      {
+        "@id": "urn:ngm:class:stakeholder-consultation",
+        "label": "Stakeholder Consultation"
+      },
+      {
+        "@id": "urn:ngm:class:impact-assessment",
+        "label": "Impact Assessment"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:ai-accountability", "label": "AI Accountability"},
-      {"@id": "urn:ngm:class:regulatory-equivalence", "label": "Regulatory Equivalence"},
-      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"}
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-accountability",
+        "label": "AI Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:trust-framework", "label": "Trust Framework"}
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act Regulatory Instrument"},
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"},
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
-      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"}
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist", "label": "NIST"},
-      {"@id": "urn:ngm:class:iso-standards", "label": "Iso Standards"},
-      {"@id": "urn:ngm:class:iso-iec-jtc1-sc42", "label": "ISO/IEC JTC 1/SC 42"}
+      {
+        "@id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "@id": "urn:ngm:class:iso-standards",
+        "label": "Iso Standards"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-jtc1-sc42",
+        "label": "ISO/IEC JTC 1/SC 42"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:self-regulation", "label": "Self-Regulation"},
-      {"@id": "urn:ngm:class:co-regulation", "label": "Co-Regulation"}
+      {
+        "@id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:co-regulation",
+        "label": "Co-Regulation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"},
-    {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}
+    {
+      "@id": "urn:ngm:class:regulatory-framework",
+      "label": "Regulatory Framework"
+    },
+    {
+      "@id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",
     "inferenceRule": "RelationEnrichment"
   },
-  "quality": 0.80
+  "quality": 0.8
 }
 ```
 

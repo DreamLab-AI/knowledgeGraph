@@ -456,27 +456,11 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:biotech-commercialisation",
-        "label": "Biotech Commercialisation"
-      },
-      {
-        "@id": "urn:ngm:class:convergence-readiness-assessment",
-        "label": "Convergence Readiness Assessment"
-      },
-      {
-        "@id": "urn:ngm:class:io-t-adoption",
-        "label": "IoT Adoption"
-      },
-      {
         "@id": "urn:ngm:class:regulatory-sandbox",
         "label": "Regulatory Sandbox"
       },
       {
-        "@id": "urn:ngm:class:skills-transition-programme",
-        "label": "Skills Transition Programme"
-      },
-      {
-        "@id": "urn:ngm:class:technology-stack-integration",
+        "@id": "urn:ngm:class:technology-stack",
         "label": "Technology Stack Integration"
       },
       {
@@ -518,10 +502,6 @@ public:: true
         "label": "Interoperability Standard"
       },
       {
-        "@id": "urn:ngm:class:investment-capital",
-        "label": "Investment Capital"
-      },
-      {
         "@id": "urn:ngm:class:regulatory-clarity",
         "label": "Regulatory Clarity"
       },
@@ -532,28 +512,20 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:autonomous-systems-deployment",
+        "@id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems Deployment"
       },
       {
-        "@id": "urn:ngm:class:decentralised-application-ecosystems",
+        "@id": "urn:ngm:class:decentralised-application",
         "label": "Decentralised Application Ecosystems"
       },
       {
-        "@id": "urn:ngm:class:digital-physical-integration",
-        "label": "Digital-Physical Integration"
-      },
-      {
-        "@id": "urn:ngm:class:immersive-enterprise-collaboration",
+        "@id": "urn:ngm:class:immersive-collaboration",
         "label": "Immersive Enterprise Collaboration"
       },
       {
         "@id": "urn:ngm:class:industry-4-0",
         "label": "Industry 4.0"
-      },
-      {
-        "@id": "urn:ngm:class:productivity-multiplier-effects",
-        "label": "Productivity Multiplier Effects"
       },
       {
         "@id": "urn:ngm:class:smart-city-infrastructure",
@@ -578,7 +550,7 @@ public:: true
         "label": "Multi-Level Perspective"
       },
       {
-        "@id": "urn:ngm:class:nbic-convergence-framework",
+        "@id": "urn:ngm:class:nbic-convergence",
         "label": "NBIC Convergence Framework"
       },
       {
@@ -650,14 +622,6 @@ public:: true
         "label": "Platform Economy"
       },
       {
-        "@id": "urn:ngm:class:skills-gap",
-        "label": "Skills Gap"
-      },
-      {
-        "@id": "urn:ngm:class:technology-governance",
-        "label": "Technology Governance"
-      },
-      {
         "@id": "urn:ngm:class:ai-adoption",
         "label": "AI Adoption"
       },
@@ -688,7 +652,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:climate-tech-deployment",
+        "@id": "urn:ngm:class:climate-tech",
         "label": "Climate Tech Deployment"
       },
       {
@@ -700,16 +664,8 @@ public:: true
         "label": "Fourth Industrial Revolution"
       },
       {
-        "@id": "urn:ngm:class:future-of-work-transition",
-        "label": "Future of Work Transition"
-      },
-      {
         "@id": "urn:ngm:class:national-competitiveness",
         "label": "National Competitiveness"
-      },
-      {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-sector-modernisation",
-        "label": "Public Sector Modernisation"
       },
       {
         "@id": "urn:ngm:class:sustainable-development-goals",
@@ -730,15 +686,11 @@ public:: true
         "label": "HL7 FHIR"
       },
       {
-        "@id": "urn:ngm:class:ieee-p2510",
-        "label": "IEEE P2510"
-      },
-      {
-        "@id": "urn:ngm:class:iso-iec-42001-ai-management",
+        "@id": "urn:ngm:class:iso-iec-42001-ai-management-system",
         "label": "ISO/IEC 42001 AI Management"
       },
       {
-        "@id": "urn:ngm:class:matter-standard",
+        "@id": "urn:ngm:class:matter-protocol",
         "label": "Matter Standard"
       },
       {

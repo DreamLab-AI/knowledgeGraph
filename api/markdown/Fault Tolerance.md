@@ -542,13 +542,12 @@ alias:: FaultTolerance
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:reliability-engineering", "label": "Reliability Engineering"}
+      {
+        "@id": "urn:ngm:class:reliability-engineering",
+        "label": "Reliability Engineering"
+      }
     ],
     "hasPart": [
-      {
-        "@id": "urn:ngm:class:checkpointing",
-        "label": "Checkpointing"
-      },
       {
         "@id": "urn:ngm:class:failure-detector",
         "label": "Failure Detector"
@@ -558,16 +557,8 @@ alias:: FaultTolerance
         "label": "Health Monitoring"
       },
       {
-        "@id": "urn:ngm:class:heartbeat",
-        "label": "Heartbeat"
-      },
-      {
         "@id": "urn:ngm:class:quorum",
         "label": "Quorum"
-      },
-      {
-        "@id": "urn:ngm:class:recovery-procedure",
-        "label": "Recovery Procedure"
       },
       {
         "@id": "urn:ngm:class:redundancy",
@@ -587,10 +578,6 @@ alias:: FaultTolerance
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:failure-model",
-        "label": "Failure Model"
-      },
       {
         "@id": "urn:ngm:class:idempotency",
         "label": "Idempotency"
@@ -614,14 +601,6 @@ alias:: FaultTolerance
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:automatic-recovery",
-        "label": "Automatic Recovery"
-      },
-      {
-        "@id": "urn:ngm:class:continued-operation",
-        "label": "Continued Operation"
-      },
-      {
         "@id": "urn:ngm:class:data-consistency",
         "label": "Data Consistency"
       },
@@ -644,16 +623,8 @@ alias:: FaultTolerance
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:chain-replication",
-        "label": "Chain Replication"
-      },
-      {
         "@id": "urn:ngm:class:hot-stuff",
         "label": "HotStuff"
-      },
-      {
-        "@id": "urn:ngm:class:n-version-programming",
-        "label": "N-Version Programming"
       },
       {
         "@id": "urn:ngm:class:paxos",
@@ -664,36 +635,12 @@ alias:: FaultTolerance
         "label": "PBFT"
       },
       {
-        "@id": "urn:ngm:class:phi-accrual-detector",
-        "label": "Phi Accrual Detector"
-      },
-      {
-        "@id": "urn:ngm:class:primary-backup",
-        "label": "Primary-Backup"
-      },
-      {
         "@id": "urn:ngm:class:raft",
         "label": "Raft"
       },
       {
-        "@id": "urn:ngm:class:recovery-blocks",
-        "label": "Recovery Blocks"
-      },
-      {
-        "@id": "urn:ngm:class:sagas",
-        "label": "Sagas"
-      },
-      {
-        "@id": "urn:ngm:class:swim",
-        "label": "SWIM"
-      },
-      {
         "@id": "urn:ngm:class:tendermint",
         "label": "Tendermint"
-      },
-      {
-        "@id": "urn:ngm:class:triple-modular-redundancy",
-        "label": "Triple Modular Redundancy"
       },
       {
         "@id": "urn:ngm:class:two-phase-commit",
@@ -714,15 +661,7 @@ alias:: FaultTolerance
         "label": "Hamming Codes"
       },
       {
-        "@id": "urn:ngm:class:heartbeat-protocol",
-        "label": "Heartbeat Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:lamport-clocks",
-        "label": "Lamport Clocks"
-      },
-      {
-        "@id": "urn:ngm:class:reed-solomon-coding",
+        "@id": "urn:ngm:class:reed-solomon-codes",
         "label": "Reed-Solomon Coding"
       },
       {
@@ -770,7 +709,7 @@ alias:: FaultTolerance
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:aerospace-avionics",
+        "@id": "urn:ngm:class:avionics",
         "label": "Aerospace Avionics"
       },
       {
@@ -782,7 +721,7 @@ alias:: FaultTolerance
         "label": "Distributed Training"
       },
       {
-        "@id": "urn:ngm:class:financial-trading-systems",
+        "@id": "urn:ngm:class:financial-trading",
         "label": "Financial Trading Systems"
       },
       {
@@ -812,16 +751,8 @@ alias:: FaultTolerance
         "label": "IEC 61508"
       },
       {
-        "@id": "urn:ngm:class:ieee-1633",
-        "label": "IEEE 1633"
-      },
-      {
         "@id": "urn:ngm:class:iso-26262",
         "label": "ISO 26262"
-      },
-      {
-        "@id": "urn:ngm:class:nist-sp-800-160",
-        "label": "NIST SP 800-160"
       }
     ]
   },

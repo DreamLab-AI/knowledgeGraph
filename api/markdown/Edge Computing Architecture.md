@@ -70,7 +70,7 @@ public:: true
         "label": "Edge Node"
       },
       {
-        "@id": "urn:ngm:class:fog-computing-layer",
+        "@id": "urn:ngm:class:fog-computing",
         "label": "Fog Computing Layer"
       },
       {
@@ -104,15 +104,11 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:low-latency-experiences",
+        "@id": "urn:ngm:class:low-latency",
         "label": "Low-Latency Experiences"
       },
       {
-        "@id": "urn:ngm:class:compute-offloading",
-        "label": "Compute Offloading"
-      },
-      {
-        "@id": "urn:ngm:class:immersive-xr-experience",
+        "@id": "urn:ngm:class:immersive-experience",
         "label": "Immersive XR Experience"
       }
     ],
@@ -146,7 +142,7 @@ public:: true
         "label": "Microservices Architecture"
       },
       {
-        "@id": "urn:ngm:class:gpu-accelerated-computing",
+        "@id": "urn:ngm:class:gpu-computing",
         "label": "GPU Accelerated Computing"
       }
     ],
@@ -174,12 +170,6 @@ public:: true
         "label": "OpenAPI Specification"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:centralised-cloud-architecture",
-        "label": "Centralised Cloud Architecture"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:spatial-computing",
@@ -198,10 +188,6 @@ public:: true
       {
         "@id": "urn:ngm:class:network-slicing",
         "label": "Network Slicing"
-      },
-      {
-        "@id": "urn:ngm:class:cybersickness-prevention",
-        "label": "Cybersickness Prevention"
       }
     ]
   },

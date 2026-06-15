@@ -22,16 +22,8 @@
         "label": "Localization"
       },
       {
-        "id": "urn:ngm:class:map-construction",
-        "label": "Map Construction"
-      },
-      {
         "id": "urn:ngm:class:occupancy-grid",
         "label": "Occupancy Grid"
-      },
-      {
-        "id": "urn:ngm:class:pose-graph-optimization",
-        "label": "Pose Graph Optimization"
       }
     ],
     "requires": [
@@ -40,11 +32,11 @@
         "label": "Sensor Fusion"
       },
       {
-        "id": "urn:ngm:class:probabilistic-state-estimation",
+        "id": "urn:ngm:class:state-estimation",
         "label": "Probabilistic State Estimation"
       },
       {
-        "id": "urn:ngm:class:loop-closure",
+        "id": "urn:ngm:class:loop-closure-detection",
         "label": "Loop Closure"
       }
     ],
@@ -127,10 +119,6 @@
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
-      },
-      {
-        "id": "urn:ngm:class:graph-optimization",
-        "label": "Graph Optimization"
       }
     ]
   },

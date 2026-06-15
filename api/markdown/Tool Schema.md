@@ -37,54 +37,119 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:function-definition", "label": "Function Definition"},
-    {"@id": "urn:ngm:class:tool-definition", "label": "Tool Definition"}
+    {
+      "@id": "urn:ngm:class:function-definition",
+      "label": "Function Definition"
+    },
+    {
+      "@id": "urn:ngm:class:tool-definition",
+      "label": "Tool Definition"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:json-schema", "label": "JSON Schema"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:structured-output", "label": "Structured Output"}
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:structured-output",
+        "label": "Structured Output"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"},
-      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:tool-selection", "label": "Tool Selection"},
-      {"@id": "urn:ngm:class:ai-agent", "label": "AI Agent"}
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:openapi-specification", "label": "OpenAPI Specification"},
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"}
+      {
+        "@id": "urn:ngm:class:openapi-specification",
+        "label": "OpenAPI Specification"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:natural-language-description", "label": "Natural Language Description"},
-      {"@id": "urn:ngm:class:type-system", "label": "Type System"},
-      {"@id": "urn:ngm:class:parameter-validation", "label": "Parameter Validation"}
+      {
+        "@id": "urn:ngm:class:type-system",
+        "label": "Type System"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:agent-orchestration", "label": "Agent Orchestration"},
-      {"@id": "urn:ngm:class:capability-manifest", "label": "Capability Manifest"}
+      {
+        "@id": "urn:ngm:class:multi-agent-orchestration",
+        "label": "Agent Orchestration"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:schema-registry", "label": "Schema Registry"},
-      {"@id": "urn:ngm:class:inference-time-compute", "label": "Inference-Time Compute"}
+      {
+        "@id": "urn:ngm:class:schema-registry",
+        "label": "Schema Registry"
+      },
+      {
+        "@id": "urn:ngm:class:inference-time-compute",
+        "label": "Inference-Time Compute"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:restful-api", "label": "RESTful API"},
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"}
+      {
+        "@id": "urn:ngm:class:restful-api",
+        "label": "RESTful API"
+      },
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:context-window", "label": "Context Window"},
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
+      {
+        "@id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
     ]
   },
   "quality": 0.74,

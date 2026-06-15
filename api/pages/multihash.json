@@ -17,12 +17,7 @@
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [
-      {
-        "id": "urn:ngm:class:hash-function-registry",
-        "label": "Hash Function Registry"
-      }
-    ],
+    "requires": [],
     "enables": [
       {
         "id": "urn:ngm:class:content-addressed-storage",
@@ -31,34 +26,11 @@
       {
         "id": "urn:ngm:class:ipfs",
         "label": "IPFS"
-      },
-      {
-        "id": "urn:ngm:class:algorithm-agility",
-        "label": "Algorithm Agility"
-      },
-      {
-        "id": "urn:ngm:class:peer-identity",
-        "label": "Peer Identity"
       }
     ],
-    "dependsOn": [
-      {
-        "id": "urn:ngm:class:varint-encoding",
-        "label": "Varint Encoding"
-      }
-    ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:self-describing-format",
-        "label": "Self-Describing Format"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:fixed-length-hash",
-        "label": "Fixed-Length Hash"
-      }
-    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:verifiable-credentials",
@@ -87,10 +59,6 @@
       {
         "id": "urn:ngm:class:cryptographic-verification",
         "label": "Cryptographic Verification"
-      },
-      {
-        "id": "urn:ngm:class:hash-algorithm-upgrade",
-        "label": "Hash Algorithm Upgrade"
       },
       {
         "id": "urn:ngm:class:post-quantum-cryptography",
@@ -137,10 +105,6 @@
       {
         "id": "urn:ngm:class:content-identifier",
         "label": "Content Identifier"
-      },
-      {
-        "id": "urn:ngm:class:varint",
-        "label": "Varint"
       }
     ]
   },

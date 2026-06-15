@@ -106,7 +106,7 @@ public:: true
         "label": "Graphics Processing Unit"
       },
       {
-        "@id": "urn:ngm:class:shader-program",
+        "@id": "urn:ngm:class:shader",
         "label": "Shader Program"
       },
       {
@@ -156,7 +156,7 @@ public:: true
         "label": "Parallel Computing"
       },
       {
-        "@id": "urn:ngm:class:spatial-data-structures",
+        "@id": "urn:ngm:class:spatial-data-structure",
         "label": "Spatial Data Structures"
       }
     ],
@@ -168,7 +168,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:machine-learning-inference",
+        "@id": "urn:ngm:class:inference",
         "label": "Machine Learning Inference"
       },
       {

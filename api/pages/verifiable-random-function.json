@@ -23,7 +23,7 @@
         "label": "Discrete Logarithm Problem"
       },
       {
-        "id": "urn:ngm:class:non-interactive-zero-knowledge-proof",
+        "id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Non-Interactive Zero-Knowledge Proof"
       }
     ],
@@ -43,10 +43,6 @@
       {
         "id": "urn:ngm:class:proof-of-stake",
         "label": "Proof of Stake"
-      },
-      {
-        "id": "urn:ngm:class:randomness-beacon",
-        "label": "Randomness Beacon"
       }
     ],
     "dependsOn": [
@@ -63,10 +59,6 @@
       {
         "id": "urn:ngm:class:pseudorandom-function",
         "label": "Pseudorandom Function"
-      },
-      {
-        "id": "urn:ngm:class:ecvrf",
-        "label": "ECVRF (RFC 9381)"
       }
     ],
     "contrastsWith": [
@@ -91,7 +83,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public-Key Cryptography"
       },
       {
@@ -135,10 +127,6 @@
       {
         "id": "urn:ngm:class:leader-election",
         "label": "Leader Election"
-      },
-      {
-        "id": "urn:ngm:class:decentralised-randomness",
-        "label": "Decentralised Randomness"
       }
     ]
   },

@@ -66,7 +66,7 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:digital-social-presence",
+        "@id": "urn:ngm:class:social-presence",
         "label": "Digital Social Presence"
       }
     ]

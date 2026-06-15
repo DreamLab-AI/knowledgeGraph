@@ -23,55 +23,133 @@ public:: true
   "definition": "Gitcoin Grants is a decentralised crowdfunding programme for open-source and public goods projects in the Web3 ecosystem, which implements quadratic funding as its core matching mechanism to amplify contributions from a broad community of small donors relative to a smaller number of large funders. In quadratic funding, the matching pool allocation for each project is proportional to the square of the sum of the square roots of individual contributions, incentivising broad participation over concentrated giving and making grant outcomes resistant to plutocratic capture. Gitcoin Grants operates in periodic rounds with a central matching pool funded by protocols, DAOs, and foundations, and uses Gitcoin Passport as a Sybil resistance layer to prevent fake identity manipulation of the quadratic formula.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding", "label": "Public Goods Funding"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
+      "label": "Public Goods Funding"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:quadratic-funding", "label": "Quadratic Funding"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:gitcoin-passport", "label": "Gitcoin Passport"},
-      {"@id": "urn:ngm:class:sybil-resistance", "label": "Sybil Resistance"},
-      {"@id": "urn:ngm:class:allo-protocol", "label": "Allo Protocol"}
+      {
+        "@id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:gitcoin-passport",
+        "label": "Gitcoin Passport"
+      },
+      {
+        "@id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:allo-protocol",
+        "label": "Allo Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:open-source-development", "label": "Open Source Development"},
-      {"@id": "urn:ngm:class:dao", "label": "DAO"},
-      {"@id": "urn:ngm:class:retroactive-public-goods-funding", "label": "Retroactive Public Goods Funding"},
-      {"@id": "urn:ngm:class:community-governance", "label": "Community Governance"}
+      {
+        "@id": "urn:ngm:class:open-source-development",
+        "label": "Open Source Development"
+      },
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "@id": "urn:ngm:class:retroactive-public-goods-funding",
+        "label": "Retroactive Public Goods Funding"
+      },
+      {
+        "@id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:matching-funds", "label": "Matching Funds"},
-      {"@id": "urn:ngm:class:decentralized-funding", "label": "Decentralized Funding"}
+      {
+        "@id": "urn:ngm:class:matching-funds",
+        "label": "Matching Funds"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cryptocurrency-wallet", "label": "Cryptocurrency Wallet"},
-      {"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"}
+      {
+        "@id": "urn:ngm:class:cryptocurrency-wallet",
+        "label": "Cryptocurrency Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
-      {"@id": "urn:ngm:class:decentralized-finance", "label": "Decentralized Finance"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:developer-ecosystem", "label": "Developer Ecosystem"},
-      {"@id": "urn:ngm:class:ethereum-ecosystem", "label": "Ethereum Ecosystem"}
+      {
+        "@id": "urn:ngm:class:developer-ecosystem",
+        "label": "Developer Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum Ecosystem"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:venture-capital", "label": "Venture Capital"},
-      {"@id": "urn:ngm:class:centralized-grant-making", "label": "Centralized Grant Making"}
+      {
+        "@id": "urn:ngm:class:venture-capital",
+        "label": "Venture Capital"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:governance", "label": "Governance"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:gitcoin", "label": "Gitcoin"},
-      {"@id": "urn:ngm:class:web3", "label": "Web3"},
-      {"@id": "urn:ngm:class:decentralized-autonomous-organization", "label": "Decentralized Autonomous Organization"},
-      {"@id": "urn:ngm:class:crowdfunding", "label": "Crowdfunding"}
+      {
+        "@id": "urn:ngm:class:gitcoin",
+        "label": "Gitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:web3",
+        "label": "Web3"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      },
+      {
+        "@id": "urn:ngm:class:crowdfunding",
+        "label": "Crowdfunding"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:gitcoin-grant-rounds", "label": "Gitcoin Grant Rounds"}
+    {
+      "@id": "urn:ngm:class:gitcoin-grant-rounds",
+      "label": "Gitcoin Grant Rounds"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

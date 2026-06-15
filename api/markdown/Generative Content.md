@@ -105,26 +105,14 @@ public:: true
         "label": "Generative Adversarial Network"
       },
       {
-        "@id": "urn:ngm:class:multimodal-ai",
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       }
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:synthetic-text",
-        "label": "Synthetic Text"
-      },
-      {
-        "@id": "urn:ngm:class:synthetic-image",
-        "label": "Synthetic Image"
-      },
-      {
         "@id": "urn:ngm:class:3-d-asset",
         "label": "3D Asset"
-      },
-      {
-        "@id": "urn:ngm:class:synthetic-audio",
-        "label": "Synthetic Audio"
       }
     ],
     "dependsOn": [
@@ -138,10 +126,6 @@ public:: true
       }
     ],
     "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:human-authored-content",
-        "label": "Human-Authored Content"
-      },
       {
         "@id": "urn:ngm:class:procedural-content",
         "label": "Procedural Content"
@@ -167,7 +151,7 @@ public:: true
         "label": "Content Provenance"
       },
       {
-        "@id": "urn:ngm:class:intellectual-property",
+        "@id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Intellectual Property"
       },
       {

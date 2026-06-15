@@ -92,7 +92,7 @@
         "label": "Ordinary Differential Equation"
       },
       {
-        "id": "urn:ngm:class:partial-differential-equation",
+        "id": "urn:ngm:class:differential-equations",
         "label": "Partial Differential Equation"
       }
     ],

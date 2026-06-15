@@ -24,10 +24,6 @@
       {
         "id": "urn:ngm:class:message-broker",
         "label": "Message Broker"
-      },
-      {
-        "id": "urn:ngm:class:message-channel",
-        "label": "Message Channel"
       }
     ],
     "requires": [
@@ -94,7 +90,7 @@
         "label": "Middleware"
       },
       {
-        "id": "urn:ngm:class:publish-subscribe",
+        "id": "urn:ngm:class:publish-subscribe-pattern",
         "label": "Publish Subscribe"
       },
       {
@@ -119,10 +115,6 @@
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:process-calculus",
-        "label": "Process Calculus"
-      },
       {
         "id": "urn:ngm:class:protocol-buffer",
         "label": "Protocol Buffer"

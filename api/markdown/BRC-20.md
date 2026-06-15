@@ -84,7 +84,7 @@ public:: true
         "label": "Fungible Token"
       },
       {
-        "@id": "urn:ngm:class:token-minting",
+        "@id": "urn:ngm:class:minting",
         "label": "Token Minting"
       },
       {
@@ -94,7 +94,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:json",
+        "@id": "urn:ngm:class:json-data-interchange-format",
         "label": "JSON"
       },
       {
@@ -156,7 +156,7 @@ public:: true
         "label": "Mempool"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-script",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
         "label": "Bitcoin Script"
       }
     ],

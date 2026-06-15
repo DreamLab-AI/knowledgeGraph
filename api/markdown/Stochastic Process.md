@@ -456,10 +456,6 @@ public:: true
         "label": "Gaussian Process"
       },
       {
-        "@id": "urn:ngm:class:l-vy-process",
-        "label": "Lévy Process"
-      },
-      {
         "@id": "urn:ngm:class:markov-chain",
         "label": "Markov Chain"
       },
@@ -468,16 +464,8 @@ public:: true
         "label": "Martingale"
       },
       {
-        "@id": "urn:ngm:class:ornstein-uhlenbeck-process",
-        "label": "Ornstein-Uhlenbeck Process"
-      },
-      {
         "@id": "urn:ngm:class:poisson-process",
         "label": "Poisson Process"
-      },
-      {
-        "@id": "urn:ngm:class:sample-path",
-        "label": "Sample Path"
       },
       {
         "@id": "urn:ngm:class:stochastic-differential-equation",
@@ -502,16 +490,8 @@ public:: true
         "label": "Measure Theory"
       },
       {
-        "@id": "urn:ngm:class:probability-space",
-        "label": "Probability Space"
-      },
-      {
         "@id": "urn:ngm:class:sigma-algebra",
         "label": "Sigma-Algebra"
-      },
-      {
-        "@id": "urn:ngm:class:stochastic-integration",
-        "label": "Stochastic Integration"
       }
     ],
     "enables": [
@@ -520,20 +500,8 @@ public:: true
         "label": "Bayesian Optimisation"
       },
       {
-        "@id": "urn:ngm:class:financial-derivatives-pricing",
-        "label": "Financial Derivatives Pricing"
-      },
-      {
         "@id": "urn:ngm:class:gaussian-process-regression",
         "label": "Gaussian Process Regression"
-      },
-      {
-        "@id": "urn:ngm:class:mcmc-sampling",
-        "label": "MCMC Sampling"
-      },
-      {
-        "@id": "urn:ngm:class:neural-sde",
-        "label": "Neural SDE"
       },
       {
         "@id": "urn:ngm:class:uncertainty-quantification",
@@ -562,25 +530,13 @@ public:: true
         "label": "Fokker-Planck Equation"
       },
       {
-        "@id": "urn:ngm:class:it-lemma",
-        "label": "Itô Lemma"
-      },
-      {
-        "@id": "urn:ngm:class:kolmogorov-backward-equation",
-        "label": "Kolmogorov Backward Equation"
-      },
-      {
-        "@id": "urn:ngm:class:markov-property",
-        "label": "Markov Property"
-      },
-      {
         "@id": "urn:ngm:class:score-matching",
         "label": "Score Matching"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:it-integral",
+        "@id": "urn:ngm:class:it-calculus",
         "label": "Itô Integral"
       },
       {
@@ -640,38 +596,16 @@ public:: true
         "label": "Climate Modelling"
       },
       {
-        "@id": "urn:ngm:class:epidemiology-modelling",
-        "label": "Epidemiology Modelling"
-      },
-      {
         "@id": "urn:ngm:class:quantitative-finance",
         "label": "Quantitative Finance"
       },
       {
-        "@id": "urn:ngm:class:robotics-state-estimation",
+        "@id": "urn:ngm:class:state-estimation",
         "label": "Robotics State Estimation"
       },
       {
         "@id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
-      }
-    ],
-    "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:annals-of-probability",
-        "label": "Annals of Probability"
-      },
-      {
-        "@id": "urn:ngm:class:journal-of-the-royal-statistical-society",
-        "label": "Journal of the Royal Statistical Society"
-      },
-      {
-        "@id": "urn:ngm:class:probability-theory-and-related-fields",
-        "label": "Probability Theory and Related Fields"
-      },
-      {
-        "@id": "urn:ngm:class:stochastic-processes-and-their-applications",
-        "label": "Stochastic Processes and their Applications"
       }
     ]
   },

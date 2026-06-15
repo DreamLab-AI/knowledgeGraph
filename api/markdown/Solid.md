@@ -364,7 +364,7 @@ public:: true
         "label": "Linked Data Platform"
       },
       {
-        "@id": "urn:ngm:class:pod",
+        "@id": "urn:ngm:class:solid-pod",
         "label": "Pod"
       },
       {
@@ -374,10 +374,6 @@ public:: true
       {
         "@id": "urn:ngm:class:solid-oidc",
         "label": "Solid-OIDC"
-      },
-      {
-        "@id": "urn:ngm:class:solid-protocol-specification",
-        "label": "Solid Protocol Specification"
       },
       {
         "@id": "urn:ngm:class:sparql",
@@ -486,10 +482,6 @@ public:: true
         "label": "Access Control Policy"
       },
       {
-        "@id": "urn:ngm:class:dpo-p-authentication",
-        "label": "DPoP Authentication"
-      },
-      {
         "@id": "urn:ngm:class:ldp-container",
         "label": "LDP Container"
       },
@@ -512,11 +504,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:dpo-p-token",
-        "label": "DPoP Token"
-      },
-      {
-        "@id": "urn:ngm:class:http-rest",
+        "@id": "urn:ngm:class:rest",
         "label": "HTTP REST"
       },
       {
@@ -570,10 +558,6 @@ public:: true
         "label": "ShEx"
       },
       {
-        "@id": "urn:ngm:class:shape-trees",
-        "label": "Shape Trees"
-      },
-      {
         "@id": "urn:ngm:class:agent-frameworks",
         "label": "Agent Frameworks"
       },
@@ -596,7 +580,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:financial-data-portability",
+        "@id": "urn:ngm:class:data-portability",
         "label": "Financial Data Portability"
       },
       {
@@ -604,24 +588,12 @@ public:: true
         "label": "GDPR Compliance"
       },
       {
-        "@id": "urn:ngm:class:government-open-data",
+        "@id": "urn:ngm:class:open-data",
         "label": "Government Open Data"
       },
       {
-        "@id": "urn:ngm:class:health-data-management",
+        "@id": "urn:ngm:class:data-management",
         "label": "Health Data Management"
-      },
-      {
-        "@id": "urn:ngm:class:nhs-data-strategy",
-        "label": "NHS Data Strategy"
-      },
-      {
-        "@id": "urn:ngm:class:personal-data-management",
-        "label": "Personal Data Management"
-      },
-      {
-        "@id": "urn:ngm:class:smart-data-schemes",
-        "label": "Smart Data Schemes"
       },
       {
         "@id": "urn:ngm:class:digital-identity",
@@ -634,20 +606,12 @@ public:: true
         "label": "IETF"
       },
       {
-        "@id": "urn:ngm:class:linked-web-storage-working-group",
-        "label": "Linked Web Storage Working Group"
-      },
-      {
         "@id": "urn:ngm:class:open-data-institute",
         "label": "Open Data Institute"
       },
       {
         "@id": "urn:ngm:class:w3-c",
         "label": "W3C"
-      },
-      {
-        "@id": "urn:ngm:class:w3-c-solid-community-group",
-        "label": "W3C Solid Community Group"
       }
     ]
   },

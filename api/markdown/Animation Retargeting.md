@@ -84,24 +84,12 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:pose-matching",
-        "label": "Pose Matching"
-      },
-      {
-        "@id": "urn:ngm:class:skeleton-mapping",
-        "label": "Skeleton Mapping"
-      },
-      {
         "@id": "urn:ngm:class:inverse-kinematics",
         "label": "Inverse Kinematics"
       },
       {
-        "@id": "urn:ngm:class:character-rig",
+        "@id": "urn:ngm:class:character-rigging",
         "label": "Character Rig"
-      },
-      {
-        "@id": "urn:ngm:class:skeletal-hierarchy",
-        "label": "Skeletal Hierarchy"
       }
     ],
     "enables": [
@@ -110,15 +98,15 @@ public:: true
         "label": "Avatar Animation"
       },
       {
-        "@id": "urn:ngm:class:character-animation-reuse",
+        "@id": "urn:ngm:class:character-animation",
         "label": "Character Animation Reuse"
       },
       {
-        "@id": "urn:ngm:class:motion-capture-workflows",
+        "@id": "urn:ngm:class:motion-capture",
         "label": "Motion Capture Workflows"
       },
       {
-        "@id": "urn:ngm:class:virtual-avatar",
+        "@id": "urn:ngm:class:avatar",
         "label": "Virtual Avatar"
       },
       {
@@ -132,11 +120,7 @@ public:: true
         "label": "Forward Kinematics"
       },
       {
-        "@id": "urn:ngm:class:joint-constraint",
-        "label": "Joint Constraint"
-      },
-      {
-        "@id": "urn:ngm:class:coordinate-frame-transform",
+        "@id": "urn:ngm:class:coordinate-transformation",
         "label": "Coordinate Frame Transform"
       }
     ],
@@ -146,18 +130,8 @@ public:: true
         "label": "Motion Capture"
       },
       {
-        "@id": "urn:ngm:class:animation-technology",
+        "@id": "urn:ngm:class:animation",
         "label": "Animation Technology"
-      }
-    ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:joint-binding",
-        "label": "Joint Binding"
-      },
-      {
-        "@id": "urn:ngm:class:rest-pose-alignment",
-        "label": "Rest Pose Alignment"
       }
     ],
     "contrastsWith": [
@@ -180,7 +154,7 @@ public:: true
         "label": "Skinning"
       },
       {
-        "@id": "urn:ngm:class:digital-human",
+        "@id": "urn:ngm:class:digital-humans",
         "label": "Digital Human"
       }
     ],

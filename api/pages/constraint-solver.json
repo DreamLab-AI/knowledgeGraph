@@ -110,10 +110,6 @@
       {
         "id": "urn:ngm:class:computer-aided-design",
         "label": "Computer-Aided Design"
-      },
-      {
-        "id": "urn:ngm:class:neuro-symbolic-integration",
-        "label": "Neuro-Symbolic Integration"
       }
     ],
     "standardizedBy": [],

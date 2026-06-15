@@ -30,14 +30,6 @@
         "label": "Pre-Production"
       },
       {
-        "id": "urn:ngm:class:principal-photography",
-        "label": "Principal Photography"
-      },
-      {
-        "id": "urn:ngm:class:post-production",
-        "label": "Post-Production"
-      },
-      {
         "id": "urn:ngm:class:visual-effects",
         "label": "Visual Effects"
       }
@@ -105,7 +97,7 @@
         "label": "Motion Capture"
       },
       {
-        "id": "urn:ngm:class:led-volume-stage",
+        "id": "urn:ngm:class:virtual-production-volume",
         "label": "LED Volume Stage"
       },
       {
@@ -124,14 +116,6 @@
       {
         "id": "urn:ngm:class:3-d-rendering-engine",
         "label": "3D Rendering Engine"
-      },
-      {
-        "id": "urn:ngm:class:screen-writing",
-        "label": "Screen Writing"
-      },
-      {
-        "id": "urn:ngm:class:sound-design",
-        "label": "Sound Design"
       }
     ]
   },

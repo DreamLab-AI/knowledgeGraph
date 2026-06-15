@@ -85,7 +85,7 @@ public:: true
         "label": "Constraint Propagation"
       },
       {
-        "@id": "urn:ngm:class:variable-ordering-heuristic",
+        "@id": "urn:ngm:class:heuristic-methods",
         "label": "Variable Ordering Heuristic"
       }
     ],
@@ -93,10 +93,6 @@ public:: true
       {
         "@id": "urn:ngm:class:search-algorithm",
         "label": "Search Algorithm"
-      },
-      {
-        "@id": "urn:ngm:class:domain-representation",
-        "label": "Domain Representation"
       }
     ],
     "enables": [
@@ -105,7 +101,7 @@ public:: true
         "label": "Automated Planning"
       },
       {
-        "@id": "urn:ngm:class:scheduling",
+        "@id": "urn:ngm:class:planning-and-scheduling",
         "label": "Scheduling"
       },
       {
@@ -143,7 +139,7 @@ public:: true
         "label": "Inference Engine"
       },
       {
-        "@id": "urn:ngm:class:heuristic",
+        "@id": "urn:ngm:class:heuristic-methods",
         "label": "Heuristic"
       }
     ],
@@ -173,12 +169,8 @@ public:: true
         "label": "Supply Chain Optimisation"
       },
       {
-        "@id": "urn:ngm:class:robotic-task-planning",
+        "@id": "urn:ngm:class:task-planning",
         "label": "Robotic Task Planning"
-      },
-      {
-        "@id": "urn:ngm:class:network-configuration",
-        "label": "Network Configuration"
       }
     ],
     "relatedTo": [

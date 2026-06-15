@@ -117,16 +117,8 @@ alias:: AdaptiveControl, RB-1004-adaptive-control
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:parameter-adaptation-mechanism",
-        "label": "Parameter Adaptation Mechanism"
-      },
-      {
         "@id": "urn:ngm:class:system-identification",
         "label": "System Identification"
-      },
-      {
-        "@id": "urn:ngm:class:persistent-excitation",
-        "label": "Persistent Excitation"
       },
       {
         "@id": "urn:ngm:class:stability-analysis",
@@ -135,15 +127,11 @@ alias:: AdaptiveControl, RB-1004-adaptive-control
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:self-tuning-systems",
-        "label": "Self-Tuning Systems"
-      },
-      {
         "@id": "urn:ngm:class:robust-control",
         "label": "Robust Control"
       },
       {
-        "@id": "urn:ngm:class:autonomous-systems",
+        "@id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
       },
       {
@@ -155,27 +143,11 @@ alias:: AdaptiveControl, RB-1004-adaptive-control
       {
         "@id": "urn:ngm:class:parameter-estimation",
         "label": "Parameter Estimation"
-      },
-      {
-        "@id": "urn:ngm:class:lyapunov-stability-theory",
-        "label": "Lyapunov Stability Theory"
-      },
-      {
-        "@id": "urn:ngm:class:recursive-least-squares",
-        "label": "Recursive Least Squares"
       }
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:model-reference-adaptive-control",
-        "label": "Model Reference Adaptive Control"
-      },
-      {
-        "@id": "urn:ngm:class:self-tuning-regulator",
-        "label": "Self-Tuning Regulator"
-      },
-      {
-        "@id": "urn:ngm:class:gain-scheduling",
+        "@id": "urn:ngm:class:planning-and-scheduling",
         "label": "Gain Scheduling"
       }
     ],

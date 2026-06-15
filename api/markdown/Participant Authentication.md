@@ -63,14 +63,7 @@ public:: true
       "label": "Identity Management"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:secure-virtual-events",
-        "label": "Secure Virtual Events"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

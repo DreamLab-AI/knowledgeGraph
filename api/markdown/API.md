@@ -89,23 +89,11 @@ public:: true
       {
         "@id": "urn:ngm:class:service-integration",
         "label": "Service Integration"
-      },
-      {
-        "@id": "urn:ngm:class:third-party-extensions",
-        "label": "Third-Party Extensions"
       }
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:endpoint",
-        "label": "Endpoint"
-      },
-      {
-        "@id": "urn:ngm:class:api-schema",
-        "label": "API Schema"
-      },
-      {
-        "@id": "urn:ngm:class:versioning",
+        "@id": "urn:ngm:class:versioning-system",
         "label": "Versioning"
       }
     ],
@@ -129,7 +117,7 @@ public:: true
         "label": "HTTP"
       },
       {
-        "@id": "urn:ngm:class:json",
+        "@id": "urn:ngm:class:json-data-interchange-format",
         "label": "JSON"
       },
       {
@@ -145,16 +133,6 @@ public:: true
       {
         "@id": "urn:ngm:class:interoperability-standards",
         "label": "Interoperability Standards"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:sdk",
-        "label": "SDK"
-      },
-      {
-        "@id": "urn:ngm:class:abi",
-        "label": "ABI"
       }
     ],
     "bridgesTo": [

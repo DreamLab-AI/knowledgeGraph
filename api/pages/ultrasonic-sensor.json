@@ -18,14 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:ultrasonic-transmitter",
-        "label": "Ultrasonic Transmitter"
-      },
-      {
-        "id": "urn:ngm:class:ultrasonic-receiver",
-        "label": "Ultrasonic Receiver"
-      },
-      {
         "id": "urn:ngm:class:piezoelectric-transducer",
         "label": "Piezoelectric Transducer"
       }
@@ -36,7 +28,7 @@
         "label": "Microcontroller"
       },
       {
-        "id": "urn:ngm:class:embedded-system",
+        "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded System"
       }
     ],
@@ -56,7 +48,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:time-of-flight-measurement",
+        "id": "urn:ngm:class:time-of-flight-sensor",
         "label": "Time-of-Flight Measurement"
       },
       {
@@ -101,10 +93,6 @@
       {
         "id": "urn:ngm:class:echolocation",
         "label": "Echolocation"
-      },
-      {
-        "id": "urn:ngm:class:pulse-echo-technique",
-        "label": "Pulse-Echo Technique"
       }
     ],
     "supports": [
@@ -129,17 +117,13 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:robot-perception-system",
+        "id": "urn:ngm:class:robot-perception",
         "label": "Robot Perception System"
-      },
-      {
-        "id": "urn:ngm:class:obstacle-detection-system",
-        "label": "Obstacle Detection System"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:collaborative-robot",
+        "id": "urn:ngm:class:collaborative-systems-modality-robot",
         "label": "Collaborative Robot"
       }
     ]

@@ -1254,10 +1254,6 @@ public:: true
         "label": "Agent Identity"
       },
       {
-        "@id": "urn:ngm:class:agent-marketplace",
-        "label": "Agent Marketplace"
-      },
-      {
         "@id": "urn:ngm:class:agent-orchestrator",
         "label": "Agent Orchestrator"
       },
@@ -1266,16 +1262,8 @@ public:: true
         "label": "Agent Runtime"
       },
       {
-        "@id": "urn:ngm:class:agentic-commerce-layer",
-        "label": "Agentic Commerce Layer"
-      },
-      {
-        "@id": "urn:ngm:class:browser-agent",
+        "@id": "urn:ngm:class:computer-use-and-browser-agents",
         "label": "Browser Agent"
-      },
-      {
-        "@id": "urn:ngm:class:capability-token",
-        "label": "Capability Token"
       },
       {
         "@id": "urn:ngm:class:tool-registry",
@@ -1294,10 +1282,6 @@ public:: true
       {
         "@id": "urn:ngm:class:authorisation",
         "label": "Authorisation"
-      },
-      {
-        "@id": "urn:ngm:class:discovery-protocol",
-        "label": "Discovery Protocol"
       },
       {
         "@id": "urn:ngm:class:large-language-models",
@@ -1320,49 +1304,7 @@ public:: true
         "label": "Transport Layer"
       }
     ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:agentic-search",
-        "label": "Agentic Search"
-      },
-      {
-        "@id": "urn:ngm:class:api-first-web",
-        "label": "API-First Web"
-      },
-      {
-        "@id": "urn:ngm:class:autonomous-workflows",
-        "label": "Autonomous Workflows"
-      },
-      {
-        "@id": "urn:ngm:class:cross-vendor-agent-interoperability",
-        "label": "Cross-Vendor Agent Interoperability"
-      },
-      {
-        "@id": "urn:ngm:class:long-horizon-task-execution",
-        "label": "Long-Horizon Task Execution"
-      },
-      {
-        "@id": "urn:ngm:class:machine-to-machine-commerce",
-        "label": "Machine-to-Machine Commerce"
-      },
-      {
-        "@id": "urn:ngm:class:personal-ai",
-        "label": "Personal AI"
-      },
-      {
-        "@id": "urn:ngm:class:programmatic-service-composition",
-        "label": "Programmatic Service Composition"
-      }
-    ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:capability-discovery",
-        "label": "Capability Discovery"
-      },
-      {
-        "@id": "urn:ngm:class:elicitation",
-        "label": "Elicitation"
-      },
       {
         "@id": "urn:ngm:class:json-data-interchange-format-rpc",
         "label": "JSON-RPC"
@@ -1370,14 +1312,6 @@ public:: true
       {
         "@id": "urn:ngm:class:server-sent-events",
         "label": "Server-Sent Events"
-      },
-      {
-        "@id": "urn:ngm:class:streaming-responses",
-        "label": "Streaming Responses"
-      },
-      {
-        "@id": "urn:ngm:class:task-lifecycle-management",
-        "label": "Task Lifecycle Management"
       },
       {
         "@id": "urn:ngm:class:tool-schema",
@@ -1398,11 +1332,11 @@ public:: true
         "label": "Google Gemini"
       },
       {
-        "@id": "urn:ngm:class:meta-llama",
+        "@id": "urn:ngm:class:meta-llama-model-family",
         "label": "Meta Llama"
       },
       {
-        "@id": "urn:ngm:class:openai-research-organisation-gpt",
+        "@id": "urn:ngm:class:gpt",
         "label": "OpenAI GPT"
       },
       {
@@ -1424,10 +1358,6 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:agentic-economy",
-        "label": "Agentic Economy"
-      },
-      {
         "@id": "urn:ngm:class:ai-agents",
         "label": "AI Agents"
       },
@@ -1436,7 +1366,7 @@ public:: true
         "label": "Autonomous Agent"
       },
       {
-        "@id": "urn:ngm:class:browser-use",
+        "@id": "urn:ngm:class:browser-automation",
         "label": "Browser Use"
       },
       {
@@ -1452,42 +1382,22 @@ public:: true
         "label": "Multi-Agent Systems"
       },
       {
-        "@id": "urn:ngm:class:zero-click-search",
-        "label": "Zero-Click Search"
-      },
-      {
         "@id": "urn:ngm:class:ai-search",
         "label": "AI Search"
       }
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:booking-agents",
-        "label": "Booking Agents"
-      },
-      {
-        "@id": "urn:ngm:class:coding-copilots",
-        "label": "Coding Copilots"
-      },
-      {
         "@id": "urn:ngm:class:customer-service-automation",
         "label": "Customer Service Automation"
       },
       {
-        "@id": "urn:ngm:class:personal-assistants",
+        "@id": "urn:ngm:class:personal-assistance",
         "label": "Personal Assistants"
-      },
-      {
-        "@id": "urn:ngm:class:procurement-agents",
-        "label": "Procurement Agents"
       },
       {
         "@id": "urn:ngm:class:research-agents",
         "label": "Research Agents"
-      },
-      {
-        "@id": "urn:ngm:class:shopping-agents",
-        "label": "Shopping Agents"
       },
       {
         "@id": "urn:ngm:class:software-engineering-agents",
@@ -1495,10 +1405,6 @@ public:: true
       }
     ],
     "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:agntcy",
-        "label": "AGNTCY"
-      },
       {
         "@id": "urn:ngm:class:anthropic",
         "label": "Anthropic"

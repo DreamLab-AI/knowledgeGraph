@@ -37,48 +37,129 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:directive-compliance", "label": "Directive Compliance"},
-    {"@id": "urn:ngm:class:instruction-adherence", "label": "Instruction Adherence"}
+    {
+      "@id": "urn:ngm:class:directive-compliance",
+      "label": "Directive Compliance"
+    },
+    {
+      "@id": "urn:ngm:class:instruction-adherence",
+      "label": "Instruction Adherence"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:instruction-tuning", "label": "Instruction Tuning"},
-      {"@id": "urn:ngm:class:rlhf", "label": "RLHF"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine Tuning"}
+      {
+        "@id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:supervised-fine-tuning",
+        "label": "Supervised Fine Tuning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"},
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
-      {"@id": "urn:ngm:class:autonomous-planning", "label": "Autonomous Planning"}
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:planning",
+        "label": "Autonomous Planning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:natural-language-understanding", "label": "Natural Language Understanding"},
-      {"@id": "urn:ngm:class:context-window", "label": "Context Window"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+      {
+        "@id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:chain-of-thought-reasoning", "label": "Chain-of-Thought Reasoning"},
-      {"@id": "urn:ngm:class:structured-output", "label": "Structured Output"},
-      {"@id": "urn:ngm:class:system-prompt", "label": "System Prompt"},
-      {"@id": "urn:ngm:class:direct-preference-optimisation", "label": "Direct Preference Optimisation"}
+      {
+        "@id": "urn:ngm:class:chain-of-thought-reasoning",
+        "label": "Chain-of-Thought Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:structured-output",
+        "label": "Structured Output"
+      },
+      {
+        "@id": "urn:ngm:class:system-prompt",
+        "label": "System Prompt"
+      },
+      {
+        "@id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:sycophancy", "label": "Sycophancy"},
-      {"@id": "urn:ngm:class:specification-gaming", "label": "Specification Gaming"}
+      {
+        "@id": "urn:ngm:class:sycophancy",
+        "label": "Sycophancy"
+      },
+      {
+        "@id": "urn:ngm:class:specification-gaming",
+        "label": "Specification Gaming"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:alignment", "label": "Alignment"},
-      {"@id": "urn:ngm:class:ifeval", "label": "IFEval"},
-      {"@id": "urn:ngm:class:constitutional-ai", "label": "Constitutional AI"},
-      {"@id": "urn:ngm:class:helpfulness", "label": "Helpfulness"}
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:alignment",
+        "label": "Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:ifeval",
+        "label": "IFEval"
+      },
+      {
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI"
+      },
+      {
+        "@id": "urn:ngm:class:helpfulness",
+        "label": "Helpfulness"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:robotic-task-planning", "label": "Robotic Task Planning"}
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:task-planning",
+        "label": "Robotic Task Planning"
+      }
     ]
   },
   "quality": 0.74,

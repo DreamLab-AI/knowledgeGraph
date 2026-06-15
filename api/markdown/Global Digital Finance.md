@@ -67,20 +67,12 @@ public:: true
       {
         "@id": "urn:ngm:class:code-of-conduct",
         "label": "Code of Conduct"
-      },
-      {
-        "@id": "urn:ngm:class:crypto-asset-taxonomy",
-        "label": "Crypto Asset Taxonomy"
       }
     ],
     "requires": [
       {
         "@id": "urn:ngm:class:digital-asset",
         "label": "Digital Asset"
-      },
-      {
-        "@id": "urn:ngm:class:membership-organisation",
-        "label": "Membership Organisation"
       }
     ],
     "enables": [
@@ -133,10 +125,6 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:mandatory-regulation",
-        "label": "Mandatory Regulation"
-      },
-      {
         "@id": "urn:ngm:class:centralised-finance",
         "label": "Centralised Finance"
       }
@@ -149,10 +137,6 @@ public:: true
       {
         "@id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
-      },
-      {
-        "@id": "urn:ngm:class:open-finance",
-        "label": "Open Finance"
       }
     ],
     "relatedTo": [

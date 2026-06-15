@@ -48,7 +48,7 @@
         "label": "Oracle"
       },
       {
-        "id": "urn:ngm:class:cryptographic-wallet",
+        "id": "urn:ngm:class:wallet",
         "label": "Cryptographic Wallet"
       }
     ],
@@ -111,7 +111,7 @@
         "label": "Stablecoin"
       },
       {
-        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       },
       {

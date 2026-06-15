@@ -110,16 +110,6 @@ public:: true
         "label": "ETSI Domain AI + Human Interface"
       }
     ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:ai-service-classification",
-        "label": "AI Service Classification"
-      },
-      {
-        "@id": "urn:ngm:class:intelligence-layer-categorization",
-        "label": "Intelligence Layer Categorization"
-      }
-    ],
     "partOf": [
       {
         "@id": "urn:ngm:class:etsi-domain-taxonomy",

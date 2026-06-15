@@ -121,7 +121,7 @@ public:: true
         "label": "SAML"
       },
       {
-        "@id": "urn:ngm:class:openid-connect",
+        "@id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
       },
       {
@@ -131,7 +131,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -147,16 +147,6 @@ public:: true
       {
         "@id": "urn:ngm:class:multi-tenancy",
         "label": "Multi-Tenancy"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:centralised-authentication",
-        "label": "Centralised Authentication"
-      },
-      {
-        "@id": "urn:ngm:class:siloed-system",
-        "label": "Siloed System"
       }
     ],
     "relatedTo": [
@@ -179,7 +169,7 @@ public:: true
         "label": "Decentralised Identifier"
       },
       {
-        "@id": "urn:ngm:class:verifiable-credential",
+        "@id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       }
     ]

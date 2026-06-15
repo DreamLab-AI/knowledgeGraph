@@ -94,10 +94,6 @@ public:: true
         "label": "Inter-Annotator Agreement"
       },
       {
-        "@id": "urn:ngm:class:annotation-guidelines",
-        "label": "Annotation Guidelines"
-      },
-      {
         "@id": "urn:ngm:class:quality-control",
         "label": "Quality Control"
       }
@@ -110,20 +106,12 @@ public:: true
       {
         "@id": "urn:ngm:class:human-annotator",
         "label": "Human Annotator"
-      },
-      {
-        "@id": "urn:ngm:class:label-taxonomy",
-        "label": "Label Taxonomy"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:crowdsourcing",
         "label": "Crowdsourcing"
-      },
-      {
-        "@id": "urn:ngm:class:weak-supervision",
-        "label": "Weak Supervision"
       },
       {
         "@id": "urn:ngm:class:active-learning",

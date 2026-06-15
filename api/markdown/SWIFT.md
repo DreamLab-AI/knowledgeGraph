@@ -69,21 +69,17 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:swift-messaging-network",
+        "@id": "urn:ngm:class:swift-messaging",
         "label": "SWIFT Messaging Network"
       },
       {
         "@id": "urn:ngm:class:business-identifier-code",
         "label": "Business Identifier Code"
-      },
-      {
-        "@id": "urn:ngm:class:swift-gpi",
-        "label": "SWIFT GPI"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:global-payment-infrastructure",
+        "@id": "urn:ngm:class:payment-infrastructure",
         "label": "Global Payment Infrastructure"
       }
     ],
@@ -93,11 +89,7 @@ public:: true
         "label": "Correspondent Banking"
       },
       {
-        "@id": "urn:ngm:class:financial-institution-membership",
-        "label": "Financial Institution Membership"
-      },
-      {
-        "@id": "urn:ngm:class:secure-messaging-protocol",
+        "@id": "urn:ngm:class:secure-messaging",
         "label": "Secure Messaging Protocol"
       }
     ],
@@ -135,15 +127,11 @@ public:: true
         "label": "ISO 20022"
       },
       {
-        "@id": "urn:ngm:class:mt-message-format",
+        "@id": "urn:ngm:class:message-format",
         "label": "MT Message Format"
       }
     ],
     "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:iso-9362",
-        "label": "ISO 9362"
-      },
       {
         "@id": "urn:ngm:class:bank-for-international-settlements",
         "label": "Bank for International Settlements"
@@ -155,7 +143,7 @@ public:: true
         "label": "Anti-Money Laundering"
       },
       {
-        "@id": "urn:ngm:class:financial-sanctions-compliance",
+        "@id": "urn:ngm:class:sanctions-compliance",
         "label": "Financial Sanctions Compliance"
       }
     ],
@@ -167,16 +155,6 @@ public:: true
       {
         "@id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
-      }
-    ],
-    "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:blockchain-based-settlement",
-        "label": "Blockchain-Based Settlement"
-      },
-      {
-        "@id": "urn:ngm:class:geopolitical-financial-sanctions",
-        "label": "Geopolitical Financial Sanctions"
       }
     ],
     "relatedTo": [

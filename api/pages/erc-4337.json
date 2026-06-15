@@ -18,25 +18,13 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:useroperation",
-        "label": "UserOperation"
-      },
-      {
         "id": "urn:ngm:class:bundler",
         "label": "Bundler"
-      },
-      {
-        "id": "urn:ngm:class:entrypoint-contract",
-        "label": "EntryPoint Contract"
-      },
-      {
-        "id": "urn:ngm:class:paymaster",
-        "label": "Paymaster"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:user-operation-mempool",
+        "id": "urn:ngm:class:mempool",
         "label": "User Operation Mempool"
       },
       {
@@ -85,10 +73,6 @@
       {
         "id": "urn:ngm:class:externally-owned-account",
         "label": "Externally Owned Account"
-      },
-      {
-        "id": "urn:ngm:class:eip-2938",
-        "label": "EIP-2938"
       }
     ],
     "bridgesTo": [
@@ -126,10 +110,6 @@
       {
         "id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum Smart Contract Platform"
-      },
-      {
-        "id": "urn:ngm:class:erc-7579",
-        "label": "ERC-7579"
       },
       {
         "id": "urn:ngm:class:eip-7702",

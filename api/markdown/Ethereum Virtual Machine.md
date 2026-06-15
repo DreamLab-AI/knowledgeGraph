@@ -62,20 +62,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:evm-opcode",
-        "label": "EVM Opcode"
-      },
-      {
         "@id": "urn:ngm:class:evm-stack",
         "label": "EVM Stack"
       },
       {
         "@id": "urn:ngm:class:evm-memory",
         "label": "EVM Memory"
-      },
-      {
-        "@id": "urn:ngm:class:world-state",
-        "label": "World State"
       }
     ],
     "requires": [
@@ -126,10 +118,6 @@ public:: true
         "label": "Solidity"
       },
       {
-        "@id": "urn:ngm:class:ethereum-bytecode",
-        "label": "Ethereum Bytecode"
-      },
-      {
         "@id": "urn:ngm:class:keccak-256",
         "label": "Keccak-256"
       }
@@ -152,10 +140,6 @@ public:: true
       {
         "@id": "urn:ngm:class:move-virtual-machine",
         "label": "Move Virtual Machine"
-      },
-      {
-        "@id": "urn:ngm:class:solana-sealevel",
-        "label": "Solana Sealevel"
       }
     ],
     "bridgesTo": [

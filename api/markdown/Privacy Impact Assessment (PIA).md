@@ -138,38 +138,14 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:compliance-verification-system",
+        "@id": "urn:ngm:class:compliance-verification",
         "label": "Compliance Verification System"
-      },
-      {
-        "@id": "urn:ngm:class:impact-analysis-framework",
-        "label": "Impact Analysis Framework"
-      },
-      {
-        "@id": "urn:ngm:class:mitigation-strategy-generator",
-        "label": "Mitigation Strategy Generator"
-      },
-      {
-        "@id": "urn:ngm:class:risk-identification-module",
-        "label": "Risk Identification Module"
-      },
-      {
-        "@id": "urn:ngm:class:stakeholder-consultation-engine",
-        "label": "Stakeholder Consultation Engine"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:data-flow-mapping",
-        "label": "Data Flow Mapping"
-      },
-      {
         "@id": "urn:ngm:class:privacy-requirements",
         "label": "Privacy Requirements"
-      },
-      {
-        "@id": "urn:ngm:class:regulatory-compliance-database",
-        "label": "Regulatory Compliance Database"
       },
       {
         "@id": "urn:ngm:class:risk-assessment-methodology",
@@ -196,16 +172,6 @@ public:: true
       {
         "@id": "urn:ngm:class:transparent-data-processing",
         "label": "Transparent Data Processing"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:data-protection-management-system",
-        "label": "Data Protection Management System"
-      },
-      {
-        "@id": "urn:ngm:class:privacy-governance-framework",
-        "label": "Privacy Governance Framework"
       }
     ]
   },

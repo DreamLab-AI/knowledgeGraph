@@ -167,11 +167,11 @@ alias:: PathPlanning, RB-1016-path-planning
         "label": "Navigation"
       },
       {
-        "@id": "urn:ngm:class:autonomous-systems",
+        "@id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
       },
       {
-        "@id": "urn:ngm:class:autonomous-vehicles",
+        "@id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
       }
     ],
@@ -185,35 +185,17 @@ alias:: PathPlanning, RB-1016-path-planning
         "label": "Dijkstra Algorithm"
       },
       {
-        "@id": "urn:ngm:class:a-star-search",
+        "@id": "urn:ngm:class:search-algorithm",
         "label": "A* Search"
       },
       {
         "@id": "urn:ngm:class:probabilistic-roadmap",
         "label": "Probabilistic Roadmap"
-      },
-      {
-        "@id": "urn:ngm:class:potential-fields",
-        "label": "Potential Fields"
-      }
-    ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:global-path-planning",
-        "label": "Global Path Planning"
-      },
-      {
-        "@id": "urn:ngm:class:local-path-planning",
-        "label": "Local Path Planning"
-      },
-      {
-        "@id": "urn:ngm:class:path-smoothing",
-        "label": "Path Smoothing"
       }
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:rb-1019-obstacle-avoidance",
+        "@id": "urn:ngm:class:obstacle-avoidance",
         "label": "Obstacle Avoidance"
       },
       {
@@ -221,28 +203,18 @@ alias:: PathPlanning, RB-1016-path-planning
         "label": "Graph Search"
       },
       {
-        "@id": "urn:ngm:class:rb-1003-optimal-control",
+        "@id": "urn:ngm:class:optimal-control",
         "label": "Optimal Control"
       }
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:mobile-robots",
+        "@id": "urn:ngm:class:mobile-robot",
         "label": "Mobile Robots"
-      },
-      {
-        "@id": "urn:ngm:class:manipulators",
-        "label": "Manipulators"
       },
       {
         "@id": "urn:ngm:class:drone-navigation",
         "label": "Drone Navigation"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:reactive-navigation",
-        "label": "Reactive Navigation"
       }
     ],
     "relatedTo": [
@@ -253,10 +225,6 @@ alias:: PathPlanning, RB-1016-path-planning
       {
         "@id": "urn:ngm:class:multi-robot-coordination",
         "label": "Multi-Robot Coordination"
-      },
-      {
-        "@id": "urn:ngm:class:coverage-path-planning",
-        "label": "Coverage Path Planning"
       }
     ],
     "bridgesTo": [

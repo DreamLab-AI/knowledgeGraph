@@ -106,10 +106,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:content-access",
-        "label": "Content Access"
-      },
-      {
         "@id": "urn:ngm:class:digital-preservation",
         "label": "Digital Preservation"
       },

@@ -370,16 +370,8 @@ public:: true
         "label": "Inference Algorithm"
       },
       {
-        "@id": "urn:ngm:class:latent-variable",
-        "label": "Latent Variable"
-      },
-      {
         "@id": "urn:ngm:class:likelihood-function",
         "label": "Likelihood Function"
-      },
-      {
-        "@id": "urn:ngm:class:nonconformity-score",
-        "label": "Nonconformity Score"
       },
       {
         "@id": "urn:ngm:class:posterior-distribution",
@@ -388,10 +380,6 @@ public:: true
       {
         "@id": "urn:ngm:class:prior-distribution",
         "label": "Prior Distribution"
-      },
-      {
-        "@id": "urn:ngm:class:probabilistic-programming-language",
-        "label": "Probabilistic Programming Language"
       }
     ],
     "requires": [
@@ -524,10 +512,6 @@ public:: true
         "label": "Bayesian Deep Learning"
       },
       {
-        "@id": "urn:ngm:class:causal-model",
-        "label": "Causal Model"
-      },
-      {
         "@id": "urn:ngm:class:conformal-prediction",
         "label": "Conformal Prediction"
       },
@@ -542,10 +526,6 @@ public:: true
       {
         "@id": "urn:ngm:class:normalising-flows",
         "label": "Normalising Flows"
-      },
-      {
-        "@id": "urn:ngm:class:score-based-diffusion",
-        "label": "Score-Based Diffusion"
       }
     ],
     "supports": [
@@ -562,10 +542,6 @@ public:: true
         "label": "Drug Discovery"
       },
       {
-        "@id": "urn:ngm:class:financial-risk-modelling",
-        "label": "Financial Risk Modelling"
-      },
-      {
         "@id": "urn:ngm:class:medical-imaging",
         "label": "Medical Imaging"
       },
@@ -580,28 +556,8 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:aistats",
-        "label": "AISTATS"
-      },
-      {
-        "@id": "urn:ngm:class:bayesian-analysis-journal",
-        "label": "Bayesian Analysis Journal"
-      },
-      {
         "@id": "urn:ngm:class:journal-of-machine-learning-research",
         "label": "Journal of Machine Learning Research"
-      },
-      {
-        "@id": "urn:ngm:class:journal-of-the-american-statistical-association",
-        "label": "Journal of the American Statistical Association"
-      },
-      {
-        "@id": "urn:ngm:class:neur-ips-probabilistic-track",
-        "label": "NeurIPS Probabilistic Track"
-      },
-      {
-        "@id": "urn:ngm:class:uai-conference",
-        "label": "UAI Conference"
       }
     ]
   },

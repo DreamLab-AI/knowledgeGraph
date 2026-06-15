@@ -68,10 +68,6 @@ public:: true
       {
         "@id": "urn:ngm:class:pull-request",
         "label": "Pull Request"
-      },
-      {
-        "@id": "urn:ngm:class:coding-standards",
-        "label": "Coding Standards"
       }
     ],
     "enables": [
@@ -86,10 +82,6 @@ public:: true
       {
         "@id": "urn:ngm:class:continuous-integration",
         "label": "Continuous Integration"
-      },
-      {
-        "@id": "urn:ngm:class:secure-development-lifecycle",
-        "label": "Secure Development Lifecycle"
       }
     ],
     "partOf": [
@@ -106,53 +98,23 @@ public:: true
       {
         "@id": "urn:ngm:class:static-analysis",
         "label": "Static Analysis"
-      },
-      {
-        "@id": "urn:ngm:class:diff-algorithm",
-        "label": "Diff Algorithm"
-      },
-      {
-        "@id": "urn:ngm:class:inline-commenting",
-        "label": "Inline Commenting"
       }
     ],
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:pair-programming",
         "label": "Pair Programming"
-      },
-      {
-        "@id": "urn:ngm:class:formal-inspection",
-        "label": "Formal Inspection"
       }
     ],
     "supports": [
       {
         "@id": "urn:ngm:class:software-testing",
         "label": "Software Testing"
-      },
-      {
-        "@id": "urn:ngm:class:technical-debt-management",
-        "label": "Technical Debt Management"
-      },
-      {
-        "@id": "urn:ngm:class:code-maintainability",
-        "label": "Code Maintainability"
-      }
-    ],
-    "dependsOn": [
-      {
-        "@id": "urn:ngm:class:collaborative-workflow",
-        "label": "Collaborative Workflow"
-      },
-      {
-        "@id": "urn:ngm:class:source-code-management",
-        "label": "Source Code Management"
       }
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:agile-development",
+        "@id": "urn:ngm:class:agile-software-development",
         "label": "Agile Development"
       },
       {

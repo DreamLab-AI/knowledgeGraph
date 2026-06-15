@@ -23,61 +23,159 @@ public:: true
   "definition": "MLOps (Machine Learning Operations) is the set of practices, tools, and cultural norms that operationalise machine learning models at production scale by applying DevOps and Site Reliability Engineering principles to the full ML lifecycle. It covers end-to-end automation of ML pipelines — data ingestion, feature engineering, model training, evaluation, deployment, serving, and continuous retraining — and addresses the unique challenge that code, data, and model weights all evolve independently and must be versioned, tested, and governed together. MLOps introduces specialised artefacts such as model registries, feature stores, and experiment trackers that have no direct analogue in traditional software delivery. The discipline bridges the organisational gap between data science teams and production engineering, enabling reliable, auditable, and scalable model delivery at the pace business demands.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:model-registry", "label": "Model Registry"},
-      {"@id": "urn:ngm:class:feature-store", "label": "Feature Store"},
-      {"@id": "urn:ngm:class:experiment-tracking", "label": "Experiment Tracking"},
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"}
+      {
+        "@id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      },
+      {
+        "@id": "urn:ngm:class:feature-store",
+        "label": "Feature Store"
+      },
+      {
+        "@id": "urn:ngm:class:experiment-tracking",
+        "label": "Experiment Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:ai-lifecycle", "label": "AI Lifecycle"}
+      {
+        "@id": "urn:ngm:class:ai-lifecycle",
+        "label": "AI Lifecycle"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
-      {"@id": "urn:ngm:class:data-versioning", "label": "Data Versioning"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"}
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:data-versioning",
+        "label": "Data Versioning"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-deployment", "label": "AI Deployment"},
-      {"@id": "urn:ngm:class:inference", "label": "Inference"},
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:continuous-training", "label": "Continuous Training"},
-      {"@id": "urn:ngm:class:model-monitoring", "label": "Model Monitoring"}
+      {
+        "@id": "urn:ngm:class:ai-deployment",
+        "label": "AI Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-training",
+        "label": "Continuous Training"
+      },
+      {
+        "@id": "urn:ngm:class:model-monitoring",
+        "label": "Model Monitoring"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"},
-      {"@id": "urn:ngm:class:container", "label": "Container"},
-      {"@id": "urn:ngm:class:workflow-orchestration", "label": "Workflow Orchestration"},
-      {"@id": "urn:ngm:class:ci-cd", "label": "CI/CD"}
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:container",
+        "label": "Container"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-orchestration",
+        "label": "Workflow Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:ci-cd-automation",
+        "label": "CI/CD"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:model-explainability", "label": "Model Explainability"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:reproducibility", "label": "Reproducibility"}
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Model Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:ai-monitoring", "label": "AI Monitoring"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-monitoring",
+        "label": "AI Monitoring"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:devops", "label": "DevOps"}
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:data-engineering", "label": "Data Engineering"},
-      {"@id": "urn:ngm:class:platform-engineering", "label": "Platform Engineering"}
+      {
+        "@id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:platform-engineering",
+        "label": "Platform Engineering"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-drift", "label": "Data Drift"},
-      {"@id": "urn:ngm:class:ab-testing", "label": "A/B Testing"},
-      {"@id": "urn:ngm:class:model-serving", "label": "Model Serving"}
+      {
+        "@id": "urn:ngm:class:data-drift",
+        "label": "Data Drift"
+      },
+      {
+        "@id": "urn:ngm:class:ab-testing",
+        "label": "A/B Testing"
+      },
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:machine-learning-operations", "label": "Machine Learning Operations"}
+    {
+      "@id": "urn:ngm:class:machine-learning-operations",
+      "label": "Machine Learning Operations"
+    }
   ],
   "quality": 0.74,
   "provenance": {

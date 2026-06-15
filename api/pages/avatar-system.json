@@ -22,15 +22,11 @@
         "label": "Animation Controller"
       },
       {
-        "id": "urn:ngm:class:expression-system",
-        "label": "Expression System"
-      },
-      {
         "id": "urn:ngm:class:physics-simulation",
         "label": "Physics Simulation"
       },
       {
-        "id": "urn:ngm:class:level-of-detail-system",
+        "id": "urn:ngm:class:level-of-detail",
         "label": "Level of Detail System"
       }
     ],
@@ -38,10 +34,6 @@
       {
         "id": "urn:ngm:class:animation-controller",
         "label": "Animation Controller"
-      },
-      {
-        "id": "urn:ngm:class:input-processing",
-        "label": "Input Processing"
       },
       {
         "id": "urn:ngm:class:3-d-rendering-engine",
@@ -68,19 +60,15 @@
       {
         "id": "urn:ngm:class:nonverbal-communication",
         "label": "Nonverbal Communication"
-      },
-      {
-        "id": "urn:ngm:class:identity-expression",
-        "label": "Identity Expression"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:real-time-graphics-pipeline",
+        "id": "urn:ngm:class:graphics-pipeline",
         "label": "Real-Time Graphics Pipeline"
       },
       {
-        "id": "urn:ngm:class:motion-capture-system",
+        "id": "urn:ngm:class:motion-capture",
         "label": "Motion Capture System"
       },
       {
@@ -102,20 +90,12 @@
       {
         "id": "urn:ngm:class:non-player-character",
         "label": "Non Player Character"
-      },
-      {
-        "id": "urn:ngm:class:static-user-profile",
-        "label": "Static User Profile"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:digital-identity",
         "label": "Digital Identity"
-      },
-      {
-        "id": "urn:ngm:class:nft-wearable",
-        "label": "NFT Wearable"
       }
     ],
     "uses": [
@@ -126,10 +106,6 @@
       {
         "id": "urn:ngm:class:eye-tracking",
         "label": "Eye Tracking"
-      },
-      {
-        "id": "urn:ngm:class:voice-driven-lip-sync",
-        "label": "Voice Driven Lip Sync"
       }
     ],
     "supports": [
@@ -138,7 +114,7 @@
         "label": "Avatar Customization"
       },
       {
-        "id": "urn:ngm:class:cross-platform-avatar-interoperability",
+        "id": "urn:ngm:class:avatar-interoperability",
         "label": "Cross-Platform Avatar Interoperability"
       }
     ],
@@ -161,10 +137,6 @@
       {
         "id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
-      },
-      {
-        "id": "urn:ngm:class:virtual-character-system",
-        "label": "Virtual Character System"
       }
     ]
   },

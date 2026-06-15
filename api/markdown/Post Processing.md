@@ -57,22 +57,6 @@ alias:: Post-Processing, Post-processing
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:bloom",
-        "label": "Bloom"
-      },
-      {
-        "@id": "urn:ngm:class:depth-of-field",
-        "label": "Depth of Field"
-      },
-      {
-        "@id": "urn:ngm:class:motion-blur",
-        "label": "Motion Blur"
-      },
-      {
-        "@id": "urn:ngm:class:tone-mapping",
-        "label": "Tone Mapping"
-      },
-      {
         "@id": "urn:ngm:class:colour-grading",
         "label": "Colour Grading"
       },
@@ -81,7 +65,7 @@ alias:: Post-Processing, Post-processing
         "label": "Anti-Aliasing"
       },
       {
-        "@id": "urn:ngm:class:screen-space-ambient-occlusion",
+        "@id": "urn:ngm:class:ambient-occlusion",
         "label": "Screen Space Ambient Occlusion"
       }
     ],
@@ -110,10 +94,6 @@ alias:: Post-Processing, Post-processing
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:visual-fidelity",
-        "label": "Visual Fidelity"
-      },
       {
         "@id": "urn:ngm:class:cinematic-rendering",
         "label": "Cinematic Rendering"
@@ -175,20 +155,12 @@ alias:: Post-Processing, Post-processing
       {
         "@id": "urn:ngm:class:deferred-rendering",
         "label": "Deferred Rendering"
-      },
-      {
-        "@id": "urn:ngm:class:high-dynamic-range",
-        "label": "High Dynamic Range"
       }
     ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:neural-rendering",
         "label": "Neural Rendering"
-      },
-      {
-        "@id": "urn:ngm:class:machine-learning-supersampling",
-        "label": "Machine Learning Supersampling"
       }
     ]
   },

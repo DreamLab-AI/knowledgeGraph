@@ -101,7 +101,7 @@ public:: true
         "label": "Robot Navigation"
       },
       {
-        "@id": "urn:ngm:class:autonomous-mobile-robot",
+        "@id": "urn:ngm:class:autonomous-mobile-robots",
         "label": "Autonomous Mobile Robot"
       }
     ],
@@ -149,19 +149,13 @@ public:: true
         "label": "Gaussian Distribution"
       },
       {
-        "@id": "urn:ngm:class:monte-carlo-method",
+        "@id": "urn:ngm:class:monte-carlo-methods",
         "label": "Monte Carlo Method"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:deterministic-robotics",
-        "label": "Deterministic Robotics"
       }
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:simultaneous-localization-and-mapping",
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
         "label": "Simultaneous Localization and Mapping"
       },
       {

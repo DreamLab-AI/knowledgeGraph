@@ -138,7 +138,7 @@ public:: true
         "label": "Proof of Stake"
       },
       {
-        "@id": "urn:ngm:class:blockchain-scalability-trilemma",
+        "@id": "urn:ngm:class:blockchain-scalability",
         "label": "Blockchain Scalability Trilemma"
       },
       {
@@ -170,7 +170,7 @@ public:: true
         "label": "Ethereum Improvement Proposal"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-improvement-proposal",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
         "label": "Bitcoin Improvement Proposal"
       }
     ]

@@ -131,10 +131,6 @@
         "label": "Ontology Alignment"
       },
       {
-        "id": "urn:ngm:class:schema-matching",
-        "label": "Schema Matching"
-      },
-      {
         "id": "urn:ngm:class:coordinate-system",
         "label": "Coordinate System"
       }

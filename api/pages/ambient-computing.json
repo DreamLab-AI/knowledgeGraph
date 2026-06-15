@@ -19,10 +19,6 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:low-power-wireless",
-        "label": "Low Power Wireless"
-      },
-      {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
       },
@@ -47,10 +43,6 @@
       {
         "id": "urn:ngm:class:smart-building",
         "label": "Smart Building"
-      },
-      {
-        "id": "urn:ngm:class:proactive-computing",
-        "label": "Proactive Computing"
       }
     ],
     "dependsOn": [
@@ -65,10 +57,6 @@
     ],
     "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:personal-computing",
-        "label": "Personal Computing"
-      },
       {
         "id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing"
@@ -132,11 +120,11 @@
         "label": "IoT"
       },
       {
-        "id": "urn:ngm:class:industrial-iot",
+        "id": "urn:ngm:class:industrial-io-t",
         "label": "Industrial IoT"
       },
       {
-        "id": "urn:ngm:class:privacy-preserving-computing",
+        "id": "urn:ngm:class:privacy-preserving",
         "label": "Privacy Preserving Computing"
       }
     ]

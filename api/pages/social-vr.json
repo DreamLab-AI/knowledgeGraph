@@ -26,7 +26,7 @@
         "label": "Spatial Audio"
       },
       {
-        "id": "urn:ngm:class:virtual-meeting-space",
+        "id": "urn:ngm:class:virtual-meeting",
         "label": "Virtual Meeting Space"
       },
       {
@@ -36,7 +36,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:vr-headset",
+        "id": "urn:ngm:class:virtual-reality-vr",
         "label": "VR Headset"
       },
       {
@@ -68,11 +68,11 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:3d-rendering-engine",
+        "id": "urn:ngm:class:3-d-rendering-engine",
         "label": "3D Rendering Engine"
       },
       {
-        "id": "urn:ngm:class:voice-chat",
+        "id": "urn:ngm:class:voice-interaction",
         "label": "Voice Chat"
       }
     ],

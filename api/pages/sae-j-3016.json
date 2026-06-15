@@ -83,7 +83,7 @@
         "label": "Object and Event Detection and Response"
       },
       {
-        "id": "urn:ngm:class:human-machine-interface",
+        "id": "urn:ngm:class:human-computer-interface",
         "label": "Human-Machine Interface"
       }
     ],

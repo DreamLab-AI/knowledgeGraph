@@ -60,18 +60,9 @@
       {
         "id": "urn:ngm:class:model-selection",
         "label": "Model Selection"
-      },
-      {
-        "id": "urn:ngm:class:sequential-decision-making",
-        "label": "Sequential Decision-Making"
       }
     ],
-    "dependsOn": [
-      {
-        "id": "urn:ngm:class:conditional-probability",
-        "label": "Conditional Probability"
-      }
-    ],
+    "dependsOn": [],
     "implements": [
       {
         "id": "urn:ngm:class:bayes-theorem",
@@ -79,10 +70,6 @@
       }
     ],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:frequentist-statistics",
-        "label": "Frequentist Statistics"
-      },
       {
         "id": "urn:ngm:class:maximum-likelihood-estimation",
         "label": "Maximum Likelihood Estimation"
@@ -130,7 +117,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:probabilistic-graphical-model",
+        "id": "urn:ngm:class:graphical-model",
         "label": "Probabilistic Graphical Model"
       },
       {

@@ -62,52 +62,121 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:baker", "label": "Baker"},
-      {"@id": "urn:ngm:class:delegation", "label": "Delegation"},
-      {"@id": "urn:ngm:class:security-deposit", "label": "Security Deposit"}
+      {
+        "@id": "urn:ngm:class:delegation",
+        "label": "Delegation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
-      {"@id": "urn:ngm:class:epoch", "label": "Epoch"},
-      {"@id": "urn:ngm:class:stake-snapshot", "label": "Stake Snapshot"}
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "@id": "urn:ngm:class:epoch",
+        "label": "Epoch"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:tokenomics-governance", "label": "Tokenomics Governance"},
-      {"@id": "urn:ngm:class:decentralized-autonomous-organization", "label": "Decentralized Autonomous Organization"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-Chain Governance"},
-      {"@id": "urn:ngm:class:staking-reward", "label": "Staking Reward"}
+      {
+        "@id": "urn:ngm:class:tokenomics-governance",
+        "label": "Tokenomics Governance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:staking-reward",
+        "label": "Staking Reward"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:slashing", "label": "Slashing"}
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:slashing",
+        "label": "Slashing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"},
-      {"@id": "urn:ngm:class:validator-set", "label": "Validator Set"},
-      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"}
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "@id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:delegated-proof-of-stake", "label": "Delegated Proof Of Stake"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof Of Stake"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralized-finance", "label": "Decentralized Finance"},
-      {"@id": "urn:ngm:class:governance", "label": "Governance"}
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:proof-of-stake-sustainability", "label": "Proof Of Stake Sustainability"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:tezos", "label": "Tezos"},
-      {"@id": "urn:ngm:class:liquid-staking", "label": "Liquid Staking"}
+      {
+        "@id": "urn:ngm:class:proof-of-stake-sustainability",
+        "label": "Proof Of Stake Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:tezos",
+        "label": "Tezos"
+      },
+      {
+        "@id": "urn:ngm:class:liquid-staking",
+        "label": "Liquid Staking"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:lpos", "label": "LPoS"}
+    {
+      "@id": "urn:ngm:class:lpos",
+      "label": "LPoS"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

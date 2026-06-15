@@ -22,16 +22,8 @@
         "label": "Demographic Parity"
       },
       {
-        "id": "urn:ngm:class:equalised-odds",
-        "label": "Equalised Odds"
-      },
-      {
         "id": "urn:ngm:class:calibration",
         "label": "Calibration"
-      },
-      {
-        "id": "urn:ngm:class:pareto-frontier",
-        "label": "Pareto Frontier"
       }
     ],
     "requires": [
@@ -53,10 +45,6 @@
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:fair-machine-learning",
-        "label": "Fair Machine Learning"
-      },
       {
         "id": "urn:ngm:class:algorithmic-accountability",
         "label": "Algorithmic Accountability"
@@ -85,10 +73,6 @@
       {
         "id": "urn:ngm:class:algorithmic-bias-and-variance",
         "label": "Algorithmic Bias and Variance"
-      },
-      {
-        "id": "urn:ngm:class:accuracy-maximisation",
-        "label": "Accuracy Maximisation"
       }
     ],
     "bridgesTo": [

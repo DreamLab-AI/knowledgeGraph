@@ -61,58 +61,125 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:latency-measurement", "label": "Latency Measurement"},
-      {"@id": "urn:ngm:class:throughput-measurement", "label": "Throughput Measurement"},
-      {"@id": "urn:ngm:class:resource-utilisation", "label": "Resource Utilisation"},
-      {"@id": "urn:ngm:class:workload-profiling", "label": "Workload Profiling"}
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency Measurement"
+      },
+      {
+        "@id": "urn:ngm:class:resource-efficiency",
+        "label": "Resource Utilisation"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:software-testing", "label": "Software Testing"},
-      {"@id": "urn:ngm:class:quality-assurance", "label": "Quality Assurance"}
+      {
+        "@id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      },
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:load-testing", "label": "Load Testing"},
-      {"@id": "urn:ngm:class:observability", "label": "Observability"},
-      {"@id": "urn:ngm:class:profiling", "label": "Profiling"}
+      {
+        "@id": "urn:ngm:class:testing",
+        "label": "Load Testing"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "@id": "urn:ngm:class:profiling",
+        "label": "Profiling"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:performance-optimization", "label": "Performance Optimization"},
-      {"@id": "urn:ngm:class:capacity-planning", "label": "Capacity Planning"},
-      {"@id": "urn:ngm:class:vendor-evaluation", "label": "Vendor Evaluation"}
+      {
+        "@id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:capacity-planning",
+        "label": "Capacity Planning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:metrics-collection", "label": "Metrics Collection"},
-      {"@id": "urn:ngm:class:statistical-analysis", "label": "Statistical Analysis"}
+      {
+        "@id": "urn:ngm:class:metrics-collection",
+        "label": "Metrics Collection"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-analysis",
+        "label": "Statistical Analysis"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:spec-benchmarks", "label": "SPEC Benchmarks"},
-      {"@id": "urn:ngm:class:mlperf", "label": "MLPerf"}
+      {
+        "@id": "urn:ngm:class:benchmarks",
+        "label": "SPEC Benchmarks"
+      },
+      {
+        "@id": "urn:ngm:class:mlperf",
+        "label": "MLPerf"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:time-series-data", "label": "Time-Series Data"},
-      {"@id": "urn:ngm:class:reproducible-experiments", "label": "Reproducible Experiments"}
+      {
+        "@id": "urn:ngm:class:time-series-data",
+        "label": "Time-Series Data"
+      },
+      {
+        "@id": "urn:ngm:class:reproducible-experiments",
+        "label": "Reproducible Experiments"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:spec", "label": "SPEC"},
-      {"@id": "urn:ngm:class:mlcommons", "label": "MLCommons"},
-      {"@id": "urn:ngm:class:tpc", "label": "TPC"}
+      {
+        "@id": "urn:ngm:class:mlcommons",
+        "label": "MLCommons"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:stress-testing", "label": "Stress Testing"},
-      {"@id": "urn:ngm:class:unit-testing", "label": "Unit Testing"}
+      {
+        "@id": "urn:ngm:class:stress-testing",
+        "label": "Stress Testing"
+      },
+      {
+        "@id": "urn:ngm:class:unit-testing",
+        "label": "Unit Testing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-model-evaluation", "label": "AI Model Evaluation"},
-      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"}
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "AI Model Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:service-level-objectives", "label": "Service Level Objectives"},
-      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"}
+      {
+        "@id": "urn:ngm:class:service-level-objectives",
+        "label": "Service Level Objectives"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:benchmark-suite", "label": "Benchmark Suite"},
-    {"@id": "urn:ngm:class:performance-testing", "label": "Performance Testing"}
+    {
+      "@id": "urn:ngm:class:benchmark-suite",
+      "label": "Benchmark Suite"
+    },
+    {
+      "@id": "urn:ngm:class:performance-testing",
+      "label": "Performance Testing"
+    }
   ],
   "quality": 0.73,
   "provenance": {

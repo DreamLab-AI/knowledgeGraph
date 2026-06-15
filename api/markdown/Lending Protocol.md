@@ -93,10 +93,6 @@ public:: true
       {
         "@id": "urn:ngm:class:leveraged-trading",
         "label": "Leveraged Trading"
-      },
-      {
-        "@id": "urn:ngm:class:interest-rate-market",
-        "label": "Interest Rate Market"
       }
     ],
     "hasPart": [
@@ -109,17 +105,17 @@ public:: true
         "label": "Interest Rate Model"
       },
       {
-        "@id": "urn:ngm:class:governance-module",
+        "@id": "urn:ngm:class:governance",
         "label": "Governance Module"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:erc-20-token",
+        "@id": "urn:ngm:class:erc-20-tokens",
         "label": "ERC-20 Token"
       },
       {
-        "@id": "urn:ngm:class:decentralised-oracle-network",
+        "@id": "urn:ngm:class:oracle-network",
         "label": "Decentralised Oracle Network"
       },
       {
@@ -169,7 +165,7 @@ public:: true
         "label": "Aave"
       },
       {
-        "@id": "urn:ngm:class:compound-finance",
+        "@id": "urn:ngm:class:compound",
         "label": "Compound Finance"
       },
       {

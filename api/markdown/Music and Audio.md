@@ -390,51 +390,15 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:audio-diffusion",
-        "label": "Audio Diffusion"
-      },
-      {
-        "@id": "urn:ngm:class:audio-watermarking",
-        "label": "Audio Watermarking"
-      },
-      {
-        "@id": "urn:ngm:class:clap-embeddings",
-        "label": "CLAP Embeddings"
-      },
-      {
-        "@id": "urn:ngm:class:lyric-generation",
-        "label": "Lyric Generation"
-      },
-      {
-        "@id": "urn:ngm:class:melodic-generation",
-        "label": "Melodic Generation"
-      },
-      {
-        "@id": "urn:ngm:class:music-language-model",
-        "label": "Music Language Model"
-      },
-      {
         "@id": "urn:ngm:class:neural-audio-codec",
         "label": "Neural Audio Codec"
       },
       {
-        "@id": "urn:ngm:class:stem-separation",
-        "label": "Stem Separation"
-      },
-      {
-        "@id": "urn:ngm:class:text-to-music-synthesis",
-        "label": "Text-to-Music Synthesis"
-      },
-      {
-        "@id": "urn:ngm:class:vocal-synthesis",
+        "@id": "urn:ngm:class:speech-synthesis",
         "label": "Vocal Synthesis"
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:clap-audio-embeddings",
-        "label": "CLAP Audio Embeddings"
-      },
       {
         "@id": "urn:ngm:class:diffusion-model",
         "label": "Diffusion Model"
@@ -444,7 +408,7 @@ public:: true
         "label": "GPU Compute"
       },
       {
-        "@id": "urn:ngm:class:large-scale-audio-datasets",
+        "@id": "urn:ngm:class:large-scale-datasets",
         "label": "Large-Scale Audio Datasets"
       },
       {
@@ -470,32 +434,8 @@ public:: true
         "label": "Adaptive Music"
       },
       {
-        "@id": "urn:ngm:class:ai-mastering",
-        "label": "AI Mastering"
-      },
-      {
-        "@id": "urn:ngm:class:ai-music-production",
-        "label": "AI Music Production"
-      },
-      {
-        "@id": "urn:ngm:class:film-scoring-automation",
-        "label": "Film Scoring Automation"
-      },
-      {
-        "@id": "urn:ngm:class:game-audio-procedural-generation",
+        "@id": "urn:ngm:class:procedural-audio-generator",
         "label": "Game Audio Procedural Generation"
-      },
-      {
-        "@id": "urn:ngm:class:personalised-soundtracks",
-        "label": "Personalised Soundtracks"
-      },
-      {
-        "@id": "urn:ngm:class:podcast-music-generation",
-        "label": "Podcast Music Generation"
-      },
-      {
-        "@id": "urn:ngm:class:royalty-free-music-generation",
-        "label": "Royalty-Free Music Generation"
       }
     ],
     "implements": [
@@ -508,20 +448,12 @@ public:: true
         "label": "Classifier-Free Guidance"
       },
       {
-        "@id": "urn:ngm:class:contrastive-language-audio-pre-training",
-        "label": "Contrastive Language Audio Pre-training"
-      },
-      {
         "@id": "urn:ngm:class:flow-matching",
         "label": "Flow Matching"
       },
       {
         "@id": "urn:ngm:class:latent-diffusion",
         "label": "Latent Diffusion"
-      },
-      {
-        "@id": "urn:ngm:class:residual-vector-quantisation",
-        "label": "Residual Vector Quantisation"
       },
       {
         "@id": "urn:ngm:class:variational-autoencoders",
@@ -534,35 +466,11 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:clap",
-        "label": "CLAP"
-      },
-      {
-        "@id": "urn:ngm:class:dac-codec",
+        "@id": "urn:ngm:class:neural-audio-codec",
         "label": "DAC Codec"
       },
       {
-        "@id": "urn:ngm:class:en-codec",
-        "label": "EnCodec"
-      },
-      {
-        "@id": "urn:ngm:class:midi",
-        "label": "MIDI"
-      },
-      {
-        "@id": "urn:ngm:class:mu-lan",
-        "label": "MuLan"
-      },
-      {
-        "@id": "urn:ngm:class:sound-stream",
-        "label": "SoundStream"
-      },
-      {
-        "@id": "urn:ngm:class:spectrogram-diffusion",
-        "label": "Spectrogram Diffusion"
-      },
-      {
-        "@id": "urn:ngm:class:t5-text-encoder",
+        "@id": "urn:ngm:class:text-encoder",
         "label": "T5 Text Encoder"
       }
     ],
@@ -610,14 +518,6 @@ public:: true
         "label": "Content Creation"
       },
       {
-        "@id": "urn:ngm:class:film-and-television",
-        "label": "Film and Television"
-      },
-      {
-        "@id": "urn:ngm:class:music-production",
-        "label": "Music Production"
-      },
-      {
         "@id": "urn:ngm:class:podcast-production",
         "label": "Podcast Production"
       },
@@ -632,20 +532,8 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:audio-seal-watermarking",
-        "label": "AudioSeal Watermarking"
-      },
-      {
-        "@id": "urn:ngm:class:c2-pa-audio-standard",
+        "@id": "urn:ngm:class:c2-pa-standard",
         "label": "C2PA Audio Standard"
-      },
-      {
-        "@id": "urn:ngm:class:riaa-copyright-framework",
-        "label": "RIAA Copyright Framework"
-      },
-      {
-        "@id": "urn:ngm:class:synth-id-audio",
-        "label": "SynthID Audio"
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
@@ -653,7 +541,10 @@ public:: true
       }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:audio-signal-processing", "label": "Audio Signal Processing"}
+      {
+        "@id": "urn:ngm:class:audio-signal-processing",
+        "label": "Audio Signal Processing"
+      }
     ]
   },
   "quality": 0.52,

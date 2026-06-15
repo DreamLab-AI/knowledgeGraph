@@ -21,10 +21,6 @@
       {
         "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
-      },
-      {
-        "id": "urn:ngm:class:biomechanical-data",
-        "label": "Biomechanical Data"
       }
     ],
     "enables": [
@@ -44,19 +40,19 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:power-and-force-limiting",
+        "id": "urn:ngm:class:rb-0094-power-and-force-limiting",
         "label": "Power and Force Limiting"
       },
       {
-        "id": "urn:ngm:class:speed-and-separation-monitoring",
+        "id": "urn:ngm:class:rb-0105-speed-and-separation-monitoring",
         "label": "Speed and Separation Monitoring"
       },
       {
-        "id": "urn:ngm:class:safety-rated-monitored-stop",
+        "id": "urn:ngm:class:rb-0091-safety-rated-monitored-stop",
         "label": "Safety-Rated Monitored Stop"
       },
       {
-        "id": "urn:ngm:class:hand-guiding",
+        "id": "urn:ngm:class:rb-0104-hand-guiding",
         "label": "Hand Guiding"
       }
     ],
@@ -94,7 +90,7 @@
         "label": "Proximity Sensing"
       },
       {
-        "id": "urn:ngm:class:torque-sensing",
+        "id": "urn:ngm:class:torque",
         "label": "Torque Sensing"
       }
     ],
@@ -118,7 +114,7 @@
         "label": "ISO/TC 299"
       },
       {
-        "id": "urn:ngm:class:collaborative-robot",
+        "id": "urn:ngm:class:collaborative-systems-modality-robot",
         "label": "Collaborative Robot"
       }
     ],

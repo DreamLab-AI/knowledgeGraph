@@ -16,21 +16,12 @@
   "qualityScore": 0.74,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:inspect-evaluation-framework",
-        "label": "Inspect Evaluation Framework"
-      }
-    ],
+    "hasPart": [],
     "requires": [],
     "enables": [
       {
         "id": "urn:ngm:class:model-evaluation-results",
         "label": "Model Evaluation Results"
-      },
-      {
-        "id": "urn:ngm:class:pre-deployment-safety-testing",
-        "label": "Pre-Deployment Safety Testing"
       },
       {
         "id": "urn:ngm:class:international-ai-cooperation",
@@ -42,10 +33,6 @@
       {
         "id": "urn:ngm:class:bletchley-declaration",
         "label": "Bletchley Declaration"
-      },
-      {
-        "id": "urn:ngm:class:ai-safety-evaluation-framework",
-        "label": "AI Safety Evaluation Framework"
       }
     ],
     "contrastsWith": [
@@ -97,12 +84,7 @@
       }
     ],
     "standardizedBy": [],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:department-for-science-innovation-and-technology",
-        "label": "Department for Science, Innovation and Technology"
-      }
-    ],
+    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:frontier-model-forum",
@@ -113,20 +95,12 @@
         "label": "US AI Safety Institute"
       },
       {
-        "id": "urn:ngm:class:eu-ai-office",
+        "id": "urn:ngm:class:ai-office",
         "label": "EU AI Office"
       },
       {
         "id": "urn:ngm:class:oecd-ai-policy-observatory",
         "label": "OECD AI Policy Observatory"
-      },
-      {
-        "id": "urn:ngm:class:deceptive-alignment",
-        "label": "Deceptive Alignment"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-replication",
-        "label": "Autonomous Replication"
       }
     ]
   },

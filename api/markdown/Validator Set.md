@@ -38,50 +38,121 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
-      {"@id": "urn:ngm:class:slashing-condition", "label": "Slashing Condition"},
-      {"@id": "urn:ngm:class:staking-bond", "label": "Staking Bond"}
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "@id": "urn:ngm:class:slashing-condition",
+        "label": "Slashing Condition"
+      },
+      {
+        "@id": "urn:ngm:class:staking",
+        "label": "Staking Bond"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:staking", "label": "Staking"},
-      {"@id": "urn:ngm:class:epoch", "label": "Epoch"}
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "@id": "urn:ngm:class:epoch",
+        "label": "Epoch"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:block-finality", "label": "Block Finality"},
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:block-proposal", "label": "Block Proposal"}
+      {
+        "@id": "urn:ngm:class:block-finality",
+        "label": "Block Finality"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:block-proposal",
+        "label": "Block Proposal"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:delegation", "label": "Delegation"},
-      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"}
+      {
+        "@id": "urn:ngm:class:delegation",
+        "label": "Delegation"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:tendermint-bft", "label": "Tendermint BFT"},
-      {"@id": "urn:ngm:class:casper-ffg", "label": "Casper FFG"}
+      {
+        "@id": "urn:ngm:class:tendermint-consensus",
+        "label": "Tendermint BFT"
+      },
+      {
+        "@id": "urn:ngm:class:casper-ffg",
+        "label": "Casper FFG"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:threshold-signature", "label": "Threshold Signature"},
-      {"@id": "urn:ngm:class:verifiable-random-function", "label": "Verifiable Random Function"}
+      {
+        "@id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-random-function",
+        "label": "Verifiable Random Function"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:delegated-proof-of-stake", "label": "Delegated Proof of Stake"},
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:committee-rotation", "label": "Committee Rotation"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+      {
+        "@id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:decentralised-ai-inference", "label": "Decentralised AI Inference"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-ai-inference",
+        "label": "Decentralised AI Inference"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:active-validator-set", "label": "Active Validator Set"},
-    {"@id": "urn:ngm:class:consensus-committee", "label": "Consensus Committee"}
+    {
+      "@id": "urn:ngm:class:active-validator-set",
+      "label": "Active Validator Set"
+    },
+    {
+      "@id": "urn:ngm:class:consensus-committee",
+      "label": "Consensus Committee"
+    }
   ],
   "quality": 0.74,
   "provenance": {

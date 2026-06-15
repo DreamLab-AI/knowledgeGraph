@@ -38,46 +38,105 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:sentiment-analysis", "label": "Sentiment Analysis"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:intent-classification", "label": "Intent Classification"},
-      {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"}
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:intent-classification",
+        "label": "Intent Classification"
+      },
+      {
+        "@id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:knowledge-base", "label": "Knowledge Base"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:customer-relationship-management", "label": "Customer Relationship Management"},
-      {"@id": "urn:ngm:class:dialogue-management", "label": "Dialogue Management"}
+      {
+        "@id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:customer-relationship-management",
+        "label": "Customer Relationship Management"
+      },
+      {
+        "@id": "urn:ngm:class:dialogue-management",
+        "label": "Dialogue Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:omnichannel-support", "label": "Omnichannel Support"},
-      {"@id": "urn:ngm:class:self-service-portal", "label": "Self-Service Portal"},
-      {"@id": "urn:ngm:class:intelligent-ticket-routing", "label": "Intelligent Ticket Routing"}
+      {
+        "@id": "urn:ngm:class:omnichannel",
+        "label": "Omnichannel Support"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:chatbot", "label": "Chatbot"},
-      {"@id": "urn:ngm:class:interactive-voice-response", "label": "Interactive Voice Response"},
-      {"@id": "urn:ngm:class:virtual-agent", "label": "Virtual Agent"},
-      {"@id": "urn:ngm:class:escalation-management", "label": "Escalation Management"}
+      {
+        "@id": "urn:ngm:class:chatbot",
+        "label": "Chatbot"
+      },
+      {
+        "@id": "urn:ngm:class:interactive-voice-response",
+        "label": "Interactive Voice Response"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-agent",
+        "label": "Virtual Agent"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:human-agent-assistance", "label": "Human Agent Assistance"},
-      {"@id": "urn:ngm:class:rule-based-automation", "label": "Rule-Based Automation"}
+      {
+        "@id": "urn:ngm:class:automation",
+        "label": "Rule-Based Automation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:robotic-process-automation", "label": "Robotic Process Automation"},
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"},
-      {"@id": "urn:ngm:class:ai-agent", "label": "AI Agent"}
+      {
+        "@id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:business-process-automation", "label": "Business Process Automation"}
+      {
+        "@id": "urn:ngm:class:business-process-automation",
+        "label": "Business Process Automation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:automated-customer-support", "label": "Automated Customer Support"},
-    {"@id": "urn:ngm:class:contact-centre-ai", "label": "Contact Centre AI"}
+    {
+      "@id": "urn:ngm:class:automated-customer-support",
+      "label": "Automated Customer Support"
+    },
+    {
+      "@id": "urn:ngm:class:contact-centre-ai",
+      "label": "Contact Centre AI"
+    }
   ],
   "quality": 0.74,
   "provenance": {

@@ -94,22 +94,14 @@ public:: true
         "label": "Real-Time Analytics"
       },
       {
-        "@id": "urn:ngm:class:user-behavior-tracking",
-        "label": "User Behavior Tracking"
-      },
-      {
         "@id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning Discipline"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:dynamic-gaming",
+        "@id": "urn:ngm:class:gaming",
         "label": "Dynamic Gaming"
-      },
-      {
-        "@id": "urn:ngm:class:personalized-learning",
-        "label": "Personalized Learning"
       },
       {
         "@id": "urn:ngm:class:therapeutic-vr",

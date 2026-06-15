@@ -96,26 +96,8 @@ public:: true
         "label": "Activity Data"
       },
       {
-        "@id": "urn:ngm:class:calculation-methodology",
-        "label": "Calculation Methodology"
-      },
-      {
         "@id": "urn:ngm:class:emission-factors",
         "label": "Emission Factors"
-      }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:emissions-estimation",
-        "label": "Emissions Estimation"
-      },
-      {
-        "@id": "urn:ngm:class:footprint-awareness",
-        "label": "Footprint Awareness"
-      },
-      {
-        "@id": "urn:ngm:class:reduction-planning",
-        "label": "Reduction Planning"
       }
     ]
   },

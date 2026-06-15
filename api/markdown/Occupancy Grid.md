@@ -25,55 +25,98 @@ alias:: OccupancyGrid
   "domain": "robotics",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:environment-mapping", "label": "Environment Mapping"}
+    {
+      "@id": "urn:ngm:class:environment-mapping",
+      "label": "Environment Mapping"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:lidar-sensor", "label": "LiDAR Sensor"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
-      {"@id": "urn:ngm:class:log-odds-representation", "label": "Log-Odds Representation"},
-      {"@id": "urn:ngm:class:inverse-sensor-model", "label": "Inverse Sensor Model"}
+      {
+        "@id": "urn:ngm:class:lidar-sensor",
+        "label": "LiDAR Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
-      {"@id": "urn:ngm:class:costmap", "label": "Costmap"},
-      {"@id": "urn:ngm:class:voxel-grid", "label": "Voxel Grid"},
-      {"@id": "urn:ngm:class:octomap", "label": "OctoMap"}
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:costmap",
+        "label": "Costmap"
+      },
+      {
+        "@id": "urn:ngm:class:voxel-grid",
+        "label": "Voxel Grid"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:collision-avoidance", "label": "Collision Avoidance"},
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:global-path-planning", "label": "Global Path Planning"}
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Global Path Planning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:range-sensor", "label": "Range Sensor"},
-      {"@id": "urn:ngm:class:robot-pose-estimation", "label": "Robot Pose Estimation"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:grid-cell", "label": "Grid Cell"},
-      {"@id": "urn:ngm:class:probability-map", "label": "Probability Map"}
+      {
+        "@id": "urn:ngm:class:rb-0075-range-finder",
+        "label": "Range Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Robot Pose Estimation"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:metric-map", "label": "Metric Map"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:probabilistic-mapping", "label": "Probabilistic Mapping"}
+      {
+        "@id": "urn:ngm:class:metric-map",
+        "label": "Metric Map"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:topological-map", "label": "Topological Map"},
-      {"@id": "urn:ngm:class:feature-map", "label": "Feature Map"}
-    ],
-    "bridgesTo": [
-      {"@id": "urn:ngm:class:neural-occupancy-prediction", "label": "Neural Occupancy Prediction"},
-      {"@id": "urn:ngm:class:birds-eye-view-perception", "label": "Birds-Eye-View Perception"}
+      {
+        "@id": "urn:ngm:class:topological-map",
+        "label": "Topological Map"
+      },
+      {
+        "@id": "urn:ngm:class:feature-map",
+        "label": "Feature Map"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:occupancy-map", "label": "Occupancy Map"},
-    {"@id": "urn:ngm:class:probabilistic-grid-map", "label": "Probabilistic Grid Map"}
+    {
+      "@id": "urn:ngm:class:occupancy-map",
+      "label": "Occupancy Map"
+    },
+    {
+      "@id": "urn:ngm:class:probabilistic-grid-map",
+      "label": "Probabilistic Grid Map"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

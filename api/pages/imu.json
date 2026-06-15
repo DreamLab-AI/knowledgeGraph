@@ -28,10 +28,6 @@
       {
         "id": "urn:ngm:class:magnetometer",
         "label": "Magnetometer"
-      },
-      {
-        "id": "urn:ngm:class:digital-motion-processor",
-        "label": "Digital Motion Processor"
       }
     ],
     "requires": [
@@ -44,7 +40,7 @@
         "label": "Kalman Filter"
       },
       {
-        "id": "urn:ngm:class:analogue-to-digital-converter",
+        "id": "urn:ngm:class:analog-to-digital-converter",
         "label": "Analogue-to-Digital Converter"
       }
     ],
@@ -78,10 +74,6 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:strapdown-navigation",
-        "label": "Strapdown Navigation"
-      },
-      {
         "id": "urn:ngm:class:newton-euler-dynamics",
         "label": "Newton-Euler Dynamics"
       }
@@ -98,21 +90,17 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:robot-proprioception",
-        "label": "Robot Proprioception"
-      },
-      {
         "id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicle"
       },
       {
-        "id": "urn:ngm:class:human-motion-capture",
+        "id": "urn:ngm:class:motion-capture",
         "label": "Human Motion Capture"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:quaternion",
+        "id": "urn:ngm:class:quaternion-math",
         "label": "Quaternion"
       },
       {
@@ -144,22 +132,9 @@
       {
         "id": "urn:ngm:class:hand-tracking",
         "label": "Hand Tracking"
-      },
-      {
-        "id": "urn:ngm:class:gait-analysis",
-        "label": "Gait Analysis"
       }
     ],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:ieee-1559",
-        "label": "IEEE 1559"
-      },
-      {
-        "id": "urn:ngm:class:ieee-952",
-        "label": "IEEE 952"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [
       {
         "id": "urn:ngm:class:inertial-navigation-system",
@@ -168,20 +143,12 @@
       {
         "id": "urn:ngm:class:xr-headset",
         "label": "XR Headset"
-      },
-      {
-        "id": "urn:ngm:class:flight-controller",
-        "label": "Flight Controller"
       }
     ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:lidar",
         "label": "Lidar"
-      },
-      {
-        "id": "urn:ngm:class:motion-sickness",
-        "label": "Motion Sickness"
       },
       {
         "id": "urn:ngm:class:extended-reality",

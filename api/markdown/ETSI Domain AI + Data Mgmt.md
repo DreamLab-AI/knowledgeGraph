@@ -86,16 +86,9 @@ alias:: ETSI Domain AI Data Mgmt
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
-    ],
-    "enables": [
       {
-        "@id": "urn:ngm:class:intelligent-analytics-categorization",
-        "label": "Intelligent Analytics Categorization"
-      },
-      {
-        "@id": "urn:ngm:class:ml-pipeline-classification",
-        "label": "ML Pipeline Classification"
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
       }
     ],
     "partOf": [

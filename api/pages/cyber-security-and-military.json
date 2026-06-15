@@ -16,131 +16,20 @@
   "qualityScore": 0.52,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:computer-network-exploitation",
-        "label": "Computer Network Exploitation"
-      },
-      {
-        "id": "urn:ngm:class:cyber-intelligence",
-        "label": "Cyber Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:cyber-mission-force",
-        "label": "Cyber Mission Force"
-      },
-      {
-        "id": "urn:ngm:class:defensive-cyber-operations",
-        "label": "Defensive Cyber Operations"
-      },
-      {
-        "id": "urn:ngm:class:electromagnetic-spectrum-operations",
-        "label": "Electromagnetic Spectrum Operations"
-      },
-      {
-        "id": "urn:ngm:class:information-operations",
-        "label": "Information Operations"
-      },
-      {
-        "id": "urn:ngm:class:national-cyber-force",
-        "label": "National Cyber Force"
-      },
-      {
-        "id": "urn:ngm:class:offensive-cyber-operations",
-        "label": "Offensive Cyber Operations"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:attribution-capability",
-        "label": "Attribution Capability"
-      },
-      {
-        "id": "urn:ngm:class:classified-compute-infrastructure",
+        "id": "urn:ngm:class:compute-infrastructure",
         "label": "Classified Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:cyber-doctrine",
-        "label": "Cyber Doctrine"
-      },
-      {
-        "id": "urn:ngm:class:signals-intelligence",
-        "label": "Signals Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:sovereign-authority",
-        "label": "Sovereign Authority"
-      },
-      {
-        "id": "urn:ngm:class:trained-cyber-operators",
-        "label": "Trained Cyber Operators"
-      },
-      {
-        "id": "urn:ngm:class:vulnerability-research",
+        "id": "urn:ngm:class:vulnerability",
         "label": "Vulnerability Research"
       }
     ],
-    "enables": [
-      {
-        "id": "urn:ngm:class:adversary-intelligence-collection",
-        "label": "Adversary Intelligence Collection"
-      },
-      {
-        "id": "urn:ngm:class:battle-damage-assessment",
-        "label": "Battle Damage Assessment"
-      },
-      {
-        "id": "urn:ngm:class:critical-infrastructure-disruption",
-        "label": "Critical Infrastructure Disruption"
-      },
-      {
-        "id": "urn:ngm:class:cyber-deterrence",
-        "label": "Cyber Deterrence"
-      },
-      {
-        "id": "urn:ngm:class:hybrid-warfare",
-        "label": "Hybrid Warfare"
-      },
-      {
-        "id": "urn:ngm:class:joint-all-domain-operations",
-        "label": "Joint All-Domain Operations"
-      },
-      {
-        "id": "urn:ngm:class:strategic-coercion",
-        "label": "Strategic Coercion"
-      }
-    ],
+    "enables": [],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:computer-network-operations-doctrine",
-        "label": "Computer Network Operations Doctrine"
-      },
-      {
-        "id": "urn:ngm:class:defend-forward",
-        "label": "Defend Forward"
-      },
-      {
-        "id": "urn:ngm:class:f3-ead-targeting",
-        "label": "F3EAD Targeting"
-      },
-      {
-        "id": "urn:ngm:class:joint-targeting-cycle",
-        "label": "Joint Targeting Cycle"
-      },
-      {
-        "id": "urn:ngm:class:law-of-armed-conflict",
-        "label": "Law of Armed Conflict"
-      },
-      {
-        "id": "urn:ngm:class:persistent-engagement",
-        "label": "Persistent Engagement"
-      },
-      {
-        "id": "urn:ngm:class:tallinn-manual-rules",
-        "label": "Tallinn Manual Rules"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [],
     "bridgesTo": [
       {
@@ -150,32 +39,8 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:command-and-control-infrastructure",
-        "label": "Command and Control Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:implants",
-        "label": "Implants"
-      },
-      {
-        "id": "urn:ngm:class:initial-access-brokers",
-        "label": "Initial Access Brokers"
-      },
-      {
-        "id": "urn:ngm:class:living-off-the-land-techniques",
-        "label": "Living-Off-The-Land Techniques"
-      },
-      {
         "id": "urn:ngm:class:malware",
         "label": "Malware"
-      },
-      {
-        "id": "urn:ngm:class:supply-chain-compromise",
-        "label": "Supply Chain Compromise"
-      },
-      {
-        "id": "urn:ngm:class:wiper-malware",
-        "label": "Wiper Malware"
       },
       {
         "id": "urn:ngm:class:zero-day-exploits",
@@ -183,30 +48,6 @@
       }
     ],
     "supports": [
-      {
-        "id": "urn:ngm:class:allied-coalition-operations",
-        "label": "Allied Coalition Operations"
-      },
-      {
-        "id": "urn:ngm:class:counter-proliferation",
-        "label": "Counter-Proliferation"
-      },
-      {
-        "id": "urn:ngm:class:counter-terrorism",
-        "label": "Counter-Terrorism"
-      },
-      {
-        "id": "urn:ngm:class:five-eyes-intelligence",
-        "label": "Five Eyes Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:national-defence",
-        "label": "National Defence"
-      },
-      {
-        "id": "urn:ngm:class:nato-article-5",
-        "label": "NATO Article 5"
-      },
       {
         "id": "urn:ngm:class:sanctions-enforcement",
         "label": "Sanctions Enforcement"
@@ -218,12 +59,8 @@
         "label": "ISO 27001"
       },
       {
-        "id": "urn:ngm:class:mitre-att-and-ck",
+        "id": "urn:ngm:class:mitre-atlas",
         "label": "MITRE ATT&CK"
-      },
-      {
-        "id": "urn:ngm:class:nato-ccdcoe",
-        "label": "NATO CCDCOE"
       },
       {
         "id": "urn:ngm:class:nist-cybersecurity-framework",
@@ -232,43 +69,10 @@
       {
         "id": "urn:ngm:class:stix-taxii",
         "label": "STIX/TAXII"
-      },
-      {
-        "id": "urn:ngm:class:tallinn-manual",
-        "label": "Tallinn Manual"
-      },
-      {
-        "id": "urn:ngm:class:un-gge",
-        "label": "UN GGE"
       }
     ],
     "partOf": [],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:counter-intelligence",
-        "label": "Counter-Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:drone-warfare",
-        "label": "Drone Warfare"
-      },
-      {
-        "id": "urn:ngm:class:electronic-warfare",
-        "label": "Electronic Warfare"
-      },
-      {
-        "id": "urn:ngm:class:information-warfare",
-        "label": "Information Warfare"
-      },
-      {
-        "id": "urn:ngm:class:space-operations",
-        "label": "Space Operations"
-      },
-      {
-        "id": "urn:ngm:class:strategic-communication",
-        "label": "Strategic Communication"
-      }
-    ]
+    "relatedTo": []
   },
   "wikilinks": [
     {

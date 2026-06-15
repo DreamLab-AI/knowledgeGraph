@@ -38,51 +38,91 @@ public:: true
   ],
   "relations": {
     "dependsOn": [
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:compute-budget", "label": "Compute Budget"},
-      {"@id": "urn:ngm:class:cross-entropy-loss", "label": "Cross-Entropy Loss"}
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:cross-entropy-loss",
+        "label": "Cross-Entropy Loss"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:pre-training", "label": "Pre Training"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:capability-forecasting", "label": "Capability Forecasting"},
-      {"@id": "urn:ngm:class:compute-optimal-training", "label": "Compute-Optimal Training"}
+      {
+        "@id": "urn:ngm:class:pre-training",
+        "label": "Pre Training"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:capability-forecasting",
+        "label": "Capability Forecasting"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:parameter-count", "label": "Parameter Count"},
-      {"@id": "urn:ngm:class:token-count", "label": "Token Count"},
-      {"@id": "urn:ngm:class:power-law-exponent", "label": "Power Law Exponent"}
+      {
+        "@id": "urn:ngm:class:parameter-count",
+        "label": "Parameter Count"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:floating-point-operations", "label": "Floating-Point Operations"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:foundation-models", "label": "Foundation Models"},
-      {"@id": "urn:ngm:class:ai-infrastructure-planning", "label": "AI Infrastructure Planning"},
-      {"@id": "urn:ngm:class:neural-architecture-search", "label": "Neural Architecture Search"}
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Models"
+      },
+      {
+        "@id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:emergent-abilities", "label": "Emergent Abilities"},
-      {"@id": "urn:ngm:class:diminishing-returns", "label": "Diminishing Returns"}
+      {
+        "@id": "urn:ngm:class:emergent-capabilities",
+        "label": "Emergent Abilities"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:power-law", "label": "Power Law"},
-      {"@id": "urn:ngm:class:irreducible-loss", "label": "Irreducible Loss"},
-      {"@id": "urn:ngm:class:data-efficiency", "label": "Data Efficiency"},
-      {"@id": "urn:ngm:class:model-compression", "label": "Model Compression"},
-      {"@id": "urn:ngm:class:empirical-machine-learning", "label": "Empirical Machine Learning"}
+      {
+        "@id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:ai-hardware", "label": "AI Hardware"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:ai-hardware",
+        "label": "AI Hardware"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:neural-scaling-laws", "label": "Neural Scaling Laws"},
-    {"@id": "urn:ngm:class:compute-scaling-laws", "label": "Compute Scaling Laws"}
+    {
+      "@id": "urn:ngm:class:neural-scaling-laws",
+      "label": "Neural Scaling Laws"
+    },
+    {
+      "@id": "urn:ngm:class:compute-scaling-laws",
+      "label": "Compute Scaling Laws"
+    }
   ],
   "quality": 0.73,
   "provenance": {

@@ -22,26 +22,18 @@
         "label": "Decision Tree"
       },
       {
-        "id": "urn:ngm:class:linear-regression",
+        "id": "urn:ngm:class:regression",
         "label": "Linear Regression"
       },
       {
-        "id": "urn:ngm:class:rule-based-system",
+        "id": "urn:ngm:class:rule-based-systems",
         "label": "Rule Based System"
-      },
-      {
-        "id": "urn:ngm:class:generalised-additive-model",
-        "label": "Generalised Additive Model"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:feature-engineering",
         "label": "Feature Engineering"
-      },
-      {
-        "id": "urn:ngm:class:model-complexity-constraint",
-        "label": "Model Complexity Constraint"
       }
     ],
     "enables": [
@@ -139,10 +131,6 @@
       {
         "id": "urn:ngm:class:model-validation",
         "label": "Model Validation"
-      },
-      {
-        "id": "urn:ngm:class:concept-bottleneck-model",
-        "label": "Concept Bottleneck Model"
       }
     ]
   },

@@ -62,18 +62,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:forget-gate",
-        "label": "Forget Gate"
-      },
-      {
-        "@id": "urn:ngm:class:input-gate",
-        "label": "Input Gate"
-      },
-      {
-        "@id": "urn:ngm:class:output-gate",
-        "label": "Output Gate"
-      },
-      {
         "@id": "urn:ngm:class:cell-state",
         "label": "Cell State"
       }
@@ -82,10 +70,6 @@ public:: true
       {
         "@id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
-      },
-      {
-        "@id": "urn:ngm:class:sequence-modelling",
-        "label": "Sequence Modelling"
       }
     ],
     "requires": [
@@ -112,27 +96,11 @@ public:: true
         "label": "Machine Translation"
       },
       {
-        "@id": "urn:ngm:class:language-modelling",
-        "label": "Language Modelling"
-      },
-      {
         "@id": "urn:ngm:class:time-series-forecasting",
         "label": "Time Series Forecasting"
-      },
-      {
-        "@id": "urn:ngm:class:handwriting-recognition",
-        "label": "Handwriting Recognition"
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:sigmoid-activation",
-        "label": "Sigmoid Activation"
-      },
-      {
-        "@id": "urn:ngm:class:tanh-activation",
-        "label": "Tanh Activation"
-      },
       {
         "@id": "urn:ngm:class:dropout-regularisation",
         "label": "Dropout Regularisation"
@@ -146,10 +114,6 @@ public:: true
       {
         "@id": "urn:ngm:class:gated-recurrent-unit",
         "label": "Gated Recurrent Unit"
-      },
-      {
-        "@id": "urn:ngm:class:vanilla-rnn",
-        "label": "Vanilla RNN"
       }
     ],
     "relatedTo": [
@@ -158,7 +122,7 @@ public:: true
         "label": "Attention Mechanism"
       },
       {
-        "@id": "urn:ngm:class:encoder-decoder",
+        "@id": "urn:ngm:class:encoder-decoder-architecture",
         "label": "Encoder-Decoder"
       },
       {

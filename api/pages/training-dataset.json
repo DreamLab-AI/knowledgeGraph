@@ -24,10 +24,6 @@
       {
         "id": "urn:ngm:class:data-annotation",
         "label": "Data Annotation"
-      },
-      {
-        "id": "urn:ngm:class:data-split",
-        "label": "Data Split"
       }
     ],
     "requires": [
@@ -93,7 +89,7 @@
         "label": "Data Privacy"
       },
       {
-        "id": "urn:ngm:class:intellectual-property",
+        "id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Intellectual Property"
       },
       {
@@ -130,10 +126,6 @@
       {
         "id": "urn:ngm:class:data-centric-ai",
         "label": "Data-Centric AI"
-      },
-      {
-        "id": "urn:ngm:class:dataset-documentation",
-        "label": "Dataset Documentation"
       }
     ]
   },

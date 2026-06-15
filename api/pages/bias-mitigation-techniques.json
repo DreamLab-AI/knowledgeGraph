@@ -18,20 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:data-reweighting",
-        "label": "Data Reweighting"
-      },
-      {
-        "id": "urn:ngm:class:adversarial-debiasing",
-        "label": "Adversarial Debiasing"
-      },
-      {
         "id": "urn:ngm:class:threshold-optimisation",
         "label": "Threshold Optimisation"
-      },
-      {
-        "id": "urn:ngm:class:resampling-techniques",
-        "label": "Resampling Techniques"
       }
     ],
     "requires": [
@@ -56,10 +44,6 @@
       {
         "id": "urn:ngm:class:algorithmic-accountability",
         "label": "Algorithmic Accountability"
-      },
-      {
-        "id": "urn:ngm:class:equitable-ai-deployment",
-        "label": "Equitable AI Deployment"
       }
     ],
     "dependsOn": [],
@@ -117,7 +101,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:model-explainability",
+        "id": "urn:ngm:class:explainability",
         "label": "Model Explainability"
       },
       {

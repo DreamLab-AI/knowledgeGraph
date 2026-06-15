@@ -115,12 +115,8 @@ alias:: Atomic Swaps, AtomicSwap
         "label": "Hash Function"
       },
       {
-        "@id": "urn:ngm:class:cryptographic-commitment-scheme",
+        "@id": "urn:ngm:class:commitment-scheme",
         "label": "Cryptographic Commitment Scheme"
-      },
-      {
-        "@id": "urn:ngm:class:time-lock-encryption",
-        "label": "Time-Lock Encryption"
       },
       {
         "@id": "urn:ngm:class:digital-signature",
@@ -135,24 +131,12 @@ alias:: Atomic Swaps, AtomicSwap
       {
         "@id": "urn:ngm:class:decentralized-exchange",
         "label": "Decentralized Exchange"
-      },
-      {
-        "@id": "urn:ngm:class:cross-chain-arbitrage",
-        "label": "Cross-Chain Arbitrage"
-      },
-      {
-        "@id": "urn:ngm:class:non-custodial-trading",
-        "label": "Non-Custodial Trading"
       }
     ],
     "requires": [
       {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
-      },
-      {
-        "@id": "urn:ngm:class:blockchain-scripting-language",
-        "label": "Blockchain Scripting Language"
       },
       {
         "@id": "urn:ngm:class:payment-channel",
@@ -221,7 +205,7 @@ alias:: Atomic Swaps, AtomicSwap
         "label": "Ethereum"
       },
       {
-        "@id": "urn:ngm:class:erc-20-token",
+        "@id": "urn:ngm:class:erc-20-tokens",
         "label": "ERC-20 Token"
       },
       {

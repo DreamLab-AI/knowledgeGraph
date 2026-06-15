@@ -64,21 +64,12 @@
         "label": "ISO 29100"
       },
       {
-        "id": "urn:ngm:class:data-protection-by-default",
+        "id": "urn:ngm:class:data-protection",
         "label": "Data Protection by Default"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:privacy-bolt-on",
-        "label": "Privacy Bolt-On"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:secure-by-design",
-        "label": "Secure By Design"
-      },
       {
         "id": "urn:ngm:class:ai-ethics",
         "label": "AI Ethics"
@@ -112,10 +103,6 @@
       {
         "id": "urn:ngm:class:gdpr",
         "label": "GDPR"
-      },
-      {
-        "id": "urn:ngm:class:iso-29101",
-        "label": "ISO 29101"
       }
     ],
     "partOf": [],

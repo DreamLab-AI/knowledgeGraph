@@ -24,63 +24,116 @@ public:: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"}
+    {
+      "@id": "urn:ngm:class:inference-engine",
+      "label": "Inference Engine"
+    }
   ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:onnx-standard", "label": "ONNX Standard"},
-      {"@id": "urn:ngm:class:onnx-operator-set", "label": "ONNX Operator Set"}
+      {
+        "@id": "urn:ngm:class:onnx-standard",
+        "label": "ONNX Standard"
+      },
+      {
+        "@id": "urn:ngm:class:onnx-operator-set",
+        "label": "ONNX Operator Set"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:graph-optimisation", "label": "Graph Optimisation"},
-      {"@id": "urn:ngm:class:operator-fusion", "label": "Operator Fusion"},
-      {"@id": "urn:ngm:class:model-quantisation", "label": "Model Quantisation"},
-      {"@id": "urn:ngm:class:execution-provider", "label": "Execution Provider"},
-      {"@id": "urn:ngm:class:kv-cache", "label": "KV Cache"}
+      {
+        "@id": "urn:ngm:class:graph-optimisation",
+        "label": "Graph Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:operator-fusion",
+        "label": "Operator Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-quantisation",
+        "label": "Model Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:onnx", "label": "ONNX"},
-      {"@id": "urn:ngm:class:onnx-model-format", "label": "ONNX Model Format"}
+      {
+        "@id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-deployment", "label": "Model Deployment"},
-      {"@id": "urn:ngm:class:edge-inference", "label": "Edge Inference"},
-      {"@id": "urn:ngm:class:large-language-model-inference", "label": "Large Language Model Inference"},
-      {"@id": "urn:ngm:class:real-time-inference", "label": "Real-Time Inference"},
-      {"@id": "urn:ngm:class:mixed-precision-inference", "label": "Mixed-Precision Inference"}
+      {
+        "@id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:edge-inference",
+        "label": "Edge Inference"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-inference",
+        "label": "Real-Time Inference"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:pytorch", "label": "PyTorch"},
-      {"@id": "urn:ngm:class:tensorflow", "label": "TensorFlow"},
-      {"@id": "urn:ngm:class:hugging-face-transformers", "label": "Hugging Face Transformers"},
-      {"@id": "urn:ngm:class:scikit-learn", "label": "scikit-learn"}
+      {
+        "@id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "label": "PyTorch"
+      },
+      {
+        "@id": "urn:ngm:class:tensorflow",
+        "label": "TensorFlow"
+      },
+      {
+        "@id": "urn:ngm:class:transformers",
+        "label": "Hugging Face Transformers"
+      },
+      {
+        "@id": "urn:ngm:class:scikit-learn",
+        "label": "scikit-learn"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:tensorrt", "label": "TensorRT"},
-      {"@id": "urn:ngm:class:tensorrt-llm", "label": "TensorRT-LLM"},
-      {"@id": "urn:ngm:class:vllm", "label": "vLLM"},
-      {"@id": "urn:ngm:class:llama-cpp", "label": "llama.cpp"},
-      {"@id": "urn:ngm:class:openvino", "label": "OpenVINO"}
+      {
+        "@id": "urn:ngm:class:tensorrt",
+        "label": "TensorRT"
+      },
+      {
+        "@id": "urn:ngm:class:openvino",
+        "label": "OpenVINO"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cuda", "label": "CUDA"},
-      {"@id": "urn:ngm:class:directml", "label": "DirectML"}
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-optimisation", "label": "Model Optimisation"},
-      {"@id": "urn:ngm:class:neural-network-compilation", "label": "Neural Network Compilation"},
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"}
-    ],
-    "bridgesTo": [
-      {"@id": "urn:ngm:class:windows-copilot-plus", "label": "Windows Copilot+"},
-      {"@id": "urn:ngm:class:mobile-machine-learning", "label": "Mobile Machine Learning"}
+      {
+        "@id": "urn:ngm:class:model-optimisation-and-performance",
+        "label": "Model Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:onnx-community", "label": "ONNX Community"}
+      {
+        "@id": "urn:ngm:class:onnx",
+        "label": "ONNX Community"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ort", "label": "ORT"}
+    {
+      "@id": "urn:ngm:class:ort",
+      "label": "ORT"
+    }
   ],
   "quality": 0.74,
   "provenance": {

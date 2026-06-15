@@ -18,20 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:cross-references",
-        "label": "Cross References"
-      },
-      {
-        "id": "urn:ngm:class:synonym-mappings",
-        "label": "Synonym Mappings"
-      },
-      {
         "id": "urn:ngm:class:term-definitions",
         "label": "Term Definitions"
-      },
-      {
-        "id": "urn:ngm:class:usage-examples",
-        "label": "Usage Examples"
       },
       {
         "id": "urn:ngm:class:category-hierarchies",
@@ -39,10 +27,6 @@
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:multi-language-support",
-        "label": "Multi-Language Support"
-      },
       {
         "id": "urn:ngm:class:metaverse-ontology-schema",
         "label": "Metaverse Ontology Schema"
@@ -56,10 +40,6 @@
       {
         "id": "urn:ngm:class:consistency-checking",
         "label": "Consistency Checking"
-      },
-      {
-        "id": "urn:ngm:class:terminology-lookup",
-        "label": "Terminology Lookup"
       },
       {
         "id": "urn:ngm:class:learning-resources",
@@ -82,16 +62,7 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:documentation-system",
-        "label": "Documentation System"
-      },
-      {
-        "id": "urn:ngm:class:knowledge-management-infrastructure",
-        "label": "Knowledge Management Infrastructure"
-      }
-    ],
+    "partOf": [],
     "relatedTo": []
   },
   "wikilinks": [

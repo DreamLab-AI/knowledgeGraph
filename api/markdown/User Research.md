@@ -51,52 +51,113 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:usability-testing", "label": "Usability Testing"},
-      {"@id": "urn:ngm:class:contextual-inquiry", "label": "Contextual Inquiry"},
-      {"@id": "urn:ngm:class:think-aloud-protocol", "label": "Think Aloud Protocol"}
+      {
+        "@id": "urn:ngm:class:usability-testing",
+        "label": "Usability Testing"
+      },
+      {
+        "@id": "urn:ngm:class:think-aloud-protocol",
+        "label": "Think Aloud Protocol"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:ux-design-process", "label": "UX Design Process"},
-      {"@id": "urn:ngm:class:human-centred-design", "label": "Human Centred Design"}
+      {
+        "@id": "urn:ngm:class:human-centred-design",
+        "label": "Human Centred Design"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:participant-recruitment", "label": "Participant Recruitment"},
-      {"@id": "urn:ngm:class:informed-consent", "label": "Informed Consent"}
+      {
+        "@id": "urn:ngm:class:participant-recruitment",
+        "label": "Participant Recruitment"
+      },
+      {
+        "@id": "urn:ngm:class:informed-consent",
+        "label": "Informed Consent"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:experience-design", "label": "Experience Design"},
-      {"@id": "urn:ngm:class:interaction-design", "label": "Interaction Design"},
-      {"@id": "urn:ngm:class:evidence-based-design", "label": "Evidence Based Design"}
+      {
+        "@id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      },
+      {
+        "@id": "urn:ngm:class:evidence-based-design",
+        "label": "Evidence Based Design"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"},
-      {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
-      {"@id": "urn:ngm:class:telemetry", "label": "Telemetry"},
-      {"@id": "urn:ngm:class:biometric-sensor", "label": "Biometric Sensor"}
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"},
-      {"@id": "urn:ngm:class:inclusive-design", "label": "Inclusive Design"}
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:inclusive-design",
+        "label": "Inclusive Design"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:market-research", "label": "Market Research"},
-      {"@id": "urn:ngm:class:expert-review", "label": "Expert Review"}
+      {
+        "@id": "urn:ngm:class:market-research",
+        "label": "Market Research"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:data-analysis", "label": "Data Analysis"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:data-analysis",
+        "label": "Data Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:presence", "label": "Presence"},
-      {"@id": "urn:ngm:class:cybersickness", "label": "Cybersickness"}
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:presence",
+        "label": "Presence"
+      },
+      {
+        "@id": "urn:ngm:class:cybersickness",
+        "label": "Cybersickness"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ux-research", "label": "UX Research"},
-    {"@id": "urn:ngm:class:human-factors-research", "label": "Human Factors Research"}
+    {
+      "@id": "urn:ngm:class:ux-research",
+      "label": "UX Research"
+    },
+    {
+      "@id": "urn:ngm:class:human-factors-research",
+      "label": "Human Factors Research"
+    }
   ],
   "quality": 0.72,
   "provenance": {

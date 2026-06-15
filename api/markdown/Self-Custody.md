@@ -38,43 +38,111 @@ alias:: Self Custody
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:non-custodial-storage", "label": "Non-Custodial Storage"},
-    {"@id": "urn:ngm:class:sovereign-custody", "label": "Sovereign Custody"}
+    {
+      "@id": "urn:ngm:class:non-custodial-storage",
+      "label": "Non-Custodial Storage"
+    },
+    {
+      "@id": "urn:ngm:class:sovereign-custody",
+      "label": "Sovereign Custody"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:private-key", "label": "Private Key"},
-      {"@id": "urn:ngm:class:seed-phrase", "label": "Seed Phrase"},
-      {"@id": "urn:ngm:class:secure-random-number-generation", "label": "Secure Random Number Generation"}
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "@id": "urn:ngm:class:seed-phrase",
+        "label": "Seed Phrase"
+      },
+      {
+        "@id": "urn:ngm:class:random-number-generation",
+        "label": "Secure Random Number Generation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:wallet", "label": "Wallet"},
-      {"@id": "urn:ngm:class:hardware-wallet", "label": "Hardware Wallet"},
-      {"@id": "urn:ngm:class:multi-signature", "label": "Multi-Signature"},
-      {"@id": "urn:ngm:class:threshold-signature-scheme", "label": "Threshold Signature Scheme"},
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:hierarchical-deterministic-wallet", "label": "Hierarchical Deterministic Wallet"}
+      {
+        "@id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-wallet",
+        "label": "Hardware Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:multi-signature",
+        "label": "Multi-Signature"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:hierarchical-deterministic-wallet",
+        "label": "Hierarchical Deterministic Wallet"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:financial-sovereignty", "label": "Financial Sovereignty"},
-      {"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:financial-sovereignty",
+        "label": "Financial Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:custodial-exchange", "label": "Custodial Exchange"},
-      {"@id": "urn:ngm:class:third-party-custody", "label": "Third-Party Custody"},
-      {"@id": "urn:ngm:class:qualified-custodian", "label": "Qualified Custodian"}
+      {
+        "@id": "urn:ngm:class:custodial-exchange",
+        "label": "Custodial Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:qualified-custodian",
+        "label": "Qualified Custodian"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
-      {"@id": "urn:ngm:class:bitcoin", "label": "Bitcoin"},
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:social-recovery-wallet", "label": "Social Recovery Wallet"},
-      {"@id": "urn:ngm:class:air-gap", "label": "Air Gap"}
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:social-recovery-wallet",
+        "label": "Social Recovery Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:air-gap",
+        "label": "Air Gap"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"}
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
+      }
     ]
   },
   "quality": 0.74,

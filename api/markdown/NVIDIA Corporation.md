@@ -73,10 +73,6 @@ elevatedFrom:: [[NVIDIA]]
       {
         "@id": "urn:ngm:class:nvlink",
         "label": "NVLink"
-      },
-      {
-        "@id": "urn:ngm:class:nvidia-dgx",
-        "label": "NVIDIA DGX"
       }
     ],
     "requires": [
@@ -115,10 +111,6 @@ elevatedFrom:: [[NVIDIA]]
       {
         "@id": "urn:ngm:class:parallel-computing",
         "label": "Parallel Computing"
-      },
-      {
-        "@id": "urn:ngm:class:tsmc",
-        "label": "TSMC"
       }
     ],
     "supports": [
@@ -141,15 +133,11 @@ elevatedFrom:: [[NVIDIA]]
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:amd",
-        "label": "AMD"
-      },
-      {
-        "@id": "urn:ngm:class:intel-corporation",
+        "@id": "urn:ngm:class:intel",
         "label": "Intel Corporation"
       },
       {
-        "@id": "urn:ngm:class:google-tpu",
+        "@id": "urn:ngm:class:tpu",
         "label": "Google TPU"
       }
     ],

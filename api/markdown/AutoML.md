@@ -223,7 +223,7 @@ alias:: Auto-ML
         "label": "Algorithm Selection"
       },
       {
-        "@id": "urn:ngm:class:feature-engineering-automation",
+        "@id": "urn:ngm:class:feature-engineering",
         "label": "Feature Engineering Automation"
       },
       {
@@ -239,7 +239,7 @@ alias:: Auto-ML
         "label": "Neural Architecture Search"
       },
       {
-        "@id": "urn:ngm:class:pipeline-optimisation",
+        "@id": "urn:ngm:class:optimisation",
         "label": "Pipeline Optimisation"
       }
     ],
@@ -263,19 +263,11 @@ alias:: Auto-ML
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:democratised-ml-development",
-        "label": "Democratised ML Development"
-      },
-      {
-        "@id": "urn:ngm:class:rapid-model-iteration",
-        "label": "Rapid Model Iteration"
-      },
-      {
         "@id": "urn:ngm:class:reproducible-experiments",
         "label": "Reproducible Experiments"
       },
       {
-        "@id": "urn:ngm:class:resource-efficient-training",
+        "@id": "urn:ngm:class:resource-efficiency",
         "label": "Resource-Efficient Training"
       }
     ],
@@ -285,27 +277,33 @@ alias:: Auto-ML
         "label": "Bayesian Optimisation"
       },
       {
-        "@id": "urn:ngm:class:darts-differentiable-nas",
+        "@id": "urn:ngm:class:differentiable-architecture",
         "label": "DARTS Differentiable NAS"
       },
       {
-        "@id": "urn:ngm:class:evolutionary-neural-architecture-search",
+        "@id": "urn:ngm:class:neural-architecture-search",
         "label": "Evolutionary Neural Architecture Search"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:ai-development-lifecycle",
+        "@id": "urn:ngm:class:ai-lifecycle",
         "label": "AI Development Lifecycle"
       },
       {
-        "@id": "urn:ngm:class:mlops-platform",
+        "@id": "urn:ngm:class:mlops",
         "label": "MLOps Platform"
       }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
     ]
   },
   "quality": 0.6,

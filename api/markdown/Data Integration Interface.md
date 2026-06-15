@@ -142,20 +142,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:data-adapter",
-        "label": "Data Adapter"
-      },
-      {
         "@id": "urn:ngm:class:message-broker",
         "label": "Message Broker"
-      },
-      {
-        "@id": "urn:ngm:class:protocol-translator",
-        "label": "Protocol Translator"
-      },
-      {
-        "@id": "urn:ngm:class:schema-mapper",
-        "label": "Schema Mapper"
       }
     ],
     "requires": [
@@ -173,10 +161,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:cross-platform-data-exchange",
-        "label": "Cross-Platform Data Exchange"
-      },
       {
         "@id": "urn:ngm:class:data-federation",
         "label": "Data Federation"

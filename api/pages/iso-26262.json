@@ -18,19 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:asil",
-        "label": "ASIL (Automotive Safety Integrity Level)"
-      },
-      {
-        "id": "urn:ngm:class:hara",
-        "label": "Hazard Analysis and Risk Assessment"
-      },
-      {
         "id": "urn:ngm:class:safety-case",
         "label": "Safety Case"
       },
       {
-        "id": "urn:ngm:class:functional-safety-management",
+        "id": "urn:ngm:class:functional-safety",
         "label": "Functional Safety Management"
       }
     ],
@@ -66,7 +58,7 @@
         "label": "Self Driving Car"
       },
       {
-        "id": "urn:ngm:class:automotive-embedded-system",
+        "id": "urn:ngm:class:embedded-systems",
         "label": "Automotive Embedded System"
       }
     ],
@@ -104,23 +96,10 @@
       {
         "id": "urn:ngm:class:fmea",
         "label": "FMEA"
-      },
-      {
-        "id": "urn:ngm:class:fta",
-        "label": "Fault Tree Analysis"
-      },
-      {
-        "id": "urn:ngm:class:mc-dc-coverage",
-        "label": "MC/DC Coverage"
       }
     ],
     "supports": [],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:iso-technical-committee-22",
-        "label": "ISO Technical Committee 22"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
@@ -132,7 +111,7 @@
         "label": "IEC 61508"
       },
       {
-        "id": "urn:ngm:class:do-178c",
+        "id": "urn:ngm:class:do-178-c",
         "label": "DO-178C"
       },
       {

@@ -147,11 +147,11 @@ alias:: RB-1011-cobot-safety-levels
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:force-limiting",
+        "@id": "urn:ngm:class:rb-0094-power-and-force-limiting",
         "label": "Force Limiting"
       },
       {
-        "@id": "urn:ngm:class:speed-monitoring",
+        "@id": "urn:ngm:class:rb-0105-speed-and-separation-monitoring",
         "label": "Speed Monitoring"
       }
     ]

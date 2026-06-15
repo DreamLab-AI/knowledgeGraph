@@ -437,36 +437,15 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:agile-software-development", "label": "Agile Software Development"}
+      {
+        "@id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Software Development"
+      }
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:audio-video-channel",
-        "label": "Audio/Video Channel"
-      },
-      {
-        "@id": "urn:ngm:class:cursor-synchronisation",
-        "label": "Cursor Synchronisation"
-      },
-      {
-        "@id": "urn:ngm:class:driver-role",
-        "label": "Driver Role"
-      },
-      {
-        "@id": "urn:ngm:class:navigator-role",
-        "label": "Navigator Role"
-      },
-      {
-        "@id": "urn:ngm:class:role-rotation-protocol",
-        "label": "Role Rotation Protocol"
-      },
-      {
         "@id": "urn:ngm:class:session-recording",
         "label": "Session Recording"
-      },
-      {
-        "@id": "urn:ngm:class:shared-code-editor",
-        "label": "Shared Code Editor"
       },
       {
         "@id": "urn:ngm:class:screen-sharing",
@@ -475,16 +454,8 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:real-time-collaborative-editor",
+        "@id": "urn:ngm:class:real-time-collaborative-editing",
         "label": "Real-time Collaborative Editor"
-      },
-      {
-        "@id": "urn:ngm:class:shared-development-environment",
-        "label": "Shared Development Environment"
-      },
-      {
-        "@id": "urn:ngm:class:stable-network-connection",
-        "label": "Stable Network Connection"
       },
       {
         "@id": "urn:ngm:class:communication-protocol",
@@ -497,42 +468,14 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:code-quality-assurance",
-        "label": "Code Quality Assurance"
-      },
-      {
-        "@id": "urn:ngm:class:collective-code-ownership",
-        "label": "Collective Code Ownership"
-      },
-      {
-        "@id": "urn:ngm:class:continuous-learning",
-        "label": "Continuous Learning"
-      },
-      {
-        "@id": "urn:ngm:class:distributed-code-review",
-        "label": "Distributed Code Review"
-      },
-      {
         "@id": "urn:ngm:class:knowledge-transfer",
         "label": "Knowledge Transfer"
-      },
-      {
-        "@id": "urn:ngm:class:onboarding-acceleration",
-        "label": "Onboarding Acceleration"
-      },
-      {
-        "@id": "urn:ngm:class:real-time-debugging",
-        "label": "Real-time Debugging"
       }
     ],
     "implements": [
       {
         "@id": "urn:ngm:class:continuous-integration",
         "label": "Continuous Integration"
-      },
-      {
-        "@id": "urn:ngm:class:driver-navigator-pattern",
-        "label": "Driver/Navigator Pattern"
       },
       {
         "@id": "urn:ngm:class:extreme-programming",
@@ -545,36 +488,6 @@ public:: true
       {
         "@id": "urn:ngm:class:test-driven-development",
         "label": "Test-Driven Development"
-      }
-    ],
-    "uses": [
-      {
-        "@id": "urn:ngm:class:floobits",
-        "label": "Floobits"
-      },
-      {
-        "@id": "urn:ngm:class:git-hub-codespaces",
-        "label": "GitHub Codespaces"
-      },
-      {
-        "@id": "urn:ngm:class:jet-brains-code-with-me",
-        "label": "JetBrains Code With Me"
-      },
-      {
-        "@id": "urn:ngm:class:neovim",
-        "label": "Neovim"
-      },
-      {
-        "@id": "urn:ngm:class:tmux",
-        "label": "tmux"
-      },
-      {
-        "@id": "urn:ngm:class:tuple",
-        "label": "Tuple"
-      },
-      {
-        "@id": "urn:ngm:class:vs-code-live-share",
-        "label": "VS Code Live Share"
       }
     ],
     "relatedTo": [
@@ -595,10 +508,6 @@ public:: true
         "label": "Extreme Programming"
       },
       {
-        "@id": "urn:ngm:class:git-hub-copilot",
-        "label": "GitHub Copilot"
-      },
-      {
         "@id": "urn:ngm:class:knowledge-transfer",
         "label": "Knowledge Transfer"
       },
@@ -613,34 +522,18 @@ public:: true
         "label": "Agile Software Development"
       },
       {
-        "@id": "urn:ngm:class:dev-ops-practices",
-        "label": "DevOps Practices"
-      },
-      {
         "@id": "urn:ngm:class:distributed-team-collaboration",
         "label": "Distributed Team Collaboration"
       },
       {
         "@id": "urn:ngm:class:open-source-development",
         "label": "Open Source Development"
-      },
-      {
-        "@id": "urn:ngm:class:pair-rotation-scheduling",
-        "label": "Pair Rotation Scheduling"
       }
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:agile-manifesto-2001",
-        "label": "Agile Manifesto (2001)"
-      },
-      {
-        "@id": "urn:ngm:class:extreme-programming-explained-beck-1999",
+        "@id": "urn:ngm:class:extreme-programming",
         "label": "Extreme Programming Explained (Beck 1999)"
-      },
-      {
-        "@id": "urn:ngm:class:team-topologies-skelton-and-pais-2019",
-        "label": "Team Topologies (Skelton & Pais 2019)"
       }
     ]
   },

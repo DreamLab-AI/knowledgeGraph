@@ -38,54 +38,113 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:autoregressive-generation", "label": "Autoregressive Generation"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:kv-cache", "label": "KV Cache"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:autoregressive-generation",
+        "label": "Autoregressive Generation"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:low-latency-inference", "label": "Low-Latency Inference"},
-      {"@id": "urn:ngm:class:real-time-text-generation", "label": "Real-Time Text Generation"},
-      {"@id": "urn:ngm:class:llm-serving", "label": "LLM Serving"}
+      {
+        "@id": "urn:ngm:class:low-latency-inference",
+        "label": "Low-Latency Inference"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:draft-model", "label": "Draft Model"},
-      {"@id": "urn:ngm:class:inference-hardware", "label": "Inference Hardware"},
-      {"@id": "urn:ngm:class:shared-vocabulary", "label": "Shared Vocabulary"}
+      {
+        "@id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:token-verification", "label": "Token Verification"},
-      {"@id": "urn:ngm:class:rejection-sampling", "label": "Rejection Sampling"},
-      {"@id": "urn:ngm:class:acceptance-criterion", "label": "Acceptance Criterion"}
+      {
+        "@id": "urn:ngm:class:rejection-sampling",
+        "label": "Rejection Sampling"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:parallel-computation", "label": "Parallel Computation"},
-      {"@id": "urn:ngm:class:gpu-accelerated-inference", "label": "GPU Accelerated Inference"}
+      {
+        "@id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:autoregressive-decoding", "label": "Autoregressive Decoding"},
-      {"@id": "urn:ngm:class:beam-search", "label": "Beam Search"},
-      {"@id": "urn:ngm:class:greedy-decoding", "label": "Greedy Decoding"}
+      {
+        "@id": "urn:ngm:class:autoregressive-decoding",
+        "label": "Autoregressive Decoding"
+      },
+      {
+        "@id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      },
+      {
+        "@id": "urn:ngm:class:greedy-decoding",
+        "label": "Greedy Decoding"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-quantisation", "label": "Model Quantisation"},
-      {"@id": "urn:ngm:class:model-distillation", "label": "Model Distillation"},
-      {"@id": "urn:ngm:class:continuous-batching", "label": "Continuous Batching"},
-      {"@id": "urn:ngm:class:context-window", "label": "Context Window"},
-      {"@id": "urn:ngm:class:sampling-strategies", "label": "Sampling Strategies"},
-      {"@id": "urn:ngm:class:model-compression-for-edge", "label": "Model Compression for Edge"}
+      {
+        "@id": "urn:ngm:class:neural-network-quantisation",
+        "label": "Model Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Model Distillation"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-batching",
+        "label": "Continuous Batching"
+      },
+      {
+        "@id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "@id": "urn:ngm:class:sampling",
+        "label": "Sampling Strategies"
+      },
+      {
+        "@id": "urn:ngm:class:model-compression-for-edge",
+        "label": "Model Compression for Edge"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:rejection-sampling", "label": "Rejection Sampling"}
+      {
+        "@id": "urn:ngm:class:rejection-sampling",
+        "label": "Rejection Sampling"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:edge-ai", "label": "Edge AI"},
-      {"@id": "urn:ngm:class:real-time-systems", "label": "Real-Time Systems"}
+      {
+        "@id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-systems",
+        "label": "Real-Time Systems"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:assisted-decoding", "label": "Assisted Decoding"},
-    {"@id": "urn:ngm:class:draft-and-verify", "label": "Draft and Verify"}
+    {
+      "@id": "urn:ngm:class:assisted-decoding",
+      "label": "Assisted Decoding"
+    },
+    {
+      "@id": "urn:ngm:class:draft-and-verify",
+      "label": "Draft and Verify"
+    }
   ],
   "qualityScore": 0.76,
   "provenance": {

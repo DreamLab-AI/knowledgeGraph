@@ -45,7 +45,7 @@
         "label": "E-Commerce"
       },
       {
-        "id": "urn:ngm:class:digital-advertising",
+        "id": "urn:ngm:class:advertising",
         "label": "Digital Advertising"
       },
       {
@@ -110,7 +110,7 @@
         "label": "Transformer Architecture"
       },
       {
-        "id": "urn:ngm:class:approximate-nearest-neighbour-search",
+        "id": "urn:ngm:class:nearest-neighbor-search",
         "label": "Approximate Nearest Neighbour Search"
       }
     ],

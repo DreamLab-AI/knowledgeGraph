@@ -44,11 +44,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:energy-supply",
-        "label": "Energy Supply"
-      },
-      {
-        "id": "urn:ngm:class:cooling-systems",
+        "id": "urn:ngm:class:cooling-system",
         "label": "Cooling Systems"
       },
       {
@@ -81,12 +77,7 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:edge-infrastructure",
-        "label": "Edge Infrastructure"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:artificial-intelligence",

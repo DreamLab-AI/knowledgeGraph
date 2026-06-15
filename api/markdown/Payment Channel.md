@@ -25,61 +25,136 @@ alias:: payment-channel
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:off-chain-scaling", "label": "Off-Chain Scaling"}
+    {
+      "@id": "urn:ngm:class:off-chain-scaling",
+      "label": "Off-Chain Scaling"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:commitment-transaction", "label": "Commitment Transaction"},
-      {"@id": "urn:ngm:class:revocation-mechanism", "label": "Revocation Mechanism"},
-      {"@id": "urn:ngm:class:funding-transaction", "label": "Funding Transaction"}
+      {
+        "@id": "urn:ngm:class:revocation-mechanism",
+        "label": "Revocation Mechanism"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:layer-2-solutions", "label": "Layer 2 Solutions"},
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"}
+      {
+        "@id": "urn:ngm:class:layer-2-solutions",
+        "label": "Layer 2 Solutions"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:multisignature", "label": "Multisignature"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+      {
+        "@id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:micropayment", "label": "Micropayment"},
-      {"@id": "urn:ngm:class:streaming-payment", "label": "Streaming Payment"},
-      {"@id": "urn:ngm:class:payment-routing", "label": "Payment Routing"}
+      {
+        "@id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      },
+      {
+        "@id": "urn:ngm:class:streaming-payment",
+        "label": "Streaming Payment"
+      },
+      {
+        "@id": "urn:ngm:class:payment-routing",
+        "label": "Payment Routing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:hash-time-locked-contract", "label": "Hash Time-Locked Contract"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:timelock", "label": "Timelock"}
+      {
+        "@id": "urn:ngm:class:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:timelock",
+        "label": "Timelock"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:on-chain-settlement", "label": "On-Chain Settlement"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}
+      {
+        "@id": "urn:ngm:class:on-chain-settlement",
+        "label": "On-Chain Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:off-chain-scaling", "label": "Off-Chain Scaling"}
+      {
+        "@id": "urn:ngm:class:off-chain-scaling",
+        "label": "Off-Chain Scaling"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:on-chain-transaction", "label": "On-Chain Transaction"},
-      {"@id": "urn:ngm:class:rollup", "label": "Rollup"}
+      {
+        "@id": "urn:ngm:class:on-chain-transaction",
+        "label": "On-Chain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-economy", "label": "Machine Economy"},
-      {"@id": "urn:ngm:class:iot-payments", "label": "IoT Payments"}
+      {
+        "@id": "urn:ngm:class:machine-economy",
+        "label": "Machine Economy"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:settlement", "label": "Settlement"},
-      {"@id": "urn:ngm:class:state-channel", "label": "State Channel"},
-      {"@id": "urn:ngm:class:channel-factory", "label": "Channel Factory"},
-      {"@id": "urn:ngm:class:atomic-swap", "label": "Atomic Swap"}
+      {
+        "@id": "urn:ngm:class:settlement",
+        "label": "Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      },
+      {
+        "@id": "urn:ngm:class:channel-factory",
+        "label": "Channel Factory"
+      },
+      {
+        "@id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:bidirectional-payment-channel", "label": "Bidirectional Payment Channel"}
+    {
+      "@id": "urn:ngm:class:bidirectional-payment-channel",
+      "label": "Bidirectional Payment Channel"
+    }
   ],
   "quality": 0.74,
   "provenance": {

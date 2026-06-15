@@ -38,49 +38,115 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:iri", "label": "IRI"},
-      {"@id": "urn:ngm:class:json", "label": "JSON"}
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:iri",
+        "label": "IRI"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format",
+        "label": "JSON"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:semantic-interoperability", "label": "Semantic Interoperability"},
-      {"@id": "urn:ngm:class:linked-data-platform", "label": "Linked Data Platform"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:decentralised-identifiers", "label": "Decentralised Identifiers"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data-platform",
+        "label": "Linked Data Platform"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identifiers",
+        "label": "Decentralised Identifiers"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:context-document", "label": "Context Document"},
-      {"@id": "urn:ngm:class:rdf-dataset", "label": "RDF Dataset"}
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
-      {"@id": "urn:ngm:class:owl2", "label": "OWL2"}
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web Linked Data Standard"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:world-wide-web-consortium", "label": "World Wide Web Consortium"}
+      {
+        "@id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:turtle-rdf-serialisation", "label": "Turtle"},
-      {"@id": "urn:ngm:class:rdf-xml", "label": "RDF/XML"},
-      {"@id": "urn:ngm:class:n-triples", "label": "N-Triples"},
-      {"@id": "urn:ngm:class:json-schema", "label": "JSON Schema"}
+      {
+        "@id": "urn:ngm:class:turtle",
+        "label": "Turtle"
+      },
+      {
+        "@id": "urn:ngm:class:rdf-xml",
+        "label": "RDF/XML"
+      },
+      {
+        "@id": "urn:ngm:class:n-triples",
+        "label": "N-Triples"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
+        "label": "JSON Schema"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:sparql", "label": "SPARQL"},
-      {"@id": "urn:ngm:class:activitypub", "label": "ActivityPub"},
-      {"@id": "urn:ngm:class:solid-protocol", "label": "Solid Protocol"},
-      {"@id": "urn:ngm:class:schema-org", "label": "Schema.org"}
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "@id": "urn:ngm:class:activitypub",
+        "label": "ActivityPub"
+      },
+      {
+        "@id": "urn:ngm:class:solid",
+        "label": "Solid Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:schema-org",
+        "label": "Schema.org"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:decentralised-identifiers", "label": "Decentralised Identifiers"},
-      {"@id": "urn:ngm:class:knowledge-graph-embedding", "label": "Knowledge Graph Embedding"}
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identifiers",
+        "label": "Decentralised Identifiers"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-embedding",
+        "label": "Knowledge Graph Embedding"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:json-linked-data-1-1", "label": "JSON Linked Data 1.1"}
+    {
+      "@id": "urn:ngm:class:json-linked-data-1-1",
+      "label": "JSON Linked Data 1.1"
+    }
   ],
   "quality": 0.74,
   "provenance": {

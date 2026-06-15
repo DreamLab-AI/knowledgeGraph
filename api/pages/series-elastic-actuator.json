@@ -26,11 +26,11 @@
         "label": "Rotary Encoder"
       },
       {
-        "id": "urn:ngm:class:gearbox",
+        "id": "urn:ngm:class:planetary-gearbox",
         "label": "Gearbox"
       },
       {
-        "id": "urn:ngm:class:torque-control-loop",
+        "id": "urn:ngm:class:torque-control",
         "label": "Torque Control Loop"
       }
     ],
@@ -60,10 +60,6 @@
       {
         "id": "urn:ngm:class:legged-locomotion",
         "label": "Legged Locomotion"
-      },
-      {
-        "id": "urn:ngm:class:prosthetic-limb",
-        "label": "Prosthetic Limb"
       }
     ],
     "dependsOn": [],
@@ -73,13 +69,13 @@
         "label": "Series Elastic Actuation"
       },
       {
-        "id": "urn:ngm:class:force-torque-estimation",
+        "id": "urn:ngm:class:force-torque-sensor",
         "label": "Force Torque Estimation"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:quasi-direct-drive-actuator",
+        "id": "urn:ngm:class:quasi-direct-drive",
         "label": "Quasi Direct Drive Actuator"
       },
       {
@@ -87,7 +83,7 @@
         "label": "Hydraulic Actuator"
       },
       {
-        "id": "urn:ngm:class:rigid-actuator",
+        "id": "urn:ngm:class:actuator",
         "label": "Rigid Actuator"
       }
     ],
@@ -97,7 +93,7 @@
         "label": "Biomechanics"
       },
       {
-        "id": "urn:ngm:class:physical-human-robot-interaction-safety",
+        "id": "urn:ngm:class:safe-human-robot-interaction",
         "label": "Physical Human Robot Interaction Safety"
       }
     ],
@@ -144,11 +140,11 @@
         "label": "Humanoid Robot"
       },
       {
-        "id": "urn:ngm:class:collaborative-robot",
+        "id": "urn:ngm:class:collaborative-systems-modality-robot",
         "label": "Collaborative Robot"
       },
       {
-        "id": "urn:ngm:class:powered-exoskeleton",
+        "id": "urn:ngm:class:exoskeleton",
         "label": "Powered Exoskeleton"
       }
     ],
@@ -162,12 +158,8 @@
         "label": "Variable Stiffness Actuator"
       },
       {
-        "id": "urn:ngm:class:proprioceptive-actuator",
+        "id": "urn:ngm:class:actuator",
         "label": "Proprioceptive Actuator"
-      },
-      {
-        "id": "urn:ngm:class:robotic-joint",
-        "label": "Robotic Joint"
       }
     ]
   },

@@ -36,53 +36,113 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:cublas", "label": "cuBLAS"},
-      {"@id": "urn:ngm:class:cudnn", "label": "cuDNN"},
-      {"@id": "urn:ngm:class:nccl", "label": "NCCL"},
-      {"@id": "urn:ngm:class:tensor-core", "label": "Tensor Core"}
+      {
+        "@id": "urn:ngm:class:tensor-core",
+        "label": "Tensor Core"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:nvidia-gpu", "label": "NVIDIA GPU"}
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:nvidia-gpu",
+        "label": "NVIDIA GPU"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:training", "label": "Training"},
-      {"@id": "urn:ngm:class:inference", "label": "Inference"},
-      {"@id": "urn:ngm:class:mixed-precision-training", "label": "Mixed Precision Training"},
-      {"@id": "urn:ngm:class:scientific-computing", "label": "Scientific Computing"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:training",
+        "label": "Training"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-framework", "label": "Machine Learning Framework"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-framework",
+        "label": "Machine Learning Framework"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:simt-execution", "label": "SIMT Execution"},
-      {"@id": "urn:ngm:class:shared-memory", "label": "Shared Memory"}
+      {
+        "@id": "urn:ngm:class:shared-memory",
+        "label": "Shared Memory"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rocm", "label": "ROCm"},
-      {"@id": "urn:ngm:class:oneapi", "label": "oneAPI"},
-      {"@id": "urn:ngm:class:opencl", "label": "OpenCL"},
-      {"@id": "urn:ngm:class:metal-compute", "label": "Metal Compute"}
+      {
+        "@id": "urn:ngm:class:rocm",
+        "label": "ROCm"
+      },
+      {
+        "@id": "urn:ngm:class:opencl",
+        "label": "OpenCL"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:gpu-accelerated-rendering", "label": "GPU Accelerated Rendering"},
-      {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"}
+      {
+        "@id": "urn:ngm:class:gpu-rendering",
+        "label": "GPU Accelerated Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:pytorch", "label": "PyTorch"},
-      {"@id": "urn:ngm:class:tensorflow", "label": "TensorFlow"},
-      {"@id": "urn:ngm:class:gpu-memory-bandwidth", "label": "GPU Memory Bandwidth"}
+      {
+        "@id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "label": "PyTorch"
+      },
+      {
+        "@id": "urn:ngm:class:tensorflow",
+        "label": "TensorFlow"
+      },
+      {
+        "@id": "urn:ngm:class:memory-bandwidth",
+        "label": "GPU Memory Bandwidth"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:compute-unified-device-architecture", "label": "Compute Unified Device Architecture"}
+    {
+      "@id": "urn:ngm:class:compute-unified-device-architecture",
+      "label": "Compute Unified Device Architecture"
+    }
   ],
   "quality": 0.72,
   "provenance": {

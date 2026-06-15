@@ -22,10 +22,6 @@
         "label": "Relational Database"
       },
       {
-        "id": "urn:ngm:class:wiki",
-        "label": "Wiki"
-      },
-      {
         "id": "urn:ngm:class:kanban-board",
         "label": "Kanban Board"
       }
@@ -68,14 +64,6 @@
       {
         "id": "urn:ngm:class:confluence",
         "label": "Confluence"
-      },
-      {
-        "id": "urn:ngm:class:microsoft-loop",
-        "label": "Microsoft Loop"
-      },
-      {
-        "id": "urn:ngm:class:obsidian",
-        "label": "Obsidian"
       }
     ],
     "bridgesTo": [
@@ -84,7 +72,7 @@
         "label": "Artificial Intelligence"
       },
       {
-        "id": "urn:ngm:class:enterprise-software",
+        "id": "urn:ngm:class:enterprise-software-platform",
         "label": "Enterprise Software"
       }
     ],
@@ -116,7 +104,7 @@
         "label": "Remote Work"
       },
       {
-        "id": "urn:ngm:class:distributed-team",
+        "id": "urn:ngm:class:distributed-teams",
         "label": "Distributed Team"
       }
     ],

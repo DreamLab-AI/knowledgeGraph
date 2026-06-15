@@ -134,10 +134,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:3-d-scanner",
-        "label": "3D Scanner"
-      },
-      {
         "@id": "urn:ngm:class:depth-sensor",
         "label": "Depth Sensor"
       },
@@ -146,11 +142,7 @@ public:: true
         "label": "LiDAR Sensor"
       },
       {
-        "@id": "urn:ngm:class:photogrammetry-camera",
-        "label": "Photogrammetry Camera"
-      },
-      {
-        "@id": "urn:ngm:class:point-cloud-processor",
+        "@id": "urn:ngm:class:point-cloud-processing",
         "label": "Point Cloud Processor"
       },
       {
@@ -178,12 +170,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:3-d-model-generation",
+        "@id": "urn:ngm:class:3-d-generation",
         "label": "3D Model Generation"
-      },
-      {
-        "@id": "urn:ngm:class:environment-reconstruction",
-        "label": "Environment Reconstruction"
       },
       {
         "@id": "urn:ngm:class:visual-representation",

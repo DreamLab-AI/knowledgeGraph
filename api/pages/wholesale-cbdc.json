@@ -23,7 +23,7 @@
         "label": "KYC/AML Compliance"
       },
       {
-        "id": "urn:ngm:class:central-bank-oversight",
+        "id": "urn:ngm:class:central-bank",
         "label": "Central Bank Oversight"
       }
     ],
@@ -81,7 +81,7 @@
         "label": "Interoperability Protocol"
       },
       {
-        "id": "urn:ngm:class:permissioned-distributed-ledger",
+        "id": "urn:ngm:class:distributed-ledger",
         "label": "Permissioned Distributed Ledger"
       },
       {

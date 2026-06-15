@@ -61,46 +61,10 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:pay-as-you-earn",
-        "label": "Pay As You Earn"
-      },
-      {
-        "@id": "urn:ngm:class:making-tax-digital",
-        "label": "Making Tax Digital"
-      },
-      {
-        "@id": "urn:ngm:class:self-assessment",
-        "label": "Self Assessment"
-      },
-      {
-        "@id": "urn:ngm:class:customs-and-excise",
-        "label": "Customs and Excise"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:uk-government",
-        "label": "UK Government"
-      },
-      {
-        "@id": "urn:ngm:class:public-sector",
-        "label": "Public Sector"
-      }
-    ],
     "enables": [
       {
         "@id": "urn:ngm:class:corporate-tax-compliance-framework",
         "label": "Corporate Tax Compliance Framework"
-      },
-      {
-        "@id": "urn:ngm:class:tax-collection",
-        "label": "Tax Collection"
-      },
-      {
-        "@id": "urn:ngm:class:vat-administration",
-        "label": "VAT Administration"
       }
     ],
     "requires": [
@@ -115,10 +79,6 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:uk-tax-law",
-        "label": "UK Tax Law"
-      },
-      {
         "@id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
       }
@@ -129,13 +89,13 @@ public:: true
         "label": "Financial Regulation"
       },
       {
-        "@id": "urn:ngm:class:aml-compliance",
+        "@id": "urn:ngm:class:aml-kyc-compliance",
         "label": "AML Compliance"
       }
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:regulatory-body",
+        "@id": "urn:ngm:class:regulatory-authority",
         "label": "Regulatory Body"
       },
       {
@@ -143,16 +103,8 @@ public:: true
         "label": "FCA"
       },
       {
-        "@id": "urn:ngm:class:treasury",
+        "@id": "urn:ngm:class:hm-treasury",
         "label": "HM Treasury"
-      },
-      {
-        "@id": "urn:ngm:class:companies-house",
-        "label": "Companies House"
-      },
-      {
-        "@id": "urn:ngm:class:oecd-tax-framework",
-        "label": "OECD Tax Framework"
       }
     ],
     "bridgesTo": [
@@ -161,26 +113,12 @@ public:: true
         "label": "Cryptocurrency"
       },
       {
-        "@id": "urn:ngm:class:cryptoasset-taxation",
-        "label": "Cryptoasset Taxation"
-      },
-      {
         "@id": "urn:ngm:class:open-banking",
         "label": "Open Banking"
       },
       {
         "@id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:irs",
-        "label": "IRS"
-      },
-      {
-        "@id": "urn:ngm:class:european-tax-authority",
-        "label": "European Tax Authority"
       }
     ]
   },

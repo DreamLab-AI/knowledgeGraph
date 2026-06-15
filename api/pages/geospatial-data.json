@@ -18,20 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:vector-data",
-        "label": "Vector Data"
-      },
-      {
-        "id": "urn:ngm:class:raster-data",
-        "label": "Raster Data"
-      },
-      {
         "id": "urn:ngm:class:point-cloud-generation",
         "label": "Point Cloud Generation"
-      },
-      {
-        "id": "urn:ngm:class:digital-elevation-model",
-        "label": "Digital Elevation Model"
       }
     ],
     "requires": [
@@ -77,12 +65,7 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:tabular-data",
-        "label": "Tabular Data"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:augmented-reality",
@@ -101,10 +84,6 @@
       {
         "id": "urn:ngm:class:spatial-index",
         "label": "Spatial Index"
-      },
-      {
-        "id": "urn:ngm:class:map-projection",
-        "label": "Map Projection"
       }
     ],
     "supports": [],
@@ -114,7 +93,7 @@
         "label": "Open Geospatial Consortium"
       },
       {
-        "id": "urn:ngm:class:iso-19100-series",
+        "id": "urn:ngm:class:iso",
         "label": "ISO 19100 Series"
       }
     ],
@@ -136,10 +115,6 @@
       {
         "id": "urn:ngm:class:lidar",
         "label": "Lidar"
-      },
-      {
-        "id": "urn:ngm:class:spatial-analysis",
-        "label": "Spatial Analysis"
       }
     ]
   },

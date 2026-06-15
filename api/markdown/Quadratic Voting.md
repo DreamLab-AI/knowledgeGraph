@@ -490,10 +490,6 @@ public:: true
         "label": "MACI"
       },
       {
-        "@id": "urn:ngm:class:matching-pool",
-        "label": "Matching Pool"
-      },
-      {
         "@id": "urn:ngm:class:pairwise-qf",
         "label": "Pairwise QF"
       },
@@ -508,10 +504,6 @@ public:: true
       {
         "@id": "urn:ngm:class:sybil-resistance",
         "label": "Sybil Resistance"
-      },
-      {
-        "@id": "urn:ngm:class:voice-credits",
-        "label": "Voice Credits"
       }
     ],
     "requires": [
@@ -526,10 +518,6 @@ public:: true
       {
         "@id": "urn:ngm:class:sybil-resistance",
         "label": "Sybil Resistance"
-      },
-      {
-        "@id": "urn:ngm:class:voice-credit-allocation",
-        "label": "Voice Credit Allocation"
       },
       {
         "@id": "urn:ngm:class:blockchain-oracle",
@@ -550,20 +538,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:anti-plutocratic-governance",
-        "label": "Anti-Plutocratic Governance"
-      },
-      {
-        "@id": "urn:ngm:class:community-led-allocation",
-        "label": "Community-Led Allocation"
-      },
-      {
         "@id": "urn:ngm:class:incentive-compatibility",
         "label": "Incentive Compatibility"
-      },
-      {
-        "@id": "urn:ngm:class:preference-intensity-revelation",
-        "label": "Preference Intensity Revelation"
       },
       {
         "@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
@@ -572,10 +548,6 @@ public:: true
       {
         "@id": "urn:ngm:class:retroactive-public-goods-funding",
         "label": "Retroactive Public Goods Funding"
-      },
-      {
-        "@id": "urn:ngm:class:welfare-optimisation",
-        "label": "Welfare Optimisation"
       }
     ],
     "implements": [
@@ -584,23 +556,15 @@ public:: true
         "label": "Allo Protocol"
       },
       {
-        "@id": "urn:ngm:class:clr-fund-protocol",
-        "label": "clr.fund Protocol"
-      },
-      {
         "@id": "urn:ngm:class:gitcoin-grants",
         "label": "Gitcoin Grants"
-      },
-      {
-        "@id": "urn:ngm:class:lalley-weyl-qv-protocol",
-        "label": "Lalley-Weyl QV Protocol"
       },
       {
         "@id": "urn:ngm:class:liberal-radicalism",
         "label": "Liberal Radicalism"
       },
       {
-        "@id": "urn:ngm:class:maci-v2",
+        "@id": "urn:ngm:class:maci",
         "label": "MACI v2"
       },
       {
@@ -626,7 +590,7 @@ public:: true
         "label": "Commit-Reveal Scheme"
       },
       {
-        "@id": "urn:ngm:class:ethereum-smart-contract-platform-mainnet",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum Mainnet"
       },
       {
@@ -664,10 +628,6 @@ public:: true
         "label": "Gitcoin"
       },
       {
-        "@id": "urn:ngm:class:harberger-tax",
-        "label": "Harberger Tax"
-      },
-      {
         "@id": "urn:ngm:class:liberal-radicalism",
         "label": "Liberal Radicalism"
       },
@@ -676,42 +636,14 @@ public:: true
         "label": "Optimism"
       },
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods",
-        "label": "Public Goods"
-      },
-      {
-        "@id": "urn:ngm:class:radical-markets",
-        "label": "Radical Markets"
-      },
-      {
-        "@id": "urn:ngm:class:radicalx-change",
-        "label": "RadicalxChange"
-      },
-      {
         "@id": "urn:ngm:class:retroactive-public-goods-funding",
         "label": "Retroactive Public Goods Funding"
       }
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:civic-technology",
-        "label": "Civic Technology"
-      },
-      {
-        "@id": "urn:ngm:class:de-fi-governance",
-        "label": "DeFi Governance"
-      },
-      {
         "@id": "urn:ngm:class:digital-democracy",
         "label": "Digital Democracy"
-      },
-      {
-        "@id": "urn:ngm:class:open-source-funding",
-        "label": "Open Source Funding"
-      },
-      {
-        "@id": "urn:ngm:class:participatory-budgeting",
-        "label": "Participatory Budgeting"
       },
       {
         "@id": "urn:ngm:class:carbon-credit-tracking",
@@ -724,28 +656,12 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:ethereum-smart-contract-platform-research-forum",
-        "label": "Ethereum Research Forum"
-      },
-      {
         "@id": "urn:ngm:class:gitcoin",
         "label": "Gitcoin"
       },
       {
-        "@id": "urn:ngm:class:maci-git-hub",
-        "label": "MACI GitHub"
-      },
-      {
         "@id": "urn:ngm:class:optimism-collective",
         "label": "Optimism Collective"
-      },
-      {
-        "@id": "urn:ngm:class:privacy-and-scaling-explorations",
-        "label": "Privacy and Scaling Explorations"
-      },
-      {
-        "@id": "urn:ngm:class:radicalx-change-foundation",
-        "label": "RadicalxChange Foundation"
       }
     ]
   },

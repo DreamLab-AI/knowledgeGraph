@@ -18,15 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:transfer-record",
-        "label": "Transfer Record"
-      },
-      {
-        "id": "urn:ngm:class:custody-log",
+        "id": "urn:ngm:class:custody",
         "label": "Custody Log"
       },
       {
-        "id": "urn:ngm:class:tamper-evident-seal",
+        "id": "urn:ngm:class:tamper-detection",
         "label": "Tamper-Evident Seal"
       }
     ],
@@ -40,13 +36,13 @@
         "label": "Identity Verification"
       },
       {
-        "id": "urn:ngm:class:cryptographic-hashing",
+        "id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hashing"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:admissibility-of-evidence",
+        "id": "urn:ngm:class:legal-evidence",
         "label": "Admissibility of Evidence"
       },
       {
@@ -76,7 +72,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:informal-record-keeping",
+        "id": "urn:ngm:class:record-keeping",
         "label": "Informal Record Keeping"
       }
     ],
@@ -86,7 +82,7 @@
         "label": "Blockchain Provenance"
       },
       {
-        "id": "urn:ngm:class:ai-training-data-lineage",
+        "id": "urn:ngm:class:data-lineage",
         "label": "AI Training Data Lineage"
       }
     ],
@@ -100,7 +96,7 @@
         "label": "Digital Signature"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential",
+        "id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       }
     ],
@@ -125,7 +121,7 @@
         "label": "Evidence Management"
       },
       {
-        "id": "urn:ngm:class:regulatory-compliance-framework",
+        "id": "urn:ngm:class:compliance-framework",
         "label": "Regulatory Compliance Framework"
       }
     ],

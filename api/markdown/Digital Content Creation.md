@@ -81,14 +81,6 @@ public:: true
       {
         "@id": "urn:ngm:class:texture-authoring",
         "label": "Texture Authoring"
-      },
-      {
-        "@id": "urn:ngm:class:audio-production",
-        "label": "Audio Production"
-      },
-      {
-        "@id": "urn:ngm:class:video-editing",
-        "label": "Video Editing"
       }
     ],
     "partOf": [
@@ -161,12 +153,6 @@ public:: true
       {
         "@id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:analogue-content-production",
-        "label": "Analogue Content Production"
       }
     ],
     "bridgesTo": [

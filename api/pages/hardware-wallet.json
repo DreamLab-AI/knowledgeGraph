@@ -32,10 +32,6 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:physical-confirmation",
-        "label": "Physical Confirmation"
-      },
-      {
         "id": "urn:ngm:class:seed-phrase",
         "label": "Seed Phrase"
       },
@@ -75,7 +71,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:software-wallet",
+        "id": "urn:ngm:class:wallet",
         "label": "Software Wallet"
       },
       {

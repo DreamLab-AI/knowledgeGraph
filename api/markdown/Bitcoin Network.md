@@ -23,61 +23,155 @@ public:: true
   "definition": "The Bitcoin Network is the global, permissionless peer-to-peer infrastructure underpinning the Bitcoin cryptocurrency, comprising full nodes, mining nodes, and the gossip protocol that propagates signed transactions and mined blocks across the internet without central coordination. It employs the Nakamoto consensus mechanism—proof-of-work mining on the SHA-256 hash function—to achieve Byzantine-fault-tolerant agreement on a single shared transaction ledger among mutually distrusting participants. The network enforces deterministic monetary policy through its protocol rules, automatically adjusting mining difficulty every 2,016 blocks to target a ten-minute inter-block interval and capping total issuance at 21 million BTC via a geometric halving schedule. Launched in January 2009, it is the longest-continuously-operated public blockchain and the foundational reference implementation for decentralised digital value transfer.",
   "domain": "blockchain",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:peer-to-peer-network",
+      "label": "Peer-to-Peer Network"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"},
-      {"@id": "urn:ngm:class:mempool", "label": "Mempool"},
-      {"@id": "urn:ngm:class:utxo-model", "label": "UTXO Model"},
-      {"@id": "urn:ngm:class:full-node", "label": "Full Node"},
-      {"@id": "urn:ngm:class:bitcoin-script", "label": "Bitcoin Script"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "@id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      },
+      {
+        "@id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
+        "label": "Bitcoin Script"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"},
-      {"@id": "urn:ngm:class:bc-cryptographic-primitive", "label": "Cryptographic Primitive"},
-      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"},
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
-      {"@id": "urn:ngm:class:gossip-protocol", "label": "Gossip Protocol"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:bc-cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      },
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
-      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
-      {"@id": "urn:ngm:class:digital-asset-custody", "label": "Digital Asset Custody"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-custody",
+        "label": "Digital Asset Custody"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:internet-protocol", "label": "Internet Protocol"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"}
+      {
+        "@id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:bitcoin-improvement-proposal", "label": "Bitcoin Improvement Proposal"},
-      {"@id": "urn:ngm:class:segregated-witness", "label": "Segregated Witness"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
+        "label": "Bitcoin Improvement Proposal"
+      },
+      {
+        "@id": "urn:ngm:class:segregated-witness",
+        "label": "Segregated Witness"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:spv-verification", "label": "SPV Verification"},
-      {"@id": "urn:ngm:class:multisignature", "label": "Multisignature"}
+      {
+        "@id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ethereum-network", "label": "Ethereum Network"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum Network"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview", "label": "Bitcoin Technical Overview"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:digital-currency", "label": "Digital Currency"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview",
+        "label": "Bitcoin Technical Overview"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:financial-infrastructure", "label": "Financial Infrastructure"},
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"}
+      {
+        "@id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:bitcoin-p2p-network", "label": "Bitcoin P2P Network"}
+    {
+      "@id": "urn:ngm:class:bitcoin-p2p-network",
+      "label": "Bitcoin P2P Network"
+    }
   ],
   "quality": 0.75,
   "provenance": {

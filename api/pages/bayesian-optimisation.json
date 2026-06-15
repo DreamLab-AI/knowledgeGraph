@@ -41,7 +41,7 @@
         "label": "Hyperparameter Tuning"
       },
       {
-        "id": "urn:ngm:class:automated-experiment-design",
+        "id": "urn:ngm:class:automated-design",
         "label": "Automated Experiment Design"
       },
       {
@@ -123,10 +123,6 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:exploration-exploitation-trade-off",
-        "label": "Exploration-Exploitation Trade-off"
-      },
-      {
         "id": "urn:ngm:class:active-learning",
         "label": "Active Learning"
       },
@@ -137,10 +133,6 @@
       {
         "id": "urn:ngm:class:kriging",
         "label": "Kriging"
-      },
-      {
-        "id": "urn:ngm:class:expected-improvement",
-        "label": "Expected Improvement"
       }
     ]
   },

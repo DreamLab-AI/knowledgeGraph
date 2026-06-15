@@ -152,14 +152,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:accessible-immersion",
-        "label": "Accessible Immersion"
-      },
-      {
-        "@id": "urn:ngm:class:intuitive-interaction",
-        "label": "Intuitive Interaction"
-      },
-      {
         "@id": "urn:ngm:class:user-navigation",
         "label": "User Navigation"
       },

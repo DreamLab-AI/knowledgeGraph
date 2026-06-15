@@ -38,50 +38,119 @@ public:: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:recommendation-system", "label": "Recommendation System"},
-      {"@id": "urn:ngm:class:multimodal-search", "label": "Multimodal Search"},
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"}
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-search",
+        "label": "Multimodal Search"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"},
-      {"@id": "urn:ngm:class:vector-embedding", "label": "Vector Embedding"},
-      {"@id": "urn:ngm:class:approximate-nearest-neighbour-search", "label": "Approximate Nearest Neighbour Search"}
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "@id": "urn:ngm:class:vector-embedding",
+        "label": "Vector Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Approximate Nearest Neighbour Search"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:hnsw-index", "label": "HNSW Index"},
-      {"@id": "urn:ngm:class:inverted-file-index", "label": "Inverted File Index"},
-      {"@id": "urn:ngm:class:product-quantisation", "label": "Product Quantisation"},
-      {"@id": "urn:ngm:class:metadata-filter", "label": "Metadata Filter"}
+      {
+        "@id": "urn:ngm:class:hnsw-index",
+        "label": "HNSW Index"
+      },
+      {
+        "@id": "urn:ngm:class:inverted-index",
+        "label": "Inverted File Index"
+      },
+      {
+        "@id": "urn:ngm:class:product-quantisation",
+        "label": "Product Quantisation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cosine-similarity", "label": "Cosine Similarity"},
-      {"@id": "urn:ngm:class:bm25", "label": "BM25"},
-      {"@id": "urn:ngm:class:hybrid-search", "label": "Hybrid Search"}
+      {
+        "@id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
+      },
+      {
+        "@id": "urn:ngm:class:bm25",
+        "label": "BM25"
+      },
+      {
+        "@id": "urn:ngm:class:hybrid-search",
+        "label": "Hybrid Search"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:relational-database", "label": "Relational Database"},
-      {"@id": "urn:ngm:class:document-database", "label": "Document Database"},
-      {"@id": "urn:ngm:class:search-engine", "label": "Search Engine"}
+      {
+        "@id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      },
+      {
+        "@id": "urn:ngm:class:search-engine",
+        "label": "Search Engine"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:nearest-neighbor-search", "label": "Nearest Neighbor Search"},
-      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
-      {"@id": "urn:ngm:class:search-index", "label": "Search Index"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Nearest Neighbor Search"
+      },
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:search-index",
+        "label": "Search Index"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:vector-store", "label": "Vector Store"}
+    {
+      "@id": "urn:ngm:class:vector-store",
+      "label": "Vector Store"
+    }
   ],
   "qualityScore": 0.74,
-  "maturity": "established",
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",

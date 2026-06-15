@@ -23,50 +23,105 @@ public:: true
   "definition": "Object storage is a data storage architecture that manages data as discrete objects — each comprising an opaque payload, a globally unique identifier, and extensible metadata — accessed via a flat namespace through RESTful HTTP APIs rather than a file hierarchy or block device. It is designed for massive horizontal scalability, high durability, and cost-effective storage of unstructured data such as media files, backups, and machine-learning datasets. Amazon S3 established the de facto API standard, now implemented by numerous compatible services.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": {"@id": "urn:ngm:class:data-storage", "label": "Data Storage"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:data-storage",
+    "label": "Data Storage"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:bucket", "label": "Bucket"},
-      {"@id": "urn:ngm:class:object-metadata", "label": "Object Metadata"},
-      {"@id": "urn:ngm:class:access-control-list", "label": "Access Control List"}
+      {
+        "@id": "urn:ngm:class:access-control-list",
+        "label": "Access Control List"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:distributed-key-value-store", "label": "Distributed Key-Value Store"},
-      {"@id": "urn:ngm:class:erasure-coding", "label": "Erasure Coding"}
+      {
+        "@id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:data-lake", "label": "Data Lake"},
-      {"@id": "urn:ngm:class:content-addressed-storage", "label": "Content-Addressed Storage"},
-      {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"},
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
-      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"}
+      {
+        "@id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
+        "@id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
-      {"@id": "urn:ngm:class:http-protocol", "label": "HTTP Protocol"},
-      {"@id": "urn:ngm:class:geo-redundant-replication", "label": "Geo-Redundant Replication"},
-      {"@id": "urn:ngm:class:storage-tiering", "label": "Storage Tiering"}
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:storage-tiering",
+        "label": "Storage Tiering"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:s3-api", "label": "S3 API"}
+      {
+        "@id": "urn:ngm:class:s3-api",
+        "label": "S3 API"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:block-storage", "label": "Block Storage"},
-      {"@id": "urn:ngm:class:file-storage", "label": "File Storage"},
-      {"@id": "urn:ngm:class:posix-filesystem", "label": "POSIX Filesystem"}
+      {
+        "@id": "urn:ngm:class:block-storage",
+        "label": "Block Storage"
+      },
+      {
+        "@id": "urn:ngm:class:file-storage",
+        "label": "File Storage"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cloud-storage", "label": "Cloud Storage"},
-      {"@id": "urn:ngm:class:data-durability", "label": "Data Durability"},
-      {"@id": "urn:ngm:class:immutable-storage", "label": "Immutable Storage"}
+      {
+        "@id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
+      },
+      {
+        "@id": "urn:ngm:class:data-durability",
+        "label": "Data Durability"
+      },
+      {
+        "@id": "urn:ngm:class:immutable-storage",
+        "label": "Immutable Storage"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:training-dataset", "label": "Training Dataset"},
-      {"@id": "urn:ngm:class:model-registry", "label": "Model Registry"}
+      {
+        "@id": "urn:ngm:class:training-dataset",
+        "label": "Training Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:blob-storage", "label": "Blob Storage"}
+    {
+      "@id": "urn:ngm:class:blob-storage",
+      "label": "Blob Storage"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

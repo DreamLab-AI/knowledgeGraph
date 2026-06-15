@@ -23,53 +23,119 @@ public:: true
   "definition": "Ofcom (the Office of Communications) is the independent statutory regulator and competition authority for the UK communications industries, established by the Communications Act 2003. Its remit covers broadcasting, telecommunications, postal services, and — following the Online Safety Act 2023 — online platforms. It enforces spectrum management, sets licence conditions for broadcasters and telecoms operators, adjudicates on consumer complaints, and oversees compliance with the UK Online Safety Act framework requiring platforms to implement systems preventing access to illegal content.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-authority", "label": "Regulatory Authority"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-authority",
+      "label": "Regulatory Authority"
+    }
+  ],
   "relations": {
     "standardizedBy": [
-      {"@id": "urn:ngm:class:digital-regulation", "label": "Digital Regulation"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:communications-act-2003", "label": "Communications Act 2003"}
+      {
+        "@id": "urn:ngm:class:digital-regulation",
+        "label": "Digital Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:online-safety-act-2023", "label": "Online Safety Act 2023"},
-      {"@id": "urn:ngm:class:uk-online-safety-act", "label": "UK Online Safety Act"},
-      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"},
-      {"@id": "urn:ngm:class:telecommunications-infrastructure", "label": "Telecommunications Infrastructure"},
-      {"@id": "urn:ngm:class:spectrum-management", "label": "Spectrum Management"},
-      {"@id": "urn:ngm:class:broadcasting-regulation", "label": "Broadcasting Regulation"},
-      {"@id": "urn:ngm:class:net-neutrality", "label": "Net Neutrality"},
-      {"@id": "urn:ngm:class:information-commissioner-office", "label": "Information Commissioner's Office"}
+      {
+        "@id": "urn:ngm:class:online-safety-act-2023",
+        "label": "Online Safety Act 2023"
+      },
+      {
+        "@id": "urn:ngm:class:uk-online-safety-act",
+        "label": "UK Online Safety Act"
+      },
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "@id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:spectrum-management",
+        "label": "Spectrum Management"
+      },
+      {
+        "@id": "urn:ngm:class:net-neutrality",
+        "label": "Net Neutrality"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:content-moderation-standards", "label": "Content Moderation Standards"},
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
-      {"@id": "urn:ngm:class:consumer-protection", "label": "Consumer Protection"},
-      {"@id": "urn:ngm:class:market-competition", "label": "Market Competition"}
+      {
+        "@id": "urn:ngm:class:content-moderation-standards",
+        "label": "Content Moderation Standards"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "@id": "urn:ngm:class:market-competition",
+        "label": "Market Competition"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:child-safety-online", "label": "Child Safety Online"},
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:media-plurality", "label": "Media Plurality"}
+      {
+        "@id": "urn:ngm:class:child-safety-online",
+        "label": "Child Safety Online"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:online-safety-regime", "label": "Online Safety Regime"},
-      {"@id": "urn:ngm:class:age-verification", "label": "Age Verification"}
+      {
+        "@id": "urn:ngm:class:age-verification",
+        "label": "Age Verification"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:transparency-reporting", "label": "Transparency Reporting"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+      {
+        "@id": "urn:ngm:class:transparency-reporting",
+        "label": "Transparency Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:self-regulation", "label": "Self-Regulation"},
-      {"@id": "urn:ngm:class:co-regulation", "label": "Co-Regulation"}
+      {
+        "@id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:co-regulation",
+        "label": "Co-Regulation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:office-of-communications", "label": "Office of Communications"}
+    {
+      "@id": "urn:ngm:class:office-of-communications",
+      "label": "Office of Communications"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -77,7 +77,7 @@ public:: true
         "label": "Distributed Ledger"
       },
       {
-        "@id": "urn:ngm:class:cryptographic-wallet",
+        "@id": "urn:ngm:class:wallet",
         "label": "Cryptographic Wallet"
       }
     ],
@@ -101,7 +101,7 @@ public:: true
         "label": "Metadata"
       },
       {
-        "@id": "urn:ngm:class:public-key-cryptography",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       }
     ],
@@ -155,7 +155,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:virtual-real-estate",
+        "@id": "urn:ngm:class:digital-real-estate",
         "label": "Virtual Real Estate"
       },
       {

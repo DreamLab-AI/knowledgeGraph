@@ -23,54 +23,125 @@ public:: true
   "definition": "Securities settlement is the process by which the buyer of a security receives the asset and the seller receives payment, completing a trade through the final transfer of legal ownership and funds between counterparties, typically via a central securities depository (CSD) or clearing house. Traditional settlement occurs on a T+1 or T+2 basis after trade execution, involves complex chains of custodians, CSDs, and central counterparty clearing houses (CCPs), and carries counterparty risk during the settlement window. Distributed ledger technology and tokenised securities are driving a shift toward atomic and real-time settlement.",
   "domain": "finance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:financial-system", "label": "Financial System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-system",
+      "label": "Financial System"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:trade-clearing", "label": "Trade Clearing"},
-      {"@id": "urn:ngm:class:delivery-versus-payment", "label": "Delivery versus Payment"},
-      {"@id": "urn:ngm:class:trade-confirmation", "label": "Trade Confirmation"}
+      {
+        "@id": "urn:ngm:class:delivery-versus-payment",
+        "label": "Delivery versus Payment"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:central-securities-depository", "label": "Central Securities Depository"},
-      {"@id": "urn:ngm:class:central-counterparty-clearing", "label": "Central Counterparty Clearing"},
-      {"@id": "urn:ngm:class:custodian-bank", "label": "Custodian Bank"}
+      {
+        "@id": "urn:ngm:class:central-securities-depository",
+        "label": "Central Securities Depository"
+      },
+      {
+        "@id": "urn:ngm:class:central-counterparty-clearing",
+        "label": "Central Counterparty Clearing"
+      },
+      {
+        "@id": "urn:ngm:class:custodian-bank",
+        "label": "Custodian Bank"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:financial-infrastructure", "label": "Financial Infrastructure"},
-      {"@id": "urn:ngm:class:payment-system", "label": "Payment System"},
-      {"@id": "urn:ngm:class:real-time-gross-settlement", "label": "Real-Time Gross Settlement"}
+      {
+        "@id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-gross-settlement",
+        "label": "Real-Time Gross Settlement"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:digital-asset-infrastructure", "label": "Digital Asset Infrastructure"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:digital-asset-infrastructure",
+        "label": "Digital Asset Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-asset-trading", "label": "Digital Asset Trading"},
-      {"@id": "urn:ngm:class:trustless-settlement", "label": "Trustless Settlement"},
-      {"@id": "urn:ngm:class:tokenised-securities", "label": "Tokenised Securities"}
+      {
+        "@id": "urn:ngm:class:digital-asset-trading",
+        "label": "Digital Asset Trading"
+      },
+      {
+        "@id": "urn:ngm:class:trustless-settlement",
+        "label": "Trustless Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:tokenised-securities",
+        "label": "Tokenised Securities"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:securities-regulation", "label": "Securities Regulation"},
-      {"@id": "urn:ngm:class:central-securities-depositories-regulation", "label": "Central Securities Depositories Regulation"}
+      {
+        "@id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:atomic-settlement", "label": "Atomic Settlement"},
-      {"@id": "urn:ngm:class:instant-value-settlement", "label": "Instant value settlement"}
+      {
+        "@id": "urn:ngm:class:atomic-settlement",
+        "label": "Atomic Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:instant-value-settlement",
+        "label": "Instant value settlement"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:counterparty-risk", "label": "Counterparty Risk"},
-      {"@id": "urn:ngm:class:systemic-risk", "label": "Systemic Risk"},
-      {"@id": "urn:ngm:class:financial-market-infrastructure", "label": "Financial Market Infrastructure"}
+      {
+        "@id": "urn:ngm:class:counterparty-risk",
+        "label": "Counterparty Risk"
+      },
+      {
+        "@id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      },
+      {
+        "@id": "urn:ngm:class:financial-market-infrastructure",
+        "label": "Financial Market Infrastructure"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:trade-settlement", "label": "Trade Settlement"},
-    {"@id": "urn:ngm:class:post-trade-settlement", "label": "Post-Trade Settlement"}
+    {
+      "@id": "urn:ngm:class:trade-settlement",
+      "label": "Trade Settlement"
+    },
+    {
+      "@id": "urn:ngm:class:post-trade-settlement",
+      "label": "Post-Trade Settlement"
+    }
   ],
   "quality": 0.72,
   "provenance": {

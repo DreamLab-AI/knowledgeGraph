@@ -38,46 +38,101 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:voice-activity-detection", "label": "Voice Activity Detection"},
-      {"@id": "urn:ngm:class:speaker-embedding", "label": "Speaker Embedding"},
-      {"@id": "urn:ngm:class:acoustic-feature-extraction", "label": "Acoustic Feature Extraction"},
-      {"@id": "urn:ngm:class:spectral-clustering", "label": "Spectral Clustering"},
-      {"@id": "urn:ngm:class:overlap-detection", "label": "Overlap Detection"}
+      {
+        "@id": "urn:ngm:class:voice-activity-detection",
+        "label": "Voice Activity Detection"
+      },
+      {
+        "@id": "urn:ngm:class:speaker-embedding",
+        "label": "Speaker Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Acoustic Feature Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:spectral-clustering",
+        "label": "Spectral Clustering"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:audio-processing-system", "label": "Audio Processing System"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+      {
+        "@id": "urn:ngm:class:audio-processing-system",
+        "label": "Audio Processing System"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:meeting-transcription", "label": "Meeting Transcription"},
-      {"@id": "urn:ngm:class:real-time-transcription", "label": "Real-time Transcription"},
-      {"@id": "urn:ngm:class:speaker-identification", "label": "Speaker Identification"},
-      {"@id": "urn:ngm:class:dialogue-act-recognition", "label": "Dialogue Act Recognition"},
-      {"@id": "urn:ngm:class:clinical-note-generation", "label": "Clinical Note Generation"}
+      {
+        "@id": "urn:ngm:class:meeting-transcription",
+        "label": "Meeting Transcription"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-transcription",
+        "label": "Real-time Transcription"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:automatic-speech-recognition", "label": "Automatic Speech Recognition"},
-      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"}
+      {
+        "@id": "urn:ngm:class:automatic-speech-recognition",
+        "label": "Automatic Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:speaker-verification", "label": "Speaker Verification"},
-      {"@id": "urn:ngm:class:speaker-recognition", "label": "Speaker Recognition"}
+      {
+        "@id": "urn:ngm:class:speaker-verification",
+        "label": "Speaker Verification"
+      },
+      {
+        "@id": "urn:ngm:class:speaker-recognition",
+        "label": "Speaker Recognition"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:emotion-recognition", "label": "Emotion Recognition"},
-      {"@id": "urn:ngm:class:forced-alignment", "label": "Forced Alignment"},
-      {"@id": "urn:ngm:class:noise-reduction", "label": "Noise Reduction"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:emotion-recognition",
+        "label": "Emotion Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:noise-reduction",
+        "label": "Noise Reduction"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:real-time-collaboration", "label": "Real-time Collaboration"},
-      {"@id": "urn:ngm:class:multimodal-learning", "label": "Multimodal Learning"}
+      {
+        "@id": "urn:ngm:class:real-time-collaboration",
+        "label": "Real-time Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-learning",
+        "label": "Multimodal Learning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:speaker-segmentation", "label": "Speaker Segmentation"},
-    {"@id": "urn:ngm:class:speaker-turn-detection", "label": "Speaker Turn Detection"}
+    {
+      "@id": "urn:ngm:class:speaker-segmentation",
+      "label": "Speaker Segmentation"
+    },
+    {
+      "@id": "urn:ngm:class:speaker-turn-detection",
+      "label": "Speaker Turn Detection"
+    }
   ],
   "quality": 0.74,
   "provenance": {

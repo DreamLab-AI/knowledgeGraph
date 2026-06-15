@@ -106,19 +106,11 @@ public:: true
         "label": "Antenna Array"
       },
       {
-        "@id": "urn:ngm:class:map-integration",
-        "label": "Map Integration"
-      },
-      {
         "@id": "urn:ngm:class:signal-processing",
         "label": "Signal Processing"
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:geofencing",
-        "label": "Geofencing"
-      },
       {
         "@id": "urn:ngm:class:long-range-navigation",
         "label": "Long-Range Navigation"

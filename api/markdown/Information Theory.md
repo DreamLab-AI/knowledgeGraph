@@ -93,20 +93,12 @@ public:: true
         "label": "Entropy"
       },
       {
-        "@id": "urn:ngm:class:mutual-information",
-        "label": "Mutual Information"
-      },
-      {
         "@id": "urn:ngm:class:channel-capacity",
         "label": "Channel Capacity"
       },
       {
         "@id": "urn:ngm:class:kullback-leibler-divergence",
         "label": "Kullback-Leibler Divergence"
-      },
-      {
-        "@id": "urn:ngm:class:source-coding",
-        "label": "Source Coding"
       },
       {
         "@id": "urn:ngm:class:channel-coding",
@@ -129,16 +121,12 @@ public:: true
         "label": "Data Compression"
       },
       {
-        "@id": "urn:ngm:class:error-correcting-code",
+        "@id": "urn:ngm:class:error-correction",
         "label": "Error Correcting Code"
       },
       {
         "@id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
-      },
-      {
-        "@id": "urn:ngm:class:digital-communication",
-        "label": "Digital Communication"
       }
     ],
     "supports": [
@@ -159,16 +147,6 @@ public:: true
       {
         "@id": "urn:ngm:class:random-variable",
         "label": "Random Variable"
-      },
-      {
-        "@id": "urn:ngm:class:logarithmic-measure",
-        "label": "Logarithmic Measure"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:algorithmic-information-theory",
-        "label": "Algorithmic Information Theory"
       }
     ],
     "bridgesTo": [

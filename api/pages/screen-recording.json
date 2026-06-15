@@ -18,37 +18,17 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:video-encoder",
-        "label": "Video Encoder"
-      },
-      {
         "id": "urn:ngm:class:audio-capture",
         "label": "Audio Capture"
-      },
-      {
-        "id": "urn:ngm:class:frame-buffer",
-        "label": "Frame Buffer"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:display-compositor",
-        "label": "Display Compositor"
-      },
       {
         "id": "urn:ngm:class:codec",
         "label": "Codec"
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:tutorial-creation",
-        "label": "Tutorial Creation"
-      },
-      {
-        "id": "urn:ngm:class:ui-test-automation",
-        "label": "UI Test Automation"
-      },
       {
         "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
@@ -68,11 +48,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:gui-agent-training",
-        "label": "GUI Agent Training"
-      },
-      {
-        "id": "urn:ngm:class:accessibility-auditing",
+        "id": "urn:ngm:class:accessibility",
         "label": "Accessibility Auditing"
       }
     ],
@@ -82,12 +58,8 @@
         "label": "Screen Capture API"
       },
       {
-        "id": "urn:ngm:class:hardware-video-encoding",
+        "id": "urn:ngm:class:video-encoding",
         "label": "Hardware Video Encoding"
-      },
-      {
-        "id": "urn:ngm:class:container-format",
-        "label": "Container Format"
       }
     ],
     "supports": [
@@ -118,14 +90,6 @@
       {
         "id": "urn:ngm:class:browser-based-screen-capture",
         "label": "Browser-Based Screen Capture"
-      },
-      {
-        "id": "urn:ngm:class:obs-studio",
-        "label": "OBS Studio"
-      },
-      {
-        "id": "urn:ngm:class:privacy-consent",
-        "label": "Privacy Consent"
       }
     ]
   },

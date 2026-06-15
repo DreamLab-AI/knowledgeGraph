@@ -26,19 +26,11 @@
         "label": "Material Definition"
       },
       {
-        "id": "urn:ngm:class:animation-keyframes",
-        "label": "Animation Keyframes"
-      },
-      {
         "id": "urn:ngm:class:texture-map",
         "label": "Texture Map"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:geometry-encoding",
-        "label": "Geometry Encoding"
-      },
       {
         "id": "urn:ngm:class:coordinate-system",
         "label": "Coordinate System"
@@ -77,12 +69,7 @@
         "label": "Universal Scene Description"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:2-d-image-format",
-        "label": "2D Image Format"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:data-format-standard",
@@ -103,7 +90,7 @@
         "label": "Binary Encoding"
       },
       {
-        "id": "urn:ngm:class:compression-algorithm",
+        "id": "urn:ngm:class:data-compression",
         "label": "Compression Algorithm"
       }
     ],

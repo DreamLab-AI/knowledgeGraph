@@ -87,10 +87,6 @@ public:: true
       {
         "@id": "urn:ngm:class:threat-model",
         "label": "Threat Model"
-      },
-      {
-        "@id": "urn:ngm:class:test-oracle",
-        "label": "Test Oracle"
       }
     ],
     "uses": [
@@ -103,25 +99,13 @@ public:: true
         "label": "Adversarial Examples"
       },
       {
-        "@id": "urn:ngm:class:fuzzing",
-        "label": "Fuzzing"
-      },
-      {
         "@id": "urn:ngm:class:prompt-injection",
         "label": "Prompt Injection"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:robustness-evaluation",
-        "label": "Robustness Evaluation"
-      },
-      {
-        "@id": "urn:ngm:class:vulnerability-disclosure",
-        "label": "Vulnerability Disclosure"
-      },
-      {
-        "@id": "urn:ngm:class:bias-detection",
+        "@id": "urn:ngm:class:bias-detection-methods",
         "label": "Bias Detection"
       }
     ],
@@ -153,12 +137,6 @@ public:: true
         "label": "Security Testing"
       }
     ],
-    "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:nist-ai-100-2",
-        "label": "NIST AI 100-2"
-      }
-    ],
     "dependsOn": [
       {
         "@id": "urn:ngm:class:model-evaluation",
@@ -170,10 +148,6 @@ public:: true
       }
     ],
     "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:conventional-software-testing",
-        "label": "Conventional Software Testing"
-      },
       {
         "@id": "urn:ngm:class:unit-testing",
         "label": "Unit Testing"
@@ -199,7 +173,7 @@ public:: true
         "label": "Adversarial Training"
       },
       {
-        "@id": "urn:ngm:class:model-safety-evaluation",
+        "@id": "urn:ngm:class:safety-evaluation",
         "label": "Model Safety Evaluation"
       }
     ]

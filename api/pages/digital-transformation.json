@@ -20,10 +20,6 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
-      },
-      {
-        "id": "urn:ngm:class:agile-transformation",
-        "label": "Agile Transformation"
       }
     ],
     "requires": [
@@ -40,19 +36,11 @@
         "label": "Data Analytics"
       },
       {
-        "id": "urn:ngm:class:digital-strategy",
-        "label": "Digital Strategy"
-      },
-      {
         "id": "urn:ngm:class:cybersecurity",
         "label": "Cybersecurity"
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:business-innovation",
-        "label": "Business Innovation"
-      },
       {
         "id": "urn:ngm:class:customer-experience",
         "label": "Customer Experience"
@@ -64,20 +52,11 @@
       {
         "id": "urn:ngm:class:smart-manufacturing",
         "label": "Smart Manufacturing"
-      },
-      {
-        "id": "urn:ngm:class:data-driven-decision-making",
-        "label": "Data-Driven Decision Making"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:legacy-systems",
-        "label": "Legacy Systems"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:metaverse",
@@ -86,10 +65,6 @@
       {
         "id": "urn:ngm:class:distributed-collaboration",
         "label": "Distributed Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:supply-chain-digitisation",
-        "label": "Supply Chain Digitisation"
       }
     ],
     "uses": [

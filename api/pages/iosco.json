@@ -44,12 +44,8 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:principles-of-securities-regulation",
+        "id": "urn:ngm:class:securities-regulation",
         "label": "Principles of Securities Regulation"
-      },
-      {
-        "id": "urn:ngm:class:iosco-objectives-and-principles",
-        "label": "IOSCO Objectives and Principles"
       }
     ],
     "contrastsWith": [

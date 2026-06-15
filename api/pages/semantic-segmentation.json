@@ -112,10 +112,6 @@
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
-      },
-      {
-        "id": "urn:ngm:class:image-understanding",
-        "label": "Image Understanding"
       }
     ],
     "relatedTo": [

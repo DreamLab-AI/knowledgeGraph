@@ -747,12 +747,8 @@ alias:: BC-0431-privacy-preserving-blockchain, Privacy-Preserving Blockchain
         "label": "Bulletproofs"
       },
       {
-        "@id": "urn:ngm:class:merkle-tree-accumulator",
+        "@id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Tree Accumulator"
-      },
-      {
-        "@id": "urn:ngm:class:nullifier-set",
-        "label": "Nullifier Set"
       },
       {
         "@id": "urn:ngm:class:pedersen-commitment",
@@ -763,20 +759,12 @@ alias:: BC-0431-privacy-preserving-blockchain, Privacy-Preserving Blockchain
         "label": "Ring Signature"
       },
       {
-        "@id": "urn:ngm:class:shielded-pool",
-        "label": "Shielded Pool"
-      },
-      {
-        "@id": "urn:ngm:class:spend-key",
+        "@id": "urn:ngm:class:private-key",
         "label": "Spend Key"
       },
       {
         "@id": "urn:ngm:class:stealth-address",
         "label": "Stealth Address"
-      },
-      {
-        "@id": "urn:ngm:class:viewing-key",
-        "label": "Viewing Key"
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
@@ -789,11 +777,11 @@ alias:: BC-0431-privacy-preserving-blockchain, Privacy-Preserving Blockchain
         "label": "Commitment Scheme"
       },
       {
-        "@id": "urn:ngm:class:cryptographic-hardness-assumption",
+        "@id": "urn:ngm:class:computational-hardness-assumption",
         "label": "Cryptographic Hardness Assumption"
       },
       {
-        "@id": "urn:ngm:class:proof-system",
+        "@id": "urn:ngm:class:cryptographic-proof-system",
         "label": "Proof System"
       },
       {
@@ -811,15 +799,11 @@ alias:: BC-0431-privacy-preserving-blockchain, Privacy-Preserving Blockchain
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:anonymous-transactions",
+        "@id": "urn:ngm:class:confidential-transactions",
         "label": "Anonymous Transactions"
       },
       {
-        "@id": "urn:ngm:class:compliance-proofs",
-        "label": "Compliance Proofs"
-      },
-      {
-        "@id": "urn:ngm:class:confidential-de-fi",
+        "@id": "urn:ngm:class:de-fi",
         "label": "Confidential DeFi"
       },
       {
@@ -837,49 +821,37 @@ alias:: BC-0431-privacy-preserving-blockchain, Privacy-Preserving Blockchain
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:bulletproofs-range-proof",
+        "@id": "urn:ngm:class:bulletproofs",
         "label": "Bulletproofs Range Proof"
       },
       {
-        "@id": "urn:ngm:class:groth16-zk-snark",
+        "@id": "urn:ngm:class:zk-snark",
         "label": "Groth16 zk-SNARK"
       },
       {
-        "@id": "urn:ngm:class:halo-2-recursive-proof",
-        "label": "Halo 2 Recursive Proof"
-      },
-      {
-        "@id": "urn:ngm:class:mimble-wimble-protocol",
-        "label": "MimbleWimble Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:pedersen-commitment-scheme",
+        "@id": "urn:ngm:class:pedersen-commitment",
         "label": "Pedersen Commitment Scheme"
       },
       {
-        "@id": "urn:ngm:class:plonk-proof-system",
+        "@id": "urn:ngm:class:plonk",
         "label": "PLONK Proof System"
       },
       {
-        "@id": "urn:ngm:class:ring-ct-protocol",
+        "@id": "urn:ngm:class:ring-signature",
         "label": "RingCT Protocol"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:confidential-assets",
+        "@id": "urn:ngm:class:confidential-transactions",
         "label": "Confidential Assets"
-      },
-      {
-        "@id": "urn:ngm:class:decoy-outputs",
-        "label": "Decoy Outputs"
       },
       {
         "@id": "urn:ngm:class:homomorphic-encryption",
         "label": "Homomorphic Encryption"
       },
       {
-        "@id": "urn:ngm:class:mpc-wallets",
+        "@id": "urn:ngm:class:multisignature-wallets",
         "label": "MPC Wallets"
       },
       {
@@ -887,7 +859,7 @@ alias:: BC-0431-privacy-preserving-blockchain, Privacy-Preserving Blockchain
         "label": "Secure Enclave"
       },
       {
-        "@id": "urn:ngm:class:viewing-keys",
+        "@id": "urn:ngm:class:cryptographic-keys",
         "label": "Viewing Keys"
       },
       {
@@ -909,28 +881,12 @@ alias:: BC-0431-privacy-preserving-blockchain, Privacy-Preserving Blockchain
         "label": "Aztec Protocol"
       },
       {
-        "@id": "urn:ngm:class:iron-fish",
-        "label": "Iron Fish"
-      },
-      {
         "@id": "urn:ngm:class:mina-protocol",
         "label": "Mina Protocol"
       },
       {
         "@id": "urn:ngm:class:monero",
         "label": "Monero"
-      },
-      {
-        "@id": "urn:ngm:class:namada",
-        "label": "Namada"
-      },
-      {
-        "@id": "urn:ngm:class:penumbra",
-        "label": "Penumbra"
-      },
-      {
-        "@id": "urn:ngm:class:railgun",
-        "label": "Railgun"
       },
       {
         "@id": "urn:ngm:class:tornado-cash",
@@ -959,7 +915,7 @@ alias:: BC-0431-privacy-preserving-blockchain, Privacy-Preserving Blockchain
         "label": "Healthcare Data Privacy"
       },
       {
-        "@id": "urn:ngm:class:supply-chain-confidentiality",
+        "@id": "urn:ngm:class:supply-chain",
         "label": "Supply Chain Confidentiality"
       },
       {
@@ -973,16 +929,12 @@ alias:: BC-0431-privacy-preserving-blockchain, Privacy-Preserving Blockchain
         "label": "FATF Travel Rule"
       },
       {
-        "@id": "urn:ngm:class:ieee-p2418-1",
+        "@id": "urn:ngm:class:ieee-2418-1",
         "label": "IEEE P2418.1"
       },
       {
-        "@id": "urn:ngm:class:nist-post-quantum-standards",
+        "@id": "urn:ngm:class:nist-post-quantum-cryptography",
         "label": "NIST Post-Quantum Standards"
-      },
-      {
-        "@id": "urn:ngm:class:ofac-sdn-designations",
-        "label": "OFAC SDN Designations"
       },
       {
         "@id": "urn:ngm:class:w3-c-did-specification",

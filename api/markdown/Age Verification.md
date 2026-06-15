@@ -23,53 +23,121 @@ public:: true
   "definition": "Age verification is a set of technical and procedural mechanisms used to confirm that a user meets a minimum age threshold before accessing restricted digital content or services. It encompasses document-based checks, biometric estimation, and privacy-preserving cryptographic proofs. Regulatory frameworks such as the UK Online Safety Act mandate age verification for platforms hosting harmful content. The field balances effective enforcement against privacy risks and the potential exclusion of legitimate users.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:compliance-verification", "label": "Compliance Verification"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:compliance-verification",
+    "label": "Compliance Verification"
+  },
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:child-online-safety", "label": "Child Online Safety"},
-      {"@id": "urn:ngm:class:identity-proofing", "label": "Identity Proofing"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:identity-proofing",
+        "label": "Identity Proofing"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"},
-      {"@id": "urn:ngm:class:parental-controls", "label": "Parental Controls"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:harm-reduction", "label": "Harm Reduction"}
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "@id": "urn:ngm:class:parental-controls",
+        "label": "Parental Controls"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:uk-online-safety-act", "label": "UK Online Safety Act"},
-      {"@id": "urn:ngm:class:online-safety-act-2023", "label": "Online Safety Act 2023"},
-      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"}
+      {
+        "@id": "urn:ngm:class:uk-online-safety-act",
+        "label": "UK Online Safety Act"
+      },
+      {
+        "@id": "urn:ngm:class:online-safety-act-2023",
+        "label": "Online Safety Act 2023"
+      },
+      {
+        "@id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:identity-document-verification", "label": "Identity Document Verification"},
-      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"}
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Document Verification"
+      },
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:biometric-age-estimation", "label": "Biometric Age Estimation"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:anonymous-access", "label": "Anonymous Access"},
-      {"@id": "urn:ngm:class:vpn-circumvention", "label": "VPN Circumvention"}
+      {
+        "@id": "urn:ngm:class:anonymous-access",
+        "label": "Anonymous Access"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-29115", "label": "ISO 29115"},
-      {"@id": "urn:ngm:class:w3c-verifiable-credentials", "label": "W3C Verifiable Credentials"}
+      {
+        "@id": "urn:ngm:class:iso",
+        "label": "ISO 29115"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-verifiable-credentials",
+        "label": "W3C Verifiable Credentials"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:age-assurance", "label": "Age Assurance"},
-    {"@id": "urn:ngm:class:minor-protection-gate", "label": "Minor Protection Gate"}
+    {
+      "@id": "urn:ngm:class:age-assurance",
+      "label": "Age Assurance"
+    },
+    {
+      "@id": "urn:ngm:class:minor-protection-gate",
+      "label": "Minor Protection Gate"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

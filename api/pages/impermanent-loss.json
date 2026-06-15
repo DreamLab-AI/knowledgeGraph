@@ -16,19 +16,10 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:divergence-loss",
-        "label": "Divergence Loss"
-      },
-      {
-        "id": "urn:ngm:class:realised-loss",
-        "label": "Realised Loss"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:pool-rebalancing",
+        "id": "urn:ngm:class:liquidity-pool",
         "label": "Pool Rebalancing"
       },
       {
@@ -38,10 +29,6 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:il-hedging-strategy",
-        "label": "IL Hedging Strategy"
-      },
-      {
         "id": "urn:ngm:class:concentrated-liquidity",
         "label": "Concentrated Liquidity"
       }
@@ -50,30 +37,13 @@
       {
         "id": "urn:ngm:class:constant-product-formula",
         "label": "Constant Product Formula"
-      },
-      {
-        "id": "urn:ngm:class:price-ratio",
-        "label": "Price Ratio"
-      },
-      {
-        "id": "urn:ngm:class:asset-volatility",
-        "label": "Asset Volatility"
       }
     ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:short-volatility-position",
-        "label": "Short Volatility Position"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:liquidity-mining",
         "label": "Liquidity Mining"
-      },
-      {
-        "id": "urn:ngm:class:hold-strategy",
-        "label": "Hold Strategy"
       },
       {
         "id": "urn:ngm:class:order-book-exchange",
@@ -82,29 +52,16 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:options-pricing",
-        "label": "Options Pricing"
-      },
-      {
-        "id": "urn:ngm:class:market-making-risk",
+        "id": "urn:ngm:class:market-making",
         "label": "Market Making Risk"
       }
     ],
     "uses": [],
-    "supports": [
-      {
-        "id": "urn:ngm:class:il-protection",
-        "label": "IL Protection"
-      },
-      {
-        "id": "urn:ngm:class:dynamic-fee-amm",
-        "label": "Dynamic Fee AMM"
-      }
-    ],
+    "supports": [],
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:liquidity-provider-risk",
+        "id": "urn:ngm:class:liquidity-provider",
         "label": "Liquidity Provider Risk"
       }
     ],
@@ -126,7 +83,7 @@
         "label": "Decentralized Finance"
       },
       {
-        "id": "urn:ngm:class:defi-yield",
+        "id": "urn:ngm:class:yield-generation",
         "label": "DeFi Yield"
       },
       {

@@ -350,15 +350,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:chassis-frame",
-        "label": "Chassis Frame"
-      },
-      {
         "@id": "urn:ngm:class:communication-interface",
         "label": "Communication Interface"
       },
       {
-        "@id": "urn:ngm:class:locomotion-system",
+        "@id": "urn:ngm:class:locomotion",
         "label": "Locomotion System"
       },
       {
@@ -368,10 +364,6 @@ public:: true
       {
         "@id": "urn:ngm:class:onboard-computer",
         "label": "Onboard Computer"
-      },
-      {
-        "@id": "urn:ngm:class:payload-bay",
-        "label": "Payload Bay"
       },
       {
         "@id": "urn:ngm:class:power-systems",
@@ -418,10 +410,6 @@ public:: true
         "label": "Environment Mapping"
       },
       {
-        "@id": "urn:ngm:class:inspection-robotics",
-        "label": "Inspection Robotics"
-      },
-      {
         "@id": "urn:ngm:class:logistics-automation",
         "label": "Logistics Automation"
       },
@@ -440,12 +428,8 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:behaviour-tree-control",
+        "@id": "urn:ngm:class:behaviour-tree",
         "label": "Behaviour Tree Control"
-      },
-      {
-        "@id": "urn:ngm:class:differential-drive-kinematics",
-        "label": "Differential Drive Kinematics"
       },
       {
         "@id": "urn:ngm:class:legged-locomotion",
@@ -470,20 +454,12 @@ public:: true
         "label": "Behaviour Tree"
       },
       {
-        "@id": "urn:ngm:class:fast-dds",
-        "label": "FastDDS"
-      },
-      {
         "@id": "urn:ngm:class:move-it-2",
         "label": "MoveIt 2"
       },
       {
         "@id": "urn:ngm:class:nav2",
         "label": "Nav2"
-      },
-      {
-        "@id": "urn:ngm:class:point-cloud-library",
-        "label": "PointCloud Library"
       },
       {
         "@id": "urn:ngm:class:slam-toolbox",
@@ -522,7 +498,7 @@ public:: true
         "label": "Multi-Robot Systems"
       },
       {
-        "@id": "urn:ngm:class:sim2-real-transfer",
+        "@id": "urn:ngm:class:sim-to-real-transfer",
         "label": "Sim2Real Transfer"
       },
       {
@@ -540,24 +516,12 @@ public:: true
         "label": "ISO 13482"
       },
       {
-        "@id": "urn:ngm:class:rep-103",
+        "@id": "urn:ngm:class:ros-rep",
         "label": "REP 103"
       },
       {
-        "@id": "urn:ngm:class:rep-105",
-        "label": "REP 105"
-      },
-      {
-        "@id": "urn:ngm:class:ros-2-humble",
+        "@id": "urn:ngm:class:ros-2",
         "label": "ROS 2 Humble"
-      },
-      {
-        "@id": "urn:ngm:class:ros-2-iron",
-        "label": "ROS 2 Iron"
-      },
-      {
-        "@id": "urn:ngm:class:roscon",
-        "label": "ROSCon"
       }
     ],
     "bridgesTo": [
@@ -565,7 +529,10 @@ public:: true
         "@id": "urn:ngm:class:embodied-ai",
         "label": "Embodied AI"
       },
-      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"}
+      {
+        "@id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      }
     ]
   },
   "quality": 0.52,

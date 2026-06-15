@@ -65,21 +65,13 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:model-version",
-        "label": "Model Version"
-      },
-      {
-        "@id": "urn:ngm:class:model-metadata",
+        "@id": "urn:ngm:class:metadata",
         "label": "Model Metadata"
-      },
-      {
-        "@id": "urn:ngm:class:model-artifact",
-        "label": "Model Artifact"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:mlops-platform",
+        "@id": "urn:ngm:class:mlops",
         "label": "MLOps Platform"
       }
     ],
@@ -111,17 +103,13 @@ public:: true
         "label": "Model Governance"
       },
       {
-        "@id": "urn:ngm:class:model-reproducibility",
+        "@id": "urn:ngm:class:reproducibility",
         "label": "Model Reproducibility"
       }
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:artifact-store",
-        "label": "Artifact Store"
-      },
-      {
-        "@id": "urn:ngm:class:metadata-database",
+        "@id": "urn:ngm:class:metadata-repository",
         "label": "Metadata Database"
       }
     ],
@@ -131,7 +119,7 @@ public:: true
         "label": "Feature Store"
       },
       {
-        "@id": "urn:ngm:class:model-lineage-tracking",
+        "@id": "urn:ngm:class:data-lineage-tracking",
         "label": "Model Lineage Tracking"
       },
       {
@@ -141,11 +129,11 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:continuous-integration-continuous-delivery",
+        "@id": "urn:ngm:class:continuous-integration",
         "label": "Continuous Integration Continuous Delivery"
       },
       {
-        "@id": "urn:ngm:class:model-lifecycle-management",
+        "@id": "urn:ngm:class:lifecycle-management",
         "label": "Model Lifecycle Management"
       },
       {
@@ -169,7 +157,7 @@ public:: true
         "label": "Data Catalog"
       },
       {
-        "@id": "urn:ngm:class:software-asset-management",
+        "@id": "urn:ngm:class:asset-management",
         "label": "Software Asset Management"
       }
     ],

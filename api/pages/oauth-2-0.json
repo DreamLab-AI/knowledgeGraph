@@ -18,12 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:authorisation-code-flow",
+        "id": "urn:ngm:class:authorisation",
         "label": "Authorisation Code Flow"
-      },
-      {
-        "id": "urn:ngm:class:client-credentials-flow",
-        "label": "Client Credentials Flow"
       },
       {
         "id": "urn:ngm:class:refresh-token",
@@ -48,7 +44,7 @@
         "label": "HTTPS"
       },
       {
-        "id": "urn:ngm:class:json-web-token",
+        "id": "urn:ngm:class:json-data-interchange-format-web-token",
         "label": "JSON Web Token"
       }
     ],
@@ -75,19 +71,11 @@
       {
         "id": "urn:ngm:class:rfc-6749",
         "label": "RFC 6749"
-      },
-      {
-        "id": "urn:ngm:class:rfc-6750",
-        "label": "RFC 6750"
-      },
-      {
-        "id": "urn:ngm:class:rfc-7636",
-        "label": "RFC 7636"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:oauth-1-0",
+        "id": "urn:ngm:class:oauth",
         "label": "OAuth 1.0"
       },
       {
@@ -111,7 +99,7 @@
         "label": "Bearer Token"
       },
       {
-        "id": "urn:ngm:class:authorisation-server",
+        "id": "urn:ngm:class:authorisation",
         "label": "Authorisation Server"
       },
       {
@@ -142,7 +130,7 @@
         "label": "Identity and Access Management"
       },
       {
-        "id": "urn:ngm:class:openid-connect",
+        "id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
       },
       {

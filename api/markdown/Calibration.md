@@ -38,60 +38,125 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"},
-      {"@id": "urn:ngm:class:imu-calibration", "label": "IMU Calibration"},
-      {"@id": "urn:ngm:class:extrinsic-calibration", "label": "Extrinsic Calibration"},
-      {"@id": "urn:ngm:class:temporal-calibration", "label": "Temporal Calibration"}
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:imu-calibration",
+        "label": "IMU Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:extrinsic-calibration",
+        "label": "Extrinsic Calibration"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:quality-assurance", "label": "Quality Assurance"},
-      {"@id": "urn:ngm:class:sensor-pipeline", "label": "Sensor Pipeline"}
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:reference-standard", "label": "Reference Standard"},
-      {"@id": "urn:ngm:class:ground-truth", "label": "Ground Truth"},
-      {"@id": "urn:ngm:class:error-model", "label": "Error Model"}
+      {
+        "@id": "urn:ngm:class:reference-standard",
+        "label": "Reference Standard"
+      },
+      {
+        "@id": "urn:ngm:class:ground-truth",
+        "label": "Ground Truth"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
-      {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:optimisation", "label": "Optimisation"},
-      {"@id": "urn:ngm:class:least-squares", "label": "Least Squares"}
+      {
+        "@id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:imu", "label": "IMU"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
-      {"@id": "urn:ngm:class:fiducial-marker", "label": "Fiducial Marker"},
-      {"@id": "urn:ngm:class:checkerboard-pattern", "label": "Checkerboard Pattern"}
+      {
+        "@id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:fiducial-marker",
+        "label": "Fiducial Marker"
+      },
+      {
+        "@id": "urn:ngm:class:checkerboard-pattern",
+        "label": "Checkerboard Pattern"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:autonomous-driving", "label": "Autonomous Driving"},
-      {"@id": "urn:ngm:class:robotic-manipulation", "label": "Robotic Manipulation"},
-      {"@id": "urn:ngm:class:medical-imaging", "label": "Medical Imaging"}
+      {
+        "@id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-manipulation",
+        "label": "Robotic Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:validation", "label": "Validation"},
-      {"@id": "urn:ngm:class:verification", "label": "VERIFICATION"}
+      {
+        "@id": "urn:ngm:class:validation",
+        "label": "Validation"
+      },
+      {
+        "@id": "urn:ngm:class:verification",
+        "label": "VERIFICATION"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:probabilistic-calibration", "label": "Probabilistic Calibration"},
-      {"@id": "urn:ngm:class:model-calibration", "label": "Model Calibration"},
-      {"@id": "urn:ngm:class:uncertainty-quantification", "label": "Uncertainty Quantification"}
-    ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:sensor-noise", "label": "Sensor Noise"},
-      {"@id": "urn:ngm:class:systematic-error", "label": "Systematic Error"},
-      {"@id": "urn:ngm:class:kinematic-calibration", "label": "Kinematic Calibration"}
+      {
+        "@id": "urn:ngm:class:model-calibration",
+        "label": "Model Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:instrument-calibration", "label": "Instrument Calibration"},
-    {"@id": "urn:ngm:class:sensor-calibration", "label": "Sensor Calibration"}
+    {
+      "@id": "urn:ngm:class:instrument-calibration",
+      "label": "Instrument Calibration"
+    },
+    {
+      "@id": "urn:ngm:class:sensor-calibration",
+      "label": "Sensor Calibration"
+    }
   ],
   "quality": 0.75,
   "qualityScore": 0.75,

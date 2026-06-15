@@ -142,10 +142,6 @@
       {
         "id": "urn:ngm:class:polkadot",
         "label": "Polkadot"
-      },
-      {
-        "id": "urn:ngm:class:cosmos-governance",
-        "label": "Cosmos Governance"
       }
     ]
   },

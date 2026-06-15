@@ -23,61 +23,157 @@ public:: true
   "definition": "GPU Acceleration is the use of graphics processing units to perform general-purpose computational workloads in a massively parallel fashion, exploiting thousands of shader cores arranged in a single-instruction-multiple-data (SIMD) architecture to achieve throughput orders of magnitude beyond conventional CPUs for data-parallel tasks such as matrix multiplication and tensor contraction. It is the dominant execution paradigm for training and inference in modern deep learning, scientific simulation, and real-time rendering pipelines. The programming model is exposed through vendor APIs such as CUDA and ROCm, as well as cross-platform standards including OpenCL and SYCL. Hierarchical parallelism — threads grouped into warps, warps into thread blocks, blocks into grids dispatched across streaming multiprocessors — enables fine-grained exploitation of data parallelism at every level of the memory hierarchy.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:hardware-acceleration",
+      "label": "Hardware Acceleration"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:tensor-core", "label": "Tensor Core"},
-      {"@id": "urn:ngm:class:streaming-multiprocessor", "label": "Streaming Multiprocessor"},
-      {"@id": "urn:ngm:class:high-bandwidth-memory", "label": "High Bandwidth Memory"}
+      {
+        "@id": "urn:ngm:class:tensor-core",
+        "label": "Tensor Core"
+      },
+      {
+        "@id": "urn:ngm:class:high-bandwidth-memory",
+        "label": "High Bandwidth Memory"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cuda", "label": "CUDA"},
-      {"@id": "urn:ngm:class:gpu-driver", "label": "GPU Driver"},
-      {"@id": "urn:ngm:class:parallel-programming-model", "label": "Parallel Programming Model"}
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-driver",
+        "label": "GPU Driver"
+      },
+      {
+        "@id": "urn:ngm:class:parallel-programming-model",
+        "label": "Parallel Programming Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:inference", "label": "Inference"},
-      {"@id": "urn:ngm:class:real-time-ray-tracing", "label": "Real-Time Ray Tracing"},
-      {"@id": "urn:ngm:class:scientific-simulation", "label": "Scientific Simulation"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Real-Time Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-simulation",
+        "label": "Scientific Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cuda", "label": "CUDA"},
-      {"@id": "urn:ngm:class:compute-shader", "label": "Compute Shader"},
-      {"@id": "urn:ngm:class:opencl", "label": "OpenCL"},
-      {"@id": "urn:ngm:class:mixed-precision-training", "label": "Mixed Precision Training"}
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "@id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "@id": "urn:ngm:class:opencl",
+        "label": "OpenCL"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"},
-      {"@id": "urn:ngm:class:memory-bandwidth", "label": "Memory Bandwidth"},
-      {"@id": "urn:ngm:class:pcie-interconnect", "label": "PCIe Interconnect"}
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:memory-bandwidth",
+        "label": "Memory Bandwidth"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:neural-network-training", "label": "Neural Network Training"},
-      {"@id": "urn:ngm:class:inference-serving", "label": "Inference Serving"},
-      {"@id": "urn:ngm:class:data-parallelism", "label": "Data Parallelism"},
-      {"@id": "urn:ngm:class:model-parallelism", "label": "Model Parallelism"}
+      {
+        "@id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      },
+      {
+        "@id": "urn:ngm:class:inference-serving",
+        "label": "Inference Serving"
+      },
+      {
+        "@id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:cpu-computing", "label": "CPU Computing"},
-      {"@id": "urn:ngm:class:tensor-processing-unit", "label": "Tensor Processing Unit"},
-      {"@id": "urn:ngm:class:neuromorphic-computing", "label": "Neuromorphic Computing"}
+      {
+        "@id": "urn:ngm:class:cpu-computing",
+        "label": "CPU Computing"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:neuromorphic-computing",
+        "label": "Neuromorphic Computing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"},
-      {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"},
-      {"@id": "urn:ngm:class:quantisation", "label": "Quantisation"}
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "@id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:gpgpu", "label": "GPGPU"},
-    {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"}
+    {
+      "@id": "urn:ngm:class:gpgpu",
+      "label": "GPGPU"
+    },
+    {
+      "@id": "urn:ngm:class:gpu-computing",
+      "label": "GPU Computing"
+    }
   ],
   "quality": 0.75,
   "provenance": {

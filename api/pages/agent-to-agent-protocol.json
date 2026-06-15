@@ -23,10 +23,6 @@
         "label": "Mutual Authentication"
       },
       {
-        "id": "urn:ngm:class:authorisation-scope",
-        "label": "Authorisation Scope"
-      },
-      {
         "id": "urn:ngm:class:decentralised-identifier",
         "label": "Decentralised Identifier"
       }
@@ -41,16 +37,12 @@
         "label": "Agentic Workflow"
       },
       {
-        "id": "urn:ngm:class:decentralised-multi-agent-system",
+        "id": "urn:ngm:class:multi-agent-system",
         "label": "Decentralised Multi-Agent System"
       },
       {
         "id": "urn:ngm:class:task-delegation",
         "label": "Task Delegation"
-      },
-      {
-        "id": "urn:ngm:class:capability-negotiation",
-        "label": "Capability Negotiation"
       }
     ],
     "dependsOn": [
@@ -74,10 +66,6 @@
       }
     ],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:centralised-orchestration",
-        "label": "Centralised Orchestration"
-      },
       {
         "id": "urn:ngm:class:remote-procedure-call",
         "label": "Remote Procedure Call"
@@ -103,30 +91,17 @@
         "label": "Message Passing"
       },
       {
-        "id": "urn:ngm:class:agent-card",
-        "label": "Agent Card"
-      },
-      {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       }
     ],
     "supports": [],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:foundation-for-intelligent-physical-agents",
-        "label": "Foundation for Intelligent Physical Agents"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:model-context-protocol",
         "label": "Model Context Protocol"
-      },
-      {
-        "id": "urn:ngm:class:multi-agent-framework",
-        "label": "Multi-Agent Framework"
       },
       {
         "id": "urn:ngm:class:prompt-injection",

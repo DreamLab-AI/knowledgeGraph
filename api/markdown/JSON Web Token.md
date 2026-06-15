@@ -23,59 +23,137 @@ public:: true
   "definition": "A JSON Web Token (JWT) is a compact, URL-safe representation of claims transmitted between parties, defined by IETF RFC 7519. A JWT consists of three Base64URL-encoded parts — header, payload, and signature — concatenated with periods. The header specifies the token type and signing algorithm; the payload carries claims (assertions about a subject such as user identity, roles, and expiry time); and the signature is computed using either a symmetric shared secret (HMAC) or an asymmetric key pair (RSA, ECDSA), allowing the receiving party to verify token integrity without a round-trip to an authorisation server. JWTs are the dominant stateless session mechanism in REST API and OAuth 2.0 / OpenID Connect identity architectures.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:authentication-mechanism", "label": "Authentication Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:authentication-mechanism",
+      "label": "Authentication Mechanism"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"},
-      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"},
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"},
-      {"@id": "urn:ngm:class:base64url-encoding", "label": "Base64URL Encoding"},
-      {"@id": "urn:ngm:class:hmac", "label": "HMAC"},
-      {"@id": "urn:ngm:class:rsa-algorithm", "label": "RSA Algorithm"},
-      {"@id": "urn:ngm:class:elliptic-curve-digital-signature-algorithm", "label": "Elliptic Curve Digital Signature Algorithm"}
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:base64url-encoding",
+        "label": "Base64URL Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:hmac",
+        "label": "HMAC"
+      },
+      {
+        "@id": "urn:ngm:class:rsa-algorithm",
+        "label": "RSA Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-digital-signature-algorithm",
+        "label": "Elliptic Curve Digital Signature Algorithm"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
-      {"@id": "urn:ngm:class:stateless-session-management", "label": "Stateless Session Management"},
-      {"@id": "urn:ngm:class:single-sign-on", "label": "Single Sign-On"},
-      {"@id": "urn:ngm:class:federated-identity", "label": "Federated Identity"}
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:session-management",
+        "label": "Stateless Session Management"
+      },
+      {
+        "@id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
+        "@id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:json-web-signature", "label": "JSON Web Signature"},
-      {"@id": "urn:ngm:class:json-web-algorithms", "label": "JSON Web Algorithms"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:bearer-token", "label": "Bearer Token"},
-      {"@id": "urn:ngm:class:claims-based-identity", "label": "Claims-Based Identity"}
-    ],
-    "standardizedBy": [
-      {"@id": "urn:ngm:class:rfc-7519", "label": "RFC 7519"}
+      {
+        "@id": "urn:ngm:class:bearer-token",
+        "label": "Bearer Token"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:opaque-token", "label": "Opaque Token"},
-      {"@id": "urn:ngm:class:session-cookie", "label": "Session Cookie"},
-      {"@id": "urn:ngm:class:saml-assertion", "label": "SAML Assertion"}
+      {
+        "@id": "urn:ngm:class:saml-assertion",
+        "label": "SAML Assertion"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:oauth-2-0", "label": "OAuth 2.0"},
-      {"@id": "urn:ngm:class:open-id-connect", "label": "OpenID Connect"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:sd-jwt", "label": "SD-JWT"},
-      {"@id": "urn:ngm:class:json-web-encryption", "label": "JSON Web Encryption"},
-      {"@id": "urn:ngm:class:refresh-token", "label": "Refresh Token"},
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"}
+      {
+        "@id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:sd-jwt",
+        "label": "SD-JWT"
+      },
+      {
+        "@id": "urn:ngm:class:json-web-encryption",
+        "label": "JSON Web Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:refresh-token",
+        "label": "Refresh Token"
+      },
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"},
-      {"@id": "urn:ngm:class:decentralised-identifier", "label": "Decentralised Identifier"}
+      {
+        "@id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:jwt", "label": "JWT"}
+    {
+      "@id": "urn:ngm:class:jwt",
+      "label": "JWT"
+    }
   ],
   "quality": 0.75,
   "provenance": {

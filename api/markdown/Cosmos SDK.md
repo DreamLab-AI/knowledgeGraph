@@ -73,10 +73,6 @@ public:: true
       {
         "@id": "urn:ngm:class:tendermint",
         "label": "Tendermint"
-      },
-      {
-        "@id": "urn:ngm:class:go-programming-language",
-        "label": "Go Programming Language"
       }
     ],
     "enables": [
@@ -99,20 +95,8 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:cosmos-sdk-module",
-        "label": "Cosmos SDK Module"
-      },
-      {
         "@id": "urn:ngm:class:abci",
         "label": "ABCI"
-      },
-      {
-        "@id": "urn:ngm:class:baseapp",
-        "label": "BaseApp"
-      },
-      {
-        "@id": "urn:ngm:class:keyring",
-        "label": "Keyring"
       }
     ],
     "partOf": [
@@ -129,14 +113,6 @@ public:: true
       {
         "@id": "urn:ngm:class:protobuf",
         "label": "Protobuf"
-      },
-      {
-        "@id": "urn:ngm:class:iavl-tree",
-        "label": "IAVL Tree"
-      },
-      {
-        "@id": "urn:ngm:class:bech32-address",
-        "label": "Bech32 Address"
       }
     ],
     "supports": [
@@ -165,18 +141,14 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:cosmos-hub",
+        "@id": "urn:ngm:class:cosmos",
         "label": "Cosmos Hub"
       }
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:ethereum-virtual-machine",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
-      },
-      {
-        "@id": "urn:ngm:class:substrate",
-        "label": "Substrate"
       }
     ],
     "bridgesTo": [
@@ -187,12 +159,6 @@ public:: true
       {
         "@id": "urn:ngm:class:decentralized-finance",
         "label": "Decentralized Finance"
-      }
-    ],
-    "relatedTo": [
-      {
-        "@id": "urn:ngm:class:atom-token",
-        "label": "ATOM Token"
       }
     ]
   },

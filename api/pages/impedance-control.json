@@ -16,36 +16,11 @@
   "qualityScore": 0.72,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:position-control-loop",
-        "label": "Position Control Loop"
-      },
-      {
-        "id": "urn:ngm:class:force-control-loop",
-        "label": "Force Control Loop"
-      }
-    ],
+    "hasPart": [],
     "requires": [
-      {
-        "id": "urn:ngm:class:damping-control",
-        "label": "Damping Control"
-      },
-      {
-        "id": "urn:ngm:class:stiffness-modulation",
-        "label": "Stiffness Modulation"
-      },
-      {
-        "id": "urn:ngm:class:virtual-dynamics-model",
-        "label": "Virtual Dynamics Model"
-      },
       {
         "id": "urn:ngm:class:robot-dynamics",
         "label": "Robot Dynamics"
-      },
-      {
-        "id": "urn:ngm:class:joint-torque-sensing",
-        "label": "Joint Torque Sensing"
       }
     ],
     "enables": [
@@ -54,37 +29,20 @@
         "label": "Adaptive Manipulation"
       },
       {
-        "id": "urn:ngm:class:safe-human-interaction",
+        "id": "urn:ngm:class:safe-human-robot-interaction",
         "label": "Safe Human Interaction"
-      },
-      {
-        "id": "urn:ngm:class:soft-contact-tasks",
-        "label": "Soft Contact Tasks"
       },
       {
         "id": "urn:ngm:class:human-robot-collaboration",
         "label": "Human-Robot Collaboration"
       },
       {
-        "id": "urn:ngm:class:physical-human-robot-interaction",
+        "id": "urn:ngm:class:human-robot-interaction",
         "label": "Physical Human-Robot Interaction"
-      },
-      {
-        "id": "urn:ngm:class:robot-assembly-tasks",
-        "label": "Robot Assembly Tasks"
       }
     ],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:mechanical-impedance-model",
-        "label": "Mechanical Impedance Model"
-      },
-      {
-        "id": "urn:ngm:class:mass-spring-damper-system",
-        "label": "Mass-Spring-Damper System"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:admittance-control",
@@ -93,27 +51,15 @@
       {
         "id": "urn:ngm:class:position-control",
         "label": "PositionControl"
-      },
-      {
-        "id": "urn:ngm:class:hybrid-force-position-control",
-        "label": "Hybrid Force-Position Control"
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:reinforcement-learning-control",
-        "label": "Reinforcement Learning Control"
-      },
       {
         "id": "urn:ngm:class:haptic-feedback",
         "label": "Haptic Feedback"
       }
     ],
     "uses": [
-      {
-        "id": "urn:ngm:class:end-effector-kinematics",
-        "label": "End-Effector Kinematics"
-      },
       {
         "id": "urn:ngm:class:force-torque-sensor",
         "label": "Force Torque Sensor"
@@ -132,26 +78,14 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:force-regulation",
-        "label": "Force Regulation"
-      },
-      {
         "id": "urn:ngm:class:interaction-control",
         "label": "Interaction Control"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:passivity-based-control",
-        "label": "Passivity-Based Control"
-      },
-      {
         "id": "urn:ngm:class:variable-stiffness-actuator",
         "label": "Variable Stiffness Actuator"
-      },
-      {
-        "id": "urn:ngm:class:hybrid-control",
-        "label": "Hybrid Control"
       },
       {
         "id": "urn:ngm:class:rehabilitation-robotics",
@@ -160,10 +94,6 @@
       {
         "id": "urn:ngm:class:surgical-robotics",
         "label": "Surgical Robotics"
-      },
-      {
-        "id": "urn:ngm:class:compliant-motion-control",
-        "label": "Compliant Motion Control"
       }
     ]
   },

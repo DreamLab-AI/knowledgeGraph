@@ -37,16 +37,12 @@
         "label": "Cryptographic Verification"
       },
       {
-        "id": "urn:ngm:class:encrypted-communication",
+        "id": "urn:ngm:class:secure-communication",
         "label": "Encrypted Communication"
       },
       {
         "id": "urn:ngm:class:key-exchange",
         "label": "Key Exchange"
-      },
-      {
-        "id": "urn:ngm:class:certificate-binding",
-        "label": "Certificate Binding"
       }
     ],
     "dependsOn": [
@@ -72,7 +68,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:blockchain-wallet-address",
+        "id": "urn:ngm:class:address",
         "label": "Blockchain Wallet Address"
       },
       {
@@ -109,13 +105,13 @@
         "label": "ISO-IEC 23257 2021"
       },
       {
-        "id": "urn:ngm:class:x-509-certificate-standard",
+        "id": "urn:ngm:class:x-509-certificate",
         "label": "X.509 Certificate Standard"
       }
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {

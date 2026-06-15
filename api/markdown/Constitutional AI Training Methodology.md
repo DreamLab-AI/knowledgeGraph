@@ -61,57 +61,117 @@ elevatedFrom:: [[Constitutional AI]]
   "quality": 0.72,
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine Tuning"},
-      {"@id": "urn:ngm:class:reinforcement-learning-from-ai-feedback", "label": "Reinforcement Learning from AI Feedback"},
-      {"@id": "urn:ngm:class:self-critique-and-revision", "label": "Self-Critique and Revision"},
-      {"@id": "urn:ngm:class:preference-model", "label": "Preference Model"}
+      {
+        "@id": "urn:ngm:class:supervised-fine-tuning",
+        "label": "Supervised Fine Tuning"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"}
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:chain-of-thought-reasoning", "label": "Chain-of-Thought Reasoning"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-thought-reasoning",
+        "label": "Chain-of-Thought Reasoning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:scalable-oversight", "label": "Scalable Oversight"},
-      {"@id": "urn:ngm:class:harmlessness", "label": "Harmlessness"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:scalable-oversight",
+        "label": "Scalable Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:harmlessness",
+        "label": "Harmlessness"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:instruction-following", "label": "Instruction Following"},
-      {"@id": "urn:ngm:class:proximal-policy-optimisation", "label": "Proximal Policy Optimisation"}
+      {
+        "@id": "urn:ngm:class:instruction-following",
+        "label": "Instruction Following"
+      },
+      {
+        "@id": "urn:ngm:class:proximal-policy-optimisation",
+        "label": "Proximal Policy Optimisation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:principle-based-alignment", "label": "Principle-Based Alignment"},
-      {"@id": "urn:ngm:class:value-alignment", "label": "Value Alignment"}
+      {
+        "@id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:ai-feedback", "label": "AI Feedback"},
-      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"}
+      {
+        "@id": "urn:ngm:class:ai-feedback",
+        "label": "AI Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
-      {"@id": "urn:ngm:class:supervised-learning-from-human-feedback", "label": "Supervised Learning from Human Feedback"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:legal-ai-compliance", "label": "Legal AI Compliance"},
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-safety-evaluation", "label": "Model Safety Evaluation"}
+      {
+        "@id": "urn:ngm:class:safety-evaluation",
+        "label": "Model Safety Evaluation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:constitutional-ai", "label": "Constitutional AI"},
-    {"@id": "urn:ngm:class:cai", "label": "CAI"}
+    {
+      "@id": "urn:ngm:class:constitutional-ai",
+      "label": "Constitutional AI"
+    },
+    {
+      "@id": "urn:ngm:class:cai",
+      "label": "CAI"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

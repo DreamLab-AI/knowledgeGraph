@@ -115,10 +115,6 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:order-taking",
-        "label": "Order Taking"
-      },
-      {
         "@id": "urn:ngm:class:high-frequency-trading",
         "label": "High-Frequency Trading"
       }

@@ -54,46 +54,111 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:virtual-production-workflow", "label": "Virtual Production Workflow"},
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:design-software", "label": "Design Software"},
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
-      {"@id": "urn:ngm:class:led-volume-stage", "label": "LED Volume Stage"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+      {
+        "@id": "urn:ngm:class:virtual-production-workflow",
+        "label": "Virtual Production Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:design-software",
+        "label": "Design Software"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production-volume",
+        "label": "LED Volume Stage"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:production-pipeline", "label": "Production Pipeline"},
-      {"@id": "urn:ngm:class:content-production-workflow", "label": "Content Production Workflow"},
-      {"@id": "urn:ngm:class:pre-production", "label": "Pre-Production"},
-      {"@id": "urn:ngm:class:principal-photography", "label": "Principal Photography"},
-      {"@id": "urn:ngm:class:post-production", "label": "Post-Production"},
-      {"@id": "urn:ngm:class:visual-effects", "label": "Visual Effects"}
+      {
+        "@id": "urn:ngm:class:production-pipeline",
+        "label": "Production Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:content-production-workflow",
+        "label": "Content Production Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:pre-production",
+        "label": "Pre-Production"
+      },
+      {
+        "@id": "urn:ngm:class:visual-effects",
+        "label": "Visual Effects"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:world-building", "label": "World Building"},
-      {"@id": "urn:ngm:class:immersive-storytelling", "label": "Immersive Storytelling"},
-      {"@id": "urn:ngm:class:content-distribution", "label": "Content Distribution"}
+      {
+        "@id": "urn:ngm:class:world-building",
+        "label": "World Building"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-storytelling",
+        "label": "Immersive Storytelling"
+      },
+      {
+        "@id": "urn:ngm:class:content-distribution",
+        "label": "Content Distribution"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:asset-management", "label": "Asset Management"},
-      {"@id": "urn:ngm:class:render-farm", "label": "Render Farm"},
-      {"@id": "urn:ngm:class:colour-grading", "label": "Colour Grading"}
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:render-farm",
+        "label": "Render Farm"
+      },
+      {
+        "@id": "urn:ngm:class:colour-grading",
+        "label": "Colour Grading"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:animation-technique", "label": "Animation Technique"},
-      {"@id": "urn:ngm:class:3-d-rendering-engine", "label": "3D Rendering Engine"},
-      {"@id": "urn:ngm:class:screen-writing", "label": "Screen Writing"},
-      {"@id": "urn:ngm:class:sound-design", "label": "Sound Design"}
+      {
+        "@id": "urn:ngm:class:animation-technique",
+        "label": "Animation Technique"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:moviemaking", "label": "Moviemaking"},
-    {"@id": "urn:ngm:class:motion-picture-production", "label": "Motion Picture Production"}
+    {
+      "@id": "urn:ngm:class:moviemaking",
+      "label": "Moviemaking"
+    },
+    {
+      "@id": "urn:ngm:class:motion-picture-production",
+      "label": "Motion Picture Production"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

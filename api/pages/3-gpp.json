@@ -26,10 +26,6 @@
         "label": "5G Core Network"
       },
       {
-        "id": "urn:ngm:class:long-term-evolution",
-        "label": "Long-Term Evolution"
-      },
-      {
         "id": "urn:ngm:class:5g-new-radio",
         "label": "5G New Radio"
       }
@@ -38,10 +34,6 @@
       {
         "id": "urn:ngm:class:spectrum-allocation",
         "label": "Spectrum Allocation"
-      },
-      {
-        "id": "urn:ngm:class:radio-frequency-engineering",
-        "label": "Radio Frequency Engineering"
       }
     ],
     "enables": [
@@ -75,10 +67,6 @@
       {
         "id": "urn:ngm:class:5-g-connectivity",
         "label": "5G Connectivity"
-      },
-      {
-        "id": "urn:ngm:class:narrowband-iot",
-        "label": "Narrowband IoT"
       }
     ],
     "contrastsWith": [],
@@ -99,16 +87,8 @@
     "uses": [],
     "supports": [
       {
-        "id": "urn:ngm:class:ultra-reliable-low-latency-communications",
+        "id": "urn:ngm:class:low-latency",
         "label": "Ultra-Reliable Low-Latency Communications"
-      },
-      {
-        "id": "urn:ngm:class:massive-machine-type-communications",
-        "label": "Massive Machine-Type Communications"
-      },
-      {
-        "id": "urn:ngm:class:non-terrestrial-networks",
-        "label": "Non-Terrestrial Networks"
       }
     ],
     "standardizedBy": [],

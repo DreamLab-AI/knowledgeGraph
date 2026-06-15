@@ -23,54 +23,117 @@ public:: true
   "definition": "Epipolar Geometry is the projective geometry of stereo vision, describing the geometric relationship between two camera views of the same 3D scene. It is encapsulated in the Fundamental Matrix (uncalibrated cameras) and Essential Matrix (calibrated cameras), which constrain the search for correspondences between images to one-dimensional epipolar lines rather than the full 2D image plane.",
   "domain": "spatial-computing",
   "maturity": "mature",
-  "subClassOf": {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:computer-vision",
+    "label": "Computer Vision"
+  },
   "relations": {
-    "hasPart": [
-      {"@id": "urn:ngm:class:fundamental-matrix", "label": "Fundamental Matrix"},
-      {"@id": "urn:ngm:class:essential-matrix", "label": "Essential Matrix"},
-      {"@id": "urn:ngm:class:epipolar-line", "label": "Epipolar Line"},
-      {"@id": "urn:ngm:class:epipole", "label": "Epipole"}
-    ],
     "requires": [
-      {"@id": "urn:ngm:class:feature-matching", "label": "Feature Matching"},
-      {"@id": "urn:ngm:class:projective-geometry", "label": "Projective Geometry"}
+      {
+        "@id": "urn:ngm:class:feature-matching",
+        "label": "Feature Matching"
+      },
+      {
+        "@id": "urn:ngm:class:projective-geometry",
+        "label": "Projective Geometry"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:stereo-vision", "label": "Stereo Vision"},
-      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure-from-Motion"},
-      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"},
-      {"@id": "urn:ngm:class:stereo-rectification", "label": "Stereo Rectification"},
-      {"@id": "urn:ngm:class:3d-reconstruction", "label": "3D Reconstruction"}
+      {
+        "@id": "urn:ngm:class:stereo-vision",
+        "label": "Stereo Vision"
+      },
+      {
+        "@id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure-from-Motion"
+      },
+      {
+        "@id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:stereo-rectification",
+        "label": "Stereo Rectification"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"},
-      {"@id": "urn:ngm:class:ransac", "label": "RANSAC"}
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:ransac",
+        "label": "RANSAC"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:camera-intrinsics", "label": "Camera Intrinsics"},
-      {"@id": "urn:ngm:class:homography", "label": "Homography"},
-      {"@id": "urn:ngm:class:triangulation", "label": "Triangulation"}
+      {
+        "@id": "urn:ngm:class:camera-intrinsics",
+        "label": "Camera Intrinsics"
+      },
+      {
+        "@id": "urn:ngm:class:homography",
+        "label": "Homography"
+      },
+      {
+        "@id": "urn:ngm:class:triangulation",
+        "label": "Triangulation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:visual-odometry", "label": "Visual Odometry"},
-      {"@id": "urn:ngm:class:novel-view-synthesis", "label": "Novel View Synthesis"}
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:novel-view-synthesis",
+        "label": "Novel View Synthesis"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:monocular-depth-estimation", "label": "Monocular Depth Estimation"}
+      {
+        "@id": "urn:ngm:class:monocular-depth-estimation",
+        "label": "Monocular Depth Estimation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
-      {"@id": "urn:ngm:class:bundle-adjustment", "label": "Bundle Adjustment"}
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:bundle-adjustment",
+        "label": "Bundle Adjustment"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:autonomous-driving", "label": "Autonomous Driving"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:stereo-geometry", "label": "Stereo Geometry"},
-    {"@id": "urn:ngm:class:two-view-geometry", "label": "Two-View Geometry"}
+    {
+      "@id": "urn:ngm:class:stereo-geometry",
+      "label": "Stereo Geometry"
+    },
+    {
+      "@id": "urn:ngm:class:two-view-geometry",
+      "label": "Two-View Geometry"
+    }
   ],
   "quality": 0.8,
   "provenance": {

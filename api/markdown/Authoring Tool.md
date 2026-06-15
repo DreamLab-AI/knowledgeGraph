@@ -126,14 +126,6 @@ public:: true
         "label": "Asset Pipeline"
       },
       {
-        "@id": "urn:ngm:class:editor-interface",
-        "label": "Editor Interface"
-      },
-      {
-        "@id": "urn:ngm:class:preview-system",
-        "label": "Preview System"
-      },
-      {
         "@id": "urn:ngm:class:generative-design-tool",
         "label": "Generative Design Tool"
       }
@@ -152,10 +144,6 @@ public:: true
       {
         "@id": "urn:ngm:class:content-creation",
         "label": "Content Creation"
-      },
-      {
-        "@id": "urn:ngm:class:interactive-experience-development",
-        "label": "Interactive Experience Development"
       },
       {
         "@id": "urn:ngm:class:scene-design",

@@ -57,46 +57,111 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:search-engine-optimisation", "label": "Search Engine Optimisation"},
-      {"@id": "urn:ngm:class:content-marketing", "label": "Content Marketing"},
-      {"@id": "urn:ngm:class:email-marketing", "label": "Email Marketing"},
-      {"@id": "urn:ngm:class:programmatic-advertising", "label": "Programmatic Advertising"},
-      {"@id": "urn:ngm:class:social-media-marketing", "label": "Social Media Marketing"}
+      {
+        "@id": "urn:ngm:class:search-engine-optimisation",
+        "label": "Search Engine Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:programmatic-advertising",
+        "label": "Programmatic Advertising"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:recommendation-engine", "label": "Recommendation Engine"},
-      {"@id": "urn:ngm:class:digital-content", "label": "Digital Content"},
-      {"@id": "urn:ngm:class:customer-data-platform", "label": "Customer Data Platform"},
-      {"@id": "urn:ngm:class:data-analytics", "label": "Data Analytics"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:recommendation-engine",
+        "label": "Recommendation Engine"
+      },
+      {
+        "@id": "urn:ngm:class:digital-content",
+        "label": "Digital Content"
+      },
+      {
+        "@id": "urn:ngm:class:customer-data-platform",
+        "label": "Customer Data Platform"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:e-commerce", "label": "E-Commerce"},
-      {"@id": "urn:ngm:class:loyalty-programs", "label": "Loyalty Programs"},
-      {"@id": "urn:ngm:class:personalisation", "label": "Personalisation"},
-      {"@id": "urn:ngm:class:conversion-rate-optimisation", "label": "Conversion Rate Optimisation"}
+      {
+        "@id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce"
+      },
+      {
+        "@id": "urn:ngm:class:loyalty-programs",
+        "label": "Loyalty Programs"
+      },
+      {
+        "@id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "@id": "urn:ngm:class:conversion-rate-optimisation",
+        "label": "Conversion Rate Optimisation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-infrastructure", "label": "Data Infrastructure"},
-      {"@id": "urn:ngm:class:audience-segmentation", "label": "Audience Segmentation"},
-      {"@id": "urn:ngm:class:attribution-modelling", "label": "Attribution Modelling"}
+      {
+        "@id": "urn:ngm:class:data-infrastructure",
+        "label": "Data Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:audience-segmentation",
+        "label": "Audience Segmentation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:brand-identity", "label": "Brand Identity"},
-      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"},
-      {"@id": "urn:ngm:class:privacy-regulation", "label": "Privacy Regulation"},
-      {"@id": "urn:ngm:class:a-b-testing", "label": "A/B Testing"}
+      {
+        "@id": "urn:ngm:class:brand-identity",
+        "label": "Brand Identity"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-regulation",
+        "label": "Privacy Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:a-b-testing",
+        "label": "A/B Testing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:online-marketing", "label": "Online Marketing"},
-    {"@id": "urn:ngm:class:internet-marketing", "label": "Internet Marketing"}
+    {
+      "@id": "urn:ngm:class:online-marketing",
+      "label": "Online Marketing"
+    },
+    {
+      "@id": "urn:ngm:class:internet-marketing",
+      "label": "Internet Marketing"
+    }
   ],
   "quality": 0.72,
   "provenance": {

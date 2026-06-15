@@ -18,36 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:life-cycle-inventory",
-        "label": "Life Cycle Inventory"
-      },
-      {
-        "id": "urn:ngm:class:life-cycle-impact-assessment",
-        "label": "Life Cycle Impact Assessment"
-      },
-      {
-        "id": "urn:ngm:class:goal-and-scope-definition",
+        "id": "urn:ngm:class:scope-definition",
         "label": "Goal and Scope Definition"
-      },
-      {
-        "id": "urn:ngm:class:lca-interpretation",
-        "label": "LCA Interpretation"
       }
     ],
-    "requires": [
-      {
-        "id": "urn:ngm:class:functional-unit",
-        "label": "Functional Unit"
-      },
-      {
-        "id": "urn:ngm:class:system-boundary",
-        "label": "System Boundary"
-      },
-      {
-        "id": "urn:ngm:class:inventory-data",
-        "label": "Inventory Data"
-      }
-    ],
+    "requires": [],
     "enables": [
       {
         "id": "urn:ngm:class:carbon-footprint-assessment",
@@ -56,18 +31,6 @@
       {
         "id": "urn:ngm:class:environmental-sustainability",
         "label": "Environmental Sustainability"
-      },
-      {
-        "id": "urn:ngm:class:environmental-product-declaration",
-        "label": "Environmental Product Declaration"
-      },
-      {
-        "id": "urn:ngm:class:eco-design",
-        "label": "Eco-design"
-      },
-      {
-        "id": "urn:ngm:class:green-public-procurement",
-        "label": "Green Public Procurement"
       }
     ],
     "dependsOn": [],
@@ -92,19 +55,11 @@
         "label": "Blockchain Provenance"
       },
       {
-        "id": "urn:ngm:class:industrial-internet-of-things",
+        "id": "urn:ngm:class:industrial-io-t",
         "label": "Industrial Internet of Things"
       }
     ],
     "uses": [
-      {
-        "id": "urn:ngm:class:ecoinvent-database",
-        "label": "Ecoinvent Database"
-      },
-      {
-        "id": "urn:ngm:class:characterisation-factors",
-        "label": "Characterisation Factors"
-      },
       {
         "id": "urn:ngm:class:material-flow-analysis",
         "label": "Material Flow Analysis"
@@ -132,10 +87,6 @@
       {
         "id": "urn:ngm:class:iso-14044",
         "label": "ISO 14044"
-      },
-      {
-        "id": "urn:ngm:class:product-environmental-footprint",
-        "label": "Product Environmental Footprint"
       }
     ],
     "partOf": [],

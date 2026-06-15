@@ -89,7 +89,7 @@ public:: true
         "label": "Provenance Verification"
       },
       {
-        "@id": "urn:ngm:class:recall-management",
+        "@id": "urn:ngm:class:product-recall-management",
         "label": "Recall Management"
       }
     ],
@@ -101,12 +101,6 @@ public:: true
       {
         "@id": "urn:ngm:class:distributed-ledger",
         "label": "Distributed Ledger"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:food-supply-chain",
-        "label": "Food Supply Chain"
       }
     ],
     "implements": [
@@ -161,10 +155,6 @@ public:: true
       {
         "@id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
-      },
-      {
-        "@id": "urn:ngm:class:erp-system",
-        "label": "ERP System"
       }
     ],
     "relatedTo": [

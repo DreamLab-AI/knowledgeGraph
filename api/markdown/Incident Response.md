@@ -24,59 +24,145 @@ alias:: IncidentResponse
   "definition": "Incident Response is the structured organisational process for detecting, containing, eradicating, and recovering from cybersecurity incidents, followed by post-incident analysis to prevent recurrence and strengthen defensive posture. It is operationalised through lifecycle models such as NIST SP 800-61 and the SANS PICERL framework (Preparation, Identification, Containment, Eradication, Recovery, Lessons Learned), enacted via security operations centre (SOC) playbooks, SIEM-driven detection pipelines, and SOAR-automated response actions. Effective incident response minimises dwell time—the interval between initial compromise and detection—limits lateral movement and data exfiltration, and satisfies regulatory notification obligations under frameworks such as GDPR and NIS2. AI-assisted triage, automated containment orchestration, and threat-intelligence enrichment have become defining characteristics of mature programmes.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:threat-detection", "label": "Threat Detection"},
-      {"@id": "urn:ngm:class:digital-forensics", "label": "Digital Forensics"},
-      {"@id": "urn:ngm:class:incident-containment", "label": "Incident Containment"},
-      {"@id": "urn:ngm:class:post-incident-review", "label": "Post-Incident Review"}
+      {
+        "@id": "urn:ngm:class:threat-detection",
+        "label": "Threat Detection"
+      },
+      {
+        "@id": "urn:ngm:class:digital-forensics",
+        "label": "Digital Forensics"
+      },
+      {
+        "@id": "urn:ngm:class:post-incident-review",
+        "label": "Post-Incident Review"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:security-information-and-event-management", "label": "Security Information and Event Management"},
-      {"@id": "urn:ngm:class:security-operations-centre", "label": "Security Operations Centre"},
-      {"@id": "urn:ngm:class:threat-intelligence", "label": "Threat Intelligence"}
+      {
+        "@id": "urn:ngm:class:security-information-and-event-management",
+        "label": "Security Information and Event Management"
+      },
+      {
+        "@id": "urn:ngm:class:security-operations-centre",
+        "label": "Security Operations Centre"
+      },
+      {
+        "@id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:digital-forensics-framework", "label": "Digital Forensics Framework"},
-      {"@id": "urn:ngm:class:security-orchestration-automation-and-response", "label": "Security Orchestration Automation and Response"},
-      {"@id": "urn:ngm:class:ai-trust-risk-and-security-management", "label": "AI Trust Risk and Security Management"},
-      {"@id": "urn:ngm:class:endpoint-detection-and-response", "label": "Endpoint Detection and Response"},
-      {"@id": "urn:ngm:class:user-and-entity-behaviour-analytics", "label": "User and Entity Behaviour Analytics"}
+      {
+        "@id": "urn:ngm:class:digital-forensics-framework",
+        "label": "Digital Forensics Framework"
+      },
+      {
+        "@id": "urn:ngm:class:ai-trust-risk-and-security-management",
+        "label": "AI Trust Risk and Security Management"
+      },
+      {
+        "@id": "urn:ngm:class:endpoint-detection-and-response",
+        "label": "Endpoint Detection and Response"
+      },
+      {
+        "@id": "urn:ngm:class:user-and-entity-behaviour-analytics",
+        "label": "User and Entity Behaviour Analytics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:business-continuity", "label": "Business Continuity"},
-      {"@id": "urn:ngm:class:cyber-resilience", "label": "Cyber Resilience"},
-      {"@id": "urn:ngm:class:incident-reporting", "label": "Incident Reporting"}
+      {
+        "@id": "urn:ngm:class:business-continuity",
+        "label": "Business Continuity"
+      },
+      {
+        "@id": "urn:ngm:class:cyber-resilience",
+        "label": "Cyber Resilience"
+      },
+      {
+        "@id": "urn:ngm:class:incident-reporting",
+        "label": "Incident Reporting"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:cybersecurity-standard", "label": "Cybersecurity Standard"},
-      {"@id": "urn:ngm:class:data-security", "label": "Data Security"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+      {
+        "@id": "urn:ngm:class:cybersecurity-standard",
+        "label": "Cybersecurity Standard"
+      },
+      {
+        "@id": "urn:ngm:class:data-security",
+        "label": "Data Security"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:information-security", "label": "Information Security"},
-      {"@id": "urn:ngm:class:data-breach", "label": "Data Breach"},
-      {"@id": "urn:ngm:class:vulnerability", "label": "Vulnerability"},
-      {"@id": "urn:ngm:class:network-security", "label": "Network Security"},
-      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"}
+      {
+        "@id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      },
+      {
+        "@id": "urn:ngm:class:data-breach",
+        "label": "Data Breach"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      },
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist-cybersecurity-framework", "label": "NIST Cybersecurity Framework"},
-      {"@id": "urn:ngm:class:iso-iec-27035", "label": "ISO IEC 27035"}
+      {
+        "@id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:vulnerability-management", "label": "Vulnerability Management"},
-      {"@id": "urn:ngm:class:threat-hunting", "label": "Threat Hunting"}
+      {
+        "@id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      },
+      {
+        "@id": "urn:ngm:class:threat-hunting",
+        "label": "Threat Hunting"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-anomaly-detection", "label": "AI Anomaly Detection"},
-      {"@id": "urn:ngm:class:machine-learning-operations", "label": "Machine Learning Operations"}
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "AI Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-operations",
+        "label": "Machine Learning Operations"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:cyber-incident-response", "label": "Cyber Incident Response"},
-    {"@id": "urn:ngm:class:security-incident-management", "label": "Security Incident Management"}
+    {
+      "@id": "urn:ngm:class:cyber-incident-response",
+      "label": "Cyber Incident Response"
+    },
+    {
+      "@id": "urn:ngm:class:security-incident-management",
+      "label": "Security Incident Management"
+    }
   ],
   "quality": 0.74,
   "provenance": {

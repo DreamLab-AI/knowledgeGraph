@@ -72,39 +72,17 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:packet-header",
-        "label": "Packet Header"
-      },
-      {
         "@id": "urn:ngm:class:protocol-stack",
         "label": "Protocol Stack"
-      },
-      {
-        "@id": "urn:ngm:class:network-frame",
-        "label": "Network Frame"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:internet-architecture",
-        "label": "Internet Architecture"
       }
     ],
     "requires": [
       {
         "@id": "urn:ngm:class:network-addressing",
         "label": "Network Addressing"
-      },
-      {
-        "@id": "urn:ngm:class:error-detection",
-        "label": "Error Detection"
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:data-transmission",
-        "label": "Data Transmission"
-      },
       {
         "@id": "urn:ngm:class:network-communication",
         "label": "Network Communication"
@@ -204,10 +182,6 @@ public:: true
       {
         "@id": "urn:ngm:class:latency",
         "label": "Latency"
-      },
-      {
-        "@id": "urn:ngm:class:communication-standard",
-        "label": "Communication Standard"
       }
     ]
   },

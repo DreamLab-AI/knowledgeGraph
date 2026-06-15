@@ -19,10 +19,6 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:learner-model",
-        "label": "Learner Model"
-      },
-      {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
       },
@@ -51,10 +47,6 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:learner-data",
-        "label": "Learner Data"
-      },
-      {
         "id": "urn:ngm:class:content-repository",
         "label": "Content Repository"
       }
@@ -63,22 +55,9 @@
       {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
-      },
-      {
-        "id": "urn:ngm:class:deep-knowledge-tracing",
-        "label": "Deep Knowledge Tracing"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:one-size-fits-all-instruction",
-        "label": "One-Size-Fits-All Instruction"
-      },
-      {
-        "id": "urn:ngm:class:traditional-classroom-instruction",
-        "label": "Traditional Classroom Instruction"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:large-language-model",
@@ -109,20 +88,12 @@
       {
         "id": "urn:ngm:class:spaced-repetition",
         "label": "Spaced Repetition"
-      },
-      {
-        "id": "urn:ngm:class:recommender-system",
-        "label": "Recommender System"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:differentiated-instruction",
         "label": "Differentiated Instruction"
-      },
-      {
-        "id": "urn:ngm:class:self-regulated-learning",
-        "label": "Self-Regulated Learning"
       }
     ],
     "standardizedBy": [],
@@ -139,10 +110,6 @@
       {
         "id": "urn:ngm:class:cognitive-load-theory",
         "label": "Cognitive Load Theory"
-      },
-      {
-        "id": "urn:ngm:class:educational-data-mining",
-        "label": "Educational Data Mining"
       }
     ]
   },

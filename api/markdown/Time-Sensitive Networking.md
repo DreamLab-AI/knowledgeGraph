@@ -23,53 +23,109 @@ public:: true
   "definition": "Time-Sensitive Networking (TSN) is a set of IEEE 802.1 standards that add deterministic, bounded-latency delivery to standard Ethernet, enabling time-critical and best-effort traffic to share the same network. TSN provides precise time synchronisation, traffic scheduling, frame preemption, and reservation mechanisms so that control-loop and audio-video data arrive within guaranteed time windows. It is foundational to industrial automation, automotive in-vehicle networks, and professional media, replacing proprietary fieldbuses with converged standard Ethernet.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
   "relations": {
-    "hasPart": [
-      {"@id": "urn:ngm:class:time-aware-shaper", "label": "Time-Aware Shaper"},
-      {"@id": "urn:ngm:class:frame-preemption", "label": "Frame Preemption"},
-      {"@id": "urn:ngm:class:credit-based-shaper", "label": "Credit-Based Shaper"},
-      {"@id": "urn:ngm:class:stream-reservation-protocol", "label": "Stream Reservation Protocol"}
-    ],
     "requires": [
-      {"@id": "urn:ngm:class:precision-time-protocol", "label": "Precision Time Protocol"},
-      {"@id": "urn:ngm:class:ethernet", "label": "Ethernet"},
-      {"@id": "urn:ngm:class:network-switch", "label": "Network Switch"}
+      {
+        "@id": "urn:ngm:class:precision-time-protocol",
+        "label": "Precision Time Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:ethernet",
+        "label": "Ethernet"
+      },
+      {
+        "@id": "urn:ngm:class:network-switch",
+        "label": "Network Switch"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:clock-synchronization", "label": "Clock Synchronization"},
-      {"@id": "urn:ngm:class:traffic-scheduling", "label": "Traffic Scheduling"},
-      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality Of Service"}
+      {
+        "@id": "urn:ngm:class:clock-synchronization",
+        "label": "Clock Synchronization"
+      },
+      {
+        "@id": "urn:ngm:class:quality-of-service",
+        "label": "Quality Of Service"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:deterministic-networking", "label": "Deterministic Networking"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"},
-      {"@id": "urn:ngm:class:converged-network", "label": "Converged Network"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:deterministic-networking",
+        "label": "Deterministic Networking"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ieee-802-1", "label": "IEEE 802.1"},
-      {"@id": "urn:ngm:class:ieee", "label": "IEEE"}
+      {
+        "@id": "urn:ngm:class:ieee-802-x",
+        "label": "IEEE 802.1"
+      },
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:fieldbus", "label": "Fieldbus"},
-      {"@id": "urn:ngm:class:profinet", "label": "PROFINET"},
-      {"@id": "urn:ngm:class:best-effort-networking", "label": "Best-Effort Networking"}
+      {
+        "@id": "urn:ngm:class:fieldbus",
+        "label": "Fieldbus"
+      },
+      {
+        "@id": "urn:ngm:class:profinet",
+        "label": "PROFINET"
+      },
+      {
+        "@id": "urn:ngm:class:best-effort-networking",
+        "label": "Best-Effort Networking"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:operational-technology", "label": "Operational Technology"},
-      {"@id": "urn:ngm:class:automotive-ethernet", "label": "Automotive Ethernet"},
-      {"@id": "urn:ngm:class:industry-4-0", "label": "Industry 4.0"}
+      {
+        "@id": "urn:ngm:class:operational-technology",
+        "label": "Operational Technology"
+      },
+      {
+        "@id": "urn:ngm:class:ethernet",
+        "label": "Automotive Ethernet"
+      },
+      {
+        "@id": "urn:ngm:class:industry-4-0",
+        "label": "Industry 4.0"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:networking-standard", "label": "Networking Standard"},
-      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"},
-      {"@id": "urn:ngm:class:avb", "label": "Audio Video Bridging"}
+      {
+        "@id": "urn:ngm:class:networking-standard",
+        "label": "Networking Standard"
+      },
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:tsn", "label": "TSN"},
-    {"@id": "urn:ngm:class:ieee-802-1-tsn", "label": "IEEE 802.1 TSN"}
+    {
+      "@id": "urn:ngm:class:tsn",
+      "label": "TSN"
+    },
+    {
+      "@id": "urn:ngm:class:ieee-802-1-tsn",
+      "label": "IEEE 802.1 TSN"
+    }
   ],
   "quality": 0.72,
   "provenance": {

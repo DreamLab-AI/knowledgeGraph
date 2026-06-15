@@ -41,7 +41,7 @@
         "label": "Deferred Rendering"
       },
       {
-        "id": "urn:ngm:class:screen-space-ambient-occlusion",
+        "id": "urn:ngm:class:ambient-occlusion",
         "label": "Screen Space Ambient Occlusion"
       }
     ],
@@ -71,10 +71,6 @@
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:machine-learning-on-gpu",
-        "label": "Machine Learning on GPU"
-      },
       {
         "id": "urn:ngm:class:xr-rendering",
         "label": "XR Rendering"

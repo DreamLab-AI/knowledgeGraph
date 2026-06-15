@@ -23,49 +23,119 @@ public:: true
   "definition": "Disaster recovery (DR) is the set of policies, tools, and procedures enabling an organisation to restore its IT systems, data, and operations following a disruptive event such as hardware failure, cyberattack, natural disaster, or human error. It is quantified by Recovery Time Objective (RTO) and Recovery Point Objective (RPO), and encompasses backup strategies, replication architectures, and tested failover procedures.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:resilience", "label": "Resilience"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:resilience",
+      "label": "Resilience"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:recovery-time-objective", "label": "Recovery Time Objective"},
-      {"@id": "urn:ngm:class:recovery-point-objective", "label": "Recovery Point Objective"},
-      {"@id": "urn:ngm:class:failover", "label": "Failover"},
-      {"@id": "urn:ngm:class:dr-runbook", "label": "DR Runbook"}
+      {
+        "@id": "urn:ngm:class:recovery-time-objective",
+        "label": "Recovery Time Objective"
+      },
+      {
+        "@id": "urn:ngm:class:recovery-point-objective",
+        "label": "Recovery Point Objective"
+      },
+      {
+        "@id": "urn:ngm:class:failover",
+        "label": "Failover"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:backup-and-recovery", "label": "Backup and Recovery"},
-      {"@id": "urn:ngm:class:replication", "label": "Replication"},
-      {"@id": "urn:ngm:class:data-centre", "label": "Data Centre"}
+      {
+        "@id": "urn:ngm:class:backup-and-recovery",
+        "label": "Backup and Recovery"
+      },
+      {
+        "@id": "urn:ngm:class:replication",
+        "label": "Replication"
+      },
+      {
+        "@id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
-      {"@id": "urn:ngm:class:infrastructure-as-code", "label": "Infrastructure as Code"},
-      {"@id": "urn:ngm:class:chaos-engineering", "label": "Chaos Engineering"}
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
+        "@id": "urn:ngm:class:chaos-engineering",
+        "label": "Chaos Engineering"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:high-availability", "label": "High Availability"},
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:business-continuity", "label": "Business Continuity"}
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:business-continuity",
+        "label": "Business Continuity"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:network-redundancy", "label": "Network Redundancy"},
-      {"@id": "urn:ngm:class:storage-replication", "label": "Storage Replication"}
+      {
+        "@id": "urn:ngm:class:redundancy",
+        "label": "Network Redundancy"
+      },
+      {
+        "@id": "urn:ngm:class:replication",
+        "label": "Storage Replication"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:high-availability", "label": "High Availability"}
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:resilience-metric", "label": "Resilience Metric"},
-      {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"},
-      {"@id": "urn:ngm:class:ransomware", "label": "Ransomware"}
+      {
+        "@id": "urn:ngm:class:resilience-metric",
+        "label": "Resilience Metric"
+      },
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "@id": "urn:ngm:class:ransomware",
+        "label": "Ransomware"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:governance", "label": "Governance"},
-      {"@id": "urn:ngm:class:security", "label": "Security"}
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:dr", "label": "DR"},
-    {"@id": "urn:ngm:class:disaster-recovery-planning", "label": "Disaster Recovery Planning"}
+    {
+      "@id": "urn:ngm:class:dr",
+      "label": "DR"
+    },
+    {
+      "@id": "urn:ngm:class:disaster-recovery-planning",
+      "label": "Disaster Recovery Planning"
+    }
   ],
   "quality": 0.72,
   "provenance": {

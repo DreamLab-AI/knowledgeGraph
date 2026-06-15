@@ -107,7 +107,7 @@
         "label": "Kubernetes"
       },
       {
-        "id": "urn:ngm:class:accelerated-computing",
+        "id": "urn:ngm:class:gpu-computing",
         "label": "Accelerated Computing"
       }
     ],

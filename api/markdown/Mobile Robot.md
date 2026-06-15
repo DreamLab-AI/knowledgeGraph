@@ -73,11 +73,11 @@ alias:: Mobile Robots, MobileRobot
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:locomotion-system",
+        "@id": "urn:ngm:class:locomotion",
         "label": "Locomotion System"
       },
       {
-        "@id": "urn:ngm:class:robot-sensor-suite",
+        "@id": "urn:ngm:class:sensor-suite",
         "label": "Robot Sensor Suite"
       },
       {
@@ -99,7 +99,7 @@ alias:: Mobile Robots, MobileRobot
         "label": "Robotics"
       },
       {
-        "@id": "urn:ngm:class:multi-robot-system",
+        "@id": "urn:ngm:class:multi-robot-systems",
         "label": "Multi-Robot System"
       }
     ],
@@ -167,20 +167,12 @@ alias:: Mobile Robots, MobileRobot
       {
         "@id": "urn:ngm:class:iso-8373-2021",
         "label": "ISO 8373 2021"
-      },
-      {
-        "@id": "urn:ngm:class:ansi-ria-r15-08",
-        "label": "ANSI/RIA R15.08"
       }
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:industrial-manipulator",
+        "@id": "urn:ngm:class:manipulator",
         "label": "Industrial Manipulator"
-      },
-      {
-        "@id": "urn:ngm:class:fixed-base-robot",
-        "label": "Fixed-Base Robot"
       }
     ],
     "bridgesTo": [
@@ -201,10 +193,6 @@ alias:: Mobile Robots, MobileRobot
       {
         "@id": "urn:ngm:class:unmanned-aerial-vehicle",
         "label": "Unmanned Aerial Vehicle"
-      },
-      {
-        "@id": "urn:ngm:class:autonomous-underwater-vehicle",
-        "label": "Autonomous Underwater Vehicle"
       },
       {
         "@id": "urn:ngm:class:legged-robot",

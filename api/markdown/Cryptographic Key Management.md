@@ -102,10 +102,6 @@ public:: true
       {
         "@id": "urn:ngm:class:key-revocation",
         "label": "Key Revocation"
-      },
-      {
-        "@id": "urn:ngm:class:key-escrow",
-        "label": "Key Escrow"
       }
     ],
     "partOf": [
@@ -124,7 +120,7 @@ public:: true
         "label": "Hardware Security Module"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -174,7 +170,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:zero-trust-security",
+        "@id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Security"
       },
       {
@@ -205,10 +201,6 @@ public:: true
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:certificate-management",
-        "label": "Certificate Management"
-      },
       {
         "@id": "urn:ngm:class:post-quantum-cryptography",
         "label": "Post-Quantum Cryptography"

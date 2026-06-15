@@ -38,52 +38,125 @@ public:: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:recommendation-system", "label": "Recommendation System"},
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
-      {"@id": "urn:ngm:class:zero-shot-classification", "label": "Zero-Shot Classification"}
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"}
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
-      {"@id": "urn:ngm:class:approximate-nearest-neighbour", "label": "Approximate Nearest Neighbour"},
-      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"}
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "@id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Approximate Nearest Neighbour"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:latent-space", "label": "Latent Space"},
-      {"@id": "urn:ngm:class:pooling-layer", "label": "Pooling Layer"}
+      {
+        "@id": "urn:ngm:class:neural-network-latent-space",
+        "label": "Latent Space"
+      },
+      {
+        "@id": "urn:ngm:class:pooling-layer",
+        "label": "Pooling Layer"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:sparse-representation", "label": "Sparse Representation"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"}
+      {
+        "@id": "urn:ngm:class:sparse-representation",
+        "label": "Sparse Representation"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:dimensionality-reduction", "label": "Dimensionality Reduction"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-index", "label": "Spatial Index"},
-      {"@id": "urn:ngm:class:knowledge-graph-completion", "label": "Knowledge Graph Completion"}
+      {
+        "@id": "urn:ngm:class:spatial-index",
+        "label": "Spatial Index"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-completion",
+        "label": "Knowledge Graph Completion"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:dense-encoder", "label": "Dense Encoder"},
-    {"@id": "urn:ngm:class:sentence-encoder", "label": "Sentence Encoder"}
+    {
+      "@id": "urn:ngm:class:dense-encoder",
+      "label": "Dense Encoder"
+    },
+    {
+      "@id": "urn:ngm:class:sentence-encoder",
+      "label": "Sentence Encoder"
+    }
   ],
   "qualityScore": 0.74,
-  "maturity": "established",
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",

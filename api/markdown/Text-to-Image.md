@@ -56,49 +56,125 @@ alias:: Text to Image
   },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:clip", "label": "CLIP"},
-      {"@id": "urn:ngm:class:text-encoder", "label": "Text Encoder"},
-      {"@id": "urn:ngm:class:latent-diffusion", "label": "Latent Diffusion"},
-      {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"}
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "@id": "urn:ngm:class:text-encoder",
+        "label": "Text Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:text-embedding", "label": "Text Embedding"},
-      {"@id": "urn:ngm:class:training-dataset", "label": "Training Dataset"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+      {
+        "@id": "urn:ngm:class:text-embeddings",
+        "label": "Text Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:training-dataset",
+        "label": "Training Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:3-d-content-generation", "label": "3D Content Generation"},
-      {"@id": "urn:ngm:class:synthetic-data-generation", "label": "Synthetic Data Generation"},
-      {"@id": "urn:ngm:class:digital-art-creation", "label": "Digital Art Creation"},
-      {"@id": "urn:ngm:class:inpainting", "label": "Inpainting"},
-      {"@id": "urn:ngm:class:concept-visualisation", "label": "Concept Visualisation"}
+      {
+        "@id": "urn:ngm:class:3-d-content-generation",
+        "label": "3D Content Generation"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-art-creation",
+        "label": "Digital Art Creation"
+      },
+      {
+        "@id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:generative-ai-engineering", "label": "Generative AI Engineering"},
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"}
+      {
+        "@id": "urn:ngm:class:generative-ai-engineering",
+        "label": "Generative AI Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:text-to-video", "label": "Text-to-Video"},
-      {"@id": "urn:ngm:class:image-to-text", "label": "Image-to-Text"}
+      {
+        "@id": "urn:ngm:class:text-to-video-generation",
+        "label": "Text-to-Video"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-content-creation", "label": "Digital Content Creation"},
-      {"@id": "urn:ngm:class:virtual-world-generation", "label": "Virtual World Generation"}
+      {
+        "@id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-world-generation",
+        "label": "Virtual World Generation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:stable-diffusion", "label": "Stable Diffusion"},
-      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
+        "label": "Stable Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:text-conditioned-image-synthesis", "label": "Text-Conditioned Image Synthesis"},
-    {"@id": "urn:ngm:class:text-driven-image-generation", "label": "Text-Driven Image Generation"}
+    {
+      "@id": "urn:ngm:class:text-conditioned-image-synthesis",
+      "label": "Text-Conditioned Image Synthesis"
+    },
+    {
+      "@id": "urn:ngm:class:text-driven-image-generation",
+      "label": "Text-Driven Image Generation"
+    }
   ],
   "quality": 0.75,
   "provenance": {

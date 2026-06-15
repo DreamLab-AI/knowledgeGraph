@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:transaction-validation-engine",
+        "id": "urn:ngm:class:transaction-validation",
         "label": "Transaction Validation Engine"
       },
       {
@@ -52,10 +52,6 @@
       {
         "id": "urn:ngm:class:cryptographic-verification",
         "label": "Cryptographic Verification"
-      },
-      {
-        "id": "urn:ngm:class:trustless-participation",
-        "label": "Trustless Participation"
       },
       {
         "id": "urn:ngm:class:independent-verification",

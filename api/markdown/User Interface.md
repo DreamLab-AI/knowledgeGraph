@@ -48,60 +48,149 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:graphical-user-interface", "label": "Graphical User Interface"},
-      {"@id": "urn:ngm:class:3-d-user-interface", "label": "3D User Interface"},
-      {"@id": "urn:ngm:class:voice-user-interface", "label": "Voice User Interface"},
-      {"@id": "urn:ngm:class:gesture-recognition", "label": "Gesture Recognition"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
+      {
+        "@id": "urn:ngm:class:graphical-user-interface",
+        "label": "Graphical User Interface"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-user-interface",
+        "label": "3D User Interface"
+      },
+      {
+        "@id": "urn:ngm:class:voice-user-interface",
+        "label": "Voice User Interface"
+      },
+      {
+        "@id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"}
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"},
-      {"@id": "urn:ngm:class:interaction-design", "label": "Interaction Design"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"}
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"},
-      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"},
-      {"@id": "urn:ngm:class:natural-language-interface", "label": "Natural Language Interface"},
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"}
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-interface",
+        "label": "Natural Language Interface"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:display-technology", "label": "Display Technology"},
-      {"@id": "urn:ngm:class:input-device", "label": "Input Device"},
-      {"@id": "urn:ngm:class:operating-system", "label": "Operating System"}
+      {
+        "@id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
+      },
+      {
+        "@id": "urn:ngm:class:input-device",
+        "label": "Input Device"
+      },
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:design-system", "label": "Design System"},
-      {"@id": "urn:ngm:class:widget-toolkit", "label": "Widget Toolkit"}
+      {
+        "@id": "urn:ngm:class:design-systems",
+        "label": "Design System"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:multimodal-interaction", "label": "Multimodal Interaction"},
-      {"@id": "urn:ngm:class:localisation", "label": "Localisation"}
+      {
+        "@id": "urn:ngm:class:multimodal-interaction",
+        "label": "Multimodal Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:w3c-standards", "label": "W3C Standards"},
-      {"@id": "urn:ngm:class:wcag", "label": "WCAG"}
+      {
+        "@id": "urn:ngm:class:w3c-standards",
+        "label": "W3C Standards"
+      },
+      {
+        "@id": "urn:ngm:class:wcag-2-2",
+        "label": "WCAG"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:application-programming-interface", "label": "Application Programming Interface"},
-      {"@id": "urn:ngm:class:command-line-interface", "label": "Command Line Interface"}
+      {
+        "@id": "urn:ngm:class:application-programming-interface",
+        "label": "Application Programming Interface"
+      },
+      {
+        "@id": "urn:ngm:class:command-line-interface",
+        "label": "Command Line Interface"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"}
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cognitive-load", "label": "Cognitive Load"},
-      {"@id": "urn:ngm:class:mental-model", "label": "Mental Model"}
+      {
+        "@id": "urn:ngm:class:cognitive-load",
+        "label": "Cognitive Load"
+      },
+      {
+        "@id": "urn:ngm:class:mental-model",
+        "label": "Mental Model"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ui", "label": "UI"},
-    {"@id": "urn:ngm:class:front-end-interface", "label": "Front-End Interface"}
+    {
+      "@id": "urn:ngm:class:ui",
+      "label": "UI"
+    },
+    {
+      "@id": "urn:ngm:class:front-end-interface",
+      "label": "Front-End Interface"
+    }
   ],
   "quality": 0.74,
   "provenance": {

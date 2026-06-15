@@ -30,7 +30,7 @@
         "label": "Experiment Tracking"
       },
       {
-        "id": "urn:ngm:class:machine-learning-pipeline",
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
       }
     ],
@@ -119,13 +119,13 @@
         "label": "Workflow Orchestration"
       },
       {
-        "id": "urn:ngm:class:ci-cd",
+        "id": "urn:ngm:class:ci-cd-automation",
         "label": "CI/CD"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:model-explainability",
+        "id": "urn:ngm:class:explainability",
         "label": "Model Explainability"
       },
       {

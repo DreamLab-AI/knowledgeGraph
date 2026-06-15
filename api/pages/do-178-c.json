@@ -16,24 +16,7 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:do-331",
-        "label": "DO-331 Model-Based Development Supplement"
-      },
-      {
-        "id": "urn:ngm:class:do-332",
-        "label": "DO-332 Object-Oriented Technology Supplement"
-      },
-      {
-        "id": "urn:ngm:class:do-333",
-        "label": "DO-333 Formal Methods Supplement"
-      },
-      {
-        "id": "urn:ngm:class:do-330",
-        "label": "DO-330 Tool Qualification"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:formal-verification",
@@ -44,12 +27,8 @@
         "label": "Software Testing"
       },
       {
-        "id": "urn:ngm:class:requirements-traceability",
+        "id": "urn:ngm:class:traceability",
         "label": "Requirements Traceability"
-      },
-      {
-        "id": "urn:ngm:class:structural-coverage-analysis",
-        "label": "Structural Coverage Analysis"
       },
       {
         "id": "urn:ngm:class:configuration-management",
@@ -66,22 +45,14 @@
         "label": "Quality Assurance"
       },
       {
-        "id": "urn:ngm:class:airworthiness-certification",
-        "label": "Airworthiness Certification"
-      },
-      {
         "id": "urn:ngm:class:avionics",
         "label": "Avionics"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:software-lifecycle-management",
+        "id": "urn:ngm:class:lifecycle-management",
         "label": "Software Lifecycle Management"
-      },
-      {
-        "id": "urn:ngm:class:design-assurance-level",
-        "label": "Design Assurance Level"
       }
     ],
     "implements": [],
@@ -107,16 +78,7 @@
     ],
     "uses": [],
     "supports": [],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:rtca",
-        "label": "RTCA"
-      },
-      {
-        "id": "urn:ngm:class:eurocae",
-        "label": "EUROCAE"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
@@ -134,10 +96,6 @@
       {
         "id": "urn:ngm:class:do-254",
         "label": "DO-254"
-      },
-      {
-        "id": "urn:ngm:class:safety-critical-software",
-        "label": "Safety-Critical Software"
       }
     ]
   },

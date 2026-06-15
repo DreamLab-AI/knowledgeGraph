@@ -41,10 +41,6 @@
         "label": "Trusted Execution Environment"
       },
       {
-        "id": "urn:ngm:class:software-integrity-verification",
-        "label": "Software Integrity Verification"
-      },
-      {
         "id": "urn:ngm:class:secure-boot",
         "label": "Secure Boot"
       }
@@ -52,7 +48,7 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:software-supply-chain-security",
+        "id": "urn:ngm:class:supply-chain-security",
         "label": "Software Supply Chain Security"
       },
       {
@@ -77,7 +73,7 @@
         "label": "Digital Signature"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -89,16 +85,12 @@
         "label": "Asymmetric Cryptography"
       },
       {
-        "id": "urn:ngm:class:x509-certificate",
+        "id": "urn:ngm:class:x-509-certificate",
         "label": "X.509 Certificate"
       },
       {
         "id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hash Function"
-      },
-      {
-        "id": "urn:ngm:class:transparency-log",
-        "label": "Transparency Log"
       }
     ],
     "supports": [
@@ -109,10 +101,6 @@
       {
         "id": "urn:ngm:class:slsa-framework",
         "label": "SLSA Framework"
-      },
-      {
-        "id": "urn:ngm:class:container-image-security",
-        "label": "Container Image Security"
       }
     ],
     "standardizedBy": [],
@@ -129,10 +117,6 @@
       {
         "id": "urn:ngm:class:sigstore",
         "label": "Sigstore"
-      },
-      {
-        "id": "urn:ngm:class:keyless-signing",
-        "label": "Keyless Signing"
       }
     ]
   },

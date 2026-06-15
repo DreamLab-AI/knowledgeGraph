@@ -24,10 +24,6 @@
       {
         "id": "urn:ngm:class:user-profiling",
         "label": "User Profiling"
-      },
-      {
-        "id": "urn:ngm:class:session-analysis",
-        "label": "Session Analysis"
       }
     ],
     "requires": [
@@ -76,14 +72,14 @@
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:event-stream-processing",
+        "id": "urn:ngm:class:stream-processing",
         "label": "Event Stream Processing"
       }
     ],
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:rule-based-system",
+        "id": "urn:ngm:class:rule-based-systems",
         "label": "Rule-Based System"
       }
     ],

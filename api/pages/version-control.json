@@ -22,21 +22,13 @@
         "label": "Git"
       },
       {
-        "id": "urn:ngm:class:branching-strategy",
-        "label": "Branching Strategy"
-      },
-      {
-        "id": "urn:ngm:class:merge-conflict-resolution",
-        "label": "Merge Conflict Resolution"
-      },
-      {
         "id": "urn:ngm:class:commit",
         "label": "Commit"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-hashing",
+        "id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hashing"
       },
       {
@@ -73,12 +65,7 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:centralised-version-control",
-        "label": "Centralised Version Control"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:data-lineage",
@@ -124,7 +111,7 @@
         "label": "Audit Trail"
       },
       {
-        "id": "urn:ngm:class:dataset-versioning",
+        "id": "urn:ngm:class:data-versioning",
         "label": "Dataset Versioning"
       }
     ]

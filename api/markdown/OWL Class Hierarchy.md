@@ -60,27 +60,9 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:owl-class",
-        "label": "OWL Class"
-      },
-      {
-        "@id": "urn:ngm:class:subclass-axiom",
-        "label": "SubClass Axiom"
-      },
-      {
-        "@id": "urn:ngm:class:equivalent-class-axiom",
-        "label": "Equivalent Class Axiom"
-      },
-      {
-        "@id": "urn:ngm:class:disjoint-classes-axiom",
-        "label": "Disjoint Classes Axiom"
-      }
-    ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:owl-ontology",
+        "@id": "urn:ngm:class:owl-2-web-ontology-language",
         "label": "OWL Ontology"
       }
     ],
@@ -100,11 +82,11 @@ public:: true
         "label": "Automated Reasoning"
       },
       {
-        "@id": "urn:ngm:class:ontology-classification",
+        "@id": "urn:ngm:class:classification",
         "label": "Ontology Classification"
       },
       {
-        "@id": "urn:ngm:class:knowledge-inference",
+        "@id": "urn:ngm:class:inference",
         "label": "Knowledge Inference"
       },
       {
@@ -124,25 +106,17 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:w3c-owl-standard",
+        "@id": "urn:ngm:class:owl-2-web-ontology-language",
         "label": "W3C OWL Standard"
       },
       {
-        "@id": "urn:ngm:class:shoiq-description-logic",
+        "@id": "urn:ngm:class:description-logic",
         "label": "SHOIQ Description Logic"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:rdfs-subclass-of",
-        "label": "rdfs:subClassOf"
-      },
-      {
-        "@id": "urn:ngm:class:manchester-syntax",
-        "label": "Manchester Syntax"
-      },
-      {
-        "@id": "urn:ngm:class:turtle-syntax",
+        "@id": "urn:ngm:class:turtle",
         "label": "Turtle Syntax"
       }
     ],
@@ -152,7 +126,7 @@ public:: true
         "label": "Knowledge Graph"
       },
       {
-        "@id": "urn:ngm:class:semantic-web",
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       },
       {
@@ -168,41 +142,17 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:rdf-type-hierarchy",
-        "label": "RDF Type Hierarchy"
-      },
-      {
-        "@id": "urn:ngm:class:property-hierarchy",
-        "label": "Property Hierarchy"
-      },
-      {
         "@id": "urn:ngm:class:closed-world-assumption",
         "label": "Closed World Assumption"
       }
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:machine-learning-taxonomy",
-        "label": "Machine Learning Taxonomy"
-      },
-      {
         "@id": "urn:ngm:class:upper-ontology",
         "label": "Upper Ontology"
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:hermit-reasoner",
-        "label": "HermiT Reasoner"
-      },
-      {
-        "@id": "urn:ngm:class:pellet-reasoner",
-        "label": "Pellet Reasoner"
-      },
-      {
-        "@id": "urn:ngm:class:protege",
-        "label": "Protege"
-      },
       {
         "@id": "urn:ngm:class:biomedical-ontology",
         "label": "Biomedical Ontology"

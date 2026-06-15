@@ -67,11 +67,11 @@ public:: true
         "label": "Transparency"
       },
       {
-        "@id": "urn:ngm:class:disaggregated-evaluation",
+        "@id": "urn:ngm:class:model-evaluation",
         "label": "Disaggregated Evaluation"
       },
       {
-        "@id": "urn:ngm:class:model-metadata",
+        "@id": "urn:ngm:class:metadata",
         "label": "Model Metadata"
       }
     ],
@@ -95,15 +95,11 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:intended-use-statement",
-        "label": "Intended Use Statement"
-      },
-      {
         "@id": "urn:ngm:class:performance-metrics",
         "label": "Performance Metrics"
       },
       {
-        "@id": "urn:ngm:class:bias-and-fairness-analysis",
+        "@id": "urn:ngm:class:fairness",
         "label": "Bias and Fairness Analysis"
       },
       {
@@ -113,7 +109,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:ai-documentation",
+        "@id": "urn:ngm:class:ai-documentation-standards",
         "label": "AI Documentation"
       },
       {
@@ -125,10 +121,6 @@ public:: true
       {
         "@id": "urn:ngm:class:datasheets-for-datasets",
         "label": "Datasheets for Datasets"
-      },
-      {
-        "@id": "urn:ngm:class:system-cards",
-        "label": "System Cards"
       }
     ],
     "relatedTo": [

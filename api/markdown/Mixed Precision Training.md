@@ -51,59 +51,116 @@ alias:: Mixed-Precision Training
     "label": "Neural Network Training"
   },
   "relations": {
-    "hasPart": [
-      {"@id": "urn:ngm:class:loss-scaling", "label": "Loss Scaling"},
-      {"@id": "urn:ngm:class:fp16-computation", "label": "FP16 Computation"},
-      {"@id": "urn:ngm:class:master-weight-copy", "label": "Master Weight Copy"}
-    ],
     "partOf": [
-      {"@id": "urn:ngm:class:neural-network-training", "label": "Neural Network Training"},
-      {"@id": "urn:ngm:class:model-optimisation-pipeline", "label": "Model Optimisation Pipeline"}
+      {
+        "@id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      },
+      {
+        "@id": "urn:ngm:class:model-optimisation-and-performance",
+        "label": "Model Optimisation Pipeline"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:tensor-cores", "label": "Tensor Cores"}
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-cores",
+        "label": "Tensor Cores"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:large-scale-distributed-training", "label": "Large-Scale Distributed Training"}
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Large-Scale Distributed Training"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:floating-point-arithmetic", "label": "Floating-Point Arithmetic"},
-      {"@id": "urn:ngm:class:gradient-computation", "label": "Gradient Computation"},
-      {"@id": "urn:ngm:class:automatic-differentiation", "label": "Automatic Differentiation"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:numerical-precision-management", "label": "Numerical Precision Management"}
+      {
+        "@id": "urn:ngm:class:floating-point-arithmetic",
+        "label": "Floating-Point Arithmetic"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-computation",
+        "label": "Gradient Computation"
+      },
+      {
+        "@id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:pytorch", "label": "PyTorch"},
-      {"@id": "urn:ngm:class:tensorflow", "label": "TensorFlow"},
-      {"@id": "urn:ngm:class:bfloat16", "label": "BFloat16"}
+      {
+        "@id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "label": "PyTorch"
+      },
+      {
+        "@id": "urn:ngm:class:tensorflow",
+        "label": "TensorFlow"
+      },
+      {
+        "@id": "urn:ngm:class:bfloat16",
+        "label": "BFloat16"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:neural-network-quantisation", "label": "Neural Network Quantisation"},
-      {"@id": "urn:ngm:class:full-precision-training", "label": "Full Precision Training"}
+      {
+        "@id": "urn:ngm:class:neural-network-quantisation",
+        "label": "Neural Network Quantisation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:gradient-checkpointing", "label": "Gradient Checkpointing"},
-      {"@id": "urn:ngm:class:model-compression", "label": "Model Compression"}
+      {
+        "@id": "urn:ngm:class:gradient-checkpointing",
+        "label": "Gradient Checkpointing"
+      },
+      {
+        "@id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:hardware-software-co-design", "label": "Hardware-Software Co-Design"}
+      {
+        "@id": "urn:ngm:class:hardware-software-co-design",
+        "label": "Hardware-Software Co-Design"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:mixed-precision-learning", "label": "Mixed Precision Learning"},
-    {"@id": "urn:ngm:class:automatic-mixed-precision", "label": "Automatic Mixed Precision"}
+    {
+      "@id": "urn:ngm:class:mixed-precision-learning",
+      "label": "Mixed Precision Learning"
+    },
+    {
+      "@id": "urn:ngm:class:automatic-mixed-precision",
+      "label": "Automatic Mixed Precision"
+    }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

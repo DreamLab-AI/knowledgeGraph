@@ -76,10 +76,6 @@ public:: true
       {
         "@id": "urn:ngm:class:texture-atlas",
         "label": "Texture Atlas"
-      },
-      {
-        "@id": "urn:ngm:class:bump-mapping",
-        "label": "Bump Mapping"
       }
     ],
     "partOf": [
@@ -162,7 +158,7 @@ public:: true
         "label": "Displacement Mapping"
       },
       {
-        "@id": "urn:ngm:class:procedural-material",
+        "@id": "urn:ngm:class:procedural-texture",
         "label": "Procedural Material"
       }
     ],
@@ -188,7 +184,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:material-definition-language",
+        "@id": "urn:ngm:class:material-definition",
         "label": "Material Definition Language"
       },
       {

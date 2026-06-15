@@ -117,11 +117,14 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"}
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:3-d-mapping",
+        "@id": "urn:ngm:class:mapping",
         "label": "3D Mapping"
       },
       {

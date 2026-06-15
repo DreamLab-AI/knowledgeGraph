@@ -18,20 +18,12 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:relay-chain",
-        "label": "Relay Chain"
-      },
-      {
         "id": "urn:ngm:class:polkadot-parachains",
         "label": "Polkadot Parachains"
       },
       {
         "id": "urn:ngm:class:xcm",
         "label": "XCM (Cross-Consensus Message Format)"
-      },
-      {
-        "id": "urn:ngm:class:dot-token",
-        "label": "DOT Token"
       }
     ],
     "requires": [
@@ -58,11 +50,7 @@
         "label": "Blockchain Interoperability"
       },
       {
-        "id": "urn:ngm:class:shared-security",
-        "label": "Shared Security"
-      },
-      {
-        "id": "urn:ngm:class:forkless-upgrades",
+        "id": "urn:ngm:class:protocol-upgrades",
         "label": "Forkless Upgrades"
       },
       {
@@ -76,7 +64,7 @@
         "label": "Distributed Ledger Technology"
       },
       {
-        "id": "urn:ngm:class:cryptographic-primitives",
+        "id": "urn:ngm:class:cryptographic-primitive",
         "label": "Cryptographic Primitives"
       }
     ],
@@ -107,24 +95,12 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:substrate-framework",
-        "label": "Substrate Framework"
-      },
-      {
         "id": "urn:ngm:class:web-assembly",
         "label": "WebAssembly"
       },
       {
         "id": "urn:ngm:class:nominated-proof-of-stake",
         "label": "Nominated Proof of Stake"
-      },
-      {
-        "id": "urn:ngm:class:babe-consensus",
-        "label": "BABE Consensus"
-      },
-      {
-        "id": "urn:ngm:class:grandpa-finality",
-        "label": "GRANDPA Finality"
       }
     ],
     "supports": [],
@@ -146,10 +122,6 @@
       {
         "id": "urn:ngm:class:smart-contracts",
         "label": "Smart Contracts"
-      },
-      {
-        "id": "urn:ngm:class:kusama",
-        "label": "Kusama"
       }
     ]
   },

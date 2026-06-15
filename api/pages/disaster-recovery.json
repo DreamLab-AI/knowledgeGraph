@@ -28,10 +28,6 @@
       {
         "id": "urn:ngm:class:failover",
         "label": "Failover"
-      },
-      {
-        "id": "urn:ngm:class:dr-runbook",
-        "label": "DR Runbook"
       }
     ],
     "requires": [
@@ -64,11 +60,11 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:network-redundancy",
+        "id": "urn:ngm:class:redundancy",
         "label": "Network Redundancy"
       },
       {
-        "id": "urn:ngm:class:storage-replication",
+        "id": "urn:ngm:class:replication",
         "label": "Storage Replication"
       }
     ],

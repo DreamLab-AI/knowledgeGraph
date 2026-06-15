@@ -59,22 +59,8 @@ public:: true
         "label": "Type System"
       },
       {
-        "@id": "urn:ngm:class:generics",
-        "label": "Generics"
-      },
-      {
         "@id": "urn:ngm:class:interface",
         "label": "Interface"
-      },
-      {
-        "@id": "urn:ngm:class:typescript-compiler",
-        "label": "TypeScript Compiler"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:javascript-ecosystem",
-        "label": "JavaScript Ecosystem"
       }
     ],
     "requires": [
@@ -115,21 +101,7 @@ public:: true
         "label": "npm"
       }
     ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:structural-typing",
-        "label": "Structural Typing"
-      },
-      {
-        "@id": "urn:ngm:class:type-inference",
-        "label": "Type Inference"
-      }
-    ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:abstract-syntax-tree",
-        "label": "Abstract Syntax Tree"
-      },
       {
         "@id": "urn:ngm:class:language-server-protocol",
         "label": "Language Server Protocol"
@@ -139,14 +111,6 @@ public:: true
       {
         "@id": "urn:ngm:class:react",
         "label": "React"
-      },
-      {
-        "@id": "urn:ngm:class:angular",
-        "label": "Angular"
-      },
-      {
-        "@id": "urn:ngm:class:deno",
-        "label": "Deno"
       }
     ],
     "standardizedBy": [
@@ -163,14 +127,6 @@ public:: true
       {
         "@id": "urn:ngm:class:javascript",
         "label": "JavaScript"
-      },
-      {
-        "@id": "urn:ngm:class:flow-type-checker",
-        "label": "Flow Type Checker"
-      },
-      {
-        "@id": "urn:ngm:class:dart",
-        "label": "Dart"
       }
     ],
     "bridgesTo": [
@@ -181,20 +137,6 @@ public:: true
       {
         "@id": "urn:ngm:class:api-design",
         "label": "API Design"
-      }
-    ],
-    "relatedTo": [
-      {
-        "@id": "urn:ngm:class:transpilation",
-        "label": "Transpilation"
-      },
-      {
-        "@id": "urn:ngm:class:webpack",
-        "label": "Webpack"
-      },
-      {
-        "@id": "urn:ngm:class:eslint",
-        "label": "ESLint"
       }
     ]
   },

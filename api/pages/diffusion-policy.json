@@ -25,10 +25,6 @@
       {
         "id": "urn:ngm:class:proprioception",
         "label": "Proprioception"
-      },
-      {
-        "id": "urn:ngm:class:visual-observation",
-        "label": "Visual Observation"
       }
     ],
     "enables": [
@@ -49,12 +45,8 @@
         "label": "Dexterous Manipulation"
       },
       {
-        "id": "urn:ngm:class:bimanual-robot-control",
+        "id": "urn:ngm:class:robot-control",
         "label": "Bimanual Robot Control"
-      },
-      {
-        "id": "urn:ngm:class:multi-modal-action-distribution",
-        "label": "Multi-Modal Action Distribution"
       }
     ],
     "dependsOn": [],
@@ -62,10 +54,6 @@
       {
         "id": "urn:ngm:class:behavioural-cloning",
         "label": "Behavioural Cloning"
-      },
-      {
-        "id": "urn:ngm:class:action-chunking",
-        "label": "Action Chunking"
       }
     ],
     "contrastsWith": [
@@ -121,10 +109,6 @@
       {
         "id": "urn:ngm:class:end-effector",
         "label": "End Effector"
-      },
-      {
-        "id": "urn:ngm:class:consistency-policy",
-        "label": "Consistency Policy"
       },
       {
         "id": "urn:ngm:class:score-based-generative-model",

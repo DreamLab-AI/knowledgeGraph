@@ -18,10 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:monetary-policy-committee",
-        "label": "Monetary Policy Committee"
-      },
-      {
         "id": "urn:ngm:class:financial-policy-committee",
         "label": "Financial Policy Committee"
       },
@@ -110,12 +106,7 @@
         "label": "Basel III"
       }
     ],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:uk-financial-regulatory-framework",
-        "label": "UK Financial Regulatory Framework"
-      }
-    ],
+    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:central-bank-digital-currency",

@@ -18,14 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:forward-diffusion-process",
-        "label": "Forward Diffusion Process"
-      },
-      {
-        "id": "urn:ngm:class:reverse-diffusion-process",
-        "label": "Reverse Diffusion Process"
-      },
-      {
         "id": "urn:ngm:class:noise-schedule",
         "label": "Noise Schedule"
       },
@@ -44,7 +36,7 @@
         "label": "GPU Compute"
       },
       {
-        "id": "urn:ngm:class:latent-space",
+        "id": "urn:ngm:class:neural-network-latent-space",
         "label": "Latent Space"
       }
     ],
@@ -151,7 +143,7 @@
         "label": "Foundation Model"
       },
       {
-        "id": "urn:ngm:class:multimodal-model",
+        "id": "urn:ngm:class:multimodal-ai-architecture-models",
         "label": "Multimodal Model"
       }
     ]

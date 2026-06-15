@@ -100,7 +100,7 @@
         "label": "Machine Learning Discipline"
       },
       {
-        "id": "urn:ngm:class:gpu-accelerated-computing",
+        "id": "urn:ngm:class:gpu-computing",
         "label": "GPU Accelerated Computing"
       }
     ],

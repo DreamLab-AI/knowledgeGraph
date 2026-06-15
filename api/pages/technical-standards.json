@@ -22,21 +22,13 @@
         "label": "WebXR"
       },
       {
-        "id": "urn:ngm:class:gltf",
+        "id": "urn:ngm:class:gltf-standard",
         "label": "glTF"
-      },
-      {
-        "id": "urn:ngm:class:3d-tiles",
-        "label": "3D Tiles"
-      },
-      {
-        "id": "urn:ngm:class:ieee-p2874",
-        "label": "IEEE P2874"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:conformance-testing",
+        "id": "urn:ngm:class:standards-conformance-testing",
         "label": "Conformance Testing"
       },
       {
@@ -80,7 +72,7 @@
         "label": "Governance"
       },
       {
-        "id": "urn:ngm:class:security-standard",
+        "id": "urn:ngm:class:security-standards",
         "label": "Security Standard"
       }
     ],

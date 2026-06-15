@@ -37,47 +37,115 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
-    {"@id": "urn:ngm:class:human-feedback-alignment", "label": "Human Feedback Alignment"}
+    {
+      "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "@id": "urn:ngm:class:human-feedback-alignment",
+      "label": "Human Feedback Alignment"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:reward-model", "label": "Reward Model"},
-      {"@id": "urn:ngm:class:human-feedback", "label": "Human Feedback"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:proximal-policy-optimisation", "label": "Proximal Policy Optimisation"},
-      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine Tuning"}
+      {
+        "@id": "urn:ngm:class:reward-model",
+        "label": "Reward Model"
+      },
+      {
+        "@id": "urn:ngm:class:human-feedback",
+        "label": "Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:proximal-policy-optimisation",
+        "label": "Proximal Policy Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:supervised-fine-tuning",
+        "label": "Supervised Fine Tuning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:instruction-following", "label": "Instruction Following"},
-      {"@id": "urn:ngm:class:harmlessness", "label": "Harmlessness"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:instruction-following",
+        "label": "Instruction Following"
+      },
+      {
+        "@id": "urn:ngm:class:harmlessness",
+        "label": "Harmlessness"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:kl-divergence", "label": "KL Divergence"},
-      {"@id": "urn:ngm:class:preference-data", "label": "Preference Data"},
-      {"@id": "urn:ngm:class:human-annotation", "label": "Human Annotation"}
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:kl-divergence",
+        "label": "KL Divergence"
+      },
+      {
+        "@id": "urn:ngm:class:preference-data",
+        "label": "Preference Data"
+      },
+      {
+        "@id": "urn:ngm:class:human-annotation",
+        "label": "Human Annotation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:direct-preference-optimisation", "label": "Direct Preference Optimisation"},
-      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine Tuning"},
-      {"@id": "urn:ngm:class:rlaif", "label": "RLAIF"}
+      {
+        "@id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:supervised-fine-tuning",
+        "label": "Supervised Fine Tuning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:constitutional-ai-training-methodology", "label": "Constitutional AI Training Methodology"},
-      {"@id": "urn:ngm:class:reward-hacking", "label": "Reward Hacking"},
-      {"@id": "urn:ngm:class:policy-gradient", "label": "Policy Gradient"},
-      {"@id": "urn:ngm:class:instruct-gpt", "label": "InstructGPT"}
-    ],
-    "partOf": [
-      {"@id": "urn:ngm:class:model-alignment-pipeline", "label": "Model Alignment Pipeline"}
+      {
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI Training Methodology"
+      },
+      {
+        "@id": "urn:ngm:class:reward-hacking",
+        "label": "Reward Hacking"
+      },
+      {
+        "@id": "urn:ngm:class:policy-gradient",
+        "label": "Policy Gradient"
+      },
+      {
+        "@id": "urn:ngm:class:instruct-gpt",
+        "label": "InstructGPT"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:data-annotation", "label": "Data Annotation"},
-      {"@id": "urn:ngm:class:crowdsourcing", "label": "Crowdsourcing"}
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
+      },
+      {
+        "@id": "urn:ngm:class:crowdsourcing",
+        "label": "Crowdsourcing"
+      }
     ]
   },
   "quality": 0.74,

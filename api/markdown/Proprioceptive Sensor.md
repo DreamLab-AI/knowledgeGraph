@@ -402,7 +402,7 @@ public:: true
         "label": "Legged Locomotion"
       },
       {
-        "@id": "urn:ngm:class:safe-physical-human-robot-interaction",
+        "@id": "urn:ngm:class:safe-human-robot-interaction",
         "label": "Safe Physical Human-Robot Interaction"
       },
       {
@@ -436,7 +436,7 @@ public:: true
         "label": "Hall Effect Sensing"
       },
       {
-        "@id": "urn:ngm:class:mems-gyroscope",
+        "@id": "urn:ngm:class:gyroscope",
         "label": "MEMS Gyroscope"
       },
       {
@@ -450,17 +450,9 @@ public:: true
       {
         "@id": "urn:ngm:class:series-elastic-actuation",
         "label": "Series Elastic Actuation"
-      },
-      {
-        "@id": "urn:ngm:class:wheatstone-bridge-measurement",
-        "label": "Wheatstone Bridge Measurement"
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:bi-ss-c-protocol",
-        "label": "BiSS-C Protocol"
-      },
       {
         "@id": "urn:ngm:class:can-bus",
         "label": "CAN Bus"
@@ -470,15 +462,7 @@ public:: true
         "label": "EtherCAT"
       },
       {
-        "@id": "urn:ngm:class:i2-c",
-        "label": "I2C"
-      },
-      {
-        "@id": "urn:ngm:class:spi",
-        "label": "SPI"
-      },
-      {
-        "@id": "urn:ngm:class:ssi-protocol",
+        "@id": "urn:ngm:class:self-sovereign-identity-ssi",
         "label": "SSI Protocol"
       }
     ],
@@ -528,15 +512,15 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:iec-61800-adjustable-speed-drives",
+        "@id": "urn:ngm:class:iec-61800-adjustable-speed-electrical-power-drive-systems",
         "label": "IEC 61800 Adjustable Speed Drives"
       },
       {
-        "@id": "urn:ngm:class:ieee-1451-sensor-standard",
+        "@id": "urn:ngm:class:ieee-1451",
         "label": "IEEE 1451 Sensor Standard"
       },
       {
-        "@id": "urn:ngm:class:iso-9283-robot-performance-standard",
+        "@id": "urn:ngm:class:iso-9283-manipulating-industrial-robots-performance-criteria",
         "label": "ISO 9283 Robot Performance Standard"
       }
     ]

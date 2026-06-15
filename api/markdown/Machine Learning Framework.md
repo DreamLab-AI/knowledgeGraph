@@ -68,7 +68,7 @@ public:: true
         "label": "Computation Graph"
       },
       {
-        "@id": "urn:ngm:class:model-serving-infrastructure",
+        "@id": "urn:ngm:class:model-serving",
         "label": "Model Serving Infrastructure"
       },
       {
@@ -94,10 +94,6 @@ public:: true
       {
         "@id": "urn:ngm:class:distributed-training",
         "label": "Distributed Training"
-      },
-      {
-        "@id": "urn:ngm:class:numerical-computing-library",
-        "label": "Numerical Computing Library"
       }
     ],
     "enables": [
@@ -156,17 +152,13 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:symbolic-ai-system",
+        "@id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI System"
-      },
-      {
-        "@id": "urn:ngm:class:statistical-software-package",
-        "label": "Statistical Software Package"
       }
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:cloud-computing-platform",
+        "@id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing Platform"
       },
       {

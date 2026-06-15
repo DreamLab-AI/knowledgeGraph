@@ -32,7 +32,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:multisignature-wallet",
+        "id": "urn:ngm:class:multisignature-wallets",
         "label": "Multisignature Wallet"
       },
       {
@@ -127,10 +127,6 @@
       {
         "id": "urn:ngm:class:liquidity-management",
         "label": "Liquidity Management"
-      },
-      {
-        "id": "urn:ngm:class:channel-rebalancing",
-        "label": "Channel Rebalancing"
       }
     ]
   },

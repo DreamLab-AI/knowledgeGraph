@@ -22,10 +22,6 @@
         "label": "Proportional Control"
       },
       {
-        "id": "urn:ngm:class:integral-control",
-        "label": "Integral Control"
-      },
-      {
         "id": "urn:ngm:class:derivative-control",
         "label": "Derivative Control"
       }
@@ -56,10 +52,6 @@
       {
         "id": "urn:ngm:class:motion-control",
         "label": "Motion Control"
-      },
-      {
-        "id": "urn:ngm:class:temperature-regulation",
-        "label": "Temperature Regulation"
       }
     ],
     "dependsOn": [
@@ -131,10 +123,6 @@
       {
         "id": "urn:ngm:class:adaptive-control",
         "label": "Adaptive Control"
-      },
-      {
-        "id": "urn:ngm:class:ziegler-nichols-method",
-        "label": "Ziegler-Nichols Method"
       },
       {
         "id": "urn:ngm:class:anti-windup",

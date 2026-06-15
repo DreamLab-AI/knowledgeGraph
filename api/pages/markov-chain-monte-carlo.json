@@ -115,7 +115,7 @@
         "label": "Probabilistic Model"
       },
       {
-        "id": "urn:ngm:class:bayesian-neural-network",
+        "id": "urn:ngm:class:neural-network",
         "label": "Bayesian Neural Network"
       },
       {
@@ -123,7 +123,7 @@
         "label": "Gaussian Process"
       },
       {
-        "id": "urn:ngm:class:convergence-diagnostics",
+        "id": "urn:ngm:class:convergence",
         "label": "Convergence Diagnostics"
       }
     ]

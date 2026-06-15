@@ -23,56 +23,145 @@ public:: true
   "definition": "Surveillance Capitalism is an economic logic, theorised by Shoshana Zuboff (2019), in which human experience is unilaterally claimed as a free raw material to be translated into behavioural data, processed by machine intelligence into prediction products, and sold in behavioural futures markets to business customers who seek to influence human behaviour. The model originated in digital advertising — Google's repurposing of surplus behavioural data from search to predict and influence click-through — and has since colonised social media, IoT devices, retail analytics, health apps, and smart-city infrastructure. Unlike industrial capitalism's exploitation of natural resources, surveillance capitalism exploits human behaviour and psyche as its primary resource, generating epistemic asymmetries between platform owners and the surveilled population and challenging the foundational conditions for autonomous selfhood, democratic deliberation, and market competition.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:platform-economy", "label": "Platform Economy"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:platform-economy",
+      "label": "Platform Economy"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:behavioral-surplus", "label": "Behavioral Surplus"},
-      {"@id": "urn:ngm:class:prediction-products", "label": "Prediction Products"},
-      {"@id": "urn:ngm:class:behavioral-futures-markets", "label": "Behavioral Futures Markets"}
+      {
+        "@id": "urn:ngm:class:behavioral-surplus",
+        "label": "Behavioral Surplus"
+      },
+      {
+        "@id": "urn:ngm:class:prediction-products",
+        "label": "Prediction Products"
+      },
+      {
+        "@id": "urn:ngm:class:behavioral-futures-markets",
+        "label": "Behavioral Futures Markets"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:mass-data-collection", "label": "Mass Data Collection"},
-      {"@id": "urn:ngm:class:behavioral-analytics", "label": "Behavioral Analytics"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:data-collection",
+        "label": "Mass Data Collection"
+      },
+      {
+        "@id": "urn:ngm:class:behavioral-analytics",
+        "label": "Behavioral Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:targeted-advertising", "label": "Targeted Advertising"},
-      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"},
-      {"@id": "urn:ngm:class:social-media-platform-infrastructure", "label": "Social Media Platform Infrastructure"}
+      {
+        "@id": "urn:ngm:class:targeted-advertising",
+        "label": "Targeted Advertising"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:social-media-platform-infrastructure",
+        "label": "Social Media Platform Infrastructure"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:data-broker", "label": "Data Broker"},
-      {"@id": "urn:ngm:class:third-party-cookies", "label": "Third-Party Cookies"},
-      {"@id": "urn:ngm:class:telemetry", "label": "Telemetry"}
+      {
+        "@id": "urn:ngm:class:data-broker",
+        "label": "Data Broker"
+      },
+      {
+        "@id": "urn:ngm:class:third-party-cookies",
+        "label": "Third-Party Cookies"
+      },
+      {
+        "@id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:platform-economy", "label": "Platform Economy"},
-      {"@id": "urn:ngm:class:network-effects", "label": "Network Effects"}
+      {
+        "@id": "urn:ngm:class:platform-economy",
+        "label": "Platform Economy"
+      },
+      {
+        "@id": "urn:ngm:class:network-effects",
+        "label": "Network Effects"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"},
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
-      {"@id": "urn:ngm:class:digital-markets-act", "label": "Digital Markets Act"}
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:digital-markets-act",
+        "label": "Digital Markets Act"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:data-sovereignty", "label": "Data Sovereignty"},
-      {"@id": "urn:ngm:class:digital-rights", "label": "Digital Rights"},
-      {"@id": "urn:ngm:class:privacy-preserving-computation", "label": "Privacy-Preserving Computation"}
+      {
+        "@id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-society", "label": "Digital Society"},
-      {"@id": "urn:ngm:class:digital-society-surveillance", "label": "Digital Society Surveillance"},
-      {"@id": "urn:ngm:class:epistemic-asymmetry", "label": "Epistemic Asymmetry"},
-      {"@id": "urn:ngm:class:political-polarisation", "label": "Political Polarisation"}
+      {
+        "@id": "urn:ngm:class:digital-society",
+        "label": "Digital Society"
+      },
+      {
+        "@id": "urn:ngm:class:digital-society-surveillance",
+        "label": "Digital Society Surveillance"
+      },
+      {
+        "@id": "urn:ngm:class:epistemic-asymmetry",
+        "label": "Epistemic Asymmetry"
+      },
+      {
+        "@id": "urn:ngm:class:political-polarisation",
+        "label": "Political Polarisation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:smart-city", "label": "Smart City"},
-      {"@id": "urn:ngm:class:iot", "label": "IoT"}
+      {
+        "@id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      },
+      {
+        "@id": "urn:ngm:class:iot",
+        "label": "IoT"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:behavioural-surveillance-economy", "label": "Behavioural Surveillance Economy"},
-    {"@id": "urn:ngm:class:data-driven-advertising-economy", "label": "Data-Driven Advertising Economy"}
+    {
+      "@id": "urn:ngm:class:behavioural-surveillance-economy",
+      "label": "Behavioural Surveillance Economy"
+    },
+    {
+      "@id": "urn:ngm:class:data-driven-advertising-economy",
+      "label": "Data-Driven Advertising Economy"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

@@ -22,10 +22,6 @@
         "label": "Character Rigging"
       },
       {
-        "id": "urn:ngm:class:linear-blend-skinning",
-        "label": "Linear Blend Skinning"
-      },
-      {
         "id": "urn:ngm:class:animation-state-machine",
         "label": "Animation State Machine"
       },
@@ -77,10 +73,6 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
-      },
-      {
-        "id": "urn:ngm:class:biomechanical-simulation",
-        "label": "Biomechanical Simulation"
       }
     ],
     "uses": [
@@ -108,7 +100,7 @@
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:gltf-specification",
+        "id": "urn:ngm:class:gltf-standard",
         "label": "glTF Specification"
       }
     ],

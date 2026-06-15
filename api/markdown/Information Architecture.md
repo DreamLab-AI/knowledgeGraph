@@ -53,52 +53,121 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:taxonomy", "label": "Taxonomy"},
-      {"@id": "urn:ngm:class:controlled-vocabulary", "label": "Controlled Vocabulary"},
-      {"@id": "urn:ngm:class:navigation-schema", "label": "Navigation Schema"},
-      {"@id": "urn:ngm:class:metadata-standard", "label": "Metadata Standard"},
-      {"@id": "urn:ngm:class:search-system", "label": "Search System"}
+      {
+        "@id": "urn:ngm:class:taxonomy",
+        "label": "Taxonomy"
+      },
+      {
+        "@id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-standard",
+        "label": "Metadata Standard"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:thesaurus", "label": "Thesaurus"},
-      {"@id": "urn:ngm:class:faceted-classification", "label": "Faceted Classification"},
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:thesaurus",
+        "label": "Thesaurus"
+      },
+      {
+        "@id": "urn:ngm:class:faceted-classification",
+        "label": "Faceted Classification"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
-      {"@id": "urn:ngm:class:semantic-interoperability", "label": "Semantic Interoperability"},
-      {"@id": "urn:ngm:class:user-experience-design", "label": "User Experience Design"},
-      {"@id": "urn:ngm:class:knowledge-discovery", "label": "Knowledge Discovery"}
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-discovery",
+        "label": "Knowledge Discovery"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:content-strategy", "label": "Content Strategy"},
-      {"@id": "urn:ngm:class:user-research", "label": "User Research"}
+      {
+        "@id": "urn:ngm:class:content-strategy",
+        "label": "Content Strategy"
+      },
+      {
+        "@id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:data-modelling", "label": "Data Modelling"},
-      {"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"}
+      {
+        "@id": "urn:ngm:class:data-modelling",
+        "label": "Data Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-25964", "label": "ISO 25964"},
-      {"@id": "urn:ngm:class:dublin-core", "label": "Dublin Core"}
+      {
+        "@id": "urn:ngm:class:iso-25964",
+        "label": "ISO 25964"
+      },
+      {
+        "@id": "urn:ngm:class:dublin-core",
+        "label": "Dublin Core"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"},
-      {"@id": "urn:ngm:class:data-architecture", "label": "Data Architecture"}
+      {
+        "@id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:library-science", "label": "Library Science"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:content-management-system", "label": "Content Management System"}
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:content-management-system",
+        "label": "Content Management System"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ia", "label": "IA"}
+    {
+      "@id": "urn:ngm:class:ia",
+      "label": "IA"
+    }
   ],
   "quality": 0.73,
   "provenance": {

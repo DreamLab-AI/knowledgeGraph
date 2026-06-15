@@ -23,58 +23,119 @@ public:: true
   "definition": "Certificate Transparency (CT) is an open framework and internet standard (RFC 6962 and RFC 9162) that creates a publicly auditable, append-only log of all TLS certificates issued by certificate authorities, enabling domain owners, browser vendors, and security researchers to detect misissued or fraudulent certificates rapidly. CT logs use Merkle hash trees to provide cryptographic proofs of inclusion and consistency, guaranteeing that any certificate added to a log cannot be subsequently removed or altered. Major browsers enforce CT by requiring certificates to carry signed certificate timestamps (SCTs) from recognised logs, making unauthorised certificate issuance immediately detectable.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+      "label": "Public Key Infrastructure"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:audit-log", "label": "Audit Log"},
-      {"@id": "urn:ngm:class:tls", "label": "TLS"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:x-509-certificate", "label": "X.509 Certificate"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:audit-log",
+        "label": "Audit Log"
+      },
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:phishing-detection", "label": "Phishing Detection"},
-      {"@id": "urn:ngm:class:security-monitoring", "label": "Security Monitoring"},
-      {"@id": "urn:ngm:class:threat-intelligence", "label": "Threat Intelligence"}
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:security-monitoring",
+        "label": "Security Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:append-only-log", "label": "Append-Only Log"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:rfc-6962", "label": "RFC 6962"},
-      {"@id": "urn:ngm:class:rfc-9162", "label": "RFC 9162"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:append-only-log",
+        "label": "Append-Only Log"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ca-browser-forum", "label": "CA/Browser Forum"},
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"}
+      {
+        "@id": "urn:ngm:class:ca-browser-forum",
+        "label": "CA/Browser Forum"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:http-public-key-pinning", "label": "HTTP Public Key Pinning"},
-      {"@id": "urn:ngm:class:ocsp", "label": "OCSP"},
-      {"@id": "urn:ngm:class:dane", "label": "DANE"}
+      {
+        "@id": "urn:ngm:class:ocsp",
+        "label": "OCSP"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:web-pki", "label": "Web PKI"},
-      {"@id": "urn:ngm:class:domain-name-system", "label": "Domain Name System"}
+      {
+        "@id": "urn:ngm:class:domain-name-system",
+        "label": "Domain Name System"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:tls-1-3", "label": "TLS 1.3"},
-      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"},
-      {"@id": "urn:ngm:class:signed-certificate-timestamp", "label": "Signed Certificate Timestamp"},
-      {"@id": "urn:ngm:class:subdomain-takeover", "label": "Subdomain Takeover"}
+      {
+        "@id": "urn:ngm:class:tls-1-3",
+        "label": "TLS 1.3"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:supply-chain-security", "label": "Supply Chain Security"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ct-logs", "label": "CT Logs"},
-    {"@id": "urn:ngm:class:rfc-6962", "label": "RFC 6962 Certificate Transparency"}
+    {
+      "@id": "urn:ngm:class:ct-logs",
+      "label": "CT Logs"
+    },
+    {
+      "@id": "urn:ngm:class:rfc-6962",
+      "label": "RFC 6962 Certificate Transparency"
+    }
   ],
   "quality": 0.72,
   "provenance": {

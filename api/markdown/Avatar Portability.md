@@ -102,16 +102,6 @@ public:: true
     "label": "Standards and Interoperability"
   },
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:avatar-mesh",
-        "label": "Avatar Mesh"
-      },
-      {
-        "@id": "urn:ngm:class:avatar-rigging",
-        "label": "Avatar Rigging"
-      }
-    ],
     "partOf": [
       {
         "@id": "urn:ngm:class:metaverse-interoperability",
@@ -120,16 +110,8 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:platform-integration",
-        "label": "Platform Integration"
-      },
-      {
         "@id": "urn:ngm:class:standardized-formats",
         "label": "Standardized Formats"
-      },
-      {
-        "@id": "urn:ngm:class:translation-frameworks",
-        "label": "Translation Frameworks"
       },
       {
         "@id": "urn:ngm:class:digital-identity",
@@ -138,20 +120,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:asset-continuity",
-        "label": "Asset Continuity"
-      },
-      {
-        "@id": "urn:ngm:class:seamless-world-transitions",
-        "label": "Seamless World Transitions"
-      },
-      {
         "@id": "urn:ngm:class:cross-platform-identity",
         "label": "Cross-Platform Identity"
-      },
-      {
-        "@id": "urn:ngm:class:user-owned-identity",
-        "label": "User-Owned Identity"
       }
     ],
     "dependsOn": [
@@ -170,7 +140,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:digital-asset-portability",
+        "@id": "urn:ngm:class:asset-portability",
         "label": "Digital Asset Portability"
       }
     ],
@@ -178,10 +148,6 @@ public:: true
       {
         "@id": "urn:ngm:class:did-nostr-identity",
         "label": "DID Nostr Identity"
-      },
-      {
-        "@id": "urn:ngm:class:3d-asset-compression",
-        "label": "3D Asset Compression"
       }
     ],
     "supports": [
@@ -194,10 +160,6 @@ public:: true
       {
         "@id": "urn:ngm:class:khronos-group",
         "label": "Khronos Group"
-      },
-      {
-        "@id": "urn:ngm:class:vrm-consortium",
-        "label": "VRM Consortium"
       }
     ],
     "contrastsWith": [

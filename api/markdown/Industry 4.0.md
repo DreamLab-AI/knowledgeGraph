@@ -24,54 +24,122 @@ public:: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"}
+    {
+      "@id": "urn:ngm:class:industrial-automation",
+      "label": "IndustrialAutomation"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"},
-      {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"},
-      {"@id": "urn:ngm:class:smart-manufacturing", "label": "Smart Manufacturing"},
-      {"@id": "urn:ngm:class:human-robot-collaboration", "label": "Human-Robot Collaboration"}
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      },
+      {
+        "@id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-collaboration",
+        "label": "Human-Robot Collaboration"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:operational-technology", "label": "Operational Technology"},
-      {"@id": "urn:ngm:class:industrial-network", "label": "Industrial Network"}
+      {
+        "@id": "urn:ngm:class:operational-technology",
+        "label": "Operational Technology"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-network",
+        "label": "Industrial Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:smart-city", "label": "Smart City"},
-      {"@id": "urn:ngm:class:mass-customisation", "label": "Mass Customisation"},
-      {"@id": "urn:ngm:class:autonomous-manufacturing", "label": "Autonomous Manufacturing"}
+      {
+        "@id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      },
+      {
+        "@id": "urn:ngm:class:mass-customisation",
+        "label": "Mass Customisation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-manufacturing",
+        "label": "Autonomous Manufacturing"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:it-ot-convergence", "label": "IT/OT Convergence"},
-      {"@id": "urn:ngm:class:industrial-cybersecurity", "label": "Industrial Cybersecurity"}
+      {
+        "@id": "urn:ngm:class:convergence",
+        "label": "IT/OT Convergence"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-cybersecurity",
+        "label": "Industrial Cybersecurity"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:opc-ua", "label": "OPC UA"},
-      {"@id": "urn:ngm:class:rami-4-0", "label": "RAMI 4.0"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:industry-5-0", "label": "Industry 5.0"}
+      {
+        "@id": "urn:ngm:class:opc-ua",
+        "label": "OPC UA"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"},
-      {"@id": "urn:ngm:class:industrial-metaverse", "label": "Industrial Metaverse"}
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-metaverse",
+        "label": "Industrial Metaverse"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:advanced-robotics", "label": "Advanced Robotics"},
-      {"@id": "urn:ngm:class:additive-manufacturing", "label": "Additive Manufacturing"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Advanced Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:additive-manufacturing",
+        "label": "Additive Manufacturing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:fourth-industrial-revolution", "label": "Fourth Industrial Revolution"},
-    {"@id": "urn:ngm:class:industrie-4-0", "label": "Industrie 4.0"}
+    {
+      "@id": "urn:ngm:class:fourth-industrial-revolution",
+      "label": "Fourth Industrial Revolution"
+    },
+    {
+      "@id": "urn:ngm:class:industrie-4-0",
+      "label": "Industrie 4.0"
+    }
   ],
   "quality": 0.72,
   "provenance": {

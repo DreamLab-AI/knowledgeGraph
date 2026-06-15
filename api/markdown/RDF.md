@@ -38,57 +38,131 @@ public:: true
   ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:web-standard", "label": "Web Standard"},
-      {"@id": "urn:ngm:class:w3c-specification", "label": "W3C Specification"},
-      {"@id": "urn:ngm:class:graph-data-model", "label": "Graph Data Model"}
+      {
+        "@id": "urn:ngm:class:web-standard",
+        "label": "Web Standard"
+      },
+      {
+        "@id": "urn:ngm:class:w3c-specification",
+        "label": "W3C Specification"
+      },
+      {
+        "@id": "urn:ngm:class:graph-data-model",
+        "label": "Graph Data Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:ontological-reasoning", "label": "Ontological Reasoning"},
-      {"@id": "urn:ngm:class:federated-query", "label": "Federated Query"}
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:federated-query",
+        "label": "Federated Query"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:rdf-triple", "label": "RDF Triple"},
-      {"@id": "urn:ngm:class:rdf-graph", "label": "RDF Graph"},
-      {"@id": "urn:ngm:class:iri", "label": "IRI"},
-      {"@id": "urn:ngm:class:rdf-literal", "label": "RDF Literal"}
+      {
+        "@id": "urn:ngm:class:iri",
+        "label": "IRI"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:iri", "label": "IRI"},
-      {"@id": "urn:ngm:class:namespace", "label": "Namespace"}
+      {
+        "@id": "urn:ngm:class:iri",
+        "label": "IRI"
+      },
+      {
+        "@id": "urn:ngm:class:namespace",
+        "label": "Namespace"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:turtle", "label": "Turtle"},
-      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:sparql", "label": "SPARQL"},
-      {"@id": "urn:ngm:class:rdfs", "label": "RDFS"}
+      {
+        "@id": "urn:ngm:class:turtle",
+        "label": "Turtle"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "@id": "urn:ngm:class:rdfs",
+        "label": "RDFS"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:owl", "label": "OWL"},
-      {"@id": "urn:ngm:class:shacl", "label": "SHACL"},
-      {"@id": "urn:ngm:class:triple-store", "label": "Triple Store"}
+      {
+        "@id": "urn:ngm:class:owl",
+        "label": "OWL"
+      },
+      {
+        "@id": "urn:ngm:class:shacl",
+        "label": "SHACL"
+      },
+      {
+        "@id": "urn:ngm:class:triple-store",
+        "label": "Triple Store"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:w3c", "label": "W3C"}
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:relational-database", "label": "Relational Database"},
-      {"@id": "urn:ngm:class:property-graph", "label": "Property Graph"}
+      {
+        "@id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      },
+      {
+        "@id": "urn:ngm:class:property-graph",
+        "label": "Property Graph"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:schema-org", "label": "Schema.org"},
-      {"@id": "urn:ngm:class:provenance", "label": "Provenance"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:schema-org",
+        "label": "Schema.org"
+      },
+      {
+        "@id": "urn:ngm:class:provenance",
+        "label": "Provenance"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:decentralised-identifier", "label": "Decentralised Identifier"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:resource-description-framework", "label": "Resource Description Framework"}
+    {
+      "@id": "urn:ngm:class:resource-description-framework",
+      "label": "Resource Description Framework"
+    }
   ],
   "quality": 0.76,
   "provenance": {

@@ -71,7 +71,7 @@ public:: true
         "label": "Asymmetric Cryptography"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -105,10 +105,6 @@ public:: true
       {
         "@id": "urn:ngm:class:fido2",
         "label": "FIDO2"
-      },
-      {
-        "@id": "urn:ngm:class:ctap",
-        "label": "CTAP"
       }
     ],
     "uses": [
@@ -131,7 +127,7 @@ public:: true
         "label": "Authentication"
       },
       {
-        "@id": "urn:ngm:class:zero-trust-security",
+        "@id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Security"
       },
       {
@@ -157,7 +153,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:open-authentication",
+        "@id": "urn:ngm:class:authentication",
         "label": "Open Authentication"
       },
       {

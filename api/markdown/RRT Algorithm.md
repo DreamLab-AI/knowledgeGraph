@@ -139,7 +139,7 @@ alias:: RB-1017-rrt-algorithm
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:collision-checker",
+        "@id": "urn:ngm:class:collision-detection",
         "label": "Collision Checker"
       },
       {

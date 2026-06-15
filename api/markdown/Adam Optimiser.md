@@ -38,52 +38,107 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
-      {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"}
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:hyperparameter-optimisation", "label": "Hyperparameter Optimisation"}
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-optimisation",
+        "label": "Hyperparameter Optimisation"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:first-moment-estimate", "label": "First Moment Estimate"},
-      {"@id": "urn:ngm:class:second-moment-estimate", "label": "Second Moment Estimate"},
-      {"@id": "urn:ngm:class:bias-correction", "label": "Bias Correction"},
-      {"@id": "urn:ngm:class:learning-rate-schedule", "label": "Learning Rate Schedule"}
+      {
+        "@id": "urn:ngm:class:learning-rate-schedule",
+        "label": "Learning Rate Schedule"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:adaptive-learning-rate", "label": "Adaptive Learning Rate"},
-      {"@id": "urn:ngm:class:momentum-optimisation", "label": "Momentum Optimisation"}
+      {
+        "@id": "urn:ngm:class:adaptive-learning-rate",
+        "label": "Adaptive Learning Rate"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:mini-batch-gradient", "label": "Mini-Batch Gradient"},
-      {"@id": "urn:ngm:class:exponential-moving-average", "label": "Exponential Moving Average"}
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Mini-Batch Gradient"
+      },
+      {
+        "@id": "urn:ngm:class:exponential-moving-average",
+        "label": "Exponential Moving Average"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rmsprop", "label": "RMSProp"},
-      {"@id": "urn:ngm:class:adagrad", "label": "Adagrad"},
-      {"@id": "urn:ngm:class:sgd-with-momentum", "label": "SGD with Momentum"},
-      {"@id": "urn:ngm:class:lion-optimiser", "label": "Lion Optimiser"}
+      {
+        "@id": "urn:ngm:class:rmsprop",
+        "label": "RMSProp"
+      },
+      {
+        "@id": "urn:ngm:class:optimiser",
+        "label": "Lion Optimiser"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:adamw", "label": "AdamW"},
-      {"@id": "urn:ngm:class:adafactor", "label": "AdaFactor"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:weight-decay", "label": "Weight Decay"},
-      {"@id": "urn:ngm:class:gradient-clipping", "label": "Gradient Clipping"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:weight-decay",
+        "label": "Weight Decay"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-clipping",
+        "label": "Gradient Clipping"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:adaptive-moment-estimation", "label": "Adaptive Moment Estimation"}
+    {
+      "@id": "urn:ngm:class:adaptive-moment-estimation",
+      "label": "Adaptive Moment Estimation"
+    }
   ],
   "quality": 0.74,
   "provenance": {

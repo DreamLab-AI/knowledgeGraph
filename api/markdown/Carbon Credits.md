@@ -38,61 +38,157 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:carbon-allowance", "label": "Carbon Allowance"},
-      {"@id": "urn:ngm:class:carbon-offset", "label": "Carbon Offset"},
-      {"@id": "urn:ngm:class:verified-emission-reduction", "label": "Verified Emission Reduction"}
+      {
+        "@id": "urn:ngm:class:carbon-allowance",
+        "label": "Carbon Allowance"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-offset",
+        "label": "Carbon Offset"
+      },
+      {
+        "@id": "urn:ngm:class:verified-emission-reduction",
+        "label": "Verified Emission Reduction"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:carbon-market", "label": "Carbon Market"},
-      {"@id": "urn:ngm:class:emissions-trading-scheme", "label": "Emissions Trading Scheme"}
+      {
+        "@id": "urn:ngm:class:carbon-markets",
+        "label": "Carbon Market"
+      },
+      {
+        "@id": "urn:ngm:class:emissions-trading-scheme",
+        "label": "Emissions Trading Scheme"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:measurement-reporting-verification", "label": "Measurement Reporting and Verification"},
-      {"@id": "urn:ngm:class:carbon-registry", "label": "Carbon Registry"},
-      {"@id": "urn:ngm:class:additionality", "label": "Additionality"}
+      {
+        "@id": "urn:ngm:class:measurement-reporting-verification",
+        "label": "Measurement Reporting and Verification"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-registry",
+        "label": "Carbon Registry"
+      },
+      {
+        "@id": "urn:ngm:class:additionality",
+        "label": "Additionality"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:carbon-credit-token", "label": "Carbon Credit Token"},
-      {"@id": "urn:ngm:class:carbon-accounting", "label": "Carbon Accounting"},
-      {"@id": "urn:ngm:class:net-zero-strategy", "label": "Net Zero Strategy"},
-      {"@id": "urn:ngm:class:scope-3-emissions-reporting", "label": "Scope 3 Emissions Reporting"}
+      {
+        "@id": "urn:ngm:class:carbon-credit-token",
+        "label": "Carbon Credit Token"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "@id": "urn:ngm:class:net-zero-targets",
+        "label": "Net Zero Strategy"
+      },
+      {
+        "@id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions Reporting"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:greenhouse-gas-protocol", "label": "Greenhouse Gas Protocol"},
-      {"@id": "urn:ngm:class:third-party-verification", "label": "Third Party Verification"}
+      {
+        "@id": "urn:ngm:class:greenhouse-gas-protocol",
+        "label": "Greenhouse Gas Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:third-party-verification",
+        "label": "Third Party Verification"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:satellite-monitoring", "label": "Satellite Monitoring"},
-      {"@id": "urn:ngm:class:iot-sensors", "label": "IoT Sensors"},
-      {"@id": "urn:ngm:class:remote-sensing", "label": "Remote Sensing"}
+      {
+        "@id": "urn:ngm:class:satellite-monitoring",
+        "label": "Satellite Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "@id": "urn:ngm:class:remote-sensing",
+        "label": "Remote Sensing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:environmental-accounting", "label": "Environmental Accounting"},
-      {"@id": "urn:ngm:class:paris-agreement", "label": "Paris Agreement"},
-      {"@id": "urn:ngm:class:corporate-sustainability-reporting", "label": "Corporate Sustainability Reporting"}
+      {
+        "@id": "urn:ngm:class:environmental-accounting",
+        "label": "Environmental Accounting"
+      },
+      {
+        "@id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      },
+      {
+        "@id": "urn:ngm:class:corporate-sustainability-reporting",
+        "label": "Corporate Sustainability Reporting"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:verified-carbon-standard", "label": "Verified Carbon Standard"},
-      {"@id": "urn:ngm:class:gold-standard", "label": "Gold Standard"},
-      {"@id": "urn:ngm:class:article-6-paris-agreement", "label": "Article 6 Paris Agreement"}
+      {
+        "@id": "urn:ngm:class:verified-carbon-standard",
+        "label": "Verified Carbon Standard"
+      },
+      {
+        "@id": "urn:ngm:class:gold-standard",
+        "label": "Gold Standard"
+      },
+      {
+        "@id": "urn:ngm:class:paris-agreement-article-6",
+        "label": "Article 6 Paris Agreement"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:carbon-tax", "label": "Carbon Tax"},
-      {"@id": "urn:ngm:class:direct-air-capture", "label": "Direct Air Capture"}
+      {
+        "@id": "urn:ngm:class:carbon-tax",
+        "label": "Carbon Tax"
+      },
+      {
+        "@id": "urn:ngm:class:direct-air-capture",
+        "label": "Direct Air Capture"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:carbon-offset-trading", "label": "Carbon Offset Trading"},
-      {"@id": "urn:ngm:class:esg-investing", "label": "ESG Investing"}
+      {
+        "@id": "urn:ngm:class:carbon-offset-trading",
+        "label": "Carbon Offset Trading"
+      },
+      {
+        "@id": "urn:ngm:class:esg-investing",
+        "label": "ESG Investing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain-tokenisation", "label": "Blockchain Tokenisation"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:blockchain-tokenisation",
+        "label": "Blockchain Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:carbon-offsets", "label": "Carbon Offsets"},
-    {"@id": "urn:ngm:class:co2-credits", "label": "CO2 Credits"}
+    {
+      "@id": "urn:ngm:class:carbon-offsets",
+      "label": "Carbon Offsets"
+    },
+    {
+      "@id": "urn:ngm:class:co2-credits",
+      "label": "CO2 Credits"
+    }
   ],
   "quality": 0.74,
   "provenance": {

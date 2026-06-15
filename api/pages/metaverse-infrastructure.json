@@ -36,10 +36,6 @@
       {
         "id": "urn:ngm:class:cloud-rendering",
         "label": "Cloud Rendering"
-      },
-      {
-        "id": "urn:ngm:class:spatial-data-platform",
-        "label": "Spatial Data Platform"
       }
     ],
     "requires": [
@@ -76,7 +72,7 @@
         "label": "Cloud Computing"
       },
       {
-        "id": "urn:ngm:class:internet-backbone",
+        "id": "urn:ngm:class:internet-infrastructure",
         "label": "Internet Backbone"
       }
     ],

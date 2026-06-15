@@ -37,49 +37,127 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:oidc", "label": "OIDC"}
+    {
+      "@id": "urn:ngm:class:oidc",
+      "label": "OIDC"
+    }
   ],
   "relations": {
     "dependsOn": [
-      {"@id": "urn:ngm:class:oauth-2-0", "label": "OAuth 2.0"},
-      {"@id": "urn:ngm:class:json-web-token", "label": "JSON Web Token"},
-      {"@id": "urn:ngm:class:json-web-key-set", "label": "JSON Web Key Set"},
-      {"@id": "urn:ngm:class:transport-layer-security", "label": "Transport Layer Security"}
+      {
+        "@id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-web-token",
+        "label": "JSON Web Token"
+      },
+      {
+        "@id": "urn:ngm:class:json-web-key-set",
+        "label": "JSON Web Key Set"
+      },
+      {
+        "@id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:single-sign-on", "label": "Single Sign-On"},
-      {"@id": "urn:ngm:class:multi-factor-authentication", "label": "Multi-Factor Authentication"},
-      {"@id": "urn:ngm:class:federated-identity", "label": "Federated Identity"}
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
+        "@id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:api-security", "label": "API Security"}
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:api-security",
+        "label": "API Security"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:identity-provider", "label": "Identity Provider"},
-      {"@id": "urn:ngm:class:relying-party", "label": "Relying Party"}
+      {
+        "@id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      },
+      {
+        "@id": "urn:ngm:class:relying-party",
+        "label": "Relying Party"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:open-id-foundation", "label": "OpenID Foundation"},
-      {"@id": "urn:ngm:class:internet-engineering-task-force", "label": "Internet Engineering Task Force"}
+      {
+        "@id": "urn:ngm:class:open-id-foundation",
+        "label": "OpenID Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:internet-engineering-task-force",
+        "label": "Internet Engineering Task Force"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:saml", "label": "SAML"},
-      {"@id": "urn:ngm:class:kerberos", "label": "Kerberos"},
-      {"@id": "urn:ngm:class:ldap", "label": "LDAP"}
+      {
+        "@id": "urn:ngm:class:saml",
+        "label": "SAML"
+      },
+      {
+        "@id": "urn:ngm:class:kerberos",
+        "label": "Kerberos"
+      },
+      {
+        "@id": "urn:ngm:class:ldap",
+        "label": "LDAP"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:financial-grade-api", "label": "Financial Grade API"}
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:financial-grade-api",
+        "label": "Financial Grade API"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:eu-digital-identity-wallet", "label": "EU Digital Identity Wallet"}
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:eu-digital-identity-wallet",
+        "label": "EU Digital Identity Wallet"
+      }
     ]
   },
   "quality": 0.74,

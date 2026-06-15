@@ -83,7 +83,7 @@ public:: true
         "label": "Smart Contracts"
       },
       {
-        "@id": "urn:ngm:class:token-voting",
+        "@id": "urn:ngm:class:token-weighted-voting",
         "label": "Token Voting"
       },
       {
@@ -107,24 +107,6 @@ public:: true
       {
         "@id": "urn:ngm:class:decentralised-governance",
         "label": "Decentralised Governance"
-      },
-      {
-        "@id": "urn:ngm:class:permissioned-roles",
-        "label": "Permissioned Roles"
-      }
-    ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:aragon-os",
-        "label": "AragonOS"
-      },
-      {
-        "@id": "urn:ngm:class:aragon-client",
-        "label": "Aragon Client"
-      },
-      {
-        "@id": "urn:ngm:class:aragon-app",
-        "label": "Aragon App"
       }
     ],
     "uses": [
@@ -143,17 +125,13 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:dao-governance-protocol",
+        "@id": "urn:ngm:class:dao-governance",
         "label": "DAO Governance Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:modular-smart-contract-architecture",
-        "label": "Modular Smart Contract Architecture"
       }
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:compound-governance",
+        "@id": "urn:ngm:class:governance",
         "label": "Compound Governance"
       },
       {

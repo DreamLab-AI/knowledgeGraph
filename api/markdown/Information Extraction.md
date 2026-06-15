@@ -88,10 +88,6 @@ public:: true
       {
         "@id": "urn:ngm:class:part-of-speech-tagging",
         "label": "Part-of-Speech Tagging"
-      },
-      {
-        "@id": "urn:ngm:class:dependency-parsing",
-        "label": "Dependency Parsing"
       }
     ],
     "enables": [
@@ -110,7 +106,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:transformer-model",
+        "@id": "urn:ngm:class:transformer",
         "label": "Transformer Model"
       },
       {
@@ -138,7 +134,7 @@ public:: true
         "label": "Knowledge Graph"
       },
       {
-        "@id": "urn:ngm:class:semantic-web",
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       },
       {
@@ -150,10 +146,6 @@ public:: true
       {
         "@id": "urn:ngm:class:text-mining",
         "label": "Text Mining"
-      },
-      {
-        "@id": "urn:ngm:class:open-information-extraction",
-        "label": "Open Information Extraction"
       },
       {
         "@id": "urn:ngm:class:entity-linking",

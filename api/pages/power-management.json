@@ -109,7 +109,7 @@
         "label": "Robot Hardware"
       },
       {
-        "id": "urn:ngm:class:autonomous-systems",
+        "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
       },
       {
@@ -121,10 +121,6 @@
       {
         "id": "urn:ngm:class:iso-ts-15066",
         "label": "ISO TS 15066"
-      },
-      {
-        "id": "urn:ngm:class:ieee-1801",
-        "label": "IEEE 1801 (UPF)"
       }
     ],
     "partOf": [],

@@ -23,58 +23,131 @@ public:: true
   "definition": "The International Monetary Fund (IMF) is an intergovernmental organisation of 190 member countries, established in 1944 under the Bretton Woods Agreement, whose core mandate is to foster global monetary cooperation, secure exchange rate stability, facilitate balanced international trade, and provide financial assistance and policy advice to members experiencing balance-of-payments difficulties. The Fund operates as the world's primary multilateral lender of last resort for sovereign balance-of-payments crises, deploying conditional lending programmes backed by Special Drawing Rights (SDR) quotas contributed by members. Beyond crisis finance, the IMF conducts macroeconomic surveillance through bilateral Article IV consultations, publishes the World Economic Outlook and Global Financial Stability Report, and delivers technical assistance in fiscal, monetary, and financial-sector policy domains. Since 2017 the IMF has expanded into digital asset governance, publishing classification frameworks for crypto assets, CBDC design handbooks, and a Finternet unified-ledger vision that positions it as a de-facto norm-setter for sovereign digital money.",
   "domain": "governance",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-legal-and-regulatory", "label": "Legal and Regulatory"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    }
+  ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:bretton-woods-system", "label": "Bretton Woods System"},
-      {"@id": "urn:ngm:class:international-financial-architecture", "label": "International Financial Architecture"}
+      {
+        "@id": "urn:ngm:class:bretton-woods-system",
+        "label": "Bretton Woods System"
+      },
+      {
+        "@id": "urn:ngm:class:international-financial-architecture",
+        "label": "International Financial Architecture"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:imf-cbdc-framework", "label": "IMF CBDC Framework"},
-      {"@id": "urn:ngm:class:imf-crypto-asset-classification-framework", "label": "IMF Crypto Asset Classification Framework"},
-      {"@id": "urn:ngm:class:special-drawing-rights", "label": "Special Drawing Rights"},
-      {"@id": "urn:ngm:class:article-iv-consultation", "label": "Article IV Consultation"}
+      {
+        "@id": "urn:ngm:class:imf-cbdc-framework",
+        "label": "IMF CBDC Framework"
+      },
+      {
+        "@id": "urn:ngm:class:imf-crypto-asset-classification-framework",
+        "label": "IMF Crypto Asset Classification Framework"
+      },
+      {
+        "@id": "urn:ngm:class:special-drawing-rights",
+        "label": "Special Drawing Rights"
+      },
+      {
+        "@id": "urn:ngm:class:article-iv-consultation",
+        "label": "Article IV Consultation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:quota-system", "label": "Quota System"},
-      {"@id": "urn:ngm:class:conditionality", "label": "Conditionality"}
+      {
+        "@id": "urn:ngm:class:quota-system",
+        "label": "Quota System"
+      },
+      {
+        "@id": "urn:ngm:class:conditionality",
+        "label": "Conditionality"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:balance-of-payments-financing", "label": "Balance of Payments Financing"},
-      {"@id": "urn:ngm:class:exchange-rate-stability", "label": "Exchange Rate Stability"},
-      {"@id": "urn:ngm:class:sovereign-debt-restructuring", "label": "Sovereign Debt Restructuring"}
+      {
+        "@id": "urn:ngm:class:balance-of-payments-financing",
+        "label": "Balance of Payments Financing"
+      },
+      {
+        "@id": "urn:ngm:class:sovereign-debt-restructuring",
+        "label": "Sovereign Debt Restructuring"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:central-bank-digital-currency-cbdc", "label": "Central Bank Digital Currency (CBDC)"},
-      {"@id": "urn:ngm:class:cbdc-cross-border-settlement", "label": "CBDC Cross-Border Settlement"},
-      {"@id": "urn:ngm:class:financial-inclusion", "label": "Financial Inclusion"},
-      {"@id": "urn:ngm:class:macroprudential-policy", "label": "Macroprudential Policy"}
-    ],
-    "standardizedBy": [
-      {"@id": "urn:ngm:class:articles-of-agreement", "label": "Articles of Agreement"}
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "label": "Central Bank Digital Currency (CBDC)"
+      },
+      {
+        "@id": "urn:ngm:class:cbdc-cross-border-settlement",
+        "label": "CBDC Cross-Border Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "@id": "urn:ngm:class:macroprudential-policy",
+        "label": "Macroprudential Policy"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:world-bank", "label": "World Bank"},
-      {"@id": "urn:ngm:class:brics-payment-system", "label": "BRICS Payment System"}
+      {
+        "@id": "urn:ngm:class:world-bank",
+        "label": "World Bank"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bis", "label": "BIS"},
-      {"@id": "urn:ngm:class:fsb", "label": "FSB"},
-      {"@id": "urn:ngm:class:world-trade-organization", "label": "World Trade Organization"},
-      {"@id": "urn:ngm:class:g20", "label": "G20"},
-      {"@id": "urn:ngm:class:global-financial-stability-report", "label": "Global Financial Stability Report"},
-      {"@id": "urn:ngm:class:world-economic-outlook", "label": "World Economic Outlook"},
-      {"@id": "urn:ngm:class:intergovernmental-organisation", "label": "Intergovernmental Organisation"}
+      {
+        "@id": "urn:ngm:class:bis",
+        "label": "BIS"
+      },
+      {
+        "@id": "urn:ngm:class:fsb",
+        "label": "FSB"
+      },
+      {
+        "@id": "urn:ngm:class:world-trade-organization",
+        "label": "World Trade Organization"
+      },
+      {
+        "@id": "urn:ngm:class:g20",
+        "label": "G20"
+      },
+      {
+        "@id": "urn:ngm:class:intergovernmental-organisation",
+        "label": "Intergovernmental Organisation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:finternet", "label": "Finternet"},
-      {"@id": "urn:ngm:class:tokenised-central-bank-money", "label": "Tokenised Central Bank Money"},
-      {"@id": "urn:ngm:class:digital-currency-multilateral-platform", "label": "Digital Currency Multilateral Platform"}
+      {
+        "@id": "urn:ngm:class:finternet",
+        "label": "Finternet"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Tokenised Central Bank Money"
+      },
+      {
+        "@id": "urn:ngm:class:digital-currency-multilateral-platform",
+        "label": "Digital Currency Multilateral Platform"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:international-monetary-fund", "label": "International Monetary Fund"},
-    {"@id": "urn:ngm:class:fonds-monetaire-international", "label": "Fonds Monétaire International"}
+    {
+      "@id": "urn:ngm:class:international-monetary-fund",
+      "label": "International Monetary Fund"
+    },
+    {
+      "@id": "urn:ngm:class:fonds-monetaire-international",
+      "label": "Fonds Monétaire International"
+    }
   ],
   "quality": 0.74,
   "provenance": {

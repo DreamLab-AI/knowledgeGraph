@@ -30,61 +30,145 @@ alias:: EmbeddedSystems
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:microcontroller", "label": "Microcontroller"},
-      {"@id": "urn:ngm:class:fpga", "label": "FPGA"},
-      {"@id": "urn:ngm:class:real-time-operating-system", "label": "Real-Time Operating System"},
-      {"@id": "urn:ngm:class:firmware", "label": "Firmware"}
+      {
+        "@id": "urn:ngm:class:microcontroller",
+        "label": "Microcontroller"
+      },
+      {
+        "@id": "urn:ngm:class:fpga",
+        "label": "FPGA"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:firmware",
+        "label": "Firmware"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:sensor", "label": "Sensor"},
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:interrupt-controller", "label": "Interrupt Controller"},
-      {"@id": "urn:ngm:class:digital-signal-processor", "label": "Digital Signal Processor"}
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signal-processor",
+        "label": "Digital Signal Processor"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"},
-      {"@id": "urn:ngm:class:edge-ai", "label": "Edge AI"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:real-time-scheduling", "label": "Real-Time Scheduling"},
-      {"@id": "urn:ngm:class:hardware-abstraction-layer", "label": "Hardware Abstraction Layer"}
+      {
+        "@id": "urn:ngm:class:hardware-abstraction-layer",
+        "label": "Hardware Abstraction Layer"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:power-management", "label": "Power Management"},
-      {"@id": "urn:ngm:class:memory-management", "label": "Memory Management"}
+      {
+        "@id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      },
+      {
+        "@id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:control-loop", "label": "Control Loop"},
-      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"}
+      {
+        "@id": "urn:ngm:class:control-loop",
+        "label": "Control Loop"
+      },
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"},
-      {"@id": "urn:ngm:class:over-the-air-update", "label": "Over-the-Air Update"}
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "@id": "urn:ngm:class:over-the-air-update",
+        "label": "Over-the-Air Update"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iec-61508", "label": "IEC 61508"},
-      {"@id": "urn:ngm:class:iso-26262", "label": "ISO 26262"},
-      {"@id": "urn:ngm:class:misra-c", "label": "MISRA C"}
+      {
+        "@id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "@id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      },
+      {
+        "@id": "urn:ngm:class:misra-c",
+        "label": "MISRA C"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:general-purpose-computing", "label": "General-Purpose Computing"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
+      {
+        "@id": "urn:ngm:class:general-purpose-computing",
+        "label": "General-Purpose Computing"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:computing-systems", "label": "Computing Systems"},
-      {"@id": "urn:ngm:class:control-system", "label": "Control System"},
-      {"@id": "urn:ngm:class:hardware-security", "label": "Hardware Security"}
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security",
+        "label": "Hardware Security"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:embedded-computing", "label": "Embedded Computing"}
+    {
+      "@id": "urn:ngm:class:embedded-computing",
+      "label": "Embedded Computing"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

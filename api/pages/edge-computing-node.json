@@ -36,20 +36,12 @@
       {
         "id": "urn:ngm:class:processor",
         "label": "Processor"
-      },
-      {
-        "id": "urn:ngm:class:storage-unit",
-        "label": "Storage Unit"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:network-connectivity",
         "label": "Network Connectivity"
-      },
-      {
-        "id": "urn:ngm:class:physical-housing",
-        "label": "Physical Housing"
       },
       {
         "id": "urn:ngm:class:power-supply",
@@ -62,11 +54,11 @@
         "label": "Bandwidth Optimization"
       },
       {
-        "id": "urn:ngm:class:local-data-processing",
+        "id": "urn:ngm:class:data-processing",
         "label": "Local Data Processing"
       },
       {
-        "id": "urn:ngm:class:low-latency-processing",
+        "id": "urn:ngm:class:low-latency-computing",
         "label": "Low Latency Processing"
       },
       {

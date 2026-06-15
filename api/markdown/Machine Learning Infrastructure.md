@@ -64,15 +64,11 @@ public:: true
         "label": "GPU Cluster"
       },
       {
-        "@id": "urn:ngm:class:distributed-storage-system",
+        "@id": "urn:ngm:class:distributed-storage",
         "label": "Distributed Storage System"
       },
       {
-        "@id": "urn:ngm:class:high-performance-networking",
-        "label": "High-Performance Networking"
-      },
-      {
-        "@id": "urn:ngm:class:model-serving-platform",
+        "@id": "urn:ngm:class:model-serving",
         "label": "Model Serving Platform"
       }
     ],
@@ -90,17 +86,9 @@ public:: true
       {
         "@id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
-      },
-      {
-        "@id": "urn:ngm:class:infiniband-networking",
-        "label": "InfiniBand Networking"
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:scalable-ai-training",
-        "label": "Scalable AI Training"
-      },
       {
         "@id": "urn:ngm:class:model-inference",
         "label": "Model Inference"
@@ -116,7 +104,7 @@ public:: true
         "label": "Cloud Computing"
       },
       {
-        "@id": "urn:ngm:class:gpu-accelerated-computing",
+        "@id": "urn:ngm:class:gpu-computing",
         "label": "GPU-Accelerated Computing"
       }
     ],
@@ -132,7 +120,7 @@ public:: true
         "label": "Kubernetes"
       },
       {
-        "@id": "urn:ngm:class:nvidia-cuda",
+        "@id": "urn:ngm:class:cuda",
         "label": "NVIDIA CUDA"
       },
       {

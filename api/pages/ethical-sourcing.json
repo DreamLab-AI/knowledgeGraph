@@ -22,28 +22,12 @@
         "label": "Chain of Custody"
       },
       {
-        "id": "urn:ngm:class:grievance-mechanism",
-        "label": "Grievance Mechanism"
-      },
-      {
         "id": "urn:ngm:class:remediation-plan",
         "label": "Remediation Plan"
       },
       {
-        "id": "urn:ngm:class:supplier-audit",
-        "label": "Supplier Audit"
-      },
-      {
-        "id": "urn:ngm:class:supplier-code-of-conduct",
-        "label": "Supplier Code of Conduct"
-      },
-      {
         "id": "urn:ngm:class:third-party-certification",
         "label": "Third-Party Certification"
-      },
-      {
-        "id": "urn:ngm:class:transparency-statement",
-        "label": "Transparency Statement"
       },
       {
         "id": "urn:ngm:class:risk-assessment",
@@ -56,10 +40,6 @@
         "label": "Stakeholder Engagement"
       },
       {
-        "id": "urn:ngm:class:supplier-identification",
-        "label": "Supplier Identification"
-      },
-      {
         "id": "urn:ngm:class:supply-chain-transparency",
         "label": "Supply Chain Transparency"
       },
@@ -68,46 +48,18 @@
         "label": "Third-Party Audit"
       },
       {
-        "id": "urn:ngm:class:worker-voice-mechanism",
-        "label": "Worker Voice Mechanism"
-      },
-      {
         "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:child-labour-prevention",
-        "label": "Child Labour Prevention"
-      },
-      {
-        "id": "urn:ngm:class:conflict-free-minerals",
+        "id": "urn:ngm:class:conflict-mineral-tracking",
         "label": "Conflict-Free Minerals"
       },
       {
         "id": "urn:ngm:class:consumer-trust",
         "label": "Consumer Trust"
-      },
-      {
-        "id": "urn:ngm:class:deforestation-free-commodities",
-        "label": "Deforestation-Free Commodities"
-      },
-      {
-        "id": "urn:ngm:class:living-wage",
-        "label": "Living Wage"
-      },
-      {
-        "id": "urn:ngm:class:modern-slavery-eradication",
-        "label": "Modern Slavery Eradication"
-      },
-      {
-        "id": "urn:ngm:class:premium-pricing",
-        "label": "Premium Pricing"
-      },
-      {
-        "id": "urn:ngm:class:worker-rights",
-        "label": "Worker Rights"
       }
     ],
     "dependsOn": [],
@@ -146,20 +98,8 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:ai-risk-scoring",
-        "label": "AI Risk Scoring"
-      },
-      {
         "id": "urn:ngm:class:blockchain-provenance",
         "label": "Blockchain Provenance"
-      },
-      {
-        "id": "urn:ngm:class:nlp-esg-analysis",
-        "label": "NLP ESG Analysis"
-      },
-      {
-        "id": "urn:ngm:class:qr-code-authentication",
-        "label": "QR Code Authentication"
       },
       {
         "id": "urn:ngm:class:satellite-monitoring",
@@ -184,16 +124,8 @@
         "label": "Biodiversity Conservation"
       },
       {
-        "id": "urn:ngm:class:indigenous-rights",
-        "label": "Indigenous Rights"
-      },
-      {
         "id": "urn:ngm:class:just-transition",
         "label": "Just Transition"
-      },
-      {
-        "id": "urn:ngm:class:living-wage-campaign",
-        "label": "Living Wage Campaign"
       },
       {
         "id": "urn:ngm:class:net-zero-transition",
@@ -222,10 +154,6 @@
         "label": "OECD Due Diligence Guidance"
       },
       {
-        "id": "urn:ngm:class:oecd-guidelines-for-multinational-enterprises",
-        "label": "OECD Guidelines for Multinational Enterprises"
-      },
-      {
         "id": "urn:ngm:class:sa8000",
         "label": "SA8000"
       },
@@ -241,44 +169,8 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:apple-inc-technology-corporation-supplier-responsibility",
-        "label": "Apple Supplier Responsibility"
-      },
-      {
-        "id": "urn:ngm:class:bangladesh-accord",
-        "label": "Bangladesh Accord"
-      },
-      {
-        "id": "urn:ngm:class:conflict-minerals",
+        "id": "urn:ngm:class:conflict-mineral-tracking",
         "label": "Conflict Minerals"
-      },
-      {
-        "id": "urn:ngm:class:csddd",
-        "label": "CSDDD"
-      },
-      {
-        "id": "urn:ngm:class:eu-forced-labour-regulation",
-        "label": "EU Forced Labour Regulation"
-      },
-      {
-        "id": "urn:ngm:class:fair-trade",
-        "label": "Fair Trade"
-      },
-      {
-        "id": "urn:ngm:class:modern-slavery-act-2015",
-        "label": "Modern Slavery Act 2015"
-      },
-      {
-        "id": "urn:ngm:class:rana-plaza",
-        "label": "Rana Plaza"
-      },
-      {
-        "id": "urn:ngm:class:tony-s-chocolonely",
-        "label": "Tony's Chocolonely"
-      },
-      {
-        "id": "urn:ngm:class:uyghur-forced-labour",
-        "label": "Uyghur Forced Labour"
       }
     ]
   },

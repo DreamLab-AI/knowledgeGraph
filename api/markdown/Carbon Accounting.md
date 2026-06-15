@@ -115,10 +115,6 @@ alias:: CarbonAccounting
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:climate-action-planning",
-        "label": "Climate Action Planning"
-      },
-      {
         "@id": "urn:ngm:class:emissions-reporting",
         "label": "Emissions Reporting"
       },
@@ -135,7 +131,7 @@ alias:: CarbonAccounting
         "label": "Carbon Offsetting"
       },
       {
-        "@id": "urn:ngm:class:esg-disclosure",
+        "@id": "urn:ngm:class:esg-reporting",
         "label": "ESG Disclosure"
       }
     ],
@@ -169,7 +165,7 @@ alias:: CarbonAccounting
         "label": "ISO 14064"
       },
       {
-        "@id": "urn:ngm:class:issb-ifrs-s2",
+        "@id": "urn:ngm:class:ifrs-s2",
         "label": "ISSB IFRS S2"
       }
     ],
@@ -185,7 +181,7 @@ alias:: CarbonAccounting
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:carbon-footprinting",
+        "@id": "urn:ngm:class:carbon-footprint",
         "label": "Carbon Footprinting"
       }
     ],
@@ -205,7 +201,7 @@ alias:: CarbonAccounting
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:carbon-credit",
+        "@id": "urn:ngm:class:carbon-credits",
         "label": "Carbon Credit"
       },
       {

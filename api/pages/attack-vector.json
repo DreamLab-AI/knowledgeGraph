@@ -18,20 +18,12 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:network-attack",
-        "label": "Network Attack"
-      },
-      {
         "id": "urn:ngm:class:social-engineering",
         "label": "Social Engineering"
       },
       {
         "id": "urn:ngm:class:supply-chain-attack",
         "label": "Supply Chain Attack"
-      },
-      {
-        "id": "urn:ngm:class:insider-threat",
-        "label": "Insider Threat"
       }
     ],
     "requires": [
@@ -58,10 +50,6 @@
         "label": "Data Breach"
       },
       {
-        "id": "urn:ngm:class:lateral-movement",
-        "label": "Lateral Movement"
-      },
-      {
         "id": "urn:ngm:class:privilege-escalation",
         "label": "Privilege Escalation"
       }
@@ -86,14 +74,6 @@
       {
         "id": "urn:ngm:class:adversarial-machine-learning",
         "label": "Adversarial Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:smart-contract-vulnerability",
-        "label": "Smart Contract Vulnerability"
-      },
-      {
-        "id": "urn:ngm:class:sensor-spoofing",
-        "label": "Sensor Spoofing"
       }
     ],
     "uses": [
@@ -102,16 +82,12 @@
         "label": "Malware"
       },
       {
-        "id": "urn:ngm:class:zero-day",
+        "id": "urn:ngm:class:zero-day-exploits",
         "label": "Zero-Day"
       }
     ],
     "supports": [],
     "standardizedBy": [
-      {
-        "id": "urn:ngm:class:mitre-attack",
-        "label": "MITRE ATT&CK"
-      },
       {
         "id": "urn:ngm:class:cvss",
         "label": "CVSS"
@@ -121,10 +97,6 @@
       {
         "id": "urn:ngm:class:threat-model",
         "label": "Threat Model"
-      },
-      {
-        "id": "urn:ngm:class:cyber-kill-chain",
-        "label": "Cyber Kill Chain"
       }
     ],
     "relatedTo": [
@@ -143,10 +115,6 @@
       {
         "id": "urn:ngm:class:intrusion-detection",
         "label": "Intrusion Detection"
-      },
-      {
-        "id": "urn:ngm:class:threat",
-        "label": "Threat"
       }
     ]
   },

@@ -28,10 +28,6 @@
         "label": "Calibration"
       },
       {
-        "id": "urn:ngm:class:signal-amplification",
-        "label": "Signal Amplification"
-      },
-      {
         "id": "urn:ngm:class:data-processing",
         "label": "Data Processing"
       },
@@ -42,20 +38,12 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:precision-assembly",
-        "label": "Precision Assembly"
-      },
-      {
-        "id": "urn:ngm:class:soft-robotic-grasping",
+        "id": "urn:ngm:class:robotic-grasping",
         "label": "Soft Robotic Grasping"
       },
       {
         "id": "urn:ngm:class:impedance-control",
         "label": "Impedance Control"
-      },
-      {
-        "id": "urn:ngm:class:contact-detection",
-        "label": "Contact Detection"
       },
       {
         "id": "urn:ngm:class:force-feedback",
@@ -72,7 +60,7 @@
         "label": "Robot Wrist"
       },
       {
-        "id": "urn:ngm:class:real-time-control-system",
+        "id": "urn:ngm:class:real-time-control",
         "label": "Real-Time Control System"
       }
     ],
@@ -113,7 +101,7 @@
         "label": "Human Robot Interaction"
       },
       {
-        "id": "urn:ngm:class:collaborative-robotics",
+        "id": "urn:ngm:class:collaborative-systems-modality-robotics",
         "label": "Collaborative Robotics"
       },
       {
@@ -131,10 +119,6 @@
       {
         "id": "urn:ngm:class:haptic-feedback-system",
         "label": "Haptic Feedback System"
-      },
-      {
-        "id": "urn:ngm:class:wrist-assembly",
-        "label": "Wrist Assembly"
       },
       {
         "id": "urn:ngm:class:robotic-arm",

@@ -414,11 +414,7 @@ public:: true
         "label": "Battery Management System"
       },
       {
-        "@id": "urn:ngm:class:communication-bus",
-        "label": "Communication Bus"
-      },
-      {
-        "@id": "urn:ngm:class:embedded-controller",
+        "@id": "urn:ngm:class:controller",
         "label": "Embedded Controller"
       },
       {
@@ -426,16 +422,8 @@ public:: true
         "label": "Motor Driver"
       },
       {
-        "@id": "urn:ngm:class:power-distribution-board",
-        "label": "Power Distribution Board"
-      },
-      {
         "@id": "urn:ngm:class:sensor-suite",
         "label": "Sensor Suite"
-      },
-      {
-        "@id": "urn:ngm:class:wiring-harness",
-        "label": "Wiring Harness"
       }
     ],
     "requires": [
@@ -448,12 +436,8 @@ public:: true
         "label": "EtherCAT"
       },
       {
-        "@id": "urn:ngm:class:imu-sensor",
+        "@id": "urn:ngm:class:imu",
         "label": "IMU Sensor"
-      },
-      {
-        "@id": "urn:ngm:class:li-po-battery",
-        "label": "LiPo Battery"
       },
       {
         "@id": "urn:ngm:class:motor-encoder",
@@ -508,7 +492,7 @@ public:: true
         "label": "DDS Middleware"
       },
       {
-        "@id": "urn:ngm:class:ether-cat-protocol",
+        "@id": "urn:ngm:class:ether-cat",
         "label": "EtherCAT Protocol"
       },
       {
@@ -520,30 +504,18 @@ public:: true
         "label": "ros2_control Framework"
       },
       {
-        "@id": "urn:ngm:class:urdf-hardware-description",
+        "@id": "urn:ngm:class:urdf",
         "label": "URDF Hardware Description"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:arm-cortex-m",
-        "label": "ARM Cortex-M"
-      },
-      {
-        "@id": "urn:ngm:class:ethernet-switch",
-        "label": "Ethernet Switch"
-      },
-      {
-        "@id": "urn:ngm:class:fpga-acceleration",
+        "@id": "urn:ngm:class:fpga",
         "label": "FPGA Acceleration"
       },
       {
         "@id": "urn:ngm:class:nvidia-corporation-jetson",
         "label": "NVIDIA Jetson"
-      },
-      {
-        "@id": "urn:ngm:class:stm32-microcontroller",
-        "label": "STM32 Microcontroller"
       }
     ],
     "relatedTo": [
@@ -596,15 +568,11 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:ci-a-301-canopen-standard",
-        "label": "CiA 301 CANopen Standard"
-      },
-      {
-        "@id": "urn:ngm:class:ether-cat-technology-group",
+        "@id": "urn:ngm:class:ether-cat",
         "label": "EtherCAT Technology Group"
       },
       {
-        "@id": "urn:ngm:class:iec-61800-drives-standard",
+        "@id": "urn:ngm:class:iec-61800-adjustable-speed-electrical-power-drive-systems",
         "label": "IEC 61800 Drives Standard"
       },
       {
@@ -612,7 +580,7 @@ public:: true
         "label": "ISO 10218 Robot Safety"
       },
       {
-        "@id": "urn:ngm:class:ros-2-reps",
+        "@id": "urn:ngm:class:ros-rep",
         "label": "ROS 2 REPs"
       }
     ]

@@ -65,23 +65,9 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:payment-hash",
-        "label": "Payment Hash"
-      },
-      {
-        "@id": "urn:ngm:class:routing-hints",
-        "label": "Routing Hints"
-      },
-      {
-        "@id": "urn:ngm:class:bech32-encoding",
-        "label": "Bech32 Encoding"
-      }
-    ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:lightning-network-protocol",
+        "@id": "urn:ngm:class:lightning-network",
         "label": "Lightning Network Protocol"
       }
     ],
@@ -105,10 +91,6 @@ public:: true
         "label": "Lightning"
       },
       {
-        "@id": "urn:ngm:class:off-chain-payment",
-        "label": "Off-Chain Payment"
-      },
-      {
         "@id": "urn:ngm:class:micropayment",
         "label": "Micropayment"
       }
@@ -119,7 +101,7 @@ public:: true
         "label": "Payment Channel"
       },
       {
-        "@id": "urn:ngm:class:hashed-time-lock-contract",
+        "@id": "urn:ngm:class:hash-time-locked-contract",
         "label": "Hashed Time-Lock Contract"
       },
       {
@@ -128,10 +110,6 @@ public:: true
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:invoice-protocol",
-        "label": "Invoice Protocol"
-      },
       {
         "@id": "urn:ngm:class:payment-request",
         "label": "Payment Request"
@@ -159,7 +137,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:lightning-rfc",
+        "@id": "urn:ngm:class:lightning-network-specification",
         "label": "Lightning RFC"
       }
     ],
@@ -181,16 +159,6 @@ public:: true
       {
         "@id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems"
-      }
-    ],
-    "relatedTo": [
-      {
-        "@id": "urn:ngm:class:lightning-wallet",
-        "label": "Lightning Wallet"
-      },
-      {
-        "@id": "urn:ngm:class:node-id",
-        "label": "Node ID"
       }
     ]
   },

@@ -23,54 +23,133 @@ public:: true
   "definition": "Structured output is a technique for constraining a language model to emit responses that conform to a predefined schema such as JSON, a regular grammar, or a typed object. It is enforced through prompt instructions, constrained decoding, or function-calling interfaces so that downstream systems can parse results reliably. Structured output bridges free-form generation and deterministic software by guaranteeing machine-readable, validatable responses.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:json-schema", "label": "JSON Schema"},
-      {"@id": "urn:ngm:class:constrained-decoding", "label": "Constrained Decoding"}
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "@id": "urn:ngm:class:constrained-decoding",
+        "label": "Constrained Decoding"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-agent", "label": "AI Agent"},
-      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"}
+      {
+        "@id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:tokenization", "label": "Tokenization"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:grammar-constrained-generation", "label": "Grammar-Constrained Generation"},
-      {"@id": "urn:ngm:class:schema-validation", "label": "Schema Validation"}
+      {
+        "@id": "urn:ngm:class:grammar-constrained-generation",
+        "label": "Grammar-Constrained Generation"
+      },
+      {
+        "@id": "urn:ngm:class:schema-validation",
+        "label": "Schema Validation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:regular-expression", "label": "Regular Expression"},
-      {"@id": "urn:ngm:class:type-system", "label": "Type System"}
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:regular-expression",
+        "label": "Regular Expression"
+      },
+      {
+        "@id": "urn:ngm:class:type-system",
+        "label": "Type System"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
-      {"@id": "urn:ngm:class:api-integration", "label": "API Integration"},
-      {"@id": "urn:ngm:class:data-extraction", "label": "Data Extraction"}
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      },
+      {
+        "@id": "urn:ngm:class:information-extraction",
+        "label": "Data Extraction"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:free-form-generation", "label": "Free-Form Generation"},
-      {"@id": "urn:ngm:class:chain-of-thought", "label": "Chain-of-Thought"}
+      {
+        "@id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain-of-Thought"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:data", "label": "Data"},
-      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}
+      {
+        "@id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:pydantic", "label": "Pydantic"},
-      {"@id": "urn:ngm:class:openai-api", "label": "OpenAI API"}
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:pydantic",
+        "label": "Pydantic"
+      },
+      {
+        "@id": "urn:ngm:class:openai-research-organisation-api",
+        "label": "OpenAI API"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:constrained-generation", "label": "Constrained Generation"},
-    {"@id": "urn:ngm:class:schema-constrained-output", "label": "Schema-Constrained Output"}
+    {
+      "@id": "urn:ngm:class:constrained-generation",
+      "label": "Constrained Generation"
+    },
+    {
+      "@id": "urn:ngm:class:schema-constrained-output",
+      "label": "Schema-Constrained Output"
+    }
   ],
   "quality": 0.72,
   "provenance": {

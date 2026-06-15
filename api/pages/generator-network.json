@@ -18,12 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:transposed-convolution",
+        "id": "urn:ngm:class:convolution",
         "label": "Transposed Convolution"
-      },
-      {
-        "id": "urn:ngm:class:upsampling-layer",
-        "label": "Upsampling Layer"
       }
     ],
     "requires": [
@@ -58,11 +54,11 @@
         "label": "Data Augmentation"
       },
       {
-        "id": "urn:ngm:class:image-super-resolution",
+        "id": "urn:ngm:class:super-resolution",
         "label": "Image Super-Resolution"
       },
       {
-        "id": "urn:ngm:class:text-to-image-synthesis",
+        "id": "urn:ngm:class:text-to-image-generation",
         "label": "Text-to-Image Synthesis"
       }
     ],

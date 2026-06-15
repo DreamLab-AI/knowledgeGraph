@@ -491,15 +491,7 @@ alias:: DomainOntology
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:annotation-property",
-        "label": "Annotation Property"
-      },
-      {
-        "@id": "urn:ngm:class:axiom-set",
-        "label": "Axiom Set"
-      },
-      {
-        "@id": "urn:ngm:class:class-hierarchy",
+        "@id": "urn:ngm:class:owl-class-hierarchy",
         "label": "Class Hierarchy"
       },
       {
@@ -507,42 +499,8 @@ alias:: DomainOntology
         "label": "Data Property"
       },
       {
-        "@id": "urn:ngm:class:named-individual",
-        "label": "Named Individual"
-      },
-      {
-        "@id": "urn:ngm:class:namespace-iri",
-        "label": "Namespace IRI"
-      },
-      {
         "@id": "urn:ngm:class:object-property",
         "label": "Object Property"
-      },
-      {
-        "@id": "urn:ngm:class:ontology-design-pattern",
-        "label": "Ontology Design Pattern"
-      }
-    ],
-    "requires": [
-      {
-        "@id": "urn:ngm:class:conceptualisation",
-        "label": "Conceptualisation"
-      },
-      {
-        "@id": "urn:ngm:class:domain-expert",
-        "label": "Domain Expert"
-      },
-      {
-        "@id": "urn:ngm:class:identifier-scheme",
-        "label": "Identifier Scheme"
-      },
-      {
-        "@id": "urn:ngm:class:knowledge-engineer",
-        "label": "Knowledge Engineer"
-      },
-      {
-        "@id": "urn:ngm:class:logical-formalism",
-        "label": "Logical Formalism"
       }
     ],
     "enables": [
@@ -555,14 +513,6 @@ alias:: DomainOntology
         "label": "FAIR Data Principles"
       },
       {
-        "@id": "urn:ngm:class:knowledge-reuse",
-        "label": "Knowledge Reuse"
-      },
-      {
-        "@id": "urn:ngm:class:linked-data-publication",
-        "label": "Linked Data Publication"
-      },
-      {
         "@id": "urn:ngm:class:semantic-interoperability",
         "label": "Semantic Interoperability"
       },
@@ -573,10 +523,6 @@ alias:: DomainOntology
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:closed-world-negation-as-failure",
-        "label": "Closed-World Negation as Failure"
-      },
-      {
         "@id": "urn:ngm:class:description-logic",
         "label": "Description Logic"
       },
@@ -585,7 +531,7 @@ alias:: DomainOntology
         "label": "Open-World Assumption"
       },
       {
-        "@id": "urn:ngm:class:owl-2-semantics",
+        "@id": "urn:ngm:class:w-3-c-owl-2",
         "label": "OWL 2 Semantics"
       },
       {
@@ -593,25 +539,17 @@ alias:: DomainOntology
         "label": "RDF Schema"
       },
       {
-        "@id": "urn:ngm:class:skos-concept-scheme",
+        "@id": "urn:ngm:class:skos-vocabulary",
         "label": "SKOS Concept Scheme"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:ontology-design-patterns",
-        "label": "Ontology Design Patterns"
-      },
-      {
-        "@id": "urn:ngm:class:owl-2",
+        "@id": "urn:ngm:class:w-3-c-owl-2",
         "label": "OWL 2"
       },
       {
-        "@id": "urn:ngm:class:prot-g",
-        "label": "Protégé"
-      },
-      {
-        "@id": "urn:ngm:class:rdf-rdfs",
+        "@id": "urn:ngm:class:rdf",
         "label": "RDF/RDFS"
       },
       {
@@ -625,17 +563,9 @@ alias:: DomainOntology
       {
         "@id": "urn:ngm:class:sparql",
         "label": "SPARQL"
-      },
-      {
-        "@id": "urn:ngm:class:tableaux-reasoning",
-        "label": "Tableaux Reasoning"
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:application-ontology",
-        "label": "Application Ontology"
-      },
       {
         "@id": "urn:ngm:class:ontology-alignment",
         "label": "Ontology Alignment"
@@ -671,10 +601,6 @@ alias:: DomainOntology
         "label": "Linked Open Data"
       },
       {
-        "@id": "urn:ngm:class:scientific-data-sharing",
-        "label": "Scientific Data Sharing"
-      },
-      {
         "@id": "urn:ngm:class:clinical-decision-support",
         "label": "Clinical Decision Support"
       },
@@ -693,32 +619,12 @@ alias:: DomainOntology
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:iso-21127-cidoc-crm",
-        "label": "ISO 21127 CIDOC CRM"
-      },
-      {
-        "@id": "urn:ngm:class:iso-iec-21838-2-bfo",
-        "label": "ISO/IEC 21838-2 BFO"
-      },
-      {
-        "@id": "urn:ngm:class:iso-iec-24707-common-logic",
-        "label": "ISO/IEC 24707 Common Logic"
-      },
-      {
-        "@id": "urn:ngm:class:obo-foundry",
-        "label": "OBO Foundry"
-      },
-      {
         "@id": "urn:ngm:class:w-3-c-owl-2",
         "label": "W3C OWL 2"
       },
       {
         "@id": "urn:ngm:class:w-3-c-rdf-1-1",
         "label": "W3C RDF 1.1"
-      },
-      {
-        "@id": "urn:ngm:class:w3-c-skos",
-        "label": "W3C SKOS"
       },
       {
         "@id": "urn:ngm:class:w-3-c-sparql-1-1",

@@ -26,10 +26,6 @@
         "label": "Link Prediction"
       },
       {
-        "id": "urn:ngm:class:centrality-analysis",
-        "label": "Centrality Analysis"
-      },
-      {
         "id": "urn:ngm:class:pathfinding-algorithm",
         "label": "Pathfinding Algorithm"
       },
@@ -73,10 +69,6 @@
       {
         "id": "urn:ngm:class:relational-database",
         "label": "Relational Database"
-      },
-      {
-        "id": "urn:ngm:class:tabular-data-analysis",
-        "label": "Tabular Data Analysis"
       }
     ],
     "bridgesTo": [

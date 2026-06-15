@@ -38,55 +38,141 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:reliability", "label": "Reliability"},
-      {"@id": "urn:ngm:class:redundancy", "label": "Redundancy"},
-      {"@id": "urn:ngm:class:health-monitoring", "label": "Health Monitoring"}
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      },
+      {
+        "@id": "urn:ngm:class:redundancy",
+        "label": "Redundancy"
+      },
+      {
+        "@id": "urn:ngm:class:health-monitoring",
+        "label": "Health Monitoring"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:failover", "label": "Failover"},
-      {"@id": "urn:ngm:class:load-balancing", "label": "Load Balancing"},
-      {"@id": "urn:ngm:class:data-replication", "label": "Data Replication"},
-      {"@id": "urn:ngm:class:automatic-failover", "label": "Automatic Failover"}
+      {
+        "@id": "urn:ngm:class:failover",
+        "label": "Failover"
+      },
+      {
+        "@id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      },
+      {
+        "@id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
-      {"@id": "urn:ngm:class:consensus-algorithms", "label": "Consensus Algorithms"},
-      {"@id": "urn:ngm:class:container-orchestration", "label": "Container Orchestration"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithms"
+      },
+      {
+        "@id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:business-continuity", "label": "Business Continuity"},
-      {"@id": "urn:ngm:class:disaster-recovery", "label": "Disaster Recovery"},
-      {"@id": "urn:ngm:class:service-level-agreement", "label": "Service Level Agreement"}
+      {
+        "@id": "urn:ngm:class:business-continuity",
+        "label": "Business Continuity"
+      },
+      {
+        "@id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      },
+      {
+        "@id": "urn:ngm:class:service-level-agreement",
+        "label": "Service Level Agreement"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
-      {"@id": "urn:ngm:class:storage-replication", "label": "Storage Replication"}
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:replication",
+        "label": "Storage Replication"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:cloud-native", "label": "Cloud Native"},
-      {"@id": "urn:ngm:class:site-reliability-engineering", "label": "Site Reliability Engineering"}
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native"
+      },
+      {
+        "@id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:eventual-consistency", "label": "Eventual Consistency"},
-      {"@id": "urn:ngm:class:single-point-of-failure", "label": "Single Point of Failure"}
+      {
+        "@id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      },
+      {
+        "@id": "urn:ngm:class:single-point-of-failure",
+        "label": "Single Point of Failure"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:chaos-engineering", "label": "Chaos Engineering"},
-      {"@id": "urn:ngm:class:service-mesh", "label": "Service Mesh"},
-      {"@id": "urn:ngm:class:circuit-breaker-pattern", "label": "Circuit Breaker Pattern"},
-      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"}
+      {
+        "@id": "urn:ngm:class:chaos-engineering",
+        "label": "Chaos Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:circuit-breaker-pattern",
+        "label": "Circuit Breaker Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:aiops", "label": "AIOps"},
-      {"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"}
+      {
+        "@id": "urn:ngm:class:aiops",
+        "label": "AIOps"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ha", "label": "HA"},
-    {"@id": "urn:ngm:class:continuous-availability", "label": "Continuous Availability"}
+    {
+      "@id": "urn:ngm:class:ha",
+      "label": "HA"
+    },
+    {
+      "@id": "urn:ngm:class:continuous-availability",
+      "label": "Continuous Availability"
+    }
   ],
   "quality": 0.74,
   "provenance": {

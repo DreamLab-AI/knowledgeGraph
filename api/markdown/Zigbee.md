@@ -23,66 +23,133 @@ public:: true
   "definition": "Zigbee is a low-power, low-data-rate wireless mesh networking protocol stack built atop the IEEE 802.15.4 physical and MAC layer standard, designed for battery-operated IoT sensors, actuators, and control devices in home automation, industrial monitoring, and building management. Maintained by the Connectivity Standards Alliance (formerly the Zigbee Alliance), it defines application-layer profiles, mesh routing, and AES-128 security on top of IEEE 802.15.4, supporting coordinator, router, and sleepy end-device roles within self-healing mesh topologies. Operating predominantly at 2.4 GHz (globally) as well as 868 MHz and 915 MHz regional bands, Zigbee targets data rates up to 250 kbps and enables coin-cell battery lifetimes of years, making it a foundational IoT wireless technology that coexists and increasingly converges with Thread and the Matter smart-home standard.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:ieee-802-15-4", "label": "IEEE 802.15.4"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ieee-802-15-4",
+      "label": "IEEE 802.15.4"
+    }
+  ],
   "relations": {
-    "hasPart": [
-      {"@id": "urn:ngm:class:zigbee-coordinator", "label": "Zigbee Coordinator"},
-      {"@id": "urn:ngm:class:zigbee-router", "label": "Zigbee Router"},
-      {"@id": "urn:ngm:class:zigbee-end-device", "label": "Zigbee End Device"}
-    ],
     "partOf": [
-      {"@id": "urn:ngm:class:iot-protocol-stack", "label": "IoT Protocol Stack"}
+      {
+        "@id": "urn:ngm:class:protocol-stack",
+        "label": "IoT Protocol Stack"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ieee-802-15-4", "label": "IEEE 802.15.4"},
-      {"@id": "urn:ngm:class:aes-128", "label": "AES-128"}
+      {
+        "@id": "urn:ngm:class:ieee-802-15-4",
+        "label": "IEEE 802.15.4"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:home-automation", "label": "Home Automation"},
-      {"@id": "urn:ngm:class:building-automation", "label": "Building Automation"},
-      {"@id": "urn:ngm:class:wireless-sensor-network", "label": "Wireless Sensor Network"},
-      {"@id": "urn:ngm:class:smart-metering", "label": "Smart Metering"}
+      {
+        "@id": "urn:ngm:class:automation",
+        "label": "Home Automation"
+      },
+      {
+        "@id": "urn:ngm:class:building-automation",
+        "label": "Building Automation"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-sensor-network",
+        "label": "Wireless Sensor Network"
+      },
+      {
+        "@id": "urn:ngm:class:smart-metering",
+        "label": "Smart Metering"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:mesh-networking", "label": "Mesh Networking"},
-      {"@id": "urn:ngm:class:ism-band", "label": "ISM Band"}
+      {
+        "@id": "urn:ngm:class:mesh-networking",
+        "label": "Mesh Networking"
+      },
+      {
+        "@id": "urn:ngm:class:ism-band",
+        "label": "ISM Band"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:mesh-routing", "label": "Mesh Routing"},
-      {"@id": "urn:ngm:class:aodv-routing", "label": "AODV Routing"}
+      {
+        "@id": "urn:ngm:class:mesh-routing-software",
+        "label": "Mesh Routing"
+      },
+      {
+        "@id": "urn:ngm:class:routing-protocol",
+        "label": "AODV Routing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:aes-encryption", "label": "AES Encryption"},
-      {"@id": "urn:ngm:class:direct-sequence-spread-spectrum", "label": "Direct Sequence Spread Spectrum"},
-      {"@id": "urn:ngm:class:csma-ca", "label": "CSMA-CA"}
+      {
+        "@id": "urn:ngm:class:aes-encryption",
+        "label": "AES Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:csma-ca",
+        "label": "CSMA-CA"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:sensor-data", "label": "Sensor Data"},
-      {"@id": "urn:ngm:class:over-the-air-update", "label": "Over-the-Air Update"}
+      {
+        "@id": "urn:ngm:class:sensor-data",
+        "label": "Sensor Data"
+      },
+      {
+        "@id": "urn:ngm:class:over-the-air-update",
+        "label": "Over-the-Air Update"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:connectivity-standards-alliance", "label": "Connectivity Standards Alliance"},
-      {"@id": "urn:ngm:class:ieee", "label": "IEEE"}
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:bluetooth-low-energy", "label": "Bluetooth Low Energy"},
-      {"@id": "urn:ngm:class:z-wave", "label": "Z-Wave"},
-      {"@id": "urn:ngm:class:thread-protocol", "label": "Thread Protocol"},
-      {"@id": "urn:ngm:class:wi-fi-halow", "label": "Wi-Fi HaLow"}
+      {
+        "@id": "urn:ngm:class:bluetooth-low-energy",
+        "label": "Bluetooth Low Energy"
+      },
+      {
+        "@id": "urn:ngm:class:z-wave",
+        "label": "Z-Wave"
+      },
+      {
+        "@id": "urn:ngm:class:thread-protocol",
+        "label": "Thread Protocol"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:matter-protocol", "label": "Matter Protocol"},
-      {"@id": "urn:ngm:class:smart-home", "label": "Smart Home"},
-      {"@id": "urn:ngm:class:industrial-iot", "label": "Industrial IoT"},
-      {"@id": "urn:ngm:class:lpwan", "label": "LPWAN"}
+      {
+        "@id": "urn:ngm:class:matter-protocol",
+        "label": "Matter Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:smart-home",
+        "label": "Smart Home"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "@id": "urn:ngm:class:lpwan",
+        "label": "LPWAN"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ip-networking", "label": "IP Networking"},
-      {"@id": "urn:ngm:class:cloud-iot-platform", "label": "Cloud IoT Platform"}
+      {
+        "@id": "urn:ngm:class:cloud-platform",
+        "label": "Cloud IoT Platform"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ieee-802-15-4-zigbee", "label": "IEEE 802.15.4 Zigbee"}
+    {
+      "@id": "urn:ngm:class:ieee-802-15-4-zigbee",
+      "label": "IEEE 802.15.4 Zigbee"
+    }
   ],
   "quality": 0.74,
   "provenance": {

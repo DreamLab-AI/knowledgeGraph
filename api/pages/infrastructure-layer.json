@@ -26,10 +26,6 @@
         "label": "CDN"
       },
       {
-        "id": "urn:ngm:class:data-centers",
-        "label": "Data Centers"
-      },
-      {
         "id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing"
       },
@@ -89,12 +85,7 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:technology-infrastructure-domain-domain",
-        "label": "InfrastructureDomain"
-      }
-    ],
+    "partOf": [],
     "relatedTo": []
   },
   "wikilinks": [

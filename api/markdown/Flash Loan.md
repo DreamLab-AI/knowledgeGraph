@@ -23,52 +23,109 @@ public:: true
   "definition": "A flash loan is an uncollateralised loan mechanism in decentralised finance that exists entirely within a single blockchain transaction: the borrower receives an arbitrary amount of an asset, executes arbitrary on-chain operations with it, and repays the loan plus a fee within the same atomic transaction, with the entire sequence reverting if repayment fails. Because atomicity guarantees that funds never leave the lending pool without being returned, no collateral is needed; default is technically impossible since a failed repayment causes the transaction to revert as if the loan never occurred. Flash loans enable capital-efficient arbitrage, liquidation, collateral swaps, and self-liquidation operations that would otherwise require significant upfront capital.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:de-fi", "label": "DeFi"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:de-fi",
+    "label": "DeFi"
+  },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"},
-      {"@id": "urn:ngm:class:atomic-settlement", "label": "Atomic Settlement"},
-      {"@id": "urn:ngm:class:smart-contract-execution", "label": "Smart Contract Execution"},
-      {"@id": "urn:ngm:class:evm-transaction", "label": "EVM Transaction"},
-      {"@id": "urn:ngm:class:callback-function", "label": "Callback Function"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:atomic-settlement",
+        "label": "Atomic Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:mev", "label": "MEV"},
-      {"@id": "urn:ngm:class:liquidity-provision", "label": "Liquidity Provision"},
-      {"@id": "urn:ngm:class:digital-asset-lending", "label": "Digital Asset Lending"},
-      {"@id": "urn:ngm:class:arbitrage", "label": "Arbitrage"},
-      {"@id": "urn:ngm:class:collateral-swap", "label": "Collateral Swap"},
-      {"@id": "urn:ngm:class:self-liquidation", "label": "Self-Liquidation"}
+      {
+        "@id": "urn:ngm:class:mev",
+        "label": "MEV"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-lending",
+        "label": "Digital Asset Lending"
+      },
+      {
+        "@id": "urn:ngm:class:arbitrage",
+        "label": "Arbitrage"
+      },
+      {
+        "@id": "urn:ngm:class:self-liquidation",
+        "label": "Self-Liquidation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:blockchain-atomicity", "label": "Blockchain Atomicity"},
-      {"@id": "urn:ngm:class:evm-compatible-chain", "label": "EVM-Compatible Chain"}
+      {
+        "@id": "urn:ngm:class:evm-compatible-chain",
+        "label": "EVM-Compatible Chain"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:price-oracle", "label": "Price Oracle"},
-      {"@id": "urn:ngm:class:lending-protocol", "label": "Lending Protocol"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:collateralised-loan", "label": "Collateralised Loan"},
-      {"@id": "urn:ngm:class:traditional-unsecured-loan", "label": "Traditional Unsecured Loan"}
+      {
+        "@id": "urn:ngm:class:price-oracle",
+        "label": "Price Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:lending-protocol",
+        "label": "Lending Protocol"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:decentralized-exchange", "label": "Decentralized Exchange"},
-      {"@id": "urn:ngm:class:transaction", "label": "Transaction"},
-      {"@id": "urn:ngm:class:oracle-manipulation", "label": "Oracle Manipulation"},
-      {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"},
-      {"@id": "urn:ngm:class:twap-oracle", "label": "TWAP Oracle"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "@id": "urn:ngm:class:twap-oracle",
+        "label": "TWAP Oracle"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:financial-derivatives", "label": "Financial Derivatives"},
-      {"@id": "urn:ngm:class:algorithmic-trading", "label": "Algorithmic Trading"}
+      {
+        "@id": "urn:ngm:class:financial-derivatives",
+        "label": "Financial Derivatives"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:uncollateralised-atomic-loan", "label": "Uncollateralised Atomic Loan"},
-    {"@id": "urn:ngm:class:atomic-flash-loan", "label": "Atomic Flash Loan"}
+    {
+      "@id": "urn:ngm:class:uncollateralised-atomic-loan",
+      "label": "Uncollateralised Atomic Loan"
+    },
+    {
+      "@id": "urn:ngm:class:atomic-flash-loan",
+      "label": "Atomic Flash Loan"
+    }
   ],
   "quality": 0.75,
   "provenance": {

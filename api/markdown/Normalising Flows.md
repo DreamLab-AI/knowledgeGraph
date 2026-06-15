@@ -24,49 +24,124 @@ public:: true
   "domain": "machine-learning",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+    {
+      "@id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    }
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:gaussian-process", "label": "Gaussian Process"},
-      {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"},
-      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
-      {"@id": "urn:ngm:class:neural-ordinary-differential-equation", "label": "Neural Ordinary Differential Equation"},
-      {"@id": "urn:ngm:class:flow-matching", "label": "Flow Matching"}
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "@id": "urn:ngm:class:neural-ordinary-differential-equation",
+        "label": "Neural Ordinary Differential Equation"
+      },
+      {
+        "@id": "urn:ngm:class:flow-matching",
+        "label": "Flow Matching"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:gaussian-distribution", "label": "Gaussian Distribution"},
-      {"@id": "urn:ngm:class:change-of-variables", "label": "Change of Variables"},
-      {"@id": "urn:ngm:class:jacobian-determinant", "label": "Jacobian Determinant"},
-      {"@id": "urn:ngm:class:maximum-likelihood-estimation", "label": "Maximum Likelihood Estimation"},
-      {"@id": "urn:ngm:class:autoregressive-model", "label": "Autoregressive Model"}
+      {
+        "@id": "urn:ngm:class:gaussian-distribution",
+        "label": "Gaussian Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:change-of-variables",
+        "label": "Change of Variables"
+      },
+      {
+        "@id": "urn:ngm:class:jacobian-determinant",
+        "label": "Jacobian Determinant"
+      },
+      {
+        "@id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:autoregressive-model",
+        "label": "Autoregressive Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
-      {"@id": "urn:ngm:class:density-estimation", "label": "Density Estimation"},
-      {"@id": "urn:ngm:class:generative-modelling", "label": "Generative Modelling"},
-      {"@id": "urn:ngm:class:latent-variable-model", "label": "Latent Variable Model"},
-      {"@id": "urn:ngm:class:posterior-approximation", "label": "Posterior Approximation"}
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:density-estimation",
+        "label": "Density Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:latent-variable-model",
+        "label": "Latent Variable Model"
+      },
+      {
+        "@id": "urn:ngm:class:posterior-approximation",
+        "label": "Posterior Approximation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:invertible-neural-network", "label": "Invertible Neural Network"},
-      {"@id": "urn:ngm:class:differentiable-programming", "label": "Differentiable Programming"}
+      {
+        "@id": "urn:ngm:class:invertible-neural-network",
+        "label": "Invertible Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:differentiable-programming",
+        "label": "Differentiable Programming"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:probabilistic-generative-model", "label": "Probabilistic Generative Model"},
-      {"@id": "urn:ngm:class:variational-inference", "label": "Variational Inference"}
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Probabilistic Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:markov-chain-monte-carlo", "label": "Markov Chain Monte Carlo"}
+      {
+        "@id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:scientific-machine-learning", "label": "Scientific Machine Learning"},
-      {"@id": "urn:ngm:class:probabilistic-programming", "label": "Probabilistic Programming"}
+      {
+        "@id": "urn:ngm:class:scientific-machine-learning",
+        "label": "Scientific Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-programming",
+        "label": "Probabilistic Programming"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:normalizing-flows", "label": "Normalizing Flows"}
+    {
+      "@id": "urn:ngm:class:normalizing-flows",
+      "label": "Normalizing Flows"
+    }
   ],
   "quality": 0.72,
   "provenance": {

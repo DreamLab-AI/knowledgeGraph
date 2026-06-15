@@ -23,52 +23,127 @@ public:: true
   "definition": "The ROS Navigation Stack is a collection of software packages within the Robot Operating System (ROS) framework that provides a robot with the capability to move autonomously through an environment by combining map building, localisation, global path planning, local obstacle avoidance, and motor control into an integrated pipeline. It abstracts sensor inputs (laser scan, odometry, IMU), maintains a 2D occupancy grid map and cost layers, runs AMCL (Adaptive Monte Carlo Localisation) for pose estimation, and uses A* or Dijkstra for global plans combined with DWA (Dynamic Window Approach) or TEB (Timed Elastic Band) for local reactive navigation. The Navigation Stack is the de facto standard for mobile ground-robot navigation in research and production robotics.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robot-operating-system",
+      "label": "Robot Operating System"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:amcl", "label": "AMCL"},
-      {"@id": "urn:ngm:class:move-base", "label": "Move Base"},
-      {"@id": "urn:ngm:class:costmap-2d", "label": "Costmap 2D"},
-      {"@id": "urn:ngm:class:global-planner", "label": "Global Planner"},
-      {"@id": "urn:ngm:class:local-planner", "label": "Local Planner"}
+      {
+        "@id": "urn:ngm:class:move-base",
+        "label": "Move Base"
+      },
+      {
+        "@id": "urn:ngm:class:costmap",
+        "label": "Costmap 2D"
+      },
+      {
+        "@id": "urn:ngm:class:global-planner",
+        "label": "Global Planner"
+      },
+      {
+        "@id": "urn:ngm:class:local-planner",
+        "label": "Local Planner"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"}
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:occupancy-grid-map", "label": "Occupancy Grid Map"},
-      {"@id": "urn:ngm:class:odometry", "label": "Odometry"},
-      {"@id": "urn:ngm:class:transform-tree", "label": "Transform Tree"}
+      {
+        "@id": "urn:ngm:class:occupancy-grid",
+        "label": "Occupancy Grid Map"
+      },
+      {
+        "@id": "urn:ngm:class:odometry",
+        "label": "Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:transform-tree",
+        "label": "Transform Tree"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
-      {"@id": "urn:ngm:class:localisation", "label": "Localisation"},
-      {"@id": "urn:ngm:class:particle-filter", "label": "Particle Filter"},
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      },
+      {
+        "@id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
-      {"@id": "urn:ngm:class:obstacle-avoidance", "label": "Obstacle Avoidance"},
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:ros-middleware", "label": "ROS Middleware"},
-      {"@id": "urn:ngm:class:publish-subscribe-messaging", "label": "Publish-Subscribe Messaging"}
+      {
+        "@id": "urn:ngm:class:publish-subscribe-messaging",
+        "label": "Publish-Subscribe Messaging"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ros-2", "label": "ROS 2"},
-      {"@id": "urn:ngm:class:gazebo-simulator", "label": "Gazebo Simulator"},
-      {"@id": "urn:ngm:class:nav2", "label": "Nav2"},
-      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"}
+      {
+        "@id": "urn:ngm:class:ros-2",
+        "label": "ROS 2"
+      },
+      {
+        "@id": "urn:ngm:class:gazebo-simulator",
+        "label": "Gazebo Simulator"
+      },
+      {
+        "@id": "urn:ngm:class:nav2",
+        "label": "Nav2"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ros-nav-stack", "label": "ROS Nav Stack"}
+    {
+      "@id": "urn:ngm:class:ros-nav-stack",
+      "label": "ROS Nav Stack"
+    }
   ],
   "quality": 0.72,
   "provenance": {

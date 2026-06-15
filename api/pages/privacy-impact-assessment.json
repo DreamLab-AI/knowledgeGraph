@@ -20,10 +20,6 @@
       {
         "id": "urn:ngm:class:risk-register",
         "label": "Risk Register"
-      },
-      {
-        "id": "urn:ngm:class:necessity-assessment",
-        "label": "Necessity Assessment"
       }
     ],
     "requires": [
@@ -66,28 +62,15 @@
       {
         "id": "urn:ngm:class:data-mapping",
         "label": "Data Mapping"
-      },
-      {
-        "id": "urn:ngm:class:personal-data-processing",
-        "label": "Personal Data Processing"
       }
     ],
     "implements": [
-      {
-        "id": "urn:ngm:class:gdpr-article-35",
-        "label": "GDPR Article 35"
-      },
       {
         "id": "urn:ngm:class:iso-29134",
         "label": "ISO 29134"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:security-risk-assessment",
-        "label": "Security Risk Assessment"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:ai-ethics",

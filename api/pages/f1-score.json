@@ -40,7 +40,7 @@
         "label": "Confusion Matrix"
       },
       {
-        "id": "urn:ngm:class:binary-classification",
+        "id": "urn:ngm:class:classification",
         "label": "Binary Classification"
       }
     ],
@@ -52,35 +52,22 @@
       {
         "id": "urn:ngm:class:threshold-optimisation",
         "label": "Threshold Optimisation"
-      },
-      {
-        "id": "urn:ngm:class:imbalanced-dataset-evaluation",
-        "label": "Imbalanced Dataset Evaluation"
       }
     ],
     "dependsOn": [
-      {
-        "id": "urn:ngm:class:harmonic-mean",
-        "label": "Harmonic Mean"
-      },
       {
         "id": "urn:ngm:class:supervised-learning",
         "label": "Supervised Learning"
       }
     ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:f-beta-score",
-        "label": "F-Beta Score"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:accuracy",
         "label": "Accuracy"
       },
       {
-        "id": "urn:ngm:class:roc-auc",
+        "id": "urn:ngm:class:auc",
         "label": "ROC-AUC"
       },
       {
@@ -94,7 +81,7 @@
         "label": "Evaluation Metric"
       },
       {
-        "id": "urn:ngm:class:information-retrieval-metric",
+        "id": "urn:ngm:class:information-retrieval",
         "label": "Information Retrieval Metric"
       }
     ],
@@ -102,18 +89,6 @@
       {
         "id": "urn:ngm:class:precision-recall-curve",
         "label": "Precision-Recall Curve"
-      },
-      {
-        "id": "urn:ngm:class:macro-f1",
-        "label": "Macro F1"
-      },
-      {
-        "id": "urn:ngm:class:micro-f1",
-        "label": "Micro F1"
-      },
-      {
-        "id": "urn:ngm:class:weighted-f1",
-        "label": "Weighted F1"
       }
     ],
     "supports": [],

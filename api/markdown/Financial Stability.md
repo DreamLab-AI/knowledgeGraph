@@ -38,50 +38,115 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:macroprudential-policy", "label": "Macroprudential Policy"},
-      {"@id": "urn:ngm:class:systemic-risk-monitoring", "label": "Systemic Risk Monitoring"},
-      {"@id": "urn:ngm:class:stress-testing", "label": "Stress Testing"}
+      {
+        "@id": "urn:ngm:class:macroprudential-policy",
+        "label": "Macroprudential Policy"
+      },
+      {
+        "@id": "urn:ngm:class:systemic-risk-monitoring",
+        "label": "Systemic Risk Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:stress-testing",
+        "label": "Stress Testing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:capital-adequacy", "label": "Capital Adequacy"},
-      {"@id": "urn:ngm:class:liquidity-management", "label": "Liquidity Management"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+      {
+        "@id": "urn:ngm:class:capital-adequacy",
+        "label": "Capital Adequacy"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-management",
+        "label": "Liquidity Management"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:economic-growth", "label": "Economic Growth"},
-      {"@id": "urn:ngm:class:credit-intermediation", "label": "Credit Intermediation"},
-      {"@id": "urn:ngm:class:payment-settlement", "label": "Payment Settlement"}
+      {
+        "@id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      },
+      {
+        "@id": "urn:ngm:class:payment-settlement",
+        "label": "Payment Settlement"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:central-banking", "label": "Central Banking"},
-      {"@id": "urn:ngm:class:lender-of-last-resort", "label": "Lender of Last Resort"},
-      {"@id": "urn:ngm:class:deposit-insurance", "label": "Deposit Insurance"}
+      {
+        "@id": "urn:ngm:class:central-banking",
+        "label": "Central Banking"
+      },
+      {
+        "@id": "urn:ngm:class:lender-of-last-resort",
+        "label": "Lender of Last Resort"
+      },
+      {
+        "@id": "urn:ngm:class:deposit-insurance",
+        "label": "Deposit Insurance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:systemic-risk", "label": "Systemic Risk"},
-      {"@id": "urn:ngm:class:financial-contagion", "label": "Financial Contagion"},
-      {"@id": "urn:ngm:class:bank-run", "label": "Bank Run"}
+      {
+        "@id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
-      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
-      {"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"},
-      {"@id": "urn:ngm:class:prudential-supervision", "label": "Prudential Supervision"}
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:prudential-supervision",
+        "label": "Prudential Supervision"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:financial-stability-board", "label": "Financial Stability Board"},
-      {"@id": "urn:ngm:class:basel-committee", "label": "Basel Committee"},
-      {"@id": "urn:ngm:class:imf-fsap", "label": "IMF Financial Sector Assessment Programme"}
+      {
+        "@id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      },
+      {
+        "@id": "urn:ngm:class:basel-committee",
+        "label": "Basel Committee"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:crypto-asset-regulation", "label": "Crypto-Asset Regulation"},
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:crypto-regulation",
+        "label": "Crypto-Asset Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:systemic-financial-stability", "label": "Systemic Financial Stability"},
-    {"@id": "urn:ngm:class:macrofinancial-stability", "label": "Macrofinancial Stability"}
+    {
+      "@id": "urn:ngm:class:systemic-financial-stability",
+      "label": "Systemic Financial Stability"
+    },
+    {
+      "@id": "urn:ngm:class:macrofinancial-stability",
+      "label": "Macrofinancial Stability"
+    }
   ],
   "quality": 0.74,
   "provenance": {

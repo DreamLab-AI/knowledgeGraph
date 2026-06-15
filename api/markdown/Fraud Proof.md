@@ -77,14 +77,6 @@ public:: true
       {
         "@id": "urn:ngm:class:data-availability",
         "label": "Data Availability"
-      },
-      {
-        "@id": "urn:ngm:class:dispute-window",
-        "label": "Dispute Window"
-      },
-      {
-        "@id": "urn:ngm:class:bonding",
-        "label": "Bonding"
       }
     ],
     "enables": [
@@ -95,17 +87,9 @@ public:: true
       {
         "@id": "urn:ngm:class:trustless-bridge",
         "label": "Trustless Bridge"
-      },
-      {
-        "@id": "urn:ngm:class:state-root-verification",
-        "label": "State Root Verification"
       }
     ],
     "dependsOn": [
-      {
-        "@id": "urn:ngm:class:interactive-verification-game",
-        "label": "Interactive Verification Game"
-      },
       {
         "@id": "urn:ngm:class:merkle-proof",
         "label": "Merkle Proof"
@@ -119,10 +103,6 @@ public:: true
       {
         "@id": "urn:ngm:class:validity-proof",
         "label": "Validity Proof"
-      },
-      {
-        "@id": "urn:ngm:class:zk-proof",
-        "label": "ZK Proof"
       }
     ],
     "relatedTo": [
@@ -141,10 +121,6 @@ public:: true
       {
         "@id": "urn:ngm:class:slashing",
         "label": "Slashing"
-      },
-      {
-        "@id": "urn:ngm:class:challenge-period",
-        "label": "Challenge Period"
       }
     ],
     "bridgesTo": [

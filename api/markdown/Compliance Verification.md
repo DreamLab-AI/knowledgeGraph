@@ -56,7 +56,7 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:kyc-aml-requirements",
+        "@id": "urn:ngm:class:kyc-aml",
         "label": "KYC/AML Requirements"
       },
       {
@@ -88,16 +88,12 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:aml-screening",
+        "@id": "urn:ngm:class:aml",
         "label": "AML Screening"
       },
       {
-        "@id": "urn:ngm:class:pep-screening",
+        "@id": "urn:ngm:class:sanctions-screening",
         "label": "PEP Screening"
-      },
-      {
-        "@id": "urn:ngm:class:wallet-screening",
-        "label": "Wallet Screening"
       }
     ],
     "uses": [
@@ -106,7 +102,7 @@ public:: true
         "label": "Smart Contracts"
       },
       {
-        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "@id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proofs"
       },
       {
@@ -150,7 +146,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:defi-compliance",
+        "@id": "urn:ngm:class:compliance",
         "label": "DeFi Compliance"
       },
       {

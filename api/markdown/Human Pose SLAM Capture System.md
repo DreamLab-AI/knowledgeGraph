@@ -45,51 +45,113 @@ elevatedFrom:: [[Human tracking and SLAM capture]]
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"},
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
-      {"@id": "urn:ngm:class:inertial-measurement-unit", "label": "Inertial Measurement Unit"},
-      {"@id": "urn:ngm:class:rgb-d-camera", "label": "RGB-D Camera"},
-      {"@id": "urn:ngm:class:factor-graph-optimisation", "label": "Factor Graph Optimisation"}
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "@id": "urn:ngm:class:rgb-d-camera",
+        "label": "RGB-D Camera"
+      },
+      {
+        "@id": "urn:ngm:class:factor-graph-optimisation",
+        "label": "Factor Graph Optimisation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:spatial-mapping", "label": "Spatial Mapping"},
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
-      {"@id": "urn:ngm:class:avatar-animation", "label": "Avatar Animation"},
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"}
+      {
+        "@id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-animation",
+        "label": "Avatar Animation"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:skeletal-tracking", "label": "Skeletal Tracking"},
-      {"@id": "urn:ngm:class:scene-reconstruction", "label": "Scene Reconstruction"},
-      {"@id": "urn:ngm:class:loop-closure-detection", "label": "Loop Closure Detection"}
+      {
+        "@id": "urn:ngm:class:scene-reconstruction",
+        "label": "Scene Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:loop-closure-detection",
+        "label": "Loop Closure Detection"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:neural-network-inference", "label": "Neural Network Inference"},
-      {"@id": "urn:ngm:class:point-cloud-processing", "label": "Point Cloud Processing"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:marker-based-motion-capture", "label": "Marker-Based Motion Capture"},
-      {"@id": "urn:ngm:class:lidar-slam", "label": "LiDAR SLAM"}
+      {
+        "@id": "urn:ngm:class:neural-network-inference",
+        "label": "Neural Network Inference"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:body-area-network", "label": "Body Area Network"},
-      {"@id": "urn:ngm:class:spatial-anchoring", "label": "Spatial Anchoring"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:spatial-anchoring",
+        "label": "Spatial Anchoring"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:metaverse-presence", "label": "Metaverse Presence"},
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:human-tracking-and-slam-capture", "label": "Human Tracking and SLAM Capture"},
-    {"@id": "urn:ngm:class:markerless-body-slam", "label": "Markerless Body SLAM"}
+    {
+      "@id": "urn:ngm:class:human-tracking-and-slam-capture",
+      "label": "Human Tracking and SLAM Capture"
+    },
+    {
+      "@id": "urn:ngm:class:markerless-body-slam",
+      "label": "Markerless Body SLAM"
+    }
   ],
   "quality": 0.72,
   "provenance": {

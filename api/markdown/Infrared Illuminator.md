@@ -63,14 +63,7 @@ public:: true
       "label": "Tracking Hardware"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:dark-environment-vr",
-        "label": "Dark Environment VR"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

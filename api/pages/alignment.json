@@ -18,10 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:value-learning",
-        "label": "Value Learning"
-      },
-      {
         "id": "urn:ngm:class:scalable-oversight",
         "label": "Scalable Oversight"
       },
@@ -30,7 +26,7 @@
         "label": "Reward Modelling"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai",
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
       }
     ],
@@ -38,10 +34,6 @@
       {
         "id": "urn:ngm:class:human-feedback",
         "label": "Human Feedback"
-      },
-      {
-        "id": "urn:ngm:class:preference-elicitation",
-        "label": "Preference Elicitation"
       },
       {
         "id": "urn:ngm:class:interpretability",
@@ -75,10 +67,6 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:misalignment",
-        "label": "Misalignment"
-      },
-      {
         "id": "urn:ngm:class:reward-hacking",
         "label": "Reward Hacking"
       }
@@ -87,10 +75,6 @@
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
-      },
-      {
-        "id": "urn:ngm:class:machine-ethics",
-        "label": "Machine Ethics"
       }
     ],
     "uses": [
@@ -107,7 +91,7 @@
         "label": "Debate"
       },
       {
-        "id": "urn:ngm:class:amplification",
+        "id": "urn:ngm:class:intelligence-amplification",
         "label": "Amplification"
       }
     ],

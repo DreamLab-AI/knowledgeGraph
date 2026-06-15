@@ -28,10 +28,6 @@
       {
         "id": "urn:ngm:class:activation-function",
         "label": "Activation Function"
-      },
-      {
-        "id": "urn:ngm:class:fully-connected-layer",
-        "label": "Fully Connected Layer"
       }
     ],
     "requires": [
@@ -68,7 +64,7 @@
         "label": "Weight Sharing"
       },
       {
-        "id": "urn:ngm:class:gradient-descent-optimisation",
+        "id": "urn:ngm:class:gradient-descent",
         "label": "Gradient Descent Optimisation"
       }
     ],
@@ -134,10 +130,6 @@
       }
     ],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:resnet",
-        "label": "ResNet"
-      },
       {
         "id": "urn:ngm:class:adversarial-robustness",
         "label": "Adversarial Robustness"

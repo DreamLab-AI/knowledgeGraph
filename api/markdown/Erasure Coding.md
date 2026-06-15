@@ -37,63 +37,149 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:erasure-code", "label": "Erasure Code"},
-    {"@id": "urn:ngm:class:fec-erasure", "label": "FEC Erasure Scheme"}
+    {
+      "@id": "urn:ngm:class:erasure-code",
+      "label": "Erasure Code"
+    },
+    {
+      "@id": "urn:ngm:class:fec-erasure",
+      "label": "FEC Erasure Scheme"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:reed-solomon-codes", "label": "Reed-Solomon Codes"},
-      {"@id": "urn:ngm:class:ldpc-codes", "label": "LDPC Codes"},
-      {"@id": "urn:ngm:class:fountain-codes", "label": "Fountain Codes"},
-      {"@id": "urn:ngm:class:galois-field-arithmetic", "label": "Galois Field Arithmetic"}
+      {
+        "@id": "urn:ngm:class:reed-solomon-codes",
+        "label": "Reed-Solomon Codes"
+      },
+      {
+        "@id": "urn:ngm:class:ldpc-codes",
+        "label": "LDPC Codes"
+      },
+      {
+        "@id": "urn:ngm:class:galois-field-arithmetic",
+        "label": "Galois Field Arithmetic"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:forward-error-correction", "label": "Forward Error Correction"},
-      {"@id": "urn:ngm:class:storage-infrastructure", "label": "Storage Infrastructure"}
+      {
+        "@id": "urn:ngm:class:forward-error-correction",
+        "label": "Forward Error Correction"
+      },
+      {
+        "@id": "urn:ngm:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:galois-field-arithmetic", "label": "Galois Field Arithmetic"},
-      {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"},
-      {"@id": "urn:ngm:class:shard-distribution", "label": "Shard Distribution"}
+      {
+        "@id": "urn:ngm:class:galois-field-arithmetic",
+        "label": "Galois Field Arithmetic"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:data-availability-sampling", "label": "Data Availability Sampling"},
-      {"@id": "urn:ngm:class:high-availability", "label": "High Availability"},
-      {"@id": "urn:ngm:class:storage-efficiency", "label": "Storage Efficiency"}
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:data-availability-sampling",
+        "label": "Data Availability Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:failure-domain", "label": "Failure Domain"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:forward-error-correction", "label": "Forward Error Correction"},
-      {"@id": "urn:ngm:class:data-durability", "label": "Data Durability"}
+      {
+        "@id": "urn:ngm:class:forward-error-correction",
+        "label": "Forward Error Correction"
+      },
+      {
+        "@id": "urn:ngm:class:data-durability",
+        "label": "Data Durability"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:polynomial-commitment", "label": "Polynomial Commitment"},
-      {"@id": "urn:ngm:class:kzg-commitments", "label": "KZG Commitments"},
-      {"@id": "urn:ngm:class:linear-algebra", "label": "Linear Algebra"}
+      {
+        "@id": "urn:ngm:class:polynomial-commitment",
+        "label": "Polynomial Commitment"
+      },
+      {
+        "@id": "urn:ngm:class:kzg-commitments",
+        "label": "KZG Commitments"
+      },
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ipfs", "label": "IPFS"},
-      {"@id": "urn:ngm:class:filecoin", "label": "Filecoin"},
-      {"@id": "urn:ngm:class:ceph", "label": "Ceph"},
-      {"@id": "urn:ngm:class:raid", "label": "RAID"}
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "@id": "urn:ngm:class:filecoin",
+        "label": "Filecoin"
+      },
+      {
+        "@id": "urn:ngm:class:ceph",
+        "label": "Ceph"
+      },
+      {
+        "@id": "urn:ngm:class:raid",
+        "label": "RAID"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:data-replication", "label": "Data Replication"},
-      {"@id": "urn:ngm:class:full-replication", "label": "Full Replication"}
+      {
+        "@id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      },
+      {
+        "@id": "urn:ngm:class:replication",
+        "label": "Full Replication"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
-      {"@id": "urn:ngm:class:danksharding", "label": "Danksharding"},
-      {"@id": "urn:ngm:class:data-availability-layer", "label": "Data Availability Layer"}
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:danksharding",
+        "label": "Danksharding"
+      },
+      {
+        "@id": "urn:ngm:class:data-availability",
+        "label": "Data Availability Layer"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:replication-factor", "label": "Replication Factor"},
-      {"@id": "urn:ngm:class:network-coding", "label": "Network Coding"},
-      {"@id": "urn:ngm:class:secret-sharing", "label": "Secret Sharing"}
+      {
+        "@id": "urn:ngm:class:replication",
+        "label": "Replication Factor"
+      },
+      {
+        "@id": "urn:ngm:class:network-coding",
+        "label": "Network Coding"
+      },
+      {
+        "@id": "urn:ngm:class:secret-sharing",
+        "label": "Secret Sharing"
+      }
     ]
   },
   "quality": 0.74,

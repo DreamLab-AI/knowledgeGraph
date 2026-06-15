@@ -91,7 +91,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:robot-control-architecture",
+        "@id": "urn:ngm:class:robot-control",
         "label": "Robot Control Architecture"
       }
     ],
@@ -153,12 +153,6 @@ public:: true
       {
         "@id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:human-perception",
-        "label": "Human Perception"
       }
     ],
     "bridgesTo": [

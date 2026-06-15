@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:json-schema",
+        "id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       },
       {
@@ -43,10 +43,6 @@
       {
         "id": "urn:ngm:class:agentic-ai",
         "label": "Agentic AI"
-      },
-      {
-        "id": "urn:ngm:class:tool-selection",
-        "label": "Tool Selection"
       },
       {
         "id": "urn:ngm:class:ai-agent",
@@ -95,16 +91,8 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:natural-language-description",
-        "label": "Natural Language Description"
-      },
-      {
         "id": "urn:ngm:class:type-system",
         "label": "Type System"
-      },
-      {
-        "id": "urn:ngm:class:parameter-validation",
-        "label": "Parameter Validation"
       }
     ],
     "supports": [
@@ -120,12 +108,8 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:agent-orchestration",
+        "id": "urn:ngm:class:multi-agent-orchestration",
         "label": "Agent Orchestration"
-      },
-      {
-        "id": "urn:ngm:class:capability-manifest",
-        "label": "Capability Manifest"
       }
     ],
     "relatedTo": [

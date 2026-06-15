@@ -90,22 +90,6 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:ghg-baseline",
-        "label": "GHG Baseline"
-      },
-      {
-        "@id": "urn:ngm:class:implementation-strategy",
-        "label": "Implementation Strategy"
-      },
-      {
-        "@id": "urn:ngm:class:reduction-targets",
-        "label": "Reduction Targets"
-      },
-      {
-        "@id": "urn:ngm:class:emissions-inventory",
-        "label": "Emissions Inventory"
-      },
-      {
         "@id": "urn:ngm:class:science-based-targets",
         "label": "Science-Based Targets"
       }
@@ -116,11 +100,7 @@ public:: true
         "label": "Climate Action"
       },
       {
-        "@id": "urn:ngm:class:decarbonization",
-        "label": "Decarbonization"
-      },
-      {
-        "@id": "urn:ngm:class:net-zero-achievement",
+        "@id": "urn:ngm:class:net-zero-targets",
         "label": "Net Zero Achievement"
       },
       {
@@ -128,7 +108,7 @@ public:: true
         "label": "ESG Reporting"
       },
       {
-        "@id": "urn:ngm:class:carbon-offset-procurement",
+        "@id": "urn:ngm:class:carbon-offset",
         "label": "Carbon Offset Procurement"
       }
     ],
@@ -154,10 +134,6 @@ public:: true
       {
         "@id": "urn:ngm:class:paris-agreement",
         "label": "Paris Agreement"
-      },
-      {
-        "@id": "urn:ngm:class:sbti-corporate-net-zero-standard",
-        "label": "SBTi Corporate Net-Zero Standard"
       }
     ],
     "uses": [
@@ -171,10 +147,6 @@ public:: true
       }
     ],
     "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:issb-standards",
-        "label": "ISSB Standards"
-      },
       {
         "@id": "urn:ngm:class:ghg-protocol",
         "label": "GHG Protocol"

@@ -23,53 +23,127 @@ public:: true
   "definition": "Notion is a cloud-based productivity and knowledge-management platform that unifies note-taking, relational databases, wikis, project management boards, and document editing into a single composable workspace. Its block-based editor treats every content element — text, tables, embeds, code, and media — as a manipulable unit that can be nested, linked, and filtered, enabling teams to construct custom workflows without traditional software development. Notion serves as an all-in-one tool replacing multiple specialised SaaS products for many knowledge workers and organisations. Since 2023 Notion has integrated generative AI capabilities directly into its editing and querying workflows.",
   "domain": "distributed-collaboration",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:knowledge-management-system", "label": "Knowledge Management System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:knowledge-management-system",
+      "label": "Knowledge Management System"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-base", "label": "Knowledge Base"},
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
-      {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"},
-      {"@id": "urn:ngm:class:personal-knowledge-management", "label": "Personal Knowledge Management"}
+      {
+        "@id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "@id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "@id": "urn:ngm:class:personal-knowledge-management",
+        "label": "Personal Knowledge Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:asynchronous-collaboration", "label": "Asynchronous Collaboration"},
-      {"@id": "urn:ngm:class:shared-knowledge-base", "label": "Shared Knowledge Base"},
-      {"@id": "urn:ngm:class:project-management", "label": "Project Management"},
-      {"@id": "urn:ngm:class:internal-documentation", "label": "Internal Documentation"},
-      {"@id": "urn:ngm:class:no-code-workflow", "label": "No-Code Workflow"}
+      {
+        "@id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:shared-knowledge-base",
+        "label": "Shared Knowledge Base"
+      },
+      {
+        "@id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "@id": "urn:ngm:class:internal-documentation",
+        "label": "Internal Documentation"
+      },
+      {
+        "@id": "urn:ngm:class:no-code-workflow",
+        "label": "No-Code Workflow"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:database-system", "label": "Database System"},
-      {"@id": "urn:ngm:class:api-integration", "label": "API Integration"},
-      {"@id": "urn:ngm:class:block-based-editor", "label": "Block-Based Editor"},
-      {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      },
+      {
+        "@id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      },
+      {
+        "@id": "urn:ngm:class:block-based-editor",
+        "label": "Block-Based Editor"
+      },
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:relational-database", "label": "Relational Database"},
-      {"@id": "urn:ngm:class:wiki", "label": "Wiki"},
-      {"@id": "urn:ngm:class:kanban-board", "label": "Kanban Board"}
+      {
+        "@id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      },
+      {
+        "@id": "urn:ngm:class:kanban-board",
+        "label": "Kanban Board"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:confluence", "label": "Confluence"},
-      {"@id": "urn:ngm:class:microsoft-loop", "label": "Microsoft Loop"},
-      {"@id": "urn:ngm:class:obsidian", "label": "Obsidian"}
+      {
+        "@id": "urn:ngm:class:confluence",
+        "label": "Confluence"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
-      {"@id": "urn:ngm:class:internet-connectivity", "label": "Internet Connectivity"}
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:internet-connectivity",
+        "label": "Internet Connectivity"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:enterprise-software", "label": "Enterprise Software"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-software-platform",
+        "label": "Enterprise Software"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:remote-work", "label": "Remote Work"},
-      {"@id": "urn:ngm:class:distributed-team", "label": "Distributed Team"}
+      {
+        "@id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-teams",
+        "label": "Distributed Team"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:all-in-one-workspace", "label": "All-in-One Workspace"}
+    {
+      "@id": "urn:ngm:class:all-in-one-workspace",
+      "label": "All-in-One Workspace"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

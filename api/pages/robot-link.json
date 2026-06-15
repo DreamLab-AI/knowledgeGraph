@@ -18,72 +18,20 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:inertial-frame",
-        "label": "InertialFrame"
-      },
-      {
-        "id": "urn:ngm:class:link-geometry",
-        "label": "LinkGeometry"
-      },
-      {
-        "id": "urn:ngm:class:mass-properties",
-        "label": "MassProperties"
-      },
-      {
-        "id": "urn:ngm:class:material-composition",
-        "label": "MaterialComposition"
-      },
-      {
         "id": "urn:ngm:class:mounting-interface",
         "label": "Mounting Interface"
-      },
-      {
-        "id": "urn:ngm:class:surface-finish",
-        "label": "SurfaceFinish"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:dynamic-balancing",
-        "label": "DynamicBalancing"
-      },
-      {
-        "id": "urn:ngm:class:material-selection",
-        "label": "MaterialSelection"
-      },
-      {
-        "id": "urn:ngm:class:structural-analysis",
-        "label": "StructuralAnalysis"
-      },
-      {
         "id": "urn:ngm:class:thermal-management",
         "label": "ThermalManagement"
-      },
-      {
-        "id": "urn:ngm:class:vibration-damping",
-        "label": "VibrationDamping"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:force-transmission",
-        "label": "ForceTransmission"
-      },
-      {
         "id": "urn:ngm:class:kinematic-chain",
         "label": "Kinematic Chain"
-      },
-      {
-        "id": "urn:ngm:class:motion-propagation",
-        "label": "MotionPropagation"
-      },
-      {
-        "id": "urn:ngm:class:payload-support",
-        "label": "PayloadSupport"
-      },
-      {
-        "id": "urn:ngm:class:workspace-reach",
-        "label": "WorkspaceReach"
       }
     ],
     "dependsOn": [],

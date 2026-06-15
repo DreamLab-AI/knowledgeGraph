@@ -61,45 +61,94 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {"@id": "urn:ngm:class:computer-laboratory", "label": "Computer Laboratory"},
-      {"@id": "urn:ngm:class:cavendish-laboratory", "label": "Cavendish Laboratory"},
-      {"@id": "urn:ngm:class:machine-intelligence-laboratory", "label": "Machine Intelligence Laboratory"},
-      {"@id": "urn:ngm:class:cambridge-centre-for-ai-in-medicine", "label": "Cambridge Centre for AI in Medicine"}
-    ],
     "partOf": [
-      {"@id": "urn:ngm:class:russell-group", "label": "Russell Group"},
-      {"@id": "urn:ngm:class:cambridge-cluster", "label": "Cambridge Cluster"}
+      {
+        "@id": "urn:ngm:class:russell-group",
+        "label": "Russell Group"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:quantum-computing", "label": "Quantum Computing"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-computation-paradigm",
+        "label": "Quantum Computing"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"},
-      {"@id": "urn:ngm:class:technology-transfer", "label": "Technology Transfer"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "@id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:research-institution", "label": "Research Institution"},
-      {"@id": "urn:ngm:class:imperial-college-london", "label": "Imperial College London"},
-      {"@id": "urn:ngm:class:university-of-edinburgh", "label": "University of Edinburgh"},
-      {"@id": "urn:ngm:class:university-of-manchester", "label": "University of Manchester"},
-      {"@id": "urn:ngm:class:oxford-university", "label": "University of Oxford"},
-      {"@id": "urn:ngm:class:mit", "label": "MIT"},
-      {"@id": "urn:ngm:class:alan-turing-institute", "label": "Alan Turing Institute"}
+      {
+        "@id": "urn:ngm:class:research-institution",
+        "label": "Research Institution"
+      },
+      {
+        "@id": "urn:ngm:class:imperial-college-london",
+        "label": "Imperial College London"
+      },
+      {
+        "@id": "urn:ngm:class:university-of-edinburgh",
+        "label": "University of Edinburgh"
+      },
+      {
+        "@id": "urn:ngm:class:university-of-manchester",
+        "label": "University of Manchester"
+      },
+      {
+        "@id": "urn:ngm:class:university-of-oxford",
+        "label": "University of Oxford"
+      },
+      {
+        "@id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:cambridge-university", "label": "Cambridge University"}
+    {
+      "@id": "urn:ngm:class:cambridge-university",
+      "label": "Cambridge University"
+    }
   ],
   "quality": 0.75,
   "provenance": {

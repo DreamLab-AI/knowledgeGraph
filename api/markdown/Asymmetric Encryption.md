@@ -88,7 +88,7 @@ public:: true
         "label": "Digital Signature"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -134,7 +134,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:mathematical-hardness-assumption",
+        "@id": "urn:ngm:class:computational-hardness-assumption",
         "label": "Mathematical Hardness Assumption"
       },
       {
@@ -162,7 +162,7 @@ public:: true
         "label": "Authentication"
       },
       {
-        "@id": "urn:ngm:class:confidentiality",
+        "@id": "urn:ngm:class:data-confidentiality",
         "label": "Confidentiality"
       }
     ],

@@ -109,7 +109,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:docker",
+        "@id": "urn:ngm:class:docker-containerisation-platform",
         "label": "Docker"
       },
       {
@@ -133,10 +133,6 @@ public:: true
       {
         "@id": "urn:ngm:class:canary-deployment",
         "label": "Canary Deployment"
-      },
-      {
-        "@id": "urn:ngm:class:shadow-mode-deployment",
-        "label": "Shadow Mode Deployment"
       }
     ],
     "contrastsWith": [
@@ -165,7 +161,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:serverless-computing",
+        "@id": "urn:ngm:class:serverless-architecture",
         "label": "Serverless Computing"
       },
       {

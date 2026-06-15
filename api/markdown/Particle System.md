@@ -66,7 +66,7 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:dynamic-visual-effects",
+        "@id": "urn:ngm:class:visual-effects",
         "label": "Dynamic Visual Effects"
       }
     ]

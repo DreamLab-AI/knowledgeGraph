@@ -38,52 +38,119 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:hardware-security-module", "label": "Hardware Security Module"},
-      {"@id": "urn:ngm:class:key-derivation-function", "label": "Key Derivation Function"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "@id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
-      {"@id": "urn:ngm:class:secure-communication", "label": "Secure Communication"}
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:random-number-generation", "label": "Random Number Generation"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}
+      {
+        "@id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:key-generation", "label": "Key Generation"},
-      {"@id": "urn:ngm:class:key-rotation", "label": "Key Rotation"},
-      {"@id": "urn:ngm:class:key-revocation", "label": "Key Revocation"},
-      {"@id": "urn:ngm:class:certificate-lifecycle-management", "label": "Certificate Lifecycle Management"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:envelope-encryption", "label": "Envelope Encryption"},
-      {"@id": "urn:ngm:class:key-hierarchy", "label": "Key Hierarchy"}
+      {
+        "@id": "urn:ngm:class:key-generation",
+        "label": "Key Generation"
+      },
+      {
+        "@id": "urn:ngm:class:key-rotation",
+        "label": "Key Rotation"
+      },
+      {
+        "@id": "urn:ngm:class:key-revocation",
+        "label": "Key Revocation"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist-sp-800-57", "label": "NIST SP 800-57"},
-      {"@id": "urn:ngm:class:iso-iec-27001", "label": "ISO/IEC 27001"}
+      {
+        "@id": "urn:ngm:class:nist-sp-800-57",
+        "label": "NIST SP 800-57"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:password-management", "label": "Password Management"},
-      {"@id": "urn:ngm:class:secrets-management", "label": "Secrets Management"}
+      {
+        "@id": "urn:ngm:class:password-management",
+        "label": "Password Management"
+      },
+      {
+        "@id": "urn:ngm:class:secrets-management",
+        "label": "Secrets Management"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:tls", "label": "TLS"},
-      {"@id": "urn:ngm:class:multi-party-computation", "label": "Multi-Party Computation"},
-      {"@id": "urn:ngm:class:threshold-cryptography", "label": "Threshold Cryptography"}
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "@id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"}
+    {
+      "@id": "urn:ngm:class:cryptographic-key-management",
+      "label": "Cryptographic Key Management"
+    }
   ],
   "quality": 0.74,
   "provenance": {

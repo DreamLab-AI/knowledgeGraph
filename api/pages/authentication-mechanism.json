@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:credential",
+        "id": "urn:ngm:class:verifiable-credential-standard",
         "label": "Credential"
       },
       {
@@ -32,7 +32,7 @@
         "label": "Cryptographic Keys"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -50,7 +50,7 @@
         "label": "Multi-Factor Authentication"
       },
       {
-        "id": "urn:ngm:class:zero-trust-security",
+        "id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Security"
       }
     ],
@@ -123,7 +123,7 @@
         "label": "OAuth 2.0"
       },
       {
-        "id": "urn:ngm:class:openid-connect",
+        "id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
       }
     ],

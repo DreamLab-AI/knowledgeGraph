@@ -38,48 +38,109 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"},
-      {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"},
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
-      {"@id": "urn:ngm:class:evm", "label": "EVM"},
-      {"@id": "urn:ngm:class:chainlink", "label": "Chainlink"}
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:evm",
+        "label": "EVM"
+      },
+      {
+        "@id": "urn:ngm:class:chainlink",
+        "label": "Chainlink"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:yield-farming", "label": "Yield Farming"},
-      {"@id": "urn:ngm:class:flash-loan", "label": "Flash Loan"},
-      {"@id": "urn:ngm:class:collateralised-borrowing", "label": "Collateralised Borrowing"},
-      {"@id": "urn:ngm:class:on-chain-arbitrage", "label": "On-Chain Arbitrage"},
-      {"@id": "urn:ngm:class:self-liquidation", "label": "Self-Liquidation"}
+      {
+        "@id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "@id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      },
+      {
+        "@id": "urn:ngm:class:collateralised-borrowing",
+        "label": "Collateralised Borrowing"
+      },
+      {
+        "@id": "urn:ngm:class:self-liquidation",
+        "label": "Self-Liquidation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
-      {"@id": "urn:ngm:class:algorithmic-interest-rate", "label": "Algorithmic Interest Rate"},
-      {"@id": "urn:ngm:class:atoken", "label": "aToken"}
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:over-collateralisation", "label": "Over-Collateralisation"},
-      {"@id": "urn:ngm:class:oracle", "label": "Oracle"},
-      {"@id": "urn:ngm:class:ethereum-wallet", "label": "Ethereum Wallet"}
+      {
+        "@id": "urn:ngm:class:over-collateralisation",
+        "label": "Over-Collateralisation"
+      },
+      {
+        "@id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:wallet",
+        "label": "Ethereum Wallet"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:compound-protocol", "label": "Compound Protocol"},
-      {"@id": "urn:ngm:class:makerdao", "label": "MakerDAO"},
-      {"@id": "urn:ngm:class:traditional-finance", "label": "Traditional Finance"}
+      {
+        "@id": "urn:ngm:class:compound",
+        "label": "Compound Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:makerdao",
+        "label": "MakerDAO"
+      },
+      {
+        "@id": "urn:ngm:class:traditional-finance",
+        "label": "Traditional Finance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
-      {"@id": "urn:ngm:class:token-governance", "label": "Token Governance"},
-      {"@id": "urn:ngm:class:liquidation-mechanism", "label": "Liquidation Mechanism"},
-      {"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"},
-      {"@id": "urn:ngm:class:gho-stablecoin", "label": "GHO Stablecoin"}
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:token-governance",
+        "label": "Token Governance"
+      },
+      {
+        "@id": "urn:ngm:class:liquidation-mechanism",
+        "label": "Liquidation Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-driven-trading", "label": "AI-Driven Trading"},
-      {"@id": "urn:ngm:class:risk-modelling", "label": "Risk Modelling"}
+      {
+        "@id": "urn:ngm:class:risk-modelling",
+        "label": "Risk Modelling"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ethlend", "label": "ETHLend"}
+    {
+      "@id": "urn:ngm:class:ethlend",
+      "label": "ETHLend"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -23,15 +23,11 @@
         "label": "Assistive Technology Integration"
       },
       {
-        "id": "urn:ngm:class:user-research-with-disabled-participants",
+        "id": "urn:ngm:class:user-research",
         "label": "User Research with Disabled Participants"
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:broader-user-base",
-        "label": "Broader User Base"
-      },
       {
         "id": "urn:ngm:class:inclusive-participation",
         "label": "Inclusive Participation"

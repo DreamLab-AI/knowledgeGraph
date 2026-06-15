@@ -178,27 +178,19 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:attack-vector-inventory",
+        "@id": "urn:ngm:class:attack-vector",
         "label": "Attack Vector Inventory"
-      },
-      {
-        "@id": "urn:ngm:class:exposure-point-catalog",
-        "label": "Exposure Point Catalog"
       },
       {
         "@id": "urn:ngm:class:risk-assessment-matrix",
         "label": "Risk Assessment Matrix"
       },
       {
-        "@id": "urn:ngm:class:security-control-mapping",
-        "label": "Security Control Mapping"
-      },
-      {
         "@id": "urn:ngm:class:threat-model",
         "label": "Threat Model"
       },
       {
-        "@id": "urn:ngm:class:vulnerability-surface",
+        "@id": "urn:ngm:class:vulnerability",
         "label": "Vulnerability Surface"
       }
     ],
@@ -208,7 +200,7 @@ public:: true
         "label": "Asset Inventory"
       },
       {
-        "@id": "urn:ngm:class:penetration-testing-tools",
+        "@id": "urn:ngm:class:penetration-testing",
         "label": "Penetration Testing Tools"
       },
       {

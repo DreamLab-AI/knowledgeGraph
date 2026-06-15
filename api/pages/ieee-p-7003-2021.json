@@ -27,7 +27,7 @@
         "label": "Stakeholder Engagement"
       },
       {
-        "id": "urn:ngm:class:algorithmic-fairness-metrics",
+        "id": "urn:ngm:class:fairness-metrics",
         "label": "Algorithmic Fairness Metrics"
       }
     ],
@@ -48,7 +48,7 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:bias-mitigation",
+        "id": "urn:ngm:class:bias-mitigation-techniques",
         "label": "Bias Mitigation"
       },
       {
@@ -78,10 +78,6 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:protected-characteristics",
-        "label": "Protected Characteristics"
-      },
-      {
         "id": "urn:ngm:class:statistical-fairness-criteria",
         "label": "Statistical Fairness Criteria"
       },
@@ -96,7 +92,7 @@
         "label": "AI Governance"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
@@ -112,7 +108,7 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:ieee-7000-series",
+        "id": "urn:ngm:class:ieee-7000",
         "label": "IEEE 7000 Series"
       },
       {
@@ -122,12 +118,8 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:ieee-p7001-2021",
+        "id": "urn:ngm:class:ieee",
         "label": "IEEE P7001-2021"
-      },
-      {
-        "id": "urn:ngm:class:ieee-p7002-2022",
-        "label": "IEEE P7002-2022"
       },
       {
         "id": "urn:ngm:class:algorithmic-bias",

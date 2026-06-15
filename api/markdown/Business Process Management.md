@@ -23,59 +23,123 @@ public:: true
   "definition": "Business Process Management (BPM) is a discipline that uses methods, techniques, and software tools to discover, model, analyse, measure, improve, and automate business processes — end-to-end workflows that produce value for internal stakeholders or external customers. It combines organisational management practice with process automation technology to make organisational operations more efficient, agile, and aligned with strategic goals.",
   "domain": "governance",
   "maturity": "mature",
-  "subClassOf": {"@id": "urn:ngm:class:enterprise-architecture", "label": "Enterprise Architecture"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:enterprise-architecture",
+    "label": "Enterprise Architecture"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:process-modelling", "label": "Process Modelling"},
-      {"@id": "urn:ngm:class:process-mining", "label": "Process Mining"},
-      {"@id": "urn:ngm:class:case-management", "label": "Case Management"},
-      {"@id": "urn:ngm:class:business-rules-engine", "label": "Business Rules Engine"}
+      {
+        "@id": "urn:ngm:class:process-mining",
+        "label": "Process Mining"
+      },
+      {
+        "@id": "urn:ngm:class:case-management",
+        "label": "Case Management"
+      },
+      {
+        "@id": "urn:ngm:class:business-rules-engine",
+        "label": "Business Rules Engine"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:enterprise-architecture", "label": "Enterprise Architecture"},
-      {"@id": "urn:ngm:class:organisational-management", "label": "Organisational Management"}
+      {
+        "@id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:process-notation", "label": "Process Notation"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"}
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:process-automation", "label": "Process Automation"},
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"},
-      {"@id": "urn:ngm:class:digital-transformation", "label": "Digital Transformation"},
-      {"@id": "urn:ngm:class:continuous-improvement", "label": "continuous improvement"},
-      {"@id": "urn:ngm:class:operational-efficiency", "label": "Operational Efficiency"}
+      {
+        "@id": "urn:ngm:class:process-automation",
+        "label": "Process Automation"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-improvement",
+        "label": "continuous improvement"
+      },
+      {
+        "@id": "urn:ngm:class:operational-efficiency",
+        "label": "Operational Efficiency"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:service-oriented-architecture", "label": "Service Oriented Architecture"},
-      {"@id": "urn:ngm:class:robotic-process-automation", "label": "Robotic Process Automation"},
-      {"@id": "urn:ngm:class:integration-middleware", "label": "Integration Middleware"}
+      {
+        "@id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service Oriented Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "@id": "urn:ngm:class:middleware",
+        "label": "Integration Middleware"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:compliance-management", "label": "Compliance Management"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+      {
+        "@id": "urn:ngm:class:compliance-management",
+        "label": "Compliance Management"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:bpmn", "label": "BPMN"},
-      {"@id": "urn:ngm:class:workflow-management-coalition", "label": "Workflow Management Coalition"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:business-process-reengineering", "label": "Business Process Reengineering"},
-      {"@id": "urn:ngm:class:total-quality-management", "label": "Total Quality Management"}
+      {
+        "@id": "urn:ngm:class:bpmn",
+        "label": "BPMN"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:low-code-platform", "label": "Low-Code Platform"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:low-code-platform",
+        "label": "Low-Code Platform"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"},
-      {"@id": "urn:ngm:class:enterprise-resource-planning", "label": "Enterprise Resource Planning"}
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:bpm", "label": "BPM"},
-    {"@id": "urn:ngm:class:process-management", "label": "Process Management"}
+    {
+      "@id": "urn:ngm:class:bpm",
+      "label": "BPM"
+    },
+    {
+      "@id": "urn:ngm:class:process-management",
+      "label": "Process Management"
+    }
   ],
   "quality": 0.8,
   "provenance": {

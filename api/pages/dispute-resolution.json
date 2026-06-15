@@ -28,10 +28,6 @@
       {
         "id": "urn:ngm:class:arbitration-process",
         "label": "Arbitration Process"
-      },
-      {
-        "id": "urn:ngm:class:online-dispute-resolution",
-        "label": "Online Dispute Resolution"
       }
     ],
     "requires": [
@@ -68,17 +64,12 @@
         "label": "Cryptoeconomic Incentive"
       },
       {
-        "id": "urn:ngm:class:escrow",
+        "id": "urn:ngm:class:escrow-system",
         "label": "Escrow"
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:litigation",
-        "label": "Litigation"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:artificial-intelligence",
@@ -115,7 +106,7 @@
         "label": "Decentralised Identity"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential",
+        "id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       }
     ],
@@ -131,10 +122,6 @@
       {
         "id": "urn:ngm:class:conflict-resolution",
         "label": "Conflict Resolution"
-      },
-      {
-        "id": "urn:ngm:class:schelling-point",
-        "label": "Schelling Point"
       },
       {
         "id": "urn:ngm:class:reputation-system",

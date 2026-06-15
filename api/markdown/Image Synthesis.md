@@ -69,11 +69,11 @@ public:: true
         "label": "Text-to-Image Generation"
       },
       {
-        "@id": "urn:ngm:class:image-inpainting",
+        "@id": "urn:ngm:class:inpainting",
         "label": "Image Inpainting"
       },
       {
-        "@id": "urn:ngm:class:image-super-resolution",
+        "@id": "urn:ngm:class:super-resolution",
         "label": "Image Super-Resolution"
       }
     ],
@@ -121,7 +121,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:latent-space",
+        "@id": "urn:ngm:class:neural-network-latent-space",
         "label": "Latent Space"
       },
       {

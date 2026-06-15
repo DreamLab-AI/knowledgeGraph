@@ -63,24 +63,6 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:farcaster-hub",
-        "label": "Farcaster Hub"
-      },
-      {
-        "@id": "urn:ngm:class:farcaster-id",
-        "label": "Farcaster ID"
-      },
-      {
-        "@id": "urn:ngm:class:warpcast",
-        "label": "Warpcast"
-      },
-      {
-        "@id": "urn:ngm:class:farcaster-frames",
-        "label": "Farcaster Frames"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:decentralised-identity",
@@ -101,7 +83,7 @@ public:: true
         "label": "Web3"
       },
       {
-        "@id": "urn:ngm:class:open-social-graph",
+        "@id": "urn:ngm:class:social-network-graph",
         "label": "Open Social Graph"
       },
       {
@@ -125,17 +107,13 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:decentralised-social-protocol",
-        "label": "Decentralised Social Protocol"
-      },
-      {
         "@id": "urn:ngm:class:open-protocol",
         "label": "Open Protocol"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:ethereum-name-service",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-name-service",
         "label": "Ethereum Name Service"
       },
       {
@@ -159,10 +137,6 @@ public:: true
       {
         "@id": "urn:ngm:class:bluesky-at-protocol",
         "label": "Bluesky AT Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:centralised-social-media",
-        "label": "Centralised Social Media"
       }
     ],
     "bridgesTo": [
@@ -181,7 +155,7 @@ public:: true
         "label": "Lens Protocol"
       },
       {
-        "@id": "urn:ngm:class:did-decentralised-identifier",
+        "@id": "urn:ngm:class:decentralised-identifier",
         "label": "DID Decentralised Identifier"
       },
       {

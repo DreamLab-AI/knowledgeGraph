@@ -38,48 +38,123 @@ public:: true
   ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"},
-      {"@id": "urn:ngm:class:ai-safety-institute", "label": "AI Safety Institute"},
-      {"@id": "urn:ngm:class:global-partnership-on-ai", "label": "Global Partnership on AI"},
-      {"@id": "urn:ngm:class:oecd-ai-policy-observatory", "label": "OECD AI Policy Observatory"}
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety-institute",
+        "label": "AI Safety Institute"
+      },
+      {
+        "@id": "urn:ngm:class:global-partnership-on-ai",
+        "label": "Global Partnership on AI"
+      },
+      {
+        "@id": "urn:ngm:class:oecd-ai-policy-observatory",
+        "label": "OECD AI Policy Observatory"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:safety-evaluation", "label": "Safety Evaluation"},
-      {"@id": "urn:ngm:class:capability-evaluation", "label": "Capability Evaluation"},
-      {"@id": "urn:ngm:class:information-sharing", "label": "Information Sharing"}
+      {
+        "@id": "urn:ngm:class:safety-evaluation",
+        "label": "Safety Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:capability-evaluation",
+        "label": "Capability Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:information-sharing",
+        "label": "Information Sharing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"},
-      {"@id": "urn:ngm:class:interpretability", "label": "Interpretability"},
-      {"@id": "urn:ngm:class:benchmarking", "label": "Benchmarking"}
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "@id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:benchmarking",
+        "label": "Benchmarking"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:ai-safety-research", "label": "AI Safety Research"},
-      {"@id": "urn:ngm:class:responsible-scaling-policy", "label": "Responsible Scaling Policy"}
+      {
+        "@id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-scaling-policy",
+        "label": "Responsible Scaling Policy"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ai-safety-institute", "label": "AI Safety Institute"},
-      {"@id": "urn:ngm:class:partnership-on-ai", "label": "Partnership on AI"}
+      {
+        "@id": "urn:ngm:class:ai-safety-institute",
+        "label": "AI Safety Institute"
+      },
+      {
+        "@id": "urn:ngm:class:partnership-on-ai",
+        "label": "Partnership on AI"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"},
-      {"@id": "urn:ngm:class:international-ai-governance", "label": "International AI Governance"},
-      {"@id": "urn:ngm:class:biosecurity", "label": "Biosecurity"},
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}
+      {
+        "@id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "International AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:biosecurity",
+        "label": "Biosecurity"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:ai-governance-ecosystem", "label": "AI Governance Ecosystem"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance Ecosystem"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:fmf", "label": "FMF"}
+    {
+      "@id": "urn:ngm:class:fmf",
+      "label": "FMF"
+    }
   ],
   "quality": 0.74,
   "provenance": {

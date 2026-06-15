@@ -65,21 +65,9 @@ public:: true
       {
         "@id": "urn:ngm:class:strict-liability",
         "label": "Strict Liability"
-      },
-      {
-        "@id": "urn:ngm:class:negligence",
-        "label": "Negligence"
-      },
-      {
-        "@id": "urn:ngm:class:warranty",
-        "label": "Warranty"
       }
     ],
     "partOf": [
-      {
-        "@id": "urn:ngm:class:tort-law",
-        "label": "Tort Law"
-      },
       {
         "@id": "urn:ngm:class:consumer-protection",
         "label": "Consumer Protection"
@@ -109,13 +97,13 @@ public:: true
         "label": "Safety"
       },
       {
-        "@id": "urn:ngm:class:redress",
+        "@id": "urn:ngm:class:redress-procedure",
         "label": "Redress"
       }
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:product-safety-standards",
+        "@id": "urn:ngm:class:safety-standard",
         "label": "Product Safety Standards"
       },
       {
@@ -124,10 +112,6 @@ public:: true
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:due-diligence",
-        "label": "Due Diligence"
-      },
       {
         "@id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
@@ -139,7 +123,7 @@ public:: true
         "label": "Market Surveillance"
       },
       {
-        "@id": "urn:ngm:class:product-recall",
+        "@id": "urn:ngm:class:product-recall-management",
         "label": "Product Recall"
       }
     ],
@@ -151,12 +135,6 @@ public:: true
       {
         "@id": "urn:ngm:class:iso-standards",
         "label": "ISO Standards"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:contributory-negligence",
-        "label": "Contributory Negligence"
       }
     ],
     "bridgesTo": [
@@ -179,7 +157,7 @@ public:: true
         "label": "Insurance"
       },
       {
-        "@id": "urn:ngm:class:intellectual-property",
+        "@id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Intellectual Property"
       }
     ]

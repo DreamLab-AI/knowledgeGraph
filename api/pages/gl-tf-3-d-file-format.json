@@ -18,20 +18,12 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:animation-channels",
-        "label": "Animation Channels"
-      },
-      {
         "id": "urn:ngm:class:material-definition",
         "label": "Material Definition"
       },
       {
         "id": "urn:ngm:class:mesh-data",
         "label": "Mesh Data"
-      },
-      {
-        "id": "urn:ngm:class:texture-references",
-        "label": "Texture References"
       },
       {
         "id": "urn:ngm:class:binary-buffer",
@@ -58,20 +50,12 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:3-d-asset-exchange",
-        "label": "3D Asset Exchange"
-      },
-      {
         "id": "urn:ngm:class:content-interoperability",
         "label": "Content Interoperability"
       },
       {
         "id": "urn:ngm:class:cross-platform-compatibility",
         "label": "Cross-Platform Compatibility"
-      },
-      {
-        "id": "urn:ngm:class:runtime-rendering",
-        "label": "Runtime Rendering"
       }
     ],
     "dependsOn": [],
@@ -85,10 +69,6 @@
       {
         "id": "urn:ngm:class:3-d-content-pipeline",
         "label": "3D Content Pipeline"
-      },
-      {
-        "id": "urn:ngm:class:asset-interchange-system",
-        "label": "Asset Interchange System"
       }
     ],
     "relatedTo": []

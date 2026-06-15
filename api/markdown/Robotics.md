@@ -186,7 +186,7 @@ public:: true
         "label": "IndustrialAutomation"
       },
       {
-        "@id": "urn:ngm:class:precision-engineering",
+        "@id": "urn:ngm:class:precision-manufacturing",
         "label": "Precision Engineering"
       },
       {

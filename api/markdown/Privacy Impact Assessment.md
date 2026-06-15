@@ -67,53 +67,119 @@ public:: true
   },
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
-      {"@id": "urn:ngm:class:data-protection-regulation", "label": "Data Protection Regulation"},
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:algorithmic-impact-assessment", "label": "Algorithmic Impact Assessment"},
-      {"@id": "urn:ngm:class:data-subject-rights", "label": "Data Subject Rights"}
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection-regulation",
+        "label": "Data Protection Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-impact-assessment",
+        "label": "Algorithmic Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:data-subject-rights",
+        "label": "Data Subject Rights"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:privacy-framework", "label": "Privacy Framework"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-framework",
+        "label": "Privacy Framework"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
-      {"@id": "urn:ngm:class:data-protection-officer", "label": "Data Protection Officer"},
-      {"@id": "urn:ngm:class:stakeholder-consultation", "label": "Stakeholder Consultation"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection-officer",
+        "label": "Data Protection Officer"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-consultation",
+        "label": "Stakeholder Consultation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:gdpr-article-35", "label": "GDPR Article 35"},
-      {"@id": "urn:ngm:class:iso-29134", "label": "ISO 29134"}
+      {
+        "@id": "urn:ngm:class:iso-29134",
+        "label": "ISO 29134"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:risk-register", "label": "Risk Register"},
-      {"@id": "urn:ngm:class:necessity-assessment", "label": "Necessity Assessment"}
+      {
+        "@id": "urn:ngm:class:risk-register",
+        "label": "Risk Register"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:data-mapping", "label": "Data Mapping"},
-      {"@id": "urn:ngm:class:personal-data-processing", "label": "Personal Data Processing"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:security-risk-assessment", "label": "Security Risk Assessment"}
+      {
+        "@id": "urn:ngm:class:data-mapping",
+        "label": "Data Mapping"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"}
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist-privacy-framework", "label": "NIST Privacy Framework"}
+      {
+        "@id": "urn:ngm:class:nist-privacy-framework",
+        "label": "NIST Privacy Framework"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:data-protection-impact-assessment", "label": "Data Protection Impact Assessment"},
-    {"@id": "urn:ngm:class:dpia", "label": "DPIA"}
+    {
+      "@id": "urn:ngm:class:data-protection-impact-assessment",
+      "label": "Data Protection Impact Assessment"
+    },
+    {
+      "@id": "urn:ngm:class:dpia",
+      "label": "DPIA"
+    }
   ],
   "quality": 0.72,
   "provenance": {

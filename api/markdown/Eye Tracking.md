@@ -162,16 +162,8 @@ public:: true
         "label": "Calibration System"
       },
       {
-        "@id": "urn:ngm:class:hot-mirror",
-        "label": "Hot Mirror"
-      },
-      {
         "@id": "urn:ngm:class:image-sensor",
         "label": "Image Sensor"
-      },
-      {
-        "@id": "urn:ngm:class:pupil-detection-algorithm",
-        "label": "Pupil Detection Algorithm"
       },
       {
         "@id": "urn:ngm:class:infrared-camera",
@@ -184,18 +176,6 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:high-speed-camera",
-        "label": "High-Speed Camera"
-      },
-      {
-        "@id": "urn:ngm:class:low-latency-data-bus",
-        "label": "Low-Latency Data Bus"
-      },
-      {
-        "@id": "urn:ngm:class:real-time-processing-unit",
-        "label": "Real-Time Processing Unit"
-      },
-      {
         "@id": "urn:ngm:class:infrared-light-source",
         "label": "Infrared Light Source"
       },
@@ -206,34 +186,14 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:attention-analytics",
-        "label": "Attention Analytics"
-      },
-      {
-        "@id": "urn:ngm:class:eye-gesture-control",
-        "label": "Eye Gesture Control"
-      },
-      {
         "@id": "urn:ngm:class:foveated-rendering",
         "label": "Foveated Rendering"
-      },
-      {
-        "@id": "urn:ngm:class:gaze-based-interaction",
-        "label": "Gaze-Based Interaction"
-      },
-      {
-        "@id": "urn:ngm:class:vergence-accommodation-matching",
-        "label": "Vergence-Accommodation Matching"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:human-computer-interaction-framework",
+        "@id": "urn:ngm:class:human-computer-interaction",
         "label": "Human-Computer Interaction Framework"
-      },
-      {
-        "@id": "urn:ngm:class:perceptual-computing-system",
-        "label": "Perceptual Computing System"
       }
     ]
   },

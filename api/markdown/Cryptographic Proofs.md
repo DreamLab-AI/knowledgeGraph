@@ -24,54 +24,139 @@ alias:: CryptographicProofs
   "definition": "Cryptographic proofs are mathematical constructions that allow one party to convince another of the truth of a statement with cryptographic certainty, often without revealing the underlying data. They include proofs of knowledge, membership proofs, proofs of computation, and zero-knowledge proofs, and rely on primitives such as hash functions, commitments, and elliptic-curve operations. Cryptographic proofs underpin blockchain validity, verifiable computation, privacy-preserving authentication, and data-availability guarantees, letting verifiers trust outcomes they did not themselves compute.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-primitive", "label": "Cryptographic Primitive"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
-      {"@id": "urn:ngm:class:commitment-scheme", "label": "Commitment Scheme"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:commitment-scheme",
+        "label": "Commitment Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:data-availability", "label": "Data Availability"},
-      {"@id": "urn:ngm:class:verifiable-computation", "label": "Verifiable Computation"},
-      {"@id": "urn:ngm:class:privacy-preserving-authentication", "label": "Privacy-Preserving Authentication"},
-      {"@id": "urn:ngm:class:trust-minimisation", "label": "Trust Minimisation"}
+      {
+        "@id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-computation",
+        "label": "Verifiable Computation"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-authentication",
+        "label": "Privacy-Preserving Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:trust-minimisation",
+        "label": "Trust Minimisation"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:zk-snark", "label": "zk-SNARK"},
-      {"@id": "urn:ngm:class:zk-stark", "label": "zk-STARK"},
-      {"@id": "urn:ngm:class:merkle-proof", "label": "Merkle Proof"},
-      {"@id": "urn:ngm:class:proof-of-knowledge", "label": "Proof of Knowledge"}
+      {
+        "@id": "urn:ngm:class:zk-snark",
+        "label": "zk-SNARK"
+      },
+      {
+        "@id": "urn:ngm:class:zk-starks",
+        "label": "zk-STARK"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-proof",
+        "label": "Merkle Proof"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:computational-hardness-assumption", "label": "Computational Hardness Assumption"},
-      {"@id": "urn:ngm:class:trusted-setup", "label": "Trusted Setup"}
+      {
+        "@id": "urn:ngm:class:computational-hardness-assumption",
+        "label": "Computational Hardness Assumption"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-setup",
+        "label": "Trusted Setup"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:validity-rollup", "label": "Validity Rollup"},
-      {"@id": "urn:ngm:class:certificate-transparency", "label": "Certificate Transparency"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:rollup",
+        "label": "Validity Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-transparency",
+        "label": "Certificate Transparency"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:interactive-proof", "label": "Interactive Proof"},
-      {"@id": "urn:ngm:class:fraud-proof", "label": "Fraud Proof"}
+      {
+        "@id": "urn:ngm:class:interactive-proof",
+        "label": "Interactive Proof"
+      },
+      {
+        "@id": "urn:ngm:class:fraud-proof",
+        "label": "Fraud Proof"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:erasure-coding", "label": "Erasure Coding"},
-      {"@id": "urn:ngm:class:accumulator", "label": "Accumulator"}
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-accumulator",
+        "label": "Accumulator"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:cryptographic-proof-system", "label": "Cryptographic Proof System"},
-    {"@id": "urn:ngm:class:proof-system", "label": "Proof System"}
+    {
+      "@id": "urn:ngm:class:cryptographic-proof-system",
+      "label": "Cryptographic Proof System"
+    },
+    {
+      "@id": "urn:ngm:class:proof-system",
+      "label": "Proof System"
+    }
   ],
   "quality": 0.72,
   "provenance": {

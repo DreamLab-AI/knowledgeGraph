@@ -32,10 +32,6 @@
       {
         "id": "urn:ngm:class:logistics-optimization",
         "label": "Logistics Optimization"
-      },
-      {
-        "id": "urn:ngm:class:supplier-relationship-management",
-        "label": "Supplier Relationship Management"
       }
     ],
     "requires": [
@@ -69,10 +65,6 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:value-chain-management",
-        "label": "Value Chain Management"
-      },
       {
         "id": "urn:ngm:class:just-in-time-manufacturing",
         "label": "Just-In-Time Manufacturing"

@@ -318,20 +318,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:boundary-setting",
-        "label": "Boundary Setting"
-      },
-      {
         "@id": "urn:ngm:class:carbon-accounting-software",
         "label": "Carbon Accounting Software"
       },
       {
         "@id": "urn:ngm:class:emission-factors",
         "label": "Emission Factors"
-      },
-      {
-        "@id": "urn:ngm:class:emission-inventory",
-        "label": "Emission Inventory"
       },
       {
         "@id": "urn:ngm:class:life-cycle-assessment",
@@ -342,11 +334,7 @@ public:: true
         "label": "Satellite Monitoring"
       },
       {
-        "@id": "urn:ngm:class:scope-classification",
-        "label": "Scope Classification"
-      },
-      {
-        "@id": "urn:ngm:class:verification-and-assurance",
+        "@id": "urn:ngm:class:verification",
         "label": "Verification and Assurance"
       }
     ],
@@ -356,7 +344,7 @@ public:: true
         "label": "Activity Data"
       },
       {
-        "@id": "urn:ngm:class:emission-factor-databases",
+        "@id": "urn:ngm:class:emission-factors",
         "label": "Emission Factor Databases"
       },
       {
@@ -370,10 +358,6 @@ public:: true
       {
         "@id": "urn:ngm:class:iso-14067",
         "label": "ISO 14067"
-      },
-      {
-        "@id": "urn:ngm:class:organisational-boundary-definition",
-        "label": "Organisational Boundary Definition"
       },
       {
         "@id": "urn:ngm:class:supply-chain-data",
@@ -390,7 +374,7 @@ public:: true
         "label": "CSRD Compliance"
       },
       {
-        "@id": "urn:ngm:class:decarbonisation-strategy",
+        "@id": "urn:ngm:class:decarbonisation",
         "label": "Decarbonisation Strategy"
       },
       {
@@ -420,7 +404,7 @@ public:: true
         "label": "Market-Based Accounting"
       },
       {
-        "@id": "urn:ngm:class:product-carbon-footprint",
+        "@id": "urn:ngm:class:carbon-footprint",
         "label": "Product Carbon Footprint"
       },
       {
@@ -452,10 +436,6 @@ public:: true
       {
         "@id": "urn:ngm:class:remote-sensing",
         "label": "Remote Sensing"
-      },
-      {
-        "@id": "urn:ngm:class:satellite-data",
-        "label": "Satellite Data"
       },
       {
         "@id": "urn:ngm:class:blockchain",
@@ -532,10 +512,6 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:esrs-e1",
-        "label": "ESRS E1"
-      },
-      {
         "@id": "urn:ngm:class:ghg-protocol",
         "label": "GHG Protocol"
       },
@@ -550,10 +526,6 @@ public:: true
       {
         "@id": "urn:ngm:class:iso-14067",
         "label": "ISO 14067"
-      },
-      {
-        "@id": "urn:ngm:class:streamlined-energy-and-carbon-reporting",
-        "label": "Streamlined Energy and Carbon Reporting"
       },
       {
         "@id": "urn:ngm:class:tcfd",

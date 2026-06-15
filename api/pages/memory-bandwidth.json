@@ -16,29 +16,16 @@
   "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:memory-bus",
-        "label": "Memory Bus"
-      },
-      {
-        "id": "urn:ngm:class:memory-channel",
-        "label": "Memory Channel"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:high-bandwidth-memory",
         "label": "High Bandwidth Memory"
-      },
-      {
-        "id": "urn:ngm:class:memory-controller",
-        "label": "Memory Controller"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:gpu-accelerated-computing",
+        "id": "urn:ngm:class:gpu-computing",
         "label": "GPU Accelerated Computing"
       },
       {
@@ -46,28 +33,15 @@
         "label": "Real-Time Rendering"
       },
       {
-        "id": "urn:ngm:class:deep-learning-inference",
+        "id": "urn:ngm:class:inference",
         "label": "Deep Learning Inference"
       }
     ],
-    "dependsOn": [
-      {
-        "id": "urn:ngm:class:dram",
-        "label": "DRAM"
-      },
-      {
-        "id": "urn:ngm:class:cache-memory",
-        "label": "Cache Memory"
-      }
-    ],
+    "dependsOn": [],
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:compute-throughput",
-        "label": "Compute Throughput"
-      },
-      {
-        "id": "urn:ngm:class:memory-latency",
+        "id": "urn:ngm:class:latency",
         "label": "Memory Latency"
       }
     ],
@@ -82,10 +56,6 @@
       }
     ],
     "uses": [
-      {
-        "id": "urn:ngm:class:ddr-memory",
-        "label": "DDR Memory"
-      },
       {
         "id": "urn:ngm:class:interconnect",
         "label": "Interconnect"
@@ -132,10 +102,6 @@
       {
         "id": "urn:ngm:class:quantisation",
         "label": "Quantisation"
-      },
-      {
-        "id": "urn:ngm:class:on-chip-caching",
-        "label": "On-Chip Caching"
       }
     ]
   },

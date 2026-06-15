@@ -134,10 +134,6 @@ public:: true
         "label": "Accountability Mechanism"
       },
       {
-        "@id": "urn:ngm:class:decision-structure",
-        "label": "Decision Structure"
-      },
-      {
         "@id": "urn:ngm:class:policy-framework",
         "label": "Policy Framework"
       },

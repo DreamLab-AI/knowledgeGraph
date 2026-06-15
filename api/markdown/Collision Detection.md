@@ -702,34 +702,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:broad-phase-detection",
-        "label": "Broad-Phase Detection"
-      },
-      {
-        "@id": "urn:ngm:class:contact-manifold",
-        "label": "Contact Manifold"
-      },
-      {
-        "@id": "urn:ngm:class:contact-resolution",
-        "label": "Contact Resolution"
-      },
-      {
-        "@id": "urn:ngm:class:narrow-phase-detection",
-        "label": "Narrow-Phase Detection"
-      },
-      {
-        "@id": "urn:ngm:class:penetration-depth",
-        "label": "Penetration Depth"
-      },
-      {
-        "@id": "urn:ngm:class:separating-axis-theorem",
-        "label": "Separating Axis Theorem"
-      },
-      {
-        "@id": "urn:ngm:class:time-of-impact",
-        "label": "Time of Impact"
-      },
-      {
         "@id": "urn:ngm:class:bounding-volume-hierarchy",
         "label": "Bounding Volume Hierarchy"
       }
@@ -748,10 +720,6 @@ public:: true
         "label": "Geometric Primitive"
       },
       {
-        "@id": "urn:ngm:class:numerical-robustness",
-        "label": "Numerical Robustness"
-      },
-      {
         "@id": "urn:ngm:class:spatial-partitioning",
         "label": "Spatial Partitioning"
       }
@@ -760,10 +728,6 @@ public:: true
       {
         "@id": "urn:ngm:class:cloth-simulation",
         "label": "Cloth Simulation"
-      },
-      {
-        "@id": "urn:ngm:class:ragdoll-animation",
-        "label": "Ragdoll Animation"
       },
       {
         "@id": "urn:ngm:class:safety-certification",
@@ -800,32 +764,8 @@ public:: true
         "label": "BSP Tree"
       },
       {
-        "@id": "urn:ngm:class:conservative-advancement",
-        "label": "Conservative Advancement"
-      },
-      {
-        "@id": "urn:ngm:class:continuous-collision-detection",
-        "label": "Continuous Collision Detection"
-      },
-      {
-        "@id": "urn:ngm:class:epa-algorithm",
-        "label": "EPA Algorithm"
-      },
-      {
-        "@id": "urn:ngm:class:gjk-algorithm",
-        "label": "GJK Algorithm"
-      },
-      {
-        "@id": "urn:ngm:class:signed-distance-field",
+        "@id": "urn:ngm:class:signed-distance-function",
         "label": "Signed Distance Field"
-      },
-      {
-        "@id": "urn:ngm:class:spatial-hashing",
-        "label": "Spatial Hashing"
-      },
-      {
-        "@id": "urn:ngm:class:sweep-and-prune",
-        "label": "Sweep and Prune"
       }
     ],
     "uses": [
@@ -938,10 +878,6 @@ public:: true
         "label": "CAD Software"
       },
       {
-        "@id": "urn:ngm:class:crash-simulation",
-        "label": "Crash Simulation"
-      },
-      {
         "@id": "urn:ngm:class:surgical-simulation",
         "label": "Surgical Simulation"
       },
@@ -970,10 +906,6 @@ public:: true
       {
         "@id": "urn:ngm:class:khronos-open-xr",
         "label": "Khronos OpenXR"
-      },
-      {
-        "@id": "urn:ngm:class:mjcf",
-        "label": "MJCF"
       },
       {
         "@id": "urn:ngm:class:ros-rep",

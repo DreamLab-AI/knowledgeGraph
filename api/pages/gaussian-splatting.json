@@ -22,36 +22,16 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:adaptive-densification",
-        "label": "Adaptive Densification"
-      },
-      {
-        "id": "urn:ngm:class:alpha-compositing",
-        "label": "Alpha Compositing"
-      },
-      {
-        "id": "urn:ngm:class:depth-sorting",
-        "label": "Depth Sorting"
-      },
-      {
-        "id": "urn:ngm:class:differentiable-rasterizer",
-        "label": "Differentiable Rasterizer"
-      },
-      {
         "id": "urn:ngm:class:gaussian-primitive",
         "label": "Gaussian Primitive"
       },
       {
-        "id": "urn:ngm:class:sf-m-point-cloud",
+        "id": "urn:ngm:class:point-cloud",
         "label": "SfM Point Cloud"
       },
       {
         "id": "urn:ngm:class:spherical-harmonics",
         "label": "Spherical Harmonics"
-      },
-      {
-        "id": "urn:ngm:class:tile-based-renderer",
-        "label": "Tile-Based Renderer"
       }
     ],
     "requires": [
@@ -125,24 +105,12 @@
         "label": "Alpha Blending"
       },
       {
-        "id": "urn:ngm:class:covariance-decomposition",
-        "label": "Covariance Decomposition"
-      },
-      {
         "id": "urn:ngm:class:differentiable-rendering",
         "label": "Differentiable Rendering"
       },
       {
-        "id": "urn:ngm:class:ewa-splatting",
-        "label": "EWA Splatting"
-      },
-      {
         "id": "urn:ngm:class:spherical-harmonics",
         "label": "Spherical Harmonics"
-      },
-      {
-        "id": "urn:ngm:class:tile-rasterisation",
-        "label": "Tile Rasterisation"
       }
     ],
     "contrastsWith": [],
@@ -208,21 +176,21 @@
         "label": "Spatial Computing"
       },
       {
-        "id": "urn:ngm:class:apple-mixed-reality-headset",
+        "id": "urn:ngm:class:apple-inc-technology-corporation-mixed-reality-headset",
         "label": "Vision Pro"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:acm-siggraph",
+        "id": "urn:ngm:class:siggraph",
         "label": "ACM SIGGRAPH"
       },
       {
-        "id": "urn:ngm:class:ieee-cvpr",
+        "id": "urn:ngm:class:cvpr",
         "label": "IEEE CVPR"
       },
       {
-        "id": "urn:ngm:class:ieee-iccv",
+        "id": "urn:ngm:class:iccv",
         "label": "IEEE ICCV"
       }
     ],

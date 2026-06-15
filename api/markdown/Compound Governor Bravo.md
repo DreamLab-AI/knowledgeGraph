@@ -24,58 +24,131 @@ alias:: Compound GovernorBravo
   "definition": "Compound Governor Bravo is the second-generation on-chain governance smart contract deployed by the Compound protocol, superseding Governor Alpha with configurable parameters and a clean separation between governance voting logic and the Timelock executor contract. It enables COMP token holders to create, vote on, and enqueue governance proposals that modify protocol parameters — including interest rate models, collateral factors, reserve factors, and supported asset listings — without requiring contract redeployment to adjust governance thresholds. Governor Bravo introduced an abstraction layer allowing the proposal threshold, voting delay, voting period, and quorum to be updated through the same governance process they govern, substantially reducing upgrade friction. The contract has become a widely forked reference implementation across decentralised finance, with derivatives adopted by Uniswap, Indexed Finance, and many other protocols seeking battle-tested on-chain governance infrastructure.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:on-chain-governance",
+      "label": "On-chain Governance"
+    }
+  ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:compound", "label": "Compound"},
-      {"@id": "urn:ngm:class:defi-governance-framework", "label": "DeFi Governance Framework"}
+      {
+        "@id": "urn:ngm:class:compound",
+        "label": "Compound"
+      },
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "DeFi Governance Framework"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:comp-token", "label": "COMP Token"},
-      {"@id": "urn:ngm:class:timelock", "label": "Timelock"},
-      {"@id": "urn:ngm:class:ethereum-smart-contract", "label": "Ethereum Smart Contract"},
-      {"@id": "urn:ngm:class:vote-delegation", "label": "Vote Delegation"}
+      {
+        "@id": "urn:ngm:class:timelock",
+        "label": "Timelock"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-smart-contracts",
+        "label": "Ethereum Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:vote-delegation",
+        "label": "Vote Delegation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:token-weighted-voting", "label": "Token-Weighted Voting"},
-      {"@id": "urn:ngm:class:proposal-lifecycle", "label": "Proposal Lifecycle"},
-      {"@id": "urn:ngm:class:quorum-mechanism", "label": "Quorum Mechanism"}
+      {
+        "@id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      },
+      {
+        "@id": "urn:ngm:class:proposal-lifecycle",
+        "label": "Proposal Lifecycle"
+      },
+      {
+        "@id": "urn:ngm:class:quorum-mechanism",
+        "label": "Quorum Mechanism"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:voting-mechanism", "label": "Voting Mechanism"},
-      {"@id": "urn:ngm:class:proposal-system", "label": "Proposal System"},
-      {"@id": "urn:ngm:class:calldata-execution", "label": "Calldata Execution"}
+      {
+        "@id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:proposal-system",
+        "label": "Proposal System"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:dao", "label": "DAO"},
-      {"@id": "urn:ngm:class:protocol-parameter-management", "label": "Protocol Parameter Management"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"}
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"}
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:compound-governor-alpha", "label": "Compound Governor Alpha"},
-      {"@id": "urn:ngm:class:openzeppelin-governor", "label": "OpenZeppelin Governor"},
-      {"@id": "urn:ngm:class:snapshot-governance", "label": "Snapshot Governance"}
+      {
+        "@id": "urn:ngm:class:open-zeppelin-governor",
+        "label": "OpenZeppelin Governor"
+      },
+      {
+        "@id": "urn:ngm:class:snapshot-governance",
+        "label": "Snapshot Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:governance-attack", "label": "Governance Attack"},
-      {"@id": "urn:ngm:class:dao-analytics", "label": "DAO Analytics"},
-      {"@id": "urn:ngm:class:defi-protocol", "label": "DeFi Protocol"}
+      {
+        "@id": "urn:ngm:class:governance-attack",
+        "label": "Governance Attack"
+      },
+      {
+        "@id": "urn:ngm:class:dao-analytics",
+        "label": "DAO Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"},
-      {"@id": "urn:ngm:class:smart-contract-security", "label": "Smart Contract Security"}
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-security",
+        "label": "Smart Contract Security"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:governor-bravo", "label": "Governor Bravo"}
+    {
+      "@id": "urn:ngm:class:governor-bravo",
+      "label": "Governor Bravo"
+    }
   ],
   "quality": 0.74,
   "provenance": {

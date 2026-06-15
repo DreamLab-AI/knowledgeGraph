@@ -142,14 +142,6 @@ public:: true
         "label": "Accountability Framework"
       },
       {
-        "@id": "urn:ngm:class:certification-criteria",
-        "label": "Certification Criteria"
-      },
-      {
-        "@id": "urn:ngm:class:policy-rule-set",
-        "label": "Policy Rule Set"
-      },
-      {
         "@id": "urn:ngm:class:trust-anchor",
         "label": "Trust Anchor"
       }
@@ -169,14 +161,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:interoperable-authentication",
-        "label": "Interoperable Authentication"
-      },
-      {
-        "@id": "urn:ngm:class:trust-federation",
-        "label": "Trust Federation"
-      },
       {
         "@id": "urn:ngm:class:cross-platform-identity",
         "label": "Cross-Platform Identity"

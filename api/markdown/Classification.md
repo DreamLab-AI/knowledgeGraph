@@ -89,11 +89,7 @@ public:: true
         "label": "Image Recognition"
       },
       {
-        "@id": "urn:ngm:class:spam-filtering",
-        "label": "Spam Filtering"
-      },
-      {
-        "@id": "urn:ngm:class:medical-diagnosis",
+        "@id": "urn:ngm:class:medical-diagnosis-ai",
         "label": "Medical Diagnosis"
       }
     ],
@@ -109,14 +105,6 @@ public:: true
       {
         "@id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
-      },
-      {
-        "@id": "urn:ngm:class:naive-bayes",
-        "label": "Naive Bayes"
-      },
-      {
-        "@id": "urn:ngm:class:logistic-regression",
-        "label": "Logistic Regression"
       },
       {
         "@id": "urn:ngm:class:random-forest",

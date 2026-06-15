@@ -46,7 +46,7 @@
         "label": "Full Node"
       },
       {
-        "id": "urn:ngm:class:dht",
+        "id": "urn:ngm:class:kademlia-dht",
         "label": "Distributed Hash Table"
       }
     ],
@@ -101,10 +101,6 @@
       {
         "id": "urn:ngm:class:client-server-architecture",
         "label": "Client-Server Architecture"
-      },
-      {
-        "id": "urn:ngm:class:centralised-network",
-        "label": "Centralised Network"
       }
     ],
     "bridgesTo": [
@@ -127,7 +123,7 @@
         "label": "NAT Traversal"
       },
       {
-        "id": "urn:ngm:class:kademlia",
+        "id": "urn:ngm:class:kademlia-dht",
         "label": "Kademlia"
       }
     ],

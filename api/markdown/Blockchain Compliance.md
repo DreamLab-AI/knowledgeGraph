@@ -200,11 +200,11 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:mica-markets-in-crypto-assets",
+        "@id": "urn:ngm:class:bc-0484-markets-in-crypto-assets",
         "label": "MiCA (Markets in Crypto-Assets)"
       },
       {
-        "@id": "urn:ngm:class:fatf-financial-action-task-force",
+        "@id": "urn:ngm:class:fatf",
         "label": "FATF (Financial Action Task Force)"
       }
     ],
@@ -214,7 +214,7 @@ public:: true
         "label": "Blockchain"
       },
       {
-        "@id": "urn:ngm:class:cryptographic-audit-trail",
+        "@id": "urn:ngm:class:audit-trail",
         "label": "Cryptographic Audit Trail"
       }
     ],
@@ -238,7 +238,7 @@ public:: true
         "label": "Securities Regulation"
       },
       {
-        "@id": "urn:ngm:class:tax-reporting",
+        "@id": "urn:ngm:class:regulatory-reporting",
         "label": "Tax Reporting"
       }
     ],

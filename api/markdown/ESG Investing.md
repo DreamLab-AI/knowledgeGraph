@@ -38,60 +38,137 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:environmental-criteria", "label": "Environmental Criteria"},
-      {"@id": "urn:ngm:class:social-criteria", "label": "Social Criteria"},
-      {"@id": "urn:ngm:class:corporate-governance", "label": "Corporate Governance"}
+      {
+        "@id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:sustainable-finance", "label": "Sustainable Finance"},
-      {"@id": "urn:ngm:class:impact-investing", "label": "Impact Investing"}
+      {
+        "@id": "urn:ngm:class:sustainable-finance",
+        "label": "Sustainable Finance"
+      },
+      {
+        "@id": "urn:ngm:class:impact-investing",
+        "label": "Impact Investing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:esg-data-disclosure", "label": "ESG Data Disclosure"},
-      {"@id": "urn:ngm:class:materiality-assessment", "label": "Materiality Assessment"}
+      {
+        "@id": "urn:ngm:class:esg",
+        "label": "ESG Data Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:materiality-assessment",
+        "label": "Materiality Assessment"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:green-bond", "label": "Green Bond"},
-      {"@id": "urn:ngm:class:impact-measurement", "label": "Impact Measurement"},
-      {"@id": "urn:ngm:class:stewardship", "label": "Stewardship"}
+      {
+        "@id": "urn:ngm:class:green-bond-market",
+        "label": "Green Bond"
+      },
+      {
+        "@id": "urn:ngm:class:impact-measurement",
+        "label": "Impact Measurement"
+      },
+      {
+        "@id": "urn:ngm:class:stewardship",
+        "label": "Stewardship"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:esg-rating", "label": "ESG Rating"},
-      {"@id": "urn:ngm:class:non-financial-reporting", "label": "Non-Financial Reporting"}
+      {
+        "@id": "urn:ngm:class:esg",
+        "label": "ESG Rating"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:portfolio-screening", "label": "Portfolio Screening"},
-      {"@id": "urn:ngm:class:proxy-voting", "label": "Proxy Voting"},
-      {"@id": "urn:ngm:class:stakeholder-engagement", "label": "Stakeholder Engagement"}
+      {
+        "@id": "urn:ngm:class:sanctions-screening",
+        "label": "Portfolio Screening"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-voting",
+        "label": "Proxy Voting"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:governance", "label": "Governance"},
-      {"@id": "urn:ngm:class:climate-risk-management", "label": "Climate Risk Management"},
-      {"@id": "urn:ngm:class:sustainable-development-goals", "label": "Sustainable Development Goals"}
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:climate-risk-management",
+        "label": "Climate Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-development-goals",
+        "label": "Sustainable Development Goals"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:sfdr", "label": "SFDR"},
-      {"@id": "urn:ngm:class:gri-standards", "label": "GRI Standards"},
-      {"@id": "urn:ngm:class:tcfd", "label": "TCFD"}
+      {
+        "@id": "urn:ngm:class:sfdr",
+        "label": "SFDR"
+      },
+      {
+        "@id": "urn:ngm:class:gri-standards",
+        "label": "GRI Standards"
+      },
+      {
+        "@id": "urn:ngm:class:tcfd",
+        "label": "TCFD"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:conventional-investing", "label": "Conventional Investing"},
-      {"@id": "urn:ngm:class:greenwashing", "label": "Greenwashing"}
+      {
+        "@id": "urn:ngm:class:conventional-investing",
+        "label": "Conventional Investing"
+      },
+      {
+        "@id": "urn:ngm:class:greenwashing",
+        "label": "Greenwashing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:tokenization", "label": "Tokenization"},
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"},
-      {"@id": "urn:ngm:class:carbon-credit", "label": "Carbon Credit"}
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credit"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:green-finance", "label": "Green Finance"},
-      {"@id": "urn:ngm:class:sustainability", "label": "Sustainability"},
-      {"@id": "urn:ngm:class:socially-responsible-investing", "label": "Socially Responsible Investing"}
+      {
+        "@id": "urn:ngm:class:green-finance",
+        "label": "Green Finance"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:socially-responsible-investing", "label": "Socially Responsible Investing"},
-    {"@id": "urn:ngm:class:responsible-investment", "label": "Responsible Investment"}
+    {
+      "@id": "urn:ngm:class:socially-responsible-investing",
+      "label": "Socially Responsible Investing"
+    },
+    {
+      "@id": "urn:ngm:class:responsible-investment",
+      "label": "Responsible Investment"
+    }
   ],
   "quality": 0.74,
   "provenance": {

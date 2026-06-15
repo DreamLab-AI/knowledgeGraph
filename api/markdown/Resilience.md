@@ -46,7 +46,7 @@ public:: true
     "@id": "urn:ngm:class:infra-software-engineering",
     "label": "Software Engineering"
   },
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -133,10 +133,6 @@ public:: true
       {
         "@id": "urn:ngm:class:blockchain-scalability",
         "label": "Blockchain Scalability"
-      },
-      {
-        "@id": "urn:ngm:class:fragility",
-        "label": "Fragility"
       }
     ],
     "relatedTo": [
@@ -157,7 +153,7 @@ public:: true
         "label": "Security by Design"
       },
       {
-        "@id": "urn:ngm:class:system-property",
+        "@id": "urn:ngm:class:property",
         "label": "System Property"
       }
     ],

@@ -93,10 +93,6 @@ public:: true
       {
         "@id": "urn:ngm:class:national-innovation-centre-for-data",
         "label": "National Innovation Centre for Data"
-      },
-      {
-        "@id": "urn:ngm:class:science-central",
-        "label": "Science Central"
       }
     ],
     "relatedTo": [
@@ -133,20 +129,6 @@ public:: true
       {
         "@id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
-      },
-      {
-        "@id": "urn:ngm:class:ai-cluster",
-        "label": "AI Cluster"
-      }
-    ],
-    "supports": [
-      {
-        "@id": "urn:ngm:class:regional-innovation",
-        "label": "Regional Innovation"
-      },
-      {
-        "@id": "urn:ngm:class:public-sector-technology",
-        "label": "Public Sector Technology"
       }
     ],
     "dependsOn": [

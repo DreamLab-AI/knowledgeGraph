@@ -103,12 +103,7 @@
       }
     ],
     "supports": [],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:tezos-improvement-proposal",
-        "label": "Tezos Improvement Proposal"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {

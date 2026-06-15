@@ -37,58 +37,135 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:credential-type-definition", "label": "Credential Type Definition"},
-    {"@id": "urn:ngm:class:vc-schema", "label": "VC Schema"}
+    {
+      "@id": "urn:ngm:class:credential-type-definition",
+      "label": "Credential Type Definition"
+    },
+    {
+      "@id": "urn:ngm:class:vc-schema",
+      "label": "VC Schema"
+    }
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:verifiable-credential-vc", "label": "Verifiable Credential (VC)"},
-      {"@id": "urn:ngm:class:selective-disclosure", "label": "Selective Disclosure"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential (VC)"
+      },
+      {
+        "@id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:json-data-interchange-format-schema", "label": "JSON Schema"},
-      {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"}
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:verifiable-data-registry", "label": "Verifiable Data Registry"},
-      {"@id": "urn:ngm:class:decentralised-identifier", "label": "Decentralised Identifier"}
+      {
+        "@id": "urn:ngm:class:verifiable-data-registry",
+        "label": "Verifiable Data Registry"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:trust-framework", "label": "Trust Framework"}
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:credential-definition", "label": "Credential Definition"},
-      {"@id": "urn:ngm:class:claim-mapping", "label": "Claim Mapping"}
+      {
+        "@id": "urn:ngm:class:credential-definition",
+        "label": "Credential Definition"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:w3c", "label": "W3C"},
-      {"@id": "urn:ngm:class:openid-foundation", "label": "OpenID Foundation"},
-      {"@id": "urn:ngm:class:hyperledger-aries", "label": "Hyperledger Aries"}
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-foundation",
+        "label": "OpenID Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:hyperledger-aries",
+        "label": "Hyperledger Aries"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:anoncreds", "label": "AnonCreds"},
-      {"@id": "urn:ngm:class:sd-jwt-vc", "label": "SD-JWT VC"},
-      {"@id": "urn:ngm:class:mdoc", "label": "MDOC"}
+      {
+        "@id": "urn:ngm:class:sd-jwt-vc",
+        "label": "SD-JWT VC"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:credential-format-standard", "label": "Credential Format Standard"},
-      {"@id": "urn:ngm:class:access-control-policy", "label": "Access Control Policy"}
+      {
+        "@id": "urn:ngm:class:credential-format-standard",
+        "label": "Credential Format Standard"
+      },
+      {
+        "@id": "urn:ngm:class:access-control-policy",
+        "label": "Access Control Policy"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:metadata-schema", "label": "Metadata Schema"},
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:schema-registry", "label": "Schema Registry"},
-      {"@id": "urn:ngm:class:credential-governance", "label": "Credential Governance"}
+      {
+        "@id": "urn:ngm:class:metadata-schema",
+        "label": "Metadata Schema"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:schema-registry",
+        "label": "Schema Registry"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ]
   },
   "quality": 0.74,

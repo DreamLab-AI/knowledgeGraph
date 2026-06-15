@@ -150,31 +150,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:data-simulator",
-        "label": "Data Simulator"
-      },
-      {
-        "@id": "urn:ngm:class:privacy-validator",
-        "label": "Privacy Validator"
-      },
-      {
-        "@id": "urn:ngm:class:statistical-analyzer",
-        "label": "Statistical Analyzer"
-      },
-      {
         "@id": "urn:ngm:class:generative-model",
         "label": "Generative Model"
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:privacy-metrics",
-        "label": "Privacy Metrics"
-      },
-      {
-        "@id": "urn:ngm:class:statistical-models",
-        "label": "Statistical Models"
-      },
       {
         "@id": "urn:ngm:class:machine-learning-discipline-framework",
         "label": "Machine Learning Framework"
@@ -190,10 +170,6 @@ public:: true
         "label": "Data Augmentation"
       },
       {
-        "@id": "urn:ngm:class:testing-dataset-creation",
-        "label": "Testing Dataset Creation"
-      },
-      {
         "@id": "urn:ngm:class:model-training",
         "label": "Model Training"
       },
@@ -203,10 +179,6 @@ public:: true
       }
     ],
     "partOf": [
-      {
-        "@id": "urn:ngm:class:ai-pipeline",
-        "label": "AI Pipeline"
-      },
       {
         "@id": "urn:ngm:class:data-management-platform",
         "label": "Data Management Platform"

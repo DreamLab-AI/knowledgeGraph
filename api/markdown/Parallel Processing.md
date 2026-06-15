@@ -126,11 +126,7 @@ public:: true
         "label": "GPU Compute"
       },
       {
-        "@id": "urn:ngm:class:multi-core-processor",
-        "label": "Multi-Core Processor"
-      },
-      {
-        "@id": "urn:ngm:class:thread",
+        "@id": "urn:ngm:class:thread-protocol",
         "label": "Thread"
       }
     ],

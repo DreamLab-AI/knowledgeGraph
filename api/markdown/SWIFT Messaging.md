@@ -58,16 +58,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:mt-message-types",
-        "label": "MT Message Types"
-      },
-      {
         "@id": "urn:ngm:class:iso-20022",
         "label": "ISO 20022"
-      },
-      {
-        "@id": "urn:ngm:class:swiftnet",
-        "label": "SWIFTNet"
       }
     ],
     "partOf": [
@@ -76,7 +68,7 @@ public:: true
         "label": "SWIFT"
       },
       {
-        "@id": "urn:ngm:class:global-financial-infrastructure",
+        "@id": "urn:ngm:class:financial-infrastructure",
         "label": "Global Financial Infrastructure"
       }
     ],
@@ -96,7 +88,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:cross-border-payment",
+        "@id": "urn:ngm:class:cross-border-payments",
         "label": "Cross-Border Payment"
       },
       {
@@ -118,7 +110,7 @@ public:: true
         "label": "Real-Time Gross Settlement"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -133,10 +125,6 @@ public:: true
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:financial-cryptography",
-        "label": "Financial Cryptography"
-      },
       {
         "@id": "urn:ngm:class:message-authentication-code",
         "label": "Message Authentication Code"
@@ -160,24 +148,6 @@ public:: true
       {
         "@id": "urn:ngm:class:swift",
         "label": "SWIFT"
-      },
-      {
-        "@id": "urn:ngm:class:iso-tc68",
-        "label": "ISO TC68"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:ripple-network",
-        "label": "Ripple Network"
-      },
-      {
-        "@id": "urn:ngm:class:blockchain-payment",
-        "label": "Blockchain Payment"
-      },
-      {
-        "@id": "urn:ngm:class:fedwire",
-        "label": "Fedwire"
       }
     ],
     "bridgesTo": [
@@ -198,10 +168,6 @@ public:: true
       {
         "@id": "urn:ngm:class:financial-market-infrastructure",
         "label": "Financial Market Infrastructure"
-      },
-      {
-        "@id": "urn:ngm:class:nostro-vostro-account",
-        "label": "Nostro/Vostro Account"
       }
     ]
   },

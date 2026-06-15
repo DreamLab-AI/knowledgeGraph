@@ -38,51 +38,123 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:ethereum-virtual-machine", "label": "Ethereum Virtual Machine"},
-      {"@id": "urn:ngm:class:erc-20", "label": "ERC-20"}
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"},
-      {"@id": "urn:ngm:class:uni-governance-token", "label": "UNI Governance Token"},
-      {"@id": "urn:ngm:class:router-contract", "label": "Router Contract"},
-      {"@id": "urn:ngm:class:factory-contract", "label": "Factory Contract"}
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "UNI Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:router-contract",
+        "label": "Router Contract"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:yield-farming", "label": "Yield Farming"},
-      {"@id": "urn:ngm:class:token-swap", "label": "Token Swap"},
-      {"@id": "urn:ngm:class:permissionless-token-listing", "label": "Permissionless Token Listing"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "@id": "urn:ngm:class:token-swapping",
+        "label": "Token Swap"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
-      {"@id": "urn:ngm:class:liquidity-provider", "label": "Liquidity Provider"},
-      {"@id": "urn:ngm:class:web3-wallet", "label": "Web3 Wallet"}
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-provider",
+        "label": "Liquidity Provider"
+      },
+      {
+        "@id": "urn:ngm:class:web3-wallet",
+        "label": "Web3 Wallet"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
-      {"@id": "urn:ngm:class:price-oracle", "label": "Price Oracle"}
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:price-oracle",
+        "label": "Price Oracle"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:centralised-exchange", "label": "Centralised Exchange"},
-      {"@id": "urn:ngm:class:order-book-exchange", "label": "Order Book Exchange"}
+      {
+        "@id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:order-book-exchange",
+        "label": "Order Book Exchange"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:curve-finance", "label": "Curve Finance"},
-      {"@id": "urn:ngm:class:sushiswap", "label": "SushiSwap"},
-      {"@id": "urn:ngm:class:impermanent-loss", "label": "Impermanent Loss"},
-      {"@id": "urn:ngm:class:flash-loan", "label": "Flash Loan"},
-      {"@id": "urn:ngm:class:mev", "label": "MEV"}
+      {
+        "@id": "urn:ngm:class:curve-finance",
+        "label": "Curve Finance"
+      },
+      {
+        "@id": "urn:ngm:class:impermanent-loss",
+        "label": "Impermanent Loss"
+      },
+      {
+        "@id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      },
+      {
+        "@id": "urn:ngm:class:mev",
+        "label": "MEV"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"},
-      {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer 2 Scaling"}
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:uniswap-protocol", "label": "Uniswap Protocol"}
+    {
+      "@id": "urn:ngm:class:uniswap-protocol",
+      "label": "Uniswap Protocol"
+    }
   ],
   "quality": 0.74,
   "provenance": {

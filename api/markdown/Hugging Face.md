@@ -39,49 +39,127 @@ alias:: HuggingFace
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:transformers-library", "label": "Transformers Library"},
-      {"@id": "urn:ngm:class:diffusers-library", "label": "Diffusers Library"},
-      {"@id": "urn:ngm:class:hugging-face-hub", "label": "HuggingFace Hub"},
-      {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"}
+      {
+        "@id": "urn:ngm:class:transformers-library",
+        "label": "Transformers Library"
+      },
+      {
+        "@id": "urn:ngm:class:hugging-face-diffusers",
+        "label": "Diffusers Library"
+      },
+      {
+        "@id": "urn:ngm:class:hugging-face-hub",
+        "label": "HuggingFace Hub"
+      },
+      {
+        "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:model-sharing", "label": "Model Sharing"},
-      {"@id": "urn:ngm:class:open-source-ai", "label": "Open-Source AI"}
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:model-sharing",
+        "label": "Model Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"},
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:pytorch", "label": "PyTorch"},
-      {"@id": "urn:ngm:class:model-card", "label": "Model Card"}
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "label": "PyTorch"
+      },
+      {
+        "@id": "urn:ngm:class:ai-model-card",
+        "label": "Model Card"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:openai-api", "label": "OpenAI API"},
-      {"@id": "urn:ngm:class:google-vertex-ai", "label": "Google Vertex AI"}
+      {
+        "@id": "urn:ngm:class:openai-research-organisation-api",
+        "label": "OpenAI API"
+      },
+      {
+        "@id": "urn:ngm:class:google-vertex-ai",
+        "label": "Google Vertex AI"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bert", "label": "BERT"},
-      {"@id": "urn:ngm:class:low-rank-adaptation", "label": "Low-Rank Adaptation"},
-      {"@id": "urn:ngm:class:model-hub", "label": "Model Hub"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"}
+      {
+        "@id": "urn:ngm:class:bert",
+        "label": "BERT"
+      },
+      {
+        "@id": "urn:ngm:class:low-rank-adaptation",
+        "label": "Low-Rank Adaptation"
+      },
+      {
+        "@id": "urn:ngm:class:model-hub",
+        "label": "Model Hub"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
-      {"@id": "urn:ngm:class:edge-ai", "label": "Edge AI"}
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:hf-hub", "label": "HF Hub"}
+    {
+      "@id": "urn:ngm:class:hf-hub",
+      "label": "HF Hub"
+    }
   ],
   "quality": 0.74,
   "provenance": {

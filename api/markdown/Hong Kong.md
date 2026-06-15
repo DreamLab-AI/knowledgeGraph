@@ -67,7 +67,7 @@ public:: true
         "label": "Financial Technology"
       },
       {
-        "@id": "urn:ngm:class:cross-border-payment",
+        "@id": "urn:ngm:class:cross-border-payments",
         "label": "Cross-Border Payment"
       },
       {
@@ -77,38 +77,20 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:hong-kong-monetary-authority",
-        "label": "Hong Kong Monetary Authority"
-      },
-      {
         "@id": "urn:ngm:class:bis-innovation-hub",
         "label": "BIS Innovation Hub"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:greater-bay-area",
-        "label": "Greater Bay Area"
       }
     ],
     "requires": [
       {
         "@id": "urn:ngm:class:regulatory-framework",
         "label": "Regulatory Framework"
-      },
-      {
-        "@id": "urn:ngm:class:common-law",
-        "label": "Common Law"
       }
     ],
     "implements": [
       {
         "@id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
-      },
-      {
-        "@id": "urn:ngm:class:one-country-two-systems",
-        "label": "One Country Two Systems"
       }
     ],
     "uses": [
@@ -143,10 +125,6 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:renminbi-internationalisation",
-        "label": "Renminbi Internationalisation"
-      },
-      {
         "@id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
@@ -157,20 +135,12 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:securities-and-futures-commission",
-        "label": "Securities and Futures Commission"
-      },
-      {
         "@id": "urn:ngm:class:swift",
         "label": "SWIFT"
       },
       {
         "@id": "urn:ngm:class:correspondent-banking",
         "label": "Correspondent Banking"
-      },
-      {
-        "@id": "urn:ngm:class:financial-centre",
-        "label": "Financial Centre"
       }
     ]
   },

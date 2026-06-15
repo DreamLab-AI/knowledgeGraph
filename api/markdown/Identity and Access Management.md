@@ -38,57 +38,149 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:authorisation", "label": "Authorisation"},
-      {"@id": "urn:ngm:class:privileged-access-management", "label": "Privileged Access Management"},
-      {"@id": "urn:ngm:class:identity-governance-and-administration", "label": "Identity Governance and Administration"},
-      {"@id": "urn:ngm:class:directory-services", "label": "Directory Services"}
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "@id": "urn:ngm:class:privileged-access-management",
+        "label": "Privileged Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:directory-service",
+        "label": "Directory Services"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:oauth-2-0", "label": "OAuth 2.0"},
-      {"@id": "urn:ngm:class:openid-connect", "label": "OpenID Connect"},
-      {"@id": "urn:ngm:class:saml", "label": "SAML"},
-      {"@id": "urn:ngm:class:ldap", "label": "LDAP"},
-      {"@id": "urn:ngm:class:multi-factor-authentication", "label": "Multi-Factor Authentication"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+      {
+        "@id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "@id": "urn:ngm:class:saml",
+        "label": "SAML"
+      },
+      {
+        "@id": "urn:ngm:class:ldap",
+        "label": "LDAP"
+      },
+      {
+        "@id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
-      {"@id": "urn:ngm:class:single-sign-on", "label": "Single Sign-On"},
-      {"@id": "urn:ngm:class:least-privilege", "label": "Least Privilege"},
-      {"@id": "urn:ngm:class:audit-and-compliance", "label": "Audit and Compliance"}
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
+        "@id": "urn:ngm:class:least-privilege",
+        "label": "Least Privilege"
+      },
+      {
+        "@id": "urn:ngm:class:audit-and-compliance",
+        "label": "Audit and Compliance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:digital-certificates", "label": "Digital Certificates"}
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificates"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:role-based-access-control", "label": "Role-Based Access Control"},
-      {"@id": "urn:ngm:class:attribute-based-access-control", "label": "Attribute-Based Access Control"}
+      {
+        "@id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:attribute-based-access-control",
+        "label": "Attribute-Based Access Control"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-27001", "label": "ISO/IEC 27001"},
-      {"@id": "urn:ngm:class:nist-sp-800-53", "label": "NIST SP 800-53"},
-      {"@id": "urn:ngm:class:scim", "label": "SCIM"}
+      {
+        "@id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      },
+      {
+        "@id": "urn:ngm:class:nist-sp-800-53",
+        "label": "NIST SP 800-53"
+      },
+      {
+        "@id": "urn:ngm:class:scim",
+        "label": "SCIM"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:network-access-control", "label": "Network Access Control"},
-      {"@id": "urn:ngm:class:perimeter-security", "label": "Perimeter Security"}
+      {
+        "@id": "urn:ngm:class:network-access-control",
+        "label": "Network Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:perimeter-security",
+        "label": "Perimeter Security"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"},
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"}
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:iam", "label": "IAM"},
-    {"@id": "urn:ngm:class:identity-access-management", "label": "Identity Access Management"}
+    {
+      "@id": "urn:ngm:class:iam",
+      "label": "IAM"
+    },
+    {
+      "@id": "urn:ngm:class:identity-access-management",
+      "label": "Identity Access Management"
+    }
   ],
   "quality": 0.74,
   "provenance": {

@@ -38,52 +38,113 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:quadratic-funding", "label": "Quadratic Funding"},
-      {"@id": "urn:ngm:class:retroactive-public-goods-funding", "label": "Retroactive Public Goods Funding"},
-      {"@id": "urn:ngm:class:grants-programme", "label": "Grants Programme"},
-      {"@id": "urn:ngm:class:matching-pool", "label": "Matching Pool"}
+      {
+        "@id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
+      },
+      {
+        "@id": "urn:ngm:class:retroactive-public-goods-funding",
+        "label": "Retroactive Public Goods Funding"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:dao", "label": "DAO"},
-      {"@id": "urn:ngm:class:treasury-management", "label": "Treasury Management"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:quadratic-voting", "label": "Quadratic Voting"},
-      {"@id": "urn:ngm:class:sybil-resistance", "label": "Sybil Resistance"}
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "@id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "@id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
-      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"}
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"},
-      {"@id": "urn:ngm:class:protocol-development", "label": "Protocol Development"},
-      {"@id": "urn:ngm:class:commons-based-peer-production", "label": "Commons-Based Peer Production"}
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-development",
+        "label": "Protocol Development"
+      },
+      {
+        "@id": "urn:ngm:class:commons-based-peer-production",
+        "label": "Commons-Based Peer Production"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cryptoeconomics", "label": "Cryptoeconomics"},
-      {"@id": "urn:ngm:class:token-governance", "label": "Token Governance"}
+      {
+        "@id": "urn:ngm:class:cryptoeconomics",
+        "label": "Cryptoeconomics"
+      },
+      {
+        "@id": "urn:ngm:class:token-governance",
+        "label": "Token Governance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:venture-capital", "label": "Venture Capital"},
-      {"@id": "urn:ngm:class:rent-seeking", "label": "Rent Seeking"}
+      {
+        "@id": "urn:ngm:class:venture-capital",
+        "label": "Venture Capital"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:welfare-economics", "label": "Welfare Economics"},
-      {"@id": "urn:ngm:class:collective-action-problem", "label": "Collective Action Problem"},
-      {"@id": "urn:ngm:class:impact-certificates", "label": "Impact Certificates"}
+      {
+        "@id": "urn:ngm:class:welfare-economics",
+        "label": "Welfare Economics"
+      },
+      {
+        "@id": "urn:ngm:class:collective-action",
+        "label": "Collective Action Problem"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"},
-      {"@id": "urn:ngm:class:digital-commons", "label": "Digital Commons"}
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-commons",
+        "label": "Digital Commons"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:public-goods-finance", "label": "Public Goods Finance"},
-    {"@id": "urn:ngm:class:commons-funding", "label": "Commons Funding"}
+    {
+      "@id": "urn:ngm:class:public-goods-finance",
+      "label": "Public Goods Finance"
+    },
+    {
+      "@id": "urn:ngm:class:commons-funding",
+      "label": "Commons Funding"
+    }
   ],
   "qualityScore": 0.74,
-  "maturity": "emerging",
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",

@@ -24,56 +24,124 @@ public:: true
   "domain": "data",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:data-serialization", "label": "Data Serialization"}
+    {
+      "@id": "urn:ngm:class:data-serialization",
+      "label": "Data Serialization"
+    }
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:sparql", "label": "SPARQL"},
-      {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:n-triples", "label": "N-Triples"},
-      {"@id": "urn:ngm:class:notation3", "label": "Notation3"},
-      {"@id": "urn:ngm:class:n-quads", "label": "N-Quads"},
-      {"@id": "urn:ngm:class:trig", "label": "TriG"},
-      {"@id": "urn:ngm:class:rdf-xml", "label": "RDF/XML"}
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:n-triples",
+        "label": "N-Triples"
+      },
+      {
+        "@id": "urn:ngm:class:n-quads",
+        "label": "N-Quads"
+      },
+      {
+        "@id": "urn:ngm:class:rdf-xml",
+        "label": "RDF/XML"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:shacl", "label": "SHACL"},
-      {"@id": "urn:ngm:class:shex", "label": "ShEx"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:shacl",
+        "label": "SHACL"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:owl", "label": "OWL"},
-      {"@id": "urn:ngm:class:iri", "label": "IRI"},
-      {"@id": "urn:ngm:class:prefix-declaration", "label": "Prefix Declaration"}
+      {
+        "@id": "urn:ngm:class:owl",
+        "label": "OWL"
+      },
+      {
+        "@id": "urn:ngm:class:iri",
+        "label": "IRI"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:w3c", "label": "W3C"}
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:rdf-data-model", "label": "RDF Data Model"}
+      {
+        "@id": "urn:ngm:class:rdf-data-model",
+        "label": "RDF Data Model"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:namespace", "label": "Namespace"},
-      {"@id": "urn:ngm:class:unicode", "label": "Unicode"}
+      {
+        "@id": "urn:ngm:class:namespace",
+        "label": "Namespace"
+      },
+      {
+        "@id": "urn:ngm:class:unicode",
+        "label": "Unicode"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ontology-engineering", "label": "Ontology Engineering"},
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"},
-      {"@id": "urn:ngm:class:triple-store", "label": "Triple Store"}
+      {
+        "@id": "urn:ngm:class:ontology-engineering",
+        "label": "Ontology Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
+      },
+      {
+        "@id": "urn:ngm:class:triple-store",
+        "label": "Triple Store"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:json", "label": "JSON"},
-      {"@id": "urn:ngm:class:xml", "label": "XML"}
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format",
+        "label": "JSON"
+      },
+      {
+        "@id": "urn:ngm:class:xml",
+        "label": "XML"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:terse-rdf-triple-language", "label": "Terse RDF Triple Language"}
+    {
+      "@id": "urn:ngm:class:terse-rdf-triple-language",
+      "label": "Terse RDF Triple Language"
+    }
   ],
   "quality": 0.72,
   "provenance": {

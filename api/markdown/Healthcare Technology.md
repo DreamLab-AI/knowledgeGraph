@@ -85,10 +85,6 @@ public:: true
       {
         "@id": "urn:ngm:class:telemedicine",
         "label": "Telemedicine"
-      },
-      {
-        "@id": "urn:ngm:class:remote-patient-monitoring",
-        "label": "Remote Patient Monitoring"
       }
     ],
     "requires": [
@@ -107,7 +103,7 @@ public:: true
         "label": "Healthcare Analytics"
       },
       {
-        "@id": "urn:ngm:class:personalised-medicine",
+        "@id": "urn:ngm:class:precision-medicine",
         "label": "Personalised Medicine"
       },
       {
@@ -157,12 +153,6 @@ public:: true
         "label": "DICOM"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:traditional-medicine",
-        "label": "Traditional Medicine"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:artificial-intelligence",
@@ -191,7 +181,7 @@ public:: true
         "label": "Financial Technology"
       },
       {
-        "@id": "urn:ngm:class:wearable-devices",
+        "@id": "urn:ngm:class:wearable-device-integration",
         "label": "Wearable Devices"
       }
     ]

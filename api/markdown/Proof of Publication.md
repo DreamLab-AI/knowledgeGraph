@@ -24,36 +24,84 @@ alias:: Proof-of-Publication, Proof Of Publication
   "definition": "Proof of publication is a cryptographic guarantee that a given message has been published to, and ordered within, an append-only medium visible to all relevant parties, such that the publisher cannot later equivocate or hide it. Together with single-use seals it forms one of the two foundations of client-side validation: the publication medium (most commonly the Bitcoin blockchain, but also a Nostr relay set or other consensus system) provides ordering and non-equivocation, while seals bind specific messages to spendable objects. It is the property that lets off-chain smart-contract systems trust that a seal closure was witnessed once and only once.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:proof-of-publication-medium", "label": "Publication Medium"}
+    {
+      "@id": "urn:ngm:class:proof-of-publication-medium",
+      "label": "Publication Medium"
+    }
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:single-use-seals", "label": "Single Use Seals"},
-      {"@id": "urn:ngm:class:client-side-validation", "label": "Client-Side Validation"},
-      {"@id": "urn:ngm:class:block-trails", "label": "Block Trails"}
+      {
+        "@id": "urn:ngm:class:single-use-seals",
+        "label": "Single Use Seals"
+      },
+      {
+        "@id": "urn:ngm:class:client-side-validation",
+        "label": "Client-Side Validation"
+      },
+      {
+        "@id": "urn:ngm:class:block-trails",
+        "label": "Block Trails"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:bitcoin-network", "label": "Bitcoin Network"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:timestamping", "label": "Timestamping"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:timestamping",
+        "label": "Timestamping"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:distributed-consensus", "label": "Distributed Consensus"}
+      {
+        "@id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:nostr", "label": "Nostr"}
+      {
+        "@id": "urn:ngm:class:nostr",
+        "label": "Nostr"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"},
-      {"@id": "urn:ngm:class:data-availability", "label": "Data Availability"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:rgb-protocol", "label": "RGB Protocol"}
+      {
+        "@id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:rgb-protocol",
+        "label": "RGB Protocol"
+      }
     ]
   },
   "quality": 0.72,
-  "provenance": {"attributedTo": "did:nostr:ontology-mesh", "generatedAt": "2026-06-14T00:00:00Z", "inferenceRule": "ResearchAuthored"}
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "ResearchAuthored"
+  }
 }
 ```
 

@@ -218,10 +218,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:agent-beacon",
-        "label": "Agent Beacon"
-      },
-      {
         "@id": "urn:ngm:class:nostr-relay",
         "label": "Nostr Relay"
       },
@@ -258,7 +254,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:decentralised-agent-coordination",
+        "@id": "urn:ngm:class:decentralised-agent-coordination-initiative",
         "label": "Decentralised Agent Coordination"
       },
       {
@@ -266,21 +262,17 @@ public:: true
         "label": "Federation"
       },
       {
-        "@id": "urn:ngm:class:trustless-peer-communication",
+        "@id": "urn:ngm:class:peer-to-peer-network",
         "label": "Trustless Peer Communication"
-      },
-      {
-        "@id": "urn:ngm:class:work-distribution",
-        "label": "Work Distribution"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:gossip-consensus",
+        "@id": "urn:ngm:class:gossip-protocol",
         "label": "Gossip Consensus"
       },
       {
-        "@id": "urn:ngm:class:nostr-protocol-nip-01",
+        "@id": "urn:ngm:class:nostr-protocol",
         "label": "Nostr Protocol (NIP-01)"
       },
       {

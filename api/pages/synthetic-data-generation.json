@@ -23,7 +23,7 @@
         "label": "Statistical Modelling"
       },
       {
-        "id": "urn:ngm:class:seed-dataset",
+        "id": "urn:ngm:class:training-dataset",
         "label": "Seed Dataset"
       }
     ],
@@ -51,7 +51,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:machine-learning-infrastructure",
+        "id": "urn:ngm:class:machine-learning-discipline-infrastructure",
         "label": "Machine Learning Infrastructure"
       },
       {
@@ -62,7 +62,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:real-world-data-collection",
+        "id": "urn:ngm:class:data-collection",
         "label": "Real-World Data Collection"
       },
       {
@@ -114,10 +114,6 @@
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
-      },
-      {
-        "id": "urn:ngm:class:rare-event-modelling",
-        "label": "Rare Event Modelling"
       }
     ],
     "standardizedBy": [],

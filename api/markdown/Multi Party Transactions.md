@@ -60,14 +60,7 @@ alias:: Multi-Party Transactions
       "label": "Blockchain Transaction"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:cross-chain-trading",
-        "label": "Cross Chain Trading"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

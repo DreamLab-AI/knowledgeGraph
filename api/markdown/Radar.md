@@ -149,17 +149,13 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:ieee-802-11ad",
+        "@id": "urn:ngm:class:ieee-802-11",
         "label": "IEEE 802.11ad"
       }
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:air-traffic-control",
-        "label": "Air Traffic Control"
-      },
-      {
-        "@id": "urn:ngm:class:weather-sensing",
+        "@id": "urn:ngm:class:environmental-sensing",
         "label": "Weather Sensing"
       }
     ],

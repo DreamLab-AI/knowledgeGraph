@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       },
       {
@@ -36,12 +36,8 @@
         "label": "Training Data"
       },
       {
-        "id": "urn:ngm:class:neural-networks",
+        "id": "urn:ngm:class:neural-network",
         "label": "Neural Networks"
-      },
-      {
-        "id": "urn:ngm:class:python-and-py-torch",
-        "label": "Python and PyTorch"
       }
     ],
     "enables": [
@@ -117,7 +113,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:multimodal",
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal"
       },
       {

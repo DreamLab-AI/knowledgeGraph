@@ -38,50 +38,123 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"},
-      {"@id": "urn:ngm:class:triple-store", "label": "Triple Store"},
-      {"@id": "urn:ngm:class:production-rules", "label": "Production Rules"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "@id": "urn:ngm:class:triple-store",
+        "label": "Triple Store"
+      },
+      {
+        "@id": "urn:ngm:class:production-rules",
+        "label": "Production Rules"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:description-logic", "label": "Description Logic"},
-      {"@id": "urn:ngm:class:sparql", "label": "SPARQL"},
-      {"@id": "urn:ngm:class:rdf", "label": "RDF"}
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
+      },
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:automated-reasoning", "label": "Automated Reasoning"},
-      {"@id": "urn:ngm:class:expert-systems", "label": "Expert Systems"}
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:expert-systems",
+        "label": "Expert Systems"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:knowledge-acquisition", "label": "Knowledge Acquisition"},
-      {"@id": "urn:ngm:class:data-schema", "label": "Data Schema"}
+      {
+        "@id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:data-model", "label": "Data Model"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:data-model",
+        "label": "Data Model"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:database", "label": "Database"},
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"}
+      {
+        "@id": "urn:ngm:class:database",
+        "label": "Database"
+      },
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-knowledge-graph", "label": "Decentralised Knowledge Graph"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:knowledge-repository", "label": "Knowledge Repository"},
-    {"@id": "urn:ngm:class:knowledge-store", "label": "Knowledge Store"}
+    {
+      "@id": "urn:ngm:class:knowledge-repository",
+      "label": "Knowledge Repository"
+    },
+    {
+      "@id": "urn:ngm:class:knowledge-store",
+      "label": "Knowledge Store"
+    }
   ],
   "quality": 0.74,
   "provenance": {

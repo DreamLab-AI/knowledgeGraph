@@ -370,28 +370,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:4-d-gaussian-splatting",
+        "@id": "urn:ngm:class:gaussian-splatting",
         "label": "4D Gaussian Splatting"
       },
       {
-        "@id": "urn:ngm:class:blender-3d-creation-suite-geometry-nodes",
+        "@id": "urn:ngm:class:blender-3d-creation-suite",
         "label": "Blender Geometry Nodes"
-      },
-      {
-        "@id": "urn:ngm:class:cascadeur",
-        "label": "Cascadeur"
-      },
-      {
-        "@id": "urn:ngm:class:ember-gen",
-        "label": "EmberGen"
-      },
-      {
-        "@id": "urn:ngm:class:houdini-side-fx",
-        "label": "Houdini SideFX"
-      },
-      {
-        "@id": "urn:ngm:class:infinigen",
-        "label": "Infinigen"
       },
       {
         "@id": "urn:ngm:class:ne-rf",
@@ -402,16 +386,8 @@ public:: true
         "label": "OpenUSD"
       },
       {
-        "@id": "urn:ngm:class:sdf-hybrid-models",
-        "label": "SDF Hybrid Models"
-      },
-      {
-        "@id": "urn:ngm:class:unreal-pcg",
+        "@id": "urn:ngm:class:unreal-engine",
         "label": "Unreal PCG"
-      },
-      {
-        "@id": "urn:ngm:class:wonder-studio",
-        "label": "Wonder Studio"
       }
     ],
     "requires": [
@@ -424,16 +400,8 @@ public:: true
         "label": "GPU Compute"
       },
       {
-        "@id": "urn:ngm:class:physics-solver",
-        "label": "Physics Solver"
-      },
-      {
         "@id": "urn:ngm:class:shader-pipeline",
         "label": "Shader Pipeline"
-      },
-      {
-        "@id": "urn:ngm:class:temporal-sampling",
-        "label": "Temporal Sampling"
       },
       {
         "@id": "urn:ngm:class:neural-network",
@@ -446,24 +414,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:4-d-content-creation",
-        "label": "4D Content Creation"
-      },
-      {
-        "@id": "urn:ngm:class:ai-animation",
-        "label": "AI Animation"
-      },
-      {
-        "@id": "urn:ngm:class:dynamic-scene-reconstruction",
-        "label": "Dynamic Scene Reconstruction"
-      },
-      {
         "@id": "urn:ngm:class:photorealistic-synthesis",
         "label": "Photorealistic Synthesis"
-      },
-      {
-        "@id": "urn:ngm:class:procedural-world-building",
-        "label": "Procedural World Building"
       },
       {
         "@id": "urn:ngm:class:real-time-vfx",
@@ -475,26 +427,6 @@ public:: true
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:deformation-field",
-        "label": "Deformation Field"
-      },
-      {
-        "@id": "urn:ngm:class:flip-solver",
-        "label": "FLIP Solver"
-      },
-      {
-        "@id": "urn:ngm:class:hydra-rendering",
-        "label": "Hydra Rendering"
-      },
-      {
-        "@id": "urn:ngm:class:karman-vortex-simulation",
-        "label": "Karman Vortex Simulation"
-      },
-      {
-        "@id": "urn:ngm:class:material-point-method",
-        "label": "Material Point Method"
-      },
       {
         "@id": "urn:ngm:class:signed-distance-function",
         "label": "Signed Distance Function"
@@ -512,18 +444,6 @@ public:: true
       {
         "@id": "urn:ngm:class:diffusion-model",
         "label": "Diffusion Model"
-      },
-      {
-        "@id": "urn:ngm:class:geometry-nodes-graph",
-        "label": "Geometry Nodes Graph"
-      },
-      {
-        "@id": "urn:ngm:class:neural-mlp",
-        "label": "Neural MLP"
-      },
-      {
-        "@id": "urn:ngm:class:pcg-graph",
-        "label": "PCG Graph"
       },
       {
         "@id": "urn:ngm:class:usd-pipeline",
@@ -566,11 +486,11 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:computer-vision-training-data",
+        "@id": "urn:ngm:class:training-data",
         "label": "Computer Vision Training Data"
       },
       {
-        "@id": "urn:ngm:class:film-vfx-production",
+        "@id": "urn:ngm:class:film-vfx",
         "label": "Film VFX Production"
       },
       {
@@ -600,7 +520,7 @@ public:: true
         "label": "Khronos Group"
       },
       {
-        "@id": "urn:ngm:class:open-usd-alliance",
+        "@id": "urn:ngm:class:open-usd",
         "label": "OpenUSD Alliance"
       },
       {

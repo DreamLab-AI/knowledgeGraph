@@ -63,11 +63,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:curve-dao-token",
-        "label": "Curve DAO Token"
-      },
-      {
-        "@id": "urn:ngm:class:vote-escrow-mechanism",
+        "@id": "urn:ngm:class:vote-escrow",
         "label": "Vote-Escrow Mechanism"
       },
       {
@@ -115,10 +111,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:stablecoin-swap",
-        "label": "Stablecoin Swap"
-      },
-      {
         "@id": "urn:ngm:class:yield-farming",
         "label": "Yield Farming"
       },
@@ -159,14 +151,6 @@ public:: true
       {
         "@id": "urn:ngm:class:convex-finance",
         "label": "Convex Finance"
-      },
-      {
-        "@id": "urn:ngm:class:defi-composability",
-        "label": "DeFi Composability"
-      },
-      {
-        "@id": "urn:ngm:class:token-incentive-design",
-        "label": "Token Incentive Design"
       }
     ],
     "bridgesTo": [

@@ -87,10 +87,6 @@ public:: true
       {
         "@id": "urn:ngm:class:cooperative-game-theory",
         "label": "Cooperative Game Theory"
-      },
-      {
-        "@id": "urn:ngm:class:baseline-expectation",
-        "label": "Baseline Expectation"
       }
     ],
     "enables": [
@@ -103,7 +99,7 @@ public:: true
         "label": "Feature Attribution"
       },
       {
-        "@id": "urn:ngm:class:algorithmic-bias-auditing",
+        "@id": "urn:ngm:class:algorithmic-auditing",
         "label": "Algorithmic Bias Auditing"
       },
       {
@@ -111,19 +107,11 @@ public:: true
         "label": "Model Debugging"
       },
       {
-        "@id": "urn:ngm:class:global-feature-importance",
+        "@id": "urn:ngm:class:feature-importance",
         "label": "Global Feature Importance"
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:tree-ensemble",
-        "label": "Tree Ensemble"
-      },
-      {
-        "@id": "urn:ngm:class:kernel-shap",
-        "label": "Kernel SHAP"
-      },
       {
         "@id": "urn:ngm:class:deep-neural-network",
         "label": "Deep Neural Network"
@@ -139,22 +127,14 @@ public:: true
         "label": "Integrated Gradients"
       },
       {
-        "@id": "urn:ngm:class:permutation-feature-importance",
+        "@id": "urn:ngm:class:feature-importance",
         "label": "Permutation Feature Importance"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:additive-feature-attribution",
+        "@id": "urn:ngm:class:feature-attribution",
         "label": "Additive Feature Attribution"
-      },
-      {
-        "@id": "urn:ngm:class:local-accuracy-property",
-        "label": "Local Accuracy Property"
-      },
-      {
-        "@id": "urn:ngm:class:consistency-property",
-        "label": "Consistency Property"
       }
     ],
     "supports": [
@@ -163,7 +143,7 @@ public:: true
         "label": "Responsible AI"
       },
       {
-        "@id": "urn:ngm:class:regulatory-ai-compliance",
+        "@id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory AI Compliance"
       },
       {

@@ -48,49 +48,117 @@ alias:: Quantum-Computing, QuantumComputing
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:qubit", "label": "Qubit"},
-      {"@id": "urn:ngm:class:quantum-gate", "label": "Quantum Gate"},
-      {"@id": "urn:ngm:class:quantum-error-correction", "label": "Quantum Error Correction"},
-      {"@id": "urn:ngm:class:quantum-circuit", "label": "Quantum Circuit"}
+      {
+        "@id": "urn:ngm:class:qubit",
+        "label": "Qubit"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-gate",
+        "label": "Quantum Gate"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-error-correction",
+        "label": "Quantum Error Correction"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-circuit",
+        "label": "Quantum Circuit"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:quantum-error-correction", "label": "Quantum Error Correction"},
-      {"@id": "urn:ngm:class:cryogenic-control-systems", "label": "Cryogenic Control Systems"}
+      {
+        "@id": "urn:ngm:class:quantum-error-correction",
+        "label": "Quantum Error Correction"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
-      {"@id": "urn:ngm:class:quantum-key-distribution", "label": "Quantum Key Distribution"},
-      {"@id": "urn:ngm:class:combinatorial-optimisation", "label": "Combinatorial Optimisation"},
-      {"@id": "urn:ngm:class:molecular-simulation", "label": "Molecular Simulation"}
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-key-distribution",
+        "label": "Quantum Key Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:combinatorial-optimisation",
+        "label": "Combinatorial Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-simulation",
+        "label": "Molecular Simulation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:classical-computing", "label": "Classical Computing"}
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:classical-computing",
+        "label": "Classical Computing"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:quantum-mechanics", "label": "Quantum Mechanics"},
-      {"@id": "urn:ngm:class:superconductivity", "label": "Superconductivity"}
+      {
+        "@id": "urn:ngm:class:quantum-mechanics",
+        "label": "Quantum Mechanics"
+      },
+      {
+        "@id": "urn:ngm:class:superconductivity",
+        "label": "Superconductivity"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:shors-algorithm", "label": "Shor's Algorithm"},
-      {"@id": "urn:ngm:class:grovers-algorithm", "label": "Grover's Algorithm"}
+      {
+        "@id": "urn:ngm:class:shors-algorithm",
+        "label": "Shor's Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:grovers-algorithm",
+        "label": "Grover's Algorithm"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"},
-      {"@id": "urn:ngm:class:quantum-machine-learning", "label": "Quantum Machine Learning"}
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-machine-learning",
+        "label": "Quantum Machine Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:quantum-computing", "label": "Quantum Computing"}
+    {
+      "@id": "urn:ngm:class:quantum-computing",
+      "label": "Quantum Computing"
+    }
   ],
   "quality": 0.72,
   "provenance": {

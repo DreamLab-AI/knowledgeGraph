@@ -38,50 +38,109 @@ public:: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
-      {"@id": "urn:ngm:class:delegative-democracy", "label": "Delegative Democracy"},
-      {"@id": "urn:ngm:class:participatory-governance", "label": "Participatory Governance"}
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:delegate-democracy",
+        "label": "Delegative Democracy"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:voting-mechanism", "label": "Voting Mechanism"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:delegation-graph", "label": "Delegation Graph"}
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"},
-      {"@id": "urn:ngm:class:sybil-resistance", "label": "Sybil Resistance"},
-      {"@id": "urn:ngm:class:vote-checkpointing", "label": "Vote Checkpointing"}
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:quadratic-voting", "label": "Quadratic Voting"},
-      {"@id": "urn:ngm:class:conviction-voting", "label": "Conviction Voting"},
-      {"@id": "urn:ngm:class:representative-democracy", "label": "Representative Democracy"},
-      {"@id": "urn:ngm:class:direct-democracy", "label": "Direct Democracy"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:transitive-delegation", "label": "Transitive Delegation"},
-      {"@id": "urn:ngm:class:vote-weight-aggregation", "label": "Vote Weight Aggregation"}
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "@id": "urn:ngm:class:conviction-voting",
+        "label": "Conviction Voting"
+      },
+      {
+        "@id": "urn:ngm:class:representative-democracy",
+        "label": "Representative Democracy"
+      },
+      {
+        "@id": "urn:ngm:class:direct-democracy",
+        "label": "Direct Democracy"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:erc-20-votes", "label": "ERC-20 Votes"},
-      {"@id": "urn:ngm:class:token-weighted-voting", "label": "Token-Weighted Voting"}
+      {
+        "@id": "urn:ngm:class:erc-20-votes",
+        "label": "ERC-20 Votes"
+      },
+      {
+        "@id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"},
-      {"@id": "urn:ngm:class:snapshot-governance", "label": "Snapshot Governance"},
-      {"@id": "urn:ngm:class:futarchy", "label": "Futarchy"},
-      {"@id": "urn:ngm:class:holographic-consensus", "label": "Holographic Consensus"}
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:snapshot-governance",
+        "label": "Snapshot Governance"
+      },
+      {
+        "@id": "urn:ngm:class:futarchy",
+        "label": "Futarchy"
+      },
+      {
+        "@id": "urn:ngm:class:holographic-consensus",
+        "label": "Holographic Consensus"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:collective-intelligence", "label": "Collective Intelligence"},
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"}
+      {
+        "@id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:delegative-democracy", "label": "Delegative Democracy"},
-    {"@id": "urn:ngm:class:proxy-voting", "label": "Proxy Voting"}
+    {
+      "@id": "urn:ngm:class:delegative-democracy",
+      "label": "Delegative Democracy"
+    },
+    {
+      "@id": "urn:ngm:class:proxy-voting",
+      "label": "Proxy Voting"
+    }
   ],
   "quality": 0.74,
   "provenance": {

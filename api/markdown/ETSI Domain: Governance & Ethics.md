@@ -108,15 +108,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:ethics-committee",
-        "label": "Ethics Committee"
-      },
-      {
         "@id": "urn:ngm:class:stakeholder-engagement",
         "label": "Stakeholder Engagement"
       },
       {
-        "@id": "urn:ngm:class:value-framework",
+        "@id": "urn:ngm:class:value",
         "label": "Value Framework"
       },
       {
@@ -140,12 +136,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:ethical-decision-making",
+        "@id": "urn:ngm:class:decision-making",
         "label": "Ethical Decision-Making"
-      },
-      {
-        "@id": "urn:ngm:class:stakeholder-accountability",
-        "label": "Stakeholder Accountability"
       },
       {
         "@id": "urn:ngm:class:value-alignment",

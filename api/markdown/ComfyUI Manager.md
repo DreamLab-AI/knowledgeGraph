@@ -38,52 +38,93 @@ public:: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:comfy-ui", "label": "ComfyUI"},
-      {"@id": "urn:ngm:class:generative-ai-tooling", "label": "Generative AI Tooling"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:custom-node-registry", "label": "Custom Node Registry"},
-      {"@id": "urn:ngm:class:missing-node-detection", "label": "Missing Node Detection"},
-      {"@id": "urn:ngm:class:model-downloader", "label": "Model Downloader"}
+      {
+        "@id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "@id": "urn:ngm:class:open-generative-ai-tools",
+        "label": "Generative AI Tooling"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:comfy-ui", "label": "ComfyUI"},
-      {"@id": "urn:ngm:class:python-package-management", "label": "Python Package Management"},
-      {"@id": "urn:ngm:class:git", "label": "Git"}
-    ],
-    "enables": [
-      {"@id": "urn:ngm:class:workflow-portability", "label": "Workflow Portability"},
-      {"@id": "urn:ngm:class:reproducible-ml-pipelines", "label": "Reproducible ML Pipelines"},
-      {"@id": "urn:ngm:class:community-extension-ecosystem", "label": "Community Extension Ecosystem"}
+      {
+        "@id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "@id": "urn:ngm:class:git",
+        "label": "Git"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:diffusion-models", "label": "Diffusion Models"},
-      {"@id": "urn:ngm:class:python", "label": "Python"},
-      {"@id": "urn:ngm:class:hugging-face", "label": "Hugging Face"}
+      {
+        "@id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "@id": "urn:ngm:class:python",
+        "label": "Python"
+      },
+      {
+        "@id": "urn:ngm:class:hugging-face",
+        "label": "Hugging Face"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:video-generation", "label": "Video Generation"},
-      {"@id": "urn:ngm:class:control-net", "label": "ControlNet"},
-      {"@id": "urn:ngm:class:lora", "label": "LoRA"}
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "@id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      },
+      {
+        "@id": "urn:ngm:class:lora",
+        "label": "LoRA"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:node-based-programming", "label": "Node-Based Programming"},
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"},
-      {"@id": "urn:ngm:class:civit-ai", "label": "CivitAI"}
+      {
+        "@id": "urn:ngm:class:node-graph-visual-programming-interface",
+        "label": "Node-Based Programming"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:automatic1111-stable-diffusion-webui", "label": "AUTOMATIC1111 Stable Diffusion WebUI"},
-      {"@id": "urn:ngm:class:pip", "label": "pip"}
+      {
+        "@id": "urn:ngm:class:automatic1111",
+        "label": "AUTOMATIC1111 Stable Diffusion WebUI"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:stable-diffusion", "label": "Stable Diffusion"},
-      {"@id": "urn:ngm:class:ip-adapter", "label": "IP-Adapter"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
+        "label": "Stable Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:ip-adapter",
+        "label": "IP-Adapter"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:comfyui-manager-extension", "label": "ComfyUI Manager Extension"}
+    {
+      "@id": "urn:ngm:class:comfyui-manager-extension",
+      "label": "ComfyUI Manager Extension"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -447,7 +447,7 @@ alias:: RenderingPipeline
         "label": "Depth Buffer"
       },
       {
-        "@id": "urn:ngm:class:fragment-shader",
+        "@id": "urn:ngm:class:pixel-shader",
         "label": "Fragment Shader"
       },
       {
@@ -457,26 +457,6 @@ alias:: RenderingPipeline
       {
         "@id": "urn:ngm:class:geometry-shader",
         "label": "Geometry Shader"
-      },
-      {
-        "@id": "urn:ngm:class:mesh-shader",
-        "label": "Mesh Shader"
-      },
-      {
-        "@id": "urn:ngm:class:rasteriser",
-        "label": "Rasteriser"
-      },
-      {
-        "@id": "urn:ngm:class:ray-tracing-stage",
-        "label": "Ray Tracing Stage"
-      },
-      {
-        "@id": "urn:ngm:class:tessellation-stage",
-        "label": "Tessellation Stage"
-      },
-      {
-        "@id": "urn:ngm:class:visibility-buffer",
-        "label": "Visibility Buffer"
       },
       {
         "@id": "urn:ngm:class:compute-shader",
@@ -507,10 +487,6 @@ alias:: RenderingPipeline
       {
         "@id": "urn:ngm:class:shader-compilation",
         "label": "Shader Compilation"
-      },
-      {
-        "@id": "urn:ngm:class:texture-sampler",
-        "label": "Texture Sampler"
       },
       {
         "@id": "urn:ngm:class:vertex-buffer",
@@ -565,10 +541,6 @@ alias:: RenderingPipeline
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:clustered-shading",
-        "label": "Clustered Shading"
-      },
-      {
         "@id": "urn:ngm:class:deferred-rendering",
         "label": "Deferred Rendering"
       },
@@ -579,32 +551,12 @@ alias:: RenderingPipeline
       {
         "@id": "urn:ngm:class:gpu-driven-rendering",
         "label": "GPU-Driven Rendering"
-      },
-      {
-        "@id": "urn:ngm:class:hybrid-ray-tracing",
-        "label": "Hybrid Ray Tracing"
-      },
-      {
-        "@id": "urn:ngm:class:mesh-shader-pipeline",
-        "label": "Mesh Shader Pipeline"
-      },
-      {
-        "@id": "urn:ngm:class:visibility-buffer-rendering",
-        "label": "Visibility Buffer Rendering"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:direct-x-12",
-        "label": "DirectX 12"
-      },
-      {
         "@id": "urn:ngm:class:dlss",
         "label": "DLSS"
-      },
-      {
-        "@id": "urn:ngm:class:fsr",
-        "label": "FSR"
       },
       {
         "@id": "urn:ngm:class:glsl",
@@ -691,7 +643,7 @@ alias:: RenderingPipeline
         "label": "Architectural Visualisation"
       },
       {
-        "@id": "urn:ngm:class:film-visual-effects",
+        "@id": "urn:ngm:class:visual-effects",
         "label": "Film Visual Effects"
       },
       {
@@ -703,7 +655,7 @@ alias:: RenderingPipeline
         "label": "Scientific Visualisation"
       },
       {
-        "@id": "urn:ngm:class:video-game-development",
+        "@id": "urn:ngm:class:game-development",
         "label": "Video Game Development"
       },
       {
@@ -717,10 +669,6 @@ alias:: RenderingPipeline
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:apple-inc-technology-corporation-metal",
-        "label": "Apple Metal"
-      },
-      {
         "@id": "urn:ngm:class:ieee-754",
         "label": "IEEE 754"
       },
@@ -729,16 +677,8 @@ alias:: RenderingPipeline
         "label": "Khronos Group"
       },
       {
-        "@id": "urn:ngm:class:microsoft-direct-x",
-        "label": "Microsoft DirectX"
-      },
-      {
-        "@id": "urn:ngm:class:open-gl-arb",
+        "@id": "urn:ngm:class:open-gl",
         "label": "OpenGL ARB"
-      },
-      {
-        "@id": "urn:ngm:class:w3-c-web-gpu",
-        "label": "W3C WebGPU"
       }
     ],
     "bridgesTo": [

@@ -85,10 +85,6 @@ alias:: BC-0013-smart-contracts, BC-0142-smart-contract, SmartContracts, smart-c
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:contract-abi",
-        "label": "Contract ABI"
-      },
-      {
         "@id": "urn:ngm:class:gas-mechanism",
         "label": "Gas Mechanism"
       }
@@ -131,7 +127,7 @@ alias:: BC-0013-smart-contracts, BC-0142-smart-contract, SmartContracts, smart-c
         "label": "Tokenization"
       },
       {
-        "@id": "urn:ngm:class:decentralized-autonomous-organisation",
+        "@id": "urn:ngm:class:decentralized-autonomous-organization",
         "label": "Decentralized Autonomous Organisation"
       },
       {
@@ -145,13 +141,13 @@ alias:: BC-0013-smart-contracts, BC-0142-smart-contract, SmartContracts, smart-c
         "label": "Ethereum"
       },
       {
-        "@id": "urn:ngm:class:ethereum-virtual-machine",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:erc-token-standard",
+        "@id": "urn:ngm:class:token-standard",
         "label": "ERC Token Standard"
       }
     ],
@@ -177,12 +173,6 @@ alias:: BC-0013-smart-contracts, BC-0142-smart-contract, SmartContracts, smart-c
       {
         "@id": "urn:ngm:class:parametric-insurance",
         "label": "Parametric Insurance"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:traditional-legal-contract",
-        "label": "Traditional Legal Contract"
       }
     ],
     "bridgesTo": [

@@ -177,14 +177,6 @@ public:: true
       {
         "@id": "urn:ngm:class:invoice",
         "label": "Invoice"
-      },
-      {
-        "@id": "urn:ngm:class:node-announcement",
-        "label": "Node Announcement"
-      },
-      {
-        "@id": "urn:ngm:class:channel-update",
-        "label": "Channel Update"
       }
     ]
   },

@@ -44,7 +44,7 @@
         "label": "IP Addressing"
       },
       {
-        "id": "urn:ngm:class:routing",
+        "id": "urn:ngm:class:routing-protocol",
         "label": "Routing"
       }
     ],
@@ -66,28 +66,15 @@
       {
         "id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:transmission-medium",
-        "label": "Transmission Medium"
       }
     ],
     "implements": [
       {
         "id": "urn:ngm:class:osi-model",
         "label": "OSI Model"
-      },
-      {
-        "id": "urn:ngm:class:tcp-ip-suite",
-        "label": "TCP/IP Suite"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:circuit-switching",
-        "label": "Circuit Switching"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:edge-computing",

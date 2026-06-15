@@ -66,10 +66,6 @@
       {
         "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Fusion"
-      },
-      {
-        "id": "urn:ngm:class:spatial-registration",
-        "label": "Spatial Registration"
       }
     ],
     "implements": [],
@@ -83,16 +79,7 @@
         "label": "Voxel Grid"
       }
     ],
-    "bridgesTo": [
-      {
-        "id": "urn:ngm:class:pointnet",
-        "label": "PointNet"
-      },
-      {
-        "id": "urn:ngm:class:3-d-object-segmentation",
-        "label": "3D Object Segmentation"
-      }
-    ],
+    "bridgesTo": [],
     "uses": [
       {
         "id": "urn:ngm:class:photogrammetry",
@@ -121,16 +108,7 @@
         "label": "Robotics Perception"
       }
     ],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:las-format",
-        "label": "LAS Format"
-      },
-      {
-        "id": "urn:ngm:class:e57-format",
-        "label": "E57 Format"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [
       {
         "id": "urn:ngm:class:3-d-scene-representation",

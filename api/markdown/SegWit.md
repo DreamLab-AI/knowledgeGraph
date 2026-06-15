@@ -69,7 +69,7 @@ public:: true
         "label": "Bitcoin Protocol"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-improvement-proposal",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
         "label": "Bitcoin Improvement Proposal"
       }
     ],
@@ -77,19 +77,11 @@ public:: true
       {
         "@id": "urn:ngm:class:witness-data",
         "label": "Witness Data"
-      },
-      {
-        "@id": "urn:ngm:class:witness-discount",
-        "label": "Witness Discount"
-      },
-      {
-        "@id": "urn:ngm:class:block-weight",
-        "label": "Block Weight"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:bitcoin-script",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
         "label": "Bitcoin Script"
       },
       {
@@ -111,13 +103,13 @@ public:: true
         "label": "Payment Channel"
       },
       {
-        "@id": "urn:ngm:class:cross-chain-atomic-swap",
+        "@id": "urn:ngm:class:atomic-swap",
         "label": "Cross-Chain Atomic Swap"
       }
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:bitcoin-proof-of-work",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin Proof-of-Work"
       },
       {
@@ -125,25 +117,7 @@ public:: true
         "label": "Unspent Transaction Output"
       }
     ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:bip141",
-        "label": "BIP141"
-      },
-      {
-        "@id": "urn:ngm:class:bip143",
-        "label": "BIP143"
-      },
-      {
-        "@id": "urn:ngm:class:bip144",
-        "label": "BIP144"
-      }
-    ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:transaction-malleability-fix",
-        "label": "Transaction Malleability Fix"
-      },
       {
         "@id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Tree"
@@ -153,29 +127,19 @@ public:: true
         "label": "Elliptic Curve Digital Signature Algorithm"
       }
     ],
-    "supports": [
-      {
-        "@id": "urn:ngm:class:bitcoin-scalability",
-        "label": "Bitcoin Scalability"
-      },
-      {
-        "@id": "urn:ngm:class:on-chain-throughput",
-        "label": "On-Chain Throughput"
-      }
-    ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:bitcoin-core",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
         "label": "Bitcoin Core"
       }
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:block-size-increase",
+        "@id": "urn:ngm:class:block-size",
         "label": "Block Size Increase"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-cash",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-cash",
         "label": "Bitcoin Cash"
       }
     ],

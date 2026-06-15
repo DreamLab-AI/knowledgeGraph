@@ -36,7 +36,7 @@
         "label": "Feedback Control"
       },
       {
-        "id": "urn:ngm:class:motion-controller",
+        "id": "urn:ngm:class:motion-control",
         "label": "Motion Controller"
       },
       {
@@ -78,12 +78,7 @@
         "label": "Robot Actuator"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:passive-mechanisms",
-        "label": "Passive Mechanisms"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:extended-reality",
@@ -98,10 +93,6 @@
       {
         "id": "urn:ngm:class:ethercat",
         "label": "EtherCAT"
-      },
-      {
-        "id": "urn:ngm:class:canopen",
-        "label": "CANopen"
       },
       {
         "id": "urn:ngm:class:robot-operating-system",

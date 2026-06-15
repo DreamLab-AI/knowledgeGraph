@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:provenance-record",
+        "id": "urn:ngm:class:provenance",
         "label": "Provenance Record"
       },
       {
@@ -112,7 +112,7 @@
         "label": "Food Safety"
       },
       {
-        "id": "urn:ngm:class:pharmaceutical-verification",
+        "id": "urn:ngm:class:pharmaceutical-traceability",
         "label": "Pharmaceutical Verification"
       }
     ],

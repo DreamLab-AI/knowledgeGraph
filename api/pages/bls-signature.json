@@ -17,16 +17,7 @@
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [
-      {
-        "id": "urn:ngm:class:pairing-friendly-elliptic-curve",
-        "label": "Pairing-Friendly Elliptic Curve"
-      },
-      {
-        "id": "urn:ngm:class:proof-of-possession",
-        "label": "Proof of Possession"
-      }
-    ],
+    "requires": [],
     "enables": [
       {
         "id": "urn:ngm:class:threshold-signature-scheme",
@@ -87,7 +78,7 @@
         "label": "Elliptic Curve Cryptography"
       },
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public-Key Cryptography"
       },
       {
@@ -125,7 +116,7 @@
         "label": "Multi-Party Computation"
       },
       {
-        "id": "urn:ngm:class:snark",
+        "id": "urn:ngm:class:zk-snark",
         "label": "SNARK"
       }
     ]

@@ -24,51 +24,123 @@ alias:: Bulletproofs+
   "definition": "Bulletproofs are a class of short, non-interactive zero-knowledge proof system that enables efficient range proofs and arbitrary arithmetic circuit satisfiability without a trusted setup. Based on the discrete logarithm assumption over elliptic curves, they produce logarithmically-sized proofs that can be aggregated and batched, making them particularly well-suited to confidential transaction systems in public blockchains where proof size and verification cost are critical constraints.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
-      {"@id": "urn:ngm:class:commitment-scheme", "label": "Commitment Scheme"},
-      {"@id": "urn:ngm:class:schnorr-signature", "label": "Schnorr Signature"},
-      {"@id": "urn:ngm:class:fiat-shamir-transform", "label": "Fiat-Shamir Transform"},
-      {"@id": "urn:ngm:class:pedersen-commitment", "label": "Pedersen Commitment"},
-      {"@id": "urn:ngm:class:inner-product-argument", "label": "Inner Product Argument"}
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:commitment-scheme",
+        "label": "Commitment Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "@id": "urn:ngm:class:fiat-shamir-transform",
+        "label": "Fiat-Shamir Transform"
+      },
+      {
+        "@id": "urn:ngm:class:pedersen-commitment",
+        "label": "Pedersen Commitment"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:confidential-transactions", "label": "Confidential Transactions"},
-      {"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"},
-      {"@id": "urn:ngm:class:range-proof", "label": "Range Proof"},
-      {"@id": "urn:ngm:class:batch-verification", "label": "Batch Verification"},
-      {"@id": "urn:ngm:class:privacy-preserving-computation", "label": "Privacy-Preserving Computation"}
+      {
+        "@id": "urn:ngm:class:confidential-transactions",
+        "label": "Confidential Transactions"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "@id": "urn:ngm:class:range-proof",
+        "label": "Range Proof"
+      },
+      {
+        "@id": "urn:ngm:class:batch-verification",
+        "label": "Batch Verification"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:non-interactive-proof", "label": "Non-Interactive Proof"},
-      {"@id": "urn:ngm:class:arithmetic-circuit-satisfiability", "label": "Arithmetic Circuit Satisfiability"}
+      {
+        "@id": "urn:ngm:class:non-interactive-proof",
+        "label": "Non-Interactive Proof"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:discrete-logarithm-assumption", "label": "Discrete Logarithm Assumption"}
+      {
+        "@id": "urn:ngm:class:computational-hardness-assumption",
+        "label": "Discrete Logarithm Assumption"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:zk-snark", "label": "zk-SNARK"},
-      {"@id": "urn:ngm:class:zk-stark", "label": "zk-STARK"},
-      {"@id": "urn:ngm:class:groth16", "label": "Groth16"}
+      {
+        "@id": "urn:ngm:class:zk-snark",
+        "label": "zk-SNARK"
+      },
+      {
+        "@id": "urn:ngm:class:zk-starks",
+        "label": "zk-STARK"
+      },
+      {
+        "@id": "urn:ngm:class:groth16",
+        "label": "Groth16"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:monero", "label": "Monero"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:monero",
+        "label": "Monero"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:privacy-preserving-blockchain", "label": "Privacy Preserving Blockchain"},
-      {"@id": "urn:ngm:class:multi-party-computation", "label": "Multi-Party Computation"},
-      {"@id": "urn:ngm:class:proof-aggregation", "label": "Proof Aggregation"}
+      {
+        "@id": "urn:ngm:class:privacy-preserving-blockchain",
+        "label": "Privacy Preserving Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "@id": "urn:ngm:class:proof-aggregation",
+        "label": "Proof Aggregation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:security", "label": "Security"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:bulletproofs-plus", "label": "Bulletproofs+"}
+    {
+      "@id": "urn:ngm:class:bulletproofs-plus",
+      "label": "Bulletproofs+"
+    }
   ],
   "quality": 0.8,
   "provenance": {

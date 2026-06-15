@@ -138,23 +138,7 @@ public:: true
         "label": "Camera Tracking System"
       },
       {
-        "@id": "urn:ngm:class:display-processor",
-        "label": "Display Processor"
-      },
-      {
-        "@id": "urn:ngm:class:led-wall",
-        "label": "LED Wall"
-      },
-      {
-        "@id": "urn:ngm:class:lighting-rig",
-        "label": "Lighting Rig"
-      },
-      {
-        "@id": "urn:ngm:class:physical-stage",
-        "label": "Physical Stage"
-      },
-      {
-        "@id": "urn:ngm:class:rendering-cluster",
+        "@id": "urn:ngm:class:rendering-pipeline",
         "label": "Rendering Cluster"
       }
     ],
@@ -162,10 +146,6 @@ public:: true
       {
         "@id": "urn:ngm:class:camera-tracking",
         "label": "Camera Tracking"
-      },
-      {
-        "@id": "urn:ngm:class:color-management-system",
-        "label": "Color Management System"
       },
       {
         "@id": "urn:ngm:class:real-time-rendering-engine",
@@ -186,7 +166,7 @@ public:: true
         "label": "Interactive Filmmaking"
       },
       {
-        "@id": "urn:ngm:class:real-time-background-rendering",
+        "@id": "urn:ngm:class:real-time-rendering",
         "label": "Real-time Background Rendering"
       },
       {
@@ -196,7 +176,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:film-production-studio",
+        "@id": "urn:ngm:class:film-production",
         "label": "Film Production Studio"
       },
       {

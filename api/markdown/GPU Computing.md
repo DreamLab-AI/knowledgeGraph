@@ -24,50 +24,130 @@ public:: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"}
+    {
+      "@id": "urn:ngm:class:hardware-acceleration",
+      "label": "Hardware Acceleration"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:cuda", "label": "CUDA"},
-      {"@id": "urn:ngm:class:opencl", "label": "OpenCL"},
-      {"@id": "urn:ngm:class:parallel-processing", "label": "Parallel Processing"},
-      {"@id": "urn:ngm:class:compute-shader", "label": "Compute Shader"},
-      {"@id": "urn:ngm:class:triton-compiler", "label": "Triton Compiler"},
-      {"@id": "urn:ngm:class:mixed-precision-training", "label": "Mixed Precision Training"}
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "@id": "urn:ngm:class:opencl",
+        "label": "OpenCL"
+      },
+      {
+        "@id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      },
+      {
+        "@id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "@id": "urn:ngm:class:compiler",
+        "label": "Triton Compiler"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"},
-      {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:neural-network-inference", "label": "Neural Network Inference"},
-      {"@id": "urn:ngm:class:scientific-computing", "label": "Scientific Computing"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-inference",
+        "label": "Neural Network Inference"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:high-bandwidth-memory", "label": "High Bandwidth Memory"},
-      {"@id": "urn:ngm:class:gpu-driver", "label": "GPU Driver"},
-      {"@id": "urn:ngm:class:interconnect-fabric", "label": "Interconnect Fabric"}
+      {
+        "@id": "urn:ngm:class:high-bandwidth-memory",
+        "label": "High Bandwidth Memory"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-driver",
+        "label": "GPU Driver"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:tensor-processing-unit", "label": "Tensor Processing Unit"},
-      {"@id": "urn:ngm:class:cpu-computing", "label": "CPU Computing"},
-      {"@id": "urn:ngm:class:field-programmable-gate-array", "label": "Field-Programmable Gate Array"}
+      {
+        "@id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:cpu-computing",
+        "label": "CPU Computing"
+      },
+      {
+        "@id": "urn:ngm:class:field-programmable-gate-array",
+        "label": "Field-Programmable Gate Array"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:inference-hardware", "label": "Inference Hardware"},
-      {"@id": "urn:ngm:class:render-pipeline", "label": "Render Pipeline"},
-      {"@id": "urn:ngm:class:model-parallelism", "label": "Model Parallelism"},
-      {"@id": "urn:ngm:class:nvlink", "label": "NVLink"}
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:render-pipeline",
+        "label": "Render Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:nvlink",
+        "label": "NVLink"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:gpgpu", "label": "GPGPU"},
-    {"@id": "urn:ngm:class:general-purpose-gpu-computing", "label": "General-Purpose GPU Computing"}
+    {
+      "@id": "urn:ngm:class:gpgpu",
+      "label": "GPGPU"
+    },
+    {
+      "@id": "urn:ngm:class:general-purpose-gpu-computing",
+      "label": "General-Purpose GPU Computing"
+    }
   ],
   "quality": 0.75,
   "provenance": {

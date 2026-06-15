@@ -24,10 +24,6 @@
       {
         "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
-      },
-      {
-        "id": "urn:ngm:class:control",
-        "label": "Control"
       }
     ],
     "requires": [
@@ -76,10 +72,6 @@
       {
         "id": "urn:ngm:class:regulation",
         "label": "Regulation"
-      },
-      {
-        "id": "urn:ngm:class:standard",
-        "label": "Standard"
       }
     ],
     "contrastsWith": [
@@ -128,10 +120,6 @@
       {
         "id": "urn:ngm:class:certification",
         "label": "Certification"
-      },
-      {
-        "id": "urn:ngm:class:reporting",
-        "label": "Reporting"
       }
     ]
   },

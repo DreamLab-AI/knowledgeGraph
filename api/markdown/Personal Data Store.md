@@ -118,10 +118,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:personal-ai-assistant",
-        "label": "Personal AI Assistant"
-      },
-      {
         "@id": "urn:ngm:class:federated-identity",
         "label": "Federated Identity"
       },
@@ -154,7 +150,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:centralised-data-silo",
+        "@id": "urn:ngm:class:centralised-database",
         "label": "Centralised Data Silo"
       },
       {
@@ -164,7 +160,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:w3c-solid",
+        "@id": "urn:ngm:class:solid",
         "label": "W3C Solid"
       },
       {
@@ -172,13 +168,13 @@ public:: true
         "label": "GDPR"
       },
       {
-        "@id": "urn:ngm:class:w3c-did-core",
+        "@id": "urn:ngm:class:w3-c-did-core",
         "label": "W3C DID Core"
       }
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:federated-machine-learning",
+        "@id": "urn:ngm:class:federated-learning",
         "label": "Federated Machine Learning"
       },
       {

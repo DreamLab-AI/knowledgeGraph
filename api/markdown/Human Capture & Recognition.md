@@ -142,16 +142,8 @@ public:: true
         "label": "3D Scanning"
       },
       {
-        "@id": "urn:ngm:class:biometric-analysis",
-        "label": "Biometric Analysis"
-      },
-      {
         "@id": "urn:ngm:class:facial-recognition",
         "label": "Facial Recognition"
-      },
-      {
-        "@id": "urn:ngm:class:reality-modeling",
-        "label": "Reality Modeling"
       },
       {
         "@id": "urn:ngm:class:motion-tracking",
@@ -160,7 +152,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:depth-cameras",
+        "@id": "urn:ngm:class:rb-0077-depth-camera",
         "label": "Depth Cameras"
       },
       {
@@ -177,10 +169,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:3-d-visualization",
-        "label": "3D Visualization"
-      },
       {
         "@id": "urn:ngm:class:avatar-creation",
         "label": "Avatar Creation"

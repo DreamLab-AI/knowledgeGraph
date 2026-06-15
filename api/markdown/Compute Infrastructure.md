@@ -842,12 +842,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:ai-asic",
+        "@id": "urn:ngm:class:asic",
         "label": "AI ASIC"
-      },
-      {
-        "@id": "urn:ngm:class:datacentre-network",
-        "label": "Datacentre Network"
       },
       {
         "@id": "urn:ngm:class:gpu-accelerator",
@@ -856,10 +852,6 @@ public:: true
       {
         "@id": "urn:ngm:class:high-bandwidth-memory",
         "label": "High Bandwidth Memory"
-      },
-      {
-        "@id": "urn:ngm:class:infini-band",
-        "label": "InfiniBand"
       },
       {
         "@id": "urn:ngm:class:liquid-cooling",
@@ -874,33 +866,17 @@ public:: true
         "label": "Orchestration Layer"
       },
       {
-        "@id": "urn:ngm:class:power-distribution",
-        "label": "Power Distribution"
-      },
-      {
-        "@id": "urn:ngm:class:spectrum-x",
-        "label": "Spectrum-X"
-      },
-      {
         "@id": "urn:ngm:class:storage-systems",
         "label": "Storage Systems"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:co-wo-s-packaging",
-        "label": "CoWoS Packaging"
-      },
-      {
-        "@id": "urn:ngm:class:cooling-capacity",
-        "label": "Cooling Capacity"
-      },
-      {
         "@id": "urn:ngm:class:electrical-power",
         "label": "Electrical Power"
       },
       {
-        "@id": "urn:ngm:class:hbm-memory",
+        "@id": "urn:ngm:class:high-bandwidth-memory",
         "label": "HBM Memory"
       },
       {
@@ -910,21 +886,9 @@ public:: true
       {
         "@id": "urn:ngm:class:semiconductor-supply-chain",
         "label": "Semiconductor Supply Chain"
-      },
-      {
-        "@id": "urn:ngm:class:skilled-operators",
-        "label": "Skilled Operators"
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:ai-factory",
-        "label": "AI Factory"
-      },
-      {
-        "@id": "urn:ngm:class:foundation-model-inference",
-        "label": "Foundation Model Inference"
-      },
       {
         "@id": "urn:ngm:class:large-language-model-training",
         "label": "Large Language Model Training"
@@ -978,24 +942,8 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:direct-current-distribution",
-        "label": "Direct Current Distribution"
-      },
-      {
-        "@id": "urn:ngm:class:fp4-arithmetic",
+        "@id": "urn:ngm:class:floating-point-arithmetic",
         "label": "FP4 Arithmetic"
-      },
-      {
-        "@id": "urn:ngm:class:fp8-arithmetic",
-        "label": "FP8 Arithmetic"
-      },
-      {
-        "@id": "urn:ngm:class:gpudirect",
-        "label": "GPUDirect"
-      },
-      {
-        "@id": "urn:ngm:class:hbm3e",
-        "label": "HBM3e"
       },
       {
         "@id": "urn:ngm:class:liquid-cooling",
@@ -1008,15 +956,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:ai-supply-chain",
-        "label": "AI Supply Chain"
-      },
-      {
-        "@id": "urn:ngm:class:hyperscaler",
-        "label": "Hyperscaler"
-      },
-      {
-        "@id": "urn:ngm:class:nuclear-power",
+        "@id": "urn:ngm:class:nuclear-energy",
         "label": "Nuclear Power"
       },
       {
@@ -1060,32 +1000,12 @@ public:: true
       {
         "@id": "urn:ngm:class:scientific-computing",
         "label": "Scientific Computing"
-      },
-      {
-        "@id": "urn:ngm:class:sovereign-research",
-        "label": "Sovereign Research"
       }
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:infini-band-trade-association",
-        "label": "InfiniBand Trade Association"
-      },
-      {
         "@id": "urn:ngm:class:mlcommons",
         "label": "MLCommons"
-      },
-      {
-        "@id": "urn:ngm:class:open-compute-project",
-        "label": "Open Compute Project"
-      },
-      {
-        "@id": "urn:ngm:class:ualink-consortium",
-        "label": "UALink Consortium"
-      },
-      {
-        "@id": "urn:ngm:class:ultra-ethernet-consortium",
-        "label": "Ultra Ethernet Consortium"
       }
     ]
   },

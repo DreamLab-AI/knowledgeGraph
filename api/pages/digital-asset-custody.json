@@ -80,12 +80,7 @@
         "label": "Smart Contract"
       }
     ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:qualified-custodian-standard",
-        "label": "Qualified Custodian Standard"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:self-custody",
@@ -122,10 +117,6 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:asset-segregation",
-        "label": "Asset Segregation"
-      },
-      {
         "id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail"
       }
@@ -147,7 +138,7 @@
         "label": "Securities Regulation"
       },
       {
-        "id": "urn:ngm:class:custody-risk",
+        "id": "urn:ngm:class:custody",
         "label": "Custody Risk"
       },
       {

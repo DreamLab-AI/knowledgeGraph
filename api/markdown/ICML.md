@@ -23,57 +23,147 @@ public:: true
   "definition": "The International Conference on Machine Learning (ICML) is the premier annual academic conference for machine learning research, organised by the International Machine Learning Society (IMLS) since 1980. ICML serves as the primary venue for disseminating foundational and applied advances across supervised learning, unsupervised learning, reinforcement learning, deep learning, optimisation, and the theory of machine learning. Proceedings are published through the open-access Proceedings of Machine Learning Research (PMLR), making ICML papers freely available and widely cited. Together with NeurIPS and ICLR, ICML forms the trifecta of elite machine learning publication venues that shape research directions and career trajectories across academia and industry globally.",
   "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:ai-safety-research", "label": "AI Safety Research"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:neurips", "label": "NeurIPS"},
-      {"@id": "urn:ngm:class:iclr", "label": "ICLR"},
-      {"@id": "urn:ngm:class:academic-conference", "label": "Academic Conference"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:neurips",
+        "label": "NeurIPS"
+      },
+      {
+        "@id": "urn:ngm:class:iclr",
+        "label": "ICLR"
+      },
+      {
+        "@id": "urn:ngm:class:academic-conference",
+        "label": "Academic Conference"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-research", "label": "Machine Learning Research"},
-      {"@id": "urn:ngm:class:benchmark-standard", "label": "Benchmark Standard"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:peer-review", "label": "Peer Review"}
+      {
+        "@id": "urn:ngm:class:machine-learning-research",
+        "label": "Machine Learning Research"
+      },
+      {
+        "@id": "urn:ngm:class:benchmark-standard",
+        "label": "Benchmark Standard"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:optimization-algorithm", "label": "Optimization Algorithm"},
-      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"},
-      {"@id": "urn:ngm:class:double-blind-review", "label": "Double-Blind Review"}
+      {
+        "@id": "urn:ngm:class:optimization-algorithm",
+        "label": "Optimization Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "@id": "urn:ngm:class:double-blind-review",
+        "label": "Double-Blind Review"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:machine-learning-community", "label": "Machine Learning Community"},
-      {"@id": "urn:ngm:class:proceedings-of-machine-learning-research", "label": "Proceedings of Machine Learning Research"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning Community"
+      },
+      {
+        "@id": "urn:ngm:class:journal-of-machine-learning-research",
+        "label": "Proceedings of Machine Learning Research"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:workshop", "label": "Workshop"},
-      {"@id": "urn:ngm:class:tutorial", "label": "Tutorial"},
-      {"@id": "urn:ngm:class:paper-submission", "label": "Paper Submission"}
+      {
+        "@id": "urn:ngm:class:tutorial",
+        "label": "Tutorial"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:neurips", "label": "NeurIPS"},
-      {"@id": "urn:ngm:class:iclr", "label": "ICLR"},
-      {"@id": "urn:ngm:class:aaai", "label": "AAAI"},
-      {"@id": "urn:ngm:class:cvpr", "label": "CVPR"}
+      {
+        "@id": "urn:ngm:class:neurips",
+        "label": "NeurIPS"
+      },
+      {
+        "@id": "urn:ngm:class:iclr",
+        "label": "ICLR"
+      },
+      {
+        "@id": "urn:ngm:class:aaai",
+        "label": "AAAI"
+      },
+      {
+        "@id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:international-machine-learning-society", "label": "International Machine Learning Society"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "International Machine Learning Society"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:international-conference-on-machine-learning", "label": "International Conference on Machine Learning"}
+    {
+      "@id": "urn:ngm:class:international-conference-on-machine-learning",
+      "label": "International Conference on Machine Learning"
+    }
   ],
   "quality": 0.73,
   "provenance": {

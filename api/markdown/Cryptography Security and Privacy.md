@@ -714,7 +714,7 @@ public:: true
         "label": "Authentication"
       },
       {
-        "@id": "urn:ngm:class:confidentiality",
+        "@id": "urn:ngm:class:data-confidentiality",
         "label": "Confidentiality"
       },
       {
@@ -764,14 +764,6 @@ public:: true
         "label": "Ed25519"
       },
       {
-        "@id": "urn:ngm:class:ml-dsa",
-        "label": "ML-DSA"
-      },
-      {
-        "@id": "urn:ngm:class:ml-kem",
-        "label": "ML-KEM"
-      },
-      {
         "@id": "urn:ngm:class:schnorr-signature",
         "label": "Schnorr Signature"
       },
@@ -784,7 +776,7 @@ public:: true
         "label": "Signal Protocol"
       },
       {
-        "@id": "urn:ngm:class:slh-dsa",
+        "@id": "urn:ngm:class:nist-fips-205-slh-dsa-sphincs",
         "label": "SLH-DSA"
       },
       {
@@ -798,10 +790,6 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:constant-time-programming",
-        "label": "Constant-Time Programming"
-      },
-      {
         "@id": "urn:ngm:class:finite-field-arithmetic",
         "label": "Finite Field Arithmetic"
       },
@@ -812,10 +800,6 @@ public:: true
       {
         "@id": "urn:ngm:class:modular-arithmetic",
         "label": "Modular Arithmetic"
-      },
-      {
-        "@id": "urn:ngm:class:polynomial-commitments",
-        "label": "Polynomial Commitments"
       },
       {
         "@id": "urn:ngm:class:secure-enclave",
@@ -854,10 +838,6 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:confidential-ai",
-        "label": "Confidential AI"
-      },
-      {
         "@id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
@@ -888,35 +868,19 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:anssi-france",
-        "label": "ANSSI France"
-      },
-      {
         "@id": "urn:ngm:class:bsi-germany",
         "label": "BSI Germany"
-      },
-      {
-        "@id": "urn:ngm:class:etsi-quantum-safe-cryptography",
-        "label": "ETSI Quantum-Safe Cryptography"
       },
       {
         "@id": "urn:ngm:class:fips-140-3",
         "label": "FIPS 140-3"
       },
       {
-        "@id": "urn:ngm:class:ietf-cfrg",
-        "label": "IETF CFRG"
-      },
-      {
-        "@id": "urn:ngm:class:irtf",
-        "label": "IRTF"
-      },
-      {
         "@id": "urn:ngm:class:iso-iec-jtc-1-sc-27",
         "label": "ISO/IEC JTC 1/SC 27"
       },
       {
-        "@id": "urn:ngm:class:ncsc-uk",
+        "@id": "urn:ngm:class:ncsc",
         "label": "NCSC UK"
       },
       {

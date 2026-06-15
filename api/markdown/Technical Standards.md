@@ -55,42 +55,106 @@ public:: true
   },
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:cross-platform-interoperability", "label": "Cross-Platform Interoperability"},
-      {"@id": "urn:ngm:class:protocol-compatibility", "label": "Protocol Compatibility"},
-      {"@id": "urn:ngm:class:vendor-neutrality", "label": "Vendor Neutrality"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-compatibility",
+        "label": "Protocol Compatibility"
+      },
+      {
+        "@id": "urn:ngm:class:vendor-neutrality",
+        "label": "Vendor Neutrality"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"},
-      {"@id": "urn:ngm:class:3-d-asset-standard", "label": "3D Asset Standard"},
-      {"@id": "urn:ngm:class:ieee-standards-association", "label": "IEEE Standards Association"},
-      {"@id": "urn:ngm:class:w3c", "label": "W3C"},
-      {"@id": "urn:ngm:class:khronos-group", "label": "Khronos Group"},
-      {"@id": "urn:ngm:class:iso", "label": "ISO"}
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-asset-standard",
+        "label": "3D Asset Standard"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-standards-association",
+        "label": "IEEE Standards Association"
+      },
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "@id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:universal-scene-description", "label": "Universal Scene Description"},
-      {"@id": "urn:ngm:class:3-d-file-format", "label": "3D File Format"},
-      {"@id": "urn:ngm:class:metaverse-standards-forum", "label": "Metaverse Standards Forum"},
-      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"}
+      {
+        "@id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-file-format",
+        "label": "3D File Format"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-standards-forum",
+        "label": "Metaverse Standards Forum"
+      },
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:webxr", "label": "WebXR"},
-      {"@id": "urn:ngm:class:gltf", "label": "glTF"},
-      {"@id": "urn:ngm:class:3d-tiles", "label": "3D Tiles"},
-      {"@id": "urn:ngm:class:ieee-p2874", "label": "IEEE P2874"}
+      {
+        "@id": "urn:ngm:class:webxr",
+        "label": "WebXR"
+      },
+      {
+        "@id": "urn:ngm:class:gltf-standard",
+        "label": "glTF"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:conformance-testing", "label": "Conformance Testing"},
-      {"@id": "urn:ngm:class:reference-implementation", "label": "Reference Implementation"}
+      {
+        "@id": "urn:ngm:class:standards-conformance-testing",
+        "label": "Conformance Testing"
+      },
+      {
+        "@id": "urn:ngm:class:reference-implementation",
+        "label": "Reference Implementation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proprietary-protocol", "label": "Proprietary Protocol"},
-      {"@id": "urn:ngm:class:vendor-lock-in", "label": "Vendor Lock-In"}
+      {
+        "@id": "urn:ngm:class:proprietary-protocol",
+        "label": "Proprietary Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:vendor-lock-in",
+        "label": "Vendor Lock-In"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:governance", "label": "Governance"},
-      {"@id": "urn:ngm:class:security-standard", "label": "Security Standard"}
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:security-standards",
+        "label": "Security Standard"
+      }
     ]
   },
   "quality": 0.65,

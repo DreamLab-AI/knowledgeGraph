@@ -77,10 +77,6 @@ public:: true
         "label": "Blockchain"
       },
       {
-        "@id": "urn:ngm:class:reserve-backing",
-        "label": "Reserve Backing"
-      },
-      {
         "@id": "urn:ngm:class:fiat-currency",
         "label": "Fiat Currency"
       },
@@ -95,11 +91,7 @@ public:: true
         "label": "Crypto Trading"
       },
       {
-        "@id": "urn:ngm:class:dollar-settlement",
-        "label": "Dollar Settlement"
-      },
-      {
-        "@id": "urn:ngm:class:cross-border-payment",
+        "@id": "urn:ngm:class:cross-border-payments",
         "label": "Cross-Border Payment"
       },
       {

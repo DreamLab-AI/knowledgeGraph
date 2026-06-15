@@ -69,26 +69,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:scene-editor",
-        "label": "Scene Editor"
-      },
-      {
         "@id": "urn:ngm:class:physics-engine",
         "label": "Physics Engine"
       },
       {
         "@id": "urn:ngm:class:animation-system",
         "label": "Animation System"
-      },
-      {
-        "@id": "urn:ngm:class:asset-store",
-        "label": "Asset Store"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:real-time-3d-ecosystem",
-        "label": "Real-Time 3D Ecosystem"
       }
     ],
     "requires": [
@@ -99,10 +85,6 @@ public:: true
       {
         "@id": "urn:ngm:class:scripting-runtime",
         "label": "Scripting Runtime"
-      },
-      {
-        "@id": "urn:ngm:class:rendering-api",
-        "label": "Rendering API"
       }
     ],
     "enables": [
@@ -125,10 +107,6 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:mono",
-        "label": "Mono"
-      },
-      {
         "@id": "urn:ngm:class:dotnet",
         "label": ".NET"
       }
@@ -149,7 +127,7 @@ public:: true
         "label": "FBX"
       },
       {
-        "@id": "urn:ngm:class:gltf",
+        "@id": "urn:ngm:class:gltf-standard",
         "label": "glTF"
       },
       {
@@ -193,7 +171,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:universal-render-pipeline",
+        "@id": "urn:ngm:class:render-pipeline",
         "label": "Universal Render Pipeline"
       }
     ]

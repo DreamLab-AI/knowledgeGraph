@@ -102,10 +102,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:asset-exchange",
-        "label": "Asset Exchange"
-      },
-      {
         "@id": "urn:ngm:class:peer-to-peer-trading",
         "label": "Peer-to-Peer Trading"
       },

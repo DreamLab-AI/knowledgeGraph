@@ -25,49 +25,130 @@ alias:: IEEE (Institute of Electrical and Electronics Engineers)
   "domain": "infrastructure",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}
+    {
+      "@id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:ieee-802-11", "label": "IEEE 802.11"},
-      {"@id": "urn:ngm:class:ieee-802-3", "label": "IEEE 802.3"},
-      {"@id": "urn:ngm:class:ieee-802-15-4", "label": "IEEE 802.15.4"},
-      {"@id": "urn:ngm:class:ieee-754", "label": "IEEE 754"},
-      {"@id": "urn:ngm:class:ieee-1588", "label": "IEEE 1588"},
-      {"@id": "urn:ngm:class:ieee-standards-association", "label": "IEEE Standards Association"}
+      {
+        "@id": "urn:ngm:class:ieee-802-11",
+        "label": "IEEE 802.11"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-802-3",
+        "label": "IEEE 802.3"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-802-15-4",
+        "label": "IEEE 802.15.4"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-754",
+        "label": "IEEE 754"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-1588-ptp",
+        "label": "IEEE 1588"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-standards-association",
+        "label": "IEEE Standards Association"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:technical-standards", "label": "Technical Standards"},
-      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"},
-      {"@id": "urn:ngm:class:wireless-networking", "label": "Wireless Networking"},
-      {"@id": "urn:ngm:class:time-sensitive-networking", "label": "Time-Sensitive Networking"},
-      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"}
+      {
+        "@id": "urn:ngm:class:technical-standards",
+        "label": "Technical Standards"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-networking",
+        "label": "Wireless Networking"
+      },
+      {
+        "@id": "urn:ngm:class:time-sensitive-networking",
+        "label": "Time-Sensitive Networking"
+      },
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:consensus-process", "label": "Consensus Process"},
-      {"@id": "urn:ngm:class:technical-committee", "label": "Technical Committee"}
+      {
+        "@id": "urn:ngm:class:consensus-process",
+        "label": "Consensus Process"
+      },
+      {
+        "@id": "urn:ngm:class:technical-committee",
+        "label": "Technical Committee"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:autonomous-systems", "label": "Autonomous Systems"},
-      {"@id": "urn:ngm:class:quantum-computing", "label": "Quantum Computing"},
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
+      {
+        "@id": "urn:ngm:class:quantum-computation-paradigm",
+        "label": "Quantum Computing"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"},
-      {"@id": "urn:ngm:class:iso", "label": "ISO"},
-      {"@id": "urn:ngm:class:itu", "label": "ITU"},
-      {"@id": "urn:ngm:class:ansi", "label": "ANSI"},
-      {"@id": "urn:ngm:class:3gpp", "label": "3GPP"}
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "@id": "urn:ngm:class:itu",
+        "label": "ITU"
+      },
+      {
+        "@id": "urn:ngm:class:ansi",
+        "label": "ANSI"
+      },
+      {
+        "@id": "urn:ngm:class:3gpp",
+        "label": "3GPP"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"},
-      {"@id": "urn:ngm:class:neural-interface", "label": "Neural Interface"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:neural-interface",
+        "label": "Neural Interface"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:institute-of-electrical-and-electronics-engineers", "label": "Institute of Electrical and Electronics Engineers"}
+    {
+      "@id": "urn:ngm:class:institute-of-electrical-and-electronics-engineers",
+      "label": "Institute of Electrical and Electronics Engineers"
+    }
   ],
   "quality": 0.75,
   "provenance": {

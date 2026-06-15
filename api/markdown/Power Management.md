@@ -38,54 +38,131 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:battery-management-system", "label": "Battery Management System"},
-      {"@id": "urn:ngm:class:dc-dc-converter", "label": "DC-DC Converter"},
-      {"@id": "urn:ngm:class:power-distribution-unit", "label": "Power Distribution Unit"}
+      {
+        "@id": "urn:ngm:class:battery-management-system",
+        "label": "Battery Management System"
+      },
+      {
+        "@id": "urn:ngm:class:dc-dc-converter",
+        "label": "DC-DC Converter"
+      },
+      {
+        "@id": "urn:ngm:class:power-distribution-unit",
+        "label": "Power Distribution Unit"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
-      {"@id": "urn:ngm:class:real-time-operating-system", "label": "Real-Time Operating System"},
-      {"@id": "urn:ngm:class:thermal-management", "label": "Thermal Management"}
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:thermal-management",
+        "label": "Thermal Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"},
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
-      {"@id": "urn:ngm:class:wearable-computing", "label": "Wearable Computing"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "@id": "urn:ngm:class:wearable-computing",
+        "label": "Wearable Computing"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:power-supply", "label": "Power Supply"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:pulse-width-modulation", "label": "Pulse-Width Modulation"}
+      {
+        "@id": "urn:ngm:class:power-supply",
+        "label": "Power Supply"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:pulse-width-modulation",
+        "label": "Pulse-Width Modulation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:robot-hardware", "label": "Robot Hardware"},
-      {"@id": "urn:ngm:class:autonomous-systems", "label": "Autonomous Systems"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+      {
+        "@id": "urn:ngm:class:robot-hardware",
+        "label": "Robot Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:energy-storage", "label": "Energy Storage"},
-      {"@id": "urn:ngm:class:hardware-accelerator", "label": "Hardware Accelerator"}
+      {
+        "@id": "urn:ngm:class:energy-storage",
+        "label": "Energy Storage"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-accelerator",
+        "label": "Hardware Accelerator"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"}
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"},
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"},
-      {"@id": "urn:ngm:class:system-on-chip", "label": "System-on-Chip"}
+      {
+        "@id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      },
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "@id": "urn:ngm:class:system-on-chip",
+        "label": "System-on-Chip"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-ts-15066", "label": "ISO TS 15066"},
-      {"@id": "urn:ngm:class:ieee-1801", "label": "IEEE 1801 (UPF)"}
+      {
+        "@id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:neural-network-inference", "label": "Neural Network Inference"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:neural-network-inference",
+        "label": "Neural Network Inference"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:energy-management", "label": "Energy Management"}
+    {
+      "@id": "urn:ngm:class:energy-management",
+      "label": "Energy Management"
+    }
   ],
   "quality": 0.72,
   "provenance": {

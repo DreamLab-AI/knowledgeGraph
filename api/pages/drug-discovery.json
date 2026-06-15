@@ -17,27 +17,14 @@
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [
-      {
-        "id": "urn:ngm:class:cheminformatics",
-        "label": "Cheminformatics"
-      },
-      {
-        "id": "urn:ngm:class:structural-biology",
-        "label": "Structural Biology"
-      },
-      {
-        "id": "urn:ngm:class:biomedical-data",
-        "label": "Biomedical Data"
-      }
-    ],
+    "requires": [],
     "enables": [
       {
         "id": "urn:ngm:class:clinical-trials",
         "label": "Clinical Trials"
       },
       {
-        "id": "urn:ngm:class:personalised-medicine",
+        "id": "urn:ngm:class:precision-medicine",
         "label": "Personalised Medicine"
       },
       {
@@ -53,19 +40,10 @@
       {
         "id": "urn:ngm:class:protein-structure-prediction",
         "label": "Protein Structure Prediction"
-      },
-      {
-        "id": "urn:ngm:class:high-throughput-screening",
-        "label": "High-Throughput Screening"
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:traditional-high-throughput-screening",
-        "label": "Traditional High-Throughput Screening"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:regulatory-compliance",
@@ -96,10 +74,6 @@
       {
         "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
-      },
-      {
-        "id": "urn:ngm:class:molecular-dynamics-simulation",
-        "label": "Molecular Dynamics Simulation"
       }
     ],
     "supports": [],
@@ -113,14 +87,6 @@
       {
         "id": "urn:ngm:class:genomics",
         "label": "Genomics"
-      },
-      {
-        "id": "urn:ngm:class:proteomics",
-        "label": "Proteomics"
-      },
-      {
-        "id": "urn:ngm:class:multi-omics",
-        "label": "Multi-Omics"
       },
       {
         "id": "urn:ngm:class:digital-twin",

@@ -30,7 +30,7 @@
         "label": "Knowledge Graph"
       },
       {
-        "id": "urn:ngm:class:expert-system",
+        "id": "urn:ngm:class:expert-systems",
         "label": "Expert System"
       },
       {
@@ -77,7 +77,7 @@
         "label": "First-Order Logic"
       },
       {
-        "id": "urn:ngm:class:rule-based-system",
+        "id": "urn:ngm:class:rule-based-systems",
         "label": "Rule-Based System"
       }
     ],

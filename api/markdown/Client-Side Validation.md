@@ -24,56 +24,109 @@ alias:: client-side-validation
   "definition": "Client-Side Validation is the process of verifying user-supplied data within the browser or client application before that data is transmitted to a server, providing immediate feedback to users and reducing unnecessary network requests. In the context of Bitcoin and RGB Protocol, it refers to a distinct validation paradigm where the full state of off-chain assets is verified locally by the recipient rather than by all network nodes, enabling scalable, private asset transfers. The two usages share the principle of local verification but differ fundamentally in their security models and scope.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-integrity",
+      "label": "Data Integrity"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:rgb-protocol", "label": "RGB Protocol"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:block-trails", "label": "Block Trails"},
-      {"@id": "urn:ngm:class:web-contracts", "label": "Web Contracts"}
+      {
+        "@id": "urn:ngm:class:rgb-protocol",
+        "label": "RGB Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:block-trails",
+        "label": "Block Trails"
+      },
+      {
+        "@id": "urn:ngm:class:web-contracts",
+        "label": "Web Contracts"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:single-use-seals", "label": "Single Use Seals"},
-      {"@id": "urn:ngm:class:proof-of-publication", "label": "Proof of Publication"},
-      {"@id": "urn:ngm:class:contract-genesis", "label": "Contract Genesis"},
-      {"@id": "urn:ngm:class:state-transition", "label": "State Transition"}
+      {
+        "@id": "urn:ngm:class:single-use-seals",
+        "label": "Single Use Seals"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-publication",
+        "label": "Proof of Publication"
+      },
+      {
+        "@id": "urn:ngm:class:state-transition-function",
+        "label": "State Transition"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"},
-      {"@id": "urn:ngm:class:json-data-interchange-format-schema", "label": "JSON Schema"},
-      {"@id": "urn:ngm:class:bitcoin-utxo", "label": "Bitcoin UTXO"},
-      {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"}
-    ],
-    "requires": [
-      {"@id": "urn:ngm:class:ownership-history", "label": "Ownership History"},
-      {"@id": "urn:ngm:class:seal-definition", "label": "Seal Definition"}
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "@id": "urn:ngm:class:utxo",
+        "label": "Bitcoin UTXO"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network", "label": "Bitcoin Network"},
-      {"@id": "urn:ngm:class:utxo-model", "label": "UTXO Model"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "@id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:global-state-validation", "label": "Global State Validation"},
-      {"@id": "urn:ngm:class:server-side-validation", "label": "Server-Side Validation"},
-      {"@id": "urn:ngm:class:ethereum-smart-contracts", "label": "Ethereum Smart Contracts"}
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-smart-contracts",
+        "label": "Ethereum Smart Contracts"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:privacy-preserving-computation", "label": "Privacy-Preserving Computation"},
-      {"@id": "urn:ngm:class:scalable-smart-contracts", "label": "Scalable Smart Contracts"}
+      {
+        "@id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:layer-2-solutions", "label": "Layer 2 Solutions"},
-      {"@id": "urn:ngm:class:zero-knowledge", "label": "Zero Knowledge"},
-      {"@id": "urn:ngm:class:taproot-assets", "label": "Taproot Assets"}
-    ],
-    "bridgesTo": [
-      {"@id": "urn:ngm:class:constraint-validation-api", "label": "Constraint Validation API"},
-      {"@id": "urn:ngm:class:form-validation", "label": "Form Validation"}
+      {
+        "@id": "urn:ngm:class:layer-2-solutions",
+        "label": "Layer 2 Solutions"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge",
+        "label": "Zero Knowledge"
+      },
+      {
+        "@id": "urn:ngm:class:taproot-assets",
+        "label": "Taproot Assets"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:local-verification", "label": "Local Verification"},
-    {"@id": "urn:ngm:class:recipient-side-validation", "label": "Recipient-Side Validation"}
+    {
+      "@id": "urn:ngm:class:local-verification",
+      "label": "Local Verification"
+    },
+    {
+      "@id": "urn:ngm:class:recipient-side-validation",
+      "label": "Recipient-Side Validation"
+    }
   ],
   "quality": 0.75,
   "provenance": {

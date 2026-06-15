@@ -69,7 +69,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:lightning-network-ecosystem",
+        "@id": "urn:ngm:class:lightning-network",
         "label": "Lightning Network Ecosystem"
       }
     ],
@@ -89,21 +89,17 @@ public:: true
         "label": "Micropayment"
       },
       {
-        "@id": "urn:ngm:class:trampoline-routing",
-        "label": "Trampoline Routing"
-      },
-      {
         "@id": "urn:ngm:class:non-custodial-wallet",
         "label": "Non-Custodial Wallet"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:basis-of-lightning-technology",
+        "@id": "urn:ngm:class:lightning-network",
         "label": "Basis of Lightning Technology"
       },
       {
-        "@id": "urn:ngm:class:sphinx-routing",
+        "@id": "urn:ngm:class:onion-routing",
         "label": "Sphinx Routing"
       }
     ],
@@ -117,15 +113,11 @@ public:: true
         "label": "Onion Routing"
       },
       {
-        "@id": "urn:ngm:class:scala-programming-language",
+        "@id": "urn:ngm:class:programming-language",
         "label": "Scala Programming Language"
       }
     ],
     "supports": [
-      {
-        "@id": "urn:ngm:class:bitcoin-payment",
-        "label": "Bitcoin Payment"
-      },
       {
         "@id": "urn:ngm:class:splicing",
         "label": "Splicing"
@@ -143,12 +135,8 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:bitcoin-layer-2",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-layer-2",
         "label": "Bitcoin Layer 2"
-      },
-      {
-        "@id": "urn:ngm:class:routing-node",
-        "label": "Routing Node"
       },
       {
         "@id": "urn:ngm:class:channel-liquidity",

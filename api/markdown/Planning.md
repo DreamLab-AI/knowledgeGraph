@@ -69,10 +69,6 @@ public:: true
       {
         "@id": "urn:ngm:class:state-space-representation",
         "label": "State Space Representation"
-      },
-      {
-        "@id": "urn:ngm:class:goal-representation",
-        "label": "Goal Representation"
       }
     ],
     "enables": [
@@ -81,7 +77,7 @@ public:: true
         "label": "Autonomous Agent"
       },
       {
-        "@id": "urn:ngm:class:robot-motion-planning",
+        "@id": "urn:ngm:class:motion-planning",
         "label": "Robot Motion Planning"
       },
       {
@@ -93,14 +89,6 @@ public:: true
       {
         "@id": "urn:ngm:class:hierarchical-task-network",
         "label": "Hierarchical Task Network"
-      },
-      {
-        "@id": "urn:ngm:class:plan-recognition",
-        "label": "Plan Recognition"
-      },
-      {
-        "@id": "urn:ngm:class:plan-execution",
-        "label": "Plan Execution"
       }
     ],
     "uses": [
@@ -139,7 +127,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:scheduling",
+        "@id": "urn:ngm:class:planning-and-scheduling",
         "label": "Scheduling"
       },
       {

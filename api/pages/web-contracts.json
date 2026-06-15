@@ -33,7 +33,7 @@
         "label": "Automated Market Maker"
       },
       {
-        "id": "urn:ngm:class:escrow",
+        "id": "urn:ngm:class:escrow-system",
         "label": "Escrow"
       },
       {
@@ -99,7 +99,7 @@
         "label": "SHA-256"
       },
       {
-        "id": "urn:ngm:class:json-schema",
+        "id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       }
     ],
@@ -112,7 +112,7 @@
         "label": "WebAssembly"
       },
       {
-        "id": "urn:ngm:class:l402-protocol",
+        "id": "urn:ngm:class:x402-and-l402-payment-protocols",
         "label": "L402 Protocol"
       }
     ]

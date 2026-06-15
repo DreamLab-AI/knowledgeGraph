@@ -85,12 +85,8 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:open-source-protocol-development",
+        "@id": "urn:ngm:class:open-source-development",
         "label": "Open Source Protocol Development"
-      },
-      {
-        "@id": "urn:ngm:class:cryptographic-research",
-        "label": "Cryptographic Research"
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
@@ -101,19 +97,9 @@ public:: true
         "label": "Formal Verification"
       }
     ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:ethereum-grants-programme",
-        "label": "Ethereum Grants Programme"
-      },
-      {
-        "@id": "urn:ngm:class:devcon-conference",
-        "label": "Devcon Conference"
-      }
-    ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:ethereum-ecosystem",
+        "@id": "urn:ngm:class:ethereum",
         "label": "Ethereum Ecosystem"
       }
     ],
@@ -129,7 +115,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:ethereum-virtual-machine",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       },
       {
@@ -139,7 +125,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:non-profit-governance-model",
+        "@id": "urn:ngm:class:governance-model",
         "label": "Non-Profit Governance Model"
       }
     ],
@@ -155,17 +141,13 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:bitcoin-core-development",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
         "label": "Bitcoin Core Development"
-      },
-      {
-        "@id": "urn:ngm:class:for-profit-blockchain-company",
-        "label": "For-Profit Blockchain Company"
       }
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:blockchain-protocol-foundation",
+        "@id": "urn:ngm:class:blockchain-protocol",
         "label": "Blockchain Protocol Foundation"
       },
       {
@@ -177,7 +159,7 @@ public:: true
         "label": "DeFi Protocol"
       },
       {
-        "@id": "urn:ngm:class:blockchain-security-audit",
+        "@id": "urn:ngm:class:blockchain-security",
         "label": "Blockchain Security Audit"
       }
     ],

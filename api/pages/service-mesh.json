@@ -18,10 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:data-plane",
-        "label": "Data Plane"
-      },
-      {
         "id": "urn:ngm:class:control-plane",
         "label": "Control Plane"
       },
@@ -50,24 +46,16 @@
         "label": "Observability"
       },
       {
-        "id": "urn:ngm:class:zero-trust-security",
+        "id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Security"
       },
       {
         "id": "urn:ngm:class:canary-deployment",
         "label": "Canary Deployment"
-      },
-      {
-        "id": "urn:ngm:class:circuit-breaking",
-        "label": "Circuit Breaking"
       }
     ],
     "dependsOn": [],
     "implements": [
-      {
-        "id": "urn:ngm:class:xds-api",
-        "label": "xDS API"
-      },
       {
         "id": "urn:ngm:class:distributed-tracing",
         "label": "Distributed Tracing"
@@ -81,7 +69,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:zero-trust-network-access",
+        "id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Network Access"
       },
       {
@@ -105,17 +93,9 @@
       {
         "id": "urn:ngm:class:envoy-proxy",
         "label": "Envoy Proxy"
-      },
-      {
-        "id": "urn:ngm:class:ebpf",
-        "label": "eBPF"
       }
     ],
     "supports": [
-      {
-        "id": "urn:ngm:class:multi-cluster-federation",
-        "label": "Multi-Cluster Federation"
-      },
       {
         "id": "urn:ngm:class:traffic-management",
         "label": "Traffic Management"
@@ -128,7 +108,7 @@
         "label": "Microservices Architecture"
       },
       {
-        "id": "urn:ngm:class:cloud-native-computing",
+        "id": "urn:ngm:class:cloud-native",
         "label": "Cloud Native Computing"
       }
     ],
@@ -136,10 +116,6 @@
       {
         "id": "urn:ngm:class:microservices",
         "label": "Microservices"
-      },
-      {
-        "id": "urn:ngm:class:istio",
-        "label": "Istio"
       }
     ]
   },

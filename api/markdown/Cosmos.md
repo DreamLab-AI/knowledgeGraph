@@ -23,49 +23,124 @@ public:: true
   "definition": "Cosmos is an ecosystem of sovereign, application-specific blockchains that interoperate through the Inter-Blockchain Communication (IBC) protocol, coordinated by a central hub (the Cosmos Hub, secured by the ATOM staking token) and constructed using the Cosmos SDK, a modular Go framework for building proof-of-stake chains. Each chain in the ecosystem runs the CometBFT (formerly Tendermint BFT) consensus engine, which provides instant deterministic finality and enables IBC light-client proofs across trust boundaries without centralised bridges. The architecture decouples application logic from consensus, permitting developers to optimise validator sets, fee markets, and governance parameters independently while participating in a shared interoperability fabric often described as the Internet of Blockchains.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain-network",
+      "label": "Blockchain Network"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:internet-of-blockchains", "label": "Internet of Blockchains"},
-    {"@id": "urn:ngm:class:cosmos-network", "label": "Cosmos Network"}
+    {
+      "@id": "urn:ngm:class:internet-of-blockchains",
+      "label": "Internet of Blockchains"
+    },
+    {
+      "@id": "urn:ngm:class:cosmos-network",
+      "label": "Cosmos Network"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:cosmos-hub", "label": "Cosmos Hub"},
-      {"@id": "urn:ngm:class:cosmos-sdk", "label": "Cosmos SDK"},
-      {"@id": "urn:ngm:class:cosmos-ibc", "label": "Cosmos IBC"},
-      {"@id": "urn:ngm:class:interchain-security", "label": "Interchain Security"}
+      {
+        "@id": "urn:ngm:class:cosmos-sdk",
+        "label": "Cosmos SDK"
+      },
+      {
+        "@id": "urn:ngm:class:cosmos-ibc",
+        "label": "Cosmos IBC"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:tendermint", "label": "Tendermint"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"}
+      {
+        "@id": "urn:ngm:class:tendermint",
+        "label": "Tendermint"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"},
-      {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"},
-      {"@id": "urn:ngm:class:cross-chain-asset-transfer", "label": "Cross Chain Asset Transfer"},
-      {"@id": "urn:ngm:class:interchain-accounts", "label": "Interchain Accounts"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-asset-transfer",
+        "label": "Cross Chain Asset Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:interchain-accounts",
+        "label": "Interchain Accounts"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:tendermint-consensus", "label": "Tendermint Consensus"},
-      {"@id": "urn:ngm:class:deterministic-finality", "label": "Deterministic Finality"},
-      {"@id": "urn:ngm:class:light-client", "label": "Light Client"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"}
+      {
+        "@id": "urn:ngm:class:tendermint-consensus",
+        "label": "Tendermint Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:deterministic-finality",
+        "label": "Deterministic Finality"
+      },
+      {
+        "@id": "urn:ngm:class:light-client",
+        "label": "Light Client"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:polkadot", "label": "Polkadot"},
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
-      {"@id": "urn:ngm:class:layer-2-rollup", "label": "Layer 2 Rollup"}
+      {
+        "@id": "urn:ngm:class:polkadot",
+        "label": "Polkadot"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-rollup",
+        "label": "Layer 2 Rollup"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:modular-blockchain", "label": "Modular Blockchain"},
-      {"@id": "urn:ngm:class:data-availability", "label": "Data Availability"}
+      {
+        "@id": "urn:ngm:class:modular-blockchain",
+        "label": "Modular Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:application-specific-blockchain", "label": "Application-Specific Blockchain"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:liquid-staking", "label": "Liquid Staking"}
+      {
+        "@id": "urn:ngm:class:application-specific-blockchain",
+        "label": "Application-Specific Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:liquid-staking",
+        "label": "Liquid Staking"
+      }
     ]
   },
   "quality": 0.74,

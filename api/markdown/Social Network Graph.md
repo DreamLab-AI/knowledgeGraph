@@ -53,54 +53,109 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:social-graph", "label": "Social Graph"},
-    {"@id": "urn:ngm:class:online-social-network", "label": "Online Social Network"}
+    {
+      "@id": "urn:ngm:class:social-graph",
+      "label": "Social Graph"
+    },
+    {
+      "@id": "urn:ngm:class:online-social-network",
+      "label": "Online Social Network"
+    }
   ],
   "relations": {
-    "hasPart": [
-      {"@id": "urn:ngm:class:graph-node", "label": "Graph Node"},
-      {"@id": "urn:ngm:class:graph-edge", "label": "Graph Edge"},
-      {"@id": "urn:ngm:class:community-structure", "label": "Community Structure"}
-    ],
     "partOf": [
-      {"@id": "urn:ngm:class:graph-database", "label": "Graph Database"}
+      {
+        "@id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:graph-traversal-algorithm", "label": "Graph Traversal Algorithm"}
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:graph-algorithms",
+        "label": "Graph Traversal Algorithm"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:community-detection", "label": "Community Detection"},
-      {"@id": "urn:ngm:class:influence-analysis", "label": "Influence Analysis"},
-      {"@id": "urn:ngm:class:recommendation-system", "label": "Recommendation System"},
-      {"@id": "urn:ngm:class:identity-federation", "label": "Identity Federation"}
+      {
+        "@id": "urn:ngm:class:community-detection",
+        "label": "Community Detection"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "@id": "urn:ngm:class:identity-federation",
+        "label": "Identity Federation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:graph-theory", "label": "Graph Theory"},
-      {"@id": "urn:ngm:class:network-topology", "label": "Network Topology"}
+      {
+        "@id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "@id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:nostr-protocol", "label": "Nostr Protocol"},
-      {"@id": "urn:ngm:class:activitypub", "label": "ActivityPub"},
-      {"@id": "urn:ngm:class:pagerank", "label": "PageRank"}
+      {
+        "@id": "urn:ngm:class:nostr-protocol",
+        "label": "Nostr Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:activitypub",
+        "label": "ActivityPub"
+      },
+      {
+        "@id": "urn:ngm:class:pagerank",
+        "label": "PageRank"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:sybil-resistance", "label": "Sybil Resistance"},
-      {"@id": "urn:ngm:class:social-media-analytics", "label": "Social Media Analytics"}
+      {
+        "@id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:citation-network", "label": "Citation Network"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:graph-neural-network", "label": "Graph Neural Network"},
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:virtual-community-platform", "label": "Virtual Community Platform"}
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-community-platform",
+        "label": "Virtual Community Platform"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:federation-surface", "label": "Federation Surface"},
-      {"@id": "urn:ngm:class:web-of-trust", "label": "Web of Trust"},
-      {"@id": "urn:ngm:class:small-world-network", "label": "Small-World Network"}
+      {
+        "@id": "urn:ngm:class:federation-surface",
+        "label": "Federation Surface"
+      },
+      {
+        "@id": "urn:ngm:class:web-of-trust",
+        "label": "Web of Trust"
+      },
+      {
+        "@id": "urn:ngm:class:small-world-network",
+        "label": "Small-World Network"
+      }
     ]
   },
   "provenance": {

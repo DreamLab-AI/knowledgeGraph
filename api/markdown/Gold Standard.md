@@ -78,10 +78,6 @@ public:: true
       {
         "@id": "urn:ngm:class:currency-convertibility",
         "label": "Currency Convertibility"
-      },
-      {
-        "@id": "urn:ngm:class:fixed-exchange-rate",
-        "label": "Fixed Exchange Rate"
       }
     ],
     "enables": [
@@ -114,10 +110,6 @@ public:: true
         "label": "Fiat Currency"
       },
       {
-        "@id": "urn:ngm:class:floating-exchange-rate",
-        "label": "Floating Exchange Rate"
-      },
-      {
         "@id": "urn:ngm:class:quantitative-easing",
         "label": "Quantitative Easing"
       }
@@ -130,18 +122,6 @@ public:: true
       {
         "@id": "urn:ngm:class:inflation",
         "label": "Inflation"
-      },
-      {
-        "@id": "urn:ngm:class:deflation",
-        "label": "Deflation"
-      },
-      {
-        "@id": "urn:ngm:class:currency-peg",
-        "label": "Currency Peg"
-      },
-      {
-        "@id": "urn:ngm:class:specie-flow-mechanism",
-        "label": "Specie Flow Mechanism"
       },
       {
         "@id": "urn:ngm:class:commodity-money",

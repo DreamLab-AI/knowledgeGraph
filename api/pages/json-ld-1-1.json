@@ -27,7 +27,7 @@
         "label": "IRI"
       },
       {
-        "id": "urn:ngm:class:json",
+        "id": "urn:ngm:class:json-data-interchange-format",
         "label": "JSON"
       }
     ],
@@ -58,15 +58,11 @@
       {
         "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web Linked Data Standard"
-      },
-      {
-        "id": "urn:ngm:class:owl2",
-        "label": "OWL2"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:turtle-rdf-serialisation",
+        "id": "urn:ngm:class:turtle",
         "label": "Turtle"
       },
       {
@@ -78,7 +74,7 @@
         "label": "N-Triples"
       },
       {
-        "id": "urn:ngm:class:json-schema",
+        "id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       }
     ],
@@ -100,14 +96,6 @@
       {
         "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
-      },
-      {
-        "id": "urn:ngm:class:context-document",
-        "label": "Context Document"
-      },
-      {
-        "id": "urn:ngm:class:rdf-dataset",
-        "label": "RDF Dataset"
       }
     ],
     "supports": [],
@@ -128,7 +116,7 @@
         "label": "ActivityPub"
       },
       {
-        "id": "urn:ngm:class:solid-protocol",
+        "id": "urn:ngm:class:solid",
         "label": "Solid Protocol"
       },
       {

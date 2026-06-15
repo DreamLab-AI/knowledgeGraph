@@ -95,19 +95,15 @@ public:: true
       {
         "@id": "urn:ngm:class:vote-delegation",
         "label": "Vote Delegation"
-      },
-      {
-        "@id": "urn:ngm:class:proposal-creation",
-        "label": "Proposal Creation"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:governor-bravo",
+        "@id": "urn:ngm:class:compound-governor-bravo",
         "label": "Governor Bravo"
       },
       {
-        "@id": "urn:ngm:class:openzeppelin-governor",
+        "@id": "urn:ngm:class:open-zeppelin-governor",
         "label": "OpenZeppelin Governor"
       }
     ],
@@ -129,10 +125,6 @@ public:: true
       {
         "@id": "urn:ngm:class:token-weighted-voting",
         "label": "Token-Weighted Voting"
-      },
-      {
-        "@id": "urn:ngm:class:delegate-profile",
-        "label": "Delegate Profile"
       }
     ],
     "contrastsWith": [

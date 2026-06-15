@@ -23,52 +23,134 @@ public:: true
   "definition": "Multi-Signature (multisig) is a cryptographic access-control scheme requiring that a transaction or operation be authorised by a threshold number m out of a defined set of n independent private keys before it is considered valid. Commonly expressed as m-of-n (e.g. 2-of-3), multisig eliminates single points of failure in key custody and enforces shared governance over digital assets, smart contracts, or any access-controlled resource. It is foundational to institutional cryptocurrency custody, DAO treasury management, bridge security, and hardware-secure wallet architectures. Multisig schemes may be implemented at the protocol layer, at the script level (as in Bitcoin P2SH/P2WSH), or at the application layer via smart contracts such as Gnosis Safe.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:signature-scheme", "label": "Signature Scheme"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:signature-scheme",
+      "label": "Signature Scheme"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:multisig", "label": "Multisig"},
-    {"@id": "urn:ngm:class:m-of-n-signature", "label": "m-of-n Signature"}
+    {
+      "@id": "urn:ngm:class:multisig",
+      "label": "Multisig"
+    },
+    {
+      "@id": "urn:ngm:class:m-of-n-signature",
+      "label": "m-of-n Signature"
+    }
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:threshold-signature-scheme", "label": "Threshold Signature Scheme"},
-      {"@id": "urn:ngm:class:schnorr-signature", "label": "Schnorr Signature"},
-      {"@id": "urn:ngm:class:ecdsa", "label": "ECDSA"},
-      {"@id": "urn:ngm:class:pay-to-script-hash", "label": "Pay-to-Script-Hash"},
-      {"@id": "urn:ngm:class:hardware-security-module", "label": "Hardware Security Module"},
-      {"@id": "urn:ngm:class:key-ceremony", "label": "Key Ceremony"}
+      {
+        "@id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "@id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "@id": "urn:ngm:class:pay-to-script-hash",
+        "label": "Pay-to-Script-Hash"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "@id": "urn:ngm:class:key-ceremony",
+        "label": "Key Ceremony"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:multi-sig-governance", "label": "Multi Sig Governance"},
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
-      {"@id": "urn:ngm:class:multi-signature-wallet", "label": "Multi-Signature Wallet"},
-      {"@id": "urn:ngm:class:institutional-custody", "label": "Institutional Custody"},
-      {"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"}
+      {
+        "@id": "urn:ngm:class:multi-sig-governance",
+        "label": "Multi Sig Governance"
+      },
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:multi-signature-wallet",
+        "label": "Multi-Signature Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-custody",
+        "label": "Institutional Custody"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-keys", "label": "Cryptographic Keys"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"},
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}
+      {
+        "@id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:key-management", "label": "Key Management"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:threshold-cryptography", "label": "Threshold Cryptography"}
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:single-signature", "label": "Single Signature"},
-      {"@id": "urn:ngm:class:mpc-wallet", "label": "MPC Wallet"}
+      {
+        "@id": "urn:ngm:class:mpc-wallet",
+        "label": "MPC Wallet"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:bitcoin-improvement-proposal", "label": "Bitcoin Improvement Proposal"},
-      {"@id": "urn:ngm:class:eip", "label": "EIP"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
+        "label": "Bitcoin Improvement Proposal"
+      },
+      {
+        "@id": "urn:ngm:class:eip",
+        "label": "EIP"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
     ]
   },
   "quality": 0.74,

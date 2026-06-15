@@ -32,12 +32,8 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:large-scale-pre-training",
+        "id": "urn:ngm:class:pre-training",
         "label": "Large-Scale Pre-Training"
-      },
-      {
-        "id": "urn:ngm:class:image-classification-dataset",
-        "label": "Image Classification Dataset"
       }
     ],
     "enables": [
@@ -52,10 +48,6 @@
       {
         "id": "urn:ngm:class:video-understanding",
         "label": "Video Understanding"
-      },
-      {
-        "id": "urn:ngm:class:self-supervised-visual-representation",
-        "label": "Self-Supervised Visual Representation"
       }
     ],
     "dependsOn": [],
@@ -92,10 +84,6 @@
       {
         "id": "urn:ngm:class:patch-embedding",
         "label": "Patch Embedding"
-      },
-      {
-        "id": "urn:ngm:class:transformer-encoder",
-        "label": "Transformer Encoder"
       }
     ],
     "supports": [],
@@ -109,10 +97,6 @@
       {
         "id": "urn:ngm:class:contrastive-learning",
         "label": "Contrastive Learning"
-      },
-      {
-        "id": "urn:ngm:class:swin-transformer",
-        "label": "Swin Transformer"
       },
       {
         "id": "urn:ngm:class:masked-image-modelling",

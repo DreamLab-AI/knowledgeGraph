@@ -106,7 +106,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:global-collaboration",
+        "@id": "urn:ngm:class:collaboration",
         "label": "Global Collaboration"
       },
       {

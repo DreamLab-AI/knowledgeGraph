@@ -18,16 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:thread-border-router",
-        "label": "Thread Border Router"
-      },
-      {
         "id": "urn:ngm:class:openthread",
         "label": "OpenThread"
-      },
-      {
-        "id": "urn:ngm:class:thread-commissioning-protocol",
-        "label": "Thread Commissioning Protocol"
       }
     ],
     "requires": [
@@ -54,13 +46,13 @@
         "label": "Smart Home Automation"
       },
       {
-        "id": "urn:ngm:class:industrial-iot",
+        "id": "urn:ngm:class:industrial-io-t",
         "label": "Industrial IoT"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:aes-128-encryption",
+        "id": "urn:ngm:class:symmetric-encryption",
         "label": "AES-128 Encryption"
       },
       {
@@ -72,10 +64,6 @@
       {
         "id": "urn:ngm:class:mesh-networking",
         "label": "Mesh Networking"
-      },
-      {
-        "id": "urn:ngm:class:link-state-routing",
-        "label": "Link-State Routing"
       }
     ],
     "contrastsWith": [
@@ -132,12 +120,7 @@
         "label": "Thread Group"
       }
     ],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:iot-networking-stack",
-        "label": "IoT Networking Stack"
-      }
-    ],
+    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:mesh-routing-software",

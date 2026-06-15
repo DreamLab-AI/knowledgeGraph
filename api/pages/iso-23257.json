@@ -18,14 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:blockchain-reference-architecture",
-        "label": "Blockchain Reference Architecture"
-      },
-      {
-        "id": "urn:ngm:class:dlt-node",
-        "label": "DLT Node"
-      },
-      {
         "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
       }
@@ -46,12 +38,8 @@
         "label": "Blockchain Interoperability"
       },
       {
-        "id": "urn:ngm:class:system-conformance",
+        "id": "urn:ngm:class:standards-conformance",
         "label": "System Conformance"
-      },
-      {
-        "id": "urn:ngm:class:vendor-neutral-procurement",
-        "label": "Vendor-Neutral Procurement"
       }
     ],
     "dependsOn": [],
@@ -67,7 +55,7 @@
         "label": "ISO 22739"
       },
       {
-        "id": "urn:ngm:class:nist-blockchain-framework",
+        "id": "urn:ngm:class:nist-blockchain-technology-overview",
         "label": "NIST Blockchain Framework"
       }
     ],
@@ -123,19 +111,11 @@
       {
         "id": "urn:ngm:class:iso-tc-307",
         "label": "ISO TC 307"
-      },
-      {
-        "id": "urn:ngm:class:blockchain-standards",
-        "label": "Blockchain Standards"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:iso-24643",
-        "label": "ISO 24643"
-      },
-      {
-        "id": "urn:ngm:class:w3c-did",
+        "id": "urn:ngm:class:w3-c-did",
         "label": "W3C DID"
       },
       {

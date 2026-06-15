@@ -18,14 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:focal-length",
-        "label": "Focal Length"
-      },
-      {
-        "id": "urn:ngm:class:principal-point",
-        "label": "Principal Point"
-      },
-      {
         "id": "urn:ngm:class:lens-distortion-model",
         "label": "Lens Distortion Model"
       }
@@ -34,10 +26,6 @@
       {
         "id": "urn:ngm:class:camera-calibration",
         "label": "Camera Calibration"
-      },
-      {
-        "id": "urn:ngm:class:reprojection-error-minimisation",
-        "label": "Reprojection Error Minimisation"
       }
     ],
     "enables": [
@@ -52,10 +40,6 @@
       {
         "id": "urn:ngm:class:stereo-vision",
         "label": "Stereo Vision"
-      },
-      {
-        "id": "urn:ngm:class:image-undistortion",
-        "label": "Image Undistortion"
       },
       {
         "id": "urn:ngm:class:depth-estimation",
@@ -104,10 +88,6 @@
       {
         "id": "urn:ngm:class:camera-model",
         "label": "Camera Model"
-      },
-      {
-        "id": "urn:ngm:class:projection-matrix",
-        "label": "Projection Matrix"
       }
     ],
     "relatedTo": [

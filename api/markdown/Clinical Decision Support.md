@@ -70,56 +70,118 @@ public:: true
     "label": "Medical AI"
   },
   "relations": {
-    "hasPart": [
-      {"@id": "urn:ngm:class:drug-interaction-checking", "label": "Drug Interaction Checking"},
-      {"@id": "urn:ngm:class:alert-fatigue-management", "label": "Alert Fatigue Management"},
-      {"@id": "urn:ngm:class:clinical-pathway-guidance", "label": "Clinical Pathway Guidance"}
-    ],
     "partOf": [
-      {"@id": "urn:ngm:class:electronic-health-record", "label": "Electronic Health Record"}
+      {
+        "@id": "urn:ngm:class:electronic-health-record",
+        "label": "Electronic Health Record"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:data-integration", "label": "Data Integration"},
-      {"@id": "urn:ngm:class:electronic-health-record", "label": "Electronic Health Record"},
-      {"@id": "urn:ngm:class:medical-knowledge-base", "label": "Medical Knowledge Base"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "@id": "urn:ngm:class:electronic-health-record",
+        "label": "Electronic Health Record"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-base",
+        "label": "Medical Knowledge Base"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:treatment-planning-ai", "label": "Treatment Planning AI"},
-      {"@id": "urn:ngm:class:medical-diagnosis-ai", "label": "Medical Diagnosis AI"},
-      {"@id": "urn:ngm:class:medication-safety", "label": "Medication Safety"},
-      {"@id": "urn:ngm:class:preventive-care", "label": "Preventive Care"}
+      {
+        "@id": "urn:ngm:class:treatment-planning-ai",
+        "label": "Treatment Planning AI"
+      },
+      {
+        "@id": "urn:ngm:class:medical-diagnosis-ai",
+        "label": "Medical Diagnosis AI"
+      },
+      {
+        "@id": "urn:ngm:class:medication-safety",
+        "label": "Medication Safety"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:medical-ai", "label": "Medical AI"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:rule-based-systems", "label": "Rule-Based Systems"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:medical-ai",
+        "label": "Medical AI"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based Systems"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:evidence-based-medicine", "label": "Evidence-Based Medicine"},
-      {"@id": "urn:ngm:class:patient-safety", "label": "Patient Safety"}
+      {
+        "@id": "urn:ngm:class:evidence-based-medicine",
+        "label": "Evidence-Based Medicine"
+      },
+      {
+        "@id": "urn:ngm:class:patient-safety",
+        "label": "Patient Safety"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:hl7-fhir", "label": "HL7 FHIR"},
-      {"@id": "urn:ngm:class:cds-hooks", "label": "CDS Hooks"}
+      {
+        "@id": "urn:ngm:class:hl7-fhir",
+        "label": "HL7 FHIR"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:autonomous-medical-ai", "label": "Autonomous Medical AI"}
+      {
+        "@id": "urn:ngm:class:autonomous-medical-ai",
+        "label": "Autonomous Medical AI"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:healthcare-analytics", "label": "Healthcare Analytics"},
-      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"}
+      {
+        "@id": "urn:ngm:class:healthcare-analytics",
+        "label": "Healthcare Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
-      {"@id": "urn:ngm:class:health-data-privacy", "label": "Health Data Privacy"}
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:health-data-privacy",
+        "label": "Health Data Privacy"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:computerized-decision-support", "label": "Computerized Decision Support"},
-    {"@id": "urn:ngm:class:cdss", "label": "CDSS"}
+    {
+      "@id": "urn:ngm:class:computerized-decision-support",
+      "label": "Computerized Decision Support"
+    },
+    {
+      "@id": "urn:ngm:class:cdss",
+      "label": "CDSS"
+    }
   ],
   "quality": 0.72,
   "provenance": {

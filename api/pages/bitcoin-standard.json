@@ -33,7 +33,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:bitcoin-treasury-reserve",
+        "id": "urn:ngm:class:strategic-bitcoin-reserve",
         "label": "Bitcoin Treasury Reserve"
       },
       {
@@ -41,17 +41,17 @@
         "label": "Sovereign Bitcoin Adoption"
       },
       {
-        "id": "urn:ngm:class:bitcoin-etf",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf",
         "label": "Bitcoin ETF"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:network-effect",
+        "id": "urn:ngm:class:network-effects",
         "label": "Network Effect"
       },
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       }
     ],
@@ -90,7 +90,7 @@
         "label": "Cryptocurrency"
       },
       {
-        "id": "urn:ngm:class:bitcoin-mining",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
         "label": "Bitcoin Mining"
       },
       {

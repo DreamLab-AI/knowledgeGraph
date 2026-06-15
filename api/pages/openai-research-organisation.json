@@ -26,20 +26,12 @@
         "label": "ChatGPT"
       },
       {
-        "id": "urn:ngm:class:dall-e",
+        "id": "urn:ngm:class:dall-e-3",
         "label": "DALL-E"
-      },
-      {
-        "id": "urn:ngm:class:codex",
-        "label": "Codex"
       },
       {
         "id": "urn:ngm:class:whisper",
         "label": "Whisper"
-      },
-      {
-        "id": "urn:ngm:class:sora",
-        "label": "Sora"
       }
     ],
     "requires": [],
@@ -86,7 +78,7 @@
         "label": "DeepMind"
       },
       {
-        "id": "urn:ngm:class:meta-ai-research",
+        "id": "urn:ngm:class:meta-ai",
         "label": "Meta AI Research"
       }
     ],

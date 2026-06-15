@@ -330,10 +330,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:cartesian-space",
-        "label": "Cartesian Space"
-      },
-      {
         "@id": "urn:ngm:class:denavit-hartenberg-parameters",
         "label": "Denavit-Hartenberg Parameters"
       },
@@ -342,16 +338,8 @@ public:: true
         "label": "Jacobian Matrix"
       },
       {
-        "@id": "urn:ngm:class:joint-space",
-        "label": "Joint Space"
-      },
-      {
         "@id": "urn:ngm:class:redundancy-resolution",
         "label": "Redundancy Resolution"
-      },
-      {
-        "@id": "urn:ngm:class:screw-theory",
-        "label": "Screw Theory"
       },
       {
         "@id": "urn:ngm:class:singularity-analysis",
@@ -378,23 +366,15 @@ public:: true
       {
         "@id": "urn:ngm:class:reference-frames",
         "label": "Reference Frames"
-      },
-      {
-        "@id": "urn:ngm:class:robot-description-format",
-        "label": "Robot Description Format"
-      },
-      {
-        "@id": "urn:ngm:class:se-3-lie-group",
-        "label": "SE(3) Lie Group"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:cartesian-impedance-control",
+        "@id": "urn:ngm:class:impedance-control",
         "label": "Cartesian Impedance Control"
       },
       {
-        "@id": "urn:ngm:class:robot-calibration",
+        "@id": "urn:ngm:class:calibration",
         "label": "Robot Calibration"
       },
       {
@@ -424,24 +404,8 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:closed-form-ik",
-        "label": "Closed-Form IK"
-      },
-      {
-        "@id": "urn:ngm:class:dh-convention",
-        "label": "DH Convention"
-      },
-      {
-        "@id": "urn:ngm:class:iterative-jacobian-solver",
-        "label": "Iterative Jacobian Solver"
-      },
-      {
-        "@id": "urn:ngm:class:neural-inverse-kinematics",
+        "@id": "urn:ngm:class:inverse-kinematics",
         "label": "Neural Inverse Kinematics"
-      },
-      {
-        "@id": "urn:ngm:class:product-of-exponentials",
-        "label": "Product of Exponentials"
       }
     ],
     "uses": [
@@ -450,16 +414,12 @@ public:: true
         "label": "Drake"
       },
       {
-        "@id": "urn:ngm:class:gazebo",
+        "@id": "urn:ngm:class:gazebo-simulator",
         "label": "Gazebo"
       },
       {
         "@id": "urn:ngm:class:mu-jo-co",
         "label": "MuJoCo"
-      },
-      {
-        "@id": "urn:ngm:class:pinocchio-library",
-        "label": "Pinocchio Library"
       },
       {
         "@id": "urn:ngm:class:ros",
@@ -480,7 +440,7 @@ public:: true
         "label": "Calibration"
       },
       {
-        "@id": "urn:ngm:class:manipulability-ellipsoid",
+        "@id": "urn:ngm:class:rb-0032-manipulability",
         "label": "Manipulability Ellipsoid"
       },
       {
@@ -528,11 +488,11 @@ public:: true
         "label": "IEEE Robotics And Automation Society"
       },
       {
-        "@id": "urn:ngm:class:ros-industrial-consortium",
+        "@id": "urn:ngm:class:ros-industrial",
         "label": "ROS Industrial Consortium"
       },
       {
-        "@id": "urn:ngm:class:urdf-specification",
+        "@id": "urn:ngm:class:urdf",
         "label": "URDF Specification"
       }
     ],

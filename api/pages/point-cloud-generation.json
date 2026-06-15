@@ -20,10 +20,6 @@
       {
         "id": "urn:ngm:class:point-cloud-registration",
         "label": "Point Cloud Registration"
-      },
-      {
-        "id": "urn:ngm:class:surface-normal-estimation",
-        "label": "Surface Normal Estimation"
       }
     ],
     "requires": [
@@ -60,10 +56,6 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:range-imaging",
-        "label": "Range Imaging"
-      },
-      {
         "id": "urn:ngm:class:calibration",
         "label": "Calibration"
       }
@@ -99,7 +91,7 @@
         "label": "Depth Sensing"
       },
       {
-        "id": "urn:ngm:class:structured-light-scanning",
+        "id": "urn:ngm:class:structured-light",
         "label": "Structured Light Scanning"
       },
       {

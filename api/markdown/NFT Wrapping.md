@@ -110,10 +110,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:metadata-mapping",
-        "label": "Metadata Mapping"
-      },
-      {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       },
@@ -144,10 +140,6 @@ public:: true
       {
         "@id": "urn:ngm:class:cross-chain-asset-transfer",
         "label": "Cross Chain Asset Transfer"
-      },
-      {
-        "@id": "urn:ngm:class:enhanced-token-functionality",
-        "label": "Enhanced Token Functionality"
       }
     ],
     "partOf": [

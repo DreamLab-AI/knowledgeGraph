@@ -73,12 +73,8 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
-      },
-      {
-        "@id": "urn:ngm:class:xml-digital-signature",
-        "label": "XML Digital Signature"
       },
       {
         "@id": "urn:ngm:class:xml-encryption",
@@ -115,12 +111,8 @@ public:: true
         "label": "OAuth 2.0"
       },
       {
-        "@id": "urn:ngm:class:openid-connect",
+        "@id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
-      },
-      {
-        "@id": "urn:ngm:class:ws-federation",
-        "label": "WS-Federation"
       }
     ],
     "relatedTo": [
@@ -129,7 +121,7 @@ public:: true
         "label": "Identity Provider"
       },
       {
-        "@id": "urn:ngm:class:service-provider",
+        "@id": "urn:ngm:class:provider",
         "label": "Service Provider"
       },
       {
@@ -145,7 +137,7 @@ public:: true
         "label": "Attribute-Based Access Control"
       },
       {
-        "@id": "urn:ngm:class:directory-services",
+        "@id": "urn:ngm:class:directory-service",
         "label": "Directory Services"
       }
     ],

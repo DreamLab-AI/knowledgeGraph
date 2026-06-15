@@ -120,10 +120,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:velocity-profile",
-        "label": "Velocity Profile"
-      },
-      {
         "@id": "urn:ngm:class:acceleration-profile",
         "label": "Acceleration Profile"
       },
@@ -134,7 +130,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:robot-control-pipeline",
+        "@id": "urn:ngm:class:robot-control",
         "label": "Robot Control Pipeline"
       }
     ],
@@ -150,21 +146,9 @@ public:: true
       {
         "@id": "urn:ngm:class:start-configuration",
         "label": "Start Configuration"
-      },
-      {
-        "@id": "urn:ngm:class:kinematic-constraints",
-        "label": "Kinematic Constraints"
-      },
-      {
-        "@id": "urn:ngm:class:dynamic-constraints",
-        "label": "Dynamic Constraints"
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:robot-motion",
-        "label": "Robot Motion"
-      },
       {
         "@id": "urn:ngm:class:task-execution",
         "label": "Task Execution"
@@ -208,7 +192,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:autonomous-vehicles",
+        "@id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
       },
       {
@@ -230,16 +214,6 @@ public:: true
       {
         "@id": "urn:ngm:class:model-predictive-control",
         "label": "Model Predictive Control"
-      }
-    ],
-    "relatedTo": [
-      {
-        "@id": "urn:ngm:class:continuity",
-        "label": "Continuity"
-      },
-      {
-        "@id": "urn:ngm:class:smoothness",
-        "label": "Smoothness"
       }
     ]
   },

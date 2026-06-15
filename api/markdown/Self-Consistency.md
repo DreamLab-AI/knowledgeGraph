@@ -38,52 +38,117 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:chain-of-thought", "label": "Chain of Thought"},
-      {"@id": "urn:ngm:class:stochastic-sampling", "label": "Stochastic Sampling"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"},
-      {"@id": "urn:ngm:class:reliability", "label": "Reliability"},
-      {"@id": "urn:ngm:class:robustness", "label": "Robustness"},
-      {"@id": "urn:ngm:class:error-correction", "label": "Error Correction"}
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      },
+      {
+        "@id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      },
+      {
+        "@id": "urn:ngm:class:error-correction",
+        "label": "Error Correction"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:majority-voting", "label": "Majority Voting"},
-      {"@id": "urn:ngm:class:temperature-sampling", "label": "Temperature Sampling"},
-      {"@id": "urn:ngm:class:ensemble-methods", "label": "Ensemble Methods"}
+      {
+        "@id": "urn:ngm:class:majority-voting",
+        "label": "Majority Voting"
+      },
+      {
+        "@id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Methods"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:inference-compute", "label": "Inference Compute"},
-      {"@id": "urn:ngm:class:token-generation", "label": "Token Generation"}
+      {
+        "@id": "urn:ngm:class:inference-compute",
+        "label": "Inference Compute"
+      },
+      {
+        "@id": "urn:ngm:class:token-generation",
+        "label": "Token Generation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:ensemble-decoding", "label": "Ensemble Decoding"},
-      {"@id": "urn:ngm:class:test-time-compute", "label": "Test-Time Compute"}
+      {
+        "@id": "urn:ngm:class:test-time-compute",
+        "label": "Test-Time Compute"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:mathematical-reasoning", "label": "Mathematical Reasoning"},
-      {"@id": "urn:ngm:class:commonsense-reasoning", "label": "Commonsense Reasoning"},
-      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"}
+      {
+        "@id": "urn:ngm:class:mathematical-reasoning",
+        "label": "Mathematical Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:commonsense-reasoning",
+        "label": "Commonsense Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:greedy-decoding", "label": "Greedy Decoding"},
-      {"@id": "urn:ngm:class:beam-search", "label": "Beam Search"}
+      {
+        "@id": "urn:ngm:class:greedy-decoding",
+        "label": "Greedy Decoding"
+      },
+      {
+        "@id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:process-reward-models", "label": "Process Reward Models"},
-      {"@id": "urn:ngm:class:tree-of-thoughts", "label": "Tree of Thoughts"},
-      {"@id": "urn:ngm:class:mixture-of-agents", "label": "Mixture of Agents"}
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:process-reward-models",
+        "label": "Process Reward Models"
+      },
+      {
+        "@id": "urn:ngm:class:tree-of-thoughts",
+        "label": "Tree of Thoughts"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
-      {"@id": "urn:ngm:class:collective-intelligence", "label": "Collective Intelligence"}
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:consistency-voting", "label": "Consistency Voting"},
-    {"@id": "urn:ngm:class:reasoning-ensemble", "label": "Reasoning Ensemble"}
+    {
+      "@id": "urn:ngm:class:consistency-voting",
+      "label": "Consistency Voting"
+    },
+    {
+      "@id": "urn:ngm:class:reasoning-ensemble",
+      "label": "Reasoning Ensemble"
+    }
   ],
   "quality": 0.74,
   "provenance": {

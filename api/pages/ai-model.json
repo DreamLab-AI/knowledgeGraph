@@ -61,17 +61,17 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:machine-learning-algorithm",
+        "id": "urn:ngm:class:learning-algorithm",
         "label": "Machine Learning Algorithm"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:rule-based-system",
+        "id": "urn:ngm:class:rule-based-systems",
         "label": "Rule-Based System"
       },
       {
-        "id": "urn:ngm:class:expert-system",
+        "id": "urn:ngm:class:expert-systems",
         "label": "Expert System"
       }
     ],

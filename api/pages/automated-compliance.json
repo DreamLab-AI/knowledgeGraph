@@ -19,10 +19,6 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:machine-readable-policy",
-        "label": "Machine-Readable Policy"
-      },
-      {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
       },
@@ -45,18 +41,14 @@
         "label": "Compliance Audit Trail"
       },
       {
-        "id": "urn:ngm:class:continuous-auditing",
+        "id": "urn:ngm:class:algorithmic-auditing",
         "label": "Continuous Auditing"
-      },
-      {
-        "id": "urn:ngm:class:real-time-reporting",
-        "label": "Real-Time Reporting"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:compliance-as-code",
+        "id": "urn:ngm:class:compliance",
         "label": "Compliance as Code"
       },
       {
@@ -66,7 +58,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:manual-audit",
+        "id": "urn:ngm:class:audit",
         "label": "Manual Audit"
       }
     ],

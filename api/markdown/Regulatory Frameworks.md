@@ -71,7 +71,7 @@ public:: true
         "label": "Regulatory Requirements"
       },
       {
-        "@id": "urn:ngm:class:enforcement-mechanisms",
+        "@id": "urn:ngm:class:enforcement-mechanism",
         "label": "Enforcement Mechanisms"
       },
       {
@@ -79,7 +79,7 @@ public:: true
         "label": "Supervisory Authority"
       },
       {
-        "@id": "urn:ngm:class:compliance-obligations",
+        "@id": "urn:ngm:class:compliance",
         "label": "Compliance Obligations"
       }
     ],
@@ -87,10 +87,6 @@ public:: true
       {
         "@id": "urn:ngm:class:governance",
         "label": "Governance"
-      },
-      {
-        "@id": "urn:ngm:class:policy-infrastructure",
-        "label": "Policy Infrastructure"
       }
     ],
     "requires": [
@@ -135,10 +131,6 @@ public:: true
       {
         "@id": "urn:ngm:class:policy",
         "label": "Policy"
-      },
-      {
-        "@id": "urn:ngm:class:international-agreements",
-        "label": "International Agreements"
       }
     ],
     "supports": [

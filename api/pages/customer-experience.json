@@ -20,14 +20,6 @@
       {
         "id": "urn:ngm:class:omnichannel-orchestration",
         "label": "Omnichannel Orchestration"
-      },
-      {
-        "id": "urn:ngm:class:net-promoter-score",
-        "label": "Net Promoter Score"
-      },
-      {
-        "id": "urn:ngm:class:customer-effort-score",
-        "label": "Customer Effort Score"
       }
     ],
     "requires": [
@@ -56,10 +48,6 @@
       {
         "id": "urn:ngm:class:customer-retention",
         "label": "Customer Retention"
-      },
-      {
-        "id": "urn:ngm:class:brand-advocacy",
-        "label": "Brand Advocacy"
       }
     ],
     "dependsOn": [],
@@ -95,10 +83,6 @@
       {
         "id": "urn:ngm:class:journey-mapping",
         "label": "Journey Mapping"
-      },
-      {
-        "id": "urn:ngm:class:voice-of-customer",
-        "label": "Voice of Customer"
       }
     ],
     "supports": [],

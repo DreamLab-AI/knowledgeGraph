@@ -58,7 +58,7 @@
         "label": "DIDComm"
       },
       {
-        "id": "urn:ngm:class:zero-trust-access-control",
+        "id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero-Trust Access Control"
       },
       {
@@ -69,13 +69,13 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:decentralised-identifier-architecture",
+        "id": "urn:ngm:class:decentralised-identifier",
         "label": "Decentralised Identifier Architecture"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:oauth-2",
+        "id": "urn:ngm:class:oauth-2-0",
         "label": "OAuth 2"
       },
       {
@@ -89,21 +89,21 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:eidas-2",
+        "id": "urn:ngm:class:e-idas-2-0",
         "label": "eIDAS 2"
       },
       {
-        "id": "urn:ngm:class:openid-connect",
+        "id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {

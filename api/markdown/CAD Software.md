@@ -23,59 +23,131 @@ public:: true
   "definition": "Computer-Aided Design (CAD) software is a category of application that enables engineers, architects, and designers to create, modify, analyse, and optimise two-dimensional drawings and three-dimensional geometric models of physical artefacts and structures. CAD tools encode geometry using boundary representation (B-rep) or constructive solid geometry (CSG) methods, support parametric constraint-based modelling, and produce outputs usable in manufacturing, simulation, and visualisation pipelines.",
   "domain": "spatial-computing",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:design-software", "label": "Design Software"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:design-software",
+      "label": "Design Software"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:constraint-solver", "label": "Constraint Solver"},
-      {"@id": "urn:ngm:class:parametric-history-tree", "label": "Parametric History Tree"},
-      {"@id": "urn:ngm:class:geometric-kernel", "label": "Geometric Kernel"}
+      {
+        "@id": "urn:ngm:class:constraint-solver",
+        "label": "Constraint Solver"
+      },
+      {
+        "@id": "urn:ngm:class:geometric-kernel",
+        "label": "Geometric Kernel"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:nurbs-geometry", "label": "NURBS Geometry"},
-      {"@id": "urn:ngm:class:boundary-representation", "label": "Boundary Representation"}
+      {
+        "@id": "urn:ngm:class:computational-geometry",
+        "label": "NURBS Geometry"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:parametric-design-methodology-modeling", "label": "Parametric Modeling"},
-      {"@id": "urn:ngm:class:manufacturing-process", "label": "Manufacturing Process"},
-      {"@id": "urn:ngm:class:product-design", "label": "Product Design"},
-      {"@id": "urn:ngm:class:finite-element-analysis", "label": "Finite Element Analysis"},
-      {"@id": "urn:ngm:class:generative-design", "label": "Generative Design"},
-      {"@id": "urn:ngm:class:additive-manufacturing", "label": "Additive Manufacturing"}
+      {
+        "@id": "urn:ngm:class:parametric-design-methodology-modeling",
+        "label": "Parametric Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:manufacturing-process",
+        "label": "Manufacturing Process"
+      },
+      {
+        "@id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      },
+      {
+        "@id": "urn:ngm:class:finite-element-analysis",
+        "label": "Finite Element Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:generative-design",
+        "label": "Generative Design"
+      },
+      {
+        "@id": "urn:ngm:class:additive-manufacturing",
+        "label": "Additive Manufacturing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:mesh-data", "label": "Mesh Data"},
-      {"@id": "urn:ngm:class:step-file-format", "label": "STEP File Format"}
+      {
+        "@id": "urn:ngm:class:mesh-data",
+        "label": "Mesh Data"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-file-format",
+        "label": "STEP File Format"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:geometric-kernel", "label": "Geometric Kernel"},
-      {"@id": "urn:ngm:class:computer-graphics", "label": "Computer Graphics"}
+      {
+        "@id": "urn:ngm:class:geometric-kernel",
+        "label": "Geometric Kernel"
+      },
+      {
+        "@id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:constructive-solid-geometry", "label": "Constructive Solid Geometry"},
-      {"@id": "urn:ngm:class:parametric-constraint-solving", "label": "Parametric Constraint Solving"}
+      {
+        "@id": "urn:ngm:class:computational-geometry",
+        "label": "Constructive Solid Geometry"
+      },
+      {
+        "@id": "urn:ngm:class:constraint-solver",
+        "label": "Parametric Constraint Solving"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:simulation-driven-design", "label": "Simulation-Driven Design"},
-      {"@id": "urn:ngm:class:cnc-machining", "label": "CNC Machining"}
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation-Driven Design"
+      },
+      {
+        "@id": "urn:ngm:class:cnc-machining",
+        "label": "CNC Machining"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-10303-step", "label": "ISO 10303 STEP"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:manual-drafting", "label": "Manual Drafting"}
+      {
+        "@id": "urn:ngm:class:iso-10303-step",
+        "label": "ISO 10303 STEP"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:building-information-modeling", "label": "Building Information Modeling"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:building-information-modeling",
+        "label": "Building Information Modeling"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:manufacturing-automation", "label": "Manufacturing Automation"},
-      {"@id": "urn:ngm:class:electronic-design-automation", "label": "Electronic Design Automation"}
+      {
+        "@id": "urn:ngm:class:manufacturing-automation",
+        "label": "Manufacturing Automation"
+      },
+      {
+        "@id": "urn:ngm:class:electronic-design-automation",
+        "label": "Electronic Design Automation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:computer-aided-design", "label": "Computer-Aided Design"}
+    {
+      "@id": "urn:ngm:class:computer-aided-design",
+      "label": "Computer-Aided Design"
+    }
   ],
   "quality": 0.8,
   "provenance": {

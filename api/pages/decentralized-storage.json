@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:storage-node",
+        "id": "urn:ngm:class:node",
         "label": "Storage Node"
       },
       {
@@ -104,7 +104,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:token-incentive",
+        "id": "urn:ngm:class:token",
         "label": "Token Incentive"
       }
     ],

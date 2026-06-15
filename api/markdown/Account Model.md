@@ -90,54 +90,123 @@ public:: true
   ],
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:utxo-model", "label": "UTXO Model"}
+      {
+        "@id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:transaction-processing", "label": "Transaction Processing"},
-      {"@id": "urn:ngm:class:decentralised-application", "label": "Decentralised Application"},
-      {"@id": "urn:ngm:class:token-standard", "label": "Token Standard"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-processing",
+        "label": "Transaction Processing"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:transaction", "label": "Transaction"},
-      {"@id": "urn:ngm:class:wallet", "label": "Wallet"},
-      {"@id": "urn:ngm:class:nonce", "label": "Nonce"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"}
+      {
+        "@id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:nonce",
+        "label": "Nonce"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:account-balance", "label": "Account Balance"},
-      {"@id": "urn:ngm:class:account-nonce", "label": "Account Nonce"},
-      {"@id": "urn:ngm:class:contract-storage", "label": "Contract Storage"}
+      {
+        "@id": "urn:ngm:class:nonce",
+        "label": "Account Nonce"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:merkle-patricia-trie", "label": "Merkle Patricia Trie"},
-      {"@id": "urn:ngm:class:state-root", "label": "State Root"}
+      {
+        "@id": "urn:ngm:class:merkle-patricia-trie",
+        "label": "Merkle Patricia Trie"
+      },
+      {
+        "@id": "urn:ngm:class:state-root",
+        "label": "State Root"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:ledger-model", "label": "Ledger Model"}
+      {
+        "@id": "urn:ngm:class:ledger",
+        "label": "Ledger Model"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:reentrancy-protection", "label": "Reentrancy Protection"},
-      {"@id": "urn:ngm:class:gas-mechanism", "label": "Gas Mechanism"}
+      {
+        "@id": "urn:ngm:class:gas-mechanism",
+        "label": "Gas Mechanism"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:double-spending", "label": "Double Spending"},
-      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"},
-      {"@id": "urn:ngm:class:cryptographic-keys", "label": "Cryptographic Keys"},
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:externally-owned-account", "label": "Externally Owned Account"}
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:double-spending",
+        "label": "Double Spending"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:externally-owned-account",
+        "label": "Externally Owned Account"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:balance-based-ledger", "label": "Balance-Based Ledger"}
+    {
+      "@id": "urn:ngm:class:balance-based-ledger",
+      "label": "Balance-Based Ledger"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

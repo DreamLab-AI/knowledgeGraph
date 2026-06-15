@@ -16,24 +16,7 @@
   "qualityScore": 0.75,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:computer-laboratory",
-        "label": "Computer Laboratory"
-      },
-      {
-        "id": "urn:ngm:class:cavendish-laboratory",
-        "label": "Cavendish Laboratory"
-      },
-      {
-        "id": "urn:ngm:class:machine-intelligence-laboratory",
-        "label": "Machine Intelligence Laboratory"
-      },
-      {
-        "id": "urn:ngm:class:cambridge-centre-for-ai-in-medicine",
-        "label": "Cambridge Centre for AI in Medicine"
-      }
-    ],
+    "hasPart": [],
     "requires": [],
     "enables": [
       {
@@ -49,7 +32,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:quantum-computing",
+        "id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
       },
       {
@@ -94,10 +77,6 @@
       {
         "id": "urn:ngm:class:russell-group",
         "label": "Russell Group"
-      },
-      {
-        "id": "urn:ngm:class:cambridge-cluster",
-        "label": "Cambridge Cluster"
       }
     ],
     "relatedTo": [
@@ -118,12 +97,8 @@
         "label": "University of Manchester"
       },
       {
-        "id": "urn:ngm:class:oxford-university",
+        "id": "urn:ngm:class:university-of-oxford",
         "label": "University of Oxford"
-      },
-      {
-        "id": "urn:ngm:class:mit",
-        "label": "MIT"
       },
       {
         "id": "urn:ngm:class:alan-turing-institute",

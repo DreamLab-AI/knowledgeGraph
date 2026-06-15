@@ -26,54 +26,14 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:conviction-accumulation-function",
-        "label": "Conviction Accumulation Function"
-      },
-      {
-        "id": "urn:ngm:class:decay-constant-alpha",
-        "label": "Decay Constant Alpha"
-      },
-      {
-        "id": "urn:ngm:class:minimum-conviction-threshold",
-        "label": "Minimum Conviction Threshold"
-      },
-      {
-        "id": "urn:ngm:class:proposal-executor",
-        "label": "Proposal Executor"
-      },
-      {
-        "id": "urn:ngm:class:proposal-stake-ledger",
-        "label": "Proposal Stake Ledger"
-      },
-      {
         "id": "urn:ngm:class:spending-limit",
         "label": "Spending Limit"
-      },
-      {
-        "id": "urn:ngm:class:trigger-threshold-function",
-        "label": "Trigger Threshold Function"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:block-indexed-time-reference",
-        "label": "Block-Indexed Time Reference"
-      },
-      {
-        "id": "urn:ngm:class:on-chain-or-off-chain-settlement-layer",
+        "id": "urn:ngm:class:settlement-layer",
         "label": "On-Chain or Off-Chain Settlement Layer"
-      },
-      {
-        "id": "urn:ngm:class:proposal-registry",
-        "label": "Proposal Registry"
-      },
-      {
-        "id": "urn:ngm:class:stake-registry",
-        "label": "Stake Registry"
-      },
-      {
-        "id": "urn:ngm:class:treasury-pool",
-        "label": "Treasury Pool"
       },
       {
         "id": "urn:ngm:class:governance-token",
@@ -82,117 +42,35 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:continuous-public-goods-funding",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
         "label": "Continuous Public Goods Funding"
-      },
-      {
-        "id": "urn:ngm:class:last-minute-attack-resistance",
-        "label": "Last-Minute Attack Resistance"
-      },
-      {
-        "id": "urn:ngm:class:organic-proposal-prioritisation",
-        "label": "Organic Proposal Prioritisation"
-      },
-      {
-        "id": "urn:ngm:class:passive-participation-tolerance",
-        "label": "Passive Participation Tolerance"
-      },
-      {
-        "id": "urn:ngm:class:time-weighted-preference-expression",
-        "label": "Time-Weighted Preference Expression"
       }
     ],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:continuous-time-preference-aggregation",
-        "label": "Continuous-Time Preference Aggregation"
-      },
-      {
-        "id": "urn:ngm:class:dynamic-spending-limit",
-        "label": "Dynamic Spending Limit"
-      },
-      {
-        "id": "urn:ngm:class:exponential-moving-average-aggregation",
-        "label": "Exponential Moving Average Aggregation"
-      },
-      {
-        "id": "urn:ngm:class:symmetric-stake-decay",
-        "label": "Symmetric Stake Decay"
-      },
-      {
-        "id": "urn:ngm:class:threshold-triggered-execution",
-        "label": "Threshold-Triggered Execution"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [
-      {
-        "id": "urn:ngm:class:block-number-as-discrete-time",
-        "label": "Block Number as Discrete Time"
-      },
       {
         "id": "urn:ngm:class:exponential-moving-average",
         "label": "Exponential Moving Average"
       },
       {
-        "id": "urn:ngm:class:lazy-conviction-evaluation",
-        "label": "Lazy Conviction Evaluation"
-      },
-      {
-        "id": "urn:ngm:class:solidity-smart-contracts",
+        "id": "urn:ngm:class:solidity",
         "label": "Solidity Smart Contracts"
-      },
-      {
-        "id": "urn:ngm:class:token-stake-locking",
-        "label": "Token Stake Locking"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:augmented-bonding-curve-communities",
-        "label": "Augmented Bonding Curve Communities"
-      },
-      {
-        "id": "urn:ngm:class:common-pool-resource-management",
+        "id": "urn:ngm:class:common-pool-resources",
         "label": "Common-Pool Resource Management"
-      },
-      {
-        "id": "urn:ngm:class:dao-treasury-operations",
-        "label": "DAO Treasury Operations"
       },
       {
         "id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
         "label": "Public Goods Funding"
-      },
-      {
-        "id": "urn:ngm:class:regenerative-cryptoeconomics",
-        "label": "Regenerative Cryptoeconomics"
       }
     ],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:1-hive-gardens-specification",
-        "label": "1Hive Gardens Specification"
-      },
-      {
-        "id": "urn:ngm:class:aragon-conviction-voting-app-abi",
-        "label": "Aragon Conviction Voting App ABI"
-      },
-      {
-        "id": "urn:ngm:class:cad-cad-reference-model",
-        "label": "cadCAD Reference Model"
-      },
-      {
-        "id": "urn:ngm:class:commons-stack-abc-spec",
-        "label": "Commons Stack ABC Spec"
-      },
-      {
-        "id": "urn:ngm:class:emmett-zargham-zartler-2019-paper",
-        "label": "Emmett Zargham Zartler 2019 Paper"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
@@ -204,32 +82,8 @@
         "label": "Aragon"
       },
       {
-        "id": "urn:ngm:class:block-science",
-        "label": "Block Science"
-      },
-      {
-        "id": "urn:ngm:class:celeste",
-        "label": "Celeste"
-      },
-      {
         "id": "urn:ngm:class:commons-stack",
         "label": "Commons Stack"
-      },
-      {
-        "id": "urn:ngm:class:gardens-framework",
-        "label": "Gardens Framework"
-      },
-      {
-        "id": "urn:ngm:class:giveth",
-        "label": "Giveth"
-      },
-      {
-        "id": "urn:ngm:class:praise",
-        "label": "Praise"
-      },
-      {
-        "id": "urn:ngm:class:token-engineering-commons",
-        "label": "Token Engineering Commons"
       }
     ]
   },

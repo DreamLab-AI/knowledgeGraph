@@ -16,20 +16,7 @@
   "qualityScore": 0.75,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:screen-space-ambient-occlusion",
-        "label": "Screen Space Ambient Occlusion"
-      },
-      {
-        "id": "urn:ngm:class:ray-traced-ambient-occlusion",
-        "label": "Ray-Traced Ambient Occlusion"
-      },
-      {
-        "id": "urn:ngm:class:baked-lightmap",
-        "label": "Baked Lightmap"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:scene-geometry",
@@ -50,12 +37,8 @@
         "label": "Real-Time Rendering"
       },
       {
-        "id": "urn:ngm:class:depth-perception",
+        "id": "urn:ngm:class:perception",
         "label": "Depth Perception"
-      },
-      {
-        "id": "urn:ngm:class:contact-shadow",
-        "label": "Contact Shadow"
       }
     ],
     "dependsOn": [],
@@ -94,7 +77,7 @@
         "label": "Depth Buffer"
       },
       {
-        "id": "urn:ngm:class:hemisphere-sampling",
+        "id": "urn:ngm:class:sampling",
         "label": "Hemisphere Sampling"
       },
       {
@@ -126,10 +109,6 @@
       {
         "id": "urn:ngm:class:occlusion-culling",
         "label": "Occlusion Culling"
-      },
-      {
-        "id": "urn:ngm:class:lightmap",
-        "label": "Lightmap"
       },
       {
         "id": "urn:ngm:class:neural-rendering",

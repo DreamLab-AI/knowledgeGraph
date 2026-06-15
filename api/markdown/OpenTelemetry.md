@@ -23,59 +23,109 @@ public:: true
   "definition": "OpenTelemetry (OTel) is a vendor-neutral open-source observability framework and CNCF project that provides unified APIs, SDKs, agents, and wire protocols for collecting distributed traces, metrics, and logs from software systems. It merges the OpenTracing and OpenCensus projects into a single standardised instrumentation layer, enabling consistent telemetry data collection regardless of the backend analysis platform. OpenTelemetry's OpenTelemetry Protocol (OTLP) has become the de-facto standard for telemetry data transport in cloud-native environments.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:monitoring-system", "label": "Monitoring System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:monitoring-system",
+      "label": "Monitoring System"
+    }
+  ],
   "relations": {
-    "hasPart": [
-      {"@id": "urn:ngm:class:otlp", "label": "OpenTelemetry Protocol (OTLP)"},
-      {"@id": "urn:ngm:class:otel-collector", "label": "OTel Collector"},
-      {"@id": "urn:ngm:class:otel-sdk", "label": "OTel SDK"}
-    ],
     "partOf": [
-      {"@id": "urn:ngm:class:cloud-native-computing-foundation", "label": "Cloud Native Computing Foundation"}
+      {
+        "@id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:context-propagation", "label": "Context Propagation"},
-      {"@id": "urn:ngm:class:distributed-tracing", "label": "Distributed Tracing"}
+      {
+        "@id": "urn:ngm:class:distributed-tracing",
+        "label": "Distributed Tracing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:cloud-native-applications", "label": "Cloud-Native Applications"},
-      {"@id": "urn:ngm:class:observability", "label": "Observability"},
-      {"@id": "urn:ngm:class:root-cause-analysis", "label": "Root-Cause Analysis"}
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "@id": "urn:ngm:class:root-cause-analysis",
+        "label": "Root-Cause Analysis"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:grpc", "label": "gRPC"},
-      {"@id": "urn:ngm:class:protobuf", "label": "Protocol Buffers"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:opentracing", "label": "OpenTracing"},
-      {"@id": "urn:ngm:class:opencensus", "label": "OpenCensus"}
+      {
+        "@id": "urn:ngm:class:grpc",
+        "label": "gRPC"
+      },
+      {
+        "@id": "urn:ngm:class:protobuf",
+        "label": "Protocol Buffers"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:api-standard", "label": "API Standard"},
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
-      {"@id": "urn:ngm:class:semantic-conventions", "label": "Semantic Conventions"}
+      {
+        "@id": "urn:ngm:class:api-standard",
+        "label": "API Standard"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"},
-      {"@id": "urn:ngm:class:prometheus", "label": "Prometheus"},
-      {"@id": "urn:ngm:class:jaeger", "label": "Jaeger"}
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:prometheus",
+        "label": "Prometheus"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:real-time-monitoring", "label": "Real-Time Monitoring"},
-      {"@id": "urn:ngm:class:performance-metrics", "label": "Performance Metrics"},
-      {"@id": "urn:ngm:class:monitoring-dashboard", "label": "Monitoring Dashboard"}
+      {
+        "@id": "urn:ngm:class:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:performance-metrics",
+        "label": "Performance Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring-dashboard",
+        "label": "Monitoring Dashboard"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:llm-observability", "label": "LLM Observability"},
-      {"@id": "urn:ngm:class:ai-system-monitoring", "label": "AI System Monitoring"}
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "LLM Observability"
+      },
+      {
+        "@id": "urn:ngm:class:ai-monitoring",
+        "label": "AI System Monitoring"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:cloud-native-computing-foundation", "label": "Cloud Native Computing Foundation"}
+      {
+        "@id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:otel", "label": "OTel"}
+    {
+      "@id": "urn:ngm:class:otel",
+      "label": "OTel"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

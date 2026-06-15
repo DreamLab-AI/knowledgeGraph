@@ -22,10 +22,6 @@
         "label": "Knowledge Base"
       },
       {
-        "id": "urn:ngm:class:document-repository",
-        "label": "Document Repository"
-      },
-      {
         "id": "urn:ngm:class:semantic-search",
         "label": "Semantic Search"
       },
@@ -62,7 +58,7 @@
         "label": "Organisational Learning"
       },
       {
-        "id": "urn:ngm:class:decision-support-system",
+        "id": "urn:ngm:class:decision-support",
         "label": "Decision Support System"
       }
     ],
@@ -107,10 +103,6 @@
       }
     ],
     "supports": [
-      {
-        "id": "urn:ngm:class:collaborative-authoring",
-        "label": "Collaborative Authoring"
-      },
       {
         "id": "urn:ngm:class:content-management-system",
         "label": "Content Management System"

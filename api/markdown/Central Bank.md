@@ -24,54 +24,120 @@ public:: true
   "domain": "finance",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:monetary-system", "label": "Monetary System"}
+    {
+      "@id": "urn:ngm:class:monetary-system",
+      "label": "Monetary System"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:monetary-policy-implementation", "label": "Monetary Policy Implementation"},
-      {"@id": "urn:ngm:class:open-market-operations", "label": "Open Market Operations"},
-      {"@id": "urn:ngm:class:reserve-requirements", "label": "Reserve Requirements"},
-      {"@id": "urn:ngm:class:discount-window", "label": "Discount Window"}
+      {
+        "@id": "urn:ngm:class:monetary-policy-implementation",
+        "label": "Monetary Policy Implementation"
+      },
+      {
+        "@id": "urn:ngm:class:open-market-operations",
+        "label": "Open Market Operations"
+      },
+      {
+        "@id": "urn:ngm:class:reserve-requirements",
+        "label": "Reserve Requirements"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"},
-      {"@id": "urn:ngm:class:payment-system", "label": "Payment System"},
-      {"@id": "urn:ngm:class:inflation-control", "label": "Inflation Control"},
-      {"@id": "urn:ngm:class:lender-of-last-resort", "label": "Lender of Last Resort"}
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "@id": "urn:ngm:class:inflation-control",
+        "label": "Inflation Control"
+      },
+      {
+        "@id": "urn:ngm:class:lender-of-last-resort",
+        "label": "Lender of Last Resort"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:monetary-sovereignty", "label": "Monetary Sovereignty"},
-      {"@id": "urn:ngm:class:financial-stability", "label": "Financial Stability"},
-      {"@id": "urn:ngm:class:banking-supervision", "label": "Banking Supervision"}
-    ],
-    "requires": [
-      {"@id": "urn:ngm:class:central-bank-independence", "label": "Central Bank Independence"},
-      {"@id": "urn:ngm:class:foreign-exchange-reserves", "label": "Foreign Exchange Reserves"}
+      {
+        "@id": "urn:ngm:class:monetary-sovereignty",
+        "label": "Monetary Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "@id": "urn:ngm:class:basel-committee-on-banking-supervision",
+        "label": "Banking Supervision"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:interbank-market", "label": "Interbank Market"},
-      {"@id": "urn:ngm:class:government-bond-market", "label": "Government Bond Market"}
+      {
+        "@id": "urn:ngm:class:interbank-market",
+        "label": "Interbank Market"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:commercial-bank", "label": "Commercial Bank"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:commercial-bank",
+        "label": "Commercial Bank"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
-      {"@id": "urn:ngm:class:digital-currency", "label": "Digital Currency"},
-      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
-      {"@id": "urn:ngm:class:bank-for-international-settlements", "label": "Bank for International Settlements"},
-      {"@id": "urn:ngm:class:quantitative-easing", "label": "Quantitative Easing"},
-      {"@id": "urn:ngm:class:inflation-targeting", "label": "Inflation Targeting"}
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:bank-for-international-settlements",
+        "label": "Bank for International Settlements"
+      },
+      {
+        "@id": "urn:ngm:class:quantitative-easing",
+        "label": "Quantitative Easing"
+      },
+      {
+        "@id": "urn:ngm:class:inflation-targeting",
+        "label": "Inflation Targeting"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"}
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:monetary-authority", "label": "Monetary Authority"},
-    {"@id": "urn:ngm:class:reserve-bank", "label": "Reserve Bank"}
+    {
+      "@id": "urn:ngm:class:monetary-authority",
+      "label": "Monetary Authority"
+    },
+    {
+      "@id": "urn:ngm:class:reserve-bank",
+      "label": "Reserve Bank"
+    }
   ],
   "quality": 0.75,
   "provenance": {

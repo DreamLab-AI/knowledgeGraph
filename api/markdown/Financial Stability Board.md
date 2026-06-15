@@ -23,65 +23,133 @@ public:: true
   "definition": "The Financial Stability Board (FSB) is an international body established in 2009 by the G20 that monitors and makes recommendations about the global financial system to promote financial stability. It coordinates the work of national financial authorities and international standard-setting bodies, and develops and promotes effective regulatory, supervisory, and other financial sector policies to reduce systemic risk.",
   "domain": "finance",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:financial-regulation",
+    "label": "Financial Regulation"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:fsb-plenary", "label": "FSB Plenary"},
-      {"@id": "urn:ngm:class:standing-committee-on-supervisory-and-regulatory-cooperation", "label": "Standing Committee on Supervisory and Regulatory Cooperation"},
-      {"@id": "urn:ngm:class:peer-review", "label": "Peer Review"}
+      {
+        "@id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:g20-governance-architecture", "label": "G20 Governance Architecture"},
-      {"@id": "urn:ngm:class:international-financial-architecture", "label": "International Financial Architecture"}
+      {
+        "@id": "urn:ngm:class:governance-architecture",
+        "label": "G20 Governance Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:international-financial-architecture",
+        "label": "International Financial Architecture"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:member-jurisdiction-commitment", "label": "Member Jurisdiction Commitment"},
-      {"@id": "urn:ngm:class:regulatory-reporting", "label": "Regulatory Reporting"}
+      {
+        "@id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:financial-stability", "label": "Financial Stability"},
-      {"@id": "urn:ngm:class:cross-border-regulatory-cooperation", "label": "Cross-Border Regulatory Cooperation"},
-      {"@id": "urn:ngm:class:resolution-planning", "label": "Resolution Planning"}
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-regulatory-cooperation",
+        "label": "Cross-Border Regulatory Cooperation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:bis", "label": "BIS"},
-      {"@id": "urn:ngm:class:imf", "label": "IMF"},
-      {"@id": "urn:ngm:class:central-bank", "label": "Central Bank"},
-      {"@id": "urn:ngm:class:g20", "label": "G20"}
+      {
+        "@id": "urn:ngm:class:bis",
+        "label": "BIS"
+      },
+      {
+        "@id": "urn:ngm:class:imf",
+        "label": "IMF"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "@id": "urn:ngm:class:g20",
+        "label": "G20"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:basel-iii", "label": "Basel III"},
-      {"@id": "urn:ngm:class:crypto-asset-regulation", "label": "Crypto-Asset Regulation"},
-      {"@id": "urn:ngm:class:global-stablecoin-framework", "label": "Global Stablecoin Framework"}
+      {
+        "@id": "urn:ngm:class:basel-iii",
+        "label": "Basel III"
+      },
+      {
+        "@id": "urn:ngm:class:crypto-regulation",
+        "label": "Crypto-Asset Regulation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:systemic-risk", "label": "Systemic Risk"},
-      {"@id": "urn:ngm:class:compliance", "label": "Compliance"},
-      {"@id": "urn:ngm:class:shadow-banking-oversight", "label": "Shadow Banking Oversight"},
-      {"@id": "urn:ngm:class:climate-related-financial-risk", "label": "Climate-Related Financial Risk"}
+      {
+        "@id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      },
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:climate-related-financial-risk",
+        "label": "Climate-Related Financial Risk"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:basel-committee-on-banking-supervision", "label": "Basel Committee on Banking Supervision"},
-      {"@id": "urn:ngm:class:iosco", "label": "IOSCO"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:financial-stability-forum", "label": "Financial Stability Forum"},
-      {"@id": "urn:ngm:class:national-prudential-regulator", "label": "National Prudential Regulator"}
+      {
+        "@id": "urn:ngm:class:basel-committee-on-banking-supervision",
+        "label": "Basel Committee on Banking Supervision"
+      },
+      {
+        "@id": "urn:ngm:class:iosco",
+        "label": "IOSCO"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"},
-      {"@id": "urn:ngm:class:ai-model-risk", "label": "AI Model Risk"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:ai-model-risk",
+        "label": "AI Model Risk"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:securities-regulation", "label": "Securities Regulation"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:tokenised-assets", "label": "Tokenised Assets"}
+      {
+        "@id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:tokenised-real-world-assets",
+        "label": "Tokenised Assets"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:fsb", "label": "FSB"},
-    {"@id": "urn:ngm:class:financial-stability-forum-successor", "label": "Financial Stability Forum Successor"}
+    {
+      "@id": "urn:ngm:class:fsb",
+      "label": "FSB"
+    },
+    {
+      "@id": "urn:ngm:class:financial-stability-forum-successor",
+      "label": "Financial Stability Forum Successor"
+    }
   ],
   "quality": 0.72,
   "provenance": {

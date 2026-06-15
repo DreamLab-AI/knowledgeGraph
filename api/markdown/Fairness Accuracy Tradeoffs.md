@@ -69,7 +69,7 @@ public:: true
   "definition": "The fundamental tension in supervised machine learning between maximising predictive accuracy and satisfying fairness constraints, characterised by the Pareto frontier of achievable (accuracy, fairness) pairs. Imposing fairness constraints restricts the hypothesis space, excluding models that achieve accuracy through reliance on protected-attribute correlations. The magnitude of the accuracy cost depends on the chosen fairness criterion (demographic parity, equalised odds, calibration), the base rate differences between groups, and the flexibility of the model class.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "qualityScore": 0.70,
+  "qualityScore": 0.7,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:ai-governance-and-ethics",
@@ -78,51 +78,119 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"},
-      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"},
-      {"@id": "urn:ngm:class:multi-objective-optimisation", "label": "Multi-Objective Optimisation"}
+      {
+        "@id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:multi-objective-optimisation",
+        "label": "Multi-Objective Optimisation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:bias-mitigation-techniques", "label": "Bias Mitigation Techniques"},
-      {"@id": "urn:ngm:class:ai-fairness", "label": "AI Fairness"},
-      {"@id": "urn:ngm:class:statistical-learning-theory", "label": "Statistical Learning Theory"},
-      {"@id": "urn:ngm:class:protected-attribute", "label": "Protected Attribute"}
+      {
+        "@id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation Techniques"
+      },
+      {
+        "@id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-learning-theory",
+        "label": "Statistical Learning Theory"
+      },
+      {
+        "@id": "urn:ngm:class:protected-attribute",
+        "label": "Protected Attribute"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:demographic-parity", "label": "Demographic Parity"},
-      {"@id": "urn:ngm:class:equalised-odds", "label": "Equalised Odds"},
-      {"@id": "urn:ngm:class:calibration", "label": "Calibration"},
-      {"@id": "urn:ngm:class:pareto-frontier", "label": "Pareto Frontier"}
+      {
+        "@id": "urn:ngm:class:demographic-parity",
+        "label": "Demographic Parity"
+      },
+      {
+        "@id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fair-machine-learning", "label": "Fair Machine Learning"},
-      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"}
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:responsible-ai-principles", "label": "Responsible AI Principles"},
-      {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"}
+      {
+        "@id": "urn:ngm:class:responsible-ai-principles",
+        "label": "Responsible AI Principles"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
-      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:algorithmic-bias-and-variance", "label": "Algorithmic Bias and Variance"},
-      {"@id": "urn:ngm:class:accuracy-maximisation", "label": "Accuracy Maximisation"}
+      {
+        "@id": "urn:ngm:class:algorithmic-bias-and-variance",
+        "label": "Algorithmic Bias and Variance"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:governance", "label": "Governance"},
-      {"@id": "urn:ngm:class:data", "label": "Data"}
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:data",
+        "label": "Data"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:accuracy-fairness-tradeoff", "label": "Accuracy-Fairness Tradeoff"},
-    {"@id": "urn:ngm:class:fairness-performance-tradeoff", "label": "Fairness-Performance Tradeoff"}
+    {
+      "@id": "urn:ngm:class:accuracy-fairness-tradeoff",
+      "label": "Accuracy-Fairness Tradeoff"
+    },
+    {
+      "@id": "urn:ngm:class:fairness-performance-tradeoff",
+      "label": "Fairness-Performance Tradeoff"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

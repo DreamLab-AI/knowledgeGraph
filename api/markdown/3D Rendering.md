@@ -23,56 +23,157 @@ public:: true
   "definition": "3D rendering is the computational process of generating a two-dimensional image or animation from a three-dimensional scene description by simulating the interaction of light with surfaces, materials, and geometry. It encompasses techniques ranging from real-time rasterization used in interactive applications to physically-based ray tracing and path tracing used for photorealistic offline production. The pipeline converts geometric primitives, shader programs, texture maps, and lighting data into final pixel colours via a GPU compute pipeline or software renderer. Contemporary rendering also incorporates neural methods such as Neural Radiance Fields and 3D Gaussian Splatting, as well as AI-driven upscaling and denoising, blurring the boundary between classical computer graphics and machine learning.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:computer-graphics", "label": "Computer Graphics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computer-graphics",
+      "label": "Computer Graphics"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:rasterization", "label": "Rasterization"},
-      {"@id": "urn:ngm:class:ray-tracing", "label": "Ray Tracing"},
-      {"@id": "urn:ngm:class:path-tracing", "label": "Path Tracing"},
-      {"@id": "urn:ngm:class:pixel-shader", "label": "Pixel Shader"},
-      {"@id": "urn:ngm:class:compute-shader", "label": "Compute Shader"},
-      {"@id": "urn:ngm:class:render-pipeline", "label": "Render Pipeline"}
+      {
+        "@id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      },
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:path-tracing",
+        "label": "Path Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:pixel-shader",
+        "label": "Pixel Shader"
+      },
+      {
+        "@id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "@id": "urn:ngm:class:render-pipeline",
+        "label": "Render Pipeline"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:3-d-model", "label": "3D Model"},
-      {"@id": "urn:ngm:class:texture-mapping", "label": "Texture Mapping"},
-      {"@id": "urn:ngm:class:shader-programming", "label": "Shader Programming"},
-      {"@id": "urn:ngm:class:scene-graph", "label": "Scene Graph"}
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-model",
+        "label": "3D Model"
+      },
+      {
+        "@id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:shader-programming",
+        "label": "Shader Programming"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:photorealistic-rendering", "label": "Photorealistic Rendering"},
-      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"},
-      {"@id": "urn:ngm:class:foveated-rendering", "label": "Foveated Rendering"},
-      {"@id": "urn:ngm:class:real-time-graphics", "label": "Real-Time Graphics"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"}
+      {
+        "@id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:foveated-rendering",
+        "label": "Foveated Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-graphics",
+        "label": "Real-Time Graphics"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:graphics-processing-unit", "label": "Graphics Processing Unit"},
-      {"@id": "urn:ngm:class:lighting-model", "label": "Lighting Model"},
-      {"@id": "urn:ngm:class:depth-buffer", "label": "Depth Buffer"}
+      {
+        "@id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-lighting-model",
+        "label": "Lighting Model"
+      },
+      {
+        "@id": "urn:ngm:class:depth-buffer",
+        "label": "Depth Buffer"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:linear-algebra", "label": "Linear Algebra"},
-      {"@id": "urn:ngm:class:3-d-rendering-engine", "label": "3D Rendering Engine"}
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:differentiable-rendering", "label": "Differentiable Rendering"},
-      {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"},
-      {"@id": "urn:ngm:class:3-d-gaussian-splatting", "label": "3D Gaussian Splatting"},
-      {"@id": "urn:ngm:class:generative-3-d", "label": "Generative 3D"}
+      {
+        "@id": "urn:ngm:class:differentiable-rendering",
+        "label": "Differentiable Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-gaussian-splatting",
+        "label": "3D Gaussian Splatting"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-content-generation",
+        "label": "Generative 3D"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:global-illumination", "label": "Global Illumination"},
-      {"@id": "urn:ngm:class:anti-aliasing", "label": "Anti-Aliasing"},
-      {"@id": "urn:ngm:class:level-of-detail", "label": "Level of Detail"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
+      },
+      {
+        "@id": "urn:ngm:class:anti-aliasing",
+        "label": "Anti-Aliasing"
+      },
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:computer-generated-imagery", "label": "Computer-Generated Imagery"},
-    {"@id": "urn:ngm:class:image-synthesis", "label": "Image Synthesis"}
+    {
+      "@id": "urn:ngm:class:computer-generated-imagery",
+      "label": "Computer-Generated Imagery"
+    },
+    {
+      "@id": "urn:ngm:class:image-synthesis",
+      "label": "Image Synthesis"
+    }
   ],
   "quality": 0.72,
   "provenance": {

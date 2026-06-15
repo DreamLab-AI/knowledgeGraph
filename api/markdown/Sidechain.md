@@ -104,7 +104,7 @@ public:: true
         "label": "Bridge Contract"
       },
       {
-        "@id": "urn:ngm:class:federated-validator",
+        "@id": "urn:ngm:class:validator",
         "label": "Federated Validator"
       },
       {
@@ -152,7 +152,7 @@ public:: true
         "label": "Cryptographic Proof"
       },
       {
-        "@id": "urn:ngm:class:federated-byzantine-agreement",
+        "@id": "urn:ngm:class:federated-byzantine-fault-tolerance",
         "label": "Federated Byzantine Agreement"
       }
     ],
@@ -160,10 +160,6 @@ public:: true
       {
         "@id": "urn:ngm:class:two-way-peg",
         "label": "Two-Way Peg"
-      },
-      {
-        "@id": "urn:ngm:class:spv-proof",
-        "label": "SPV Proof"
       }
     ],
     "uses": [
@@ -202,16 +198,12 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:polygon-pos",
+        "@id": "urn:ngm:class:polygon",
         "label": "Polygon PoS"
       },
       {
         "@id": "urn:ngm:class:liquid-network",
         "label": "Liquid Network"
-      },
-      {
-        "@id": "urn:ngm:class:ronin",
-        "label": "Ronin"
       }
     ],
     "bridgesTo": [

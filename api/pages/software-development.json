@@ -38,10 +38,6 @@
       {
         "id": "urn:ngm:class:programming-paradigm",
         "label": "Programming Paradigm"
-      },
-      {
-        "id": "urn:ngm:class:software-design-pattern",
-        "label": "Software Design Pattern"
       }
     ],
     "enables": [
@@ -54,7 +50,7 @@
         "label": "Open Source Software"
       },
       {
-        "id": "urn:ngm:class:cloud-native-application",
+        "id": "urn:ngm:class:cloud-native-applications",
         "label": "Cloud-Native Application"
       },
       {
@@ -85,7 +81,7 @@
         "label": "Machine Learning Engineering"
       },
       {
-        "id": "urn:ngm:class:ai-code-generation",
+        "id": "urn:ngm:class:code-generation",
         "label": "AI Code Generation"
       }
     ],
@@ -101,10 +97,6 @@
       {
         "id": "urn:ngm:class:software-development-process",
         "label": "Software Development Process"
-      },
-      {
-        "id": "urn:ngm:class:integrated-development-environment",
-        "label": "Integrated Development Environment"
       },
       {
         "id": "urn:ngm:class:continuous-integration",
@@ -129,7 +121,7 @@
         "label": "Open Source Development"
       },
       {
-        "id": "urn:ngm:class:agile-methodology",
+        "id": "urn:ngm:class:agile-software-development",
         "label": "Agile Methodology"
       },
       {

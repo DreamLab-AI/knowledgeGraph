@@ -16,20 +16,7 @@
   "qualityScore": 0.74,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:conditional-flow-matching",
-        "label": "Conditional Flow Matching"
-      },
-      {
-        "id": "urn:ngm:class:vector-field",
-        "label": "Vector Field"
-      },
-      {
-        "id": "urn:ngm:class:ode-solver",
-        "label": "ODE Solver"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:neural-network",
@@ -56,10 +43,6 @@
       {
         "id": "urn:ngm:class:protein-structure-prediction",
         "label": "Protein Structure Prediction"
-      },
-      {
-        "id": "urn:ngm:class:molecular-generation",
-        "label": "Molecular Generation"
       }
     ],
     "dependsOn": [],
@@ -104,23 +87,19 @@
       {
         "id": "urn:ngm:class:optimal-transport",
         "label": "Optimal Transport"
-      },
-      {
-        "id": "urn:ngm:class:stochastic-interpolant",
-        "label": "Stochastic Interpolant"
       }
     ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:continuous-normalising-flow",
+        "id": "urn:ngm:class:normalising-flow",
         "label": "Continuous Normalising Flow"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:denoising-diffusion-probabilistic-model",
+        "id": "urn:ngm:class:probabilistic-model",
         "label": "Denoising Diffusion Probabilistic Model"
       },
       {
@@ -128,7 +107,7 @@
         "label": "Score-based Generative Model"
       },
       {
-        "id": "urn:ngm:class:latent-diffusion-model",
+        "id": "urn:ngm:class:latent-diffusion",
         "label": "Latent Diffusion Model"
       },
       {

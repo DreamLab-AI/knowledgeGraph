@@ -61,11 +61,14 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"}
+      {
+        "@id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:3-d-environment-mapping",
+        "@id": "urn:ngm:class:environment-mapping",
         "label": "3D Environment Mapping"
       }
     ]

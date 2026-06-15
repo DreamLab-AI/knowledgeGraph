@@ -23,58 +23,119 @@ public:: true
   "definition": "Sharding is a horizontal partitioning technique for distributed databases and blockchain networks in which a dataset or workload is divided into disjoint subsets called shards, each maintained by a distinct subset of nodes, so that the total system throughput scales with the number of shards rather than being bounded by the capacity of a single node. In databases, sharding routes queries to the appropriate shard by a sharding key. In blockchain, each shard processes its own subset of transactions and stores its own portion of the state, with cross-shard communication handled by a coordination layer. Sharding dramatically increases transaction throughput and reduces storage requirements per node at the cost of increased architectural complexity and cross-shard coordination overhead.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:blockchain-scalability",
+    "label": "Blockchain Scalability"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:shard", "label": "Shard"},
-      {"@id": "urn:ngm:class:shard-committee", "label": "Shard Committee"},
-      {"@id": "urn:ngm:class:cross-shard-communication", "label": "Cross-Shard Communication"},
-      {"@id": "urn:ngm:class:beacon-chain", "label": "Beacon Chain"}
+      {
+        "@id": "urn:ngm:class:beacon-chain",
+        "label": "Beacon Chain"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"}
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"},
-      {"@id": "urn:ngm:class:sharding-key", "label": "Sharding Key"},
-      {"@id": "urn:ngm:class:validator-set", "label": "Validator Set"}
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:horizontal-scalability", "label": "Horizontal Scalability"}
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:horizontal-scalability",
+        "label": "Horizontal Scalability"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:distributed-hash-table", "label": "Distributed Hash Table"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+      {
+        "@id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:horizontal-partitioning", "label": "Horizontal Partitioning"},
-      {"@id": "urn:ngm:class:data-partitioning", "label": "Data Partitioning"}
+      {
+        "@id": "urn:ngm:class:data-partitioning",
+        "label": "Data Partitioning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"},
-      {"@id": "urn:ngm:class:distributed-hash-table", "label": "Distributed Hash Table"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer 2 Scaling"},
-      {"@id": "urn:ngm:class:replication", "label": "Replication"}
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:replication",
+        "label": "Replication"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:distributed-data-structure", "label": "Distributed Data Structure"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:danksharding", "label": "Danksharding"},
-      {"@id": "urn:ngm:class:rollup", "label": "Rollup"}
-    ],
-    "bridgesTo": [
-      {"@id": "urn:ngm:class:database-partitioning", "label": "Database Partitioning"}
+      {
+        "@id": "urn:ngm:class:distributed-data-structure",
+        "label": "Distributed Data Structure"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:danksharding",
+        "label": "Danksharding"
+      },
+      {
+        "@id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:horizontal-partitioning", "label": "Horizontal Partitioning"},
-    {"@id": "urn:ngm:class:database-sharding", "label": "Database Sharding"}
+    {
+      "@id": "urn:ngm:class:horizontal-partitioning",
+      "label": "Horizontal Partitioning"
+    },
+    {
+      "@id": "urn:ngm:class:database-sharding",
+      "label": "Database Sharding"
+    }
   ],
   "quality": 0.72,
   "provenance": {

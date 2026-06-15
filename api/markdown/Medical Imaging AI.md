@@ -71,51 +71,129 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:radiology-ai", "label": "Radiology AI"},
-      {"@id": "urn:ngm:class:pathology-ai", "label": "Pathology AI"},
-      {"@id": "urn:ngm:class:computer-aided-diagnosis", "label": "Computer-Aided Diagnosis"},
-      {"@id": "urn:ngm:class:image-segmentation", "label": "Image Segmentation"}
+      {
+        "@id": "urn:ngm:class:radiology-ai",
+        "label": "Radiology AI"
+      },
+      {
+        "@id": "urn:ngm:class:pathology-ai",
+        "label": "Pathology AI"
+      },
+      {
+        "@id": "urn:ngm:class:computer-aided-diagnosis",
+        "label": "Computer-Aided Diagnosis"
+      },
+      {
+        "@id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:medical-ai", "label": "Medical AI"},
-      {"@id": "urn:ngm:class:healthcare-ai", "label": "Healthcare AI"}
+      {
+        "@id": "urn:ngm:class:medical-ai",
+        "label": "Medical AI"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:transformer-model", "label": "Transformer Model"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer Model"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:dicom", "label": "DICOM"},
-      {"@id": "urn:ngm:class:annotated-training-data", "label": "Annotated Training Data"},
-      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"}
+      {
+        "@id": "urn:ngm:class:dicom",
+        "label": "DICOM"
+      },
+      {
+        "@id": "urn:ngm:class:annotated-training-data",
+        "label": "Annotated Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:clinical-decision-support", "label": "Clinical Decision Support"},
-      {"@id": "urn:ngm:class:automated-lesion-detection", "label": "Automated Lesion Detection"},
-      {"@id": "urn:ngm:class:treatment-planning", "label": "Treatment Planning"}
+      {
+        "@id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      },
+      {
+        "@id": "urn:ngm:class:automated-lesion-detection",
+        "label": "Automated Lesion Detection"
+      },
+      {
+        "@id": "urn:ngm:class:treatment-planning",
+        "label": "Treatment Planning"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:hl7-fhir", "label": "HL7 FHIR"},
-      {"@id": "urn:ngm:class:fda-510k", "label": "FDA 510(k) Clearance"}
+      {
+        "@id": "urn:ngm:class:hl7-fhir",
+        "label": "HL7 FHIR"
+      },
+      {
+        "@id": "urn:ngm:class:fda-510k",
+        "label": "FDA 510(k) Clearance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:traditional-radiological-review", "label": "Traditional Radiological Review"}
+      {
+        "@id": "urn:ngm:class:traditional-radiological-review",
+        "label": "Traditional Radiological Review"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
-      {"@id": "urn:ngm:class:data-augmentation", "label": "Data Augmentation"}
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ai-medical-imaging", "label": "AI Medical Imaging"},
-    {"@id": "urn:ngm:class:medical-image-analysis-ai", "label": "Medical Image Analysis AI"}
+    {
+      "@id": "urn:ngm:class:ai-medical-imaging",
+      "label": "AI Medical Imaging"
+    },
+    {
+      "@id": "urn:ngm:class:medical-image-analysis-ai",
+      "label": "Medical Image Analysis AI"
+    }
   ],
   "quality": 0.68,
   "provenance": {

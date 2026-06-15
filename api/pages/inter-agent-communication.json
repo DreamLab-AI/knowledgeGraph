@@ -47,10 +47,6 @@
       {
         "id": "urn:ngm:class:task-delegation",
         "label": "Task Delegation"
-      },
-      {
-        "id": "urn:ngm:class:collaborative-reasoning",
-        "label": "Collaborative Reasoning"
       }
     ],
     "dependsOn": [],
@@ -106,7 +102,7 @@
         "label": "WebSocket"
       },
       {
-        "id": "urn:ngm:class:json-schema",
+        "id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       }
     ],

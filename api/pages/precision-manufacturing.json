@@ -22,16 +22,8 @@
         "label": "CNC Machining"
       },
       {
-        "id": "urn:ngm:class:electrical-discharge-machining",
-        "label": "Electrical Discharge Machining"
-      },
-      {
         "id": "urn:ngm:class:statistical-process-control",
         "label": "Statistical Process Control"
-      },
-      {
-        "id": "urn:ngm:class:coordinate-measuring-machine",
-        "label": "Coordinate Measuring Machine"
       }
     ],
     "requires": [
@@ -60,10 +52,6 @@
       {
         "id": "urn:ngm:class:semiconductor-fabrication",
         "label": "Semiconductor Fabrication"
-      },
-      {
-        "id": "urn:ngm:class:medical-device-manufacturing",
-        "label": "Medical Device Manufacturing"
       }
     ],
     "dependsOn": [],
@@ -91,17 +79,9 @@
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
-      },
-      {
-        "id": "urn:ngm:class:laser-interferometry",
-        "label": "Laser Interferometry"
       }
     ],
     "supports": [
-      {
-        "id": "urn:ngm:class:aerospace-manufacturing",
-        "label": "Aerospace Manufacturing"
-      },
       {
         "id": "urn:ngm:class:additive-manufacturing",
         "label": "Additive Manufacturing"

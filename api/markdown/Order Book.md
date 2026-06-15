@@ -63,14 +63,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:bid-side",
-        "label": "Bid Side"
-      },
-      {
-        "@id": "urn:ngm:class:ask-side",
-        "label": "Ask Side"
-      },
-      {
         "@id": "urn:ngm:class:matching-engine",
         "label": "Matching Engine"
       },
@@ -79,20 +71,10 @@ public:: true
         "label": "Bid-Ask Spread"
       }
     ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:trading-venue",
-        "label": "Trading Venue"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:limit-order",
         "label": "Limit Order"
-      },
-      {
-        "@id": "urn:ngm:class:price-time-priority",
-        "label": "Price-Time Priority"
       }
     ],
     "enables": [
@@ -119,38 +101,16 @@ public:: true
         "label": "Clearing and Settlement"
       }
     ],
-    "uses": [
-      {
-        "@id": "urn:ngm:class:market-order",
-        "label": "Market Order"
-      },
-      {
-        "@id": "urn:ngm:class:depth-of-market",
-        "label": "Depth of Market"
-      }
-    ],
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:automated-market-maker",
         "label": "Automated Market Maker"
-      },
-      {
-        "@id": "urn:ngm:class:request-for-quote",
-        "label": "Request for Quote"
-      },
-      {
-        "@id": "urn:ngm:class:dark-pool",
-        "label": "Dark Pool"
       }
     ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:decentralised-exchange",
         "label": "Decentralised Exchange"
-      },
-      {
-        "@id": "urn:ngm:class:on-chain-order-book",
-        "label": "On-Chain Order Book"
       }
     ],
     "relatedTo": [

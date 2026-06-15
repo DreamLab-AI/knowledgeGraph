@@ -84,7 +84,7 @@ public:: true
         "label": "Interoperability"
       },
       {
-        "@id": "urn:ngm:class:open-protocols",
+        "@id": "urn:ngm:class:open-data",
         "label": "Open Protocols"
       }
     ],
@@ -110,7 +110,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:gltf",
+        "@id": "urn:ngm:class:gltf-standard",
         "label": "glTF"
       },
       {

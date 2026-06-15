@@ -48,51 +48,107 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:environmental-sustainability", "label": "Environmental Sustainability"},
-      {"@id": "urn:ngm:class:social-sustainability", "label": "Social Sustainability"},
-      {"@id": "urn:ngm:class:economic-sustainability", "label": "Economic Sustainability"}
+      {
+        "@id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:carbon-footprint-measurement", "label": "Carbon Footprint Measurement"},
-      {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"},
-      {"@id": "urn:ngm:class:life-cycle-assessment", "label": "Life Cycle Assessment"}
+      {
+        "@id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      },
+      {
+        "@id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:circular-economy", "label": "Circular Economy"},
-      {"@id": "urn:ngm:class:renewable-energy-certificates", "label": "Renewable Energy Certificates"},
-      {"@id": "urn:ngm:class:green-computing", "label": "Green Computing"}
+      {
+        "@id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy-certificates",
+        "label": "Renewable Energy Certificates"
+      },
+      {
+        "@id": "urn:ngm:class:green-computing",
+        "label": "Green Computing"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:energy-efficiency", "label": "Energy Efficiency"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:supply-chain-transparency", "label": "Supply Chain Transparency"}
+      {
+        "@id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:digital-accessibility", "label": "Digital Accessibility"},
-      {"@id": "urn:ngm:class:carbon-aware-computing", "label": "Carbon-Aware Computing"},
-      {"@id": "urn:ngm:class:net-zero", "label": "Net Zero"}
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Digital Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-aware-computing",
+        "label": "Carbon-Aware Computing"
+      },
+      {
+        "@id": "urn:ngm:class:net-zero",
+        "label": "Net Zero"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-energy-consumption", "label": "Blockchain Energy Consumption"},
-      {"@id": "urn:ngm:class:scope-3-emissions", "label": "Scope 3 Emissions"},
-      {"@id": "urn:ngm:class:digital-equity", "label": "Digital Equity"}
+      {
+        "@id": "urn:ngm:class:blockchain-energy-consumption",
+        "label": "Blockchain Energy Consumption"
+      },
+      {
+        "@id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      },
+      {
+        "@id": "urn:ngm:class:digital-technology-access-equity",
+        "label": "Digital Equity"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-14001", "label": "ISO 14001"},
-      {"@id": "urn:ngm:class:ghg-protocol", "label": "GHG Protocol"},
-      {"@id": "urn:ngm:class:w3c-sustainable-web-design", "label": "W3C Sustainable Web Design"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:planned-obsolescence", "label": "Planned Obsolescence"},
-      {"@id": "urn:ngm:class:rebound-effect", "label": "Rebound Effect"}
+      {
+        "@id": "urn:ngm:class:iso-14001",
+        "label": "ISO 14001"
+      },
+      {
+        "@id": "urn:ngm:class:ghg-protocol",
+        "label": "GHG Protocol"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:sustainable-development", "label": "Sustainable Development"}
+    {
+      "@id": "urn:ngm:class:sustainable-development",
+      "label": "Sustainable Development"
+    }
   ],
   "quality": 0.72,
   "provenance": {

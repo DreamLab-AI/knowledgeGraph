@@ -58,61 +58,126 @@ public:: true
     "label": "Data Visualisation"
   },
   "relations": {
-    "hasPart": [
-      {"@id": "urn:ngm:class:time-series-chart", "label": "Time Series Chart"},
-      {"@id": "urn:ngm:class:alert-panel", "label": "Alert Panel"},
-      {"@id": "urn:ngm:class:metric-gauge", "label": "Metric Gauge"},
-      {"@id": "urn:ngm:class:log-viewer", "label": "Log Viewer"}
-    ],
     "partOf": [
-      {"@id": "urn:ngm:class:observability-platform", "label": "Observability Platform"}
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability Platform"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:metrics-collection", "label": "Metrics Collection"},
-      {"@id": "urn:ngm:class:time-series-database", "label": "Time Series Database"},
-      {"@id": "urn:ngm:class:data-ingestion-pipeline", "label": "Data Ingestion Pipeline"}
+      {
+        "@id": "urn:ngm:class:metrics-collection",
+        "label": "Metrics Collection"
+      },
+      {
+        "@id": "urn:ngm:class:time-series-database",
+        "label": "Time Series Database"
+      },
+      {
+        "@id": "urn:ngm:class:data-ingestion-pipeline",
+        "label": "Data Ingestion Pipeline"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:operational-intelligence", "label": "Operational Intelligence"},
-      {"@id": "urn:ngm:class:incident-detection", "label": "Incident Detection"},
-      {"@id": "urn:ngm:class:root-cause-analysis", "label": "Root Cause Analysis"},
-      {"@id": "urn:ngm:class:capacity-planning", "label": "Capacity Planning"}
+      {
+        "@id": "urn:ngm:class:operational-intelligence",
+        "label": "Operational Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:incident-detection",
+        "label": "Incident Detection"
+      },
+      {
+        "@id": "urn:ngm:class:root-cause-analysis",
+        "label": "Root Cause Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:capacity-planning",
+        "label": "Capacity Planning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:prometheus", "label": "Prometheus"},
-      {"@id": "urn:ngm:class:distributed-tracing", "label": "Distributed Tracing"},
-      {"@id": "urn:ngm:class:log-aggregation", "label": "Log Aggregation"}
+      {
+        "@id": "urn:ngm:class:prometheus",
+        "label": "Prometheus"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-tracing",
+        "label": "Distributed Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:log-aggregation",
+        "label": "Log Aggregation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:observability", "label": "Observability"},
-      {"@id": "urn:ngm:class:site-reliability-engineering", "label": "Site Reliability Engineering"}
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "@id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:data-visualisation", "label": "Data Visualisation"},
-      {"@id": "urn:ngm:class:alerting-system", "label": "Alerting System"},
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"}
+      {
+        "@id": "urn:ngm:class:data-visualisation",
+        "label": "Data Visualisation"
+      },
+      {
+        "@id": "urn:ngm:class:alerting-system",
+        "label": "Alerting System"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:devops", "label": "DevOps"},
-      {"@id": "urn:ngm:class:incident-management", "label": "Incident Management"},
-      {"@id": "urn:ngm:class:service-level-objective", "label": "Service Level Objective"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:static-report", "label": "Static Report"},
-      {"@id": "urn:ngm:class:log-file", "label": "Log File"}
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "@id": "urn:ngm:class:incident-management",
+        "label": "Incident Management"
+      },
+      {
+        "@id": "urn:ngm:class:service-level-objective",
+        "label": "Service Level Objective"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:business-intelligence-dashboard", "label": "Business Intelligence Dashboard"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:business-intelligence-dashboard",
+        "label": "Business Intelligence Dashboard"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:kubernetes-cluster", "label": "Kubernetes Cluster"},
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"}
+      {
+        "@id": "urn:ngm:class:kubernetes-cluster",
+        "label": "Kubernetes Cluster"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:observability-dashboard", "label": "Observability Dashboard"},
-    {"@id": "urn:ngm:class:operations-dashboard", "label": "Operations Dashboard"}
+    {
+      "@id": "urn:ngm:class:observability-dashboard",
+      "label": "Observability Dashboard"
+    },
+    {
+      "@id": "urn:ngm:class:operations-dashboard",
+      "label": "Operations Dashboard"
+    }
   ],
   "quality": 0.72,
   "provenance": {

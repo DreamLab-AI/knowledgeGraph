@@ -38,51 +38,113 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:robot-dynamics", "label": "Robot Dynamics"},
-      {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"},
-      {"@id": "urn:ngm:class:state-estimation", "label": "State Estimation"},
-      {"@id": "urn:ngm:class:contact-mechanics", "label": "Contact Mechanics"},
-      {"@id": "urn:ngm:class:rigid-body-dynamics", "label": "Rigid Body Dynamics"}
+      {
+        "@id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "@id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:contact-mechanics",
+        "label": "Contact Mechanics"
+      },
+      {
+        "@id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:terrain-traversal", "label": "Terrain Traversal"},
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:search-and-rescue-robotics", "label": "Search and Rescue Robotics"}
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:search-and-rescue-robotics",
+        "label": "Search and Rescue Robotics"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:model-predictive-control", "label": "Model Predictive Control"},
-      {"@id": "urn:ngm:class:whole-body-control", "label": "Whole Body Control"},
-      {"@id": "urn:ngm:class:quadratic-programming", "label": "Quadratic Programming"},
-      {"@id": "urn:ngm:class:inertial-measurement-unit", "label": "Inertial Measurement Unit"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"}
+      {
+        "@id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "@id": "urn:ngm:class:whole-body-control",
+        "label": "Whole Body Control"
+      },
+      {
+        "@id": "urn:ngm:class:quadratic-programming",
+        "label": "Quadratic Programming"
+      },
+      {
+        "@id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:gait-planning", "label": "Gait Planning"},
-      {"@id": "urn:ngm:class:foothold-selection", "label": "Foothold Selection"},
-      {"@id": "urn:ngm:class:balance-control", "label": "Balance Control"},
-      {"@id": "urn:ngm:class:swing-leg-control", "label": "Swing Leg Control"}
+      {
+        "@id": "urn:ngm:class:balance-control",
+        "label": "Balance Control"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:sim-to-real-transfer", "label": "Sim-to-Real Transfer"},
-      {"@id": "urn:ngm:class:quadruped-robot", "label": "Quadruped Robot"},
-      {"@id": "urn:ngm:class:bipedal-robot", "label": "Bipedal Robot"},
-      {"@id": "urn:ngm:class:biomechanics", "label": "Biomechanics"},
-      {"@id": "urn:ngm:class:zero-moment-point", "label": "Zero-Moment Point"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:sim-to-real-transfer",
+        "label": "Sim-to-Real Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:quadruped-robot",
+        "label": "Quadruped Robot"
+      },
+      {
+        "@id": "urn:ngm:class:biomechanics",
+        "label": "Biomechanics"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:wheeled-locomotion", "label": "Wheeled Locomotion"},
-      {"@id": "urn:ngm:class:aerial-robotics", "label": "Aerial Robotics"}
+      {
+        "@id": "urn:ngm:class:aerial-robotics",
+        "label": "Aerial Robotics"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:robot-simulation", "label": "Robot Simulation"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:robot-simulation",
+        "label": "Robot Simulation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:walking-robots", "label": "Walking Robots"},
-    {"@id": "urn:ngm:class:legged-robot-locomotion", "label": "Legged Robot Locomotion"}
+    {
+      "@id": "urn:ngm:class:walking-robots",
+      "label": "Walking Robots"
+    },
+    {
+      "@id": "urn:ngm:class:legged-robot-locomotion",
+      "label": "Legged Robot Locomotion"
+    }
   ],
   "quality": 0.74,
   "provenance": {

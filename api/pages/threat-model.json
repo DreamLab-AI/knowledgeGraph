@@ -24,10 +24,6 @@
       {
         "id": "urn:ngm:class:threat-surface-map",
         "label": "Threat Surface Map"
-      },
-      {
-        "id": "urn:ngm:class:adversary-profile",
-        "label": "Adversary Profile"
       }
     ],
     "requires": [
@@ -60,20 +56,11 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:system-decomposition",
-        "label": "System Decomposition"
-      },
-      {
         "id": "urn:ngm:class:adversary-model",
         "label": "Adversary Model"
       }
     ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:dolev-yao-model",
-        "label": "Dolev-Yao Model"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:penetration-testing",
@@ -110,10 +97,6 @@
       {
         "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
-      },
-      {
-        "id": "urn:ngm:class:stride-framework",
-        "label": "STRIDE Framework"
       },
       {
         "id": "urn:ngm:class:cvss",

@@ -24,48 +24,115 @@ public:: true
   "domain": "artificial-intelligence",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:strategic-interaction-theory", "label": "Strategic Interaction Theory"},
-    {"@id": "urn:ngm:class:mathematical-game-theory", "label": "Mathematical Game Theory"}
+    {
+      "@id": "urn:ngm:class:strategic-interaction-theory",
+      "label": "Strategic Interaction Theory"
+    },
+    {
+      "@id": "urn:ngm:class:mathematical-game-theory",
+      "label": "Mathematical Game Theory"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:nash-equilibrium", "label": "Nash Equilibrium"},
-      {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"},
-      {"@id": "urn:ngm:class:cooperative-game-theory", "label": "Cooperative Game Theory"},
-      {"@id": "urn:ngm:class:evolutionary-game-theory", "label": "Evolutionary Game Theory"}
+      {
+        "@id": "urn:ngm:class:nash-equilibrium",
+        "label": "Nash Equilibrium"
+      },
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "@id": "urn:ngm:class:cooperative-game-theory",
+        "label": "Cooperative Game Theory"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"},
-      {"@id": "urn:ngm:class:incentive-alignment", "label": "Incentive Alignment"},
-      {"@id": "urn:ngm:class:auction-theory", "label": "Auction Theory"},
-      {"@id": "urn:ngm:class:prediction-markets", "label": "Prediction Markets"},
-      {"@id": "urn:ngm:class:multi-agent-reinforcement-learning", "label": "Multi-Agent Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "@id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:auction-theory",
+        "label": "Auction Theory"
+      },
+      {
+        "@id": "urn:ngm:class:prediction-markets",
+        "label": "Prediction Markets"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-reinforcement-learning",
+        "label": "Multi-Agent Reinforcement Learning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:rational-agency", "label": "Rational Agency"},
-      {"@id": "urn:ngm:class:utility-theory", "label": "Utility Theory"}
+      {
+        "@id": "urn:ngm:class:utility-theory",
+        "label": "Utility Theory"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:incentive-structures", "label": "Incentive Structures"},
-      {"@id": "urn:ngm:class:protocol-design", "label": "Protocol Design"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"}
+      {
+        "@id": "urn:ngm:class:incentive-structures",
+        "label": "Incentive Structures"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-design",
+        "label": "Protocol Design"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:token-engineering", "label": "Token Engineering"},
-      {"@id": "urn:ngm:class:agent-based-modelling", "label": "Agent-Based Modelling"},
-      {"@id": "urn:ngm:class:information-economics", "label": "Information Economics"},
-      {"@id": "urn:ngm:class:social-choice-theory", "label": "Social Choice Theory"}
+      {
+        "@id": "urn:ngm:class:token-engineering",
+        "label": "Token Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:agent-based-modelling",
+        "label": "Agent-Based Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:economics",
+        "label": "Information Economics"
+      },
+      {
+        "@id": "urn:ngm:class:social-choice-theory",
+        "label": "Social Choice Theory"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
-      {"@id": "urn:ngm:class:swarm-intelligence", "label": "Swarm Intelligence"}
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:decision-theory", "label": "Decision Theory"}
+      {
+        "@id": "urn:ngm:class:decision-theory",
+        "label": "Decision Theory"
+      }
     ]
   },
   "quality": 0.72,

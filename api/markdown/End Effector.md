@@ -101,26 +101,8 @@ alias:: End-Effector
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:gripper",
-        "label": "Gripper"
-      },
-      {
         "@id": "urn:ngm:class:tactile-sensor",
         "label": "Tactile Sensor"
-      },
-      {
-        "@id": "urn:ngm:class:tool-changer",
-        "label": "Tool Changer"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:manipulation-system",
-        "label": "Manipulation System"
-      },
-      {
-        "@id": "urn:ngm:class:robot-arm",
-        "label": "Robot Arm"
       }
     ],
     "requires": [
@@ -146,14 +128,6 @@ alias:: End-Effector
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:assembly-operations",
-        "label": "Assembly Operations"
-      },
-      {
-        "@id": "urn:ngm:class:material-handling",
-        "label": "Material Handling"
-      },
       {
         "@id": "urn:ngm:class:precision-manufacturing",
         "label": "Precision Manufacturing"
@@ -183,7 +157,7 @@ alias:: End-Effector
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:pneumatic-actuation",
+        "@id": "urn:ngm:class:pneumatic-actuator",
         "label": "Pneumatic Actuation"
       },
       {
@@ -197,7 +171,7 @@ alias:: End-Effector
         "label": "IndustrialAutomation"
       },
       {
-        "@id": "urn:ngm:class:collaborative-robotics",
+        "@id": "urn:ngm:class:collaborative-systems-modality-robotics",
         "label": "Collaborative Robotics"
       }
     ],
@@ -229,7 +203,7 @@ alias:: End-Effector
         "label": "Soft Robotics"
       },
       {
-        "@id": "urn:ngm:class:degrees-of-freedom",
+        "@id": "urn:ngm:class:rb-0023-degrees-of-freedom",
         "label": "Degrees of Freedom"
       }
     ]

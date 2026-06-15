@@ -64,12 +64,8 @@ public:: true
         "label": "Cross-Platform Compatibility"
       },
       {
-        "@id": "urn:ngm:class:xr-content-portability",
+        "@id": "urn:ngm:class:content-portability",
         "label": "XR Content Portability"
-      },
-      {
-        "@id": "urn:ngm:class:vendor-neutral-api",
-        "label": "Vendor-Neutral API"
       }
     ],
     "hasPart": [
@@ -78,7 +74,7 @@ public:: true
         "label": "OpenXR"
       },
       {
-        "@id": "urn:ngm:class:gltf",
+        "@id": "urn:ngm:class:gltf-standard",
         "label": "glTF"
       },
       {
@@ -92,7 +88,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:open-standards-ecosystem",
+        "@id": "urn:ngm:class:open-standards",
         "label": "Open Standards Ecosystem"
       }
     ],
@@ -102,7 +98,7 @@ public:: true
         "label": "Protocol Specification"
       },
       {
-        "@id": "urn:ngm:class:conformance-testing",
+        "@id": "urn:ngm:class:standards-conformance-testing",
         "label": "Conformance Testing"
       }
     ],
@@ -160,16 +156,6 @@ public:: true
         "label": "W3C"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:proprietary-platform-lock-in",
-        "label": "Proprietary Platform Lock-In"
-      },
-      {
-        "@id": "urn:ngm:class:fragmented-ecosystem",
-        "label": "Fragmented Ecosystem"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:distributed-systems",
@@ -201,7 +187,7 @@ public:: true
       "label": "Open Standard"
     }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

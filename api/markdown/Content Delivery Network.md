@@ -39,55 +39,137 @@ alias:: ContentDeliveryNetwork
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:edge-server", "label": "Edge Server"},
-      {"@id": "urn:ngm:class:point-of-presence", "label": "Point of Presence"},
-      {"@id": "urn:ngm:class:web-application-firewall", "label": "Web Application Firewall"},
-      {"@id": "urn:ngm:class:load-balancer", "label": "Load Balancer"}
+      {
+        "@id": "urn:ngm:class:edge-server",
+        "label": "Edge Server"
+      },
+      {
+        "@id": "urn:ngm:class:point-of-presence",
+        "label": "Point of Presence"
+      },
+      {
+        "@id": "urn:ngm:class:web-application-firewall",
+        "label": "Web Application Firewall"
+      },
+      {
+        "@id": "urn:ngm:class:load-balancer",
+        "label": "Load Balancer"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:internet-infrastructure", "label": "Internet Infrastructure"}
+      {
+        "@id": "urn:ngm:class:internet-infrastructure",
+        "label": "Internet Infrastructure"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:anycast-routing", "label": "Anycast Routing"},
-      {"@id": "urn:ngm:class:dns", "label": "DNS"},
-      {"@id": "urn:ngm:class:tls", "label": "TLS"}
+      {
+        "@id": "urn:ngm:class:anycast-routing",
+        "label": "Anycast Routing"
+      },
+      {
+        "@id": "urn:ngm:class:dns",
+        "label": "DNS"
+      },
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "TLS"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:low-latency-delivery", "label": "Low-Latency Delivery"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:ddos-mitigation", "label": "DDoS Mitigation"},
-      {"@id": "urn:ngm:class:origin-offload", "label": "Origin Offload"}
+      {
+        "@id": "urn:ngm:class:low-latency",
+        "label": "Low-Latency Delivery"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:ddos-mitigation",
+        "label": "DDoS Mitigation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:http-caching", "label": "HTTP Caching"},
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
-      {"@id": "urn:ngm:class:http3-quic", "label": "HTTP/3 QUIC"},
-      {"@id": "urn:ngm:class:anycast-routing", "label": "Anycast Routing"}
+      {
+        "@id": "urn:ngm:class:http-caching",
+        "label": "HTTP Caching"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:quic",
+        "label": "HTTP/3 QUIC"
+      },
+      {
+        "@id": "urn:ngm:class:anycast-routing",
+        "label": "Anycast Routing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:scalability-pattern", "label": "Scalability Pattern"},
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
-      {"@id": "urn:ngm:class:streaming-media", "label": "Streaming Media"},
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"}
+      {
+        "@id": "urn:ngm:class:scalability-pattern",
+        "label": "Scalability Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:streaming-media",
+        "label": "Streaming Media"
+      },
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
-      {"@id": "urn:ngm:class:origin-server", "label": "Origin Server"}
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:origin-server",
+        "label": "Origin Server"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:edge-ai-inference", "label": "Edge AI Inference"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:edge-inference",
+        "label": "Edge AI Inference"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:network-latency", "label": "Network Latency"},
-      {"@id": "urn:ngm:class:web-performance", "label": "Web Performance"},
-      {"@id": "urn:ngm:class:reverse-proxy", "label": "Reverse Proxy"},
-      {"@id": "urn:ngm:class:caching", "label": "Caching"}
+      {
+        "@id": "urn:ngm:class:network-latency",
+        "label": "Network Latency"
+      },
+      {
+        "@id": "urn:ngm:class:reverse-proxy",
+        "label": "Reverse Proxy"
+      },
+      {
+        "@id": "urn:ngm:class:caching",
+        "label": "Caching"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:cdn", "label": "CDN"},
-    {"@id": "urn:ngm:class:content-distribution-network", "label": "Content Distribution Network"}
+    {
+      "@id": "urn:ngm:class:cdn",
+      "label": "CDN"
+    },
+    {
+      "@id": "urn:ngm:class:content-distribution-network",
+      "label": "Content Distribution Network"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -142,14 +142,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:deliberation-agent",
-        "label": "Deliberation Agent"
-      },
-      {
-        "@id": "urn:ngm:class:policy-synthesis-engine",
-        "label": "Policy Synthesis Engine"
-      },
-      {
         "@id": "urn:ngm:class:voting-mechanism",
         "label": "Voting Mechanism"
       },
@@ -163,10 +155,6 @@ public:: true
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:decision-recording-system",
-        "label": "Decision Recording System"
-      },
       {
         "@id": "urn:ngm:class:secure-communication",
         "label": "Secure Communication"
@@ -186,10 +174,6 @@ public:: true
         "label": "Collective Decision Making"
       },
       {
-        "@id": "urn:ngm:class:democratic-deliberation",
-        "label": "Democratic Deliberation"
-      },
-      {
         "@id": "urn:ngm:class:participatory-policy-making",
         "label": "Participatory Policy Making"
       },
@@ -200,11 +184,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:civic-engagement-platform",
-        "label": "Civic Engagement Platform"
-      },
-      {
-        "@id": "urn:ngm:class:democratic-governance-system",
+        "@id": "urn:ngm:class:democratic-governance",
         "label": "Democratic Governance System"
       }
     ]

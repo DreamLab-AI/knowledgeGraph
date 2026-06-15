@@ -294,28 +294,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:classifier-model",
-        "label": "Classifier Model"
-      },
-      {
         "@id": "urn:ngm:class:csam-detection",
         "label": "CSAM Detection"
       },
       {
-        "@id": "urn:ngm:class:hash-matching",
-        "label": "Hash Matching"
-      },
-      {
-        "@id": "urn:ngm:class:human-review-pipeline",
-        "label": "Human Review Pipeline"
-      },
-      {
         "@id": "urn:ngm:class:incident-response",
         "label": "Incident Response"
-      },
-      {
-        "@id": "urn:ngm:class:platform-integrity",
-        "label": "Platform Integrity"
       },
       {
         "@id": "urn:ngm:class:content-moderation",
@@ -448,7 +432,7 @@ public:: true
         "label": "Jailbreaking"
       },
       {
-        "@id": "urn:ngm:class:meta-platforms",
+        "@id": "urn:ngm:class:meta",
         "label": "Meta Platforms"
       },
       {

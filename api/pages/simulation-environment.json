@@ -74,11 +74,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:real-world-deployment",
-        "label": "Real-World Deployment"
-      },
-      {
-        "id": "urn:ngm:class:hardware-in-the-loop",
+        "id": "urn:ngm:class:hardware-in-the-loop-testing",
         "label": "Hardware-in-the-Loop"
       }
     ],

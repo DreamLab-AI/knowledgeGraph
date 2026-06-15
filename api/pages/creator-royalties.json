@@ -37,11 +37,11 @@
         "label": "Creator Economy"
       },
       {
-        "id": "urn:ngm:class:programmable-revenue",
+        "id": "urn:ngm:class:programmable-money",
         "label": "Programmable Revenue"
       },
       {
-        "id": "urn:ngm:class:decentralised-marketplace",
+        "id": "urn:ngm:class:marketplace",
         "label": "Decentralised Marketplace"
       }
     ],
@@ -62,11 +62,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:traditional-copyright",
-        "label": "Traditional Copyright"
-      },
-      {
-        "id": "urn:ngm:class:zero-royalty-marketplace",
+        "id": "urn:ngm:class:marketplace",
         "label": "Zero-Royalty Marketplace"
       }
     ],
@@ -76,7 +72,7 @@
         "label": "Digital Ownership"
       },
       {
-        "id": "urn:ngm:class:creator-monetisation",
+        "id": "urn:ngm:class:creator-monetization",
         "label": "Creator Monetisation"
       }
     ],
@@ -84,10 +80,6 @@
       {
         "id": "urn:ngm:class:eip-2981",
         "label": "EIP-2981"
-      },
-      {
-        "id": "urn:ngm:class:operator-filter-registry",
-        "label": "Operator Filter Registry"
       },
       {
         "id": "urn:ngm:class:token-standard",
@@ -104,11 +96,11 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:intellectual-property",
+        "id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Intellectual Property"
       },
       {
-        "id": "urn:ngm:class:royalty-splitting",
+        "id": "urn:ngm:class:royalty-distribution",
         "label": "Royalty Splitting"
       },
       {

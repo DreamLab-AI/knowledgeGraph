@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -94,11 +94,11 @@
         "label": "Zero-Knowledge Proof (ZKP)"
       },
       {
-        "id": "urn:ngm:class:blind-signature",
+        "id": "urn:ngm:class:blind-signatures",
         "label": "Blind Signature"
       },
       {
-        "id": "urn:ngm:class:bbs-plus-signature",
+        "id": "urn:ngm:class:bbs-signature",
         "label": "BBS+ Signature"
       },
       {
@@ -122,15 +122,15 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:w3c-verifiable-credentials-data-model",
+        "id": "urn:ngm:class:w-3-c-verifiable-credentials-data-model",
         "label": "W3C Verifiable Credentials Data Model"
       },
       {
-        "id": "urn:ngm:class:ietf-sd-jwt",
+        "id": "urn:ngm:class:sd-jwt",
         "label": "IETF SD-JWT"
       },
       {
-        "id": "urn:ngm:class:eidas-2",
+        "id": "urn:ngm:class:e-idas-2-0",
         "label": "eIDAS 2.0"
       }
     ],

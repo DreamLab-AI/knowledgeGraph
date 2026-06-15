@@ -426,32 +426,12 @@ public:: true
         "label": "Enforcement Mechanism"
       },
       {
-        "@id": "urn:ngm:class:exemption-framework",
-        "label": "Exemption Framework"
-      },
-      {
         "@id": "urn:ngm:class:howey-test",
         "label": "Howey Test"
       },
       {
-        "@id": "urn:ngm:class:investment-adviser-act",
-        "label": "Investment Adviser Act"
-      },
-      {
-        "@id": "urn:ngm:class:periodic-reporting-obligations",
-        "label": "Periodic Reporting Obligations"
-      },
-      {
-        "@id": "urn:ngm:class:registration-requirements",
-        "label": "Registration Requirements"
-      },
-      {
-        "@id": "urn:ngm:class:securities-exchange-act",
+        "@id": "urn:ngm:class:securities-exchange-act-1934",
         "label": "Securities Exchange Act"
-      },
-      {
-        "@id": "urn:ngm:class:transfer-agent-requirements",
-        "label": "Transfer Agent Requirements"
       }
     ],
     "requires": [
@@ -464,20 +444,12 @@ public:: true
         "label": "Investor Disclosure"
       },
       {
-        "@id": "urn:ngm:class:legal-classification-system",
-        "label": "Legal Classification System"
-      },
-      {
         "@id": "urn:ngm:class:market-surveillance",
         "label": "Market Surveillance"
       },
       {
         "@id": "urn:ngm:class:regulatory-authority",
         "label": "Regulatory Authority"
-      },
-      {
-        "@id": "urn:ngm:class:securities-counsel-opinion",
-        "label": "Securities Counsel Opinion"
       },
       {
         "@id": "urn:ngm:class:aml-kyc-compliance",
@@ -494,11 +466,11 @@ public:: true
         "label": "Capital Formation"
       },
       {
-        "@id": "urn:ngm:class:digital-asset-custody-innovation",
+        "@id": "urn:ngm:class:digital-asset-custody",
         "label": "Digital Asset Custody Innovation"
       },
       {
-        "@id": "urn:ngm:class:institutional-crypto-adoption",
+        "@id": "urn:ngm:class:institutional-adoption",
         "label": "Institutional Crypto Adoption"
       },
       {
@@ -518,7 +490,7 @@ public:: true
         "label": "Spot Ethereum ETF"
       },
       {
-        "@id": "urn:ngm:class:tokenised-securities-market",
+        "@id": "urn:ngm:class:tokenised-securities",
         "label": "Tokenised Securities Market"
       },
       {
@@ -527,14 +499,6 @@ public:: true
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:alternative-trading-system",
-        "label": "Alternative Trading System"
-      },
-      {
-        "@id": "urn:ngm:class:dlt-pilot-regime",
-        "label": "DLT Pilot Regime"
-      },
       {
         "@id": "urn:ngm:class:fca-consumer-duty",
         "label": "FCA Consumer Duty"
@@ -548,7 +512,7 @@ public:: true
         "label": "Howey Test"
       },
       {
-        "@id": "urn:ngm:class:iosco-recommendations",
+        "@id": "urn:ngm:class:iosco",
         "label": "IOSCO Recommendations"
       },
       {
@@ -556,25 +520,13 @@ public:: true
         "label": "MiCA"
       },
       {
-        "@id": "urn:ngm:class:regulation-a-plus",
-        "label": "Regulation A Plus"
-      },
-      {
-        "@id": "urn:ngm:class:regulation-crowdfunding",
-        "label": "Regulation Crowdfunding"
-      },
-      {
         "@id": "urn:ngm:class:regulation-d",
         "label": "Regulation D"
-      },
-      {
-        "@id": "urn:ngm:class:regulation-s",
-        "label": "Regulation S"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:decentralisation-analysis",
+        "@id": "urn:ngm:class:decentralisation",
         "label": "Decentralisation Analysis"
       },
       {
@@ -582,24 +534,8 @@ public:: true
         "label": "Economic Substance Test"
       },
       {
-        "@id": "urn:ngm:class:functional-equivalence-principle",
-        "label": "Functional Equivalence Principle"
-      },
-      {
         "@id": "urn:ngm:class:investment-contract-analysis",
         "label": "Investment Contract Analysis"
-      },
-      {
-        "@id": "urn:ngm:class:progressive-decentralisation-framework",
-        "label": "Progressive Decentralisation Framework"
-      },
-      {
-        "@id": "urn:ngm:class:proportionality-principle",
-        "label": "Proportionality Principle"
-      },
-      {
-        "@id": "urn:ngm:class:same-activity-same-risk-principle",
-        "label": "Same Activity Same Risk Principle"
       }
     ],
     "relatedTo": [
@@ -692,10 +628,6 @@ public:: true
         "label": "BIS"
       },
       {
-        "@id": "urn:ngm:class:cpmi",
-        "label": "CPMI"
-      },
-      {
         "@id": "urn:ngm:class:esma",
         "label": "ESMA"
       },
@@ -712,7 +644,7 @@ public:: true
         "label": "FSB"
       },
       {
-        "@id": "urn:ngm:class:g20-financial-regulation",
+        "@id": "urn:ngm:class:financial-regulation",
         "label": "G20 Financial Regulation"
       },
       {

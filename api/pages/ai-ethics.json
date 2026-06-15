@@ -109,7 +109,7 @@
         "label": "Compliance Framework"
       },
       {
-        "id": "urn:ngm:class:ai-regulatory-policy",
+        "id": "urn:ngm:class:ai-policy",
         "label": "AI Regulatory Policy"
       }
     ],

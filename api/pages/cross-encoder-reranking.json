@@ -23,11 +23,11 @@
         "label": "Semantic Search"
       },
       {
-        "id": "urn:ngm:class:transformer-model",
+        "id": "urn:ngm:class:transformer",
         "label": "Transformer Model"
       },
       {
-        "id": "urn:ngm:class:first-stage-retrieval",
+        "id": "urn:ngm:class:hybrid-retrieval",
         "label": "First-Stage Retrieval"
       }
     ],
@@ -47,7 +47,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:approximate-nearest-neighbour-search",
+        "id": "urn:ngm:class:nearest-neighbor-search",
         "label": "Approximate Nearest Neighbour Search"
       },
       {
@@ -88,10 +88,6 @@
       {
         "id": "urn:ngm:class:self-attention",
         "label": "Self-Attention"
-      },
-      {
-        "id": "urn:ngm:class:pointwise-ranking",
-        "label": "Pointwise Ranking"
       }
     ],
     "supports": [
@@ -112,16 +108,8 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:learning-to-rank",
-        "label": "Learning to Rank"
-      },
-      {
         "id": "urn:ngm:class:knowledge-distillation",
         "label": "Knowledge Distillation"
-      },
-      {
-        "id": "urn:ngm:class:listwise-ranking",
-        "label": "Listwise Ranking"
       }
     ]
   },

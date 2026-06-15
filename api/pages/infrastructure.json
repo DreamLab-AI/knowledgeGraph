@@ -109,10 +109,6 @@
       {
         "id": "urn:ngm:class:high-availability",
         "label": "High Availability"
-      },
-      {
-        "id": "urn:ngm:class:containerization",
-        "label": "Containerization"
       }
     ],
     "standardizedBy": [

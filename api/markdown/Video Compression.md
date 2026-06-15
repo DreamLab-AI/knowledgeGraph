@@ -62,14 +62,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:intra-frame-coding",
-        "label": "Intra-Frame Coding"
-      },
-      {
-        "@id": "urn:ngm:class:inter-frame-coding",
-        "label": "Inter-Frame Coding"
-      },
-      {
         "@id": "urn:ngm:class:entropy-coding",
         "label": "Entropy Coding"
       },
@@ -92,10 +84,6 @@ public:: true
       {
         "@id": "urn:ngm:class:discrete-cosine-transform",
         "label": "Discrete Cosine Transform"
-      },
-      {
-        "@id": "urn:ngm:class:rate-control",
-        "label": "Rate Control"
       }
     ],
     "enables": [
@@ -120,40 +108,18 @@ public:: true
       {
         "@id": "urn:ngm:class:signal-processing",
         "label": "Signal Processing"
-      },
-      {
-        "@id": "urn:ngm:class:perceptual-coding",
-        "label": "Perceptual Coding"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:h264-avc",
-        "label": "H.264/AVC"
-      },
-      {
-        "@id": "urn:ngm:class:av1",
+        "@id": "urn:ngm:class:av1-codec",
         "label": "AV1"
-      }
-    ],
-    "uses": [
-      {
-        "@id": "urn:ngm:class:psychovisual-model",
-        "label": "Psychovisual Model"
-      },
-      {
-        "@id": "urn:ngm:class:colour-subsampling",
-        "label": "Colour Subsampling"
       }
     ],
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:itu-t",
         "label": "ITU-T"
-      },
-      {
-        "@id": "urn:ngm:class:iso-iec-mpeg",
-        "label": "ISO/IEC MPEG"
       },
       {
         "@id": "urn:ngm:class:alliance-for-open-media",
@@ -167,10 +133,6 @@ public:: true
       }
     ],
     "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:neural-video-compression",
-        "label": "Neural Video Compression"
-      },
       {
         "@id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"

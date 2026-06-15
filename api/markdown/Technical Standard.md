@@ -100,26 +100,14 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:best-practices",
-        "label": "Best Practices"
-      },
-      {
-        "@id": "urn:ngm:class:technical-requirements",
-        "label": "Technical Requirements"
-      },
-      {
         "@id": "urn:ngm:class:specification",
         "label": "Specification"
       }
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:conformance-clause",
+        "@id": "urn:ngm:class:standards-conformance",
         "label": "Conformance Clause"
-      },
-      {
-        "@id": "urn:ngm:class:normative-reference",
-        "label": "Normative Reference"
       },
       {
         "@id": "urn:ngm:class:test-method",
@@ -200,10 +188,6 @@ public:: true
       {
         "@id": "urn:ngm:class:protocol",
         "label": "Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:industry-framework",
-        "label": "Industry Framework"
       }
     ]
   },

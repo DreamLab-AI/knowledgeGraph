@@ -466,10 +466,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:conditioning-preprocessor",
-        "label": "Conditioning Preprocessor"
-      },
-      {
         "@id": "urn:ngm:class:control-signal",
         "label": "Control Signal"
       },
@@ -478,20 +474,8 @@ public:: true
         "label": "Cross-Attention Adapter"
       },
       {
-        "@id": "urn:ngm:class:encoder-copy",
-        "label": "Encoder Copy"
-      },
-      {
         "@id": "urn:ngm:class:identity-network",
         "label": "Identity Network"
-      },
-      {
-        "@id": "urn:ngm:class:skip-connection-injection",
-        "label": "Skip Connection Injection"
-      },
-      {
-        "@id": "urn:ngm:class:zero-convolution-layer",
-        "label": "Zero Convolution Layer"
       }
     ],
     "requires": [
@@ -508,11 +492,11 @@ public:: true
         "label": "GPU Compute"
       },
       {
-        "@id": "urn:ngm:class:pretrained-diffusion-model",
+        "@id": "urn:ngm:class:diffusion-model",
         "label": "Pretrained Diffusion Model"
       },
       {
-        "@id": "urn:ngm:class:training-data-pairs",
+        "@id": "urn:ngm:class:training-data",
         "label": "Training Data Pairs"
       },
       {
@@ -522,24 +506,12 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:depth-controlled-synthesis",
-        "label": "Depth-Controlled Synthesis"
-      },
-      {
-        "@id": "urn:ngm:class:edge-guided-generation",
-        "label": "Edge-Guided Generation"
-      },
-      {
         "@id": "urn:ngm:class:identity-preservation",
         "label": "Identity Preservation"
       },
       {
-        "@id": "urn:ngm:class:pose-guided-image-generation",
+        "@id": "urn:ngm:class:image-generation",
         "label": "Pose-Guided Image Generation"
-      },
-      {
-        "@id": "urn:ngm:class:structural-layout-control",
-        "label": "Structural Layout Control"
       },
       {
         "@id": "urn:ngm:class:video-frame-consistency",
@@ -552,7 +524,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:adapter-fine-tuning",
+        "@id": "urn:ngm:class:fine-tuning",
         "label": "Adapter Fine-tuning"
       },
       {
@@ -560,29 +532,17 @@ public:: true
         "label": "Cross-Attention Injection"
       },
       {
-        "@id": "urn:ngm:class:feedback-control-architecture",
+        "@id": "urn:ngm:class:feedback-control",
         "label": "Feedback Control Architecture"
-      },
-      {
-        "@id": "urn:ngm:class:spatial-conditioning",
-        "label": "Spatial Conditioning"
-      },
-      {
-        "@id": "urn:ngm:class:zero-shot-conditioning",
-        "label": "Zero-Shot Conditioning"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:canny-edge-detection",
-        "label": "Canny Edge Detection"
-      },
-      {
-        "@id": "urn:ngm:class:clip-image-encoder",
+        "@id": "urn:ngm:class:clip-encoder",
         "label": "CLIP Image Encoder"
       },
       {
-        "@id": "urn:ngm:class:depth-fm",
+        "@id": "urn:ngm:class:depth-estimation",
         "label": "DepthFM"
       },
       {
@@ -592,10 +552,6 @@ public:: true
       {
         "@id": "urn:ngm:class:insight-face",
         "label": "InsightFace"
-      },
-      {
-        "@id": "urn:ngm:class:mi-da-s-depth-estimation",
-        "label": "MiDaS Depth Estimation"
       },
       {
         "@id": "urn:ngm:class:open-pose",
@@ -612,7 +568,7 @@ public:: true
         "label": "InstantID"
       },
       {
-        "@id": "urn:ngm:class:t2-i-adapter",
+        "@id": "urn:ngm:class:adapter-modules",
         "label": "T2I-Adapter"
       },
       {

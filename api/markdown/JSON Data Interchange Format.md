@@ -45,51 +45,109 @@ elevatedFrom:: [[json]]
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:json-object", "label": "JSON Object"},
-      {"@id": "urn:ngm:class:json-array", "label": "JSON Array"},
-      {"@id": "urn:ngm:class:json-schema", "label": "JSON Schema"}
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
+        "label": "JSON Schema"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:web-api", "label": "Web API"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:ecma-404", "label": "ECMA-404"},
-      {"@id": "urn:ngm:class:rfc-8259", "label": "RFC 8259"}
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:web-api",
+        "label": "Web API"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:utf-8-encoding", "label": "UTF-8 Encoding"},
-      {"@id": "urn:ngm:class:unicode", "label": "Unicode"}
+      {
+        "@id": "urn:ngm:class:unicode",
+        "label": "Unicode"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:api-standard", "label": "API Standard"},
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:configuration-management", "label": "Configuration Management"}
+      {
+        "@id": "urn:ngm:class:api-standard",
+        "label": "API Standard"
+      },
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:xml", "label": "XML"},
-      {"@id": "urn:ngm:class:yaml", "label": "YAML"},
-      {"@id": "urn:ngm:class:protocol-buffers", "label": "Protocol Buffers"},
-      {"@id": "urn:ngm:class:messagepack", "label": "MessagePack"}
+      {
+        "@id": "urn:ngm:class:xml",
+        "label": "XML"
+      },
+      {
+        "@id": "urn:ngm:class:yaml",
+        "label": "YAML"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-buffers",
+        "label": "Protocol Buffers"
+      },
+      {
+        "@id": "urn:ngm:class:messagepack",
+        "label": "MessagePack"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-interchange", "label": "Data Interchange"},
-      {"@id": "urn:ngm:class:serialisation", "label": "Serialisation"},
-      {"@id": "urn:ngm:class:data-format", "label": "Data Format"},
-      {"@id": "urn:ngm:class:javascript", "label": "JavaScript"},
-      {"@id": "urn:ngm:class:data-serialisation-format", "label": "Data Serialisation Format"}
+      {
+        "@id": "urn:ngm:class:serialisation",
+        "label": "Serialisation"
+      },
+      {
+        "@id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      },
+      {
+        "@id": "urn:ngm:class:javascript",
+        "label": "JavaScript"
+      },
+      {
+        "@id": "urn:ngm:class:serialisation-format",
+        "label": "Data Serialisation Format"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:javascript-object-notation", "label": "JavaScript Object Notation"}
+    {
+      "@id": "urn:ngm:class:javascript-object-notation",
+      "label": "JavaScript Object Notation"
+    }
   ],
   "quality": 0.74,
   "provenance": {

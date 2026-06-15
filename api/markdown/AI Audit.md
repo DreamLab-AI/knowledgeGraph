@@ -128,38 +128,14 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:access-to-systems-and-personnel",
-        "label": "Access to Systems and Personnel"
-      },
-      {
-        "@id": "urn:ngm:class:ai-documentation",
+        "@id": "urn:ngm:class:ai-documentation-standards",
         "label": "AI Documentation"
-      },
-      {
-        "@id": "urn:ngm:class:auditor-competence",
-        "label": "Auditor Competence"
-      },
-      {
-        "@id": "urn:ngm:class:audit-independence",
-        "label": "Audit Independence"
       }
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:technical-audit",
-        "label": "Technical Audit"
-      },
-      {
-        "@id": "urn:ngm:class:governance-audit",
-        "label": "Governance Audit"
-      },
-      {
         "@id": "urn:ngm:class:compliance-audit",
         "label": "Compliance Audit"
-      },
-      {
-        "@id": "urn:ngm:class:impact-and-fairness-audit",
-        "label": "Impact and Fairness Audit"
       }
     ],
     "partOf": [
@@ -190,10 +166,6 @@ public:: true
       {
         "@id": "urn:ngm:class:iso-iec-42001-2023",
         "label": "ISO-IEC 42001 2023"
-      },
-      {
-        "@id": "urn:ngm:class:iso-19011",
-        "label": "ISO 19011"
       }
     ],
     "uses": [
@@ -204,10 +176,6 @@ public:: true
       {
         "@id": "urn:ngm:class:ai-impact-assessment",
         "label": "AI Impact Assessment"
-      },
-      {
-        "@id": "urn:ngm:class:fairness-testing",
-        "label": "Fairness Testing"
       }
     ],
     "supports": [
@@ -246,7 +214,7 @@ public:: true
         "label": "AI Agent System"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -267,7 +235,7 @@ public:: true
       "label": "Algorithmic Audit"
     }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

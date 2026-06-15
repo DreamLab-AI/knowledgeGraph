@@ -16,24 +16,7 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:ros-node",
-        "label": "ROS Node"
-      },
-      {
-        "id": "urn:ngm:class:ros-topic",
-        "label": "ROS Topic"
-      },
-      {
-        "id": "urn:ngm:class:ros-package",
-        "label": "ROS Package"
-      },
-      {
-        "id": "urn:ngm:class:tf2",
-        "label": "TF2 Transform Library"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:dds-middleware",
@@ -44,7 +27,7 @@
         "label": "Middleware"
       },
       {
-        "id": "urn:ngm:class:linux-operating-system",
+        "id": "urn:ngm:class:operating-system",
         "label": "Linux Operating System"
       }
     ],
@@ -86,16 +69,7 @@
         "label": "Service Oriented Architecture"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:orocos-rtt",
-        "label": "Orocos RTT"
-      },
-      {
-        "id": "urn:ngm:class:lcm",
-        "label": "Lightweight Communications and Marshalling"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:artificial-intelligence",
@@ -112,10 +86,6 @@
         "label": "Gazebo Simulator"
       },
       {
-        "id": "urn:ngm:class:rviz",
-        "label": "RViz Visualisation Tool"
-      },
-      {
         "id": "urn:ngm:class:colcon-build-system",
         "label": "Colcon Build System"
       }
@@ -126,7 +96,7 @@
         "label": "Real-Time Control"
       },
       {
-        "id": "urn:ngm:class:embedded-robotics",
+        "id": "urn:ngm:class:robotics",
         "label": "Embedded Robotics"
       },
       {
@@ -137,7 +107,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:robotics-software-ecosystem",
+        "id": "urn:ngm:class:robotics-platform",
         "label": "Robotics Software Ecosystem"
       }
     ],

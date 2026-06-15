@@ -19,11 +19,11 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:explainability-ai-0063",
+        "id": "urn:ngm:class:explainability",
         "label": "Explainability (AI-0063)"
       },
       {
-        "id": "urn:ngm:class:transparency-ai-0062",
+        "id": "urn:ngm:class:transparency",
         "label": "Transparency (AI-0062)"
       },
       {
@@ -41,7 +41,7 @@
         "label": "Compliance"
       },
       {
-        "id": "urn:ngm:class:risk-management-ai-0078",
+        "id": "urn:ngm:class:risk-management",
         "label": "Risk Management (AI-0078)"
       },
       {
@@ -56,7 +56,7 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
@@ -72,10 +72,6 @@
       {
         "id": "urn:ngm:class:opacity",
         "label": "Opacity"
-      },
-      {
-        "id": "urn:ngm:class:diffused-responsibility",
-        "label": "Diffused Responsibility"
       }
     ],
     "bridgesTo": [
@@ -109,7 +105,7 @@
         "label": "ISO-IEC 23894 2023"
       },
       {
-        "id": "urn:ngm:class:iso-iec-38500-2024",
+        "id": "urn:ngm:class:iso-iec-38500",
         "label": "ISO/IEC 38500:2024"
       },
       {

@@ -100,10 +100,6 @@ public:: true
         "label": "Cryptographic Proofs"
       },
       {
-        "@id": "urn:ngm:class:issuer-infrastructure",
-        "label": "Issuer Infrastructure"
-      },
-      {
         "@id": "urn:ngm:class:standards-body",
         "label": "Standards Body"
       },
@@ -126,10 +122,6 @@ public:: true
         "label": "Identity Portability"
       },
       {
-        "@id": "urn:ngm:class:trust-interoperability",
-        "label": "Trust Interoperability"
-      },
-      {
         "@id": "urn:ngm:class:selective-disclosure",
         "label": "Selective Disclosure"
       },
@@ -140,12 +132,8 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:w3c-verifiable-credentials",
+        "@id": "urn:ngm:class:w3-c-verifiable-credentials",
         "label": "W3C Verifiable Credentials"
-      },
-      {
-        "@id": "urn:ngm:class:iso-mdl",
-        "label": "ISO mDL"
       },
       {
         "@id": "urn:ngm:class:sd-jwt",
@@ -154,7 +142,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:json-ld",
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
@@ -180,10 +168,6 @@ public:: true
       {
         "@id": "urn:ngm:class:saml-assertion",
         "label": "SAML Assertion"
-      },
-      {
-        "@id": "urn:ngm:class:jwt-token",
-        "label": "JWT Token"
       }
     ],
     "bridgesTo": [
@@ -198,7 +182,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {

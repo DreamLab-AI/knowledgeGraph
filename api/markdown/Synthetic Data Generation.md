@@ -55,51 +55,131 @@ public:: true
   },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
-      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"}
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:privacy-preserving-data-sharing", "label": "Privacy Preserving Data Sharing"},
-      {"@id": "urn:ngm:class:embodied-ai-simulation", "label": "Embodied AI Simulation"},
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:data-augmentation", "label": "Data Augmentation"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-data-sharing",
+        "label": "Privacy Preserving Data Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:embodied-ai-simulation",
+        "label": "Embodied AI Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:statistical-modelling", "label": "Statistical Modelling"},
-      {"@id": "urn:ngm:class:seed-dataset", "label": "Seed Dataset"}
+      {
+        "@id": "urn:ngm:class:statistical-modelling",
+        "label": "Statistical Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:training-dataset",
+        "label": "Seed Dataset"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:machine-learning-infrastructure", "label": "Machine Learning Infrastructure"},
-      {"@id": "urn:ngm:class:compute-cluster", "label": "Compute Cluster"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:compute-cluster",
+        "label": "Compute Cluster"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:rare-event-modelling", "label": "Rare Event Modelling"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:real-world-data-collection", "label": "Real-World Data Collection"},
-      {"@id": "urn:ngm:class:data-annotation", "label": "Data Annotation"}
+      {
+        "@id": "urn:ngm:class:data-collection",
+        "label": "Real-World Data Collection"
+      },
+      {
+        "@id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-augmentation-strategies", "label": "Data Augmentation Strategies"},
-      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
-      {"@id": "urn:ngm:class:deep-generative-model", "label": "Deep Generative Model"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+      {
+        "@id": "urn:ngm:class:data-augmentation-strategies",
+        "label": "Data Augmentation Strategies"
+      },
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:deep-generative-model",
+        "label": "Deep Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:privacy-law", "label": "Privacy Law"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:privacy-law",
+        "label": "Privacy Law"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:artificial-data-generation", "label": "Artificial Data Generation"},
-    {"@id": "urn:ngm:class:synthetic-dataset-creation", "label": "Synthetic Dataset Creation"}
+    {
+      "@id": "urn:ngm:class:artificial-data-generation",
+      "label": "Artificial Data Generation"
+    },
+    {
+      "@id": "urn:ngm:class:synthetic-dataset-creation",
+      "label": "Synthetic Dataset Creation"
+    }
   ],
   "quality": 0.72,
   "provenance": {

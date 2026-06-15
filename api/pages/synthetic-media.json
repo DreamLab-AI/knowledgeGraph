@@ -18,16 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:synthetic-speech",
+        "id": "urn:ngm:class:text-to-speech",
         "label": "Synthetic Speech"
-      },
-      {
-        "id": "urn:ngm:class:synthetic-video",
-        "label": "Synthetic Video"
-      },
-      {
-        "id": "urn:ngm:class:ai-generated-text",
-        "label": "AI-Generated Text"
       }
     ],
     "requires": [

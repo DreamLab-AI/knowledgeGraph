@@ -22,10 +22,6 @@
         "label": "Prompt Injection"
       },
       {
-        "id": "urn:ngm:class:jailbreak-attack",
-        "label": "Jailbreak Attack"
-      },
-      {
         "id": "urn:ngm:class:threat-modelling",
         "label": "Threat Modelling"
       },
@@ -42,10 +38,6 @@
       {
         "id": "urn:ngm:class:adversarial-testing",
         "label": "Adversarial Testing"
-      },
-      {
-        "id": "urn:ngm:class:safety-policy",
-        "label": "Safety Policy"
       }
     ],
     "enables": [
@@ -58,19 +50,11 @@
         "label": "Safety Fine Tuning"
       },
       {
-        "id": "urn:ngm:class:model-hardening",
-        "label": "Model Hardening"
-      },
-      {
         "id": "urn:ngm:class:responsible-ai-deployment",
         "label": "Responsible AI Deployment"
       }
     ],
     "dependsOn": [
-      {
-        "id": "urn:ngm:class:attack-simulation",
-        "label": "Attack Simulation"
-      },
       {
         "id": "urn:ngm:class:human-evaluation",
         "label": "Human Evaluation"
@@ -78,10 +62,6 @@
     ],
     "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:blue-team",
-        "label": "Blue Team"
-      },
       {
         "id": "urn:ngm:class:penetration-testing",
         "label": "Penetration Testing"
@@ -134,7 +114,7 @@
         "label": "Reinforcement Learning from Human Feedback"
       },
       {
-        "id": "urn:ngm:class:bias-detection",
+        "id": "urn:ngm:class:bias-detection-methods",
         "label": "Bias Detection"
       },
       {

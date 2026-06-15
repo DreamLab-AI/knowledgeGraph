@@ -89,10 +89,6 @@ public:: true
       {
         "@id": "urn:ngm:class:version-control",
         "label": "Version Control"
-      },
-      {
-        "@id": "urn:ngm:class:review-and-approval",
-        "label": "Review and Approval"
       }
     ],
     "partOf": [
@@ -133,10 +129,6 @@ public:: true
       {
         "@id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
-      },
-      {
-        "@id": "urn:ngm:class:collaborative-tools",
-        "label": "Collaborative Tools"
       }
     ],
     "dependsOn": [
@@ -159,12 +151,6 @@ public:: true
         "label": "Spatial Computing"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:traditional-broadcast-workflow",
-        "label": "Traditional Broadcast Workflow"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:artificial-intelligence",
@@ -181,7 +167,7 @@ public:: true
         "label": "Metaverse Content Pipeline"
       },
       {
-        "@id": "urn:ngm:class:3d-content-pipeline",
+        "@id": "urn:ngm:class:3-d-content-pipeline",
         "label": "3D Content Pipeline"
       }
     ]

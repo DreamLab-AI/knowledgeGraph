@@ -132,7 +132,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:soulbound-token",
+        "@id": "urn:ngm:class:soulbound-tokens",
         "label": "Soulbound Token"
       },
       {

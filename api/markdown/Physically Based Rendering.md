@@ -49,59 +49,123 @@ alias:: Physically-Based Rendering
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:brdf", "label": "BRDF"},
-      {"@id": "urn:ngm:class:microfacet-model", "label": "Microfacet Model"},
-      {"@id": "urn:ngm:class:image-based-lighting", "label": "Image-Based Lighting"},
-      {"@id": "urn:ngm:class:normal-map", "label": "Normal Map"},
-      {"@id": "urn:ngm:class:environment-map", "label": "Environment Map"}
+      {
+        "@id": "urn:ngm:class:brdf",
+        "label": "BRDF"
+      },
+      {
+        "@id": "urn:ngm:class:normal-map",
+        "label": "Normal Map"
+      },
+      {
+        "@id": "urn:ngm:class:environment-mapping",
+        "label": "Environment Map"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:shader", "label": "Shader"},
-      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"},
-      {"@id": "urn:ngm:class:gpu", "label": "GPU"},
-      {"@id": "urn:ngm:class:texture-mapping", "label": "Texture Mapping"}
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "@id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:photorealism", "label": "Photorealism"},
-      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"}
-    ],
-    "dependsOn": [
-      {"@id": "urn:ngm:class:energy-conservation", "label": "Energy Conservation"},
-      {"@id": "urn:ngm:class:radiometry", "label": "Radiometry"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:cook-torrance-model", "label": "Cook-Torrance Model"},
-      {"@id": "urn:ngm:class:fresnel-equation", "label": "Fresnel Equation"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:photorealism",
+        "label": "Photorealism"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:gltf", "label": "glTF"},
-      {"@id": "urn:ngm:class:hdri", "label": "HDRI"},
-      {"@id": "urn:ngm:class:monte-carlo-integration", "label": "Monte Carlo Integration"}
+      {
+        "@id": "urn:ngm:class:gltf-standard",
+        "label": "glTF"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-integration",
+        "label": "Monte Carlo Integration"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:khronos-group", "label": "Khronos Group"},
-      {"@id": "urn:ngm:class:gltf", "label": "glTF"}
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "@id": "urn:ngm:class:gltf-standard",
+        "label": "glTF"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:phong-shading", "label": "Phong Shading"},
-      {"@id": "urn:ngm:class:rasterisation", "label": "Rasterisation"}
+      {
+        "@id": "urn:ngm:class:phong-shading",
+        "label": "Phong Shading"
+      },
+      {
+        "@id": "urn:ngm:class:rasterisation",
+        "label": "Rasterisation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ray-tracing", "label": "Ray Tracing"},
-      {"@id": "urn:ngm:class:path-tracing", "label": "Path Tracing"},
-      {"@id": "urn:ngm:class:global-illumination", "label": "Global Illumination"},
-      {"@id": "urn:ngm:class:subsurface-scattering", "label": "Subsurface Scattering"}
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:path-tracing",
+        "label": "Path Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
+      },
+      {
+        "@id": "urn:ngm:class:subsurface-scattering",
+        "label": "Subsurface Scattering"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:pbr-rendering", "label": "PBR Rendering"},
-    {"@id": "urn:ngm:class:physically-plausible-rendering", "label": "Physically Plausible Rendering"}
+    {
+      "@id": "urn:ngm:class:pbr-rendering",
+      "label": "PBR Rendering"
+    },
+    {
+      "@id": "urn:ngm:class:physically-plausible-rendering",
+      "label": "Physically Plausible Rendering"
+    }
   ],
   "quality": 0.74,
   "provenance": {

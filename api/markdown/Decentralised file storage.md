@@ -440,18 +440,6 @@ public:: true
       {
         "@id": "urn:ngm:class:pinning-service",
         "label": "Pinning Service"
-      },
-      {
-        "@id": "urn:ngm:class:retrieval-market",
-        "label": "Retrieval Market"
-      },
-      {
-        "@id": "urn:ngm:class:storage-proof",
-        "label": "Storage Proof"
-      },
-      {
-        "@id": "urn:ngm:class:storage-provider",
-        "label": "Storage Provider"
       }
     ],
     "requires": [
@@ -462,10 +450,6 @@ public:: true
       {
         "@id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hash Function"
-      },
-      {
-        "@id": "urn:ngm:class:disk-storage",
-        "label": "Disk Storage"
       },
       {
         "@id": "urn:ngm:class:libp2p",
@@ -482,27 +466,11 @@ public:: true
         "label": "Data Sovereignty"
       },
       {
-        "@id": "urn:ngm:class:nft-metadata-persistence",
-        "label": "NFT Metadata Persistence"
-      },
-      {
-        "@id": "urn:ngm:class:permaweb",
-        "label": "Permaweb"
-      },
-      {
-        "@id": "urn:ngm:class:verifiable-storage",
-        "label": "Verifiable Storage"
-      },
-      {
         "@id": "urn:ngm:class:censorship-resistance",
         "label": "Censorship Resistance"
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:bitswap-protocol",
-        "label": "Bitswap Protocol"
-      },
       {
         "@id": "urn:ngm:class:kademlia-dht",
         "label": "Kademlia DHT"
@@ -522,10 +490,6 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:car-file",
-        "label": "CAR File"
-      },
-      {
         "@id": "urn:ngm:class:cid",
         "label": "CID"
       },
@@ -536,10 +500,6 @@ public:: true
       {
         "@id": "urn:ngm:class:multihash",
         "label": "Multihash"
-      },
-      {
-        "@id": "urn:ngm:class:ucan",
-        "label": "UCAN"
       }
     ],
     "relatedTo": [
@@ -561,10 +521,6 @@ public:: true
       }
     ],
     "supports": [
-      {
-        "@id": "urn:ngm:class:ai-dataset-distribution",
-        "label": "AI Dataset Distribution"
-      },
       {
         "@id": "urn:ngm:class:decentralized-application",
         "label": "Decentralized Application"
@@ -588,16 +544,12 @@ public:: true
         "label": "IETF"
       },
       {
-        "@id": "urn:ngm:class:ipld-specifications",
+        "@id": "urn:ngm:class:ipld",
         "label": "IPLD Specifications"
       },
       {
         "@id": "urn:ngm:class:multiformats",
         "label": "Multiformats"
-      },
-      {
-        "@id": "urn:ngm:class:ucan-working-group",
-        "label": "UCAN Working Group"
       }
     ]
   },

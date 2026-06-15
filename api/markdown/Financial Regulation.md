@@ -29,51 +29,131 @@
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:prudential-regulation", "label": "Prudential Regulation"},
-      {"@id": "urn:ngm:class:conduct-regulation", "label": "Conduct Regulation"},
-      {"@id": "urn:ngm:class:securities-regulation", "label": "Securities Regulation"},
-      {"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"},
-      {"@id": "urn:ngm:class:stablecoin-regulation", "label": "Stablecoin Regulation"}
+      {
+        "@id": "urn:ngm:class:prudential-regulation",
+        "label": "Prudential Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin-regulation",
+        "label": "Stablecoin Regulation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:know-your-customer", "label": "Know Your Customer"},
-      {"@id": "urn:ngm:class:capital-adequacy", "label": "Capital Adequacy"}
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "@id": "urn:ngm:class:capital-adequacy",
+        "label": "Capital Adequacy"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:financial-stability", "label": "Financial Stability"},
-      {"@id": "urn:ngm:class:consumer-protection", "label": "Consumer Protection"},
-      {"@id": "urn:ngm:class:market-integrity", "label": "Market Integrity"}
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "@id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "@id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:legal-frameworks", "label": "Legal Frameworks"},
-      {"@id": "urn:ngm:class:supervisory-authority", "label": "Supervisory Authority"}
+      {
+        "@id": "urn:ngm:class:legal-framework",
+        "label": "Legal Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:supervisory-authority",
+        "label": "Supervisory Authority"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:basel-committee", "label": "Basel Committee"},
-      {"@id": "urn:ngm:class:financial-stability-board", "label": "Financial Stability Board"},
-      {"@id": "urn:ngm:class:iosco", "label": "IOSCO"},
-      {"@id": "urn:ngm:class:fatf", "label": "FATF"}
+      {
+        "@id": "urn:ngm:class:basel-committee",
+        "label": "Basel Committee"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      },
+      {
+        "@id": "urn:ngm:class:iosco",
+        "label": "IOSCO"
+      },
+      {
+        "@id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:self-regulation", "label": "Self-Regulation"},
-      {"@id": "urn:ngm:class:regulatory-arbitrage", "label": "Regulatory Arbitrage"}
+      {
+        "@id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-arbitrage",
+        "label": "Regulatory Arbitrage"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"},
-      {"@id": "urn:ngm:class:regtech", "label": "RegTech"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:regtech",
+        "label": "RegTech"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:monetary-policy", "label": "Monetary Policy"},
-      {"@id": "urn:ngm:class:systemic-risk", "label": "Systemic Risk"},
-      {"@id": "urn:ngm:class:financial-crime", "label": "Financial Crime"}
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "@id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      },
+      {
+        "@id": "urn:ngm:class:financial-crime-detection",
+        "label": "Financial Crime"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:financial-supervisory-framework", "label": "Financial Supervisory Framework"},
-    {"@id": "urn:ngm:class:financial-market-regulation", "label": "Financial Market Regulation"}
+    {
+      "@id": "urn:ngm:class:financial-supervisory-framework",
+      "label": "Financial Supervisory Framework"
+    },
+    {
+      "@id": "urn:ngm:class:financial-market-regulation",
+      "label": "Financial Market Regulation"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

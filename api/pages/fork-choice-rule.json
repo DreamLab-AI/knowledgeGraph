@@ -37,7 +37,7 @@
         "label": "Immutability"
       },
       {
-        "id": "urn:ngm:class:blockchain-finality",
+        "id": "urn:ngm:class:finality",
         "label": "Blockchain Finality"
       },
       {
@@ -81,7 +81,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:distributed-systems-consensus",
+        "id": "urn:ngm:class:distributed-consensus",
         "label": "Distributed Systems Consensus"
       },
       {

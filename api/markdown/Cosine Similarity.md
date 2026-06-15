@@ -23,51 +23,119 @@ public:: true
   "definition": "Cosine Similarity is a metric that measures the cosine of the angle between two non-zero vectors in an inner product space, yielding a value in [−1, 1] that quantifies directional similarity independently of vector magnitude. It is the dominant similarity measure for comparing high-dimensional sparse and dense vector representations of text, images, and other data in information retrieval and machine learning systems.",
   "domain": "machine-learning",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
-      {"@id": "urn:ngm:class:nearest-neighbour-search", "label": "Nearest Neighbour Search"}
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Nearest Neighbour Search"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:vector-space-model", "label": "Vector Space Model"},
-      {"@id": "urn:ngm:class:inner-product", "label": "Inner Product"}
+      {
+        "@id": "urn:ngm:class:vector-space-model",
+        "label": "Vector Space Model"
+      },
+      {
+        "@id": "urn:ngm:class:inner-product",
+        "label": "Inner Product"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:embedding", "label": "Embedding"},
-      {"@id": "urn:ngm:class:l2-normalisation", "label": "L2 Normalisation"},
-      {"@id": "urn:ngm:class:dot-product", "label": "Dot Product"}
+      {
+        "@id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:layer-normalisation",
+        "label": "L2 Normalisation"
+      },
+      {
+        "@id": "urn:ngm:class:dot-product",
+        "label": "Dot Product"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:document-clustering", "label": "Document Clustering"},
-      {"@id": "urn:ngm:class:recommendation-system", "label": "Recommendation System"}
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
-      {"@id": "urn:ngm:class:approximate-nearest-neighbour", "label": "Approximate Nearest Neighbour"},
-      {"@id": "urn:ngm:class:bi-encoder", "label": "Bi-Encoder"}
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "@id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Approximate Nearest Neighbour"
+      },
+      {
+        "@id": "urn:ngm:class:bi-encoder",
+        "label": "Bi-Encoder"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:euclidean-distance", "label": "Euclidean Distance"},
-      {"@id": "urn:ngm:class:cross-encoder-reranking", "label": "Cross-Encoder Reranking"},
-      {"@id": "urn:ngm:class:jaccard-similarity", "label": "Jaccard Similarity"}
+      {
+        "@id": "urn:ngm:class:euclidean-distance",
+        "label": "Euclidean Distance"
+      },
+      {
+        "@id": "urn:ngm:class:cross-encoder-reranking",
+        "label": "Cross-Encoder Reranking"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:knowledge-graph-embedding", "label": "Knowledge Graph Embedding"},
-      {"@id": "urn:ngm:class:hyperbolic-embedding", "label": "Hyperbolic Embedding"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-embedding",
+        "label": "Knowledge Graph Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:embedding",
+        "label": "Hyperbolic Embedding"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:vector-similarity-measure", "label": "Vector Similarity Measure"},
-      {"@id": "urn:ngm:class:embedding-search", "label": "Embedding Search"},
-      {"@id": "urn:ngm:class:tf-idf", "label": "TF-IDF"},
-      {"@id": "urn:ngm:class:matryoshka-representation-learning", "label": "Matryoshka Representation Learning"}
+      {
+        "@id": "urn:ngm:class:embedding-search",
+        "label": "Embedding Search"
+      },
+      {
+        "@id": "urn:ngm:class:tf-idf",
+        "label": "TF-IDF"
+      },
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Matryoshka Representation Learning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:angular-similarity", "label": "Angular Similarity"},
-    {"@id": "urn:ngm:class:normalised-dot-product-similarity", "label": "Normalised Dot Product Similarity"}
+    {
+      "@id": "urn:ngm:class:angular-similarity",
+      "label": "Angular Similarity"
+    },
+    {
+      "@id": "urn:ngm:class:normalised-dot-product-similarity",
+      "label": "Normalised Dot Product Similarity"
+    }
   ],
   "quality": 0.72,
   "provenance": {

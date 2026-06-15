@@ -79,28 +79,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:tree",
-        "label": "Tree"
-      },
-      {
-        "@id": "urn:ngm:class:shortest-path",
+        "@id": "urn:ngm:class:path-planning",
         "label": "Shortest Path"
       },
       {
-        "@id": "urn:ngm:class:graph-colouring",
-        "label": "Graph Colouring"
-      },
-      {
-        "@id": "urn:ngm:class:spanning-tree",
-        "label": "Spanning Tree"
-      },
-      {
-        "@id": "urn:ngm:class:graph-traversal",
+        "@id": "urn:ngm:class:graph-algorithms",
         "label": "Graph Traversal"
-      },
-      {
-        "@id": "urn:ngm:class:cycle-detection",
-        "label": "Cycle Detection"
       }
     ],
     "enables": [
@@ -189,7 +173,7 @@ public:: true
         "label": "Topology"
       },
       {
-        "@id": "urn:ngm:class:computational-complexity",
+        "@id": "urn:ngm:class:computational-complexity-theory",
         "label": "Computational Complexity"
       }
     ]

@@ -144,7 +144,7 @@ public:: true
         "label": "Byzantine Fault Tolerance"
       },
       {
-        "@id": "urn:ngm:class:double-spend-problem",
+        "@id": "urn:ngm:class:double-spending",
         "label": "Double-Spend Problem"
       },
       {
@@ -158,10 +158,6 @@ public:: true
       {
         "@id": "urn:ngm:class:lightning-network",
         "label": "Lightning Network"
-      },
-      {
-        "@id": "urn:ngm:class:cryptocurrency-technical-specification",
-        "label": "Cryptocurrency Technical Specification"
       }
     ],
     "bridgesTo": [

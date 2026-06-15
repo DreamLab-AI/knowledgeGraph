@@ -23,55 +23,105 @@ public:: true
   "definition": "Demand forecasting is the analytical process of estimating future customer demand for products or services over a specified time horizon using historical sales data, statistical models, and increasingly machine learning algorithms. Accurate demand forecasts drive inventory replenishment, capacity planning, production scheduling, and financial budgeting decisions across retail, manufacturing, logistics, and energy sectors.",
   "domain": "supply-chain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:predictive-analytics",
+      "label": "Predictive Analytics"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:forecast-horizon", "label": "Forecast Horizon"},
-      {"@id": "urn:ngm:class:time-series-analysis", "label": "Time-Series Analysis"},
-      {"@id": "urn:ngm:class:probabilistic-forecasting", "label": "Probabilistic Forecasting"},
-      {"@id": "urn:ngm:class:hierarchical-forecasting", "label": "Hierarchical Forecasting"}
+      {
+        "@id": "urn:ngm:class:forecast-horizon",
+        "label": "Forecast Horizon"
+      },
+      {
+        "@id": "urn:ngm:class:time-series-analysis",
+        "label": "Time-Series Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-forecasting",
+        "label": "Probabilistic Forecasting"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:supply-chain-planning", "label": "Supply Chain Planning"},
-      {"@id": "urn:ngm:class:sales-and-operations-planning", "label": "Sales and Operations Planning"}
+      {
+        "@id": "urn:ngm:class:supply-chain-planning",
+        "label": "Supply Chain Planning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:historical-sales-data", "label": "Historical Sales Data"},
-      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"}
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"},
-      {"@id": "urn:ngm:class:demand-planning", "label": "Demand Planning"},
-      {"@id": "urn:ngm:class:inventory-optimisation", "label": "Inventory Optimisation"},
-      {"@id": "urn:ngm:class:capacity-planning", "label": "Capacity Planning"}
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "@id": "urn:ngm:class:demand-planning",
+        "label": "Demand Planning"
+      },
+      {
+        "@id": "urn:ngm:class:capacity-planning",
+        "label": "Capacity Planning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:gradient-boosted-trees", "label": "Gradient Boosted Trees"},
-      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"},
-      {"@id": "urn:ngm:class:exponential-smoothing", "label": "Exponential Smoothing"},
-      {"@id": "urn:ngm:class:arima", "label": "ARIMA"}
-    ],
-    "supports": [
-      {"@id": "urn:ngm:class:production-scheduling", "label": "Production Scheduling"},
-      {"@id": "urn:ngm:class:financial-budgeting", "label": "Financial Budgeting"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:supply-forecasting", "label": "Supply Forecasting"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-boosted-trees",
+        "label": "Gradient Boosted Trees"
+      },
+      {
+        "@id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:exponential-smoothing",
+        "label": "Exponential Smoothing"
+      },
+      {
+        "@id": "urn:ngm:class:arima",
+        "label": "ARIMA"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"},
-      {"@id": "urn:ngm:class:logistics-optimisation", "label": "Logistics Optimisation"},
-      {"@id": "urn:ngm:class:retail-analytics", "label": "Retail Analytics"}
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:logistics-optimisation",
+        "label": "Logistics Optimisation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:sales-forecasting", "label": "Sales Forecasting"},
-    {"@id": "urn:ngm:class:demand-prediction", "label": "Demand Prediction"}
+    {
+      "@id": "urn:ngm:class:sales-forecasting",
+      "label": "Sales Forecasting"
+    },
+    {
+      "@id": "urn:ngm:class:demand-prediction",
+      "label": "Demand Prediction"
+    }
   ],
   "quality": 0.8,
   "provenance": {

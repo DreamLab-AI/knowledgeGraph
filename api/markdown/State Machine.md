@@ -352,35 +352,15 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:accepting-state",
-        "label": "Accepting State"
-      },
-      {
-        "@id": "urn:ngm:class:input-alphabet",
-        "label": "Input Alphabet"
-      },
-      {
-        "@id": "urn:ngm:class:output-function",
-        "label": "Output Function"
-      },
-      {
         "@id": "urn:ngm:class:stacks",
         "label": "Stacks"
-      },
-      {
-        "@id": "urn:ngm:class:start-state",
-        "label": "Start State"
       },
       {
         "@id": "urn:ngm:class:state",
         "label": "State"
       },
       {
-        "@id": "urn:ngm:class:tape",
-        "label": "Tape"
-      },
-      {
-        "@id": "urn:ngm:class:transition-function",
+        "@id": "urn:ngm:class:state-transition-function",
         "label": "Transition Function"
       }
     ],
@@ -388,10 +368,6 @@ public:: true
       {
         "@id": "urn:ngm:class:determinism",
         "label": "Determinism"
-      },
-      {
-        "@id": "urn:ngm:class:event-model",
-        "label": "Event Model"
       },
       {
         "@id": "urn:ngm:class:replication-log",
@@ -412,14 +388,6 @@ public:: true
         "label": "Behaviour Tree"
       },
       {
-        "@id": "urn:ngm:class:parser",
-        "label": "Parser"
-      },
-      {
-        "@id": "urn:ngm:class:protocol-verification",
-        "label": "Protocol Verification"
-      },
-      {
         "@id": "urn:ngm:class:regular-expression",
         "label": "Regular Expression"
       },
@@ -438,32 +406,12 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:finite-automaton",
-        "label": "Finite Automaton"
-      },
-      {
-        "@id": "urn:ngm:class:pushdown-automaton",
-        "label": "Pushdown Automaton"
-      },
-      {
-        "@id": "urn:ngm:class:replicated-state-machine",
+        "@id": "urn:ngm:class:state-machine-replication",
         "label": "Replicated State Machine"
-      },
-      {
-        "@id": "urn:ngm:class:spring-state-machine",
-        "label": "Spring State Machine"
-      },
-      {
-        "@id": "urn:ngm:class:statecharts",
-        "label": "Statecharts"
       },
       {
         "@id": "urn:ngm:class:turing-machine",
         "label": "Turing Machine"
-      },
-      {
-        "@id": "urn:ngm:class:xstate",
-        "label": "XState"
       }
     ],
     "uses": [
@@ -474,14 +422,6 @@ public:: true
       {
         "@id": "urn:ngm:class:raft",
         "label": "Raft"
-      },
-      {
-        "@id": "urn:ngm:class:scxml",
-        "label": "SCXML"
-      },
-      {
-        "@id": "urn:ngm:class:uml",
-        "label": "UML"
       },
       {
         "@id": "urn:ngm:class:byzantine-fault-tolerance",
@@ -540,7 +480,7 @@ public:: true
         "label": "Game AI"
       },
       {
-        "@id": "urn:ngm:class:ui-state-management",
+        "@id": "urn:ngm:class:state-management",
         "label": "UI State Management"
       },
       {
@@ -564,22 +504,6 @@ public:: true
       {
         "@id": "urn:ngm:class:ieee-802-x",
         "label": "IEEE 802-X"
-      },
-      {
-        "@id": "urn:ngm:class:ietf-rfc-9562",
-        "label": "IETF RFC 9562"
-      },
-      {
-        "@id": "urn:ngm:class:iso-iec-10746-rm-odp",
-        "label": "ISO/IEC 10746 RM-ODP"
-      },
-      {
-        "@id": "urn:ngm:class:omg-uml-2-5-1",
-        "label": "OMG UML 2.5.1"
-      },
-      {
-        "@id": "urn:ngm:class:w3-c-scxml",
-        "label": "W3C SCXML"
       }
     ]
   },

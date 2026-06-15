@@ -124,17 +124,13 @@ public:: true
         "label": "Lens"
       },
       {
-        "@id": "urn:ngm:class:processing-unit",
-        "label": "ProcessingUnit"
-      },
-      {
         "@id": "urn:ngm:class:camera-calibration",
         "label": "Camera Calibration"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:robot-perception-system",
+        "@id": "urn:ngm:class:robot-perception",
         "label": "Robot Perception System"
       }
     ],

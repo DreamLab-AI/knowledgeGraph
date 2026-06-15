@@ -75,24 +75,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:prime-number",
-        "label": "Prime Number"
-      },
-      {
         "@id": "urn:ngm:class:modular-arithmetic",
         "label": "Modular Arithmetic"
-      },
-      {
-        "@id": "urn:ngm:class:diophantine-equations",
-        "label": "Diophantine Equations"
-      },
-      {
-        "@id": "urn:ngm:class:algebraic-number-theory",
-        "label": "Algebraic Number Theory"
-      },
-      {
-        "@id": "urn:ngm:class:analytic-number-theory",
-        "label": "Analytic Number Theory"
       }
     ],
     "enables": [
@@ -101,7 +85,7 @@ public:: true
         "label": "Cryptography"
       },
       {
-        "@id": "urn:ngm:class:public-key-cryptography",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public-Key Cryptography"
       },
       {
@@ -115,7 +99,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:algebra",
+        "@id": "urn:ngm:class:linear-algebra",
         "label": "Algebra"
       },
       {
@@ -167,7 +151,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:continuous-mathematics",
+        "@id": "urn:ngm:class:applied-mathematics",
         "label": "Continuous Mathematics"
       }
     ]

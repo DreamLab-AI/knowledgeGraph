@@ -18,23 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:bucket",
-        "label": "Bucket"
-      },
-      {
-        "id": "urn:ngm:class:object-metadata",
-        "label": "Object Metadata"
-      },
-      {
         "id": "urn:ngm:class:access-control-list",
         "label": "Access Control List"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:distributed-key-value-store",
-        "label": "Distributed Key-Value Store"
-      },
       {
         "id": "urn:ngm:class:erasure-coding",
         "label": "Erasure Coding"
@@ -54,7 +42,7 @@
         "label": "Distributed Storage"
       },
       {
-        "id": "urn:ngm:class:machine-learning-pipeline",
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
       },
       {
@@ -77,10 +65,6 @@
       {
         "id": "urn:ngm:class:file-storage",
         "label": "File Storage"
-      },
-      {
-        "id": "urn:ngm:class:posix-filesystem",
-        "label": "POSIX Filesystem"
       }
     ],
     "bridgesTo": [
@@ -101,10 +85,6 @@
       {
         "id": "urn:ngm:class:http-protocol",
         "label": "HTTP Protocol"
-      },
-      {
-        "id": "urn:ngm:class:geo-redundant-replication",
-        "label": "Geo-Redundant Replication"
       },
       {
         "id": "urn:ngm:class:storage-tiering",

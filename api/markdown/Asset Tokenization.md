@@ -58,54 +58,141 @@ alias:: asset-tokenization
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"},
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fractional-ownership", "label": "Fractional Ownership"},
-      {"@id": "urn:ngm:class:nft", "label": "NFT"},
-      {"@id": "urn:ngm:class:security-token-offering", "label": "Security Token Offering"},
-      {"@id": "urn:ngm:class:liquidity", "label": "Liquidity"}
+      {
+        "@id": "urn:ngm:class:fractional-ownership",
+        "label": "Fractional Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:security-token-offering",
+        "label": "Security Token Offering"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:oracle", "label": "Oracle"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+      {
+        "@id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:token-standard", "label": "Token Standard"},
-      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"},
-      {"@id": "urn:ngm:class:digital-wallet", "label": "Digital Wallet"}
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:decentralized-exchange", "label": "Decentralized Exchange"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:erc-20", "label": "ERC-20"},
-      {"@id": "urn:ngm:class:erc-721", "label": "ERC-721"},
-      {"@id": "urn:ngm:class:erc-1400", "label": "ERC-1400"}
+      {
+        "@id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "@id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "@id": "urn:ngm:class:erc-1400",
+        "label": "ERC-1400"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:traditional-securities", "label": "Traditional Securities"},
-      {"@id": "urn:ngm:class:fiat-currency", "label": "Fiat Currency"}
+      {
+        "@id": "urn:ngm:class:traditional-securities",
+        "label": "Traditional Securities"
+      },
+      {
+        "@id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:real-estate", "label": "Real Estate"},
-      {"@id": "urn:ngm:class:supply-chain-finance", "label": "Supply Chain Finance"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:real-estate",
+        "label": "Real Estate"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-finance",
+        "label": "Supply Chain Finance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:decentralized-autonomous-organization", "label": "Decentralized Autonomous Organization"},
-      {"@id": "urn:ngm:class:custody", "label": "Custody"},
-      {"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"}
+      {
+        "@id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      },
+      {
+        "@id": "urn:ngm:class:custody",
+        "label": "Custody"
+      },
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:tokenization-of-assets", "label": "Tokenization of Assets"},
-    {"@id": "urn:ngm:class:real-world-asset-tokenization", "label": "Real-World Asset Tokenization"}
+    {
+      "@id": "urn:ngm:class:tokenization-of-assets",
+      "label": "Tokenization of Assets"
+    },
+    {
+      "@id": "urn:ngm:class:real-world-asset-tokenization",
+      "label": "Real-World Asset Tokenization"
+    }
   ],
   "quality": 0.72,
   "provenance": {

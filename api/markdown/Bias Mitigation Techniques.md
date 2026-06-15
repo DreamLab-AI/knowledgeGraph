@@ -67,50 +67,109 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:data-reweighting", "label": "Data Reweighting"},
-      {"@id": "urn:ngm:class:adversarial-debiasing", "label": "Adversarial Debiasing"},
-      {"@id": "urn:ngm:class:threshold-optimisation", "label": "Threshold Optimisation"},
-      {"@id": "urn:ngm:class:resampling-techniques", "label": "Resampling Techniques"}
+      {
+        "@id": "urn:ngm:class:threshold-optimisation",
+        "label": "Threshold Optimisation"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:fairness-metrics", "label": "Fairness Metrics"},
-      {"@id": "urn:ngm:class:protected-attributes", "label": "Protected Attributes"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:fairness-metrics",
+        "label": "Fairness Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:protected-attributes",
+        "label": "Protected Attributes"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fairness-auditing-tools", "label": "Fairness Auditing Tools"},
-      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"},
-      {"@id": "urn:ngm:class:equitable-ai-deployment", "label": "Equitable AI Deployment"}
+      {
+        "@id": "urn:ngm:class:fairness-auditing-tools",
+        "label": "Fairness Auditing Tools"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
-      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"},
-      {"@id": "urn:ngm:class:constrained-optimisation", "label": "Constrained Optimisation"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:constrained-optimisation",
+        "label": "Constrained Optimisation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:fairness-constraints", "label": "Fairness Constraints"}
+      {
+        "@id": "urn:ngm:class:fairness-constraints",
+        "label": "Fairness Constraints"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
-      {"@id": "urn:ngm:class:fairness-accuracy-tradeoffs", "label": "Fairness Accuracy Tradeoffs"}
+      {
+        "@id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "@id": "urn:ngm:class:fairness-accuracy-tradeoffs",
+        "label": "Fairness Accuracy Tradeoffs"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-explainability", "label": "Model Explainability"},
-      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Model Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:human-rights-law", "label": "Human Rights Law"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:human-rights-law",
+        "label": "Human Rights Law"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:algorithmic-fairness-methods", "label": "Algorithmic Fairness Methods"},
-    {"@id": "urn:ngm:class:debiasing-techniques", "label": "Debiasing Techniques"}
+    {
+      "@id": "urn:ngm:class:algorithmic-fairness-methods",
+      "label": "Algorithmic Fairness Methods"
+    },
+    {
+      "@id": "urn:ngm:class:debiasing-techniques",
+      "label": "Debiasing Techniques"
+    }
   ],
   "quality": 0.72,
   "provenance": {

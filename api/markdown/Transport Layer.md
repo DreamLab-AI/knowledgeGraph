@@ -133,7 +133,7 @@ public:: true
         "label": "User Datagram Protocol"
       },
       {
-        "@id": "urn:ngm:class:quic-protocol",
+        "@id": "urn:ngm:class:quic",
         "label": "QUIC Protocol"
       },
       {
@@ -143,7 +143,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:ietf-internet-engineering-task-force",
+        "@id": "urn:ngm:class:ietf",
         "label": "IETF (Internet Engineering Task Force)"
       },
       {

@@ -56,7 +56,7 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:product-traceability",
+        "@id": "urn:ngm:class:traceability",
         "label": "Product Traceability"
       },
       {
@@ -82,7 +82,7 @@ public:: true
         "label": "Consensus Mechanism"
       },
       {
-        "@id": "urn:ngm:class:cryptographic-hashing",
+        "@id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hashing"
       }
     ],
@@ -189,7 +189,7 @@ public:: true
       "label": "Supply Chain Distributed Ledger"
     }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

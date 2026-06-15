@@ -19,21 +19,17 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:x3dh-key-agreement",
-        "label": "X3DH Key Agreement"
-      },
-      {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:private-messaging",
+        "id": "urn:ngm:class:secure-messaging",
         "label": "Private Messaging"
       },
       {
-        "id": "urn:ngm:class:asynchronous-encrypted-communication",
+        "id": "urn:ngm:class:asynchronous-communication",
         "label": "Asynchronous Encrypted Communication"
       }
     ],
@@ -51,31 +47,15 @@
       {
         "id": "urn:ngm:class:forward-secrecy",
         "label": "Forward Secrecy"
-      },
-      {
-        "id": "urn:ngm:class:post-compromise-security",
-        "label": "Post-Compromise Security"
-      },
-      {
-        "id": "urn:ngm:class:deniable-authentication",
-        "label": "Deniable Authentication"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:transport-layer-security",
         "label": "Transport Layer Security"
-      },
-      {
-        "id": "urn:ngm:class:pgp-encryption",
-        "label": "PGP Encryption"
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:federated-messaging",
-        "label": "Federated Messaging"
-      },
       {
         "id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"
@@ -89,10 +69,6 @@
       {
         "id": "urn:ngm:class:key-exchange",
         "label": "Key Exchange"
-      },
-      {
-        "id": "urn:ngm:class:double-ratchet-algorithm",
-        "label": "Double Ratchet Algorithm"
       },
       {
         "id": "urn:ngm:class:diffie-hellman-key-exchange",
@@ -114,18 +90,6 @@
       {
         "id": "urn:ngm:class:noise-protocol",
         "label": "Noise Protocol"
-      },
-      {
-        "id": "urn:ngm:class:messaging-layer-security",
-        "label": "Messaging Layer Security"
-      },
-      {
-        "id": "urn:ngm:class:pqxdh",
-        "label": "PQXDH Post-Quantum Key Agreement"
-      },
-      {
-        "id": "urn:ngm:class:kyber-kem",
-        "label": "Kyber KEM"
       }
     ]
   },

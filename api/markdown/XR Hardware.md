@@ -52,56 +52,145 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:xr-devices", "label": "XR Devices"},
-    {"@id": "urn:ngm:class:extended-reality-hardware", "label": "Extended Reality Hardware"}
+    {
+      "@id": "urn:ngm:class:xr-devices",
+      "label": "XR Devices"
+    },
+    {
+      "@id": "urn:ngm:class:extended-reality-hardware",
+      "label": "Extended Reality Hardware"
+    }
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
-      {"@id": "urn:ngm:class:spatial-presence", "label": "Spatial Presence"},
-      {"@id": "urn:ngm:class:foveated-rendering", "label": "Foveated Rendering"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-presence",
+        "label": "Spatial Presence"
+      },
+      {
+        "@id": "urn:ngm:class:foveated-rendering",
+        "label": "Foveated Rendering"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:head-mounted-display", "label": "Head-Mounted Display"},
-      {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:inertial-measurement-unit", "label": "Inertial Measurement Unit"},
-      {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"}
+      {
+        "@id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "@id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:wireless-connectivity", "label": "Wireless Connectivity"},
-      {"@id": "urn:ngm:class:xr-software-platform", "label": "XR Software Platform"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-connectivity",
+        "label": "Wireless Connectivity"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:inside-out-tracking", "label": "Inside-Out Tracking"},
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
-      {"@id": "urn:ngm:class:neural-processing-unit", "label": "Neural Processing Unit"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:inside-out-tracking",
+        "label": "Inside-Out Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
-      {"@id": "urn:ngm:class:hand-tracking", "label": "Hand Tracking"},
-      {"@id": "urn:ngm:class:passthrough-video", "label": "Passthrough Video"}
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "@id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:passthrough-video",
+        "label": "Passthrough Video"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:openxr", "label": "OpenXR"},
-      {"@id": "urn:ngm:class:khronos-group", "label": "Khronos Group"}
+      {
+        "@id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      },
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:flat-panel-display", "label": "Flat Panel Display"},
-      {"@id": "urn:ngm:class:desktop-computing", "label": "Desktop Computing"}
+      {
+        "@id": "urn:ngm:class:flat-panel-display",
+        "label": "Flat Panel Display"
+      },
+      {
+        "@id": "urn:ngm:class:desktop-computing",
+        "label": "Desktop Computing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:edge-ai-inference", "label": "Edge AI Inference"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:edge-inference",
+        "label": "Edge AI Inference"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:display-and-rendering", "label": "Display and Rendering"},
-      {"@id": "urn:ngm:class:wearable-computing", "label": "Wearable Computing"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}
+      {
+        "@id": "urn:ngm:class:sc-display-and-rendering",
+        "label": "Display and Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:wearable-computing",
+        "label": "Wearable Computing"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
     ]
   },
   "quality": 0.72,

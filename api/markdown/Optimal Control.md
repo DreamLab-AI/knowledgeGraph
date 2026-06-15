@@ -121,10 +121,6 @@ alias:: RB-1003-optimal-control
         "label": "Cost Function"
       },
       {
-        "@id": "urn:ngm:class:system-dynamics-model",
-        "label": "System Dynamics Model"
-      },
-      {
         "@id": "urn:ngm:class:state-space-representation",
         "label": "State Space Representation"
       },
@@ -145,10 +141,6 @@ alias:: RB-1003-optimal-control
       {
         "@id": "urn:ngm:class:autonomous-vehicle-control",
         "label": "Autonomous Vehicle Control"
-      },
-      {
-        "@id": "urn:ngm:class:spacecraft-attitude-control",
-        "label": "Spacecraft Attitude Control"
       }
     ],
     "uses": [
@@ -163,24 +155,6 @@ alias:: RB-1003-optimal-control
       {
         "@id": "urn:ngm:class:dynamic-programming",
         "label": "Dynamic Programming"
-      },
-      {
-        "@id": "urn:ngm:class:calculus-of-variations",
-        "label": "Calculus of Variations"
-      },
-      {
-        "@id": "urn:ngm:class:pontryagins-maximum-principle",
-        "label": "Pontryagin's Maximum Principle"
-      }
-    ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:hamilton-jacobi-bellman-equation",
-        "label": "Hamilton-Jacobi-Bellman Equation"
-      },
-      {
-        "@id": "urn:ngm:class:bellman-optimality-principle",
-        "label": "Bellman Optimality Principle"
       }
     ],
     "dependsOn": [
@@ -197,17 +171,9 @@ alias:: RB-1003-optimal-control
       {
         "@id": "urn:ngm:class:adaptive-control",
         "label": "Adaptive Control"
-      },
-      {
-        "@id": "urn:ngm:class:robot-arm-trajectory-optimization",
-        "label": "Robot Arm Trajectory Optimization"
       }
     ],
     "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:heuristic-control",
-        "label": "Heuristic Control"
-      },
       {
         "@id": "urn:ngm:class:pid-controller",
         "label": "Pid Controller"
@@ -224,10 +190,6 @@ alias:: RB-1003-optimal-control
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:stochastic-control",
-        "label": "Stochastic Control"
-      },
       {
         "@id": "urn:ngm:class:robust-control",
         "label": "Robust Control"

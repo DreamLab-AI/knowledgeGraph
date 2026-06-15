@@ -328,16 +328,8 @@ public:: true
         "label": "Neural Vocoder"
       },
       {
-        "@id": "urn:ngm:class:prosody-modelling",
-        "label": "Prosody Modelling"
-      },
-      {
         "@id": "urn:ngm:class:speaker-verification",
         "label": "Speaker Verification"
-      },
-      {
-        "@id": "urn:ngm:class:speech-enhancement",
-        "label": "Speech Enhancement"
       },
       {
         "@id": "urn:ngm:class:voice-agents",
@@ -357,10 +349,6 @@ public:: true
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:audio-data",
-        "label": "Audio Data"
-      },
       {
         "@id": "urn:ngm:class:language-model",
         "label": "Language Model"
@@ -392,10 +380,6 @@ public:: true
         "label": "Voice Assistant"
       },
       {
-        "@id": "urn:ngm:class:voice-security",
-        "label": "Voice Security"
-      },
-      {
         "@id": "urn:ngm:class:accessibility",
         "label": "Accessibility"
       },
@@ -420,10 +404,6 @@ public:: true
       {
         "@id": "urn:ngm:class:state-space-models",
         "label": "State Space Models"
-      },
-      {
-        "@id": "urn:ngm:class:vits",
-        "label": "VITS"
       },
       {
         "@id": "urn:ngm:class:wave-net",
@@ -474,10 +454,6 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:emotional-ai",
-        "label": "Emotional AI"
-      },
-      {
         "@id": "urn:ngm:class:ai-ethics",
         "label": "AI Ethics"
       },
@@ -504,10 +480,6 @@ public:: true
         "label": "Education Technology"
       },
       {
-        "@id": "urn:ngm:class:gaming-ai",
-        "label": "Gaming AI"
-      },
-      {
         "@id": "urn:ngm:class:healthcare-ai",
         "label": "Healthcare AI"
       },
@@ -522,11 +494,11 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:ieee-audio-standards",
+        "@id": "urn:ngm:class:ieee",
         "label": "IEEE Audio Standards"
       },
       {
-        "@id": "urn:ngm:class:ietf-web-rtc-standards",
+        "@id": "urn:ngm:class:ietf",
         "label": "IETF WebRTC Standards"
       },
       {

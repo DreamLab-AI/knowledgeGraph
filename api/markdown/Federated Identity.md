@@ -23,59 +23,156 @@ public:: true
   "definition": "Federated Identity is an architectural paradigm in which a user authenticates once with a trusted Identity Provider and receives a signed assertion that is accepted by multiple independent relying-party services across organisational or administrative boundaries, eliminating per-service credential stores. The federation relationship is governed by bilateral or multilateral trust agreements and implemented through standard protocols such as SAML 2.0, OpenID Connect, and OAuth 2.0, which define how authentication tokens are issued, transported, and cryptographically verified. Federated identity is foundational to enterprise single sign-on, cross-institutional academic collaboration, and consumer social-login ecosystems, and is actively converging with decentralised-identity models that replace central providers with holder-controlled cryptographic credentials.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:identity-management",
+      "label": "Identity Management"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:identity-federation", "label": "Identity Federation"}
+    {
+      "@id": "urn:ngm:class:identity-federation",
+      "label": "Identity Federation"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:identity-provider", "label": "Identity Provider"},
-      {"@id": "urn:ngm:class:service-provider", "label": "Service Provider"},
-      {"@id": "urn:ngm:class:trust-framework", "label": "Trust Framework"},
-      {"@id": "urn:ngm:class:security-assertion", "label": "Security Assertion"}
+      {
+        "@id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      },
+      {
+        "@id": "urn:ngm:class:provider",
+        "label": "Service Provider"
+      },
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:digital-certificates", "label": "Digital Certificates"},
-      {"@id": "urn:ngm:class:authentication-standards", "label": "Authentication Standards"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificates"
+      },
+      {
+        "@id": "urn:ngm:class:authentication-standards",
+        "label": "Authentication Standards"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:oauth-2-0", "label": "OAuth 2.0"},
-      {"@id": "urn:ngm:class:open-id-connect", "label": "OpenID Connect"},
-      {"@id": "urn:ngm:class:saml", "label": "SAML"},
-      {"@id": "urn:ngm:class:json-web-token", "label": "JSON Web Token"},
-      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"}
+      {
+        "@id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "@id": "urn:ngm:class:saml",
+        "label": "SAML"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-web-token",
+        "label": "JSON Web Token"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:single-sign-on", "label": "Single Sign-On"},
-      {"@id": "urn:ngm:class:cross-domain-authentication", "label": "Cross-Domain Authentication"},
-      {"@id": "urn:ngm:class:delegated-authorisation", "label": "Delegated Authorisation"},
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"}
+      {
+        "@id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
+        "@id": "urn:ngm:class:cross-domain-authentication",
+        "label": "Cross-Domain Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:delegated-authorisation",
+        "label": "Delegated Authorisation"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:multi-factor-authentication", "label": "Multi-Factor Authentication"},
-      {"@id": "urn:ngm:class:session-management", "label": "Session Management"},
-      {"@id": "urn:ngm:class:user-provisioning", "label": "User Provisioning"}
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:session-management",
+        "label": "Session Management"
+      },
+      {
+        "@id": "urn:ngm:class:user-provisioning",
+        "label": "User Provisioning"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:oasis-standards", "label": "OASIS Standards"},
-      {"@id": "urn:ngm:class:openid-foundation", "label": "OpenID Foundation"},
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"}
+      {
+        "@id": "urn:ngm:class:oasis-standards",
+        "label": "OASIS Standards"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-foundation",
+        "label": "OpenID Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:siloed-identity", "label": "Siloed Identity"},
-      {"@id": "urn:ngm:class:centralised-identity", "label": "Centralised Identity"}
+      {
+        "@id": "urn:ngm:class:siloed-identity",
+        "label": "Siloed Identity"
+      },
+      {
+        "@id": "urn:ngm:class:centralised-identity",
+        "label": "Centralised Identity"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:privilege-access-management", "label": "Privilege Access Management"},
-      {"@id": "urn:ngm:class:directory-services", "label": "Directory Services"},
-      {"@id": "urn:ngm:class:scim", "label": "SCIM"}
+      {
+        "@id": "urn:ngm:class:privileged-access-management",
+        "label": "Privilege Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:directory-service",
+        "label": "Directory Services"
+      },
+      {
+        "@id": "urn:ngm:class:scim",
+        "label": "SCIM"
+      }
     ]
   },
   "quality": 0.74,

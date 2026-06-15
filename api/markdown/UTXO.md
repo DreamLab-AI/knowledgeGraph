@@ -111,7 +111,7 @@ public:: true
         "label": "Bitcoin Proof-of-Work Protocol"
       },
       {
-        "@id": "urn:ngm:class:parallel-transaction-validation",
+        "@id": "urn:ngm:class:transaction-validation",
         "label": "Parallel Transaction Validation"
       },
       {
@@ -125,7 +125,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:utxo-accounting-model",
+        "@id": "urn:ngm:class:utxo-model",
         "label": "UTXO Accounting Model"
       }
     ],
@@ -135,13 +135,13 @@ public:: true
         "label": "Merkle Tree"
       },
       {
-        "@id": "urn:ngm:class:script-language",
+        "@id": "urn:ngm:class:script",
         "label": "Script Language"
       }
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:privacy-technique",
+        "@id": "urn:ngm:class:privacy",
         "label": "Privacy Technique"
       },
       {
@@ -159,13 +159,13 @@ public:: true
         "label": "Account Model"
       },
       {
-        "@id": "urn:ngm:class:ethereum-state-model",
+        "@id": "urn:ngm:class:ethereum",
         "label": "Ethereum State Model"
       }
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:extended-utxo-model",
+        "@id": "urn:ngm:class:utxo-model",
         "label": "Extended UTXO Model"
       },
       {

@@ -23,55 +23,127 @@ public:: true
   "definition": "Benchmarks are standardised tasks, datasets, or workloads used to measure and compare the capabilities or performance of systems, models, or components under controlled, reproducible conditions. In artificial intelligence they encompass curated evaluation suites that probe language understanding, mathematical reasoning, coding, and multimodal perception to produce comparable scores across model generations and research groups. In computing, robotics, and hardware engineering, benchmarks quantify throughput, latency, accuracy, and energy efficiency against fixed reference workloads. Benchmark results are published via leaderboards and model cards to support reproducible science, informed procurement, and regulatory accountability.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards", "label": "Evaluation benchmarks and leaderboards"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"},
-      {"@id": "urn:ngm:class:performance-metrics", "label": "Performance Metrics"},
-      {"@id": "urn:ngm:class:datasets", "label": "Datasets"},
-      {"@id": "urn:ngm:class:statistical-testing", "label": "Statistical Testing"}
+      {
+        "@id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      },
+      {
+        "@id": "urn:ngm:class:performance-metrics",
+        "label": "Performance Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-testing",
+        "label": "Statistical Testing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-evaluation-results", "label": "Model Evaluation Results"},
-      {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"},
-      {"@id": "urn:ngm:class:reproducibility", "label": "Reproducibility"},
-      {"@id": "urn:ngm:class:leaderboards", "label": "Leaderboards"}
+      {
+        "@id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      },
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
+      {
+        "@id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Leaderboards"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"},
-      {"@id": "urn:ngm:class:ground-truth-labels", "label": "Ground Truth Labels"},
-      {"@id": "urn:ngm:class:held-out-test-sets", "label": "Held-Out Test Sets"}
+      {
+        "@id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      },
+      {
+        "@id": "urn:ngm:class:ground-truth-labels",
+        "label": "Ground Truth Labels"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:benchmark-standard", "label": "Benchmark Standard"},
-      {"@id": "urn:ngm:class:software-testing", "label": "Software Testing"},
-      {"@id": "urn:ngm:class:adversarial-testing", "label": "Adversarial Testing"},
-      {"@id": "urn:ngm:class:model-cards", "label": "Model Cards"},
-      {"@id": "urn:ngm:class:bias-and-fairness", "label": "Bias and Fairness"},
-      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:benchmark-standard",
+        "label": "Benchmark Standard"
+      },
+      {
+        "@id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      },
+      {
+        "@id": "urn:ngm:class:adversarial-testing",
+        "label": "Adversarial Testing"
+      },
+      {
+        "@id": "urn:ngm:class:model-cards",
+        "label": "Model Cards"
+      },
+      {
+        "@id": "urn:ngm:class:bias-and-fairness",
+        "label": "Bias and Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:human-evaluation", "label": "Human Evaluation"},
-      {"@id": "urn:ngm:class:ablation-studies", "label": "Ablation Studies"}
+      {
+        "@id": "urn:ngm:class:human-evaluation",
+        "label": "Human Evaluation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:annotation-pipelines", "label": "Annotation Pipelines"},
-      {"@id": "urn:ngm:class:data-curation", "label": "Data Curation"}
+      {
+        "@id": "urn:ngm:class:data-curation",
+        "label": "Data Curation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:model-selection", "label": "Model Selection"},
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      },
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:hardware-performance", "label": "Hardware Performance"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:evaluation-suites", "label": "Evaluation Suites"},
-    {"@id": "urn:ngm:class:standardised-tests", "label": "Standardised Tests"}
+    {
+      "@id": "urn:ngm:class:evaluation-suites",
+      "label": "Evaluation Suites"
+    },
+    {
+      "@id": "urn:ngm:class:standardised-tests",
+      "label": "Standardised Tests"
+    }
   ],
   "quality": 0.74,
   "provenance": {

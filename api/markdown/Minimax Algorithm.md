@@ -59,14 +59,7 @@ public:: true
       "label": "Search Algorithms"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:adversarial-search",
-        "label": "Adversarial Search"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

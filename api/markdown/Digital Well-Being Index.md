@@ -162,42 +162,18 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:cognitive-load-measurements",
+        "@id": "urn:ngm:class:cognitive-load-metric",
         "label": "Cognitive Load Measurements"
-      },
-      {
-        "@id": "urn:ngm:class:emotional-wellness-scores",
-        "label": "Emotional Wellness Scores"
-      },
-      {
-        "@id": "urn:ngm:class:physical-activity-indicators",
-        "label": "Physical Activity Indicators"
-      },
-      {
-        "@id": "urn:ngm:class:screen-time-metrics",
-        "label": "Screen Time Metrics"
-      },
-      {
-        "@id": "urn:ngm:class:sleep-impact-assessment",
-        "label": "Sleep Impact Assessment"
-      },
-      {
-        "@id": "urn:ngm:class:social-engagement-scores",
-        "label": "Social Engagement Scores"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:behavioral-tracking",
+        "@id": "urn:ngm:class:behavioral-analytics",
         "label": "Behavioral Tracking"
       },
       {
-        "@id": "urn:ngm:class:health-data-integration",
+        "@id": "urn:ngm:class:data-integration",
         "label": "Health Data Integration"
-      },
-      {
-        "@id": "urn:ngm:class:temporal-analysis-tools",
-        "label": "Temporal Analysis Tools"
       },
       {
         "@id": "urn:ngm:class:usage-analytics",
@@ -205,18 +181,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:healthy-engagement-recommendations",
-        "label": "Healthy Engagement Recommendations"
-      },
-      {
-        "@id": "urn:ngm:class:platform-health-reports",
-        "label": "Platform Health Reports"
-      },
-      {
-        "@id": "urn:ngm:class:usage-alerts",
-        "label": "Usage Alerts"
-      },
       {
         "@id": "urn:ngm:class:parental-controls",
         "label": "Parental Controls"
@@ -228,11 +192,11 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:platform-governance-framework",
+        "@id": "urn:ngm:class:platform-governance",
         "label": "Platform Governance Framework"
       },
       {
-        "@id": "urn:ngm:class:user-health-monitoring-system",
+        "@id": "urn:ngm:class:monitoring-system",
         "label": "User Health Monitoring System"
       }
     ]

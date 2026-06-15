@@ -50,7 +50,7 @@
         "label": "Task Planning"
       },
       {
-        "id": "urn:ngm:class:emergent-behaviour",
+        "id": "urn:ngm:class:emergent-behavior",
         "label": "Emergent Behaviour"
       },
       {
@@ -72,10 +72,6 @@
       {
         "id": "urn:ngm:class:belief-desire-intention",
         "label": "Belief-Desire-Intention"
-      },
-      {
-        "id": "urn:ngm:class:reactive-agents",
-        "label": "Reactive Agents"
       }
     ],
     "contrastsWith": [
@@ -90,16 +86,12 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:decentralised-autonomous-organisations",
+        "id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisations"
       },
       {
         "id": "urn:ngm:class:digital-twins",
         "label": "Digital Twins"
-      },
-      {
-        "id": "urn:ngm:class:iot-networks",
-        "label": "IoT Networks"
       }
     ],
     "uses": [

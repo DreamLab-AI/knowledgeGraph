@@ -73,20 +73,12 @@
       {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
-      },
-      {
-        "id": "urn:ngm:class:agent-reasoning",
-        "label": "Agent Reasoning"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:chain-of-thought-prompting",
         "label": "Chain-of-Thought Prompting"
-      },
-      {
-        "id": "urn:ngm:class:demonstration-selection",
-        "label": "Demonstration Selection"
       },
       {
         "id": "urn:ngm:class:natural-language-processing",

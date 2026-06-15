@@ -18,10 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:sinusoidal-encoding",
-        "label": "Sinusoidal Encoding"
-      },
-      {
         "id": "urn:ngm:class:rotary-position-embedding",
         "label": "Rotary Position Embedding"
       }
@@ -30,10 +26,6 @@
       {
         "id": "urn:ngm:class:token-embedding",
         "label": "Token Embedding"
-      },
-      {
-        "id": "urn:ngm:class:embedding-dimension",
-        "label": "Embedding Dimension"
       }
     ],
     "enables": [
@@ -64,39 +56,17 @@
         "label": "Neural Network Architecture"
       }
     ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:sequence-order-representation",
-        "label": "Sequence Order Representation"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:recurrent-neural-network",
         "label": "Recurrent Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:relative-positional-encoding",
-        "label": "Relative Positional Encoding"
-      },
-      {
-        "id": "urn:ngm:class:attention-with-linear-biases",
-        "label": "Attention with Linear Biases"
       }
     ],
-    "bridgesTo": [
-      {
-        "id": "urn:ngm:class:spatial-encoding",
-        "label": "Spatial Encoding"
-      }
-    ],
+    "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:sinusoidal-functions",
-        "label": "Sinusoidal Functions"
-      },
-      {
-        "id": "urn:ngm:class:learnable-parameters",
+        "id": "urn:ngm:class:model-parameters",
         "label": "Learnable Parameters"
       }
     ],
@@ -133,14 +103,6 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
-      },
-      {
-        "id": "urn:ngm:class:sequence-length-extrapolation",
-        "label": "Sequence Length Extrapolation"
-      },
-      {
-        "id": "urn:ngm:class:sequence-representation",
-        "label": "Sequence Representation"
       }
     ]
   },

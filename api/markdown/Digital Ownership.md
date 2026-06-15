@@ -123,7 +123,7 @@ alias:: DigitalOwnership
         "label": "Fractional Ownership"
       },
       {
-        "@id": "urn:ngm:class:decentralised-marketplace",
+        "@id": "urn:ngm:class:marketplace",
         "label": "Decentralised Marketplace"
       }
     ],
@@ -175,10 +175,6 @@ alias:: DigitalOwnership
       {
         "@id": "urn:ngm:class:intellectual-property-rights",
         "label": "Intellectual Property Rights"
-      },
-      {
-        "@id": "urn:ngm:class:traditional-property-law",
-        "label": "Traditional Property Law"
       }
     ],
     "bridgesTo": [

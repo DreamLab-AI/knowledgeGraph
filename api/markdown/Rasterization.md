@@ -109,20 +109,12 @@ public:: true
       {
         "@id": "urn:ngm:class:geometry-shader",
         "label": "Geometry Shader"
-      },
-      {
-        "@id": "urn:ngm:class:z-buffer",
-        "label": "Z-Buffer"
       }
     ],
     "requires": [
       {
         "@id": "urn:ngm:class:graphics-processing-unit",
         "label": "Graphics Processing Unit"
-      },
-      {
-        "@id": "urn:ngm:class:triangle-mesh",
-        "label": "Triangle Mesh"
       },
       {
         "@id": "urn:ngm:class:depth-buffer",
@@ -141,10 +133,6 @@ public:: true
       {
         "@id": "urn:ngm:class:fragment-shading",
         "label": "Fragment Shading"
-      },
-      {
-        "@id": "urn:ngm:class:output-merger",
-        "label": "Output Merger"
       }
     ],
     "partOf": [
@@ -161,14 +149,6 @@ public:: true
       {
         "@id": "urn:ngm:class:real-time-3d-graphics",
         "label": "Real-Time 3D Graphics"
-      },
-      {
-        "@id": "urn:ngm:class:video-game-rendering",
-        "label": "Video Game Rendering"
-      },
-      {
-        "@id": "urn:ngm:class:virtual-reality-rendering",
-        "label": "Virtual Reality Rendering"
       }
     ],
     "relatedTo": [

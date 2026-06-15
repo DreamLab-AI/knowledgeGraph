@@ -39,59 +39,141 @@ alias:: Multi Agent Systems
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
-      {"@id": "urn:ngm:class:agent-communication-language", "label": "Agent Communication Language"},
-      {"@id": "urn:ngm:class:coordination-protocol", "label": "Coordination Protocol"}
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "@id": "urn:ngm:class:agent-communication-language",
+        "label": "Agent Communication Language"
+      },
+      {
+        "@id": "urn:ngm:class:coordination-protocol",
+        "label": "Coordination Protocol"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks"},
-      {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:message-passing", "label": "Message Passing"}
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:task-planning", "label": "Task Planning"},
-      {"@id": "urn:ngm:class:emergent-behaviour", "label": "Emergent Behaviour"},
-      {"@id": "urn:ngm:class:collective-intelligence", "label": "Collective Intelligence"}
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      },
+      {
+        "@id": "urn:ngm:class:emergent-behavior",
+        "label": "Emergent Behaviour"
+      },
+      {
+        "@id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
-      {"@id": "urn:ngm:class:concurrency", "label": "Concurrency"}
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"},
-      {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"}
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:belief-desire-intention", "label": "Belief-Desire-Intention"},
-      {"@id": "urn:ngm:class:reactive-agents", "label": "Reactive Agents"}
+      {
+        "@id": "urn:ngm:class:belief-desire-intention",
+        "label": "Belief-Desire-Intention"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:swarm-intelligence", "label": "Swarm Intelligence"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:fipa", "label": "FIPA"}
+      {
+        "@id": "urn:ngm:class:fipa",
+        "label": "FIPA"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:single-agent-systems", "label": "Single-Agent Systems"},
-      {"@id": "urn:ngm:class:monolithic-ai", "label": "Monolithic AI"}
+      {
+        "@id": "urn:ngm:class:single-agent-systems",
+        "label": "Single-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:monolithic-ai",
+        "label": "Monolithic AI"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisations", "label": "Decentralised Autonomous Organisations"},
-      {"@id": "urn:ngm:class:digital-twins", "label": "Digital Twins"},
-      {"@id": "urn:ngm:class:iot-networks", "label": "IoT Networks"}
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisations"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twins",
+        "label": "Digital Twins"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:mas", "label": "MAS"},
-    {"@id": "urn:ngm:class:agent-based-systems", "label": "Agent-Based Systems"}
+    {
+      "@id": "urn:ngm:class:mas",
+      "label": "MAS"
+    },
+    {
+      "@id": "urn:ngm:class:agent-based-systems",
+      "label": "Agent-Based Systems"
+    }
   ],
   "quality": 0.74,
   "provenance": {

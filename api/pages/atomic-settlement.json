@@ -53,7 +53,7 @@
         "label": "Trustless Settlement"
       },
       {
-        "id": "urn:ngm:class:t-plus-zero-settlement",
+        "id": "urn:ngm:class:settlement",
         "label": "T+0 Settlement"
       }
     ],
@@ -83,14 +83,6 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:settlement-risk",
-        "label": "Settlement Risk"
-      },
-      {
-        "id": "urn:ngm:class:bilateral-netting",
-        "label": "Bilateral Netting"
-      },
-      {
         "id": "urn:ngm:class:deferred-net-settlement",
         "label": "Deferred Net Settlement"
       }
@@ -115,7 +107,7 @@
         "label": "Hash Time-Locked Contract"
       },
       {
-        "id": "urn:ngm:class:escrow",
+        "id": "urn:ngm:class:escrow-system",
         "label": "Escrow"
       },
       {
@@ -125,7 +117,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:cbdc",
+        "id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       },
       {
@@ -147,10 +139,6 @@
       {
         "id": "urn:ngm:class:real-time-gross-settlement",
         "label": "Real-Time Gross Settlement"
-      },
-      {
-        "id": "urn:ngm:class:central-counterparty",
-        "label": "Central Counterparty"
       },
       {
         "id": "urn:ngm:class:payment-channel",

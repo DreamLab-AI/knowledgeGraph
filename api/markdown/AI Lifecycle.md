@@ -130,15 +130,11 @@ public:: true
       {
         "@id": "urn:ngm:class:model-validation",
         "label": "Model Validation"
-      },
-      {
-        "@id": "urn:ngm:class:ai-decommissioning",
-        "label": "AI Decommissioning"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:stakeholder-engagement-throughout",
+        "@id": "urn:ngm:class:stakeholder-engagement",
         "label": "Stakeholder engagement throughout"
       },
       {
@@ -226,10 +222,6 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:update-cycle",
-        "label": "Update Cycle"
-      },
-      {
         "@id": "urn:ngm:class:fda-software-as-medical-device",
         "label": "FDA Software as Medical Device"
       }
@@ -238,10 +230,6 @@ public:: true
       {
         "@id": "urn:ngm:class:continuous-integration",
         "label": "Continuous Integration"
-      },
-      {
-        "@id": "urn:ngm:class:model-drift",
-        "label": "Model Drift"
       }
     ]
   },

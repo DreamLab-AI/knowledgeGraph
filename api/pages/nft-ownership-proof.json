@@ -43,15 +43,11 @@
       {
         "id": "urn:ngm:class:provenance-tracking",
         "label": "Provenance Tracking"
-      },
-      {
-        "id": "urn:ngm:class:trustless-transfer",
-        "label": "Trustless Transfer"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -73,10 +69,6 @@
       {
         "id": "urn:ngm:class:fungible-token",
         "label": "Fungible Token"
-      },
-      {
-        "id": "urn:ngm:class:centralised-ownership-registry",
-        "label": "Centralised Ownership Registry"
       }
     ],
     "bridgesTo": [

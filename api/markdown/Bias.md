@@ -104,55 +104,123 @@ public:: true
   },
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ai-fairness", "label": "AI Fairness"},
-      {"@id": "urn:ngm:class:algorithmic-fairness", "label": "Algorithmic Fairness"}
+      {
+        "@id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-fairness",
+        "label": "Algorithmic Fairness"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bias-in-large-language-models", "label": "Bias in Large Language Models"},
-      {"@id": "urn:ngm:class:ai-risks", "label": "AI Risks"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
-      {"@id": "urn:ngm:class:discrimination", "label": "Discrimination"},
-      {"@id": "urn:ngm:class:safety-and-alignment", "label": "Safety and alignment"}
+      {
+        "@id": "urn:ngm:class:bias-in-large-language-models",
+        "label": "Bias in Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:safety-and-alignment",
+        "label": "Safety and alignment"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:bias-detection-methods", "label": "Bias Detection Methods"},
-      {"@id": "urn:ngm:class:fairness-metrics", "label": "Fairness Metrics"}
+      {
+        "@id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection Methods"
+      },
+      {
+        "@id": "urn:ngm:class:fairness-metrics",
+        "label": "Fairness Metrics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bias-mitigation-techniques", "label": "Bias Mitigation Techniques"},
-      {"@id": "urn:ngm:class:algorithmic-auditing", "label": "Algorithmic Auditing"}
+      {
+        "@id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation Techniques"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-auditing",
+        "label": "Algorithmic Auditing"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:data-bias", "label": "Data Bias"},
-      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
-      {"@id": "urn:ngm:class:representation-bias", "label": "Representation Bias"},
-      {"@id": "urn:ngm:class:historical-bias", "label": "Historical Bias"}
+      {
+        "@id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:ai-risks", "label": "AI Risks"}
+      {
+        "@id": "urn:ngm:class:ai-risks",
+        "label": "AI Risks"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:confusion-matrices", "label": "Confusion Matrices"},
-      {"@id": "urn:ngm:class:statistical-testing", "label": "Statistical Testing"}
+      {
+        "@id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrices"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-testing",
+        "label": "Statistical Testing"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"},
-      {"@id": "urn:ngm:class:iso-iec-tr-24027", "label": "ISO-IEC TR 24027"}
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-tr-24027",
+        "label": "ISO-IEC TR 24027"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:human-rights", "label": "Human Rights"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:human-rights",
+        "label": "Human Rights"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
-    {"@id": "urn:ngm:class:model-bias", "label": "Model Bias"}
+    {
+      "@id": "urn:ngm:class:algorithmic-bias",
+      "label": "Algorithmic Bias"
+    },
+    {
+      "@id": "urn:ngm:class:model-bias",
+      "label": "Model Bias"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",

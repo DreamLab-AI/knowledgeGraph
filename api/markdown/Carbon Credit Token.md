@@ -159,16 +159,8 @@ alias:: CarbonCreditToken
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:blockchain-record",
-        "label": "Blockchain Record"
-      },
-      {
-        "@id": "urn:ngm:class:token-smart-contract",
+        "@id": "urn:ngm:class:smart-contract",
         "label": "Token Smart Contract"
-      },
-      {
-        "@id": "urn:ngm:class:verification-metadata",
-        "label": "Verification Metadata"
       },
       {
         "@id": "urn:ngm:class:carbon-offset-certificate",
@@ -176,10 +168,6 @@ alias:: CarbonCreditToken
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:verification-authority",
-        "label": "Verification Authority"
-      },
       {
         "@id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
@@ -194,14 +182,6 @@ alias:: CarbonCreditToken
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:emissions-trading",
-        "label": "Emissions Trading"
-      },
-      {
-        "@id": "urn:ngm:class:environmental-compliance",
-        "label": "Environmental Compliance"
-      },
       {
         "@id": "urn:ngm:class:sustainability-reporting",
         "label": "SustainabilityReporting"

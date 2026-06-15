@@ -454,12 +454,8 @@ public:: true
         "label": "Camera Calibration"
       },
       {
-        "@id": "urn:ngm:class:differentiable-renderer",
+        "@id": "urn:ngm:class:differentiable-rendering",
         "label": "Differentiable Renderer"
-      },
-      {
-        "@id": "urn:ngm:class:mesh-extraction",
-        "label": "Mesh Extraction"
       },
       {
         "@id": "urn:ngm:class:multi-view-stereo",
@@ -560,12 +556,8 @@ public:: true
         "label": "Differentiable Rendering"
       },
       {
-        "@id": "urn:ngm:class:gaussian-splatting-rasterisation",
+        "@id": "urn:ngm:class:gaussian-splatting",
         "label": "Gaussian Splatting Rasterisation"
-      },
-      {
-        "@id": "urn:ngm:class:marching-cubes",
-        "label": "Marching Cubes"
       },
       {
         "@id": "urn:ngm:class:signed-distance-function",
@@ -576,15 +568,11 @@ public:: true
         "label": "Structure-from-Motion"
       },
       {
-        "@id": "urn:ngm:class:volume-rendering-integral",
+        "@id": "urn:ngm:class:volume-rendering",
         "label": "Volume Rendering Integral"
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:agisoft-metashape",
-        "label": "Agisoft Metashape"
-      },
       {
         "@id": "urn:ngm:class:colmap",
         "label": "COLMAP"
@@ -592,14 +580,6 @@ public:: true
       {
         "@id": "urn:ngm:class:luma-ai",
         "label": "Luma AI"
-      },
-      {
-        "@id": "urn:ngm:class:ne-rfstudio",
-        "label": "NeRFstudio"
-      },
-      {
-        "@id": "urn:ngm:class:polycam",
-        "label": "Polycam"
       },
       {
         "@id": "urn:ngm:class:reality-capture",
@@ -682,10 +662,6 @@ public:: true
       {
         "@id": "urn:ngm:class:iccv",
         "label": "ICCV"
-      },
-      {
-        "@id": "urn:ngm:class:iso-19157-geospatial-data-quality",
-        "label": "ISO 19157 Geospatial Data Quality"
       },
       {
         "@id": "urn:ngm:class:neur-ips",

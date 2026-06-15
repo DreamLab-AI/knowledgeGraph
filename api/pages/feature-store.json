@@ -28,18 +28,6 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
-      },
-      {
-        "id": "urn:ngm:class:online-store",
-        "label": "Online Store"
-      },
-      {
-        "id": "urn:ngm:class:offline-store",
-        "label": "Offline Store"
-      },
-      {
-        "id": "urn:ngm:class:feature-catalog",
-        "label": "Feature Catalog"
       }
     ],
     "requires": [
@@ -68,20 +56,12 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
-      },
-      {
-        "id": "urn:ngm:class:point-in-time-correctness",
-        "label": "Point-in-Time Correctness"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:data-engineering",
         "label": "Data Engineering"
-      },
-      {
-        "id": "urn:ngm:class:key-value-store",
-        "label": "Key-Value Store"
       }
     ],
     "implements": [],
@@ -130,10 +110,6 @@
       {
         "id": "urn:ngm:class:mlops",
         "label": "MLOps"
-      },
-      {
-        "id": "urn:ngm:class:ml-platform",
-        "label": "ML Platform"
       }
     ],
     "relatedTo": [

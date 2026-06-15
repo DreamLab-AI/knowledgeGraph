@@ -28,14 +28,6 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:3d-mesh",
-        "label": "3D Mesh"
-      },
-      {
-        "id": "urn:ngm:class:skin-weighting",
-        "label": "Skin Weighting"
-      },
-      {
         "id": "urn:ngm:class:animation-state-machine",
         "label": "Animation State Machine"
       }
@@ -52,10 +44,6 @@
       {
         "id": "urn:ngm:class:avatar-animation",
         "label": "Avatar Animation"
-      },
-      {
-        "id": "urn:ngm:class:virtual-human",
-        "label": "Virtual Human"
       },
       {
         "id": "urn:ngm:class:facial-animation",
@@ -99,10 +87,6 @@
       {
         "id": "urn:ngm:class:skeletal-animation",
         "label": "Skeletal Animation"
-      },
-      {
-        "id": "urn:ngm:class:blend-shapes",
-        "label": "Blend Shapes"
       },
       {
         "id": "urn:ngm:class:keyframe-animation",

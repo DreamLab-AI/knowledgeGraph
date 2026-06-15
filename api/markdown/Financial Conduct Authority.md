@@ -73,40 +73,14 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:financial-services-act-2012",
-        "label": "Financial Services Act 2012"
-      },
-      {
-        "@id": "urn:ngm:class:consumer-duty",
+        "@id": "urn:ngm:class:fca-consumer-duty",
         "label": "Consumer Duty"
-      },
-      {
-        "@id": "urn:ngm:class:senior-managers-certification-regime",
-        "label": "Senior Managers and Certification Regime"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:fca-handbook",
-        "label": "FCA Handbook"
-      },
-      {
         "@id": "urn:ngm:class:regulatory-sandbox",
         "label": "Regulatory Sandbox"
-      },
-      {
-        "@id": "urn:ngm:class:supervisory-technology",
-        "label": "Supervisory Technology"
-      }
-    ],
-    "requires": [
-      {
-        "@id": "urn:ngm:class:financial-services-authorisation",
-        "label": "Financial Services Authorisation"
-      },
-      {
-        "@id": "urn:ngm:class:approved-persons-regime",
-        "label": "Approved Persons Regime"
       }
     ],
     "dependsOn": [
@@ -151,24 +125,6 @@ public:: true
       {
         "@id": "urn:ngm:class:securities-exchange-commission",
         "label": "Securities and Exchange Commission"
-      },
-      {
-        "@id": "urn:ngm:class:european-securities-markets-authority",
-        "label": "European Securities and Markets Authority"
-      }
-    ],
-    "relatedTo": [
-      {
-        "@id": "urn:ngm:class:financial-ombudsman-service",
-        "label": "Financial Ombudsman Service"
-      },
-      {
-        "@id": "urn:ngm:class:financial-services-compensation-scheme",
-        "label": "Financial Services Compensation Scheme"
-      },
-      {
-        "@id": "urn:ngm:class:payment-systems-regulator",
-        "label": "Payment Systems Regulator"
       }
     ],
     "bridgesTo": [

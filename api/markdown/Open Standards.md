@@ -67,7 +67,7 @@ public:: true
         "label": "Specification"
       },
       {
-        "@id": "urn:ngm:class:conformance-testing",
+        "@id": "urn:ngm:class:standards-conformance-testing",
         "label": "Conformance Testing"
       },
       {
@@ -77,7 +77,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:standards-ecosystem",
+        "@id": "urn:ngm:class:standards",
         "label": "Standards Ecosystem"
       }
     ],
@@ -172,10 +172,6 @@ public:: true
       }
     ],
     "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:proprietary-standard",
-        "label": "Proprietary Standard"
-      },
       {
         "@id": "urn:ngm:class:closed-specification",
         "label": "Closed Specification"

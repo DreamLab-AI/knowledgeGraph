@@ -75,20 +75,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:convex-hull",
-        "label": "Convex Hull"
-      },
-      {
-        "@id": "urn:ngm:class:delaunay-triangulation",
-        "label": "Delaunay Triangulation"
-      },
-      {
         "@id": "urn:ngm:class:voronoi-diagram",
         "label": "Voronoi Diagram"
-      },
-      {
-        "@id": "urn:ngm:class:polygon-clipping",
-        "label": "Polygon Clipping"
       }
     ],
     "partOf": [
@@ -161,16 +149,6 @@ public:: true
       {
         "@id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
-      },
-      {
-        "@id": "urn:ngm:class:mesh-processing",
-        "label": "Mesh Processing"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:combinatorial-geometry",
-        "label": "Combinatorial Geometry"
       }
     ],
     "bridgesTo": [
@@ -187,10 +165,6 @@ public:: true
       {
         "@id": "urn:ngm:class:point-cloud-processing",
         "label": "Point Cloud Processing"
-      },
-      {
-        "@id": "urn:ngm:class:solid-modeling",
-        "label": "Solid Modeling"
       }
     ]
   },

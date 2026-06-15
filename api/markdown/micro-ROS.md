@@ -93,15 +93,7 @@ public:: true
         "label": "Real-Time Control"
       },
       {
-        "@id": "urn:ngm:class:sensor-integration",
-        "label": "Sensor Integration"
-      },
-      {
-        "@id": "urn:ngm:class:actuator-control",
-        "label": "Actuator Control"
-      },
-      {
-        "@id": "urn:ngm:class:ros-node",
+        "@id": "urn:ngm:class:ros",
         "label": "ROS Node"
       }
     ],
@@ -127,21 +119,13 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:rmw-microxrcedds",
-        "label": "rmw_microxrcedds"
-      },
-      {
-        "@id": "urn:ngm:class:micro-xrce-dds",
-        "label": "Micro XRCE-DDS"
-      },
-      {
         "@id": "urn:ngm:class:freertos",
         "label": "FreeRTOS"
       }
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:embedded-robotics",
+        "@id": "urn:ngm:class:robotics",
         "label": "Embedded Robotics"
       },
       {
@@ -150,10 +134,6 @@ public:: true
       }
     ],
     "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:rosserial",
-        "label": "rosserial"
-      },
       {
         "@id": "urn:ngm:class:ros",
         "label": "ROS"
@@ -170,10 +150,6 @@ public:: true
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:robot-middleware",
-        "label": "Robot Middleware"
-      },
       {
         "@id": "urn:ngm:class:internet-of-things",
         "label": "Internet of Things"

@@ -88,20 +88,6 @@ public:: true
         "label": "Eventual Consistency"
       }
     ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:anti-entropy",
-        "label": "Anti-Entropy"
-      },
-      {
-        "@id": "urn:ngm:class:rumour-mongering",
-        "label": "Rumour Mongering"
-      },
-      {
-        "@id": "urn:ngm:class:push-pull-synchronisation",
-        "label": "Push-Pull Synchronisation"
-      }
-    ],
     "partOf": [
       {
         "@id": "urn:ngm:class:distributed-ledger-technology",
@@ -116,10 +102,6 @@ public:: true
       {
         "@id": "urn:ngm:class:peer-discovery",
         "label": "Peer Discovery"
-      },
-      {
-        "@id": "urn:ngm:class:node-membership-protocol",
-        "label": "Node Membership Protocol"
       }
     ],
     "enables": [
@@ -130,30 +112,12 @@ public:: true
       {
         "@id": "urn:ngm:class:decentralised-consensus",
         "label": "Decentralised Consensus"
-      },
-      {
-        "@id": "urn:ngm:class:blockchain-transaction-propagation",
-        "label": "Blockchain Transaction Propagation"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:network-component",
         "label": "Network Component"
-      },
-      {
-        "@id": "urn:ngm:class:probabilistic-broadcast",
-        "label": "Probabilistic Broadcast"
-      }
-    ],
-    "dependsOn": [
-      {
-        "@id": "urn:ngm:class:epidemic-algorithm",
-        "label": "Epidemic Algorithm"
-      },
-      {
-        "@id": "urn:ngm:class:random-graph-theory",
-        "label": "Random Graph Theory"
       }
     ],
     "supports": [
@@ -164,16 +128,6 @@ public:: true
       {
         "@id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:flooding-protocol",
-        "label": "Flooding Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:centralised-message-broker",
-        "label": "Centralised Message Broker"
       }
     ],
     "bridgesTo": [
@@ -188,11 +142,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:apache-cassandra",
-        "label": "Apache Cassandra"
-      },
-      {
-        "@id": "urn:ngm:class:bitcoin-p2p-network",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
         "label": "Bitcoin P2P Network"
       }
     ]

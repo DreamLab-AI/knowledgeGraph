@@ -128,16 +128,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:position-tracking",
+        "@id": "urn:ngm:class:position-control",
         "label": "Position Tracking"
-      },
-      {
-        "@id": "urn:ngm:class:global-localization",
-        "label": "Global Localization"
-      },
-      {
-        "@id": "urn:ngm:class:belief-representation",
-        "label": "Belief Representation"
       }
     ],
     "partOf": [
@@ -150,14 +142,6 @@ public:: true
       {
         "@id": "urn:ngm:class:sensor-system",
         "label": "Sensor System"
-      },
-      {
-        "@id": "urn:ngm:class:environmental-model",
-        "label": "Environmental Model"
-      },
-      {
-        "@id": "urn:ngm:class:recursive-estimation",
-        "label": "Recursive Estimation"
       }
     ],
     "enables": [
@@ -186,10 +170,6 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:probabilistic-methods",
-        "label": "Probabilistic Methods"
-      },
-      {
         "@id": "urn:ngm:class:odometry",
         "label": "Odometry"
       },
@@ -216,7 +196,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:autonomous-vehicles",
+        "@id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
       },
       {
@@ -234,10 +214,6 @@ public:: true
       {
         "@id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
-      },
-      {
-        "@id": "urn:ngm:class:indoor-positioning-systems",
-        "label": "Indoor Positioning Systems"
       }
     ],
     "relatedTo": [
@@ -261,7 +237,7 @@ public:: true
       "label": "Pose Estimation"
     }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

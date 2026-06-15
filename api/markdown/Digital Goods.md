@@ -143,10 +143,6 @@ alias:: DigitalGoods
         "label": "Ownership Token"
       },
       {
-        "@id": "urn:ngm:class:usage-rights",
-        "label": "Usage Rights"
-      },
-      {
         "@id": "urn:ngm:class:digital-asset",
         "label": "Digital Asset"
       }
@@ -169,10 +165,6 @@ alias:: DigitalGoods
       {
         "@id": "urn:ngm:class:creator-monetization",
         "label": "Creator Monetization"
-      },
-      {
-        "@id": "urn:ngm:class:user-ownership",
-        "label": "User Ownership"
       },
       {
         "@id": "urn:ngm:class:asset-trading",

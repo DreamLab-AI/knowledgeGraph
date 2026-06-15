@@ -37,16 +37,8 @@
         "label": "Privacy Preserving Blockchain"
       },
       {
-        "id": "urn:ngm:class:private-defi",
-        "label": "Private DeFi"
-      },
-      {
         "id": "urn:ngm:class:selective-disclosure",
         "label": "Selective Disclosure"
-      },
-      {
-        "id": "urn:ngm:class:confidential-asset",
-        "label": "Confidential Asset"
       }
     ],
     "dependsOn": [
@@ -59,28 +51,15 @@
         "label": "UTXO Model"
       }
     ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:amount-hiding",
-        "label": "Amount Hiding"
-      },
-      {
-        "id": "urn:ngm:class:homomorphic-commitment",
-        "label": "Homomorphic Commitment"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:zk-snark",
         "label": "ZK-SNARK"
       },
       {
-        "id": "urn:ngm:class:transparent-blockchain",
+        "id": "urn:ngm:class:blockchain",
         "label": "Transparent Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:public-transaction",
-        "label": "Public Transaction"
       }
     ],
     "bridgesTo": [
@@ -126,20 +105,12 @@
         "label": "Elements Project"
       },
       {
-        "id": "urn:ngm:class:bitcoin-improvement-proposal",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
         "label": "Bitcoin Improvement Proposal"
       }
     ],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:mimblewimble",
-        "label": "MimbleWimble"
-      },
-      {
-        "id": "urn:ngm:class:ring-confidential-transactions",
-        "label": "Ring Confidential Transactions"
-      },
       {
         "id": "urn:ngm:class:liquid-network",
         "label": "Liquid Network"

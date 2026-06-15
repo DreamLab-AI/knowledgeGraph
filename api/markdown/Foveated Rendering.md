@@ -37,48 +37,75 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:gaze-contingent-rendering", "label": "Gaze-Contingent Rendering"}
+    {
+      "@id": "urn:ngm:class:gaze-contingent-rendering",
+      "label": "Gaze-Contingent Rendering"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"},
-      {"@id": "urn:ngm:class:gaze-estimation", "label": "Gaze Estimation"},
-      {"@id": "urn:ngm:class:variable-rate-shading", "label": "Variable Rate Shading"}
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:gaze-estimation",
+        "label": "Gaze Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:variable-rate-shading",
+        "label": "Variable Rate Shading"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:level-of-detail", "label": "Level of Detail"},
-      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"},
-      {"@id": "urn:ngm:class:reprojection", "label": "Reprojection"},
-      {"@id": "urn:ngm:class:super-resolution", "label": "Super Resolution"},
-      {"@id": "urn:ngm:class:mipmap", "label": "Mipmap"}
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:super-resolution",
+        "label": "Super Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:mipmap",
+        "label": "Mipmap"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:high-fidelity-vr", "label": "High-Fidelity VR"},
-      {"@id": "urn:ngm:class:power-efficient-rendering", "label": "Power-Efficient Rendering"}
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:display-hardware", "label": "Display Hardware"},
-      {"@id": "urn:ngm:class:human-visual-system", "label": "Human Visual System"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:foveal-region", "label": "Foveal Region"},
-      {"@id": "urn:ngm:class:peripheral-region", "label": "Peripheral Region"},
-      {"@id": "urn:ngm:class:quality-transition-zone", "label": "Quality Transition Zone"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:uniform-shading", "label": "Uniform Shading"},
-      {"@id": "urn:ngm:class:temporal-anti-aliasing", "label": "Temporal Anti-Aliasing"}
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:display-hardware",
+        "label": "Display Hardware"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:perceptual-rendering", "label": "Perceptual Rendering"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:neural-network-inference", "label": "Neural Network Inference"},
-      {"@id": "urn:ngm:class:perceptual-quality-metric", "label": "Perceptual Quality Metric"}
+      {
+        "@id": "urn:ngm:class:neural-network-inference",
+        "label": "Neural Network Inference"
+      }
     ]
   },
   "quality": 0.73,

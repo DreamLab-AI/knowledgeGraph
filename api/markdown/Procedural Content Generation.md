@@ -138,14 +138,6 @@ public:: true
         "label": "AI Model Inference Engine"
       },
       {
-        "@id": "urn:ngm:class:asset-synthesizer",
-        "label": "Asset Synthesizer"
-      },
-      {
-        "@id": "urn:ngm:class:rule-based-generator",
-        "label": "Rule-Based Generator"
-      },
-      {
         "@id": "urn:ngm:class:grammar-system",
         "label": "Grammar System"
       },
@@ -156,12 +148,8 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:3-d-modeling-api",
+        "@id": "urn:ngm:class:3-d-modeling",
         "label": "3D Modeling API"
-      },
-      {
-        "@id": "urn:ngm:class:texture-generation-system",
-        "label": "Texture Generation System"
       },
       {
         "@id": "urn:ngm:class:algorithmic-framework",
@@ -170,16 +158,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:automated-asset-creation",
+        "@id": "urn:ngm:class:asset-creation",
         "label": "Automated Asset Creation"
-      },
-      {
-        "@id": "urn:ngm:class:dynamic-environments",
-        "label": "Dynamic Environments"
-      },
-      {
-        "@id": "urn:ngm:class:infinite-world-generation",
-        "label": "Infinite World Generation"
       },
       {
         "@id": "urn:ngm:class:unique-content-variation",

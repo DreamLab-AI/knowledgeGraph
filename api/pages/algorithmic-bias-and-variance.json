@@ -26,7 +26,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:bias-component",
+        "id": "urn:ngm:class:bias",
         "label": "Bias Component"
       },
       {
@@ -34,41 +34,13 @@
         "label": "Hypothesis Class"
       },
       {
-        "id": "urn:ngm:class:irreducible-error",
-        "label": "Irreducible Error"
-      },
-      {
-        "id": "urn:ngm:class:learning-curve",
-        "label": "Learning Curve"
-      },
-      {
         "id": "urn:ngm:class:mean-squared-error",
         "label": "Mean Squared Error"
-      },
-      {
-        "id": "urn:ngm:class:validation-curve",
-        "label": "Validation Curve"
-      },
-      {
-        "id": "urn:ngm:class:variance-component",
-        "label": "Variance Component"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:hypothesis-space",
-        "label": "Hypothesis Space"
-      },
-      {
-        "id": "urn:ngm:class:resampling-method",
-        "label": "Resampling Method"
-      },
-      {
-        "id": "urn:ngm:class:sample-complexity",
-        "label": "Sample Complexity"
-      },
-      {
-        "id": "urn:ngm:class:training-distribution",
+        "id": "urn:ngm:class:training-data-distribution",
         "label": "Training Distribution"
       },
       {
@@ -78,50 +50,22 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:capacity-control",
-        "label": "Capacity Control"
-      },
-      {
-        "id": "urn:ngm:class:generalisation-bound",
-        "label": "Generalisation Bound"
-      },
-      {
         "id": "urn:ngm:class:hyperparameter-tuning",
         "label": "Hyperparameter Tuning"
       },
       {
         "id": "urn:ngm:class:model-selection",
         "label": "Model Selection"
-      },
-      {
-        "id": "urn:ngm:class:risk-minimisation",
-        "label": "Risk Minimisation"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:bootstrap",
-        "label": "Bootstrap"
-      },
-      {
         "id": "urn:ngm:class:cross-validation",
         "label": "Cross-Validation"
       },
       {
-        "id": "urn:ngm:class:holdout-method",
-        "label": "Holdout Method"
-      },
-      {
-        "id": "urn:ngm:class:k-fold",
-        "label": "K-Fold"
-      },
-      {
-        "id": "urn:ngm:class:loocv",
-        "label": "LOOCV"
-      },
-      {
-        "id": "urn:ngm:class:stratified-sampling",
+        "id": "urn:ngm:class:sampling",
         "label": "Stratified Sampling"
       }
     ],
@@ -129,25 +73,13 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:bootstrap-resampling",
-        "label": "Bootstrap Resampling"
-      },
-      {
         "id": "urn:ngm:class:concentration-inequalities",
         "label": "Concentration Inequalities"
-      },
-      {
-        "id": "urn:ngm:class:expectation-operator",
-        "label": "Expectation Operator"
-      },
-      {
-        "id": "urn:ngm:class:variance-decomposition",
-        "label": "Variance Decomposition"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:ensemble-learning",
+        "id": "urn:ngm:class:ensemble-methods",
         "label": "Ensemble Learning"
       },
       {
@@ -177,20 +109,12 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:hastie-tibshirani-friedman-esl",
-        "label": "Hastie-Tibshirani-Friedman ESL"
-      },
-      {
         "id": "urn:ngm:class:py-torch",
         "label": "PyTorch"
       },
       {
         "id": "urn:ngm:class:scikit-learn",
         "label": "scikit-learn"
-      },
-      {
-        "id": "urn:ngm:class:tensor-flow-model-analysis",
-        "label": "TensorFlow Model Analysis"
       }
     ],
     "partOf": [],
@@ -198,10 +122,6 @@
       {
         "id": "urn:ngm:class:benign-overfitting",
         "label": "Benign Overfitting"
-      },
-      {
-        "id": "urn:ngm:class:double-descent",
-        "label": "Double Descent"
       },
       {
         "id": "urn:ngm:class:grokking",

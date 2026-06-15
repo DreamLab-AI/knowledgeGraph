@@ -16,24 +16,7 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:planner-server",
-        "label": "Planner Server"
-      },
-      {
-        "id": "urn:ngm:class:controller-server",
-        "label": "Controller Server"
-      },
-      {
-        "id": "urn:ngm:class:bt-navigator",
-        "label": "BT Navigator"
-      },
-      {
-        "id": "urn:ngm:class:recovery-behavior",
-        "label": "Recovery Behavior"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:ros-2",
@@ -42,10 +25,6 @@
       {
         "id": "urn:ngm:class:dds-middleware",
         "label": "DDS Middleware"
-      },
-      {
-        "id": "urn:ngm:class:lifecycle-node",
-        "label": "Lifecycle Node"
       }
     ],
     "enables": [
@@ -60,10 +39,6 @@
       {
         "id": "urn:ngm:class:obstacle-avoidance",
         "label": "Obstacle Avoidance"
-      },
-      {
-        "id": "urn:ngm:class:coverage-navigation",
-        "label": "Coverage Navigation"
       }
     ],
     "dependsOn": [
@@ -72,16 +47,11 @@
         "label": "SLAM"
       },
       {
-        "id": "urn:ngm:class:robot-localization",
+        "id": "urn:ngm:class:localization",
         "label": "Robot Localization"
       }
     ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:ros-2-actions",
-        "label": "ROS 2 Actions"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:move-base",
@@ -106,14 +76,6 @@
       {
         "id": "urn:ngm:class:costmap",
         "label": "Costmap"
-      },
-      {
-        "id": "urn:ngm:class:motion-planning-algorithm",
-        "label": "Motion Planning Algorithm"
-      },
-      {
-        "id": "urn:ngm:class:model-predictive-path-integral",
-        "label": "Model Predictive Path Integral"
       },
       {
         "id": "urn:ngm:class:lidar",

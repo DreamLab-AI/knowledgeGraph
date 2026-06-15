@@ -23,55 +23,123 @@ public:: true
   "definition": "OWL (Web Ontology Language) is a W3C-standardised semantic web language for defining and sharing ontologies on the World Wide Web, built on RDF and grounded in Description Logics to provide formal semantics with decidable reasoning. OWL enables the specification of classes, properties, individuals, and axioms that constrain their relationships, supporting automated inference and knowledge graph construction.",
   "domain": "standards",
   "maturity": "mature",
-  "subClassOf": {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+    "label": "Semantic Web Linked Data Standard"
+  },
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:description-logic", "label": "Description Logic"},
-      {"@id": "urn:ngm:class:rdfs", "label": "RDFS"}
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
+      },
+      {
+        "@id": "urn:ngm:class:rdfs",
+        "label": "RDFS"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:automated-reasoning", "label": "Automated Reasoning"},
-      {"@id": "urn:ngm:class:ontology-alignment", "label": "Ontology Alignment"},
-      {"@id": "urn:ngm:class:semantic-interoperability", "label": "Semantic Interoperability"}
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:ontology-alignment",
+        "label": "Ontology Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:description-logic", "label": "Description Logic"},
-      {"@id": "urn:ngm:class:open-world-assumption", "label": "Open World Assumption"}
+      {
+        "@id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
+      },
+      {
+        "@id": "urn:ngm:class:open-world-assumption",
+        "label": "Open World Assumption"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:sparql", "label": "SPARQL"},
-      {"@id": "urn:ngm:class:turtle-serialisation", "label": "Turtle Serialisation"},
-      {"@id": "urn:ngm:class:xml", "label": "XML"}
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "@id": "urn:ngm:class:turtle",
+        "label": "Turtle Serialisation"
+      },
+      {
+        "@id": "urn:ngm:class:xml",
+        "label": "XML"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:linked-open-data", "label": "Linked Open Data"},
-      {"@id": "urn:ngm:class:biomedical-ontology", "label": "Biomedical Ontology"},
-      {"@id": "urn:ngm:class:neuro-symbolic-ai", "label": "Neuro-Symbolic AI"}
+      {
+        "@id": "urn:ngm:class:linked-open-data",
+        "label": "Linked Open Data"
+      },
+      {
+        "@id": "urn:ngm:class:biomedical-ontology",
+        "label": "Biomedical Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:neuro-symbolic-ai",
+        "label": "Neuro-Symbolic AI"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:w3c", "label": "W3C"}
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:json-schema", "label": "JSON Schema"},
-      {"@id": "urn:ngm:class:sql-schema", "label": "SQL Schema"}
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
+        "label": "JSON Schema"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:owl-2-web-ontology-language", "label": "OWL 2 Web Ontology Language"},
-      {"@id": "urn:ngm:class:protege-ontology-editor", "label": "Protege Ontology Editor"},
-      {"@id": "urn:ngm:class:gene-ontology", "label": "Gene Ontology"},
-      {"@id": "urn:ngm:class:snomed-ct", "label": "SNOMED CT"}
+      {
+        "@id": "urn:ngm:class:owl-2-web-ontology-language",
+        "label": "OWL 2 Web Ontology Language"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:web-ontology-language", "label": "Web Ontology Language"},
-    {"@id": "urn:ngm:class:owl-2-web-ontology-language", "label": "OWL 2 Web Ontology Language"}
+    {
+      "@id": "urn:ngm:class:web-ontology-language",
+      "label": "Web Ontology Language"
+    },
+    {
+      "@id": "urn:ngm:class:owl-2-web-ontology-language",
+      "label": "OWL 2 Web Ontology Language"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

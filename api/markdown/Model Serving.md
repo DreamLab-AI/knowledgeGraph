@@ -81,10 +81,6 @@ public:: true
       {
         "@id": "urn:ngm:class:mlops",
         "label": "MLOps"
-      },
-      {
-        "@id": "urn:ngm:class:ml-pipeline",
-        "label": "ML Pipeline"
       }
     ],
     "requires": [
@@ -151,10 +147,6 @@ public:: true
       {
         "@id": "urn:ngm:class:model-quantization",
         "label": "Model Quantization"
-      },
-      {
-        "@id": "urn:ngm:class:request-batching",
-        "label": "Request Batching"
       }
     ],
     "supports": [
@@ -175,10 +167,6 @@ public:: true
       {
         "@id": "urn:ngm:class:model-training",
         "label": "Model Training"
-      },
-      {
-        "@id": "urn:ngm:class:offline-inference",
-        "label": "Offline Inference"
       }
     ],
     "bridgesTo": [

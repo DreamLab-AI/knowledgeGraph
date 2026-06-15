@@ -57,24 +57,6 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:forge",
-        "label": "Forge"
-      },
-      {
-        "@id": "urn:ngm:class:cast",
-        "label": "Cast"
-      },
-      {
-        "@id": "urn:ngm:class:anvil",
-        "label": "Anvil"
-      },
-      {
-        "@id": "urn:ngm:class:chisel",
-        "label": "Chisel"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:solidity",
@@ -85,7 +67,7 @@ public:: true
         "label": "EVM"
       },
       {
-        "@id": "urn:ngm:class:rust",
+        "@id": "urn:ngm:class:rust-systems-programming-language",
         "label": "Rust"
       }
     ],
@@ -105,10 +87,6 @@ public:: true
       {
         "@id": "urn:ngm:class:formal-verification",
         "label": "Formal Verification"
-      },
-      {
-        "@id": "urn:ngm:class:deployment-scripting",
-        "label": "Deployment Scripting"
       }
     ],
     "dependsOn": [
@@ -117,21 +95,17 @@ public:: true
         "label": "Ethereum"
       },
       {
-        "@id": "urn:ngm:class:evm-bytecode",
+        "@id": "urn:ngm:class:evm",
         "label": "EVM Bytecode"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:cheatcodes",
-        "label": "Cheatcodes"
-      },
-      {
         "@id": "urn:ngm:class:abi-encoding",
         "label": "ABI Encoding"
       },
       {
-        "@id": "urn:ngm:class:json-rpc",
+        "@id": "urn:ngm:class:json-data-interchange-format-rpc",
         "label": "JSON-RPC"
       }
     ],
@@ -189,10 +163,6 @@ public:: true
       {
         "@id": "urn:ngm:class:openzeppelin",
         "label": "OpenZeppelin"
-      },
-      {
-        "@id": "urn:ngm:class:remappings",
-        "label": "Remappings"
       }
     ]
   },

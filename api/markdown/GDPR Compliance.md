@@ -38,49 +38,119 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"},
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
-      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"},
-      {"@id": "urn:ngm:class:data-protection-impact-assessment", "label": "Data Protection Impact Assessment"}
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "@id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection-impact-assessment",
+        "label": "Data Protection Impact Assessment"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:data-subject-rights", "label": "Data Subject Rights"},
-      {"@id": "urn:ngm:class:cross-border-data-transfer", "label": "Cross-Border Data Transfer"},
-      {"@id": "urn:ngm:class:accountability-framework", "label": "Accountability Framework"}
+      {
+        "@id": "urn:ngm:class:data-subject-rights",
+        "label": "Data Subject Rights"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-data-transfer",
+        "label": "Cross-Border Data Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:accountability-framework",
+        "label": "Accountability Framework"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:supervisory-authority", "label": "Supervisory Authority"},
-      {"@id": "urn:ngm:class:record-of-processing-activities", "label": "Record of Processing Activities"},
-      {"@id": "urn:ngm:class:data-protection-officer", "label": "Data Protection Officer"}
+      {
+        "@id": "urn:ngm:class:supervisory-authority",
+        "label": "Supervisory Authority"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection-officer",
+        "label": "Data Protection Officer"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:privacy-law", "label": "Privacy Law"},
-      {"@id": "urn:ngm:class:data-protection-regulation", "label": "Data Protection Regulation"}
+      {
+        "@id": "urn:ngm:class:privacy-law",
+        "label": "Privacy Law"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection-regulation",
+        "label": "Data Protection Regulation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:information-security", "label": "Information Security"},
-      {"@id": "urn:ngm:class:trust-and-safety", "label": "Trust and Safety"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      },
+      {
+        "@id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:data-breach-notification", "label": "Data Breach Notification"},
-      {"@id": "urn:ngm:class:legitimate-interests", "label": "Legitimate Interests"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:data-breach-notification",
+        "label": "Data Breach Notification"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ccpa-compliance", "label": "CCPA Compliance"},
-      {"@id": "urn:ngm:class:hipaa-compliance", "label": "HIPAA Compliance"}
+      {
+        "@id": "urn:ngm:class:ccpa",
+        "label": "CCPA Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:hipaa",
+        "label": "HIPAA Compliance"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-act-compliance", "label": "AI Act Compliance"},
-      {"@id": "urn:ngm:class:privacy-enhancing-technology", "label": "Privacy Enhancing Technology"}
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "AI Act Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-enhancing-technologies",
+        "label": "Privacy Enhancing Technology"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:general-data-protection-regulation-compliance", "label": "General Data Protection Regulation Compliance"}
+    {
+      "@id": "urn:ngm:class:general-data-protection-regulation-compliance",
+      "label": "General Data Protection Regulation Compliance"
+    }
   ],
   "quality": 0.72,
   "provenance": {

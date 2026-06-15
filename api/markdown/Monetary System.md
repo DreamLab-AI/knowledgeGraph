@@ -76,7 +76,7 @@ public:: true
         "label": "Clearing House"
       },
       {
-        "@id": "urn:ngm:class:cbdc",
+        "@id": "urn:ngm:class:central-bank-digital-currency-cbdc",
         "label": "Central Bank Digital Currency"
       }
     ],
@@ -90,7 +90,7 @@ public:: true
         "label": "Financial Inclusion"
       },
       {
-        "@id": "urn:ngm:class:cross-border-payment",
+        "@id": "urn:ngm:class:cross-border-payments",
         "label": "Cross-Border Payment"
       }
     ],

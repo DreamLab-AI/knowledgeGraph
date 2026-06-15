@@ -18,16 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:permutation-importance",
-        "label": "Permutation Importance"
-      },
-      {
         "id": "urn:ngm:class:feature-attribution",
         "label": "Feature Attribution"
-      },
-      {
-        "id": "urn:ngm:class:partial-dependence-plot",
-        "label": "Partial Dependence Plot"
       }
     ],
     "requires": [
@@ -58,7 +50,7 @@
         "label": "Model Debugging"
       },
       {
-        "id": "urn:ngm:class:bias-detection",
+        "id": "urn:ngm:class:bias-detection-methods",
         "label": "Bias Detection"
       }
     ],
@@ -96,10 +88,6 @@
       {
         "id": "urn:ngm:class:gradient-boosting",
         "label": "Gradient Boosting"
-      },
-      {
-        "id": "urn:ngm:class:shapley-values",
-        "label": "Shapley Values"
       }
     ],
     "supports": [

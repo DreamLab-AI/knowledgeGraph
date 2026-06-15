@@ -59,7 +59,7 @@
         "label": "Multi-Party Computation"
       },
       {
-        "id": "urn:ngm:class:paillier-encryption",
+        "id": "urn:ngm:class:homomorphic-encryption",
         "label": "Paillier Encryption"
       }
     ],
@@ -67,10 +67,6 @@
       {
         "id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
-      },
-      {
-        "id": "urn:ngm:class:proactive-secret-sharing",
-        "label": "Proactive Secret Sharing"
       }
     ],
     "contrastsWith": [
@@ -81,10 +77,6 @@
       {
         "id": "urn:ngm:class:hardware-security-module",
         "label": "Hardware Security Module"
-      },
-      {
-        "id": "urn:ngm:class:single-key-custody",
-        "label": "Single-Key Custody"
       }
     ],
     "bridgesTo": [
@@ -121,16 +113,11 @@
         "label": "Cross-Chain Bridge"
       },
       {
-        "id": "urn:ngm:class:proof-of-stake-consensus",
+        "id": "urn:ngm:class:proof-of-stake",
         "label": "Proof-of-Stake Consensus"
       }
     ],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:ietf-rfc-9591",
-        "label": "IETF RFC 9591 (FROST)"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {

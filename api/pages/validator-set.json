@@ -26,7 +26,7 @@
         "label": "Slashing Condition"
       },
       {
-        "id": "urn:ngm:class:staking-bond",
+        "id": "urn:ngm:class:staking",
         "label": "Staking Bond"
       }
     ],
@@ -70,7 +70,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:tendermint-bft",
+        "id": "urn:ngm:class:tendermint-consensus",
         "label": "Tendermint BFT"
       },
       {
@@ -100,7 +100,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:threshold-signature",
+        "id": "urn:ngm:class:threshold-signature-scheme",
         "label": "Threshold Signature"
       },
       {
@@ -119,10 +119,6 @@
       {
         "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
-      },
-      {
-        "id": "urn:ngm:class:committee-rotation",
-        "label": "Committee Rotation"
       },
       {
         "id": "urn:ngm:class:governance-token",

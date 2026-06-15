@@ -412,28 +412,16 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:algorand-pure-proof-of-stake",
+        "@id": "urn:ngm:class:pure-proof-of-stake",
         "label": "Algorand Pure Proof of Stake"
       },
       {
-        "@id": "urn:ngm:class:avalanche-snow-consensus",
-        "label": "Avalanche Snow Consensus"
-      },
-      {
-        "@id": "urn:ngm:class:block-proposer-selection",
-        "label": "Block Proposer Selection"
-      },
-      {
-        "@id": "urn:ngm:class:hot-stuff-bft",
+        "@id": "urn:ngm:class:hot-stuff-consensus",
         "label": "HotStuff BFT"
       },
       {
         "@id": "urn:ngm:class:proof-of-space",
         "label": "Proof of Space"
-      },
-      {
-        "@id": "urn:ngm:class:proof-of-space-time",
-        "label": "Proof of Space-Time"
       },
       {
         "@id": "urn:ngm:class:slashing-condition",
@@ -444,7 +432,7 @@ public:: true
         "label": "Tendermint"
       },
       {
-        "@id": "urn:ngm:class:tezos-liquid-proof-of-stake",
+        "@id": "urn:ngm:class:liquid-proof-of-stake",
         "label": "Tezos Liquid Proof of Stake"
       },
       {
@@ -474,10 +462,6 @@ public:: true
         "label": "Finality Gadget"
       },
       {
-        "@id": "urn:ngm:class:stake-locking",
-        "label": "Stake Locking"
-      },
-      {
         "@id": "urn:ngm:class:validator-economics",
         "label": "Validator Economics"
       },
@@ -496,45 +480,25 @@ public:: true
         "label": "ESG-Compliant Blockchain"
       },
       {
-        "@id": "urn:ngm:class:green-bond-settlement",
-        "label": "Green Bond Settlement"
-      },
-      {
-        "@id": "urn:ngm:class:institutional-de-fi-adoption",
-        "label": "Institutional DeFi Adoption"
-      },
-      {
-        "@id": "urn:ngm:class:low-cost-transaction-processing",
-        "label": "Low-Cost Transaction Processing"
-      },
-      {
-        "@id": "urn:ngm:class:scalable-dlt-infrastructure",
-        "label": "Scalable DLT Infrastructure"
-      },
-      {
         "@id": "urn:ngm:class:carbon-neutral-blockchain",
         "label": "Carbon Neutral Blockchain"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:delegated-staking",
+        "@id": "urn:ngm:class:delegated-proof-of-stake",
         "label": "Delegated Staking"
       },
       {
-        "@id": "urn:ngm:class:economic-slashing",
+        "@id": "urn:ngm:class:slashing",
         "label": "Economic Slashing"
       },
       {
-        "@id": "urn:ngm:class:instant-finality-bft",
-        "label": "Instant Finality BFT"
-      },
-      {
-        "@id": "urn:ngm:class:nakamoto-style-probabilistic-finality",
+        "@id": "urn:ngm:class:probabilistic-finality",
         "label": "Nakamoto-Style Probabilistic Finality"
       },
       {
-        "@id": "urn:ngm:class:randomised-leader-election",
+        "@id": "urn:ngm:class:leader-election",
         "label": "Randomised Leader Election"
       },
       {
@@ -544,16 +508,12 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:bls-signature-aggregation",
+        "@id": "urn:ngm:class:bls-signature",
         "label": "BLS Signature Aggregation"
       },
       {
         "@id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Tree"
-      },
-      {
-        "@id": "urn:ngm:class:storage-proofs",
-        "label": "Storage Proofs"
       },
       {
         "@id": "urn:ngm:class:threshold-cryptography",
@@ -626,15 +586,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:bis-green-finance-standards",
-        "label": "BIS Green Finance Standards"
-      },
-      {
-        "@id": "urn:ngm:class:ccri-energy-benchmarks",
-        "label": "CCRI Energy Benchmarks"
-      },
-      {
-        "@id": "urn:ngm:class:cosmos-ibc-specification",
+        "@id": "urn:ngm:class:cosmos-ibc",
         "label": "Cosmos IBC Specification"
       },
       {
@@ -642,11 +594,7 @@ public:: true
         "label": "Crypto Climate Accord"
       },
       {
-        "@id": "urn:ngm:class:eip-3675-ethereum-po-s",
-        "label": "EIP-3675 Ethereum PoS"
-      },
-      {
-        "@id": "urn:ngm:class:iso-14064-ghg-protocol",
+        "@id": "urn:ngm:class:iso-14064",
         "label": "ISO 14064 GHG Protocol"
       }
     ]

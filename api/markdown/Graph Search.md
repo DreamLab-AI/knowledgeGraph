@@ -70,7 +70,7 @@ public:: true
         "label": "Depth-First Search"
       },
       {
-        "@id": "urn:ngm:class:a-star-search",
+        "@id": "urn:ngm:class:search-algorithm",
         "label": "A* Search"
       },
       {
@@ -90,7 +90,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:graph-data-structure",
+        "@id": "urn:ngm:class:data-structure",
         "label": "Graph Data Structure"
       },
       {
@@ -170,7 +170,7 @@ public:: true
         "label": "Graph Neural Network"
       },
       {
-        "@id": "urn:ngm:class:spatial-indexing",
+        "@id": "urn:ngm:class:spatial-index",
         "label": "Spatial Indexing"
       }
     ],

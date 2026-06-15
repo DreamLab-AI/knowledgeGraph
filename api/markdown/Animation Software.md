@@ -88,7 +88,7 @@ public:: true
         "label": "Rendering Pipeline"
       },
       {
-        "@id": "urn:ngm:class:rigging-systems",
+        "@id": "urn:ngm:class:character-rigging",
         "label": "Rigging Systems"
       },
       {
@@ -102,11 +102,11 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:digital-content-creation-tools",
+        "@id": "urn:ngm:class:digital-content-creation",
         "label": "Digital Content Creation Tools"
       },
       {
-        "@id": "urn:ngm:class:creative-production-pipeline",
+        "@id": "urn:ngm:class:production-pipeline",
         "label": "Creative Production Pipeline"
       }
     ],
@@ -120,7 +120,7 @@ public:: true
         "label": "3D Modeling"
       },
       {
-        "@id": "urn:ngm:class:rigging-systems",
+        "@id": "urn:ngm:class:character-rigging",
         "label": "Rigging Systems"
       },
       {
@@ -130,7 +130,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:3-d-character-animation",
+        "@id": "urn:ngm:class:character-animation",
         "label": "3D Character Animation"
       },
       {

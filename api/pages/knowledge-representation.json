@@ -20,14 +20,6 @@
       {
         "id": "urn:ngm:class:ontology",
         "label": "Ontology"
-      },
-      {
-        "id": "urn:ngm:class:frame-representation",
-        "label": "Frame Representation"
-      },
-      {
-        "id": "urn:ngm:class:production-rule-system",
-        "label": "Production Rule System"
       }
     ],
     "requires": [
@@ -58,7 +50,7 @@
         "label": "Explainable AI"
       },
       {
-        "id": "urn:ngm:class:expert-system",
+        "id": "urn:ngm:class:expert-systems",
         "label": "Expert System"
       }
     ],

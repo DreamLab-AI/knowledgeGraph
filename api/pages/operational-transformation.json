@@ -25,10 +25,6 @@
       {
         "id": "urn:ngm:class:state-synchronisation",
         "label": "State Synchronisation"
-      },
-      {
-        "id": "urn:ngm:class:causality-tracking",
-        "label": "Causality Tracking"
       }
     ],
     "enables": [
@@ -48,7 +44,7 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:optimistic-replication",
+        "id": "urn:ngm:class:replication",
         "label": "Optimistic Replication"
       }
     ],
@@ -58,11 +54,7 @@
         "label": "CRDT"
       },
       {
-        "id": "urn:ngm:class:pessimistic-locking",
-        "label": "Pessimistic Locking"
-      },
-      {
-        "id": "urn:ngm:class:differential-synchronisation",
+        "id": "urn:ngm:class:synchronisation",
         "label": "Differential Synchronisation"
       }
     ],
@@ -72,7 +64,7 @@
         "label": "Large Language Model"
       },
       {
-        "id": "urn:ngm:class:multi-user-virtual-environment",
+        "id": "urn:ngm:class:multi-user-systems",
         "label": "Multi-User Virtual Environment"
       }
     ],
@@ -80,14 +72,6 @@
       {
         "id": "urn:ngm:class:vector-clock",
         "label": "Vector Clock"
-      },
-      {
-        "id": "urn:ngm:class:operation-log",
-        "label": "Operation Log"
-      },
-      {
-        "id": "urn:ngm:class:transformation-function",
-        "label": "Transformation Function"
       }
     ],
     "supports": [],
@@ -108,16 +92,12 @@
         "label": "Conflict Resolution"
       },
       {
-        "id": "urn:ngm:class:distributed-consistency",
+        "id": "urn:ngm:class:distributed-systems-theory",
         "label": "Distributed Consistency"
       },
       {
         "id": "urn:ngm:class:consensus-protocol",
         "label": "Consensus Protocol"
-      },
-      {
-        "id": "urn:ngm:class:merge-algorithm",
-        "label": "Merge Algorithm"
       }
     ]
   },

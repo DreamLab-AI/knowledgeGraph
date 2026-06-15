@@ -65,24 +65,6 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:complexity-class",
-        "label": "Complexity Class"
-      },
-      {
-        "@id": "urn:ngm:class:np-completeness",
-        "label": "NP-Completeness"
-      },
-      {
-        "@id": "urn:ngm:class:polynomial-hierarchy",
-        "label": "Polynomial Hierarchy"
-      },
-      {
-        "@id": "urn:ngm:class:reduction",
-        "label": "Reduction"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:algorithm",
@@ -103,15 +85,11 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:quantum-computing",
+        "@id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
       },
       {
-        "@id": "urn:ngm:class:algorithm-design",
-        "label": "Algorithm Design"
-      },
-      {
-        "@id": "urn:ngm:class:cryptographic-hardness-assumption",
+        "@id": "urn:ngm:class:computational-hardness-assumption",
         "label": "Cryptographic Hardness Assumption"
       }
     ],
@@ -129,10 +107,6 @@ public:: true
       {
         "@id": "urn:ngm:class:computability-theory",
         "label": "Computability Theory"
-      },
-      {
-        "@id": "urn:ngm:class:approximation-algorithms",
-        "label": "Approximation Algorithms"
       }
     ],
     "supports": [
@@ -145,7 +119,7 @@ public:: true
         "label": "Automated Reasoning"
       },
       {
-        "@id": "urn:ngm:class:ontology-reasoning",
+        "@id": "urn:ngm:class:ontology",
         "label": "Ontology Reasoning"
       }
     ],
@@ -155,15 +129,7 @@ public:: true
         "label": "Information Theory"
       },
       {
-        "@id": "urn:ngm:class:circuit-complexity",
-        "label": "Circuit Complexity"
-      },
-      {
-        "@id": "urn:ngm:class:randomized-algorithms",
-        "label": "Randomized Algorithms"
-      },
-      {
-        "@id": "urn:ngm:class:theoretical-computer-science",
+        "@id": "urn:ngm:class:computer-science",
         "label": "Theoretical Computer Science"
       }
     ],
@@ -171,10 +137,6 @@ public:: true
       {
         "@id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
-      },
-      {
-        "@id": "urn:ngm:class:machine-learning-theory",
-        "label": "Machine Learning Theory"
       },
       {
         "@id": "urn:ngm:class:quantum-information",

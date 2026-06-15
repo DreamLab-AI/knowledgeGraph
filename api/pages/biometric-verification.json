@@ -23,10 +23,6 @@
         "label": "Data Protection"
       },
       {
-        "id": "urn:ngm:class:biometric-enrolment",
-        "label": "Biometric Enrolment"
-      },
-      {
         "id": "urn:ngm:class:presentation-attack-detection",
         "label": "Presentation Attack Detection"
       }
@@ -45,20 +41,11 @@
         "label": "Access Control"
       },
       {
-        "id": "urn:ngm:class:remote-identity-proofing",
+        "id": "urn:ngm:class:identity-proofing",
         "label": "Remote Identity Proofing"
       }
     ],
-    "dependsOn": [
-      {
-        "id": "urn:ngm:class:cryptographic-template-protection",
-        "label": "Cryptographic Template Protection"
-      },
-      {
-        "id": "urn:ngm:class:similarity-scoring",
-        "label": "Similarity Scoring"
-      }
-    ],
+    "dependsOn": [],
     "implements": [],
     "contrastsWith": [
       {
@@ -104,17 +91,13 @@
         "label": "Digital Identity"
       },
       {
-        "id": "urn:ngm:class:zero-trust-security",
+        "id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Security"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-iec-19795",
-        "label": "ISO/IEC 19795"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec-30107",
+        "id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC 30107"
       }
     ],

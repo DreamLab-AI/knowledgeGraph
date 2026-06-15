@@ -23,56 +23,147 @@ public:: true
   "definition": "Inter-Agent Communication (IAC) is the set of protocols, message formats, and transport mechanisms through which autonomous software agents exchange information, coordinate tasks, delegate subtasks, share observations, and negotiate commitments in multi-agent systems. It spans classical symbolic AI frameworks (FIPA ACL, KQML) and contemporary LLM-based architectures (Model Context Protocol, Agent2Agent Protocol, tool-calling schemas), defining the content language (what is expressed), the interaction protocol (how exchanges are sequenced), and the transport layer (how messages are delivered). Effective IAC enables heterogeneous agents built on different underlying models to collaborate without shared internal state, encompassing message authentication, semantic interoperability, context propagation, and trust boundaries between agents of differing capability and provenance.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:multi-agent-system",
+      "label": "Multi-Agent System"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:agent2-agent-protocol", "label": "Agent2Agent Protocol"},
-      {"@id": "urn:ngm:class:message-passing", "label": "Message Passing"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:speech-act-theory", "label": "Speech Act Theory"},
-      {"@id": "urn:ngm:class:semantic-interoperability", "label": "Semantic Interoperability"}
+      {
+        "@id": "urn:ngm:class:agent2-agent-protocol",
+        "label": "Agent2Agent Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:speech-act-theory",
+        "label": "Speech Act Theory"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
-      {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:task-delegation", "label": "Task Delegation"},
-      {"@id": "urn:ngm:class:collaborative-reasoning", "label": "Collaborative Reasoning"}
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:task-delegation",
+        "label": "Task Delegation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
-      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"},
-      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"},
-      {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
-      {"@id": "urn:ngm:class:websocket", "label": "WebSocket"},
-      {"@id": "urn:ngm:class:json-schema", "label": "JSON Schema"}
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:websocket",
+        "label": "WebSocket"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
+        "label": "JSON Schema"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:agent-identity", "label": "Agent Identity"},
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:context-window", "label": "Context Window"}
+      {
+        "@id": "urn:ngm:class:agent-identity",
+        "label": "Agent Identity"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:fipa-acl", "label": "FIPA ACL"},
-      {"@id": "urn:ngm:class:kqml", "label": "KQML"}
+      {
+        "@id": "urn:ngm:class:fipa-acl",
+        "label": "FIPA ACL"
+      },
+      {
+        "@id": "urn:ngm:class:kqml",
+        "label": "KQML"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
-      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
-      {"@id": "urn:ngm:class:swarm-intelligence", "label": "Swarm Intelligence"}
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "@id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:monolithic-ai", "label": "Monolithic AI"},
-      {"@id": "urn:ngm:class:single-agent-system", "label": "Single-Agent System"}
+      {
+        "@id": "urn:ngm:class:monolithic-ai",
+        "label": "Monolithic AI"
+      },
+      {
+        "@id": "urn:ngm:class:single-agent-system",
+        "label": "Single-Agent System"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:service-oriented-architecture", "label": "Service Oriented Architecture"},
-      {"@id": "urn:ngm:class:microservices", "label": "Microservices"}
+      {
+        "@id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service Oriented Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:agent-communication", "label": "Agent Communication"},
-    {"@id": "urn:ngm:class:multi-agent-communication", "label": "Multi-Agent Communication"}
+    {
+      "@id": "urn:ngm:class:agent-communication",
+      "label": "Agent Communication"
+    },
+    {
+      "@id": "urn:ngm:class:multi-agent-communication",
+      "label": "Multi-Agent Communication"
+    }
   ],
   "quality": 0.72,
   "provenance": {

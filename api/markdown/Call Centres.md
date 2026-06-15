@@ -366,14 +366,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:agent-assist",
-        "label": "Agent Assist"
-      },
-      {
-        "@id": "urn:ngm:class:automatic-call-distribution",
-        "label": "Automatic Call Distribution"
-      },
-      {
         "@id": "urn:ngm:class:contact-centre-as-a-service",
         "label": "Contact Centre as a Service"
       },
@@ -416,7 +408,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:customer-identity-verification",
+        "@id": "urn:ngm:class:identity-verification",
         "label": "Customer Identity Verification"
       },
       {
@@ -426,10 +418,6 @@ public:: true
       {
         "@id": "urn:ngm:class:real-time-transcription",
         "label": "Real-time Transcription"
-      },
-      {
-        "@id": "urn:ngm:class:telephony-infrastructure",
-        "label": "Telephony Infrastructure"
       },
       {
         "@id": "urn:ngm:class:cloud-infrastructure",
@@ -450,32 +438,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:24-7-customer-service",
-        "label": "24/7 Customer Service"
-      },
-      {
-        "@id": "urn:ngm:class:agent-productivity-augmentation",
-        "label": "Agent Productivity Augmentation"
-      },
-      {
-        "@id": "urn:ngm:class:automated-quality-monitoring",
-        "label": "Automated Quality Monitoring"
-      },
-      {
-        "@id": "urn:ngm:class:multilingual-customer-support",
+        "@id": "urn:ngm:class:customer-support",
         "label": "Multilingual Customer Support"
-      },
-      {
-        "@id": "urn:ngm:class:proactive-customer-outreach",
-        "label": "Proactive Customer Outreach"
-      },
-      {
-        "@id": "urn:ngm:class:tier-1-contact-deflection",
-        "label": "Tier-1 Contact Deflection"
-      },
-      {
-        "@id": "urn:ngm:class:workforce-scheduling-optimisation",
-        "label": "Workforce Scheduling Optimisation"
       }
     ],
     "implements": [
@@ -642,24 +606,8 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:agent-wellbeing",
-        "label": "Agent Wellbeing"
-      },
-      {
-        "@id": "urn:ngm:class:average-handle-time-reduction",
-        "label": "Average Handle Time Reduction"
-      },
-      {
-        "@id": "urn:ngm:class:csat-improvement",
-        "label": "CSAT Improvement"
-      },
-      {
         "@id": "urn:ngm:class:customer-experience",
         "label": "Customer Experience"
-      },
-      {
-        "@id": "urn:ngm:class:first-contact-resolution",
-        "label": "First Contact Resolution"
       },
       {
         "@id": "urn:ngm:class:compliance-monitoring",
@@ -676,20 +624,8 @@ public:: true
         "label": "FCA Consumer Duty"
       },
       {
-        "@id": "urn:ngm:class:fca-sysc-rules",
-        "label": "FCA SYSC Rules"
-      },
-      {
         "@id": "urn:ngm:class:gdpr",
         "label": "GDPR"
-      },
-      {
-        "@id": "urn:ngm:class:ico-workplace-monitoring-guidance",
-        "label": "ICO Workplace Monitoring Guidance"
-      },
-      {
-        "@id": "urn:ngm:class:iso-18295-contact-centre-standard",
-        "label": "ISO 18295 Contact Centre Standard"
       },
       {
         "@id": "urn:ngm:class:pci-dss",

@@ -23,62 +23,163 @@ public:: true
   "definition": "Privacy-preserving identity refers to identity management architectures and protocols that enable individuals to prove attributes, credentials, or facts about themselves to verifiers without revealing unnecessary personal information, leveraging cryptographic techniques such as zero-knowledge proofs, selective disclosure, and unlinkable credentials. These systems reconcile strong authentication guarantees with user privacy, countering surveillance by minimising the attack surface of identity data aggregation and preventing cross-context correlation of user activity. They are foundational to self-sovereign identity frameworks, anonymous credential schemes, hardware-backed identity wallets, and privacy-respecting regulatory compliance workflows. The field spans cryptographic research, standardisation bodies (W3C, IETF, ISO), and deployment infrastructure including secure enclaves and decentralised ledgers.",
   "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-identity",
+      "label": "Digital Identity"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:selective-disclosure", "label": "Selective Disclosure"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:decentralized-identifiers", "label": "Decentralized Identifiers"},
-      {"@id": "urn:ngm:class:bbs-plus-signatures", "label": "BBS+ Signatures"},
-      {"@id": "urn:ngm:class:zk-snark", "label": "ZK-SNARK"},
-      {"@id": "urn:ngm:class:trusted-execution-environment", "label": "Trusted Execution Environment"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      },
+      {
+        "@id": "urn:ngm:class:bbs-signatures",
+        "label": "BBS+ Signatures"
+      },
+      {
+        "@id": "urn:ngm:class:zk-snark",
+        "label": "ZK-SNARK"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:privacy-preserving-authentication", "label": "Privacy-Preserving Authentication"},
-      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"},
-      {"@id": "urn:ngm:class:anonymous-credential", "label": "Anonymous Credential"},
-      {"@id": "urn:ngm:class:age-verification", "label": "Age Verification"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
+      {
+        "@id": "urn:ngm:class:privacy-preserving-authentication",
+        "label": "Privacy-Preserving Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:anonymous-credential",
+        "label": "Anonymous Credential"
+      },
+      {
+        "@id": "urn:ngm:class:age-verification",
+        "label": "Age Verification"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+      {
+        "@id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"},
-      {"@id": "urn:ngm:class:digital-identity-wallet", "label": "Digital Identity Wallet"}
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:w3c-verifiable-credentials", "label": "W3C Verifiable Credentials"},
-      {"@id": "urn:ngm:class:sd-jwt", "label": "SD-JWT"},
-      {"@id": "urn:ngm:class:eidas-2", "label": "eIDAS 2.0"}
+      {
+        "@id": "urn:ngm:class:w3-c-verifiable-credentials",
+        "label": "W3C Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:sd-jwt",
+        "label": "SD-JWT"
+      },
+      {
+        "@id": "urn:ngm:class:e-idas-2-0",
+        "label": "eIDAS 2.0"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
-      {"@id": "urn:ngm:class:know-your-customer", "label": "Know Your Customer"}
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:w3c", "label": "W3C"},
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"}
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:federated-identity", "label": "Federated Identity"},
-      {"@id": "urn:ngm:class:centralised-identity", "label": "Centralised Identity"}
+      {
+        "@id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "@id": "urn:ngm:class:centralised-identity",
+        "label": "Centralised Identity"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:secure-multi-party-computation", "label": "Secure Multi-Party Computation"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:unlinkability", "label": "Unlinkability"},
-      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"}
+      {
+        "@id": "urn:ngm:class:unlinkability",
+        "label": "Unlinkability"
+      },
+      {
+        "@id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:privacy-enhancing-identity", "label": "Privacy-Enhancing Identity"},
-    {"@id": "urn:ngm:class:anonymous-identity-management", "label": "Anonymous Identity Management"}
+    {
+      "@id": "urn:ngm:class:privacy-enhancing-identity",
+      "label": "Privacy-Enhancing Identity"
+    },
+    {
+      "@id": "urn:ngm:class:anonymous-identity-management",
+      "label": "Anonymous Identity Management"
+    }
   ],
   "quality": 0.72,
   "provenance": {

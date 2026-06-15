@@ -203,7 +203,7 @@ alias:: ComputerVision
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:autonomous-vehicle-navigation",
+        "@id": "urn:ngm:class:autonomous-navigation",
         "label": "Autonomous Vehicle Navigation"
       },
       {
@@ -213,10 +213,6 @@ alias:: ComputerVision
       {
         "@id": "urn:ngm:class:robotics-perception",
         "label": "Robotics Perception"
-      },
-      {
-        "@id": "urn:ngm:class:surveillance-systems",
-        "label": "Surveillance Systems"
       },
       {
         "@id": "urn:ngm:class:medical-imaging-ai",

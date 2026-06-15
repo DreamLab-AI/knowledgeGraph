@@ -23,61 +23,119 @@ public:: true
   "definition": "BBS+ Signatures is the collective term for the class of pairing-based multi-message signature schemes derived from the BBS construction, encompassing both the base signature algorithm and the proof-of-knowledge protocols that enable selective disclosure and unlinkable presentation of signed credential attributes. As a scheme family, BBS+ Signatures represent the cryptographic foundation for privacy-preserving digital credential ecosystems.",
   "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-signature",
+      "label": "Cryptographic Signature"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:bbs-signature", "label": "BBS+ Signature"},
-      {"@id": "urn:ngm:class:proof-of-knowledge-protocol", "label": "Proof-of-Knowledge Protocol"}
+      {
+        "@id": "urn:ngm:class:bbs-signature",
+        "label": "BBS+ Signature"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:pairing-friendly-curve", "label": "Pairing-Friendly Curve"},
-      {"@id": "urn:ngm:class:bilinear-pairing", "label": "Bilinear Pairing"}
+      {
+        "@id": "urn:ngm:class:bilinear-pairing",
+        "label": "Bilinear Pairing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:selective-disclosure", "label": "Selective Disclosure"},
-      {"@id": "urn:ngm:class:privacy-preserving-authentication", "label": "Privacy-Preserving Authentication"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:unlinkable-presentation", "label": "Unlinkable Presentation"},
-      {"@id": "urn:ngm:class:anonymous-credential", "label": "Anonymous Credential"}
+      {
+        "@id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-authentication",
+        "label": "Privacy-Preserving Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:anonymous-credential",
+        "label": "Anonymous Credential"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:bls12-381", "label": "BLS12-381"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:w3c-vc-data-integrity", "label": "W3C VC Data Integrity"},
-      {"@id": "urn:ngm:class:ietf-cfrg-draft", "label": "IETF CFRG Draft"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-proof-system", "label": "Cryptographic Proof System"},
-      {"@id": "urn:ngm:class:cryptographic-primitive", "label": "Cryptographic Primitive"},
-      {"@id": "urn:ngm:class:commitment-scheme", "label": "Commitment Scheme"}
+      {
+        "@id": "urn:ngm:class:cryptographic-proof-system",
+        "label": "Cryptographic Proof System"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      },
+      {
+        "@id": "urn:ngm:class:commitment-scheme",
+        "label": "Commitment Scheme"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"},
-      {"@id": "urn:ngm:class:decentralized-identifier", "label": "Decentralized Identifier"}
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:w3c", "label": "W3C"},
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"}
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:json-web-token", "label": "JSON Web Token"},
-      {"@id": "urn:ngm:class:cl-signatures", "label": "CL Signatures"}
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-web-token",
+        "label": "JSON Web Token"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
-      {"@id": "urn:ngm:class:governance", "label": "Governance"}
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:privacy-preserving-identity", "label": "Privacy-Preserving Identity"},
-      {"@id": "urn:ngm:class:hyperledger-anoncreds", "label": "Hyperledger AnonCreds"}
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-identity",
+        "label": "Privacy-Preserving Identity"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:bbs-signature-scheme", "label": "BBS Signature Scheme"},
-    {"@id": "urn:ngm:class:pairing-based-signature-scheme", "label": "Pairing-Based Signature Scheme"}
+    {
+      "@id": "urn:ngm:class:bbs-signature-scheme",
+      "label": "BBS Signature Scheme"
+    },
+    {
+      "@id": "urn:ngm:class:pairing-based-signature-scheme",
+      "label": "Pairing-Based Signature Scheme"
+    }
   ],
   "quality": 0.72,
   "provenance": {

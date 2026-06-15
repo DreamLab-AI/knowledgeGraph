@@ -51,57 +51,137 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:batch-size", "label": "Batch Size"},
-      {"@id": "urn:ngm:class:learning-rate-schedule", "label": "Learning Rate Schedule"},
-      {"@id": "urn:ngm:class:dropout", "label": "Dropout"},
-      {"@id": "urn:ngm:class:regularisation-coefficient", "label": "Regularisation Coefficient"}
+      {
+        "@id": "urn:ngm:class:batch-size",
+        "label": "Batch Size"
+      },
+      {
+        "@id": "urn:ngm:class:learning-rate-schedule",
+        "label": "Learning Rate Schedule"
+      },
+      {
+        "@id": "urn:ngm:class:dropout",
+        "label": "Dropout"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:model-configuration", "label": "Model Configuration"}
+      {
+        "@id": "urn:ngm:class:model-configuration",
+        "label": "Model Configuration"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:validation-data", "label": "Validation Data"},
-      {"@id": "urn:ngm:class:cross-validation", "label": "Cross-Validation"}
+      {
+        "@id": "urn:ngm:class:validation-data",
+        "label": "Validation Data"
+      },
+      {
+        "@id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"},
-      {"@id": "urn:ngm:class:generalisation", "label": "Generalisation"}
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:generalisation",
+        "label": "Generalisation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:training-dataset", "label": "Training Dataset"},
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"}
+      {
+        "@id": "urn:ngm:class:training-dataset",
+        "label": "Training Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"},
-      {"@id": "urn:ngm:class:bayesian-optimisation", "label": "Bayesian Optimisation"},
-      {"@id": "urn:ngm:class:grid-search", "label": "Grid Search"},
-      {"@id": "urn:ngm:class:random-search", "label": "Random Search"}
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:grid-search",
+        "label": "Grid Search"
+      },
+      {
+        "@id": "urn:ngm:class:random-search",
+        "label": "Random Search"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:auto-ml", "label": "AutoML"},
-      {"@id": "urn:ngm:class:neural-architecture-search", "label": "Neural Architecture Search"}
+      {
+        "@id": "urn:ngm:class:auto-ml",
+        "label": "AutoML"
+      },
+      {
+        "@id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:model-parameter", "label": "Model Parameter"},
-      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"}
+      {
+        "@id": "urn:ngm:class:parameter",
+        "label": "Model Parameter"
+      },
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:meta-learning", "label": "Meta-Learning"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+      {
+        "@id": "urn:ngm:class:meta-learning",
+        "label": "Meta-Learning"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"},
-      {"@id": "urn:ngm:class:model-selection", "label": "Model Selection"}
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "@id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:tuning-parameter", "label": "Tuning Parameter"},
-    {"@id": "urn:ngm:class:training-configuration-variable", "label": "Training Configuration Variable"}
+    {
+      "@id": "urn:ngm:class:tuning-parameter",
+      "label": "Tuning Parameter"
+    },
+    {
+      "@id": "urn:ngm:class:training-configuration-variable",
+      "label": "Training Configuration Variable"
+    }
   ],
-  "quality": 0.80,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",

@@ -240,73 +240,33 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:wasi-interface",
-        "label": "WASI Interface"
-      },
-      {
-        "@id": "urn:ngm:class:wasm-import-object",
-        "label": "Wasm Import Object"
-      },
-      {
-        "@id": "urn:ngm:class:wasm-linear-memory",
-        "label": "Wasm Linear Memory"
-      },
-      {
-        "@id": "urn:ngm:class:wasm-module",
-        "label": "Wasm Module"
-      },
-      {
-        "@id": "urn:ngm:class:wasm-table",
-        "label": "Wasm Table"
-      }
-    ],
     "requires": [
       {
-        "@id": "urn:ngm:class:binary-encoding-standard",
+        "@id": "urn:ngm:class:binary-encoding",
         "label": "Binary Encoding Standard"
       },
       {
-        "@id": "urn:ngm:class:host-runtime",
+        "@id": "urn:ngm:class:runtime-environment",
         "label": "Host Runtime"
       },
       {
-        "@id": "urn:ngm:class:stack-based-virtual-machine",
+        "@id": "urn:ngm:class:virtual-machine",
         "label": "Stack-Based Virtual Machine"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:cross-language-interoperability",
+        "@id": "urn:ngm:class:interoperability",
         "label": "Cross-Language Interoperability"
-      },
-      {
-        "@id": "urn:ngm:class:deterministic-replay",
-        "label": "Deterministic Replay"
       },
       {
         "@id": "urn:ngm:class:edge-inference",
         "label": "Edge Inference"
-      },
-      {
-        "@id": "urn:ngm:class:sandboxed-agent-execution",
-        "label": "Sandboxed Agent Execution"
-      }
-    ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:w3-c-web-assembly-specification",
-        "label": "W3C WebAssembly Specification"
-      },
-      {
-        "@id": "urn:ngm:class:wasi-standard",
-        "label": "WASI Standard"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:edge-computing-stack",
+        "@id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing Stack"
       },
       {
@@ -315,20 +275,40 @@ public:: true
       }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:rust", "label": "Rust"},
-      {"@id": "urn:ngm:class:javascript", "label": "JavaScript"}
+      {
+        "@id": "urn:ngm:class:rust-systems-programming-language",
+        "label": "Rust"
+      },
+      {
+        "@id": "urn:ngm:class:javascript",
+        "label": "JavaScript"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:smart-contract-execution", "label": "Smart Contract Execution"},
-      {"@id": "urn:ngm:class:web-contracts", "label": "Web Contracts"}
+      {
+        "@id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      },
+      {
+        "@id": "urn:ngm:class:web-contracts",
+        "label": "Web Contracts"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cloudflare-workers", "label": "Cloudflare Workers"},
-      {"@id": "urn:ngm:class:runtime-environment", "label": "Runtime Environment"}
+      {
+        "@id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      }
     ]
   },
   "quality": 0.72,

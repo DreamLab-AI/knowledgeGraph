@@ -180,10 +180,6 @@ public:: true
         "label": "CommunityParticipation"
       },
       {
-        "@id": "urn:ngm:class:impact-verification",
-        "label": "ImpactVerification"
-      },
-      {
         "@id": "urn:ngm:class:smart-contracts",
         "label": "Smart Contracts"
       },
@@ -198,7 +194,7 @@ public:: true
         "label": "Carbon Credit Retirement"
       },
       {
-        "@id": "urn:ngm:class:climate-project-funding",
+        "@id": "urn:ngm:class:climate-finance",
         "label": "ClimateProjectFunding"
       },
       {

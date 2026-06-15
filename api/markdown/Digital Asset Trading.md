@@ -84,15 +84,11 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:exchange-platform",
-        "label": "Exchange Platform"
-      },
-      {
-        "@id": "urn:ngm:class:order-matching",
+        "@id": "urn:ngm:class:order-book",
         "label": "Order Matching"
       },
       {
-        "@id": "urn:ngm:class:settlement-systems",
+        "@id": "urn:ngm:class:settlement",
         "label": "Settlement Systems"
       },
       {
@@ -142,10 +138,6 @@ public:: true
       {
         "@id": "urn:ngm:class:decentralised-exchange",
         "label": "Decentralised Exchange"
-      },
-      {
-        "@id": "urn:ngm:class:over-the-counter-trading",
-        "label": "Over-the-Counter Trading"
       }
     ],
     "uses": [
@@ -168,17 +160,13 @@ public:: true
         "label": "Consensus Mechanism"
       },
       {
-        "@id": "urn:ngm:class:custody-solution",
+        "@id": "urn:ngm:class:custody",
         "label": "Custody Solution"
       }
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:traditional-securities-trading",
-        "label": "Traditional Securities Trading"
-      },
-      {
-        "@id": "urn:ngm:class:fiat-currency-exchange",
+        "@id": "urn:ngm:class:fiat-currency",
         "label": "Fiat Currency Exchange"
       }
     ],

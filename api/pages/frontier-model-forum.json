@@ -59,7 +59,7 @@
         "label": "AI Policy"
       },
       {
-        "id": "urn:ngm:class:international-ai-governance",
+        "id": "urn:ngm:class:ai-governance",
         "label": "International AI Governance"
       },
       {
@@ -102,7 +102,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:ai-governance-ecosystem",
+        "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance Ecosystem"
       }
     ],

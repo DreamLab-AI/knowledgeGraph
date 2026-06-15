@@ -142,10 +142,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:educational-outreach",
-        "label": "Educational Outreach"
-      },
-      {
         "@id": "urn:ngm:class:long-term-preservation",
         "label": "Long-Term Preservation"
       },

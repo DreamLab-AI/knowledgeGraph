@@ -23,58 +23,119 @@ public:: true
   "definition": "Emission Factors are coefficients that quantify the average amount of a pollutant—typically greenhouse gases expressed in CO2-equivalent—released per unit of an activity, such as per kilowatt-hour of electricity consumed or per kilometre driven by a particular vehicle class. They are derived from empirical measurement campaigns and modelling studies, and published by bodies such as the IPCC, the IEA, and national environmental agencies. Emission factors are the fundamental input to carbon accounting frameworks such as the GHG Protocol, enabling organisations to calculate their Scope 1, 2, and 3 inventories from activity data. Regular revision of these factors reflects technological change and regional grid decarbonisation.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:carbon-accounting", "label": "Carbon Accounting"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:carbon-accounting",
+    "label": "Carbon Accounting"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:scope-1-emissions", "label": "Scope 1 Emissions"},
-      {"@id": "urn:ngm:class:scope-2-emissions", "label": "Scope 2 Emissions"},
-      {"@id": "urn:ngm:class:scope-3-emissions", "label": "Scope 3 Emissions"}
+      {
+        "@id": "urn:ngm:class:scope-1-emissions",
+        "label": "Scope 1 Emissions"
+      },
+      {
+        "@id": "urn:ngm:class:scope-2-emissions",
+        "label": "Scope 2 Emissions"
+      },
+      {
+        "@id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:carbon-accounting", "label": "Carbon Accounting"},
-      {"@id": "urn:ngm:class:environmental-accounting", "label": "Environmental Accounting"}
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-accounting",
+        "label": "Environmental Accounting"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ghg-protocol", "label": "GHG Protocol"},
-      {"@id": "urn:ngm:class:life-cycle-assessment", "label": "Life Cycle Assessment"},
-      {"@id": "urn:ngm:class:activity-data", "label": "Activity Data"}
+      {
+        "@id": "urn:ngm:class:ghg-protocol",
+        "label": "GHG Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:activity-data",
+        "label": "Activity Data"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:carbon-footprint-measurement", "label": "Carbon Footprint Measurement"},
-      {"@id": "urn:ngm:class:environmental-impact-metric", "label": "Environmental Impact Metric"},
-      {"@id": "urn:ngm:class:greenhouse-gas-inventory", "label": "Greenhouse Gas Inventory"},
-      {"@id": "urn:ngm:class:carbon-disclosure", "label": "Carbon Disclosure"}
+      {
+        "@id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-impact-metric",
+        "label": "Environmental Impact Metric"
+      },
+      {
+        "@id": "urn:ngm:class:greenhouse-gas-inventory",
+        "label": "Greenhouse Gas Inventory"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-disclosure",
+        "label": "Carbon Disclosure"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:ipcc-guidelines", "label": "IPCC Guidelines"},
-      {"@id": "urn:ngm:class:measurement-uncertainty", "label": "Measurement Uncertainty"},
-      {"@id": "urn:ngm:class:national-energy-statistics", "label": "National Energy Statistics"}
+      {
+        "@id": "urn:ngm:class:measurement-uncertainty",
+        "label": "Measurement Uncertainty"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ipcc", "label": "IPCC"},
-      {"@id": "urn:ngm:class:iso-14064", "label": "ISO 14064"},
-      {"@id": "urn:ngm:class:iea-statistics", "label": "IEA Statistics"}
+      {
+        "@id": "urn:ngm:class:ipcc",
+        "label": "IPCC"
+      },
+      {
+        "@id": "urn:ngm:class:iso-14064",
+        "label": "ISO 14064"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:sustainability-reporting", "label": "SustainabilityReporting"},
-      {"@id": "urn:ngm:class:carbon-credits", "label": "Carbon Credits"},
-      {"@id": "urn:ngm:class:net-zero-target-setting", "label": "Net Zero Target Setting"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:direct-measurement", "label": "Direct Measurement"},
-      {"@id": "urn:ngm:class:spend-based-accounting", "label": "Spend-Based Accounting"}
+      {
+        "@id": "urn:ngm:class:sustainability-reporting",
+        "label": "SustainabilityReporting"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "@id": "urn:ngm:class:net-zero-target-setting",
+        "label": "Net Zero Target Setting"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:energy-grid-data", "label": "Energy Grid Data"},
-      {"@id": "urn:ngm:class:supply-chain-transparency", "label": "Supply Chain Transparency"}
+      {
+        "@id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:carbon-footprint-assessment", "label": "Carbon Footprint Assessment"}
+      {
+        "@id": "urn:ngm:class:carbon-footprint-assessment",
+        "label": "Carbon Footprint Assessment"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ghg-emission-coefficients", "label": "GHG Emission Coefficients"},
-    {"@id": "urn:ngm:class:carbon-intensity-factors", "label": "Carbon Intensity Factors"}
+    {
+      "@id": "urn:ngm:class:ghg-emission-coefficients",
+      "label": "GHG Emission Coefficients"
+    },
+    {
+      "@id": "urn:ngm:class:carbon-intensity-factors",
+      "label": "Carbon Intensity Factors"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

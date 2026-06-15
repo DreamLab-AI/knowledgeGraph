@@ -69,10 +69,6 @@ public:: true
         "label": "Parallel Computing"
       },
       {
-        "@id": "urn:ngm:class:inter-device-communication",
-        "label": "Inter-Device Communication"
-      },
-      {
         "@id": "urn:ngm:class:micro-batch-scheduling",
         "label": "Micro-Batch Scheduling"
       }
@@ -83,22 +79,8 @@ public:: true
         "label": "Real-Time Rendering"
       },
       {
-        "@id": "urn:ngm:class:large-model-training",
+        "@id": "urn:ngm:class:model-training",
         "label": "Large Model Training"
-      },
-      {
-        "@id": "urn:ngm:class:throughput-scaling",
-        "label": "Throughput Scaling"
-      }
-    ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:pipeline-stage",
-        "label": "Pipeline Stage"
-      },
-      {
-        "@id": "urn:ngm:class:bubble-overhead",
-        "label": "Bubble Overhead"
       }
     ],
     "partOf": [
@@ -121,15 +103,11 @@ public:: true
       {
         "@id": "urn:ngm:class:graphics-pipeline",
         "label": "Graphics Pipeline"
-      },
-      {
-        "@id": "urn:ngm:class:gpipe-algorithm",
-        "label": "GPipe Algorithm"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:activation-checkpointing",
+        "@id": "urn:ngm:class:gradient-checkpointing",
         "label": "Activation Checkpointing"
       },
       {
@@ -179,10 +157,6 @@ public:: true
       {
         "@id": "urn:ngm:class:deepspeed",
         "label": "DeepSpeed"
-      },
-      {
-        "@id": "urn:ngm:class:instruction-pipelining",
-        "label": "Instruction Pipelining"
       }
     ]
   },

@@ -60,12 +60,6 @@ public:: true
     }
   ],
   "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:democratized-investment",
-        "label": "Democratized Investment"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:asset-tokenization",

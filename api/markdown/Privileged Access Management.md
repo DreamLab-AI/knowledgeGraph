@@ -23,58 +23,129 @@ public:: true
   "definition": "Privileged Access Management (PAM) is a cybersecurity discipline and category of technology solutions that controls, monitors, and audits the access rights of users, accounts, and systems with elevated permissions in IT environments. PAM encompasses vaulting of privileged credentials, just-in-time access provisioning, session recording, and anomaly detection for privileged sessions. It addresses the risk that compromised administrator accounts represent the most damaging attack vector in enterprise breaches. PAM solutions enforce the principle of least privilege and provide forensic audit trails required by compliance frameworks such as ISO/IEC 27001 and SOX.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:identity-and-access-management",
+    "label": "Identity and Access Management"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:credential-vault", "label": "Credential Vault"},
-      {"@id": "urn:ngm:class:session-recording", "label": "Session Recording"},
-      {"@id": "urn:ngm:class:just-in-time-access", "label": "Just-in-Time Access"}
+      {
+        "@id": "urn:ngm:class:credential-store",
+        "label": "Credential Vault"
+      },
+      {
+        "@id": "urn:ngm:class:session-recording",
+        "label": "Session Recording"
+      },
+      {
+        "@id": "urn:ngm:class:just-in-time-access",
+        "label": "Just-in-Time Access"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"},
-      {"@id": "urn:ngm:class:information-security", "label": "Information Security"}
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:multi-factor-authentication", "label": "Multi-Factor Authentication"},
-      {"@id": "urn:ngm:class:role-based-access-control", "label": "Role-Based Access Control"},
-      {"@id": "urn:ngm:class:digital-certificate", "label": "Digital Certificate"}
+      {
+        "@id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:compliance-audit-trail", "label": "Compliance Audit Trail"},
-      {"@id": "urn:ngm:class:least-privilege-principle", "label": "Least Privilege Principle"},
-      {"@id": "urn:ngm:class:forensic-audit", "label": "Forensic Audit"}
+      {
+        "@id": "urn:ngm:class:compliance-audit-trail",
+        "label": "Compliance Audit Trail"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:session-management", "label": "Session Management"},
-      {"@id": "urn:ngm:class:behavioural-analytics", "label": "Behavioural Analytics"},
-      {"@id": "urn:ngm:class:security-information-and-event-management", "label": "Security Information and Event Management"}
+      {
+        "@id": "urn:ngm:class:session-management",
+        "label": "Session Management"
+      },
+      {
+        "@id": "urn:ngm:class:behavioural-analytics",
+        "label": "Behavioural Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:security-information-and-event-management",
+        "label": "Security Information and Event Management"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:iso-iec-27001", "label": "ISO/IEC 27001"},
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
-      {"@id": "urn:ngm:class:sox-compliance", "label": "SOX Compliance"}
+      {
+        "@id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:sox-compliance",
+        "label": "SOX Compliance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:discretionary-access-control", "label": "Discretionary Access Control"},
-      {"@id": "urn:ngm:class:shared-account", "label": "Shared Account"}
+      {
+        "@id": "urn:ngm:class:discretionary-access-control",
+        "label": "Discretionary Access Control"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:cloud-identity-and-access-management", "label": "Cloud Identity and Access Management"},
-      {"@id": "urn:ngm:class:devops-secrets-management", "label": "DevOps Secrets Management"}
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Cloud Identity and Access Management"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:endpoint-detection-and-response", "label": "Endpoint Detection and Response"},
-      {"@id": "urn:ngm:class:network-access-control", "label": "Network Access Control"}
+      {
+        "@id": "urn:ngm:class:endpoint-detection-and-response",
+        "label": "Endpoint Detection and Response"
+      },
+      {
+        "@id": "urn:ngm:class:network-access-control",
+        "label": "Network Access Control"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:privileged-identity-management", "label": "Privileged Identity Management"},
-    {"@id": "urn:ngm:class:privileged-account-management", "label": "Privileged Account Management"}
+    {
+      "@id": "urn:ngm:class:privileged-identity-management",
+      "label": "Privileged Identity Management"
+    },
+    {
+      "@id": "urn:ngm:class:privileged-account-management",
+      "label": "Privileged Account Management"
+    }
   ],
   "quality": 0.72,
   "provenance": {

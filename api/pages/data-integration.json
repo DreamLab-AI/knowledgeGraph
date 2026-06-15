@@ -26,10 +26,6 @@
         "label": "Change Data Capture"
       },
       {
-        "id": "urn:ngm:class:schema-harmonisation",
-        "label": "Schema Harmonisation"
-      },
-      {
         "id": "urn:ngm:class:identity-resolution",
         "label": "Identity Resolution"
       }
@@ -58,7 +54,7 @@
         "label": "Data Warehouse"
       },
       {
-        "id": "urn:ngm:class:data-lakehouse",
+        "id": "urn:ngm:class:lakehouse-architecture",
         "label": "Data Lakehouse"
       },
       {

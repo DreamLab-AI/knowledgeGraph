@@ -109,7 +109,7 @@ public:: true
         "label": "Distributed Problem Solving"
       },
       {
-        "@id": "urn:ngm:class:emergent-behaviour",
+        "@id": "urn:ngm:class:emergent-behavior",
         "label": "Emergent Behaviour"
       }
     ],
@@ -143,7 +143,7 @@ public:: true
         "label": "Robotic Swarm"
       },
       {
-        "@id": "urn:ngm:class:autonomous-vehicles",
+        "@id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
       },
       {

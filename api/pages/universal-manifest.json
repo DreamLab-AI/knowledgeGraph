@@ -18,20 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:identity-credentials",
-        "label": "Identity Credentials"
-      },
-      {
-        "id": "urn:ngm:class:permission-grants",
-        "label": "Permission Grants"
-      },
-      {
-        "id": "urn:ngm:class:provenance-record",
+        "id": "urn:ngm:class:provenance",
         "label": "Provenance Record"
-      },
-      {
-        "id": "urn:ngm:class:relationship-graph",
-        "label": "Relationship Graph"
       },
       {
         "id": "urn:ngm:class:asset-registry",
@@ -60,14 +48,6 @@
       {
         "id": "urn:ngm:class:asset-interoperability",
         "label": "Asset Interoperability"
-      },
-      {
-        "id": "urn:ngm:class:decentralized-ownership",
-        "label": "Decentralized Ownership"
-      },
-      {
-        "id": "urn:ngm:class:permissioned-access",
-        "label": "Permissioned Access"
       },
       {
         "id": "urn:ngm:class:avatar-portability",

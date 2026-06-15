@@ -82,7 +82,7 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:sensor-transducer",
+        "@id": "urn:ngm:class:sensor",
         "label": "Sensor Transducer"
       },
       {
@@ -120,7 +120,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:embedded-system",
+        "@id": "urn:ngm:class:embedded-systems",
         "label": "Embedded System"
       },
       {

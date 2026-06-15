@@ -23,57 +23,145 @@ public:: true
   "definition": "Credential issuance is the process by which an authoritative entity — an issuer — creates, signs, and delivers a structured attestation about a subject's attributes, qualifications, or identity to that subject or to a designated holder. In the W3C Verifiable Credentials model, issuance involves binding claims to a subject's decentralised identifier using the issuer's cryptographic key, producing a tamper-evident credential that the holder can present to verifiers without returning to the issuer. The issuance process encompasses schema selection, claim population, signature generation, and delivery, and may be implemented with varying degrees of issuer privacy, holder binding strength, and revocability.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:identity-management",
+      "label": "Identity Management"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:decentralized-identifiers", "label": "Decentralized Identifiers"},
-      {"@id": "urn:ngm:class:credential-schema", "label": "Credential Schema"},
-      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:oauth2", "label": "OAuth 2.0"},
-      {"@id": "urn:ngm:class:selective-disclosure", "label": "Selective Disclosure"}
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      },
+      {
+        "@id": "urn:ngm:class:credential-schema",
+        "label": "Credential Schema"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:oauth2",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:credential-verification", "label": "Credential Verification"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:digital-trust", "label": "Digital Trust"},
-      {"@id": "urn:ngm:class:credential-presentation", "label": "Credential Presentation"}
+      {
+        "@id": "urn:ngm:class:credential-verification",
+        "label": "Credential Verification"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:digital-trust",
+        "label": "Digital Trust"
+      },
+      {
+        "@id": "urn:ngm:class:credential-presentation",
+        "label": "Credential Presentation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"},
-      {"@id": "urn:ngm:class:key-management", "label": "Key Management"},
-      {"@id": "urn:ngm:class:identity-proofing", "label": "Identity Proofing"}
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:identity-proofing",
+        "label": "Identity Proofing"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:credential-revocation", "label": "Credential Revocation"},
-      {"@id": "urn:ngm:class:holder-binding", "label": "Holder Binding"}
+      {
+        "@id": "urn:ngm:class:credential-revocation",
+        "label": "Credential Revocation"
+      },
+      {
+        "@id": "urn:ngm:class:holder-binding",
+        "label": "Holder Binding"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:trust-framework", "label": "Trust Framework"}
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:w3c-verifiable-credentials", "label": "W3C Verifiable Credentials Data Model"},
-      {"@id": "urn:ngm:class:openid-for-verifiable-credential-issuance", "label": "OpenID for Verifiable Credential Issuance"},
-      {"@id": "urn:ngm:class:sd-jwt-vc", "label": "SD-JWT VC"}
+      {
+        "@id": "urn:ngm:class:w3-c-verifiable-credentials",
+        "label": "W3C Verifiable Credentials Data Model"
+      },
+      {
+        "@id": "urn:ngm:class:sd-jwt-vc",
+        "label": "SD-JWT VC"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:federated-identity", "label": "Federated Identity"}
+      {
+        "@id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:governance", "label": "Governance"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-wallet", "label": "Digital Wallet"},
-      {"@id": "urn:ngm:class:eidas", "label": "eIDAS"}
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:eidas",
+        "label": "eIDAS"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:vc-issuance", "label": "VC Issuance"},
-    {"@id": "urn:ngm:class:digital-credential-issuance", "label": "Digital Credential Issuance"}
+    {
+      "@id": "urn:ngm:class:vc-issuance",
+      "label": "VC Issuance"
+    },
+    {
+      "@id": "urn:ngm:class:digital-credential-issuance",
+      "label": "Digital Credential Issuance"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

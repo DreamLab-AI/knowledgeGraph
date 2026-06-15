@@ -36,7 +36,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:ai-and-machine-learning",
+        "id": "urn:ngm:class:ai-machine-learning",
         "label": "AI & Machine Learning"
       },
       {
@@ -45,10 +45,6 @@
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:ml-operations",
-        "label": "ML Operations"
-      },
       {
         "id": "urn:ngm:class:model-deployment",
         "label": "Model Deployment"

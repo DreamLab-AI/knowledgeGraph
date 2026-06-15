@@ -485,7 +485,10 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
     ],
     "hasPart": [
       {
@@ -493,39 +496,11 @@ public:: true
         "label": "Answer AI"
       },
       {
-        "@id": "urn:ngm:class:callback-system",
-        "label": "Callback System"
-      },
-      {
-        "@id": "urn:ngm:class:data-block-api",
-        "label": "DataBlock API"
-      },
-      {
-        "@id": "urn:ngm:class:fastai-library",
-        "label": "fastai Library"
-      },
-      {
-        "@id": "urn:ngm:class:learner-abstraction",
-        "label": "Learner Abstraction"
-      },
-      {
-        "@id": "urn:ngm:class:nbdev",
-        "label": "nbdev"
-      },
-      {
-        "@id": "urn:ngm:class:practical-deep-learning-for-coders-course",
-        "label": "Practical Deep Learning for Coders Course"
-      },
-      {
         "@id": "urn:ngm:class:ulmfi-t",
         "label": "ULMFiT"
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:cuda-gpu",
-        "label": "CUDA GPU"
-      },
       {
         "@id": "urn:ngm:class:jupyter-notebook",
         "label": "Jupyter Notebook"
@@ -549,54 +524,18 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:beginner-friendly-deep-learning",
-        "label": "Beginner-Friendly Deep Learning"
-      },
-      {
-        "@id": "urn:ngm:class:code-first-education",
-        "label": "Code-First Education"
-      },
-      {
-        "@id": "urn:ngm:class:democratised-deep-learning",
-        "label": "Democratised Deep Learning"
-      },
-      {
-        "@id": "urn:ngm:class:production-ready-defaults",
-        "label": "Production-Ready Defaults"
-      },
-      {
         "@id": "urn:ngm:class:rapid-prototyping",
         "label": "Rapid Prototyping"
-      },
-      {
-        "@id": "urn:ngm:class:transfer-learning-workflows",
-        "label": "Transfer Learning Workflows"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:1cycle-learning-rate-schedule",
+        "@id": "urn:ngm:class:learning-rate-schedule",
         "label": "1cycle Learning Rate Schedule"
       },
       {
-        "@id": "urn:ngm:class:discriminative-learning-rates",
-        "label": "Discriminative Learning Rates"
-      },
-      {
-        "@id": "urn:ngm:class:frozen-unfrozen-fine-tuning",
-        "label": "Frozen-Unfrozen Fine-Tuning"
-      },
-      {
-        "@id": "urn:ngm:class:layered-api-design",
-        "label": "Layered API Design"
-      },
-      {
-        "@id": "urn:ngm:class:mixup-augmentation",
+        "@id": "urn:ngm:class:mixup",
         "label": "Mixup Augmentation"
-      },
-      {
-        "@id": "urn:ngm:class:test-time-augmentation",
-        "label": "Test-Time Augmentation"
       },
       {
         "@id": "urn:ngm:class:label-smoothing",
@@ -613,16 +552,8 @@ public:: true
         "label": "Convolutional Neural Network"
       },
       {
-        "@id": "urn:ngm:class:cosine-annealing",
-        "label": "Cosine Annealing"
-      },
-      {
         "@id": "urn:ngm:class:re-lu-activation",
         "label": "ReLU Activation"
-      },
-      {
-        "@id": "urn:ngm:class:res-net",
-        "label": "ResNet"
       },
       {
         "@id": "urn:ngm:class:u-net",
@@ -637,18 +568,6 @@ public:: true
       {
         "@id": "urn:ngm:class:answer-ai",
         "label": "Answer AI"
-      },
-      {
-        "@id": "urn:ngm:class:claudette",
-        "label": "Claudette"
-      },
-      {
-        "@id": "urn:ngm:class:fast-html",
-        "label": "FastHTML"
-      },
-      {
-        "@id": "urn:ngm:class:fsdp-qlo-ra",
-        "label": "FSDP-QLoRA"
       },
       {
         "@id": "urn:ngm:class:hugging-face-accelerate",
@@ -669,20 +588,12 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:audio-classification",
-        "label": "Audio Classification"
-      },
-      {
         "@id": "urn:ngm:class:collaborative-systems-modality-filtering",
         "label": "Collaborative Filtering"
       },
       {
         "@id": "urn:ngm:class:medical-imaging",
         "label": "Medical Imaging"
-      },
-      {
-        "@id": "urn:ngm:class:tabular-learning",
-        "label": "Tabular Learning"
       },
       {
         "@id": "urn:ngm:class:computer-vision",
@@ -709,10 +620,6 @@ public:: true
       {
         "@id": "urn:ngm:class:neur-ips",
         "label": "NeurIPS"
-      },
-      {
-        "@id": "urn:ngm:class:pep-8",
-        "label": "PEP 8"
       },
       {
         "@id": "urn:ngm:class:semantic-versioning",

@@ -63,47 +63,111 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:encoder-network", "label": "Encoder Network"},
-      {"@id": "urn:ngm:class:decoder-network", "label": "Decoder Network"},
-      {"@id": "urn:ngm:class:latent-space", "label": "Latent Space"}
+      {
+        "@id": "urn:ngm:class:encoder",
+        "label": "Encoder Network"
+      },
+      {
+        "@id": "urn:ngm:class:decoder-network",
+        "label": "Decoder Network"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-latent-space",
+        "label": "Latent Space"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:reconstruction-loss", "label": "Reconstruction Loss"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"}
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
-      {"@id": "urn:ngm:class:dimensionality-reduction", "label": "Dimensionality Reduction"},
-      {"@id": "urn:ngm:class:data-denoising", "label": "Data Denoising"},
-      {"@id": "urn:ngm:class:representation-learning", "label": "Representation Learning"}
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:neural-network-latent-space", "label": "Neural Network Latent Space"},
-      {"@id": "urn:ngm:class:unsupervised-learning", "label": "Unsupervised Learning"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+      {
+        "@id": "urn:ngm:class:neural-network-latent-space",
+        "label": "Neural Network Latent Space"
+      },
+      {
+        "@id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:nonlinear-dimensionality-reduction", "label": "Nonlinear Dimensionality Reduction"}
+      {
+        "@id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Nonlinear Dimensionality Reduction"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
-      {"@id": "urn:ngm:class:principal-component-analysis", "label": "Principal Component Analysis"}
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "@id": "urn:ngm:class:principal-component-analysis",
+        "label": "Principal Component Analysis"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:variational-autoencoders", "label": "Variational Autoencoders"},
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
-      {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+      {
+        "@id": "urn:ngm:class:variational-autoencoders",
+        "label": "Variational Autoencoders"
+      },
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:autoassociative-neural-network", "label": "Autoassociative Neural Network"}
+    {
+      "@id": "urn:ngm:class:autoassociative-neural-network",
+      "label": "Autoassociative Neural Network"
+    }
   ],
   "quality": 0.72,
   "provenance": {

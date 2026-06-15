@@ -24,58 +24,117 @@ public:: true
   "domain": "infrastructure",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:systems-engineering", "label": "Systems Engineering"}
+    {
+      "@id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering"
+    }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:dependability-engineering", "label": "Dependability Engineering"},
-    {"@id": "urn:ngm:class:system-reliability", "label": "System Reliability"}
+    {
+      "@id": "urn:ngm:class:dependability-engineering",
+      "label": "Dependability Engineering"
+    },
+    {
+      "@id": "urn:ngm:class:system-reliability",
+      "label": "System Reliability"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:fault-tree-analysis", "label": "Fault Tree Analysis"},
-      {"@id": "urn:ngm:class:fmea", "label": "FMEA"},
-      {"@id": "urn:ngm:class:accelerated-life-testing", "label": "Accelerated Life Testing"},
-      {"@id": "urn:ngm:class:reliability-block-diagram", "label": "Reliability Block Diagram"}
+      {
+        "@id": "urn:ngm:class:fault-tree-analysis",
+        "label": "Fault Tree Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:fmea",
+        "label": "FMEA"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:probabilistic-risk-assessment", "label": "Probabilistic Risk Assessment"},
-      {"@id": "urn:ngm:class:failure-data-collection", "label": "Failure Data Collection"}
+      {
+        "@id": "urn:ngm:class:probabilistic-risk-assessment",
+        "label": "Probabilistic Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:data-collection",
+        "label": "Failure Data Collection"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"},
-      {"@id": "urn:ngm:class:safety-assurance", "label": "Safety Assurance"}
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      },
+      {
+        "@id": "urn:ngm:class:safety-assurance",
+        "label": "Safety Assurance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:weibull-analysis", "label": "Weibull Analysis"},
-      {"@id": "urn:ngm:class:markov-chains", "label": "Markov Chains"},
-      {"@id": "urn:ngm:class:monte-carlo-simulation", "label": "Monte Carlo Simulation"}
+      {
+        "@id": "urn:ngm:class:markov-chain",
+        "label": "Markov Chains"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-simulation",
+        "label": "Monte Carlo Simulation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"},
-      {"@id": "urn:ngm:class:maintenance-engineering", "label": "Maintenance Engineering"}
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:redundancy", "label": "Redundancy"},
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"}
+      {
+        "@id": "urn:ngm:class:redundancy",
+        "label": "Redundancy"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iec-61508", "label": "IEC 61508"},
-      {"@id": "urn:ngm:class:mil-hdbk-217", "label": "MIL-HDBK-217"},
-      {"@id": "urn:ngm:class:iso-26262", "label": "ISO 26262"}
+      {
+        "@id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "@id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:safety-engineering", "label": "Safety Engineering"},
-      {"@id": "urn:ngm:class:quality-engineering", "label": "Quality Engineering"}
+      {
+        "@id": "urn:ngm:class:safety-engineering",
+        "label": "Safety Engineering"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:site-reliability-engineering", "label": "Site Reliability Engineering"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:chaos-engineering", "label": "Chaos Engineering"}
+      {
+        "@id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:chaos-engineering",
+        "label": "Chaos Engineering"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:availability", "label": "Availability"},
-      {"@id": "urn:ngm:class:maintainability", "label": "Maintainability"}
+      {
+        "@id": "urn:ngm:class:availability",
+        "label": "Availability"
+      }
     ]
   },
   "quality": 0.74,

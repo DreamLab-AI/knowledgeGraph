@@ -53,59 +53,125 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:hardware-abstraction-layer-hal", "label": "Hardware Abstraction Layer (HAL)"},
-      {"@id": "urn:ngm:class:device-driver", "label": "Device Driver"},
-      {"@id": "urn:ngm:class:firmware-interface", "label": "Firmware Interface"}
-    ],
-    "partOf": [
-      {"@id": "urn:ngm:class:operating-system-architecture", "label": "Operating System Architecture"},
-      {"@id": "urn:ngm:class:system-software-stack", "label": "System Software Stack"}
+      {
+        "@id": "urn:ngm:class:hardware-abstraction-layer-hal",
+        "label": "Hardware Abstraction Layer (HAL)"
+      },
+      {
+        "@id": "urn:ngm:class:device-drivers",
+        "label": "Device Driver"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:device-driver", "label": "Device Driver"},
-      {"@id": "urn:ngm:class:firmware", "label": "Firmware"},
-      {"@id": "urn:ngm:class:instruction-set-architecture", "label": "Instruction Set Architecture"}
+      {
+        "@id": "urn:ngm:class:device-drivers",
+        "label": "Device Driver"
+      },
+      {
+        "@id": "urn:ngm:class:firmware",
+        "label": "Firmware"
+      },
+      {
+        "@id": "urn:ngm:class:instruction-set-architecture",
+        "label": "Instruction Set Architecture"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:software-portability", "label": "Software Portability"},
-      {"@id": "urn:ngm:class:operating-system", "label": "Operating System"},
-      {"@id": "urn:ngm:class:cross-platform-development", "label": "Cross-Platform Development"},
-      {"@id": "urn:ngm:class:virtualisation", "label": "Virtualisation"}
+      {
+        "@id": "urn:ngm:class:software-portability",
+        "label": "Software Portability"
+      },
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-development",
+        "label": "Cross-Platform Development"
+      },
+      {
+        "@id": "urn:ngm:class:virtualisation",
+        "label": "Virtualisation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:application-programming-interface", "label": "Application Programming Interface"},
-      {"@id": "urn:ngm:class:posix", "label": "POSIX"}
+      {
+        "@id": "urn:ngm:class:application-programming-interface",
+        "label": "Application Programming Interface"
+      },
+      {
+        "@id": "urn:ngm:class:posix",
+        "label": "POSIX"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:graphics-api", "label": "Graphics API"},
-      {"@id": "urn:ngm:class:driver-software", "label": "Driver Software"},
-      {"@id": "urn:ngm:class:system-call-interface", "label": "System Call Interface"},
-      {"@id": "urn:ngm:class:unified-extensible-firmware-interface", "label": "Unified Extensible Firmware Interface"}
+      {
+        "@id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      },
+      {
+        "@id": "urn:ngm:class:driver-software",
+        "label": "Driver Software"
+      },
+      {
+        "@id": "urn:ngm:class:system-call-interface",
+        "label": "System Call Interface"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
-      {"@id": "urn:ngm:class:real-time-operating-system", "label": "Real-Time Operating System"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:bare-metal-programming", "label": "Bare-Metal Programming"},
-      {"@id": "urn:ngm:class:hardware-specific-optimisation", "label": "Hardware-Specific Optimisation"}
+      {
+        "@id": "urn:ngm:class:bare-metal-programming",
+        "label": "Bare-Metal Programming"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:ai-accelerator", "label": "AI Accelerator"},
-      {"@id": "urn:ngm:class:webgpu", "label": "WebGPU"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:ai-accelerator",
+        "label": "AI Accelerator"
+      },
+      {
+        "@id": "urn:ngm:class:webgpu",
+        "label": "WebGPU"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:software-abstraction", "label": "Software Abstraction"},
-      {"@id": "urn:ngm:class:hardware", "label": "Hardware"},
-      {"@id": "urn:ngm:class:memory-management", "label": "Memory Management"},
-      {"@id": "urn:ngm:class:interrupt-handling", "label": "Interrupt Handling"}
+      {
+        "@id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:hardware-abstraction-layer-hal", "label": "Hardware Abstraction Layer (HAL)"},
-    {"@id": "urn:ngm:class:platform-abstraction-layer", "label": "Platform Abstraction Layer"}
+    {
+      "@id": "urn:ngm:class:hardware-abstraction-layer-hal",
+      "label": "Hardware Abstraction Layer (HAL)"
+    },
+    {
+      "@id": "urn:ngm:class:platform-abstraction-layer",
+      "label": "Platform Abstraction Layer"
+    }
   ],
   "quality": 0.74,
   "provenance": {

@@ -71,7 +71,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:global-coordinate-system",
+        "id": "urn:ngm:class:coordinate-system",
         "label": "Global Coordinate System"
       }
     ],
@@ -87,7 +87,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:quaternion",
+        "id": "urn:ngm:class:quaternion-math",
         "label": "Quaternion"
       },
       {
@@ -101,7 +101,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:simultaneous-localization-and-mapping",
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
         "label": "Simultaneous Localization and Mapping"
       },
       {
@@ -115,11 +115,11 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:ros-tf-framework",
+        "id": "urn:ngm:class:ros",
         "label": "ROS TF Framework"
       },
       {
-        "id": "urn:ngm:class:denavit-hartenberg-convention",
+        "id": "urn:ngm:class:denavit-hartenberg-parameters",
         "label": "Denavit-Hartenberg Convention"
       }
     ],

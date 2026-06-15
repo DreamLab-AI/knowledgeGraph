@@ -28,10 +28,6 @@
       {
         "id": "urn:ngm:class:shared-workspace",
         "label": "Shared Workspace"
-      },
-      {
-        "id": "urn:ngm:class:presence-mechanism",
-        "label": "Presence Mechanism"
       }
     ],
     "requires": [
@@ -81,20 +77,12 @@
       {
         "id": "urn:ngm:class:co-located-collaboration",
         "label": "Co-Located Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:centralised-workflow",
-        "label": "Centralised Workflow"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
-      },
-      {
-        "id": "urn:ngm:class:ai-assisted-collaboration",
-        "label": "AI-Assisted Collaboration"
       },
       {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
@@ -147,10 +135,6 @@
       {
         "id": "urn:ngm:class:groupware",
         "label": "Groupware"
-      },
-      {
-        "id": "urn:ngm:class:social-software",
-        "label": "Social Software"
       }
     ]
   },

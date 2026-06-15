@@ -22,16 +22,12 @@
         "label": "zk-SNARK"
       },
       {
-        "id": "urn:ngm:class:zk-stark",
+        "id": "urn:ngm:class:zk-starks",
         "label": "zk-STARK"
       },
       {
         "id": "urn:ngm:class:merkle-proof",
         "label": "Merkle Proof"
-      },
-      {
-        "id": "urn:ngm:class:proof-of-knowledge",
-        "label": "Proof of Knowledge"
       }
     ],
     "requires": [
@@ -102,7 +98,7 @@
         "label": "Commitment Scheme"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -112,7 +108,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:validity-rollup",
+        "id": "urn:ngm:class:rollup",
         "label": "Validity Rollup"
       },
       {
@@ -136,7 +132,7 @@
         "label": "Erasure Coding"
       },
       {
-        "id": "urn:ngm:class:accumulator",
+        "id": "urn:ngm:class:cryptographic-accumulator",
         "label": "Accumulator"
       }
     ]

@@ -32,10 +32,6 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:stereo-camera-rig",
-        "label": "Stereo Camera Rig"
-      },
-      {
         "id": "urn:ngm:class:image-synchronisation",
         "label": "Image Synchronisation"
       },
@@ -113,10 +109,6 @@
       {
         "id": "urn:ngm:class:feature-matching",
         "label": "Feature Matching"
-      },
-      {
-        "id": "urn:ngm:class:image-rectification",
-        "label": "Image Rectification"
       },
       {
         "id": "urn:ngm:class:disparity-map",

@@ -167,15 +167,11 @@ public:: true
       {
         "@id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
-      },
-      {
-        "@id": "urn:ngm:class:3-d-dataset",
-        "label": "3D Dataset"
       }
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:manual-3-d-modeling",
+        "@id": "urn:ngm:class:3-d-modeling",
         "label": "Manual 3D Modeling"
       },
       {

@@ -40,7 +40,7 @@
         "label": "Identity Provider"
       },
       {
-        "id": "urn:ngm:class:tls-ssl",
+        "id": "urn:ngm:class:tls",
         "label": "TLS/SSL"
       }
     ],
@@ -70,7 +70,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:zero-trust-security",
+        "id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero-Trust Security"
       },
       {
@@ -90,10 +90,6 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:llm-gateway",
-        "label": "LLM Gateway"
-      },
-      {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
       }
@@ -108,7 +104,7 @@
         "label": "OAuth 2.0"
       },
       {
-        "id": "urn:ngm:class:json-web-token",
+        "id": "urn:ngm:class:json-data-interchange-format-web-token",
         "label": "JSON Web Token"
       }
     ],

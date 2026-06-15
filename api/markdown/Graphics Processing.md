@@ -81,10 +81,6 @@ public:: true
       {
         "@id": "urn:ngm:class:shader",
         "label": "Shader"
-      },
-      {
-        "@id": "urn:ngm:class:graphics-memory",
-        "label": "Graphics Memory"
       }
     ],
     "enables": [
@@ -127,10 +123,6 @@ public:: true
       {
         "@id": "urn:ngm:class:vertex-processing",
         "label": "Vertex Processing"
-      },
-      {
-        "@id": "urn:ngm:class:fragment-processing",
-        "label": "Fragment Processing"
       },
       {
         "@id": "urn:ngm:class:compute-shader",

@@ -19,10 +19,6 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:algo-token",
-        "label": "ALGO Token"
-      },
-      {
         "id": "urn:ngm:class:distributed-ledger",
         "label": "Distributed Ledger"
       }
@@ -55,14 +51,6 @@
     ],
     "dependsOn": [],
     "implements": [
-      {
-        "id": "urn:ngm:class:algorand-virtual-machine",
-        "label": "Algorand Virtual Machine"
-      },
-      {
-        "id": "urn:ngm:class:arc-token-standard",
-        "label": "ARC Token Standard"
-      },
       {
         "id": "urn:ngm:class:on-chain-governance",
         "label": "On-chain Governance"
@@ -108,15 +96,11 @@
       {
         "id": "urn:ngm:class:cryptographic-sortition",
         "label": "Cryptographic Sortition"
-      },
-      {
-        "id": "urn:ngm:class:teal-bytecode",
-        "label": "TEAL Bytecode"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:cross-border-payment",
+        "id": "urn:ngm:class:cross-border-payments",
         "label": "Cross-Border Payment"
       },
       {
@@ -124,7 +108,7 @@
         "label": "Stablecoin"
       },
       {
-        "id": "urn:ngm:class:real-world-asset-tokenization",
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
         "label": "Real-World Asset Tokenization"
       },
       {

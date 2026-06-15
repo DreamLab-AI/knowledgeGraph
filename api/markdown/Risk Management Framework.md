@@ -23,51 +23,117 @@ public:: true
   "definition": "A Risk Management Framework is a structured methodology for identifying, assessing, treating, and monitoring risks to an organisation's objectives, assets, or systems. It provides a repeatable process and governance structure that links risk appetite, control selection, and assurance activities into a coherent programme aligned with recognised standards such as ISO 31000, NIST RMF, or the NIST AI RMF.",
   "domain": "governance",
   "maturity": "mature",
-  "subClassOf": {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:risk-management",
+    "label": "Risk Management"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:risk-register", "label": "Risk Register"},
-      {"@id": "urn:ngm:class:control-catalogue", "label": "Control Catalogue"},
-      {"@id": "urn:ngm:class:risk-appetite-statement", "label": "Risk Appetite Statement"},
-      {"@id": "urn:ngm:class:continuous-monitoring", "label": "Continuous Monitoring"}
+      {
+        "@id": "urn:ngm:class:risk-register",
+        "label": "Risk Register"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-monitoring",
+        "label": "Continuous Monitoring"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:risk-mitigation", "label": "Risk Mitigation"},
-      {"@id": "urn:ngm:class:risk-identification", "label": "Risk Identification"}
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:risk-mitigation",
+        "label": "Risk Mitigation"
+      },
+      {
+        "@id": "urn:ngm:class:risk-identification",
+        "label": "Risk Identification"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:compliance", "label": "Compliance"},
-      {"@id": "urn:ngm:class:audit", "label": "Audit"},
-      {"@id": "urn:ngm:class:residual-risk-acceptance", "label": "Residual Risk Acceptance"}
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:audit",
+        "label": "Audit"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:iso-31000", "label": "ISO 31000"},
-      {"@id": "urn:ngm:class:nist-cybersecurity-framework", "label": "NIST Cybersecurity Framework"},
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"}
+      {
+        "@id": "urn:ngm:class:iso-31000",
+        "label": "ISO 31000"
+      },
+      {
+        "@id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:nist", "label": "NIST"},
-      {"@id": "urn:ngm:class:security-framework", "label": "Security Framework"},
-      {"@id": "urn:ngm:class:threat-modelling", "label": "Threat Modelling"},
-      {"@id": "urn:ngm:class:grc-platform", "label": "GRC Platform"}
+      {
+        "@id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "@id": "urn:ngm:class:security-framework",
+        "label": "Security Framework"
+      },
+      {
+        "@id": "urn:ngm:class:threat-modelling",
+        "label": "Threat Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:grc-platform",
+        "label": "GRC Platform"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"},
-      {"@id": "urn:ngm:class:organisational-resilience", "label": "Organisational Resilience"}
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:organisational-resilience",
+        "label": "Organisational Resilience"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:supply-chain-risk-management", "label": "Supply Chain Risk Management"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-risk-management",
+        "label": "Supply Chain Risk Management"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:information-security-management-system", "label": "Information Security Management System"},
-      {"@id": "urn:ngm:class:business-continuity-planning", "label": "Business Continuity Planning"}
+      {
+        "@id": "urn:ngm:class:information-security-management-system",
+        "label": "Information Security Management System"
+      },
+      {
+        "@id": "urn:ngm:class:business-continuity-planning",
+        "label": "Business Continuity Planning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:enterprise-risk-management-framework", "label": "Enterprise Risk Management Framework"},
-    {"@id": "urn:ngm:class:integrated-risk-management", "label": "Integrated Risk Management"}
+    {
+      "@id": "urn:ngm:class:enterprise-risk-management-framework",
+      "label": "Enterprise Risk Management Framework"
+    },
+    {
+      "@id": "urn:ngm:class:integrated-risk-management",
+      "label": "Integrated Risk Management"
+    }
   ],
   "quality": 0.75,
   "provenance": {

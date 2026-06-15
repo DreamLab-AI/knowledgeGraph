@@ -75,61 +75,151 @@ public:: true
   },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:private-key", "label": "Private Key"},
-      {"@id": "urn:ngm:class:public-key", "label": "Public Key"},
-      {"@id": "urn:ngm:class:finite-field-arithmetic", "label": "Finite Field Arithmetic"},
-      {"@id": "urn:ngm:class:random-number-generator", "label": "Random Number Generator"}
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "@id": "urn:ngm:class:public-key",
+        "label": "Public Key"
+      },
+      {
+        "@id": "urn:ngm:class:finite-field-arithmetic",
+        "label": "Finite Field Arithmetic"
+      },
+      {
+        "@id": "urn:ngm:class:random-number-generator",
+        "label": "Random Number Generator"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"},
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:non-repudiation", "label": "Non-Repudiation"},
-      {"@id": "urn:ngm:class:transaction-signing", "label": "Transaction Signing"}
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-verification",
+        "label": "Cryptographic Verification"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-signing",
+        "label": "Transaction Signing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:elliptic-curve-parameters", "label": "Elliptic Curve Parameters"},
-      {"@id": "urn:ngm:class:cryptographically-secure-prng", "label": "Cryptographically Secure PRNG"}
+      {
+        "@id": "urn:ngm:class:elliptic-curve-parameters",
+        "label": "Elliptic Curve Parameters"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
-      {"@id": "urn:ngm:class:digital-signature-standard", "label": "Digital Signature Standard"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature-standard",
+        "label": "Digital Signature Standard"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:elliptic-curve-discrete-logarithm-problem", "label": "Elliptic Curve Discrete Logarithm Problem"},
-      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"}
+      {
+        "@id": "urn:ngm:class:elliptic-curve-discrete-logarithm-problem",
+        "label": "Elliptic Curve Discrete Logarithm Problem"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:bitcoin", "label": "Bitcoin"},
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
-      {"@id": "urn:ngm:class:tls", "label": "TLS"},
-      {"@id": "urn:ngm:class:code-signing", "label": "Code Signing"}
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "@id": "urn:ngm:class:code-signing",
+        "label": "Code Signing"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist", "label": "NIST"},
-      {"@id": "urn:ngm:class:ansi-x9-62", "label": "ANSI X9.62"},
-      {"@id": "urn:ngm:class:sec-standards", "label": "SEC Standards"}
+      {
+        "@id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "@id": "urn:ngm:class:sec-standards",
+        "label": "SEC Standards"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rsa-signature", "label": "RSA Signature"},
-      {"@id": "urn:ngm:class:eddsa", "label": "EdDSA"},
-      {"@id": "urn:ngm:class:schnorr-signature", "label": "Schnorr Signature"}
+      {
+        "@id": "urn:ngm:class:rsa-signature",
+        "label": "RSA Signature"
+      },
+      {
+        "@id": "urn:ngm:class:eddsa",
+        "label": "EdDSA"
+      },
+      {
+        "@id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-signature-algorithm", "label": "Digital Signature Algorithm"},
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
-      {"@id": "urn:ngm:class:secp256k1", "label": "secp256k1"},
-      {"@id": "urn:ngm:class:p-256-curve", "label": "P-256 Curve"}
+      {
+        "@id": "urn:ngm:class:digital-signature-algorithm",
+        "label": "Digital Signature Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:secp256k1",
+        "label": "secp256k1"
+      },
+      {
+        "@id": "urn:ngm:class:p-256-curve",
+        "label": "P-256 Curve"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:pki", "label": "Public Key Infrastructure"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:elliptic-curve-digital-signature-algorithm", "label": "Elliptic Curve Digital Signature Algorithm"}
+    {
+      "@id": "urn:ngm:class:elliptic-curve-digital-signature-algorithm",
+      "label": "Elliptic Curve Digital Signature Algorithm"
+    }
   ],
   "quality": 0.8,
   "provenance": {

@@ -157,11 +157,11 @@ alias:: ModelArchitecture
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:rule-based-system",
+        "@id": "urn:ngm:class:rule-based-systems",
         "label": "Rule-Based System"
       },
       {
-        "@id": "urn:ngm:class:probabilistic-graphical-model",
+        "@id": "urn:ngm:class:graphical-model",
         "label": "Probabilistic Graphical Model"
       }
     ],

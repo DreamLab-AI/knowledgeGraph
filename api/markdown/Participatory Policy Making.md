@@ -60,14 +60,11 @@ public:: true
     }
   ],
   "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:policy-legitimacy",
-        "label": "Policy Legitimacy"
-      }
-    ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:democratic-governance", "label": "Democratic Governance"}
+      {
+        "@id": "urn:ngm:class:democratic-governance",
+        "label": "Democratic Governance"
+      }
     ]
   },
   "quality": 0.35,

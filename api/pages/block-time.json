@@ -26,12 +26,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:difficulty-adjustment-algorithm",
+        "id": "urn:ngm:class:difficulty-adjustment",
         "label": "Difficulty Adjustment Algorithm"
-      },
-      {
-        "id": "urn:ngm:class:block-interval",
-        "label": "Block Interval"
       }
     ],
     "requires": [
@@ -60,10 +56,6 @@
       {
         "id": "urn:ngm:class:transaction-finality",
         "label": "Transaction Finality"
-      },
-      {
-        "id": "urn:ngm:class:network-throughput",
-        "label": "Network Throughput"
       },
       {
         "id": "urn:ngm:class:uncle-block",
@@ -122,7 +114,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:chain-security",
+        "id": "urn:ngm:class:blockchain-security",
         "label": "Chain Security"
       },
       {
@@ -132,7 +124,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-iec-23257",
+        "id": "urn:ngm:class:iso-iec-23257-2021",
         "label": "ISO/IEC 23257"
       },
       {
@@ -144,10 +136,6 @@
       {
         "id": "urn:ngm:class:blockchain-protocol",
         "label": "Blockchain Protocol"
-      },
-      {
-        "id": "urn:ngm:class:network-synchrony-model",
-        "label": "Network Synchrony Model"
       }
     ],
     "relatedTo": [

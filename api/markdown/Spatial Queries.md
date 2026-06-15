@@ -65,12 +65,6 @@ public:: true
         "@id": "urn:ngm:class:database-query",
         "label": "Database Query"
       }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:location-based-search",
-        "label": "Location Based Search"
-      }
     ]
   },
   "quality": 0.35,

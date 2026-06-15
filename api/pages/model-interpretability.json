@@ -84,22 +84,14 @@
         "label": "AI Regulation"
       },
       {
-        "id": "urn:ngm:class:medical-decision-support",
+        "id": "urn:ngm:class:clinical-decision-support",
         "label": "Medical Decision Support"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:shapley-additive-explanations",
-        "label": "SHAP"
-      },
-      {
         "id": "urn:ngm:class:lime",
         "label": "LIME"
-      },
-      {
-        "id": "urn:ngm:class:saliency-map",
-        "label": "Saliency Map"
       },
       {
         "id": "urn:ngm:class:attention-mechanism",
@@ -112,7 +104,7 @@
         "label": "Fairness"
       },
       {
-        "id": "urn:ngm:class:algorithmic-bias-detection",
+        "id": "urn:ngm:class:algorithmic-bias",
         "label": "Algorithmic Bias Detection"
       },
       {

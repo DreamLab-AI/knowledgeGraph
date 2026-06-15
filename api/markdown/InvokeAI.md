@@ -62,7 +62,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       },
       {
@@ -92,7 +92,7 @@ public:: true
         "label": "Outpainting"
       },
       {
-        "@id": "urn:ngm:class:local-inference",
+        "@id": "urn:ngm:class:inference",
         "label": "Local Inference"
       }
     ],
@@ -114,22 +114,14 @@ public:: true
         "label": "Textual Inversion"
       },
       {
-        "@id": "urn:ngm:class:clip-text-encoder",
+        "@id": "urn:ngm:class:text-encoder",
         "label": "CLIP Text Encoder"
       }
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:node-based-workflow-editor",
+        "@id": "urn:ngm:class:node-based-editor",
         "label": "Node-Based Workflow Editor"
-      },
-      {
-        "@id": "urn:ngm:class:unified-canvas",
-        "label": "Unified Canvas"
-      },
-      {
-        "@id": "urn:ngm:class:model-manager",
-        "label": "Model Manager"
       }
     ],
     "contrastsWith": [
@@ -138,11 +130,7 @@ public:: true
         "label": "Automatic1111"
       },
       {
-        "@id": "urn:ngm:class:comfyui",
-        "label": "ComfyUI"
-      },
-      {
-        "@id": "urn:ngm:class:midjourney",
+        "@id": "urn:ngm:class:midjourney-text-to-image-service",
         "label": "Midjourney"
       }
     ],
@@ -170,7 +158,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:creative-ai-tools",
+        "@id": "urn:ngm:class:creative-tools",
         "label": "Creative AI Tools"
       },
       {

@@ -41,11 +41,11 @@
         "label": "Free-Viewpoint Video"
       },
       {
-        "id": "urn:ngm:class:immersive-media-production",
+        "id": "urn:ngm:class:media-production",
         "label": "Immersive Media Production"
       },
       {
-        "id": "urn:ngm:class:synthetic-training-data-generation",
+        "id": "urn:ngm:class:synthetic-data-generation",
         "label": "Synthetic Training Data Generation"
       }
     ],
@@ -62,11 +62,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:traditional-3d-modelling",
-        "label": "Traditional 3D Modelling"
-      },
-      {
-        "id": "urn:ngm:class:stereo-reconstruction",
+        "id": "urn:ngm:class:3-d-reconstruction",
         "label": "Stereo Reconstruction"
       }
     ],
@@ -131,11 +127,7 @@
         "label": "Photogrammetry"
       },
       {
-        "id": "urn:ngm:class:image-based-rendering",
-        "label": "Image-Based Rendering"
-      },
-      {
-        "id": "urn:ngm:class:3d-scene-reconstruction",
+        "id": "urn:ngm:class:3-d-scene-reconstruction",
         "label": "3D Scene Reconstruction"
       }
     ]

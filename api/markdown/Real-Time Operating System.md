@@ -24,59 +24,123 @@ alias:: Real Time Operating System
   "definition": "A Real-Time Operating System (RTOS) is an operating system designed to service computational tasks within guaranteed, bounded time constraints, providing temporal determinism that makes it the foundational software substrate for safety-critical and time-sensitive embedded applications. RTOSes implement priority-based preemptive scheduling, bounded interrupt latency, and synchronisation primitives (semaphores, mutexes, message queues) that ensure predictable worst-case task-switching behaviour irrespective of system load. They are classified as hard real-time — where any deadline miss constitutes a system failure — or soft real-time, where occasional misses cause graceful degradation rather than catastrophic failure. Deployed in medical devices, industrial controllers, automotive electronics, avionics, and robotics, RTOSes underpin every domain in which a missed computational deadline can cause physical harm, financial loss, or mission failure.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:operating-system", "label": "Operating System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:operating-system",
+      "label": "Operating System"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:task-scheduler", "label": "Task Scheduler"},
-      {"@id": "urn:ngm:class:interrupt-handler", "label": "Interrupt Handler"},
-      {"@id": "urn:ngm:class:memory-management-unit", "label": "Memory Management Unit"}
+      {
+        "@id": "urn:ngm:class:interrupt-handler",
+        "label": "Interrupt Handler"
+      },
+      {
+        "@id": "urn:ngm:class:memory-management-unit",
+        "label": "Memory Management Unit"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:embedded-processor", "label": "Embedded Processor"},
-      {"@id": "urn:ngm:class:deterministic-scheduling", "label": "Deterministic Scheduling"},
-      {"@id": "urn:ngm:class:worst-case-execution-time", "label": "Worst-Case Execution Time"}
+      {
+        "@id": "urn:ngm:class:deterministic-scheduling",
+        "label": "Deterministic Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:worst-case-execution-time",
+        "label": "Worst-Case Execution Time"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:sub-millisecond-latency", "label": "Sub-Millisecond Latency"},
-      {"@id": "urn:ngm:class:real-time", "label": "Real Time"},
-      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"},
-      {"@id": "urn:ngm:class:real-time-control", "label": "Real-Time Control"},
-      {"@id": "urn:ngm:class:safety-critical-systems", "label": "Safety-Critical Systems"}
+      {
+        "@id": "urn:ngm:class:sub-millisecond-latency",
+        "label": "Sub-Millisecond Latency"
+      },
+      {
+        "@id": "urn:ngm:class:real-time",
+        "label": "Real Time"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      },
+      {
+        "@id": "urn:ngm:class:safety-critical-systems",
+        "label": "Safety-Critical Systems"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:preemptive-scheduling", "label": "Preemptive Scheduling"},
-      {"@id": "urn:ngm:class:priority-inversion-prevention", "label": "Priority Inversion Prevention"},
-      {"@id": "urn:ngm:class:inter-process-communication", "label": "Inter-Process Communication"}
+      {
+        "@id": "urn:ngm:class:inter-process-communication",
+        "label": "Inter-Process Communication"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:latency", "label": "Latency"},
-      {"@id": "urn:ngm:class:embedded-ai-frameworks", "label": "Embedded AI Frameworks"},
-      {"@id": "urn:ngm:class:semaphore", "label": "Semaphore"},
-      {"@id": "urn:ngm:class:message-queue", "label": "Message Queue"}
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-ai-frameworks",
+        "label": "Embedded AI Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:robotic-system", "label": "Robotic System"},
-      {"@id": "urn:ngm:class:motor-driver", "label": "Motor Driver"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+      {
+        "@id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      },
+      {
+        "@id": "urn:ngm:class:motor-driver",
+        "label": "Motor Driver"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
-      {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"},
-      {"@id": "urn:ngm:class:freertos", "label": "FreeRTOS"},
-      {"@id": "urn:ngm:class:zephyr-rtos", "label": "Zephyr RTOS"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:general-purpose-operating-system", "label": "General-Purpose Operating System"},
-      {"@id": "urn:ngm:class:soft-real-time-system", "label": "Soft Real-Time System"}
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:freertos",
+        "label": "FreeRTOS"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:edge-ai", "label": "Edge AI"},
-      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"}
+      {
+        "@id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      },
+      {
+        "@id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:rtos", "label": "RTOS"}
+    {
+      "@id": "urn:ngm:class:rtos",
+      "label": "RTOS"
+    }
   ],
   "quality": 0.74,
   "provenance": {

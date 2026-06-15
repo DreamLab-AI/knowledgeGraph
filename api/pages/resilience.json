@@ -73,10 +73,6 @@
       {
         "id": "urn:ngm:class:blockchain-scalability",
         "label": "Blockchain Scalability"
-      },
-      {
-        "id": "urn:ngm:class:fragility",
-        "label": "Fragility"
       }
     ],
     "bridgesTo": [
@@ -124,7 +120,7 @@
         "label": "Security by Design"
       },
       {
-        "id": "urn:ngm:class:system-property",
+        "id": "urn:ngm:class:property",
         "label": "System Property"
       }
     ]

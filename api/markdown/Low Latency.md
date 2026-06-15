@@ -24,56 +24,146 @@ alias:: low-latency
   "definition": "Low latency is an engineering design property characterising systems in which the elapsed time between an input event and the corresponding system response is minimised to meet real-time interaction requirements. It is a cross-cutting concern spanning network topology, compute placement, operating-system scheduling, memory hierarchy, and hardware design. Achievable thresholds are domain-dependent — sub-100 µs in high-frequency trading, under 20 ms for vestibulo-ocular reflex alignment in extended-reality headsets, and under 150 ms for interactive video — and are reached through a combination of edge computing, kernel-bypass networking, hardware acceleration, and optimised serialisation. As a foundational property of distributed infrastructure, low latency is a prerequisite for real-time AI inference, immersive spatial computing, autonomous robotics, and ultra-reliable industrial control.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:latency", "label": "Latency"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:latency",
+      "label": "Latency"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:low-latency-computing", "label": "Low-Latency Computing"},
-    {"@id": "urn:ngm:class:ultra-low-latency", "label": "Ultra-Low Latency"}
+    {
+      "@id": "urn:ngm:class:low-latency-computing",
+      "label": "Low-Latency Computing"
+    },
+    {
+      "@id": "urn:ngm:class:ultra-low-latency",
+      "label": "Ultra-Low Latency"
+    }
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:real-time", "label": "Real Time"},
-      {"@id": "urn:ngm:class:real-time-ai-inference", "label": "Real-Time AI Inference"},
-      {"@id": "urn:ngm:class:extended-reality-xr", "label": "Extended Reality (XR)"},
-      {"@id": "urn:ngm:class:high-frequency-trading", "label": "High-Frequency Trading"},
-      {"@id": "urn:ngm:class:autonomous-robotics", "label": "Autonomous Robotics"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"}
+      {
+        "@id": "urn:ngm:class:real-time",
+        "label": "Real Time"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-ai-inference",
+        "label": "Real-Time AI Inference"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "@id": "urn:ngm:class:high-frequency-trading",
+        "label": "High-Frequency Trading"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robotics",
+        "label": "Autonomous Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
-      {"@id": "urn:ngm:class:kernel-bypass-networking", "label": "Kernel-Bypass Networking"},
-      {"@id": "urn:ngm:class:fpga", "label": "FPGA"},
-      {"@id": "urn:ngm:class:rdma", "label": "RDMA"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:fpga",
+        "label": "FPGA"
+      },
+      {
+        "@id": "urn:ngm:class:rdma",
+        "label": "RDMA"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:network-topology-optimisation", "label": "Network Topology Optimisation"},
-      {"@id": "urn:ngm:class:co-location", "label": "Co-Location"},
-      {"@id": "urn:ngm:class:real-time-operating-system", "label": "Real-Time Operating System"}
+      {
+        "@id": "urn:ngm:class:network-topology-optimisation",
+        "label": "Network Topology Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:co-location",
+        "label": "Co-Location"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:network-latency", "label": "Network Latency"},
-      {"@id": "urn:ngm:class:propagation-delay", "label": "Propagation Delay"},
-      {"@id": "urn:ngm:class:queuing-delay", "label": "Queuing Delay"}
+      {
+        "@id": "urn:ngm:class:network-latency",
+        "label": "Network Latency"
+      },
+      {
+        "@id": "urn:ngm:class:propagation-delay",
+        "label": "Propagation Delay"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality Of Service"},
-      {"@id": "urn:ngm:class:5g", "label": "5G"},
-      {"@id": "urn:ngm:class:webrtc", "label": "WebRTC"},
-      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"},
-      {"@id": "urn:ngm:class:network-slicing", "label": "Network Slicing"}
+      {
+        "@id": "urn:ngm:class:quality-of-service",
+        "label": "Quality Of Service"
+      },
+      {
+        "@id": "urn:ngm:class:5g",
+        "label": "5G"
+      },
+      {
+        "@id": "urn:ngm:class:webrtc",
+        "label": "WebRTC"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "@id": "urn:ngm:class:network-slicing",
+        "label": "Network Slicing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:throughput", "label": "Throughput"},
-      {"@id": "urn:ngm:class:high-throughput-computing", "label": "High-Throughput Computing"}
+      {
+        "@id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      },
+      {
+        "@id": "urn:ngm:class:high-throughput-computing",
+        "label": "High-Throughput Computing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:edge-ai", "label": "Edge AI"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:tactile-internet", "label": "Tactile Internet"}
+      {
+        "@id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:tactile-internet",
+        "label": "Tactile Internet"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"},
-      {"@id": "urn:ngm:class:3gpp", "label": "3GPP"}
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:3gpp",
+        "label": "3GPP"
+      }
     ]
   },
   "quality": 0.74,

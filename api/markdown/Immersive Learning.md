@@ -58,20 +58,6 @@ public:: true
     "label": "Educational Technology"
   },
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:virtual-reality-training",
-        "label": "Virtual Reality Training"
-      },
-      {
-        "@id": "urn:ngm:class:augmented-reality-education",
-        "label": "Augmented Reality Education"
-      },
-      {
-        "@id": "urn:ngm:class:simulation-based-learning",
-        "label": "Simulation-Based Learning"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:extended-reality",
@@ -86,28 +72,10 @@ public:: true
         "label": "Spatial Computing"
       }
     ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:experiential-education",
-        "label": "Experiential Education"
-      },
-      {
-        "@id": "urn:ngm:class:skill-development",
-        "label": "Skill Development"
-      },
-      {
-        "@id": "urn:ngm:class:presence-based-engagement",
-        "label": "Presence-Based Engagement"
-      }
-    ],
     "dependsOn": [
       {
         "@id": "urn:ngm:class:head-mounted-display",
         "label": "Head-Mounted Display"
-      },
-      {
-        "@id": "urn:ngm:class:3d-environment-authoring",
-        "label": "3D Environment Authoring"
       }
     ],
     "uses": [
@@ -126,36 +94,20 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:medical-training",
-        "label": "Medical Training"
-      },
-      {
         "@id": "urn:ngm:class:corporate-training",
         "label": "Corporate Training"
-      },
-      {
-        "@id": "urn:ngm:class:professional-development",
-        "label": "Professional Development"
       }
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:e-learning",
+        "@id": "urn:ngm:class:online-learning",
         "label": "E-Learning"
-      },
-      {
-        "@id": "urn:ngm:class:classroom-instruction",
-        "label": "Classroom Instruction"
       }
     ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:metaverse",
         "label": "Metaverse"
-      },
-      {
-        "@id": "urn:ngm:class:artificial-intelligence-tutoring",
-        "label": "Artificial Intelligence Tutoring"
       }
     ],
     "relatedTo": [

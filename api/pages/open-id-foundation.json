@@ -49,18 +49,18 @@
         "label": "Open Banking"
       },
       {
-        "id": "urn:ngm:class:conformance-certification",
+        "id": "urn:ngm:class:standards-conformance",
         "label": "Conformance Certification"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:oauth-2",
+        "id": "urn:ngm:class:oauth-2-0",
         "label": "OAuth 2.0"
       },
       {
-        "id": "urn:ngm:class:json-web-token",
+        "id": "urn:ngm:class:json-data-interchange-format-web-token",
         "label": "JSON Web Token"
       }
     ],
@@ -70,7 +70,7 @@
         "label": "SAML"
       },
       {
-        "id": "urn:ngm:class:w3c-did",
+        "id": "urn:ngm:class:w3-c-did",
         "label": "W3C DID"
       }
     ],

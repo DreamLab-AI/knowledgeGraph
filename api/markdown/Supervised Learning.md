@@ -109,7 +109,7 @@ alias:: SupervisedLearning
         "label": "Loss Function"
       },
       {
-        "@id": "urn:ngm:class:labeled-dataset",
+        "@id": "urn:ngm:class:training-dataset",
         "label": "Labeled Dataset"
       },
       {

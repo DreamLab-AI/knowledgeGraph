@@ -85,7 +85,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:real-world-asset-tokenization",
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
         "label": "Real-World Asset Tokenization"
       },
       {
@@ -107,7 +107,7 @@
         "label": "Enterprise Smart Contracts"
       },
       {
-        "id": "urn:ngm:class:erc-20-token",
+        "id": "urn:ngm:class:erc-20-tokens",
         "label": "ERC-20 Token"
       }
     ],

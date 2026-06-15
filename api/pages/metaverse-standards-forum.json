@@ -92,7 +92,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:gltf",
+        "id": "urn:ngm:class:gltf-standard",
         "label": "glTF"
       },
       {
@@ -138,7 +138,7 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:open-standards-ecosystem",
+        "id": "urn:ngm:class:open-standards",
         "label": "Open Standards Ecosystem"
       }
     ],

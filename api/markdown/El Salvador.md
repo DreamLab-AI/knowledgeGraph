@@ -65,10 +65,6 @@ public:: true
       {
         "@id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin"
-      },
-      {
-        "@id": "urn:ngm:class:legal-tender-law",
-        "label": "Legal Tender Law"
       }
     ],
     "uses": [
@@ -113,15 +109,11 @@ public:: true
         "label": "Internet Connectivity"
       },
       {
-        "@id": "urn:ngm:class:public-key-cryptography",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:sovereign-entity",
-        "label": "Sovereign Entity"
-      },
       {
         "@id": "urn:ngm:class:monetary-policy",
         "label": "Monetary Policy"
@@ -173,12 +165,8 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:bitcoin-mining",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
         "label": "Bitcoin Mining"
-      },
-      {
-        "@id": "urn:ngm:class:crypto-tourism",
-        "label": "Crypto Tourism"
       }
     ]
   },

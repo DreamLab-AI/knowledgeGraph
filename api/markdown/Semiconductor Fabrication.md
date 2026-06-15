@@ -57,59 +57,13 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:photolithography",
-        "label": "Photolithography"
-      },
-      {
-        "@id": "urn:ngm:class:chemical-vapour-deposition",
-        "label": "Chemical Vapour Deposition"
-      },
-      {
-        "@id": "urn:ngm:class:ion-implantation",
-        "label": "Ion Implantation"
-      },
-      {
-        "@id": "urn:ngm:class:chemical-mechanical-planarisation",
-        "label": "Chemical Mechanical Planarisation"
-      },
-      {
-        "@id": "urn:ngm:class:atomic-layer-deposition",
-        "label": "Atomic Layer Deposition"
-      }
-    ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:cleanroom",
-        "label": "Cleanroom"
-      },
-      {
-        "@id": "urn:ngm:class:silicon-wafer",
-        "label": "Silicon Wafer"
-      },
-      {
-        "@id": "urn:ngm:class:extreme-ultraviolet-lithography",
-        "label": "Extreme Ultraviolet Lithography"
-      },
       {
         "@id": "urn:ngm:class:process-control",
         "label": "Process Control"
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:integrated-circuit",
-        "label": "Integrated Circuit"
-      },
-      {
-        "@id": "urn:ngm:class:microprocessor",
-        "label": "Microprocessor"
-      },
-      {
-        "@id": "urn:ngm:class:memory-chip",
-        "label": "Memory Chip"
-      },
       {
         "@id": "urn:ngm:class:gpu",
         "label": "GPU"
@@ -121,10 +75,6 @@ public:: true
         "label": "Supply Chain"
       },
       {
-        "@id": "urn:ngm:class:rare-earth-materials",
-        "label": "Rare Earth Materials"
-      },
-      {
         "@id": "urn:ngm:class:energy-consumption",
         "label": "Energy Consumption"
       }
@@ -133,17 +83,9 @@ public:: true
       {
         "@id": "urn:ngm:class:jedec",
         "label": "JEDEC"
-      },
-      {
-        "@id": "urn:ngm:class:semi-standards",
-        "label": "SEMI Standards"
       }
     ],
     "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:printed-circuit-board-assembly",
-        "label": "Printed Circuit Board Assembly"
-      },
       {
         "@id": "urn:ngm:class:additive-manufacturing",
         "label": "Additive Manufacturing"
@@ -151,11 +93,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:artificial-intelligence-hardware",
-        "label": "Artificial Intelligence Hardware"
-      },
-      {
-        "@id": "urn:ngm:class:quantum-computing",
+        "@id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
       },
       {
@@ -165,16 +103,8 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:moores-law",
+        "@id": "urn:ngm:class:moore-s-law",
         "label": "Moore's Law"
-      },
-      {
-        "@id": "urn:ngm:class:technology-node",
-        "label": "Technology Node"
-      },
-      {
-        "@id": "urn:ngm:class:yield-management",
-        "label": "Yield Management"
       }
     ]
   },

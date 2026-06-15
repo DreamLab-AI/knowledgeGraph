@@ -56,7 +56,7 @@ public:: true
       "label": "Security and Identity"
     }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",
@@ -83,7 +83,7 @@ public:: true
         "label": "Digital Signature"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -101,7 +101,7 @@ public:: true
         "label": "Blockchain"
       },
       {
-        "@id": "urn:ngm:class:watermarking",
+        "@id": "urn:ngm:class:watermarking-service",
         "label": "Watermarking"
       },
       {
@@ -119,11 +119,7 @@ public:: true
         "label": "Deepfake Detection"
       },
       {
-        "@id": "urn:ngm:class:media-integrity-verification",
-        "label": "Media Integrity Verification"
-      },
-      {
-        "@id": "urn:ngm:class:trust-chain-establishment",
+        "@id": "urn:ngm:class:trust-establishment",
         "label": "Trust Chain Establishment"
       }
     ],
@@ -133,18 +129,8 @@ public:: true
         "label": "C2PA Standard"
       },
       {
-        "@id": "urn:ngm:class:content-credentials",
+        "@id": "urn:ngm:class:c2-pa-content-credentials",
         "label": "Content Credentials"
-      }
-    ],
-    "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:coalition-for-content-provenance-and-authenticity",
-        "label": "Coalition for Content Provenance and Authenticity"
-      },
-      {
-        "@id": "urn:ngm:class:iptc-photo-metadata-standard",
-        "label": "IPTC Photo Metadata Standard"
       }
     ],
     "contrastsWith": [
@@ -165,10 +151,6 @@ public:: true
       {
         "@id": "urn:ngm:class:digital-rights-management",
         "label": "Digital Rights Management"
-      },
-      {
-        "@id": "urn:ngm:class:misinformation-mitigation",
-        "label": "Misinformation Mitigation"
       }
     ],
     "relatedTo": [

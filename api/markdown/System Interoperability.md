@@ -78,7 +78,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:technical-interoperability",
+        "@id": "urn:ngm:class:interoperability",
         "label": "Technical Interoperability"
       },
       {
@@ -88,10 +88,6 @@ public:: true
       {
         "@id": "urn:ngm:class:syntactic-interoperability",
         "label": "Syntactic Interoperability"
-      },
-      {
-        "@id": "urn:ngm:class:organisational-interoperability",
-        "label": "Organisational Interoperability"
       }
     ],
     "requires": [
@@ -110,10 +106,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:enterprise-connectivity",
-        "label": "Enterprise Connectivity"
-      },
-      {
         "@id": "urn:ngm:class:data-sharing",
         "label": "Data Sharing"
       },
@@ -128,12 +120,8 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:common-data-formats",
+        "@id": "urn:ngm:class:standardized-formats",
         "label": "Common Data Formats"
-      },
-      {
-        "@id": "urn:ngm:class:standard-protocols",
-        "label": "Standard Protocols"
       },
       {
         "@id": "urn:ngm:class:restful-api",
@@ -146,7 +134,7 @@ public:: true
         "label": "OpenAPI Specification"
       },
       {
-        "@id": "urn:ngm:class:iso-iec-standards",
+        "@id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC Standards"
       }
     ],

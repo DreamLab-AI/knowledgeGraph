@@ -105,16 +105,15 @@ alias:: Cross-Platform Digital Twins
         "label": "Collaborative Simulation"
       },
       {
-        "@id": "urn:ngm:class:multi-vendor-ecosystems",
-        "label": "Multi-Vendor Ecosystems"
-      },
-      {
         "@id": "urn:ngm:class:data-integration",
         "label": "Data Integration"
       }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-twin-technology", "label": "Digital Twin Technology"}
+      {
+        "@id": "urn:ngm:class:digital-twin-technology",
+        "label": "Digital Twin Technology"
+      }
     ]
   },
   "quality": 0.35,

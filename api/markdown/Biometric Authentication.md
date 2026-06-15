@@ -24,47 +24,120 @@ alias:: BiometricAuthentication
   "definition": "Biometric authentication is an identity verification method that uses measurable, unique physiological or behavioural characteristics of an individual — such as fingerprints, facial geometry, iris patterns, voice, or behavioural signals like keystroke dynamics — to confirm the claimed identity of a subject. Unlike password-based or token-based mechanisms, biometric credentials are inherent to the individual and cannot be forgotten, shared, or easily replicated, though they introduce irreversibility concerns because compromised biometric data cannot be reset. A complete system comprises enrolment, secure template storage (typically on-device in a secure enclave), a matching engine evaluated by false acceptance rate and false rejection rate, and presentation attack detection to counter spoofing. Biometric authentication underpins modern identity assurance frameworks such as FIDO2/WebAuthn, eIDAS 2.0 digital identity wallets, and biometric border control systems worldwide.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:authentication", "label": "Authentication"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:authentication",
+      "label": "Authentication"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:biometric-identity-verification", "label": "Biometric Identity Verification"}
+    {
+      "@id": "urn:ngm:class:biometric-identity-verification",
+      "label": "Biometric Identity Verification"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:biometric-verification", "label": "Biometric Verification"},
-      {"@id": "urn:ngm:class:biometric-binding-mechanism", "label": "Biometric Binding Mechanism"},
-      {"@id": "urn:ngm:class:secure-enclave", "label": "Secure Enclave"},
-      {"@id": "urn:ngm:class:presentation-attack-detection", "label": "Presentation Attack Detection"},
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"}
+      {
+        "@id": "urn:ngm:class:biometric-verification",
+        "label": "Biometric Verification"
+      },
+      {
+        "@id": "urn:ngm:class:biometric-binding-mechanism",
+        "label": "Biometric Binding Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclave"
+      },
+      {
+        "@id": "urn:ngm:class:presentation-attack-detection",
+        "label": "Presentation Attack Detection"
+      },
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-identity-verification", "label": "Digital Identity Verification"},
-      {"@id": "urn:ngm:class:multi-factor-authentication", "label": "Multi-Factor Authentication"},
-      {"@id": "urn:ngm:class:passwordless-authentication", "label": "Passwordless Authentication"},
-      {"@id": "urn:ngm:class:continuous-authentication", "label": "Continuous Authentication"},
-      {"@id": "urn:ngm:class:zero-trust-security", "label": "Zero Trust Security"}
+      {
+        "@id": "urn:ngm:class:digital-identity-verification",
+        "label": "Digital Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:passwordless-authentication",
+        "label": "Passwordless Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-authentication",
+        "label": "Continuous Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Security"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
-      {"@id": "urn:ngm:class:hardware-security-module", "label": "Hardware Security Module"}
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:fido2", "label": "FIDO2"},
-      {"@id": "urn:ngm:class:webauthn", "label": "WebAuthn"}
+      {
+        "@id": "urn:ngm:class:fido2",
+        "label": "FIDO2"
+      },
+      {
+        "@id": "urn:ngm:class:webauthn",
+        "label": "WebAuthn"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:password-authentication", "label": "Password Authentication"},
-      {"@id": "urn:ngm:class:token-based-authentication", "label": "Token-Based Authentication"}
+      {
+        "@id": "urn:ngm:class:password-authentication",
+        "label": "Password Authentication"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"},
-      {"@id": "urn:ngm:class:facial-recognition", "label": "Facial Recognition"},
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"}
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:facial-recognition",
+        "label": "Facial Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:on-device-inference", "label": "On-Device Inference"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:on-device-inference",
+        "label": "On-Device Inference"
+      }
     ]
   },
   "quality": 0.74,

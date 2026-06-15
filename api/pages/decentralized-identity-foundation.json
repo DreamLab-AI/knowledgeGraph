@@ -36,7 +36,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -65,11 +65,11 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:did-core",
+        "id": "urn:ngm:class:w3-c-did-core",
         "label": "DID Core"
       },
       {
-        "id": "urn:ngm:class:verifiable-credentials-data-model",
+        "id": "urn:ngm:class:w-3-c-verifiable-credentials-data-model",
         "label": "Verifiable Credentials Data Model"
       }
     ],
@@ -89,7 +89,7 @@
         "label": "EUDI Wallet"
       },
       {
-        "id": "urn:ngm:class:ai-identity-verification",
+        "id": "urn:ngm:class:identity-verification",
         "label": "AI Identity Verification"
       }
     ],
@@ -114,7 +114,7 @@
         "label": "World Wide Web Consortium"
       },
       {
-        "id": "urn:ngm:class:openid-foundation",
+        "id": "urn:ngm:class:open-id-foundation",
         "label": "OpenID Foundation"
       }
     ],

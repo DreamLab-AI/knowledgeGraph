@@ -24,65 +24,159 @@ public:: true
   "domain": "infrastructure",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
+    {
+      "@id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering"
+    }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:ci", "label": "CI"},
-    {"@id": "urn:ngm:class:automated-integration", "label": "Automated Integration"}
+    {
+      "@id": "urn:ngm:class:ci",
+      "label": "CI"
+    },
+    {
+      "@id": "urn:ngm:class:automated-integration",
+      "label": "Automated Integration"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:build-automation", "label": "Build Automation"},
-      {"@id": "urn:ngm:class:automated-testing", "label": "Automated Testing"},
-      {"@id": "urn:ngm:class:static-code-analysis", "label": "Static Code Analysis"},
-      {"@id": "urn:ngm:class:pipeline-as-code", "label": "Pipeline as Code"}
+      {
+        "@id": "urn:ngm:class:build-automation",
+        "label": "Build Automation"
+      },
+      {
+        "@id": "urn:ngm:class:automated-testing",
+        "label": "Automated Testing"
+      },
+      {
+        "@id": "urn:ngm:class:static-code-analysis",
+        "label": "Static Code Analysis"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:devops", "label": "DevOps"},
-      {"@id": "urn:ngm:class:software-delivery-lifecycle", "label": "Software Delivery Lifecycle"}
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "@id": "urn:ngm:class:software-delivery-lifecycle",
+        "label": "Software Delivery Lifecycle"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
-      {"@id": "urn:ngm:class:build-server", "label": "Build Server"}
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:build-server",
+        "label": "Build Server"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:continuous-delivery", "label": "Continuous Delivery"},
-      {"@id": "urn:ngm:class:continuous-deployment", "label": "Continuous Deployment"},
-      {"@id": "urn:ngm:class:code-review", "label": "Code Review"},
-      {"@id": "urn:ngm:class:trunk-based-development", "label": "Trunk-Based Development"}
+      {
+        "@id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-deployment",
+        "label": "Continuous Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      },
+      {
+        "@id": "urn:ngm:class:trunk-based-development",
+        "label": "Trunk-Based Development"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:git", "label": "Git"},
-      {"@id": "urn:ngm:class:containerisation", "label": "Containerisation"},
-      {"@id": "urn:ngm:class:test-driven-development", "label": "Test-Driven Development"}
+      {
+        "@id": "urn:ngm:class:git",
+        "label": "Git"
+      },
+      {
+        "@id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "@id": "urn:ngm:class:test-driven-development",
+        "label": "Test-Driven Development"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:shift-left-testing", "label": "Shift-Left Testing"},
-      {"@id": "urn:ngm:class:infrastructure-as-code", "label": "Infrastructure as Code"}
+      {
+        "@id": "urn:ngm:class:shift-left-testing",
+        "label": "Shift-Left Testing"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:github-actions", "label": "GitHub Actions"},
-      {"@id": "urn:ngm:class:jenkins", "label": "Jenkins"},
-      {"@id": "urn:ngm:class:docker", "label": "Docker"},
-      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"}
+      {
+        "@id": "urn:ngm:class:git-hub-actions",
+        "label": "GitHub Actions"
+      },
+      {
+        "@id": "urn:ngm:class:jenkins",
+        "label": "Jenkins"
+      },
+      {
+        "@id": "urn:ngm:class:docker-containerisation-platform",
+        "label": "Docker"
+      },
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:agile-software-development", "label": "Agile Software Development"},
-      {"@id": "urn:ngm:class:extreme-programming", "label": "Extreme Programming"},
-      {"@id": "urn:ngm:class:security-scanning", "label": "Security Scanning"}
+      {
+        "@id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Software Development"
+      },
+      {
+        "@id": "urn:ngm:class:extreme-programming",
+        "label": "Extreme Programming"
+      },
+      {
+        "@id": "urn:ngm:class:security-scanning",
+        "label": "Security Scanning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:waterfall-development", "label": "Waterfall Development"},
-      {"@id": "urn:ngm:class:big-bang-integration", "label": "Big-Bang Integration"}
+      {
+        "@id": "urn:ngm:class:waterfall-development",
+        "label": "Waterfall Development"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ci-cd-automation", "label": "CI-CD Automation"},
-      {"@id": "urn:ngm:class:feature-flags", "label": "Feature Flags"},
-      {"@id": "urn:ngm:class:observability", "label": "Observability"}
+      {
+        "@id": "urn:ngm:class:ci-cd-automation",
+        "label": "CI-CD Automation"
+      },
+      {
+        "@id": "urn:ngm:class:feature-flags",
+        "label": "Feature Flags"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"},
-      {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"}
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
     ]
   },
   "quality": 0.74,

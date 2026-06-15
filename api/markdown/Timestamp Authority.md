@@ -23,55 +23,119 @@ public:: true
   "definition": "A Timestamp Authority (TSA) is a trusted third party that issues cryptographically signed timestamps attesting that a particular piece of data existed at or before a specified point in time, in accordance with the RFC 3161 Internet X.509 Public Key Infrastructure Time-Stamp Protocol. The TSA receives a hash of the document or data, signs it together with the current time using its private key, and returns a TimeStampToken that can be independently verified by any party holding the TSA's public key certificate. Timestamp tokens are widely used in digital signature workflows to prove long-term validity—establishing that signatures were made before certificate revocation or expiry. Under eIDAS regulation in Europe, qualified TSAs form part of trust service infrastructure with legal standing equivalent to notarisation.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:certificate-authority",
+      "label": "Certificate Authority"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:timestamp", "label": "Timestamp"},
-      {"@id": "urn:ngm:class:digital-certificate", "label": "Digital Certificate"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:non-repudiation", "label": "Non-Repudiation"}
+      {
+        "@id": "urn:ngm:class:timestamp",
+        "label": "Timestamp"
+      },
+      {
+        "@id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:compliance-audit-trail", "label": "Compliance Audit Trail"},
-      {"@id": "urn:ngm:class:virtual-notary-service", "label": "Virtual Notary Service"},
-      {"@id": "urn:ngm:class:long-term-archival", "label": "Long-Term Archival"},
-      {"@id": "urn:ngm:class:document-authenticity", "label": "Document Authenticity"}
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-audit-trail",
+        "label": "Compliance Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-notary-service",
+        "label": "Virtual Notary Service"
+      },
+      {
+        "@id": "urn:ngm:class:long-term-archival",
+        "label": "Long-Term Archival"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"},
-      {"@id": "urn:ngm:class:x509-certificate", "label": "X.509 Certificate"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "@id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:digital-signature-verification", "label": "Digital Signature Verification"},
-      {"@id": "urn:ngm:class:archival-standards", "label": "Archival Standards"},
-      {"@id": "urn:ngm:class:electronic-contracting", "label": "Electronic Contracting"}
+      {
+        "@id": "urn:ngm:class:digital-signature-verification",
+        "label": "Digital Signature Verification"
+      },
+      {
+        "@id": "urn:ngm:class:archival-standards",
+        "label": "Archival Standards"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:secure-clock", "label": "Secure Clock"},
-      {"@id": "urn:ngm:class:trust-service-provider", "label": "Trust Service Provider"}
+      {
+        "@id": "urn:ngm:class:trust-service-provider",
+        "label": "Trust Service Provider"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:rfc-3161", "label": "RFC 3161"},
-      {"@id": "urn:ngm:class:eidas-regulation", "label": "eIDAS Regulation"}
+      {
+        "@id": "urn:ngm:class:eidas-regulation",
+        "label": "eIDAS Regulation"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:etsi", "label": "ETSI"},
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:blockchain-timestamping", "label": "Blockchain Timestamping"}
+      {
+        "@id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:governance", "label": "Governance"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:tsa", "label": "TSA"},
-    {"@id": "urn:ngm:class:trusted-timestamp-authority", "label": "Trusted Timestamp Authority"}
+    {
+      "@id": "urn:ngm:class:tsa",
+      "label": "TSA"
+    },
+    {
+      "@id": "urn:ngm:class:trusted-timestamp-authority",
+      "label": "Trusted Timestamp Authority"
+    }
   ],
   "quality": 0.72,
   "provenance": {

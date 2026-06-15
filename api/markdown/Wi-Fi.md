@@ -79,7 +79,7 @@ public:: true
         "label": "Network Communication"
       },
       {
-        "@id": "urn:ngm:class:wireless-local-area-network",
+        "@id": "urn:ngm:class:wireless-connectivity",
         "label": "Wireless Local Area Network"
       },
       {
@@ -89,7 +89,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:wireless-access-point",
+        "@id": "urn:ngm:class:wireless-connectivity",
         "label": "Wireless Access Point"
       },
       {
@@ -97,7 +97,7 @@ public:: true
         "label": "Radio Frequency Spectrum"
       },
       {
-        "@id": "urn:ngm:class:network-interface-controller",
+        "@id": "urn:ngm:class:network-interface-card",
         "label": "Network Interface Controller"
       }
     ],

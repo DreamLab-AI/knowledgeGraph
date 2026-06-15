@@ -134,16 +134,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:conflict-resolution-protocol",
+        "@id": "urn:ngm:class:conflict-resolution",
         "label": "Conflict Resolution Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:evidence-submission-system",
-        "label": "Evidence Submission System"
-      },
-      {
-        "@id": "urn:ngm:class:mediation-process",
-        "label": "Mediation Process"
       },
       {
         "@id": "urn:ngm:class:arbitration-process",
@@ -169,10 +161,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:automated-enforcement",
-        "label": "Automated Enforcement"
-      },
       {
         "@id": "urn:ngm:class:conflict-resolution",
         "label": "Conflict Resolution"

@@ -24,57 +24,124 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:bc-defi-and-economics", "label": "DeFi and Economics"}
+    {
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:ctoken", "label": "cToken"},
-      {"@id": "urn:ngm:class:compound-governor-bravo", "label": "Compound Governor Bravo"},
-      {"@id": "urn:ngm:class:interest-rate-model", "label": "Interest Rate Model"}
+      {
+        "@id": "urn:ngm:class:compound-governor-bravo",
+        "label": "Compound Governor Bravo"
+      },
+      {
+        "@id": "urn:ngm:class:interest-rate-model",
+        "label": "Interest Rate Model"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
-      {"@id": "urn:ngm:class:erc-20", "label": "ERC-20"}
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-asset-lending", "label": "Digital Asset Lending"},
-      {"@id": "urn:ngm:class:yield-farming", "label": "Yield Farming"},
-      {"@id": "urn:ngm:class:liquidity-mining", "label": "Liquidity Mining"},
-      {"@id": "urn:ngm:class:collateralised-borrowing", "label": "Collateralised Borrowing"}
+      {
+        "@id": "urn:ngm:class:digital-asset-lending",
+        "label": "Digital Asset Lending"
+      },
+      {
+        "@id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      },
+      {
+        "@id": "urn:ngm:class:collateralised-borrowing",
+        "label": "Collateralised Borrowing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:over-collateralisation", "label": "Over-Collateralisation"},
-      {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"},
-      {"@id": "urn:ngm:class:oracle", "label": "Oracle"}
+      {
+        "@id": "urn:ngm:class:over-collateralisation",
+        "label": "Over-Collateralisation"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:price-oracle", "label": "Price Oracle"},
-      {"@id": "urn:ngm:class:ethereum-virtual-machine", "label": "Ethereum Virtual Machine"}
+      {
+        "@id": "urn:ngm:class:price-oracle",
+        "label": "Price Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:maker-dao", "label": "MakerDAO"},
-      {"@id": "urn:ngm:class:aave", "label": "Aave"},
-      {"@id": "urn:ngm:class:uniswap", "label": "Uniswap"}
+      {
+        "@id": "urn:ngm:class:maker-dao",
+        "label": "MakerDAO"
+      },
+      {
+        "@id": "urn:ngm:class:aave",
+        "label": "Aave"
+      },
+      {
+        "@id": "urn:ngm:class:uniswap",
+        "label": "Uniswap"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:total-value-locked", "label": "Total Value Locked"},
-      {"@id": "urn:ngm:class:liquidation", "label": "Liquidation"},
-      {"@id": "urn:ngm:class:collateral-factor", "label": "Collateral Factor"},
-      {"@id": "urn:ngm:class:autonomous-market-operations", "label": "Autonomous Market Operations"},
-      {"@id": "urn:ngm:class:decentralised-finance-protocol", "label": "Decentralised Finance Protocol"}
+      {
+        "@id": "urn:ngm:class:total-value-locked",
+        "label": "Total Value Locked"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance Protocol"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:algorithmic-market-design", "label": "Algorithmic Market Design"},
-      {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"}
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:compound-finance", "label": "Compound Finance"}
+    {
+      "@id": "urn:ngm:class:compound-finance",
+      "label": "Compound Finance"
+    }
   ],
   "quality": 0.72,
   "provenance": {

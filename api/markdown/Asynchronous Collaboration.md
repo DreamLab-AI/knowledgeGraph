@@ -110,24 +110,12 @@ public:: true
       {
         "@id": "urn:ngm:class:version-control",
         "label": "Version Control"
-      },
-      {
-        "@id": "urn:ngm:class:documentation-systems",
-        "label": "Documentation Systems"
-      },
-      {
-        "@id": "urn:ngm:class:shared-repository",
-        "label": "Shared Repository"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:global-accessibility",
+        "@id": "urn:ngm:class:accessibility",
         "label": "Global Accessibility"
-      },
-      {
-        "@id": "urn:ngm:class:deep-work",
-        "label": "Deep Work"
       },
       {
         "@id": "urn:ngm:class:remote-work",
@@ -140,7 +128,7 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:collaborative-document-editing",
+        "@id": "urn:ngm:class:tc-0002-collaborative-document-editing",
         "label": "Collaborative Document Editing"
       },
       {
@@ -152,7 +140,7 @@ public:: true
         "label": "Issue Tracking"
       },
       {
-        "@id": "urn:ngm:class:project-management-system",
+        "@id": "urn:ngm:class:project-management",
         "label": "Project Management System"
       }
     ],
@@ -176,13 +164,13 @@ public:: true
         "label": "Operational Transformation"
       },
       {
-        "@id": "urn:ngm:class:distributed-version-control",
+        "@id": "urn:ngm:class:version-control",
         "label": "Distributed Version Control"
       }
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:team-coordination",
+        "@id": "urn:ngm:class:tc-0080-team-coordination",
         "label": "Team Coordination"
       },
       {
@@ -194,10 +182,6 @@ public:: true
       {
         "@id": "urn:ngm:class:iso",
         "label": "ISO"
-      },
-      {
-        "@id": "urn:ngm:class:rfc",
-        "label": "RFC"
       }
     ],
     "bridgesTo": [

@@ -117,24 +117,12 @@ public:: true
       {
         "@id": "urn:ngm:class:kalman-filter",
         "label": "Kalman Filter"
-      },
-      {
-        "@id": "urn:ngm:class:linear-time-invariant-system",
-        "label": "Linear Time-Invariant System"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:convolution",
         "label": "Convolution"
-      },
-      {
-        "@id": "urn:ngm:class:selective-attention",
-        "label": "Selective Attention"
-      },
-      {
-        "@id": "urn:ngm:class:hippo-initialisation",
-        "label": "HiPPO Initialisation"
       }
     ],
     "contrastsWith": [
@@ -179,7 +167,7 @@ public:: true
         "label": "Robotics Control"
       },
       {
-        "@id": "urn:ngm:class:autonomous-systems",
+        "@id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
       }
     ]

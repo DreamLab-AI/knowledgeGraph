@@ -56,17 +56,9 @@
       {
         "id": "urn:ngm:class:regulatory-sandbox",
         "label": "Regulatory Sandbox"
-      },
-      {
-        "id": "urn:ngm:class:suptech",
-        "label": "Supervisory Technology"
       }
     ],
     "dependsOn": [
-      {
-        "id": "urn:ngm:class:data-standardisation",
-        "label": "Data Standardisation"
-      },
       {
         "id": "urn:ngm:class:application-programming-interface",
         "label": "Application Programming Interface"
@@ -74,10 +66,6 @@
     ],
     "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:manual-compliance",
-        "label": "Manual Compliance"
-      },
       {
         "id": "urn:ngm:class:legal-technology",
         "label": "Legal Technology"

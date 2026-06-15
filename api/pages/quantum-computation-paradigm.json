@@ -38,10 +38,6 @@
       {
         "id": "urn:ngm:class:quantum-error-correction",
         "label": "Quantum Error Correction"
-      },
-      {
-        "id": "urn:ngm:class:cryogenic-control-systems",
-        "label": "Cryogenic Control Systems"
       }
     ],
     "enables": [
@@ -58,7 +54,7 @@
         "label": "Combinatorial Optimisation"
       },
       {
-        "id": "urn:ngm:class:molecular-simulation",
+        "id": "urn:ngm:class:scientific-simulation",
         "label": "Molecular Simulation"
       }
     ],

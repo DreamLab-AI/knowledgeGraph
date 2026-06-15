@@ -112,7 +112,7 @@ public:: true
         "label": "Authorisation"
       },
       {
-        "@id": "urn:ngm:class:threat-modeling",
+        "@id": "urn:ngm:class:threat-modelling",
         "label": "Threat Modeling"
       }
     ],
@@ -132,19 +132,15 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:secure-communication-protocols",
+        "@id": "urn:ngm:class:secure-communication",
         "label": "Secure Communication Protocols"
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:cia-triad",
-        "label": "CIA Triad"
-      },
       {
         "@id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Architecture"

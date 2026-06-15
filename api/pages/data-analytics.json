@@ -54,7 +54,7 @@
         "label": "Business Intelligence"
       },
       {
-        "id": "urn:ngm:class:decision-support-system",
+        "id": "urn:ngm:class:decision-support",
         "label": "Decision Support System"
       },
       {
@@ -123,7 +123,7 @@
         "label": "Big Data"
       },
       {
-        "id": "urn:ngm:class:etl",
+        "id": "urn:ngm:class:etl-pipeline",
         "label": "ETL"
       },
       {

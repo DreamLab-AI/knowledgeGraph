@@ -23,56 +23,145 @@ public:: true
   "definition": "Frontier AI denotes the most capable and computationally intensive artificial intelligence systems at the leading edge of current technical progress, typically characterised by unprecedentedly large training compute budgets, novel emergent capabilities, and performance that approaches or exceeds human expert level across diverse cognitive tasks. These systems, predominantly large language models and multimodal foundation models, exhibit qualitatively new behaviours not present in smaller predecessors, including in-context learning, chain-of-thought reasoning, and cross-domain generalisation. Their development is concentrated among a small number of resource-rich organisations, raising distinct safety, governance, and geopolitical considerations absent from earlier AI generations. Regulatory frameworks such as the EU AI Act and the UK AI Safety Institute use compute-threshold criteria to demarcate frontier systems from other AI, typically above 10^26 training FLOPs for general-purpose AI.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:large-scale-pretrained-foundation-model", "label": "Large-Scale Pretrained Foundation Model"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
+      "label": "Large-Scale Pretrained Foundation Model"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"},
-      {"@id": "urn:ngm:class:emergent-capabilities", "label": "Emergent Capabilities"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "@id": "urn:ngm:class:emergent-capabilities",
+        "label": "Emergent Capabilities"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"},
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
-      {"@id": "urn:ngm:class:large-scale-data-infrastructure", "label": "Large-Scale Data Infrastructure"}
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Large-Scale Data Infrastructure"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:agentic-ai-systems", "label": "Agentic AI Systems"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:history-and-path-to-agi", "label": "History and Path to AGI"},
-      {"@id": "urn:ngm:class:ai-enabled-scientific-discovery", "label": "AI-Enabled Scientific Discovery"}
+      {
+        "@id": "urn:ngm:class:agentic-ai-systems",
+        "label": "Agentic AI Systems"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:history-and-path-to-agi",
+        "label": "History and Path to AGI"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-discovery",
+        "label": "AI-Enabled Scientific Discovery"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:transformers", "label": "Transformers"},
-      {"@id": "urn:ngm:class:gpt", "label": "GPT"},
-      {"@id": "urn:ngm:class:scaling-laws", "label": "Scaling Laws"}
+      {
+        "@id": "urn:ngm:class:transformers",
+        "label": "Transformers"
+      },
+      {
+        "@id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      },
+      {
+        "@id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"},
-      {"@id": "urn:ngm:class:model-evaluation-results", "label": "Model Evaluation Results"},
-      {"@id": "urn:ngm:class:mechanistic-interpretability", "label": "Mechanistic Interpretability"},
-      {"@id": "urn:ngm:class:scalable-oversight", "label": "Scalable Oversight"}
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      },
+      {
+        "@id": "urn:ngm:class:mechanistic-interpretability",
+        "label": "Mechanistic Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:scalable-oversight",
+        "label": "Scalable Oversight"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:frontier-model-forum", "label": "Frontier Model Forum"},
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"}
+      {
+        "@id": "urn:ngm:class:frontier-model-forum",
+        "label": "Frontier Model Forum"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:narrow-ai", "label": "Narrow AI"},
-      {"@id": "urn:ngm:class:edge-ai", "label": "Edge AI"}
+      {
+        "@id": "urn:ngm:class:narrow-ai",
+        "label": "Narrow AI"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:existential-risk", "label": "Existential Risk"},
-      {"@id": "urn:ngm:class:compute-governance", "label": "Compute Governance"}
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:existential-risk",
+        "label": "Existential Risk"
+      },
+      {
+        "@id": "urn:ngm:class:compute-governance",
+        "label": "Compute Governance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:advanced-ai-systems", "label": "Advanced AI Systems"},
-    {"@id": "urn:ngm:class:state-of-the-art-ai", "label": "State-of-the-Art AI"}
+    {
+      "@id": "urn:ngm:class:advanced-ai-systems",
+      "label": "Advanced AI Systems"
+    },
+    {
+      "@id": "urn:ngm:class:state-of-the-art-ai",
+      "label": "State-of-the-Art AI"
+    }
   ],
   "quality": 0.74,
   "provenance": {

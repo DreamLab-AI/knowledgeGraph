@@ -26,7 +26,7 @@
         "label": "Supervised Fine Tuning"
       },
       {
-        "id": "urn:ngm:class:alignment-stage",
+        "id": "urn:ngm:class:alignment",
         "label": "Alignment Stage"
       }
     ],
@@ -40,7 +40,7 @@
         "label": "Distributed Training"
       },
       {
-        "id": "urn:ngm:class:training-data-corpus",
+        "id": "urn:ngm:class:training-data",
         "label": "Training Data Corpus"
       },
       {
@@ -58,7 +58,7 @@
         "label": "Fine Tuning"
       },
       {
-        "id": "urn:ngm:class:emergent-capability",
+        "id": "urn:ngm:class:emergent-capabilities",
         "label": "Emergent Capability"
       },
       {
@@ -68,7 +68,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:scaling-law",
+        "id": "urn:ngm:class:scaling-laws",
         "label": "Scaling Law"
       },
       {
@@ -132,7 +132,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:mixture-of-experts",
+        "id": "urn:ngm:class:mixture-of-experts-architecture",
         "label": "Mixture of Experts"
       },
       {

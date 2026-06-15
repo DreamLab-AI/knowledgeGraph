@@ -69,11 +69,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:end-effectors",
+        "@id": "urn:ngm:class:end-effector",
         "label": "End Effectors"
       },
       {
-        "@id": "urn:ngm:class:robot-controllers",
+        "@id": "urn:ngm:class:robot-control",
         "label": "Robot Controllers"
       }
     ],
@@ -107,7 +107,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:collaborative-robots",
+        "@id": "urn:ngm:class:collaborative-systems-modality-robot",
         "label": "Collaborative Robots"
       },
       {
@@ -117,11 +117,11 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:programmable-logic-controllers",
+        "@id": "urn:ngm:class:logic",
         "label": "Programmable Logic Controllers"
       },
       {
-        "@id": "urn:ngm:class:industrial-communication-protocols",
+        "@id": "urn:ngm:class:communication-protocols",
         "label": "Industrial Communication Protocols"
       }
     ],
@@ -157,12 +157,6 @@ public:: true
       {
         "@id": "urn:ngm:class:quality-control",
         "label": "Quality Control"
-      }
-    ],
-    "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:international-federation-of-robotics",
-        "label": "International Federation of Robotics"
       }
     ],
     "contrastsWith": [

@@ -44,7 +44,7 @@
         "label": "Graph Theory"
       },
       {
-        "id": "urn:ngm:class:heuristic-functions",
+        "id": "urn:ngm:class:heuristic-methods",
         "label": "Heuristic Functions"
       }
     ],
@@ -86,10 +86,6 @@
       {
         "id": "urn:ngm:class:random-sampling",
         "label": "Random Sampling"
-      },
-      {
-        "id": "urn:ngm:class:exhaustive-enumeration",
-        "label": "Exhaustive Enumeration"
       }
     ],
     "bridgesTo": [
@@ -106,10 +102,6 @@
       {
         "id": "urn:ngm:class:data-structures",
         "label": "Data Structures"
-      },
-      {
-        "id": "urn:ngm:class:priority-queues",
-        "label": "Priority Queues"
       }
     ],
     "supports": [
@@ -126,7 +118,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:complexity-theory",
+        "id": "urn:ngm:class:computational-complexity-theory",
         "label": "Complexity Theory"
       },
       {

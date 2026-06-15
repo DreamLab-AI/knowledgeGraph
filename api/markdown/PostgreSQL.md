@@ -23,52 +23,109 @@ public:: true
   "definition": "PostgreSQL is an open-source, ACID-compliant object-relational database management system (ORDBMS) that extends the SQL standard with features such as table inheritance, function overloading, and a rich type system including arrays, JSON, and user-defined types. It supports both relational and document storage paradigms, advanced indexing strategies including GIN, GiST, BRIN, and B-tree, and full-text search, making it a versatile choice for analytical and transactional workloads. Developed from the POSTGRES project at UC Berkeley (1986), it has been maintained as free software since 1996 and is widely regarded as the most standards-compliant open-source relational database.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:database-system", "label": "Database System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:database-system",
+      "label": "Database System"
+    }
+  ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:database-query", "label": "Database Query"},
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
-      {"@id": "urn:ngm:class:spatial-database", "label": "Spatial Database"},
-      {"@id": "urn:ngm:class:full-text-search", "label": "Full-Text Search"},
-      {"@id": "urn:ngm:class:multi-version-concurrency-control", "label": "Multi-Version Concurrency Control"},
-      {"@id": "urn:ngm:class:logical-replication", "label": "Logical Replication"}
+      {
+        "@id": "urn:ngm:class:database-query",
+        "label": "Database Query"
+      },
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-database",
+        "label": "Spatial Database"
+      },
+      {
+        "@id": "urn:ngm:class:full-text-search",
+        "label": "Full-Text Search"
+      },
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Multi-Version Concurrency Control"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-storage", "label": "Data Storage"},
-      {"@id": "urn:ngm:class:graph-database", "label": "Graph Database"},
-      {"@id": "urn:ngm:class:query-processor", "label": "Query Processor"},
-      {"@id": "urn:ngm:class:acid-transaction", "label": "ACID Transaction"},
-      {"@id": "urn:ngm:class:sql", "label": "SQL"},
-      {"@id": "urn:ngm:class:open-source-software", "label": "Open-Source Software"}
+      {
+        "@id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "@id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "@id": "urn:ngm:class:query-processor",
+        "label": "Query Processor"
+      },
+      {
+        "@id": "urn:ngm:class:sql",
+        "label": "SQL"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open-Source Software"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:analytical-processing", "label": "Analytical Processing"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:query-planner", "label": "Query Planner"},
-      {"@id": "urn:ngm:class:extension-system", "label": "Extension System"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:storage-engine", "label": "Storage Engine"}
+      {
+        "@id": "urn:ngm:class:storage-engine",
+        "label": "Storage Engine"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:b-tree-index", "label": "B-Tree Index"},
-      {"@id": "urn:ngm:class:write-ahead-log", "label": "Write-Ahead Log"}
+      {
+        "@id": "urn:ngm:class:b-tree-index",
+        "label": "B-Tree Index"
+      },
+      {
+        "@id": "urn:ngm:class:write-ahead-log",
+        "label": "Write-Ahead Log"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:mysql", "label": "MySQL"},
-      {"@id": "urn:ngm:class:nosql-database", "label": "NoSQL Database"}
+      {
+        "@id": "urn:ngm:class:nosql-database",
+        "label": "NoSQL Database"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:postgres", "label": "Postgres"}
+    {
+      "@id": "urn:ngm:class:postgres",
+      "label": "Postgres"
+    }
   ],
   "quality": 0.72,
   "provenance": {

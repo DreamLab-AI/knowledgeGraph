@@ -23,53 +23,115 @@ public:: true
   "definition": "Stranded energy monetisation is the practice of converting otherwise wasted or non-transmittable electricity—including curtailed renewable generation, flared natural gas, and grid-overflow surplus—into economic value through flexible, interruptible load processes such as Bitcoin mining or electrolyser hydrogen production. By co-locating computation or industrial loads at the energy source, it captures value that cannot reach load centres due to grid constraints.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:stranded-energy", "label": "Stranded Energy"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:stranded-energy",
+      "label": "Stranded Energy"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"},
-      {"@id": "urn:ngm:class:demand-response", "label": "Demand Response"},
-      {"@id": "urn:ngm:class:methane-abatement", "label": "Methane Abatement"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"},
-      {"@id": "urn:ngm:class:containerised-mining", "label": "Containerised Mining"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "@id": "urn:ngm:class:demand-response",
+        "label": "Demand Response"
+      },
+      {
+        "@id": "urn:ngm:class:methane-abatement",
+        "label": "Methane Abatement"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "@id": "urn:ngm:class:mining",
+        "label": "Containerised Mining"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:curtailed-renewable-energy", "label": "Curtailed Renewable Energy"},
-      {"@id": "urn:ngm:class:interruptible-load", "label": "Interruptible Load"},
-      {"@id": "urn:ngm:class:behind-the-meter-generation", "label": "Behind-the-Meter Generation"}
+      {
+        "@id": "urn:ngm:class:renewable-energy",
+        "label": "Curtailed Renewable Energy"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:methane-emissions-reduction", "label": "Methane Emissions Reduction"},
-      {"@id": "urn:ngm:class:renewable-energy-investment", "label": "Renewable Energy Investment"},
-      {"@id": "urn:ngm:class:grid-balancing", "label": "Grid Balancing"}
+      {
+        "@id": "urn:ngm:class:methane-emissions-reduction",
+        "label": "Methane Emissions Reduction"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy-investment",
+        "label": "Renewable Energy Investment"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:flared-gas-mining", "label": "Flared Gas Mining"},
-      {"@id": "urn:ngm:class:demand-response-mining", "label": "Demand Response Mining"},
-      {"@id": "urn:ngm:class:methane-mitigation-mining", "label": "Methane Mitigation Mining"}
+      {
+        "@id": "urn:ngm:class:demand-response-mining",
+        "label": "Demand Response Mining"
+      },
+      {
+        "@id": "urn:ngm:class:methane-mitigation-mining",
+        "label": "Methane Mitigation Mining"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:electricity-grid-infrastructure", "label": "Electricity Grid Infrastructure"},
-      {"@id": "urn:ngm:class:bitcoin-mining-hardware", "label": "Bitcoin Mining Hardware"},
-      {"@id": "urn:ngm:class:energy-price-arbitrage", "label": "Energy Price Arbitrage"}
+      {
+        "@id": "urn:ngm:class:grid-infrastructure",
+        "label": "Electricity Grid Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
+        "label": "Bitcoin Mining Hardware"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:grid-scale-energy-storage", "label": "Grid-Scale Energy Storage"},
-      {"@id": "urn:ngm:class:renewable-energy-curtailment", "label": "Renewable Energy Curtailment"}
+      {
+        "@id": "urn:ngm:class:grid-scale-energy-storage",
+        "label": "Grid-Scale Energy Storage"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy Curtailment"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"},
-      {"@id": "urn:ngm:class:sustainable-bitcoin-protocol", "label": "Sustainable Bitcoin Protocol"},
-      {"@id": "urn:ngm:class:green-hydrogen-production", "label": "Green Hydrogen Production"}
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-bitcoin-protocol",
+        "label": "Sustainable Bitcoin Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:green-hydrogen-production",
+        "label": "Green Hydrogen Production"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-sustainability", "label": "Blockchain Sustainability"},
-      {"@id": "urn:ngm:class:carbon-footprint-of-bitcoin", "label": "Carbon Footprint of Bitcoin"},
-      {"@id": "urn:ngm:class:energy-market-deregulation", "label": "Energy Market Deregulation"}
+      {
+        "@id": "urn:ngm:class:blockchain-sustainability",
+        "label": "Blockchain Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint of Bitcoin"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:wasted-energy-monetisation", "label": "Wasted Energy Monetisation"},
-    {"@id": "urn:ngm:class:curtailed-energy-utilisation", "label": "Curtailed Energy Utilisation"}
+    {
+      "@id": "urn:ngm:class:wasted-energy-monetisation",
+      "label": "Wasted Energy Monetisation"
+    },
+    {
+      "@id": "urn:ngm:class:curtailed-energy-utilisation",
+      "label": "Curtailed Energy Utilisation"
+    }
   ],
   "quality": 0.72,
   "provenance": {

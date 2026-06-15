@@ -64,7 +64,7 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:ar-reference-architecture",
+        "@id": "urn:ngm:class:reference-architecture",
         "label": "AR Reference Architecture"
       },
       {
@@ -74,10 +74,6 @@ public:: true
       {
         "@id": "urn:ngm:class:coordinate-reference-system",
         "label": "Coordinate Reference System"
-      },
-      {
-        "@id": "urn:ngm:class:ar-tracking-subsystem",
-        "label": "AR Tracking Subsystem"
       }
     ],
     "requires": [
@@ -94,27 +90,9 @@ public:: true
       {
         "@id": "urn:ngm:class:ar-interoperability",
         "label": "AR Interoperability"
-      },
-      {
-        "@id": "urn:ngm:class:multi-vendor-ar",
-        "label": "Multi-Vendor AR"
-      },
-      {
-        "@id": "urn:ngm:class:persistent-ar-content",
-        "label": "Persistent AR Content"
-      }
-    ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:augmented-reality-framework",
-        "label": "Augmented Reality Framework"
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:etsi-gs-arf-003",
-        "label": "ETSI GS ARF 003"
-      },
       {
         "@id": "urn:ngm:class:openxr",
         "label": "OpenXR"
@@ -122,10 +100,6 @@ public:: true
       {
         "@id": "urn:ngm:class:3gpp",
         "label": "3GPP"
-      },
-      {
-        "@id": "urn:ngm:class:xr-architecture",
-        "label": "XR Architecture"
       },
       {
         "@id": "urn:ngm:class:spatial-web",
@@ -148,7 +122,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:5g-network-slicing",
+        "@id": "urn:ngm:class:network-slicing",
         "label": "5G Network Slicing"
       },
       {

@@ -23,54 +23,143 @@ public:: true
   "definition": "Model Evaluation is the systematic process of measuring the performance, reliability, safety, and fitness-for-purpose of machine learning models against defined metrics, held-out datasets, and behavioural benchmarks. It spans quantitative metric computation (accuracy, F1, perplexity, BLEU, AUC-ROC), qualitative red-teaming and adversarial probing, and comparative benchmarking across standardised test suites. Evaluation drives deployment decisions, informs architectural iteration, and increasingly underpins regulatory conformity assessments demanded by AI governance frameworks. Both static offline evaluation and dynamic online evaluation in live production environments are within scope.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"},
-      {"@id": "urn:ngm:class:benchmarks", "label": "Benchmarks"},
-      {"@id": "urn:ngm:class:cross-validation", "label": "Cross-Validation"},
-      {"@id": "urn:ngm:class:test-dataset", "label": "Test Dataset"},
-      {"@id": "urn:ngm:class:confusion-matrix", "label": "Confusion Matrix"},
-      {"@id": "urn:ngm:class:statistical-hypothesis-testing", "label": "Statistical Hypothesis Testing"}
+      {
+        "@id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      },
+      {
+        "@id": "urn:ngm:class:benchmarks",
+        "label": "Benchmarks"
+      },
+      {
+        "@id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      },
+      {
+        "@id": "urn:ngm:class:test-dataset",
+        "label": "Test Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-hypothesis-testing",
+        "label": "Statistical Hypothesis Testing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-deployment", "label": "Model Deployment"},
-      {"@id": "urn:ngm:class:model-selection", "label": "Model Selection"},
-      {"@id": "urn:ngm:class:ai-safety-evaluation", "label": "AI Safety Evaluation"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety-evaluation",
+        "label": "AI Safety Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:labelled-data", "label": "Labelled Data"},
-      {"@id": "urn:ngm:class:ground-truth", "label": "Ground Truth"},
-      {"@id": "urn:ngm:class:experiment-tracking", "label": "Experiment Tracking"}
+      {
+        "@id": "urn:ngm:class:labelled-data",
+        "label": "Labelled Data"
+      },
+      {
+        "@id": "urn:ngm:class:ground-truth",
+        "label": "Ground Truth"
+      },
+      {
+        "@id": "urn:ngm:class:experiment-tracking",
+        "label": "Experiment Tracking"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"}
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"}
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:performance-metrics", "label": "Performance Metrics"},
-      {"@id": "urn:ngm:class:hyperparameter-tuning", "label": "Hyperparameter Tuning"},
-      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"},
-      {"@id": "urn:ngm:class:interpretability", "label": "Interpretability"},
-      {"@id": "urn:ngm:class:bias-and-fairness", "label": "Bias and Fairness"}
+      {
+        "@id": "urn:ngm:class:performance-metrics",
+        "label": "Performance Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "@id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:bias-and-fairness",
+        "label": "Bias and Fairness"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"}
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:audit-and-compliance", "label": "Audit and Compliance"}
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:audit-and-compliance",
+        "label": "Audit and Compliance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:model-assessment", "label": "Model Assessment"},
-    {"@id": "urn:ngm:class:model-testing", "label": "Model Testing"}
+    {
+      "@id": "urn:ngm:class:model-assessment",
+      "label": "Model Assessment"
+    },
+    {
+      "@id": "urn:ngm:class:model-testing",
+      "label": "Model Testing"
+    }
   ],
   "quality": 0.74,
   "provenance": {

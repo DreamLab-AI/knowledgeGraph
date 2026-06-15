@@ -114,10 +114,6 @@ public:: true
       {
         "@id": "urn:ngm:class:voting-round",
         "label": "Voting Round"
-      },
-      {
-        "@id": "urn:ngm:class:prepare-phase",
-        "label": "Prepare Phase"
       }
     ],
     "partOf": [
@@ -150,12 +146,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:consensus-safety",
+        "@id": "urn:ngm:class:consensus",
         "label": "Consensus Safety"
-      },
-      {
-        "@id": "urn:ngm:class:malicious-node-handling",
-        "label": "Malicious Node Handling"
       },
       {
         "@id": "urn:ngm:class:fault-tolerance",
@@ -182,7 +174,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:public-key-cryptography",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       },
       {

@@ -104,16 +104,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:information-augmentation",
-        "label": "Information Augmentation"
-      },
-      {
         "@id": "urn:ngm:class:spatial-annotation",
         "label": "Spatial Annotation"
-      },
-      {
-        "@id": "urn:ngm:class:virtual-object-placement",
-        "label": "Virtual Object Placement"
       }
     ]
   },

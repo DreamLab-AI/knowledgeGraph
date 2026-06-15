@@ -68,20 +68,12 @@ public:: true
         "label": "Electric Motor"
       },
       {
-        "@id": "urn:ngm:class:gear-transmission",
-        "label": "Gear Transmission"
-      },
-      {
         "@id": "urn:ngm:class:hydraulic-cylinder",
         "label": "Hydraulic Cylinder"
       },
       {
         "@id": "urn:ngm:class:pneumatic-actuator",
         "label": "Pneumatic Actuator"
-      },
-      {
-        "@id": "urn:ngm:class:piezoelectric-actuator",
-        "label": "Piezoelectric Actuator"
       }
     ],
     "partOf": [
@@ -90,7 +82,7 @@ public:: true
         "label": "Robot Joint"
       },
       {
-        "@id": "urn:ngm:class:robotic-manipulator",
+        "@id": "urn:ngm:class:manipulator",
         "label": "Robotic Manipulator"
       }
     ],
@@ -110,7 +102,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:robot-motion-planning",
+        "@id": "urn:ngm:class:motion-planning",
         "label": "Robot Motion Planning"
       },
       {
@@ -140,10 +132,6 @@ public:: true
       {
         "@id": "urn:ngm:class:series-elastic-actuation",
         "label": "Series Elastic Actuation"
-      },
-      {
-        "@id": "urn:ngm:class:direct-drive-actuation",
-        "label": "Direct Drive Actuation"
       }
     ],
     "uses": [
@@ -162,7 +150,7 @@ public:: true
         "label": "Human Robot Interaction"
       },
       {
-        "@id": "urn:ngm:class:robot-end-effector",
+        "@id": "urn:ngm:class:end-effector",
         "label": "Robot End-Effector"
       }
     ],
@@ -172,7 +160,7 @@ public:: true
         "label": "ISO 9283"
       },
       {
-        "@id": "urn:ngm:class:iec-61800",
+        "@id": "urn:ngm:class:iec-61800-adjustable-speed-electrical-power-drive-systems",
         "label": "IEC 61800 Adjustable Speed Electrical Power Drive Systems"
       }
     ],
@@ -210,7 +198,7 @@ public:: true
         "label": "Exoskeleton"
       },
       {
-        "@id": "urn:ngm:class:collaborative-robot",
+        "@id": "urn:ngm:class:collaborative-systems-modality-robot",
         "label": "Collaborative Robot"
       }
     ]

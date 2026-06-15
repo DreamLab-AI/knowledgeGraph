@@ -76,10 +76,6 @@
       {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
-      },
-      {
-        "id": "urn:ngm:class:disembodied-language-model",
-        "label": "Disembodied Language Model"
       }
     ],
     "bridgesTo": [
@@ -133,10 +129,6 @@
       {
         "id": "urn:ngm:class:cognitive-science",
         "label": "Cognitive Science"
-      },
-      {
-        "id": "urn:ngm:class:affordance-learning",
-        "label": "Affordance Learning"
       },
       {
         "id": "urn:ngm:class:world-model",

@@ -346,13 +346,12 @@ alias:: MotionControl
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"}
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      }
     ],
     "hasPart": [
-      {
-        "@id": "urn:ngm:class:cnc",
-        "label": "CNC"
-      },
       {
         "@id": "urn:ngm:class:ether-cat",
         "label": "EtherCAT"
@@ -362,16 +361,8 @@ alias:: MotionControl
         "label": "Feedforward Control"
       },
       {
-        "@id": "urn:ngm:class:motion-controller",
-        "label": "Motion Controller"
-      },
-      {
         "@id": "urn:ngm:class:pid-control",
         "label": "PID Control"
-      },
-      {
-        "@id": "urn:ngm:class:plc",
-        "label": "PLC"
       },
       {
         "@id": "urn:ngm:class:servo-drive",
@@ -392,20 +383,8 @@ alias:: MotionControl
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:deterministic-network",
-        "label": "Deterministic Network"
-      },
-      {
-        "@id": "urn:ngm:class:drive-amplifier",
-        "label": "Drive Amplifier"
-      },
-      {
         "@id": "urn:ngm:class:dynamic-model",
         "label": "Dynamic Model"
-      },
-      {
-        "@id": "urn:ngm:class:encoder-feedback",
-        "label": "Encoder Feedback"
       },
       {
         "@id": "urn:ngm:class:kinematic-model",
@@ -426,7 +405,7 @@ alias:: MotionControl
         "label": "Collaborative Robotics"
       },
       {
-        "@id": "urn:ngm:class:pick-and-place-automation",
+        "@id": "urn:ngm:class:pick-and-place",
         "label": "Pick and Place Automation"
       },
       {
@@ -436,10 +415,6 @@ alias:: MotionControl
       {
         "@id": "urn:ngm:class:robot-manipulation",
         "label": "Robot Manipulation"
-      },
-      {
-        "@id": "urn:ngm:class:semiconductor-lithography",
-        "label": "Semiconductor Lithography"
       }
     ],
     "implements": [
@@ -452,16 +427,8 @@ alias:: MotionControl
         "label": "Field Oriented Control"
       },
       {
-        "@id": "urn:ngm:class:friction-compensation",
-        "label": "Friction Compensation"
-      },
-      {
-        "@id": "urn:ngm:class:pid-tuning",
+        "@id": "urn:ngm:class:pid-control",
         "label": "PID Tuning"
-      },
-      {
-        "@id": "urn:ngm:class:time-optimal-trajectory",
-        "label": "Time-Optimal Trajectory"
       },
       {
         "@id": "urn:ngm:class:admittance-control",
@@ -474,36 +441,12 @@ alias:: MotionControl
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:cubic-splines",
-        "label": "Cubic Splines"
-      },
-      {
         "@id": "urn:ngm:class:ether-cat",
         "label": "EtherCAT"
       },
       {
-        "@id": "urn:ngm:class:g-code",
-        "label": "G-code"
-      },
-      {
-        "@id": "urn:ngm:class:heidenhain-en-dat",
-        "label": "Heidenhain EnDat"
-      },
-      {
         "@id": "urn:ngm:class:iec-61131-3",
         "label": "IEC 61131-3"
-      },
-      {
-        "@id": "urn:ngm:class:plcopen",
-        "label": "PLCopen"
-      },
-      {
-        "@id": "urn:ngm:class:quintic-splines",
-        "label": "Quintic Splines"
-      },
-      {
-        "@id": "urn:ngm:class:s-curve-profiles",
-        "label": "S-Curve Profiles"
       }
     ],
     "relatedTo": [
@@ -530,24 +473,12 @@ alias:: MotionControl
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:cnc-machine-tools",
-        "label": "CNC Machine Tools"
-      },
-      {
         "@id": "urn:ngm:class:collaborative-systems-modality-robot",
         "label": "Collaborative Robot"
       },
       {
         "@id": "urn:ngm:class:delta-robot",
         "label": "Delta Robot"
-      },
-      {
-        "@id": "urn:ngm:class:gantry-systems",
-        "label": "Gantry Systems"
-      },
-      {
-        "@id": "urn:ngm:class:manufacturing-robots",
-        "label": "Manufacturing Robots"
       },
       {
         "@id": "urn:ngm:class:scara-robot",
@@ -564,20 +495,12 @@ alias:: MotionControl
         "label": "IEC 61158"
       },
       {
-        "@id": "urn:ngm:class:iec-61800-7",
+        "@id": "urn:ngm:class:iec-61800-adjustable-speed-electrical-power-drive-systems",
         "label": "IEC 61800-7"
       },
       {
         "@id": "urn:ngm:class:ieee-1588-ptp",
         "label": "IEEE 1588 PTP"
-      },
-      {
-        "@id": "urn:ngm:class:iso-6983",
-        "label": "ISO 6983"
-      },
-      {
-        "@id": "urn:ngm:class:plcopen-motion-control",
-        "label": "PLCopen Motion Control"
       }
     ]
   },

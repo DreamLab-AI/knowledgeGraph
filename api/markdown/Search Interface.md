@@ -62,7 +62,7 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:user-query-experience",
+        "@id": "urn:ngm:class:user-experience",
         "label": "User Query Experience"
       }
     ],

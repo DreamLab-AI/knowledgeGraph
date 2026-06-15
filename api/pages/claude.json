@@ -70,11 +70,11 @@
         "label": "GPT 4"
       },
       {
-        "id": "urn:ngm:class:gemini",
+        "id": "urn:ngm:class:gemini-multimodal-language-model",
         "label": "Gemini"
       },
       {
-        "id": "urn:ngm:class:llama",
+        "id": "urn:ngm:class:meta-llama-model-family",
         "label": "Llama"
       }
     ],

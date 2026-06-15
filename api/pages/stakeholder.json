@@ -36,10 +36,6 @@
       {
         "id": "urn:ngm:class:civil-society",
         "label": "Civil Society"
-      },
-      {
-        "id": "urn:ngm:class:regulator",
-        "label": "Regulator"
       }
     ],
     "requires": [
@@ -74,10 +70,6 @@
       {
         "id": "urn:ngm:class:stakeholder-engagement",
         "label": "Stakeholder Engagement"
-      },
-      {
-        "id": "urn:ngm:class:power-dynamics",
-        "label": "Power Dynamics"
       }
     ],
     "implements": [
@@ -90,12 +82,7 @@
         "label": "Regulatory Compliance"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:shareholder",
-        "label": "Shareholder"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:distributed-collaboration",
@@ -135,10 +122,6 @@
       {
         "id": "urn:ngm:class:trust",
         "label": "Trust"
-      },
-      {
-        "id": "urn:ngm:class:social-licence",
-        "label": "Social Licence"
       }
     ]
   },

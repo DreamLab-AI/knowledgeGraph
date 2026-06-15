@@ -382,16 +382,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:design-ops",
-        "label": "DesignOps"
-      },
-      {
         "@id": "urn:ngm:class:design-systems",
         "label": "Design Systems"
-      },
-      {
-        "@id": "urn:ngm:class:design-tokens",
-        "label": "Design Tokens"
       },
       {
         "@id": "urn:ngm:class:generative-design",
@@ -404,10 +396,6 @@ public:: true
       {
         "@id": "urn:ngm:class:prototyping",
         "label": "Prototyping"
-      },
-      {
-        "@id": "urn:ngm:class:service-blueprint",
-        "label": "Service Blueprint"
       },
       {
         "@id": "urn:ngm:class:usability-testing",
@@ -432,24 +420,8 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:brand-guidelines",
-        "label": "Brand Guidelines"
-      },
-      {
-        "@id": "urn:ngm:class:competitive-analysis",
-        "label": "Competitive Analysis"
-      },
-      {
         "@id": "urn:ngm:class:design-systems",
         "label": "Design Systems"
-      },
-      {
-        "@id": "urn:ngm:class:manufacturing-constraints",
-        "label": "Manufacturing Constraints"
-      },
-      {
-        "@id": "urn:ngm:class:prototyping-tools",
-        "label": "Prototyping Tools"
       },
       {
         "@id": "urn:ngm:class:stakeholder-analysis",
@@ -470,24 +442,8 @@ public:: true
         "label": "Brand Identity"
       },
       {
-        "@id": "urn:ngm:class:customer-satisfaction",
-        "label": "Customer Satisfaction"
-      },
-      {
         "@id": "urn:ngm:class:inclusive-design",
         "label": "Inclusive Design"
-      },
-      {
-        "@id": "urn:ngm:class:product-development",
-        "label": "Product Development"
-      },
-      {
-        "@id": "urn:ngm:class:product-market-fit",
-        "label": "Product-Market Fit"
-      },
-      {
-        "@id": "urn:ngm:class:sustainable-design",
-        "label": "Sustainable Design"
       },
       {
         "@id": "urn:ngm:class:user-experience",
@@ -500,46 +456,18 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:agile-design",
-        "label": "Agile Design"
-      },
-      {
-        "@id": "urn:ngm:class:continuous-discovery",
-        "label": "Continuous Discovery"
-      },
-      {
-        "@id": "urn:ngm:class:design-sprints",
-        "label": "Design Sprints"
-      },
-      {
         "@id": "urn:ngm:class:design-thinking",
         "label": "Design Thinking"
       },
       {
-        "@id": "urn:ngm:class:double-diamond-process",
-        "label": "Double Diamond Process"
-      },
-      {
         "@id": "urn:ngm:class:human-centred-design",
         "label": "Human-Centred Design"
-      },
-      {
-        "@id": "urn:ngm:class:jobs-to-be-done-framework",
-        "label": "Jobs-to-be-Done Framework"
-      },
-      {
-        "@id": "urn:ngm:class:lean-ux",
-        "label": "Lean UX"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:adobe-creative-cloud",
         "label": "Adobe Creative Cloud"
-      },
-      {
-        "@id": "urn:ngm:class:autodesk-fusion-360",
-        "label": "Autodesk Fusion 360"
       },
       {
         "@id": "urn:ngm:class:fig-jam",
@@ -550,32 +478,8 @@ public:: true
         "label": "Figma"
       },
       {
-        "@id": "urn:ngm:class:in-vision",
-        "label": "InVision"
-      },
-      {
         "@id": "urn:ngm:class:miro",
         "label": "Miro"
-      },
-      {
-        "@id": "urn:ngm:class:principle",
-        "label": "Principle"
-      },
-      {
-        "@id": "urn:ngm:class:proto-pie",
-        "label": "ProtoPie"
-      },
-      {
-        "@id": "urn:ngm:class:sketch",
-        "label": "Sketch"
-      },
-      {
-        "@id": "urn:ngm:class:v0-dev",
-        "label": "V0.dev"
-      },
-      {
-        "@id": "urn:ngm:class:zeplin",
-        "label": "Zeplin"
       }
     ],
     "relatedTo": [
@@ -584,47 +488,15 @@ public:: true
         "label": "Additive Manufacturing"
       },
       {
-        "@id": "urn:ngm:class:cad",
+        "@id": "urn:ngm:class:cad-software",
         "label": "CAD"
-      },
-      {
-        "@id": "urn:ngm:class:design-operations",
-        "label": "Design Operations"
-      },
-      {
-        "@id": "urn:ngm:class:design-research",
-        "label": "Design Research"
-      },
-      {
-        "@id": "urn:ngm:class:industrial-design",
-        "label": "Industrial Design"
       },
       {
         "@id": "urn:ngm:class:service-design",
         "label": "Service Design"
-      },
-      {
-        "@id": "urn:ngm:class:ui-design",
-        "label": "UI Design"
-      },
-      {
-        "@id": "urn:ngm:class:ux-design",
-        "label": "UX Design"
       }
     ],
     "supports": [
-      {
-        "@id": "urn:ngm:class:brand-management",
-        "label": "Brand Management"
-      },
-      {
-        "@id": "urn:ngm:class:business-strategy",
-        "label": "Business Strategy"
-      },
-      {
-        "@id": "urn:ngm:class:marketing",
-        "label": "Marketing"
-      },
       {
         "@id": "urn:ngm:class:product-management",
         "label": "Product Management"
@@ -640,32 +512,6 @@ public:: true
       {
         "@id": "urn:ngm:class:sustainability",
         "label": "Sustainability"
-      }
-    ],
-    "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:bs-en-iso-9241-210",
-        "label": "BS EN ISO 9241-210"
-      },
-      {
-        "@id": "urn:ngm:class:bsi-design-standards",
-        "label": "BSI Design Standards"
-      },
-      {
-        "@id": "urn:ngm:class:iso-13407",
-        "label": "ISO 13407"
-      },
-      {
-        "@id": "urn:ngm:class:iso-9241-ergonomics",
-        "label": "ISO 9241 Ergonomics"
-      },
-      {
-        "@id": "urn:ngm:class:w3-c-design-tokens-community-group",
-        "label": "W3C Design Tokens Community Group"
-      },
-      {
-        "@id": "urn:ngm:class:w3-c-wcag",
-        "label": "W3C WCAG"
       }
     ],
     "bridgesTo": [

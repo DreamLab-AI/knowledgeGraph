@@ -24,47 +24,116 @@ public:: true
   "domain": "blockchain",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:ecash", "label": "ecash"}
+    {
+      "@id": "urn:ngm:class:ecash",
+      "label": "ecash"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:chaumian-ecash", "label": "Chaumian Ecash"},
-      {"@id": "urn:ngm:class:blind-signatures", "label": "Blind Signatures"},
-      {"@id": "urn:ngm:class:threshold-cryptography", "label": "Threshold Cryptography"},
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
+      {
+        "@id": "urn:ngm:class:chaumian-ecash",
+        "label": "Chaumian Ecash"
+      },
+      {
+        "@id": "urn:ngm:class:blind-signatures",
+        "label": "Blind Signatures"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:bitcoin", "label": "Bitcoin"},
-      {"@id": "urn:ngm:class:multisignature-cryptography", "label": "Multisignature Cryptography"},
-      {"@id": "urn:ngm:class:federated-consensus", "label": "Federated Consensus"}
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:multisignature",
+        "label": "Multisignature Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:consensus",
+        "label": "Federated Consensus"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:privacy-preserving-payments", "label": "Privacy-Preserving Payments"},
-      {"@id": "urn:ngm:class:community-custody", "label": "Community Custody"},
-      {"@id": "urn:ngm:class:financial-inclusion", "label": "Financial Inclusion"}
+      {
+        "@id": "urn:ngm:class:privacy-preserving",
+        "label": "Privacy-Preserving Payments"
+      },
+      {
+        "@id": "urn:ngm:class:custody",
+        "label": "Community Custody"
+      },
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:bitcoin-custody", "label": "Bitcoin Custody"},
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-custody",
+        "label": "Bitcoin Custody"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:federated-system", "label": "Federated System"},
-      {"@id": "urn:ngm:class:bitcoin-layer-2", "label": "Bitcoin Layer 2"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:digital-cash", "label": "Digital Cash"}
+      {
+        "@id": "urn:ngm:class:federated-system",
+        "label": "Federated System"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-layer-2",
+        "label": "Bitcoin Layer 2"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-cash",
+        "label": "Digital Cash"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:self-custody", "label": "Self-Custody"},
-      {"@id": "urn:ngm:class:centralised-exchange", "label": "Centralised Exchange"},
-      {"@id": "urn:ngm:class:ark-protocol", "label": "Ark Protocol"}
+      {
+        "@id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "@id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:ark-protocol",
+        "label": "Ark Protocol"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:distributed-trust", "label": "Distributed Trust"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-trust",
+        "label": "Distributed Trust"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:federated-mint", "label": "Federated Mint"}
+    {
+      "@id": "urn:ngm:class:federated-mint",
+      "label": "Federated Mint"
+    }
   ],
   "quality": 0.72,
   "provenance": {

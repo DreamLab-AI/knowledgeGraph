@@ -87,7 +87,7 @@
         "label": "Rule-Based Systems"
       },
       {
-        "id": "urn:ngm:class:batch-data-processing",
+        "id": "urn:ngm:class:batch-processing",
         "label": "Batch Data Processing"
       }
     ],

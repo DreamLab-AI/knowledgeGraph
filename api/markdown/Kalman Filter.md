@@ -141,19 +141,11 @@ alias:: RB-1015-kalman-filter
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:gaussian-noise-assumption",
-        "label": "Gaussian Noise Assumption"
-      },
-      {
-        "@id": "urn:ngm:class:linear-system-model",
-        "label": "Linear System Model"
-      },
-      {
         "@id": "urn:ngm:class:covariance-matrix",
         "label": "Covariance Matrix"
       },
       {
-        "@id": "urn:ngm:class:state-transition-model",
+        "@id": "urn:ngm:class:state-transition-function",
         "label": "State Transition Model"
       }
     ],
@@ -189,10 +181,6 @@ alias:: RB-1015-kalman-filter
       {
         "@id": "urn:ngm:class:bayes-filter",
         "label": "Bayes Filter"
-      },
-      {
-        "@id": "urn:ngm:class:recursive-estimator",
-        "label": "Recursive Estimator"
       }
     ],
     "dependsOn": [
@@ -205,23 +193,9 @@ alias:: RB-1015-kalman-filter
         "label": "Linear Algebra"
       }
     ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:kalman-gain",
-        "label": "Kalman Gain"
-      },
-      {
-        "@id": "urn:ngm:class:prediction-step",
-        "label": "Prediction Step"
-      },
-      {
-        "@id": "urn:ngm:class:measurement-update-step",
-        "label": "Measurement Update Step"
-      }
-    ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:rb-1014-monte-carlo-localization",
+        "@id": "urn:ngm:class:monte-carlo-localization",
         "label": "Particle Filter"
       },
       {
@@ -247,7 +221,7 @@ alias:: RB-1015-kalman-filter
         "label": "RB 1013 localization"
       },
       {
-        "@id": "urn:ngm:class:rb-1002-closed-loop-control",
+        "@id": "urn:ngm:class:closed-loop-control",
         "label": "Closed-Loop Control"
       }
     ],
@@ -257,7 +231,7 @@ alias:: RB-1015-kalman-filter
         "label": "Inertial Navigation System"
       },
       {
-        "@id": "urn:ngm:class:gps-positioning",
+        "@id": "urn:ngm:class:gps",
         "label": "GPS Positioning"
       }
     ]

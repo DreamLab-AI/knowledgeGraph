@@ -90,7 +90,7 @@
         "label": "Verifiable Credentials"
       },
       {
-        "id": "urn:ngm:class:json-web-token",
+        "id": "urn:ngm:class:json-data-interchange-format-web-token",
         "label": "JSON Web Token"
       },
       {
@@ -98,13 +98,13 @@
         "label": "SD-JWT"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:eidas-2-0",
+        "id": "urn:ngm:class:e-idas-2-0",
         "label": "eIDAS 2.0"
       },
       {
@@ -118,7 +118,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:openid-foundation",
+        "id": "urn:ngm:class:open-id-foundation",
         "label": "OpenID Foundation"
       }
     ],

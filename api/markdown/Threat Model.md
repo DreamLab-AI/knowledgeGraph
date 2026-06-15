@@ -23,59 +23,133 @@ public:: true
   "definition": "A threat model is a structured representation of the security properties, assumptions, and adversarial conditions relevant to a system, used to identify potential attack vectors, prioritise mitigations, and reason systematically about security guarantees. It defines who the adversary is (capabilities, motivations, access), what assets are worth protecting, and what attacks — such as those catalogued in STRIDE or MITRE ATT&CK — could compromise confidentiality, integrity, or availability. Threat modelling is applied during system design to surface architectural weaknesses before implementation, and updated continuously as the threat landscape evolves. It is a prerequisite for sound security architecture, cryptographic protocol design, and regulatory compliance.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:security-framework", "label": "Security Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:security-framework",
+      "label": "Security Framework"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:trust-boundary", "label": "Trust Boundary"},
-      {"@id": "urn:ngm:class:threat-surface-map", "label": "Threat Surface Map"},
-      {"@id": "urn:ngm:class:adversary-profile", "label": "Adversary Profile"}
+      {
+        "@id": "urn:ngm:class:trust-boundary",
+        "label": "Trust Boundary"
+      },
+      {
+        "@id": "urn:ngm:class:threat-surface-map",
+        "label": "Threat Surface Map"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:asset-inventory", "label": "Asset Inventory"},
-      {"@id": "urn:ngm:class:data-flow-diagram", "label": "Data Flow Diagram"}
+      {
+        "@id": "urn:ngm:class:asset-inventory",
+        "label": "Asset Inventory"
+      },
+      {
+        "@id": "urn:ngm:class:data-flow-diagram",
+        "label": "Data Flow Diagram"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:attack-vector", "label": "Attack Vector"},
-      {"@id": "urn:ngm:class:vulnerability", "label": "Vulnerability"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:stride-framework", "label": "STRIDE Framework"},
-      {"@id": "urn:ngm:class:cvss", "label": "CVSS"}
+      {
+        "@id": "urn:ngm:class:attack-vector",
+        "label": "Attack Vector"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:cvss",
+        "label": "CVSS"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:security-architecture", "label": "Security Architecture"},
-      {"@id": "urn:ngm:class:risk-mitigation", "label": "Risk Mitigation"},
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:security-by-design", "label": "Security by Design"}
+      {
+        "@id": "urn:ngm:class:security-architecture",
+        "label": "Security Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:risk-mitigation",
+        "label": "Risk Mitigation"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:security-by-design",
+        "label": "Security by Design"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:system-decomposition", "label": "System Decomposition"},
-      {"@id": "urn:ngm:class:adversary-model", "label": "Adversary Model"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:dolev-yao-model", "label": "Dolev-Yao Model"}
+      {
+        "@id": "urn:ngm:class:adversary-model",
+        "label": "Adversary Model"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist-cybersecurity-framework", "label": "NIST Cybersecurity Framework"},
-      {"@id": "urn:ngm:class:mitre-attck", "label": "MITRE ATT&CK"}
+      {
+        "@id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      },
+      {
+        "@id": "urn:ngm:class:mitre-attck",
+        "label": "MITRE ATT&CK"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:penetration-testing", "label": "Penetration Testing"},
-      {"@id": "urn:ngm:class:security-audit", "label": "Security Audit"}
+      {
+        "@id": "urn:ngm:class:penetration-testing",
+        "label": "Penetration Testing"
+      },
+      {
+        "@id": "urn:ngm:class:security-audit",
+        "label": "Security Audit"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:adversarial-robustness", "label": "Adversarial Robustness"},
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
-      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"}
+      {
+        "@id": "urn:ngm:class:adversarial-robustness",
+        "label": "Adversarial Robustness"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:threat-surface-map", "label": "Threat Surface Map"},
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:threat-surface-map",
+        "label": "Threat Surface Map"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:threat-modelling", "label": "Threat Modelling"},
-    {"@id": "urn:ngm:class:security-threat-analysis", "label": "Security Threat Analysis"}
+    {
+      "@id": "urn:ngm:class:threat-modelling",
+      "label": "Threat Modelling"
+    },
+    {
+      "@id": "urn:ngm:class:security-threat-analysis",
+      "label": "Security Threat Analysis"
+    }
   ],
   "quality": 0.8,
   "provenance": {

@@ -16,24 +16,7 @@
   "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:x-chain",
-        "label": "X-Chain"
-      },
-      {
-        "id": "urn:ngm:class:p-chain",
-        "label": "P-Chain"
-      },
-      {
-        "id": "urn:ngm:class:c-chain",
-        "label": "C-Chain"
-      },
-      {
-        "id": "urn:ngm:class:subnet",
-        "label": "Subnet"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:validator-node",
@@ -67,10 +50,6 @@
       {
         "id": "urn:ngm:class:byzantine-fault-tolerance",
         "label": "Byzantine Fault Tolerance"
-      },
-      {
-        "id": "urn:ngm:class:avalanche-consensus",
-        "label": "Avalanche Consensus"
       }
     ],
     "contrastsWith": [
@@ -134,10 +113,6 @@
       {
         "id": "urn:ngm:class:distributed-ledger-technology",
         "label": "Distributed Ledger Technology"
-      },
-      {
-        "id": "urn:ngm:class:warp-messaging",
-        "label": "Warp Messaging"
       }
     ]
   },

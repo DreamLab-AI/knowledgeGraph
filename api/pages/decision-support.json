@@ -20,14 +20,6 @@
       {
         "id": "urn:ngm:class:recommendation-engine",
         "label": "Recommendation Engine"
-      },
-      {
-        "id": "urn:ngm:class:risk-assessment-model",
-        "label": "Risk Assessment Model"
-      },
-      {
-        "id": "urn:ngm:class:scenario-simulation",
-        "label": "Scenario Simulation"
       }
     ],
     "requires": [
@@ -56,7 +48,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:machine-learning-inference",
+        "id": "urn:ngm:class:inference",
         "label": "Machine Learning Inference"
       },
       {
@@ -65,21 +57,8 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:fully-automated-decision-making",
-        "label": "Fully Automated Decision Making"
-      },
-      {
-        "id": "urn:ngm:class:unaided-expert-judgement",
-        "label": "Unaided Expert Judgement"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:clinical-governance",
-        "label": "Clinical Governance"
-      },
       {
         "id": "urn:ngm:class:financial-risk-management",
         "label": "Financial Risk Management"
@@ -118,12 +97,7 @@
       }
     ],
     "standardizedBy": [],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:enterprise-intelligence-platform",
-        "label": "Enterprise Intelligence Platform"
-      }
-    ],
+    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:clinical-decision-support",

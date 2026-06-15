@@ -374,19 +374,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:actor-network",
-        "label": "Actor Network"
-      },
-      {
-        "@id": "urn:ngm:class:continual-learner",
+        "@id": "urn:ngm:class:continual-learning",
         "label": "Continual Learner"
       },
       {
-        "@id": "urn:ngm:class:critic-network",
-        "label": "Critic Network"
-      },
-      {
-        "@id": "urn:ngm:class:meta-learner",
+        "@id": "urn:ngm:class:meta-learning",
         "label": "Meta-Learner"
       },
       {
@@ -396,10 +388,6 @@ public:: true
       {
         "@id": "urn:ngm:class:query-strategy",
         "label": "Query Strategy"
-      },
-      {
-        "@id": "urn:ngm:class:replay-buffer",
-        "label": "Replay Buffer"
       },
       {
         "@id": "urn:ngm:class:value-function",
@@ -480,20 +468,8 @@ public:: true
         "label": "Adam Optimiser"
       },
       {
-        "@id": "urn:ngm:class:byol",
-        "label": "BYOL"
-      },
-      {
-        "@id": "urn:ngm:class:dino",
-        "label": "DINO"
-      },
-      {
         "@id": "urn:ngm:class:dqn",
         "label": "DQN"
-      },
-      {
-        "@id": "urn:ngm:class:ewc",
-        "label": "EWC"
       },
       {
         "@id": "urn:ngm:class:maml",
@@ -534,11 +510,11 @@ public:: true
         "label": "Automatic Differentiation"
       },
       {
-        "@id": "urn:ngm:class:contrastive-loss",
+        "@id": "urn:ngm:class:loss-function",
         "label": "Contrastive Loss"
       },
       {
-        "@id": "urn:ngm:class:markov-decision-processes",
+        "@id": "urn:ngm:class:markov-decision-process",
         "label": "Markov Decision Processes"
       },
       {
@@ -622,10 +598,6 @@ public:: true
       {
         "@id": "urn:ngm:class:icml",
         "label": "ICML"
-      },
-      {
-        "@id": "urn:ngm:class:ieee-transactions-on-neural-networks",
-        "label": "IEEE Transactions on Neural Networks"
       },
       {
         "@id": "urn:ngm:class:journal-of-machine-learning-research",

@@ -69,10 +69,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:consistency",
-        "label": "Consistency"
-      },
-      {
         "@id": "urn:ngm:class:availability",
         "label": "Availability"
       },
@@ -85,19 +81,11 @@ public:: true
       {
         "@id": "urn:ngm:class:network-partition",
         "label": "Network Partition"
-      },
-      {
-        "@id": "urn:ngm:class:distributed-data-store",
-        "label": "Distributed Data Store"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:distributed-database-design",
-        "label": "Distributed Database Design"
-      },
-      {
-        "@id": "urn:ngm:class:system-fault-tolerance",
+        "@id": "urn:ngm:class:fault-tolerance",
         "label": "System Fault Tolerance"
       }
     ],
@@ -115,10 +103,6 @@ public:: true
       {
         "@id": "urn:ngm:class:acid-properties",
         "label": "ACID Properties"
-      },
-      {
-        "@id": "urn:ngm:class:pacelc-theorem",
-        "label": "PACELC Theorem"
       },
       {
         "@id": "urn:ngm:class:base-properties",
@@ -147,16 +131,12 @@ public:: true
         "label": "RAFT Consensus"
       },
       {
-        "@id": "urn:ngm:class:paxos-protocol",
+        "@id": "urn:ngm:class:paxos",
         "label": "Paxos Protocol"
       },
       {
         "@id": "urn:ngm:class:nosql-database",
         "label": "NoSQL Database"
-      },
-      {
-        "@id": "urn:ngm:class:distributed-systems-theorem",
-        "label": "Distributed Systems Theorem"
       }
     ],
     "bridgesTo": [

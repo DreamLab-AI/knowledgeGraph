@@ -22,10 +22,6 @@
         "label": "Declaration of Conformity"
       },
       {
-        "id": "urn:ngm:class:technical-file",
-        "label": "Technical File"
-      },
-      {
         "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
       }
@@ -48,44 +44,28 @@
       {
         "id": "urn:ngm:class:market-access",
         "label": "Market Access"
-      },
-      {
-        "id": "urn:ngm:class:product-commercialisation",
-        "label": "Product Commercialisation"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:machinery-regulation",
+        "id": "urn:ngm:class:regulation",
         "label": "Machinery Regulation"
       },
       {
-        "id": "urn:ngm:class:emc-directive",
+        "id": "urn:ngm:class:emc-standard",
         "label": "EMC Directive"
-      },
-      {
-        "id": "urn:ngm:class:low-voltage-directive",
-        "label": "Low Voltage Directive"
       }
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:eu-product-safety-framework",
+        "id": "urn:ngm:class:ai-product-and-risk-framework",
         "label": "EU Product Safety Framework"
-      },
-      {
-        "id": "urn:ngm:class:new-approach-directive",
-        "label": "New Approach Directive"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:ul-certification",
+        "id": "urn:ngm:class:safety-certification",
         "label": "UL Certification"
-      },
-      {
-        "id": "urn:ngm:class:fcc-certification",
-        "label": "FCC Certification"
       }
     ],
     "bridgesTo": [
@@ -123,14 +103,6 @@
       {
         "id": "urn:ngm:class:product-liability",
         "label": "Product Liability"
-      },
-      {
-        "id": "urn:ngm:class:european-economic-area",
-        "label": "European Economic Area"
-      },
-      {
-        "id": "urn:ngm:class:type-examination",
-        "label": "Type Examination"
       }
     ]
   },

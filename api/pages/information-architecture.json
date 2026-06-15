@@ -26,16 +26,8 @@
         "label": "Controlled Vocabulary"
       },
       {
-        "id": "urn:ngm:class:navigation-schema",
-        "label": "Navigation Schema"
-      },
-      {
         "id": "urn:ngm:class:metadata-standard",
         "label": "Metadata Standard"
-      },
-      {
-        "id": "urn:ngm:class:search-system",
-        "label": "Search System"
       }
     ],
     "requires": [
@@ -111,7 +103,7 @@
         "label": "Faceted Classification"
       },
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       }
     ],
@@ -128,10 +120,6 @@
     ],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:library-science",
-        "label": "Library Science"
-      },
       {
         "id": "urn:ngm:class:human-computer-interaction",
         "label": "Human Computer Interaction"

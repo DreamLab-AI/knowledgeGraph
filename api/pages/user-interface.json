@@ -107,12 +107,8 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:design-system",
+        "id": "urn:ngm:class:design-systems",
         "label": "Design System"
-      },
-      {
-        "id": "urn:ngm:class:widget-toolkit",
-        "label": "Widget Toolkit"
       }
     ],
     "supports": [
@@ -131,7 +127,7 @@
         "label": "W3C Standards"
       },
       {
-        "id": "urn:ngm:class:wcag",
+        "id": "urn:ngm:class:wcag-2-2",
         "label": "WCAG"
       }
     ],

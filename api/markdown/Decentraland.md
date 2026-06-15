@@ -95,7 +95,7 @@ public:: true
         "label": "Social VR"
       },
       {
-        "@id": "urn:ngm:class:virtual-land-ownership",
+        "@id": "urn:ngm:class:virtual-land-rights",
         "label": "Virtual Land Ownership"
       },
       {
@@ -103,22 +103,14 @@ public:: true
         "label": "User-Generated Content"
       },
       {
-        "@id": "urn:ngm:class:play-to-earn",
+        "@id": "urn:ngm:class:play-to-earn-p2-e",
         "label": "Play-to-Earn"
       }
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:mana-token",
-        "label": "MANA Token"
-      },
-      {
         "@id": "urn:ngm:class:land-nft",
         "label": "LAND NFT"
-      },
-      {
-        "@id": "urn:ngm:class:decentraland-marketplace",
-        "label": "Decentraland Marketplace"
       }
     ],
     "partOf": [
@@ -127,7 +119,7 @@ public:: true
         "label": "Open Metaverse"
       },
       {
-        "@id": "urn:ngm:class:web3-ecosystem",
+        "@id": "urn:ngm:class:web3",
         "label": "Web3 Ecosystem"
       }
     ],

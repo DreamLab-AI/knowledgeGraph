@@ -51,10 +51,6 @@
       {
         "id": "urn:ngm:class:calldata",
         "label": "Calldata"
-      },
-      {
-        "id": "urn:ngm:class:full-danksharding",
-        "label": "Full Danksharding"
       }
     ],
     "bridgesTo": [
@@ -89,19 +85,10 @@
       {
         "id": "urn:ngm:class:zk-rollup",
         "label": "ZK Rollup"
-      },
-      {
-        "id": "urn:ngm:class:ethereum-scalability",
-        "label": "Ethereum Scalability"
       }
     ],
     "standardizedBy": [],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:ethereum-cancun-upgrade",
-        "label": "Ethereum Cancun Upgrade"
-      }
-    ],
+    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:ethereum-improvement-proposal",
@@ -112,7 +99,7 @@
         "label": "Data Availability"
       },
       {
-        "id": "urn:ngm:class:gas-fee-mechanism",
+        "id": "urn:ngm:class:gas-mechanism",
         "label": "Gas Fee Mechanism"
       },
       {

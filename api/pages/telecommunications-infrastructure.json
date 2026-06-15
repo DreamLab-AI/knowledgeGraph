@@ -76,7 +76,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:power-grid-infrastructure",
+        "id": "urn:ngm:class:grid-infrastructure",
         "label": "Power Grid Infrastructure"
       },
       {
@@ -85,12 +85,7 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:terrestrial-broadcast",
-        "label": "Terrestrial Broadcast"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:edge-ai",
@@ -137,7 +132,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:network-function-virtualisation",
+        "id": "urn:ngm:class:network-function-virtualization",
         "label": "Network Function Virtualisation"
       },
       {

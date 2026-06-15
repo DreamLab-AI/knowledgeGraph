@@ -37,57 +37,139 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:json-rpc-2-0", "label": "JSON-RPC 2.0"}
+    {
+      "@id": "urn:ngm:class:json-rpc-2-0",
+      "label": "JSON-RPC 2.0"
+    }
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:remote-procedure-call", "label": "Remote Procedure Call"},
-      {"@id": "urn:ngm:class:api-standard", "label": "API Standard"}
+      {
+        "@id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      },
+      {
+        "@id": "urn:ngm:class:api-standard",
+        "label": "API Standard"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:request-object", "label": "Request Object"},
-      {"@id": "urn:ngm:class:response-object", "label": "Response Object"},
-      {"@id": "urn:ngm:class:notification-message", "label": "Notification Message"},
-      {"@id": "urn:ngm:class:batch-request", "label": "Batch Request"}
+      {
+        "@id": "urn:ngm:class:push-notification",
+        "label": "Notification Message"
+      },
+      {
+        "@id": "urn:ngm:class:batch-processing",
+        "label": "Batch Request"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:json", "label": "JSON"},
-      {"@id": "urn:ngm:class:network-transport", "label": "Network Transport"}
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format",
+        "label": "JSON"
+      },
+      {
+        "@id": "urn:ngm:class:network-transport",
+        "label": "Network Transport"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"},
-      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"},
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"}
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:client-server-architecture", "label": "Client-Server Architecture"},
-      {"@id": "urn:ngm:class:request-response-pattern", "label": "Request-Response Pattern"}
+      {
+        "@id": "urn:ngm:class:client-server-architecture",
+        "label": "Client-Server Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:request-response-pattern",
+        "label": "Request-Response Pattern"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:websocket", "label": "WebSocket"},
-      {"@id": "urn:ngm:class:http", "label": "HTTP"},
-      {"@id": "urn:ngm:class:json", "label": "JSON"}
+      {
+        "@id": "urn:ngm:class:websocket",
+        "label": "WebSocket"
+      },
+      {
+        "@id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format",
+        "label": "JSON"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:language-server-protocol", "label": "Language Server Protocol"},
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"}
+      {
+        "@id": "urn:ngm:class:language-server-protocol",
+        "label": "Language Server Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
-      {"@id": "urn:ngm:class:graphql", "label": "GraphQL"},
-      {"@id": "urn:ngm:class:grpc", "label": "gRPC"},
-      {"@id": "urn:ngm:class:soap", "label": "SOAP"}
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:graphql",
+        "label": "GraphQL"
+      },
+      {
+        "@id": "urn:ngm:class:grpc",
+        "label": "gRPC"
+      },
+      {
+        "@id": "urn:ngm:class:soap",
+        "label": "SOAP"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:microservices", "label": "Microservices"},
-      {"@id": "urn:ngm:class:message-passing", "label": "Message Passing"},
-      {"@id": "urn:ngm:class:inter-process-communication", "label": "Inter-Process Communication"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "@id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "@id": "urn:ngm:class:inter-process-communication",
+        "label": "Inter-Process Communication"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain-infrastructure", "label": "Blockchain Infrastructure"},
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+      {
+        "@id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
     ]
   },
   "quality": 0.72,

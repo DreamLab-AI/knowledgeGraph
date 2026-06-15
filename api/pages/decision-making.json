@@ -109,20 +109,12 @@
       {
         "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:heuristics",
-        "label": "Heuristics"
       }
     ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:cognitive-process",
-        "label": "Cognitive Process"
-      },
       {
         "id": "urn:ngm:class:cognitive-science",
         "label": "Cognitive Science"

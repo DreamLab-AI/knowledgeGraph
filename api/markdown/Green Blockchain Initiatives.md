@@ -425,8 +425,14 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:esg", "label": "ESG"},
-      {"@id": "urn:ngm:class:sustainable-finance", "label": "Sustainable Finance"}
+      {
+        "@id": "urn:ngm:class:esg",
+        "label": "ESG"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-finance",
+        "label": "Sustainable Finance"
+      }
     ],
     "hasPart": [
       {
@@ -436,10 +442,6 @@ public:: true
       {
         "@id": "urn:ngm:class:carbon-offset-programme",
         "label": "Carbon Offset Programme"
-      },
-      {
-        "@id": "urn:ngm:class:carbon-token-standard",
-        "label": "Carbon Token Standard"
       },
       {
         "@id": "urn:ngm:class:energy-attribute-certificates",
@@ -454,16 +456,8 @@ public:: true
         "label": "On-Chain MRV"
       },
       {
-        "@id": "urn:ngm:class:re-fi-protocol",
-        "label": "ReFi Protocol"
-      },
-      {
         "@id": "urn:ngm:class:regenerative-finance",
         "label": "Regenerative Finance"
-      },
-      {
-        "@id": "urn:ngm:class:renewable-energy-mining",
-        "label": "Renewable Energy Mining"
       },
       {
         "@id": "urn:ngm:class:proof-of-stake",
@@ -472,11 +466,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:carbon-accounting-standards",
-        "label": "Carbon Accounting Standards"
-      },
-      {
-        "@id": "urn:ngm:class:energy-monitoring-infrastructure",
+        "@id": "urn:ngm:class:monitoring-infrastructure",
         "label": "Energy Monitoring Infrastructure"
       },
       {
@@ -492,7 +482,7 @@ public:: true
         "label": "Oracle Network"
       },
       {
-        "@id": "urn:ngm:class:renewable-energy-supply",
+        "@id": "urn:ngm:class:renewable-energy",
         "label": "Renewable Energy Supply"
       },
       {
@@ -506,27 +496,11 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:biodiversity-credit-markets",
-        "label": "Biodiversity Credit Markets"
-      },
-      {
-        "@id": "urn:ngm:class:climate-finance-innovation",
+        "@id": "urn:ngm:class:climate-finance",
         "label": "Climate Finance Innovation"
       },
       {
-        "@id": "urn:ngm:class:esg-compliant-de-fi",
-        "label": "ESG-Compliant DeFi"
-      },
-      {
-        "@id": "urn:ngm:class:green-bond-tokenisation",
-        "label": "Green Bond Tokenisation"
-      },
-      {
-        "@id": "urn:ngm:class:net-zero-digital-assets",
-        "label": "Net-Zero Digital Assets"
-      },
-      {
-        "@id": "urn:ngm:class:tokenised-carbon-markets",
+        "@id": "urn:ngm:class:carbon-markets",
         "label": "Tokenised Carbon Markets"
       },
       {
@@ -540,20 +514,12 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:base-carbon-tonne-standard",
-        "label": "Base Carbon Tonne Standard"
-      },
-      {
-        "@id": "urn:ngm:class:core-carbon-principles",
+        "@id": "urn:ngm:class:icvcm-core-carbon-principles",
         "label": "Core Carbon Principles"
       },
       {
         "@id": "urn:ngm:class:energy-attribute-certificates",
         "label": "Energy Attribute Certificates"
-      },
-      {
-        "@id": "urn:ngm:class:gold-standard-digital-assets",
-        "label": "Gold Standard Digital Assets"
       },
       {
         "@id": "urn:ngm:class:icvcm-framework",
@@ -578,20 +544,12 @@ public:: true
         "label": "Chainlink Oracles"
       },
       {
-        "@id": "urn:ngm:class:d-climate-network",
-        "label": "dClimate Network"
-      },
-      {
         "@id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
       },
       {
         "@id": "urn:ngm:class:layer-2-scaling",
         "label": "Layer 2 Scaling"
-      },
-      {
-        "@id": "urn:ngm:class:multi-sig-wallets",
-        "label": "Multi-Sig Wallets"
       },
       {
         "@id": "urn:ngm:class:proof-of-stake",
@@ -612,10 +570,6 @@ public:: true
         "label": "Algorand"
       },
       {
-        "@id": "urn:ngm:class:celo",
-        "label": "Celo"
-      },
-      {
         "@id": "urn:ngm:class:clean-spark",
         "label": "CleanSpark"
       },
@@ -624,16 +578,8 @@ public:: true
         "label": "DeFi"
       },
       {
-        "@id": "urn:ngm:class:iris-energy",
-        "label": "Iris Energy"
-      },
-      {
         "@id": "urn:ngm:class:klima-dao",
         "label": "KlimaDAO"
-      },
-      {
-        "@id": "urn:ngm:class:regen-network",
-        "label": "Regen Network"
       },
       {
         "@id": "urn:ngm:class:toucan-protocol",
@@ -666,10 +612,6 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:kunming-montreal-gbf",
-        "label": "Kunming-Montreal GBF"
-      },
-      {
         "@id": "urn:ngm:class:paris-agreement",
         "label": "Paris Agreement"
       },
@@ -678,15 +620,11 @@ public:: true
         "label": "Regenerative Finance"
       },
       {
-        "@id": "urn:ngm:class:sfdr-disclosure",
-        "label": "SFDR Disclosure"
-      },
-      {
         "@id": "urn:ngm:class:sustainable-development-goals",
         "label": "Sustainable Development Goals"
       },
       {
-        "@id": "urn:ngm:class:tcfd-reporting",
+        "@id": "urn:ngm:class:tcfd",
         "label": "TCFD Reporting"
       },
       {
@@ -700,10 +638,6 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:ccri-methodology",
-        "label": "CCRI Methodology"
-      },
-      {
         "@id": "urn:ngm:class:crypto-climate-accord",
         "label": "Crypto Climate Accord"
       },
@@ -712,7 +646,7 @@ public:: true
         "label": "GHG Protocol"
       },
       {
-        "@id": "urn:ngm:class:gold-standard-foundation",
+        "@id": "urn:ngm:class:gold-standard",
         "label": "Gold Standard Foundation"
       },
       {

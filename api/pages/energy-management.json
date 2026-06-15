@@ -20,14 +20,6 @@
       {
         "id": "urn:ngm:class:energy-audit",
         "label": "Energy Audit"
-      },
-      {
-        "id": "urn:ngm:class:load-forecasting",
-        "label": "Load Forecasting"
-      },
-      {
-        "id": "urn:ngm:class:demand-side-management",
-        "label": "Demand-Side Management"
       }
     ],
     "requires": [
@@ -67,7 +59,7 @@
         "label": "Reinforcement Learning"
       },
       {
-        "id": "urn:ngm:class:carbon-market",
+        "id": "urn:ngm:class:carbon-markets",
         "label": "Carbon Market"
       }
     ],
@@ -85,7 +77,7 @@
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:building-automation-system",
+        "id": "urn:ngm:class:building-automation",
         "label": "Building Automation System"
       },
       {
@@ -94,16 +86,7 @@
       }
     ],
     "supports": [],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:iso-50001",
-        "label": "ISO 50001"
-      },
-      {
-        "id": "urn:ngm:class:bacnet",
-        "label": "BACnet"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {

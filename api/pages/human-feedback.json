@@ -18,10 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:pairwise-ranking",
-        "label": "Pairwise Ranking"
-      },
-      {
         "id": "urn:ngm:class:demonstration-data",
         "label": "Demonstration Data"
       },
@@ -38,10 +34,6 @@
       {
         "id": "urn:ngm:class:human-annotator",
         "label": "Human Annotator"
-      },
-      {
-        "id": "urn:ngm:class:annotation-guideline",
-        "label": "Annotation Guideline"
       }
     ],
     "enables": [
@@ -62,7 +54,7 @@
         "label": "Preference Learning"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai",
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
       }
     ],
@@ -70,10 +62,6 @@
       {
         "id": "urn:ngm:class:large-language-model",
         "label": "Large Language Model"
-      },
-      {
-        "id": "urn:ngm:class:labelling-workforce",
-        "label": "Labelling Workforce"
       }
     ],
     "implements": [],
@@ -118,28 +106,19 @@
       }
     ],
     "standardizedBy": [],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:alignment-training-pipeline",
-        "label": "Alignment Training Pipeline"
-      }
-    ],
+    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:model-performance",
         "label": "Model Performance"
       },
       {
-        "id": "urn:ngm:class:bias-mitigation",
+        "id": "urn:ngm:class:bias-mitigation-techniques",
         "label": "Bias Mitigation"
       },
       {
         "id": "urn:ngm:class:instruction-following",
         "label": "Instruction Following"
-      },
-      {
-        "id": "urn:ngm:class:training-signal",
-        "label": "Training Signal"
       }
     ]
   },

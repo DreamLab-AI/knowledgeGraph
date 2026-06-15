@@ -100,10 +100,6 @@ public:: true
         "label": "Material Definition"
       },
       {
-        "@id": "urn:ngm:class:animation-keyframes",
-        "label": "Animation Keyframes"
-      },
-      {
         "@id": "urn:ngm:class:texture-map",
         "label": "Texture Map"
       }
@@ -115,10 +111,6 @@ public:: true
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:geometry-encoding",
-        "label": "Geometry Encoding"
-      },
       {
         "@id": "urn:ngm:class:coordinate-system",
         "label": "Coordinate System"
@@ -162,7 +154,7 @@ public:: true
         "label": "Binary Encoding"
       },
       {
-        "@id": "urn:ngm:class:compression-algorithm",
+        "@id": "urn:ngm:class:data-compression",
         "label": "Compression Algorithm"
       }
     ],
@@ -184,12 +176,6 @@ public:: true
       {
         "@id": "urn:ngm:class:pixar-animation-studios",
         "label": "Pixar Animation Studios"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:2-d-image-format",
-        "label": "2D Image Format"
       }
     ],
     "bridgesTo": [

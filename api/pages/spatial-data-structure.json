@@ -18,12 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:octree",
+        "id": "urn:ngm:class:octree-spatial-index",
         "label": "Octree"
-      },
-      {
-        "id": "urn:ngm:class:k-d-tree",
-        "label": "k-d Tree"
       },
       {
         "id": "urn:ngm:class:bounding-volume-hierarchy",
@@ -34,21 +30,13 @@
         "label": "BSP Tree"
       },
       {
-        "id": "urn:ngm:class:r-tree",
-        "label": "R-Tree"
-      },
-      {
         "id": "urn:ngm:class:quadtree",
         "label": "Quadtree"
-      },
-      {
-        "id": "urn:ngm:class:spatial-hash-grid",
-        "label": "Spatial Hash Grid"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:spatial-indexing",
+        "id": "urn:ngm:class:spatial-index",
         "label": "Spatial Indexing"
       }
     ],
@@ -70,7 +58,7 @@
         "label": "Frustum Culling"
       },
       {
-        "id": "urn:ngm:class:nearest-neighbour-search",
+        "id": "urn:ngm:class:nearest-neighbor-search",
         "label": "Nearest Neighbour Search"
       },
       {
@@ -82,10 +70,6 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:brute-force-collision",
-        "label": "Brute-Force Collision"
-      },
-      {
         "id": "urn:ngm:class:uniform-grid",
         "label": "Uniform Grid"
       }
@@ -94,10 +78,6 @@
       {
         "id": "urn:ngm:class:spatial-ai",
         "label": "Spatial AI"
-      },
-      {
-        "id": "urn:ngm:class:lidar-mapping",
-        "label": "LiDAR Mapping"
       }
     ],
     "uses": [
@@ -108,10 +88,6 @@
       {
         "id": "urn:ngm:class:bounding-volume",
         "label": "Bounding Volume"
-      },
-      {
-        "id": "urn:ngm:class:morton-code",
-        "label": "Morton Code"
       }
     ],
     "supports": [

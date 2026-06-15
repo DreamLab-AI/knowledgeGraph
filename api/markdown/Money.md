@@ -428,14 +428,6 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:acceptance-network",
-        "label": "Acceptance Network"
-      },
-      {
-        "@id": "urn:ngm:class:issuing-authority",
-        "label": "Issuing Authority"
-      },
-      {
         "@id": "urn:ngm:class:liquidity",
         "label": "Liquidity"
       },

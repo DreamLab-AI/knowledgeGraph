@@ -55,10 +55,6 @@
       {
         "id": "urn:ngm:class:real-time-captioning",
         "label": "Real-Time Captioning"
-      },
-      {
-        "id": "urn:ngm:class:clinical-documentation",
-        "label": "Clinical Documentation"
       }
     ],
     "dependsOn": [
@@ -125,7 +121,7 @@
         "label": "NIST"
       },
       {
-        "id": "urn:ngm:class:w3c-web-speech-api",
+        "id": "urn:ngm:class:w3-c-web-speech-api",
         "label": "W3C Web Speech API"
       }
     ],

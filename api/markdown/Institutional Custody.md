@@ -23,56 +23,113 @@ public:: true
   "definition": "Institutional custody is the regulated safekeeping of digital assets on behalf of organisations such as funds, exchanges, and corporations, combining cryptographic key-management infrastructure with legal, operational, and insurance controls that meet fiduciary standards. Providers use cold storage, multi-signature and multi-party-computation schemes, hardware security modules, and segregated accounts to protect client assets against theft, loss, and insider risk while supporting auditability and regulatory reporting. It is a precondition for large-scale institutional participation in crypto markets.",
   "domain": "finance",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:custody", "label": "Custody"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:custody",
+    "label": "Custody"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:cold-storage", "label": "Cold Storage"},
-      {"@id": "urn:ngm:class:hardware-security-module", "label": "Hardware Security Module"},
-      {"@id": "urn:ngm:class:multi-party-computation", "label": "Multi-Party Computation"},
-      {"@id": "urn:ngm:class:transaction-policy-engine", "label": "Transaction Policy Engine"}
+      {
+        "@id": "urn:ngm:class:cold-storage",
+        "label": "Cold Storage"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "@id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:key-management-infrastructure", "label": "Key Management Infrastructure"},
-      {"@id": "urn:ngm:class:segregated-accounts", "label": "Segregated Accounts"},
-      {"@id": "urn:ngm:class:soc-2-attestation", "label": "SOC 2 Attestation"}
+      {
+        "@id": "urn:ngm:class:key-management-system",
+        "label": "Key Management Infrastructure"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:institutional-investment", "label": "Institutional Investment"},
-      {"@id": "urn:ngm:class:spot-bitcoin-etf", "label": "Spot Bitcoin ETF"},
-      {"@id": "urn:ngm:class:qualified-custody", "label": "Qualified Custody"}
+      {
+        "@id": "urn:ngm:class:institutional-investment",
+        "label": "Institutional Investment"
+      },
+      {
+        "@id": "urn:ngm:class:spot-bitcoin-etf",
+        "label": "Spot Bitcoin ETF"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:multi-signature-wallet", "label": "Multi-Signature Wallet"},
-      {"@id": "urn:ngm:class:threshold-signature-scheme", "label": "Threshold Signature Scheme"}
+      {
+        "@id": "urn:ngm:class:multi-signature-wallet",
+        "label": "Multi-Signature Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature Scheme"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
-      {"@id": "urn:ngm:class:fiduciary-duty", "label": "Fiduciary Duty"}
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:fiduciary-duty",
+        "label": "Fiduciary Duty"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:segregation-of-duties", "label": "Segregation of Duties"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+      {
+        "@id": "urn:ngm:class:segregation-of-duties",
+        "label": "Segregation of Duties"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:regulatory-reporting", "label": "Regulatory Reporting"},
-      {"@id": "urn:ngm:class:digital-asset-custody", "label": "Digital Asset Custody"}
+      {
+        "@id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-custody",
+        "label": "Digital Asset Custody"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:self-custody", "label": "Self-Custody"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:traditional-asset-custody", "label": "Traditional Asset Custody"},
-      {"@id": "urn:ngm:class:securities-regulation", "label": "Securities Regulation"}
+      {
+        "@id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:insurance-for-digital-assets", "label": "Insurance for Digital Assets"},
-      {"@id": "urn:ngm:class:proof-of-reserves", "label": "Proof of Reserves"}
+      {
+        "@id": "urn:ngm:class:proof-of-reserves",
+        "label": "Proof of Reserves"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:qualified-custodian", "label": "Qualified Custodian"},
-    {"@id": "urn:ngm:class:digital-asset-custody", "label": "Digital Asset Custody"}
+    {
+      "@id": "urn:ngm:class:qualified-custodian",
+      "label": "Qualified Custodian"
+    },
+    {
+      "@id": "urn:ngm:class:digital-asset-custody",
+      "label": "Digital Asset Custody"
+    }
   ],
   "quality": 0.72,
   "provenance": {

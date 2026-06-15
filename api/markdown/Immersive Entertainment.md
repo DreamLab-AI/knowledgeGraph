@@ -80,10 +80,6 @@ public:: true
       {
         "@id": "urn:ngm:class:mixed-reality",
         "label": "Mixed Reality"
-      },
-      {
-        "@id": "urn:ngm:class:location-based-entertainment",
-        "label": "Location-Based Entertainment"
       }
     ],
     "requires": [
@@ -104,10 +100,6 @@ public:: true
       {
         "@id": "urn:ngm:class:interactive-storytelling",
         "label": "Interactive Storytelling"
-      },
-      {
-        "@id": "urn:ngm:class:social-virtual-reality",
-        "label": "Social Virtual Reality"
       },
       {
         "@id": "urn:ngm:class:user-generated-content",
@@ -134,7 +126,7 @@ public:: true
         "label": "Game Engine"
       },
       {
-        "@id": "urn:ngm:class:3d-graphics",
+        "@id": "urn:ngm:class:computer-graphics",
         "label": "3D Graphics"
       }
     ],
@@ -146,12 +138,6 @@ public:: true
       {
         "@id": "urn:ngm:class:telecollaboration",
         "label": "Telecollaboration"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:passive-media-consumption",
-        "label": "Passive Media Consumption"
       }
     ],
     "bridgesTo": [
@@ -170,11 +156,7 @@ public:: true
         "label": "Extended Reality"
       },
       {
-        "@id": "urn:ngm:class:theme-park-technology",
-        "label": "Theme Park Technology"
-      },
-      {
-        "@id": "urn:ngm:class:virtual-concert",
+        "@id": "urn:ngm:class:virtual-concerts",
         "label": "Virtual Concert"
       }
     ]
@@ -189,7 +171,7 @@ public:: true
       "label": "Immersive Experience"
     }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

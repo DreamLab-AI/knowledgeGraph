@@ -54,10 +54,6 @@
       {
         "id": "urn:ngm:class:linked-data-platform",
         "label": "Linked Data Platform"
-      },
-      {
-        "id": "urn:ngm:class:five-star-data",
-        "label": "Five-Star Data"
       }
     ],
     "contrastsWith": [
@@ -86,7 +82,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {

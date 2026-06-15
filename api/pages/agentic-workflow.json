@@ -20,14 +20,6 @@
       {
         "id": "urn:ngm:class:plan-and-execute-pattern",
         "label": "Plan and Execute Pattern"
-      },
-      {
-        "id": "urn:ngm:class:reflection-pattern",
-        "label": "Reflection Pattern"
-      },
-      {
-        "id": "urn:ngm:class:tool-call-loop",
-        "label": "Tool Call Loop"
       }
     ],
     "requires": [
@@ -60,15 +52,11 @@
       {
         "id": "urn:ngm:class:autonomous-coding",
         "label": "Autonomous Coding"
-      },
-      {
-        "id": "urn:ngm:class:ai-research-assistant",
-        "label": "AI Research Assistant"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:llm-inference",
+        "id": "urn:ngm:class:inference",
         "label": "LLM Inference"
       },
       {
@@ -81,10 +69,6 @@
       {
         "id": "urn:ngm:class:single-turn-inference",
         "label": "Single-Turn Inference"
-      },
-      {
-        "id": "urn:ngm:class:traditional-workflow-orchestration",
-        "label": "Traditional Workflow Orchestration"
       }
     ],
     "bridgesTo": [
@@ -123,7 +107,7 @@
         "label": "Prompt Engineering"
       },
       {
-        "id": "urn:ngm:class:react-pattern",
+        "id": "urn:ngm:class:re-act-pattern",
         "label": "ReAct Pattern"
       }
     ],

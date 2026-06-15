@@ -52,10 +52,6 @@
       {
         "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
-      },
-      {
-        "id": "urn:ngm:class:microtransaction",
-        "label": "Microtransaction"
       }
     ],
     "dependsOn": [],
@@ -74,10 +70,6 @@
       {
         "id": "urn:ngm:class:autonomous-agent",
         "label": "Autonomous Agent"
-      },
-      {
-        "id": "urn:ngm:class:ai-driven-finance",
-        "label": "AI-Driven Finance"
       }
     ],
     "uses": [
@@ -105,7 +97,7 @@
         "label": "PCI DSS"
       },
       {
-        "id": "urn:ngm:class:swift-network",
+        "id": "urn:ngm:class:swift",
         "label": "SWIFT Network"
       }
     ],

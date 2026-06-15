@@ -79,7 +79,7 @@ public:: true
         "label": "Pre-Trained Model"
       },
       {
-        "@id": "urn:ngm:class:matrix-decomposition",
+        "@id": "urn:ngm:class:matrix-factorisation",
         "label": "Matrix Decomposition"
       }
     ],
@@ -89,7 +89,7 @@ public:: true
         "label": "Transfer Learning"
       },
       {
-        "@id": "urn:ngm:class:model-fine-tuning",
+        "@id": "urn:ngm:class:fine-tuning",
         "label": "Model Fine-Tuning"
       },
       {
@@ -99,11 +99,7 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:low-rank-matrix",
-        "label": "Low-Rank Matrix"
-      },
-      {
-        "@id": "urn:ngm:class:adapter-module",
+        "@id": "urn:ngm:class:adapter-modules",
         "label": "Adapter Module"
       }
     ],

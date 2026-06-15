@@ -110,48 +110,24 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:qo-s-policy",
-        "label": "QoS Policy"
-      },
-      {
-        "@id": "urn:ngm:class:resource-allocation-unit",
+        "@id": "urn:ngm:class:resource-allocation",
         "label": "Resource Allocation Unit"
       },
       {
         "@id": "urn:ngm:class:service-level-agreement",
         "label": "Service Level Agreement"
-      },
-      {
-        "@id": "urn:ngm:class:traffic-classifier",
-        "label": "Traffic Classifier"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:6-g-network-infrastructure",
+        "@id": "urn:ngm:class:network-infrastructure",
         "label": "6G Network Infrastructure"
-      },
-      {
-        "@id": "urn:ngm:class:network-slicing-orchestrator",
-        "label": "Network Slicing Orchestrator"
-      },
-      {
-        "@id": "urn:ngm:class:sdn-controller",
-        "label": "SDN Controller"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:dynamic-resource-allocation",
+        "@id": "urn:ngm:class:resource-allocation",
         "label": "Dynamic Resource Allocation"
-      },
-      {
-        "@id": "urn:ngm:class:low-latency-service",
-        "label": "Low Latency Service"
-      },
-      {
-        "@id": "urn:ngm:class:workload-isolation",
-        "label": "Workload Isolation"
       },
       {
         "@id": "urn:ngm:class:guaranteed-bandwidth",

@@ -544,36 +544,6 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:asic-manufacturer-duopoly",
-        "label": "ASIC Manufacturer Duopoly"
-      },
-      {
-        "@id": "urn:ngm:class:custodial-concentration",
-        "label": "Custodial Concentration"
-      },
-      {
-        "@id": "urn:ngm:class:developer-centralisation",
-        "label": "Developer Centralisation"
-      },
-      {
-        "@id": "urn:ngm:class:geographic-hashrate-concentration",
-        "label": "Geographic Hashrate Concentration"
-      },
-      {
-        "@id": "urn:ngm:class:institutional-holder-concentration",
-        "label": "Institutional Holder Concentration"
-      },
-      {
-        "@id": "urn:ngm:class:lightning-network-hub-centralisation",
-        "label": "Lightning Network Hub Centralisation"
-      },
-      {
-        "@id": "urn:ngm:class:mining-pool-concentration",
-        "label": "Mining Pool Concentration"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:asic",
@@ -606,10 +576,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:protocol-capture",
-        "label": "Protocol Capture"
-      },
-      {
         "@id": "urn:ngm:class:regulatory-capture",
         "label": "Regulatory Capture"
       },
@@ -636,24 +602,12 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:gini-coefficient-analysis",
+        "@id": "urn:ngm:class:gini-coefficient",
         "label": "Gini Coefficient Analysis"
-      },
-      {
-        "@id": "urn:ngm:class:hashrate-distribution-analysis",
-        "label": "Hashrate Distribution Analysis"
-      },
-      {
-        "@id": "urn:ngm:class:herfindahl-hirschman-index",
-        "label": "Herfindahl-Hirschman Index"
       },
       {
         "@id": "urn:ngm:class:nakamoto-coefficient",
         "label": "Nakamoto Coefficient"
-      },
-      {
-        "@id": "urn:ngm:class:network-topology-analysis",
-        "label": "Network Topology Analysis"
       }
     ],
     "uses": [
@@ -662,16 +616,8 @@ public:: true
         "label": "Custodial Wallet"
       },
       {
-        "@id": "urn:ngm:class:hash-power",
-        "label": "Hash Power"
-      },
-      {
         "@id": "urn:ngm:class:institutional-custody",
         "label": "Institutional Custody"
-      },
-      {
-        "@id": "urn:ngm:class:lightning-channel",
-        "label": "Lightning Channel"
       },
       {
         "@id": "urn:ngm:class:open-source-development",
@@ -708,20 +654,8 @@ public:: true
         "label": "Coinbase"
       },
       {
-        "@id": "urn:ngm:class:exchange",
-        "label": "Exchange"
-      },
-      {
-        "@id": "urn:ngm:class:foundry-usa",
-        "label": "Foundry USA"
-      },
-      {
         "@id": "urn:ngm:class:micro-bt",
         "label": "MicroBT"
-      },
-      {
-        "@id": "urn:ngm:class:regulatory-risk",
-        "label": "Regulatory Risk"
       },
       {
         "@id": "urn:ngm:class:stratum-v2",
@@ -762,18 +696,6 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:decentralisation-monitoring",
-        "label": "Decentralisation Monitoring"
-      },
-      {
-        "@id": "urn:ngm:class:governance-reform",
-        "label": "Governance Reform"
-      },
-      {
-        "@id": "urn:ngm:class:network-security-analysis",
-        "label": "Network Security Analysis"
-      },
-      {
         "@id": "urn:ngm:class:self-custody",
         "label": "Self-Custody"
       },
@@ -783,18 +705,6 @@ public:: true
       }
     ],
     "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:bis-crypto-risk-assessment-framework",
-        "label": "BIS Crypto Risk Assessment Framework"
-      },
-      {
-        "@id": "urn:ngm:class:cambridge-centre-for-alternative-finance-mining-reports",
-        "label": "Cambridge Centre for Alternative Finance Mining Reports"
-      },
-      {
-        "@id": "urn:ngm:class:fsb-crypto-asset-monitoring-framework",
-        "label": "FSB Crypto Asset Monitoring Framework"
-      },
       {
         "@id": "urn:ngm:class:nakamoto-coefficient",
         "label": "Nakamoto Coefficient"

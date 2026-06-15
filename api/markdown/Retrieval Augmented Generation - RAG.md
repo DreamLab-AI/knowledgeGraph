@@ -386,7 +386,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:chunking-strategy",
+        "@id": "urn:ngm:class:chunking",
         "label": "Chunking Strategy"
       },
       {
@@ -402,10 +402,6 @@ public:: true
         "label": "Generator"
       },
       {
-        "@id": "urn:ngm:class:passage-encoder",
-        "label": "Passage Encoder"
-      },
-      {
         "@id": "urn:ngm:class:prompt-template",
         "label": "Prompt Template"
       },
@@ -418,17 +414,13 @@ public:: true
         "label": "Reranker"
       },
       {
-        "@id": "urn:ngm:class:retriever",
-        "label": "Retriever"
-      },
-      {
         "@id": "urn:ngm:class:vector-index",
         "label": "Vector Index"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:corpus-preprocessing",
+        "@id": "urn:ngm:class:data-preprocessing",
         "label": "Corpus Preprocessing"
       },
       {
@@ -458,11 +450,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:citation-generation",
-        "label": "Citation Generation"
-      },
-      {
-        "@id": "urn:ngm:class:domain-adaptation-without-fine-tuning",
+        "@id": "urn:ngm:class:domain-adaptation",
         "label": "Domain Adaptation Without Fine-Tuning"
       },
       {
@@ -474,16 +462,8 @@ public:: true
         "label": "Hallucination Reduction"
       },
       {
-        "@id": "urn:ngm:class:knowledge-currency",
-        "label": "Knowledge Currency"
-      },
-      {
         "@id": "urn:ngm:class:multi-hop-reasoning",
         "label": "Multi-Hop Reasoning"
-      },
-      {
-        "@id": "urn:ngm:class:verifiable-ai-outputs",
-        "label": "Verifiable AI Outputs"
       }
     ],
     "implements": [
@@ -494,10 +474,6 @@ public:: true
       {
         "@id": "urn:ngm:class:bm25",
         "label": "BM25"
-      },
-      {
-        "@id": "urn:ngm:class:col-bertv2",
-        "label": "ColBERTv2"
       },
       {
         "@id": "urn:ngm:class:contextual-retrieval",
@@ -512,20 +488,8 @@ public:: true
         "label": "GraphRAG"
       },
       {
-        "@id": "urn:ngm:class:hy-de",
-        "label": "HyDE"
-      },
-      {
         "@id": "urn:ngm:class:hybrid-search",
         "label": "Hybrid Search"
-      },
-      {
-        "@id": "urn:ngm:class:raptor",
-        "label": "RAPTOR"
-      },
-      {
-        "@id": "urn:ngm:class:self-rag",
-        "label": "Self-RAG"
       }
     ],
     "uses": [
@@ -602,10 +566,6 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:code-navigation",
-        "label": "Code Navigation"
-      },
-      {
         "@id": "urn:ngm:class:customer-support-automation",
         "label": "Customer Support Automation"
       },
@@ -618,10 +578,6 @@ public:: true
         "label": "Legal AI"
       },
       {
-        "@id": "urn:ngm:class:scientific-literature-mining",
-        "label": "Scientific Literature Mining"
-      },
-      {
         "@id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
       },
@@ -632,24 +588,12 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:ares-framework",
-        "label": "ARES Framework"
-      },
-      {
         "@id": "urn:ngm:class:beir-benchmark",
         "label": "BEIR Benchmark"
       },
       {
         "@id": "urn:ngm:class:mteb-benchmark",
         "label": "MTEB Benchmark"
-      },
-      {
-        "@id": "urn:ngm:class:ragas-framework",
-        "label": "RAGAS Framework"
-      },
-      {
-        "@id": "urn:ngm:class:trec-deep-learning-track",
-        "label": "TREC Deep Learning Track"
       }
     ]
   },

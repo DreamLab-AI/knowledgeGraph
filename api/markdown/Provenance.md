@@ -69,7 +69,7 @@ public:: true
         "label": "Audit Trail"
       },
       {
-        "@id": "urn:ngm:class:lineage-metadata",
+        "@id": "urn:ngm:class:data-lineage",
         "label": "Lineage Metadata"
       },
       {
@@ -131,7 +131,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:w3c-prov",
+        "@id": "urn:ngm:class:w3-c-prov",
         "label": "W3C PROV"
       }
     ],
@@ -147,7 +147,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:verifiable-credential",
+        "@id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       },
       {
@@ -157,11 +157,11 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:w3c-prov",
+        "@id": "urn:ngm:class:w3-c-prov",
         "label": "W3C PROV"
       },
       {
-        "@id": "urn:ngm:class:prov-o",
+        "@id": "urn:ngm:class:provenance-ontology-prov-o",
         "label": "PROV-O Ontology"
       }
     ],
@@ -179,10 +179,6 @@ public:: true
       {
         "@id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
-      },
-      {
-        "@id": "urn:ngm:class:machine-learning-dataset",
-        "label": "Machine Learning Dataset"
       },
       {
         "@id": "urn:ngm:class:scientific-reproducibility",

@@ -142,15 +142,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:axiom-rules",
-        "label": "Axiom Rules"
-      },
-      {
-        "@id": "urn:ngm:class:inference-rules",
-        "label": "Inference Rules"
-      },
-      {
-        "@id": "urn:ngm:class:property-definitions",
+        "@id": "urn:ngm:class:ontology-property-definitions",
         "label": "Property Definitions"
       },
       {
@@ -168,10 +160,6 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:owl-2-reasoner",
-        "label": "OWL 2 Reasoner"
-      },
-      {
         "@id": "urn:ngm:class:rdf-triple-store",
         "label": "RDF Triple Store"
       },
@@ -186,10 +174,6 @@ public:: true
         "label": "Automated Reasoning"
       },
       {
-        "@id": "urn:ngm:class:ontology-based-data-access",
-        "label": "Ontology-Based Data Access"
-      },
-      {
         "@id": "urn:ngm:class:semantic-interoperability",
         "label": "Semantic Interoperability"
       },
@@ -200,7 +184,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:knowledge-representation-system",
+        "@id": "urn:ngm:class:knowledge-representation",
         "label": "Knowledge Representation System"
       },
       {

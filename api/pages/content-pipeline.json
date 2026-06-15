@@ -22,10 +22,6 @@
         "label": "Asset Pipeline"
       },
       {
-        "id": "urn:ngm:class:build-system",
-        "label": "Build System"
-      },
-      {
         "id": "urn:ngm:class:data-ingestion",
         "label": "Data Ingestion"
       },
@@ -64,12 +60,7 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:manual-asset-processing",
-        "label": "Manual Asset Processing"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:cloud-computing",

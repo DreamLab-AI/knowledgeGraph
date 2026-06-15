@@ -20,14 +20,6 @@
       {
         "id": "urn:ngm:class:export-controls",
         "label": "Export Controls"
-      },
-      {
-        "id": "urn:ngm:class:compute-reporting",
-        "label": "Compute Reporting"
-      },
-      {
-        "id": "urn:ngm:class:hardware-attestation",
-        "label": "Hardware Attestation"
       }
     ],
     "requires": [
@@ -48,14 +40,6 @@
       {
         "id": "urn:ngm:class:ai-safety",
         "label": "AI Safety"
-      },
-      {
-        "id": "urn:ngm:class:frontier-model-oversight",
-        "label": "Frontier Model Oversight"
-      },
-      {
-        "id": "urn:ngm:class:compute-threshold-monitoring",
-        "label": "Compute Threshold Monitoring"
       }
     ],
     "dependsOn": [
@@ -78,7 +62,7 @@
         "label": "AI Policy"
       },
       {
-        "id": "urn:ngm:class:technology-export-regulation",
+        "id": "urn:ngm:class:export-controls",
         "label": "Technology Export Regulation"
       }
     ],
@@ -136,10 +120,6 @@
       {
         "id": "urn:ngm:class:ai-risks",
         "label": "AI Risks"
-      },
-      {
-        "id": "urn:ngm:class:geopolitics-of-ai",
-        "label": "Geopolitics of AI"
       },
       {
         "id": "urn:ngm:class:large-language-model",

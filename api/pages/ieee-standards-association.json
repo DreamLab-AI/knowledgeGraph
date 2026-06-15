@@ -26,11 +26,7 @@
         "label": "IEEE Control Systems Society"
       },
       {
-        "id": "urn:ngm:class:ieee-sa-standards-board",
-        "label": "IEEE SA Standards Board"
-      },
-      {
-        "id": "urn:ngm:class:ieee-802-committee",
+        "id": "urn:ngm:class:ieee-802-x",
         "label": "IEEE 802 Committee"
       }
     ],
@@ -38,10 +34,6 @@
       {
         "id": "urn:ngm:class:working-group",
         "label": "Working Group"
-      },
-      {
-        "id": "urn:ngm:class:balloting-process",
-        "label": "Balloting Process"
       }
     ],
     "enables": [
@@ -52,24 +44,12 @@
       {
         "id": "urn:ngm:class:technical-standards",
         "label": "Technical Standards"
-      },
-      {
-        "id": "urn:ngm:class:product-certification",
-        "label": "Product Certification"
-      },
-      {
-        "id": "urn:ngm:class:consensus-based-standardization",
-        "label": "Consensus-Based Standardization"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:ansi-accreditation",
-        "label": "ANSI Accreditation"
-      },
-      {
-        "id": "urn:ngm:class:open-standards-process",
+        "id": "urn:ngm:class:open-standards",
         "label": "Open Standards Process"
       }
     ],

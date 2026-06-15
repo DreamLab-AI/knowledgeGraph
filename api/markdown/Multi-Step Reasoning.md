@@ -23,53 +23,121 @@ public:: true
   "definition": "Multi-step reasoning is the capacity of an AI system to solve problems that require chaining several intermediate inferences, rather than mapping an input directly to an answer in a single step. It encompasses decomposing a problem into sub-problems, maintaining and updating intermediate state, and composing partial results into a final solution. In large language models it is elicited through chain-of-thought prompting, tool use, and search over reasoning paths, and it is a primary differentiator between shallow pattern completion and genuine problem-solving competence.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:reasoning", "label": "Reasoning"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:reasoning",
+      "label": "Reasoning"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:problem-decomposition", "label": "Problem Decomposition"},
-      {"@id": "urn:ngm:class:intermediate-state-tracking", "label": "Intermediate State Tracking"},
-      {"@id": "urn:ngm:class:step-verification", "label": "Step Verification"}
+      {
+        "@id": "urn:ngm:class:task-decomposition",
+        "label": "Problem Decomposition"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:cognitive-architecture", "label": "Cognitive Architecture"}
+      {
+        "@id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:working-memory", "label": "Working Memory"},
-      {"@id": "urn:ngm:class:self-consistency", "label": "Self-Consistency"}
+      {
+        "@id": "urn:ngm:class:working-memory",
+        "label": "Working Memory"
+      },
+      {
+        "@id": "urn:ngm:class:self-consistency",
+        "label": "Self-Consistency"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:chain-of-thought", "label": "Chain of Thought"},
-      {"@id": "urn:ngm:class:chain-of-thought-prompting", "label": "Chain-of-Thought Prompting"},
-      {"@id": "urn:ngm:class:tree-of-thought", "label": "Tree of Thought"},
-      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"}
+      {
+        "@id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-thought-prompting",
+        "label": "Chain-of-Thought Prompting"
+      },
+      {
+        "@id": "urn:ngm:class:tree-of-thoughts",
+        "label": "Tree of Thought"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:reasoning-engine", "label": "Reasoning Engine"},
-      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
-      {"@id": "urn:ngm:class:complex-question-answering", "label": "Complex Question Answering"}
+      {
+        "@id": "urn:ngm:class:reasoning-engine",
+        "label": "Reasoning Engine"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Complex Question Answering"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:single-step-inference", "label": "Single-Step Inference"},
-      {"@id": "urn:ngm:class:pattern-matching", "label": "Pattern Matching"}
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Single-Step Inference"
+      },
+      {
+        "@id": "urn:ngm:class:pattern-matching",
+        "label": "Pattern Matching"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:llm-agents", "label": "LLM Agents"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:planning", "label": "Planning"},
-      {"@id": "urn:ngm:class:mathematical-reasoning", "label": "Mathematical Reasoning"}
+      {
+        "@id": "urn:ngm:class:llm-agents",
+        "label": "LLM Agents"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:planning",
+        "label": "Planning"
+      },
+      {
+        "@id": "urn:ngm:class:mathematical-reasoning",
+        "label": "Mathematical Reasoning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:automated-reasoning", "label": "Automated Reasoning"},
-      {"@id": "urn:ngm:class:knowledge-graph-inference", "label": "Knowledge Graph Inference"}
+      {
+        "@id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:chained-reasoning", "label": "Chained Reasoning"},
-    {"@id": "urn:ngm:class:multi-hop-reasoning", "label": "Multi-Hop Reasoning"}
+    {
+      "@id": "urn:ngm:class:chained-reasoning",
+      "label": "Chained Reasoning"
+    },
+    {
+      "@id": "urn:ngm:class:multi-hop-reasoning",
+      "label": "Multi-Hop Reasoning"
+    }
   ],
   "quality": 0.72,
   "provenance": {

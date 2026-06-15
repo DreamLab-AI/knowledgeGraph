@@ -95,10 +95,6 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:on-premise-infrastructure",
-        "label": "On-Premise Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
       }
@@ -109,7 +105,7 @@
         "label": "Foundation Model"
       },
       {
-        "id": "urn:ngm:class:ai-inference-infrastructure",
+        "id": "urn:ngm:class:inference-infrastructure",
         "label": "AI Inference Infrastructure"
       }
     ],
@@ -172,10 +168,6 @@
       {
         "id": "urn:ngm:class:platform-governance",
         "label": "Platform Governance"
-      },
-      {
-        "id": "urn:ngm:class:multi-cloud-strategy",
-        "label": "Multi-Cloud Strategy"
       }
     ]
   },

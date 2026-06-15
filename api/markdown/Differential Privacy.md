@@ -75,51 +75,113 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:laplace-mechanism", "label": "Laplace Mechanism"},
-      {"@id": "urn:ngm:class:gaussian-mechanism", "label": "Gaussian Mechanism"},
-      {"@id": "urn:ngm:class:exponential-mechanism", "label": "Exponential Mechanism"},
-      {"@id": "urn:ngm:class:privacy-budget-management", "label": "Privacy Budget Management"}
+      {
+        "@id": "urn:ngm:class:laplace-mechanism",
+        "label": "Laplace Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-mechanism",
+        "label": "Gaussian Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-budget-management",
+        "label": "Privacy Budget Management"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:noise-addition", "label": "Noise Addition"},
-      {"@id": "urn:ngm:class:sensitivity-analysis", "label": "Sensitivity Analysis"}
+      {
+        "@id": "urn:ngm:class:sensitivity-analysis",
+        "label": "Sensitivity Analysis"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
-      {"@id": "urn:ngm:class:federated-edge-learning", "label": "Federated Edge Learning"},
-      {"@id": "urn:ngm:class:privacy-preserving-machine-learning", "label": "Privacy-Preserving Machine Learning"},
-      {"@id": "urn:ngm:class:private-data-release", "label": "Private Data Release"}
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "@id": "urn:ngm:class:federated-edge-learning",
+        "label": "Federated Edge Learning"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-machine-learning",
+        "label": "Privacy-Preserving Machine Learning"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:privacy-mechanism", "label": "Privacy Mechanism"}
+      {
+        "@id": "urn:ngm:class:privacy-mechanism",
+        "label": "Privacy Mechanism"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"},
-      {"@id": "urn:ngm:class:composition-theorem", "label": "Composition Theorem"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"}
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:k-anonymity", "label": "K-Anonymity"},
-      {"@id": "urn:ngm:class:data-anonymisation", "label": "Data Anonymisation"}
+      {
+        "@id": "urn:ngm:class:k-anonymity",
+        "label": "K-Anonymity"
+      },
+      {
+        "@id": "urn:ngm:class:anonymisation",
+        "label": "Data Anonymisation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"},
-      {"@id": "urn:ngm:class:secure-multi-party-computation", "label": "Secure Multi-Party Computation"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:dp-privacy", "label": "DP Privacy"},
-    {"@id": "urn:ngm:class:epsilon-differential-privacy", "label": "Epsilon-Differential Privacy"}
+    {
+      "@id": "urn:ngm:class:dp-privacy",
+      "label": "DP Privacy"
+    },
+    {
+      "@id": "urn:ngm:class:epsilon-differential-privacy",
+      "label": "Epsilon-Differential Privacy"
+    }
   ],
   "quality": 0.8,
   "provenance": {

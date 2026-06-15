@@ -106,7 +106,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:metaverse-creation",
+        "@id": "urn:ngm:class:metaverse-content-creation",
         "label": "Metaverse Creation"
       },
       {

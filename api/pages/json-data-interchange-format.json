@@ -18,22 +18,14 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:json-object",
-        "label": "JSON Object"
-      },
-      {
-        "id": "urn:ngm:class:json-array",
-        "label": "JSON Array"
-      },
-      {
-        "id": "urn:ngm:class:json-schema",
+        "id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       }
     ],
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
@@ -50,16 +42,7 @@
       }
     ],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:ecma-404",
-        "label": "ECMA-404"
-      },
-      {
-        "id": "urn:ngm:class:rfc-8259",
-        "label": "RFC 8259"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:xml",
@@ -92,15 +75,11 @@
         "label": "RDF"
       },
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       }
     ],
     "uses": [
-      {
-        "id": "urn:ngm:class:utf-8-encoding",
-        "label": "UTF-8 Encoding"
-      },
       {
         "id": "urn:ngm:class:unicode",
         "label": "Unicode"
@@ -124,10 +103,6 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:data-interchange",
-        "label": "Data Interchange"
-      },
-      {
         "id": "urn:ngm:class:serialisation",
         "label": "Serialisation"
       },
@@ -140,7 +115,7 @@
         "label": "JavaScript"
       },
       {
-        "id": "urn:ngm:class:data-serialisation-format",
+        "id": "urn:ngm:class:serialisation-format",
         "label": "Data Serialisation Format"
       }
     ]

@@ -39,50 +39,127 @@ alias:: LinkedData
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:http", "label": "HTTP"},
-      {"@id": "urn:ngm:class:uri", "label": "URI"}
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "@id": "urn:ngm:class:uri",
+        "label": "URI"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:sparql", "label": "SPARQL"},
-      {"@id": "urn:ngm:class:turtle", "label": "Turtle"},
-      {"@id": "urn:ngm:class:owl", "label": "OWL"},
-      {"@id": "urn:ngm:class:schema-org", "label": "Schema.org"}
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "@id": "urn:ngm:class:turtle",
+        "label": "Turtle"
+      },
+      {
+        "@id": "urn:ngm:class:owl",
+        "label": "OWL"
+      },
+      {
+        "@id": "urn:ngm:class:schema-org",
+        "label": "Schema.org"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"},
-      {"@id": "urn:ngm:class:federated-query", "label": "Federated Query"},
-      {"@id": "urn:ngm:class:open-data", "label": "Open Data"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "@id": "urn:ngm:class:federated-query",
+        "label": "Federated Query"
+      },
+      {
+        "@id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:linked-data-platform", "label": "Linked Data Platform"},
-      {"@id": "urn:ngm:class:five-star-data", "label": "Five-Star Data"}
+      {
+        "@id": "urn:ngm:class:linked-data-platform",
+        "label": "Linked Data Platform"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:w3c", "label": "W3C"},
-      {"@id": "urn:ngm:class:rdf-schema", "label": "RDF Schema"}
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "@id": "urn:ngm:class:rdf-schema",
+        "label": "RDF Schema"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:relational-database", "label": "Relational Database"},
-      {"@id": "urn:ngm:class:data-silo", "label": "Data Silo"}
+      {
+        "@id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      },
+      {
+        "@id": "urn:ngm:class:data-silo",
+        "label": "Data Silo"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:entity-linking", "label": "Entity Linking"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:entity-linking",
+        "label": "Entity Linking"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:wikidata", "label": "Wikidata"},
-      {"@id": "urn:ngm:class:dbpedia", "label": "DBpedia"},
-      {"@id": "urn:ngm:class:dublin-core", "label": "Dublin Core"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:wikidata",
+        "label": "Wikidata"
+      },
+      {
+        "@id": "urn:ngm:class:dbpedia",
+        "label": "DBpedia"
+      },
+      {
+        "@id": "urn:ngm:class:dublin-core",
+        "label": "Dublin Core"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:web-of-data", "label": "Web of Data"},
-    {"@id": "urn:ngm:class:linked-open-data", "label": "Linked Open Data"}
+    {
+      "@id": "urn:ngm:class:web-of-data",
+      "label": "Web of Data"
+    },
+    {
+      "@id": "urn:ngm:class:linked-open-data",
+      "label": "Linked Open Data"
+    }
   ],
   "quality": 0.74,
   "provenance": {

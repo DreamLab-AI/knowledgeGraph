@@ -104,10 +104,6 @@ public:: true
         "label": "Hazard Analysis"
       },
       {
-        "@id": "urn:ngm:class:testing-and-validation",
-        "label": "Testing & Validation"
-      },
-      {
         "@id": "urn:ngm:class:safety-integrity-level",
         "label": "Safety Integrity Level"
       },
@@ -118,16 +114,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:human-robot-safety",
+        "@id": "urn:ngm:class:robot-safety",
         "label": "Human-Robot Safety"
-      },
-      {
-        "@id": "urn:ngm:class:liability-mitigation",
-        "label": "Liability Mitigation"
-      },
-      {
-        "@id": "urn:ngm:class:safe-operation-certification",
-        "label": "Safe Operation Certification"
       },
       {
         "@id": "urn:ngm:class:safety-case",
@@ -194,16 +182,6 @@ public:: true
       {
         "@id": "urn:ngm:class:governance",
         "label": "Governance"
-      }
-    ],
-    "relatedTo": [
-      {
-        "@id": "urn:ngm:class:dependability",
-        "label": "Dependability"
-      },
-      {
-        "@id": "urn:ngm:class:alarm-management",
-        "label": "Alarm Management"
       }
     ]
   },

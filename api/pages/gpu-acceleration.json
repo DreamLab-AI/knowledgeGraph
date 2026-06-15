@@ -22,10 +22,6 @@
         "label": "Tensor Core"
       },
       {
-        "id": "urn:ngm:class:streaming-multiprocessor",
-        "label": "Streaming Multiprocessor"
-      },
-      {
         "id": "urn:ngm:class:high-bandwidth-memory",
         "label": "High Bandwidth Memory"
       }
@@ -54,7 +50,7 @@
         "label": "Inference"
       },
       {
-        "id": "urn:ngm:class:real-time-ray-tracing",
+        "id": "urn:ngm:class:ray-tracing",
         "label": "Real-Time Ray Tracing"
       },
       {
@@ -74,10 +70,6 @@
       {
         "id": "urn:ngm:class:memory-bandwidth",
         "label": "Memory Bandwidth"
-      },
-      {
-        "id": "urn:ngm:class:pcie-interconnect",
-        "label": "PCIe Interconnect"
       }
     ],
     "implements": [],

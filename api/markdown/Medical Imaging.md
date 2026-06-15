@@ -38,50 +38,119 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:image-segmentation", "label": "Image Segmentation"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:clinical-decision-support", "label": "Clinical Decision Support"},
-      {"@id": "urn:ngm:class:radiology-ai", "label": "Radiology AI"},
-      {"@id": "urn:ngm:class:surgical-robotics", "label": "Surgical Robotics"},
-      {"@id": "urn:ngm:class:precision-medicine", "label": "Precision Medicine"}
+      {
+        "@id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      },
+      {
+        "@id": "urn:ngm:class:radiology-ai",
+        "label": "Radiology AI"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-robotics",
+        "label": "Surgical Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:precision-medicine",
+        "label": "Precision Medicine"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:image-reconstruction", "label": "Image Reconstruction"},
-      {"@id": "urn:ngm:class:image-segmentation", "label": "Image Segmentation"},
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"}
+      {
+        "@id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:dicom", "label": "DICOM"},
-      {"@id": "urn:ngm:class:data-annotation", "label": "Data Annotation"},
-      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"}
+      {
+        "@id": "urn:ngm:class:dicom",
+        "label": "DICOM"
+      },
+      {
+        "@id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:dicom", "label": "DICOM"},
-      {"@id": "urn:ngm:class:hl7-fhir", "label": "HL7 FHIR"}
+      {
+        "@id": "urn:ngm:class:dicom",
+        "label": "DICOM"
+      },
+      {
+        "@id": "urn:ngm:class:hl7-fhir",
+        "label": "HL7 FHIR"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:healthcare-ai", "label": "Healthcare AI"},
-      {"@id": "urn:ngm:class:digital-pathology", "label": "Digital Pathology"},
-      {"@id": "urn:ngm:class:radiomics", "label": "Radiomics"},
-      {"@id": "urn:ngm:class:electronic-health-record", "label": "Electronic Health Record"}
+      {
+        "@id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      },
+      {
+        "@id": "urn:ngm:class:electronic-health-record",
+        "label": "Electronic Health Record"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:biomedical-imaging", "label": "Biomedical Imaging"},
-    {"@id": "urn:ngm:class:clinical-imaging", "label": "Clinical Imaging"}
+    {
+      "@id": "urn:ngm:class:biomedical-imaging",
+      "label": "Biomedical Imaging"
+    },
+    {
+      "@id": "urn:ngm:class:clinical-imaging",
+      "label": "Clinical Imaging"
+    }
   ],
   "quality": 0.74,
   "provenance": {

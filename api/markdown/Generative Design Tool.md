@@ -138,27 +138,15 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:3-d-generator",
-        "label": "3D Generator"
-      },
-      {
         "@id": "urn:ngm:class:ai-model",
         "label": "AI Model"
       },
       {
         "@id": "urn:ngm:class:constraint-solver",
         "label": "Constraint Solver"
-      },
-      {
-        "@id": "urn:ngm:class:design-optimizer",
-        "label": "Design Optimizer"
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:design-database",
-        "label": "Design Database"
-      },
       {
         "@id": "urn:ngm:class:compute-infrastructure",
         "label": "Compute Infrastructure"
@@ -172,10 +160,6 @@ public:: true
       {
         "@id": "urn:ngm:class:automated-design",
         "label": "Automated Design"
-      },
-      {
-        "@id": "urn:ngm:class:design-optimization",
-        "label": "Design Optimization"
       },
       {
         "@id": "urn:ngm:class:constraint-based-design",

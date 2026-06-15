@@ -23,53 +23,137 @@ public:: true
   "definition": "OpenCV (Open Source Computer Vision Library) is a BSD-licensed open-source library providing over 2,500 optimised algorithms for real-time computer vision, image processing, and machine learning, originally developed by Intel and now maintained by the OpenCV Foundation. It supports C++, Python, Java, and JavaScript bindings and runs on Linux, Windows, macOS, iOS, and Android. The library encompasses classical algorithms for feature detection, camera calibration, stereo vision, optical flow, and object tracking, as well as deep learning inference through the DNN module, which supports models from TensorFlow, PyTorch, and ONNX. OpenCV is the de facto standard toolkit for robotics perception pipelines, augmented reality applications, and embedded vision systems.",
   "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:computer-vision-system", "label": "Computer Vision System"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:computer-vision-system",
+    "label": "Computer Vision System"
+  },
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:image-processing-software", "label": "Image Processing Software"},
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
-      {"@id": "urn:ngm:class:optical-flow", "label": "Optical Flow"},
-      {"@id": "urn:ngm:class:stereo-vision", "label": "Stereo Vision"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:image-processing-software",
+        "label": "Image Processing Software"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:optical-flow",
+        "label": "Optical Flow"
+      },
+      {
+        "@id": "urn:ngm:class:stereo-vision",
+        "label": "Stereo Vision"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"},
-      {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"},
-      {"@id": "urn:ngm:class:object-detection-and-tracking", "label": "Object Detection and Tracking"},
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
-      {"@id": "urn:ngm:class:background-subtraction", "label": "Background Subtraction"},
-      {"@id": "urn:ngm:class:face-recognition", "label": "Face Recognition"}
+      {
+        "@id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection-and-tracking",
+        "label": "Object Detection and Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:background-subtraction",
+        "label": "Background Subtraction"
+      },
+      {
+        "@id": "urn:ngm:class:face-recognition",
+        "label": "Face Recognition"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
-      {"@id": "urn:ngm:class:image-segmentation", "label": "Image Segmentation"},
-      {"@id": "urn:ngm:class:onnx", "label": "ONNX"},
-      {"@id": "urn:ngm:class:numpy", "label": "NumPy"}
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      },
+      {
+        "@id": "urn:ngm:class:numpy",
+        "label": "NumPy"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:perception-system", "label": "Perception System"},
-      {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"},
-      {"@id": "urn:ngm:class:embedded-vision", "label": "Embedded Vision"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      },
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-vision",
+        "label": "Embedded Vision"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:c-plus-plus", "label": "C++"}
+      {
+        "@id": "urn:ngm:class:c-plus-plus",
+        "label": "C++"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:scale-invariant-feature-transform", "label": "Scale-Invariant Feature Transform"}
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:scale-invariant-feature-transform",
+        "label": "Scale-Invariant Feature Transform"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:pytorch", "label": "PyTorch"},
-      {"@id": "urn:ngm:class:tensorflow", "label": "TensorFlow"}
+      {
+        "@id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "label": "PyTorch"
+      },
+      {
+        "@id": "urn:ngm:class:tensorflow",
+        "label": "TensorFlow"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:open-source-computer-vision-library", "label": "Open Source Computer Vision Library"}
+    {
+      "@id": "urn:ngm:class:open-source-computer-vision-library",
+      "label": "Open Source Computer Vision Library"
+    }
   ],
   "quality": 0.8,
   "provenance": {

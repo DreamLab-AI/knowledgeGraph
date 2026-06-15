@@ -23,7 +23,7 @@
         "label": "Certificate Authority"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -45,7 +45,7 @@
         "label": "Mutual TLS"
       },
       {
-        "id": "urn:ngm:class:encrypted-communication",
+        "id": "urn:ngm:class:secure-communication",
         "label": "Encrypted Communication"
       }
     ],
@@ -98,17 +98,13 @@
         "label": "Diffie-Hellman Key Exchange"
       },
       {
-        "id": "urn:ngm:class:aead-cipher",
-        "label": "AEAD Cipher"
-      },
-      {
         "id": "urn:ngm:class:hkdf",
         "label": "HKDF"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:zero-trust-security",
+        "id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Security"
       },
       {
@@ -124,11 +120,11 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public-Key Cryptography"
       },
       {
-        "id": "urn:ngm:class:x509-certificate",
+        "id": "urn:ngm:class:x-509-certificate",
         "label": "X.509 Certificate"
       },
       {

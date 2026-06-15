@@ -102,10 +102,6 @@ public:: true
       {
         "@id": "urn:ngm:class:data-integrity",
         "label": "Data Integrity"
-      },
-      {
-        "@id": "urn:ngm:class:forensic-tools",
-        "label": "Forensic Tools"
       }
     ],
     "enables": [
@@ -116,10 +112,6 @@ public:: true
       {
         "@id": "urn:ngm:class:incident-investigation",
         "label": "Incident Investigation"
-      },
-      {
-        "@id": "urn:ngm:class:legal-documentation",
-        "label": "Legal Documentation"
       }
     ]
   },

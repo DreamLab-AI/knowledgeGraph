@@ -62,25 +62,13 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:color-reference-chart",
-        "label": "Colour Reference Chart"
-      },
-      {
-        "@id": "urn:ngm:class:resolution-target",
-        "label": "Resolution Target"
-      },
-      {
         "@id": "urn:ngm:class:fiducial-marker",
         "label": "Fiducial Marker"
-      },
-      {
-        "@id": "urn:ngm:class:gray-scale-step-wedge",
-        "label": "Grey-Scale Step Wedge"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:camera-calibration-workflow",
+        "@id": "urn:ngm:class:camera-calibration",
         "label": "Camera Calibration Workflow"
       }
     ],
@@ -96,10 +84,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:optical-system-accuracy",
-        "label": "Optical System Accuracy"
-      },
-      {
         "@id": "urn:ngm:class:lens-distortion-correction",
         "label": "Lens Distortion Correction"
       },
@@ -108,22 +92,8 @@ public:: true
         "label": "Colour Management"
       },
       {
-        "@id": "urn:ngm:class:camera-intrinsic-calibration",
+        "@id": "urn:ngm:class:camera-calibration",
         "label": "Camera Intrinsic Calibration"
-      },
-      {
-        "@id": "urn:ngm:class:stereo-camera-calibration",
-        "label": "Stereo Camera Calibration"
-      }
-    ],
-    "dependsOn": [
-      {
-        "@id": "urn:ngm:class:photometric-standards",
-        "label": "Photometric Standards"
-      },
-      {
-        "@id": "urn:ngm:class:substrate-material-stability",
-        "label": "Substrate Material Stability"
       }
     ],
     "uses": [
@@ -132,12 +102,8 @@ public:: true
         "label": "Checkerboard Pattern"
       },
       {
-        "@id": "urn:ngm:class:aruco-marker",
+        "@id": "urn:ngm:class:visual-marker",
         "label": "ArUco Marker"
-      },
-      {
-        "@id": "urn:ngm:class:sinusoidal-grating",
-        "label": "Sinusoidal Grating"
       }
     ],
     "supports": [
@@ -172,12 +138,6 @@ public:: true
         "label": "NIST Measurement Standards"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:radiometric-calibration-panel",
-        "label": "Radiometric Calibration Panel"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
@@ -190,16 +150,12 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:modulation-transfer-function",
+        "@id": "urn:ngm:class:transfer-function",
         "label": "Modulation Transfer Function"
       },
       {
-        "@id": "urn:ngm:class:depth-sensor-calibration",
+        "@id": "urn:ngm:class:sensor-calibration",
         "label": "Depth Sensor Calibration"
-      },
-      {
-        "@id": "urn:ngm:class:icc-colour-profile",
-        "label": "ICC Colour Profile"
       }
     ]
   },

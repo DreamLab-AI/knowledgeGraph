@@ -99,15 +99,7 @@ public:: true
         "label": "Licensing"
       },
       {
-        "@id": "urn:ngm:class:capital-requirements",
-        "label": "Capital Requirements"
-      },
-      {
-        "@id": "urn:ngm:class:conduct-of-business-rules",
-        "label": "Conduct of Business Rules"
-      },
-      {
-        "@id": "urn:ngm:class:data-protection-obligations",
+        "@id": "urn:ngm:class:data-protection",
         "label": "Data Protection Obligations"
       }
     ],
@@ -133,10 +125,6 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:international-standards-organisation",
-        "label": "International Standards Organisation"
-      },
-      {
         "@id": "urn:ngm:class:financial-stability-board",
         "label": "Financial Stability Board"
       },
@@ -146,10 +134,6 @@ public:: true
       }
     ],
     "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:voluntary-standards",
-        "label": "Voluntary Standards"
-      },
       {
         "@id": "urn:ngm:class:self-regulation",
         "label": "Self-Regulation"

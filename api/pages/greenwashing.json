@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:audit-and-verification",
+        "id": "urn:ngm:class:audit",
         "label": "Audit and Verification"
       },
       {
@@ -33,13 +33,13 @@
         "label": "Regulatory Enforcement"
       },
       {
-        "id": "urn:ngm:class:green-finance-standards",
+        "id": "urn:ngm:class:green-finance",
         "label": "Green Finance Standards"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:marketing-communications",
+        "id": "urn:ngm:class:advertising-and-marketing",
         "label": "Marketing Communications"
       },
       {
@@ -64,7 +64,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:esg-data-analytics",
+        "id": "urn:ngm:class:data-analytics",
         "label": "ESG Data Analytics"
       },
       {
@@ -84,12 +84,8 @@
         "label": "EU Green Claims Directive"
       },
       {
-        "id": "urn:ngm:class:iso-14021",
+        "id": "urn:ngm:class:iso",
         "label": "ISO 14021"
-      },
-      {
-        "id": "urn:ngm:class:ftc-green-guides",
-        "label": "FTC Green Guides"
       }
     ],
     "partOf": [],

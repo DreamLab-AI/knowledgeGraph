@@ -56,7 +56,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:token-based-voting",
+        "@id": "urn:ngm:class:token-weighted-voting",
         "label": "Token-Based Voting"
       },
       {
@@ -108,10 +108,6 @@ public:: true
       {
         "@id": "urn:ngm:class:protocol-upgrade",
         "label": "Protocol Upgrade"
-      },
-      {
-        "@id": "urn:ngm:class:treasury-allocation",
-        "label": "Treasury Allocation"
       }
     ],
     "dependsOn": [
@@ -128,15 +124,11 @@ public:: true
       {
         "@id": "urn:ngm:class:liquid-democracy",
         "label": "Liquid Democracy"
-      },
-      {
-        "@id": "urn:ngm:class:meritocratic-governance",
-        "label": "Meritocratic Governance"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:soulbound-token",
+        "@id": "urn:ngm:class:soulbound-tokens",
         "label": "Soulbound Token"
       },
       {
@@ -154,7 +146,7 @@ public:: true
         "label": "Centralised Governance"
       },
       {
-        "@id": "urn:ngm:class:corporate-board-governance",
+        "@id": "urn:ngm:class:corporate-governance",
         "label": "Corporate Board Governance"
       }
     ],

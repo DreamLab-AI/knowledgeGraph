@@ -23,60 +23,157 @@ public:: true
   "definition": "Credential verification is the process of cryptographically or institutionally confirming the authenticity, integrity, and current validity of a credential — such as a digital certificate, verifiable credential, or identity assertion — issued by a trusted authority about a subject, so that a relying party can grant access or trust without real-time contact with the original issuer. In decentralised identity systems it relies on public-key cryptography, digital signatures, and optionally distributed ledgers to enable privacy-preserving, tamper-evident verification. The process must also resolve issuer keys and query revocation registries (via CRL, OCSP, or on-chain status) to ensure invalidated credentials cannot be fraudulently reused. Selective-disclosure techniques, including zero-knowledge proofs and SD-JWTs, allow subjects to prove specific attributes without exposing unnecessary personal data.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:authentication", "label": "Authentication"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:authentication",
+      "label": "Authentication"
+    }
+  ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:revocation-registry", "label": "Revocation Registry"},
-      {"@id": "urn:ngm:class:trust-anchor", "label": "Trust Anchor"}
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:revocation-registry",
+        "label": "Revocation Registry"
+      },
+      {
+        "@id": "urn:ngm:class:trust-anchor",
+        "label": "Trust Anchor"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"},
-      {"@id": "urn:ngm:class:decentralized-identity-did", "label": "Decentralized Identity (DID)"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+      {
+        "@id": "urn:ngm:class:cryptographic-verification",
+        "label": "Cryptographic Verification"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identity-did",
+        "label": "Decentralized Identity (DID)"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:digital-identity-management", "label": "Digital Identity Management"},
-      {"@id": "urn:ngm:class:selective-disclosure", "label": "Selective Disclosure"},
-      {"@id": "urn:ngm:class:trust-establishment", "label": "Trust Establishment"}
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-management",
+        "label": "Digital Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:trust-establishment",
+        "label": "Trust Establishment"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:signature-verification", "label": "Signature Verification"},
-      {"@id": "urn:ngm:class:revocation-check", "label": "Revocation Check"},
-      {"@id": "urn:ngm:class:schema-validation", "label": "Schema Validation"}
+      {
+        "@id": "urn:ngm:class:signature-verification",
+        "label": "Signature Verification"
+      },
+      {
+        "@id": "urn:ngm:class:schema-validation",
+        "label": "Schema Validation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:credential-schema", "label": "Credential Schema"},
-      {"@id": "urn:ngm:class:decentralized-identifier", "label": "Decentralized Identifier"},
-      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"}
+      {
+        "@id": "urn:ngm:class:credential-schema",
+        "label": "Credential Schema"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:w3c-verifiable-credentials", "label": "W3C Verifiable Credentials"},
-      {"@id": "urn:ngm:class:openid4vc", "label": "OpenID4VC"},
-      {"@id": "urn:ngm:class:x509-certificate", "label": "X.509 Certificate"}
+      {
+        "@id": "urn:ngm:class:w3-c-verifiable-credentials",
+        "label": "W3C Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:openid4vc",
+        "label": "OpenID4VC"
+      },
+      {
+        "@id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:credential-issuance", "label": "Credential Issuance"},
-      {"@id": "urn:ngm:class:password-authentication", "label": "Password Authentication"}
+      {
+        "@id": "urn:ngm:class:credential-issuance",
+        "label": "Credential Issuance"
+      },
+      {
+        "@id": "urn:ngm:class:password-authentication",
+        "label": "Password Authentication"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:know-your-customer", "label": "Know Your Customer"},
-      {"@id": "urn:ngm:class:mobile-driving-licence", "label": "Mobile Driving Licence"}
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-driving-licence",
+        "label": "Mobile Driving Licence"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:credential-validation", "label": "Credential Validation"},
-    {"@id": "urn:ngm:class:attestation-verification", "label": "Attestation Verification"}
+    {
+      "@id": "urn:ngm:class:credential-validation",
+      "label": "Credential Validation"
+    },
+    {
+      "@id": "urn:ngm:class:attestation-verification",
+      "label": "Attestation Verification"
+    }
   ],
   "quality": 0.74,
   "provenance": {

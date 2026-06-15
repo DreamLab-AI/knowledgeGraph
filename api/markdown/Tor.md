@@ -75,7 +75,7 @@ public:: true
         "label": "Relay Network"
       },
       {
-        "@id": "urn:ngm:class:public-key-cryptography",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       }
     ],
@@ -101,38 +101,16 @@ public:: true
         "label": "Onion Services"
       }
     ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:tor-exit-node",
-        "label": "Tor Exit Node"
-      },
-      {
-        "@id": "urn:ngm:class:tor-relay",
-        "label": "Tor Relay"
-      },
-      {
-        "@id": "urn:ngm:class:tor-directory-authority",
-        "label": "Tor Directory Authority"
-      }
-    ],
     "implements": [
       {
         "@id": "urn:ngm:class:onion-routing",
         "label": "Onion Routing"
-      },
-      {
-        "@id": "urn:ngm:class:circuit-based-routing",
-        "label": "Circuit-Based Routing"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:transport-layer-security",
         "label": "Transport Layer Security"
-      },
-      {
-        "@id": "urn:ngm:class:volunteer-infrastructure",
-        "label": "Volunteer Infrastructure"
       }
     ],
     "contrastsWith": [

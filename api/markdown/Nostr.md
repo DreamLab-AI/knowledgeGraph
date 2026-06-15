@@ -23,61 +23,143 @@ public:: true
   "definition": "Nostr (Notes and Other Stuff Transmitted by Relays) is an open, censorship-resistant social-messaging protocol in which user identity is a secp256k1 cryptographic key pair and all user activity consists of signed JSON events published to one or more relay servers over WebSocket connections. The protocol has no central authority: identity is purely the public key, relays are interchangeable infrastructure that store and forward events without requiring account registration, and clients subscribe using filter objects to receive matching events. Nostr Improvement Proposals (NIPs) extend the core event-kind system to cover short-form notes, long-form articles, encrypted direct messages, Lightning Network zap payments, community moderation, and decentralised identity verification. Its radical simplicity, cryptographic self-sovereignty, and tight integration with the Bitcoin and Lightning ecosystem have made Nostr the dominant open social layer for value-aligned decentralised communication.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-network-and-comms", "label": "Network and Communication"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
-      {"@id": "urn:ngm:class:web-socket", "label": "WebSocket"},
-      {"@id": "urn:ngm:class:schnorr-signature", "label": "Schnorr Signature"},
-      {"@id": "urn:ngm:class:secp256k1", "label": "secp256k1"},
-      {"@id": "urn:ngm:class:json", "label": "JSON"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:web-socket",
+        "label": "WebSocket"
+      },
+      {
+        "@id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "@id": "urn:ngm:class:secp256k1",
+        "label": "secp256k1"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format",
+        "label": "JSON"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"},
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:social-network-graph", "label": "Social Network Graph"},
-      {"@id": "urn:ngm:class:decentralised-web", "label": "Decentralised Web"},
-      {"@id": "urn:ngm:class:micropayment", "label": "Micropayment"}
-    ],
-    "requires": [
-      {"@id": "urn:ngm:class:relay-server", "label": "Relay Server"},
-      {"@id": "urn:ngm:class:event-signing", "label": "Event Signing"}
+      {
+        "@id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:social-network-graph",
+        "label": "Social Network Graph"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-web",
+        "label": "Decentralised Web"
+      },
+      {
+        "@id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
-      {"@id": "urn:ngm:class:bitcoin", "label": "Bitcoin"}
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:open-protocol", "label": "Open Protocol"}
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:open-protocol",
+        "label": "Open Protocol"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:nostr-improvement-proposal", "label": "Nostr Improvement Proposal"},
-      {"@id": "urn:ngm:class:nostr-event", "label": "Nostr Event"},
-      {"@id": "urn:ngm:class:nostr-relay", "label": "Nostr Relay"}
+      {
+        "@id": "urn:ngm:class:nostr-event",
+        "label": "Nostr Event"
+      },
+      {
+        "@id": "urn:ngm:class:nostr-relay",
+        "label": "Nostr Relay"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:activitypub", "label": "ActivityPub"},
-      {"@id": "urn:ngm:class:matrix-protocol", "label": "Matrix Protocol"},
-      {"@id": "urn:ngm:class:federated-social-network", "label": "Federated Social Network"}
+      {
+        "@id": "urn:ngm:class:activitypub",
+        "label": "ActivityPub"
+      },
+      {
+        "@id": "urn:ngm:class:matrix-protocol",
+        "label": "Matrix Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:federated-social-networks",
+        "label": "Federated Social Network"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:did-nostr-identity", "label": "DID Nostr Identity"},
-      {"@id": "urn:ngm:class:value-for-value", "label": "Value-for-Value"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
-      {"@id": "urn:ngm:class:decentralised-protocol", "label": "Decentralised Protocol"}
+      {
+        "@id": "urn:ngm:class:did-nostr-identity",
+        "label": "DID Nostr Identity"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:agent-to-agent-communication", "label": "Agent-to-Agent Communication"},
-      {"@id": "urn:ngm:class:decentralised-ai", "label": "Decentralised AI"},
-      {"@id": "urn:ngm:class:did-nostr", "label": "did:nostr"},
-      {"@id": "urn:ngm:class:block-trails", "label": "Block Trails"},
-      {"@id": "urn:ngm:class:web-contracts", "label": "Web Contracts"},
-      {"@id": "urn:ngm:class:javascript-solid-server", "label": "JavaScript Solid Server"}
+      {
+        "@id": "urn:ngm:class:inter-agent-communication",
+        "label": "Agent-to-Agent Communication"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-ai",
+        "label": "Decentralised AI"
+      },
+      {
+        "@id": "urn:ngm:class:did-nostr",
+        "label": "did:nostr"
+      },
+      {
+        "@id": "urn:ngm:class:block-trails",
+        "label": "Block Trails"
+      },
+      {
+        "@id": "urn:ngm:class:web-contracts",
+        "label": "Web Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:javascript-solid-server",
+        "label": "JavaScript Solid Server"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:notes-and-other-stuff-transmitted-by-relays", "label": "Notes and Other Stuff Transmitted by Relays"}
+    {
+      "@id": "urn:ngm:class:notes-and-other-stuff-transmitted-by-relays",
+      "label": "Notes and Other Stuff Transmitted by Relays"
+    }
   ],
   "quality": 0.72,
   "provenance": {

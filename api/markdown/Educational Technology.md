@@ -53,51 +53,125 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:adaptive-learning", "label": "Adaptive Learning"}
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-learning",
+        "label": "Adaptive Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:immersive-learning", "label": "Immersive Learning"},
-      {"@id": "urn:ngm:class:collaborative-systems-modality-learning", "label": "Collaborative Learning"},
-      {"@id": "urn:ngm:class:personalised-learning", "label": "Personalised Learning"},
-      {"@id": "urn:ngm:class:remote-education", "label": "Remote Education"},
-      {"@id": "urn:ngm:class:skills-assessment", "label": "Skills Assessment"}
+      {
+        "@id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-learning",
+        "label": "Collaborative Learning"
+      },
+      {
+        "@id": "urn:ngm:class:personalised-learning",
+        "label": "Personalised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:remote-education",
+        "label": "Remote Education"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:learning-management-system", "label": "Learning Management System"},
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+      {
+        "@id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:virtual-classroom", "label": "Virtual Classroom"},
-      {"@id": "urn:ngm:class:gamification", "label": "Gamification"},
-      {"@id": "urn:ngm:class:learning-analytics", "label": "Learning Analytics"}
+      {
+        "@id": "urn:ngm:class:virtual-classroom",
+        "label": "Virtual Classroom"
+      },
+      {
+        "@id": "urn:ngm:class:gamification",
+        "label": "Gamification"
+      },
+      {
+        "@id": "urn:ngm:class:learning-analytics",
+        "label": "Learning Analytics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:traditional-classroom-instruction", "label": "Traditional Classroom Instruction"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:scorm", "label": "SCORM"},
-      {"@id": "urn:ngm:class:xapi", "label": "xAPI"}
+      {
+        "@id": "urn:ngm:class:scorm",
+        "label": "SCORM"
+      },
+      {
+        "@id": "urn:ngm:class:xapi",
+        "label": "xAPI"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:edtech", "label": "EdTech"},
-    {"@id": "urn:ngm:class:learning-technology", "label": "Learning Technology"}
+    {
+      "@id": "urn:ngm:class:edtech",
+      "label": "EdTech"
+    },
+    {
+      "@id": "urn:ngm:class:learning-technology",
+      "label": "Learning Technology"
+    }
   ],
   "quality": 0.72,
   "provenance": {

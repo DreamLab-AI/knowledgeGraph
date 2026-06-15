@@ -26,16 +26,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:account-balance",
-        "label": "Account Balance"
-      },
-      {
-        "id": "urn:ngm:class:account-nonce",
+        "id": "urn:ngm:class:nonce",
         "label": "Account Nonce"
-      },
-      {
-        "id": "urn:ngm:class:contract-storage",
-        "label": "Contract Storage"
       }
     ],
     "requires": [
@@ -52,7 +44,7 @@
         "label": "Nonce"
       },
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       }
     ],
@@ -86,7 +78,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:ledger-model",
+        "id": "urn:ngm:class:ledger",
         "label": "Ledger Model"
       }
     ],
@@ -108,10 +100,6 @@
     ],
     "uses": [],
     "supports": [
-      {
-        "id": "urn:ngm:class:reentrancy-protection",
-        "label": "Reentrancy Protection"
-      },
       {
         "id": "urn:ngm:class:gas-mechanism",
         "label": "Gas Mechanism"

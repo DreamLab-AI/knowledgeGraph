@@ -16,31 +16,11 @@
   "qualityScore": 0.5,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:ai-has-part",
-        "label": "\u2192 ai:hasPart"
-      }
-    ],
-    "requires": [
-      {
-        "id": "urn:ngm:class:ai-requires",
-        "label": "\u2192 ai:requires"
-      }
-    ],
-    "enables": [
-      {
-        "id": "urn:ngm:class:ai-enables",
-        "label": "\u2192 ai:enables"
-      }
-    ],
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:ai-implements",
-        "label": "\u2192 ai:implements"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],

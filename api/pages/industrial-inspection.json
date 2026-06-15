@@ -23,10 +23,6 @@
         "label": "Labelled Dataset"
       },
       {
-        "id": "urn:ngm:class:sensor-array",
-        "label": "Sensor Array"
-      },
-      {
         "id": "urn:ngm:class:image-processing",
         "label": "Image Processing"
       }
@@ -99,10 +95,6 @@
       {
         "id": "urn:ngm:class:anomaly-detection",
         "label": "Anomaly Detection"
-      },
-      {
-        "id": "urn:ngm:class:non-destructive-testing",
-        "label": "Non-Destructive Testing"
       },
       {
         "id": "urn:ngm:class:machine-vision",

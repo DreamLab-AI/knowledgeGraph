@@ -64,54 +64,135 @@ alias:: ObjectDetection
   },
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:bounding-box-regression", "label": "Bounding Box Regression"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:bounding-box-regression",
+        "label": "Bounding Box Regression"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:semantic-segmentation", "label": "Semantic Segmentation"},
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
-      {"@id": "urn:ngm:class:object-tracking", "label": "Object Tracking"},
-      {"@id": "urn:ngm:class:autonomous-driving", "label": "Autonomous Driving"},
-      {"@id": "urn:ngm:class:scene-understanding", "label": "Scene Understanding"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {
+        "@id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection-and-tracking",
+        "label": "Object Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "@id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:anchor-based-detection", "label": "Anchor-Based Detection"},
-      {"@id": "urn:ngm:class:non-maximum-suppression", "label": "Non-Maximum Suppression"},
-      {"@id": "urn:ngm:class:feature-pyramid-network", "label": "Feature Pyramid Network"}
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:anchor-based-detection",
+        "label": "Anchor-Based Detection"
+      },
+      {
+        "@id": "urn:ngm:class:non-maximum-suppression",
+        "label": "Non-Maximum Suppression"
+      },
+      {
+        "@id": "urn:ngm:class:feature-pyramid-network",
+        "label": "Feature Pyramid Network"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:yolo", "label": "YOLO"},
-      {"@id": "urn:ngm:class:faster-r-cnn", "label": "Faster R-CNN"},
-      {"@id": "urn:ngm:class:detr", "label": "DETR"}
+      {
+        "@id": "urn:ngm:class:detr",
+        "label": "DETR"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:image-classification", "label": "Image Classification"},
-      {"@id": "urn:ngm:class:benchmark-dataset", "label": "Benchmark Dataset"}
+      {
+        "@id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "@id": "urn:ngm:class:benchmark-dataset",
+        "label": "Benchmark Dataset"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:image-classification", "label": "Image Classification"},
-      {"@id": "urn:ngm:class:instance-segmentation", "label": "Instance Segmentation"},
-      {"@id": "urn:ngm:class:panoptic-segmentation", "label": "Panoptic Segmentation"}
+      {
+        "@id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "@id": "urn:ngm:class:instance-segmentation",
+        "label": "Instance Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:panoptic-segmentation",
+        "label": "Panoptic Segmentation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:real-time-inference", "label": "Real-Time Inference"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-inference",
+        "label": "Real-Time Inference"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotics-perception", "label": "Robotics Perception"},
-      {"@id": "urn:ngm:class:surveillance-system", "label": "Surveillance System"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:visual-object-detection", "label": "Visual Object Detection"},
-    {"@id": "urn:ngm:class:multi-object-detection", "label": "Multi-Object Detection"}
+    {
+      "@id": "urn:ngm:class:visual-object-detection",
+      "label": "Visual Object Detection"
+    },
+    {
+      "@id": "urn:ngm:class:multi-object-detection",
+      "label": "Multi-Object Detection"
+    }
   ],
   "quality": 0.72,
   "provenance": {

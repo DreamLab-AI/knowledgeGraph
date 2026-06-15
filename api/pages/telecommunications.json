@@ -42,10 +42,6 @@
       {
         "id": "urn:ngm:class:spectrum-management",
         "label": "Spectrum Management"
-      },
-      {
-        "id": "urn:ngm:class:telecommunications-regulation",
-        "label": "Telecommunications Regulation"
       }
     ],
     "enables": [
@@ -64,7 +60,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:semiconductor-technology",
+        "id": "urn:ngm:class:semiconductor-fabrication",
         "label": "Semiconductor Technology"
       },
       {
@@ -78,12 +74,7 @@
         "label": "Software-Defined Networking"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:postal-communications",
-        "label": "Postal Communications"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:artificial-intelligence",
@@ -122,10 +113,6 @@
       {
         "id": "urn:ngm:class:international-telecommunication-union",
         "label": "International Telecommunication Union"
-      },
-      {
-        "id": "urn:ngm:class:e-t-s-i",
-        "label": "ETSI"
       }
     ],
     "partOf": [

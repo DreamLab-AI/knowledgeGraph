@@ -84,7 +84,7 @@ public:: true
         "label": "Real-Time Inference"
       },
       {
-        "@id": "urn:ngm:class:low-latency-serving",
+        "@id": "urn:ngm:class:low-latency",
         "label": "Low-Latency Serving"
       }
     ],
@@ -136,7 +136,7 @@ public:: true
         "label": "Deep Learning Framework"
       },
       {
-        "@id": "urn:ngm:class:cuda-toolkit",
+        "@id": "urn:ngm:class:cuda",
         "label": "CUDA Toolkit"
       }
     ],
@@ -150,13 +150,13 @@ public:: true
         "label": "OpenVINO"
       },
       {
-        "@id": "urn:ngm:class:tensorflow-lite",
+        "@id": "urn:ngm:class:tensor-flow-lite",
         "label": "TensorFlow Lite"
       }
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:pytorch",
+        "@id": "urn:ngm:class:python-pytorch-deep-learning-stack",
         "label": "PyTorch"
       },
       {
@@ -164,15 +164,11 @@ public:: true
         "label": "TensorFlow"
       },
       {
-        "@id": "urn:ngm:class:jetson",
+        "@id": "urn:ngm:class:nvidia-corporation-jetson",
         "label": "Jetson"
       }
     ],
     "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:robotics-inference",
-        "label": "Robotics Inference"
-      },
       {
         "@id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicle"

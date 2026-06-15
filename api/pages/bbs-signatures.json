@@ -20,17 +20,9 @@
       {
         "id": "urn:ngm:class:bbs-signature",
         "label": "BBS+ Signature"
-      },
-      {
-        "id": "urn:ngm:class:proof-of-knowledge-protocol",
-        "label": "Proof-of-Knowledge Protocol"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:pairing-friendly-curve",
-        "label": "Pairing-Friendly Curve"
-      },
       {
         "id": "urn:ngm:class:bilinear-pairing",
         "label": "Bilinear Pairing"
@@ -50,10 +42,6 @@
         "label": "Verifiable Credentials"
       },
       {
-        "id": "urn:ngm:class:unlinkable-presentation",
-        "label": "Unlinkable Presentation"
-      },
-      {
         "id": "urn:ngm:class:anonymous-credential",
         "label": "Anonymous Credential"
       }
@@ -62,30 +50,13 @@
       {
         "id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proof"
-      },
-      {
-        "id": "urn:ngm:class:bls12-381",
-        "label": "BLS12-381"
       }
     ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:w3c-vc-data-integrity",
-        "label": "W3C VC Data Integrity"
-      },
-      {
-        "id": "urn:ngm:class:ietf-cfrg-draft",
-        "label": "IETF CFRG Draft"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:json-web-token",
+        "id": "urn:ngm:class:json-data-interchange-format-web-token",
         "label": "JSON Web Token"
-      },
-      {
-        "id": "urn:ngm:class:cl-signatures",
-        "label": "CL Signatures"
       }
     ],
     "bridgesTo": [
@@ -141,10 +112,6 @@
       {
         "id": "urn:ngm:class:privacy-preserving-identity",
         "label": "Privacy-Preserving Identity"
-      },
-      {
-        "id": "urn:ngm:class:hyperledger-anoncreds",
-        "label": "Hyperledger AnonCreds"
       }
     ]
   },

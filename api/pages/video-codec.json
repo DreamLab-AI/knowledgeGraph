@@ -40,10 +40,6 @@
         "label": "Discrete Cosine Transform"
       },
       {
-        "id": "urn:ngm:class:rate-distortion-optimization",
-        "label": "Rate Distortion Optimization"
-      },
-      {
         "id": "urn:ngm:class:convolution",
         "label": "Convolution"
       }
@@ -92,10 +88,6 @@
       {
         "id": "urn:ngm:class:quantization",
         "label": "Quantization"
-      },
-      {
-        "id": "urn:ngm:class:transform-coding",
-        "label": "Transform Coding"
       },
       {
         "id": "urn:ngm:class:hardware-acceleration",

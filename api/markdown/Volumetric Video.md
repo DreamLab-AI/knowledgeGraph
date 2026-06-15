@@ -105,7 +105,7 @@ public:: true
         "label": "Holographic Display"
       },
       {
-        "@id": "urn:ngm:class:immersive-telepresence",
+        "@id": "urn:ngm:class:telepresence",
         "label": "Immersive Telepresence"
       }
     ],
@@ -115,7 +115,7 @@ public:: true
         "label": "Neural Radiance Field"
       },
       {
-        "@id": "urn:ngm:class:3d-reconstruction",
+        "@id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
       },
       {

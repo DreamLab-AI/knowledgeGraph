@@ -66,7 +66,7 @@ public:: true
         "label": "Interoperability Standards"
       },
       {
-        "@id": "urn:ngm:class:digital-asset-portability",
+        "@id": "urn:ngm:class:asset-portability",
         "label": "Digital Asset Portability"
       },
       {

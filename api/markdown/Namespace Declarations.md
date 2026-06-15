@@ -63,14 +63,7 @@ public:: true
       "label": "Semantic Web Standards"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:ontology-interoperability",
-        "label": "Ontology Interoperability"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

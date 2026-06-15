@@ -59,22 +59,14 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:pretrained-language-model",
+        "id": "urn:ngm:class:pretrained-model",
         "label": "Pretrained Language Model"
-      },
-      {
-        "id": "urn:ngm:class:semantic-frame",
-        "label": "Semantic Frame"
-      },
-      {
-        "id": "urn:ngm:class:bio-tagging",
-        "label": "BIO Tagging"
       }
     ],
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:open-domain-information-extraction",
+        "id": "urn:ngm:class:information-extraction",
         "label": "Open-Domain Information Extraction"
       },
       {
@@ -100,20 +92,12 @@
       {
         "id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
-      },
-      {
-        "id": "urn:ngm:class:joint-training",
-        "label": "Joint Training"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:question-answering",
         "label": "Question Answering"
-      },
-      {
-        "id": "urn:ngm:class:knowledge-base-population",
-        "label": "Knowledge Base Population"
       }
     ],
     "standardizedBy": [],

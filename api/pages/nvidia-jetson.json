@@ -19,11 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:jetpack-sdk",
-        "label": "JetPack SDK"
-      },
-      {
-        "id": "urn:ngm:class:linux-operating-system",
+        "id": "urn:ngm:class:operating-system",
         "label": "Linux Operating System"
       }
     ],
@@ -53,10 +49,6 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:qualcomm-snapdragon",
-        "label": "Qualcomm Snapdragon"
-      },
-      {
         "id": "urn:ngm:class:neural-processing-unit",
         "label": "Neural Processing Unit"
       }
@@ -83,10 +75,6 @@
       {
         "id": "urn:ngm:class:tensorrt",
         "label": "TensorRT"
-      },
-      {
-        "id": "urn:ngm:class:arm-processor",
-        "label": "ARM Processor"
       }
     ],
     "supports": [
@@ -123,16 +111,8 @@
         "label": "GPU Computing"
       },
       {
-        "id": "urn:ngm:class:system-on-module",
-        "label": "System-on-Module"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-mobile-robot",
+        "id": "urn:ngm:class:autonomous-mobile-robots",
         "label": "Autonomous Mobile Robot"
-      },
-      {
-        "id": "urn:ngm:class:smart-camera",
-        "label": "Smart Camera"
       }
     ]
   },

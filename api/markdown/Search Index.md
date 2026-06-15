@@ -60,12 +60,6 @@ public:: true
     }
   ],
   "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:fast-query-response",
-        "label": "Fast Query Response"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:data-structure",

@@ -30,10 +30,6 @@
         "label": "Biometric Verification"
       },
       {
-        "id": "urn:ngm:class:database-verification",
-        "label": "Database Verification"
-      },
-      {
         "id": "urn:ngm:class:document-verification",
         "label": "Document Verification"
       },
@@ -46,45 +42,17 @@
         "label": "Liveness Detection"
       },
       {
-        "id": "urn:ngm:class:mobile-network-operator-data",
-        "label": "Mobile Network Operator Data"
-      },
-      {
         "id": "urn:ngm:class:risk-scoring-engine",
         "label": "Risk Scoring Engine"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:authoritative-data-source",
-        "label": "Authoritative Data Source"
-      },
-      {
-        "id": "urn:ngm:class:biometric-template",
-        "label": "Biometric Template"
-      },
-      {
-        "id": "urn:ngm:class:capture-device",
-        "label": "Capture Device"
-      },
-      {
-        "id": "urn:ngm:class:consent-mechanism",
+        "id": "urn:ngm:class:consent-management",
         "label": "Consent Mechanism"
-      },
-      {
-        "id": "urn:ngm:class:identity-evidence",
-        "label": "Identity Evidence"
-      },
-      {
-        "id": "urn:ngm:class:trusted-issuer",
-        "label": "Trusted Issuer"
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:account-opening",
-        "label": "Account Opening"
-      },
       {
         "id": "urn:ngm:class:age-verification",
         "label": "Age Verification"
@@ -102,10 +70,6 @@
         "label": "Know Your Customer"
       },
       {
-        "id": "urn:ngm:class:reusable-identity",
-        "label": "Reusable Identity"
-      },
-      {
         "id": "urn:ngm:class:sanctions-compliance",
         "label": "Sanctions Compliance"
       },
@@ -121,19 +85,15 @@
         "label": "eIDAS 2.0"
       },
       {
-        "id": "urn:ngm:class:fatf-recommendation-10",
+        "id": "urn:ngm:class:fatf-recommendations",
         "label": "FATF Recommendation 10"
-      },
-      {
-        "id": "urn:ngm:class:icao-9303",
-        "label": "ICAO 9303"
       },
       {
         "id": "urn:ngm:class:iso-iec-19794",
         "label": "ISO/IEC 19794"
       },
       {
-        "id": "urn:ngm:class:iso-iec-30107",
+        "id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC 30107"
       },
       {
@@ -149,12 +109,8 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:face-match",
+        "id": "urn:ngm:class:face-recognition",
         "label": "Face Match"
-      },
-      {
-        "id": "urn:ngm:class:machine-readable-zone",
-        "label": "Machine-Readable Zone"
       },
       {
         "id": "urn:ngm:class:near-field-communication",
@@ -171,32 +127,16 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:financial-services-onboarding",
+        "id": "urn:ngm:class:financial-services",
         "label": "Financial Services Onboarding"
       },
       {
-        "id": "urn:ngm:class:gambling-regulation",
-        "label": "Gambling Regulation"
-      },
-      {
-        "id": "urn:ngm:class:healthcare-access",
-        "label": "Healthcare Access"
-      },
-      {
-        "id": "urn:ngm:class:online-safety-act",
+        "id": "urn:ngm:class:online-safety-act-2023",
         "label": "Online Safety Act"
       },
       {
         "id": "urn:ngm:class:telecommunications",
         "label": "Telecommunications"
-      },
-      {
-        "id": "urn:ngm:class:travel-and-border-control",
-        "label": "Travel and Border Control"
-      },
-      {
-        "id": "urn:ngm:class:web3-compliance",
-        "label": "Web3 Compliance"
       }
     ],
     "standardizedBy": [
@@ -213,10 +153,6 @@
         "label": "FATF"
       },
       {
-        "id": "urn:ngm:class:icao",
-        "label": "ICAO"
-      },
-      {
         "id": "urn:ngm:class:ico",
         "label": "ICO"
       },
@@ -227,10 +163,6 @@
       {
         "id": "urn:ngm:class:nist",
         "label": "NIST"
-      },
-      {
-        "id": "urn:ngm:class:of-dia",
-        "label": "OfDIA"
       },
       {
         "id": "urn:ngm:class:ofcom",

@@ -23,52 +23,138 @@ public:: true
   "definition": "Passwordless Authentication encompasses identity verification mechanisms that prove user identity without requiring the user to memorise or enter a shared-secret password. Instead, authentication relies on possession of a hardware token or platform authenticator, biometric characteristics, cryptographic key pairs, or one-time codes delivered through a trusted out-of-band channel. The FIDO2 standard — comprising the W3C WebAuthn specification and the FIDO Alliance CTAP protocol — provides the primary open standard for passkey-based passwordless authentication, binding credentials to device hardware and enabling phishing-resistant login flows. By eliminating the shared secret as an authentication factor, passwordless schemes structurally defeat credential-stuffing, password-spray, and phishing attack classes.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:authentication-mechanism", "label": "Authentication Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:authentication-mechanism",
+      "label": "Authentication Mechanism"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:passkey-authentication", "label": "Passkey Authentication"},
-    {"@id": "urn:ngm:class:possession-based-authentication", "label": "Possession-Based Authentication"}
+    {
+      "@id": "urn:ngm:class:passkey-authentication",
+      "label": "Passkey Authentication"
+    },
+    {
+      "@id": "urn:ngm:class:possession-based-authentication",
+      "label": "Possession-Based Authentication"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
-      {"@id": "urn:ngm:class:biometric-authentication", "label": "Biometric Authentication"},
-      {"@id": "urn:ngm:class:hardware-security-key", "label": "Hardware Security Key"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:challenge-response-protocol", "label": "Challenge-Response Protocol"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security-key",
+        "label": "Hardware Security Key"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:challenge-response-protocol",
+        "label": "Challenge-Response Protocol"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:trusted-platform-module", "label": "Trusted Platform Module"},
-      {"@id": "urn:ngm:class:secure-enclave", "label": "Secure Enclave"},
-      {"@id": "urn:ngm:class:identity-proofing", "label": "Identity Proofing"}
+      {
+        "@id": "urn:ngm:class:trusted-platform-module",
+        "label": "Trusted Platform Module"
+      },
+      {
+        "@id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclave"
+      },
+      {
+        "@id": "urn:ngm:class:identity-proofing",
+        "label": "Identity Proofing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:phishing-resistant-authentication", "label": "Phishing-Resistant Authentication"},
-      {"@id": "urn:ngm:class:digital-identity-management", "label": "Digital Identity Management"},
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"}
+      {
+        "@id": "urn:ngm:class:phishing-resistant-authentication",
+        "label": "Phishing-Resistant Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-management",
+        "label": "Digital Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:webauthn", "label": "WebAuthn"},
-      {"@id": "urn:ngm:class:fido2", "label": "FIDO2"},
-      {"@id": "urn:ngm:class:fido-alliance", "label": "FIDO Alliance"}
+      {
+        "@id": "urn:ngm:class:webauthn",
+        "label": "WebAuthn"
+      },
+      {
+        "@id": "urn:ngm:class:fido2",
+        "label": "FIDO2"
+      },
+      {
+        "@id": "urn:ngm:class:fido-alliance",
+        "label": "FIDO Alliance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:multi-factor-authentication", "label": "Multi-Factor Authentication"},
-      {"@id": "urn:ngm:class:single-sign-on", "label": "Single Sign-On"},
-      {"@id": "urn:ngm:class:oauth-2-0", "label": "OAuth 2.0"},
-      {"@id": "urn:ngm:class:openid-connect", "label": "OpenID Connect"},
-      {"@id": "urn:ngm:class:digital-identity-wallet", "label": "Digital Identity Wallet"}
+      {
+        "@id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
+        "@id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:password-based-authentication", "label": "Password-Based Authentication"},
-      {"@id": "urn:ngm:class:knowledge-based-authentication", "label": "Knowledge-Based Authentication"}
+      {
+        "@id": "urn:ngm:class:password-based-authentication",
+        "label": "Password-Based Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-based-authentication",
+        "label": "Knowledge-Based Authentication"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:identity-federation", "label": "Identity Federation"}
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:identity-federation",
+        "label": "Identity Federation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
     ]
   },
   "quality": 0.74,

@@ -22,7 +22,7 @@
         "label": "Data Annotation"
       },
       {
-        "id": "urn:ngm:class:data-sampling",
+        "id": "urn:ngm:class:sampling",
         "label": "Data Sampling"
       },
       {

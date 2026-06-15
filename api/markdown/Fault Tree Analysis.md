@@ -23,53 +23,83 @@ public:: true
   "definition": "Fault Tree Analysis (FTA) is a top-down, deductive reliability and safety method that models how combinations of component failures and events can lead to a defined undesired top-level event. Using Boolean logic gates to connect basic events, it identifies minimal cut sets — the smallest combinations of failures sufficient to cause the top event — and can be evaluated qualitatively or quantitatively with probabilities. Originating in aerospace and nuclear engineering, FTA is a cornerstone of system safety, risk assessment, and certification across safety-critical industries.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:risk-assessment",
+      "label": "Risk Assessment"
+    }
+  ],
   "relations": {
-    "hasPart": [
-      {"@id": "urn:ngm:class:minimal-cut-set", "label": "Minimal Cut Set"},
-      {"@id": "urn:ngm:class:boolean-logic-gate", "label": "Boolean Logic Gate"},
-      {"@id": "urn:ngm:class:basic-event", "label": "Basic Event"},
-      {"@id": "urn:ngm:class:top-event", "label": "Top Event"}
-    ],
     "requires": [
-      {"@id": "urn:ngm:class:system-model", "label": "System Model"},
-      {"@id": "urn:ngm:class:failure-probability-data", "label": "Failure Probability Data"}
+      {
+        "@id": "urn:ngm:class:system-model",
+        "label": "System Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:safety-certification", "label": "Safety Certification"},
-      {"@id": "urn:ngm:class:single-point-of-failure-detection", "label": "Single Point of Failure Detection"},
-      {"@id": "urn:ngm:class:probabilistic-risk-assessment", "label": "Probabilistic Risk Assessment"}
+      {
+        "@id": "urn:ngm:class:safety-certification",
+        "label": "Safety Certification"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-risk-assessment",
+        "label": "Probabilistic Risk Assessment"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:reliability-engineering", "label": "Reliability Engineering"},
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"},
-      {"@id": "urn:ngm:class:system-safety", "label": "System Safety"}
+      {
+        "@id": "urn:ngm:class:reliability-engineering",
+        "label": "Reliability Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:failure-mode-and-effects-analysis", "label": "Failure Mode and Effects Analysis"},
-      {"@id": "urn:ngm:class:event-tree-analysis", "label": "Event Tree Analysis"}
+      {
+        "@id": "urn:ngm:class:failure-mode-and-effects-analysis",
+        "label": "Failure Mode and Effects Analysis"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:boolean-algebra", "label": "Boolean Algebra"},
-      {"@id": "urn:ngm:class:deductive-reasoning", "label": "Deductive Reasoning"},
-      {"@id": "urn:ngm:class:reliability-block-diagram", "label": "Reliability Block Diagram"}
+      {
+        "@id": "urn:ngm:class:boolean-algebra",
+        "label": "Boolean Algebra"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iec-61025", "label": "IEC 61025"},
-      {"@id": "urn:ngm:class:mil-std-882", "label": "MIL-STD-882"}
+      {
+        "@id": "urn:ngm:class:mil-std-882",
+        "label": "MIL-STD-882"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:safety-evaluation", "label": "Safety Evaluation"},
-      {"@id": "urn:ngm:class:common-cause-failure", "label": "Common Cause Failure"},
-      {"@id": "urn:ngm:class:hazard-analysis", "label": "Hazard Analysis"}
+      {
+        "@id": "urn:ngm:class:safety-evaluation",
+        "label": "Safety Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:hazard-analysis",
+        "label": "Hazard Analysis"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:fta", "label": "FTA"}
+    {
+      "@id": "urn:ngm:class:fta",
+      "label": "FTA"
+    }
   ],
   "quality": 0.72,
   "provenance": {

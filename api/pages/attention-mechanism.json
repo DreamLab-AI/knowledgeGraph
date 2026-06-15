@@ -94,7 +94,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai",
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       }
     ],
@@ -102,10 +102,6 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:dot-product-similarity",
-        "label": "Dot-Product Similarity"
       }
     ],
     "supports": [

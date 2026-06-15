@@ -22,10 +22,6 @@
         "label": "Noise Function"
       },
       {
-        "id": "urn:ngm:class:l-system",
-        "label": "L-System"
-      },
-      {
         "id": "urn:ngm:class:wave-function-collapse",
         "label": "Wave Function Collapse"
       },
@@ -52,14 +48,6 @@
       {
         "id": "urn:ngm:class:procedural-terrain",
         "label": "Procedural Terrain"
-      },
-      {
-        "id": "urn:ngm:class:infinite-world",
-        "label": "Infinite World"
-      },
-      {
-        "id": "urn:ngm:class:level-design",
-        "label": "Level Design"
       }
     ],
     "dependsOn": [],
@@ -69,31 +57,22 @@
         "label": "Stochastic Modelling"
       },
       {
-        "id": "urn:ngm:class:parametric-design",
+        "id": "urn:ngm:class:parametric-design-methodology",
         "label": "Parametric Design"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:manual-content-authoring",
-        "label": "Manual Content Authoring"
-      },
-      {
-        "id": "urn:ngm:class:hand-crafted-level-design",
-        "label": "Hand-Crafted Level Design"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:neural-style-transfer",
+        "id": "urn:ngm:class:style-transfer",
         "label": "Neural Style Transfer"
       },
       {
-        "id": "urn:ngm:class:latent-diffusion-model",
+        "id": "urn:ngm:class:latent-diffusion",
         "label": "Latent Diffusion Model"
       }
     ],
@@ -107,11 +86,7 @@
         "label": "3D Content Generation"
       },
       {
-        "id": "urn:ngm:class:random-seed",
-        "label": "Random Seed"
-      },
-      {
-        "id": "urn:ngm:class:spatial-indexing",
+        "id": "urn:ngm:class:spatial-index",
         "label": "Spatial Indexing"
       }
     ],
@@ -145,7 +120,7 @@
         "label": "Metaverse Content Pipeline"
       },
       {
-        "id": "urn:ngm:class:algorithmic-content-creation",
+        "id": "urn:ngm:class:content-creation",
         "label": "Algorithmic Content Creation"
       }
     ]

@@ -510,18 +510,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:autonomous-reasoning",
-        "label": "Autonomous Reasoning"
-      },
-      {
-        "@id": "urn:ngm:class:cross-domain-transfer",
-        "label": "Cross-Domain Transfer"
-      },
-      {
-        "@id": "urn:ngm:class:generalisation-capability",
-        "label": "Generalisation Capability"
-      },
-      {
         "@id": "urn:ngm:class:long-horizon-planning",
         "label": "Long-Horizon Planning"
       },
@@ -530,7 +518,7 @@ public:: true
         "label": "Open-Ended Learning"
       },
       {
-        "@id": "urn:ngm:class:tool-use-capability",
+        "@id": "urn:ngm:class:tool-use",
         "label": "Tool Use Capability"
       },
       {
@@ -542,14 +530,6 @@ public:: true
       {
         "@id": "urn:ngm:class:alignment-techniques",
         "label": "Alignment Techniques"
-      },
-      {
-        "@id": "urn:ngm:class:evaluation-infrastructure",
-        "label": "Evaluation Infrastructure"
-      },
-      {
-        "@id": "urn:ngm:class:frontier-training-data",
-        "label": "Frontier Training Data"
       },
       {
         "@id": "urn:ngm:class:large-scale-compute",
@@ -568,10 +548,6 @@ public:: true
       {
         "@id": "urn:ngm:class:autonomous-agent",
         "label": "Autonomous Agent"
-      },
-      {
-        "@id": "urn:ngm:class:economic-automation",
-        "label": "Economic Automation"
       },
       {
         "@id": "urn:ngm:class:recursive-self-improvement",
@@ -600,10 +576,6 @@ public:: true
         "label": "Multimodal Learning"
       },
       {
-        "@id": "urn:ngm:class:scaling-hypothesis",
-        "label": "Scaling Hypothesis"
-      },
-      {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI Training Methodology"
       },
@@ -616,30 +588,6 @@ public:: true
       {
         "@id": "urn:ngm:class:arc-agi",
         "label": "ARC-AGI"
-      },
-      {
-        "@id": "urn:ngm:class:frontier-math",
-        "label": "FrontierMath"
-      },
-      {
-        "@id": "urn:ngm:class:gpqa",
-        "label": "GPQA"
-      },
-      {
-        "@id": "urn:ngm:class:humanity-s-last-exam",
-        "label": "Humanity's Last Exam"
-      },
-      {
-        "@id": "urn:ngm:class:metr-evaluations",
-        "label": "METR Evaluations"
-      },
-      {
-        "@id": "urn:ngm:class:mmlu",
-        "label": "MMLU"
-      },
-      {
-        "@id": "urn:ngm:class:swe-bench",
-        "label": "SWE-bench"
       }
     ],
     "relatedTo": [
@@ -686,19 +634,11 @@ public:: true
         "label": "Alignment Research"
       },
       {
-        "@id": "urn:ngm:class:existential-risk-studies",
-        "label": "Existential Risk Studies"
-      },
-      {
         "@id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
       }
     ],
     "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:deep-mind-levels-of-agi-framework",
-        "label": "DeepMind Levels of AGI Framework"
-      },
       {
         "@id": "urn:ngm:class:iso-iec-42001",
         "label": "ISO IEC 42001"
@@ -706,10 +646,6 @@ public:: true
       {
         "@id": "urn:ngm:class:nist-ai-rmf",
         "label": "NIST AI RMF"
-      },
-      {
-        "@id": "urn:ngm:class:openai-research-organisation-charter",
-        "label": "OpenAI Charter"
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",

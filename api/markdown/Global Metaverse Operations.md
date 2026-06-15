@@ -61,11 +61,14 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:metaverse-infrastructure", "label": "Metaverse Infrastructure"}
+      {
+        "@id": "urn:ngm:class:metaverse-infrastructure",
+        "label": "Metaverse Infrastructure"
+      }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:unified-virtual-experience",
+        "@id": "urn:ngm:class:virtual-experience",
         "label": "Unified Virtual Experience"
       }
     ]

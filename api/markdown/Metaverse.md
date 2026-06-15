@@ -210,11 +210,7 @@ public:: true
         "label": "Social System"
       },
       {
-        "@id": "urn:ngm:class:synchronous-interaction",
-        "label": "Synchronous Interaction"
-      },
-      {
-        "@id": "urn:ngm:class:user-identity-system",
+        "@id": "urn:ngm:class:user-identity-management",
         "label": "User Identity System"
       },
       {
@@ -274,7 +270,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:cross-world-portability",
+        "@id": "urn:ngm:class:portability",
         "label": "Cross-World Portability"
       },
       {

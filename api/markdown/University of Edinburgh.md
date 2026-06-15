@@ -61,56 +61,116 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {"@id": "urn:ngm:class:school-of-informatics", "label": "School of Informatics"},
-      {"@id": "urn:ngm:class:bayes-centre", "label": "Bayes Centre"},
-      {"@id": "urn:ngm:class:institute-for-adaptive-and-neural-computation", "label": "Institute for Adaptive and Neural Computation"}
-    ],
     "partOf": [
-      {"@id": "urn:ngm:class:russell-group", "label": "Russell Group"},
-      {"@id": "urn:ngm:class:league-of-european-research-universities", "label": "League of European Research Universities"}
+      {
+        "@id": "urn:ngm:class:russell-group",
+        "label": "Russell Group"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:research-funding", "label": "Research Funding"},
-      {"@id": "urn:ngm:class:academic-peer-review", "label": "Academic Peer Review"}
+      {
+        "@id": "urn:ngm:class:research-funding",
+        "label": "Research Funding"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:probabilistic-programming", "label": "Probabilistic Programming"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-programming",
+        "label": "Probabilistic Programming"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:alan-turing-institute", "label": "Alan Turing Institute"},
-      {"@id": "urn:ngm:class:uk-research-and-innovation", "label": "UK Research and Innovation"}
+      {
+        "@id": "urn:ngm:class:alan-turing-institute",
+        "label": "Alan Turing Institute"
+      },
+      {
+        "@id": "urn:ngm:class:uk-research-and-innovation",
+        "label": "UK Research and Innovation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"},
-      {"@id": "urn:ngm:class:reproducible-research", "label": "Reproducible Research"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"}
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "@id": "urn:ngm:class:reproducible-research",
+        "label": "Reproducible Research"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:research-university", "label": "Research University"},
-      {"@id": "urn:ngm:class:university-of-cambridge", "label": "University of Cambridge"},
-      {"@id": "urn:ngm:class:imperial-college-london", "label": "Imperial College London"},
-      {"@id": "urn:ngm:class:university-of-manchester", "label": "University of Manchester"},
-      {"@id": "urn:ngm:class:oxford-university", "label": "University of Oxford"},
-      {"@id": "urn:ngm:class:carnegie-mellon-university", "label": "Carnegie Mellon University"}
+      {
+        "@id": "urn:ngm:class:research-university",
+        "label": "Research University"
+      },
+      {
+        "@id": "urn:ngm:class:university-of-cambridge",
+        "label": "University of Cambridge"
+      },
+      {
+        "@id": "urn:ngm:class:imperial-college-london",
+        "label": "Imperial College London"
+      },
+      {
+        "@id": "urn:ngm:class:university-of-manchester",
+        "label": "University of Manchester"
+      },
+      {
+        "@id": "urn:ngm:class:university-of-oxford",
+        "label": "University of Oxford"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:industry-academia-collaboration", "label": "Industry-Academia Collaboration"},
-      {"@id": "urn:ngm:class:technology-transfer", "label": "Technology Transfer"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+      {
+        "@id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:uoe", "label": "UoE"},
-    {"@id": "urn:ngm:class:edinburgh-university", "label": "Edinburgh University"}
+    {
+      "@id": "urn:ngm:class:uoe",
+      "label": "UoE"
+    },
+    {
+      "@id": "urn:ngm:class:edinburgh-university",
+      "label": "Edinburgh University"
+    }
   ],
   "quality": 0.72,
   "provenance": {

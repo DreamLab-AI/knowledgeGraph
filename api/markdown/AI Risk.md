@@ -120,7 +120,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:technical-risk",
+        "@id": "urn:ngm:class:risk",
         "label": "Technical Risk"
       },
       {
@@ -204,7 +204,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {

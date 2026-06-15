@@ -55,57 +55,127 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:behavioral-analytics", "label": "Behavioral Analytics"},
-      {"@id": "urn:ngm:class:behavior-analysis", "label": "Behavior Analysis"},
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
-      {"@id": "urn:ngm:class:pattern-recognition", "label": "Pattern Recognition"}
+      {
+        "@id": "urn:ngm:class:behavioral-analytics",
+        "label": "Behavioral Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:behavior-analysis",
+        "label": "Behavior Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"}
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:statistical-model", "label": "Statistical Model"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-model",
+        "label": "Statistical Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"},
-      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
-      {"@id": "urn:ngm:class:user-behavior-analytics", "label": "User Behavior Analytics"}
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:data-collection", "label": "Data Collection"},
-      {"@id": "urn:ngm:class:sensor-data", "label": "Sensor Data"}
+      {
+        "@id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-data",
+        "label": "Sensor Data"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:agent-policy", "label": "Agent Policy"},
-      {"@id": "urn:ngm:class:markov-decision-process", "label": "Markov Decision Process"}
+      {
+        "@id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rule-based-system", "label": "Rule-Based System"}
+      {
+        "@id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:embodied-ai-simulation", "label": "Embodied AI Simulation"},
-      {"@id": "urn:ngm:class:avatar-behavior", "label": "Avatar Behavior"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
-    ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:cognitive-modeling", "label": "Cognitive Modeling"}
+      {
+        "@id": "urn:ngm:class:embodied-ai-simulation",
+        "label": "Embodied AI Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-behavior",
+        "label": "Avatar Behavior"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:agent-behavior-modeling", "label": "Agent Behavior Modeling"},
-    {"@id": "urn:ngm:class:behavioral-simulation", "label": "Behavioral Simulation"}
+    {
+      "@id": "urn:ngm:class:agent-behavior-modeling",
+      "label": "Agent Behavior Modeling"
+    },
+    {
+      "@id": "urn:ngm:class:behavioral-simulation",
+      "label": "Behavioral Simulation"
+    }
   ],
   "quality": 0.72,
   "provenance": {

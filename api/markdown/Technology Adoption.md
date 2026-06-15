@@ -159,20 +159,8 @@ alias:: TechnologyAdoption
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:evaluation",
+        "@id": "urn:ngm:class:model-evaluation",
         "label": "Evaluation"
-      },
-      {
-        "@id": "urn:ngm:class:implementation",
-        "label": "Implementation"
-      },
-      {
-        "@id": "urn:ngm:class:sustained-use",
-        "label": "Sustained Use"
-      },
-      {
-        "@id": "urn:ngm:class:trial",
-        "label": "Trial"
       },
       {
         "@id": "urn:ngm:class:awareness",
@@ -185,7 +173,7 @@ alias:: TechnologyAdoption
         "label": "Change Management"
       },
       {
-        "@id": "urn:ngm:class:stakeholder-buy-in",
+        "@id": "urn:ngm:class:stakeholder",
         "label": "Stakeholder Buy-In"
       },
       {
@@ -198,10 +186,6 @@ alias:: TechnologyAdoption
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:competitive-advantage",
-        "label": "Competitive Advantage"
-      },
       {
         "@id": "urn:ngm:class:innovation-diffusion",
         "label": "Innovation Diffusion"

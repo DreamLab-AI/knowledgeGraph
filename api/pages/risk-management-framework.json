@@ -22,14 +22,6 @@
         "label": "Risk Register"
       },
       {
-        "id": "urn:ngm:class:control-catalogue",
-        "label": "Control Catalogue"
-      },
-      {
-        "id": "urn:ngm:class:risk-appetite-statement",
-        "label": "Risk Appetite Statement"
-      },
-      {
         "id": "urn:ngm:class:continuous-monitoring",
         "label": "Continuous Monitoring"
       }
@@ -56,10 +48,6 @@
       {
         "id": "urn:ngm:class:audit",
         "label": "Audit"
-      },
-      {
-        "id": "urn:ngm:class:residual-risk-acceptance",
-        "label": "Residual Risk Acceptance"
       }
     ],
     "dependsOn": [],

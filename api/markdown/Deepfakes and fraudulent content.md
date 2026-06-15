@@ -518,27 +518,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:lip-sync-generation",
-        "label": "Lip Sync Generation"
-      },
-      {
-        "@id": "urn:ngm:class:non-consensual-intimate-imagery",
-        "label": "Non-Consensual Intimate Imagery"
-      },
-      {
-        "@id": "urn:ngm:class:real-time-avatar",
-        "label": "Real-Time Avatar"
-      },
-      {
-        "@id": "urn:ngm:class:synthetic-disinformation",
-        "label": "Synthetic Disinformation"
-      },
-      {
-        "@id": "urn:ngm:class:synthetic-identity-document",
-        "label": "Synthetic Identity Document"
-      },
-      {
-        "@id": "urn:ngm:class:voice-clone",
+        "@id": "urn:ngm:class:voice-cloning",
         "label": "Voice Clone"
       },
       {
@@ -556,10 +536,6 @@ public:: true
         "label": "GPU Compute"
       },
       {
-        "@id": "urn:ngm:class:target-identity-reference",
-        "label": "Target Identity Reference"
-      },
-      {
         "@id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
       },
@@ -570,32 +546,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:business-email-compromise",
-        "label": "Business Email Compromise"
-      },
-      {
-        "@id": "urn:ngm:class:election-interference",
-        "label": "Election Interference"
-      },
-      {
-        "@id": "urn:ngm:class:image-based-sexual-abuse",
-        "label": "Image-Based Sexual Abuse"
-      },
-      {
-        "@id": "urn:ngm:class:kyc-bypass",
-        "label": "KYC Bypass"
-      },
-      {
         "@id": "urn:ngm:class:market-manipulation",
         "label": "Market Manipulation"
-      },
-      {
-        "@id": "urn:ngm:class:reputation-attack",
-        "label": "Reputation Attack"
-      },
-      {
-        "@id": "urn:ngm:class:romance-fraud",
-        "label": "Romance Fraud"
       },
       {
         "@id": "urn:ngm:class:social-engineering",
@@ -604,54 +556,18 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:audiovisual-forgery",
-        "label": "Audiovisual Forgery"
-      },
-      {
-        "@id": "urn:ngm:class:identity-impersonation",
-        "label": "Identity Impersonation"
-      },
-      {
-        "@id": "urn:ngm:class:real-time-puppetry",
-        "label": "Real-Time Puppetry"
-      },
-      {
-        "@id": "urn:ngm:class:voice-cloning-attack",
+        "@id": "urn:ngm:class:voice-cloning",
         "label": "Voice Cloning Attack"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:d-id",
-        "label": "D-ID"
-      },
-      {
-        "@id": "urn:ngm:class:deep-face-lab",
-        "label": "DeepFaceLab"
-      },
-      {
         "@id": "urn:ngm:class:eleven-labs",
         "label": "ElevenLabs"
       },
       {
-        "@id": "urn:ngm:class:hey-gen",
-        "label": "HeyGen"
-      },
-      {
         "@id": "urn:ngm:class:instant-id",
         "label": "InstantID"
-      },
-      {
-        "@id": "urn:ngm:class:re-actor",
-        "label": "ReActor"
-      },
-      {
-        "@id": "urn:ngm:class:synthesia",
-        "label": "Synthesia"
-      },
-      {
-        "@id": "urn:ngm:class:wav2-lip",
-        "label": "Wav2Lip"
       },
       {
         "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
@@ -666,10 +582,6 @@ public:: true
       {
         "@id": "urn:ngm:class:content-authenticity",
         "label": "Content Authenticity"
-      },
-      {
-        "@id": "urn:ngm:class:election-integrity",
-        "label": "Election Integrity"
       },
       {
         "@id": "urn:ngm:class:media-forensics",
@@ -692,40 +604,10 @@ public:: true
         "label": "Cyber Security and Cryptography"
       }
     ],
-    "supports": [
-      {
-        "@id": "urn:ngm:class:disinformation-campaign",
-        "label": "Disinformation Campaign"
-      },
-      {
-        "@id": "urn:ngm:class:fraud-ecosystem",
-        "label": "Fraud Ecosystem"
-      },
-      {
-        "@id": "urn:ngm:class:influence-operation",
-        "label": "Influence Operation"
-      },
-      {
-        "@id": "urn:ngm:class:pig-butchering-scam",
-        "label": "Pig-Butchering Scam"
-      },
-      {
-        "@id": "urn:ngm:class:sextortion",
-        "label": "Sextortion"
-      }
-    ],
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:c2-pa",
         "label": "C2PA"
-      },
-      {
-        "@id": "urn:ngm:class:cai-coalition-for-content-provenance-and-authenticity",
-        "label": "CAI Coalition for Content Provenance and Authenticity"
-      },
-      {
-        "@id": "urn:ngm:class:china-deep-synthesis-provisions",
-        "label": "China Deep Synthesis Provisions"
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument-article-50",
@@ -734,10 +616,6 @@ public:: true
       {
         "@id": "urn:ngm:class:iso-22144",
         "label": "ISO 22144"
-      },
-      {
-        "@id": "urn:ngm:class:take-it-down-act",
-        "label": "TAKE IT DOWN Act"
       },
       {
         "@id": "urn:ngm:class:uk-online-safety-act",

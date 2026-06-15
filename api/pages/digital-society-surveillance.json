@@ -30,18 +30,6 @@
         "label": "ALPR Networks"
       },
       {
-        "id": "urn:ngm:class:biometric-tracking",
-        "label": "Biometric Tracking"
-      },
-      {
-        "id": "urn:ngm:class:bossware",
-        "label": "Bossware"
-      },
-      {
-        "id": "urn:ngm:class:commercial-spyware",
-        "label": "Commercial Spyware"
-      },
-      {
         "id": "urn:ngm:class:data-brokers",
         "label": "Data Brokers"
       },
@@ -50,24 +38,8 @@
         "label": "Facial Recognition"
       },
       {
-        "id": "urn:ngm:class:mass-surveillance",
-        "label": "Mass Surveillance"
-      },
-      {
         "id": "urn:ngm:class:pegasus-spyware",
         "label": "Pegasus Spyware"
-      },
-      {
-        "id": "urn:ngm:class:school-surveillance",
-        "label": "School Surveillance"
-      },
-      {
-        "id": "urn:ngm:class:smart-city-sensors",
-        "label": "Smart City Sensors"
-      },
-      {
-        "id": "urn:ngm:class:social-credit-systems",
-        "label": "Social Credit Systems"
       },
       {
         "id": "urn:ngm:class:surveillance-capitalism",
@@ -76,28 +48,12 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:ai-classification-systems",
-        "label": "AI Classification Systems"
-      },
-      {
-        "id": "urn:ngm:class:biometric-databases",
-        "label": "Biometric Databases"
-      },
-      {
         "id": "urn:ngm:class:data-brokers",
         "label": "Data Brokers"
       },
       {
         "id": "urn:ngm:class:legal-framework",
         "label": "Legal Framework"
-      },
-      {
-        "id": "urn:ngm:class:network-interception-infrastructure",
-        "label": "Network Interception Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:personal-data-collection",
-        "label": "Personal Data Collection"
       },
       {
         "id": "urn:ngm:class:zero-day-exploits",
@@ -114,30 +70,6 @@
         "label": "Algorithmic Governance"
       },
       {
-        "id": "urn:ngm:class:behavioural-prediction",
-        "label": "Behavioural Prediction"
-      },
-      {
-        "id": "urn:ngm:class:commercial-profiling",
-        "label": "Commercial Profiling"
-      },
-      {
-        "id": "urn:ngm:class:law-enforcement-identification",
-        "label": "Law Enforcement Identification"
-      },
-      {
-        "id": "urn:ngm:class:political-repression",
-        "label": "Political Repression"
-      },
-      {
-        "id": "urn:ngm:class:population-level-tracking",
-        "label": "Population-Level Tracking"
-      },
-      {
-        "id": "urn:ngm:class:social-control",
-        "label": "Social Control"
-      },
-      {
         "id": "urn:ngm:class:targeted-advertising",
         "label": "Targeted Advertising"
       }
@@ -149,40 +81,8 @@
         "label": "ALPR Networks"
       },
       {
-        "id": "urn:ngm:class:clearview-ai",
-        "label": "Clearview AI"
-      },
-      {
-        "id": "urn:ngm:class:five-eyes-intelligence-sharing",
-        "label": "Five Eyes Intelligence Sharing"
-      },
-      {
-        "id": "urn:ngm:class:nso-group",
-        "label": "NSO Group"
-      },
-      {
         "id": "urn:ngm:class:pegasus-spyware",
         "label": "Pegasus Spyware"
-      },
-      {
-        "id": "urn:ngm:class:prism-programme",
-        "label": "PRISM Programme"
-      },
-      {
-        "id": "urn:ngm:class:social-credit-system",
-        "label": "Social Credit System"
-      },
-      {
-        "id": "urn:ngm:class:tempora",
-        "label": "TEMPORA"
-      },
-      {
-        "id": "urn:ngm:class:upstream-collection",
-        "label": "UPSTREAM Collection"
-      },
-      {
-        "id": "urn:ngm:class:xkeyscore",
-        "label": "XKeyscore"
       }
     ],
     "contrastsWith": [],
@@ -195,10 +95,6 @@
       {
         "id": "urn:ngm:class:behavioural-analytics",
         "label": "Behavioural Analytics"
-      },
-      {
-        "id": "urn:ngm:class:biometric-classification",
-        "label": "Biometric Classification"
       },
       {
         "id": "urn:ngm:class:graph-analytics",
@@ -223,58 +119,18 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:advertising-technology",
-        "label": "Advertising Technology"
-      },
-      {
         "id": "urn:ngm:class:financial-compliance",
         "label": "Financial Compliance"
-      },
-      {
-        "id": "urn:ngm:class:immigration-control",
-        "label": "Immigration Control"
-      },
-      {
-        "id": "urn:ngm:class:intelligence-agencies",
-        "label": "Intelligence Agencies"
-      },
-      {
-        "id": "urn:ngm:class:state-security-apparatus",
-        "label": "State Security Apparatus"
-      },
-      {
-        "id": "urn:ngm:class:workplace-productivity-management",
-        "label": "Workplace Productivity Management"
       }
     ],
     "standardizedBy": [
-      {
-        "id": "urn:ngm:class:eu-charter-of-fundamental-rights",
-        "label": "EU Charter of Fundamental Rights"
-      },
-      {
-        "id": "urn:ngm:class:fisa",
-        "label": "FISA"
-      },
       {
         "id": "urn:ngm:class:gdpr",
         "label": "GDPR"
       },
       {
-        "id": "urn:ngm:class:surveillance-camera-code-of-practice",
-        "label": "Surveillance Camera Code of Practice"
-      },
-      {
         "id": "urn:ngm:class:uk-data-protection-act-2018",
         "label": "UK Data Protection Act 2018"
-      },
-      {
-        "id": "urn:ngm:class:uk-investigatory-powers-act-2016",
-        "label": "UK Investigatory Powers Act 2016"
-      },
-      {
-        "id": "urn:ngm:class:un-special-rapporteur-on-privacy",
-        "label": "UN Special Rapporteur on Privacy"
       },
       {
         "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",

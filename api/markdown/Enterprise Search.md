@@ -38,52 +38,125 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:inverted-index", "label": "Inverted Index"},
-      {"@id": "urn:ngm:class:content-connector", "label": "Content Connector"},
-      {"@id": "urn:ngm:class:relevance-ranking", "label": "Relevance Ranking"},
-      {"@id": "urn:ngm:class:query-understanding", "label": "Query Understanding"}
+      {
+        "@id": "urn:ngm:class:inverted-index",
+        "label": "Inverted Index"
+      },
+      {
+        "@id": "urn:ngm:class:relevance-ranking",
+        "label": "Relevance Ranking"
+      },
+      {
+        "@id": "urn:ngm:class:query-understanding",
+        "label": "Query Understanding"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:identity-provider", "label": "Identity Provider"}
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:text-embeddings", "label": "Text Embeddings"},
-      {"@id": "urn:ngm:class:bm25", "label": "BM25"}
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:text-embeddings",
+        "label": "Text Embeddings"
+      },
+      {
+        "@id": "urn:ngm:class:bm25",
+        "label": "BM25"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:knowledge-discovery", "label": "Knowledge Discovery"},
-      {"@id": "urn:ngm:class:decision-support", "label": "Decision Support"}
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-discovery",
+        "label": "Knowledge Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:document-processing", "label": "Document Processing"},
-      {"@id": "urn:ngm:class:data-ingestion-pipeline", "label": "Data Ingestion Pipeline"}
+      {
+        "@id": "urn:ngm:class:document-processing",
+        "label": "Document Processing"
+      },
+      {
+        "@id": "urn:ngm:class:data-ingestion-pipeline",
+        "label": "Data Ingestion Pipeline"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:web-search", "label": "Web Search"},
-      {"@id": "urn:ngm:class:database-query", "label": "Database Query"}
+      {
+        "@id": "urn:ngm:class:web-search",
+        "label": "Web Search"
+      },
+      {
+        "@id": "urn:ngm:class:database-query",
+        "label": "Database Query"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
-      {"@id": "urn:ngm:class:document-management-system", "label": "Document Management System"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "@id": "urn:ngm:class:document-management-system",
+        "label": "Document Management System"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"}
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:unified-search", "label": "Unified Search"},
-    {"@id": "urn:ngm:class:federated-search", "label": "Federated Search"}
+    {
+      "@id": "urn:ngm:class:unified-search",
+      "label": "Unified Search"
+    },
+    {
+      "@id": "urn:ngm:class:federated-search",
+      "label": "Federated Search"
+    }
   ],
   "qualityScore": 0.74,
-  "maturity": "established",
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",

@@ -23,15 +23,17 @@ public:: true
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:dc-workspace-tools", "label": "Workspace Tools"}
+    {
+      "@id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    }
   ],
   "relations": {
-    "enables": [
-      {"@id": "urn:ngm:class:privacy-management", "label": "Privacy Management"},
-      {"@id": "urn:ngm:class:professional-presence", "label": "Professional Presence"}
-    ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:zoom-meetings", "label": "Zoom Meetings"}
+      {
+        "@id": "urn:ngm:class:zoom-meetings",
+        "label": "Zoom Meetings"
+      }
     ]
   },
   "quality": 0.7

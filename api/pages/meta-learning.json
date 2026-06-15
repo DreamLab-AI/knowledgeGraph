@@ -24,17 +24,9 @@
       {
         "id": "urn:ngm:class:prototypical-networks",
         "label": "Prototypical Networks"
-      },
-      {
-        "id": "urn:ngm:class:metric-based-meta-learning",
-        "label": "Metric-Based Meta-Learning"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:task-distribution",
-        "label": "Task Distribution"
-      },
       {
         "id": "urn:ngm:class:gradient-descent",
         "label": "Gradient Descent"
@@ -96,10 +88,6 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:bi-level-optimisation",
-        "label": "Bi-Level Optimisation"
       }
     ],
     "supports": [],

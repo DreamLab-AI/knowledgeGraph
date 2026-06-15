@@ -18,15 +18,15 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:protective-measure",
+        "id": "urn:ngm:class:safety-measure",
         "label": "Protective Measure"
       },
       {
-        "id": "urn:ngm:class:safety-requirement",
+        "id": "urn:ngm:class:safety",
         "label": "Safety Requirement"
       },
       {
-        "id": "urn:ngm:class:verification-procedure",
+        "id": "urn:ngm:class:verification",
         "label": "Verification Procedure"
       }
     ],
@@ -36,7 +36,7 @@
         "label": "Safety Engineering"
       },
       {
-        "id": "urn:ngm:class:contact-force-limit",
+        "id": "urn:ngm:class:rb-0094-power-and-force-limiting",
         "label": "Contact Force Limit"
       }
     ],
@@ -50,11 +50,7 @@
         "label": "Autonomous System"
       },
       {
-        "id": "urn:ngm:class:robot-certification",
-        "label": "Robot Certification"
-      },
-      {
-        "id": "urn:ngm:class:elder-care-robot",
+        "id": "urn:ngm:class:robot",
         "label": "Elder Care Robot"
       }
     ],
@@ -81,7 +77,7 @@
         "label": "rb 0088 iso 13482 compliance"
       },
       {
-        "id": "urn:ngm:class:risk-estimation",
+        "id": "urn:ngm:class:risk",
         "label": "Risk Estimation"
       },
       {
@@ -95,12 +91,8 @@
         "label": "Exoskeleton"
       },
       {
-        "id": "urn:ngm:class:rehabilitation-robot",
+        "id": "urn:ngm:class:rehabilitation-robotics",
         "label": "Rehabilitation Robot"
-      },
-      {
-        "id": "urn:ngm:class:powered-wheelchair",
-        "label": "Powered Wheelchair"
       }
     ],
     "standardizedBy": [

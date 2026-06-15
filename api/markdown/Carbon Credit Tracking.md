@@ -502,30 +502,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:carbon-registry-bridge",
-        "label": "Carbon Registry Bridge"
-      },
-      {
-        "@id": "urn:ngm:class:corresponding-adjustment-record",
-        "label": "Corresponding Adjustment Record"
-      },
-      {
-        "@id": "urn:ngm:class:credit-issuance-engine",
-        "label": "Credit Issuance Engine"
-      },
-      {
-        "@id": "urn:ngm:class:mrv-oracle",
-        "label": "MRV Oracle"
-      },
-      {
-        "@id": "urn:ngm:class:permanence-buffer-pool",
-        "label": "Permanence Buffer Pool"
-      },
-      {
-        "@id": "urn:ngm:class:retirement-smart-contract",
-        "label": "Retirement Smart Contract"
-      },
-      {
         "@id": "urn:ngm:class:carbon-credit-token",
         "label": "Carbon Credit Token"
       }
@@ -536,7 +512,7 @@ public:: true
         "label": "Carbon Standard Certification"
       },
       {
-        "@id": "urn:ngm:class:immutable-audit-trail",
+        "@id": "urn:ngm:class:audit-trail",
         "label": "Immutable Audit Trail"
       },
       {
@@ -546,10 +522,6 @@ public:: true
       {
         "@id": "urn:ngm:class:oracle-network",
         "label": "Oracle Network"
-      },
-      {
-        "@id": "urn:ngm:class:verified-emissions-data",
-        "label": "Verified Emissions Data"
       },
       {
         "@id": "urn:ngm:class:blockchain-infrastructure",
@@ -562,28 +534,12 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:article-6-compliance",
-        "label": "Article 6 Compliance"
-      },
-      {
-        "@id": "urn:ngm:class:automated-carbon-accounting",
-        "label": "Automated Carbon Accounting"
-      },
-      {
         "@id": "urn:ngm:class:carbon-price-discovery",
         "label": "Carbon Price Discovery"
       },
       {
-        "@id": "urn:ngm:class:corporate-carbon-neutrality",
+        "@id": "urn:ngm:class:carbon-neutrality",
         "label": "Corporate Carbon Neutrality"
-      },
-      {
-        "@id": "urn:ngm:class:fractional-carbon-credit-ownership",
-        "label": "Fractional Carbon Credit Ownership"
-      },
-      {
-        "@id": "urn:ngm:class:real-time-carbon-offsetting",
-        "label": "Real-Time Carbon Offsetting"
       },
       {
         "@id": "urn:ngm:class:voluntary-carbon-market",
@@ -591,18 +547,6 @@ public:: true
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:corsia-aviation-offsets",
-        "label": "CORSIA Aviation Offsets"
-      },
-      {
-        "@id": "urn:ngm:class:eu-taxonomy-green-finance",
-        "label": "EU Taxonomy Green Finance"
-      },
-      {
-        "@id": "urn:ngm:class:gold-standard-certification",
-        "label": "Gold Standard Certification"
-      },
       {
         "@id": "urn:ngm:class:icvcm-core-carbon-principles",
         "label": "ICVCM Core Carbon Principles"
@@ -630,7 +574,7 @@ public:: true
         "label": "ERC-20 Tokens"
       },
       {
-        "@id": "urn:ngm:class:erc-721-nfts",
+        "@id": "urn:ngm:class:erc-721",
         "label": "ERC-721 NFTs"
       },
       {
@@ -638,7 +582,7 @@ public:: true
         "label": "Hedera Hashgraph"
       },
       {
-        "@id": "urn:ngm:class:polygon-network",
+        "@id": "urn:ngm:class:polygon",
         "label": "Polygon Network"
       },
       {
@@ -650,10 +594,6 @@ public:: true
       {
         "@id": "urn:ngm:class:carbon-credits",
         "label": "Carbon Credits"
-      },
-      {
-        "@id": "urn:ngm:class:environmental-finance",
-        "label": "Environmental Finance"
       },
       {
         "@id": "urn:ngm:class:esg-investing",
@@ -690,16 +630,8 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:biodiversity-credits",
-        "label": "Biodiversity Credits"
-      },
-      {
         "@id": "urn:ngm:class:climate-tech",
         "label": "Climate Tech"
-      },
-      {
-        "@id": "urn:ngm:class:corporate-climate-commitments",
-        "label": "Corporate Climate Commitments"
       },
       {
         "@id": "urn:ngm:class:esg-investing",
@@ -722,10 +654,6 @@ public:: true
       {
         "@id": "urn:ngm:class:corsia",
         "label": "CORSIA"
-      },
-      {
-        "@id": "urn:ngm:class:eu-corporate-sustainability-reporting-directive",
-        "label": "EU Corporate Sustainability Reporting Directive"
       },
       {
         "@id": "urn:ngm:class:gold-standard",

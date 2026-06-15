@@ -20,10 +20,6 @@
       {
         "id": "urn:ngm:class:virtual-team",
         "label": "Virtual Team"
-      },
-      {
-        "id": "urn:ngm:class:asynchronous-standup",
-        "label": "Asynchronous Standup"
       }
     ],
     "requires": [
@@ -32,7 +28,7 @@
         "label": "Documentation Culture"
       },
       {
-        "id": "urn:ngm:class:digital-communication-infrastructure",
+        "id": "urn:ngm:class:communication-infrastructure",
         "label": "Digital Communication Infrastructure"
       },
       {
@@ -50,22 +46,13 @@
         "label": "Synchronous Collaboration"
       },
       {
-        "id": "urn:ngm:class:global-talent-access",
-        "label": "Global Talent Access"
-      },
-      {
         "id": "urn:ngm:class:hybrid-work",
         "label": "Hybrid Work"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:co-located-work",
-        "label": "Co-Located Work"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:spatial-computing",

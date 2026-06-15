@@ -23,10 +23,6 @@
         "label": "Natural Language Understanding"
       },
       {
-        "id": "urn:ngm:class:text-encoding",
-        "label": "Text Encoding"
-      },
-      {
         "id": "urn:ngm:class:labelled-training-data",
         "label": "Labelled Training Data"
       }
@@ -54,10 +50,6 @@
       }
     ],
     "dependsOn": [
-      {
-        "id": "urn:ngm:class:utterance-representation",
-        "label": "Utterance Representation"
-      },
       {
         "id": "urn:ngm:class:intent-ontology",
         "label": "Intent Ontology"
@@ -94,7 +86,7 @@
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:transformer-model",
+        "id": "urn:ngm:class:transformer",
         "label": "Transformer Model"
       },
       {
@@ -104,10 +96,6 @@
       {
         "id": "urn:ngm:class:word-embedding",
         "label": "Word Embedding"
-      },
-      {
-        "id": "urn:ngm:class:softmax-classifier",
-        "label": "Softmax Classifier"
       }
     ],
     "supports": [],

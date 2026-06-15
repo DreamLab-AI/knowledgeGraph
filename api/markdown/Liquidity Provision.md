@@ -402,28 +402,16 @@ public:: true
         "label": "Fee Tier"
       },
       {
-        "@id": "urn:ngm:class:gauge-weight",
-        "label": "Gauge Weight"
-      },
-      {
         "@id": "urn:ngm:class:impermanent-loss",
         "label": "Impermanent Loss"
       },
       {
-        "@id": "urn:ngm:class:liquidity-mining-reward",
+        "@id": "urn:ngm:class:liquidity-mining",
         "label": "Liquidity Mining Reward"
       },
       {
         "@id": "urn:ngm:class:lp-token",
         "label": "LP Token"
-      },
-      {
-        "@id": "urn:ngm:class:price-range",
-        "label": "Price Range"
-      },
-      {
-        "@id": "urn:ngm:class:tick",
-        "label": "Tick"
       },
       {
         "@id": "urn:ngm:class:liquidity-pool",
@@ -458,7 +446,7 @@ public:: true
         "label": "Capital Efficiency"
       },
       {
-        "@id": "urn:ngm:class:mev-extraction",
+        "@id": "urn:ngm:class:mev",
         "label": "MEV Extraction"
       },
       {
@@ -466,11 +454,7 @@ public:: true
         "label": "Permissionless Trading"
       },
       {
-        "@id": "urn:ngm:class:protocol-revenue",
-        "label": "Protocol Revenue"
-      },
-      {
-        "@id": "urn:ngm:class:token-swap",
+        "@id": "urn:ngm:class:token-swapping",
         "label": "Token Swap"
       },
       {
@@ -488,16 +472,8 @@ public:: true
         "label": "Constant Product Formula"
       },
       {
-        "@id": "urn:ngm:class:hooks-architecture",
-        "label": "Hooks Architecture"
-      },
-      {
         "@id": "urn:ngm:class:stable-swap-invariant",
         "label": "Stable Swap Invariant"
-      },
-      {
-        "@id": "urn:ngm:class:weighted-pool-invariant",
-        "label": "Weighted Pool Invariant"
       }
     ],
     "uses": [
@@ -510,10 +486,6 @@ public:: true
         "label": "Gauge Voting"
       },
       {
-        "@id": "urn:ngm:class:jit-liquidity",
-        "label": "JIT Liquidity"
-      },
-      {
         "@id": "urn:ngm:class:liquidity-mining",
         "label": "Liquidity Mining"
       },
@@ -522,7 +494,7 @@ public:: true
         "label": "TWAP Oracle"
       },
       {
-        "@id": "urn:ngm:class:vote-escrowed-token",
+        "@id": "urn:ngm:class:vote-escrow-model",
         "label": "Vote-Escrowed Token"
       }
     ],
@@ -556,46 +528,18 @@ public:: true
         "label": "GMX"
       },
       {
-        "@id": "urn:ngm:class:gsr",
-        "label": "GSR"
-      },
-      {
-        "@id": "urn:ngm:class:hyperliquid",
-        "label": "Hyperliquid"
-      },
-      {
-        "@id": "urn:ngm:class:jump-crypto",
-        "label": "Jump Crypto"
-      },
-      {
         "@id": "urn:ngm:class:maker-dao",
         "label": "MakerDAO"
       },
       {
         "@id": "urn:ngm:class:uniswap",
         "label": "Uniswap"
-      },
-      {
-        "@id": "urn:ngm:class:wintermute",
-        "label": "Wintermute"
       }
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:decentralised-lending",
-        "label": "Decentralised Lending"
-      },
-      {
-        "@id": "urn:ngm:class:perpetual-dex",
+        "@id": "urn:ngm:class:dex",
         "label": "Perpetual DEX"
-      },
-      {
-        "@id": "urn:ngm:class:protocol-treasury",
-        "label": "Protocol Treasury"
-      },
-      {
-        "@id": "urn:ngm:class:stablecoin-peg",
-        "label": "Stablecoin Peg"
       },
       {
         "@id": "urn:ngm:class:governance-token",
@@ -612,16 +556,12 @@ public:: true
         "label": "ERC-20 Token Standard"
       },
       {
-        "@id": "urn:ngm:class:fatf-de-fi-guidance",
+        "@id": "urn:ngm:class:fatf-guidance-on-virtual-assets",
         "label": "FATF DeFi Guidance"
       },
       {
         "@id": "urn:ngm:class:mi-ca-regulation",
         "label": "MiCA Regulation"
-      },
-      {
-        "@id": "urn:ngm:class:uniswap-v3-core-whitepaper",
-        "label": "Uniswap V3 Core Whitepaper"
       }
     ]
   },

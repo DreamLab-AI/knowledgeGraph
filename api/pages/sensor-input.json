@@ -60,14 +60,14 @@
         "label": "Transducer"
       },
       {
-        "id": "urn:ngm:class:embedded-system",
+        "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded System"
       }
     ],
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:actuator-output",
+        "id": "urn:ngm:class:actuator",
         "label": "Actuator Output"
       },
       {
@@ -93,10 +93,6 @@
       {
         "id": "urn:ngm:class:kalman-filter",
         "label": "Kalman Filter"
-      },
-      {
-        "id": "urn:ngm:class:interrupt-driven-io",
-        "label": "Interrupt-Driven I/O"
       }
     ],
     "supports": [
@@ -128,10 +124,6 @@
       {
         "id": "urn:ngm:class:sensor-data",
         "label": "Sensor Data"
-      },
-      {
-        "id": "urn:ngm:class:noise-model",
-        "label": "Noise Model"
       },
       {
         "id": "urn:ngm:class:data-acquisition",

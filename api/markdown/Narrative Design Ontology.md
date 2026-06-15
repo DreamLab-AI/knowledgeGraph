@@ -146,22 +146,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:branching-path",
-        "label": "Branching Path"
-      },
-      {
-        "@id": "urn:ngm:class:plot-structure",
-        "label": "Plot Structure"
-      },
-      {
-        "@id": "urn:ngm:class:story-event",
-        "label": "Story Event"
-      },
-      {
-        "@id": "urn:ngm:class:story-node",
-        "label": "Story Node"
-      },
-      {
         "@id": "urn:ngm:class:character-relationship-graph",
         "label": "Character Relationship Graph"
       },
@@ -176,11 +160,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:event-sequencing",
-        "label": "Event Sequencing"
-      },
-      {
-        "@id": "urn:ngm:class:plot-graph-database",
+        "@id": "urn:ngm:class:graph-database",
         "label": "Plot Graph Database"
       },
       {
@@ -194,15 +174,15 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:interactive-fiction",
+        "@id": "urn:ngm:class:interactive-storytelling",
         "label": "Interactive Fiction"
       },
       {
-        "@id": "urn:ngm:class:procedural-story-generation",
+        "@id": "urn:ngm:class:procedural-content-generation",
         "label": "Procedural Story Generation"
       },
       {
-        "@id": "urn:ngm:class:transmedia-storytelling",
+        "@id": "urn:ngm:class:storytelling",
         "label": "Transmedia Storytelling"
       },
       {
@@ -212,7 +192,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:interactive-storytelling-system",
+        "@id": "urn:ngm:class:interactive-storytelling",
         "label": "Interactive Storytelling System"
       }
     ]

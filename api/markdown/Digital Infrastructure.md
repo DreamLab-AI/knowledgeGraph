@@ -72,60 +72,135 @@ alias:: Digital-Infrastructure
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
-      {"@id": "urn:ngm:class:data-centre", "label": "Data Centre"},
-      {"@id": "urn:ngm:class:cloud-storage", "label": "Cloud Storage"},
-      {"@id": "urn:ngm:class:software-defined-networking", "label": "Software-Defined Networking"}
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
+      },
+      {
+        "@id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:power-grid", "label": "Power Grid"},
-      {"@id": "urn:ngm:class:physical-network", "label": "Physical Network"},
-      {"@id": "urn:ngm:class:cooling-systems", "label": "Cooling Systems"}
+      {
+        "@id": "urn:ngm:class:power-grid",
+        "label": "Power Grid"
+      },
+      {
+        "@id": "urn:ngm:class:cooling-system",
+        "label": "Cooling Systems"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:digital-services", "label": "Digital Services"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:internet-protocols", "label": "Internet Protocols"},
-      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"}
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:infrastructure-as-code", "label": "Infrastructure as Code"},
-      {"@id": "urn:ngm:class:containerisation", "label": "Containerisation"}
+      {
+        "@id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
+        "@id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"},
-      {"@id": "urn:ngm:class:serverless-computing", "label": "Serverless Computing"}
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:serverless-architecture",
+        "label": "Serverless Computing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"},
-      {"@id": "urn:ngm:class:ieee", "label": "IEEE"},
-      {"@id": "urn:ngm:class:cncf", "label": "CNCF"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:physical-infrastructure", "label": "Physical Infrastructure"}
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "@id": "urn:ngm:class:cncf",
+        "label": "CNCF"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:it-infrastructure", "label": "IT Infrastructure"},
-    {"@id": "urn:ngm:class:technology-infrastructure", "label": "Technology Infrastructure"}
+    {
+      "@id": "urn:ngm:class:it-infrastructure",
+      "label": "IT Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:technology-infrastructure",
+      "label": "Technology Infrastructure"
+    }
   ],
   "quality": 0.72,
   "provenance": {

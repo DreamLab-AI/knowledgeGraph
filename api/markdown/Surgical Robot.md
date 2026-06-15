@@ -57,57 +57,119 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:control-system", "label": "Control System"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:real-time-computing", "label": "Real-Time Computing"}
+      {
+        "@id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:endoscopy", "label": "Endoscopy"},
-      {"@id": "urn:ngm:class:stereo-vision", "label": "Stereo Vision"},
-      {"@id": "urn:ngm:class:image-guided-surgery", "label": "Image-Guided Surgery"}
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:stereo-vision",
+        "label": "Stereo Vision"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:robotic-arm", "label": "Robotic Arm"},
-      {"@id": "urn:ngm:class:surgeon-console", "label": "Surgeon Console"},
-      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"}
+      {
+        "@id": "urn:ngm:class:robotic-arm",
+        "label": "Robotic Arm"
+      },
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:medical-robotics", "label": "Medical Robotics"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:medical-robotics",
+        "label": "Medical Robotics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:minimally-invasive-surgery", "label": "Minimally Invasive Surgery"},
-      {"@id": "urn:ngm:class:telesurgery", "label": "Telesurgery"},
-      {"@id": "urn:ngm:class:tremor-filtration", "label": "Tremor Filtration"}
+      {
+        "@id": "urn:ngm:class:minimally-invasive-surgery",
+        "label": "Minimally Invasive Surgery"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"},
-      {"@id": "urn:ngm:class:surgical-planning", "label": "Surgical Planning"}
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iec-80601-2-77", "label": "IEC 80601-2-77"},
-      {"@id": "urn:ngm:class:iso-8373", "label": "ISO 8373"}
+      {
+        "@id": "urn:ngm:class:iso-8373",
+        "label": "ISO 8373"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"},
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}
+      {
+        "@id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:medical-imaging", "label": "Medical Imaging"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:robotic-surgical-system", "label": "Robotic Surgical System"},
-    {"@id": "urn:ngm:class:medical-robot", "label": "Medical Robot"}
+    {
+      "@id": "urn:ngm:class:robotic-surgical-system",
+      "label": "Robotic Surgical System"
+    },
+    {
+      "@id": "urn:ngm:class:medical-robot",
+      "label": "Medical Robot"
+    }
   ],
   "quality": 0.72,
   "provenance": {

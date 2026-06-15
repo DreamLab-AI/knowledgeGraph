@@ -386,10 +386,6 @@ public:: true
         "label": "Few-Shot Prompting"
       },
       {
-        "@id": "urn:ngm:class:prompt-injection-defence",
-        "label": "Prompt Injection Defence"
-      },
-      {
         "@id": "urn:ngm:class:prompt-template",
         "label": "Prompt Template"
       },

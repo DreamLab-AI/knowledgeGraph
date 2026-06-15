@@ -191,7 +191,7 @@ alias:: Closed Loop Control, RB-1002-closed-loop-control
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:rb-1015-kalman-filter",
+        "@id": "urn:ngm:class:kalman-filter",
         "label": "Kalman Filter"
       },
       {
@@ -276,10 +276,6 @@ alias:: Closed Loop Control, RB-1002-closed-loop-control
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:adaptability",
-        "label": "Adaptability"
-      },
       {
         "@id": "urn:ngm:class:system-identification",
         "label": "System Identification"

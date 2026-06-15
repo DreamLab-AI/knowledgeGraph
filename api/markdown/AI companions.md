@@ -498,43 +498,19 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:affective-tone-module",
-        "label": "Affective Tone Module"
-      },
-      {
-        "@id": "urn:ngm:class:avatar-renderer",
-        "label": "Avatar Renderer"
-      },
-      {
-        "@id": "urn:ngm:class:content-moderation-pipeline",
+        "@id": "urn:ngm:class:content-moderation",
         "label": "Content Moderation Pipeline"
       },
       {
-        "@id": "urn:ngm:class:long-term-memory-store",
+        "@id": "urn:ngm:class:memory-store",
         "label": "Long-Term Memory Store"
-      },
-      {
-        "@id": "urn:ngm:class:persona-system",
-        "label": "Persona System"
       },
       {
         "@id": "urn:ngm:class:safety-filter",
         "label": "Safety Filter"
-      },
-      {
-        "@id": "urn:ngm:class:subscription-paywall",
-        "label": "Subscription Paywall"
-      },
-      {
-        "@id": "urn:ngm:class:voice-synthesis-module",
-        "label": "Voice Synthesis Module"
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:gpu-inference-capacity",
-        "label": "GPU Inference Capacity"
-      },
       {
         "@id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
@@ -556,43 +532,9 @@ public:: true
         "label": "Reinforcement Learning from Human Feedback"
       }
     ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:creative-collaboration",
-        "label": "Creative Collaboration"
-      },
-      {
-        "@id": "urn:ngm:class:elder-companionship",
-        "label": "Elder Companionship"
-      },
-      {
-        "@id": "urn:ngm:class:emotional-support",
-        "label": "Emotional Support"
-      },
-      {
-        "@id": "urn:ngm:class:language-practice",
-        "label": "Language Practice"
-      },
-      {
-        "@id": "urn:ngm:class:loneliness-mitigation",
-        "label": "Loneliness Mitigation"
-      },
-      {
-        "@id": "urn:ngm:class:parasocial-bonding",
-        "label": "Parasocial Bonding"
-      },
-      {
-        "@id": "urn:ngm:class:relationship-simulation",
-        "label": "Relationship Simulation"
-      },
-      {
-        "@id": "urn:ngm:class:role-play",
-        "label": "Role-Play"
-      }
-    ],
     "implements": [
       {
-        "@id": "urn:ngm:class:age-gating",
+        "@id": "urn:ngm:class:age-verification",
         "label": "Age Gating"
       },
       {
@@ -600,15 +542,7 @@ public:: true
         "label": "Engagement Optimisation"
       },
       {
-        "@id": "urn:ngm:class:memory-retrieval",
-        "label": "Memory Retrieval"
-      },
-      {
-        "@id": "urn:ngm:class:persona-conditioning",
-        "label": "Persona Conditioning"
-      },
-      {
-        "@id": "urn:ngm:class:sentiment-tracking",
+        "@id": "urn:ngm:class:sentiment-analysis",
         "label": "Sentiment Tracking"
       },
       {
@@ -618,7 +552,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:diffusion-image-generation",
+        "@id": "urn:ngm:class:image-generation",
         "label": "Diffusion Image Generation"
       },
       {
@@ -626,16 +560,8 @@ public:: true
         "label": "Embedding Search"
       },
       {
-        "@id": "urn:ngm:class:live2-d-animation",
-        "label": "Live2D Animation"
-      },
-      {
         "@id": "urn:ngm:class:rlhf",
         "label": "RLHF"
-      },
-      {
-        "@id": "urn:ngm:class:safety-classifiers",
-        "label": "Safety Classifiers"
       },
       {
         "@id": "urn:ngm:class:speech-synthesis",
@@ -652,20 +578,8 @@ public:: true
         "label": "Affective Computing"
       },
       {
-        "@id": "urn:ngm:class:artificial-intimacy",
-        "label": "Artificial Intimacy"
-      },
-      {
         "@id": "urn:ngm:class:human-ai-interaction",
         "label": "Human-AI Interaction"
-      },
-      {
-        "@id": "urn:ngm:class:loneliness-epidemic",
-        "label": "Loneliness Epidemic"
-      },
-      {
-        "@id": "urn:ngm:class:parasocial-interaction",
-        "label": "Parasocial Interaction"
       },
       {
         "@id": "urn:ngm:class:synthetic-media",
@@ -676,51 +590,17 @@ public:: true
         "label": "Generative AI"
       }
     ],
-    "supports": [
-      {
-        "@id": "urn:ngm:class:bereavement-processing",
-        "label": "Bereavement Processing"
-      },
-      {
-        "@id": "urn:ngm:class:creative-writing",
-        "label": "Creative Writing"
-      },
-      {
-        "@id": "urn:ngm:class:dementia-engagement",
-        "label": "Dementia Engagement"
-      },
-      {
-        "@id": "urn:ngm:class:fan-fiction",
-        "label": "Fan Fiction"
-      },
-      {
-        "@id": "urn:ngm:class:mental-health-self-help",
-        "label": "Mental Health Self-Help"
-      },
-      {
-        "@id": "urn:ngm:class:neurodivergent-communication",
-        "label": "Neurodivergent Communication"
-      },
-      {
-        "@id": "urn:ngm:class:social-skills-training",
-        "label": "Social Skills Training"
-      }
-    ],
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:c2-pa",
         "label": "C2PA"
       },
       {
-        "@id": "urn:ngm:class:ftc-ai-enforcement",
-        "label": "FTC AI Enforcement"
-      },
-      {
         "@id": "urn:ngm:class:gdpr",
         "label": "GDPR"
       },
       {
-        "@id": "urn:ngm:class:ofcom-guidance",
+        "@id": "urn:ngm:class:ofcom",
         "label": "Ofcom Guidance"
       },
       {

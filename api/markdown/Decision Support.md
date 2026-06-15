@@ -23,58 +23,117 @@ public:: true
   "definition": "Decision Support refers to the class of information systems, analytical frameworks, and AI-augmented tools designed to improve the quality, speed, and consistency of human or automated decision-making by surfacing relevant data, models, and recommendations at the point of choice. Modern decision support systems integrate structured data from enterprise systems with unstructured signals from documents, sensor streams, and language models to present synthesised options with associated confidence levels and risk profiles. They range from simple rule-based dashboards to sophisticated agentic pipelines that autonomously gather evidence, run simulations, and present ranked courses of action. The field spans domains including clinical medicine, financial trading, military command, supply chain management, and public policy.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:artificial-intelligence",
+    "label": "Artificial Intelligence"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:recommendation-engine", "label": "Recommendation Engine"},
-      {"@id": "urn:ngm:class:risk-assessment-model", "label": "Risk Assessment Model"},
-      {"@id": "urn:ngm:class:scenario-simulation", "label": "Scenario Simulation"}
-    ],
-    "partOf": [
-      {"@id": "urn:ngm:class:enterprise-intelligence-platform", "label": "Enterprise Intelligence Platform"}
+      {
+        "@id": "urn:ngm:class:recommendation-engine",
+        "label": "Recommendation Engine"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-integration", "label": "Data Integration"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
+      {
+        "@id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:strategic-planning", "label": "Strategic Planning"},
-      {"@id": "urn:ngm:class:distributed-decision-making", "label": "Distributed Decision Making"},
-      {"@id": "urn:ngm:class:evidence-based-policy", "label": "Evidence-Based Policy"}
+      {
+        "@id": "urn:ngm:class:strategic-planning",
+        "label": "Strategic Planning"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-decision-making",
+        "label": "Distributed Decision Making"
+      },
+      {
+        "@id": "urn:ngm:class:evidence-based-policy",
+        "label": "Evidence-Based Policy"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:machine-learning-inference", "label": "Machine Learning Inference"},
-      {"@id": "urn:ngm:class:real-time-data-pipeline", "label": "Real-Time Data Pipeline"}
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Machine Learning Inference"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-data-pipeline",
+        "label": "Real-Time Data Pipeline"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:data-analytics", "label": "Data Analytics"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"}
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:decision-transparency", "label": "Decision Transparency"},
-      {"@id": "urn:ngm:class:bounded-rationality", "label": "Bounded Rationality"},
-      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:fully-automated-decision-making", "label": "Fully Automated Decision Making"},
-      {"@id": "urn:ngm:class:unaided-expert-judgement", "label": "Unaided Expert Judgement"}
+      {
+        "@id": "urn:ngm:class:decision-transparency",
+        "label": "Decision Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:bounded-rationality",
+        "label": "Bounded Rationality"
+      },
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:clinical-governance", "label": "Clinical Governance"},
-      {"@id": "urn:ngm:class:financial-risk-management", "label": "Financial Risk Management"}
+      {
+        "@id": "urn:ngm:class:financial-risk-management",
+        "label": "Financial Risk Management"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:clinical-decision-support", "label": "Clinical Decision Support"},
-      {"@id": "urn:ngm:class:informed-decision-making", "label": "Informed decision-making"},
-      {"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"},
-      {"@id": "urn:ngm:class:transparent-decision-making", "label": "Transparent Decision Making"}
+      {
+        "@id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      },
+      {
+        "@id": "urn:ngm:class:informed-decision-making",
+        "label": "Informed decision-making"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:transparent-decision-making",
+        "label": "Transparent Decision Making"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:decision-support-system", "label": "Decision Support System"},
-    {"@id": "urn:ngm:class:dss", "label": "DSS"}
+    {
+      "@id": "urn:ngm:class:decision-support-system",
+      "label": "Decision Support System"
+    },
+    {
+      "@id": "urn:ngm:class:dss",
+      "label": "DSS"
+    }
   ],
   "quality": 0.8,
   "provenance": {

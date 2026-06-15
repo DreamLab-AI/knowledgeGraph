@@ -76,7 +76,7 @@ public:: true
         "label": "Discriminator Network"
       },
       {
-        "@id": "urn:ngm:class:latent-space",
+        "@id": "urn:ngm:class:neural-network-latent-space",
         "label": "Latent Space"
       }
     ],
@@ -150,12 +150,8 @@ public:: true
         "label": "Unsupervised Learning"
       },
       {
-        "@id": "urn:ngm:class:mode-collapse",
+        "@id": "urn:ngm:class:model-collapse",
         "label": "Mode Collapse"
-      },
-      {
-        "@id": "urn:ngm:class:wasserstein-distance",
-        "label": "Wasserstein Distance"
       }
     ],
     "bridgesTo": [

@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:optical-system",
+        "id": "urn:ngm:class:optical-systems",
         "label": "Optical System"
       },
       {
@@ -83,7 +83,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:cave-automatic-virtual-environment",
+        "id": "urn:ngm:class:virtual-environment",
         "label": "Cave Automatic Virtual Environment"
       },
       {

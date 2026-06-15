@@ -18,11 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:incident-triage",
+        "id": "urn:ngm:class:incident-response",
         "label": "Incident Triage"
       },
       {
-        "id": "urn:ngm:class:disclosure-notification",
+        "id": "urn:ngm:class:disclosure-requirements",
         "label": "Disclosure Notification"
       }
     ],
@@ -32,7 +32,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:stakeholder-notification",
+        "id": "urn:ngm:class:stakeholder",
         "label": "Stakeholder Notification"
       }
     ],
@@ -56,12 +56,7 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:security-through-obscurity",
-        "label": "Security Through Obscurity"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:ai-safety",
@@ -82,7 +77,7 @@
         "label": "AI Monitoring"
       },
       {
-        "id": "urn:ngm:class:incident-classification",
+        "id": "urn:ngm:class:classification",
         "label": "Incident Classification"
       },
       {
@@ -110,7 +105,7 @@
         "label": "NIS2 Directive"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {

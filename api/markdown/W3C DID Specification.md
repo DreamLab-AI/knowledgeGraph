@@ -23,56 +23,143 @@ public:: true
   "definition": "The W3C Decentralized Identifiers (DIDs) specification is a World Wide Web Consortium recommendation that defines a new type of globally unique, persistent, cryptographically verifiable identifier that does not require a centralised registration authority. A DID resolves to a DID Document containing cryptographic material, service endpoints, and verification methods, enabling the subject to authenticate and authorise interactions without reliance on any single identity provider. The specification defines a generic DID syntax and data model that is method-agnostic, with specific DID methods implementing the create/read/update/deactivate operations on different verifiable data registries including blockchains, distributed ledgers, and peer-to-peer networks. It became a W3C Recommendation in July 2022.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:w3-c-did", "label": "W3C DID"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:w3-c-did",
+    "label": "W3C DID"
+  },
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:w3-c", "label": "W3C"},
-      {"@id": "urn:ngm:class:decentralized-identifiers", "label": "Decentralized Identifiers"},
-      {"@id": "urn:ngm:class:did-document", "label": "DID Document"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:digital-identity-standards", "label": "Digital Identity Standards"}
+      {
+        "@id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      },
+      {
+        "@id": "urn:ngm:class:did-document",
+        "label": "DID Document"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-standards",
+        "label": "Digital Identity Standards"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:decentralized-identity-did", "label": "Decentralized Identity (DID)"},
-      {"@id": "urn:ngm:class:didcomm", "label": "DIDComm"},
-      {"@id": "urn:ngm:class:zero-trust-access-control", "label": "Zero-Trust Access Control"},
-      {"@id": "urn:ngm:class:eudi-wallet", "label": "EUDI Wallet"}
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identity-did",
+        "label": "Decentralized Identity (DID)"
+      },
+      {
+        "@id": "urn:ngm:class:didcomm",
+        "label": "DIDComm"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero-Trust Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:eudi-wallet",
+        "label": "EUDI Wallet"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:w3-c", "label": "W3C"}
+      {
+        "@id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"},
-      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:uri-scheme", "label": "URI Scheme"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:uri-scheme",
+        "label": "URI Scheme"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:did-method", "label": "DID Method"},
-      {"@id": "urn:ngm:class:verifiable-data-registry", "label": "Verifiable Data Registry"},
-      {"@id": "urn:ngm:class:did-resolver", "label": "DID Resolver"}
+      {
+        "@id": "urn:ngm:class:did-method",
+        "label": "DID Method"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-data-registry",
+        "label": "Verifiable Data Registry"
+      },
+      {
+        "@id": "urn:ngm:class:did-resolver",
+        "label": "DID Resolver"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:decentralised-identifier-architecture", "label": "Decentralised Identifier Architecture"}
+      {
+        "@id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier Architecture"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:oauth-2", "label": "OAuth 2"},
-      {"@id": "urn:ngm:class:x-509-certificate", "label": "X.509 Certificate"}
+      {
+        "@id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2"
+      },
+      {
+        "@id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:eidas-2", "label": "eIDAS 2"},
-      {"@id": "urn:ngm:class:openid-connect", "label": "OpenID Connect"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:e-idas-2-0",
+        "label": "eIDAS 2"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:did-document", "label": "DID Document"},
-      {"@id": "urn:ngm:class:verification-method", "label": "Verification Method"},
-      {"@id": "urn:ngm:class:service-endpoint", "label": "Service Endpoint"}
+      {
+        "@id": "urn:ngm:class:did-document",
+        "label": "DID Document"
+      },
+      {
+        "@id": "urn:ngm:class:verification-method",
+        "label": "Verification Method"
+      },
+      {
+        "@id": "urn:ngm:class:service-endpoint",
+        "label": "Service Endpoint"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:did-core", "label": "DID Core"},
-    {"@id": "urn:ngm:class:w3c-decentralized-identifiers", "label": "W3C Decentralized Identifiers"}
+    {
+      "@id": "urn:ngm:class:did-core",
+      "label": "DID Core"
+    },
+    {
+      "@id": "urn:ngm:class:w3c-decentralized-identifiers",
+      "label": "W3C Decentralized Identifiers"
+    }
   ],
   "quality": 0.72,
   "provenance": {

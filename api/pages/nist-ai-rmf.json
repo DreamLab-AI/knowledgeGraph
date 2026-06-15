@@ -16,28 +16,7 @@
   "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:ai-rmf-govern-function",
-        "label": "AI RMF Govern Function"
-      },
-      {
-        "id": "urn:ngm:class:ai-rmf-map-function",
-        "label": "AI RMF Map Function"
-      },
-      {
-        "id": "urn:ngm:class:ai-rmf-measure-function",
-        "label": "AI RMF Measure Function"
-      },
-      {
-        "id": "urn:ngm:class:ai-rmf-manage-function",
-        "label": "AI RMF Manage Function"
-      },
-      {
-        "id": "urn:ngm:class:ai-rmf-playbook",
-        "label": "AI RMF Playbook"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:risk-assessment",
@@ -46,10 +25,6 @@
       {
         "id": "urn:ngm:class:stakeholder-engagement",
         "label": "Stakeholder Engagement"
-      },
-      {
-        "id": "urn:ngm:class:organisational-governance",
-        "label": "Organisational Governance"
       }
     ],
     "enables": [
@@ -74,7 +49,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
@@ -115,7 +90,7 @@
         "label": "Reliability"
       },
       {
-        "id": "urn:ngm:class:ai-explainability",
+        "id": "urn:ngm:class:explainability",
         "label": "AI Explainability"
       },
       {
@@ -129,12 +104,7 @@
         "label": "NIST"
       }
     ],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:us-ai-policy",
-        "label": "US AI Policy"
-      }
-    ],
+    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:ai-governance",

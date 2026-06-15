@@ -23,52 +23,119 @@ public:: true
   "definition": "Replication is the practice of maintaining multiple copies of data or services across different machines or locations to improve availability, durability, fault tolerance, and read performance. Strategies range from synchronous replication, which guarantees copies are identical before acknowledging a write, to asynchronous replication, which favours latency at the risk of temporary divergence. Replication is foundational to distributed databases, content-delivery networks, and high-availability systems, and its design forces explicit choices among consistency, availability, and partition tolerance.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:fault-tolerance",
+    "label": "Fault Tolerance"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:synchronous-replication", "label": "Synchronous Replication"},
-      {"@id": "urn:ngm:class:asynchronous-replication", "label": "Asynchronous Replication"},
-      {"@id": "urn:ngm:class:replication-log", "label": "Replication Log"}
+      {
+        "@id": "urn:ngm:class:replication-log",
+        "label": "Replication Log"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:high-availability", "label": "High Availability"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"},
-      {"@id": "urn:ngm:class:network-partition-tolerance", "label": "Network Partition Tolerance"}
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:network-partition-tolerance",
+        "label": "Network Partition Tolerance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:data-availability", "label": "Data Availability"},
-      {"@id": "urn:ngm:class:disaster-recovery", "label": "Disaster Recovery"},
-      {"@id": "urn:ngm:class:read-scalability", "label": "Read Scalability"}
+      {
+        "@id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "@id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      },
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Read Scalability"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:write-ahead-log", "label": "Write-Ahead Log"},
-      {"@id": "urn:ngm:class:leader-election", "label": "Leader Election"}
+      {
+        "@id": "urn:ngm:class:write-ahead-log",
+        "label": "Write-Ahead Log"
+      },
+      {
+        "@id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:crdt", "label": "CRDT"},
-      {"@id": "urn:ngm:class:version-vector", "label": "Version Vector"},
-      {"@id": "urn:ngm:class:quorum", "label": "Quorum"}
+      {
+        "@id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      },
+      {
+        "@id": "urn:ngm:class:version-vector",
+        "label": "Version Vector"
+      },
+      {
+        "@id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:sharding", "label": "Sharding"},
-      {"@id": "urn:ngm:class:eventual-consistency", "label": "Eventual Consistency"}
+      {
+        "@id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      },
+      {
+        "@id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"},
-      {"@id": "urn:ngm:class:cap-theorem", "label": "CAP Theorem"},
-      {"@id": "urn:ngm:class:raft-consensus", "label": "RAFT Consensus"},
-      {"@id": "urn:ngm:class:paxos", "label": "Paxos"}
+      {
+        "@id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "@id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "@id": "urn:ngm:class:raft-consensus",
+        "label": "RAFT Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:blockchain-consensus", "label": "Blockchain Consensus"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-consensus",
+        "label": "Blockchain Consensus"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:data-replication", "label": "Data Replication"}
+    {
+      "@id": "urn:ngm:class:data-replication",
+      "label": "Data Replication"
+    }
   ],
   "quality": 0.8,
   "provenance": {

@@ -70,10 +70,6 @@
       {
         "id": "urn:ngm:class:block-reward",
         "label": "Block Reward"
-      },
-      {
-        "id": "urn:ngm:class:mining-profitability",
-        "label": "Mining Profitability"
       }
     ],
     "implements": [],
@@ -81,10 +77,6 @@
       {
         "id": "urn:ngm:class:proof-of-stake",
         "label": "Proof Of Stake"
-      },
-      {
-        "id": "urn:ngm:class:validator-stake",
-        "label": "Validator Stake"
       }
     ],
     "bridgesTo": [

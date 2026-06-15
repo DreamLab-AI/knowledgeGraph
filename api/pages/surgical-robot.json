@@ -26,10 +26,6 @@
         "label": "Robotic Arm"
       },
       {
-        "id": "urn:ngm:class:surgeon-console",
-        "label": "Surgeon Console"
-      },
-      {
         "id": "urn:ngm:class:end-effector",
         "label": "End Effector"
       }
@@ -60,24 +56,12 @@
       {
         "id": "urn:ngm:class:minimally-invasive-surgery",
         "label": "Minimally Invasive Surgery"
-      },
-      {
-        "id": "urn:ngm:class:telesurgery",
-        "label": "Telesurgery"
-      },
-      {
-        "id": "urn:ngm:class:tremor-filtration",
-        "label": "Tremor Filtration"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:human-robot-interaction",
         "label": "Human-Robot Interaction"
-      },
-      {
-        "id": "urn:ngm:class:surgical-planning",
-        "label": "Surgical Planning"
       }
     ],
     "implements": [],
@@ -111,24 +95,12 @@
         "label": "Motion Planning"
       },
       {
-        "id": "urn:ngm:class:endoscopy",
-        "label": "Endoscopy"
-      },
-      {
         "id": "urn:ngm:class:stereo-vision",
         "label": "Stereo Vision"
-      },
-      {
-        "id": "urn:ngm:class:image-guided-surgery",
-        "label": "Image-Guided Surgery"
       }
     ],
     "supports": [],
     "standardizedBy": [
-      {
-        "id": "urn:ngm:class:iec-80601-2-77",
-        "label": "IEC 80601-2-77"
-      },
       {
         "id": "urn:ngm:class:iso-8373",
         "label": "ISO 8373"

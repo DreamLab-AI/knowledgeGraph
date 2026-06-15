@@ -81,30 +81,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:nanite",
-        "label": "Nanite"
-      },
-      {
         "@id": "urn:ngm:class:lumen",
         "label": "Lumen"
-      },
-      {
-        "@id": "urn:ngm:class:blueprints-visual-scripting",
-        "label": "Blueprints Visual Scripting"
-      },
-      {
-        "@id": "urn:ngm:class:chaos-physics",
-        "label": "Chaos Physics"
-      },
-      {
-        "@id": "urn:ngm:class:niagara-vfx",
-        "label": "Niagara VFX"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:epic-games-ecosystem",
-        "label": "Epic Games Ecosystem"
       }
     ],
     "requires": [
@@ -135,7 +113,7 @@ public:: true
         "label": "Architectural Visualisation"
       },
       {
-        "@id": "urn:ngm:class:xr-application",
+        "@id": "urn:ngm:class:xr-applications",
         "label": "XR Application"
       }
     ],
@@ -161,20 +139,12 @@ public:: true
       {
         "@id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
-      },
-      {
-        "@id": "urn:ngm:class:multiplayer-networking",
-        "label": "Multiplayer Networking"
       }
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:unity-engine",
+        "@id": "urn:ngm:class:unity",
         "label": "Unity Engine"
-      },
-      {
-        "@id": "urn:ngm:class:godot-engine",
-        "label": "Godot Engine"
       }
     ],
     "bridgesTo": [
@@ -183,22 +153,12 @@ public:: true
         "label": "Computer Vision"
       },
       {
-        "@id": "urn:ngm:class:3d-reconstruction",
+        "@id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
       },
       {
         "@id": "urn:ngm:class:simulation",
         "label": "Simulation"
-      }
-    ],
-    "relatedTo": [
-      {
-        "@id": "urn:ngm:class:fortnite",
-        "label": "Fortnite"
-      },
-      {
-        "@id": "urn:ngm:class:metahuman",
-        "label": "MetaHuman"
       }
     ]
   },

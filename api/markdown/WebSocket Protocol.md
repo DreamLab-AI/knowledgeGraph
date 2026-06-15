@@ -24,53 +24,130 @@ public:: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}
+    {
+      "@id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:transmission-control-protocol", "label": "Transmission Control Protocol"},
-      {"@id": "urn:ngm:class:hypertext-transfer-protocol", "label": "Hypertext Transfer Protocol"},
-      {"@id": "urn:ngm:class:transport-layer-security", "label": "Transport Layer Security"}
+      {
+        "@id": "urn:ngm:class:transmission-control-protocol",
+        "label": "Transmission Control Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:hypertext-transfer-protocol",
+        "label": "Hypertext Transfer Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:realtime-collaboration", "label": "Realtime Collaboration"},
-      {"@id": "urn:ngm:class:agent-event-stream", "label": "Agent Event Stream"},
-      {"@id": "urn:ngm:class:server-push", "label": "Server Push"},
-      {"@id": "urn:ngm:class:live-data-streaming", "label": "Live Data Streaming"}
+      {
+        "@id": "urn:ngm:class:realtime-collaboration",
+        "label": "Realtime Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:agent-event-stream",
+        "label": "Agent Event Stream"
+      },
+      {
+        "@id": "urn:ngm:class:server-push",
+        "label": "Server Push"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-streaming",
+        "label": "Live Data Streaming"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:networking-infrastructure", "label": "Networking Infrastructure"},
-      {"@id": "urn:ngm:class:tcp-connection", "label": "TCP Connection"}
+      {
+        "@id": "urn:ngm:class:networking-infrastructure",
+        "label": "Networking Infrastructure"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:asynchronous-communication", "label": "Asynchronous Communication"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
-      {"@id": "urn:ngm:class:publish-subscribe-pattern", "label": "Publish-Subscribe Pattern"}
+      {
+        "@id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:rfc-6455", "label": "RFC 6455"},
-      {"@id": "urn:ngm:class:full-duplex-communication", "label": "Full Duplex Communication"}
+      {
+        "@id": "urn:ngm:class:rfc-6455",
+        "label": "RFC 6455"
+      },
+      {
+        "@id": "urn:ngm:class:full-duplex-communication",
+        "label": "Full Duplex Communication"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:g-rpc", "label": "gRPC"},
-      {"@id": "urn:ngm:class:server-sent-events", "label": "Server-Sent Events"},
-      {"@id": "urn:ngm:class:http-long-polling", "label": "HTTP Long Polling"},
-      {"@id": "urn:ngm:class:webrtc", "label": "WebRTC"}
+      {
+        "@id": "urn:ngm:class:g-rpc",
+        "label": "gRPC"
+      },
+      {
+        "@id": "urn:ngm:class:server-sent-events",
+        "label": "Server-Sent Events"
+      },
+      {
+        "@id": "urn:ngm:class:http",
+        "label": "HTTP Long Polling"
+      },
+      {
+        "@id": "urn:ngm:class:webrtc",
+        "label": "WebRTC"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:web-socket", "label": "WebSocket"},
-      {"@id": "urn:ngm:class:realtime-communication", "label": "Realtime Communication"},
-      {"@id": "urn:ngm:class:http-2", "label": "HTTP/2"},
-      {"@id": "urn:ngm:class:mqtt", "label": "MQTT"}
+      {
+        "@id": "urn:ngm:class:web-socket",
+        "label": "WebSocket"
+      },
+      {
+        "@id": "urn:ngm:class:realtime-communication",
+        "label": "Realtime Communication"
+      },
+      {
+        "@id": "urn:ngm:class:http",
+        "label": "HTTP/2"
+      },
+      {
+        "@id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"}
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:web-socket", "label": "WebSocket"},
-    {"@id": "urn:ngm:class:rfc-6455", "label": "RFC 6455"}
+    {
+      "@id": "urn:ngm:class:web-socket",
+      "label": "WebSocket"
+    },
+    {
+      "@id": "urn:ngm:class:rfc-6455",
+      "label": "RFC 6455"
+    }
   ],
   "quality": 0.72,
   "provenance": {

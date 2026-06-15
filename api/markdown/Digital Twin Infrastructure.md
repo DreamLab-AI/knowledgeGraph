@@ -104,10 +104,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:edge-analytics",
-        "label": "Edge Analytics"
-      },
-      {
         "@id": "urn:ngm:class:scalable-deployment",
         "label": "Scalable Deployment"
       },

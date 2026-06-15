@@ -532,39 +532,15 @@ public:: true
         "label": "DeepDAO"
       },
       {
-        "@id": "urn:ngm:class:delegate-performance-tracker",
-        "label": "Delegate Performance Tracker"
-      },
-      {
         "@id": "urn:ngm:class:dune-analytics",
         "label": "Dune Analytics"
-      },
-      {
-        "@id": "urn:ngm:class:governance-alert-system",
-        "label": "Governance Alert System"
-      },
-      {
-        "@id": "urn:ngm:class:governance-dashboard",
-        "label": "Governance Dashboard"
-      },
-      {
-        "@id": "urn:ngm:class:grant-analytics",
-        "label": "Grant Analytics"
-      },
-      {
-        "@id": "urn:ngm:class:messari",
-        "label": "Messari"
       },
       {
         "@id": "urn:ngm:class:on-chain-data-indexing",
         "label": "On-Chain Data Indexing"
       },
       {
-        "@id": "urn:ngm:class:proposal-lifecycle-analysis",
-        "label": "Proposal Lifecycle Analysis"
-      },
-      {
-        "@id": "urn:ngm:class:sybil-resistance-metrics",
+        "@id": "urn:ngm:class:sybil-resistance",
         "label": "Sybil Resistance Metrics"
       },
       {
@@ -574,21 +550,9 @@ public:: true
       {
         "@id": "urn:ngm:class:treasury-analytics",
         "label": "Treasury Analytics"
-      },
-      {
-        "@id": "urn:ngm:class:voter-participation-metrics",
-        "label": "Voter Participation Metrics"
-      },
-      {
-        "@id": "urn:ngm:class:voting-power-distribution",
-        "label": "Voting Power Distribution"
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:abi-repository",
-        "label": "ABI Repository"
-      },
       {
         "@id": "urn:ngm:class:block-explorer",
         "label": "Block Explorer"
@@ -606,66 +570,18 @@ public:: true
         "label": "On-Chain Data Indexing"
       },
       {
-        "@id": "urn:ngm:class:oracle-price-feeds",
+        "@id": "urn:ngm:class:price-oracle",
         "label": "Oracle Price Feeds"
-      },
-      {
-        "@id": "urn:ngm:class:smart-contract-event-decoding",
-        "label": "Smart Contract Event Decoding"
-      },
-      {
-        "@id": "urn:ngm:class:snapshot-api",
-        "label": "Snapshot API"
-      },
-      {
-        "@id": "urn:ngm:class:subgraph-protocol",
-        "label": "Subgraph Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:the-graph-protocol",
-        "label": "The Graph Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:token-holder-mapping",
-        "label": "Token Holder Mapping"
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:community-understanding",
-        "label": "Community Understanding"
-      },
       {
         "@id": "urn:ngm:class:cross-dao-benchmarking",
         "label": "Cross-DAO Benchmarking"
       },
       {
-        "@id": "urn:ngm:class:data-driven-governance",
-        "label": "Data-Driven Governance"
-      },
-      {
-        "@id": "urn:ngm:class:delegate-accountability",
-        "label": "Delegate Accountability"
-      },
-      {
-        "@id": "urn:ngm:class:governance-attack-detection",
-        "label": "Governance Attack Detection"
-      },
-      {
-        "@id": "urn:ngm:class:institutional-due-diligence",
-        "label": "Institutional Due Diligence"
-      },
-      {
         "@id": "urn:ngm:class:retroactive-public-goods-funding",
         "label": "Retroactive Public Goods Funding"
-      },
-      {
-        "@id": "urn:ngm:class:sybil-detection",
-        "label": "Sybil Detection"
-      },
-      {
-        "@id": "urn:ngm:class:treasury-transparency",
-        "label": "Treasury Transparency"
       },
       {
         "@id": "urn:ngm:class:regulatory-reporting",
@@ -673,10 +589,6 @@ public:: true
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:delegate-reputation-score",
-        "label": "Delegate Reputation Score"
-      },
       {
         "@id": "urn:ngm:class:gini-coefficient",
         "label": "Gini Coefficient"
@@ -686,24 +598,8 @@ public:: true
         "label": "Nakamoto Coefficient"
       },
       {
-        "@id": "urn:ngm:class:proposal-success-rate",
-        "label": "Proposal Success Rate"
-      },
-      {
-        "@id": "urn:ngm:class:quadratic-voting-analytics",
+        "@id": "urn:ngm:class:quadratic-voting",
         "label": "Quadratic Voting Analytics"
-      },
-      {
-        "@id": "urn:ngm:class:sybil-clustering",
-        "label": "Sybil Clustering"
-      },
-      {
-        "@id": "urn:ngm:class:treasury-runway-calculation",
-        "label": "Treasury Runway Calculation"
-      },
-      {
-        "@id": "urn:ngm:class:voter-participation-rate",
-        "label": "Voter Participation Rate"
       },
       {
         "@id": "urn:ngm:class:sentiment-analysis",
@@ -716,14 +612,6 @@ public:: true
         "label": "Apache Parquet"
       },
       {
-        "@id": "urn:ngm:class:dbt-data-build-tool",
-        "label": "dbt Data Build Tool"
-      },
-      {
-        "@id": "urn:ngm:class:duck-db",
-        "label": "DuckDB"
-      },
-      {
         "@id": "urn:ngm:class:graph-database",
         "label": "Graph Database"
       },
@@ -734,10 +622,6 @@ public:: true
       {
         "@id": "urn:ngm:class:ipfs",
         "label": "IPFS"
-      },
-      {
-        "@id": "urn:ngm:class:sql-analytics",
-        "label": "SQL Analytics"
       },
       {
         "@id": "urn:ngm:class:time-series-analysis",
@@ -850,23 +734,15 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:daostar-metadata-standard",
+        "@id": "urn:ngm:class:metadata-standard",
         "label": "DAOstar Metadata Standard"
-      },
-      {
-        "@id": "urn:ngm:class:eip-4824-dao-uri-standard",
-        "label": "EIP-4824 DAO URI Standard"
       },
       {
         "@id": "urn:ngm:class:open-zeppelin-governor",
         "label": "OpenZeppelin Governor"
       },
       {
-        "@id": "urn:ngm:class:snapshot-governance-framework",
-        "label": "Snapshot Governance Framework"
-      },
-      {
-        "@id": "urn:ngm:class:tally-governor-standard",
+        "@id": "urn:ngm:class:tally",
         "label": "Tally Governor Standard"
       }
     ]

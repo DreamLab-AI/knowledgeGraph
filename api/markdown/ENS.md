@@ -31,51 +31,118 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"}
+    {
+      "@id": "urn:ngm:class:decentralised-identity",
+      "label": "Decentralised Identity"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:nft", "label": "NFT"},
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
-      {"@id": "urn:ngm:class:erc-721", "label": "ERC-721"},
-      {"@id": "urn:ngm:class:ipfs", "label": "IPFS"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralised-web", "label": "Decentralised Web"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:web3", "label": "Web3"},
-      {"@id": "urn:ngm:class:decentralised-application", "label": "Decentralised Application"}
+      {
+        "@id": "urn:ngm:class:decentralised-web",
+        "label": "Decentralised Web"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:web3",
+        "label": "Web3"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:erc-137", "label": "ERC-137"},
-      {"@id": "urn:ngm:class:eip-3668", "label": "EIP-3668 CCIP-Read"},
-      {"@id": "urn:ngm:class:slip-0044", "label": "SLIP-0044"}
+      {
+        "@id": "urn:ngm:class:erc-137",
+        "label": "ERC-137"
+      },
+      {
+        "@id": "urn:ngm:class:eip-3668",
+        "label": "EIP-3668 CCIP-Read"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ethereum-virtual-machine", "label": "Ethereum Virtual Machine"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"}
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:dns", "label": "DNS"},
-      {"@id": "urn:ngm:class:unstoppable-domains", "label": "Unstoppable Domains"}
+      {
+        "@id": "urn:ngm:class:dns",
+        "label": "DNS"
+      },
+      {
+        "@id": "urn:ngm:class:unstoppable-domains",
+        "label": "Unstoppable Domains"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:dao", "label": "DAO"},
-      {"@id": "urn:ngm:class:wallet-address", "label": "Wallet Address"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:name-registry", "label": "Name Registry"}
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "@id": "urn:ngm:class:wallet-address",
+        "label": "Wallet Address"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-identifier", "label": "Decentralised Identifier"},
-      {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"}
+      {
+        "@id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:ethereum-ecosystem", "label": "Ethereum Ecosystem"}
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum Ecosystem"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ethereum-name-service", "label": "Ethereum Name Service"}
+    {
+      "@id": "urn:ngm:class:ethereum-name-service",
+      "label": "Ethereum Name Service"
+    }
   ],
   "quality": 0.74,
   "provenance": {

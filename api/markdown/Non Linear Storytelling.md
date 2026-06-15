@@ -68,14 +68,7 @@ alias:: Non-Linear Storytelling
       "label": "Storytelling"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:multiple-endings",
-        "label": "Multiple Endings"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

@@ -18,10 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:leapfrog-integrator",
-        "label": "Leapfrog Integrator"
-      },
-      {
         "id": "urn:ngm:class:metropolis-hastings",
         "label": "Metropolis-Hastings"
       },
@@ -52,10 +48,6 @@
       {
         "id": "urn:ngm:class:uncertainty-quantification",
         "label": "Uncertainty Quantification"
-      },
-      {
-        "id": "urn:ngm:class:hierarchical-modelling",
-        "label": "Hierarchical Modelling"
       }
     ],
     "dependsOn": [],
@@ -75,10 +67,6 @@
         "label": "Variational Inference"
       },
       {
-        "id": "urn:ngm:class:random-walk-metropolis",
-        "label": "Random Walk Metropolis"
-      },
-      {
         "id": "urn:ngm:class:gibbs-sampling",
         "label": "Gibbs Sampling"
       }
@@ -87,10 +75,6 @@
       {
         "id": "urn:ngm:class:molecular-dynamics",
         "label": "Molecular Dynamics"
-      },
-      {
-        "id": "urn:ngm:class:quantum-field-theory",
-        "label": "Quantum Field Theory"
       }
     ],
     "uses": [
@@ -133,16 +117,8 @@
         "label": "Inference Algorithm"
       },
       {
-        "id": "urn:ngm:class:stan-language",
-        "label": "Stan Language"
-      },
-      {
         "id": "urn:ngm:class:normalising-flow",
         "label": "Normalising Flow"
-      },
-      {
-        "id": "urn:ngm:class:riemannian-manifold",
-        "label": "Riemannian Manifold"
       }
     ]
   },

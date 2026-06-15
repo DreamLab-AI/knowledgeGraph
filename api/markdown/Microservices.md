@@ -23,52 +23,135 @@ public:: true
   "definition": "Microservices is an architectural style in which a large application is decomposed into a suite of small, independently deployable services, each responsible for a distinct bounded business capability and communicating through well-defined lightweight APIs or message channels. Each service runs in its own process, manages its own data store, and can be developed, deployed, scaled, and retired independently of other services. The pattern contrasts with monolithic architectures by enabling polyglot development, fine-grained fault isolation, and organisational alignment of teams with service ownership, at the cost of increased operational and distributed-systems complexity.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
-      {"@id": "urn:ngm:class:service-discovery", "label": "Service Discovery"},
-      {"@id": "urn:ngm:class:service-mesh", "label": "Service Mesh"},
-      {"@id": "urn:ngm:class:circuit-breaker", "label": "Circuit Breaker"}
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:circuit-breaker",
+        "label": "Circuit Breaker"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:cloud-native-applications", "label": "Cloud-Native Applications"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:container-orchestration", "label": "Container Orchestration"},
-      {"@id": "urn:ngm:class:continuous-delivery", "label": "Continuous Delivery"},
-      {"@id": "urn:ngm:class:observability", "label": "Observability"}
+      {
+        "@id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:devops", "label": "DevOps"},
-      {"@id": "urn:ngm:class:scalability", "label": "Scalability"},
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:polyglot-persistence", "label": "Polyglot Persistence"}
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:persistence",
+        "label": "Polyglot Persistence"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"},
-      {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
-      {"@id": "urn:ngm:class:grpc", "label": "gRPC"},
-      {"@id": "urn:ngm:class:message-broker", "label": "Message Broker"},
-      {"@id": "urn:ngm:class:open-telemetry", "label": "OpenTelemetry"},
-      {"@id": "urn:ngm:class:docker", "label": "Docker"}
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:grpc",
+        "label": "gRPC"
+      },
+      {
+        "@id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      },
+      {
+        "@id": "urn:ngm:class:open-telemetry",
+        "label": "OpenTelemetry"
+      },
+      {
+        "@id": "urn:ngm:class:docker-containerisation-platform",
+        "label": "Docker"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:monolithic-architecture", "label": "Monolithic Architecture"},
-      {"@id": "urn:ngm:class:service-oriented-architecture", "label": "Service Oriented Architecture"}
+      {
+        "@id": "urn:ngm:class:monolithic-architecture",
+        "label": "Monolithic Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service Oriented Architecture"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:domain-driven-design", "label": "Domain-Driven Design"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
-      {"@id": "urn:ngm:class:twelve-factor-app", "label": "Twelve-Factor App"}
+      {
+        "@id": "urn:ngm:class:domain-driven-design",
+        "label": "Domain-Driven Design"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:twelve-factor-app",
+        "label": "Twelve-Factor App"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:serverless-computing", "label": "Serverless Computing"}
+      {
+        "@id": "urn:ngm:class:serverless-architecture",
+        "label": "Serverless Computing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:microservice-architecture", "label": "Microservice Architecture"}
+    {
+      "@id": "urn:ngm:class:microservice-architecture",
+      "label": "Microservice Architecture"
+    }
   ],
   "quality": 0.75,
   "provenance": {

@@ -37,10 +37,6 @@
       {
         "id": "urn:ngm:class:object-detection",
         "label": "Object Detection"
-      },
-      {
-        "id": "urn:ngm:class:hd-maps",
-        "label": "HD Maps"
       }
     ],
     "enables": [
@@ -125,16 +121,12 @@
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:sae-j3016",
+        "id": "urn:ngm:class:sae-j-3016",
         "label": "SAE J3016"
       },
       {
         "id": "urn:ngm:class:iso-26262",
         "label": "ISO 26262"
-      },
-      {
-        "id": "urn:ngm:class:un-ece-wp29",
-        "label": "UN ECE WP.29"
       }
     ],
     "partOf": [],

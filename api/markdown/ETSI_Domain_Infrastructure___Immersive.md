@@ -204,19 +204,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:5-gstand-alone-architecture",
-        "label": "5GStandAloneArchitecture"
-      },
-      {
-        "@id": "urn:ngm:class:distributed-caching",
-        "label": "DistributedCaching"
-      },
-      {
-        "@id": "urn:ngm:class:fiber-optics-infrastructure",
-        "label": "FiberOpticsInfrastructure"
-      },
-      {
-        "@id": "urn:ngm:class:gpucompute-infrastructure",
+        "@id": "urn:ngm:class:compute-infrastructure",
         "label": "GPUComputeInfrastructure"
       },
       {
@@ -228,10 +216,6 @@ public:: true
       {
         "@id": "urn:ngm:class:extended-reality",
         "label": "Extended Reality"
-      },
-      {
-        "@id": "urn:ngm:class:metaverse-environment",
-        "label": "MetaverseEnvironment"
       },
       {
         "@id": "urn:ngm:class:real-time-synchronization",

@@ -330,10 +330,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:business-glossary",
-        "label": "Business Glossary"
-      },
-      {
         "@id": "urn:ngm:class:data-catalog",
         "label": "Data Catalog"
       },
@@ -354,16 +350,8 @@ public:: true
         "label": "Data Observability"
       },
       {
-        "@id": "urn:ngm:class:metadata-model",
-        "label": "Metadata Model"
-      },
-      {
         "@id": "urn:ngm:class:ontology",
         "label": "Ontology"
-      },
-      {
-        "@id": "urn:ngm:class:quality-scorecard",
-        "label": "Quality Scorecard"
       },
       {
         "@id": "urn:ngm:class:semantic-layer",
@@ -448,16 +436,8 @@ public:: true
         "label": "Apache Atlas"
       },
       {
-        "@id": "urn:ngm:class:aws-glue-data-catalog",
+        "@id": "urn:ngm:class:data-catalog",
         "label": "AWS Glue Data Catalog"
-      },
-      {
-        "@id": "urn:ngm:class:data-hub",
-        "label": "DataHub"
-      },
-      {
-        "@id": "urn:ngm:class:microsoft-purview",
-        "label": "Microsoft Purview"
       },
       {
         "@id": "urn:ngm:class:open-lineage",
@@ -466,10 +446,6 @@ public:: true
       {
         "@id": "urn:ngm:class:open-metadata",
         "label": "OpenMetadata"
-      },
-      {
-        "@id": "urn:ngm:class:unity-catalog",
-        "label": "Unity Catalog"
       }
     ],
     "uses": [
@@ -504,10 +480,6 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:active-metadata",
-        "label": "Active Metadata"
-      },
-      {
         "@id": "urn:ngm:class:data-contracts",
         "label": "Data Contracts"
       },
@@ -522,10 +494,6 @@ public:: true
       {
         "@id": "urn:ngm:class:data-observability",
         "label": "Data Observability"
-      },
-      {
-        "@id": "urn:ngm:class:data-ops",
-        "label": "DataOps"
       },
       {
         "@id": "urn:ngm:class:feature-store",
@@ -568,20 +536,12 @@ public:: true
         "label": "Apache Atlas"
       },
       {
-        "@id": "urn:ngm:class:data-hub-metadata-model",
-        "label": "DataHub Metadata Model"
-      },
-      {
         "@id": "urn:ngm:class:dcat",
         "label": "DCAT"
       },
       {
         "@id": "urn:ngm:class:dublin-core",
         "label": "Dublin Core"
-      },
-      {
-        "@id": "urn:ngm:class:iso-gql",
-        "label": "ISO GQL"
       },
       {
         "@id": "urn:ngm:class:open-lineage",

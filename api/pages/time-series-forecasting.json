@@ -22,10 +22,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:covariates",
-        "label": "Covariates"
-      },
-      {
         "id": "urn:ngm:class:evaluation-metric",
         "label": "Evaluation Metric"
       },
@@ -34,42 +30,14 @@
         "label": "Forecast Horizon"
       },
       {
-        "id": "urn:ngm:class:interval-forecast",
-        "label": "Interval Forecast"
-      },
-      {
-        "id": "urn:ngm:class:lookback-window",
-        "label": "Lookback Window"
-      },
-      {
-        "id": "urn:ngm:class:point-forecast",
-        "label": "Point Forecast"
-      },
-      {
-        "id": "urn:ngm:class:probabilistic-forecast",
+        "id": "urn:ngm:class:probabilistic-forecasting",
         "label": "Probabilistic Forecast"
-      },
-      {
-        "id": "urn:ngm:class:reconciliation-step",
-        "label": "Reconciliation Step"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cross-validation-strategy",
+        "id": "urn:ngm:class:cross-validation",
         "label": "Cross-Validation Strategy"
-      },
-      {
-        "id": "urn:ngm:class:forecast-evaluation-protocol",
-        "label": "Forecast Evaluation Protocol"
-      },
-      {
-        "id": "urn:ngm:class:historical-time-series-data",
-        "label": "Historical Time Series Data"
-      },
-      {
-        "id": "urn:ngm:class:stationarity-analysis",
-        "label": "Stationarity Analysis"
       },
       {
         "id": "urn:ngm:class:compute-infrastructure",
@@ -82,10 +50,6 @@
         "label": "Anomaly Detection"
       },
       {
-        "id": "urn:ngm:class:automated-reporting",
-        "label": "Automated Reporting"
-      },
-      {
         "id": "urn:ngm:class:capacity-planning",
         "label": "Capacity Planning"
       },
@@ -96,10 +60,6 @@
       {
         "id": "urn:ngm:class:demand-planning",
         "label": "Demand Planning"
-      },
-      {
-        "id": "urn:ngm:class:risk-quantification",
-        "label": "Risk Quantification"
       },
       {
         "id": "urn:ngm:class:scenario-analysis",
@@ -117,10 +77,6 @@
         "label": "Exponential Smoothing"
       },
       {
-        "id": "urn:ngm:class:hierarchical-reconciliation",
-        "label": "Hierarchical Reconciliation"
-      },
-      {
         "id": "urn:ngm:class:lstm",
         "label": "LSTM"
       },
@@ -129,16 +85,8 @@
         "label": "Normalising Flows"
       },
       {
-        "id": "urn:ngm:class:quantile-regression",
-        "label": "Quantile Regression"
-      },
-      {
         "id": "urn:ngm:class:state-space-models",
         "label": "State Space Models"
-      },
-      {
-        "id": "urn:ngm:class:transformer-attention",
-        "label": "Transformer Attention"
       }
     ],
     "contrastsWith": [],
@@ -150,20 +98,12 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:autocorrelation-analysis",
-        "label": "Autocorrelation Analysis"
-      },
-      {
         "id": "urn:ngm:class:bayesian-inference",
         "label": "Bayesian Inference"
       },
       {
         "id": "urn:ngm:class:fourier-transform",
         "label": "Fourier Transform"
-      },
-      {
-        "id": "urn:ngm:class:stationarity-testing",
-        "label": "Stationarity Testing"
       },
       {
         "id": "urn:ngm:class:attention-mechanism",
@@ -180,20 +120,8 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:energy-forecasting",
-        "label": "Energy Forecasting"
-      },
-      {
-        "id": "urn:ngm:class:financial-risk",
-        "label": "Financial Risk"
-      },
-      {
-        "id": "urn:ngm:class:smart-grid-operations",
+        "id": "urn:ngm:class:smart-grid",
         "label": "Smart Grid Operations"
-      },
-      {
-        "id": "urn:ngm:class:traffic-prediction",
-        "label": "Traffic Prediction"
       },
       {
         "id": "urn:ngm:class:clinical-decision-support",
@@ -204,24 +132,7 @@
         "label": "Supply Chain Management"
       }
     ],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:crps-evaluation-standard",
-        "label": "CRPS Evaluation Standard"
-      },
-      {
-        "id": "urn:ngm:class:m-competition-protocol",
-        "label": "M-Competition Protocol"
-      },
-      {
-        "id": "urn:ngm:class:monash-time-series-archive",
-        "label": "Monash Time Series Archive"
-      },
-      {
-        "id": "urn:ngm:class:nixtla-benchmark-suite",
-        "label": "Nixtla Benchmark Suite"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {

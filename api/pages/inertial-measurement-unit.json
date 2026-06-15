@@ -66,10 +66,6 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:optical-flow-sensor",
-        "label": "Optical Flow Sensor"
-      },
-      {
         "id": "urn:ngm:class:wheel-odometry",
         "label": "Wheel Odometry"
       }
@@ -82,10 +78,6 @@
       {
         "id": "urn:ngm:class:augmented-reality-tracking",
         "label": "Augmented Reality Tracking"
-      },
-      {
-        "id": "urn:ngm:class:pedestrian-dead-reckoning",
-        "label": "Pedestrian Dead Reckoning"
       }
     ],
     "uses": [

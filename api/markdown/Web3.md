@@ -388,10 +388,6 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:eip-4361",
-        "label": "EIP-4361"
-      },
-      {
         "@id": "urn:ngm:class:eip-7702",
         "label": "EIP-7702"
       },
@@ -430,7 +426,7 @@ public:: true
         "label": "MetaMask"
       },
       {
-        "@id": "urn:ngm:class:phantom-wallet",
+        "@id": "urn:ngm:class:wallet",
         "label": "Phantom Wallet"
       },
       {

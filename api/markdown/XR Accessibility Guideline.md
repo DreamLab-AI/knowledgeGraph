@@ -114,17 +114,13 @@ public:: true
         "label": "Best Practice"
       },
       {
-        "@id": "urn:ngm:class:design-recommendation",
-        "label": "Design Recommendation"
-      },
-      {
         "@id": "urn:ngm:class:implementation-examples",
         "label": "implementation examples"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:accessibility-testing",
+        "@id": "urn:ngm:class:accessibility-audit-tool",
         "label": "Accessibility Testing"
       },
       {

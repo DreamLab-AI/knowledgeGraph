@@ -440,15 +440,11 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:ai-copilot-layer",
-        "label": "AI Copilot Layer"
-      },
-      {
         "@id": "urn:ngm:class:cloud-storage",
         "label": "Cloud Storage"
       },
       {
-        "@id": "urn:ngm:class:collaborative-systems-modality-document-editing",
+        "@id": "urn:ngm:class:collaborative-systems-modality",
         "label": "Collaborative Document Editing"
       },
       {
@@ -456,19 +452,15 @@ public:: true
         "label": "Enterprise Search"
       },
       {
-        "@id": "urn:ngm:class:integration-apis",
+        "@id": "urn:ngm:class:api-integration",
         "label": "Integration APIs"
       },
       {
-        "@id": "urn:ngm:class:intranet-portal",
+        "@id": "urn:ngm:class:portal-system",
         "label": "Intranet Portal"
       },
       {
-        "@id": "urn:ngm:class:mobile-client",
-        "label": "Mobile Client"
-      },
-      {
-        "@id": "urn:ngm:class:domain-expert-contact-index-analytics-dashboard",
+        "@id": "urn:ngm:class:domain-expert-contact-index",
         "label": "People Analytics Dashboard"
       },
       {
@@ -476,11 +468,7 @@ public:: true
         "label": "Single Sign-On"
       },
       {
-        "@id": "urn:ngm:class:unified-messaging",
-        "label": "Unified Messaging"
-      },
-      {
-        "@id": "urn:ngm:class:workflow-automation-engine",
+        "@id": "urn:ngm:class:workflow-automation",
         "label": "Workflow Automation Engine"
       },
       {
@@ -490,24 +478,12 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:data-residency-controls",
-        "label": "Data Residency Controls"
-      },
-      {
         "@id": "urn:ngm:class:identity-and-access-management",
         "label": "Identity and Access Management"
       },
       {
-        "@id": "urn:ngm:class:mobile-and-desktop-clients",
-        "label": "Mobile and Desktop Clients"
-      },
-      {
         "@id": "urn:ngm:class:network-connectivity",
         "label": "Network Connectivity"
-      },
-      {
-        "@id": "urn:ngm:class:security-and-compliance-framework",
-        "label": "Security and Compliance Framework"
       },
       {
         "@id": "urn:ngm:class:single-sign-on",
@@ -520,28 +496,12 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:asynchronous-workflows",
-        "label": "Asynchronous Workflows"
-      },
-      {
         "@id": "urn:ngm:class:cross-functional-collaboration",
         "label": "Cross-Functional Collaboration"
       },
       {
         "@id": "urn:ngm:class:digital-onboarding",
         "label": "Digital Onboarding"
-      },
-      {
-        "@id": "urn:ngm:class:employee-self-service",
-        "label": "Employee Self-Service"
-      },
-      {
-        "@id": "urn:ngm:class:global-team-coordination",
-        "label": "Global Team Coordination"
-      },
-      {
-        "@id": "urn:ngm:class:hybrid-work-models",
-        "label": "Hybrid Work Models"
       },
       {
         "@id": "urn:ngm:class:remote-work",
@@ -554,7 +514,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:low-code-workflow-orchestration",
+        "@id": "urn:ngm:class:workflow-orchestration",
         "label": "Low-Code Workflow Orchestration"
       },
       {
@@ -562,7 +522,7 @@ public:: true
         "label": "OpenID Connect"
       },
       {
-        "@id": "urn:ngm:class:rest-api-integration",
+        "@id": "urn:ngm:class:rest-api",
         "label": "REST API Integration"
       },
       {
@@ -570,11 +530,11 @@ public:: true
         "label": "Role-Based Access Control"
       },
       {
-        "@id": "urn:ngm:class:saml-2-0-federation",
+        "@id": "urn:ngm:class:saml-2-0",
         "label": "SAML 2.0 Federation"
       },
       {
-        "@id": "urn:ngm:class:webhook-automation",
+        "@id": "urn:ngm:class:webhook",
         "label": "Webhook Automation"
       },
       {
@@ -588,16 +548,8 @@ public:: true
         "label": "Confluence"
       },
       {
-        "@id": "urn:ngm:class:gemini-multimodal-language-model-for-workspace",
+        "@id": "urn:ngm:class:gemini-multimodal-language-model",
         "label": "Gemini for Workspace"
-      },
-      {
-        "@id": "urn:ngm:class:google-ai-technology-corporation-drive",
-        "label": "Google Drive"
-      },
-      {
-        "@id": "urn:ngm:class:google-ai-technology-corporation-meet",
-        "label": "Google Meet"
       },
       {
         "@id": "urn:ngm:class:jira",
@@ -612,31 +564,11 @@ public:: true
         "label": "Notion"
       },
       {
-        "@id": "urn:ngm:class:one-drive",
-        "label": "OneDrive"
-      },
-      {
-        "@id": "urn:ngm:class:share-point",
-        "label": "SharePoint"
-      },
-      {
         "@id": "urn:ngm:class:slack",
         "label": "Slack"
-      },
-      {
-        "@id": "urn:ngm:class:viva-insights",
-        "label": "Viva Insights"
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:digital-employee-experience",
-        "label": "Digital Employee Experience"
-      },
-      {
-        "@id": "urn:ngm:class:employee-engagement",
-        "label": "Employee Engagement"
-      },
       {
         "@id": "urn:ngm:class:enterprise-content-management",
         "label": "Enterprise Content Management"
@@ -650,23 +582,11 @@ public:: true
         "label": "Unified Communications"
       },
       {
-        "@id": "urn:ngm:class:workplace-analytics",
-        "label": "Workplace Analytics"
-      },
-      {
         "@id": "urn:ngm:class:digital-transformation",
         "label": "Digital Transformation"
       }
     ],
     "supports": [
-      {
-        "@id": "urn:ngm:class:dei-analytics",
-        "label": "DEI Analytics"
-      },
-      {
-        "@id": "urn:ngm:class:employee-wellbeing",
-        "label": "Employee Wellbeing"
-      },
       {
         "@id": "urn:ngm:class:knowledge-management-system",
         "label": "Knowledge Management System"
@@ -674,10 +594,6 @@ public:: true
       {
         "@id": "urn:ngm:class:project-management",
         "label": "Project Management"
-      },
-      {
-        "@id": "urn:ngm:class:talent-retention",
-        "label": "Talent Retention"
       },
       {
         "@id": "urn:ngm:class:collaborative-systems-modality-whiteboard",
@@ -702,23 +618,15 @@ public:: true
         "label": "ISO 27001"
       },
       {
-        "@id": "urn:ngm:class:open-id-connect-1-0",
+        "@id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect 1.0"
-      },
-      {
-        "@id": "urn:ngm:class:owasp-application-security",
-        "label": "OWASP Application Security"
       },
       {
         "@id": "urn:ngm:class:saml-2-0",
         "label": "SAML 2.0"
       },
       {
-        "@id": "urn:ngm:class:soc-2-type-ii",
-        "label": "SOC 2 Type II"
-      },
-      {
-        "@id": "urn:ngm:class:wcag-2-2-accessibility",
+        "@id": "urn:ngm:class:wcag-2-2",
         "label": "WCAG 2.2 Accessibility"
       }
     ]

@@ -34,28 +34,8 @@
         "label": "Audio Narration"
       },
       {
-        "id": "urn:ngm:class:chapter-marker",
-        "label": "Chapter Marker"
-      },
-      {
-        "id": "urn:ngm:class:click-tracking",
-        "label": "Click Tracking"
-      },
-      {
-        "id": "urn:ngm:class:emoji-reaction",
-        "label": "Emoji Reaction"
-      },
-      {
         "id": "urn:ngm:class:screen-recording",
         "label": "Screen Recording"
-      },
-      {
-        "id": "urn:ngm:class:timeline-annotation",
-        "label": "Timeline Annotation"
-      },
-      {
-        "id": "urn:ngm:class:timestamped-comment",
-        "label": "Timestamped Comment"
       },
       {
         "id": "urn:ngm:class:video-transcription",
@@ -212,10 +192,6 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:claap",
-        "label": "Claap"
-      },
-      {
         "id": "urn:ngm:class:jira",
         "label": "Jira"
       },
@@ -234,18 +210,6 @@
       {
         "id": "urn:ngm:class:slack",
         "label": "Slack"
-      },
-      {
-        "id": "urn:ngm:class:veed-io",
-        "label": "Veed.io"
-      },
-      {
-        "id": "urn:ngm:class:vidyard",
-        "label": "Vidyard"
-      },
-      {
-        "id": "urn:ngm:class:zoom-ai-companion",
-        "label": "Zoom AI Companion"
       },
       {
         "id": "urn:ngm:class:meeting-ai-assistant",

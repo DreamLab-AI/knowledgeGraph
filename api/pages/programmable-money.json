@@ -95,7 +95,7 @@
         "label": "Commodity Money"
       },
       {
-        "id": "urn:ngm:class:electronic-money",
+        "id": "urn:ngm:class:money",
         "label": "Electronic Money"
       }
     ],
@@ -131,7 +131,7 @@
         "label": "Liquidity"
       },
       {
-        "id": "urn:ngm:class:decentralized-autonomous-organisation",
+        "id": "urn:ngm:class:decentralized-autonomous-organization",
         "label": "Decentralized Autonomous Organisation"
       }
     ]

@@ -230,32 +230,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:lang-chain-agent",
-        "label": "LangChain Agent"
-      },
-      {
-        "@id": "urn:ngm:class:lang-chain-chain",
-        "label": "LangChain Chain"
-      },
-      {
-        "@id": "urn:ngm:class:lang-chain-memory",
-        "label": "LangChain Memory"
-      },
-      {
-        "@id": "urn:ngm:class:lang-chain-retriever",
-        "label": "LangChain Retriever"
-      },
-      {
-        "@id": "urn:ngm:class:lang-chain-tool",
-        "label": "LangChain Tool"
-      },
-      {
-        "@id": "urn:ngm:class:lang-graph-workflow",
+        "@id": "urn:ngm:class:lang-graph",
         "label": "LangGraph Workflow"
-      },
-      {
-        "@id": "urn:ngm:class:lang-smith-observability",
-        "label": "LangSmith Observability"
       }
     ],
     "requires": [
@@ -278,39 +254,27 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:conversational-memory",
-        "label": "Conversational Memory"
-      },
-      {
         "@id": "urn:ngm:class:multi-step-reasoning",
         "label": "Multi-Step Reasoning"
       },
       {
         "@id": "urn:ngm:class:retrieval-augmented-generation",
         "label": "Retrieval-Augmented Generation"
-      },
-      {
-        "@id": "urn:ngm:class:tool-calling-agent",
-        "label": "Tool-Calling Agent"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:lcel-lang-chain-expression-language",
-        "label": "LCEL LangChain Expression Language"
-      },
-      {
-        "@id": "urn:ngm:class:model-context-protocol-integration",
+        "@id": "urn:ngm:class:model-context-protocol",
         "label": "Model Context Protocol Integration"
       },
       {
-        "@id": "urn:ngm:class:re-act-agent-pattern",
+        "@id": "urn:ngm:class:re-act-pattern",
         "label": "ReAct Agent Pattern"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:llm-application-stack",
+        "@id": "urn:ngm:class:llm-application-framework",
         "label": "LLM Application Stack"
       },
       {
@@ -319,7 +283,10 @@ public:: true
       }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
     ]
   },
   "quality": 0.6,

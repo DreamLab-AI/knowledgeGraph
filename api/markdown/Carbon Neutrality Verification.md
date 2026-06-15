@@ -94,10 +94,6 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:documentation-package",
-        "label": "Documentation Package"
-      },
-      {
         "@id": "urn:ngm:class:third-party-auditor",
         "label": "Third Party Auditor"
       },
@@ -107,10 +103,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:credibility-assurance",
-        "label": "Credibility Assurance"
-      },
       {
         "@id": "urn:ngm:class:greenwashing-prevention",
         "label": "Greenwashing Prevention"

@@ -18,16 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:problem-decomposition",
+        "id": "urn:ngm:class:task-decomposition",
         "label": "Problem Decomposition"
-      },
-      {
-        "id": "urn:ngm:class:intermediate-state-tracking",
-        "label": "Intermediate State Tracking"
-      },
-      {
-        "id": "urn:ngm:class:step-verification",
-        "label": "Step Verification"
       }
     ],
     "requires": [
@@ -50,7 +42,7 @@
         "label": "Autonomous Agent"
       },
       {
-        "id": "urn:ngm:class:complex-question-answering",
+        "id": "urn:ngm:class:question-answering",
         "label": "Complex Question Answering"
       }
     ],
@@ -67,7 +59,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:single-step-inference",
+        "id": "urn:ngm:class:inference",
         "label": "Single-Step Inference"
       },
       {
@@ -79,10 +71,6 @@
       {
         "id": "urn:ngm:class:automated-reasoning",
         "label": "Automated Reasoning"
-      },
-      {
-        "id": "urn:ngm:class:knowledge-graph-inference",
-        "label": "Knowledge Graph Inference"
       }
     ],
     "uses": [
@@ -95,7 +83,7 @@
         "label": "Chain-of-Thought Prompting"
       },
       {
-        "id": "urn:ngm:class:tree-of-thought",
+        "id": "urn:ngm:class:tree-of-thoughts",
         "label": "Tree of Thought"
       },
       {

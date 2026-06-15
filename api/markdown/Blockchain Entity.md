@@ -202,7 +202,7 @@ public:: true
         "label": "Distributed Trust"
       },
       {
-        "@id": "urn:ngm:class:transparent-audit-trails",
+        "@id": "urn:ngm:class:audit-trail",
         "label": "Transparent Audit Trails"
       }
     ]

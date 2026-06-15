@@ -31,7 +31,7 @@
         "label": "Evidence Lower Bound"
       },
       {
-        "id": "urn:ngm:class:probabilistic-graphical-model",
+        "id": "urn:ngm:class:graphical-model",
         "label": "Probabilistic Graphical Model"
       }
     ],
@@ -49,11 +49,7 @@
         "label": "Probabilistic Programming"
       },
       {
-        "id": "urn:ngm:class:amortised-inference",
-        "label": "Amortised Inference"
-      },
-      {
-        "id": "urn:ngm:class:latent-diffusion-model",
+        "id": "urn:ngm:class:latent-diffusion",
         "label": "Latent Diffusion Model"
       }
     ],
@@ -67,10 +63,6 @@
       {
         "id": "urn:ngm:class:expectation-propagation",
         "label": "Expectation Propagation"
-      },
-      {
-        "id": "urn:ngm:class:laplace-approximation",
-        "label": "Laplace Approximation"
       }
     ],
     "bridgesTo": [
@@ -112,10 +104,6 @@
       {
         "id": "urn:ngm:class:latent-variable-model",
         "label": "Latent Variable Model"
-      },
-      {
-        "id": "urn:ngm:class:probabilistic-topic-modelling",
-        "label": "Probabilistic Topic Modelling"
       },
       {
         "id": "urn:ngm:class:bayesian-deep-learning",

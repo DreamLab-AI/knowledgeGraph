@@ -23,57 +23,135 @@ public:: true
   "definition": "Content Creation is the structured process of conceiving, producing, and distributing communicative artefacts—including text, imagery, audio, video, and interactive media—designed to inform, entertain, educate, or persuade defined audiences. It spans the complete production lifecycle from ideation, research, and scripting through asset generation, editing, quality assurance, and multichannel distribution. In AI-augmented workflows, generative models assist at every stage, lowering production costs and accelerating iteration cycles while demanding rigorous editorial oversight for accuracy and brand consistency. Effective content creation integrates creative vision, platform-specific optimisation, audience psychology, and provenance management to maximise reach, trust, and impact.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-content", "label": "Digital Content"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-content",
+      "label": "Digital Content"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:creative-ai", "label": "Creative AI"},
-      {"@id": "urn:ngm:class:creative-tools", "label": "Creative Tools"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:natural-language-generation", "label": "Natural Language Generation"},
-      {"@id": "urn:ngm:class:text-to-image-model", "label": "Text-to-Image Model"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:creative-ai",
+        "label": "Creative AI"
+      },
+      {
+        "@id": "urn:ngm:class:creative-tools",
+        "label": "Creative Tools"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-generation",
+        "label": "Natural Language Generation"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:creator-economy", "label": "Creator Economy"},
-      {"@id": "urn:ngm:class:social-media-platform-infrastructure", "label": "Social Media Platform Infrastructure"},
-      {"@id": "urn:ngm:class:synthetic-media", "label": "Synthetic Media"},
-      {"@id": "urn:ngm:class:digital-marketing", "label": "Digital Marketing"},
-      {"@id": "urn:ngm:class:audience-engagement", "label": "Audience Engagement"}
+      {
+        "@id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "@id": "urn:ngm:class:social-media-platform-infrastructure",
+        "label": "Social Media Platform Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "@id": "urn:ngm:class:digital-marketing",
+        "label": "Digital Marketing"
+      },
+      {
+        "@id": "urn:ngm:class:audience-engagement",
+        "label": "Audience Engagement"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:editorial-workflow", "label": "Editorial Workflow"},
-      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"},
-      {"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"}
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"}
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
-      {"@id": "urn:ngm:class:brand-identity", "label": "Brand Identity"},
-      {"@id": "urn:ngm:class:seo", "label": "Search Engine Optimisation"}
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "@id": "urn:ngm:class:brand-identity",
+        "label": "Brand Identity"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:content-curation", "label": "Content Curation"},
-      {"@id": "urn:ngm:class:user-generated-content", "label": "User-Generated Content"}
+      {
+        "@id": "urn:ngm:class:user-generated-content",
+        "label": "User-Generated Content"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-content", "label": "Spatial Content"},
-      {"@id": "urn:ngm:class:nft", "label": "NFT"},
-      {"@id": "urn:ngm:class:data-storytelling", "label": "Data Storytelling"}
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-content-creation", "label": "Digital Content Creation"},
-      {"@id": "urn:ngm:class:generative-content", "label": "Generative Content"},
-      {"@id": "urn:ngm:class:etsi-domain-creative-media", "label": "ETSI Domain: Creative Media"},
-      {"@id": "urn:ngm:class:media-production", "label": "Media Production"},
-      {"@id": "urn:ngm:class:content-strategy", "label": "Content Strategy"}
+      {
+        "@id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:generative-content",
+        "label": "Generative Content"
+      },
+      {
+        "@id": "urn:ngm:class:etsi-domain-creative-media",
+        "label": "ETSI Domain: Creative Media"
+      },
+      {
+        "@id": "urn:ngm:class:media-production",
+        "label": "Media Production"
+      },
+      {
+        "@id": "urn:ngm:class:content-strategy",
+        "label": "Content Strategy"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:digital-content-creation", "label": "Digital Content Creation"},
-    {"@id": "urn:ngm:class:media-production", "label": "Media Production"}
+    {
+      "@id": "urn:ngm:class:digital-content-creation",
+      "label": "Digital Content Creation"
+    },
+    {
+      "@id": "urn:ngm:class:media-production",
+      "label": "Media Production"
+    }
   ],
   "quality": 0.72,
   "provenance": {

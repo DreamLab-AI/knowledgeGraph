@@ -22,10 +22,6 @@
         "label": "Message Broker"
       },
       {
-        "id": "urn:ngm:class:dead-letter-queue",
-        "label": "Dead Letter Queue"
-      },
-      {
         "id": "urn:ngm:class:consumer-group",
         "label": "Consumer Group"
       }
@@ -52,14 +48,6 @@
       {
         "id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
-      },
-      {
-        "id": "urn:ngm:class:backpressure-management",
-        "label": "Backpressure Management"
-      },
-      {
-        "id": "urn:ngm:class:load-levelling",
-        "label": "Load Levelling"
       }
     ],
     "dependsOn": [
@@ -72,16 +60,7 @@
         "label": "Network Protocol"
       }
     ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:producer-consumer-pattern",
-        "label": "Producer Consumer Pattern"
-      },
-      {
-        "id": "urn:ngm:class:competing-consumers-pattern",
-        "label": "Competing Consumers Pattern"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:remote-procedure-call",
@@ -124,10 +103,6 @@
       {
         "id": "urn:ngm:class:horizontal-scalability",
         "label": "Horizontal Scalability"
-      },
-      {
-        "id": "urn:ngm:class:service-decoupling",
-        "label": "Service Decoupling"
       }
     ],
     "standardizedBy": [],

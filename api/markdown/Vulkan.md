@@ -23,55 +23,123 @@ public:: true
   "definition": "Vulkan is a low-overhead, cross-platform graphics and compute API developed by the Khronos Group and released in 2016 as the successor to OpenGL, designed to give developers explicit control over GPU resources including memory allocation, synchronisation, command buffer submission, and render pass configuration in order to minimise CPU overhead and achieve predictable, high-performance rendering across diverse hardware. Vulkan operates closer to metal than its predecessor: applications manage their own memory pools, pipeline state objects, descriptor sets, and queue families, while the driver's role is reduced to translating API calls into hardware commands with minimal hidden magic. Vulkan shaders are compiled to SPIR-V, a portable intermediate representation, enabling shader code authored in GLSL or HLSL to execute on any conforming GPU without driver-side shader compilation.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:graphics-api", "label": "Graphics API"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:graphics-api",
+    "label": "Graphics API"
+  },
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:real-time-rendering-pipeline", "label": "Real-Time Rendering Pipeline"},
-      {"@id": "urn:ngm:class:ray-tracing", "label": "Ray Tracing"},
-      {"@id": "urn:ngm:class:mesh-shading", "label": "Mesh Shading"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering-pipeline",
+        "label": "Real-Time Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:mesh-shading",
+        "label": "Mesh Shading"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:gpu-driver", "label": "GPU Driver"},
-      {"@id": "urn:ngm:class:spirv", "label": "SPIR-V"}
+      {
+        "@id": "urn:ngm:class:gpu-driver",
+        "label": "GPU Driver"
+      },
+      {
+        "@id": "urn:ngm:class:spirv",
+        "label": "SPIR-V"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:shader-language", "label": "Shader Language"},
-      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"},
-      {"@id": "urn:ngm:class:command-buffer", "label": "Command Buffer"},
-      {"@id": "urn:ngm:class:descriptor-set", "label": "Descriptor Set"}
+      {
+        "@id": "urn:ngm:class:shader-language",
+        "label": "Shader Language"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "@id": "urn:ngm:class:command-buffer",
+        "label": "Command Buffer"
+      },
+      {
+        "@id": "urn:ngm:class:descriptor-set",
+        "label": "Descriptor Set"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:render-pass", "label": "Render Pass"},
-      {"@id": "urn:ngm:class:pipeline-state-object", "label": "Pipeline State Object"},
-      {"@id": "urn:ngm:class:queue-family", "label": "Queue Family"}
+      {
+        "@id": "urn:ngm:class:pipeline-state-object",
+        "label": "Pipeline State Object"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:khronos-group", "label": "Khronos Group"}
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:opengl", "label": "OpenGL"},
-      {"@id": "urn:ngm:class:direct3d", "label": "Direct3D"},
-      {"@id": "urn:ngm:class:metal-api", "label": "Metal API"}
+      {
+        "@id": "urn:ngm:class:opengl",
+        "label": "OpenGL"
+      },
+      {
+        "@id": "urn:ngm:class:direct3d",
+        "label": "Direct3D"
+      },
+      {
+        "@id": "urn:ngm:class:metal-api",
+        "label": "Metal API"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:open-xr", "label": "OpenXR"}
+      {
+        "@id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:shader", "label": "Shader"},
-      {"@id": "urn:ngm:class:compute-shader", "label": "Compute Shader"},
-      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"},
-      {"@id": "urn:ngm:class:moltenvk", "label": "MoltenVK"},
-      {"@id": "urn:ngm:class:dxvk", "label": "DXVK"}
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "@id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning-inference", "label": "Machine Learning Inference"},
-      {"@id": "urn:ngm:class:automotive-safety-critical-systems", "label": "Automotive Safety-Critical Systems"}
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Machine Learning Inference"
+      },
+      {
+        "@id": "urn:ngm:class:safety-critical-systems",
+        "label": "Automotive Safety-Critical Systems"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:vulkan-api", "label": "Vulkan API"}
+    {
+      "@id": "urn:ngm:class:vulkan-api",
+      "label": "Vulkan API"
+    }
   ],
   "quality": 0.72,
   "provenance": {

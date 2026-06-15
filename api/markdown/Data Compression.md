@@ -68,57 +68,127 @@ public:: true
     "label": "AI Technique"
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:data-encoding", "label": "Data Encoding"},
-    {"@id": "urn:ngm:class:source-coding", "label": "Source Coding"}
+    {
+      "@id": "urn:ngm:class:data-encoding",
+      "label": "Data Encoding"
+    },
+    {
+      "@id": "urn:ngm:class:source-coding",
+      "label": "Source Coding"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:lossless-compression", "label": "Lossless Compression"},
-      {"@id": "urn:ngm:class:lossy-compression", "label": "Lossy Compression"},
-      {"@id": "urn:ngm:class:entropy-coding", "label": "Entropy Coding"}
+      {
+        "@id": "urn:ngm:class:lossless-compression",
+        "label": "Lossless Compression"
+      },
+      {
+        "@id": "urn:ngm:class:entropy-coding",
+        "label": "Entropy Coding"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:model-optimisation", "label": "Model Optimisation"}
+      {
+        "@id": "urn:ngm:class:model-optimisation-and-performance",
+        "label": "Model Optimisation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"},
-      {"@id": "urn:ngm:class:quantisation", "label": "Quantisation"},
-      {"@id": "urn:ngm:class:huffman-coding", "label": "Huffman Coding"},
-      {"@id": "urn:ngm:class:autoencoder", "label": "Autoencoder"},
-      {"@id": "urn:ngm:class:sparse-representation", "label": "Sparse Representation"}
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "@id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:autoencoder",
+        "label": "Autoencoder"
+      },
+      {
+        "@id": "urn:ngm:class:sparse-representation",
+        "label": "Sparse Representation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-compression-for-edge", "label": "Model Compression for Edge"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:on-device-inference", "label": "On-Device Inference"},
-      {"@id": "urn:ngm:class:bandwidth-efficient-communication", "label": "Bandwidth-Efficient Communication"}
+      {
+        "@id": "urn:ngm:class:model-compression-for-edge",
+        "label": "Model Compression for Edge"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:on-device-inference",
+        "label": "On-Device Inference"
+      },
+      {
+        "@id": "urn:ngm:class:bandwidth-efficient-communication",
+        "label": "Bandwidth-Efficient Communication"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:information-theory", "label": "Information Theory"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:rate-distortion-theory", "label": "Rate-Distortion Theory"}
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:edge-ai", "label": "Edge AI"},
-      {"@id": "urn:ngm:class:tinyml", "label": "TinyML"},
-      {"@id": "urn:ngm:class:efficient-inference", "label": "Efficient Inference"}
+      {
+        "@id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      },
+      {
+        "@id": "urn:ngm:class:tinyml",
+        "label": "TinyML"
+      },
+      {
+        "@id": "urn:ngm:class:efficient-inference",
+        "label": "Efficient Inference"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:full-precision-model", "label": "Full-Precision Model"}
+      {
+        "@id": "urn:ngm:class:full-precision-model",
+        "label": "Full-Precision Model"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-pruning-for-edge-deployment", "label": "Model Pruning for Edge Deployment"},
-      {"@id": "urn:ngm:class:neural-architecture-search", "label": "Neural Architecture Search"},
-      {"@id": "urn:ngm:class:weight-sharing", "label": "Weight Sharing"}
+      {
+        "@id": "urn:ngm:class:model-pruning-for-edge-deployment",
+        "label": "Model Pruning for Edge Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
+        "@id": "urn:ngm:class:weight-sharing",
+        "label": "Weight Sharing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:network-bandwidth-management", "label": "Network Bandwidth Management"},
-      {"@id": "urn:ngm:class:storage-optimisation", "label": "Storage Optimisation"}
+      {
+        "@id": "urn:ngm:class:network-bandwidth-management",
+        "label": "Network Bandwidth Management"
+      },
+      {
+        "@id": "urn:ngm:class:storage-optimisation",
+        "label": "Storage Optimisation"
+      }
     ]
   }
 }

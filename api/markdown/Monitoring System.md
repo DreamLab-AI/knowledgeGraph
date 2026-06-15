@@ -24,62 +24,160 @@ public:: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:infra-computing-and-cloud", "label": "Computing and Cloud"}
+    {
+      "@id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:monitoring-dashboard", "label": "Monitoring Dashboard"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:alerting-system", "label": "Alerting System"},
-      {"@id": "urn:ngm:class:time-series-database", "label": "Time-Series Database"},
-      {"@id": "urn:ngm:class:log-aggregation", "label": "Log Aggregation"}
+      {
+        "@id": "urn:ngm:class:monitoring-dashboard",
+        "label": "Monitoring Dashboard"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:alerting-system",
+        "label": "Alerting System"
+      },
+      {
+        "@id": "urn:ngm:class:time-series-database",
+        "label": "Time-Series Database"
+      },
+      {
+        "@id": "urn:ngm:class:log-aggregation",
+        "label": "Log Aggregation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
-      {"@id": "urn:ngm:class:ai-monitoring", "label": "AI Monitoring"},
-      {"@id": "urn:ngm:class:real-time-monitoring", "label": "Real-Time Monitoring"},
-      {"@id": "urn:ngm:class:incident-management", "label": "Incident Management"},
-      {"@id": "urn:ngm:class:capacity-planning", "label": "Capacity Planning"},
-      {"@id": "urn:ngm:class:site-reliability-engineering", "label": "Site Reliability Engineering"}
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:ai-monitoring",
+        "label": "AI Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:incident-management",
+        "label": "Incident Management"
+      },
+      {
+        "@id": "urn:ngm:class:capacity-planning",
+        "label": "Capacity Planning"
+      },
+      {
+        "@id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:instrumentation", "label": "Instrumentation"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"}
+      {
+        "@id": "urn:ngm:class:instrumentation",
+        "label": "Instrumentation"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:open-telemetry", "label": "OpenTelemetry"},
-      {"@id": "urn:ngm:class:data-analytics", "label": "Data Analytics"},
-      {"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"},
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
-      {"@id": "urn:ngm:class:stream-processing", "label": "Stream Processing"}
+      {
+        "@id": "urn:ngm:class:open-telemetry",
+        "label": "OpenTelemetry"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
-      {"@id": "urn:ngm:class:message-broker", "label": "Message Broker"}
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:open-telemetry", "label": "OpenTelemetry"},
-      {"@id": "urn:ngm:class:prometheus", "label": "Prometheus"}
+      {
+        "@id": "urn:ngm:class:open-telemetry",
+        "label": "OpenTelemetry"
+      },
+      {
+        "@id": "urn:ngm:class:prometheus",
+        "label": "Prometheus"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:logging-system", "label": "Logging System"},
-      {"@id": "urn:ngm:class:tracing-system", "label": "Tracing System"}
+      {
+        "@id": "urn:ngm:class:audit-logging",
+        "label": "Logging System"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:aiops", "label": "AIOps"},
-      {"@id": "urn:ngm:class:machine-learning-operations", "label": "MLOps"},
-      {"@id": "urn:ngm:class:model-drift-detection", "label": "Model Drift Detection"}
+      {
+        "@id": "urn:ngm:class:aiops",
+        "label": "AIOps"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-operations",
+        "label": "MLOps"
+      },
+      {
+        "@id": "urn:ngm:class:model-drift-detection",
+        "label": "Model Drift Detection"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:service-level-objective", "label": "Service Level Objective"},
-      {"@id": "urn:ngm:class:chaos-engineering", "label": "Chaos Engineering"},
-      {"@id": "urn:ngm:class:devops", "label": "DevOps"}
+      {
+        "@id": "urn:ngm:class:service-level-objective",
+        "label": "Service Level Objective"
+      },
+      {
+        "@id": "urn:ngm:class:chaos-engineering",
+        "label": "Chaos Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:observability-system", "label": "Observability System"},
-    {"@id": "urn:ngm:class:telemetry-system", "label": "Telemetry System"}
+    {
+      "@id": "urn:ngm:class:observability-system",
+      "label": "Observability System"
+    },
+    {
+      "@id": "urn:ngm:class:telemetry-system",
+      "label": "Telemetry System"
+    }
   ],
   "quality": 0.74,
   "provenance": {

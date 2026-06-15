@@ -79,10 +79,6 @@ public:: true
       {
         "@id": "urn:ngm:class:crypto-asset-service-provider",
         "label": "Crypto Asset Service Provider"
-      },
-      {
-        "@id": "urn:ngm:class:whitepaper-disclosure",
-        "label": "Whitepaper Disclosure"
       }
     ],
     "enables": [
@@ -91,26 +87,8 @@ public:: true
         "label": "Investor Protection"
       },
       {
-        "@id": "urn:ngm:class:eu-single-market-passporting",
-        "label": "EU Single Market Passporting"
-      },
-      {
         "@id": "urn:ngm:class:market-integrity",
         "label": "Market Integrity"
-      }
-    ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:asset-referenced-token-regime",
-        "label": "Asset Referenced Token Regime"
-      },
-      {
-        "@id": "urn:ngm:class:electronic-money-token-regime",
-        "label": "Electronic Money Token Regime"
-      },
-      {
-        "@id": "urn:ngm:class:crypto-asset-service-provider-authorisation",
-        "label": "Crypto Asset Service Provider Authorisation"
       }
     ],
     "partOf": [
@@ -125,7 +103,7 @@ public:: true
         "label": "FATF Travel Rule"
       },
       {
-        "@id": "urn:ngm:class:eu-financial-regulation",
+        "@id": "urn:ngm:class:financial-regulation",
         "label": "EU Financial Regulation"
       }
     ],
@@ -161,7 +139,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:sec-crypto-enforcement",
+        "@id": "urn:ngm:class:sec",
         "label": "SEC Crypto Enforcement"
       },
       {
@@ -189,7 +167,7 @@ public:: true
         "label": "GDPR"
       },
       {
-        "@id": "urn:ngm:class:anti-money-laundering-directive",
+        "@id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti Money Laundering Directive"
       }
     ]

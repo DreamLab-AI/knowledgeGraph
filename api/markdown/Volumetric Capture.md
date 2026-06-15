@@ -47,52 +47,135 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:free-viewpoint-video", "label": "Free-Viewpoint Video"},
-    {"@id": "urn:ngm:class:dynamic-3d-reconstruction", "label": "Dynamic 3D Reconstruction"}
+    {
+      "@id": "urn:ngm:class:free-viewpoint-video",
+      "label": "Free-Viewpoint Video"
+    },
+    {
+      "@id": "urn:ngm:class:dynamic-3d-reconstruction",
+      "label": "Dynamic 3D Reconstruction"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"},
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
-      {"@id": "urn:ngm:class:structured-light", "label": "Structured Light"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
-      {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"},
-      {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"}
+      {
+        "@id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:structured-light",
+        "label": "Structured Light"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      },
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:holographic-telepresence", "label": "Holographic Telepresence"},
-      {"@id": "urn:ngm:class:immersive-media", "label": "Immersive Media"},
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:holographic-telepresence",
+        "label": "Holographic Telepresence"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-media",
+        "label": "Immersive Media"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:multi-camera-rig", "label": "Multi-Camera Rig"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:video-compression", "label": "Video Compression"}
+      {
+        "@id": "urn:ngm:class:multi-camera-rig",
+        "label": "Multi-Camera Rig"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:mesh-reconstruction", "label": "Mesh Reconstruction"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:mesh-reconstruction",
+        "label": "Mesh Reconstruction"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:virtual-production", "label": "Virtual Production"}
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:360-video", "label": "360-Degree Video"},
-      {"@id": "urn:ngm:class:stereoscopic-3d", "label": "Stereoscopic 3D"}
+      {
+        "@id": "urn:ngm:class:360-video",
+        "label": "360-Degree Video"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:gaussian-splatting", "label": "Gaussian Splatting"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:light-field-display", "label": "Light Field Display"},
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:light-field-display",
+        "label": "Light Field Display"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
     ]
   },
   "quality": 0.72,

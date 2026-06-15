@@ -162,10 +162,6 @@ public:: true
         "label": "Access Control"
       },
       {
-        "@id": "urn:ngm:class:civic-duties",
-        "label": "Civic Duties"
-      },
-      {
         "@id": "urn:ngm:class:community-membership",
         "label": "Community Membership"
       },
@@ -197,10 +193,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:access-to-services",
-        "label": "Access to Services"
-      },
       {
         "@id": "urn:ngm:class:community-voting",
         "label": "Community Voting"

@@ -18,37 +18,25 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:carbon-emissions-calculation",
+        "id": "urn:ngm:class:carbon-accounting",
         "label": "CarbonEmissionsCalculation"
       },
       {
-        "id": "urn:ngm:class:energy-consumption-measurement",
+        "id": "urn:ngm:class:energy-consumption",
         "label": "EnergyConsumptionMeasurement"
-      },
-      {
-        "id": "urn:ngm:class:ewaste-analysis",
-        "label": "EWasteAnalysis"
       },
       {
         "id": "urn:ngm:class:scope-definition",
         "label": "Scope Definition"
-      },
-      {
-        "id": "urn:ngm:class:water-usage-tracking",
-        "label": "WaterUsageTracking"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:data-center-metrics",
-        "label": "DataCenterMetrics"
-      },
-      {
-        "id": "urn:ngm:class:energy-mix",
+        "id": "urn:ngm:class:energy-management",
         "label": "EnergyMix"
       },
       {
-        "id": "urn:ngm:class:hardware-inventory",
+        "id": "urn:ngm:class:hardware",
         "label": "HardwareInventory"
       },
       {

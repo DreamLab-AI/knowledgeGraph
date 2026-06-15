@@ -73,56 +73,105 @@ alias:: DataStructure
     "label": "Software Engineering"
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:abstract-data-type", "label": "Abstract Data Type"},
-    {"@id": "urn:ngm:class:container-data-type", "label": "Container Data Type"}
+    {
+      "@id": "urn:ngm:class:abstract-data-type",
+      "label": "Abstract Data Type"
+    },
+    {
+      "@id": "urn:ngm:class:container-data-type",
+      "label": "Container Data Type"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:array", "label": "Array"},
-      {"@id": "urn:ngm:class:tree", "label": "Tree"},
-      {"@id": "urn:ngm:class:hash-table", "label": "Hash Table"},
-      {"@id": "urn:ngm:class:tensor", "label": "Tensor"}
+      {
+        "@id": "urn:ngm:class:tensor",
+        "label": "Tensor"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:computer-science", "label": "Computer Science"}
+      {
+        "@id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:memory-management", "label": "Memory Management"},
-      {"@id": "urn:ngm:class:algorithm", "label": "Algorithm"}
+      {
+        "@id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      },
+      {
+        "@id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:graph-neural-network", "label": "Graph Neural Network"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:database-indexing", "label": "Database Indexing"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:memory-allocation", "label": "Memory Allocation"},
-      {"@id": "urn:ngm:class:type-system", "label": "Type System"}
+      {
+        "@id": "urn:ngm:class:memory-allocation",
+        "label": "Memory Allocation"
+      },
+      {
+        "@id": "urn:ngm:class:type-system",
+        "label": "Type System"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:cache-coherence", "label": "Cache Coherence"},
-      {"@id": "urn:ngm:class:pointer", "label": "Pointer"}
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:cache-coherence",
+        "label": "Cache Coherence"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:sparse-matrix", "label": "Sparse Matrix"},
-      {"@id": "urn:ngm:class:computational-complexity", "label": "Computational Complexity"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:unstructured-data", "label": "Unstructured Data"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:sparse-matrix",
+        "label": "Sparse Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Computational Complexity"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"},
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
+      {
+        "@id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:computational-abstraction", "label": "Computational Abstraction"},
-      {"@id": "urn:ngm:class:tensor-operations", "label": "Tensor Operations"},
-      {"@id": "urn:ngm:class:memory-optimization", "label": "Memory Optimization"},
-      {"@id": "urn:ngm:class:graph-theory", "label": "Graph Theory"},
-      {"@id": "urn:ngm:class:algorithmic-complexity", "label": "Algorithmic Complexity"}
+      {
+        "@id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-complexity",
+        "label": "Algorithmic Complexity"
+      }
     ]
   }
 }

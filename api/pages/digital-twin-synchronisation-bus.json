@@ -18,19 +18,15 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:conflict-resolution-module",
+        "id": "urn:ngm:class:conflict-resolution",
         "label": "Conflict Resolution Module"
-      },
-      {
-        "id": "urn:ngm:class:event-stream-processor",
-        "label": "Event Stream Processor"
       },
       {
         "id": "urn:ngm:class:message-broker",
         "label": "Message Broker"
       },
       {
-        "id": "urn:ngm:class:state-synchronization-engine",
+        "id": "urn:ngm:class:state-synchronization",
         "label": "State Synchronization Engine"
       }
     ],
@@ -44,27 +40,11 @@
         "label": "Message Queue"
       },
       {
-        "id": "urn:ngm:class:state-store",
-        "label": "State Store"
-      },
-      {
         "id": "urn:ngm:class:network-protocol",
         "label": "Network Protocol"
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:bidirectional-data-flow",
-        "label": "Bidirectional Data Flow"
-      },
-      {
-        "id": "urn:ngm:class:distributed-twin-orchestration",
-        "label": "Distributed Twin Orchestration"
-      },
-      {
-        "id": "urn:ngm:class:multi-instance-state-coherence",
-        "label": "Multi-Instance State Coherence"
-      },
       {
         "id": "urn:ngm:class:real-time-digital-twin-synchronization",
         "label": "Real Time Digital Twin Synchronization"

@@ -103,10 +103,6 @@ public:: true
       {
         "@id": "urn:ngm:class:confusion-matrix",
         "label": "Confusion Matrix"
-      },
-      {
-        "@id": "urn:ngm:class:threshold",
-        "label": "Threshold"
       }
     ],
     "contrastsWith": [

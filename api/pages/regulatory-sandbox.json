@@ -18,14 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:supervised-testing-regime",
-        "label": "Supervised Testing Regime"
-      },
-      {
-        "id": "urn:ngm:class:regulatory-waiver",
-        "label": "Regulatory Waiver"
-      },
-      {
         "id": "urn:ngm:class:compliance-reporting",
         "label": "Compliance Reporting"
       }
@@ -46,16 +38,8 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:financial-innovation",
-        "label": "Financial Innovation"
-      },
-      {
         "id": "urn:ngm:class:adoption-of-convergent-technologies",
         "label": "Adoption of Convergent Technologies"
-      },
-      {
-        "id": "urn:ngm:class:market-entry",
-        "label": "Market Entry"
       }
     ],
     "dependsOn": [
@@ -71,11 +55,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:no-action-letter",
-        "label": "No-Action Letter"
-      },
-      {
-        "id": "urn:ngm:class:full-regulatory-compliance",
+        "id": "urn:ngm:class:regulatory-compliance",
         "label": "Full Regulatory Compliance"
       }
     ],
@@ -127,14 +107,6 @@
       {
         "id": "urn:ngm:class:adoption-of-convergent-technologies",
         "label": "Adoption of Convergent Technologies"
-      },
-      {
-        "id": "urn:ngm:class:innovation-policy",
-        "label": "Innovation Policy"
-      },
-      {
-        "id": "urn:ngm:class:proportionate-regulation",
-        "label": "Proportionate Regulation"
       }
     ]
   },

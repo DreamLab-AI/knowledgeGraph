@@ -372,7 +372,7 @@ public:: true
         "label": "Oracle"
       },
       {
-        "@id": "urn:ngm:class:rwa-tokenisation",
+        "@id": "urn:ngm:class:real-world-asset-tokenisation",
         "label": "RWA Tokenisation"
       },
       {
@@ -474,7 +474,7 @@ public:: true
         "label": "Flash Loan Arbitrage"
       },
       {
-        "@id": "urn:ngm:class:liquidity-mining-incentives",
+        "@id": "urn:ngm:class:liquidity-mining",
         "label": "Liquidity Mining Incentives"
       },
       {
@@ -576,10 +576,6 @@ public:: true
       {
         "@id": "urn:ngm:class:fatf-guidance-on-virtual-assets",
         "label": "FATF Guidance on Virtual Assets"
-      },
-      {
-        "@id": "urn:ngm:class:iosco-de-fi-report-2023",
-        "label": "IOSCO DeFi Report 2023"
       },
       {
         "@id": "urn:ngm:class:mi-ca-regulation",

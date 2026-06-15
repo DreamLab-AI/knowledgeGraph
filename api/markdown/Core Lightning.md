@@ -77,17 +77,17 @@ public:: true
         "label": "Hashed Timelock Contract"
       },
       {
-        "@id": "urn:ngm:class:bolt-specification",
+        "@id": "urn:ngm:class:bolt-specifications",
         "label": "BOLT Specification"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:lightning-network-protocol",
+        "@id": "urn:ngm:class:lightning-network",
         "label": "Lightning Network Protocol"
       },
       {
-        "@id": "urn:ngm:class:bolt-specification",
+        "@id": "urn:ngm:class:bolt-specifications",
         "label": "BOLT Specification"
       }
     ],
@@ -109,24 +109,10 @@ public:: true
         "label": "Taproot"
       }
     ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:lightning-plugin-architecture",
-        "label": "Lightning Plugin Architecture"
-      },
-      {
-        "@id": "urn:ngm:class:lightning-network-daemon",
-        "label": "Lightning Network Daemon"
-      }
-    ],
     "enables": [
       {
         "@id": "urn:ngm:class:micropayment",
         "label": "Micropayment"
-      },
-      {
-        "@id": "urn:ngm:class:bitcoin-payment-routing",
-        "label": "Bitcoin Payment Routing"
       },
       {
         "@id": "urn:ngm:class:streaming-payments",
@@ -141,15 +127,11 @@ public:: true
       {
         "@id": "urn:ngm:class:eclair",
         "label": "Eclair"
-      },
-      {
-        "@id": "urn:ngm:class:ldk",
-        "label": "LDK"
       }
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:bolt-specification",
+        "@id": "urn:ngm:class:bolt-specifications",
         "label": "BOLT Specification"
       }
     ],
@@ -177,7 +159,7 @@ public:: true
         "label": "Decentralised Finance"
       },
       {
-        "@id": "urn:ngm:class:machine-payments",
+        "@id": "urn:ngm:class:machine-to-machine-payments",
         "label": "Machine Payments"
       }
     ]

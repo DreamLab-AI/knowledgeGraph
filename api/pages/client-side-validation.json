@@ -26,24 +26,11 @@
         "label": "Proof of Publication"
       },
       {
-        "id": "urn:ngm:class:contract-genesis",
-        "label": "Contract Genesis"
-      },
-      {
-        "id": "urn:ngm:class:state-transition",
+        "id": "urn:ngm:class:state-transition-function",
         "label": "State Transition"
       }
     ],
-    "requires": [
-      {
-        "id": "urn:ngm:class:ownership-history",
-        "label": "Ownership History"
-      },
-      {
-        "id": "urn:ngm:class:seal-definition",
-        "label": "Seal Definition"
-      }
-    ],
+    "requires": [],
     "enables": [
       {
         "id": "urn:ngm:class:rgb-protocol",
@@ -75,28 +62,11 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:global-state-validation",
-        "label": "Global State Validation"
-      },
-      {
-        "id": "urn:ngm:class:server-side-validation",
-        "label": "Server-Side Validation"
-      },
-      {
-        "id": "urn:ngm:class:ethereum-smart-contracts",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-smart-contracts",
         "label": "Ethereum Smart Contracts"
       }
     ],
-    "bridgesTo": [
-      {
-        "id": "urn:ngm:class:constraint-validation-api",
-        "label": "Constraint Validation API"
-      },
-      {
-        "id": "urn:ngm:class:form-validation",
-        "label": "Form Validation"
-      }
-    ],
+    "bridgesTo": [],
     "uses": [
       {
         "id": "urn:ngm:class:cryptographic-proof",
@@ -107,7 +77,7 @@
         "label": "JSON Schema"
       },
       {
-        "id": "urn:ngm:class:bitcoin-utxo",
+        "id": "urn:ngm:class:utxo",
         "label": "Bitcoin UTXO"
       },
       {
@@ -119,10 +89,6 @@
       {
         "id": "urn:ngm:class:privacy-preserving-computation",
         "label": "Privacy-Preserving Computation"
-      },
-      {
-        "id": "urn:ngm:class:scalable-smart-contracts",
-        "label": "Scalable Smart Contracts"
       }
     ],
     "standardizedBy": [],

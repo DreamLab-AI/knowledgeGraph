@@ -150,45 +150,17 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:activity-model",
-        "label": "Activity Model"
-      },
-      {
-        "@id": "urn:ngm:class:agent-model",
+        "@id": "urn:ngm:class:agent-based-modelling",
         "label": "Agent Model"
       },
       {
-        "@id": "urn:ngm:class:attribution-model",
-        "label": "Attribution Model"
-      },
-      {
-        "@id": "urn:ngm:class:derivation-chains",
-        "label": "Derivation Chains"
-      },
-      {
-        "@id": "urn:ngm:class:entity-model",
+        "@id": "urn:ngm:class:entity",
         "label": "Entity Model"
-      },
-      {
-        "@id": "urn:ngm:class:generation-events",
-        "label": "Generation Events"
-      },
-      {
-        "@id": "urn:ngm:class:influence-patterns",
-        "label": "Influence Patterns"
-      },
-      {
-        "@id": "urn:ngm:class:qualified-relations",
-        "label": "Qualified Relations"
-      },
-      {
-        "@id": "urn:ngm:class:usage-events",
-        "label": "Usage Events"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:ontology-reasoner",
+        "@id": "urn:ngm:class:ontology-engineering",
         "label": "Ontology Reasoner"
       },
       {
@@ -216,10 +188,6 @@ public:: true
       {
         "@id": "urn:ngm:class:scientific-reproducibility",
         "label": "Scientific Reproducibility"
-      },
-      {
-        "@id": "urn:ngm:class:trust-verification",
-        "label": "Trust Verification"
       }
     ],
     "partOf": [

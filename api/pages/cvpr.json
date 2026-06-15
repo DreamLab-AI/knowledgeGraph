@@ -30,16 +30,12 @@
         "label": "Semantic Segmentation"
       },
       {
-        "id": "urn:ngm:class:3d-reconstruction",
+        "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
       },
       {
         "id": "urn:ngm:class:video-understanding",
         "label": "Video Understanding"
-      },
-      {
-        "id": "urn:ngm:class:generative-vision",
-        "label": "Generative Vision"
       }
     ],
     "requires": [],
@@ -59,12 +55,7 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:arxiv-preprint",
-        "label": "ArXiv Preprint"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:autonomous-driving",
@@ -94,7 +85,7 @@
         "label": "Pattern Recognition"
       },
       {
-        "id": "urn:ngm:class:neural-architecture",
+        "id": "urn:ngm:class:neural-network-architecture",
         "label": "Neural Architecture"
       }
     ],
@@ -102,10 +93,6 @@
       {
         "id": "urn:ngm:class:ieee",
         "label": "IEEE"
-      },
-      {
-        "id": "urn:ngm:class:computer-vision-foundation",
-        "label": "Computer Vision Foundation"
       }
     ],
     "partOf": [],

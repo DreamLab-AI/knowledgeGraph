@@ -303,10 +303,6 @@ alias:: CLI multi agent systems
         "label": "Inter-Agent Communication"
       },
       {
-        "@id": "urn:ngm:class:planning-agent",
-        "label": "Planning Agent"
-      },
-      {
         "@id": "urn:ngm:class:sandbox-environment",
         "label": "Sandbox Environment"
       },
@@ -317,14 +313,6 @@ alias:: CLI multi agent systems
       {
         "@id": "urn:ngm:class:task-decomposition",
         "label": "Task Decomposition"
-      },
-      {
-        "@id": "urn:ngm:class:tool-catalogue",
-        "label": "Tool Catalogue"
-      },
-      {
-        "@id": "urn:ngm:class:worker-agent",
-        "label": "Worker Agent"
       }
     ],
     "requires": [
@@ -333,16 +321,8 @@ alias:: CLI multi agent systems
         "label": "Large Language Models"
       },
       {
-        "@id": "urn:ngm:class:orchestration-protocol",
-        "label": "Orchestration Protocol"
-      },
-      {
         "@id": "urn:ngm:class:sandboxed-code-execution",
         "label": "Sandboxed Code Execution"
-      },
-      {
-        "@id": "urn:ngm:class:shell-environment",
-        "label": "Shell Environment"
       },
       {
         "@id": "urn:ngm:class:tool-schema",
@@ -363,20 +343,12 @@ alias:: CLI multi agent systems
         "label": "Automated Code Review"
       },
       {
-        "@id": "urn:ngm:class:autonomous-debugging",
-        "label": "Autonomous Debugging"
-      },
-      {
         "@id": "urn:ngm:class:ci-cd-automation",
         "label": "CI-CD Automation"
       },
       {
         "@id": "urn:ngm:class:dev-sec-ops",
         "label": "DevSecOps"
-      },
-      {
-        "@id": "urn:ngm:class:repository-scale-refactoring",
-        "label": "Repository-Scale Refactoring"
       },
       {
         "@id": "urn:ngm:class:software-engineering-agents",
@@ -391,10 +363,6 @@ alias:: CLI multi agent systems
       {
         "@id": "urn:ngm:class:auto-gen",
         "label": "AutoGen"
-      },
-      {
-        "@id": "urn:ngm:class:code-act",
-        "label": "CodeAct"
       },
       {
         "@id": "urn:ngm:class:crew-ai",
@@ -414,14 +382,6 @@ alias:: CLI multi agent systems
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:bash",
-        "label": "Bash"
-      },
-      {
-        "@id": "urn:ngm:class:firecracker",
-        "label": "Firecracker"
-      },
       {
         "@id": "urn:ngm:class:git",
         "label": "Git"

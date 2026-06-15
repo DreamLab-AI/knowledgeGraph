@@ -48,7 +48,7 @@
         "label": "Graphics Processing Unit"
       },
       {
-        "id": "urn:ngm:class:lighting-model",
+        "id": "urn:ngm:class:virtual-lighting-model",
         "label": "Lighting Model"
       },
       {
@@ -108,7 +108,7 @@
         "label": "3D Gaussian Splatting"
       },
       {
-        "id": "urn:ngm:class:generative-3-d",
+        "id": "urn:ngm:class:3-d-content-generation",
         "label": "Generative 3D"
       }
     ],

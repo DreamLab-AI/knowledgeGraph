@@ -34,7 +34,7 @@
         "label": "OpenXR"
       },
       {
-        "id": "urn:ngm:class:gltf",
+        "id": "urn:ngm:class:gltf-standard",
         "label": "glTF"
       },
       {
@@ -44,10 +44,6 @@
       {
         "id": "urn:ngm:class:webgl",
         "label": "WebGL"
-      },
-      {
-        "id": "urn:ngm:class:nnef",
-        "label": "NNEF"
       }
     ],
     "requires": [],
@@ -83,10 +79,6 @@
       {
         "id": "urn:ngm:class:metal-api",
         "label": "Metal API"
-      },
-      {
-        "id": "urn:ngm:class:proprietary-graphics-api",
-        "label": "Proprietary Graphics API"
       }
     ],
     "bridgesTo": [
@@ -118,10 +110,6 @@
         "label": "Augmented Reality"
       },
       {
-        "id": "urn:ngm:class:neural-network-portability",
-        "label": "Neural Network Portability"
-      },
-      {
         "id": "urn:ngm:class:3d-asset-interchange",
         "label": "3D Asset Interchange"
       }
@@ -151,7 +139,7 @@
         "label": "Rendering Pipeline"
       },
       {
-        "id": "urn:ngm:class:3d-file-format",
+        "id": "urn:ngm:class:3-d-file-format",
         "label": "3D File Format"
       },
       {

@@ -63,14 +63,7 @@ public:: true
       "label": "Virtual Environment"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:global-virtual-gatherings",
-        "label": "Global Virtual Gatherings"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

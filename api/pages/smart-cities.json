@@ -20,10 +20,6 @@
       {
         "id": "urn:ngm:class:smart-grid",
         "label": "Smart Grid"
-      },
-      {
-        "id": "urn:ngm:class:intelligent-transportation-system",
-        "label": "Intelligent Transportation System"
       }
     ],
     "requires": [
@@ -52,10 +48,6 @@
       {
         "id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicle"
-      },
-      {
-        "id": "urn:ngm:class:urban-mobility",
-        "label": "Urban Mobility"
       },
       {
         "id": "urn:ngm:class:predictive-maintenance",

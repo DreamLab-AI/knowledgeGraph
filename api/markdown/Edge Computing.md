@@ -481,28 +481,12 @@ alias:: EdgeComputing
         "label": "Data Aggregation"
       },
       {
-        "@id": "urn:ngm:class:edge-application-server",
-        "label": "Edge Application Server"
-      },
-      {
         "@id": "urn:ngm:class:edge-gateway",
         "label": "Edge Gateway"
       },
       {
         "@id": "urn:ngm:class:edge-node",
         "label": "Edge Node"
-      },
-      {
-        "@id": "urn:ngm:class:edge-orchestrator",
-        "label": "Edge Orchestrator"
-      },
-      {
-        "@id": "urn:ngm:class:fallback-mechanism",
-        "label": "Fallback Mechanism"
-      },
-      {
-        "@id": "urn:ngm:class:local-processing",
-        "label": "Local Processing"
       },
       {
         "@id": "urn:ngm:class:synchronisation",
@@ -545,20 +529,8 @@ alias:: EdgeComputing
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:bandwidth-efficiency",
-        "label": "Bandwidth Efficiency"
-      },
-      {
         "@id": "urn:ngm:class:data-sovereignty",
         "label": "Data Sovereignty"
-      },
-      {
-        "@id": "urn:ngm:class:decentralised-processing",
-        "label": "Decentralised Processing"
-      },
-      {
-        "@id": "urn:ngm:class:offline-operation",
-        "label": "Offline Operation"
       },
       {
         "@id": "urn:ngm:class:privacy-preserving-computation",
@@ -569,7 +541,7 @@ alias:: EdgeComputing
         "label": "Real-Time AI Inference"
       },
       {
-        "@id": "urn:ngm:class:reduced-latency",
+        "@id": "urn:ngm:class:low-latency",
         "label": "Reduced Latency"
       },
       {
@@ -579,16 +551,8 @@ alias:: EdgeComputing
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:cloudlet-architecture",
-        "label": "Cloudlet Architecture"
-      },
-      {
-        "@id": "urn:ngm:class:edge-ai-inference",
+        "@id": "urn:ngm:class:edge-inference",
         "label": "Edge AI Inference"
-      },
-      {
-        "@id": "urn:ngm:class:edge-caching",
-        "label": "Edge Caching"
       },
       {
         "@id": "urn:ngm:class:fog-computing",
@@ -613,24 +577,12 @@ alias:: EdgeComputing
         "label": "GPU Acceleration"
       },
       {
-        "@id": "urn:ngm:class:kube-edge",
-        "label": "KubeEdge"
-      },
-      {
         "@id": "urn:ngm:class:kubernetes",
         "label": "Kubernetes"
       },
       {
         "@id": "urn:ngm:class:neural-processing-unit",
         "label": "Neural Processing Unit"
-      },
-      {
-        "@id": "urn:ngm:class:open-yurt",
-        "label": "OpenYurt"
-      },
-      {
-        "@id": "urn:ngm:class:v8-isolates",
-        "label": "V8 Isolates"
       },
       {
         "@id": "urn:ngm:class:web-assembly",
@@ -641,10 +593,6 @@ alias:: EdgeComputing
       {
         "@id": "urn:ngm:class:5-g",
         "label": "5G"
-      },
-      {
-        "@id": "urn:ngm:class:6-g",
-        "label": "6G"
       },
       {
         "@id": "urn:ngm:class:internet-of-things",
@@ -719,15 +667,7 @@ alias:: EdgeComputing
         "label": "ETSI MEC"
       },
       {
-        "@id": "urn:ngm:class:ieee-1934-open-fog",
-        "label": "IEEE 1934 OpenFog"
-      },
-      {
-        "@id": "urn:ngm:class:itu-t-y-3508",
-        "label": "ITU-T Y.3508"
-      },
-      {
-        "@id": "urn:ngm:class:linux-foundation-edge",
+        "@id": "urn:ngm:class:linux-foundation",
         "label": "Linux Foundation Edge"
       },
       {

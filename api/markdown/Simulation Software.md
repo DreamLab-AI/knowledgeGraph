@@ -77,34 +77,12 @@ public:: true
       {
         "@id": "urn:ngm:class:physics-engine",
         "label": "Physics Engine"
-      },
-      {
-        "@id": "urn:ngm:class:scenario-manager",
-        "label": "Scenario Manager"
-      },
-      {
-        "@id": "urn:ngm:class:visualisation-pipeline",
-        "label": "Visualisation Pipeline"
-      },
-      {
-        "@id": "urn:ngm:class:data-logger",
-        "label": "Data Logger"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:digital-engineering-toolchain",
-        "label": "Digital Engineering Toolchain"
       }
     ],
     "requires": [
       {
         "@id": "urn:ngm:class:computational-model",
         "label": "Computational Model"
-      },
-      {
-        "@id": "urn:ngm:class:numerical-solver",
-        "label": "Numerical Solver"
       },
       {
         "@id": "urn:ngm:class:high-performance-computing",
@@ -115,10 +93,6 @@ public:: true
       {
         "@id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
-      },
-      {
-        "@id": "urn:ngm:class:virtual-prototyping",
-        "label": "Virtual Prototyping"
       },
       {
         "@id": "urn:ngm:class:synthetic-data-generation",
@@ -149,7 +123,7 @@ public:: true
         "label": "Finite Element Analysis"
       },
       {
-        "@id": "urn:ngm:class:monte-carlo-method",
+        "@id": "urn:ngm:class:monte-carlo-methods",
         "label": "Monte Carlo Method"
       },
       {
@@ -159,10 +133,6 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:xr-training",
-        "label": "XR Training"
-      },
-      {
         "@id": "urn:ngm:class:autonomous-vehicle-testing",
         "label": "Autonomous Vehicle Testing"
       },
@@ -171,19 +141,9 @@ public:: true
         "label": "Climate Modelling"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:emulation-software",
-        "label": "Emulation Software"
-      },
-      {
-        "@id": "urn:ngm:class:physical-prototyping",
-        "label": "Physical Prototyping"
-      }
-    ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:machine-learning-pipeline",
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
       },
       {
@@ -199,10 +159,6 @@ public:: true
       {
         "@id": "urn:ngm:class:model-based-systems-engineering",
         "label": "Model-Based Systems Engineering"
-      },
-      {
-        "@id": "urn:ngm:class:application-software",
-        "label": "Application Software"
       }
     ]
   }

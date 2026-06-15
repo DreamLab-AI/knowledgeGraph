@@ -21,10 +21,6 @@
       {
         "id": "urn:ngm:class:onnx",
         "label": "ONNX"
-      },
-      {
-        "id": "urn:ngm:class:onnx-model-format",
-        "label": "ONNX Model Format"
       }
     ],
     "enables": [
@@ -37,26 +33,14 @@
         "label": "Edge Inference"
       },
       {
-        "id": "urn:ngm:class:large-language-model-inference",
-        "label": "Large Language Model Inference"
-      },
-      {
         "id": "urn:ngm:class:real-time-inference",
         "label": "Real-Time Inference"
-      },
-      {
-        "id": "urn:ngm:class:mixed-precision-inference",
-        "label": "Mixed-Precision Inference"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:cuda",
         "label": "CUDA"
-      },
-      {
-        "id": "urn:ngm:class:directml",
-        "label": "DirectML"
       }
     ],
     "implements": [
@@ -75,32 +59,11 @@
         "label": "TensorRT"
       },
       {
-        "id": "urn:ngm:class:tensorrt-llm",
-        "label": "TensorRT-LLM"
-      },
-      {
-        "id": "urn:ngm:class:vllm",
-        "label": "vLLM"
-      },
-      {
-        "id": "urn:ngm:class:llama-cpp",
-        "label": "llama.cpp"
-      },
-      {
         "id": "urn:ngm:class:openvino",
         "label": "OpenVINO"
       }
     ],
-    "bridgesTo": [
-      {
-        "id": "urn:ngm:class:windows-copilot-plus",
-        "label": "Windows Copilot+"
-      },
-      {
-        "id": "urn:ngm:class:mobile-machine-learning",
-        "label": "Mobile Machine Learning"
-      }
-    ],
+    "bridgesTo": [],
     "uses": [
       {
         "id": "urn:ngm:class:graph-optimisation",
@@ -111,12 +74,8 @@
         "label": "Operator Fusion"
       },
       {
-        "id": "urn:ngm:class:model-quantisation",
+        "id": "urn:ngm:class:neural-network-quantisation",
         "label": "Model Quantisation"
-      },
-      {
-        "id": "urn:ngm:class:execution-provider",
-        "label": "Execution Provider"
       },
       {
         "id": "urn:ngm:class:kv-cache",
@@ -125,7 +84,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:pytorch",
+        "id": "urn:ngm:class:python-pytorch-deep-learning-stack",
         "label": "PyTorch"
       },
       {
@@ -133,7 +92,7 @@
         "label": "TensorFlow"
       },
       {
-        "id": "urn:ngm:class:hugging-face-transformers",
+        "id": "urn:ngm:class:transformers",
         "label": "Hugging Face Transformers"
       },
       {
@@ -143,19 +102,15 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:onnx-community",
+        "id": "urn:ngm:class:onnx",
         "label": "ONNX Community"
       }
     ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:model-optimisation",
+        "id": "urn:ngm:class:model-optimisation-and-performance",
         "label": "Model Optimisation"
-      },
-      {
-        "id": "urn:ngm:class:neural-network-compilation",
-        "label": "Neural Network Compilation"
       },
       {
         "id": "urn:ngm:class:mlops",

@@ -61,20 +61,6 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:aladdin-platform",
-        "label": "Aladdin Platform"
-      },
-      {
-        "@id": "urn:ngm:class:ishares",
-        "label": "iShares"
-      },
-      {
-        "@id": "urn:ngm:class:blackrock-solutions",
-        "label": "BlackRock Solutions"
-      }
-    ],
     "partOf": [
       {
         "@id": "urn:ngm:class:global-capital-markets",
@@ -105,23 +91,15 @@ public:: true
         "label": "Investment Management"
       },
       {
-        "@id": "urn:ngm:class:index-investing",
-        "label": "Index Investing"
-      },
-      {
-        "@id": "urn:ngm:class:sustainable-investing",
+        "@id": "urn:ngm:class:sustainable-finance",
         "label": "Sustainable Investing"
       },
       {
-        "@id": "urn:ngm:class:institutional-capital-allocation",
+        "@id": "urn:ngm:class:institutional-investment",
         "label": "Institutional Capital Allocation"
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:risk-analytics",
-        "label": "Risk Analytics"
-      },
       {
         "@id": "urn:ngm:class:quantitative-finance",
         "label": "Quantitative Finance"
@@ -135,37 +113,9 @@ public:: true
         "label": "Data Infrastructure"
       }
     ],
-    "supports": [
-      {
-        "@id": "urn:ngm:class:pension-fund",
-        "label": "Pension Fund"
-      },
-      {
-        "@id": "urn:ngm:class:sovereign-wealth-fund",
-        "label": "Sovereign Wealth Fund"
-      },
-      {
-        "@id": "urn:ngm:class:endowment-fund",
-        "label": "Endowment Fund"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:vanguard",
-        "label": "Vanguard"
-      },
-      {
-        "@id": "urn:ngm:class:state-street",
-        "label": "State Street"
-      },
-      {
-        "@id": "urn:ngm:class:fidelity-investments",
-        "label": "Fidelity Investments"
-      }
-    ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:bitcoin-etf",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-etf",
         "label": "Bitcoin ETF"
       },
       {
@@ -173,7 +123,7 @@ public:: true
         "label": "Tokenisation"
       },
       {
-        "@id": "urn:ngm:class:esg-data",
+        "@id": "urn:ngm:class:esg",
         "label": "ESG Data"
       }
     ],
@@ -181,14 +131,6 @@ public:: true
       {
         "@id": "urn:ngm:class:exchange-traded-fund",
         "label": "Exchange-Traded Fund"
-      },
-      {
-        "@id": "urn:ngm:class:fixed-income",
-        "label": "Fixed Income"
-      },
-      {
-        "@id": "urn:ngm:class:alternative-investments",
-        "label": "Alternative Investments"
       }
     ]
   },

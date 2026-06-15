@@ -20,17 +20,9 @@
       {
         "id": "urn:ngm:class:dialogue-management",
         "label": "Dialogue Management"
-      },
-      {
-        "id": "urn:ngm:class:social-cue",
-        "label": "Social Cue"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:shared-context",
-        "label": "Shared Context"
-      },
       {
         "id": "urn:ngm:class:communication-channel",
         "label": "Communication Channel"
@@ -54,12 +46,8 @@
         "label": "Collaborative Learning"
       },
       {
-        "id": "urn:ngm:class:trust-formation",
+        "id": "urn:ngm:class:trust-building",
         "label": "Trust Formation"
-      },
-      {
-        "id": "urn:ngm:class:consensus-building",
-        "label": "Consensus Building"
       }
     ],
     "dependsOn": [],

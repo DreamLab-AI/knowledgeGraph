@@ -321,29 +321,19 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"},
-      {"@id": "urn:ngm:class:neural-processing-unit", "label": "Neural Processing Unit"}
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      }
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:apple-inc-technology-corporation-neural-engine",
-        "label": "Apple Neural Engine"
-      },
-      {
-        "@id": "urn:ngm:class:arm-ethos-npu",
-        "label": "ARM Ethos NPU"
-      },
-      {
-        "@id": "urn:ngm:class:google-ai-technology-corporation-coral-edge-tpu",
-        "label": "Google Coral Edge TPU"
-      },
-      {
-        "@id": "urn:ngm:class:hailo-accelerator",
+        "@id": "urn:ngm:class:edge-ai-accelerator",
         "label": "Hailo Accelerator"
-      },
-      {
-        "@id": "urn:ngm:class:intel-movidius",
-        "label": "Intel Movidius"
       },
       {
         "@id": "urn:ngm:class:neural-processing-unit",
@@ -356,10 +346,6 @@ public:: true
       {
         "@id": "urn:ngm:class:onnx-runtime",
         "label": "ONNX Runtime"
-      },
-      {
-        "@id": "urn:ngm:class:qualcomm-ai-engine",
-        "label": "Qualcomm AI Engine"
       },
       {
         "@id": "urn:ngm:class:tensor-flow-lite",
@@ -380,7 +366,7 @@ public:: true
         "label": "Memory Bandwidth"
       },
       {
-        "@id": "urn:ngm:class:model-quantisation",
+        "@id": "urn:ngm:class:neural-network-quantisation",
         "label": "Model Quantisation"
       },
       {
@@ -406,7 +392,7 @@ public:: true
         "label": "On-Device Inference"
       },
       {
-        "@id": "urn:ngm:class:privacy-preserving-ml",
+        "@id": "urn:ngm:class:privacy-preserving",
         "label": "Privacy-Preserving ML"
       },
       {
@@ -424,24 +410,12 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:apache-tvm",
-        "label": "Apache TVM"
-      },
-      {
-        "@id": "urn:ngm:class:execu-torch",
-        "label": "ExecuTorch"
-      },
-      {
         "@id": "urn:ngm:class:mlir",
         "label": "MLIR"
       },
       {
         "@id": "urn:ngm:class:onnx-runtime",
         "label": "ONNX Runtime"
-      },
-      {
-        "@id": "urn:ngm:class:open-vino",
-        "label": "OpenVINO"
       },
       {
         "@id": "urn:ngm:class:tensor-flow-lite",
@@ -528,15 +502,7 @@ public:: true
         "label": "ETSI MEC"
       },
       {
-        "@id": "urn:ngm:class:ieee-p2941",
-        "label": "IEEE P2941"
-      },
-      {
-        "@id": "urn:ngm:class:khronos-open-cl",
-        "label": "Khronos OpenCL"
-      },
-      {
-        "@id": "urn:ngm:class:mlcommons-mlperf",
+        "@id": "urn:ngm:class:mlcommons",
         "label": "MLCommons MLPerf"
       },
       {

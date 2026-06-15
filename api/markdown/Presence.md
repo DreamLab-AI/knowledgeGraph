@@ -137,16 +137,8 @@ alias:: TELE-006-presence
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:haptic-device",
-        "label": "Haptic Device"
-      },
-      {
         "@id": "urn:ngm:class:sensory-feedback",
         "label": "Sensory Feedback"
-      },
-      {
-        "@id": "urn:ngm:class:visual-display",
-        "label": "Visual Display"
       },
       {
         "@id": "urn:ngm:class:head-mounted-display",
@@ -159,14 +151,6 @@ alias:: TELE-006-presence
         "label": "Embodiment"
       },
       {
-        "@id": "urn:ngm:class:engagement",
-        "label": "Engagement"
-      },
-      {
-        "@id": "urn:ngm:class:social-connection",
-        "label": "Social Connection"
-      },
-      {
         "@id": "urn:ngm:class:flow-state",
         "label": "Flow State"
       }
@@ -175,10 +159,6 @@ alias:: TELE-006-presence
       {
         "@id": "urn:ngm:class:latency",
         "label": "Latency"
-      },
-      {
-        "@id": "urn:ngm:class:frame-rate",
-        "label": "Frame Rate"
       },
       {
         "@id": "urn:ngm:class:field-of-view",
@@ -217,10 +197,6 @@ alias:: TELE-006-presence
       {
         "@id": "urn:ngm:class:attention",
         "label": "Attention"
-      },
-      {
-        "@id": "urn:ngm:class:situation-awareness",
-        "label": "Situation Awareness"
       }
     ],
     "bridgesTo": [

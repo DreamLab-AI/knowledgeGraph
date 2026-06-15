@@ -76,7 +76,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -147,10 +147,6 @@
       {
         "id": "urn:ngm:class:surveillance",
         "label": "Surveillance"
-      },
-      {
-        "id": "urn:ngm:class:metadata-analysis",
-        "label": "Metadata Analysis"
       },
       {
         "id": "urn:ngm:class:supply-chain-security",

@@ -106,11 +106,11 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:governance-framework-ai-0035",
+        "@id": "urn:ngm:class:governance-framework",
         "label": "Governance Framework (AI-0035)"
       },
       {
-        "@id": "urn:ngm:class:risk-management-ai-0062",
+        "@id": "urn:ngm:class:risk-management",
         "label": "Risk Management (AI-0062)"
       },
       {
@@ -124,11 +124,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:ai-assurance-ai-0102",
-        "label": "AI Assurance (AI-0102)"
-      },
-      {
-        "@id": "urn:ngm:class:responsible-ai-ai-0033",
+        "@id": "urn:ngm:class:responsible-ai",
         "label": "Responsible AI (AI-0033)"
       },
       {
@@ -158,7 +154,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
@@ -171,10 +167,6 @@ public:: true
       }
     ],
     "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:ai-opacity",
-        "label": "AI Opacity"
-      },
       {
         "@id": "urn:ngm:class:algorithmic-bias",
         "label": "Algorithmic Bias"

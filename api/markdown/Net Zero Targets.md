@@ -24,56 +24,128 @@ public:: true
   "domain": "governance",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:climate-commitments", "label": "Climate Commitments"}
+    {
+      "@id": "urn:ngm:class:climate-commitments",
+      "label": "Climate Commitments"
+    }
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:climate-policy", "label": "Climate Policy"},
-      {"@id": "urn:ngm:class:sustainable-development", "label": "Sustainable Development"}
+      {
+        "@id": "urn:ngm:class:climate-policy",
+        "label": "Climate Policy"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-development",
+        "label": "Sustainable Development"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:carbon-accounting", "label": "Carbon Accounting"},
-      {"@id": "urn:ngm:class:greenhouse-gas-emissions", "label": "Greenhouse Gas Emissions"},
-      {"@id": "urn:ngm:class:third-party-verification", "label": "Third-Party Verification"}
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "@id": "urn:ngm:class:greenhouse-gas-emissions",
+        "label": "Greenhouse Gas Emissions"
+      },
+      {
+        "@id": "urn:ngm:class:third-party-verification",
+        "label": "Third-Party Verification"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:climate-change-mitigation", "label": "Climate Change Mitigation"},
-      {"@id": "urn:ngm:class:green-finance", "label": "Green Finance"},
-      {"@id": "urn:ngm:class:low-carbon-transition", "label": "Low-Carbon Transition"}
+      {
+        "@id": "urn:ngm:class:climate-change-mitigation",
+        "label": "Climate Change Mitigation"
+      },
+      {
+        "@id": "urn:ngm:class:green-finance",
+        "label": "Green Finance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:carbon-offsetting", "label": "Carbon Offsetting"},
-      {"@id": "urn:ngm:class:science-based-targets", "label": "Science Based Targets"},
-      {"@id": "urn:ngm:class:carbon-removal", "label": "Carbon Removal"}
+      {
+        "@id": "urn:ngm:class:carbon-offsetting",
+        "label": "Carbon Offsetting"
+      },
+      {
+        "@id": "urn:ngm:class:science-based-targets",
+        "label": "Science Based Targets"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-removal",
+        "label": "Carbon Removal"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:renewable-energy", "label": "Renewable Energy"},
-      {"@id": "urn:ngm:class:energy-efficiency", "label": "Energy Efficiency"},
-      {"@id": "urn:ngm:class:voluntary-carbon-market", "label": "Voluntary Carbon Market"}
+      {
+        "@id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      },
+      {
+        "@id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      },
+      {
+        "@id": "urn:ngm:class:voluntary-carbon-market",
+        "label": "Voluntary Carbon Market"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:paris-agreement", "label": "Paris Agreement"},
-      {"@id": "urn:ngm:class:science-based-targets-initiative", "label": "Science Based Targets Initiative"},
-      {"@id": "urn:ngm:class:ifrs-sustainability-standards", "label": "IFRS Sustainability Standards"}
+      {
+        "@id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      },
+      {
+        "@id": "urn:ngm:class:science-based-targets",
+        "label": "Science Based Targets Initiative"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:carbon-neutrality", "label": "Carbon Neutrality"},
-      {"@id": "urn:ngm:class:climate-pledges", "label": "Climate Pledges"}
+      {
+        "@id": "urn:ngm:class:carbon-neutrality",
+        "label": "Carbon Neutrality"
+      },
+      {
+        "@id": "urn:ngm:class:climate-commitments",
+        "label": "Climate Pledges"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:nationally-determined-contributions", "label": "Nationally Determined Contributions"},
-      {"@id": "urn:ngm:class:scope-3-emissions", "label": "Scope 3 Emissions"},
-      {"@id": "urn:ngm:class:just-transition", "label": "Just Transition"},
-      {"@id": "urn:ngm:class:greenwashing", "label": "Greenwashing"}
+      {
+        "@id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      },
+      {
+        "@id": "urn:ngm:class:just-transition",
+        "label": "Just Transition"
+      },
+      {
+        "@id": "urn:ngm:class:greenwashing",
+        "label": "Greenwashing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"},
-      {"@id": "urn:ngm:class:climate-risk-disclosure", "label": "Climate Risk Disclosure"}
+      {
+        "@id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:climate-risk-disclosure",
+        "label": "Climate Risk Disclosure"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:net-zero-commitments", "label": "Net Zero Commitments"},
-    {"@id": "urn:ngm:class:net-zero-pledges", "label": "Net Zero Pledges"}
+    {
+      "@id": "urn:ngm:class:net-zero-commitments",
+      "label": "Net Zero Commitments"
+    },
+    {
+      "@id": "urn:ngm:class:net-zero-pledges",
+      "label": "Net Zero Pledges"
+    }
   ],
   "quality": 0.74,
   "provenance": {

@@ -18,15 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:aggregation-contract",
-        "label": "Aggregation Contract"
-      },
-      {
         "id": "urn:ngm:class:off-chain-reporting",
         "label": "Off-Chain Reporting"
       },
       {
-        "id": "urn:ngm:class:slashing-mechanism",
+        "id": "urn:ngm:class:slashing",
         "label": "Slashing Mechanism"
       }
     ],
@@ -89,7 +85,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:iot-sensor-network",
+        "id": "urn:ngm:class:io-t-sensor-network",
         "label": "IoT Sensor Network"
       },
       {
@@ -112,7 +108,7 @@
         "label": "Decentralised Finance"
       },
       {
-        "id": "urn:ngm:class:prediction-market",
+        "id": "urn:ngm:class:prediction-markets",
         "label": "Prediction Market"
       },
       {

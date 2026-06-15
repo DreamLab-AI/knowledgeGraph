@@ -26,19 +26,11 @@
         "label": "Gaussian Mechanism"
       },
       {
-        "id": "urn:ngm:class:exponential-mechanism",
-        "label": "Exponential Mechanism"
-      },
-      {
         "id": "urn:ngm:class:privacy-budget-management",
         "label": "Privacy Budget Management"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:noise-addition",
-        "label": "Noise Addition"
-      },
       {
         "id": "urn:ngm:class:sensitivity-analysis",
         "label": "Sensitivity Analysis"
@@ -56,10 +48,6 @@
       {
         "id": "urn:ngm:class:privacy-preserving-machine-learning",
         "label": "Privacy-Preserving Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:private-data-release",
-        "label": "Private Data Release"
       }
     ],
     "dependsOn": [],
@@ -75,7 +63,7 @@
         "label": "K-Anonymity"
       },
       {
-        "id": "urn:ngm:class:data-anonymisation",
+        "id": "urn:ngm:class:anonymisation",
         "label": "Data Anonymisation"
       }
     ],
@@ -97,10 +85,6 @@
       {
         "id": "urn:ngm:class:stochastic-gradient-descent",
         "label": "Stochastic Gradient Descent"
-      },
-      {
-        "id": "urn:ngm:class:composition-theorem",
-        "label": "Composition Theorem"
       }
     ],
     "supports": [

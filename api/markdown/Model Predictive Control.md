@@ -38,50 +38,127 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:prediction-horizon", "label": "Prediction Horizon"},
-      {"@id": "urn:ngm:class:control-horizon", "label": "Control Horizon"},
-      {"@id": "urn:ngm:class:cost-function", "label": "Cost Function"},
-      {"@id": "urn:ngm:class:receding-horizon", "label": "Receding Horizon"}
+      {
+        "@id": "urn:ngm:class:prediction-horizon",
+        "label": "Prediction Horizon"
+      },
+      {
+        "@id": "urn:ngm:class:cost-function",
+        "label": "Cost Function"
+      },
+      {
+        "@id": "urn:ngm:class:receding-horizon",
+        "label": "Receding Horizon"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:state-estimation", "label": "State Estimation"},
-      {"@id": "urn:ngm:class:system-identification", "label": "System Identification"},
-      {"@id": "urn:ngm:class:mathematical-optimisation", "label": "Mathematical Optimisation"},
-      {"@id": "urn:ngm:class:dynamic-model", "label": "Dynamic Model"}
+      {
+        "@id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:system-identification",
+        "label": "System Identification"
+      },
+      {
+        "@id": "urn:ngm:class:optimisation",
+        "label": "Mathematical Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-model",
+        "label": "Dynamic Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:trajectory-control", "label": "Trajectory Control"},
-      {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"},
-      {"@id": "urn:ngm:class:autonomous-driving", "label": "Autonomous Driving"},
-      {"@id": "urn:ngm:class:energy-management", "label": "Energy Management"}
+      {
+        "@id": "urn:ngm:class:trajectory-control",
+        "label": "Trajectory Control"
+      },
+      {
+        "@id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "@id": "urn:ngm:class:energy-management",
+        "label": "Energy Management"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
-      {"@id": "urn:ngm:class:linear-algebra", "label": "Linear Algebra"},
-      {"@id": "urn:ngm:class:quadratic-programming", "label": "Quadratic Programming"}
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:quadratic-programming",
+        "label": "Quadratic Programming"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"},
-      {"@id": "urn:ngm:class:state-space-model", "label": "State Space Model"},
-      {"@id": "urn:ngm:class:nonlinear-programming", "label": "Nonlinear Programming"}
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "@id": "urn:ngm:class:state-space-model",
+        "label": "State Space Model"
+      },
+      {
+        "@id": "urn:ngm:class:quadratic-programming",
+        "label": "Nonlinear Programming"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:pid-control", "label": "PID Control"},
-      {"@id": "urn:ngm:class:lqr-control", "label": "LQR Control"}
+      {
+        "@id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "@id": "urn:ngm:class:state-space-control",
+        "label": "LQR Control"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:whole-body-control", "label": "Whole Body Control"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:whole-body-control",
+        "label": "Whole Body Control"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:mpc", "label": "MPC"},
-    {"@id": "urn:ngm:class:receding-horizon-control", "label": "Receding Horizon Control"}
+    {
+      "@id": "urn:ngm:class:mpc",
+      "label": "MPC"
+    },
+    {
+      "@id": "urn:ngm:class:receding-horizon-control",
+      "label": "Receding Horizon Control"
+    }
   ],
   "quality": 0.72,
   "provenance": {

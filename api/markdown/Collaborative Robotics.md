@@ -23,52 +23,135 @@ public:: true
   "definition": "Collaborative Robotics is the engineering discipline concerned with designing, deploying, and operating robotic systems — particularly collaborative robots (cobots) — that share workspace and tasks with human workers without requiring physical barriers, relying instead on force-torque sensing, speed-and-separation monitoring, and power-and-force limiting to maintain safety under ISO 10218 and ISO/TS 15066. Unlike traditional industrial robots that operate in guarded cages, cobots are designed with compliant joints, rounded profiles, and real-time collision-detection to enable direct physical cooperation with humans on assembly, inspection, and logistics tasks. The discipline integrates mechanical design, control theory, human-robot interaction research, and regulatory compliance to enable safe human-robot co-presence in shared workspaces.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:collaborative-systems-modality-robot", "label": "Collaborative Robot"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:collaborative-systems-modality-robot",
+      "label": "Collaborative Robot"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:force-torque-sensor", "label": "Force Torque Sensor"},
-      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"},
-      {"@id": "urn:ngm:class:impedance-control", "label": "Impedance Control"},
-      {"@id": "urn:ngm:class:cobot-safety-levels", "label": "Cobot Safety Levels"}
+      {
+        "@id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force Torque Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      },
+      {
+        "@id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "@id": "urn:ngm:class:cobot-safety-levels",
+        "label": "Cobot Safety Levels"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:robot-safety", "label": "Robot Safety"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:real-time-control", "label": "Real-Time Control"}
+      {
+        "@id": "urn:ngm:class:robot-safety",
+        "label": "Robot Safety"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:manufacturing-automation", "label": "Manufacturing Automation"},
-      {"@id": "urn:ngm:class:assistive-robotics", "label": "Assistive Robotics"},
-      {"@id": "urn:ngm:class:flexible-manufacturing", "label": "Flexible Manufacturing"},
-      {"@id": "urn:ngm:class:human-robot-teaming", "label": "Human-Robot Teaming"}
+      {
+        "@id": "urn:ngm:class:manufacturing-automation",
+        "label": "Manufacturing Automation"
+      },
+      {
+        "@id": "urn:ngm:class:assistive-robotics",
+        "label": "Assistive Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:flexible-manufacturing",
+        "label": "Flexible Manufacturing"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-collaboration",
+        "label": "Human-Robot Teaming"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:tactile-sensing", "label": "Tactile Sensing"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:tactile-sensing",
+        "label": "Tactile Sensing"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-10218", "label": "ISO 10218"},
-      {"@id": "urn:ngm:class:iso-ts-15066", "label": "ISO TS 15066"}
+      {
+        "@id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "@id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"},
-      {"@id": "urn:ngm:class:autonomous-mobile-robot", "label": "Autonomous Mobile Robot"}
+      {
+        "@id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-mobile-robots",
+        "label": "Autonomous Mobile Robot"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:robot-programming", "label": "Robot Programming"},
-      {"@id": "urn:ngm:class:imitation-learning", "label": "Imitation Learning"}
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:robot-programming",
+        "label": "Robot Programming"
+      },
+      {
+        "@id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:cobot-technology", "label": "Cobot Technology"},
-    {"@id": "urn:ngm:class:human-robot-collaboration", "label": "Human-Robot Collaboration"}
+    {
+      "@id": "urn:ngm:class:cobot-technology",
+      "label": "Cobot Technology"
+    },
+    {
+      "@id": "urn:ngm:class:human-robot-collaboration",
+      "label": "Human-Robot Collaboration"
+    }
   ],
   "quality": 0.72,
   "provenance": {

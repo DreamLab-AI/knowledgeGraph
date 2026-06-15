@@ -67,11 +67,7 @@ public:: true
         "label": "Sharding"
       },
       {
-        "@id": "urn:ngm:class:rollups",
-        "label": "Rollups"
-      },
-      {
-        "@id": "urn:ngm:class:state-channels",
+        "@id": "urn:ngm:class:state-channel",
         "label": "State Channels"
       },
       {
@@ -89,7 +85,7 @@ public:: true
         "label": "Consensus Mechanism"
       },
       {
-        "@id": "urn:ngm:class:peer-to-peer-networking",
+        "@id": "urn:ngm:class:peer-to-peer-network",
         "label": "Peer-to-Peer Networking"
       }
     ],
@@ -121,7 +117,7 @@ public:: true
         "label": "Cryptographic Proofs"
       },
       {
-        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "@id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proofs"
       }
     ],
@@ -149,12 +145,8 @@ public:: true
         "label": "Modular Blockchain"
       },
       {
-        "@id": "urn:ngm:class:optimistic-rollups",
+        "@id": "urn:ngm:class:optimistic-rollup",
         "label": "Optimistic Rollups"
-      },
-      {
-        "@id": "urn:ngm:class:zk-rollups",
-        "label": "ZK-Rollups"
       }
     ],
     "bridgesTo": [

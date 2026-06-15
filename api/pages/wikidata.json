@@ -20,10 +20,6 @@
       {
         "id": "urn:ngm:class:structured-data",
         "label": "Structured Data"
-      },
-      {
-        "id": "urn:ngm:class:authority-control",
-        "label": "Authority Control"
       }
     ],
     "requires": [],
@@ -39,10 +35,6 @@
       {
         "id": "urn:ngm:class:federated-query",
         "label": "Federated Query"
-      },
-      {
-        "id": "urn:ngm:class:entity-disambiguation",
-        "label": "Entity Disambiguation"
       }
     ],
     "dependsOn": [],
@@ -72,7 +64,7 @@
         "label": "SPARQL"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
@@ -97,11 +89,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:wikimedia-foundation",
-        "label": "Wikimedia Foundation"
-      },
-      {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       }
     ],
@@ -115,7 +103,7 @@
         "label": "Semantic Search"
       },
       {
-        "id": "urn:ngm:class:open-knowledge-graph",
+        "id": "urn:ngm:class:knowledge-graph",
         "label": "Open Knowledge Graph"
       },
       {

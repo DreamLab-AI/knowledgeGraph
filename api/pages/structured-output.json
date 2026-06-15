@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:json-schema",
+        "id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       },
       {
@@ -67,10 +67,6 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:free-form-generation",
-        "label": "Free-Form Generation"
-      },
-      {
         "id": "urn:ngm:class:chain-of-thought",
         "label": "Chain-of-Thought"
       }
@@ -109,7 +105,7 @@
         "label": "API Integration"
       },
       {
-        "id": "urn:ngm:class:data-extraction",
+        "id": "urn:ngm:class:information-extraction",
         "label": "Data Extraction"
       }
     ],
@@ -129,7 +125,7 @@
         "label": "Pydantic"
       },
       {
-        "id": "urn:ngm:class:openai-api",
+        "id": "urn:ngm:class:openai-research-organisation-api",
         "label": "OpenAI API"
       }
     ]

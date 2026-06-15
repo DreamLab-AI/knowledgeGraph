@@ -108,7 +108,7 @@
         "label": "NIST"
       },
       {
-        "id": "urn:ngm:class:iso-iec-29101",
+        "id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC 29101"
       }
     ],

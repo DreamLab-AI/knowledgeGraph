@@ -73,20 +73,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:indicators-of-compromise",
-        "label": "Indicators of Compromise"
-      },
-      {
-        "@id": "urn:ngm:class:threat-actor-profiling",
+        "@id": "urn:ngm:class:threat-actor",
         "label": "Threat Actor Profiling"
-      },
-      {
-        "@id": "urn:ngm:class:vulnerability-intelligence",
-        "label": "Vulnerability Intelligence"
-      },
-      {
-        "@id": "urn:ngm:class:malware-analysis",
-        "label": "Malware Analysis"
       }
     ],
     "partOf": [
@@ -137,10 +125,6 @@ public:: true
       {
         "@id": "urn:ngm:class:stix-taxii",
         "label": "STIX/TAXII"
-      },
-      {
-        "@id": "urn:ngm:class:mitre-attack-framework",
-        "label": "MITRE ATT&CK Framework"
       }
     ],
     "uses": [
@@ -169,11 +153,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:mitre-corporation",
-        "label": "MITRE Corporation"
-      },
-      {
-        "@id": "urn:ngm:class:oasis-open",
+        "@id": "urn:ngm:class:oasis",
         "label": "OASIS Open"
       }
     ],
@@ -197,10 +177,6 @@ public:: true
       {
         "@id": "urn:ngm:class:threat-hunting",
         "label": "Threat Hunting"
-      },
-      {
-        "@id": "urn:ngm:class:information-sharing-and-analysis-centre",
-        "label": "Information Sharing and Analysis Centre"
       },
       {
         "@id": "urn:ngm:class:dark-web-monitoring",

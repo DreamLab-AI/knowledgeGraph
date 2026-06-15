@@ -87,7 +87,7 @@
         "label": "Surveillance"
       },
       {
-        "id": "urn:ngm:class:mass-data-collection",
+        "id": "urn:ngm:class:data-collection",
         "label": "Mass Data Collection"
       },
       {
@@ -96,10 +96,6 @@
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:cypherpunk",
-        "label": "Cypherpunk"
-      },
       {
         "id": "urn:ngm:class:decentralised-web",
         "label": "Decentralised Web"
@@ -117,10 +113,6 @@
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-iec-29100",
-        "label": "ISO/IEC 29100"
-      },
-      {
         "id": "urn:ngm:class:nist-privacy-framework",
         "label": "NIST Privacy Framework"
       }
@@ -134,10 +126,6 @@
       {
         "id": "urn:ngm:class:digital-rights",
         "label": "Digital Rights"
-      },
-      {
-        "id": "urn:ngm:class:data-rights",
-        "label": "Data Rights"
       }
     ]
   },

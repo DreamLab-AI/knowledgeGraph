@@ -16,20 +16,7 @@
   "qualityScore": 0.76,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:cpython",
-        "label": "CPython"
-      },
-      {
-        "id": "urn:ngm:class:python-standard-library",
-        "label": "Python Standard Library"
-      },
-      {
-        "id": "urn:ngm:class:python-package-index",
-        "label": "Python Package Index"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:virtual-environment",
@@ -68,16 +55,7 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:r-language",
-        "label": "R Language"
-      },
-      {
-        "id": "urn:ngm:class:julia-language",
-        "label": "Julia Language"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:knowledge-graph",
@@ -98,11 +76,7 @@
         "label": "NumPy"
       },
       {
-        "id": "urn:ngm:class:pandas",
-        "label": "Pandas"
-      },
-      {
-        "id": "urn:ngm:class:pytorch",
+        "id": "urn:ngm:class:python-pytorch-deep-learning-stack",
         "label": "PyTorch"
       },
       {
@@ -124,10 +98,6 @@
         "label": "REST API"
       },
       {
-        "id": "urn:ngm:class:web-framework",
-        "label": "Web Framework"
-      },
-      {
         "id": "urn:ngm:class:infrastructure-as-code",
         "label": "Infrastructure as Code"
       }
@@ -140,11 +110,11 @@
         "label": "Python PyTorch Deep Learning Stack"
       },
       {
-        "id": "urn:ngm:class:machine-learning-pipeline",
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
       },
       {
-        "id": "urn:ngm:class:machine-learning-framework",
+        "id": "urn:ngm:class:machine-learning-discipline-framework",
         "label": "Machine Learning Framework"
       },
       {

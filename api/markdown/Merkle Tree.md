@@ -76,54 +76,119 @@ alias:: Merkle Trees, MerkleTree
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:merkle-root", "label": "Merkle Root"},
-      {"@id": "urn:ngm:class:merkle-proof", "label": "Merkle Proof"},
-      {"@id": "urn:ngm:class:leaf-node", "label": "Leaf Node"},
-      {"@id": "urn:ngm:class:internal-node", "label": "Internal Node"}
+      {
+        "@id": "urn:ngm:class:merkle-root",
+        "label": "Merkle Root"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-proof",
+        "label": "Merkle Proof"
+      },
+      {
+        "@id": "urn:ngm:class:leaf-node",
+        "label": "Leaf Node"
+      },
+      {
+        "@id": "urn:ngm:class:internal-node",
+        "label": "Internal Node"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:block-header", "label": "Block Header"},
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}
+      {
+        "@id": "urn:ngm:class:block-header",
+        "label": "Block Header"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"},
-      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"},
-      {"@id": "urn:ngm:class:binary-tree", "label": "Binary Tree"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:simplified-payment-verification", "label": "Simplified Payment Verification"},
-      {"@id": "urn:ngm:class:light-client", "label": "Light Client"},
-      {"@id": "urn:ngm:class:data-integrity-verification", "label": "Data Integrity Verification"}
-    ],
-    "requires": [
-      {"@id": "urn:ngm:class:collision-resistant-hash", "label": "Collision-Resistant Hash"},
-      {"@id": "urn:ngm:class:deterministic-ordering", "label": "Deterministic Ordering"}
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:simplified-payment-verification",
+        "label": "Simplified Payment Verification"
+      },
+      {
+        "@id": "urn:ngm:class:light-client",
+        "label": "Light Client"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity-verification",
+        "label": "Data Integrity Verification"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:proof-of-inclusion", "label": "Proof of Inclusion"},
-      {"@id": "urn:ngm:class:proof-of-exclusion", "label": "Proof of Exclusion"},
-      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}
+      {
+        "@id": "urn:ngm:class:proof-of-inclusion",
+        "label": "Proof of Inclusion"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:patricia-trie", "label": "Patricia Trie"},
-      {"@id": "urn:ngm:class:linked-list", "label": "Linked List"}
+      {
+        "@id": "urn:ngm:class:patricia-trie",
+        "label": "Patricia Trie"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:content-addressable-storage", "label": "Content-Addressable Storage"},
-      {"@id": "urn:ngm:class:distributed-file-system", "label": "Distributed File System"},
-      {"@id": "urn:ngm:class:version-control-system", "label": "Version Control System"}
+      {
+        "@id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressable Storage"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-file-system",
+        "label": "Distributed File System"
+      },
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control System"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:block", "label": "Block"},
-      {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:vector-commitment", "label": "Vector Commitment"}
+      {
+        "@id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:vector-commitment",
+        "label": "Vector Commitment"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:hash-tree", "label": "Hash Tree"}
+    {
+      "@id": "urn:ngm:class:hash-tree",
+      "label": "Hash Tree"
+    }
   ],
   "quality": 0.8,
   "provenance": {

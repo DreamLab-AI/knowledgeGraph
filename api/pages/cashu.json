@@ -26,37 +26,17 @@
         "label": "Blind Signatures"
       },
       {
-        "id": "urn:ngm:class:cashu-mint",
-        "label": "Cashu Mint"
-      },
-      {
-        "id": "urn:ngm:class:cashu-nut-specifications",
-        "label": "Cashu NUT Specifications"
-      },
-      {
-        "id": "urn:ngm:class:ecash-token",
+        "id": "urn:ngm:class:ecash",
         "label": "Ecash Token"
-      },
-      {
-        "id": "urn:ngm:class:keyset",
-        "label": "Keyset"
       },
       {
         "id": "urn:ngm:class:lightning-invoice",
         "label": "Lightning Invoice"
-      },
-      {
-        "id": "urn:ngm:class:proof",
-        "label": "Proof"
-      },
-      {
-        "id": "urn:ngm:class:spent-token-registry",
-        "label": "Spent Token Registry"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:blind-signature-scheme",
+        "id": "urn:ngm:class:blind-signatures",
         "label": "Blind Signature Scheme"
       },
       {
@@ -78,24 +58,8 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:anonymous-payments",
-        "label": "Anonymous Payments"
-      },
-      {
-        "id": "urn:ngm:class:bearer-token-transfer",
-        "label": "Bearer Token Transfer"
-      },
-      {
         "id": "urn:ngm:class:financial-privacy",
         "label": "Financial Privacy"
-      },
-      {
-        "id": "urn:ngm:class:multi-mint-payments",
-        "label": "Multi-Mint Payments"
-      },
-      {
-        "id": "urn:ngm:class:offline-transactions",
-        "label": "Offline Transactions"
       },
       {
         "id": "urn:ngm:class:micropayments",
@@ -105,24 +69,12 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:bearer-token-model",
-        "label": "Bearer Token Model"
-      },
-      {
-        "id": "urn:ngm:class:chaumian-blind-signature-scheme",
+        "id": "urn:ngm:class:blind-signatures",
         "label": "Chaumian Blind Signature Scheme"
       },
       {
-        "id": "urn:ngm:class:dleq-proofs",
+        "id": "urn:ngm:class:cryptographic-proofs",
         "label": "DLEQ Proofs"
-      },
-      {
-        "id": "urn:ngm:class:nut-protocol-specifications",
-        "label": "NUT Protocol Specifications"
-      },
-      {
-        "id": "urn:ngm:class:pay-to-pubkey-spending-conditions",
-        "label": "Pay-To-Pubkey Spending Conditions"
       }
     ],
     "contrastsWith": [],
@@ -144,18 +96,6 @@
       {
         "id": "urn:ngm:class:bolt-12",
         "label": "BOLT12"
-      },
-      {
-        "id": "urn:ngm:class:lightning-invoices",
-        "label": "Lightning Invoices"
-      },
-      {
-        "id": "urn:ngm:class:nfc-payments",
-        "label": "NFC Payments"
-      },
-      {
-        "id": "urn:ngm:class:qr-codes",
-        "label": "QR Codes"
       },
       {
         "id": "urn:ngm:class:web-sockets",
@@ -188,65 +128,16 @@
         "label": "Censorship Resistance"
       }
     ],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:nut-00-cryptography-and-models",
-        "label": "NUT-00 Cryptography and Models"
-      },
-      {
-        "id": "urn:ngm:class:nut-01-mint-public-keys",
-        "label": "NUT-01 Mint Public Keys"
-      },
-      {
-        "id": "urn:ngm:class:nut-02-keysets-and-fees",
-        "label": "NUT-02 Keysets and Fees"
-      },
-      {
-        "id": "urn:ngm:class:nut-03-swapping-tokens",
-        "label": "NUT-03 Swapping Tokens"
-      },
-      {
-        "id": "urn:ngm:class:nut-04-minting-tokens",
-        "label": "NUT-04 Minting Tokens"
-      },
-      {
-        "id": "urn:ngm:class:nut-05-melting-tokens",
-        "label": "NUT-05 Melting Tokens"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:btcpay-server",
-        "label": "BTCPayServer"
-      },
-      {
-        "id": "urn:ngm:class:cashu-development-kit",
-        "label": "Cashu Development Kit"
-      },
       {
         "id": "urn:ngm:class:david-chaum",
         "label": "David Chaum"
       },
       {
-        "id": "urn:ngm:class:digi-cash",
-        "label": "DigiCash"
-      },
-      {
-        "id": "urn:ngm:class:e-nuts",
-        "label": "eNuts"
-      },
-      {
-        "id": "urn:ngm:class:minibits",
-        "label": "Minibits"
-      },
-      {
         "id": "urn:ngm:class:nostr",
         "label": "Nostr"
-      },
-      {
-        "id": "urn:ngm:class:nutshell",
-        "label": "Nutshell"
       },
       {
         "id": "urn:ngm:class:ecash",

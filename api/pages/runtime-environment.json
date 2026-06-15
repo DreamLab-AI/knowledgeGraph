@@ -22,16 +22,8 @@
         "label": "Memory Management"
       },
       {
-        "id": "urn:ngm:class:garbage-collector",
-        "label": "Garbage Collector"
-      },
-      {
-        "id": "urn:ngm:class:just-in-time-compiler",
+        "id": "urn:ngm:class:compiler",
         "label": "Just-In-Time Compiler"
-      },
-      {
-        "id": "urn:ngm:class:standard-library",
-        "label": "Standard Library"
       }
     ],
     "requires": [
@@ -58,7 +50,7 @@
         "label": "Containerisation"
       },
       {
-        "id": "urn:ngm:class:serverless-computing",
+        "id": "urn:ngm:class:serverless-architecture",
         "label": "Serverless Computing"
       },
       {
@@ -77,19 +69,10 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:compile-time-environment",
-        "label": "Compile-Time Environment"
-      },
-      {
-        "id": "urn:ngm:class:bare-metal-execution",
-        "label": "Bare-Metal Execution"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning-inference",
+        "id": "urn:ngm:class:inference",
         "label": "Machine Learning Inference"
       },
       {

@@ -23,62 +23,113 @@ public:: true
   "definition": "The Enterprise Ethereum Alliance (EEA) is an industry consortium founded in February 2017 that develops open, blockchain-based specifications for enterprise deployments of Ethereum technology. It standardises the interfaces between private, consortium, and public Ethereum networks, enabling organisations to build interoperable enterprise applications that can bridge permissioned and permissionless environments. The EEA's Client Specification defines conformance requirements for enterprise Ethereum clients, covering private transaction management, permissioning, token standards, and off-chain compute. Membership spans over two hundred organisations including JP Morgan, Microsoft, Accenture, Intel, and ConsenSys, making it one of the largest blockchain standards bodies in the world.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:bc-governance-and-regulation", "label": "Governance and Regulation"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:bc-governance-and-regulation",
+    "label": "Governance and Regulation"
+  },
   "relations": {
-    "hasPart": [
-      {"@id": "urn:ngm:class:eea-client-specification", "label": "EEA Client Specification"},
-      {"@id": "urn:ngm:class:token-taxonomy-framework", "label": "Token Taxonomy Framework"},
-      {"@id": "urn:ngm:class:eea-crosschain-interoperability-specification", "label": "EEA Crosschain Interoperability Specification"},
-      {"@id": "urn:ngm:class:eea-mainnet-working-group", "label": "EEA Mainnet Working Group"}
-    ],
     "partOf": [
-      {"@id": "urn:ngm:class:ethereum-ecosystem", "label": "Ethereum Ecosystem"}
-    ],
-    "requires": [
-      {"@id": "urn:ngm:class:private-transaction-management", "label": "Private Transaction Management"},
-      {"@id": "urn:ngm:class:on-chain-permissioning", "label": "On-Chain Permissioning"}
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum Ecosystem"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"},
-      {"@id": "urn:ngm:class:enterprise-blockchain-architecture", "label": "Enterprise Blockchain Architecture"},
-      {"@id": "urn:ngm:class:regulated-defi", "label": "Regulated DeFi"},
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"}
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-blockchain-architecture",
+        "label": "Enterprise Blockchain Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"},
-      {"@id": "urn:ngm:class:enterprise-token-standards", "label": "Enterprise Token Standards"}
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-token-standards",
+        "label": "Enterprise Token Standards"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:byzantine-fault-tolerant-consensus", "label": "Byzantine Fault-Tolerant Consensus"}
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault-Tolerant Consensus"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:smart-contract-platform", "label": "Smart Contract Platform"},
-      {"@id": "urn:ngm:class:enterprise-smart-contracts", "label": "Enterprise Smart Contracts"}
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-smart-contracts",
+        "label": "Enterprise Smart Contracts"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:api-standard", "label": "API Standard"}
+      {
+        "@id": "urn:ngm:class:api-standard",
+        "label": "API Standard"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:hyperledger-fabric", "label": "Hyperledger Fabric"},
-      {"@id": "urn:ngm:class:r3-corda", "label": "R3 Corda"}
+      {
+        "@id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      },
+      {
+        "@id": "urn:ngm:class:r3-corda",
+        "label": "R3 Corda"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralized-finance", "label": "Decentralized Finance"},
-      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-standards-body", "label": "Blockchain Standards Body"},
-      {"@id": "urn:ngm:class:enterprise-blockchain", "label": "Enterprise Blockchain"},
-      {"@id": "urn:ngm:class:hyperledger-besu", "label": "Hyperledger Besu"}
+      {
+        "@id": "urn:ngm:class:enterprise-blockchain",
+        "label": "Enterprise Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:hyperledger-besu",
+        "label": "Hyperledger Besu"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:eea", "label": "EEA"}
+    {
+      "@id": "urn:ngm:class:eea",
+      "label": "EEA"
+    }
   ],
   "quality": 0.72,
   "provenance": {

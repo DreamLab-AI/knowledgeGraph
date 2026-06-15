@@ -218,10 +218,6 @@ public:: true
         "label": "Credential Verification"
       },
       {
-        "@id": "urn:ngm:class:jcs-canonicalisation",
-        "label": "JCS Canonicalisation"
-      },
-      {
         "@id": "urn:ngm:class:schnorr-proof",
         "label": "Schnorr Proof"
       }
@@ -244,7 +240,7 @@ public:: true
         "label": "SHA-256 Hashing"
       },
       {
-        "@id": "urn:ngm:class:w3-c-vc-2-0-standard",
+        "@id": "urn:ngm:class:w-3-c-verifiable-credentials-data-model-v-2-0",
         "label": "W3C VC 2.0 Standard"
       }
     ],

@@ -80,7 +80,7 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:neural-networks",
+        "id": "urn:ngm:class:neural-network",
         "label": "Neural Networks"
       }
     ],
@@ -101,7 +101,7 @@
         "label": "Knowledge Graphs"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai",
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       }
     ],
@@ -119,7 +119,7 @@
         "label": "Word Embeddings"
       },
       {
-        "id": "urn:ngm:class:recurrent-neural-networks",
+        "id": "urn:ngm:class:recurrent-neural-network",
         "label": "Recurrent Neural Networks"
       },
       {

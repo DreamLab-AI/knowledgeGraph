@@ -63,10 +63,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:new-institutional-economics",
-        "label": "New Institutional Economics"
-      },
-      {
         "@id": "urn:ngm:class:original-institutionalism",
         "label": "Original Institutionalism"
       },
@@ -89,10 +85,6 @@ public:: true
       {
         "@id": "urn:ngm:class:property-rights",
         "label": "Property Rights"
-      },
-      {
-        "@id": "urn:ngm:class:regulatory-policy",
-        "label": "Regulatory Policy"
       },
       {
         "@id": "urn:ngm:class:development-economics",
@@ -175,7 +167,7 @@ public:: true
         "label": "Decentralised Autonomous Organisation"
       },
       {
-        "@id": "urn:ngm:class:digital-platform-governance",
+        "@id": "urn:ngm:class:platform-governance",
         "label": "Digital Platform Governance"
       }
     ]

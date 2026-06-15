@@ -26,7 +26,7 @@
         "label": "Block Storage"
       },
       {
-        "id": "urn:ngm:class:cloud-file-system",
+        "id": "urn:ngm:class:file-system",
         "label": "Cloud File System"
       }
     ],
@@ -46,7 +46,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:cloud-native-application",
+        "id": "urn:ngm:class:cloud-native-applications",
         "label": "Cloud-Native Application"
       },
       {
@@ -68,10 +68,6 @@
       {
         "id": "urn:ngm:class:content-addressed-storage",
         "label": "Content-Addressed Storage"
-      },
-      {
-        "id": "urn:ngm:class:on-premises-storage",
-        "label": "On-Premises Storage"
       }
     ],
     "bridgesTo": [

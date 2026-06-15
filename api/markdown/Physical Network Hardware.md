@@ -60,14 +60,11 @@ public:: true
     }
   ],
   "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:low-latency-connectivity",
-        "label": "Low Latency Connectivity"
-      }
-    ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"}
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
     ]
   },
   "quality": 0.35,

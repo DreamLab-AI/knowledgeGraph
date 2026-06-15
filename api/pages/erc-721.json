@@ -49,7 +49,7 @@
         "label": "Tokenisation"
       },
       {
-        "id": "urn:ngm:class:play-to-earn",
+        "id": "urn:ngm:class:play-to-earn-p2-e",
         "label": "Play-to-Earn"
       }
     ],
@@ -105,7 +105,7 @@
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:ethereum-foundation",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-foundation",
         "label": "Ethereum Foundation"
       }
     ],
@@ -114,10 +114,6 @@
       {
         "id": "urn:ngm:class:nft",
         "label": "NFT"
-      },
-      {
-        "id": "urn:ngm:class:cryptopunks",
-        "label": "CryptoPunks"
       },
       {
         "id": "urn:ngm:class:decentralised-storage",

@@ -19,12 +19,8 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:aml-kyc",
+        "id": "urn:ngm:class:aml-kyc-compliance",
         "label": "AML/KYC"
-      },
-      {
-        "id": "urn:ngm:class:currency-exchange",
-        "label": "Currency Exchange"
       },
       {
         "id": "urn:ngm:class:correspondent-banking",
@@ -61,10 +57,6 @@
     ],
     "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:domestic-payments",
-        "label": "Domestic Payments"
-      },
       {
         "id": "urn:ngm:class:correspondent-banking",
         "label": "Correspondent Banking"

@@ -158,24 +158,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:cross-platform-testing",
-        "label": "Cross-Platform Testing"
-      },
-      {
-        "@id": "urn:ngm:class:format-validation",
-        "label": "Format Validation"
-      },
-      {
         "@id": "urn:ngm:class:integration-testing",
         "label": "Integration Testing"
       },
       {
-        "@id": "urn:ngm:class:interoperability-verification",
+        "@id": "urn:ngm:class:interoperability",
         "label": "Interoperability Verification"
-      },
-      {
-        "@id": "urn:ngm:class:protocol-compatibility-checks",
-        "label": "Protocol Compatibility Checks"
       },
       {
         "@id": "urn:ngm:class:standards-conformance-testing",
@@ -184,16 +172,8 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:conformance-criteria",
+        "@id": "urn:ngm:class:standards-conformance",
         "label": "Conformance Criteria"
-      },
-      {
-        "@id": "urn:ngm:class:reference-implementations",
-        "label": "Reference Implementations"
-      },
-      {
-        "@id": "urn:ngm:class:test-specifications",
-        "label": "Test Specifications"
       },
       {
         "@id": "urn:ngm:class:validation-tools",

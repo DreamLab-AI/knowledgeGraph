@@ -26,14 +26,6 @@
         "label": "System Architecture"
       },
       {
-        "id": "urn:ngm:class:verification-and-validation",
-        "label": "Verification and Validation"
-      },
-      {
-        "id": "urn:ngm:class:interface-management",
-        "label": "Interface Management"
-      },
-      {
         "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
       }
@@ -60,10 +52,6 @@
       {
         "id": "urn:ngm:class:technical-architecture-framework",
         "label": "Technical Architecture Framework"
-      },
-      {
-        "id": "urn:ngm:class:system-of-systems",
-        "label": "System of Systems"
       },
       {
         "id": "urn:ngm:class:digital-twin",
@@ -132,24 +120,12 @@
       {
         "id": "urn:ngm:class:open-standard",
         "label": "Open Standard"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec-ieee-15288",
-        "label": "ISO/IEC/IEEE 15288"
       }
     ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:engineering-methodology",
-        "label": "Engineering Methodology"
-      },
-      {
-        "id": "urn:ngm:class:systems-thinking",
-        "label": "Systems Thinking"
-      },
-      {
-        "id": "urn:ngm:class:complexity-theory",
+        "id": "urn:ngm:class:computational-complexity-theory",
         "label": "Complexity Theory"
       },
       {

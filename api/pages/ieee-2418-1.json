@@ -20,10 +20,6 @@
       {
         "id": "urn:ngm:class:reference-architecture",
         "label": "Reference Architecture"
-      },
-      {
-        "id": "urn:ngm:class:blockchain-iot-terminology",
-        "label": "Blockchain IoT Terminology"
       }
     ],
     "requires": [
@@ -42,11 +38,11 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:iot-data-provenance",
+        "id": "urn:ngm:class:data-provenance",
         "label": "IoT Data Provenance"
       },
       {
-        "id": "urn:ngm:class:device-identity-management",
+        "id": "urn:ngm:class:identity-management",
         "label": "Device Identity Management"
       },
       {
@@ -54,7 +50,7 @@
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:iot-interoperability",
+        "id": "urn:ngm:class:interoperability",
         "label": "IoT Interoperability"
       }
     ],
@@ -64,10 +60,6 @@
       {
         "id": "urn:ngm:class:iso-iec-30141",
         "label": "ISO/IEC 30141"
-      },
-      {
-        "id": "urn:ngm:class:w3c-web-of-things",
-        "label": "W3C Web of Things"
       }
     ],
     "bridgesTo": [
@@ -90,7 +82,7 @@
         "label": "Cryptographic Hash"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -116,14 +108,6 @@
     ],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:ieee-2418-2",
-        "label": "IEEE 2418.2"
-      },
-      {
-        "id": "urn:ngm:class:ieee-2418-3",
-        "label": "IEEE 2418.3"
-      },
       {
         "id": "urn:ngm:class:oneM2M",
         "label": "oneM2M"

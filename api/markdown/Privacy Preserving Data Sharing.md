@@ -93,29 +93,17 @@ alias:: Privacy-Preserving Data Sharing
       {
         "@id": "urn:ngm:class:cryptographic-protocols",
         "label": "Cryptographic Protocols"
-      },
-      {
-        "@id": "urn:ngm:class:trust-models",
-        "label": "Trust Models"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:collaborative-analytics",
-        "label": "Collaborative Analytics"
-      },
-      {
-        "@id": "urn:ngm:class:data-clean-rooms",
-        "label": "Data Clean Rooms"
-      },
-      {
-        "@id": "urn:ngm:class:cross-organisational-ai-training",
+        "@id": "urn:ngm:class:distributed-ai-training",
         "label": "Cross-Organisational AI Training"
       }
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "@id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proofs"
       },
       {
@@ -155,7 +143,7 @@ alias:: Privacy-Preserving Data Sharing
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:data-anonymisation",
+        "@id": "urn:ngm:class:anonymisation",
         "label": "Data Anonymisation"
       },
       {
@@ -165,12 +153,8 @@ alias:: Privacy-Preserving Data Sharing
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:federated-machine-learning",
+        "@id": "urn:ngm:class:federated-learning",
         "label": "Federated Machine Learning"
-      },
-      {
-        "@id": "urn:ngm:class:blockchain-data-sharing",
-        "label": "Blockchain Data Sharing"
       }
     ],
     "relatedTo": [

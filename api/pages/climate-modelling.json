@@ -16,32 +16,11 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:atmospheric-circulation-model",
-        "label": "Atmospheric Circulation Model"
-      },
-      {
-        "id": "urn:ngm:class:ocean-heat-transport-model",
-        "label": "Ocean Heat Transport Model"
-      },
-      {
-        "id": "urn:ngm:class:ensemble-simulation",
-        "label": "Ensemble Simulation"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:high-performance-computing",
         "label": "High-Performance Computing"
-      },
-      {
-        "id": "urn:ngm:class:numerical-weather-prediction",
-        "label": "Numerical Weather Prediction"
-      },
-      {
-        "id": "urn:ngm:class:remote-sensing-data",
-        "label": "Remote Sensing Data"
       }
     ],
     "enables": [
@@ -60,29 +39,16 @@
       {
         "id": "urn:ngm:class:climate-risk-assessment",
         "label": "Climate Risk Assessment"
-      },
-      {
-        "id": "urn:ngm:class:extreme-weather-prediction",
-        "label": "Extreme Weather Prediction"
       }
     ],
     "dependsOn": [
-      {
-        "id": "urn:ngm:class:observational-climate-data",
-        "label": "Observational Climate Data"
-      },
       {
         "id": "urn:ngm:class:parallel-computing",
         "label": "Parallel Computing"
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:weather-forecasting",
-        "label": "Weather Forecasting"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:digital-twin-of-society-dto-s",
@@ -107,28 +73,15 @@
         "label": "Machine Learning Discipline"
       },
       {
-        "id": "urn:ngm:class:neural-network-emulator",
+        "id": "urn:ngm:class:neural-network",
         "label": "Neural Network Emulator"
       },
       {
         "id": "urn:ngm:class:gpu-acceleration",
         "label": "GPU Acceleration"
-      },
-      {
-        "id": "urn:ngm:class:data-assimilation",
-        "label": "Data Assimilation"
       }
     ],
-    "supports": [
-      {
-        "id": "urn:ngm:class:ipcc-assessment-report",
-        "label": "IPCC Assessment Report"
-      },
-      {
-        "id": "urn:ngm:class:climate-policy-decision-making",
-        "label": "Climate Policy Decision Making"
-      }
-    ],
+    "supports": [],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -139,10 +92,6 @@
       {
         "id": "urn:ngm:class:iso-14064",
         "label": "ISO 14064"
-      },
-      {
-        "id": "urn:ngm:class:physical-risk-assessment",
-        "label": "Physical Risk Assessment"
       }
     ]
   },

@@ -2780,39 +2780,15 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:analytics-dashboard",
-        "label": "Analytics Dashboard"
-      },
-      {
-        "@id": "urn:ngm:class:compensation-system",
-        "label": "Compensation System"
-      },
-      {
-        "@id": "urn:ngm:class:deliberation-forum",
-        "label": "Deliberation Forum"
-      },
-      {
-        "@id": "urn:ngm:class:execution-oracle",
+        "@id": "urn:ngm:class:oracle",
         "label": "Execution Oracle"
-      },
-      {
-        "@id": "urn:ngm:class:funding-platform",
-        "label": "Funding Platform"
-      },
-      {
-        "@id": "urn:ngm:class:governance-platform",
-        "label": "Governance Platform"
-      },
-      {
-        "@id": "urn:ngm:class:identity-primitive",
-        "label": "Identity Primitive"
       },
       {
         "@id": "urn:ngm:class:legal-wrapper",
         "label": "Legal Wrapper"
       },
       {
-        "@id": "urn:ngm:class:treasury-management-system",
+        "@id": "urn:ngm:class:treasury-management",
         "label": "Treasury Management System"
       },
       {
@@ -2864,14 +2840,6 @@ public:: true
         "label": "Optimistic Execution"
       },
       {
-        "@id": "urn:ngm:class:permissionless-coordination",
-        "label": "Permissionless Coordination"
-      },
-      {
-        "@id": "urn:ngm:class:programmable-treasury",
-        "label": "Programmable Treasury"
-      },
-      {
         "@id": "urn:ngm:class:quadratic-funding",
         "label": "Quadratic Funding"
       },
@@ -2894,7 +2862,7 @@ public:: true
         "label": "Futarchy"
       },
       {
-        "@id": "urn:ngm:class:governor-bravo",
+        "@id": "urn:ngm:class:compound-governor-bravo",
         "label": "Governor Bravo"
       },
       {
@@ -2906,7 +2874,7 @@ public:: true
         "label": "Reality ETH Oracle"
       },
       {
-        "@id": "urn:ngm:class:safe-multi-sig",
+        "@id": "urn:ngm:class:gnosis-safe",
         "label": "Safe Multi-Sig"
       },
       {
@@ -2928,7 +2896,7 @@ public:: true
         "label": "Delegated Voting"
       },
       {
-        "@id": "urn:ngm:class:multi-signature-approval",
+        "@id": "urn:ngm:class:multi-signature",
         "label": "Multi-Signature Approval"
       },
       {
@@ -2962,16 +2930,8 @@ public:: true
         "label": "Mechanism Design"
       },
       {
-        "@id": "urn:ngm:class:network-state",
-        "label": "Network State"
-      },
-      {
         "@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
         "label": "Public Goods Funding"
-      },
-      {
-        "@id": "urn:ngm:class:web3-identity",
-        "label": "Web3 Identity"
       },
       {
         "@id": "urn:ngm:class:tokenomics",
@@ -2980,7 +2940,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:contributor-compensation",
+        "@id": "urn:ngm:class:creator-compensation",
         "label": "Contributor Compensation"
       },
       {
@@ -2988,16 +2948,8 @@ public:: true
         "label": "Cross-Chain Governance"
       },
       {
-        "@id": "urn:ngm:class:grant-distribution",
-        "label": "Grant Distribution"
-      },
-      {
         "@id": "urn:ngm:class:protocol-governance",
         "label": "Protocol Governance"
-      },
-      {
-        "@id": "urn:ngm:class:sub-dao-coordination",
-        "label": "Sub-DAO Coordination"
       },
       {
         "@id": "urn:ngm:class:treasury-diversification",
@@ -3006,28 +2958,12 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:eip-4824",
-        "label": "EIP-4824"
-      },
-      {
         "@id": "urn:ngm:class:eip-5805",
         "label": "EIP-5805"
       },
       {
-        "@id": "urn:ngm:class:eip-6372",
-        "label": "EIP-6372"
-      },
-      {
         "@id": "urn:ngm:class:erc-20-votes",
         "label": "ERC-20 Votes"
-      },
-      {
-        "@id": "urn:ngm:class:erc-721-votes",
-        "label": "ERC-721Votes"
-      },
-      {
-        "@id": "urn:ngm:class:erc-7390",
-        "label": "ERC-7390"
       },
       {
         "@id": "urn:ngm:class:open-zeppelin-contracts",

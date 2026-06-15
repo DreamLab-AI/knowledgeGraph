@@ -20,10 +20,6 @@
       {
         "id": "urn:ngm:class:ecdsa",
         "label": "ECDSA"
-      },
-      {
-        "id": "urn:ngm:class:ecdh",
-        "label": "ECDH"
       }
     ],
     "requires": [
@@ -80,10 +76,6 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:rsa-cryptography",
-        "label": "RSA Cryptography"
-      },
-      {
         "id": "urn:ngm:class:post-quantum-cryptography",
         "label": "Post-Quantum Cryptography"
       }
@@ -122,7 +114,7 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       }
     ],

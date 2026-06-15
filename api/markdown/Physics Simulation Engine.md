@@ -83,7 +83,7 @@ public:: true
         "label": "Constraint Solver"
       },
       {
-        "@id": "urn:ngm:class:soft-body-simulation",
+        "@id": "urn:ngm:class:soft-body-dynamics",
         "label": "Soft Body Simulation"
       },
       {
@@ -105,20 +105,12 @@ public:: true
       {
         "@id": "urn:ngm:class:numerical-integration",
         "label": "Numerical Integration"
-      },
-      {
-        "@id": "urn:ngm:class:3d-engine",
-        "label": "3D Engine"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:simulation-environment",
         "label": "Simulation Environment"
-      },
-      {
-        "@id": "urn:ngm:class:robotic-simulation",
-        "label": "Robotic Simulation"
       },
       {
         "@id": "urn:ngm:class:digital-twin",
@@ -157,12 +149,6 @@ public:: true
       {
         "@id": "urn:ngm:class:autonomous-agent",
         "label": "Autonomous Agent"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:analytical-mechanics",
-        "label": "Analytical Mechanics"
       }
     ],
     "bridgesTo": [

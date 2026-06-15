@@ -39,14 +39,6 @@
       {
         "id": "urn:ngm:class:hyperbitcoinization",
         "label": "Hyperbitcoinization"
-      },
-      {
-        "id": "urn:ngm:class:long-term-savings",
-        "label": "Long-Term Savings"
-      },
-      {
-        "id": "urn:ngm:class:price-signal-integrity",
-        "label": "Price Signal Integrity"
       }
     ],
     "dependsOn": [
@@ -97,7 +89,7 @@
         "label": "Financial Sovereignty"
       },
       {
-        "id": "urn:ngm:class:cryptographic-proof-of-work",
+        "id": "urn:ngm:class:proof-of-work",
         "label": "Cryptographic Proof of Work"
       }
     ],
@@ -133,10 +125,6 @@
       {
         "id": "urn:ngm:class:commodity-money",
         "label": "Commodity Money"
-      },
-      {
-        "id": "urn:ngm:class:deflationary-economics",
-        "label": "Deflationary Economics"
       }
     ]
   },

@@ -18,21 +18,13 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:relay-node",
+        "id": "urn:ngm:class:node",
         "label": "Relay Node"
-      },
-      {
-        "id": "urn:ngm:class:circuit",
-        "label": "Circuit"
-      },
-      {
-        "id": "urn:ngm:class:exit-node",
-        "label": "Exit Node"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -52,10 +44,6 @@
       {
         "id": "urn:ngm:class:anonymous-communication",
         "label": "Anonymous Communication"
-      },
-      {
-        "id": "urn:ngm:class:hidden-services",
-        "label": "Hidden Services"
       }
     ],
     "dependsOn": [
@@ -70,7 +58,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:tor-network",
+        "id": "urn:ngm:class:tor",
         "label": "Tor Network"
       },
       {
@@ -82,10 +70,6 @@
       {
         "id": "urn:ngm:class:vpn",
         "label": "VPN"
-      },
-      {
-        "id": "urn:ngm:class:proxy-server",
-        "label": "Proxy Server"
       }
     ],
     "bridgesTo": [
@@ -118,7 +102,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:metadata-privacy",
+        "id": "urn:ngm:class:data-privacy",
         "label": "Metadata Privacy"
       },
       {
@@ -132,14 +116,6 @@
       {
         "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
-      },
-      {
-        "id": "urn:ngm:class:mix-network",
-        "label": "Mix Network"
-      },
-      {
-        "id": "urn:ngm:class:traffic-correlation-attack",
-        "label": "Traffic Correlation Attack"
       }
     ]
   },

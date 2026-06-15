@@ -150,15 +150,11 @@ public:: true
       {
         "@id": "urn:ngm:class:acceleration-planning",
         "label": "Acceleration Planning"
-      },
-      {
-        "@id": "urn:ngm:class:replanning",
-        "label": "Replanning"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:robot-control-architecture",
+        "@id": "urn:ngm:class:robot-control",
         "label": "Robot Control Architecture"
       }
     ],
@@ -178,7 +174,7 @@ public:: true
         "label": "IndustrialAutomation"
       },
       {
-        "@id": "urn:ngm:class:autonomous-vehicles",
+        "@id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
       }
     ],

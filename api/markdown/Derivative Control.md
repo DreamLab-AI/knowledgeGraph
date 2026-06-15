@@ -152,20 +152,6 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:damping-action",
-        "label": "Damping Action"
-      },
-      {
-        "@id": "urn:ngm:class:derivative-gain",
-        "label": "Derivative Gain"
-      },
-      {
-        "@id": "urn:ngm:class:error-rate-measurement",
-        "label": "Error Rate Measurement"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:error-signal",
@@ -174,32 +160,12 @@ public:: true
       {
         "@id": "urn:ngm:class:gain-tuning",
         "label": "Gain Tuning"
-      },
-      {
-        "@id": "urn:ngm:class:low-pass-filtering",
-        "label": "Low-Pass Filtering"
-      },
-      {
-        "@id": "urn:ngm:class:time-derivative",
-        "label": "Time Derivative"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:faster-convergence",
         "label": "Faster Convergence"
-      },
-      {
-        "@id": "urn:ngm:class:oscillation-damping",
-        "label": "Oscillation Damping"
-      },
-      {
-        "@id": "urn:ngm:class:reduced-overshoot",
-        "label": "Reduced Overshoot"
-      },
-      {
-        "@id": "urn:ngm:class:stability-improvement",
-        "label": "Stability Improvement"
       }
     ]
   },

@@ -16,48 +16,18 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:custom-node-registry",
-        "label": "Custom Node Registry"
-      },
-      {
-        "id": "urn:ngm:class:missing-node-detection",
-        "label": "Missing Node Detection"
-      },
-      {
-        "id": "urn:ngm:class:model-downloader",
-        "label": "Model Downloader"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:comfy-ui",
         "label": "ComfyUI"
       },
       {
-        "id": "urn:ngm:class:python-package-management",
-        "label": "Python Package Management"
-      },
-      {
         "id": "urn:ngm:class:git",
         "label": "Git"
       }
     ],
-    "enables": [
-      {
-        "id": "urn:ngm:class:workflow-portability",
-        "label": "Workflow Portability"
-      },
-      {
-        "id": "urn:ngm:class:reproducible-ml-pipelines",
-        "label": "Reproducible ML Pipelines"
-      },
-      {
-        "id": "urn:ngm:class:community-extension-ecosystem",
-        "label": "Community Extension Ecosystem"
-      }
-    ],
+    "enables": [],
     "dependsOn": [
       {
         "id": "urn:ngm:class:diffusion-models",
@@ -75,27 +45,19 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:automatic1111-stable-diffusion-webui",
+        "id": "urn:ngm:class:automatic1111",
         "label": "AUTOMATIC1111 Stable Diffusion WebUI"
-      },
-      {
-        "id": "urn:ngm:class:pip",
-        "label": "pip"
       }
     ],
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:node-based-programming",
+        "id": "urn:ngm:class:node-graph-visual-programming-interface",
         "label": "Node-Based Programming"
       },
       {
         "id": "urn:ngm:class:workflow-automation",
         "label": "Workflow Automation"
-      },
-      {
-        "id": "urn:ngm:class:civit-ai",
-        "label": "CivitAI"
       }
     ],
     "supports": [
@@ -123,7 +85,7 @@
         "label": "ComfyUI"
       },
       {
-        "id": "urn:ngm:class:generative-ai-tooling",
+        "id": "urn:ngm:class:open-generative-ai-tools",
         "label": "Generative AI Tooling"
       }
     ],
@@ -133,7 +95,7 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       },
       {

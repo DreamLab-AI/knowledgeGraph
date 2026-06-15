@@ -89,10 +89,6 @@ public:: true
       {
         "@id": "urn:ngm:class:decentralised-consensus",
         "label": "Decentralised Consensus"
-      },
-      {
-        "@id": "urn:ngm:class:peer-to-peer-electronic-cash",
-        "label": "Peer-to-Peer Electronic Cash"
       }
     ],
     "implements": [
@@ -159,17 +155,9 @@ public:: true
       {
         "@id": "urn:ngm:class:game-theory",
         "label": "Game Theory"
-      },
-      {
-        "@id": "urn:ngm:class:internet-privacy",
-        "label": "Internet Privacy"
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:bitcoin-white-paper",
-        "label": "Bitcoin White Paper"
-      },
       {
         "@id": "urn:ngm:class:genesis-block",
         "label": "Genesis Block"
@@ -183,7 +171,7 @@ public:: true
         "label": "Cryptocurrency"
       },
       {
-        "@id": "urn:ngm:class:double-spend-problem",
+        "@id": "urn:ngm:class:double-spending",
         "label": "Double-Spend Problem"
       },
       {

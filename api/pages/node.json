@@ -100,10 +100,6 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:centralised-server",
-        "label": "Centralised Server"
-      },
-      {
         "id": "urn:ngm:class:mining-pool",
         "label": "Mining Pool"
       }

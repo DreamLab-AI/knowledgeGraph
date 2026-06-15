@@ -374,16 +374,8 @@ public:: true
         "label": "Governance System"
       },
       {
-        "@id": "urn:ngm:class:state-storage",
-        "label": "State Storage"
-      },
-      {
         "@id": "urn:ngm:class:state-transition-function",
         "label": "State Transition Function"
-      },
-      {
-        "@id": "urn:ngm:class:transaction-format",
-        "label": "Transaction Format"
       },
       {
         "@id": "urn:ngm:class:transaction-validation",
@@ -436,14 +428,6 @@ public:: true
         "label": "Cryptographic Primitive"
       },
       {
-        "@id": "urn:ngm:class:economic-incentives",
-        "label": "Economic Incentives"
-      },
-      {
-        "@id": "urn:ngm:class:state-database",
-        "label": "State Database"
-      },
-      {
         "@id": "urn:ngm:class:consensus-algorithm",
         "label": "Consensus Algorithm"
       },
@@ -464,14 +448,6 @@ public:: true
       {
         "@id": "urn:ngm:class:cross-chain-interoperability",
         "label": "Cross-Chain Interoperability"
-      },
-      {
-        "@id": "urn:ngm:class:de-fi-applications",
-        "label": "DeFi Applications"
-      },
-      {
-        "@id": "urn:ngm:class:decentralized-consensus",
-        "label": "Decentralized Consensus"
       },
       {
         "@id": "urn:ngm:class:double-spend-prevention",
@@ -516,15 +492,11 @@ public:: true
         "label": "BFT Consensus"
       },
       {
-        "@id": "urn:ngm:class:fee-mechanism",
-        "label": "Fee Mechanism"
-      },
-      {
         "@id": "urn:ngm:class:governance-voting",
         "label": "Governance Voting"
       },
       {
-        "@id": "urn:ngm:class:merkle-proof-verification",
+        "@id": "urn:ngm:class:merkle-proof",
         "label": "Merkle Proof Verification"
       },
       {

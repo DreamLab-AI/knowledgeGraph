@@ -25,56 +25,130 @@ alias:: 5G Networks
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:telecommunications-infrastructure", "label": "Telecommunications Infrastructure"}
+    {
+      "@id": "urn:ngm:class:telecommunications-infrastructure",
+      "label": "Telecommunications Infrastructure"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:5-g-nr", "label": "5G New Radio"},
-      {"@id": "urn:ngm:class:5-g-core", "label": "5G Core"},
-      {"@id": "urn:ngm:class:multi-access-edge-computing", "label": "MultiAccessEdgeComputing"},
-      {"@id": "urn:ngm:class:network-slicing", "label": "Network Slicing"}
+      {
+        "@id": "urn:ngm:class:5-g",
+        "label": "5G New Radio"
+      },
+      {
+        "@id": "urn:ngm:class:multi-access-edge-computing",
+        "label": "MultiAccessEdgeComputing"
+      },
+      {
+        "@id": "urn:ngm:class:network-slicing",
+        "label": "Network Slicing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:5-g-connectivity", "label": "5G Connectivity"},
-      {"@id": "urn:ngm:class:io-t-infrastructure", "label": "IoT Infrastructure"},
-      {"@id": "urn:ngm:class:private-5-g", "label": "Private 5G"},
-      {"@id": "urn:ngm:class:autonomous-vehicles", "label": "Autonomous Vehicles"},
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
+      {
+        "@id": "urn:ngm:class:5-g-connectivity",
+        "label": "5G Connectivity"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-infrastructure",
+        "label": "IoT Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:network-function-virtualization", "label": "Network Function Virtualization"},
-      {"@id": "urn:ngm:class:software-defined-networking", "label": "Software-Defined Networking"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:massive-mimo", "label": "Massive MIMO"},
-      {"@id": "urn:ngm:class:millimeter-wave", "label": "Millimetre Wave"}
+      {
+        "@id": "urn:ngm:class:network-function-virtualization",
+        "label": "Network Function Virtualization"
+      },
+      {
+        "@id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:massive-mimo",
+        "label": "Massive MIMO"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:spectrum-allocation", "label": "Spectrum Allocation"},
-      {"@id": "urn:ngm:class:cloud-native-architecture", "label": "Cloud-Native Architecture"},
-      {"@id": "urn:ngm:class:transport-network", "label": "Transport Network"}
+      {
+        "@id": "urn:ngm:class:spectrum-allocation",
+        "label": "Spectrum Allocation"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-native-architecture",
+        "label": "Cloud-Native Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:transport-network",
+        "label": "Transport Network"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:3-gpp", "label": "3GPP"},
-      {"@id": "urn:ngm:class:o-ran-alliance", "label": "O-RAN Alliance"},
-      {"@id": "urn:ngm:class:etsi", "label": "ETSI"}
+      {
+        "@id": "urn:ngm:class:3-gpp",
+        "label": "3GPP"
+      },
+      {
+        "@id": "urn:ngm:class:o-ran-alliance",
+        "label": "O-RAN Alliance"
+      },
+      {
+        "@id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:4-g-lte", "label": "4G LTE"},
-      {"@id": "urn:ngm:class:wi-fi", "label": "Wi-Fi"}
+      {
+        "@id": "urn:ngm:class:wi-fi",
+        "label": "Wi-Fi"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:6-g-network-slice", "label": "6G Network Slice"},
-      {"@id": "urn:ngm:class:artificial-intelligence-operations", "label": "AI-Driven Network Operations"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:6-g-network-slice",
+        "label": "6G Network Slice"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence-operations",
+        "label": "AI-Driven Network Operations"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
-      {"@id": "urn:ngm:class:open-ran", "label": "Open RAN"},
-      {"@id": "urn:ngm:class:mobile-edge-computing", "label": "Mobile Edge Computing"}
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:open-ran",
+        "label": "Open RAN"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-edge-computing",
+        "label": "Mobile Edge Computing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:fifth-generation-network", "label": "Fifth-Generation Network"}
+    {
+      "@id": "urn:ngm:class:fifth-generation-network",
+      "label": "Fifth-Generation Network"
+    }
   ],
   "quality": 0.74,
   "provenance": {

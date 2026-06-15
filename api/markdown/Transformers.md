@@ -552,10 +552,6 @@ public:: true
         "label": "RMSNorm"
       },
       {
-        "@id": "urn:ngm:class:ro-pe",
-        "label": "RoPE"
-      },
-      {
         "@id": "urn:ngm:class:swi-glu",
         "label": "SwiGLU"
       },
@@ -591,14 +587,6 @@ public:: true
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:alpha-fold",
-        "label": "AlphaFold"
-      },
-      {
-        "@id": "urn:ngm:class:vi-t",
-        "label": "ViT"
-      },
       {
         "@id": "urn:ngm:class:whisper",
         "label": "Whisper"
@@ -659,10 +647,6 @@ public:: true
       }
     ],
     "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:hugging-face-transformers",
-        "label": "Hugging Face Transformers"
-      },
       {
         "@id": "urn:ngm:class:jax",
         "label": "JAX"

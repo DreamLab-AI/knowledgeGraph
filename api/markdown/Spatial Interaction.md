@@ -68,7 +68,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:immersive-user-experience",
+        "@id": "urn:ngm:class:immersive-experience",
         "label": "Immersive User Experience"
       }
     ]

@@ -73,54 +73,135 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:lo-ra-fine-tuning", "label": "LoRA Fine-Tuning"},
-      {"@id": "urn:ngm:class:adapter-modules", "label": "Adapter Modules"},
-      {"@id": "urn:ngm:class:prompt-tuning", "label": "Prompt Tuning"},
-      {"@id": "urn:ngm:class:prefix-tuning", "label": "Prefix Tuning"},
-      {"@id": "urn:ngm:class:qlo-ra", "label": "QLoRA"},
-      {"@id": "urn:ngm:class:ada-lo-ra", "label": "AdaLoRA"}
+      {
+        "@id": "urn:ngm:class:lo-ra-fine-tuning",
+        "label": "LoRA Fine-Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:adapter-modules",
+        "label": "Adapter Modules"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-tuning",
+        "label": "Prompt Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:prefix-tuning",
+        "label": "Prefix Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:qlo-ra",
+        "label": "QLoRA"
+      },
+      {
+        "@id": "urn:ngm:class:lo-ra-do-ra-etc",
+        "label": "AdaLoRA"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:model-adaptation", "label": "Model Adaptation"}
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-adaptation",
+        "label": "Model Adaptation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:pre-trained-model", "label": "Pre-Trained Model"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+      {
+        "@id": "urn:ngm:class:pre-trained-model",
+        "label": "Pre-Trained Model"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:multi-task-learning", "label": "Multi Task Learning"},
-      {"@id": "urn:ngm:class:continual-learning", "label": "Continual Learning"},
-      {"@id": "urn:ngm:class:edge-deployment", "label": "Edge Deployment"}
+      {
+        "@id": "urn:ngm:class:multi-task-learning",
+        "label": "Multi Task Learning"
+      },
+      {
+        "@id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      },
+      {
+        "@id": "urn:ngm:class:edge-deployment",
+        "label": "Edge Deployment"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"}
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:low-rank-decomposition", "label": "Low-Rank Decomposition"},
-      {"@id": "urn:ngm:class:model-quantisation", "label": "Model Quantisation"}
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:low-rank-decomposition",
+        "label": "Low-Rank Decomposition"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-quantisation",
+        "label": "Model Quantisation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:instruction-tuning", "label": "Instruction Tuning"},
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:full-fine-tuning", "label": "Full Fine Tuning"},
-      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"}
+      {
+        "@id": "urn:ngm:class:full-fine-tuning",
+        "label": "Full Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:edge-ai", "label": "Edge AI"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-compression", "label": "Model Compression"}
+      {
+        "@id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:peft", "label": "PEFT"}
+    {
+      "@id": "urn:ngm:class:peft",
+      "label": "PEFT"
+    }
   ],
   "quality": 0.72,
   "provenance": {

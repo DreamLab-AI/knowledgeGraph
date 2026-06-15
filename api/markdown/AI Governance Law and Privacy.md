@@ -69,65 +69,163 @@ elevatedFrom:: [[Politics, Law, Privacy]]
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:digital-rights", "label": "Digital Rights"},
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"},
-      {"@id": "urn:ngm:class:biometric-surveillance-regulation", "label": "Biometric Surveillance Regulation"},
-      {"@id": "urn:ngm:class:ai-liability-frameworks", "label": "AI Liability Frameworks"}
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:ai-liability",
+        "label": "AI Liability Frameworks"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:digital-governance", "label": "Digital Governance"}
+      {
+        "@id": "urn:ngm:class:digital-governance",
+        "label": "Digital Governance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
-      {"@id": "urn:ngm:class:regulatory-impact-assessment", "label": "Regulatory Impact Assessment"},
-      {"@id": "urn:ngm:class:fundamental-rights-impact-assessment", "label": "Fundamental Rights Impact Assessment"}
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-impact-assessment",
+        "label": "Regulatory Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:fundamental-rights-impact-assessment",
+        "label": "Fundamental Rights Impact Assessment"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"},
-      {"@id": "urn:ngm:class:access-to-justice", "label": "Access to Justice"},
-      {"@id": "urn:ngm:class:democratic-oversight-of-ai", "label": "Democratic Oversight of AI"}
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "@id": "urn:ngm:class:access-to-justice",
+        "label": "Access to Justice"
+      },
+      {
+        "@id": "urn:ngm:class:democratic-governance",
+        "label": "Democratic Oversight of AI"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:data-sovereignty", "label": "Data Sovereignty"},
-      {"@id": "urn:ngm:class:rule-of-law", "label": "Rule of Law"}
+      {
+        "@id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:rule-of-law",
+        "label": "Rule of Law"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
-      {"@id": "urn:ngm:class:general-data-protection-regulation", "label": "General Data Protection Regulation"}
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection-regulation",
+        "label": "General Data Protection Regulation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"},
-      {"@id": "urn:ngm:class:risk-classification", "label": "Risk Classification"}
+      {
+        "@id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:risk-classification",
+        "label": "Risk Classification"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"},
-      {"@id": "urn:ngm:class:civil-liberties", "label": "Civil Liberties"}
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:civil-liberties",
+        "label": "Civil Liberties"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO IEC 42001"},
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"}
+      {
+        "@id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:digital-society-surveillance", "label": "Digital Society Surveillance"},
-      {"@id": "urn:ngm:class:surveillance-capitalism", "label": "Surveillance Capitalism"}
+      {
+        "@id": "urn:ngm:class:digital-society-surveillance",
+        "label": "Digital Society Surveillance"
+      },
+      {
+        "@id": "urn:ngm:class:surveillance-capitalism",
+        "label": "Surveillance Capitalism"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:trust-and-safety", "label": "Trust and Safety"},
-      {"@id": "urn:ngm:class:education-and-ai", "label": "Education and AI"},
-      {"@id": "urn:ngm:class:supply-chain-transparency", "label": "Supply Chain Transparency"}
+      {
+        "@id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      },
+      {
+        "@id": "urn:ngm:class:education-and-ai",
+        "label": "Education and AI"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:intellectual-property-rights-framework", "label": "Intellectual Property Rights Framework"},
-      {"@id": "urn:ngm:class:open-source-ai", "label": "Open-Source AI"},
-      {"@id": "urn:ngm:class:data-brokerage", "label": "Data Brokerage"},
-      {"@id": "urn:ngm:class:facial-recognition-technology", "label": "Facial Recognition Technology"}
+      {
+        "@id": "urn:ngm:class:intellectual-property-rights-framework",
+        "label": "Intellectual Property Rights Framework"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      },
+      {
+        "@id": "urn:ngm:class:data-brokerage",
+        "label": "Data Brokerage"
+      },
+      {
+        "@id": "urn:ngm:class:facial-recognition",
+        "label": "Facial Recognition Technology"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:politics-law-privacy", "label": "Politics, Law, Privacy"},
-    {"@id": "urn:ngm:class:ai-policy-and-regulation", "label": "AI Policy and Regulation"}
+    {
+      "@id": "urn:ngm:class:politics-law-privacy",
+      "label": "Politics, Law, Privacy"
+    },
+    {
+      "@id": "urn:ngm:class:ai-policy-and-regulation",
+      "label": "AI Policy and Regulation"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

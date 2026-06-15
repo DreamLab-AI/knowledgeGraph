@@ -23,50 +23,117 @@ public:: true
   "definition": "Decentralised coordination refers to mechanisms by which multiple autonomous agents—human or machine—achieve collective outcomes without a central authority directing behaviour, relying instead on shared protocols, incentive structures, consensus rules, or emergent social norms. In blockchain contexts it manifests as DAO governance, token-based voting, and smart-contract-enforced agreements that replace managerial hierarchy with algorithmic rule.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": {"@id": "urn:ngm:class:autonomous-governance", "label": "Autonomous Governance"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:autonomous-governance",
+    "label": "Autonomous Governance"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:token-weighted-voting", "label": "Token-Weighted Voting"},
-      {"@id": "urn:ngm:class:multi-sig-treasury", "label": "Multi-Sig Treasury"},
-      {"@id": "urn:ngm:class:conviction-voting", "label": "Conviction Voting"}
+      {
+        "@id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      },
+      {
+        "@id": "urn:ngm:class:conviction-voting",
+        "label": "Conviction Voting"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
-      {"@id": "urn:ngm:class:permissionless-participation", "label": "Permissionless Participation"},
-      {"@id": "urn:ngm:class:on-chain-treasury-management", "label": "On-Chain Treasury Management"}
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:permissionless-participation",
+        "label": "Permissionless Participation"
+      },
+      {
+        "@id": "urn:ngm:class:treasury-management",
+        "label": "On-Chain Treasury Management"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:dao", "label": "DAO"},
-      {"@id": "urn:ngm:class:asynchronous-coordination", "label": "Asynchronous Coordination"},
-      {"@id": "urn:ngm:class:quadratic-voting", "label": "Quadratic Voting"},
-      {"@id": "urn:ngm:class:incentive-mechanism", "label": "Incentive Mechanism"}
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-coordination",
+        "label": "Asynchronous Coordination"
+      },
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "@id": "urn:ngm:class:incentive-mechanism",
+        "label": "Incentive Mechanism"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"},
-      {"@id": "urn:ngm:class:ostrom-design-principles", "label": "Ostrom Design Principles"}
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:centralised-governance", "label": "Centralised Governance"},
-      {"@id": "urn:ngm:class:hierarchical-organisation", "label": "Hierarchical Organisation"}
+      {
+        "@id": "urn:ngm:class:centralised-governance",
+        "label": "Centralised Governance"
+      },
+      {
+        "@id": "urn:ngm:class:hierarchical-organisation",
+        "label": "Hierarchical Organisation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-agent-coordination", "label": "AI Agent Coordination"},
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"}
+      {
+        "@id": "urn:ngm:class:ai-agent-coordination",
+        "label": "AI Agent Coordination"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:algorithmic-governance", "label": "Algorithmic Governance"},
-      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"},
-      {"@id": "urn:ngm:class:commons-governance", "label": "Commons Governance"}
+      {
+        "@id": "urn:ngm:class:algorithmic-governance",
+        "label": "Algorithmic Governance"
+      },
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "@id": "urn:ngm:class:commons-governance",
+        "label": "Commons Governance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:distributed-governance", "label": "Distributed Governance"},
-    {"@id": "urn:ngm:class:peer-to-peer-coordination", "label": "Peer-to-Peer Coordination"}
+    {
+      "@id": "urn:ngm:class:distributed-governance",
+      "label": "Distributed Governance"
+    },
+    {
+      "@id": "urn:ngm:class:peer-to-peer-coordination",
+      "label": "Peer-to-Peer Coordination"
+    }
   ],
   "quality": 0.72,
   "provenance": {

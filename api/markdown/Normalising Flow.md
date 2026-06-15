@@ -83,10 +83,6 @@ public:: true
         "label": "Autoregressive Model"
       },
       {
-        "@id": "urn:ngm:class:coupling-layer",
-        "label": "Coupling Layer"
-      },
-      {
         "@id": "urn:ngm:class:jacobian-determinant",
         "label": "Jacobian Determinant"
       },

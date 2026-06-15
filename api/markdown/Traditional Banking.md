@@ -76,14 +76,6 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:retail-banking",
-        "label": "Retail Banking"
-      },
-      {
-        "@id": "urn:ngm:class:commercial-banking",
-        "label": "Commercial Banking"
-      },
-      {
         "@id": "urn:ngm:class:investment-banking",
         "label": "Investment Banking"
       },
@@ -100,10 +92,6 @@ public:: true
       {
         "@id": "urn:ngm:class:interbank-settlement",
         "label": "Interbank Settlement"
-      },
-      {
-        "@id": "urn:ngm:class:credit-scoring",
-        "label": "Credit Scoring"
       },
       {
         "@id": "urn:ngm:class:know-your-customer",

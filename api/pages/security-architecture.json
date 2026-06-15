@@ -50,10 +50,6 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:secure-systems",
-        "label": "Secure Systems"
-      },
-      {
         "id": "urn:ngm:class:data-protection",
         "label": "Data Protection"
       },
@@ -68,7 +64,7 @@
         "label": "Cryptography"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -82,12 +78,7 @@
         "label": "Defence in Depth"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:security-by-obscurity",
-        "label": "Security by Obscurity"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:system-architecture",

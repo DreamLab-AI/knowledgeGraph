@@ -61,53 +61,129 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:synchronous-communication", "label": "Synchronous Communication"},
-      {"@id": "urn:ngm:class:asynchronous-coordination", "label": "Asynchronous Coordination"},
-      {"@id": "urn:ngm:class:shared-workspace", "label": "Shared Workspace"}
+      {
+        "@id": "urn:ngm:class:synchronous-communication",
+        "label": "Synchronous Communication"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-coordination",
+        "label": "Asynchronous Coordination"
+      },
+      {
+        "@id": "urn:ngm:class:shared-workspace",
+        "label": "Shared Workspace"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:trust", "label": "Trust"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"}
+      {
+        "@id": "urn:ngm:class:trust",
+        "label": "Trust"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
-      {"@id": "urn:ngm:class:collective-intelligence", "label": "Collective Intelligence"},
-      {"@id": "urn:ngm:class:knowledge-sharing", "label": "Knowledge Sharing"},
-      {"@id": "urn:ngm:class:co-creation", "label": "Co-creation"}
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:co-creation",
+        "label": "Co-creation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"},
-      {"@id": "urn:ngm:class:groupware", "label": "Groupware"},
-      {"@id": "urn:ngm:class:conflict-free-replicated-data-type", "label": "Conflict-Free Replicated Data Type"},
-      {"@id": "urn:ngm:class:operational-transformation", "label": "Operational Transformation"}
+      {
+        "@id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "@id": "urn:ngm:class:groupware",
+        "label": "Groupware"
+      },
+      {
+        "@id": "urn:ngm:class:conflict-free-replicated-data-type",
+        "label": "Conflict-Free Replicated Data Type"
+      },
+      {
+        "@id": "urn:ngm:class:operational-transformation",
+        "label": "Operational Transformation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:team-formation", "label": "Team Formation"},
-      {"@id": "urn:ngm:class:organisational-learning", "label": "Organisational Learning"}
+      {
+        "@id": "urn:ngm:class:organisational-learning",
+        "label": "Organisational Learning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:coordination", "label": "Coordination"},
-      {"@id": "urn:ngm:class:cooperation", "label": "Cooperation"}
+      {
+        "@id": "urn:ngm:class:coordination",
+        "label": "Coordination"
+      },
+      {
+        "@id": "urn:ngm:class:cooperation",
+        "label": "Cooperation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:computer-supported-cooperative-work", "label": "Computer-Supported Cooperative Work"},
-      {"@id": "urn:ngm:class:social-network", "label": "Social Network"},
-      {"@id": "urn:ngm:class:workflow-management", "label": "Workflow Management"}
+      {
+        "@id": "urn:ngm:class:computer-supported-cooperative-work",
+        "label": "Computer-Supported Cooperative Work"
+      },
+      {
+        "@id": "urn:ngm:class:social-network",
+        "label": "Social Network"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-management",
+        "label": "Workflow Management"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
-      {"@id": "urn:ngm:class:social-vr", "label": "Social VR"},
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"}
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ieee-institute-of-electrical-and-electronics-engineers", "label": "IEEE (Institute of Electrical and Electronics Engineers)"},
-      {"@id": "urn:ngm:class:w3c-world-wide-web-consortium", "label": "W3C (World Wide Web Consortium)"}
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE (Institute of Electrical and Electronics Engineers)"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:teamwork", "label": "Teamwork"},
-    {"@id": "urn:ngm:class:cooperative-work", "label": "Cooperative Work"}
+    {
+      "@id": "urn:ngm:class:teamwork",
+      "label": "Teamwork"
+    },
+    {
+      "@id": "urn:ngm:class:cooperative-work",
+      "label": "Cooperative Work"
+    }
   ],
   "quality": 0.74,
   "provenance": {

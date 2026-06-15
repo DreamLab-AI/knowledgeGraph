@@ -95,7 +95,7 @@ public:: true
         "label": "E-Government"
       },
       {
-        "@id": "urn:ngm:class:e-learning",
+        "@id": "urn:ngm:class:online-learning",
         "label": "E-Learning"
       }
     ],
@@ -169,7 +169,7 @@ public:: true
         "label": "ITU"
       },
       {
-        "@id": "urn:ngm:class:un-sustainable-development-goals",
+        "@id": "urn:ngm:class:sustainable-development-goals",
         "label": "UN Sustainable Development Goals"
       }
     ]

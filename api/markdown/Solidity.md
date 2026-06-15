@@ -23,57 +23,145 @@ public:: true
   "definition": "Solidity is a statically-typed, curly-brace, contract-oriented programming language designed for writing smart contracts that execute on the Ethereum Virtual Machine (EVM) and EVM-compatible blockchain platforms. Released in 2014 by the Ethereum Foundation, it compiles to EVM bytecode and provides constructs including inheritance, interfaces, libraries, events, function modifiers, and custom error types. The language's semantics are shaped by on-chain execution constraints: every opcode costs gas, state is globally persistent, and deployed code is immutable absent explicit upgrade patterns. Solidity is the dominant language for decentralised finance, non-fungible tokens, and decentralised autonomous organisations, and its security vulnerability surface has driven a parallel industry of formal verification, auditing frameworks, and defensive programming libraries.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:programming-language", "label": "Programming Language"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:programming-language",
+      "label": "Programming Language"
+    }
+  ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:ethereum-virtual-machine", "label": "Ethereum Virtual Machine"},
-      {"@id": "urn:ngm:class:erc-20", "label": "ERC-20"},
-      {"@id": "urn:ngm:class:erc-721", "label": "ERC-721"},
-      {"@id": "urn:ngm:class:erc-1155", "label": "ERC-1155"}
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "@id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "@id": "urn:ngm:class:erc-1155",
+        "label": "ERC-1155"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:dao", "label": "DAO"},
-      {"@id": "urn:ngm:class:nft", "label": "NFT"},
-      {"@id": "urn:ngm:class:token", "label": "Token"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:token",
+        "label": "Token"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:gas", "label": "Gas"},
-      {"@id": "urn:ngm:class:compiler", "label": "Compiler"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:gas",
+        "label": "Gas"
+      },
+      {
+        "@id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum Smart Contract Platform"},
-      {"@id": "urn:ngm:class:abi", "label": "Application Binary Interface"},
-      {"@id": "urn:ngm:class:opcode", "label": "Opcode"}
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "label": "Ethereum Smart Contract Platform"
+      },
+      {
+        "@id": "urn:ngm:class:opcode",
+        "label": "Opcode"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"},
-      {"@id": "urn:ngm:class:security-audit", "label": "Security Audit"},
-      {"@id": "urn:ngm:class:unit-testing", "label": "Unit Testing"}
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "@id": "urn:ngm:class:security-audit",
+        "label": "Security Audit"
+      },
+      {
+        "@id": "urn:ngm:class:unit-testing",
+        "label": "Unit Testing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:vyper", "label": "Vyper"},
-      {"@id": "urn:ngm:class:rust", "label": "Rust"},
-      {"@id": "urn:ngm:class:vulnerability", "label": "Vulnerability"}
+      {
+        "@id": "urn:ngm:class:vyper",
+        "label": "Vyper"
+      },
+      {
+        "@id": "urn:ngm:class:rust-systems-programming-language",
+        "label": "Rust"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:evm-bytecode", "label": "EVM Bytecode"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}
+      {
+        "@id": "urn:ngm:class:evm",
+        "label": "EVM Bytecode"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:reentrancy-attack", "label": "Reentrancy Attack"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:proxy-pattern", "label": "Proxy Pattern"}
+      {
+        "@id": "urn:ngm:class:reentrancy-attack",
+        "label": "Reentrancy Attack"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:proxy-pattern",
+        "label": "Proxy Pattern"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:oracle", "label": "Oracle"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:solidity-language", "label": "Solidity Language"}
+    {
+      "@id": "urn:ngm:class:solidity-language",
+      "label": "Solidity Language"
+    }
   ],
   "quality": 0.74,
   "provenance": {

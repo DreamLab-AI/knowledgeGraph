@@ -18,10 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:dom-api",
-        "label": "DOM API"
-      },
-      {
         "id": "urn:ngm:class:node-js",
         "label": "Node.js"
       },
@@ -36,10 +32,6 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:javascript-engine",
-        "label": "JavaScript Engine"
-      },
-      {
         "id": "urn:ngm:class:event-loop",
         "label": "Event Loop"
       }
@@ -50,15 +42,11 @@
         "label": "Web Application"
       },
       {
-        "id": "urn:ngm:class:single-page-application",
-        "label": "Single Page Application"
-      },
-      {
         "id": "urn:ngm:class:progressive-web-app",
         "label": "Progressive Web App"
       },
       {
-        "id": "urn:ngm:class:serverless-computing",
+        "id": "urn:ngm:class:serverless-architecture",
         "label": "Serverless Computing"
       }
     ],
@@ -91,15 +79,11 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:prototype-chain",
-        "label": "Prototype Chain"
-      },
-      {
         "id": "urn:ngm:class:asynchronous-programming",
         "label": "Asynchronous Programming"
       },
       {
-        "id": "urn:ngm:class:json",
+        "id": "urn:ngm:class:json-data-interchange-format",
         "label": "JSON"
       },
       {

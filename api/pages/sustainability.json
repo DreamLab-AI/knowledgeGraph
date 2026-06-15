@@ -20,14 +20,6 @@
       {
         "id": "urn:ngm:class:environmental-sustainability",
         "label": "Environmental Sustainability"
-      },
-      {
-        "id": "urn:ngm:class:social-sustainability",
-        "label": "Social Sustainability"
-      },
-      {
-        "id": "urn:ngm:class:economic-sustainability",
-        "label": "Economic Sustainability"
       }
     ],
     "requires": [
@@ -73,16 +65,7 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:planned-obsolescence",
-        "label": "Planned Obsolescence"
-      },
-      {
-        "id": "urn:ngm:class:rebound-effect",
-        "label": "Rebound Effect"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:federated-learning",
@@ -96,7 +79,7 @@
     "uses": [],
     "supports": [
       {
-        "id": "urn:ngm:class:digital-accessibility",
+        "id": "urn:ngm:class:accessibility",
         "label": "Digital Accessibility"
       },
       {
@@ -116,10 +99,6 @@
       {
         "id": "urn:ngm:class:ghg-protocol",
         "label": "GHG Protocol"
-      },
-      {
-        "id": "urn:ngm:class:w3c-sustainable-web-design",
-        "label": "W3C Sustainable Web Design"
       }
     ],
     "partOf": [],
@@ -133,7 +112,7 @@
         "label": "Scope 3 Emissions"
       },
       {
-        "id": "urn:ngm:class:digital-equity",
+        "id": "urn:ngm:class:digital-technology-access-equity",
         "label": "Digital Equity"
       }
     ]

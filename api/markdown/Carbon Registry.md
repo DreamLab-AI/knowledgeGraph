@@ -84,14 +84,6 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:database-infrastructure",
-        "label": "Database Infrastructure"
-      },
-      {
-        "@id": "urn:ngm:class:unique-identifiers",
-        "label": "Unique Identifiers"
-      },
-      {
         "@id": "urn:ngm:class:verification-process",
         "label": "Verification Process"
       },
@@ -106,53 +98,23 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:credit-tracking",
-        "label": "Credit Tracking"
-      },
-      {
-        "@id": "urn:ngm:class:double-counting-prevention",
-        "label": "Double Counting Prevention"
-      },
-      {
-        "@id": "urn:ngm:class:market-transparency",
-        "label": "Market Transparency"
-      },
-      {
         "@id": "urn:ngm:class:carbon-credit-retirement",
         "label": "Carbon Credit Retirement"
       },
       {
-        "@id": "urn:ngm:class:emissions-offsetting",
+        "@id": "urn:ngm:class:carbon-offsetting",
         "label": "Emissions Offsetting"
-      }
-    ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:serial-number-issuance",
-        "label": "Serial Number Issuance"
-      },
-      {
-        "@id": "urn:ngm:class:project-documentation",
-        "label": "Project Documentation"
-      },
-      {
-        "@id": "urn:ngm:class:ownership-ledger",
-        "label": "Ownership Ledger"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:carbon-market",
+        "@id": "urn:ngm:class:carbon-markets",
         "label": "Carbon Market"
-      },
-      {
-        "@id": "urn:ngm:class:climate-governance-infrastructure",
-        "label": "Climate Governance Infrastructure"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:vcs-standard",
+        "@id": "urn:ngm:class:verra-vcs-standard",
         "label": "VCS Standard"
       },
       {
@@ -161,10 +123,6 @@ public:: true
       }
     ],
     "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:icvcm",
-        "label": "ICVCM"
-      },
       {
         "@id": "urn:ngm:class:corsia",
         "label": "CORSIA"
@@ -194,10 +152,6 @@ public:: true
       {
         "@id": "urn:ngm:class:redd-plus",
         "label": "REDD+"
-      },
-      {
-        "@id": "urn:ngm:class:carbon-offset-project",
-        "label": "Carbon Offset Project"
       },
       {
         "@id": "urn:ngm:class:greenhouse-gas-accounting",

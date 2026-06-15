@@ -74,7 +74,7 @@
         "label": "Aura Finance"
       },
       {
-        "id": "urn:ngm:class:yearn-finance",
+        "id": "urn:ngm:class:yearn",
         "label": "Yearn Finance"
       }
     ],
@@ -124,7 +124,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:decentralized-autonomous-organisation",
+        "id": "urn:ngm:class:decentralized-autonomous-organization",
         "label": "Decentralized Autonomous Organisation"
       },
       {

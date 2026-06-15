@@ -130,11 +130,7 @@ public:: true
         "label": "Noise Function"
       },
       {
-        "@id": "urn:ngm:class:pattern-generator",
-        "label": "Pattern Generator"
-      },
-      {
-        "@id": "urn:ngm:class:shader-code",
+        "@id": "urn:ngm:class:shader",
         "label": "Shader Code"
       },
       {
@@ -146,32 +142,6 @@ public:: true
       {
         "@id": "urn:ngm:class:gpu-shader",
         "label": "GPU Shader"
-      },
-      {
-        "@id": "urn:ngm:class:mathematical-functions",
-        "label": "Mathematical Functions"
-      },
-      {
-        "@id": "urn:ngm:class:texture-coordinates",
-        "label": "Texture Coordinates"
-      }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:dynamic-surface-detail",
-        "label": "Dynamic Surface Detail"
-      },
-      {
-        "@id": "urn:ngm:class:memory-efficient-texturing",
-        "label": "Memory Efficient Texturing"
-      },
-      {
-        "@id": "urn:ngm:class:procedural-materials",
-        "label": "Procedural Materials"
-      },
-      {
-        "@id": "urn:ngm:class:resolution-independent-graphics",
-        "label": "Resolution Independent Graphics"
       }
     ],
     "partOf": [

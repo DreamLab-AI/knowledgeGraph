@@ -81,10 +81,6 @@ public:: true
         "label": "Decentralised Identity"
       },
       {
-        "@id": "urn:ngm:class:human-readable-address",
-        "label": "Human-Readable Address"
-      },
-      {
         "@id": "urn:ngm:class:decentralised-application",
         "label": "Decentralised Application"
       },
@@ -101,24 +97,12 @@ public:: true
       {
         "@id": "urn:ngm:class:erc-721",
         "label": "ERC-721"
-      },
-      {
-        "@id": "urn:ngm:class:erc-1185",
-        "label": "ERC-1185"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:public-key-cryptography",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
-      },
-      {
-        "@id": "urn:ngm:class:namehash-algorithm",
-        "label": "Namehash Algorithm"
-      },
-      {
-        "@id": "urn:ngm:class:ethereum-transaction",
-        "label": "Ethereum Transaction"
       }
     ],
     "contrastsWith": [
@@ -129,17 +113,9 @@ public:: true
       {
         "@id": "urn:ngm:class:unstoppable-domains",
         "label": "Unstoppable Domains"
-      },
-      {
-        "@id": "urn:ngm:class:handshake-protocol",
-        "label": "Handshake Protocol"
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:decentralised-naming-system",
-        "label": "Decentralised Naming System"
-      },
       {
         "@id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
@@ -149,16 +125,12 @@ public:: true
         "label": "IPFS"
       },
       {
-        "@id": "urn:ngm:class:did-decentralised-identifier",
+        "@id": "urn:ngm:class:decentralised-identifier",
         "label": "Decentralised Identifier"
       },
       {
         "@id": "urn:ngm:class:ethereum-improvement-proposal",
         "label": "Ethereum Improvement Proposal"
-      },
-      {
-        "@id": "urn:ngm:class:reverse-resolution",
-        "label": "Reverse Resolution"
       }
     ],
     "bridgesTo": [
@@ -167,13 +139,13 @@ public:: true
         "label": "Self Sovereign Identity"
       },
       {
-        "@id": "urn:ngm:class:verifiable-credential",
+        "@id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       }
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:ethereum-foundation",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-foundation",
         "label": "Ethereum Foundation"
       }
     ]

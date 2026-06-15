@@ -22,10 +22,6 @@
         "label": "Routing Table"
       },
       {
-        "id": "urn:ngm:class:keyspace-partition",
-        "label": "Keyspace Partition"
-      },
-      {
         "id": "urn:ngm:class:node-identifier",
         "label": "Node Identifier"
       }
@@ -58,44 +54,18 @@
         "label": "Distributed Storage"
       },
       {
-        "id": "urn:ngm:class:decentralised-peer-discovery",
+        "id": "urn:ngm:class:peer-discovery",
         "label": "Decentralised Peer Discovery"
-      },
-      {
-        "id": "urn:ngm:class:censorship-resistant-communication",
-        "label": "Censorship-Resistant Communication"
       }
     ],
-    "dependsOn": [
-      {
-        "id": "urn:ngm:class:structured-overlay-network",
-        "label": "Structured Overlay Network"
-      },
-      {
-        "id": "urn:ngm:class:bootstrap-protocol",
-        "label": "Bootstrap Protocol"
-      }
-    ],
+    "dependsOn": [],
     "implements": [
       {
         "id": "urn:ngm:class:kademlia-dht",
         "label": "Kademlia DHT"
-      },
-      {
-        "id": "urn:ngm:class:chord-protocol",
-        "label": "Chord Protocol"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:centralised-index",
-        "label": "Centralised Index"
-      },
-      {
-        "id": "urn:ngm:class:unstructured-overlay-network",
-        "label": "Unstructured Overlay Network"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:blockchain",

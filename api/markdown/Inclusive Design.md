@@ -24,50 +24,129 @@ alias:: InclusiveDesign
   "definition": "Inclusive design is a design methodology and philosophy that creates products, services, environments, and digital experiences to be usable by the widest possible range of people across diverse abilities, ages, languages, cultures, and contexts, without requiring specialised adaptations or separate versions for different user groups. It treats human diversity as a design resource rather than a problem to be accommodated, recognising that designing for people with disabilities, situational impairments, or non-standard use contexts typically produces solutions that benefit all users. The approach is distinct from universal design in emphasising process — including people with diverse characteristics as active co-designers throughout — rather than solely optimising for a single configuration serving all. Across digital, spatial, and AI-mediated systems, inclusive design establishes both participatory methods and measurable technical criteria that reduce systematic exclusion.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:universal-design", "label": "Universal Design"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:universal-design",
+      "label": "Universal Design"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:interaction-design", "label": "Interaction Design"},
-      {"@id": "urn:ngm:class:participatory-design", "label": "Participatory Design"},
-      {"@id": "urn:ngm:class:user-research", "label": "User Research"}
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      },
+      {
+        "@id": "urn:ngm:class:participatory-design",
+        "label": "Participatory Design"
+      },
+      {
+        "@id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:inclusive-xr-design", "label": "Inclusive Xr Design"},
-      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"},
-      {"@id": "urn:ngm:class:inclusive-participation", "label": "Inclusive Participation"},
-      {"@id": "urn:ngm:class:digital-equity", "label": "Digital Equity"},
-      {"@id": "urn:ngm:class:assistive-technology", "label": "Assistive Technology"}
+      {
+        "@id": "urn:ngm:class:inclusive-xr-design",
+        "label": "Inclusive Xr Design"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "@id": "urn:ngm:class:inclusive-participation",
+        "label": "Inclusive Participation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-technology-access-equity",
+        "label": "Digital Equity"
+      },
+      {
+        "@id": "urn:ngm:class:assistive-technology",
+        "label": "Assistive Technology"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:user-centred-design", "label": "User Centred Design"},
-      {"@id": "urn:ngm:class:co-design", "label": "Co-Design"}
+      {
+        "@id": "urn:ngm:class:user-centred-design",
+        "label": "User Centred Design"
+      },
+      {
+        "@id": "urn:ngm:class:co-design",
+        "label": "Co-Design"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:wcag", "label": "WCAG"},
-      {"@id": "urn:ngm:class:wai-aria", "label": "WAI-ARIA"},
-      {"@id": "urn:ngm:class:european-accessibility-act", "label": "European Accessibility Act"}
+      {
+        "@id": "urn:ngm:class:wcag-2-2",
+        "label": "WCAG"
+      },
+      {
+        "@id": "urn:ngm:class:wai-aria",
+        "label": "WAI-ARIA"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:accessibility-standard", "label": "Accessibility Standard"},
-      {"@id": "urn:ngm:class:digital-technology-access-equity", "label": "Digital Technology Access Equity"},
-      {"@id": "urn:ngm:class:usability", "label": "Usability"},
-      {"@id": "urn:ngm:class:disability-rights", "label": "Disability Rights"},
-      {"@id": "urn:ngm:class:design-thinking", "label": "Design Thinking"}
+      {
+        "@id": "urn:ngm:class:accessibility-standard",
+        "label": "Accessibility Standard"
+      },
+      {
+        "@id": "urn:ngm:class:digital-technology-access-equity",
+        "label": "Digital Technology Access Equity"
+      },
+      {
+        "@id": "urn:ngm:class:usability",
+        "label": "Usability"
+      },
+      {
+        "@id": "urn:ngm:class:disability-rights",
+        "label": "Disability Rights"
+      },
+      {
+        "@id": "urn:ngm:class:design-thinking",
+        "label": "Design Thinking"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:universal-design", "label": "Universal Design"},
-      {"@id": "urn:ngm:class:retrofitting", "label": "Retrofitting"}
+      {
+        "@id": "urn:ngm:class:universal-design",
+        "label": "Universal Design"
+      },
+      {
+        "@id": "urn:ngm:class:retrofitting",
+        "label": "Retrofitting"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-fairness", "label": "AI Fairness"},
-      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:design-for-all", "label": "Design for All"}
+    {
+      "@id": "urn:ngm:class:design-for-all",
+      "label": "Design for All"
+    }
   ],
   "quality": 0.75,
   "provenance": {

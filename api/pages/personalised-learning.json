@@ -19,10 +19,6 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:learner-modelling",
-        "label": "Learner Modelling"
-      },
-      {
         "id": "urn:ngm:class:data-privacy",
         "label": "Data Privacy"
       }
@@ -37,7 +33,7 @@
         "label": "Immersive Learning"
       },
       {
-        "id": "urn:ngm:class:intelligent-tutoring-systems",
+        "id": "urn:ngm:class:intelligent-tutoring-system",
         "label": "Intelligent Tutoring Systems"
       },
       {
@@ -56,12 +52,7 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:standardised-curriculum",
-        "label": "Standardised Curriculum"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:spatial-computing",
@@ -104,10 +95,6 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:self-directed-learning",
-        "label": "Self-Directed Learning"
-      },
-      {
         "id": "urn:ngm:class:competency-based-education",
         "label": "Competency-Based Education"
       }
@@ -132,7 +119,7 @@
         "label": "Learning Analytics"
       },
       {
-        "id": "urn:ngm:class:digital-equity",
+        "id": "urn:ngm:class:digital-technology-access-equity",
         "label": "Digital Equity"
       }
     ]

@@ -61,12 +61,9 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
-    ],
-    "enables": [
       {
-        "@id": "urn:ngm:class:multilingual-metaverse-experience",
-        "label": "Multilingual Metaverse Experience"
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ]
   },

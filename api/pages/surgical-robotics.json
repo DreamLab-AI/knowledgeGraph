@@ -24,14 +24,6 @@
       {
         "id": "urn:ngm:class:haptic-feedback",
         "label": "Haptic Feedback"
-      },
-      {
-        "id": "urn:ngm:class:endoscope",
-        "label": "Endoscope"
-      },
-      {
-        "id": "urn:ngm:class:master-slave-control",
-        "label": "Master-Slave Control"
       }
     ],
     "requires": [
@@ -62,26 +54,13 @@
         "label": "Remote Surgery"
       },
       {
-        "id": "urn:ngm:class:autonomous-suturing",
-        "label": "Autonomous Suturing"
-      },
-      {
         "id": "urn:ngm:class:medical-ai",
         "label": "Medical AI"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:open-surgery",
-        "label": "Open Surgery"
-      },
-      {
-        "id": "urn:ngm:class:laparoscopic-surgery",
-        "label": "Laparoscopic Surgery"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:augmented-reality",
@@ -121,16 +100,8 @@
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-13485",
-        "label": "ISO 13485"
-      },
-      {
         "id": "urn:ngm:class:iec-62304",
         "label": "IEC 62304"
-      },
-      {
-        "id": "urn:ngm:class:iec-60601",
-        "label": "IEC 60601"
       }
     ],
     "partOf": [
@@ -147,14 +118,6 @@
       {
         "id": "urn:ngm:class:surgical-robot",
         "label": "Surgical Robot"
-      },
-      {
-        "id": "urn:ngm:class:orthopaedic-robotics",
-        "label": "Orthopaedic Robotics"
-      },
-      {
-        "id": "urn:ngm:class:neurosurgical-robotics",
-        "label": "Neurosurgical Robotics"
       },
       {
         "id": "urn:ngm:class:patient-safety",

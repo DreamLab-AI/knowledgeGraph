@@ -62,11 +62,11 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:rule-based-chatbot",
+        "id": "urn:ngm:class:chatbot",
         "label": "Rule-Based Chatbot"
       },
       {
-        "id": "urn:ngm:class:retrieval-based-dialogue-system",
+        "id": "urn:ngm:class:dialogue-system",
         "label": "Retrieval-Based Dialogue System"
       }
     ],
@@ -137,7 +137,7 @@
         "label": "Constitutional AI Language Model Family"
       },
       {
-        "id": "urn:ngm:class:hallucination-in-language-models",
+        "id": "urn:ngm:class:hallucination",
         "label": "Hallucination in Language Models"
       },
       {

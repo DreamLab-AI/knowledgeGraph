@@ -22,7 +22,7 @@
         "label": "Purpose Limitation"
       },
       {
-        "id": "urn:ngm:class:data-retention-policy",
+        "id": "urn:ngm:class:retention-policy",
         "label": "Data Retention Policy"
       },
       {
@@ -54,13 +54,13 @@
         "label": "Differential Privacy"
       },
       {
-        "id": "urn:ngm:class:model-distillation",
+        "id": "urn:ngm:class:knowledge-distillation",
         "label": "Model Distillation"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:data-lifecycle-management",
+        "id": "urn:ngm:class:lifecycle-management",
         "label": "Data Lifecycle Management"
       },
       {
@@ -70,10 +70,6 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:gdpr-article-5",
-        "label": "GDPR Article 5"
-      },
-      {
         "id": "urn:ngm:class:iso-29100",
         "label": "ISO 29100"
       }
@@ -82,15 +78,11 @@
       {
         "id": "urn:ngm:class:personal-data-store",
         "label": "Personal Data Store"
-      },
-      {
-        "id": "urn:ngm:class:data-maximisation",
-        "label": "Data Maximisation"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning-pipeline",
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
       },
       {
@@ -108,7 +100,7 @@
         "label": "Dimensionality Reduction"
       },
       {
-        "id": "urn:ngm:class:statistical-sampling",
+        "id": "urn:ngm:class:sampling",
         "label": "Statistical Sampling"
       }
     ],

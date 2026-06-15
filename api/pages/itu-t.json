@@ -26,7 +26,7 @@
         "label": "H.265"
       },
       {
-        "id": "urn:ngm:class:x-509",
+        "id": "urn:ngm:class:x-509-certificate",
         "label": "X.509"
       },
       {
@@ -34,23 +34,10 @@
         "label": "G.711"
       }
     ],
-    "requires": [
-      {
-        "id": "urn:ngm:class:member-state-consensus",
-        "label": "Member State Consensus"
-      },
-      {
-        "id": "urn:ngm:class:study-group",
-        "label": "Study Group"
-      }
-    ],
+    "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:telecommunications-interoperability",
-        "label": "Telecommunications Interoperability"
-      },
-      {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -60,10 +47,6 @@
     ],
     "dependsOn": [],
     "implements": [
-      {
-        "id": "urn:ngm:class:telecommunications-standard",
-        "label": "Telecommunications Standard"
-      },
       {
         "id": "urn:ngm:class:network-protocol",
         "label": "Network Protocol"

@@ -124,32 +124,10 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:adaptive-ui-controller",
-        "label": "Adaptive UI Controller"
-      },
-      {
-        "@id": "urn:ngm:class:attention-tracker",
-        "label": "Attention Tracker"
-      },
-      {
-        "@id": "urn:ngm:class:cognitive-state-monitor",
-        "label": "Cognitive State Monitor"
-      },
-      {
-        "@id": "urn:ngm:class:workload-analyzer",
-        "label": "Workload Analyzer"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:brain-computer-interfaces",
         "label": "Brain Computer Interfaces"
-      },
-      {
-        "@id": "urn:ngm:class:cognitive-model",
-        "label": "Cognitive Model"
       },
       {
         "@id": "urn:ngm:class:eye-tracking",
@@ -162,15 +140,11 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:adaptive-information-display",
+        "@id": "urn:ngm:class:adaptive-interfaces",
         "label": "Adaptive Information Display"
       },
       {
-        "@id": "urn:ngm:class:cognitive-load-management",
-        "label": "Cognitive Load Management"
-      },
-      {
-        "@id": "urn:ngm:class:personalized-ux",
+        "@id": "urn:ngm:class:personalized-experiences",
         "label": "Personalized UX"
       },
       {

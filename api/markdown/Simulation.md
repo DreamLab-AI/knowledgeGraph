@@ -48,53 +48,139 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"},
-      {"@id": "urn:ngm:class:render-pipeline", "label": "Render Pipeline"},
-      {"@id": "urn:ngm:class:procedural-content-generation", "label": "Procedural Content Generation"},
-      {"@id": "urn:ngm:class:monte-carlo-methods", "label": "Monte Carlo Methods"},
-      {"@id": "urn:ngm:class:agent-based-modelling", "label": "Agent-Based Modelling"}
+      {
+        "@id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "@id": "urn:ngm:class:render-pipeline",
+        "label": "Render Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "@id": "urn:ngm:class:agent-based-modelling",
+        "label": "Agent-Based Modelling"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:synthetic-data", "label": "Synthetic Data"},
-      {"@id": "urn:ngm:class:training-and-simulation", "label": "Training and Simulation"},
-      {"@id": "urn:ngm:class:scenario-planning", "label": "Scenario Planning"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      },
+      {
+        "@id": "urn:ngm:class:training-and-simulation",
+        "label": "Training and Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:scenario-planning",
+        "label": "Scenario Planning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:computational-model", "label": "Computational Model"},
-      {"@id": "urn:ngm:class:real-time-computing", "label": "Real-Time Computing"},
-      {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"}
+      {
+        "@id": "urn:ngm:class:computational-model",
+        "label": "Computational Model"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
+      },
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"},
-      {"@id": "urn:ngm:class:state-machine", "label": "State Machine"},
-      {"@id": "urn:ngm:class:sensor-model", "label": "Sensor Model"}
+      {
+        "@id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "@id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-model",
+        "label": "Sensor Model"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:mathematical-modelling", "label": "Mathematical Modelling"},
-      {"@id": "urn:ngm:class:numerical-methods", "label": "Numerical Methods"},
-      {"@id": "urn:ngm:class:data-validation", "label": "Data Validation"}
+      {
+        "@id": "urn:ngm:class:mathematical-modelling",
+        "label": "Mathematical Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "@id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:emulation", "label": "Emulation"},
-      {"@id": "urn:ngm:class:physical-prototype", "label": "Physical Prototype"}
+      {
+        "@id": "urn:ngm:class:physical-prototype",
+        "label": "Physical Prototype"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:synthetic-data", "label": "Synthetic Data"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:computer-simulation", "label": "Computer Simulation"},
-    {"@id": "urn:ngm:class:virtual-simulation", "label": "Virtual Simulation"}
+    {
+      "@id": "urn:ngm:class:computer-simulation",
+      "label": "Computer Simulation"
+    },
+    {
+      "@id": "urn:ngm:class:virtual-simulation",
+      "label": "Virtual Simulation"
+    }
   ],
   "quality": 0.72,
   "provenance": {

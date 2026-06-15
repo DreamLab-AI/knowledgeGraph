@@ -78,10 +78,6 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:n-gram-model",
-        "label": "N-Gram Model"
-      },
-      {
         "id": "urn:ngm:class:recurrent-neural-network",
         "label": "Recurrent Neural Network"
       }
@@ -151,7 +147,7 @@
         "label": "Prompt Engineering"
       },
       {
-        "id": "urn:ngm:class:mixture-of-experts",
+        "id": "urn:ngm:class:mixture-of-experts-architecture",
         "label": "Mixture of Experts"
       },
       {

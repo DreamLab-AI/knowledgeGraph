@@ -63,14 +63,7 @@ public:: true
       "label": "AR Registration"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:accurate-ar-alignment",
-        "label": "Accurate AR Alignment"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

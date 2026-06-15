@@ -53,48 +53,111 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:inverted-index", "label": "Inverted Index"},
-      {"@id": "urn:ngm:class:query-processing", "label": "Query Processing"},
-      {"@id": "urn:ngm:class:relevance-ranking", "label": "Relevance Ranking"},
-      {"@id": "urn:ngm:class:document-indexing", "label": "Document Indexing"}
+      {
+        "@id": "urn:ngm:class:inverted-index",
+        "label": "Inverted Index"
+      },
+      {
+        "@id": "urn:ngm:class:query-processing",
+        "label": "Query Processing"
+      },
+      {
+        "@id": "urn:ngm:class:relevance-ranking",
+        "label": "Relevance Ranking"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:word-embeddings", "label": "Word Embeddings"}
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:word-embeddings",
+        "label": "Word Embeddings"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:search-engine", "label": "Search Engine"},
-      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
-      {"@id": "urn:ngm:class:recommendation-system", "label": "Recommendation System"}
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:search-engine",
+        "label": "Search Engine"
+      },
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:text-representation", "label": "Text Representation"},
-      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"}
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:corpus", "label": "Corpus"},
-      {"@id": "urn:ngm:class:evaluation-metrics", "label": "Evaluation Metrics"}
+      {
+        "@id": "urn:ngm:class:corpus",
+        "label": "Corpus"
+      },
+      {
+        "@id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metrics"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:database-query", "label": "Database Query"},
-      {"@id": "urn:ngm:class:data-mining", "label": "Data Mining"}
+      {
+        "@id": "urn:ngm:class:database-query",
+        "label": "Database Query"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:spatial-search", "label": "Spatial Search"}
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-search",
+        "label": "Spatial Search"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:approximate-nearest-neighbour", "label": "Approximate Nearest Neighbour"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Approximate Nearest Neighbour"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:document-retrieval", "label": "Document Retrieval"}
+    {
+      "@id": "urn:ngm:class:document-retrieval",
+      "label": "Document Retrieval"
+    }
   ],
   "quality": 0.74,
   "provenance": {

@@ -23,53 +23,131 @@ public:: true
   "definition": "IoT infrastructure is the integrated stack of hardware, networking, middleware, and cloud or edge platforms that enables the deployment, connectivity, management, and data processing of Internet of Things device fleets at scale. It encompasses device provisioning and lifecycle management, low-power wide-area or local-area communication protocols, edge gateways that aggregate and pre-process sensor data, secure device identity and over-the-air update mechanisms, and cloud or fog computing backends that host the data pipelines, analytics, and control planes for IoT applications across industrial, urban, consumer, and agricultural domains.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"},
-      {"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"},
-      {"@id": "urn:ngm:class:smart-city", "label": "Smart City"}
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      },
+      {
+        "@id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:mqtt", "label": "MQTT"},
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
-      {"@id": "urn:ngm:class:lorawan", "label": "LoRaWAN"},
-      {"@id": "urn:ngm:class:5g-network", "label": "5G Network"},
-      {"@id": "urn:ngm:class:bluetooth-low-energy", "label": "Bluetooth Low Energy"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:5g-network",
+        "label": "5G Network"
+      },
+      {
+        "@id": "urn:ngm:class:bluetooth-low-energy",
+        "label": "Bluetooth Low Energy"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:io-t-ai-integration", "label": "IoT AI Integration"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:real-time-monitoring", "label": "Real-Time Monitoring"},
-      {"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"},
-      {"@id": "urn:ngm:class:smart-grid", "label": "Smart Grid"}
+      {
+        "@id": "urn:ngm:class:io-t-ai-integration",
+        "label": "IoT AI Integration"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      },
+      {
+        "@id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:device-identity-management", "label": "Device Identity Management"},
-      {"@id": "urn:ngm:class:over-the-air-update", "label": "Over-the-Air Update"},
-      {"@id": "urn:ngm:class:network-security", "label": "Network Security"}
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Device Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:over-the-air-update",
+        "label": "Over-the-Air Update"
+      },
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:edge-gateway", "label": "Edge Gateway"},
-      {"@id": "urn:ngm:class:cloud-platform", "label": "Cloud Platform"},
-      {"@id": "urn:ngm:class:device-management-platform", "label": "Device Management Platform"}
+      {
+        "@id": "urn:ngm:class:edge-gateway",
+        "label": "Edge Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-platform",
+        "label": "Cloud Platform"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:matter-protocol", "label": "Matter Protocol"},
-      {"@id": "urn:ngm:class:oneM2M", "label": "oneM2M"}
+      {
+        "@id": "urn:ngm:class:matter-protocol",
+        "label": "Matter Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:oneM2M",
+        "label": "oneM2M"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:traditional-scada", "label": "Traditional SCADA"}
+      {
+        "@id": "urn:ngm:class:traditional-scada",
+        "label": "Traditional SCADA"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:internet-of-things-infrastructure", "label": "Internet of Things Infrastructure"}
+    {
+      "@id": "urn:ngm:class:internet-of-things-infrastructure",
+      "label": "Internet of Things Infrastructure"
+    }
   ],
   "quality": 0.72,
   "provenance": {

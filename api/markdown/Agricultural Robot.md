@@ -130,12 +130,8 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:environmental-sensors",
+        "@id": "urn:ngm:class:environmental-sensor",
         "label": "Environmental Sensors"
-      },
-      {
-        "@id": "urn:ngm:class:terrain-navigation",
-        "label": "Terrain Navigation"
       },
       {
         "@id": "urn:ngm:class:computer-vision",
@@ -148,26 +144,14 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:crop-quality-improvement",
-        "label": "Crop Quality Improvement"
-      },
-      {
-        "@id": "urn:ngm:class:labour-cost-reduction",
-        "label": "Labour Cost Reduction"
-      },
-      {
         "@id": "urn:ngm:class:environmental-sustainability",
         "label": "Environmental Sustainability"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:precision-agriculture-system",
+        "@id": "urn:ngm:class:precision-agriculture",
         "label": "Precision Agriculture System"
-      },
-      {
-        "@id": "urn:ngm:class:sustainable-farming",
-        "label": "Sustainable Farming"
       }
     ]
   },

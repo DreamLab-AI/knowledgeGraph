@@ -77,10 +77,6 @@
       {
         "id": "urn:ngm:class:on-chain-transaction",
         "label": "On-Chain Transaction"
-      },
-      {
-        "id": "urn:ngm:class:ethereum-layer-2",
-        "label": "Ethereum Layer 2"
       }
     ],
     "bridgesTo": [

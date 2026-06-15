@@ -60,10 +60,6 @@
       {
         "id": "urn:ngm:class:choice-architecture",
         "label": "Choice Architecture"
-      },
-      {
-        "id": "urn:ngm:class:public-policy-design",
-        "label": "Public Policy Design"
       }
     ],
     "dependsOn": [],

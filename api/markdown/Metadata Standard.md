@@ -146,20 +146,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:data-elements",
-        "label": "Data Elements"
-      },
-      {
         "@id": "urn:ngm:class:encoding-specification",
         "label": "Encoding Specification"
       },
       {
         "@id": "urn:ngm:class:schema-definition",
         "label": "Schema Definition"
-      },
-      {
-        "@id": "urn:ngm:class:semantics-rules",
-        "label": "Semantics Rules"
       },
       {
         "@id": "urn:ngm:class:validation-constraints",
@@ -190,7 +182,7 @@ public:: true
         "label": "Information Exchange"
       },
       {
-        "@id": "urn:ngm:class:resource-description",
+        "@id": "urn:ngm:class:description-logic",
         "label": "Resource Description"
       },
       {

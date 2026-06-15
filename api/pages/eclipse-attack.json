@@ -45,10 +45,6 @@
         "label": "Double Spending"
       },
       {
-        "id": "urn:ngm:class:transaction-withholding",
-        "label": "Transaction Withholding"
-      },
-      {
         "id": "urn:ngm:class:selfish-mining",
         "label": "Selfish Mining"
       }
@@ -90,10 +86,6 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:bgp-hijacking",
-        "label": "BGP Hijacking"
-      },
-      {
         "id": "urn:ngm:class:network-topology",
         "label": "Network Topology"
       }
@@ -122,10 +114,6 @@
       {
         "id": "urn:ngm:class:denial-of-service",
         "label": "Denial of Service"
-      },
-      {
-        "id": "urn:ngm:class:man-in-the-middle-attack",
-        "label": "Man-in-the-Middle Attack"
       },
       {
         "id": "urn:ngm:class:routing-attack",

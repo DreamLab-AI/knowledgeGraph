@@ -679,55 +679,121 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
-      {"@id": "urn:ngm:class:payment-channels", "label": "Payment Channels"},
-      {"@id": "urn:ngm:class:hash-time-locked-contract", "label": "Hash Time-Locked Contract"},
-      {"@id": "urn:ngm:class:watchtower", "label": "Watchtower"}
-    ],
-    "partOf": [
-      {"@id": "urn:ngm:class:bitcoin-scaling-ecosystem", "label": "Bitcoin Scaling Ecosystem"}
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:payment-channels",
+        "label": "Payment Channels"
+      },
+      {
+        "@id": "urn:ngm:class:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      },
+      {
+        "@id": "urn:ngm:class:watchtower",
+        "label": "Watchtower"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:multi-signature", "label": "Multi-Signature"},
-      {"@id": "urn:ngm:class:onion-routing", "label": "Onion Routing"}
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:multi-signature",
+        "label": "Multi-Signature"
+      },
+      {
+        "@id": "urn:ngm:class:onion-routing",
+        "label": "Onion Routing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:micropayments", "label": "Micropayments"},
-      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
-      {"@id": "urn:ngm:class:streaming-payments", "label": "Streaming Payments"},
-      {"@id": "urn:ngm:class:pay-per-use", "label": "Pay-Per-Use"}
+      {
+        "@id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:streaming-payments",
+        "label": "Streaming Payments"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:bitcoin", "label": "Bitcoin"},
-      {"@id": "urn:ngm:class:utxo", "label": "UTXO"}
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:utxo",
+        "label": "UTXO"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:bolt", "label": "BOLT"},
-      {"@id": "urn:ngm:class:state-channel", "label": "State Channel"}
+      {
+        "@id": "urn:ngm:class:bolt",
+        "label": "BOLT"
+      },
+      {
+        "@id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:l402-protocol", "label": "L402 Protocol"},
-      {"@id": "urn:ngm:class:recurring-payments", "label": "Recurring Payments"}
+      {
+        "@id": "urn:ngm:class:x402-and-l402-payment-protocols",
+        "label": "L402 Protocol"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rollup", "label": "Rollup"},
-      {"@id": "urn:ngm:class:sidechain", "label": "Sidechain"}
+      {
+        "@id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
-      {"@id": "urn:ngm:class:peer-to-peer", "label": "Peer-to-Peer"},
-      {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"}
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:bitcoin-layer-2", "label": "Bitcoin Layer 2"},
-    {"@id": "urn:ngm:class:payment-channel-network", "label": "Payment Channel Network"}
+    {
+      "@id": "urn:ngm:class:bitcoin-layer-2",
+      "label": "Bitcoin Layer 2"
+    },
+    {
+      "@id": "urn:ngm:class:payment-channel-network",
+      "label": "Payment Channel Network"
+    }
   ],
   "quality": 0.72,
   "provenance": {

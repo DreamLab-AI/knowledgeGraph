@@ -23,61 +23,151 @@ public:: true
   "definition": "A Policy Enforcement Point (PEP) is a runtime architectural component in access control systems that intercepts every request for a protected resource, forwards a structured authorisation query to a Policy Decision Point (PDP), and enforces the returned permit, deny, or obligation decision at the resource boundary. The PEP–PDP separation, first formalised in the OASIS XACML standard, decouples policy logic from enforcement infrastructure and enables centralised policy management across heterogeneous systems. In zero-trust architectures every network transaction passes through a PEP, which may be realised as a reverse proxy, API gateway, service mesh sidecar, network firewall, or identity-aware proxy. The model extends naturally to software-defined perimeters, ABAC deployments, and AI governance enforcement layers where model prompts and outputs must satisfy content policies before reaching end users.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:access-control", "label": "Access Control"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:access-control",
+      "label": "Access Control"
+    }
+  ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:xacml-architecture", "label": "XACML Architecture"},
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"}
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:policy-decision-point", "label": "Policy Decision Point"},
-      {"@id": "urn:ngm:class:policy-information-point", "label": "Policy Information Point"},
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"}
+      {
+        "@id": "urn:ngm:class:policy-decision-point",
+        "label": "Policy Decision Point"
+      },
+      {
+        "@id": "urn:ngm:class:policy-information-point",
+        "label": "Policy Information Point"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:attribute-based-access-control", "label": "Attribute-Based Access Control"},
-      {"@id": "urn:ngm:class:privileged-access-management", "label": "Privileged Access Management"},
-      {"@id": "urn:ngm:class:least-privilege", "label": "Least Privilege"},
-      {"@id": "urn:ngm:class:continuous-verification", "label": "Continuous Verification"}
+      {
+        "@id": "urn:ngm:class:attribute-based-access-control",
+        "label": "Attribute-Based Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:privileged-access-management",
+        "label": "Privileged Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:least-privilege",
+        "label": "Least Privilege"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-verification",
+        "label": "Continuous Verification"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:authorisation", "label": "Authorisation"},
-      {"@id": "urn:ngm:class:access-control-policy", "label": "Access Control Policy"}
+      {
+        "@id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "@id": "urn:ngm:class:access-control-policy",
+        "label": "Access Control Policy"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:oauth-2-0", "label": "OAuth 2.0"},
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
-      {"@id": "urn:ngm:class:service-mesh", "label": "Service Mesh"},
-      {"@id": "urn:ngm:class:mutual-tls", "label": "Mutual TLS"}
+      {
+        "@id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:mutual-tls",
+        "label": "Mutual TLS"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:audit-logging", "label": "Audit Logging"},
-      {"@id": "urn:ngm:class:compliance-enforcement", "label": "Compliance Enforcement"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:xacml", "label": "XACML"},
-      {"@id": "urn:ngm:class:nist-sp-800-207", "label": "NIST SP 800-207"}
+      {
+        "@id": "urn:ngm:class:xacml",
+        "label": "XACML"
+      },
+      {
+        "@id": "urn:ngm:class:nist-sp-800-207",
+        "label": "NIST SP 800-207"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:network-perimeter-security", "label": "Network Perimeter Security"},
-      {"@id": "urn:ngm:class:role-based-access-control", "label": "Role-Based Access Control"}
+      {
+        "@id": "urn:ngm:class:network-perimeter-security",
+        "label": "Network Perimeter Security"
+      },
+      {
+        "@id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:data-mesh", "label": "Data Mesh"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:data-mesh",
+        "label": "Data Mesh"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:policy-administration-point", "label": "Policy Administration Point"},
-      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"},
-      {"@id": "urn:ngm:class:software-defined-perimeter", "label": "Software-Defined Perimeter"},
-      {"@id": "urn:ngm:class:reverse-proxy", "label": "Reverse Proxy"},
-      {"@id": "urn:ngm:class:policy-enforcement", "label": "Policy Enforcement"}
+      {
+        "@id": "urn:ngm:class:policy-administration-point",
+        "label": "Policy Administration Point"
+      },
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:software-defined-perimeter",
+        "label": "Software-Defined Perimeter"
+      },
+      {
+        "@id": "urn:ngm:class:reverse-proxy",
+        "label": "Reverse Proxy"
+      },
+      {
+        "@id": "urn:ngm:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:pep", "label": "PEP"},
-    {"@id": "urn:ngm:class:access-enforcement-point", "label": "Access Enforcement Point"}
+    {
+      "@id": "urn:ngm:class:pep",
+      "label": "PEP"
+    },
+    {
+      "@id": "urn:ngm:class:access-enforcement-point",
+      "label": "Access Enforcement Point"
+    }
   ],
   "quality": 0.74,
   "provenance": {

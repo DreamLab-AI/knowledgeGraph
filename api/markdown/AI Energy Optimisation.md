@@ -65,7 +65,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:model-quantisation",
+        "@id": "urn:ngm:class:neural-network-quantisation",
         "label": "Model Quantisation"
       },
       {
@@ -81,38 +81,16 @@ public:: true
         "label": "Neural Architecture Search"
       }
     ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:sustainable-ai",
-        "label": "Sustainable AI"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:hardware-acceleration",
         "label": "Hardware Acceleration"
-      },
-      {
-        "@id": "urn:ngm:class:energy-measurement",
-        "label": "Energy Measurement"
-      },
-      {
-        "@id": "urn:ngm:class:ml-benchmarking",
-        "label": "ML Benchmarking"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:edge-ai",
         "label": "Edge AI"
-      },
-      {
-        "@id": "urn:ngm:class:green-data-centre",
-        "label": "Green Data Centre"
-      },
-      {
-        "@id": "urn:ngm:class:low-power-inference",
-        "label": "Low-Power Inference"
       }
     ],
     "dependsOn": [
@@ -133,10 +111,6 @@ public:: true
       {
         "@id": "urn:ngm:class:mixed-precision-training",
         "label": "Mixed Precision Training"
-      },
-      {
-        "@id": "urn:ngm:class:sparse-computation",
-        "label": "Sparse Computation"
       },
       {
         "@id": "urn:ngm:class:edge-computing",
@@ -183,7 +157,7 @@ public:: true
         "label": "Federated Learning"
       },
       {
-        "@id": "urn:ngm:class:efficient-transformers",
+        "@id": "urn:ngm:class:transformers",
         "label": "Efficient Transformers"
       }
     ]

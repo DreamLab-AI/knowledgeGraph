@@ -16,24 +16,11 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:fill-in-the-middle-completion",
-        "label": "Fill-in-the-Middle Completion"
-      },
-      {
-        "id": "urn:ngm:class:repository-level-context",
-        "label": "Repository-Level Context"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
-      },
-      {
-        "id": "urn:ngm:class:source-code-corpus",
-        "label": "Source Code Corpus"
       }
     ],
     "enables": [
@@ -72,10 +59,6 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:manual-software-development",
-        "label": "Manual Software Development"
-      },
-      {
         "id": "urn:ngm:class:low-code-platform",
         "label": "Low-Code Platform"
       }
@@ -104,19 +87,11 @@
         "label": "Prompt Engineering"
       },
       {
-        "id": "urn:ngm:class:code-aware-tokenisation",
-        "label": "Code-Aware Tokenisation"
-      },
-      {
         "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "Reinforcement Learning from Human Feedback"
       }
     ],
     "supports": [
-      {
-        "id": "urn:ngm:class:ide-integration",
-        "label": "IDE Integration"
-      },
       {
         "id": "urn:ngm:class:devops",
         "label": "DevOps"

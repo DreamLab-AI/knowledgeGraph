@@ -64,14 +64,7 @@ alias:: Marker-Based Tracking
       "label": "Spatial Tracking Technology"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:ar-content-positioning",
-        "label": "AR Content Positioning"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

@@ -158,26 +158,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:affective-response-logs",
-        "label": "Affective Response Logs"
-      },
-      {
-        "@id": "urn:ngm:class:behavioral-pattern-data",
-        "label": "Behavioral Pattern Data"
-      },
-      {
-        "@id": "urn:ngm:class:cognitive-trait-indicators",
-        "label": "Cognitive Trait Indicators"
-      },
-      {
-        "@id": "urn:ngm:class:emotional-state-metrics",
-        "label": "Emotional State Metrics"
-      },
-      {
-        "@id": "urn:ngm:class:preference-mapping",
-        "label": "Preference Mapping"
-      },
-      {
         "@id": "urn:ngm:class:social-interaction-analytics",
         "label": "Social Interaction Analytics"
       }
@@ -188,11 +168,11 @@ public:: true
         "label": "Behavioral Tracking System"
       },
       {
-        "@id": "urn:ngm:class:data-analytics-engine",
+        "@id": "urn:ngm:class:analytics-engine",
         "label": "Data Analytics Engine"
       },
       {
-        "@id": "urn:ngm:class:user-consent-management",
+        "@id": "urn:ngm:class:consent-management",
         "label": "User Consent Management"
       },
       {
@@ -202,16 +182,12 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:adaptive-content-delivery",
+        "@id": "urn:ngm:class:content-delivery",
         "label": "Adaptive Content Delivery"
       },
       {
         "@id": "urn:ngm:class:mental-health-monitoring",
         "label": "Mental Health Monitoring"
-      },
-      {
-        "@id": "urn:ngm:class:social-compatibility-matching",
-        "label": "Social Compatibility Matching"
       },
       {
         "@id": "urn:ngm:class:personalized-virtual-experiences",
@@ -226,10 +202,6 @@ public:: true
       {
         "@id": "urn:ngm:class:personalization-framework",
         "label": "Personalization Framework"
-      },
-      {
-        "@id": "urn:ngm:class:user-profile-system",
-        "label": "User Profile System"
       }
     ]
   },

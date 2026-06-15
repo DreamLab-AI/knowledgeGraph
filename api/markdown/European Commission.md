@@ -38,50 +38,113 @@ public:: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:digital-markets-act", "label": "Digital Markets Act"},
-      {"@id": "urn:ngm:class:digital-services-act", "label": "Digital Services Act"}
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-markets-act",
+        "label": "Digital Markets Act"
+      },
+      {
+        "@id": "urn:ngm:class:digital-services-act",
+        "label": "Digital Services Act"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
-      {"@id": "urn:ngm:class:data-act", "label": "Data Act"},
-      {"@id": "urn:ngm:class:general-data-protection-regulation", "label": "General Data Protection Regulation"}
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection-regulation",
+        "label": "General Data Protection Regulation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:governance", "label": "Governance"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:digital-single-market", "label": "Digital Single Market"},
-      {"@id": "urn:ngm:class:open-data", "label": "Open Data"}
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-single-market",
+        "label": "Digital Single Market"
+      },
+      {
+        "@id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:european-parliament", "label": "European Parliament"},
-      {"@id": "urn:ngm:class:council-of-the-european-union", "label": "Council of the European Union"}
+      {
+        "@id": "urn:ngm:class:european-parliament",
+        "label": "European Parliament"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:cen-cenelec", "label": "CEN-CENELEC"},
-      {"@id": "urn:ngm:class:etsi", "label": "ETSI"}
-    ],
-    "uses": [
-      {"@id": "urn:ngm:class:horizon-europe", "label": "Horizon Europe"},
-      {"@id": "urn:ngm:class:european-blockchain-services-infrastructure", "label": "European Blockchain Services Infrastructure"}
+      {
+        "@id": "urn:ngm:class:cen-cenelec",
+        "label": "CEN-CENELEC"
+      },
+      {
+        "@id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:regulatory-body", "label": "Regulatory Body"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:risk-based-regulation", "label": "Risk-Based Regulation"},
-      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+      {
+        "@id": "urn:ngm:class:regulatory-authority",
+        "label": "Regulatory Body"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:risk-based-regulation",
+        "label": "Risk-Based Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:european-union-executive", "label": "European Union Executive"},
-    {"@id": "urn:ngm:class:eu-commission", "label": "EU Commission"}
+    {
+      "@id": "urn:ngm:class:european-union-executive",
+      "label": "European Union Executive"
+    },
+    {
+      "@id": "urn:ngm:class:eu-commission",
+      "label": "EU Commission"
+    }
   ],
   "quality": 0.72,
   "provenance": {

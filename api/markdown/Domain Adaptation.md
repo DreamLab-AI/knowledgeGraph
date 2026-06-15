@@ -38,52 +38,101 @@ public:: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:source-domain", "label": "Source Domain"},
-      {"@id": "urn:ngm:class:target-domain", "label": "Target Domain"}
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:zero-shot-learning", "label": "Zero Shot Learning"},
-      {"@id": "urn:ngm:class:low-resource-nlp", "label": "Low Resource NLP"}
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:zero-shot-learning",
+        "label": "Zero Shot Learning"
+      },
+      {
+        "@id": "urn:ngm:class:low-resource-nlp",
+        "label": "Low Resource NLP"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:adversarial-training", "label": "Adversarial Training"},
-      {"@id": "urn:ngm:class:optimal-transport", "label": "Optimal Transport"},
-      {"@id": "urn:ngm:class:self-training", "label": "Self Training"},
-      {"@id": "urn:ngm:class:pseudo-labelling", "label": "Pseudo Labelling"},
-      {"@id": "urn:ngm:class:maximum-mean-discrepancy", "label": "Maximum Mean Discrepancy"}
+      {
+        "@id": "urn:ngm:class:adversarial-training",
+        "label": "Adversarial Training"
+      },
+      {
+        "@id": "urn:ngm:class:optimal-transport",
+        "label": "Optimal Transport"
+      },
+      {
+        "@id": "urn:ngm:class:self-training",
+        "label": "Self Training"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:pre-training", "label": "Pre Training"},
-      {"@id": "urn:ngm:class:representation-learning", "label": "Representation Learning"}
+      {
+        "@id": "urn:ngm:class:pre-training",
+        "label": "Pre Training"
+      },
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:domain-generalisation", "label": "Domain Generalisation"},
-      {"@id": "urn:ngm:class:multi-task-learning", "label": "Multi Task Learning"},
-      {"@id": "urn:ngm:class:meta-learning", "label": "Meta-Learning"}
+      {
+        "@id": "urn:ngm:class:multi-task-learning",
+        "label": "Multi Task Learning"
+      },
+      {
+        "@id": "urn:ngm:class:meta-learning",
+        "label": "Meta-Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"},
-      {"@id": "urn:ngm:class:covariate-shift", "label": "Covariate Shift"},
-      {"@id": "urn:ngm:class:concept-drift", "label": "Concept Drift"},
-      {"@id": "urn:ngm:class:distribution-shift", "label": "Distribution Shift"},
-      {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"}
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "@id": "urn:ngm:class:concept-drift",
+        "label": "Concept Drift"
+      },
+      {
+        "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:continual-learning", "label": "Continual Learning"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:domain-transfer", "label": "Domain Transfer"}
+    {
+      "@id": "urn:ngm:class:domain-transfer",
+      "label": "Domain Transfer"
+    }
   ],
   "qualityScore": 0.74,
-  "maturity": "established",
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-13T00:00:00Z",

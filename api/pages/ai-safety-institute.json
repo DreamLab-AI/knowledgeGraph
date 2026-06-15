@@ -35,10 +35,6 @@
       {
         "id": "urn:ngm:class:ai-policy",
         "label": "AI Policy"
-      },
-      {
-        "id": "urn:ngm:class:international-ai-coordination",
-        "label": "International AI Coordination"
       }
     ],
     "dependsOn": [],
@@ -98,7 +94,7 @@
         "label": "AI Governance"
       },
       {
-        "id": "urn:ngm:class:government-ai-policy",
+        "id": "urn:ngm:class:ai-policy",
         "label": "Government AI Policy"
       }
     ],

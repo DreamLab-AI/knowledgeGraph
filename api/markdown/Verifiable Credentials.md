@@ -315,10 +315,6 @@ alias:: BC-0458-verifiable-credentials, Verifiable Credential, VerifiableCredent
         "label": "Credential Subject"
       },
       {
-        "@id": "urn:ngm:class:proof-method",
-        "label": "Proof Method"
-      },
-      {
         "@id": "urn:ngm:class:verifiable-presentation",
         "label": "Verifiable Presentation"
       }
@@ -346,10 +342,6 @@ alias:: BC-0458-verifiable-credentials, Verifiable Credential, VerifiableCredent
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:cross-border-identity-recognition",
-        "label": "Cross-Border Identity Recognition"
-      },
       {
         "@id": "urn:ngm:class:offline-verification",
         "label": "Offline Verification"
@@ -385,7 +377,7 @@ alias:: BC-0458-verifiable-credentials, Verifiable Credential, VerifiableCredent
         "label": "JSON Web Token"
       },
       {
-        "@id": "urn:ngm:class:m-dl-iso-18013-5",
+        "@id": "urn:ngm:class:iso-iec-18013-5-m-dl",
         "label": "mDL ISO 18013-5"
       },
       {
@@ -459,10 +451,6 @@ alias:: BC-0458-verifiable-credentials, Verifiable Credential, VerifiableCredent
         "label": "GOV.UK One Login"
       },
       {
-        "@id": "urn:ngm:class:healthcare-data-interoperability",
-        "label": "Healthcare Data Interoperability"
-      },
-      {
         "@id": "urn:ngm:class:aml-kyc-compliance",
         "label": "AML KYC Compliance"
       },
@@ -473,7 +461,7 @@ alias:: BC-0458-verifiable-credentials, Verifiable Credential, VerifiableCredent
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:european-commission-e-idas",
+        "@id": "urn:ngm:class:e-idas",
         "label": "European Commission eIDAS"
       },
       {
@@ -498,7 +486,10 @@ alias:: BC-0458-verifiable-credentials, Verifiable Credential, VerifiableCredent
         "@id": "urn:ngm:class:w-3-c-standard",
         "label": "W3C Standard"
       },
-      {"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"}
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
     ]
   },
   "quality": 0.52,

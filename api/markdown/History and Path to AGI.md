@@ -338,10 +338,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:ai-winter",
-        "label": "AI Winter"
-      },
-      {
         "@id": "urn:ngm:class:connectionism",
         "label": "Connectionism"
       },
@@ -380,14 +376,6 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:computational-substrate",
-        "label": "Computational Substrate"
-      },
-      {
-        "@id": "urn:ngm:class:institutional-funding",
-        "label": "Institutional Funding"
-      },
-      {
         "@id": "urn:ngm:class:mathematical-foundations",
         "label": "Mathematical Foundations"
       },
@@ -414,7 +402,7 @@ public:: true
         "label": "Autonomous System"
       },
       {
-        "@id": "urn:ngm:class:frontier-ai-evaluation",
+        "@id": "urn:ngm:class:frontier-model-evaluation",
         "label": "Frontier AI Evaluation"
       },
       {
@@ -430,10 +418,6 @@ public:: true
       {
         "@id": "urn:ngm:class:scaling-laws",
         "label": "Scaling Laws"
-      },
-      {
-        "@id": "urn:ngm:class:turing-test",
-        "label": "Turing Test"
       },
       {
         "@id": "urn:ngm:class:attention-mechanism",
@@ -548,16 +532,8 @@ public:: true
         "label": "ICML"
       },
       {
-        "@id": "urn:ngm:class:nature",
-        "label": "Nature"
-      },
-      {
         "@id": "urn:ngm:class:neur-ips",
         "label": "NeurIPS"
-      },
-      {
-        "@id": "urn:ngm:class:science",
-        "label": "Science"
       }
     ]
   },

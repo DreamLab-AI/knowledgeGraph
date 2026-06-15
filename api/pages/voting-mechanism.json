@@ -22,7 +22,7 @@
         "label": "On Chain Voting"
       },
       {
-        "id": "urn:ngm:class:off-chain-voting",
+        "id": "urn:ngm:class:snapshot-off-chain-voting",
         "label": "Off-Chain Voting"
       },
       {
@@ -78,7 +78,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:plutocratic-governance",
+        "id": "urn:ngm:class:governance",
         "label": "Plutocratic Governance"
       },
       {

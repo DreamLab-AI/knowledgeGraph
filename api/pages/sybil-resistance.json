@@ -43,15 +43,11 @@
       {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
-      },
-      {
-        "id": "urn:ngm:class:fair-airdrop",
-        "label": "Fair Airdrop"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       },
       {
@@ -70,24 +66,11 @@
         "label": "Eclipse Attack"
       },
       {
-        "id": "urn:ngm:class:51-percent-attack",
+        "id": "urn:ngm:class:51-attack",
         "label": "51% Attack"
       }
     ],
-    "bridgesTo": [
-      {
-        "id": "urn:ngm:class:federated-learning-poisoning-defence",
-        "label": "Federated Learning Poisoning Defence"
-      },
-      {
-        "id": "urn:ngm:class:bot-detection",
-        "label": "Bot Detection"
-      },
-      {
-        "id": "urn:ngm:class:ai-alignment-mechanism-design",
-        "label": "AI Alignment Mechanism Design"
-      }
-    ],
+    "bridgesTo": [],
     "uses": [
       {
         "id": "urn:ngm:class:proof-of-work",
@@ -131,7 +114,7 @@
         "label": "Proof of Personhood"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential",
+        "id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       },
       {

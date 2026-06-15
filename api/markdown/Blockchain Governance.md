@@ -113,7 +113,7 @@ alias:: BlockchainGovernance
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:dao-structure",
+        "@id": "urn:ngm:class:dao",
         "label": "DAO Structure"
       },
       {
@@ -125,7 +125,7 @@ alias:: BlockchainGovernance
         "label": "Proposal System"
       },
       {
-        "@id": "urn:ngm:class:decentralized-organization",
+        "@id": "urn:ngm:class:decentralized-autonomous-organization",
         "label": "Decentralized Organization"
       },
       {
@@ -137,13 +137,13 @@ alias:: BlockchainGovernance
         "label": "Quadratic Voting"
       },
       {
-        "@id": "urn:ngm:class:delegation-mechanism",
+        "@id": "urn:ngm:class:delegation-system",
         "label": "Delegation Mechanism"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:token-based-representation",
+        "@id": "urn:ngm:class:token",
         "label": "Token-Based Representation"
       },
       {
@@ -161,16 +161,8 @@ alias:: BlockchainGovernance
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:community-alignment",
-        "label": "Community Alignment"
-      },
-      {
-        "@id": "urn:ngm:class:decentralized-decision-making",
+        "@id": "urn:ngm:class:decentralised-decision-making",
         "label": "Decentralized Decision-Making"
-      },
-      {
-        "@id": "urn:ngm:class:protocol-evolution",
-        "label": "Protocol Evolution"
       },
       {
         "@id": "urn:ngm:class:protocol-upgrade",
@@ -231,7 +223,7 @@ alias:: BlockchainGovernance
         "label": "Token Economics"
       },
       {
-        "@id": "urn:ngm:class:network-effect",
+        "@id": "urn:ngm:class:network-effects",
         "label": "Network Effect"
       },
       {

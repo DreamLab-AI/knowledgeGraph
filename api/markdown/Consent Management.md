@@ -143,16 +143,12 @@ alias:: ConsentManagement
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:audit-logger",
+        "@id": "urn:ngm:class:audit-logging",
         "label": "Audit Logger"
       },
       {
         "@id": "urn:ngm:class:consent-registry",
         "label": "Consent Registry"
-      },
-      {
-        "@id": "urn:ngm:class:permission-controller",
-        "label": "Permission Controller"
       },
       {
         "@id": "urn:ngm:class:policy-engine",
@@ -193,10 +189,6 @@ alias:: ConsentManagement
       {
         "@id": "urn:ngm:class:user-control",
         "label": "User Control"
-      },
-      {
-        "@id": "urn:ngm:class:right-to-be-forgotten",
-        "label": "Right to Be Forgotten"
       },
       {
         "@id": "urn:ngm:class:right-to-be-forgotten",

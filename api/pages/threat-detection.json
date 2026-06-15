@@ -37,7 +37,7 @@
         "label": "Threat Surface Map"
       },
       {
-        "id": "urn:ngm:class:security-operations-center",
+        "id": "urn:ngm:class:security-operations",
         "label": "Security Operations Center"
       },
       {
@@ -91,7 +91,7 @@
         "label": "Information Security"
       },
       {
-        "id": "urn:ngm:class:zero-trust-security",
+        "id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Security"
       },
       {

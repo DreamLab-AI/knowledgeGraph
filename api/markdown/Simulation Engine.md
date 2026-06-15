@@ -79,10 +79,6 @@ public:: true
       {
         "@id": "urn:ngm:class:simulation-software",
         "label": "Simulation Software"
-      },
-      {
-        "@id": "urn:ngm:class:digital-twin-platform",
-        "label": "Digital Twin Platform"
       }
     ],
     "requires": [

@@ -38,51 +38,131 @@ alias:: Chain of Thought Reasoning
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:chain-of-thought", "label": "Chain of Thought"},
-    {"@id": "urn:ngm:class:cot-reasoning", "label": "CoT Reasoning"}
+    {
+      "@id": "urn:ngm:class:chain-of-thought",
+      "label": "Chain of Thought"
+    },
+    {
+      "@id": "urn:ngm:class:cot-reasoning",
+      "label": "CoT Reasoning"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:in-context-learning", "label": "In-Context Learning"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:mathematical-reasoning", "label": "Mathematical Reasoning"},
-      {"@id": "urn:ngm:class:multi-step-reasoning", "label": "Multi-Step Reasoning"},
-      {"@id": "urn:ngm:class:autonomous-agents", "label": "Autonomous Agents"},
-      {"@id": "urn:ngm:class:self-consistency", "label": "Self-Consistency"},
-      {"@id": "urn:ngm:class:process-reward-models", "label": "Process Reward Models"}
+      {
+        "@id": "urn:ngm:class:mathematical-reasoning",
+        "label": "Mathematical Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:multi-step-reasoning",
+        "label": "Multi-Step Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agents"
+      },
+      {
+        "@id": "urn:ngm:class:self-consistency",
+        "label": "Self-Consistency"
+      },
+      {
+        "@id": "urn:ngm:class:process-reward-models",
+        "label": "Process Reward Models"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:few-shot-learning", "label": "Few-Shot Learning"},
-      {"@id": "urn:ngm:class:zero-shot-prompting", "label": "Zero-Shot Prompting"},
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:few-shot-learning",
+        "label": "Few-Shot Learning"
+      },
+      {
+        "@id": "urn:ngm:class:zero-shot-prompting",
+        "label": "Zero-Shot Prompting"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:scratchpad-reasoning", "label": "Scratchpad Reasoning"},
-      {"@id": "urn:ngm:class:tree-of-thought", "label": "Tree of Thought"},
-      {"@id": "urn:ngm:class:self-refinement", "label": "Self-Refinement"}
+      {
+        "@id": "urn:ngm:class:scratchpad-reasoning",
+        "label": "Scratchpad Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:tree-of-thoughts",
+        "label": "Tree of Thought"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:model-scaling", "label": "Model Scaling"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+      {
+        "@id": "urn:ngm:class:model-scaling",
+        "label": "Model Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:direct-answer-prompting", "label": "Direct Answer Prompting"},
-      {"@id": "urn:ngm:class:symbolic-ai", "label": "Symbolic AI"},
-      {"@id": "urn:ngm:class:standard-prompting", "label": "Standard Prompting"}
+      {
+        "@id": "urn:ngm:class:direct-answer-prompting",
+        "label": "Direct Answer Prompting"
+      },
+      {
+        "@id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "@id": "urn:ngm:class:standard-prompting",
+        "label": "Standard Prompting"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:mechanistic-interpretability", "label": "Mechanistic Interpretability"},
-      {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"},
-      {"@id": "urn:ngm:class:inference-time-compute", "label": "Inference-Time Compute"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:mechanistic-interpretability",
+        "label": "Mechanistic Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:inference-time-compute",
+        "label": "Inference-Time Compute"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:automated-theorem-proving", "label": "Automated Theorem Proving"},
-      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"}
+      {
+        "@id": "urn:ngm:class:automated-theorem-proving",
+        "label": "Automated Theorem Proving"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
     ]
   },
   "quality": 0.74,

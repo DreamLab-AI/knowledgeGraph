@@ -24,58 +24,152 @@ alias:: NetworkSecurity
   "definition": "Network security is the practice of protecting computer networks and the data transmitted across them from unauthorised access, misuse, modification, or denial of service through a combination of hardware controls, software policies, and operational procedures. It encompasses perimeter defence, intrusion detection and prevention, traffic analysis, encryption of data in transit, and access control applied at network boundaries and within internal segments. As networks have evolved from isolated LANs to globally distributed cloud and edge architectures, network security has broadened to encompass zero-trust models, software-defined perimeters, and AI-driven anomaly detection. It forms a foundational layer of broader cybersecurity strategy, intersecting with identity management, cryptographic standards, and regulatory compliance frameworks.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:network-defence", "label": "Network Defence"},
-    {"@id": "urn:ngm:class:network-protection", "label": "Network Protection"}
+    {
+      "@id": "urn:ngm:class:network-defence",
+      "label": "Network Defence"
+    },
+    {
+      "@id": "urn:ngm:class:network-protection",
+      "label": "Network Protection"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:firewall", "label": "Firewall"},
-      {"@id": "urn:ngm:class:intrusion-detection-system", "label": "Intrusion Detection System"},
-      {"@id": "urn:ngm:class:virtual-private-network", "label": "Virtual Private Network"},
-      {"@id": "urn:ngm:class:network-segmentation", "label": "Network Segmentation"},
-      {"@id": "urn:ngm:class:security-information-and-event-management", "label": "Security Information and Event Management"}
+      {
+        "@id": "urn:ngm:class:firewall",
+        "label": "Firewall"
+      },
+      {
+        "@id": "urn:ngm:class:intrusion-detection-system",
+        "label": "Intrusion Detection System"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-private-network",
+        "label": "Virtual Private Network"
+      },
+      {
+        "@id": "urn:ngm:class:network-segmentation",
+        "label": "Network Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:security-information-and-event-management",
+        "label": "Security Information and Event Management"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
-      {"@id": "urn:ngm:class:transport-layer-security", "label": "Transport Layer Security"},
-      {"@id": "urn:ngm:class:deep-packet-inspection", "label": "Deep Packet Inspection"}
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:authentication-mechanism", "label": "Authentication Mechanism"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}
+      {
+        "@id": "urn:ngm:class:authentication-mechanism",
+        "label": "Authentication Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:data-security", "label": "Data Security"},
-      {"@id": "urn:ngm:class:digital-security", "label": "Digital Security"},
-      {"@id": "urn:ngm:class:secure-communication", "label": "Secure Communication"},
-      {"@id": "urn:ngm:class:compliance-management", "label": "Compliance Management"}
+      {
+        "@id": "urn:ngm:class:data-security",
+        "label": "Data Security"
+      },
+      {
+        "@id": "urn:ngm:class:digital-security",
+        "label": "Digital Security"
+      },
+      {
+        "@id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-management",
+        "label": "Compliance Management"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
-      {"@id": "urn:ngm:class:information-security", "label": "Information Security"},
-      {"@id": "urn:ngm:class:endpoint-security", "label": "Endpoint Security"},
-      {"@id": "urn:ngm:class:threat-intelligence", "label": "Threat Intelligence"},
-      {"@id": "urn:ngm:class:vulnerability-management", "label": "Vulnerability Management"}
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      },
+      {
+        "@id": "urn:ngm:class:endpoint-security",
+        "label": "Endpoint Security"
+      },
+      {
+        "@id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:perimeter-security", "label": "Perimeter Security"}
+      {
+        "@id": "urn:ngm:class:perimeter-security",
+        "label": "Perimeter Security"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:software-defined-networking", "label": "Software-Defined Networking"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist-cybersecurity-framework", "label": "NIST Cybersecurity Framework"},
-      {"@id": "urn:ngm:class:iso-iec-27001", "label": "ISO/IEC 27001"}
+      {
+        "@id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      }
     ]
   },
   "quality": 0.72,

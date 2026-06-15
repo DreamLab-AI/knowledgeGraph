@@ -56,7 +56,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:did-resolution-protocol",
+        "id": "urn:ngm:class:did-resolution",
         "label": "DID Resolution Protocol"
       },
       {
@@ -192,7 +192,7 @@
         "label": "EBSI"
       },
       {
-        "id": "urn:ngm:class:european-digital-identity-wallet",
+        "id": "urn:ngm:class:digital-identity-wallet",
         "label": "European Digital Identity Wallet"
       },
       {
@@ -218,7 +218,7 @@
         "label": "European Commission"
       },
       {
-        "id": "urn:ngm:class:ietf-oauth-working-group",
+        "id": "urn:ngm:class:ietf",
         "label": "IETF OAuth Working Group"
       },
       {
@@ -238,7 +238,7 @@
         "label": "W3C DID Working Group"
       },
       {
-        "id": "urn:ngm:class:w3-c-verifiable-credentials-working-group",
+        "id": "urn:ngm:class:w3-c-verifiable-credentials",
         "label": "W3C Verifiable Credentials Working Group"
       }
     ],
@@ -255,10 +255,6 @@
       {
         "id": "urn:ngm:class:soulbound-tokens",
         "label": "Soulbound Tokens"
-      },
-      {
-        "id": "urn:ngm:class:sovrin-network",
-        "label": "Sovrin Network"
       },
       {
         "id": "urn:ngm:class:trust-over-ip-foundation",

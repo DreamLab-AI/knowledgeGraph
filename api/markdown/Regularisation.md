@@ -69,24 +69,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:l1-regularisation",
-        "label": "L1 Regularisation"
-      },
-      {
-        "@id": "urn:ngm:class:l2-regularisation",
-        "label": "L2 Regularisation"
-      },
-      {
         "@id": "urn:ngm:class:dropout",
         "label": "Dropout"
       },
       {
         "@id": "urn:ngm:class:early-stopping",
         "label": "Early Stopping"
-      },
-      {
-        "@id": "urn:ngm:class:elastic-net",
-        "label": "Elastic Net"
       }
     ],
     "partOf": [
@@ -130,10 +118,6 @@ public:: true
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:penalty-term",
-        "label": "Penalty Term"
-      },
       {
         "@id": "urn:ngm:class:weight-decay",
         "label": "Weight Decay"
@@ -181,10 +165,6 @@ public:: true
       {
         "@id": "urn:ngm:class:model-complexity",
         "label": "Model Complexity"
-      },
-      {
-        "@id": "urn:ngm:class:neural-network-pruning",
-        "label": "Neural Network Pruning"
       }
     ]
   }

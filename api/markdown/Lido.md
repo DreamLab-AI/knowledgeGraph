@@ -95,24 +95,12 @@ public:: true
       {
         "@id": "urn:ngm:class:yield-farming",
         "label": "Yield Farming"
-      },
-      {
-        "@id": "urn:ngm:class:collateralization",
-        "label": "Collateralization"
       }
     ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:lido-dao",
         "label": "Lido DAO"
-      },
-      {
-        "@id": "urn:ngm:class:steth",
-        "label": "stETH"
-      },
-      {
-        "@id": "urn:ngm:class:node-operator-registry",
-        "label": "Node Operator Registry"
       }
     ],
     "uses": [
@@ -151,7 +139,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:solo-staking",
+        "@id": "urn:ngm:class:staking",
         "label": "Solo Staking"
       },
       {

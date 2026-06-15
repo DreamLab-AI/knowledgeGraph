@@ -18,15 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:thought-generator",
-        "label": "Thought Generator"
-      },
-      {
-        "id": "urn:ngm:class:thought-evaluator",
-        "label": "Thought Evaluator"
-      },
-      {
-        "id": "urn:ngm:class:tree-search-algorithm",
+        "id": "urn:ngm:class:search-algorithm",
         "label": "Tree Search Algorithm"
       }
     ],
@@ -48,10 +40,6 @@
       {
         "id": "urn:ngm:class:automated-planning",
         "label": "Automated Planning"
-      },
-      {
-        "id": "urn:ngm:class:combinatorial-problem-solving",
-        "label": "Combinatorial Problem Solving"
       },
       {
         "id": "urn:ngm:class:multi-step-reasoning",
@@ -96,10 +84,6 @@
       {
         "id": "urn:ngm:class:beam-search",
         "label": "Beam Search"
-      },
-      {
-        "id": "urn:ngm:class:backtracking",
-        "label": "Backtracking"
       }
     ],
     "supports": [],
@@ -110,7 +94,7 @@
         "label": "Inference-Time Compute"
       },
       {
-        "id": "urn:ngm:class:deliberate-reasoning",
+        "id": "urn:ngm:class:reasoning",
         "label": "Deliberate Reasoning"
       }
     ],
@@ -130,10 +114,6 @@
       {
         "id": "urn:ngm:class:graph-of-thoughts",
         "label": "Graph of Thoughts"
-      },
-      {
-        "id": "urn:ngm:class:skeleton-of-thought",
-        "label": "Skeleton of Thought"
       }
     ]
   },

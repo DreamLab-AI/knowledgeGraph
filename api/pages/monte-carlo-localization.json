@@ -23,10 +23,6 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:map",
-        "label": "Map"
-      },
-      {
         "id": "urn:ngm:class:motion-model",
         "label": "Motion Model"
       },
@@ -37,12 +33,8 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:global-localization",
+        "id": "urn:ngm:class:localization",
         "label": "Global Localization"
-      },
-      {
-        "id": "urn:ngm:class:kidnapped-robot-problem",
-        "label": "Kidnapped Robot Problem"
       }
     ],
     "dependsOn": [],

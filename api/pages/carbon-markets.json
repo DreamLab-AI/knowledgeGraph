@@ -38,10 +38,6 @@
       {
         "id": "urn:ngm:class:third-party-verification",
         "label": "Third-Party Verification"
-      },
-      {
-        "id": "urn:ngm:class:additionality-assessment",
-        "label": "Additionality Assessment"
       }
     ],
     "enables": [
@@ -56,10 +52,6 @@
       {
         "id": "urn:ngm:class:net-zero-targets",
         "label": "Net Zero Targets"
-      },
-      {
-        "id": "urn:ngm:class:emissions-reduction",
-        "label": "Emissions Reduction"
       }
     ],
     "dependsOn": [],
@@ -75,7 +67,7 @@
         "label": "Distributed Ledger Technology"
       },
       {
-        "id": "urn:ngm:class:iot-environmental-monitoring",
+        "id": "urn:ngm:class:environmental-monitoring",
         "label": "IoT Environmental Monitoring"
       }
     ],
@@ -87,10 +79,6 @@
       {
         "id": "urn:ngm:class:carbon-registry",
         "label": "Carbon Registry"
-      },
-      {
-        "id": "urn:ngm:class:emissions-allowance",
-        "label": "Emissions Allowance"
       },
       {
         "id": "urn:ngm:class:carbon-offset",
@@ -108,7 +96,7 @@
         "label": "Gold Standard"
       },
       {
-        "id": "urn:ngm:class:core-carbon-principles",
+        "id": "urn:ngm:class:icvcm-core-carbon-principles",
         "label": "Core Carbon Principles"
       }
     ],

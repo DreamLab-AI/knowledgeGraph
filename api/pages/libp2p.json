@@ -18,25 +18,17 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:gossipsub",
-        "label": "GossipSub"
-      },
-      {
         "id": "urn:ngm:class:noise-protocol",
         "label": "Noise Protocol"
-      },
-      {
-        "id": "urn:ngm:class:yamux",
-        "label": "Yamux"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:transport-layer-protocol",
+        "id": "urn:ngm:class:transport-layer",
         "label": "Transport Layer Protocol"
       }
     ],
@@ -64,7 +56,7 @@
         "label": "Distributed Hash Table"
       },
       {
-        "id": "urn:ngm:class:quic-protocol",
+        "id": "urn:ngm:class:quic",
         "label": "QUIC Protocol"
       }
     ],
@@ -89,10 +81,6 @@
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:ai-agent-communication",
-        "label": "AI Agent Communication"
-      },
       {
         "id": "urn:ngm:class:decentralized-identity",
         "label": "Decentralized Identity"

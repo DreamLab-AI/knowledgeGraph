@@ -55,16 +55,7 @@
         "label": "Fourier Analysis"
       }
     ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:finite-impulse-response-filter",
-        "label": "Finite Impulse Response Filter"
-      },
-      {
-        "id": "urn:ngm:class:translation-equivariance",
-        "label": "Translation Equivariance"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:self-attention",
@@ -91,10 +82,6 @@
         "label": "Kernel"
       },
       {
-        "id": "urn:ngm:class:filter",
-        "label": "Filter"
-      },
-      {
         "id": "urn:ngm:class:fast-fourier-transform",
         "label": "Fast Fourier Transform"
       }
@@ -119,10 +106,6 @@
       {
         "id": "urn:ngm:class:image-processing",
         "label": "Image Processing"
-      },
-      {
-        "id": "urn:ngm:class:pooling",
-        "label": "Pooling"
       },
       {
         "id": "urn:ngm:class:batch-normalisation",

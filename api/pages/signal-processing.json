@@ -26,10 +26,6 @@
         "label": "Fourier Transform"
       },
       {
-        "id": "urn:ngm:class:filter-design",
-        "label": "Filter Design"
-      },
-      {
         "id": "urn:ngm:class:sampling-theory",
         "label": "Sampling Theory"
       }
@@ -58,7 +54,7 @@
         "label": "Image Processing"
       },
       {
-        "id": "urn:ngm:class:radar-sensing",
+        "id": "urn:ngm:class:radar",
         "label": "Radar Sensing"
       },
       {

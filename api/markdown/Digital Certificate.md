@@ -93,7 +93,7 @@ alias:: DigitalCertificate
         "label": "Cryptographic Keys"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -129,7 +129,7 @@ alias:: DigitalCertificate
         "label": "X.509 Standard"
       },
       {
-        "@id": "urn:ngm:class:tls-protocol",
+        "@id": "urn:ngm:class:tls",
         "label": "TLS Protocol"
       }
     ],
@@ -155,16 +155,12 @@ alias:: DigitalCertificate
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:ssl-tls",
+        "@id": "urn:ngm:class:tls",
         "label": "SSL/TLS"
       },
       {
         "@id": "urn:ngm:class:code-signing",
         "label": "Code Signing"
-      },
-      {
-        "@id": "urn:ngm:class:email-encryption",
-        "label": "Email Encryption"
       }
     ],
     "standardizedBy": [
@@ -173,7 +169,7 @@ alias:: DigitalCertificate
         "label": "IETF"
       },
       {
-        "@id": "urn:ngm:class:w3c-web-standards",
+        "@id": "urn:ngm:class:web-standards",
         "label": "W3C Web Standards"
       }
     ],
@@ -193,7 +189,7 @@ alias:: DigitalCertificate
         "label": "DID Nostr Identity"
       },
       {
-        "@id": "urn:ngm:class:verifiable-credential",
+        "@id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       },
       {
@@ -222,7 +218,7 @@ alias:: DigitalCertificate
       "label": "Public Key Certificate"
     }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

@@ -63,20 +63,12 @@
       {
         "id": "urn:ngm:class:matching-funds",
         "label": "Matching Funds"
-      },
-      {
-        "id": "urn:ngm:class:decentralized-funding",
-        "label": "Decentralized Funding"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:venture-capital",
         "label": "Venture Capital"
-      },
-      {
-        "id": "urn:ngm:class:centralized-grant-making",
-        "label": "Centralized Grant Making"
       }
     ],
     "bridgesTo": [
@@ -117,7 +109,7 @@
         "label": "Developer Ecosystem"
       },
       {
-        "id": "urn:ngm:class:ethereum-ecosystem",
+        "id": "urn:ngm:class:ethereum",
         "label": "Ethereum Ecosystem"
       }
     ],

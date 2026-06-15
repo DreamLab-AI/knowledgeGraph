@@ -61,12 +61,9 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"}
-    ],
-    "enables": [
       {
-        "@id": "urn:ngm:class:content-organisation",
-        "label": "Content Organisation"
+        "@id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
       }
     ]
   },

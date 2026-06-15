@@ -352,10 +352,6 @@ public:: true
         "label": "Delegation System"
       },
       {
-        "@id": "urn:ngm:class:governance-forum",
-        "label": "Governance Forum"
-      },
-      {
         "@id": "urn:ngm:class:quorum-threshold",
         "label": "Quorum Threshold"
       },
@@ -420,20 +416,12 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:community-ownership",
-        "label": "Community Ownership"
-      },
-      {
         "@id": "urn:ngm:class:dao",
         "label": "DAO"
       },
       {
         "@id": "urn:ngm:class:decentralized-finance",
         "label": "Decentralized Finance"
-      },
-      {
-        "@id": "urn:ngm:class:parameter-adjustment",
-        "label": "Parameter Adjustment"
       },
       {
         "@id": "urn:ngm:class:protocol-upgrades",
@@ -480,15 +468,11 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:discourse-forums",
-        "label": "Discourse Forums"
-      },
-      {
         "@id": "urn:ngm:class:erc-20-tokens",
         "label": "ERC-20 Tokens"
       },
       {
-        "@id": "urn:ngm:class:governor-contracts",
+        "@id": "urn:ngm:class:open-zeppelin-governor-contracts",
         "label": "Governor Contracts"
       },
       {
@@ -514,7 +498,7 @@ public:: true
         "label": "Common Pool Resources"
       },
       {
-        "@id": "urn:ngm:class:compound-finance",
+        "@id": "urn:ngm:class:compound",
         "label": "Compound Finance"
       },
       {
@@ -560,10 +544,6 @@ public:: true
         "label": "Open Source Governance"
       },
       {
-        "@id": "urn:ngm:class:protocol-decentralization",
-        "label": "Protocol Decentralization"
-      },
-      {
         "@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
         "label": "Public Goods Funding"
       }
@@ -578,10 +558,6 @@ public:: true
         "label": "Compound Governor Bravo"
       },
       {
-        "@id": "urn:ngm:class:cosmos-governance-module",
-        "label": "Cosmos Governance Module"
-      },
-      {
         "@id": "urn:ngm:class:eip-process",
         "label": "EIP Process"
       },
@@ -590,7 +566,7 @@ public:: true
         "label": "OpenZeppelin Governor"
       },
       {
-        "@id": "urn:ngm:class:tally-protocol",
+        "@id": "urn:ngm:class:tally",
         "label": "Tally Protocol"
       }
     ]

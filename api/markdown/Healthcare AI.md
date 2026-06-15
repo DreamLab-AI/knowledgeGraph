@@ -37,55 +37,127 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:medical-ai", "label": "Medical AI"},
-    {"@id": "urn:ngm:class:clinical-ai", "label": "Clinical AI"},
-    {"@id": "urn:ngm:class:health-informatics-ai", "label": "Health Informatics AI"}
+    {
+      "@id": "urn:ngm:class:medical-ai",
+      "label": "Medical AI"
+    },
+    {
+      "@id": "urn:ngm:class:clinical-ai",
+      "label": "Clinical AI"
+    },
+    {
+      "@id": "urn:ngm:class:health-informatics-ai",
+      "label": "Health Informatics AI"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:medical-imaging", "label": "Medical Imaging"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:clinical-decision-support", "label": "Clinical Decision Support"},
-      {"@id": "urn:ngm:class:drug-discovery", "label": "Drug Discovery"},
-      {"@id": "urn:ngm:class:precision-medicine", "label": "Precision Medicine"},
-      {"@id": "urn:ngm:class:genomic-analysis", "label": "Genomic Analysis"},
-      {"@id": "urn:ngm:class:patient-risk-stratification", "label": "Patient Risk Stratification"}
+      {
+        "@id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      },
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:precision-medicine",
+        "label": "Precision Medicine"
+      },
+      {
+        "@id": "urn:ngm:class:patient-risk-stratification",
+        "label": "Patient Risk Stratification"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:electronic-health-records", "label": "Electronic Health Records"},
-      {"@id": "urn:ngm:class:health-data-governance", "label": "Health Data Governance"},
-      {"@id": "urn:ngm:class:data-privacy", "label": "Data Privacy"},
-      {"@id": "urn:ngm:class:model-explainability", "label": "Model Explainability"}
+      {
+        "@id": "urn:ngm:class:electronic-health-records",
+        "label": "Electronic Health Records"
+      },
+      {
+        "@id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Model Explainability"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:fda-samd-regulation", "label": "FDA SaMD Regulation"},
-      {"@id": "urn:ngm:class:eu-mdr", "label": "EU MDR"},
-      {"@id": "urn:ngm:class:hl7-fhir", "label": "HL7 FHIR"},
-      {"@id": "urn:ngm:class:dicom", "label": "DICOM"}
+      {
+        "@id": "urn:ngm:class:hl7-fhir",
+        "label": "HL7 FHIR"
+      },
+      {
+        "@id": "urn:ngm:class:dicom",
+        "label": "DICOM"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:radiology-ai", "label": "Radiology AI"},
-      {"@id": "urn:ngm:class:pathology-ai", "label": "Pathology AI"},
-      {"@id": "urn:ngm:class:bias-in-ai", "label": "Bias in AI"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+      {
+        "@id": "urn:ngm:class:radiology-ai",
+        "label": "Radiology AI"
+      },
+      {
+        "@id": "urn:ngm:class:pathology-ai",
+        "label": "Pathology AI"
+      },
+      {
+        "@id": "urn:ngm:class:bias-in-ai",
+        "label": "Bias in AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:health-data-interoperability", "label": "Health Data Interoperability"},
-      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"}
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:blockchain-health-data", "label": "Blockchain Health Data"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:traditional-clinical-decision-support", "label": "Traditional Clinical Decision Support"},
-      {"@id": "urn:ngm:class:rule-based-expert-systems", "label": "Rule-Based Expert Systems"}
+      {
+        "@id": "urn:ngm:class:clinical-decision-support",
+        "label": "Traditional Clinical Decision Support"
+      },
+      {
+        "@id": "urn:ngm:class:expert-systems",
+        "label": "Rule-Based Expert Systems"
+      }
     ]
   },
   "quality": 0.74,

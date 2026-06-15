@@ -19,10 +19,6 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:http-server",
-        "label": "HTTP Server"
-      },
-      {
         "id": "urn:ngm:class:uri",
         "label": "URI"
       }
@@ -37,7 +33,7 @@
         "label": "Service Oriented Architecture"
       },
       {
-        "id": "urn:ngm:class:cloud-native-computing",
+        "id": "urn:ngm:class:cloud-native",
         "label": "Cloud Native Computing"
       },
       {
@@ -50,10 +46,6 @@
       {
         "id": "urn:ngm:class:http",
         "label": "HTTP"
-      },
-      {
-        "id": "urn:ngm:class:representational-state-transfer",
-        "label": "Representational State Transfer"
       },
       {
         "id": "urn:ngm:class:openapi-specification",
@@ -72,10 +64,6 @@
       {
         "id": "urn:ngm:class:grpc",
         "label": "gRPC"
-      },
-      {
-        "id": "urn:ngm:class:simple-object-access-protocol",
-        "label": "SOAP"
       },
       {
         "id": "urn:ngm:class:websocket",
@@ -134,10 +122,6 @@
       {
         "id": "urn:ngm:class:api-design",
         "label": "API Design"
-      },
-      {
-        "id": "urn:ngm:class:hypermedia",
-        "label": "Hypermedia"
       },
       {
         "id": "urn:ngm:class:stateless-protocol",

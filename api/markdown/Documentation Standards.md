@@ -109,27 +109,19 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:terminology-specification",
-        "label": "Terminology Specification"
-      },
-      {
         "@id": "urn:ngm:class:data-format-specification",
         "label": "Data Format Specification"
-      },
-      {
-        "@id": "urn:ngm:class:interface-protocol",
-        "label": "Interface Protocol"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:standards-ecosystem",
+        "@id": "urn:ngm:class:standards",
         "label": "Standards Ecosystem"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:conformance-testing",
+        "@id": "urn:ngm:class:standards-conformance-testing",
         "label": "Conformance Testing"
       },
       {
@@ -181,14 +173,6 @@ public:: true
       {
         "@id": "urn:ngm:class:documentation-generation",
         "label": "Documentation Generation"
-      },
-      {
-        "@id": "urn:ngm:class:accessibility-compliance",
-        "label": "Accessibility Compliance"
-      },
-      {
-        "@id": "urn:ngm:class:developer-experience",
-        "label": "Developer Experience"
       }
     ],
     "standardizedBy": [

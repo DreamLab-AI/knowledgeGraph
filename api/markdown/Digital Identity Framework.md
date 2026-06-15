@@ -126,15 +126,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:identity-policies",
-        "label": "Identity Policies"
-      },
-      {
         "@id": "urn:ngm:class:privacy-controls",
         "label": "Privacy Controls"
       },
       {
-        "@id": "urn:ngm:class:trust-mechanisms",
+        "@id": "urn:ngm:class:trust-mechanism",
         "label": "Trust Mechanisms"
       },
       {
@@ -160,10 +156,6 @@ public:: true
       {
         "@id": "urn:ngm:class:privacy-protection",
         "label": "Privacy Protection"
-      },
-      {
-        "@id": "urn:ngm:class:secure-authentication",
-        "label": "Secure Authentication"
       },
       {
         "@id": "urn:ngm:class:cross-platform-identity",

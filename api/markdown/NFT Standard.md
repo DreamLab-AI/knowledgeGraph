@@ -76,7 +76,7 @@ public:: true
         "label": "EIP-2981"
       },
       {
-        "@id": "urn:ngm:class:token-metadata-schema",
+        "@id": "urn:ngm:class:token-metadata",
         "label": "Token Metadata Schema"
       }
     ],
@@ -98,10 +98,6 @@ public:: true
       {
         "@id": "urn:ngm:class:digital-ownership",
         "label": "Digital Ownership"
-      },
-      {
-        "@id": "urn:ngm:class:on-chain-royalty",
-        "label": "On-Chain Royalty"
       },
       {
         "@id": "urn:ngm:class:nft-marketplace",
@@ -128,17 +124,13 @@ public:: true
         "label": "Digital Art"
       },
       {
-        "@id": "urn:ngm:class:gaming-asset",
-        "label": "Gaming Asset"
-      },
-      {
-        "@id": "urn:ngm:class:tokenised-real-world-asset",
+        "@id": "urn:ngm:class:tokenised-real-world-assets",
         "label": "Tokenised Real-World Asset"
       }
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:ethereum-foundation",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-foundation",
         "label": "Ethereum Foundation"
       }
     ],
@@ -158,7 +150,7 @@ public:: true
         "label": "Digital Twin"
       },
       {
-        "@id": "urn:ngm:class:metaverse-asset",
+        "@id": "urn:ngm:class:metaverse",
         "label": "Metaverse Asset"
       },
       {

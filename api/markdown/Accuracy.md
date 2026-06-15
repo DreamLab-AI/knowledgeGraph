@@ -198,17 +198,9 @@ public:: true
       {
         "@id": "urn:ngm:class:classification-threshold",
         "label": "Classification Threshold"
-      },
-      {
-        "@id": "urn:ngm:class:class-distribution",
-        "label": "Class Distribution"
       }
     ],
     "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:balanced-accuracy",
-        "label": "Balanced Accuracy"
-      },
       {
         "@id": "urn:ngm:class:f1-score",
         "label": "F1 Score"

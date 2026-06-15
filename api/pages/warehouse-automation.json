@@ -18,24 +18,12 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:autonomous-mobile-robot",
+        "id": "urn:ngm:class:autonomous-mobile-robots",
         "label": "Autonomous Mobile Robot"
-      },
-      {
-        "id": "urn:ngm:class:automated-storage-and-retrieval-system",
-        "label": "Automated Storage and Retrieval System"
       },
       {
         "id": "urn:ngm:class:warehouse-management-system",
         "label": "Warehouse Management System"
-      },
-      {
-        "id": "urn:ngm:class:robotic-picking",
-        "label": "Robotic Picking"
-      },
-      {
-        "id": "urn:ngm:class:conveyor-system",
-        "label": "Conveyor System"
       }
     ],
     "requires": [
@@ -52,7 +40,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:robot-fleet-management",
+        "id": "urn:ngm:class:fleet-management",
         "label": "Robot Fleet Management"
       }
     ],
@@ -60,10 +48,6 @@
       {
         "id": "urn:ngm:class:logistics-optimization",
         "label": "Logistics Optimization"
-      },
-      {
-        "id": "urn:ngm:class:order-fulfilment",
-        "label": "Order Fulfilment"
       },
       {
         "id": "urn:ngm:class:inventory-management",
@@ -76,7 +60,7 @@
         "label": "Enterprise Resource Planning"
       },
       {
-        "id": "urn:ngm:class:iot-sensors",
+        "id": "urn:ngm:class:io-t-sensors",
         "label": "IoT Sensors"
       },
       {
@@ -86,10 +70,6 @@
     ],
     "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:manual-warehousing",
-        "label": "Manual Warehousing"
-      },
       {
         "id": "urn:ngm:class:human-robot-collaboration",
         "label": "Human-Robot Collaboration"

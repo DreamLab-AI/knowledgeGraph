@@ -154,16 +154,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:assessment-system",
-        "label": "Assessment System"
-      },
-      {
         "@id": "urn:ngm:class:collaboration-tools",
         "label": "Collaboration Tools"
-      },
-      {
-        "@id": "urn:ngm:class:content-authoring-system",
-        "label": "Content Authoring System"
       },
       {
         "@id": "urn:ngm:class:learning-analytics",
@@ -202,7 +194,7 @@ public:: true
         "label": "Remote Education"
       },
       {
-        "@id": "urn:ngm:class:skills-training",
+        "@id": "urn:ngm:class:training",
         "label": "Skills Training"
       },
       {

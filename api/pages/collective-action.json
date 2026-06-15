@@ -20,10 +20,6 @@
       {
         "id": "urn:ngm:class:free-rider-problem",
         "label": "Free-Rider Problem"
-      },
-      {
-        "id": "urn:ngm:class:selective-incentive",
-        "label": "Selective Incentive"
       }
     ],
     "requires": [
@@ -32,7 +28,7 @@
         "label": "Incentive Mechanism"
       },
       {
-        "id": "urn:ngm:class:monitoring-and-enforcement",
+        "id": "urn:ngm:class:monitoring",
         "label": "Monitoring and Enforcement"
       },
       {
@@ -54,7 +50,7 @@
         "label": "Public Goods"
       },
       {
-        "id": "urn:ngm:class:social-coordination",
+        "id": "urn:ngm:class:social-interaction",
         "label": "Social Coordination"
       },
       {

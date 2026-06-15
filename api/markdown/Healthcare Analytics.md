@@ -128,10 +128,6 @@ public:: true
       {
         "@id": "urn:ngm:class:precision-medicine",
         "label": "Precision Medicine"
-      },
-      {
-        "@id": "urn:ngm:class:value-based-care",
-        "label": "Value-Based Care"
       }
     ],
     "dependsOn": [
@@ -160,16 +156,6 @@ public:: true
       {
         "@id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
-      }
-    ],
-    "supports": [
-      {
-        "@id": "urn:ngm:class:public-health-informatics",
-        "label": "Public Health Informatics"
-      },
-      {
-        "@id": "urn:ngm:class:health-policy",
-        "label": "Health Policy"
       }
     ],
     "standardizedBy": [

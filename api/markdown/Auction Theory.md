@@ -69,20 +69,8 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:english-auction",
-        "label": "English Auction"
-      },
-      {
         "@id": "urn:ngm:class:dutch-auction",
         "label": "Dutch Auction"
-      },
-      {
-        "@id": "urn:ngm:class:vickrey-auction",
-        "label": "Vickrey Auction"
-      },
-      {
-        "@id": "urn:ngm:class:combinatorial-auction",
-        "label": "Combinatorial Auction"
       }
     ],
     "requires": [
@@ -103,10 +91,6 @@ public:: true
       {
         "@id": "urn:ngm:class:gas-mechanism",
         "label": "Gas Mechanism"
-      },
-      {
-        "@id": "urn:ngm:class:spectrum-auction",
-        "label": "Spectrum Auction"
       },
       {
         "@id": "urn:ngm:class:programmatic-advertising",
@@ -143,10 +127,6 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:posted-price-mechanism",
-        "label": "Posted Price Mechanism"
-      },
-      {
         "@id": "urn:ngm:class:negotiation",
         "label": "Negotiation"
       }
@@ -177,10 +157,6 @@ public:: true
       {
         "@id": "urn:ngm:class:optimal-control",
         "label": "Optimal Control"
-      },
-      {
-        "@id": "urn:ngm:class:revenue-equivalence",
-        "label": "Revenue Equivalence"
       }
     ]
   },

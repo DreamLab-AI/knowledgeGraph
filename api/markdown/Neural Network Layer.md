@@ -133,21 +133,7 @@ public:: true
         "label": "Tensor Operation"
       }
     ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:linear-transformation",
-        "label": "Linear Transformation"
-      },
-      {
-        "@id": "urn:ngm:class:convolutional-operation",
-        "label": "Convolutional Operation"
-      }
-    ],
     "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:recurrent-layer",
-        "label": "Recurrent Layer"
-      },
       {
         "@id": "urn:ngm:class:convolutional-layer",
         "label": "Convolutional Layer"
@@ -169,7 +155,7 @@ public:: true
         "label": "Transfer Learning"
       },
       {
-        "@id": "urn:ngm:class:model-fine-tuning",
+        "@id": "urn:ngm:class:fine-tuning",
         "label": "Model Fine-Tuning"
       }
     ],

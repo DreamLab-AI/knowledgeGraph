@@ -487,22 +487,6 @@ alias:: Hash-Function, HashFunction
       {
         "@id": "urn:ngm:class:initialization-vector",
         "label": "Initialization Vector"
-      },
-      {
-        "@id": "urn:ngm:class:internal-state",
-        "label": "Internal State"
-      },
-      {
-        "@id": "urn:ngm:class:output-truncation",
-        "label": "Output Truncation"
-      },
-      {
-        "@id": "urn:ngm:class:padding-scheme",
-        "label": "Padding Scheme"
-      },
-      {
-        "@id": "urn:ngm:class:round-function",
-        "label": "Round Function"
       }
     ],
     "requires": [
@@ -511,16 +495,8 @@ alias:: Hash-Function, HashFunction
         "label": "Avalanche Effect"
       },
       {
-        "@id": "urn:ngm:class:computational-security",
-        "label": "Computational Security"
-      },
-      {
         "@id": "urn:ngm:class:determinism",
         "label": "Determinism"
-      },
-      {
-        "@id": "urn:ngm:class:pseudo-randomness",
-        "label": "Pseudo-Randomness"
       },
       {
         "@id": "urn:ngm:class:cryptography",
@@ -545,16 +521,12 @@ alias:: Hash-Function, HashFunction
         "label": "Deduplication"
       },
       {
-        "@id": "urn:ngm:class:key-derivation",
+        "@id": "urn:ngm:class:key-derivation-function",
         "label": "Key Derivation"
       },
       {
         "@id": "urn:ngm:class:message-authentication-code",
         "label": "Message Authentication Code"
-      },
-      {
-        "@id": "urn:ngm:class:password-storage",
-        "label": "Password Storage"
       },
       {
         "@id": "urn:ngm:class:content-addressing",
@@ -575,10 +547,6 @@ alias:: Hash-Function, HashFunction
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:indistinguishability",
-        "label": "Indistinguishability"
-      },
-      {
         "@id": "urn:ngm:class:preimage-resistance",
         "label": "Preimage Resistance"
       },
@@ -587,52 +555,14 @@ alias:: Hash-Function, HashFunction
         "label": "Random Oracle Model"
       },
       {
-        "@id": "urn:ngm:class:second-pre-image-resistance",
-        "label": "Second Pre-Image Resistance"
-      },
-      {
         "@id": "urn:ngm:class:collision-resistance",
         "label": "Collision Resistance"
       }
     ],
-    "uses": [
-      {
-        "@id": "urn:ngm:class:davies-meyer-construction",
-        "label": "Davies-Meyer Construction"
-      },
-      {
-        "@id": "urn:ngm:class:haifa-construction",
-        "label": "HAIFA Construction"
-      },
-      {
-        "@id": "urn:ngm:class:merkle-damg-rd-construction",
-        "label": "Merkle-Damgård Construction"
-      },
-      {
-        "@id": "urn:ngm:class:sponge-construction",
-        "label": "Sponge Construction"
-      },
-      {
-        "@id": "urn:ngm:class:wide-pipe-construction",
-        "label": "Wide-Pipe Construction"
-      }
-    ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:birthday-attack",
-        "label": "Birthday Attack"
-      },
       {
         "@id": "urn:ngm:class:bloom-filter",
         "label": "Bloom Filter"
-      },
-      {
-        "@id": "urn:ngm:class:cryptanalysis",
-        "label": "Cryptanalysis"
-      },
-      {
-        "@id": "urn:ngm:class:length-extension-attack",
-        "label": "Length-Extension Attack"
       },
       {
         "@id": "urn:ngm:class:side-channel-attack",
@@ -682,30 +612,6 @@ alias:: Hash-Function, HashFunction
       }
     ],
     "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:ietf-rfc-2104-hmac",
-        "label": "IETF RFC 2104 HMAC"
-      },
-      {
-        "@id": "urn:ngm:class:ietf-rfc-6234",
-        "label": "IETF RFC 6234"
-      },
-      {
-        "@id": "urn:ngm:class:ietf-rfc-8439",
-        "label": "IETF RFC 8439"
-      },
-      {
-        "@id": "urn:ngm:class:ietf-rfc-9106-argon2",
-        "label": "IETF RFC 9106 Argon2"
-      },
-      {
-        "@id": "urn:ngm:class:iso-iec-10118-3",
-        "label": "ISO/IEC 10118-3"
-      },
-      {
-        "@id": "urn:ngm:class:nist-fips-180-4",
-        "label": "NIST FIPS 180-4"
-      },
       {
         "@id": "urn:ngm:class:nist-fips-202",
         "label": "NIST FIPS 202"

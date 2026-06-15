@@ -112,39 +112,27 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:channel-protocol",
+        "@id": "urn:ngm:class:state-channel",
         "label": "Channel Protocol"
       },
       {
-        "@id": "urn:ngm:class:connection-protocol",
-        "label": "Connection Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:packet-system",
-        "label": "Packet System"
-      },
-      {
-        "@id": "urn:ngm:class:ics-20-fungible-token-transfer",
+        "@id": "urn:ngm:class:fungible-token",
         "label": "ICS-20 Fungible Token Transfer"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:cosmos-ecosystem",
+        "@id": "urn:ngm:class:cosmos",
         "label": "Cosmos Ecosystem"
-      },
-      {
-        "@id": "urn:ngm:class:cosmos-network",
-        "label": "Cosmos Network"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:blockchain-light-client",
+        "@id": "urn:ngm:class:light-client",
         "label": "Blockchain Light Client"
       },
       {
-        "@id": "urn:ngm:class:packet-authentication",
+        "@id": "urn:ngm:class:authentication",
         "label": "Packet Authentication"
       },
       {
@@ -162,7 +150,7 @@ public:: true
         "label": "Cross-Chain Contracts"
       },
       {
-        "@id": "urn:ngm:class:inter-chain-value-transfer",
+        "@id": "urn:ngm:class:value-transfer",
         "label": "Inter-Chain Value Transfer"
       },
       {
@@ -180,7 +168,7 @@ public:: true
         "label": "Cosmos SDK"
       },
       {
-        "@id": "urn:ngm:class:relayer-network",
+        "@id": "urn:ngm:class:relayer",
         "label": "Relayer Network"
       }
     ],
@@ -190,13 +178,13 @@ public:: true
         "label": "Interoperability Protocol"
       },
       {
-        "@id": "urn:ngm:class:ibc-protocol",
+        "@id": "urn:ngm:class:ibc",
         "label": "IBC Protocol"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:cryptographic-commitment-scheme",
+        "@id": "urn:ngm:class:commitment-scheme",
         "label": "Cryptographic Commitment Scheme"
       }
     ],
@@ -216,7 +204,7 @@ public:: true
         "label": "Polkadot XCM"
       },
       {
-        "@id": "urn:ngm:class:blockchain-bridge",
+        "@id": "urn:ngm:class:bridge",
         "label": "Blockchain Bridge"
       }
     ],
@@ -228,12 +216,6 @@ public:: true
       {
         "@id": "urn:ngm:class:network-protocol",
         "label": "Network Protocol"
-      }
-    ],
-    "relatedTo": [
-      {
-        "@id": "urn:ngm:class:blockchain-sovereignty",
-        "label": "Blockchain Sovereignty"
       }
     ]
   },

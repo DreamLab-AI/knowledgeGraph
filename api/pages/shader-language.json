@@ -22,7 +22,7 @@
         "label": "Vertex Shader"
       },
       {
-        "id": "urn:ngm:class:fragment-shader",
+        "id": "urn:ngm:class:pixel-shader",
         "label": "Fragment Shader"
       },
       {
@@ -96,20 +96,12 @@
       {
         "id": "urn:ngm:class:wgsl",
         "label": "WGSL"
-      },
-      {
-        "id": "urn:ngm:class:metal-shading-language",
-        "label": "Metal Shading Language"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:general-purpose-programming-language",
+        "id": "urn:ngm:class:programming-language",
         "label": "General-Purpose Programming Language"
-      },
-      {
-        "id": "urn:ngm:class:opencl-c",
-        "label": "OpenCL C"
       }
     ],
     "bridgesTo": [

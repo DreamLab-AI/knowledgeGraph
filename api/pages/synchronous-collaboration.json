@@ -23,7 +23,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:tc-0040-communication-protocols",
+        "id": "urn:ngm:class:communication-protocols",
         "label": "TC-0040-Communication-Protocols"
       }
     ],

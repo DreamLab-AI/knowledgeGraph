@@ -16,35 +16,14 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:kalman-gain",
-        "label": "Kalman Gain"
-      },
-      {
-        "id": "urn:ngm:class:prediction-step",
-        "label": "Prediction Step"
-      },
-      {
-        "id": "urn:ngm:class:measurement-update-step",
-        "label": "Measurement Update Step"
-      }
-    ],
+    "hasPart": [],
     "requires": [
-      {
-        "id": "urn:ngm:class:gaussian-noise-assumption",
-        "label": "Gaussian Noise Assumption"
-      },
-      {
-        "id": "urn:ngm:class:linear-system-model",
-        "label": "Linear System Model"
-      },
       {
         "id": "urn:ngm:class:covariance-matrix",
         "label": "Covariance Matrix"
       },
       {
-        "id": "urn:ngm:class:state-transition-model",
+        "id": "urn:ngm:class:state-transition-function",
         "label": "State Transition Model"
       }
     ],
@@ -80,15 +59,11 @@
       {
         "id": "urn:ngm:class:bayes-filter",
         "label": "Bayes Filter"
-      },
-      {
-        "id": "urn:ngm:class:recursive-estimator",
-        "label": "Recursive Estimator"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:rb-1014-monte-carlo-localization",
+        "id": "urn:ngm:class:monte-carlo-localization",
         "label": "Particle Filter"
       },
       {
@@ -106,7 +81,7 @@
         "label": "Inertial Navigation System"
       },
       {
-        "id": "urn:ngm:class:gps-positioning",
+        "id": "urn:ngm:class:gps",
         "label": "GPS Positioning"
       }
     ],
@@ -137,7 +112,7 @@
         "label": "RB 1013 localization"
       },
       {
-        "id": "urn:ngm:class:rb-1002-closed-loop-control",
+        "id": "urn:ngm:class:closed-loop-control",
         "label": "Closed-Loop Control"
       }
     ]

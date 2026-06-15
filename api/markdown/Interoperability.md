@@ -671,55 +671,121 @@ public:: true
   },
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:technical-standards", "label": "Technical Standards"},
-      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"},
-      {"@id": "urn:ngm:class:protocol-compatibility", "label": "Protocol Compatibility"}
+      {
+        "@id": "urn:ngm:class:technical-standards",
+        "label": "Technical Standards"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-compatibility",
+        "label": "Protocol Compatibility"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cross-platform-interoperability", "label": "Cross-Platform Interoperability"},
-      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"},
-      {"@id": "urn:ngm:class:data-portability", "label": "Data Portability"}
+      {
+        "@id": "urn:ngm:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:data-portability",
+        "label": "Data Portability"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:network-connectivity", "label": "Network Connectivity"},
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:protocol-negotiation", "label": "Protocol Negotiation"}
+      {
+        "@id": "urn:ngm:class:network-connectivity",
+        "label": "Network Connectivity"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
-      {"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"},
-      {"@id": "urn:ngm:class:hash-time-locked-contracts", "label": "Hash Time-Locked Contracts"}
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:hash-time-locked-contracts",
+        "label": "Hash Time-Locked Contracts"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:decentralized-finance", "label": "Decentralized Finance"},
-      {"@id": "urn:ngm:class:multi-chain-ecosystem", "label": "Multi-Chain Ecosystem"}
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "@id": "urn:ngm:class:multi-chain-ecosystem",
+        "label": "Multi-Chain Ecosystem"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:cosmos-ibc", "label": "Cosmos IBC"},
-      {"@id": "urn:ngm:class:w3c-standards", "label": "W3C Standards"},
-      {"@id": "urn:ngm:class:hl7-fhir", "label": "HL7 FHIR"}
+      {
+        "@id": "urn:ngm:class:cosmos-ibc",
+        "label": "Cosmos IBC"
+      },
+      {
+        "@id": "urn:ngm:class:w3c-standards",
+        "label": "W3C Standards"
+      },
+      {
+        "@id": "urn:ngm:class:hl7-fhir",
+        "label": "HL7 FHIR"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:vendor-lock-in", "label": "Vendor Lock-In"},
-      {"@id": "urn:ngm:class:system-isolation", "label": "System Isolation"}
+      {
+        "@id": "urn:ngm:class:vendor-lock-in",
+        "label": "Vendor Lock-In"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
-      {"@id": "urn:ngm:class:artificial-intelligence-integration", "label": "AI Integration"},
-      {"@id": "urn:ngm:class:metaverse-cross-platform", "label": "Metaverse Cross-Platform Standards"}
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web Linked Data Standard"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-standards", "label": "Data Standards"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:decentralized-identifier", "label": "Decentralized Identifier"}
+      {
+        "@id": "urn:ngm:class:data-standards",
+        "label": "Data Standards"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:cross-system-integration", "label": "Cross-System Integration"},
-    {"@id": "urn:ngm:class:system-integration-capability", "label": "System Integration Capability"}
+    {
+      "@id": "urn:ngm:class:cross-system-integration",
+      "label": "Cross-System Integration"
+    },
+    {
+      "@id": "urn:ngm:class:system-integration-capability",
+      "label": "System Integration Capability"
+    }
   ],
   "quality": 0.72,
   "provenance": {

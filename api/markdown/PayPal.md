@@ -105,7 +105,7 @@ public:: true
         "label": "Digital Asset"
       },
       {
-        "@id": "urn:ngm:class:cross-border-payment",
+        "@id": "urn:ngm:class:cross-border-payments",
         "label": "Cross-Border Payment"
       },
       {

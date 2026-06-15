@@ -38,7 +38,7 @@
         "label": "Identity Provider"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -130,7 +130,7 @@
         "label": "OAuth 2.0"
       },
       {
-        "id": "urn:ngm:class:openid-connect",
+        "id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
       }
     ],

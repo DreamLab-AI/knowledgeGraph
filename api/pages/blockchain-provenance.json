@@ -27,7 +27,7 @@
         "label": "Oracle Network"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -77,10 +77,6 @@
       {
         "id": "urn:ngm:class:centralised-database",
         "label": "Centralised Database"
-      },
-      {
-        "id": "urn:ngm:class:traditional-pki",
-        "label": "Traditional PKI"
       }
     ],
     "bridgesTo": [
@@ -131,11 +127,11 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:w3c-verifiable-credentials",
+        "id": "urn:ngm:class:w3-c-verifiable-credentials",
         "label": "W3C Verifiable Credentials"
       },
       {
-        "id": "urn:ngm:class:epcis-standard",
+        "id": "urn:ngm:class:gs1-epcis",
         "label": "EPCIS Standard"
       }
     ],

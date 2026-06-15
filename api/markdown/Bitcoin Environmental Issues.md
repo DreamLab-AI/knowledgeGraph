@@ -488,10 +488,6 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:asic-e-waste",
-        "label": "ASIC E-Waste"
-      },
-      {
         "@id": "urn:ngm:class:carbon-credits",
         "label": "Carbon Credits"
       },
@@ -502,10 +498,6 @@ public:: true
       {
         "@id": "urn:ngm:class:demand-response-mining",
         "label": "Demand Response Mining"
-      },
-      {
-        "@id": "urn:ngm:class:heat-reuse",
-        "label": "Heat Reuse"
       },
       {
         "@id": "urn:ngm:class:methane-mitigation-mining",
@@ -530,16 +522,12 @@ public:: true
         "label": "ASIC Hardware"
       },
       {
-        "@id": "urn:ngm:class:cooling-infrastructure",
+        "@id": "urn:ngm:class:cooling-system",
         "label": "Cooling Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:electricity-grid",
+        "@id": "urn:ngm:class:grid-infrastructure",
         "label": "Electricity Grid"
-      },
-      {
-        "@id": "urn:ngm:class:energy-data-reporting",
-        "label": "Energy Data Reporting"
       },
       {
         "@id": "urn:ngm:class:hash-rate",
@@ -552,12 +540,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:grid-demand-response",
+        "@id": "urn:ngm:class:demand-response",
         "label": "Grid Demand Response"
-      },
-      {
-        "@id": "urn:ngm:class:heat-reuse-applications",
-        "label": "Heat Reuse Applications"
       },
       {
         "@id": "urn:ngm:class:methane-emissions-reduction",
@@ -578,16 +562,8 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:demand-response-protocol",
+        "@id": "urn:ngm:class:demand-response",
         "label": "Demand Response Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:digital-flare-mitigation",
-        "label": "Digital Flare Mitigation"
-      },
-      {
-        "@id": "urn:ngm:class:esg-disclosure-framework",
-        "label": "ESG Disclosure Framework"
       },
       {
         "@id": "urn:ngm:class:life-cycle-assessment",
@@ -606,10 +582,6 @@ public:: true
       {
         "@id": "urn:ngm:class:demand-response",
         "label": "Demand Response"
-      },
-      {
-        "@id": "urn:ngm:class:heat-recovery-systems",
-        "label": "Heat Recovery Systems"
       },
       {
         "@id": "urn:ngm:class:immersion-cooling",
@@ -646,20 +618,8 @@ public:: true
         "label": "E-Waste"
       },
       {
-        "@id": "urn:ngm:class:energy-markets",
-        "label": "Energy Markets"
-      },
-      {
         "@id": "urn:ngm:class:esg-investing",
         "label": "ESG Investing"
-      },
-      {
-        "@id": "urn:ngm:class:methane-emissions",
-        "label": "Methane Emissions"
-      },
-      {
-        "@id": "urn:ngm:class:mining-economics",
-        "label": "Mining Economics"
       },
       {
         "@id": "urn:ngm:class:renewable-energy",
@@ -680,12 +640,8 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:carbon-neutrality-goals",
+        "@id": "urn:ngm:class:carbon-neutrality",
         "label": "Carbon Neutrality Goals"
-      },
-      {
-        "@id": "urn:ngm:class:district-heating",
-        "label": "District Heating"
       },
       {
         "@id": "urn:ngm:class:esg-investing",
@@ -700,7 +656,7 @@ public:: true
         "label": "Methane Abatement"
       },
       {
-        "@id": "urn:ngm:class:renewable-energy-development",
+        "@id": "urn:ngm:class:renewable-energy",
         "label": "Renewable Energy Development"
       }
     ],
@@ -714,7 +670,7 @@ public:: true
         "label": "FASB ASU 2023-08"
       },
       {
-        "@id": "urn:ngm:class:iso-14040-lca-standard",
+        "@id": "urn:ngm:class:iso-14040",
         "label": "ISO 14040 LCA Standard"
       },
       {

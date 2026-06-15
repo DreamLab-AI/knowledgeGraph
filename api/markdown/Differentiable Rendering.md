@@ -39,46 +39,103 @@ alias:: DifferentiableRendering
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"},
-      {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"},
-      {"@id": "urn:ngm:class:inverse-rendering", "label": "Inverse Rendering"},
-      {"@id": "urn:ngm:class:object-pose-estimation", "label": "Object Pose Estimation"},
-      {"@id": "urn:ngm:class:3-d-generative-model", "label": "3D Generative Model"}
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Object Pose Estimation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:ray-tracing", "label": "Ray Tracing"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
-      {"@id": "urn:ngm:class:rasterisation", "label": "Rasterisation"},
-      {"@id": "urn:ngm:class:monte-carlo-integration", "label": "Monte Carlo Integration"}
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:rasterisation",
+        "label": "Rasterisation"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-integration",
+        "label": "Monte Carlo Integration"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:automatic-differentiation", "label": "Automatic Differentiation"},
-      {"@id": "urn:ngm:class:deep-learning-framework", "label": "Deep Learning Framework"}
+      {
+        "@id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning-framework",
+        "label": "Deep Learning Framework"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:volumetric-rendering", "label": "Volumetric Rendering"},
-      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"}
+      {
+        "@id": "urn:ngm:class:volumetric-rendering",
+        "label": "Volumetric Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:gaussian-splatting", "label": "Gaussian Splatting"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:neural-scene-representation", "label": "Neural Scene Representation"},
-      {"@id": "urn:ngm:class:implicit-neural-representation", "label": "Implicit Neural Representation"},
-      {"@id": "urn:ngm:class:bidirectional-reflectance-distribution-function", "label": "Bidirectional Reflectance Distribution Function"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:classical-rendering", "label": "Classical Rendering"},
-      {"@id": "urn:ngm:class:non-differentiable-simulation", "label": "Non-Differentiable Simulation"}
+      {
+        "@id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:neural-scene-representation",
+        "label": "Neural Scene Representation"
+      },
+      {
+        "@id": "urn:ngm:class:implicit-neural-representation",
+        "label": "Implicit Neural Representation"
+      },
+      {
+        "@id": "urn:ngm:class:bidirectional-reflectance-distribution-function",
+        "label": "Bidirectional Reflectance Distribution Function"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:autonomous-driving", "label": "Autonomous Driving"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:differentiable-rasterisation", "label": "Differentiable Rasterisation"}
+    {
+      "@id": "urn:ngm:class:differentiable-rasterisation",
+      "label": "Differentiable Rasterisation"
+    }
   ],
   "quality": 0.74,
   "provenance": {

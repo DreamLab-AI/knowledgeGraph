@@ -23,57 +23,125 @@ public:: true
   "definition": "Biometric verification is the one-to-one matching process in which a live biometric sample presented by a claimant is compared against a single pre-enrolled template associated with the claimed identity, producing an accept or reject decision based on a similarity threshold. It is distinct from biometric identification, which performs a one-to-many search across an entire database, making verification faster and more privacy-preserving for authentication use cases.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:identity-verification",
+      "label": "Identity Verification"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:biometric-binding-mechanism", "label": "Biometric Binding Mechanism"},
-      {"@id": "urn:ngm:class:trusted-execution-environment", "label": "Trusted Execution Environment"},
-      {"@id": "urn:ngm:class:liveness-detection", "label": "Liveness Detection"},
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"}
+      {
+        "@id": "urn:ngm:class:biometric-binding-mechanism",
+        "label": "Biometric Binding Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "@id": "urn:ngm:class:liveness-detection",
+        "label": "Liveness Detection"
+      },
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:biometric-authentication", "label": "Biometric Authentication"},
-      {"@id": "urn:ngm:class:know-your-customer", "label": "Know Your Customer"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:remote-identity-proofing", "label": "Remote Identity Proofing"}
+      {
+        "@id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:identity-proofing",
+        "label": "Remote Identity Proofing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:biometric-enrolment", "label": "Biometric Enrolment"},
-      {"@id": "urn:ngm:class:presentation-attack-detection", "label": "Presentation Attack Detection"}
-    ],
-    "dependsOn": [
-      {"@id": "urn:ngm:class:cryptographic-template-protection", "label": "Cryptographic Template Protection"},
-      {"@id": "urn:ngm:class:similarity-scoring", "label": "Similarity Scoring"}
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:presentation-attack-detection",
+        "label": "Presentation Attack Detection"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:zero-trust-security", "label": "Zero Trust Security"}
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Security"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-19795", "label": "ISO/IEC 19795"},
-      {"@id": "urn:ngm:class:iso-iec-30107", "label": "ISO/IEC 30107"}
+      {
+        "@id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC 30107"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:biometric-identification", "label": "Biometric Identification"},
-      {"@id": "urn:ngm:class:password-authentication", "label": "Password Authentication"}
+      {
+        "@id": "urn:ngm:class:biometric-identification",
+        "label": "Biometric Identification"
+      },
+      {
+        "@id": "urn:ngm:class:password-authentication",
+        "label": "Password Authentication"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-identity-verification", "label": "Digital Identity Verification"},
-      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"},
-      {"@id": "urn:ngm:class:face-recognition", "label": "Face Recognition"},
-      {"@id": "urn:ngm:class:privacy-preserving-authentication", "label": "Privacy-Preserving Authentication"}
+      {
+        "@id": "urn:ngm:class:digital-identity-verification",
+        "label": "Digital Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:face-recognition",
+        "label": "Face Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-authentication",
+        "label": "Privacy-Preserving Authentication"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:biometric-identity-verification", "label": "Biometric Identity Verification"},
-    {"@id": "urn:ngm:class:one-to-one-biometric-matching", "label": "One-to-One Biometric Matching"}
+    {
+      "@id": "urn:ngm:class:biometric-identity-verification",
+      "label": "Biometric Identity Verification"
+    },
+    {
+      "@id": "urn:ngm:class:one-to-one-biometric-matching",
+      "label": "One-to-One Biometric Matching"
+    }
   ],
-  "quality": 0.80,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

@@ -276,11 +276,7 @@ public:: true
         "label": "Chain-of-Thought Prompting"
       },
       {
-        "@id": "urn:ngm:class:extended-thinking",
-        "label": "Extended Thinking"
-      },
-      {
-        "@id": "urn:ngm:class:outcome-reward-model",
+        "@id": "urn:ngm:class:reward-model",
         "label": "Outcome Reward Model"
       },
       {
@@ -290,10 +286,6 @@ public:: true
       {
         "@id": "urn:ngm:class:re-act",
         "label": "ReAct"
-      },
-      {
-        "@id": "urn:ngm:class:scratchpad-computation",
-        "label": "Scratchpad Computation"
       },
       {
         "@id": "urn:ngm:class:self-consistency",
@@ -420,10 +412,6 @@ public:: true
         "label": "Knowledge Graph"
       },
       {
-        "@id": "urn:ngm:class:lean",
-        "label": "Lean"
-      },
-      {
         "@id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
       },
@@ -518,10 +506,6 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:aime-benchmark",
-        "label": "AIME Benchmark"
-      },
-      {
         "@id": "urn:ngm:class:arc-agi",
         "label": "ARC-AGI"
       },
@@ -532,10 +516,6 @@ public:: true
       {
         "@id": "urn:ngm:class:formal-verification",
         "label": "Formal Verification"
-      },
-      {
-        "@id": "urn:ngm:class:gpqa-benchmark",
-        "label": "GPQA Benchmark"
       }
     ]
   },

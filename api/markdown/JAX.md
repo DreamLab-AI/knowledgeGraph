@@ -77,7 +77,7 @@ public:: true
         "label": "Python"
       },
       {
-        "@id": "urn:ngm:class:xla-compiler",
+        "@id": "urn:ngm:class:compiler",
         "label": "XLA Compiler"
       }
     ],
@@ -99,13 +99,13 @@ public:: true
         "label": "Large-Scale Model Training"
       },
       {
-        "@id": "urn:ngm:class:functional-programming",
+        "@id": "urn:ngm:class:programming-language",
         "label": "Functional Programming"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:numpy-api",
+        "@id": "urn:ngm:class:api",
         "label": "NumPy API"
       },
       {
@@ -129,16 +129,6 @@ public:: true
       {
         "@id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
-      }
-    ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:flax",
-        "label": "Flax"
-      },
-      {
-        "@id": "urn:ngm:class:haiku",
-        "label": "Haiku"
       }
     ],
     "contrastsWith": [

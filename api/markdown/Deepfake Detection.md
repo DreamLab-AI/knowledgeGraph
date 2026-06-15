@@ -23,52 +23,123 @@ public:: true
   "definition": "Deepfake detection is the application of machine learning and signal processing techniques to identify synthetic or manipulated media—including face-swapped video, voice-cloned audio, and AI-generated images—by analysing artefacts, inconsistencies, and statistical signatures that distinguish fabricated from authentic content. It operates as a countermeasure to generative adversarial networks and related synthesis methods.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:deepfakes", "label": "Deepfakes"},
-      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
-      {"@id": "urn:ngm:class:synthetic-media", "label": "Synthetic Media"}
+      {
+        "@id": "urn:ngm:class:deepfakes",
+        "label": "Deepfakes"
+      },
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:vision-transformer", "label": "Vision Transformer"},
-      {"@id": "urn:ngm:class:frequency-domain-analysis", "label": "Frequency Domain Analysis"},
-      {"@id": "urn:ngm:class:face-recognition", "label": "Face Recognition"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:face-recognition",
+        "label": "Face Recognition"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:content-authenticity", "label": "Content Authenticity"},
-      {"@id": "urn:ngm:class:content-authentication", "label": "Content Authentication"},
-      {"@id": "urn:ngm:class:media-forensics", "label": "Media Forensics"},
-      {"@id": "urn:ngm:class:disinformation-mitigation", "label": "Disinformation Mitigation"}
+      {
+        "@id": "urn:ngm:class:content-authenticity",
+        "label": "Content Authenticity"
+      },
+      {
+        "@id": "urn:ngm:class:content-authentication",
+        "label": "Content Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:media-forensics",
+        "label": "Media Forensics"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:training-dataset", "label": "Training Dataset"},
-      {"@id": "urn:ngm:class:video-analysis", "label": "Video Analysis"}
+      {
+        "@id": "urn:ngm:class:training-dataset",
+        "label": "Training Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision-video-analysis",
+        "label": "Video Analysis"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:audio-forensics", "label": "Audio Forensics"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:content-provenance", "label": "Content Provenance"},
-      {"@id": "urn:ngm:class:platform-trust-and-safety", "label": "Platform Trust and Safety"}
+      {
+        "@id": "urn:ngm:class:content-provenance",
+        "label": "Content Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:trust-and-safety",
+        "label": "Platform Trust and Safety"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:c2pa", "label": "C2PA"},
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}
+      {
+        "@id": "urn:ngm:class:c2pa",
+        "label": "C2PA"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:synthetic-media-detection", "label": "Synthetic Media Detection"},
-    {"@id": "urn:ngm:class:ai-generated-content-detection", "label": "AI-Generated Content Detection"}
+    {
+      "@id": "urn:ngm:class:synthetic-media-detection",
+      "label": "Synthetic Media Detection"
+    },
+    {
+      "@id": "urn:ngm:class:ai-generated-content-detection",
+      "label": "AI-Generated Content Detection"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

@@ -376,16 +376,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:bonding-curve",
+        "@id": "urn:ngm:class:token-bonding-curve",
         "label": "Bonding Curve"
       },
       {
         "@id": "urn:ngm:class:bribe-market",
         "label": "Bribe Market"
-      },
-      {
-        "@id": "urn:ngm:class:buyback-and-burn",
-        "label": "Buyback and Burn"
       },
       {
         "@id": "urn:ngm:class:delegation-system",
@@ -418,20 +414,12 @@ public:: true
       {
         "@id": "urn:ngm:class:mechanism-design",
         "label": "Mechanism Design"
-      },
-      {
-        "@id": "urn:ngm:class:protocol-economics",
-        "label": "Protocol Economics"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:on-chain-voting-infrastructure",
+        "@id": "urn:ngm:class:on-chain-voting",
         "label": "On-chain Voting Infrastructure"
-      },
-      {
-        "@id": "urn:ngm:class:token-distribution-event",
-        "label": "Token Distribution Event"
       },
       {
         "@id": "urn:ngm:class:governance-token",
@@ -446,40 +434,10 @@ public:: true
         "label": "Smart Contract"
       }
     ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:emission-direction-control",
-        "label": "Emission Direction Control"
-      },
-      {
-        "@id": "urn:ngm:class:long-term-holder-alignment",
-        "label": "Long-term Holder Alignment"
-      },
-      {
-        "@id": "urn:ngm:class:meta-governance-attack-resistance",
-        "label": "Meta-governance Attack Resistance"
-      },
-      {
-        "@id": "urn:ngm:class:protocol-fee-distribution",
-        "label": "Protocol Fee Distribution"
-      },
-      {
-        "@id": "urn:ngm:class:treasury-governance",
-        "label": "Treasury Governance"
-      }
-    ],
     "implements": [
       {
-        "@id": "urn:ngm:class:bonding-mechanism",
-        "label": "Bonding Mechanism"
-      },
-      {
-        "@id": "urn:ngm:class:gauge-weighting",
+        "@id": "urn:ngm:class:gauge-voting",
         "label": "Gauge Weighting"
-      },
-      {
-        "@id": "urn:ngm:class:real-yield-distribution",
-        "label": "Real Yield Distribution"
       },
       {
         "@id": "urn:ngm:class:vote-escrow-model",
@@ -508,7 +466,7 @@ public:: true
         "label": "Snapshot Governance"
       },
       {
-        "@id": "urn:ngm:class:tally-on-chain-voting",
+        "@id": "urn:ngm:class:tally",
         "label": "Tally On-chain Voting"
       },
       {
@@ -552,10 +510,6 @@ public:: true
       {
         "@id": "urn:ngm:class:uniswap",
         "label": "Uniswap"
-      },
-      {
-        "@id": "urn:ngm:class:velodrome-finance",
-        "label": "Velodrome Finance"
       }
     ],
     "supports": [
@@ -564,20 +518,12 @@ public:: true
         "label": "Decentralised Autonomous Organisation"
       },
       {
-        "@id": "urn:ngm:class:governance-attack-resistance",
-        "label": "Governance Attack Resistance"
-      },
-      {
         "@id": "urn:ngm:class:protocol-sustainability",
         "label": "Protocol Sustainability"
       },
       {
         "@id": "urn:ngm:class:stakeholder-coordination",
         "label": "Stakeholder Coordination"
-      },
-      {
-        "@id": "urn:ngm:class:value-accrual",
-        "label": "Value Accrual"
       }
     ],
     "standardizedBy": [
@@ -594,11 +540,7 @@ public:: true
         "label": "ERC20 Standard"
       },
       {
-        "@id": "urn:ngm:class:maker-dao-endgame-framework",
-        "label": "MakerDAO Endgame Framework"
-      },
-      {
-        "@id": "urn:ngm:class:open-zeppelin-governance-contracts",
+        "@id": "urn:ngm:class:open-zeppelin-governor-contracts",
         "label": "OpenZeppelin Governance Contracts"
       }
     ]

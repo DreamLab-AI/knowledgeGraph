@@ -187,16 +187,12 @@ alias:: ContentAddressing
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:content-hash",
+        "@id": "urn:ngm:class:content-identifier",
         "label": "Content Hash"
       },
       {
         "@id": "urn:ngm:class:deterministic-serialisation",
         "label": "Deterministic Serialisation"
-      },
-      {
-        "@id": "urn:ngm:class:hash-minting",
-        "label": "Hash Minting"
       },
       {
         "@id": "urn:ngm:class:sha-256-hashing",
@@ -227,10 +223,6 @@ alias:: ContentAddressing
         "label": "Deduplication"
       },
       {
-        "@id": "urn:ngm:class:permanent-referenceability",
-        "label": "Permanent Referenceability"
-      },
-      {
         "@id": "urn:ngm:class:tamper-detection",
         "label": "Tamper Detection"
       },
@@ -241,12 +233,8 @@ alias:: ContentAddressing
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:content-addressed-storage-principles",
+        "@id": "urn:ngm:class:content-addressed-storage",
         "label": "Content-Addressed Storage Principles"
-      },
-      {
-        "@id": "urn:ngm:class:git-object-addressing",
-        "label": "Git Object Addressing"
       },
       {
         "@id": "urn:ngm:class:ipfs-content-addressing",

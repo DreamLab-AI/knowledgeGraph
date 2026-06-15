@@ -87,20 +87,12 @@ public:: true
       {
         "@id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
-      },
-      {
-        "@id": "urn:ngm:class:cryptocurrency-forensics",
-        "label": "Cryptocurrency Forensics"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:heuristic-clustering",
         "label": "Heuristic Clustering"
-      },
-      {
-        "@id": "urn:ngm:class:entity-attribution",
-        "label": "Entity Attribution"
       },
       {
         "@id": "urn:ngm:class:risk-scoring",
@@ -117,26 +109,14 @@ public:: true
         "label": "FATF Travel Rule"
       },
       {
-        "@id": "urn:ngm:class:virtual-asset-service-provider",
+        "@id": "urn:ngm:class:bc-0456-virtual-asset-service-providers",
         "label": "Virtual Asset Service Provider"
-      },
-      {
-        "@id": "urn:ngm:class:financial-institution",
-        "label": "Financial Institution"
       }
     ],
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:chainalysis",
         "label": "Chainalysis"
-      },
-      {
-        "@id": "urn:ngm:class:ciphertrace",
-        "label": "CipherTrace"
-      },
-      {
-        "@id": "urn:ngm:class:trm-labs",
-        "label": "TRM Labs"
       }
     ],
     "relatedTo": [
@@ -157,10 +137,6 @@ public:: true
       {
         "@id": "urn:ngm:class:financial-crime-compliance",
         "label": "Financial Crime Compliance"
-      },
-      {
-        "@id": "urn:ngm:class:law-enforcement-intelligence",
-        "label": "Law Enforcement Intelligence"
       }
     ]
   },

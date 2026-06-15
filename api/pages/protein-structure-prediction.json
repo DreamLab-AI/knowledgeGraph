@@ -16,29 +16,8 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:inter-residue-distance-prediction",
-        "label": "Inter-Residue Distance Prediction"
-      },
-      {
-        "id": "urn:ngm:class:torsion-angle-prediction",
-        "label": "Torsion Angle Prediction"
-      },
-      {
-        "id": "urn:ngm:class:structure-refinement",
-        "label": "Structure Refinement"
-      }
-    ],
+    "hasPart": [],
     "requires": [
-      {
-        "id": "urn:ngm:class:amino-acid-sequence",
-        "label": "Amino Acid Sequence"
-      },
-      {
-        "id": "urn:ngm:class:evolutionary-covariation",
-        "label": "Evolutionary Covariation"
-      },
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
@@ -48,25 +27,9 @@
       {
         "id": "urn:ngm:class:drug-discovery",
         "label": "Drug Discovery"
-      },
-      {
-        "id": "urn:ngm:class:structure-based-drug-design",
-        "label": "Structure-Based Drug Design"
-      },
-      {
-        "id": "urn:ngm:class:protein-function-annotation",
-        "label": "Protein Function Annotation"
-      },
-      {
-        "id": "urn:ngm:class:enzyme-engineering",
-        "label": "Enzyme Engineering"
       }
     ],
     "dependsOn": [
-      {
-        "id": "urn:ngm:class:protein-data-bank",
-        "label": "Protein Data Bank"
-      },
       {
         "id": "urn:ngm:class:neural-network-architecture",
         "label": "Neural Network Architecture"
@@ -77,20 +40,7 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:homology-modelling",
-        "label": "Homology Modelling"
-      },
-      {
-        "id": "urn:ngm:class:x-ray-crystallography",
-        "label": "X-Ray Crystallography"
-      },
-      {
-        "id": "urn:ngm:class:cryo-electron-microscopy",
-        "label": "Cryo-Electron Microscopy"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:artificial-intelligence",
@@ -113,10 +63,6 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:multiple-sequence-alignment",
-        "label": "Multiple Sequence Alignment"
       },
       {
         "id": "urn:ngm:class:graph-neural-networks",

@@ -16,36 +16,11 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:smartweave",
-        "label": "SmartWeave"
-      },
-      {
-        "id": "urn:ngm:class:ao-compute",
-        "label": "AO Compute"
-      },
-      {
-        "id": "urn:ngm:class:bundlr-network",
-        "label": "Bundlr Network"
-      },
-      {
-        "id": "urn:ngm:class:blockweave",
-        "label": "Blockweave"
-      }
-    ],
+    "hasPart": [],
     "requires": [
-      {
-        "id": "urn:ngm:class:ar-token",
-        "label": "AR Token"
-      },
       {
         "id": "urn:ngm:class:peer-to-peer-network",
         "label": "Peer-to-Peer Network"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-endowment",
-        "label": "Cryptographic Endowment"
       }
     ],
     "enables": [
@@ -90,7 +65,7 @@
         "label": "BitTorrent"
       },
       {
-        "id": "urn:ngm:class:cloud-object-storage",
+        "id": "urn:ngm:class:object-storage",
         "label": "Cloud Object Storage"
       }
     ],
@@ -109,10 +84,6 @@
       }
     ],
     "uses": [
-      {
-        "id": "urn:ngm:class:proof-of-access",
-        "label": "Proof Of Access"
-      },
       {
         "id": "urn:ngm:class:proof-of-work",
         "label": "Proof Of Work"

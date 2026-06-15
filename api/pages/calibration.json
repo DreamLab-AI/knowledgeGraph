@@ -28,10 +28,6 @@
       {
         "id": "urn:ngm:class:extrinsic-calibration",
         "label": "Extrinsic Calibration"
-      },
-      {
-        "id": "urn:ngm:class:temporal-calibration",
-        "label": "Temporal Calibration"
       }
     ],
     "requires": [
@@ -42,10 +38,6 @@
       {
         "id": "urn:ngm:class:ground-truth",
         "label": "Ground Truth"
-      },
-      {
-        "id": "urn:ngm:class:error-model",
-        "label": "Error Model"
       }
     ],
     "enables": [
@@ -74,10 +66,6 @@
       {
         "id": "urn:ngm:class:optimisation",
         "label": "Optimisation"
-      },
-      {
-        "id": "urn:ngm:class:least-squares",
-        "label": "Least Squares"
       }
     ],
     "implements": [],
@@ -92,10 +80,6 @@
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:probabilistic-calibration",
-        "label": "Probabilistic Calibration"
-      },
       {
         "id": "urn:ngm:class:model-calibration",
         "label": "Model Calibration"
@@ -142,26 +126,9 @@
       {
         "id": "urn:ngm:class:quality-assurance",
         "label": "Quality Assurance"
-      },
-      {
-        "id": "urn:ngm:class:sensor-pipeline",
-        "label": "Sensor Pipeline"
       }
     ],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:sensor-noise",
-        "label": "Sensor Noise"
-      },
-      {
-        "id": "urn:ngm:class:systematic-error",
-        "label": "Systematic Error"
-      },
-      {
-        "id": "urn:ngm:class:kinematic-calibration",
-        "label": "Kinematic Calibration"
-      }
-    ]
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

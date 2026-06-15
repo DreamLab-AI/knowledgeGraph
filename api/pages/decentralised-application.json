@@ -22,11 +22,7 @@
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:frontend-interface",
-        "label": "Frontend Interface"
-      },
-      {
-        "id": "urn:ngm:class:wallet-integration",
+        "id": "urn:ngm:class:wallet",
         "label": "Wallet Integration"
       }
     ],
@@ -56,10 +52,6 @@
       {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
-      },
-      {
-        "id": "urn:ngm:class:permissionless-access",
-        "label": "Permissionless Access"
       }
     ],
     "dependsOn": [
@@ -78,7 +70,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:web3-protocol",
+        "id": "urn:ngm:class:web3",
         "label": "Web3 Protocol"
       },
       {
@@ -86,12 +78,7 @@
         "label": "Open Source Software"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:centralised-application",
-        "label": "Centralised Application"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:distributed-systems",

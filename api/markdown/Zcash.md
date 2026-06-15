@@ -95,17 +95,9 @@ public:: true
       {
         "@id": "urn:ngm:class:shielded-transaction",
         "label": "Shielded Transaction"
-      },
-      {
-        "@id": "urn:ngm:class:sapling-protocol",
-        "label": "Sapling Protocol"
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:equihash",
-        "label": "Equihash"
-      },
       {
         "@id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Tree"
@@ -137,10 +129,6 @@ public:: true
       {
         "@id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin"
-      },
-      {
-        "@id": "urn:ngm:class:dash",
-        "label": "Dash"
       }
     ],
     "bridgesTo": [
@@ -161,14 +149,6 @@ public:: true
       {
         "@id": "urn:ngm:class:cryptocurrency",
         "label": "Cryptocurrency"
-      },
-      {
-        "@id": "urn:ngm:class:electric-coin-company",
-        "label": "Electric Coin Company"
-      },
-      {
-        "@id": "urn:ngm:class:cryptographic-currency",
-        "label": "Cryptographic Currency"
       }
     ],
     "dependsOn": [
@@ -177,7 +157,7 @@ public:: true
         "label": "Blockchain"
       },
       {
-        "@id": "urn:ngm:class:public-key-cryptography",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       }
     ]

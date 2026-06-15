@@ -23,57 +23,131 @@ public:: true
   "definition": "Gitcoin Passport is a decentralised identity aggregation and sybil-resistance protocol that collects verifiable credential stamps from diverse identity providers—including Web2 social platforms, biometric services, on-chain activity records, and professional attestation networks—into a composable trust score attesting to the humanness and uniqueness of a wallet address. The system is built on W3C Decentralised Identifier and Verifiable Credential standards, storing credentials on the Ceramic Network to maintain user sovereignty over personal data without centralised custody. Its primary use case is protecting quadratic funding rounds and other public-goods allocation mechanisms from sybil attacks, where a single actor creates many accounts to multiply their influence. The stamp-based, configurable-weight architecture allows applications to set their own scoring thresholds according to their specific risk tolerance, and the open API enables Gitcoin Passport to function as a composable trust primitive across the broader Web3 ecosystem.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:decentralized-identity-did", "label": "Decentralized Identity (DID)"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:decentralized-identity-did",
+      "label": "Decentralized Identity (DID)"
+    }
+  ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:gitcoin", "label": "Gitcoin"}
+      {
+        "@id": "urn:ngm:class:gitcoin",
+        "label": "Gitcoin"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:verifiable-credential-vc", "label": "Verifiable Credential (VC)"},
-      {"@id": "urn:ngm:class:did-document", "label": "DID Document"},
-      {"@id": "urn:ngm:class:trust-score", "label": "Trust Score"}
+      {
+        "@id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential (VC)"
+      },
+      {
+        "@id": "urn:ngm:class:did-document",
+        "label": "DID Document"
+      },
+      {
+        "@id": "urn:ngm:class:trust-score-metric",
+        "label": "Trust Score"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ceramic-network", "label": "Ceramic Network"},
-      {"@id": "urn:ngm:class:decentralized-identifier", "label": "Decentralized Identifier"},
-      {"@id": "urn:ngm:class:digital-wallet", "label": "Digital Wallet"}
+      {
+        "@id": "urn:ngm:class:ceramic-network",
+        "label": "Ceramic Network"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:quadratic-funding", "label": "Quadratic Funding"},
-      {"@id": "urn:ngm:class:public-goods-funding", "label": "Public Goods Funding"},
-      {"@id": "urn:ngm:class:token-airdrop", "label": "Token Airdrop"},
-      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"}
+      {
+        "@id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
+        "label": "Public Goods Funding"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
-      {"@id": "urn:ngm:class:w3c-did-specification", "label": "W3C DID Specification"}
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-did-specification",
+        "label": "W3C DID Specification"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:sybil-resistance", "label": "Sybil Resistance"},
-      {"@id": "urn:ngm:class:identity-aggregation", "label": "Identity Aggregation"}
+      {
+        "@id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:proof-of-humanity", "label": "Proof of Humanity"},
-      {"@id": "urn:ngm:class:brightid", "label": "BrightID"},
-      {"@id": "urn:ngm:class:ens-ethereum-name-service", "label": "ENS (Ethereum Name Service)"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+      {
+        "@id": "urn:ngm:class:proof-of-humanity",
+        "label": "Proof of Humanity"
+      },
+      {
+        "@id": "urn:ngm:class:ens",
+        "label": "ENS (Ethereum Name Service)"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:sybil-attack", "label": "Sybil Attack"},
-      {"@id": "urn:ngm:class:centralised-identity", "label": "Centralised Identity"}
+      {
+        "@id": "urn:ngm:class:sybil-attack",
+        "label": "Sybil Attack"
+      },
+      {
+        "@id": "urn:ngm:class:centralised-identity",
+        "label": "Centralised Identity"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:reputation-system", "label": "Reputation System"}
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-content-authenticity", "label": "AI Content Authenticity"},
-      {"@id": "urn:ngm:class:federated-identity", "label": "Federated Identity"}
+      {
+        "@id": "urn:ngm:class:content-authenticity",
+        "label": "AI Content Authenticity"
+      },
+      {
+        "@id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:passport-protocol", "label": "Passport Protocol"}
+    {
+      "@id": "urn:ngm:class:passport-protocol",
+      "label": "Passport Protocol"
+    }
   ],
   "quality": 0.73,
   "provenance": {

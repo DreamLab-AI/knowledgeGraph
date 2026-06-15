@@ -23,58 +23,119 @@ public:: true
   "definition": "An Asset Management System (AMS) is an integrated software platform that tracks, manages, and optimises the lifecycle of physical, digital, or financial assets across an organisation. It consolidates asset data including acquisition, depreciation, maintenance, and disposal into a single governed repository. Modern AMS platforms enforce audit trails, automate compliance reporting, and feed into enterprise resource planning (ERP) and financial systems. They enable organisations to reduce total cost of ownership, mitigate risk, and demonstrate regulatory compliance.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:asset-management", "label": "Asset Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:asset-management",
+      "label": "Asset Management"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"},
-      {"@id": "urn:ngm:class:monitoring-system", "label": "Monitoring System"},
-      {"@id": "urn:ngm:class:asset-register", "label": "Asset Register"},
-      {"@id": "urn:ngm:class:work-order-management", "label": "Work Order Management"}
+      {
+        "@id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring-system",
+        "label": "Monitoring System"
+      },
+      {
+        "@id": "urn:ngm:class:asset-registry",
+        "label": "Asset Register"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"},
-      {"@id": "urn:ngm:class:audit-logging", "label": "Audit Logging"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:compliance-audit-trail", "label": "Compliance Audit Trail"},
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
-      {"@id": "urn:ngm:class:quality-assurance", "label": "Quality Assurance"},
-      {"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"},
-      {"@id": "urn:ngm:class:total-cost-of-ownership", "label": "Total Cost of Ownership"}
+      {
+        "@id": "urn:ngm:class:compliance-audit-trail",
+        "label": "Compliance Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:enterprise-resource-planning", "label": "Enterprise Resource Planning"},
-      {"@id": "urn:ngm:class:database-management-system", "label": "Database Management System"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:iso-55001", "label": "ISO 55001"},
-      {"@id": "urn:ngm:class:computerised-maintenance-management-system", "label": "Computerised Maintenance Management System"}
+      {
+        "@id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      },
+      {
+        "@id": "urn:ngm:class:database-management-system",
+        "label": "Database Management System"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
-      {"@id": "urn:ngm:class:iot-sensor", "label": "IoT Sensor"}
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:iot-sensor",
+        "label": "IoT Sensor"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:lifecycle-management", "label": "Lifecycle Management"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:configuration-management-database", "label": "Configuration Management Database"}
+      {
+        "@id": "urn:ngm:class:lifecycle-management",
+        "label": "Lifecycle Management"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:enterprise-asset-management", "label": "Enterprise Asset Management"},
-      {"@id": "urn:ngm:class:financial-reporting", "label": "Financial Reporting"}
+      {
+        "@id": "urn:ngm:class:financial-reporting",
+        "label": "Financial Reporting"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:enterprise-asset-management-system", "label": "Enterprise Asset Management System"},
-    {"@id": "urn:ngm:class:fixed-asset-management-system", "label": "Fixed Asset Management System"}
+    {
+      "@id": "urn:ngm:class:enterprise-asset-management-system",
+      "label": "Enterprise Asset Management System"
+    },
+    {
+      "@id": "urn:ngm:class:fixed-asset-management-system",
+      "label": "Fixed Asset Management System"
+    }
   ],
   "quality": 0.72,
   "provenance": {

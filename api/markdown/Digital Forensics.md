@@ -23,61 +23,130 @@ public:: true
   "definition": "Digital forensics is the scientific discipline concerned with the identification, preservation, extraction, analysis, and presentation of digital evidence from computing systems, networks, storage media, and connected devices in a manner that is legally admissible and reproducible. It applies structured methodologies — including write-blocked acquisition, cryptographic hashing for evidence integrity, and chain-of-custody documentation — to support criminal investigations, civil litigation, incident response, and regulatory compliance inquiries. Sub-disciplines include network forensics, mobile forensics, memory forensics, and cloud forensics, each requiring specialist tools and legal frameworks adapted to the peculiarities of the evidence medium. Practitioner outputs must survive rigorous judicial scrutiny, compelling both technical rigour and defensible, auditable process documentation.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:computer-forensics", "label": "Computer Forensics"},
-    {"@id": "urn:ngm:class:cyber-forensics", "label": "Cyber Forensics"},
-    {"@id": "urn:ngm:class:forensic-computing", "label": "Forensic Computing"}
+    {
+      "@id": "urn:ngm:class:computer-forensics",
+      "label": "Computer Forensics"
+    },
+    {
+      "@id": "urn:ngm:class:cyber-forensics",
+      "label": "Cyber Forensics"
+    },
+    {
+      "@id": "urn:ngm:class:forensic-computing",
+      "label": "Forensic Computing"
+    }
   ],
   "relations": {
-    "hasPart": [
-      {"@id": "urn:ngm:class:network-forensics", "label": "Network Forensics"},
-      {"@id": "urn:ngm:class:mobile-forensics", "label": "Mobile Forensics"},
-      {"@id": "urn:ngm:class:memory-forensics", "label": "Memory Forensics"},
-      {"@id": "urn:ngm:class:cloud-forensics", "label": "Cloud Forensics"},
-      {"@id": "urn:ngm:class:malware-forensics", "label": "Malware Forensics"}
-    ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"},
-      {"@id": "urn:ngm:class:digital-evidence-chain-of-custody", "label": "Digital Evidence Chain of Custody"},
-      {"@id": "urn:ngm:class:digital-forensics-framework", "label": "Digital Forensics Framework"},
-      {"@id": "urn:ngm:class:write-blocker", "label": "Write Blocker"},
-      {"@id": "urn:ngm:class:disk-imaging", "label": "Disk Imaging"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "@id": "urn:ngm:class:digital-evidence-chain-of-custody",
+        "label": "Digital Evidence Chain of Custody"
+      },
+      {
+        "@id": "urn:ngm:class:digital-forensics-framework",
+        "label": "Digital Forensics Framework"
+      },
+      {
+        "@id": "urn:ngm:class:write-blocker",
+        "label": "Write Blocker"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:attribution", "label": "Attribution"},
-      {"@id": "urn:ngm:class:e-discovery", "label": "E-Discovery"},
-      {"@id": "urn:ngm:class:threat-intelligence", "label": "Threat Intelligence"}
+      {
+        "@id": "urn:ngm:class:attribution",
+        "label": "Attribution"
+      },
+      {
+        "@id": "urn:ngm:class:e-discovery",
+        "label": "E-Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:chain-of-custody", "label": "Chain of Custody"},
-      {"@id": "urn:ngm:class:evidence-integrity", "label": "Evidence Integrity"},
-      {"@id": "urn:ngm:class:forensic-readiness", "label": "Forensic Readiness"}
+      {
+        "@id": "urn:ngm:class:chain-of-custody",
+        "label": "Chain of Custody"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"},
-      {"@id": "urn:ngm:class:threat-detection", "label": "Threat Detection"},
-      {"@id": "urn:ngm:class:network-security", "label": "Network Security"},
-      {"@id": "urn:ngm:class:threat-model", "label": "Threat Model"},
-      {"@id": "urn:ngm:class:penetration-testing", "label": "Penetration Testing"},
-      {"@id": "urn:ngm:class:log-management", "label": "Log Management"}
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "@id": "urn:ngm:class:threat-detection",
+        "label": "Threat Detection"
+      },
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:threat-model",
+        "label": "Threat Model"
+      },
+      {
+        "@id": "urn:ngm:class:penetration-testing",
+        "label": "Penetration Testing"
+      },
+      {
+        "@id": "urn:ngm:class:log-management",
+        "label": "Log Management"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:cybersecurity-standard", "label": "Cybersecurity Standard"},
-      {"@id": "urn:ngm:class:legal-proceedings", "label": "Legal Proceedings"}
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity-standard",
+        "label": "Cybersecurity Standard"
+      },
+      {
+        "@id": "urn:ngm:class:legal-proceedings",
+        "label": "Legal Proceedings"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-27037", "label": "ISO/IEC 27037"},
-      {"@id": "urn:ngm:class:nist-sp-800-86", "label": "NIST SP 800-86"}
+      {
+        "@id": "urn:ngm:class:iso-iec-27037",
+        "label": "ISO/IEC 27037"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:penetration-testing", "label": "Penetration Testing"},
-      {"@id": "urn:ngm:class:vulnerability-assessment", "label": "Vulnerability Assessment"}
+      {
+        "@id": "urn:ngm:class:penetration-testing",
+        "label": "Penetration Testing"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerability-assessment",
+        "label": "Vulnerability Assessment"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:data-analytics", "label": "Data Analytics"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      }
     ]
   },
   "quality": 0.72,

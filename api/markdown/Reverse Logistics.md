@@ -23,56 +23,107 @@ public:: true
   "definition": "Reverse logistics encompasses all operations related to the reuse, processing, and management of products and materials flowing backward through the supply chain from the consumer or end-of-life point toward the manufacturer or recycler. It includes product returns, refurbishment, remanufacturing, recycling, and responsible disposal, and is a key operational component of circular economy strategies.",
   "domain": "supply-chain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:logistics", "label": "Logistics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:logistics",
+      "label": "Logistics"
+    }
+  ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"},
-      {"@id": "urn:ngm:class:circular-economy", "label": "Circular Economy"},
-      {"@id": "urn:ngm:class:extended-producer-responsibility", "label": "Extended Producer Responsibility"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:returns-management", "label": "Returns Management"},
-      {"@id": "urn:ngm:class:remanufacturing", "label": "Remanufacturing"},
-      {"@id": "urn:ngm:class:product-refurbishment", "label": "Product Refurbishment"},
-      {"@id": "urn:ngm:class:disposition-management", "label": "Disposition Management"}
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "@id": "urn:ngm:class:extended-producer-responsibility",
+        "label": "Extended Producer Responsibility"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:warehouse-management-system", "label": "Warehouse Management System"},
-      {"@id": "urn:ngm:class:condition-grading", "label": "Condition Grading"},
-      {"@id": "urn:ngm:class:reverse-supply-chain-network", "label": "Reverse Supply Chain Network"}
+      {
+        "@id": "urn:ngm:class:warehouse-management-system",
+        "label": "Warehouse Management System"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:waste-management", "label": "Waste Management"},
-      {"@id": "urn:ngm:class:deposit-return-scheme", "label": "Deposit Return Scheme"},
-      {"@id": "urn:ngm:class:secondary-market", "label": "Secondary Market"},
-      {"@id": "urn:ngm:class:material-recovery", "label": "Material Recovery"}
+      {
+        "@id": "urn:ngm:class:waste-management",
+        "label": "Waste Management"
+      },
+      {
+        "@id": "urn:ngm:class:deposit-return-scheme",
+        "label": "Deposit Return Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:secondary-market",
+        "label": "Secondary Market"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:logistics-management", "label": "Logistics Management"},
-      {"@id": "urn:ngm:class:product-tracking", "label": "Product Tracking"},
-      {"@id": "urn:ngm:class:supply-chain-visibility", "label": "Supply Chain Visibility"}
+      {
+        "@id": "urn:ngm:class:logistics-management",
+        "label": "Logistics Management"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-visibility",
+        "label": "Supply Chain Visibility"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:iot-sensor", "label": "IoT Sensor"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:iot-sensor",
+        "label": "IoT Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:forward-logistics", "label": "Forward Logistics"}
+      {
+        "@id": "urn:ngm:class:logistics",
+        "label": "Forward Logistics"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:e-waste", "label": "E-Waste"},
-      {"@id": "urn:ngm:class:closed-loop-supply-chain", "label": "Closed-Loop Supply Chain"},
-      {"@id": "urn:ngm:class:right-to-repair", "label": "Right to Repair"}
+      {
+        "@id": "urn:ngm:class:e-waste",
+        "label": "E-Waste"
+      },
+      {
+        "@id": "urn:ngm:class:right-to-repair",
+        "label": "Right to Repair"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:reverse-supply-chain", "label": "Reverse Supply Chain"},
-    {"@id": "urn:ngm:class:closed-loop-logistics", "label": "Closed-Loop Logistics"}
+    {
+      "@id": "urn:ngm:class:reverse-supply-chain",
+      "label": "Reverse Supply Chain"
+    },
+    {
+      "@id": "urn:ngm:class:closed-loop-logistics",
+      "label": "Closed-Loop Logistics"
+    }
   ],
   "quality": 0.72,
   "provenance": {

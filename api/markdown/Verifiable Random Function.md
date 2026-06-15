@@ -23,55 +23,127 @@ public:: true
   "definition": "A Verifiable Random Function (VRF) is a cryptographic primitive, introduced by Micali, Rabin, and Vadhan (1999), that maps an input to a pseudorandom output and produces a non-interactive proof allowing any third party to verify that the output was computed correctly from a given public key and input without learning the private key. The VRF owner possesses a private key SK and public key PK; given input alpha, they compute output beta and proof pi such that any verifier with PK can confirm that beta = VRF(SK, alpha) without requiring SK. VRFs provide both uniqueness (exactly one valid output per key-input pair) and pseudorandomness (output is indistinguishable from random to anyone without SK). They are deployed in blockchain systems for unpredictable, manipulation-resistant leader election (Algorand, Cardano, Hedera), NFT trait generation, on-chain lotteries, and as the cryptographic core of Chainlink VRF and similar oracle randomness services.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:cryptographic-proof",
+    "label": "Cryptographic Proof"
+  },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
-      {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"},
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:schnorr-signature", "label": "Schnorr Signature"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:discrete-logarithm-problem", "label": "Discrete Logarithm Problem"},
-      {"@id": "urn:ngm:class:non-interactive-zero-knowledge-proof", "label": "Non-Interactive Zero-Knowledge Proof"}
+      {
+        "@id": "urn:ngm:class:discrete-logarithm-problem",
+        "label": "Discrete Logarithm Problem"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Non-Interactive Zero-Knowledge Proof"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:blockchain-gaming", "label": "Blockchain Gaming"},
-      {"@id": "urn:ngm:class:oracle-network", "label": "Oracle Network"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:randomness-beacon", "label": "Randomness Beacon"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-gaming",
+        "label": "Blockchain Gaming"
+      },
+      {
+        "@id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:blockchain-oracle", "label": "Blockchain Oracle"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:pseudorandom-function", "label": "Pseudorandom Function"},
-      {"@id": "urn:ngm:class:ecvrf", "label": "ECVRF (RFC 9381)"}
+      {
+        "@id": "urn:ngm:class:pseudorandom-function",
+        "label": "Pseudorandom Function"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:threshold-cryptography", "label": "Threshold Cryptography"},
-      {"@id": "urn:ngm:class:secret-sharing", "label": "Secret Sharing"}
+      {
+        "@id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:secret-sharing",
+        "label": "Secret Sharing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:commit-reveal-scheme", "label": "Commit-Reveal Scheme"},
-      {"@id": "urn:ngm:class:trusted-execution-environment", "label": "Trusted Execution Environment"}
+      {
+        "@id": "urn:ngm:class:commit-reveal-scheme",
+        "label": "Commit-Reveal Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:random-number-generation", "label": "Random Number Generation"},
-      {"@id": "urn:ngm:class:leader-election", "label": "Leader Election"},
-      {"@id": "urn:ngm:class:decentralised-randomness", "label": "Decentralised Randomness"}
+      {
+        "@id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      },
+      {
+        "@id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"},
-      {"@id": "urn:ngm:class:non-fungible-token", "label": "Non-Fungible Token"}
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:vrf", "label": "VRF"}
+    {
+      "@id": "urn:ngm:class:vrf",
+      "label": "VRF"
+    }
   ],
   "quality": 0.8,
   "provenance": {

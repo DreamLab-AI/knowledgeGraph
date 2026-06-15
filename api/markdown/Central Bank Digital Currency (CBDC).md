@@ -162,10 +162,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:digital-currency-ledger",
-        "label": "Digital Currency Ledger"
-      },
-      {
         "@id": "urn:ngm:class:identity-systems",
         "label": "Identity Systems"
       },
@@ -174,7 +170,7 @@ public:: true
         "label": "Payment Protocol"
       },
       {
-        "@id": "urn:ngm:class:transaction-validator",
+        "@id": "urn:ngm:class:validator",
         "label": "Transaction Validator"
       }
     ],

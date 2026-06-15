@@ -22,30 +22,14 @@
         "label": "Proof of History"
       },
       {
-        "id": "urn:ngm:class:sealevel",
-        "label": "Sealevel"
-      },
-      {
         "id": "urn:ngm:class:tower-bft",
         "label": "Tower BFT"
-      },
-      {
-        "id": "urn:ngm:class:gulf-stream",
-        "label": "Gulf Stream"
-      },
-      {
-        "id": "urn:ngm:class:turbine",
-        "label": "Turbine"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:validator-node",
         "label": "Validator Node"
-      },
-      {
-        "id": "urn:ngm:class:stake-weighted-quality-of-service",
-        "label": "Stake-Weighted Quality of Service"
       }
     ],
     "enables": [
@@ -123,7 +107,7 @@
         "label": "Proof of Stake"
       },
       {
-        "id": "urn:ngm:class:rust-programming-language",
+        "id": "urn:ngm:class:rust-systems-programming-language",
         "label": "Rust Programming Language"
       }
     ],

@@ -70,7 +70,7 @@
         "label": "Privacy-Preserving Computation"
       },
       {
-        "id": "urn:ngm:class:financial-anonymity",
+        "id": "urn:ngm:class:financial-privacy",
         "label": "Financial Anonymity"
       }
     ],
@@ -124,7 +124,7 @@
         "label": "Counter-Terrorist Financing"
       },
       {
-        "id": "urn:ngm:class:financial-crime",
+        "id": "urn:ngm:class:financial-crime-detection",
         "label": "Financial Crime"
       },
       {

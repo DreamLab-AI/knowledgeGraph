@@ -30,7 +30,7 @@
         "label": "Inference Engine"
       },
       {
-        "id": "urn:ngm:class:evaluation-benchmark",
+        "id": "urn:ngm:class:benchmark-evaluation",
         "label": "Evaluation Benchmark"
       }
     ],
@@ -54,7 +54,7 @@
         "label": "Red Teaming"
       },
       {
-        "id": "urn:ngm:class:model-quantisation",
+        "id": "urn:ngm:class:neural-network-quantisation",
         "label": "Model Quantisation"
       },
       {
@@ -77,16 +77,7 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:proprietary-ai",
-        "label": "Proprietary AI"
-      },
-      {
-        "id": "urn:ngm:class:closed-source-model",
-        "label": "Closed-Source Model"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:distributed-collaboration",
@@ -114,11 +105,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:osi-open-source-ai-definition",
-        "label": "OSI Open Source AI Definition"
-      },
-      {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -132,14 +119,6 @@
       {
         "id": "urn:ngm:class:model-hub",
         "label": "Model Hub"
-      },
-      {
-        "id": "urn:ngm:class:community-fine-tuning",
-        "label": "Community Fine-Tuning"
-      },
-      {
-        "id": "urn:ngm:class:dual-use-risk",
-        "label": "Dual-Use Risk"
       }
     ]
   },

@@ -16,15 +16,10 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:key-material",
-        "label": "Key Material"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographically-secure-random-number-generator",
+        "id": "urn:ngm:class:random-number-generator",
         "label": "Cryptographically Secure Random Number Generator"
       },
       {
@@ -62,7 +57,7 @@
         "label": "Asymmetric Cryptography"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -105,10 +100,6 @@
       {
         "id": "urn:ngm:class:nist-fips-186",
         "label": "NIST FIPS 186"
-      },
-      {
-        "id": "urn:ngm:class:rfc-5958",
-        "label": "RFC 5958"
       }
     ],
     "partOf": [
@@ -133,10 +124,6 @@
       {
         "id": "urn:ngm:class:hierarchical-deterministic-wallet",
         "label": "Hierarchical Deterministic Wallet"
-      },
-      {
-        "id": "urn:ngm:class:mnemonic-seed-phrase",
-        "label": "Mnemonic Seed Phrase"
       },
       {
         "id": "urn:ngm:class:hardware-security-module",

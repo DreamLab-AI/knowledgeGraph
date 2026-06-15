@@ -778,32 +778,16 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:babylon-protocol",
-        "label": "Babylon Protocol"
-      },
-      {
         "@id": "urn:ngm:class:bit-vm",
         "label": "BitVM"
-      },
-      {
-        "@id": "urn:ngm:class:bob-protocol",
-        "label": "BOB Protocol"
       },
       {
         "@id": "urn:ngm:class:brc-20",
         "label": "BRC-20"
       },
       {
-        "@id": "urn:ngm:class:citrea",
-        "label": "Citrea"
-      },
-      {
         "@id": "urn:ngm:class:discreet-log-contracts",
         "label": "Discreet Log Contracts"
-      },
-      {
-        "@id": "urn:ngm:class:merlin-chain",
-        "label": "Merlin Chain"
       },
       {
         "@id": "urn:ngm:class:ordinals",
@@ -862,10 +846,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:ai-agent-smart-contracts",
-        "label": "AI Agent Smart Contracts"
-      },
-      {
         "@id": "urn:ngm:class:atomic-swap",
         "label": "Atomic Swap"
       },
@@ -882,7 +862,7 @@ public:: true
         "label": "Non-Fungible Token"
       },
       {
-        "@id": "urn:ngm:class:smart-contracts-on-bitcoin",
+        "@id": "urn:ngm:class:smart-contracts",
         "label": "Smart Contracts on Bitcoin"
       },
       {
@@ -894,7 +874,7 @@ public:: true
         "label": "Token Issuance"
       },
       {
-        "@id": "urn:ngm:class:trustless-bridges",
+        "@id": "urn:ngm:class:cross-chain-bridges",
         "label": "Trustless Bridges"
       }
     ],
@@ -908,20 +888,12 @@ public:: true
         "label": "Fraud Proof"
       },
       {
-        "@id": "urn:ngm:class:merged-mining",
+        "@id": "urn:ngm:class:mining",
         "label": "Merged Mining"
       },
       {
         "@id": "urn:ngm:class:optimistic-rollup",
         "label": "Optimistic Rollup"
-      },
-      {
-        "@id": "urn:ngm:class:ordinal-theory",
-        "label": "Ordinal Theory"
-      },
-      {
-        "@id": "urn:ngm:class:proof-of-transfer",
-        "label": "Proof of Transfer"
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-rollup",
@@ -950,11 +922,11 @@ public:: true
         "label": "Schnorr Signature"
       },
       {
-        "@id": "urn:ngm:class:taproot-witnesses",
+        "@id": "urn:ngm:class:taproot",
         "label": "Taproot Witnesses"
       },
       {
-        "@id": "urn:ngm:class:utxo-commitments",
+        "@id": "urn:ngm:class:utxo",
         "label": "UTXO Commitments"
       },
       {
@@ -976,7 +948,7 @@ public:: true
         "label": "Layer 2 Solutions"
       },
       {
-        "@id": "urn:ngm:class:scaling-solutions",
+        "@id": "urn:ngm:class:scalability-solutions",
         "label": "Scaling Solutions"
       },
       {
@@ -998,12 +970,8 @@ public:: true
         "label": "Bitcoin DeFi"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-nfts",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin NFTs"
-      },
-      {
-        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-scalability",
-        "label": "Bitcoin Scalability"
       },
       {
         "@id": "urn:ngm:class:cross-chain-interoperability",
@@ -1018,7 +986,7 @@ public:: true
         "label": "Programmable Finance"
       },
       {
-        "@id": "urn:ngm:class:stablecoin-issuance",
+        "@id": "urn:ngm:class:stablecoin",
         "label": "Stablecoin Issuance"
       }
     ],

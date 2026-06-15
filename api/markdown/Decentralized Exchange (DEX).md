@@ -134,10 +134,6 @@ public:: true
         "label": "Price Oracle"
       },
       {
-        "@id": "urn:ngm:class:trading-interface",
-        "label": "Trading Interface"
-      },
-      {
         "@id": "urn:ngm:class:automated-market-maker",
         "label": "Automated Market Maker"
       },

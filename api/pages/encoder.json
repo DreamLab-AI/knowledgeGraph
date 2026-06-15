@@ -76,10 +76,6 @@
       {
         "id": "urn:ngm:class:representation-learning",
         "label": "Representation Learning"
-      },
-      {
-        "id": "urn:ngm:class:bidirectional-context",
-        "label": "Bidirectional Context"
       }
     ],
     "contrastsWith": [
@@ -94,7 +90,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:multimodal-model",
+        "id": "urn:ngm:class:multimodal-ai-architecture-models",
         "label": "Multimodal Model"
       },
       {
@@ -126,7 +122,7 @@
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:sequence-classification",
+        "id": "urn:ngm:class:classification",
         "label": "Sequence Classification"
       },
       {

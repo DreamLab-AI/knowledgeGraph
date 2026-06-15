@@ -596,14 +596,6 @@ public:: true
         "label": "Bitcoin Standard"
       },
       {
-        "@id": "urn:ngm:class:greshams-law-application",
-        "label": "Greshams Law Application"
-      },
-      {
-        "@id": "urn:ngm:class:layered-bitcoin-architecture",
-        "label": "Layered Bitcoin Architecture"
-      },
-      {
         "@id": "urn:ngm:class:medium-of-exchange",
         "label": "Medium of Exchange"
       },
@@ -614,10 +606,6 @@ public:: true
       {
         "@id": "urn:ngm:class:unit-of-account",
         "label": "Unit of Account"
-      },
-      {
-        "@id": "urn:ngm:class:velocity-of-money-analysis",
-        "label": "Velocity of Money Analysis"
       },
       {
         "@id": "urn:ngm:class:circular-economy",
@@ -634,18 +622,6 @@ public:: true
         "label": "Bitcoin Network"
       },
       {
-        "@id": "urn:ngm:class:merchant-adoption",
-        "label": "Merchant Adoption"
-      },
-      {
-        "@id": "urn:ngm:class:monetary-consensus",
-        "label": "Monetary Consensus"
-      },
-      {
-        "@id": "urn:ngm:class:price-stability-analysis",
-        "label": "Price Stability Analysis"
-      },
-      {
         "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin Proof-of-Work Protocol"
       },
@@ -660,7 +636,7 @@ public:: true
         "label": "AI Agent Payments"
       },
       {
-        "@id": "urn:ngm:class:borderless-payments",
+        "@id": "urn:ngm:class:cross-border-payments",
         "label": "Borderless Payments"
       },
       {
@@ -668,20 +644,8 @@ public:: true
         "label": "Censorship Resistant Payments"
       },
       {
-        "@id": "urn:ngm:class:circular-bitcoin-economy",
-        "label": "Circular Bitcoin Economy"
-      },
-      {
         "@id": "urn:ngm:class:financial-inclusion",
         "label": "Financial Inclusion"
-      },
-      {
-        "@id": "urn:ngm:class:machine-commerce",
-        "label": "Machine Commerce"
-      },
-      {
-        "@id": "urn:ngm:class:sovereign-reserve-asset",
-        "label": "Sovereign Reserve Asset"
       },
       {
         "@id": "urn:ngm:class:micropayments",
@@ -694,15 +658,11 @@ public:: true
         "label": "Austrian Hard Money Theory"
       },
       {
-        "@id": "urn:ngm:class:commodity-money-model",
-        "label": "Commodity Money Model"
-      },
-      {
         "@id": "urn:ngm:class:fixed-supply-monetary-policy",
         "label": "Fixed Supply Monetary Policy"
       },
       {
-        "@id": "urn:ngm:class:programmable-money-paradigm",
+        "@id": "urn:ngm:class:programmable-money",
         "label": "Programmable Money Paradigm"
       },
       {
@@ -726,14 +686,6 @@ public:: true
       {
         "@id": "urn:ngm:class:rgb-protocol",
         "label": "RGB Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:stablesats",
-        "label": "Stablesats"
-      },
-      {
-        "@id": "urn:ngm:class:strike-payment-infrastructure",
-        "label": "Strike Payment Infrastructure"
       },
       {
         "@id": "urn:ngm:class:cashu",
@@ -792,10 +744,6 @@ public:: true
         "label": "Bitcoin Standard"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-treasury-strategy",
-        "label": "Bitcoin Treasury Strategy"
-      },
-      {
         "@id": "urn:ngm:class:financial-sovereignty",
         "label": "Financial Sovereignty"
       },
@@ -808,19 +756,11 @@ public:: true
         "label": "Self-Custody"
       },
       {
-        "@id": "urn:ngm:class:separation-of-money-and-state",
-        "label": "Separation of Money and State"
-      },
-      {
         "@id": "urn:ngm:class:sound-money",
         "label": "Sound Money"
       }
     ],
     "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:bip32-hd-wallets",
-        "label": "BIP32 HD Wallets"
-      },
       {
         "@id": "urn:ngm:class:fasb-asu-2023-08",
         "label": "FASB ASU 2023-08"
@@ -830,11 +770,11 @@ public:: true
         "label": "IMF Crypto Asset Classification Framework"
       },
       {
-        "@id": "urn:ngm:class:lightning-network-bolt-specifications",
+        "@id": "urn:ngm:class:bolt-specifications",
         "label": "Lightning Network BOLT Specifications"
       },
       {
-        "@id": "urn:ngm:class:nakamoto-2008-whitepaper",
+        "@id": "urn:ngm:class:nakamoto-2008-bitcoin-whitepaper",
         "label": "Nakamoto 2008 Whitepaper"
       }
     ]

@@ -156,12 +156,8 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:classification-model",
+        "@id": "urn:ngm:class:classification",
         "label": "Classification Model"
-      },
-      {
-        "@id": "urn:ngm:class:binary-classification",
-        "label": "Binary Classification"
       }
     ],
     "uses": [
@@ -186,10 +182,6 @@ public:: true
       {
         "@id": "urn:ngm:class:specificity",
         "label": "Specificity"
-      },
-      {
-        "@id": "urn:ngm:class:false-negative-rate",
-        "label": "False Negative Rate"
       }
     ],
     "supports": [
@@ -202,7 +194,7 @@ public:: true
         "label": "Accuracy"
       },
       {
-        "@id": "urn:ngm:class:model-fairness",
+        "@id": "urn:ngm:class:fairness",
         "label": "Model Fairness"
       }
     ],
@@ -230,14 +222,6 @@ public:: true
       {
         "@id": "urn:ngm:class:evaluation-metric",
         "label": "Evaluation Metric"
-      },
-      {
-        "@id": "urn:ngm:class:diagnostic-sensitivity",
-        "label": "Diagnostic Sensitivity"
-      },
-      {
-        "@id": "urn:ngm:class:information-retrieval-evaluation",
-        "label": "Information Retrieval Evaluation"
       }
     ]
   }

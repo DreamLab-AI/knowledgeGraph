@@ -39,10 +39,6 @@
       {
         "id": "urn:ngm:class:creator-economy",
         "label": "Creator Economy"
-      },
-      {
-        "id": "urn:ngm:class:virtual-gallery",
-        "label": "Virtual Gallery"
       }
     ],
     "dependsOn": [
@@ -56,12 +52,7 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:traditional-art",
-        "label": "Traditional Art"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:augmented-reality",
@@ -126,10 +117,6 @@
       {
         "id": "urn:ngm:class:digital-ownership",
         "label": "Digital Ownership"
-      },
-      {
-        "id": "urn:ngm:class:generative-art",
-        "label": "Generative Art"
       },
       {
         "id": "urn:ngm:class:interactive-media",

@@ -20,14 +20,6 @@
       {
         "id": "urn:ngm:class:blend-tree",
         "label": "Blend Tree"
-      },
-      {
-        "id": "urn:ngm:class:animation-state",
-        "label": "Animation State"
-      },
-      {
-        "id": "urn:ngm:class:transition-condition",
-        "label": "Transition Condition"
       }
     ],
     "requires": [
@@ -62,10 +54,6 @@
       {
         "id": "urn:ngm:class:physics-engine",
         "label": "Physics Engine"
-      },
-      {
-        "id": "urn:ngm:class:game-logic",
-        "label": "Game Logic"
       }
     ],
     "implements": [],
@@ -108,10 +96,6 @@
       {
         "id": "urn:ngm:class:game-engine",
         "label": "Game Engine"
-      },
-      {
-        "id": "urn:ngm:class:animation-runtime",
-        "label": "Animation Runtime"
       }
     ],
     "relatedTo": [
@@ -132,7 +116,7 @@
         "label": "Character Rigging"
       },
       {
-        "id": "urn:ngm:class:locomotion-system",
+        "id": "urn:ngm:class:locomotion",
         "label": "Locomotion System"
       },
       {

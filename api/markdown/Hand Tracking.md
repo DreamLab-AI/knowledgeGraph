@@ -334,46 +334,18 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:confidence-estimator",
-        "label": "Confidence Estimator"
-      },
-      {
         "@id": "urn:ngm:class:depth-sensor",
         "label": "Depth Sensor"
       },
       {
-        "@id": "urn:ngm:class:hand-skeleton-model",
-        "label": "Hand Skeleton Model"
-      },
-      {
-        "@id": "urn:ngm:class:keypoint-detector",
+        "@id": "urn:ngm:class:keypoint-detection",
         "label": "Keypoint Detector"
-      },
-      {
-        "@id": "urn:ngm:class:kinematic-constraint-model",
-        "label": "Kinematic Constraint Model"
-      },
-      {
-        "@id": "urn:ngm:class:landmark-regressor",
-        "label": "Landmark Regressor"
-      },
-      {
-        "@id": "urn:ngm:class:palm-detector",
-        "label": "Palm Detector"
-      },
-      {
-        "@id": "urn:ngm:class:temporal-filter",
-        "label": "Temporal Filter"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:annotated-hand-dataset",
+        "@id": "urn:ngm:class:annotated-training-data",
         "label": "Annotated Hand Dataset"
-      },
-      {
-        "@id": "urn:ngm:class:calibration-data",
-        "label": "Calibration Data"
       },
       {
         "@id": "urn:ngm:class:camera-sensor",
@@ -394,62 +366,16 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:air-typing",
-        "label": "Air Typing"
-      },
-      {
         "@id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Recognition"
       },
       {
-        "@id": "urn:ngm:class:pinch-interaction",
-        "label": "Pinch Interaction"
-      },
-      {
-        "@id": "urn:ngm:class:robotic-teleoperation",
+        "@id": "urn:ngm:class:teleoperation",
         "label": "Robotic Teleoperation"
       },
       {
         "@id": "urn:ngm:class:sign-language-recognition",
         "label": "Sign Language Recognition"
-      },
-      {
-        "@id": "urn:ngm:class:surgical-training-simulation",
-        "label": "Surgical Training Simulation"
-      },
-      {
-        "@id": "urn:ngm:class:touchless-hci",
-        "label": "Touchless HCI"
-      },
-      {
-        "@id": "urn:ngm:class:xr-interaction",
-        "label": "XR Interaction"
-      }
-    ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:apple-inc-technology-corporation-vision-os-hand-input",
-        "label": "Apple visionOS Hand Input"
-      },
-      {
-        "@id": "urn:ngm:class:mano-model",
-        "label": "MANO Model"
-      },
-      {
-        "@id": "urn:ngm:class:media-pipe-hands",
-        "label": "MediaPipe Hands"
-      },
-      {
-        "@id": "urn:ngm:class:meta-hand-tracking-sdk",
-        "label": "Meta Hand Tracking SDK"
-      },
-      {
-        "@id": "urn:ngm:class:ultraleap-sdk",
-        "label": "Ultraleap SDK"
-      },
-      {
-        "@id": "urn:ngm:class:web-xr-hand-input-api",
-        "label": "WebXR Hand Input API"
       }
     ],
     "uses": [
@@ -458,7 +384,7 @@ public:: true
         "label": "Electromyography"
       },
       {
-        "@id": "urn:ngm:class:infrared-illumination",
+        "@id": "urn:ngm:class:infrared-illuminator",
         "label": "Infrared Illumination"
       },
       {
@@ -479,14 +405,6 @@ public:: true
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:leap-motion",
-        "label": "Leap Motion"
-      },
-      {
-        "@id": "urn:ngm:class:media-pipe",
-        "label": "MediaPipe"
-      },
       {
         "@id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
@@ -540,20 +458,6 @@ public:: true
       {
         "@id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
-      }
-    ],
-    "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:iso-9241-ergonomics-of-human-system-interaction",
-        "label": "ISO 9241 Ergonomics of Human-System Interaction"
-      },
-      {
-        "@id": "urn:ngm:class:open-xr-hand-tracking-extension",
-        "label": "OpenXR Hand Tracking Extension"
-      },
-      {
-        "@id": "urn:ngm:class:w3-c-web-xr-hand-input-api",
-        "label": "W3C WebXR Hand Input API"
       }
     ]
   },

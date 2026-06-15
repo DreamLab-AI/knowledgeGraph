@@ -69,7 +69,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -77,7 +77,7 @@ public:: true
         "label": "Certificate Authority"
       },
       {
-        "@id": "urn:ngm:class:x509-certificate",
+        "@id": "urn:ngm:class:x-509-certificate",
         "label": "X.509 Certificate"
       },
       {
@@ -113,10 +113,6 @@ public:: true
         "label": "TLS Handshake"
       },
       {
-        "@id": "urn:ngm:class:cipher-suite",
-        "label": "Cipher Suite"
-      },
-      {
         "@id": "urn:ngm:class:session-key",
         "label": "Session Key"
       }
@@ -149,16 +145,6 @@ public:: true
         "label": "RFC 8446"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:secure-sockets-layer",
-        "label": "Secure Sockets Layer"
-      },
-      {
-        "@id": "urn:ngm:class:datagram-transport-layer-security",
-        "label": "Datagram Transport Layer Security"
-      }
-    ],
     "supports": [
       {
         "@id": "urn:ngm:class:https",
@@ -177,10 +163,6 @@ public:: true
       {
         "@id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Architecture"
-      },
-      {
-        "@id": "urn:ngm:class:web3-security",
-        "label": "Web3 Security"
       }
     ],
     "relatedTo": [

@@ -18,16 +18,12 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:json-schema",
+        "id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       },
       {
         "id": "urn:ngm:class:yaml",
         "label": "YAML"
-      },
-      {
-        "id": "urn:ngm:class:swagger-ui",
-        "label": "Swagger UI"
       }
     ],
     "requires": [
@@ -36,7 +32,7 @@
         "label": "HTTP Protocol"
       },
       {
-        "id": "urn:ngm:class:rest-architectural-style",
+        "id": "urn:ngm:class:rest",
         "label": "REST Architectural Style"
       }
     ],
@@ -60,10 +56,6 @@
       {
         "id": "urn:ngm:class:code-generation",
         "label": "Code Generation"
-      },
-      {
-        "id": "urn:ngm:class:mock-server",
-        "label": "Mock Server"
       }
     ],
     "dependsOn": [],
@@ -83,10 +75,6 @@
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:ai-tool-calling",
-        "label": "AI Tool Calling"
-      },
       {
         "id": "urn:ngm:class:large-language-model",
         "label": "Large Language Model"
@@ -131,14 +119,6 @@
       {
         "id": "urn:ngm:class:api-gateway",
         "label": "API Gateway"
-      },
-      {
-        "id": "urn:ngm:class:swagger-specification",
-        "label": "Swagger Specification"
-      },
-      {
-        "id": "urn:ngm:class:api-first-design",
-        "label": "API-First Design"
       },
       {
         "id": "urn:ngm:class:api-versioning",

@@ -23,59 +23,147 @@ public:: true
   "definition": "Google DeepMind is an AI research and development division of Alphabet Inc., formed in April 2023 by the merger of Google Brain (founded 2011) and DeepMind (founded 2010, acquired by Google in 2014). It is responsible for foundational breakthroughs in reinforcement learning, protein structure prediction (AlphaFold), and large-scale multimodal AI (Gemini), and pursues both long-term fundamental research and product integration across Google's services. Operating from London, Mountain View, and additional global sites, it is one of the largest and most influential AI research institutions in the world, with a stated mission of advancing artificial intelligence for the benefit of humanity whilst maintaining safety-centred development practices.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-companies", "label": "AI Companies"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-companies",
+      "label": "AI Companies"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:alphafold", "label": "AlphaFold"},
-      {"@id": "urn:ngm:class:gemini-multimodal-language-model", "label": "Gemini Multimodal Language Model"},
-      {"@id": "urn:ngm:class:alphacode", "label": "AlphaCode"}
+      {
+        "@id": "urn:ngm:class:alphafold",
+        "label": "AlphaFold"
+      },
+      {
+        "@id": "urn:ngm:class:gemini-multimodal-language-model",
+        "label": "Gemini Multimodal Language Model"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:alphabet-inc", "label": "Alphabet Inc"}
+      {
+        "@id": "urn:ngm:class:alphabet-inc",
+        "label": "Alphabet Inc"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"},
-      {"@id": "urn:ngm:class:tensor-processing-unit", "label": "Tensor Processing Unit"}
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:protein-structure-prediction", "label": "Protein Structure Prediction"},
-      {"@id": "urn:ngm:class:ai-safety-research", "label": "AI Safety Research"},
-      {"@id": "urn:ngm:class:scientific-ai", "label": "Scientific AI"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:protein-structure-prediction",
+        "label": "Protein Structure Prediction"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-ai",
+        "label": "Scientific AI"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:tensorflow", "label": "TensorFlow"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+      {
+        "@id": "urn:ngm:class:tensorflow",
+        "label": "TensorFlow"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:drug-discovery", "label": "Drug Discovery"},
-      {"@id": "urn:ngm:class:climate-modelling", "label": "Climate Modelling"},
-      {"@id": "urn:ngm:class:genomics", "label": "Genomics"}
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:climate-modelling",
+        "label": "Climate Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:genomics",
+        "label": "Genomics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:artificial-general-intelligence", "label": "Artificial General Intelligence"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:openai-research-organisation", "label": "OpenAI Research Organisation"},
-      {"@id": "urn:ngm:class:anthropic", "label": "Anthropic"},
-      {"@id": "urn:ngm:class:meta-ai", "label": "Meta AI"}
+      {
+        "@id": "urn:ngm:class:openai-research-organisation",
+        "label": "OpenAI Research Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:anthropic",
+        "label": "Anthropic"
+      },
+      {
+        "@id": "urn:ngm:class:meta-ai",
+        "label": "Meta AI"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:computational-biology", "label": "Computational Biology"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:computational-biology",
+        "label": "Computational Biology"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:deepmind-technologies", "label": "DeepMind Technologies"},
-    {"@id": "urn:ngm:class:google-brain-deepmind", "label": "Google Brain DeepMind"}
+    {
+      "@id": "urn:ngm:class:deepmind-technologies",
+      "label": "DeepMind Technologies"
+    },
+    {
+      "@id": "urn:ngm:class:google-brain-deepmind",
+      "label": "Google Brain DeepMind"
+    }
   ],
   "quality": 0.74,
   "provenance": {

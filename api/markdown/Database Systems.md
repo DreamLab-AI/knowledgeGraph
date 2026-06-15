@@ -125,7 +125,7 @@ public:: true
         "label": "Distributed Systems"
       },
       {
-        "@id": "urn:ngm:class:operating-systems",
+        "@id": "urn:ngm:class:operating-system",
         "label": "Operating Systems"
       }
     ],
@@ -171,11 +171,11 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:file-systems",
+        "@id": "urn:ngm:class:file-system",
         "label": "File Systems"
       },
       {
-        "@id": "urn:ngm:class:in-memory-data-stores",
+        "@id": "urn:ngm:class:memory-store",
         "label": "In-Memory Data Stores"
       }
     ],

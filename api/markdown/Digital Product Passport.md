@@ -38,53 +38,129 @@ public:: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:circular-economy", "label": "Circular Economy"},
-      {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"},
-      {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"},
-      {"@id": "urn:ngm:class:right-to-repair", "label": "Right to Repair"},
-      {"@id": "urn:ngm:class:extended-producer-responsibility", "label": "Extended Producer Responsibility"}
+      {
+        "@id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "@id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:right-to-repair",
+        "label": "Right to Repair"
+      },
+      {
+        "@id": "urn:ngm:class:extended-producer-responsibility",
+        "label": "Extended Producer Responsibility"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:decentralised-identifier", "label": "Decentralised Identifier"},
-      {"@id": "urn:ngm:class:qr-code", "label": "QR Code"},
-      {"@id": "urn:ngm:class:rfid", "label": "RFID"}
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:qr-code",
+        "label": "QR Code"
+      },
+      {
+        "@id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-interoperability", "label": "Data Interoperability"},
-      {"@id": "urn:ngm:class:unique-product-identifier", "label": "Unique Product Identifier"},
-      {"@id": "urn:ngm:class:open-data-standard", "label": "Open Data Standard"}
+      {
+        "@id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Data Standard"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"},
-      {"@id": "urn:ngm:class:iot-sensor", "label": "IoT Sensor"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:iot-sensor",
+        "label": "IoT Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:gs1-standards", "label": "GS1 Standards"},
-      {"@id": "urn:ngm:class:eu-espr", "label": "EU ESPR"},
-      {"@id": "urn:ngm:class:iso-iec-standards", "label": "ISO/IEC Standards"}
+      {
+        "@id": "urn:ngm:class:gs1-standards",
+        "label": "GS1 Standards"
+      },
+      {
+        "@id": "urn:ngm:class:eu-espr",
+        "label": "EU ESPR"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC Standards"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:paper-based-certification", "label": "Paper-Based Certification"},
-      {"@id": "urn:ngm:class:proprietary-product-data-silo", "label": "Proprietary Product Data Silo"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:life-cycle-assessment", "label": "Life Cycle Assessment"},
-      {"@id": "urn:ngm:class:carbon-footprint", "label": "Carbon Footprint"},
-      {"@id": "urn:ngm:class:eu-battery-regulation", "label": "EU Battery Regulation"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      },
+      {
+        "@id": "urn:ngm:class:eu-battery-regulation",
+        "label": "EU Battery Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:product-passport", "label": "Product Passport"},
-    {"@id": "urn:ngm:class:digital-material-passport", "label": "Digital Material Passport"}
+    {
+      "@id": "urn:ngm:class:product-passport",
+      "label": "Product Passport"
+    },
+    {
+      "@id": "urn:ngm:class:digital-material-passport",
+      "label": "Digital Material Passport"
+    }
   ],
   "quality": 0.72,
   "provenance": {

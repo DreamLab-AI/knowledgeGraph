@@ -38,49 +38,119 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"},
-      {"@id": "urn:ngm:class:u-net", "label": "U-Net"},
-      {"@id": "urn:ngm:class:cross-attention", "label": "Cross Attention"}
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "@id": "urn:ngm:class:u-net",
+        "label": "U-Net"
+      },
+      {
+        "@id": "urn:ngm:class:cross-attention",
+        "label": "Cross Attention"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:encoder-decoder", "label": "Encoder-Decoder"},
-      {"@id": "urn:ngm:class:denoising-score-matching", "label": "Denoising Score Matching"},
-      {"@id": "urn:ngm:class:noise-schedule", "label": "Noise Schedule"}
+      {
+        "@id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder-Decoder"
+      },
+      {
+        "@id": "urn:ngm:class:denoising-score-matching",
+        "label": "Denoising Score Matching"
+      },
+      {
+        "@id": "urn:ngm:class:noise-schedule",
+        "label": "Noise Schedule"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"},
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:image-inpainting", "label": "Image Inpainting"},
-      {"@id": "urn:ngm:class:image-to-image-translation", "label": "Image to Image Translation"},
-      {"@id": "urn:ngm:class:video-generation", "label": "Video Generation"}
+      {
+        "@id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:inpainting",
+        "label": "Image Inpainting"
+      },
+      {
+        "@id": "urn:ngm:class:image-to-image-translation",
+        "label": "Image to Image Translation"
+      },
+      {
+        "@id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:clip", "label": "CLIP"},
-      {"@id": "urn:ngm:class:ddim-sampling", "label": "DDIM Sampling"},
-      {"@id": "urn:ngm:class:classifier-free-guidance", "label": "Classifier-Free Guidance"},
-      {"@id": "urn:ngm:class:low-rank-adaptation", "label": "Low-Rank Adaptation"}
+      {
+        "@id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "@id": "urn:ngm:class:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "@id": "urn:ngm:class:low-rank-adaptation",
+        "label": "Low-Rank Adaptation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:score-based-generative-model", "label": "Score-Based Generative Model"}
+      {
+        "@id": "urn:ngm:class:score-based-generative-model",
+        "label": "Score-Based Generative Model"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
-      {"@id": "urn:ngm:class:pixel-diffusion", "label": "Pixel Diffusion"},
-      {"@id": "urn:ngm:class:normalising-flow", "label": "Normalising Flow"}
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "@id": "urn:ngm:class:normalising-flow",
+        "label": "Normalising Flow"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"},
-      {"@id": "urn:ngm:class:neural-network-latent-space", "label": "Neural Network Latent Space"},
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-latent-space",
+        "label": "Neural Network Latent Space"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:augmented-reality-content-creation", "label": "AR Content Creation"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:augmented-reality-content-creation",
+        "label": "AR Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ldm", "label": "LDM"}
+    {
+      "@id": "urn:ngm:class:ldm",
+      "label": "LDM"
+    }
   ],
   "quality": 0.73,
   "provenance": {

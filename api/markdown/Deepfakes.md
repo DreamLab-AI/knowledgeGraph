@@ -166,7 +166,7 @@ public:: true
         "label": "Audio Manipulation"
       },
       {
-        "@id": "urn:ngm:class:face-swapping",
+        "@id": "urn:ngm:class:face-swap",
         "label": "Face Swapping"
       },
       {

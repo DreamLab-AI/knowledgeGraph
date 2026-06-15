@@ -38,44 +38,107 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
-      {"@id": "urn:ngm:class:kullback-leibler-divergence", "label": "Kullback-Leibler Divergence"},
-      {"@id": "urn:ngm:class:evidence-lower-bound", "label": "Evidence Lower Bound"},
-      {"@id": "urn:ngm:class:probabilistic-graphical-model", "label": "Probabilistic Graphical Model"}
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:kullback-leibler-divergence",
+        "label": "Kullback-Leibler Divergence"
+      },
+      {
+        "@id": "urn:ngm:class:evidence-lower-bound",
+        "label": "Evidence Lower Bound"
+      },
+      {
+        "@id": "urn:ngm:class:graphical-model",
+        "label": "Probabilistic Graphical Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"},
-      {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"},
-      {"@id": "urn:ngm:class:probabilistic-programming", "label": "Probabilistic Programming"},
-      {"@id": "urn:ngm:class:amortised-inference", "label": "Amortised Inference"},
-      {"@id": "urn:ngm:class:latent-diffusion-model", "label": "Latent Diffusion Model"}
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-programming",
+        "label": "Probabilistic Programming"
+      },
+      {
+        "@id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion Model"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:reparameterisation-trick", "label": "Reparameterisation Trick"},
-      {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"},
-      {"@id": "urn:ngm:class:mean-field-approximation", "label": "Mean-Field Approximation"},
-      {"@id": "urn:ngm:class:normalising-flows", "label": "Normalising Flows"}
+      {
+        "@id": "urn:ngm:class:reparameterisation-trick",
+        "label": "Reparameterisation Trick"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:mean-field-approximation",
+        "label": "Mean-Field Approximation"
+      },
+      {
+        "@id": "urn:ngm:class:normalising-flows",
+        "label": "Normalising Flows"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:markov-chain-monte-carlo", "label": "Markov Chain Monte Carlo"},
-      {"@id": "urn:ngm:class:expectation-propagation", "label": "Expectation Propagation"},
-      {"@id": "urn:ngm:class:laplace-approximation", "label": "Laplace Approximation"}
+      {
+        "@id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "@id": "urn:ngm:class:expectation-propagation",
+        "label": "Expectation Propagation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:latent-variable-model", "label": "Latent Variable Model"},
-      {"@id": "urn:ngm:class:probabilistic-topic-modelling", "label": "Probabilistic Topic Modelling"},
-      {"@id": "urn:ngm:class:bayesian-deep-learning", "label": "Bayesian Deep Learning"},
-      {"@id": "urn:ngm:class:expectation-maximisation", "label": "Expectation Maximisation"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:latent-variable-model",
+        "label": "Latent Variable Model"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-deep-learning",
+        "label": "Bayesian Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:expectation-maximisation",
+        "label": "Expectation Maximisation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"},
-      {"@id": "urn:ngm:class:information-theory", "label": "Information Theory"}
+      {
+        "@id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:variational-bayes", "label": "Variational Bayes"},
-    {"@id": "urn:ngm:class:approximate-bayesian-inference", "label": "Approximate Bayesian Inference"}
+    {
+      "@id": "urn:ngm:class:variational-bayes",
+      "label": "Variational Bayes"
+    },
+    {
+      "@id": "urn:ngm:class:approximate-bayesian-inference",
+      "label": "Approximate Bayesian Inference"
+    }
   ],
   "quality": 0.75,
   "provenance": {

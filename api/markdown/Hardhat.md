@@ -57,27 +57,13 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:hardhat-network",
-        "label": "Hardhat Network"
-      },
-      {
-        "@id": "urn:ngm:class:hardhat-runner",
-        "label": "Hardhat Runner"
-      },
-      {
-        "@id": "urn:ngm:class:hardhat-plugin",
-        "label": "Hardhat Plugin"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:node-js",
         "label": "Node.js"
       },
       {
-        "@id": "urn:ngm:class:solidity-compiler",
+        "@id": "urn:ngm:class:compiler",
         "label": "Solidity Compiler"
       }
     ],
@@ -87,16 +73,8 @@ public:: true
         "label": "Smart Contract"
       },
       {
-        "@id": "urn:ngm:class:smart-contract-testing",
-        "label": "Smart Contract Testing"
-      },
-      {
         "@id": "urn:ngm:class:smart-contract-deployment",
         "label": "Smart Contract Deployment"
-      },
-      {
-        "@id": "urn:ngm:class:contract-verification",
-        "label": "Contract Verification"
       }
     ],
     "dependsOn": [
@@ -111,20 +89,12 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:ethers-js",
-        "label": "ethers.js"
-      },
-      {
         "@id": "urn:ngm:class:solidity",
         "label": "Solidity"
       },
       {
         "@id": "urn:ngm:class:typescript",
         "label": "TypeScript"
-      },
-      {
-        "@id": "urn:ngm:class:mocha",
-        "label": "Mocha"
       }
     ],
     "supports": [
@@ -167,20 +137,8 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:blockchain-development-toolchain",
-        "label": "Blockchain Development Toolchain"
-      },
-      {
-        "@id": "urn:ngm:class:remix-ide",
-        "label": "Remix IDE"
-      },
-      {
         "@id": "urn:ngm:class:openzeppelin",
         "label": "OpenZeppelin"
-      },
-      {
-        "@id": "urn:ngm:class:etherscan",
-        "label": "Etherscan"
       }
     ]
   },

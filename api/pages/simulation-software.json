@@ -24,28 +24,12 @@
       {
         "id": "urn:ngm:class:physics-engine",
         "label": "Physics Engine"
-      },
-      {
-        "id": "urn:ngm:class:scenario-manager",
-        "label": "Scenario Manager"
-      },
-      {
-        "id": "urn:ngm:class:visualisation-pipeline",
-        "label": "Visualisation Pipeline"
-      },
-      {
-        "id": "urn:ngm:class:data-logger",
-        "label": "Data Logger"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:computational-model",
         "label": "Computational Model"
-      },
-      {
-        "id": "urn:ngm:class:numerical-solver",
-        "label": "Numerical Solver"
       },
       {
         "id": "urn:ngm:class:high-performance-computing",
@@ -56,10 +40,6 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
-      },
-      {
-        "id": "urn:ngm:class:virtual-prototyping",
-        "label": "Virtual Prototyping"
       },
       {
         "id": "urn:ngm:class:synthetic-data-generation",
@@ -81,19 +61,10 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:emulation-software",
-        "label": "Emulation Software"
-      },
-      {
-        "id": "urn:ngm:class:physical-prototyping",
-        "label": "Physical Prototyping"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning-pipeline",
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
       },
       {
@@ -111,7 +82,7 @@
         "label": "Finite Element Analysis"
       },
       {
-        "id": "urn:ngm:class:monte-carlo-method",
+        "id": "urn:ngm:class:monte-carlo-methods",
         "label": "Monte Carlo Method"
       },
       {
@@ -120,10 +91,6 @@
       }
     ],
     "supports": [
-      {
-        "id": "urn:ngm:class:xr-training",
-        "label": "XR Training"
-      },
       {
         "id": "urn:ngm:class:autonomous-vehicle-testing",
         "label": "Autonomous Vehicle Testing"
@@ -134,12 +101,7 @@
       }
     ],
     "standardizedBy": [],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:digital-engineering-toolchain",
-        "label": "Digital Engineering Toolchain"
-      }
-    ],
+    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:spatial-computing",
@@ -148,10 +110,6 @@
       {
         "id": "urn:ngm:class:model-based-systems-engineering",
         "label": "Model-Based Systems Engineering"
-      },
-      {
-        "id": "urn:ngm:class:application-software",
-        "label": "Application Software"
       }
     ]
   },

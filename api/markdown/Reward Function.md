@@ -68,10 +68,6 @@ public:: true
       {
         "@id": "urn:ngm:class:discount-factor",
         "label": "Discount Factor"
-      },
-      {
-        "@id": "urn:ngm:class:cumulative-return",
-        "label": "Cumulative Return"
       }
     ],
     "partOf": [
@@ -100,22 +96,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:autonomous-agent-learning",
-        "label": "Autonomous Agent Learning"
-      },
-      {
         "@id": "urn:ngm:class:policy-optimisation",
         "label": "Policy Optimisation"
-      }
-    ],
-    "dependsOn": [
-      {
-        "@id": "urn:ngm:class:credit-assignment",
-        "label": "Credit Assignment"
-      },
-      {
-        "@id": "urn:ngm:class:objective-specification",
-        "label": "Objective Specification"
       }
     ],
     "implements": [

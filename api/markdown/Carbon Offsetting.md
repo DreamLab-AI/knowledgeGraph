@@ -98,7 +98,7 @@ public:: true
         "label": "Carbon Registry"
       },
       {
-        "@id": "urn:ngm:class:offset-project",
+        "@id": "urn:ngm:class:carbon-offset",
         "label": "Offset Project"
       }
     ],
@@ -131,10 +131,6 @@ public:: true
       }
     ],
     "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:carbon-reduction",
-        "label": "Carbon Reduction"
-      },
       {
         "@id": "urn:ngm:class:greenwashing",
         "label": "Greenwashing"

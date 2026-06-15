@@ -18,12 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:5-g-nr",
+        "id": "urn:ngm:class:5-g",
         "label": "5G New Radio"
-      },
-      {
-        "id": "urn:ngm:class:5-g-core",
-        "label": "5G Core"
       },
       {
         "id": "urn:ngm:class:multi-access-edge-computing",
@@ -58,11 +54,7 @@
         "label": "IoT Infrastructure"
       },
       {
-        "id": "urn:ngm:class:private-5-g",
-        "label": "Private 5G"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-vehicles",
+        "id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
       },
       {
@@ -73,10 +65,6 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:4-g-lte",
-        "label": "4G LTE"
-      },
       {
         "id": "urn:ngm:class:wi-fi",
         "label": "Wi-Fi"
@@ -112,10 +100,6 @@
       {
         "id": "urn:ngm:class:massive-mimo",
         "label": "Massive MIMO"
-      },
-      {
-        "id": "urn:ngm:class:millimeter-wave",
-        "label": "Millimetre Wave"
       }
     ],
     "supports": [],

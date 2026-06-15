@@ -23,54 +23,125 @@ public:: true
   "definition": "Solana is a high-performance layer-1 blockchain designed by Anatoly Yakovenko and co-founded with Greg Fitzgerald, launched as mainnet-beta in 2020 by Solana Labs and the Solana Foundation. Its defining innovation, Proof of History, embeds a cryptographic clock — a verifiable delay function based on sequential SHA-256 hashing — into the ledger itself, enabling validators to agree on transaction ordering without peer-to-peer timestamp negotiation. This is complemented by the Sealevel parallel transaction execution runtime, the Gulf Stream mempool-less transaction forwarding protocol, Turbine block propagation, and the Tower BFT consensus algorithm, together enabling sustained throughputs of tens of thousands of transactions per second with sub-second finality at sub-cent fees. Solana underpins major DeFi ecosystems, NFT infrastructure, payments applications, and, more recently, AI-adjacent on-chain compute experiments.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:smart-contract-platform", "label": "Smart Contract Platform"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:smart-contract-platform",
+    "label": "Smart Contract Platform"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:proof-of-history", "label": "Proof of History"},
-      {"@id": "urn:ngm:class:sealevel", "label": "Sealevel"},
-      {"@id": "urn:ngm:class:tower-bft", "label": "Tower BFT"},
-      {"@id": "urn:ngm:class:gulf-stream", "label": "Gulf Stream"},
-      {"@id": "urn:ngm:class:turbine", "label": "Turbine"}
+      {
+        "@id": "urn:ngm:class:proof-of-history",
+        "label": "Proof of History"
+      },
+      {
+        "@id": "urn:ngm:class:tower-bft",
+        "label": "Tower BFT"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
-      {"@id": "urn:ngm:class:stake-weighted-quality-of-service", "label": "Stake-Weighted Quality of Service"}
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:verifiable-delay-function", "label": "Verifiable Delay Function"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:rust-programming-language", "label": "Rust Programming Language"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-delay-function",
+        "label": "Verifiable Delay Function"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:rust-systems-programming-language",
+        "label": "Rust Programming Language"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:nft-marketplace", "label": "NFT Marketplace"},
-      {"@id": "urn:ngm:class:blockchain-gaming", "label": "Blockchain Gaming"},
-      {"@id": "urn:ngm:class:decentralised-exchange", "label": "Decentralised Exchange"},
-      {"@id": "urn:ngm:class:web3", "label": "Web3"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-gaming",
+        "label": "Blockchain Gaming"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:web3",
+        "label": "Web3"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
-      {"@id": "urn:ngm:class:parallel-transaction-processing", "label": "Parallel Transaction Processing"}
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:parallel-transaction-processing",
+        "label": "Parallel Transaction Processing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
-      {"@id": "urn:ngm:class:bitcoin", "label": "Bitcoin"},
-      {"@id": "urn:ngm:class:avalanche", "label": "Avalanche"},
-      {"@id": "urn:ngm:class:near-protocol", "label": "NEAR Protocol"}
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:avalanche",
+        "label": "Avalanche"
+      },
+      {
+        "@id": "urn:ngm:class:near-protocol",
+        "label": "NEAR Protocol"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:solana-program-library", "label": "Solana Program Library"},
-      {"@id": "urn:ngm:class:token-standard", "label": "Token Standard"},
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"}
+      {
+        "@id": "urn:ngm:class:solana-program-library",
+        "label": "Solana Program Library"
+      },
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:on-chain-ai-inference", "label": "On-Chain AI Inference"},
-      {"@id": "urn:ngm:class:decentralised-compute", "label": "Decentralised Compute"}
+      {
+        "@id": "urn:ngm:class:on-chain-ai-inference",
+        "label": "On-Chain AI Inference"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-compute",
+        "label": "Decentralised Compute"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:sol-network", "label": "SOL Network"}
+    {
+      "@id": "urn:ngm:class:sol-network",
+      "label": "SOL Network"
+    }
   ],
   "quality": 0.74,
   "provenance": {

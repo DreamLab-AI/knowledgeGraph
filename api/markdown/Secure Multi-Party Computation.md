@@ -67,48 +67,115 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:secret-sharing", "label": "Secret Sharing"},
-      {"@id": "urn:ngm:class:garbled-circuit", "label": "Garbled Circuit"},
-      {"@id": "urn:ngm:class:oblivious-transfer", "label": "Oblivious Transfer"}
+      {
+        "@id": "urn:ngm:class:secret-sharing",
+        "label": "Secret Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:oblivious-transfer",
+        "label": "Oblivious Transfer"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:privacy-enhancing-computation-pec", "label": "Privacy-Enhancing Computation (PEC)"}
+      {
+        "@id": "urn:ngm:class:privacy-enhancing-computation-pec",
+        "label": "Privacy-Enhancing Computation (PEC)"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cryptographic-primitive", "label": "Cryptographic Primitive"},
-      {"@id": "urn:ngm:class:secure-channel", "label": "Secure Channel"}
+      {
+        "@id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      },
+      {
+        "@id": "urn:ngm:class:secure-channel",
+        "label": "Secure Channel"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"},
-      {"@id": "urn:ngm:class:shamir-secret-sharing", "label": "Shamir Secret Sharing"},
-      {"@id": "urn:ngm:class:yao-s-garbled-circuits", "label": "Yao's Garbled Circuits"}
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:shamir-secret-sharing",
+        "label": "Shamir Secret Sharing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:privacy-preserving-data-sharing", "label": "Privacy Preserving Data Sharing"},
-      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
-      {"@id": "urn:ngm:class:private-set-intersection", "label": "Private Set Intersection"},
-      {"@id": "urn:ngm:class:secure-aggregation", "label": "Secure Aggregation"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-data-sharing",
+        "label": "Privacy Preserving Data Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:private-set-intersection",
+        "label": "Private Set Intersection"
+      },
+      {
+        "@id": "urn:ngm:class:secure-aggregation",
+        "label": "Secure Aggregation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:trusted-execution-environment", "label": "Trusted Execution Environment"},
-      {"@id": "urn:ngm:class:fully-homomorphic-encryption", "label": "Fully Homomorphic Encryption"}
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Fully Homomorphic Encryption"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:privacy-preserving-machine-learning", "label": "Privacy-Preserving Machine Learning"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:privacy-preserving-machine-learning",
+        "label": "Privacy-Preserving Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:privacy-preserving-technology", "label": "Privacy Preserving Technology"},
-      {"@id": "urn:ngm:class:privacy-enhancing-computation-pec", "label": "Privacy-Enhancing Computation (PEC)"},
-      {"@id": "urn:ngm:class:threshold-cryptography", "label": "Threshold Cryptography"}
+      {
+        "@id": "urn:ngm:class:privacy-preserving-technology",
+        "label": "Privacy Preserving Technology"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-enhancing-computation-pec",
+        "label": "Privacy-Enhancing Computation (PEC)"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:mpc", "label": "MPC"},
-    {"@id": "urn:ngm:class:multi-party-computation", "label": "Multi-Party Computation"}
+    {
+      "@id": "urn:ngm:class:mpc",
+      "label": "MPC"
+    },
+    {
+      "@id": "urn:ngm:class:multi-party-computation",
+      "label": "Multi-Party Computation"
+    }
   ],
   "quality": 0.72,
   "provenance": {

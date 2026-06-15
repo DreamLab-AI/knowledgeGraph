@@ -24,53 +24,118 @@ public:: true
   "domain": "blockchain",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+    {
+      "@id": "urn:ngm:class:digital-signature",
+      "label": "Digital Signature"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
-      {"@id": "urn:ngm:class:bilinear-pairing", "label": "Bilinear Pairing"},
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:bilinear-pairing",
+        "label": "Bilinear Pairing"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:threshold-signature-scheme", "label": "Threshold Signature Scheme"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:distributed-validator-technology", "label": "Distributed Validator Technology"},
-      {"@id": "urn:ngm:class:signature-aggregation", "label": "Signature Aggregation"}
-    ],
-    "requires": [
-      {"@id": "urn:ngm:class:pairing-friendly-elliptic-curve", "label": "Pairing-Friendly Elliptic Curve"},
-      {"@id": "urn:ngm:class:proof-of-possession", "label": "Proof of Possession"}
+      {
+        "@id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-validator-technology",
+        "label": "Distributed Validator Technology"
+      },
+      {
+        "@id": "urn:ngm:class:signature-aggregation",
+        "label": "Signature Aggregation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:validator-attestation", "label": "Validator Attestation"},
-      {"@id": "urn:ngm:class:distributed-key-generation", "label": "Distributed Key Generation"}
+      {
+        "@id": "urn:ngm:class:validator-attestation",
+        "label": "Validator Attestation"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-key-generation",
+        "label": "Distributed Key Generation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:discrete-logarithm-problem", "label": "Discrete Logarithm Problem"}
+      {
+        "@id": "urn:ngm:class:discrete-logarithm-problem",
+        "label": "Discrete Logarithm Problem"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ecdsa", "label": "ECDSA"},
-      {"@id": "urn:ngm:class:schnorr-signature", "label": "Schnorr Signature"}
+      {
+        "@id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "@id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:key-management", "label": "Key Management"},
-      {"@id": "urn:ngm:class:multi-party-computation", "label": "Multi-Party Computation"},
-      {"@id": "urn:ngm:class:snark", "label": "SNARK"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "@id": "urn:ngm:class:zk-snark",
+        "label": "SNARK"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
-      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:boneh-lynn-shacham-signature", "label": "Boneh-Lynn-Shacham Signature"}
+    {
+      "@id": "urn:ngm:class:boneh-lynn-shacham-signature",
+      "label": "Boneh-Lynn-Shacham Signature"
+    }
   ],
   "quality": 0.8,
   "provenance": {

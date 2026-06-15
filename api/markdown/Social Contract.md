@@ -74,10 +74,6 @@ public:: true
         "label": "Civil Society"
       },
       {
-        "@id": "urn:ngm:class:constitutional-law",
-        "label": "Constitutional Law"
-      },
-      {
         "@id": "urn:ngm:class:democratic-governance",
         "label": "Democratic Governance"
       }

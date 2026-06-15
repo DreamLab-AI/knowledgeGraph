@@ -22,10 +22,6 @@
         "label": "Direct Illumination"
       },
       {
-        "id": "urn:ngm:class:indirect-illumination",
-        "label": "Indirect Illumination"
-      },
-      {
         "id": "urn:ngm:class:ambient-occlusion",
         "label": "Ambient Occlusion"
       },
@@ -54,10 +50,6 @@
         "label": "Photorealistic Rendering"
       },
       {
-        "id": "urn:ngm:class:colour-bleeding",
-        "label": "Colour Bleeding"
-      },
-      {
         "id": "urn:ngm:class:soft-shadows",
         "label": "Soft Shadows"
       }
@@ -68,15 +60,11 @@
       {
         "id": "urn:ngm:class:rasterization",
         "label": "Rasterization"
-      },
-      {
-        "id": "urn:ngm:class:local-illumination",
-        "label": "Local Illumination"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning-denoising",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning Denoising"
       },
       {
@@ -88,10 +76,6 @@
       {
         "id": "urn:ngm:class:physically-based-rendering",
         "label": "Physically Based Rendering"
-      },
-      {
-        "id": "urn:ngm:class:light-probe",
-        "label": "Light Probe"
       },
       {
         "id": "urn:ngm:class:photon-mapping",

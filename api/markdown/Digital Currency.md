@@ -108,10 +108,6 @@ public:: true
         "label": "Security Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:transaction-network",
-        "label": "Transaction Network"
-      },
-      {
         "@id": "urn:ngm:class:digital-wallet",
         "label": "Digital Wallet"
       },
@@ -138,7 +134,7 @@ public:: true
         "label": "Digital Payments"
       },
       {
-        "@id": "urn:ngm:class:cross-border-remittance",
+        "@id": "urn:ngm:class:cross-border-remittances",
         "label": "Cross-Border Remittance"
       },
       {
@@ -176,10 +172,6 @@ public:: true
       {
         "@id": "urn:ngm:class:fiat-currency",
         "label": "Fiat Currency"
-      },
-      {
-        "@id": "urn:ngm:class:physical-cash",
-        "label": "Physical Cash"
       }
     ],
     "bridgesTo": [

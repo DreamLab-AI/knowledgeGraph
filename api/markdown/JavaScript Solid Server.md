@@ -24,47 +24,118 @@ alias:: javascriptsolidserver, JavaScriptSolidServer, JSS, JS Solid Server
   "definition": "JavaScript Solid Server (JSS) is a Solid-protocol personal-data-server implementation that extends standard Solid with Nostr-native identity, positioning it as a practical superset of Solid. Alongside conventional Solid Pod storage and Linked Data Platform semantics, it adds did:nostr resolution for login, NIP-07/NIP-98 Nostr authentication, and WebAuthn PRF key management, so a single secp256k1 keypair serves both as a Nostr identity and as the credential controlling a Solid Pod. In the DreamLab single-sign-on stack it is realised by the JavaScriptSolidServer organisation's components: the PodKey browser extension (window.nostr / NIP-98 headers), an SSO redirect service that resolves did:nostr, and a Rust pod backend (solid-pod-rs); it fronts services such as the Nostr BBS forum and the VisionClaw knowledge-graph governance layer.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:solid", "label": "Solid"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:solid",
+      "label": "Solid"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:solid-pod-server", "label": "Solid Pod Server"}
+    {
+      "@id": "urn:ngm:class:solid-pod-server",
+      "label": "Solid Pod Server"
+    }
   ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:solid", "label": "Solid"},
-      {"@id": "urn:ngm:class:solid-oidc", "label": "Solid-OIDC"},
-      {"@id": "urn:ngm:class:solid-pod", "label": "Solid Pod"}
+      {
+        "@id": "urn:ngm:class:solid",
+        "label": "Solid"
+      },
+      {
+        "@id": "urn:ngm:class:solid-oidc",
+        "label": "Solid-OIDC"
+      },
+      {
+        "@id": "urn:ngm:class:solid-pod",
+        "label": "Solid Pod"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:did-nostr", "label": "did:nostr"},
-      {"@id": "urn:ngm:class:nostr", "label": "Nostr"},
-      {"@id": "urn:ngm:class:web-id", "label": "WebID"},
-      {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:webauthn", "label": "WebAuthn"},
-      {"@id": "urn:ngm:class:rust", "label": "Rust"}
+      {
+        "@id": "urn:ngm:class:did-nostr",
+        "label": "did:nostr"
+      },
+      {
+        "@id": "urn:ngm:class:nostr",
+        "label": "Nostr"
+      },
+      {
+        "@id": "urn:ngm:class:web-id",
+        "label": "WebID"
+      },
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:webauthn",
+        "label": "WebAuthn"
+      },
+      {
+        "@id": "urn:ngm:class:rust-systems-programming-language",
+        "label": "Rust"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:podkey", "label": "PodKey"},
-      {"@id": "urn:ngm:class:single-sign-on", "label": "Single Sign-On"}
+      {
+        "@id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:data-sovereignty", "label": "Data Sovereignty"},
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:personal-data-store", "label": "Personal Data Store"}
+      {
+        "@id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:personal-data-store",
+        "label": "Personal Data Store"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:nostr", "label": "Nostr"},
-      {"@id": "urn:ngm:class:did-nostr", "label": "did:nostr"}
+      {
+        "@id": "urn:ngm:class:nostr",
+        "label": "Nostr"
+      },
+      {
+        "@id": "urn:ngm:class:did-nostr",
+        "label": "did:nostr"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:at-protocol", "label": "AT Protocol"},
-      {"@id": "urn:ngm:class:activitypub", "label": "ActivityPub"},
-      {"@id": "urn:ngm:class:decentralised-web", "label": "Decentralised Web"},
-      {"@id": "urn:ngm:class:web-contracts", "label": "Web Contracts"}
+      {
+        "@id": "urn:ngm:class:at-protocol",
+        "label": "AT Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:activitypub",
+        "label": "ActivityPub"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-web",
+        "label": "Decentralised Web"
+      },
+      {
+        "@id": "urn:ngm:class:web-contracts",
+        "label": "Web Contracts"
+      }
     ]
   },
   "quality": 0.74,
-  "provenance": {"attributedTo": "did:nostr:ontology-mesh", "generatedAt": "2026-06-14T00:00:00Z", "inferenceRule": "ResearchAuthored"}
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "ResearchAuthored"
+  }
 }
 ```
 

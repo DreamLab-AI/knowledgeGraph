@@ -69,16 +69,12 @@ public:: true
         "label": "Azure"
       },
       {
-        "@id": "urn:ngm:class:windows-operating-system",
+        "@id": "urn:ngm:class:operating-system",
         "label": "Windows Operating System"
       },
       {
         "@id": "urn:ngm:class:github",
         "label": "GitHub"
-      },
-      {
-        "@id": "urn:ngm:class:office-365",
-        "label": "Office 365"
       }
     ],
     "enables": [
@@ -95,7 +91,7 @@ public:: true
         "label": "Cloud Computing"
       },
       {
-        "@id": "urn:ngm:class:enterprise-software",
+        "@id": "urn:ngm:class:enterprise-software-platform",
         "label": "Enterprise Software"
       }
     ],
@@ -105,7 +101,7 @@ public:: true
         "label": "Graphics API"
       },
       {
-        "@id": "urn:ngm:class:openai",
+        "@id": "urn:ngm:class:openai-research-organisation",
         "label": "OpenAI"
       }
     ],
@@ -115,7 +111,7 @@ public:: true
         "label": "Large Language Model"
       },
       {
-        "@id": "urn:ngm:class:zero-trust-security",
+        "@id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Security"
       }
     ],
@@ -139,7 +135,7 @@ public:: true
         "label": "Amazon Web Services"
       },
       {
-        "@id": "urn:ngm:class:google-cloud",
+        "@id": "urn:ngm:class:google-ai-technology-corporation-cloud",
         "label": "Google Cloud"
       }
     ],
@@ -163,11 +159,11 @@ public:: true
         "label": "DirectX"
       },
       {
-        "@id": "urn:ngm:class:hololens",
+        "@id": "urn:ngm:class:tele-025-microsoft-hololens",
         "label": "HoloLens"
       },
       {
-        "@id": "urn:ngm:class:copilot",
+        "@id": "urn:ngm:class:microsoft-copilot",
         "label": "Copilot"
       }
     ]

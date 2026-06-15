@@ -30,10 +30,6 @@
         "label": "Algorithmic Bias"
       },
       {
-        "id": "urn:ngm:class:model-failure",
-        "label": "Model Failure"
-      },
-      {
         "id": "urn:ngm:class:data-poisoning",
         "label": "Data Poisoning"
       }

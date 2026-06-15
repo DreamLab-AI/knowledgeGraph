@@ -38,56 +38,145 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:noise-scheduler", "label": "Noise Scheduler"},
-      {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"},
-      {"@id": "urn:ngm:class:u-net", "label": "U-Net"}
+      {
+        "@id": "urn:ngm:class:noise-schedule",
+        "label": "Noise Scheduler"
+      },
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "@id": "urn:ngm:class:u-net",
+        "label": "U-Net"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:pytorch", "label": "PyTorch"},
-      {"@id": "urn:ngm:class:jax", "label": "JAX"},
-      {"@id": "urn:ngm:class:xformers", "label": "xFormers"},
-      {"@id": "urn:ngm:class:accelerate", "label": "Accelerate"}
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "label": "PyTorch"
+      },
+      {
+        "@id": "urn:ngm:class:jax",
+        "label": "JAX"
+      },
+      {
+        "@id": "urn:ngm:class:hugging-face-accelerate",
+        "label": "Accelerate"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:audio-generation", "label": "Audio Generation"},
-      {"@id": "urn:ngm:class:video-generation", "label": "Video Generation"},
-      {"@id": "urn:ngm:class:inpainting", "label": "Inpainting"}
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      },
+      {
+        "@id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "@id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:hugging-face-hub", "label": "HuggingFace Hub"},
-      {"@id": "urn:ngm:class:transformers-library", "label": "Transformers Library"}
+      {
+        "@id": "urn:ngm:class:hugging-face-hub",
+        "label": "HuggingFace Hub"
+      },
+      {
+        "@id": "urn:ngm:class:transformers-library",
+        "label": "Transformers Library"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:latent-diffusion-model", "label": "Latent Diffusion Model"},
-      {"@id": "urn:ngm:class:score-based-generative-model", "label": "Score-Based Generative Model"}
+      {
+        "@id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:score-based-generative-model",
+        "label": "Score-Based Generative Model"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:dreambooth", "label": "DreamBooth"},
-      {"@id": "urn:ngm:class:lora", "label": "LoRA"},
-      {"@id": "urn:ngm:class:controlnet", "label": "ControlNet"},
-      {"@id": "urn:ngm:class:textual-inversion", "label": "Textual Inversion"}
+      {
+        "@id": "urn:ngm:class:kohya-dreambooth-and-similar",
+        "label": "DreamBooth"
+      },
+      {
+        "@id": "urn:ngm:class:lora",
+        "label": "LoRA"
+      },
+      {
+        "@id": "urn:ngm:class:controlnet",
+        "label": "ControlNet"
+      },
+      {
+        "@id": "urn:ngm:class:textual-inversion",
+        "label": "Textual Inversion"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
-      {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"}
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:stable-diffusion", "label": "Stable Diffusion"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:clip", "label": "CLIP"},
-      {"@id": "urn:ngm:class:model-hub", "label": "Model Hub"}
+      {
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
+        "label": "Stable Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "@id": "urn:ngm:class:model-hub",
+        "label": "Model Hub"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:augmented-reality-content-creation", "label": "Augmented Reality Content Creation"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality-content-creation",
+        "label": "Augmented Reality Content Creation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:diffusers-library", "label": "Diffusers Library"}
+    {
+      "@id": "urn:ngm:class:diffusers-library",
+      "label": "Diffusers Library"
+    }
   ],
   "quality": 0.74,
   "provenance": {

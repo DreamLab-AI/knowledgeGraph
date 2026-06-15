@@ -53,52 +53,109 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:gameplay-systems", "label": "Gameplay Systems"},
-    {"@id": "urn:ngm:class:ludic-rules", "label": "Ludic Rules"}
+    {
+      "@id": "urn:ngm:class:gameplay-systems",
+      "label": "Gameplay Systems"
+    },
+    {
+      "@id": "urn:ngm:class:ludic-rules",
+      "label": "Ludic Rules"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:reward-loop", "label": "Reward Loop"},
-      {"@id": "urn:ngm:class:progression-system", "label": "Progression System"},
-      {"@id": "urn:ngm:class:resource-management", "label": "Resource Management"},
-      {"@id": "urn:ngm:class:collision-detection", "label": "Collision Detection"},
-      {"@id": "urn:ngm:class:npc-behaviour", "label": "NPC Behaviour"}
+      {
+        "@id": "urn:ngm:class:resource-management",
+        "label": "Resource Management"
+      },
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:play-to-earn-p2-e", "label": "Play-to-Earn (P2E)"},
-      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"},
-      {"@id": "urn:ngm:class:player-engagement", "label": "Player Engagement"},
-      {"@id": "urn:ngm:class:emergent-gameplay", "label": "Emergent Gameplay"}
+      {
+        "@id": "urn:ngm:class:play-to-earn-p2-e",
+        "label": "Play-to-Earn (P2E)"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      },
+      {
+        "@id": "urn:ngm:class:player-engagement",
+        "label": "Player Engagement"
+      },
+      {
+        "@id": "urn:ngm:class:emergent-gameplay",
+        "label": "Emergent Gameplay"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"}
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:economic-parameters", "label": "Economic Parameters"},
-      {"@id": "urn:ngm:class:behavioural-ai", "label": "Behavioural AI"},
-      {"@id": "urn:ngm:class:state-machine", "label": "State Machine"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:economic-parameters",
+        "label": "Economic Parameters"
+      },
+      {
+        "@id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:social-interaction", "label": "Social Interaction"},
-      {"@id": "urn:ngm:class:digital-goods", "label": "Digital Goods"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:narrative-mechanics", "label": "Narrative Mechanics"},
-      {"@id": "urn:ngm:class:simulation-rules", "label": "Simulation Rules"}
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:social-interaction",
+        "label": "Social Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:digital-goods",
+        "label": "Digital Goods"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
-      {"@id": "urn:ngm:class:procedural-content-generation", "label": "Procedural Content Generation"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:interactive-system-design", "label": "Interactive System Design"},
-      {"@id": "urn:ngm:class:gamification", "label": "Gamification"},
-      {"@id": "urn:ngm:class:user-experience-design", "label": "User Experience Design"},
-      {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"}
+      {
+        "@id": "urn:ngm:class:gamification",
+        "label": "Gamification"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      }
     ]
   },
   "provenance": {

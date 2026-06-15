@@ -81,49 +81,125 @@ alias:: Double-Spending, Double-spending, double-spending
   },
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:transaction-finality", "label": "Transaction Finality"},
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-finality",
+        "label": "Transaction Finality"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:attack-vector", "label": "Attack Vector"},
-      {"@id": "urn:ngm:class:51-percent-attack", "label": "51% Attack"},
-      {"@id": "urn:ngm:class:race-attack", "label": "Race Attack"},
-      {"@id": "urn:ngm:class:finney-attack", "label": "Finney Attack"}
+      {
+        "@id": "urn:ngm:class:attack-vector",
+        "label": "Attack Vector"
+      },
+      {
+        "@id": "urn:ngm:class:51-attack",
+        "label": "51% Attack"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:finality", "label": "Finality"},
-      {"@id": "urn:ngm:class:transaction-confirmation", "label": "Transaction Confirmation"},
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
+      {
+        "@id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-confirmation",
+        "label": "Transaction Confirmation"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:utxo", "label": "UTXO"},
-      {"@id": "urn:ngm:class:transaction-propagation", "label": "Transaction Propagation"}
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:utxo",
+        "label": "UTXO"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-propagation",
+        "label": "Transaction Propagation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:sybil-attack", "label": "Sybil Attack"},
-      {"@id": "urn:ngm:class:selfish-mining", "label": "Selfish Mining"},
-      {"@id": "urn:ngm:class:eclipse-attack", "label": "Eclipse Attack"},
-      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:block-confirmation", "label": "Block Confirmation"},
-      {"@id": "urn:ngm:class:payment-channel", "label": "Payment Channel"}
+      {
+        "@id": "urn:ngm:class:sybil-attack",
+        "label": "Sybil Attack"
+      },
+      {
+        "@id": "urn:ngm:class:selfish-mining",
+        "label": "Selfish Mining"
+      },
+      {
+        "@id": "urn:ngm:class:eclipse-attack",
+        "label": "Eclipse Attack"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:block-confirmation",
+        "label": "Block Confirmation"
+      },
+      {
+        "@id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:blockchain-security", "label": "Blockchain Security"}
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain Security"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-currency", "label": "Digital Currency"},
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"}
+      {
+        "@id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:duplicate-payment-attack", "label": "Duplicate Payment Attack"},
-    {"@id": "urn:ngm:class:double-spend-attack", "label": "Double-Spend Attack"}
+    {
+      "@id": "urn:ngm:class:duplicate-payment-attack",
+      "label": "Duplicate Payment Attack"
+    },
+    {
+      "@id": "urn:ngm:class:double-spend-attack",
+      "label": "Double-Spend Attack"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

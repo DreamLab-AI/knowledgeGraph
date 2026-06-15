@@ -24,68 +24,172 @@ public:: true
   "domain": "governance",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:data-protection-regulation", "label": "Data Protection Regulation"}
+    {
+      "@id": "urn:ngm:class:data-protection-regulation",
+      "label": "Data Protection Regulation"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:right-to-erasure", "label": "Right to Erasure"},
-      {"@id": "urn:ngm:class:data-portability", "label": "Data Portability"},
-      {"@id": "urn:ngm:class:data-protection-impact-assessment", "label": "Data Protection Impact Assessment"},
-      {"@id": "urn:ngm:class:lawful-basis-for-processing", "label": "Lawful Basis for Processing"}
+      {
+        "@id": "urn:ngm:class:right-to-erasure",
+        "label": "Right to Erasure"
+      },
+      {
+        "@id": "urn:ngm:class:data-portability",
+        "label": "Data Portability"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection-impact-assessment",
+        "label": "Data Protection Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:lawful-basis-for-processing",
+        "label": "Lawful Basis for Processing"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:eu-digital-single-market", "label": "EU Digital Single Market"}
+      {
+        "@id": "urn:ngm:class:eu-digital-single-market",
+        "label": "EU Digital Single Market"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"},
-      {"@id": "urn:ngm:class:data-protection-officer", "label": "Data Protection Officer"}
+      {
+        "@id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection-officer",
+        "label": "Data Protection Officer"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
-      {"@id": "urn:ngm:class:privacy-impact-assessment", "label": "Privacy Impact Assessment"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
-      {"@id": "urn:ngm:class:data-subject-rights", "label": "Data Subject Rights"}
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-impact-assessment",
+        "label": "Privacy Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:data-subject-rights",
+        "label": "Data Subject Rights"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:supervisory-authority", "label": "Supervisory Authority"},
-      {"@id": "urn:ngm:class:european-data-protection-board", "label": "European Data Protection Board"}
+      {
+        "@id": "urn:ngm:class:supervisory-authority",
+        "label": "Supervisory Authority"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:information-security", "label": "Information Security"}
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:trust", "label": "Trust"},
-      {"@id": "urn:ngm:class:digital-rights", "label": "Digital Rights"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:trust",
+        "label": "Trust"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:european-parliament", "label": "European Parliament"},
-      {"@id": "urn:ngm:class:iso-27701", "label": "ISO 27701"}
+      {
+        "@id": "urn:ngm:class:european-parliament",
+        "label": "European Parliament"
+      },
+      {
+        "@id": "urn:ngm:class:iso-27701",
+        "label": "ISO 27701"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ccpa", "label": "CCPA"},
-      {"@id": "urn:ngm:class:hipaa", "label": "HIPAA"},
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}
+      {
+        "@id": "urn:ngm:class:ccpa",
+        "label": "CCPA"
+      },
+      {
+        "@id": "urn:ngm:class:hipaa",
+        "label": "HIPAA"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-act", "label": "AI Act"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"}
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
-      {"@id": "urn:ngm:class:data-breach-notification", "label": "Data Breach Notification"},
-      {"@id": "urn:ngm:class:cross-border-data-transfer", "label": "Cross-Border Data Transfer"}
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:data-breach-notification",
+        "label": "Data Breach Notification"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-data-transfer",
+        "label": "Cross-Border Data Transfer"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:general-data-protection-regulation", "label": "General Data Protection Regulation"},
-    {"@id": "urn:ngm:class:regulation-2016-679", "label": "Regulation 2016/679"}
+    {
+      "@id": "urn:ngm:class:general-data-protection-regulation",
+      "label": "General Data Protection Regulation"
+    },
+    {
+      "@id": "urn:ngm:class:regulation-2016-679",
+      "label": "Regulation 2016/679"
+    }
   ],
   "quality": 0.76,
   "provenance": {

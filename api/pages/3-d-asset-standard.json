@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:gltf",
+        "id": "urn:ngm:class:gltf-standard",
         "label": "glTF"
       },
       {
@@ -79,10 +79,6 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:proprietary-asset-format",
-        "label": "Proprietary Asset Format"
-      },
-      {
         "id": "urn:ngm:class:fbx",
         "label": "FBX"
       }
@@ -93,7 +89,7 @@
         "label": "Non-Fungible Token"
       },
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       }
     ],
@@ -103,7 +99,7 @@
         "label": "Scene Graph"
       },
       {
-        "id": "urn:ngm:class:skeleton-animation",
+        "id": "urn:ngm:class:skeletal-animation",
         "label": "Skeleton Animation"
       },
       {

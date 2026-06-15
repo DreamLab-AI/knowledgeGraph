@@ -24,10 +24,6 @@
       {
         "id": "urn:ngm:class:gemini-multimodal-language-model",
         "label": "Gemini Multimodal Language Model"
-      },
-      {
-        "id": "urn:ngm:class:alphacode",
-        "label": "AlphaCode"
       }
     ],
     "requires": [

@@ -146,10 +146,6 @@ public:: true
         "label": "LP Token"
       },
       {
-        "@id": "urn:ngm:class:token-reserve",
-        "label": "Token Reserve"
-      },
-      {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       }

@@ -118,7 +118,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:data-collection-pipeline",
+        "@id": "urn:ngm:class:data-collection",
         "label": "Data Collection Pipeline"
       },
       {
@@ -140,10 +140,6 @@ public:: true
         "label": "Analytics Engine"
       },
       {
-        "@id": "urn:ngm:class:event-logging",
-        "label": "Event Logging"
-      },
-      {
         "@id": "urn:ngm:class:data-storage",
         "label": "Data Storage"
       }
@@ -154,7 +150,7 @@ public:: true
         "label": "Capacity Planning"
       },
       {
-        "@id": "urn:ngm:class:user-behavior-analysis",
+        "@id": "urn:ngm:class:behavior-analysis",
         "label": "User Behavior Analysis"
       },
       {

@@ -66,7 +66,7 @@
         "label": "Overfitting"
       },
       {
-        "id": "urn:ngm:class:manual-feature-engineering",
+        "id": "urn:ngm:class:feature-engineering",
         "label": "Manual Feature Engineering"
       }
     ],
@@ -106,7 +106,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:machine-learning-pipeline",
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
       },
       {
@@ -130,10 +130,6 @@
       {
         "id": "urn:ngm:class:distributed-training",
         "label": "Distributed Training"
-      },
-      {
-        "id": "urn:ngm:class:machine-learning-optimisation",
-        "label": "Machine Learning Optimisation"
       }
     ]
   },

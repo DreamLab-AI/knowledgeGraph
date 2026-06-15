@@ -23,58 +23,119 @@ public:: true
   "definition": "Model comparison is the systematic process of evaluating and contrasting multiple machine learning or AI models against a common set of tasks, datasets, and metrics to determine their relative strengths, weaknesses, and suitability for deployment. It encompasses both quantitative benchmarking and qualitative assessment of factors such as computational cost, latency, robustness, and alignment properties. Rigorous model comparison underpins reproducible research and responsible AI deployment decisions. The discipline has grown substantially as the proliferation of foundation models makes vendor-neutral evaluation increasingly critical.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:evaluation-metric",
+      "label": "Evaluation Metric"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:benchmarks", "label": "Benchmarks"},
-      {"@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards", "label": "Evaluation benchmarks and leaderboards"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"},
-      {"@id": "urn:ngm:class:statistical-significance-testing", "label": "Statistical Significance Testing"},
-      {"@id": "urn:ngm:class:held-out-test-set", "label": "Held-Out Test Set"}
+      {
+        "@id": "urn:ngm:class:benchmarks",
+        "label": "Benchmarks"
+      },
+      {
+        "@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation benchmarks and leaderboards"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-significance-testing",
+        "label": "Statistical Significance Testing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"},
-      {"@id": "urn:ngm:class:model-evaluation-results", "label": "Model Evaluation Results"},
-      {"@id": "urn:ngm:class:fairness-accuracy-tradeoffs", "label": "Fairness Accuracy Tradeoffs"},
-      {"@id": "urn:ngm:class:reproducibility", "label": "Reproducibility"},
-      {"@id": "urn:ngm:class:benchmark-contamination", "label": "Benchmark Contamination"},
-      {"@id": "urn:ngm:class:leaderboard", "label": "Leaderboard"}
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      },
+      {
+        "@id": "urn:ngm:class:fairness-accuracy-tradeoffs",
+        "label": "Fairness Accuracy Tradeoffs"
+      },
+      {
+        "@id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "@id": "urn:ngm:class:leaderboard",
+        "label": "Leaderboard"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-optimisation-and-performance", "label": "Model Optimisation and Performance"},
-      {"@id": "urn:ngm:class:ai-model-card", "label": "AI Model Card"},
-      {"@id": "urn:ngm:class:model-selection", "label": "Model Selection"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"}
+      {
+        "@id": "urn:ngm:class:model-optimisation-and-performance",
+        "label": "Model Optimisation and Performance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-model-card",
+        "label": "AI Model Card"
+      },
+      {
+        "@id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:evaluation-dataset", "label": "Evaluation Dataset"},
-      {"@id": "urn:ngm:class:performance-metric", "label": "Performance Metric"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:ablation-study", "label": "Ablation Study"},
-      {"@id": "urn:ngm:class:baseline-model", "label": "Baseline Model"}
+      {
+        "@id": "urn:ngm:class:performance-metrics",
+        "label": "Performance Metric"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:human-evaluation", "label": "Human Evaluation"}
+      {
+        "@id": "urn:ngm:class:human-evaluation",
+        "label": "Human Evaluation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:pareto-optimality", "label": "Pareto Optimality"},
-      {"@id": "urn:ngm:class:multi-objective-optimisation", "label": "Multi-Objective Optimisation"}
+      {
+        "@id": "urn:ngm:class:optimality",
+        "label": "Pareto Optimality"
+      },
+      {
+        "@id": "urn:ngm:class:multi-objective-optimisation",
+        "label": "Multi-Objective Optimisation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}
-    ],
-    "standardizedBy": [
-      {"@id": "urn:ngm:class:helm-holistic-evaluation-of-language-models", "label": "HELM Holistic Evaluation of Language Models"}
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:governance", "label": "Governance"},
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:model-benchmarking", "label": "Model Benchmarking"},
-    {"@id": "urn:ngm:class:comparative-model-evaluation", "label": "Comparative Model Evaluation"}
+    {
+      "@id": "urn:ngm:class:model-benchmarking",
+      "label": "Model Benchmarking"
+    },
+    {
+      "@id": "urn:ngm:class:comparative-model-evaluation",
+      "label": "Comparative Model Evaluation"
+    }
   ],
   "quality": 0.8,
   "provenance": {

@@ -139,20 +139,12 @@ public:: true
       {
         "@id": "urn:ngm:class:bayesian-inference",
         "label": "Bayesian Inference"
-      },
-      {
-        "@id": "urn:ngm:class:maximum-a-posteriori-estimation",
-        "label": "Maximum A Posteriori Estimation"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:posterior-distribution",
         "label": "Posterior Distribution"
-      },
-      {
-        "@id": "urn:ngm:class:marginalisation",
-        "label": "Marginalisation"
       },
       {
         "@id": "urn:ngm:class:monte-carlo-methods",
@@ -177,10 +169,6 @@ public:: true
       {
         "@id": "urn:ngm:class:frequentist-inference",
         "label": "Frequentist Inference"
-      },
-      {
-        "@id": "urn:ngm:class:point-estimation",
-        "label": "Point Estimation"
       }
     ],
     "bridgesTo": [

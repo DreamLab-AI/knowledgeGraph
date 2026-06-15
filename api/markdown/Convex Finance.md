@@ -23,52 +23,135 @@ public:: true
   "definition": "Convex Finance is a decentralised finance (DeFi) meta-protocol built on Ethereum that enables Curve Finance liquidity providers and CRV holders to earn enhanced rewards without individually locking their own CRV tokens as veCRV. By aggregating vote-escrowed CRV (veCRV) from users who deposit CRV in exchange for cvxCRV, Convex accumulates collective governance and boost power which it redistributes pro-rata to depositors, eliminating the individual capital lockup barrier inherent in Curve's vote-escrow tokenomics. The protocol's native CVX token governs allocation of this aggregated veCRV voting power via vlCVX staking, creating a secondary governance layer — the so-called Curve Wars — in which DeFi protocols competitively bribe CVX holders to direct CRV emissions toward their own liquidity pools.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:de-fi-protocol", "label": "De Fi Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:de-fi-protocol",
+      "label": "De Fi Protocol"
+    }
+  ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"},
-      {"@id": "urn:ngm:class:curve-wars", "label": "Curve Wars"}
+      {
+        "@id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "@id": "urn:ngm:class:curve-wars",
+        "label": "Curve Wars"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
-      {"@id": "urn:ngm:class:vote-escrow-tokenomics", "label": "Vote-Escrow Tokenomics"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:vote-escrow-tokenomics",
+        "label": "Vote-Escrow Tokenomics"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"},
-      {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"},
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"},
-      {"@id": "urn:ngm:class:curve-finance", "label": "Curve Finance"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "@id": "urn:ngm:class:curve-finance",
+        "label": "Curve Finance"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:yield-farming", "label": "Yield Farming"},
-      {"@id": "urn:ngm:class:liquidity-provision", "label": "Liquidity Provision"},
-      {"@id": "urn:ngm:class:yield-generation", "label": "Yield Generation"},
-      {"@id": "urn:ngm:class:meta-governance", "label": "Meta-Governance"},
-      {"@id": "urn:ngm:class:bribe-economy", "label": "Bribe Economy"}
+      {
+        "@id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "@id": "urn:ngm:class:yield-generation",
+        "label": "Yield Generation"
+      },
+      {
+        "@id": "urn:ngm:class:meta-governance",
+        "label": "Meta-Governance"
+      },
+      {
+        "@id": "urn:ngm:class:bribe-economy",
+        "label": "Bribe Economy"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:liquidity-mining", "label": "Liquidity Mining"},
-      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"}
+      {
+        "@id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:concentrated-liquidity", "label": "Concentrated Liquidity"},
-      {"@id": "urn:ngm:class:aura-finance", "label": "Aura Finance"},
-      {"@id": "urn:ngm:class:yearn-finance", "label": "Yearn Finance"}
+      {
+        "@id": "urn:ngm:class:concentrated-liquidity",
+        "label": "Concentrated Liquidity"
+      },
+      {
+        "@id": "urn:ngm:class:aura-finance",
+        "label": "Aura Finance"
+      },
+      {
+        "@id": "urn:ngm:class:yearn",
+        "label": "Yearn Finance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:decentralized-autonomous-organisation", "label": "Decentralized Autonomous Organisation"},
-      {"@id": "urn:ngm:class:total-value-locked", "label": "Total Value Locked"},
-      {"@id": "urn:ngm:class:frax-finance", "label": "Frax Finance"}
+      {
+        "@id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:total-value-locked",
+        "label": "Total Value Locked"
+      },
+      {
+        "@id": "urn:ngm:class:frax-finance",
+        "label": "Frax Finance"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
-      {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"}
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:cvx-protocol", "label": "CVX Protocol"}
+    {
+      "@id": "urn:ngm:class:cvx-protocol",
+      "label": "CVX Protocol"
+    }
   ],
   "quality": 0.72,
   "provenance": {

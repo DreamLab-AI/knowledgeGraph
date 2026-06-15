@@ -92,51 +92,129 @@ alias:: ReinforcementLearning
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:policy-gradient-method", "label": "Policy Gradient Method"},
-      {"@id": "urn:ngm:class:q-learning", "label": "Q-Learning"},
-      {"@id": "urn:ngm:class:temporal-difference-learning", "label": "Temporal Difference Learning"},
-      {"@id": "urn:ngm:class:value-function", "label": "Value Function"}
+      {
+        "@id": "urn:ngm:class:policy-gradient-method",
+        "label": "Policy Gradient Method"
+      },
+      {
+        "@id": "urn:ngm:class:q-learning",
+        "label": "Q-Learning"
+      },
+      {
+        "@id": "urn:ngm:class:temporal-difference-learning",
+        "label": "Temporal Difference Learning"
+      },
+      {
+        "@id": "urn:ngm:class:value-function",
+        "label": "Value Function"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:reward-signal", "label": "Reward Signal"},
-      {"@id": "urn:ngm:class:markov-decision-process", "label": "Markov Decision Process"}
+      {
+        "@id": "urn:ngm:class:reward-signal",
+        "label": "Reward Signal"
+      },
+      {
+        "@id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
-      {"@id": "urn:ngm:class:game-playing-agent", "label": "Game Playing Agent"},
-      {"@id": "urn:ngm:class:recommendation-system", "label": "Recommendation System"}
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "@id": "urn:ngm:class:ai-game-agent",
+        "label": "Game Playing Agent"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:model-based-planning", "label": "Model-Based Planning"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:automated-planning",
+        "label": "Model-Based Planning"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:bellman-equation", "label": "Bellman Equation"},
-      {"@id": "urn:ngm:class:exploration-exploitation-tradeoff", "label": "Exploration-Exploitation Tradeoff"}
+      {
+        "@id": "urn:ngm:class:bellman-equation",
+        "label": "Bellman Equation"
+      },
+      {
+        "@id": "urn:ngm:class:exploration-exploitation-tradeoff",
+        "label": "Exploration-Exploitation Tradeoff"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"},
-      {"@id": "urn:ngm:class:unsupervised-learning", "label": "Unsupervised Learning"}
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotic-control", "label": "Robotic Control"},
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"}
+      {
+        "@id": "urn:ngm:class:robotic-control",
+        "label": "Robotic Control"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
-      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
-      {"@id": "urn:ngm:class:imitation-learning", "label": "Imitation Learning"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:sequential-decision-learning", "label": "Sequential Decision Learning"},
-    {"@id": "urn:ngm:class:trial-and-error-learning", "label": "Trial and Error Learning"}
+    {
+      "@id": "urn:ngm:class:sequential-decision-learning",
+      "label": "Sequential Decision Learning"
+    },
+    {
+      "@id": "urn:ngm:class:trial-and-error-learning",
+      "label": "Trial and Error Learning"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -38,7 +38,7 @@
         "label": "QLoRA"
       },
       {
-        "id": "urn:ngm:class:ada-lo-ra",
+        "id": "urn:ngm:class:lo-ra-do-ra-etc",
         "label": "AdaLoRA"
       }
     ],
@@ -107,7 +107,7 @@
         "label": "Low-Rank Decomposition"
       },
       {
-        "id": "urn:ngm:class:model-quantisation",
+        "id": "urn:ngm:class:neural-network-quantisation",
         "label": "Model Quantisation"
       }
     ],

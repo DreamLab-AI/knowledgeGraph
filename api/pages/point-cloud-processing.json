@@ -24,24 +24,12 @@
       {
         "id": "urn:ngm:class:point-cloud-segmentation",
         "label": "Point Cloud Segmentation"
-      },
-      {
-        "id": "urn:ngm:class:surface-reconstruction",
-        "label": "Surface Reconstruction"
-      },
-      {
-        "id": "urn:ngm:class:normal-estimation",
-        "label": "Normal Estimation"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:gpu-computing",
         "label": "GPU Computing"
-      },
-      {
-        "id": "urn:ngm:class:3d-coordinate-geometry",
-        "label": "3D Coordinate Geometry"
       }
     ],
     "enables": [
@@ -106,11 +94,7 @@
         "label": "Spatial Data Structure"
       },
       {
-        "id": "urn:ngm:class:iterative-closest-point",
-        "label": "Iterative Closest Point"
-      },
-      {
-        "id": "urn:ngm:class:octree",
+        "id": "urn:ngm:class:octree-spatial-index",
         "label": "Octree"
       },
       {
@@ -122,10 +106,6 @@
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:3d-object-detection",
-        "label": "3D Object Detection"
-      },
       {
         "id": "urn:ngm:class:building-information-modelling",
         "label": "Building Information Modelling"

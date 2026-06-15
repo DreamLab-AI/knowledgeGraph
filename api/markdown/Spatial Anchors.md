@@ -90,7 +90,7 @@ public:: true
         "label": "Persistent AR Placement"
       },
       {
-        "@id": "urn:ngm:class:shared-ar-experience",
+        "@id": "urn:ngm:class:shared-ar-experiences",
         "label": "Shared AR Experience"
       },
       {
@@ -104,12 +104,8 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:world-space-coordinate-system",
+        "@id": "urn:ngm:class:coordinate-system",
         "label": "World Space Coordinate System"
-      },
-      {
-        "@id": "urn:ngm:class:relocalisation",
-        "label": "Relocalisation"
       }
     ],
     "uses": [
@@ -158,16 +154,6 @@ public:: true
         "label": "ARKit"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:image-target",
-        "label": "Image Target"
-      },
-      {
-        "@id": "urn:ngm:class:gps-coordinate",
-        "label": "GPS Coordinate"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:geospatial-data",
@@ -176,16 +162,6 @@ public:: true
       {
         "@id": "urn:ngm:class:spatial-web",
         "label": "Spatial Web"
-      }
-    ],
-    "relatedTo": [
-      {
-        "@id": "urn:ngm:class:world-locking-tools",
-        "label": "World Locking Tools"
-      },
-      {
-        "@id": "urn:ngm:class:azure-spatial-anchors",
-        "label": "Azure Spatial Anchors"
       }
     ]
   },

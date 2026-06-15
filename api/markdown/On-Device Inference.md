@@ -23,53 +23,109 @@ public:: true
   "definition": "On-device inference is the execution of machine learning model forward passes entirely on the end-user's hardware — such as a smartphone, wearable, embedded controller, or edge server — without transmitting input data to a remote cloud backend. It requires models to be compressed, quantised, or distilled to fit within tight memory, compute, and power budgets while maintaining acceptable accuracy.",
   "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:edge-inference", "label": "Edge Inference"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:edge-inference",
+    "label": "Edge Inference"
+  },
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:model-compression-for-edge", "label": "Model Compression for Edge"},
-      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
-      {"@id": "urn:ngm:class:post-training-quantisation", "label": "Post-Training Quantisation"},
-      {"@id": "urn:ngm:class:weight-pruning", "label": "Weight Pruning"}
+      {
+        "@id": "urn:ngm:class:model-compression-for-edge",
+        "label": "Model Compression for Edge"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:post-training-quantisation",
+        "label": "Post-Training Quantisation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:offline-ai", "label": "Offline AI"},
-      {"@id": "urn:ngm:class:real-time-inference", "label": "Real-Time Inference"},
-      {"@id": "urn:ngm:class:privacy-preserving-ai", "label": "Privacy-Preserving AI"},
-      {"@id": "urn:ngm:class:low-latency-ml", "label": "Low-Latency ML"}
+      {
+        "@id": "urn:ngm:class:offline-ai",
+        "label": "Offline AI"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-inference",
+        "label": "Real-Time Inference"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-ai",
+        "label": "Privacy-Preserving AI"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:onnx-runtime", "label": "ONNX Runtime"},
-      {"@id": "urn:ngm:class:tensorflow-lite", "label": "TensorFlow Lite"},
-      {"@id": "urn:ngm:class:coreml", "label": "CoreML"},
-      {"@id": "urn:ngm:class:executorch", "label": "ExecuTorch"}
+      {
+        "@id": "urn:ngm:class:onnx-runtime",
+        "label": "ONNX Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-flow-lite",
+        "label": "TensorFlow Lite"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:npu", "label": "NPU"},
-      {"@id": "urn:ngm:class:mobile-gpu", "label": "Mobile GPU"},
-      {"@id": "urn:ngm:class:knowledge-distillation-for-edge", "label": "Knowledge Distillation for Edge"}
+      {
+        "@id": "urn:ngm:class:npu",
+        "label": "NPU"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-distillation-for-edge",
+        "label": "Knowledge Distillation for Edge"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:onnx", "label": "ONNX"},
-      {"@id": "urn:ngm:class:mlir", "label": "MLIR"}
+      {
+        "@id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      },
+      {
+        "@id": "urn:ngm:class:mlir",
+        "label": "MLIR"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:cloud-inference", "label": "Cloud Inference"},
-      {"@id": "urn:ngm:class:server-side-inference", "label": "Server-Side Inference"}
+      {
+        "@id": "urn:ngm:class:cloud-inference",
+        "label": "Cloud Inference"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:autonomous-vehicles", "label": "Autonomous Vehicles"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:tinyml", "label": "TinyML"},
-      {"@id": "urn:ngm:class:mlperf-mobile", "label": "MLPerf Mobile"},
-      {"@id": "urn:ngm:class:speculative-decoding", "label": "Speculative Decoding"}
+      {
+        "@id": "urn:ngm:class:tinyml",
+        "label": "TinyML"
+      },
+      {
+        "@id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:local-inference", "label": "Local Inference"},
-    {"@id": "urn:ngm:class:edge-ai-inference", "label": "Edge AI Inference"}
+    {
+      "@id": "urn:ngm:class:local-inference",
+      "label": "Local Inference"
+    },
+    {
+      "@id": "urn:ngm:class:edge-ai-inference",
+      "label": "Edge AI Inference"
+    }
   ],
   "quality": 0.72,
   "provenance": {

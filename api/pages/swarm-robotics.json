@@ -40,10 +40,6 @@
         "label": "Decentralized Control"
       },
       {
-        "id": "urn:ngm:class:local-interaction-protocol",
-        "label": "Local Interaction Protocol"
-      },
-      {
         "id": "urn:ngm:class:distributed-sensing",
         "label": "Distributed Sensing"
       }

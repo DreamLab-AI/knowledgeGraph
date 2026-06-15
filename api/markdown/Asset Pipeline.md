@@ -23,60 +23,157 @@ public:: true
   "definition": "An asset pipeline is an automated, staged workflow that ingests raw digital content—meshes, textures, audio, animations, and shaders—and transforms it through validation, processing, optimisation, and packaging steps into runtime-ready formats consumable by real-time engines, streaming platforms, or spatial computing environments. It enforces deterministic builds, enables version-controlled dependency graphs, and dramatically reduces manual content-preparation labour. Asset pipelines are foundational to game development, visual effects, and metaverse platform engineering, and increasingly incorporate AI-assisted level-of-detail generation, texture compression, and semantic tagging to scale content delivery across heterogeneous device targets.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:content-pipeline", "label": "Content Pipeline"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:content-pipeline",
+      "label": "Content Pipeline"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:asset-management", "label": "Asset Management"},
-      {"@id": "urn:ngm:class:render-pipeline", "label": "Render Pipeline"},
-      {"@id": "urn:ngm:class:build-system", "label": "Build System"},
-      {"@id": "urn:ngm:class:level-of-detail", "label": "Level of Detail"},
-      {"@id": "urn:ngm:class:texture-compression", "label": "Texture Compression"}
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:render-pipeline",
+        "label": "Render Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "@id": "urn:ngm:class:texture-compression",
+        "label": "Texture Compression"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"},
-      {"@id": "urn:ngm:class:3-d-file-format", "label": "3D File Format"},
-      {"@id": "urn:ngm:class:shader", "label": "Shader"},
-      {"@id": "urn:ngm:class:data-compression", "label": "Data Compression"},
-      {"@id": "urn:ngm:class:universal-scene-description", "label": "Universal Scene Description"},
-      {"@id": "urn:ngm:class:gltf", "label": "glTF"}
+      {
+        "@id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-file-format",
+        "label": "3D File Format"
+      },
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "@id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      },
+      {
+        "@id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      },
+      {
+        "@id": "urn:ngm:class:gltf-standard",
+        "label": "glTF"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-twin-creation", "label": "Digital Twin Creation"},
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:streaming-content-delivery", "label": "Streaming Content Delivery"}
+      {
+        "@id": "urn:ngm:class:digital-twin-creation",
+        "label": "Digital Twin Creation"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery",
+        "label": "Streaming Content Delivery"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
-      {"@id": "urn:ngm:class:content-addressed-storage", "label": "Content-Addressed Storage"},
-      {"@id": "urn:ngm:class:dependency-graph", "label": "Dependency Graph"}
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage"
+      },
+      {
+        "@id": "urn:ngm:class:dependency-graph",
+        "label": "Dependency Graph"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"},
-      {"@id": "urn:ngm:class:metadata-schema", "label": "Metadata Schema"}
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-schema",
+        "label": "Metadata Schema"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:creator-economy", "label": "Creator Economy"},
-      {"@id": "urn:ngm:class:digital-rights-management", "label": "Digital Rights Management"}
+      {
+        "@id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:khronos-group", "label": "Khronos Group"},
-      {"@id": "urn:ngm:class:pixar-usd", "label": "Pixar USD"}
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "@id": "urn:ngm:class:open-usd",
+        "label": "Pixar USD"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:asset-format-standards", "label": "Asset Format Standards"},
-      {"@id": "urn:ngm:class:vfx-tools", "label": "VFX Tools"},
-      {"@id": "urn:ngm:class:procedural-generation", "label": "Procedural Generation"}
+      {
+        "@id": "urn:ngm:class:asset-format-standards",
+        "label": "Asset Format Standards"
+      },
+      {
+        "@id": "urn:ngm:class:vfx-tools",
+        "label": "VFX Tools"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-content-generation", "label": "AI Content Generation"},
-      {"@id": "urn:ngm:class:supply-chain-provenance", "label": "Supply Chain Provenance"}
+      {
+        "@id": "urn:ngm:class:content-generation",
+        "label": "AI Content Generation"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:content-build-pipeline", "label": "Content Build Pipeline"},
-    {"@id": "urn:ngm:class:digital-asset-pipeline", "label": "Digital Asset Pipeline"}
+    {
+      "@id": "urn:ngm:class:content-build-pipeline",
+      "label": "Content Build Pipeline"
+    },
+    {
+      "@id": "urn:ngm:class:digital-asset-pipeline",
+      "label": "Digital Asset Pipeline"
+    }
   ],
   "quality": 0.74,
   "provenance": {

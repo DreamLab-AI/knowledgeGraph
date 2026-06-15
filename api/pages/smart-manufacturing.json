@@ -30,7 +30,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:industrial-control-system",
+        "id": "urn:ngm:class:control-system",
         "label": "Industrial Control System"
       }
     ],
@@ -38,10 +38,6 @@
       {
         "id": "urn:ngm:class:cyber-physical-systems",
         "label": "Cyber Physical Systems"
-      },
-      {
-        "id": "urn:ngm:class:industrial-data-platform",
-        "label": "Industrial Data Platform"
       },
       {
         "id": "urn:ngm:class:5g-networks",
@@ -78,7 +74,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:industrial-internet-of-things",
+        "id": "urn:ngm:class:industrial-io-t",
         "label": "Industrial Internet of Things"
       }
     ],
@@ -126,10 +122,6 @@
       {
         "id": "urn:ngm:class:iso-iec-30141",
         "label": "ISO/IEC 30141"
-      },
-      {
-        "id": "urn:ngm:class:nist-smart-manufacturing-framework",
-        "label": "NIST Smart Manufacturing Framework"
       }
     ],
     "partOf": [

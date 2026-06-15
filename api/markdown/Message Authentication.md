@@ -23,19 +23,42 @@ public:: true
   "definition": "Message authentication is the cryptographic property that guarantees a received message originated from a claimed sender and has not been altered in transit. It is achieved through message authentication codes (MACs), digital signatures, or authenticated encryption schemes, each binding message content to a key or key pair that only the legitimate sender possesses.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:authentication", "label": "Authentication"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:authentication",
+      "label": "Authentication"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:message-authentication-code", "label": "Message Authentication Code"},
-      {"@id": "urn:ngm:class:asymmetric-cryptography", "label": "Asymmetric Cryptography"}
+      {
+        "@id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      },
+      {
+        "@id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:authentication-protocol", "label": "Authentication Protocol"},
-      {"@id": "urn:ngm:class:authentication-mechanism", "label": "Authentication Mechanism"}
+      {
+        "@id": "urn:ngm:class:authentication-protocol",
+        "label": "Authentication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:authentication-mechanism",
+        "label": "Authentication Mechanism"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:authentication-standards", "label": "Authentication Standards"},
-      {"@id": "urn:ngm:class:bbs-plus-signatures", "label": "BBS+ Signatures"}
+      {
+        "@id": "urn:ngm:class:authentication-standards",
+        "label": "Authentication Standards"
+      },
+      {
+        "@id": "urn:ngm:class:bbs-signatures",
+        "label": "BBS+ Signatures"
+      }
     ]
   },
   "quality": 0.8

@@ -132,27 +132,10 @@
       {
         "id": "urn:ngm:class:open-geospatial-consortium",
         "label": "Open Geospatial Consortium"
-      },
-      {
-        "id": "urn:ngm:class:iso-tc211",
-        "label": "ISO TC/211"
       }
     ],
     "partOf": [],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:geodesy",
-        "label": "Geodesy"
-      },
-      {
-        "id": "urn:ngm:class:cartography",
-        "label": "Cartography"
-      },
-      {
-        "id": "urn:ngm:class:spatial-data-infrastructure",
-        "label": "Spatial Data Infrastructure"
-      }
-    ]
+    "relatedTo": []
   },
   "wikilinks": [
     {

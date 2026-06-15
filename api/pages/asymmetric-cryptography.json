@@ -115,10 +115,6 @@
       {
         "id": "urn:ngm:class:code-signing",
         "label": "Code Signing"
-      },
-      {
-        "id": "urn:ngm:class:ssh",
-        "label": "SSH"
       }
     ],
     "standardizedBy": [],

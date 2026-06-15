@@ -36,10 +36,6 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:knowledge-acquisition",
-        "label": "Knowledge Acquisition"
-      },
-      {
         "id": "urn:ngm:class:data-schema",
         "label": "Data Schema"
       }
@@ -93,10 +89,6 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:decentralised-knowledge-graph",
-        "label": "Decentralised Knowledge Graph"
-      },
-      {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
       }
@@ -128,7 +120,7 @@
         "label": "Knowledge Graph"
       },
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       },
       {

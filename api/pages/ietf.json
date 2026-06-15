@@ -24,24 +24,12 @@
       {
         "id": "urn:ngm:class:working-group",
         "label": "Working Group"
-      },
-      {
-        "id": "urn:ngm:class:internet-engineering-steering-group",
-        "label": "Internet Engineering Steering Group"
-      },
-      {
-        "id": "urn:ngm:class:internet-architecture-board",
-        "label": "Internet Architecture Board"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:rough-consensus",
         "label": "Rough Consensus"
-      },
-      {
-        "id": "urn:ngm:class:open-participation",
-        "label": "Open Participation"
       }
     ],
     "enables": [
@@ -86,10 +74,6 @@
       {
         "id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"
-      },
-      {
-        "id": "urn:ngm:class:software-attestation",
-        "label": "Software Attestation"
       }
     ],
     "uses": [],
@@ -129,20 +113,11 @@
         "label": "QUIC"
       },
       {
-        "id": "urn:ngm:class:smtp",
-        "label": "SMTP"
-      },
-      {
         "id": "urn:ngm:class:dns",
         "label": "DNS"
       }
     ],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:internet-standards-ecosystem",
-        "label": "Internet Standards Ecosystem"
-      }
-    ],
+    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:network-standards",

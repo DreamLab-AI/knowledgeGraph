@@ -165,10 +165,6 @@ alias:: Human-Robot Interaction, HumanRobotInteraction
         "label": "Haptic Feedback"
       },
       {
-        "@id": "urn:ngm:class:safety-protocol",
-        "label": "Safety Protocol"
-      },
-      {
         "@id": "urn:ngm:class:teach-pendant",
         "label": "Teach Pendant"
       }
@@ -195,12 +191,8 @@ alias:: Human-Robot Interaction, HumanRobotInteraction
         "label": "Safety Metrics"
       },
       {
-        "@id": "urn:ngm:class:collaborative-robot",
+        "@id": "urn:ngm:class:collaborative-systems-modality-robot",
         "label": "Collaborative Robot"
-      },
-      {
-        "@id": "urn:ngm:class:intuitive-interface",
-        "label": "Intuitive Interface"
       }
     ],
     "dependsOn": [
@@ -267,16 +259,8 @@ alias:: Human-Robot Interaction, HumanRobotInteraction
         "label": "Cognitive Ergonomics"
       },
       {
-        "@id": "urn:ngm:class:robot-ethics",
-        "label": "Robot Ethics"
-      },
-      {
         "@id": "urn:ngm:class:intent-recognition",
         "label": "Intent Recognition"
-      },
-      {
-        "@id": "urn:ngm:class:interaction-paradigm",
-        "label": "Interaction Paradigm"
       }
     ]
   },

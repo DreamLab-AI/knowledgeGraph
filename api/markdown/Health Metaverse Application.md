@@ -170,10 +170,6 @@ public:: true
         "label": "Medical Simulation"
       },
       {
-        "@id": "urn:ngm:class:patient-portal",
-        "label": "Patient Portal"
-      },
-      {
         "@id": "urn:ngm:class:therapy-environment",
         "label": "Therapy Environment"
       },
@@ -208,10 +204,6 @@ public:: true
       {
         "@id": "urn:ngm:class:mental-health-therapy",
         "label": "Mental Health Therapy"
-      },
-      {
-        "@id": "urn:ngm:class:rehabilitation-program",
-        "label": "Rehabilitation Program"
       },
       {
         "@id": "urn:ngm:class:surgical-training",

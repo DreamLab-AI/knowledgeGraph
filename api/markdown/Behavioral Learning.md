@@ -102,14 +102,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:personalization",
-        "label": "Personalization"
-      },
-      {
-        "@id": "urn:ngm:class:user-experience-optimization",
-        "label": "User Experience Optimization"
-      },
-      {
         "@id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
       }

@@ -91,10 +91,6 @@ public:: true
         "label": "HTTP"
       },
       {
-        "@id": "urn:ngm:class:email-delivery",
-        "label": "Email Delivery"
-      },
-      {
         "@id": "urn:ngm:class:tls",
         "label": "TLS"
       },
@@ -111,52 +107,12 @@ public:: true
       {
         "@id": "urn:ngm:class:dns-resolver",
         "label": "DNS Resolver"
-      },
-      {
-        "@id": "urn:ngm:class:authoritative-name-server",
-        "label": "Authoritative Name Server"
-      },
-      {
-        "@id": "urn:ngm:class:dns-zone",
-        "label": "DNS Zone"
-      },
-      {
-        "@id": "urn:ngm:class:dns-record",
-        "label": "DNS Record"
-      }
-    ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:dnssec",
-        "label": "DNSSEC"
-      },
-      {
-        "@id": "urn:ngm:class:dns-over-https",
-        "label": "DNS over HTTPS"
-      },
-      {
-        "@id": "urn:ngm:class:dns-over-tls",
-        "label": "DNS over TLS"
       }
     ],
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:ietf",
         "label": "IETF"
-      },
-      {
-        "@id": "urn:ngm:class:icann",
-        "label": "ICANN"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:decentralised-naming",
-        "label": "Decentralised Naming"
-      },
-      {
-        "@id": "urn:ngm:class:blockchain-naming",
-        "label": "Blockchain Naming"
       }
     ],
     "relatedTo": [

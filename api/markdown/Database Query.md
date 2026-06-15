@@ -80,16 +80,6 @@ public:: true
         "label": "Database Management System"
       }
     ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:query-predicate",
-        "label": "Query Predicate"
-      },
-      {
-        "@id": "urn:ngm:class:query-result-set",
-        "label": "Query Result Set"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:database-schema",
@@ -126,10 +116,6 @@ public:: true
       {
         "@id": "urn:ngm:class:relational-database",
         "label": "Relational Database"
-      },
-      {
-        "@id": "urn:ngm:class:index-structure",
-        "label": "Index Structure"
       }
     ],
     "implements": [
@@ -156,7 +142,7 @@ public:: true
         "label": "REST API"
       },
       {
-        "@id": "urn:ngm:class:query-execution-engine",
+        "@id": "urn:ngm:class:query-processor",
         "label": "Query Execution Engine"
       }
     ],
@@ -176,7 +162,7 @@ public:: true
         "label": "ISO/IEC 9075 (SQL Standard)"
       },
       {
-        "@id": "urn:ngm:class:w3c-sparql",
+        "@id": "urn:ngm:class:sparql",
         "label": "W3C SPARQL Specification"
       }
     ],

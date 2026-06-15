@@ -77,10 +77,6 @@ public:: true
         "label": "Order Book"
       },
       {
-        "@id": "urn:ngm:class:funding-rate-mechanism",
-        "label": "Funding Rate Mechanism"
-      },
-      {
         "@id": "urn:ngm:class:liquidation-engine",
         "label": "Liquidation Engine"
       }
@@ -89,10 +85,6 @@ public:: true
       {
         "@id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
-      },
-      {
-        "@id": "urn:ngm:class:defi-derivatives-market",
-        "label": "DeFi Derivatives Market"
       }
     ],
     "requires": [
@@ -105,7 +97,7 @@ public:: true
         "label": "Smart Contract"
       },
       {
-        "@id": "urn:ngm:class:margin-collateral",
+        "@id": "urn:ngm:class:collateral-management",
         "label": "Margin Collateral"
       },
       {
@@ -121,14 +113,6 @@ public:: true
       {
         "@id": "urn:ngm:class:leveraged-trading",
         "label": "Leveraged Trading"
-      },
-      {
-        "@id": "urn:ngm:class:non-custodial-settlement",
-        "label": "Non-Custodial Settlement"
-      },
-      {
-        "@id": "urn:ngm:class:short-selling",
-        "label": "Short Selling"
       }
     ],
     "dependsOn": [
@@ -147,7 +131,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:central-limit-order-book",
+        "@id": "urn:ngm:class:order-book",
         "label": "Central Limit Order Book"
       },
       {
@@ -156,10 +140,6 @@ public:: true
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:off-chain-order-matching",
-        "label": "Off-Chain Order Matching"
-      },
       {
         "@id": "urn:ngm:class:on-chain-settlement",
         "label": "On-Chain Settlement"
@@ -193,7 +173,7 @@ public:: true
         "label": "Derivatives Trading"
       },
       {
-        "@id": "urn:ngm:class:layer-two-scaling",
+        "@id": "urn:ngm:class:layer-2-scaling",
         "label": "Layer-Two Scaling"
       }
     ],

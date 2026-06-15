@@ -97,7 +97,7 @@
         "label": "Regulatory Compliance"
       },
       {
-        "id": "urn:ngm:class:model-card",
+        "id": "urn:ngm:class:ai-model-card",
         "label": "Model Card"
       }
     ],

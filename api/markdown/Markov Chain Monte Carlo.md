@@ -24,49 +24,124 @@ public:: true
   "domain": "ai",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:monte-carlo-methods", "label": "Monte Carlo Methods"}
+    {
+      "@id": "urn:ngm:class:monte-carlo-methods",
+      "label": "Monte Carlo Methods"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:markov-chain", "label": "Markov Chain"},
-      {"@id": "urn:ngm:class:sampling", "label": "Sampling"},
-      {"@id": "urn:ngm:class:hamiltonian-dynamics", "label": "Hamiltonian Dynamics"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+      {
+        "@id": "urn:ngm:class:markov-chain",
+        "label": "Markov Chain"
+      },
+      {
+        "@id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:hamiltonian-dynamics",
+        "label": "Hamiltonian Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
-      {"@id": "urn:ngm:class:probabilistic-programming", "label": "Probabilistic Programming"},
-      {"@id": "urn:ngm:class:uncertainty-quantification", "label": "Uncertainty Quantification"},
-      {"@id": "urn:ngm:class:posterior-inference", "label": "Posterior Inference"}
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-programming",
+        "label": "Probabilistic Programming"
+      },
+      {
+        "@id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "@id": "urn:ngm:class:posterior-inference",
+        "label": "Posterior Inference"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:probability-theory", "label": "Probability Theory"},
-      {"@id": "urn:ngm:class:ergodicity", "label": "Ergodicity"},
-      {"@id": "urn:ngm:class:detailed-balance", "label": "Detailed Balance"}
+      {
+        "@id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "@id": "urn:ngm:class:ergodicity",
+        "label": "Ergodicity"
+      },
+      {
+        "@id": "urn:ngm:class:detailed-balance",
+        "label": "Detailed Balance"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:metropolis-hastings", "label": "Metropolis-Hastings"},
-      {"@id": "urn:ngm:class:gibbs-sampling", "label": "Gibbs Sampling"},
-      {"@id": "urn:ngm:class:no-u-turn-sampler", "label": "No-U-Turn Sampler"}
+      {
+        "@id": "urn:ngm:class:metropolis-hastings",
+        "label": "Metropolis-Hastings"
+      },
+      {
+        "@id": "urn:ngm:class:gibbs-sampling",
+        "label": "Gibbs Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:no-u-turn-sampler",
+        "label": "No-U-Turn Sampler"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:variational-inference", "label": "Variational Inference"},
-      {"@id": "urn:ngm:class:normalising-flows", "label": "Normalising Flows"},
-      {"@id": "urn:ngm:class:sequential-monte-carlo", "label": "Sequential Monte Carlo"}
+      {
+        "@id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "@id": "urn:ngm:class:normalising-flows",
+        "label": "Normalising Flows"
+      },
+      {
+        "@id": "urn:ngm:class:sequential-monte-carlo",
+        "label": "Sequential Monte Carlo"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"},
-      {"@id": "urn:ngm:class:bayesian-neural-network", "label": "Bayesian Neural Network"},
-      {"@id": "urn:ngm:class:gaussian-process", "label": "Gaussian Process"},
-      {"@id": "urn:ngm:class:convergence-diagnostics", "label": "Convergence Diagnostics"}
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Bayesian Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "@id": "urn:ngm:class:convergence",
+        "label": "Convergence Diagnostics"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:statistical-physics", "label": "Statistical Physics"},
-      {"@id": "urn:ngm:class:computational-biology", "label": "Computational Biology"}
+      {
+        "@id": "urn:ngm:class:statistical-physics",
+        "label": "Statistical Physics"
+      },
+      {
+        "@id": "urn:ngm:class:computational-biology",
+        "label": "Computational Biology"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:mcmc", "label": "MCMC"}
+    {
+      "@id": "urn:ngm:class:mcmc",
+      "label": "MCMC"
+    }
   ],
   "quality": 0.74,
   "provenance": {

@@ -18,24 +18,12 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:reward-loop",
-        "label": "Reward Loop"
-      },
-      {
-        "id": "urn:ngm:class:progression-system",
-        "label": "Progression System"
-      },
-      {
         "id": "urn:ngm:class:resource-management",
         "label": "Resource Management"
       },
       {
         "id": "urn:ngm:class:collision-detection",
         "label": "Collision Detection"
-      },
-      {
-        "id": "urn:ngm:class:npc-behaviour",
-        "label": "NPC Behaviour"
       }
     ],
     "requires": [
@@ -68,16 +56,7 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:narrative-mechanics",
-        "label": "Narrative Mechanics"
-      },
-      {
-        "id": "urn:ngm:class:simulation-rules",
-        "label": "Simulation Rules"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:reinforcement-learning",
@@ -102,10 +81,6 @@
         "label": "Economic Parameters"
       },
       {
-        "id": "urn:ngm:class:behavioural-ai",
-        "label": "Behavioural AI"
-      },
-      {
         "id": "urn:ngm:class:state-machine",
         "label": "State Machine"
       }
@@ -127,10 +102,6 @@
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:interactive-system-design",
-        "label": "Interactive System Design"
-      },
       {
         "id": "urn:ngm:class:gamification",
         "label": "Gamification"

@@ -58,52 +58,129 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:base-network", "label": "Base Network"},
-      {"@id": "urn:ngm:class:coinbase-wallet", "label": "Coinbase Wallet"},
-      {"@id": "urn:ngm:class:coinbase-prime", "label": "Coinbase Prime"},
-      {"@id": "urn:ngm:class:coinbase-custody", "label": "Coinbase Custody"}
+      {
+        "@id": "urn:ngm:class:base",
+        "label": "Base Network"
+      },
+      {
+        "@id": "urn:ngm:class:coinbase-wallet",
+        "label": "Coinbase Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:coinbase-custody",
+        "label": "Coinbase Custody"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
-      {"@id": "urn:ngm:class:op-stack", "label": "OP Stack"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:op-stack",
+        "label": "OP Stack"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:know-your-customer", "label": "Know Your Customer"}
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"},
-      {"@id": "urn:ngm:class:blockchain-wallet", "label": "Blockchain Wallet"}
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-wallet",
+        "label": "Blockchain Wallet"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cryptocurrency-trading", "label": "Cryptocurrency Trading"},
-      {"@id": "urn:ngm:class:digital-asset-custody", "label": "Digital Asset Custody"},
-      {"@id": "urn:ngm:class:staking", "label": "Staking"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:crypto-trading",
+        "label": "Cryptocurrency Trading"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-custody",
+        "label": "Digital Asset Custody"
+      },
+      {
+        "@id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:binance", "label": "Binance"},
-      {"@id": "urn:ngm:class:decentralised-exchange", "label": "Decentralised Exchange"},
-      {"@id": "urn:ngm:class:kraken", "label": "Kraken"}
+      {
+        "@id": "urn:ngm:class:binance",
+        "label": "Binance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:kraken",
+        "label": "Kraken"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:traditional-finance", "label": "Traditional Finance"},
-      {"@id": "urn:ngm:class:securities-regulation", "label": "Securities Regulation"}
+      {
+        "@id": "urn:ngm:class:traditional-finance",
+        "label": "Traditional Finance"
+      },
+      {
+        "@id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:optimism", "label": "Optimism"},
-      {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer 2 Scaling"},
-      {"@id": "urn:ngm:class:centralised-exchange", "label": "Centralised Exchange"}
+      {
+        "@id": "urn:ngm:class:optimism",
+        "label": "Optimism"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:coinbase-global", "label": "Coinbase Global"}
+    {
+      "@id": "urn:ngm:class:coinbase-global",
+      "label": "Coinbase Global"
+    }
   ],
   "quality": 0.73,
   "provenance": {

@@ -158,10 +158,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:behavior-controller",
-        "label": "Behavior Controller"
-      },
-      {
         "@id": "urn:ngm:class:interaction-manager",
         "label": "Interaction Manager"
       },
@@ -202,19 +198,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:adaptive-interaction",
-        "label": "Adaptive Interaction"
-      },
-      {
-        "@id": "urn:ngm:class:dynamic-storytelling",
-        "label": "Dynamic Storytelling"
-      },
-      {
-        "@id": "urn:ngm:class:intelligent-assistance",
-        "label": "Intelligent Assistance"
-      },
-      {
-        "@id": "urn:ngm:class:personalized-experience",
+        "@id": "urn:ngm:class:personalized-experiences",
         "label": "Personalized Experience"
       },
       {

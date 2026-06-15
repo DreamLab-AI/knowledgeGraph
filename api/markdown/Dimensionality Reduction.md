@@ -84,14 +84,6 @@ public:: true
         "label": "Principal Component Analysis"
       },
       {
-        "@id": "urn:ngm:class:t-sne",
-        "label": "t-SNE"
-      },
-      {
-        "@id": "urn:ngm:class:umap",
-        "label": "UMAP"
-      },
-      {
         "@id": "urn:ngm:class:autoencoder",
         "label": "Autoencoder"
       },
@@ -102,7 +94,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:machine-learning-pipeline",
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
       },
       {
@@ -116,31 +108,19 @@ public:: true
         "label": "Linear Algebra"
       },
       {
-        "@id": "urn:ngm:class:matrix-decomposition",
+        "@id": "urn:ngm:class:matrix-factorisation",
         "label": "Matrix Decomposition"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:data-visualization",
-        "label": "Data Visualization"
-      },
-      {
         "@id": "urn:ngm:class:anomaly-detection",
         "label": "Anomaly Detection"
-      },
-      {
-        "@id": "urn:ngm:class:computational-efficiency",
-        "label": "Computational Efficiency"
       }
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:curse-of-dimensionality",
-        "label": "Curse of Dimensionality"
-      },
-      {
-        "@id": "urn:ngm:class:statistical-learning",
+        "@id": "urn:ngm:class:statistical-learning-theory",
         "label": "Statistical Learning"
       }
     ],
@@ -170,12 +150,6 @@ public:: true
       {
         "@id": "urn:ngm:class:clustering",
         "label": "Clustering"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:feature-augmentation",
-        "label": "Feature Augmentation"
       }
     ],
     "bridgesTo": [

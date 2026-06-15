@@ -81,16 +81,6 @@ public:: true
         "label": "Video Memory"
       }
     ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:compute-node",
-        "label": "Compute Node"
-      },
-      {
-        "@id": "urn:ngm:class:heterogeneous-computing-system",
-        "label": "Heterogeneous Computing System"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:parallel-programming-model",
@@ -138,10 +128,6 @@ public:: true
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:simd-execution",
-        "label": "SIMD Execution"
-      },
       {
         "@id": "urn:ngm:class:single-instruction-multiple-thread",
         "label": "Single-Instruction Multiple-Thread"
@@ -197,7 +183,7 @@ public:: true
         "label": "Spatial Computing"
       },
       {
-        "@id": "urn:ngm:class:blockchain-mining",
+        "@id": "urn:ngm:class:mining",
         "label": "Blockchain Mining"
       }
     ],

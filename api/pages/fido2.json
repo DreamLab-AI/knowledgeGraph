@@ -20,23 +20,15 @@
       {
         "id": "urn:ngm:class:webauthn",
         "label": "WebAuthn"
-      },
-      {
-        "id": "urn:ngm:class:ctap2",
-        "label": "CTAP2"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:authenticator-device",
-        "label": "Authenticator Device"
-      },
       {
         "id": "urn:ngm:class:relying-party",
         "label": "Relying Party"
       },
       {
-        "id": "urn:ngm:class:user-verification",
+        "id": "urn:ngm:class:verification",
         "label": "User Verification"
       }
     ],
@@ -63,19 +55,14 @@
       }
     ],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:origin-bound-credential",
-        "label": "Origin-Bound Credential"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:password-authentication",
         "label": "Password Authentication"
       },
       {
-        "id": "urn:ngm:class:otp-authentication",
+        "id": "urn:ngm:class:authentication",
         "label": "OTP Authentication"
       }
     ],
@@ -91,7 +78,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public-Key Cryptography"
       },
       {

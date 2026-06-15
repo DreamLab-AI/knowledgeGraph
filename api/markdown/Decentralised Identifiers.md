@@ -69,7 +69,7 @@ public:: true
         "label": "Cryptography"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -97,7 +97,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:w3c-did-specification",
+        "@id": "urn:ngm:class:w3-c-did-specification",
         "label": "W3C DID Specification"
       },
       {
@@ -137,7 +137,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:centralised-identity-provider",
+        "@id": "urn:ngm:class:centralized-identity-provider",
         "label": "Centralised Identity Provider"
       },
       {

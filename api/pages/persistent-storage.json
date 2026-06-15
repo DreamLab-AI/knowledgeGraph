@@ -62,10 +62,6 @@
         "label": "Training Data"
       },
       {
-        "id": "urn:ngm:class:stateful-application",
-        "label": "Stateful Application"
-      },
-      {
         "id": "urn:ngm:class:data-persistence",
         "label": "Data Persistence"
       }

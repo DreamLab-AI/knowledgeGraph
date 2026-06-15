@@ -65,12 +65,9 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:privacy-framework", "label": "Privacy Framework"}
-    ],
-    "enables": [
       {
-        "@id": "urn:ngm:class:user-data-autonomy",
-        "label": "User Data Autonomy"
+        "@id": "urn:ngm:class:privacy-framework",
+        "label": "Privacy Framework"
       }
     ]
   },

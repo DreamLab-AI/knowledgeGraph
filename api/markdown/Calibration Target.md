@@ -140,7 +140,7 @@ public:: true
         "label": "Pose Estimation"
       },
       {
-        "@id": "urn:ngm:class:3d-reconstruction",
+        "@id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
       }
     ],

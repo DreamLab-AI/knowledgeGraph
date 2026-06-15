@@ -75,11 +75,11 @@ public:: true
         "label": "Ethereum Smart Contract Platform"
       },
       {
-        "@id": "urn:ngm:class:recursive-snark",
+        "@id": "urn:ngm:class:zk-snark",
         "label": "Recursive SNARK"
       },
       {
-        "@id": "urn:ngm:class:note-commitment-scheme",
+        "@id": "urn:ngm:class:commitment-scheme",
         "label": "Note Commitment Scheme"
       }
     ],
@@ -89,7 +89,7 @@ public:: true
         "label": "Privacy"
       },
       {
-        "@id": "urn:ngm:class:confidential-transaction",
+        "@id": "urn:ngm:class:confidential-transactions",
         "label": "Confidential Transaction"
       },
       {
@@ -111,7 +111,7 @@ public:: true
         "label": "UTXO Model"
       },
       {
-        "@id": "urn:ngm:class:plonk-proof-system",
+        "@id": "urn:ngm:class:plonk",
         "label": "PLONK Proof System"
       }
     ],
@@ -125,7 +125,7 @@ public:: true
         "label": "Merkle Tree"
       },
       {
-        "@id": "urn:ngm:class:noir-programming-language",
+        "@id": "urn:ngm:class:noir",
         "label": "Noir Programming Language"
       }
     ],
@@ -135,7 +135,7 @@ public:: true
         "label": "Aztec Network"
       },
       {
-        "@id": "urn:ngm:class:aztec-connect",
+        "@id": "urn:ngm:class:aztec",
         "label": "Aztec Connect"
       }
     ],

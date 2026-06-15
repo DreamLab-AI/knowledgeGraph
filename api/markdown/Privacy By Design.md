@@ -68,52 +68,119 @@ alias:: Privacy-by-Design
   },
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"},
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"},
-      {"@id": "urn:ngm:class:pseudonymisation", "label": "Pseudonymisation"}
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "@id": "urn:ngm:class:pseudonymisation",
+        "label": "Pseudonymisation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
-      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
-      {"@id": "urn:ngm:class:user-trust", "label": "User Trust"}
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:user-trust",
+        "label": "User Trust"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:gdpr-article-25", "label": "GDPR Article 25"},
-      {"@id": "urn:ngm:class:iso-29100", "label": "ISO 29100"},
-      {"@id": "urn:ngm:class:data-protection-by-default", "label": "Data Protection by Default"}
+      {
+        "@id": "urn:ngm:class:gdpr-article-25",
+        "label": "GDPR Article 25"
+      },
+      {
+        "@id": "urn:ngm:class:iso-29100",
+        "label": "ISO 29100"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection by Default"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"},
-      {"@id": "urn:ngm:class:data-subject-rights", "label": "Data Subject Rights"}
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:data-subject-rights",
+        "label": "Data Subject Rights"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
-      {"@id": "urn:ngm:class:iso-29101", "label": "ISO 29101"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:privacy-bolt-on", "label": "Privacy Bolt-On"}
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:secure-by-design", "label": "Secure By Design"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-protection-regulation", "label": "Data Protection Regulation"},
-      {"@id": "urn:ngm:class:transparency-and-explainability", "label": "Transparency and Explainability"},
-      {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"},
-      {"@id": "urn:ngm:class:privacy-impact-assessment", "label": "Privacy Impact Assessment"}
+      {
+        "@id": "urn:ngm:class:data-protection-regulation",
+        "label": "Data Protection Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:transparency-and-explainability",
+        "label": "Transparency and Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-impact-assessment",
+        "label": "Privacy Impact Assessment"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:privacy-by-default", "label": "Privacy By Default"},
-    {"@id": "urn:ngm:class:data-protection-by-design", "label": "Data Protection By Design"}
+    {
+      "@id": "urn:ngm:class:privacy-by-default",
+      "label": "Privacy By Default"
+    },
+    {
+      "@id": "urn:ngm:class:data-protection-by-design",
+      "label": "Data Protection By Design"
+    }
   ],
   "quality": 0.73,
   "provenance": {

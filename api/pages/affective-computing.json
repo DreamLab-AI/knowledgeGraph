@@ -19,15 +19,11 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:multimodal-fusion",
-        "label": "Multimodal Fusion"
-      },
-      {
         "id": "urn:ngm:class:emotion-recognition",
         "label": "Emotion Recognition"
       },
       {
-        "id": "urn:ngm:class:annotated-dataset",
+        "id": "urn:ngm:class:annotated-training-data",
         "label": "Annotated Dataset"
       }
     ],
@@ -45,7 +41,7 @@
         "label": "Cognitive Feedback Interface"
       },
       {
-        "id": "urn:ngm:class:adaptive-learning-system",
+        "id": "urn:ngm:class:adaptive-learning",
         "label": "Adaptive Learning System"
       },
       {
@@ -137,10 +133,6 @@
       {
         "id": "urn:ngm:class:wearable-computing",
         "label": "Wearable Computing"
-      },
-      {
-        "id": "urn:ngm:class:biometric-sensing",
-        "label": "Biometric Sensing"
       }
     ]
   },

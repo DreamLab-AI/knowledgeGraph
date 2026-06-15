@@ -38,53 +38,125 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"},
-      {"@id": "urn:ngm:class:memory", "label": "Memory"},
-      {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:memory",
+        "label": "Memory"
+      },
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:planning-and-scheduling", "label": "Planning and Scheduling"},
-      {"@id": "urn:ngm:class:perception", "label": "Perception"},
-      {"@id": "urn:ngm:class:action-execution", "label": "Action Execution"}
+      {
+        "@id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:perception",
+        "label": "Perception"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
-      {"@id": "urn:ngm:class:autonomous-decision-making", "label": "Autonomous Decision Making"},
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-decision-making",
+        "label": "Autonomous Decision Making"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cognitive-architecture", "label": "Cognitive Architecture"},
-      {"@id": "urn:ngm:class:vector-databases", "label": "Vector Databases"},
-      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"}
+      {
+        "@id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:vector-databases",
+        "label": "Vector Databases"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:react-framework", "label": "ReAct Framework"},
-      {"@id": "urn:ngm:class:plan-and-execute", "label": "Plan and Execute"}
+      {
+        "@id": "urn:ngm:class:plan-and-execute",
+        "label": "Plan and Execute"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:sandboxing", "label": "Sandboxing"}
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:chatbots", "label": "Chatbots"},
-      {"@id": "urn:ngm:class:robotic-process-automation", "label": "Robotic Process Automation"}
+      {
+        "@id": "urn:ngm:class:chatbots",
+        "label": "Chatbots"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:prompt-injection", "label": "Prompt Injection"},
-      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
+      },
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotic-systems", "label": "Robotic Systems"},
-      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"}
+      {
+        "@id": "urn:ngm:class:robotic-system",
+        "label": "Robotic Systems"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:llm-agents", "label": "LLM Agents"},
-    {"@id": "urn:ngm:class:autonomous-ai-agents", "label": "Autonomous AI Agents"}
+    {
+      "@id": "urn:ngm:class:llm-agents",
+      "label": "LLM Agents"
+    },
+    {
+      "@id": "urn:ngm:class:autonomous-ai-agents",
+      "label": "Autonomous AI Agents"
+    }
   ],
   "quality": 0.74,
   "provenance": {

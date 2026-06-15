@@ -26,10 +26,6 @@
         "label": "Render Pipeline"
       },
       {
-        "id": "urn:ngm:class:build-system",
-        "label": "Build System"
-      },
-      {
         "id": "urn:ngm:class:level-of-detail",
         "label": "Level of Detail"
       },
@@ -70,7 +66,7 @@
         "label": "Extended Reality"
       },
       {
-        "id": "urn:ngm:class:streaming-content-delivery",
+        "id": "urn:ngm:class:content-delivery",
         "label": "Streaming Content Delivery"
       }
     ],
@@ -88,7 +84,7 @@
     "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:ai-content-generation",
+        "id": "urn:ngm:class:content-generation",
         "label": "AI Content Generation"
       },
       {
@@ -118,7 +114,7 @@
         "label": "Universal Scene Description"
       },
       {
-        "id": "urn:ngm:class:gltf",
+        "id": "urn:ngm:class:gltf-standard",
         "label": "glTF"
       }
     ],
@@ -138,7 +134,7 @@
         "label": "Khronos Group"
       },
       {
-        "id": "urn:ngm:class:pixar-usd",
+        "id": "urn:ngm:class:open-usd",
         "label": "Pixar USD"
       }
     ],

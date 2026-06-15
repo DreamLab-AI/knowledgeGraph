@@ -37,53 +37,129 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:sparql-protocol-and-rdf-query-language", "label": "SPARQL Protocol and RDF Query Language"},
-    {"@id": "urn:ngm:class:sparul", "label": "SPARUL"}
+    {
+      "@id": "urn:ngm:class:sparql-protocol-and-rdf-query-language",
+      "label": "SPARQL Protocol and RDF Query Language"
+    },
+    {
+      "@id": "urn:ngm:class:sparul",
+      "label": "SPARUL"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:graph-database", "label": "Graph Database"},
-      {"@id": "urn:ngm:class:sparql-endpoint", "label": "SPARQL Endpoint"}
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "@id": "urn:ngm:class:sparql-endpoint",
+        "label": "SPARQL Endpoint"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-graph-construction", "label": "Knowledge Graph Construction"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:federated-query", "label": "Federated Query"},
-      {"@id": "urn:ngm:class:ontology-reasoning", "label": "Ontology Reasoning"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:federated-query",
+        "label": "Federated Query"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology Reasoning"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"},
-      {"@id": "urn:ngm:class:open-world-assumption", "label": "Open World Assumption"}
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
+      },
+      {
+        "@id": "urn:ngm:class:open-world-assumption",
+        "label": "Open World Assumption"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:triple-pattern", "label": "Triple Pattern"},
-      {"@id": "urn:ngm:class:graph-pattern-matching", "label": "Graph Pattern Matching"},
-      {"@id": "urn:ngm:class:property-path", "label": "Property Path"},
-      {"@id": "urn:ngm:class:http-protocol", "label": "HTTP Protocol"}
+      {
+        "@id": "urn:ngm:class:graph-pattern-matching",
+        "label": "Graph Pattern Matching"
+      },
+      {
+        "@id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:owl-ontology", "label": "OWL Ontology"},
-      {"@id": "urn:ngm:class:shacl", "label": "SHACL"},
-      {"@id": "urn:ngm:class:wikidata", "label": "Wikidata"}
+      {
+        "@id": "urn:ngm:class:owl-2-web-ontology-language",
+        "label": "OWL Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:shacl",
+        "label": "SHACL"
+      },
+      {
+        "@id": "urn:ngm:class:wikidata",
+        "label": "Wikidata"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:w3c", "label": "W3C"}
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:sql", "label": "SQL"},
-      {"@id": "urn:ngm:class:graphql", "label": "GraphQL"},
-      {"@id": "urn:ngm:class:cypher-query-language", "label": "Cypher Query Language"}
+      {
+        "@id": "urn:ngm:class:sql",
+        "label": "SQL"
+      },
+      {
+        "@id": "urn:ngm:class:graphql",
+        "label": "GraphQL"
+      },
+      {
+        "@id": "urn:ngm:class:cypher-query-language",
+        "label": "Cypher Query Language"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:turtle-syntax", "label": "Turtle Syntax"},
-      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:apache-jena", "label": "Apache Jena"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:turtle",
+        "label": "Turtle Syntax"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:apache-jena",
+        "label": "Apache Jena"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:knowledge-graph-embedding", "label": "Knowledge Graph Embedding"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-embedding",
+        "label": "Knowledge Graph Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
     ]
   },
   "quality": 0.74,

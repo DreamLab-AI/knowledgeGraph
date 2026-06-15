@@ -131,10 +131,6 @@ alias:: InfrastructureLayer
         "label": "CDN"
       },
       {
-        "@id": "urn:ngm:class:data-centers",
-        "label": "Data Centers"
-      },
-      {
         "@id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing"
       },
@@ -185,12 +181,6 @@ alias:: InfrastructureLayer
       {
         "@id": "urn:ngm:class:distributed-computing",
         "label": "Distributed Computing"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:technology-infrastructure-domain-domain",
-        "label": "InfrastructureDomain"
       }
     ]
   },

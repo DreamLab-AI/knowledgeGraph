@@ -32,10 +32,6 @@
       {
         "id": "urn:ngm:class:level-of-detail",
         "label": "Level of Detail"
-      },
-      {
-        "id": "urn:ngm:class:collision-mesh",
-        "label": "Collision Mesh"
       }
     ],
     "requires": [
@@ -73,10 +69,6 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:2-d-sprite",
-        "label": "2D Sprite"
-      },
       {
         "id": "urn:ngm:class:voxel",
         "label": "Voxel"

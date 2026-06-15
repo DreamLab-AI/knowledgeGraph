@@ -74,10 +74,6 @@ public:: true
         "label": "Enforcement"
       },
       {
-        "@id": "urn:ngm:class:rule-making",
-        "label": "Rule-Making"
-      },
-      {
         "@id": "urn:ngm:class:supervisory-authority",
         "label": "Supervisory Authority"
       }

@@ -53,50 +53,123 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:forward-kinematics", "label": "Forward Kinematics"},
-      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
-      {"@id": "urn:ngm:class:differential-kinematics", "label": "Differential Kinematics"},
-      {"@id": "urn:ngm:class:jacobian-matrix", "label": "Jacobian Matrix"}
+      {
+        "@id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:differential-kinematics",
+        "label": "Differential Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:jacobian-matrix",
+        "label": "Jacobian Matrix"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:homogeneous-transformation", "label": "Homogeneous Transformation"},
-      {"@id": "urn:ngm:class:denavit-hartenberg-parameters", "label": "Denavit-Hartenberg Parameters"},
-      {"@id": "urn:ngm:class:coordinate-frame", "label": "Coordinate Frame"}
+      {
+        "@id": "urn:ngm:class:homogeneous-transformation",
+        "label": "Homogeneous Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:denavit-hartenberg-parameters",
+        "label": "Denavit-Hartenberg Parameters"
+      },
+      {
+        "@id": "urn:ngm:class:coordinate-frame",
+        "label": "Coordinate Frame"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:robot-dynamics", "label": "Robot Dynamics"},
-      {"@id": "urn:ngm:class:trajectory-generation", "label": "Trajectory Generation"},
-      {"@id": "urn:ngm:class:workspace-analysis", "label": "Workspace Analysis"},
-      {"@id": "urn:ngm:class:collision-avoidance", "label": "Collision Avoidance"}
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory-generation",
+        "label": "Trajectory Generation"
+      },
+      {
+        "@id": "urn:ngm:class:workspace-analysis",
+        "label": "Workspace Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:linear-algebra", "label": "Linear Algebra"},
-      {"@id": "urn:ngm:class:rigid-body-mechanics", "label": "Rigid Body Mechanics"}
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Mechanics"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:robot-joint", "label": "Robot Joint"},
-      {"@id": "urn:ngm:class:manipulator", "label": "Manipulator"},
-      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"},
-      {"@id": "urn:ngm:class:kinematic-chain", "label": "Kinematic Chain"}
+      {
+        "@id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      },
+      {
+        "@id": "urn:ngm:class:manipulator",
+        "label": "Manipulator"
+      },
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      },
+      {
+        "@id": "urn:ngm:class:kinematic-chain",
+        "label": "Kinematic Chain"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:dynamics", "label": "Dynamics"},
-      {"@id": "urn:ngm:class:statics", "label": "Statics"}
+      {
+        "@id": "urn:ngm:class:dynamics",
+        "label": "Dynamics"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:computer-animation", "label": "Computer Animation"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:computer-animation",
+        "label": "Computer Animation"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:biomechanics", "label": "Biomechanics"},
-      {"@id": "urn:ngm:class:autonomous-vehicles", "label": "Autonomous Vehicles"},
-      {"@id": "urn:ngm:class:mechanics", "label": "Mechanics"}
+      {
+        "@id": "urn:ngm:class:biomechanics",
+        "label": "Biomechanics"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:kinematic-analysis", "label": "Kinematic Analysis"}
+    {
+      "@id": "urn:ngm:class:kinematic-analysis",
+      "label": "Kinematic Analysis"
+    }
   ],
   "quality": 0.74,
   "provenance": {

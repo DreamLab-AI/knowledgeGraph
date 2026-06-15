@@ -75,7 +75,7 @@ public:: true
         "label": "Debt Pool"
       },
       {
-        "@id": "urn:ngm:class:staking-mechanism",
+        "@id": "urn:ngm:class:staking",
         "label": "Staking Mechanism"
       }
     ],

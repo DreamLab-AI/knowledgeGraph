@@ -130,16 +130,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:central-controller",
-        "label": "Central Controller"
-      },
-      {
         "@id": "urn:ngm:class:communication-network",
         "label": "Communication Network"
-      },
-      {
-        "@id": "urn:ngm:class:global-state-model",
-        "label": "Global State Model"
       }
     ],
     "requires": [
@@ -150,24 +142,6 @@ public:: true
       {
         "@id": "urn:ngm:class:inter-agent-communication",
         "label": "Inter-Agent Communication"
-      },
-      {
-        "@id": "urn:ngm:class:synchronised-timing",
-        "label": "Synchronised Timing"
-      }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:centralised-monitoring",
-        "label": "Centralised Monitoring"
-      },
-      {
-        "@id": "urn:ngm:class:coordinated-swarm-behaviour",
-        "label": "Coordinated Swarm Behaviour"
-      },
-      {
-        "@id": "urn:ngm:class:global-task-optimisation",
-        "label": "Global Task Optimisation"
       }
     ],
     "bridgesTo": [

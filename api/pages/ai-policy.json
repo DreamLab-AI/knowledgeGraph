@@ -51,10 +51,6 @@
       {
         "id": "urn:ngm:class:self-regulation",
         "label": "Self-Regulation"
-      },
-      {
-        "id": "urn:ngm:class:laissez-faire-innovation-policy",
-        "label": "Laissez-Faire Innovation Policy"
       }
     ],
     "bridgesTo": [
@@ -63,7 +59,7 @@
         "label": "Cybersecurity Policy"
       },
       {
-        "id": "urn:ngm:class:semiconductor-export-controls",
+        "id": "urn:ngm:class:export-controls",
         "label": "Semiconductor Export Controls"
       },
       {
@@ -100,7 +96,7 @@
         "label": "ISO IEC 42001"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -119,15 +115,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:technology-policy",
-        "label": "Technology Policy"
-      },
-      {
-        "id": "urn:ngm:class:competition-policy",
-        "label": "Competition Policy"
-      },
-      {
-        "id": "urn:ngm:class:intellectual-property",
+        "id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Intellectual Property"
       }
     ]

@@ -60,14 +60,11 @@ public:: true
     }
   ],
   "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:inclusive-decision-making",
-        "label": "Inclusive Decision Making"
-      }
-    ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
     ]
   },
   "quality": 0.35,

@@ -36,10 +36,6 @@
       {
         "id": "urn:ngm:class:service-mesh",
         "label": "Service Mesh"
-      },
-      {
-        "id": "urn:ngm:class:event-bus",
-        "label": "Event Bus"
       }
     ],
     "requires": [
@@ -110,7 +106,7 @@
         "label": "Oracle Network"
       },
       {
-        "id": "urn:ngm:class:machine-learning-inference",
+        "id": "urn:ngm:class:inference",
         "label": "Machine Learning Inference"
       }
     ],
@@ -153,10 +149,6 @@
       {
         "id": "urn:ngm:class:abstraction-layer",
         "label": "Abstraction Layer"
-      },
-      {
-        "id": "urn:ngm:class:integration-platform",
-        "label": "Integration Platform"
       },
       {
         "id": "urn:ngm:class:enterprise-service-bus",

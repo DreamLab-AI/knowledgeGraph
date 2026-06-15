@@ -16,32 +16,11 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:data-product",
-        "label": "Data Product"
-      },
-      {
-        "id": "urn:ngm:class:data-domain",
-        "label": "Data Domain"
-      },
-      {
-        "id": "urn:ngm:class:self-serve-data-platform",
-        "label": "Self-Serve Data Platform"
-      },
-      {
-        "id": "urn:ngm:class:federated-computational-governance",
-        "label": "Federated Computational Governance"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:domain-driven-design",
         "label": "Domain-Driven Design"
-      },
-      {
-        "id": "urn:ngm:class:data-contract",
-        "label": "Data Contract"
       },
       {
         "id": "urn:ngm:class:schema-registry",
@@ -56,10 +35,6 @@
       {
         "id": "urn:ngm:class:distributed-system",
         "label": "Distributed System"
-      },
-      {
-        "id": "urn:ngm:class:data-democratisation",
-        "label": "Data Democratisation"
       }
     ],
     "dependsOn": [],

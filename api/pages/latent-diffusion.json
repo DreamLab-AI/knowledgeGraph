@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:encoder-decoder",
+        "id": "urn:ngm:class:encoder-decoder-architecture",
         "label": "Encoder-Decoder"
       },
       {
@@ -54,7 +54,7 @@
         "label": "Image Generation"
       },
       {
-        "id": "urn:ngm:class:image-inpainting",
+        "id": "urn:ngm:class:inpainting",
         "label": "Image Inpainting"
       },
       {
@@ -79,10 +79,6 @@
         "label": "Generative Adversarial Network"
       },
       {
-        "id": "urn:ngm:class:pixel-diffusion",
-        "label": "Pixel Diffusion"
-      },
-      {
         "id": "urn:ngm:class:normalising-flow",
         "label": "Normalising Flow"
       }
@@ -101,10 +97,6 @@
       {
         "id": "urn:ngm:class:clip",
         "label": "CLIP"
-      },
-      {
-        "id": "urn:ngm:class:ddim-sampling",
-        "label": "DDIM Sampling"
       },
       {
         "id": "urn:ngm:class:classifier-free-guidance",

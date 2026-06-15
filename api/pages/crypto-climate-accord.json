@@ -29,10 +29,6 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:net-zero-blockchain",
-        "label": "Net-Zero Blockchain"
-      },
-      {
         "id": "urn:ngm:class:voluntary-carbon-market",
         "label": "Voluntary Carbon Market"
       }
@@ -44,7 +40,7 @@
         "label": "Renewable Energy Certificates"
       },
       {
-        "id": "urn:ngm:class:carbon-accounting-standard",
+        "id": "urn:ngm:class:carbon-accounting",
         "label": "Carbon Accounting Standard"
       },
       {
@@ -54,7 +50,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:bitcoin-mining",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
         "label": "Bitcoin Mining"
       }
     ],
@@ -68,7 +64,7 @@
         "label": "Sustainability Reporting"
       },
       {
-        "id": "urn:ngm:class:mica-regulation",
+        "id": "urn:ngm:class:bc-0482-eu-mica-regulation",
         "label": "MiCA Regulation"
       }
     ],
@@ -111,16 +107,12 @@
         "label": "Proof of Stake"
       },
       {
-        "id": "urn:ngm:class:paris-climate-agreement",
+        "id": "urn:ngm:class:paris-agreement",
         "label": "Paris Climate Agreement"
       },
       {
         "id": "urn:ngm:class:proof-of-work",
         "label": "Proof of Work"
-      },
-      {
-        "id": "urn:ngm:class:energy-web-chain",
-        "label": "Energy Web Chain"
       },
       {
         "id": "urn:ngm:class:scope-2-emissions",

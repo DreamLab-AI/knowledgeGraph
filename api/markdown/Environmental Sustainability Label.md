@@ -126,14 +126,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:certification-issuance",
-        "label": "Certification Issuance"
-      },
-      {
-        "@id": "urn:ngm:class:energy-consumption-audit",
-        "label": "Energy Consumption Audit"
-      },
-      {
         "@id": "urn:ngm:class:carbon-footprint-assessment",
         "label": "Carbon Footprint Assessment"
       },
@@ -144,11 +136,11 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:energy-monitoring-system",
+        "@id": "urn:ngm:class:monitoring-system",
         "label": "Energy Monitoring System"
       },
       {
-        "@id": "urn:ngm:class:technology-infrastructure-domain-metrics",
+        "@id": "urn:ngm:class:technology-infrastructure",
         "label": "Infrastructure Metrics"
       },
       {
@@ -162,15 +154,11 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:green-infrastructure-certification",
-        "label": "Green Infrastructure Certification"
-      },
-      {
         "@id": "urn:ngm:class:sustainability-reporting",
         "label": "SustainabilityReporting"
       },
       {
-        "@id": "urn:ngm:class:user-trust-building",
+        "@id": "urn:ngm:class:trust-building",
         "label": "User Trust Building"
       },
       {
@@ -179,10 +167,6 @@ public:: true
       }
     ],
     "partOf": [
-      {
-        "@id": "urn:ngm:class:sustainability-compliance-system",
-        "label": "Sustainability Compliance System"
-      },
       {
         "@id": "urn:ngm:class:governance-framework",
         "label": "Governance Framework"

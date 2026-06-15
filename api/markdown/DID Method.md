@@ -71,7 +71,7 @@ public:: true
         "label": "Verifiable Data Registry"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -95,11 +95,11 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:w3c-did-core",
+        "@id": "urn:ngm:class:w3-c-did-core",
         "label": "W3C DID Core"
       },
       {
-        "@id": "urn:ngm:class:did-resolution-protocol",
+        "@id": "urn:ngm:class:did-resolution",
         "label": "DID Resolution Protocol"
       }
     ],
@@ -133,7 +133,7 @@ public:: true
         "label": "OAuth"
       },
       {
-        "@id": "urn:ngm:class:centralised-identity-provider",
+        "@id": "urn:ngm:class:centralized-identity-provider",
         "label": "Centralised Identity Provider"
       },
       {
@@ -151,7 +151,7 @@ public:: true
         "label": "DID Resolver"
       },
       {
-        "@id": "urn:ngm:class:identity-wallet",
+        "@id": "urn:ngm:class:digital-identity-wallet",
         "label": "Identity Wallet"
       },
       {

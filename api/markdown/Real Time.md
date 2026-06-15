@@ -463,10 +463,6 @@ alias:: Real-Time
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:deadline",
-        "label": "Deadline"
-      },
-      {
         "@id": "urn:ngm:class:interrupt-handler",
         "label": "Interrupt Handler"
       },
@@ -475,24 +471,12 @@ alias:: Real-Time
         "label": "Priority Ceiling Protocol"
       },
       {
-        "@id": "urn:ngm:class:rtos",
-        "label": "RTOS"
-      },
-      {
         "@id": "urn:ngm:class:scheduler",
         "label": "Scheduler"
       },
       {
-        "@id": "urn:ngm:class:task",
-        "label": "Task"
-      },
-      {
         "@id": "urn:ngm:class:timer",
         "label": "Timer"
-      },
-      {
-        "@id": "urn:ngm:class:wcet-analysis",
-        "label": "WCET Analysis"
       }
     ],
     "requires": [
@@ -503,29 +487,9 @@ alias:: Real-Time
       {
         "@id": "urn:ngm:class:hardware-abstraction-layer",
         "label": "Hardware Abstraction Layer"
-      },
-      {
-        "@id": "urn:ngm:class:priority-inheritance",
-        "label": "Priority Inheritance"
-      },
-      {
-        "@id": "urn:ngm:class:schedulability-analysis",
-        "label": "Schedulability Analysis"
-      },
-      {
-        "@id": "urn:ngm:class:temporal-correctness",
-        "label": "Temporal Correctness"
-      },
-      {
-        "@id": "urn:ngm:class:wcet-bound",
-        "label": "WCET Bound"
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:automotive-control",
-        "label": "Automotive Control"
-      },
       {
         "@id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"
@@ -533,10 +497,6 @@ alias:: Real-Time
       {
         "@id": "urn:ngm:class:avionics",
         "label": "Avionics"
-      },
-      {
-        "@id": "urn:ngm:class:distributed-real-time",
-        "label": "Distributed Real-Time"
       },
       {
         "@id": "urn:ngm:class:industrial-automation",
@@ -547,34 +507,14 @@ alias:: Real-Time
         "label": "Real-Time AI Inference"
       },
       {
-        "@id": "urn:ngm:class:safety-critical-computing",
+        "@id": "urn:ngm:class:safety-critical-systems",
         "label": "Safety Critical Computing"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:constant-bandwidth-server",
-        "label": "Constant Bandwidth Server"
-      },
-      {
-        "@id": "urn:ngm:class:earliest-deadline-first",
-        "label": "Earliest Deadline First"
-      },
-      {
-        "@id": "urn:ngm:class:hierarchical-scheduling",
-        "label": "Hierarchical Scheduling"
-      },
-      {
         "@id": "urn:ngm:class:priority-ceiling-protocol",
         "label": "Priority Ceiling Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:priority-inheritance-protocol",
-        "label": "Priority Inheritance Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:rate-monotonic-algorithm",
-        "label": "Rate Monotonic Algorithm"
       }
     ],
     "uses": [
@@ -583,28 +523,8 @@ alias:: Real-Time
         "label": "DDS"
       },
       {
-        "@id": "urn:ngm:class:free-rtos",
-        "label": "FreeRTOS"
-      },
-      {
-        "@id": "urn:ngm:class:qnx",
-        "label": "QNX"
-      },
-      {
         "@id": "urn:ngm:class:ros-2",
         "label": "ROS 2"
-      },
-      {
-        "@id": "urn:ngm:class:tsn",
-        "label": "TSN"
-      },
-      {
-        "@id": "urn:ngm:class:vx-works",
-        "label": "VxWorks"
-      },
-      {
-        "@id": "urn:ngm:class:zephyr",
-        "label": "Zephyr"
       },
       {
         "@id": "urn:ngm:class:web-rtc",
@@ -673,24 +593,16 @@ alias:: Real-Time
         "label": "IEC 61508"
       },
       {
-        "@id": "urn:ngm:class:ieee-1588",
+        "@id": "urn:ngm:class:ieee-1588-ptp",
         "label": "IEEE 1588"
-      },
-      {
-        "@id": "urn:ngm:class:ieee-802-1-tsn",
-        "label": "IEEE 802.1 TSN"
       },
       {
         "@id": "urn:ngm:class:iso-26262",
         "label": "ISO 26262"
       },
       {
-        "@id": "urn:ngm:class:omg-dds-specification",
+        "@id": "urn:ngm:class:dds",
         "label": "OMG DDS Specification"
-      },
-      {
-        "@id": "urn:ngm:class:posix-1003-1b",
-        "label": "POSIX 1003.1b"
       }
     ]
   },

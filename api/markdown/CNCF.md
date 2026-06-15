@@ -23,51 +23,129 @@ public:: true
   "definition": "The Cloud Native Computing Foundation (CNCF) is a vendor-neutral, open-source foundation established in 2015 under the Linux Foundation to steward cloud-native software projects including Kubernetes, Prometheus, Envoy, and over 150 additional hosted projects. CNCF defines cloud-native computing as building and running scalable applications in modern, dynamic environments such as public, private, and hybrid clouds using techniques including containers, microservices, and declarative APIs. The Foundation operates a Technical Oversight Committee (TOC) that governs project acceptance through sandbox, incubating, and graduated maturity stages.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:linux-foundation", "label": "Linux Foundation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:linux-foundation",
+      "label": "Linux Foundation"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"},
-      {"@id": "urn:ngm:class:open-telemetry", "label": "OpenTelemetry"},
-      {"@id": "urn:ngm:class:prometheus", "label": "Prometheus"},
-      {"@id": "urn:ngm:class:envoy-proxy", "label": "Envoy Proxy"},
-      {"@id": "urn:ngm:class:argo-workflows", "label": "Argo Workflows"},
-      {"@id": "urn:ngm:class:falco", "label": "Falco"}
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:open-telemetry",
+        "label": "OpenTelemetry"
+      },
+      {
+        "@id": "urn:ngm:class:prometheus",
+        "label": "Prometheus"
+      },
+      {
+        "@id": "urn:ngm:class:envoy-proxy",
+        "label": "Envoy Proxy"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:linux-foundation", "label": "Linux Foundation"},
-      {"@id": "urn:ngm:class:open-source-ecosystem", "label": "Open Source Ecosystem"}
+      {
+        "@id": "urn:ngm:class:linux-foundation",
+        "label": "Linux Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:open-source",
+        "label": "Open Source Ecosystem"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cloud-native-applications", "label": "Cloud-Native Applications"},
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"},
-      {"@id": "urn:ngm:class:container-orchestration", "label": "Container Orchestration"},
-      {"@id": "urn:ngm:class:platform-engineering", "label": "Platform Engineering"}
+      {
+        "@id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      },
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "@id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:platform-engineering",
+        "label": "Platform Engineering"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:supply-chain-security", "label": "Supply Chain Security"},
-      {"@id": "urn:ngm:class:webassembly", "label": "WebAssembly"},
-      {"@id": "urn:ngm:class:gitops", "label": "GitOps"}
+      {
+        "@id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
+      },
+      {
+        "@id": "urn:ngm:class:webassembly",
+        "label": "WebAssembly"
+      },
+      {
+        "@id": "urn:ngm:class:gitops",
+        "label": "GitOps"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:technical-standards", "label": "Technical Standards"},
-      {"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}
+      {
+        "@id": "urn:ngm:class:technical-standards",
+        "label": "Technical Standards"
+      },
+      {
+        "@id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
-      {"@id": "urn:ngm:class:microservices", "label": "Microservices"},
-      {"@id": "urn:ngm:class:service-mesh", "label": "Service Mesh"},
-      {"@id": "urn:ngm:class:observability", "label": "Observability"},
-      {"@id": "urn:ngm:class:open-container-initiative", "label": "Open Container Initiative"}
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "@id": "urn:ngm:class:open-container-initiative",
+        "label": "Open Container Initiative"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:cloud-native-computing-foundation", "label": "Cloud Native Computing Foundation"}
+    {
+      "@id": "urn:ngm:class:cloud-native-computing-foundation",
+      "label": "Cloud Native Computing Foundation"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -59,65 +59,147 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:pbr-materials", "label": "PBR Materials"},
-      {"@id": "urn:ngm:class:skeletal-animation", "label": "Skeletal Animation"},
-      {"@id": "urn:ngm:class:gltf-extension-system", "label": "glTF Extension System"},
-      {"@id": "urn:ngm:class:binary-geometry-data", "label": "Binary Geometry Data"}
+      {
+        "@id": "urn:ngm:class:pbr-materials",
+        "label": "PBR Materials"
+      },
+      {
+        "@id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:khronos-group-standards", "label": "Khronos Group Standards"},
-      {"@id": "urn:ngm:class:metaverse-standards-forum", "label": "Metaverse Standards Forum"}
+      {
+        "@id": "urn:ngm:class:metaverse-standards-forum",
+        "label": "Metaverse Standards Forum"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:json-serialisation", "label": "JSON Serialisation"},
-      {"@id": "urn:ngm:class:webgl", "label": "WebGL"}
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-serialisation",
+        "label": "JSON Serialisation"
+      },
+      {
+        "@id": "urn:ngm:class:webgl",
+        "label": "WebGL"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cross-platform-3-d-content", "label": "Cross-Platform 3D Content"},
-      {"@id": "urn:ngm:class:metaverse-asset-interoperability", "label": "Metaverse Asset Interoperability"},
-      {"@id": "urn:ngm:class:real-time-3-d-rendering", "label": "Real-Time 3D Rendering"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:cross-platform-content",
+        "label": "Cross-Platform 3D Content"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time 3D Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"},
-      {"@id": "urn:ngm:class:royalty-free-licensing", "label": "Royalty-Free Licensing"}
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "@id": "urn:ngm:class:royalty-free-licensing",
+        "label": "Royalty-Free Licensing"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:iso-iec-12113", "label": "ISO/IEC 12113"},
-      {"@id": "urn:ngm:class:3-d-asset-standard", "label": "3D Asset Standard"}
+      {
+        "@id": "urn:ngm:class:3-d-asset-standard",
+        "label": "3D Asset Standard"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"},
-      {"@id": "urn:ngm:class:webgpu", "label": "WebGPU"}
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:webgpu",
+        "label": "WebGPU"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:avatar-standard", "label": "Avatar Standard"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-standard",
+        "label": "Avatar Standard"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:khronos-group", "label": "Khronos Group"},
-      {"@id": "urn:ngm:class:iso-iec", "label": "ISO/IEC"}
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:usd-universal-scene-description", "label": "USD Universal Scene Description"},
-      {"@id": "urn:ngm:class:fbx-format", "label": "FBX Format"},
-      {"@id": "urn:ngm:class:obj-format", "label": "OBJ Format"}
+      {
+        "@id": "urn:ngm:class:universal-scene-description",
+        "label": "USD Universal Scene Description"
+      },
+      {
+        "@id": "urn:ngm:class:fbx",
+        "label": "FBX Format"
+      },
+      {
+        "@id": "urn:ngm:class:obj-format",
+        "label": "OBJ Format"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:3-d-asset-standard", "label": "3D Asset Standard"},
-      {"@id": "urn:ngm:class:neural-radiance-fields", "label": "Neural Radiance Fields"},
-      {"@id": "urn:ngm:class:gaussian-splatting", "label": "Gaussian Splatting"}
+      {
+        "@id": "urn:ngm:class:3-d-asset-standard",
+        "label": "3D Asset Standard"
+      },
+      {
+        "@id": "urn:ngm:class:neural-radiance-fields",
+        "label": "Neural Radiance Fields"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:vrm-avatar-format", "label": "VRM Avatar Format"},
-      {"@id": "urn:ngm:class:e-commerce-3-d", "label": "E-Commerce 3D"},
-      {"@id": "urn:ngm:class:webxr", "label": "WebXR"}
+      {
+        "@id": "urn:ngm:class:vrm-format",
+        "label": "VRM Avatar Format"
+      },
+      {
+        "@id": "urn:ngm:class:e-commerce-3-d",
+        "label": "E-Commerce 3D"
+      },
+      {
+        "@id": "urn:ngm:class:webxr",
+        "label": "WebXR"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:gltf-2-0", "label": "glTF 2.0"},
-    {"@id": "urn:ngm:class:graphics-library-transmission-format", "label": "Graphics Library Transmission Format"}
+    {
+      "@id": "urn:ngm:class:gltf-2-0",
+      "label": "glTF 2.0"
+    },
+    {
+      "@id": "urn:ngm:class:graphics-library-transmission-format",
+      "label": "Graphics Library Transmission Format"
+    }
   ],
   "quality": 0.72,
   "provenance": {

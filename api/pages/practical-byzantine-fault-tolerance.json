@@ -22,10 +22,6 @@
         "label": "Pre-Prepare Phase"
       },
       {
-        "id": "urn:ngm:class:prepare-phase",
-        "label": "Prepare Phase"
-      },
-      {
         "id": "urn:ngm:class:commit-phase",
         "label": "Commit Phase"
       }
@@ -107,7 +103,7 @@
         "label": "Digital Signature"
       },
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       }
     ],

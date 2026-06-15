@@ -23,51 +23,109 @@ public:: true
   "definition": "The International Conference on Learning Representations (ICLR) is a premier academic venue dedicated to research in deep learning and representation learning, co-founded in 2013 by Yoshua Bengio and Yann LeCun to provide a focused home for the emerging field. ICLR is distinguished by its fully open, internet-based double-open peer review conducted on the OpenReview platform, making submitted manuscripts, reviewer critiques, and author rebuttals publicly visible throughout the review cycle. The conference covers neural network architectures, optimisation methods, generalisation theory, self-supervised learning, reinforcement learning, and the intersection of deep learning with natural language processing, computer vision, and scientific domains. ICLR ranks among the three most competitive machine-learning venues globally and has been the publication forum for many landmark advances including attention-based sequence models, large-language-model scaling investigations, and representation-learning theory.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
   "relations": {
-    "partOf": [
-      {"@id": "urn:ngm:class:academic-conference-series", "label": "Academic Conference Series"},
-      {"@id": "urn:ngm:class:ai-research-community", "label": "AI Research Community"}
-    ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:icml", "label": "ICML"},
-      {"@id": "urn:ngm:class:neurips", "label": "NeurIPS"},
-      {"@id": "urn:ngm:class:cvpr", "label": "CVPR"},
-      {"@id": "urn:ngm:class:aaai", "label": "AAAI"},
-      {"@id": "urn:ngm:class:ai-safety-research", "label": "AI Safety Research"},
-      {"@id": "urn:ngm:class:open-source-ai", "label": "Open-Source AI"},
-      {"@id": "urn:ngm:class:openreview", "label": "OpenReview"},
-      {"@id": "urn:ngm:class:machine-learning-conference", "label": "Machine Learning Conference"}
+      {
+        "@id": "urn:ngm:class:icml",
+        "label": "ICML"
+      },
+      {
+        "@id": "urn:ngm:class:neurips",
+        "label": "NeurIPS"
+      },
+      {
+        "@id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      },
+      {
+        "@id": "urn:ngm:class:aaai",
+        "label": "AAAI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"},
-      {"@id": "urn:ngm:class:self-supervised-learning", "label": "Self-Supervised Learning"},
-      {"@id": "urn:ngm:class:open-peer-review", "label": "Open Peer Review"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:representation-learning", "label": "Representation Learning"}
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:scientific-machine-learning", "label": "Scientific Machine Learning"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:closed-peer-review", "label": "Closed Peer Review"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-machine-learning",
+        "label": "Scientific Machine Learning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:neuroscience", "label": "Neuroscience"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:neuroscience",
+        "label": "Neuroscience"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:international-conference-on-learning-representations", "label": "International Conference on Learning Representations"}
+    {
+      "@id": "urn:ngm:class:international-conference-on-learning-representations",
+      "label": "International Conference on Learning Representations"
+    }
   ],
   "quality": 0.75,
   "provenance": {

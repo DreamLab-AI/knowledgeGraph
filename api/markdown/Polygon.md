@@ -119,15 +119,11 @@ public:: true
         "label": "ZK-Rollup"
       },
       {
-        "@id": "urn:ngm:class:ethereum-virtual-machine",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:zk-evm",
-        "label": "zkEVM"
-      },
       {
         "@id": "urn:ngm:class:staking",
         "label": "Staking"

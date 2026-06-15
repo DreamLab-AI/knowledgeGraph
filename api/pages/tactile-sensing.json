@@ -16,16 +16,7 @@
   "qualityScore": 0.8,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:tactile-array",
-        "label": "Tactile Array"
-      },
-      {
-        "id": "urn:ngm:class:robotic-skin",
-        "label": "Robotic Skin"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:signal-processing",
@@ -52,10 +43,6 @@
       {
         "id": "urn:ngm:class:dexterous-grasping",
         "label": "Dexterous Grasping"
-      },
-      {
-        "id": "urn:ngm:class:slip-detection",
-        "label": "Slip Detection"
       }
     ],
     "dependsOn": [
@@ -107,7 +94,7 @@
         "label": "Capacitive Sensor"
       },
       {
-        "id": "urn:ngm:class:optical-tactile-sensor",
+        "id": "urn:ngm:class:tactile-sensor",
         "label": "Optical Tactile Sensor"
       }
     ],
@@ -128,15 +115,11 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:robotic-manipulation-system",
+        "id": "urn:ngm:class:robotic-system",
         "label": "Robotic Manipulation System"
       }
     ],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:texture-recognition",
-        "label": "Texture Recognition"
-      },
       {
         "id": "urn:ngm:class:grasp-planning",
         "label": "Grasp Planning"

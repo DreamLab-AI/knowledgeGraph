@@ -62,12 +62,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:logging",
+        "@id": "urn:ngm:class:audit-logging",
         "label": "Logging"
-      },
-      {
-        "@id": "urn:ngm:class:metrics",
-        "label": "Metrics"
       },
       {
         "@id": "urn:ngm:class:distributed-tracing",

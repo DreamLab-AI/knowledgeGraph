@@ -23,13 +23,21 @@ public:: true
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:dc-communication", "label": "Communication Technology"}
+    {
+      "@id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    }
   ],
   "relations": {
-    "enables": [{"@id": "urn:ngm:class:large-scale-knowledge-dissemination", "label": "Large-Scale Knowledge Dissemination"}],
     "relatedTo": [
-      {"@id": "urn:ngm:class:live-polls-and-qanda", "label": "Live Polls and QandA"},
-      {"@id": "urn:ngm:class:live-captions", "label": "Live Captions"}
+      {
+        "@id": "urn:ngm:class:live-polls-and-qanda",
+        "label": "Live Polls and QandA"
+      },
+      {
+        "@id": "urn:ngm:class:live-captions",
+        "label": "Live Captions"
+      }
     ]
   },
   "quality": 0.7

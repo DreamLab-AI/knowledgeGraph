@@ -63,7 +63,7 @@
         "label": "Cryptographic Hash Function"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -82,10 +82,6 @@
       {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
-      },
-      {
-        "id": "urn:ngm:class:artificial-intelligence-in-finance",
-        "label": "Artificial Intelligence in Finance"
       }
     ],
     "uses": [
@@ -111,10 +107,6 @@
       {
         "id": "urn:ngm:class:financial-action-task-force",
         "label": "Financial Action Task Force"
-      },
-      {
-        "id": "urn:ngm:class:international-organisation-of-securities-commissions",
-        "label": "International Organisation of Securities Commissions"
       }
     ],
     "partOf": [],

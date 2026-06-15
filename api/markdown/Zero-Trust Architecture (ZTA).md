@@ -170,7 +170,7 @@ public:: true
         "label": "Continuous Verification"
       },
       {
-        "@id": "urn:ngm:class:least-privilege-access-control",
+        "@id": "urn:ngm:class:access-control",
         "label": "Least-Privilege Access Control"
       },
       {
@@ -188,7 +188,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:device-authentication",
+        "@id": "urn:ngm:class:authentication",
         "label": "Device Authentication"
       },
       {
@@ -196,7 +196,7 @@ public:: true
         "label": "Encryption"
       },
       {
-        "@id": "urn:ngm:class:logging-and-monitoring",
+        "@id": "urn:ngm:class:monitoring",
         "label": "Logging and Monitoring"
       },
       {
@@ -210,20 +210,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:breach-containment",
-        "label": "Breach Containment"
-      },
-      {
-        "@id": "urn:ngm:class:dynamic-access-control",
+        "@id": "urn:ngm:class:access-control",
         "label": "Dynamic Access Control"
-      },
-      {
-        "@id": "urn:ngm:class:insider-threat-mitigation",
-        "label": "Insider Threat Mitigation"
-      },
-      {
-        "@id": "urn:ngm:class:microsegmentation",
-        "label": "Microsegmentation"
       },
       {
         "@id": "urn:ngm:class:threat-detection",

@@ -18,25 +18,17 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:request-object",
-        "label": "Request Object"
-      },
-      {
-        "id": "urn:ngm:class:response-object",
-        "label": "Response Object"
-      },
-      {
-        "id": "urn:ngm:class:notification-message",
+        "id": "urn:ngm:class:push-notification",
         "label": "Notification Message"
       },
       {
-        "id": "urn:ngm:class:batch-request",
+        "id": "urn:ngm:class:batch-processing",
         "label": "Batch Request"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:json",
+        "id": "urn:ngm:class:json-data-interchange-format",
         "label": "JSON"
       },
       {
@@ -107,7 +99,7 @@
         "label": "HTTP"
       },
       {
-        "id": "urn:ngm:class:json",
+        "id": "urn:ngm:class:json-data-interchange-format",
         "label": "JSON"
       }
     ],

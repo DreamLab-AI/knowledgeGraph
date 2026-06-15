@@ -133,7 +133,7 @@ public:: true
         "label": "Lightning Network"
       },
       {
-        "@id": "urn:ngm:class:atomic-swaps",
+        "@id": "urn:ngm:class:atomic-swap",
         "label": "Atomic Swaps"
       }
     ],
@@ -147,13 +147,13 @@ public:: true
         "label": "Ethereum"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-cash",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-cash",
         "label": "Bitcoin Cash"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:cryptocurrency-ecosystem",
+        "@id": "urn:ngm:class:cryptocurrency",
         "label": "Cryptocurrency Ecosystem"
       }
     ],
@@ -171,10 +171,6 @@ public:: true
       {
         "@id": "urn:ngm:class:cryptocurrency",
         "label": "Cryptocurrency"
-      },
-      {
-        "@id": "urn:ngm:class:altcoin",
-        "label": "Altcoin"
       }
     ],
     "bridgesTo": [
@@ -183,7 +179,7 @@ public:: true
         "label": "Decentralised Finance"
       },
       {
-        "@id": "urn:ngm:class:payment-networks",
+        "@id": "urn:ngm:class:payment-network",
         "label": "Payment Networks"
       }
     ]

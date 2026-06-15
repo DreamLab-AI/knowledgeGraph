@@ -105,10 +105,6 @@ public:: true
         "label": "Mixed Reality"
       },
       {
-        "@id": "urn:ngm:class:immersive-web",
-        "label": "Immersive Web"
-      },
-      {
         "@id": "urn:ngm:class:spatial-audio",
         "label": "Spatial Audio"
       }
@@ -117,24 +113,16 @@ public:: true
       {
         "@id": "urn:ngm:class:w3c-specification",
         "label": "W3C Specification"
-      },
-      {
-        "@id": "urn:ngm:class:device-api",
-        "label": "Device API"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:gltf",
+        "@id": "urn:ngm:class:gltf-standard",
         "label": "glTF"
       },
       {
         "@id": "urn:ngm:class:pose-tracking",
         "label": "Pose Tracking"
-      },
-      {
-        "@id": "urn:ngm:class:reference-space",
-        "label": "Reference Space"
       }
     ],
     "supports": [
@@ -151,17 +139,9 @@ public:: true
       {
         "@id": "urn:ngm:class:w3c",
         "label": "W3C"
-      },
-      {
-        "@id": "urn:ngm:class:immersive-web-working-group",
-        "label": "Immersive Web Working Group"
       }
     ],
     "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:native-vr-sdk",
-        "label": "Native VR SDK"
-      },
       {
         "@id": "urn:ngm:class:openxr",
         "label": "OpenXR"

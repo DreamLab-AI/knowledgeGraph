@@ -53,45 +53,103 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:power-usage-effectiveness", "label": "Power Usage Effectiveness"},
-      {"@id": "urn:ngm:class:thermal-design-power", "label": "Thermal Design Power"},
-      {"@id": "urn:ngm:class:idle-power-consumption", "label": "Idle Power Consumption"}
+      {
+        "@id": "urn:ngm:class:power-usage-effectiveness",
+        "label": "Power Usage Effectiveness"
+      },
+      {
+        "@id": "urn:ngm:class:thermal-design-power",
+        "label": "Thermal Design Power"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:carbon-footprint", "label": "Carbon Footprint"},
-      {"@id": "urn:ngm:class:operational-cost", "label": "Operational Cost"}
+      {
+        "@id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:power-infrastructure", "label": "Power Infrastructure"},
-      {"@id": "urn:ngm:class:cooling-systems", "label": "Cooling Systems"}
+      {
+        "@id": "urn:ngm:class:power-infrastructure",
+        "label": "Power Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:cooling-system",
+        "label": "Cooling Systems"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:green-computing", "label": "Green Computing"},
-      {"@id": "urn:ngm:class:carbon-accounting", "label": "Carbon Accounting"}
+      {
+        "@id": "urn:ngm:class:green-computing",
+        "label": "Green Computing"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:hardware-architecture", "label": "Hardware Architecture"},
-      {"@id": "urn:ngm:class:workload-scheduling", "label": "Workload Scheduling"}
+      {
+        "@id": "urn:ngm:class:hardware-architecture",
+        "label": "Hardware Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:workload-scheduling",
+        "label": "Workload Scheduling"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:energy-efficiency", "label": "Energy Efficiency"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:data-centre", "label": "Data Centre"},
-      {"@id": "urn:ngm:class:renewable-energy", "label": "Renewable Energy"},
-      {"@id": "urn:ngm:class:computational-complexity", "label": "Computational Complexity"}
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      },
+      {
+        "@id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Computational Complexity"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-model-training", "label": "AI Model Training"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "AI Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:power-consumption", "label": "Power Consumption"},
-    {"@id": "urn:ngm:class:electricity-consumption", "label": "Electricity Consumption"}
+    {
+      "@id": "urn:ngm:class:power-consumption",
+      "label": "Power Consumption"
+    },
+    {
+      "@id": "urn:ngm:class:electricity-consumption",
+      "label": "Electricity Consumption"
+    }
   ],
   "quality": 0.72,
   "qualityScore": 0.7,

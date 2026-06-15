@@ -23,53 +23,127 @@ public:: true
   "definition": "A commitment scheme is a two-phase cryptographic primitive that allows a party (the committer) to bind itself to a chosen value by producing a short commitment string — analogous to sealing a value in an envelope — that is later opened by revealing the original value and a randomness parameter, with the scheme satisfying two security properties: binding (the committer cannot change the value after committing) and hiding (the commitment reveals nothing about the value before opening). Commitment schemes are foundational building blocks for zero-knowledge proofs, secure multi-party computation, and blockchain protocols.",
   "domain": "security",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-primitive", "label": "Cryptographic Primitive"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"}
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:blockchain-anchoring", "label": "Blockchain Anchoring"},
-      {"@id": "urn:ngm:class:secure-multi-party-computation", "label": "Secure Multi-Party Computation"},
-      {"@id": "urn:ngm:class:verifiable-random-function", "label": "Verifiable Random Function"},
-      {"@id": "urn:ngm:class:coin-flipping-protocol", "label": "Coin Flipping Protocol"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-anchoring",
+        "label": "Blockchain Anchoring"
+      },
+      {
+        "@id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-random-function",
+        "label": "Verifiable Random Function"
+      },
+      {
+        "@id": "urn:ngm:class:coin-flipping-protocol",
+        "label": "Coin Flipping Protocol"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:randomness", "label": "Randomness"},
-      {"@id": "urn:ngm:class:cryptographic-assumption", "label": "Cryptographic Assumption"}
+      {
+        "@id": "urn:ngm:class:randomness",
+        "label": "Randomness"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:pedersen-commitment", "label": "Pedersen Commitment"},
-      {"@id": "urn:ngm:class:kzg-polynomial-commitment", "label": "KZG Polynomial Commitment"},
-      {"@id": "urn:ngm:class:vector-commitment", "label": "Vector Commitment"}
+      {
+        "@id": "urn:ngm:class:pedersen-commitment",
+        "label": "Pedersen Commitment"
+      },
+      {
+        "@id": "urn:ngm:class:kzg-polynomial-commitment",
+        "label": "KZG Polynomial Commitment"
+      },
+      {
+        "@id": "urn:ngm:class:vector-commitment",
+        "label": "Vector Commitment"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:zksnark", "label": "zkSNARK"},
-      {"@id": "urn:ngm:class:zkstark", "label": "zkSTARK"},
-      {"@id": "urn:ngm:class:threshold-signature", "label": "Threshold Signature"},
-      {"@id": "urn:ngm:class:commit-reveal-pattern", "label": "Commit-Reveal Pattern"}
+      {
+        "@id": "urn:ngm:class:zksnark",
+        "label": "zkSNARK"
+      },
+      {
+        "@id": "urn:ngm:class:zkstark",
+        "label": "zkSTARK"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:encryption-scheme", "label": "Encryption Scheme"}
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:encryption-scheme",
+        "label": "Encryption Scheme"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:zero-knowledge", "label": "Zero Knowledge"},
-      {"@id": "urn:ngm:class:merkle-proof", "label": "Merkle Proof"},
-      {"@id": "urn:ngm:class:information-theoretic-security", "label": "Information-Theoretic Security"},
-      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge",
+        "label": "Zero Knowledge"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-proof",
+        "label": "Merkle Proof"
+      },
+      {
+        "@id": "urn:ngm:class:information-theoretic-security",
+        "label": "Information-Theoretic Security"
+      },
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:blockchain-data-availability", "label": "Blockchain Data Availability"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"}
+    {
+      "@id": "urn:ngm:class:cryptographic-commitment",
+      "label": "Cryptographic Commitment"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

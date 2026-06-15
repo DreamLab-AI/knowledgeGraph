@@ -23,53 +23,138 @@ public:: true
   "definition": "Know Your Customer (KYC) is a regulatory and compliance process by which financial institutions and other regulated entities verify the identity of their clients, assess their risk profiles, and understand the nature of their financial activities to prevent money laundering, terrorist financing, and other financial crimes. KYC encompasses identity document verification, biometric checks, beneficial ownership disclosure, and ongoing transaction monitoring. The process is mandated by the Financial Action Task Force (FATF) recommendations and implemented through national legislation including the EU Anti-Money Laundering Directives, the US Bank Secrecy Act, and equivalent statutes in over 200 jurisdictions.",
   "domain": "finance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:compliance", "label": "Compliance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:compliance",
+      "label": "Compliance"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:kyc", "label": "KYC"},
-    {"@id": "urn:ngm:class:customer-due-diligence", "label": "Customer Due Diligence"}
+    {
+      "@id": "urn:ngm:class:kyc",
+      "label": "KYC"
+    },
+    {
+      "@id": "urn:ngm:class:customer-due-diligence",
+      "label": "Customer Due Diligence"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:digital-identity-verification", "label": "Digital Identity Verification"},
-      {"@id": "urn:ngm:class:biometric-verification", "label": "Biometric Verification"},
-      {"@id": "urn:ngm:class:document-verification", "label": "Document Verification"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+      {
+        "@id": "urn:ngm:class:digital-identity-verification",
+        "label": "Digital Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:biometric-verification",
+        "label": "Biometric Verification"
+      },
+      {
+        "@id": "urn:ngm:class:document-verification",
+        "label": "Document Verification"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"},
-      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"},
-      {"@id": "urn:ngm:class:fraud-prevention", "label": "Fraud Prevention"},
-      {"@id": "urn:ngm:class:financial-inclusion", "label": "Financial Inclusion"}
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:fraud-prevention",
+        "label": "Fraud Prevention"
+      },
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:optical-character-recognition", "label": "Optical Character Recognition"},
-      {"@id": "urn:ngm:class:facial-recognition", "label": "Facial Recognition"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+      {
+        "@id": "urn:ngm:class:optical-character-recognition",
+        "label": "Optical Character Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:facial-recognition",
+        "label": "Facial Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:sanctions-screening", "label": "Sanctions Screening"},
-      {"@id": "urn:ngm:class:beneficial-ownership", "label": "Beneficial Ownership"}
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
+      },
+      {
+        "@id": "urn:ngm:class:beneficial-ownership",
+        "label": "Beneficial Ownership"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
-      {"@id": "urn:ngm:class:regtech", "label": "RegTech"},
-      {"@id": "urn:ngm:class:politically-exposed-person", "label": "Politically Exposed Person"}
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:regtech",
+        "label": "RegTech"
+      },
+      {
+        "@id": "urn:ngm:class:politically-exposed-person",
+        "label": "Politically Exposed Person"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:financial-action-task-force", "label": "Financial Action Task Force"},
-      {"@id": "urn:ngm:class:basel-committee-on-banking-supervision", "label": "Basel Committee on Banking Supervision"}
+      {
+        "@id": "urn:ngm:class:financial-action-task-force",
+        "label": "Financial Action Task Force"
+      },
+      {
+        "@id": "urn:ngm:class:basel-committee-on-banking-supervision",
+        "label": "Basel Committee on Banking Supervision"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
-      {"@id": "urn:ngm:class:anonymous-transaction", "label": "Anonymous Transaction"}
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      }
     ]
   },
   "quality": 0.74,

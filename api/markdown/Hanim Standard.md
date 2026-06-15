@@ -67,14 +67,7 @@ public:: true
       "label": "Animation Standard"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:cross-platform-avatars",
-        "label": "Cross-Platform Avatars"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

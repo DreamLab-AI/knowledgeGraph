@@ -153,35 +153,12 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
-    ],
-    "hasPart": [
       {
-        "@id": "urn:ngm:class:eye-movement-controller",
-        "label": "Eye Movement Controller"
-      },
-      {
-        "@id": "urn:ngm:class:gaze-target-estimator",
-        "label": "Gaze Target Estimator"
-      },
-      {
-        "@id": "urn:ngm:class:head-movement-mechanism",
-        "label": "Head Movement Mechanism"
-      },
-      {
-        "@id": "urn:ngm:class:visual-attention-model",
-        "label": "Visual Attention Model"
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:camera-actuators",
-        "label": "Camera Actuators"
-      },
-      {
-        "@id": "urn:ngm:class:social-understanding",
-        "label": "Social Understanding"
-      },
       {
         "@id": "urn:ngm:class:target-tracking",
         "label": "Target Tracking"
@@ -193,20 +170,12 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:attention-redirection",
-        "label": "Attention Redirection"
-      },
-      {
         "@id": "urn:ngm:class:joint-attention",
         "label": "Joint Attention"
       },
       {
         "@id": "urn:ngm:class:natural-interaction",
         "label": "Natural Interaction"
-      },
-      {
-        "@id": "urn:ngm:class:social-signal-transmission",
-        "label": "Social Signal Transmission"
       }
     ]
   },

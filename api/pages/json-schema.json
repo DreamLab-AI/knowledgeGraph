@@ -37,26 +37,18 @@
         "label": "Credential Schema"
       },
       {
-        "id": "urn:ngm:class:api-contract-testing",
-        "label": "API Contract Testing"
-      },
-      {
         "id": "urn:ngm:class:code-generation",
         "label": "Code Generation"
-      },
-      {
-        "id": "urn:ngm:class:form-generation",
-        "label": "Form Generation"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:ietf-standard",
+        "id": "urn:ngm:class:ietf",
         "label": "IETF Standard"
       },
       {
-        "id": "urn:ngm:class:declarative-constraint-specification",
+        "id": "urn:ngm:class:constraint-specification",
         "label": "Declarative Constraint Specification"
       }
     ],
@@ -86,16 +78,12 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:keyword-vocabulary",
+        "id": "urn:ngm:class:controlled-vocabulary",
         "label": "Keyword Vocabulary"
       },
       {
         "id": "urn:ngm:class:regular-expression",
         "label": "Regular Expression"
-      },
-      {
-        "id": "urn:ngm:class:uri-reference",
-        "label": "URI Reference"
       }
     ],
     "supports": [
@@ -134,10 +122,6 @@
       {
         "id": "urn:ngm:class:graphql-schema",
         "label": "GraphQL Schema"
-      },
-      {
-        "id": "urn:ngm:class:schema-language",
-        "label": "Schema Language"
       }
     ]
   },

@@ -74,16 +74,8 @@ public:: true
         "label": "Serial Shipping Container Code"
       },
       {
-        "@id": "urn:ngm:class:electronic-product-code",
-        "label": "Electronic Product Code"
-      },
-      {
         "@id": "urn:ngm:class:gs1-digital-link",
         "label": "GS1 Digital Link"
-      },
-      {
-        "@id": "urn:ngm:class:ean-barcode",
-        "label": "EAN Barcode"
       }
     ],
     "enables": [
@@ -96,7 +88,7 @@ public:: true
         "label": "Digital Product Passport"
       },
       {
-        "@id": "urn:ngm:class:product-traceability",
+        "@id": "urn:ngm:class:traceability",
         "label": "Product Traceability"
       },
       {
@@ -134,7 +126,7 @@ public:: true
         "label": "Electronic Data Interchange"
       },
       {
-        "@id": "urn:ngm:class:epcis",
+        "@id": "urn:ngm:class:gs1-epcis",
         "label": "EPCIS"
       }
     ],
@@ -154,14 +146,8 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:gs1-organisation",
+        "@id": "urn:ngm:class:gs1",
         "label": "GS1 Organisation"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:proprietary-identification",
-        "label": "Proprietary Identification"
       }
     ],
     "bridgesTo": [
@@ -170,7 +156,7 @@ public:: true
         "label": "Verifiable Credentials"
       },
       {
-        "@id": "urn:ngm:class:semantic-web",
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       },
       {
@@ -184,11 +170,7 @@ public:: true
         "label": "Iso Standards"
       },
       {
-        "@id": "urn:ngm:class:product-master-data",
-        "label": "Product Master Data"
-      },
-      {
-        "@id": "urn:ngm:class:data-synchronisation",
+        "@id": "urn:ngm:class:synchronisation",
         "label": "Data Synchronisation"
       }
     ]

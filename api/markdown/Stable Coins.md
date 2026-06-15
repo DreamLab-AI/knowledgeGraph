@@ -417,10 +417,6 @@ alias:: Stablecoins
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:attestation-report",
-        "label": "Attestation Report"
-      },
-      {
         "@id": "urn:ngm:class:liquidation-engine",
         "label": "Liquidation Engine"
       },
@@ -435,10 +431,6 @@ alias:: Stablecoins
       {
         "@id": "urn:ngm:class:reserve-asset",
         "label": "Reserve Asset"
-      },
-      {
-        "@id": "urn:ngm:class:smart-contract-vault",
-        "label": "Smart Contract Vault"
       },
       {
         "@id": "urn:ngm:class:governance-token",
@@ -459,21 +451,13 @@ alias:: Stablecoins
         "label": "Regulatory Licence"
       },
       {
-        "@id": "urn:ngm:class:reserve-audit",
-        "label": "Reserve Audit"
-      },
-      {
-        "@id": "urn:ngm:class:smart-contract-infrastructure",
-        "label": "Smart Contract Infrastructure"
-      },
-      {
         "@id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:corporate-treasury-management",
+        "@id": "urn:ngm:class:treasury-management",
         "label": "Corporate Treasury Management"
       },
       {
@@ -499,18 +483,6 @@ alias:: Stablecoins
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:algorithmic-stabilisation",
-        "label": "Algorithmic Stabilisation"
-      },
-      {
-        "@id": "urn:ngm:class:dollar-peg-mechanism",
-        "label": "Dollar Peg Mechanism"
-      },
-      {
-        "@id": "urn:ngm:class:fractional-reserve-model",
-        "label": "Fractional Reserve Model"
-      },
-      {
         "@id": "urn:ngm:class:overcollateralisation",
         "label": "Overcollateralisation"
       },
@@ -525,16 +497,8 @@ alias:: Stablecoins
         "label": "Avalanche"
       },
       {
-        "@id": "urn:ngm:class:base-network",
+        "@id": "urn:ngm:class:base",
         "label": "Base Network"
-      },
-      {
-        "@id": "urn:ngm:class:multi-party-computation-custody",
-        "label": "Multi-Party Computation Custody"
-      },
-      {
-        "@id": "urn:ngm:class:tron-network",
-        "label": "Tron Network"
       },
       {
         "@id": "urn:ngm:class:ethereum-smart-contract-platform",
@@ -546,10 +510,6 @@ alias:: Stablecoins
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:eurodollar",
-        "label": "Eurodollar"
-      },
       {
         "@id": "urn:ngm:class:aml-kyc-compliance",
         "label": "AML KYC Compliance"
@@ -585,33 +545,21 @@ alias:: Stablecoins
         "label": "Decentralized Exchange"
       },
       {
-        "@id": "urn:ngm:class:emerging-market-finance",
-        "label": "Emerging Market Finance"
-      },
-      {
-        "@id": "urn:ngm:class:metaverse-payments",
-        "label": "Metaverse Payments"
-      },
-      {
         "@id": "urn:ngm:class:trade-finance",
         "label": "Trade Finance"
       }
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:basel-iii-crypto-exposure-rules",
+        "@id": "urn:ngm:class:basel-iii",
         "label": "Basel III Crypto Exposure Rules"
       },
       {
-        "@id": "urn:ngm:class:fasb-asc-350-60",
-        "label": "FASB ASC 350-60"
-      },
-      {
-        "@id": "urn:ngm:class:fca-stablecoin-rules",
+        "@id": "urn:ngm:class:stablecoin-regulation",
         "label": "FCA Stablecoin Rules"
       },
       {
-        "@id": "urn:ngm:class:genius-act-2025",
+        "@id": "urn:ngm:class:genius-act",
         "label": "GENIUS Act 2025"
       },
       {

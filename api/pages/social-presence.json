@@ -39,20 +39,12 @@
       {
         "id": "urn:ngm:class:trust-building",
         "label": "Trust Building"
-      },
-      {
-        "id": "urn:ngm:class:group-cohesion",
-        "label": "Group Cohesion"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:media-richness",
+        "id": "urn:ngm:class:media-richness-theory",
         "label": "Media Richness"
-      },
-      {
-        "id": "urn:ngm:class:nonverbal-cues",
-        "label": "Nonverbal Cues"
       }
     ],
     "implements": [],
@@ -70,10 +62,6 @@
       {
         "id": "urn:ngm:class:virtual-reality",
         "label": "Virtual Reality"
-      },
-      {
-        "id": "urn:ngm:class:metaverse-social-layer",
-        "label": "Metaverse Social Layer"
       }
     ],
     "uses": [
@@ -128,11 +116,7 @@
         "label": "Haptic Feedback"
       },
       {
-        "id": "urn:ngm:class:copresence",
-        "label": "Co-presence"
-      },
-      {
-        "id": "urn:ngm:class:mutual-awareness",
+        "id": "urn:ngm:class:awareness",
         "label": "Mutual Awareness"
       }
     ]

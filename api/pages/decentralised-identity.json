@@ -45,14 +45,14 @@
         "label": "Privacy-Preserving Authentication"
       },
       {
-        "id": "urn:ngm:class:cross-border-digital-identity",
+        "id": "urn:ngm:class:digital-identity",
         "label": "Cross-Border Digital Identity"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:w3c-did-specification",
+        "id": "urn:ngm:class:w3-c-did-specification",
         "label": "W3C DID Specification"
       },
       {
@@ -62,7 +62,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:centralised-identity-provider",
+        "id": "urn:ngm:class:centralized-identity-provider",
         "label": "Centralised Identity Provider"
       },
       {
@@ -98,7 +98,7 @@
         "label": "Zero-Knowledge Proof"
       },
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       }
     ],
@@ -109,7 +109,7 @@
         "label": "W3C"
       },
       {
-        "id": "urn:ngm:class:openid-foundation",
+        "id": "urn:ngm:class:open-id-foundation",
         "label": "OpenID Foundation"
       }
     ],

@@ -23,60 +23,151 @@ public:: true
   "definition": "Stereo vision is a computational technique that recovers metric depth information from a scene by analysing the horizontal displacement (disparity) between corresponding points in two or more rectified images captured from laterally separated viewpoints, mimicking the binocular parallax used by human and animal visual systems. The resulting dense disparity maps are converted into 3D point clouds or depth maps for downstream perception tasks.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:computer-vision",
+    "label": "Computer Vision"
+  },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"},
-      {"@id": "urn:ngm:class:epipolar-geometry", "label": "Epipolar Geometry"},
-      {"@id": "urn:ngm:class:feature-matching", "label": "Feature Matching"},
-      {"@id": "urn:ngm:class:image-rectification", "label": "Image Rectification"},
-      {"@id": "urn:ngm:class:disparity-map", "label": "Disparity Map"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"}
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:epipolar-geometry",
+        "label": "Epipolar Geometry"
+      },
+      {
+        "@id": "urn:ngm:class:feature-matching",
+        "label": "Feature Matching"
+      },
+      {
+        "@id": "urn:ngm:class:disparity-map",
+        "label": "Disparity Map"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"},
-      {"@id": "urn:ngm:class:point-cloud-generation", "label": "Point Cloud Generation"},
-      {"@id": "urn:ngm:class:3-d-scene-reconstruction", "label": "3D Scene Reconstruction"},
-      {"@id": "urn:ngm:class:visual-odometry", "label": "Visual Odometry"},
-      {"@id": "urn:ngm:class:obstacle-detection", "label": "Obstacle Detection"}
+      {
+        "@id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud-generation",
+        "label": "Point Cloud Generation"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-scene-reconstruction",
+        "label": "3D Scene Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:obstacle-detection",
+        "label": "Obstacle Detection"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:stereo-camera-rig", "label": "Stereo Camera Rig"},
-      {"@id": "urn:ngm:class:image-synchronisation", "label": "Image Synchronisation"},
-      {"@id": "urn:ngm:class:lens-distortion-correction", "label": "Lens Distortion Correction"}
+      {
+        "@id": "urn:ngm:class:image-synchronisation",
+        "label": "Image Synchronisation"
+      },
+      {
+        "@id": "urn:ngm:class:lens-distortion-correction",
+        "label": "Lens Distortion Correction"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:stereo-matching", "label": "Stereo Matching"},
-      {"@id": "urn:ngm:class:semi-global-matching", "label": "Semi-Global Matching"},
-      {"@id": "urn:ngm:class:cost-volume", "label": "Cost Volume"}
+      {
+        "@id": "urn:ngm:class:stereo-matching",
+        "label": "Stereo Matching"
+      },
+      {
+        "@id": "urn:ngm:class:semi-global-matching",
+        "label": "Semi-Global Matching"
+      },
+      {
+        "@id": "urn:ngm:class:cost-volume",
+        "label": "Cost Volume"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"},
-      {"@id": "urn:ngm:class:epipolar-geometry", "label": "Epipolar Geometry"}
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:epipolar-geometry",
+        "label": "Epipolar Geometry"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:autonomous-driving", "label": "Autonomous Driving"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:robotic-grasping", "label": "Robotic Grasping"}
+      {
+        "@id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-grasping",
+        "label": "Robotic Grasping"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:monocular-depth-estimation", "label": "Monocular Depth Estimation"},
-      {"@id": "urn:ngm:class:structured-light", "label": "Structured Light"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"}
+      {
+        "@id": "urn:ngm:class:monocular-depth-estimation",
+        "label": "Monocular Depth Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:structured-light",
+        "label": "Structured Light"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:optical-flow", "label": "Optical Flow"},
-      {"@id": "urn:ngm:class:multi-view-stereo", "label": "Multi-View Stereo"}
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:optical-flow",
+        "label": "Optical Flow"
+      },
+      {
+        "@id": "urn:ngm:class:multi-view-stereo",
+        "label": "Multi-View Stereo"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:advanced-driver-assistance-systems", "label": "Advanced Driver Assistance Systems"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:advanced-driver-assistance-systems",
+        "label": "Advanced Driver Assistance Systems"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:binocular-vision", "label": "Binocular Vision"},
-    {"@id": "urn:ngm:class:stereo-depth-sensing", "label": "Stereo Depth Sensing"}
+    {
+      "@id": "urn:ngm:class:binocular-vision",
+      "label": "Binocular Vision"
+    },
+    {
+      "@id": "urn:ngm:class:stereo-depth-sensing",
+      "label": "Stereo Depth Sensing"
+    }
   ],
   "quality": 0.75,
   "provenance": {

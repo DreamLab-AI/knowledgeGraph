@@ -104,11 +104,11 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:augmented-reality-experiences",
+        "@id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality Experiences"
       },
       {
-        "@id": "urn:ngm:class:mixed-reality-interaction",
+        "@id": "urn:ngm:class:mixed-reality",
         "label": "Mixed Reality Interaction"
       },
       {

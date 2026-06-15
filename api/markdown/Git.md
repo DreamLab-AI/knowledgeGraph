@@ -77,14 +77,6 @@ public:: true
         "label": "Commit"
       },
       {
-        "@id": "urn:ngm:class:branch",
-        "label": "Branch"
-      },
-      {
-        "@id": "urn:ngm:class:merge",
-        "label": "Merge"
-      },
-      {
         "@id": "urn:ngm:class:pull-request",
         "label": "Pull Request"
       }
@@ -119,10 +111,6 @@ public:: true
         "label": "Continuous Integration"
       },
       {
-        "@id": "urn:ngm:class:collaborative-coding",
-        "label": "Collaborative Coding"
-      },
-      {
         "@id": "urn:ngm:class:code-review",
         "label": "Code Review"
       }
@@ -133,7 +121,7 @@ public:: true
         "label": "Distributed Systems"
       },
       {
-        "@id": "urn:ngm:class:cryptographic-hashing",
+        "@id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hashing"
       }
     ],
@@ -143,7 +131,7 @@ public:: true
         "label": "Directed Acyclic Graph"
       },
       {
-        "@id": "urn:ngm:class:content-addressable-storage",
+        "@id": "urn:ngm:class:content-addressed-storage",
         "label": "Content-Addressable Storage"
       }
     ],
@@ -167,31 +155,13 @@ public:: true
         "label": "Open Source Governance"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:subversion",
-        "label": "Subversion"
-      },
-      {
-        "@id": "urn:ngm:class:mercurial",
-        "label": "Mercurial"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:infrastructure-as-code",
         "label": "Infrastructure as Code"
-      },
-      {
-        "@id": "urn:ngm:class:machine-learning-workflow",
-        "label": "Machine Learning Workflow"
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:git-lab",
-        "label": "GitLab"
-      },
       {
         "@id": "urn:ngm:class:gitops",
         "label": "GitOps"

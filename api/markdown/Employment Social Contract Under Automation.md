@@ -70,45 +70,15 @@ elevatedFrom:: [[Social contract and jobs]]
       {
         "@id": "urn:ngm:class:ai-regulation",
         "label": "AI Regulation"
-      },
-      {
-        "@id": "urn:ngm:class:welfare-state",
-        "label": "Welfare State"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:workforce-transition",
+        "@id": "urn:ngm:class:just-transition",
         "label": "Workforce Transition"
-      },
-      {
-        "@id": "urn:ngm:class:social-cohesion",
-        "label": "Social Cohesion"
-      },
-      {
-        "@id": "urn:ngm:class:economic-redistribution",
-        "label": "Economic Redistribution"
-      }
-    ],
-    "dependsOn": [
-      {
-        "@id": "urn:ngm:class:collective-bargaining",
-        "label": "Collective Bargaining"
-      },
-      {
-        "@id": "urn:ngm:class:labour-law",
-        "label": "Labour Law"
-      },
-      {
-        "@id": "urn:ngm:class:social-insurance",
-        "label": "Social Insurance"
       }
     ],
     "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:technological-unemployment",
-        "label": "Technological Unemployment"
-      },
       {
         "@id": "urn:ngm:class:gig-economy",
         "label": "Gig Economy"
@@ -124,12 +94,8 @@ elevatedFrom:: [[Social contract and jobs]]
         "label": "Future of Work"
       },
       {
-        "@id": "urn:ngm:class:job-displacement",
+        "@id": "urn:ngm:class:ai-driven-workforce-displacement-registry",
         "label": "Job Displacement"
-      },
-      {
-        "@id": "urn:ngm:class:reskilling",
-        "label": "Reskilling"
       },
       {
         "@id": "urn:ngm:class:income-inequality",
@@ -152,20 +118,12 @@ elevatedFrom:: [[Social contract and jobs]]
       {
         "@id": "urn:ngm:class:ai-adoption",
         "label": "AI Adoption"
-      },
-      {
-        "@id": "urn:ngm:class:algorithmic-management",
-        "label": "Algorithmic Management"
       }
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:democratic-legitimacy",
+        "@id": "urn:ngm:class:democratic-governance",
         "label": "Democratic Legitimacy"
-      },
-      {
-        "@id": "urn:ngm:class:human-dignity",
-        "label": "Human Dignity"
       }
     ]
   },

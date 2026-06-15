@@ -23,61 +23,154 @@ public:: true
   "definition": "Bitcoin Script is a non-Turing-complete, stack-based scripting language embedded in every Bitcoin transaction that defines the conditions under which unspent transaction outputs (UTXOs) may be spent. It consists of a constrained set of opcodes operating on a last-in-first-out (LIFO) stack, deliberately designed without loops or unbounded recursion to ensure guaranteed termination and predictable resource consumption. Script programs are expressed as paired locking scripts (scriptPubKey) and unlocking scripts (scriptSig or SegWit witness data) that encode spending conditions including digital signature verification, multisignature requirements, hash pre-image revelation, and time locks. Standard output templates — P2PKH, P2SH, P2WPKH, P2WSH, and P2TR — formalise the most common spending patterns used across the Bitcoin network.",
   "domain": "blockchain",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:scripting-language", "label": "Scripting Language"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:scripting-language",
+      "label": "Scripting Language"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:bitcoin-scripting-language", "label": "Bitcoin Scripting Language"},
-    {"@id": "urn:ngm:class:forth-like-script", "label": "Forth-like Script"}
+    {
+      "@id": "urn:ngm:class:bitcoin-scripting-language",
+      "label": "Bitcoin Scripting Language"
+    },
+    {
+      "@id": "urn:ngm:class:forth-like-script",
+      "label": "Forth-like Script"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:scriptpubkey", "label": "ScriptPubKey"},
-      {"@id": "urn:ngm:class:scriptsig", "label": "ScriptSig"},
-      {"@id": "urn:ngm:class:witness-data", "label": "Witness Data"}
+      {
+        "@id": "urn:ngm:class:witness-data",
+        "label": "Witness Data"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core", "label": "Bitcoin Core"},
-      {"@id": "urn:ngm:class:utxo-model", "label": "UTXO Model"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
+        "label": "Bitcoin Core"
+      },
+      {
+        "@id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:opcodes", "label": "Opcodes"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
-      {"@id": "urn:ngm:class:schnorr-signature", "label": "Schnorr Signature"}
+      {
+        "@id": "urn:ngm:class:opcodes",
+        "label": "Opcodes"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-ordinals", "label": "Bitcoin Ordinals"},
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
-      {"@id": "urn:ngm:class:hash-time-locked-contract", "label": "Hash Time-Locked Contract"},
-      {"@id": "urn:ngm:class:multisignature-wallet", "label": "Multisignature Wallet"},
-      {"@id": "urn:ngm:class:atomic-swap", "label": "Atomic Swap"},
-      {"@id": "urn:ngm:class:bitcoin-covenant", "label": "Bitcoin Covenant"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-ordinals",
+        "label": "Bitcoin Ordinals"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      },
+      {
+        "@id": "urn:ngm:class:multisignature-wallets",
+        "label": "Multisignature Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin Covenant"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:bitcoin-transaction", "label": "Bitcoin Transaction"},
-      {"@id": "urn:ngm:class:stack-machine", "label": "Stack Machine"}
+      {
+        "@id": "urn:ngm:class:bitcoin-transaction",
+        "label": "Bitcoin Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:stack-machine",
+        "label": "Stack Machine"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:pay-to-public-key-hash", "label": "Pay-to-Public-Key-Hash"},
-      {"@id": "urn:ngm:class:pay-to-script-hash", "label": "Pay-to-Script-Hash"},
-      {"@id": "urn:ngm:class:taproot", "label": "Taproot"}
+      {
+        "@id": "urn:ngm:class:pay-to-public-key-hash",
+        "label": "Pay-to-Public-Key-Hash"
+      },
+      {
+        "@id": "urn:ngm:class:pay-to-script-hash",
+        "label": "Pay-to-Script-Hash"
+      },
+      {
+        "@id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:bitcoin-improvement-proposal", "label": "Bitcoin Improvement Proposal"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
+        "label": "Bitcoin Improvement Proposal"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ethereum-virtual-machine", "label": "Ethereum Virtual Machine"},
-      {"@id": "urn:ngm:class:solidity", "label": "Solidity"},
-      {"@id": "urn:ngm:class:turing-complete-language", "label": "Turing Complete Language"}
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      },
+      {
+        "@id": "urn:ngm:class:turing-complete-language",
+        "label": "Turing Complete Language"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:forth-programming-language", "label": "Forth Programming Language"},
-      {"@id": "urn:ngm:class:merklised-abstract-syntax-tree", "label": "Merklised Abstract Syntax Tree"},
-      {"@id": "urn:ngm:class:segregated-witness", "label": "Segregated Witness"}
+      {
+        "@id": "urn:ngm:class:programming-language",
+        "label": "Forth Programming Language"
+      },
+      {
+        "@id": "urn:ngm:class:merklised-abstract-syntax-tree",
+        "label": "Merklised Abstract Syntax Tree"
+      },
+      {
+        "@id": "urn:ngm:class:segregated-witness",
+        "label": "Segregated Witness"
+      }
     ]
   },
   "quality": 0.74,

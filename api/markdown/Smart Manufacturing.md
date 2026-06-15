@@ -23,62 +23,144 @@ public:: true
   "definition": "Smart manufacturing is an integrated approach to industrial production that embeds advanced sensing, connectivity, data analytics, and artificial intelligence throughout the production system to achieve real-time visibility, adaptive control, and continuous optimisation of manufacturing processes. It combines cyber-physical systems, the Industrial Internet of Things, digital twins, machine learning, and cloud and edge computing to create intelligent factories capable of self-monitoring, predictive maintenance, and autonomous quality control. Smart manufacturing extends beyond factory automation to encompass supply chain integration, mass customisation, and sustainability optimisation, representing the operational realisation of the Industry 4.0 paradigm.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": {"@id": "urn:ngm:class:manufacturing-automation", "label": "Manufacturing Automation"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:manufacturing-automation",
+    "label": "Manufacturing Automation"
+  },
   "sameAs": [
-    {"@id": "urn:ngm:class:industry-4-0", "label": "Industry 4.0"},
-    {"@id": "urn:ngm:class:intelligent-manufacturing", "label": "Intelligent Manufacturing"}
+    {
+      "@id": "urn:ngm:class:industry-4-0",
+      "label": "Industry 4.0"
+    },
+    {
+      "@id": "urn:ngm:class:intelligent-manufacturing",
+      "label": "Intelligent Manufacturing"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:industrial-control-system", "label": "Industrial Control System"}
+      {
+        "@id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Industrial Control System"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:industry-4-0", "label": "Industry 4.0"}
+      {
+        "@id": "urn:ngm:class:industry-4-0",
+        "label": "Industry 4.0"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"},
-      {"@id": "urn:ngm:class:industrial-data-platform", "label": "Industrial Data Platform"},
-      {"@id": "urn:ngm:class:5g-networks", "label": "5G Networks"}
+      {
+        "@id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      },
+      {
+        "@id": "urn:ngm:class:5g-networks",
+        "label": "5G Networks"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:opc-ua", "label": "OPC UA"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:opc-ua",
+        "label": "OPC UA"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"},
-      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"},
-      {"@id": "urn:ngm:class:mass-customisation", "label": "Mass Customisation"}
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "@id": "urn:ngm:class:mass-customisation",
+        "label": "Mass Customisation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:real-time-data-processing", "label": "Real-Time Data Processing"}
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-data-processing",
+        "label": "Real-Time Data Processing"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:industrial-internet-of-things", "label": "Industrial Internet of Things"}
+      {
+        "@id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial Internet of Things"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:precision-manufacturing", "label": "Precision Manufacturing"},
-      {"@id": "urn:ngm:class:sustainable-manufacturing", "label": "Sustainable Manufacturing"}
+      {
+        "@id": "urn:ngm:class:precision-manufacturing",
+        "label": "Precision Manufacturing"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-manufacturing",
+        "label": "Sustainable Manufacturing"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-30141", "label": "ISO/IEC 30141"},
-      {"@id": "urn:ngm:class:nist-smart-manufacturing-framework", "label": "NIST Smart Manufacturing Framework"}
+      {
+        "@id": "urn:ngm:class:iso-iec-30141",
+        "label": "ISO/IEC 30141"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:traditional-manufacturing", "label": "Traditional Manufacturing"}
+      {
+        "@id": "urn:ngm:class:traditional-manufacturing",
+        "label": "Traditional Manufacturing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:industrial-metaverse", "label": "Industrial Metaverse"},
-      {"@id": "urn:ngm:class:digital-thread", "label": "Digital Thread"}
+      {
+        "@id": "urn:ngm:class:industrial-metaverse",
+        "label": "Industrial Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:digital-thread",
+        "label": "Digital Thread"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ]
   },
   "quality": 0.8,

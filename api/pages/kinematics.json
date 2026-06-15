@@ -76,7 +76,7 @@
         "label": "Linear Algebra"
       },
       {
-        "id": "urn:ngm:class:rigid-body-mechanics",
+        "id": "urn:ngm:class:rigid-body-dynamics",
         "label": "Rigid Body Mechanics"
       }
     ],
@@ -85,10 +85,6 @@
       {
         "id": "urn:ngm:class:dynamics",
         "label": "Dynamics"
-      },
-      {
-        "id": "urn:ngm:class:statics",
-        "label": "Statics"
       }
     ],
     "bridgesTo": [
@@ -132,12 +128,8 @@
         "label": "Biomechanics"
       },
       {
-        "id": "urn:ngm:class:autonomous-vehicles",
+        "id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
-      },
-      {
-        "id": "urn:ngm:class:mechanics",
-        "label": "Mechanics"
       }
     ]
   },

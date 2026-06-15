@@ -23,66 +23,169 @@ public:: true
   "definition": "Taproot is a soft-fork upgrade to the Bitcoin protocol, activated at block 709,632 in November 2021, comprising BIPs 340, 341, and 342. It introduces Schnorr signatures (BIP 340), Pay-to-Taproot (P2TR) outputs with Merkelised Abstract Syntax Tree (MAST) spending-condition commitments (BIP 341), and Tapscript — an updated Bitcoin Script dialect (BIP 342). Together these improvements enhance transaction privacy by making complex multi-condition spends indistinguishable from simple key-path spends, improve efficiency via Schnorr signature aggregation, and expand smart-contract expressiveness on Bitcoin's base layer.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Protocol and Consensus"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:schnorr-signatures", "label": "Schnorr Signatures"},
-      {"@id": "urn:ngm:class:merkelised-abstract-syntax-tree", "label": "Merkelised Abstract Syntax Tree"},
-      {"@id": "urn:ngm:class:tapscript", "label": "Tapscript"},
-      {"@id": "urn:ngm:class:pay-to-taproot", "label": "Pay-to-Taproot"}
+      {
+        "@id": "urn:ngm:class:schnorr-signatures",
+        "label": "Schnorr Signatures"
+      },
+      {
+        "@id": "urn:ngm:class:merkelised-abstract-syntax-tree",
+        "label": "Merkelised Abstract Syntax Tree"
+      },
+      {
+        "@id": "urn:ngm:class:bip-342-tapscript",
+        "label": "Tapscript"
+      },
+      {
+        "@id": "urn:ngm:class:pay-to-taproot",
+        "label": "Pay-to-Taproot"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview", "label": "Bitcoin Technical Overview"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-technical-overview",
+        "label": "Bitcoin Technical Overview"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:soft-fork", "label": "Soft Fork"}
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:soft-fork",
+        "label": "Soft Fork"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:taproot-assets", "label": "Taproot Assets"},
-      {"@id": "urn:ngm:class:musig2", "label": "MuSig2"},
-      {"@id": "urn:ngm:class:taproot-channels", "label": "Taproot Channels"},
-      {"@id": "urn:ngm:class:bitvm", "label": "BitVM"},
-      {"@id": "urn:ngm:class:point-time-locked-contracts", "label": "Point Time-Locked Contracts"}
+      {
+        "@id": "urn:ngm:class:taproot-assets",
+        "label": "Taproot Assets"
+      },
+      {
+        "@id": "urn:ngm:class:musig2",
+        "label": "MuSig2"
+      },
+      {
+        "@id": "urn:ngm:class:bitvm",
+        "label": "BitVM"
+      },
+      {
+        "@id": "urn:ngm:class:point-time-locked-contracts",
+        "label": "Point Time-Locked Contracts"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"},
-      {"@id": "urn:ngm:class:cryptographic-primitive", "label": "Cryptographic Primitive"},
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:secp256k1", "label": "secp256k1"}
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:secp256k1",
+        "label": "secp256k1"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals", "label": "Bitcoin Improvement Proposals"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
+        "label": "Bitcoin Improvement Proposals"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
-      {"@id": "urn:ngm:class:transaction-privacy", "label": "Transaction Privacy"},
-      {"@id": "urn:ngm:class:signature-aggregation", "label": "Signature Aggregation"}
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-privacy",
+        "label": "Transaction Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:signature-aggregation",
+        "label": "Signature Aggregation"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:bitcoin-improvement-proposals", "label": "Bitcoin Improvement Proposals"}
+      {
+        "@id": "urn:ngm:class:bitcoin-improvement-proposals",
+        "label": "Bitcoin Improvement Proposals"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ecdsa", "label": "ECDSA"},
-      {"@id": "urn:ngm:class:pay-to-script-hash", "label": "Pay-to-Script-Hash"},
-      {"@id": "urn:ngm:class:segregated-witness", "label": "Segregated Witness"}
+      {
+        "@id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "@id": "urn:ngm:class:pay-to-script-hash",
+        "label": "Pay-to-Script-Hash"
+      },
+      {
+        "@id": "urn:ngm:class:segregated-witness",
+        "label": "Segregated Witness"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network", "label": "Bitcoin Network"},
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script", "label": "Bitcoin Script"},
-      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"},
-      {"@id": "urn:ngm:class:multi-signature", "label": "Multi-Signature"},
-      {"@id": "urn:ngm:class:bitcoin-governance", "label": "Bitcoin Governance"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
+        "label": "Bitcoin Script"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:multi-signature",
+        "label": "Multi-Signature"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+        "label": "Bitcoin Governance"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:pay-to-taproot", "label": "Pay-to-Taproot"},
-    {"@id": "urn:ngm:class:bip-341", "label": "BIP-341"}
+    {
+      "@id": "urn:ngm:class:pay-to-taproot",
+      "label": "Pay-to-Taproot"
+    },
+    {
+      "@id": "urn:ngm:class:bip-341",
+      "label": "BIP-341"
+    }
   ],
   "quality": 0.75,
   "provenance": {

@@ -18,10 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:process-modelling",
-        "label": "Process Modelling"
-      },
-      {
         "id": "urn:ngm:class:process-mining",
         "label": "Process Mining"
       },
@@ -35,10 +31,6 @@
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:process-notation",
-        "label": "Process Notation"
-      },
       {
         "id": "urn:ngm:class:event-driven-architecture",
         "label": "Event Driven Architecture"
@@ -68,16 +60,7 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:business-process-reengineering",
-        "label": "Business Process Reengineering"
-      },
-      {
-        "id": "urn:ngm:class:total-quality-management",
-        "label": "Total Quality Management"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:artificial-intelligence",
@@ -98,7 +81,7 @@
         "label": "Robotic Process Automation"
       },
       {
-        "id": "urn:ngm:class:integration-middleware",
+        "id": "urn:ngm:class:middleware",
         "label": "Integration Middleware"
       }
     ],
@@ -120,20 +103,12 @@
       {
         "id": "urn:ngm:class:bpmn",
         "label": "BPMN"
-      },
-      {
-        "id": "urn:ngm:class:workflow-management-coalition",
-        "label": "Workflow Management Coalition"
       }
     ],
     "partOf": [
       {
         "id": "urn:ngm:class:enterprise-architecture",
         "label": "Enterprise Architecture"
-      },
-      {
-        "id": "urn:ngm:class:organisational-management",
-        "label": "Organisational Management"
       }
     ],
     "relatedTo": [

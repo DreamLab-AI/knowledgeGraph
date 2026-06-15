@@ -166,14 +166,6 @@ public:: true
         "label": "Camera Tracking"
       },
       {
-        "@id": "urn:ngm:class:compositing-pipeline",
-        "label": "Compositing Pipeline"
-      },
-      {
-        "@id": "urn:ngm:class:led-volume",
-        "label": "LED Volume"
-      },
-      {
         "@id": "urn:ngm:class:motion-capture",
         "label": "Motion Capture"
       },
@@ -190,14 +182,6 @@ public:: true
       {
         "@id": "urn:ngm:class:camera-tracking-system",
         "label": "Camera Tracking System"
-      },
-      {
-        "@id": "urn:ngm:class:led-display-system",
-        "label": "LED Display System"
-      },
-      {
-        "@id": "urn:ngm:class:render-engine",
-        "label": "Render Engine"
       },
       {
         "@id": "urn:ngm:class:game-engine",
@@ -218,14 +202,6 @@ public:: true
         "label": "Interactive Filmmaking"
       },
       {
-        "@id": "urn:ngm:class:live-compositing",
-        "label": "Live Compositing"
-      },
-      {
-        "@id": "urn:ngm:class:previsualization",
-        "label": "Previsualization"
-      },
-      {
         "@id": "urn:ngm:class:virtual-scouting",
         "label": "Virtual Scouting"
       }
@@ -236,7 +212,7 @@ public:: true
         "label": "Broadcast Production"
       },
       {
-        "@id": "urn:ngm:class:film-production-workflow",
+        "@id": "urn:ngm:class:virtual-production-workflow",
         "label": "Film Production Workflow"
       }
     ]

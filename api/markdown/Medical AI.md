@@ -126,30 +126,12 @@ public:: true
         "label": "Drug Discovery"
       },
       {
-        "@id": "urn:ngm:class:medical-imaging-analysis",
+        "@id": "urn:ngm:class:medical-imaging",
         "label": "Medical Imaging Analysis"
       },
       {
-        "@id": "urn:ngm:class:personalized-medicine",
-        "label": "Personalized Medicine"
-      },
-      {
         "@id": "urn:ngm:class:precision-medicine",
-        "label": "Precision Medicine"
-      },
-      {
-        "@id": "urn:ngm:class:early-disease-detection",
-        "label": "Early Disease Detection"
-      }
-    ],
-    "requires": [
-      {
-        "@id": "urn:ngm:class:clinical-validation",
-        "label": "Clinical Validation"
-      },
-      {
-        "@id": "urn:ngm:class:medical-data-governance",
-        "label": "Medical Data Governance"
+        "label": "Personalized Medicine"
       }
     ],
     "uses": [
@@ -178,10 +160,6 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:fda-samd-guidance",
-        "label": "FDA SaMD Guidance"
-      },
-      {
         "@id": "urn:ngm:class:iec-62304",
         "label": "IEC 62304"
       },
@@ -192,7 +170,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:general-purpose-ai",
+        "@id": "urn:ngm:class:general-purpose-ai-model",
         "label": "General-Purpose AI"
       }
     ],

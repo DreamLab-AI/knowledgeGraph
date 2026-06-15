@@ -23,12 +23,7 @@
         "label": "Neural Machine Translation"
       }
     ],
-    "enables": [
-      {
-        "id": "urn:ngm:class:cross-lingual-collaboration",
-        "label": "CrossLingualCollaboration"
-      }
-    ],
+    "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],

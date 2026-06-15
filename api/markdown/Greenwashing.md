@@ -54,45 +54,113 @@ public:: true
   ],
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:sustainable-development", "label": "Sustainable Development"},
-      {"@id": "urn:ngm:class:carbon-neutrality", "label": "Carbon Neutrality"},
-      {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"}
+      {
+        "@id": "urn:ngm:class:sustainable-development",
+        "label": "Sustainable Development"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-neutrality",
+        "label": "Carbon Neutrality"
+      },
+      {
+        "@id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:corporate-social-responsibility", "label": "Corporate Social Responsibility"},
-      {"@id": "urn:ngm:class:environmental-disclosure", "label": "Environmental Disclosure"},
-      {"@id": "urn:ngm:class:sustainability-reporting", "label": "SustainabilityReporting"},
-      {"@id": "urn:ngm:class:consumer-protection", "label": "Consumer Protection"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:reputational-risk", "label": "Reputational Risk"},
-      {"@id": "urn:ngm:class:energy-consumption", "label": "Energy Consumption"}
+      {
+        "@id": "urn:ngm:class:corporate-social-responsibility",
+        "label": "Corporate Social Responsibility"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-disclosure",
+        "label": "Environmental Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability-reporting",
+        "label": "SustainabilityReporting"
+      },
+      {
+        "@id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:reputational-risk",
+        "label": "Reputational Risk"
+      },
+      {
+        "@id": "urn:ngm:class:energy-consumption",
+        "label": "Energy Consumption"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:audit-and-verification", "label": "Audit and Verification"},
-      {"@id": "urn:ngm:class:third-party-certification", "label": "Third-Party Certification"}
+      {
+        "@id": "urn:ngm:class:audit",
+        "label": "Audit and Verification"
+      },
+      {
+        "@id": "urn:ngm:class:third-party-certification",
+        "label": "Third-Party Certification"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:regulatory-enforcement", "label": "Regulatory Enforcement"},
-      {"@id": "urn:ngm:class:green-finance-standards", "label": "Green Finance Standards"}
+      {
+        "@id": "urn:ngm:class:regulatory-enforcement",
+        "label": "Regulatory Enforcement"
+      },
+      {
+        "@id": "urn:ngm:class:green-finance",
+        "label": "Green Finance Standards"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:marketing-communications", "label": "Marketing Communications"},
-      {"@id": "urn:ngm:class:information-asymmetry", "label": "Information Asymmetry"}
+      {
+        "@id": "urn:ngm:class:advertising-and-marketing",
+        "label": "Marketing Communications"
+      },
+      {
+        "@id": "urn:ngm:class:information-asymmetry",
+        "label": "Information Asymmetry"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:eu-green-claims-directive", "label": "EU Green Claims Directive"},
-      {"@id": "urn:ngm:class:iso-14021", "label": "ISO 14021"},
-      {"@id": "urn:ngm:class:ftc-green-guides", "label": "FTC Green Guides"}
+      {
+        "@id": "urn:ngm:class:eu-green-claims-directive",
+        "label": "EU Green Claims Directive"
+      },
+      {
+        "@id": "urn:ngm:class:iso",
+        "label": "ISO 14021"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:esg-data-analytics", "label": "ESG Data Analytics"},
-      {"@id": "urn:ngm:class:supply-chain-transparency", "label": "Supply Chain Transparency"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "ESG Data Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:environmental-misrepresentation", "label": "Environmental Misrepresentation"},
-    {"@id": "urn:ngm:class:eco-fraud", "label": "Eco-Fraud"}
+    {
+      "@id": "urn:ngm:class:environmental-misrepresentation",
+      "label": "Environmental Misrepresentation"
+    },
+    {
+      "@id": "urn:ngm:class:eco-fraud",
+      "label": "Eco-Fraud"
+    }
   ],
   "quality": 0.73,
   "provenance": {

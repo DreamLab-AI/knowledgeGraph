@@ -39,10 +39,6 @@
       {
         "id": "urn:ngm:class:green-finance",
         "label": "Green Finance"
-      },
-      {
-        "id": "urn:ngm:class:low-carbon-transition",
-        "label": "Low-Carbon Transition"
       }
     ],
     "dependsOn": [
@@ -66,7 +62,7 @@
         "label": "Carbon Neutrality"
       },
       {
-        "id": "urn:ngm:class:climate-pledges",
+        "id": "urn:ngm:class:climate-commitments",
         "label": "Climate Pledges"
       }
     ],
@@ -101,12 +97,8 @@
         "label": "Paris Agreement"
       },
       {
-        "id": "urn:ngm:class:science-based-targets-initiative",
+        "id": "urn:ngm:class:science-based-targets",
         "label": "Science Based Targets Initiative"
-      },
-      {
-        "id": "urn:ngm:class:ifrs-sustainability-standards",
-        "label": "IFRS Sustainability Standards"
       }
     ],
     "partOf": [
@@ -120,10 +112,6 @@
       }
     ],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:nationally-determined-contributions",
-        "label": "Nationally Determined Contributions"
-      },
       {
         "id": "urn:ngm:class:scope-3-emissions",
         "label": "Scope 3 Emissions"

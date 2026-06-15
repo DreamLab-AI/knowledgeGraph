@@ -48,7 +48,7 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:epcis",
+        "id": "urn:ngm:class:gs1-epcis",
         "label": "EPCIS"
       },
       {
@@ -56,12 +56,7 @@
         "label": "GS1 Standards"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:self-reported-origin",
-        "label": "Self-Reported Origin"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:zero-knowledge-proof",
@@ -78,7 +73,7 @@
         "label": "Audit Trail"
       },
       {
-        "id": "urn:ngm:class:iot-sensor-data",
+        "id": "urn:ngm:class:sensor-data",
         "label": "IoT Sensor Data"
       },
       {
@@ -86,7 +81,7 @@
         "label": "Verifiable Credentials"
       },
       {
-        "id": "urn:ngm:class:cryptographic-hashing",
+        "id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hashing"
       },
       {
@@ -110,7 +105,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:w3c-provenance",
+        "id": "urn:ngm:class:provenance-standard",
         "label": "W3C PROV"
       },
       {
@@ -137,7 +132,7 @@
         "label": "Digital Product Passport"
       },
       {
-        "id": "urn:ngm:class:conflict-minerals",
+        "id": "urn:ngm:class:conflict-mineral-tracking",
         "label": "Conflict Minerals"
       }
     ]

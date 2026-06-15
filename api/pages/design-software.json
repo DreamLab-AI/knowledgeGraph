@@ -18,10 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:vector-graphics-editor",
-        "label": "Vector Graphics Editor"
-      },
-      {
         "id": "urn:ngm:class:3-d-modeling",
         "label": "3D Modeling"
       },
@@ -30,7 +26,7 @@
         "label": "Animation Software"
       },
       {
-        "id": "urn:ngm:class:cad-tool",
+        "id": "urn:ngm:class:cad-software",
         "label": "CAD Tool"
       }
     ],
@@ -123,7 +119,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:creative-technology-stack",
+        "id": "urn:ngm:class:technology-stack",
         "label": "Creative Technology Stack"
       },
       {

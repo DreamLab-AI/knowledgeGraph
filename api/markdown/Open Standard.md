@@ -53,7 +53,7 @@ public:: true
         "label": "Specification Document"
       },
       {
-        "@id": "urn:ngm:class:conformance-test-suite",
+        "@id": "urn:ngm:class:standards-conformance-testing",
         "label": "Conformance Test Suite"
       },
       {
@@ -65,10 +65,6 @@ public:: true
       {
         "@id": "urn:ngm:class:consensus-process",
         "label": "Consensus Process"
-      },
-      {
-        "@id": "urn:ngm:class:intellectual-property-policy",
-        "label": "Intellectual Property Policy"
       }
     ],
     "enables": [
@@ -79,10 +75,6 @@ public:: true
       {
         "@id": "urn:ngm:class:vendor-neutrality",
         "label": "Vendor Neutrality"
-      },
-      {
-        "@id": "urn:ngm:class:ecosystem-competition",
-        "label": "Ecosystem Competition"
       },
       {
         "@id": "urn:ngm:class:data-portability",
@@ -153,7 +145,7 @@ public:: true
         "label": "OpenXR"
       },
       {
-        "@id": "urn:ngm:class:gltf",
+        "@id": "urn:ngm:class:gltf-standard",
         "label": "glTF"
       },
       {

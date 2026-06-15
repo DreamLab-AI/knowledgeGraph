@@ -18,29 +18,13 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:code-based-cryptography",
-        "label": "Code-Based Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:hash-based-signatures",
-        "label": "Hash-Based Signatures"
-      },
-      {
-        "id": "urn:ngm:class:isogeny-based-cryptography",
-        "label": "Isogeny-Based Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:lattice-based-cryptography",
+        "id": "urn:ngm:class:lattice-cryptography",
         "label": "Lattice-Based Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:multivariate-cryptography",
-        "label": "Multivariate Cryptography"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:algorithm-implementation",
+        "id": "urn:ngm:class:algorithm",
         "label": "Algorithm Implementation"
       },
       {
@@ -53,14 +37,6 @@
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:long-term-data-protection",
-        "label": "Long-Term Data Protection"
-      },
-      {
-        "id": "urn:ngm:class:quantum-resistant-encryption",
-        "label": "Quantum-Resistant Encryption"
-      },
       {
         "id": "urn:ngm:class:secure-key-exchange",
         "label": "Secure Key Exchange"

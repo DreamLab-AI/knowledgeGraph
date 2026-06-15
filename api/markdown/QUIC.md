@@ -139,20 +139,6 @@ public:: true
       {
         "@id": "urn:ngm:class:udp",
         "label": "UDP"
-      },
-      {
-        "@id": "urn:ngm:class:packet-acknowledgement",
-        "label": "Packet Acknowledgement"
-      }
-    ],
-    "supports": [
-      {
-        "@id": "urn:ngm:class:zero-rtt-resumption",
-        "label": "Zero-RTT Resumption"
-      },
-      {
-        "@id": "urn:ngm:class:mobile-networking",
-        "label": "Mobile Networking"
       }
     ],
     "standardizedBy": [
@@ -169,10 +155,6 @@ public:: true
       {
         "@id": "urn:ngm:class:http2",
         "label": "HTTP/2"
-      },
-      {
-        "@id": "urn:ngm:class:sctp",
-        "label": "SCTP"
       }
     ],
     "relatedTo": [

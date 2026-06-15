@@ -158,12 +158,8 @@ public:: true
         "label": "Decision Rules"
       },
       {
-        "@id": "urn:ngm:class:dispute-resolution-process",
+        "@id": "urn:ngm:class:dispute-resolution",
         "label": "Dispute Resolution Process"
-      },
-      {
-        "@id": "urn:ngm:class:membership-criteria",
-        "label": "Membership Criteria"
       },
       {
         "@id": "urn:ngm:class:proposal-mechanism",

@@ -22,7 +22,7 @@
         "label": "Zero-Shot Prompting"
       },
       {
-        "id": "urn:ngm:class:self-consistency-decoding",
+        "id": "urn:ngm:class:self-consistency",
         "label": "Self-Consistency Decoding"
       },
       {
@@ -121,14 +121,6 @@
       {
         "id": "urn:ngm:class:react-prompting",
         "label": "ReAct Prompting"
-      },
-      {
-        "id": "urn:ngm:class:least-to-most-prompting",
-        "label": "Least-to-Most Prompting"
-      },
-      {
-        "id": "urn:ngm:class:programme-of-thought",
-        "label": "Programme of Thought"
       }
     ]
   },

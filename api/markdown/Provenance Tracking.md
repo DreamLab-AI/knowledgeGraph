@@ -192,52 +192,139 @@ alias:: BC-0441-provenance-tracking
   },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:immutability", "label": "Immutability"},
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"},
-      {"@id": "urn:ngm:class:traceability-mechanism", "label": "Traceability Mechanism"},
-      {"@id": "urn:ngm:class:chain-of-custody", "label": "Chain of Custody"}
+      {
+        "@id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "@id": "urn:ngm:class:traceability-mechanism",
+        "label": "Traceability Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-custody",
+        "label": "Chain of Custody"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:permissioned-blockchain", "label": "Permissioned Blockchain"},
-      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"},
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}
+      {
+        "@id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:food-safety-blockchain", "label": "Food Safety Blockchain"},
-      {"@id": "urn:ngm:class:pharmaceutical-traceability", "label": "Pharmaceutical Traceability"},
-      {"@id": "urn:ngm:class:luxury-goods-authentication", "label": "Luxury Goods Authentication"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:food-safety-blockchain",
+        "label": "Food Safety Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:pharmaceutical-traceability",
+        "label": "Pharmaceutical Traceability"
+      },
+      {
+        "@id": "urn:ngm:class:luxury-goods-authentication",
+        "label": "Luxury Goods Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:epcis", "label": "EPCIS"},
-      {"@id": "urn:ngm:class:gs1-standards", "label": "GS1 Standards"},
-      {"@id": "urn:ngm:class:w3c-prov", "label": "W3C PROV"}
+      {
+        "@id": "urn:ngm:class:gs1-epcis",
+        "label": "EPCIS"
+      },
+      {
+        "@id": "urn:ngm:class:gs1-standards",
+        "label": "GS1 Standards"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-prov",
+        "label": "W3C PROV"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:supply-chain-blockchain", "label": "Supply Chain Blockchain"},
-      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"},
-      {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"}
+      {
+        "@id": "urn:ngm:class:supply-chain-blockchain",
+        "label": "Supply Chain Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:centralised-database", "label": "Centralised Database"}
+      {
+        "@id": "urn:ngm:class:centralised-database",
+        "label": "Centralised Database"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-model-governance", "label": "AI Model Governance"},
-      {"@id": "urn:ngm:class:data-lineage", "label": "Data Lineage"}
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Model Governance"
+      },
+      {
+        "@id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:supply-chain-provenance", "label": "Supply Chain Provenance"},
-    {"@id": "urn:ngm:class:chain-of-custody-tracking", "label": "Chain of Custody Tracking"},
-    {"@id": "urn:ngm:class:product-traceability", "label": "Product Traceability"}
+    {
+      "@id": "urn:ngm:class:supply-chain-provenance",
+      "label": "Supply Chain Provenance"
+    },
+    {
+      "@id": "urn:ngm:class:chain-of-custody-tracking",
+      "label": "Chain of Custody Tracking"
+    },
+    {
+      "@id": "urn:ngm:class:product-traceability",
+      "label": "Product Traceability"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -39,53 +39,139 @@ alias:: InternetOfThings
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:mqtt", "label": "MQTT"},
-      {"@id": "urn:ngm:class:coap", "label": "CoAP"},
-      {"@id": "urn:ngm:class:sensor", "label": "Sensor"},
-      {"@id": "urn:ngm:class:wireless-communication", "label": "Wireless Communication"},
-      {"@id": "urn:ngm:class:microcontroller", "label": "Microcontroller"},
-      {"@id": "urn:ngm:class:tls", "label": "TLS"}
+      {
+        "@id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      },
+      {
+        "@id": "urn:ngm:class:coap",
+        "label": "CoAP"
+      },
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-communication",
+        "label": "Wireless Communication"
+      },
+      {
+        "@id": "urn:ngm:class:microcontroller",
+        "label": "Microcontroller"
+      },
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "TLS"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:telemetry-and-analytics", "label": "Telemetry & Analytics"},
-      {"@id": "urn:ngm:class:smart-city", "label": "Smart City"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"},
-      {"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:telemetry-and-analytics",
+        "label": "Telemetry & Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:iot-gateway", "label": "IoT Gateway"},
-      {"@id": "urn:ngm:class:sensor-data", "label": "Sensor Data"},
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"}
+      {
+        "@id": "urn:ngm:class:iot-gateway",
+        "label": "IoT Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-data",
+        "label": "Sensor Data"
+      },
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:etsi", "label": "ETSI"},
-      {"@id": "urn:ngm:class:ieee", "label": "IEEE"},
-      {"@id": "urn:ngm:class:itu", "label": "ITU"}
+      {
+        "@id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      },
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "@id": "urn:ngm:class:itu",
+        "label": "ITU"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:traditional-scada", "label": "Traditional SCADA"}
+      {
+        "@id": "urn:ngm:class:traditional-scada",
+        "label": "Traditional SCADA"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"},
-      {"@id": "urn:ngm:class:5g", "label": "5G"},
-      {"@id": "urn:ngm:class:fog-computing", "label": "Fog Computing"},
-      {"@id": "urn:ngm:class:device-management", "label": "Device Management"}
+      {
+        "@id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      },
+      {
+        "@id": "urn:ngm:class:5g",
+        "label": "5G"
+      },
+      {
+        "@id": "urn:ngm:class:fog-computing",
+        "label": "Fog Computing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:iot", "label": "IoT"},
-    {"@id": "urn:ngm:class:connected-devices", "label": "Connected Devices"}
+    {
+      "@id": "urn:ngm:class:iot",
+      "label": "IoT"
+    },
+    {
+      "@id": "urn:ngm:class:connected-devices",
+      "label": "Connected Devices"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -37,14 +37,6 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:price-appreciation",
-        "label": "Price Appreciation"
-      },
-      {
-        "id": "urn:ngm:class:long-term-holding",
-        "label": "Long-Term Holding"
-      },
-      {
         "id": "urn:ngm:class:economic-incentive",
         "label": "Economic Incentive"
       }
@@ -72,10 +64,6 @@
       {
         "id": "urn:ngm:class:stablecoin",
         "label": "Stablecoin"
-      },
-      {
-        "id": "urn:ngm:class:elastic-supply-token",
-        "label": "Elastic Supply Token"
       }
     ],
     "bridgesTo": [

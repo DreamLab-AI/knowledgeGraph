@@ -19,10 +19,6 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:editorial-workflow",
-        "label": "Editorial Workflow"
-      },
-      {
         "id": "urn:ngm:class:content-moderation",
         "label": "Content Moderation"
       },
@@ -66,26 +62,14 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:content-curation",
-        "label": "Content Curation"
-      },
-      {
         "id": "urn:ngm:class:user-generated-content",
         "label": "User-Generated Content"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:spatial-content",
-        "label": "Spatial Content"
-      },
-      {
         "id": "urn:ngm:class:nft",
         "label": "NFT"
-      },
-      {
-        "id": "urn:ngm:class:data-storytelling",
-        "label": "Data Storytelling"
       }
     ],
     "uses": [
@@ -110,7 +94,7 @@
         "label": "Natural Language Generation"
       },
       {
-        "id": "urn:ngm:class:text-to-image-model",
+        "id": "urn:ngm:class:text-to-image",
         "label": "Text-to-Image Model"
       }
     ],
@@ -122,10 +106,6 @@
       {
         "id": "urn:ngm:class:brand-identity",
         "label": "Brand Identity"
-      },
-      {
-        "id": "urn:ngm:class:seo",
-        "label": "Search Engine Optimisation"
       }
     ],
     "standardizedBy": [],

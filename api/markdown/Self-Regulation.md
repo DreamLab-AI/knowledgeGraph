@@ -69,17 +69,13 @@ public:: true
         "label": "Code of Conduct"
       },
       {
-        "@id": "urn:ngm:class:industry-standard",
-        "label": "Industry Standard"
-      },
-      {
         "@id": "urn:ngm:class:enforcement-mechanism",
         "label": "Enforcement Mechanism"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:regulatory-ecosystem",
+        "@id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Ecosystem"
       }
     ],
@@ -109,10 +105,6 @@ public:: true
       {
         "@id": "urn:ngm:class:consumer-protection",
         "label": "Consumer Protection"
-      },
-      {
-        "@id": "urn:ngm:class:industry-coordination",
-        "label": "Industry Coordination"
       }
     ],
     "dependsOn": [
@@ -123,10 +115,6 @@ public:: true
       {
         "@id": "urn:ngm:class:standards-body",
         "label": "Standards Body"
-      },
-      {
-        "@id": "urn:ngm:class:peer-oversight",
-        "label": "Peer Oversight"
       }
     ],
     "implements": [
@@ -151,12 +139,8 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:statutory-regulation",
+        "@id": "urn:ngm:class:regulation",
         "label": "Statutory Regulation"
-      },
-      {
-        "@id": "urn:ngm:class:command-and-control-regulation",
-        "label": "Command-and-Control Regulation"
       }
     ],
     "bridgesTo": [
@@ -183,7 +167,7 @@ public:: true
         "label": "Ethics Framework"
       },
       {
-        "@id": "urn:ngm:class:professional-standards",
+        "@id": "urn:ngm:class:standards",
         "label": "Professional Standards"
       }
     ]

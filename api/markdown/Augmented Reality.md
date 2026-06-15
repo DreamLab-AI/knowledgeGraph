@@ -77,16 +77,8 @@ alias:: AugmentedReality
         "label": "Spatial Mapping"
       },
       {
-        "@id": "urn:ngm:class:marker-tracking",
+        "@id": "urn:ngm:class:marker-based-tracking",
         "label": "Marker Tracking"
-      },
-      {
-        "@id": "urn:ngm:class:occlusion-handling",
-        "label": "Occlusion Handling"
-      },
-      {
-        "@id": "urn:ngm:class:light-estimation",
-        "label": "Light Estimation"
       }
     ],
     "partOf": [
@@ -115,10 +107,6 @@ alias:: AugmentedReality
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:contextual-information-display",
-        "label": "Contextual Information Display"
-      },
-      {
         "@id": "urn:ngm:class:remote-assistance",
         "label": "Remote Assistance"
       },
@@ -127,7 +115,7 @@ alias:: AugmentedReality
         "label": "Immersive Experiences"
       },
       {
-        "@id": "urn:ngm:class:surgical-guidance",
+        "@id": "urn:ngm:class:surgical-navigation",
         "label": "Surgical Guidance"
       },
       {

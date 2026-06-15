@@ -78,15 +78,11 @@ elevatedFrom:: [[Midjourney]]
         "label": "Diffusion Model"
       },
       {
-        "@id": "urn:ngm:class:natural-language-prompt",
-        "label": "Natural Language Prompt"
-      },
-      {
         "@id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
       },
       {
-        "@id": "urn:ngm:class:cloud-inference-infrastructure",
+        "@id": "urn:ngm:class:inference-infrastructure",
         "label": "Cloud Inference Infrastructure"
       }
     ],
@@ -100,17 +96,13 @@ elevatedFrom:: [[Midjourney]]
         "label": "Synthetic Media"
       },
       {
-        "@id": "urn:ngm:class:ai-assisted-design",
-        "label": "AI-Assisted Design"
-      },
-      {
-        "@id": "urn:ngm:class:rapid-visual-prototyping",
+        "@id": "urn:ngm:class:rapid-prototyping",
         "label": "Rapid Visual Prototyping"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:clip-text-encoder",
+        "@id": "urn:ngm:class:text-encoder",
         "label": "CLIP Text Encoder"
       },
       {
@@ -120,19 +112,15 @@ elevatedFrom:: [[Midjourney]]
       {
         "@id": "urn:ngm:class:prompt-engineering",
         "label": "Prompt Engineering"
-      },
-      {
-        "@id": "urn:ngm:class:discord-platform",
-        "label": "Discord Platform"
       }
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       },
       {
-        "@id": "urn:ngm:class:dall-e",
+        "@id": "urn:ngm:class:dall-e-3",
         "label": "DALL-E"
       },
       {
@@ -152,15 +140,11 @@ elevatedFrom:: [[Midjourney]]
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:ai-image-generation",
+        "@id": "urn:ngm:class:image-generation",
         "label": "AI Image Generation"
       },
       {
-        "@id": "urn:ngm:class:copyright-and-ai",
-        "label": "Copyright and AI"
-      },
-      {
-        "@id": "urn:ngm:class:training-data-provenance",
+        "@id": "urn:ngm:class:data-provenance",
         "label": "Training Data Provenance"
       }
     ],

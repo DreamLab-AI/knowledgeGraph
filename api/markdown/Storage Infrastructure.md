@@ -419,10 +419,6 @@ alias:: StorageInfrastructure
         "label": "IPFS"
       },
       {
-        "@id": "urn:ngm:class:nvme",
-        "label": "NVMe"
-      },
-      {
         "@id": "urn:ngm:class:object-storage",
         "label": "Object Storage"
       },
@@ -433,17 +429,9 @@ alias:: StorageInfrastructure
       {
         "@id": "urn:ngm:class:vector-databases",
         "label": "Vector Databases"
-      },
-      {
-        "@id": "urn:ngm:class:zfs",
-        "label": "ZFS"
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:consistency-protocols",
-        "label": "Consistency Protocols"
-      },
       {
         "@id": "urn:ngm:class:encryption",
         "label": "Encryption"
@@ -471,7 +459,7 @@ alias:: StorageInfrastructure
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:big-data-analytics",
+        "@id": "urn:ngm:class:data-analytics",
         "label": "Big Data Analytics"
       },
       {
@@ -483,7 +471,7 @@ alias:: StorageInfrastructure
         "label": "Data Lake"
       },
       {
-        "@id": "urn:ngm:class:decentralised-applications",
+        "@id": "urn:ngm:class:decentralised-application",
         "label": "Decentralised Applications"
       },
       {
@@ -493,10 +481,6 @@ alias:: StorageInfrastructure
       {
         "@id": "urn:ngm:class:lakehouse-architecture",
         "label": "Lakehouse Architecture"
-      },
-      {
-        "@id": "urn:ngm:class:rag",
-        "label": "RAG"
       },
       {
         "@id": "urn:ngm:class:vector-search",
@@ -509,10 +493,6 @@ alias:: StorageInfrastructure
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:apache-hudi",
-        "label": "Apache Hudi"
-      },
-      {
         "@id": "urn:ngm:class:apache-iceberg",
         "label": "Apache Iceberg"
       },
@@ -521,20 +501,8 @@ alias:: StorageInfrastructure
         "label": "CRDT"
       },
       {
-        "@id": "urn:ngm:class:crush-algorithm",
-        "label": "CRUSH Algorithm"
-      },
-      {
-        "@id": "urn:ngm:class:delta-lake",
-        "label": "Delta Lake"
-      },
-      {
         "@id": "urn:ngm:class:hnsw-index",
         "label": "HNSW Index"
-      },
-      {
-        "@id": "urn:ngm:class:nvme-o-f",
-        "label": "NVMe-oF"
       },
       {
         "@id": "urn:ngm:class:posix",
@@ -550,10 +518,6 @@ alias:: StorageInfrastructure
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:aes-256-encryption",
-        "label": "AES-256 Encryption"
-      },
       {
         "@id": "urn:ngm:class:blake3",
         "label": "BLAKE3"
@@ -575,10 +539,6 @@ alias:: StorageInfrastructure
         "label": "Reed-Solomon Erasure Coding"
       },
       {
-        "@id": "urn:ngm:class:zstandard-compression",
-        "label": "Zstandard Compression"
-      },
-      {
         "@id": "urn:ngm:class:sha-256",
         "label": "SHA-256"
       }
@@ -591,10 +551,6 @@ alias:: StorageInfrastructure
       {
         "@id": "urn:ngm:class:data-mesh",
         "label": "Data Mesh"
-      },
-      {
-        "@id": "urn:ngm:class:fin-ops",
-        "label": "FinOps"
       },
       {
         "@id": "urn:ngm:class:kubernetes",
@@ -619,7 +575,7 @@ alias:: StorageInfrastructure
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:ai-model-training",
+        "@id": "urn:ngm:class:model-training",
         "label": "AI Model Training"
       },
       {
@@ -653,31 +609,7 @@ alias:: StorageInfrastructure
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:cxl-consortium",
-        "label": "CXL Consortium"
-      },
-      {
-        "@id": "urn:ngm:class:iso-iec-27040",
-        "label": "ISO IEC 27040"
-      },
-      {
-        "@id": "urn:ngm:class:nist-sp-800-111",
-        "label": "NIST SP 800-111"
-      },
-      {
-        "@id": "urn:ngm:class:nvm-express-specification",
-        "label": "NVM Express Specification"
-      },
-      {
-        "@id": "urn:ngm:class:posix-ieee-1003-1",
-        "label": "POSIX IEEE 1003.1"
-      },
-      {
-        "@id": "urn:ngm:class:snia",
-        "label": "SNIA"
-      },
-      {
-        "@id": "urn:ngm:class:w3-c-ipld",
+        "@id": "urn:ngm:class:ipld",
         "label": "W3C IPLD"
       }
     ]

@@ -38,53 +38,99 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:capability-evaluation", "label": "Capability Evaluation"},
-      {"@id": "urn:ngm:class:third-party-audit", "label": "Third-Party Audit"}
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:capability-evaluation",
+        "label": "Capability Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:third-party-audit",
+        "label": "Third-Party Audit"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:model-accountability", "label": "Model Accountability"},
-      {"@id": "urn:ngm:class:incremental-deployment", "label": "Incremental Deployment"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"},
-      {"@id": "urn:ngm:class:precautionary-principle", "label": "Precautionary Principle"}
-    ],
-    "uses": [
-      {"@id": "urn:ngm:class:uplift-evaluation", "label": "Uplift Evaluation"},
-      {"@id": "urn:ngm:class:model-evals", "label": "Model Evals"},
-      {"@id": "urn:ngm:class:biosafety-level-framework", "label": "Biosafety Level Framework"}
+      {
+        "@id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:precautionary-principle",
+        "label": "Precautionary Principle"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:existential-risk-reduction", "label": "Existential Risk Reduction"},
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:frontier-model", "label": "Frontier Model"},
-      {"@id": "urn:ngm:class:interpretability", "label": "Interpretability"}
+      {
+        "@id": "urn:ngm:class:frontier-models",
+        "label": "Frontier Model"
+      },
+      {
+        "@id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:mandatory-ai-regulation", "label": "Mandatory AI Regulation"},
-      {"@id": "urn:ngm:class:compute-governance", "label": "Compute Governance"}
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "Mandatory AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:compute-governance",
+        "label": "Compute Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:frontier-model-forum", "label": "Frontier Model Forum"},
-      {"@id": "urn:ngm:class:ai-safety-institute", "label": "AI Safety Institute"},
-      {"@id": "urn:ngm:class:model-card", "label": "Model Card"},
-      {"@id": "urn:ngm:class:cbrn-risk", "label": "CBRN Risk"},
-      {"@id": "urn:ngm:class:deployment-policy", "label": "Deployment Policy"}
+      {
+        "@id": "urn:ngm:class:frontier-model-forum",
+        "label": "Frontier Model Forum"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety-institute",
+        "label": "AI Safety Institute"
+      },
+      {
+        "@id": "urn:ngm:class:ai-model-card",
+        "label": "Model Card"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:biosecurity", "label": "Biosecurity"},
-      {"@id": "urn:ngm:class:nuclear-non-proliferation", "label": "Nuclear Non-Proliferation"}
+      {
+        "@id": "urn:ngm:class:biosecurity",
+        "label": "Biosecurity"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ai-safety-level-policy", "label": "AI Safety Level Policy"},
-    {"@id": "urn:ngm:class:rsp", "label": "RSP"}
+    {
+      "@id": "urn:ngm:class:ai-safety-level-policy",
+      "label": "AI Safety Level Policy"
+    },
+    {
+      "@id": "urn:ngm:class:rsp",
+      "label": "RSP"
+    }
   ],
   "quality": 0.73,
   "provenance": {

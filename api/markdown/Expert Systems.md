@@ -70,14 +70,6 @@ public:: true
       {
         "@id": "urn:ngm:class:inference-engine",
         "label": "Inference Engine"
-      },
-      {
-        "@id": "urn:ngm:class:explanation-facility",
-        "label": "Explanation Facility"
-      },
-      {
-        "@id": "urn:ngm:class:knowledge-acquisition-module",
-        "label": "Knowledge Acquisition Module"
       }
     ],
     "partOf": [
@@ -100,14 +92,6 @@ public:: true
       {
         "@id": "urn:ngm:class:decision-support",
         "label": "Decision Support"
-      },
-      {
-        "@id": "urn:ngm:class:automated-diagnosis",
-        "label": "Automated Diagnosis"
-      },
-      {
-        "@id": "urn:ngm:class:fault-detection",
-        "label": "Fault Detection"
       }
     ],
     "dependsOn": [

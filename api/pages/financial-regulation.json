@@ -22,10 +22,6 @@
         "label": "Prudential Regulation"
       },
       {
-        "id": "urn:ngm:class:conduct-regulation",
-        "label": "Conduct Regulation"
-      },
-      {
         "id": "urn:ngm:class:securities-regulation",
         "label": "Securities Regulation"
       },
@@ -68,7 +64,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:legal-frameworks",
+        "id": "urn:ngm:class:legal-framework",
         "label": "Legal Frameworks"
       },
       {
@@ -136,7 +132,7 @@
         "label": "Systemic Risk"
       },
       {
-        "id": "urn:ngm:class:financial-crime",
+        "id": "urn:ngm:class:financial-crime-detection",
         "label": "Financial Crime"
       }
     ]

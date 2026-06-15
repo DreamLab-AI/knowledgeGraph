@@ -85,7 +85,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:3d-asset-pipeline",
+        "@id": "urn:ngm:class:asset-pipeline",
         "label": "3D Asset Pipeline"
       },
       {
@@ -117,7 +117,7 @@ public:: true
         "label": "Character Rigging"
       },
       {
-        "@id": "urn:ngm:class:avatar-pipeline",
+        "@id": "urn:ngm:class:avatar",
         "label": "Avatar Pipeline"
       }
     ],
@@ -129,13 +129,13 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:3d-file-format",
+        "@id": "urn:ngm:class:3-d-file-format",
         "label": "3D File Format"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:binary-serialisation",
+        "@id": "urn:ngm:class:binary-encoding",
         "label": "Binary Serialisation"
       },
       {
@@ -209,12 +209,8 @@ public:: true
         "label": "Unreal Engine"
       },
       {
-        "@id": "urn:ngm:class:blender",
+        "@id": "urn:ngm:class:blender-3d-creation-suite",
         "label": "Blender"
-      },
-      {
-        "@id": "urn:ngm:class:maya",
-        "label": "Maya"
       }
     ]
   },

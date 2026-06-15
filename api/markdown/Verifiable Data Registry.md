@@ -55,59 +55,135 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:did-document", "label": "DID Document"},
-      {"@id": "urn:ngm:class:revocation-list", "label": "Revocation List"}
+      {
+        "@id": "urn:ngm:class:did-document",
+        "label": "DID Document"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:decentralized-identity-ecosystem", "label": "Decentralized Identity Ecosystem"}
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity Ecosystem"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:decentralized-storage", "label": "Decentralized Storage"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:credential-revocation", "label": "Credential Revocation"},
-      {"@id": "urn:ngm:class:did-resolution", "label": "DID Resolution"}
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:credential-revocation",
+        "label": "Credential Revocation"
+      },
+      {
+        "@id": "urn:ngm:class:did-resolution",
+        "label": "DID Resolution"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:w3c-did-specification", "label": "W3C DID Specification"},
-      {"@id": "urn:ngm:class:w3c-verifiable-credentials", "label": "W3C Verifiable Credentials"}
+      {
+        "@id": "urn:ngm:class:w3-c-did-specification",
+        "label": "W3C DID Specification"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-verifiable-credentials",
+        "label": "W3C Verifiable Credentials"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:trust-framework", "label": "Trust Framework"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:w3c", "label": "W3C"},
-      {"@id": "urn:ngm:class:decentralized-identity-foundation", "label": "Decentralized Identity Foundation"}
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identity-foundation",
+        "label": "Decentralized Identity Foundation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:centralized-identity-provider", "label": "Centralized Identity Provider"},
-      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"}
+      {
+        "@id": "urn:ngm:class:centralized-identity-provider",
+        "label": "Centralized Identity Provider"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:metaverse-identity", "label": "Metaverse Identity"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:decentralized-identifier", "label": "Decentralized Identifier"},
-      {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"}
+      {
+        "@id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:did-registry", "label": "DID Registry"},
-    {"@id": "urn:ngm:class:trust-registry", "label": "Trust Registry"}
+    {
+      "@id": "urn:ngm:class:did-registry",
+      "label": "DID Registry"
+    },
+    {
+      "@id": "urn:ngm:class:trust-registry",
+      "label": "Trust Registry"
+    }
   ],
   "quality": 0.72,
   "provenance": {

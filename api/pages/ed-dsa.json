@@ -48,12 +48,8 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public-Key Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:deterministic-signature",
-        "label": "Deterministic Signature"
       }
     ],
     "contrastsWith": [
@@ -66,13 +62,13 @@
         "label": "RSA Signature"
       },
       {
-        "id": "urn:ngm:class:post-quantum-signature",
+        "id": "urn:ngm:class:post-quantum-cryptography",
         "label": "Post-Quantum Signature"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:verifiable-credential",
+        "id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       },
       {

@@ -53,53 +53,107 @@ public:: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:neural-network-text-tokenisation", "label": "Neural Network Text Tokenisation"},
-      {"@id": "urn:ngm:class:subword-tokenisation", "label": "Subword Tokenisation"}
+      {
+        "@id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Neural Network Text Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:subword-tokenisation",
+        "label": "Subword Tokenisation"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:merge-rule", "label": "Merge Rule"},
-      {"@id": "urn:ngm:class:vocabulary", "label": "Vocabulary"}
+      {
+        "@id": "urn:ngm:class:vocabulary",
+        "label": "Vocabulary"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:training-corpus", "label": "Training Corpus"},
-      {"@id": "urn:ngm:class:character-sequence", "label": "Character Sequence"}
+      {
+        "@id": "urn:ngm:class:training-corpus",
+        "label": "Training Corpus"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:text-generation", "label": "Text Generation"},
-      {"@id": "urn:ngm:class:neural-machine-translation", "label": "Neural Machine Translation"},
-      {"@id": "urn:ngm:class:out-of-vocabulary-handling", "label": "Out-of-Vocabulary Handling"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "@id": "urn:ngm:class:neural-machine-translation",
+        "label": "Neural Machine Translation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:frequency-counting", "label": "Frequency Counting"}
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:data-compression", "label": "Data Compression"}
+      {
+        "@id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:multilingual-modelling", "label": "Multilingual Modelling"},
-      {"@id": "urn:ngm:class:low-resource-language-processing", "label": "Low-Resource Language Processing"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Low-Resource Language Processing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:wordpiece", "label": "WordPiece"},
-      {"@id": "urn:ngm:class:sentencepiece", "label": "SentencePiece"},
-      {"@id": "urn:ngm:class:unigram-language-model-tokenisation", "label": "Unigram Language Model Tokenisation"}
+      {
+        "@id": "urn:ngm:class:wordpiece",
+        "label": "WordPiece"
+      },
+      {
+        "@id": "urn:ngm:class:sentencepiece",
+        "label": "SentencePiece"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"},
-      {"@id": "urn:ngm:class:gpt", "label": "GPT"},
-      {"@id": "urn:ngm:class:roberta", "label": "RoBERTa"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      },
+      {
+        "@id": "urn:ngm:class:roberta",
+        "label": "RoBERTa"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:data-compression", "label": "Data Compression"},
-      {"@id": "urn:ngm:class:information-theory", "label": "Information Theory"}
+      {
+        "@id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      },
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:bpe-tokenisation", "label": "BPE Tokenisation"},
-    {"@id": "urn:ngm:class:byte-pair-encoding-algorithm", "label": "Byte Pair Encoding Algorithm"}
+    {
+      "@id": "urn:ngm:class:bpe-tokenisation",
+      "label": "BPE Tokenisation"
+    },
+    {
+      "@id": "urn:ngm:class:byte-pair-encoding-algorithm",
+      "label": "Byte Pair Encoding Algorithm"
+    }
   ],
   "quality": 0.72,
   "provenance": {

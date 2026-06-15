@@ -460,20 +460,8 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:belief-state",
-        "label": "Belief State"
-      },
-      {
-        "@id": "urn:ngm:class:measurement-update-step",
-        "label": "Measurement Update Step"
-      },
-      {
         "@id": "urn:ngm:class:motion-model",
         "label": "Motion Model"
-      },
-      {
-        "@id": "urn:ngm:class:normalisation-constant",
-        "label": "Normalisation Constant"
       },
       {
         "@id": "urn:ngm:class:observation-model",
@@ -484,33 +472,17 @@ public:: true
         "label": "Posterior Distribution"
       },
       {
-        "@id": "urn:ngm:class:prediction-step",
-        "label": "Prediction Step"
-      },
-      {
         "@id": "urn:ngm:class:prior-distribution",
         "label": "Prior Distribution"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:control-inputs",
-        "label": "Control Inputs"
-      },
-      {
-        "@id": "urn:ngm:class:initial-belief",
-        "label": "Initial Belief"
-      },
-      {
-        "@id": "urn:ngm:class:markov-assumption",
-        "label": "Markov Assumption"
-      },
-      {
-        "@id": "urn:ngm:class:probabilistic-motion-model",
+        "@id": "urn:ngm:class:motion-model",
         "label": "Probabilistic Motion Model"
       },
       {
-        "@id": "urn:ngm:class:probabilistic-observation-model",
+        "@id": "urn:ngm:class:observation-model",
         "label": "Probabilistic Observation Model"
       },
       {
@@ -519,14 +491,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:active-perception",
-        "label": "Active Perception"
-      },
-      {
-        "@id": "urn:ngm:class:belief-space-planning",
-        "label": "Belief-Space Planning"
-      },
       {
         "@id": "urn:ngm:class:robot-localisation",
         "label": "Robot Localisation"
@@ -550,19 +514,15 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:bayes-rule",
-        "label": "Bayes Rule"
-      },
-      {
         "@id": "urn:ngm:class:chapman-kolmogorov-equation",
         "label": "Chapman-Kolmogorov Equation"
       },
       {
-        "@id": "urn:ngm:class:recursive-state-estimation",
+        "@id": "urn:ngm:class:state-estimation",
         "label": "Recursive State Estimation"
       },
       {
-        "@id": "urn:ngm:class:sequential-bayesian-updating",
+        "@id": "urn:ngm:class:bayesian-inference",
         "label": "Sequential Bayesian Updating"
       }
     ],
@@ -576,20 +536,12 @@ public:: true
         "label": "Importance Sampling"
       },
       {
-        "@id": "urn:ngm:class:linearisation",
-        "label": "Linearisation"
-      },
-      {
         "@id": "urn:ngm:class:monte-carlo-integration",
         "label": "Monte Carlo Integration"
       },
       {
         "@id": "urn:ngm:class:resampling",
         "label": "Resampling"
-      },
-      {
-        "@id": "urn:ngm:class:sigma-point-sampling",
-        "label": "Sigma-Point Sampling"
       }
     ],
     "relatedTo": [
@@ -602,30 +554,14 @@ public:: true
         "label": "Factor Graph"
       },
       {
-        "@id": "urn:ngm:class:pomdp",
-        "label": "POMDP"
-      },
-      {
-        "@id": "urn:ngm:class:smoothing-and-mapping",
-        "label": "Smoothing And Mapping"
-      },
-      {
         "@id": "urn:ngm:class:variational-inference",
         "label": "Variational Inference"
       }
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:aerospace-guidance-navigation-control",
-        "label": "Aerospace Guidance Navigation Control"
-      },
-      {
         "@id": "urn:ngm:class:autonomous-driving",
         "label": "Autonomous Driving"
-      },
-      {
-        "@id": "urn:ngm:class:drone-autonomy",
-        "label": "Drone Autonomy"
       },
       {
         "@id": "urn:ngm:class:mobile-robotics",
@@ -644,10 +580,6 @@ public:: true
       {
         "@id": "urn:ngm:class:ieee-robotics-and-automation-society",
         "label": "IEEE Robotics And Automation Society"
-      },
-      {
-        "@id": "urn:ngm:class:probabilistic-robotics-textbook",
-        "label": "Probabilistic Robotics Textbook"
       },
       {
         "@id": "urn:ngm:class:ros-navigation-stack",

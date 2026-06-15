@@ -65,10 +65,6 @@ public:: true
       {
         "@id": "urn:ngm:class:trustworthy-ai",
         "label": "Trustworthy AI"
-      },
-      {
-        "@id": "urn:ngm:class:altai",
-        "label": "ALTAI"
       }
     ],
     "requires": [
@@ -87,7 +83,7 @@ public:: true
         "label": "AI Regulation"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
@@ -105,14 +101,8 @@ public:: true
         "label": "Responsible AI"
       },
       {
-        "@id": "urn:ngm:class:ai-transparency",
+        "@id": "urn:ngm:class:ai-transparency-framework",
         "label": "AI Transparency"
-      }
-    ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:european-ai-strategy",
-        "label": "European AI Strategy"
       }
     ],
     "relatedTo": [

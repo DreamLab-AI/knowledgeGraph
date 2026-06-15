@@ -23,59 +23,105 @@ public:: true
   "definition": "Multihash is a self-describing hash format developed by Protocol Labs in which the hash digest is prefixed with a varint-encoded function code and digest length, enabling consumers to identify the hash algorithm without out-of-band knowledge. It is a foundational component of the IPFS content-addressing stack and the Multiformat suite, providing algorithm agility so that systems can upgrade from SHA-256 to SHA3 or BLAKE3 without breaking existing identifiers. Any hash function can be registered in the Multihash table and the format is codec-neutral.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-hash",
+      "label": "Cryptographic Hash"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:content-addressing", "label": "Content Addressing"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:multicodec", "label": "Multicodec"},
-      {"@id": "urn:ngm:class:multiformats", "label": "Multiformats"},
-      {"@id": "urn:ngm:class:content-identifier", "label": "Content Identifier"},
-      {"@id": "urn:ngm:class:varint", "label": "Varint"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:multicodec",
+        "label": "Multicodec"
+      },
+      {
+        "@id": "urn:ngm:class:multiformats",
+        "label": "Multiformats"
+      },
+      {
+        "@id": "urn:ngm:class:content-identifier",
+        "label": "Content Identifier"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:content-addressed-storage", "label": "Content-Addressed Storage"},
-      {"@id": "urn:ngm:class:ipfs", "label": "IPFS"},
-      {"@id": "urn:ngm:class:algorithm-agility", "label": "Algorithm Agility"},
-      {"@id": "urn:ngm:class:peer-identity", "label": "Peer Identity"}
+      {
+        "@id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage"
+      },
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:binary-encoding", "label": "Binary Encoding"},
-      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"}
+      {
+        "@id": "urn:ngm:class:binary-encoding",
+        "label": "Binary Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"},
-      {"@id": "urn:ngm:class:hash-algorithm-upgrade", "label": "Hash Algorithm Upgrade"},
-      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"}
+      {
+        "@id": "urn:ngm:class:cryptographic-verification",
+        "label": "Cryptographic Verification"
+      },
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:multiformats", "label": "Multiformats"},
-      {"@id": "urn:ngm:class:ipld", "label": "IPLD"}
-    ],
-    "requires": [
-      {"@id": "urn:ngm:class:hash-function-registry", "label": "Hash Function Registry"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:self-describing-format", "label": "Self-Describing Format"}
-    ],
-    "dependsOn": [
-      {"@id": "urn:ngm:class:varint-encoding", "label": "Varint Encoding"}
+      {
+        "@id": "urn:ngm:class:multiformats",
+        "label": "Multiformats"
+      },
+      {
+        "@id": "urn:ngm:class:ipld",
+        "label": "IPLD"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:decentralised-identifier", "label": "Decentralised Identifier"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:fixed-length-hash", "label": "Fixed-Length Hash"}
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:protocol-labs", "label": "Protocol Labs"}
+      {
+        "@id": "urn:ngm:class:protocol-labs",
+        "label": "Protocol Labs"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:self-describing-hash", "label": "Self-Describing Hash"}
+    {
+      "@id": "urn:ngm:class:self-describing-hash",
+      "label": "Self-Describing Hash"
+    }
   ],
   "quality": 0.72,
   "provenance": {

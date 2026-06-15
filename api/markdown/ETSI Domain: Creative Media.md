@@ -122,7 +122,7 @@ public:: true
         "label": "3D Content Creation"
       },
       {
-        "@id": "urn:ngm:class:multimedia-authoring",
+        "@id": "urn:ngm:class:authoring-tool",
         "label": "Multimedia Authoring"
       },
       {

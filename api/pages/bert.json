@@ -20,10 +20,6 @@
       {
         "id": "urn:ngm:class:cls-token",
         "label": "CLS Token"
-      },
-      {
-        "id": "urn:ngm:class:sep-token",
-        "label": "SEP Token"
       }
     ],
     "requires": [
@@ -114,11 +110,7 @@
         "label": "Masked Language Modelling"
       },
       {
-        "id": "urn:ngm:class:next-sentence-prediction",
-        "label": "Next Sentence Prediction"
-      },
-      {
-        "id": "urn:ngm:class:wordpiece-tokenisation",
+        "id": "urn:ngm:class:subword-tokenisation",
         "label": "WordPiece Tokenisation"
       }
     ],
@@ -139,10 +131,6 @@
         "label": "mBERT"
       },
       {
-        "id": "urn:ngm:class:distil-bert",
-        "label": "DistilBERT"
-      },
-      {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
       },
@@ -157,10 +145,6 @@
       {
         "id": "urn:ngm:class:glue-benchmark",
         "label": "GLUE Benchmark"
-      },
-      {
-        "id": "urn:ngm:class:squad",
-        "label": "SQuAD"
       }
     ]
   },

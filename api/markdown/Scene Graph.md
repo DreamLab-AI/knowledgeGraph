@@ -158,26 +158,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:camera-node",
-        "label": "Camera Node"
-      },
-      {
-        "@id": "urn:ngm:class:geometry-node",
-        "label": "Geometry Node"
-      },
-      {
-        "@id": "urn:ngm:class:group-node",
-        "label": "Group Node"
-      },
-      {
-        "@id": "urn:ngm:class:scene-node",
-        "label": "Scene Node"
-      },
-      {
-        "@id": "urn:ngm:class:transform-node",
-        "label": "Transform Node"
-      },
-      {
         "@id": "urn:ngm:class:light-node",
         "label": "Light Node"
       }
@@ -200,10 +180,6 @@ public:: true
       {
         "@id": "urn:ngm:class:frustum-culling",
         "label": "Frustum Culling"
-      },
-      {
-        "@id": "urn:ngm:class:scene-rendering",
-        "label": "Scene Rendering"
       },
       {
         "@id": "urn:ngm:class:collision-detection",

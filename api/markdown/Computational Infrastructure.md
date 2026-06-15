@@ -23,57 +23,133 @@ public:: true
   "definition": "Computational infrastructure refers to the ensemble of physical and virtualised hardware resources, networking fabric, storage systems, and supporting services that provide the computational substrate upon which software workloads execute. It encompasses data centres, server clusters, GPUs, networking interconnects, and the orchestration layers that manage resource allocation, scheduling, and fault tolerance. In the context of AI and large-scale distributed systems, computational infrastructure determines the ceiling on model scale, training throughput, and inference latency, making it a strategic bottleneck as much as a technical one.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:compute-resources", "label": "Compute Resources"},
-      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"},
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
-      {"@id": "urn:ngm:class:storage-infrastructure", "label": "Storage Infrastructure"},
-      {"@id": "urn:ngm:class:networking-infrastructure", "label": "Networking Infrastructure"},
-      {"@id": "urn:ngm:class:data-centre", "label": "Data Centre"}
+      {
+        "@id": "urn:ngm:class:compute-resources",
+        "label": "Compute Resources"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:networking-infrastructure",
+        "label": "Networking Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:energy-supply", "label": "Energy Supply"},
-      {"@id": "urn:ngm:class:cooling-systems", "label": "Cooling Systems"},
-      {"@id": "urn:ngm:class:semiconductor-manufacturing", "label": "Semiconductor Manufacturing"}
+      {
+        "@id": "urn:ngm:class:cooling-system",
+        "label": "Cooling Systems"
+      },
+      {
+        "@id": "urn:ngm:class:semiconductor-manufacturing",
+        "label": "Semiconductor Manufacturing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
-      {"@id": "urn:ngm:class:high-performance-computing", "label": "High Performance Computing"},
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High Performance Computing"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"},
-      {"@id": "urn:ngm:class:blockchain-infrastructure", "label": "Blockchain Infrastructure"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:virtualisation", "label": "Virtualisation"},
-      {"@id": "urn:ngm:class:container-orchestration", "label": "Container Orchestration"}
+      {
+        "@id": "urn:ngm:class:virtualisation",
+        "label": "Virtualisation"
+      },
+      {
+        "@id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:hyperscale-computing", "label": "Hyperscale Computing"}
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:hyperscale-computing",
+        "label": "Hyperscale Computing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:edge-infrastructure", "label": "Edge Infrastructure"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:compute-layer", "label": "Compute Layer"},
-      {"@id": "urn:ngm:class:computing-infrastructure", "label": "Computing Infrastructure"},
-      {"@id": "urn:ngm:class:resource-scheduling", "label": "Resource Scheduling"}
+      {
+        "@id": "urn:ngm:class:compute-layer",
+        "label": "Compute Layer"
+      },
+      {
+        "@id": "urn:ngm:class:computing-infrastructure",
+        "label": "Computing Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:resource-scheduling",
+        "label": "Resource Scheduling"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:computing-infrastructure", "label": "Computing Infrastructure"}
+    {
+      "@id": "urn:ngm:class:computing-infrastructure",
+      "label": "Computing Infrastructure"
+    }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

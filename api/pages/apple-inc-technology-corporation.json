@@ -18,24 +18,12 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:apple-silicon",
-        "label": "Apple Silicon"
-      },
-      {
         "id": "urn:ngm:class:ios",
         "label": "iOS"
       },
       {
-        "id": "urn:ngm:class:macos",
-        "label": "macOS"
-      },
-      {
         "id": "urn:ngm:class:visionos",
         "label": "visionOS"
-      },
-      {
-        "id": "urn:ngm:class:app-store",
-        "label": "App Store"
       }
     ],
     "requires": [],
@@ -51,34 +39,26 @@
       {
         "id": "urn:ngm:class:on-device-machine-learning",
         "label": "On-Device Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:private-cloud-compute",
-        "label": "Private Cloud Compute"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:arm-architecture",
-        "label": "ARM Architecture"
-      },
-      {
         "id": "urn:ngm:class:secure-enclave",
         "label": "Secure Enclave"
       },
       {
-        "id": "urn:ngm:class:neural-engine",
+        "id": "urn:ngm:class:neural-processing-unit",
         "label": "Neural Engine"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:microsoft-corporation",
+        "id": "urn:ngm:class:microsoft",
         "label": "Microsoft Corporation"
       },
       {
-        "id": "urn:ngm:class:google-llc",
+        "id": "urn:ngm:class:google-ai-technology-corporation",
         "label": "Google LLC"
       },
       {
@@ -106,11 +86,7 @@
         "label": "Hardware Acceleration"
       },
       {
-        "id": "urn:ngm:class:unified-memory-architecture",
-        "label": "Unified Memory Architecture"
-      },
-      {
-        "id": "urn:ngm:class:llvm-compiler-infrastructure",
+        "id": "urn:ngm:class:compiler",
         "label": "LLVM Compiler Infrastructure"
       }
     ],

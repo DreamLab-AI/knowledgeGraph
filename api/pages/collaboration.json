@@ -108,22 +108,14 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:team-formation",
-        "label": "Team Formation"
-      },
-      {
         "id": "urn:ngm:class:organisational-learning",
         "label": "Organisational Learning"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:ieee-institute-of-electrical-and-electronics-engineers",
+        "id": "urn:ngm:class:ieee",
         "label": "IEEE (Institute of Electrical and Electronics Engineers)"
-      },
-      {
-        "id": "urn:ngm:class:w3c-world-wide-web-consortium",
-        "label": "W3C (World Wide Web Consortium)"
       }
     ],
     "partOf": [],

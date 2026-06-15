@@ -62,46 +62,111 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:batch-size", "label": "Batch Size"},
-      {"@id": "urn:ngm:class:mini-batch", "label": "Mini-Batch"},
-      {"@id": "urn:ngm:class:training-iteration", "label": "Training Iteration"}
+      {
+        "@id": "urn:ngm:class:batch-size",
+        "label": "Batch Size"
+      },
+      {
+        "@id": "urn:ngm:class:mini-batch",
+        "label": "Mini-Batch"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:training-loop", "label": "Training Loop"},
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+      {
+        "@id": "urn:ngm:class:training-loop",
+        "label": "Training Loop"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:training-dataset", "label": "Training Dataset"},
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"}
+      {
+        "@id": "urn:ngm:class:training-dataset",
+        "label": "Training Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-convergence", "label": "Model Convergence"},
-      {"@id": "urn:ngm:class:weight-update", "label": "Weight Update"}
+      {
+        "@id": "urn:ngm:class:convergence",
+        "label": "Model Convergence"
+      },
+      {
+        "@id": "urn:ngm:class:weight-update",
+        "label": "Weight Update"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:hyperparameter", "label": "Hyperparameter"},
-      {"@id": "urn:ngm:class:learning-rate", "label": "Learning Rate"},
-      {"@id": "urn:ngm:class:learning-rate-scheduling", "label": "Learning Rate Scheduling"},
-      {"@id": "urn:ngm:class:validation-set", "label": "Validation Set"},
-      {"@id": "urn:ngm:class:underfitting", "label": "Underfitting"}
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter",
+        "label": "Hyperparameter"
+      },
+      {
+        "@id": "urn:ngm:class:learning-rate",
+        "label": "Learning Rate"
+      },
+      {
+        "@id": "urn:ngm:class:learning-rate-schedule",
+        "label": "Learning Rate Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:validation-set",
+        "label": "Validation Set"
+      },
+      {
+        "@id": "urn:ngm:class:underfitting",
+        "label": "Underfitting"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"},
-      {"@id": "urn:ngm:class:online-learning", "label": "Online Learning"}
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "@id": "urn:ngm:class:online-learning",
+        "label": "Online Learning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:early-stopping", "label": "Early Stopping"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:early-stopping",
+        "label": "Early Stopping"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:training-epoch", "label": "Training Epoch"}
+    {
+      "@id": "urn:ngm:class:training-epoch",
+      "label": "Training Epoch"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

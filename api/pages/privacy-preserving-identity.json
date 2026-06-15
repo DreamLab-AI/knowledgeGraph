@@ -23,7 +23,7 @@
         "label": "Cryptographic Commitment"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -65,7 +65,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:w3c-verifiable-credentials",
+        "id": "urn:ngm:class:w3-c-verifiable-credentials",
         "label": "W3C Verifiable Credentials"
       },
       {
@@ -73,7 +73,7 @@
         "label": "SD-JWT"
       },
       {
-        "id": "urn:ngm:class:eidas-2",
+        "id": "urn:ngm:class:e-idas-2-0",
         "label": "eIDAS 2.0"
       }
     ],
@@ -115,7 +115,7 @@
         "label": "Decentralized Identifiers"
       },
       {
-        "id": "urn:ngm:class:bbs-plus-signatures",
+        "id": "urn:ngm:class:bbs-signatures",
         "label": "BBS+ Signatures"
       },
       {

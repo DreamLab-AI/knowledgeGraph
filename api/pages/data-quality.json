@@ -18,14 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:data-profiling",
-        "label": "Data Profiling"
-      },
-      {
-        "id": "urn:ngm:class:data-cleansing",
-        "label": "Data Cleansing"
-      },
-      {
         "id": "urn:ngm:class:data-validation",
         "label": "Data Validation"
       },
@@ -42,10 +34,6 @@
       {
         "id": "urn:ngm:class:metadata-management",
         "label": "Metadata Management"
-      },
-      {
-        "id": "urn:ngm:class:data-cataloguing",
-        "label": "Data Cataloguing"
       }
     ],
     "enables": [
@@ -68,21 +56,12 @@
         "label": "Data Integration"
       },
       {
-        "id": "urn:ngm:class:etl",
+        "id": "urn:ngm:class:etl-pipeline",
         "label": "ETL"
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:data-debt",
-        "label": "Data Debt"
-      },
-      {
-        "id": "urn:ngm:class:dark-data",
-        "label": "Dark Data"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:machine-learning",

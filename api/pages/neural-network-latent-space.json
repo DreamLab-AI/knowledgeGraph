@@ -18,20 +18,12 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:latent-vector",
-        "label": "Latent Vector"
-      },
-      {
-        "id": "urn:ngm:class:encoder-network",
+        "id": "urn:ngm:class:encoder",
         "label": "Encoder Network"
       },
       {
         "id": "urn:ngm:class:decoder-network",
         "label": "Decoder Network"
-      },
-      {
-        "id": "urn:ngm:class:latent-code",
-        "label": "Latent Code"
       }
     ],
     "requires": [
@@ -96,17 +88,13 @@
         "label": "Symbolic AI"
       },
       {
-        "id": "urn:ngm:class:explicit-knowledge-representation",
+        "id": "urn:ngm:class:knowledge-representation",
         "label": "Explicit Knowledge Representation"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:spatial-data-representation",
-        "label": "Spatial Data Representation"
-      },
-      {
-        "id": "urn:ngm:class:3d-scene-understanding",
+        "id": "urn:ngm:class:scene-understanding",
         "label": "3D Scene Understanding"
       }
     ],
@@ -138,16 +126,12 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:semantic-embedding",
+        "id": "urn:ngm:class:embedding",
         "label": "Semantic Embedding"
       },
       {
         "id": "urn:ngm:class:principal-component-analysis",
         "label": "Principal Component Analysis"
-      },
-      {
-        "id": "urn:ngm:class:manifold-hypothesis",
-        "label": "Manifold Hypothesis"
       }
     ]
   },

@@ -168,58 +168,143 @@ alias:: AutonomousRobot
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:sensors", "label": "Sensors"},
-      {"@id": "urn:ngm:class:actuators", "label": "Actuators"},
-      {"@id": "urn:ngm:class:processing-units", "label": "Processing Units"},
-      {"@id": "urn:ngm:class:obstacle-avoidance", "label": "Obstacle Avoidance"}
+      {
+        "@id": "urn:ngm:class:sensors",
+        "label": "Sensors"
+      },
+      {
+        "@id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      },
+      {
+        "@id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:real-time-control", "label": "Real-Time Control"},
-      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      },
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:robot-perception", "label": "Robot Perception"}
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:robot-perception",
+        "label": "Robot Perception"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:warehouse-automation", "label": "Warehouse Automation"},
-      {"@id": "urn:ngm:class:autonomous-delivery", "label": "Autonomous Delivery"}
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-delivery",
+        "label": "Autonomous Delivery"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:simultaneous-localization-and-mapping", "label": "Simultaneous Localization and Mapping"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localization and Mapping"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:ai-system", "label": "AI System"},
-      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"}
+      {
+        "@id": "urn:ngm:class:ai-system",
+        "label": "AI System"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"}
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:teleoperated-robot", "label": "Teleoperated Robot"},
-      {"@id": "urn:ngm:class:remote-controlled-vehicle", "label": "Remote-Controlled Vehicle"}
+      {
+        "@id": "urn:ngm:class:teleoperated-robot",
+        "label": "Teleoperated Robot"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:blockchain-identity", "label": "Blockchain Identity"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-identity",
+        "label": "Blockchain Identity"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:robot-learning", "label": "Robot Learning"},
-      {"@id": "urn:ngm:class:swarm-robotics", "label": "Swarm Robotics"}
+      {
+        "@id": "urn:ngm:class:robot-learning",
+        "label": "Robot Learning"
+      },
+      {
+        "@id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:autonomous-robotic-system", "label": "Autonomous Robotic System"},
-    {"@id": "urn:ngm:class:self-navigating-robot", "label": "Self-Navigating Robot"}
+    {
+      "@id": "urn:ngm:class:autonomous-robotic-system",
+      "label": "Autonomous Robotic System"
+    },
+    {
+      "@id": "urn:ngm:class:self-navigating-robot",
+      "label": "Self-Navigating Robot"
+    }
   ],
   "quality": 0.72,
   "provenance": {

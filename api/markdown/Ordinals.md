@@ -75,7 +75,7 @@ public:: true
         "label": "UTXO"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-script",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
         "label": "Bitcoin Script"
       },
       {
@@ -87,24 +87,12 @@ public:: true
       {
         "@id": "urn:ngm:class:brc-20",
         "label": "BRC-20"
-      },
-      {
-        "@id": "urn:ngm:class:bitcoin-nft",
-        "label": "Bitcoin NFT"
-      },
-      {
-        "@id": "urn:ngm:class:digital-artifact",
-        "label": "Digital Artifact"
       }
     ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:inscription",
         "label": "Inscription"
-      },
-      {
-        "@id": "urn:ngm:class:satoshi-numbering",
-        "label": "Satoshi Numbering"
       }
     ],
     "partOf": [
@@ -119,10 +107,6 @@ public:: true
         "label": "Witness Data"
       },
       {
-        "@id": "urn:ngm:class:first-in-first-out",
-        "label": "First-In-First-Out"
-      },
-      {
         "@id": "urn:ngm:class:content-addressing",
         "label": "Content Addressing"
       }
@@ -133,15 +117,11 @@ public:: true
         "label": "SegWit"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-blockchain",
+        "@id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin Blockchain"
       }
     ],
     "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:ethereum-nft",
-        "label": "Ethereum NFT"
-      },
       {
         "@id": "urn:ngm:class:fungible-token",
         "label": "Fungible Token"

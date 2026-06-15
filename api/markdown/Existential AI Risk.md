@@ -58,47 +58,109 @@ public:: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:global-catastrophic-risk", "label": "Global Catastrophic Risk"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:global-catastrophic-risk",
+        "label": "Global Catastrophic Risk"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:interpretability", "label": "Interpretability"}
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-safety-research", "label": "AI Safety Research"},
-      {"@id": "urn:ngm:class:frontier-model-regulation", "label": "Frontier Model Regulation"}
+      {
+        "@id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "@id": "urn:ngm:class:frontier-model-regulation",
+        "label": "Frontier Model Regulation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:transformative-ai", "label": "Transformative AI"},
-      {"@id": "urn:ngm:class:instrumental-convergence", "label": "Instrumental Convergence"},
-      {"@id": "urn:ngm:class:capability-overhang", "label": "Capability Overhang"}
+      {
+        "@id": "urn:ngm:class:transformative-ai",
+        "label": "Transformative AI"
+      },
+      {
+        "@id": "urn:ngm:class:instrumental-convergence",
+        "label": "Instrumental Convergence"
+      },
+      {
+        "@id": "urn:ngm:class:capability-overhang",
+        "label": "Capability Overhang"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ai-misuse-risk", "label": "AI Misuse Risk"},
-      {"@id": "urn:ngm:class:near-term-ai-harm", "label": "Near-Term AI Harm"},
-      {"@id": "urn:ngm:class:ai-bias", "label": "AI Bias"}
+      {
+        "@id": "urn:ngm:class:ai-bias",
+        "label": "AI Bias"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:value-alignment-problem", "label": "Value Alignment Problem"},
-      {"@id": "urn:ngm:class:corrigibility", "label": "Corrigibility"},
-      {"@id": "urn:ngm:class:superintelligence", "label": "Superintelligence"},
-      {"@id": "urn:ngm:class:power-seeking-behaviour", "label": "Power-Seeking Behaviour"},
-      {"@id": "urn:ngm:class:reward-hacking", "label": "Reward Hacking"},
-      {"@id": "urn:ngm:class:mesa-optimisation", "label": "Mesa-Optimisation"},
-      {"@id": "urn:ngm:class:ai-control-problem", "label": "AI Control Problem"}
+      {
+        "@id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment Problem"
+      },
+      {
+        "@id": "urn:ngm:class:corrigibility",
+        "label": "Corrigibility"
+      },
+      {
+        "@id": "urn:ngm:class:superintelligence",
+        "label": "Superintelligence"
+      },
+      {
+        "@id": "urn:ngm:class:reward-hacking",
+        "label": "Reward Hacking"
+      },
+      {
+        "@id": "urn:ngm:class:mesa-optimisation",
+        "label": "Mesa-Optimisation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:biosecurity", "label": "Biosecurity"},
-      {"@id": "urn:ngm:class:nuclear-risk", "label": "Nuclear Risk"},
-      {"@id": "urn:ngm:class:international-treaty", "label": "International Treaty"},
-      {"@id": "urn:ngm:class:compute-governance", "label": "Compute Governance"}
+      {
+        "@id": "urn:ngm:class:biosecurity",
+        "label": "Biosecurity"
+      },
+      {
+        "@id": "urn:ngm:class:nuclear-risk",
+        "label": "Nuclear Risk"
+      },
+      {
+        "@id": "urn:ngm:class:international-treaty",
+        "label": "International Treaty"
+      },
+      {
+        "@id": "urn:ngm:class:compute-governance",
+        "label": "Compute Governance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:catastrophic-ai-risk", "label": "Catastrophic AI Risk"},
-    {"@id": "urn:ngm:class:transformative-ai-risk", "label": "Transformative AI Risk"}
+    {
+      "@id": "urn:ngm:class:catastrophic-ai-risk",
+      "label": "Catastrophic AI Risk"
+    },
+    {
+      "@id": "urn:ngm:class:transformative-ai-risk",
+      "label": "Transformative AI Risk"
+    }
   ],
   "quality": 0.74,
   "provenance": {

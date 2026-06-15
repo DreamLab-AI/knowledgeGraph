@@ -107,10 +107,6 @@ public:: true
         "label": "Liquidity Pool"
       },
       {
-        "@id": "urn:ngm:class:superfluid-staking",
-        "label": "Superfluid Staking"
-      },
-      {
         "@id": "urn:ngm:class:governance-token",
         "label": "Governance Token"
       }
@@ -119,10 +115,6 @@ public:: true
       {
         "@id": "urn:ngm:class:cosmos",
         "label": "Cosmos"
-      },
-      {
-        "@id": "urn:ngm:class:interchain-ecosystem",
-        "label": "Interchain Ecosystem"
       }
     ],
     "uses": [
@@ -141,7 +133,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:token-swap",
+        "@id": "urn:ngm:class:token-swapping",
         "label": "Token Swap"
       },
       {

@@ -339,8 +339,8 @@ alias:: BC-0486-regulatory-reporting
   "relations": {
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:financial-services",
-        "label": "Financial Services"
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
       }
     ],
     "hasPart": [
@@ -353,14 +353,6 @@ alias:: BC-0486-regulatory-reporting
         "label": "LEI System"
       },
       {
-        "@id": "urn:ngm:class:prudential-reporting",
-        "label": "Prudential Reporting"
-      },
-      {
-        "@id": "urn:ngm:class:regulatory-data-model",
-        "label": "Regulatory Data Model"
-      },
-      {
         "@id": "urn:ngm:class:suspicious-activity-reports",
         "label": "Suspicious Activity Reports"
       },
@@ -369,7 +361,7 @@ alias:: BC-0486-regulatory-reporting
         "label": "Transaction Reporting"
       },
       {
-        "@id": "urn:ngm:class:xbrl-taxonomy",
+        "@id": "urn:ngm:class:xbrl",
         "label": "XBRL Taxonomy"
       }
     ],
@@ -401,7 +393,7 @@ alias:: BC-0486-regulatory-reporting
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:cross-border-data-sharing",
+        "@id": "urn:ngm:class:cross-border-data-transfer",
         "label": "Cross-Border Data Sharing"
       },
       {
@@ -415,10 +407,6 @@ alias:: BC-0486-regulatory-reporting
       {
         "@id": "urn:ngm:class:prudential-capital-oversight",
         "label": "Prudential Capital Oversight"
-      },
-      {
-        "@id": "urn:ngm:class:supervisory-analytics",
-        "label": "Supervisory Analytics"
       },
       {
         "@id": "urn:ngm:class:systemic-risk-monitoring",
@@ -565,12 +553,6 @@ alias:: BC-0486-regulatory-reporting
       {
         "@id": "urn:ngm:class:sec",
         "label": "SEC"
-      }
-    ],
-    "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:control-system",
-        "label": "Control System"
       }
     ]
   },

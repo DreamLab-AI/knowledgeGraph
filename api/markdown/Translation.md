@@ -342,20 +342,12 @@ public:: true
         "label": "Beam Search"
       },
       {
-        "@id": "urn:ngm:class:bpe-vocabulary",
-        "label": "BPE Vocabulary"
-      },
-      {
         "@id": "urn:ngm:class:language-model",
         "label": "Language Model"
       },
       {
         "@id": "urn:ngm:class:parallel-corpus",
         "label": "Parallel Corpus"
-      },
-      {
-        "@id": "urn:ngm:class:quality-estimation",
-        "label": "Quality Estimation"
       },
       {
         "@id": "urn:ngm:class:tokeniser",
@@ -376,23 +368,15 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:bilingual-evaluation-data",
-        "label": "Bilingual Evaluation Data"
-      },
-      {
         "@id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
       },
       {
-        "@id": "urn:ngm:class:language-pair-coverage",
-        "label": "Language Pair Coverage"
-      },
-      {
-        "@id": "urn:ngm:class:parallel-corpora",
+        "@id": "urn:ngm:class:parallel-corpus",
         "label": "Parallel Corpora"
       },
       {
-        "@id": "urn:ngm:class:subword-segmentation",
+        "@id": "urn:ngm:class:subword-tokenisation",
         "label": "Subword Segmentation"
       },
       {
@@ -402,24 +386,12 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:cross-lingual-information-retrieval",
-        "label": "Cross-Lingual Information Retrieval"
-      },
-      {
-        "@id": "urn:ngm:class:global-content-delivery",
+        "@id": "urn:ngm:class:content-delivery",
         "label": "Global Content Delivery"
       },
       {
         "@id": "urn:ngm:class:localisation",
         "label": "Localisation"
-      },
-      {
-        "@id": "urn:ngm:class:low-resource-language-preservation",
-        "label": "Low-Resource Language Preservation"
-      },
-      {
-        "@id": "urn:ngm:class:multilingual-communication",
-        "label": "Multilingual Communication"
       },
       {
         "@id": "urn:ngm:class:real-time-interpretation",
@@ -470,11 +442,7 @@ public:: true
         "label": "COMET Metric"
       },
       {
-        "@id": "urn:ngm:class:human-post-editing",
-        "label": "Human Post-Editing"
-      },
-      {
-        "@id": "urn:ngm:class:monolingual-data-augmentation",
+        "@id": "urn:ngm:class:data-augmentation",
         "label": "Monolingual Data Augmentation"
       },
       {
@@ -488,7 +456,7 @@ public:: true
         "label": "Natural Language Understanding"
       },
       {
-        "@id": "urn:ngm:class:summarisation",
+        "@id": "urn:ngm:class:text-summarisation",
         "label": "Summarisation"
       },
       {
@@ -510,24 +478,8 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:cross-border-commerce",
-        "label": "Cross-Border Commerce"
-      },
-      {
-        "@id": "urn:ngm:class:diplomatic-communication",
-        "label": "Diplomatic Communication"
-      },
-      {
-        "@id": "urn:ngm:class:healthcare-communication",
-        "label": "Healthcare Communication"
-      },
-      {
         "@id": "urn:ngm:class:localisation",
         "label": "Localisation"
-      },
-      {
-        "@id": "urn:ngm:class:scientific-publishing",
-        "label": "Scientific Publishing"
       },
       {
         "@id": "urn:ngm:class:accessibility",
@@ -536,24 +488,12 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:comet-benchmark",
+        "@id": "urn:ngm:class:comet-metric",
         "label": "COMET Benchmark"
-      },
-      {
-        "@id": "urn:ngm:class:flores-200-evaluation-set",
-        "label": "FLORES-200 Evaluation Set"
       },
       {
         "@id": "urn:ngm:class:iso-639-language-codes",
         "label": "ISO 639 Language Codes"
-      },
-      {
-        "@id": "urn:ngm:class:iwslt",
-        "label": "IWSLT"
-      },
-      {
-        "@id": "urn:ngm:class:wmt-shared-tasks",
-        "label": "WMT Shared Tasks"
       }
     ]
   },

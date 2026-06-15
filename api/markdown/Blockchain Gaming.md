@@ -58,15 +58,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:play-to-earn",
+        "@id": "urn:ngm:class:play-to-earn-p2-e",
         "label": "Play-to-Earn"
       },
       {
-        "@id": "urn:ngm:class:in-game-economy",
-        "label": "In-Game Economy"
-      },
-      {
-        "@id": "urn:ngm:class:game-asset-marketplace",
+        "@id": "urn:ngm:class:game-asset-generation",
         "label": "Game Asset Marketplace"
       }
     ],
@@ -94,7 +90,7 @@ public:: true
         "label": "Virtual Currency"
       },
       {
-        "@id": "urn:ngm:class:cross-game-asset-portability",
+        "@id": "urn:ngm:class:asset-portability",
         "label": "Cross-Game Asset Portability"
       }
     ],
@@ -130,18 +126,14 @@ public:: true
         "label": "Decentralised Autonomous Organisation"
       },
       {
-        "@id": "urn:ngm:class:game-token",
+        "@id": "urn:ngm:class:token",
         "label": "Game Token"
       }
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:traditional-gaming",
+        "@id": "urn:ngm:class:gaming",
         "label": "Traditional Gaming"
-      },
-      {
-        "@id": "urn:ngm:class:centralised-game-server",
-        "label": "Centralised Game Server"
       }
     ],
     "bridgesTo": [

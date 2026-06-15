@@ -118,14 +118,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:load-distribution-service",
-        "label": "Load Distribution Service"
-      },
-      {
-        "@id": "urn:ngm:class:network-management-system",
-        "label": "Network Management System"
-      },
-      {
         "@id": "urn:ngm:class:orchestration-layer",
         "label": "Orchestration Layer"
       },
@@ -135,10 +127,6 @@ public:: true
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:connectivity-fabric",
-        "label": "Connectivity Fabric"
-      },
       {
         "@id": "urn:ngm:class:coordination-protocol",
         "label": "Coordination Protocol"
@@ -154,16 +142,12 @@ public:: true
         "label": "Bandwidth Optimization"
       },
       {
-        "@id": "urn:ngm:class:distributed-processing",
+        "@id": "urn:ngm:class:distributed-computing",
         "label": "Distributed Processing"
       },
       {
         "@id": "urn:ngm:class:latency-reduction",
         "label": "Latency Reduction"
-      },
-      {
-        "@id": "urn:ngm:class:regional-compute",
-        "label": "Regional Compute"
       }
     ]
   },

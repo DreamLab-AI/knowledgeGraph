@@ -18,16 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:ghg-inventory-management",
-        "label": "GHG Inventory Management"
-      },
-      {
-        "id": "urn:ngm:class:carbon-project-accounting",
+        "id": "urn:ngm:class:carbon-accounting",
         "label": "Carbon Project Accounting"
-      },
-      {
-        "id": "urn:ngm:class:ghg-verification-bodies",
-        "label": "GHG Verification Bodies"
       }
     ],
     "requires": [
@@ -62,7 +54,7 @@
         "label": "Corporate Sustainability Reporting"
       },
       {
-        "id": "urn:ngm:class:voluntary-carbon-markets",
+        "id": "urn:ngm:class:voluntary-carbon-market",
         "label": "Voluntary Carbon Markets"
       }
     ],
@@ -76,10 +68,6 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:carbon-tokenisation",
-        "label": "Carbon Tokenisation"
-      },
-      {
         "id": "urn:ngm:class:smart-contracts",
         "label": "Smart Contracts"
       }
@@ -88,24 +76,11 @@
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:international-organisation-for-standardisation",
-        "label": "International Organisation for Standardisation"
-      },
-      {
         "id": "urn:ngm:class:environmental-standards",
         "label": "Environmental Standards"
       }
     ],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:iso-14000-series",
-        "label": "ISO 14000 Series"
-      },
-      {
-        "id": "urn:ngm:class:climate-governance-frameworks",
-        "label": "Climate Governance Frameworks"
-      }
-    ],
+    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:ghg-protocol",

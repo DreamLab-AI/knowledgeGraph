@@ -84,20 +84,6 @@ public:: true
       {
         "@id": "urn:ngm:class:type-system",
         "label": "Type System"
-      },
-      {
-        "@id": "urn:ngm:class:syntax",
-        "label": "Syntax"
-      },
-      {
-        "@id": "urn:ngm:class:standard-library",
-        "label": "Standard Library"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:software-development-ecosystem",
-        "label": "Software Development Ecosystem"
       }
     ],
     "requires": [
@@ -120,7 +106,7 @@ public:: true
         "label": "Natural Language Processing"
       },
       {
-        "@id": "urn:ngm:class:algorithm-implementation",
+        "@id": "urn:ngm:class:algorithm",
         "label": "Algorithm Implementation"
       },
       {
@@ -142,10 +128,6 @@ public:: true
       {
         "@id": "urn:ngm:class:programming-paradigm",
         "label": "Programming Paradigm"
-      },
-      {
-        "@id": "urn:ngm:class:language-specification",
-        "label": "Language Specification"
       }
     ],
     "uses": [
@@ -170,32 +152,14 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:iso-standard",
+        "@id": "urn:ngm:class:iso-standards",
         "label": "ISO Standard"
-      },
-      {
-        "@id": "urn:ngm:class:language-standards-committee",
-        "label": "Language Standards Committee"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:domain-specific-language",
-        "label": "Domain-Specific Language"
-      },
-      {
-        "@id": "urn:ngm:class:assembly-language",
-        "label": "Assembly Language"
       }
     ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
-      },
-      {
-        "@id": "urn:ngm:class:query-language",
-        "label": "Query Language"
       }
     ],
     "relatedTo": [
@@ -214,10 +178,6 @@ public:: true
       {
         "@id": "urn:ngm:class:compiler-optimization",
         "label": "Compiler Optimization"
-      },
-      {
-        "@id": "urn:ngm:class:python-ecosystem",
-        "label": "Python Ecosystem"
       }
     ]
   }

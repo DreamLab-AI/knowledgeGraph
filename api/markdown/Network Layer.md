@@ -109,14 +109,6 @@ alias:: NetworkLayer
         "label": "Protocol Stack"
       },
       {
-        "@id": "urn:ngm:class:qo-s-manager",
-        "label": "QoS Manager"
-      },
-      {
-        "@id": "urn:ngm:class:routing-engine",
-        "label": "Routing Engine"
-      },
-      {
         "@id": "urn:ngm:class:network-topology",
         "label": "Network Topology"
       },
@@ -151,29 +143,17 @@ alias:: NetworkLayer
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:bandwidth-allocation",
-        "label": "Bandwidth Allocation"
-      },
-      {
         "@id": "urn:ngm:class:latency-management",
         "label": "Latency Management"
       },
       {
-        "@id": "urn:ngm:class:message-delivery",
-        "label": "Message Delivery"
-      },
-      {
         "@id": "urn:ngm:class:network-resilience",
         "label": "Network Resilience"
-      },
-      {
-        "@id": "urn:ngm:class:multipath-routing",
-        "label": "Multipath Routing"
       }
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:infrastructure-layer",
+        "@id": "urn:ngm:class:infrastructure",
         "label": "Infrastructure Layer"
       },
       {
@@ -185,10 +165,6 @@ alias:: NetworkLayer
       {
         "@id": "urn:ngm:class:internet-protocol",
         "label": "Internet Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:icmp",
-        "label": "ICMP"
       }
     ],
     "supports": [

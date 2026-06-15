@@ -174,37 +174,17 @@ public:: true
         "label": "Event Emission"
       },
       {
-        "@id": "urn:ngm:class:event-filtering",
-        "label": "Event Filtering"
-      },
-      {
-        "@id": "urn:ngm:class:event-indexing",
-        "label": "Event Indexing"
-      },
-      {
-        "@id": "urn:ngm:class:event-subscription",
-        "label": "Event Subscription"
-      },
-      {
         "@id": "urn:ngm:class:real-time-streaming",
         "label": "Real-Time Streaming"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:activity-streams-vocabulary",
-        "label": "ActivityStreams Vocabulary"
-      },
-      {
-        "@id": "urn:ngm:class:event-schemas",
-        "label": "Event Schemas"
-      },
-      {
         "@id": "urn:ngm:class:json-data-interchange-format-ld-1-1",
         "label": "JSON-LD 1.1"
       },
       {
-        "@id": "urn:ngm:class:web-socket-support",
+        "@id": "urn:ngm:class:web-socket",
         "label": "WebSocket Support"
       }
     ],
@@ -214,34 +194,14 @@ public:: true
         "label": "Anomaly Detection"
       },
       {
-        "@id": "urn:ngm:class:automated-alerting",
-        "label": "Automated Alerting"
-      },
-      {
-        "@id": "urn:ngm:class:fleet-observability",
-        "label": "Fleet Observability"
-      },
-      {
         "@id": "urn:ngm:class:real-time-monitoring",
         "label": "Real-Time Monitoring"
-      },
-      {
-        "@id": "urn:ngm:class:work-tracking",
-        "label": "Work Tracking"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:activity-streams-2-0",
-        "label": "ActivityStreams 2.0"
-      },
-      {
         "@id": "urn:ngm:class:json-data-interchange-format-ld-1-1",
         "label": "JSON-LD 1.1"
-      },
-      {
-        "@id": "urn:ngm:class:w3-c-event-streams",
-        "label": "W3C Event Streams"
       }
     ]
   },

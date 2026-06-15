@@ -53,48 +53,115 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:knowledge-base", "label": "Knowledge Base"},
-      {"@id": "urn:ngm:class:document-repository", "label": "Document Repository"},
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
+      {
+        "@id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-sharing", "label": "Knowledge Sharing"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:organisational-learning", "label": "Organisational Learning"},
-      {"@id": "urn:ngm:class:decision-support-system", "label": "Decision Support System"}
+      {
+        "@id": "urn:ngm:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:organisational-learning",
+        "label": "Organisational Learning"
+      },
+      {
+        "@id": "urn:ngm:class:decision-support",
+        "label": "Decision Support System"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:taxonomy", "label": "Taxonomy"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:taxonomy",
+        "label": "Taxonomy"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:collaborative-authoring", "label": "Collaborative Authoring"},
-      {"@id": "urn:ngm:class:content-management-system", "label": "Content Management System"}
+      {
+        "@id": "urn:ngm:class:content-management-system",
+        "label": "Content Management System"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:database-management-system", "label": "Database Management System"},
-      {"@id": "urn:ngm:class:document-management-system", "label": "Document Management System"}
+      {
+        "@id": "urn:ngm:class:database-management-system",
+        "label": "Database Management System"
+      },
+      {
+        "@id": "urn:ngm:class:document-management-system",
+        "label": "Document Management System"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:enterprise-architecture", "label": "Enterprise Architecture"},
-      {"@id": "urn:ngm:class:learning-management-system", "label": "Learning Management System"}
+      {
+        "@id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:enterprise-knowledge-platform", "label": "Enterprise Knowledge Platform"},
-    {"@id": "urn:ngm:class:knowledge-portal", "label": "Knowledge Portal"}
+    {
+      "@id": "urn:ngm:class:enterprise-knowledge-platform",
+      "label": "Enterprise Knowledge Platform"
+    },
+    {
+      "@id": "urn:ngm:class:knowledge-portal",
+      "label": "Knowledge Portal"
+    }
   ],
   "quality": 0.73,
   "provenance": {

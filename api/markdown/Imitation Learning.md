@@ -467,11 +467,11 @@ alias:: ImitationLearning
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:action-decoder",
+        "@id": "urn:ngm:class:decoder",
         "label": "Action Decoder"
       },
       {
-        "@id": "urn:ngm:class:demonstration-dataset",
+        "@id": "urn:ngm:class:training-dataset",
         "label": "Demonstration Dataset"
       },
       {
@@ -479,11 +479,11 @@ alias:: ImitationLearning
         "label": "Discriminator"
       },
       {
-        "@id": "urn:ngm:class:expert-demonstration",
+        "@id": "urn:ngm:class:learning-from-demonstration",
         "label": "Expert Demonstration"
       },
       {
-        "@id": "urn:ngm:class:observation-encoder",
+        "@id": "urn:ngm:class:encoder",
         "label": "Observation Encoder"
       },
       {
@@ -491,7 +491,7 @@ alias:: ImitationLearning
         "label": "Policy Network"
       },
       {
-        "@id": "urn:ngm:class:teleoperation-interface",
+        "@id": "urn:ngm:class:teleoperation",
         "label": "Teleoperation Interface"
       }
     ],
@@ -501,24 +501,12 @@ alias:: ImitationLearning
         "label": "Action Space"
       },
       {
-        "@id": "urn:ngm:class:demonstrator",
-        "label": "Demonstrator"
-      },
-      {
-        "@id": "urn:ngm:class:expert-trajectories",
-        "label": "Expert Trajectories"
-      },
-      {
         "@id": "urn:ngm:class:function-approximator",
         "label": "Function Approximator"
       },
       {
         "@id": "urn:ngm:class:observation-space",
         "label": "Observation Space"
-      },
-      {
-        "@id": "urn:ngm:class:state-action-pairs",
-        "label": "State Action Pairs"
       },
       {
         "@id": "urn:ngm:class:loss-function",
@@ -531,20 +519,8 @@ alias:: ImitationLearning
         "label": "Cross-Embodiment Transfer"
       },
       {
-        "@id": "urn:ngm:class:generalist-robot-policies",
-        "label": "Generalist Robot Policies"
-      },
-      {
-        "@id": "urn:ngm:class:rapid-task-specification",
-        "label": "Rapid Task Specification"
-      },
-      {
         "@id": "urn:ngm:class:reward-free-learning",
         "label": "Reward-Free Learning"
-      },
-      {
-        "@id": "urn:ngm:class:sample-efficient-robotics",
-        "label": "Sample-Efficient Robotics"
       },
       {
         "@id": "urn:ngm:class:skill-transfer",
@@ -557,20 +533,12 @@ alias:: ImitationLearning
         "label": "Action Chunking Transformer"
       },
       {
-        "@id": "urn:ngm:class:airl",
-        "label": "AIRL"
-      },
-      {
         "@id": "urn:ngm:class:behavioural-cloning",
         "label": "Behavioural Cloning"
       },
       {
         "@id": "urn:ngm:class:diffusion-policy",
         "label": "Diffusion Policy"
-      },
-      {
-        "@id": "urn:ngm:class:gail",
-        "label": "GAIL"
       },
       {
         "@id": "urn:ngm:class:goal-conditioned-behaviour-cloning",
@@ -595,7 +563,7 @@ alias:: ImitationLearning
         "label": "Neural Network"
       },
       {
-        "@id": "urn:ngm:class:transformer-policies",
+        "@id": "urn:ngm:class:transformer",
         "label": "Transformer Policies"
       },
       {
@@ -651,10 +619,6 @@ alias:: ImitationLearning
         "label": "Dexterous Manipulation"
       },
       {
-        "@id": "urn:ngm:class:drone-acrobatics",
-        "label": "Drone Acrobatics"
-      },
-      {
         "@id": "urn:ngm:class:humanoid-control",
         "label": "Humanoid Control"
       },
@@ -669,28 +633,12 @@ alias:: ImitationLearning
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:calvin",
-        "label": "CALVIN"
-      },
-      {
-        "@id": "urn:ngm:class:droid-dataset",
+        "@id": "urn:ngm:class:training-dataset",
         "label": "DROID Dataset"
-      },
-      {
-        "@id": "urn:ngm:class:libero",
-        "label": "LIBERO"
       },
       {
         "@id": "urn:ngm:class:open-x-embodiment",
         "label": "Open X-Embodiment"
-      },
-      {
-        "@id": "urn:ngm:class:rlbench",
-        "label": "RLBench"
-      },
-      {
-        "@id": "urn:ngm:class:robomimic-benchmark",
-        "label": "Robomimic Benchmark"
       }
     ]
   },

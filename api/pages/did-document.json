@@ -24,10 +24,6 @@
       {
         "id": "urn:ngm:class:service-endpoint",
         "label": "Service Endpoint"
-      },
-      {
-        "id": "urn:ngm:class:verification-relationship",
-        "label": "Verification Relationship"
       }
     ],
     "requires": [
@@ -52,10 +48,6 @@
       {
         "id": "urn:ngm:class:decentralised-authentication",
         "label": "Decentralised Authentication"
-      },
-      {
-        "id": "urn:ngm:class:key-agreement-protocol",
-        "label": "Key Agreement Protocol"
       }
     ],
     "dependsOn": [],
@@ -66,7 +58,7 @@
         "label": "X.509 Certificate"
       },
       {
-        "id": "urn:ngm:class:centralised-identity-provider",
+        "id": "urn:ngm:class:centralized-identity-provider",
         "label": "Centralised Identity Provider"
       }
     ],
@@ -82,11 +74,11 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public-Key Cryptography"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
@@ -101,7 +93,7 @@
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:w3c-did-core",
+        "id": "urn:ngm:class:w3-c-did-core",
         "label": "W3C DID Core"
       },
       {

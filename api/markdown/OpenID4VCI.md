@@ -23,55 +23,135 @@ public:: true
   "definition": "OpenID for Verifiable Credential Issuance (OpenID4VCI) is an OpenID Foundation protocol specification that defines a standard API by which an Issuer can deliver W3C Verifiable Credentials to a Holder's digital wallet using OAuth 2.0 and OpenID Connect as the underlying authorisation and identity layer. The protocol specifies credential offer flows, authorisation code and pre-authorised code grant types, credential endpoint interactions, and metadata discovery, enabling interoperable credential issuance across identity wallet implementations and issuing authority systems. It is designed to complement OpenID4VP (Verifiable Presentations) to form a complete self-sovereign identity exchange ecosystem.",
   "domain": "security",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:credential-issuance", "label": "Credential Issuance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:credential-issuance",
+      "label": "Credential Issuance"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:oauth-2-0", "label": "OAuth 2.0"},
-      {"@id": "urn:ngm:class:open-id-connect", "label": "OpenID Connect"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:json-web-token", "label": "JSON Web Token"},
-      {"@id": "urn:ngm:class:sd-jwt", "label": "SD-JWT"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+      {
+        "@id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-web-token",
+        "label": "JSON Web Token"
+      },
+      {
+        "@id": "urn:ngm:class:sd-jwt",
+        "label": "SD-JWT"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-identity-wallet", "label": "Digital Identity Wallet"},
-      {"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"},
-      {"@id": "urn:ngm:class:credential-verification", "label": "Credential Verification"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"}
+      {
+        "@id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "@id": "urn:ngm:class:credential-verification",
+        "label": "Credential Verification"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:decentralized-identifier", "label": "Decentralized Identifier"},
-      {"@id": "urn:ngm:class:credential-issuer-metadata", "label": "Credential Issuer Metadata"},
-      {"@id": "urn:ngm:class:transport-layer-security", "label": "Transport Layer Security"}
+      {
+        "@id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:credential-issuer-metadata",
+        "label": "Credential Issuer Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:credential-format-standard", "label": "Credential Format Standard"},
-      {"@id": "urn:ngm:class:authorization-code-flow", "label": "Authorization Code Flow"}
+      {
+        "@id": "urn:ngm:class:credential-format-standard",
+        "label": "Credential Format Standard"
+      },
+      {
+        "@id": "urn:ngm:class:authorization-code-flow",
+        "label": "Authorization Code Flow"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:eidas-2-0", "label": "eIDAS 2.0"},
-      {"@id": "urn:ngm:class:eudi-wallet", "label": "EUDI Wallet"},
-      {"@id": "urn:ngm:class:iso-mdoc", "label": "ISO mdoc"}
+      {
+        "@id": "urn:ngm:class:e-idas-2-0",
+        "label": "eIDAS 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:eudi-wallet",
+        "label": "EUDI Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:iso-mdoc",
+        "label": "ISO mdoc"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:openid-foundation", "label": "OpenID Foundation"}
+      {
+        "@id": "urn:ngm:class:open-id-foundation",
+        "label": "OpenID Foundation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:didcomm", "label": "DIDComm"}
+      {
+        "@id": "urn:ngm:class:didcomm",
+        "label": "DIDComm"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self-Sovereign Identity"}
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:open-id4-vp", "label": "OpenID4VP"}
+      {
+        "@id": "urn:ngm:class:open-id4-vp",
+        "label": "OpenID4VP"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:governance", "label": "Governance"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:openid-for-verifiable-credential-issuance", "label": "OpenID for Verifiable Credential Issuance"}
+    {
+      "@id": "urn:ngm:class:openid-for-verifiable-credential-issuance",
+      "label": "OpenID for Verifiable Credential Issuance"
+    }
   ],
   "quality": 0.8,
   "provenance": {

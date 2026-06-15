@@ -40,7 +40,7 @@
         "label": "Signal Processing"
       },
       {
-        "id": "urn:ngm:class:analog-to-digital-conversion",
+        "id": "urn:ngm:class:analog-to-digital-converter",
         "label": "Analog-to-Digital Conversion"
       }
     ],
@@ -67,10 +67,6 @@
       }
     ],
     "dependsOn": [
-      {
-        "id": "urn:ngm:class:hardware-interface",
-        "label": "Hardware Interface"
-      },
       {
         "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded Systems"
@@ -119,7 +115,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:ros-robot-operating-system",
+        "id": "urn:ngm:class:robot-operating-system",
         "label": "ROS (Robot Operating System)"
       },
       {

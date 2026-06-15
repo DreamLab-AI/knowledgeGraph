@@ -23,56 +23,109 @@ public:: true
   "definition": "A taxonomy is a hierarchical classification scheme that organises concepts or entities into nested categories based on shared characteristics, typically expressing broader-than and narrower-than relationships. It provides a controlled vocabulary that supports consistent naming, navigation, and retrieval within a domain. Taxonomies are a simpler precursor to fuller ontologies, which add richer relations and formal axioms.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:classification-scheme", "label": "Classification Scheme"},
-      {"@id": "urn:ngm:class:controlled-vocabulary", "label": "Controlled Vocabulary"},
-      {"@id": "urn:ngm:class:hierarchical-category", "label": "Hierarchical Category"}
+      {
+        "@id": "urn:ngm:class:classification",
+        "label": "Classification Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
+      },
+      {
+        "@id": "urn:ngm:class:category-hierarchies",
+        "label": "Hierarchical Category"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:knowledge-organisation-system", "label": "Knowledge Organisation System"},
-      {"@id": "urn:ngm:class:information-architecture", "label": "Information Architecture"}
-    ],
-    "requires": [
-      {"@id": "urn:ngm:class:concept", "label": "Concept"},
-      {"@id": "urn:ngm:class:semantic-relation", "label": "Semantic Relation"}
+      {
+        "@id": "urn:ngm:class:knowledge-organization-system",
+        "label": "Knowledge Organisation System"
+      },
+      {
+        "@id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:faceted-search", "label": "Faceted Search"},
-      {"@id": "urn:ngm:class:knowledge-retrieval", "label": "Knowledge Retrieval"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
-    ],
-    "dependsOn": [
-      {"@id": "urn:ngm:class:naming-convention", "label": "Naming Convention"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:polyhierarchy", "label": "Polyhierarchy"},
-      {"@id": "urn:ngm:class:broader-narrower-relation", "label": "Broader-Narrower Relation"}
+      {
+        "@id": "urn:ngm:class:knowledge-retrieval",
+        "label": "Knowledge Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:skos", "label": "SKOS"},
-      {"@id": "urn:ngm:class:thesaurus", "label": "Thesaurus"}
+      {
+        "@id": "urn:ngm:class:skos-vocabulary",
+        "label": "SKOS"
+      },
+      {
+        "@id": "urn:ngm:class:thesaurus",
+        "label": "Thesaurus"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:folksonomy", "label": "Folksonomy"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:folksonomy",
+        "label": "Folksonomy"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:etsi-metaverse-domain-taxonomy", "label": "Etsi Metaverse Domain Taxonomy"},
-      {"@id": "urn:ngm:class:domain-ontology", "label": "Domain Ontology"},
-      {"@id": "urn:ngm:class:metadata-schema", "label": "Metadata Schema"},
-      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"}
+      {
+        "@id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
+        "label": "Etsi Metaverse Domain Taxonomy"
+      },
+      {
+        "@id": "urn:ngm:class:domain-ontology",
+        "label": "Domain Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-schema",
+        "label": "Metadata Schema"
+      },
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:hierarchical-classification", "label": "Hierarchical Classification"},
-    {"@id": "urn:ngm:class:classification-system", "label": "Classification System"}
+    {
+      "@id": "urn:ngm:class:hierarchical-classification",
+      "label": "Hierarchical Classification"
+    },
+    {
+      "@id": "urn:ngm:class:classification-system",
+      "label": "Classification System"
+    }
   ],
   "quality": 0.72,
   "provenance": {

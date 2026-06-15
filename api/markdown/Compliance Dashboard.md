@@ -86,15 +86,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:risk-visualization",
-        "label": "Risk Visualization"
-      },
-      {
         "@id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail"
       },
       {
-        "@id": "urn:ngm:class:alert-notification-system",
+        "@id": "urn:ngm:class:notification-system",
         "label": "Alert Notification System"
       }
     ],
@@ -102,10 +98,6 @@ public:: true
       {
         "@id": "urn:ngm:class:regulatory-technology",
         "label": "Regulatory Technology"
-      },
-      {
-        "@id": "urn:ngm:class:governance-information-system",
-        "label": "Governance Information System"
       }
     ],
     "requires": [
@@ -136,11 +128,11 @@ public:: true
         "label": "Regulatory Reporting"
       },
       {
-        "@id": "urn:ngm:class:aml-compliance",
+        "@id": "urn:ngm:class:aml-kyc-compliance",
         "label": "AML Compliance"
       },
       {
-        "@id": "urn:ngm:class:kyc-verification",
+        "@id": "urn:ngm:class:kyc",
         "label": "KYC Verification"
       }
     ],
@@ -186,7 +178,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:manual-audit",
+        "@id": "urn:ngm:class:audit",
         "label": "Manual Audit"
       }
     ],

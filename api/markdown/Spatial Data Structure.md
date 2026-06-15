@@ -48,53 +48,119 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:octree", "label": "Octree"},
-      {"@id": "urn:ngm:class:k-d-tree", "label": "k-d Tree"},
-      {"@id": "urn:ngm:class:bounding-volume-hierarchy", "label": "Bounding Volume Hierarchy"},
-      {"@id": "urn:ngm:class:bsp-tree", "label": "BSP Tree"},
-      {"@id": "urn:ngm:class:r-tree", "label": "R-Tree"},
-      {"@id": "urn:ngm:class:quadtree", "label": "Quadtree"},
-      {"@id": "urn:ngm:class:spatial-hash-grid", "label": "Spatial Hash Grid"}
+      {
+        "@id": "urn:ngm:class:octree-spatial-index",
+        "label": "Octree"
+      },
+      {
+        "@id": "urn:ngm:class:bounding-volume-hierarchy",
+        "label": "Bounding Volume Hierarchy"
+      },
+      {
+        "@id": "urn:ngm:class:bsp-tree",
+        "label": "BSP Tree"
+      },
+      {
+        "@id": "urn:ngm:class:quadtree",
+        "label": "Quadtree"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:collision-detection", "label": "Collision Detection"},
-      {"@id": "urn:ngm:class:ray-tracing", "label": "Ray Tracing"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:frustum-culling", "label": "Frustum Culling"},
-      {"@id": "urn:ngm:class:nearest-neighbour-search", "label": "Nearest Neighbour Search"},
-      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"}
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:frustum-culling",
+        "label": "Frustum Culling"
+      },
+      {
+        "@id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Nearest Neighbour Search"
+      },
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:scene-graph", "label": "Scene Graph"},
-      {"@id": "urn:ngm:class:bounding-volume", "label": "Bounding Volume"},
-      {"@id": "urn:ngm:class:morton-code", "label": "Morton Code"}
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "@id": "urn:ngm:class:bounding-volume",
+        "label": "Bounding Volume"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:spatial-indexing", "label": "Spatial Indexing"}
+      {
+        "@id": "urn:ngm:class:spatial-index",
+        "label": "Spatial Indexing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
-      {"@id": "urn:ngm:class:geographic-information-system", "label": "Geographic Information System"},
-      {"@id": "urn:ngm:class:spatial-database", "label": "Spatial Database"},
-      {"@id": "urn:ngm:class:point-cloud-processing", "label": "Point Cloud Processing"}
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:geographic-information-system",
+        "label": "Geographic Information System"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-database",
+        "label": "Spatial Database"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:brute-force-collision", "label": "Brute-Force Collision"},
-      {"@id": "urn:ngm:class:uniform-grid", "label": "Uniform Grid"}
+      {
+        "@id": "urn:ngm:class:uniform-grid",
+        "label": "Uniform Grid"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:spatial-mapping", "label": "Spatial Mapping"},
-      {"@id": "urn:ngm:class:level-of-detail", "label": "Level of Detail"},
-      {"@id": "urn:ngm:class:computational-geometry", "label": "Computational Geometry"}
+      {
+        "@id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "@id": "urn:ngm:class:computational-geometry",
+        "label": "Computational Geometry"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-ai", "label": "Spatial AI"},
-      {"@id": "urn:ngm:class:lidar-mapping", "label": "LiDAR Mapping"}
+      {
+        "@id": "urn:ngm:class:spatial-ai",
+        "label": "Spatial AI"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:spatial-index", "label": "Spatial Index"},
-    {"@id": "urn:ngm:class:space-partitioning-structure", "label": "Space Partitioning Structure"}
+    {
+      "@id": "urn:ngm:class:spatial-index",
+      "label": "Spatial Index"
+    },
+    {
+      "@id": "urn:ngm:class:space-partitioning-structure",
+      "label": "Space Partitioning Structure"
+    }
   ],
   "quality": 0.74,
   "provenance": {

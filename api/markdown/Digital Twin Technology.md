@@ -57,50 +57,113 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:digital-twin-framework", "label": "Digital Twin Framework"},
-      {"@id": "urn:ngm:class:digital-twin-ecosystem", "label": "Digital Twin Ecosystem"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:physics-based-simulation", "label": "Physics-Based Simulation"}
+      {
+        "@id": "urn:ngm:class:digital-twin-framework",
+        "label": "Digital Twin Framework"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin-ecosystem",
+        "label": "Digital Twin Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics-Based Simulation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:real-time-data-streaming", "label": "Real-Time Data Streaming"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
+      {
+        "@id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-data-streaming",
+        "label": "Real-Time Data Streaming"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
-      {"@id": "urn:ngm:class:industrial-metaverse", "label": "Industrial Metaverse"},
-      {"@id": "urn:ngm:class:smart-city", "label": "Smart City"},
-      {"@id": "urn:ngm:class:autonomous-systems", "label": "Autonomous Systems"}
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-metaverse",
+        "label": "Industrial Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:3d-rendering", "label": "3D Rendering"},
-      {"@id": "urn:ngm:class:data-analytics", "label": "Data Analytics"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:3d-rendering",
+        "label": "3D Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-jtc1", "label": "ISO/IEC JTC 1"},
-      {"@id": "urn:ngm:class:industrial-internet-consortium", "label": "Industrial Internet Consortium"}
+      {
+        "@id": "urn:ngm:class:iso-iec-jtc-1",
+        "label": "ISO/IEC JTC 1"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:simulation-modelling", "label": "Simulation Modelling"},
-      {"@id": "urn:ngm:class:bim", "label": "Building Information Modelling"}
+      {
+        "@id": "urn:ngm:class:bim-virtual-model",
+        "label": "Building Information Modelling"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
-    ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:model-based-engineering", "label": "Model-Based Engineering"},
-      {"@id": "urn:ngm:class:asset-lifecycle-management", "label": "Asset Lifecycle Management"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+    {
+      "@id": "urn:ngm:class:digital-twin",
+      "label": "Digital Twin"
+    }
   ],
   "quality": 0.72,
   "provenance": {

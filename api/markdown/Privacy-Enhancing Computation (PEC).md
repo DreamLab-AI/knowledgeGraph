@@ -166,10 +166,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:privacy-compliant-processing",
-        "label": "Privacy-Compliant Processing"
-      },
-      {
         "@id": "urn:ngm:class:confidential-computing",
         "label": "Confidential Computing"
       },

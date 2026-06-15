@@ -57,46 +57,121 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:descriptive-analytics", "label": "Descriptive Analytics"},
-      {"@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics"},
-      {"@id": "urn:ngm:class:prescriptive-analytics", "label": "Prescriptive Analytics"},
-      {"@id": "urn:ngm:class:diagnostic-analytics", "label": "Diagnostic Analytics"}
+      {
+        "@id": "urn:ngm:class:descriptive-analytics",
+        "label": "Descriptive Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:prescriptive-analytics",
+        "label": "Prescriptive Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:diagnostic-analytics",
+        "label": "Diagnostic Analytics"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:data-lake", "label": "Data Lake"},
-      {"@id": "urn:ngm:class:data-warehouse", "label": "Data Warehouse"},
-      {"@id": "urn:ngm:class:statistical-modelling", "label": "Statistical Modelling"},
-      {"@id": "urn:ngm:class:data-visualisation", "label": "Data Visualisation"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
+        "@id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-modelling",
+        "label": "Statistical Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:data-visualisation",
+        "label": "Data Visualisation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-integration", "label": "Data Integration"},
-      {"@id": "urn:ngm:class:data-quality-management", "label": "Data Quality Management"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "@id": "urn:ngm:class:data-quality-management",
+        "label": "Data Quality Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:business-intelligence", "label": "Business Intelligence"},
-      {"@id": "urn:ngm:class:decision-support-system", "label": "Decision Support System"},
-      {"@id": "urn:ngm:class:real-time-analytics", "label": "Real-Time Analytics"}
+      {
+        "@id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:decision-support",
+        "label": "Decision Support System"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-analytics",
+        "label": "Real-Time Analytics"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:data-processing", "label": "Data Processing"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
+      {
+        "@id": "urn:ngm:class:data-processing",
+        "label": "Data Processing"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:big-data", "label": "Big Data"},
-      {"@id": "urn:ngm:class:etl", "label": "ETL"},
-      {"@id": "urn:ngm:class:data-engineering", "label": "Data Engineering"}
+      {
+        "@id": "urn:ngm:class:big-data",
+        "label": "Big Data"
+      },
+      {
+        "@id": "urn:ngm:class:etl-pipeline",
+        "label": "ETL"
+      },
+      {
+        "@id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:data-analysis", "label": "Data Analysis"}
+    {
+      "@id": "urn:ngm:class:data-analysis",
+      "label": "Data Analysis"
+    }
   ],
   "quality": 0.72,
   "provenance": {

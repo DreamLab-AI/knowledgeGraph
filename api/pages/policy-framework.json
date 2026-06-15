@@ -58,10 +58,6 @@
         "label": "AI Accountability"
       },
       {
-        "id": "urn:ngm:class:regulatory-equivalence",
-        "label": "Regulatory Equivalence"
-      },
-      {
         "id": "urn:ngm:class:human-oversight",
         "label": "Human Oversight"
       }
@@ -118,10 +114,6 @@
       }
     ],
     "partOf": [
-      {
-        "id": "urn:ngm:class:regulatory-regime",
-        "label": "Regulatory Regime"
-      },
       {
         "id": "urn:ngm:class:governance-ecosystem",
         "label": "Governance Ecosystem"

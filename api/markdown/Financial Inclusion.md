@@ -38,54 +38,141 @@ public:: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:mobile-money", "label": "Mobile Money"},
-      {"@id": "urn:ngm:class:digital-payments", "label": "Digital Payments"},
-      {"@id": "urn:ngm:class:microfinance", "label": "Microfinance"},
-      {"@id": "urn:ngm:class:economic-development", "label": "Economic Development"}
+      {
+        "@id": "urn:ngm:class:money",
+        "label": "Mobile Money"
+      },
+      {
+        "@id": "urn:ngm:class:digital-payments",
+        "label": "Digital Payments"
+      },
+      {
+        "@id": "urn:ngm:class:microfinance",
+        "label": "Microfinance"
+      },
+      {
+        "@id": "urn:ngm:class:economic-development",
+        "label": "Economic Development"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:kyc-aml", "label": "KYC/AML"},
-      {"@id": "urn:ngm:class:mobile-internet", "label": "Mobile Internet"},
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:kyc-aml",
+        "label": "KYC/AML"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-internet",
+        "label": "Mobile Internet"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:open-banking", "label": "Open Banking"},
-      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
-      {"@id": "urn:ngm:class:agent-banking", "label": "Agent Banking"},
-      {"@id": "urn:ngm:class:biometric-authentication", "label": "Biometric Authentication"}
+      {
+        "@id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:agent-banking",
+        "label": "Agent Banking"
+      },
+      {
+        "@id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:payment-infrastructure", "label": "Payment Infrastructure"},
-      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"}
+      {
+        "@id": "urn:ngm:class:payment-infrastructure",
+        "label": "Payment Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:sustainable-development-goals", "label": "Sustainable Development Goals"},
-      {"@id": "urn:ngm:class:poverty-reduction", "label": "Poverty Reduction"},
-      {"@id": "urn:ngm:class:gender-equality", "label": "Gender Equality"}
+      {
+        "@id": "urn:ngm:class:sustainable-development-goals",
+        "label": "Sustainable Development Goals"
+      },
+      {
+        "@id": "urn:ngm:class:poverty-reduction",
+        "label": "Poverty Reduction"
+      },
+      {
+        "@id": "urn:ngm:class:gender-equality",
+        "label": "Gender Equality"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:remittance", "label": "Remittance"},
-      {"@id": "urn:ngm:class:fintech", "label": "Fintech"}
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:remittance",
+        "label": "Remittance"
+      },
+      {
+        "@id": "urn:ngm:class:fintech",
+        "label": "Fintech"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:financial-exclusion", "label": "Financial Exclusion"},
-      {"@id": "urn:ngm:class:predatory-lending", "label": "Predatory Lending"}
+      {
+        "@id": "urn:ngm:class:financial-exclusion",
+        "label": "Financial Exclusion"
+      },
+      {
+        "@id": "urn:ngm:class:predatory-lending",
+        "label": "Predatory Lending"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:financial-action-task-force", "label": "Financial Action Task Force"},
-      {"@id": "urn:ngm:class:g20-global-partnership-for-financial-inclusion", "label": "G20 Global Partnership for Financial Inclusion"}
+      {
+        "@id": "urn:ngm:class:financial-action-task-force",
+        "label": "Financial Action Task Force"
+      },
+      {
+        "@id": "urn:ngm:class:g20-global-partnership-for-financial-inclusion",
+        "label": "G20 Global Partnership for Financial Inclusion"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:inclusive-finance", "label": "Inclusive Finance"},
-    {"@id": "urn:ngm:class:banking-the-unbanked", "label": "Banking the Unbanked"}
+    {
+      "@id": "urn:ngm:class:inclusive-finance",
+      "label": "Inclusive Finance"
+    },
+    {
+      "@id": "urn:ngm:class:banking-the-unbanked",
+      "label": "Banking the Unbanked"
+    }
   ],
   "quality": 0.74,
   "provenance": {

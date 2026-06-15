@@ -23,52 +23,112 @@ public:: true
   "definition": "Adobe Firefly is Adobe's family of proprietary generative AI models designed for commercial creative applications, offering text-to-image generation, generative fill, vector recolouring, and text-effect capabilities trained exclusively on licensed Adobe Stock imagery, openly licensed content, and public domain material. Launched in March 2023, Firefly is embedded across Adobe Creative Cloud applications and is positioned as an enterprise-safe generative AI tool that provides intellectual property indemnification for commercial outputs. It represents Adobe's strategy to integrate generative AI natively into professional creative workflows.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:generative-fill", "label": "Generative Fill"},
-      {"@id": "urn:ngm:class:text-effects", "label": "Text Effects"},
-      {"@id": "urn:ngm:class:vector-recolouring", "label": "Vector Recolouring"},
-      {"@id": "urn:ngm:class:firefly-services", "label": "Firefly Services"}
+      {
+        "@id": "urn:ngm:class:generative-fill",
+        "label": "Generative Fill"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:adobe-creative-cloud", "label": "Adobe Creative Cloud"}
+      {
+        "@id": "urn:ngm:class:adobe-creative-cloud",
+        "label": "Adobe Creative Cloud"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:adobe-stock", "label": "Adobe Stock"}
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:image-editing", "label": "Image Editing"},
-      {"@id": "urn:ngm:class:brand-asset-management", "label": "Brand Asset Management"},
-      {"@id": "urn:ngm:class:ai-video-generation", "label": "AI Video Generation"}
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:image-editing",
+        "label": "Image Editing"
+      },
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Brand Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:video-generation",
+        "label": "AI Video Generation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:content-licensing", "label": "Content Licensing"},
-      {"@id": "urn:ngm:class:licensed-training-data", "label": "Licensed Training Data"}
+      {
+        "@id": "urn:ngm:class:content-licensing",
+        "label": "Content Licensing"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Licensed Training Data"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:content-credentials", "label": "Content Credentials"},
-      {"@id": "urn:ngm:class:c2pa", "label": "C2PA"}
+      {
+        "@id": "urn:ngm:class:c2-pa-content-credentials",
+        "label": "Content Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:c2pa",
+        "label": "C2PA"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:enterprise-ai-governance", "label": "Enterprise AI Governance"},
-      {"@id": "urn:ngm:class:intellectual-property-indemnification", "label": "Intellectual Property Indemnification"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "Enterprise AI Governance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:stable-diffusion", "label": "Stable Diffusion"},
-      {"@id": "urn:ngm:class:midjourney", "label": "Midjourney"}
+      {
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
+        "label": "Stable Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:midjourney-text-to-image-service",
+        "label": "Midjourney"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-content-provenance-marking", "label": "Digital Content Provenance Marking"},
-      {"@id": "urn:ngm:class:generative-ai-api", "label": "Generative AI API"},
-      {"@id": "urn:ngm:class:creative-workflow-automation", "label": "Creative Workflow Automation"}
+      {
+        "@id": "urn:ngm:class:digital-content-provenance-marking",
+        "label": "Digital Content Provenance Marking"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai-api",
+        "label": "Generative AI API"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Creative Workflow Automation"
+      }
     ]
   },
   "sameAs": [],

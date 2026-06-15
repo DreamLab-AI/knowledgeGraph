@@ -19,11 +19,11 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:supplier-data-collection",
+        "id": "urn:ngm:class:data-collection",
         "label": "Supplier Data Collection"
       },
       {
-        "id": "urn:ngm:class:value-chain-transparency",
+        "id": "urn:ngm:class:supply-chain-transparency",
         "label": "Value Chain Transparency"
       }
     ],
@@ -37,11 +37,11 @@
         "label": "SustainabilityReporting"
       },
       {
-        "id": "urn:ngm:class:net-zero-commitments",
+        "id": "urn:ngm:class:net-zero-targets",
         "label": "Net-Zero Commitments"
       },
       {
-        "id": "urn:ngm:class:supplier-decarbonisation",
+        "id": "urn:ngm:class:decarbonisation",
         "label": "Supplier Decarbonisation"
       }
     ],
@@ -63,12 +63,8 @@
         "label": "Digital Product Passport"
       },
       {
-        "id": "urn:ngm:class:blockchain-provenance-tracking",
+        "id": "urn:ngm:class:blockchain-provenance",
         "label": "Blockchain Provenance Tracking"
-      },
-      {
-        "id": "urn:ngm:class:supply-chain-analytics",
-        "label": "Supply Chain Analytics"
       }
     ],
     "uses": [
@@ -83,22 +79,10 @@
       {
         "id": "urn:ngm:class:life-cycle-assessment",
         "label": "Life Cycle Assessment"
-      },
-      {
-        "id": "urn:ngm:class:spend-based-method",
-        "label": "Spend-Based Method"
-      },
-      {
-        "id": "urn:ngm:class:activity-based-costing",
-        "label": "Activity-Based Costing"
       }
     ],
     "supports": [],
     "standardizedBy": [
-      {
-        "id": "urn:ngm:class:ghg-protocol-scope-3-standard",
-        "label": "GHG Protocol Scope 3 Standard"
-      },
       {
         "id": "urn:ngm:class:ifrs-s2",
         "label": "IFRS S2"
@@ -125,18 +109,6 @@
       {
         "id": "urn:ngm:class:supply-chain",
         "label": "Supply Chain"
-      },
-      {
-        "id": "urn:ngm:class:corporate-climate-strategy",
-        "label": "Corporate Climate Strategy"
-      },
-      {
-        "id": "urn:ngm:class:financed-emissions",
-        "label": "Financed Emissions"
-      },
-      {
-        "id": "urn:ngm:class:embodied-carbon",
-        "label": "Embodied Carbon"
       }
     ]
   },

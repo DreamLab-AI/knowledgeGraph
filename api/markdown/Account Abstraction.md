@@ -215,38 +215,14 @@ alias:: account-abstraction
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:account-factory",
-        "label": "Account Factory"
-      },
-      {
         "@id": "urn:ngm:class:bundler",
         "label": "Bundler"
-      },
-      {
-        "@id": "urn:ngm:class:entry-point-contract",
-        "label": "EntryPoint Contract"
-      },
-      {
-        "@id": "urn:ngm:class:paymaster-contract",
-        "label": "Paymaster Contract"
-      },
-      {
-        "@id": "urn:ngm:class:signature-aggregator",
-        "label": "Signature Aggregator"
-      },
-      {
-        "@id": "urn:ngm:class:user-operation",
-        "label": "UserOperation"
       }
     ],
     "requires": [
       {
         "@id": "urn:ngm:class:evm",
         "label": "EVM"
-      },
-      {
-        "@id": "urn:ngm:class:gas-abstraction",
-        "label": "Gas Abstraction"
       },
       {
         "@id": "urn:ngm:class:signature-verification",
@@ -263,26 +239,6 @@ alias:: account-abstraction
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:account-recovery",
-        "label": "Account Recovery"
-      },
-      {
-        "@id": "urn:ngm:class:batch-operations",
-        "label": "Batch Operations"
-      },
-      {
-        "@id": "urn:ngm:class:gasless-transactions",
-        "label": "Gasless Transactions"
-      },
-      {
-        "@id": "urn:ngm:class:programmable-validation",
-        "label": "Programmable Validation"
-      },
-      {
-        "@id": "urn:ngm:class:session-keys",
-        "label": "Session Keys"
-      },
-      {
         "@id": "urn:ngm:class:social-recovery",
         "label": "Social Recovery"
       }
@@ -293,11 +249,7 @@ alias:: account-abstraction
         "label": "ERC-4337"
       },
       {
-        "@id": "urn:ngm:class:gas-sponsorship",
-        "label": "Gas Sponsorship"
-      },
-      {
-        "@id": "urn:ngm:class:user-operation-mempool",
+        "@id": "urn:ngm:class:mempool",
         "label": "UserOperation Mempool"
       },
       {

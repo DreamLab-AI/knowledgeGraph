@@ -49,7 +49,7 @@
         "label": "Decentralised Finance"
       },
       {
-        "id": "urn:ngm:class:digital-asset-marketplace",
+        "id": "urn:ngm:class:digital-asset-market",
         "label": "Digital Asset Marketplace"
       }
     ],
@@ -98,7 +98,7 @@
         "label": "Batch Processing"
       },
       {
-        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       },
       {
@@ -109,23 +109,15 @@
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:ethereum-foundation",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-foundation",
         "label": "Ethereum Foundation"
       }
     ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:token-metadata-uri",
-        "label": "Token Metadata URI"
-      },
-      {
         "id": "urn:ngm:class:openzeppelin",
         "label": "OpenZeppelin"
-      },
-      {
-        "id": "urn:ngm:class:opensea",
-        "label": "OpenSea"
       },
       {
         "id": "urn:ngm:class:account-abstraction",

@@ -22,10 +22,6 @@
         "label": "Point of Presence"
       },
       {
-        "id": "urn:ngm:class:edge-cache",
-        "label": "Edge Cache"
-      },
-      {
         "id": "urn:ngm:class:web-application-firewall",
         "label": "Web Application Firewall"
       }
@@ -54,7 +50,7 @@
         "label": "DDoS Mitigation"
       },
       {
-        "id": "urn:ngm:class:serverless-edge-compute",
+        "id": "urn:ngm:class:serverless-architecture",
         "label": "Serverless Edge Compute"
       }
     ],
@@ -62,10 +58,6 @@
       {
         "id": "urn:ngm:class:cloud-infrastructure",
         "label": "Cloud Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:border-gateway-protocol",
-        "label": "Border Gateway Protocol"
       }
     ],
     "implements": [],
@@ -148,10 +140,6 @@
       {
         "id": "urn:ngm:class:http-caching",
         "label": "HTTP Caching"
-      },
-      {
-        "id": "urn:ngm:class:ddos-protection",
-        "label": "DDoS Protection"
       }
     ]
   },

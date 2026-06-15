@@ -162,10 +162,6 @@ public:: true
         "label": "Feature Detection"
       },
       {
-        "@id": "urn:ngm:class:image-matching",
-        "label": "Image Matching"
-      },
-      {
         "@id": "urn:ngm:class:mesh-reconstruction",
         "label": "Mesh Reconstruction"
       },
@@ -184,14 +180,6 @@ public:: true
         "label": "Computational Resources"
       },
       {
-        "@id": "urn:ngm:class:multiple-images",
-        "label": "Multiple Images"
-      },
-      {
-        "@id": "urn:ngm:class:overlapping-coverage",
-        "label": "Overlapping Coverage"
-      },
-      {
         "@id": "urn:ngm:class:camera",
         "label": "Camera"
       },
@@ -202,16 +190,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:3-d-model-creation",
-        "label": "3D Model Creation"
-      },
-      {
         "@id": "urn:ngm:class:asset-digitization",
         "label": "Asset Digitization"
-      },
-      {
-        "@id": "urn:ngm:class:terrain-mapping",
-        "label": "Terrain Mapping"
       },
       {
         "@id": "urn:ngm:class:digital-twin-construction",
@@ -224,7 +204,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:3-d-reconstruction-pipeline",
+        "@id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction Pipeline"
       },
       {

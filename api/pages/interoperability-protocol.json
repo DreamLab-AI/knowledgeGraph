@@ -66,7 +66,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:proprietary-api",
+        "id": "urn:ngm:class:api",
         "label": "Proprietary API"
       },
       {
@@ -145,11 +145,11 @@
         "label": "Communication Protocol"
       },
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential",
+        "id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       },
       {

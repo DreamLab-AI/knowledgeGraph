@@ -18,10 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:encrypted-note",
-        "label": "Encrypted Note"
-      },
-      {
         "id": "urn:ngm:class:aztec-protocol",
         "label": "Aztec Protocol"
       }
@@ -50,7 +46,7 @@
         "label": "Privacy"
       },
       {
-        "id": "urn:ngm:class:confidential-transaction",
+        "id": "urn:ngm:class:confidential-transactions",
         "label": "Confidential Transaction"
       },
       {
@@ -84,7 +80,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:transparent-blockchain",
+        "id": "urn:ngm:class:blockchain",
         "label": "Transparent Blockchain"
       },
       {
@@ -108,7 +104,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:noir-programming-language",
+        "id": "urn:ngm:class:noir",
         "label": "Noir Programming Language"
       },
       {
@@ -133,7 +129,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:ethereum-ecosystem",
+        "id": "urn:ngm:class:ethereum",
         "label": "Ethereum Ecosystem"
       },
       {

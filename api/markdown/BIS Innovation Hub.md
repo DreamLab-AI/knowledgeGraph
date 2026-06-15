@@ -67,15 +67,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:eurosystem-hub-centre",
-        "label": "Eurosystem Hub Centre"
-      },
-      {
         "@id": "urn:ngm:class:project-nexus",
         "label": "Project Nexus"
       },
       {
-        "@id": "urn:ngm:class:project-mbridge",
+        "@id": "urn:ngm:class:project-m-bridge",
         "label": "Project mBridge"
       }
     ],
@@ -132,10 +128,6 @@ public:: true
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:proof-of-concept",
-        "label": "Proof of Concept"
-      },
       {
         "@id": "urn:ngm:class:financial-infrastructure",
         "label": "Financial Infrastructure"

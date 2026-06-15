@@ -448,7 +448,7 @@ public:: true
         "label": "Meta AI"
       },
       {
-        "@id": "urn:ngm:class:mistral-ai",
+        "@id": "urn:ngm:class:mistral-ai-open-weight-model-family",
         "label": "Mistral AI"
       },
       {

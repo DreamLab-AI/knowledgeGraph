@@ -38,48 +38,115 @@ alias:: DecentralisedAutonomousOrganisation
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:dao", "label": "DAO"}
+    {
+      "@id": "urn:ngm:class:dao",
+      "label": "DAO"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:multisig-wallet", "label": "Multisig Wallet"},
-      {"@id": "urn:ngm:class:quadratic-voting", "label": "Quadratic Voting"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:multisig-wallet",
+        "label": "Multisig Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
-      {"@id": "urn:ngm:class:treasury-management", "label": "Treasury Management"},
-      {"@id": "urn:ngm:class:permissionless-participation", "label": "Permissionless Participation"},
-      {"@id": "urn:ngm:class:protocol-governance", "label": "Protocol Governance"}
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      },
+      {
+        "@id": "urn:ngm:class:permissionless-participation",
+        "label": "Permissionless Participation"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-governance",
+        "label": "Protocol Governance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:public-blockchain", "label": "Public Blockchain"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"}
+      {
+        "@id": "urn:ngm:class:public-blockchain",
+        "label": "Public Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:governance-module", "label": "Governance Module"},
-      {"@id": "urn:ngm:class:treasury-contract", "label": "Treasury Contract"},
-      {"@id": "urn:ngm:class:voting-mechanism", "label": "Voting Mechanism"}
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance Module"
+      },
+      {
+        "@id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:traditional-corporation", "label": "Traditional Corporation"},
-      {"@id": "urn:ngm:class:centralised-autonomous-organisation", "label": "Centralised Autonomous Organisation"}
+      {
+        "@id": "urn:ngm:class:traditional-corporation",
+        "label": "Traditional Corporation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:liquid-democracy", "label": "Liquid Democracy"},
-      {"@id": "urn:ngm:class:sybil-resistance", "label": "Sybil Resistance"},
-      {"@id": "urn:ngm:class:token-weighted-voting", "label": "Token-Weighted Voting"},
-      {"@id": "urn:ngm:class:decentralised-governance", "label": "Decentralised Governance"}
+      {
+        "@id": "urn:ngm:class:liquid-democracy",
+        "label": "Liquid Democracy"
+      },
+      {
+        "@id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:collective-intelligence", "label": "Collective Intelligence"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ]
   },
   "quality": 0.72,

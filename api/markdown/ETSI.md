@@ -38,48 +38,125 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:etsi-nfv", "label": "ETSI NFV"},
-      {"@id": "urn:ngm:class:etsi-mec", "label": "ETSI MEC"},
-      {"@id": "urn:ngm:class:etsi-eni", "label": "ETSI ENI"},
-      {"@id": "urn:ngm:class:etsi-isg", "label": "ETSI ISG"}
+      {
+        "@id": "urn:ngm:class:etsi-nfv",
+        "label": "ETSI NFV"
+      },
+      {
+        "@id": "urn:ngm:class:etsi-mec",
+        "label": "ETSI MEC"
+      },
+      {
+        "@id": "urn:ngm:class:etsi-eni-008",
+        "label": "ETSI ENI"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"},
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:network-slicing", "label": "Network Slicing"}
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:network-slicing",
+        "label": "Network Slicing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:5g", "label": "5G"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:quantum-safe-cryptography", "label": "Quantum-Safe Cryptography"},
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"}
+      {
+        "@id": "urn:ngm:class:5g",
+        "label": "5G"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Quantum-Safe Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:eidas", "label": "eIDAS"},
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
-      {"@id": "urn:ngm:class:european-cybersecurity-act", "label": "European Cybersecurity Act"}
+      {
+        "@id": "urn:ngm:class:eidas",
+        "label": "eIDAS"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:european-cybersecurity-act",
+        "label": "European Cybersecurity Act"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:technical-committee", "label": "Technical Committee"},
-      {"@id": "urn:ngm:class:conformance-testing", "label": "Conformance Testing"}
+      {
+        "@id": "urn:ngm:class:technical-committee",
+        "label": "Technical Committee"
+      },
+      {
+        "@id": "urn:ngm:class:standards-conformance-testing",
+        "label": "Conformance Testing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:3gpp", "label": "3GPP"},
-      {"@id": "urn:ngm:class:iso-iec", "label": "ISO/IEC"},
-      {"@id": "urn:ngm:class:itu-t", "label": "ITU-T"},
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"},
-      {"@id": "urn:ngm:class:cen-cenelec", "label": "CEN-CENELEC"},
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}
+      {
+        "@id": "urn:ngm:class:3gpp",
+        "label": "3GPP"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "@id": "urn:ngm:class:itu-t",
+        "label": "ITU-T"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:cen-cenelec",
+        "label": "CEN-CENELEC"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:network-functions-virtualisation", "label": "Network Functions Virtualisation"},
-      {"@id": "urn:ngm:class:ai-trustworthiness", "label": "AI Trustworthiness"},
-      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"}
+      {
+        "@id": "urn:ngm:class:network-functions-virtualisation",
+        "label": "Network Functions Virtualisation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      },
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:european-telecommunications-standards-institute", "label": "European Telecommunications Standards Institute"}
+    {
+      "@id": "urn:ngm:class:european-telecommunications-standards-institute",
+      "label": "European Telecommunications Standards Institute"
+    }
   ],
   "quality": 0.74,
   "provenance": {

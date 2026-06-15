@@ -422,24 +422,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:affective-dialogue-management",
-        "label": "Affective Dialogue Management"
-      },
-      {
         "@id": "urn:ngm:class:emotion-recognition",
         "label": "Emotion Recognition"
       },
       {
-        "@id": "urn:ngm:class:empathic-response-generation",
-        "label": "Empathic Response Generation"
-      },
-      {
         "@id": "urn:ngm:class:facial-action-coding-system",
         "label": "Facial Action Coding System"
-      },
-      {
-        "@id": "urn:ngm:class:personality-modelling",
-        "label": "Personality Modelling"
       },
       {
         "@id": "urn:ngm:class:physiological-signal-processing",
@@ -452,50 +440,26 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:affective-language-models",
-        "label": "Affective Language Models"
-      },
-      {
-        "@id": "urn:ngm:class:emotional-training-data",
+        "@id": "urn:ngm:class:training-data",
         "label": "Emotional Training Data"
       },
       {
-        "@id": "urn:ngm:class:ethical-governance-framework",
+        "@id": "urn:ngm:class:governance-framework",
         "label": "Ethical Governance Framework"
       },
       {
-        "@id": "urn:ngm:class:informed-consent-mechanism",
+        "@id": "urn:ngm:class:informed-consent",
         "label": "Informed Consent Mechanism"
       },
       {
-        "@id": "urn:ngm:class:multimodal-ai-architecture-perception",
+        "@id": "urn:ngm:class:multimodal-ai-architecture",
         "label": "Multimodal Perception"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:companion-ai",
-        "label": "Companion AI"
-      },
-      {
-        "@id": "urn:ngm:class:emotionally-aware-customer-service",
-        "label": "Emotionally Aware Customer Service"
-      },
-      {
-        "@id": "urn:ngm:class:mental-health-support",
-        "label": "Mental Health Support"
-      },
-      {
-        "@id": "urn:ngm:class:personalised-education",
+        "@id": "urn:ngm:class:personalised-learning",
         "label": "Personalised Education"
-      },
-      {
-        "@id": "urn:ngm:class:therapeutic-chatbots",
-        "label": "Therapeutic Chatbots"
-      },
-      {
-        "@id": "urn:ngm:class:voice-emotional-interface",
-        "label": "Voice Emotional Interface"
       },
       {
         "@id": "urn:ngm:class:social-robotics",
@@ -504,24 +468,8 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:categorical-emotion-classification",
-        "label": "Categorical Emotion Classification"
-      },
-      {
-        "@id": "urn:ngm:class:dimensional-emotion-models",
-        "label": "Dimensional Emotion Models"
-      },
-      {
-        "@id": "urn:ngm:class:empathic-response-strategies",
-        "label": "Empathic Response Strategies"
-      },
-      {
         "@id": "urn:ngm:class:facial-action-coding-system",
         "label": "Facial Action Coding System"
-      },
-      {
-        "@id": "urn:ngm:class:valence-arousal-dominance-space",
-        "label": "Valence-Arousal-Dominance Space"
       }
     ],
     "uses": [
@@ -530,16 +478,8 @@ public:: true
         "label": "Attention Mechanism"
       },
       {
-        "@id": "urn:ngm:class:facial-landmark-detection",
-        "label": "Facial Landmark Detection"
-      },
-      {
-        "@id": "urn:ngm:class:multimodal-ai-architecture-fusion",
+        "@id": "urn:ngm:class:multimodal-ai-architecture",
         "label": "Multimodal Fusion"
-      },
-      {
-        "@id": "urn:ngm:class:sentiment-lexicons",
-        "label": "Sentiment Lexicons"
       },
       {
         "@id": "urn:ngm:class:transformer-architecture",
@@ -582,20 +522,8 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:adaptive-learning-systems",
+        "@id": "urn:ngm:class:adaptive-learning",
         "label": "Adaptive Learning Systems"
-      },
-      {
-        "@id": "urn:ngm:class:crisis-intervention",
-        "label": "Crisis Intervention"
-      },
-      {
-        "@id": "urn:ngm:class:elder-care-robots",
-        "label": "Elder Care Robots"
-      },
-      {
-        "@id": "urn:ngm:class:mental-health-care",
-        "label": "Mental Health Care"
       },
       {
         "@id": "urn:ngm:class:clinical-decision-support",
@@ -603,10 +531,6 @@ public:: true
       }
     ],
     "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:ieee-p7014-standard-for-ethical-considerations-in-emulated-empathy",
-        "label": "IEEE P7014 Standard for Ethical Considerations in Emulated Empathy"
-      },
       {
         "@id": "urn:ngm:class:iso-iec-27001",
         "label": "ISO/IEC 27001"

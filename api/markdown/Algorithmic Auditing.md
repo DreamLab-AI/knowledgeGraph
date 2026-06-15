@@ -23,56 +23,135 @@ public:: true
   "definition": "Algorithmic auditing is the systematic evaluation of automated decision-making systems to assess their fairness, accuracy, transparency, and compliance with ethical and legal standards. It involves independent or internal review of training data, model architectures, outputs, and operational impacts. The discipline has emerged as a response to concerns about bias, discrimination, and opacity in AI-driven systems. Audits may be prospective, examining systems before deployment, or retrospective, investigating outcomes in production. Results are used to inform regulation, remediation, and public accountability.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:ai-governance",
+    "label": "AI Governance"
+  },
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"},
-      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
-      {"@id": "urn:ngm:class:ai-fairness", "label": "AI Fairness"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "@id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"},
-      {"@id": "urn:ngm:class:public-accountability", "label": "Public Accountability"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Public Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
-      {"@id": "urn:ngm:class:bias-detection-methods", "label": "Bias Detection Methods"},
-      {"@id": "urn:ngm:class:counterfactual-analysis", "label": "Counterfactual Analysis"},
-      {"@id": "urn:ngm:class:statistical-testing", "label": "Statistical Testing"}
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection Methods"
+      },
+      {
+        "@id": "urn:ngm:class:counterfactual-analysis",
+        "label": "Counterfactual Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-testing",
+        "label": "Statistical Testing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
-      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
-      {"@id": "urn:ngm:class:data-access", "label": "Data Access"}
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"},
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"}
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO IEC 42001"}
+      {
+        "@id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:self-certification", "label": "Self-Certification"},
-      {"@id": "urn:ngm:class:black-box-ai", "label": "Black-Box AI"}
+      {
+        "@id": "urn:ngm:class:self-certification",
+        "label": "Self-Certification"
+      },
+      {
+        "@id": "urn:ngm:class:black-box-ai",
+        "label": "Black-Box AI"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:financial-audit", "label": "Financial Audit"},
-      {"@id": "urn:ngm:class:security-audit", "label": "Security Audit"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:security-audit",
+        "label": "Security Audit"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ai-audit", "label": "AI Audit"},
-    {"@id": "urn:ngm:class:automated-decision-system-audit", "label": "Automated Decision System Audit"}
+    {
+      "@id": "urn:ngm:class:ai-audit",
+      "label": "AI Audit"
+    },
+    {
+      "@id": "urn:ngm:class:automated-decision-system-audit",
+      "label": "Automated Decision System Audit"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

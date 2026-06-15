@@ -40,10 +40,6 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:interbank-messaging",
-        "label": "Interbank Messaging"
-      },
-      {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
       },
@@ -58,7 +54,7 @@
         "label": "Financial Inclusion"
       },
       {
-        "id": "urn:ngm:class:cross-border-payment",
+        "id": "urn:ngm:class:cross-border-payments",
         "label": "Cross-Border Payment"
       },
       {
@@ -107,10 +103,6 @@
       {
         "id": "urn:ngm:class:digital-commerce",
         "label": "Digital Commerce"
-      },
-      {
-        "id": "urn:ngm:class:wholesale-settlement",
-        "label": "Wholesale Settlement"
       }
     ],
     "standardizedBy": [],

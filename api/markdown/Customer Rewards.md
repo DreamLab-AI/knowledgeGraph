@@ -104,15 +104,11 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:cross-platform-rewards",
-        "label": "Cross-Platform Rewards"
-      },
-      {
         "@id": "urn:ngm:class:customer-retention",
         "label": "Customer Retention"
       },
       {
-        "@id": "urn:ngm:class:token-trading",
+        "@id": "urn:ngm:class:token",
         "label": "Token Trading"
       }
     ]

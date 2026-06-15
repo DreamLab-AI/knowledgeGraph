@@ -67,7 +67,7 @@ alias:: ImmersiveInterface
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:natural-vr-interaction",
+        "@id": "urn:ngm:class:natural-interaction",
         "label": "Natural VR Interaction"
       }
     ]

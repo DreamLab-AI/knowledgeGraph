@@ -52,7 +52,7 @@
         "label": "Labelled Dataset"
       },
       {
-        "id": "urn:ngm:class:compute-resource",
+        "id": "urn:ngm:class:compute-resources",
         "label": "Compute Resource"
       }
     ],
@@ -62,7 +62,7 @@
         "label": "Inference"
       },
       {
-        "id": "urn:ngm:class:machine-learning-model",
+        "id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
       },
       {
@@ -130,7 +130,7 @@
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-iec-22989",
+        "id": "urn:ngm:class:iso-iec-22989-2022",
         "label": "ISO/IEC 22989"
       },
       {

@@ -55,12 +55,8 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:bitcoin-blockchain",
+        "id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:node-operation",
-        "label": "Node Operation"
       },
       {
         "id": "urn:ngm:class:kyc-aml-compliance",
@@ -70,11 +66,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:western-union",
-        "label": "Western Union"
-      },
-      {
-        "id": "urn:ngm:class:swift-network",
+        "id": "urn:ngm:class:swift",
         "label": "SWIFT Network"
       },
       {
@@ -102,7 +94,7 @@
         "label": "Hash Time-Locked Contracts"
       },
       {
-        "id": "urn:ngm:class:bolt-protocol",
+        "id": "urn:ngm:class:bolt-specifications",
         "label": "BOLT Protocol"
       },
       {
@@ -119,15 +111,11 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:open-payments-protocol",
-        "label": "Open Payments Protocol"
-      },
-      {
         "id": "urn:ngm:class:financial-inclusion",
         "label": "Financial Inclusion"
       },
       {
-        "id": "urn:ngm:class:digital-dollar",
+        "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Digital Dollar"
       },
       {

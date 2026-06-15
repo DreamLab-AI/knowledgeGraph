@@ -27,7 +27,7 @@
         "label": "Cryptographic Key Management"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -52,11 +52,11 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:w3c-did-core",
+        "id": "urn:ngm:class:w3-c-did-core",
         "label": "W3C DID Core"
       },
       {
-        "id": "urn:ngm:class:w3c-verifiable-credentials",
+        "id": "urn:ngm:class:w3-c-verifiable-credentials",
         "label": "W3C Verifiable Credentials"
       }
     ],
@@ -66,7 +66,7 @@
         "label": "Federated Identity"
       },
       {
-        "id": "urn:ngm:class:centralised-identity-provider",
+        "id": "urn:ngm:class:centralized-identity-provider",
         "label": "Centralised Identity Provider"
       }
     ],
@@ -86,7 +86,7 @@
         "label": "DID Document"
       },
       {
-        "id": "urn:ngm:class:didcomm-messaging",
+        "id": "urn:ngm:class:didcomm",
         "label": "DIDComm Messaging"
       },
       {
@@ -118,14 +118,6 @@
       {
         "id": "urn:ngm:class:decentralized-identity-foundation",
         "label": "Decentralized Identity Foundation"
-      },
-      {
-        "id": "urn:ngm:class:w3c-credentials-community-group",
-        "label": "W3C Credentials Community Group"
-      },
-      {
-        "id": "urn:ngm:class:internet-identity-workshop",
-        "label": "Internet Identity Workshop"
       },
       {
         "id": "urn:ngm:class:eidas-regulation",

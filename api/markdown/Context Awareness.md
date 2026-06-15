@@ -170,31 +170,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:behavioral-adaptation",
-        "label": "Behavioral Adaptation"
-      },
-      {
-        "@id": "urn:ngm:class:context-modeling",
-        "label": "Context Modeling"
-      },
-      {
         "@id": "urn:ngm:class:environmental-sensing",
         "label": "Environmental Sensing"
-      },
-      {
-        "@id": "urn:ngm:class:situational-inference",
-        "label": "Situational Inference"
-      },
-      {
-        "@id": "urn:ngm:class:user-state-detection",
-        "label": "User State Detection"
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:decision-logic",
-        "label": "Decision Logic"
-      },
       {
         "@id": "urn:ngm:class:data-processing",
         "label": "Data Processing"
@@ -218,27 +198,15 @@ public:: true
         "label": "Adaptive Interfaces"
       },
       {
-        "@id": "urn:ngm:class:ambient-intelligence",
+        "@id": "urn:ngm:class:ambient-computing",
         "label": "Ambient Intelligence"
       },
       {
         "@id": "urn:ngm:class:personalized-experiences",
         "label": "Personalized Experiences"
-      },
-      {
-        "@id": "urn:ngm:class:proactive-services",
-        "label": "Proactive Services"
-      },
-      {
-        "@id": "urn:ngm:class:smart-environments",
-        "label": "Smart Environments"
       }
     ],
     "partOf": [
-      {
-        "@id": "urn:ngm:class:adaptive-computing",
-        "label": "Adaptive Computing"
-      },
       {
         "@id": "urn:ngm:class:pervasive-computing",
         "label": "Pervasive Computing"

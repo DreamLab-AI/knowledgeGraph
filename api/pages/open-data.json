@@ -34,10 +34,6 @@
       {
         "id": "urn:ngm:class:open-license",
         "label": "Open License"
-      },
-      {
-        "id": "urn:ngm:class:machine-readable-format",
-        "label": "Machine-Readable Format"
       }
     ],
     "enables": [
@@ -48,46 +44,21 @@
       {
         "id": "urn:ngm:class:reproducible-research",
         "label": "Reproducible Research"
-      },
-      {
-        "id": "urn:ngm:class:civic-transparency",
-        "label": "Civic Transparency"
-      },
-      {
-        "id": "urn:ngm:class:data-journalism",
-        "label": "Data Journalism"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
-      },
-      {
-        "id": "urn:ngm:class:public-api",
-        "label": "Public API"
       }
     ],
     "implements": [
       {
         "id": "urn:ngm:class:creative-commons",
         "label": "Creative Commons"
-      },
-      {
-        "id": "urn:ngm:class:open-definition",
-        "label": "Open Definition"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:proprietary-data",
-        "label": "Proprietary Data"
-      },
-      {
-        "id": "urn:ngm:class:closed-data",
-        "label": "Closed Data"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:solid",
@@ -130,10 +101,6 @@
       {
         "id": "urn:ngm:class:w3c",
         "label": "W3C"
-      },
-      {
-        "id": "urn:ngm:class:open-data-charter",
-        "label": "Open Data Charter"
       }
     ],
     "partOf": [
@@ -154,10 +121,6 @@
       {
         "id": "urn:ngm:class:fair-data-principles",
         "label": "FAIR Data Principles"
-      },
-      {
-        "id": "urn:ngm:class:five-star-open-data",
-        "label": "Five-Star Open Data"
       }
     ]
   },

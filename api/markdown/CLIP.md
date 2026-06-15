@@ -37,53 +37,123 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:contrastive-language-image-pre-training", "label": "Contrastive Language-Image Pre-training"}
+    {
+      "@id": "urn:ngm:class:contrastive-language-image-pre-training",
+      "label": "Contrastive Language-Image Pre-training"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"},
-      {"@id": "urn:ngm:class:vision-transformer", "label": "Vision Transformer"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:infonce-loss", "label": "InfoNCE Loss"},
-      {"@id": "urn:ngm:class:cosine-similarity", "label": "Cosine Similarity"}
+      {
+        "@id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "@id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:infonce-loss",
+        "label": "InfoNCE Loss"
+      },
+      {
+        "@id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:zero-shot-learning", "label": "Zero-Shot Learning"},
-      {"@id": "urn:ngm:class:image-classification", "label": "Image Classification"},
-      {"@id": "urn:ngm:class:cross-modal-retrieval", "label": "Cross-Modal Retrieval"},
-      {"@id": "urn:ngm:class:open-vocabulary-detection", "label": "Open-Vocabulary Detection"},
-      {"@id": "urn:ngm:class:image-text-retrieval", "label": "Image-Text Retrieval"}
+      {
+        "@id": "urn:ngm:class:zero-shot-learning",
+        "label": "Zero-Shot Learning"
+      },
+      {
+        "@id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "@id": "urn:ngm:class:cross-modal-retrieval",
+        "label": "Cross-Modal Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:open-vocabulary-detection",
+        "label": "Open-Vocabulary Detection"
+      },
+      {
+        "@id": "urn:ngm:class:image-text-retrieval",
+        "label": "Image-Text Retrieval"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:large-scale-dataset", "label": "Large-Scale Dataset"},
-      {"@id": "urn:ngm:class:self-supervised-learning", "label": "Self-Supervised Learning"},
-      {"@id": "urn:ngm:class:embedding-space", "label": "Embedding Space"}
+      {
+        "@id": "urn:ngm:class:large-scale-datasets",
+        "label": "Large-Scale Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-space",
+        "label": "Embedding Space"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"},
-      {"@id": "urn:ngm:class:stable-diffusion", "label": "Stable Diffusion"},
-      {"@id": "urn:ngm:class:multimodal-search", "label": "Multimodal Search"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:align", "label": "ALIGN"},
-      {"@id": "urn:ngm:class:florence", "label": "Florence"},
-      {"@id": "urn:ngm:class:coca", "label": "CoCa"}
+      {
+        "@id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
+        "label": "Stable Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-search",
+        "label": "Multimodal Search"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:vision-language-model", "label": "Vision Language Model"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"}
+      {
+        "@id": "urn:ngm:class:vision-language-model",
+        "label": "Vision Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-anchor", "label": "Spatial Anchor"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {
+        "@id": "urn:ngm:class:spatial-anchor",
+        "label": "Spatial Anchor"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ]
   },
   "quality": 0.74,

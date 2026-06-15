@@ -71,16 +71,6 @@ public:: true
         "label": "Russell Group"
       }
     ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:king-s-institute-for-artificial-intelligence",
-        "label": "King's Institute for Artificial Intelligence"
-      },
-      {
-        "@id": "urn:ngm:class:department-of-informatics",
-        "label": "Department of Informatics"
-      }
-    ],
     "enables": [
       {
         "@id": "urn:ngm:class:artificial-intelligence",
@@ -115,10 +105,6 @@ public:: true
         "label": "Machine Learning"
       },
       {
-        "@id": "urn:ngm:class:biomedical-informatics",
-        "label": "Biomedical Informatics"
-      },
-      {
         "@id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
       }
@@ -135,10 +121,6 @@ public:: true
       {
         "@id": "urn:ngm:class:imperial-college-london",
         "label": "Imperial College London"
-      },
-      {
-        "@id": "urn:ngm:class:nhs",
-        "label": "NHS"
       },
       {
         "@id": "urn:ngm:class:ukri",
@@ -161,12 +143,6 @@ public:: true
       {
         "@id": "urn:ngm:class:distributed-collaboration",
         "label": "Distributed Collaboration"
-      }
-    ],
-    "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:research-excellence-framework",
-        "label": "Research Excellence Framework"
       }
     ]
   },

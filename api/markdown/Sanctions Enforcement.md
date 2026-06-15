@@ -23,53 +23,105 @@ public:: true
   "definition": "Sanctions enforcement is the regulatory and operational process by which financial institutions, governments, and technology platforms identify, screen, and block transactions, assets, and relationships involving sanctioned individuals, entities, or jurisdictions as designated by authorities such as OFAC, the UN Security Council, the European Union, or HM Treasury. It encompasses real-time screening of payment flows against consolidated sanctions lists, asset-freezing procedures, reporting obligations, and the maintenance of audit trails demonstrating compliance. In digital asset and blockchain contexts, sanctions enforcement extends to on-chain transaction monitoring and the blocking of wallet addresses associated with designated parties.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:compliance-framework",
+    "label": "Compliance Framework"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:sanctions-screening", "label": "Sanctions Screening"},
-      {"@id": "urn:ngm:class:asset-freezing", "label": "Asset Freezing"},
-      {"@id": "urn:ngm:class:compliance-audit-trail", "label": "Compliance Audit Trail"}
+      {
+        "@id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-audit-trail",
+        "label": "Compliance Audit Trail"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
-      {"@id": "urn:ngm:class:aml-cft-regime", "label": "AML/CFT Regime"}
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:aml",
+        "label": "AML/CFT Regime"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:know-your-customer", "label": "Know Your Customer"},
-      {"@id": "urn:ngm:class:entity-resolution", "label": "Entity Resolution"},
-      {"@id": "urn:ngm:class:watchlist-management", "label": "Watchlist Management"}
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "@id": "urn:ngm:class:entity-resolution",
+        "label": "Entity Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:watchlist-management",
+        "label": "Watchlist Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"},
-      {"@id": "urn:ngm:class:transaction-blocking", "label": "Transaction Blocking"},
-      {"@id": "urn:ngm:class:regulatory-reporting", "label": "Regulatory Reporting"}
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:blockchain-analytics", "label": "Blockchain Analytics"},
-      {"@id": "urn:ngm:class:fuzzy-name-matching", "label": "Fuzzy Name Matching"},
-      {"@id": "urn:ngm:class:machine-learning-classifier", "label": "Machine Learning Classifier"}
+      {
+        "@id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-classifier",
+        "label": "Machine Learning Classifier"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:fatf", "label": "FATF"},
-      {"@id": "urn:ngm:class:ofac", "label": "OFAC"},
-      {"@id": "urn:ngm:class:un-security-council-sanctions", "label": "UN Security Council Sanctions"}
+      {
+        "@id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      },
+      {
+        "@id": "urn:ngm:class:ofac",
+        "label": "OFAC"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"},
-      {"@id": "urn:ngm:class:counter-terrorism-financing", "label": "Counter-Terrorism Financing"}
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:counter-terrorist-financing",
+        "label": "Counter-Terrorism Financing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:smart-contract-compliance", "label": "Smart Contract Compliance"}
-    ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:secondary-sanctions-liability", "label": "Secondary Sanctions Liability"},
-      {"@id": "urn:ngm:class:foreign-policy-instrument", "label": "Foreign Policy Instrument"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-compliance",
+        "label": "Smart Contract Compliance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:sanctions-compliance", "label": "Sanctions Compliance"},
-    {"@id": "urn:ngm:class:economic-sanctions-implementation", "label": "Economic Sanctions Implementation"}
+    {
+      "@id": "urn:ngm:class:sanctions-compliance",
+      "label": "Sanctions Compliance"
+    },
+    {
+      "@id": "urn:ngm:class:economic-sanctions-implementation",
+      "label": "Economic Sanctions Implementation"
+    }
   ],
   "quality": 0.8,
   "provenance": {

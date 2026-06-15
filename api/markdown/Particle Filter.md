@@ -362,7 +362,7 @@ public:: true
         "label": "Effective Sample Size"
       },
       {
-        "@id": "urn:ngm:class:importance-weight",
+        "@id": "urn:ngm:class:importance-sampling",
         "label": "Importance Weight"
       },
       {
@@ -374,16 +374,8 @@ public:: true
         "label": "Observation Model"
       },
       {
-        "@id": "urn:ngm:class:particle-set",
-        "label": "Particle Set"
-      },
-      {
         "@id": "urn:ngm:class:proposal-distribution",
         "label": "Proposal Distribution"
-      },
-      {
-        "@id": "urn:ngm:class:resampling-scheme",
-        "label": "Resampling Scheme"
       }
     ],
     "requires": [
@@ -400,17 +392,13 @@ public:: true
         "label": "Random Number Generator"
       },
       {
-        "@id": "urn:ngm:class:resampling-algorithm",
-        "label": "Resampling Algorithm"
-      },
-      {
         "@id": "urn:ngm:class:state-space-model",
         "label": "State Space Model"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:fast-slam",
+        "@id": "urn:ngm:class:slam",
         "label": "FastSLAM"
       },
       {
@@ -418,11 +406,7 @@ public:: true
         "label": "Global Localisation"
       },
       {
-        "@id": "urn:ngm:class:kidnapped-robot-recovery",
-        "label": "Kidnapped Robot Recovery"
-      },
-      {
-        "@id": "urn:ngm:class:multi-target-tracking",
+        "@id": "urn:ngm:class:target-tracking",
         "label": "Multi-Target Tracking"
       },
       {
@@ -430,42 +414,18 @@ public:: true
         "label": "Robot Localisation"
       },
       {
-        "@id": "urn:ngm:class:target-tracking",
-        "label": "Target Tracking"
-      },
-      {
         "@id": "urn:ngm:class:monte-carlo-localization",
         "label": "Monte Carlo Localization"
-      },
-      {
-        "@id": "urn:ngm:class:slam",
-        "label": "SLAM"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:auxiliary-variable-method",
-        "label": "Auxiliary Variable Method"
-      },
-      {
-        "@id": "urn:ngm:class:kld-sampling",
+        "@id": "urn:ngm:class:sampling",
         "label": "KLD-Sampling"
       },
       {
-        "@id": "urn:ngm:class:mcmc-move-step",
-        "label": "MCMC Move Step"
-      },
-      {
-        "@id": "urn:ngm:class:rao-blackwellisation",
-        "label": "Rao-Blackwellisation"
-      },
-      {
-        "@id": "urn:ngm:class:sampling-importance-resampling",
+        "@id": "urn:ngm:class:importance-sampling",
         "label": "Sampling Importance Resampling"
-      },
-      {
-        "@id": "urn:ngm:class:sequential-importance-sampling",
-        "label": "Sequential Importance Sampling"
       }
     ],
     "uses": [
@@ -574,14 +534,13 @@ public:: true
       {
         "@id": "urn:ngm:class:ros-navigation-stack",
         "label": "ROS Navigation Stack"
-      },
-      {
-        "@id": "urn:ngm:class:rss-conference",
-        "label": "RSS Conference"
       }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"}
+      {
+        "@id": "urn:ngm:class:robo-navigation-and-planning",
+        "label": "Navigation and Planning"
+      }
     ]
   },
   "quality": 0.52,

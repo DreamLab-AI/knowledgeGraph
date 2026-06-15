@@ -84,16 +84,6 @@ public:: true
     }
   ],
   "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:cultural-experience-categorization",
-        "label": "Cultural Experience Categorization"
-      },
-      {
-        "@id": "urn:ngm:class:tourism-application-classification",
-        "label": "Tourism Application Classification"
-      }
-    ],
     "partOf": [
       {
         "@id": "urn:ngm:class:etsi-domain-taxonomy",

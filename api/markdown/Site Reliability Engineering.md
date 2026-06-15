@@ -75,18 +75,6 @@ public:: true
       {
         "@id": "urn:ngm:class:service-level-objective",
         "label": "Service Level Objective"
-      },
-      {
-        "@id": "urn:ngm:class:error-budget",
-        "label": "Error Budget"
-      },
-      {
-        "@id": "urn:ngm:class:toil-reduction",
-        "label": "Toil Reduction"
-      },
-      {
-        "@id": "urn:ngm:class:postmortem",
-        "label": "Postmortem"
       }
     ],
     "uses": [

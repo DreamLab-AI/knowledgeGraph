@@ -16,20 +16,7 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:department-of-computing",
-        "label": "Department of Computing"
-      },
-      {
-        "id": "urn:ngm:class:faculty-of-medicine",
-        "label": "Faculty of Medicine"
-      },
-      {
-        "id": "urn:ngm:class:white-city-innovation-district",
-        "label": "White City Innovation District"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:research-funding",
@@ -48,10 +35,6 @@
       {
         "id": "urn:ngm:class:open-science",
         "label": "Open Science"
-      },
-      {
-        "id": "urn:ngm:class:spin-out-company",
-        "label": "Spin-out Company"
       }
     ],
     "dependsOn": [],
@@ -61,10 +44,6 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
-      },
-      {
-        "id": "urn:ngm:class:blockchain-research",
-        "label": "Blockchain Research"
       },
       {
         "id": "urn:ngm:class:digital-twin",
@@ -97,10 +76,6 @@
       {
         "id": "urn:ngm:class:open-source-software",
         "label": "Open Source Software"
-      },
-      {
-        "id": "urn:ngm:class:interdisciplinary-research",
-        "label": "Interdisciplinary Research"
       }
     ],
     "standardizedBy": [],
@@ -108,10 +83,6 @@
       {
         "id": "urn:ngm:class:russell-group",
         "label": "Russell Group"
-      },
-      {
-        "id": "urn:ngm:class:united-kingdom-research-base",
-        "label": "United Kingdom Research Base"
       }
     ],
     "relatedTo": [
@@ -124,7 +95,7 @@
         "label": "University of Edinburgh"
       },
       {
-        "id": "urn:ngm:class:oxford-university",
+        "id": "urn:ngm:class:university-of-oxford",
         "label": "University of Oxford"
       },
       {

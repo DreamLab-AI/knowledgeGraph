@@ -79,11 +79,11 @@ public:: true
         "label": "Digital Signatures"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:cryptographic-hash-functions",
+        "@id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hash Functions"
       }
     ],
@@ -111,12 +111,8 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:tls-transport-layer-security",
+        "@id": "urn:ngm:class:transport-layer-security",
         "label": "TLS (Transport Layer Security)"
-      },
-      {
-        "@id": "urn:ngm:class:ssh-secure-shell",
-        "label": "SSH (Secure Shell)"
       },
       {
         "@id": "urn:ngm:class:ipsec",
@@ -129,21 +125,21 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "@id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proofs"
       },
       {
-        "@id": "urn:ngm:class:message-authentication-codes",
+        "@id": "urn:ngm:class:message-authentication-code",
         "label": "Message Authentication Codes"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:symmetric-key-cryptography",
+        "@id": "urn:ngm:class:symmetric-encryption",
         "label": "Symmetric Key Cryptography"
       },
       {
-        "@id": "urn:ngm:class:asymmetric-key-cryptography",
+        "@id": "urn:ngm:class:asymmetric-cryptography",
         "label": "Asymmetric Key Cryptography"
       }
     ],

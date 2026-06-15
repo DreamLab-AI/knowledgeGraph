@@ -79,7 +79,7 @@ public:: true
         "label": "Proxy Pattern"
       },
       {
-        "@id": "urn:ngm:class:governor-contract",
+        "@id": "urn:ngm:class:open-zeppelin-governor",
         "label": "Governor Contract"
       }
     ],
@@ -89,7 +89,7 @@ public:: true
         "label": "Solidity"
       },
       {
-        "@id": "urn:ngm:class:ethereum-virtual-machine",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       }
     ],
@@ -105,10 +105,6 @@ public:: true
       {
         "@id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
-      },
-      {
-        "@id": "urn:ngm:class:token-contract",
-        "label": "Token Contract"
       }
     ],
     "implements": [
@@ -133,10 +129,6 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:upgradeable-contract",
-        "label": "Upgradeable Contract"
-      },
-      {
         "@id": "urn:ngm:class:role-based-access-control",
         "label": "Role-Based Access Control"
       },
@@ -155,16 +147,6 @@ public:: true
         "label": "Smart Contract"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:solmate",
-        "label": "Solmate"
-      },
-      {
-        "@id": "urn:ngm:class:dapptools",
-        "label": "DappTools"
-      }
-    ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:security-audit",
@@ -177,15 +159,11 @@ public:: true
       {
         "@id": "urn:ngm:class:formal-verification",
         "label": "Formal Verification"
-      },
-      {
-        "@id": "urn:ngm:class:smart-contract-framework",
-        "label": "Smart Contract Framework"
       }
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:software-supply-chain-security",
+        "@id": "urn:ngm:class:supply-chain-security",
         "label": "Software Supply Chain Security"
       },
       {

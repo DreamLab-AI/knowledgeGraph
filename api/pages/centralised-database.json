@@ -30,7 +30,7 @@
         "label": "Access Control"
       },
       {
-        "id": "urn:ngm:class:transaction-management",
+        "id": "urn:ngm:class:transaction-manager",
         "label": "Transaction Management"
       }
     ],
@@ -58,13 +58,13 @@
         "label": "Data Consistency"
       },
       {
-        "id": "urn:ngm:class:centralised-access-control",
+        "id": "urn:ngm:class:access-control",
         "label": "Centralised Access Control"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:server-infrastructure",
+        "id": "urn:ngm:class:infrastructure",
         "label": "Server Infrastructure"
       },
       {
@@ -84,7 +84,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:distributed-database",
+        "id": "urn:ngm:class:distributed-databases",
         "label": "Distributed Database"
       },
       {
@@ -120,7 +120,7 @@
         "label": "Indexing"
       },
       {
-        "id": "urn:ngm:class:query-optimisation",
+        "id": "urn:ngm:class:optimisation",
         "label": "Query Optimisation"
       },
       {
@@ -153,10 +153,6 @@
       }
     ],
     "partOf": [
-      {
-        "id": "urn:ngm:class:information-system",
-        "label": "Information System"
-      },
       {
         "id": "urn:ngm:class:data-management",
         "label": "Data Management"

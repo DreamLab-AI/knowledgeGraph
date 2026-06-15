@@ -192,11 +192,11 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:bip-340-cryptography",
+        "@id": "urn:ngm:class:bip-340",
         "label": "BIP-340 Cryptography"
       },
       {
-        "@id": "urn:ngm:class:w3-c-did-method",
+        "@id": "urn:ngm:class:did-method",
         "label": "W3C DID Method"
       },
       {
@@ -220,20 +220,12 @@ public:: true
       {
         "@id": "urn:ngm:class:message-signing",
         "label": "Message Signing"
-      },
-      {
-        "@id": "urn:ngm:class:self-sovereign-key-management",
-        "label": "Self-Sovereign Key Management"
       }
     ],
     "implements": [
       {
         "@id": "urn:ngm:class:bip-340",
         "label": "BIP-340"
-      },
-      {
-        "@id": "urn:ngm:class:nostr-nip-01",
-        "label": "Nostr NIP-01"
       },
       {
         "@id": "urn:ngm:class:schnorr-signature",

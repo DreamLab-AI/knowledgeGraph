@@ -60,10 +60,6 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:character-encoding",
-        "label": "Character Encoding"
-      },
-      {
         "id": "urn:ngm:class:type-system",
         "label": "Type System"
       }
@@ -72,22 +68,9 @@
       {
         "id": "urn:ngm:class:open-standard",
         "label": "Open Standard"
-      },
-      {
-        "id": "urn:ngm:class:interface-definition-language",
-        "label": "Interface Definition Language"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:binary-format",
-        "label": "Binary Format"
-      },
-      {
-        "id": "urn:ngm:class:text-format",
-        "label": "Text Format"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:linked-data",
@@ -100,7 +83,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:compression",
+        "id": "urn:ngm:class:data-compression",
         "label": "Compression"
       },
       {
@@ -135,7 +118,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {

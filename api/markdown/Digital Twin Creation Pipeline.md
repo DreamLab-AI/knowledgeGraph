@@ -114,7 +114,7 @@ public:: true
         "label": "Real-Time Monitoring"
       },
       {
-        "@id": "urn:ngm:class:virtual-replica-creation",
+        "@id": "urn:ngm:class:virtual-replica",
         "label": "Virtual Replica Creation"
       }
     ]

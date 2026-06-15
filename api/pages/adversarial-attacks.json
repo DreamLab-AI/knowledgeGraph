@@ -21,26 +21,8 @@
   "maturity": "draft",
   "relationships": {
     "hasPart": [],
-    "requires": [
-      {
-        "id": "urn:ngm:class:crafted-perturbations",
-        "label": "Crafted Perturbations"
-      },
-      {
-        "id": "urn:ngm:class:knowledge-of-target-model",
-        "label": "Knowledge of Target Model"
-      }
-    ],
-    "enables": [
-      {
-        "id": "urn:ngm:class:model-evasion",
-        "label": "Model Evasion"
-      },
-      {
-        "id": "urn:ngm:class:system-manipulation",
-        "label": "System Manipulation"
-      }
-    ],
+    "requires": [],
+    "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],

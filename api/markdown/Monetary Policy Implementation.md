@@ -53,52 +53,135 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:open-market-operations", "label": "Open Market Operations"},
-      {"@id": "urn:ngm:class:reserve-requirements", "label": "Reserve Requirements"},
-      {"@id": "urn:ngm:class:standing-lending-facility", "label": "Standing Lending Facility"},
-      {"@id": "urn:ngm:class:forward-guidance", "label": "Forward Guidance"}
+      {
+        "@id": "urn:ngm:class:open-market-operations",
+        "label": "Open Market Operations"
+      },
+      {
+        "@id": "urn:ngm:class:reserve-requirements",
+        "label": "Reserve Requirements"
+      },
+      {
+        "@id": "urn:ngm:class:forward-guidance",
+        "label": "Forward Guidance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:central-bank", "label": "Central Bank"},
-      {"@id": "urn:ngm:class:interbank-market", "label": "Interbank Market"}
+      {
+        "@id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "@id": "urn:ngm:class:interbank-market",
+        "label": "Interbank Market"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:central-bank-digital-currency-cbdc", "label": "Central Bank Digital Currency (CBDC)"},
-      {"@id": "urn:ngm:class:programmable-money", "label": "Programmable Money"},
-      {"@id": "urn:ngm:class:financial-stability", "label": "Financial Stability"},
-      {"@id": "urn:ngm:class:liquidity-management", "label": "Liquidity Management"}
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "label": "Central Bank Digital Currency (CBDC)"
+      },
+      {
+        "@id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-management",
+        "label": "Liquidity Management"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cbdc-frameworks", "label": "CBDC Frameworks"},
-      {"@id": "urn:ngm:class:payment-system", "label": "Payment System"},
-      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
-      {"@id": "urn:ngm:class:real-time-gross-settlement", "label": "Real-Time Gross Settlement"}
+      {
+        "@id": "urn:ngm:class:cbdc-frameworks",
+        "label": "CBDC Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-gross-settlement",
+        "label": "Real-Time Gross Settlement"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:price-stability", "label": "Price Stability"},
-      {"@id": "urn:ngm:class:economic-growth", "label": "Economic Growth"}
+      {
+        "@id": "urn:ngm:class:price-stability",
+        "label": "Price Stability"
+      },
+      {
+        "@id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:fiscal-policy", "label": "Fiscal Policy"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:fiscal-policy",
+        "label": "Fiscal Policy"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:inflation-control", "label": "Inflation Control"},
-      {"@id": "urn:ngm:class:monetary-sovereignty", "label": "Monetary Sovereignty"},
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
-      {"@id": "urn:ngm:class:economic-governance", "label": "Economic Governance"},
-      {"@id": "urn:ngm:class:quantitative-easing", "label": "Quantitative Easing"},
-      {"@id": "urn:ngm:class:interest-rate-policy", "label": "Interest Rate Policy"}
+      {
+        "@id": "urn:ngm:class:inflation-control",
+        "label": "Inflation Control"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-sovereignty",
+        "label": "Monetary Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:economic-governance",
+        "label": "Economic Governance"
+      },
+      {
+        "@id": "urn:ngm:class:quantitative-easing",
+        "label": "Quantitative Easing"
+      },
+      {
+        "@id": "urn:ngm:class:interest-rate-policy",
+        "label": "Interest Rate Policy"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:sc-governance-and-safety", "label": "Governance and Safety"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"}
+      {
+        "@id": "urn:ngm:class:sc-governance-and-safety",
+        "label": "Governance and Safety"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:monetary-policy-operations", "label": "Monetary Policy Operations"},
-    {"@id": "urn:ngm:class:central-bank-operations", "label": "Central Bank Operations"}
+    {
+      "@id": "urn:ngm:class:monetary-policy-operations",
+      "label": "Monetary Policy Operations"
+    },
+    {
+      "@id": "urn:ngm:class:central-bank-operations",
+      "label": "Central Bank Operations"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

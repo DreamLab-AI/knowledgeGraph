@@ -101,7 +101,7 @@
         "label": "Style Transfer"
       },
       {
-        "id": "urn:ngm:class:multimodal-models",
+        "id": "urn:ngm:class:multimodal-ai-architecture-models",
         "label": "Multimodal Models"
       }
     ],
@@ -115,7 +115,7 @@
         "label": "Backpropagation"
       },
       {
-        "id": "urn:ngm:class:learning-rate-scheduling",
+        "id": "urn:ngm:class:learning-rate-schedule",
         "label": "Learning Rate Scheduling"
       },
       {

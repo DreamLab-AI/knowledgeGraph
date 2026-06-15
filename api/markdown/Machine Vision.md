@@ -58,10 +58,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:image-acquisition",
-        "label": "Image Acquisition"
-      },
-      {
         "@id": "urn:ngm:class:image-preprocessing",
         "label": "Image Preprocessing"
       },
@@ -84,10 +80,6 @@ public:: true
         "label": "Camera"
       },
       {
-        "@id": "urn:ngm:class:illumination",
-        "label": "Illumination"
-      },
-      {
         "@id": "urn:ngm:class:optics",
         "label": "Optics"
       }
@@ -100,14 +92,6 @@ public:: true
       {
         "@id": "urn:ngm:class:defect-detection",
         "label": "Defect Detection"
-      },
-      {
-        "@id": "urn:ngm:class:dimensional-measurement",
-        "label": "Dimensional Measurement"
-      },
-      {
-        "@id": "urn:ngm:class:robot-guidance",
-        "label": "Robot Guidance"
       },
       {
         "@id": "urn:ngm:class:optical-character-recognition",
@@ -142,16 +126,6 @@ public:: true
         "label": "Robotics"
       }
     ],
-    "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:aia-standards",
-        "label": "AIA Standards"
-      },
-      {
-        "@id": "urn:ngm:class:genisys-standard",
-        "label": "GenICam Standard"
-      }
-    ],
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:computer-vision",
@@ -176,10 +150,6 @@ public:: true
       {
         "@id": "urn:ngm:class:barcode-scanning",
         "label": "Barcode Scanning"
-      },
-      {
-        "@id": "urn:ngm:class:3d-imaging",
-        "label": "3D Imaging"
       }
     ]
   },

@@ -18,18 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:shard",
-        "label": "Shard"
-      },
-      {
-        "id": "urn:ngm:class:shard-committee",
-        "label": "Shard Committee"
-      },
-      {
-        "id": "urn:ngm:class:cross-shard-communication",
-        "label": "Cross-Shard Communication"
-      },
-      {
         "id": "urn:ngm:class:beacon-chain",
         "label": "Beacon Chain"
       }
@@ -38,10 +26,6 @@
       {
         "id": "urn:ngm:class:consensus-protocol",
         "label": "Consensus Protocol"
-      },
-      {
-        "id": "urn:ngm:class:sharding-key",
-        "label": "Sharding Key"
       },
       {
         "id": "urn:ngm:class:validator-set",
@@ -74,10 +58,6 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:horizontal-partitioning",
-        "label": "Horizontal Partitioning"
-      },
-      {
         "id": "urn:ngm:class:data-partitioning",
         "label": "Data Partitioning"
       }
@@ -92,12 +72,7 @@
         "label": "Replication"
       }
     ],
-    "bridgesTo": [
-      {
-        "id": "urn:ngm:class:database-partitioning",
-        "label": "Database Partitioning"
-      }
-    ],
+    "bridgesTo": [],
     "uses": [
       {
         "id": "urn:ngm:class:consensus-protocol",

@@ -18,11 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:person-identification",
+        "id": "urn:ngm:class:identification-system",
         "label": "Person Identification"
       },
       {
-        "id": "urn:ngm:class:avatar-identity",
+        "id": "urn:ngm:class:avatar",
         "label": "Avatar Identity"
       }
     ],
@@ -66,7 +66,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:xr-reference-architecture",
+        "id": "urn:ngm:class:reference-architecture",
         "label": "XR Reference Architecture"
       }
     ],
@@ -86,7 +86,7 @@
         "label": "Self Sovereign Identity"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential",
+        "id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       }
     ],
@@ -118,7 +118,7 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:ieee-2048",
+        "id": "urn:ngm:class:ieee-p-2048",
         "label": "IEEE 2048"
       }
     ],

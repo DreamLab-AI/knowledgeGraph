@@ -20,10 +20,6 @@
       {
         "id": "urn:ngm:class:contact-dynamics-model",
         "label": "Contact Dynamics Model"
-      },
-      {
-        "id": "urn:ngm:class:musculoskeletal-model",
-        "label": "Musculoskeletal Model"
       }
     ],
     "requires": [
@@ -71,15 +67,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:isaac-gym",
-        "label": "Isaac Gym"
-      },
-      {
-        "id": "urn:ngm:class:pybullet",
-        "label": "PyBullet"
-      },
-      {
-        "id": "urn:ngm:class:gazebo",
+        "id": "urn:ngm:class:gazebo-simulator",
         "label": "Gazebo"
       }
     ],

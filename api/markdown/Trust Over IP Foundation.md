@@ -38,48 +38,115 @@ public:: true
   ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:trust-registry", "label": "Trust Registry"}
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:trust-registry",
+        "label": "Trust Registry"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:decentralised-identifiers", "label": "Decentralised Identifiers"},
-      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+      {
+        "@id": "urn:ngm:class:decentralised-identifiers",
+        "label": "Decentralised Identifiers"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:credential-exchange", "label": "Credential Exchange"},
-      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"},
-      {"@id": "urn:ngm:class:cross-border-identity", "label": "Cross-Border Identity"},
-      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"}
+      {
+        "@id": "urn:ngm:class:credential-exchange",
+        "label": "Credential Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-identity",
+        "label": "Cross-Border Identity"
+      },
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:w3c-did-core", "label": "W3C DID Core"},
-      {"@id": "urn:ngm:class:w3c-verifiable-credentials", "label": "W3C Verifiable Credentials"}
+      {
+        "@id": "urn:ngm:class:w3-c-did-core",
+        "label": "W3C DID Core"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-verifiable-credentials",
+        "label": "W3C Verifiable Credentials"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:did-document", "label": "DID Document"},
-      {"@id": "urn:ngm:class:didcomm-messaging", "label": "DIDComm Messaging"},
-      {"@id": "urn:ngm:class:openid-for-verifiable-credentials", "label": "OpenID for Verifiable Credentials"}
+      {
+        "@id": "urn:ngm:class:did-document",
+        "label": "DID Document"
+      },
+      {
+        "@id": "urn:ngm:class:didcomm",
+        "label": "DIDComm Messaging"
+      },
+      {
+        "@id": "urn:ngm:class:openid-for-verifiable-credentials",
+        "label": "OpenID for Verifiable Credentials"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:decentralized-identity-foundation", "label": "Decentralized Identity Foundation"},
-      {"@id": "urn:ngm:class:w3c-credentials-community-group", "label": "W3C Credentials Community Group"},
-      {"@id": "urn:ngm:class:internet-identity-workshop", "label": "Internet Identity Workshop"},
-      {"@id": "urn:ngm:class:eidas-regulation", "label": "eIDAS Regulation"}
+      {
+        "@id": "urn:ngm:class:decentralized-identity-foundation",
+        "label": "Decentralized Identity Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:eidas-regulation",
+        "label": "eIDAS Regulation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:federated-identity", "label": "Federated Identity"},
-      {"@id": "urn:ngm:class:centralised-identity-provider", "label": "Centralised Identity Provider"}
+      {
+        "@id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "@id": "urn:ngm:class:centralized-identity-provider",
+        "label": "Centralised Identity Provider"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:digital-wallet", "label": "Digital Wallet"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:toip-foundation", "label": "ToIP Foundation"}
+    {
+      "@id": "urn:ngm:class:toip-foundation",
+      "label": "ToIP Foundation"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -88,17 +88,13 @@ public:: true
         "label": "Initialization Vector"
       },
       {
-        "@id": "urn:ngm:class:authentication-tag",
+        "@id": "urn:ngm:class:message-authentication-code",
         "label": "Authentication Tag"
-      },
-      {
-        "@id": "urn:ngm:class:cipher-algorithm",
-        "label": "Cipher Algorithm"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:hybrid-encryption",
+        "@id": "urn:ngm:class:encryption",
         "label": "Hybrid Encryption"
       },
       {
@@ -146,11 +142,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:advanced-encryption-standard",
-        "label": "Advanced Encryption Standard"
-      },
-      {
-        "@id": "urn:ngm:class:chacha20-poly1305",
+        "@id": "urn:ngm:class:cha-cha20-poly1305",
         "label": "ChaCha20-Poly1305"
       }
     ],
@@ -221,7 +213,7 @@ public:: true
       "label": "Private Key Cryptography"
     }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

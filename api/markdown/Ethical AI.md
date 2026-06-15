@@ -156,10 +156,6 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:ethics-by-design",
-        "label": "Ethics by Design"
-      },
-      {
         "@id": "urn:ngm:class:value-alignment",
         "label": "Value Alignment"
       }
@@ -170,7 +166,7 @@ public:: true
         "label": "Explainable AI"
       },
       {
-        "@id": "urn:ngm:class:bias-mitigation",
+        "@id": "urn:ngm:class:bias-mitigation-techniques",
         "label": "Bias Mitigation"
       }
     ],
@@ -218,10 +214,6 @@ public:: true
       {
         "@id": "urn:ngm:class:ai-risk-management",
         "label": "AI Risk Management"
-      },
-      {
-        "@id": "urn:ngm:class:algorithmic-decision-making",
-        "label": "Algorithmic Decision Making"
       }
     ]
   },

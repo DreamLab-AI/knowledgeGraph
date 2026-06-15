@@ -146,10 +146,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:conflict-resolution-mechanism",
-        "label": "Conflict Resolution Mechanism"
-      },
-      {
         "@id": "urn:ngm:class:legal-authority",
         "label": "Legal Authority"
       },

@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:noise-scheduler",
+        "id": "urn:ngm:class:noise-schedule",
         "label": "Noise Scheduler"
       },
       {
@@ -69,7 +69,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:latent-diffusion-model",
+        "id": "urn:ngm:class:latent-diffusion",
         "label": "Latent Diffusion Model"
       },
       {
@@ -103,7 +103,7 @@
         "label": "Diffusion Model"
       },
       {
-        "id": "urn:ngm:class:pytorch",
+        "id": "urn:ngm:class:python-pytorch-deep-learning-stack",
         "label": "PyTorch"
       },
       {
@@ -111,17 +111,13 @@
         "label": "JAX"
       },
       {
-        "id": "urn:ngm:class:xformers",
-        "label": "xFormers"
-      },
-      {
-        "id": "urn:ngm:class:accelerate",
+        "id": "urn:ngm:class:hugging-face-accelerate",
         "label": "Accelerate"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:dreambooth",
+        "id": "urn:ngm:class:kohya-dreambooth-and-similar",
         "label": "DreamBooth"
       },
       {
@@ -141,7 +137,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       },
       {

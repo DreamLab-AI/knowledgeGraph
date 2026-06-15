@@ -39,7 +39,7 @@
         "label": "Authentication Standards"
       },
       {
-        "id": "urn:ngm:class:bbs-plus-signatures",
+        "id": "urn:ngm:class:bbs-signatures",
         "label": "BBS+ Signatures"
       }
     ],

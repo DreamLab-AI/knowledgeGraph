@@ -22,10 +22,6 @@
         "label": "Haptic Interface"
       },
       {
-        "id": "urn:ngm:class:bilateral-control",
-        "label": "Bilateral Control"
-      },
-      {
         "id": "urn:ngm:class:control-loop",
         "label": "Control Loop"
       }
@@ -42,10 +38,6 @@
       {
         "id": "urn:ngm:class:low-latency-network",
         "label": "Low-Latency Network"
-      },
-      {
-        "id": "urn:ngm:class:encrypted-channel",
-        "label": "Encrypted Channel"
       }
     ],
     "enables": [
@@ -56,24 +48,12 @@
       {
         "id": "urn:ngm:class:surgical-robotics",
         "label": "Surgical Robotics"
-      },
-      {
-        "id": "urn:ngm:class:rescue-operations",
-        "label": "Rescue Operations"
-      },
-      {
-        "id": "urn:ngm:class:deep-sea-exploration",
-        "label": "Deep Sea Exploration"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:5g",
         "label": "5G"
-      },
-      {
-        "id": "urn:ngm:class:shared-autonomy",
-        "label": "Shared Autonomy"
       }
     ],
     "implements": [],
@@ -88,10 +68,6 @@
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:immersive-control",
-        "label": "Immersive Control"
-      },
       {
         "id": "urn:ngm:class:metaverse",
         "label": "Metaverse"
@@ -119,10 +95,6 @@
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:operator-workload",
-        "label": "Operator Workload"
-      },
       {
         "id": "urn:ngm:class:situational-awareness",
         "label": "Situational Awareness"

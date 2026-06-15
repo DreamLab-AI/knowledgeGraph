@@ -23,52 +23,125 @@ public:: true
   "definition": "A Content Pipeline is the end-to-end automated or semi-automated workflow that transforms raw creative assets—geometry, textures, audio, video, or data—from authoring tools into the optimised, platform-specific formats required by a runtime engine, distribution system, or media player. It encompasses ingestion, validation, processing, compression, and delivery stages with dependency tracking and incremental rebuild capabilities.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:production-pipeline", "label": "Production Pipeline"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:production-pipeline",
+      "label": "Production Pipeline"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:asset-pipeline", "label": "Asset Pipeline"},
-      {"@id": "urn:ngm:class:build-system", "label": "Build System"},
-      {"@id": "urn:ngm:class:data-ingestion", "label": "Data Ingestion"},
-      {"@id": "urn:ngm:class:asset-validation", "label": "Asset Validation"}
+      {
+        "@id": "urn:ngm:class:asset-pipeline",
+        "label": "Asset Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:data-ingestion",
+        "label": "Data Ingestion"
+      },
+      {
+        "@id": "urn:ngm:class:asset-validation",
+        "label": "Asset Validation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:asset-pipeline", "label": "Asset Pipeline"},
-      {"@id": "urn:ngm:class:dependency-graph", "label": "Dependency Graph"},
-      {"@id": "urn:ngm:class:texture-compression", "label": "Texture Compression"},
-      {"@id": "urn:ngm:class:level-of-detail", "label": "Level of Detail"}
+      {
+        "@id": "urn:ngm:class:asset-pipeline",
+        "label": "Asset Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:dependency-graph",
+        "label": "Dependency Graph"
+      },
+      {
+        "@id": "urn:ngm:class:texture-compression",
+        "label": "Texture Compression"
+      },
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"},
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:asset-management", "label": "Asset Management"},
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"}
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:content-creation", "label": "Content Creation"},
-      {"@id": "urn:ngm:class:digital-content-creation", "label": "Digital Content Creation"},
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
+      {
+        "@id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"},
-      {"@id": "urn:ngm:class:universal-scene-description", "label": "Universal Scene Description"},
-      {"@id": "urn:ngm:class:shader-compilation", "label": "Shader Compilation"}
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "@id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      },
+      {
+        "@id": "urn:ngm:class:shader-compilation",
+        "label": "Shader Compilation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:manual-asset-processing", "label": "Manual Asset Processing"}
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:media-processing-pipeline", "label": "Media Processing Pipeline"},
-    {"@id": "urn:ngm:class:asset-build-pipeline", "label": "Asset Build Pipeline"}
+    {
+      "@id": "urn:ngm:class:media-processing-pipeline",
+      "label": "Media Processing Pipeline"
+    },
+    {
+      "@id": "urn:ngm:class:asset-build-pipeline",
+      "label": "Asset Build Pipeline"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -22,7 +22,7 @@
         "label": "DID Document"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential",
+        "id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       },
       {
@@ -69,11 +69,11 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:w3c-did-specification",
+        "id": "urn:ngm:class:w3-c-did-specification",
         "label": "W3C DID Specification"
       },
       {
-        "id": "urn:ngm:class:verifiable-credentials-data-model",
+        "id": "urn:ngm:class:w-3-c-verifiable-credentials-data-model",
         "label": "Verifiable Credentials Data Model"
       }
     ],
@@ -83,7 +83,7 @@
         "label": "Federated Identity"
       },
       {
-        "id": "urn:ngm:class:centralised-identity-provider",
+        "id": "urn:ngm:class:centralized-identity-provider",
         "label": "Centralised Identity Provider"
       },
       {
@@ -99,10 +99,6 @@
       {
         "id": "urn:ngm:class:web3",
         "label": "Web3"
-      },
-      {
-        "id": "urn:ngm:class:iot-device-authentication",
-        "label": "IoT Device Authentication"
       }
     ],
     "uses": [
@@ -119,7 +115,7 @@
         "label": "Zero-Knowledge Proof"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -134,7 +130,7 @@
         "label": "W3C"
       },
       {
-        "id": "urn:ngm:class:openid-foundation",
+        "id": "urn:ngm:class:open-id-foundation",
         "label": "OpenID Foundation"
       },
       {

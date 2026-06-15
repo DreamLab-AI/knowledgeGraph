@@ -24,56 +24,143 @@ public:: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:inference", "label": "Inference"}
+    {
+      "@id": "urn:ngm:class:inference",
+      "label": "Inference"
+    }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:model-serving-runtime", "label": "Model Serving Runtime"},
-    {"@id": "urn:ngm:class:inference-runtime", "label": "Inference Runtime"}
+    {
+      "@id": "urn:ngm:class:model-serving-runtime",
+      "label": "Model Serving Runtime"
+    },
+    {
+      "@id": "urn:ngm:class:inference-runtime",
+      "label": "Inference Runtime"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:operator-fusion", "label": "Operator Fusion"},
-      {"@id": "urn:ngm:class:kernel-auto-tuning", "label": "Kernel Auto-Tuning"},
-      {"@id": "urn:ngm:class:dynamic-batching", "label": "Dynamic Batching"},
-      {"@id": "urn:ngm:class:quantisation", "label": "Quantisation"}
+      {
+        "@id": "urn:ngm:class:operator-fusion",
+        "label": "Operator Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:kernel-auto-tuning",
+        "label": "Kernel Auto-Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-batching",
+        "label": "Dynamic Batching"
+      },
+      {
+        "@id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"},
-      {"@id": "urn:ngm:class:ai-deployment", "label": "AI Deployment"}
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "@id": "urn:ngm:class:ai-deployment",
+        "label": "AI Deployment"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"},
-      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:real-time-inference-at-edge", "label": "Real-Time Inference at Edge"},
-      {"@id": "urn:ngm:class:large-language-model-serving", "label": "Large Language Model Serving"},
-      {"@id": "urn:ngm:class:ai-deployment", "label": "AI Deployment"}
+      {
+        "@id": "urn:ngm:class:real-time-inference-at-edge",
+        "label": "Real-Time Inference at Edge"
+      },
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Large Language Model Serving"
+      },
+      {
+        "@id": "urn:ngm:class:ai-deployment",
+        "label": "AI Deployment"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"},
-      {"@id": "urn:ngm:class:tensor-processing-unit", "label": "Tensor Processing Unit"},
-      {"@id": "urn:ngm:class:inference-hardware", "label": "Inference Hardware"}
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:onnx", "label": "ONNX"},
-      {"@id": "urn:ngm:class:compute-unified-device-architecture", "label": "CUDA"},
-      {"@id": "urn:ngm:class:speculative-decoding", "label": "Speculative Decoding"}
+      {
+        "@id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      },
+      {
+        "@id": "urn:ngm:class:compute-unified-device-architecture",
+        "label": "CUDA"
+      },
+      {
+        "@id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:training-framework", "label": "Training Framework"},
-      {"@id": "urn:ngm:class:eager-execution", "label": "Eager Execution"}
+      {
+        "@id": "urn:ngm:class:training-framework",
+        "label": "Training Framework"
+      },
+      {
+        "@id": "urn:ngm:class:eager-execution",
+        "label": "Eager Execution"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:latency", "label": "Latency"},
-      {"@id": "urn:ngm:class:throughput", "label": "Throughput"},
-      {"@id": "urn:ngm:class:model-compression", "label": "Model Compression"},
-      {"@id": "urn:ngm:class:neural-processing-unit", "label": "Neural Processing Unit"},
-      {"@id": "urn:ngm:class:kv-cache", "label": "KV Cache"}
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      },
+      {
+        "@id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      },
+      {
+        "@id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
+      }
     ]
   },
   "quality": 0.75,

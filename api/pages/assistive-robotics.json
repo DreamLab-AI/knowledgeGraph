@@ -22,10 +22,6 @@
         "label": "Exoskeleton Robot"
       },
       {
-        "id": "urn:ngm:class:robotic-prosthesis",
-        "label": "Robotic Prosthesis"
-      },
-      {
         "id": "urn:ngm:class:social-robotics",
         "label": "Social Robotics"
       }
@@ -56,10 +52,6 @@
       {
         "id": "urn:ngm:class:independent-living",
         "label": "Independent Living"
-      },
-      {
-        "id": "urn:ngm:class:motor-rehabilitation",
-        "label": "Motor Rehabilitation"
       }
     ],
     "dependsOn": [
@@ -72,7 +64,7 @@
         "label": "Real-Time Control"
       },
       {
-        "id": "urn:ngm:class:battery-management",
+        "id": "urn:ngm:class:battery-management-system",
         "label": "Battery Management"
       }
     ],
@@ -99,7 +91,7 @@
         "label": "Lower Limb Exoskeleton"
       },
       {
-        "id": "urn:ngm:class:brain-computer-interface",
+        "id": "urn:ngm:class:brain-computer-interfaces",
         "label": "Brain-Computer Interface"
       },
       {
@@ -113,10 +105,6 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:elderly-care",
-        "label": "Elderly Care"
-      },
-      {
         "id": "urn:ngm:class:disability-inclusion",
         "label": "Disability Inclusion"
       }
@@ -125,18 +113,9 @@
       {
         "id": "urn:ngm:class:iso-13482",
         "label": "ISO 13482"
-      },
-      {
-        "id": "urn:ngm:class:medical-device-regulation",
-        "label": "Medical Device Regulation"
       }
     ],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:rehabilitation-engineering",
-        "label": "Rehabilitation Engineering"
-      }
-    ],
+    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:neuroprosthetics",

@@ -64,14 +64,7 @@ alias:: Reality-Virtuality Continuum
       "label": "XR Framework"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:cross-reality-experiences",
-        "label": "Cross Reality Experiences"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

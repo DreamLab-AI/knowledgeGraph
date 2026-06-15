@@ -51,10 +51,6 @@
       {
         "id": "urn:ngm:class:text-classification",
         "label": "Text Classification"
-      },
-      {
-        "id": "urn:ngm:class:natural-language-inference",
-        "label": "Natural Language Inference"
       }
     ],
     "dependsOn": [
@@ -87,10 +83,6 @@
         "label": "XLNet"
       },
       {
-        "id": "urn:ngm:class:deberta",
-        "label": "DeBERTa"
-      },
-      {
         "id": "urn:ngm:class:distilbert",
         "label": "DistilBERT"
       }
@@ -109,10 +101,6 @@
       {
         "id": "urn:ngm:class:fine-tuning",
         "label": "Fine Tuning"
-      },
-      {
-        "id": "urn:ngm:class:dynamic-masking",
-        "label": "Dynamic Masking"
       },
       {
         "id": "urn:ngm:class:byte-pair-encoding",
@@ -135,10 +123,6 @@
       {
         "id": "urn:ngm:class:pre-trained-language-model",
         "label": "Pre-Trained Language Model"
-      },
-      {
-        "id": "urn:ngm:class:contextual-word-embedding",
-        "label": "Contextual Word Embedding"
       }
     ]
   },

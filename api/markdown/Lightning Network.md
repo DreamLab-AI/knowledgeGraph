@@ -387,7 +387,7 @@ alias:: Lightning-Network
         "label": "Instant Transactions"
       },
       {
-        "@id": "urn:ngm:class:machine-payments",
+        "@id": "urn:ngm:class:machine-to-machine-payments",
         "label": "Machine Payments"
       },
       {
@@ -433,14 +433,6 @@ alias:: Lightning-Network
         "label": "Hash Time-Locked Contract"
       },
       {
-        "@id": "urn:ngm:class:lnurl-protocol",
-        "label": "LNURL Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:multi-path-payments",
-        "label": "Multi-Path Payments"
-      },
-      {
         "@id": "urn:ngm:class:onion-routing",
         "label": "Onion Routing"
       },
@@ -465,10 +457,6 @@ alias:: Lightning-Network
       {
         "@id": "urn:ngm:class:schnorr-signature",
         "label": "Schnorr Signature"
-      },
-      {
-        "@id": "urn:ngm:class:sphinx-protocol",
-        "label": "Sphinx Protocol"
       },
       {
         "@id": "urn:ngm:class:timelock",

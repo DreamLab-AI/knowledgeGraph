@@ -28,54 +28,137 @@
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:byzantine-resilient-system", "label": "Byzantine Resilient System"},
-    {"@id": "urn:ngm:class:bft-system", "label": "BFT System"}
+    {
+      "@id": "urn:ngm:class:byzantine-resilient-system",
+      "label": "Byzantine Resilient System"
+    },
+    {
+      "@id": "urn:ngm:class:bft-system",
+      "label": "BFT System"
+    }
   ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:state-machine-replication", "label": "State Machine Replication"}
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"},
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
-      {"@id": "urn:ngm:class:atomic-broadcast", "label": "Atomic Broadcast"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:atomic-broadcast",
+        "label": "Atomic Broadcast"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
-      {"@id": "urn:ngm:class:message-authentication", "label": "Message Authentication"},
-      {"@id": "urn:ngm:class:quorum-system", "label": "Quorum System"}
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:message-authentication",
+        "label": "Message Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:quorum-system",
+        "label": "Quorum System"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:leader-election", "label": "Leader Election"},
-      {"@id": "urn:ngm:class:view-change-protocol", "label": "View Change Protocol"},
-      {"@id": "urn:ngm:class:prepare-commit-phase", "label": "Prepare-Commit Phase"}
+      {
+        "@id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      },
+      {
+        "@id": "urn:ngm:class:view-change-protocol",
+        "label": "View Change Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:two-phase-commit",
+        "label": "Prepare-Commit Phase"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:permissioned-blockchain", "label": "Permissioned Blockchain"},
-      {"@id": "urn:ngm:class:replicated-state-machine", "label": "Replicated State Machine"}
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:state-machine-replication",
+        "label": "Replicated State Machine"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
-      {"@id": "urn:ngm:class:network-communication-model", "label": "Network Communication Model"}
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:network-communication",
+        "label": "Network Communication Model"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:crash-fault-tolerant-system", "label": "Crash Fault Tolerant System"},
-      {"@id": "urn:ngm:class:paxos-consensus", "label": "Paxos Consensus"},
-      {"@id": "urn:ngm:class:raft-consensus", "label": "RAFT Consensus"}
+      {
+        "@id": "urn:ngm:class:paxos",
+        "label": "Paxos Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:raft-consensus",
+        "label": "RAFT Consensus"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:byzantine-generals-problem", "label": "Byzantine Generals Problem"},
-      {"@id": "urn:ngm:class:pbft", "label": "PBFT"},
-      {"@id": "urn:ngm:class:tendermint", "label": "Tendermint"},
-      {"@id": "urn:ngm:class:hotstuff-protocol", "label": "HotStuff Protocol"}
+      {
+        "@id": "urn:ngm:class:byzantine-generals-problem",
+        "label": "Byzantine Generals Problem"
+      },
+      {
+        "@id": "urn:ngm:class:pbft",
+        "label": "PBFT"
+      },
+      {
+        "@id": "urn:ngm:class:tendermint",
+        "label": "Tendermint"
+      },
+      {
+        "@id": "urn:ngm:class:hotstuff-protocol",
+        "label": "HotStuff Protocol"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:smart-contract-platform", "label": "Smart Contract Platform"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ]
   },
   "provenance": {

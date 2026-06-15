@@ -108,10 +108,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:fair-valuation",
-        "label": "Fair Valuation"
-      },
-      {
         "@id": "urn:ngm:class:market-efficiency",
         "label": "Market Efficiency"
       },
@@ -138,10 +134,6 @@ public:: true
       {
         "@id": "urn:ngm:class:arbitrage",
         "label": "Arbitrage"
-      },
-      {
-        "@id": "urn:ngm:class:order-flow-analysis",
-        "label": "Order Flow Analysis"
       }
     ],
     "contrastsWith": [
@@ -172,14 +164,6 @@ public:: true
       {
         "@id": "urn:ngm:class:high-frequency-trading",
         "label": "High-Frequency Trading"
-      },
-      {
-        "@id": "urn:ngm:class:benchmark-rate",
-        "label": "Benchmark Rate"
-      },
-      {
-        "@id": "urn:ngm:class:consolidated-tape",
-        "label": "Consolidated Tape"
       },
       {
         "@id": "urn:ngm:class:futures-market",

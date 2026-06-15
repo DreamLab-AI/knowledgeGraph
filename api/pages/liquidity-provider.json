@@ -18,10 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:fee-income",
-        "label": "Fee Income"
-      },
-      {
         "id": "urn:ngm:class:liquidity-position",
         "label": "Liquidity Position"
       }
@@ -30,10 +26,6 @@
       {
         "id": "urn:ngm:class:token-pair",
         "label": "Token Pair"
-      },
-      {
-        "id": "urn:ngm:class:capital",
-        "label": "Capital"
       },
       {
         "id": "urn:ngm:class:wallet",
@@ -69,10 +61,6 @@
       {
         "id": "urn:ngm:class:order-book",
         "label": "Order Book"
-      },
-      {
-        "id": "urn:ngm:class:market-maker",
-        "label": "Market Maker"
       }
     ],
     "bridgesTo": [

@@ -923,7 +923,7 @@ alias:: BC-0457-decentralized-identifiers
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:did-resolution-protocol",
+        "@id": "urn:ngm:class:did-resolution",
         "label": "DID Resolution Protocol"
       },
       {
@@ -1051,10 +1051,6 @@ alias:: BC-0457-decentralized-identifiers
         "label": "Soulbound Tokens"
       },
       {
-        "@id": "urn:ngm:class:sovrin-network",
-        "label": "Sovrin Network"
-      },
-      {
         "@id": "urn:ngm:class:trust-over-ip-foundation",
         "label": "Trust Over IP Foundation"
       },
@@ -1089,7 +1085,7 @@ alias:: BC-0457-decentralized-identifiers
         "label": "EBSI"
       },
       {
-        "@id": "urn:ngm:class:european-digital-identity-wallet",
+        "@id": "urn:ngm:class:digital-identity-wallet",
         "label": "European Digital Identity Wallet"
       },
       {
@@ -1115,7 +1111,7 @@ alias:: BC-0457-decentralized-identifiers
         "label": "European Commission"
       },
       {
-        "@id": "urn:ngm:class:ietf-oauth-working-group",
+        "@id": "urn:ngm:class:ietf",
         "label": "IETF OAuth Working Group"
       },
       {
@@ -1135,7 +1131,7 @@ alias:: BC-0457-decentralized-identifiers
         "label": "W3C DID Working Group"
       },
       {
-        "@id": "urn:ngm:class:w3-c-verifiable-credentials-working-group",
+        "@id": "urn:ngm:class:w3-c-verifiable-credentials",
         "label": "W3C Verifiable Credentials Working Group"
       }
     ]

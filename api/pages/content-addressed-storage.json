@@ -49,7 +49,7 @@
         "label": "Reproducible Builds"
       },
       {
-        "id": "urn:ngm:class:verifiable-provenance",
+        "id": "urn:ngm:class:provenance",
         "label": "Verifiable Provenance"
       }
     ],
@@ -74,21 +74,17 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:location-addressed-storage",
-        "label": "Location-Addressed Storage"
-      },
-      {
         "id": "urn:ngm:class:object-storage",
         "label": "Object Storage"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:blockchain-data-layer",
+        "id": "urn:ngm:class:data-layer",
         "label": "Blockchain Data Layer"
       },
       {
-        "id": "urn:ngm:class:dataset-versioning",
+        "id": "urn:ngm:class:data-versioning",
         "label": "Dataset Versioning"
       },
       {

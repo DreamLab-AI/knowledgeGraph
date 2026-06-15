@@ -50,10 +50,6 @@
         "label": "Regulatory Harmonisation"
       },
       {
-        "id": "urn:ngm:class:terminology-standardisation",
-        "label": "Terminology Standardisation"
-      },
-      {
         "id": "urn:ngm:class:blockchain-interoperability",
         "label": "Blockchain Interoperability"
       }
@@ -62,12 +58,8 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:w3c-did-specification",
+        "id": "urn:ngm:class:w3-c-did-specification",
         "label": "W3C DID Specification"
-      },
-      {
-        "id": "urn:ngm:class:nist-glossary",
-        "label": "NIST Glossary"
       }
     ],
     "bridgesTo": [

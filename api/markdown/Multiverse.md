@@ -178,24 +178,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:asset-translation-layer",
-        "label": "Asset Translation Layer"
-      },
-      {
         "@id": "urn:ngm:class:federated-identity",
         "label": "Federated Identity"
       },
       {
         "@id": "urn:ngm:class:interoperability-protocol",
         "label": "Interoperability Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:multi-world-governance",
-        "label": "Multi-World Governance"
-      },
-      {
-        "@id": "urn:ngm:class:universal-inventory",
-        "label": "Universal Inventory"
       },
       {
         "@id": "urn:ngm:class:cross-chain-bridge",
@@ -211,10 +199,6 @@ public:: true
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:asset-bridging",
-        "label": "Asset Bridging"
-      },
       {
         "@id": "urn:ngm:class:cross-platform-authentication",
         "label": "Cross-Platform Authentication"
@@ -242,16 +226,8 @@ public:: true
         "label": "Asset Portability"
       },
       {
-        "@id": "urn:ngm:class:cross-world-travel",
-        "label": "Cross-World Travel"
-      },
-      {
         "@id": "urn:ngm:class:federated-social-networks",
         "label": "Federated Social Networks"
-      },
-      {
-        "@id": "urn:ngm:class:multi-platform-gaming",
-        "label": "Multi-Platform Gaming"
       },
       {
         "@id": "urn:ngm:class:cross-metaverse-commerce",

@@ -19,10 +19,6 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:message-schema-validation",
-        "label": "Message Schema Validation"
-      },
-      {
         "id": "urn:ngm:class:data-mapping",
         "label": "Data Mapping"
       }
@@ -37,14 +33,6 @@
         "label": "Regulatory Reporting"
       },
       {
-        "id": "urn:ngm:class:straight-through-processing",
-        "label": "Straight-Through Processing"
-      },
-      {
-        "id": "urn:ngm:class:automated-reconciliation",
-        "label": "Automated Reconciliation"
-      },
-      {
         "id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
       }
@@ -52,7 +40,7 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:business-process-model",
+        "id": "urn:ngm:class:business-process-management",
         "label": "Business Process Model"
       },
       {
@@ -62,12 +50,8 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:swift-mt",
+        "id": "urn:ngm:class:swift-messaging",
         "label": "SWIFT MT"
-      },
-      {
-        "id": "urn:ngm:class:fixed-length-financial-message",
-        "label": "Fixed-Length Financial Message"
       }
     ],
     "bridgesTo": [
@@ -95,7 +79,7 @@
         "label": "Financial Infrastructure"
       },
       {
-        "id": "urn:ngm:class:instant-payments",
+        "id": "urn:ngm:class:instant-settlement",
         "label": "Instant Payments"
       },
       {
@@ -130,10 +114,6 @@
       {
         "id": "urn:ngm:class:xml",
         "label": "XML"
-      },
-      {
-        "id": "urn:ngm:class:financial-messaging",
-        "label": "Financial Messaging"
       },
       {
         "id": "urn:ngm:class:legal-entity-identifier",

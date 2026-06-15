@@ -16,20 +16,7 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:proto-file",
-        "label": "Proto File"
-      },
-      {
-        "id": "urn:ngm:class:stub-generation",
-        "label": "Stub Generation"
-      },
-      {
-        "id": "urn:ngm:class:bidirectional-streaming",
-        "label": "Bidirectional Streaming"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:protocol-buffer",
@@ -58,7 +45,7 @@
         "label": "Service Mesh"
       },
       {
-        "id": "urn:ngm:class:polyglot-microservices",
+        "id": "urn:ngm:class:microservices",
         "label": "Polyglot Microservices"
       }
     ],
@@ -67,10 +54,6 @@
       {
         "id": "urn:ngm:class:remote-procedure-call",
         "label": "Remote Procedure Call"
-      },
-      {
-        "id": "urn:ngm:class:service-interface-definition",
-        "label": "Service Interface Definition"
       }
     ],
     "contrastsWith": [

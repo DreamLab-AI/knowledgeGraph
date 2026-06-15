@@ -24,51 +24,132 @@ alias:: RGB-Protocol
   "definition": "RGB Protocol is a client-side validation smart-contract system built on Bitcoin and the Lightning Network that enables issuance, transfer, and programmable logic over tokenised assets (fungible and non-fungible) without placing contract state on the public blockchain. Contract state is stored in off-chain client-held directed acyclic graphs (DAGs), with only cryptographic commitments anchored to Bitcoin UTXOs via single-use seals, inheriting Bitcoin's security and censorship resistance while providing scalability, privacy, and programmability unavailable to purely on-chain designs. The AluVM virtual machine executes contract validation logic deterministically off-chain, and Lightning Network channels enable instant, low-fee RGB asset transfers. Developed by the LNP/BP Association from 2018 onward, RGB reached production stability in 2024 with standardised schemas RGB20 (fungible tokens) and RGB21 (non-fungible tokens).",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain-protocol",
+      "label": "Blockchain Protocol"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:rgb-smart-contracts", "label": "RGB Smart Contracts"},
-    {"@id": "urn:ngm:class:rgb-client-side-validation", "label": "RGB Client-Side Validation"}
+    {
+      "@id": "urn:ngm:class:rgb-smart-contracts",
+      "label": "RGB Smart Contracts"
+    },
+    {
+      "@id": "urn:ngm:class:rgb-client-side-validation",
+      "label": "RGB Client-Side Validation"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network", "label": "Bitcoin Network"},
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
-      {"@id": "urn:ngm:class:utxo-model", "label": "UTXO Model"},
-      {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"},
-      {"@id": "urn:ngm:class:single-use-seal", "label": "Single-Use Seal"},
-      {"@id": "urn:ngm:class:aluvm", "label": "AluVM"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "@id": "urn:ngm:class:single-use-seals",
+        "label": "Single-Use Seal"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:asset-tokenization", "label": "Asset Tokenization"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer 2 Scaling"},
-      {"@id": "urn:ngm:class:non-fungible-token", "label": "Non-Fungible Token"},
-      {"@id": "urn:ngm:class:privacy-preserving-computation", "label": "Privacy-Preserving Computation"}
+      {
+        "@id": "urn:ngm:class:asset-tokenization",
+        "label": "Asset Tokenization"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:bitcoin-transaction", "label": "Bitcoin Transaction"},
-      {"@id": "urn:ngm:class:taproot", "label": "Taproot"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
+      {
+        "@id": "urn:ngm:class:bitcoin-transaction",
+        "label": "Bitcoin Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:client-side-validation", "label": "Client-Side Validation"},
-      {"@id": "urn:ngm:class:deterministic-bitcoin-commitment", "label": "Deterministic Bitcoin Commitment"}
+      {
+        "@id": "urn:ngm:class:client-side-validation",
+        "label": "Client-Side Validation"
+      },
+      {
+        "@id": "urn:ngm:class:deterministic-bitcoin-commitment",
+        "label": "Deterministic Bitcoin Commitment"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:taproot-assets", "label": "Taproot Assets"},
-      {"@id": "urn:ngm:class:ethereum-smart-contract", "label": "Ethereum Smart Contract"},
-      {"@id": "urn:ngm:class:ordinals-protocol", "label": "Ordinals Protocol"},
-      {"@id": "urn:ngm:class:runes-protocol", "label": "Runes Protocol"}
+      {
+        "@id": "urn:ngm:class:taproot-assets",
+        "label": "Taproot Assets"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-smart-contracts",
+        "label": "Ethereum Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:ordinals",
+        "label": "Ordinals Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:runes-protocol",
+        "label": "Runes Protocol"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rgb-and-client-side-validation", "label": "RGB and Client Side Validation"},
-      {"@id": "urn:ngm:class:coloured-coins", "label": "Coloured Coins"},
-      {"@id": "urn:ngm:class:lnp-bp-association", "label": "LNP/BP Association"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+      {
+        "@id": "urn:ngm:class:rgb-and-client-side-validation",
+        "label": "RGB and Client Side Validation"
+      },
+      {
+        "@id": "urn:ngm:class:lnp-bp-standards-association",
+        "label": "LNP/BP Association"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      }
     ]
   },
   "quality": 0.74,

@@ -33,7 +33,7 @@
         "label": "Ontology Engineering"
       },
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       },
       {
@@ -50,7 +50,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:json",
+        "id": "urn:ngm:class:json-data-interchange-format",
         "label": "JSON"
       },
       {
@@ -76,10 +76,6 @@
       {
         "id": "urn:ngm:class:iri",
         "label": "IRI"
-      },
-      {
-        "id": "urn:ngm:class:prefix-declaration",
-        "label": "Prefix Declaration"
       }
     ],
     "supports": [
@@ -94,10 +90,6 @@
       {
         "id": "urn:ngm:class:shacl",
         "label": "SHACL"
-      },
-      {
-        "id": "urn:ngm:class:shex",
-        "label": "ShEx"
       }
     ],
     "standardizedBy": [
@@ -125,16 +117,8 @@
         "label": "N-Triples"
       },
       {
-        "id": "urn:ngm:class:notation3",
-        "label": "Notation3"
-      },
-      {
         "id": "urn:ngm:class:n-quads",
         "label": "N-Quads"
-      },
-      {
-        "id": "urn:ngm:class:trig",
-        "label": "TriG"
       },
       {
         "id": "urn:ngm:class:rdf-xml",

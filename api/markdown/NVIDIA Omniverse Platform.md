@@ -24,53 +24,125 @@ elevatedFrom:: [[NVIDIA Omniverse]]
   "definition": "NVIDIA Omniverse Platform is a real-time 3D simulation, rendering, and collaborative development platform built by NVIDIA on the OpenUSD (Universal Scene Description) open standard, designed to enable physically accurate digital twins, multi-user design workflows, and large-scale synthetic data generation for AI and robotics training. It provides a unified GPU-accelerated compute and rendering fabric — comprising the Nucleus collaboration server, the Kit application framework, and Connector plugins — that allows multiple applications and users to simultaneously edit shared 3D scenes with physically based rendering, ray tracing, and physics simulation. Omniverse bridges creative content-creation pipelines, industrial engineering workflows, and AI training infrastructure, with deployments spanning automotive design, factory digital twins, autonomous vehicle simulation, and robot learning environments.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:sc-platform-and-environment", "label": "Platform and Environment"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:sc-platform-and-environment",
+    "label": "Platform and Environment"
+  },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:open-usd", "label": "OpenUSD"},
-      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
-      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"},
-      {"@id": "urn:ngm:class:ray-tracing", "label": "Ray Tracing"},
-      {"@id": "urn:ngm:class:materialx", "label": "MaterialX"},
-      {"@id": "urn:ngm:class:physx-engine", "label": "PhysX Engine"}
+      {
+        "@id": "urn:ngm:class:open-usd",
+        "label": "OpenUSD"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:materialx",
+        "label": "MaterialX"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:embodied-ai-simulation", "label": "Embodied AI Simulation"},
-      {"@id": "urn:ngm:class:photorealistic-rendering", "label": "Photorealistic Rendering"},
-      {"@id": "urn:ngm:class:synthetic-data-generation", "label": "Synthetic Data Generation"},
-      {"@id": "urn:ngm:class:robot-learning", "label": "Robot Learning"},
-      {"@id": "urn:ngm:class:collaborative-design", "label": "Collaborative Design"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:embodied-ai-simulation",
+        "label": "Embodied AI Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      },
+      {
+        "@id": "urn:ngm:class:robot-learning",
+        "label": "Robot Learning"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-design",
+        "label": "Collaborative Design"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:nucleus-server", "label": "Nucleus Server"},
-      {"@id": "urn:ngm:class:omniverse-kit", "label": "Omniverse Kit"},
-      {"@id": "urn:ngm:class:isaac-sim", "label": "Isaac Sim"}
+      {
+        "@id": "urn:ngm:class:omniverse",
+        "label": "Omniverse Kit"
+      },
+      {
+        "@id": "urn:ngm:class:nvidia-corporation-isaac-sim",
+        "label": "Isaac Sim"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:nvidia-rtx-gpu", "label": "NVIDIA RTX GPU"},
-      {"@id": "urn:ngm:class:universal-scene-description", "label": "Universal Scene Description"}
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "NVIDIA RTX GPU"
+      },
+      {
+        "@id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:autonomous-vehicle-simulation", "label": "Autonomous Vehicle Simulation"},
-      {"@id": "urn:ngm:class:industrial-digital-twin", "label": "Industrial Digital Twin"},
-      {"@id": "urn:ngm:class:computer-vision-training", "label": "Computer Vision Training"}
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle-simulation",
+        "label": "Autonomous Vehicle Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Industrial Digital Twin"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:unreal-engine", "label": "Unreal Engine"},
-      {"@id": "urn:ngm:class:unity-platform", "label": "Unity Platform"}
+      {
+        "@id": "urn:ngm:class:unreal-engine",
+        "label": "Unreal Engine"
+      },
+      {
+        "@id": "urn:ngm:class:unity",
+        "label": "Unity Platform"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:3d-collaboration-platform", "label": "3D Collaboration Platform"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:collaboration-platform",
+        "label": "3D Collaboration Platform"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:sim-to-real-transfer", "label": "Sim-to-Real Transfer"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:sim-to-real-transfer",
+        "label": "Sim-to-Real Transfer"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:omniverse", "label": "Omniverse"}
+    {
+      "@id": "urn:ngm:class:omniverse",
+      "label": "Omniverse"
+    }
   ],
   "quality": 0.75,
   "provenance": {

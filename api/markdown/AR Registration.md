@@ -134,14 +134,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:geometric-accuracy",
-        "label": "Geometric Accuracy"
-      },
-      {
-        "@id": "urn:ngm:class:interaction-with-physical-objects",
-        "label": "Interaction with Physical Objects"
-      },
-      {
         "@id": "urn:ngm:class:persistent-content-anchoring",
         "label": "Persistent Content Anchoring"
       }

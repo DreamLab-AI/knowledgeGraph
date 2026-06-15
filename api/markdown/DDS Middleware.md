@@ -23,56 +23,131 @@ public:: true
   "definition": "Data Distribution Service (DDS) Middleware is an OMG-standardised publish-subscribe communication middleware designed for real-time, scalable, and decentralised data exchange in safety-critical and high-performance distributed systems. It defines a Data-Centric Publish-Subscribe (DCPS) model in which participants discover each other automatically and exchange typed data via a global data space, governed by a rich set of Quality of Service (QoS) policies covering reliability, latency, deadline, liveliness, and durability. DDS is the foundational communication layer for ROS 2, NATO's STANAG 4910 tactical networks, and aerospace control systems.",
   "domain": "distributed-systems",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:middleware", "label": "Middleware"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:middleware",
+      "label": "Middleware"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:rtps-protocol", "label": "RTPS Protocol"},
-      {"@id": "urn:ngm:class:quality-of-service-policy", "label": "Quality of Service Policy"},
-      {"@id": "urn:ngm:class:data-centric-publish-subscribe", "label": "Data-Centric Publish-Subscribe"}
+      {
+        "@id": "urn:ngm:class:quality-of-service",
+        "label": "Quality of Service Policy"
+      },
+      {
+        "@id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Data-Centric Publish-Subscribe"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:network-transport", "label": "Network Transport"},
-      {"@id": "urn:ngm:class:multicast-networking", "label": "Multicast Networking"}
+      {
+        "@id": "urn:ngm:class:network-transport",
+        "label": "Network Transport"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:publish-subscribe-pattern", "label": "Publish-Subscribe Pattern"},
-      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"},
-      {"@id": "urn:ngm:class:distributed-system-protocol", "label": "Distributed System Protocol"}
+      {
+        "@id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system-protocol",
+        "label": "Distributed System Protocol"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:collaborative-systems-modality-robotics", "label": "Collaborative Robotics"},
-      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"},
-      {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"},
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
-      {"@id": "urn:ngm:class:real-time-system", "label": "Real-Time System"}
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-robotics",
+        "label": "Collaborative Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-system",
+        "label": "Real-Time System"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ros2", "label": "ROS 2"},
-      {"@id": "urn:ngm:class:safety-critical-system", "label": "Safety-Critical System"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:ros2",
+        "label": "ROS 2"
+      },
+      {
+        "@id": "urn:ngm:class:safety-critical-systems",
+        "label": "Safety-Critical System"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:object-management-group", "label": "Object Management Group"}
+      {
+        "@id": "urn:ngm:class:object-management-group",
+        "label": "Object Management Group"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:message-broker", "label": "Message Broker"},
-      {"@id": "urn:ngm:class:mqtt", "label": "MQTT"}
+      {
+        "@id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      },
+      {
+        "@id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:middleware-layer", "label": "Middleware Layer"},
-      {"@id": "urn:ngm:class:time-sensitive-networking", "label": "Time-Sensitive Networking"}
+      {
+        "@id": "urn:ngm:class:middleware-layer",
+        "label": "Middleware Layer"
+      },
+      {
+        "@id": "urn:ngm:class:time-sensitive-networking",
+        "label": "Time-Sensitive Networking"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:data-distribution-service", "label": "Data Distribution Service"}
+    {
+      "@id": "urn:ngm:class:data-distribution-service",
+      "label": "Data Distribution Service"
+    }
   ],
   "quality": 0.8,
   "provenance": {

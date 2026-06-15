@@ -90,15 +90,11 @@ public:: true
       {
         "@id": "urn:ngm:class:session-key",
         "label": "Session Key"
-      },
-      {
-        "@id": "urn:ngm:class:master-key",
-        "label": "Master Key"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -176,7 +172,7 @@ public:: true
         "label": "NIST Cryptographic Standards"
       },
       {
-        "@id": "urn:ngm:class:fips-140",
+        "@id": "urn:ngm:class:fips-140-3",
         "label": "FIPS 140"
       }
     ],

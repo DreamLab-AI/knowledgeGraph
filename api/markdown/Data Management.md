@@ -50,52 +50,124 @@ public:: true
   "domain": "data",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"}
+    {
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:data-quality", "label": "Data Quality"},
-      {"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"},
-      {"@id": "urn:ngm:class:data-lineage", "label": "Data Lineage"},
-      {"@id": "urn:ngm:class:data-catalogue", "label": "Data Catalogue"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      },
+      {
+        "@id": "urn:ngm:class:data-catalogue",
+        "label": "Data Catalogue"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-storage", "label": "Data Storage"},
-      {"@id": "urn:ngm:class:data-security", "label": "Data Security"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+      {
+        "@id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "@id": "urn:ngm:class:data-security",
+        "label": "Data Security"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:data-analytics", "label": "Data Analytics"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"},
-      {"@id": "urn:ngm:class:business-intelligence", "label": "Business Intelligence"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:information-management", "label": "Information Management"},
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
-      {"@id": "urn:ngm:class:data-architecture", "label": "Data Architecture"},
-      {"@id": "urn:ngm:class:etl", "label": "ETL"}
+      {
+        "@id": "urn:ngm:class:information-management",
+        "label": "Information Management"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:etl-pipeline",
+        "label": "ETL"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:dama-dmbok", "label": "DAMA DMBOK"},
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"}
+      {
+        "@id": "urn:ngm:class:dama-dmbok",
+        "label": "DAMA DMBOK"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:metaverse-technology", "label": "Metaverse Technology"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:data-hoarding", "label": "Data Hoarding"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-technology",
+        "label": "Metaverse Technology"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:data-resource-management", "label": "Data Resource Management"}
+    {
+      "@id": "urn:ngm:class:data-resource-management",
+      "label": "Data Resource Management"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -688,7 +688,7 @@ public:: true
         "label": "ISO 21448"
       },
       {
-        "@id": "urn:ngm:class:sae-j3016",
+        "@id": "urn:ngm:class:sae-j-3016",
         "label": "SAE J3016"
       }
     ],
@@ -712,10 +712,6 @@ public:: true
       {
         "@id": "urn:ngm:class:adversarial-robustness",
         "label": "Adversarial Robustness"
-      },
-      {
-        "@id": "urn:ngm:class:multi-agent-perception",
-        "label": "Multi-Agent Perception"
       }
     ]
   },

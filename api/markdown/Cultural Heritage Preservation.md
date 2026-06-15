@@ -23,52 +23,141 @@ public:: true
   "definition": "Cultural Heritage Preservation encompasses the methodologies, technologies, and institutional practices used to document, conserve, and transmit tangible and intangible cultural assets to future generations. Digital preservation extends these goals through high-fidelity capture technologies—photogrammetry, LiDAR scanning, and multispectral imaging—combined with long-lived archival formats and distributed storage. Immersive technologies increasingly enable experiential access to heritage sites and artefacts that physical access cannot support. The discipline spans archaeology, architecture, performing arts, indigenous knowledge, and language revitalisation, requiring interdisciplinary collaboration between cultural practitioners and technologists.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-heritage", "label": "Digital Heritage"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-heritage",
+      "label": "Digital Heritage"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-archive", "label": "Digital Archive"},
-      {"@id": "urn:ngm:class:cultural-provenance-record", "label": "Cultural Provenance Record"},
-      {"@id": "urn:ngm:class:digital-preservation", "label": "Digital Preservation"},
-      {"@id": "urn:ngm:class:intangible-cultural-heritage", "label": "Intangible Cultural Heritage"},
-      {"@id": "urn:ngm:class:open-archival-information-system", "label": "Open Archival Information System"}
+      {
+        "@id": "urn:ngm:class:digital-archive",
+        "label": "Digital Archive"
+      },
+      {
+        "@id": "urn:ngm:class:cultural-provenance-record",
+        "label": "Cultural Provenance Record"
+      },
+      {
+        "@id": "urn:ngm:class:digital-preservation",
+        "label": "Digital Preservation"
+      },
+      {
+        "@id": "urn:ngm:class:intangible-cultural-heritage",
+        "label": "Intangible Cultural Heritage"
+      },
+      {
+        "@id": "urn:ngm:class:open-archival-information-system",
+        "label": "Open Archival Information System"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
-      {"@id": "urn:ngm:class:lidar-scanning", "label": "Lidar Scanning"},
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
-      {"@id": "urn:ngm:class:multispectral-imaging", "label": "Multispectral Imaging"},
-      {"@id": "urn:ngm:class:3d-reconstruction", "label": "3D Reconstruction"},
-      {"@id": "urn:ngm:class:gltf", "label": "glTF"}
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:lidar-scanning",
+        "label": "Lidar Scanning"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:multispectral-imaging",
+        "label": "Multispectral Imaging"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:gltf-standard",
+        "label": "glTF"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cultural-heritage-xr-experience", "label": "Cultural Heritage XR Experience"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:collective-memory-archive", "label": "Collective Memory Archive"},
-      {"@id": "urn:ngm:class:virtual-heritage-tour", "label": "Virtual Heritage Tour"},
-      {"@id": "urn:ngm:class:augmented-reality-overlay", "label": "Augmented Reality Overlay"}
+      {
+        "@id": "urn:ngm:class:cultural-heritage-xr-experience",
+        "label": "Cultural Heritage XR Experience"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:collective-memory-archive",
+        "label": "Collective Memory Archive"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-tour",
+        "label": "Virtual Heritage Tour"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality Overlay"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:long-term-storage", "label": "Long-Term Storage"},
-      {"@id": "urn:ngm:class:metadata-standard", "label": "Metadata Standard"},
-      {"@id": "urn:ngm:class:institutional-repository", "label": "Institutional Repository"}
+      {
+        "@id": "urn:ngm:class:long-term-storage",
+        "label": "Long-Term Storage"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-standard",
+        "label": "Metadata Standard"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-repository",
+        "label": "Institutional Repository"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-14721", "label": "ISO 14721"},
-      {"@id": "urn:ngm:class:dublin-core", "label": "Dublin Core"}
+      {
+        "@id": "urn:ngm:class:iso-14721",
+        "label": "ISO 14721"
+      },
+      {
+        "@id": "urn:ngm:class:dublin-core",
+        "label": "Dublin Core"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"},
-      {"@id": "urn:ngm:class:data-format-standard", "label": "Data Format Standard"}
+      {
+        "@id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "@id": "urn:ngm:class:data-format-standard",
+        "label": "Data Format Standard"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:digital-heritage-preservation", "label": "Digital Heritage Preservation"},
-    {"@id": "urn:ngm:class:heritage-conservation", "label": "Heritage Conservation"}
+    {
+      "@id": "urn:ngm:class:digital-heritage-preservation",
+      "label": "Digital Heritage Preservation"
+    },
+    {
+      "@id": "urn:ngm:class:heritage-conservation",
+      "label": "Heritage Conservation"
+    }
   ],
   "quality": 0.8,
   "provenance": {

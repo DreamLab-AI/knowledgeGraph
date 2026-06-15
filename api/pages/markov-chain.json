@@ -20,14 +20,6 @@
       {
         "id": "urn:ngm:class:state-space",
         "label": "State Space"
-      },
-      {
-        "id": "urn:ngm:class:transition-probability",
-        "label": "Transition Probability"
-      },
-      {
-        "id": "urn:ngm:class:absorbing-state",
-        "label": "Absorbing State"
       }
     ],
     "requires": [
@@ -38,10 +30,6 @@
       {
         "id": "urn:ngm:class:linear-algebra",
         "label": "Linear Algebra"
-      },
-      {
-        "id": "urn:ngm:class:transition-matrix",
-        "label": "Transition Matrix"
       }
     ],
     "enables": [
@@ -58,31 +46,13 @@
         "label": "Hidden Markov Model"
       },
       {
-        "id": "urn:ngm:class:stationary-distribution",
-        "label": "Stationary Distribution"
-      },
-      {
         "id": "urn:ngm:class:pagerank",
         "label": "PageRank"
       }
     ],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:memoryless-property",
-        "label": "Memoryless Property"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:non-markovian-process",
-        "label": "Non-Markovian Process"
-      },
-      {
-        "id": "urn:ngm:class:deterministic-automaton",
-        "label": "Deterministic Automaton"
-      }
-    ],
+    "implements": [],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:artificial-intelligence",

@@ -28,56 +28,129 @@
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:prior-distribution", "label": "Prior Distribution"},
-      {"@id": "urn:ngm:class:likelihood-function", "label": "Likelihood Function"},
-      {"@id": "urn:ngm:class:posterior-distribution", "label": "Posterior Distribution"},
-      {"@id": "urn:ngm:class:markov-chain-monte-carlo", "label": "Markov Chain Monte Carlo"}
+      {
+        "@id": "urn:ngm:class:prior-distribution",
+        "label": "Prior Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:likelihood-function",
+        "label": "Likelihood Function"
+      },
+      {
+        "@id": "urn:ngm:class:posterior-distribution",
+        "label": "Posterior Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:probability-theory", "label": "Probability Theory"},
-      {"@id": "urn:ngm:class:statistical-model", "label": "Statistical Model"}
+      {
+        "@id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-model",
+        "label": "Statistical Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
-      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"},
-      {"@id": "urn:ngm:class:uncertainty-quantification", "label": "Uncertainty Quantification"},
-      {"@id": "urn:ngm:class:model-selection", "label": "Model Selection"},
-      {"@id": "urn:ngm:class:sequential-decision-making", "label": "Sequential Decision-Making"}
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "@id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "@id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:variational-inference", "label": "Variational Inference"},
-      {"@id": "urn:ngm:class:expectation-maximisation", "label": "Expectation Maximisation"}
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "@id": "urn:ngm:class:expectation-maximisation",
+        "label": "Expectation Maximisation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:bayes-theorem", "label": "Bayes' Theorem"}
-    ],
-    "dependsOn": [
-      {"@id": "urn:ngm:class:conditional-probability", "label": "Conditional Probability"}
+      {
+        "@id": "urn:ngm:class:bayes-theorem",
+        "label": "Bayes' Theorem"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:frequentist-statistics", "label": "Frequentist Statistics"},
-      {"@id": "urn:ngm:class:maximum-likelihood-estimation", "label": "Maximum Likelihood Estimation"}
+      {
+        "@id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:causal-inference", "label": "Causal Inference"},
-      {"@id": "urn:ngm:class:decision-theory", "label": "Decision Theory"}
+      {
+        "@id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "@id": "urn:ngm:class:decision-theory",
+        "label": "Decision Theory"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:probabilistic-graphical-model", "label": "Probabilistic Graphical Model"},
-      {"@id": "urn:ngm:class:gaussian-process", "label": "Gaussian Process"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:information-theory", "label": "Information Theory"}
+      {
+        "@id": "urn:ngm:class:graphical-model",
+        "label": "Probabilistic Graphical Model"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:bayesian-statistics", "label": "Bayesian Statistics"},
-    {"@id": "urn:ngm:class:bayesian-learning", "label": "Bayesian Learning"}
+    {
+      "@id": "urn:ngm:class:bayesian-statistics",
+      "label": "Bayesian Statistics"
+    },
+    {
+      "@id": "urn:ngm:class:bayesian-learning",
+      "label": "Bayesian Learning"
+    }
   ],
   "quality": 0.74,
   "provenance": {

@@ -302,7 +302,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:atrous-convolution",
+        "@id": "urn:ngm:class:convolution",
         "label": "Atrous Convolution"
       },
       {
@@ -310,16 +310,8 @@ public:: true
         "label": "Feature Pyramid Network"
       },
       {
-        "@id": "urn:ngm:class:mask-head",
+        "@id": "urn:ngm:class:task-specific-head",
         "label": "Mask Head"
-      },
-      {
-        "@id": "urn:ngm:class:pixel-classifier",
-        "label": "Pixel Classifier"
-      },
-      {
-        "@id": "urn:ngm:class:skip-connections",
-        "label": "Skip Connections"
       },
       {
         "@id": "urn:ngm:class:attention-mechanism",
@@ -362,10 +354,6 @@ public:: true
         "label": "Medical Imaging"
       },
       {
-        "@id": "urn:ngm:class:satellite-imagery-analysis",
-        "label": "Satellite Imagery Analysis"
-      },
-      {
         "@id": "urn:ngm:class:video-object-segmentation",
         "label": "Video Object Segmentation"
       },
@@ -379,14 +367,6 @@ public:: true
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:interactive-segmentation",
-        "label": "Interactive Segmentation"
-      },
-      {
-        "@id": "urn:ngm:class:zero-shot-segmentation",
-        "label": "Zero-Shot Segmentation"
-      },
       {
         "@id": "urn:ngm:class:instance-segmentation",
         "label": "Instance Segmentation"
@@ -410,15 +390,7 @@ public:: true
         "label": "Cross-Entropy Loss"
       },
       {
-        "@id": "urn:ngm:class:dice-coefficient",
-        "label": "Dice Coefficient"
-      },
-      {
-        "@id": "urn:ngm:class:mean-intersection-over-union",
-        "label": "Mean Intersection over Union"
-      },
-      {
-        "@id": "urn:ngm:class:panoptic-quality",
+        "@id": "urn:ngm:class:panoptic-segmentation",
         "label": "Panoptic Quality"
       }
     ],
@@ -450,14 +422,6 @@ public:: true
         "label": "Autonomous Driving"
       },
       {
-        "@id": "urn:ngm:class:background-removal",
-        "label": "Background Removal"
-      },
-      {
-        "@id": "urn:ngm:class:cancer-detection",
-        "label": "Cancer Detection"
-      },
-      {
         "@id": "urn:ngm:class:remote-sensing",
         "label": "Remote Sensing"
       },
@@ -478,14 +442,6 @@ public:: true
       {
         "@id": "urn:ngm:class:coco-dataset",
         "label": "COCO Dataset"
-      },
-      {
-        "@id": "urn:ngm:class:image-net",
-        "label": "ImageNet"
-      },
-      {
-        "@id": "urn:ngm:class:pascal-voc",
-        "label": "PASCAL VOC"
       }
     ]
   },

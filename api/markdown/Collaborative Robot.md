@@ -109,10 +109,6 @@ alias:: CollaborativeRobot
         "label": "Force Torque Sensor"
       },
       {
-        "@id": "urn:ngm:class:safety-controller",
-        "label": "Safety Controller"
-      },
-      {
         "@id": "urn:ngm:class:end-effector",
         "label": "End Effector"
       },
@@ -123,44 +119,28 @@ alias:: CollaborativeRobot
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:collaborative-systems-modality-manufacturing-system",
+        "@id": "urn:ngm:class:collaborative-systems-modality",
         "label": "Collaborative Manufacturing System"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:iso-ts-15066-compliance",
+        "@id": "urn:ngm:class:iso-ts-15066",
         "label": "ISO/TS 15066 Compliance"
       },
       {
-        "@id": "urn:ngm:class:power-and-force-limiting",
+        "@id": "urn:ngm:class:rb-0094-power-and-force-limiting",
         "label": "Power and Force Limiting"
       },
       {
-        "@id": "urn:ngm:class:speed-and-separation-monitoring",
+        "@id": "urn:ngm:class:rb-0105-speed-and-separation-monitoring",
         "label": "Speed and Separation Monitoring"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:flexible-assembly",
-        "label": "Flexible Assembly"
-      },
-      {
-        "@id": "urn:ngm:class:rapid-deployment",
-        "label": "Rapid Deployment"
-      },
-      {
-        "@id": "urn:ngm:class:reduced-labour-costs",
-        "label": "Reduced Labour Costs"
-      },
-      {
         "@id": "urn:ngm:class:human-robot-collaboration",
         "label": "Human-Robot Collaboration"
-      },
-      {
-        "@id": "urn:ngm:class:agile-manufacturing",
-        "label": "Agile Manufacturing"
       }
     ],
     "uses": [
@@ -179,21 +159,21 @@ alias:: CollaborativeRobot
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:iso-10218-safety-standard",
+        "@id": "urn:ngm:class:iso-10218",
         "label": "ISO 10218 Safety Standard"
       },
       {
-        "@id": "urn:ngm:class:hand-guiding-mode",
+        "@id": "urn:ngm:class:rb-0104-hand-guiding",
         "label": "Hand Guiding Mode"
       }
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:iso-international-organization-for-standardization",
+        "@id": "urn:ngm:class:iso",
         "label": "ISO (International Organization for Standardization)"
       },
       {
-        "@id": "urn:ngm:class:ieee-institute-of-electrical-and-electronics-engineers",
+        "@id": "urn:ngm:class:ieee",
         "label": "IEEE (Institute of Electrical and Electronics Engineers)"
       }
     ],
@@ -203,7 +183,7 @@ alias:: CollaborativeRobot
         "label": "Industrial Robot"
       },
       {
-        "@id": "urn:ngm:class:autonomous-mobile-robot",
+        "@id": "urn:ngm:class:autonomous-mobile-robots",
         "label": "Autonomous Mobile Robot"
       }
     ],

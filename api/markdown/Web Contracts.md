@@ -24,50 +24,122 @@ alias:: webcontracts, Web Contract, WebContracts
   "definition": "Web Contracts is a transport-agnostic smart-contract system that runs verifiable agreements over plain web files instead of a global blockchain. It separates concerns into four layers: an immutable contract.json (rules in any language), a mutable state.json (a JCS-canonicalised, SHA-256 hash-chained sequence of states), a ledger.json (multi-currency balances), and a Trail that anchors the hash chain to Bitcoin via Block Trails for tamper evidence. Contracts declare effects (credit/debit/transfer) that an executor applies atomically; any verifier can replay the state chain from genesis, check the hashes, and confirm the Bitcoin anchoring, so cheating breaks the chain detectably. Identity is did:nostr and authentication is NIP-98 signed HTTP, which lets both humans (via NIP-07) and autonomous agents participate without global consensus or gas.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:webcontracts", "label": "WebContracts"}
+    {
+      "@id": "urn:ngm:class:webcontracts",
+      "label": "WebContracts"
+    }
   ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:client-side-validation", "label": "Client-Side Validation"}
+      {
+        "@id": "urn:ngm:class:client-side-validation",
+        "label": "Client-Side Validation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:block-trails", "label": "Block Trails"},
-      {"@id": "urn:ngm:class:did-nostr", "label": "did:nostr"},
-      {"@id": "urn:ngm:class:json-data-interchange-format", "label": "JSON Data Interchange Format"},
-      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"},
-      {"@id": "urn:ngm:class:json-schema", "label": "JSON Schema"}
+      {
+        "@id": "urn:ngm:class:block-trails",
+        "label": "Block Trails"
+      },
+      {
+        "@id": "urn:ngm:class:did-nostr",
+        "label": "did:nostr"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format",
+        "label": "JSON Data Interchange Format"
+      },
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
+        "label": "JSON Schema"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:state-machine-replication", "label": "State Machine Replication"},
-      {"@id": "urn:ngm:class:ledger", "label": "Ledger"}
+      {
+        "@id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      },
+      {
+        "@id": "urn:ngm:class:ledger",
+        "label": "Ledger"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:single-use-seals", "label": "Single Use Seals"},
-      {"@id": "urn:ngm:class:proof-of-publication", "label": "Proof of Publication"}
+      {
+        "@id": "urn:ngm:class:single-use-seals",
+        "label": "Single Use Seals"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-publication",
+        "label": "Proof of Publication"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"},
-      {"@id": "urn:ngm:class:escrow", "label": "Escrow"},
-      {"@id": "urn:ngm:class:micropayment", "label": "Micropayment"}
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "@id": "urn:ngm:class:escrow-system",
+        "label": "Escrow"
+      },
+      {
+        "@id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:solid", "label": "Solid"},
-      {"@id": "urn:ngm:class:nostr", "label": "Nostr"},
-      {"@id": "urn:ngm:class:ai-agent", "label": "AI Agent"}
+      {
+        "@id": "urn:ngm:class:solid",
+        "label": "Solid"
+      },
+      {
+        "@id": "urn:ngm:class:nostr",
+        "label": "Nostr"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
-      {"@id": "urn:ngm:class:smart-contract-execution", "label": "Smart Contract Execution"}
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:web-assembly", "label": "WebAssembly"},
-      {"@id": "urn:ngm:class:l402-protocol", "label": "L402 Protocol"}
+      {
+        "@id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      },
+      {
+        "@id": "urn:ngm:class:x402-and-l402-payment-protocols",
+        "label": "L402 Protocol"
+      }
     ]
   },
   "quality": 0.74,
-  "provenance": {"attributedTo": "did:nostr:ontology-mesh", "generatedAt": "2026-06-14T00:00:00Z", "inferenceRule": "ResearchAuthored"}
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "ResearchAuthored"
+  }
 }
 ```
 

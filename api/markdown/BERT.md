@@ -23,56 +23,144 @@ public:: true
   "definition": "BERT (Bidirectional Encoder Representations from Transformers) is a pre-trained deep language representation model developed by Google AI Language, published in 2018, which applies a bidirectional Transformer encoder trained with masked language modelling (MLM) and next sentence prediction (NSP) objectives on large text corpora to produce contextualised word embeddings. Unlike prior unidirectional models, BERT conditions each token on its full left and right context simultaneously, enabling a richer semantic representation that generalises across diverse NLP tasks via fine-tuning. It established the pre-train-then-fine-tune paradigm for natural language processing, achieving state-of-the-art performance across eleven NLP benchmarks upon release, including GLUE and SQuAD. Its architecture directly underpins a large family of subsequent encoder models including RoBERTa, ALBERT, DistilBERT, and multilingual mBERT.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:language-model", "label": "Language Model"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:language-model",
+      "label": "Language Model"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:bidirectional-encoder-representations-from-transformers", "label": "Bidirectional Encoder Representations from Transformers"}
+    {
+      "@id": "urn:ngm:class:bidirectional-encoder-representations-from-transformers",
+      "label": "Bidirectional Encoder Representations from Transformers"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"},
-      {"@id": "urn:ngm:class:embeddings", "label": "Embeddings"},
-      {"@id": "urn:ngm:class:masked-language-modelling", "label": "Masked Language Modelling"},
-      {"@id": "urn:ngm:class:next-sentence-prediction", "label": "Next Sentence Prediction"},
-      {"@id": "urn:ngm:class:wordpiece-tokenisation", "label": "WordPiece Tokenisation"}
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      },
+      {
+        "@id": "urn:ngm:class:embeddings",
+        "label": "Embeddings"
+      },
+      {
+        "@id": "urn:ngm:class:masked-language-modelling",
+        "label": "Masked Language Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:subword-tokenisation",
+        "label": "WordPiece Tokenisation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:natural-language-understanding", "label": "Natural Language Understanding"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
-      {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"},
-      {"@id": "urn:ngm:class:sentiment-analysis", "label": "Sentiment Analysis"},
-      {"@id": "urn:ngm:class:dense-retrieval", "label": "Dense Retrieval"}
+      {
+        "@id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "@id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:dense-retrieval",
+        "label": "Dense Retrieval"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:pre-training", "label": "Pre Training"},
-      {"@id": "urn:ngm:class:large-scale-corpus", "label": "Large-Scale Corpus"}
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:pre-training",
+        "label": "Pre Training"
+      },
+      {
+        "@id": "urn:ngm:class:large-scale-corpus",
+        "label": "Large-Scale Corpus"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ro-berta", "label": "RoBERTa"},
-      {"@id": "urn:ngm:class:albert", "label": "ALBERT"},
-      {"@id": "urn:ngm:class:m-bert", "label": "mBERT"},
-      {"@id": "urn:ngm:class:distil-bert", "label": "DistilBERT"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:gpt", "label": "GPT"},
-      {"@id": "urn:ngm:class:t5", "label": "T5"},
-      {"@id": "urn:ngm:class:glue-benchmark", "label": "GLUE Benchmark"},
-      {"@id": "urn:ngm:class:squad", "label": "SQuAD"}
+      {
+        "@id": "urn:ngm:class:ro-berta",
+        "label": "RoBERTa"
+      },
+      {
+        "@id": "urn:ngm:class:albert",
+        "label": "ALBERT"
+      },
+      {
+        "@id": "urn:ngm:class:m-bert",
+        "label": "mBERT"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      },
+      {
+        "@id": "urn:ngm:class:t5",
+        "label": "T5"
+      },
+      {
+        "@id": "urn:ngm:class:glue-benchmark",
+        "label": "GLUE Benchmark"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:gpt", "label": "GPT"},
-      {"@id": "urn:ngm:class:autoregressive-language-model", "label": "Autoregressive Language Model"}
+      {
+        "@id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      },
+      {
+        "@id": "urn:ngm:class:autoregressive-language-model",
+        "label": "Autoregressive Language Model"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:knowledge-graph-embedding", "label": "Knowledge Graph Embedding"}
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-embedding",
+        "label": "Knowledge Graph Embedding"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:cls-token", "label": "CLS Token"},
-      {"@id": "urn:ngm:class:sep-token", "label": "SEP Token"}
+      {
+        "@id": "urn:ngm:class:cls-token",
+        "label": "CLS Token"
+      }
     ]
   },
   "quality": 0.75,

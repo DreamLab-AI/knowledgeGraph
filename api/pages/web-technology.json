@@ -84,16 +84,7 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:native-application",
-        "label": "Native Application"
-      },
-      {
-        "id": "urn:ngm:class:centralized-cloud",
-        "label": "Centralised Cloud"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:spatial-computing",
@@ -146,10 +137,6 @@
       {
         "id": "urn:ngm:class:web-browser",
         "label": "Web Browser"
-      },
-      {
-        "id": "urn:ngm:class:web-server",
-        "label": "Web Server"
       },
       {
         "id": "urn:ngm:class:content-delivery-network",

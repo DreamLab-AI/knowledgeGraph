@@ -49,57 +49,133 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:signalling-protocol", "label": "Signalling Protocol"},
-      {"@id": "urn:ngm:class:media-codec", "label": "Media Codec"},
-      {"@id": "urn:ngm:class:transport-layer", "label": "Transport Layer"},
-      {"@id": "urn:ngm:class:presence-system", "label": "Presence System"}
+      {
+        "@id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      },
+      {
+        "@id": "urn:ngm:class:presence",
+        "label": "Presence System"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
-      {"@id": "urn:ngm:class:latency", "label": "Latency"},
-      {"@id": "urn:ngm:class:network-synchronization", "label": "Network Synchronization"},
-      {"@id": "urn:ngm:class:nat-traversal", "label": "NAT Traversal"}
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:network-synchronization",
+        "label": "Network Synchronization"
+      },
+      {
+        "@id": "urn:ngm:class:nat-traversal",
+        "label": "NAT Traversal"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:realtime-collaboration", "label": "Realtime Collaboration"},
-      {"@id": "urn:ngm:class:immersive-communication", "label": "Immersive Communication"},
-      {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"},
-      {"@id": "urn:ngm:class:telemedicine", "label": "Telemedicine"}
+      {
+        "@id": "urn:ngm:class:realtime-collaboration",
+        "label": "Realtime Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      },
+      {
+        "@id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "@id": "urn:ngm:class:telemedicine",
+        "label": "Telemedicine"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:webrtc", "label": "WebRTC"},
-      {"@id": "urn:ngm:class:session-initiation-protocol", "label": "Session Initiation Protocol"},
-      {"@id": "urn:ngm:class:websocket", "label": "WebSocket"},
-      {"@id": "urn:ngm:class:opus-codec", "label": "Opus Codec"}
+      {
+        "@id": "urn:ngm:class:webrtc",
+        "label": "WebRTC"
+      },
+      {
+        "@id": "urn:ngm:class:session-initiation-protocol",
+        "label": "Session Initiation Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:websocket",
+        "label": "WebSocket"
+      },
+      {
+        "@id": "urn:ngm:class:opus-codec",
+        "label": "Opus Codec"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:metaverse-and-telecollaboration", "label": "Metaverse and Telecollaboration"},
-      {"@id": "urn:ngm:class:virtual-worlds", "label": "Virtual Worlds"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:metaverse-and-telecollaboration",
+        "label": "Metaverse and Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual Worlds"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"},
-      {"@id": "urn:ngm:class:w3c", "label": "W3C"},
-      {"@id": "urn:ngm:class:3gpp", "label": "3GPP"}
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "@id": "urn:ngm:class:3gpp",
+        "label": "3GPP"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:asynchronous-messaging", "label": "Asynchronous Messaging"},
-      {"@id": "urn:ngm:class:store-and-forward", "label": "Store and Forward"}
+      {
+        "@id": "urn:ngm:class:asynchronous-messaging",
+        "label": "Asynchronous Messaging"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
-      {"@id": "urn:ngm:class:ai-voice-synthesis", "label": "AI Voice Synthesis"},
-      {"@id": "urn:ngm:class:avatar-streaming", "label": "Avatar Streaming"}
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality Of Service"},
-      {"@id": "urn:ngm:class:end-to-end-encryption", "label": "End-to-End Encryption"},
-      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"}
+      {
+        "@id": "urn:ngm:class:quality-of-service",
+        "label": "Quality Of Service"
+      },
+      {
+        "@id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:real-time-communication", "label": "Real-Time Communication"},
-    {"@id": "urn:ngm:class:synchronous-communication", "label": "Synchronous Communication"}
+    {
+      "@id": "urn:ngm:class:real-time-communication",
+      "label": "Real-Time Communication"
+    },
+    {
+      "@id": "urn:ngm:class:synchronous-communication",
+      "label": "Synchronous Communication"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

@@ -91,16 +91,12 @@ public:: true
         "label": "Rollup"
       },
       {
-        "@id": "urn:ngm:class:state-channels",
+        "@id": "urn:ngm:class:state-channel",
         "label": "State Channels"
       },
       {
         "@id": "urn:ngm:class:sidechains",
         "label": "Sidechains"
-      },
-      {
-        "@id": "urn:ngm:class:validium",
-        "label": "Validium"
       }
     ],
     "uses": [
@@ -109,15 +105,15 @@ public:: true
         "label": "Cryptographic Proofs"
       },
       {
-        "@id": "urn:ngm:class:fraud-proofs",
+        "@id": "urn:ngm:class:fraud-proof",
         "label": "Fraud Proofs"
       },
       {
-        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "@id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proofs"
       },
       {
-        "@id": "urn:ngm:class:merkle-trees",
+        "@id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Trees"
       }
     ],
@@ -151,7 +147,7 @@ public:: true
         "label": "Ethereum"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-lightning-network",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-lightning-network",
         "label": "Bitcoin Lightning Network"
       },
       {
@@ -161,10 +157,6 @@ public:: true
       {
         "@id": "urn:ngm:class:blockchain-interoperability",
         "label": "Blockchain Interoperability"
-      },
-      {
-        "@id": "urn:ngm:class:blockchain-scaling",
-        "label": "Blockchain Scaling"
       }
     ],
     "bridgesTo": [

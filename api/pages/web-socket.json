@@ -37,7 +37,7 @@
         "label": "Event Driven Architecture"
       },
       {
-        "id": "urn:ngm:class:server-sent-push",
+        "id": "urn:ngm:class:server-sent-events",
         "label": "Server-Sent Push"
       },
       {
@@ -89,7 +89,7 @@
         "label": "Large Language Model"
       },
       {
-        "id": "urn:ngm:class:ai-inference-serving",
+        "id": "urn:ngm:class:inference-serving",
         "label": "AI Inference Serving"
       }
     ],
@@ -101,10 +101,6 @@
       {
         "id": "urn:ngm:class:protocol-buffers",
         "label": "Protocol Buffers"
-      },
-      {
-        "id": "urn:ngm:class:message-framing",
-        "label": "Message Framing"
       }
     ],
     "supports": [

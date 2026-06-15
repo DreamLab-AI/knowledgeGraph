@@ -38,58 +38,121 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:network-time-protocol", "label": "Network Time Protocol"},
-      {"@id": "urn:ngm:class:precision-time-protocol", "label": "Precision Time Protocol"},
-      {"@id": "urn:ngm:class:clock-drift", "label": "Clock Drift"},
-      {"@id": "urn:ngm:class:stratum-hierarchy", "label": "Stratum Hierarchy"}
+      {
+        "@id": "urn:ngm:class:network-time-protocol",
+        "label": "Network Time Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:precision-time-protocol",
+        "label": "Precision Time Protocol"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:reference-clock", "label": "Reference Clock"},
-      {"@id": "urn:ngm:class:gps-receiver", "label": "GPS Receiver"},
-      {"@id": "urn:ngm:class:atomic-clock", "label": "Atomic Clock"},
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"},
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
-      {"@id": "urn:ngm:class:event-ordering", "label": "Event Ordering"},
-      {"@id": "urn:ngm:class:digital-certificate", "label": "Digital Certificate"},
-      {"@id": "urn:ngm:class:audit-logging", "label": "Audit Logging"}
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:real-time-system", "label": "Real-Time System"},
-      {"@id": "urn:ngm:class:financial-trading-infrastructure", "label": "Financial Trading Infrastructure"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-system",
+        "label": "Real-Time System"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
-      {"@id": "urn:ngm:class:timestamp", "label": "Timestamp"}
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:timestamp",
+        "label": "Timestamp"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:logical-clock", "label": "Logical Clock"},
-      {"@id": "urn:ngm:class:vector-clock", "label": "Vector Clock"}
+      {
+        "@id": "urn:ngm:class:logical-clock",
+        "label": "Logical Clock"
+      },
+      {
+        "@id": "urn:ngm:class:vector-clock",
+        "label": "Vector Clock"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"},
-      {"@id": "urn:ngm:class:ieee", "label": "IEEE"},
-      {"@id": "urn:ngm:class:itu-t", "label": "ITU-T"}
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "@id": "urn:ngm:class:itu-t",
+        "label": "ITU-T"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:network-synchronization", "label": "Network Synchronization"},
-      {"@id": "urn:ngm:class:clock-skew", "label": "Clock Skew"},
-      {"@id": "urn:ngm:class:latency", "label": "Latency"},
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:network-synchronization",
+        "label": "Network Synchronization"
+      },
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
-      {"@id": "urn:ngm:class:iot-device-management", "label": "IoT Device Management"}
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:clock-synchronisation", "label": "Clock Synchronisation"},
-    {"@id": "urn:ngm:class:network-time-synchronization", "label": "Network Time Synchronization"}
+    {
+      "@id": "urn:ngm:class:clock-synchronisation",
+      "label": "Clock Synchronisation"
+    },
+    {
+      "@id": "urn:ngm:class:network-time-synchronization",
+      "label": "Network Time Synchronization"
+    }
   ],
   "quality": 0.74,
   "provenance": {

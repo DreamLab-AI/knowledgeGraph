@@ -18,20 +18,12 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:cosmos-hub",
-        "label": "Cosmos Hub"
-      },
-      {
         "id": "urn:ngm:class:cosmos-sdk",
         "label": "Cosmos SDK"
       },
       {
         "id": "urn:ngm:class:cosmos-ibc",
         "label": "Cosmos IBC"
-      },
-      {
-        "id": "urn:ngm:class:interchain-security",
-        "label": "Interchain Security"
       }
     ],
     "requires": [

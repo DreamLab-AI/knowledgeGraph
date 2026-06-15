@@ -146,20 +146,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:authentication-server",
-        "label": "Authentication Server"
-      },
-      {
         "@id": "urn:ngm:class:credential-store",
         "label": "Credential Store"
       },
       {
         "@id": "urn:ngm:class:session-manager",
         "label": "Session Manager"
-      },
-      {
-        "@id": "urn:ngm:class:token-issuer",
-        "label": "Token Issuer"
       },
       {
         "@id": "urn:ngm:class:user-directory",
@@ -174,14 +166,6 @@ public:: true
       {
         "@id": "urn:ngm:class:authentication-protocol",
         "label": "Authentication Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:cryptographic-key-store",
-        "label": "Cryptographic Key Store"
-      },
-      {
-        "@id": "urn:ngm:class:user-database",
-        "label": "User Database"
       }
     ],
     "enables": [
@@ -190,7 +174,7 @@ public:: true
         "label": "Multi-Factor Authentication"
       },
       {
-        "@id": "urn:ngm:class:single-sign-on-sso",
+        "@id": "urn:ngm:class:single-sign-on",
         "label": "Single Sign-On (SSO)"
       },
       {
@@ -207,10 +191,6 @@ public:: true
       }
     ],
     "partOf": [
-      {
-        "@id": "urn:ngm:class:federation-infrastructure",
-        "label": "Federation Infrastructure"
-      },
       {
         "@id": "urn:ngm:class:identity-management-system",
         "label": "Identity Management System"

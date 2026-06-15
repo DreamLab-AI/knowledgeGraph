@@ -21,14 +21,6 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
-      },
-      {
-        "id": "urn:ngm:class:source-domain",
-        "label": "Source Domain"
-      },
-      {
-        "id": "urn:ngm:class:target-domain",
-        "label": "Target Domain"
       }
     ],
     "enables": [
@@ -57,10 +49,6 @@
     ],
     "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:domain-generalisation",
-        "label": "Domain Generalisation"
-      },
       {
         "id": "urn:ngm:class:multi-task-learning",
         "label": "Multi Task Learning"
@@ -92,14 +80,6 @@
       {
         "id": "urn:ngm:class:self-training",
         "label": "Self Training"
-      },
-      {
-        "id": "urn:ngm:class:pseudo-labelling",
-        "label": "Pseudo Labelling"
-      },
-      {
-        "id": "urn:ngm:class:maximum-mean-discrepancy",
-        "label": "Maximum Mean Discrepancy"
       }
     ],
     "supports": [],
@@ -120,16 +100,8 @@
         "label": "Knowledge Distillation"
       },
       {
-        "id": "urn:ngm:class:covariate-shift",
-        "label": "Covariate Shift"
-      },
-      {
         "id": "urn:ngm:class:concept-drift",
         "label": "Concept Drift"
-      },
-      {
-        "id": "urn:ngm:class:distribution-shift",
-        "label": "Distribution Shift"
       },
       {
         "id": "urn:ngm:class:parameter-efficient-fine-tuning",

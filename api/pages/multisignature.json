@@ -23,7 +23,7 @@
         "label": "Private Key"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -41,7 +41,7 @@
         "label": "Self-Custody"
       },
       {
-        "id": "urn:ngm:class:dao-treasury-management",
+        "id": "urn:ngm:class:treasury-management",
         "label": "DAO Treasury Management"
       },
       {
@@ -51,7 +51,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:bitcoin-script",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
         "label": "Bitcoin Script"
       },
       {

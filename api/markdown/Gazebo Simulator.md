@@ -202,35 +202,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:gazebo-plugin-api",
-        "label": "Gazebo Plugin API"
-      },
-      {
-        "@id": "urn:ngm:class:gz-physics-plugin",
-        "label": "Gz Physics Plugin"
-      },
-      {
-        "@id": "urn:ngm:class:gz-rendering",
-        "label": "Gz Rendering"
-      },
-      {
-        "@id": "urn:ngm:class:gz-sensors",
+        "@id": "urn:ngm:class:sensors",
         "label": "Gz Sensors"
-      },
-      {
-        "@id": "urn:ngm:class:gz-transport",
-        "label": "Gz Transport"
-      },
-      {
-        "@id": "urn:ngm:class:sdf-world-model",
-        "label": "SDF World Model"
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:sdf-robot-description",
-        "label": "SDF Robot Description"
-      },
       {
         "@id": "urn:ngm:class:urdf-robot-model",
         "label": "URDF Robot Model"
@@ -250,11 +226,7 @@ public:: true
         "label": "Hardware-in-the-Loop Testing"
       },
       {
-        "@id": "urn:ngm:class:multi-robot-simulation",
-        "label": "Multi-Robot Simulation"
-      },
-      {
-        "@id": "urn:ngm:class:reinforcement-learning-training",
+        "@id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning Training"
       },
       {
@@ -262,23 +234,9 @@ public:: true
         "label": "Sensor Simulation"
       }
     ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:gz-transport-message-protocol",
-        "label": "gz-transport Message Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:ros2-control-hardware-interface",
-        "label": "ros2_control Hardware Interface"
-      },
-      {
-        "@id": "urn:ngm:class:sdformat-specification",
-        "label": "SDFormat Specification"
-      }
-    ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:sim-to-real-transfer-workflow",
+        "@id": "urn:ngm:class:sim-to-real-transfer",
         "label": "Sim-to-Real Transfer Workflow"
       },
       {

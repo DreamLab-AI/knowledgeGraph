@@ -23,7 +23,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:decentralised-ledger",
+        "id": "urn:ngm:class:ledger",
         "label": "Decentralised Ledger"
       },
       {
@@ -43,10 +43,6 @@
       {
         "id": "urn:ngm:class:access-control",
         "label": "Access Control"
-      },
-      {
-        "id": "urn:ngm:class:protocol-incentive",
-        "label": "Protocol Incentive"
       }
     ],
     "dependsOn": [],
@@ -129,10 +125,6 @@
       {
         "id": "urn:ngm:class:initial-coin-offering",
         "label": "Initial Coin Offering"
-      },
-      {
-        "id": "urn:ngm:class:protocol-economy",
-        "label": "Protocol Economy"
       }
     ]
   },

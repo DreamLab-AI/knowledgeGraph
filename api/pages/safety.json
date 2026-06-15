@@ -16,36 +16,19 @@
   "qualityScore": 0.72,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:physical-safety",
-        "label": "Physical Safety"
-      },
-      {
-        "id": "urn:ngm:class:operational-safety",
-        "label": "Operational Safety"
-      },
-      {
-        "id": "urn:ngm:class:societal-safety",
-        "label": "Societal Safety"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:hazard-analysis",
         "label": "Hazard Analysis"
       },
       {
-        "id": "urn:ngm:class:risk-assessment-ai-0079",
+        "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment (AI-0079)"
       },
       {
         "id": "urn:ngm:class:human-oversight",
         "label": "Human Oversight"
-      },
-      {
-        "id": "urn:ngm:class:fail-safe-design",
-        "label": "Fail-Safe Design"
       }
     ],
     "enables": [
@@ -100,10 +83,6 @@
       {
         "id": "urn:ngm:class:infrastructure",
         "label": "Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:politics-law-privacy",
-        "label": "Politics, Law, Privacy"
       }
     ],
     "uses": [],
@@ -114,7 +93,7 @@
         "label": "ISO 26262"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {

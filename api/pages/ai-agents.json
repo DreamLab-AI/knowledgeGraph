@@ -24,10 +24,6 @@
       {
         "id": "urn:ngm:class:perception",
         "label": "Perception"
-      },
-      {
-        "id": "urn:ngm:class:action-execution",
-        "label": "Action Execution"
       }
     ],
     "requires": [
@@ -78,10 +74,6 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:react-framework",
-        "label": "ReAct Framework"
-      },
-      {
         "id": "urn:ngm:class:plan-and-execute",
         "label": "Plan and Execute"
       }
@@ -98,7 +90,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:robotic-systems",
+        "id": "urn:ngm:class:robotic-system",
         "label": "Robotic Systems"
       },
       {
@@ -114,10 +106,6 @@
       {
         "id": "urn:ngm:class:retrieval-augmented-generation",
         "label": "Retrieval-Augmented Generation"
-      },
-      {
-        "id": "urn:ngm:class:sandboxing",
-        "label": "Sandboxing"
       }
     ],
     "supports": [],

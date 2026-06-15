@@ -37,16 +37,12 @@
         "label": "Multisignature"
       },
       {
-        "id": "urn:ngm:class:threshold-signature",
+        "id": "urn:ngm:class:threshold-signature-scheme",
         "label": "Threshold Signature"
       },
       {
         "id": "urn:ngm:class:soft-fork",
         "label": "Soft Fork"
-      },
-      {
-        "id": "urn:ngm:class:covenant",
-        "label": "Covenant"
       }
     ],
     "dependsOn": [],
@@ -54,19 +50,11 @@
       {
         "id": "urn:ngm:class:merkelised-abstract-syntax-tree",
         "label": "Merkelised Abstract Syntax Tree"
-      },
-      {
-        "id": "urn:ngm:class:script-path-spending",
-        "label": "Script-Path Spending"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:legacy-bitcoin-script",
-        "label": "Legacy Bitcoin Script"
-      },
-      {
-        "id": "urn:ngm:class:ecdsa-signature",
+        "id": "urn:ngm:class:ecdsa",
         "label": "ECDSA Signature"
       }
     ],
@@ -104,7 +92,7 @@
         "label": "Lightning Network"
       },
       {
-        "id": "urn:ngm:class:discreet-log-contract",
+        "id": "urn:ngm:class:discreet-log-contracts",
         "label": "Discreet Log Contract"
       },
       {
@@ -131,14 +119,6 @@
       {
         "id": "urn:ngm:class:bip-340-schnorr-keypair",
         "label": "BIP-340 Schnorr Keypair"
-      },
-      {
-        "id": "urn:ngm:class:op-checktemplateverify",
-        "label": "OP_CHECKTEMPLATEVERIFY"
-      },
-      {
-        "id": "urn:ngm:class:op-cat",
-        "label": "OP_CAT"
       }
     ]
   },

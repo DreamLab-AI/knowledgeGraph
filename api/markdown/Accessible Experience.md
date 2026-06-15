@@ -113,9 +113,18 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
-      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"}
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      }
     ],
     "requires": [
       {
@@ -169,10 +178,6 @@ public:: true
       {
         "@id": "urn:ngm:class:eye-tracking",
         "label": "Eye Tracking"
-      },
-      {
-        "@id": "urn:ngm:class:caption-and-subtitling",
-        "label": "Caption and Subtitling"
       }
     ],
     "supports": [
@@ -187,7 +192,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:wcag",
+        "@id": "urn:ngm:class:wcag-2-2",
         "label": "WCAG"
       },
       {
@@ -217,10 +222,16 @@ public:: true
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:inclusive-experience", "label": "Inclusive Experience"},
-    {"@id": "urn:ngm:class:barrier-free-experience", "label": "Barrier-Free Experience"}
+    {
+      "@id": "urn:ngm:class:inclusive-experience",
+      "label": "Inclusive Experience"
+    },
+    {
+      "@id": "urn:ngm:class:barrier-free-experience",
+      "label": "Barrier-Free Experience"
+    }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

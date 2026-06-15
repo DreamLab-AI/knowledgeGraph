@@ -92,10 +92,6 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:ai-synthesis",
-        "label": "AI Synthesis"
-      },
-      {
         "@id": "urn:ngm:class:3-d-modeling",
         "label": "3D Modeling"
       },
@@ -112,10 +108,6 @@ public:: true
       {
         "@id": "urn:ngm:class:synthetic-media",
         "label": "Synthetic Media"
-      },
-      {
-        "@id": "urn:ngm:class:virtual-performances",
-        "label": "Virtual Performances"
       }
     ]
   },

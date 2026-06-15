@@ -16,26 +16,8 @@
   "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:dense-optical-flow",
-        "label": "Dense Optical Flow"
-      },
-      {
-        "id": "urn:ngm:class:sparse-optical-flow",
-        "label": "Sparse Optical Flow"
-      }
-    ],
-    "requires": [
-      {
-        "id": "urn:ngm:class:consecutive-video-frames",
-        "label": "Consecutive Video Frames"
-      },
-      {
-        "id": "urn:ngm:class:image-gradient",
-        "label": "Image Gradient"
-      }
-    ],
+    "hasPart": [],
+    "requires": [],
     "enables": [
       {
         "id": "urn:ngm:class:motion-capture-technology",
@@ -48,10 +30,6 @@
       {
         "id": "urn:ngm:class:differentiable-rendering",
         "label": "Differentiable Rendering"
-      },
-      {
-        "id": "urn:ngm:class:video-stabilisation",
-        "label": "Video Stabilisation"
       },
       {
         "id": "urn:ngm:class:action-recognition",
@@ -68,10 +46,6 @@
       {
         "id": "urn:ngm:class:depth-estimation",
         "label": "Depth Estimation"
-      },
-      {
-        "id": "urn:ngm:class:scene-flow",
-        "label": "Scene Flow"
       }
     ],
     "bridgesTo": [
@@ -80,7 +54,7 @@
         "label": "Neural Radiance Field"
       },
       {
-        "id": "urn:ngm:class:generative-video-model",
+        "id": "urn:ngm:class:deep-generative-model",
         "label": "Generative Video Model"
       },
       {
@@ -94,7 +68,7 @@
         "label": "Convolutional Neural Network"
       },
       {
-        "id": "urn:ngm:class:image-pyramid",
+        "id": "urn:ngm:class:image-processing",
         "label": "Image Pyramid"
       },
       {
@@ -102,7 +76,7 @@
         "label": "Feature Matching"
       },
       {
-        "id": "urn:ngm:class:brightness-constancy-constraint",
+        "id": "urn:ngm:class:constraint",
         "label": "Brightness Constancy Constraint"
       }
     ],
@@ -132,7 +106,7 @@
         "label": "Image Segmentation"
       },
       {
-        "id": "urn:ngm:class:event-camera",
+        "id": "urn:ngm:class:camera",
         "label": "Event Camera"
       },
       {

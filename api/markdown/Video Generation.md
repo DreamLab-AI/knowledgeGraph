@@ -37,56 +37,141 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:ai-video-synthesis", "label": "AI Video Synthesis"},
-    {"@id": "urn:ngm:class:text-to-video", "label": "Text-to-Video"}
+    {
+      "@id": "urn:ngm:class:ai-video-synthesis",
+      "label": "AI Video Synthesis"
+    },
+    {
+      "@id": "urn:ngm:class:text-to-video",
+      "label": "Text-to-Video"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:temporal-attention", "label": "Temporal Attention"},
-      {"@id": "urn:ngm:class:video-vae", "label": "Video VAE"},
-      {"@id": "urn:ngm:class:motion-estimation", "label": "Motion Estimation"},
-      {"@id": "urn:ngm:class:classifier-free-guidance", "label": "Classifier-Free Guidance"}
+      {
+        "@id": "urn:ngm:class:vae",
+        "label": "Video VAE"
+      },
+      {
+        "@id": "urn:ngm:class:motion-estimation",
+        "label": "Motion Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:text-encoder", "label": "Text Encoder"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:large-scale-training-data", "label": "Large-Scale Training Data"}
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:text-encoder",
+        "label": "Text Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:large-scale-training-data",
+        "label": "Large-Scale Training Data"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:synthetic-media", "label": "Synthetic Media"},
-      {"@id": "urn:ngm:class:film-previzualisation", "label": "Film Previsualization"},
-      {"@id": "urn:ngm:class:autonomous-driving-simulation", "label": "Autonomous Driving Simulation"},
-      {"@id": "urn:ngm:class:content-creation", "label": "Content Creation"}
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-driving-simulation",
+        "label": "Autonomous Driving Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:latent-diffusion", "label": "Latent Diffusion"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:flow-matching", "label": "Flow Matching"},
-      {"@id": "urn:ngm:class:clip", "label": "CLIP"}
+      {
+        "@id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:flow-matching",
+        "label": "Flow Matching"
+      },
+      {
+        "@id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:3d-convolution", "label": "3D Convolution"},
-      {"@id": "urn:ngm:class:cross-attention", "label": "Cross Attention"},
-      {"@id": "urn:ngm:class:optical-flow", "label": "Optical Flow"},
-      {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"}
+      {
+        "@id": "urn:ngm:class:convolution",
+        "label": "3D Convolution"
+      },
+      {
+        "@id": "urn:ngm:class:cross-attention",
+        "label": "Cross Attention"
+      },
+      {
+        "@id": "urn:ngm:class:optical-flow",
+        "label": "Optical Flow"
+      },
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:deepfake-detection", "label": "Deepfake Detection"}
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:deepfake-detection",
+        "label": "Deepfake Detection"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:video-understanding", "label": "Video Understanding"},
-      {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"},
-      {"@id": "urn:ngm:class:world-model", "label": "World Model"}
+      {
+        "@id": "urn:ngm:class:video-understanding",
+        "label": "Video Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:world-model",
+        "label": "World Model"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:virtual-production", "label": "Virtual Production"},
-      {"@id": "urn:ngm:class:metaverse-content", "label": "Metaverse Content"}
+      {
+        "@id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-content",
+        "label": "Metaverse Content"
+      }
     ]
   },
   "quality": 0.72,

@@ -18,15 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:bitcoin-wallet",
-        "label": "Bitcoin Wallet"
-      },
-      {
-        "id": "urn:ngm:class:bitcoin-scripting-language",
-        "label": "Bitcoin Scripting Language"
-      },
-      {
-        "id": "urn:ngm:class:json-rpc-interface",
+        "id": "urn:ngm:class:json-data-interchange-format-rpc",
         "label": "JSON-RPC Interface"
       }
     ],

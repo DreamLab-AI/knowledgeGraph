@@ -63,23 +63,9 @@ public:: true
     "label": "Data Protection Law"
   },
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:hipaa-privacy-rule",
-        "label": "HIPAA Privacy Rule"
-      },
-      {
-        "@id": "urn:ngm:class:hipaa-security-rule",
-        "label": "HIPAA Security Rule"
-      },
-      {
-        "@id": "urn:ngm:class:hipaa-breach-notification-rule",
-        "label": "HIPAA Breach Notification Rule"
-      }
-    ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:us-healthcare-regulation",
+        "@id": "urn:ngm:class:us-regulatory-framework",
         "label": "US Healthcare Regulation"
       }
     ],
@@ -103,10 +89,6 @@ public:: true
       {
         "@id": "urn:ngm:class:encryption",
         "label": "Encryption"
-      },
-      {
-        "@id": "urn:ngm:class:business-associate-agreement",
-        "label": "Business Associate Agreement"
       }
     ],
     "enables": [
@@ -115,19 +97,11 @@ public:: true
         "label": "Privacy"
       },
       {
-        "@id": "urn:ngm:class:health-data-portability",
+        "@id": "urn:ngm:class:data-portability",
         "label": "Health Data Portability"
-      },
-      {
-        "@id": "urn:ngm:class:patient-data-rights",
-        "label": "Patient Data Rights"
       }
     ],
     "dependsOn": [
-      {
-        "@id": "urn:ngm:class:covered-entity",
-        "label": "Covered Entity"
-      },
       {
         "@id": "urn:ngm:class:protected-health-information",
         "label": "Protected Health Information"
@@ -141,12 +115,6 @@ public:: true
       {
         "@id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
-      }
-    ],
-    "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:hhs-office-for-civil-rights",
-        "label": "HHS Office for Civil Rights"
       }
     ],
     "contrastsWith": [
@@ -165,7 +133,7 @@ public:: true
         "label": "Electronic Health Record"
       },
       {
-        "@id": "urn:ngm:class:healthcare-interoperability",
+        "@id": "urn:ngm:class:interoperability",
         "label": "Healthcare Interoperability"
       },
       {

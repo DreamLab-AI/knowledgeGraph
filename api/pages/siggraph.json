@@ -18,14 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:technical-papers-programme",
-        "label": "Technical Papers Programme"
-      },
-      {
-        "id": "urn:ngm:class:electronic-theatre",
-        "label": "Electronic Theatre"
-      },
-      {
         "id": "urn:ngm:class:emerging-technologies",
         "label": "Emerging Technologies"
       }
@@ -143,7 +135,7 @@
         "label": "Geometry Processing"
       },
       {
-        "id": "urn:ngm:class:shading-language",
+        "id": "urn:ngm:class:shader-language",
         "label": "Shading Language"
       }
     ]

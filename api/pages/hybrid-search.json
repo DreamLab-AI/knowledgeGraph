@@ -64,7 +64,7 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:transformer-model",
+        "id": "urn:ngm:class:transformer",
         "label": "Transformer Model"
       }
     ],
@@ -111,7 +111,7 @@
         "label": "Inverted Index"
       },
       {
-        "id": "urn:ngm:class:approximate-nearest-neighbour",
+        "id": "urn:ngm:class:nearest-neighbor-search",
         "label": "Approximate Nearest Neighbour"
       }
     ],

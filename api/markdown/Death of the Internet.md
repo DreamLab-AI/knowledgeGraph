@@ -476,58 +476,14 @@ public:: true
         "label": "Algorithmic Capture"
       },
       {
-        "@id": "urn:ngm:class:background-tokens",
-        "label": "Background Tokens"
-      },
-      {
-        "@id": "urn:ngm:class:bot-traffic",
-        "label": "Bot Traffic"
-      },
-      {
-        "@id": "urn:ngm:class:dark-forest-theory",
-        "label": "Dark Forest Theory"
-      },
-      {
-        "@id": "urn:ngm:class:dead-internet-theory",
-        "label": "Dead Internet Theory"
-      },
-      {
-        "@id": "urn:ngm:class:enshittification",
-        "label": "Enshittification"
-      },
-      {
         "@id": "urn:ngm:class:filter-bubble",
         "label": "Filter Bubble"
-      },
-      {
-        "@id": "urn:ngm:class:habsburg-ai",
-        "label": "Habsburg AI"
-      },
-      {
-        "@id": "urn:ngm:class:synthetic-content-saturation",
-        "label": "Synthetic Content Saturation"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:authentic-content",
-        "label": "Authentic Content"
-      },
-      {
         "@id": "urn:ngm:class:content-provenance",
         "label": "Content Provenance"
-      },
-      {
-        "@id": "urn:ngm:class:epistemic-infrastructure",
-        "label": "Epistemic Infrastructure"
-      },
-      {
-        "@id": "urn:ngm:class:human-authorship",
-        "label": "Human Authorship"
-      },
-      {
-        "@id": "urn:ngm:class:open-api-access",
-        "label": "Open API Access"
       },
       {
         "@id": "urn:ngm:class:platform-accountability",
@@ -540,20 +496,8 @@ public:: true
         "label": "Algorithmic Capture"
       },
       {
-        "@id": "urn:ngm:class:attention-manipulation",
-        "label": "Attention Manipulation"
-      },
-      {
         "@id": "urn:ngm:class:digital-divide",
         "label": "Digital Divide"
-      },
-      {
-        "@id": "urn:ngm:class:disinformation-ecosystem",
-        "label": "Disinformation Ecosystem"
-      },
-      {
-        "@id": "urn:ngm:class:epistemic-degradation",
-        "label": "Epistemic Degradation"
       },
       {
         "@id": "urn:ngm:class:model-collapse",
@@ -570,20 +514,12 @@ public:: true
         "label": "Age Verification"
       },
       {
-        "@id": "urn:ngm:class:api-rate-limiting",
-        "label": "API Rate Limiting"
-      },
-      {
-        "@id": "urn:ngm:class:content-credentials",
+        "@id": "urn:ngm:class:c2-pa-content-credentials",
         "label": "Content Credentials"
       },
       {
         "@id": "urn:ngm:class:online-safety-act-2023",
         "label": "Online Safety Act 2023"
-      },
-      {
-        "@id": "urn:ngm:class:robots-txt-enforcement",
-        "label": "Robots.txt Enforcement"
       },
       {
         "@id": "urn:ngm:class:c2-pa-standard",
@@ -600,7 +536,7 @@ public:: true
         "label": "Recommendation Systems"
       },
       {
-        "@id": "urn:ngm:class:social-media-platform-infrastructure-algorithms",
+        "@id": "urn:ngm:class:social-media-platform-infrastructure",
         "label": "Social Media Algorithms"
       },
       {
@@ -700,10 +636,6 @@ public:: true
       {
         "@id": "urn:ngm:class:c2-pa",
         "label": "C2PA"
-      },
-      {
-        "@id": "urn:ngm:class:dsa",
-        "label": "DSA"
       },
       {
         "@id": "urn:ngm:class:gdpr",

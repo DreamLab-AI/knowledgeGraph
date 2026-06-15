@@ -194,56 +194,24 @@ public:: true
         "label": "Feedforward Compensation"
       },
       {
-        "@id": "urn:ngm:class:picontroller",
-        "label": "PIController"
-      },
-      {
         "@id": "urn:ngm:class:state-observer",
         "label": "State Observer"
-      },
-      {
-        "@id": "urn:ngm:class:velocity-measurement",
-        "label": "VelocityMeasurement"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:bandwidth-design",
-        "label": "BandwidthDesign"
-      },
-      {
-        "@id": "urn:ngm:class:controller-tuning",
-        "label": "ControllerTuning"
-      },
-      {
-        "@id": "urn:ngm:class:noise-filtering",
+        "@id": "urn:ngm:class:noise-suppression",
         "label": "NoiseFiltering"
       },
       {
         "@id": "urn:ngm:class:stability-analysis",
         "label": "Stability Analysis"
-      },
-      {
-        "@id": "urn:ngm:class:velocity-estimation",
-        "label": "VelocityEstimation"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:constant-throughput",
-        "label": "ConstantThroughput"
-      },
-      {
         "@id": "urn:ngm:class:energy-efficiency",
         "label": "Energy Efficiency"
-      },
-      {
-        "@id": "urn:ngm:class:speed-regulation",
-        "label": "SpeedRegulation"
-      },
-      {
-        "@id": "urn:ngm:class:synchronized-motion",
-        "label": "SynchronizedMotion"
       },
       {
         "@id": "urn:ngm:class:velocity-profiling",
@@ -262,10 +230,6 @@ public:: true
       {
         "@id": "urn:ngm:class:observer-design",
         "label": "ObserverDesign"
-      },
-      {
-        "@id": "urn:ngm:class:picontrol",
-        "label": "PIControl"
       },
       {
         "@id": "urn:ngm:class:adaptive-control",

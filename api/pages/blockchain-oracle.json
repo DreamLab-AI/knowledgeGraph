@@ -30,7 +30,7 @@
         "label": "Oracle Node"
       },
       {
-        "id": "urn:ngm:class:data-aggregation-layer",
+        "id": "urn:ngm:class:data-aggregation",
         "label": "Data Aggregation Layer"
       }
     ],
@@ -83,7 +83,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:centralized-oracle",
+        "id": "urn:ngm:class:oracle",
         "label": "Centralized Oracle"
       },
       {
@@ -107,7 +107,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:multi-source-data-aggregation",
+        "id": "urn:ngm:class:data-aggregation",
         "label": "Multi-Source Data Aggregation"
       },
       {

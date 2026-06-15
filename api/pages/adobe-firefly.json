@@ -20,18 +20,6 @@
       {
         "id": "urn:ngm:class:generative-fill",
         "label": "Generative Fill"
-      },
-      {
-        "id": "urn:ngm:class:text-effects",
-        "label": "Text Effects"
-      },
-      {
-        "id": "urn:ngm:class:vector-recolouring",
-        "label": "Vector Recolouring"
-      },
-      {
-        "id": "urn:ngm:class:firefly-services",
-        "label": "Firefly Services"
       }
     ],
     "requires": [
@@ -40,7 +28,7 @@
         "label": "Content Licensing"
       },
       {
-        "id": "urn:ngm:class:licensed-training-data",
+        "id": "urn:ngm:class:training-data",
         "label": "Licensed Training Data"
       }
     ],
@@ -54,18 +42,18 @@
         "label": "Image Editing"
       },
       {
-        "id": "urn:ngm:class:brand-asset-management",
+        "id": "urn:ngm:class:asset-management",
         "label": "Brand Asset Management"
       },
       {
-        "id": "urn:ngm:class:ai-video-generation",
+        "id": "urn:ngm:class:video-generation",
         "label": "AI Video Generation"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:content-credentials",
+        "id": "urn:ngm:class:c2-pa-content-credentials",
         "label": "Content Credentials"
       },
       {
@@ -75,11 +63,11 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       },
       {
-        "id": "urn:ngm:class:midjourney",
+        "id": "urn:ngm:class:midjourney-text-to-image-service",
         "label": "Midjourney"
       }
     ],
@@ -101,20 +89,12 @@
       {
         "id": "urn:ngm:class:transformer-architecture",
         "label": "Transformer Architecture"
-      },
-      {
-        "id": "urn:ngm:class:adobe-stock",
-        "label": "Adobe Stock"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:enterprise-ai-governance",
+        "id": "urn:ngm:class:ai-governance",
         "label": "Enterprise AI Governance"
-      },
-      {
-        "id": "urn:ngm:class:intellectual-property-indemnification",
-        "label": "Intellectual Property Indemnification"
       }
     ],
     "standardizedBy": [],
@@ -134,7 +114,7 @@
         "label": "Generative AI API"
       },
       {
-        "id": "urn:ngm:class:creative-workflow-automation",
+        "id": "urn:ngm:class:workflow-automation",
         "label": "Creative Workflow Automation"
       }
     ]

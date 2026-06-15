@@ -16,27 +16,14 @@
   "qualityScore": 0.7,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:very-large-online-platform-obligations",
-        "label": "Very Large Online Platform Obligations"
-      },
-      {
-        "id": "urn:ngm:class:notice-and-action-mechanism",
-        "label": "Notice and Action Mechanism"
-      },
-      {
-        "id": "urn:ngm:class:trusted-flaggers-regime",
-        "label": "Trusted Flaggers Regime"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:compliance-systems",
         "label": "Compliance Systems"
       },
       {
-        "id": "urn:ngm:class:moderation-infrastructure",
+        "id": "urn:ngm:class:content-moderation",
         "label": "Moderation Infrastructure"
       },
       {
@@ -66,10 +53,6 @@
         "label": "User Protection"
       },
       {
-        "id": "urn:ngm:class:illegal-content-removal",
-        "label": "Illegal Content Removal"
-      },
-      {
         "id": "urn:ngm:class:minor-protection",
         "label": "Minor Protection"
       }
@@ -79,10 +62,6 @@
       {
         "id": "urn:ngm:class:platform-governance",
         "label": "Platform Governance"
-      },
-      {
-        "id": "urn:ngm:class:data-access-rights",
-        "label": "Data Access Rights"
       }
     ],
     "contrastsWith": [
@@ -133,7 +112,7 @@
         "label": "Content Moderation"
       },
       {
-        "id": "urn:ngm:class:recommendation-algorithms",
+        "id": "urn:ngm:class:recommendation-system",
         "label": "Recommendation Algorithms"
       }
     ]

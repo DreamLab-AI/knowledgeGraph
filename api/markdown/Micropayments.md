@@ -347,10 +347,6 @@ alias:: BC-0319-micropayments
         "label": "Fedimint"
       },
       {
-        "@id": "urn:ngm:class:nostr-zaps",
-        "label": "Nostr Zaps"
-      },
-      {
         "@id": "urn:ngm:class:payment-channel",
         "label": "Payment Channel"
       },

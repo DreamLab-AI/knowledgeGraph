@@ -38,50 +38,127 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:content-addressing", "label": "Content Addressing"},
-      {"@id": "urn:ngm:class:merkle-dag", "label": "Merkle DAG"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:distributed-hash-table", "label": "Distributed Hash Table"},
-      {"@id": "urn:ngm:class:libp2p", "label": "libp2p"},
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"}
+      {
+        "@id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-dag",
+        "label": "Merkle DAG"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      },
+      {
+        "@id": "urn:ngm:class:libp2p",
+        "label": "libp2p"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralised-web", "label": "Decentralised Web"},
-      {"@id": "urn:ngm:class:nft", "label": "NFT"},
-      {"@id": "urn:ngm:class:decentralised-file-storage", "label": "Decentralised file storage"},
-      {"@id": "urn:ngm:class:web3", "label": "Web3"}
+      {
+        "@id": "urn:ngm:class:decentralised-web",
+        "label": "Decentralised Web"
+      },
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-file-storage",
+        "label": "Decentralised file storage"
+      },
+      {
+        "@id": "urn:ngm:class:web3",
+        "label": "Web3"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:content-identifier", "label": "Content Identifier"},
-      {"@id": "urn:ngm:class:pinning-service", "label": "Pinning Service"}
+      {
+        "@id": "urn:ngm:class:content-identifier",
+        "label": "Content Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:pinning-service",
+        "label": "Pinning Service"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:bitswap", "label": "Bitswap"},
-      {"@id": "urn:ngm:class:ipld", "label": "IPLD"},
-      {"@id": "urn:ngm:class:multicodec", "label": "Multicodec"}
+      {
+        "@id": "urn:ngm:class:ipld",
+        "label": "IPLD"
+      },
+      {
+        "@id": "urn:ngm:class:multicodec",
+        "label": "Multicodec"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:kademlia-dht", "label": "Kademlia DHT"},
-      {"@id": "urn:ngm:class:multihash", "label": "Multihash"}
+      {
+        "@id": "urn:ngm:class:kademlia-dht",
+        "label": "Kademlia DHT"
+      },
+      {
+        "@id": "urn:ngm:class:multihash",
+        "label": "Multihash"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:filecoin", "label": "Filecoin"},
-      {"@id": "urn:ngm:class:bittorrent", "label": "BitTorrent"},
-      {"@id": "urn:ngm:class:git", "label": "Git"},
-      {"@id": "urn:ngm:class:ens", "label": "ENS"}
+      {
+        "@id": "urn:ngm:class:filecoin",
+        "label": "Filecoin"
+      },
+      {
+        "@id": "urn:ngm:class:bittorrent",
+        "label": "BitTorrent"
+      },
+      {
+        "@id": "urn:ngm:class:git",
+        "label": "Git"
+      },
+      {
+        "@id": "urn:ngm:class:ens",
+        "label": "ENS"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:hypertext-transfer-protocol", "label": "Hypertext Transfer Protocol"},
-      {"@id": "urn:ngm:class:centralised-cloud-storage", "label": "Centralised Cloud Storage"}
+      {
+        "@id": "urn:ngm:class:hypertext-transfer-protocol",
+        "label": "Hypertext Transfer Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:centralised-cloud-storage",
+        "label": "Centralised Cloud Storage"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:interplanetary-file-system", "label": "InterPlanetary File System"}
+    {
+      "@id": "urn:ngm:class:interplanetary-file-system",
+      "label": "InterPlanetary File System"
+    }
   ],
   "quality": 0.72,
   "provenance": {

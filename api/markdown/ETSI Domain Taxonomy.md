@@ -38,56 +38,111 @@ public:: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:etsi", "label": "ETSI"},
-      {"@id": "urn:ngm:class:european-ai-standards-ecosystem", "label": "European AI Standards Ecosystem"}
+      {
+        "@id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:ai-application-domain", "label": "AI Application Domain"},
-      {"@id": "urn:ngm:class:controlled-vocabulary", "label": "Controlled Vocabulary"},
-      {"@id": "urn:ngm:class:domain-classification-hierarchy", "label": "Domain Classification Hierarchy"}
+      {
+        "@id": "urn:ngm:class:ai-application",
+        "label": "AI Application Domain"
+      },
+      {
+        "@id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:harmonised-standards", "label": "Harmonised Standards"},
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"}
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:etsi", "label": "ETSI"},
-      {"@id": "urn:ngm:class:iso-iec-jtc1-sc42", "label": "ISO/IEC JTC 1/SC 42"}
+      {
+        "@id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-jtc1-sc42",
+        "label": "ISO/IEC JTC 1/SC 42"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:taxonomy-governance", "label": "Taxonomy Governance"},
-      {"@id": "urn:ngm:class:technical-committee", "label": "Technical Committee"}
+      {
+        "@id": "urn:ngm:class:technical-committee",
+        "label": "Technical Committee"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:standards-gap-analysis", "label": "Standards Gap Analysis"},
-      {"@id": "urn:ngm:class:cross-domain-applicability", "label": "Cross-Domain Applicability"},
-      {"@id": "urn:ngm:class:ai-conformity-assessment", "label": "AI Conformity Assessment"}
+      {
+        "@id": "urn:ngm:class:conformity-assessment",
+        "label": "AI Conformity Assessment"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-standards-framework", "label": "AI Standards Framework"},
-      {"@id": "urn:ngm:class:ai-governance-and-ethics", "label": "AI Governance and Ethics"},
-      {"@id": "urn:ngm:class:cen-cenelec", "label": "CEN-CENELEC"},
-      {"@id": "urn:ngm:class:ieee-standards", "label": "IEEE Standards"},
-      {"@id": "urn:ngm:class:etsi-isg-ai", "label": "ETSI ISG AI"}
+      {
+        "@id": "urn:ngm:class:ai-governance-and-ethics",
+        "label": "AI Governance and Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:cen-cenelec",
+        "label": "CEN-CENELEC"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-standards",
+        "label": "IEEE Standards"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO IEC 42001"},
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"}
+      {
+        "@id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning-operations", "label": "Machine Learning Operations"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:machine-learning-operations",
+        "label": "Machine Learning Operations"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:etsi-ai-domain-classification", "label": "ETSI AI Domain Classification"}
+    {
+      "@id": "urn:ngm:class:etsi-ai-domain-classification",
+      "label": "ETSI AI Domain Classification"
+    }
   ],
   "quality": 0.72,
   "provenance": {

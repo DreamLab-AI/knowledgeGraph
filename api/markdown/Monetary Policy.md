@@ -23,59 +23,134 @@ public:: true
   "definition": "Monetary policy is the set of decisions made by a monetary authority — traditionally a central bank — to manage the supply of money, credit conditions, and interest rates in order to achieve macroeconomic objectives such as price stability, full employment, and sustainable economic growth. In traditional finance it encompasses tools such as open market operations, reserve requirements, discount-rate setting, and unconventional measures including quantitative easing and forward guidance. In decentralised systems and blockchain protocols, monetary policy is encoded algorithmically into protocol rules that govern token emission schedules, inflation rates, halving events, and burn mechanisms, removing discretionary human intervention and replacing it with transparent, auditable on-chain governance.",
   "domain": "finance",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:economic-governance", "label": "Economic Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economic-governance",
+      "label": "Economic Governance"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:central-bank-policy", "label": "Central Bank Policy"},
-    {"@id": "urn:ngm:class:money-supply-management", "label": "Money Supply Management"}
+    {
+      "@id": "urn:ngm:class:central-bank-policy",
+      "label": "Central Bank Policy"
+    },
+    {
+      "@id": "urn:ngm:class:money-supply-management",
+      "label": "Money Supply Management"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:open-market-operations", "label": "Open Market Operations"},
-      {"@id": "urn:ngm:class:reserve-requirements", "label": "Reserve Requirements"},
-      {"@id": "urn:ngm:class:interest-rate-policy", "label": "Interest Rate Policy"},
-      {"@id": "urn:ngm:class:quantitative-easing", "label": "Quantitative Easing"},
-      {"@id": "urn:ngm:class:forward-guidance", "label": "Forward Guidance"}
+      {
+        "@id": "urn:ngm:class:open-market-operations",
+        "label": "Open Market Operations"
+      },
+      {
+        "@id": "urn:ngm:class:reserve-requirements",
+        "label": "Reserve Requirements"
+      },
+      {
+        "@id": "urn:ngm:class:interest-rate-policy",
+        "label": "Interest Rate Policy"
+      },
+      {
+        "@id": "urn:ngm:class:quantitative-easing",
+        "label": "Quantitative Easing"
+      },
+      {
+        "@id": "urn:ngm:class:forward-guidance",
+        "label": "Forward Guidance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:central-bank", "label": "Central Bank"},
-      {"@id": "urn:ngm:class:monetary-authority", "label": "Monetary Authority"}
+      {
+        "@id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:inflation-control", "label": "Inflation Control"},
-      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"},
-      {"@id": "urn:ngm:class:price-stability", "label": "Price Stability"}
+      {
+        "@id": "urn:ngm:class:inflation-control",
+        "label": "Inflation Control"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:price-stability",
+        "label": "Price Stability"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
-      {"@id": "urn:ngm:class:economic-mechanism", "label": "Economic Mechanism"},
-      {"@id": "urn:ngm:class:inflation-targeting", "label": "Inflation Targeting"}
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "@id": "urn:ngm:class:economic-mechanism",
+        "label": "Economic Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:inflation-targeting",
+        "label": "Inflation Targeting"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:monetary-policy-transmission", "label": "Monetary Policy Transmission"},
-      {"@id": "urn:ngm:class:financial-stability", "label": "Financial Stability"},
-      {"@id": "urn:ngm:class:full-employment", "label": "Full Employment"}
+      {
+        "@id": "urn:ngm:class:monetary-policy-transmission",
+        "label": "Monetary Policy Transmission"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:economics", "label": "Economics"},
-      {"@id": "urn:ngm:class:macroeconomics", "label": "Macroeconomics"}
+      {
+        "@id": "urn:ngm:class:economics",
+        "label": "Economics"
+      },
+      {
+        "@id": "urn:ngm:class:macroeconomics",
+        "label": "Macroeconomics"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:fiscal-policy", "label": "Fiscal Policy"},
-      {"@id": "urn:ngm:class:algorithmic-monetary-policy", "label": "Algorithmic Monetary Policy"}
+      {
+        "@id": "urn:ngm:class:fiscal-policy",
+        "label": "Fiscal Policy"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:exchange-rate-policy", "label": "Exchange Rate Policy"},
-      {"@id": "urn:ngm:class:banking-regulation", "label": "Banking Regulation"},
-      {"@id": "urn:ngm:class:defi-protocol", "label": "DeFi Protocol"}
+      {
+        "@id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:bank-for-international-settlements", "label": "Bank for International Settlements"},
-      {"@id": "urn:ngm:class:international-monetary-fund", "label": "International Monetary Fund"}
+      {
+        "@id": "urn:ngm:class:bank-for-international-settlements",
+        "label": "Bank for International Settlements"
+      },
+      {
+        "@id": "urn:ngm:class:international-monetary-fund",
+        "label": "International Monetary Fund"
+      }
     ]
   },
   "quality": 0.74,

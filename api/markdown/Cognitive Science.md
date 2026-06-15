@@ -29,49 +29,115 @@
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:cognitive-architecture", "label": "Cognitive Architecture"},
-      {"@id": "urn:ngm:class:computational-linguistics", "label": "Computational Linguistics"},
-      {"@id": "urn:ngm:class:cognitive-neuroscience", "label": "Cognitive Neuroscience"},
-      {"@id": "urn:ngm:class:cognitive-psychology", "label": "Cognitive Psychology"}
+      {
+        "@id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:computational-linguistics",
+        "label": "Computational Linguistics"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-psychology",
+        "label": "Cognitive Psychology"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:cognitive-ai", "label": "Cognitive AI"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:intelligent-tutoring-systems", "label": "Intelligent Tutoring Systems"}
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-ai",
+        "label": "Cognitive AI"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:intelligent-tutoring-system",
+        "label": "Intelligent Tutoring Systems"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:neuroscience", "label": "Neuroscience"},
-      {"@id": "urn:ngm:class:psychology", "label": "Psychology"}
+      {
+        "@id": "urn:ngm:class:neuroscience",
+        "label": "Neuroscience"
+      },
+      {
+        "@id": "urn:ngm:class:psychology",
+        "label": "Psychology"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
-      {"@id": "urn:ngm:class:user-experience-design", "label": "User Experience Design"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:computational-modelling", "label": "Computational Modelling"},
-      {"@id": "urn:ngm:class:neuroimaging", "label": "Neuroimaging"},
-      {"@id": "urn:ngm:class:behavioural-experiments", "label": "Behavioural Experiments"}
+      {
+        "@id": "urn:ngm:class:computational-modelling",
+        "label": "Computational Modelling"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:behaviourism", "label": "Behaviourism"},
-      {"@id": "urn:ngm:class:connectionism", "label": "Connectionism"}
+      {
+        "@id": "urn:ngm:class:behaviourism",
+        "label": "Behaviourism"
+      },
+      {
+        "@id": "urn:ngm:class:connectionism",
+        "label": "Connectionism"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:affective-computing", "label": "Affective Computing"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:philosophy-of-mind", "label": "Philosophy of Mind"},
-      {"@id": "urn:ngm:class:embodied-cognition", "label": "Embodied Cognition"},
-      {"@id": "urn:ngm:class:situated-cognition", "label": "Situated Cognition"}
+      {
+        "@id": "urn:ngm:class:philosophy-of-mind",
+        "label": "Philosophy of Mind"
+      },
+      {
+        "@id": "urn:ngm:class:embodied-cognition",
+        "label": "Embodied Cognition"
+      },
+      {
+        "@id": "urn:ngm:class:situated-cognition",
+        "label": "Situated Cognition"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:cogsci", "label": "CogSci"},
-    {"@id": "urn:ngm:class:cognitive-studies", "label": "Cognitive Studies"}
+    {
+      "@id": "urn:ngm:class:cogsci",
+      "label": "CogSci"
+    },
+    {
+      "@id": "urn:ngm:class:cognitive-studies",
+      "label": "Cognitive Studies"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

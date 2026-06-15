@@ -26,22 +26,14 @@
         "label": "5G Core"
       },
       {
-        "id": "urn:ngm:class:service-based-architecture",
+        "id": "urn:ngm:class:service-oriented-architecture",
         "label": "Service-Based Architecture"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:millimetre-wave-spectrum",
-        "label": "Millimetre-Wave Spectrum"
-      },
-      {
         "id": "urn:ngm:class:massive-mimo",
         "label": "Massive MIMO"
-      },
-      {
-        "id": "urn:ngm:class:small-cell",
-        "label": "Small Cell"
       }
     ],
     "enables": [
@@ -66,11 +58,11 @@
         "label": "Private 5G Network"
       },
       {
-        "id": "urn:ngm:class:industrial-iot",
+        "id": "urn:ngm:class:industrial-io-t",
         "label": "Industrial IoT"
       },
       {
-        "id": "urn:ngm:class:autonomous-vehicles",
+        "id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
       }
     ],

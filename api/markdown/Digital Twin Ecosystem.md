@@ -106,11 +106,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:cross-platform-analytics",
-        "label": "Cross-Platform Analytics"
-      },
-      {
-        "@id": "urn:ngm:class:enterprise-digital-twins",
+        "@id": "urn:ngm:class:digital-twin",
         "label": "Enterprise Digital Twins"
       },
       {

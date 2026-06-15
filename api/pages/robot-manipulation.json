@@ -132,10 +132,6 @@
         "label": "Teleoperation"
       },
       {
-        "id": "urn:ngm:class:bimanual-manipulation",
-        "label": "Bimanual Manipulation"
-      },
-      {
         "id": "urn:ngm:class:sim-to-real-transfer",
         "label": "Sim-to-Real Transfer"
       }

@@ -44,7 +44,7 @@
         "label": "IMU"
       },
       {
-        "id": "urn:ngm:class:probabilistic-models",
+        "id": "urn:ngm:class:probabilistic-model",
         "label": "Probabilistic Models"
       },
       {
@@ -66,7 +66,7 @@
         "label": "Robot Control"
       },
       {
-        "id": "urn:ngm:class:autonomous-systems",
+        "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
       }
     ],
@@ -86,10 +86,6 @@
     ],
     "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:deterministic-control",
-        "label": "Deterministic Control"
-      },
       {
         "id": "urn:ngm:class:open-loop-control",
         "label": "Open-Loop Control"

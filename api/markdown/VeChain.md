@@ -105,26 +105,12 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:dual-token-model",
-        "label": "Dual Token Model"
-      },
-      {
         "@id": "urn:ngm:class:internet-of-things",
         "label": "Internet of Things"
       },
       {
         "@id": "urn:ngm:class:digital-identity",
         "label": "Digital Identity"
-      }
-    ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:vethor-token",
-        "label": "VeThor Token"
-      },
-      {
-        "@id": "urn:ngm:class:vechain-thor",
-        "label": "VeChainThor"
       }
     ],
     "partOf": [

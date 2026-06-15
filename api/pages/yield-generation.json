@@ -20,14 +20,6 @@
       {
         "id": "urn:ngm:class:staking-reward",
         "label": "Staking Reward"
-      },
-      {
-        "id": "urn:ngm:class:trading-fee",
-        "label": "Trading Fee"
-      },
-      {
-        "id": "urn:ngm:class:lending-interest",
-        "label": "Lending Interest"
       }
     ],
     "requires": [
@@ -136,7 +128,7 @@
         "label": "Annual Percentage Yield"
       },
       {
-        "id": "urn:ngm:class:real-world-asset-tokenization",
+        "id": "urn:ngm:class:real-world-asset-tokenisation",
         "label": "Real World Asset Tokenization"
       }
     ]

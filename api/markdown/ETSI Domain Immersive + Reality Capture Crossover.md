@@ -108,10 +108,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:photorealistic-immersion",
-        "label": "Photorealistic Immersion"
-      },
-      {
         "@id": "urn:ngm:class:spatial-interaction",
         "label": "Spatial Interaction"
       },

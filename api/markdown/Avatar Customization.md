@@ -81,61 +81,19 @@ alias:: AvatarCustomization
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:avatar-appearance-editor",
-        "label": "Avatar Appearance Editor"
-      },
-      {
-        "@id": "urn:ngm:class:wearable-items",
-        "label": "Wearable Items"
-      },
-      {
-        "@id": "urn:ngm:class:avatar-animation-system",
+        "@id": "urn:ngm:class:avatar-animation",
         "label": "Avatar Animation System"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:digital-personalization",
-        "label": "Digital Personalization"
-      },
-      {
-        "@id": "urn:ngm:class:metaverse-user-experience",
-        "label": "Metaverse User Experience"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:asset-libraries",
-        "label": "Asset Libraries"
-      },
-      {
-        "@id": "urn:ngm:class:customization-tools",
-        "label": "Customization Tools"
-      },
-      {
-        "@id": "urn:ngm:class:real-time-preview",
-        "label": "Real-Time Preview"
-      },
-      {
-        "@id": "urn:ngm:class:3d-rendering-engine",
+        "@id": "urn:ngm:class:3-d-rendering-engine",
         "label": "3D Rendering Engine"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:identity-representation",
-        "label": "Identity Representation"
-      },
-      {
-        "@id": "urn:ngm:class:self-expression",
-        "label": "Self-Expression"
-      },
-      {
-        "@id": "urn:ngm:class:social-distinction",
-        "label": "Social Distinction"
-      },
-      {
-        "@id": "urn:ngm:class:virtual-social-presence",
+        "@id": "urn:ngm:class:social-presence",
         "label": "Virtual Social Presence"
       }
     ],
@@ -145,7 +103,7 @@ alias:: AvatarCustomization
         "label": "User-Generated Content"
       },
       {
-        "@id": "urn:ngm:class:parametric-design",
+        "@id": "urn:ngm:class:parametric-design-methodology",
         "label": "Parametric Design"
       }
     ],
@@ -161,7 +119,7 @@ alias:: AvatarCustomization
         "label": "Procedural Generation"
       },
       {
-        "@id": "urn:ngm:class:ai-recommendation-system",
+        "@id": "urn:ngm:class:recommendation-system",
         "label": "AI Recommendation System"
       },
       {
@@ -181,10 +139,6 @@ alias:: AvatarCustomization
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:fixed-avatar",
-        "label": "Fixed Avatar"
-      },
-      {
         "@id": "urn:ngm:class:non-player-character",
         "label": "Non Player Character"
       }
@@ -193,10 +147,6 @@ alias:: AvatarCustomization
       {
         "@id": "urn:ngm:class:did-nostr-identity",
         "label": "DID Nostr Identity"
-      },
-      {
-        "@id": "urn:ngm:class:nft-wearables",
-        "label": "NFT Wearables"
       },
       {
         "@id": "urn:ngm:class:decentralised-identity",
@@ -224,7 +174,7 @@ alias:: AvatarCustomization
       "label": "Character Customization"
     }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

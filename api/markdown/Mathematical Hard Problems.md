@@ -60,12 +60,6 @@ public:: true
     }
   ],
   "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:secure-digital-systems",
-        "label": "Secure Digital Systems"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:cryptographic-security",

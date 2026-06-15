@@ -38,52 +38,117 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"},
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:random-number-generation", "label": "Random Number Generation"},
-      {"@id": "urn:ngm:class:pkcs11", "label": "PKCS#11"},
-      {"@id": "urn:ngm:class:symmetric-key-cryptography", "label": "Symmetric Key Cryptography"},
-      {"@id": "urn:ngm:class:asymmetric-key-cryptography", "label": "Asymmetric Key Cryptography"}
+      {
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      },
+      {
+        "@id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Key Cryptography"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:key-management", "label": "Key Management"},
-      {"@id": "urn:ngm:class:code-signing", "label": "Code Signing"},
-      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"},
-      {"@id": "urn:ngm:class:payment-security", "label": "Payment Security"},
-      {"@id": "urn:ngm:class:secure-boot", "label": "Secure Boot"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:code-signing",
+        "label": "Code Signing"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:secure-boot",
+        "label": "Secure Boot"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:tamper-resistance", "label": "Tamper Resistance"},
-      {"@id": "urn:ngm:class:hardware-root-of-trust", "label": "Hardware Root of Trust"}
+      {
+        "@id": "urn:ngm:class:hardware-root-of-trust",
+        "label": "Hardware Root of Trust"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:fips-140", "label": "FIPS 140"},
-      {"@id": "urn:ngm:class:common-criteria", "label": "Common Criteria"},
-      {"@id": "urn:ngm:class:pci-dss", "label": "PCI-DSS"}
+      {
+        "@id": "urn:ngm:class:fips-140-3",
+        "label": "FIPS 140"
+      },
+      {
+        "@id": "urn:ngm:class:pci-dss",
+        "label": "PCI-DSS"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:trusted-execution-environment", "label": "Trusted Execution Environment"},
-      {"@id": "urn:ngm:class:secure-enclave", "label": "Secure Enclave"},
-      {"@id": "urn:ngm:class:software-keystore", "label": "Software Keystore"},
-      {"@id": "urn:ngm:class:trusted-platform-module", "label": "Trusted Platform Module"}
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "@id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclave"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-platform-module",
+        "label": "Trusted Platform Module"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cryptographic-hardware", "label": "Cryptographic Hardware"},
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
-      {"@id": "urn:ngm:class:secure-element", "label": "Secure Element"},
-      {"@id": "urn:ngm:class:cloud-key-management-service", "label": "Cloud Key Management Service"}
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:secure-element",
+        "label": "Secure Element"
+      },
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Cloud Key Management Service"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain-key-custody", "label": "Blockchain Key Custody"},
-      {"@id": "urn:ngm:class:confidential-computing", "label": "Confidential Computing"}
+      {
+        "@id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:hsm", "label": "HSM"},
-    {"@id": "urn:ngm:class:cryptographic-security-module", "label": "Cryptographic Security Module"}
+    {
+      "@id": "urn:ngm:class:hsm",
+      "label": "HSM"
+    },
+    {
+      "@id": "urn:ngm:class:cryptographic-security-module",
+      "label": "Cryptographic Security Module"
+    }
   ],
   "quality": 0.76,
   "provenance": {

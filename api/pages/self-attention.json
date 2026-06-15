@@ -22,7 +22,7 @@
         "label": "Scaled Dot Product Attention"
       },
       {
-        "id": "urn:ngm:class:query-key-value-projection",
+        "id": "urn:ngm:class:query-key-value",
         "label": "Query-Key-Value Projection"
       }
     ],
@@ -32,7 +32,7 @@
         "label": "Positional Encoding"
       },
       {
-        "id": "urn:ngm:class:input-embeddings",
+        "id": "urn:ngm:class:embeddings",
         "label": "Input Embeddings"
       }
     ],
@@ -100,13 +100,13 @@
         "label": "Weight Matrix"
       },
       {
-        "id": "urn:ngm:class:feed-forward-neural-network",
+        "id": "urn:ngm:class:feedforward-neural-network",
         "label": "Feed-Forward Neural Network"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:parallel-computation",
+        "id": "urn:ngm:class:parallel-computing",
         "label": "Parallel Computation"
       },
       {

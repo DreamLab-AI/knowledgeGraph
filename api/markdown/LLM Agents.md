@@ -23,55 +23,139 @@ public:: true
   "definition": "LLM Agents are autonomous software systems that use large language models as their core reasoning engine to perceive inputs, plan multi-step actions, invoke external tools, and pursue goals over extended horizons with minimal per-step human oversight. They extend base language models with memory, tool use, and feedback loops to accomplish tasks that require sequential decision-making.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:agentic-ai",
+    "label": "Agentic AI"
+  },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:chain-of-thought-prompting", "label": "Chain-of-Thought Prompting"},
-      {"@id": "urn:ngm:class:context-window", "label": "Context Window"},
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-thought-prompting",
+        "label": "Chain-of-Thought Prompting"
+      },
+      {
+        "@id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
-      {"@id": "urn:ngm:class:autonomous-task-completion", "label": "Autonomous Task Completion"},
-      {"@id": "urn:ngm:class:process-automation", "label": "Process Automation"}
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-task-execution",
+        "label": "Autonomous Task Completion"
+      },
+      {
+        "@id": "urn:ngm:class:process-automation",
+        "label": "Process Automation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"},
-      {"@id": "urn:ngm:class:agent-memory", "label": "Agent Memory"},
-      {"@id": "urn:ngm:class:sandboxed-code-execution", "label": "Sandboxed Code Execution"}
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:agent-memory",
+        "label": "Agent Memory"
+      },
+      {
+        "@id": "urn:ngm:class:sandboxed-code-execution",
+        "label": "Sandboxed Code Execution"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:react-pattern", "label": "ReAct Pattern"},
-      {"@id": "urn:ngm:class:plan-and-execute", "label": "Plan and Execute"}
+      {
+        "@id": "urn:ngm:class:re-act-pattern",
+        "label": "ReAct Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:plan-and-execute",
+        "label": "Plan and Execute"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:single-turn-inference", "label": "Single-Turn Inference"},
-      {"@id": "urn:ngm:class:robotic-process-automation", "label": "Robotic Process Automation"}
+      {
+        "@id": "urn:ngm:class:single-turn-inference",
+        "label": "Single-Turn Inference"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:instruction-following", "label": "Instruction Following"}
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:instruction-following",
+        "label": "Instruction Following"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:enterprise-software-integration", "label": "Enterprise Software Integration"},
-      {"@id": "urn:ngm:class:robotic-autonomous-systems", "label": "Robotic Autonomous Systems"}
+      {
+        "@id": "urn:ngm:class:enterprise-software-integration",
+        "label": "Enterprise Software Integration"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-autonomous-systems",
+        "label": "Robotic Autonomous Systems"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ai-agents", "label": "AI Agents"},
-    {"@id": "urn:ngm:class:autonomous-llm-agents", "label": "Autonomous LLM Agents"}
+    {
+      "@id": "urn:ngm:class:ai-agents",
+      "label": "AI Agents"
+    },
+    {
+      "@id": "urn:ngm:class:autonomous-llm-agents",
+      "label": "Autonomous LLM Agents"
+    }
   ],
   "quality": 0.8,
   "provenance": {

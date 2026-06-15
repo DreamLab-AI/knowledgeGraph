@@ -152,55 +152,7 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:compliance-criteria",
-        "label": "Compliance Criteria"
-      },
-      {
-        "@id": "urn:ngm:class:emissions-limit",
-        "label": "Emissions Limit"
-      },
-      {
-        "@id": "urn:ngm:class:immunity-requirement",
-        "label": "Immunity Requirement"
-      },
-      {
-        "@id": "urn:ngm:class:test-procedure",
-        "label": "Test Procedure"
-      }
-    ],
-    "requires": [
-      {
-        "@id": "urn:ngm:class:filter-implementation",
-        "label": "Filter Implementation"
-      },
-      {
-        "@id": "urn:ngm:class:grounding-practice",
-        "label": "Grounding Practice"
-      },
-      {
-        "@id": "urn:ngm:class:shielding-design",
-        "label": "Shielding Design"
-      },
-      {
-        "@id": "urn:ngm:class:test-facility",
-        "label": "Test Facility"
-      }
-    ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:electrical-safety",
-        "label": "Electrical Safety"
-      },
-      {
-        "@id": "urn:ngm:class:industrial-deployment",
-        "label": "Industrial Deployment"
-      },
-      {
-        "@id": "urn:ngm:class:reliable-operation",
-        "label": "Reliable Operation"
-      },
       {
         "@id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"

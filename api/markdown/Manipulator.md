@@ -77,20 +77,16 @@ alias:: RB-0003-manipulator
         "label": "End Effector"
       },
       {
-        "@id": "urn:ngm:class:joint",
+        "@id": "urn:ngm:class:robot-joint",
         "label": "Joint"
       },
       {
-        "@id": "urn:ngm:class:link",
+        "@id": "urn:ngm:class:robot-link",
         "label": "Link"
       },
       {
         "@id": "urn:ngm:class:actuator",
         "label": "Actuator"
-      },
-      {
-        "@id": "urn:ngm:class:wrist",
-        "label": "Wrist"
       }
     ],
     "partOf": [
@@ -129,10 +125,6 @@ alias:: RB-0003-manipulator
       {
         "@id": "urn:ngm:class:teleoperation",
         "label": "Teleoperation"
-      },
-      {
-        "@id": "urn:ngm:class:robot-welding",
-        "label": "Robot Welding"
       }
     ],
     "dependsOn": [
@@ -155,7 +147,7 @@ alias:: RB-0003-manipulator
         "label": "ISO 8373 2021"
       },
       {
-        "@id": "urn:ngm:class:denavit-hartenberg-convention",
+        "@id": "urn:ngm:class:denavit-hartenberg-parameters",
         "label": "Denavit-Hartenberg Convention"
       }
     ],
@@ -189,7 +181,7 @@ alias:: RB-0003-manipulator
         "label": "Mobile Robot"
       },
       {
-        "@id": "urn:ngm:class:autonomous-mobile-manipulator",
+        "@id": "urn:ngm:class:mobile-manipulator",
         "label": "Autonomous Mobile Manipulator"
       }
     ],
@@ -205,16 +197,12 @@ alias:: RB-0003-manipulator
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:collaborative-robot",
+        "@id": "urn:ngm:class:collaborative-systems-modality-robot",
         "label": "Collaborative Robot"
       },
       {
         "@id": "urn:ngm:class:parallel-robot",
         "label": "Parallel Robot"
-      },
-      {
-        "@id": "urn:ngm:class:redundant-manipulator",
-        "label": "Redundant Manipulator"
       }
     ]
   },

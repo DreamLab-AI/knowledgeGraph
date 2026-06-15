@@ -51,57 +51,141 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:mini-batch", "label": "Mini-Batch"},
-      {"@id": "urn:ngm:class:learning-rate-schedule", "label": "Learning Rate Schedule"}
+      {
+        "@id": "urn:ngm:class:mini-batch",
+        "label": "Mini-Batch"
+      },
+      {
+        "@id": "urn:ngm:class:learning-rate-schedule",
+        "label": "Learning Rate Schedule"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
-      {"@id": "urn:ngm:class:learning-rate", "label": "Learning Rate"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"}
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:learning-rate",
+        "label": "Learning Rate"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:automatic-differentiation", "label": "Automatic Differentiation"},
-      {"@id": "urn:ngm:class:computational-graph", "label": "Computational Graph"}
+      {
+        "@id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      },
+      {
+        "@id": "urn:ngm:class:computational-graph",
+        "label": "Computational Graph"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:first-order-optimisation", "label": "First-Order Optimisation"}
+      {
+        "@id": "urn:ngm:class:first-order-optimisation",
+        "label": "First-Order Optimisation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:gpu-accelerated-computing", "label": "GPU Accelerated Computing"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Accelerated Computing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:batch-gradient-descent", "label": "Batch Gradient Descent"},
-      {"@id": "urn:ngm:class:second-order-optimisation", "label": "Second-Order Optimisation"}
+      {
+        "@id": "urn:ngm:class:batch-gradient-descent",
+        "label": "Batch Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:second-order-optimisation",
+        "label": "Second-Order Optimisation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
-      {"@id": "urn:ngm:class:scientific-computing", "label": "Scientific Computing"}
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:hyperparameter-optimisation", "label": "Hyperparameter Optimisation"},
-      {"@id": "urn:ngm:class:adam-optimiser", "label": "Adam Optimiser"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-optimisation",
+        "label": "Hyperparameter Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:adam-optimiser",
+        "label": "Adam Optimiser"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:sgd", "label": "SGD"},
-    {"@id": "urn:ngm:class:mini-batch-gradient-descent", "label": "Mini-Batch Gradient Descent"},
-    {"@id": "urn:ngm:class:online-gradient-descent", "label": "Online Gradient Descent"}
+    {
+      "@id": "urn:ngm:class:sgd",
+      "label": "SGD"
+    },
+    {
+      "@id": "urn:ngm:class:mini-batch-gradient-descent",
+      "label": "Mini-Batch Gradient Descent"
+    },
+    {
+      "@id": "urn:ngm:class:online-gradient-descent",
+      "label": "Online Gradient Descent"
+    }
   ],
   "quality": 0.72,
   "provenance": {

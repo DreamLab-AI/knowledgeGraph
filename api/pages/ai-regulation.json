@@ -41,7 +41,7 @@
         "label": "Algorithmic Accountability"
       },
       {
-        "id": "urn:ngm:class:ai-transparency",
+        "id": "urn:ngm:class:ai-transparency-framework",
         "label": "AI Transparency"
       },
       {
@@ -64,10 +64,6 @@
       {
         "id": "urn:ngm:class:ai-self-regulation",
         "label": "AI Self-Regulation"
-      },
-      {
-        "id": "urn:ngm:class:voluntary-ai-commitments",
-        "label": "Voluntary AI Commitments"
       }
     ],
     "bridgesTo": [
@@ -86,16 +82,12 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:regulatory-sandboxes",
+        "id": "urn:ngm:class:regulatory-sandbox",
         "label": "Regulatory Sandboxes"
       },
       {
         "id": "urn:ngm:class:impact-assessment",
         "label": "Impact Assessment"
-      },
-      {
-        "id": "urn:ngm:class:audit-and-certification",
-        "label": "Audit and Certification"
       }
     ],
     "supports": [

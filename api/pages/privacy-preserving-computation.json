@@ -22,7 +22,7 @@
         "label": "Homomorphic Encryption"
       },
       {
-        "id": "urn:ngm:class:secure-multiparty-computation",
+        "id": "urn:ngm:class:secure-multi-party-computation",
         "label": "Secure Multiparty Computation"
       },
       {
@@ -50,10 +50,6 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:data-collaboration",
-        "label": "Data Collaboration"
-      },
-      {
         "id": "urn:ngm:class:confidential-computing",
         "label": "Confidential Computing"
       }
@@ -64,7 +60,7 @@
         "label": "Zero-Knowledge Proof"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -78,16 +74,7 @@
         "label": "Privacy By Design"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:plaintext-computation",
-        "label": "Plaintext Computation"
-      },
-      {
-        "id": "urn:ngm:class:centralised-data-processing",
-        "label": "Centralised Data Processing"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:federated-learning",

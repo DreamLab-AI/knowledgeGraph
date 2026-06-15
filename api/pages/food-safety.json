@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:hazard-analysis-and-critical-control-points",
+        "id": "urn:ngm:class:hazard-analysis",
         "label": "Hazard Analysis and Critical Control Points"
       },
       {
@@ -50,7 +50,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:recall-management",
+        "id": "urn:ngm:class:product-recall-management",
         "label": "Recall Management"
       },
       {
@@ -81,10 +81,6 @@
       }
     ],
     "uses": [
-      {
-        "id": "urn:ngm:class:blockchain-traceability",
-        "label": "Blockchain Traceability"
-      },
       {
         "id": "urn:ngm:class:anomaly-detection",
         "label": "Anomaly Detection"

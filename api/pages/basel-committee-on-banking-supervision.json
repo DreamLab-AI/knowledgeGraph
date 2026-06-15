@@ -22,7 +22,7 @@
         "label": "Basel Accords"
       },
       {
-        "id": "urn:ngm:class:capital-adequacy-framework",
+        "id": "urn:ngm:class:capital-adequacy",
         "label": "Capital Adequacy Framework"
       },
       {
@@ -64,7 +64,7 @@
         "label": "Central Bank"
       },
       {
-        "id": "urn:ngm:class:national-supervisory-authority",
+        "id": "urn:ngm:class:national-competent-authority",
         "label": "National Supervisory Authority"
       }
     ],
@@ -78,24 +78,11 @@
         "label": "Stress Testing"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:national-regulatory-authority",
-        "label": "National Regulatory Authority"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:cryptoasset-regulation",
         "label": "Cryptoasset Regulation"
-      },
-      {
-        "id": "urn:ngm:class:artificial-intelligence-governance",
-        "label": "Artificial Intelligence Governance"
-      },
-      {
-        "id": "urn:ngm:class:climate-risk-finance",
-        "label": "Climate Risk Finance"
       }
     ],
     "uses": [],

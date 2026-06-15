@@ -28,10 +28,6 @@
       {
         "id": "urn:ngm:class:slashing",
         "label": "Slashing"
-      },
-      {
-        "id": "urn:ngm:class:fee-burning",
-        "label": "Fee Burning"
       }
     ],
     "requires": [
@@ -78,12 +74,7 @@
         "label": "Game Theory"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:centralized-monetary-policy",
-        "label": "Centralized Monetary Policy"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:artificial-intelligence",
@@ -129,10 +120,6 @@
       {
         "id": "urn:ngm:class:proof-of-stake",
         "label": "Proof of Stake"
-      },
-      {
-        "id": "urn:ngm:class:supply-curve",
-        "label": "Supply Curve"
       }
     ]
   },

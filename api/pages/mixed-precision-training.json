@@ -16,20 +16,7 @@
   "qualityScore": 0.7,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:loss-scaling",
-        "label": "Loss Scaling"
-      },
-      {
-        "id": "urn:ngm:class:fp16-computation",
-        "label": "FP16 Computation"
-      },
-      {
-        "id": "urn:ngm:class:master-weight-copy",
-        "label": "Master Weight Copy"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:hardware-acceleration",
@@ -54,7 +41,7 @@
         "label": "Large Language Models"
       },
       {
-        "id": "urn:ngm:class:large-scale-distributed-training",
+        "id": "urn:ngm:class:distributed-training",
         "label": "Large-Scale Distributed Training"
       }
     ],
@@ -72,20 +59,11 @@
         "label": "Automatic Differentiation"
       }
     ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:numerical-precision-management",
-        "label": "Numerical Precision Management"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:neural-network-quantisation",
         "label": "Neural Network Quantisation"
-      },
-      {
-        "id": "urn:ngm:class:full-precision-training",
-        "label": "Full Precision Training"
       }
     ],
     "bridgesTo": [
@@ -96,7 +74,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:pytorch",
+        "id": "urn:ngm:class:python-pytorch-deep-learning-stack",
         "label": "PyTorch"
       },
       {
@@ -125,7 +103,7 @@
         "label": "Neural Network Training"
       },
       {
-        "id": "urn:ngm:class:model-optimisation-pipeline",
+        "id": "urn:ngm:class:model-optimisation-and-performance",
         "label": "Model Optimisation Pipeline"
       }
     ],

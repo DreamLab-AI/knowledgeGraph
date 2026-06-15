@@ -85,10 +85,6 @@
       {
         "id": "urn:ngm:class:traditional-contract",
         "label": "Traditional Contract"
-      },
-      {
-        "id": "urn:ngm:class:centralised-execution",
-        "label": "Centralised Execution"
       }
     ],
     "bridgesTo": [
@@ -115,7 +111,7 @@
         "label": "Blockchain Transaction"
       },
       {
-        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       },
       {

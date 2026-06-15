@@ -38,51 +38,131 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:single-sign-on", "label": "Single Sign-On"},
-      {"@id": "urn:ngm:class:authorisation", "label": "Authorisation"},
-      {"@id": "urn:ngm:class:session-management", "label": "Session Management"}
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
+        "@id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "@id": "urn:ngm:class:session-management",
+        "label": "Session Management"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:digital-signatures", "label": "Digital Signatures"},
-      {"@id": "urn:ngm:class:secure-communication", "label": "Secure Communication"},
-      {"@id": "urn:ngm:class:key-management", "label": "Key Management"}
+      {
+        "@id": "urn:ngm:class:digital-signatures",
+        "label": "Digital Signatures"
+      },
+      {
+        "@id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      },
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:oauth-2", "label": "OAuth 2.0"},
-      {"@id": "urn:ngm:class:openid-connect", "label": "OpenID Connect"},
-      {"@id": "urn:ngm:class:saml", "label": "SAML"},
-      {"@id": "urn:ngm:class:fido2-webauthn", "label": "FIDO2 WebAuthn"}
+      {
+        "@id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "@id": "urn:ngm:class:saml",
+        "label": "SAML"
+      },
+      {
+        "@id": "urn:ngm:class:fido2",
+        "label": "FIDO2 WebAuthn"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
-      {"@id": "urn:ngm:class:compliance", "label": "Compliance"},
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:authorisation", "label": "Authorisation"},
-      {"@id": "urn:ngm:class:anonymity", "label": "Anonymity"}
+      {
+        "@id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "@id": "urn:ngm:class:anonymity",
+        "label": "Anonymity"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:multi-factor-authentication", "label": "Multi-Factor Authentication"},
-      {"@id": "urn:ngm:class:biometrics", "label": "Biometrics"},
-      {"@id": "urn:ngm:class:federation", "label": "Federation"},
-      {"@id": "urn:ngm:class:threat-model", "label": "Threat Model"}
+      {
+        "@id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:federation",
+        "label": "Federation"
+      },
+      {
+        "@id": "urn:ngm:class:threat-model",
+        "label": "Threat Model"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:authn", "label": "AuthN"},
-    {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"}
+    {
+      "@id": "urn:ngm:class:authn",
+      "label": "AuthN"
+    },
+    {
+      "@id": "urn:ngm:class:identity-verification",
+      "label": "Identity Verification"
+    }
   ],
   "quality": 0.74,
   "provenance": {

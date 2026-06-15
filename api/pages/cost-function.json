@@ -20,10 +20,6 @@
       {
         "id": "urn:ngm:class:regularisation",
         "label": "Regularisation"
-      },
-      {
-        "id": "urn:ngm:class:penalty-term",
-        "label": "Penalty Term"
       }
     ],
     "requires": [
@@ -60,7 +56,7 @@
         "label": "Loss Landscape"
       },
       {
-        "id": "urn:ngm:class:parametric-model",
+        "id": "urn:ngm:class:parametric-design-methodology-modeling",
         "label": "Parametric Model"
       }
     ],

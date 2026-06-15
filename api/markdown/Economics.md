@@ -418,14 +418,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:industrial-organisation",
-        "label": "Industrial Organisation"
-      },
-      {
-        "@id": "urn:ngm:class:labour-economics",
-        "label": "Labour Economics"
-      },
-      {
         "@id": "urn:ngm:class:macroeconomics",
         "label": "Macroeconomics"
       },
@@ -438,24 +430,8 @@ public:: true
         "label": "Mechanism Design"
       },
       {
-        "@id": "urn:ngm:class:monetary-economics",
-        "label": "Monetary Economics"
-      },
-      {
         "@id": "urn:ngm:class:principal-agent-theory",
         "label": "Principal-Agent Theory"
-      },
-      {
-        "@id": "urn:ngm:class:productivity-measurement",
-        "label": "Productivity Measurement"
-      },
-      {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-theory",
-        "label": "Public Goods Theory"
-      },
-      {
-        "@id": "urn:ngm:class:transaction-cost-theory",
-        "label": "Transaction Cost Theory"
       },
       {
         "@id": "urn:ngm:class:welfare-economics",
@@ -484,10 +460,6 @@ public:: true
         "label": "Information Asymmetry"
       },
       {
-        "@id": "urn:ngm:class:market-institutions",
-        "label": "Market Institutions"
-      },
-      {
         "@id": "urn:ngm:class:social-choice-theory",
         "label": "Social Choice Theory"
       },
@@ -497,18 +469,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:antitrust-policy",
-        "label": "Antitrust Policy"
-      },
-      {
-        "@id": "urn:ngm:class:carbon-market-design",
-        "label": "Carbon Market Design"
-      },
-      {
-        "@id": "urn:ngm:class:labour-market-policy",
-        "label": "Labour Market Policy"
-      },
       {
         "@id": "urn:ngm:class:platform-regulation",
         "label": "Platform Regulation"
@@ -520,14 +480,6 @@ public:: true
       {
         "@id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
         "label": "Public Goods Funding"
-      },
-      {
-        "@id": "urn:ngm:class:token-design",
-        "label": "Token Design"
-      },
-      {
-        "@id": "urn:ngm:class:welfare-analysis",
-        "label": "Welfare Analysis"
       },
       {
         "@id": "urn:ngm:class:ai-governance",
@@ -552,16 +504,8 @@ public:: true
         "label": "Game Theory"
       },
       {
-        "@id": "urn:ngm:class:matching-theory",
-        "label": "Matching Theory"
-      },
-      {
         "@id": "urn:ngm:class:mechanism-design",
         "label": "Mechanism Design"
-      },
-      {
-        "@id": "urn:ngm:class:optimal-taxation",
-        "label": "Optimal Taxation"
       },
       {
         "@id": "urn:ngm:class:quadratic-funding",
@@ -582,20 +526,8 @@ public:: true
         "label": "Causal Inference"
       },
       {
-        "@id": "urn:ngm:class:complexity-modelling",
-        "label": "Complexity Modelling"
-      },
-      {
         "@id": "urn:ngm:class:econometrics",
         "label": "Econometrics"
-      },
-      {
-        "@id": "urn:ngm:class:empirical-io",
-        "label": "Empirical IO"
-      },
-      {
-        "@id": "urn:ngm:class:general-equilibrium-models",
-        "label": "General Equilibrium Models"
       },
       {
         "@id": "urn:ngm:class:network-analysis",
@@ -720,11 +652,7 @@ public:: true
         "label": "OECD"
       },
       {
-        "@id": "urn:ngm:class:uk-competition-and-markets-authority",
-        "label": "UK Competition and Markets Authority"
-      },
-      {
-        "@id": "urn:ngm:class:uk-hm-treasury",
+        "@id": "urn:ngm:class:hm-treasury",
         "label": "UK HM Treasury"
       },
       {

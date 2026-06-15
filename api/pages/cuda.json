@@ -18,18 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:cublas",
-        "label": "cuBLAS"
-      },
-      {
-        "id": "urn:ngm:class:cudnn",
-        "label": "cuDNN"
-      },
-      {
-        "id": "urn:ngm:class:nccl",
-        "label": "NCCL"
-      },
-      {
         "id": "urn:ngm:class:tensor-core",
         "label": "Tensor Core"
       }
@@ -74,21 +62,13 @@
         "label": "ROCm"
       },
       {
-        "id": "urn:ngm:class:oneapi",
-        "label": "oneAPI"
-      },
-      {
         "id": "urn:ngm:class:opencl",
         "label": "OpenCL"
-      },
-      {
-        "id": "urn:ngm:class:metal-compute",
-        "label": "Metal Compute"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:gpu-accelerated-rendering",
+        "id": "urn:ngm:class:gpu-rendering",
         "label": "GPU Accelerated Rendering"
       },
       {
@@ -97,10 +77,6 @@
       }
     ],
     "uses": [
-      {
-        "id": "urn:ngm:class:simt-execution",
-        "label": "SIMT Execution"
-      },
       {
         "id": "urn:ngm:class:shared-memory",
         "label": "Shared Memory"
@@ -133,7 +109,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:pytorch",
+        "id": "urn:ngm:class:python-pytorch-deep-learning-stack",
         "label": "PyTorch"
       },
       {
@@ -141,7 +117,7 @@
         "label": "TensorFlow"
       },
       {
-        "id": "urn:ngm:class:gpu-memory-bandwidth",
+        "id": "urn:ngm:class:memory-bandwidth",
         "label": "GPU Memory Bandwidth"
       }
     ]

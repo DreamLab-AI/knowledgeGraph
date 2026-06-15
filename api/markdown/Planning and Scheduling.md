@@ -78,18 +78,6 @@ public:: true
       {
         "@id": "urn:ngm:class:classical-planning",
         "label": "Classical Planning"
-      },
-      {
-        "@id": "urn:ngm:class:temporal-planning",
-        "label": "Temporal Planning"
-      },
-      {
-        "@id": "urn:ngm:class:contingent-planning",
-        "label": "Contingent Planning"
-      },
-      {
-        "@id": "urn:ngm:class:job-shop-scheduling",
-        "label": "Job Shop Scheduling"
       }
     ],
     "partOf": [
@@ -118,7 +106,7 @@ public:: true
         "label": "Robotics"
       },
       {
-        "@id": "urn:ngm:class:autonomous-systems",
+        "@id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
       },
       {

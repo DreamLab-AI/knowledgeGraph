@@ -83,10 +83,6 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:emulation",
-        "label": "Emulation"
-      },
-      {
         "id": "urn:ngm:class:physical-prototype",
         "label": "Physical Prototype"
       }

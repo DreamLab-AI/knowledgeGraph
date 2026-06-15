@@ -94,30 +94,8 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:boundary-definition",
-        "label": "Boundary Definition"
-      },
-      {
         "@id": "urn:ngm:class:emission-factors",
         "label": "Emission Factors"
-      },
-      {
-        "@id": "urn:ngm:class:lifecycle-data",
-        "label": "Lifecycle Data"
-      }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:hotspot-identification",
-        "label": "Hotspot Identification"
-      },
-      {
-        "@id": "urn:ngm:class:impact-quantification",
-        "label": "Impact Quantification"
-      },
-      {
-        "@id": "urn:ngm:class:reduction-strategy",
-        "label": "Reduction Strategy"
       }
     ]
   },

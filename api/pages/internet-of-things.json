@@ -142,10 +142,6 @@
       {
         "id": "urn:ngm:class:fog-computing",
         "label": "Fog Computing"
-      },
-      {
-        "id": "urn:ngm:class:device-management",
-        "label": "Device Management"
       }
     ]
   },

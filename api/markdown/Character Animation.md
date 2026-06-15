@@ -23,50 +23,117 @@ public:: true
   "definition": "Character animation is the discipline of creating the illusion of life and intentional movement in digital or physical characters through the coordinated manipulation of skeletal rigs, blend shapes, and motion data across time, driven by principles derived from traditional film animation. It encompasses the full pipeline from rigging and skinning a character mesh to authoring, retargeting, and blending motion clips in real time, and extends to AI-driven procedural and physics-based approaches that generate plausible movement without manual keyframing. The field spans offline cinematic animation for film and games and real-time systems for interactive avatars, XR experiences, and virtual humans.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:animation", "label": "Animation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:animation",
+      "label": "Animation"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
-      {"@id": "urn:ngm:class:forward-kinematics", "label": "Forward Kinematics"},
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
-      {"@id": "urn:ngm:class:character-rigging", "label": "Character Rigging"},
-      {"@id": "urn:ngm:class:skeletal-animation", "label": "Skeletal Animation"},
-      {"@id": "urn:ngm:class:blend-shapes", "label": "Blend Shapes"},
-      {"@id": "urn:ngm:class:keyframe-animation", "label": "Keyframe Animation"}
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:character-rigging",
+        "label": "Character Rigging"
+      },
+      {
+        "@id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      },
+      {
+        "@id": "urn:ngm:class:keyframe-animation",
+        "label": "Keyframe Animation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:real-time-character-animation", "label": "Real Time Character Animation"},
-      {"@id": "urn:ngm:class:dynamic-character-animation", "label": "Dynamic Character Animation"},
-      {"@id": "urn:ngm:class:avatar-animation", "label": "Avatar Animation"},
-      {"@id": "urn:ngm:class:virtual-human", "label": "Virtual Human"},
-      {"@id": "urn:ngm:class:facial-animation", "label": "Facial Animation"}
+      {
+        "@id": "urn:ngm:class:real-time-character-animation",
+        "label": "Real Time Character Animation"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-character-animation",
+        "label": "Dynamic Character Animation"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-animation",
+        "label": "Avatar Animation"
+      },
+      {
+        "@id": "urn:ngm:class:facial-animation",
+        "label": "Facial Animation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:3d-mesh", "label": "3D Mesh"},
-      {"@id": "urn:ngm:class:skin-weighting", "label": "Skin Weighting"},
-      {"@id": "urn:ngm:class:animation-state-machine", "label": "Animation State Machine"}
+      {
+        "@id": "urn:ngm:class:animation-state-machine",
+        "label": "Animation State Machine"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:procedural-animation", "label": "Procedural Animation"},
-      {"@id": "urn:ngm:class:physics-based-animation", "label": "Physics-Based Animation"}
+      {
+        "@id": "urn:ngm:class:procedural-animation",
+        "label": "Procedural Animation"
+      },
+      {
+        "@id": "urn:ngm:class:physics-based-animation",
+        "label": "Physics-Based Animation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:animation-retargeting", "label": "Animation Retargeting"},
-      {"@id": "urn:ngm:class:secondary-motion", "label": "Secondary Motion"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:animation-retargeting",
+        "label": "Animation Retargeting"
+      },
+      {
+        "@id": "urn:ngm:class:secondary-motion",
+        "label": "Secondary Motion"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:universal-scene-description", "label": "Universal Scene Description"},
-      {"@id": "urn:ngm:class:openxr", "label": "OpenXR"}
+      {
+        "@id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      },
+      {
+        "@id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:digital-character-animation", "label": "Digital Character Animation"}
+    {
+      "@id": "urn:ngm:class:digital-character-animation",
+      "label": "Digital Character Animation"
+    }
   ],
   "quality": 0.8,
   "provenance": {

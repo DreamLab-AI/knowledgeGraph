@@ -22,10 +22,6 @@
         "label": "Root Certificate"
       },
       {
-        "id": "urn:ngm:class:intermediate-certificate-authority",
-        "label": "Intermediate Certificate Authority"
-      },
-      {
         "id": "urn:ngm:class:certificate-revocation-list",
         "label": "Certificate Revocation List"
       },
@@ -44,7 +40,7 @@
         "label": "Digital Signature"
       },
       {
-        "id": "urn:ngm:class:asymmetric-key-cryptography",
+        "id": "urn:ngm:class:asymmetric-cryptography",
         "label": "Asymmetric Key Cryptography"
       },
       {
@@ -92,7 +88,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential",
+        "id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       },
       {
@@ -111,7 +107,7 @@
         "label": "Identity Management"
       },
       {
-        "id": "urn:ngm:class:zero-trust-security",
+        "id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Security"
       },
       {
@@ -127,31 +123,15 @@
       {
         "id": "urn:ngm:class:rfc-5280",
         "label": "RFC 5280"
-      },
-      {
-        "id": "urn:ngm:class:webtrust",
-        "label": "WebTrust"
       }
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:trust-hierarchy",
-        "label": "Trust Hierarchy"
       }
     ],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:acme-protocol",
-        "label": "ACME Protocol"
-      },
-      {
-        "id": "urn:ngm:class:domain-validation",
-        "label": "Domain Validation"
-      },
       {
         "id": "urn:ngm:class:certificate-transparency",
         "label": "Certificate Transparency"

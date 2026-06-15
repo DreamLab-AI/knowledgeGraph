@@ -25,10 +25,6 @@
       {
         "id": "urn:ngm:class:ground-truth-labels",
         "label": "Ground Truth Labels"
-      },
-      {
-        "id": "urn:ngm:class:held-out-test-sets",
-        "label": "Held-Out Test Sets"
       }
     ],
     "enables": [
@@ -45,15 +41,11 @@
         "label": "Reproducibility"
       },
       {
-        "id": "urn:ngm:class:leaderboards",
+        "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
         "label": "Leaderboards"
       }
     ],
     "dependsOn": [
-      {
-        "id": "urn:ngm:class:annotation-pipelines",
-        "label": "Annotation Pipelines"
-      },
       {
         "id": "urn:ngm:class:data-curation",
         "label": "Data Curation"
@@ -64,17 +56,9 @@
       {
         "id": "urn:ngm:class:human-evaluation",
         "label": "Human Evaluation"
-      },
-      {
-        "id": "urn:ngm:class:ablation-studies",
-        "label": "Ablation Studies"
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:hardware-performance",
-        "label": "Hardware Performance"
-      },
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
@@ -88,10 +72,6 @@
       {
         "id": "urn:ngm:class:performance-metrics",
         "label": "Performance Metrics"
-      },
-      {
-        "id": "urn:ngm:class:datasets",
-        "label": "Datasets"
       },
       {
         "id": "urn:ngm:class:statistical-testing",

@@ -120,54 +120,141 @@ alias:: Fine-Tuning, Fine-tuning
   },
   "relations": {
     "dependsOn": [
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:pre-trained-model", "label": "Pre-Trained Model"},
-      {"@id": "urn:ngm:class:labelled-dataset", "label": "Labelled Dataset"}
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:pre-trained-model",
+        "label": "Pre-Trained Model"
+      },
+      {
+        "@id": "urn:ngm:class:labelled-dataset",
+        "label": "Labelled Dataset"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
-      {"@id": "urn:ngm:class:learning-rate-scheduling", "label": "Learning Rate Scheduling"},
-      {"@id": "urn:ngm:class:low-rank-adaptation", "label": "Low-Rank Adaptation"}
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:learning-rate-schedule",
+        "label": "Learning Rate Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:low-rank-adaptation",
+        "label": "Low-Rank Adaptation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:instruction-following", "label": "Instruction Following"},
-      {"@id": "urn:ngm:class:domain-adaptation", "label": "Domain Adaptation"},
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:instruction-following",
+        "label": "Instruction Following"
+      },
+      {
+        "@id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"},
-      {"@id": "urn:ngm:class:full-fine-tuning", "label": "Full Fine Tuning"},
-      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine Tuning"}
+      {
+        "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:full-fine-tuning",
+        "label": "Full Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:supervised-fine-tuning",
+        "label": "Supervised Fine Tuning"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:model-training-pipeline", "label": "Model Training Pipeline"}
+      {
+        "@id": "urn:ngm:class:model-training-pipeline",
+        "label": "Model Training Pipeline"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:task-specific-dataset", "label": "Task-Specific Dataset"}
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:task-specific-dataset",
+        "label": "Task-Specific Dataset"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:training-from-scratch", "label": "Training From Scratch"}
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:training-from-scratch",
+        "label": "Training From Scratch"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-alignment", "label": "Model Alignment"},
-      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"},
-      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"}
+      {
+        "@id": "urn:ngm:class:model-alignment",
+        "label": "Model Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:style-transfer", "label": "Style Transfer"},
-      {"@id": "urn:ngm:class:multimodal-models", "label": "Multimodal Models"}
+      {
+        "@id": "urn:ngm:class:style-transfer",
+        "label": "Style Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-models",
+        "label": "Multimodal Models"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:model-fine-tuning", "label": "Model Fine-Tuning"},
-    {"@id": "urn:ngm:class:supervised-adaptation", "label": "Supervised Adaptation"}
+    {
+      "@id": "urn:ngm:class:model-fine-tuning",
+      "label": "Model Fine-Tuning"
+    },
+    {
+      "@id": "urn:ngm:class:supervised-adaptation",
+      "label": "Supervised Adaptation"
+    }
   ],
   "quality": 0.72,
   "provenance": {

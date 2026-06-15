@@ -68,14 +68,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:input-robustness",
-        "label": "Input Robustness"
-      },
-      {
-        "@id": "urn:ngm:class:distributional-robustness",
-        "label": "Distributional Robustness"
-      },
-      {
         "@id": "urn:ngm:class:certified-robustness",
         "label": "Certified Robustness"
       }
@@ -102,10 +94,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:reliable-deployment",
-        "label": "Reliable Deployment"
-      },
-      {
         "@id": "urn:ngm:class:safety-fine-tuning",
         "label": "Safety Fine Tuning"
       }
@@ -118,22 +106,12 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:iso-iec-24029",
+        "@id": "urn:ngm:class:iso-iec-tr-24029-1-2021",
         "label": "ISO IEC 24029"
       },
       {
         "@id": "urn:ngm:class:nist-ai-rmf",
         "label": "NIST AI RMF"
-      }
-    ],
-    "uses": [
-      {
-        "@id": "urn:ngm:class:perturbation-testing",
-        "label": "Perturbation Testing"
-      },
-      {
-        "@id": "urn:ngm:class:metamorphic-testing",
-        "label": "Metamorphic Testing"
       }
     ],
     "supports": [
@@ -148,7 +126,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {

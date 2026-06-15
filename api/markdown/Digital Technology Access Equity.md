@@ -51,53 +51,123 @@ elevatedFrom:: [[Equity]]
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:digital-inclusion", "label": "Digital Inclusion"},
-      {"@id": "urn:ngm:class:sustainable-development-goals", "label": "Sustainable Development Goals"}
+      {
+        "@id": "urn:ngm:class:digital-inclusion",
+        "label": "Digital Inclusion"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-development-goals",
+        "label": "Sustainable Development Goals"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:broadband-connectivity", "label": "Broadband Connectivity"},
-      {"@id": "urn:ngm:class:digital-literacy", "label": "Digital Literacy"},
-      {"@id": "urn:ngm:class:affordable-access", "label": "Affordable Access"}
+      {
+        "@id": "urn:ngm:class:broadband-connectivity",
+        "label": "Broadband Connectivity"
+      },
+      {
+        "@id": "urn:ngm:class:digital-literacy",
+        "label": "Digital Literacy"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:telecommunications-infrastructure", "label": "Telecommunications Infrastructure"},
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:public-policy", "label": "Public Policy"}
+      {
+        "@id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:public-policy",
+        "label": "Public Policy"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:education-technology", "label": "Education Technology"},
-      {"@id": "urn:ngm:class:education-and-ai", "label": "Education and AI"},
-      {"@id": "urn:ngm:class:economic-participation", "label": "Economic Participation"}
+      {
+        "@id": "urn:ngm:class:education-technology",
+        "label": "Education Technology"
+      },
+      {
+        "@id": "urn:ngm:class:education-and-ai",
+        "label": "Education and AI"
+      },
+      {
+        "@id": "urn:ngm:class:economic-participation",
+        "label": "Economic Participation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:open-data", "label": "Open Data"},
-      {"@id": "urn:ngm:class:universal-service-obligation", "label": "Universal Service Obligation"}
+      {
+        "@id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      },
+      {
+        "@id": "urn:ngm:class:universal-service-obligation",
+        "label": "Universal Service Obligation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:algorithmic-fairness", "label": "Algorithmic Fairness"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"}
+      {
+        "@id": "urn:ngm:class:algorithmic-fairness",
+        "label": "Algorithmic Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:itu-standards", "label": "ITU Standards"},
-      {"@id": "urn:ngm:class:un-broadband-commission", "label": "UN Broadband Commission"}
+      {
+        "@id": "urn:ngm:class:itu-t",
+        "label": "ITU Standards"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:digital-divide", "label": "Digital Divide"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+      {
+        "@id": "urn:ngm:class:digital-divide",
+        "label": "Digital Divide"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:fairness-oecd", "label": "Fairness (OECD)"},
-      {"@id": "urn:ngm:class:data-sovereignty", "label": "Data Sovereignty"},
-      {"@id": "urn:ngm:class:human-rights-and-technology", "label": "Human Rights and Technology"}
+      {
+        "@id": "urn:ngm:class:fairness-oecd",
+        "label": "Fairness (OECD)"
+      },
+      {
+        "@id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:human-rights",
+        "label": "Human Rights and Technology"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-bias", "label": "AI Bias"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:ai-bias",
+        "label": "AI Bias"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:digital-equity", "label": "Digital Equity"},
-    {"@id": "urn:ngm:class:ict-access-equity", "label": "ICT Access Equity"}
+    {
+      "@id": "urn:ngm:class:digital-equity",
+      "label": "Digital Equity"
+    },
+    {
+      "@id": "urn:ngm:class:ict-access-equity",
+      "label": "ICT Access Equity"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

@@ -117,30 +117,6 @@ public:: true
         "@id": "urn:ngm:class:power-supply",
         "label": "Power Supply"
       }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:accessibility-in-harsh-environments",
-        "label": "Accessibility in Harsh Environments"
-      },
-      {
-        "@id": "urn:ngm:class:injury-prevention",
-        "label": "Injury Prevention"
-      },
-      {
-        "@id": "urn:ngm:class:worker-productivity",
-        "label": "Worker Productivity"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:human-augmentation-system",
-        "label": "Human Augmentation System"
-      },
-      {
-        "@id": "urn:ngm:class:occupational-safety-equipment",
-        "label": "Occupational Safety Equipment"
-      }
     ]
   },
   "quality": 0.57,

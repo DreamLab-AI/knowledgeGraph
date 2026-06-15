@@ -87,7 +87,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:complex-systems-science",
+        "@id": "urn:ngm:class:complex-systems",
         "label": "Complex Systems Science"
       }
     ],
@@ -160,10 +160,6 @@ public:: true
       }
     ],
     "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:equation-based-modelling",
-        "label": "Equation-Based Modelling"
-      },
       {
         "@id": "urn:ngm:class:system-dynamics",
         "label": "System Dynamics"

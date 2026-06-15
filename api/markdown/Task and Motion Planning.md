@@ -97,7 +97,7 @@ public:: true
         "label": "Autonomous Manipulation"
       },
       {
-        "@id": "urn:ngm:class:robot-task-execution",
+        "@id": "urn:ngm:class:task-execution",
         "label": "Robot Task Execution"
       }
     ],
@@ -153,10 +153,6 @@ public:: true
       {
         "@id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
-      },
-      {
-        "@id": "urn:ngm:class:manipulation-planning",
-        "label": "Manipulation Planning"
       }
     ],
     "bridgesTo": [

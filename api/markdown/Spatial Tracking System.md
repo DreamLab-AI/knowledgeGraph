@@ -65,12 +65,6 @@ public:: true
         "@id": "urn:ngm:class:motion-tracking",
         "label": "Motion Tracking"
       }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:precise-spatial-positioning",
-        "label": "Precise Spatial Positioning"
-      }
     ]
   },
   "quality": 0.35,

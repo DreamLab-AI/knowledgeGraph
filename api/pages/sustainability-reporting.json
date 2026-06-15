@@ -31,13 +31,13 @@
         "label": "Materiality Assessment"
       },
       {
-        "id": "urn:ngm:class:audit-and-assurance",
+        "id": "urn:ngm:class:audit",
         "label": "Audit and Assurance"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:esg-investment",
+        "id": "urn:ngm:class:esg-investing",
         "label": "ESG Investment"
       },
       {
@@ -59,13 +59,13 @@
         "label": "Scope 3 Emissions"
       },
       {
-        "id": "urn:ngm:class:emission-factor-databases",
+        "id": "urn:ngm:class:emission-factors",
         "label": "Emission Factor Databases"
       }
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:esg-framework",
+        "id": "urn:ngm:class:esg",
         "label": "ESG Framework"
       },
       {
@@ -77,7 +77,7 @@
         "label": "Global Reporting Initiative"
       },
       {
-        "id": "urn:ngm:class:csrd",
+        "id": "urn:ngm:class:csrd-compliance",
         "label": "CSRD"
       }
     ],

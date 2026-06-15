@@ -23,51 +23,117 @@ public:: true
   "definition": "Polycentric governance is a theory and practice of institutional arrangement in which authority over a shared domain is distributed across multiple overlapping, semi-autonomous decision-making centres rather than concentrated in a single hierarchy. Developed by Vincent and Elinor Ostrom through empirical study of common-pool resource management, the framework holds that complex social-ecological and sociotechnical systems benefit from diverse, redundant governance layers that can adapt, experiment, and mutually check one another. Each governance unit retains meaningful autonomy while engaging with others through negotiation, conflict-resolution mechanisms, and shared rules. Polycentric governance is increasingly applied to internet regulation, AI governance, and decentralised protocol design.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:governance", "label": "Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"},
-      {"@id": "urn:ngm:class:democratic-governance", "label": "Democratic Governance"},
-      {"@id": "urn:ngm:class:community-governance", "label": "Community Governance"},
-      {"@id": "urn:ngm:class:common-pool-resource-management", "label": "Common-Pool Resource Management"},
-      {"@id": "urn:ngm:class:institutional-design", "label": "Institutional Design"},
-      {"@id": "urn:ngm:class:collective-action", "label": "Collective Action"}
+      {
+        "@id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      },
+      {
+        "@id": "urn:ngm:class:democratic-governance",
+        "label": "Democratic Governance"
+      },
+      {
+        "@id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      },
+      {
+        "@id": "urn:ngm:class:common-pool-resources",
+        "label": "Common-Pool Resource Management"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-design",
+        "label": "Institutional Design"
+      },
+      {
+        "@id": "urn:ngm:class:collective-action",
+        "label": "Collective Action"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
-      {"@id": "urn:ngm:class:participatory-policy-making", "label": "Participatory Policy Making"},
-      {"@id": "urn:ngm:class:regulatory-experimentation", "label": "Regulatory Experimentation"},
-      {"@id": "urn:ngm:class:multi-stakeholder-governance", "label": "Multi-Stakeholder Governance"}
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:participatory-policy-making",
+        "label": "Participatory Policy Making"
+      },
+      {
+        "@id": "urn:ngm:class:multi-stakeholder-governance",
+        "label": "Multi-Stakeholder Governance"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:internet-governance", "label": "Internet Governance"},
-      {"@id": "urn:ngm:class:platform-governance", "label": "Platform Governance"},
-      {"@id": "urn:ngm:class:climate-governance", "label": "Climate Governance"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:internet-governance",
+        "label": "Internet Governance"
+      },
+      {
+        "@id": "urn:ngm:class:platform-governance",
+        "label": "Platform Governance"
+      },
+      {
+        "@id": "urn:ngm:class:climate-governance",
+        "label": "Climate Governance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:conflict-resolution", "label": "Conflict Resolution"},
-      {"@id": "urn:ngm:class:subsidiarity-principle", "label": "Subsidiarity Principle"}
+      {
+        "@id": "urn:ngm:class:conflict-resolution",
+        "label": "Conflict Resolution"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:nested-institutions", "label": "Nested Institutions"},
-      {"@id": "urn:ngm:class:meta-governance", "label": "Meta-Governance"}
+      {
+        "@id": "urn:ngm:class:meta-governance",
+        "label": "Meta-Governance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:governance-architecture", "label": "Governance Architecture"},
-      {"@id": "urn:ngm:class:hierarchical-governance", "label": "Hierarchical Governance"},
-      {"@id": "urn:ngm:class:monocentric-governance", "label": "Monocentric Governance"}
+      {
+        "@id": "urn:ngm:class:governance-architecture",
+        "label": "Governance Architecture"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:federated-systems", "label": "Federated Systems"}
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:federated-system",
+        "label": "Federated Systems"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:polycentrism", "label": "Polycentrism"},
-    {"@id": "urn:ngm:class:ostrom-governance", "label": "Ostrom Governance Framework"}
+    {
+      "@id": "urn:ngm:class:polycentrism",
+      "label": "Polycentrism"
+    },
+    {
+      "@id": "urn:ngm:class:ostrom-governance",
+      "label": "Ostrom Governance Framework"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

@@ -174,7 +174,7 @@ public:: true
         "label": "Philosophy"
       },
       {
-        "@id": "urn:ngm:class:computational-complexity",
+        "@id": "urn:ngm:class:computational-complexity-theory",
         "label": "Computational Complexity"
       }
     ]

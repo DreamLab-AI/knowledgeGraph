@@ -142,20 +142,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:authenticity-checking",
+        "@id": "urn:ngm:class:content-authenticity",
         "label": "Authenticity Checking"
       },
       {
-        "@id": "urn:ngm:class:chain-of-custody-tracking",
+        "@id": "urn:ngm:class:chain-of-custody",
         "label": "Chain of Custody Tracking"
-      },
-      {
-        "@id": "urn:ngm:class:ledger-record-verification",
-        "label": "Ledger Record Verification"
-      },
-      {
-        "@id": "urn:ngm:class:metadata-validation",
-        "label": "Metadata Validation"
       }
     ],
     "requires": [
@@ -177,18 +169,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:asset-authentication",
-        "label": "Asset Authentication"
-      },
-      {
-        "@id": "urn:ngm:class:compliance-auditing",
-        "label": "Compliance Auditing"
-      },
-      {
-        "@id": "urn:ngm:class:ownership-validation",
-        "label": "Ownership Validation"
-      },
       {
         "@id": "urn:ngm:class:trust-establishment",
         "label": "Trust Establishment"

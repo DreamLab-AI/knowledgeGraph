@@ -94,7 +94,7 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:transformer-model",
+        "id": "urn:ngm:class:transformer",
         "label": "Transformer Model"
       },
       {

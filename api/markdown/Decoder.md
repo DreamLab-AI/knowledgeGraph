@@ -97,7 +97,7 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:masked-self-attention",
+        "@id": "urn:ngm:class:self-attention",
         "label": "Masked Self Attention"
       },
       {
@@ -131,10 +131,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:sequence-to-sequence",
-        "label": "Sequence To Sequence"
-      },
-      {
         "@id": "urn:ngm:class:text-generation",
         "label": "Text Generation"
       },
@@ -147,10 +143,6 @@ public:: true
       {
         "@id": "urn:ngm:class:encoder",
         "label": "Encoder"
-      },
-      {
-        "@id": "urn:ngm:class:non-autoregressive-decoding",
-        "label": "Non Autoregressive Decoding"
       }
     ],
     "relatedTo": [
@@ -167,7 +159,7 @@ public:: true
         "label": "Speculative Decoding"
       },
       {
-        "@id": "urn:ngm:class:causal-language-model",
+        "@id": "urn:ngm:class:causal-language-modelling",
         "label": "Causal Language Model"
       }
     ],

@@ -48,54 +48,137 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:latency", "label": "Latency"},
-      {"@id": "urn:ngm:class:throughput", "label": "Throughput"},
-      {"@id": "urn:ngm:class:accuracy", "label": "Accuracy"},
-      {"@id": "urn:ngm:class:precision-recall", "label": "Precision-Recall"},
-      {"@id": "urn:ngm:class:f1-score", "label": "F1 Score"},
-      {"@id": "urn:ngm:class:mean-average-precision", "label": "Mean Average Precision"}
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      },
+      {
+        "@id": "urn:ngm:class:accuracy",
+        "label": "Accuracy"
+      },
+      {
+        "@id": "urn:ngm:class:precision-recall-curve",
+        "label": "Precision-Recall"
+      },
+      {
+        "@id": "urn:ngm:class:f1-score",
+        "label": "F1 Score"
+      },
+      {
+        "@id": "urn:ngm:class:mean-average-precision",
+        "label": "Mean Average Precision"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:benchmarking", "label": "Benchmarking"},
-      {"@id": "urn:ngm:class:ground-truth-labels", "label": "Ground Truth Labels"},
-      {"@id": "urn:ngm:class:data-collection", "label": "Data Collection"}
+      {
+        "@id": "urn:ngm:class:benchmarking",
+        "label": "Benchmarking"
+      },
+      {
+        "@id": "urn:ngm:class:ground-truth-labels",
+        "label": "Ground Truth Labels"
+      },
+      {
+        "@id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-optimisation", "label": "Model Optimisation"},
-      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"},
-      {"@id": "urn:ngm:class:capacity-planning", "label": "Capacity Planning"}
+      {
+        "@id": "urn:ngm:class:model-optimisation-and-performance",
+        "label": "Model Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "@id": "urn:ngm:class:capacity-planning",
+        "label": "Capacity Planning"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:monitoring-dashboard", "label": "Monitoring Dashboard"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"}
+      {
+        "@id": "urn:ngm:class:monitoring-dashboard",
+        "label": "Monitoring Dashboard"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:observability", "label": "Observability"},
-      {"@id": "urn:ngm:class:logging", "label": "Logging"}
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "@id": "urn:ngm:class:audit-logging",
+        "label": "Logging"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:performance-benchmarks", "label": "Performance Benchmarks"},
-      {"@id": "urn:ngm:class:statistical-testing", "label": "Statistical Testing"}
+      {
+        "@id": "urn:ngm:class:performance-benchmarks",
+        "label": "Performance Benchmarks"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-testing",
+        "label": "Statistical Testing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:model-evaluation-results", "label": "Model Evaluation Results"},
-      {"@id": "urn:ngm:class:qualitative-assessment", "label": "Qualitative Assessment"}
+      {
+        "@id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:service-level-agreement", "label": "Service Level Agreement"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:energy-efficiency", "label": "Energy Efficiency"}
+      {
+        "@id": "urn:ngm:class:service-level-agreement",
+        "label": "Service Level Agreement"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:confusion-matrix", "label": "Confusion Matrix"},
-      {"@id": "urn:ngm:class:roc-curve", "label": "ROC Curve"},
-      {"@id": "urn:ngm:class:auc", "label": "AUC"}
+      {
+        "@id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:roc-curve",
+        "label": "ROC Curve"
+      },
+      {
+        "@id": "urn:ngm:class:auc",
+        "label": "AUC"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:evaluation-metrics", "label": "Evaluation Metrics"},
-    {"@id": "urn:ngm:class:system-metrics", "label": "System Metrics"}
+    {
+      "@id": "urn:ngm:class:evaluation-metrics",
+      "label": "Evaluation Metrics"
+    },
+    {
+      "@id": "urn:ngm:class:system-metrics",
+      "label": "System Metrics"
+    }
   ],
   "quality": 0.72,
   "provenance": {

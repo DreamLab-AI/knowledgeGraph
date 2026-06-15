@@ -23,56 +23,148 @@ public:: true
   "definition": "A head-mounted display (HMD) is a wearable optoelectronic device worn on the head that positions one or more display panels or optical projectors in front of the user's eyes, delivering immersive visual content for virtual reality, augmented reality, or mixed reality applications. HMDs incorporate dedicated optics — ranging from Fresnel lenses and pancake optics to diffractive waveguides — to focus near-focal-plane displays at a perceptually comfortable vergence distance, alongside inertial and visual tracking systems that measure head orientation and six-degrees-of-freedom position in real time. The design space spans sealed VR systems that fully occlude the real world, optical see-through AR waveguide systems that superimpose digital graphics onto the physical environment, and video-passthrough mixed reality headsets that combine high-fidelity camera streams with real-time scene reconstruction. HMDs serve as the primary platform through which users perceive and interact with spatial computing environments.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:xr-headset", "label": "XR Headset"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:xr-headset",
+      "label": "XR Headset"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:head-mounted-device", "label": "Head-Mounted Device"},
-    {"@id": "urn:ngm:class:headset-display", "label": "Headset Display"}
+    {
+      "@id": "urn:ngm:class:head-mounted-device",
+      "label": "Head-Mounted Device"
+    },
+    {
+      "@id": "urn:ngm:class:headset-display",
+      "label": "Headset Display"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:optical-system", "label": "Optical System"},
-      {"@id": "urn:ngm:class:inertial-measurement-unit", "label": "Inertial Measurement Unit"},
-      {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"},
-      {"@id": "urn:ngm:class:passthrough-camera", "label": "Passthrough Camera"}
+      {
+        "@id": "urn:ngm:class:optical-systems",
+        "label": "Optical System"
+      },
+      {
+        "@id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:passthrough-camera",
+        "label": "Passthrough Camera"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:extended-reality-xr", "label": "Extended Reality (XR)"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:display-technology", "label": "Display Technology"},
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
-      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"}
+      {
+        "@id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
-      {"@id": "urn:ngm:class:immersive-collaboration", "label": "Immersive Collaboration"},
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"}
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-collaboration",
+        "label": "Immersive Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:foveated-rendering", "label": "Foveated Rendering"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:hand-tracking", "label": "Hand Tracking"},
-      {"@id": "urn:ngm:class:inside-out-tracking", "label": "Inside-Out Tracking"}
+      {
+        "@id": "urn:ngm:class:foveated-rendering",
+        "label": "Foveated Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:inside-out-tracking",
+        "label": "Inside-Out Tracking"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:gpu", "label": "GPU"},
-      {"@id": "urn:ngm:class:wireless-connectivity", "label": "Wireless Connectivity"}
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-connectivity",
+        "label": "Wireless Connectivity"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:cave-automatic-virtual-environment", "label": "Cave Automatic Virtual Environment"},
-      {"@id": "urn:ngm:class:flat-panel-display", "label": "Flat Panel Display"}
+      {
+        "@id": "urn:ngm:class:virtual-environment",
+        "label": "Cave Automatic Virtual Environment"
+      },
+      {
+        "@id": "urn:ngm:class:flat-panel-display",
+        "label": "Flat Panel Display"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:ai-inference", "label": "AI Inference"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:openxr", "label": "OpenXR"},
-      {"@id": "urn:ngm:class:webxr", "label": "WebXR"}
+      {
+        "@id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      },
+      {
+        "@id": "urn:ngm:class:webxr",
+        "label": "WebXR"
+      }
     ]
   },
   "quality": 0.74,

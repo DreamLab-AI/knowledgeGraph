@@ -16,24 +16,7 @@
   "qualityScore": 0.8,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:fundamental-matrix",
-        "label": "Fundamental Matrix"
-      },
-      {
-        "id": "urn:ngm:class:essential-matrix",
-        "label": "Essential Matrix"
-      },
-      {
-        "id": "urn:ngm:class:epipolar-line",
-        "label": "Epipolar Line"
-      },
-      {
-        "id": "urn:ngm:class:epipole",
-        "label": "Epipole"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:feature-matching",
@@ -62,7 +45,7 @@
         "label": "Stereo Rectification"
       },
       {
-        "id": "urn:ngm:class:3d-reconstruction",
+        "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
       }
     ],

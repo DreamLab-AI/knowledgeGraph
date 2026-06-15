@@ -124,10 +124,6 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:implementation-libraries",
-        "label": "Implementation Libraries"
-      },
-      {
         "@id": "urn:ngm:class:validation-tools",
         "label": "Validation Tools"
       },
@@ -138,7 +134,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:3-d-asset-interoperability",
+        "@id": "urn:ngm:class:asset-interoperability",
         "label": "3D Asset Interoperability"
       },
       {
@@ -146,11 +142,11 @@ public:: true
         "label": "Content Portability"
       },
       {
-        "@id": "urn:ngm:class:cross-platform-exchange",
+        "@id": "urn:ngm:class:cross-platform-asset-exchange",
         "label": "Cross-Platform Exchange"
       },
       {
-        "@id": "urn:ngm:class:digital-twin-visualization",
+        "@id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin Visualization"
       }
     ],
@@ -160,7 +156,7 @@ public:: true
         "label": "Khronos Group"
       },
       {
-        "@id": "urn:ngm:class:open-standards-process",
+        "@id": "urn:ngm:class:open-standards",
         "label": "Open Standards Process"
       }
     ],
@@ -184,7 +180,7 @@ public:: true
         "label": "Binary Encoding"
       },
       {
-        "@id": "urn:ngm:class:json-serialization",
+        "@id": "urn:ngm:class:json-data-interchange-format-serialisation",
         "label": "JSON Serialisation"
       }
     ],
@@ -238,7 +234,7 @@ public:: true
         "label": "OpenUSD"
       },
       {
-        "@id": "urn:ngm:class:scene-description-language",
+        "@id": "urn:ngm:class:universal-scene-description",
         "label": "Scene Description Language"
       }
     ]
@@ -253,7 +249,7 @@ public:: true
       "label": "Data Interchange Standard"
     }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

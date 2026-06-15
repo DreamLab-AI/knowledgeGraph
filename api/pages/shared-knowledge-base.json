@@ -20,7 +20,7 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:collaborative-systems-modality-knowledge-discovery",
+        "id": "urn:ngm:class:collaborative-systems-modality",
         "label": "Collaborative Knowledge Discovery"
       }
     ],

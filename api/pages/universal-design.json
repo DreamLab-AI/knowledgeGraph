@@ -32,7 +32,7 @@
         "label": "XR Accessibility Standards"
       },
       {
-        "id": "urn:ngm:class:digital-equity",
+        "id": "urn:ngm:class:digital-technology-access-equity",
         "label": "Digital Equity"
       },
       {
@@ -43,10 +43,6 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:pour-framework",
-        "label": "POUR Framework"
-      },
-      {
         "id": "urn:ngm:class:multimodal-interaction",
         "label": "Multimodal Interaction"
       }
@@ -55,10 +51,6 @@
       {
         "id": "urn:ngm:class:retrofitting",
         "label": "Retrofitting"
-      },
-      {
-        "id": "urn:ngm:class:specialised-design",
-        "label": "Specialised Design"
       }
     ],
     "bridgesTo": [

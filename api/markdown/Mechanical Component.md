@@ -947,7 +947,7 @@ alias:: MechanicalComponent
         "label": "Humanoid Robot"
       },
       {
-        "@id": "urn:ngm:class:industrial-manipulators",
+        "@id": "urn:ngm:class:industrial-robot",
         "label": "Industrial Manipulators"
       },
       {

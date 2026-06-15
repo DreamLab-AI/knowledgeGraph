@@ -23,55 +23,123 @@ public:: true
   "definition": "GS1 is the global not-for-profit standards organisation responsible for designing, administering, and maintaining the world's most widely deployed open supply chain identification system, used by over two million companies in more than 150 countries. Its core standards define globally unique identification schemes for trade items (GTIN), locations (GLN), logistic units (SSCC), and assets (GIAI), encoding them in barcodes (EAN-13, ITF-14, GS1-128), two-dimensional symbols (GS1 DataMatrix, GS1 QR), and digital web URIs via GS1 Digital Link. GS1 also governs EPCIS (Electronic Product Code Information Services), the event-data exchange standard that captures What, Where, When, Why, and How across the supply chain, and underpins regulatory traceability mandates in pharmaceuticals, food safety, and sustainable products across the EU, US, and beyond.",
   "domain": "standards",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:supply-chain-management",
+      "label": "Supply Chain Management"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:global-trade-item-number", "label": "Global Trade Item Number"},
-      {"@id": "urn:ngm:class:global-location-number", "label": "Global Location Number"},
-      {"@id": "urn:ngm:class:serial-shipping-container-code", "label": "Serial Shipping Container Code"},
-      {"@id": "urn:ngm:class:epcis", "label": "EPCIS"},
-      {"@id": "urn:ngm:class:gs1-digital-link", "label": "GS1 Digital Link"}
-    ],
-    "partOf": [
-      {"@id": "urn:ngm:class:global-standards-infrastructure", "label": "Global Standards Infrastructure"}
+      {
+        "@id": "urn:ngm:class:global-trade-item-number",
+        "label": "Global Trade Item Number"
+      },
+      {
+        "@id": "urn:ngm:class:global-location-number",
+        "label": "Global Location Number"
+      },
+      {
+        "@id": "urn:ngm:class:serial-shipping-container-code",
+        "label": "Serial Shipping Container Code"
+      },
+      {
+        "@id": "urn:ngm:class:gs1-epcis",
+        "label": "EPCIS"
+      },
+      {
+        "@id": "urn:ngm:class:gs1-digital-link",
+        "label": "GS1 Digital Link"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"},
-      {"@id": "urn:ngm:class:pharmaceutical-traceability", "label": "Pharmaceutical Traceability"},
-      {"@id": "urn:ngm:class:supply-chain-visibility", "label": "Supply Chain Visibility"},
-      {"@id": "urn:ngm:class:food-safety-blockchain", "label": "Food Safety Blockchain"}
+      {
+        "@id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "@id": "urn:ngm:class:pharmaceutical-traceability",
+        "label": "Pharmaceutical Traceability"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-visibility",
+        "label": "Supply Chain Visibility"
+      },
+      {
+        "@id": "urn:ngm:class:food-safety-blockchain",
+        "label": "Food Safety Blockchain"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:open-standards", "label": "Open Standards"},
-      {"@id": "urn:ngm:class:data-interoperability", "label": "Data Interoperability"}
+      {
+        "@id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      },
+      {
+        "@id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:digital-product-passport", "label": "Digital Product Passport"},
-      {"@id": "urn:ngm:class:automated-identification", "label": "Automated Identification"},
-      {"@id": "urn:ngm:class:rfid", "label": "RFID"}
+      {
+        "@id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
+      },
+      {
+        "@id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:barcode", "label": "Barcode"},
-      {"@id": "urn:ngm:class:electronic-data-interchange", "label": "Electronic Data Interchange"}
+      {
+        "@id": "urn:ngm:class:barcode",
+        "label": "Barcode"
+      },
+      {
+        "@id": "urn:ngm:class:electronic-data-interchange",
+        "label": "Electronic Data Interchange"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"},
-      {"@id": "urn:ngm:class:supply-chain-provenance", "label": "Supply Chain Provenance"},
-      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"},
-      {"@id": "urn:ngm:class:logistics-optimization", "label": "Logistics Optimization"},
-      {"@id": "urn:ngm:class:retail-technology", "label": "Retail Technology"},
-      {"@id": "urn:ngm:class:healthcare-supply-chain", "label": "Healthcare Supply Chain"}
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:logistics-optimization",
+        "label": "Logistics Optimization"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-standard", "label": "ISO Standard"}
+      {
+        "@id": "urn:ngm:class:iso-standards",
+        "label": "ISO Standard"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-identifier", "label": "Decentralised Identifier"},
-      {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"}
+      {
+        "@id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:global-standards-one", "label": "Global Standards One"}
+    {
+      "@id": "urn:ngm:class:global-standards-one",
+      "label": "Global Standards One"
+    }
   ],
   "quality": 0.72,
   "provenance": {

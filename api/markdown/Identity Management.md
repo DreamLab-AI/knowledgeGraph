@@ -61,7 +61,7 @@ alias:: IdentityManagement
         "label": "Decentralised Identifier"
       },
       {
-        "@id": "urn:ngm:class:verifiable-credential",
+        "@id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       },
       {
@@ -71,7 +71,7 @@ alias:: IdentityManagement
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -105,11 +105,11 @@ alias:: IdentityManagement
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:w3c-did-specification",
+        "@id": "urn:ngm:class:w3-c-did-specification",
         "label": "W3C DID Specification"
       },
       {
-        "@id": "urn:ngm:class:openid-connect",
+        "@id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
       }
     ],

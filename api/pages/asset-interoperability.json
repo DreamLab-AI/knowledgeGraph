@@ -35,14 +35,6 @@
       {
         "id": "urn:ngm:class:blockchain-gaming",
         "label": "Blockchain Gaming"
-      },
-      {
-        "id": "urn:ngm:class:cross-protocol-liquidity",
-        "label": "Cross-Protocol Liquidity"
-      },
-      {
-        "id": "urn:ngm:class:user-owned-economy",
-        "label": "User-Owned Economy"
       }
     ],
     "dependsOn": [
@@ -111,7 +103,7 @@
         "label": "Wrapped Token"
       },
       {
-        "id": "urn:ngm:class:gltf",
+        "id": "urn:ngm:class:gltf-standard",
         "label": "glTF"
       }
     ],

@@ -80,10 +80,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:header-chain",
-        "label": "Header Chain"
-      },
-      {
         "@id": "urn:ngm:class:merkle-proof",
         "label": "Merkle Proof"
       }
@@ -114,12 +110,8 @@ public:: true
         "label": "Cross-Chain Bridge"
       },
       {
-        "@id": "urn:ngm:class:mobile-wallet",
+        "@id": "urn:ngm:class:wallet",
         "label": "Mobile Wallet"
-      },
-      {
-        "@id": "urn:ngm:class:trustless-verification",
-        "label": "Trustless Verification"
       }
     ],
     "dependsOn": [
@@ -133,10 +125,6 @@ public:: true
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:spv-simplified-payment-verification",
-        "label": "SPV (Simplified Payment Verification)"
-      },
       {
         "@id": "urn:ngm:class:state-proof",
         "label": "State Proof"
@@ -190,10 +178,6 @@ public:: true
       {
         "@id": "urn:ngm:class:fraud-proof",
         "label": "Fraud Proof"
-      },
-      {
-        "@id": "urn:ngm:class:verkle-tree",
-        "label": "Verkle Tree"
       }
     ]
   },

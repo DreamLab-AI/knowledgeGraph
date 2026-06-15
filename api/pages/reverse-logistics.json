@@ -16,36 +16,11 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:returns-management",
-        "label": "Returns Management"
-      },
-      {
-        "id": "urn:ngm:class:remanufacturing",
-        "label": "Remanufacturing"
-      },
-      {
-        "id": "urn:ngm:class:product-refurbishment",
-        "label": "Product Refurbishment"
-      },
-      {
-        "id": "urn:ngm:class:disposition-management",
-        "label": "Disposition Management"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:warehouse-management-system",
         "label": "Warehouse Management System"
-      },
-      {
-        "id": "urn:ngm:class:condition-grading",
-        "label": "Condition Grading"
-      },
-      {
-        "id": "urn:ngm:class:reverse-supply-chain-network",
-        "label": "Reverse Supply Chain Network"
       }
     ],
     "enables": [
@@ -60,20 +35,12 @@
       {
         "id": "urn:ngm:class:secondary-market",
         "label": "Secondary Market"
-      },
-      {
-        "id": "urn:ngm:class:material-recovery",
-        "label": "Material Recovery"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:logistics-management",
         "label": "Logistics Management"
-      },
-      {
-        "id": "urn:ngm:class:product-tracking",
-        "label": "Product Tracking"
       },
       {
         "id": "urn:ngm:class:supply-chain-visibility",
@@ -83,7 +50,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:forward-logistics",
+        "id": "urn:ngm:class:logistics",
         "label": "Forward Logistics"
       }
     ],
@@ -131,10 +98,6 @@
       {
         "id": "urn:ngm:class:e-waste",
         "label": "E-Waste"
-      },
-      {
-        "id": "urn:ngm:class:closed-loop-supply-chain",
-        "label": "Closed-Loop Supply Chain"
       },
       {
         "id": "urn:ngm:class:right-to-repair",

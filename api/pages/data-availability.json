@@ -111,7 +111,7 @@
         "label": "KZG Polynomial Commitment"
       },
       {
-        "id": "urn:ngm:class:reed-solomon-code",
+        "id": "urn:ngm:class:reed-solomon-codes",
         "label": "Reed-Solomon Code"
       }
     ],

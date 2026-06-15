@@ -73,10 +73,6 @@ public:: true
       {
         "@id": "urn:ngm:class:taproot-assets",
         "label": "Taproot Assets"
-      },
-      {
-        "@id": "urn:ngm:class:lightning-node-connect",
-        "label": "Lightning Node Connect"
       }
     ],
     "requires": [
@@ -109,7 +105,7 @@ public:: true
         "label": "Lightning Network"
       },
       {
-        "@id": "urn:ngm:class:bolt-specification",
+        "@id": "urn:ngm:class:bolt-specifications",
         "label": "BOLT Specification"
       }
     ],
@@ -157,13 +153,13 @@ public:: true
         "label": "Eclair"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-script",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
         "label": "Bitcoin Script"
       }
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:machine-payments",
+        "@id": "urn:ngm:class:machine-to-machine-payments",
         "label": "Machine Payments"
       },
       {

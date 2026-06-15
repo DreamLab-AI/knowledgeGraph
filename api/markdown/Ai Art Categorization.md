@@ -88,30 +88,12 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:art-historical-knowledge",
-        "label": "Art Historical Knowledge"
-      },
-      {
         "@id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
       },
       {
         "@id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
-      }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:art-curation",
-        "label": "Art Curation"
-      },
-      {
-        "@id": "urn:ngm:class:authenticity-detection",
-        "label": "Authenticity Detection"
-      },
-      {
-        "@id": "urn:ngm:class:style-analysis",
-        "label": "Style Analysis"
       }
     ]
   },

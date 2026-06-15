@@ -25,10 +25,6 @@
       {
         "id": "urn:ngm:class:transparency",
         "label": "Transparency"
-      },
-      {
-        "id": "urn:ngm:class:data-access",
-        "label": "Data Access"
       }
     ],
     "enables": [
@@ -41,7 +37,7 @@
         "label": "Trustworthy AI"
       },
       {
-        "id": "urn:ngm:class:public-accountability",
+        "id": "urn:ngm:class:accountability",
         "label": "Public Accountability"
       },
       {
@@ -56,7 +52,7 @@
         "label": "NIST AI RMF"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -71,10 +67,6 @@
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:financial-audit",
-        "label": "Financial Audit"
-      },
       {
         "id": "urn:ngm:class:security-audit",
         "label": "Security Audit"

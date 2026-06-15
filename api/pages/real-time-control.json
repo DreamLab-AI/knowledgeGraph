@@ -54,7 +54,7 @@
         "label": "Closed-Loop Control"
       },
       {
-        "id": "urn:ngm:class:autonomous-systems",
+        "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
       },
       {
@@ -125,10 +125,6 @@
       {
         "id": "urn:ngm:class:worst-case-execution-time",
         "label": "Worst-Case Execution Time"
-      },
-      {
-        "id": "urn:ngm:class:interrupt-handling",
-        "label": "Interrupt Handling"
       }
     ]
   },

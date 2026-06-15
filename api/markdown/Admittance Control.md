@@ -240,24 +240,16 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:admittance-transfer-function",
-        "label": "Admittance Transfer Function"
-      },
-      {
         "@id": "urn:ngm:class:force-sensor",
         "label": "Force Sensor"
       },
       {
-        "@id": "urn:ngm:class:parameter-tuning",
+        "@id": "urn:ngm:class:hyperparameter-tuning",
         "label": "Parameter Tuning"
       },
       {
-        "@id": "urn:ngm:class:position-controller",
+        "@id": "urn:ngm:class:position-control",
         "label": "Position Controller"
-      },
-      {
-        "@id": "urn:ngm:class:virtual-mechanical-system",
-        "label": "Virtual Mechanical System"
       },
       {
         "@id": "urn:ngm:class:inverse-kinematics",
@@ -272,10 +264,6 @@ public:: true
       {
         "@id": "urn:ngm:class:kinematic-model",
         "label": "KinematicModel"
-      },
-      {
-        "@id": "urn:ngm:class:position-controlled-robot",
-        "label": "Position-Controlled Robot"
       },
       {
         "@id": "urn:ngm:class:real-time-control-loop",
@@ -296,15 +284,7 @@ public:: true
         "label": "Compliant Motion"
       },
       {
-        "@id": "urn:ngm:class:contact-based-assembly",
-        "label": "Contact-Based Assembly"
-      },
-      {
-        "@id": "urn:ngm:class:delicate-handling",
-        "label": "Delicate Handling"
-      },
-      {
-        "@id": "urn:ngm:class:force-limited-operation",
+        "@id": "urn:ngm:class:rb-0094-power-and-force-limiting",
         "label": "Force-Limited Operation"
       },
       {
@@ -314,20 +294,8 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:compliant-trajectory-generation",
+        "@id": "urn:ngm:class:trajectory-generation",
         "label": "Compliant Trajectory Generation"
-      },
-      {
-        "@id": "urn:ngm:class:force-to-motion-mapping",
-        "label": "Force-to-Motion Mapping"
-      },
-      {
-        "@id": "urn:ngm:class:second-order-mechanical-system",
-        "label": "Second-Order Mechanical System"
-      },
-      {
-        "@id": "urn:ngm:class:virtual-damper-spring-mass",
-        "label": "Virtual Damper-Spring-Mass"
       }
     ]
   },

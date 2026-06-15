@@ -547,32 +547,8 @@ alias:: Brain-Computer Interfaces
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:battery-or-inductive-power-link",
-        "label": "Battery or Inductive Power Link"
-      },
-      {
-        "@id": "urn:ngm:class:biocompatible-encapsulation",
-        "label": "Biocompatible Encapsulation"
-      },
-      {
-        "@id": "urn:ngm:class:microelectrode-array",
-        "label": "Microelectrode Array"
-      },
-      {
-        "@id": "urn:ngm:class:neural-decoder",
-        "label": "Neural Decoder"
-      },
-      {
         "@id": "urn:ngm:class:signal-amplifier",
         "label": "Signal Amplifier"
-      },
-      {
-        "@id": "urn:ngm:class:spike-sorter",
-        "label": "Spike Sorter"
-      },
-      {
-        "@id": "urn:ngm:class:stimulation-driver",
-        "label": "Stimulation Driver"
       },
       {
         "@id": "urn:ngm:class:wireless-telemetry-module",
@@ -589,11 +565,7 @@ alias:: Brain-Computer Interfaces
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:biocompatible-materials",
-        "label": "Biocompatible Materials"
-      },
-      {
-        "@id": "urn:ngm:class:clinical-trial-infrastructure",
+        "@id": "urn:ngm:class:clinical-trials",
         "label": "Clinical Trial Infrastructure"
       },
       {
@@ -601,16 +573,8 @@ alias:: Brain-Computer Interfaces
         "label": "Informed Consent"
       },
       {
-        "@id": "urn:ngm:class:low-noise-analog-electronics",
-        "label": "Low-Noise Analog Electronics"
-      },
-      {
-        "@id": "urn:ngm:class:machine-learning-discipline-decoder",
+        "@id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning Decoder"
-      },
-      {
-        "@id": "urn:ngm:class:neurosurgical-procedure",
-        "label": "Neurosurgical Procedure"
       },
       {
         "@id": "urn:ngm:class:real-time-computing",
@@ -621,65 +585,7 @@ alias:: Brain-Computer Interfaces
         "label": "Regulatory Approval"
       }
     ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:closed-loop-neuromodulation",
-        "label": "Closed-Loop Neuromodulation"
-      },
-      {
-        "@id": "urn:ngm:class:cognitive-augmentation",
-        "label": "Cognitive Augmentation"
-      },
-      {
-        "@id": "urn:ngm:class:communication-for-locked-in-patients",
-        "label": "Communication for Locked-In Patients"
-      },
-      {
-        "@id": "urn:ngm:class:direct-neural-control",
-        "label": "Direct Neural Control"
-      },
-      {
-        "@id": "urn:ngm:class:motor-restoration",
-        "label": "Motor Restoration"
-      },
-      {
-        "@id": "urn:ngm:class:neurofeedback-therapy",
-        "label": "Neurofeedback Therapy"
-      },
-      {
-        "@id": "urn:ngm:class:sensory-restoration",
-        "label": "Sensory Restoration"
-      },
-      {
-        "@id": "urn:ngm:class:speech-restoration",
-        "label": "Speech Restoration"
-      }
-    ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:action-potential-recording",
-        "label": "Action Potential Recording"
-      },
-      {
-        "@id": "urn:ngm:class:electrocorticography",
-        "label": "Electrocorticography"
-      },
-      {
-        "@id": "urn:ngm:class:electroencephalography",
-        "label": "Electroencephalography"
-      },
-      {
-        "@id": "urn:ngm:class:functional-near-infrared-spectroscopy",
-        "label": "Functional Near-Infrared Spectroscopy"
-      },
-      {
-        "@id": "urn:ngm:class:intracortical-microstimulation",
-        "label": "Intracortical Microstimulation"
-      },
-      {
-        "@id": "urn:ngm:class:local-field-potential-recording",
-        "label": "Local Field Potential Recording"
-      },
       {
         "@id": "urn:ngm:class:closed-loop-control",
         "label": "Closed-Loop Control"
@@ -687,28 +593,8 @@ alias:: Brain-Computer Interfaces
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:common-spatial-patterns",
-        "label": "Common Spatial Patterns"
-      },
-      {
-        "@id": "urn:ngm:class:independent-component-analysis",
-        "label": "Independent Component Analysis"
-      },
-      {
-        "@id": "urn:ngm:class:linear-discriminant-analysis",
-        "label": "Linear Discriminant Analysis"
-      },
-      {
-        "@id": "urn:ngm:class:mamba-state-space-model",
+        "@id": "urn:ngm:class:state-space-model",
         "label": "Mamba State-Space Model"
-      },
-      {
-        "@id": "urn:ngm:class:riemannian-geometry",
-        "label": "Riemannian Geometry"
-      },
-      {
-        "@id": "urn:ngm:class:wiener-filter",
-        "label": "Wiener Filter"
       },
       {
         "@id": "urn:ngm:class:kalman-filter",
@@ -725,24 +611,8 @@ alias:: Brain-Computer Interfaces
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:cognitive-enhancement",
-        "label": "Cognitive Enhancement"
-      },
-      {
-        "@id": "urn:ngm:class:cyborg",
-        "label": "Cyborg"
-      },
-      {
-        "@id": "urn:ngm:class:neuromodulation",
-        "label": "Neuromodulation"
-      },
-      {
         "@id": "urn:ngm:class:neuroprosthetics",
         "label": "Neuroprosthetics"
-      },
-      {
-        "@id": "urn:ngm:class:neurorights",
-        "label": "Neurorights"
       },
       {
         "@id": "urn:ngm:class:wearable-computing",
@@ -755,70 +625,6 @@ alias:: Brain-Computer Interfaces
       {
         "@id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
-      }
-    ],
-    "supports": [
-      {
-        "@id": "urn:ngm:class:als-communication",
-        "label": "ALS Communication"
-      },
-      {
-        "@id": "urn:ngm:class:locked-in-syndrome-communication",
-        "label": "Locked-In Syndrome Communication"
-      },
-      {
-        "@id": "urn:ngm:class:parkinson-s-disease-treatment",
-        "label": "Parkinson's Disease Treatment"
-      },
-      {
-        "@id": "urn:ngm:class:refractory-epilepsy-treatment",
-        "label": "Refractory Epilepsy Treatment"
-      },
-      {
-        "@id": "urn:ngm:class:spinal-cord-injury-recovery",
-        "label": "Spinal Cord Injury Recovery"
-      },
-      {
-        "@id": "urn:ngm:class:stroke-rehabilitation",
-        "label": "Stroke Rehabilitation"
-      },
-      {
-        "@id": "urn:ngm:class:tetraplegia-rehabilitation",
-        "label": "Tetraplegia Rehabilitation"
-      },
-      {
-        "@id": "urn:ngm:class:treatment-resistant-depression",
-        "label": "Treatment-Resistant Depression"
-      }
-    ],
-    "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:bci-society",
-        "label": "BCI Society"
-      },
-      {
-        "@id": "urn:ngm:class:eu-medical-device-regulation",
-        "label": "EU Medical Device Regulation"
-      },
-      {
-        "@id": "urn:ngm:class:fda-bci-guidance-2021",
-        "label": "FDA BCI Guidance 2021"
-      },
-      {
-        "@id": "urn:ngm:class:ieee-2731",
-        "label": "IEEE 2731"
-      },
-      {
-        "@id": "urn:ngm:class:ieee-3209",
-        "label": "IEEE 3209"
-      },
-      {
-        "@id": "urn:ngm:class:iso-14708-active-implantable-medical-devices",
-        "label": "ISO 14708 Active Implantable Medical Devices"
-      },
-      {
-        "@id": "urn:ngm:class:unesco-neurotech-recommendation",
-        "label": "UNESCO Neurotech Recommendation"
       }
     ],
     "bridgesTo": [

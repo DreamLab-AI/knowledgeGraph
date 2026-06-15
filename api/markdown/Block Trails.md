@@ -24,52 +24,130 @@ alias:: Blocktrails, Block Trails Protocol
   "definition": "Block Trails is a minimal Bitcoin-native state-anchoring primitive that records an evolving sequence of states as a cryptographic chain of key tweaks mirroring a Bitcoin spend chain. Each state transition derives a tweak t_i = SHA256(state_i) mod n which is scalar-added to the previous key (d_i = d_(i-1) + t_i), producing a fresh pay-to-Taproot (P2TR) key-path output; spending that output to create the next commitment makes every UTXO a single-use seal. The state bytes themselves live off-chain on IPFS, Git, or Nostr relays, while Bitcoin's UTXO model supplies ordering and double-spend protection so that exactly one valid history can exist. Because trails use full secp256k1 keys, existing Nostr identities can own and advance a trail without key conversion. Application semantics are defined by Profiles such as MRC20 (a fungible-token ledger) and Git-mark (anchoring Git commits).",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:client-side-validation", "label": "Client-Side Validation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:client-side-validation",
+      "label": "Client-Side Validation"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:blocktrails", "label": "Blocktrails"}
+    {
+      "@id": "urn:ngm:class:blocktrails",
+      "label": "Blocktrails"
+    }
   ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:client-side-validation", "label": "Client-Side Validation"},
-      {"@id": "urn:ngm:class:single-use-seals", "label": "Single Use Seals"}
+      {
+        "@id": "urn:ngm:class:client-side-validation",
+        "label": "Client-Side Validation"
+      },
+      {
+        "@id": "urn:ngm:class:single-use-seals",
+        "label": "Single Use Seals"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:bitcoin-network", "label": "Bitcoin Network"},
-      {"@id": "urn:ngm:class:utxo-model", "label": "UTXO Model"},
-      {"@id": "urn:ngm:class:proof-of-publication", "label": "Proof of Publication"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "@id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-publication",
+        "label": "Proof of Publication"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:taproot", "label": "Taproot"},
-      {"@id": "urn:ngm:class:secp256k1", "label": "secp256k1"},
-      {"@id": "urn:ngm:class:schnorr-signature", "label": "Schnorr Signature"},
-      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"},
-      {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"}
+      {
+        "@id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      },
+      {
+        "@id": "urn:ngm:class:secp256k1",
+        "label": "secp256k1"
+      },
+      {
+        "@id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:single-use-seals", "label": "Single Use Seals"}
+      {
+        "@id": "urn:ngm:class:single-use-seals",
+        "label": "Single Use Seals"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"},
-      {"@id": "urn:ngm:class:fungible-token", "label": "Fungible Token"},
-      {"@id": "urn:ngm:class:asset-tokenisation", "label": "Asset Tokenisation"}
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:nostr", "label": "Nostr"},
-      {"@id": "urn:ngm:class:content-addressed-storage", "label": "Content-Addressed Storage"},
-      {"@id": "urn:ngm:class:git", "label": "Git"}
+      {
+        "@id": "urn:ngm:class:nostr",
+        "label": "Nostr"
+      },
+      {
+        "@id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage"
+      },
+      {
+        "@id": "urn:ngm:class:git",
+        "label": "Git"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rgb-protocol", "label": "RGB Protocol"},
-      {"@id": "urn:ngm:class:taproot-assets", "label": "Taproot Assets"}
+      {
+        "@id": "urn:ngm:class:rgb-protocol",
+        "label": "RGB Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:taproot-assets",
+        "label": "Taproot Assets"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer 2 Scaling"},
-      {"@id": "urn:ngm:class:decentralised-application", "label": "Decentralised Application"},
-      {"@id": "urn:ngm:class:rgb-and-client-side-validation", "label": "RGB and Client Side Validation"}
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "@id": "urn:ngm:class:rgb-and-client-side-validation",
+        "label": "RGB and Client Side Validation"
+      }
     ]
   },
   "quality": 0.74,
-  "provenance": {"attributedTo": "did:nostr:ontology-mesh", "generatedAt": "2026-06-14T00:00:00Z", "inferenceRule": "ResearchAuthored"}
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "ResearchAuthored"
+  }
 }
 ```
 

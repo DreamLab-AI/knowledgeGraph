@@ -23,53 +23,139 @@ public:: true
   "definition": "Avatar animation is the specialised subset of digital animation concerned with driving the motion and expression of user-controlled or AI-controlled avatar representations in real-time interactive environments. It encompasses full-body locomotion, facial expression synthesis, hand and gaze tracking, and upper-body gesture systems, all coordinated to produce social believability within virtual and extended reality spaces. Avatar animation systems must balance visual fidelity with low-latency responsiveness to maintain user embodiment and presence. Standards such as VRM and glTF define interchange formats that allow avatar animations to transfer across platforms.",
   "domain": "spatial-computing",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:animation", "label": "Animation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:animation",
+      "label": "Animation"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
-      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
-      {"@id": "urn:ngm:class:animation-retargeting", "label": "Animation Retargeting"},
-      {"@id": "urn:ngm:class:vrm-format", "label": "VRM Format"},
-      {"@id": "urn:ngm:class:blend-tree", "label": "Blend Tree"},
-      {"@id": "urn:ngm:class:skeletal-animation", "label": "Skeletal Animation"}
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:animation-retargeting",
+        "label": "Animation Retargeting"
+      },
+      {
+        "@id": "urn:ngm:class:vrm-format",
+        "label": "VRM Format"
+      },
+      {
+        "@id": "urn:ngm:class:blend-tree",
+        "label": "Blend Tree"
+      },
+      {
+        "@id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
-      {"@id": "urn:ngm:class:avatar-system", "label": "Avatar System"},
-      {"@id": "urn:ngm:class:avatar-interoperability", "label": "Avatar Interoperability"},
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:non-verbal-communication", "label": "Non-Verbal Communication"},
-      {"@id": "urn:ngm:class:embodiment", "label": "Embodiment"}
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-system",
+        "label": "Avatar System"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-interoperability",
+        "label": "Avatar Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:non-verbal-communication",
+        "label": "Non-Verbal Communication"
+      },
+      {
+        "@id": "urn:ngm:class:embodiment",
+        "label": "Embodiment"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"},
-      {"@id": "urn:ngm:class:embodied-interaction", "label": "Embodied Interaction"}
+      {
+        "@id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "@id": "urn:ngm:class:embodied-interaction",
+        "label": "Embodied Interaction"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:facial-animation", "label": "Facial Animation"},
-      {"@id": "urn:ngm:class:lip-sync", "label": "Lip Sync"},
-      {"@id": "urn:ngm:class:gaze-tracking", "label": "Gaze Tracking"}
+      {
+        "@id": "urn:ngm:class:facial-animation",
+        "label": "Facial Animation"
+      },
+      {
+        "@id": "urn:ngm:class:lip-sync",
+        "label": "Lip Sync"
+      },
+      {
+        "@id": "urn:ngm:class:gaze-tracking",
+        "label": "Gaze Tracking"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:gltf", "label": "glTF"},
-      {"@id": "urn:ngm:class:metaverse-standards-forum", "label": "Metaverse Standards Forum"}
+      {
+        "@id": "urn:ngm:class:gltf-standard",
+        "label": "glTF"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-standards-forum",
+        "label": "Metaverse Standards Forum"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:cinematic-animation", "label": "Cinematic Animation"}
+      {
+        "@id": "urn:ngm:class:animation",
+        "label": "Cinematic Animation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:realtime-avatar-animation", "label": "Real-Time Avatar Animation"}
+    {
+      "@id": "urn:ngm:class:realtime-avatar-animation",
+      "label": "Real-Time Avatar Animation"
+    }
   ],
   "quality": 0.8,
   "provenance": {

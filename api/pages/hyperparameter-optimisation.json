@@ -55,17 +55,12 @@
         "label": "Machine Learning Framework"
       },
       {
-        "id": "urn:ngm:class:compute-resource",
+        "id": "urn:ngm:class:compute-resources",
         "label": "Compute Resource"
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:manual-tuning",
-        "label": "Manual Tuning"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:reinforcement-learning",

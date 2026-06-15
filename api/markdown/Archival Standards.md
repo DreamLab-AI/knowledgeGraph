@@ -94,10 +94,6 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:preservation-planning",
-        "label": "Preservation Planning"
-      },
-      {
         "@id": "urn:ngm:class:metadata-management",
         "label": "Metadata Management"
       },
@@ -108,10 +104,6 @@ public:: true
       {
         "@id": "urn:ngm:class:digital-preservation",
         "label": "Digital Preservation"
-      },
-      {
-        "@id": "urn:ngm:class:fixity-checking",
-        "label": "Fixity Checking"
       }
     ],
     "enables": [
@@ -128,22 +120,18 @@ public:: true
         "label": "Long-Term Preservation"
       },
       {
-        "@id": "urn:ngm:class:trusted-digital-repository",
+        "@id": "urn:ngm:class:digital-repository",
         "label": "Trusted Digital Repository"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:oais-reference-model",
+        "@id": "urn:ngm:class:reference-model",
         "label": "OAIS Reference Model"
       },
       {
-        "@id": "urn:ngm:class:premis-metadata-standard",
+        "@id": "urn:ngm:class:metadata-standard",
         "label": "PREMIS Metadata Standard"
-      },
-      {
-        "@id": "urn:ngm:class:mets-metadata-standard",
-        "label": "METS Metadata Standard"
       }
     ],
     "uses": [
@@ -178,10 +166,6 @@ public:: true
       {
         "@id": "urn:ngm:class:iso-14721",
         "label": "ISO 14721"
-      },
-      {
-        "@id": "urn:ngm:class:iso-16363",
-        "label": "ISO 16363"
       }
     ],
     "contrastsWith": [
@@ -206,10 +190,6 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:preservation-standards",
-        "label": "Preservation Standards"
-      },
-      {
         "@id": "urn:ngm:class:records-management",
         "label": "Records Management"
       },
@@ -229,7 +209,7 @@ public:: true
       "label": "Digital Archiving Standards"
     }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

@@ -108,20 +108,12 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:de-fi-access",
-        "label": "DeFi Access"
-      },
-      {
         "@id": "urn:ngm:class:transaction-signing",
         "label": "Transaction Signing"
       },
       {
         "@id": "urn:ngm:class:asset-management",
         "label": "Asset Management"
-      },
-      {
-        "@id": "urn:ngm:class:nft-management",
-        "label": "NFT Management"
       },
       {
         "@id": "urn:ngm:class:decentralized-identity",
@@ -150,12 +142,8 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:multi-chain-interoperability",
+        "@id": "urn:ngm:class:cross-chain-interoperability",
         "label": "Multi-Chain Interoperability"
-      },
-      {
-        "@id": "urn:ngm:class:web3-authentication",
-        "label": "Web3 Authentication"
       }
     ],
     "contrastsWith": [

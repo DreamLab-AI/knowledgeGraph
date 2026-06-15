@@ -551,10 +551,6 @@ alias:: Control-Algorithm, ControlAlgorithm
         "label": "Autonomous Vehicle"
       },
       {
-        "@id": "urn:ngm:class:chemical-process-control",
-        "label": "Chemical Process Control"
-      },
-      {
         "@id": "urn:ngm:class:humanoid-robotics",
         "label": "Humanoid Robotics"
       },

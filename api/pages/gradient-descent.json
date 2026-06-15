@@ -24,10 +24,6 @@
       {
         "id": "urn:ngm:class:batch-gradient-descent",
         "label": "Batch Gradient Descent"
-      },
-      {
-        "id": "urn:ngm:class:mini-batch-gradient-descent",
-        "label": "Mini-Batch Gradient Descent"
       }
     ],
     "requires": [
@@ -70,10 +66,6 @@
       {
         "id": "urn:ngm:class:objective-function",
         "label": "Objective Function"
-      },
-      {
-        "id": "urn:ngm:class:parameter-space",
-        "label": "Parameter Space"
       }
     ],
     "implements": [

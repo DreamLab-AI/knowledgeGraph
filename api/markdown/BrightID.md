@@ -81,7 +81,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:social-graph",
+        "@id": "urn:ngm:class:social-network-graph",
         "label": "Social Graph"
       },
       {
@@ -89,7 +89,7 @@ public:: true
         "label": "Peer-to-Peer Network"
       },
       {
-        "@id": "urn:ngm:class:public-key-cryptography",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       }
     ],
@@ -115,10 +115,6 @@ public:: true
       {
         "@id": "urn:ngm:class:centralised-identity",
         "label": "Centralised Identity"
-      },
-      {
-        "@id": "urn:ngm:class:biometric-identity",
-        "label": "Biometric Identity"
       }
     ],
     "relatedTo": [

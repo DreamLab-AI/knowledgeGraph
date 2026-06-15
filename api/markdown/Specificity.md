@@ -62,7 +62,7 @@ public:: true
         "label": "Confusion Matrix"
       },
       {
-        "@id": "urn:ngm:class:binary-classification",
+        "@id": "urn:ngm:class:classification",
         "label": "Binary Classification"
       }
     ],
@@ -100,18 +100,6 @@ public:: true
       {
         "@id": "urn:ngm:class:f1-score",
         "label": "F1 Score"
-      },
-      {
-        "@id": "urn:ngm:class:youden-index",
-        "label": "Youden Index"
-      },
-      {
-        "@id": "urn:ngm:class:negative-predictive-value",
-        "label": "Negative Predictive Value"
-      },
-      {
-        "@id": "urn:ngm:class:likelihood-ratio",
-        "label": "Likelihood Ratio"
       }
     ],
     "enables": [
@@ -150,7 +138,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:medical-diagnostics",
+        "@id": "urn:ngm:class:medical-diagnosis-ai",
         "label": "Medical Diagnostics"
       },
       {

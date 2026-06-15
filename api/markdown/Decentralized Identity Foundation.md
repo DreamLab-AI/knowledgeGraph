@@ -38,50 +38,125 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:didcomm", "label": "DIDComm"},
-      {"@id": "urn:ngm:class:sidetree-protocol", "label": "Sidetree Protocol"},
-      {"@id": "urn:ngm:class:decentralized-web-node", "label": "Decentralized Web Node"},
-      {"@id": "urn:ngm:class:presentation-exchange", "label": "Presentation Exchange"}
+      {
+        "@id": "urn:ngm:class:didcomm",
+        "label": "DIDComm"
+      },
+      {
+        "@id": "urn:ngm:class:sidetree-protocol",
+        "label": "Sidetree Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-web-node",
+        "label": "Decentralized Web Node"
+      },
+      {
+        "@id": "urn:ngm:class:presentation-exchange",
+        "label": "Presentation Exchange"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:did-document", "label": "DID Document"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:decentralized-identifier", "label": "Decentralized Identifier"}
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:did-document",
+        "label": "DID Document"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:did-core", "label": "DID Core"},
-      {"@id": "urn:ngm:class:verifiable-credentials-data-model", "label": "Verifiable Credentials Data Model"}
+      {
+        "@id": "urn:ngm:class:w3-c-did-core",
+        "label": "DID Core"
+      },
+      {
+        "@id": "urn:ngm:class:w-3-c-verifiable-credentials-data-model",
+        "label": "Verifiable Credentials Data Model"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:identity", "label": "Identity"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:privacy-preserving-computation", "label": "Privacy-Preserving Computation"}
+      {
+        "@id": "urn:ngm:class:identity",
+        "label": "Identity"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:world-wide-web-consortium", "label": "World Wide Web Consortium"},
-      {"@id": "urn:ngm:class:openid-foundation", "label": "OpenID Foundation"}
+      {
+        "@id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-foundation",
+        "label": "OpenID Foundation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:centralised-identity", "label": "Centralised Identity"},
-      {"@id": "urn:ngm:class:federated-identity", "label": "Federated Identity"}
+      {
+        "@id": "urn:ngm:class:centralised-identity",
+        "label": "Centralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:trust-framework", "label": "Trust Framework"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:eudi-wallet", "label": "EUDI Wallet"},
-      {"@id": "urn:ngm:class:ai-identity-verification", "label": "AI Identity Verification"}
+      {
+        "@id": "urn:ngm:class:eudi-wallet",
+        "label": "EUDI Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "AI Identity Verification"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:dif", "label": "DIF"}
+    {
+      "@id": "urn:ngm:class:dif",
+      "label": "DIF"
+    }
   ],
   "quality": 0.72,
   "provenance": {

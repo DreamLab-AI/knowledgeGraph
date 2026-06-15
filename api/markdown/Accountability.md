@@ -100,11 +100,11 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:explainability-ai-0063",
+        "@id": "urn:ngm:class:explainability",
         "label": "Explainability (AI-0063)"
       },
       {
-        "@id": "urn:ngm:class:transparency-ai-0062",
+        "@id": "urn:ngm:class:transparency",
         "label": "Transparency (AI-0062)"
       },
       {
@@ -122,7 +122,7 @@ public:: true
         "label": "Compliance"
       },
       {
-        "@id": "urn:ngm:class:risk-management-ai-0078",
+        "@id": "urn:ngm:class:risk-management",
         "label": "Risk Management (AI-0078)"
       },
       {
@@ -150,7 +150,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
@@ -168,7 +168,7 @@ public:: true
         "label": "ISO-IEC 23894 2023"
       },
       {
-        "@id": "urn:ngm:class:iso-iec-38500-2024",
+        "@id": "urn:ngm:class:iso-iec-38500",
         "label": "ISO/IEC 38500:2024"
       },
       {
@@ -180,10 +180,6 @@ public:: true
       {
         "@id": "urn:ngm:class:opacity",
         "label": "Opacity"
-      },
-      {
-        "@id": "urn:ngm:class:diffused-responsibility",
-        "label": "Diffused Responsibility"
       }
     ],
     "relatedTo": [
@@ -221,7 +217,7 @@ public:: true
       "label": "Responsible AI"
     }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

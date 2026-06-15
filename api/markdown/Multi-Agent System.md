@@ -24,63 +24,160 @@ alias:: MultiAgentSystem
   "definition": "A Multi-Agent System (MAS) is a computational architecture in which multiple autonomous agents — each equipped with local perception, internal state, and independent decision-making capability — interact within a shared environment to accomplish individual or collective objectives. Coordination emerges from direct communication, environmental signalling, stigmergy, or market-like auction mechanisms, without requiring any single agent to hold global knowledge or exert centralised control. MAS formalises distributed problem-solving by composing heterogeneous or homogeneous agent populations whose aggregate behaviour frequently exhibits emergence — properties absent in any individual agent. The paradigm spans robotics swarms, AI orchestration pipelines, financial market simulation, smart-grid balancing, and autonomous software engineering.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:mas", "label": "MAS"},
-    {"@id": "urn:ngm:class:agent-based-system", "label": "Agent-Based System"}
+    {
+      "@id": "urn:ngm:class:mas",
+      "label": "MAS"
+    },
+    {
+      "@id": "urn:ngm:class:agent-based-system",
+      "label": "Agent-Based System"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
-      {"@id": "urn:ngm:class:inter-agent-communication", "label": "Inter-Agent Communication"},
-      {"@id": "urn:ngm:class:coordination-protocol", "label": "Coordination Protocol"},
-      {"@id": "urn:ngm:class:agent-environment", "label": "Agent Environment"}
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "@id": "urn:ngm:class:inter-agent-communication",
+        "label": "Inter-Agent Communication"
+      },
+      {
+        "@id": "urn:ngm:class:coordination-protocol",
+        "label": "Coordination Protocol"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:agent-communication-language", "label": "Agent Communication Language"},
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:message-passing", "label": "Message Passing"}
+      {
+        "@id": "urn:ngm:class:agent-communication-language",
+        "label": "Agent Communication Language"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:swarm-robotics", "label": "Swarm Robotics"},
-      {"@id": "urn:ngm:class:collective-decision-making", "label": "Collective Decision Making"},
-      {"@id": "urn:ngm:class:autonomous-software-engineering", "label": "Autonomous Software Engineering"},
-      {"@id": "urn:ngm:class:emergent-behaviour", "label": "Emergent Behaviour"}
+      {
+        "@id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:collective-decision-making",
+        "label": "Collective Decision Making"
+      },
+      {
+        "@id": "urn:ngm:class:software-engineering-agents",
+        "label": "Autonomous Software Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:emergent-behavior",
+        "label": "Emergent Behaviour"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:multi-agent-reinforcement-learning", "label": "Multi-Agent Reinforcement Learning"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-reinforcement-learning",
+        "label": "Multi-Agent Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:concurrency", "label": "Concurrency"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:contract-net-protocol", "label": "Contract Net Protocol"},
-      {"@id": "urn:ngm:class:fipa-acl", "label": "FIPA-ACL"}
+      {
+        "@id": "urn:ngm:class:contract-net-protocol",
+        "label": "Contract Net Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:fipa-acl",
+        "label": "FIPA-ACL"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:warehouse-automation", "label": "Warehouse Automation"},
-      {"@id": "urn:ngm:class:smart-grid", "label": "Smart Grid"},
-      {"@id": "urn:ngm:class:algorithmic-trading", "label": "Algorithmic Trading"}
+      {
+        "@id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "@id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:fipa", "label": "FIPA"}
+      {
+        "@id": "urn:ngm:class:fipa",
+        "label": "FIPA"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:centralised-ai", "label": "Centralised AI"},
-      {"@id": "urn:ngm:class:monolithic-agent", "label": "Monolithic Agent"}
+      {
+        "@id": "urn:ngm:class:centralised-ai",
+        "label": "Centralised AI"
+      },
+      {
+        "@id": "urn:ngm:class:agent",
+        "label": "Monolithic Agent"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:emergence", "label": "Emergence"},
-      {"@id": "urn:ngm:class:swarm-intelligence", "label": "Swarm Intelligence"},
-      {"@id": "urn:ngm:class:agent-based-modelling", "label": "Agent-Based Modelling"}
+      {
+        "@id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      },
+      {
+        "@id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:agent-based-modelling",
+        "label": "Agent-Based Modelling"
+      }
     ]
   },
   "quality": 0.76,

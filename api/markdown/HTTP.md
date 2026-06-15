@@ -107,10 +107,6 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:url",
-        "label": "URL"
-      },
-      {
         "@id": "urn:ngm:class:tls",
         "label": "TLS"
       },
@@ -148,10 +144,6 @@ public:: true
       }
     ],
     "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:ftp",
-        "label": "FTP"
-      },
       {
         "@id": "urn:ngm:class:websocket",
         "label": "WebSocket"

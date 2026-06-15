@@ -66,19 +66,10 @@
       {
         "id": "urn:ngm:class:5g-networks",
         "label": "5G Networks"
-      },
-      {
-        "id": "urn:ngm:class:optical-fibre-network",
-        "label": "Optical Fibre Network"
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:air-gapped-network",
-        "label": "Air-Gapped Network"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:decentralised-network",

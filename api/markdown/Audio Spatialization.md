@@ -106,7 +106,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:spatial-audio-technology",
+        "@id": "urn:ngm:class:spatial-audio",
         "label": "Spatial Audio Technology"
       },
       {
@@ -120,7 +120,7 @@ public:: true
         "label": "Binaural Rendering"
       },
       {
-        "@id": "urn:ngm:class:head-tracking",
+        "@id": "urn:ngm:class:optical-tracking",
         "label": "Head Tracking"
       },
       {
@@ -134,7 +134,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:3-d-sound-perception",
+        "@id": "urn:ngm:class:3-d-perception",
         "label": "3D Sound Perception"
       },
       {
@@ -142,7 +142,7 @@ public:: true
         "label": "Immersive Audio"
       },
       {
-        "@id": "urn:ngm:class:sound-localization",
+        "@id": "urn:ngm:class:localization",
         "label": "Sound Localization"
       },
       {
@@ -180,10 +180,6 @@ public:: true
       {
         "@id": "urn:ngm:class:stereo-audio",
         "label": "Stereo Audio"
-      },
-      {
-        "@id": "urn:ngm:class:mono-audio",
-        "label": "Mono Audio"
       }
     ],
     "bridgesTo": [

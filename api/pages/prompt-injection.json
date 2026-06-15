@@ -16,16 +16,7 @@
   "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:direct-prompt-injection",
-        "label": "Direct Prompt Injection"
-      },
-      {
-        "id": "urn:ngm:class:indirect-prompt-injection",
-        "label": "Indirect Prompt Injection"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:large-language-model",
@@ -37,10 +28,6 @@
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:data-exfiltration",
-        "label": "Data Exfiltration"
-      },
       {
         "id": "urn:ngm:class:privilege-escalation",
         "label": "Privilege Escalation"
@@ -65,10 +52,6 @@
       {
         "id": "urn:ngm:class:adversarial-robustness",
         "label": "Adversarial Robustness"
-      },
-      {
-        "id": "urn:ngm:class:input-sanitisation",
-        "label": "Input Sanitisation"
       }
     ],
     "bridgesTo": [
@@ -94,7 +77,7 @@
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:owasp-llm-top-10",
+        "id": "urn:ngm:class:owasp-llm-top-10-2025",
         "label": "OWASP LLM Top 10"
       },
       {
@@ -103,10 +86,6 @@
       }
     ],
     "partOf": [
-      {
-        "id": "urn:ngm:class:llm-security",
-        "label": "LLM Security"
-      },
       {
         "id": "urn:ngm:class:ai-safety",
         "label": "AI Safety"
@@ -122,10 +101,6 @@
         "label": "Red Teaming"
       },
       {
-        "id": "urn:ngm:class:sql-injection",
-        "label": "SQL Injection"
-      },
-      {
         "id": "urn:ngm:class:social-engineering",
         "label": "Social Engineering"
       },
@@ -134,7 +109,7 @@
         "label": "Alignment"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai",
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
       }
     ]

@@ -50,52 +50,110 @@ public:: true
   "domain": "finance",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:sc-platform-and-environment", "label": "Platform and Environment"}
+    {
+      "@id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    }
   ],
   "relations": {
-    "hasPart": [
-      {"@id": "urn:ngm:class:shopping-cart", "label": "Shopping Cart"},
-      {"@id": "urn:ngm:class:product-catalogue", "label": "Product Catalogue"},
-      {"@id": "urn:ngm:class:order-management", "label": "Order Management"}
-    ],
     "requires": [
-      {"@id": "urn:ngm:class:payment-system", "label": "Payment System"},
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:logistics", "label": "Logistics"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:marketplace", "label": "Marketplace"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:recommendation-system", "label": "Recommendation System"},
-      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"},
-      {"@id": "urn:ngm:class:api", "label": "API"}
+      {
+        "@id": "urn:ngm:class:marketplace",
+        "label": "Marketplace"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "@id": "urn:ngm:class:api",
+        "label": "API"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-payments", "label": "Digital Payments"},
-      {"@id": "urn:ngm:class:supply-chain-visibility", "label": "Supply Chain Visibility"},
-      {"@id": "urn:ngm:class:personalisation", "label": "Personalisation"}
+      {
+        "@id": "urn:ngm:class:digital-payments",
+        "label": "Digital Payments"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-visibility",
+        "label": "Supply Chain Visibility"
+      },
+      {
+        "@id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:traditional-retail", "label": "Traditional Retail"}
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:metaverse-commerce", "label": "Metaverse Commerce"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-commerce",
+        "label": "Metaverse Commerce"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:conversion-rate-optimisation", "label": "Conversion Rate Optimisation"},
-      {"@id": "urn:ngm:class:customer-data-platform", "label": "Customer Data Platform"},
-      {"@id": "urn:ngm:class:virtual-tourism", "label": "Virtual Tourism"}
+      {
+        "@id": "urn:ngm:class:conversion-rate-optimisation",
+        "label": "Conversion Rate Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:customer-data-platform",
+        "label": "Customer Data Platform"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-tourism",
+        "label": "Virtual Tourism"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:online-retail", "label": "Online Retail"},
-    {"@id": "urn:ngm:class:electronic-commerce", "label": "Electronic Commerce"}
+    {
+      "@id": "urn:ngm:class:online-retail",
+      "label": "Online Retail"
+    },
+    {
+      "@id": "urn:ngm:class:electronic-commerce",
+      "label": "Electronic Commerce"
+    }
   ],
   "quality": 0.72,
   "provenance": {

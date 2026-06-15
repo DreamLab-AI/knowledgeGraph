@@ -71,12 +71,8 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:online-machine-learning",
+        "id": "urn:ngm:class:online-learning",
         "label": "Online Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:iot-data-ingestion",
-        "label": "IoT Data Ingestion"
       }
     ],
     "uses": [
@@ -99,14 +95,6 @@
       {
         "id": "urn:ngm:class:apache-spark",
         "label": "Apache Spark"
-      },
-      {
-        "id": "urn:ngm:class:windowing-operation",
-        "label": "Windowing Operation"
-      },
-      {
-        "id": "urn:ngm:class:watermark",
-        "label": "Watermark"
       }
     ],
     "supports": [],
@@ -124,10 +112,6 @@
       {
         "id": "urn:ngm:class:lambda-architecture",
         "label": "Lambda Architecture"
-      },
-      {
-        "id": "urn:ngm:class:kappa-architecture",
-        "label": "Kappa Architecture"
       },
       {
         "id": "urn:ngm:class:event-sourcing",

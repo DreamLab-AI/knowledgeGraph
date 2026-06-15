@@ -169,7 +169,7 @@ alias:: Cryptographic-Protocol
         "label": "Hash Function"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -201,7 +201,7 @@ alias:: Cryptographic-Protocol
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:key-exchange-protocol",
+        "@id": "urn:ngm:class:key-exchange",
         "label": "Key Exchange Protocol"
       },
       {
@@ -253,7 +253,7 @@ alias:: Cryptographic-Protocol
         "label": "NIST Post-Quantum Cryptography"
       },
       {
-        "@id": "urn:ngm:class:post-quantum-cryptography-standards",
+        "@id": "urn:ngm:class:post-quantum-cryptography",
         "label": "Post-Quantum Cryptography Standards"
       }
     ],
@@ -285,7 +285,7 @@ alias:: Cryptographic-Protocol
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:quantum-computing",
+        "@id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
       },
       {

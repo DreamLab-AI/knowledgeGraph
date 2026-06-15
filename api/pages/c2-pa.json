@@ -20,18 +20,6 @@
       {
         "id": "urn:ngm:class:c2-pa-content-credentials",
         "label": "C2PA Content Credentials"
-      },
-      {
-        "id": "urn:ngm:class:c2-pa-manifest",
-        "label": "C2PA Manifest"
-      },
-      {
-        "id": "urn:ngm:class:c2-pa-assertion",
-        "label": "C2PA Assertion"
-      },
-      {
-        "id": "urn:ngm:class:c2-pa-trust-list",
-        "label": "C2PA Trust List"
       }
     ],
     "requires": [
@@ -40,7 +28,7 @@
         "label": "Digital Signature"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -58,19 +46,15 @@
         "label": "Media Authentication"
       },
       {
-        "id": "urn:ngm:class:ai-disclosure",
+        "id": "urn:ngm:class:ai-generated-content-disclosure",
         "label": "AI Disclosure"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:content-authenticity-initiative",
+        "id": "urn:ngm:class:content-authenticity",
         "label": "Content Authenticity Initiative"
-      },
-      {
-        "id": "urn:ngm:class:project-origin",
-        "label": "Project Origin"
       }
     ],
     "contrastsWith": [
@@ -89,19 +73,15 @@
         "label": "AI Governance and Ethics"
       },
       {
-        "id": "urn:ngm:class:watermarking",
+        "id": "urn:ngm:class:watermarking-service",
         "label": "Watermarking"
       },
       {
-        "id": "urn:ngm:class:prov-o",
+        "id": "urn:ngm:class:provenance-ontology-prov-o",
         "label": "PROV-O"
       }
     ],
     "uses": [
-      {
-        "id": "urn:ngm:class:jumbf",
-        "label": "JUMBF"
-      },
       {
         "id": "urn:ngm:class:cose",
         "label": "COSE"
@@ -121,10 +101,6 @@
         "label": "Disinformation Countermeasures"
       },
       {
-        "id": "urn:ngm:class:media-integrity",
-        "label": "Media Integrity"
-      },
-      {
         "id": "urn:ngm:class:supply-chain-transparency",
         "label": "Supply Chain Transparency"
       }
@@ -137,16 +113,12 @@
         "label": "Open Media Alliance"
       },
       {
-        "id": "urn:ngm:class:w3c-verifiable-credentials",
+        "id": "urn:ngm:class:w3-c-verifiable-credentials",
         "label": "W3C Verifiable Credentials"
       },
       {
         "id": "urn:ngm:class:joint-development-foundation",
         "label": "Joint Development Foundation"
-      },
-      {
-        "id": "urn:ngm:class:digital-media-standards",
-        "label": "Digital Media Standards"
       }
     ]
   },

@@ -16,20 +16,7 @@
   "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:extractive-qa",
-        "label": "Extractive QA"
-      },
-      {
-        "id": "urn:ngm:class:generative-qa",
-        "label": "Generative QA"
-      },
-      {
-        "id": "urn:ngm:class:open-domain-qa",
-        "label": "Open-Domain QA"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -38,10 +25,6 @@
       {
         "id": "urn:ngm:class:information-retrieval",
         "label": "Information Retrieval"
-      },
-      {
-        "id": "urn:ngm:class:reading-comprehension",
-        "label": "Reading Comprehension"
       },
       {
         "id": "urn:ngm:class:language-model",
@@ -81,10 +64,6 @@
       {
         "id": "urn:ngm:class:document-retrieval",
         "label": "Document Retrieval"
-      },
-      {
-        "id": "urn:ngm:class:text-summarization",
-        "label": "Text Summarization"
       }
     ],
     "bridgesTo": [
@@ -119,10 +98,6 @@
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:fact-verification",
-        "label": "Fact Verification"
-      },
       {
         "id": "urn:ngm:class:multi-hop-reasoning",
         "label": "Multi-Hop Reasoning"

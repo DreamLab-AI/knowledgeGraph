@@ -154,20 +154,8 @@ public:: true
         "label": "Compliance Testing"
       },
       {
-        "@id": "urn:ngm:class:quality-assurance-workflows",
+        "@id": "urn:ngm:class:quality-assurance",
         "label": "Quality Assurance Workflows"
-      },
-      {
-        "@id": "urn:ngm:class:requirement-verification",
-        "label": "Requirement Verification"
-      },
-      {
-        "@id": "urn:ngm:class:results-analysis",
-        "label": "Results Analysis"
-      },
-      {
-        "@id": "urn:ngm:class:test-execution",
-        "label": "Test Execution"
       },
       {
         "@id": "urn:ngm:class:standards-validation",
@@ -176,38 +164,14 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:quality-metrics",
-        "label": "Quality Metrics"
-      },
-      {
-        "@id": "urn:ngm:class:test-framework",
-        "label": "Test Framework"
-      },
-      {
-        "@id": "urn:ngm:class:testing-tools",
-        "label": "Testing Tools"
-      },
-      {
-        "@id": "urn:ngm:class:validation-criteria",
-        "label": "Validation Criteria"
-      },
-      {
         "@id": "urn:ngm:class:compliance-standards",
         "label": "Compliance Standards"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:quality-certification",
-        "label": "Quality Certification"
-      },
-      {
         "@id": "urn:ngm:class:regulatory-approval",
         "label": "Regulatory Approval"
-      },
-      {
-        "@id": "urn:ngm:class:system-acceptance",
-        "label": "System Acceptance"
       },
       {
         "@id": "urn:ngm:class:compliance-verification",

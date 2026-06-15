@@ -238,15 +238,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:delegation-protocol",
-        "label": "Delegation Protocol"
-      },
-      {
         "@id": "urn:ngm:class:slashing-conditions",
         "label": "Slashing Conditions"
       },
       {
-        "@id": "urn:ngm:class:staking-mechanism",
+        "@id": "urn:ngm:class:staking",
         "label": "Staking Mechanism"
       },
       {
@@ -262,10 +258,6 @@ public:: true
       {
         "@id": "urn:ngm:class:network-security",
         "label": "Network Security"
-      },
-      {
-        "@id": "urn:ngm:class:validator-infrastructure",
-        "label": "Validator Infrastructure"
       },
       {
         "@id": "urn:ngm:class:proof-of-stake",

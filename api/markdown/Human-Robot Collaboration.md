@@ -101,17 +101,9 @@ public:: true
       {
         "@id": "urn:ngm:class:flexible-manufacturing",
         "label": "Flexible Manufacturing"
-      },
-      {
-        "@id": "urn:ngm:class:robot-assisted-surgery",
-        "label": "Robot-Assisted Surgery"
       }
     ],
     "hasPart": [
-      {
-        "@id": "urn:ngm:class:shared-workspace-management",
-        "label": "Shared Workspace Management"
-      },
       {
         "@id": "urn:ngm:class:intent-recognition",
         "label": "Intent Recognition"
@@ -137,11 +129,11 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:robot-motion-planning",
+        "@id": "urn:ngm:class:motion-planning",
         "label": "Robot Motion Planning"
       },
       {
-        "@id": "urn:ngm:class:real-time-control-systems",
+        "@id": "urn:ngm:class:real-time-control",
         "label": "Real-Time Control Systems"
       }
     ],
@@ -156,10 +148,6 @@ public:: true
       }
     ],
     "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:fully-autonomous-robotics",
-        "label": "Fully Autonomous Robotics"
-      },
       {
         "@id": "urn:ngm:class:industrial-automation",
         "label": "IndustrialAutomation"
@@ -185,7 +173,7 @@ public:: true
         "label": "Teleoperation"
       },
       {
-        "@id": "urn:ngm:class:human-factors-engineering",
+        "@id": "urn:ngm:class:human-factors",
         "label": "Human Factors Engineering"
       }
     ]

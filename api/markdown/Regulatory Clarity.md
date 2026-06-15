@@ -71,10 +71,6 @@ public:: true
         "label": "Transparency"
       },
       {
-        "@id": "urn:ngm:class:legal-certainty",
-        "label": "Legal Certainty"
-      },
-      {
         "@id": "urn:ngm:class:rule-of-law",
         "label": "Rule of Law"
       }
@@ -89,10 +85,6 @@ public:: true
         "label": "Market Confidence"
       },
       {
-        "@id": "urn:ngm:class:investment-certainty",
-        "label": "Investment Certainty"
-      },
-      {
         "@id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
       }
@@ -101,10 +93,6 @@ public:: true
       {
         "@id": "urn:ngm:class:innovation",
         "label": "Innovation"
-      },
-      {
-        "@id": "urn:ngm:class:market-development",
-        "label": "Market Development"
       },
       {
         "@id": "urn:ngm:class:consumer-protection",
@@ -119,20 +107,6 @@ public:: true
       {
         "@id": "urn:ngm:class:regulatory-guidance",
         "label": "Regulatory Guidance"
-      },
-      {
-        "@id": "urn:ngm:class:enforcement-consistency",
-        "label": "Enforcement Consistency"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:regulatory-uncertainty",
-        "label": "Regulatory Uncertainty"
-      },
-      {
-        "@id": "urn:ngm:class:legal-ambiguity",
-        "label": "Legal Ambiguity"
       }
     ],
     "relatedTo": [
@@ -163,7 +137,7 @@ public:: true
         "label": "Artificial Intelligence"
       },
       {
-        "@id": "urn:ngm:class:digital-assets",
+        "@id": "urn:ngm:class:digital-asset",
         "label": "Digital Assets"
       }
     ]

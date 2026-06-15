@@ -24,56 +24,126 @@ public:: true
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:content-creation", "label": "Content Creation"}
+    {
+      "@id": "urn:ngm:class:content-creation",
+      "label": "Content Creation"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:asset-management", "label": "Asset Management"},
-      {"@id": "urn:ngm:class:workflow-orchestration", "label": "Workflow Orchestration"},
-      {"@id": "urn:ngm:class:quality-assurance", "label": "Quality Assurance"},
-      {"@id": "urn:ngm:class:distribution-platform", "label": "Distribution Platform"}
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-orchestration",
+        "label": "Workflow Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      },
+      {
+        "@id": "urn:ngm:class:distribution-platform",
+        "label": "Distribution Platform"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"},
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
-      {"@id": "urn:ngm:class:content-management-system", "label": "Content Management System"}
+      {
+        "@id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:content-management-system",
+        "label": "Content Management System"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:content-creation-tool", "label": "Content Creation Tool"},
-      {"@id": "urn:ngm:class:workflow-engine", "label": "Workflow Engine"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:render-farm", "label": "Render Farm"}
+      {
+        "@id": "urn:ngm:class:content-creation-tool",
+        "label": "Content Creation Tool"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-engine",
+        "label": "Workflow Engine"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:render-farm",
+        "label": "Render Farm"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:media-production", "label": "Media Production"},
-      {"@id": "urn:ngm:class:localisation", "label": "Localisation"},
-      {"@id": "urn:ngm:class:metaverse-content-creation", "label": "Metaverse Content Creation"},
-      {"@id": "urn:ngm:class:automated-publishing", "label": "Automated Publishing"}
+      {
+        "@id": "urn:ngm:class:media-production",
+        "label": "Media Production"
+      },
+      {
+        "@id": "urn:ngm:class:localisation",
+        "label": "Localisation"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-content-creation",
+        "label": "Metaverse Content Creation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"}
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:directed-acyclic-graph", "label": "Directed Acyclic Graph"},
-      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:manual-production-workflow", "label": "Manual Production Workflow"}
+      {
+        "@id": "urn:ngm:class:directed-acyclic-graph",
+        "label": "Directed Acyclic Graph"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-content-creation", "label": "Digital Content Creation"},
-      {"@id": "urn:ngm:class:video-production-pipeline", "label": "Video Production Pipeline"},
-      {"@id": "urn:ngm:class:creative-automation", "label": "Creative Automation"}
+      {
+        "@id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:video-production-pipeline",
+        "label": "Video Production Pipeline"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:content-production-pipeline", "label": "Content Production Pipeline"},
-    {"@id": "urn:ngm:class:media-pipeline", "label": "Media Pipeline"}
+    {
+      "@id": "urn:ngm:class:content-production-pipeline",
+      "label": "Content Production Pipeline"
+    },
+    {
+      "@id": "urn:ngm:class:media-pipeline",
+      "label": "Media Pipeline"
+    }
   ],
   "quality": 0.74,
   "provenance": {

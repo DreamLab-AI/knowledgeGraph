@@ -26,10 +26,6 @@
         "label": "Hardware Security Key"
       },
       {
-        "id": "urn:ngm:class:push-notification-authentication",
-        "label": "Push Notification Authentication"
-      },
-      {
         "id": "urn:ngm:class:biometric-authentication",
         "label": "Biometric Authentication"
       }
@@ -38,14 +34,6 @@
       {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
-      },
-      {
-        "id": "urn:ngm:class:credential-management",
-        "label": "Credential Management"
-      },
-      {
-        "id": "urn:ngm:class:shared-secret",
-        "label": "Shared Secret"
       }
     ],
     "enables": [
@@ -72,7 +60,7 @@
         "label": "Cryptographic Keys"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -82,10 +70,6 @@
     ],
     "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:single-factor-authentication",
-        "label": "Single-Factor Authentication"
-      },
       {
         "id": "urn:ngm:class:password-authentication",
         "label": "Password Authentication"
@@ -107,11 +91,7 @@
         "label": "Biometric Binding Mechanism"
       },
       {
-        "id": "urn:ngm:class:time-based-one-time-password",
-        "label": "Time-Based One-Time Password"
-      },
-      {
-        "id": "urn:ngm:class:fido2-webauthn",
+        "id": "urn:ngm:class:fido2",
         "label": "FIDO2 WebAuthn"
       }
     ],

@@ -20,10 +20,6 @@
       {
         "id": "urn:ngm:class:block-header",
         "label": "Block Header"
-      },
-      {
-        "id": "urn:ngm:class:extranonce",
-        "label": "ExtraNonce"
       }
     ],
     "requires": [
@@ -76,16 +72,7 @@
         "label": "Merkle Root"
       }
     ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:freshness-guarantee",
-        "label": "Freshness Guarantee"
-      },
-      {
-        "id": "urn:ngm:class:uniqueness-constraint",
-        "label": "Uniqueness Constraint"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:salt",
@@ -104,20 +91,12 @@
       {
         "id": "urn:ngm:class:tls-handshake",
         "label": "TLS Handshake"
-      },
-      {
-        "id": "urn:ngm:class:oauth-state-parameter",
-        "label": "OAuth State Parameter"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:sha-256",
         "label": "SHA-256"
-      },
-      {
-        "id": "urn:ngm:class:counter-mode",
-        "label": "Counter Mode"
       },
       {
         "id": "urn:ngm:class:aes-gcm",
@@ -156,10 +135,6 @@
       {
         "id": "urn:ngm:class:cryptographic-security",
         "label": "Cryptographic Security"
-      },
-      {
-        "id": "urn:ngm:class:session-token",
-        "label": "Session Token"
       },
       {
         "id": "urn:ngm:class:message-authentication-code",

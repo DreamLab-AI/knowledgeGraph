@@ -41,7 +41,7 @@
         "label": "Agentic Workflow"
       },
       {
-        "id": "urn:ngm:class:autonomous-task-completion",
+        "id": "urn:ngm:class:autonomous-task-execution",
         "label": "Autonomous Task Completion"
       },
       {
@@ -61,7 +61,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:react-pattern",
+        "id": "urn:ngm:class:re-act-pattern",
         "label": "ReAct Pattern"
       },
       {

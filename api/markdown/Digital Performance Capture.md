@@ -133,7 +133,10 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-application", "label": "AI Application"}
+      {
+        "@id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      }
     ],
     "hasPart": [
       {
@@ -141,30 +144,14 @@ public:: true
         "label": "Facial Capture System"
       },
       {
-        "@id": "urn:ngm:class:motion-capture-system",
+        "@id": "urn:ngm:class:motion-capture",
         "label": "Motion Capture System"
-      },
-      {
-        "@id": "urn:ngm:class:real-time-solver",
-        "label": "Real-Time Solver"
-      },
-      {
-        "@id": "urn:ngm:class:voice-recording-system",
-        "label": "Voice Recording System"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:audio-recording-equipment",
-        "label": "Audio Recording Equipment"
-      },
-      {
         "@id": "urn:ngm:class:optical-sensors",
         "label": "Optical Sensors"
-      },
-      {
-        "@id": "urn:ngm:class:synchronization-system",
-        "label": "Synchronization System"
       },
       {
         "@id": "urn:ngm:class:marker-based-tracking",
@@ -172,10 +159,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:live-performance",
-        "label": "Live Performance"
-      },
       {
         "@id": "urn:ngm:class:digital-actor-creation",
         "label": "Digital Actor Creation"

@@ -52,20 +52,6 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:nostro-account",
-        "label": "Nostro Account"
-      },
-      {
-        "@id": "urn:ngm:class:vostro-account",
-        "label": "Vostro Account"
-      },
-      {
-        "@id": "urn:ngm:class:loro-account",
-        "label": "Loro Account"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:know-your-customer",
@@ -92,10 +78,6 @@ public:: true
       {
         "@id": "urn:ngm:class:foreign-exchange",
         "label": "Foreign Exchange"
-      },
-      {
-        "@id": "urn:ngm:class:documentary-credit",
-        "label": "Documentary Credit"
       }
     ],
     "uses": [
@@ -126,10 +108,6 @@ public:: true
       {
         "@id": "urn:ngm:class:central-bank-digital-currency",
         "label": "Central Bank Digital Currency"
-      },
-      {
-        "@id": "urn:ngm:class:payment-hub",
-        "label": "Payment Hub"
       }
     ],
     "bridgesTo": [
@@ -144,16 +122,8 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:de-risking",
-        "label": "De-Risking"
-      },
-      {
         "@id": "urn:ngm:class:financial-inclusion",
         "label": "Financial Inclusion"
-      },
-      {
-        "@id": "urn:ngm:class:payment-messaging",
-        "label": "Payment Messaging"
       }
     ]
   },

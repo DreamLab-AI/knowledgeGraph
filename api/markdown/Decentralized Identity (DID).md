@@ -146,10 +146,6 @@ public:: true
         "label": "DID Resolver"
       },
       {
-        "@id": "urn:ngm:class:did-uri",
-        "label": "DID URI"
-      },
-      {
         "@id": "urn:ngm:class:verifiable-data-registry",
         "label": "Verifiable Data Registry"
       }
@@ -169,10 +165,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:cross-domain-identity",
-        "label": "Cross-Domain Identity"
-      },
       {
         "@id": "urn:ngm:class:decentralized-authentication",
         "label": "Decentralized Authentication"

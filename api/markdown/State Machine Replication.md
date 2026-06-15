@@ -52,54 +52,133 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:replicated-state-machine", "label": "Replicated State Machine"},
-    {"@id": "urn:ngm:class:smr", "label": "SMR"}
+    {
+      "@id": "urn:ngm:class:replicated-state-machine",
+      "label": "Replicated State Machine"
+    },
+    {
+      "@id": "urn:ngm:class:smr",
+      "label": "SMR"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:total-order-broadcast", "label": "Total Order Broadcast"},
-      {"@id": "urn:ngm:class:deterministic-execution", "label": "Deterministic Execution"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:total-order-broadcast",
+        "label": "Total Order Broadcast"
+      },
+      {
+        "@id": "urn:ngm:class:deterministic-execution",
+        "label": "Deterministic Execution"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:paxos", "label": "Paxos"},
-      {"@id": "urn:ngm:class:raft-consensus", "label": "RAFT Consensus"},
-      {"@id": "urn:ngm:class:viewstamped-replication", "label": "Viewstamped Replication"},
-      {"@id": "urn:ngm:class:pbft", "label": "PBFT"}
+      {
+        "@id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      },
+      {
+        "@id": "urn:ngm:class:raft-consensus",
+        "label": "RAFT Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:pbft",
+        "label": "PBFT"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:high-availability", "label": "High Availability"},
-      {"@id": "urn:ngm:class:strong-consistency", "label": "Strong Consistency"},
-      {"@id": "urn:ngm:class:linearizability", "label": "Linearizability"},
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "@id": "urn:ngm:class:strong-consistency",
+        "label": "Strong Consistency"
+      },
+      {
+        "@id": "urn:ngm:class:linearizability",
+        "label": "Linearizability"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:leader-election", "label": "Leader Election"},
-      {"@id": "urn:ngm:class:log-replication", "label": "Log Replication"},
-      {"@id": "urn:ngm:class:state-transfer", "label": "State Transfer"}
+      {
+        "@id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      },
+      {
+        "@id": "urn:ngm:class:log-replication",
+        "label": "Log Replication"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:state-machine", "label": "State Machine"},
-      {"@id": "urn:ngm:class:quorum", "label": "Quorum"}
+      {
+        "@id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      },
+      {
+        "@id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:distributed-database", "label": "Distributed Database"},
-      {"@id": "urn:ngm:class:coordination-service", "label": "Coordination Service"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-databases",
+        "label": "Distributed Database"
+      },
+      {
+        "@id": "urn:ngm:class:coordination-layer",
+        "label": "Coordination Service"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:primary-backup-replication", "label": "Primary-Backup Replication"},
-      {"@id": "urn:ngm:class:eventual-consistency", "label": "Eventual Consistency"}
+      {
+        "@id": "urn:ngm:class:replication",
+        "label": "Primary-Backup Replication"
+      },
+      {
+        "@id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:distributed-ai-training", "label": "Distributed AI Training"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ai-training",
+        "label": "Distributed AI Training"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:cap-theorem", "label": "CAP Theorem"},
-      {"@id": "urn:ngm:class:replication-protocol", "label": "Replication Protocol"}
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "@id": "urn:ngm:class:replication-protocol",
+        "label": "Replication Protocol"
+      }
     ]
   },
   "quality": 0.74,

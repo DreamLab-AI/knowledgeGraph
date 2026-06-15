@@ -126,16 +126,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:action-detection",
+        "@id": "urn:ngm:class:action-recognition",
         "label": "Action Detection"
-      },
-      {
-        "@id": "urn:ngm:class:adaptive-reinforcement",
-        "label": "Adaptive Reinforcement"
-      },
-      {
-        "@id": "urn:ngm:class:environment-response",
-        "label": "Environment Response"
       },
       {
         "@id": "urn:ngm:class:behavior-analysis",
@@ -152,22 +144,14 @@ public:: true
         "label": "State Management"
       },
       {
-        "@id": "urn:ngm:class:user-tracking",
-        "label": "User Tracking"
-      },
-      {
         "@id": "urn:ngm:class:real-time-processing",
         "label": "Real-time Processing"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:adaptive-experience",
+        "@id": "urn:ngm:class:adaptive-virtual-experience",
         "label": "Adaptive Experience"
-      },
-      {
-        "@id": "urn:ngm:class:dynamic-adjustment",
-        "label": "Dynamic Adjustment"
       },
       {
         "@id": "urn:ngm:class:personalized-interaction",

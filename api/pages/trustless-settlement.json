@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:hash-timelock-contract",
+        "id": "urn:ngm:class:hash-time-locked-contract",
         "label": "Hash Timelock Contract"
       },
       {
@@ -40,7 +40,7 @@
         "label": "Cryptographic Hash Function"
       },
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       }
     ],
@@ -54,11 +54,11 @@
         "label": "Decentralized Exchange (DEX)"
       },
       {
-        "id": "urn:ngm:class:cross-border-payment",
+        "id": "urn:ngm:class:cross-border-payments",
         "label": "Cross-Border Payment"
       },
       {
-        "id": "urn:ngm:class:tokenized-securities",
+        "id": "urn:ngm:class:tokenised-securities",
         "label": "Tokenized Securities"
       }
     ],
@@ -68,7 +68,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:network-consensus",
+        "id": "urn:ngm:class:consensus",
         "label": "Network Consensus"
       }
     ],

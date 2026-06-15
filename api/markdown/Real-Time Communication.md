@@ -70,7 +70,7 @@ public:: true
         "label": "Session Initiation Protocol"
       },
       {
-        "@id": "urn:ngm:class:real-time-transport-protocol",
+        "@id": "urn:ngm:class:transport-protocol",
         "label": "Real-Time Transport Protocol"
       },
       {
@@ -124,18 +124,14 @@ public:: true
         "label": "Content Delivery Network"
       },
       {
-        "@id": "urn:ngm:class:ice-framework",
+        "@id": "urn:ngm:class:ice-protocol",
         "label": "ICE Framework"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:secure-real-time-transport-protocol",
+        "@id": "urn:ngm:class:transport-protocol",
         "label": "Secure Real-Time Transport Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:data-channel",
-        "label": "Data Channel"
       },
       {
         "@id": "urn:ngm:class:congestion-control",

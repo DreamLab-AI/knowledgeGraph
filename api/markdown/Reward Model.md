@@ -67,52 +67,115 @@ public:: true
   },
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:human-feedback", "label": "Human Feedback"},
-      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine Tuning"},
-      {"@id": "urn:ngm:class:preference-data", "label": "Preference Data"},
-      {"@id": "urn:ngm:class:pairwise-comparison", "label": "Pairwise Comparison"}
+      {
+        "@id": "urn:ngm:class:human-feedback",
+        "label": "Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:supervised-fine-tuning",
+        "label": "Supervised Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:preference-data",
+        "label": "Preference Data"
+      },
+      {
+        "@id": "urn:ngm:class:pairwise-comparison",
+        "label": "Pairwise Comparison"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:policy-optimisation", "label": "Policy Optimisation"},
-      {"@id": "urn:ngm:class:scalable-oversight", "label": "Scalable Oversight"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:reward-head", "label": "Reward Head"},
-      {"@id": "urn:ngm:class:preference-prediction", "label": "Preference Prediction"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:policy-optimisation",
+        "label": "Policy Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:scalable-oversight",
+        "label": "Scalable Oversight"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:rlhf-pipeline", "label": "RLHF Pipeline"},
-      {"@id": "urn:ngm:class:post-training-pipeline", "label": "Post-Training Pipeline"}
+      {
+        "@id": "urn:ngm:class:rlhf-pipeline",
+        "label": "RLHF Pipeline"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:bradley-terry-model", "label": "Bradley-Terry Model"},
-      {"@id": "urn:ngm:class:proximal-policy-optimisation", "label": "Proximal Policy Optimisation"}
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:bradley-terry-model",
+        "label": "Bradley-Terry Model"
+      },
+      {
+        "@id": "urn:ngm:class:proximal-policy-optimisation",
+        "label": "Proximal Policy Optimisation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:direct-preference-optimization", "label": "Direct Preference Optimization"},
-      {"@id": "urn:ngm:class:inverse-reinforcement-learning", "label": "Inverse Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:direct-preference-optimization",
+        "label": "Direct Preference Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-reinforcement-learning",
+        "label": "Inverse Reinforcement Learning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:base-language-model", "label": "Base Language Model"},
-      {"@id": "urn:ngm:class:human-annotation", "label": "Human Annotation"}
+      {
+        "@id": "urn:ngm:class:human-annotation",
+        "label": "Human Annotation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"},
-      {"@id": "urn:ngm:class:reward-hacking", "label": "Reward Hacking"},
-      {"@id": "urn:ngm:class:preference-learning", "label": "Preference Learning"},
-      {"@id": "urn:ngm:class:constitutional-ai", "label": "Constitutional AI"}
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
+      {
+        "@id": "urn:ngm:class:reward-hacking",
+        "label": "Reward Hacking"
+      },
+      {
+        "@id": "urn:ngm:class:preference-learning",
+        "label": "Preference Learning"
+      },
+      {
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:preference-model", "label": "Preference Model"},
-    {"@id": "urn:ngm:class:human-preference-model", "label": "Human Preference Model"}
+    {
+      "@id": "urn:ngm:class:preference-model",
+      "label": "Preference Model"
+    },
+    {
+      "@id": "urn:ngm:class:human-preference-model",
+      "label": "Human Preference Model"
+    }
   ],
   "quality": 0.72,
   "provenance": {

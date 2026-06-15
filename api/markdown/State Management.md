@@ -23,52 +23,117 @@ public:: true
   "definition": "State Management is the set of patterns, architectures, and tools used to represent, update, synchronise, and persist the mutable state of an application or distributed system in a predictable and auditable way. In single-page web applications, state management libraries such as Redux implement unidirectional data flow and immutable state trees. In distributed systems, state management encompasses consensus protocols, state machine replication, and event sourcing patterns that ensure all nodes maintain consistent views of shared state despite failures and network partitions. Blockchain ledgers represent a specialised form of state management with Byzantine fault-tolerant distributed consensus.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:software-architecture",
+    "label": "Software Architecture"
+  },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:state-machine", "label": "State Machine"},
-      {"@id": "urn:ngm:class:state-machine-replication", "label": "State Machine Replication"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
-      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"},
-      {"@id": "urn:ngm:class:immutable-data-structure", "label": "Immutable Data Structure"}
+      {
+        "@id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      },
+      {
+        "@id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:scalability", "label": "Scalability"},
-      {"@id": "urn:ngm:class:time-travel-debugging", "label": "Time Travel Debugging"},
-      {"@id": "urn:ngm:class:data-consistency", "label": "Data Consistency"}
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:data-consistency",
+        "label": "Data Consistency"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-persistence", "label": "Data Persistence"},
-      {"@id": "urn:ngm:class:concurrency-control", "label": "Concurrency Control"}
+      {
+        "@id": "urn:ngm:class:data-persistence",
+        "label": "Data Persistence"
+      },
+      {
+        "@id": "urn:ngm:class:concurrency-control",
+        "label": "Concurrency Control"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:event-sourcing", "label": "Event Sourcing"},
-      {"@id": "urn:ngm:class:command-query-responsibility-segregation", "label": "Command Query Responsibility Segregation"}
+      {
+        "@id": "urn:ngm:class:event-sourcing",
+        "label": "Event Sourcing"
+      },
+      {
+        "@id": "urn:ngm:class:command-query-responsibility-segregation",
+        "label": "Command Query Responsibility Segregation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:unidirectional-data-flow", "label": "Unidirectional Data Flow"},
-      {"@id": "urn:ngm:class:eventual-consistency", "label": "Eventual Consistency"}
+      {
+        "@id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:stateless-architecture", "label": "Stateless Architecture"}
+      {
+        "@id": "urn:ngm:class:stateless-architecture",
+        "label": "Stateless Architecture"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:message-queue", "label": "Message Queue"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:cap-theorem", "label": "CAP Theorem"},
-      {"@id": "urn:ngm:class:raft-algorithm", "label": "Raft Algorithm"},
-      {"@id": "urn:ngm:class:redux", "label": "Redux"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "@id": "urn:ngm:class:raft",
+        "label": "Raft Algorithm"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:application-state-management", "label": "Application State Management"}
+    {
+      "@id": "urn:ngm:class:application-state-management",
+      "label": "Application State Management"
+    }
   ],
   "quality": 0.8,
   "provenance": {

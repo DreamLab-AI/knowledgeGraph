@@ -118,10 +118,6 @@ public:: true
         "label": "Intent Recognition"
       },
       {
-        "@id": "urn:ngm:class:response-generation",
-        "label": "Response Generation"
-      },
-      {
         "@id": "urn:ngm:class:context-window",
         "label": "Context Window"
       }
@@ -142,7 +138,7 @@ public:: true
         "label": "AI Agent"
       },
       {
-        "@id": "urn:ngm:class:rule-based-system",
+        "@id": "urn:ngm:class:rule-based-systems",
         "label": "Rule-Based System"
       }
     ],
@@ -172,7 +168,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:multi-turn-conversation",
+        "@id": "urn:ngm:class:multi-turn-dialogue",
         "label": "Multi-Turn Conversation"
       },
       {

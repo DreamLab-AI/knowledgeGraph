@@ -19,10 +19,6 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:annotated-corpus",
-        "label": "Annotated Corpus"
-      },
-      {
         "id": "urn:ngm:class:sequence-labelling",
         "label": "Sequence Labelling"
       },
@@ -104,10 +100,6 @@
       {
         "id": "urn:ngm:class:conditional-random-field",
         "label": "Conditional Random Field"
-      },
-      {
-        "id": "urn:ngm:class:bilstm",
-        "label": "BiLSTM"
       }
     ],
     "supports": [],

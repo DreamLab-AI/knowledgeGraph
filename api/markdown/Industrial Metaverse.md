@@ -162,16 +162,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:remote-control-interface",
+        "@id": "urn:ngm:class:control-interface",
         "label": "Remote Control Interface"
-      },
-      {
-        "@id": "urn:ngm:class:supply-chain-visualization",
-        "label": "Supply Chain Visualization"
-      },
-      {
-        "@id": "urn:ngm:class:training-simulation",
-        "label": "Training Simulation"
       },
       {
         "@id": "urn:ngm:class:digital-twin",
@@ -188,15 +180,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:3-d-cad-integration",
-        "label": "3D CAD Integration"
-      },
-      {
-        "@id": "urn:ngm:class:industrial-protocol-gateway",
-        "label": "Industrial Protocol Gateway"
-      },
-      {
-        "@id": "urn:ngm:class:real-time-data-synchronization",
+        "@id": "urn:ngm:class:data-synchronization",
         "label": "Real-Time Data Synchronization"
       },
       {
@@ -208,10 +192,6 @@ public:: true
       {
         "@id": "urn:ngm:class:collaborative-systems-modality-design",
         "label": "Collaborative Design"
-      },
-      {
-        "@id": "urn:ngm:class:remote-operations",
-        "label": "Remote Operations"
       },
       {
         "@id": "urn:ngm:class:smart-manufacturing",

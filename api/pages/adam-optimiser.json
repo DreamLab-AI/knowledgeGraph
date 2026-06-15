@@ -18,18 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:first-moment-estimate",
-        "label": "First Moment Estimate"
-      },
-      {
-        "id": "urn:ngm:class:second-moment-estimate",
-        "label": "Second Moment Estimate"
-      },
-      {
-        "id": "urn:ngm:class:bias-correction",
-        "label": "Bias Correction"
-      },
-      {
         "id": "urn:ngm:class:learning-rate-schedule",
         "label": "Learning Rate Schedule"
       }
@@ -75,10 +63,6 @@
       {
         "id": "urn:ngm:class:adaptive-learning-rate",
         "label": "Adaptive Learning Rate"
-      },
-      {
-        "id": "urn:ngm:class:momentum-optimisation",
-        "label": "Momentum Optimisation"
       }
     ],
     "contrastsWith": [
@@ -87,15 +71,7 @@
         "label": "RMSProp"
       },
       {
-        "id": "urn:ngm:class:adagrad",
-        "label": "Adagrad"
-      },
-      {
-        "id": "urn:ngm:class:sgd-with-momentum",
-        "label": "SGD with Momentum"
-      },
-      {
-        "id": "urn:ngm:class:lion-optimiser",
+        "id": "urn:ngm:class:optimiser",
         "label": "Lion Optimiser"
       }
     ],
@@ -111,7 +87,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:mini-batch-gradient",
+        "id": "urn:ngm:class:stochastic-gradient-descent",
         "label": "Mini-Batch Gradient"
       },
       {
@@ -123,14 +99,6 @@
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:adamw",
-        "label": "AdamW"
-      },
-      {
-        "id": "urn:ngm:class:adafactor",
-        "label": "AdaFactor"
-      },
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"

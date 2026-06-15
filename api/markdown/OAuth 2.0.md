@@ -38,57 +38,135 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:https", "label": "HTTPS"},
-      {"@id": "urn:ngm:class:json-web-token", "label": "JSON Web Token"}
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:https",
+        "label": "HTTPS"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-web-token",
+        "label": "JSON Web Token"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:single-sign-on", "label": "Single Sign-On"},
-      {"@id": "urn:ngm:class:identity-federation", "label": "Identity Federation"},
-      {"@id": "urn:ngm:class:delegated-authorisation", "label": "Delegated Authorisation"},
-      {"@id": "urn:ngm:class:api-security", "label": "API Security"}
+      {
+        "@id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
+        "@id": "urn:ngm:class:identity-federation",
+        "label": "Identity Federation"
+      },
+      {
+        "@id": "urn:ngm:class:delegated-authorisation",
+        "label": "Delegated Authorisation"
+      },
+      {
+        "@id": "urn:ngm:class:api-security",
+        "label": "API Security"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:rfc-6749", "label": "RFC 6749"},
-      {"@id": "urn:ngm:class:rfc-6750", "label": "RFC 6750"},
-      {"@id": "urn:ngm:class:rfc-7636", "label": "RFC 7636"}
+      {
+        "@id": "urn:ngm:class:rfc-6749",
+        "label": "RFC 6749"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:authorisation-code-flow", "label": "Authorisation Code Flow"},
-      {"@id": "urn:ngm:class:client-credentials-flow", "label": "Client Credentials Flow"},
-      {"@id": "urn:ngm:class:refresh-token", "label": "Refresh Token"},
-      {"@id": "urn:ngm:class:access-token", "label": "Access Token"},
-      {"@id": "urn:ngm:class:pkce", "label": "PKCE"}
+      {
+        "@id": "urn:ngm:class:authorisation",
+        "label": "Authorisation Code Flow"
+      },
+      {
+        "@id": "urn:ngm:class:refresh-token",
+        "label": "Refresh Token"
+      },
+      {
+        "@id": "urn:ngm:class:access-token",
+        "label": "Access Token"
+      },
+      {
+        "@id": "urn:ngm:class:pkce",
+        "label": "PKCE"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:bearer-token", "label": "Bearer Token"},
-      {"@id": "urn:ngm:class:authorisation-server", "label": "Authorisation Server"},
-      {"@id": "urn:ngm:class:scope", "label": "Scope"}
+      {
+        "@id": "urn:ngm:class:bearer-token",
+        "label": "Bearer Token"
+      },
+      {
+        "@id": "urn:ngm:class:authorisation",
+        "label": "Authorisation Server"
+      },
+      {
+        "@id": "urn:ngm:class:scope",
+        "label": "Scope"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
-      {"@id": "urn:ngm:class:least-privilege", "label": "Least Privilege"}
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:least-privilege",
+        "label": "Least Privilege"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"},
-      {"@id": "urn:ngm:class:openid-connect", "label": "OpenID Connect"},
-      {"@id": "urn:ngm:class:saml", "label": "SAML"},
-      {"@id": "urn:ngm:class:federated-identity", "label": "Federated Identity"}
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "@id": "urn:ngm:class:saml",
+        "label": "SAML"
+      },
+      {
+        "@id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:oauth-1-0", "label": "OAuth 1.0"},
-      {"@id": "urn:ngm:class:api-key-authentication", "label": "API Key Authentication"}
+      {
+        "@id": "urn:ngm:class:oauth",
+        "label": "OAuth 1.0"
+      },
+      {
+        "@id": "urn:ngm:class:api-key-authentication",
+        "label": "API Key Authentication"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"}
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:open-authorisation-2", "label": "Open Authorisation 2"}
+    {
+      "@id": "urn:ngm:class:open-authorisation-2",
+      "label": "Open Authorisation 2"
+    }
   ],
   "quality": 0.74,
   "provenance": {

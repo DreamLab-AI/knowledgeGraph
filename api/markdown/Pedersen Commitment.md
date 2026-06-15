@@ -73,7 +73,7 @@ public:: true
         "label": "Elliptic Curve Cryptography"
       },
       {
-        "@id": "urn:ngm:class:random-oracle",
+        "@id": "urn:ngm:class:random-oracle-model",
         "label": "Random Oracle"
       }
     ],
@@ -83,7 +83,7 @@ public:: true
         "label": "Zero-Knowledge Proof"
       },
       {
-        "@id": "urn:ngm:class:confidential-transaction",
+        "@id": "urn:ngm:class:confidential-transactions",
         "label": "Confidential Transaction"
       },
       {
@@ -95,7 +95,7 @@ public:: true
         "label": "Bulletproofs"
       },
       {
-        "@id": "urn:ngm:class:secure-multiparty-computation",
+        "@id": "urn:ngm:class:secure-multi-party-computation",
         "label": "Secure Multiparty Computation"
       }
     ],
@@ -117,10 +117,6 @@ public:: true
       {
         "@id": "urn:ngm:class:blinding-factor",
         "label": "Blinding Factor"
-      },
-      {
-        "@id": "urn:ngm:class:group-generator",
-        "label": "Group Generator"
       }
     ],
     "supports": [
@@ -137,33 +133,19 @@ public:: true
         "label": "Verifiable Secret Sharing"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:hash-commitment",
-        "label": "Hash Commitment"
-      },
-      {
-        "@id": "urn:ngm:class:elgamal-encryption",
-        "label": "ElGamal Encryption"
-      }
-    ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:schnorr-protocol",
+        "@id": "urn:ngm:class:schnorr-signature",
         "label": "Schnorr Protocol"
       },
       {
-        "@id": "urn:ngm:class:sigma-protocol",
-        "label": "Sigma Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:non-interactive-zero-knowledge",
+        "@id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Non-Interactive Zero-Knowledge"
       }
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:blockchain-privacy",
+        "@id": "urn:ngm:class:privacy-preserving-blockchain",
         "label": "Blockchain Privacy"
       },
       {

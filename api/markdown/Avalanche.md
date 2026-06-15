@@ -23,53 +23,113 @@ public:: true
   "definition": "Avalanche is a high-throughput, low-latency layer-1 blockchain platform developed by Ava Labs that employs the Avalanche consensus family — a suite of leaderless, Byzantine-fault-tolerant protocols (Snowflake, Snowball, Avalanche) based on repeated random sub-sampled voting — to achieve probabilistic transaction finality in under two seconds. The platform is architecturally divided into three purpose-built chains: the Exchange Chain (X-Chain) for UTXO-model asset transfers, the Platform Chain (P-Chain) for validator and subnet management, and the Contract Chain (C-Chain) providing an EVM-compatible execution environment for Solidity smart contracts. Its subnet (now called L1) model allows developers to launch application-specific blockchains with custom virtual machines while optionally sharing primary-network validator sets, enabling both permissioned enterprise deployments and public decentralised applications within a unified interoperable ecosystem.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain-network",
+      "label": "Blockchain Network"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:evm", "label": "EVM"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:x-chain", "label": "X-Chain"},
-      {"@id": "urn:ngm:class:p-chain", "label": "P-Chain"},
-      {"@id": "urn:ngm:class:c-chain", "label": "C-Chain"},
-      {"@id": "urn:ngm:class:subnet", "label": "Subnet"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:evm",
+        "label": "EVM"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"},
-      {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"},
-      {"@id": "urn:ngm:class:decentralized-application", "label": "Decentralized Application"},
-      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"}
+      {
+        "@id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-application",
+        "label": "Decentralized Application"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
-      {"@id": "urn:ngm:class:staking", "label": "Staking"}
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "@id": "urn:ngm:class:staking",
+        "label": "Staking"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:avalanche-consensus", "label": "Avalanche Consensus"}
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:polkadot", "label": "Polkadot"},
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
-      {"@id": "urn:ngm:class:solana", "label": "Solana"},
-      {"@id": "urn:ngm:class:polygon", "label": "Polygon"}
+      {
+        "@id": "urn:ngm:class:polkadot",
+        "label": "Polkadot"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:solana",
+        "label": "Solana"
+      },
+      {
+        "@id": "urn:ngm:class:polygon",
+        "label": "Polygon"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum Smart Contract Platform"},
-      {"@id": "urn:ngm:class:layer-1-blockchain", "label": "Layer-1 Blockchain"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:warp-messaging", "label": "Warp Messaging"}
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "label": "Ethereum Smart Contract Platform"
+      },
+      {
+        "@id": "urn:ngm:class:layer-1-blockchain",
+        "label": "Layer-1 Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:real-world-asset-tokenisation", "label": "Real-World Asset Tokenisation"},
-      {"@id": "urn:ngm:class:enterprise-blockchain", "label": "Enterprise Blockchain"}
+      {
+        "@id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real-World Asset Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-blockchain",
+        "label": "Enterprise Blockchain"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:avax-network", "label": "AVAX Network"}
+    {
+      "@id": "urn:ngm:class:avax-network",
+      "label": "AVAX Network"
+    }
   ],
   "quality": 0.75,
   "provenance": {

@@ -112,24 +112,10 @@ public:: true
     }
   ],
   "relations": {
-    "requires": [
-      {
-        "@id": "urn:ngm:class:friction-coefficient-estimation",
-        "label": "Friction Coefficient Estimation"
-      },
-      {
-        "@id": "urn:ngm:class:lubrication-management",
-        "label": "Lubrication Management"
-      }
-    ],
     "enables": [
       {
-        "@id": "urn:ngm:class:energy-efficiency-calculation",
+        "@id": "urn:ngm:class:energy-efficiency",
         "label": "Energy Efficiency Calculation"
-      },
-      {
-        "@id": "urn:ngm:class:wear-prediction",
-        "label": "Wear Prediction"
       },
       {
         "@id": "urn:ngm:class:model-based-control",
@@ -137,10 +123,6 @@ public:: true
       }
     ],
     "partOf": [
-      {
-        "@id": "urn:ngm:class:energy-dissipation",
-        "label": "Energy Dissipation"
-      },
       {
         "@id": "urn:ngm:class:joint-mechanics",
         "label": "Joint Mechanics"

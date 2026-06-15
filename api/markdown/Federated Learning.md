@@ -132,50 +132,131 @@ alias:: FederatedLearning
   },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:secure-aggregation", "label": "Secure Aggregation"},
-      {"@id": "urn:ngm:class:model-compression", "label": "Model Compression"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:secure-aggregation",
+        "label": "Secure Aggregation"
+      },
+      {
+        "@id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"},
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"}
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:privacy-preserving-ml", "label": "Privacy Preserving ML"},
-      {"@id": "urn:ngm:class:collaborative-learning", "label": "Collaborative Learning"},
-      {"@id": "urn:ngm:class:data-sovereignty", "label": "Data Sovereignty"}
+      {
+        "@id": "urn:ngm:class:privacy-preserving",
+        "label": "Privacy Preserving ML"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-learning",
+        "label": "Collaborative Learning"
+      },
+      {
+        "@id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:privacy-preserving-data-sharing", "label": "Privacy Preserving Data Sharing"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"}
+      {
+        "@id": "urn:ngm:class:privacy-preserving-data-sharing",
+        "label": "Privacy Preserving Data Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:model-aggregation", "label": "Model Aggregation"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:model-aggregation",
+        "label": "Model Aggregation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:centralised-machine-learning", "label": "Centralised Machine Learning"},
-      {"@id": "urn:ngm:class:data-sharing", "label": "Data Sharing"}
+      {
+        "@id": "urn:ngm:class:centralised-machine-learning",
+        "label": "Centralised Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:data-sharing",
+        "label": "Data Sharing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:distributed-learning", "label": "Distributed Learning"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"}
+      {
+        "@id": "urn:ngm:class:distributed-learning",
+        "label": "Distributed Learning"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:federated-machine-learning", "label": "Federated Machine Learning"},
-    {"@id": "urn:ngm:class:collaborative-federated-learning", "label": "Collaborative Federated Learning"}
+    {
+      "@id": "urn:ngm:class:federated-machine-learning",
+      "label": "Federated Machine Learning"
+    },
+    {
+      "@id": "urn:ngm:class:collaborative-federated-learning",
+      "label": "Collaborative Federated Learning"
+    }
   ],
   "quality": 0.68,
   "provenance": {

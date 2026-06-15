@@ -23,60 +23,159 @@ public:: true
   "definition": "Real-time monitoring is the continuous collection, processing, and presentation of operational telemetry — encompassing metrics, logs, and traces — with sufficiently low latency that resulting insights can drive immediate human decisions or automated responses without batch delay. It integrates instrumentation agents, stream-processing pipelines, and visualisation dashboards to maintain a live, actionable picture of system health across software, hardware, network, and physical domains. The discipline spans IT operations, industrial control, MLOps observability, and smart infrastructure, where the defining criterion is actionability: data must arrive within a window that permits meaningful intervention before a fault, breach, or degradation cascades. Real-time monitoring is architecturally distinct from batch analytics in its emphasis on bounded latency, stateful windowing, and continuous alerting over persistent connections.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:real-time-processing",
+    "label": "Real-time Processing"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:telemetry", "label": "Telemetry"},
-      {"@id": "urn:ngm:class:monitoring-dashboard", "label": "Monitoring Dashboard"},
-      {"@id": "urn:ngm:class:alerting", "label": "Alerting"},
-      {"@id": "urn:ngm:class:time-series-database", "label": "Time-Series Database"}
+      {
+        "@id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring-dashboard",
+        "label": "Monitoring Dashboard"
+      },
+      {
+        "@id": "urn:ngm:class:alerting",
+        "label": "Alerting"
+      },
+      {
+        "@id": "urn:ngm:class:time-series-database",
+        "label": "Time-Series Database"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:stream-processing", "label": "Stream Processing"},
-      {"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"},
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"}
+      {
+        "@id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
-      {"@id": "urn:ngm:class:operational-resilience", "label": "Operational Resilience"},
-      {"@id": "urn:ngm:class:ai-monitoring", "label": "AI Monitoring"},
-      {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"},
-      {"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"}
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      },
+      {
+        "@id": "urn:ngm:class:ai-monitoring",
+        "label": "AI Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:observability", "label": "Observability"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"}
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:message-broker", "label": "Message Broker"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:site-reliability-engineering", "label": "Site Reliability Engineering"},
-      {"@id": "urn:ngm:class:scada", "label": "SCADA"},
-      {"@id": "urn:ngm:class:ml-ops", "label": "MLOps"}
+      {
+        "@id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:scada",
+        "label": "SCADA"
+      },
+      {
+        "@id": "urn:ngm:class:model-ops",
+        "label": "MLOps"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:batch-processing", "label": "Batch Processing"},
-      {"@id": "urn:ngm:class:historical-analytics", "label": "Historical Analytics"}
+      {
+        "@id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Historical Analytics"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:model-drift-detection", "label": "Model Drift Detection"}
+      {
+        "@id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:model-drift-detection",
+        "label": "Model Drift Detection"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:performance-metrics", "label": "Performance Metrics"},
-      {"@id": "urn:ngm:class:distributed-tracing", "label": "Distributed Tracing"},
-      {"@id": "urn:ngm:class:log-management", "label": "Log Management"},
-      {"@id": "urn:ngm:class:service-level-objective", "label": "Service Level Objective"}
+      {
+        "@id": "urn:ngm:class:performance-metrics",
+        "label": "Performance Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-tracing",
+        "label": "Distributed Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:log-management",
+        "label": "Log Management"
+      },
+      {
+        "@id": "urn:ngm:class:service-level-objective",
+        "label": "Service Level Objective"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:live-monitoring", "label": "Live Monitoring"},
-    {"@id": "urn:ngm:class:continuous-monitoring", "label": "Continuous Monitoring"}
+    {
+      "@id": "urn:ngm:class:live-monitoring",
+      "label": "Live Monitoring"
+    },
+    {
+      "@id": "urn:ngm:class:continuous-monitoring",
+      "label": "Continuous Monitoring"
+    }
   ],
   "quality": 0.72,
   "provenance": {

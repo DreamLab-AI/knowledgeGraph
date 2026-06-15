@@ -26,7 +26,7 @@
         "label": "View Change Protocol"
       },
       {
-        "id": "urn:ngm:class:prepare-commit-phase",
+        "id": "urn:ngm:class:two-phase-commit",
         "label": "Prepare-Commit Phase"
       }
     ],
@@ -72,7 +72,7 @@
         "label": "Peer-to-Peer Network"
       },
       {
-        "id": "urn:ngm:class:network-communication-model",
+        "id": "urn:ngm:class:network-communication",
         "label": "Network Communication Model"
       }
     ],
@@ -88,11 +88,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:crash-fault-tolerant-system",
-        "label": "Crash Fault Tolerant System"
-      },
-      {
-        "id": "urn:ngm:class:paxos-consensus",
+        "id": "urn:ngm:class:paxos",
         "label": "Paxos Consensus"
       },
       {
@@ -121,7 +117,7 @@
         "label": "Permissioned Blockchain"
       },
       {
-        "id": "urn:ngm:class:replicated-state-machine",
+        "id": "urn:ngm:class:state-machine-replication",
         "label": "Replicated State Machine"
       }
     ],

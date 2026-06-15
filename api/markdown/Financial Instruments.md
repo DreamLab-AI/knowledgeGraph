@@ -48,54 +48,131 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:equity-securities", "label": "Equity Securities"},
-      {"@id": "urn:ngm:class:debt-securities", "label": "Debt Securities"},
-      {"@id": "urn:ngm:class:derivatives", "label": "Derivatives"},
-      {"@id": "urn:ngm:class:foreign-exchange", "label": "Foreign Exchange"},
-      {"@id": "urn:ngm:class:structured-products", "label": "Structured Products"}
+      {
+        "@id": "urn:ngm:class:equity-securities",
+        "label": "Equity Securities"
+      },
+      {
+        "@id": "urn:ngm:class:debt-securities",
+        "label": "Debt Securities"
+      },
+      {
+        "@id": "urn:ngm:class:derivatives",
+        "label": "Derivatives"
+      },
+      {
+        "@id": "urn:ngm:class:foreign-exchange",
+        "label": "Foreign Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:structured-products",
+        "label": "Structured Products"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:financial-services", "label": "Financial Services"},
-      {"@id": "urn:ngm:class:capital-markets", "label": "Capital Markets"}
+      {
+        "@id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      },
+      {
+        "@id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
-      {"@id": "urn:ngm:class:clearing-and-settlement", "label": "Clearing and Settlement"},
-      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"}
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:clearing-and-settlement",
+        "label": "Clearing and Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
-      {"@id": "urn:ngm:class:portfolio-management", "label": "Portfolio Management"},
-      {"@id": "urn:ngm:class:capital-formation", "label": "Capital Formation"}
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:portfolio-management",
+        "label": "Portfolio Management"
+      },
+      {
+        "@id": "urn:ngm:class:capital-formation",
+        "label": "Capital Formation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:market-infrastructure", "label": "Market Infrastructure"},
-      {"@id": "urn:ngm:class:price-discovery", "label": "Price Discovery"},
-      {"@id": "urn:ngm:class:liquidity", "label": "Liquidity"}
+      {
+        "@id": "urn:ngm:class:market-infrastructure",
+        "label": "Market Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:international-accounting-standards", "label": "International Accounting Standards"},
-      {"@id": "urn:ngm:class:securities-regulation", "label": "Securities Regulation"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:real-assets", "label": "Real Assets"},
-      {"@id": "urn:ngm:class:intangible-assets", "label": "Intangible Assets"}
+      {
+        "@id": "urn:ngm:class:international-accounting-standards",
+        "label": "International Accounting Standards"
+      },
+      {
+        "@id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:tokenization", "label": "Tokenization"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"}
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
-      {"@id": "urn:ngm:class:asset-management", "label": "Asset Management"},
-      {"@id": "urn:ngm:class:monetary-policy", "label": "Monetary Policy"}
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:financial-contracts", "label": "Financial Contracts"},
-    {"@id": "urn:ngm:class:financial-assets", "label": "Financial Assets"}
+    {
+      "@id": "urn:ngm:class:financial-contracts",
+      "label": "Financial Contracts"
+    },
+    {
+      "@id": "urn:ngm:class:financial-assets",
+      "label": "Financial Assets"
+    }
   ],
   "quality": 0.72,
   "provenance": {

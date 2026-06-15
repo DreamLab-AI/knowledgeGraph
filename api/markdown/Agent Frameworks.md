@@ -469,7 +469,10 @@ public:: true
         "@id": "urn:ngm:class:workflow-engine",
         "label": "Workflow Engine"
       },
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
     ],
     "hasPart": [
       {
@@ -477,53 +480,25 @@ public:: true
         "label": "Agent Runtime"
       },
       {
-        "@id": "urn:ngm:class:evaluator-module",
-        "label": "Evaluator Module"
-      },
-      {
-        "@id": "urn:ngm:class:executor-module",
-        "label": "Executor Module"
-      },
-      {
-        "@id": "urn:ngm:class:hook-system",
-        "label": "Hook System"
-      },
-      {
         "@id": "urn:ngm:class:memory-store",
         "label": "Memory Store"
-      },
-      {
-        "@id": "urn:ngm:class:planner-module",
-        "label": "Planner Module"
       },
       {
         "@id": "urn:ngm:class:prompt-template",
         "label": "Prompt Template"
       },
       {
-        "@id": "urn:ngm:class:state-graph",
-        "label": "State Graph"
-      },
-      {
         "@id": "urn:ngm:class:tool-registry",
         "label": "Tool Registry"
-      },
-      {
-        "@id": "urn:ngm:class:trace-logger",
-        "label": "Trace Logger"
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:inference-endpoint",
-        "label": "Inference Endpoint"
-      },
       {
         "@id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
       },
       {
-        "@id": "urn:ngm:class:observability-stack",
+        "@id": "urn:ngm:class:observability",
         "label": "Observability Stack"
       },
       {
@@ -553,10 +528,6 @@ public:: true
         "label": "Computer Use"
       },
       {
-        "@id": "urn:ngm:class:multi-agent-collaboration",
-        "label": "Multi-Agent Collaboration"
-      },
-      {
         "@id": "urn:ngm:class:scientific-discovery",
         "label": "Scientific Discovery"
       },
@@ -579,12 +550,8 @@ public:: true
         "label": "Chain of Thought"
       },
       {
-        "@id": "urn:ngm:class:hierarchical-topology",
+        "@id": "urn:ngm:class:network-topology",
         "label": "Hierarchical Topology"
-      },
-      {
-        "@id": "urn:ngm:class:mesh-topology",
-        "label": "Mesh Topology"
       },
       {
         "@id": "urn:ngm:class:plan-and-execute-pattern",
@@ -595,16 +562,12 @@ public:: true
         "label": "ReAct Pattern"
       },
       {
-        "@id": "urn:ngm:class:reflexion-pattern",
+        "@id": "urn:ngm:class:reflexion",
         "label": "Reflexion Pattern"
       },
       {
         "@id": "urn:ngm:class:self-consistency",
         "label": "Self-Consistency"
-      },
-      {
-        "@id": "urn:ngm:class:toolformer-pattern",
-        "label": "Toolformer Pattern"
       },
       {
         "@id": "urn:ngm:class:tree-of-thoughts",
@@ -617,19 +580,15 @@ public:: true
         "label": "A2A Protocol"
       },
       {
-        "@id": "urn:ngm:class:acp-protocol",
-        "label": "ACP Protocol"
-      },
-      {
         "@id": "urn:ngm:class:json-data-interchange-format-rpc",
         "label": "JSON-RPC"
       },
       {
-        "@id": "urn:ngm:class:mcp-protocol",
+        "@id": "urn:ngm:class:model-control-protocols-like-mcp",
         "label": "MCP Protocol"
       },
       {
-        "@id": "urn:ngm:class:open-api",
+        "@id": "urn:ngm:class:open-api-specification",
         "label": "OpenAPI"
       },
       {
@@ -645,10 +604,6 @@ public:: true
       {
         "@id": "urn:ngm:class:agentic-ai",
         "label": "Agentic AI"
-      },
-      {
-        "@id": "urn:ngm:class:llm-evaluation",
-        "label": "LLM Evaluation"
       },
       {
         "@id": "urn:ngm:class:retrieval-augmented-generation",
@@ -669,24 +624,8 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:coding-assistant",
-        "label": "Coding Assistant"
-      },
-      {
-        "@id": "urn:ngm:class:customer-service-agent",
-        "label": "Customer Service Agent"
-      },
-      {
-        "@id": "urn:ngm:class:data-analysis-agent",
-        "label": "Data Analysis Agent"
-      },
-      {
         "@id": "urn:ngm:class:rag-pipeline",
         "label": "RAG Pipeline"
-      },
-      {
-        "@id": "urn:ngm:class:research-assistant",
-        "label": "Research Assistant"
       },
       {
         "@id": "urn:ngm:class:workflow-automation",
@@ -701,10 +640,6 @@ public:: true
       {
         "@id": "urn:ngm:class:agent-to-agent-protocol",
         "label": "Agent-to-Agent Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:agntcy-collective",
-        "label": "AGNTCY Collective"
       },
       {
         "@id": "urn:ngm:class:model-context-protocol",

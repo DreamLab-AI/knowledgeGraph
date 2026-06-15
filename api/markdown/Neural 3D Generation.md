@@ -226,10 +226,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:3-d-representation",
-        "label": "3D Representation"
-      },
-      {
         "@id": "urn:ngm:class:training-pipeline",
         "label": "Training Pipeline"
       },
@@ -248,7 +244,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:3-d-asset-dataset",
+        "@id": "urn:ngm:class:3-d-asset",
         "label": "3D Asset Dataset"
       },
       {
@@ -266,7 +262,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:automated-3-d-modeling",
+        "@id": "urn:ngm:class:3-d-modeling",
         "label": "Automated 3D Modeling"
       },
       {

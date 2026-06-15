@@ -18,25 +18,13 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:rental-agreement-terms",
-        "label": "Rental Agreement Terms"
-      },
-      {
-        "id": "urn:ngm:class:rental-smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Rental Smart Contract"
-      },
-      {
-        "id": "urn:ngm:class:time-lock-mechanism",
-        "label": "Time Lock Mechanism"
-      },
-      {
-        "id": "urn:ngm:class:usage-rights-token",
-        "label": "Usage Rights Token"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:nft-ownership-verification",
+        "id": "urn:ngm:class:nft-ownership-proof",
         "label": "NFT Ownership Verification"
       },
       {
@@ -54,16 +42,8 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:asset-utilization",
-        "label": "Asset Utilization"
-      },
-      {
         "id": "urn:ngm:class:collateral-management",
         "label": "Collateral Management"
-      },
-      {
-        "id": "urn:ngm:class:revenue-generation",
-        "label": "Revenue Generation"
       },
       {
         "id": "urn:ngm:class:temporary-asset-access",

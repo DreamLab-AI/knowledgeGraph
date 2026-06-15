@@ -102,10 +102,6 @@ public:: true
         "label": "Virtual Presence"
       },
       {
-        "@id": "urn:ngm:class:avatar-interaction",
-        "label": "Avatar Interaction"
-      },
-      {
         "@id": "urn:ngm:class:virtual-collaboration",
         "label": "Virtual Collaboration"
       }
@@ -130,7 +126,7 @@ public:: true
         "label": "WebXR"
       },
       {
-        "@id": "urn:ngm:class:3d-spatial-mapping",
+        "@id": "urn:ngm:class:spatial-mapping",
         "label": "3D Spatial Mapping"
       }
     ],
@@ -142,12 +138,6 @@ public:: true
       {
         "@id": "urn:ngm:class:enterprise-training",
         "label": "Enterprise Training"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:flat-screen-interaction",
-        "label": "Flat-Screen Interaction"
       }
     ],
     "bridgesTo": [

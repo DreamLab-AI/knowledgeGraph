@@ -22,12 +22,8 @@
         "label": "Scratchpad Reasoning"
       },
       {
-        "id": "urn:ngm:class:tree-of-thought",
+        "id": "urn:ngm:class:tree-of-thoughts",
         "label": "Tree of Thought"
-      },
-      {
-        "id": "urn:ngm:class:self-refinement",
-        "label": "Self-Refinement"
       }
     ],
     "requires": [
@@ -54,7 +50,7 @@
         "label": "Multi-Step Reasoning"
       },
       {
-        "id": "urn:ngm:class:autonomous-agents",
+        "id": "urn:ngm:class:autonomous-agent",
         "label": "Autonomous Agents"
       },
       {

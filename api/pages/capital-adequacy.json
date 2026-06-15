@@ -22,10 +22,6 @@
         "label": "Common Equity Tier 1"
       },
       {
-        "id": "urn:ngm:class:tier-2-capital",
-        "label": "Tier 2 Capital"
-      },
-      {
         "id": "urn:ngm:class:capital-conservation-buffer",
         "label": "Capital Conservation Buffer"
       },
@@ -77,17 +73,8 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:leverage-ratio",
-        "label": "Leverage Ratio"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:cryptoasset-prudential-treatment",
-        "label": "Cryptoasset Prudential Treatment"
-      },
       {
         "id": "urn:ngm:class:climate-financial-risk",
         "label": "Climate Financial Risk"
@@ -95,21 +82,13 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:internal-ratings-based-approach",
-        "label": "Internal Ratings-Based Approach"
-      },
-      {
         "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:deposit-protection",
-        "label": "Deposit Protection"
-      },
-      {
-        "id": "urn:ngm:class:systemic-risk-oversight",
+        "id": "urn:ngm:class:systemic-risk",
         "label": "Systemic Risk Oversight"
       }
     ],

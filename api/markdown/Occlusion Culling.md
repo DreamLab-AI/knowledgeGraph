@@ -48,54 +48,113 @@ public:: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:render-pipeline", "label": "Render Pipeline"},
-      {"@id": "urn:ngm:class:visibility-determination", "label": "Visibility Determination"}
+      {
+        "@id": "urn:ngm:class:render-pipeline",
+        "label": "Render Pipeline"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:hierarchical-z-buffer", "label": "Hierarchical Z-Buffer"},
-      {"@id": "urn:ngm:class:occlusion-query", "label": "Occlusion Query"},
-      {"@id": "urn:ngm:class:portal-culling", "label": "Portal Culling"},
-      {"@id": "urn:ngm:class:bounding-volume-hierarchy", "label": "Bounding Volume Hierarchy"}
+      {
+        "@id": "urn:ngm:class:portal-culling",
+        "label": "Portal Culling"
+      },
+      {
+        "@id": "urn:ngm:class:bounding-volume-hierarchy",
+        "label": "Bounding Volume Hierarchy"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:depth-buffer", "label": "Depth Buffer"},
-      {"@id": "urn:ngm:class:spatial-data-structure", "label": "Spatial Data Structure"},
-      {"@id": "urn:ngm:class:scene-graph", "label": "Scene Graph"}
+      {
+        "@id": "urn:ngm:class:depth-buffer",
+        "label": "Depth Buffer"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-data-structure",
+        "label": "Spatial Data Structure"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"},
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:open-world-game", "label": "Open World Game"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:open-world-game",
+        "label": "Open World Game"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:rasterisation", "label": "Rasterisation"}
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:rasterisation",
+        "label": "Rasterisation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:bounding-volume", "label": "Bounding Volume"},
-      {"@id": "urn:ngm:class:frustum-culling", "label": "Frustum Culling"},
-      {"@id": "urn:ngm:class:potential-visibility-set", "label": "Potential Visibility Set"}
+      {
+        "@id": "urn:ngm:class:bounding-volume",
+        "label": "Bounding Volume"
+      },
+      {
+        "@id": "urn:ngm:class:frustum-culling",
+        "label": "Frustum Culling"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:frustum-culling", "label": "Frustum Culling"},
-      {"@id": "urn:ngm:class:back-face-culling", "label": "Back-Face Culling"},
-      {"@id": "urn:ngm:class:level-of-detail", "label": "Level of Detail"}
+      {
+        "@id": "urn:ngm:class:frustum-culling",
+        "label": "Frustum Culling"
+      },
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:collision-detection", "label": "Collision Detection"},
-      {"@id": "urn:ngm:class:draw-call-batching", "label": "Draw Call Batching"},
-      {"@id": "urn:ngm:class:indirect-rendering", "label": "Indirect Rendering"},
-      {"@id": "urn:ngm:class:spatial-partitioning", "label": "Spatial Partitioning"}
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-partitioning",
+        "label": "Spatial Partitioning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:metaverse-infrastructure", "label": "Metaverse Infrastructure"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-infrastructure",
+        "label": "Metaverse Infrastructure"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:visibility-culling", "label": "Visibility Culling"},
-    {"@id": "urn:ngm:class:hidden-surface-removal", "label": "Hidden Surface Removal"}
+    {
+      "@id": "urn:ngm:class:visibility-culling",
+      "label": "Visibility Culling"
+    },
+    {
+      "@id": "urn:ngm:class:hidden-surface-removal",
+      "label": "Hidden Surface Removal"
+    }
   ],
   "quality": 0.74,
   "provenance": {

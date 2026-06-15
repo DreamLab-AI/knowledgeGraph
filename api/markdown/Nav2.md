@@ -24,62 +24,118 @@ public:: true
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:navigation-stack", "label": "Navigation Stack"}
+    {
+      "@id": "urn:ngm:class:navigation-stack",
+      "label": "Navigation Stack"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:ros-2", "label": "ROS 2"},
-      {"@id": "urn:ngm:class:dds-middleware", "label": "DDS Middleware"},
-      {"@id": "urn:ngm:class:lifecycle-node", "label": "Lifecycle Node"}
+      {
+        "@id": "urn:ngm:class:ros-2",
+        "label": "ROS 2"
+      },
+      {
+        "@id": "urn:ngm:class:dds-middleware",
+        "label": "DDS Middleware"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:behavior-tree", "label": "Behavior Tree"},
-      {"@id": "urn:ngm:class:costmap", "label": "Costmap"},
-      {"@id": "urn:ngm:class:motion-planning-algorithm", "label": "Motion Planning Algorithm"},
-      {"@id": "urn:ngm:class:model-predictive-path-integral", "label": "Model Predictive Path Integral"},
-      {"@id": "urn:ngm:class:lidar", "label": "LiDAR"},
-      {"@id": "urn:ngm:class:occupancy-grid", "label": "Occupancy Grid"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:planner-server", "label": "Planner Server"},
-      {"@id": "urn:ngm:class:controller-server", "label": "Controller Server"},
-      {"@id": "urn:ngm:class:bt-navigator", "label": "BT Navigator"},
-      {"@id": "urn:ngm:class:recovery-behavior", "label": "Recovery Behavior"}
+      {
+        "@id": "urn:ngm:class:behavior-tree",
+        "label": "Behavior Tree"
+      },
+      {
+        "@id": "urn:ngm:class:costmap",
+        "label": "Costmap"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      },
+      {
+        "@id": "urn:ngm:class:occupancy-grid",
+        "label": "Occupancy Grid"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
-      {"@id": "urn:ngm:class:obstacle-avoidance", "label": "Obstacle Avoidance"},
-      {"@id": "urn:ngm:class:coverage-navigation", "label": "Coverage Navigation"}
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:robot-localization", "label": "Robot Localization"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:ros-2-actions", "label": "ROS 2 Actions"}
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:localization",
+        "label": "Robot Localization"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:autonomous-mobile-robots", "label": "Autonomous Mobile Robots"},
-      {"@id": "urn:ngm:class:warehouse-robotics", "label": "Warehouse Robotics"},
-      {"@id": "urn:ngm:class:service-robotics", "label": "Service Robotics"}
+      {
+        "@id": "urn:ngm:class:autonomous-mobile-robots",
+        "label": "Autonomous Mobile Robots"
+      },
+      {
+        "@id": "urn:ngm:class:warehouse-robotics",
+        "label": "Warehouse Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:service-robotics",
+        "label": "Service Robotics"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:move-base", "label": "move_base"}
+      {
+        "@id": "urn:ngm:class:move-base",
+        "label": "move_base"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:autonomous-mobile-robots", "label": "Autonomous Mobile Robots"},
-      {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"}
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-mobile-robots",
+        "label": "Autonomous Mobile Robots"
+      },
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:navigation2", "label": "Navigation2"},
-    {"@id": "urn:ngm:class:ros2-navigation", "label": "ROS 2 Navigation"}
+    {
+      "@id": "urn:ngm:class:navigation2",
+      "label": "Navigation2"
+    },
+    {
+      "@id": "urn:ngm:class:ros2-navigation",
+      "label": "ROS 2 Navigation"
+    }
   ],
   "quality": 0.72,
   "provenance": {

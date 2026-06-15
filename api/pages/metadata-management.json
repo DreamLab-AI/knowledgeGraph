@@ -22,10 +22,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:business-glossary",
-        "label": "Business Glossary"
-      },
-      {
         "id": "urn:ngm:class:data-catalog",
         "label": "Data Catalog"
       },
@@ -46,16 +42,8 @@
         "label": "Data Observability"
       },
       {
-        "id": "urn:ngm:class:metadata-model",
-        "label": "Metadata Model"
-      },
-      {
         "id": "urn:ngm:class:ontology",
         "label": "Ontology"
-      },
-      {
-        "id": "urn:ngm:class:quality-scorecard",
-        "label": "Quality Scorecard"
       },
       {
         "id": "urn:ngm:class:semantic-layer",
@@ -141,16 +129,8 @@
         "label": "Apache Atlas"
       },
       {
-        "id": "urn:ngm:class:aws-glue-data-catalog",
+        "id": "urn:ngm:class:data-catalog",
         "label": "AWS Glue Data Catalog"
-      },
-      {
-        "id": "urn:ngm:class:data-hub",
-        "label": "DataHub"
-      },
-      {
-        "id": "urn:ngm:class:microsoft-purview",
-        "label": "Microsoft Purview"
       },
       {
         "id": "urn:ngm:class:open-lineage",
@@ -159,10 +139,6 @@
       {
         "id": "urn:ngm:class:open-metadata",
         "label": "OpenMetadata"
-      },
-      {
-        "id": "urn:ngm:class:unity-catalog",
-        "label": "Unity Catalog"
       }
     ],
     "contrastsWith": [],
@@ -238,20 +214,12 @@
         "label": "Apache Atlas"
       },
       {
-        "id": "urn:ngm:class:data-hub-metadata-model",
-        "label": "DataHub Metadata Model"
-      },
-      {
         "id": "urn:ngm:class:dcat",
         "label": "DCAT"
       },
       {
         "id": "urn:ngm:class:dublin-core",
         "label": "Dublin Core"
-      },
-      {
-        "id": "urn:ngm:class:iso-gql",
-        "label": "ISO GQL"
       },
       {
         "id": "urn:ngm:class:open-lineage",
@@ -264,10 +232,6 @@
     ],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:active-metadata",
-        "label": "Active Metadata"
-      },
       {
         "id": "urn:ngm:class:data-contracts",
         "label": "Data Contracts"
@@ -283,10 +247,6 @@
       {
         "id": "urn:ngm:class:data-observability",
         "label": "Data Observability"
-      },
-      {
-        "id": "urn:ngm:class:data-ops",
-        "label": "DataOps"
       },
       {
         "id": "urn:ngm:class:feature-store",

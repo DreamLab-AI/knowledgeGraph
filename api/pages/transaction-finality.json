@@ -28,10 +28,6 @@
       {
         "id": "urn:ngm:class:economic-finality",
         "label": "Economic Finality"
-      },
-      {
-        "id": "urn:ngm:class:checkpoint-finality",
-        "label": "Checkpoint Finality"
       }
     ],
     "requires": [
@@ -96,16 +92,12 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:double-spend",
+        "id": "urn:ngm:class:double-spending",
         "label": "Double Spend"
       },
       {
-        "id": "urn:ngm:class:51-percent-attack",
+        "id": "urn:ngm:class:51-attack",
         "label": "51% Attack"
-      },
-      {
-        "id": "urn:ngm:class:long-range-attack",
-        "label": "Long-Range Attack"
       }
     ],
     "bridgesTo": [
@@ -119,10 +111,6 @@
       }
     ],
     "uses": [
-      {
-        "id": "urn:ngm:class:block-reorganization",
-        "label": "Block Reorganization"
-      },
       {
         "id": "urn:ngm:class:fork-choice-rule",
         "label": "Fork Choice Rule"
@@ -138,7 +126,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:transaction-confirmation-time",
+        "id": "urn:ngm:class:transaction-confirmation",
         "label": "Transaction Confirmation Time"
       },
       {

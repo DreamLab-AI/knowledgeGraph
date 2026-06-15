@@ -77,7 +77,7 @@ public:: true
         "label": "AI Governance"
       },
       {
-        "@id": "urn:ngm:class:government-ai-policy",
+        "@id": "urn:ngm:class:ai-policy",
         "label": "Government AI Policy"
       }
     ],
@@ -89,10 +89,6 @@ public:: true
       {
         "@id": "urn:ngm:class:ai-policy",
         "label": "AI Policy"
-      },
-      {
-        "@id": "urn:ngm:class:international-ai-coordination",
-        "label": "International AI Coordination"
       }
     ],
     "requires": [

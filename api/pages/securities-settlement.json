@@ -18,16 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:trade-clearing",
-        "label": "Trade Clearing"
-      },
-      {
         "id": "urn:ngm:class:delivery-versus-payment",
         "label": "Delivery versus Payment"
-      },
-      {
-        "id": "urn:ngm:class:trade-confirmation",
-        "label": "Trade Confirmation"
       }
     ],
     "requires": [
@@ -112,10 +104,6 @@
       {
         "id": "urn:ngm:class:securities-regulation",
         "label": "Securities Regulation"
-      },
-      {
-        "id": "urn:ngm:class:central-securities-depositories-regulation",
-        "label": "Central Securities Depositories Regulation"
       }
     ],
     "partOf": [],

@@ -38,52 +38,123 @@ public:: true
   ],
   "relations": {
     "standardizedBy": [
-      {"@id": "urn:ngm:class:fatf", "label": "FATF"},
-      {"@id": "urn:ngm:class:financial-action-task-force", "label": "Financial Action Task Force"}
+      {
+        "@id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      },
+      {
+        "@id": "urn:ngm:class:financial-action-task-force",
+        "label": "Financial Action Task Force"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:know-your-customer", "label": "Know Your Customer"},
-      {"@id": "urn:ngm:class:ivms-101", "label": "IVMS 101"},
-      {"@id": "urn:ngm:class:vasp-counterparty-discovery", "label": "VASP Counterparty Discovery"}
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "@id": "urn:ngm:class:ivms-101",
+        "label": "IVMS 101"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:crypto-asset-compliance", "label": "Crypto-Asset Compliance"},
-      {"@id": "urn:ngm:class:financial-intelligence", "label": "Financial Intelligence"},
-      {"@id": "urn:ngm:class:transaction-monitoring", "label": "Transaction Monitoring"}
+      {
+        "@id": "urn:ngm:class:financial-intelligence",
+        "label": "Financial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-monitoring",
+        "label": "Transaction Monitoring"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:fatf-recommendation-16", "label": "FATF Recommendation 16"},
-      {"@id": "urn:ngm:class:wire-transfer-rule", "label": "Wire Transfer Rule"}
+      {
+        "@id": "urn:ngm:class:fatf-recommendation-16",
+        "label": "FATF Recommendation 16"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:trisa", "label": "TRISA"},
-      {"@id": "urn:ngm:class:travel-rule-protocol", "label": "Travel Rule Protocol"},
-      {"@id": "urn:ngm:class:openvasp", "label": "OpenVASP"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+      {
+        "@id": "urn:ngm:class:trisa",
+        "label": "TRISA"
+      },
+      {
+        "@id": "urn:ngm:class:travel-rule-protocol",
+        "label": "Travel Rule Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:privacy-coin", "label": "Privacy Coin"},
-      {"@id": "urn:ngm:class:self-hosted-wallet", "label": "Self-Hosted Wallet"},
-      {"@id": "urn:ngm:class:decentralised-exchange", "label": "Decentralised Exchange"}
+      {
+        "@id": "urn:ngm:class:privacy-coin",
+        "label": "Privacy Coin"
+      },
+      {
+        "@id": "urn:ngm:class:wallet",
+        "label": "Self-Hosted Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:virtual-asset", "label": "Virtual Asset"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:virtual-asset-service-provider", "label": "Virtual Asset Service Provider"},
-      {"@id": "urn:ngm:class:transfer-of-funds-regulation", "label": "Transfer of Funds Regulation"},
-      {"@id": "urn:ngm:class:sanctions-screening", "label": "Sanctions Screening"}
+      {
+        "@id": "urn:ngm:class:virtual-asset",
+        "label": "Virtual Asset"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:bc-0456-virtual-asset-service-providers",
+        "label": "Virtual Asset Service Provider"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-of-funds-regulation",
+        "label": "Transfer of Funds Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:recommendation-16-virtual-assets", "label": "Recommendation 16 Virtual Assets"},
-    {"@id": "urn:ngm:class:vasp-travel-rule", "label": "VASP Travel Rule"}
+    {
+      "@id": "urn:ngm:class:recommendation-16-virtual-assets",
+      "label": "Recommendation 16 Virtual Assets"
+    },
+    {
+      "@id": "urn:ngm:class:vasp-travel-rule",
+      "label": "VASP Travel Rule"
+    }
   ],
   "quality": 0.74,
   "qualityScore": 0.74,

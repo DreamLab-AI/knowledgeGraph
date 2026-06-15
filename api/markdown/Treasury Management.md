@@ -479,18 +479,6 @@ alias:: BC-0464-treasury-management, TreasuryManagement
         "label": "Protocol-Owned Liquidity"
       },
       {
-        "@id": "urn:ngm:class:rwa-allocation",
-        "label": "RWA Allocation"
-      },
-      {
-        "@id": "urn:ngm:class:spending-policy",
-        "label": "Spending Policy"
-      },
-      {
-        "@id": "urn:ngm:class:token-buyback",
-        "label": "Token Buyback"
-      },
-      {
         "@id": "urn:ngm:class:treasury-analytics",
         "label": "Treasury Analytics"
       },
@@ -499,7 +487,7 @@ alias:: BC-0464-treasury-management, TreasuryManagement
         "label": "Treasury Diversification"
       },
       {
-        "@id": "urn:ngm:class:yield-strategy",
+        "@id": "urn:ngm:class:yield-generation",
         "label": "Yield Strategy"
       }
     ],
@@ -525,12 +513,8 @@ alias:: BC-0464-treasury-management, TreasuryManagement
         "label": "On-chain Governance"
       },
       {
-        "@id": "urn:ngm:class:risk-framework",
+        "@id": "urn:ngm:class:risk-management-framework",
         "label": "Risk Framework"
-      },
-      {
-        "@id": "urn:ngm:class:token-valuation",
-        "label": "Token Valuation"
       },
       {
         "@id": "urn:ngm:class:smart-contract",
@@ -539,28 +523,8 @@ alias:: BC-0464-treasury-management, TreasuryManagement
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:community-grant-funding",
-        "label": "Community Grant Funding"
-      },
-      {
-        "@id": "urn:ngm:class:dao-sustainability",
-        "label": "DAO Sustainability"
-      },
-      {
-        "@id": "urn:ngm:class:ecosystem-development",
-        "label": "Ecosystem Development"
-      },
-      {
-        "@id": "urn:ngm:class:operational-runway",
-        "label": "Operational Runway"
-      },
-      {
         "@id": "urn:ngm:class:protocol-owned-liquidity",
         "label": "Protocol-Owned Liquidity"
-      },
-      {
-        "@id": "urn:ngm:class:token-holder-value-accrual",
-        "label": "Token Holder Value Accrual"
       },
       {
         "@id": "urn:ngm:class:yield-generation",
@@ -573,23 +537,11 @@ alias:: BC-0464-treasury-management, TreasuryManagement
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:delegated-treasury-management",
-        "label": "Delegated Treasury Management"
-      },
-      {
-        "@id": "urn:ngm:class:dollar-cost-averaging",
-        "label": "Dollar-Cost Averaging"
-      },
-      {
-        "@id": "urn:ngm:class:multi-signature-custody",
+        "@id": "urn:ngm:class:multi-signature",
         "label": "Multi-Signature Custody"
       },
       {
-        "@id": "urn:ngm:class:otc-token-sale",
-        "label": "OTC Token Sale"
-      },
-      {
-        "@id": "urn:ngm:class:protocol-owned-liquidity-bonding",
+        "@id": "urn:ngm:class:protocol-owned-liquidity",
         "label": "Protocol-Owned Liquidity Bonding"
       },
       {
@@ -597,11 +549,7 @@ alias:: BC-0464-treasury-management, TreasuryManagement
         "label": "Quadratic Funding"
       },
       {
-        "@id": "urn:ngm:class:rwa-integration",
-        "label": "RWA Integration"
-      },
-      {
-        "@id": "urn:ngm:class:tiered-governance-model",
+        "@id": "urn:ngm:class:governance-model",
         "label": "Tiered Governance Model"
       }
     ],
@@ -609,10 +557,6 @@ alias:: BC-0464-treasury-management, TreasuryManagement
       {
         "@id": "urn:ngm:class:aave",
         "label": "Aave"
-      },
-      {
-        "@id": "urn:ngm:class:coinshift",
-        "label": "Coinshift"
       },
       {
         "@id": "urn:ngm:class:compound",
@@ -635,7 +579,7 @@ alias:: BC-0464-treasury-management, TreasuryManagement
         "label": "Karpatkey"
       },
       {
-        "@id": "urn:ngm:class:lido-finance",
+        "@id": "urn:ngm:class:lido",
         "label": "Lido Finance"
       },
       {
@@ -643,20 +587,12 @@ alias:: BC-0464-treasury-management, TreasuryManagement
         "label": "Meta Llama Model Family"
       },
       {
-        "@id": "urn:ngm:class:nansen",
-        "label": "Nansen"
-      },
-      {
-        "@id": "urn:ngm:class:pendle-finance",
+        "@id": "urn:ngm:class:pendle",
         "label": "Pendle Finance"
       },
       {
-        "@id": "urn:ngm:class:safe-multisig",
+        "@id": "urn:ngm:class:gnosis-safe",
         "label": "Safe Multisig"
-      },
-      {
-        "@id": "urn:ngm:class:tres-finance",
-        "label": "Tres Finance"
       },
       {
         "@id": "urn:ngm:class:snapshot-voting",
@@ -677,20 +613,12 @@ alias:: BC-0464-treasury-management, TreasuryManagement
         "label": "ENS"
       },
       {
-        "@id": "urn:ngm:class:enzyme-finance",
-        "label": "Enzyme Finance"
-      },
-      {
         "@id": "urn:ngm:class:gitcoin",
         "label": "Gitcoin"
       },
       {
         "@id": "urn:ngm:class:maker-dao",
         "label": "MakerDAO"
-      },
-      {
-        "@id": "urn:ngm:class:metaplanet",
-        "label": "Metaplanet"
       },
       {
         "@id": "urn:ngm:class:olympus-dao",
@@ -715,12 +643,8 @@ alias:: BC-0464-treasury-management, TreasuryManagement
         "label": "Bitcoin Standard"
       },
       {
-        "@id": "urn:ngm:class:de-fi-ecosystem",
+        "@id": "urn:ngm:class:de-fi",
         "label": "DeFi Ecosystem"
-      },
-      {
-        "@id": "urn:ngm:class:ecosystem-grants",
-        "label": "Ecosystem Grants"
       },
       {
         "@id": "urn:ngm:class:financial-transparency",
@@ -733,19 +657,11 @@ alias:: BC-0464-treasury-management, TreasuryManagement
       {
         "@id": "urn:ngm:class:protocol-sustainability",
         "label": "Protocol Sustainability"
-      },
-      {
-        "@id": "urn:ngm:class:token-holder-value",
-        "label": "Token Holder Value"
       }
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:aicpa-digital-asset-practice-aid-2022",
-        "label": "AICPA Digital Asset Practice Aid 2022"
-      },
-      {
-        "@id": "urn:ngm:class:dao-legal-frameworks",
+        "@id": "urn:ngm:class:dao-legal-structures",
         "label": "DAO Legal Frameworks"
       },
       {
@@ -753,16 +669,8 @@ alias:: BC-0464-treasury-management, TreasuryManagement
         "label": "FASB ASU 2023-08"
       },
       {
-        "@id": "urn:ngm:class:gaap-fair-value-accounting",
-        "label": "GAAP Fair Value Accounting"
-      },
-      {
         "@id": "urn:ngm:class:mi-ca-regulation",
         "label": "MiCA Regulation"
-      },
-      {
-        "@id": "urn:ngm:class:sec-form-8-k",
-        "label": "SEC Form 8-K"
       }
     ],
     "bridgesTo": [

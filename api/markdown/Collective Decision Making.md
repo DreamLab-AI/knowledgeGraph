@@ -24,56 +24,125 @@ alias:: Collective Decision-Making
   "definition": "Collective decision making is the social and technical process by which a group of agents — human, algorithmic, or hybrid — aggregate individual preferences, information, or votes to arrive at a binding or advisory choice on behalf of the group. It encompasses the design and analysis of voting systems, preference aggregation mechanisms, deliberation protocols, and incentive structures that determine how group choices are reached and enforced. In digital and distributed contexts, collective decision making is formalised through on-chain governance mechanisms, decentralised autonomous organisations, and algorithmic consensus protocols that encode group agency in smart contract logic. The field draws on social choice theory, mechanism design, game theory, and organisational science to evaluate fairness, efficiency, and manipulation-resistance of alternative procedures.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:social-choice-theory", "label": "Social Choice Theory"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:social-choice-theory",
+      "label": "Social Choice Theory"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:voting-mechanism", "label": "Voting Mechanism"},
-      {"@id": "urn:ngm:class:quadratic-voting", "label": "Quadratic Voting"},
-      {"@id": "urn:ngm:class:conviction-voting", "label": "Conviction Voting"},
-      {"@id": "urn:ngm:class:token-weighted-voting", "label": "Token-Weighted Voting"},
-      {"@id": "urn:ngm:class:ranked-choice-voting", "label": "Ranked-Choice Voting"},
-      {"@id": "urn:ngm:class:liquid-democracy", "label": "Liquid Democracy"}
+      {
+        "@id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "@id": "urn:ngm:class:conviction-voting",
+        "label": "Conviction Voting"
+      },
+      {
+        "@id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      },
+      {
+        "@id": "urn:ngm:class:ranked-choice-voting",
+        "label": "Ranked-Choice Voting"
+      },
+      {
+        "@id": "urn:ngm:class:liquid-democracy",
+        "label": "Liquid Democracy"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
-      {"@id": "urn:ngm:class:community-governance", "label": "Community Governance"},
-      {"@id": "urn:ngm:class:participatory-democracy", "label": "Participatory Democracy"},
-      {"@id": "urn:ngm:class:protocol-upgrade", "label": "Protocol Upgrade"}
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:preference-aggregation", "label": "Preference Aggregation"},
-      {"@id": "urn:ngm:class:deliberation-protocol", "label": "Deliberation Protocol"},
-      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"}
+      {
+        "@id": "urn:ngm:class:preference-aggregation",
+        "label": "Preference Aggregation"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"},
-      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"}
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:proposal-process", "label": "Proposal Process"},
-      {"@id": "urn:ngm:class:quorum-requirement", "label": "Quorum Requirement"}
+      {
+        "@id": "urn:ngm:class:quorum-requirement",
+        "label": "Quorum Requirement"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:collective-intelligence-system", "label": "Collective Intelligence System"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:deliberative-democracy", "label": "Deliberative Democracy"},
-      {"@id": "urn:ngm:class:consent-mechanism", "label": "Consent Mechanism"},
-      {"@id": "urn:ngm:class:arrow-impossibility-theorem", "label": "Arrow Impossibility Theorem"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:centralised-authority", "label": "Centralised Authority"},
-      {"@id": "urn:ngm:class:autocratic-governance", "label": "Autocratic Governance"}
+      {
+        "@id": "urn:ngm:class:collective-intelligence-system",
+        "label": "Collective Intelligence System"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:deliberative-democracy",
+        "label": "Deliberative Democracy"
+      },
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Mechanism"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"}
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:group-decision-making", "label": "Group Decision Making"},
-    {"@id": "urn:ngm:class:collaborative-decision-making", "label": "Collaborative Decision Making"}
+    {
+      "@id": "urn:ngm:class:group-decision-making",
+      "label": "Group Decision Making"
+    },
+    {
+      "@id": "urn:ngm:class:collaborative-decision-making",
+      "label": "Collaborative Decision Making"
+    }
   ],
   "quality": 0.72,
   "provenance": {

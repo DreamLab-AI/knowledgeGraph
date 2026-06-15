@@ -47,64 +47,169 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:remote-presence", "label": "Remote Presence"},
-    {"@id": "urn:ngm:class:virtual-presence", "label": "Virtual Presence"}
+    {
+      "@id": "urn:ngm:class:remote-presence",
+      "label": "Remote Presence"
+    },
+    {
+      "@id": "urn:ngm:class:virtual-presence",
+      "label": "Virtual Presence"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:volumetric-capture", "label": "Volumetric Capture"},
-      {"@id": "urn:ngm:class:video-conferencing", "label": "Video Conferencing"}
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:volumetric-capture",
+        "label": "Volumetric Capture"
+      },
+      {
+        "@id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:low-latency-networking", "label": "Low-Latency Networking"},
-      {"@id": "urn:ngm:class:real-time-communication", "label": "Real-Time Communication"},
-      {"@id": "urn:ngm:class:display-technology", "label": "Display Technology"}
+      {
+        "@id": "urn:ngm:class:low-latency-networking",
+        "label": "Low-Latency Networking"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      },
+      {
+        "@id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:remote-work", "label": "Remote Work"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:remote-surgery", "label": "Remote Surgery"},
-      {"@id": "urn:ngm:class:virtual-collaboration", "label": "Virtual Collaboration"}
+      {
+        "@id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:remote-surgery",
+        "label": "Remote Surgery"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:5g-networks", "label": "5G Networks"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:webrtc", "label": "WebRTC"}
+      {
+        "@id": "urn:ngm:class:5g-networks",
+        "label": "5G Networks"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:webrtc",
+        "label": "WebRTC"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"},
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
-      {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"}
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:hybrid-work", "label": "Hybrid Work"},
-      {"@id": "urn:ngm:class:telemedicine", "label": "Telemedicine"},
-      {"@id": "urn:ngm:class:remote-education", "label": "Remote Education"}
+      {
+        "@id": "urn:ngm:class:hybrid-work",
+        "label": "Hybrid Work"
+      },
+      {
+        "@id": "urn:ngm:class:telemedicine",
+        "label": "Telemedicine"
+      },
+      {
+        "@id": "urn:ngm:class:remote-education",
+        "label": "Remote Education"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:itu-t", "label": "ITU-T"},
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"}
+      {
+        "@id": "urn:ngm:class:itu-t",
+        "label": "ITU-T"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:co-location", "label": "Co-location"},
-      {"@id": "urn:ngm:class:asynchronous-communication", "label": "Asynchronous Communication"}
+      {
+        "@id": "urn:ngm:class:co-location",
+        "label": "Co-location"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotic-systems", "label": "Robotic Systems"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:robotic-system",
+        "label": "Robotic Systems"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:presence-technology", "label": "Presence Technology"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:holographic-display", "label": "Holographic Display"}
+      {
+        "@id": "urn:ngm:class:presence-technology",
+        "label": "Presence Technology"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:holographic-display",
+        "label": "Holographic Display"
+      }
     ]
   },
   "quality": 0.72,

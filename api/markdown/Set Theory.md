@@ -65,31 +65,13 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:zermelo-fraenkel-axioms",
-        "label": "Zermelo-Fraenkel Axioms"
-      },
-      {
-        "@id": "urn:ngm:class:axiom-of-choice",
-        "label": "Axiom of Choice"
-      },
-      {
-        "@id": "urn:ngm:class:cardinal-numbers",
-        "label": "Cardinal Numbers"
-      },
-      {
-        "@id": "urn:ngm:class:ordinal-numbers",
-        "label": "Ordinal Numbers"
-      }
-    ],
     "partOf": [
       {
         "@id": "urn:ngm:class:mathematical-logic",
         "label": "Mathematical Logic"
       },
       {
-        "@id": "urn:ngm:class:foundations-of-mathematics",
+        "@id": "urn:ngm:class:mathematical-foundations",
         "label": "Foundations of Mathematics"
       }
     ],
@@ -109,10 +91,6 @@ public:: true
       {
         "@id": "urn:ngm:class:type-theory",
         "label": "Type Theory"
-      },
-      {
-        "@id": "urn:ngm:class:formal-ontology",
-        "label": "Formal Ontology"
       }
     ],
     "requires": [
@@ -141,25 +119,17 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:category-theory",
-        "label": "Category Theory"
-      },
-      {
         "@id": "urn:ngm:class:type-theory",
         "label": "Type Theory"
       }
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:database-theory",
-        "label": "Database Theory"
-      },
-      {
         "@id": "urn:ngm:class:formal-verification",
         "label": "Formal Verification"
       },
       {
-        "@id": "urn:ngm:class:semantic-web",
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       }
     ],

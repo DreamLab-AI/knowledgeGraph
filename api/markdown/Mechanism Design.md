@@ -38,50 +38,131 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:revelation-principle", "label": "Revelation Principle"},
-      {"@id": "urn:ngm:class:incentive-compatibility", "label": "Incentive Compatibility"},
-      {"@id": "urn:ngm:class:strategy-proofness", "label": "Strategy-Proofness"},
-      {"@id": "urn:ngm:class:social-choice-function", "label": "Social Choice Function"}
+      {
+        "@id": "urn:ngm:class:revelation-principle",
+        "label": "Revelation Principle"
+      },
+      {
+        "@id": "urn:ngm:class:incentive-compatibility",
+        "label": "Incentive Compatibility"
+      },
+      {
+        "@id": "urn:ngm:class:strategy-proofness",
+        "label": "Strategy-Proofness"
+      },
+      {
+        "@id": "urn:ngm:class:social-choice-function",
+        "label": "Social Choice Function"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"},
-      {"@id": "urn:ngm:class:information-asymmetry", "label": "Information Asymmetry"},
-      {"@id": "urn:ngm:class:rational-agent", "label": "Rational Agent"}
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "@id": "urn:ngm:class:information-asymmetry",
+        "label": "Information Asymmetry"
+      },
+      {
+        "@id": "urn:ngm:class:rational-agent",
+        "label": "Rational Agent"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
-      {"@id": "urn:ngm:class:incentive-alignment", "label": "Incentive Alignment"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
-      {"@id": "urn:ngm:class:auction-theory", "label": "Auction Theory"}
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "@id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:auction-theory",
+        "label": "Auction Theory"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:vickrey-clarke-groves-mechanism", "label": "Vickrey-Clarke-Groves Mechanism"},
-      {"@id": "urn:ngm:class:dominant-strategy-equilibrium", "label": "Dominant Strategy Equilibrium"}
+      {
+        "@id": "urn:ngm:class:vickrey-clarke-groves-mechanism",
+        "label": "Vickrey-Clarke-Groves Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:dominant-strategy-equilibrium",
+        "label": "Dominant Strategy Equilibrium"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:nash-equilibrium", "label": "Nash Equilibrium"},
-      {"@id": "urn:ngm:class:bayesian-game", "label": "Bayesian Game"},
-      {"@id": "urn:ngm:class:contract-theory", "label": "Contract Theory"}
+      {
+        "@id": "urn:ngm:class:nash-equilibrium",
+        "label": "Nash Equilibrium"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-game",
+        "label": "Bayesian Game"
+      },
+      {
+        "@id": "urn:ngm:class:contract-theory",
+        "label": "Contract Theory"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:algorithmic-game-theory", "label": "Algorithmic Game Theory"},
-      {"@id": "urn:ngm:class:behavioral-economics", "label": "Behavioral Economics"}
+      {
+        "@id": "urn:ngm:class:algorithmic-game-theory",
+        "label": "Algorithmic Game Theory"
+      },
+      {
+        "@id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioral Economics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"},
-      {"@id": "urn:ngm:class:voting-mechanism", "label": "Voting Mechanism"},
-      {"@id": "urn:ngm:class:public-goods", "label": "Public Goods"},
-      {"@id": "urn:ngm:class:market-design", "label": "Market Design"}
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "@id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:public-goods",
+        "label": "Public Goods"
+      },
+      {
+        "@id": "urn:ngm:class:market-design",
+        "label": "Market Design"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:cryptoeconomics", "label": "Cryptoeconomics"}
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:cryptoeconomics",
+        "label": "Cryptoeconomics"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:reverse-game-theory", "label": "Reverse Game Theory"},
-    {"@id": "urn:ngm:class:incentive-mechanism-design", "label": "Incentive Mechanism Design"}
+    {
+      "@id": "urn:ngm:class:reverse-game-theory",
+      "label": "Reverse Game Theory"
+    },
+    {
+      "@id": "urn:ngm:class:incentive-mechanism-design",
+      "label": "Incentive Mechanism Design"
+    }
   ],
   "quality": 0.74,
   "provenance": {

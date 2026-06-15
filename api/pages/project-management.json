@@ -16,29 +16,8 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:scope-management",
-        "label": "Scope Management"
-      },
-      {
-        "id": "urn:ngm:class:schedule-management",
-        "label": "Schedule Management"
-      },
-      {
-        "id": "urn:ngm:class:cost-management",
-        "label": "Cost Management"
-      },
-      {
-        "id": "urn:ngm:class:quality-management",
-        "label": "Quality Management"
-      }
-    ],
+    "hasPart": [],
     "requires": [
-      {
-        "id": "urn:ngm:class:requirements-management",
-        "label": "Requirements Management"
-      },
       {
         "id": "urn:ngm:class:change-management",
         "label": "Change Management"
@@ -57,7 +36,7 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:agile-methodology",
+        "id": "urn:ngm:class:agile-software-development",
         "label": "Agile Methodology"
       },
       {
@@ -65,17 +44,8 @@
         "label": "Waterfall Model"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:operations-management",
-        "label": "Operations Management"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:ai-implementation",
-        "label": "AI Implementation"
-      },
       {
         "id": "urn:ngm:class:distributed-collaboration",
         "label": "Distributed Collaboration"
@@ -97,10 +67,6 @@
       {
         "id": "urn:ngm:class:workflow-automation",
         "label": "Workflow Automation"
-      },
-      {
-        "id": "urn:ngm:class:critical-path-method",
-        "label": "Critical Path Method"
       }
     ],
     "supports": [
@@ -113,16 +79,7 @@
         "label": "Decision Making"
       }
     ],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:pmbok",
-        "label": "PMBOK"
-      },
-      {
-        "id": "urn:ngm:class:prince2",
-        "label": "PRINCE2"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
@@ -136,10 +93,6 @@
       {
         "id": "urn:ngm:class:portfolio-management",
         "label": "Portfolio Management"
-      },
-      {
-        "id": "urn:ngm:class:programme-management",
-        "label": "Programme Management"
       }
     ]
   },

@@ -88,32 +88,10 @@ public:: true
     }
   ],
   "relations": {
-    "requires": [
-      {
-        "@id": "urn:ngm:class:project-verification",
-        "label": "Project Verification"
-      },
-      {
-        "@id": "urn:ngm:class:registry-issuance",
-        "label": "Registry Issuance"
-      },
-      {
-        "@id": "urn:ngm:class:third-party-validation",
-        "label": "Third Party Validation"
-      }
-    ],
     "enables": [
       {
         "@id": "urn:ngm:class:carbon-neutrality",
         "label": "Carbon Neutrality"
-      },
-      {
-        "@id": "urn:ngm:class:climate-investment",
-        "label": "Climate Investment"
-      },
-      {
-        "@id": "urn:ngm:class:emissions-compensation",
-        "label": "Emissions Compensation"
       }
     ]
   },

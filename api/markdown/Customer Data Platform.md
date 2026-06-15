@@ -83,14 +83,6 @@ public:: true
       {
         "@id": "urn:ngm:class:personalisation",
         "label": "Personalisation"
-      },
-      {
-        "@id": "urn:ngm:class:customer-journey-analytics",
-        "label": "Customer Journey Analytics"
-      },
-      {
-        "@id": "urn:ngm:class:real-time-marketing",
-        "label": "Real-Time Marketing"
       }
     ],
     "hasPart": [
@@ -101,17 +93,9 @@ public:: true
       {
         "@id": "urn:ngm:class:data-ingestion-pipeline",
         "label": "Data Ingestion Pipeline"
-      },
-      {
-        "@id": "urn:ngm:class:audience-builder",
-        "label": "Audience Builder"
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:extract-transform-load",
-        "label": "Extract Transform Load"
-      },
       {
         "@id": "urn:ngm:class:event-streaming",
         "label": "Event Streaming"
@@ -135,12 +119,6 @@ public:: true
         "label": "Data Management Platform"
       }
     ],
-    "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:customer-data-platform-institute",
-        "label": "Customer Data Platform Institute"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:machine-learning",
@@ -157,7 +135,7 @@ public:: true
         "label": "Privacy"
       },
       {
-        "@id": "urn:ngm:class:general-data-protection-regulation",
+        "@id": "urn:ngm:class:data-protection-regulation",
         "label": "General Data Protection Regulation"
       },
       {

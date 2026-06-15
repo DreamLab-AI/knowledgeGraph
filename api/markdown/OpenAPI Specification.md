@@ -24,57 +24,127 @@ alias:: Open API Specification
   "definition": "The OpenAPI Specification (OAS) is a language-agnostic, machine-readable standard for describing RESTful HTTP APIs using a structured JSON or YAML document that defines endpoints, request/response schemas, authentication methods, and parameter types. Governed by the OpenAPI Initiative (a Linux Foundation project), it enables automated generation of client SDKs, server stubs, interactive documentation, and contract-based testing from a single source of truth. Originally derived from the Swagger specification, OAS version 3.x is now the dominant industry standard for API description. It promotes interoperability by allowing API consumers to understand a service's capabilities without access to its source code.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:api-standard", "label": "API Standard"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:api-standard",
+    "label": "API Standard"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:json-schema", "label": "JSON Schema"},
-      {"@id": "urn:ngm:class:yaml", "label": "YAML"},
-      {"@id": "urn:ngm:class:swagger-ui", "label": "Swagger UI"}
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "@id": "urn:ngm:class:yaml",
+        "label": "YAML"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:openapi-initiative", "label": "OpenAPI Initiative"},
-      {"@id": "urn:ngm:class:linux-foundation", "label": "Linux Foundation"}
+      {
+        "@id": "urn:ngm:class:openapi-initiative",
+        "label": "OpenAPI Initiative"
+      },
+      {
+        "@id": "urn:ngm:class:linux-foundation",
+        "label": "Linux Foundation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:http-protocol", "label": "HTTP Protocol"},
-      {"@id": "urn:ngm:class:rest-architectural-style", "label": "REST Architectural Style"}
+      {
+        "@id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:rest",
+        "label": "REST Architectural Style"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:api-integration", "label": "API Integration"},
-      {"@id": "urn:ngm:class:documentation-generation", "label": "Documentation Generation"},
-      {"@id": "urn:ngm:class:microservices", "label": "Microservices"},
-      {"@id": "urn:ngm:class:contract-testing", "label": "Contract Testing"},
-      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"},
-      {"@id": "urn:ngm:class:mock-server", "label": "Mock Server"}
+      {
+        "@id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      },
+      {
+        "@id": "urn:ngm:class:documentation-generation",
+        "label": "Documentation Generation"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "@id": "urn:ngm:class:contract-testing",
+        "label": "Contract Testing"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
-      {"@id": "urn:ngm:class:json-data-interchange-format", "label": "JSON Data Interchange Format"},
-      {"@id": "urn:ngm:class:data-schema", "label": "Data Schema"}
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format",
+        "label": "JSON Data Interchange Format"
+      },
+      {
+        "@id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:openapi-initiative", "label": "OpenAPI Initiative"}
+      {
+        "@id": "urn:ngm:class:openapi-initiative",
+        "label": "OpenAPI Initiative"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:graphql", "label": "GraphQL"},
-      {"@id": "urn:ngm:class:grpc", "label": "gRPC"},
-      {"@id": "urn:ngm:class:asyncapi", "label": "AsyncAPI"}
+      {
+        "@id": "urn:ngm:class:graphql",
+        "label": "GraphQL"
+      },
+      {
+        "@id": "urn:ngm:class:grpc",
+        "label": "gRPC"
+      },
+      {
+        "@id": "urn:ngm:class:asyncapi",
+        "label": "AsyncAPI"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-tool-calling", "label": "AI Tool Calling"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"}
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:api-management", "label": "API Management"},
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
-      {"@id": "urn:ngm:class:swagger-specification", "label": "Swagger Specification"},
-      {"@id": "urn:ngm:class:api-first-design", "label": "API-First Design"},
-      {"@id": "urn:ngm:class:api-versioning", "label": "API Versioning"}
+      {
+        "@id": "urn:ngm:class:api-management",
+        "label": "API Management"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:api-versioning",
+        "label": "API Versioning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:swagger-specification", "label": "Swagger Specification"},
-    {"@id": "urn:ngm:class:oas", "label": "OAS"}
+    {
+      "@id": "urn:ngm:class:swagger-specification",
+      "label": "Swagger Specification"
+    },
+    {
+      "@id": "urn:ngm:class:oas",
+      "label": "OAS"
+    }
   ],
   "quality": 0.75,
   "provenance": {

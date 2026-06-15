@@ -410,18 +410,14 @@ public:: true
   "relations": {
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:embedded-systems",
-        "label": "Embedded Systems"
+        "@id": "urn:ngm:class:simulation-environment",
+        "label": "Simulation Environment"
       }
     ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:dds-middleware",
         "label": "DDS Middleware"
-      },
-      {
-        "@id": "urn:ngm:class:gripper-control",
-        "label": "Gripper Control"
       },
       {
         "@id": "urn:ngm:class:hardware-abstraction-layer",
@@ -568,24 +564,16 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:c",
-        "label": "C++"
-      },
-      {
-        "@id": "urn:ngm:class:eigen",
+        "@id": "urn:ngm:class:eigen-layer",
         "label": "Eigen"
       },
       {
-        "@id": "urn:ngm:class:openai-research-organisation-gym",
+        "@id": "urn:ngm:class:openai-research-organisation",
         "label": "OpenAI Gym"
       },
       {
         "@id": "urn:ngm:class:open-cv",
         "label": "OpenCV"
-      },
-      {
-        "@id": "urn:ngm:class:pcl",
-        "label": "PCL"
       },
       {
         "@id": "urn:ngm:class:python",
@@ -648,10 +636,6 @@ public:: true
         "label": "Assistive Robotics"
       },
       {
-        "@id": "urn:ngm:class:field-robotics",
-        "label": "Field Robotics"
-      },
-      {
         "@id": "urn:ngm:class:industrial-automation",
         "label": "IndustrialAutomation"
       },
@@ -686,22 +670,12 @@ public:: true
         "label": "ISO 9283"
       },
       {
-        "@id": "urn:ngm:class:omg-dds-standard",
+        "@id": "urn:ngm:class:dds",
         "label": "OMG DDS Standard"
       },
       {
         "@id": "urn:ngm:class:ros-rep",
         "label": "ROS REP"
-      },
-      {
-        "@id": "urn:ngm:class:vda-5050",
-        "label": "VDA 5050"
-      }
-    ],
-    "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:simulation-environment",
-        "label": "Simulation Environment"
       }
     ]
   },

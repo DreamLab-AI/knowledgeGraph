@@ -18,16 +18,7 @@
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [
-      {
-        "id": "urn:ngm:class:task-tracking",
-        "label": "Task Tracking"
-      },
-      {
-        "id": "urn:ngm:class:agile-workflow",
-        "label": "Agile Workflow"
-      }
-    ],
+    "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -38,7 +29,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:collaborative-whiteboard",
+        "id": "urn:ngm:class:collaborative-systems-modality-whiteboard",
         "label": "Collaborative Whiteboard"
       }
     ]

@@ -23,54 +23,139 @@ public:: true
   "definition": "Chainalysis is a commercial blockchain data analytics and intelligence platform founded in 2014 that provides investigative, compliance, and risk-management tools to government agencies, financial institutions, and cryptocurrency businesses for tracing, monitoring, and understanding blockchain transaction flows. It maintains a large proprietary database of attributed blockchain addresses — linking pseudonymous on-chain addresses to real-world entities through heuristic clustering, open-source intelligence, data partnerships, and legal processes — and offers products including Reactor (graph-based investigation tool), KYT (Know Your Transaction real-time compliance API), and Kryptos (market intelligence). Chainalysis is a primary contractor to agencies including the US Department of Justice, IRS Criminal Investigation, and OFAC for cryptocurrency-related law enforcement investigations, and publishes the annual Crypto Crime Report, the most widely cited source for cryptocurrency illicit finance statistics.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:blockchain-analytics", "label": "Blockchain Analytics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain-analytics",
+      "label": "Blockchain Analytics"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:reactor", "label": "Reactor"},
-      {"@id": "urn:ngm:class:know-your-transaction", "label": "Know Your Transaction"},
-      {"@id": "urn:ngm:class:address-attribution", "label": "Address Attribution"}
+      {
+        "@id": "urn:ngm:class:reactor",
+        "label": "Reactor"
+      },
+      {
+        "@id": "urn:ngm:class:know-your-transaction",
+        "label": "Know Your Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:address-attribution",
+        "label": "Address Attribution"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:transaction-graph-analysis", "label": "Transaction Graph Analysis"},
-      {"@id": "urn:ngm:class:heuristic-clustering", "label": "Heuristic Clustering"},
-      {"@id": "urn:ngm:class:utxo-model", "label": "UTXO Model"},
-      {"@id": "urn:ngm:class:open-source-intelligence", "label": "Open-Source Intelligence"}
+      {
+        "@id": "urn:ngm:class:transaction-graph-analysis",
+        "label": "Transaction Graph Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:heuristic-clustering",
+        "label": "Heuristic Clustering"
+      },
+      {
+        "@id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-intelligence",
+        "label": "Open-Source Intelligence"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"},
-      {"@id": "urn:ngm:class:sanctions-compliance", "label": "Sanctions Compliance"},
-      {"@id": "urn:ngm:class:digital-forensics", "label": "Digital Forensics"},
-      {"@id": "urn:ngm:class:cryptocurrency-investigation", "label": "Cryptocurrency Investigation"},
-      {"@id": "urn:ngm:class:ransomware-attribution", "label": "Ransomware Attribution"}
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:sanctions-compliance",
+        "label": "Sanctions Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-forensics",
+        "label": "Digital Forensics"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency-investigation",
+        "label": "Cryptocurrency Investigation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:blockchain-data", "label": "Blockchain Data"},
-      {"@id": "urn:ngm:class:transaction-monitoring", "label": "Transaction Monitoring"}
+      {
+        "@id": "urn:ngm:class:blockchain-data",
+        "label": "Blockchain Data"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-monitoring",
+        "label": "Transaction Monitoring"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:financial-crime-compliance", "label": "Financial Crime Compliance"},
-      {"@id": "urn:ngm:class:vasp-regulation", "label": "VASP Regulation"}
+      {
+        "@id": "urn:ngm:class:financial-crime-compliance",
+        "label": "Financial Crime Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:vasp-regulation",
+        "label": "VASP Regulation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:fatf-travel-rule", "label": "FATF Travel Rule"},
-      {"@id": "urn:ngm:class:know-your-customer", "label": "Know Your Customer"},
-      {"@id": "urn:ngm:class:sanctions-screening", "label": "Sanctions Screening"},
-      {"@id": "urn:ngm:class:blockchain-compliance", "label": "Blockchain Compliance"},
-      {"@id": "urn:ngm:class:darknet-market", "label": "Darknet Market"}
+      {
+        "@id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "@id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-compliance",
+        "label": "Blockchain Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:darknet-market",
+        "label": "Darknet Market"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:privacy-coin", "label": "Privacy Coin"},
-      {"@id": "urn:ngm:class:cryptocurrency-mixer", "label": "Cryptocurrency Mixer"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-coin",
+        "label": "Privacy Coin"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency-mixer",
+        "label": "Cryptocurrency Mixer"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:law-enforcement-technology", "label": "Law Enforcement Technology"},
-      {"@id": "urn:ngm:class:financial-intelligence", "label": "Financial Intelligence"},
-      {"@id": "urn:ngm:class:regulatory-technology", "label": "Regulatory Technology"}
+      {
+        "@id": "urn:ngm:class:law-enforcement-technology",
+        "label": "Law Enforcement Technology"
+      },
+      {
+        "@id": "urn:ngm:class:financial-intelligence",
+        "label": "Financial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:blockchain-forensics-platform", "label": "Blockchain Forensics Platform"}
+    {
+      "@id": "urn:ngm:class:blockchain-forensics-platform",
+      "label": "Blockchain Forensics Platform"
+    }
   ],
   "quality": 0.72,
   "provenance": {

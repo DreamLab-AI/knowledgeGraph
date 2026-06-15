@@ -18,35 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:certificate-metadata",
-        "label": "CertificateMetadata"
-      },
-      {
-        "id": "urn:ngm:class:generation-data",
-        "label": "GenerationData"
-      },
-      {
         "id": "urn:ngm:class:ownership-record",
         "label": "Ownership Record"
-      },
-      {
-        "id": "urn:ngm:class:retirement-proof",
-        "label": "RetirementProof"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:metering-data",
-        "label": "MeteringData"
-      },
-      {
-        "id": "urn:ngm:class:registry-infrastructure",
-        "label": "RegistryInfrastructure"
-      },
-      {
-        "id": "urn:ngm:class:renewable-energy-generation",
-        "label": "RenewableEnergyGeneration"
-      },
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"

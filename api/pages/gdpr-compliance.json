@@ -59,10 +59,6 @@
         "label": "Supervisory Authority"
       },
       {
-        "id": "urn:ngm:class:record-of-processing-activities",
-        "label": "Record of Processing Activities"
-      },
-      {
         "id": "urn:ngm:class:data-protection-officer",
         "label": "Data Protection Officer"
       }
@@ -79,21 +75,21 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:ccpa-compliance",
+        "id": "urn:ngm:class:ccpa",
         "label": "CCPA Compliance"
       },
       {
-        "id": "urn:ngm:class:hipaa-compliance",
+        "id": "urn:ngm:class:hipaa",
         "label": "HIPAA Compliance"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:ai-act-compliance",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "AI Act Compliance"
       },
       {
-        "id": "urn:ngm:class:privacy-enhancing-technology",
+        "id": "urn:ngm:class:privacy-enhancing-technologies",
         "label": "Privacy Enhancing Technology"
       }
     ],
@@ -130,10 +126,6 @@
       {
         "id": "urn:ngm:class:data-breach-notification",
         "label": "Data Breach Notification"
-      },
-      {
-        "id": "urn:ngm:class:legitimate-interests",
-        "label": "Legitimate Interests"
       }
     ]
   },

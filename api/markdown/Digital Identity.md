@@ -85,7 +85,7 @@ alias:: DigitalIdentity
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:verifiable-credential",
+        "@id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       },
       {
@@ -117,7 +117,7 @@ alias:: DigitalIdentity
         "label": "Identity Verification"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -129,10 +129,6 @@ alias:: DigitalIdentity
       {
         "@id": "urn:ngm:class:authorization",
         "label": "Authorization"
-      },
-      {
-        "@id": "urn:ngm:class:digital-presence",
-        "label": "Digital Presence"
       },
       {
         "@id": "urn:ngm:class:access-control",
@@ -161,7 +157,7 @@ alias:: DigitalIdentity
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:openid-connect",
+        "@id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
       },
       {
@@ -181,11 +177,11 @@ alias:: DigitalIdentity
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:w3c-did-specification",
+        "@id": "urn:ngm:class:w3-c-did-specification",
         "label": "W3C DID Specification"
       },
       {
-        "@id": "urn:ngm:class:w3c-verifiable-credentials",
+        "@id": "urn:ngm:class:w3-c-verifiable-credentials",
         "label": "W3C Verifiable Credentials"
       }
     ],
@@ -207,7 +203,7 @@ alias:: DigitalIdentity
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:kyc-know-your-customer",
+        "@id": "urn:ngm:class:know-your-customer",
         "label": "KYC Know Your Customer"
       }
     ]

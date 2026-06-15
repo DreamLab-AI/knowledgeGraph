@@ -16,23 +16,14 @@
   "qualityScore": 0.8,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:grid-cell",
-        "label": "Grid Cell"
-      },
-      {
-        "id": "urn:ngm:class:probability-map",
-        "label": "Probability Map"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:range-sensor",
+        "id": "urn:ngm:class:rb-0075-range-finder",
         "label": "Range Sensor"
       },
       {
-        "id": "urn:ngm:class:robot-pose-estimation",
+        "id": "urn:ngm:class:pose-estimation",
         "label": "Robot Pose Estimation"
       }
     ],
@@ -50,17 +41,12 @@
         "label": "Autonomous Navigation"
       },
       {
-        "id": "urn:ngm:class:global-path-planning",
+        "id": "urn:ngm:class:path-planning",
         "label": "Global Path Planning"
       }
     ],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:probabilistic-mapping",
-        "label": "Probabilistic Mapping"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:topological-map",
@@ -71,16 +57,7 @@
         "label": "Feature Map"
       }
     ],
-    "bridgesTo": [
-      {
-        "id": "urn:ngm:class:neural-occupancy-prediction",
-        "label": "Neural Occupancy Prediction"
-      },
-      {
-        "id": "urn:ngm:class:birds-eye-view-perception",
-        "label": "Birds-Eye-View Perception"
-      }
-    ],
+    "bridgesTo": [],
     "uses": [
       {
         "id": "urn:ngm:class:lidar-sensor",
@@ -93,14 +70,6 @@
       {
         "id": "urn:ngm:class:bayesian-inference",
         "label": "Bayesian Inference"
-      },
-      {
-        "id": "urn:ngm:class:log-odds-representation",
-        "label": "Log-Odds Representation"
-      },
-      {
-        "id": "urn:ngm:class:inverse-sensor-model",
-        "label": "Inverse Sensor Model"
       }
     ],
     "supports": [],
@@ -127,10 +96,6 @@
       {
         "id": "urn:ngm:class:voxel-grid",
         "label": "Voxel Grid"
-      },
-      {
-        "id": "urn:ngm:class:octomap",
-        "label": "OctoMap"
       }
     ]
   },

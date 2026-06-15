@@ -60,12 +60,6 @@ public:: true
     }
   ],
   "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:virtual-world-governance",
-        "label": "Virtual World Governance"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:legal-framework",

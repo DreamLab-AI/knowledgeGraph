@@ -142,10 +142,6 @@ public:: true
         "label": "Point Cloud Generation"
       },
       {
-        "@id": "urn:ngm:class:real-world-digitisation",
-        "label": "Real-world Digitisation"
-      },
-      {
         "@id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
       },
@@ -176,12 +172,6 @@ public:: true
       {
         "@id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:procedural-3-d-modelling",
-        "label": "Procedural 3D Modelling"
       }
     ],
     "relatedTo": [

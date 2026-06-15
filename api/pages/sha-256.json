@@ -16,12 +16,7 @@
   "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:256-bit-digest",
-        "label": "256-Bit Digest"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:compression-function",
@@ -60,10 +55,6 @@
       {
         "id": "urn:ngm:class:sha-3",
         "label": "SHA-3"
-      },
-      {
-        "id": "urn:ngm:class:md5",
-        "label": "MD5"
       }
     ],
     "bridgesTo": [
@@ -72,7 +63,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -93,20 +84,11 @@
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:fips-180-4",
-        "label": "FIPS 180-4"
-      },
-      {
         "id": "urn:ngm:class:nist",
         "label": "NIST"
       }
     ],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:sha-2-family",
-        "label": "SHA-2 Family"
-      }
-    ],
+    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:cryptographic-hash",

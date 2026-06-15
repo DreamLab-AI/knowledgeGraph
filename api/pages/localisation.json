@@ -74,7 +74,7 @@
         "label": "Global Localisation"
       },
       {
-        "id": "urn:ngm:class:position-tracking",
+        "id": "urn:ngm:class:position-control",
         "label": "Position Tracking"
       }
     ],
@@ -131,16 +131,12 @@
         "label": "Dead Reckoning"
       },
       {
-        "id": "urn:ngm:class:global-navigation-satellite-system",
+        "id": "urn:ngm:class:navigation",
         "label": "Global Navigation Satellite System"
       },
       {
         "id": "urn:ngm:class:pose-estimation",
         "label": "Pose Estimation"
-      },
-      {
-        "id": "urn:ngm:class:map-matching",
-        "label": "Map Matching"
       }
     ]
   },

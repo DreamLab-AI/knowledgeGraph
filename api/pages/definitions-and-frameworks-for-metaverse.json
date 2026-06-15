@@ -33,10 +33,6 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:definitions-and-frameworks-for-metaverse",
-        "label": "Definitions and frameworks for Metaverse"
-      },
-      {
         "id": "urn:ngm:class:digital-commerce",
         "label": "Digital Commerce"
       }

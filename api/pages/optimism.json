@@ -24,10 +24,6 @@
       {
         "id": "urn:ngm:class:optimism-collective",
         "label": "Optimism Collective"
-      },
-      {
-        "id": "urn:ngm:class:op-token",
-        "label": "OP Token"
       }
     ],
     "requires": [
@@ -46,10 +42,6 @@
       {
         "id": "urn:ngm:class:sequencer",
         "label": "Sequencer"
-      },
-      {
-        "id": "urn:ngm:class:dispute-game",
-        "label": "Dispute Game"
       }
     ],
     "enables": [
@@ -66,7 +58,7 @@
         "label": "Superchain"
       },
       {
-        "id": "urn:ngm:class:public-goods-funding",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
         "label": "Public Goods Funding"
       }
     ],
@@ -82,7 +74,7 @@
         "label": "Optimistic Rollup"
       },
       {
-        "id": "urn:ngm:class:evm-equivalence",
+        "id": "urn:ngm:class:evm",
         "label": "EVM Equivalence"
       }
     ],
@@ -114,17 +106,12 @@
         "label": "Retroactive Public Goods Funding"
       }
     ],
-    "uses": [
-      {
-        "id": "urn:ngm:class:state-commitment",
-        "label": "State Commitment"
-      }
-    ],
+    "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:ethereum-ecosystem",
+        "id": "urn:ngm:class:ethereum",
         "label": "Ethereum Ecosystem"
       },
       {
@@ -134,7 +121,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:base-chain",
+        "id": "urn:ngm:class:base",
         "label": "Base Chain"
       },
       {

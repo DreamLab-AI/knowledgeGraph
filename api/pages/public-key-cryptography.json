@@ -81,21 +81,17 @@
         "label": "Diffie-Hellman Key Exchange"
       },
       {
-        "id": "urn:ngm:class:tls-protocol",
+        "id": "urn:ngm:class:tls",
         "label": "TLS Protocol"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:symmetric-key-cryptography",
+        "id": "urn:ngm:class:symmetric-encryption",
         "label": "Symmetric Key Cryptography"
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:blockchain-transaction-signing",
-        "label": "Blockchain Transaction Signing"
-      },
       {
         "id": "urn:ngm:class:decentralized-identity",
         "label": "Decentralized Identity"

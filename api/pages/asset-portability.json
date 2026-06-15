@@ -45,7 +45,7 @@
         "label": "Cross-Platform Interoperability"
       },
       {
-        "id": "urn:ngm:class:user-owned-digital-property",
+        "id": "urn:ngm:class:digital-property-rights",
         "label": "User-Owned Digital Property"
       },
       {
@@ -55,16 +55,12 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:gltf",
+        "id": "urn:ngm:class:gltf-standard",
         "label": "glTF"
       },
       {
         "id": "urn:ngm:class:universal-scene-description",
         "label": "Universal Scene Description"
-      },
-      {
-        "id": "urn:ngm:class:runtime-api",
-        "label": "Runtime API"
       }
     ],
     "implements": [],

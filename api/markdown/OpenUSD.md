@@ -37,55 +37,99 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:universal-scene-description", "label": "Universal Scene Description"},
-    {"@id": "urn:ngm:class:usd-file-format", "label": "USD File Format"}
+    {
+      "@id": "urn:ngm:class:universal-scene-description",
+      "label": "Universal Scene Description"
+    },
+    {
+      "@id": "urn:ngm:class:usd-file-format",
+      "label": "USD File Format"
+    }
   ],
   "relations": {
-    "hasPart": [
-      {"@id": "urn:ngm:class:usd-composition-arcs", "label": "USD Composition Arcs"},
-      {"@id": "urn:ngm:class:usd-schema-plugin", "label": "USD Schema Plugin"},
-      {"@id": "urn:ngm:class:usdz-package-format", "label": "USDZ Package Format"},
-      {"@id": "urn:ngm:class:usd-hydra-renderer", "label": "USD Hydra Renderer"}
-    ],
     "enables": [
-      {"@id": "urn:ngm:class:3-d-content-pipeline", "label": "3D Content Pipeline"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:collaborative-3-d-editing", "label": "Collaborative 3D Editing"},
-      {"@id": "urn:ngm:class:augmented-reality-content", "label": "Augmented Reality Content"},
-      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"}
+      {
+        "@id": "urn:ngm:class:3-d-content-pipeline",
+        "label": "3D Content Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:scene-graph", "label": "Scene Graph"},
-      {"@id": "urn:ngm:class:hierarchical-data-model", "label": "Hierarchical Data Model"}
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:materialx", "label": "MaterialX"},
-      {"@id": "urn:ngm:class:mdl-material-definition-language", "label": "MDL Material Definition Language"},
-      {"@id": "urn:ngm:class:skeletal-animation", "label": "Skeletal Animation"}
+      {
+        "@id": "urn:ngm:class:materialx",
+        "label": "MaterialX"
+      },
+      {
+        "@id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:non-destructive-workflow", "label": "Non-Destructive Workflow"},
-      {"@id": "urn:ngm:class:level-of-detail", "label": "Level of Detail"},
-      {"@id": "urn:ngm:class:procedural-geometry", "label": "Procedural Geometry"}
+      {
+        "@id": "urn:ngm:class:non-destructive-editing",
+        "label": "Non-Destructive Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:alliance-for-openusd", "label": "Alliance for OpenUSD"},
-      {"@id": "urn:ngm:class:iso-iec-22886", "label": "ISO/IEC 22886"}
+      {
+        "@id": "urn:ngm:class:alliance-for-openusd",
+        "label": "Alliance for OpenUSD"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:gltf-standard", "label": "Gltf Standard"},
-      {"@id": "urn:ngm:class:fbx-format", "label": "FBX Format"},
-      {"@id": "urn:ngm:class:collada-format", "label": "COLLADA Format"}
+      {
+        "@id": "urn:ngm:class:gltf-standard",
+        "label": "Gltf Standard"
+      },
+      {
+        "@id": "urn:ngm:class:fbx",
+        "label": "FBX Format"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"},
-      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"},
-      {"@id": "urn:ngm:class:nvidia-omniverse", "label": "NVIDIA Omniverse"},
-      {"@id": "urn:ngm:class:realitykit", "label": "RealityKit"}
+      {
+        "@id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:nvidia-corporation-omniverse-platform",
+        "label": "NVIDIA Omniverse"
+      },
+      {
+        "@id": "urn:ngm:class:realitykit",
+        "label": "RealityKit"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:autonomous-vehicle-simulation", "label": "Autonomous Vehicle Simulation"},
-      {"@id": "urn:ngm:class:industrial-metaverse", "label": "Industrial Metaverse"}
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle-simulation",
+        "label": "Autonomous Vehicle Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-metaverse",
+        "label": "Industrial Metaverse"
+      }
     ]
   },
   "quality": 0.74,

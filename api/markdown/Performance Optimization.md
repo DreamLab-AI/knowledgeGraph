@@ -104,7 +104,7 @@ public:: true
         "label": "Resource Efficiency"
       },
       {
-        "@id": "urn:ngm:class:system-scalability",
+        "@id": "urn:ngm:class:scalability",
         "label": "System Scalability"
       },
       {
@@ -134,27 +134,9 @@ public:: true
       {
         "@id": "urn:ngm:class:parallel-processing",
         "label": "Parallel Processing"
-      },
-      {
-        "@id": "urn:ngm:class:asynchronous-processing",
-        "label": "Asynchronous Processing"
-      },
-      {
-        "@id": "urn:ngm:class:connection-pooling",
-        "label": "Connection Pooling"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:premature-optimization",
-        "label": "Premature Optimization"
       }
     ],
     "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:machine-learning-inference-optimization",
-        "label": "Machine Learning Inference Optimization"
-      },
       {
         "@id": "urn:ngm:class:energy-efficiency",
         "label": "Energy Efficiency"
@@ -168,10 +150,6 @@ public:: true
       {
         "@id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems"
-      },
-      {
-        "@id": "urn:ngm:class:database-query-optimization",
-        "label": "Database Query Optimization"
       }
     ]
   },

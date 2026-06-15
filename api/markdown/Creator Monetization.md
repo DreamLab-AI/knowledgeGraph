@@ -23,52 +23,107 @@ public:: true
   "definition": "Creator Monetization refers to the suite of mechanisms, platforms, and economic models through which independent content creators convert their creative output and audience relationships into sustainable revenue streams. These mechanisms span advertising revenue sharing, subscription and membership tiers, merchandise and physical goods, live events, licensing, and on-chain token-based models including NFTs and creator coins. The field has been shaped by the shift from broadcast media to participatory digital platforms, enabling individuals rather than corporations to capture value from cultural production. Web3 infrastructure is expanding the design space by enabling programmable royalties and direct fan-ownership of creative works.",
   "domain": "finance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:creator-economy", "label": "Creator Economy"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:creator-economy",
+      "label": "Creator Economy"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:platform-economy", "label": "Platform Economy"},
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
-      {"@id": "urn:ngm:class:nft-marketplace", "label": "NFT Marketplace"},
-      {"@id": "urn:ngm:class:attention-economy", "label": "Attention Economy"},
-      {"@id": "urn:ngm:class:gig-economy", "label": "Gig Economy"}
+      {
+        "@id": "urn:ngm:class:platform-economy",
+        "label": "Platform Economy"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      },
+      {
+        "@id": "urn:ngm:class:attention-economy",
+        "label": "Attention Economy"
+      },
+      {
+        "@id": "urn:ngm:class:gig-economy",
+        "label": "Gig Economy"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:creator-royalty-token", "label": "Creator Royalty Token"},
-      {"@id": "urn:ngm:class:smart-royalty-contract", "label": "Smart Royalty Contract"},
-      {"@id": "urn:ngm:class:royalty-distribution", "label": "Royalty Distribution"},
-      {"@id": "urn:ngm:class:subscription-model", "label": "Subscription Model"},
-      {"@id": "urn:ngm:class:payment-processing", "label": "Payment Processing"}
+      {
+        "@id": "urn:ngm:class:creator-royalty-token",
+        "label": "Creator Royalty Token"
+      },
+      {
+        "@id": "urn:ngm:class:smart-royalty-contract",
+        "label": "Smart Royalty Contract"
+      },
+      {
+        "@id": "urn:ngm:class:royalty-distribution",
+        "label": "Royalty Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:payment-processing",
+        "label": "Payment Processing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:multi-party-royalties", "label": "Multi Party Royalties"},
-      {"@id": "urn:ngm:class:digital-marketplace", "label": "Digital Marketplace"},
-      {"@id": "urn:ngm:class:non-fungible-token-nft", "label": "Non-Fungible Token (NFT)"},
-      {"@id": "urn:ngm:class:fan-ownership", "label": "Fan Ownership"},
-      {"@id": "urn:ngm:class:direct-to-consumer", "label": "Direct-to-Consumer"}
+      {
+        "@id": "urn:ngm:class:multi-party-royalties",
+        "label": "Multi Party Royalties"
+      },
+      {
+        "@id": "urn:ngm:class:digital-marketplace",
+        "label": "Digital Marketplace"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token-nft",
+        "label": "Non-Fungible Token (NFT)"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:audience-engagement", "label": "Audience Engagement"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:advertising-revenue-share", "label": "Advertising Revenue Share"},
-      {"@id": "urn:ngm:class:merchandise-sales", "label": "Merchandise Sales"}
+      {
+        "@id": "urn:ngm:class:audience-engagement",
+        "label": "Audience Engagement"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:content-distribution-platform", "label": "Content Distribution Platform"},
-      {"@id": "urn:ngm:class:digital-payment-infrastructure", "label": "Digital Payment Infrastructure"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:traditional-media-licensing", "label": "Traditional Media Licensing"}
+      {
+        "@id": "urn:ngm:class:content-distribution",
+        "label": "Content Distribution Platform"
+      },
+      {
+        "@id": "urn:ngm:class:digital-payment-system",
+        "label": "Digital Payment Infrastructure"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:creator-revenue-model", "label": "Creator Revenue Model"},
-    {"@id": "urn:ngm:class:content-creator-monetization", "label": "Content Creator Monetization"}
+    {
+      "@id": "urn:ngm:class:creator-revenue-model",
+      "label": "Creator Revenue Model"
+    },
+    {
+      "@id": "urn:ngm:class:content-creator-monetization",
+      "label": "Content Creator Monetization"
+    }
   ],
   "quality": 0.8,
   "provenance": {

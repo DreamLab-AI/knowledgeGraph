@@ -302,19 +302,15 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:automatic-transcription",
+        "@id": "urn:ngm:class:real-time-transcription",
         "label": "Automatic Transcription"
-      },
-      {
-        "@id": "urn:ngm:class:chapter-detection",
-        "label": "Chapter Detection"
       },
       {
         "@id": "urn:ngm:class:cloud-storage-infrastructure",
         "label": "Cloud Storage Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:full-text-search-index",
+        "@id": "urn:ngm:class:search-index",
         "label": "Full-text Search Index"
       },
       {
@@ -326,7 +322,7 @@ public:: true
         "label": "Screen Recording"
       },
       {
-        "@id": "urn:ngm:class:speaker-attribution",
+        "@id": "urn:ngm:class:speaker-diarisation",
         "label": "Speaker Attribution"
       },
       {
@@ -362,10 +358,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:distributed-learning-archive",
-        "label": "Distributed Learning Archive"
-      },
-      {
         "@id": "urn:ngm:class:onboarding",
         "label": "Onboarding"
       },
@@ -392,7 +384,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:mp4-encoding",
+        "@id": "urn:ngm:class:video-encoding",
         "label": "MP4 Encoding"
       },
       {
@@ -404,11 +396,7 @@ public:: true
         "label": "Speaker Diarisation"
       },
       {
-        "@id": "urn:ngm:class:web-m-encoding",
-        "label": "WebM Encoding"
-      },
-      {
-        "@id": "urn:ngm:class:whisper-asr",
+        "@id": "urn:ngm:class:whisper",
         "label": "Whisper ASR"
       },
       {
@@ -484,24 +472,8 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:fca-sysc-10-a",
-        "label": "FCA SYSC 10A"
-      },
-      {
-        "@id": "urn:ngm:class:finra-rule-17a-4",
-        "label": "FINRA Rule 17a-4"
-      },
-      {
-        "@id": "urn:ngm:class:gdpr-article-6",
-        "label": "GDPR Article 6"
-      },
-      {
-        "@id": "urn:ngm:class:uk-ico-guidance",
+        "@id": "urn:ngm:class:ico-ai-guidance",
         "label": "UK ICO Guidance"
-      },
-      {
-        "@id": "urn:ngm:class:us-state-wiretapping-laws",
-        "label": "US State Wiretapping Laws"
       }
     ]
   },

@@ -534,7 +534,7 @@ public:: true
         "label": "Epipolar Geometry"
       },
       {
-        "@id": "urn:ngm:class:photometric-loss",
+        "@id": "urn:ngm:class:loss-function",
         "label": "Photometric Loss"
       },
       {
@@ -550,10 +550,6 @@ public:: true
       {
         "@id": "urn:ngm:class:feature-matching",
         "label": "Feature Matching"
-      },
-      {
-        "@id": "urn:ngm:class:image-pair",
-        "label": "Image Pair"
       },
       {
         "@id": "urn:ngm:class:optimization",
@@ -572,14 +568,6 @@ public:: true
       {
         "@id": "urn:ngm:class:ar-occlusion",
         "label": "AR Occlusion"
-      },
-      {
-        "@id": "urn:ngm:class:bokeh-rendering",
-        "label": "Bokeh Rendering"
-      },
-      {
-        "@id": "urn:ngm:class:free-space-estimation",
-        "label": "Free-Space Estimation"
       },
       {
         "@id": "urn:ngm:class:grasp-planning",
@@ -604,39 +592,11 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:block-matching",
-        "label": "Block Matching"
-      },
-      {
-        "@id": "urn:ngm:class:depth-anything",
-        "label": "Depth Anything"
-      },
-      {
-        "@id": "urn:ngm:class:dpt",
-        "label": "DPT"
-      },
-      {
-        "@id": "urn:ngm:class:marigold",
-        "label": "Marigold"
-      },
-      {
-        "@id": "urn:ngm:class:mi-da-s",
-        "label": "MiDaS"
-      },
-      {
-        "@id": "urn:ngm:class:mono-depth",
-        "label": "MonoDepth"
-      },
-      {
         "@id": "urn:ngm:class:multi-view-stereo",
         "label": "Multi-View Stereo"
       },
       {
-        "@id": "urn:ngm:class:psmnet",
-        "label": "PSMNet"
-      },
-      {
-        "@id": "urn:ngm:class:raft-stereo",
+        "@id": "urn:ngm:class:stereo-vision",
         "label": "RAFT-Stereo"
       },
       {
@@ -646,24 +606,12 @@ public:: true
       {
         "@id": "urn:ngm:class:structure-from-motion",
         "label": "Structure-from-Motion"
-      },
-      {
-        "@id": "urn:ngm:class:zoe-depth",
-        "label": "ZoeDepth"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:kinect",
-        "label": "Kinect"
-      },
-      {
         "@id": "urn:ngm:class:lidar",
         "label": "Lidar"
-      },
-      {
-        "@id": "urn:ngm:class:real-sense",
-        "label": "RealSense"
       },
       {
         "@id": "urn:ngm:class:rgb-d-camera",
@@ -674,7 +622,7 @@ public:: true
         "label": "Structured Light"
       },
       {
-        "@id": "urn:ngm:class:time-of-flight-camera",
+        "@id": "urn:ngm:class:time-of-flight-sensor",
         "label": "Time-of-Flight Camera"
       },
       {
@@ -684,11 +632,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:depth-completion",
-        "label": "Depth Completion"
-      },
-      {
-        "@id": "urn:ngm:class:monocular-3-d-object-detection",
+        "@id": "urn:ngm:class:object-detection",
         "label": "Monocular 3D Object Detection"
       },
       {
@@ -744,32 +688,8 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:da-2-k",
-        "label": "DA-2K"
-      },
-      {
-        "@id": "urn:ngm:class:eth3-d",
-        "label": "ETH3D"
-      },
-      {
-        "@id": "urn:ngm:class:kitti-benchmark",
-        "label": "KITTI Benchmark"
-      },
-      {
-        "@id": "urn:ngm:class:middlebury-stereo",
+        "@id": "urn:ngm:class:stereo-vision",
         "label": "Middlebury Stereo"
-      },
-      {
-        "@id": "urn:ngm:class:nyu-depth-v2",
-        "label": "NYU Depth v2"
-      },
-      {
-        "@id": "urn:ngm:class:scan-net",
-        "label": "ScanNet"
-      },
-      {
-        "@id": "urn:ngm:class:sintel",
-        "label": "Sintel"
       }
     ]
   },

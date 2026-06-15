@@ -380,22 +380,6 @@ public:: true
         "label": "Animation Rig"
       },
       {
-        "@id": "urn:ngm:class:camera-definition",
-        "label": "Camera Definition"
-      },
-      {
-        "@id": "urn:ngm:class:geometric-mesh",
-        "label": "Geometric Mesh"
-      },
-      {
-        "@id": "urn:ngm:class:lighting-environment",
-        "label": "Lighting Environment"
-      },
-      {
-        "@id": "urn:ngm:class:lod-specification",
-        "label": "LOD Specification"
-      },
-      {
         "@id": "urn:ngm:class:material-system",
         "label": "Material System"
       },
@@ -404,28 +388,8 @@ public:: true
         "label": "Normal Map"
       },
       {
-        "@id": "urn:ngm:class:pbr-workflow",
-        "label": "PBR Workflow"
-      },
-      {
-        "@id": "urn:ngm:class:polygon-topology",
-        "label": "Polygon Topology"
-      },
-      {
-        "@id": "urn:ngm:class:scene-hierarchy",
-        "label": "Scene Hierarchy"
-      },
-      {
-        "@id": "urn:ngm:class:skeletal-bone",
-        "label": "Skeletal Bone"
-      },
-      {
         "@id": "urn:ngm:class:texture-map",
         "label": "Texture Map"
-      },
-      {
-        "@id": "urn:ngm:class:uv-coordinate",
-        "label": "UV Coordinate"
       },
       {
         "@id": "urn:ngm:class:vertex-attribute",
@@ -438,20 +402,8 @@ public:: true
         "label": "3D Modeling Software"
       },
       {
-        "@id": "urn:ngm:class:animation-tools",
-        "label": "Animation Tools"
-      },
-      {
-        "@id": "urn:ngm:class:material-converter",
-        "label": "Material Converter"
-      },
-      {
         "@id": "urn:ngm:class:mesh-compression",
         "label": "Mesh Compression"
-      },
-      {
-        "@id": "urn:ngm:class:scene-validator",
-        "label": "Scene Validator"
       },
       {
         "@id": "urn:ngm:class:texture-authoring",
@@ -468,20 +420,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:3-d-asset-interchange",
-        "label": "3D Asset Interchange"
-      },
-      {
-        "@id": "urn:ngm:class:ar-vr-experiences",
-        "label": "AR/VR Experiences"
-      },
-      {
         "@id": "urn:ngm:class:asset-portability",
         "label": "Asset Portability"
-      },
-      {
-        "@id": "urn:ngm:class:collaborative-systems-modality-workflows",
-        "label": "Collaborative Workflows"
       },
       {
         "@id": "urn:ngm:class:cross-platform-compatibility",
@@ -496,23 +436,11 @@ public:: true
         "label": "Metaverse Interoperability"
       },
       {
-        "@id": "urn:ngm:class:web-3-d-visualization",
-        "label": "Web 3D Visualization"
-      },
-      {
         "@id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:extension-mechanism",
-        "label": "Extension Mechanism"
-      },
-      {
-        "@id": "urn:ngm:class:mesh-lod",
-        "label": "Mesh LOD"
-      },
       {
         "@id": "urn:ngm:class:non-destructive-editing",
         "label": "Non-Destructive Editing"
@@ -520,14 +448,6 @@ public:: true
       {
         "@id": "urn:ngm:class:pbr-materials",
         "label": "PBR Materials"
-      },
-      {
-        "@id": "urn:ngm:class:progressive-loading",
-        "label": "Progressive Loading"
-      },
-      {
-        "@id": "urn:ngm:class:scene-composition",
-        "label": "Scene Composition"
       },
       {
         "@id": "urn:ngm:class:skeletal-animation",

@@ -148,10 +148,6 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:deployment-infrastructure",
-        "label": "Deployment Infrastructure"
-      },
-      {
         "@id": "urn:ngm:class:operational-procedures",
         "label": "Operational Procedures"
       },
@@ -165,10 +161,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:ai-system-use-by-ai-users-and-ai-operators",
-        "label": "AI System Use by AI Users and AI Operators"
-      },
       {
         "@id": "urn:ngm:class:ai-monitoring",
         "label": "AI Monitoring"
@@ -222,7 +214,7 @@ public:: true
         "label": "NIST AI Risk Management Framework"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],

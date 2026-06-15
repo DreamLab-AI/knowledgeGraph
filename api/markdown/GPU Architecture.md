@@ -71,7 +71,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:shader-core",
+        "@id": "urn:ngm:class:shader",
         "label": "Shader Core"
       },
       {

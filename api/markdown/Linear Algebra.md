@@ -81,22 +81,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:matrix",
-        "label": "Matrix"
-      },
-      {
-        "@id": "urn:ngm:class:eigenvalue",
-        "label": "Eigenvalue"
-      },
-      {
-        "@id": "urn:ngm:class:vector-space",
-        "label": "Vector Space"
-      },
-      {
-        "@id": "urn:ngm:class:determinant",
-        "label": "Determinant"
-      },
-      {
         "@id": "urn:ngm:class:singular-value-decomposition",
         "label": "Singular Value Decomposition"
       },
@@ -137,23 +121,13 @@ public:: true
         "label": "Dimensionality Reduction"
       },
       {
-        "@id": "urn:ngm:class:least-squares-regression",
+        "@id": "urn:ngm:class:regression",
         "label": "Least Squares Regression"
-      }
-    ],
-    "dependsOn": [
-      {
-        "@id": "urn:ngm:class:abstract-algebra",
-        "label": "Abstract Algebra"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:gaussian-elimination",
-        "label": "Gaussian Elimination"
-      },
-      {
-        "@id": "urn:ngm:class:matrix-factorization",
+        "@id": "urn:ngm:class:matrix-factorisation",
         "label": "Matrix Factorization"
       }
     ],
@@ -181,7 +155,7 @@ public:: true
         "label": "Information Theory"
       },
       {
-        "@id": "urn:ngm:class:quantum-computing",
+        "@id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
       },
       {

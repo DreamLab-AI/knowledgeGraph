@@ -62,7 +62,7 @@
         "label": "Fault Tolerance"
       },
       {
-        "id": "urn:ngm:class:polyglot-persistence",
+        "id": "urn:ngm:class:persistence",
         "label": "Polyglot Persistence"
       }
     ],
@@ -80,7 +80,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:serverless-computing",
+        "id": "urn:ngm:class:serverless-architecture",
         "label": "Serverless Computing"
       }
     ],
@@ -106,7 +106,7 @@
         "label": "OpenTelemetry"
       },
       {
-        "id": "urn:ngm:class:docker",
+        "id": "urn:ngm:class:docker-containerisation-platform",
         "label": "Docker"
       }
     ],

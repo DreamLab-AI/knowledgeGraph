@@ -23,63 +23,165 @@ public:: true
   "definition": "Authorisation is the process of determining and enforcing whether an authenticated principal—user, service, or device—has the right to perform a requested action on a protected resource. It operates downstream of authentication, translating verified identity claims into permitted operations according to configured access policies. Modern authorisation frameworks encompass role-based, attribute-based, relationship-based, and policy-as-code access control models, each balancing expressiveness with enforcement performance. Robust authorisation design underpins regulatory compliance, auditability, and the principle of least privilege across distributed digital systems.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:access-control", "label": "Access Control"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:access-control",
+      "label": "Access Control"
+    }
+  ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"},
-      {"@id": "urn:ngm:class:policy-engine", "label": "Policy Engine"}
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:policy-engine",
+        "label": "Policy Engine"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:role-based-access-control", "label": "Role-Based Access Control"},
-      {"@id": "urn:ngm:class:attribute-based-access-control", "label": "Attribute-Based Access Control"},
-      {"@id": "urn:ngm:class:policy-based-access-control", "label": "Policy-Based Access Control"},
-      {"@id": "urn:ngm:class:relationship-based-access-control", "label": "Relationship-Based Access Control"}
+      {
+        "@id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:attribute-based-access-control",
+        "label": "Attribute-Based Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Policy-Based Access Control"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:access-token", "label": "Access Token"},
-      {"@id": "urn:ngm:class:json-web-token", "label": "JSON Web Token"},
-      {"@id": "urn:ngm:class:oauth2", "label": "OAuth 2.0"},
-      {"@id": "urn:ngm:class:open-policy-agent", "label": "Open Policy Agent"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+      {
+        "@id": "urn:ngm:class:access-token",
+        "label": "Access Token"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-web-token",
+        "label": "JSON Web Token"
+      },
+      {
+        "@id": "urn:ngm:class:oauth2",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:open-policy-agent",
+        "label": "Open Policy Agent"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:privacy-controls", "label": "Privacy Controls"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
-      {"@id": "urn:ngm:class:least-privilege", "label": "Least Privilege"},
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"}
+      {
+        "@id": "urn:ngm:class:privacy-controls",
+        "label": "Privacy Controls"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:least-privilege",
+        "label": "Least Privilege"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:secure-token-service", "label": "Secure Token Service"}
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:oauth2", "label": "OAuth 2.0"},
-      {"@id": "urn:ngm:class:openid-connect", "label": "OpenID Connect"},
-      {"@id": "urn:ngm:class:xacml", "label": "XACML"},
-      {"@id": "urn:ngm:class:iso-iec-27001", "label": "ISO/IEC 27001"}
+      {
+        "@id": "urn:ngm:class:oauth2",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "@id": "urn:ngm:class:xacml",
+        "label": "XACML"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:ai-agent", "label": "AI Agent"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:privilege-escalation", "label": "Privilege Escalation"},
-      {"@id": "urn:ngm:class:separation-of-duties", "label": "Separation of Duties"}
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:privilege-escalation",
+        "label": "Privilege Escalation"
+      },
+      {
+        "@id": "urn:ngm:class:separation-of-duties",
+        "label": "Separation of Duties"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:authorization", "label": "Authorization"},
-    {"@id": "urn:ngm:class:access-authorisation", "label": "Access Authorisation"}
+    {
+      "@id": "urn:ngm:class:authorization",
+      "label": "Authorization"
+    },
+    {
+      "@id": "urn:ngm:class:access-authorisation",
+      "label": "Access Authorisation"
+    }
   ],
   "quality": 0.74,
   "provenance": {

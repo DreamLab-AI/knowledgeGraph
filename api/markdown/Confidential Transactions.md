@@ -24,59 +24,127 @@ alias:: Confidential-Transactions
   "definition": "Confidential Transactions (CT) is a cryptographic protocol for distributed ledgers, designed by Gregory Maxwell in 2015, that conceals the amounts transferred in financial transactions whilst preserving the ability for validators to verify that no value is created or destroyed. It employs Pedersen commitments—homomorphic elliptic-curve constructs—to encode transaction values in a form that is computationally hiding yet perfectly binding, combined with range proofs (typically Bulletproofs) to ensure committed values are non-negative and thus prevent inflation attacks. CT has been deployed in the Liquid Network sidechain, Monero's RingCT, and the MimbleWimble protocol family, and underpins much of the contemporary research into privacy-preserving decentralised finance.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain-transaction",
+      "label": "Blockchain Transaction"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:pedersen-commitment", "label": "Pedersen Commitment"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
-      {"@id": "urn:ngm:class:bulletproofs", "label": "Bulletproofs"},
-      {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"}
+      {
+        "@id": "urn:ngm:class:pedersen-commitment",
+        "label": "Pedersen Commitment"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:bulletproofs",
+        "label": "Bulletproofs"
+      },
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:privacy-preserving-blockchain", "label": "Privacy Preserving Blockchain"},
-      {"@id": "urn:ngm:class:private-defi", "label": "Private DeFi"},
-      {"@id": "urn:ngm:class:selective-disclosure", "label": "Selective Disclosure"},
-      {"@id": "urn:ngm:class:confidential-asset", "label": "Confidential Asset"}
+      {
+        "@id": "urn:ngm:class:privacy-preserving-blockchain",
+        "label": "Privacy Preserving Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:discrete-logarithm-problem", "label": "Discrete Logarithm Problem"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:range-proof", "label": "Range Proof"}
+      {
+        "@id": "urn:ngm:class:discrete-logarithm-problem",
+        "label": "Discrete Logarithm Problem"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:range-proof",
+        "label": "Range Proof"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cryptographic-algorithm", "label": "Cryptographic Algorithm"},
-      {"@id": "urn:ngm:class:utxo-model", "label": "UTXO Model"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:amount-hiding", "label": "Amount Hiding"},
-      {"@id": "urn:ngm:class:homomorphic-commitment", "label": "Homomorphic Commitment"}
+      {
+        "@id": "urn:ngm:class:cryptographic-algorithm",
+        "label": "Cryptographic Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:zk-snark", "label": "ZK-SNARK"},
-      {"@id": "urn:ngm:class:transparent-blockchain", "label": "Transparent Blockchain"},
-      {"@id": "urn:ngm:class:public-transaction", "label": "Public Transaction"}
+      {
+        "@id": "urn:ngm:class:zk-snark",
+        "label": "ZK-SNARK"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Transparent Blockchain"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:mimblewimble", "label": "MimbleWimble"},
-      {"@id": "urn:ngm:class:ring-confidential-transactions", "label": "Ring Confidential Transactions"},
-      {"@id": "urn:ngm:class:liquid-network", "label": "Liquid Network"},
-      {"@id": "urn:ngm:class:monero", "label": "Monero"},
-      {"@id": "urn:ngm:class:confidential-computing", "label": "Confidential Computing"}
+      {
+        "@id": "urn:ngm:class:liquid-network",
+        "label": "Liquid Network"
+      },
+      {
+        "@id": "urn:ngm:class:monero",
+        "label": "Monero"
+      },
+      {
+        "@id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:secure-multi-party-computation", "label": "Secure Multi-Party Computation"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:financial-privacy", "label": "Financial Privacy"}
+      {
+        "@id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:financial-privacy",
+        "label": "Financial Privacy"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:elements-project", "label": "Elements Project"},
-      {"@id": "urn:ngm:class:bitcoin-improvement-proposal", "label": "Bitcoin Improvement Proposal"}
+      {
+        "@id": "urn:ngm:class:elements-project",
+        "label": "Elements Project"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
+        "label": "Bitcoin Improvement Proposal"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ct-protocol", "label": "CT Protocol"},
-    {"@id": "urn:ngm:class:amount-confidential-transactions", "label": "Amount-Confidential Transactions"}
+    {
+      "@id": "urn:ngm:class:ct-protocol",
+      "label": "CT Protocol"
+    },
+    {
+      "@id": "urn:ngm:class:amount-confidential-transactions",
+      "label": "Amount-Confidential Transactions"
+    }
   ],
   "quality": 0.74,
   "provenance": {

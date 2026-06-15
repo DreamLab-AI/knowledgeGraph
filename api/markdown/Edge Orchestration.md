@@ -150,24 +150,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:decision-framework",
-        "label": "Decision Framework"
-      },
-      {
-        "@id": "urn:ngm:class:load-balancing-system",
+        "@id": "urn:ngm:class:load-balancing",
         "label": "Load Balancing System"
-      },
-      {
-        "@id": "urn:ngm:class:resource-monitor",
-        "label": "Resource Monitor"
-      },
-      {
-        "@id": "urn:ngm:class:task-allocation-engine",
-        "label": "Task Allocation Engine"
-      },
-      {
-        "@id": "urn:ngm:class:workload-scheduler",
-        "label": "Workload Scheduler"
       }
     ],
     "requires": [
@@ -178,37 +162,21 @@ public:: true
       {
         "@id": "urn:ngm:class:network-performance-metrics",
         "label": "Network Performance Metrics"
-      },
-      {
-        "@id": "urn:ngm:class:orchestration-policy",
-        "label": "Orchestration Policy"
-      },
-      {
-        "@id": "urn:ngm:class:resource-availability-data",
-        "label": "Resource Availability Data"
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:adaptive-workload-distribution",
-        "label": "Adaptive Workload Distribution"
-      },
       {
         "@id": "urn:ngm:class:low-latency-computing",
         "label": "Low-Latency Computing"
       },
       {
-        "@id": "urn:ngm:class:optimized-resource-utilization",
+        "@id": "urn:ngm:class:resource-efficiency",
         "label": "Optimized Resource Utilization"
-      },
-      {
-        "@id": "urn:ngm:class:scalable-processing",
-        "label": "Scalable Processing"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:distributed-computing-infrastructure",
+        "@id": "urn:ngm:class:distributed-computing",
         "label": "Distributed Computing Infrastructure"
       },
       {

@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -71,10 +71,6 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:implicit-trust",
-        "label": "Implicit Trust"
-      },
-      {
         "id": "urn:ngm:class:perimeter-security",
         "label": "Perimeter Security"
       }
@@ -99,7 +95,7 @@
         "label": "Humanity Attestation"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential",
+        "id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       },
       {
@@ -114,7 +110,7 @@
         "label": "Trust Framework"
       },
       {
-        "id": "urn:ngm:class:eidas-2",
+        "id": "urn:ngm:class:e-idas-2-0",
         "label": "eIDAS 2.0"
       }
     ],

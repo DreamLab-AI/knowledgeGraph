@@ -38,57 +38,103 @@ alias:: LifeCycleAssessment
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:lca", "label": "LCA"},
-    {"@id": "urn:ngm:class:life-cycle-analysis", "label": "Life Cycle Analysis"},
-    {"@id": "urn:ngm:class:cradle-to-grave-analysis", "label": "Cradle-to-Grave Analysis"}
+    {
+      "@id": "urn:ngm:class:lca",
+      "label": "LCA"
+    },
+    {
+      "@id": "urn:ngm:class:life-cycle-analysis",
+      "label": "Life Cycle Analysis"
+    },
+    {
+      "@id": "urn:ngm:class:cradle-to-grave-analysis",
+      "label": "Cradle-to-Grave Analysis"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:life-cycle-inventory", "label": "Life Cycle Inventory"},
-      {"@id": "urn:ngm:class:life-cycle-impact-assessment", "label": "Life Cycle Impact Assessment"},
-      {"@id": "urn:ngm:class:goal-and-scope-definition", "label": "Goal and Scope Definition"},
-      {"@id": "urn:ngm:class:lca-interpretation", "label": "LCA Interpretation"}
-    ],
-    "requires": [
-      {"@id": "urn:ngm:class:functional-unit", "label": "Functional Unit"},
-      {"@id": "urn:ngm:class:system-boundary", "label": "System Boundary"},
-      {"@id": "urn:ngm:class:inventory-data", "label": "Inventory Data"}
+      {
+        "@id": "urn:ngm:class:scope-definition",
+        "label": "Goal and Scope Definition"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:carbon-footprint-assessment", "label": "Carbon Footprint Assessment"},
-      {"@id": "urn:ngm:class:environmental-sustainability", "label": "Environmental Sustainability"},
-      {"@id": "urn:ngm:class:environmental-product-declaration", "label": "Environmental Product Declaration"},
-      {"@id": "urn:ngm:class:eco-design", "label": "Eco-design"},
-      {"@id": "urn:ngm:class:green-public-procurement", "label": "Green Public Procurement"}
+      {
+        "@id": "urn:ngm:class:carbon-footprint-assessment",
+        "label": "Carbon Footprint Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:ecoinvent-database", "label": "Ecoinvent Database"},
-      {"@id": "urn:ngm:class:characterisation-factors", "label": "Characterisation Factors"},
-      {"@id": "urn:ngm:class:material-flow-analysis", "label": "Material Flow Analysis"}
+      {
+        "@id": "urn:ngm:class:material-flow-analysis",
+        "label": "Material Flow Analysis"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-14040", "label": "ISO 14040"},
-      {"@id": "urn:ngm:class:iso-14044", "label": "ISO 14044"},
-      {"@id": "urn:ngm:class:product-environmental-footprint", "label": "Product Environmental Footprint"}
+      {
+        "@id": "urn:ngm:class:iso-14040",
+        "label": "ISO 14040"
+      },
+      {
+        "@id": "urn:ngm:class:iso-14044",
+        "label": "ISO 14044"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"},
-      {"@id": "urn:ngm:class:circular-economy", "label": "Circular Economy"},
-      {"@id": "urn:ngm:class:scope-3-emissions", "label": "Scope 3 Emissions"}
+      {
+        "@id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "@id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"},
-      {"@id": "urn:ngm:class:environmental-impact-assessment", "label": "Environmental Impact Assessment"},
-      {"@id": "urn:ngm:class:carbon-accounting", "label": "Carbon Accounting"}
+      {
+        "@id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-impact-assessment",
+        "label": "Environmental Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-product-passport", "label": "Digital Product Passport"},
-      {"@id": "urn:ngm:class:blockchain-provenance", "label": "Blockchain Provenance"},
-      {"@id": "urn:ngm:class:industrial-internet-of-things", "label": "Industrial Internet of Things"}
+      {
+        "@id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-provenance",
+        "label": "Blockchain Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial Internet of Things"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:environmental-impact-assessment", "label": "Environmental Impact Assessment"},
-      {"@id": "urn:ngm:class:material-flow-analysis", "label": "Material Flow Analysis"}
+      {
+        "@id": "urn:ngm:class:environmental-impact-assessment",
+        "label": "Environmental Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:material-flow-analysis",
+        "label": "Material Flow Analysis"
+      }
     ]
   },
   "quality": 0.72,

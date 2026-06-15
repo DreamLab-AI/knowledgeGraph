@@ -57,57 +57,135 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:etl", "label": "ETL"},
-      {"@id": "urn:ngm:class:stream-processing", "label": "Stream Processing"},
-      {"@id": "urn:ngm:class:batch-processing", "label": "Batch Processing"}
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:etl-pipeline",
+        "label": "ETL"
+      },
+      {
+        "@id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      },
+      {
+        "@id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:data-management", "label": "Data Management"}
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-ingestion", "label": "Data Ingestion"},
-      {"@id": "urn:ngm:class:data-storage", "label": "Data Storage"},
-      {"@id": "urn:ngm:class:schema-management", "label": "Schema Management"}
+      {
+        "@id": "urn:ngm:class:data-ingestion",
+        "label": "Data Ingestion"
+      },
+      {
+        "@id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "@id": "urn:ngm:class:schema-management",
+        "label": "Schema Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:data-analytics", "label": "Data Analytics"},
-      {"@id": "urn:ngm:class:business-intelligence", "label": "Business Intelligence"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:apache-spark", "label": "Apache Spark"},
-      {"@id": "urn:ngm:class:apache-kafka", "label": "Apache Kafka"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:sql", "label": "SQL"}
+      {
+        "@id": "urn:ngm:class:apache-spark",
+        "label": "Apache Spark"
+      },
+      {
+        "@id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:sql",
+        "label": "SQL"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:real-time-analytics", "label": "Real-Time Analytics"},
-      {"@id": "urn:ngm:class:data-lineage", "label": "Data Lineage"}
-    ],
-    "standardizedBy": [
-      {"@id": "urn:ngm:class:sql-standard", "label": "SQL Standard"}
+      {
+        "@id": "urn:ngm:class:real-time-analytics",
+        "label": "Real-Time Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:raw-data", "label": "Raw Data"}
+      {
+        "@id": "urn:ngm:class:raw-data",
+        "label": "Raw Data"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-quality", "label": "Data Quality"},
-      {"@id": "urn:ngm:class:data-lake", "label": "Data Lake"},
-      {"@id": "urn:ngm:class:data-warehouse", "label": "Data Warehouse"}
+      {
+        "@id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "@id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
+        "@id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:data-transformation", "label": "Data Transformation"}
+    {
+      "@id": "urn:ngm:class:data-transformation",
+      "label": "Data Transformation"
+    }
   ],
   "quality": 0.72,
   "provenance": {

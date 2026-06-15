@@ -16,16 +16,7 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:tornado-cash-governance-token",
-        "label": "TORN Governance Token"
-      },
-      {
-        "id": "urn:ngm:class:deposit-pool",
-        "label": "Deposit Pool"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:zero-knowledge-proof",
@@ -48,39 +39,19 @@
       {
         "id": "urn:ngm:class:transaction-privacy",
         "label": "Transaction Privacy"
-      },
-      {
-        "id": "urn:ngm:class:anonymity-set",
-        "label": "Anonymity Set"
-      },
-      {
-        "id": "urn:ngm:class:on-chain-privacy",
-        "label": "On-Chain Privacy"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:coin-mixing",
-        "label": "Coin Mixing"
-      },
-      {
-        "id": "urn:ngm:class:non-custodial-protocol",
-        "label": "Non-Custodial Protocol"
-      },
-      {
-        "id": "urn:ngm:class:immutable-smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Immutable Smart Contract"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:chain-analysis",
+        "id": "urn:ngm:class:blockchain-analysis",
         "label": "Chain Analysis"
-      },
-      {
-        "id": "urn:ngm:class:blockchain-surveillance",
-        "label": "Blockchain Surveillance"
       },
       {
         "id": "urn:ngm:class:custodial-exchange",
@@ -95,10 +66,6 @@
       {
         "id": "urn:ngm:class:infra-legal-and-regulatory",
         "label": "Legal and Regulatory"
-      },
-      {
-        "id": "urn:ngm:class:open-source-software-liability",
-        "label": "Open Source Software Liability"
       }
     ],
     "uses": [
@@ -107,11 +74,7 @@
         "label": "Commitment Scheme"
       },
       {
-        "id": "urn:ngm:class:nullifier",
-        "label": "Nullifier"
-      },
-      {
-        "id": "urn:ngm:class:relayer-network",
+        "id": "urn:ngm:class:relayer",
         "label": "Relayer Network"
       }
     ],
@@ -120,11 +83,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:ofac-sanctions",
-        "label": "OFAC Sanctions"
-      },
-      {
-        "id": "urn:ngm:class:aml-compliance",
+        "id": "urn:ngm:class:aml-kyc-compliance",
         "label": "AML Compliance"
       },
       {

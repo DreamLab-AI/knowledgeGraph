@@ -390,16 +390,8 @@ public:: true
         "label": "IPFS"
       },
       {
-        "@id": "urn:ngm:class:mint-function",
-        "label": "Mint Function"
-      },
-      {
         "@id": "urn:ngm:class:token-metadata",
         "label": "Token Metadata"
-      },
-      {
-        "@id": "urn:ngm:class:token-uri",
-        "label": "Token URI"
       },
       {
         "@id": "urn:ngm:class:transfer-event",
@@ -442,7 +434,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:gaming-asset-ownership",
+        "@id": "urn:ngm:class:blockchain-gaming",
         "label": "Gaming Asset Ownership"
       },
       {
@@ -472,19 +464,11 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:batch-minting",
-        "label": "Batch Minting"
-      },
-      {
-        "@id": "urn:ngm:class:eip-2981-royalty-standard",
+        "@id": "urn:ngm:class:eip-2981",
         "label": "EIP-2981 Royalty Standard"
       },
       {
-        "@id": "urn:ngm:class:eip-5192-locking-standard",
-        "label": "EIP-5192 Locking Standard"
-      },
-      {
-        "@id": "urn:ngm:class:eip-712-typed-signing",
+        "@id": "urn:ngm:class:eip-712",
         "label": "EIP-712 Typed Signing"
       },
       {
@@ -494,10 +478,6 @@ public:: true
       {
         "@id": "urn:ngm:class:erc-721-standard",
         "label": "ERC-721 Standard"
-      },
-      {
-        "@id": "urn:ngm:class:lazy-minting",
-        "label": "Lazy Minting"
       }
     ],
     "uses": [
@@ -510,7 +490,7 @@ public:: true
         "label": "Content Identifier"
       },
       {
-        "@id": "urn:ngm:class:eip-712-signatures",
+        "@id": "urn:ngm:class:eip-712",
         "label": "EIP-712 Signatures"
       },
       {
@@ -540,7 +520,7 @@ public:: true
         "label": "Digital Art"
       },
       {
-        "@id": "urn:ngm:class:gaming-assets",
+        "@id": "urn:ngm:class:blockchain-gaming",
         "label": "Gaming Assets"
       },
       {
@@ -570,24 +550,12 @@ public:: true
         "label": "Bitcoin Ordinals"
       },
       {
-        "@id": "urn:ngm:class:brand-loyalty-nfts",
-        "label": "Brand Loyalty NFTs"
-      },
-      {
         "@id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"
       },
       {
-        "@id": "urn:ngm:class:digital-art-market",
-        "label": "Digital Art Market"
-      },
-      {
-        "@id": "urn:ngm:class:gaming-nfts",
+        "@id": "urn:ngm:class:blockchain-gaming",
         "label": "Gaming NFTs"
-      },
-      {
-        "@id": "urn:ngm:class:music-nfts",
-        "label": "Music NFTs"
       },
       {
         "@id": "urn:ngm:class:real-world-asset-tokenisation",
@@ -604,10 +572,6 @@ public:: true
         "label": "EIP-2981"
       },
       {
-        "@id": "urn:ngm:class:eip-5192",
-        "label": "EIP-5192"
-      },
-      {
         "@id": "urn:ngm:class:eip-712",
         "label": "EIP-712"
       },
@@ -618,10 +582,6 @@ public:: true
       {
         "@id": "urn:ngm:class:erc-721",
         "label": "ERC-721"
-      },
-      {
-        "@id": "urn:ngm:class:open-zeppelin-token-standards",
-        "label": "OpenZeppelin Token Standards"
       }
     ]
   },

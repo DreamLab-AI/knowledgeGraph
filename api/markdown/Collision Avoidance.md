@@ -105,7 +105,7 @@ alias:: CollisionAvoidance
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:emergency-stop",
+        "@id": "urn:ngm:class:rb-0090-emergency-stop",
         "label": "Emergency Stop"
       },
       {
@@ -127,20 +127,8 @@ alias:: CollisionAvoidance
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:safe-human-robot-proximity",
-        "label": "Safe Human-Robot Proximity"
-      },
-      {
         "@id": "urn:ngm:class:autonomous-navigation",
         "label": "Autonomous Navigation"
-      },
-      {
-        "@id": "urn:ngm:class:autonomous-vehicle-operation",
-        "label": "Autonomous Vehicle Operation"
-      },
-      {
-        "@id": "urn:ngm:class:unmanned-aerial-vehicle-operation",
-        "label": "Unmanned Aerial Vehicle Operation"
       }
     ],
     "partOf": [
@@ -179,10 +167,6 @@ alias:: CollisionAvoidance
       {
         "@id": "urn:ngm:class:real-time-operating-system",
         "label": "Real-Time Operating System"
-      },
-      {
-        "@id": "urn:ngm:class:robot-trajectories",
-        "label": "Robot Trajectories"
       }
     ],
     "standardizedBy": [
@@ -203,26 +187,8 @@ alias:: CollisionAvoidance
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:traffic-collision-avoidance-system",
-        "label": "Traffic Collision Avoidance System"
-      },
-      {
         "@id": "urn:ngm:class:functional-safety",
         "label": "Functional Safety"
-      }
-    ],
-    "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:airspace-management",
-        "label": "Airspace Management"
-      },
-      {
-        "@id": "urn:ngm:class:maritime-navigation",
-        "label": "Maritime Navigation"
-      },
-      {
-        "@id": "urn:ngm:class:space-debris-mitigation",
-        "label": "Space Debris Mitigation"
       }
     ]
   },

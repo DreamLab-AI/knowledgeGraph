@@ -24,55 +24,147 @@ alias:: Data-Availability
   "definition": "Data availability is the property of a distributed system—most critically blockchain networks and rollup scaling architectures—that guarantees all data necessary to verify and reconstruct network state is published and retrievable by any participant. The core data availability problem arises when a block producer publishes a block header without releasing the underlying transaction data, making it impossible for validators or light clients to verify the block's correctness without downloading all data. Modern solutions combine erasure coding (expanding data such that any sufficient subset allows full reconstruction) with data availability sampling (DAS), enabling light nodes to probabilistically confirm full publication by checking only a small random subset of encoded chunks. Data availability is a foundational primitive in modular blockchain architectures, separating the data publication concern from execution, consensus, and settlement layers.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:erasure-coding", "label": "Erasure Coding"},
-      {"@id": "urn:ngm:class:data-availability-sampling", "label": "Data Availability Sampling"},
-      {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:kzg-polynomial-commitment", "label": "KZG Polynomial Commitment"},
-      {"@id": "urn:ngm:class:reed-solomon-code", "label": "Reed-Solomon Code"}
+      {
+        "@id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      },
+      {
+        "@id": "urn:ngm:class:data-availability-sampling",
+        "label": "Data Availability Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:kzg-polynomial-commitment",
+        "label": "KZG Polynomial Commitment"
+      },
+      {
+        "@id": "urn:ngm:class:reed-solomon-codes",
+        "label": "Reed-Solomon Code"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer 2 Scaling"},
-      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
-      {"@id": "urn:ngm:class:rollup", "label": "Rollup"},
-      {"@id": "urn:ngm:class:light-client", "label": "Light Client"},
-      {"@id": "urn:ngm:class:modular-blockchain", "label": "Modular Blockchain"}
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:light-client",
+        "label": "Light Client"
+      },
+      {
+        "@id": "urn:ngm:class:modular-blockchain",
+        "label": "Modular Blockchain"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:danksharding", "label": "Danksharding"},
-      {"@id": "urn:ngm:class:proto-danksharding", "label": "Proto-Danksharding"}
+      {
+        "@id": "urn:ngm:class:danksharding",
+        "label": "Danksharding"
+      },
+      {
+        "@id": "urn:ngm:class:proto-danksharding",
+        "label": "Proto-Danksharding"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:block-propagation", "label": "Block Propagation"},
-      {"@id": "urn:ngm:class:distributed-hash-table", "label": "Distributed Hash Table"}
+      {
+        "@id": "urn:ngm:class:block-propagation",
+        "label": "Block Propagation"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:data-withholding-attack", "label": "Data Withholding Attack"},
-      {"@id": "urn:ngm:class:state-availability", "label": "State Availability"}
+      {
+        "@id": "urn:ngm:class:data-withholding-attack",
+        "label": "Data Withholding Attack"
+      },
+      {
+        "@id": "urn:ngm:class:state-availability",
+        "label": "State Availability"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:sharding", "label": "Sharding"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:content-addressed-storage", "label": "Content-Addressed Storage"},
-      {"@id": "urn:ngm:class:data-availability-committee", "label": "Data Availability Committee"},
-      {"@id": "urn:ngm:class:validity-proof", "label": "Validity Proof"},
-      {"@id": "urn:ngm:class:fraud-proof", "label": "Fraud Proof"}
+      {
+        "@id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage"
+      },
+      {
+        "@id": "urn:ngm:class:data-availability-committee",
+        "label": "Data Availability Committee"
+      },
+      {
+        "@id": "urn:ngm:class:validity-proof",
+        "label": "Validity Proof"
+      },
+      {
+        "@id": "urn:ngm:class:fraud-proof",
+        "label": "Fraud Proof"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"},
-      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"}
+      {
+        "@id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:da-layer", "label": "DA Layer"},
-    {"@id": "urn:ngm:class:data-publication", "label": "Data Publication"}
+    {
+      "@id": "urn:ngm:class:da-layer",
+      "label": "DA Layer"
+    },
+    {
+      "@id": "urn:ngm:class:data-publication",
+      "label": "Data Publication"
+    }
   ],
   "quality": 0.74,
   "provenance": {

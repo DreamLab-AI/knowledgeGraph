@@ -23,52 +23,133 @@ public:: true
   "definition": "Universal Design is the architectural, product, and communication design philosophy asserting that environments, systems, and products should be designed from the outset to be usable by all people — regardless of age, disability, or circumstance — to the greatest extent possible without the need for adaptation or specialised design. Codified by architect Ronald Mace at NC State University in the 1990s across seven principles (equitable use, flexibility, simple and intuitive use, perceptible information, tolerance for error, low physical effort, size and space for approach and use), Universal Design goes beyond legal accessibility compliance to treat inclusive design as a quality standard that benefits all users. It has been extended to digital products, extended reality experiences, and AI systems.",
   "domain": "standards",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:design-thinking", "label": "Design Thinking"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:design-thinking",
+      "label": "Design Thinking"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"},
-      {"@id": "urn:ngm:class:accessibility-standards", "label": "Accessibility Standards"},
-      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"},
-      {"@id": "urn:ngm:class:inclusive-design", "label": "Inclusive Design"},
-      {"@id": "urn:ngm:class:human-centred-design", "label": "Human-Centred Design"},
-      {"@id": "urn:ngm:class:ergonomics", "label": "Ergonomics"}
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility-standards",
+        "label": "Accessibility Standards"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "@id": "urn:ngm:class:inclusive-design",
+        "label": "Inclusive Design"
+      },
+      {
+        "@id": "urn:ngm:class:human-centred-design",
+        "label": "Human-Centred Design"
+      },
+      {
+        "@id": "urn:ngm:class:ergonomics",
+        "label": "Ergonomics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:inclusive-xr-experience", "label": "Inclusive Xr Experience"},
-      {"@id": "urn:ngm:class:inclusive-participation", "label": "Inclusive Participation"},
-      {"@id": "urn:ngm:class:xr-accessibility-standards", "label": "XR Accessibility Standards"},
-      {"@id": "urn:ngm:class:digital-equity", "label": "Digital Equity"},
-      {"@id": "urn:ngm:class:assistive-technology", "label": "Assistive Technology"}
+      {
+        "@id": "urn:ngm:class:inclusive-xr-experience",
+        "label": "Inclusive Xr Experience"
+      },
+      {
+        "@id": "urn:ngm:class:inclusive-participation",
+        "label": "Inclusive Participation"
+      },
+      {
+        "@id": "urn:ngm:class:xr-accessibility-standards",
+        "label": "XR Accessibility Standards"
+      },
+      {
+        "@id": "urn:ngm:class:digital-technology-access-equity",
+        "label": "Digital Equity"
+      },
+      {
+        "@id": "urn:ngm:class:assistive-technology",
+        "label": "Assistive Technology"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:human-factors", "label": "Human Factors"},
-      {"@id": "urn:ngm:class:product-design", "label": "Product Design"},
-      {"@id": "urn:ngm:class:user-interface-design", "label": "User Interface Design"},
-      {"@id": "urn:ngm:class:built-environment", "label": "Built Environment"}
+      {
+        "@id": "urn:ngm:class:human-factors",
+        "label": "Human Factors"
+      },
+      {
+        "@id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      },
+      {
+        "@id": "urn:ngm:class:user-interface-design",
+        "label": "User Interface Design"
+      },
+      {
+        "@id": "urn:ngm:class:built-environment",
+        "label": "Built Environment"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:web-content-accessibility-guidelines", "label": "Web Content Accessibility Guidelines"},
-      {"@id": "urn:ngm:class:un-convention-on-rights-of-persons-with-disabilities", "label": "UN Convention on the Rights of Persons with Disabilities"},
-      {"@id": "urn:ngm:class:eu-accessibility-act", "label": "EU Accessibility Act"},
-      {"@id": "urn:ngm:class:xr-accessibility-user-requirements", "label": "XR Accessibility User Requirements"}
+      {
+        "@id": "urn:ngm:class:web-content-accessibility-guidelines",
+        "label": "Web Content Accessibility Guidelines"
+      },
+      {
+        "@id": "urn:ngm:class:un-convention-on-rights-of-persons-with-disabilities",
+        "label": "UN Convention on the Rights of Persons with Disabilities"
+      },
+      {
+        "@id": "urn:ngm:class:eu-accessibility-act",
+        "label": "EU Accessibility Act"
+      },
+      {
+        "@id": "urn:ngm:class:xr-accessibility-user-requirements",
+        "label": "XR Accessibility User Requirements"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:pour-framework", "label": "POUR Framework"},
-      {"@id": "urn:ngm:class:multimodal-interaction", "label": "Multimodal Interaction"}
+      {
+        "@id": "urn:ngm:class:multimodal-interaction",
+        "label": "Multimodal Interaction"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:retrofitting", "label": "Retrofitting"},
-      {"@id": "urn:ngm:class:specialised-design", "label": "Specialised Design"}
+      {
+        "@id": "urn:ngm:class:retrofitting",
+        "label": "Retrofitting"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:artificial-intelligence-ethics", "label": "Artificial Intelligence Ethics"},
-      {"@id": "urn:ngm:class:natural-language-interfaces", "label": "Natural Language Interfaces"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence-ethics",
+        "label": "Artificial Intelligence Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-interfaces",
+        "label": "Natural Language Interfaces"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:design-for-all", "label": "Design for All"},
-    {"@id": "urn:ngm:class:inclusive-architecture", "label": "Inclusive Architecture"}
+    {
+      "@id": "urn:ngm:class:design-for-all",
+      "label": "Design for All"
+    },
+    {
+      "@id": "urn:ngm:class:inclusive-architecture",
+      "label": "Inclusive Architecture"
+    }
   ],
   "quality": 0.75,
   "provenance": {

@@ -60,20 +60,11 @@
       {
         "id": "urn:ngm:class:remote-education",
         "label": "Remote Education"
-      },
-      {
-        "id": "urn:ngm:class:skills-assessment",
-        "label": "Skills Assessment"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:traditional-classroom-instruction",
-        "label": "Traditional Classroom Instruction"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:machine-learning",

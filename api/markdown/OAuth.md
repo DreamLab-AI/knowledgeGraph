@@ -73,10 +73,6 @@ public:: true
         "label": "Refresh Token"
       },
       {
-        "@id": "urn:ngm:class:authorisation-code",
-        "label": "Authorisation Code"
-      },
-      {
         "@id": "urn:ngm:class:scope",
         "label": "Scope"
       }
@@ -99,10 +95,6 @@ public:: true
       {
         "@id": "urn:ngm:class:https",
         "label": "HTTPS"
-      },
-      {
-        "@id": "urn:ngm:class:client-credentials",
-        "label": "Client Credentials"
       }
     ],
     "enables": [
@@ -127,10 +119,6 @@ public:: true
       {
         "@id": "urn:ngm:class:identity-provider",
         "label": "Identity Provider"
-      },
-      {
-        "@id": "urn:ngm:class:token-endpoint",
-        "label": "Token Endpoint"
       }
     ],
     "implements": [
@@ -141,7 +129,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:json-web-token",
+        "@id": "urn:ngm:class:json-data-interchange-format-web-token",
         "label": "JSON Web Token"
       },
       {
@@ -151,20 +139,6 @@ public:: true
       {
         "@id": "urn:ngm:class:bearer-token",
         "label": "Bearer Token"
-      }
-    ],
-    "supports": [
-      {
-        "@id": "urn:ngm:class:third-party-application",
-        "label": "Third-Party Application"
-      },
-      {
-        "@id": "urn:ngm:class:mobile-application",
-        "label": "Mobile Application"
-      },
-      {
-        "@id": "urn:ngm:class:server-to-server-communication",
-        "label": "Server-to-Server Communication"
       }
     ],
     "standardizedBy": [
@@ -179,16 +153,12 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:openid-connect",
+        "@id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
       },
       {
         "@id": "urn:ngm:class:saml",
         "label": "SAML"
-      },
-      {
-        "@id": "urn:ngm:class:basic-authentication",
-        "label": "Basic Authentication"
       }
     ],
     "bridgesTo": [
@@ -207,7 +177,7 @@ public:: true
         "label": "Authentication"
       },
       {
-        "@id": "urn:ngm:class:zero-trust-security",
+        "@id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Security"
       }
     ]

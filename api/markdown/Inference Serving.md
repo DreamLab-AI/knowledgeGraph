@@ -137,7 +137,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:model-quantisation",
+        "@id": "urn:ngm:class:neural-network-quantisation",
         "label": "Model Quantisation"
       },
       {
@@ -175,10 +175,6 @@ public:: true
       {
         "@id": "urn:ngm:class:triton-inference-server",
         "label": "Triton Inference Server"
-      },
-      {
-        "@id": "urn:ngm:class:ray-serve",
-        "label": "Ray Serve"
       }
     ],
     "bridgesTo": [

@@ -23,54 +23,133 @@ public:: true
   "definition": "Evidence collection is the systematic process of identifying, preserving, and documenting artefacts — digital or physical — in a manner that maintains their integrity and admissibility for legal, regulatory, or investigative proceedings. In digital contexts it encompasses forensic acquisition of disk images, memory dumps, network captures, and log files while maintaining strict chain-of-custody documentation.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-forensics", "label": "Digital Forensics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-forensics",
+      "label": "Digital Forensics"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:audit-log", "label": "Audit Log"},
-      {"@id": "urn:ngm:class:chain-of-custody", "label": "Chain of Custody"},
-      {"@id": "urn:ngm:class:write-blocker", "label": "Write Blocker"},
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"},
-      {"@id": "urn:ngm:class:forensic-imaging", "label": "Forensic Imaging"}
+      {
+        "@id": "urn:ngm:class:audit-log",
+        "label": "Audit Log"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-custody",
+        "label": "Chain of Custody"
+      },
+      {
+        "@id": "urn:ngm:class:write-blocker",
+        "label": "Write Blocker"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "@id": "urn:ngm:class:forensic-imaging",
+        "label": "Forensic Imaging"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"},
-      {"@id": "urn:ngm:class:compliance-evidence", "label": "Compliance Evidence"},
-      {"@id": "urn:ngm:class:e-discovery", "label": "E-Discovery"},
-      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"},
-      {"@id": "urn:ngm:class:volatile-data", "label": "Volatile Data"}
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-evidence",
+        "label": "Compliance Evidence"
+      },
+      {
+        "@id": "urn:ngm:class:e-discovery",
+        "label": "E-Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:volatile-data",
+        "label": "Volatile Data"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:legal-evidence", "label": "Legal Evidence"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:cybercrime-investigation", "label": "Cybercrime Investigation"}
+      {
+        "@id": "urn:ngm:class:legal-evidence",
+        "label": "Legal Evidence"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:cybercrime-investigation",
+        "label": "Cybercrime Investigation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:chain-of-custody", "label": "Chain of Custody"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:timestamping", "label": "Timestamping"}
+      {
+        "@id": "urn:ngm:class:chain-of-custody",
+        "label": "Chain of Custody"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:timestamping",
+        "label": "Timestamping"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:forensic-analysis", "label": "Forensic Analysis"},
-      {"@id": "urn:ngm:class:threat-intelligence", "label": "Threat Intelligence"}
+      {
+        "@id": "urn:ngm:class:forensic-analysis",
+        "label": "Forensic Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:memory-acquisition", "label": "Memory Acquisition"},
-      {"@id": "urn:ngm:class:network-capture", "label": "Network Capture"}
+      {
+        "@id": "urn:ngm:class:memory-acquisition",
+        "label": "Memory Acquisition"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-27037", "label": "ISO/IEC 27037"}
+      {
+        "@id": "urn:ngm:class:iso-iec-27037",
+        "label": "ISO/IEC 27037"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:data-destruction", "label": "Data Destruction"}
+      {
+        "@id": "urn:ngm:class:data-destruction",
+        "label": "Data Destruction"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:digital-evidence-acquisition", "label": "Digital Evidence Acquisition"},
-    {"@id": "urn:ngm:class:forensic-evidence-collection", "label": "Forensic Evidence Collection"}
+    {
+      "@id": "urn:ngm:class:digital-evidence-acquisition",
+      "label": "Digital Evidence Acquisition"
+    },
+    {
+      "@id": "urn:ngm:class:forensic-evidence-collection",
+      "label": "Forensic Evidence Collection"
+    }
   ],
   "quality": 0.8,
   "provenance": {

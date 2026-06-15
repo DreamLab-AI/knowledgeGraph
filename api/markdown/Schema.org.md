@@ -23,52 +23,101 @@ public:: true
   "definition": "Schema.org is a collaborative, community-maintained vocabulary project founded in 2011 by Google, Microsoft, Yahoo, and Yandex to define a shared set of structured data markup schemas for web pages, enabling search engines and other consumers to understand the semantic content of web resources. The vocabulary defines types and properties for entities such as persons, organisations, events, products, reviews, and creative works, expressed using JSON-LD, Microdata, or RDFa. Schema.org markup embedded in web pages allows search engines to generate rich snippets, knowledge panels, and structured results. The vocabulary is extensible and hosted at schema.org, with governance managed by a W3C community group.",
   "domain": "standards",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:linked-data",
+    "label": "Linked Data"
+  },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:controlled-vocabulary", "label": "Controlled Vocabulary"},
-      {"@id": "urn:ngm:class:microdata", "label": "Microdata"},
-      {"@id": "urn:ngm:class:rdfa", "label": "RDFa"}
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
-      {"@id": "urn:ngm:class:rich-snippet", "label": "Rich Snippet"},
-      {"@id": "urn:ngm:class:structured-data-markup", "label": "Structured Data Markup"},
-      {"@id": "urn:ngm:class:entity-recognition", "label": "Entity Recognition"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web Linked Data Standard"
+      },
+      {
+        "@id": "urn:ngm:class:named-entity-recognition",
+        "label": "Entity Recognition"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:web-ontology-language", "label": "Web Ontology Language"},
-      {"@id": "urn:ngm:class:resource-description-framework-schema", "label": "RDF Schema"}
-    ],
-    "standardizedBy": [
-      {"@id": "urn:ngm:class:w3c-community-group", "label": "W3C Community Group"}
+      {
+        "@id": "urn:ngm:class:owl-2-web-ontology-language",
+        "label": "Web Ontology Language"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:search-engine-optimisation", "label": "Search Engine Optimisation"},
-      {"@id": "urn:ngm:class:data-annotation", "label": "Data Annotation"},
-      {"@id": "urn:ngm:class:information-extraction", "label": "Information Extraction"}
+      {
+        "@id": "urn:ngm:class:search-engine-optimisation",
+        "label": "Search Engine Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
+      },
+      {
+        "@id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:search-engine", "label": "Search Engine"},
-      {"@id": "urn:ngm:class:open-graph-protocol", "label": "Open Graph Protocol"},
-      {"@id": "urn:ngm:class:dublin-core", "label": "Dublin Core"},
-      {"@id": "urn:ngm:class:wikidata", "label": "Wikidata"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:microformat", "label": "Microformat"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:search-engine",
+        "label": "Search Engine"
+      },
+      {
+        "@id": "urn:ngm:class:open-graph-link-preview-protocol",
+        "label": "Open Graph Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:dublin-core",
+        "label": "Dublin Core"
+      },
+      {
+        "@id": "urn:ngm:class:wikidata",
+        "label": "Wikidata"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:schema-org-vocabulary", "label": "Schema.org Vocabulary"},
-    {"@id": "urn:ngm:class:structured-data-vocabulary", "label": "Structured Data Vocabulary"}
+    {
+      "@id": "urn:ngm:class:schema-org-vocabulary",
+      "label": "Schema.org Vocabulary"
+    },
+    {
+      "@id": "urn:ngm:class:structured-data-vocabulary",
+      "label": "Structured Data Vocabulary"
+    }
   ],
   "quality": 0.8,
   "provenance": {

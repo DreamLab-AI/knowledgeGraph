@@ -26,10 +26,6 @@
         "label": "Depth Sensor"
       },
       {
-        "id": "urn:ngm:class:inference-pipeline",
-        "label": "Inference Pipeline"
-      },
-      {
         "id": "urn:ngm:class:camera-calibration",
         "label": "Camera Calibration"
       }
@@ -44,7 +40,7 @@
         "label": "Image Preprocessing"
       },
       {
-        "id": "urn:ngm:class:labeled-dataset",
+        "id": "urn:ngm:class:training-dataset",
         "label": "Labeled Dataset"
       }
     ],
@@ -62,7 +58,7 @@
         "label": "Augmented Reality"
       },
       {
-        "id": "urn:ngm:class:simultaneous-localization-and-mapping",
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
         "label": "Simultaneous Localization and Mapping"
       },
       {
@@ -83,7 +79,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:lidar-system",
+        "id": "urn:ngm:class:lidar",
         "label": "LiDAR System"
       }
     ],

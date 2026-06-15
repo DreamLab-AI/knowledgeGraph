@@ -30,12 +30,8 @@
         "label": "Delegation Registry"
       },
       {
-        "id": "urn:ngm:class:governor-contract",
+        "id": "urn:ngm:class:open-zeppelin-governor",
         "label": "Governor Contract"
-      },
-      {
-        "id": "urn:ngm:class:proposal-threshold",
-        "label": "Proposal Threshold"
       },
       {
         "id": "urn:ngm:class:quorum-mechanism",
@@ -48,10 +44,6 @@
       {
         "id": "urn:ngm:class:vote-escrow",
         "label": "Vote Escrow"
-      },
-      {
-        "id": "urn:ngm:class:voting-period",
-        "label": "Voting Period"
       },
       {
         "id": "urn:ngm:class:conviction-voting",
@@ -98,10 +90,6 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:anti-collusion-voting",
-        "label": "Anti-Collusion Voting"
-      },
-      {
         "id": "urn:ngm:class:cross-chain-governance",
         "label": "Cross-Chain Governance"
       },
@@ -133,7 +121,7 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:compound-governor",
+        "id": "urn:ngm:class:compound-governor-bravo",
         "label": "Compound Governor"
       },
       {
@@ -141,7 +129,7 @@
         "label": "Futarchy"
       },
       {
-        "id": "urn:ngm:class:maci-anti-collusion",
+        "id": "urn:ngm:class:maci",
         "label": "MACI Anti-Collusion"
       },
       {
@@ -151,10 +139,6 @@
       {
         "id": "urn:ngm:class:vote-escrow-model",
         "label": "Vote-Escrow Model"
-      },
-      {
-        "id": "urn:ngm:class:zk-anonymous-voting",
-        "label": "ZK Anonymous Voting"
       },
       {
         "id": "urn:ngm:class:conviction-voting",
@@ -242,7 +226,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:aragon-osx-standard",
+        "id": "urn:ngm:class:aragon",
         "label": "Aragon OSx Standard"
       },
       {
@@ -258,7 +242,7 @@
         "label": "ERC-20 Votes"
       },
       {
-        "id": "urn:ngm:class:open-zeppelin-governor-standard",
+        "id": "urn:ngm:class:open-zeppelin-governor",
         "label": "OpenZeppelin Governor Standard"
       }
     ],

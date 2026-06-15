@@ -369,7 +369,10 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:embodied-ai", "label": "Embodied AI"}
+      {
+        "@id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      }
     ],
     "hasPart": [
       {
@@ -377,7 +380,7 @@ public:: true
         "label": "Communication Interface"
       },
       {
-        "@id": "urn:ngm:class:locomotion-mechanism",
+        "@id": "urn:ngm:class:locomotion",
         "label": "Locomotion Mechanism"
       },
       {
@@ -393,7 +396,7 @@ public:: true
         "label": "Safety System"
       },
       {
-        "@id": "urn:ngm:class:task-planner",
+        "@id": "urn:ngm:class:task-and-motion-planning",
         "label": "Task Planner"
       },
       {
@@ -413,14 +416,6 @@ public:: true
       {
         "@id": "urn:ngm:class:localisation",
         "label": "Localisation"
-      },
-      {
-        "@id": "urn:ngm:class:terrain-interaction-model",
-        "label": "Terrain Interaction Model"
-      },
-      {
-        "@id": "urn:ngm:class:traction-control",
-        "label": "Traction Control"
       },
       {
         "@id": "urn:ngm:class:motion-planning",
@@ -445,10 +440,6 @@ public:: true
         "label": "Infrastructure Inspection"
       },
       {
-        "@id": "urn:ngm:class:material-transport",
-        "label": "Material Transport"
-      },
-      {
         "@id": "urn:ngm:class:military-operations",
         "label": "Military Operations"
       },
@@ -471,7 +462,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:cartographer-slam",
+        "@id": "urn:ngm:class:slam",
         "label": "Cartographer SLAM"
       },
       {
@@ -483,7 +474,7 @@ public:: true
         "label": "Model Predictive Control"
       },
       {
-        "@id": "urn:ngm:class:nav2-navigation-stack",
+        "@id": "urn:ngm:class:navigation-stack",
         "label": "Nav2 Navigation Stack"
       },
       {
@@ -501,11 +492,11 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:gazebo-simulation",
+        "@id": "urn:ngm:class:gazebo-simulator",
         "label": "Gazebo Simulation"
       },
       {
-        "@id": "urn:ngm:class:move-it2",
+        "@id": "urn:ngm:class:move-it-2",
         "label": "MoveIt2"
       },
       {
@@ -517,7 +508,7 @@ public:: true
         "label": "OpenCV"
       },
       {
-        "@id": "urn:ngm:class:pcl-point-cloud-library",
+        "@id": "urn:ngm:class:point-cloud-processing",
         "label": "PCL Point Cloud Library"
       },
       {
@@ -573,25 +564,17 @@ public:: true
         "label": "Precision Agriculture"
       },
       {
-        "@id": "urn:ngm:class:scientific-exploration",
+        "@id": "urn:ngm:class:scientific-discovery",
         "label": "Scientific Exploration"
-      },
-      {
-        "@id": "urn:ngm:class:security-patrol",
-        "label": "Security Patrol"
       }
     ],
     "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:ansi-ria-r15-08",
-        "label": "ANSI/RIA R15.08"
-      },
       {
         "@id": "urn:ngm:class:iec-62061",
         "label": "IEC 62061"
       },
       {
-        "@id": "urn:ngm:class:ieee-1872-2015",
+        "@id": "urn:ngm:class:ieee-1872",
         "label": "IEEE 1872-2015"
       },
       {

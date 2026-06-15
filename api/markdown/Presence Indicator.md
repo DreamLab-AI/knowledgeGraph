@@ -342,14 +342,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:activity-monitor",
-        "label": "Activity Monitor"
-      },
-      {
-        "@id": "urn:ngm:class:availability-scheduler",
-        "label": "Availability Scheduler"
-      },
-      {
         "@id": "urn:ngm:class:calendar-integration",
         "label": "Calendar Integration"
       },
@@ -358,19 +350,19 @@ public:: true
         "label": "Do Not Disturb"
       },
       {
-        "@id": "urn:ngm:class:last-seen-timestamp",
+        "@id": "urn:ngm:class:timestamp",
         "label": "Last Seen Timestamp"
       },
       {
-        "@id": "urn:ngm:class:notification-suppression",
+        "@id": "urn:ngm:class:notification-system",
         "label": "Notification Suppression"
       },
       {
-        "@id": "urn:ngm:class:presence-api",
+        "@id": "urn:ngm:class:presence",
         "label": "Presence API"
       },
       {
-        "@id": "urn:ngm:class:status-state-machine",
+        "@id": "urn:ngm:class:state-machine",
         "label": "Status State Machine"
       }
     ],
@@ -380,11 +372,7 @@ public:: true
         "label": "Authentication"
       },
       {
-        "@id": "urn:ngm:class:client-activity-tracking",
-        "label": "Client Activity Tracking"
-      },
-      {
-        "@id": "urn:ngm:class:distributed-state-synchronisation",
+        "@id": "urn:ngm:class:state-synchronisation",
         "label": "Distributed State Synchronisation"
       },
       {
@@ -406,23 +394,15 @@ public:: true
         "label": "Ambient Display"
       },
       {
-        "@id": "urn:ngm:class:communication-orchestration",
+        "@id": "urn:ngm:class:orchestration",
         "label": "Communication Orchestration"
       },
       {
-        "@id": "urn:ngm:class:deep-work-protection",
-        "label": "Deep Work Protection"
-      },
-      {
-        "@id": "urn:ngm:class:interruptibility-awareness",
+        "@id": "urn:ngm:class:awareness",
         "label": "Interruptibility Awareness"
       },
       {
-        "@id": "urn:ngm:class:meeting-avoidance",
-        "label": "Meeting Avoidance"
-      },
-      {
-        "@id": "urn:ngm:class:notification-routing",
+        "@id": "urn:ngm:class:notification-system",
         "label": "Notification Routing"
       },
       {
@@ -462,7 +442,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:activity-inference",
+        "@id": "urn:ngm:class:inference",
         "label": "Activity Inference"
       },
       {
@@ -474,15 +454,7 @@ public:: true
         "label": "Calendar Data"
       },
       {
-        "@id": "urn:ngm:class:focus-mode",
-        "label": "Focus Mode"
-      },
-      {
-        "@id": "urn:ngm:class:keyboard-activity",
-        "label": "Keyboard Activity"
-      },
-      {
-        "@id": "urn:ngm:class:microphone-state",
+        "@id": "urn:ngm:class:microphone",
         "label": "Microphone State"
       }
     ],
@@ -522,7 +494,7 @@ public:: true
         "label": "Team Communication"
       },
       {
-        "@id": "urn:ngm:class:virtual-office",
+        "@id": "urn:ngm:class:virtual-office-spaces",
         "label": "Virtual Office"
       },
       {
@@ -540,16 +512,12 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:microsoft-graph-presence-api",
+        "@id": "urn:ngm:class:presence",
         "label": "Microsoft Graph Presence API"
       },
       {
         "@id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
-      },
-      {
-        "@id": "urn:ngm:class:rfc-3921",
-        "label": "RFC 3921"
       },
       {
         "@id": "urn:ngm:class:xmpp-rfc-6120",

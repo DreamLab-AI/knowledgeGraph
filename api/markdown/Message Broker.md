@@ -23,50 +23,117 @@ public:: true
   "definition": "A message broker is an intermediary software component that translates messages between disparate messaging protocols and routes them between producers and consumers, decoupling the two sides of a communication so that neither needs direct knowledge of the other. It typically provides guaranteed delivery, message queuing, routing rules, protocol translation, and persistence semantics.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": {"@id": "urn:ngm:class:middleware", "label": "Middleware"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:middleware",
+    "label": "Middleware"
+  },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:message-queue", "label": "Message Queue"},
-      {"@id": "urn:ngm:class:publish-subscribe-pattern", "label": "Publish-Subscribe Pattern"},
-      {"@id": "urn:ngm:class:amqp", "label": "AMQP"},
-      {"@id": "urn:ngm:class:mqtt", "label": "MQTT"}
+      {
+        "@id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "@id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:amqp",
+        "label": "AMQP"
+      },
+      {
+        "@id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:event-streaming", "label": "Event Streaming"},
-      {"@id": "urn:ngm:class:asynchronous-messaging", "label": "Asynchronous Messaging"},
-      {"@id": "urn:ngm:class:loose-coupling", "label": "Loose Coupling"},
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"}
+      {
+        "@id": "urn:ngm:class:event-streaming",
+        "label": "Event Streaming"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-messaging",
+        "label": "Asynchronous Messaging"
+      },
+      {
+        "@id": "urn:ngm:class:loose-coupling",
+        "label": "Loose Coupling"
+      },
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:persistent-storage", "label": "Persistent Storage"},
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}
+      {
+        "@id": "urn:ngm:class:persistent-storage",
+        "label": "Persistent Storage"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:dead-letter-queue", "label": "Dead-Letter Queue"},
-      {"@id": "urn:ngm:class:routing-rule", "label": "Routing Rule"},
-      {"@id": "urn:ngm:class:topic", "label": "Topic"}
+      {
+        "@id": "urn:ngm:class:message-queue",
+        "label": "Dead-Letter Queue"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:enterprise-service-bus", "label": "Enterprise Service Bus"},
-      {"@id": "urn:ngm:class:remote-procedure-call", "label": "Remote Procedure Call"}
+      {
+        "@id": "urn:ngm:class:enterprise-service-bus",
+        "label": "Enterprise Service Bus"
+      },
+      {
+        "@id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:apache-kafka", "label": "Apache Kafka"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
-      {"@id": "urn:ngm:class:rabbitmq", "label": "RabbitMQ"},
-      {"@id": "urn:ngm:class:apache-pulsar", "label": "Apache Pulsar"},
-      {"@id": "urn:ngm:class:event-sourcing", "label": "Event Sourcing"}
+      {
+        "@id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:rabbitmq",
+        "label": "RabbitMQ"
+      },
+      {
+        "@id": "urn:ngm:class:apache-pulsar",
+        "label": "Apache Pulsar"
+      },
+      {
+        "@id": "urn:ngm:class:event-sourcing",
+        "label": "Event Sourcing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
-      {"@id": "urn:ngm:class:iot-platform", "label": "IoT Platform"}
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:iot-platform",
+        "label": "IoT Platform"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:amqp", "label": "AMQP"}
+      {
+        "@id": "urn:ngm:class:amqp",
+        "label": "AMQP"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:message-oriented-middleware", "label": "Message-Oriented Middleware"}
+    {
+      "@id": "urn:ngm:class:message-oriented-middleware",
+      "label": "Message-Oriented Middleware"
+    }
   ],
   "quality": 0.8,
   "provenance": {

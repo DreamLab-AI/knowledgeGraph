@@ -124,7 +124,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:nist-special-publication",
+        "@id": "urn:ngm:class:nist",
         "label": "NIST Special Publication"
       },
       {
@@ -144,7 +144,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:nist-special-publication",
+        "@id": "urn:ngm:class:nist",
         "label": "NIST Special Publication"
       },
       {
@@ -152,7 +152,7 @@ public:: true
         "label": "Federal Information Processing Standards"
       },
       {
-        "@id": "urn:ngm:class:iso-iec-standard",
+        "@id": "urn:ngm:class:iso-iec",
         "label": "ISO IEC Standard"
       }
     ],
@@ -166,7 +166,7 @@ public:: true
         "label": "IoT Security"
       },
       {
-        "@id": "urn:ngm:class:quantum-computing",
+        "@id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
       }
     ],

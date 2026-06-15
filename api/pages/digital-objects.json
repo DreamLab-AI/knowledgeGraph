@@ -18,28 +18,16 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:metadata-record",
-        "label": "Metadata Record"
-      },
-      {
         "id": "urn:ngm:class:persistent-identifier",
         "label": "Persistent Identifier"
       },
       {
-        "id": "urn:ngm:class:provenance-chain",
+        "id": "urn:ngm:class:provenance",
         "label": "Provenance Chain"
-      },
-      {
-        "id": "urn:ngm:class:resolution-endpoint",
-        "label": "Resolution Endpoint"
       },
       {
         "id": "urn:ngm:class:transferable-right",
         "label": "Transferable Right"
-      },
-      {
-        "id": "urn:ngm:class:typed-payload",
-        "label": "Typed Payload"
       }
     ],
     "requires": [
@@ -48,34 +36,14 @@
         "label": "Authentication"
       },
       {
-        "id": "urn:ngm:class:cryptographic-binding",
-        "label": "Cryptographic Binding"
-      },
-      {
-        "id": "urn:ngm:class:identifier-registry",
-        "label": "Identifier Registry"
-      },
-      {
-        "id": "urn:ngm:class:resolution-infrastructure",
-        "label": "Resolution Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:storage-layer",
         "label": "Storage Layer"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:citation",
-        "label": "Citation"
-      },
-      {
         "id": "urn:ngm:class:long-term-preservation",
         "label": "Long-Term Preservation"
-      },
-      {
-        "id": "urn:ngm:class:royalty-automation",
-        "label": "Royalty Automation"
       },
       {
         "id": "urn:ngm:class:avatar-portability",
@@ -109,15 +77,11 @@
         "label": "ERC-721"
       },
       {
-        "id": "urn:ngm:class:gl-tf-asset-specification",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF Asset Specification"
       },
       {
-        "id": "urn:ngm:class:handle-system-protocol",
-        "label": "Handle System Protocol"
-      },
-      {
-        "id": "urn:ngm:class:usd-scene-description",
+        "id": "urn:ngm:class:universal-scene-description",
         "label": "USD Scene Description"
       }
     ],
@@ -134,7 +98,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:ark",
+        "id": "urn:ngm:class:ark-protocol",
         "label": "ARK"
       },
       {
@@ -146,28 +110,12 @@
         "label": "C2PA"
       },
       {
-        "id": "urn:ngm:class:doi",
-        "label": "DOI"
-      },
-      {
-        "id": "urn:ngm:class:handle",
-        "label": "Handle"
-      },
-      {
         "id": "urn:ngm:class:ipfs",
         "label": "IPFS"
       },
       {
-        "id": "urn:ngm:class:nft-metadata-standard",
+        "id": "urn:ngm:class:metadata-standard",
         "label": "NFT Metadata Standard"
-      },
-      {
-        "id": "urn:ngm:class:orcid",
-        "label": "ORCID"
-      },
-      {
-        "id": "urn:ngm:class:ror",
-        "label": "ROR"
       },
       {
         "id": "urn:ngm:class:smart-contract",
@@ -196,37 +144,13 @@
         "label": "Internet of Things"
       },
       {
-        "id": "urn:ngm:class:scholarly-communication",
-        "label": "Scholarly Communication"
-      },
-      {
         "id": "urn:ngm:class:metaverse",
         "label": "Metaverse"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:ethereum-smart-contract-platform-erc-721",
-        "label": "Ethereum ERC-721"
-      },
-      {
-        "id": "urn:ngm:class:ietf-rfc-3650",
-        "label": "IETF RFC 3650"
-      },
-      {
-        "id": "urn:ngm:class:ietf-rfc-3651",
-        "label": "IETF RFC 3651"
-      },
-      {
-        "id": "urn:ngm:class:ietf-rfc-3652",
-        "label": "IETF RFC 3652"
-      },
-      {
-        "id": "urn:ngm:class:iso-26324",
-        "label": "ISO 26324"
-      },
-      {
-        "id": "urn:ngm:class:itu-t-x-1255",
+        "id": "urn:ngm:class:itu-t",
         "label": "ITU-T X.1255"
       },
       {

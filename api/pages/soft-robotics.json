@@ -18,15 +18,15 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:pneumatic-actuation",
+        "id": "urn:ngm:class:pneumatic-actuator",
         "label": "Pneumatic Actuation"
       },
       {
-        "id": "urn:ngm:class:compliant-actuator",
+        "id": "urn:ngm:class:actuator",
         "label": "Compliant Actuator"
       },
       {
-        "id": "urn:ngm:class:soft-sensor",
+        "id": "urn:ngm:class:sensor",
         "label": "Soft Sensor"
       }
     ],
@@ -34,10 +34,6 @@
       {
         "id": "urn:ngm:class:finite-element-analysis",
         "label": "Finite Element Analysis"
-      },
-      {
-        "id": "urn:ngm:class:bio-inspired-design",
-        "label": "Bio-Inspired Design"
       }
     ],
     "enables": [
@@ -46,7 +42,7 @@
         "label": "Teleoperation"
       },
       {
-        "id": "urn:ngm:class:adaptive-grasping",
+        "id": "urn:ngm:class:adaptive-control",
         "label": "Adaptive Grasping"
       },
       {
@@ -71,7 +67,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:rigid-body-robotics",
+        "id": "urn:ngm:class:rigid-body-dynamics",
         "label": "Rigid Body Robotics"
       }
     ],
@@ -124,7 +120,7 @@
         "label": "Wearable Robotics"
       },
       {
-        "id": "urn:ngm:class:collaborative-robotics",
+        "id": "urn:ngm:class:collaborative-systems-modality-robotics",
         "label": "Collaborative Robotics"
       }
     ]

@@ -71,10 +71,6 @@ public:: true
       {
         "@id": "urn:ngm:class:network-theory",
         "label": "Network Theory"
-      },
-      {
-        "@id": "urn:ngm:class:nonlinear-dynamics",
-        "label": "Nonlinear Dynamics"
       }
     ],
     "enables": [
@@ -101,7 +97,7 @@ public:: true
         "label": "Feedback Loop"
       },
       {
-        "@id": "urn:ngm:class:agent-based-model",
+        "@id": "urn:ngm:class:agent-based-models",
         "label": "Agent-Based Model"
       },
       {
@@ -127,16 +123,6 @@ public:: true
       {
         "@id": "urn:ngm:class:adaptive-systems",
         "label": "Adaptive Systems"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:reductionism",
-        "label": "Reductionism"
-      },
-      {
-        "@id": "urn:ngm:class:linear-systems",
-        "label": "Linear Systems"
       }
     ],
     "bridgesTo": [

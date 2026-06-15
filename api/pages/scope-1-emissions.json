@@ -16,32 +16,11 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:stationary-combustion-emissions",
-        "label": "Stationary Combustion Emissions"
-      },
-      {
-        "id": "urn:ngm:class:mobile-combustion-emissions",
-        "label": "Mobile Combustion Emissions"
-      },
-      {
-        "id": "urn:ngm:class:process-emissions",
-        "label": "Process Emissions"
-      },
-      {
-        "id": "urn:ngm:class:fugitive-emissions",
-        "label": "Fugitive Emissions"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:third-party-assurance",
         "label": "Third-Party Assurance"
-      },
-      {
-        "id": "urn:ngm:class:operational-control-boundary",
-        "label": "Operational Control Boundary"
       }
     ],
     "enables": [
@@ -62,7 +41,7 @@
         "label": "Net Zero Target Setting"
       },
       {
-        "id": "urn:ngm:class:carbon-trading",
+        "id": "urn:ngm:class:carbon-offset-trading",
         "label": "Carbon Trading"
       }
     ],
@@ -80,10 +59,6 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:carbon-capture-utilisation-and-storage",
-        "label": "Carbon Capture Utilisation and Storage"
-      },
-      {
         "id": "urn:ngm:class:supply-chain-decarbonisation",
         "label": "Supply Chain Decarbonisation"
       }
@@ -96,10 +71,6 @@
       {
         "id": "urn:ngm:class:environmental-accounting",
         "label": "Environmental Accounting"
-      },
-      {
-        "id": "urn:ngm:class:mass-balance-method",
-        "label": "Mass Balance Method"
       },
       {
         "id": "urn:ngm:class:activity-data",
@@ -123,7 +94,7 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:corporate-carbon-footprint",
+        "id": "urn:ngm:class:carbon-footprint",
         "label": "Corporate Carbon Footprint"
       },
       {

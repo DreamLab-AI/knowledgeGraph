@@ -18,20 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:rdf-triple",
-        "label": "RDF Triple"
-      },
-      {
-        "id": "urn:ngm:class:rdf-graph",
-        "label": "RDF Graph"
-      },
-      {
         "id": "urn:ngm:class:iri",
         "label": "IRI"
-      },
-      {
-        "id": "urn:ngm:class:rdf-literal",
-        "label": "RDF Literal"
       }
     ],
     "requires": [
@@ -46,7 +34,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       },
       {
@@ -56,10 +44,6 @@
       {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
-      },
-      {
-        "id": "urn:ngm:class:ontological-reasoning",
-        "label": "Ontological Reasoning"
       },
       {
         "id": "urn:ngm:class:federated-query",
@@ -107,7 +91,7 @@
         "label": "Turtle"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {

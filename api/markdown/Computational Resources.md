@@ -38,50 +38,131 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:central-processing-unit", "label": "Central Processing Unit"},
-      {"@id": "urn:ngm:class:graphics-processing-unit", "label": "Graphics Processing Unit"},
-      {"@id": "urn:ngm:class:memory-subsystem", "label": "Memory Subsystem"},
-      {"@id": "urn:ngm:class:storage", "label": "Storage"},
-      {"@id": "urn:ngm:class:network-fabric", "label": "Network Fabric"}
+      {
+        "@id": "urn:ngm:class:central-processing-unit",
+        "label": "Central Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:memory-subsystem",
+        "label": "Memory Subsystem"
+      },
+      {
+        "@id": "urn:ngm:class:storage-systems",
+        "label": "Storage"
+      },
+      {
+        "@id": "urn:ngm:class:network-fabric",
+        "label": "Network Fabric"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:hardware", "label": "Hardware"},
-      {"@id": "urn:ngm:class:power-management", "label": "Power Management"}
+      {
+        "@id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:rendering-engine", "label": "Rendering Engine"},
-      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:operating-system", "label": "Operating System"},
-      {"@id": "urn:ngm:class:virtualisation", "label": "Virtualisation"}
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:virtualisation",
+        "label": "Virtualisation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:latency", "label": "Latency"},
-      {"@id": "urn:ngm:class:bandwidth", "label": "Bandwidth"}
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:resource-scheduling", "label": "Resource Scheduling"},
-      {"@id": "urn:ngm:class:load-balancing", "label": "Load Balancing"},
-      {"@id": "urn:ngm:class:scalability", "label": "Scalability"},
-      {"@id": "urn:ngm:class:performance-optimisation", "label": "Performance Optimisation"}
+      {
+        "@id": "urn:ngm:class:resource-scheduling",
+        "label": "Resource Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      },
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:optimisation",
+        "label": "Performance Optimisation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:neural-processing-unit", "label": "Neural Processing Unit"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:compute-resources", "label": "Compute Resources"}
+    {
+      "@id": "urn:ngm:class:compute-resources",
+      "label": "Compute Resources"
+    }
   ],
   "quality": 0.72,
   "provenance": {

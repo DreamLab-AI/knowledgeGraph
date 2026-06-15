@@ -143,16 +143,6 @@ alias:: RB-1018-dijkstra-algorithm
         "label": "Graph Search"
       }
     ],
-    "requires": [
-      {
-        "@id": "urn:ngm:class:non-negative-weights",
-        "label": "Non-negative Weights"
-      },
-      {
-        "@id": "urn:ngm:class:weighted-graph",
-        "label": "Weighted Graph"
-      }
-    ],
     "uses": [
       {
         "@id": "urn:ngm:class:graph-representation",

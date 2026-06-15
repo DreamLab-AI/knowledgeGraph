@@ -138,24 +138,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:distributed-decision-network",
+        "@id": "urn:ngm:class:distributed-decision-making",
         "label": "Distributed Decision Network"
       },
       {
-        "@id": "urn:ngm:class:emergent-pattern-detector",
-        "label": "Emergent Pattern Detector"
-      },
-      {
-        "@id": "urn:ngm:class:human-ai-interface",
+        "@id": "urn:ngm:class:human-computer-interface",
         "label": "Human-AI Interface"
-      },
-      {
-        "@id": "urn:ngm:class:knowledge-aggregation-module",
-        "label": "Knowledge Aggregation Module"
-      },
-      {
-        "@id": "urn:ngm:class:swarm-coordination-engine",
-        "label": "Swarm Coordination Engine"
       }
     ],
     "requires": [
@@ -178,14 +166,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:collaborative-systems-modality-decision-making",
-        "label": "Collaborative Decision-Making"
-      },
-      {
-        "@id": "urn:ngm:class:emergent-problem-solving",
-        "label": "Emergent Problem-Solving"
-      },
-      {
         "@id": "urn:ngm:class:swarm-intelligence",
         "label": "Swarm Intelligence"
       },
@@ -196,7 +176,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:collaborative-systems-modality-ai-platform",
+        "@id": "urn:ngm:class:collaborative-systems-modality",
         "label": "Collaborative AI Platform"
       },
       {

@@ -86,11 +86,11 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:governance-process",
+        "@id": "urn:ngm:class:governance",
         "label": "Governance Process"
       },
       {
-        "@id": "urn:ngm:class:corporate-tax-compliance-frameworkonomy-development",
+        "@id": "urn:ngm:class:corporate-tax-compliance-frameworkonomy",
         "label": "Taxonomy Development"
       },
       {
@@ -100,7 +100,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:consistent-indexing",
+        "@id": "urn:ngm:class:on-chain-data-indexing",
         "label": "Consistent Indexing"
       },
       {

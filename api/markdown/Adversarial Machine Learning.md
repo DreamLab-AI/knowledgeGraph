@@ -23,54 +23,135 @@ public:: true
   "definition": "Adversarial machine learning is the study of attacks that exploit vulnerabilities in machine learning models and the development of defences against them, encompassing threats across the model lifecycle including training-time data poisoning, evasion attacks at inference time, model inversion, and membership inference. Attackers craft carefully perturbed inputs or manipulate training data to cause misclassification, extract sensitive information, or degrade model performance, whilst defenders develop robust training procedures, certified defences, and detection mechanisms. The field spans both offensive security research and the development of trustworthy AI systems.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-security", "label": "AI Security"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-security",
+      "label": "AI Security"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:adversarial-attacks", "label": "Adversarial Attacks"},
-      {"@id": "urn:ngm:class:data-poisoning", "label": "Data Poisoning"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:deep-neural-networks", "label": "Deep Neural Networks"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+      {
+        "@id": "urn:ngm:class:adversarial-attacks",
+        "label": "Adversarial Attacks"
+      },
+      {
+        "@id": "urn:ngm:class:data-poisoning",
+        "label": "Data Poisoning"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Deep Neural Networks"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:adversarial-robustness", "label": "Adversarial Robustness"},
-      {"@id": "urn:ngm:class:model-robustness", "label": "Model Robustness"},
-      {"@id": "urn:ngm:class:ai-red-teaming", "label": "AI Red Teaming"},
-      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"}
+      {
+        "@id": "urn:ngm:class:adversarial-robustness",
+        "label": "Adversarial Robustness"
+      },
+      {
+        "@id": "urn:ngm:class:model-robustness",
+        "label": "Model Robustness"
+      },
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "AI Red Teaming"
+      },
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:threat-modelling", "label": "Threat Modelling"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:threat-modelling",
+        "label": "Threat Modelling"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:evasion-attack", "label": "Evasion Attack"},
-      {"@id": "urn:ngm:class:backdoor-attack", "label": "Backdoor Attack"},
-      {"@id": "urn:ngm:class:membership-inference-attack", "label": "Membership Inference Attack"},
-      {"@id": "urn:ngm:class:model-stealing", "label": "Model Stealing"}
+      {
+        "@id": "urn:ngm:class:adversarial-attack",
+        "label": "Evasion Attack"
+      },
+      {
+        "@id": "urn:ngm:class:backdoor-attack",
+        "label": "Backdoor Attack"
+      },
+      {
+        "@id": "urn:ngm:class:membership-inference",
+        "label": "Membership Inference Attack"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"}
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:standard-machine-learning", "label": "Standard Machine Learning"},
-      {"@id": "urn:ngm:class:certified-defence", "label": "Certified Defence"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Standard Machine Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-inversion", "label": "Model Inversion"},
-      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
-      {"@id": "urn:ngm:class:adversarial-testing", "label": "Adversarial Testing"},
-      {"@id": "urn:ngm:class:prompt-injection", "label": "Prompt Injection"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+      {
+        "@id": "urn:ngm:class:model-inversion",
+        "label": "Model Inversion"
+      },
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:adversarial-testing",
+        "label": "Adversarial Testing"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:aml", "label": "AML (Adversarial ML)"},
-    {"@id": "urn:ngm:class:ml-security", "label": "ML Security"}
+    {
+      "@id": "urn:ngm:class:aml",
+      "label": "AML (Adversarial ML)"
+    },
+    {
+      "@id": "urn:ngm:class:ml-security",
+      "label": "ML Security"
+    }
   ],
   "quality": 0.8,
   "provenance": {

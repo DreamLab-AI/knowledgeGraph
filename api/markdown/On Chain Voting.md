@@ -483,12 +483,8 @@ alias:: BC-0462-on-chain-voting, On-Chain Voting, OnChainVoting
         "label": "Delegation Registry"
       },
       {
-        "@id": "urn:ngm:class:governor-contract",
+        "@id": "urn:ngm:class:open-zeppelin-governor",
         "label": "Governor Contract"
-      },
-      {
-        "@id": "urn:ngm:class:proposal-threshold",
-        "label": "Proposal Threshold"
       },
       {
         "@id": "urn:ngm:class:quorum-mechanism",
@@ -501,10 +497,6 @@ alias:: BC-0462-on-chain-voting, On-Chain Voting, OnChainVoting
       {
         "@id": "urn:ngm:class:vote-escrow",
         "label": "Vote Escrow"
-      },
-      {
-        "@id": "urn:ngm:class:voting-period",
-        "label": "Voting Period"
       },
       {
         "@id": "urn:ngm:class:conviction-voting",
@@ -551,10 +543,6 @@ alias:: BC-0462-on-chain-voting, On-Chain Voting, OnChainVoting
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:anti-collusion-voting",
-        "label": "Anti-Collusion Voting"
-      },
-      {
         "@id": "urn:ngm:class:cross-chain-governance",
         "label": "Cross-Chain Governance"
       },
@@ -585,7 +573,7 @@ alias:: BC-0462-on-chain-voting, On-Chain Voting, OnChainVoting
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:compound-governor",
+        "@id": "urn:ngm:class:compound-governor-bravo",
         "label": "Compound Governor"
       },
       {
@@ -593,7 +581,7 @@ alias:: BC-0462-on-chain-voting, On-Chain Voting, OnChainVoting
         "label": "Futarchy"
       },
       {
-        "@id": "urn:ngm:class:maci-anti-collusion",
+        "@id": "urn:ngm:class:maci",
         "label": "MACI Anti-Collusion"
       },
       {
@@ -603,10 +591,6 @@ alias:: BC-0462-on-chain-voting, On-Chain Voting, OnChainVoting
       {
         "@id": "urn:ngm:class:vote-escrow-model",
         "label": "Vote-Escrow Model"
-      },
-      {
-        "@id": "urn:ngm:class:zk-anonymous-voting",
-        "label": "ZK Anonymous Voting"
       },
       {
         "@id": "urn:ngm:class:conviction-voting",
@@ -725,7 +709,7 @@ alias:: BC-0462-on-chain-voting, On-Chain Voting, OnChainVoting
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:aragon-osx-standard",
+        "@id": "urn:ngm:class:aragon",
         "label": "Aragon OSx Standard"
       },
       {
@@ -741,12 +725,15 @@ alias:: BC-0462-on-chain-voting, On-Chain Voting, OnChainVoting
         "label": "ERC-20 Votes"
       },
       {
-        "@id": "urn:ngm:class:open-zeppelin-governor-standard",
+        "@id": "urn:ngm:class:open-zeppelin-governor",
         "label": "OpenZeppelin Governor Standard"
       }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:cryptography-security-and-privacy", "label": "Cryptography Security and Privacy"}
+      {
+        "@id": "urn:ngm:class:cryptography-security-and-privacy",
+        "label": "Cryptography Security and Privacy"
+      }
     ]
   },
   "quality": 0.52,

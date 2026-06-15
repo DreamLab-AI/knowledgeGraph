@@ -65,20 +65,6 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:lightning-offer",
-        "label": "Lightning Offer"
-      },
-      {
-        "@id": "urn:ngm:class:onion-message",
-        "label": "Onion Message"
-      },
-      {
-        "@id": "urn:ngm:class:blinded-path",
-        "label": "Blinded Path"
-      }
-    ],
     "partOf": [
       {
         "@id": "urn:ngm:class:lightning-network-specification",
@@ -105,15 +91,7 @@ public:: true
         "label": "Phoenix"
       },
       {
-        "@id": "urn:ngm:class:recurring-payment",
-        "label": "Recurring Payment"
-      },
-      {
-        "@id": "urn:ngm:class:static-payment-code",
-        "label": "Static Payment Code"
-      },
-      {
-        "@id": "urn:ngm:class:privacy-preserving-payment",
+        "@id": "urn:ngm:class:privacy-preserving",
         "label": "Privacy-Preserving Payment"
       }
     ],
@@ -127,30 +105,16 @@ public:: true
         "label": "Payment Channel"
       }
     ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:offer-protocol",
-        "label": "Offer Protocol"
-      }
-    ],
     "uses": [
       {
         "@id": "urn:ngm:class:tlv-encoding",
         "label": "TLV Encoding"
-      },
-      {
-        "@id": "urn:ngm:class:bech32m",
-        "label": "Bech32m"
       }
     ],
     "supports": [
       {
         "@id": "urn:ngm:class:micropayment",
         "label": "Micropayment"
-      },
-      {
-        "@id": "urn:ngm:class:merchant-payment-flow",
-        "label": "Merchant Payment Flow"
       }
     ],
     "standardizedBy": [
@@ -187,10 +151,6 @@ public:: true
       {
         "@id": "urn:ngm:class:invoice",
         "label": "Invoice"
-      },
-      {
-        "@id": "urn:ngm:class:lightning-node",
-        "label": "Lightning Node"
       }
     ]
   },

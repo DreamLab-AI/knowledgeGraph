@@ -92,7 +92,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:cloud-native-computing",
+        "id": "urn:ngm:class:cloud-native",
         "label": "Cloud Native Computing"
       },
       {
@@ -111,7 +111,7 @@
         "label": "Linux Kernel"
       },
       {
-        "id": "urn:ngm:class:pytorch",
+        "id": "urn:ngm:class:python-pytorch-deep-learning-stack",
         "label": "PyTorch"
       },
       {
@@ -131,7 +131,7 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:open-source-ecosystem",
+        "id": "urn:ngm:class:open-source",
         "label": "Open Source Ecosystem"
       }
     ],

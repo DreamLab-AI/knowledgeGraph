@@ -130,10 +130,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:behavior-mapping",
-        "label": "Behavior Mapping"
-      },
-      {
         "@id": "urn:ngm:class:cross-platform-authentication",
         "label": "Cross-Platform Authentication"
       },
@@ -152,31 +148,11 @@ public:: true
         "label": "Data Serialization"
       },
       {
-        "@id": "urn:ngm:class:identity-protocol",
-        "label": "Identity Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:platform-api",
-        "label": "Platform API"
-      },
-      {
         "@id": "urn:ngm:class:avatar-standard",
         "label": "Avatar Standard"
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:cross-platform-presence",
-        "label": "Cross-Platform Presence"
-      },
-      {
-        "@id": "urn:ngm:class:persistent-identity",
-        "label": "Persistent Identity"
-      },
-      {
-        "@id": "urn:ngm:class:seamless-migration",
-        "label": "Seamless Migration"
-      },
       {
         "@id": "urn:ngm:class:universal-avatar",
         "label": "Universal Avatar"

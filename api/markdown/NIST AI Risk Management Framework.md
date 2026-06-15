@@ -71,7 +71,7 @@ public:: true
         "label": "MANAGE Function"
       },
       {
-        "@id": "urn:ngm:class:ai-rmf-playbook",
+        "@id": "urn:ngm:class:nist-ai-rmf",
         "label": "AI RMF Playbook"
       }
     ],
@@ -99,7 +99,7 @@ public:: true
         "label": "Responsible AI"
       },
       {
-        "@id": "urn:ngm:class:ai-transparency",
+        "@id": "urn:ngm:class:ai-transparency-framework",
         "label": "AI Transparency"
       },
       {
@@ -143,7 +143,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {

@@ -81,10 +81,6 @@
       {
         "id": "urn:ngm:class:monolithic-architecture",
         "label": "Monolithic Architecture"
-      },
-      {
-        "id": "urn:ngm:class:legacy-application",
-        "label": "Legacy Application"
       }
     ],
     "bridgesTo": [

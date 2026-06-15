@@ -84,7 +84,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:hash-algorithm",
+        "@id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Hash Algorithm"
       },
       {
@@ -100,19 +100,11 @@ public:: true
         "label": "Asymmetric Cryptography"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:document-integrity",
-        "label": "Document Integrity"
-      },
-      {
-        "@id": "urn:ngm:class:transaction-authentication",
-        "label": "Transaction Authentication"
-      },
       {
         "@id": "urn:ngm:class:non-repudiation",
         "label": "Non-Repudiation"
@@ -122,18 +114,8 @@ public:: true
         "label": "Identity Attestation"
       },
       {
-        "@id": "urn:ngm:class:secure-message-authentication",
+        "@id": "urn:ngm:class:message-authentication",
         "label": "Secure Message Authentication"
-      }
-    ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:signature-decryption",
-        "label": "Signature Decryption"
-      },
-      {
-        "@id": "urn:ngm:class:hash-comparison",
-        "label": "Hash Comparison"
       }
     ],
     "uses": [
@@ -156,17 +138,13 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:smart-contract-authorization",
-        "label": "Smart Contract Authorization"
-      },
-      {
         "@id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
       }
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:fips-186",
+        "@id": "urn:ngm:class:nist-fips-186",
         "label": "FIPS 186"
       },
       {
@@ -176,7 +154,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:symmetric-message-authentication-code",
+        "@id": "urn:ngm:class:message-authentication-code",
         "label": "Symmetric Message Authentication Code"
       }
     ],

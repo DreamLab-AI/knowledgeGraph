@@ -23,51 +23,93 @@ public:: true
   "definition": "Signal Protocol is an open-source cryptographic messaging protocol that provides end-to-end encryption for instant messaging applications, combining the Double Ratchet Algorithm with the X3DH (Extended Triple Diffie-Hellman) key agreement protocol. It achieves forward secrecy and break-in recovery (future secrecy) by continuously rotating encryption keys after each message exchange.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:secure-messaging", "label": "Secure Messaging"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:secure-messaging",
+    "label": "Secure Messaging"
+  },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:end-to-end-encryption", "label": "End-to-End Encryption"},
-      {"@id": "urn:ngm:class:key-exchange", "label": "Key Exchange"},
-      {"@id": "urn:ngm:class:double-ratchet-algorithm", "label": "Double Ratchet Algorithm"},
-      {"@id": "urn:ngm:class:diffie-hellman-key-exchange", "label": "Diffie-Hellman Key Exchange"},
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
-      {"@id": "urn:ngm:class:aes-gcm", "label": "AES-GCM"}
+      {
+        "@id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:diffie-hellman-key-exchange",
+        "label": "Diffie-Hellman Key Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:aes-gcm",
+        "label": "AES-GCM"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:forward-secrecy", "label": "Forward Secrecy"},
-      {"@id": "urn:ngm:class:post-compromise-security", "label": "Post-Compromise Security"},
-      {"@id": "urn:ngm:class:deniable-authentication", "label": "Deniable Authentication"}
+      {
+        "@id": "urn:ngm:class:forward-secrecy",
+        "label": "Forward Secrecy"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:x3dh-key-agreement", "label": "X3DH Key Agreement"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography", "label": "Public-Key Cryptography"}
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:private-messaging", "label": "Private Messaging"},
-      {"@id": "urn:ngm:class:asynchronous-encrypted-communication", "label": "Asynchronous Encrypted Communication"}
+      {
+        "@id": "urn:ngm:class:secure-messaging",
+        "label": "Private Messaging"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Encrypted Communication"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:transport-layer-security", "label": "Transport Layer Security"},
-      {"@id": "urn:ngm:class:pgp-encryption", "label": "PGP Encryption"}
+      {
+        "@id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:noise-protocol", "label": "Noise Protocol"},
-      {"@id": "urn:ngm:class:messaging-layer-security", "label": "Messaging Layer Security"},
-      {"@id": "urn:ngm:class:pqxdh", "label": "PQXDH Post-Quantum Key Agreement"},
-      {"@id": "urn:ngm:class:kyber-kem", "label": "Kyber KEM"}
+      {
+        "@id": "urn:ngm:class:noise-protocol",
+        "label": "Noise Protocol"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:federated-messaging", "label": "Federated Messaging"},
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:textsecure-protocol", "label": "TextSecure Protocol"},
-    {"@id": "urn:ngm:class:axolotl-protocol", "label": "Axolotl Protocol"}
+    {
+      "@id": "urn:ngm:class:textsecure-protocol",
+      "label": "TextSecure Protocol"
+    },
+    {
+      "@id": "urn:ngm:class:axolotl-protocol",
+      "label": "Axolotl Protocol"
+    }
   ],
   "quality": 0.8,
   "provenance": {

@@ -48,7 +48,7 @@
         "label": "Blockchain Infrastructure"
       },
       {
-        "id": "urn:ngm:class:cryptographic-wallet",
+        "id": "urn:ngm:class:wallet",
         "label": "Cryptographic Wallet"
       }
     ],
@@ -84,20 +84,12 @@
       {
         "id": "urn:ngm:class:decentralization",
         "label": "Decentralization"
-      },
-      {
-        "id": "urn:ngm:class:stakeholder-democracy",
-        "label": "Stakeholder Democracy"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:traditional-corporation",
         "label": "Traditional Corporation"
-      },
-      {
-        "id": "urn:ngm:class:centralized-governance",
-        "label": "Centralized Governance"
       }
     ],
     "bridgesTo": [

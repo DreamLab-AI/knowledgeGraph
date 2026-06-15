@@ -58,49 +58,111 @@ public:: true
   ],
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:anonymity", "label": "Anonymity"},
-      {"@id": "urn:ngm:class:identity-disclosure", "label": "Identity Disclosure"},
-      {"@id": "urn:ngm:class:real-name-policy", "label": "Real-Name Policy"}
+      {
+        "@id": "urn:ngm:class:anonymity",
+        "label": "Anonymity"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:identifier", "label": "Identifier"},
-      {"@id": "urn:ngm:class:key-pair", "label": "Key Pair"}
+      {
+        "@id": "urn:ngm:class:key-pair",
+        "label": "Key Pair"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:reputation-system", "label": "Reputation System"},
-      {"@id": "urn:ngm:class:selective-disclosure", "label": "Selective Disclosure"},
-      {"@id": "urn:ngm:class:whistleblowing", "label": "Whistleblowing"},
-      {"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"}
+      {
+        "@id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
+      },
+      {
+        "@id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:whistleblowing",
+        "label": "Whistleblowing"
+      },
+      {
+        "@id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:ring-signature", "label": "Ring Signature"},
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:ring-signature",
+        "label": "Ring Signature"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:decentralized-identifier", "label": "Decentralized Identifier"},
-      {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"}
+      {
+        "@id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"},
-      {"@id": "urn:ngm:class:unlinkability", "label": "Unlinkability"},
-      {"@id": "urn:ngm:class:contextual-integrity", "label": "Contextual Integrity"},
-      {"@id": "urn:ngm:class:deanonymisation", "label": "Deanonymisation"},
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}
+      {
+        "@id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "@id": "urn:ngm:class:unlinkability",
+        "label": "Unlinkability"
+      },
+      {
+        "@id": "urn:ngm:class:deanonymisation",
+        "label": "Deanonymisation"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:tor-network", "label": "Tor Network"}
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:tor",
+        "label": "Tor Network"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:w3c-did-core", "label": "W3C DID Core"},
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"}
+      {
+        "@id": "urn:ngm:class:w3-c-did-core",
+        "label": "W3C DID Core"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:pseudonymous-identity", "label": "Pseudonymous Identity"}
+    {
+      "@id": "urn:ngm:class:pseudonymous-identity",
+      "label": "Pseudonymous Identity"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

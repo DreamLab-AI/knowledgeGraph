@@ -38,70 +38,153 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:accelerometer", "label": "Accelerometer"},
-      {"@id": "urn:ngm:class:gyroscope", "label": "Gyroscope"},
-      {"@id": "urn:ngm:class:magnetometer", "label": "Magnetometer"},
-      {"@id": "urn:ngm:class:digital-motion-processor", "label": "Digital Motion Processor"}
+      {
+        "@id": "urn:ngm:class:accelerometer",
+        "label": "Accelerometer"
+      },
+      {
+        "@id": "urn:ngm:class:gyroscope",
+        "label": "Gyroscope"
+      },
+      {
+        "@id": "urn:ngm:class:magnetometer",
+        "label": "Magnetometer"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:inertial-navigation-system", "label": "Inertial Navigation System"},
-      {"@id": "urn:ngm:class:xr-headset", "label": "XR Headset"},
-      {"@id": "urn:ngm:class:flight-controller", "label": "Flight Controller"}
+      {
+        "@id": "urn:ngm:class:inertial-navigation-system",
+        "label": "Inertial Navigation System"
+      },
+      {
+        "@id": "urn:ngm:class:xr-headset",
+        "label": "XR Headset"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:mems", "label": "MEMS"},
-      {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"},
-      {"@id": "urn:ngm:class:analogue-to-digital-converter", "label": "Analogue-to-Digital Converter"}
+      {
+        "@id": "urn:ngm:class:mems",
+        "label": "MEMS"
+      },
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "@id": "urn:ngm:class:analog-to-digital-converter",
+        "label": "Analogue-to-Digital Converter"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:motion-tracking", "label": "Motion Tracking"},
-      {"@id": "urn:ngm:class:dead-reckoning", "label": "Dead Reckoning"},
-      {"@id": "urn:ngm:class:6dof-tracking", "label": "6-DoF Tracking"},
-      {"@id": "urn:ngm:class:attitude-estimation", "label": "Attitude Estimation"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:dead-reckoning",
+        "label": "Dead Reckoning"
+      },
+      {
+        "@id": "urn:ngm:class:6dof-tracking",
+        "label": "6-DoF Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:attitude-estimation",
+        "label": "Attitude Estimation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:strapdown-navigation", "label": "Strapdown Navigation"},
-      {"@id": "urn:ngm:class:newton-euler-dynamics", "label": "Newton-Euler Dynamics"}
+      {
+        "@id": "urn:ngm:class:newton-euler-dynamics",
+        "label": "Newton-Euler Dynamics"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:quaternion", "label": "Quaternion"},
-      {"@id": "urn:ngm:class:euler-angles", "label": "Euler Angles"},
-      {"@id": "urn:ngm:class:complementary-filter", "label": "Complementary Filter"},
-      {"@id": "urn:ngm:class:rotation-matrix", "label": "Rotation Matrix"}
+      {
+        "@id": "urn:ngm:class:quaternion-math",
+        "label": "Quaternion"
+      },
+      {
+        "@id": "urn:ngm:class:euler-angles",
+        "label": "Euler Angles"
+      },
+      {
+        "@id": "urn:ngm:class:complementary-filter",
+        "label": "Complementary Filter"
+      },
+      {
+        "@id": "urn:ngm:class:rotation-matrix",
+        "label": "Rotation Matrix"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
-      {"@id": "urn:ngm:class:visual-inertial-odometry", "label": "Visual-Inertial Odometry"},
-      {"@id": "urn:ngm:class:hand-tracking", "label": "Hand Tracking"},
-      {"@id": "urn:ngm:class:gait-analysis", "label": "Gait Analysis"}
-    ],
-    "standardizedBy": [
-      {"@id": "urn:ngm:class:ieee-1559", "label": "IEEE 1559"},
-      {"@id": "urn:ngm:class:ieee-952", "label": "IEEE 952"}
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:visual-inertial-odometry",
+        "label": "Visual-Inertial Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:gps", "label": "Gps"},
-      {"@id": "urn:ngm:class:optical-tracking", "label": "Optical Tracking"}
+      {
+        "@id": "urn:ngm:class:gps",
+        "label": "Gps"
+      },
+      {
+        "@id": "urn:ngm:class:optical-tracking",
+        "label": "Optical Tracking"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:real-time-operating-system", "label": "Real-Time Operating System"}
+      {
+        "@id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robot-proprioception", "label": "Robot Proprioception"},
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
-      {"@id": "urn:ngm:class:human-motion-capture", "label": "Human Motion Capture"}
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Human Motion Capture"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
-      {"@id": "urn:ngm:class:motion-sickness", "label": "Motion Sickness"},
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:gnss", "label": "GNSS"}
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:gnss",
+        "label": "GNSS"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:inertial-measurement-unit", "label": "Inertial Measurement Unit"}
+    {
+      "@id": "urn:ngm:class:inertial-measurement-unit",
+      "label": "Inertial Measurement Unit"
+    }
   ],
   "quality": 0.76,
   "provenance": {

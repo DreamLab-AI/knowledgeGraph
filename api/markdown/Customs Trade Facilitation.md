@@ -406,39 +406,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:advance-cargo-information-system",
-        "label": "Advance Cargo Information System"
-      },
-      {
-        "@id": "urn:ngm:class:authorised-economic-operator",
-        "label": "Authorised Economic Operator"
-      },
-      {
-        "@id": "urn:ngm:class:certificate-of-origin",
-        "label": "Certificate of Origin"
-      },
-      {
-        "@id": "urn:ngm:class:customs-declaration",
-        "label": "Customs Declaration"
-      },
-      {
-        "@id": "urn:ngm:class:electronic-bill-of-lading",
-        "label": "Electronic Bill of Lading"
-      },
-      {
         "@id": "urn:ngm:class:risk-assessment-engine",
         "label": "Risk Assessment Engine"
       },
       {
-        "@id": "urn:ngm:class:single-window-system",
-        "label": "Single Window System"
-      },
-      {
-        "@id": "urn:ngm:class:tariff-classification-system",
-        "label": "Tariff Classification System"
-      },
-      {
-        "@id": "urn:ngm:class:trade-finance-instrument",
+        "@id": "urn:ngm:class:trade-finance",
         "label": "Trade Finance Instrument"
       },
       {
@@ -460,7 +432,7 @@ public:: true
         "label": "Distributed Ledger Technology"
       },
       {
-        "@id": "urn:ngm:class:electronic-signature",
+        "@id": "urn:ngm:class:digital-signature-verification",
         "label": "Electronic Signature"
       },
       {
@@ -468,7 +440,7 @@ public:: true
         "label": "Interoperability Standard"
       },
       {
-        "@id": "urn:ngm:class:risk-scoring-algorithm",
+        "@id": "urn:ngm:class:risk-scoring-engine",
         "label": "Risk Scoring Algorithm"
       },
       {
@@ -482,35 +454,19 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:anti-fraud-verification",
+        "@id": "urn:ngm:class:fraud-detection",
         "label": "Anti-Fraud Verification"
-      },
-      {
-        "@id": "urn:ngm:class:automated-duty-calculation",
-        "label": "Automated Duty Calculation"
       },
       {
         "@id": "urn:ngm:class:carbon-border-adjustment",
         "label": "Carbon Border Adjustment"
       },
       {
-        "@id": "urn:ngm:class:coordinated-border-management",
-        "label": "Coordinated Border Management"
-      },
-      {
-        "@id": "urn:ngm:class:paperless-trade",
-        "label": "Paperless Trade"
-      },
-      {
-        "@id": "urn:ngm:class:pre-arrival-clearance",
-        "label": "Pre-Arrival Clearance"
-      },
-      {
-        "@id": "urn:ngm:class:sme-trade-finance-access",
+        "@id": "urn:ngm:class:trade-finance",
         "label": "SME Trade Finance Access"
       },
       {
-        "@id": "urn:ngm:class:sustainability-traceability",
+        "@id": "urn:ngm:class:traceability",
         "label": "Sustainability Traceability"
       },
       {
@@ -524,20 +480,12 @@ public:: true
         "label": "EU Union Customs Code"
       },
       {
-        "@id": "urn:ngm:class:gs1-epcis-standards",
+        "@id": "urn:ngm:class:gs1-epcis",
         "label": "GS1 EPCIS Standards"
       },
       {
-        "@id": "urn:ngm:class:hmrc-cds",
+        "@id": "urn:ngm:class:hmrc",
         "label": "HMRC CDS"
-      },
-      {
-        "@id": "urn:ngm:class:un-cefact-trade-data-standards",
-        "label": "UN/CEFACT Trade Data Standards"
-      },
-      {
-        "@id": "urn:ngm:class:uncitral-model-law-on-electronic-transferable-records",
-        "label": "UNCITRAL Model Law on Electronic Transferable Records"
       },
       {
         "@id": "urn:ngm:class:wco-safe-framework",
@@ -575,10 +523,6 @@ public:: true
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:gsbn",
-        "label": "GSBN"
-      },
       {
         "@id": "urn:ngm:class:api-gateway",
         "label": "API Gateway"
@@ -640,20 +584,12 @@ public:: true
         "label": "GS1 Standards"
       },
       {
-        "@id": "urn:ngm:class:icc-uniform-customs-and-practice",
-        "label": "ICC Uniform Customs and Practice"
-      },
-      {
         "@id": "urn:ngm:class:iso-28000",
         "label": "ISO 28000"
       },
       {
         "@id": "urn:ngm:class:un-cefact",
         "label": "UN/CEFACT"
-      },
-      {
-        "@id": "urn:ngm:class:uncitral",
-        "label": "UNCITRAL"
       },
       {
         "@id": "urn:ngm:class:wco-safe-framework",

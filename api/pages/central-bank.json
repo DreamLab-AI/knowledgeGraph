@@ -28,22 +28,9 @@
       {
         "id": "urn:ngm:class:reserve-requirements",
         "label": "Reserve Requirements"
-      },
-      {
-        "id": "urn:ngm:class:discount-window",
-        "label": "Discount Window"
       }
     ],
-    "requires": [
-      {
-        "id": "urn:ngm:class:central-bank-independence",
-        "label": "Central Bank Independence"
-      },
-      {
-        "id": "urn:ngm:class:foreign-exchange-reserves",
-        "label": "Foreign Exchange Reserves"
-      }
-    ],
+    "requires": [],
     "enables": [
       {
         "id": "urn:ngm:class:central-bank-digital-currency",
@@ -66,10 +53,6 @@
       {
         "id": "urn:ngm:class:interbank-market",
         "label": "Interbank Market"
-      },
-      {
-        "id": "urn:ngm:class:government-bond-market",
-        "label": "Government Bond Market"
       }
     ],
     "implements": [],
@@ -104,7 +87,7 @@
         "label": "Financial Stability"
       },
       {
-        "id": "urn:ngm:class:banking-supervision",
+        "id": "urn:ngm:class:basel-committee-on-banking-supervision",
         "label": "Banking Supervision"
       }
     ],

@@ -134,14 +134,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:deletion-request",
-        "label": "Deletion Request"
-      },
-      {
-        "@id": "urn:ngm:class:erasure-verification",
-        "label": "Erasure Verification"
-      },
-      {
         "@id": "urn:ngm:class:privacy-policy",
         "label": "Privacy Policy"
       },
@@ -170,26 +162,14 @@ public:: true
         "label": "Compliance Reporting"
       },
       {
-        "@id": "urn:ngm:class:content-removal",
-        "label": "Content Removal"
-      },
-      {
-        "@id": "urn:ngm:class:data-erasure",
-        "label": "Data Erasure"
-      },
-      {
         "@id": "urn:ngm:class:user-privacy-control",
         "label": "User Privacy Control"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:data-protection-framework",
+        "@id": "urn:ngm:class:data-protection",
         "label": "Data Protection Framework"
-      },
-      {
-        "@id": "urn:ngm:class:privacy-rights-system",
-        "label": "Privacy Rights System"
       }
     ]
   },

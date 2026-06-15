@@ -84,15 +84,11 @@ alias:: FeatureEngineering
       {
         "@id": "urn:ngm:class:dimensionality-reduction",
         "label": "Dimensionality Reduction"
-      },
-      {
-        "@id": "urn:ngm:class:categorical-encoding",
-        "label": "Categorical Encoding"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:machine-learning-pipeline",
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
       },
       {
@@ -188,7 +184,7 @@ alias:: FeatureEngineering
         "label": "Data Augmentation"
       },
       {
-        "@id": "urn:ngm:class:shap-values",
+        "@id": "urn:ngm:class:shap",
         "label": "SHAP Values"
       }
     ]

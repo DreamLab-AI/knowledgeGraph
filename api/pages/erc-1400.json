@@ -35,14 +35,6 @@
       {
         "id": "urn:ngm:class:asset-tokenisation",
         "label": "Asset Tokenisation"
-      },
-      {
-        "id": "urn:ngm:class:compliant-transfer",
-        "label": "Compliant Transfer"
-      },
-      {
-        "id": "urn:ngm:class:token-partition",
-        "label": "Token Partition"
       }
     ],
     "dependsOn": [],
@@ -50,22 +42,6 @@
       {
         "id": "urn:ngm:class:erc-20",
         "label": "ERC-20"
-      },
-      {
-        "id": "urn:ngm:class:erc-1410",
-        "label": "ERC-1410"
-      },
-      {
-        "id": "urn:ngm:class:erc-1594",
-        "label": "ERC-1594"
-      },
-      {
-        "id": "urn:ngm:class:erc-1643",
-        "label": "ERC-1643"
-      },
-      {
-        "id": "urn:ngm:class:erc-1644",
-        "label": "ERC-1644"
       }
     ],
     "contrastsWith": [
@@ -76,10 +52,6 @@
       {
         "id": "urn:ngm:class:erc-721",
         "label": "ERC-721"
-      },
-      {
-        "id": "urn:ngm:class:st-20",
-        "label": "ST-20"
       }
     ],
     "bridgesTo": [
@@ -100,10 +72,6 @@
       {
         "id": "urn:ngm:class:transfer-restriction",
         "label": "Transfer Restriction"
-      },
-      {
-        "id": "urn:ngm:class:on-chain-document-management",
-        "label": "On-Chain Document Management"
       },
       {
         "id": "urn:ngm:class:role-based-access-control",
@@ -140,7 +108,7 @@
         "label": "Ethereum Improvement Proposal"
       },
       {
-        "id": "urn:ngm:class:real-world-assets",
+        "id": "urn:ngm:class:tokenised-real-world-assets",
         "label": "Real-World Assets"
       }
     ]

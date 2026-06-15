@@ -23,12 +23,7 @@
         "label": "Virtual Reality Telepresence"
       }
     ],
-    "enables": [
-      {
-        "id": "urn:ngm:class:embodied-metaverse-collaboration",
-        "label": "EmbodiedMetaverseCollaboration"
-      }
-    ],
+    "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],

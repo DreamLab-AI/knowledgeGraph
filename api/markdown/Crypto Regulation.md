@@ -133,7 +133,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:markets-in-crypto-assets-regulation",
+        "@id": "urn:ngm:class:bc-0484-markets-in-crypto-assets",
         "label": "Markets in Crypto-Assets Regulation"
       },
       {

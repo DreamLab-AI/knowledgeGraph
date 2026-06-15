@@ -59,10 +59,6 @@ public:: true
       {
         "@id": "urn:ngm:class:synthetic-data",
         "label": "Synthetic Data"
-      },
-      {
-        "@id": "urn:ngm:class:scene-generation",
-        "label": "Scene Generation"
       }
     ],
     "requires": [
@@ -127,11 +123,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:physical-robot-testing",
-        "label": "Physical Robot Testing"
-      },
-      {
-        "@id": "urn:ngm:class:hardware-in-the-loop",
+        "@id": "urn:ngm:class:hardware-in-the-loop-testing",
         "label": "Hardware-in-the-Loop"
       }
     ],

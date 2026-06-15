@@ -454,32 +454,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:forward-noising-process",
-        "label": "Forward Noising Process"
-      },
-      {
         "@id": "urn:ngm:class:noise-schedule",
         "label": "Noise Schedule"
       },
       {
-        "@id": "urn:ngm:class:reverse-denoising-process",
-        "label": "Reverse Denoising Process"
-      },
-      {
-        "@id": "urn:ngm:class:sampler",
-        "label": "Sampler"
-      },
-      {
-        "@id": "urn:ngm:class:score-network",
-        "label": "Score Network"
-      },
-      {
         "@id": "urn:ngm:class:text-encoder",
         "label": "Text Encoder"
-      },
-      {
-        "@id": "urn:ngm:class:variational-lower-bound",
-        "label": "Variational Lower Bound"
       }
     ],
     "requires": [
@@ -550,10 +530,6 @@ public:: true
       {
         "@id": "urn:ngm:class:stochastic-differential-equation",
         "label": "Stochastic Differential Equation"
-      },
-      {
-        "@id": "urn:ngm:class:variational-lower-bound-maximisation",
-        "label": "Variational Lower Bound Maximisation"
       }
     ],
     "uses": [
@@ -572,10 +548,6 @@ public:: true
       {
         "@id": "urn:ngm:class:diffusion-transformer",
         "label": "Diffusion Transformer"
-      },
-      {
-        "@id": "urn:ngm:class:t5-encoder",
-        "label": "T5 Encoder"
       },
       {
         "@id": "urn:ngm:class:u-net",
@@ -600,7 +572,7 @@ public:: true
         "label": "Synthetic Media"
       },
       {
-        "@id": "urn:ngm:class:text-to-video",
+        "@id": "urn:ngm:class:text-to-video-generation",
         "label": "Text-to-Video"
       },
       {

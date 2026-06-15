@@ -76,11 +76,7 @@ public:: true
         "label": "AI Impact Assessment"
       },
       {
-        "@id": "urn:ngm:class:ai-bill-of-materials",
-        "label": "AI Bill of Materials"
-      },
-      {
-        "@id": "urn:ngm:class:ai-incident-response",
+        "@id": "urn:ngm:class:incident-response",
         "label": "AI Incident Response"
       },
       {
@@ -100,7 +96,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:model-explainability",
+        "@id": "urn:ngm:class:explainability",
         "label": "Model Explainability"
       },
       {
@@ -124,11 +120,11 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:ai-transparency",
+        "@id": "urn:ngm:class:ai-transparency-framework",
         "label": "AI Transparency"
       },
       {
-        "@id": "urn:ngm:class:threat-modeling",
+        "@id": "urn:ngm:class:threat-modelling",
         "label": "Threat Modeling"
       }
     ],
@@ -138,7 +134,7 @@ public:: true
         "label": "NIST AI Risk Management Framework"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -168,12 +164,6 @@ public:: true
         "label": "ISO 42001"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:ai-assurance",
-        "label": "AI Assurance"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:smart-contract",
@@ -186,7 +176,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:bias-detection",
+        "@id": "urn:ngm:class:bias-detection-methods",
         "label": "Bias Detection"
       },
       {

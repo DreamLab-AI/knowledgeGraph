@@ -107,10 +107,6 @@ public:: true
       {
         "@id": "urn:ngm:class:relation",
         "label": "Relation"
-      },
-      {
-        "@id": "urn:ngm:class:triple",
-        "label": "Triple"
       }
     ],
     "uses": [
@@ -169,7 +165,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:semantic-web",
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       },
       {

@@ -22,16 +22,8 @@
         "label": "Type System"
       },
       {
-        "id": "urn:ngm:class:generics",
-        "label": "Generics"
-      },
-      {
         "id": "urn:ngm:class:interface",
         "label": "Interface"
-      },
-      {
-        "id": "urn:ngm:class:typescript-compiler",
-        "label": "TypeScript Compiler"
       }
     ],
     "requires": [
@@ -72,28 +64,11 @@
         "label": "npm"
       }
     ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:structural-typing",
-        "label": "Structural Typing"
-      },
-      {
-        "id": "urn:ngm:class:type-inference",
-        "label": "Type Inference"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:javascript",
         "label": "JavaScript"
-      },
-      {
-        "id": "urn:ngm:class:flow-type-checker",
-        "label": "Flow Type Checker"
-      },
-      {
-        "id": "urn:ngm:class:dart",
-        "label": "Dart"
       }
     ],
     "bridgesTo": [
@@ -108,10 +83,6 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:abstract-syntax-tree",
-        "label": "Abstract Syntax Tree"
-      },
-      {
         "id": "urn:ngm:class:language-server-protocol",
         "label": "Language Server Protocol"
       }
@@ -120,14 +91,6 @@
       {
         "id": "urn:ngm:class:react",
         "label": "React"
-      },
-      {
-        "id": "urn:ngm:class:angular",
-        "label": "Angular"
-      },
-      {
-        "id": "urn:ngm:class:deno",
-        "label": "Deno"
       }
     ],
     "standardizedBy": [
@@ -140,26 +103,8 @@
         "label": "ECMA International"
       }
     ],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:javascript-ecosystem",
-        "label": "JavaScript Ecosystem"
-      }
-    ],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:transpilation",
-        "label": "Transpilation"
-      },
-      {
-        "id": "urn:ngm:class:webpack",
-        "label": "Webpack"
-      },
-      {
-        "id": "urn:ngm:class:eslint",
-        "label": "ESLint"
-      }
-    ]
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -75,7 +75,7 @@ public:: true
         "label": "Recall"
       },
       {
-        "@id": "urn:ngm:class:binary-classification",
+        "@id": "urn:ngm:class:classification",
         "label": "Binary Classification"
       }
     ],
@@ -163,7 +163,7 @@ public:: true
         "label": "Anomaly Detection"
       },
       {
-        "@id": "urn:ngm:class:medical-diagnosis",
+        "@id": "urn:ngm:class:medical-diagnosis-ai",
         "label": "Medical Diagnosis"
       }
     ]

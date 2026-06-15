@@ -130,16 +130,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:fractionalization-contract",
-        "label": "Fractionalization Contract"
-      },
-      {
         "@id": "urn:ngm:class:nft",
         "label": "NFT"
-      },
-      {
-        "@id": "urn:ngm:class:ownership-registry",
-        "label": "Ownership Registry"
       },
       {
         "@id": "urn:ngm:class:fungible-token",
@@ -152,10 +144,6 @@ public:: true
         "label": "ERC-1155"
       },
       {
-        "@id": "urn:ngm:class:fractionalization-protocol",
-        "label": "Fractionalization Protocol"
-      },
-      {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
       },
@@ -165,18 +153,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:collective-ownership",
-        "label": "Collective Ownership"
-      },
-      {
-        "@id": "urn:ngm:class:fractional-trading",
-        "label": "Fractional Trading"
-      },
-      {
-        "@id": "urn:ngm:class:nft-liquidity",
-        "label": "NFT Liquidity"
-      },
       {
         "@id": "urn:ngm:class:price-discovery",
         "label": "Price Discovery"

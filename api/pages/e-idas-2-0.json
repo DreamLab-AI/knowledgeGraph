@@ -18,25 +18,17 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:european-digital-identity-wallet",
+        "id": "urn:ngm:class:digital-identity-wallet",
         "label": "European Digital Identity Wallet"
-      },
-      {
-        "id": "urn:ngm:class:qualified-electronic-attestation-of-attributes",
-        "label": "Qualified Electronic Attestation of Attributes"
       },
       {
         "id": "urn:ngm:class:qualified-electronic-signature",
         "label": "Qualified Electronic Signature"
-      },
-      {
-        "id": "urn:ngm:class:architecture-and-reference-framework",
-        "label": "Architecture and Reference Framework"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -44,7 +36,7 @@
         "label": "Selective Disclosure"
       },
       {
-        "id": "urn:ngm:class:conformance-testing",
+        "id": "urn:ngm:class:standards-conformance-testing",
         "label": "Conformance Testing"
       }
     ],
@@ -72,7 +64,7 @@
         "label": "Trust Service Provider"
       },
       {
-        "id": "urn:ngm:class:member-state-digital-infrastructure",
+        "id": "urn:ngm:class:digital-infrastructure",
         "label": "Member State Digital Infrastructure"
       }
     ],
@@ -86,7 +78,7 @@
         "label": "Decentralised Identifiers"
       },
       {
-        "id": "urn:ngm:class:openid-connect",
+        "id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
       }
     ],
@@ -100,7 +92,7 @@
         "label": "Social Login"
       },
       {
-        "id": "urn:ngm:class:centralised-identity-provider",
+        "id": "urn:ngm:class:centralized-identity-provider",
         "label": "Centralised Identity Provider"
       }
     ],
@@ -108,10 +100,6 @@
       {
         "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
-      },
-      {
-        "id": "urn:ngm:class:artificial-intelligence-act",
-        "label": "Artificial Intelligence Act"
       }
     ],
     "uses": [
@@ -124,7 +112,7 @@
         "label": "Cryptographic Key Management"
       },
       {
-        "id": "urn:ngm:class:mdoc-iso-18013-5",
+        "id": "urn:ngm:class:iso-iec-18013-5-m-dl",
         "label": "mDoc ISO 18013-5"
       }
     ],

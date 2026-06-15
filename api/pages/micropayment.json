@@ -18,15 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:fee-calculation",
-        "label": "Fee Calculation"
-      },
-      {
         "id": "urn:ngm:class:payment-protocol",
         "label": "Payment Protocol"
       },
       {
-        "id": "urn:ngm:class:settlement-mechanism",
+        "id": "urn:ngm:class:settlement",
         "label": "Settlement Mechanism"
       },
       {
@@ -36,7 +32,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:cryptographic-authentication",
+        "id": "urn:ngm:class:authentication",
         "label": "Cryptographic Authentication"
       },
       {
@@ -50,16 +46,12 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:instant-settlements",
+        "id": "urn:ngm:class:instant-settlement",
         "label": "Instant Settlements"
       },
       {
         "id": "urn:ngm:class:microtransactions",
         "label": "Microtransactions"
-      },
-      {
-        "id": "urn:ngm:class:pay-per-use-models",
-        "label": "Pay-Per-Use Models"
       },
       {
         "id": "urn:ngm:class:content-monetisation",
@@ -79,7 +71,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:traditional-banking-transfer",
+        "id": "urn:ngm:class:traditional-banking",
         "label": "Traditional Banking Transfer"
       }
     ],

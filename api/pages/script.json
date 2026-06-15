@@ -36,7 +36,7 @@
         "label": "Digital Signature"
       },
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       }
     ],
@@ -65,10 +65,6 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:spending-condition",
-        "label": "Spending Condition"
-      },
-      {
         "id": "urn:ngm:class:pay-to-public-key-hash",
         "label": "Pay-To-Public-Key-Hash"
       }
@@ -79,7 +75,7 @@
         "label": "Turing-Complete Language"
       },
       {
-        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       }
     ],
@@ -143,10 +139,6 @@
       {
         "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
-      },
-      {
-        "id": "urn:ngm:class:node-validation",
-        "label": "Node Validation"
       }
     ]
   },

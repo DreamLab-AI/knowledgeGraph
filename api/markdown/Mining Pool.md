@@ -75,59 +75,141 @@ public:: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:cryptocurrency-mining-ecosystem", "label": "Cryptocurrency Mining Ecosystem"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:pool-operator", "label": "Pool Operator"},
-      {"@id": "urn:ngm:class:mining-worker", "label": "Mining Worker"},
-      {"@id": "urn:ngm:class:pool-server", "label": "Pool Server"},
-      {"@id": "urn:ngm:class:reward-distribution-mechanism", "label": "Reward Distribution Mechanism"}
+      {
+        "@id": "urn:ngm:class:mining",
+        "label": "Mining Worker"
+      },
+      {
+        "@id": "urn:ngm:class:reward-distribution",
+        "label": "Reward Distribution Mechanism"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:network-connectivity", "label": "Network Connectivity"},
-      {"@id": "urn:ngm:class:stratum-protocol", "label": "Stratum Protocol"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:network-connectivity",
+        "label": "Network Connectivity"
+      },
+      {
+        "@id": "urn:ngm:class:stratum-protocol",
+        "label": "Stratum Protocol"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:stratum-protocol", "label": "Stratum Protocol"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:stratum-protocol",
+        "label": "Stratum Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:block-validation", "label": "Block Validation"},
-      {"@id": "urn:ngm:class:income-smoothing", "label": "Income Smoothing"}
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:block-validation",
+        "label": "Block Validation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:hash-rate", "label": "Hash Rate"},
-      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
-      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"}
+      {
+        "@id": "urn:ngm:class:hash-rate",
+        "label": "Hash Rate"
+      },
+      {
+        "@id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:solo-mining", "label": "Solo Mining"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:merged-mining", "label": "Merged Mining"}
+      {
+        "@id": "urn:ngm:class:solo-mining",
+        "label": "Solo Mining"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:mining",
+        "label": "Merged Mining"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
-      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"},
-      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
-      {"@id": "urn:ngm:class:mempool", "label": "Mempool"},
-      {"@id": "urn:ngm:class:network-hashrate-distribution", "label": "Network Hashrate Distribution"},
-      {"@id": "urn:ngm:class:51-percent-attack", "label": "51 Percent Attack"},
-      {"@id": "urn:ngm:class:difficulty-adjustment", "label": "Difficulty Adjustment"}
+      {
+        "@id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "@id": "urn:ngm:class:51-attack",
+        "label": "51 Percent Attack"
+      },
+      {
+        "@id": "urn:ngm:class:difficulty-adjustment",
+        "label": "Difficulty Adjustment"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
-      {"@id": "urn:ngm:class:incentive-mechanism", "label": "Incentive Mechanism"}
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:incentive-mechanism",
+        "label": "Incentive Mechanism"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:cooperative-mining-pool", "label": "Cooperative Mining Pool"},
-    {"@id": "urn:ngm:class:hash-rate-pool", "label": "Hash Rate Pool"}
+    {
+      "@id": "urn:ngm:class:cooperative-mining-pool",
+      "label": "Cooperative Mining Pool"
+    },
+    {
+      "@id": "urn:ngm:class:hash-rate-pool",
+      "label": "Hash Rate Pool"
+    }
   ],
   "quality": 0.72,
   "provenance": {

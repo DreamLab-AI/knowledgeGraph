@@ -18,18 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:array",
-        "label": "Array"
-      },
-      {
-        "id": "urn:ngm:class:tree",
-        "label": "Tree"
-      },
-      {
-        "id": "urn:ngm:class:hash-table",
-        "label": "Hash Table"
-      },
-      {
         "id": "urn:ngm:class:tensor",
         "label": "Tensor"
       }
@@ -56,10 +44,6 @@
       {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
-      },
-      {
-        "id": "urn:ngm:class:database-indexing",
-        "label": "Database Indexing"
       }
     ],
     "dependsOn": [
@@ -73,12 +57,7 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:unstructured-data",
-        "label": "Unstructured Data"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:distributed-storage",
@@ -97,10 +76,6 @@
       {
         "id": "urn:ngm:class:cache-coherence",
         "label": "Cache Coherence"
-      },
-      {
-        "id": "urn:ngm:class:pointer",
-        "label": "Pointer"
       }
     ],
     "supports": [
@@ -113,7 +88,7 @@
         "label": "Sparse Matrix"
       },
       {
-        "id": "urn:ngm:class:computational-complexity",
+        "id": "urn:ngm:class:computational-complexity-theory",
         "label": "Computational Complexity"
       }
     ],
@@ -125,18 +100,6 @@
       }
     ],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:computational-abstraction",
-        "label": "Computational Abstraction"
-      },
-      {
-        "id": "urn:ngm:class:tensor-operations",
-        "label": "Tensor Operations"
-      },
-      {
-        "id": "urn:ngm:class:memory-optimization",
-        "label": "Memory Optimization"
-      },
       {
         "id": "urn:ngm:class:graph-theory",
         "label": "Graph Theory"

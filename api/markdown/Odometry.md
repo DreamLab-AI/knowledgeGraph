@@ -130,10 +130,6 @@ public:: true
       {
         "@id": "urn:ngm:class:visual-odometry",
         "label": "Visual Odometry"
-      },
-      {
-        "@id": "urn:ngm:class:inertial-odometry",
-        "label": "Inertial Odometry"
       }
     ],
     "partOf": [
@@ -148,7 +144,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:motion-sensors",
+        "@id": "urn:ngm:class:sensors",
         "label": "Motion Sensors"
       },
       {
@@ -190,7 +186,7 @@ public:: true
         "label": "IMU"
       },
       {
-        "@id": "urn:ngm:class:visual-sensors",
+        "@id": "urn:ngm:class:sensors",
         "label": "Visual Sensors"
       },
       {
@@ -214,12 +210,8 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:gps-positioning",
+        "@id": "urn:ngm:class:gps",
         "label": "GPS Positioning"
-      },
-      {
-        "@id": "urn:ngm:class:absolute-positioning",
-        "label": "Absolute Positioning"
       }
     ],
     "bridgesTo": [
@@ -237,18 +229,6 @@ public:: true
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:cumulative-error",
-        "label": "Cumulative Error"
-      },
-      {
-        "@id": "urn:ngm:class:drift",
-        "label": "Drift"
-      },
-      {
-        "@id": "urn:ngm:class:wheel-slip",
-        "label": "Wheel Slip"
-      },
       {
         "@id": "urn:ngm:class:particle-filter",
         "label": "Particle Filter"

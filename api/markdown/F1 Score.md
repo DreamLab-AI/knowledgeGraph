@@ -98,56 +98,117 @@ public:: true
     "inferenceRule": "RelationEnrichment"
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:f-measure", "label": "F-Measure"},
-    {"@id": "urn:ngm:class:f1-measure", "label": "F1 Measure"},
-    {"@id": "urn:ngm:class:dice-coefficient-metric", "label": "Dice Coefficient (classification metric)"}
+    {
+      "@id": "urn:ngm:class:f-measure",
+      "label": "F-Measure"
+    },
+    {
+      "@id": "urn:ngm:class:f1-measure",
+      "label": "F1 Measure"
+    },
+    {
+      "@id": "urn:ngm:class:dice-coefficient-metric",
+      "label": "Dice Coefficient (classification metric)"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:precision", "label": "Precision"},
-      {"@id": "urn:ngm:class:recall", "label": "Recall"},
-      {"@id": "urn:ngm:class:true-positive", "label": "True Positive"},
-      {"@id": "urn:ngm:class:false-positive", "label": "False Positive"}
+      {
+        "@id": "urn:ngm:class:precision",
+        "label": "Precision"
+      },
+      {
+        "@id": "urn:ngm:class:recall",
+        "label": "Recall"
+      },
+      {
+        "@id": "urn:ngm:class:true-positive",
+        "label": "True Positive"
+      },
+      {
+        "@id": "urn:ngm:class:false-positive",
+        "label": "False Positive"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"},
-      {"@id": "urn:ngm:class:classification-evaluation", "label": "Classification Evaluation"}
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
+      {
+        "@id": "urn:ngm:class:classification-evaluation",
+        "label": "Classification Evaluation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:confusion-matrix", "label": "Confusion Matrix"},
-      {"@id": "urn:ngm:class:binary-classification", "label": "Binary Classification"}
+      {
+        "@id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:classification",
+        "label": "Binary Classification"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-selection", "label": "Model Selection"},
-      {"@id": "urn:ngm:class:threshold-optimisation", "label": "Threshold Optimisation"},
-      {"@id": "urn:ngm:class:imbalanced-dataset-evaluation", "label": "Imbalanced Dataset Evaluation"}
+      {
+        "@id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-optimisation",
+        "label": "Threshold Optimisation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:harmonic-mean", "label": "Harmonic Mean"},
-      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:f-beta-score", "label": "F-Beta Score"}
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:precision-recall-curve", "label": "Precision-Recall Curve"},
-      {"@id": "urn:ngm:class:macro-f1", "label": "Macro F1"},
-      {"@id": "urn:ngm:class:micro-f1", "label": "Micro F1"},
-      {"@id": "urn:ngm:class:weighted-f1", "label": "Weighted F1"}
+      {
+        "@id": "urn:ngm:class:precision-recall-curve",
+        "label": "Precision-Recall Curve"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:accuracy", "label": "Accuracy"},
-      {"@id": "urn:ngm:class:roc-auc", "label": "ROC-AUC"},
-      {"@id": "urn:ngm:class:matthews-correlation-coefficient", "label": "Matthews Correlation Coefficient"}
+      {
+        "@id": "urn:ngm:class:accuracy",
+        "label": "Accuracy"
+      },
+      {
+        "@id": "urn:ngm:class:auc",
+        "label": "ROC-AUC"
+      },
+      {
+        "@id": "urn:ngm:class:matthews-correlation-coefficient",
+        "label": "Matthews Correlation Coefficient"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"},
-      {"@id": "urn:ngm:class:information-retrieval-metric", "label": "Information Retrieval Metric"}
+      {
+        "@id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      },
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval Metric"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"},
-      {"@id": "urn:ngm:class:model-governance", "label": "Model Governance"},
-      {"@id": "urn:ngm:class:algorithmic-fairness", "label": "Algorithmic Fairness"}
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "@id": "urn:ngm:class:model-governance",
+        "label": "Model Governance"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-fairness",
+        "label": "Algorithmic Fairness"
+      }
     ]
   }
 }

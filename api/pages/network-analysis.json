@@ -18,10 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:centrality-measure",
-        "label": "Centrality Measure"
-      },
-      {
         "id": "urn:ngm:class:community-detection",
         "label": "Community Detection"
       },

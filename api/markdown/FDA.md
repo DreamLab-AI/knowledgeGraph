@@ -64,70 +64,16 @@ public:: true
     }
   ],
   "relations": {
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:department-of-health-and-human-services",
-        "label": "Department of Health and Human Services"
-      },
-      {
-        "@id": "urn:ngm:class:federal-government",
-        "label": "Federal Government"
-      }
-    ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:center-for-drug-evaluation-and-research",
-        "label": "Center for Drug Evaluation and Research"
-      },
-      {
-        "@id": "urn:ngm:class:center-for-devices-and-radiological-health",
-        "label": "Center for Devices and Radiological Health"
-      },
-      {
-        "@id": "urn:ngm:class:center-for-biologics-evaluation-and-research",
-        "label": "Center for Biologics Evaluation and Research"
-      },
-      {
-        "@id": "urn:ngm:class:center-for-food-safety-and-applied-nutrition",
-        "label": "Center for Food Safety and Applied Nutrition"
-      }
-    ],
     "requires": [
       {
-        "@id": "urn:ngm:class:clinical-trial",
+        "@id": "urn:ngm:class:clinical-trials",
         "label": "Clinical Trial"
-      },
-      {
-        "@id": "urn:ngm:class:good-manufacturing-practice",
-        "label": "Good Manufacturing Practice"
-      },
-      {
-        "@id": "urn:ngm:class:regulatory-submission",
-        "label": "Regulatory Submission"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:drug-approval",
+        "@id": "urn:ngm:class:regulatory-approval",
         "label": "Drug Approval"
-      },
-      {
-        "@id": "urn:ngm:class:medical-device-clearance",
-        "label": "Medical Device Clearance"
-      },
-      {
-        "@id": "urn:ngm:class:public-health-protection",
-        "label": "Public Health Protection"
-      }
-    ],
-    "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:federal-food-drug-and-cosmetic-act",
-        "label": "Federal Food Drug and Cosmetic Act"
-      },
-      {
-        "@id": "urn:ngm:class:21-cfr",
-        "label": "21 CFR"
       }
     ],
     "uses": [
@@ -136,12 +82,8 @@ public:: true
         "label": "Randomised Controlled Trial"
       },
       {
-        "@id": "urn:ngm:class:post-market-surveillance",
+        "@id": "urn:ngm:class:market-surveillance",
         "label": "Post-Market Surveillance"
-      },
-      {
-        "@id": "urn:ngm:class:pharmacovigilance",
-        "label": "Pharmacovigilance"
       }
     ],
     "supports": [
@@ -154,29 +96,11 @@ public:: true
         "label": "Digital Health"
       },
       {
-        "@id": "urn:ngm:class:personalised-medicine",
+        "@id": "urn:ngm:class:precision-medicine",
         "label": "Personalised Medicine"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:ema",
-        "label": "EMA"
-      },
-      {
-        "@id": "urn:ngm:class:mhra",
-        "label": "MHRA"
-      }
-    ],
     "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:ai-medical-devices",
-        "label": "AI Medical Devices"
-      },
-      {
-        "@id": "urn:ngm:class:software-as-a-medical-device",
-        "label": "Software as a Medical Device"
-      },
       {
         "@id": "urn:ngm:class:bioinformatics",
         "label": "Bioinformatics"
@@ -184,12 +108,8 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:regulatory-agency",
+        "@id": "urn:ngm:class:regulatory-authority",
         "label": "Regulatory Agency"
-      },
-      {
-        "@id": "urn:ngm:class:drug-regulation",
-        "label": "Drug Regulation"
       },
       {
         "@id": "urn:ngm:class:bioethics",

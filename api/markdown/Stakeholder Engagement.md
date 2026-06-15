@@ -23,52 +23,125 @@ public:: true
   "definition": "Stakeholder Engagement is the structured process through which organisations identify, communicate with, and incorporate the perspectives of individuals and groups who have interests in or are affected by a project, system, or policy. Effective engagement moves along a spectrum from one-way information provision through consultation to active co-design and ongoing collaborative governance. In the context of emerging technologies such as AI, robust stakeholder engagement is recognised as essential for identifying ethical risks, ensuring societal legitimacy, and building the trust necessary for adoption. Regulatory frameworks and voluntary standards increasingly mandate evidence of meaningful stakeholder engagement as a condition of approval or certification.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-legal-and-regulatory", "label": "Legal and Regulatory"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:stakeholder-engagement-in-ai", "label": "Stakeholder Engagement in AI"},
-      {"@id": "urn:ngm:class:civic-participation", "label": "Civic Participation"},
-      {"@id": "urn:ngm:class:democratic-participation", "label": "Democratic Participation"},
-      {"@id": "urn:ngm:class:community-governance", "label": "Community Governance"},
-      {"@id": "urn:ngm:class:deliberative-democracy", "label": "Deliberative Democracy"},
-      {"@id": "urn:ngm:class:public-consultation", "label": "Public Consultation"},
-      {"@id": "urn:ngm:class:participatory-design", "label": "Participatory Design"}
+      {
+        "@id": "urn:ngm:class:stakeholder-engagement-in-ai",
+        "label": "Stakeholder Engagement in AI"
+      },
+      {
+        "@id": "urn:ngm:class:civic-participation",
+        "label": "Civic Participation"
+      },
+      {
+        "@id": "urn:ngm:class:democratic-participation",
+        "label": "Democratic Participation"
+      },
+      {
+        "@id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      },
+      {
+        "@id": "urn:ngm:class:deliberative-democracy",
+        "label": "Deliberative Democracy"
+      },
+      {
+        "@id": "urn:ngm:class:participatory-design",
+        "label": "Participatory Design"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:collaborative-systems-modality-design", "label": "Collaborative Design"},
-      {"@id": "urn:ngm:class:change-management", "label": "Change Management"},
-      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
-      {"@id": "urn:ngm:class:trust-building", "label": "Trust Building"},
-      {"@id": "urn:ngm:class:legitimacy", "label": "Legitimacy"},
-      {"@id": "urn:ngm:class:co-design", "label": "Co-Design"}
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-design",
+        "label": "Collaborative Design"
+      },
+      {
+        "@id": "urn:ngm:class:change-management",
+        "label": "Change Management"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:trust-building",
+        "label": "Trust Building"
+      },
+      {
+        "@id": "urn:ngm:class:legitimacy",
+        "label": "Legitimacy"
+      },
+      {
+        "@id": "urn:ngm:class:co-design",
+        "label": "Co-Design"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"},
-      {"@id": "urn:ngm:class:deliberative-polling", "label": "Deliberative Polling"},
-      {"@id": "urn:ngm:class:citizen-assembly", "label": "Citizen Assembly"}
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:digital-citizens-assembly",
+        "label": "Citizen Assembly"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:stakeholder-mapping", "label": "Stakeholder Mapping"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+      {
+        "@id": "urn:ngm:class:stakeholder-mapping",
+        "label": "Stakeholder Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ethical-ai", "label": "Ethical AI"},
-      {"@id": "urn:ngm:class:responsible-innovation", "label": "Responsible Innovation"},
-      {"@id": "urn:ngm:class:human-rights-impact-assessment", "label": "Human Rights Impact Assessment"}
+      {
+        "@id": "urn:ngm:class:ethical-ai",
+        "label": "Ethical AI"
+      },
+      {
+        "@id": "urn:ngm:class:human-rights-impact-assessment",
+        "label": "Human Rights Impact Assessment"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iap2-spectrum", "label": "IAP2 Public Participation Spectrum"},
-      {"@id": "urn:ngm:class:oecd-ai-principles", "label": "OECD AI Principles"}
+      {
+        "@id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:stakeholder-participation", "label": "Stakeholder Participation"},
-    {"@id": "urn:ngm:class:public-engagement", "label": "Public Engagement"}
+    {
+      "@id": "urn:ngm:class:stakeholder-participation",
+      "label": "Stakeholder Participation"
+    },
+    {
+      "@id": "urn:ngm:class:public-engagement",
+      "label": "Public Engagement"
+    }
   ],
   "quality": 0.72,
   "provenance": {

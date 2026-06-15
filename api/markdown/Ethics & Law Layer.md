@@ -122,15 +122,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:ethical-ai-guidelines",
+        "@id": "urn:ngm:class:ethical-ai",
         "label": "Ethical AI Guidelines"
       },
       {
-        "@id": "urn:ngm:class:legal-regulation-schema",
-        "label": "Legal Regulation Schema"
-      },
-      {
-        "@id": "urn:ngm:class:rights-management-system",
+        "@id": "urn:ngm:class:digital-rights-management",
         "label": "Rights Management System"
       },
       {
@@ -153,10 +149,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:ethical-governance",
-        "label": "Ethical Governance"
-      },
       {
         "@id": "urn:ngm:class:legal-compliance",
         "label": "Legal Compliance"

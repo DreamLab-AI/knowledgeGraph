@@ -30,7 +30,7 @@
         "label": "Dashboard"
       },
       {
-        "id": "urn:ngm:class:etl",
+        "id": "urn:ngm:class:etl-pipeline",
         "label": "ETL"
       }
     ],

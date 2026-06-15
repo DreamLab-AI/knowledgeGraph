@@ -23,11 +23,7 @@
         "label": "Data Interoperability"
       },
       {
-        "id": "urn:ngm:class:unique-product-identifier",
-        "label": "Unique Product Identifier"
-      },
-      {
-        "id": "urn:ngm:class:open-data-standard",
+        "id": "urn:ngm:class:open-standard",
         "label": "Open Data Standard"
       }
     ],
@@ -68,16 +64,7 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:paper-based-certification",
-        "label": "Paper-Based Certification"
-      },
-      {
-        "id": "urn:ngm:class:proprietary-product-data-silo",
-        "label": "Proprietary Product Data Silo"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:blockchain",
@@ -88,7 +75,7 @@
         "label": "Distributed Ledger Technology"
       },
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       }
     ],
@@ -125,7 +112,7 @@
         "label": "EU ESPR"
       },
       {
-        "id": "urn:ngm:class:iso-iec-standards",
+        "id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC Standards"
       }
     ],

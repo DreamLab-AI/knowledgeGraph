@@ -18,11 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:compositor",
-        "label": "Compositor"
-      },
-      {
-        "id": "urn:ngm:class:tracking-subsystem",
+        "id": "urn:ngm:class:tracking-system",
         "label": "Tracking Subsystem"
       }
     ],
@@ -36,7 +32,7 @@
         "label": "Hardware Abstraction"
       },
       {
-        "id": "urn:ngm:class:device-driver",
+        "id": "urn:ngm:class:device-drivers",
         "label": "Device Driver"
       }
     ],
@@ -86,12 +82,7 @@
         "label": "Runtime Environment"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:proprietary-xr-sdk",
-        "label": "Proprietary XR SDK"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:game-engine",
@@ -132,18 +123,8 @@
         "label": "W3C"
       }
     ],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:xr-software-stack",
-        "label": "XR Software Stack"
-      }
-    ],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:steamvr",
-        "label": "SteamVR"
-      }
-    ]
+    "partOf": [],
+    "relatedTo": []
   },
   "wikilinks": [
     {

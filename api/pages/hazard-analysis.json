@@ -22,23 +22,15 @@
         "label": "Fault Tree Analysis"
       },
       {
-        "id": "urn:ngm:class:failure-modes-and-effects-analysis",
-        "label": "Failure Modes and Effects Analysis"
-      },
-      {
         "id": "urn:ngm:class:hazard-identification",
         "label": "Hazard Identification"
       },
       {
-        "id": "urn:ngm:class:risk-estimation",
+        "id": "urn:ngm:class:risk",
         "label": "Risk Estimation"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:system-definition",
-        "label": "System Definition"
-      },
       {
         "id": "urn:ngm:class:risk-assessment-methodology",
         "label": "Risk Assessment Methodology"
@@ -66,10 +58,6 @@
       {
         "id": "urn:ngm:class:system-model",
         "label": "System Model"
-      },
-      {
-        "id": "urn:ngm:class:risk-criteria",
-        "label": "Risk Criteria"
       }
     ],
     "implements": [],
@@ -152,10 +140,6 @@
       {
         "id": "urn:ngm:class:technical-standards",
         "label": "Technical Standards"
-      },
-      {
-        "id": "urn:ngm:class:system-theoretic-process-analysis",
-        "label": "System-Theoretic Process Analysis"
       },
       {
         "id": "urn:ngm:class:safety-critical-systems",

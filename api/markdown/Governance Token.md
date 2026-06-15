@@ -1077,11 +1077,7 @@ alias:: BC-0463-governance-token, GovernanceToken
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:checkpoint-mapping",
-        "label": "Checkpoint Mapping"
-      },
-      {
-        "@id": "urn:ngm:class:delegation-mechanism",
+        "@id": "urn:ngm:class:delegation-system",
         "label": "Delegation Mechanism"
       },
       {
@@ -1097,10 +1093,6 @@ alias:: BC-0463-governance-token, GovernanceToken
         "label": "Timelock Controller"
       },
       {
-        "@id": "urn:ngm:class:token-treasury",
-        "label": "Token Treasury"
-      },
-      {
         "@id": "urn:ngm:class:vesting-schedule",
         "label": "Vesting Schedule"
       },
@@ -1113,21 +1105,13 @@ alias:: BC-0463-governance-token, GovernanceToken
         "label": "Proposal System"
       },
       {
-        "@id": "urn:ngm:class:coordination-primitive",
-        "label": "Coordination Primitive"
-      },
-      {
-        "@id": "urn:ngm:class:crypto-asset",
-        "label": "Crypto-Asset"
-      },
-      {
         "@id": "urn:ngm:class:erc-20-tokens",
         "label": "ERC-20 Tokens"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:block-number-reference",
+        "@id": "urn:ngm:class:block-height",
         "label": "Block Number Reference"
       },
       {
@@ -1161,16 +1145,8 @@ alias:: BC-0463-governance-token, GovernanceToken
         "label": "Decentralized Governance"
       },
       {
-        "@id": "urn:ngm:class:gauge-weight-allocation",
-        "label": "Gauge Weight Allocation"
-      },
-      {
         "@id": "urn:ngm:class:liquid-democracy",
         "label": "Liquid Democracy"
-      },
-      {
-        "@id": "urn:ngm:class:protocol-parameter-control",
-        "label": "Protocol Parameter Control"
       },
       {
         "@id": "urn:ngm:class:retroactive-public-goods-funding",
@@ -1225,7 +1201,7 @@ alias:: BC-0463-governance-token, GovernanceToken
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:eip-712-typed-signatures",
+        "@id": "urn:ngm:class:eip-712",
         "label": "EIP-712 Typed Signatures"
       },
       {
@@ -1245,10 +1221,6 @@ alias:: BC-0463-governance-token, GovernanceToken
         "label": "Timelock"
       },
       {
-        "@id": "urn:ngm:class:vesting-contract",
-        "label": "Vesting Contract"
-      },
-      {
         "@id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Tree"
       },
@@ -1263,24 +1235,8 @@ alias:: BC-0463-governance-token, GovernanceToken
         "label": "Curve Wars"
       },
       {
-        "@id": "urn:ngm:class:de-fi-summer",
-        "label": "DeFi Summer"
-      },
-      {
         "@id": "urn:ngm:class:liquidity-mining",
         "label": "Liquidity Mining"
-      },
-      {
-        "@id": "urn:ngm:class:retroactive-airdrop",
-        "label": "Retroactive Airdrop"
-      },
-      {
-        "@id": "urn:ngm:class:vote-bribing",
-        "label": "Vote Bribing"
-      },
-      {
-        "@id": "urn:ngm:class:whale-plutocracy",
-        "label": "Whale Plutocracy"
       },
       {
         "@id": "urn:ngm:class:yield-farming",
@@ -1313,17 +1269,13 @@ alias:: BC-0463-governance-token, GovernanceToken
         "label": "Meta-Governance"
       },
       {
-        "@id": "urn:ngm:class:retroactive-airdrops",
-        "label": "Retroactive Airdrops"
-      },
-      {
         "@id": "urn:ngm:class:de-fi-protocol",
         "label": "De Fi Protocol"
       }
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:compound-governor-bravo-interface",
+        "@id": "urn:ngm:class:compound-governor-bravo",
         "label": "Compound Governor Bravo Interface"
       },
       {
@@ -1337,10 +1289,6 @@ alias:: BC-0463-governance-token, GovernanceToken
       {
         "@id": "urn:ngm:class:erc-2612-permit",
         "label": "ERC-2612 Permit"
-      },
-      {
-        "@id": "urn:ngm:class:erc-5805-voting-token",
-        "label": "ERC-5805 Voting Token"
       },
       {
         "@id": "urn:ngm:class:erc-20-votes",

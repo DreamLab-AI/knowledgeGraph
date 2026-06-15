@@ -23,54 +23,141 @@ public:: true
   "definition": "Large Language Model Training is the computational process of optimising the parameters of a transformer-based neural network with billions to trillions of weights on web-scale text corpora using autoregressive next-token prediction objectives, followed by instruction tuning and reinforcement learning from human feedback (RLHF) alignment stages. The process requires distributed training across thousands of GPU or TPU accelerators coordinated through data, tensor, and pipeline parallelism, consuming petabytes of training data and megawatt-hours of electrical energy.",
   "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:pre-training", "label": "Pre Training"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:pre-training",
+    "label": "Pre Training"
+  },
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:gpu-cluster", "label": "GPU Cluster"},
-      {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"},
-      {"@id": "urn:ngm:class:training-data-corpus", "label": "Training Data Corpus"},
-      {"@id": "urn:ngm:class:mixed-precision-training", "label": "Mixed Precision Training"}
+      {
+        "@id": "urn:ngm:class:gpu-cluster",
+        "label": "GPU Cluster"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data Corpus"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
-      {"@id": "urn:ngm:class:instruction-tuning", "label": "Instruction Tuning"},
-      {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"},
-      {"@id": "urn:ngm:class:gradient-checkpointing", "label": "Gradient Checkpointing"},
-      {"@id": "urn:ngm:class:data-parallelism", "label": "Data Parallelism"},
-      {"@id": "urn:ngm:class:direct-preference-optimisation", "label": "Direct Preference Optimisation"}
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-checkpointing",
+        "label": "Gradient Checkpointing"
+      },
+      {
+        "@id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:in-context-learning", "label": "In-Context Learning"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:emergent-capability", "label": "Emergent Capability"},
-      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}
+      {
+        "@id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:emergent-capabilities",
+        "label": "Emergent Capability"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:pre-training", "label": "Pre Training"},
-      {"@id": "urn:ngm:class:supervised-fine-tuning", "label": "Supervised Fine Tuning"},
-      {"@id": "urn:ngm:class:alignment-stage", "label": "Alignment Stage"}
+      {
+        "@id": "urn:ngm:class:pre-training",
+        "label": "Pre Training"
+      },
+      {
+        "@id": "urn:ngm:class:supervised-fine-tuning",
+        "label": "Supervised Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:alignment",
+        "label": "Alignment Stage"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:scaling-law", "label": "Scaling Law"},
-      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"},
-      {"@id": "urn:ngm:class:reward-model", "label": "Reward Model"}
+      {
+        "@id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Law"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:reward-model",
+        "label": "Reward Model"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"}
+      {
+        "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"},
-      {"@id": "urn:ngm:class:data-centre-infrastructure", "label": "Data Centre Infrastructure"}
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "@id": "urn:ngm:class:data-centre-infrastructure",
+        "label": "Data Centre Infrastructure"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:mixture-of-experts", "label": "Mixture of Experts"},
-      {"@id": "urn:ngm:class:synthetic-data-generation", "label": "Synthetic Data Generation"}
+      {
+        "@id": "urn:ngm:class:mixture-of-experts-architecture",
+        "label": "Mixture of Experts"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:llm-training", "label": "LLM Training"},
-    {"@id": "urn:ngm:class:foundation-model-training", "label": "Foundation Model Training"}
+    {
+      "@id": "urn:ngm:class:llm-training",
+      "label": "LLM Training"
+    },
+    {
+      "@id": "urn:ngm:class:foundation-model-training",
+      "label": "Foundation Model Training"
+    }
   ],
   "quality": 0.72,
   "provenance": {

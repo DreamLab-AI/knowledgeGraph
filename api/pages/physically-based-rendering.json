@@ -22,19 +22,11 @@
         "label": "BRDF"
       },
       {
-        "id": "urn:ngm:class:microfacet-model",
-        "label": "Microfacet Model"
-      },
-      {
-        "id": "urn:ngm:class:image-based-lighting",
-        "label": "Image-Based Lighting"
-      },
-      {
         "id": "urn:ngm:class:normal-map",
         "label": "Normal Map"
       },
       {
-        "id": "urn:ngm:class:environment-map",
+        "id": "urn:ngm:class:environment-mapping",
         "label": "Environment Map"
       }
     ],
@@ -74,26 +66,8 @@
         "label": "3D Asset"
       }
     ],
-    "dependsOn": [
-      {
-        "id": "urn:ngm:class:energy-conservation",
-        "label": "Energy Conservation"
-      },
-      {
-        "id": "urn:ngm:class:radiometry",
-        "label": "Radiometry"
-      }
-    ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:cook-torrance-model",
-        "label": "Cook-Torrance Model"
-      },
-      {
-        "id": "urn:ngm:class:fresnel-equation",
-        "label": "Fresnel Equation"
-      }
-    ],
+    "dependsOn": [],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:phong-shading",
@@ -116,12 +90,8 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:gltf",
+        "id": "urn:ngm:class:gltf-standard",
         "label": "glTF"
-      },
-      {
-        "id": "urn:ngm:class:hdri",
-        "label": "HDRI"
       },
       {
         "id": "urn:ngm:class:monte-carlo-integration",
@@ -135,7 +105,7 @@
         "label": "Khronos Group"
       },
       {
-        "id": "urn:ngm:class:gltf",
+        "id": "urn:ngm:class:gltf-standard",
         "label": "glTF"
       }
     ],

@@ -91,16 +91,8 @@ alias:: Attention-Aware Interaction
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:attention-modeling",
-        "label": "Attention Modeling"
-      },
-      {
-        "@id": "urn:ngm:class:eye-tracking-hardware",
+        "@id": "urn:ngm:class:eye-tracking",
         "label": "Eye Tracking Hardware"
-      },
-      {
-        "@id": "urn:ngm:class:gaze-detection-algorithms",
-        "label": "Gaze Detection Algorithms"
       }
     ],
     "enables": [
@@ -111,10 +103,6 @@ alias:: Attention-Aware Interaction
       {
         "@id": "urn:ngm:class:foveated-rendering",
         "label": "Foveated Rendering"
-      },
-      {
-        "@id": "urn:ngm:class:gaze-based-selection",
-        "label": "Gaze-Based Selection"
       }
     ]
   },

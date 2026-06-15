@@ -49,7 +49,7 @@
         "label": "Continuous Authentication"
       },
       {
-        "id": "urn:ngm:class:zero-trust-security",
+        "id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Security"
       }
     ],
@@ -68,10 +68,6 @@
       {
         "id": "urn:ngm:class:password-authentication",
         "label": "Password Authentication"
-      },
-      {
-        "id": "urn:ngm:class:token-based-authentication",
-        "label": "Token-Based Authentication"
       }
     ],
     "bridgesTo": [

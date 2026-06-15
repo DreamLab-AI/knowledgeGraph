@@ -500,18 +500,6 @@ public:: true
         "label": "ISO TS 15066"
       },
       {
-        "@id": "urn:ngm:class:normative-annex",
-        "label": "Normative Annex"
-      },
-      {
-        "@id": "urn:ngm:class:opc-ua-robotics",
-        "label": "OPC UA Robotics"
-      },
-      {
-        "@id": "urn:ngm:class:performance-criterion",
-        "label": "Performance Criterion"
-      },
-      {
         "@id": "urn:ngm:class:safety-function",
         "label": "Safety Function"
       },
@@ -542,7 +530,7 @@ public:: true
         "label": "Harmonised Standard"
       },
       {
-        "@id": "urn:ngm:class:protective-measure",
+        "@id": "urn:ngm:class:safety-measure",
         "label": "Protective Measure"
       },
       {
@@ -560,10 +548,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:autonomous-mobile-robot-safety",
-        "label": "Autonomous Mobile Robot Safety"
-      },
-      {
         "@id": "urn:ngm:class:ce-marking",
         "label": "CE Marking"
       },
@@ -576,7 +560,7 @@ public:: true
         "label": "Digital Product Passport"
       },
       {
-        "@id": "urn:ngm:class:iio-t-integration",
+        "@id": "urn:ngm:class:io-t-integration",
         "label": "IIoT Integration"
       },
       {
@@ -584,41 +568,21 @@ public:: true
         "label": "Market Access"
       },
       {
-        "@id": "urn:ngm:class:robot-interoperability",
-        "label": "Robot Interoperability"
-      },
-      {
-        "@id": "urn:ngm:class:robot-skill-transfer",
-        "label": "Robot Skill Transfer"
-      },
-      {
-        "@id": "urn:ngm:class:safe-human-robot-collaboration",
+        "@id": "urn:ngm:class:human-robot-collaboration",
         "label": "Safe Human-Robot Collaboration"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:ehsr-framework",
-        "label": "EHSR Framework"
-      },
-      {
-        "@id": "urn:ngm:class:eu-machinery-regulation",
-        "label": "EU Machinery Regulation"
-      },
-      {
         "@id": "urn:ngm:class:iso-tc-299",
         "label": "ISO/TC 299"
       },
       {
-        "@id": "urn:ngm:class:opc-ua-node-set",
-        "label": "OPC UA NodeSet"
-      },
-      {
-        "@id": "urn:ngm:class:owl-ontology",
+        "@id": "urn:ngm:class:owl-2-web-ontology-language",
         "label": "OWL Ontology"
       },
       {
-        "@id": "urn:ngm:class:performance-level-method",
+        "@id": "urn:ngm:class:rb-0101-performance-level",
         "label": "Performance Level Method"
       },
       {
@@ -626,24 +590,12 @@ public:: true
         "label": "Safety Integrity Level"
       },
       {
-        "@id": "urn:ngm:class:speed-and-separation-monitoring",
+        "@id": "urn:ngm:class:rb-0105-speed-and-separation-monitoring",
         "label": "Speed and Separation Monitoring"
       },
       {
         "@id": "urn:ngm:class:force-control",
         "label": "Force Control"
-      },
-      {
-        "@id": "urn:ngm:class:industrial-safety",
-        "label": "Industrial Safety"
-      },
-      {
-        "@id": "urn:ngm:class:normative-framework",
-        "label": "Normative Framework"
-      },
-      {
-        "@id": "urn:ngm:class:product-regulation",
-        "label": "Product Regulation"
       }
     ],
     "uses": [
@@ -660,24 +612,16 @@ public:: true
         "label": "OPC UA"
       },
       {
-        "@id": "urn:ngm:class:owl-2-dl",
+        "@id": "urn:ngm:class:owl-2-web-ontology-language",
         "label": "OWL 2 DL"
       },
       {
-        "@id": "urn:ngm:class:performance-level",
+        "@id": "urn:ngm:class:rb-0101-performance-level",
         "label": "Performance Level"
-      },
-      {
-        "@id": "urn:ngm:class:risk-graph-method",
-        "label": "Risk Graph Method"
       },
       {
         "@id": "urn:ngm:class:safety-integrity-level",
         "label": "Safety Integrity Level"
-      },
-      {
-        "@id": "urn:ngm:class:slam-navigation",
-        "label": "SLAM Navigation"
       },
       {
         "@id": "urn:ngm:class:time-sensitive-networking",
@@ -698,20 +642,12 @@ public:: true
         "label": "IEC 62443"
       },
       {
-        "@id": "urn:ngm:class:iec-80601-2-78",
-        "label": "IEC 80601-2-78"
-      },
-      {
         "@id": "urn:ngm:class:iso-12100",
         "label": "ISO 12100"
       },
       {
         "@id": "urn:ngm:class:iso-13849",
         "label": "ISO 13849"
-      },
-      {
-        "@id": "urn:ngm:class:iso-13855",
-        "label": "ISO 13855"
       },
       {
         "@id": "urn:ngm:class:iso-8373",
@@ -724,10 +660,6 @@ public:: true
       {
         "@id": "urn:ngm:class:iso-sae-21434",
         "label": "ISO SAE 21434"
-      },
-      {
-        "@id": "urn:ngm:class:niosh-guidelines",
-        "label": "NIOSH Guidelines"
       },
       {
         "@id": "urn:ngm:class:ros-industrial",
@@ -748,24 +680,12 @@ public:: true
         "label": "Collaborative Robot"
       },
       {
-        "@id": "urn:ngm:class:driverless-industrial-trucks",
-        "label": "Driverless Industrial Trucks"
-      },
-      {
         "@id": "urn:ngm:class:exoskeleton",
         "label": "Exoskeleton"
       },
       {
         "@id": "urn:ngm:class:industrial-robot",
         "label": "Industrial Robot"
-      },
-      {
-        "@id": "urn:ngm:class:modular-robots",
-        "label": "Modular Robots"
-      },
-      {
-        "@id": "urn:ngm:class:personal-care-robots",
-        "label": "Personal Care Robots"
       },
       {
         "@id": "urn:ngm:class:surgical-robot",
@@ -782,12 +702,8 @@ public:: true
         "label": "ANSI"
       },
       {
-        "@id": "urn:ngm:class:bsi",
+        "@id": "urn:ngm:class:bsi-germany",
         "label": "BSI"
-      },
-      {
-        "@id": "urn:ngm:class:din",
-        "label": "DIN"
       },
       {
         "@id": "urn:ngm:class:european-commission",
@@ -804,10 +720,6 @@ public:: true
       {
         "@id": "urn:ngm:class:opc-foundation",
         "label": "OPC Foundation"
-      },
-      {
-        "@id": "urn:ngm:class:ria",
-        "label": "RIA"
       }
     ]
   },

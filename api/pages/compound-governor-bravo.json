@@ -19,15 +19,11 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:comp-token",
-        "label": "COMP Token"
-      },
-      {
         "id": "urn:ngm:class:timelock",
         "label": "Timelock"
       },
       {
-        "id": "urn:ngm:class:ethereum-smart-contract",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-smart-contracts",
         "label": "Ethereum Smart Contract"
       },
       {
@@ -43,10 +39,6 @@
       {
         "id": "urn:ngm:class:dao",
         "label": "DAO"
-      },
-      {
-        "id": "urn:ngm:class:protocol-parameter-management",
-        "label": "Protocol Parameter Management"
       }
     ],
     "dependsOn": [
@@ -75,11 +67,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:compound-governor-alpha",
-        "label": "Compound Governor Alpha"
-      },
-      {
-        "id": "urn:ngm:class:openzeppelin-governor",
+        "id": "urn:ngm:class:open-zeppelin-governor",
         "label": "OpenZeppelin Governor"
       },
       {
@@ -105,10 +93,6 @@
       {
         "id": "urn:ngm:class:proposal-system",
         "label": "Proposal System"
-      },
-      {
-        "id": "urn:ngm:class:calldata-execution",
-        "label": "Calldata Execution"
       }
     ],
     "supports": [
@@ -128,7 +112,7 @@
         "label": "Compound"
       },
       {
-        "id": "urn:ngm:class:defi-governance-framework",
+        "id": "urn:ngm:class:governance-framework",
         "label": "DeFi Governance Framework"
       }
     ],

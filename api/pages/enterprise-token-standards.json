@@ -18,40 +18,20 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:claim-topic-registry",
-        "label": "Claim Topic Registry"
-      },
-      {
-        "id": "urn:ngm:class:compliance-module",
+        "id": "urn:ngm:class:compliance",
         "label": "Compliance Module"
-      },
-      {
-        "id": "urn:ngm:class:controller-operations",
-        "label": "Controller Operations"
-      },
-      {
-        "id": "urn:ngm:class:document-registry",
-        "label": "Document Registry"
       },
       {
         "id": "urn:ngm:class:identity-registry",
         "label": "Identity Registry"
       },
       {
-        "id": "urn:ngm:class:on-chain-identity-onchainid",
+        "id": "urn:ngm:class:on-chain-identity",
         "label": "On-Chain Identity ONCHAINID"
-      },
-      {
-        "id": "urn:ngm:class:partition-manager",
-        "label": "Partition Manager"
       },
       {
         "id": "urn:ngm:class:transfer-restriction",
         "label": "Transfer Restriction"
-      },
-      {
-        "id": "urn:ngm:class:trusted-issuer-registry",
-        "label": "Trusted Issuer Registry"
       }
     ],
     "requires": [
@@ -72,17 +52,13 @@
         "label": "Regulatory Authorisation"
       },
       {
-        "id": "urn:ngm:class:token-issuer-agent",
-        "label": "Token Issuer Agent"
-      },
-      {
         "id": "urn:ngm:class:smart-contract-platform",
         "label": "Smart Contract Platform"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:24-7-securities-settlement",
+        "id": "urn:ngm:class:securities-settlement",
         "label": "24-7 Securities Settlement"
       },
       {
@@ -92,14 +68,6 @@
       {
         "id": "urn:ngm:class:atomic-delivery-versus-payment",
         "label": "Atomic Delivery versus Payment"
-      },
-      {
-        "id": "urn:ngm:class:automated-corporate-actions",
-        "label": "Automated Corporate Actions"
-      },
-      {
-        "id": "urn:ngm:class:cross-border-asset-distribution",
-        "label": "Cross-Border Asset Distribution"
       },
       {
         "id": "urn:ngm:class:fractional-ownership",
@@ -113,10 +81,6 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:investor-accreditation-verification",
-        "label": "Investor Accreditation Verification"
-      },
-      {
         "id": "urn:ngm:class:kyc-aml-compliance",
         "label": "KYC/AML Compliance"
       },
@@ -125,24 +89,12 @@
         "label": "Selective Disclosure"
       },
       {
-        "id": "urn:ngm:class:transfer-restriction-logic",
-        "label": "Transfer Restriction Logic"
-      },
-      {
-        "id": "urn:ngm:class:whitelist-permissioning",
-        "label": "Whitelist Permissioning"
-      },
-      {
         "id": "urn:ngm:class:securities-regulation",
         "label": "Securities Regulation"
       },
       {
-        "id": "urn:ngm:class:regulated-financial-instrument",
+        "id": "urn:ngm:class:financial-instruments",
         "label": "Regulated Financial Instrument"
-      },
-      {
-        "id": "urn:ngm:class:securities-representation-format",
-        "label": "Securities Representation Format"
       }
     ],
     "contrastsWith": [],
@@ -166,10 +118,6 @@
         "label": "ERC-721"
       },
       {
-        "id": "urn:ngm:class:erc-725",
-        "label": "ERC-725"
-      },
-      {
         "id": "urn:ngm:class:erc-735",
         "label": "ERC-735"
       },
@@ -182,7 +130,7 @@
         "label": "Hardhat"
       },
       {
-        "id": "urn:ngm:class:open-zeppelin-libraries",
+        "id": "urn:ngm:class:open-zeppelin",
         "label": "OpenZeppelin Libraries"
       },
       {
@@ -196,62 +144,18 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:institutional-de-fi",
-        "label": "Institutional DeFi"
-      },
-      {
-        "id": "urn:ngm:class:permissioned-de-fi",
-        "label": "Permissioned DeFi"
-      },
-      {
         "id": "urn:ngm:class:real-world-asset-tokenisation",
         "label": "Real-World Asset Tokenisation"
       },
       {
-        "id": "urn:ngm:class:tokenised-bond",
-        "label": "Tokenised Bond"
-      },
-      {
-        "id": "urn:ngm:class:tokenised-money-market-fund",
-        "label": "Tokenised Money Market Fund"
-      },
-      {
-        "id": "urn:ngm:class:tokenised-private-equity",
-        "label": "Tokenised Private Equity"
-      },
-      {
-        "id": "urn:ngm:class:tokenised-real-estate",
+        "id": "urn:ngm:class:real-estate-tokenization",
         "label": "Tokenised Real Estate"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:capital-markets-and-technology-association-cmtat",
-        "label": "Capital Markets and Technology Association CMTAT"
-      },
-      {
-        "id": "urn:ngm:class:ethereum-smart-contract-platform-improvement-proposal-process",
-        "label": "Ethereum Improvement Proposal Process"
-      },
-      {
-        "id": "urn:ngm:class:fca-asset-tokenisation-implementation-group",
-        "label": "FCA Asset Tokenisation Implementation Group"
-      },
-      {
-        "id": "urn:ngm:class:finos",
-        "label": "FINOS"
-      },
-      {
         "id": "urn:ngm:class:global-digital-finance",
         "label": "Global Digital Finance"
-      },
-      {
-        "id": "urn:ngm:class:hm-treasury-digital-securities-sandbox",
-        "label": "HM Treasury Digital Securities Sandbox"
-      },
-      {
-        "id": "urn:ngm:class:inter-work-alliance-token-taxonomy-framework",
-        "label": "InterWork Alliance Token Taxonomy Framework"
       },
       {
         "id": "urn:ngm:class:isda-cdm",
@@ -260,18 +164,10 @@
       {
         "id": "urn:ngm:class:iso-tc-307",
         "label": "ISO TC 307"
-      },
-      {
-        "id": "urn:ngm:class:itsa",
-        "label": "ITSA"
       }
     ],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:algorand-standard-asset",
-        "label": "Algorand Standard Asset"
-      },
       {
         "id": "urn:ngm:class:black-rock-buidl",
         "label": "BlackRock BUIDL"
@@ -297,44 +193,16 @@
         "label": "ERC-7540"
       },
       {
-        "id": "urn:ngm:class:franklin-templeton-fobxx",
-        "label": "Franklin Templeton FOBXX"
-      },
-      {
-        "id": "urn:ngm:class:hedera-token-service",
-        "label": "Hedera Token Service"
-      },
-      {
         "id": "urn:ngm:class:hsbc-orion",
         "label": "HSBC Orion"
-      },
-      {
-        "id": "urn:ngm:class:jp-morgan-onyx",
-        "label": "JP Morgan Onyx"
       },
       {
         "id": "urn:ngm:class:ondo-finance",
         "label": "Ondo Finance"
       },
       {
-        "id": "urn:ngm:class:polymath",
-        "label": "Polymath"
-      },
-      {
-        "id": "urn:ngm:class:polymesh",
-        "label": "Polymesh"
-      },
-      {
         "id": "urn:ngm:class:securitize",
         "label": "Securitize"
-      },
-      {
-        "id": "urn:ngm:class:solana-token-2022",
-        "label": "Solana Token 2022"
-      },
-      {
-        "id": "urn:ngm:class:tokeny",
-        "label": "Tokeny"
       }
     ]
   },

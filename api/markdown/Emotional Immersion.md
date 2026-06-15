@@ -114,30 +114,12 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:affective-design",
-        "label": "Affective Design"
-      },
-      {
         "@id": "urn:ngm:class:sensory-feedback",
         "label": "Sensory Feedback"
       },
       {
         "@id": "urn:ngm:class:narrative-content",
         "label": "Narrative Content"
-      }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:emotional-resonance",
-        "label": "Emotional Resonance"
-      },
-      {
-        "@id": "urn:ngm:class:empathetic-connection",
-        "label": "Empathetic Connection"
-      },
-      {
-        "@id": "urn:ngm:class:story-engagement",
-        "label": "Story Engagement"
       }
     ],
     "partOf": [

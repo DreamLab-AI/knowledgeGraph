@@ -40,7 +40,7 @@
         "label": "Container Orchestration"
       },
       {
-        "id": "urn:ngm:class:continuous-integration-and-delivery",
+        "id": "urn:ngm:class:continuous-integration",
         "label": "Continuous Integration and Delivery"
       },
       {
@@ -48,27 +48,14 @@
         "label": "Distributed Tracing"
       }
     ],
-    "enables": [
-      {
-        "id": "urn:ngm:class:scalable-applications",
-        "label": "Scalable Applications"
-      },
-      {
-        "id": "urn:ngm:class:fault-isolation",
-        "label": "Fault Isolation"
-      },
-      {
-        "id": "urn:ngm:class:independent-deployability",
-        "label": "Independent Deployability"
-      }
-    ],
+    "enables": [],
     "dependsOn": [
       {
         "id": "urn:ngm:class:kubernetes",
         "label": "Kubernetes"
       },
       {
-        "id": "urn:ngm:class:docker",
+        "id": "urn:ngm:class:docker-containerisation-platform",
         "label": "Docker"
       }
     ],
@@ -94,7 +81,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:serverless-computing",
+        "id": "urn:ngm:class:serverless-architecture",
         "label": "Serverless Computing"
       },
       {
@@ -129,7 +116,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:cloud-native-computing",
+        "id": "urn:ngm:class:cloud-native",
         "label": "Cloud-Native Computing"
       }
     ],

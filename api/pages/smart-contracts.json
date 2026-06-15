@@ -18,10 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:contract-abi",
-        "label": "Contract ABI"
-      },
-      {
         "id": "urn:ngm:class:gas-mechanism",
         "label": "Gas Mechanism"
       }
@@ -54,7 +50,7 @@
         "label": "Tokenization"
       },
       {
-        "id": "urn:ngm:class:decentralized-autonomous-organisation",
+        "id": "urn:ngm:class:decentralized-autonomous-organization",
         "label": "Decentralized Autonomous Organisation"
       },
       {
@@ -68,22 +64,17 @@
         "label": "Ethereum"
       },
       {
-        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       }
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:erc-token-standard",
+        "id": "urn:ngm:class:token-standard",
         "label": "ERC Token Standard"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:traditional-legal-contract",
-        "label": "Traditional Legal Contract"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:distributed-computing",

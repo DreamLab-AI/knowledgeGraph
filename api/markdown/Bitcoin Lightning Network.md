@@ -115,10 +115,6 @@ public:: true
       {
         "@id": "urn:ngm:class:segregated-witness",
         "label": "Segregated Witness"
-      },
-      {
-        "@id": "urn:ngm:class:timelocked-transaction",
-        "label": "Timelocked Transaction"
       }
     ],
     "enables": [
@@ -151,7 +147,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:bolt-specification",
+        "@id": "urn:ngm:class:bolt-specifications",
         "label": "BOLT Specification"
       },
       {
@@ -175,7 +171,7 @@ public:: true
         "label": "Bitcoin Proof-of-Work Protocol"
       },
       {
-        "@id": "urn:ngm:class:ethereum-state-channels",
+        "@id": "urn:ngm:class:state-channel",
         "label": "Ethereum State Channels"
       }
     ],
@@ -201,10 +197,6 @@ public:: true
       {
         "@id": "urn:ngm:class:watchtower-service",
         "label": "Watchtower Service"
-      },
-      {
-        "@id": "urn:ngm:class:layer-two-protocol",
-        "label": "Layer Two Protocol"
       }
     ]
   },

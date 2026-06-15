@@ -97,7 +97,7 @@ public:: true
         "label": "Image Classification"
       },
       {
-        "@id": "urn:ngm:class:multimodal-learning",
+        "@id": "urn:ngm:class:multimodal-ai-architecture-learning",
         "label": "Multimodal Learning"
       }
     ],
@@ -145,7 +145,7 @@ public:: true
         "label": "Computer Vision"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:class:foundation-model",
         "label": "Foundation Models"
       },
       {

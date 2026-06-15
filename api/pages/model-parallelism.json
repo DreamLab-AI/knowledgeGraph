@@ -54,7 +54,7 @@
         "label": "Foundation Model"
       },
       {
-        "id": "urn:ngm:class:mixture-of-experts",
+        "id": "urn:ngm:class:mixture-of-experts-architecture",
         "label": "Mixture of Experts"
       }
     ],
@@ -82,7 +82,7 @@
         "label": "Megatron-LM"
       },
       {
-        "id": "urn:ngm:class:pytorch-fsdp",
+        "id": "urn:ngm:class:fsdp",
         "label": "PyTorch FSDP"
       }
     ],
@@ -90,10 +90,6 @@
       {
         "id": "urn:ngm:class:data-parallelism",
         "label": "Data Parallelism"
-      },
-      {
-        "id": "urn:ngm:class:fully-sharded-data-parallel",
-        "label": "Fully Sharded Data Parallel"
       }
     ],
     "bridgesTo": [

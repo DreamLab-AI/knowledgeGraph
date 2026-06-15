@@ -68,7 +68,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:technology-interoperability",
+        "@id": "urn:ngm:class:interoperability",
         "label": "Technology Interoperability"
       }
     ]

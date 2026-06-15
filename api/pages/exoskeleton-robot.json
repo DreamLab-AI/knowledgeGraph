@@ -35,20 +35,7 @@
         "label": "Power Supply"
       }
     ],
-    "enables": [
-      {
-        "id": "urn:ngm:class:accessibility-in-harsh-environments",
-        "label": "Accessibility in Harsh Environments"
-      },
-      {
-        "id": "urn:ngm:class:injury-prevention",
-        "label": "Injury Prevention"
-      },
-      {
-        "id": "urn:ngm:class:worker-productivity",
-        "label": "Worker Productivity"
-      }
-    ],
+    "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -56,16 +43,7 @@
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:human-augmentation-system",
-        "label": "Human Augmentation System"
-      },
-      {
-        "id": "urn:ngm:class:occupational-safety-equipment",
-        "label": "Occupational Safety Equipment"
-      }
-    ],
+    "partOf": [],
     "relatedTo": []
   },
   "wikilinks": [

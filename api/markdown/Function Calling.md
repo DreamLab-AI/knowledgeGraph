@@ -458,54 +458,22 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:argument-validator",
-        "label": "Argument Validator"
-      },
-      {
-        "@id": "urn:ngm:class:conversation-loop",
-        "label": "Conversation Loop"
-      },
-      {
-        "@id": "urn:ngm:class:function-registry",
-        "label": "Function Registry"
-      },
-      {
-        "@id": "urn:ngm:class:tool-choice-parameter",
-        "label": "Tool Choice Parameter"
-      },
-      {
         "@id": "urn:ngm:class:tool-definition",
-        "label": "Tool Definition"
-      },
-      {
-        "@id": "urn:ngm:class:tool-executor",
-        "label": "Tool Executor"
-      },
-      {
-        "@id": "urn:ngm:class:tool-result-block",
-        "label": "Tool Result Block"
+        "label": "Tool Choice Parameter"
       },
       {
         "@id": "urn:ngm:class:tool-schema",
         "label": "Tool Schema"
       },
       {
-        "@id": "urn:ngm:class:tool-use-block",
+        "@id": "urn:ngm:class:tool-use",
         "label": "Tool Use Block"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:application-runtime",
+        "@id": "urn:ngm:class:metaverse-application-platform",
         "label": "Application Runtime"
-      },
-      {
-        "@id": "urn:ngm:class:argument-parser",
-        "label": "Argument Parser"
-      },
-      {
-        "@id": "urn:ngm:class:conversation-context",
-        "label": "Conversation Context"
       },
       {
         "@id": "urn:ngm:class:json-data-interchange-format-schema",
@@ -514,10 +482,6 @@ public:: true
       {
         "@id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
-      },
-      {
-        "@id": "urn:ngm:class:tool-implementation",
-        "label": "Tool Implementation"
       }
     ],
     "enables": [
@@ -526,15 +490,15 @@ public:: true
         "label": "Agentic AI"
       },
       {
-        "@id": "urn:ngm:class:browser-automation-by-llms",
+        "@id": "urn:ngm:class:browser-automation",
         "label": "Browser Automation by LLMs"
       },
       {
-        "@id": "urn:ngm:class:code-execution-by-llms",
+        "@id": "urn:ngm:class:code-execution",
         "label": "Code Execution by LLMs"
       },
       {
-        "@id": "urn:ngm:class:computer-use-agents",
+        "@id": "urn:ngm:class:computer-use-and-browser-agents",
         "label": "Computer Use Agents"
       },
       {
@@ -552,10 +516,6 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:parallel-tool-calls",
-        "label": "Parallel Tool Calls"
-      },
-      {
         "@id": "urn:ngm:class:plan-and-execute-pattern",
         "label": "Plan and Execute Pattern"
       },
@@ -564,16 +524,8 @@ public:: true
         "label": "ReAct Pattern"
       },
       {
-        "@id": "urn:ngm:class:streaming-tool-calls",
-        "label": "Streaming Tool Calls"
-      },
-      {
-        "@id": "urn:ngm:class:structured-outputs-strict-mode",
+        "@id": "urn:ngm:class:structured-output",
         "label": "Structured Outputs Strict Mode"
-      },
-      {
-        "@id": "urn:ngm:class:toolformer-paradigm",
-        "label": "Toolformer Paradigm"
       }
     ],
     "uses": [
@@ -590,16 +542,8 @@ public:: true
         "label": "OpenAPI Specification"
       },
       {
-        "@id": "urn:ngm:class:pydantic-models",
-        "label": "Pydantic Models"
-      },
-      {
         "@id": "urn:ngm:class:server-sent-events",
         "label": "Server-Sent Events"
-      },
-      {
-        "@id": "urn:ngm:class:special-tokens",
-        "label": "Special Tokens"
       }
     ],
     "relatedTo": [
@@ -612,7 +556,7 @@ public:: true
         "label": "Chain-of-Thought Prompting"
       },
       {
-        "@id": "urn:ngm:class:code-interpreter",
+        "@id": "urn:ngm:class:code-execution",
         "label": "Code Interpreter"
       },
       {
@@ -634,7 +578,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:code-generation-agents",
+        "@id": "urn:ngm:class:code-generation",
         "label": "Code Generation Agents"
       },
       {
@@ -642,15 +586,15 @@ public:: true
         "label": "Customer Support Automation"
       },
       {
-        "@id": "urn:ngm:class:data-analysis-agents",
+        "@id": "urn:ngm:class:data-analysis",
         "label": "Data Analysis Agents"
       },
       {
-        "@id": "urn:ngm:class:personal-ai-assistants",
+        "@id": "urn:ngm:class:personal-assistance",
         "label": "Personal AI Assistants"
       },
       {
-        "@id": "urn:ngm:class:scientific-discovery-agents",
+        "@id": "urn:ngm:class:scientific-discovery",
         "label": "Scientific Discovery Agents"
       },
       {
@@ -660,23 +604,23 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:anthropic-tool-use-api",
+        "@id": "urn:ngm:class:tool-use",
         "label": "Anthropic Tool Use API"
       },
       {
-        "@id": "urn:ngm:class:google-ai-technology-corporation-gemini-function-declarations",
+        "@id": "urn:ngm:class:google-ai-technology-corporation-gemini",
         "label": "Google Gemini Function Declarations"
       },
       {
-        "@id": "urn:ngm:class:json-data-interchange-format-schema-draft-2020-12",
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema Draft 2020-12"
       },
       {
-        "@id": "urn:ngm:class:openai-research-organisation-function-calling-api",
+        "@id": "urn:ngm:class:openai-research-organisation-api",
         "label": "OpenAI Function Calling API"
       },
       {
-        "@id": "urn:ngm:class:open-api-3-1",
+        "@id": "urn:ngm:class:open-api-specification",
         "label": "OpenAPI 3.1"
       },
       {

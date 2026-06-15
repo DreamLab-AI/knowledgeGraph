@@ -90,12 +90,8 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:tacit-knowledge-transfer",
+        "@id": "urn:ngm:class:knowledge-transfer",
         "label": "Tacit Knowledge Transfer"
-      },
-      {
-        "@id": "urn:ngm:class:explicit-knowledge-codification",
-        "label": "Explicit Knowledge Codification"
       },
       {
         "@id": "urn:ngm:class:peer-learning",
@@ -104,7 +100,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:collaborative-technology",
+        "@id": "urn:ngm:class:collaborative-systems-modality-technology",
         "label": "Collaborative Technology"
       },
       {
@@ -122,7 +118,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:open-source-collaboration",
+        "@id": "urn:ngm:class:open-source",
         "label": "Open Source Collaboration"
       },
       {
@@ -138,16 +134,6 @@ public:: true
       {
         "@id": "urn:ngm:class:identity-management",
         "label": "Identity Management"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:information-hoarding",
-        "label": "Information Hoarding"
-      },
-      {
-        "@id": "urn:ngm:class:knowledge-silos",
-        "label": "Knowledge Silos"
       }
     ],
     "bridgesTo": [

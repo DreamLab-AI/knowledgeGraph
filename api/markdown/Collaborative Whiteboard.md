@@ -410,34 +410,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:breakout-board",
-        "label": "Breakout Board"
-      },
-      {
-        "@id": "urn:ngm:class:connector",
-        "label": "Connector"
-      },
-      {
-        "@id": "urn:ngm:class:embed-widget",
-        "label": "Embed Widget"
-      },
-      {
-        "@id": "urn:ngm:class:follow-mode",
-        "label": "Follow Mode"
-      },
-      {
-        "@id": "urn:ngm:class:frame",
-        "label": "Frame"
-      },
-      {
-        "@id": "urn:ngm:class:freehand-drawing",
-        "label": "Freehand Drawing"
-      },
-      {
-        "@id": "urn:ngm:class:infinite-canvas",
-        "label": "Infinite Canvas"
-      },
-      {
         "@id": "urn:ngm:class:kanban-board",
         "label": "Kanban Board"
       },
@@ -446,20 +418,8 @@ public:: true
         "label": "Mind Map"
       },
       {
-        "@id": "urn:ngm:class:real-time-cursors",
-        "label": "Real-time Cursors"
-      },
-      {
-        "@id": "urn:ngm:class:shape-library",
-        "label": "Shape Library"
-      },
-      {
         "@id": "urn:ngm:class:sticky-notes",
         "label": "Sticky Notes"
-      },
-      {
-        "@id": "urn:ngm:class:template-library",
-        "label": "Template Library"
       },
       {
         "@id": "urn:ngm:class:timer",
@@ -478,10 +438,6 @@ public:: true
       {
         "@id": "urn:ngm:class:authentication",
         "label": "Authentication"
-      },
-      {
-        "@id": "urn:ngm:class:browser-graphics-rendering",
-        "label": "Browser Graphics Rendering"
       },
       {
         "@id": "urn:ngm:class:cloud-storage",
@@ -510,14 +466,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:affinity-diagramming",
-        "label": "Affinity Diagramming"
-      },
-      {
-        "@id": "urn:ngm:class:asynchronous-ideation",
-        "label": "Asynchronous Ideation"
-      },
-      {
         "@id": "urn:ngm:class:collaborative-systems-modality-design",
         "label": "Collaborative Design"
       },
@@ -530,28 +478,12 @@ public:: true
         "label": "Design Thinking"
       },
       {
-        "@id": "urn:ngm:class:distributed-brainstorming",
-        "label": "Distributed Brainstorming"
-      },
-      {
         "@id": "urn:ngm:class:retrospective",
         "label": "Retrospective"
       },
       {
         "@id": "urn:ngm:class:sprint-planning",
         "label": "Sprint Planning"
-      },
-      {
-        "@id": "urn:ngm:class:user-journey-mapping",
-        "label": "User Journey Mapping"
-      },
-      {
-        "@id": "urn:ngm:class:visual-process-mapping",
-        "label": "Visual Process Mapping"
-      },
-      {
-        "@id": "urn:ngm:class:wardley-mapping",
-        "label": "Wardley Mapping"
       }
     ],
     "implements": [
@@ -560,20 +492,12 @@ public:: true
         "label": "Conflict Resolution"
       },
       {
-        "@id": "urn:ngm:class:lww-register",
-        "label": "LWW Register"
-      },
-      {
         "@id": "urn:ngm:class:operational-transformation",
         "label": "Operational Transformation"
       },
       {
         "@id": "urn:ngm:class:or-set",
         "label": "OR-Set"
-      },
-      {
-        "@id": "urn:ngm:class:vector-graphics",
-        "label": "Vector Graphics"
       },
       {
         "@id": "urn:ngm:class:crdt",
@@ -586,24 +510,12 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:canvas-api",
-        "label": "Canvas API"
-      },
-      {
         "@id": "urn:ngm:class:oauth-2-0",
         "label": "OAuth 2.0"
       },
       {
         "@id": "urn:ngm:class:rest-api",
         "label": "REST API"
-      },
-      {
-        "@id": "urn:ngm:class:sentence-transformers",
-        "label": "Sentence Transformers"
-      },
-      {
-        "@id": "urn:ngm:class:svg",
-        "label": "SVG"
       },
       {
         "@id": "urn:ngm:class:web-gl",
@@ -628,11 +540,7 @@ public:: true
         "label": "Confluence"
       },
       {
-        "@id": "urn:ngm:class:design-tools",
-        "label": "Design Tools"
-      },
-      {
-        "@id": "urn:ngm:class:digital-collaboration-platform",
+        "@id": "urn:ngm:class:collaboration-platform",
         "label": "Digital Collaboration Platform"
       },
       {
@@ -654,10 +562,6 @@ public:: true
       {
         "@id": "urn:ngm:class:miro",
         "label": "Miro"
-      },
-      {
-        "@id": "urn:ngm:class:mural",
-        "label": "Mural"
       },
       {
         "@id": "urn:ngm:class:project-management",
@@ -682,24 +586,12 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:agile-retrospective",
-        "label": "Agile Retrospective"
-      },
-      {
         "@id": "urn:ngm:class:design-thinking",
         "label": "Design Thinking"
       },
       {
         "@id": "urn:ngm:class:inclusive-participation",
         "label": "Inclusive Participation"
-      },
-      {
-        "@id": "urn:ngm:class:liberating-structures",
-        "label": "Liberating Structures"
-      },
-      {
-        "@id": "urn:ngm:class:remote-facilitation",
-        "label": "Remote Facilitation"
       },
       {
         "@id": "urn:ngm:class:sprint-planning",
@@ -712,23 +604,11 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:crdt-academic-literature",
-        "label": "CRDT Academic Literature"
-      },
-      {
-        "@id": "urn:ngm:class:iso-9241-usability",
-        "label": "ISO 9241 Usability"
-      },
-      {
-        "@id": "urn:ngm:class:w3-c-pointer-events",
-        "label": "W3C Pointer Events"
-      },
-      {
         "@id": "urn:ngm:class:wcag-2-2",
         "label": "WCAG 2.2"
       },
       {
-        "@id": "urn:ngm:class:web-rtc-standard",
+        "@id": "urn:ngm:class:web-rtc",
         "label": "WebRTC Standard"
       }
     ]

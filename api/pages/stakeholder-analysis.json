@@ -16,20 +16,7 @@
   "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:power-interest-grid",
-        "label": "Power-Interest Grid"
-      },
-      {
-        "id": "urn:ngm:class:influence-mapping",
-        "label": "Influence Mapping"
-      },
-      {
-        "id": "urn:ngm:class:stakeholder-register",
-        "label": "Stakeholder Register"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:requirements-engineering",
@@ -60,12 +47,7 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:expert-elicitation",
-        "label": "Expert Elicitation"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:ai-ethics",
@@ -80,10 +62,6 @@
       {
         "id": "urn:ngm:class:social-network-analysis",
         "label": "Social Network Analysis"
-      },
-      {
-        "id": "urn:ngm:class:consultation-process",
-        "label": "Consultation Process"
       }
     ],
     "supports": [
@@ -118,10 +96,6 @@
       {
         "id": "urn:ngm:class:stakeholder-theory",
         "label": "Stakeholder Theory"
-      },
-      {
-        "id": "urn:ngm:class:conflict-of-interest",
-        "label": "Conflict of Interest"
       }
     ]
   },

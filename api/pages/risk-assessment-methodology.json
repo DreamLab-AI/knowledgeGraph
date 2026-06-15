@@ -60,10 +60,6 @@
       {
         "id": "urn:ngm:class:enterprise-risk-management",
         "label": "Enterprise Risk Management"
-      },
-      {
-        "id": "urn:ngm:class:mitigation-planning",
-        "label": "Mitigation Planning"
       }
     ],
     "dependsOn": [],
@@ -77,16 +73,7 @@
         "label": "NIST Cybersecurity Framework"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:qualitative-risk-assessment",
-        "label": "Qualitative Risk Assessment"
-      },
-      {
-        "id": "urn:ngm:class:quantitative-risk-assessment",
-        "label": "Quantitative Risk Assessment"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:ai-risk-management",
@@ -111,10 +98,6 @@
       {
         "id": "urn:ngm:class:nist-sp-800-30",
         "label": "NIST SP 800-30"
-      },
-      {
-        "id": "urn:ngm:class:coso-erm-framework",
-        "label": "COSO ERM Framework"
       }
     ],
     "partOf": [],

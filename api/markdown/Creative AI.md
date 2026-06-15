@@ -23,51 +23,133 @@ public:: true
   "definition": "Creative AI refers to artificial intelligence systems designed to generate, augment, or evaluate creative artefacts — including images, music, text, video, and interactive experiences — by learning latent representations of aesthetic structure from large corpora of human-produced works. Drawing on generative architectures such as diffusion models, large language models, transformers, and generative adversarial networks, these systems can synthesise novel content that extends or stylistically mimics human creative practice. They are deployed across professional creative pipelines in entertainment, advertising, game development, and design, while simultaneously raising contested questions of authorship, copyright, and economic disruption for human creators. Creative AI represents the convergence of machine learning research with aesthetic domains historically regarded as uniquely human, positioning it as both a technical milestone and a socio-cultural inflection point.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"},
-      {"@id": "urn:ngm:class:neural-style-transfer", "label": "Neural Style Transfer"}
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "@id": "urn:ngm:class:style-transfer",
+        "label": "Neural Style Transfer"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:content-creation", "label": "Content Creation"},
-      {"@id": "urn:ngm:class:digital-content-creation", "label": "Digital Content Creation"},
-      {"@id": "urn:ngm:class:music-generation", "label": "Music Generation"},
-      {"@id": "urn:ngm:class:text-to-speech", "label": "Text-to-Speech"},
-      {"@id": "urn:ngm:class:procedural-content-generation", "label": "Procedural Content Generation"}
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:music-generation",
+        "label": "Music Generation"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:creative-software", "label": "Creative Software"},
-      {"@id": "urn:ngm:class:ai-art-categorization", "label": "Ai Art Categorization"},
-      {"@id": "urn:ngm:class:ai-application", "label": "AI Application"},
-      {"@id": "urn:ngm:class:human-ai-collaboration", "label": "Human-AI Collaboration"},
-      {"@id": "urn:ngm:class:intellectual-property", "label": "Intellectual Property"}
+      {
+        "@id": "urn:ngm:class:creative-software",
+        "label": "Creative Software"
+      },
+      {
+        "@id": "urn:ngm:class:ai-art-categorization",
+        "label": "Ai Art Categorization"
+      },
+      {
+        "@id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      },
+      {
+        "@id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:intellectual-property-rights-framework",
+        "label": "Intellectual Property"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:discriminative-ai", "label": "Discriminative AI"},
-      {"@id": "urn:ngm:class:rule-based-systems", "label": "Rule-Based Systems"}
+      {
+        "@id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based Systems"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-twins", "label": "Digital Twins"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {
+        "@id": "urn:ngm:class:digital-twins",
+        "label": "Digital Twins"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:game-development", "label": "Game Development"}
+      {
+        "@id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:generative-creative-systems", "label": "Generative Creative Systems"},
-    {"@id": "urn:ngm:class:computational-creativity", "label": "Computational Creativity"}
+    {
+      "@id": "urn:ngm:class:generative-creative-systems",
+      "label": "Generative Creative Systems"
+    },
+    {
+      "@id": "urn:ngm:class:computational-creativity",
+      "label": "Computational Creativity"
+    }
   ],
   "quality": 0.74,
   "provenance": {

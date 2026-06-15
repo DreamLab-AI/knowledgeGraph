@@ -62,10 +62,6 @@
         "label": "Filecoin"
       },
       {
-        "id": "urn:ngm:class:content-routing",
-        "label": "Content Routing"
-      },
-      {
         "id": "urn:ngm:class:peer-discovery",
         "label": "Peer Discovery"
       },
@@ -94,20 +90,7 @@
         "label": "Overlay Network"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:chord-dht",
-        "label": "Chord DHT"
-      },
-      {
-        "id": "urn:ngm:class:pastry-dht",
-        "label": "Pastry DHT"
-      },
-      {
-        "id": "urn:ngm:class:central-index-server",
-        "label": "Central Index Server"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:blockchain",
@@ -143,10 +126,6 @@
       {
         "id": "urn:ngm:class:eclipse-attack",
         "label": "Eclipse Attack"
-      },
-      {
-        "id": "urn:ngm:class:ethereum-node-discovery",
-        "label": "Ethereum Node Discovery"
       }
     ]
   },

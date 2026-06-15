@@ -94,7 +94,7 @@ public:: true
         "label": "Supply Chain Traceability"
       },
       {
-        "@id": "urn:ngm:class:cross-organisational-data-sharing",
+        "@id": "urn:ngm:class:data-sharing",
         "label": "Cross-Organisational Data Sharing"
       },
       {
@@ -104,7 +104,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -148,7 +148,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:hyperledger-project",
+        "@id": "urn:ngm:class:hyperledger-foundation",
         "label": "Hyperledger Project"
       },
       {

@@ -26,7 +26,7 @@
         "label": "Safety Lifecycle"
       },
       {
-        "id": "urn:ngm:class:hazard-and-risk-assessment",
+        "id": "urn:ngm:class:risk-assessment",
         "label": "Hazard and Risk Assessment"
       },
       {
@@ -44,7 +44,7 @@
         "label": "HAZOP"
       },
       {
-        "id": "urn:ngm:class:independent-safety-assessment",
+        "id": "urn:ngm:class:safety-assessment",
         "label": "Independent Safety Assessment"
       },
       {
@@ -79,12 +79,8 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:do-178c",
+        "id": "urn:ngm:class:do-178-c",
         "label": "DO-178C"
-      },
-      {
-        "id": "urn:ngm:class:iso-25119",
-        "label": "ISO 25119"
       }
     ],
     "bridgesTo": [

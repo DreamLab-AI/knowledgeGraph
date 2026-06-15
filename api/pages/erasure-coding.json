@@ -26,10 +26,6 @@
         "label": "LDPC Codes"
       },
       {
-        "id": "urn:ngm:class:fountain-codes",
-        "label": "Fountain Codes"
-      },
-      {
         "id": "urn:ngm:class:galois-field-arithmetic",
         "label": "Galois Field Arithmetic"
       }
@@ -42,10 +38,6 @@
       {
         "id": "urn:ngm:class:distributed-storage",
         "label": "Distributed Storage"
-      },
-      {
-        "id": "urn:ngm:class:shard-distribution",
-        "label": "Shard Distribution"
       }
     ],
     "enables": [
@@ -60,20 +52,12 @@
       {
         "id": "urn:ngm:class:high-availability",
         "label": "High Availability"
-      },
-      {
-        "id": "urn:ngm:class:storage-efficiency",
-        "label": "Storage Efficiency"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems"
-      },
-      {
-        "id": "urn:ngm:class:failure-domain",
-        "label": "Failure Domain"
       }
     ],
     "implements": [
@@ -92,7 +76,7 @@
         "label": "Data Replication"
       },
       {
-        "id": "urn:ngm:class:full-replication",
+        "id": "urn:ngm:class:replication",
         "label": "Full Replication"
       }
     ],
@@ -106,7 +90,7 @@
         "label": "Danksharding"
       },
       {
-        "id": "urn:ngm:class:data-availability-layer",
+        "id": "urn:ngm:class:data-availability",
         "label": "Data Availability Layer"
       }
     ],
@@ -155,7 +139,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:replication-factor",
+        "id": "urn:ngm:class:replication",
         "label": "Replication Factor"
       },
       {

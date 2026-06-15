@@ -60,12 +60,6 @@ public:: true
     }
   ],
   "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:semantic-data-retrieval",
-        "label": "Semantic Data Retrieval"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:query-processor",

@@ -210,14 +210,6 @@ public:: true
         "label": "Mechanical Interface"
       },
       {
-        "@id": "urn:ngm:class:motor-winding",
-        "label": "Motor Winding"
-      },
-      {
-        "@id": "urn:ngm:class:output-transmission",
-        "label": "Output Transmission"
-      },
-      {
         "@id": "urn:ngm:class:power-electronics",
         "label": "Power Electronics"
       }
@@ -230,32 +222,6 @@ public:: true
       {
         "@id": "urn:ngm:class:electrical-power",
         "label": "Electrical Power"
-      },
-      {
-        "@id": "urn:ngm:class:load-support",
-        "label": "Load Support"
-      },
-      {
-        "@id": "urn:ngm:class:thermal-dissipation",
-        "label": "Thermal Dissipation"
-      }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:dynamic-responsiveness",
-        "label": "Dynamic Responsiveness"
-      },
-      {
-        "@id": "urn:ngm:class:force-exertion",
-        "label": "Force Exertion"
-      },
-      {
-        "@id": "urn:ngm:class:motion-generation",
-        "label": "Motion Generation"
-      },
-      {
-        "@id": "urn:ngm:class:precise-control",
-        "label": "Precise Control"
       }
     ]
   },

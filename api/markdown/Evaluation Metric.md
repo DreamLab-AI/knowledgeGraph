@@ -23,53 +23,148 @@ public:: true
   "definition": "An evaluation metric is a quantitative or qualitative measure used to assess the performance, quality, or behaviour of a machine learning model, algorithm, or system against a defined objective. Metrics are computed over held-out test data or through human judgement protocols and provide the empirical basis for model comparison, selection, and deployment decisions. The choice of metric directly shapes what properties a model optimises for during training and what trade-offs are made between competing objectives such as accuracy, fairness, and calibration. Metric selection is therefore a first-class design decision whose consequences cascade from training dynamics through to safety, governance, and societal impact.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:performance-metrics", "label": "Performance Metrics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:performance-metrics",
+      "label": "Performance Metrics"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:model-metric", "label": "Model Metric"},
-    {"@id": "urn:ngm:class:performance-measure", "label": "Performance Measure"}
+    {
+      "@id": "urn:ngm:class:model-metric",
+      "label": "Model Metric"
+    },
+    {
+      "@id": "urn:ngm:class:performance-measure",
+      "label": "Performance Measure"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:accuracy", "label": "Accuracy"},
-      {"@id": "urn:ngm:class:precision", "label": "Precision"},
-      {"@id": "urn:ngm:class:recall", "label": "Recall"},
-      {"@id": "urn:ngm:class:f1-score", "label": "F1 Score"},
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
-      {"@id": "urn:ngm:class:auc-roc", "label": "AUC-ROC"},
-      {"@id": "urn:ngm:class:fairness-metrics", "label": "Fairness Metrics"}
+      {
+        "@id": "urn:ngm:class:accuracy",
+        "label": "Accuracy"
+      },
+      {
+        "@id": "urn:ngm:class:precision",
+        "label": "Precision"
+      },
+      {
+        "@id": "urn:ngm:class:recall",
+        "label": "Recall"
+      },
+      {
+        "@id": "urn:ngm:class:f1-score",
+        "label": "F1 Score"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:auc-roc",
+        "label": "AUC-ROC"
+      },
+      {
+        "@id": "urn:ngm:class:fairness-metrics",
+        "label": "Fairness Metrics"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ground-truth-label", "label": "Ground Truth Label"},
-      {"@id": "urn:ngm:class:test-dataset", "label": "Test Dataset"},
-      {"@id": "urn:ngm:class:evaluation-protocol", "label": "Evaluation Protocol"}
+      {
+        "@id": "urn:ngm:class:ground-truth-label",
+        "label": "Ground Truth Label"
+      },
+      {
+        "@id": "urn:ngm:class:test-dataset",
+        "label": "Test Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:evaluation-harness",
+        "label": "Evaluation Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-comparison", "label": "Model Comparison"},
-      {"@id": "urn:ngm:class:hyperparameter-tuning", "label": "Hyperparameter Tuning"},
-      {"@id": "urn:ngm:class:model-selection", "label": "Model Selection"}
+      {
+        "@id": "urn:ngm:class:model-comparison",
+        "label": "Model Comparison"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"}
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
-      {"@id": "urn:ngm:class:objective-function", "label": "Objective Function"}
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:objective-function",
+        "label": "Objective Function"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"},
-      {"@id": "urn:ngm:class:benchmark-standard", "label": "Benchmark Standard"},
-      {"@id": "urn:ngm:class:model-evaluation-results", "label": "Model Evaluation Results"},
-      {"@id": "urn:ngm:class:goodharts-law", "label": "Goodhart's Law"},
-      {"@id": "urn:ngm:class:calibration", "label": "Calibration"},
-      {"@id": "urn:ngm:class:model-card", "label": "Model Card"}
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
+      {
+        "@id": "urn:ngm:class:benchmark-standard",
+        "label": "Benchmark Standard"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      },
+      {
+        "@id": "urn:ngm:class:goodharts-law",
+        "label": "Goodhart's Law"
+      },
+      {
+        "@id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:ai-model-card",
+        "label": "Model Card"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ]
   },
   "quality": 0.75,

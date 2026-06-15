@@ -669,20 +669,12 @@ alias:: Digital-Signature, DigitalSignature
         "label": "Key Generation Algorithm"
       },
       {
-        "@id": "urn:ngm:class:random-nonce",
+        "@id": "urn:ngm:class:nonce",
         "label": "Random Nonce"
       },
       {
-        "@id": "urn:ngm:class:signature-value",
-        "label": "Signature Value"
-      },
-      {
-        "@id": "urn:ngm:class:signing-algorithm",
+        "@id": "urn:ngm:class:cryptographic-signing",
         "label": "Signing Algorithm"
-      },
-      {
-        "@id": "urn:ngm:class:verification-algorithm",
-        "label": "Verification Algorithm"
       },
       {
         "@id": "urn:ngm:class:hash-function",
@@ -703,12 +695,8 @@ alias:: Digital-Signature, DigitalSignature
         "label": "Computational Hardness Assumption"
       },
       {
-        "@id": "urn:ngm:class:cryptographically-secure-random-number-generator",
+        "@id": "urn:ngm:class:random-number-generator",
         "label": "Cryptographically Secure Random Number Generator"
-      },
-      {
-        "@id": "urn:ngm:class:trusted-key-distribution",
-        "label": "Trusted Key Distribution"
       },
       {
         "@id": "urn:ngm:class:hash-function",
@@ -729,11 +717,7 @@ alias:: Digital-Signature, DigitalSignature
         "label": "Code Signing"
       },
       {
-        "@id": "urn:ngm:class:document-signing",
-        "label": "Document Signing"
-      },
-      {
-        "@id": "urn:ngm:class:software-supply-chain-integrity",
+        "@id": "urn:ngm:class:supply-chain",
         "label": "Software Supply Chain Integrity"
       },
       {
@@ -759,31 +743,15 @@ alias:: Digital-Signature, DigitalSignature
         "label": "Discrete Logarithm Problem"
       },
       {
-        "@id": "urn:ngm:class:euf-cma-security",
-        "label": "EUF-CMA Security"
-      },
-      {
-        "@id": "urn:ngm:class:existential-unforgeability",
-        "label": "Existential Unforgeability"
-      },
-      {
         "@id": "urn:ngm:class:fiat-shamir-heuristic",
         "label": "Fiat-Shamir Heuristic"
       },
       {
-        "@id": "urn:ngm:class:integer-factorisation-problem",
-        "label": "Integer Factorisation Problem"
-      },
-      {
-        "@id": "urn:ngm:class:lattice-trapdoor",
+        "@id": "urn:ngm:class:lattice-cryptography",
         "label": "Lattice Trapdoor"
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:base58-encoding",
-        "label": "Base58 Encoding"
-      },
       {
         "@id": "urn:ngm:class:blake3",
         "label": "BLAKE3"
@@ -791,10 +759,6 @@ alias:: Digital-Signature, DigitalSignature
       {
         "@id": "urn:ngm:class:curve25519",
         "label": "Curve25519"
-      },
-      {
-        "@id": "urn:ngm:class:der-encoding",
-        "label": "DER Encoding"
       },
       {
         "@id": "urn:ngm:class:ed25519",
@@ -837,24 +801,12 @@ alias:: Digital-Signature, DigitalSignature
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:e-idas-qes",
-        "label": "eIDAS QES"
-      },
-      {
         "@id": "urn:ngm:class:nostr",
         "label": "Nostr"
       },
       {
-        "@id": "urn:ngm:class:open-pgp",
-        "label": "OpenPGP"
-      },
-      {
         "@id": "urn:ngm:class:sigstore",
         "label": "Sigstore"
-      },
-      {
-        "@id": "urn:ngm:class:smart-contract-authorisation",
-        "label": "Smart Contract Authorisation"
       },
       {
         "@id": "urn:ngm:class:tls",
@@ -871,10 +823,6 @@ alias:: Digital-Signature, DigitalSignature
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:ansi-x9",
-        "label": "ANSI X9"
-      },
-      {
         "@id": "urn:ngm:class:e-idas-2-0",
         "label": "eIDAS 2.0"
       },
@@ -885,10 +833,6 @@ alias:: Digital-Signature, DigitalSignature
       {
         "@id": "urn:ngm:class:fips-186-5",
         "label": "FIPS 186-5"
-      },
-      {
-        "@id": "urn:ngm:class:fips-204",
-        "label": "FIPS 204"
       },
       {
         "@id": "urn:ngm:class:ietf",

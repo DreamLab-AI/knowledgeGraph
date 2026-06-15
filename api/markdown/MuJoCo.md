@@ -23,56 +23,139 @@ public:: true
   "definition": "MuJoCo (Multi-Joint dynamics with Contact) is a high-speed, high-fidelity physics simulation engine designed for modelling articulated rigid-body systems with complex contact dynamics, widely used in robotics research and reinforcement learning. Developed by Emo Todorov at the University of Washington and commercialised by Roboti LLC, it was acquired by Google DeepMind in 2021 and made freely available as open-source software in 2022. MuJoCo excels at simulating musculoskeletal models, legged locomotion, dexterous manipulation, and other contact-rich robotic tasks that require accurate Lagrangian dynamics and constraint solvers. Its adoption as the standard benchmark environment for reinforcement learning algorithms—via OpenAI Gym and later Gymnasium wrappers—has made it the de facto substrate for sim-to-real transfer research in robotics.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:physics-simulation",
+      "label": "Physics Simulation"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:embodied-ai-simulation", "label": "Embodied AI Simulation"},
-      {"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"},
-      {"@id": "urn:ngm:class:robot-learning", "label": "Robot Learning"},
-      {"@id": "urn:ngm:class:sim-to-real-transfer", "label": "Sim-to-Real Transfer"},
-      {"@id": "urn:ngm:class:continuous-control", "label": "Continuous Control"},
-      {"@id": "urn:ngm:class:computational-neuroscience", "label": "Computational Neuroscience"},
-      {"@id": "urn:ngm:class:biomechanics", "label": "Biomechanics"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:embodied-ai-simulation",
+        "label": "Embodied AI Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "@id": "urn:ngm:class:robot-learning",
+        "label": "Robot Learning"
+      },
+      {
+        "@id": "urn:ngm:class:sim-to-real-transfer",
+        "label": "Sim-to-Real Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-control",
+        "label": "Continuous Control"
+      },
+      {
+        "@id": "urn:ngm:class:computational-neuroscience",
+        "label": "Computational Neuroscience"
+      },
+      {
+        "@id": "urn:ngm:class:biomechanics",
+        "label": "Biomechanics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:humanoid-robotics", "label": "Humanoid Robotics"},
-      {"@id": "urn:ngm:class:legged-locomotion", "label": "Legged Locomotion"},
-      {"@id": "urn:ngm:class:dexterous-manipulation", "label": "Dexterous Manipulation"},
-      {"@id": "urn:ngm:class:policy-gradient-methods", "label": "Policy Gradient Methods"},
-      {"@id": "urn:ngm:class:domain-randomisation", "label": "Domain Randomisation"}
+      {
+        "@id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:legged-locomotion",
+        "label": "Legged Locomotion"
+      },
+      {
+        "@id": "urn:ngm:class:dexterous-manipulation",
+        "label": "Dexterous Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:policy-gradient-methods",
+        "label": "Policy Gradient Methods"
+      },
+      {
+        "@id": "urn:ngm:class:domain-randomisation",
+        "label": "Domain Randomisation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:reinforcement-learning-algorithm", "label": "Reinforcement Learning Algorithm"},
-      {"@id": "urn:ngm:class:proximal-policy-optimisation", "label": "Proximal Policy Optimisation"},
-      {"@id": "urn:ngm:class:convex-optimisation", "label": "Convex Optimisation"},
-      {"@id": "urn:ngm:class:lagrangian-dynamics", "label": "Lagrangian Dynamics"},
-      {"@id": "urn:ngm:class:xml-model-definition", "label": "XML Model Definition"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-algorithm",
+        "label": "Reinforcement Learning Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:proximal-policy-optimisation",
+        "label": "Proximal Policy Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:convex-optimisation",
+        "label": "Convex Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:lagrangian-dynamics",
+        "label": "Lagrangian Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:xml-model-definition",
+        "label": "XML Model Definition"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:constraint-solver", "label": "Constraint Solver"},
-      {"@id": "urn:ngm:class:rigid-body-dynamics", "label": "Rigid Body Dynamics"}
+      {
+        "@id": "urn:ngm:class:constraint-solver",
+        "label": "Constraint Solver"
+      },
+      {
+        "@id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:contact-dynamics-model", "label": "Contact Dynamics Model"},
-      {"@id": "urn:ngm:class:musculoskeletal-model", "label": "Musculoskeletal Model"}
+      {
+        "@id": "urn:ngm:class:contact-dynamics-model",
+        "label": "Contact Dynamics Model"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:openai-gym", "label": "OpenAI Gym"},
-      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"}
+      {
+        "@id": "urn:ngm:class:openai-gym",
+        "label": "OpenAI Gym"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:isaac-gym", "label": "Isaac Gym"},
-      {"@id": "urn:ngm:class:pybullet", "label": "PyBullet"},
-      {"@id": "urn:ngm:class:gazebo", "label": "Gazebo"}
+      {
+        "@id": "urn:ngm:class:gazebo-simulator",
+        "label": "Gazebo"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:multi-joint-dynamics-with-contact", "label": "Multi-Joint Dynamics with Contact"}
+    {
+      "@id": "urn:ngm:class:multi-joint-dynamics-with-contact",
+      "label": "Multi-Joint Dynamics with Contact"
+    }
   ],
   "quality": 0.72,
   "provenance": {

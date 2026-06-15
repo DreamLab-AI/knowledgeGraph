@@ -88,15 +88,11 @@ public:: true
         "label": "Encryption"
       },
       {
-        "@id": "urn:ngm:class:intellectual-property-licence-instrument-management",
-        "label": "License Management"
-      },
-      {
         "@id": "urn:ngm:class:smart-contracts",
         "label": "Smart Contracts"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -118,26 +114,14 @@ public:: true
         "label": "Royalty Distribution"
       },
       {
-        "@id": "urn:ngm:class:intellectual-property-enforcement",
-        "label": "Intellectual Property Enforcement"
-      },
-      {
         "@id": "urn:ngm:class:content-monetisation",
         "label": "Content Monetisation"
       }
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:licence-server",
-        "label": "Licence Server"
-      },
-      {
         "@id": "urn:ngm:class:key-management-system",
         "label": "Key Management System"
-      },
-      {
-        "@id": "urn:ngm:class:usage-tracking",
-        "label": "Usage Tracking"
       }
     ],
     "uses": [
@@ -158,20 +142,6 @@ public:: true
       {
         "@id": "urn:ngm:class:trusted-execution-environment",
         "label": "Trusted Execution Environment"
-      },
-      {
-        "@id": "urn:ngm:class:open-digital-rights-language",
-        "label": "Open Digital Rights Language"
-      }
-    ],
-    "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:w3c-encrypted-media-extensions",
-        "label": "W3C Encrypted Media Extensions"
-      },
-      {
-        "@id": "urn:ngm:class:mpeg-21",
-        "label": "MPEG-21"
       }
     ],
     "contrastsWith": [
@@ -195,10 +165,6 @@ public:: true
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:copyright-law",
-        "label": "Copyright Law"
-      },
       {
         "@id": "urn:ngm:class:trusted-platform-module",
         "label": "Trusted Platform Module"

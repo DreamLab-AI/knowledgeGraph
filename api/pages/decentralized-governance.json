@@ -22,10 +22,6 @@
         "label": "Delegation System"
       },
       {
-        "id": "urn:ngm:class:governance-forum",
-        "label": "Governance Forum"
-      },
-      {
         "id": "urn:ngm:class:quorum-threshold",
         "label": "Quorum Threshold"
       },
@@ -90,20 +86,12 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:community-ownership",
-        "label": "Community Ownership"
-      },
-      {
         "id": "urn:ngm:class:dao",
         "label": "DAO"
       },
       {
         "id": "urn:ngm:class:decentralized-finance",
         "label": "Decentralized Finance"
-      },
-      {
-        "id": "urn:ngm:class:parameter-adjustment",
-        "label": "Parameter Adjustment"
       },
       {
         "id": "urn:ngm:class:protocol-upgrades",
@@ -153,15 +141,11 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:discourse-forums",
-        "label": "Discourse Forums"
-      },
-      {
         "id": "urn:ngm:class:erc-20-tokens",
         "label": "ERC-20 Tokens"
       },
       {
-        "id": "urn:ngm:class:governor-contracts",
+        "id": "urn:ngm:class:open-zeppelin-governor-contracts",
         "label": "Governor Contracts"
       },
       {
@@ -199,10 +183,6 @@
         "label": "Open Source Governance"
       },
       {
-        "id": "urn:ngm:class:protocol-decentralization",
-        "label": "Protocol Decentralization"
-      },
-      {
         "id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
         "label": "Public Goods Funding"
       }
@@ -217,10 +197,6 @@
         "label": "Compound Governor Bravo"
       },
       {
-        "id": "urn:ngm:class:cosmos-governance-module",
-        "label": "Cosmos Governance Module"
-      },
-      {
         "id": "urn:ngm:class:eip-process",
         "label": "EIP Process"
       },
@@ -229,7 +205,7 @@
         "label": "OpenZeppelin Governor"
       },
       {
-        "id": "urn:ngm:class:tally-protocol",
+        "id": "urn:ngm:class:tally",
         "label": "Tally Protocol"
       }
     ],
@@ -240,7 +216,7 @@
         "label": "Common Pool Resources"
       },
       {
-        "id": "urn:ngm:class:compound-finance",
+        "id": "urn:ngm:class:compound",
         "label": "Compound Finance"
       },
       {

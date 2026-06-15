@@ -23,60 +23,89 @@ public:: true
   "definition": "Dublin Core is a standardised set of fifteen core metadata elements defined by the Dublin Core Metadata Initiative (DCMI) to describe digital and physical resources in a simple, interoperable manner. It provides a lowest-common-denominator vocabulary applicable across libraries, repositories, the web, and cross-domain data exchange.",
   "domain": "data",
   "maturity": "mature",
-  "subClassOf": {"@id": "urn:ngm:class:metadata-standard", "label": "Metadata Standard"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:metadata-standard",
+    "label": "Metadata Standard"
+  },
   "relations": {
-    "hasPart": [
-      {"@id": "urn:ngm:class:dc-elements", "label": "DC Elements"},
-      {"@id": "urn:ngm:class:dc-terms", "label": "DC Terms"},
-      {"@id": "urn:ngm:class:dc-type-vocabulary", "label": "DC Type Vocabulary"}
-    ],
     "partOf": [
-      {"@id": "urn:ngm:class:semantic-web-standards", "label": "Semantic Web Standards"},
-      {"@id": "urn:ngm:class:open-archives-initiative", "label": "Open Archives Initiative"}
-    ],
-    "requires": [
-      {"@id": "urn:ngm:class:resource-description-framework", "label": "Resource Description Framework"}
+      {
+        "@id": "urn:ngm:class:web-standards",
+        "label": "Semantic Web Standards"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:metadata-harvesting", "label": "Metadata Harvesting"},
-      {"@id": "urn:ngm:class:federated-search", "label": "Federated Search"},
-      {"@id": "urn:ngm:class:fair-data-principles", "label": "FAIR Data Principles"}
+      {
+        "@id": "urn:ngm:class:fair-data-principles",
+        "label": "FAIR Data Principles"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:iso-15836", "label": "ISO 15836"},
-      {"@id": "urn:ngm:class:ansi-niso-z39-85", "label": "ANSI/NISO Z39.85"}
+      {
+        "@id": "urn:ngm:class:iso-15836",
+        "label": "ISO 15836"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:uniform-resource-identifier", "label": "Uniform Resource Identifier"}
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:digital-library", "label": "Digital Library"},
-      {"@id": "urn:ngm:class:institutional-repository", "label": "Institutional Repository"},
-      {"@id": "urn:ngm:class:open-data-portal", "label": "Open Data Portal"}
+      {
+        "@id": "urn:ngm:class:institutional-repository",
+        "label": "Institutional Repository"
+      },
+      {
+        "@id": "urn:ngm:class:open-data",
+        "label": "Open Data Portal"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"},
-      {"@id": "urn:ngm:class:dublin-core-metadata-initiative", "label": "Dublin Core Metadata Initiative"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:marc21", "label": "MARC 21"},
-      {"@id": "urn:ngm:class:mods-metadata", "label": "MODS Metadata"}
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:rdf-schema", "label": "RDF Schema"},
-      {"@id": "urn:ngm:class:schema-org", "label": "Schema.org"},
-      {"@id": "urn:ngm:class:dcat", "label": "DCAT"}
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:rdf-schema",
+        "label": "RDF Schema"
+      },
+      {
+        "@id": "urn:ngm:class:schema-org",
+        "label": "Schema.org"
+      },
+      {
+        "@id": "urn:ngm:class:dcat",
+        "label": "DCAT"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:data-catalogue", "label": "Data Catalogue"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:data-catalogue",
+        "label": "Data Catalogue"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:dcmi-metadata-terms", "label": "DCMI Metadata Terms"},
-    {"@id": "urn:ngm:class:dc-metadata-element-set", "label": "DC Metadata Element Set"}
+    {
+      "@id": "urn:ngm:class:dcmi-metadata-terms",
+      "label": "DCMI Metadata Terms"
+    },
+    {
+      "@id": "urn:ngm:class:dc-metadata-element-set",
+      "label": "DC Metadata Element Set"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

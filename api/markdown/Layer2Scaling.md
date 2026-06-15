@@ -176,12 +176,6 @@ public:: true
     }
   ],
   "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:high-throughput-transaction",
-        "label": "HighThroughputTransaction"
-      }
-    ],
     "uses": [
       {
         "@id": "urn:ngm:class:cryptographic-proof",

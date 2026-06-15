@@ -34,11 +34,7 @@
         "label": "Algorithmic Accountability"
       },
       {
-        "id": "urn:ngm:class:biometric-surveillance-regulation",
-        "label": "Biometric Surveillance Regulation"
-      },
-      {
-        "id": "urn:ngm:class:ai-liability-frameworks",
+        "id": "urn:ngm:class:ai-liability",
         "label": "AI Liability Frameworks"
       }
     ],
@@ -66,7 +62,7 @@
         "label": "Access to Justice"
       },
       {
-        "id": "urn:ngm:class:democratic-oversight-of-ai",
+        "id": "urn:ngm:class:democratic-governance",
         "label": "Democratic Oversight of AI"
       }
     ],
@@ -82,11 +78,11 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:general-data-protection-regulation",
+        "id": "urn:ngm:class:data-protection-regulation",
         "label": "General Data Protection Regulation"
       }
     ],
@@ -164,7 +160,7 @@
         "label": "Data Brokerage"
       },
       {
-        "id": "urn:ngm:class:facial-recognition-technology",
+        "id": "urn:ngm:class:facial-recognition",
         "label": "Facial Recognition Technology"
       }
     ]

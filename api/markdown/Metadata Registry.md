@@ -96,7 +96,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:enterprise-data-consistency",
+        "@id": "urn:ngm:class:data-consistency",
         "label": "Enterprise Data Consistency"
       },
       {
@@ -120,7 +120,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:iso-iec-11179",
+        "@id": "urn:ngm:class:iso-11179",
         "label": "ISO/IEC 11179"
       },
       {
@@ -134,7 +134,7 @@ public:: true
         "label": "Ontology"
       },
       {
-        "@id": "urn:ngm:class:semantic-web",
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       },
       {
@@ -158,11 +158,11 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:iso-iec-11179",
+        "@id": "urn:ngm:class:iso-11179",
         "label": "ISO/IEC 11179"
       },
       {
-        "@id": "urn:ngm:class:ieee-p2957",
+        "@id": "urn:ngm:class:ieee",
         "label": "IEEE P2957"
       }
     ],

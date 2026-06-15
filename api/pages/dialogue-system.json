@@ -26,10 +26,6 @@
         "label": "Natural Language Understanding"
       },
       {
-        "id": "urn:ngm:class:dialogue-manager",
-        "label": "Dialogue Manager"
-      },
-      {
         "id": "urn:ngm:class:natural-language-generation",
         "label": "Natural Language Generation"
       },
@@ -96,7 +92,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:rule-based-system",
+        "id": "urn:ngm:class:rule-based-systems",
         "label": "Rule-Based System"
       },
       {
@@ -141,7 +137,7 @@
         "label": "Sentiment Analysis"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai",
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       }
     ]

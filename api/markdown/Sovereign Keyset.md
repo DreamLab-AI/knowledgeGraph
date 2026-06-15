@@ -222,7 +222,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:hardware-security-module-optional",
+        "@id": "urn:ngm:class:hardware-security-module",
         "label": "Hardware Security Module (optional)"
       },
       {
@@ -234,7 +234,7 @@ public:: true
         "label": "secp256k1 Elliptic Curve"
       },
       {
-        "@id": "urn:ngm:class:secure-random-number-generator",
+        "@id": "urn:ngm:class:random-number-generator",
         "label": "Secure Random Number Generator"
       }
     ],

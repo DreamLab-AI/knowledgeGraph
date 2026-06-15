@@ -31,7 +31,7 @@
         "label": "Supervised Fine-Tuning"
       },
       {
-        "id": "urn:ngm:class:human-preference-data",
+        "id": "urn:ngm:class:human-preference",
         "label": "Human Preference Data"
       }
     ],
@@ -117,10 +117,6 @@
         "label": "Responsible AI"
       },
       {
-        "id": "urn:ngm:class:model-safety",
-        "label": "Model Safety"
-      },
-      {
         "id": "urn:ngm:class:human-feedback",
         "label": "Human Feedback"
       }
@@ -129,7 +125,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:constitutional-ai",
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
       },
       {

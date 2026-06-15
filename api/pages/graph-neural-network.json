@@ -148,10 +148,6 @@
       {
         "id": "urn:ngm:class:graph-rag",
         "label": "GraphRAG"
-      },
-      {
-        "id": "urn:ngm:class:molecular-modelling",
-        "label": "Molecular Modelling"
       }
     ]
   },

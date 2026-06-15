@@ -20,10 +20,6 @@
       {
         "id": "urn:ngm:class:twap-oracle",
         "label": "TWAP Oracle"
-      },
-      {
-        "id": "urn:ngm:class:aggregator-feed",
-        "label": "Aggregator Feed"
       }
     ],
     "requires": [
@@ -38,7 +34,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:collateralised-lending",
+        "id": "urn:ngm:class:lending-protocol",
         "label": "Collateralised Lending"
       },
       {
@@ -72,26 +68,18 @@
         "label": "Decentralised Exchange"
       },
       {
-        "id": "urn:ngm:class:cryptoeconomic-staking",
+        "id": "urn:ngm:class:staking",
         "label": "Cryptoeconomic Staking"
       }
     ],
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:centralised-exchange-feed",
-        "label": "Centralised Exchange Feed"
-      },
-      {
-        "id": "urn:ngm:class:spot-price",
+        "id": "urn:ngm:class:price-discovery",
         "label": "Spot Price"
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:financial-data-api",
-        "label": "Financial Data API"
-      },
       {
         "id": "urn:ngm:class:trusted-execution-environment",
         "label": "Trusted Execution Environment"
@@ -129,7 +117,7 @@
         "label": "Flash Loan"
       },
       {
-        "id": "urn:ngm:class:mev-manipulation",
+        "id": "urn:ngm:class:mev",
         "label": "MEV Manipulation"
       },
       {

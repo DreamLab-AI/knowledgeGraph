@@ -23,53 +23,119 @@ public:: true
   "definition": "Role-Based Access Control (RBAC) is an access control paradigm in which permissions to perform operations on system resources are assigned to roles rather than to individual users, and users acquire those permissions by being assigned to one or more roles that reflect their organisational function. It enforces the principle of least privilege and separation of duties by decoupling user identity from resource authorisation through an intermediate role abstraction.",
   "domain": "security",
   "maturity": "mature",
-  "subClassOf": {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:access-control",
+    "label": "Access Control"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:role-hierarchy", "label": "Role Hierarchy"},
-      {"@id": "urn:ngm:class:permission-assignment", "label": "Permission Assignment"},
-      {"@id": "urn:ngm:class:separation-of-duties", "label": "Separation of Duties"}
+      {
+        "@id": "urn:ngm:class:separation-of-duties",
+        "label": "Separation of Duties"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"}
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:authorisation", "label": "Authorisation"},
-      {"@id": "urn:ngm:class:access-control-decisions", "label": "Access Control Decisions"},
-      {"@id": "urn:ngm:class:least-privilege", "label": "Least Privilege"}
+      {
+        "@id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "@id": "urn:ngm:class:access-control-decisions",
+        "label": "Access Control Decisions"
+      },
+      {
+        "@id": "urn:ngm:class:least-privilege",
+        "label": "Least Privilege"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:access-control-policy", "label": "Access Control Policy"},
-      {"@id": "urn:ngm:class:ansi-incits-359", "label": "ANSI/INCITS 359"}
+      {
+        "@id": "urn:ngm:class:access-control-policy",
+        "label": "Access Control Policy"
+      },
+      {
+        "@id": "urn:ngm:class:ansi-incits-359",
+        "label": "ANSI/INCITS 359"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:directory-service", "label": "Directory Service"},
-      {"@id": "urn:ngm:class:scim-provisioning", "label": "SCIM Provisioning"}
+      {
+        "@id": "urn:ngm:class:directory-service",
+        "label": "Directory Service"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:multi-tenancy", "label": "Multi-Tenancy"},
-      {"@id": "urn:ngm:class:audit-logging", "label": "Audit Logging"}
+      {
+        "@id": "urn:ngm:class:multi-tenancy",
+        "label": "Multi-Tenancy"
+      },
+      {
+        "@id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:attribute-based-access-control", "label": "Attribute-Based Access Control"},
-      {"@id": "urn:ngm:class:discretionary-access-control", "label": "Discretionary Access Control"},
-      {"@id": "urn:ngm:class:mandatory-access-control", "label": "Mandatory Access Control"}
+      {
+        "@id": "urn:ngm:class:attribute-based-access-control",
+        "label": "Attribute-Based Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:discretionary-access-control",
+        "label": "Discretionary Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:mandatory-access-control",
+        "label": "Mandatory Access Control"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
-      {"@id": "urn:ngm:class:policy-enforcement", "label": "Policy Enforcement"},
-      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"},
-      {"@id": "urn:ngm:class:open-policy-agent", "label": "Open Policy Agent"},
-      {"@id": "urn:ngm:class:kubernetes-rbac", "label": "Kubernetes RBAC"}
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      },
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:open-policy-agent",
+        "label": "Open Policy Agent"
+      },
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes RBAC"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:rbac", "label": "RBAC"}
+    {
+      "@id": "urn:ngm:class:rbac",
+      "label": "RBAC"
+    }
   ],
   "quality": 0.72,
   "provenance": {

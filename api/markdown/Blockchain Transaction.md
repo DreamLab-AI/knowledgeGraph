@@ -57,51 +57,131 @@ public:: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
-      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"}
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:utxo", "label": "UTXO"},
-      {"@id": "urn:ngm:class:transaction-input", "label": "Transaction Input"},
-      {"@id": "urn:ngm:class:transaction-output", "label": "Transaction Output"},
-      {"@id": "urn:ngm:class:transaction-nonce", "label": "Transaction Nonce"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
+      {
+        "@id": "urn:ngm:class:utxo",
+        "label": "UTXO"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-input",
+        "label": "Transaction Input"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-output",
+        "label": "Transaction Output"
+      },
+      {
+        "@id": "urn:ngm:class:nonce",
+        "label": "Transaction Nonce"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:payment-system", "label": "Payment System"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"},
-      {"@id": "urn:ngm:class:atomic-swap", "label": "Atomic Swap"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:mempool", "label": "Mempool"}
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:database-transaction", "label": "Database Transaction"},
-      {"@id": "urn:ngm:class:traditional-payment", "label": "Traditional Payment"}
+      {
+        "@id": "urn:ngm:class:transaction",
+        "label": "Database Transaction"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:block", "label": "Block"},
-      {"@id": "urn:ngm:class:layer-2-protocol", "label": "Layer-2 Protocol"},
-      {"@id": "urn:ngm:class:transaction-throughput", "label": "Transaction Throughput"}
+      {
+        "@id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-protocol",
+        "label": "Layer-2 Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-throughput",
+        "label": "Transaction Throughput"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+      {
+        "@id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:on-chain-transaction", "label": "On-Chain Transaction"}
+    {
+      "@id": "urn:ngm:class:on-chain-transaction",
+      "label": "On-Chain Transaction"
+    }
   ],
   "quality": 0.74,
   "provenance": {

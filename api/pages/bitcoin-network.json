@@ -34,7 +34,7 @@
         "label": "Full Node"
       },
       {
-        "id": "urn:ngm:class:bitcoin-script",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
         "label": "Bitcoin Script"
       }
     ],
@@ -68,7 +68,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       },
       {
@@ -78,7 +78,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:bitcoin-improvement-proposal",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
         "label": "Bitcoin Improvement Proposal"
       },
       {
@@ -88,7 +88,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:ethereum-network",
+        "id": "urn:ngm:class:ethereum",
         "label": "Ethereum Network"
       },
       {
@@ -133,10 +133,6 @@
       }
     ],
     "supports": [
-      {
-        "id": "urn:ngm:class:spv-verification",
-        "label": "SPV Verification"
-      },
       {
         "id": "urn:ngm:class:multisignature",
         "label": "Multisignature"

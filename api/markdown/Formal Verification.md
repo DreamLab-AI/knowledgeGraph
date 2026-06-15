@@ -37,55 +37,113 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:mathematical-verification", "label": "Mathematical Verification"},
-    {"@id": "urn:ngm:class:program-verification", "label": "Program Verification"}
+    {
+      "@id": "urn:ngm:class:mathematical-verification",
+      "label": "Mathematical Verification"
+    },
+    {
+      "@id": "urn:ngm:class:program-verification",
+      "label": "Program Verification"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:model-checking", "label": "Model Checking"},
-      {"@id": "urn:ngm:class:theorem-proving", "label": "Theorem Proving"},
-      {"@id": "urn:ngm:class:abstract-interpretation", "label": "Abstract Interpretation"},
-      {"@id": "urn:ngm:class:smt-solving", "label": "SMT Solving"}
+      {
+        "@id": "urn:ngm:class:model-checking",
+        "label": "Model Checking"
+      },
+      {
+        "@id": "urn:ngm:class:theorem-proving",
+        "label": "Theorem Proving"
+      },
+      {
+        "@id": "urn:ngm:class:smt-solving",
+        "label": "SMT Solving"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:formal-specification", "label": "Formal Specification"},
-      {"@id": "urn:ngm:class:temporal-logic", "label": "Temporal Logic"}
+      {
+        "@id": "urn:ngm:class:formal-specification",
+        "label": "Formal Specification"
+      },
+      {
+        "@id": "urn:ngm:class:temporal-logic",
+        "label": "Temporal Logic"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:certified-robustness", "label": "Certified Robustness"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:certified-robustness",
+        "label": "Certified Robustness"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
-      {"@id": "urn:ngm:class:hardware-design", "label": "Hardware Design"},
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-design",
+        "label": "Hardware Design"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:hoare-logic", "label": "Hoare Logic"},
-      {"@id": "urn:ngm:class:type-theory", "label": "Type Theory"}
-    ],
-    "uses": [
-      {"@id": "urn:ngm:class:satisfiability-solver", "label": "Satisfiability Solver"},
-      {"@id": "urn:ngm:class:proof-assistant", "label": "Proof Assistant"}
+      {
+        "@id": "urn:ngm:class:type-theory",
+        "label": "Type Theory"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:formal-methods", "label": "Formal Methods"},
-      {"@id": "urn:ngm:class:mathematical-logic", "label": "Mathematical Logic"}
+      {
+        "@id": "urn:ngm:class:formal-methods",
+        "label": "Formal Methods"
+      },
+      {
+        "@id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:software-testing", "label": "Software Testing"},
-      {"@id": "urn:ngm:class:runtime-monitoring", "label": "Runtime Monitoring"}
+      {
+        "@id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:interpretability", "label": "Interpretability"},
-      {"@id": "urn:ngm:class:static-analysis", "label": "Static Analysis"}
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:neural-network-verification", "label": "Neural Network Verification"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ]
   },
   "quality": 0.74,

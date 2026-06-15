@@ -55,56 +55,129 @@ alias:: Multi-User Systems, multi-user systems
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:session-management", "label": "Session Management"},
-      {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
-      {"@id": "urn:ngm:class:authority-arbitration", "label": "Authority Arbitration"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+      {
+        "@id": "urn:ngm:class:session-management",
+        "label": "Session Management"
+      },
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:networking-technology", "label": "Networking Technology"},
-      {"@id": "urn:ngm:class:latency", "label": "Latency"},
-      {"@id": "urn:ngm:class:state-synchronisation", "label": "State Synchronisation"},
-      {"@id": "urn:ngm:class:real-time-communication", "label": "Real-Time Communication"}
+      {
+        "@id": "urn:ngm:class:networking-technology",
+        "label": "Networking Technology"
+      },
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:state-synchronisation",
+        "label": "State Synchronisation"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
-      {"@id": "urn:ngm:class:mixed-reality-platform", "label": "Mixed Reality Platform"},
-      {"@id": "urn:ngm:class:collaborative-virtual-environment", "label": "Collaborative Virtual Environment"},
-      {"@id": "urn:ngm:class:social-vr", "label": "Social VR"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality-platform",
+        "label": "Mixed Reality Platform"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-environment",
+        "label": "Collaborative Virtual Environment"
+      },
+      {
+        "@id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:network-quality-metric", "label": "Network Quality Metric"},
-      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:network-quality-metric",
+        "label": "Network Quality Metric"
+      },
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:client-server-architecture", "label": "Client-Server Architecture"},
-      {"@id": "urn:ngm:class:peer-to-peer-networking", "label": "Peer-to-Peer Networking"}
+      {
+        "@id": "urn:ngm:class:client-server-architecture",
+        "label": "Client-Server Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Networking"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:websocket", "label": "WebSocket"},
-      {"@id": "urn:ngm:class:webrtc", "label": "WebRTC"},
-      {"@id": "urn:ngm:class:conflict-free-replicated-data-type", "label": "Conflict-Free Replicated Data Type"}
+      {
+        "@id": "urn:ngm:class:websocket",
+        "label": "WebSocket"
+      },
+      {
+        "@id": "urn:ngm:class:webrtc",
+        "label": "WebRTC"
+      },
+      {
+        "@id": "urn:ngm:class:conflict-free-replicated-data-type",
+        "label": "Conflict-Free Replicated Data Type"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"},
-      {"@id": "urn:ngm:class:collaborative-xr", "label": "Collaborative XR"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:single-user-application", "label": "Single-User Application"}
+      {
+        "@id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:presence", "label": "Presence"}
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:presence",
+        "label": "Presence"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:multi-user-environment", "label": "Multi-User Environment"},
-    {"@id": "urn:ngm:class:shared-virtual-environment", "label": "Shared Virtual Environment"}
+    {
+      "@id": "urn:ngm:class:multi-user-environment",
+      "label": "Multi-User Environment"
+    },
+    {
+      "@id": "urn:ngm:class:shared-virtual-environment",
+      "label": "Shared Virtual Environment"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

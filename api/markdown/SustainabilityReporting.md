@@ -39,58 +39,157 @@ alias:: Sustainability Reporting
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:carbon-accounting", "label": "Carbon Accounting"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:materiality-assessment", "label": "Materiality Assessment"},
-      {"@id": "urn:ngm:class:audit-and-assurance", "label": "Audit and Assurance"}
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:materiality-assessment",
+        "label": "Materiality Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:audit",
+        "label": "Audit and Assurance"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:esg-framework", "label": "ESG Framework"},
-      {"@id": "urn:ngm:class:tcfd", "label": "TCFD"},
-      {"@id": "urn:ngm:class:global-reporting-initiative", "label": "Global Reporting Initiative"},
-      {"@id": "urn:ngm:class:csrd", "label": "CSRD"}
+      {
+        "@id": "urn:ngm:class:esg",
+        "label": "ESG Framework"
+      },
+      {
+        "@id": "urn:ngm:class:tcfd",
+        "label": "TCFD"
+      },
+      {
+        "@id": "urn:ngm:class:global-reporting-initiative",
+        "label": "Global Reporting Initiative"
+      },
+      {
+        "@id": "urn:ngm:class:csrd-compliance",
+        "label": "CSRD"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:issb", "label": "ISSB"},
-      {"@id": "urn:ngm:class:global-reporting-initiative", "label": "Global Reporting Initiative"},
-      {"@id": "urn:ngm:class:ifrs-s2", "label": "IFRS S2"},
-      {"@id": "urn:ngm:class:european-sustainability-reporting-standards", "label": "European Sustainability Reporting Standards"}
+      {
+        "@id": "urn:ngm:class:issb",
+        "label": "ISSB"
+      },
+      {
+        "@id": "urn:ngm:class:global-reporting-initiative",
+        "label": "Global Reporting Initiative"
+      },
+      {
+        "@id": "urn:ngm:class:ifrs-s2",
+        "label": "IFRS S2"
+      },
+      {
+        "@id": "urn:ngm:class:european-sustainability-reporting-standards",
+        "label": "European Sustainability Reporting Standards"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:carbon-footprint-measurement", "label": "Carbon Footprint Measurement"},
-      {"@id": "urn:ngm:class:life-cycle-assessment", "label": "Life Cycle Assessment"},
-      {"@id": "urn:ngm:class:supply-chain-transparency", "label": "Supply Chain Transparency"},
-      {"@id": "urn:ngm:class:data-quality-management", "label": "Data Quality Management"}
+      {
+        "@id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      },
+      {
+        "@id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:data-quality-management",
+        "label": "Data Quality Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:esg-investment", "label": "ESG Investment"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
-      {"@id": "urn:ngm:class:stakeholder-engagement", "label": "Stakeholder Engagement"}
+      {
+        "@id": "urn:ngm:class:esg-investing",
+        "label": "ESG Investment"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:scope-3-emissions", "label": "Scope 3 Emissions"},
-      {"@id": "urn:ngm:class:emission-factor-databases", "label": "Emission Factor Databases"}
+      {
+        "@id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      },
+      {
+        "@id": "urn:ngm:class:emission-factors",
+        "label": "Emission Factor Databases"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:greenwashing", "label": "Greenwashing"},
-      {"@id": "urn:ngm:class:voluntary-disclosure", "label": "Voluntary Disclosure"}
+      {
+        "@id": "urn:ngm:class:greenwashing",
+        "label": "Greenwashing"
+      },
+      {
+        "@id": "urn:ngm:class:voluntary-disclosure",
+        "label": "Voluntary Disclosure"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain-sustainability", "label": "Blockchain Sustainability"},
-      {"@id": "urn:ngm:class:ai-for-sustainability", "label": "AI for Sustainability"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:blockchain-sustainability",
+        "label": "Blockchain Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:ai-for-sustainability",
+        "label": "AI for Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:climate-risk", "label": "Climate Risk"},
-      {"@id": "urn:ngm:class:net-zero", "label": "Net Zero"},
-      {"@id": "urn:ngm:class:carbon-credits", "label": "Carbon Credits"},
-      {"@id": "urn:ngm:class:double-materiality", "label": "Double Materiality"}
+      {
+        "@id": "urn:ngm:class:climate-risk",
+        "label": "Climate Risk"
+      },
+      {
+        "@id": "urn:ngm:class:net-zero",
+        "label": "Net Zero"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "@id": "urn:ngm:class:double-materiality",
+        "label": "Double Materiality"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:esg-disclosure", "label": "ESG Disclosure"},
-    {"@id": "urn:ngm:class:non-financial-reporting", "label": "Non-Financial Reporting"}
+    {
+      "@id": "urn:ngm:class:esg-disclosure",
+      "label": "ESG Disclosure"
+    },
+    {
+      "@id": "urn:ngm:class:non-financial-reporting",
+      "label": "Non-Financial Reporting"
+    }
   ],
   "quality": 0.74,
   "provenance": {

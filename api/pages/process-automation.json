@@ -77,12 +77,7 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:manual-workflow",
-        "label": "Manual Workflow"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:agentic-workflow",
@@ -131,10 +126,6 @@
       {
         "id": "urn:ngm:class:trade-finance-automation",
         "label": "Trade Finance Automation"
-      },
-      {
-        "id": "urn:ngm:class:cicd-pipeline",
-        "label": "CI/CD Pipeline"
       },
       {
         "id": "urn:ngm:class:enterprise-resource-planning",

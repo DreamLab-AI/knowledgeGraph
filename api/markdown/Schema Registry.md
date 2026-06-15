@@ -62,21 +62,17 @@ public:: true
       {
         "@id": "urn:ngm:class:schema-versioning",
         "label": "Schema Versioning"
-      },
-      {
-        "@id": "urn:ngm:class:compatibility-checker",
-        "label": "Compatibility Checker"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:event-streaming-platform",
+        "@id": "urn:ngm:class:event-streaming",
         "label": "Event Streaming Platform"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:serialization-format",
+        "@id": "urn:ngm:class:serialisation-format",
         "label": "Serialization Format"
       },
       {
@@ -92,10 +88,6 @@ public:: true
       {
         "@id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
-      },
-      {
-        "@id": "urn:ngm:class:consumer-producer-decoupling",
-        "label": "Consumer-Producer Decoupling"
       }
     ],
     "dependsOn": [
@@ -110,15 +102,11 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:avro",
-        "label": "Apache Avro"
-      },
-      {
         "@id": "urn:ngm:class:protobuf",
         "label": "Protocol Buffers"
       },
       {
-        "@id": "urn:ngm:class:json-schema",
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       }
     ],
@@ -132,10 +120,6 @@ public:: true
       {
         "@id": "urn:ngm:class:backward-compatibility",
         "label": "Backward Compatibility"
-      },
-      {
-        "@id": "urn:ngm:class:forward-compatibility",
-        "label": "Forward Compatibility"
       },
       {
         "@id": "urn:ngm:class:microservices",
@@ -174,7 +158,7 @@ public:: true
         "label": "Data Governance"
       },
       {
-        "@id": "urn:ngm:class:etl",
+        "@id": "urn:ngm:class:etl-pipeline",
         "label": "ETL"
       }
     ]
@@ -189,7 +173,7 @@ public:: true
       "label": "Metadata Registry"
     }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

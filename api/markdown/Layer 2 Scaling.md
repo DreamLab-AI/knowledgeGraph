@@ -23,53 +23,138 @@ public:: true
   "definition": "Layer 2 scaling refers to a category of protocols and systems built atop an existing blockchain (Layer 1) that increase transaction throughput and reduce fees by processing computation and data storage off the main chain while inheriting the security guarantees of the underlying Layer 1 through cryptographic proofs, fraud-proof mechanisms, or periodic state commitments. The Layer 2 anchors itself to the Layer 1 by periodically publishing compressed state roots or validity proofs, enabling the Layer 1 to serve as the ultimate settlement and security layer while the Layer 2 handles high-volume transaction processing. Major architectural families include ZK-rollups, optimistic rollups, state channels, and sidechains, each offering distinct trade-offs between latency, security assumptions, and EVM compatibility.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain-scalability",
+      "label": "Blockchain Scalability"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:off-chain-scaling", "label": "Off-Chain Scaling"},
-    {"@id": "urn:ngm:class:l2-scaling", "label": "L2 Scaling"}
+    {
+      "@id": "urn:ngm:class:off-chain-scaling",
+      "label": "Off-Chain Scaling"
+    },
+    {
+      "@id": "urn:ngm:class:l2-scaling",
+      "label": "L2 Scaling"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:zk-rollup", "label": "ZK-Rollup"},
-      {"@id": "urn:ngm:class:optimistic-rollup", "label": "Optimistic Rollup"},
-      {"@id": "urn:ngm:class:state-channel", "label": "State Channel"},
-      {"@id": "urn:ngm:class:sidechain", "label": "Sidechain"},
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"}
+      {
+        "@id": "urn:ngm:class:zk-rollup",
+        "label": "ZK-Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      },
+      {
+        "@id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:data-availability", "label": "Data Availability"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:fraud-proof", "label": "Fraud Proof"},
-      {"@id": "urn:ngm:class:sequencer", "label": "Sequencer"},
-      {"@id": "urn:ngm:class:hash-time-locked-contract", "label": "Hash Time-Locked Contract"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:fraud-proof",
+        "label": "Fraud Proof"
+      },
+      {
+        "@id": "urn:ngm:class:sequencer",
+        "label": "Sequencer"
+      },
+      {
+        "@id": "urn:ngm:class:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"},
-      {"@id": "urn:ngm:class:cross-chain-asset-transfer", "label": "Cross Chain Asset Transfer"},
-      {"@id": "urn:ngm:class:micropayment", "label": "Micropayment"},
-      {"@id": "urn:ngm:class:gas-optimisation", "label": "Gas Optimisation"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-asset-transfer",
+        "label": "Cross Chain Asset Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      },
+      {
+        "@id": "urn:ngm:class:gas-optimization",
+        "label": "Gas Optimisation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:layer-1-blockchain", "label": "Layer 1 Blockchain"},
-      {"@id": "urn:ngm:class:sharding", "label": "Sharding"}
+      {
+        "@id": "urn:ngm:class:layer-1-blockchain",
+        "label": "Layer 1 Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-availability-sampling", "label": "Data Availability Sampling"},
-      {"@id": "urn:ngm:class:eip-4844", "label": "EIP-4844"},
-      {"@id": "urn:ngm:class:bridge-protocol", "label": "Bridge Protocol"}
+      {
+        "@id": "urn:ngm:class:data-availability-sampling",
+        "label": "Data Availability Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:eip-4844",
+        "label": "EIP-4844"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
-      {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"}
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      }
     ]
   },
   "quality": 0.75,

@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:patient-consent-management",
+        "id": "urn:ngm:class:consent-management",
         "label": "Patient Consent Management"
       },
       {
@@ -48,7 +48,7 @@
         "label": "Zero Knowledge Proof"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -58,7 +58,7 @@
         "label": "Interoperability"
       },
       {
-        "id": "urn:ngm:class:patient-data-portability",
+        "id": "urn:ngm:class:data-portability",
         "label": "Patient Data Portability"
       },
       {

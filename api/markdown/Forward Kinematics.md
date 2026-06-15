@@ -109,10 +109,6 @@ alias:: RB-1005-forward-kinematics
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:joint-parameters",
-        "label": "Joint Parameters"
-      },
-      {
         "@id": "urn:ngm:class:kinematic-model",
         "label": "KinematicModel"
       },
@@ -126,10 +122,6 @@ alias:: RB-1005-forward-kinematics
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:motion-visualization",
-        "label": "Motion Visualization"
-      },
       {
         "@id": "urn:ngm:class:robot-simulation",
         "label": "Robot Simulation"
@@ -149,11 +141,7 @@ alias:: RB-1005-forward-kinematics
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:homogeneous-coordinates",
-        "label": "Homogeneous Coordinates"
-      },
-      {
-        "@id": "urn:ngm:class:transformation-matrix",
+        "@id": "urn:ngm:class:coordinate-transformation",
         "label": "Transformation Matrix"
       },
       {
@@ -163,11 +151,11 @@ alias:: RB-1005-forward-kinematics
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:joint-angle",
+        "@id": "urn:ngm:class:joint-configuration",
         "label": "Joint Angle"
       },
       {
-        "@id": "urn:ngm:class:end-effector-pose",
+        "@id": "urn:ngm:class:end-effector",
         "label": "End-Effector Pose"
       }
     ],
@@ -179,7 +167,7 @@ alias:: RB-1005-forward-kinematics
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:rigid-body-mechanics",
+        "@id": "urn:ngm:class:rigid-body-dynamics",
         "label": "Rigid Body Mechanics"
       },
       {
@@ -205,10 +193,6 @@ alias:: RB-1005-forward-kinematics
       {
         "@id": "urn:ngm:class:singularity-analysis",
         "label": "Singularity Analysis"
-      },
-      {
-        "@id": "urn:ngm:class:velocity-kinematics",
-        "label": "Velocity Kinematics"
       }
     ],
     "bridgesTo": [

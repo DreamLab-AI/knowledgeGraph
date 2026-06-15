@@ -134,10 +134,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:community-consultation",
-        "label": "Community Consultation"
-      },
-      {
         "@id": "urn:ngm:class:impact-metrics",
         "label": "Impact Metrics"
       },
@@ -156,30 +152,14 @@ public:: true
         "label": "Data Collection"
       },
       {
-        "@id": "urn:ngm:class:impact-indicators",
-        "label": "Impact Indicators"
-      },
-      {
         "@id": "urn:ngm:class:stakeholder-mapping",
         "label": "Stakeholder Mapping"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:community-protection",
-        "label": "Community Protection"
-      },
-      {
-        "@id": "urn:ngm:class:policy-development",
-        "label": "Policy Development"
-      },
-      {
         "@id": "urn:ngm:class:responsible-deployment",
         "label": "Responsible Deployment"
-      },
-      {
-        "@id": "urn:ngm:class:stakeholder-alignment",
-        "label": "Stakeholder Alignment"
       }
     ],
     "partOf": [

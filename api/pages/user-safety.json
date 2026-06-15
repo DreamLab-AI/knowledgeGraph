@@ -37,10 +37,6 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:digital-wellbeing",
-        "label": "Digital Wellbeing"
-      },
-      {
         "id": "urn:ngm:class:inclusive-design",
         "label": "Inclusive Design"
       },
@@ -86,10 +82,6 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:ai-moderation",
-        "label": "AI Moderation"
-      },
-      {
         "id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proof"
       },
@@ -122,10 +114,6 @@
       {
         "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
-      },
-      {
-        "id": "urn:ngm:class:online-harassment",
-        "label": "Online Harassment"
       },
       {
         "id": "urn:ngm:class:human-factors",

@@ -25,51 +25,120 @@ alias:: CarbonMarkets
   "domain": "finance",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:environmental-asset-market", "label": "Environmental Asset Market"}
+    {
+      "@id": "urn:ngm:class:environmental-asset-market",
+      "label": "Environmental Asset Market"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:compliance-carbon-market", "label": "Compliance Carbon Market"},
-      {"@id": "urn:ngm:class:voluntary-carbon-market", "label": "Voluntary Carbon Market"},
-      {"@id": "urn:ngm:class:carbon-price-discovery", "label": "Carbon Price Discovery"}
+      {
+        "@id": "urn:ngm:class:compliance-carbon-market",
+        "label": "Compliance Carbon Market"
+      },
+      {
+        "@id": "urn:ngm:class:voluntary-carbon-market",
+        "label": "Voluntary Carbon Market"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-price-discovery",
+        "label": "Carbon Price Discovery"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:carbon-credits", "label": "Carbon Credits"},
-      {"@id": "urn:ngm:class:carbon-registry", "label": "Carbon Registry"},
-      {"@id": "urn:ngm:class:emissions-allowance", "label": "Emissions Allowance"},
-      {"@id": "urn:ngm:class:carbon-offset", "label": "Carbon Offset"}
+      {
+        "@id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-registry",
+        "label": "Carbon Registry"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-offset",
+        "label": "Carbon Offset"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:carbon-offset-trading", "label": "Carbon Offset Trading"},
-      {"@id": "urn:ngm:class:carbon-neutrality", "label": "Carbon Neutrality"},
-      {"@id": "urn:ngm:class:net-zero-targets", "label": "Net Zero Targets"},
-      {"@id": "urn:ngm:class:emissions-reduction", "label": "Emissions Reduction"}
+      {
+        "@id": "urn:ngm:class:carbon-offset-trading",
+        "label": "Carbon Offset Trading"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-neutrality",
+        "label": "Carbon Neutrality"
+      },
+      {
+        "@id": "urn:ngm:class:net-zero-targets",
+        "label": "Net Zero Targets"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:carbon-accounting", "label": "Carbon Accounting"},
-      {"@id": "urn:ngm:class:third-party-verification", "label": "Third-Party Verification"},
-      {"@id": "urn:ngm:class:additionality-assessment", "label": "Additionality Assessment"}
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "@id": "urn:ngm:class:third-party-verification",
+        "label": "Third-Party Verification"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:verified-carbon-standard", "label": "Verified Carbon Standard"},
-      {"@id": "urn:ngm:class:gold-standard", "label": "Gold Standard"},
-      {"@id": "urn:ngm:class:core-carbon-principles", "label": "Core Carbon Principles"}
+      {
+        "@id": "urn:ngm:class:verified-carbon-standard",
+        "label": "Verified Carbon Standard"
+      },
+      {
+        "@id": "urn:ngm:class:gold-standard",
+        "label": "Gold Standard"
+      },
+      {
+        "@id": "urn:ngm:class:icvcm-core-carbon-principles",
+        "label": "Core Carbon Principles"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:emissions-trading-scheme", "label": "Emissions Trading Scheme"},
-      {"@id": "urn:ngm:class:paris-agreement", "label": "Paris Agreement"},
-      {"@id": "urn:ngm:class:carbon-tax", "label": "Carbon Tax"},
-      {"@id": "urn:ngm:class:climate-finance", "label": "Climate Finance"}
+      {
+        "@id": "urn:ngm:class:emissions-trading-scheme",
+        "label": "Emissions Trading Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-tax",
+        "label": "Carbon Tax"
+      },
+      {
+        "@id": "urn:ngm:class:climate-finance",
+        "label": "Climate Finance"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:carbon-credit-token", "label": "Carbon Credit Token"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:iot-environmental-monitoring", "label": "IoT Environmental Monitoring"}
+      {
+        "@id": "urn:ngm:class:carbon-credit-token",
+        "label": "Carbon Credit Token"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-monitoring",
+        "label": "IoT Environmental Monitoring"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:carbon-trading-market", "label": "Carbon Trading Market"},
-    {"@id": "urn:ngm:class:greenhouse-gas-market", "label": "Greenhouse Gas Market"}
+    {
+      "@id": "urn:ngm:class:carbon-trading-market",
+      "label": "Carbon Trading Market"
+    },
+    {
+      "@id": "urn:ngm:class:greenhouse-gas-market",
+      "label": "Greenhouse Gas Market"
+    }
   ],
   "quality": 0.72,
   "provenance": {

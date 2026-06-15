@@ -73,10 +73,6 @@ public:: true
       {
         "@id": "urn:ngm:class:renewable-energy",
         "label": "Renewable Energy"
-      },
-      {
-        "@id": "urn:ngm:class:climate-adaptation",
-        "label": "Climate Adaptation"
       }
     ],
     "hasPart": [
@@ -91,10 +87,6 @@ public:: true
       {
         "@id": "urn:ngm:class:blended-finance",
         "label": "Blended Finance"
-      },
-      {
-        "@id": "urn:ngm:class:climate-risk-insurance",
-        "label": "Climate Risk Insurance"
       }
     ],
     "requires": [
@@ -109,11 +101,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:multilateral-development-banks",
-        "label": "Multilateral Development Banks"
-      },
-      {
-        "@id": "urn:ngm:class:international-climate-policy",
+        "@id": "urn:ngm:class:climate-policy",
         "label": "International Climate Policy"
       }
     ],
@@ -141,38 +129,20 @@ public:: true
         "label": "UNFCCC"
       },
       {
-        "@id": "urn:ngm:class:taxonomy-regulation",
+        "@id": "urn:ngm:class:eu-taxonomy",
         "label": "Taxonomy Regulation"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:fossil-fuel-subsidies",
-        "label": "Fossil Fuel Subsidies"
       }
     ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
-      },
-      {
-        "@id": "urn:ngm:class:tokenised-carbon-credits",
-        "label": "Tokenised Carbon Credits"
-      },
-      {
-        "@id": "urn:ngm:class:supply-chain-sustainability",
-        "label": "Supply Chain Sustainability"
       }
     ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:impact-investing",
         "label": "Impact Investing"
-      },
-      {
-        "@id": "urn:ngm:class:sovereign-green-bonds",
-        "label": "Sovereign Green Bonds"
       },
       {
         "@id": "urn:ngm:class:climate-disclosure",

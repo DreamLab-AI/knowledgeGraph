@@ -642,10 +642,6 @@ public:: true
         "label": "AnonCreds"
       },
       {
-        "@id": "urn:ngm:class:aries-askar",
-        "label": "Aries Askar"
-      },
-      {
         "@id": "urn:ngm:class:credential-definition",
         "label": "Credential Definition"
       },
@@ -654,32 +650,8 @@ public:: true
         "label": "Credential Schema"
       },
       {
-        "@id": "urn:ngm:class:genesis-transaction-file",
-        "label": "Genesis Transaction File"
-      },
-      {
-        "@id": "urn:ngm:class:indy-credx",
-        "label": "Indy Credx"
-      },
-      {
-        "@id": "urn:ngm:class:indy-node",
-        "label": "Indy Node"
-      },
-      {
-        "@id": "urn:ngm:class:indy-vdr",
-        "label": "Indy VDR"
-      },
-      {
-        "@id": "urn:ngm:class:plenum",
-        "label": "Plenum"
-      },
-      {
         "@id": "urn:ngm:class:revocation-registry",
         "label": "Revocation Registry"
-      },
-      {
-        "@id": "urn:ngm:class:steward-node",
-        "label": "Steward Node"
       }
     ],
     "requires": [
@@ -688,20 +660,8 @@ public:: true
         "label": "Cryptographic Accumulator"
       },
       {
-        "@id": "urn:ngm:class:genesis-pool-configuration",
-        "label": "Genesis Pool Configuration"
-      },
-      {
         "@id": "urn:ngm:class:hyperledger-aries",
         "label": "Hyperledger Aries"
-      },
-      {
-        "@id": "urn:ngm:class:secure-wallet-storage",
-        "label": "Secure Wallet Storage"
-      },
-      {
-        "@id": "urn:ngm:class:steward-network",
-        "label": "Steward Network"
       },
       {
         "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
@@ -710,54 +670,26 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:issuer-holder-verifier-triangle",
-        "label": "Issuer-Holder-Verifier Triangle"
-      },
-      {
-        "@id": "urn:ngm:class:multi-tenant-identity-ledger",
-        "label": "Multi-Tenant Identity Ledger"
-      },
-      {
-        "@id": "urn:ngm:class:offline-credential-verification",
+        "@id": "urn:ngm:class:credential-verification",
         "label": "Offline Credential Verification"
-      },
-      {
-        "@id": "urn:ngm:class:predicate-proof",
-        "label": "Predicate Proof"
-      },
-      {
-        "@id": "urn:ngm:class:revocation-without-correlation",
-        "label": "Revocation without Correlation"
       },
       {
         "@id": "urn:ngm:class:selective-disclosure",
         "label": "Selective Disclosure"
-      },
-      {
-        "@id": "urn:ngm:class:unlinkable-credential-presentation",
-        "label": "Unlinkable Credential Presentation"
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:sovrin-trust-framework",
-        "label": "Sovrin Trust Framework"
-      },
       {
         "@id": "urn:ngm:class:trust-over-ip-stack",
         "label": "Trust over IP Stack"
       },
       {
-        "@id": "urn:ngm:class:w3-c-decentralized-identifier-specification",
+        "@id": "urn:ngm:class:w3-c-did-specification",
         "label": "W3C Decentralized Identifier Specification"
       },
       {
         "@id": "urn:ngm:class:w-3-c-verifiable-credentials-data-model",
         "label": "W3C Verifiable Credentials Data Model"
-      },
-      {
-        "@id": "urn:ngm:class:zkp-based-anonymous-credentials",
-        "label": "ZKP-Based Anonymous Credentials"
       },
       {
         "@id": "urn:ngm:class:self-sovereign-identity",
@@ -766,23 +698,15 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:distributed-hash-table-routing",
+        "@id": "urn:ngm:class:distributed-hash-table",
         "label": "Distributed Hash Table Routing"
       },
       {
-        "@id": "urn:ngm:class:indy-plenum",
-        "label": "Indy Plenum"
-      },
-      {
-        "@id": "urn:ngm:class:multi-signature-cryptographic-schemes",
+        "@id": "urn:ngm:class:multi-signature",
         "label": "Multi-Signature Cryptographic Schemes"
       },
       {
-        "@id": "urn:ngm:class:plenum-consensus",
-        "label": "Plenum Consensus"
-      },
-      {
-        "@id": "urn:ngm:class:python-3-6",
+        "@id": "urn:ngm:class:python-3",
         "label": "Python 3.6+"
       },
       {
@@ -790,31 +714,11 @@ public:: true
         "label": "RocksDB"
       },
       {
-        "@id": "urn:ngm:class:sovrin-token-deprecated",
-        "label": "Sovrin Token (deprecated)"
-      },
-      {
-        "@id": "urn:ngm:class:zero-mq",
-        "label": "ZeroMQ"
-      },
-      {
         "@id": "urn:ngm:class:rust-systems-programming-language",
         "label": "Rust Systems Programming Language"
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:aries-cloud-agent-python",
-        "label": "Aries Cloud Agent Python"
-      },
-      {
-        "@id": "urn:ngm:class:bifold-wallet",
-        "label": "Bifold Wallet"
-      },
-      {
-        "@id": "urn:ngm:class:credo",
-        "label": "Credo"
-      },
       {
         "@id": "urn:ngm:class:decentralized-identity-foundation",
         "label": "Decentralized Identity Foundation"
@@ -824,28 +728,8 @@ public:: true
         "label": "Hyperledger Aries"
       },
       {
-        "@id": "urn:ngm:class:hyperledger-ursa",
-        "label": "Hyperledger Ursa"
-      },
-      {
-        "@id": "urn:ngm:class:idunion",
-        "label": "IDUnion"
-      },
-      {
-        "@id": "urn:ngm:class:indicio",
-        "label": "Indicio"
-      },
-      {
         "@id": "urn:ngm:class:lf-decentralized-trust",
         "label": "LF Decentralized Trust"
-      },
-      {
-        "@id": "urn:ngm:class:open-wallet-foundation",
-        "label": "OpenWallet Foundation"
-      },
-      {
-        "@id": "urn:ngm:class:sovrin-foundation",
-        "label": "Sovrin Foundation"
       },
       {
         "@id": "urn:ngm:class:trust-over-ip-foundation",
@@ -854,15 +738,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:cross-border-credential-recognition",
-        "label": "Cross-Border Credential Recognition"
-      },
-      {
-        "@id": "urn:ngm:class:e-idas-article-6a-wallet-trust-model",
-        "label": "eIDAS Article 6a Wallet Trust Model"
-      },
-      {
-        "@id": "urn:ngm:class:gdpr-data-minimisation",
+        "@id": "urn:ngm:class:data-minimisation",
         "label": "GDPR Data Minimisation"
       },
       {
@@ -874,33 +750,25 @@ public:: true
         "label": "Privacy-Preserving Compliance"
       },
       {
-        "@id": "urn:ngm:class:verifiable-organizational-credentials",
+        "@id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Organizational Credentials"
       }
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:anon-creds-specification-v1-0",
+        "@id": "urn:ngm:class:anon-creds",
         "label": "AnonCreds Specification v1.0"
       },
       {
-        "@id": "urn:ngm:class:did-indy-method-specification",
+        "@id": "urn:ngm:class:did-method",
         "label": "did:indy Method Specification"
-      },
-      {
-        "@id": "urn:ngm:class:did-sov-method-specification",
-        "label": "did:sov Method Specification"
       },
       {
         "@id": "urn:ngm:class:iso-iec-18013-5-m-dl",
         "label": "ISO-IEC 18013-5 mDL"
       },
       {
-        "@id": "urn:ngm:class:sovrin-governance-framework-v2",
-        "label": "Sovrin Governance Framework v2"
-      },
-      {
-        "@id": "urn:ngm:class:trust-over-ip-technology-stack",
+        "@id": "urn:ngm:class:trust-over-ip-stack",
         "label": "Trust over IP Technology Stack"
       },
       {

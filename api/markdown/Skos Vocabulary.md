@@ -60,12 +60,6 @@ public:: true
     }
   ],
   "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:linked-vocabulary-publishing",
-        "label": "Linked Vocabulary Publishing"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:knowledge-organization-system",

@@ -531,62 +531,22 @@ alias:: FaceSwap
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:attribute-encoder",
-        "label": "Attribute Encoder"
-      },
-      {
-        "@id": "urn:ngm:class:blending-module",
-        "label": "Blending Module"
-      },
-      {
-        "@id": "urn:ngm:class:face-aligner",
-        "label": "Face Aligner"
-      },
-      {
-        "@id": "urn:ngm:class:face-detector",
-        "label": "Face Detector"
-      },
-      {
-        "@id": "urn:ngm:class:face-restoration-model",
-        "label": "Face Restoration Model"
-      },
-      {
-        "@id": "urn:ngm:class:face-segmentation-mask",
-        "label": "Face Segmentation Mask"
-      },
-      {
         "@id": "urn:ngm:class:generator-network",
         "label": "Generator Network"
-      },
-      {
-        "@id": "urn:ngm:class:identity-encoder",
-        "label": "Identity Encoder"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:arc-face-embedding",
+        "@id": "urn:ngm:class:arc-face",
         "label": "ArcFace Embedding"
       },
       {
-        "@id": "urn:ngm:class:face-recognition-model",
+        "@id": "urn:ngm:class:face-recognition",
         "label": "Face Recognition Model"
       },
       {
         "@id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
-      },
-      {
-        "@id": "urn:ngm:class:landmark-detector",
-        "label": "Landmark Detector"
-      },
-      {
-        "@id": "urn:ngm:class:source-image",
-        "label": "Source Image"
-      },
-      {
-        "@id": "urn:ngm:class:target-image",
-        "label": "Target Image"
       }
     ],
     "enables": [
@@ -595,61 +555,17 @@ alias:: FaceSwap
         "label": "Anonymisation"
       },
       {
-        "@id": "urn:ngm:class:avatar-generation",
-        "label": "Avatar Generation"
-      },
-      {
-        "@id": "urn:ngm:class:de-aging",
-        "label": "De-aging"
-      },
-      {
-        "@id": "urn:ngm:class:digital-double",
-        "label": "Digital Double"
-      },
-      {
-        "@id": "urn:ngm:class:entertainment-content",
-        "label": "Entertainment Content"
-      },
-      {
-        "@id": "urn:ngm:class:synthetic-dataset-generation",
+        "@id": "urn:ngm:class:synthetic-data-generation",
         "label": "Synthetic Dataset Generation"
-      },
-      {
-        "@id": "urn:ngm:class:talking-head-synthesis",
-        "label": "Talking Head Synthesis"
-      },
-      {
-        "@id": "urn:ngm:class:visual-effects-production",
-        "label": "Visual Effects Production"
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:attribute-preservation",
-        "label": "Attribute Preservation"
-      },
-      {
-        "@id": "urn:ngm:class:cross-attention-conditioning",
-        "label": "Cross-Attention Conditioning"
-      },
-      {
-        "@id": "urn:ngm:class:identity-disentanglement",
-        "label": "Identity Disentanglement"
-      },
-      {
-        "@id": "urn:ngm:class:neural-network-latent-space-manipulation",
-        "label": "Latent Space Manipulation"
-      },
       {
         "@id": "urn:ngm:class:encoder-decoder-architecture",
         "label": "Encoder Decoder Architecture"
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:adaptive-instance-normalisation",
-        "label": "Adaptive Instance Normalisation"
-      },
       {
         "@id": "urn:ngm:class:arc-face",
         "label": "ArcFace"
@@ -663,20 +579,8 @@ alias:: FaceSwap
         "label": "ControlNet"
       },
       {
-        "@id": "urn:ngm:class:cos-face",
-        "label": "CosFace"
-      },
-      {
         "@id": "urn:ngm:class:gfpgan",
         "label": "GFPGAN"
-      },
-      {
-        "@id": "urn:ngm:class:style-gan2",
-        "label": "StyleGAN2"
-      },
-      {
-        "@id": "urn:ngm:class:xseg",
-        "label": "XSeg"
       },
       {
         "@id": "urn:ngm:class:ip-adapter",
@@ -691,10 +595,6 @@ alias:: FaceSwap
       {
         "@id": "urn:ngm:class:lip-sync",
         "label": "Lip Sync"
-      },
-      {
-        "@id": "urn:ngm:class:synthetic-identity",
-        "label": "Synthetic Identity"
       },
       {
         "@id": "urn:ngm:class:voice-cloning",
@@ -719,24 +619,8 @@ alias:: FaceSwap
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:educational-reenactment",
-        "label": "Educational Reenactment"
-      },
-      {
         "@id": "urn:ngm:class:film-vfx",
         "label": "Film VFX"
-      },
-      {
-        "@id": "urn:ngm:class:forensic-reconstruction",
-        "label": "Forensic Reconstruction"
-      },
-      {
-        "@id": "urn:ngm:class:personalised-avatars",
-        "label": "Personalised Avatars"
-      },
-      {
-        "@id": "urn:ngm:class:privacy-anonymisation",
-        "label": "Privacy Anonymisation"
       },
       {
         "@id": "urn:ngm:class:virtual-production",
@@ -749,32 +633,16 @@ alias:: FaceSwap
         "label": "C2PA Content Credentials"
       },
       {
-        "@id": "urn:ngm:class:celeb-df-benchmark",
-        "label": "Celeb-DF Benchmark"
-      },
-      {
         "@id": "urn:ngm:class:cvpr",
         "label": "CVPR"
-      },
-      {
-        "@id": "urn:ngm:class:dfdc-benchmark",
-        "label": "DFDC Benchmark"
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument-article-50",
         "label": "EU AI Act Article 50"
       },
       {
-        "@id": "urn:ngm:class:face-forensics",
-        "label": "FaceForensics++"
-      },
-      {
         "@id": "urn:ngm:class:iccv",
         "label": "ICCV"
-      },
-      {
-        "@id": "urn:ngm:class:synth-id",
-        "label": "SynthID"
       }
     ]
   },

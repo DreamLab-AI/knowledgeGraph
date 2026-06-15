@@ -23,52 +23,119 @@ public:: true
   "definition": "A structured methodology for identifying, analysing, and evaluating the potential harms, failure modes, and adverse societal impacts arising from the development and deployment of artificial intelligence systems. It applies established risk management frameworks to the distinctive properties of AI—opacity, emergent behaviour, data dependency, and scalability—to produce actionable risk registers and mitigation plans. The process informs governance decisions and regulatory compliance across the full AI system lifecycle.",
   "domain": "governance",
   "maturity": "emerging",
-  "subClassOf": {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:risk-assessment",
+    "label": "Risk Assessment"
+  },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:ai-risk-register", "label": "AI Risk Register"},
-      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"},
-      {"@id": "urn:ngm:class:adversarial-testing", "label": "Adversarial Testing"},
-      {"@id": "urn:ngm:class:threat-modelling", "label": "Threat Modelling"},
-      {"@id": "urn:ngm:class:ai-model-card", "label": "AI Model Card"}
+      {
+        "@id": "urn:ngm:class:ai-risk-register",
+        "label": "AI Risk Register"
+      },
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "@id": "urn:ngm:class:adversarial-testing",
+        "label": "Adversarial Testing"
+      },
+      {
+        "@id": "urn:ngm:class:threat-modelling",
+        "label": "Threat Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:ai-model-card",
+        "label": "AI Model Card"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
-      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"}
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-impact-assessment", "label": "AI Impact Assessment"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+      {
+        "@id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ai-system", "label": "AI System"},
-      {"@id": "urn:ngm:class:risk-taxonomy", "label": "Risk Taxonomy"},
-      {"@id": "urn:ngm:class:model-documentation", "label": "Model Documentation"}
+      {
+        "@id": "urn:ngm:class:ai-system",
+        "label": "AI System"
+      },
+      {
+        "@id": "urn:ngm:class:model-documentation",
+        "label": "Model Documentation"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"},
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
-      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO IEC 42001"}
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:failure-mode-analysis", "label": "Failure Mode Analysis"},
-      {"@id": "urn:ngm:class:residual-risk-evaluation", "label": "Residual Risk Evaluation"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:traditional-software-testing", "label": "Traditional Software Testing"}
+      {
+        "@id": "urn:ngm:class:failure-mode-analysis",
+        "label": "Failure Mode Analysis"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:enterprise-risk-management", "label": "Enterprise Risk Management"},
-      {"@id": "urn:ngm:class:cybersecurity-risk-assessment", "label": "Cybersecurity Risk Assessment"}
+      {
+        "@id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity-risk-assessment",
+        "label": "Cybersecurity Risk Assessment"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ai-risk-evaluation", "label": "AI Risk Evaluation"},
-    {"@id": "urn:ngm:class:automated-system-risk-assessment", "label": "Automated System Risk Assessment"}
+    {
+      "@id": "urn:ngm:class:ai-risk-evaluation",
+      "label": "AI Risk Evaluation"
+    },
+    {
+      "@id": "urn:ngm:class:automated-system-risk-assessment",
+      "label": "Automated System Risk Assessment"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -26,12 +26,8 @@
         "label": "ETSI MEC"
       },
       {
-        "id": "urn:ngm:class:etsi-eni",
+        "id": "urn:ngm:class:etsi-eni-008",
         "label": "ETSI ENI"
-      },
-      {
-        "id": "urn:ngm:class:etsi-isg",
-        "label": "ETSI ISG"
       }
     ],
     "requires": [
@@ -40,7 +36,7 @@
         "label": "Technical Committee"
       },
       {
-        "id": "urn:ngm:class:conformance-testing",
+        "id": "urn:ngm:class:standards-conformance-testing",
         "label": "Conformance Testing"
       }
     ],
@@ -69,7 +65,7 @@
         "label": "eIDAS"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
@@ -103,7 +99,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:quantum-safe-cryptography",
+        "id": "urn:ngm:class:post-quantum-cryptography",
         "label": "Quantum-Safe Cryptography"
       },
       {

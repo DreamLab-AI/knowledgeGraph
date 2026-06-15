@@ -114,7 +114,7 @@ public:: true
         "label": "Merkle Tree"
       },
       {
-        "@id": "urn:ngm:class:multi-version-concurrency-control",
+        "@id": "urn:ngm:class:version-control",
         "label": "Multi-Version Concurrency Control"
       }
     ],
@@ -126,10 +126,6 @@ public:: true
       {
         "@id": "urn:ngm:class:linearizability",
         "label": "Linearizability"
-      },
-      {
-        "@id": "urn:ngm:class:serializability",
-        "label": "Serializability"
       },
       {
         "@id": "urn:ngm:class:acid-properties",

@@ -80,10 +80,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:organisational-framework",
-        "label": "Organisational Framework"
-      },
-      {
         "@id": "urn:ngm:class:policy-enforcement",
         "label": "Policy Enforcement"
       },
@@ -106,16 +102,8 @@ public:: true
         "label": "Performance Management"
       },
       {
-        "@id": "urn:ngm:class:strategic-alignment",
-        "label": "Strategic Alignment"
-      },
-      {
         "@id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
-      },
-      {
-        "@id": "urn:ngm:class:value-delivery",
-        "label": "Value Delivery"
       },
       {
         "@id": "urn:ngm:class:resource-management",
@@ -164,7 +152,7 @@ public:: true
         "label": "Executive Sponsorship"
       },
       {
-        "@id": "urn:ngm:class:audit-and-oversight",
+        "@id": "urn:ngm:class:audit",
         "label": "Audit and Oversight"
       }
     ],

@@ -66,7 +66,7 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:universal-xr-access",
+        "@id": "urn:ngm:class:universal-access",
         "label": "Universal XR Access"
       }
     ]

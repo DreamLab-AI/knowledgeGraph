@@ -23,60 +23,161 @@ public:: true
   "definition": "A payment network is an infrastructure system of interconnected nodes, protocols, messaging standards, and settlement mechanisms that enables the authenticated transfer of value between participants — individuals, merchants, financial institutions, or autonomous software agents — with guarantees on finality, atomicity, and fraud prevention. Payment networks operate at multiple layers: a messaging layer (e.g. SWIFT MT/MX, ISO 20022) carries authenticated payment instructions; a clearing layer nets obligations across participants; and a settlement layer achieves irrevocable finality through central bank reserves or distributed ledger consensus. The architecture spans traditional four-party card networks (Visa, Mastercard), interbank clearing systems (SWIFT, ACH, SEPA, Fedwire), cryptographic peer-to-peer blockchain networks, and second-layer off-chain channel networks such as the Lightning Network, collectively underpinning commerce, financial inclusion, and machine-to-machine value exchange.",
   "domain": "finance",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:financial-infrastructure", "label": "Financial Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:financial-infrastructure",
+      "label": "Financial Infrastructure"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:payment-system", "label": "Payment System"},
-      {"@id": "urn:ngm:class:payment-gateway", "label": "Payment Gateway"},
-      {"@id": "urn:ngm:class:state-channel", "label": "State Channel"},
-      {"@id": "urn:ngm:class:clearing-house", "label": "Clearing House"},
-      {"@id": "urn:ngm:class:settlement-layer", "label": "Settlement Layer"}
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "@id": "urn:ngm:class:payment-gateway",
+        "label": "Payment Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      },
+      {
+        "@id": "urn:ngm:class:clearing-house",
+        "label": "Clearing House"
+      },
+      {
+        "@id": "urn:ngm:class:settlement-layer",
+        "label": "Settlement Layer"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:micropayments", "label": "Micropayments"},
-      {"@id": "urn:ngm:class:cross-border-payments", "label": "Cross-Border Payments"},
-      {"@id": "urn:ngm:class:machine-to-machine-payments", "label": "Machine to Machine Payments"},
-      {"@id": "urn:ngm:class:real-time-payments", "label": "Real-Time Payments"},
-      {"@id": "urn:ngm:class:programmable-money", "label": "Programmable Money"}
+      {
+        "@id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "@id": "urn:ngm:class:machine-to-machine-payments",
+        "label": "Machine to Machine Payments"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-payments",
+        "label": "Real-Time Payments"
+      },
+      {
+        "@id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
-      {"@id": "urn:ngm:class:trust-model", "label": "Trust Model"}
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:trust-model",
+        "label": "Trust Model"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:internet-infrastructure", "label": "Internet Infrastructure"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+      {
+        "@id": "urn:ngm:class:internet-infrastructure",
+        "label": "Internet Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-20022", "label": "ISO 20022"},
-      {"@id": "urn:ngm:class:payment-card-industry-standard", "label": "Payment Card Industry Standard"}
+      {
+        "@id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      },
+      {
+        "@id": "urn:ngm:class:payment-card-industry-standard",
+        "label": "Payment Card Industry Standard"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"},
-      {"@id": "urn:ngm:class:barter-system", "label": "Barter System"}
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:barter-system",
+        "label": "Barter System"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
-      {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer 2 Scaling"},
-      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:payment-rail", "label": "Payment Rail"},
-    {"@id": "urn:ngm:class:value-transfer-network", "label": "Value Transfer Network"}
+    {
+      "@id": "urn:ngm:class:payment-rail",
+      "label": "Payment Rail"
+    },
+    {
+      "@id": "urn:ngm:class:value-transfer-network",
+      "label": "Value Transfer Network"
+    }
   ],
   "quality": 0.74,
   "provenance": {

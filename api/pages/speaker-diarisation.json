@@ -26,16 +26,12 @@
         "label": "Speaker Embedding"
       },
       {
-        "id": "urn:ngm:class:acoustic-feature-extraction",
+        "id": "urn:ngm:class:feature-extraction",
         "label": "Acoustic Feature Extraction"
       },
       {
         "id": "urn:ngm:class:spectral-clustering",
         "label": "Spectral Clustering"
-      },
-      {
-        "id": "urn:ngm:class:overlap-detection",
-        "label": "Overlap Detection"
       }
     ],
     "requires": [
@@ -60,18 +56,6 @@
       {
         "id": "urn:ngm:class:real-time-transcription",
         "label": "Real-time Transcription"
-      },
-      {
-        "id": "urn:ngm:class:speaker-identification",
-        "label": "Speaker Identification"
-      },
-      {
-        "id": "urn:ngm:class:dialogue-act-recognition",
-        "label": "Dialogue Act Recognition"
-      },
-      {
-        "id": "urn:ngm:class:clinical-note-generation",
-        "label": "Clinical Note Generation"
       }
     ],
     "dependsOn": [
@@ -101,7 +85,7 @@
         "label": "Real-time Collaboration"
       },
       {
-        "id": "urn:ngm:class:multimodal-learning",
+        "id": "urn:ngm:class:multimodal-ai-architecture-learning",
         "label": "Multimodal Learning"
       }
     ],
@@ -117,10 +101,6 @@
       {
         "id": "urn:ngm:class:emotion-recognition",
         "label": "Emotion Recognition"
-      },
-      {
-        "id": "urn:ngm:class:forced-alignment",
-        "label": "Forced Alignment"
       },
       {
         "id": "urn:ngm:class:noise-reduction",

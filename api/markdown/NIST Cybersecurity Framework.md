@@ -23,65 +23,133 @@ public:: true
   "definition": "The NIST Cybersecurity Framework (CSF) is a voluntary, outcomes-based risk management framework published by the US National Institute of Standards and Technology that provides organisations with a common taxonomy and structured approach for managing cybersecurity risk across sectors. It organises security activities around six core functions—Govern, Identify, Protect, Detect, Respond, and Recover—each decomposed into categories and subcategories cross-referenced to industry standards including ISO/IEC 27001, NIST SP 800-53, and COBIT. Version 2.0, released in February 2024, formalised the Govern function and broadened applicability beyond critical infrastructure to all organisation types and sizes globally. The framework is widely adopted as a baseline for cybersecurity programme assessment, board-level communication, supply-chain risk management, and regulatory compliance alignment.",
   "domain": "security",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:security-framework", "label": "Security Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:security-framework",
+      "label": "Security Framework"
+    }
+  ],
   "relations": {
-    "hasPart": [
-      {"@id": "urn:ngm:class:cybersecurity-framework-core", "label": "Cybersecurity Framework Core"},
-      {"@id": "urn:ngm:class:cybersecurity-framework-tiers", "label": "Cybersecurity Framework Tiers"},
-      {"@id": "urn:ngm:class:cybersecurity-framework-profile", "label": "Cybersecurity Framework Profile"},
-      {"@id": "urn:ngm:class:cybersecurity-framework-govern-function", "label": "Cybersecurity Framework Govern Function"}
-    ],
     "partOf": [
-      {"@id": "urn:ngm:class:nist-special-publications", "label": "NIST Special Publications"}
+      {
+        "@id": "urn:ngm:class:nist",
+        "label": "NIST Special Publications"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:asset-inventory", "label": "Asset Inventory"}
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:asset-inventory",
+        "label": "Asset Inventory"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"},
-      {"@id": "urn:ngm:class:supply-chain-risk-management", "label": "Supply Chain Risk Management"},
-      {"@id": "urn:ngm:class:security-governance", "label": "Security Governance"},
-      {"@id": "urn:ngm:class:threat-detection", "label": "Threat Detection"}
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-risk-management",
+        "label": "Supply Chain Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:threat-detection",
+        "label": "Threat Detection"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:nist-sp-800-53", "label": "NIST SP 800-53"},
-      {"@id": "urn:ngm:class:vulnerability-management", "label": "Vulnerability Management"}
+      {
+        "@id": "urn:ngm:class:nist-sp-800-53",
+        "label": "NIST SP 800-53"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:cybersecurity-risk-management", "label": "Cybersecurity Risk Management"}
+      {
+        "@id": "urn:ngm:class:cybersecurity-risk-management",
+        "label": "Cybersecurity Risk Management"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:risk-register", "label": "Risk Register"},
-      {"@id": "urn:ngm:class:control-mapping", "label": "Control Mapping"}
+      {
+        "@id": "urn:ngm:class:risk-register",
+        "label": "Risk Register"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
-      {"@id": "urn:ngm:class:cyber-insurance", "label": "Cyber Insurance"}
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist", "label": "NIST"}
+      {
+        "@id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:iso-iec-27001", "label": "ISO/IEC 27001"},
-      {"@id": "urn:ngm:class:soc-2", "label": "SOC 2"},
-      {"@id": "urn:ngm:class:cis-controls", "label": "CIS Controls"}
+      {
+        "@id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      },
+      {
+        "@id": "urn:ngm:class:soc-2",
+        "label": "SOC 2"
+      },
+      {
+        "@id": "urn:ngm:class:cis-controls",
+        "label": "CIS Controls"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:nist", "label": "NIST"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
-      {"@id": "urn:ngm:class:critical-infrastructure-protection", "label": "Critical Infrastructure Protection"}
+      {
+        "@id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:critical-infrastructure-protection",
+        "label": "Critical Infrastructure Protection"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:csf", "label": "CSF"},
-    {"@id": "urn:ngm:class:nist-csf", "label": "NIST CSF"}
+    {
+      "@id": "urn:ngm:class:csf",
+      "label": "CSF"
+    },
+    {
+      "@id": "urn:ngm:class:nist-csf",
+      "label": "NIST CSF"
+    }
   ],
   "quality": 0.76,
   "provenance": {

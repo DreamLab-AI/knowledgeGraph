@@ -18,12 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:autoregressive-language-modeling",
+        "id": "urn:ngm:class:causal-language-modelling",
         "label": "Autoregressive Language Modeling"
-      },
-      {
-        "id": "urn:ngm:class:masked-language-modeling",
-        "label": "Masked Language Modeling"
       },
       {
         "id": "urn:ngm:class:encoder-decoder-architecture",
@@ -96,7 +92,7 @@
         "label": "Knowledge Graphing"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai",
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       }
     ],
@@ -127,7 +123,7 @@
         "label": "Scaling Laws"
       },
       {
-        "id": "urn:ngm:class:emergent-abilities",
+        "id": "urn:ngm:class:emergent-capabilities",
         "label": "Emergent Abilities"
       }
     ]

@@ -66,7 +66,7 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:geospatial-data-management",
+        "@id": "urn:ngm:class:geospatial-data",
         "label": "Geospatial Data Management"
       }
     ]

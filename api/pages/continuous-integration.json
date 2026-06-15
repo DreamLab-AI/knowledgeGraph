@@ -28,10 +28,6 @@
       {
         "id": "urn:ngm:class:static-code-analysis",
         "label": "Static Code Analysis"
-      },
-      {
-        "id": "urn:ngm:class:pipeline-as-code",
-        "label": "Pipeline as Code"
       }
     ],
     "requires": [
@@ -90,10 +86,6 @@
       {
         "id": "urn:ngm:class:waterfall-development",
         "label": "Waterfall Development"
-      },
-      {
-        "id": "urn:ngm:class:big-bang-integration",
-        "label": "Big-Bang Integration"
       }
     ],
     "bridgesTo": [
@@ -108,7 +100,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:github-actions",
+        "id": "urn:ngm:class:git-hub-actions",
         "label": "GitHub Actions"
       },
       {
@@ -116,7 +108,7 @@
         "label": "Jenkins"
       },
       {
-        "id": "urn:ngm:class:docker",
+        "id": "urn:ngm:class:docker-containerisation-platform",
         "label": "Docker"
       },
       {

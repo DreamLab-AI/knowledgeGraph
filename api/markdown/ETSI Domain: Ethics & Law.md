@@ -126,11 +126,11 @@ public:: true
         "label": "Legal Compliance"
       },
       {
-        "@id": "urn:ngm:class:regulatory-systems",
+        "@id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Systems"
       },
       {
-        "@id": "urn:ngm:class:rights-management",
+        "@id": "urn:ngm:class:digital-rights-management",
         "label": "Rights Management"
       }
     ],

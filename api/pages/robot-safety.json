@@ -54,11 +54,11 @@
         "label": "Human Robot Interaction"
       },
       {
-        "id": "urn:ngm:class:collaborative-robotics",
+        "id": "urn:ngm:class:collaborative-systems-modality-robotics",
         "label": "Collaborative Robotics"
       },
       {
-        "id": "urn:ngm:class:autonomous-systems",
+        "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
       }
     ],
@@ -92,7 +92,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:traditional-industrial-robotics",
+        "id": "urn:ngm:class:industrial-robotics",
         "label": "Traditional Industrial Robotics"
       }
     ],
@@ -124,10 +124,6 @@
       {
         "id": "urn:ngm:class:human-robot-collaboration",
         "label": "Human-Robot Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:workplace-safety",
-        "label": "Workplace Safety"
       }
     ],
     "standardizedBy": [
@@ -160,7 +156,7 @@
         "label": "Safety Integrity Level"
       },
       {
-        "id": "urn:ngm:class:human-factors-engineering",
+        "id": "urn:ngm:class:human-factors",
         "label": "Human Factors Engineering"
       }
     ]

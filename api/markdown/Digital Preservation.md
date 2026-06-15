@@ -57,49 +57,119 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:format-migration", "label": "Format Migration"},
-      {"@id": "urn:ngm:class:checksum-verification", "label": "Checksum Verification"},
-      {"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"},
-      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"}
+      {
+        "@id": "urn:ngm:class:format-migration",
+        "label": "Format Migration"
+      },
+      {
+        "@id": "urn:ngm:class:checksum-verification",
+        "label": "Checksum Verification"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:storage-infrastructure", "label": "Storage Infrastructure"},
-      {"@id": "urn:ngm:class:metadata-standard", "label": "Metadata Standard"},
-      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"}
+      {
+        "@id": "urn:ngm:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-standard",
+        "label": "Metadata Standard"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"},
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"},
-      {"@id": "urn:ngm:class:content-addressable-storage", "label": "Content-Addressable Storage"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "@id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressable Storage"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"},
-      {"@id": "urn:ngm:class:long-term-access", "label": "Long-Term Access"},
-      {"@id": "urn:ngm:class:cultural-heritage-management", "label": "Cultural Heritage Management"}
+      {
+        "@id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:etsi-domain-data-management-cultural-heritage",
+        "label": "Cultural Heritage Management"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:oais-reference-model", "label": "OAIS Reference Model"},
-      {"@id": "urn:ngm:class:premis-metadata-standard", "label": "PREMIS Metadata Standard"},
-      {"@id": "urn:ngm:class:iso-14721", "label": "ISO 14721"}
+      {
+        "@id": "urn:ngm:class:reference-model",
+        "label": "OAIS Reference Model"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-standard",
+        "label": "PREMIS Metadata Standard"
+      },
+      {
+        "@id": "urn:ngm:class:iso-14721",
+        "label": "ISO 14721"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:data-backup", "label": "Data Backup"},
-      {"@id": "urn:ngm:class:data-archiving", "label": "Data Archiving"}
+      {
+        "@id": "urn:ngm:class:backup-and-recovery",
+        "label": "Data Backup"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:archival-standards", "label": "Archival Standards"},
-      {"@id": "urn:ngm:class:information-lifecycle-management", "label": "Information Lifecycle Management"},
-      {"@id": "urn:ngm:class:digital-rights-management", "label": "Digital Rights Management"}
+      {
+        "@id": "urn:ngm:class:archival-standards",
+        "label": "Archival Standards"
+      },
+      {
+        "@id": "urn:ngm:class:lifecycle-management",
+        "label": "Information Lifecycle Management"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-storage", "label": "Decentralised Storage"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:decentralised-storage",
+        "label": "Decentralised Storage"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:long-term-digital-curation", "label": "Long-Term Digital Curation"}
+    {
+      "@id": "urn:ngm:class:long-term-digital-curation",
+      "label": "Long-Term Digital Curation"
+    }
   ],
   "quality": 0.74,
   "provenance": {

@@ -97,19 +97,11 @@ alias:: DigitalTransformation
         "label": "Data Analytics"
       },
       {
-        "@id": "urn:ngm:class:digital-strategy",
-        "label": "Digital Strategy"
-      },
-      {
         "@id": "urn:ngm:class:cybersecurity",
         "label": "Cybersecurity"
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:business-innovation",
-        "label": "Business Innovation"
-      },
       {
         "@id": "urn:ngm:class:customer-experience",
         "label": "Customer Experience"
@@ -121,10 +113,6 @@ alias:: DigitalTransformation
       {
         "@id": "urn:ngm:class:smart-manufacturing",
         "label": "Smart Manufacturing"
-      },
-      {
-        "@id": "urn:ngm:class:data-driven-decision-making",
-        "label": "Data-Driven Decision Making"
       }
     ],
     "uses": [
@@ -149,10 +137,6 @@ alias:: DigitalTransformation
       {
         "@id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
-      },
-      {
-        "@id": "urn:ngm:class:agile-transformation",
-        "label": "Agile Transformation"
       }
     ],
     "relatedTo": [
@@ -177,16 +161,6 @@ alias:: DigitalTransformation
       {
         "@id": "urn:ngm:class:distributed-collaboration",
         "label": "Distributed Collaboration"
-      },
-      {
-        "@id": "urn:ngm:class:supply-chain-digitisation",
-        "label": "Supply Chain Digitisation"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:legacy-systems",
-        "label": "Legacy Systems"
       }
     ]
   },

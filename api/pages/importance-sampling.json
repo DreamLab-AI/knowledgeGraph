@@ -21,10 +21,6 @@
       {
         "id": "urn:ngm:class:probability-distribution",
         "label": "Probability Distribution"
-      },
-      {
-        "id": "urn:ngm:class:expectation-estimation",
-        "label": "Expectation Estimation"
       }
     ],
     "enables": [
@@ -37,37 +33,16 @@
         "label": "Reinforcement Learning"
       },
       {
-        "id": "urn:ngm:class:off-policy-evaluation",
-        "label": "Off-Policy Evaluation"
-      },
-      {
         "id": "urn:ngm:class:variance-reduction",
         "label": "Variance Reduction"
-      },
-      {
-        "id": "urn:ngm:class:prioritised-experience-replay",
-        "label": "Prioritised Experience Replay"
       }
     ],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:self-normalised-importance-sampling",
-        "label": "Self-Normalised Importance Sampling"
-      },
-      {
-        "id": "urn:ngm:class:multiple-importance-sampling",
-        "label": "Multiple Importance Sampling"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:rejection-sampling",
         "label": "Rejection Sampling"
-      },
-      {
-        "id": "urn:ngm:class:uniform-sampling",
-        "label": "Uniform Sampling"
       }
     ],
     "bridgesTo": [
@@ -96,10 +71,6 @@
       {
         "id": "urn:ngm:class:proposal-distribution",
         "label": "Proposal Distribution"
-      },
-      {
-        "id": "urn:ngm:class:importance-weights",
-        "label": "Importance Weights"
       }
     ],
     "supports": [

@@ -100,10 +100,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:authentication-schema",
-        "label": "Authentication Schema"
-      },
-      {
         "@id": "urn:ngm:class:data-format-specification",
         "label": "Data Format Specification"
       },
@@ -118,7 +114,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:technical-specification-document",
+        "@id": "urn:ngm:class:technical-documentation",
         "label": "Technical Specification Document"
       },
       {
@@ -127,10 +123,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:component-integration",
-        "label": "Component Integration"
-      },
       {
         "@id": "urn:ngm:class:system-interoperability",
         "label": "System Interoperability"
@@ -142,7 +134,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:network-transport-layer",
+        "@id": "urn:ngm:class:transport-layer",
         "label": "Network Transport Layer"
       },
       {
@@ -156,13 +148,13 @@ public:: true
         "label": "OpenAPI Specification"
       },
       {
-        "@id": "urn:ngm:class:rest-architectural-style",
+        "@id": "urn:ngm:class:rest",
         "label": "REST Architectural Style"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:json-data-format",
+        "@id": "urn:ngm:class:json-data-interchange-format",
         "label": "JSON Data Format"
       },
       {
@@ -190,10 +182,6 @@ public:: true
         "label": "W3C"
       },
       {
-        "@id": "urn:ngm:class:oma3",
-        "label": "OMA3"
-      },
-      {
         "@id": "urn:ngm:class:etsi",
         "label": "ETSI"
       }
@@ -210,7 +198,7 @@ public:: true
         "label": "AI Agent System"
       },
       {
-        "@id": "urn:ngm:class:blockchain-smart-contract",
+        "@id": "urn:ngm:class:smart-contract",
         "label": "Blockchain Smart Contract"
       },
       {

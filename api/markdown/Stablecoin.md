@@ -124,7 +124,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:collateral-reserves",
+        "@id": "urn:ngm:class:collateral-management",
         "label": "Collateral Reserves"
       },
       {
@@ -190,11 +190,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:stabilization-algorithm",
-        "label": "Stabilization Algorithm"
-      },
-      {
-        "@id": "urn:ngm:class:decentralized-ledger",
+        "@id": "urn:ngm:class:ledger",
         "label": "Decentralized Ledger"
       },
       {
@@ -203,10 +199,6 @@ public:: true
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:algorithmic-peg",
-        "label": "Algorithmic Peg"
-      },
       {
         "@id": "urn:ngm:class:fiat-backed-token",
         "label": "Fiat-Backed Token"
@@ -238,13 +230,13 @@ public:: true
         "label": "ISO 24165"
       },
       {
-        "@id": "urn:ngm:class:fsb-regulatory-framework",
+        "@id": "urn:ngm:class:regulatory-framework",
         "label": "FSB Regulatory Framework"
       }
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:volatile-cryptocurrency",
+        "@id": "urn:ngm:class:cryptocurrency",
         "label": "Volatile Cryptocurrency"
       },
       {
@@ -258,7 +250,7 @@ public:: true
         "label": "Central Bank Digital Currency"
       },
       {
-        "@id": "urn:ngm:class:traditional-payment-system",
+        "@id": "urn:ngm:class:payment-system",
         "label": "Traditional Payment System"
       },
       {

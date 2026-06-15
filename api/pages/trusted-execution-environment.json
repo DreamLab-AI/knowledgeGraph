@@ -65,24 +65,11 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:confidential-virtual-machine",
-        "label": "Confidential Virtual Machine"
-      },
-      {
         "id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Architecture"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:software-sandboxing",
-        "label": "Software Sandboxing"
-      },
-      {
-        "id": "urn:ngm:class:hypervisor-isolation",
-        "label": "Hypervisor Isolation"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:federated-learning",
@@ -99,7 +86,7 @@
         "label": "Hardware Security Module"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -121,10 +108,6 @@
       {
         "id": "urn:ngm:class:confidential-computing-consortium",
         "label": "Confidential Computing Consortium"
-      },
-      {
-        "id": "urn:ngm:class:global-platform-specification",
-        "label": "GlobalPlatform Specification"
       }
     ],
     "partOf": [],

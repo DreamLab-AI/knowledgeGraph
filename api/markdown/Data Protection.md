@@ -162,7 +162,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:audit-system",
+        "@id": "urn:ngm:class:audit",
         "label": "Audit System"
       },
       {

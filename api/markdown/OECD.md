@@ -57,59 +57,100 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {"@id": "urn:ngm:class:ai-principles", "label": "AI Principles"},
-      {"@id": "urn:ngm:class:crypto-asset-reporting-framework", "label": "Crypto-Asset Reporting Framework"},
-      {"@id": "urn:ngm:class:base-erosion-and-profit-shifting", "label": "Base Erosion and Profit Shifting"},
-      {"@id": "urn:ngm:class:programme-for-international-student-assessment", "label": "Programme for International Student Assessment"}
-    ],
-    "partOf": [
-      {"@id": "urn:ngm:class:international-governance-institutions", "label": "International Governance Institutions"}
-    ],
     "requires": [
-      {"@id": "urn:ngm:class:multilateral-cooperation", "label": "Multilateral Cooperation"},
-      {"@id": "urn:ngm:class:data-sharing", "label": "Data Sharing"}
+      {
+        "@id": "urn:ngm:class:multilateral-cooperation",
+        "label": "Multilateral Cooperation"
+      },
+      {
+        "@id": "urn:ngm:class:data-sharing",
+        "label": "Data Sharing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:automatic-exchange-of-information", "label": "Automatic Exchange of Information"},
-      {"@id": "urn:ngm:class:international-tax-compliance", "label": "International Tax Compliance"},
-      {"@id": "urn:ngm:class:policy-harmonisation", "label": "Policy Harmonisation"},
-      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"}
+      {
+        "@id": "urn:ngm:class:corporate-tax-compliance-framework",
+        "label": "International Tax Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:oecd-council", "label": "OECD Council"},
-      {"@id": "urn:ngm:class:g20", "label": "G20"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:common-reporting-standard", "label": "Common Reporting Standard"},
-      {"@id": "urn:ngm:class:global-minimum-tax", "label": "Global Minimum Tax"}
+      {
+        "@id": "urn:ngm:class:g20",
+        "label": "G20"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:peer-review", "label": "Peer Review"},
-      {"@id": "urn:ngm:class:comparative-statistics", "label": "Comparative Statistics"}
+      {
+        "@id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      },
+      {
+        "@id": "urn:ngm:class:statistics",
+        "label": "Comparative Statistics"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:infra-legal-and-regulatory", "label": "Legal and Regulatory"},
-      {"@id": "urn:ngm:class:open-government", "label": "Open Government"},
-      {"@id": "urn:ngm:class:digital-economy", "label": "Digital Economy"}
+      {
+        "@id": "urn:ngm:class:infra-legal-and-regulatory",
+        "label": "Legal and Regulatory"
+      },
+      {
+        "@id": "urn:ngm:class:open-government",
+        "label": "Open Government"
+      },
+      {
+        "@id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:world-trade-organization", "label": "World Trade Organization"},
-      {"@id": "urn:ngm:class:international-monetary-fund", "label": "International Monetary Fund"}
+      {
+        "@id": "urn:ngm:class:world-trade-organization",
+        "label": "World Trade Organization"
+      },
+      {
+        "@id": "urn:ngm:class:international-monetary-fund",
+        "label": "International Monetary Fund"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:blockchain-regulation", "label": "Blockchain Regulation"},
-      {"@id": "urn:ngm:class:mi-ca", "label": "MiCA"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-regulation",
+        "label": "Blockchain Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:mi-ca",
+        "label": "MiCA"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:fatf", "label": "FATF"},
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
-      {"@id": "urn:ngm:class:financial-stability-board", "label": "Financial Stability Board"}
+      {
+        "@id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:organisation-for-economic-co-operation-and-development", "label": "Organisation for Economic Co-operation and Development"}
+    {
+      "@id": "urn:ngm:class:organisation-for-economic-co-operation-and-development",
+      "label": "Organisation for Economic Co-operation and Development"
+    }
   ],
   "quality": 0.74,
   "provenance": {

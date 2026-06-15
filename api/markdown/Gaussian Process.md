@@ -24,52 +24,98 @@ public:: true
   "domain": "machine-learning",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"}
+    {
+      "@id": "urn:ngm:class:bayesian-inference",
+      "label": "Bayesian Inference"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:kernel-function", "label": "Kernel Function"},
-      {"@id": "urn:ngm:class:mean-function", "label": "Mean Function"},
-      {"@id": "urn:ngm:class:posterior-predictive-distribution", "label": "Posterior Predictive Distribution"}
+      {
+        "@id": "urn:ngm:class:kernel-function",
+        "label": "Kernel Function"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:gaussian-distribution", "label": "Gaussian Distribution"},
-      {"@id": "urn:ngm:class:positive-definite-matrix", "label": "Positive Definite Matrix"}
+      {
+        "@id": "urn:ngm:class:gaussian-distribution",
+        "label": "Gaussian Distribution"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bayesian-optimisation", "label": "Bayesian Optimisation"},
-      {"@id": "urn:ngm:class:uncertainty-quantification", "label": "Uncertainty Quantification"},
-      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"},
-      {"@id": "urn:ngm:class:gaussian-process-regression", "label": "Gaussian Process Regression"}
+      {
+        "@id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-process-regression",
+        "label": "Gaussian Process Regression"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:kernel-methods", "label": "Kernel Methods"},
-      {"@id": "urn:ngm:class:marginal-likelihood", "label": "Marginal Likelihood"},
-      {"@id": "urn:ngm:class:cholesky-decomposition", "label": "Cholesky Decomposition"}
+      {
+        "@id": "urn:ngm:class:kernel-methods",
+        "label": "Kernel Methods"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:covariance-matrix", "label": "Covariance Matrix"},
-      {"@id": "urn:ngm:class:hyperparameter-optimisation", "label": "Hyperparameter Optimisation"}
+      {
+        "@id": "urn:ngm:class:covariance-matrix",
+        "label": "Covariance Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-optimisation",
+        "label": "Hyperparameter Optimisation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:random-forest", "label": "Random Forest"},
-      {"@id": "urn:ngm:class:support-vector-machine", "label": "Support Vector Machine"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:random-forest",
+        "label": "Random Forest"
+      },
+      {
+        "@id": "urn:ngm:class:support-vector-machine",
+        "label": "Support Vector Machine"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:kriging", "label": "Kriging"},
-      {"@id": "urn:ngm:class:hamiltonian-monte-carlo", "label": "Hamiltonian Monte Carlo"},
-      {"@id": "urn:ngm:class:variational-inference", "label": "Variational Inference"},
-      {"@id": "urn:ngm:class:deep-kernel-learning", "label": "Deep Kernel Learning"},
-      {"@id": "urn:ngm:class:sparse-gaussian-process", "label": "Sparse Gaussian Process"}
+      {
+        "@id": "urn:ngm:class:kriging",
+        "label": "Kriging"
+      },
+      {
+        "@id": "urn:ngm:class:hamiltonian-monte-carlo",
+        "label": "Hamiltonian Monte Carlo"
+      },
+      {
+        "@id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-interpolation", "label": "Spatial Interpolation"},
-      {"@id": "urn:ngm:class:scientific-computing", "label": "Scientific Computing"}
+      {
+        "@id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:kriging", "label": "Kriging"}
+    {
+      "@id": "urn:ngm:class:kriging",
+      "label": "Kriging"
+    }
   ],
   "quality": 0.74,
   "provenance": {

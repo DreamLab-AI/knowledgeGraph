@@ -76,10 +76,6 @@ public:: true
       {
         "@id": "urn:ngm:class:relevance-ranking",
         "label": "Relevance Ranking"
-      },
-      {
-        "@id": "urn:ngm:class:search-results-page",
-        "label": "Search Results Page"
       }
     ],
     "requires": [

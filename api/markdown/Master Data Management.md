@@ -83,10 +83,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:single-source-of-truth",
-        "label": "Single Source of Truth"
-      },
-      {
         "@id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
       },
@@ -99,27 +95,13 @@ public:: true
         "label": "Data Lineage"
       }
     ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:master-data-hub",
-        "label": "Master Data Hub"
-      },
-      {
-        "@id": "urn:ngm:class:golden-record",
-        "label": "Golden Record"
-      },
-      {
-        "@id": "urn:ngm:class:reference-data-management",
-        "label": "Reference Data Management"
-      }
-    ],
     "uses": [
       {
         "@id": "urn:ngm:class:data-integration",
         "label": "Data Integration"
       },
       {
-        "@id": "urn:ngm:class:etl",
+        "@id": "urn:ngm:class:etl-pipeline",
         "label": "ETL"
       },
       {
@@ -142,10 +124,6 @@ public:: true
       }
     ],
     "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:transactional-data",
-        "label": "Transactional Data"
-      },
       {
         "@id": "urn:ngm:class:data-silo",
         "label": "Data Silo"

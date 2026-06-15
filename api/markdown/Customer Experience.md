@@ -23,46 +23,107 @@ public:: true
   "definition": "Customer experience (CX) is the holistic perception a customer forms of an organisation across every interaction and touchpoint throughout the customer lifecycle, from initial awareness through purchase, post-sale service, and eventual advocacy or churn. It encompasses emotional, cognitive, sensory, and behavioural dimensions of customer engagement and is recognised as a primary competitive differentiator in markets where product parity is high. Organisations systematically measure and engineer CX through journey mapping, voice-of-customer programmes, service design, and data-driven personalisation.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:user-experience", "label": "User Experience"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:user-experience",
+      "label": "User Experience"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:predictive-personalization", "label": "Predictive Personalization"},
-      {"@id": "urn:ngm:class:behavioral-analytics", "label": "Behavioral Analytics"},
-      {"@id": "urn:ngm:class:sentiment-analysis", "label": "Sentiment Analysis"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:journey-mapping", "label": "Journey Mapping"},
-      {"@id": "urn:ngm:class:voice-of-customer", "label": "Voice of Customer"}
+      {
+        "@id": "urn:ngm:class:predictive-personalization",
+        "label": "Predictive Personalization"
+      },
+      {
+        "@id": "urn:ngm:class:behavioral-analytics",
+        "label": "Behavioral Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:journey-mapping",
+        "label": "Journey Mapping"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:customer-service-automation", "label": "Customer Service Automation"},
-      {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper personalisation"},
-      {"@id": "urn:ngm:class:loyalty-programs", "label": "Loyalty Programs"},
-      {"@id": "urn:ngm:class:customer-retention", "label": "Customer Retention"},
-      {"@id": "urn:ngm:class:brand-advocacy", "label": "Brand Advocacy"}
+      {
+        "@id": "urn:ngm:class:customer-service-automation",
+        "label": "Customer Service Automation"
+      },
+      {
+        "@id": "urn:ngm:class:hyper-personalisation",
+        "label": "Hyper personalisation"
+      },
+      {
+        "@id": "urn:ngm:class:loyalty-programs",
+        "label": "Loyalty Programs"
+      },
+      {
+        "@id": "urn:ngm:class:customer-retention",
+        "label": "Customer Retention"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:omnichannel-orchestration", "label": "Omnichannel Orchestration"},
-      {"@id": "urn:ngm:class:net-promoter-score", "label": "Net Promoter Score"},
-      {"@id": "urn:ngm:class:customer-effort-score", "label": "Customer Effort Score"}
+      {
+        "@id": "urn:ngm:class:omnichannel-orchestration",
+        "label": "Omnichannel Orchestration"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:first-party-data", "label": "First-Party Data"},
-      {"@id": "urn:ngm:class:unified-customer-profile", "label": "Unified Customer Profile"}
+      {
+        "@id": "urn:ngm:class:first-party-data",
+        "label": "First-Party Data"
+      },
+      {
+        "@id": "urn:ngm:class:unified-customer-profile",
+        "label": "Unified Customer Profile"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-twin-of-the-customer", "label": "Digital Twin of the Customer"},
-      {"@id": "urn:ngm:class:customer-support", "label": "Customer Support"},
-      {"@id": "urn:ngm:class:service-design", "label": "Service Design"},
-      {"@id": "urn:ngm:class:data-privacy", "label": "Data Privacy"}
+      {
+        "@id": "urn:ngm:class:digital-twin-of-the-customer",
+        "label": "Digital Twin of the Customer"
+      },
+      {
+        "@id": "urn:ngm:class:customer-support",
+        "label": "Customer Support"
+      },
+      {
+        "@id": "urn:ngm:class:service-design",
+        "label": "Service Design"
+      },
+      {
+        "@id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:cx", "label": "CX"},
-    {"@id": "urn:ngm:class:customer-journey-experience", "label": "Customer Journey Experience"}
+    {
+      "@id": "urn:ngm:class:cx",
+      "label": "CX"
+    },
+    {
+      "@id": "urn:ngm:class:customer-journey-experience",
+      "label": "Customer Journey Experience"
+    }
   ],
   "quality": 0.72,
   "provenance": {

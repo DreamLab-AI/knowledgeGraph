@@ -94,7 +94,7 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:etl",
+        "@id": "urn:ngm:class:etl-pipeline",
         "label": "ETL"
       },
       {
@@ -152,10 +152,6 @@ public:: true
       {
         "@id": "urn:ngm:class:data-replication",
         "label": "Data Replication"
-      },
-      {
-        "@id": "urn:ngm:class:data-disaggregation",
-        "label": "Data Disaggregation"
       }
     ],
     "bridgesTo": [
@@ -168,7 +164,7 @@ public:: true
         "label": "Differential Privacy"
       },
       {
-        "@id": "urn:ngm:class:semantic-web",
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       }
     ],

@@ -38,52 +38,101 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:http", "label": "HTTP"},
-      {"@id": "urn:ngm:class:persistent-connection", "label": "Persistent Connection"}
+      {
+        "@id": "urn:ngm:class:http",
+        "label": "HTTP"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:real-time-data-streaming", "label": "Real-Time Data Streaming"},
-      {"@id": "urn:ngm:class:server-push", "label": "Server Push"},
-      {"@id": "urn:ngm:class:token-streaming", "label": "Token Streaming"},
-      {"@id": "urn:ngm:class:live-notifications", "label": "Live Notifications"}
+      {
+        "@id": "urn:ngm:class:real-time-data-streaming",
+        "label": "Real-Time Data Streaming"
+      },
+      {
+        "@id": "urn:ngm:class:server-push",
+        "label": "Server Push"
+      },
+      {
+        "@id": "urn:ngm:class:mentions-and-notifications",
+        "label": "Live Notifications"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
-      {"@id": "urn:ngm:class:publish-subscribe-pattern", "label": "Publish-Subscribe Pattern"}
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:eventsource-api", "label": "EventSource API"},
-      {"@id": "urn:ngm:class:text-event-stream", "label": "text/event-stream MIME Type"},
-      {"@id": "urn:ngm:class:http2", "label": "HTTP/2"}
+      {
+        "@id": "urn:ngm:class:http2",
+        "label": "HTTP/2"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
-      {"@id": "urn:ngm:class:llm-inference-api", "label": "LLM Inference API"},
-      {"@id": "urn:ngm:class:real-time-dashboard", "label": "Real-Time Dashboard"}
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:llm-inference-api",
+        "label": "LLM Inference API"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:websocket", "label": "WebSocket"},
-      {"@id": "urn:ngm:class:grpc-streaming", "label": "gRPC Streaming"},
-      {"@id": "urn:ngm:class:long-polling", "label": "Long Polling"}
+      {
+        "@id": "urn:ngm:class:websocket",
+        "label": "WebSocket"
+      },
+      {
+        "@id": "urn:ngm:class:long-polling",
+        "label": "Long Polling"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:whatwg", "label": "WHATWG"},
-      {"@id": "urn:ngm:class:w3c", "label": "W3C"}
+      {
+        "@id": "urn:ngm:class:whatwg",
+        "label": "WHATWG"
+      },
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
-      {"@id": "urn:ngm:class:reverse-proxy", "label": "Reverse Proxy"},
-      {"@id": "urn:ngm:class:chunked-transfer-encoding", "label": "Chunked Transfer Encoding"},
-      {"@id": "urn:ngm:class:streaming-protocol", "label": "Streaming Protocol"}
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:reverse-proxy",
+        "label": "Reverse Proxy"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:eventsource", "label": "EventSource"},
-    {"@id": "urn:ngm:class:sse-protocol", "label": "SSE Protocol"}
+    {
+      "@id": "urn:ngm:class:eventsource",
+      "label": "EventSource"
+    },
+    {
+      "@id": "urn:ngm:class:sse-protocol",
+      "label": "SSE Protocol"
+    }
   ],
   "quality": 0.74,
   "provenance": {

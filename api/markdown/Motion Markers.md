@@ -63,14 +63,7 @@ public:: true
       "label": "Motion Capture Technology"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:3-d-motion-analysis",
-        "label": "3D Motion Analysis"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

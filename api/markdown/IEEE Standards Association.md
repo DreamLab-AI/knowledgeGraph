@@ -23,55 +23,121 @@ public:: true
   "definition": "The IEEE Standards Association (IEEE SA) is the standards development arm of the Institute of Electrical and Electronics Engineers, operating a consensus-based process through which industry, government, and academic stakeholders collaboratively develop and maintain technical standards covering electrical, electronic, computing, and communications technologies, with over 1,400 active standards and more than 900 standards under active development at any time.",
   "domain": "standards",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:ieee-robotics-and-automation-society", "label": "IEEE Robotics And Automation Society"},
-      {"@id": "urn:ngm:class:ieee-control-systems-society", "label": "IEEE Control Systems Society"},
-      {"@id": "urn:ngm:class:ieee-sa-standards-board", "label": "IEEE SA Standards Board"},
-      {"@id": "urn:ngm:class:ieee-802-committee", "label": "IEEE 802 Committee"}
+      {
+        "@id": "urn:ngm:class:ieee-robotics-and-automation-society",
+        "label": "IEEE Robotics And Automation Society"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-control-systems-society",
+        "label": "IEEE Control Systems Society"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-802-x",
+        "label": "IEEE 802 Committee"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:ieee", "label": "IEEE"}
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"},
-      {"@id": "urn:ngm:class:technical-standards", "label": "Technical Standards"},
-      {"@id": "urn:ngm:class:product-certification", "label": "Product Certification"},
-      {"@id": "urn:ngm:class:consensus-based-standardization", "label": "Consensus-Based Standardization"}
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      },
+      {
+        "@id": "urn:ngm:class:technical-standards",
+        "label": "Technical Standards"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:ansi-accreditation", "label": "ANSI Accreditation"},
-      {"@id": "urn:ngm:class:open-standards-process", "label": "Open Standards Process"}
+      {
+        "@id": "urn:ngm:class:open-standards",
+        "label": "Open Standards Process"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:standards-organization", "label": "Standards Organization"}
+      {
+        "@id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:working-group", "label": "Working Group"},
-      {"@id": "urn:ngm:class:balloting-process", "label": "Balloting Process"}
+      {
+        "@id": "urn:ngm:class:working-group",
+        "label": "Working Group"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:wireless-networking", "label": "Wireless Networking"},
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"}
+      {
+        "@id": "urn:ngm:class:wireless-networking",
+        "label": "Wireless Networking"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"},
-      {"@id": "urn:ngm:class:iso", "label": "ISO"},
-      {"@id": "urn:ngm:class:iec", "label": "IEC"},
-      {"@id": "urn:ngm:class:etsi", "label": "ETSI"},
-      {"@id": "urn:ngm:class:wi-fi", "label": "Wi-Fi"}
+      {
+        "@id": "urn:ngm:class:technical-standard",
+        "label": "Technical Standard"
+      },
+      {
+        "@id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "@id": "urn:ngm:class:iec",
+        "label": "IEC"
+      },
+      {
+        "@id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      },
+      {
+        "@id": "urn:ngm:class:wi-fi",
+        "label": "Wi-Fi"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ieee-sa", "label": "IEEE SA"}
+    {
+      "@id": "urn:ngm:class:ieee-sa",
+      "label": "IEEE SA"
+    }
   ],
   "quality": 0.8,
   "provenance": {

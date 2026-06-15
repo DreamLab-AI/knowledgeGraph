@@ -18,10 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:evasion-attack",
-        "label": "Evasion Attack"
-      },
-      {
         "id": "urn:ngm:class:data-poisoning",
         "label": "Data Poisoning"
       },
@@ -48,7 +44,7 @@
         "label": "Threat Model"
       },
       {
-        "id": "urn:ngm:class:machine-learning-model",
+        "id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
       }
     ],
@@ -58,7 +54,7 @@
         "label": "Adversarial Robustness"
       },
       {
-        "id": "urn:ngm:class:red-team-testing",
+        "id": "urn:ngm:class:red-teaming",
         "label": "Red Team Testing"
       }
     ],
@@ -92,14 +88,6 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
-      },
-      {
-        "id": "urn:ngm:class:gradient-based-optimization",
-        "label": "Gradient-Based Optimization"
-      },
-      {
-        "id": "urn:ngm:class:perturbation",
-        "label": "Perturbation"
       }
     ],
     "supports": [],
@@ -121,10 +109,6 @@
       {
         "id": "urn:ngm:class:adversarial-training",
         "label": "Adversarial Training"
-      },
-      {
-        "id": "urn:ngm:class:ai-security-threat",
-        "label": "AI Security Threat"
       }
     ]
   },

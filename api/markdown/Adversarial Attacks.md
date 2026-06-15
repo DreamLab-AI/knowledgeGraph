@@ -87,28 +87,7 @@ public:: true
       "label": "AI Safety"
     }
   ],
-  "relations": {
-    "requires": [
-      {
-        "@id": "urn:ngm:class:crafted-perturbations",
-        "label": "Crafted Perturbations"
-      },
-      {
-        "@id": "urn:ngm:class:knowledge-of-target-model",
-        "label": "Knowledge of Target Model"
-      }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:model-evasion",
-        "label": "Model Evasion"
-      },
-      {
-        "@id": "urn:ngm:class:system-manipulation",
-        "label": "System Manipulation"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

@@ -30,7 +30,7 @@
         "label": "Transaction Output"
       },
       {
-        "id": "urn:ngm:class:transaction-nonce",
+        "id": "urn:ngm:class:nonce",
         "label": "Transaction Nonce"
       },
       {
@@ -44,7 +44,7 @@
         "label": "Digital Signature"
       },
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public-Key Cryptography"
       },
       {
@@ -86,12 +86,8 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:database-transaction",
+        "id": "urn:ngm:class:transaction",
         "label": "Database Transaction"
-      },
-      {
-        "id": "urn:ngm:class:traditional-payment",
-        "label": "Traditional Payment"
       }
     ],
     "bridgesTo": [

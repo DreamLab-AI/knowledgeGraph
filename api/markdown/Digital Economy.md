@@ -120,19 +120,15 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:digital-value-exchange",
-        "label": "Digital Value Exchange"
-      },
-      {
         "@id": "urn:ngm:class:virtual-commerce",
         "label": "Virtual Commerce"
       },
       {
-        "@id": "urn:ngm:class:play-to-earn",
+        "@id": "urn:ngm:class:play-to-earn-p2-e",
         "label": "Play-to-Earn"
       },
       {
-        "@id": "urn:ngm:class:creator-monetisation",
+        "@id": "urn:ngm:class:creator-monetization",
         "label": "Creator Monetisation"
       }
     ],
@@ -158,12 +154,6 @@ public:: true
       {
         "@id": "urn:ngm:class:cross-border-payments",
         "label": "Cross-Border Payments"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:traditional-economy",
-        "label": "Traditional Economy"
       }
     ],
     "bridgesTo": [

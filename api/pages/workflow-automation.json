@@ -58,7 +58,7 @@
         "label": "Hyperautomation"
       },
       {
-        "id": "urn:ngm:class:intelligent-process-automation",
+        "id": "urn:ngm:class:intelligent-automation",
         "label": "Intelligent Process Automation"
       }
     ],
@@ -78,10 +78,6 @@
     ],
     "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:manual-processing",
-        "label": "Manual Processing"
-      },
       {
         "id": "urn:ngm:class:batch-processing",
         "label": "Batch Processing"
@@ -124,10 +120,6 @@
       {
         "id": "urn:ngm:class:bpmn",
         "label": "BPMN"
-      },
-      {
-        "id": "urn:ngm:class:dmn",
-        "label": "DMN"
       }
     ],
     "partOf": [],

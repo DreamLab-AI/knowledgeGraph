@@ -16,33 +16,8 @@
   "qualityScore": 0.35,
   "maturity": "draft",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:calculation-timestamp",
-        "label": "Calculation Timestamp"
-      },
-      {
-        "id": "urn:ngm:class:confidence-interval",
-        "label": "Confidence Interval"
-      },
-      {
-        "id": "urn:ngm:class:score-value",
-        "label": "Score Value"
-      },
-      {
-        "id": "urn:ngm:class:scoring-methodology-reference",
-        "label": "Scoring Methodology Reference"
-      },
-      {
-        "id": "urn:ngm:class:validity-period",
-        "label": "Validity Period"
-      }
-    ],
+    "hasPart": [],
     "requires": [
-      {
-        "id": "urn:ngm:class:behavioral-data",
-        "label": "Behavioral Data"
-      },
       {
         "id": "urn:ngm:class:calculation-parameters",
         "label": "Calculation Parameters"
@@ -56,10 +31,6 @@
       {
         "id": "urn:ngm:class:access-control-decisions",
         "label": "Access Control Decisions"
-      },
-      {
-        "id": "urn:ngm:class:transaction-approval",
-        "label": "Transaction Approval"
       },
       {
         "id": "urn:ngm:class:identity-verification",

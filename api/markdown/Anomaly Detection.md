@@ -37,51 +37,102 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {"@id": "urn:ngm:class:point-anomaly-detection", "label": "Point Anomaly Detection"},
-      {"@id": "urn:ngm:class:contextual-anomaly-detection", "label": "Contextual Anomaly Detection"},
-      {"@id": "urn:ngm:class:collective-anomaly-detection", "label": "Collective Anomaly Detection"}
-    ],
     "requires": [
-      {"@id": "urn:ngm:class:statistical-modelling", "label": "Statistical Modelling"},
-      {"@id": "urn:ngm:class:threshold-calibration", "label": "Threshold Calibration"}
+      {
+        "@id": "urn:ngm:class:statistical-modelling",
+        "label": "Statistical Modelling"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"},
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"},
-      {"@id": "urn:ngm:class:intrusion-detection-system", "label": "Intrusion Detection System"}
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      },
+      {
+        "@id": "urn:ngm:class:intrusion-detection-system",
+        "label": "Intrusion Detection System"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:pattern-recognition", "label": "Pattern Recognition"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:autoencoder", "label": "Autoencoder"},
-      {"@id": "urn:ngm:class:isolation-forest", "label": "Isolation Forest"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:autoencoder",
+        "label": "Autoencoder"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"},
-      {"@id": "urn:ngm:class:data-preprocessing", "label": "Data Preprocessing"}
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"},
-      {"@id": "urn:ngm:class:classification", "label": "Classification"}
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:classification",
+        "label": "Classification"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:time-series-forecasting", "label": "Time Series Forecasting"},
-      {"@id": "urn:ngm:class:outlier-detection", "label": "Outlier Detection"},
-      {"@id": "urn:ngm:class:change-point-detection", "label": "Change Point Detection"},
-      {"@id": "urn:ngm:class:concept-drift", "label": "Concept Drift"},
-      {"@id": "urn:ngm:class:model-monitoring", "label": "Model Monitoring"}
+      {
+        "@id": "urn:ngm:class:time-series-forecasting",
+        "label": "Time Series Forecasting"
+      },
+      {
+        "@id": "urn:ngm:class:concept-drift",
+        "label": "Concept Drift"
+      },
+      {
+        "@id": "urn:ngm:class:model-monitoring",
+        "label": "Model Monitoring"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:network-security", "label": "Network Security"},
-      {"@id": "urn:ngm:class:iot-sensor-data", "label": "IoT Sensor Data"}
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-data",
+        "label": "IoT Sensor Data"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:outlier-detection", "label": "Outlier Detection"},
-    {"@id": "urn:ngm:class:novelty-detection", "label": "Novelty Detection"}
+    {
+      "@id": "urn:ngm:class:outlier-detection",
+      "label": "Outlier Detection"
+    },
+    {
+      "@id": "urn:ngm:class:novelty-detection",
+      "label": "Novelty Detection"
+    }
   ],
   "quality": 0.74,
   "provenance": {

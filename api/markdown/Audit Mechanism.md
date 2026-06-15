@@ -23,60 +23,137 @@ public:: true
   "definition": "The specific technical or procedural instrument used to capture, preserve, and retrieve evidence of system events, user actions, or organisational activities for auditing purposes. Audit mechanisms range from low-level kernel event hooks and cryptographic tamper-evident logs to high-level workflow checkpoints and policy-enforcement records.",
   "domain": "security",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:audit", "label": "Audit"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:audit",
+      "label": "Audit"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:event-log", "label": "Event Log"},
-      {"@id": "urn:ngm:class:tamper-evident-log", "label": "Tamper-Evident Log"}
+      {
+        "@id": "urn:ngm:class:event-log",
+        "label": "Event Log"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:security-information-and-event-management", "label": "Security Information and Event Management"},
-      {"@id": "urn:ngm:class:governance-risk-and-compliance", "label": "Governance Risk and Compliance"}
+      {
+        "@id": "urn:ngm:class:security-information-and-event-management",
+        "label": "Security Information and Event Management"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-retention-policy", "label": "Data Retention Policy"},
-      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"},
-      {"@id": "urn:ngm:class:non-repudiation", "label": "Non-Repudiation"}
+      {
+        "@id": "urn:ngm:class:retention-policy",
+        "label": "Data Retention Policy"
+      },
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:audit-logging", "label": "Audit Logging"},
-      {"@id": "urn:ngm:class:compliance-audit-trail", "label": "Compliance Audit Trail"},
-      {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"}
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-audit-trail",
+        "label": "Compliance Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:secure-storage", "label": "Secure Storage"},
-      {"@id": "urn:ngm:class:time-stamping", "label": "Time Stamping"}
+      {
+        "@id": "urn:ngm:class:secure-storage",
+        "label": "Secure Storage"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:immutability", "label": "Immutability"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-27001", "label": "ISO 27001"},
-      {"@id": "urn:ngm:class:nist-cybersecurity-framework", "label": "NIST Cybersecurity Framework"}
+      {
+        "@id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      },
+      {
+        "@id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:monitoring", "label": "Monitoring"}
+      {
+        "@id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"},
-      {"@id": "urn:ngm:class:forensic-investigation", "label": "Forensic Investigation"}
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:forensic-investigation",
+        "label": "Forensic Investigation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:audit-control", "label": "Audit Control"},
-    {"@id": "urn:ngm:class:audit-subsystem", "label": "Audit Subsystem"}
+    {
+      "@id": "urn:ngm:class:audit-control",
+      "label": "Audit Control"
+    },
+    {
+      "@id": "urn:ngm:class:audit-subsystem",
+      "label": "Audit Subsystem"
+    }
   ],
   "quality": 0.8,
   "provenance": {

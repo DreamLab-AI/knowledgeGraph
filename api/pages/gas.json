@@ -42,10 +42,6 @@
       {
         "id": "urn:ngm:class:ethereum-account",
         "label": "Ethereum Account"
-      },
-      {
-        "id": "urn:ngm:class:ether",
-        "label": "Ether"
       }
     ],
     "enables": [
@@ -56,14 +52,6 @@
       {
         "id": "urn:ngm:class:smart-contract-execution",
         "label": "Smart Contract Execution"
-      },
-      {
-        "id": "urn:ngm:class:denial-of-service-prevention",
-        "label": "Denial of Service Prevention"
-      },
-      {
-        "id": "urn:ngm:class:block-space-market",
-        "label": "Block Space Market"
       }
     ],
     "dependsOn": [
@@ -76,10 +64,6 @@
       {
         "id": "urn:ngm:class:eip-1559",
         "label": "EIP-1559"
-      },
-      {
-        "id": "urn:ngm:class:yellow-paper-specification",
-        "label": "Yellow Paper Specification"
       }
     ],
     "contrastsWith": [
@@ -120,11 +104,11 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       },
       {
-        "id": "urn:ngm:class:blockchain-consensus-protocol",
+        "id": "urn:ngm:class:blockchain-consensus",
         "label": "Blockchain Consensus Protocol"
       }
     ],

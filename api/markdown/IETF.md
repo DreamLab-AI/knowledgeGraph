@@ -23,60 +23,135 @@ public:: true
   "definition": "The Internet Engineering Task Force (IETF) is the principal international open-standards organisation responsible for developing and promoting voluntary Internet standards, particularly those comprising the Internet protocol suite (TCP/IP). It operates through volunteer working groups organised into technical areas, publishing specifications as Requests for Comments (RFCs) — the canonical technical definitions of protocols such as HTTP, TLS, QUIC, SMTP, and DNS. The IETF is a bottom-up, consensus-driven body with no formal membership; participation is open to any technically engaged individual. Its decision ethos of 'rough consensus and running code' has made it the dominant model for pragmatic, implementation-first standards development.",
   "domain": "standards",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:request-for-comments", "label": "Request for Comments"},
-      {"@id": "urn:ngm:class:working-group", "label": "Working Group"},
-      {"@id": "urn:ngm:class:internet-engineering-steering-group", "label": "Internet Engineering Steering Group"},
-      {"@id": "urn:ngm:class:internet-architecture-board", "label": "Internet Architecture Board"}
-    ],
-    "partOf": [
-      {"@id": "urn:ngm:class:internet-standards-ecosystem", "label": "Internet Standards Ecosystem"}
+      {
+        "@id": "urn:ngm:class:request-for-comments",
+        "label": "Request for Comments"
+      },
+      {
+        "@id": "urn:ngm:class:working-group",
+        "label": "Working Group"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
-      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"},
-      {"@id": "urn:ngm:class:api-standard", "label": "API Standard"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:api-standard",
+        "label": "API Standard"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:oauth-2-0", "label": "OAuth 2.0"},
-      {"@id": "urn:ngm:class:tls", "label": "TLS"},
-      {"@id": "urn:ngm:class:http", "label": "HTTP"},
-      {"@id": "urn:ngm:class:quic", "label": "QUIC"},
-      {"@id": "urn:ngm:class:smtp", "label": "SMTP"},
-      {"@id": "urn:ngm:class:dns", "label": "DNS"}
+      {
+        "@id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "@id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "@id": "urn:ngm:class:quic",
+        "label": "QUIC"
+      },
+      {
+        "@id": "urn:ngm:class:dns",
+        "label": "DNS"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:rough-consensus", "label": "Rough Consensus"},
-      {"@id": "urn:ngm:class:open-participation", "label": "Open Participation"}
+      {
+        "@id": "urn:ngm:class:rough-consensus",
+        "label": "Rough Consensus"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:authentication-standards", "label": "Authentication Standards"},
-      {"@id": "urn:ngm:class:supply-chain-integrity", "label": "Supply Chain Integrity"},
-      {"@id": "urn:ngm:class:remote-attestation", "label": "Remote Attestation"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:authentication-standards",
+        "label": "Authentication Standards"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-integrity",
+        "label": "Supply Chain Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:remote-attestation",
+        "label": "Remote Attestation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:iso", "label": "ISO"},
-      {"@id": "urn:ngm:class:w3c", "label": "W3C"},
-      {"@id": "urn:ngm:class:ieee", "label": "IEEE"}
+      {
+        "@id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:network-standards", "label": "Network Standards"},
-      {"@id": "urn:ngm:class:internet-governance", "label": "Internet Governance"},
-      {"@id": "urn:ngm:class:open-source", "label": "Open Source"},
-      {"@id": "urn:ngm:class:security-protocol", "label": "Security Protocol"}
+      {
+        "@id": "urn:ngm:class:network-standards",
+        "label": "Network Standards"
+      },
+      {
+        "@id": "urn:ngm:class:internet-governance",
+        "label": "Internet Governance"
+      },
+      {
+        "@id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      },
+      {
+        "@id": "urn:ngm:class:security-protocol",
+        "label": "Security Protocol"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"},
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:software-attestation", "label": "Software Attestation"}
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:internet-engineering-task-force", "label": "Internet Engineering Task Force"}
+    {
+      "@id": "urn:ngm:class:internet-engineering-task-force",
+      "label": "Internet Engineering Task Force"
+    }
   ],
   "quality": 0.74,
   "provenance": {

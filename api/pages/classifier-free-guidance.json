@@ -19,12 +19,8 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:denoising-diffusion-probabilistic-model",
+        "id": "urn:ngm:class:probabilistic-model",
         "label": "Denoising Diffusion Probabilistic Model"
-      },
-      {
-        "id": "urn:ngm:class:guidance-scale",
-        "label": "Guidance Scale"
       },
       {
         "id": "urn:ngm:class:conditioning-signal",
@@ -41,20 +37,12 @@
         "label": "Image Generation"
       },
       {
-        "id": "urn:ngm:class:text-to-video",
+        "id": "urn:ngm:class:text-to-video-generation",
         "label": "Text-to-Video"
       },
       {
         "id": "urn:ngm:class:audio-generation",
         "label": "Audio Generation"
-      },
-      {
-        "id": "urn:ngm:class:negative-prompting",
-        "label": "Negative Prompting"
-      },
-      {
-        "id": "urn:ngm:class:prompt-adherence",
-        "label": "Prompt Adherence"
       }
     ],
     "dependsOn": [
@@ -63,21 +51,12 @@
         "label": "Score-Based Generative Model"
       },
       {
-        "id": "urn:ngm:class:dropout-training",
+        "id": "urn:ngm:class:dropout",
         "label": "Dropout Training"
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:classifier-guidance",
-        "label": "Classifier Guidance"
-      },
-      {
-        "id": "urn:ngm:class:unconditional-generation",
-        "label": "Unconditional Generation"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
@@ -102,10 +81,6 @@
         "label": "Score Function"
       },
       {
-        "id": "urn:ngm:class:null-conditioning",
-        "label": "Null Conditioning"
-      },
-      {
         "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
       }
@@ -124,7 +99,7 @@
         "label": "Generative Model"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       },
       {
@@ -136,7 +111,7 @@
         "label": "Prompt Engineering"
       },
       {
-        "id": "urn:ngm:class:sampling-algorithm",
+        "id": "urn:ngm:class:sampling",
         "label": "Sampling Algorithm"
       },
       {

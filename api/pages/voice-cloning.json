@@ -25,28 +25,16 @@
       {
         "id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
-      },
-      {
-        "id": "urn:ngm:class:mel-spectrogram",
-        "label": "Mel-Spectrogram"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:personalised-voice-assistant",
+        "id": "urn:ngm:class:voice-assistant",
         "label": "Personalised Voice Assistant"
-      },
-      {
-        "id": "urn:ngm:class:audiobook-narration",
-        "label": "Audiobook Narration"
       },
       {
         "id": "urn:ngm:class:accessibility-technology",
         "label": "Accessibility Technology"
-      },
-      {
-        "id": "urn:ngm:class:audio-deepfake",
-        "label": "Audio Deepfake"
       }
     ],
     "dependsOn": [],
@@ -57,7 +45,7 @@
         "label": "Voice Conversion"
       },
       {
-        "id": "urn:ngm:class:concatenative-synthesis",
+        "id": "urn:ngm:class:speech-synthesis",
         "label": "Concatenative Synthesis"
       }
     ],
@@ -87,10 +75,6 @@
       {
         "id": "urn:ngm:class:speaker-embedding",
         "label": "Speaker Embedding"
-      },
-      {
-        "id": "urn:ngm:class:vocoder",
-        "label": "Vocoder"
       },
       {
         "id": "urn:ngm:class:diffusion-model",

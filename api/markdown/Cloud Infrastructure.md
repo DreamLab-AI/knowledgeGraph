@@ -79,10 +79,6 @@ alias:: CloudInfrastructure
       {
         "@id": "urn:ngm:class:object-storage",
         "label": "Object Storage"
-      },
-      {
-        "@id": "urn:ngm:class:virtual-private-cloud",
-        "label": "Virtual Private Cloud"
       }
     ],
     "requires": [
@@ -101,16 +97,8 @@ alias:: CloudInfrastructure
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:elasticity",
-        "label": "Elasticity"
-      },
-      {
         "@id": "urn:ngm:class:scalability",
         "label": "Scalability"
-      },
-      {
-        "@id": "urn:ngm:class:self-service-provisioning",
-        "label": "Self-Service Provisioning"
       },
       {
         "@id": "urn:ngm:class:infrastructure-as-a-service",
@@ -129,10 +117,6 @@ alias:: CloudInfrastructure
       {
         "@id": "urn:ngm:class:multi-tenancy",
         "label": "Multi-Tenancy"
-      },
-      {
-        "@id": "urn:ngm:class:pay-as-you-go-pricing",
-        "label": "Pay-as-you-go Pricing"
       }
     ],
     "supports": [
@@ -149,15 +133,11 @@ alias:: CloudInfrastructure
         "label": "Containerisation"
       },
       {
-        "@id": "urn:ngm:class:serverless-computing",
+        "@id": "urn:ngm:class:serverless-architecture",
         "label": "Serverless Computing"
       }
     ],
     "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:nist-sp-800-145",
-        "label": "NIST SP 800-145"
-      },
       {
         "@id": "urn:ngm:class:iso-iec-17788",
         "label": "ISO/IEC 17788"
@@ -175,10 +155,6 @@ alias:: CloudInfrastructure
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:artificial-intelligence-infrastructure",
-        "label": "Artificial Intelligence Infrastructure"
-      },
-      {
         "@id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       }
@@ -189,7 +165,7 @@ alias:: CloudInfrastructure
         "label": "DevOps"
       },
       {
-        "@id": "urn:ngm:class:cloud-native-application",
+        "@id": "urn:ngm:class:cloud-native-applications",
         "label": "Cloud-Native Application"
       }
     ]

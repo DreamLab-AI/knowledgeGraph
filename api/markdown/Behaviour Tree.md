@@ -23,50 +23,111 @@ public:: true
   "definition": "A Behaviour Tree (BT) is a hierarchical, directed acyclic graph structure used to model the decision-making logic of autonomous agents, non-player characters (NPCs), and robots. Internal nodes represent control-flow composites — Sequence, Selector, Parallel, and Decorator — while leaf nodes represent atomic Actions or Conditions; execution propagates through the tree and each node returns Success, Failure, or Running to its parent. Behaviour Trees superseded Finite State Machines (FSMs) in many game and robotics contexts because they offer superior modularity, reusability, and comprehensibility: sub-trees encapsulate coherent behaviours that can be composed without explicit inter-state transition wiring. First popularised in the game-development community circa 2005 and later formalised in robotics frameworks such as BehaviorTree.CPP, BTs are now a standard control architecture in both real-time interactive media and autonomous robotic systems.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:automated-planning", "label": "Automated Planning"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:automated-planning",
+      "label": "Automated Planning"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:sequence-node", "label": "Sequence Node"},
-      {"@id": "urn:ngm:class:selector-node", "label": "Selector Node"},
-      {"@id": "urn:ngm:class:decorator-node", "label": "Decorator Node"},
-      {"@id": "urn:ngm:class:blackboard", "label": "Blackboard"}
+      {
+        "@id": "urn:ngm:class:blackboard",
+        "label": "Blackboard"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:task-planning", "label": "Task Planning"}
+      {
+        "@id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
-      {"@id": "urn:ngm:class:npc-interaction", "label": "NPC Interaction"},
-      {"@id": "urn:ngm:class:robot-mission-execution", "label": "Robot Mission Execution"}
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "@id": "urn:ngm:class:npc-interaction",
+        "label": "NPC Interaction"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:pathfinding-algorithm", "label": "Pathfinding Algorithm"},
-      {"@id": "urn:ngm:class:ai-agents", "label": "AI Agents"},
-      {"@id": "urn:ngm:class:goal-oriented-action-planning", "label": "Goal-Oriented Action Planning"}
+      {
+        "@id": "urn:ngm:class:pathfinding-algorithm",
+        "label": "Pathfinding Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      },
+      {
+        "@id": "urn:ngm:class:goal-oriented-action-planning",
+        "label": "Goal-Oriented Action Planning"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:game-development", "label": "Game Development"},
-      {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"}
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      },
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:state-machine", "label": "State Machine"},
-      {"@id": "urn:ngm:class:finite-state-machine", "label": "Finite State Machine"},
-      {"@id": "urn:ngm:class:hierarchical-task-network", "label": "Hierarchical Task Network"}
+      {
+        "@id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      },
+      {
+        "@id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite State Machine"
+      },
+      {
+        "@id": "urn:ngm:class:hierarchical-task-network",
+        "label": "Hierarchical Task Network"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:intelligent-npc", "label": "Intelligent NPC"},
-      {"@id": "urn:ngm:class:ai-game-agent", "label": "AI Game Agent"},
-      {"@id": "urn:ngm:class:automated-planning", "label": "Automated Planning"},
-      {"@id": "urn:ngm:class:teleo-reactive-program", "label": "Teleo-Reactive Program"}
+      {
+        "@id": "urn:ngm:class:intelligent-npc",
+        "label": "Intelligent NPC"
+      },
+      {
+        "@id": "urn:ngm:class:ai-game-agent",
+        "label": "AI Game Agent"
+      },
+      {
+        "@id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      },
+      {
+        "@id": "urn:ngm:class:teleo-reactive-program",
+        "label": "Teleo-Reactive Program"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:behavior-tree", "label": "Behavior Tree"}
+    {
+      "@id": "urn:ngm:class:behavior-tree",
+      "label": "Behavior Tree"
+    }
   ],
   "quality": 0.72,
   "provenance": {

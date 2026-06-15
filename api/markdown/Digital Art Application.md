@@ -108,10 +108,6 @@ public:: true
         "label": "Digital Art Creation"
       },
       {
-        "@id": "urn:ngm:class:virtual-exhibitions",
-        "label": "Virtual Exhibitions"
-      },
-      {
         "@id": "urn:ngm:class:nft-minting",
         "label": "NFT Minting"
       }

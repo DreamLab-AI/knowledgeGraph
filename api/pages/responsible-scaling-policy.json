@@ -39,19 +39,11 @@
       {
         "id": "urn:ngm:class:ai-safety",
         "label": "AI Safety"
-      },
-      {
-        "id": "urn:ngm:class:model-accountability",
-        "label": "Model Accountability"
-      },
-      {
-        "id": "urn:ngm:class:incremental-deployment",
-        "label": "Incremental Deployment"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:frontier-model",
+        "id": "urn:ngm:class:frontier-models",
         "label": "Frontier Model"
       },
       {
@@ -71,7 +63,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:mandatory-ai-regulation",
+        "id": "urn:ngm:class:ai-regulation",
         "label": "Mandatory AI Regulation"
       },
       {
@@ -83,34 +75,13 @@
       {
         "id": "urn:ngm:class:biosecurity",
         "label": "Biosecurity"
-      },
-      {
-        "id": "urn:ngm:class:nuclear-non-proliferation",
-        "label": "Nuclear Non-Proliferation"
       }
     ],
-    "uses": [
-      {
-        "id": "urn:ngm:class:uplift-evaluation",
-        "label": "Uplift Evaluation"
-      },
-      {
-        "id": "urn:ngm:class:model-evals",
-        "label": "Model Evals"
-      },
-      {
-        "id": "urn:ngm:class:biosafety-level-framework",
-        "label": "Biosafety Level Framework"
-      }
-    ],
+    "uses": [],
     "supports": [
       {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
-      },
-      {
-        "id": "urn:ngm:class:existential-risk-reduction",
-        "label": "Existential Risk Reduction"
       },
       {
         "id": "urn:ngm:class:ai-regulation",
@@ -129,16 +100,8 @@
         "label": "AI Safety Institute"
       },
       {
-        "id": "urn:ngm:class:model-card",
+        "id": "urn:ngm:class:ai-model-card",
         "label": "Model Card"
-      },
-      {
-        "id": "urn:ngm:class:cbrn-risk",
-        "label": "CBRN Risk"
-      },
-      {
-        "id": "urn:ngm:class:deployment-policy",
-        "label": "Deployment Policy"
       }
     ]
   },

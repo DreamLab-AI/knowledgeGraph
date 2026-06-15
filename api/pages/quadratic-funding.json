@@ -23,7 +23,7 @@
         "label": "Mechanism Design"
       },
       {
-        "id": "urn:ngm:class:public-goods-funding",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
         "label": "Public Goods Funding"
       },
       {
@@ -55,10 +55,6 @@
       {
         "id": "urn:ngm:class:open-source-sustainability",
         "label": "Open Source Sustainability"
-      },
-      {
-        "id": "urn:ngm:class:democratic-resource-allocation",
-        "label": "Democratic Resource Allocation"
       }
     ],
     "dependsOn": [],
@@ -75,10 +71,6 @@
       {
         "id": "urn:ngm:class:plutocratic-voting",
         "label": "Plutocratic Voting"
-      },
-      {
-        "id": "urn:ngm:class:linear-matching",
-        "label": "Linear Matching"
       }
     ],
     "bridgesTo": [
@@ -131,7 +123,7 @@
         "label": "Gitcoin Grants"
       },
       {
-        "id": "urn:ngm:class:collective-action-problem",
+        "id": "urn:ngm:class:collective-action",
         "label": "Collective Action Problem"
       },
       {

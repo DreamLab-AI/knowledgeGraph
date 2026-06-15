@@ -30,10 +30,6 @@
         "label": "Depth Estimation"
       },
       {
-        "id": "urn:ngm:class:activity-recognition",
-        "label": "Activity Recognition"
-      },
-      {
         "id": "urn:ngm:class:panoptic-segmentation",
         "label": "Panoptic Segmentation"
       }
@@ -106,7 +102,7 @@
         "label": "Attention Mechanism"
       },
       {
-        "id": "urn:ngm:class:3d-point-cloud",
+        "id": "urn:ngm:class:point-cloud",
         "label": "3D Point Cloud"
       }
     ],
@@ -118,7 +114,7 @@
         "label": "Perception System"
       },
       {
-        "id": "urn:ngm:class:autonomous-systems",
+        "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
       }
     ],
@@ -126,10 +122,6 @@
       {
         "id": "urn:ngm:class:universal-scene-description",
         "label": "Universal Scene Description"
-      },
-      {
-        "id": "urn:ngm:class:contextual-reasoning",
-        "label": "Contextual Reasoning"
       }
     ]
   },

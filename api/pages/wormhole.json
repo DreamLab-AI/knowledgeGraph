@@ -61,11 +61,11 @@
         "label": "Axelar"
       },
       {
-        "id": "urn:ngm:class:ibc-protocol",
+        "id": "urn:ngm:class:ibc",
         "label": "IBC Protocol"
       },
       {
-        "id": "urn:ngm:class:light-client-bridge",
+        "id": "urn:ngm:class:light-client",
         "label": "Light-Client Bridge"
       }
     ],
@@ -85,11 +85,7 @@
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:guardian-network",
-        "label": "Guardian Network"
-      },
-      {
-        "id": "urn:ngm:class:multisignature-scheme",
+        "id": "urn:ngm:class:multisignature",
         "label": "Multisignature Scheme"
       },
       {

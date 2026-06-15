@@ -23,49 +23,127 @@ public:: true
   "definition": "Permissionless trading refers to the ability to execute financial trades — buying, selling, or swapping digital assets — without requiring authorisation from a centralised intermediary, gatekeeper, or identity provider. Enabled by on-chain smart contracts and automated market makers (AMMs), permissionless trading removes the account approval, KYC, and whitelist requirements of traditional financial markets, allowing any wallet address to interact directly with liquidity pools. It is a foundational property of decentralised finance (DeFi) protocols.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"},
-      {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:blockchain-wallet", "label": "Blockchain Wallet"},
-      {"@id": "urn:ngm:class:dex-aggregator", "label": "DEX Aggregator"}
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-wallet",
+        "label": "Blockchain Wallet"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:asset-trading", "label": "Asset Trading"},
-      {"@id": "urn:ngm:class:yield-farming", "label": "Yield Farming"},
-      {"@id": "urn:ngm:class:flash-loan", "label": "Flash Loan"},
-      {"@id": "urn:ngm:class:arbitrage", "label": "Arbitrage"},
-      {"@id": "urn:ngm:class:financial-inclusion", "label": "Financial Inclusion"}
+      {
+        "@id": "urn:ngm:class:asset-trading",
+        "label": "Asset Trading"
+      },
+      {
+        "@id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "@id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      },
+      {
+        "@id": "urn:ngm:class:arbitrage",
+        "label": "Arbitrage"
+      },
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:public-blockchain", "label": "Public Blockchain"},
-      {"@id": "urn:ngm:class:on-chain-liquidity", "label": "On-Chain Liquidity"},
-      {"@id": "urn:ngm:class:non-custodial-wallet", "label": "Non-Custodial Wallet"}
+      {
+        "@id": "urn:ngm:class:public-blockchain",
+        "label": "Public Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:non-custodial-wallet",
+        "label": "Non-Custodial Wallet"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:centralized-exchange", "label": "Centralized Exchange"},
-      {"@id": "urn:ngm:class:know-your-customer", "label": "Know Your Customer"},
-      {"@id": "urn:ngm:class:order-book", "label": "Order Book"}
+      {
+        "@id": "urn:ngm:class:centralized-exchange",
+        "label": "Centralized Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "@id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:decentralized-exchange", "label": "Decentralized Exchange"},
-      {"@id": "urn:ngm:class:token-swapping", "label": "Token Swapping"},
-      {"@id": "urn:ngm:class:permissionless-network", "label": "Permissionless Network"},
-      {"@id": "urn:ngm:class:uniswap", "label": "Uniswap"},
-      {"@id": "urn:ngm:class:slippage", "label": "Slippage"},
-      {"@id": "urn:ngm:class:concentrated-liquidity", "label": "Concentrated Liquidity"},
-      {"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"}
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:token-swapping",
+        "label": "Token Swapping"
+      },
+      {
+        "@id": "urn:ngm:class:permissionless-network",
+        "label": "Permissionless Network"
+      },
+      {
+        "@id": "urn:ngm:class:uniswap",
+        "label": "Uniswap"
+      },
+      {
+        "@id": "urn:ngm:class:slippage",
+        "label": "Slippage"
+      },
+      {
+        "@id": "urn:ngm:class:concentrated-liquidity",
+        "label": "Concentrated Liquidity"
+      },
+      {
+        "@id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:governance", "label": "Governance"},
-      {"@id": "urn:ngm:class:finance", "label": "Finance"}
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:open-trading", "label": "Open Trading"},
-    {"@id": "urn:ngm:class:trustless-trading", "label": "Trustless Trading"}
+    {
+      "@id": "urn:ngm:class:open-trading",
+      "label": "Open Trading"
+    },
+    {
+      "@id": "urn:ngm:class:trustless-trading",
+      "label": "Trustless Trading"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

@@ -23,67 +23,169 @@ public:: true
   "definition": "Audio processing is the computational manipulation of digital audio signals to transform, analyse, enhance, or synthesise sound, encompassing operations such as filtering, compression, equalisation, spatialisation, and feature extraction. It operates on discrete-time representations of acoustic waveforms using algorithms drawn from digital signal processing theory, spanning both time-domain and frequency-domain approaches. Applications range from consumer media playback and telecommunications to professional studio production, speech recognition pipelines, neural audio codecs, and immersive spatial audio for extended reality environments. Machine learning has significantly expanded the discipline, enabling source separation, generative synthesis, and zero-shot audio enhancement that were previously intractable.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:signal-processing",
+      "label": "Signal Processing"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:digital-signal-processing", "label": "Digital Signal Processing"},
-      {"@id": "urn:ngm:class:audio-codec", "label": "Audio Codec"},
-      {"@id": "urn:ngm:class:noise-cancellation", "label": "Noise Cancellation"},
-      {"@id": "urn:ngm:class:audio-feature-extraction", "label": "Audio Feature Extraction"}
+      {
+        "@id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:audio-codec",
+        "label": "Audio Codec"
+      },
+      {
+        "@id": "urn:ngm:class:noise-cancellation",
+        "label": "Noise Cancellation"
+      },
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Audio Feature Extraction"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:multimedia-processing", "label": "Multimedia Processing"}
+      {
+        "@id": "urn:ngm:class:multimedia-processing",
+        "label": "Multimedia Processing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:analogue-to-digital-conversion", "label": "Analogue-to-Digital Conversion"},
-      {"@id": "urn:ngm:class:fast-fourier-transform", "label": "Fast Fourier Transform"}
+      {
+        "@id": "urn:ngm:class:analogue-to-digital-conversion",
+        "label": "Analogue-to-Digital Conversion"
+      },
+      {
+        "@id": "urn:ngm:class:fast-fourier-transform",
+        "label": "Fast Fourier Transform"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
-      {"@id": "urn:ngm:class:spatial-audio-system", "label": "Spatial Audio System"},
-      {"@id": "urn:ngm:class:immersive-audio-system", "label": "Immersive Audio System"},
-      {"@id": "urn:ngm:class:text-to-speech", "label": "Text-to-Speech"},
-      {"@id": "urn:ngm:class:music-generation", "label": "Music Generation"},
-      {"@id": "urn:ngm:class:voice-activity-detection", "label": "Voice Activity Detection"}
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio-system",
+        "label": "Spatial Audio System"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-audio-system",
+        "label": "Immersive Audio System"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      },
+      {
+        "@id": "urn:ngm:class:music-generation",
+        "label": "Music Generation"
+      },
+      {
+        "@id": "urn:ngm:class:voice-activity-detection",
+        "label": "Voice Activity Detection"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:digital-signal-processing", "label": "Digital Signal Processing"},
-      {"@id": "urn:ngm:class:fourier-analysis", "label": "Fourier Analysis"}
+      {
+        "@id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:fourier-analysis",
+        "label": "Fourier Analysis"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:audio-parameters", "label": "Audio Parameters"}
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:audio-parameters",
+        "label": "Audio Parameters"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:telecommunications", "label": "Telecommunications"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:mpeg-h-audio", "label": "MPEG-H Audio"},
-      {"@id": "urn:ngm:class:opus-codec", "label": "Opus Codec"}
+      {
+        "@id": "urn:ngm:class:mpeg-h-audio",
+        "label": "MPEG-H Audio"
+      },
+      {
+        "@id": "urn:ngm:class:opus-codec",
+        "label": "Opus Codec"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:image-processing", "label": "Image Processing"},
-      {"@id": "urn:ngm:class:analogue-signal-processing", "label": "Analogue Signal Processing"}
+      {
+        "@id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Analogue Signal Processing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:audio-spatialization", "label": "Audio Spatialization"},
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
+      {
+        "@id": "urn:ngm:class:audio-spatialization",
+        "label": "Audio Spatialization"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:music-information-retrieval", "label": "Music Information Retrieval"},
-      {"@id": "urn:ngm:class:psychoacoustics", "label": "Psychoacoustics"},
-      {"@id": "urn:ngm:class:audio-processing-system", "label": "Audio Processing System"},
-      {"@id": "urn:ngm:class:waveform", "label": "Waveform"},
-      {"@id": "urn:ngm:class:spectrogram", "label": "Spectrogram"}
+      {
+        "@id": "urn:ngm:class:music-information-retrieval",
+        "label": "Music Information Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:psychoacoustics",
+        "label": "Psychoacoustics"
+      },
+      {
+        "@id": "urn:ngm:class:audio-processing-system",
+        "label": "Audio Processing System"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:digital-audio-processing", "label": "Digital Audio Processing"},
-    {"@id": "urn:ngm:class:sound-processing", "label": "Sound Processing"}
+    {
+      "@id": "urn:ngm:class:digital-audio-processing",
+      "label": "Digital Audio Processing"
+    },
+    {
+      "@id": "urn:ngm:class:sound-processing",
+      "label": "Sound Processing"
+    }
   ],
   "quality": 0.74,
   "provenance": {

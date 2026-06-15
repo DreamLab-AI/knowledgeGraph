@@ -24,61 +24,132 @@ public:: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:infra-software-engineering", "label": "Software Engineering"}
+    {
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:horizontal-scaling", "label": "Horizontal Scaling"},
-      {"@id": "urn:ngm:class:vertical-scaling", "label": "Vertical Scaling"},
-      {"@id": "urn:ngm:class:data-partitioning", "label": "Data Partitioning"},
-      {"@id": "urn:ngm:class:load-balancing", "label": "Load Balancing"}
+      {
+        "@id": "urn:ngm:class:horizontal-scalability",
+        "label": "Horizontal Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:data-partitioning",
+        "label": "Data Partitioning"
+      },
+      {
+        "@id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:data-partitioning", "label": "Data Partitioning"},
-      {"@id": "urn:ngm:class:stateless-architecture", "label": "Stateless Architecture"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:data-partitioning",
+        "label": "Data Partitioning"
+      },
+      {
+        "@id": "urn:ngm:class:stateless-architecture",
+        "label": "Stateless Architecture"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:high-performance-computing", "label": "High-Performance Computing"},
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:elastic-computing", "label": "Elastic Computing"},
-      {"@id": "urn:ngm:class:global-deployments", "label": "Global Deployments"}
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"},
-      {"@id": "urn:ngm:class:consistent-hashing", "label": "Consistent Hashing"},
-      {"@id": "urn:ngm:class:caching", "label": "Caching"},
-      {"@id": "urn:ngm:class:message-queuing", "label": "Message Queuing"}
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:consistent-hashing",
+        "label": "Consistent Hashing"
+      },
+      {
+        "@id": "urn:ngm:class:caching",
+        "label": "Caching"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cap-theorem", "label": "CAP Theorem"},
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"}
+      {
+        "@id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:cloud-native-architecture", "label": "Cloud-Native Architecture"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:ai-inference", "label": "AI Inference"}
+      {
+        "@id": "urn:ngm:class:cloud-native-architecture",
+        "label": "Cloud-Native Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:monolithic-architecture", "label": "Monolithic Architecture"},
-      {"@id": "urn:ngm:class:vertical-integration", "label": "Vertical Integration"}
+      {
+        "@id": "urn:ngm:class:monolithic-architecture",
+        "label": "Monolithic Architecture"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:scalability-pattern", "label": "Scalability Pattern"},
-      {"@id": "urn:ngm:class:performance-optimization", "label": "Performance Optimization"},
-      {"@id": "urn:ngm:class:resilience", "label": "Resilience"},
-      {"@id": "urn:ngm:class:availability", "label": "Availability"},
-      {"@id": "urn:ngm:class:distributed-architecture", "label": "Distributed Architecture"},
-      {"@id": "urn:ngm:class:system-properties", "label": "System Properties"}
+      {
+        "@id": "urn:ngm:class:scalability-pattern",
+        "label": "Scalability Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "@id": "urn:ngm:class:availability",
+        "label": "Availability"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-architecture",
+        "label": "Distributed Architecture"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
-      {"@id": "urn:ngm:class:ai-model-scaling", "label": "AI Model Scaling"}
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:system-scalability", "label": "System Scalability"}
+    {
+      "@id": "urn:ngm:class:system-scalability",
+      "label": "System Scalability"
+    }
   ],
   "quality": 0.74,
   "provenance": {

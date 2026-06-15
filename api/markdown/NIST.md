@@ -24,49 +24,125 @@ alias:: NIST (National Institute of Standards and Technology)
   "definition": "The National Institute of Standards and Technology (NIST) is a non-regulatory US federal agency within the Department of Commerce, responsible for advancing measurement science, standards development, and technology innovation to promote US industrial competitiveness and public safety. NIST produces widely adopted voluntary frameworks for cybersecurity, privacy, risk management, and artificial intelligence governance, including the NIST Cybersecurity Framework and the NIST AI Risk Management Framework. Its Special Publication (SP) 800-series documents serve as mandatory guidance for US federal agencies and are globally referenced by private industry, academic institutions, and regulators. NIST also operates the AI Safety Institute Consortium (AISIC), positioning it as a key convening body for multi-stakeholder AI governance and evaluation methodology development.",
   "domain": "governance",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:nist-cybersecurity-framework", "label": "NIST Cybersecurity Framework"},
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"},
-      {"@id": "urn:ngm:class:nist-privacy-framework", "label": "NIST Privacy Framework"},
-      {"@id": "urn:ngm:class:nist-sp-800-series", "label": "NIST SP 800-Series"}
+      {
+        "@id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "@id": "urn:ngm:class:nist-privacy-framework",
+        "label": "NIST Privacy Framework"
+      },
+      {
+        "@id": "urn:ngm:class:nist-sp-800-series",
+        "label": "NIST SP 800-Series"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:us-department-of-commerce", "label": "US Department of Commerce"}
+      {
+        "@id": "urn:ngm:class:us-department-of-commerce",
+        "label": "US Department of Commerce"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
-      {"@id": "urn:ngm:class:cybersecurity-standard", "label": "Cybersecurity Standard"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:privacy-engineering", "label": "Privacy Engineering"},
-      {"@id": "urn:ngm:class:supply-chain-risk-management", "label": "Supply Chain Risk Management"}
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity-standard",
+        "label": "Cybersecurity Standard"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-engineering",
+        "label": "Privacy Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-risk-management",
+        "label": "Supply Chain Risk Management"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:information-security", "label": "Information Security"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
-      {"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:metrology", "label": "Metrology"},
-      {"@id": "urn:ngm:class:cryptographic-standard", "label": "Cryptographic Standard"}
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:technical-standard",
+        "label": "Technical Standard"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:metrology",
+        "label": "Metrology"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:iso", "label": "ISO"},
-      {"@id": "urn:ngm:class:ieee", "label": "IEEE"}
+      {
+        "@id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:ai-auditing", "label": "AI Auditing"},
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"}
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-auditing",
+        "label": "AI Auditing"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:national-institute-of-standards-and-technology", "label": "National Institute of Standards and Technology"}
+    {
+      "@id": "urn:ngm:class:national-institute-of-standards-and-technology",
+      "label": "National Institute of Standards and Technology"
+    }
   ],
   "quality": 0.75,
   "provenance": {

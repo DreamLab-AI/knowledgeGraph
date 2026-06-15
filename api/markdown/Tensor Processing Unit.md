@@ -84,7 +84,7 @@ public:: true
         "label": "TensorFlow"
       },
       {
-        "@id": "urn:ngm:class:xla-compiler",
+        "@id": "urn:ngm:class:compiler",
         "label": "XLA Compiler"
       }
     ],
@@ -102,7 +102,7 @@ public:: true
         "label": "Neural Network Inference"
       },
       {
-        "@id": "urn:ngm:class:transformer-models",
+        "@id": "urn:ngm:class:transformer",
         "label": "Transformer Models"
       }
     ],
@@ -112,13 +112,13 @@ public:: true
         "label": "BFloat16"
       },
       {
-        "@id": "urn:ngm:class:google-cloud-platform",
+        "@id": "urn:ngm:class:google-ai-technology-corporation-cloud",
         "label": "Google Cloud Platform"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:asic-design",
+        "@id": "urn:ngm:class:asic",
         "label": "ASIC Design"
       },
       {

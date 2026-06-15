@@ -23,47 +23,109 @@ public:: true
   "definition": "Wikidata is a free, collaboratively edited knowledge base operated by the Wikimedia Foundation that stores structured data as machine-readable items and statements, serving as a central data repository for Wikipedia and the broader web. Each item has a stable identifier and is described by property-value statements with references and qualifiers, exported as linked data and queryable via SPARQL. Multilingual by design and released under a public-domain licence, Wikidata is one of the largest open knowledge graphs and a key hub in the linked-data web.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:knowledge-graph",
+      "label": "Knowledge Graph"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:sparql", "label": "SPARQL"},
-      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:entity-resolution", "label": "Entity Resolution"}
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:entity-resolution",
+        "label": "Entity Resolution"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"},
-      {"@id": "urn:ngm:class:open-data", "label": "Open Data"},
-      {"@id": "urn:ngm:class:federated-query", "label": "Federated Query"},
-      {"@id": "urn:ngm:class:entity-disambiguation", "label": "Entity Disambiguation"}
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web Linked Data Standard"
+      },
+      {
+        "@id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      },
+      {
+        "@id": "urn:ngm:class:federated-query",
+        "label": "Federated Query"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:structured-data", "label": "Structured Data"},
-      {"@id": "urn:ngm:class:authority-control", "label": "Authority Control"}
+      {
+        "@id": "urn:ngm:class:structured-data",
+        "label": "Structured Data"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:wikimedia-foundation", "label": "Wikimedia Foundation"},
-      {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"}
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:open-knowledge-graph", "label": "Open Knowledge Graph"},
-      {"@id": "urn:ngm:class:collaborative-editing", "label": "Collaborative Editing"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Open Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-editing",
+        "label": "Collaborative Editing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:wikidata-knowledge-base", "label": "Wikidata Knowledge Base"}
+    {
+      "@id": "urn:ngm:class:wikidata-knowledge-base",
+      "label": "Wikidata Knowledge Base"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

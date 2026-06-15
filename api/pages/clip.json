@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:large-scale-dataset",
+        "id": "urn:ngm:class:large-scale-datasets",
         "label": "Large-Scale Dataset"
       },
       {
@@ -64,20 +64,7 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:align",
-        "label": "ALIGN"
-      },
-      {
-        "id": "urn:ngm:class:florence",
-        "label": "Florence"
-      },
-      {
-        "id": "urn:ngm:class:coca",
-        "label": "CoCa"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:spatial-anchor",
@@ -116,7 +103,7 @@
         "label": "Text-to-Image"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       },
       {

@@ -84,15 +84,11 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:analytics-tools",
-        "label": "Analytics Tools"
-      },
-      {
         "@id": "urn:ngm:class:compliance-systems",
         "label": "Compliance Systems"
       },
       {
-        "@id": "urn:ngm:class:custody-solutions",
+        "@id": "urn:ngm:class:custody",
         "label": "Custody Solutions"
       },
       {
@@ -105,14 +101,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:asset-allocation",
-        "label": "Asset Allocation"
-      },
-      {
-        "@id": "urn:ngm:class:portfolio-optimization",
-        "label": "Portfolio Optimization"
-      },
       {
         "@id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
@@ -154,21 +142,7 @@ public:: true
         "label": "Market Liquidity"
       }
     ],
-    "supports": [
-      {
-        "@id": "urn:ngm:class:wealth-management",
-        "label": "Wealth Management"
-      },
-      {
-        "@id": "urn:ngm:class:fund-administration",
-        "label": "Fund Administration"
-      }
-    ],
     "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:traditional-asset-management",
-        "label": "Traditional Asset Management"
-      },
       {
         "@id": "urn:ngm:class:self-custody",
         "label": "Self-Custody"

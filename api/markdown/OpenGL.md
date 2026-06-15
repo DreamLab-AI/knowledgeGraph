@@ -81,10 +81,6 @@ public:: true
       {
         "@id": "urn:ngm:class:graphics-driver",
         "label": "Graphics Driver"
-      },
-      {
-        "@id": "urn:ngm:class:opengl-context",
-        "label": "OpenGL Context"
       }
     ],
     "enables": [
@@ -103,10 +99,6 @@ public:: true
       {
         "@id": "urn:ngm:class:real-time-graphics",
         "label": "Real-Time Graphics"
-      },
-      {
-        "@id": "urn:ngm:class:augmented-reality-rendering",
-        "label": "Augmented Reality Rendering"
       }
     ],
     "hasPart": [
@@ -119,7 +111,7 @@ public:: true
         "label": "Vertex Shader"
       },
       {
-        "@id": "urn:ngm:class:fragment-shader",
+        "@id": "urn:ngm:class:pixel-shader",
         "label": "Fragment Shader"
       },
       {
@@ -129,12 +121,8 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:rasterisation-pipeline",
+        "@id": "urn:ngm:class:rendering-pipeline",
         "label": "Rasterisation Pipeline"
-      },
-      {
-        "@id": "urn:ngm:class:opengl-specification",
-        "label": "OpenGL Specification"
       }
     ],
     "standardizedBy": [
@@ -182,10 +170,6 @@ public:: true
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:opengles",
-        "label": "OpenGL ES"
-      },
       {
         "@id": "urn:ngm:class:compute-shader",
         "label": "Compute Shader"

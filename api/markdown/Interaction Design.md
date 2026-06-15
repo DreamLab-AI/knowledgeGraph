@@ -24,50 +24,124 @@ alias:: InteractionDesign
   "definition": "Interaction design (IxD) is the practice of defining and shaping the dynamic behaviour of interactive systems — determining how they respond to user inputs, communicate state and feedback, and guide users through task sequences — with the goal of creating products that are usable, efficient, and satisfying across diverse contexts. It encompasses the design of interaction flows, affordances, timing, error recovery patterns, and multi-modal input modalities across digital, physical, spatial, and conversational interfaces. Interaction design is distinguished from visual design by its focus on behaviour over time rather than static composition, and from software engineering by its concern for the human experience of system use rather than technical implementation. As interactive surfaces expand into AR, VR, voice, and AI-mediated interfaces, the field continuously develops new design vocabularies, prototyping methods, and evaluation heuristics to address emergent interaction paradigms.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:ixd", "label": "IxD"},
-    {"@id": "urn:ngm:class:interaction-architecture", "label": "Interaction Architecture"}
+    {
+      "@id": "urn:ngm:class:ixd",
+      "label": "IxD"
+    },
+    {
+      "@id": "urn:ngm:class:interaction-architecture",
+      "label": "Interaction Architecture"
+    }
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:user-experience-design", "label": "User Experience Design"}
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:interaction-flow", "label": "Interaction Flow"},
-      {"@id": "urn:ngm:class:affordance", "label": "Affordance"},
-      {"@id": "urn:ngm:class:feedback-mechanism", "label": "Feedback Mechanism"},
-      {"@id": "urn:ngm:class:error-recovery", "label": "Error Recovery"}
+      {
+        "@id": "urn:ngm:class:affordance",
+        "label": "Affordance"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-mechanism",
+        "label": "Feedback Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:error-recovery",
+        "label": "Error Recovery"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cognitive-science", "label": "Cognitive Science"},
-      {"@id": "urn:ngm:class:user-research", "label": "User Research"},
-      {"@id": "urn:ngm:class:prototyping", "label": "Prototyping"}
+      {
+        "@id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "@id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
+        "@id": "urn:ngm:class:prototyping",
+        "label": "Prototyping"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:information-architecture", "label": "Information Architecture"},
-      {"@id": "urn:ngm:class:mental-model", "label": "Mental Model"},
-      {"@id": "urn:ngm:class:task-analysis", "label": "Task Analysis"},
-      {"@id": "urn:ngm:class:wireframing", "label": "Wireframing"}
+      {
+        "@id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:mental-model",
+        "label": "Mental Model"
+      },
+      {
+        "@id": "urn:ngm:class:task-analysis",
+        "label": "Task Analysis"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:product-design", "label": "Product Design"},
-      {"@id": "urn:ngm:class:accessible-design", "label": "Accessible Design"},
-      {"@id": "urn:ngm:class:inclusive-design", "label": "Inclusive Design"},
-      {"@id": "urn:ngm:class:conversational-interface", "label": "Conversational Interface"}
+      {
+        "@id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      },
+      {
+        "@id": "urn:ngm:class:accessible-design",
+        "label": "Accessible Design"
+      },
+      {
+        "@id": "urn:ngm:class:inclusive-design",
+        "label": "Inclusive Design"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"},
-      {"@id": "urn:ngm:class:user-interface", "label": "User Interface"},
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"},
-      {"@id": "urn:ngm:class:usability-testing", "label": "Usability Testing"},
-      {"@id": "urn:ngm:class:design-system", "label": "Design System"}
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "@id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:usability-testing",
+        "label": "Usability Testing"
+      },
+      {
+        "@id": "urn:ngm:class:design-systems",
+        "label": "Design System"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-user-interface", "label": "Spatial User Interface"},
-      {"@id": "urn:ngm:class:natural-language-interface", "label": "Natural Language Interface"},
-      {"@id": "urn:ngm:class:multimodal-interaction", "label": "Multimodal Interaction"}
+      {
+        "@id": "urn:ngm:class:spatial-user-interfaces",
+        "label": "Spatial User Interface"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-interface",
+        "label": "Natural Language Interface"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-interaction",
+        "label": "Multimodal Interaction"
+      }
     ]
   },
   "quality": 0.74,

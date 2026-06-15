@@ -20,10 +20,6 @@
       {
         "id": "urn:ngm:class:zero-convolution",
         "label": "Zero Convolution"
-      },
-      {
-        "id": "urn:ngm:class:encoder-copy",
-        "label": "Encoder Copy"
       }
     ],
     "requires": [
@@ -50,17 +46,13 @@
         "label": "Text-to-Image"
       },
       {
-        "id": "urn:ngm:class:conditional-image-synthesis",
+        "id": "urn:ngm:class:image-synthesis",
         "label": "Conditional Image Synthesis"
-      },
-      {
-        "id": "urn:ngm:class:spatially-guided-generation",
-        "label": "Spatially Guided Generation"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:denoising-diffusion",
+        "id": "urn:ngm:class:diffusion-model",
         "label": "Denoising Diffusion"
       },
       {
@@ -115,7 +107,7 @@
         "label": "Classifier-Free Guidance"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       }
     ],
@@ -138,10 +130,6 @@
       {
         "id": "urn:ngm:class:semantic-segmentation",
         "label": "Semantic Segmentation"
-      },
-      {
-        "id": "urn:ngm:class:image-conditioning",
-        "label": "Image Conditioning"
       },
       {
         "id": "urn:ngm:class:adapter-tuning",

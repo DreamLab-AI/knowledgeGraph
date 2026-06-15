@@ -38,59 +38,151 @@ alias:: UserExperience
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:ux", "label": "UX"},
-    {"@id": "urn:ngm:class:end-user-experience", "label": "End User Experience"}
+    {
+      "@id": "urn:ngm:class:ux",
+      "label": "UX"
+    },
+    {
+      "@id": "urn:ngm:class:end-user-experience",
+      "label": "End User Experience"
+    }
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:product-design", "label": "Product Design"}
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:usability", "label": "Usability"},
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"},
-      {"@id": "urn:ngm:class:information-architecture", "label": "Information Architecture"},
-      {"@id": "urn:ngm:class:interaction-design", "label": "Interaction Design"},
-      {"@id": "urn:ngm:class:visual-design", "label": "Visual Design"}
+      {
+        "@id": "urn:ngm:class:usability",
+        "label": "Usability"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      },
+      {
+        "@id": "urn:ngm:class:visual-design",
+        "label": "Visual Design"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:user-research", "label": "User Research"},
-      {"@id": "urn:ngm:class:human-factors", "label": "Human Factors"},
-      {"@id": "urn:ngm:class:usability-testing", "label": "Usability Testing"},
-      {"@id": "urn:ngm:class:prototyping", "label": "Prototyping"}
+      {
+        "@id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
+        "@id": "urn:ngm:class:human-factors",
+        "label": "Human Factors"
+      },
+      {
+        "@id": "urn:ngm:class:usability-testing",
+        "label": "Usability Testing"
+      },
+      {
+        "@id": "urn:ngm:class:prototyping",
+        "label": "Prototyping"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:user-engagement", "label": "User Engagement"},
-      {"@id": "urn:ngm:class:digital-accessibility", "label": "Digital Accessibility"}
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:user-engagement",
+        "label": "User Engagement"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Digital Accessibility"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cognitive-load", "label": "Cognitive Load"},
-      {"@id": "urn:ngm:class:affordance", "label": "Affordance"},
-      {"@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop"}
+      {
+        "@id": "urn:ngm:class:cognitive-load",
+        "label": "Cognitive Load"
+      },
+      {
+        "@id": "urn:ngm:class:affordance",
+        "label": "Affordance"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:heuristic-evaluation", "label": "Heuristic Evaluation"},
-      {"@id": "urn:ngm:class:personas", "label": "Personas"},
-      {"@id": "urn:ngm:class:journey-mapping", "label": "Journey Mapping"}
+      {
+        "@id": "urn:ngm:class:heuristic-evaluation",
+        "label": "Heuristic Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:journey-mapping",
+        "label": "Journey Mapping"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-9241-210", "label": "ISO 9241-210"},
-      {"@id": "urn:ngm:class:wcag", "label": "WCAG"}
+      {
+        "@id": "urn:ngm:class:iso-9241-210",
+        "label": "ISO 9241-210"
+      },
+      {
+        "@id": "urn:ngm:class:wcag-2-2",
+        "label": "WCAG"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:usability", "label": "Usability"},
-      {"@id": "urn:ngm:class:customer-experience", "label": "Customer Experience"}
+      {
+        "@id": "urn:ngm:class:usability",
+        "label": "Usability"
+      },
+      {
+        "@id": "urn:ngm:class:customer-experience",
+        "label": "Customer Experience"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:affective-computing", "label": "Affective Computing"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:service-design", "label": "Service Design"},
-      {"@id": "urn:ngm:class:ergonomics", "label": "Ergonomics"},
-      {"@id": "urn:ngm:class:design-thinking", "label": "Design Thinking"}
+      {
+        "@id": "urn:ngm:class:service-design",
+        "label": "Service Design"
+      },
+      {
+        "@id": "urn:ngm:class:ergonomics",
+        "label": "Ergonomics"
+      },
+      {
+        "@id": "urn:ngm:class:design-thinking",
+        "label": "Design Thinking"
+      }
     ]
   },
   "quality": 0.72,

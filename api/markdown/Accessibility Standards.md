@@ -99,21 +99,13 @@ alias:: AccessibilityStandards
         "label": "Assistive Technology Integration"
       },
       {
-        "@id": "urn:ngm:class:multi-modal-interfaces",
-        "label": "Multi-Modal Interfaces"
-      },
-      {
-        "@id": "urn:ngm:class:voice-navigation",
-        "label": "Voice Navigation"
-      },
-      {
         "@id": "urn:ngm:class:eye-tracking",
         "label": "Eye Tracking"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:inclusive-virtual-experiences",
+        "@id": "urn:ngm:class:inclusive-xr-experience",
         "label": "Inclusive Virtual Experiences"
       },
       {
@@ -131,7 +123,7 @@ alias:: AccessibilityStandards
         "label": "W3C"
       },
       {
-        "@id": "urn:ngm:class:wcag",
+        "@id": "urn:ngm:class:wcag-2-2",
         "label": "WCAG"
       },
       {
@@ -141,11 +133,7 @@ alias:: AccessibilityStandards
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:design-standards",
-        "label": "Design Standards"
-      },
-      {
-        "@id": "urn:ngm:class:inclusive-design-principles",
+        "@id": "urn:ngm:class:inclusive-design",
         "label": "Inclusive Design Principles"
       }
     ],
@@ -175,7 +163,7 @@ alias:: AccessibilityStandards
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:proprietary-interface-standards",
+        "@id": "urn:ngm:class:interface-standards",
         "label": "Proprietary Interface Standards"
       }
     ]

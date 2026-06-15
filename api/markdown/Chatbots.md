@@ -398,11 +398,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:bertscore",
-        "label": "BERTScore"
-      },
-      {
-        "@id": "urn:ngm:class:bleu",
+        "@id": "urn:ngm:class:bleu-score",
         "label": "BLEU"
       },
       {
@@ -472,15 +468,15 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:iso-30401",
+        "@id": "urn:ngm:class:iso",
         "label": "ISO 30401"
       },
       {
-        "@id": "urn:ngm:class:model-context-protocol-specification",
+        "@id": "urn:ngm:class:model-context-protocol",
         "label": "Model Context Protocol Specification"
       },
       {
-        "@id": "urn:ngm:class:w3-c-voice-browser-working-group",
+        "@id": "urn:ngm:class:w3-c",
         "label": "W3C Voice Browser Working Group"
       }
     ]

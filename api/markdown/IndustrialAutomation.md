@@ -38,50 +38,131 @@ alias:: Industrial Automation
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:manufacturing-automation", "label": "Manufacturing Automation"},
-    {"@id": "urn:ngm:class:factory-automation", "label": "Factory Automation"}
+    {
+      "@id": "urn:ngm:class:manufacturing-automation",
+      "label": "Manufacturing Automation"
+    },
+    {
+      "@id": "urn:ngm:class:factory-automation",
+      "label": "Factory Automation"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:programmable-logic-controller", "label": "Programmable Logic Controller"},
-      {"@id": "urn:ngm:class:distributed-control-system", "label": "Distributed Control System"},
-      {"@id": "urn:ngm:class:scada", "label": "SCADA"},
-      {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"},
-      {"@id": "urn:ngm:class:machine-vision", "label": "Machine Vision"}
+      {
+        "@id": "urn:ngm:class:programmable-logic-controller",
+        "label": "Programmable Logic Controller"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-control-system",
+        "label": "Distributed Control System"
+      },
+      {
+        "@id": "urn:ngm:class:scada",
+        "label": "SCADA"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "@id": "urn:ngm:class:machine-vision",
+        "label": "Machine Vision"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:control-system", "label": "Control System"},
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:sensor", "label": "Sensor"},
-      {"@id": "urn:ngm:class:fieldbus", "label": "Fieldbus"},
-      {"@id": "urn:ngm:class:human-machine-interface", "label": "Human-Machine Interface"}
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:fieldbus",
+        "label": "Fieldbus"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interface",
+        "label": "Human-Machine Interface"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"},
-      {"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"},
-      {"@id": "urn:ngm:class:mass-production", "label": "Mass Production"},
-      {"@id": "urn:ngm:class:lights-out-manufacturing", "label": "Lights-Out Manufacturing"}
+      {
+        "@id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      },
+      {
+        "@id": "urn:ngm:class:mass-production",
+        "label": "Mass Production"
+      },
+      {
+        "@id": "urn:ngm:class:lights-out-manufacturing",
+        "label": "Lights-Out Manufacturing"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:real-time-operating-system", "label": "Real-Time Operating System"},
-      {"@id": "urn:ngm:class:industrial-ethernet", "label": "Industrial Ethernet"}
+      {
+        "@id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-ethernet",
+        "label": "Industrial Ethernet"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iec-61131", "label": "IEC 61131"},
-      {"@id": "urn:ngm:class:iec-62443", "label": "IEC 62443"},
-      {"@id": "urn:ngm:class:iso-10218", "label": "ISO 10218"}
+      {
+        "@id": "urn:ngm:class:iec-61131-3",
+        "label": "IEC 61131"
+      },
+      {
+        "@id": "urn:ngm:class:iec-62443",
+        "label": "IEC 62443"
+      },
+      {
+        "@id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"},
-      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:manual-manufacturing", "label": "Manual Manufacturing"}
+      {
+        "@id": "urn:ngm:class:manual-manufacturing",
+        "label": "Manual Manufacturing"
+      }
     ]
   },
   "quality": 0.74,

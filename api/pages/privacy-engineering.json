@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:privacy-threat-modelling",
+        "id": "urn:ngm:class:threat-modelling",
         "label": "Privacy Threat Modelling"
       },
       {
@@ -31,10 +31,6 @@
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:data-flow-analysis",
-        "label": "Data Flow Analysis"
-      },
       {
         "id": "urn:ngm:class:consent-management",
         "label": "Consent Management"
@@ -63,10 +59,6 @@
       {
         "id": "urn:ngm:class:nist-privacy-framework",
         "label": "NIST Privacy Framework"
-      },
-      {
-        "id": "urn:ngm:class:linddun",
-        "label": "LINDDUN"
       }
     ],
     "contrastsWith": [

@@ -37,11 +37,11 @@
         "label": "Identity Federation"
       },
       {
-        "id": "urn:ngm:class:chain-of-trust",
+        "id": "urn:ngm:class:trust",
         "label": "Chain of Trust"
       },
       {
-        "id": "urn:ngm:class:certificate-validation",
+        "id": "urn:ngm:class:x-509-certificate",
         "label": "Certificate Validation"
       },
       {
@@ -63,7 +63,7 @@
         "label": "Decentralized Identifier"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential",
+        "id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       },
       {
@@ -81,11 +81,11 @@
         "label": "Cryptographic Keys"
       },
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       },
       {
-        "id": "urn:ngm:class:x509-certificate",
+        "id": "urn:ngm:class:x-509-certificate",
         "label": "X.509 Certificate"
       }
     ],
@@ -119,7 +119,7 @@
         "label": "Cryptographic Verification"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {

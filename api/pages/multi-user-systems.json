@@ -26,10 +26,6 @@
         "label": "Avatar"
       },
       {
-        "id": "urn:ngm:class:authority-arbitration",
-        "label": "Authority Arbitration"
-      },
-      {
         "id": "urn:ngm:class:access-control",
         "label": "Access Control"
       }
@@ -62,7 +58,7 @@
         "label": "Mixed Reality Platform"
       },
       {
-        "id": "urn:ngm:class:collaborative-virtual-environment",
+        "id": "urn:ngm:class:virtual-environment",
         "label": "Collaborative Virtual Environment"
       },
       {
@@ -90,16 +86,11 @@
         "label": "Client-Server Architecture"
       },
       {
-        "id": "urn:ngm:class:peer-to-peer-networking",
+        "id": "urn:ngm:class:peer-to-peer-network",
         "label": "Peer-to-Peer Networking"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:single-user-application",
-        "label": "Single-User Application"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:cloud-computing",
@@ -128,10 +119,6 @@
       {
         "id": "urn:ngm:class:telepresence",
         "label": "Telepresence"
-      },
-      {
-        "id": "urn:ngm:class:collaborative-xr",
-        "label": "Collaborative XR"
       }
     ],
     "standardizedBy": [],

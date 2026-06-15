@@ -29,12 +29,8 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:efficiency-monitoring",
+        "id": "urn:ngm:class:monitoring",
         "label": "Efficiency Monitoring"
-      },
-      {
-        "id": "urn:ngm:class:overload-protection",
-        "label": "Overload Protection"
       },
       {
         "id": "urn:ngm:class:predictive-maintenance",

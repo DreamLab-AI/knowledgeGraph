@@ -22,10 +22,6 @@
         "label": "Forward Mode Differentiation"
       },
       {
-        "id": "urn:ngm:class:reverse-mode-differentiation",
-        "label": "Reverse Mode Differentiation"
-      },
-      {
         "id": "urn:ngm:class:computation-graph",
         "label": "Computation Graph"
       }
@@ -34,10 +30,6 @@
       {
         "id": "urn:ngm:class:chain-rule",
         "label": "Chain Rule"
-      },
-      {
-        "id": "urn:ngm:class:elementary-arithmetic-operation",
-        "label": "Elementary Arithmetic Operation"
       }
     ],
     "enables": [
@@ -64,16 +56,7 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:symbolic-differentiation",
-        "label": "Symbolic Differentiation"
-      },
-      {
-        "id": "urn:ngm:class:numerical-differentiation",
-        "label": "Numerical Differentiation"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:differentiable-rendering",
@@ -90,12 +73,8 @@
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:machine-learning-framework",
+        "id": "urn:ngm:class:machine-learning-discipline-framework",
         "label": "Machine Learning Framework"
-      },
-      {
-        "id": "urn:ngm:class:vectorised-jacobian-product",
-        "label": "Vectorised Jacobian Product"
       }
     ],
     "supports": [
@@ -132,7 +111,7 @@
         "label": "Just-In-Time Compilation"
       },
       {
-        "id": "urn:ngm:class:numerical-method",
+        "id": "urn:ngm:class:numerical-methods",
         "label": "Numerical Method"
       }
     ]

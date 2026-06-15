@@ -24,56 +24,92 @@ public:: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:programming-language", "label": "Programming Language"}
+    {
+      "@id": "urn:ngm:class:programming-language",
+      "label": "Programming Language"
+    }
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:java", "label": "Java"},
-      {"@id": "urn:ngm:class:jvm-runtime", "label": "JVM Runtime"},
-      {"@id": "urn:ngm:class:gradle", "label": "Gradle"},
-      {"@id": "urn:ngm:class:jetbrains", "label": "JetBrains"},
-      {"@id": "urn:ngm:class:android-development", "label": "Android Development"},
-      {"@id": "urn:ngm:class:functional-programming", "label": "Functional Programming"}
+      {
+        "@id": "urn:ngm:class:java",
+        "label": "Java"
+      },
+      {
+        "@id": "urn:ngm:class:jvm-runtime",
+        "label": "JVM Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:gradle",
+        "label": "Gradle"
+      },
+      {
+        "@id": "urn:ngm:class:programming-language",
+        "label": "Functional Programming"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:compiler", "label": "Compiler"},
-      {"@id": "urn:ngm:class:llvm", "label": "LLVM"},
-      {"@id": "urn:ngm:class:type-system", "label": "Type System"},
-      {"@id": "urn:ngm:class:coroutines", "label": "Coroutines"}
+      {
+        "@id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      },
+      {
+        "@id": "urn:ngm:class:type-system",
+        "label": "Type System"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cross-platform-compatibility", "label": "Cross-Platform Compatibility"},
-      {"@id": "urn:ngm:class:null-safety", "label": "Null Safety"},
-      {"@id": "urn:ngm:class:structured-concurrency", "label": "Structured Concurrency"},
-      {"@id": "urn:ngm:class:server-side-development", "label": "Server-Side Development"}
+      {
+        "@id": "urn:ngm:class:cross-platform-compatibility",
+        "label": "Cross-Platform Compatibility"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:jvm-runtime", "label": "JVM Runtime"},
-      {"@id": "urn:ngm:class:build-system", "label": "Build System"}
+      {
+        "@id": "urn:ngm:class:jvm-runtime",
+        "label": "JVM Runtime"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:object-oriented-programming", "label": "Object-Oriented Programming"},
-      {"@id": "urn:ngm:class:static-typing", "label": "Static Typing"}
+      {
+        "@id": "urn:ngm:class:static-typing",
+        "label": "Static Typing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:java", "label": "Java"},
-      {"@id": "urn:ngm:class:scala", "label": "Scala"},
-      {"@id": "urn:ngm:class:swift", "label": "Swift"}
+      {
+        "@id": "urn:ngm:class:java",
+        "label": "Java"
+      },
+      {
+        "@id": "urn:ngm:class:swift",
+        "label": "Swift"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:multiplatform-development", "label": "Multiplatform Development"},
-      {"@id": "urn:ngm:class:mobile-development", "label": "Mobile Development"},
-      {"@id": "urn:ngm:class:webassembly", "label": "WebAssembly"}
+      {
+        "@id": "urn:ngm:class:webassembly",
+        "label": "WebAssembly"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:kotlin-programming-language", "label": "Kotlin Programming Language"}
+    {
+      "@id": "urn:ngm:class:kotlin-programming-language",
+      "label": "Kotlin Programming Language"
+    }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

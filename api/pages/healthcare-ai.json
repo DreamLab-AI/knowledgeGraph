@@ -23,15 +23,11 @@
         "label": "Electronic Health Records"
       },
       {
-        "id": "urn:ngm:class:health-data-governance",
-        "label": "Health Data Governance"
-      },
-      {
         "id": "urn:ngm:class:data-privacy",
         "label": "Data Privacy"
       },
       {
-        "id": "urn:ngm:class:model-explainability",
+        "id": "urn:ngm:class:explainability",
         "label": "Model Explainability"
       }
     ],
@@ -49,19 +45,11 @@
         "label": "Precision Medicine"
       },
       {
-        "id": "urn:ngm:class:genomic-analysis",
-        "label": "Genomic Analysis"
-      },
-      {
         "id": "urn:ngm:class:patient-risk-stratification",
         "label": "Patient Risk Stratification"
       }
     ],
     "dependsOn": [
-      {
-        "id": "urn:ngm:class:health-data-interoperability",
-        "label": "Health Data Interoperability"
-      },
       {
         "id": "urn:ngm:class:differential-privacy",
         "label": "Differential Privacy"
@@ -70,11 +58,11 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:traditional-clinical-decision-support",
+        "id": "urn:ngm:class:clinical-decision-support",
         "label": "Traditional Clinical Decision Support"
       },
       {
-        "id": "urn:ngm:class:rule-based-expert-systems",
+        "id": "urn:ngm:class:expert-systems",
         "label": "Rule-Based Expert Systems"
       }
     ],
@@ -82,10 +70,6 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
-      },
-      {
-        "id": "urn:ngm:class:blockchain-health-data",
-        "label": "Blockchain Health Data"
       }
     ],
     "uses": [
@@ -116,14 +100,6 @@
     ],
     "supports": [],
     "standardizedBy": [
-      {
-        "id": "urn:ngm:class:fda-samd-regulation",
-        "label": "FDA SaMD Regulation"
-      },
-      {
-        "id": "urn:ngm:class:eu-mdr",
-        "label": "EU MDR"
-      },
       {
         "id": "urn:ngm:class:hl7-fhir",
         "label": "HL7 FHIR"

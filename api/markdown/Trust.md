@@ -23,58 +23,147 @@ public:: true
   "definition": "Trust is a cognitive, relational, and institutional disposition in which an agent accepts vulnerability to the actions of another party based on a positive expectation that the trusted party will act competently, honestly, and benevolently toward the trusting party's interests. In sociotechnical and AI contexts, trust extends beyond interpersonal relationships to encompass institutional trust in organisations, systems trust in technological artefacts, and algorithmic trust in AI decision-making processes. Trust is simultaneously a psychological state, a social institution, and a design property of engineered systems; its calibration — whether systems are trusted appropriately, excessively, or insufficiently — carries profound implications for human welfare, democratic function, and the responsible deployment of AI. Across distributed and decentralised architectures, trust is increasingly operationalised via cryptographic attestation, verifiable credentials, and reputation mechanisms that replace reliance on a single central authority.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:social-contract", "label": "Social Contract"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:social-contract",
+      "label": "Social Contract"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:trust-and-safety", "label": "Trust and Safety"},
-      {"@id": "urn:ngm:class:trust-architecture", "label": "Trust Architecture"},
-      {"@id": "urn:ngm:class:ai-trustworthiness", "label": "AI Trustworthiness"},
-      {"@id": "urn:ngm:class:reputation", "label": "Reputation"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
-      {"@id": "urn:ngm:class:legitimacy", "label": "Legitimacy"}
+      {
+        "@id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      },
+      {
+        "@id": "urn:ngm:class:trust-architecture",
+        "label": "Trust Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:ai-trustworthiness",
+        "label": "AI Trustworthiness"
+      },
+      {
+        "@id": "urn:ngm:class:reputation-system",
+        "label": "Reputation"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:legitimacy",
+        "label": "Legitimacy"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:trust-establishment", "label": "Trust Establishment"},
-      {"@id": "urn:ngm:class:trust-infrastructure", "label": "Trust Infrastructure"},
-      {"@id": "urn:ngm:class:trust-score-metric", "label": "Trust Score Metric"},
-      {"@id": "urn:ngm:class:delegation", "label": "Delegation"},
-      {"@id": "urn:ngm:class:cooperation", "label": "Cooperation"}
+      {
+        "@id": "urn:ngm:class:trust-establishment",
+        "label": "Trust Establishment"
+      },
+      {
+        "@id": "urn:ngm:class:trust-infrastructure",
+        "label": "Trust Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:trust-score-metric",
+        "label": "Trust Score Metric"
+      },
+      {
+        "@id": "urn:ngm:class:delegation",
+        "label": "Delegation"
+      },
+      {
+        "@id": "urn:ngm:class:cooperation",
+        "label": "Cooperation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:trust-in-automation", "label": "Trust in Automation"},
-      {"@id": "urn:ngm:class:ai-trust-risk-and-security-management", "label": "AI Trust Risk and Security Management"},
-      {"@id": "urn:ngm:class:trust-over-ip-foundation", "label": "Trust Over IP Foundation"},
-      {"@id": "urn:ngm:class:governance", "label": "Governance"},
-      {"@id": "urn:ngm:class:human-ai-collaboration", "label": "Human-AI Collaboration"}
+      {
+        "@id": "urn:ngm:class:trust-in-automation",
+        "label": "Trust in Automation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-trust-risk-and-security-management",
+        "label": "AI Trust Risk and Security Management"
+      },
+      {
+        "@id": "urn:ngm:class:trust-over-ip-foundation",
+        "label": "Trust Over IP Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
-      {"@id": "urn:ngm:class:verifiability", "label": "Verifiability"},
-      {"@id": "urn:ngm:class:integrity", "label": "Integrity"}
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:identity", "label": "Identity"},
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"}
+      {
+        "@id": "urn:ngm:class:identity",
+        "label": "Identity"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:distrust", "label": "Distrust"},
-      {"@id": "urn:ngm:class:automation-bias", "label": "Automation Bias"},
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"}
+      {
+        "@id": "urn:ngm:class:automation-bias",
+        "label": "Automation Bias"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"},
-      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO IEC 42001"},
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"}
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:trustworthiness", "label": "Trustworthiness"},
-    {"@id": "urn:ngm:class:reliance", "label": "Reliance"}
+    {
+      "@id": "urn:ngm:class:trustworthiness",
+      "label": "Trustworthiness"
+    },
+    {
+      "@id": "urn:ngm:class:reliance",
+      "label": "Reliance"
+    }
   ],
   "quality": 0.74,
   "provenance": {

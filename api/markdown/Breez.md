@@ -87,27 +87,15 @@ public:: true
       {
         "@id": "urn:ngm:class:non-custodial-wallet",
         "label": "Non-Custodial Wallet"
-      },
-      {
-        "@id": "urn:ngm:class:mobile-bitcoin-wallet",
-        "label": "Mobile Bitcoin Wallet"
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:lnurl",
-        "label": "LNURL"
-      },
-      {
-        "@id": "urn:ngm:class:greenlight",
-        "label": "Greenlight"
-      },
       {
         "@id": "urn:ngm:class:bolt11",
         "label": "BOLT11"
       },
       {
-        "@id": "urn:ngm:class:bolt12",
+        "@id": "urn:ngm:class:bolt12-offers",
         "label": "BOLT12"
       },
       {
@@ -119,20 +107,6 @@ public:: true
       {
         "@id": "urn:ngm:class:lightning-service-provider",
         "label": "Lightning Service Provider"
-      },
-      {
-        "@id": "urn:ngm:class:just-in-time-liquidity",
-        "label": "Just-In-Time Liquidity"
-      }
-    ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:breez-sdk",
-        "label": "Breez SDK"
-      },
-      {
-        "@id": "urn:ngm:class:breez-wallet",
-        "label": "Breez Wallet"
       }
     ],
     "dependsOn": [
@@ -141,7 +115,7 @@ public:: true
         "label": "Lightning Network"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-blockchain",
+        "@id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin Blockchain"
       }
     ],
@@ -153,10 +127,6 @@ public:: true
       {
         "@id": "urn:ngm:class:strike",
         "label": "Strike"
-      },
-      {
-        "@id": "urn:ngm:class:muun-wallet",
-        "label": "Muun Wallet"
       }
     ],
     "relatedTo": [
@@ -167,14 +137,6 @@ public:: true
       {
         "@id": "urn:ngm:class:lnd",
         "label": "LND"
-      },
-      {
-        "@id": "urn:ngm:class:cln",
-        "label": "Core Lightning"
-      },
-      {
-        "@id": "urn:ngm:class:bitcoin-lightning-wallet",
-        "label": "Bitcoin Lightning Wallet"
       }
     ],
     "bridgesTo": [

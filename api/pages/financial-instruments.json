@@ -81,16 +81,7 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:real-assets",
-        "label": "Real Assets"
-      },
-      {
-        "id": "urn:ngm:class:intangible-assets",
-        "label": "Intangible Assets"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:tokenization",

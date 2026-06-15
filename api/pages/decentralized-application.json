@@ -22,10 +22,6 @@
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:wallet-connector",
-        "label": "Wallet Connector"
-      },
-      {
         "id": "urn:ngm:class:oracle",
         "label": "Oracle"
       }
@@ -36,7 +32,7 @@
         "label": "Blockchain Network"
       },
       {
-        "id": "urn:ngm:class:cryptographic-wallet",
+        "id": "urn:ngm:class:wallet",
         "label": "Cryptographic Wallet"
       },
       {
@@ -94,10 +90,6 @@
       {
         "id": "urn:ngm:class:centralized-application",
         "label": "Centralized Application"
-      },
-      {
-        "id": "urn:ngm:class:traditional-web-application",
-        "label": "Traditional Web Application"
       }
     ],
     "bridgesTo": [

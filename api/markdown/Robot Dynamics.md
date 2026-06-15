@@ -49,47 +49,113 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"},
-      {"@id": "urn:ngm:class:rigid-body-mechanics", "label": "Rigid Body Mechanics"},
-      {"@id": "urn:ngm:class:inertia-tensor", "label": "Inertia Tensor"},
-      {"@id": "urn:ngm:class:differential-equations", "label": "Differential Equations"}
+      {
+        "@id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Mechanics"
+      },
+      {
+        "@id": "urn:ngm:class:inertia-tensor",
+        "label": "Inertia Tensor"
+      },
+      {
+        "@id": "urn:ngm:class:differential-equations",
+        "label": "Differential Equations"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"},
-      {"@id": "urn:ngm:class:trajectory-optimisation", "label": "Trajectory Optimisation"},
-      {"@id": "urn:ngm:class:robot-simulation", "label": "Robot Simulation"},
-      {"@id": "urn:ngm:class:whole-body-control", "label": "Whole Body Control"}
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory-optimisation",
+        "label": "Trajectory Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:robot-simulation",
+        "label": "Robot Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:whole-body-control",
+        "label": "Whole Body Control"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:forward-dynamics", "label": "Forward Dynamics"},
-      {"@id": "urn:ngm:class:inverse-dynamics", "label": "Inverse Dynamics"},
-      {"@id": "urn:ngm:class:lagrangian-mechanics", "label": "Lagrangian Mechanics"},
-      {"@id": "urn:ngm:class:newton-euler-algorithm", "label": "Newton-Euler Algorithm"}
+      {
+        "@id": "urn:ngm:class:dynamics",
+        "label": "Forward Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:newton-euler-dynamics",
+        "label": "Newton-Euler Algorithm"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:denavit-hartenberg-parameters", "label": "Denavit-Hartenberg Parameters"},
-      {"@id": "urn:ngm:class:spatial-algebra", "label": "Spatial Algebra"},
-      {"@id": "urn:ngm:class:jacobian-matrix", "label": "Jacobian Matrix"}
+      {
+        "@id": "urn:ngm:class:denavit-hartenberg-parameters",
+        "label": "Denavit-Hartenberg Parameters"
+      },
+      {
+        "@id": "urn:ngm:class:jacobian-matrix",
+        "label": "Jacobian Matrix"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:legged-locomotion", "label": "Legged Locomotion"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:compliant-actuation", "label": "Compliant Actuation"}
+      {
+        "@id": "urn:ngm:class:legged-locomotion",
+        "label": "Legged Locomotion"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:compliant-actuation",
+        "label": "Compliant Actuation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:robot-safety", "label": "Robot Safety"},
-      {"@id": "urn:ngm:class:state-estimation", "label": "State Estimation"},
-      {"@id": "urn:ngm:class:optimal-control", "label": "Optimal Control"},
-      {"@id": "urn:ngm:class:contact-mechanics", "label": "Contact Mechanics"}
+      {
+        "@id": "urn:ngm:class:robot-safety",
+        "label": "Robot Safety"
+      },
+      {
+        "@id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      },
+      {
+        "@id": "urn:ngm:class:contact-mechanics",
+        "label": "Contact Mechanics"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:multibody-dynamics", "label": "Multibody Dynamics"}
+    {
+      "@id": "urn:ngm:class:multibody-dynamics",
+      "label": "Multibody Dynamics"
+    }
   ],
   "quality": 0.72,
   "provenance": {

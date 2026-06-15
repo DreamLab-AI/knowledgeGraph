@@ -22,10 +22,6 @@
         "label": "Vertex Processing"
       },
       {
-        "id": "urn:ngm:class:fragment-processing",
-        "label": "Fragment Processing"
-      },
-      {
         "id": "urn:ngm:class:compute-shader",
         "label": "Compute Shader"
       }
@@ -42,10 +38,6 @@
       {
         "id": "urn:ngm:class:shader",
         "label": "Shader"
-      },
-      {
-        "id": "urn:ngm:class:graphics-memory",
-        "label": "Graphics Memory"
       }
     ],
     "enables": [

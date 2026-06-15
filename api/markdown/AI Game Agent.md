@@ -168,7 +168,7 @@ public:: true
         "label": "Decision Engine"
       },
       {
-        "@id": "urn:ngm:class:pathfinding-system",
+        "@id": "urn:ngm:class:pathfinding",
         "label": "Pathfinding System"
       },
       {
@@ -177,10 +177,6 @@ public:: true
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:game-state",
-        "label": "Game State"
-      },
       {
         "@id": "urn:ngm:class:navigation-mesh",
         "label": "Navigation Mesh"
@@ -192,14 +188,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:adaptive-challenge",
-        "label": "Adaptive Challenge"
-      },
-      {
-        "@id": "urn:ngm:class:dynamic-gameplay",
-        "label": "Dynamic Gameplay"
-      },
-      {
         "@id": "urn:ngm:class:emergent-behavior",
         "label": "Emergent Behavior"
       },
@@ -209,14 +197,6 @@ public:: true
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:adaptive-difficulty",
-        "label": "Adaptive Difficulty"
-      },
-      {
-        "@id": "urn:ngm:class:procedural-behavior",
-        "label": "Procedural Behavior"
-      },
       {
         "@id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"

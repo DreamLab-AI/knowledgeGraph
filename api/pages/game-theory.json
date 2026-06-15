@@ -28,17 +28,9 @@
       {
         "id": "urn:ngm:class:cooperative-game-theory",
         "label": "Cooperative Game Theory"
-      },
-      {
-        "id": "urn:ngm:class:evolutionary-game-theory",
-        "label": "Evolutionary Game Theory"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:rational-agency",
-        "label": "Rational Agency"
-      },
       {
         "id": "urn:ngm:class:utility-theory",
         "label": "Utility Theory"
@@ -115,7 +107,7 @@
         "label": "Agent-Based Modelling"
       },
       {
-        "id": "urn:ngm:class:information-economics",
+        "id": "urn:ngm:class:economics",
         "label": "Information Economics"
       },
       {

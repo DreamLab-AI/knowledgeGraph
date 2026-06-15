@@ -48,60 +48,155 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
-      {"@id": "urn:ngm:class:middleware", "label": "Middleware"},
-      {"@id": "urn:ngm:class:message-broker", "label": "Message Broker"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:service-mesh", "label": "Service Mesh"}
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      },
+      {
+        "@id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:api-design", "label": "API Design"},
-      {"@id": "urn:ngm:class:identity-federation", "label": "Identity Federation"},
-      {"@id": "urn:ngm:class:data-serialisation", "label": "Data Serialisation"}
+      {
+        "@id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      },
+      {
+        "@id": "urn:ngm:class:identity-federation",
+        "label": "Identity Federation"
+      },
+      {
+        "@id": "urn:ngm:class:data-serialisation",
+        "label": "Data Serialisation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:composable-architecture", "label": "Composable Architecture"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:composable-architecture",
+        "label": "Composable Architecture"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
-      {"@id": "urn:ngm:class:security-policy", "label": "Security Policy"}
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:security-policy",
+        "label": "Security Policy"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
-      {"@id": "urn:ngm:class:service-oriented-architecture", "label": "Service Oriented Architecture"},
-      {"@id": "urn:ngm:class:microservices", "label": "Microservices"}
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service Oriented Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
-      {"@id": "urn:ngm:class:graphql", "label": "GraphQL"},
-      {"@id": "urn:ngm:class:grpc", "label": "gRPC"},
-      {"@id": "urn:ngm:class:apache-kafka", "label": "Apache Kafka"}
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:graphql",
+        "label": "GraphQL"
+      },
+      {
+        "@id": "urn:ngm:class:grpc",
+        "label": "gRPC"
+      },
+      {
+        "@id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:open-api-specification", "label": "OpenAPI Specification"},
-      {"@id": "urn:ngm:class:asyncapi", "label": "AsyncAPI"}
+      {
+        "@id": "urn:ngm:class:open-api-specification",
+        "label": "OpenAPI Specification"
+      },
+      {
+        "@id": "urn:ngm:class:asyncapi",
+        "label": "AsyncAPI"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:monolithic-architecture", "label": "Monolithic Architecture"},
-      {"@id": "urn:ngm:class:point-to-point-integration", "label": "Point To Point Integration"}
+      {
+        "@id": "urn:ngm:class:monolithic-architecture",
+        "label": "Monolithic Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:point-to-point-integration",
+        "label": "Point To Point Integration"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-orchestration", "label": "AI Orchestration"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:supply-chain-visibility", "label": "Supply Chain Visibility"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-visibility",
+        "label": "Supply Chain Visibility"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:enterprise-architecture", "label": "Enterprise Architecture"},
-      {"@id": "urn:ngm:class:devops", "label": "DevOps"},
-      {"@id": "urn:ngm:class:observability", "label": "Observability"}
+      {
+        "@id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:application-integration", "label": "Application Integration"},
-    {"@id": "urn:ngm:class:enterprise-application-integration", "label": "Enterprise Application Integration"}
+    {
+      "@id": "urn:ngm:class:application-integration",
+      "label": "Application Integration"
+    },
+    {
+      "@id": "urn:ngm:class:enterprise-application-integration",
+      "label": "Enterprise Application Integration"
+    }
   ],
   "quality": 0.74,
   "provenance": {

@@ -95,10 +95,6 @@ public:: true
       {
         "@id": "urn:ngm:class:out-of-distribution-detection",
         "label": "Out-of-Distribution Detection"
-      },
-      {
-        "@id": "urn:ngm:class:calibrated-predictions",
-        "label": "Calibrated Predictions"
       }
     ],
     "uses": [
@@ -107,23 +103,11 @@ public:: true
         "label": "Variational Inference"
       },
       {
-        "@id": "urn:ngm:class:monte-carlo-dropout",
-        "label": "Monte Carlo Dropout"
-      },
-      {
         "@id": "urn:ngm:class:markov-chain-monte-carlo",
         "label": "Markov Chain Monte Carlo"
-      },
-      {
-        "@id": "urn:ngm:class:deep-ensembles",
-        "label": "Deep Ensembles"
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:probabilistic-machine-learning",
-        "label": "Probabilistic Machine Learning"
-      },
       {
         "@id": "urn:ngm:class:posterior-approximation",
         "label": "Posterior Approximation"
@@ -131,22 +115,8 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:safe-ai",
-        "label": "Safe AI"
-      },
-      {
         "@id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:frequentist-deep-learning",
-        "label": "Frequentist Deep Learning"
-      },
-      {
-        "@id": "urn:ngm:class:deterministic-neural-network",
-        "label": "Deterministic Neural Network"
       }
     ],
     "relatedTo": [
@@ -167,10 +137,6 @@ public:: true
       {
         "@id": "urn:ngm:class:robotics",
         "label": "Robotics"
-      },
-      {
-        "@id": "urn:ngm:class:ai",
-        "label": "AI"
       }
     ]
   },

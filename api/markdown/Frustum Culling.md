@@ -23,48 +23,99 @@ public:: true
   "definition": "Frustum culling is a real-time rendering visibility optimisation technique that discards scene objects whose bounding volumes lie entirely outside the camera's view frustum—the truncated pyramid defined by the near and far clipping planes and the four side planes corresponding to the viewport edges. By testing object bounding spheres or axis-aligned bounding boxes against the six frustum planes before submitting draw calls, the GPU receives only geometry that could potentially contribute to the final image, dramatically reducing vertex processing and rasterisation work. It is a foundational stage in all production scene management pipelines.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:rendering-technique", "label": "Rendering Technique"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:rendering-technique",
+      "label": "Rendering Technique"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:scene-optimization", "label": "Scene Optimization"},
-      {"@id": "urn:ngm:class:performance-optimization", "label": "Performance Optimization"},
-      {"@id": "urn:ngm:class:gpu-driven-rendering", "label": "GPU-Driven Rendering"},
-      {"@id": "urn:ngm:class:draw-call-batching", "label": "Draw Call Batching"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:scene-optimization",
+        "label": "Scene Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-driven-rendering",
+        "label": "GPU-Driven Rendering"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:view-projection-matrix", "label": "View-Projection Matrix"},
-      {"@id": "urn:ngm:class:bounding-volume", "label": "Bounding Volume"},
-      {"@id": "urn:ngm:class:camera-model", "label": "Camera Model"}
+      {
+        "@id": "urn:ngm:class:bounding-volume",
+        "label": "Bounding Volume"
+      },
+      {
+        "@id": "urn:ngm:class:camera-model",
+        "label": "Camera Model"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:scene-graph", "label": "Scene Graph"},
-      {"@id": "urn:ngm:class:bounding-volume-hierarchy", "label": "Bounding Volume Hierarchy"},
-      {"@id": "urn:ngm:class:octree", "label": "Octree"},
-      {"@id": "urn:ngm:class:axis-aligned-bounding-box", "label": "Axis-Aligned Bounding Box"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:plane-intersection-test", "label": "Plane Intersection Test"},
-      {"@id": "urn:ngm:class:sphere-frustum-test", "label": "Sphere-Frustum Test"}
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "@id": "urn:ngm:class:bounding-volume-hierarchy",
+        "label": "Bounding Volume Hierarchy"
+      },
+      {
+        "@id": "urn:ngm:class:octree-spatial-index",
+        "label": "Octree"
+      },
+      {
+        "@id": "urn:ngm:class:bounding-volume",
+        "label": "Axis-Aligned Bounding Box"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:occlusion-culling", "label": "Occlusion Culling"},
-      {"@id": "urn:ngm:class:backface-culling", "label": "Backface Culling"},
-      {"@id": "urn:ngm:class:portal-culling", "label": "Portal Culling"}
+      {
+        "@id": "urn:ngm:class:occlusion-culling",
+        "label": "Occlusion Culling"
+      },
+      {
+        "@id": "urn:ngm:class:portal-culling",
+        "label": "Portal Culling"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:level-of-detail", "label": "Level of Detail"},
-      {"@id": "urn:ngm:class:scene-management", "label": "Scene Management"},
-      {"@id": "urn:ngm:class:clipping", "label": "Clipping"},
-      {"@id": "urn:ngm:class:spatial-indexing", "label": "Spatial Indexing"}
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "@id": "urn:ngm:class:scene-management",
+        "label": "Scene Management"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-index",
+        "label": "Spatial Indexing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:view-frustum-culling", "label": "View Frustum Culling"}
+    {
+      "@id": "urn:ngm:class:view-frustum-culling",
+      "label": "View Frustum Culling"
+    }
   ],
   "quality": 0.72,
   "provenance": {

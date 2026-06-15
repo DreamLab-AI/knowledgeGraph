@@ -594,16 +594,8 @@ public:: true
         "label": "Graph Query Language"
       },
       {
-        "@id": "urn:ngm:class:node-storage",
-        "label": "Node Storage"
-      },
-      {
         "@id": "urn:ngm:class:query-optimiser",
         "label": "Query Optimiser"
-      },
-      {
-        "@id": "urn:ngm:class:relationship-indexing",
-        "label": "Relationship Indexing"
       },
       {
         "@id": "urn:ngm:class:storage-engine",
@@ -614,17 +606,13 @@ public:: true
         "label": "Transaction Manager"
       },
       {
-        "@id": "urn:ngm:class:traversal-engine",
-        "label": "Traversal Engine"
-      },
-      {
         "@id": "urn:ngm:class:property-schema",
         "label": "Property Schema"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:indexing-algorithm",
+        "@id": "urn:ngm:class:algorithm",
         "label": "Indexing Algorithm"
       },
       {
@@ -688,11 +676,7 @@ public:: true
         "label": "Cypher Query Language"
       },
       {
-        "@id": "urn:ngm:class:gql-standard",
-        "label": "GQL Standard"
-      },
-      {
-        "@id": "urn:ngm:class:graph-traversal-algorithm",
+        "@id": "urn:ngm:class:graph-algorithms",
         "label": "Graph Traversal Algorithm"
       },
       {
@@ -782,7 +766,7 @@ public:: true
         "label": "Anti-Money Laundering"
       },
       {
-        "@id": "urn:ngm:class:cybersecurity-analytics",
+        "@id": "urn:ngm:class:cybersecurity",
         "label": "Cybersecurity Analytics"
       },
       {
@@ -816,7 +800,7 @@ public:: true
         "label": "Apache TinkerPop"
       },
       {
-        "@id": "urn:ngm:class:iso-iec-39075-2024-gql",
+        "@id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC 39075:2024 GQL"
       },
       {
@@ -828,7 +812,7 @@ public:: true
         "label": "W3C RDF 1.1"
       },
       {
-        "@id": "urn:ngm:class:w3-c-shacl",
+        "@id": "urn:ngm:class:w3-c",
         "label": "W3C SHACL"
       },
       {

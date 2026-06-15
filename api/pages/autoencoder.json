@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:encoder-network",
+        "id": "urn:ngm:class:encoder",
         "label": "Encoder Network"
       },
       {
@@ -26,15 +26,11 @@
         "label": "Decoder Network"
       },
       {
-        "id": "urn:ngm:class:latent-space",
+        "id": "urn:ngm:class:neural-network-latent-space",
         "label": "Latent Space"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:reconstruction-loss",
-        "label": "Reconstruction Loss"
-      },
       {
         "id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
@@ -50,10 +46,6 @@
         "label": "Dimensionality Reduction"
       },
       {
-        "id": "urn:ngm:class:data-denoising",
-        "label": "Data Denoising"
-      },
-      {
         "id": "urn:ngm:class:representation-learning",
         "label": "Representation Learning"
       }
@@ -61,7 +53,7 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:nonlinear-dimensionality-reduction",
+        "id": "urn:ngm:class:dimensionality-reduction",
         "label": "Nonlinear Dimensionality Reduction"
       }
     ],

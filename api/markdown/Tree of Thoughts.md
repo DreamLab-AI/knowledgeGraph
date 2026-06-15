@@ -37,50 +37,111 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:tot-prompting", "label": "ToT Prompting"},
-    {"@id": "urn:ngm:class:tree-search-prompting", "label": "Tree Search Prompting"}
+    {
+      "@id": "urn:ngm:class:tot-prompting",
+      "label": "ToT Prompting"
+    },
+    {
+      "@id": "urn:ngm:class:tree-search-prompting",
+      "label": "Tree Search Prompting"
+    }
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:inference-time-compute", "label": "Inference-Time Compute"},
-      {"@id": "urn:ngm:class:deliberate-reasoning", "label": "Deliberate Reasoning"}
+      {
+        "@id": "urn:ngm:class:inference-time-compute",
+        "label": "Inference-Time Compute"
+      },
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Deliberate Reasoning"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:thought-generator", "label": "Thought Generator"},
-      {"@id": "urn:ngm:class:thought-evaluator", "label": "Thought Evaluator"},
-      {"@id": "urn:ngm:class:tree-search-algorithm", "label": "Tree Search Algorithm"}
+      {
+        "@id": "urn:ngm:class:search-algorithm",
+        "label": "Tree Search Algorithm"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:mathematical-reasoning", "label": "Mathematical Reasoning"},
-      {"@id": "urn:ngm:class:automated-planning", "label": "Automated Planning"},
-      {"@id": "urn:ngm:class:combinatorial-problem-solving", "label": "Combinatorial Problem Solving"},
-      {"@id": "urn:ngm:class:multi-step-reasoning", "label": "Multi-Step Reasoning"}
+      {
+        "@id": "urn:ngm:class:mathematical-reasoning",
+        "label": "Mathematical Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      },
+      {
+        "@id": "urn:ngm:class:multi-step-reasoning",
+        "label": "Multi-Step Reasoning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:breadth-first-search", "label": "Breadth-First Search"},
-      {"@id": "urn:ngm:class:depth-first-search", "label": "Depth-First Search"},
-      {"@id": "urn:ngm:class:beam-search", "label": "Beam Search"},
-      {"@id": "urn:ngm:class:backtracking", "label": "Backtracking"}
+      {
+        "@id": "urn:ngm:class:breadth-first-search",
+        "label": "Breadth-First Search"
+      },
+      {
+        "@id": "urn:ngm:class:depth-first-search",
+        "label": "Depth-First Search"
+      },
+      {
+        "@id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:chain-of-thought", "label": "Chain of Thought"},
-      {"@id": "urn:ngm:class:self-consistency", "label": "Self-Consistency"},
-      {"@id": "urn:ngm:class:react-prompting", "label": "ReAct Prompting"}
+      {
+        "@id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "@id": "urn:ngm:class:self-consistency",
+        "label": "Self-Consistency"
+      },
+      {
+        "@id": "urn:ngm:class:react-prompting",
+        "label": "ReAct Prompting"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:monte-carlo-tree-search", "label": "Monte Carlo Tree Search"},
-      {"@id": "urn:ngm:class:process-reward-model", "label": "Process Reward Model"},
-      {"@id": "urn:ngm:class:speculative-decoding", "label": "Speculative Decoding"},
-      {"@id": "urn:ngm:class:graph-of-thoughts", "label": "Graph of Thoughts"},
-      {"@id": "urn:ngm:class:skeleton-of-thought", "label": "Skeleton of Thought"}
+      {
+        "@id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      },
+      {
+        "@id": "urn:ngm:class:process-reward-model",
+        "label": "Process Reward Model"
+      },
+      {
+        "@id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      },
+      {
+        "@id": "urn:ngm:class:graph-of-thoughts",
+        "label": "Graph of Thoughts"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:heuristic-search", "label": "Heuristic Search"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:heuristic-search",
+        "label": "Heuristic Search"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
     ]
   },
   "quality": 0.74,

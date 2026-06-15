@@ -100,7 +100,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:leverage-trading",
+        "@id": "urn:ngm:class:leveraged-trading",
         "label": "Leverage Trading"
       },
       {

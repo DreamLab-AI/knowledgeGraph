@@ -28,12 +28,8 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:message-schema",
+        "id": "urn:ngm:class:message-format",
         "label": "Message Schema"
-      },
-      {
-        "id": "urn:ngm:class:role-specification",
-        "label": "Role Specification"
       },
       {
         "id": "urn:ngm:class:network-transport",
@@ -50,7 +46,7 @@
         "label": "Distributed Transaction"
       },
       {
-        "id": "urn:ngm:class:replicated-state-machine",
+        "id": "urn:ngm:class:state-machine-replication",
         "label": "Replicated State Machine"
       }
     ],
@@ -84,13 +80,13 @@
         "label": "Consensus Protocol"
       },
       {
-        "id": "urn:ngm:class:data-serialization-format",
+        "id": "urn:ngm:class:serialisation-format",
         "label": "Data Serialisation Format"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:llm-agent-framework",
+        "id": "urn:ngm:class:llm-application-framework",
         "label": "LLM Agent Framework"
       },
       {
@@ -120,10 +116,6 @@
       {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
-      },
-      {
-        "id": "urn:ngm:class:deadlock-freedom",
-        "label": "Deadlock Freedom"
       }
     ],
     "standardizedBy": [
@@ -138,10 +130,6 @@
     ],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:process-algebra",
-        "label": "Process Algebra"
-      },
       {
         "id": "urn:ngm:class:raft-consensus",
         "label": "RAFT Consensus"

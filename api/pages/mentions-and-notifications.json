@@ -20,7 +20,7 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:attention-management",
+        "id": "urn:ngm:class:attention",
         "label": "Attention Management"
       }
     ],

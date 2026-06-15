@@ -21,10 +21,6 @@
       {
         "id": "urn:ngm:class:randomness",
         "label": "Randomness"
-      },
-      {
-        "id": "urn:ngm:class:cryptographic-assumption",
-        "label": "Cryptographic Assumption"
       }
     ],
     "enables": [
@@ -78,10 +74,6 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
-      },
-      {
-        "id": "urn:ngm:class:blockchain-data-availability",
-        "label": "Blockchain Data Availability"
       }
     ],
     "uses": [
@@ -112,12 +104,8 @@
         "label": "zkSTARK"
       },
       {
-        "id": "urn:ngm:class:threshold-signature",
+        "id": "urn:ngm:class:threshold-signature-scheme",
         "label": "Threshold Signature"
-      },
-      {
-        "id": "urn:ngm:class:commit-reveal-pattern",
-        "label": "Commit-Reveal Pattern"
       }
     ],
     "standardizedBy": [],

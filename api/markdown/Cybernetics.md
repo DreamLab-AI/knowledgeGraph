@@ -23,52 +23,135 @@ public:: true
   "definition": "Cybernetics is the transdisciplinary science of regulatory systems, feedback mechanisms, and goal-directed behaviour in animals, machines, and organisations, founded by Norbert Wiener in 1948 to provide a unified framework for understanding how systems use information to maintain stability and achieve purposes across biological, mechanical, and social domains. It centres on the study of circular causal processes — feedback loops — through which a system compares its actual state against a desired state and acts to reduce the discrepancy, extending naturally to concepts of information, communication, control, and self-organisation. Second-order cybernetics extends this to include the observer as a participant in the system being observed, influencing systems theory, cognitive science, constructivism, and AI.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:control-theory", "label": "Control Theory"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:control-theory",
+      "label": "Control Theory"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop"},
-      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
-      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"},
-      {"@id": "urn:ngm:class:information-theory", "label": "Information Theory"}
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:adaptive-control", "label": "Adaptive Control"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:brain-computer-interfaces", "label": "Brain Computer Interfaces"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:self-organisation", "label": "Self Organisation"}
+      {
+        "@id": "urn:ngm:class:adaptive-control",
+        "label": "Adaptive Control"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:brain-computer-interfaces",
+        "label": "Brain Computer Interfaces"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:self-organisation",
+        "label": "Self Organisation"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:negative-feedback", "label": "Negative Feedback"},
-      {"@id": "urn:ngm:class:positive-feedback", "label": "Positive Feedback"},
-      {"@id": "urn:ngm:class:homeostasis", "label": "Homeostasis"}
+      {
+        "@id": "urn:ngm:class:negative-feedback",
+        "label": "Negative Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:positive-feedback",
+        "label": "Positive Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:homeostasis",
+        "label": "Homeostasis"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:systems-theory", "label": "Systems Theory"},
-      {"@id": "urn:ngm:class:information-theory", "label": "Information Theory"}
+      {
+        "@id": "urn:ngm:class:systems-theory",
+        "label": "Systems Theory"
+      },
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:autonomous-systems", "label": "Autonomous Systems"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:open-loop-control", "label": "Open Loop Control"}
+      {
+        "@id": "urn:ngm:class:open-loop-control",
+        "label": "Open Loop Control"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:cognitive-science", "label": "Cognitive Science"},
-      {"@id": "urn:ngm:class:governance", "label": "Governance"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cognitive-science", "label": "Cognitive Science"},
-      {"@id": "urn:ngm:class:emergence", "label": "Emergence"},
-      {"@id": "urn:ngm:class:complex-adaptive-systems", "label": "Complex Adaptive Systems"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "@id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      },
+      {
+        "@id": "urn:ngm:class:complex-adaptive-systems",
+        "label": "Complex Adaptive Systems"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:regulatory-systems-science", "label": "Regulatory Systems Science"}
+    {
+      "@id": "urn:ngm:class:regulatory-systems-science",
+      "label": "Regulatory Systems Science"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -466,14 +466,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:attention-score",
-        "label": "Attention Score"
-      },
-      {
-        "@id": "urn:ngm:class:key",
-        "label": "Key"
-      },
-      {
         "@id": "urn:ngm:class:datalog-knowledge-graph-query-language",
         "label": "Datalog Knowledge Graph Query Language"
       },
@@ -538,7 +530,7 @@ public:: true
         "label": "Large Language Models"
       },
       {
-        "@id": "urn:ngm:class:long-context-window",
+        "@id": "urn:ngm:class:context-window",
         "label": "Long Context Window"
       },
       {
@@ -556,33 +548,13 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:content-based-addressing",
+        "@id": "urn:ngm:class:content-addressing",
         "label": "Content-Based Addressing"
-      },
-      {
-        "@id": "urn:ngm:class:differentiable-lookup",
-        "label": "Differentiable Lookup"
-      },
-      {
-        "@id": "urn:ngm:class:permutation-equivariance",
-        "label": "Permutation Equivariance"
-      },
-      {
-        "@id": "urn:ngm:class:soft-alignment",
-        "label": "Soft Alignment"
-      },
-      {
-        "@id": "urn:ngm:class:weighted-aggregation",
-        "label": "Weighted Aggregation"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:causal-mask",
-        "label": "Causal Mask"
-      },
-      {
-        "@id": "urn:ngm:class:flash-attention-kernel",
+        "@id": "urn:ngm:class:flash-attention",
         "label": "FlashAttention Kernel"
       },
       {
@@ -594,12 +566,8 @@ public:: true
         "label": "Rotary Position Embedding"
       },
       {
-        "@id": "urn:ngm:class:scaled-dot-product",
+        "@id": "urn:ngm:class:scaled-dot-product-attention",
         "label": "Scaled Dot Product"
-      },
-      {
-        "@id": "urn:ngm:class:sliding-window",
-        "label": "Sliding Window"
       },
       {
         "@id": "urn:ngm:class:multi-head-attention",
@@ -607,18 +575,6 @@ public:: true
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:memory-augmented-neural-network",
-        "label": "Memory-Augmented Neural Network"
-      },
-      {
-        "@id": "urn:ngm:class:neural-turing-machine",
-        "label": "Neural Turing Machine"
-      },
-      {
-        "@id": "urn:ngm:class:pointer-network",
-        "label": "Pointer Network"
-      },
       {
         "@id": "urn:ngm:class:graph-neural-network",
         "label": "Graph Neural Network"
@@ -678,10 +634,6 @@ public:: true
       {
         "@id": "urn:ngm:class:onnx-operator-set",
         "label": "ONNX Operator Set"
-      },
-      {
-        "@id": "urn:ngm:class:openai-research-organisation-triton",
-        "label": "OpenAI Triton"
       }
     ]
   },

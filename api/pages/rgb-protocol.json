@@ -70,11 +70,11 @@
         "label": "Taproot Assets"
       },
       {
-        "id": "urn:ngm:class:ethereum-smart-contract",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-smart-contracts",
         "label": "Ethereum Smart Contract"
       },
       {
-        "id": "urn:ngm:class:ordinals-protocol",
+        "id": "urn:ngm:class:ordinals",
         "label": "Ordinals Protocol"
       },
       {
@@ -110,12 +110,8 @@
         "label": "Cryptographic Commitment"
       },
       {
-        "id": "urn:ngm:class:single-use-seal",
+        "id": "urn:ngm:class:single-use-seals",
         "label": "Single-Use Seal"
-      },
-      {
-        "id": "urn:ngm:class:aluvm",
-        "label": "AluVM"
       }
     ],
     "supports": [],
@@ -127,11 +123,7 @@
         "label": "RGB and Client Side Validation"
       },
       {
-        "id": "urn:ngm:class:coloured-coins",
-        "label": "Coloured Coins"
-      },
-      {
-        "id": "urn:ngm:class:lnp-bp-association",
+        "id": "urn:ngm:class:lnp-bp-standards-association",
         "label": "LNP/BP Association"
       },
       {

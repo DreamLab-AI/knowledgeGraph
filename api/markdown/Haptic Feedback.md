@@ -149,10 +149,6 @@ alias:: HapticFeedback
       {
         "@id": "urn:ngm:class:force-feedback",
         "label": "Force Feedback"
-      },
-      {
-        "@id": "urn:ngm:class:vibrotactile-feedback",
-        "label": "Vibrotactile Feedback"
       }
     ],
     "partOf": [
@@ -167,25 +163,17 @@ alias:: HapticFeedback
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:embedded-actuator",
-        "label": "Embedded Actuator"
-      },
-      {
         "@id": "urn:ngm:class:real-time-signal-processing",
         "label": "Real-Time Signal Processing"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:touch-simulation",
-        "label": "Touch Simulation"
-      },
-      {
         "@id": "urn:ngm:class:immersive-presence",
         "label": "Immersive Presence"
       },
       {
-        "@id": "urn:ngm:class:remote-robotic-control",
+        "@id": "urn:ngm:class:robotic-control",
         "label": "Remote Robotic Control"
       }
     ],
@@ -205,7 +193,7 @@ alias:: HapticFeedback
         "label": "Tactile Actuator"
       },
       {
-        "@id": "urn:ngm:class:wearable-haptics",
+        "@id": "urn:ngm:class:haptics",
         "label": "Wearable Haptics"
       }
     ],
@@ -221,10 +209,6 @@ alias:: HapticFeedback
       {
         "@id": "urn:ngm:class:surgical-simulation",
         "label": "Surgical Simulation"
-      },
-      {
-        "@id": "urn:ngm:class:accessibility-interface",
-        "label": "Accessibility Interface"
       }
     ],
     "standardizedBy": [
@@ -241,10 +225,6 @@ alias:: HapticFeedback
       {
         "@id": "urn:ngm:class:visual-feedback",
         "label": "Visual Feedback"
-      },
-      {
-        "@id": "urn:ngm:class:audio-feedback",
-        "label": "Audio Feedback"
       }
     ],
     "bridgesTo": [

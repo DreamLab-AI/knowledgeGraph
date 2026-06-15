@@ -112,14 +112,6 @@ public:: true
       {
         "@id": "urn:ngm:class:traversal-algorithm",
         "label": "Traversal Algorithm"
-      },
-      {
-        "@id": "urn:ngm:class:tree-construction",
-        "label": "Tree Construction"
-      },
-      {
-        "@id": "urn:ngm:class:axis-aligned-bounding-box",
-        "label": "Axis-Aligned Bounding Box"
       }
     ],
     "enables": [
@@ -190,7 +182,7 @@ public:: true
         "label": "KD-Tree"
       },
       {
-        "@id": "urn:ngm:class:octree",
+        "@id": "urn:ngm:class:octree-spatial-index",
         "label": "Octree"
       },
       {

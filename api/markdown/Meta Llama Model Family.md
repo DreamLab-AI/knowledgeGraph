@@ -84,26 +84,8 @@ elevatedFrom:: [[Llama]]
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:llama-1",
-        "label": "LLaMA 1"
-      },
-      {
-        "@id": "urn:ngm:class:llama-2",
-        "label": "Llama 2"
-      },
-      {
-        "@id": "urn:ngm:class:llama-3",
+        "@id": "urn:ngm:class:meta-llama-model-family-3",
         "label": "Llama 3"
-      },
-      {
-        "@id": "urn:ngm:class:llama-guard",
-        "label": "Llama Guard"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:open-source-ai-ecosystem",
-        "label": "Open-Source AI Ecosystem"
       }
     ],
     "enables": [
@@ -121,10 +103,6 @@ elevatedFrom:: [[Llama]]
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:decoder-only-transformer-architecture",
-        "label": "Decoder-Only Transformer Architecture"
-      },
       {
         "@id": "urn:ngm:class:rotary-position-embedding",
         "label": "Rotary Position Embedding"
@@ -150,11 +128,11 @@ elevatedFrom:: [[Llama]]
         "label": "GPT 4"
       },
       {
-        "@id": "urn:ngm:class:gemini-model-family",
+        "@id": "urn:ngm:class:google-ai-technology-corporation-gemini",
         "label": "Gemini Model Family"
       },
       {
-        "@id": "urn:ngm:class:mistral-model-family",
+        "@id": "urn:ngm:class:mistral-ai-open-weight-model-family",
         "label": "Mistral Model Family"
       }
     ],
@@ -162,17 +140,9 @@ elevatedFrom:: [[Llama]]
       {
         "@id": "urn:ngm:class:microsoft-copilot",
         "label": "Microsoft Copilot"
-      },
-      {
-        "@id": "urn:ngm:class:spatial-ai-inference",
-        "label": "Spatial AI Inference"
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:open-weights-model",
-        "label": "Open Weights Model"
-      },
       {
         "@id": "urn:ngm:class:parameter-efficient-fine-tuning",
         "label": "Parameter-Efficient Fine-Tuning"

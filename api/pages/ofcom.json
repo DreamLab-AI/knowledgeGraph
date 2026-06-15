@@ -48,10 +48,6 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:online-safety-regime",
-        "label": "Online Safety Regime"
-      },
-      {
         "id": "urn:ngm:class:age-verification",
         "label": "Age Verification"
       }
@@ -85,10 +81,6 @@
       {
         "id": "urn:ngm:class:data-protection",
         "label": "Data Protection"
-      },
-      {
-        "id": "urn:ngm:class:media-plurality",
-        "label": "Media Plurality"
       }
     ],
     "standardizedBy": [
@@ -99,10 +91,6 @@
       {
         "id": "urn:ngm:class:compliance-framework",
         "label": "Compliance Framework"
-      },
-      {
-        "id": "urn:ngm:class:communications-act-2003",
-        "label": "Communications Act 2003"
       }
     ],
     "partOf": [],
@@ -128,16 +116,8 @@
         "label": "Spectrum Management"
       },
       {
-        "id": "urn:ngm:class:broadcasting-regulation",
-        "label": "Broadcasting Regulation"
-      },
-      {
         "id": "urn:ngm:class:net-neutrality",
         "label": "Net Neutrality"
-      },
-      {
-        "id": "urn:ngm:class:information-commissioner-office",
-        "label": "Information Commissioner's Office"
       }
     ]
   },

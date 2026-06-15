@@ -26,7 +26,7 @@
         "label": "Avatar"
       },
       {
-        "id": "urn:ngm:class:3d-scene-graph",
+        "id": "urn:ngm:class:scene-graph",
         "label": "3D Scene Graph"
       },
       {
@@ -64,10 +64,6 @@
       {
         "id": "urn:ngm:class:virtual-collaboration",
         "label": "Virtual Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:spatial-simulation",
-        "label": "Spatial Simulation"
       }
     ],
     "dependsOn": [
@@ -82,10 +78,6 @@
     ],
     "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:physical-environment",
-        "label": "Physical Environment"
-      },
       {
         "id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
@@ -130,10 +122,6 @@
       {
         "id": "urn:ngm:class:metaverse",
         "label": "Metaverse"
-      },
-      {
-        "id": "urn:ngm:class:xr-ecosystem",
-        "label": "XR Ecosystem"
       }
     ],
     "relatedTo": [

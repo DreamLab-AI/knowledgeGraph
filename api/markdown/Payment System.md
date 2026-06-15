@@ -48,47 +48,111 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:payment-gateway", "label": "Payment Gateway"},
-      {"@id": "urn:ngm:class:clearing-and-settlement", "label": "Clearing and Settlement"},
-      {"@id": "urn:ngm:class:digital-wallet", "label": "Digital Wallet"}
+      {
+        "@id": "urn:ngm:class:payment-gateway",
+        "label": "Payment Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:clearing-and-settlement",
+        "label": "Clearing and Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"},
-      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"},
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}
+      {
+        "@id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:e-commerce", "label": "E-Commerce"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:microtransaction", "label": "Microtransaction"}
+      {
+        "@id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-20022", "label": "ISO 20022"},
-      {"@id": "urn:ngm:class:pci-dss", "label": "PCI DSS"},
-      {"@id": "urn:ngm:class:swift-network", "label": "SWIFT Network"}
+      {
+        "@id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      },
+      {
+        "@id": "urn:ngm:class:pci-dss",
+        "label": "PCI DSS"
+      },
+      {
+        "@id": "urn:ngm:class:swift",
+        "label": "SWIFT Network"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:barter-system", "label": "Barter System"},
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"}
+      {
+        "@id": "urn:ngm:class:barter-system",
+        "label": "Barter System"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
-      {"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"}
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
-      {"@id": "urn:ngm:class:ai-driven-finance", "label": "AI-Driven Finance"}
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:payments-infrastructure", "label": "Payments Infrastructure"},
-    {"@id": "urn:ngm:class:value-transfer-network", "label": "Value Transfer Network"}
+    {
+      "@id": "urn:ngm:class:payments-infrastructure",
+      "label": "Payments Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:value-transfer-network",
+      "label": "Value Transfer Network"
+    }
   ],
   "quality": 0.74,
   "provenance": {

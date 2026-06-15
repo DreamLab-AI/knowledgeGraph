@@ -34,10 +34,6 @@
       {
         "id": "urn:ngm:class:memory-encryption",
         "label": "Memory Encryption"
-      },
-      {
-        "id": "urn:ngm:class:processor-security-extensions",
-        "label": "Processor Security Extensions"
       }
     ],
     "enables": [
@@ -64,7 +60,7 @@
         "label": "AMD SEV"
       },
       {
-        "id": "urn:ngm:class:arm-trustzone",
+        "id": "urn:ngm:class:arm-trust-zone",
         "label": "ARM TrustZone"
       }
     ],
@@ -75,10 +71,6 @@
       }
     ],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:full-disk-encryption",
-        "label": "Full Disk Encryption"
-      },
       {
         "id": "urn:ngm:class:transport-layer-security",
         "label": "Transport Layer Security"

@@ -38,57 +38,147 @@ public:: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:digital-identity-wallet", "label": "Digital Identity Wallet"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"},
-      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"},
-      {"@id": "urn:ngm:class:did-resolver", "label": "DID Resolver"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "@id": "urn:ngm:class:did-resolver",
+        "label": "DID Resolver"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:did-document", "label": "DID Document"},
-      {"@id": "urn:ngm:class:did-method", "label": "DID Method"},
-      {"@id": "urn:ngm:class:verification-method", "label": "Verification Method"},
-      {"@id": "urn:ngm:class:service-endpoint", "label": "Service Endpoint"}
+      {
+        "@id": "urn:ngm:class:did-document",
+        "label": "DID Document"
+      },
+      {
+        "@id": "urn:ngm:class:did-method",
+        "label": "DID Method"
+      },
+      {
+        "@id": "urn:ngm:class:verification-method",
+        "label": "Verification Method"
+      },
+      {
+        "@id": "urn:ngm:class:service-endpoint",
+        "label": "Service Endpoint"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:uri-scheme", "label": "URI Scheme"}
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:uri-scheme",
+        "label": "URI Scheme"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"}
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:credential-exchange", "label": "Credential Exchange"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+      {
+        "@id": "urn:ngm:class:credential-exchange",
+        "label": "Credential Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:world-wide-web-consortium", "label": "World Wide Web Consortium"}
+      {
+        "@id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:x-509-certificate", "label": "X.509 Certificate"},
-      {"@id": "urn:ngm:class:oauth2", "label": "OAuth2"},
-      {"@id": "urn:ngm:class:openid-connect", "label": "OpenID Connect"}
+      {
+        "@id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:oauth2",
+        "label": "OAuth2"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:ai-agent-identity", "label": "AI Agent Identity"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent-identity",
+        "label": "AI Agent Identity"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:sidetree-protocol", "label": "Sidetree Protocol"},
-      {"@id": "urn:ngm:class:linked-data-proofs", "label": "Linked Data Proofs"}
+      {
+        "@id": "urn:ngm:class:sidetree-protocol",
+        "label": "Sidetree Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data-proofs",
+        "label": "Linked Data Proofs"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:decentralised-identifiers", "label": "Decentralised Identifiers"},
-    {"@id": "urn:ngm:class:did-specification", "label": "DID Specification"}
+    {
+      "@id": "urn:ngm:class:decentralised-identifiers",
+      "label": "Decentralised Identifiers"
+    },
+    {
+      "@id": "urn:ngm:class:did-specification",
+      "label": "DID Specification"
+    }
   ],
   "quality": 0.76,
   "provenance": {

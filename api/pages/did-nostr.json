@@ -28,7 +28,7 @@
         "label": "Single Sign-On"
       },
       {
-        "id": "urn:ngm:class:w3c-verifiable-credentials",
+        "id": "urn:ngm:class:w3-c-verifiable-credentials",
         "label": "W3C Verifiable Credentials"
       },
       {
@@ -44,7 +44,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:w3c-did-core",
+        "id": "urn:ngm:class:w3-c-did-core",
         "label": "W3C DID Core"
       },
       {

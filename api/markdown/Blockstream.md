@@ -65,14 +65,6 @@ public:: true
       {
         "@id": "urn:ngm:class:core-lightning",
         "label": "Core Lightning"
-      },
-      {
-        "@id": "urn:ngm:class:blockstream-satellite",
-        "label": "Blockstream Satellite"
-      },
-      {
-        "@id": "urn:ngm:class:blockstream-amp",
-        "label": "Blockstream AMP"
       }
     ],
     "requires": [
@@ -97,15 +89,11 @@ public:: true
       {
         "@id": "urn:ngm:class:confidential-transactions",
         "label": "Confidential Transactions"
-      },
-      {
-        "@id": "urn:ngm:class:federated-peg",
-        "label": "Federated Peg"
       }
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:bitcoin-core",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
         "label": "Bitcoin Core"
       },
       {
@@ -143,7 +131,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:bitcoin-core",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
         "label": "Bitcoin Core"
       },
       {
@@ -157,7 +145,7 @@ public:: true
         "label": "Ethereum"
       },
       {
-        "@id": "urn:ngm:class:ethereum-virtual-machine",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       }
     ],

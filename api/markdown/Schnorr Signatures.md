@@ -95,7 +95,7 @@ public:: true
         "label": "Key Aggregation"
       },
       {
-        "@id": "urn:ngm:class:threshold-signature",
+        "@id": "urn:ngm:class:threshold-signature-scheme",
         "label": "Threshold Signature"
       },
       {
@@ -145,12 +145,8 @@ public:: true
         "label": "Zero-Knowledge Proof"
       },
       {
-        "@id": "urn:ngm:class:public-key-cryptography",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
-      },
-      {
-        "@id": "urn:ngm:class:non-interactive-zero-knowledge",
-        "label": "Non-Interactive Zero-Knowledge"
       }
     ],
     "bridgesTo": [

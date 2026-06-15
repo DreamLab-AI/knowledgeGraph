@@ -66,7 +66,7 @@
         "label": "User Engagement"
       },
       {
-        "id": "urn:ngm:class:digital-accessibility",
+        "id": "urn:ngm:class:accessibility",
         "label": "Digital Accessibility"
       }
     ],
@@ -115,10 +115,6 @@
         "label": "Heuristic Evaluation"
       },
       {
-        "id": "urn:ngm:class:personas",
-        "label": "Personas"
-      },
-      {
         "id": "urn:ngm:class:journey-mapping",
         "label": "Journey Mapping"
       }
@@ -130,7 +126,7 @@
         "label": "ISO 9241-210"
       },
       {
-        "id": "urn:ngm:class:wcag",
+        "id": "urn:ngm:class:wcag-2-2",
         "label": "WCAG"
       }
     ],

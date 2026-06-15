@@ -104,10 +104,6 @@ public:: true
         "label": "Audit Mechanism"
       },
       {
-        "@id": "urn:ngm:class:stakeholder-communication",
-        "label": "Stakeholder Communication"
-      },
-      {
         "@id": "urn:ngm:class:documentation-standards",
         "label": "Documentation Standards"
       }

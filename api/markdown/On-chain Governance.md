@@ -38,53 +38,139 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:timelock-controller", "label": "Timelock Controller"},
-      {"@id": "urn:ngm:class:vote-delegation", "label": "Vote Delegation"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:timelock-controller",
+        "label": "Timelock Controller"
+      },
+      {
+        "@id": "urn:ngm:class:vote-delegation",
+        "label": "Vote Delegation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
-      {"@id": "urn:ngm:class:voting-mechanism", "label": "Voting Mechanism"},
-      {"@id": "urn:ngm:class:protocol-upgrade", "label": "Protocol Upgrade"},
-      {"@id": "urn:ngm:class:treasury-management", "label": "Treasury Management"},
-      {"@id": "urn:ngm:class:parameter-governance", "label": "Parameter Governance"}
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      },
+      {
+        "@id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      },
+      {
+        "@id": "urn:ngm:class:parameter-governance",
+        "label": "Parameter Governance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:quorum", "label": "Quorum"}
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"},
-      {"@id": "urn:ngm:class:voting-power", "label": "Voting Power"}
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "@id": "urn:ngm:class:voting-power",
+        "label": "Voting Power"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"}
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:off-chain-governance", "label": "Off-chain Governance"},
-      {"@id": "urn:ngm:class:plutocracy", "label": "Plutocracy"},
-      {"@id": "urn:ngm:class:centralised-governance", "label": "Centralised Governance"}
+      {
+        "@id": "urn:ngm:class:off-chain-governance",
+        "label": "Off-chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:plutocracy",
+        "label": "Plutocracy"
+      },
+      {
+        "@id": "urn:ngm:class:centralised-governance",
+        "label": "Centralised Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:open-zeppelin-governor", "label": "OpenZeppelin Governor"},
-      {"@id": "urn:ngm:class:proposal-system", "label": "Proposal System"},
-      {"@id": "urn:ngm:class:quadratic-voting", "label": "Quadratic Voting"},
-      {"@id": "urn:ngm:class:conviction-voting", "label": "Conviction Voting"},
-      {"@id": "urn:ngm:class:tezos", "label": "Tezos"},
-      {"@id": "urn:ngm:class:polkadot", "label": "Polkadot"},
-      {"@id": "urn:ngm:class:cosmos-governance", "label": "Cosmos Governance"}
+      {
+        "@id": "urn:ngm:class:open-zeppelin-governor",
+        "label": "OpenZeppelin Governor"
+      },
+      {
+        "@id": "urn:ngm:class:proposal-system",
+        "label": "Proposal System"
+      },
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "@id": "urn:ngm:class:conviction-voting",
+        "label": "Conviction Voting"
+      },
+      {
+        "@id": "urn:ngm:class:tezos",
+        "label": "Tezos"
+      },
+      {
+        "@id": "urn:ngm:class:polkadot",
+        "label": "Polkadot"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"},
-      {"@id": "urn:ngm:class:collective-intelligence", "label": "Collective Intelligence"},
-      {"@id": "urn:ngm:class:multi-stakeholder-governance", "label": "Multi-stakeholder Governance"}
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "@id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:multi-stakeholder-governance",
+        "label": "Multi-stakeholder Governance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:protocol-governance", "label": "Protocol Governance"},
-    {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+    {
+      "@id": "urn:ngm:class:protocol-governance",
+      "label": "Protocol Governance"
+    },
+    {
+      "@id": "urn:ngm:class:blockchain-governance",
+      "label": "Blockchain Governance"
+    }
   ],
   "quality": 0.72,
   "provenance": {

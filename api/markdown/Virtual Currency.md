@@ -50,7 +50,7 @@ alias:: VirtualCurrency
   "definition": "A digital representation of value issued and controlled by platform developers, used and accepted electronically within a specific virtual community. Virtual currencies include closed in-game currencies (e.g., World of Warcraft gold), hybrid purchasable tokens (e.g., Robux), and convertible currencies exchangeable for fiat money, each with distinct regulatory and economic implications.",
   "domain": "finance",
   "maturity": "emerging",
-  "qualityScore": 0.70,
+  "qualityScore": 0.7,
   "subClassOf": {
     "@id": "urn:ngm:class:digital-asset",
     "label": "Digital Asset"
@@ -71,20 +71,6 @@ alias:: VirtualCurrency
     "inferenceRule": "RelationEnrichment"
   },
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:closed-loop-currency",
-        "label": "Closed Loop Currency"
-      },
-      {
-        "@id": "urn:ngm:class:convertible-virtual-currency",
-        "label": "Convertible Virtual Currency"
-      },
-      {
-        "@id": "urn:ngm:class:non-convertible-virtual-currency",
-        "label": "Non-Convertible Virtual Currency"
-      }
-    ],
     "partOf": [
       {
         "@id": "urn:ngm:class:virtual-economy",
@@ -111,11 +97,7 @@ alias:: VirtualCurrency
         "label": "Cross Metaverse Commerce"
       },
       {
-        "@id": "urn:ngm:class:microtransaction",
-        "label": "Microtransaction"
-      },
-      {
-        "@id": "urn:ngm:class:play-to-earn",
+        "@id": "urn:ngm:class:play-to-earn-p2-e",
         "label": "Play To Earn"
       }
     ],
@@ -140,10 +122,6 @@ alias:: VirtualCurrency
       }
     ],
     "supports": [
-      {
-        "@id": "urn:ngm:class:virtual-goods",
-        "label": "Virtual Goods"
-      },
       {
         "@id": "urn:ngm:class:digital-commerce",
         "label": "Digital Commerce"

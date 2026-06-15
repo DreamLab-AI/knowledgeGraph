@@ -238,7 +238,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:acp-access-control-policy",
+        "@id": "urn:ngm:class:access-control-policy",
         "label": "ACP Access Control Policy"
       },
       {
@@ -246,11 +246,11 @@ public:: true
         "label": "LDP Container"
       },
       {
-        "@id": "urn:ngm:class:rdf-resource",
+        "@id": "urn:ngm:class:rdf",
         "label": "RDF Resource"
       },
       {
-        "@id": "urn:ngm:class:wac-access-control-list",
+        "@id": "urn:ngm:class:access-control",
         "label": "WAC Access Control List"
       },
       {
@@ -268,7 +268,7 @@ public:: true
         "label": "RDF Data Model"
       },
       {
-        "@id": "urn:ngm:class:turtle-serialisation",
+        "@id": "urn:ngm:class:turtle",
         "label": "Turtle Serialisation"
       },
       {
@@ -278,10 +278,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:agent-personalisation",
-        "label": "Agent Personalisation"
-      },
-      {
         "@id": "urn:ngm:class:data-sovereignty",
         "label": "Data Sovereignty"
       },
@@ -290,7 +286,7 @@ public:: true
         "label": "Decentralised Identity"
       },
       {
-        "@id": "urn:ngm:class:interoperable-personal-data",
+        "@id": "urn:ngm:class:personal-data-store",
         "label": "Interoperable Personal Data"
       }
     ],
@@ -300,21 +296,21 @@ public:: true
         "label": "W3C Linked Data Platform"
       },
       {
-        "@id": "urn:ngm:class:w3-c-solid-protocol",
+        "@id": "urn:ngm:class:solid",
         "label": "W3C Solid Protocol"
       },
       {
-        "@id": "urn:ngm:class:w3-c-web-access-control",
+        "@id": "urn:ngm:class:web-access-control",
         "label": "W3C Web Access Control"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:decentralised-web-stack",
+        "@id": "urn:ngm:class:decentralised-web",
         "label": "Decentralised Web Stack"
       },
       {
-        "@id": "urn:ngm:class:solid-ecosystem",
+        "@id": "urn:ngm:class:solid",
         "label": "Solid Ecosystem"
       }
     ]

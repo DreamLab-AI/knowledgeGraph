@@ -94,7 +94,7 @@
         "label": "MLOps"
       },
       {
-        "id": "urn:ngm:class:continuous-integration-and-delivery",
+        "id": "urn:ngm:class:continuous-integration",
         "label": "Continuous Integration and Delivery"
       }
     ],

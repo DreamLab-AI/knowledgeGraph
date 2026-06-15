@@ -30,11 +30,7 @@
         "label": "Privileged Access Management"
       },
       {
-        "id": "urn:ngm:class:identity-governance-and-administration",
-        "label": "Identity Governance and Administration"
-      },
-      {
-        "id": "urn:ngm:class:directory-services",
+        "id": "urn:ngm:class:directory-service",
         "label": "Directory Services"
       }
     ],
@@ -44,7 +40,7 @@
         "label": "Cryptography"
       },
       {
-        "id": "urn:ngm:class:digital-certificates",
+        "id": "urn:ngm:class:digital-certificate",
         "label": "Digital Certificates"
       }
     ],
@@ -107,7 +103,7 @@
         "label": "OAuth 2.0"
       },
       {
-        "id": "urn:ngm:class:openid-connect",
+        "id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
       },
       {
@@ -123,7 +119,7 @@
         "label": "Multi-Factor Authentication"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],

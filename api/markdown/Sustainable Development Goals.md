@@ -23,62 +23,95 @@ public:: true
   "definition": "The Sustainable Development Goals (SDGs) are a set of 17 interlinked global goals adopted by all United Nations member states in 2015 as part of the 2030 Agenda for Sustainable Development, spanning the elimination of poverty, zero hunger, quality education, gender equality, clean energy, decent work, reduced inequalities, climate action, and partnerships for implementation. Each goal is operationalised through targets and indicators that define measurable progress benchmarks, providing a shared framework for national governments, international organisations, civil society, and the private sector to align strategies and report progress. The SDGs extend and deepen the Millennium Development Goals, recognising that sustainable development requires integrated action across social, economic, and environmental dimensions simultaneously.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:sustainable-development", "label": "Sustainable Development"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sustainable-development",
+      "label": "Sustainable Development"
+    }
+  ],
   "relations": {
-    "hasPart": [
-      {"@id": "urn:ngm:class:sdg-targets-and-indicators", "label": "SDG Targets and Indicators"},
-      {"@id": "urn:ngm:class:voluntary-national-reviews", "label": "Voluntary National Reviews"},
-      {"@id": "urn:ngm:class:high-level-political-forum", "label": "High-Level Political Forum"}
-    ],
-    "partOf": [
-      {"@id": "urn:ngm:class:2030-agenda-for-sustainable-development", "label": "2030 Agenda for Sustainable Development"},
-      {"@id": "urn:ngm:class:un-global-governance-framework", "label": "UN Global Governance Framework"}
-    ],
     "requires": [
-      {"@id": "urn:ngm:class:sustainability-reporting", "label": "SustainabilityReporting"},
-      {"@id": "urn:ngm:class:environmental-sustainability", "label": "Environmental Sustainability"},
-      {"@id": "urn:ngm:class:multilateral-cooperation", "label": "Multilateral Cooperation"},
-      {"@id": "urn:ngm:class:official-development-assistance", "label": "Official Development Assistance"}
+      {
+        "@id": "urn:ngm:class:sustainability-reporting",
+        "label": "SustainabilityReporting"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:multilateral-cooperation",
+        "label": "Multilateral Cooperation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"},
-      {"@id": "urn:ngm:class:carbon-accounting", "label": "Carbon Accounting"},
-      {"@id": "urn:ngm:class:impact-investing", "label": "Impact Investing"},
-      {"@id": "urn:ngm:class:green-finance", "label": "Green Finance"}
-    ],
-    "dependsOn": [
-      {"@id": "urn:ngm:class:national-statistical-systems", "label": "National Statistical Systems"},
-      {"@id": "urn:ngm:class:technology-facilitation-mechanism", "label": "Technology Facilitation Mechanism"}
+      {
+        "@id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "@id": "urn:ngm:class:impact-investing",
+        "label": "Impact Investing"
+      },
+      {
+        "@id": "urn:ngm:class:green-finance",
+        "label": "Green Finance"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:paris-agreement", "label": "Paris Agreement"},
-      {"@id": "urn:ngm:class:addis-ababa-action-agenda", "label": "Addis Ababa Action Agenda"}
+      {
+        "@id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:climate-action", "label": "Climate Action"},
-      {"@id": "urn:ngm:class:poverty-reduction", "label": "Poverty Reduction"}
-    ],
-    "standardizedBy": [
-      {"@id": "urn:ngm:class:united-nations", "label": "United Nations"},
-      {"@id": "urn:ngm:class:un-statistical-commission", "label": "UN Statistical Commission"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:millennium-development-goals", "label": "Millennium Development Goals"}
+      {
+        "@id": "urn:ngm:class:climate-action",
+        "label": "Climate Action"
+      },
+      {
+        "@id": "urn:ngm:class:poverty-reduction",
+        "label": "Poverty Reduction"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence-for-development", "label": "Artificial Intelligence for Development"},
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"}
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:esg-investing", "label": "ESG Investing"},
-      {"@id": "urn:ngm:class:global-inequality", "label": "Global Inequality"},
-      {"@id": "urn:ngm:class:environmental-standards", "label": "Environmental Standards"},
-      {"@id": "urn:ngm:class:societal-and-environmental-wellbeing", "label": "Societal and Environmental Wellbeing"}
+      {
+        "@id": "urn:ngm:class:esg-investing",
+        "label": "ESG Investing"
+      },
+      {
+        "@id": "urn:ngm:class:global-inequality",
+        "label": "Global Inequality"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-standards",
+        "label": "Environmental Standards"
+      },
+      {
+        "@id": "urn:ngm:class:societal-and-environmental-wellbeing",
+        "label": "Societal and Environmental Wellbeing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:sdgs", "label": "SDGs"},
-    {"@id": "urn:ngm:class:global-goals", "label": "Global Goals"}
+    {
+      "@id": "urn:ngm:class:sdgs",
+      "label": "SDGs"
+    },
+    {
+      "@id": "urn:ngm:class:global-goals",
+      "label": "Global Goals"
+    }
   ],
   "quality": 0.75,
   "provenance": {

@@ -18,21 +18,13 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:smart-contract-abi",
-        "label": "Smart Contract ABI"
-      },
-      {
-        "id": "urn:ngm:class:token-allowance-mechanism",
-        "label": "Token Allowance Mechanism"
-      },
-      {
         "id": "urn:ngm:class:transfer-event",
         "label": "Transfer Event"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       },
       {
@@ -128,7 +120,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:ethereum-foundation",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-foundation",
         "label": "Ethereum Foundation"
       }
     ],

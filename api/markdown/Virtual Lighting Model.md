@@ -142,16 +142,8 @@ public:: true
         "label": "Ambient Occlusion"
       },
       {
-        "@id": "urn:ngm:class:brdf-function",
+        "@id": "urn:ngm:class:brdf",
         "label": "BRDF Function"
-      },
-      {
-        "@id": "urn:ngm:class:light-source-model",
-        "label": "Light Source Model"
-      },
-      {
-        "@id": "urn:ngm:class:shadow-computation",
-        "label": "Shadow Computation"
       },
       {
         "@id": "urn:ngm:class:global-illumination",
@@ -160,16 +152,8 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:material-properties",
-        "label": "Material Properties"
-      },
-      {
-        "@id": "urn:ngm:class:shader-program",
+        "@id": "urn:ngm:class:shader",
         "label": "Shader Program"
-      },
-      {
-        "@id": "urn:ngm:class:surface-normals",
-        "label": "Surface Normals"
       },
       {
         "@id": "urn:ngm:class:light-parameters",
@@ -182,11 +166,7 @@ public:: true
         "label": "Dynamic Lighting"
       },
       {
-        "@id": "urn:ngm:class:mood-and-atmosphere",
-        "label": "Mood and Atmosphere"
-      },
-      {
-        "@id": "urn:ngm:class:realistic-illumination",
+        "@id": "urn:ngm:class:global-illumination",
         "label": "Realistic Illumination"
       },
       {
@@ -195,10 +175,6 @@ public:: true
       }
     ],
     "partOf": [
-      {
-        "@id": "urn:ngm:class:shading-system",
-        "label": "Shading System"
-      },
       {
         "@id": "urn:ngm:class:rendering-pipeline",
         "label": "Rendering Pipeline"

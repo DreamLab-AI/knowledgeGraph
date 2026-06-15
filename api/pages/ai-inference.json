@@ -28,10 +28,6 @@
       {
         "id": "urn:ngm:class:continuous-batching",
         "label": "Continuous Batching"
-      },
-      {
-        "id": "urn:ngm:class:prefix-caching",
-        "label": "Prefix Caching"
       }
     ],
     "requires": [
@@ -66,7 +62,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:autonomous-agents",
+        "id": "urn:ngm:class:autonomous-agent",
         "label": "Autonomous Agents"
       }
     ],

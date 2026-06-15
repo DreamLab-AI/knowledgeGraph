@@ -122,15 +122,15 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:audit-trail-system",
+        "@id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail System"
       },
       {
-        "@id": "urn:ngm:class:cold-storage-system",
+        "@id": "urn:ngm:class:cold-storage",
         "label": "Cold Storage System"
       },
       {
-        "@id": "urn:ngm:class:key-management-service",
+        "@id": "urn:ngm:class:key-management-system",
         "label": "Key Management Service"
       },
       {
@@ -158,11 +158,7 @@ public:: true
         "label": "Asset Recovery"
       },
       {
-        "@id": "urn:ngm:class:institutional-trading",
-        "label": "Institutional Trading"
-      },
-      {
-        "@id": "urn:ngm:class:secure-token-storage",
+        "@id": "urn:ngm:class:secure-storage",
         "label": "Secure Token Storage"
       },
       {

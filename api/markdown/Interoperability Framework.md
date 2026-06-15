@@ -118,16 +118,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:api-specifications",
-        "label": "API Specifications"
-      },
-      {
         "@id": "urn:ngm:class:data-format",
         "label": "Data Format"
-      },
-      {
-        "@id": "urn:ngm:class:protocol-definitions",
-        "label": "Protocol Definitions"
       },
       {
         "@id": "urn:ngm:class:data-integration-interface",
@@ -157,10 +149,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:cross-platform-integration",
-        "label": "Cross-Platform Integration"
-      },
       {
         "@id": "urn:ngm:class:scalable-architecture",
         "label": "Scalable Architecture"

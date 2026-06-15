@@ -90,27 +90,9 @@ public:: true
         "label": "Legal and Regulatory"
       }
     ],
-    "requires": [
-      {
-        "@id": "urn:ngm:class:arbitration-clauses",
-        "label": "Arbitration Clauses"
-      },
-      {
-        "@id": "urn:ngm:class:evidence-procedures",
-        "label": "Evidence Procedures"
-      },
-      {
-        "@id": "urn:ngm:class:neutral-selection",
-        "label": "Neutral Selection"
-      }
-    ],
     "enables": [
       {
-        "@id": "urn:ngm:class:confidential-proceedings",
-        "label": "Confidential Proceedings"
-      },
-      {
-        "@id": "urn:ngm:class:cross-border-dispute-resolution",
+        "@id": "urn:ngm:class:dispute-resolution",
         "label": "Cross-Border Dispute Resolution"
       },
       {

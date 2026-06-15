@@ -22,22 +22,14 @@
         "label": "Constraint Solver"
       },
       {
-        "id": "urn:ngm:class:parametric-history-tree",
-        "label": "Parametric History Tree"
-      },
-      {
         "id": "urn:ngm:class:geometric-kernel",
         "label": "Geometric Kernel"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:nurbs-geometry",
+        "id": "urn:ngm:class:computational-geometry",
         "label": "NURBS Geometry"
-      },
-      {
-        "id": "urn:ngm:class:boundary-representation",
-        "label": "Boundary Representation"
       }
     ],
     "enables": [
@@ -78,20 +70,15 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:constructive-solid-geometry",
+        "id": "urn:ngm:class:computational-geometry",
         "label": "Constructive Solid Geometry"
       },
       {
-        "id": "urn:ngm:class:parametric-constraint-solving",
+        "id": "urn:ngm:class:constraint-solver",
         "label": "Parametric Constraint Solving"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:manual-drafting",
-        "label": "Manual Drafting"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:digital-twin",
@@ -112,13 +99,13 @@
         "label": "Mesh Data"
       },
       {
-        "id": "urn:ngm:class:step-file-format",
+        "id": "urn:ngm:class:3-d-file-format",
         "label": "STEP File Format"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:simulation-driven-design",
+        "id": "urn:ngm:class:simulation",
         "label": "Simulation-Driven Design"
       },
       {

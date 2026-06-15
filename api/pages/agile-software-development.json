@@ -18,20 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:scrum",
-        "label": "Scrum"
-      },
-      {
-        "id": "urn:ngm:class:kanban",
-        "label": "Kanban"
-      },
-      {
         "id": "urn:ngm:class:extreme-programming",
         "label": "Extreme Programming"
-      },
-      {
-        "id": "urn:ngm:class:sprint",
-        "label": "Sprint"
       },
       {
         "id": "urn:ngm:class:retrospective",
@@ -76,10 +64,6 @@
       {
         "id": "urn:ngm:class:waterfall-model",
         "label": "Waterfall Model"
-      },
-      {
-        "id": "urn:ngm:class:big-design-up-front",
-        "label": "Big Design Up Front"
       }
     ],
     "bridgesTo": [
@@ -98,29 +82,12 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:user-story",
-        "label": "User Story"
-      },
-      {
-        "id": "urn:ngm:class:product-backlog",
-        "label": "Product Backlog"
-      },
-      {
         "id": "urn:ngm:class:pair-programming",
         "label": "Pair Programming"
       }
     ],
     "supports": [],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:agile-manifesto",
-        "label": "Agile Manifesto"
-      },
-      {
-        "id": "urn:ngm:class:scaled-agile-framework",
-        "label": "Scaled Agile Framework"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {

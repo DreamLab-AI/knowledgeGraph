@@ -64,34 +64,18 @@ public:: true
       {
         "@id": "urn:ngm:class:unfccc",
         "label": "UNFCCC"
-      },
-      {
-        "@id": "urn:ngm:class:multilateral-environmental-agreement",
-        "label": "Multilateral Environmental Agreement"
       }
     ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:nationally-determined-contribution",
         "label": "Nationally Determined Contribution"
-      },
-      {
-        "@id": "urn:ngm:class:transparency-framework",
-        "label": "Transparency Framework"
-      },
-      {
-        "@id": "urn:ngm:class:global-stocktake",
-        "label": "Global Stocktake"
       }
     ],
     "requires": [
       {
         "@id": "urn:ngm:class:carbon-accounting",
         "label": "Carbon Accounting"
-      },
-      {
-        "@id": "urn:ngm:class:emissions-monitoring",
-        "label": "Emissions Monitoring"
       },
       {
         "@id": "urn:ngm:class:climate-finance",
@@ -108,7 +92,7 @@ public:: true
         "label": "Carbon Credits"
       },
       {
-        "@id": "urn:ngm:class:net-zero-target",
+        "@id": "urn:ngm:class:net-zero-targets",
         "label": "Net-Zero Target"
       },
       {
@@ -144,10 +128,6 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:cop26",
-        "label": "COP26"
-      },
-      {
         "@id": "urn:ngm:class:ipcc",
         "label": "IPCC"
       },
@@ -158,10 +138,6 @@ public:: true
       {
         "@id": "urn:ngm:class:just-transition",
         "label": "Just Transition"
-      },
-      {
-        "@id": "urn:ngm:class:loss-and-damage",
-        "label": "Loss and Damage"
       }
     ],
     "bridgesTo": [
@@ -172,10 +148,6 @@ public:: true
       {
         "@id": "urn:ngm:class:supply-chain-decarbonisation",
         "label": "Supply Chain Decarbonisation"
-      },
-      {
-        "@id": "urn:ngm:class:digital-mrv",
-        "label": "Digital MRV"
       }
     ]
   },

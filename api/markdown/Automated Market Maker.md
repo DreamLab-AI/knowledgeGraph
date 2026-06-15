@@ -102,10 +102,6 @@ public:: true
         "label": "Smart Contracts"
       },
       {
-        "@id": "urn:ngm:class:pricing-algorithms",
-        "label": "Pricing Algorithms"
-      },
-      {
         "@id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },
@@ -118,10 +114,6 @@ public:: true
       {
         "@id": "urn:ngm:class:permissionless-trading",
         "label": "Permissionless Trading"
-      },
-      {
-        "@id": "urn:ngm:class:token-swaps",
-        "label": "Token Swaps"
       },
       {
         "@id": "urn:ngm:class:liquidity-provision",
@@ -138,17 +130,13 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:constant-function-market-maker",
-        "label": "Constant Function Market Maker"
-      },
-      {
         "@id": "urn:ngm:class:decentralized-exchange",
         "label": "Decentralized Exchange"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:bonding-curve",
+        "@id": "urn:ngm:class:token-bonding-curve",
         "label": "Bonding Curve"
       },
       {
@@ -205,7 +193,7 @@ public:: true
       "label": "Constant Function Market Maker"
     }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

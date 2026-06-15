@@ -38,55 +38,141 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:3-d-file-format", "label": "3D File Format"},
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"},
-      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"}
+      {
+        "@id": "urn:ngm:class:3-d-file-format",
+        "label": "3D File Format"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:avatar-portability", "label": "Avatar Portability"},
-      {"@id": "urn:ngm:class:cross-platform-interoperability", "label": "Cross-Platform Interoperability"},
-      {"@id": "urn:ngm:class:user-owned-digital-property", "label": "User-Owned Digital Property"},
-      {"@id": "urn:ngm:class:open-metaverse", "label": "Open Metaverse"}
+      {
+        "@id": "urn:ngm:class:avatar-portability",
+        "label": "Avatar Portability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:digital-property-rights",
+        "label": "User-Owned Digital Property"
+      },
+      {
+        "@id": "urn:ngm:class:open-metaverse",
+        "label": "Open Metaverse"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:gltf", "label": "glTF"},
-      {"@id": "urn:ngm:class:universal-scene-description", "label": "Universal Scene Description"},
-      {"@id": "urn:ngm:class:runtime-api", "label": "Runtime API"}
+      {
+        "@id": "urn:ngm:class:gltf-standard",
+        "label": "glTF"
+      },
+      {
+        "@id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:webxr", "label": "WebXR"},
-      {"@id": "urn:ngm:class:openxr", "label": "OpenXR"},
-      {"@id": "urn:ngm:class:vrm-format", "label": "VRM Format"}
+      {
+        "@id": "urn:ngm:class:webxr",
+        "label": "WebXR"
+      },
+      {
+        "@id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      },
+      {
+        "@id": "urn:ngm:class:vrm-format",
+        "label": "VRM Format"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:khronos-group", "label": "Khronos Group"},
-      {"@id": "urn:ngm:class:alliance-for-openusd", "label": "Alliance for OpenUSD"},
-      {"@id": "urn:ngm:class:metaverse-standards-forum", "label": "Metaverse Standards Forum"}
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "@id": "urn:ngm:class:alliance-for-openusd",
+        "label": "Alliance for OpenUSD"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-standards-forum",
+        "label": "Metaverse Standards Forum"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:vendor-lock-in", "label": "Vendor Lock-In"},
-      {"@id": "urn:ngm:class:proprietary-format", "label": "Proprietary Format"}
+      {
+        "@id": "urn:ngm:class:vendor-lock-in",
+        "label": "Vendor Lock-In"
+      },
+      {
+        "@id": "urn:ngm:class:proprietary-format",
+        "label": "Proprietary Format"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:non-fungible-token", "label": "Non-Fungible Token"},
-      {"@id": "urn:ngm:class:data-portability", "label": "Data Portability"},
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"}
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:data-portability",
+        "label": "Data Portability"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:3-d-asset-standard", "label": "3D Asset Standard"},
-      {"@id": "urn:ngm:class:content-pipeline", "label": "Content Pipeline"},
-      {"@id": "urn:ngm:class:scene-graph", "label": "Scene Graph"}
+      {
+        "@id": "urn:ngm:class:3-d-asset-standard",
+        "label": "3D Asset Standard"
+      },
+      {
+        "@id": "urn:ngm:class:content-pipeline",
+        "label": "Content Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:digital-asset-portability", "label": "Digital Asset Portability"},
-    {"@id": "urn:ngm:class:asset-interoperability", "label": "Asset Interoperability"}
+    {
+      "@id": "urn:ngm:class:digital-asset-portability",
+      "label": "Digital Asset Portability"
+    },
+    {
+      "@id": "urn:ngm:class:asset-interoperability",
+      "label": "Asset Interoperability"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -28,10 +28,6 @@
       {
         "id": "urn:ngm:class:sentencepiece",
         "label": "SentencePiece"
-      },
-      {
-        "id": "urn:ngm:class:unigram-language-model-tokeniser",
-        "label": "Unigram Language Model Tokeniser"
       }
     ],
     "requires": [
@@ -62,7 +58,7 @@
         "label": "Machine Translation"
       },
       {
-        "id": "urn:ngm:class:multimodal-learning",
+        "id": "urn:ngm:class:multimodal-ai-architecture-learning",
         "label": "Multimodal Learning"
       }
     ],
@@ -115,11 +111,11 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:natural-language-processing-pipeline",
+        "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing Pipeline"
       },
       {
-        "id": "urn:ngm:class:language-model-pre-training",
+        "id": "urn:ngm:class:pre-training",
         "label": "Language Model Pre-Training"
       }
     ],

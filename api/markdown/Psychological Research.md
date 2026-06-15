@@ -63,14 +63,7 @@ public:: true
       "label": "Research Methods"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:evidence-based-vr-treatment",
-        "label": "Evidence Based VR Treatment"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

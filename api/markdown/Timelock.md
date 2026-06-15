@@ -23,58 +23,115 @@ public:: true
   "definition": "A timelock is a cryptographic or smart-contract mechanism that prevents a transaction, function call, or asset transfer from executing until a specified block height or Unix timestamp has been reached. Timelocks enforce temporal constraints on blockchain operations, separating the proposal of an action from its execution to allow inspection, challenge, or cancellation during a mandatory delay window.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:smart-contract",
+    "label": "Smart Contract"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:operation-queue", "label": "Operation Queue"},
-      {"@id": "urn:ngm:class:execution-delay", "label": "Execution Delay"},
-      {"@id": "urn:ngm:class:cancellation-window", "label": "Cancellation Window"}
+      {
+        "@id": "urn:ngm:class:operation-queue",
+        "label": "Operation Queue"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:dao-treasury", "label": "DAO Treasury"},
-      {"@id": "urn:ngm:class:protocol-upgrade-pipeline", "label": "Protocol Upgrade Pipeline"}
+      {
+        "@id": "urn:ngm:class:dao-treasury",
+        "label": "DAO Treasury"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:block-timestamp", "label": "Block Timestamp"},
-      {"@id": "urn:ngm:class:access-control-module", "label": "Access Control Module"}
+      {
+        "@id": "urn:ngm:class:block-timestamp",
+        "label": "Block Timestamp"
+      },
+      {
+        "@id": "urn:ngm:class:access-control-module",
+        "label": "Access Control Module"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
-      {"@id": "urn:ngm:class:optimistic-governance", "label": "Optimistic Governance"},
-      {"@id": "urn:ngm:class:fraud-proof-window", "label": "Fraud Proof Window"}
+      {
+        "@id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:optimistic-governance",
+        "label": "Optimistic Governance"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:evm-smart-contract", "label": "EVM Smart Contract"},
-      {"@id": "urn:ngm:class:role-based-access-control", "label": "Role-Based Access Control"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "EVM Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:time-release-encryption", "label": "Time-Release Encryption"},
-      {"@id": "urn:ngm:class:bitcoin-script", "label": "Bitcoin Script"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
+        "label": "Bitcoin Script"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"},
-      {"@id": "urn:ngm:class:multisignature", "label": "Multisignature"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:immediate-execution", "label": "Immediate Execution"},
-      {"@id": "urn:ngm:class:flashloan", "label": "Flash Loan"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "@id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:layer-2-rollup", "label": "Layer-2 Rollup"}
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:layer-2-rollup",
+        "label": "Layer-2 Rollup"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:htlc", "label": "HTLC"},
-      {"@id": "urn:ngm:class:vesting-schedule", "label": "Vesting Schedule"},
-      {"@id": "urn:ngm:class:escrow-system", "label": "Escrow System"},
-      {"@id": "urn:ngm:class:atomic-swap", "label": "Atomic Swap"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+      {
+        "@id": "urn:ngm:class:htlc",
+        "label": "HTLC"
+      },
+      {
+        "@id": "urn:ngm:class:vesting-schedule",
+        "label": "Vesting Schedule"
+      },
+      {
+        "@id": "urn:ngm:class:escrow-system",
+        "label": "Escrow System"
+      },
+      {
+        "@id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:time-locked-contract", "label": "Time-Locked Contract"},
-    {"@id": "urn:ngm:class:nlocktime", "label": "nLockTime"}
+    {
+      "@id": "urn:ngm:class:time-locked-contract",
+      "label": "Time-Locked Contract"
+    },
+    {
+      "@id": "urn:ngm:class:nlocktime",
+      "label": "nLockTime"
+    }
   ],
   "quality": 0.72,
   "provenance": {

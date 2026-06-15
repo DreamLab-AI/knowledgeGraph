@@ -59,14 +59,7 @@ public:: true
       "label": "Display and Rendering"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:real-time-metaverse-interactions",
-        "label": "Real-Time Metaverse Interactions"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

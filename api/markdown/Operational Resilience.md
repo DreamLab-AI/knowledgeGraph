@@ -38,48 +38,105 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:high-availability", "label": "High Availability"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"},
-      {"@id": "urn:ngm:class:disaster-recovery", "label": "Disaster Recovery"}
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "@id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:business-continuity", "label": "Business Continuity"},
-      {"@id": "urn:ngm:class:service-reliability", "label": "Service Reliability"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:business-continuity",
+        "label": "Business Continuity"
+      },
+      {
+        "@id": "urn:ngm:class:reliability",
+        "label": "Service Reliability"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:redundancy", "label": "Redundancy"},
-      {"@id": "urn:ngm:class:monitoring-and-observability", "label": "Monitoring and Observability"},
-      {"@id": "urn:ngm:class:chaos-engineering", "label": "Chaos Engineering"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:dora-regulation", "label": "DORA Regulation"},
-      {"@id": "urn:ngm:class:iso-22301", "label": "ISO 22301"}
+      {
+        "@id": "urn:ngm:class:redundancy",
+        "label": "Redundancy"
+      },
+      {
+        "@id": "urn:ngm:class:chaos-engineering",
+        "label": "Chaos Engineering"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist-cybersecurity-framework", "label": "NIST Cybersecurity Framework"},
-      {"@id": "urn:ngm:class:iso-27001", "label": "ISO 27001"}
+      {
+        "@id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      },
+      {
+        "@id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:disaster-recovery", "label": "Disaster Recovery"},
-      {"@id": "urn:ngm:class:business-continuity-planning", "label": "Business Continuity Planning"}
+      {
+        "@id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      },
+      {
+        "@id": "urn:ngm:class:business-continuity-planning",
+        "label": "Business Continuity Planning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:supply-chain-risk", "label": "Supply Chain Risk"},
-      {"@id": "urn:ngm:class:third-party-risk-management", "label": "Third-Party Risk Management"},
-      {"@id": "urn:ngm:class:cyber-risk", "label": "Cyber Risk"},
-      {"@id": "urn:ngm:class:service-level-agreement", "label": "Service Level Agreement"}
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain Risk"
+      },
+      {
+        "@id": "urn:ngm:class:third-party-risk-management",
+        "label": "Third-Party Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:service-level-agreement",
+        "label": "Service Level Agreement"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:aiops", "label": "AIOps"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:aiops",
+        "label": "AIOps"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:organisational-resilience", "label": "Organisational Resilience"}
+    {
+      "@id": "urn:ngm:class:organisational-resilience",
+      "label": "Organisational Resilience"
+    }
   ],
   "quality": 0.74,
   "provenance": {

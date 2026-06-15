@@ -18,28 +18,12 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:audit-trail-generator",
-        "label": "Audit Trail Generator"
-      },
-      {
         "id": "urn:ngm:class:blockchain-anchoring",
         "label": "Blockchain Anchoring"
       },
       {
-        "id": "urn:ngm:class:certificate-authority-interface",
-        "label": "Certificate Authority Interface"
-      },
-      {
-        "id": "urn:ngm:class:hash-function-module",
-        "label": "Hash Function Module"
-      },
-      {
         "id": "urn:ngm:class:timestamping-service",
         "label": "Timestamping Service"
-      },
-      {
-        "id": "urn:ngm:class:verification-protocol",
-        "label": "Verification Protocol"
       },
       {
         "id": "urn:ngm:class:digital-signature-verification",

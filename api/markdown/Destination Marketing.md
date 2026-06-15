@@ -106,12 +106,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:immersive-advertising",
+        "@id": "urn:ngm:class:advertising",
         "label": "Immersive Advertising"
-      },
-      {
-        "@id": "urn:ngm:class:location-promotion",
-        "label": "Location Promotion"
       },
       {
         "@id": "urn:ngm:class:virtual-tourism",

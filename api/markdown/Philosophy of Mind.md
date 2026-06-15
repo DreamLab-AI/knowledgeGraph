@@ -73,33 +73,7 @@ public:: true
         "label": "Philosophy"
       }
     ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:consciousness",
-        "label": "Consciousness"
-      },
-      {
-        "@id": "urn:ngm:class:intentionality",
-        "label": "Intentionality"
-      },
-      {
-        "@id": "urn:ngm:class:qualia",
-        "label": "Qualia"
-      },
-      {
-        "@id": "urn:ngm:class:phenomenology",
-        "label": "Phenomenology"
-      }
-    ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:metaphysics",
-        "label": "Metaphysics"
-      },
-      {
-        "@id": "urn:ngm:class:epistemology",
-        "label": "Epistemology"
-      },
       {
         "@id": "urn:ngm:class:logic",
         "label": "Logic"
@@ -109,10 +83,6 @@ public:: true
       {
         "@id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
-      },
-      {
-        "@id": "urn:ngm:class:machine-consciousness",
-        "label": "Machine Consciousness"
       },
       {
         "@id": "urn:ngm:class:ai-ethics",
@@ -133,10 +103,6 @@ public:: true
       {
         "@id": "urn:ngm:class:reasoning",
         "label": "Reasoning"
-      },
-      {
-        "@id": "urn:ngm:class:thought-experiment",
-        "label": "Thought Experiment"
       }
     ],
     "supports": [
@@ -153,10 +119,6 @@ public:: true
       {
         "@id": "urn:ngm:class:behaviourism",
         "label": "Behaviourism"
-      },
-      {
-        "@id": "urn:ngm:class:eliminative-materialism",
-        "label": "Eliminative Materialism"
       }
     ],
     "bridgesTo": [
@@ -174,14 +136,6 @@ public:: true
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:functionalism",
-        "label": "Functionalism"
-      },
-      {
-        "@id": "urn:ngm:class:computational-theory-of-mind",
-        "label": "Computational Theory of Mind"
-      },
       {
         "@id": "urn:ngm:class:embodied-cognition",
         "label": "Embodied Cognition"

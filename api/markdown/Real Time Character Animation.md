@@ -64,14 +64,7 @@ alias:: Real-Time Character Animation
       "label": "3D Animation"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:interactive-experiences",
-        "label": "Interactive Experiences"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

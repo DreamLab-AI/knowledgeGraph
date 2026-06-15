@@ -20,10 +20,6 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:brainstorming",
-        "label": "Brainstorming"
-      },
-      {
         "id": "urn:ngm:class:retrospective",
         "label": "Retrospective"
       }
@@ -38,7 +34,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:collaborative-whiteboard",
+        "id": "urn:ngm:class:collaborative-systems-modality-whiteboard",
         "label": "Collaborative Whiteboard"
       }
     ]

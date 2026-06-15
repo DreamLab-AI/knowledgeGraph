@@ -68,7 +68,7 @@
         "label": "GPU Memory"
       },
       {
-        "id": "urn:ngm:class:floating-point-precision",
+        "id": "urn:ngm:class:floating-point-arithmetic",
         "label": "Floating-Point Precision"
       }
     ],
@@ -89,7 +89,7 @@
         "label": "Autonomous Robot"
       },
       {
-        "id": "urn:ngm:class:collaborative-virtual-environment",
+        "id": "urn:ngm:class:virtual-environment",
         "label": "Collaborative Virtual Environment"
       }
     ],
@@ -108,7 +108,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:model-hyperparameter",
+        "id": "urn:ngm:class:hyperparameter",
         "label": "Model Hyperparameter"
       },
       {

@@ -24,57 +24,122 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}
+    {
+      "@id": "urn:ngm:class:blockchain-protocol",
+      "label": "Blockchain Protocol"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:relay-chain", "label": "Relay Chain"},
-      {"@id": "urn:ngm:class:polkadot-parachains", "label": "Polkadot Parachains"},
-      {"@id": "urn:ngm:class:xcm", "label": "XCM (Cross-Consensus Message Format)"},
-      {"@id": "urn:ngm:class:dot-token", "label": "DOT Token"}
+      {
+        "@id": "urn:ngm:class:polkadot-parachains",
+        "label": "Polkadot Parachains"
+      },
+      {
+        "@id": "urn:ngm:class:xcm",
+        "label": "XCM (Cross-Consensus Message Format)"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:nominated-proof-of-stake", "label": "Nominated Proof of Stake"},
-      {"@id": "urn:ngm:class:validator-set", "label": "Validator Set"},
-      {"@id": "urn:ngm:class:web-assembly", "label": "WebAssembly"}
+      {
+        "@id": "urn:ngm:class:nominated-proof-of-stake",
+        "label": "Nominated Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      },
+      {
+        "@id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cross-chain-messaging", "label": "Cross-Chain Messaging"},
-      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"},
-      {"@id": "urn:ngm:class:shared-security", "label": "Shared Security"},
-      {"@id": "urn:ngm:class:forkless-upgrades", "label": "Forkless Upgrades"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"}
+      {
+        "@id": "urn:ngm:class:cross-chain-messaging",
+        "label": "Cross-Chain Messaging"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-upgrades",
+        "label": "Forkless Upgrades"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:substrate-framework", "label": "Substrate Framework"},
-      {"@id": "urn:ngm:class:web-assembly", "label": "WebAssembly"},
-      {"@id": "urn:ngm:class:nominated-proof-of-stake", "label": "Nominated Proof of Stake"},
-      {"@id": "urn:ngm:class:babe-consensus", "label": "BABE Consensus"},
-      {"@id": "urn:ngm:class:grandpa-finality", "label": "GRANDPA Finality"}
+      {
+        "@id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      },
+      {
+        "@id": "urn:ngm:class:nominated-proof-of-stake",
+        "label": "Nominated Proof of Stake"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:cryptographic-primitives", "label": "Cryptographic Primitives"}
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitives"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:cosmos-ibc", "label": "Cosmos IBC"},
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
-      {"@id": "urn:ngm:class:avalanche", "label": "Avalanche"}
+      {
+        "@id": "urn:ngm:class:cosmos-ibc",
+        "label": "Cosmos IBC"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:avalanche",
+        "label": "Avalanche"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"},
-      {"@id": "urn:ngm:class:web3", "label": "Web3"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"},
-      {"@id": "urn:ngm:class:kusama", "label": "Kusama"}
+      {
+        "@id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:web3",
+        "label": "Web3"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"},
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"}
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:dot-network", "label": "DOT Network"}
+    {
+      "@id": "urn:ngm:class:dot-network",
+      "label": "DOT Network"
+    }
   ],
   "quality": 0.72,
   "provenance": {

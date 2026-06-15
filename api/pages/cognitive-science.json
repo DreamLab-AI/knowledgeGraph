@@ -26,10 +26,6 @@
         "label": "Computational Linguistics"
       },
       {
-        "id": "urn:ngm:class:cognitive-neuroscience",
-        "label": "Cognitive Neuroscience"
-      },
-      {
         "id": "urn:ngm:class:cognitive-psychology",
         "label": "Cognitive Psychology"
       }
@@ -58,7 +54,7 @@
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:intelligent-tutoring-systems",
+        "id": "urn:ngm:class:intelligent-tutoring-system",
         "label": "Intelligent Tutoring Systems"
       }
     ],
@@ -92,14 +88,6 @@
       {
         "id": "urn:ngm:class:computational-modelling",
         "label": "Computational Modelling"
-      },
-      {
-        "id": "urn:ngm:class:neuroimaging",
-        "label": "Neuroimaging"
-      },
-      {
-        "id": "urn:ngm:class:behavioural-experiments",
-        "label": "Behavioural Experiments"
       }
     ],
     "supports": [

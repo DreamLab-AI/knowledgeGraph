@@ -80,16 +80,6 @@ public:: true
     }
   ],
   "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:industrial-application-classification",
-        "label": "Industrial Application Classification"
-      },
-      {
-        "@id": "urn:ngm:class:manufacturing-platform-categorization",
-        "label": "Manufacturing Platform Categorization"
-      }
-    ],
     "partOf": [
       {
         "@id": "urn:ngm:class:etsi-domain-taxonomy",

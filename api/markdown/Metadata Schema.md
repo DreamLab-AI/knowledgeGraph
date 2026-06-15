@@ -86,10 +86,6 @@ public:: true
       {
         "@id": "urn:ngm:class:data-element",
         "label": "Data Element"
-      },
-      {
-        "@id": "urn:ngm:class:schema-validation-rule",
-        "label": "Schema Validation Rule"
       }
     ],
     "partOf": [
@@ -150,7 +146,7 @@ public:: true
         "label": "Dublin Core"
       },
       {
-        "@id": "urn:ngm:class:json-ld",
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {
@@ -158,7 +154,7 @@ public:: true
         "label": "Schema.org"
       },
       {
-        "@id": "urn:ngm:class:web-ontology-language",
+        "@id": "urn:ngm:class:owl-2-web-ontology-language",
         "label": "Web Ontology Language"
       }
     ],
@@ -178,11 +174,11 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:dublin-core-metadata-initiative",
+        "@id": "urn:ngm:class:dublin-core",
         "label": "Dublin Core Metadata Initiative"
       },
       {
-        "@id": "urn:ngm:class:iso-19115",
+        "@id": "urn:ngm:class:iso",
         "label": "ISO 19115"
       }
     ],
@@ -198,7 +194,7 @@ public:: true
         "label": "Data Standards"
       },
       {
-        "@id": "urn:ngm:class:semantic-web",
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       },
       {
@@ -214,10 +210,6 @@ public:: true
       {
         "@id": "urn:ngm:class:open-metadata",
         "label": "Open Metadata"
-      },
-      {
-        "@id": "urn:ngm:class:data-standard",
-        "label": "Data Standard"
       }
     ]
   },

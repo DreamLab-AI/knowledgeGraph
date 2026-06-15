@@ -72,60 +72,134 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:learnability", "label": "Learnability"},
-      {"@id": "urn:ngm:class:efficiency", "label": "Efficiency"},
-      {"@id": "urn:ngm:class:memorability", "label": "Memorability"},
-      {"@id": "urn:ngm:class:error-prevention", "label": "Error Prevention"},
-      {"@id": "urn:ngm:class:user-satisfaction", "label": "User Satisfaction"}
+      {
+        "@id": "urn:ngm:class:efficiency",
+        "label": "Efficiency"
+      },
+      {
+        "@id": "urn:ngm:class:user-satisfaction",
+        "label": "User Satisfaction"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}
+      {
+        "@id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:user-research", "label": "User Research"},
-      {"@id": "urn:ngm:class:task-analysis", "label": "Task Analysis"},
-      {"@id": "urn:ngm:class:user-testing", "label": "User Testing"}
+      {
+        "@id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
+        "@id": "urn:ngm:class:task-analysis",
+        "label": "Task Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:user-testing",
+        "label": "User Testing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"},
-      {"@id": "urn:ngm:class:user-adoption", "label": "User Adoption"},
-      {"@id": "urn:ngm:class:task-completion", "label": "Task Completion"}
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:user-adoption",
+        "label": "User Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:task-completion",
+        "label": "Task Completion"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:interaction-design", "label": "Interaction Design"},
-      {"@id": "urn:ngm:class:information-architecture", "label": "Information Architecture"}
+      {
+        "@id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      },
+      {
+        "@id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:user-centred-design", "label": "User-Centred Design"},
-      {"@id": "urn:ngm:class:heuristic-evaluation", "label": "Heuristic Evaluation"}
+      {
+        "@id": "urn:ngm:class:user-centred-design",
+        "label": "User-Centred Design"
+      },
+      {
+        "@id": "urn:ngm:class:heuristic-evaluation",
+        "label": "Heuristic Evaluation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cognitive-walkthrough", "label": "Cognitive Walkthrough"},
-      {"@id": "urn:ngm:class:think-aloud-protocol", "label": "Think-Aloud Protocol"},
-      {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"}
+      {
+        "@id": "urn:ngm:class:cognitive-walkthrough",
+        "label": "Cognitive Walkthrough"
+      },
+      {
+        "@id": "urn:ngm:class:think-aloud-protocol",
+        "label": "Think-Aloud Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:interface-design", "label": "Interface Design"}
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:interface-design",
+        "label": "Interface Design"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-9241", "label": "ISO 9241"},
-      {"@id": "urn:ngm:class:wcag", "label": "WCAG"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:functionality", "label": "Functionality"},
-      {"@id": "urn:ngm:class:aesthetics", "label": "Aesthetics"}
+      {
+        "@id": "urn:ngm:class:iso-9241",
+        "label": "ISO 9241"
+      },
+      {
+        "@id": "urn:ngm:class:wcag-2-2",
+        "label": "WCAG"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:spatial-user-interface", "label": "Spatial User Interface"}
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-user-interfaces",
+        "label": "Spatial User Interface"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:affordance", "label": "Affordance"},
-      {"@id": "urn:ngm:class:mental-model", "label": "Mental Model"},
-      {"@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop"}
+      {
+        "@id": "urn:ngm:class:affordance",
+        "label": "Affordance"
+      },
+      {
+        "@id": "urn:ngm:class:mental-model",
+        "label": "Mental Model"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
     ]
   },
   "quality": 0.75,

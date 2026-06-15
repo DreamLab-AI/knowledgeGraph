@@ -67,7 +67,7 @@ public:: true
         "label": "Distributed Ledger"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -99,7 +99,7 @@ public:: true
         "label": "UTXO Model"
       },
       {
-        "@id": "urn:ngm:class:jvm",
+        "@id": "urn:ngm:class:jvm-runtime",
         "label": "JVM"
       },
       {
@@ -107,7 +107,7 @@ public:: true
         "label": "Kotlin"
       },
       {
-        "@id": "urn:ngm:class:x509-certificate",
+        "@id": "urn:ngm:class:x-509-certificate",
         "label": "X.509 Certificate"
       }
     ],

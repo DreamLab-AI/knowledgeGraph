@@ -30,7 +30,7 @@
         "label": "Circular Economy"
       },
       {
-        "id": "urn:ngm:class:electronic-waste",
+        "id": "urn:ngm:class:e-waste",
         "label": "Electronic Waste"
       }
     ],
@@ -101,7 +101,7 @@
         "label": "AI Governance and Ethics"
       },
       {
-        "id": "urn:ngm:class:un-sustainable-development-goals",
+        "id": "urn:ngm:class:sustainable-development-goals",
         "label": "UN Sustainable Development Goals"
       }
     ],
@@ -111,7 +111,7 @@
         "label": "OECD AI Principles"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],

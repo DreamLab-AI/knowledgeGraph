@@ -328,45 +328,7 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:central-bank-gold-reserve",
-        "label": "Central Bank Gold Reserve"
-      },
-      {
-        "@id": "urn:ngm:class:comex-gold-futures",
-        "label": "COMEX Gold Futures"
-      },
-      {
-        "@id": "urn:ngm:class:gold-backed-token",
-        "label": "Gold-Backed Token"
-      },
-      {
-        "@id": "urn:ngm:class:gold-etf",
-        "label": "Gold ETF"
-      },
-      {
-        "@id": "urn:ngm:class:gold-recycling-stream",
-        "label": "Gold Recycling Stream"
-      },
-      {
-        "@id": "urn:ngm:class:gold-refinery",
-        "label": "Gold Refinery"
-      },
-      {
-        "@id": "urn:ngm:class:lbma-good-delivery-bar",
-        "label": "LBMA Good Delivery Bar"
-      }
-    ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:allocated-account",
-        "label": "Allocated Account"
-      },
-      {
-        "@id": "urn:ngm:class:assay-certificate",
-        "label": "Assay Certificate"
-      },
       {
         "@id": "urn:ngm:class:chain-of-custody",
         "label": "Chain of Custody"
@@ -374,14 +336,6 @@ public:: true
       {
         "@id": "urn:ngm:class:custodian-bank",
         "label": "Custodian Bank"
-      },
-      {
-        "@id": "urn:ngm:class:lbma-good-delivery-accreditation",
-        "label": "LBMA Good Delivery Accreditation"
-      },
-      {
-        "@id": "urn:ngm:class:vault-storage",
-        "label": "Vault Storage"
       }
     ],
     "enables": [
@@ -390,46 +344,14 @@ public:: true
         "label": "Cross-Border Settlement"
       },
       {
-        "@id": "urn:ngm:class:currency-diversification",
-        "label": "Currency Diversification"
-      },
-      {
-        "@id": "urn:ngm:class:gold-backed-stablecoin",
-        "label": "Gold-Backed Stablecoin"
-      },
-      {
         "@id": "urn:ngm:class:inflation-hedging",
         "label": "Inflation Hedging"
-      },
-      {
-        "@id": "urn:ngm:class:monetary-reserve-diversification",
-        "label": "Monetary Reserve Diversification"
-      },
-      {
-        "@id": "urn:ngm:class:tokenized-commodity",
-        "label": "Tokenized Commodity"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:bis-basel-iii-hqla-classification",
-        "label": "BIS Basel III HQLA Classification"
-      },
-      {
-        "@id": "urn:ngm:class:comex-futures-contract-standard",
-        "label": "COMEX Futures Contract Standard"
-      },
-      {
-        "@id": "urn:ngm:class:ice-lbma-gold-price-benchmark",
-        "label": "ICE LBMA Gold Price Benchmark"
-      },
-      {
-        "@id": "urn:ngm:class:iso-4217-xau-currency-code",
+        "@id": "urn:ngm:class:iso-4217",
         "label": "ISO 4217 XAU Currency Code"
-      },
-      {
-        "@id": "urn:ngm:class:lbma-responsible-gold-guidance",
-        "label": "LBMA Responsible Gold Guidance"
       }
     ],
     "uses": [
@@ -442,7 +364,7 @@ public:: true
         "label": "ERC-20 Token Standard"
       },
       {
-        "@id": "urn:ngm:class:stellar-network",
+        "@id": "urn:ngm:class:stellar",
         "label": "Stellar Network"
       },
       {
@@ -524,28 +446,12 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:bis-basel-iii-cre20",
+        "@id": "urn:ngm:class:basel-iii",
         "label": "BIS Basel III CRE20"
-      },
-      {
-        "@id": "urn:ngm:class:comex-contract-specifications",
-        "label": "COMEX Contract Specifications"
-      },
-      {
-        "@id": "urn:ngm:class:fatf-precious-metals-guidance",
-        "label": "FATF Precious Metals Guidance"
       },
       {
         "@id": "urn:ngm:class:iso-4217",
         "label": "ISO 4217"
-      },
-      {
-        "@id": "urn:ngm:class:lbma-good-delivery-rules",
-        "label": "LBMA Good Delivery Rules"
-      },
-      {
-        "@id": "urn:ngm:class:sge-trading-rules",
-        "label": "SGE Trading Rules"
       }
     ]
   },

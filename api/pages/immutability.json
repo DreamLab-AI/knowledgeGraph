@@ -55,24 +55,12 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:hash-chaining",
-        "label": "Hash Chaining"
-      },
-      {
         "id": "urn:ngm:class:decentralization",
         "label": "Decentralization"
       }
     ],
     "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:mutability",
-        "label": "Mutability"
-      },
-      {
-        "id": "urn:ngm:class:data-deletion",
-        "label": "Data Deletion"
-      },
       {
         "id": "urn:ngm:class:right-to-erasure",
         "label": "Right to Erasure"
@@ -84,12 +72,8 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential",
+        "id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
-      },
-      {
-        "id": "urn:ngm:class:digital-twin-data-integrity",
-        "label": "Digital Twin Data Integrity"
       }
     ],
     "uses": [

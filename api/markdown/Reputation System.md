@@ -318,20 +318,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:aggregation-algorithm",
-        "label": "Aggregation Algorithm"
-      },
-      {
-        "@id": "urn:ngm:class:attestation-service",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-attestation-service",
         "label": "Attestation Service"
-      },
-      {
-        "@id": "urn:ngm:class:credential-registry",
-        "label": "Credential Registry"
-      },
-      {
-        "@id": "urn:ngm:class:score-oracle",
-        "label": "Score Oracle"
       },
       {
         "@id": "urn:ngm:class:sybil-resistance",
@@ -343,10 +331,6 @@ public:: true
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:attestation-schema",
-        "label": "Attestation Schema"
-      },
       {
         "@id": "urn:ngm:class:cryptographic-proof",
         "label": "Cryptographic Proof"
@@ -366,23 +350,11 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:peer-selection",
-        "label": "Peer Selection"
-      },
-      {
-        "@id": "urn:ngm:class:permissionless-trust",
-        "label": "Permissionless Trust"
-      },
-      {
         "@id": "urn:ngm:class:quadratic-funding",
         "label": "Quadratic Funding"
       },
       {
-        "@id": "urn:ngm:class:reputation-gated-access",
-        "label": "Reputation-Gated Access"
-      },
-      {
-        "@id": "urn:ngm:class:social-graph-analysis",
+        "@id": "urn:ngm:class:social-network-analysis",
         "label": "Social Graph Analysis"
       },
       {
@@ -391,14 +363,6 @@ public:: true
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:eigen-trust-algorithm",
-        "label": "EigenTrust Algorithm"
-      },
-      {
-        "@id": "urn:ngm:class:page-rank-trust-diffusion",
-        "label": "PageRank Trust Diffusion"
-      },
       {
         "@id": "urn:ngm:class:selective-disclosure",
         "label": "Selective Disclosure"
@@ -440,10 +404,6 @@ public:: true
         "label": "Decentralised Identity"
       },
       {
-        "@id": "urn:ngm:class:web3-social",
-        "label": "Web3 Social"
-      },
-      {
         "@id": "urn:ngm:class:aml-kyc-compliance",
         "label": "AML KYC Compliance"
       },
@@ -470,10 +430,6 @@ public:: true
         "label": "Gitcoin Passport"
       },
       {
-        "@id": "urn:ngm:class:karma3-labs",
-        "label": "Karma3 Labs"
-      },
-      {
         "@id": "urn:ngm:class:lens-protocol",
         "label": "Lens Protocol"
       },
@@ -483,10 +439,6 @@ public:: true
       }
     ],
     "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:eip-4804",
-        "label": "EIP-4804"
-      },
       {
         "@id": "urn:ngm:class:erc-721",
         "label": "ERC-721"
@@ -498,10 +450,6 @@ public:: true
       {
         "@id": "urn:ngm:class:w-3-c-did-working-group",
         "label": "W3C DID Working Group"
-      },
-      {
-        "@id": "urn:ngm:class:w3-c-vc-working-group",
-        "label": "W3C VC Working Group"
       }
     ],
     "bridgesTo": [

@@ -26,10 +26,6 @@
         "label": "Entity Resolution"
       },
       {
-        "id": "urn:ngm:class:knowledge-graph-embeddings",
-        "label": "Knowledge Graph Embeddings"
-      },
-      {
         "id": "urn:ngm:class:linked-data",
         "label": "Linked Data"
       },
@@ -157,10 +153,6 @@
         "label": "Community Detection"
       },
       {
-        "id": "urn:ngm:class:compl-ex",
-        "label": "ComplEx"
-      },
-      {
         "id": "urn:ngm:class:description-logic",
         "label": "Description Logic"
       },
@@ -173,20 +165,12 @@
         "label": "Linked Data"
       },
       {
-        "id": "urn:ngm:class:owl-reasoning",
-        "label": "OWL Reasoning"
-      },
-      {
         "id": "urn:ngm:class:schema-org",
         "label": "Schema.org"
       },
       {
         "id": "urn:ngm:class:sparql",
         "label": "SPARQL"
-      },
-      {
-        "id": "urn:ngm:class:trans-e",
-        "label": "TransE"
       },
       {
         "id": "urn:ngm:class:algorithmic-bias-and-variance",
@@ -248,10 +232,6 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:biomedical-research",
-        "label": "Biomedical Research"
-      },
-      {
         "id": "urn:ngm:class:drug-discovery",
         "label": "Drug Discovery"
       },
@@ -290,27 +270,23 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-gql-standard",
-        "label": "ISO GQL Standard"
-      },
-      {
         "id": "urn:ngm:class:open-standard",
         "label": "Open Standard"
       },
       {
-        "id": "urn:ngm:class:owl-2-w3-c-recommendation",
+        "id": "urn:ngm:class:owl-2-web-ontology-language",
         "label": "OWL 2 W3C Recommendation"
       },
       {
-        "id": "urn:ngm:class:schema-org-vocabulary",
+        "id": "urn:ngm:class:schema-org",
         "label": "schema.org Vocabulary"
       },
       {
-        "id": "urn:ngm:class:sparql-1-1-w3-c-recommendation",
+        "id": "urn:ngm:class:w-3-c-sparql-1-1",
         "label": "SPARQL 1.1 W3C Recommendation"
       },
       {
-        "id": "urn:ngm:class:w3-c-rdf-standard",
+        "id": "urn:ngm:class:rdf",
         "label": "W3C RDF Standard"
       }
     ],

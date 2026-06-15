@@ -67,20 +67,8 @@ public:: true
         "label": "Vertex AI"
       },
       {
-        "@id": "urn:ngm:class:google-kubernetes-engine",
-        "label": "Google Kubernetes Engine"
-      },
-      {
-        "@id": "urn:ngm:class:bigquery",
-        "label": "BigQuery"
-      },
-      {
         "@id": "urn:ngm:class:cloud-storage",
         "label": "Cloud Storage"
-      },
-      {
-        "@id": "urn:ngm:class:cloud-run",
-        "label": "Cloud Run"
       },
       {
         "@id": "urn:ngm:class:tensor-processing-unit",
@@ -107,7 +95,7 @@ public:: true
         "label": "Machine Learning Discipline"
       },
       {
-        "@id": "urn:ngm:class:serverless-computing",
+        "@id": "urn:ngm:class:serverless-architecture",
         "label": "Serverless Computing"
       },
       {
@@ -183,11 +171,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:google-workspace",
-        "label": "Google Workspace"
-      },
-      {
-        "@id": "urn:ngm:class:cloud-native-computing",
+        "@id": "urn:ngm:class:cloud-native",
         "label": "Cloud Native Computing"
       },
       {

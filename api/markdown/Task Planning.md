@@ -330,10 +330,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:action-schema",
-        "label": "Action Schema"
-      },
-      {
         "@id": "urn:ngm:class:behaviour-tree",
         "label": "Behaviour Tree"
       },
@@ -358,10 +354,6 @@ public:: true
         "label": "PDDL"
       },
       {
-        "@id": "urn:ngm:class:plan-library",
-        "label": "Plan Library"
-      },
-      {
         "@id": "urn:ngm:class:task-and-motion-planning",
         "label": "Task and Motion Planning"
       },
@@ -372,20 +364,8 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:action-model",
-        "label": "Action Model"
-      },
-      {
-        "@id": "urn:ngm:class:feasibility-checker",
-        "label": "Feasibility Checker"
-      },
-      {
         "@id": "urn:ngm:class:goal-specification",
         "label": "Goal Specification"
-      },
-      {
-        "@id": "urn:ngm:class:world-state-representation",
-        "label": "World State Representation"
       },
       {
         "@id": "urn:ngm:class:search-algorithm",
@@ -398,7 +378,7 @@ public:: true
         "label": "Game AI"
       },
       {
-        "@id": "urn:ngm:class:intelligent-agent",
+        "@id": "urn:ngm:class:agent",
         "label": "Intelligent Agent"
       },
       {
@@ -424,7 +404,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:behaviour-tree-execution",
+        "@id": "urn:ngm:class:behaviour-tree",
         "label": "Behaviour Tree Execution"
       },
       {
@@ -436,12 +416,8 @@ public:: true
         "label": "Diffusion Policy"
       },
       {
-        "@id": "urn:ngm:class:htn-decomposition",
+        "@id": "urn:ngm:class:htn-planning",
         "label": "HTN Decomposition"
-      },
-      {
-        "@id": "urn:ngm:class:mcts-rollout",
-        "label": "MCTS Rollout"
       },
       {
         "@id": "urn:ngm:class:pddl",
@@ -522,25 +498,21 @@ public:: true
         "label": "Surgical Robotics"
       },
       {
-        "@id": "urn:ngm:class:video-game-ai",
+        "@id": "urn:ngm:class:game-ai",
         "label": "Video Game AI"
       }
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:ipc-benchmark",
-        "label": "IPC Benchmark"
-      },
-      {
-        "@id": "urn:ngm:class:open-x-embodiment-dataset",
+        "@id": "urn:ngm:class:open-x-embodiment",
         "label": "Open-X-Embodiment Dataset"
       },
       {
-        "@id": "urn:ngm:class:pddl-standard",
+        "@id": "urn:ngm:class:pddl",
         "label": "PDDL Standard"
       },
       {
-        "@id": "urn:ngm:class:ros-2-navigation",
+        "@id": "urn:ngm:class:ros-navigation-stack",
         "label": "ROS 2 Navigation"
       }
     ]

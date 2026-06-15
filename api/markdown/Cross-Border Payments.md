@@ -39,50 +39,123 @@ alias:: Cross Border Payments
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
-      {"@id": "urn:ngm:class:swift-messaging", "label": "SWIFT Messaging"},
-      {"@id": "urn:ngm:class:iso-20022", "label": "ISO 20022"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:swift-messaging",
+        "label": "SWIFT Messaging"
+      },
+      {
+        "@id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:aml-kyc", "label": "AML/KYC"},
-      {"@id": "urn:ngm:class:currency-exchange", "label": "Currency Exchange"},
-      {"@id": "urn:ngm:class:correspondent-banking", "label": "Correspondent Banking"}
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML/KYC"
+      },
+      {
+        "@id": "urn:ngm:class:correspondent-banking",
+        "label": "Correspondent Banking"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:remittance", "label": "Remittance"},
-      {"@id": "urn:ngm:class:trade-finance", "label": "Trade Finance"},
-      {"@id": "urn:ngm:class:financial-inclusion", "label": "Financial Inclusion"}
+      {
+        "@id": "urn:ngm:class:remittance",
+        "label": "Remittance"
+      },
+      {
+        "@id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      },
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:payment-infrastructure", "label": "Payment Infrastructure"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:payment-infrastructure",
+        "label": "Payment Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:domestic-payments", "label": "Domestic Payments"},
-      {"@id": "urn:ngm:class:correspondent-banking", "label": "Correspondent Banking"}
+      {
+        "@id": "urn:ngm:class:correspondent-banking",
+        "label": "Correspondent Banking"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"},
-      {"@id": "urn:ngm:class:fatf-travel-rule", "label": "FATF Travel Rule"},
-      {"@id": "urn:ngm:class:forex", "label": "Forex"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "@id": "urn:ngm:class:forex",
+        "label": "Forex"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:bis-cpmi", "label": "BIS CPMI"},
-      {"@id": "urn:ngm:class:financial-stability-board", "label": "Financial Stability Board"}
+      {
+        "@id": "urn:ngm:class:bis-cpmi",
+        "label": "BIS CPMI"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:international-payments", "label": "International Payments"},
-    {"@id": "urn:ngm:class:cross-border-transfers", "label": "Cross-Border Transfers"}
+    {
+      "@id": "urn:ngm:class:international-payments",
+      "label": "International Payments"
+    },
+    {
+      "@id": "urn:ngm:class:cross-border-transfers",
+      "label": "Cross-Border Transfers"
+    }
   ],
   "quality": 0.74,
   "provenance": {

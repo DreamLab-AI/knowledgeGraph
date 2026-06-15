@@ -91,12 +91,8 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:logging-system",
+        "id": "urn:ngm:class:audit-logging",
         "label": "Logging System"
-      },
-      {
-        "id": "urn:ngm:class:tracing-system",
-        "label": "Tracing System"
       }
     ],
     "bridgesTo": [

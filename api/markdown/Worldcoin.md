@@ -123,10 +123,6 @@ public:: true
       {
         "@id": "urn:ngm:class:world-id",
         "label": "World ID"
-      },
-      {
-        "@id": "urn:ngm:class:worldcoin-token",
-        "label": "Worldcoin Token"
       }
     ],
     "contrastsWith": [
@@ -174,7 +170,7 @@ public:: true
       "label": "World Network"
     }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

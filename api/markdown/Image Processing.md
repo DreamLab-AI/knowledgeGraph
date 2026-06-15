@@ -23,54 +23,136 @@ public:: true
   "definition": "Image Processing is the computational manipulation of digital images using mathematical operations—including spatial filtering, morphological transforms, frequency-domain analysis, and learned convolutional operations—to enhance visual quality, extract structured information, or transform image representations for downstream tasks. It encompasses both classical signal processing techniques (Fourier and wavelet transforms, histogram equalisation, edge detection via Sobel or Canny operators, morphological erosion and dilation) and modern deep-learning approaches implemented through convolutional neural networks, vision transformers, and diffusion models. Image processing forms the foundational preprocessing and analysis layer for computer vision pipelines, medical imaging workflows, remote sensing, autonomous navigation, and industrial quality inspection, operating on discrete pixel grids to produce processed images or structured semantic outputs. The field bridges raw sensor data acquisition and higher-level scene understanding, with applications spanning from embedded real-time systems to large-scale cloud inference infrastructure.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:signal-processing",
+      "label": "Signal Processing"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:digital-image-processing", "label": "Digital Image Processing"},
-    {"@id": "urn:ngm:class:computational-imaging", "label": "Computational Imaging"}
+    {
+      "@id": "urn:ngm:class:digital-image-processing",
+      "label": "Digital Image Processing"
+    },
+    {
+      "@id": "urn:ngm:class:computational-imaging",
+      "label": "Computational Imaging"
+    }
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:image-filtering", "label": "Image Filtering"},
-      {"@id": "urn:ngm:class:morphological-operations", "label": "Morphological Operations"},
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"}
+      {
+        "@id": "urn:ngm:class:morphological-operations",
+        "label": "Morphological Operations"
+      },
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:digital-signal-processing", "label": "Digital Signal Processing"},
-      {"@id": "urn:ngm:class:linear-algebra", "label": "Linear Algebra"},
-      {"@id": "urn:ngm:class:fourier-transform", "label": "Fourier Transform"}
+      {
+        "@id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:fourier-transform",
+        "label": "Fourier Transform"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
-      {"@id": "urn:ngm:class:image-classification", "label": "Image Classification"},
-      {"@id": "urn:ngm:class:medical-imaging", "label": "Medical Imaging"},
-      {"@id": "urn:ngm:class:remote-sensing", "label": "Remote Sensing"}
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "@id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "@id": "urn:ngm:class:remote-sensing",
+        "label": "Remote Sensing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:vision-transformer", "label": "Vision Transformer"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"}
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:open-cv", "label": "OpenCV"},
-      {"@id": "urn:ngm:class:image-compression", "label": "Image Compression"},
-      {"@id": "urn:ngm:class:colour-science", "label": "Colour Science"}
+      {
+        "@id": "urn:ngm:class:open-cv",
+        "label": "OpenCV"
+      },
+      {
+        "@id": "urn:ngm:class:image-compression",
+        "label": "Image Compression"
+      },
+      {
+        "@id": "urn:ngm:class:colour-science",
+        "label": "Colour Science"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:video-processing", "label": "Video Processing"},
-      {"@id": "urn:ngm:class:point-cloud-processing", "label": "Point Cloud Processing"}
+      {
+        "@id": "urn:ngm:class:video-processing",
+        "label": "Video Processing"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-jtc1-sc29", "label": "ISO/IEC JTC1 SC29"},
-      {"@id": "urn:ngm:class:ieee-signal-processing-society", "label": "IEEE Signal Processing Society"}
+      {
+        "@id": "urn:ngm:class:iso-iec-jtc1-sc29",
+        "label": "ISO/IEC JTC1 SC29"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-signal-processing-society",
+        "label": "IEEE Signal Processing Society"
+      }
     ]
   },
   "quality": 0.78,

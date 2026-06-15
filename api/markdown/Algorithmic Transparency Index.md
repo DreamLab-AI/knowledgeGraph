@@ -162,16 +162,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:bias-detection-metrics",
+        "@id": "urn:ngm:class:bias-detection-methods",
         "label": "Bias Detection Metrics"
       },
       {
         "@id": "urn:ngm:class:disclosure-requirements",
         "label": "Disclosure Requirements"
-      },
-      {
-        "@id": "urn:ngm:class:explainability-metrics",
-        "label": "Explainability Metrics"
       },
       {
         "@id": "urn:ngm:class:audit-trail",
@@ -190,10 +186,6 @@ public:: true
       {
         "@id": "urn:ngm:class:audit-mechanism",
         "label": "Audit Mechanism"
-      },
-      {
-        "@id": "urn:ngm:class:decision-logging",
-        "label": "Decision Logging"
       },
       {
         "@id": "urn:ngm:class:model-documentation",
@@ -224,7 +216,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:algorithmic-accountability-system",
+        "@id": "urn:ngm:class:algorithmic-accountability",
         "label": "Algorithmic Accountability System"
       },
       {

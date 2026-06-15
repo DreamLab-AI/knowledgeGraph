@@ -23,62 +23,137 @@ public:: true
   "definition": "Telecommunications is the sector and technical discipline concerned with the transmission of information — voice, data, and video — across distances through electronic, optical, or electromagnetic means, encompassing the physical infrastructure, protocols, standards, and regulatory frameworks that underpin global connectivity. It includes mobile and fixed-line networks, satellite systems, fibre optic backbones, and the software-defined and virtualised network functions that increasingly replace dedicated hardware.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:network-infrastructure",
+      "label": "Network Infrastructure"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:5-g-network", "label": "5G Network"},
-      {"@id": "urn:ngm:class:network-slicing", "label": "Network Slicing"},
-      {"@id": "urn:ngm:class:network-function-virtualization", "label": "Network Function Virtualization"},
-      {"@id": "urn:ngm:class:radio-access-network", "label": "Radio Access Network"},
-      {"@id": "urn:ngm:class:satellite-communications", "label": "Satellite Communications"}
+      {
+        "@id": "urn:ngm:class:5-g-network",
+        "label": "5G Network"
+      },
+      {
+        "@id": "urn:ngm:class:network-slicing",
+        "label": "Network Slicing"
+      },
+      {
+        "@id": "urn:ngm:class:network-function-virtualization",
+        "label": "Network Function Virtualization"
+      },
+      {
+        "@id": "urn:ngm:class:radio-access-network",
+        "label": "Radio Access Network"
+      },
+      {
+        "@id": "urn:ngm:class:satellite-communications",
+        "label": "Satellite Communications"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:critical-national-infrastructure", "label": "Critical National Infrastructure"}
+      {
+        "@id": "urn:ngm:class:critical-national-infrastructure",
+        "label": "Critical National Infrastructure"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:spectrum-management", "label": "Spectrum Management"},
-      {"@id": "urn:ngm:class:telecommunications-regulation", "label": "Telecommunications Regulation"}
+      {
+        "@id": "urn:ngm:class:spectrum-management",
+        "label": "Spectrum Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:mobile-broadband", "label": "Mobile Broadband"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:mobile-broadband",
+        "label": "Mobile Broadband"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:semiconductor-technology", "label": "Semiconductor Technology"},
-      {"@id": "urn:ngm:class:power-infrastructure", "label": "Power Infrastructure"}
+      {
+        "@id": "urn:ngm:class:semiconductor-fabrication",
+        "label": "Semiconductor Technology"
+      },
+      {
+        "@id": "urn:ngm:class:power-infrastructure",
+        "label": "Power Infrastructure"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:software-defined-networking", "label": "Software-Defined Networking"}
+      {
+        "@id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
-      {"@id": "urn:ngm:class:data-compression", "label": "Data Compression"}
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:3-g-p-p", "label": "3GPP"},
-      {"@id": "urn:ngm:class:international-telecommunication-union", "label": "International Telecommunication Union"},
-      {"@id": "urn:ngm:class:e-t-s-i", "label": "ETSI"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:postal-communications", "label": "Postal Communications"}
+      {
+        "@id": "urn:ngm:class:3-g-p-p",
+        "label": "3GPP"
+      },
+      {
+        "@id": "urn:ngm:class:international-telecommunication-union",
+        "label": "International Telecommunication Union"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:telecommunications-infrastructure", "label": "Telecommunications Infrastructure"},
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}
+      {
+        "@id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:telecom", "label": "Telecom"},
-    {"@id": "urn:ngm:class:electronic-communications", "label": "Electronic Communications"}
+    {
+      "@id": "urn:ngm:class:telecom",
+      "label": "Telecom"
+    },
+    {
+      "@id": "urn:ngm:class:electronic-communications",
+      "label": "Electronic Communications"
+    }
   ],
   "quality": 0.75,
   "provenance": {

@@ -118,7 +118,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:key-derivation",
+        "@id": "urn:ngm:class:key-derivation-function",
         "label": "Key Derivation"
       },
       {
@@ -127,10 +127,6 @@ public:: true
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:bip32",
-        "label": "BIP32"
-      },
       {
         "@id": "urn:ngm:class:bip44",
         "label": "BIP44"

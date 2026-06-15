@@ -25,10 +25,6 @@
       {
         "id": "urn:ngm:class:data-labelling",
         "label": "Data Labelling"
-      },
-      {
-        "id": "urn:ngm:class:real-time-data-pipelines",
-        "label": "Real-Time Data Pipelines"
       }
     ],
     "enables": [
@@ -62,10 +58,6 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:intrusion-detection-systems",
-        "label": "Intrusion Detection Systems"
-      },
-      {
         "id": "urn:ngm:class:threat-intelligence",
         "label": "Threat Intelligence"
       }
@@ -98,11 +90,7 @@
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:behavioural-biometrics",
-        "label": "Behavioural Biometrics"
-      },
-      {
-        "id": "urn:ngm:class:data-stream-processing",
+        "id": "urn:ngm:class:stream-processing",
         "label": "Data Stream Processing"
       }
     ],

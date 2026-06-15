@@ -99,26 +99,12 @@ public:: true
         "label": "Sensor Fusion"
       },
       {
-        "@id": "urn:ngm:class:simultaneous-localization-and-mapping",
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
         "label": "Simultaneous Localization and Mapping"
       },
       {
         "@id": "urn:ngm:class:target-tracking",
         "label": "Target Tracking"
-      },
-      {
-        "@id": "urn:ngm:class:inertial-navigation",
-        "label": "Inertial Navigation"
-      }
-    ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:recursive-bayesian-estimation",
-        "label": "Recursive Bayesian Estimation"
-      },
-      {
-        "@id": "urn:ngm:class:linearization",
-        "label": "Linearization"
       }
     ],
     "uses": [
@@ -129,14 +115,6 @@ public:: true
       {
         "@id": "urn:ngm:class:observation-model",
         "label": "Observation Model"
-      },
-      {
-        "@id": "urn:ngm:class:process-noise",
-        "label": "Process Noise"
-      },
-      {
-        "@id": "urn:ngm:class:measurement-noise",
-        "label": "Measurement Noise"
       }
     ],
     "contrastsWith": [
@@ -147,25 +125,17 @@ public:: true
       {
         "@id": "urn:ngm:class:particle-filter",
         "label": "Particle Filter"
-      },
-      {
-        "@id": "urn:ngm:class:ensemble-kalman-filter",
-        "label": "Ensemble Kalman Filter"
       }
     ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:probabilistic-robotics",
         "label": "Probabilistic Robotics"
-      },
-      {
-        "@id": "urn:ngm:class:gnss-imu-integration",
-        "label": "GNSS-IMU Integration"
       }
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:autonomous-vehicle-navigation",
+        "@id": "urn:ngm:class:autonomous-navigation",
         "label": "Autonomous Vehicle Navigation"
       },
       {

@@ -49,57 +49,149 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:software-defined-networking", "label": "Software-Defined Networking"},
-      {"@id": "urn:ngm:class:network-function-virtualisation", "label": "Network Function Virtualisation"},
-      {"@id": "urn:ngm:class:load-balancer", "label": "Load Balancer"},
-      {"@id": "urn:ngm:class:domain-name-system", "label": "Domain Name System"}
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      },
+      {
+        "@id": "urn:ngm:class:network-function-virtualization",
+        "label": "Network Function Virtualisation"
+      },
+      {
+        "@id": "urn:ngm:class:load-balancer",
+        "label": "Load Balancer"
+      },
+      {
+        "@id": "urn:ngm:class:domain-name-system",
+        "label": "Domain Name System"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:realtime-communication", "label": "Realtime Communication"},
-      {"@id": "urn:ngm:class:metaverse-infrastructure", "label": "Metaverse Infrastructure"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:realtime-communication",
+        "label": "Realtime Communication"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-infrastructure",
+        "label": "Metaverse Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:latency", "label": "Latency"},
-      {"@id": "urn:ngm:class:bandwidth-adaptation", "label": "Bandwidth Adaptation"},
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
-      {"@id": "urn:ngm:class:optical-fibre", "label": "Optical Fibre"}
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:optical-fibre",
+        "label": "Optical Fibre"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:network-security", "label": "Network Security"},
-      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality Of Service"},
-      {"@id": "urn:ngm:class:traffic-engineering", "label": "Traffic Engineering"}
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:quality-of-service",
+        "label": "Quality Of Service"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:autonomous-systems", "label": "Autonomous Systems"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"},
-      {"@id": "urn:ngm:class:ieee-802", "label": "IEEE 802"},
-      {"@id": "urn:ngm:class:3gpp", "label": "3GPP"}
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-802",
+        "label": "IEEE 802"
+      },
+      {
+        "@id": "urn:ngm:class:3gpp",
+        "label": "3GPP"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"},
-      {"@id": "urn:ngm:class:storage-infrastructure", "label": "Storage Infrastructure"}
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-network", "label": "Decentralised Network"},
-      {"@id": "urn:ngm:class:ai-inference-infrastructure", "label": "AI Inference Infrastructure"}
+      {
+        "@id": "urn:ngm:class:decentralised-network",
+        "label": "Decentralised Network"
+      },
+      {
+        "@id": "urn:ngm:class:inference-infrastructure",
+        "label": "AI Inference Infrastructure"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:5g-networks", "label": "5G Networks"},
-      {"@id": "urn:ngm:class:network-topology", "label": "Network Topology"}
+      {
+        "@id": "urn:ngm:class:5g-networks",
+        "label": "5G Networks"
+      },
+      {
+        "@id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
-    {"@id": "urn:ngm:class:communications-infrastructure", "label": "Communications Infrastructure"}
+    {
+      "@id": "urn:ngm:class:network-infrastructure",
+      "label": "Network Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:communications-infrastructure",
+      "label": "Communications Infrastructure"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

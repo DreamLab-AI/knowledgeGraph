@@ -45,7 +45,7 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:autonomous-vehicles",
+        "id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
       },
       {
@@ -69,10 +69,6 @@
     ],
     "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:cloud-ai",
-        "label": "Cloud AI"
-      },
       {
         "id": "urn:ngm:class:fog-computing",
         "label": "Fog Computing"
@@ -110,16 +106,12 @@
         "label": "ONNX"
       },
       {
-        "id": "urn:ngm:class:model-quantisation",
+        "id": "urn:ngm:class:neural-network-quantisation",
         "label": "Model Quantisation"
       },
       {
         "id": "urn:ngm:class:neural-architecture-search",
         "label": "Neural Architecture Search"
-      },
-      {
-        "id": "urn:ngm:class:tflite",
-        "label": "TFLite"
       }
     ],
     "supports": [],

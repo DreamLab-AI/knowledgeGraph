@@ -16,16 +16,7 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:directory-information-tree",
-        "label": "Directory Information Tree"
-      },
-      {
-        "id": "urn:ngm:class:distinguished-name",
-        "label": "Distinguished Name"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:tcp-ip",
@@ -52,32 +43,11 @@
       {
         "id": "urn:ngm:class:single-sign-on",
         "label": "Single Sign-On"
-      },
-      {
-        "id": "urn:ngm:class:centralised-authorisation",
-        "label": "Centralised Authorisation"
       }
     ],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:rfc-4511",
-        "label": "RFC 4511"
-      },
-      {
-        "id": "urn:ngm:class:asn1-ber-encoding",
-        "label": "ASN.1 BER Encoding"
-      },
-      {
-        "id": "urn:ngm:class:sasl",
-        "label": "SASL"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:radius",
-        "label": "RADIUS"
-      },
       {
         "id": "urn:ngm:class:scim",
         "label": "SCIM"
@@ -134,10 +104,6 @@
       {
         "id": "urn:ngm:class:directory-service",
         "label": "Directory Service"
-      },
-      {
-        "id": "urn:ngm:class:x500-directory-access-protocol",
-        "label": "X.500 Directory Access Protocol"
       }
     ]
   },

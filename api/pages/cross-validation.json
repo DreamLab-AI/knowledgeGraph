@@ -18,16 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:k-fold-cross-validation",
-        "label": "K-Fold Cross-Validation"
-      },
-      {
-        "id": "urn:ngm:class:stratified-sampling",
+        "id": "urn:ngm:class:sampling",
         "label": "Stratified Sampling"
-      },
-      {
-        "id": "urn:ngm:class:leave-one-out-cross-validation",
-        "label": "Leave-One-Out Cross-Validation"
       }
     ],
     "requires": [
@@ -42,10 +34,6 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:generalisation-error-estimation",
-        "label": "Generalisation Error Estimation"
-      },
-      {
         "id": "urn:ngm:class:hyperparameter-tuning",
         "label": "Hyperparameter Tuning"
       },
@@ -56,20 +44,12 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:train-test-split",
-        "label": "Train-Test Split"
-      },
-      {
         "id": "urn:ngm:class:statistical-estimation",
         "label": "Statistical Estimation"
       }
     ],
     "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:holdout-validation",
-        "label": "Holdout Validation"
-      },
       {
         "id": "urn:ngm:class:annotated-training-data",
         "label": "Annotated Training Data"
@@ -87,7 +67,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:performance-metric",
+        "id": "urn:ngm:class:performance-metrics",
         "label": "Performance Metric"
       },
       {
@@ -130,7 +110,7 @@
         "label": "Regularisation"
       },
       {
-        "id": "urn:ngm:class:ensemble-learning",
+        "id": "urn:ngm:class:ensemble-methods",
         "label": "Ensemble Learning"
       }
     ]

@@ -37,47 +37,103 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:simultaneous-camera-and-structure-optimisation", "label": "Simultaneous Camera and Structure Optimisation"}
+    {
+      "@id": "urn:ngm:class:simultaneous-camera-and-structure-optimisation",
+      "label": "Simultaneous Camera and Structure Optimisation"
+    }
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure-from-Motion"},
-      {"@id": "urn:ngm:class:visual-slam", "label": "Visual SLAM"}
+      {
+        "@id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure-from-Motion"
+      },
+      {
+        "@id": "urn:ngm:class:visual-slam",
+        "label": "Visual SLAM"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:reprojection-error", "label": "Reprojection Error"},
-      {"@id": "urn:ngm:class:levenberg-marquardt-algorithm", "label": "Levenberg-Marquardt Algorithm"},
-      {"@id": "urn:ngm:class:schur-complement-elimination", "label": "Schur Complement Elimination"}
+      {
+        "@id": "urn:ngm:class:reprojection-error",
+        "label": "Reprojection Error"
+      },
+      {
+        "@id": "urn:ngm:class:levenberg-marquardt-algorithm",
+        "label": "Levenberg-Marquardt Algorithm"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"},
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
-      {"@id": "urn:ngm:class:feature-matching", "label": "Feature Matching"},
-      {"@id": "urn:ngm:class:ransac", "label": "RANSAC"}
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:feature-matching",
+        "label": "Feature Matching"
+      },
+      {
+        "@id": "urn:ngm:class:ransac",
+        "label": "RANSAC"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"},
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
-      {"@id": "urn:ngm:class:dense-point-cloud", "label": "Dense Point Cloud"},
-      {"@id": "urn:ngm:class:map-building", "label": "Map Building"}
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Dense Point Cloud"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:sparse-matrix", "label": "Sparse Matrix"},
-      {"@id": "urn:ngm:class:ceres-solver", "label": "Ceres Solver"},
-      {"@id": "urn:ngm:class:sift-features", "label": "SIFT Features"}
+      {
+        "@id": "urn:ngm:class:sparse-matrix",
+        "label": "Sparse Matrix"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:incremental-reconstruction", "label": "Incremental Reconstruction"},
-      {"@id": "urn:ngm:class:pose-graph-optimisation", "label": "Pose Graph Optimisation"}
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "Incremental Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:pose-graph",
+        "label": "Pose Graph Optimisation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
-      {"@id": "urn:ngm:class:camera-pose-estimation", "label": "Camera Pose Estimation"},
-      {"@id": "urn:ngm:class:epipolar-geometry", "label": "Epipolar Geometry"}
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:camera-pose-estimation",
+        "label": "Camera Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:epipolar-geometry",
+        "label": "Epipolar Geometry"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:autonomous-vehicles", "label": "Autonomous Vehicles"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
+      }
     ]
   },
   "quality": 0.74,

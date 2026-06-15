@@ -80,7 +80,7 @@ public:: true
         "label": "Location Based AR"
       },
       {
-        "@id": "urn:ngm:class:persistent-ar",
+        "@id": "urn:ngm:class:persistent-ar-placement",
         "label": "Persistent AR"
       },
       {
@@ -94,7 +94,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:feature-descriptor-extraction",
+        "@id": "urn:ngm:class:feature-extraction",
         "label": "Feature Descriptor Extraction"
       },
       {
@@ -116,7 +116,7 @@ public:: true
         "label": "Anchor Persistence"
       },
       {
-        "@id": "urn:ngm:class:re-localisation",
+        "@id": "urn:ngm:class:localisation",
         "label": "Re-localisation"
       }
     ],
@@ -160,7 +160,7 @@ public:: true
         "label": "Computer Vision"
       },
       {
-        "@id": "urn:ngm:class:geospatial-coordinate-system",
+        "@id": "urn:ngm:class:coordinate-system",
         "label": "Geospatial Coordinate System"
       }
     ],

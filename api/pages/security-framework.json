@@ -70,10 +70,6 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:ad-hoc-security",
-        "label": "Ad Hoc Security"
-      },
-      {
         "id": "urn:ngm:class:perimeter-security",
         "label": "Perimeter Security"
       }
@@ -82,10 +78,6 @@
       {
         "id": "urn:ngm:class:ai-safety",
         "label": "AI Safety"
-      },
-      {
-        "id": "urn:ngm:class:smart-contract-auditing",
-        "label": "Smart Contract Auditing"
       },
       {
         "id": "urn:ngm:class:decentralised-identity",

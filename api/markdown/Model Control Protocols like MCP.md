@@ -300,24 +300,8 @@ public:: true
         "label": "MCP Client"
       },
       {
-        "@id": "urn:ngm:class:mcp-prompts",
-        "label": "MCP Prompts"
-      },
-      {
-        "@id": "urn:ngm:class:mcp-resources",
-        "label": "MCP Resources"
-      },
-      {
-        "@id": "urn:ngm:class:mcp-sampling",
-        "label": "MCP Sampling"
-      },
-      {
         "@id": "urn:ngm:class:mcp-server",
         "label": "MCP Server"
-      },
-      {
-        "@id": "urn:ngm:class:mcp-tools",
-        "label": "MCP Tools"
       },
       {
         "@id": "urn:ngm:class:server-sent-events",
@@ -342,7 +326,7 @@ public:: true
         "label": "JSON Schema"
       },
       {
-        "@id": "urn:ngm:class:llm-tool-use",
+        "@id": "urn:ngm:class:tool-use",
         "label": "LLM Tool Use"
       },
       {
@@ -394,10 +378,6 @@ public:: true
         "label": "Capability Advertisement"
       },
       {
-        "@id": "urn:ngm:class:dynamic-tool-discovery",
-        "label": "Dynamic Tool Discovery"
-      },
-      {
         "@id": "urn:ngm:class:remote-procedure-call",
         "label": "Remote Procedure Call"
       },
@@ -424,10 +404,6 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:http-streaming",
-        "label": "HTTP Streaming"
-      },
-      {
         "@id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       },
@@ -436,15 +412,11 @@ public:: true
         "label": "OAuth 2.0"
       },
       {
-        "@id": "urn:ngm:class:process-isolation",
-        "label": "Process Isolation"
-      },
-      {
         "@id": "urn:ngm:class:server-sent-events",
         "label": "Server-Sent Events"
       },
       {
-        "@id": "urn:ngm:class:stdio",
+        "@id": "urn:ngm:class:stdio-transport",
         "label": "stdio"
       }
     ],
@@ -484,23 +456,15 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:claude-desktop",
+        "@id": "urn:ngm:class:claude",
         "label": "Claude Desktop"
       },
       {
-        "@id": "urn:ngm:class:cursor-ide",
+        "@id": "urn:ngm:class:cursor",
         "label": "Cursor IDE"
       },
       {
-        "@id": "urn:ngm:class:database-connectivity",
-        "label": "Database Connectivity"
-      },
-      {
-        "@id": "urn:ngm:class:filesystem-access",
-        "label": "Filesystem Access"
-      },
-      {
-        "@id": "urn:ngm:class:git-hub-integration",
+        "@id": "urn:ngm:class:git-hub",
         "label": "GitHub Integration"
       },
       {
@@ -514,12 +478,8 @@ public:: true
         "label": "Anthropic"
       },
       {
-        "@id": "urn:ngm:class:json-data-interchange-format-rpc-2-0-specification",
+        "@id": "urn:ngm:class:json-data-interchange-format-rpc-2-0",
         "label": "JSON-RPC 2.0 Specification"
-      },
-      {
-        "@id": "urn:ngm:class:mcp-specification-working-group",
-        "label": "MCP Specification Working Group"
       }
     ]
   },

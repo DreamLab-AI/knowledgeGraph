@@ -122,16 +122,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:audio-synthesis-engine",
+        "@id": "urn:ngm:class:audio-engine",
         "label": "Audio Synthesis Engine"
-      },
-      {
-        "@id": "urn:ngm:class:context-analysis-module",
-        "label": "Context Analysis Module"
-      },
-      {
-        "@id": "urn:ngm:class:real-time-mixer",
-        "label": "Real-Time Mixer"
       },
       {
         "@id": "urn:ngm:class:parameter-modulation-system",
@@ -139,10 +131,6 @@ public:: true
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:audio-api",
-        "label": "Audio API"
-      },
       {
         "@id": "urn:ngm:class:context-awareness-system",
         "label": "Context Awareness System"
@@ -156,24 +144,6 @@ public:: true
       {
         "@id": "urn:ngm:class:adaptive-music",
         "label": "Adaptive Music"
-      },
-      {
-        "@id": "urn:ngm:class:dynamic-soundscapes",
-        "label": "Dynamic Soundscapes"
-      },
-      {
-        "@id": "urn:ngm:class:interactive-audio",
-        "label": "Interactive Audio"
-      },
-      {
-        "@id": "urn:ngm:class:responsive-sound-effects",
-        "label": "Responsive Sound Effects"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:audio-rendering-pipeline",
-        "label": "Audio Rendering Pipeline"
       }
     ]
   },

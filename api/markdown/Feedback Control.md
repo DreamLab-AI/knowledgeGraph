@@ -109,14 +109,6 @@ alias:: FeedbackControl
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:actuator-response",
-        "label": "Actuator Response"
-      },
-      {
-        "@id": "urn:ngm:class:error-measurement",
-        "label": "Error Measurement"
-      },
-      {
         "@id": "urn:ngm:class:control-algorithm",
         "label": "Control Algorithm"
       },
@@ -131,22 +123,14 @@ alias:: FeedbackControl
         "label": "Disturbance Rejection"
       },
       {
-        "@id": "urn:ngm:class:robust-operation",
-        "label": "Robust Operation"
-      },
-      {
         "@id": "urn:ngm:class:trajectory-tracking",
         "label": "Trajectory Tracking"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:motion-control-system",
+        "@id": "urn:ngm:class:motion-control",
         "label": "Motion Control System"
-      },
-      {
-        "@id": "urn:ngm:class:stabilisation-architecture",
-        "label": "Stabilisation Architecture"
       }
     ],
     "hasPart": [
@@ -182,10 +166,6 @@ alias:: FeedbackControl
       }
     ],
     "supports": [
-      {
-        "@id": "urn:ngm:class:robot-behaviour",
-        "label": "Robot Behaviour"
-      },
       {
         "@id": "urn:ngm:class:adaptive-control",
         "label": "Adaptive Control"

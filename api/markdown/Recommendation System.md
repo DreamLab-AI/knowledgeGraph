@@ -24,51 +24,135 @@ alias:: RecommendationSystem
   "definition": "A recommendation system is an information filtering infrastructure that predicts and surfaces items, content, or actions likely to be of interest to a specific user, based on behavioural history, explicit preferences, item features, or combinations thereof. It encompasses collaborative filtering approaches that exploit user-item interaction patterns, content-based methods that match item attributes to user profiles, and hybrid models that combine multiple signals. Modern recommendation systems employ deep learning, graph neural networks, and large language models to capture complex preference patterns at scale. They are commercially critical infrastructure in e-commerce, streaming media, social networks, and digital advertising.",
   "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:machine-learning-discipline-technique", "label": "Machine Learning Technique"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:machine-learning-discipline-technique",
+    "label": "Machine Learning Technique"
+  },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:collaborative-systems-modality-filtering", "label": "Collaborative Filtering"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:embeddings", "label": "Embeddings"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:matrix-factorisation", "label": "Matrix Factorisation"},
-      {"@id": "urn:ngm:class:graph-neural-network", "label": "Graph Neural Network"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:approximate-nearest-neighbour-search", "label": "Approximate Nearest Neighbour Search"}
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-filtering",
+        "label": "Collaborative Filtering"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:embeddings",
+        "label": "Embeddings"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:matrix-factorisation",
+        "label": "Matrix Factorisation"
+      },
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Approximate Nearest Neighbour Search"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:personalized-virtual-experiences", "label": "Personalized Virtual Experiences"},
-      {"@id": "urn:ngm:class:predictive-personalization", "label": "Predictive Personalization"},
-      {"@id": "urn:ngm:class:e-commerce", "label": "E-Commerce"},
-      {"@id": "urn:ngm:class:digital-advertising", "label": "Digital Advertising"},
-      {"@id": "urn:ngm:class:content-discovery", "label": "Content Discovery"}
+      {
+        "@id": "urn:ngm:class:personalized-virtual-experiences",
+        "label": "Personalized Virtual Experiences"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-personalization",
+        "label": "Predictive Personalization"
+      },
+      {
+        "@id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce"
+      },
+      {
+        "@id": "urn:ngm:class:advertising",
+        "label": "Digital Advertising"
+      },
+      {
+        "@id": "urn:ngm:class:content-discovery",
+        "label": "Content Discovery"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:user-behaviour-data", "label": "User Behaviour Data"},
-      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"},
-      {"@id": "urn:ngm:class:ab-testing", "label": "A/B Testing"}
+      {
+        "@id": "urn:ngm:class:user-behaviour-data",
+        "label": "User Behaviour Data"
+      },
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:ab-testing",
+        "label": "A/B Testing"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"}
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:search-engine", "label": "Search Engine"}
+      {
+        "@id": "urn:ngm:class:search-engine",
+        "label": "Search Engine"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:video-streaming", "label": "Video Streaming"},
-      {"@id": "urn:ngm:class:social-media-platform-infrastructure", "label": "Social Media Platform Infrastructure"},
-      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:video-streaming",
+        "label": "Video Streaming"
+      },
+      {
+        "@id": "urn:ngm:class:social-media-platform-infrastructure",
+        "label": "Social Media Platform Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:recommender-system", "label": "Recommender System"},
-    {"@id": "urn:ngm:class:information-filtering-system", "label": "Information Filtering System"}
+    {
+      "@id": "urn:ngm:class:recommender-system",
+      "label": "Recommender System"
+    },
+    {
+      "@id": "urn:ngm:class:information-filtering-system",
+      "label": "Information Filtering System"
+    }
   ],
   "quality": 0.72,
   "provenance": {

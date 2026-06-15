@@ -79,10 +79,6 @@ public:: true
         "label": "Disclosure Obligations"
       },
       {
-        "@id": "urn:ngm:class:suitability-assessment",
-        "label": "Suitability Assessment"
-      },
-      {
         "@id": "urn:ngm:class:know-your-customer",
         "label": "Know Your Customer"
       }
@@ -102,10 +98,6 @@ public:: true
       }
     ],
     "hasPart": [
-      {
-        "@id": "urn:ngm:class:conduct-rules",
-        "label": "Conduct Rules"
-      },
       {
         "@id": "urn:ngm:class:redress-mechanism",
         "label": "Redress Mechanism"
@@ -153,15 +145,11 @@ public:: true
       {
         "@id": "urn:ngm:class:prudential-regulation",
         "label": "Prudential Regulation"
-      },
-      {
-        "@id": "urn:ngm:class:financial-ombudsman",
-        "label": "Financial Ombudsman"
       }
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:crypto-asset-regulation",
+        "@id": "urn:ngm:class:crypto-regulation",
         "label": "Crypto-Asset Regulation"
       },
       {

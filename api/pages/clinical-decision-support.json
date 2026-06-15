@@ -16,20 +16,7 @@
   "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:drug-interaction-checking",
-        "label": "Drug Interaction Checking"
-      },
-      {
-        "id": "urn:ngm:class:alert-fatigue-management",
-        "label": "Alert Fatigue Management"
-      },
-      {
-        "id": "urn:ngm:class:clinical-pathway-guidance",
-        "label": "Clinical Pathway Guidance"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:interoperability",
@@ -44,7 +31,7 @@
         "label": "Electronic Health Record"
       },
       {
-        "id": "urn:ngm:class:medical-knowledge-base",
+        "id": "urn:ngm:class:knowledge-base",
         "label": "Medical Knowledge Base"
       }
     ],
@@ -60,10 +47,6 @@
       {
         "id": "urn:ngm:class:medication-safety",
         "label": "Medication Safety"
-      },
-      {
-        "id": "urn:ngm:class:preventive-care",
-        "label": "Preventive Care"
       }
     ],
     "dependsOn": [],
@@ -120,10 +103,6 @@
       {
         "id": "urn:ngm:class:hl7-fhir",
         "label": "HL7 FHIR"
-      },
-      {
-        "id": "urn:ngm:class:cds-hooks",
-        "label": "CDS Hooks"
       }
     ],
     "partOf": [

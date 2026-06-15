@@ -90,7 +90,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:3-d-capture",
+        "@id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Capture"
       },
       {
@@ -104,11 +104,11 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:ai-training",
+        "@id": "urn:ngm:class:training",
         "label": "AI Training"
       },
       {
-        "@id": "urn:ngm:class:mass-digitization",
+        "@id": "urn:ngm:class:asset-digitization",
         "label": "Mass Digitization"
       },
       {

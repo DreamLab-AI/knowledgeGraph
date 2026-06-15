@@ -142,10 +142,6 @@ public:: true
       {
         "@id": "urn:ngm:class:human-on-the-loop",
         "label": "Human on the Loop"
-      },
-      {
-        "@id": "urn:ngm:class:human-in-command",
-        "label": "Human in Command"
       }
     ],
     "uses": [
@@ -174,13 +170,13 @@ public:: true
         "label": "Automation Bias"
       },
       {
-        "@id": "urn:ngm:class:fully-autonomous-ai",
+        "@id": "urn:ngm:class:autonomous-ai-agents",
         "label": "Fully Autonomous AI"
       }
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {

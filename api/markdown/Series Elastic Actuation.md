@@ -38,62 +38,137 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:compliant-spring-element", "label": "Compliant Spring Element"},
-      {"@id": "urn:ngm:class:torque-sensor", "label": "Torque Sensor"},
-      {"@id": "urn:ngm:class:motor-gearbox", "label": "Motor-Gearbox"}
+      {
+        "@id": "urn:ngm:class:compliant-spring-element",
+        "label": "Compliant Spring Element"
+      },
+      {
+        "@id": "urn:ngm:class:torque-sensor",
+        "label": "Torque Sensor"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:robot-joint", "label": "Robot Joint"},
-      {"@id": "urn:ngm:class:compliant-robot", "label": "Compliant Robot"}
+      {
+        "@id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:spring-stiffness-selection", "label": "Spring Stiffness Selection"},
-      {"@id": "urn:ngm:class:position-encoder", "label": "Position Encoder"},
-      {"@id": "urn:ngm:class:torque-control-loop", "label": "Torque Control Loop"}
+      {
+        "@id": "urn:ngm:class:position-encoder",
+        "label": "Position Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:torque-control",
+        "label": "Torque Control Loop"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:force-control", "label": "Force Control"},
-      {"@id": "urn:ngm:class:impedance-control", "label": "Impedance Control"},
-      {"@id": "urn:ngm:class:admittance-control", "label": "Admittance Control"},
-      {"@id": "urn:ngm:class:safe-physical-human-robot-interaction", "label": "Safe Physical Human-Robot Interaction"}
+      {
+        "@id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "@id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "@id": "urn:ngm:class:admittance-control",
+        "label": "Admittance Control"
+      },
+      {
+        "@id": "urn:ngm:class:safe-human-robot-interaction",
+        "label": "Safe Physical Human-Robot Interaction"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"},
-      {"@id": "urn:ngm:class:mechanical-compliance", "label": "Mechanical Compliance"}
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:hookes-law", "label": "Hooke's Law"},
-      {"@id": "urn:ngm:class:deflection-measurement", "label": "Deflection Measurement"},
-      {"@id": "urn:ngm:class:rotary-encoder", "label": "Rotary Encoder"}
+      {
+        "@id": "urn:ngm:class:hookes-law",
+        "label": "Hooke's Law"
+      },
+      {
+        "@id": "urn:ngm:class:rotary-encoder",
+        "label": "Rotary Encoder"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:robo-human-robot-interaction", "label": "Human-Robot Interaction"},
-      {"@id": "urn:ngm:class:legged-locomotion", "label": "Legged Locomotion"},
-      {"@id": "urn:ngm:class:rehabilitation-robotics", "label": "Rehabilitation Robotics"}
+      {
+        "@id": "urn:ngm:class:robo-human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:legged-locomotion",
+        "label": "Legged Locomotion"
+      },
+      {
+        "@id": "urn:ngm:class:rehabilitation-robotics",
+        "label": "Rehabilitation Robotics"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-ts-15066", "label": "ISO TS 15066"},
-      {"@id": "urn:ngm:class:iso-10218", "label": "ISO 10218"}
+      {
+        "@id": "urn:ngm:class:iso-ts-15066",
+        "label": "ISO TS 15066"
+      },
+      {
+        "@id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:variable-stiffness-actuator", "label": "Variable Stiffness Actuator"},
-      {"@id": "urn:ngm:class:rigid-actuator", "label": "Rigid Actuator"},
-      {"@id": "urn:ngm:class:hydraulic-actuator", "label": "Hydraulic Actuator"}
+      {
+        "@id": "urn:ngm:class:variable-stiffness-actuator",
+        "label": "Variable Stiffness Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Rigid Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:hydraulic-actuator",
+        "label": "Hydraulic Actuator"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:wearable-robotics", "label": "Wearable Robotics"},
-      {"@id": "urn:ngm:class:prosthetics", "label": "Prosthetics"}
+      {
+        "@id": "urn:ngm:class:wearable-robotics",
+        "label": "Wearable Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:prosthetics",
+        "label": "Prosthetics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:backdrivability", "label": "Backdrivability"},
-      {"@id": "urn:ngm:class:torque-bandwidth-tradeoff", "label": "Torque-Bandwidth Tradeoff"},
-      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"}
+      {
+        "@id": "urn:ngm:class:backdrivability",
+        "label": "Backdrivability"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:sea-actuator", "label": "SEA Actuator"},
-    {"@id": "urn:ngm:class:series-spring-actuator", "label": "Series Spring Actuator"}
+    {
+      "@id": "urn:ngm:class:sea-actuator",
+      "label": "SEA Actuator"
+    },
+    {
+      "@id": "urn:ngm:class:series-spring-actuator",
+      "label": "Series Spring Actuator"
+    }
   ],
   "quality": 0.74,
   "provenance": {

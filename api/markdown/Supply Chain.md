@@ -37,52 +37,127 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:value-chain", "label": "Value Chain"},
-    {"@id": "urn:ngm:class:supply-network", "label": "Supply Network"}
+    {
+      "@id": "urn:ngm:class:value-chain",
+      "label": "Value Chain"
+    },
+    {
+      "@id": "urn:ngm:class:supply-network",
+      "label": "Supply Network"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"},
-      {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"},
-      {"@id": "urn:ngm:class:procurement", "label": "Procurement"},
-      {"@id": "urn:ngm:class:inventory-management", "label": "Inventory Management"},
-      {"@id": "urn:ngm:class:demand-forecasting", "label": "Demand Forecasting"}
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "@id": "urn:ngm:class:procurement",
+        "label": "Procurement"
+      },
+      {
+        "@id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      },
+      {
+        "@id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"},
-      {"@id": "urn:ngm:class:logistics-optimization", "label": "Logistics Optimization"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:logistics-optimization",
+        "label": "Logistics Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:just-in-time-manufacturing", "label": "Just-in-Time Manufacturing"},
-      {"@id": "urn:ngm:class:sustainability-reporting", "label": "SustainabilityReporting"},
-      {"@id": "urn:ngm:class:trade-compliance", "label": "Trade Compliance"}
+      {
+        "@id": "urn:ngm:class:just-in-time-manufacturing",
+        "label": "Just-in-Time Manufacturing"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability-reporting",
+        "label": "SustainabilityReporting"
+      },
+      {
+        "@id": "urn:ngm:class:trade-compliance",
+        "label": "Trade Compliance"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:enterprise-resource-planning", "label": "Enterprise Resource Planning"},
-      {"@id": "urn:ngm:class:iot", "label": "IoT"},
-      {"@id": "urn:ngm:class:data-integration", "label": "Data Integration"}
+      {
+        "@id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      },
+      {
+        "@id": "urn:ngm:class:iot",
+        "label": "IoT"
+      },
+      {
+        "@id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:gs1-standards", "label": "GS1 Standards"},
-      {"@id": "urn:ngm:class:iso-28000", "label": "ISO 28000"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:demand-chain", "label": "Demand Chain"}
+      {
+        "@id": "urn:ngm:class:gs1-standards",
+        "label": "GS1 Standards"
+      },
+      {
+        "@id": "urn:ngm:class:iso-28000",
+        "label": "ISO 28000"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:supply-chain-blockchain", "label": "Supply Chain Blockchain"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:supply-chain-blockchain",
+        "label": "Supply Chain Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:circular-economy", "label": "Circular Economy"},
-      {"@id": "urn:ngm:class:trade-finance", "label": "Trade Finance"},
-      {"@id": "urn:ngm:class:scope-3-emissions", "label": "Scope 3 Emissions"}
+      {
+        "@id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "@id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      },
+      {
+        "@id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      }
     ]
   },
   "quality": 0.72,

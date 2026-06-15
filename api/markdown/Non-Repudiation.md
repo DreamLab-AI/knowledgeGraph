@@ -374,14 +374,6 @@ public:: true
         "label": "Certificate Authority"
       },
       {
-        "@id": "urn:ngm:class:evidence-token",
-        "label": "Evidence Token"
-      },
-      {
-        "@id": "urn:ngm:class:revocation-service",
-        "label": "Revocation Service"
-      },
-      {
         "@id": "urn:ngm:class:trust-service-provider",
         "label": "Trust Service Provider"
       },
@@ -408,16 +400,12 @@ public:: true
         "label": "Certificate Revocation"
       },
       {
-        "@id": "urn:ngm:class:pki-x-509",
+        "@id": "urn:ngm:class:x-509-certificate",
         "label": "PKI X.509"
       },
       {
         "@id": "urn:ngm:class:private-key-management",
         "label": "Private Key Management"
-      },
-      {
-        "@id": "urn:ngm:class:secure-time-source",
-        "label": "Secure Time Source"
       },
       {
         "@id": "urn:ngm:class:hash-function",
@@ -430,16 +418,12 @@ public:: true
         "label": "Dispute Resolution"
       },
       {
-        "@id": "urn:ngm:class:electronic-commerce",
+        "@id": "urn:ngm:class:e-commerce",
         "label": "Electronic Commerce"
       },
       {
         "@id": "urn:ngm:class:legal-evidence",
         "label": "Legal Evidence"
-      },
-      {
-        "@id": "urn:ngm:class:transaction-verification",
-        "label": "Transaction Verification"
       },
       {
         "@id": "urn:ngm:class:accountability",
@@ -456,10 +440,6 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:cad-es",
-        "label": "CAdES"
-      },
-      {
         "@id": "urn:ngm:class:ed-dsa",
         "label": "EdDSA"
       },
@@ -468,15 +448,7 @@ public:: true
         "label": "OpenTimestamps"
       },
       {
-        "@id": "urn:ngm:class:pad-es",
-        "label": "PAdES"
-      },
-      {
-        "@id": "urn:ngm:class:rfc-3161-tsp",
-        "label": "RFC 3161 TSP"
-      },
-      {
-        "@id": "urn:ngm:class:rsa-signatures",
+        "@id": "urn:ngm:class:digital-signatures",
         "label": "RSA Signatures"
       },
       {
@@ -484,19 +456,11 @@ public:: true
         "label": "Schnorr Signature"
       },
       {
-        "@id": "urn:ngm:class:xad-es",
-        "label": "XAdES"
-      },
-      {
         "@id": "urn:ngm:class:ecdsa",
         "label": "ECDSA"
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:crl-certificate-revocation",
-        "label": "CRL Certificate Revocation"
-      },
       {
         "@id": "urn:ngm:class:ocsp",
         "label": "OCSP"
@@ -550,23 +514,15 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:blockchain-transaction-integrity",
-        "label": "Blockchain Transaction Integrity"
-      },
-      {
-        "@id": "urn:ngm:class:e-idas-compliance",
+        "@id": "urn:ngm:class:e-idas",
         "label": "eIDAS Compliance"
-      },
-      {
-        "@id": "urn:ngm:class:e-signature-law",
-        "label": "eSignature Law"
       },
       {
         "@id": "urn:ngm:class:financial-regulation",
         "label": "Financial Regulation"
       },
       {
-        "@id": "urn:ngm:class:gdpr-audit-trail",
+        "@id": "urn:ngm:class:audit-trail",
         "label": "GDPR Audit Trail"
       },
       {
@@ -576,32 +532,16 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:e-idas-regulation",
+        "@id": "urn:ngm:class:e-idas",
         "label": "eIDAS Regulation"
       },
       {
-        "@id": "urn:ngm:class:etsi-en-319-series",
+        "@id": "urn:ngm:class:etsi",
         "label": "ETSI EN 319 series"
       },
       {
         "@id": "urn:ngm:class:fips-186-5",
         "label": "FIPS 186-5"
-      },
-      {
-        "@id": "urn:ngm:class:iso-iec-13888",
-        "label": "ISO IEC 13888"
-      },
-      {
-        "@id": "urn:ngm:class:iso-iec-7498-2",
-        "label": "ISO IEC 7498-2"
-      },
-      {
-        "@id": "urn:ngm:class:nist-sp-800-208",
-        "label": "NIST SP 800-208"
-      },
-      {
-        "@id": "urn:ngm:class:rfc-3161",
-        "label": "RFC 3161"
       }
     ]
   },

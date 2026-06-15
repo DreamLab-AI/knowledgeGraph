@@ -42,10 +42,6 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:rag-pipeline",
-        "label": "RAG Pipeline"
-      },
-      {
         "id": "urn:ngm:class:agentic-rag",
         "label": "Agentic RAG"
       },

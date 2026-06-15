@@ -168,7 +168,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:secure-communication-channel",
+        "@id": "urn:ngm:class:secure-communication",
         "label": "Secure Communication Channel"
       },
       {
@@ -182,24 +182,6 @@ public:: true
       {
         "@id": "urn:ngm:class:identity-management",
         "label": "Identity Management"
-      }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:compliance-assurance",
-        "label": "Compliance Assurance"
-      },
-      {
-        "@id": "urn:ngm:class:malicious-control-prevention",
-        "label": "Malicious Control Prevention"
-      },
-      {
-        "@id": "urn:ngm:class:protected-data-transmission",
-        "label": "Protected Data Transmission"
-      },
-      {
-        "@id": "urn:ngm:class:secure-teleoperation",
-        "label": "Secure Teleoperation"
       }
     ],
     "bridgesTo": [

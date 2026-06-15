@@ -494,20 +494,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:air-supply-system",
-        "label": "Air Supply System"
-      },
-      {
         "@id": "urn:ngm:class:directional-control-valve",
         "label": "Directional Control Valve"
-      },
-      {
-        "@id": "urn:ngm:class:elastomeric-chamber",
-        "label": "Elastomeric Chamber"
-      },
-      {
-        "@id": "urn:ngm:class:fibre-reinforcement",
-        "label": "Fibre Reinforcement"
       },
       {
         "@id": "urn:ngm:class:mc-kibben-muscle",
@@ -536,24 +524,8 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:air-compressor",
-        "label": "Air Compressor"
-      },
-      {
-        "@id": "urn:ngm:class:compressed-air-supply",
-        "label": "Compressed Air Supply"
-      },
-      {
         "@id": "urn:ngm:class:directional-control-valves",
         "label": "Directional Control Valves"
-      },
-      {
-        "@id": "urn:ngm:class:filter-regulator-lubricator-unit",
-        "label": "Filter-Regulator-Lubricator Unit"
-      },
-      {
-        "@id": "urn:ngm:class:pneumatic-tubing",
-        "label": "Pneumatic Tubing"
       },
       {
         "@id": "urn:ngm:class:pressure-regulation",
@@ -562,27 +534,19 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:compliant-grasping",
+        "@id": "urn:ngm:class:robotic-grasping",
         "label": "Compliant Grasping"
-      },
-      {
-        "@id": "urn:ngm:class:explosion-proof-actuation",
-        "label": "Explosion-Proof Actuation"
-      },
-      {
-        "@id": "urn:ngm:class:hazardous-environment-operation",
-        "label": "Hazardous Environment Operation"
       },
       {
         "@id": "urn:ngm:class:rehabilitation-robotics",
         "label": "Rehabilitation Robotics"
       },
       {
-        "@id": "urn:ngm:class:safe-physical-interaction",
+        "@id": "urn:ngm:class:safe-human-robot-interaction",
         "label": "Safe Physical Interaction"
       },
       {
-        "@id": "urn:ngm:class:soft-locomotion",
+        "@id": "urn:ngm:class:locomotion",
         "label": "Soft Locomotion"
       },
       {
@@ -592,43 +556,11 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:fibre-reinforced-elastomer-actuation",
-        "label": "Fibre-Reinforced Elastomer Actuation"
-      },
-      {
-        "@id": "urn:ngm:class:fluidic-muscle-principle",
-        "label": "Fluidic Muscle Principle"
-      },
-      {
-        "@id": "urn:ngm:class:iso-15552-standard",
+        "@id": "urn:ngm:class:iso",
         "label": "ISO 15552 Standard"
-      },
-      {
-        "@id": "urn:ngm:class:iso-6432-standard",
-        "label": "ISO 6432 Standard"
-      },
-      {
-        "@id": "urn:ngm:class:mc-kibben-muscle-mechanics",
-        "label": "McKibben Muscle Mechanics"
-      },
-      {
-        "@id": "urn:ngm:class:pneu-net-architecture",
-        "label": "PneuNet Architecture"
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:carbon-fibre-reinforcement",
-        "label": "Carbon Fibre Reinforcement"
-      },
-      {
-        "@id": "urn:ngm:class:compressed-air",
-        "label": "Compressed Air"
-      },
-      {
-        "@id": "urn:ngm:class:elastomeric-materials",
-        "label": "Elastomeric Materials"
-      },
       {
         "@id": "urn:ngm:class:model-predictive-control",
         "label": "Model Predictive Control"
@@ -638,26 +570,14 @@ public:: true
         "label": "PID Control"
       },
       {
-        "@id": "urn:ngm:class:proportional-pressure-control",
+        "@id": "urn:ngm:class:proportional-control",
         "label": "Proportional Pressure Control"
       }
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:fluidic-logic",
-        "label": "Fluidic Logic"
-      },
-      {
-        "@id": "urn:ngm:class:robot-compliance",
-        "label": "Robot Compliance"
-      },
-      {
         "@id": "urn:ngm:class:series-elastic-actuator",
         "label": "Series Elastic Actuator"
-      },
-      {
-        "@id": "urn:ngm:class:soft-matter-physics",
-        "label": "Soft Matter Physics"
       },
       {
         "@id": "urn:ngm:class:variable-stiffness-actuator",
@@ -674,7 +594,7 @@ public:: true
         "label": "Collaborative Robotics"
       },
       {
-        "@id": "urn:ngm:class:exoskeleton-design",
+        "@id": "urn:ngm:class:exoskeleton",
         "label": "Exoskeleton Design"
       },
       {
@@ -686,34 +606,18 @@ public:: true
         "label": "Medical Robotics"
       },
       {
-        "@id": "urn:ngm:class:pick-and-place-robotics",
+        "@id": "urn:ngm:class:pick-and-place",
         "label": "Pick and Place Robotics"
-      },
-      {
-        "@id": "urn:ngm:class:soft-gripper-systems",
-        "label": "Soft Gripper Systems"
       }
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:iec-61000-emc-standards-for-control-valves",
+        "@id": "urn:ngm:class:emc-standard",
         "label": "IEC 61000 EMC Standards for Control Valves"
       },
       {
-        "@id": "urn:ngm:class:iso-15552",
+        "@id": "urn:ngm:class:iso",
         "label": "ISO 15552"
-      },
-      {
-        "@id": "urn:ngm:class:iso-4414-pneumatic-fluid-power",
-        "label": "ISO 4414 Pneumatic Fluid Power"
-      },
-      {
-        "@id": "urn:ngm:class:iso-6432",
-        "label": "ISO 6432"
-      },
-      {
-        "@id": "urn:ngm:class:nfpa-t3-21-3",
-        "label": "NFPA T3.21.3"
       }
     ]
   },

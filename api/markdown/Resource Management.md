@@ -70,16 +70,8 @@ public:: true
         "label": "Scheduler"
       },
       {
-        "@id": "urn:ngm:class:resource-pool",
-        "label": "Resource Pool"
-      },
-      {
         "@id": "urn:ngm:class:autoscaling",
         "label": "Autoscaling"
-      },
-      {
-        "@id": "urn:ngm:class:quota-management",
-        "label": "Quota Management"
       }
     ],
     "partOf": [
@@ -158,12 +150,6 @@ public:: true
       {
         "@id": "urn:ngm:class:microservices",
         "label": "Microservices"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:over-provisioning",
-        "label": "Over-Provisioning"
       }
     ],
     "bridgesTo": [

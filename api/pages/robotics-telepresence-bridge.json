@@ -23,12 +23,7 @@
         "label": "Haptic Feedback Telepresence"
       }
     ],
-    "enables": [
-      {
-        "id": "urn:ngm:class:hazardous-environment-access",
-        "label": "HazardousEnvironmentAccess"
-      }
-    ],
+    "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],

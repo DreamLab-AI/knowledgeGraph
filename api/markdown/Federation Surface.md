@@ -208,10 +208,6 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:http-endpoint",
-        "label": "HTTP Endpoint"
-      },
-      {
         "@id": "urn:ngm:class:json-data-interchange-format-ld-1-1-standard",
         "label": "JSON-LD 1.1 Standard"
       },
@@ -222,20 +218,16 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:automated-monitoring",
+        "@id": "urn:ngm:class:monitoring",
         "label": "Automated Monitoring"
       },
       {
-        "@id": "urn:ngm:class:blockchain-oracle-integration",
+        "@id": "urn:ngm:class:blockchain-oracle",
         "label": "Blockchain Oracle Integration"
       },
       {
         "@id": "urn:ngm:class:cross-system-querying",
         "label": "Cross-System Querying"
-      },
-      {
-        "@id": "urn:ngm:class:knowledge-graph-federation",
-        "label": "Knowledge Graph Federation"
       },
       {
         "@id": "urn:ngm:class:linked-data-consumption",

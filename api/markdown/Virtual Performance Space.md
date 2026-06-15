@@ -162,15 +162,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:audience-seating",
-        "label": "Audience Seating"
-      },
-      {
-        "@id": "urn:ngm:class:lighting-system",
+        "@id": "urn:ngm:class:dynamic-lighting",
         "label": "Lighting System"
       },
       {
-        "@id": "urn:ngm:class:social-interaction-features",
+        "@id": "urn:ngm:class:social-interaction",
         "label": "Social Interaction Features"
       },
       {
@@ -192,7 +188,7 @@ public:: true
         "label": "Real-Time Streaming"
       },
       {
-        "@id": "urn:ngm:class:social-presence-system",
+        "@id": "urn:ngm:class:social-presence",
         "label": "Social Presence System"
       },
       {
@@ -209,18 +205,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:hybrid-performances",
-        "label": "Hybrid Performances"
-      },
-      {
-        "@id": "urn:ngm:class:live-events",
-        "label": "Live Events"
-      },
-      {
-        "@id": "urn:ngm:class:social-gatherings",
-        "label": "Social Gatherings"
-      },
       {
         "@id": "urn:ngm:class:virtual-concerts",
         "label": "Virtual Concerts"

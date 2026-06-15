@@ -23,66 +23,174 @@ public:: true
   "definition": "A cloud platform is an integrated suite of managed infrastructure, runtime services, and developer tooling delivered over the internet that enables organisations to build, deploy, scale, and operate applications without owning physical hardware. Cloud platforms abstract away operational complexity through pay-as-you-go pricing, elastic scaling, and managed service lifecycles, spanning IaaS, PaaS, and SaaS delivery models. The dominant hyperscale providers — Amazon Web Services, Microsoft Azure, and Google Cloud Platform — offer hundreds of services covering compute, storage, networking, databases, AI/ML, security, and observability, forming the primary substrate for modern enterprise and AI workloads.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cloud-infrastructure",
+      "label": "Cloud Infrastructure"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:cloud-computing-platform", "label": "Cloud Computing Platform"},
-    {"@id": "urn:ngm:class:hyperscale-cloud", "label": "Hyperscale Cloud"}
+    {
+      "@id": "urn:ngm:class:cloud-computing-platform",
+      "label": "Cloud Computing Platform"
+    },
+    {
+      "@id": "urn:ngm:class:hyperscale-cloud",
+      "label": "Hyperscale Cloud"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:platform-service", "label": "Platform Service"},
-      {"@id": "urn:ngm:class:platform-layer", "label": "Platform Layer"},
-      {"@id": "urn:ngm:class:technology-infrastructure-domain-component", "label": "Infrastructure Component"},
-      {"@id": "urn:ngm:class:serverless-architecture", "label": "Serverless Architecture"},
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:container-orchestration", "label": "Container Orchestration"}
+      {
+        "@id": "urn:ngm:class:platform-service",
+        "label": "Platform Service"
+      },
+      {
+        "@id": "urn:ngm:class:platform-layer",
+        "label": "Platform Layer"
+      },
+      {
+        "@id": "urn:ngm:class:technology-infrastructure-domain-component",
+        "label": "Infrastructure Component"
+      },
+      {
+        "@id": "urn:ngm:class:serverless-architecture",
+        "label": "Serverless Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cloud-native-applications", "label": "Cloud-Native Applications"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-platform", "label": "Machine Learning Platform"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"},
-      {"@id": "urn:ngm:class:platform-engineering", "label": "Platform Engineering"},
-      {"@id": "urn:ngm:class:devops", "label": "DevOps"},
-      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"}
+      {
+        "@id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-platform",
+        "label": "Machine Learning Platform"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:platform-engineering",
+        "label": "Platform Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
-      {"@id": "urn:ngm:class:virtualisation", "label": "Virtualisation"},
-      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"}
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:virtualisation",
+        "label": "Virtualisation"
+      },
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:data-centre", "label": "Data Centre"},
-      {"@id": "urn:ngm:class:internet-protocol", "label": "Internet Protocol"}
+      {
+        "@id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "@id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"},
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"}
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"},
-      {"@id": "urn:ngm:class:finops", "label": "FinOps"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "@id": "urn:ngm:class:finops",
+        "label": "FinOps"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:technology-infrastructure-domain-architecture", "label": "Infrastructure Architecture"},
-      {"@id": "urn:ngm:class:service-oriented-architecture", "label": "Service Oriented Architecture"},
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
-      {"@id": "urn:ngm:class:platform-governance", "label": "Platform Governance"},
-      {"@id": "urn:ngm:class:multi-cloud-strategy", "label": "Multi-Cloud Strategy"}
+      {
+        "@id": "urn:ngm:class:technology-infrastructure-domain-architecture",
+        "label": "Infrastructure Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service Oriented Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:platform-governance",
+        "label": "Platform Governance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:on-premise-infrastructure", "label": "On-Premise Infrastructure"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:cloud-native-computing-foundation", "label": "Cloud Native Computing Foundation"},
-      {"@id": "urn:ngm:class:nist-cloud-computing", "label": "NIST Cloud Computing"}
+      {
+        "@id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
+      },
+      {
+        "@id": "urn:ngm:class:nist-cloud-computing",
+        "label": "NIST Cloud Computing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"},
-      {"@id": "urn:ngm:class:ai-inference-infrastructure", "label": "AI Inference Infrastructure"}
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "@id": "urn:ngm:class:inference-infrastructure",
+        "label": "AI Inference Infrastructure"
+      }
     ]
   },
   "quality": 0.75,

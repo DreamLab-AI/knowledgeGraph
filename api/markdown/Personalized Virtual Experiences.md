@@ -98,7 +98,7 @@ public:: true
         "label": "Natural Language Processing"
       },
       {
-        "@id": "urn:ngm:class:avatar-systems",
+        "@id": "urn:ngm:class:avatar-system",
         "label": "Avatar Systems"
       },
       {
@@ -108,7 +108,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:user-data-collection",
+        "@id": "urn:ngm:class:data-collection",
         "label": "User Data Collection"
       },
       {
@@ -122,7 +122,7 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:dynamic-content-generation",
+        "@id": "urn:ngm:class:content-generation",
         "label": "Dynamic Content Generation"
       },
       {
@@ -132,11 +132,11 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:shared-virtual-environment",
+        "@id": "urn:ngm:class:shared-virtual-space",
         "label": "Shared Virtual Environment"
       },
       {
-        "@id": "urn:ngm:class:static-virtual-experience",
+        "@id": "urn:ngm:class:virtual-experience",
         "label": "Static Virtual Experience"
       }
     ],

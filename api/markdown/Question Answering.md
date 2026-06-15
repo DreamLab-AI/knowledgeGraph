@@ -79,49 +79,101 @@ public:: true
   },
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
-      {"@id": "urn:ngm:class:reading-comprehension", "label": "Reading Comprehension"},
-      {"@id": "urn:ngm:class:language-model", "label": "Language Model"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:dialogue-system", "label": "Dialogue System"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:virtual-assistant", "label": "Virtual Assistant"},
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"}
+      {
+        "@id": "urn:ngm:class:dialogue-system",
+        "label": "Dialogue System"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-assistant",
+        "label": "Virtual Assistant"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:embedding", "label": "Embedding"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:extractive-qa", "label": "Extractive QA"},
-      {"@id": "urn:ngm:class:generative-qa", "label": "Generative QA"},
-      {"@id": "urn:ngm:class:open-domain-qa", "label": "Open-Domain QA"}
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:text-corpus", "label": "Text Corpus"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:text-corpus",
+        "label": "Text Corpus"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:document-retrieval", "label": "Document Retrieval"},
-      {"@id": "urn:ngm:class:text-summarization", "label": "Text Summarization"}
+      {
+        "@id": "urn:ngm:class:document-retrieval",
+        "label": "Document Retrieval"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:fact-verification", "label": "Fact Verification"},
-      {"@id": "urn:ngm:class:multi-hop-reasoning", "label": "Multi-Hop Reasoning"},
-      {"@id": "urn:ngm:class:visual-question-answering", "label": "Visual Question Answering"}
+      {
+        "@id": "urn:ngm:class:multi-hop-reasoning",
+        "label": "Multi-Hop Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:visual-question-answering",
+        "label": "Visual Question Answering"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
-      {"@id": "urn:ngm:class:enterprise-search", "label": "Enterprise Search"}
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-search",
+        "label": "Enterprise Search"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:qa-system", "label": "QA System"},
-    {"@id": "urn:ngm:class:automated-question-answering", "label": "Automated Question Answering"}
+    {
+      "@id": "urn:ngm:class:qa-system",
+      "label": "QA System"
+    },
+    {
+      "@id": "urn:ngm:class:automated-question-answering",
+      "label": "Automated Question Answering"
+    }
   ],
   "quality": 0.72,
   "provenance": {

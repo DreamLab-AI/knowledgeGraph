@@ -80,16 +80,6 @@ public:: true
     }
   ],
   "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:collaboration-tool-categorization",
-        "label": "Collaboration Tool Categorization"
-      },
-      {
-        "@id": "urn:ngm:class:creative-application-classification",
-        "label": "Creative Application Classification"
-      }
-    ],
     "partOf": [
       {
         "@id": "urn:ngm:class:etsi-domain-taxonomy",

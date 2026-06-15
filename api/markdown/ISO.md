@@ -24,63 +24,143 @@ alias:: ISO (International Organization for Standardization)
   "definition": "The International Organisation for Standardisation (ISO) is an independent, non-governmental international body comprising the national standards institutes of 167 countries, responsible for developing and publishing voluntary international standards across virtually every sector of industry, technology, and commerce. ISO standards are produced by technical committees composed of experts nominated by member bodies and are adopted through a consensus-based process requiring defined levels of national body approval. ISO standards span quality management, environmental management, information security, robotics, artificial intelligence, financial services, and hundreds of other domains. Published standards carry normative authority in many regulatory and procurement frameworks worldwide.",
   "domain": "governance",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:standards-body", "label": "Standards Body"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:iso-iec-jtc-1", "label": "ISO/IEC JTC 1"},
-      {"@id": "urn:ngm:class:technical-committee", "label": "Technical Committee"},
-      {"@id": "urn:ngm:class:iso-high-level-structure", "label": "ISO High Level Structure"}
+      {
+        "@id": "urn:ngm:class:iso-iec-jtc-1",
+        "label": "ISO/IEC JTC 1"
+      },
+      {
+        "@id": "urn:ngm:class:technical-committee",
+        "label": "Technical Committee"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:international-standards-ecosystem", "label": "International Standards Ecosystem"}
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "International Standards Ecosystem"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:consensus-process", "label": "Consensus Process"},
-      {"@id": "urn:ngm:class:national-standards-body", "label": "National Standards Body"}
+      {
+        "@id": "urn:ngm:class:consensus-process",
+        "label": "Consensus Process"
+      },
+      {
+        "@id": "urn:ngm:class:standards-body",
+        "label": "National Standards Body"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"},
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"},
-      {"@id": "urn:ngm:class:mutual-recognition-agreement", "label": "Mutual Recognition Agreement"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:voluntary-standard", "label": "Voluntary Standard"},
-      {"@id": "urn:ngm:class:management-system-standard", "label": "Management System Standard"}
+      {
+        "@id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:iso-iec-27001", "label": "ISO/IEC 27001"},
-      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO IEC 42001"},
-      {"@id": "urn:ngm:class:iso-9001", "label": "ISO 9001"},
-      {"@id": "urn:ngm:class:iso-14001", "label": "ISO 14001"}
+      {
+        "@id": "urn:ngm:class:iso-iec-27001",
+        "label": "ISO/IEC 27001"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "@id": "urn:ngm:class:iso-9001",
+        "label": "ISO 9001"
+      },
+      {
+        "@id": "urn:ngm:class:iso-14001",
+        "label": "ISO 14001"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:global-trade", "label": "Global Trade"},
-      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"},
-      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}
+      {
+        "@id": "urn:ngm:class:global-trade",
+        "label": "Global Trade"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec", "label": "ISO/IEC"}
+      {
+        "@id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ieee", "label": "IEEE"},
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"},
-      {"@id": "urn:ngm:class:w3c", "label": "W3C"}
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
-      {"@id": "urn:ngm:class:cybersecurity-framework", "label": "Cybersecurity Framework"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity-framework",
+        "label": "Cybersecurity Framework"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:technical-standard", "label": "Technical Standard"},
-      {"@id": "urn:ngm:class:iso-iec", "label": "ISO/IEC"},
-      {"@id": "urn:ngm:class:iec", "label": "IEC"},
-      {"@id": "urn:ngm:class:accreditation-body", "label": "Accreditation Body"}
+      {
+        "@id": "urn:ngm:class:technical-standard",
+        "label": "Technical Standard"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC"
+      },
+      {
+        "@id": "urn:ngm:class:iec",
+        "label": "IEC"
+      },
+      {
+        "@id": "urn:ngm:class:accreditation-body",
+        "label": "Accreditation Body"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:international-organization-for-standardization", "label": "International Organization for Standardization"}
+    {
+      "@id": "urn:ngm:class:international-organization-for-standardization",
+      "label": "International Organization for Standardization"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -138,24 +138,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:enforcement-module",
-        "label": "Enforcement Module"
-      },
-      {
-        "@id": "urn:ngm:class:event-emitter",
+        "@id": "urn:ngm:class:event-emission",
         "label": "Event Emitter"
-      },
-      {
-        "@id": "urn:ngm:class:payment-splitter",
-        "label": "Payment Splitter"
-      },
-      {
-        "@id": "urn:ngm:class:royalty-logic",
-        "label": "Royalty Logic"
-      },
-      {
-        "@id": "urn:ngm:class:royalty-registry",
-        "label": "Royalty Registry"
       }
     ],
     "requires": [
@@ -178,25 +162,13 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:automated-payment-enforcement",
-        "label": "Automated Payment Enforcement"
-      },
-      {
-        "@id": "urn:ngm:class:multi-recipient-distribution",
-        "label": "Multi-Recipient Distribution"
-      },
-      {
-        "@id": "urn:ngm:class:perpetual-creator-royalties",
+        "@id": "urn:ngm:class:creator-royalties",
         "label": "Perpetual Creator Royalties"
-      },
-      {
-        "@id": "urn:ngm:class:royalty-verification",
-        "label": "Royalty Verification"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:nft-standard-implementation",
+        "@id": "urn:ngm:class:nft-standard",
         "label": "NFT Standard Implementation"
       }
     ]

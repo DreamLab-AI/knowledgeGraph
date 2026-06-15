@@ -154,39 +154,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:appeal-process",
-        "label": "Appeal Process"
-      },
-      {
-        "@id": "urn:ngm:class:automated-filtering",
-        "label": "Automated Filtering"
-      },
-      {
-        "@id": "urn:ngm:class:content-classification-system",
-        "label": "Content Classification System"
-      },
-      {
-        "@id": "urn:ngm:class:human-review-workflow",
-        "label": "Human Review Workflow"
-      },
-      {
-        "@id": "urn:ngm:class:policy-enforcement-engine",
+        "@id": "urn:ngm:class:policy-engine",
         "label": "Policy Enforcement Engine"
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:content-analysis-tools",
-        "label": "Content Analysis Tools"
-      },
-      {
-        "@id": "urn:ngm:class:moderation-policy",
-        "label": "Moderation Policy"
-      },
-      {
-        "@id": "urn:ngm:class:reviewer-training-program",
-        "label": "Reviewer Training Program"
-      },
       {
         "@id": "urn:ngm:class:community-standards",
         "label": "Community Standards"
@@ -194,29 +166,17 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:community-guidelines-enforcement",
-        "label": "Community Guidelines Enforcement"
-      },
-      {
-        "@id": "urn:ngm:class:harmful-content-prevention",
-        "label": "Harmful Content Prevention"
-      },
-      {
-        "@id": "urn:ngm:class:safe-user-experience",
-        "label": "Safe User Experience"
-      },
-      {
         "@id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:platform-governance-system",
+        "@id": "urn:ngm:class:platform-governance",
         "label": "Platform Governance System"
       },
       {
-        "@id": "urn:ngm:class:trust-and-safety-infrastructure",
+        "@id": "urn:ngm:class:trust-and-safety",
         "label": "Trust and Safety Infrastructure"
       }
     ]

@@ -101,10 +101,6 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:intelligent-transport-system",
-        "label": "Intelligent Transport System"
-      },
-      {
         "@id": "urn:ngm:class:smart-grid",
         "label": "Smart Grid"
       },
@@ -129,16 +125,6 @@ public:: true
       {
         "@id": "urn:ngm:class:open-data",
         "label": "Open Data"
-      }
-    ],
-    "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:iso-37120",
-        "label": "ISO 37120"
-      },
-      {
-        "@id": "urn:ngm:class:itu-y2060",
-        "label": "ITU-T Y.2060"
       }
     ],
     "dependsOn": [
@@ -177,12 +163,6 @@ public:: true
       {
         "@id": "urn:ngm:class:sustainability",
         "label": "Sustainability"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:legacy-city-infrastructure",
-        "label": "Legacy City Infrastructure"
       }
     ]
   },

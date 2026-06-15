@@ -23,52 +23,109 @@ public:: true
   "definition": "The Jacobian matrix is the matrix of all first-order partial derivatives of a vector-valued function, representing the best linear approximation to that function near a point and encoding how each output component changes with respect to each input variable. In robotics, the geometric and analytic Jacobian matrices map from joint velocity space to end-effector Cartesian velocity space, providing the fundamental tool for differential kinematics, inverse kinematics resolution, singularity analysis, and force-torque transmission between joint and task space. The Jacobian's rank and condition number determine the manipulability of a robot configuration and identify singular configurations where the end-effector loses degrees of freedom in certain directions.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:differential-kinematics", "label": "Differential Kinematics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:differential-kinematics",
+      "label": "Differential Kinematics"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"},
-      {"@id": "urn:ngm:class:forward-kinematics", "label": "Forward Kinematics"},
-      {"@id": "urn:ngm:class:partial-derivatives", "label": "Partial Derivatives"},
-      {"@id": "urn:ngm:class:linear-algebra", "label": "Linear Algebra"},
-      {"@id": "urn:ngm:class:moore-penrose-pseudoinverse", "label": "Moore-Penrose Pseudoinverse"}
+      {
+        "@id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
-      {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:singularity-analysis", "label": "Singularity Analysis"},
-      {"@id": "urn:ngm:class:force-torque-control", "label": "Force-Torque Control"},
-      {"@id": "urn:ngm:class:task-space-control", "label": "Task Space Control"}
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:singularity-analysis",
+        "label": "Singularity Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:force-torque-control",
+        "label": "Force-Torque Control"
+      },
+      {
+        "@id": "urn:ngm:class:task-space-control",
+        "label": "Task Space Control"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:multivariate-calculus", "label": "Multivariate Calculus"},
-      {"@id": "urn:ngm:class:denavit-hartenberg-parameters", "label": "Denavit-Hartenberg Parameters"}
+      {
+        "@id": "urn:ngm:class:denavit-hartenberg-parameters",
+        "label": "Denavit-Hartenberg Parameters"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:jacobian-determinant", "label": "Jacobian Determinant"},
-      {"@id": "urn:ngm:class:null-space-projection", "label": "Null Space Projection"}
+      {
+        "@id": "urn:ngm:class:jacobian-determinant",
+        "label": "Jacobian Determinant"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:robot-dynamics", "label": "Robot Dynamics"}
+      {
+        "@id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:robot-manipulation", "label": "Robot Manipulation"},
-      {"@id": "urn:ngm:class:trajectory-control", "label": "Trajectory Control"},
-      {"@id": "urn:ngm:class:manipulability", "label": "Manipulability"},
-      {"@id": "urn:ngm:class:redundancy-resolution", "label": "Redundancy Resolution"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:hessian-matrix", "label": "Hessian Matrix"}
+      {
+        "@id": "urn:ngm:class:robot-manipulation",
+        "label": "Robot Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory-control",
+        "label": "Trajectory Control"
+      },
+      {
+        "@id": "urn:ngm:class:rb-0032-manipulability",
+        "label": "Manipulability"
+      },
+      {
+        "@id": "urn:ngm:class:redundancy-resolution",
+        "label": "Redundancy Resolution"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:neural-network-backpropagation", "label": "Neural Network Backpropagation"},
-      {"@id": "urn:ngm:class:differentiable-simulation", "label": "Differentiable Simulation"},
-      {"@id": "urn:ngm:class:coordinate-transformation", "label": "Coordinate Transformation"}
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Neural Network Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:coordinate-transformation",
+        "label": "Coordinate Transformation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:jacobian", "label": "Jacobian"},
-    {"@id": "urn:ngm:class:kinematic-jacobian", "label": "Kinematic Jacobian"}
+    {
+      "@id": "urn:ngm:class:jacobian",
+      "label": "Jacobian"
+    },
+    {
+      "@id": "urn:ngm:class:kinematic-jacobian",
+      "label": "Kinematic Jacobian"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

@@ -61,47 +61,111 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:approximate-nearest-neighbor", "label": "Approximate Nearest Neighbor"},
-      {"@id": "urn:ngm:class:hnsw", "label": "HNSW"},
-      {"@id": "urn:ngm:class:locality-sensitive-hashing", "label": "Locality-Sensitive Hashing"},
-      {"@id": "urn:ngm:class:inverted-file-index", "label": "Inverted File Index"}
+      {
+        "@id": "urn:ngm:class:hnsw-index",
+        "label": "HNSW"
+      },
+      {
+        "@id": "urn:ngm:class:locality-sensitive-hashing",
+        "label": "Locality-Sensitive Hashing"
+      },
+      {
+        "@id": "urn:ngm:class:inverted-index",
+        "label": "Inverted File Index"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:vector-embedding", "label": "Vector Embedding"},
-      {"@id": "urn:ngm:class:distance-metric", "label": "Distance Metric"}
+      {
+        "@id": "urn:ngm:class:vector-embedding",
+        "label": "Vector Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:distance-metric",
+        "label": "Distance Metric"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:recommendation-system", "label": "Recommendation System"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:image-retrieval", "label": "Image Retrieval"}
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:image-retrieval",
+        "label": "Image Retrieval"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"}
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cosine-similarity", "label": "Cosine Similarity"},
-      {"@id": "urn:ngm:class:euclidean-distance", "label": "Euclidean Distance"},
-      {"@id": "urn:ngm:class:kd-tree", "label": "KD-Tree"}
+      {
+        "@id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
+      },
+      {
+        "@id": "urn:ngm:class:euclidean-distance",
+        "label": "Euclidean Distance"
+      },
+      {
+        "@id": "urn:ngm:class:kd-tree",
+        "label": "KD-Tree"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:exact-search", "label": "Exact Search"},
-      {"@id": "urn:ngm:class:keyword-search", "label": "Keyword Search"}
+      {
+        "@id": "urn:ngm:class:keyword-search",
+        "label": "Keyword Search"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-indexing", "label": "Spatial Indexing"},
-      {"@id": "urn:ngm:class:knowledge-graph-embedding", "label": "Knowledge Graph Embedding"}
+      {
+        "@id": "urn:ngm:class:spatial-index",
+        "label": "Spatial Indexing"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-embedding",
+        "label": "Knowledge Graph Embedding"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:faiss", "label": "FAISS"},
-      {"@id": "urn:ngm:class:dimensionality-reduction", "label": "Dimensionality Reduction"},
-      {"@id": "urn:ngm:class:quantisation", "label": "Quantisation"}
+      {
+        "@id": "urn:ngm:class:faiss",
+        "label": "FAISS"
+      },
+      {
+        "@id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "@id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ann-search", "label": "ANN Search"},
-    {"@id": "urn:ngm:class:vector-similarity-search", "label": "Vector Similarity Search"}
+    {
+      "@id": "urn:ngm:class:ann-search",
+      "label": "ANN Search"
+    },
+    {
+      "@id": "urn:ngm:class:vector-similarity-search",
+      "label": "Vector Similarity Search"
+    }
   ],
   "quality": 0.74,
   "provenance": {

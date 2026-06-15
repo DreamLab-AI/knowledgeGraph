@@ -55,61 +55,153 @@ public:: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:encoder-decoder-architecture", "label": "Encoder Decoder Architecture"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+      {
+        "@id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder Decoder Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:multi-head-self-attention", "label": "Multi Head Self Attention"},
-      {"@id": "urn:ngm:class:feed-forward-network", "label": "Feed Forward Network"},
-      {"@id": "urn:ngm:class:layer-normalisation", "label": "Layer Normalisation"},
-      {"@id": "urn:ngm:class:residual-connection", "label": "Residual Connection"}
+      {
+        "@id": "urn:ngm:class:multi-head-self-attention",
+        "label": "Multi Head Self Attention"
+      },
+      {
+        "@id": "urn:ngm:class:feed-forward-network",
+        "label": "Feed Forward Network"
+      },
+      {
+        "@id": "urn:ngm:class:layer-normalisation",
+        "label": "Layer Normalisation"
+      },
+      {
+        "@id": "urn:ngm:class:residual-connection",
+        "label": "Residual Connection"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:positional-encoding", "label": "Positional Encoding"},
-      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"}
+      {
+        "@id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
-      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"},
-      {"@id": "urn:ngm:class:contextual-embedding", "label": "Contextual Embedding"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:contextual-embedding",
+        "label": "Contextual Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:embedding-layer", "label": "Embedding Layer"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+      {
+        "@id": "urn:ngm:class:embedding-layer",
+        "label": "Embedding Layer"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:representation-learning", "label": "Representation Learning"},
-      {"@id": "urn:ngm:class:bidirectional-context", "label": "Bidirectional Context"}
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:sequence-classification", "label": "Sequence Classification"},
-      {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:classification",
+        "label": "Sequence Classification"
+      },
+      {
+        "@id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:decoder", "label": "Decoder"},
-      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"}
+      {
+        "@id": "urn:ngm:class:decoder",
+        "label": "Decoder"
+      },
+      {
+        "@id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:matrix-multiplication", "label": "Matrix Multiplication"},
-      {"@id": "urn:ngm:class:softmax-function", "label": "Softmax Function"}
+      {
+        "@id": "urn:ngm:class:matrix-multiplication",
+        "label": "Matrix Multiplication"
+      },
+      {
+        "@id": "urn:ngm:class:softmax-function",
+        "label": "Softmax Function"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bert", "label": "BERT"},
-      {"@id": "urn:ngm:class:roberta", "label": "RoBERTa"},
-      {"@id": "urn:ngm:class:t5-model", "label": "T5 Model"}
+      {
+        "@id": "urn:ngm:class:bert",
+        "label": "BERT"
+      },
+      {
+        "@id": "urn:ngm:class:roberta",
+        "label": "RoBERTa"
+      },
+      {
+        "@id": "urn:ngm:class:t5-model",
+        "label": "T5 Model"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:multimodal-model", "label": "Multimodal Model"},
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"}
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-models",
+        "label": "Multimodal Model"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:transformer-encoder", "label": "Transformer Encoder"},
-    {"@id": "urn:ngm:class:encoder-stack", "label": "Encoder Stack"}
+    {
+      "@id": "urn:ngm:class:transformer-encoder",
+      "label": "Transformer Encoder"
+    },
+    {
+      "@id": "urn:ngm:class:encoder-stack",
+      "label": "Encoder Stack"
+    }
   ],
   "quality": 0.72,
   "provenance": {

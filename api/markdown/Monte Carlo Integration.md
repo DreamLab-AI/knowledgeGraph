@@ -75,7 +75,7 @@ public:: true
         "label": "Probability Distribution"
       },
       {
-        "@id": "urn:ngm:class:pseudorandom-number-generator",
+        "@id": "urn:ngm:class:random-number-generator",
         "label": "Pseudorandom Number Generator"
       }
     ],
@@ -133,7 +133,7 @@ public:: true
         "label": "Central Limit Theorem"
       },
       {
-        "@id": "urn:ngm:class:statistical-sampling",
+        "@id": "urn:ngm:class:sampling",
         "label": "Statistical Sampling"
       }
     ],

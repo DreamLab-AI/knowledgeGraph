@@ -23,54 +23,95 @@ public:: true
   "definition": "Programmatic advertising is the automated buying and selling of digital advertising inventory through software platforms and real-time auctions, replacing manual insertion orders with algorithmic matching of advertiser bids to publisher ad slots. It encompasses demand-side platforms, supply-side platforms, ad exchanges, and data management systems that collectively orchestrate the delivery of targeted advertisements at scale.",
   "domain": "data",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:advertising", "label": "Advertising"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:advertising",
+      "label": "Advertising"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:demand-side-platform", "label": "Demand-Side Platform"},
-      {"@id": "urn:ngm:class:supply-side-platform", "label": "Supply-Side Platform"},
-      {"@id": "urn:ngm:class:ad-exchange", "label": "Ad Exchange"},
-      {"@id": "urn:ngm:class:data-management-platform", "label": "Data Management Platform"}
+      {
+        "@id": "urn:ngm:class:data-management-platform",
+        "label": "Data Management Platform"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:real-time-bidding", "label": "Real-Time Bidding"},
-      {"@id": "urn:ngm:class:identity-resolution", "label": "Identity Resolution"},
-      {"@id": "urn:ngm:class:data-privacy", "label": "Data Privacy"}
+      {
+        "@id": "urn:ngm:class:identity-resolution",
+        "label": "Identity Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning-discipline-model", "label": "Machine Learning Model"},
-      {"@id": "urn:ngm:class:auction-mechanism", "label": "Auction Mechanism"},
-      {"@id": "urn:ngm:class:audience-segmentation", "label": "Audience Segmentation"},
-      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "@id": "urn:ngm:class:auction-mechanism",
+        "label": "Auction Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:audience-segmentation",
+        "label": "Audience Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:targeted-advertising", "label": "Targeted Advertising"},
-      {"@id": "urn:ngm:class:attribution-measurement", "label": "Attribution Measurement"}
+      {
+        "@id": "urn:ngm:class:targeted-advertising",
+        "label": "Targeted Advertising"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:openrtb-protocol", "label": "OpenRTB Protocol"},
-      {"@id": "urn:ngm:class:first-party-data", "label": "First-Party Data"}
+      {
+        "@id": "urn:ngm:class:first-party-data",
+        "label": "First-Party Data"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:connected-tv-advertising", "label": "Connected TV Advertising"},
-      {"@id": "urn:ngm:class:retail-media-network", "label": "Retail Media Network"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:direct-media-buying", "label": "Direct Media Buying"}
+      {
+        "@id": "urn:ngm:class:advertising",
+        "label": "Connected TV Advertising"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:data-clean-room", "label": "Data Clean Room"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:data-clean-room",
+        "label": "Data Clean Room"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:advertising-and-marketing", "label": "Advertising and Marketing"},
-      {"@id": "urn:ngm:class:digital-marketing", "label": "Digital Marketing"},
-      {"@id": "urn:ngm:class:header-bidding", "label": "Header Bidding"},
-      {"@id": "urn:ngm:class:brand-safety", "label": "Brand Safety"},
-      {"@id": "urn:ngm:class:contextual-targeting", "label": "Contextual Targeting"}
+      {
+        "@id": "urn:ngm:class:advertising-and-marketing",
+        "label": "Advertising and Marketing"
+      },
+      {
+        "@id": "urn:ngm:class:digital-marketing",
+        "label": "Digital Marketing"
+      },
+      {
+        "@id": "urn:ngm:class:safety",
+        "label": "Brand Safety"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:automated-media-buying", "label": "Automated Media Buying"}
+    {
+      "@id": "urn:ngm:class:automated-media-buying",
+      "label": "Automated Media Buying"
+    }
   ],
   "quality": 0.72,
   "provenance": {

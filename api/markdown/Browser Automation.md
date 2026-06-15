@@ -23,56 +23,117 @@ public:: true
   "definition": "Browser Automation is the programmatic control of web browsers to execute tasks—navigation, form submission, data extraction, and UI interaction—without direct human input. It spans a spectrum from low-level Chrome DevTools Protocol (CDP) scripting and WebDriver-based frameworks to high-level tools such as Playwright and Puppeteer, as well as AI-driven computer-use agents that perceive and act upon rendered page content. Browser automation underpins modern software testing pipelines, robotic process automation, and agentic AI workflows that must interact with web-based services. The field has evolved rapidly with the emergence of large language model agents capable of interpreting visual page state and generating action sequences autonomously.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:workflow-automation",
+      "label": "Workflow Automation"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:computer-use-and-browser-agents", "label": "Computer Use and Browser Agents"},
-      {"@id": "urn:ngm:class:web-scraping", "label": "Web Scraping"},
-      {"@id": "urn:ngm:class:software-testing", "label": "Software Testing"},
-      {"@id": "urn:ngm:class:robotic-process-automation", "label": "Robotic Process Automation"},
-      {"@id": "urn:ngm:class:headless-browser", "label": "Headless Browser"},
-      {"@id": "urn:ngm:class:dom-manipulation", "label": "DOM Manipulation"}
+      {
+        "@id": "urn:ngm:class:computer-use-and-browser-agents",
+        "label": "Computer Use and Browser Agents"
+      },
+      {
+        "@id": "urn:ngm:class:web-scraping",
+        "label": "Web Scraping"
+      },
+      {
+        "@id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "@id": "urn:ngm:class:headless-browser",
+        "label": "Headless Browser"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:customer-service-automation", "label": "Customer Service Automation"},
-      {"@id": "urn:ngm:class:testing-infrastructure", "label": "Testing Infrastructure"},
-      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"},
-      {"@id": "urn:ngm:class:end-to-end-testing", "label": "End-to-End Testing"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+      {
+        "@id": "urn:ngm:class:customer-service-automation",
+        "label": "Customer Service Automation"
+      },
+      {
+        "@id": "urn:ngm:class:testing-infrastructure",
+        "label": "Testing Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:testing-process", "label": "Testing Process"},
-      {"@id": "urn:ngm:class:chrome-devtools-protocol", "label": "Chrome DevTools Protocol"},
-      {"@id": "urn:ngm:class:webdriver", "label": "WebDriver"},
-      {"@id": "urn:ngm:class:javascript", "label": "JavaScript"}
+      {
+        "@id": "urn:ngm:class:testing-process",
+        "label": "Testing Process"
+      },
+      {
+        "@id": "urn:ngm:class:javascript",
+        "label": "JavaScript"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:adversarial-testing", "label": "Adversarial Testing"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"},
-      {"@id": "urn:ngm:class:accessibility-testing", "label": "Accessibility Testing"},
-      {"@id": "urn:ngm:class:regression-testing", "label": "Regression Testing"}
+      {
+        "@id": "urn:ngm:class:adversarial-testing",
+        "label": "Adversarial Testing"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility-audit-tool",
+        "label": "Accessibility Testing"
+      },
+      {
+        "@id": "urn:ngm:class:regression-testing",
+        "label": "Regression Testing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:web-browser", "label": "Web Browser"},
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:w3c-webdriver-standard", "label": "W3C WebDriver Standard"}
+      {
+        "@id": "urn:ngm:class:web-browser",
+        "label": "Web Browser"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:manual-testing", "label": "Manual Testing"}
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:security", "label": "Security"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:web-automation", "label": "Web Automation"},
-    {"@id": "urn:ngm:class:browser-scripting", "label": "Browser Scripting"}
+    {
+      "@id": "urn:ngm:class:web-automation",
+      "label": "Web Automation"
+    },
+    {
+      "@id": "urn:ngm:class:browser-scripting",
+      "label": "Browser Scripting"
+    }
   ],
   "quality": 0.72,
   "provenance": {

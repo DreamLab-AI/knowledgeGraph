@@ -16,16 +16,7 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:advertising-revenue-share",
-        "label": "Advertising Revenue Share"
-      },
-      {
-        "id": "urn:ngm:class:merchandise-sales",
-        "label": "Merchandise Sales"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:audience-engagement",
@@ -48,33 +39,20 @@
       {
         "id": "urn:ngm:class:non-fungible-token-nft",
         "label": "Non-Fungible Token (NFT)"
-      },
-      {
-        "id": "urn:ngm:class:fan-ownership",
-        "label": "Fan Ownership"
-      },
-      {
-        "id": "urn:ngm:class:direct-to-consumer",
-        "label": "Direct-to-Consumer"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:content-distribution-platform",
+        "id": "urn:ngm:class:content-distribution",
         "label": "Content Distribution Platform"
       },
       {
-        "id": "urn:ngm:class:digital-payment-infrastructure",
+        "id": "urn:ngm:class:digital-payment-system",
         "label": "Digital Payment Infrastructure"
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:traditional-media-licensing",
-        "label": "Traditional Media Licensing"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:blockchain",
@@ -97,10 +75,6 @@
       {
         "id": "urn:ngm:class:royalty-distribution",
         "label": "Royalty Distribution"
-      },
-      {
-        "id": "urn:ngm:class:subscription-model",
-        "label": "Subscription Model"
       },
       {
         "id": "urn:ngm:class:payment-processing",

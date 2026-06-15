@@ -19,12 +19,8 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:x509-certificate",
+        "id": "urn:ngm:class:x-509-certificate",
         "label": "X.509 Certificate"
-      },
-      {
-        "id": "urn:ngm:class:cipher-suite",
-        "label": "Cipher Suite"
       },
       {
         "id": "urn:ngm:class:tcp-ip",
@@ -51,7 +47,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       },
       {

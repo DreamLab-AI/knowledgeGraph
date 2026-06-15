@@ -93,30 +93,8 @@ alias:: Analog-to-Digital Converter
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:resolution-bits",
-        "label": "Resolution Bits"
-      },
-      {
-        "@id": "urn:ngm:class:sampling-rate",
-        "label": "Sampling Rate"
-      },
-      {
         "@id": "urn:ngm:class:signal-conditioning",
         "label": "Signal Conditioning"
-      }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:digital-audio-recording",
-        "label": "Digital Audio Recording"
-      },
-      {
-        "@id": "urn:ngm:class:digital-imaging",
-        "label": "Digital Imaging"
-      },
-      {
-        "@id": "urn:ngm:class:sensor-data-processing",
-        "label": "Sensor Data Processing"
       }
     ]
   },

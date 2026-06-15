@@ -27,7 +27,7 @@
         "label": "Oracle"
       },
       {
-        "id": "urn:ngm:class:ethereum-wallet",
+        "id": "urn:ngm:class:wallet",
         "label": "Ethereum Wallet"
       }
     ],
@@ -45,10 +45,6 @@
         "label": "Collateralised Borrowing"
       },
       {
-        "id": "urn:ngm:class:on-chain-arbitrage",
-        "label": "On-Chain Arbitrage"
-      },
-      {
         "id": "urn:ngm:class:self-liquidation",
         "label": "Self-Liquidation"
       }
@@ -58,19 +54,11 @@
       {
         "id": "urn:ngm:class:on-chain-governance",
         "label": "On-chain Governance"
-      },
-      {
-        "id": "urn:ngm:class:algorithmic-interest-rate",
-        "label": "Algorithmic Interest Rate"
-      },
-      {
-        "id": "urn:ngm:class:atoken",
-        "label": "aToken"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:compound-protocol",
+        "id": "urn:ngm:class:compound",
         "label": "Compound Protocol"
       },
       {
@@ -83,10 +71,6 @@
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:ai-driven-trading",
-        "label": "AI-Driven Trading"
-      },
       {
         "id": "urn:ngm:class:risk-modelling",
         "label": "Risk Modelling"
@@ -133,10 +117,6 @@
       {
         "id": "urn:ngm:class:cross-chain-bridge",
         "label": "Cross-Chain Bridge"
-      },
-      {
-        "id": "urn:ngm:class:gho-stablecoin",
-        "label": "GHO Stablecoin"
       }
     ]
   },

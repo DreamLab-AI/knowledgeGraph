@@ -18,10 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:embedding-matrix",
-        "label": "Embedding Matrix"
-      },
-      {
         "id": "urn:ngm:class:vocabulary",
         "label": "Vocabulary"
       }
@@ -60,12 +56,7 @@
         "label": "Gradient Descent"
       }
     ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:distributed-representation",
-        "label": "Distributed Representation"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:one-hot-encoding",
@@ -133,10 +124,6 @@
       {
         "id": "urn:ngm:class:contextual-embedding",
         "label": "Contextual Embedding"
-      },
-      {
-        "id": "urn:ngm:class:weight-tying",
-        "label": "Weight Tying"
       },
       {
         "id": "urn:ngm:class:hidden-state",

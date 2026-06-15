@@ -447,44 +447,28 @@ alias:: BC-0489-consumer-protection
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:adr-schemes",
-        "label": "ADR Schemes"
-      },
-      {
-        "@id": "urn:ngm:class:algorithmic-accountability-rules",
+        "@id": "urn:ngm:class:algorithmic-accountability",
         "label": "Algorithmic Accountability Rules"
-      },
-      {
-        "@id": "urn:ngm:class:collective-redress",
-        "label": "Collective Redress"
       },
       {
         "@id": "urn:ngm:class:complaint-infrastructure",
         "label": "Complaint Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:dark-pattern-prohibition",
-        "label": "Dark Pattern Prohibition"
-      },
-      {
         "@id": "urn:ngm:class:disclosure-requirements",
         "label": "Disclosure Requirements"
       },
       {
-        "@id": "urn:ngm:class:enforcement-powers",
+        "@id": "urn:ngm:class:enforcement-mechanism",
         "label": "Enforcement Powers"
       },
       {
-        "@id": "urn:ngm:class:product-safety-standards",
+        "@id": "urn:ngm:class:safety-standard",
         "label": "Product Safety Standards"
       },
       {
-        "@id": "urn:ngm:class:redress-mechanisms",
+        "@id": "urn:ngm:class:redress-procedure",
         "label": "Redress Mechanisms"
-      },
-      {
-        "@id": "urn:ngm:class:statutory-rights",
-        "label": "Statutory Rights"
       }
     ],
     "requires": [
@@ -497,50 +481,14 @@ alias:: BC-0489-consumer-protection
         "label": "Complaint Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:cross-border-cooperation",
-        "label": "Cross-border Cooperation"
-      },
-      {
-        "@id": "urn:ngm:class:evidence-standards",
-        "label": "Evidence Standards"
-      },
-      {
-        "@id": "urn:ngm:class:judicial-oversight",
-        "label": "Judicial Oversight"
-      },
-      {
         "@id": "urn:ngm:class:regulatory-authority",
         "label": "Regulatory Authority"
-      },
-      {
-        "@id": "urn:ngm:class:technical-audit-capability",
-        "label": "Technical Audit Capability"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:ai-product-safety",
-        "label": "AI Product Safety"
-      },
-      {
-        "@id": "urn:ngm:class:consumer-redress",
+        "@id": "urn:ngm:class:redress-procedure",
         "label": "Consumer Redress"
-      },
-      {
-        "@id": "urn:ngm:class:fair-algorithmic-pricing",
-        "label": "Fair Algorithmic Pricing"
-      },
-      {
-        "@id": "urn:ngm:class:informed-purchasing-decisions",
-        "label": "Informed Purchasing Decisions"
-      },
-      {
-        "@id": "urn:ngm:class:market-fairness",
-        "label": "Market Fairness"
-      },
-      {
-        "@id": "urn:ngm:class:synthetic-content-accountability",
-        "label": "Synthetic Content Accountability"
       },
       {
         "@id": "urn:ngm:class:trust-in-digital-platforms",
@@ -549,28 +497,8 @@ alias:: BC-0489-consumer-protection
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:ai-act-product-safety",
-        "label": "AI Act Product Safety"
-      },
-      {
-        "@id": "urn:ngm:class:cma-strategic-market-status",
-        "label": "CMA Strategic Market Status"
-      },
-      {
-        "@id": "urn:ngm:class:consumer-duty-fca",
+        "@id": "urn:ngm:class:fca-consumer-duty",
         "label": "Consumer Duty FCA"
-      },
-      {
-        "@id": "urn:ngm:class:digital-markets-competition-and-consumers-act-2024",
-        "label": "Digital Markets Competition and Consumers Act 2024"
-      },
-      {
-        "@id": "urn:ngm:class:eu-consumer-rights-directive",
-        "label": "EU Consumer Rights Directive"
-      },
-      {
-        "@id": "urn:ngm:class:ftc-unfair-and-deceptive-practices",
-        "label": "FTC Unfair and Deceptive Practices"
       },
       {
         "@id": "urn:ngm:class:digital-services-act",
@@ -583,28 +511,8 @@ alias:: BC-0489-consumer-protection
         "label": "Algorithmic Auditing"
       },
       {
-        "@id": "urn:ngm:class:collective-proceedings",
-        "label": "Collective Proceedings"
-      },
-      {
-        "@id": "urn:ngm:class:complaint-analytics",
-        "label": "Complaint Analytics"
-      },
-      {
-        "@id": "urn:ngm:class:dark-pattern-detection",
-        "label": "Dark Pattern Detection"
-      },
-      {
         "@id": "urn:ngm:class:enforcement-action",
         "label": "Enforcement Action"
-      },
-      {
-        "@id": "urn:ngm:class:market-investigations",
-        "label": "Market Investigations"
-      },
-      {
-        "@id": "urn:ngm:class:synthetic-content-detection",
-        "label": "Synthetic Content Detection"
       }
     ],
     "relatedTo": [
@@ -663,42 +571,18 @@ alias:: BC-0489-consumer-protection
         "label": "Digital Inclusion"
       },
       {
-        "@id": "urn:ngm:class:fair-trading",
-        "label": "Fair Trading"
-      },
-      {
         "@id": "urn:ngm:class:informed-consent",
         "label": "Informed Consent"
       },
       {
         "@id": "urn:ngm:class:market-efficiency",
         "label": "Market Efficiency"
-      },
-      {
-        "@id": "urn:ngm:class:vulnerable-consumer-protection",
-        "label": "Vulnerable Consumer Protection"
       }
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:asa",
-        "label": "ASA"
-      },
-      {
-        "@id": "urn:ngm:class:cma",
-        "label": "CMA"
-      },
-      {
-        "@id": "urn:ngm:class:eu-consumer-protection-cooperation-network",
-        "label": "EU Consumer Protection Cooperation Network"
-      },
-      {
         "@id": "urn:ngm:class:financial-conduct-authority",
         "label": "Financial Conduct Authority"
-      },
-      {
-        "@id": "urn:ngm:class:ftc",
-        "label": "FTC"
       },
       {
         "@id": "urn:ngm:class:ico",
@@ -707,14 +591,6 @@ alias:: BC-0489-consumer-protection
       {
         "@id": "urn:ngm:class:ofcom",
         "label": "Ofcom"
-      },
-      {
-        "@id": "urn:ngm:class:opss",
-        "label": "OPSS"
-      },
-      {
-        "@id": "urn:ngm:class:trading-standards",
-        "label": "Trading Standards"
       }
     ]
   },

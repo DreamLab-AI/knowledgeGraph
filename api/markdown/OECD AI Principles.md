@@ -23,53 +23,131 @@ public:: true
   "definition": "The OECD AI Principles are five intergovernmental policy guidelines adopted by the Organisation for Economic Co-operation and Development in May 2019 and endorsed by G20 leaders in Osaka, representing the first intergovernmental standard on AI. They address inclusive growth and sustainable development, human-centred values and fairness, transparency and explainability, robustness security and safety, and accountability. Updated in 2024 to address generative AI and foundation models, they have shaped national AI strategies, the EU AI Act, and a constellation of derivative multilateral instruments. Implementation is tracked through the OECD AI Policy Observatory, which catalogues national policies across member and partner countries.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:responsible-ai-principles", "label": "Responsible AI Principles"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:responsible-ai-principles",
+      "label": "Responsible AI Principles"
+    }
+  ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:human-centred-ai", "label": "Human-Centred AI"}
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
-      {"@id": "urn:ngm:class:national-ai-strategy", "label": "National AI Strategy"}
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:national-ai-strategy",
+        "label": "National AI Strategy"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
-      {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
-      {"@id": "urn:ngm:class:human-rights", "label": "Human Rights"},
-      {"@id": "urn:ngm:class:sustainable-development", "label": "Sustainable Development"}
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:human-rights",
+        "label": "Human Rights"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-development",
+        "label": "Sustainable Development"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:transparency", "label": "Transparency"},
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
-      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"}
+      {
+        "@id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:global-partnership-on-ai", "label": "Global Partnership on AI"},
-      {"@id": "urn:ngm:class:unesco-ai-ethics", "label": "UNESCO AI Ethics Recommendation"},
-      {"@id": "urn:ngm:class:g20-ai-principles", "label": "G20 AI Principles"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:global-partnership-on-ai",
+        "label": "Global Partnership on AI"
+      },
+      {
+        "@id": "urn:ngm:class:unesco-recommendation-on-the-ethics-of-ai",
+        "label": "UNESCO AI Ethics Recommendation"
+      },
+      {
+        "@id": "urn:ngm:class:g20-ai-principles",
+        "label": "G20 AI Principles"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"},
-      {"@id": "urn:ngm:class:binding-ai-regulation", "label": "Binding AI Regulation"}
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:oecd", "label": "OECD"},
-      {"@id": "urn:ngm:class:g20", "label": "G20"}
+      {
+        "@id": "urn:ngm:class:oecd",
+        "label": "OECD"
+      },
+      {
+        "@id": "urn:ngm:class:g20",
+        "label": "G20"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:foundation-models", "label": "Foundation Models"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"}
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Models"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:oecd-ai-policy-principles", "label": "OECD AI Policy Principles"},
-    {"@id": "urn:ngm:class:oecd-principles-on-ai", "label": "OECD Principles on AI"}
+    {
+      "@id": "urn:ngm:class:oecd-ai-policy-principles",
+      "label": "OECD AI Policy Principles"
+    },
+    {
+      "@id": "urn:ngm:class:oecd-principles-on-ai",
+      "label": "OECD Principles on AI"
+    }
   ],
   "quality": 0.76,
   "provenance": {

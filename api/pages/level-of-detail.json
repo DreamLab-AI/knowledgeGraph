@@ -16,32 +16,11 @@
   "qualityScore": 0.0,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:discrete-lod",
-        "label": "Discrete LOD"
-      },
-      {
-        "id": "urn:ngm:class:continuous-lod",
-        "label": "Continuous LOD"
-      },
-      {
-        "id": "urn:ngm:class:hierarchical-lod",
-        "label": "Hierarchical LOD"
-      },
-      {
-        "id": "urn:ngm:class:mipmapping",
-        "label": "Mipmapping"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:3-d-asset",
         "label": "3D Asset"
-      },
-      {
-        "id": "urn:ngm:class:mesh-decimation",
-        "label": "Mesh Decimation"
       },
       {
         "id": "urn:ngm:class:scene-graph",
@@ -52,20 +31,12 @@
       {
         "id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
-      },
-      {
-        "id": "urn:ngm:class:open-world-streaming",
-        "label": "Open World Streaming"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:graphics-processing-unit",
         "label": "Graphics Processing Unit"
-      },
-      {
-        "id": "urn:ngm:class:camera-frustum",
-        "label": "Camera Frustum"
       }
     ],
     "implements": [],
@@ -81,10 +52,6 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:asset-streaming",
-        "label": "Asset Streaming"
-      },
-      {
         "id": "urn:ngm:class:spatial-index",
         "label": "Spatial Index"
       }
@@ -97,10 +64,6 @@
       {
         "id": "urn:ngm:class:shader",
         "label": "Shader"
-      },
-      {
-        "id": "urn:ngm:class:screen-space-coverage",
-        "label": "Screen-Space Coverage"
       }
     ],
     "supports": [
@@ -125,14 +88,6 @@
       }
     ],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:instancing",
-        "label": "Instancing"
-      },
-      {
-        "id": "urn:ngm:class:progressive-mesh",
-        "label": "Progressive Mesh"
-      },
       {
         "id": "urn:ngm:class:texture-atlas",
         "label": "Texture Atlas"

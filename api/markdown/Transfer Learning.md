@@ -29,49 +29,119 @@ alias:: TransferLearning
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:domain-adaptation", "label": "Domain Adaptation"},
-    {"@id": "urn:ngm:class:knowledge-transfer", "label": "Knowledge Transfer"}
+    {
+      "@id": "urn:ngm:class:domain-adaptation",
+      "label": "Domain Adaptation"
+    },
+    {
+      "@id": "urn:ngm:class:knowledge-transfer",
+      "label": "Knowledge Transfer"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:domain-adaptation", "label": "Domain Adaptation"},
-      {"@id": "urn:ngm:class:adapter-layers", "label": "Adapter Layers"},
-      {"@id": "urn:ngm:class:prompt-tuning", "label": "Prompt Tuning"}
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation"
+      },
+      {
+        "@id": "urn:ngm:class:adapter-modules",
+        "label": "Adapter Layers"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-tuning",
+        "label": "Prompt Tuning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:pre-trained-model", "label": "Pre-trained Model"},
-      {"@id": "urn:ngm:class:feature-representation", "label": "Feature Representation"}
+      {
+        "@id": "urn:ngm:class:pre-trained-model",
+        "label": "Pre-trained Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:few-shot-learning", "label": "Few-Shot Learning"},
-      {"@id": "urn:ngm:class:zero-shot-learning", "label": "Zero-Shot Learning"},
-      {"@id": "urn:ngm:class:foundation-models", "label": "Foundation Models"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:few-shot-learning",
+        "label": "Few-Shot Learning"
+      },
+      {
+        "@id": "urn:ngm:class:zero-shot-learning",
+        "label": "Zero-Shot Learning"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Models"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"},
-      {"@id": "urn:ngm:class:representation-learning", "label": "Representation Learning"}
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:training-from-scratch", "label": "Training From Scratch"},
-      {"@id": "urn:ngm:class:multitask-learning", "label": "Multitask Learning"}
+      {
+        "@id": "urn:ngm:class:training-from-scratch",
+        "label": "Training From Scratch"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:meta-learning", "label": "Meta-Learning"},
-      {"@id": "urn:ngm:class:continual-learning", "label": "Continual Learning"},
-      {"@id": "urn:ngm:class:model-compression", "label": "Model Compression"}
+      {
+        "@id": "urn:ngm:class:meta-learning",
+        "label": "Meta-Learning"
+      },
+      {
+        "@id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      },
+      {
+        "@id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ]
   },
   "provenance": {

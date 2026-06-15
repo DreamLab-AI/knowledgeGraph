@@ -63,14 +63,7 @@ public:: true
       "label": "Virtual Asset"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:metaverse-development",
-        "label": "Metaverse Development"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

@@ -16,24 +16,11 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:client-to-server-protocol",
-        "label": "Client-to-Server Protocol"
-      },
-      {
-        "id": "urn:ngm:class:server-to-server-protocol",
-        "label": "Server-to-Server Protocol"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:https-transport",
+        "id": "urn:ngm:class:transport-protocol",
         "label": "HTTPS Transport"
-      },
-      {
-        "id": "urn:ngm:class:actor-inbox-outbox",
-        "label": "Actor Inbox/Outbox"
       }
     ],
     "enables": [
@@ -46,7 +33,7 @@
         "label": "Decentralised Web"
       },
       {
-        "id": "urn:ngm:class:server-to-server-federation",
+        "id": "urn:ngm:class:federation",
         "label": "Server-to-Server Federation"
       },
       {
@@ -66,10 +53,6 @@
       }
     ],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:ostatus",
-        "label": "OStatus"
-      },
       {
         "id": "urn:ngm:class:at-protocol",
         "label": "AT Protocol"
@@ -95,16 +78,8 @@
         "label": "Linked Data"
       },
       {
-        "id": "urn:ngm:class:activity-streams-2",
-        "label": "ActivityStreams 2.0"
-      },
-      {
-        "id": "urn:ngm:class:http-signatures",
+        "id": "urn:ngm:class:digital-signatures",
         "label": "HTTP Signatures"
-      },
-      {
-        "id": "urn:ngm:class:webfinger",
-        "label": "WebFinger"
       }
     ],
     "supports": [],
@@ -112,10 +87,6 @@
       {
         "id": "urn:ngm:class:world-wide-web-consortium",
         "label": "W3C"
-      },
-      {
-        "id": "urn:ngm:class:fediverse-enhancement-proposal",
-        "label": "Fediverse Enhancement Proposal"
       }
     ],
     "partOf": [],
@@ -123,14 +94,6 @@
       {
         "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web Linked Data Standard"
-      },
-      {
-        "id": "urn:ngm:class:mastodon",
-        "label": "Mastodon"
-      },
-      {
-        "id": "urn:ngm:class:fediverse",
-        "label": "Fediverse"
       }
     ]
   },

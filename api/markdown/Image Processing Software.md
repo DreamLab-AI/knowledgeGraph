@@ -63,14 +63,7 @@ public:: true
       "label": "Computer Vision System"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:visual-metaverse-interaction",
-        "label": "Visual Metaverse Interaction"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

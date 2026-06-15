@@ -46,50 +46,115 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:scheduler", "label": "Scheduler"},
-      {"@id": "urn:ngm:class:service-mesh", "label": "Service Mesh"},
-      {"@id": "urn:ngm:class:control-plane", "label": "Control Plane"}
+      {
+        "@id": "urn:ngm:class:scheduler",
+        "label": "Scheduler"
+      },
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:control-plane",
+        "label": "Control Plane"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:cloud-native-computing", "label": "Cloud Native Computing"}
+      {
+        "@id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native Computing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"},
-      {"@id": "urn:ngm:class:container", "label": "Container"},
-      {"@id": "urn:ngm:class:networking", "label": "Networking"}
+      {
+        "@id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:container",
+        "label": "Container"
+      },
+      {
+        "@id": "urn:ngm:class:networking",
+        "label": "Networking"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:auto-scaling", "label": "Auto-Scaling"},
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:continuous-deployment", "label": "Continuous Deployment"}
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:auto-scaling",
+        "label": "Auto-Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-deployment",
+        "label": "Continuous Deployment"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"},
-      {"@id": "urn:ngm:class:declarative-configuration", "label": "Declarative Configuration"},
-      {"@id": "urn:ngm:class:load-balancing", "label": "Load Balancing"}
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:latency", "label": "Latency"},
-      {"@id": "urn:ngm:class:high-availability", "label": "High Availability"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:infrastructure-as-code", "label": "Infrastructure as Code"},
-      {"@id": "urn:ngm:class:observability", "label": "Observability"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:choreography", "label": "Choreography"}
+      {
+        "@id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-inference", "label": "AI Inference"},
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"}
+      {
+        "@id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:container-orchestration", "label": "Container Orchestration"},
-    {"@id": "urn:ngm:class:workload-management", "label": "Workload Management"}
+    {
+      "@id": "urn:ngm:class:container-orchestration",
+      "label": "Container Orchestration"
+    },
+    {
+      "@id": "urn:ngm:class:workload-management",
+      "label": "Workload Management"
+    }
   ],
   "quality": 0.72,
   "provenance": {

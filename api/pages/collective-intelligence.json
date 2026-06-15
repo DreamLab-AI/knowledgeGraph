@@ -26,20 +26,7 @@
         "label": "Stigmergy"
       }
     ],
-    "requires": [
-      {
-        "id": "urn:ngm:class:diversity-of-perspective",
-        "label": "Diversity of Perspective"
-      },
-      {
-        "id": "urn:ngm:class:distributed-information-processing",
-        "label": "Distributed Information Processing"
-      },
-      {
-        "id": "urn:ngm:class:incentive-design",
-        "label": "Incentive Design"
-      }
-    ],
+    "requires": [],
     "enables": [
       {
         "id": "urn:ngm:class:collective-decision-making",
@@ -56,10 +43,6 @@
       {
         "id": "urn:ngm:class:open-source-development",
         "label": "Open Source Development"
-      },
-      {
-        "id": "urn:ngm:class:crowd-sourcing",
-        "label": "Crowd Sourcing"
       }
     ],
     "dependsOn": [],
@@ -85,15 +68,11 @@
         "label": "Knowledge Management"
       },
       {
-        "id": "urn:ngm:class:aggregation-mechanism",
-        "label": "Aggregation Mechanism"
-      },
-      {
         "id": "urn:ngm:class:swarm-intelligence",
         "label": "Swarm Intelligence"
       },
       {
-        "id": "urn:ngm:class:prediction-market",
+        "id": "urn:ngm:class:prediction-markets",
         "label": "Prediction Market"
       }
     ],
@@ -114,12 +93,8 @@
         "label": "Agent-Based Models"
       },
       {
-        "id": "urn:ngm:class:ensemble-learning",
+        "id": "urn:ngm:class:ensemble-methods",
         "label": "Ensemble Learning"
-      },
-      {
-        "id": "urn:ngm:class:superforecasting",
-        "label": "Superforecasting"
       }
     ]
   },

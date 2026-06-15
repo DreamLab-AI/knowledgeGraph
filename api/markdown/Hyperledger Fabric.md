@@ -137,7 +137,7 @@ alias:: BC-0067-hyperledger-fabric, BC-0426-hyperledger-fabric, HyperledgerFabri
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -155,15 +155,11 @@ alias:: BC-0067-hyperledger-fabric, BC-0426-hyperledger-fabric, HyperledgerFabri
         "label": "Access Control"
       },
       {
-        "@id": "urn:ngm:class:confidential-transaction",
+        "@id": "urn:ngm:class:confidential-transactions",
         "label": "Confidential Transaction"
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:execute-order-validate",
-        "label": "Execute-Order-Validate Architecture"
-      },
       {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
@@ -188,10 +184,6 @@ alias:: BC-0067-hyperledger-fabric, BC-0426-hyperledger-fabric, HyperledgerFabri
       }
     ],
     "supports": [
-      {
-        "@id": "urn:ngm:class:pluggable-consensus",
-        "label": "Pluggable Consensus"
-      },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proof"

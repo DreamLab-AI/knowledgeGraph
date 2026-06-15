@@ -470,68 +470,20 @@ public:: true
         "label": "ARM TrustZone"
       },
       {
-        "@id": "urn:ngm:class:atsc-3-0",
-        "label": "ATSC 3.0"
-      },
-      {
-        "@id": "urn:ngm:class:cmaf",
-        "label": "CMAF"
-      },
-      {
-        "@id": "urn:ngm:class:common-encryption",
-        "label": "Common Encryption"
-      },
-      {
         "@id": "urn:ngm:class:dolby-atmos",
         "label": "Dolby Atmos"
-      },
-      {
-        "@id": "urn:ngm:class:dolby-vision",
-        "label": "Dolby Vision"
-      },
-      {
-        "@id": "urn:ngm:class:fair-play",
-        "label": "FairPlay"
       },
       {
         "@id": "urn:ngm:class:h-264",
         "label": "H.264"
       },
       {
-        "@id": "urn:ngm:class:hbb-tv",
-        "label": "HbbTV"
-      },
-      {
-        "@id": "urn:ngm:class:hdcp",
-        "label": "HDCP"
-      },
-      {
         "@id": "urn:ngm:class:hevc",
         "label": "HEVC"
       },
       {
-        "@id": "urn:ngm:class:hls",
-        "label": "HLS"
-      },
-      {
         "@id": "urn:ngm:class:mpeg-dash",
         "label": "MPEG-DASH"
-      },
-      {
-        "@id": "urn:ngm:class:play-ready",
-        "label": "PlayReady"
-      },
-      {
-        "@id": "urn:ngm:class:uhd-blu-ray",
-        "label": "UHD Blu-ray"
-      },
-      {
-        "@id": "urn:ngm:class:vvc-h-266",
-        "label": "VVC H.266"
-      },
-      {
-        "@id": "urn:ngm:class:widevine",
-        "label": "Widevine"
       }
     ],
     "requires": [
@@ -560,7 +512,7 @@ public:: true
         "label": "Key Management"
       },
       {
-        "@id": "urn:ngm:class:patent-licensing",
+        "@id": "urn:ngm:class:patent",
         "label": "Patent Licensing"
       },
       {
@@ -574,11 +526,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:4-k-uhd-delivery",
-        "label": "4K UHD Delivery"
-      },
-      {
-        "@id": "urn:ngm:class:addressable-advertising",
+        "@id": "urn:ngm:class:advertising",
         "label": "Addressable Advertising"
       },
       {
@@ -590,58 +538,22 @@ public:: true
         "label": "Digital Cinema"
       },
       {
-        "@id": "urn:ngm:class:hdr-video",
-        "label": "HDR Video"
-      },
-      {
-        "@id": "urn:ngm:class:low-latency-streaming",
+        "@id": "urn:ngm:class:low-latency",
         "label": "Low Latency Streaming"
-      },
-      {
-        "@id": "urn:ngm:class:over-the-top-streaming",
-        "label": "Over The Top Streaming"
-      },
-      {
-        "@id": "urn:ngm:class:pay-tv",
-        "label": "Pay TV"
-      },
-      {
-        "@id": "urn:ngm:class:premium-streaming",
-        "label": "Premium Streaming"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:atsc-standards",
-        "label": "ATSC Standards"
-      },
-      {
-        "@id": "urn:ngm:class:blu-ray-disc-standards",
-        "label": "Blu-ray Disc Standards"
-      },
-      {
-        "@id": "urn:ngm:class:dvb-standards",
-        "label": "DVB Standards"
-      },
-      {
-        "@id": "urn:ngm:class:etsi-standards",
+        "@id": "urn:ngm:class:etsi",
         "label": "ETSI Standards"
       },
       {
-        "@id": "urn:ngm:class:iso-iec-standards",
+        "@id": "urn:ngm:class:iso-iec",
         "label": "ISO IEC Standards"
       },
       {
-        "@id": "urn:ngm:class:itu-t-standards",
+        "@id": "urn:ngm:class:itu-t",
         "label": "ITU-T Standards"
-      },
-      {
-        "@id": "urn:ngm:class:mpeg-standards",
-        "label": "MPEG Standards"
-      },
-      {
-        "@id": "urn:ngm:class:w3-c-eme-standards",
-        "label": "W3C EME Standards"
       }
     ],
     "uses": [
@@ -650,7 +562,7 @@ public:: true
         "label": "ARM TrustZone"
       },
       {
-        "@id": "urn:ngm:class:av1",
+        "@id": "urn:ngm:class:av1-codec",
         "label": "AV1"
       },
       {
@@ -660,10 +572,6 @@ public:: true
       {
         "@id": "urn:ngm:class:encryption",
         "label": "Encryption"
-      },
-      {
-        "@id": "urn:ngm:class:f-mp4",
-        "label": "fMP4"
       },
       {
         "@id": "urn:ngm:class:h-264",
@@ -678,7 +586,7 @@ public:: true
         "label": "OFDM"
       },
       {
-        "@id": "urn:ngm:class:vp9",
+        "@id": "urn:ngm:class:vp9-codec",
         "label": "VP9"
       },
       {
@@ -702,10 +610,6 @@ public:: true
       {
         "@id": "urn:ngm:class:regulatory-framework",
         "label": "Regulatory Framework"
-      },
-      {
-        "@id": "urn:ngm:class:streaming-services",
-        "label": "Streaming Services"
       },
       {
         "@id": "urn:ngm:class:ai-video",
@@ -738,28 +642,8 @@ public:: true
         "label": "Advertising and Marketing"
       },
       {
-        "@id": "urn:ngm:class:amazon-prime-video",
-        "label": "Amazon Prime Video"
-      },
-      {
-        "@id": "urn:ngm:class:apple-inc-technology-corporation-tv-plus",
+        "@id": "urn:ngm:class:apple-inc-technology-corporation",
         "label": "Apple TV Plus"
-      },
-      {
-        "@id": "urn:ngm:class:bbc-i-player",
-        "label": "BBC iPlayer"
-      },
-      {
-        "@id": "urn:ngm:class:bt-sport",
-        "label": "BT Sport"
-      },
-      {
-        "@id": "urn:ngm:class:disney-plus",
-        "label": "Disney Plus"
-      },
-      {
-        "@id": "urn:ngm:class:itvx",
-        "label": "ITVX"
       },
       {
         "@id": "urn:ngm:class:netflix",
@@ -770,10 +654,6 @@ public:: true
         "label": "Regulatory Framework"
       },
       {
-        "@id": "urn:ngm:class:sky-glass",
-        "label": "Sky Glass"
-      },
-      {
         "@id": "urn:ngm:class:you-tube",
         "label": "YouTube"
       }
@@ -782,22 +662,6 @@ public:: true
       {
         "@id": "urn:ngm:class:alliance-for-open-media",
         "label": "Alliance for Open Media"
-      },
-      {
-        "@id": "urn:ngm:class:atsc",
-        "label": "ATSC"
-      },
-      {
-        "@id": "urn:ngm:class:blu-ray-disc-association",
-        "label": "Blu-ray Disc Association"
-      },
-      {
-        "@id": "urn:ngm:class:dolby-laboratories",
-        "label": "Dolby Laboratories"
-      },
-      {
-        "@id": "urn:ngm:class:dvb",
-        "label": "DVB"
       },
       {
         "@id": "urn:ngm:class:etsi",

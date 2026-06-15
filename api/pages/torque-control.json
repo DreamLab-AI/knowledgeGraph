@@ -24,14 +24,6 @@
       {
         "id": "urn:ngm:class:torque-sensor",
         "label": "Torque Sensor"
-      },
-      {
-        "id": "urn:ngm:class:current-control-loop",
-        "label": "Current Control Loop"
-      },
-      {
-        "id": "urn:ngm:class:inner-control-loop",
-        "label": "Inner Control Loop"
       }
     ],
     "requires": [
@@ -48,7 +40,7 @@
         "label": "Motor Driver"
       },
       {
-        "id": "urn:ngm:class:real-time-control-system",
+        "id": "urn:ngm:class:real-time-control",
         "label": "Real-Time Control System"
       }
     ],
@@ -92,10 +84,6 @@
       {
         "id": "urn:ngm:class:feedback-control",
         "label": "Feedback Control"
-      },
-      {
-        "id": "urn:ngm:class:inverse-dynamics-control",
-        "label": "Inverse Dynamics Control"
       }
     ],
     "contrastsWith": [
@@ -146,7 +134,7 @@
         "label": "Dexterous Manipulation"
       },
       {
-        "id": "urn:ngm:class:physical-human-robot-interaction",
+        "id": "urn:ngm:class:human-robot-interaction",
         "label": "Physical Human-Robot Interaction"
       },
       {

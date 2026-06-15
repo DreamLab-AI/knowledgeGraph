@@ -16,32 +16,11 @@
   "qualityScore": 0.74,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:usd-composition-arcs",
-        "label": "USD Composition Arcs"
-      },
-      {
-        "id": "urn:ngm:class:usd-schema-plugin",
-        "label": "USD Schema Plugin"
-      },
-      {
-        "id": "urn:ngm:class:usdz-package-format",
-        "label": "USDZ Package Format"
-      },
-      {
-        "id": "urn:ngm:class:usd-hydra-renderer",
-        "label": "USD Hydra Renderer"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:scene-graph",
         "label": "Scene Graph"
-      },
-      {
-        "id": "urn:ngm:class:hierarchical-data-model",
-        "label": "Hierarchical Data Model"
       }
     ],
     "enables": [
@@ -52,14 +31,6 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
-      },
-      {
-        "id": "urn:ngm:class:collaborative-3-d-editing",
-        "label": "Collaborative 3D Editing"
-      },
-      {
-        "id": "urn:ngm:class:augmented-reality-content",
-        "label": "Augmented Reality Content"
       },
       {
         "id": "urn:ngm:class:physics-simulation",
@@ -74,12 +45,8 @@
         "label": "Gltf Standard"
       },
       {
-        "id": "urn:ngm:class:fbx-format",
+        "id": "urn:ngm:class:fbx",
         "label": "FBX Format"
-      },
-      {
-        "id": "urn:ngm:class:collada-format",
-        "label": "COLLADA Format"
       }
     ],
     "bridgesTo": [
@@ -98,36 +65,24 @@
         "label": "MaterialX"
       },
       {
-        "id": "urn:ngm:class:mdl-material-definition-language",
-        "label": "MDL Material Definition Language"
-      },
-      {
         "id": "urn:ngm:class:skeletal-animation",
         "label": "Skeletal Animation"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:non-destructive-workflow",
+        "id": "urn:ngm:class:non-destructive-editing",
         "label": "Non-Destructive Workflow"
       },
       {
         "id": "urn:ngm:class:level-of-detail",
         "label": "Level of Detail"
-      },
-      {
-        "id": "urn:ngm:class:procedural-geometry",
-        "label": "Procedural Geometry"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:alliance-for-openusd",
         "label": "Alliance for OpenUSD"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec-22886",
-        "label": "ISO/IEC 22886"
       }
     ],
     "partOf": [],
@@ -141,7 +96,7 @@
         "label": "Rendering Pipeline"
       },
       {
-        "id": "urn:ngm:class:nvidia-omniverse",
+        "id": "urn:ngm:class:nvidia-corporation-omniverse-platform",
         "label": "NVIDIA Omniverse"
       },
       {

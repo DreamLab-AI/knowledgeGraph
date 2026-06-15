@@ -23,58 +23,155 @@ public:: true
   "definition": "W3C Verifiable Credentials (VCs) are a standardised data model and serialisation format published by the World Wide Web Consortium that enables the cryptographic expression of credentials — such as educational qualifications, identity attributes, and professional licences — in a tamper-evident, machine-verifiable form. The standard defines three roles: issuer (creates and signs the credential), holder (stores and presents it), and verifier (validates the signature and claims), forming a trust triangle that operates without requiring a centralised credential registry. VCs are designed to interoperate with Decentralised Identifiers (DIDs) to enable self-sovereign identity systems in which individuals and organisations control their own digital identity without dependence on a single provider. The VC Data Model 2.0 became a W3C Recommendation in 2024, adding selective disclosure via SD-JWT and BBS+ signatures, JSON Schema validation, and expanded media-type support.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:verifiable-credentials",
+      "label": "Verifiable Credentials"
+    }
+  ],
   "relations": {
     "standardizedBy": [
-      {"@id": "urn:ngm:class:world-wide-web-consortium", "label": "World Wide Web Consortium"},
-      {"@id": "urn:ngm:class:w3c-recommendation", "label": "W3C Recommendation"}
+      {
+        "@id": "urn:ngm:class:world-wide-web-consortium",
+        "label": "World Wide Web Consortium"
+      },
+      {
+        "@id": "urn:ngm:class:w3c-recommendation",
+        "label": "W3C Recommendation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:did-document", "label": "DID Document"},
-      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:ed25519-signature", "label": "Ed25519 Signature"}
+      {
+        "@id": "urn:ngm:class:did-document",
+        "label": "DID Document"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:ed25519",
+        "label": "Ed25519 Signature"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:decentralized-identifiers", "label": "Decentralized Identifiers"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"}
+      {
+        "@id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:privacy-preserving-identity", "label": "Privacy-Preserving Identity"},
-      {"@id": "urn:ngm:class:credential-verification", "label": "Credential Verification"},
-      {"@id": "urn:ngm:class:selective-disclosure", "label": "Selective Disclosure"},
-      {"@id": "urn:ngm:class:federated-credential-exchange", "label": "Federated Credential Exchange"},
-      {"@id": "urn:ngm:class:digital-identity-wallet", "label": "Digital Identity Wallet"}
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-identity",
+        "label": "Privacy-Preserving Identity"
+      },
+      {
+        "@id": "urn:ngm:class:credential-verification",
+        "label": "Credential Verification"
+      },
+      {
+        "@id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:federated-credential-exchange",
+        "label": "Federated Credential Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:open-world-assumption", "label": "Open World Assumption"},
-      {"@id": "urn:ngm:class:trust-model", "label": "Trust Model"}
+      {
+        "@id": "urn:ngm:class:open-world-assumption",
+        "label": "Open World Assumption"
+      },
+      {
+        "@id": "urn:ngm:class:trust-model",
+        "label": "Trust Model"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:verifiable-credential-vc", "label": "Verifiable Credential (VC)"},
-      {"@id": "urn:ngm:class:credential-format-standard", "label": "Credential Format Standard"},
-      {"@id": "urn:ngm:class:decentralized-identity-did", "label": "Decentralized Identity (DID)"},
-      {"@id": "urn:ngm:class:open-badges", "label": "Open Badges"},
-      {"@id": "urn:ngm:class:eidas-regulation", "label": "eIDAS Regulation"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+      {
+        "@id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential (VC)"
+      },
+      {
+        "@id": "urn:ngm:class:credential-format-standard",
+        "label": "Credential Format Standard"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identity-did",
+        "label": "Decentralized Identity (DID)"
+      },
+      {
+        "@id": "urn:ngm:class:open-badges",
+        "label": "Open Badges"
+      },
+      {
+        "@id": "urn:ngm:class:eidas-regulation",
+        "label": "eIDAS Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:x509-certificate", "label": "X.509 Certificate"},
-      {"@id": "urn:ngm:class:saml-assertion", "label": "SAML Assertion"},
-      {"@id": "urn:ngm:class:oauth-token", "label": "OAuth Token"}
+      {
+        "@id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:saml-assertion",
+        "label": "SAML Assertion"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-agent-identity", "label": "AI Agent Identity"},
-      {"@id": "urn:ngm:class:supply-chain-provenance", "label": "Supply Chain Provenance"},
-      {"@id": "urn:ngm:class:decentralized-autonomous-organisation", "label": "Decentralized Autonomous Organisation"}
+      {
+        "@id": "urn:ngm:class:ai-agent-identity",
+        "label": "AI Agent Identity"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organisation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:vc-data-model", "label": "VC Data Model"},
-    {"@id": "urn:ngm:class:verifiable-credential-data-model", "label": "Verifiable Credential Data Model"}
+    {
+      "@id": "urn:ngm:class:vc-data-model",
+      "label": "VC Data Model"
+    },
+    {
+      "@id": "urn:ngm:class:verifiable-credential-data-model",
+      "label": "Verifiable Credential Data Model"
+    }
   ],
   "quality": 0.74,
   "provenance": {

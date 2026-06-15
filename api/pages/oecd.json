@@ -16,24 +16,7 @@
   "qualityScore": 0.74,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:ai-principles",
-        "label": "AI Principles"
-      },
-      {
-        "id": "urn:ngm:class:crypto-asset-reporting-framework",
-        "label": "Crypto-Asset Reporting Framework"
-      },
-      {
-        "id": "urn:ngm:class:base-erosion-and-profit-shifting",
-        "label": "Base Erosion and Profit Shifting"
-      },
-      {
-        "id": "urn:ngm:class:programme-for-international-student-assessment",
-        "label": "Programme for International Student Assessment"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:multilateral-cooperation",
@@ -46,16 +29,8 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:automatic-exchange-of-information",
-        "label": "Automatic Exchange of Information"
-      },
-      {
-        "id": "urn:ngm:class:international-tax-compliance",
+        "id": "urn:ngm:class:corporate-tax-compliance-framework",
         "label": "International Tax Compliance"
-      },
-      {
-        "id": "urn:ngm:class:policy-harmonisation",
-        "label": "Policy Harmonisation"
       },
       {
         "id": "urn:ngm:class:trustworthy-ai",
@@ -63,16 +38,7 @@
       }
     ],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:common-reporting-standard",
-        "label": "Common Reporting Standard"
-      },
-      {
-        "id": "urn:ngm:class:global-minimum-tax",
-        "label": "Global Minimum Tax"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:world-trade-organization",
@@ -103,7 +69,7 @@
         "label": "Peer Review"
       },
       {
-        "id": "urn:ngm:class:comparative-statistics",
+        "id": "urn:ngm:class:statistics",
         "label": "Comparative Statistics"
       }
     ],
@@ -123,27 +89,18 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:oecd-council",
-        "label": "OECD Council"
-      },
-      {
         "id": "urn:ngm:class:g20",
         "label": "G20"
       }
     ],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:international-governance-institutions",
-        "label": "International Governance Institutions"
-      }
-    ],
+    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:fatf",
         "label": "FATF"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {

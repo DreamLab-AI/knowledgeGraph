@@ -326,115 +326,21 @@ public:: true
         "label": "AI Group Formation"
       },
       {
-        "@id": "urn:ngm:class:automatic-grouping",
-        "label": "Automatic Grouping"
-      },
-      {
-        "@id": "urn:ngm:class:host-broadcast-channel",
-        "label": "Host Broadcast Channel"
-      },
-      {
-        "@id": "urn:ngm:class:manual-room-assignment",
-        "label": "Manual Room Assignment"
-      },
-      {
-        "@id": "urn:ngm:class:participant-assignment-interface",
-        "label": "Participant Assignment Interface"
-      },
-      {
-        "@id": "urn:ngm:class:return-to-main-signalling",
-        "label": "Return-to-main Signalling"
-      },
-      {
-        "@id": "urn:ngm:class:room-level-recording",
-        "label": "Room-level Recording"
-      },
-      {
         "@id": "urn:ngm:class:room-state-tracking",
         "label": "Room State Tracking"
-      },
-      {
-        "@id": "urn:ngm:class:timer-and-notifications",
-        "label": "Timer and Notifications"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:hosting-privileges",
-        "label": "Hosting Privileges"
-      },
-      {
-        "@id": "urn:ngm:class:media-routing-infrastructure",
-        "label": "Media Routing Infrastructure"
-      },
-      {
-        "@id": "urn:ngm:class:multiple-concurrent-video-streams",
-        "label": "Multiple Concurrent Video Streams"
-      },
-      {
         "@id": "urn:ngm:class:room-state-tracking",
         "label": "Room State Tracking"
-      },
-      {
-        "@id": "urn:ngm:class:session-multiplexing",
-        "label": "Session Multiplexing"
       },
       {
         "@id": "urn:ngm:class:user-identity-management",
         "label": "User Identity Management"
       }
     ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:cooperative-learning",
-        "label": "Cooperative Learning"
-      },
-      {
-        "@id": "urn:ngm:class:cross-functional-team-collaboration",
-        "label": "Cross-functional Team Collaboration"
-      },
-      {
-        "@id": "urn:ngm:class:focused-sub-team-discussions",
-        "label": "Focused Sub-team Discussions"
-      },
-      {
-        "@id": "urn:ngm:class:parallel-problem-solving",
-        "label": "Parallel Problem-Solving"
-      },
-      {
-        "@id": "urn:ngm:class:participation-equity",
-        "label": "Participation Equity"
-      },
-      {
-        "@id": "urn:ngm:class:scaled-workshop-facilitation",
-        "label": "Scaled Workshop Facilitation"
-      },
-      {
-        "@id": "urn:ngm:class:think-pair-share-pedagogy",
-        "label": "Think-Pair-Share Pedagogy"
-      }
-    ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:fishbowl-dialogue",
-        "label": "Fishbowl Dialogue"
-      },
-      {
-        "@id": "urn:ngm:class:flipped-classroom",
-        "label": "Flipped Classroom"
-      },
-      {
-        "@id": "urn:ngm:class:jigsaw-cooperative-learning",
-        "label": "Jigsaw Cooperative Learning"
-      },
-      {
-        "@id": "urn:ngm:class:problem-based-learning",
-        "label": "Problem-Based Learning"
-      },
-      {
-        "@id": "urn:ngm:class:think-pair-share",
-        "label": "Think-Pair-Share"
-      },
       {
         "@id": "urn:ngm:class:active-learning",
         "label": "Active Learning"
@@ -446,7 +352,7 @@ public:: true
         "label": "AI Group Formation"
       },
       {
-        "@id": "urn:ngm:class:chat-messaging",
+        "@id": "urn:ngm:class:instant-messaging",
         "label": "Chat Messaging"
       },
       {
@@ -468,10 +374,6 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:team-communication-platform",
-        "label": "Team Communication Platform"
-      },
-      {
         "@id": "urn:ngm:class:learning-management-system",
         "label": "Learning Management System"
       },
@@ -490,10 +392,6 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:conference-facilitation",
-        "label": "Conference Facilitation"
-      },
-      {
         "@id": "urn:ngm:class:corporate-training",
         "label": "Corporate Training"
       },
@@ -502,26 +400,14 @@ public:: true
         "label": "Distributed Team Collaboration"
       },
       {
-        "@id": "urn:ngm:class:hackathon-events",
-        "label": "Hackathon Events"
-      },
-      {
         "@id": "urn:ngm:class:remote-education",
         "label": "Remote Education"
-      },
-      {
-        "@id": "urn:ngm:class:virtual-workshop",
-        "label": "Virtual Workshop"
       }
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:ieee-802-11-wireless-lan",
+        "@id": "urn:ngm:class:ieee-802-11",
         "label": "IEEE 802.11 Wireless LAN"
-      },
-      {
-        "@id": "urn:ngm:class:ietf-rfc-3550-rtp",
-        "label": "IETF RFC 3550 RTP"
       },
       {
         "@id": "urn:ngm:class:web-rtc-w-3-c-specification",

@@ -105,12 +105,8 @@ public:: true
         "label": "Decentralised Application"
       },
       {
-        "@id": "urn:ngm:class:programmable-blockchain",
+        "@id": "urn:ngm:class:blockchain",
         "label": "Programmable Blockchain"
-      },
-      {
-        "@id": "urn:ngm:class:on-chain-computation",
-        "label": "On-Chain Computation"
       }
     ],
     "uses": [
@@ -147,7 +143,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:stack-based-architecture",
+        "@id": "urn:ngm:class:architecture",
         "label": "Stack-Based Architecture"
       },
       {
@@ -163,10 +159,6 @@ public:: true
       {
         "@id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
-      },
-      {
-        "@id": "urn:ngm:class:turing-completeness",
-        "label": "Turing Completeness"
       }
     ],
     "partOf": [
@@ -191,7 +183,7 @@ public:: true
         "label": "Smart Contract Execution"
       },
       {
-        "@id": "urn:ngm:class:ethereum-virtual-machine",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       },
       {

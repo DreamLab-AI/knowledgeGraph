@@ -90,17 +90,9 @@
       {
         "id": "urn:ngm:class:proof-of-spacetime",
         "label": "Proof of Spacetime"
-      },
-      {
-        "id": "urn:ngm:class:proof-of-useful-work",
-        "label": "Proof of Useful Work"
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:energy-infrastructure",
-        "label": "Energy Infrastructure"
-      },
       {
         "id": "urn:ngm:class:semiconductor-manufacturing",
         "label": "Semiconductor Manufacturing"
@@ -130,7 +122,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:double-spending-prevention",
+        "id": "urn:ngm:class:double-spend-prevention",
         "label": "Double Spending Prevention"
       },
       {
@@ -162,7 +154,7 @@
         "label": "Selfish Mining"
       },
       {
-        "id": "urn:ngm:class:51-percent-attack",
+        "id": "urn:ngm:class:51-attack",
         "label": "51% Attack"
       },
       {

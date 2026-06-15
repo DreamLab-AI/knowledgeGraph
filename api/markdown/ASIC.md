@@ -23,60 +23,119 @@ public:: true
   "definition": "An Application-Specific Integrated Circuit (ASIC) is a custom integrated circuit designed and fabricated at the transistor and mask level to perform a specific function or narrow set of functions with maximum efficiency, in contrast to general-purpose processors such as CPUs and GPUs that are optimised for programmable flexibility. ASICs achieve superior performance-per-watt and cost efficiency at production volume by eliminating logic not required for the target workload, at the expense of reconfigurability. Design is conducted using hardware description languages (VHDL, SystemVerilog), electronic design automation suites, and a foundry-specific tape-out flow; non-recurring engineering costs at advanced nodes (5nm, 3nm) can exceed tens of millions of pounds, making economic viability contingent on volume or uniquely demanding performance requirements. ASICs are central to cryptocurrency mining, AI inference and training acceleration, high-speed networking switch fabric, signal processing, and consumer electronics where power, cost, and performance constraints demand purpose-built silicon.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:hardware", "label": "Hardware"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:hardware",
+      "label": "Hardware"
+    }
+  ],
   "relations": {
-    "hasPart": [
-      {"@id": "urn:ngm:class:register-transfer-level", "label": "Register-Transfer Level"},
-      {"@id": "urn:ngm:class:standard-cell-library", "label": "Standard Cell Library"},
-      {"@id": "urn:ngm:class:physical-layout", "label": "Physical Layout"}
-    ],
     "partOf": [
-      {"@id": "urn:ngm:class:semiconductor-industry", "label": "Semiconductor Industry"},
-      {"@id": "urn:ngm:class:system-on-chip", "label": "System-on-Chip"}
+      {
+        "@id": "urn:ngm:class:semiconductor-industry",
+        "label": "Semiconductor Industry"
+      },
+      {
+        "@id": "urn:ngm:class:system-on-chip",
+        "label": "System-on-Chip"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:electronic-design-automation", "label": "Electronic Design Automation"},
-      {"@id": "urn:ngm:class:semiconductor-foundry", "label": "Semiconductor Foundry"},
-      {"@id": "urn:ngm:class:hardware-description-language", "label": "Hardware Description Language"}
+      {
+        "@id": "urn:ngm:class:electronic-design-automation",
+        "label": "Electronic Design Automation"
+      },
+      {
+        "@id": "urn:ngm:class:foundry",
+        "label": "Semiconductor Foundry"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-description-language",
+        "label": "Hardware Description Language"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
-      {"@id": "urn:ngm:class:neural-processing-unit", "label": "Neural Processing Unit"},
-      {"@id": "urn:ngm:class:inference-hardware", "label": "Inference Hardware"},
-      {"@id": "urn:ngm:class:bitcoin-mining", "label": "Bitcoin Mining"},
-      {"@id": "urn:ngm:class:high-speed-networking", "label": "High-Speed Networking"}
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "@id": "urn:ngm:class:high-speed-networking",
+        "label": "High-Speed Networking"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cmos-process", "label": "CMOS Process"},
-      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:matrix-multiplication", "label": "Matrix Multiplication"},
-      {"@id": "urn:ngm:class:cryptographic-hashing", "label": "Cryptographic Hashing"}
-    ],
-    "uses": [
-      {"@id": "urn:ngm:class:chiplet-architecture", "label": "Chiplet Architecture"},
-      {"@id": "urn:ngm:class:advanced-packaging", "label": "Advanced Packaging"}
+      {
+        "@id": "urn:ngm:class:matrix-multiplication",
+        "label": "Matrix Multiplication"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hashing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:fpga", "label": "FPGA"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:central-processing-unit", "label": "Central Processing Unit"}
+      {
+        "@id": "urn:ngm:class:fpga",
+        "label": "FPGA"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:central-processing-unit",
+        "label": "Central Processing Unit"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
-      {"@id": "urn:ngm:class:hardware-component", "label": "Hardware Component"},
-      {"@id": "urn:ngm:class:tape-out", "label": "Tape-Out"},
-      {"@id": "urn:ngm:class:node-shrink", "label": "Node Shrink"}
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-component",
+        "label": "Hardware Component"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-accelerator", "label": "AI Accelerator"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"}
+      {
+        "@id": "urn:ngm:class:ai-accelerator",
+        "label": "AI Accelerator"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:application-specific-integrated-circuit", "label": "Application-Specific Integrated Circuit"},
-    {"@id": "urn:ngm:class:custom-silicon", "label": "Custom Silicon"}
+    {
+      "@id": "urn:ngm:class:application-specific-integrated-circuit",
+      "label": "Application-Specific Integrated Circuit"
+    },
+    {
+      "@id": "urn:ngm:class:custom-silicon",
+      "label": "Custom Silicon"
+    }
   ],
   "quality": 0.74,
   "provenance": {

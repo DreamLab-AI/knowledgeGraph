@@ -350,10 +350,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:a-b-testing-framework",
-        "label": "A/B Testing Framework"
-      },
-      {
         "@id": "urn:ngm:class:acquisition-function",
         "label": "Acquisition Function"
       },
@@ -370,12 +366,8 @@ public:: true
         "label": "Customer Data Platform"
       },
       {
-        "@id": "urn:ngm:class:dynamic-pricing-engine",
+        "@id": "urn:ngm:class:dynamic-pricing",
         "label": "Dynamic Pricing Engine"
-      },
-      {
-        "@id": "urn:ngm:class:hybrid-recommender",
-        "label": "Hybrid Recommender"
       },
       {
         "@id": "urn:ngm:class:programmatic-advertising",
@@ -391,10 +383,6 @@ public:: true
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:consent-management-platform",
-        "label": "Consent Management Platform"
-      },
       {
         "@id": "urn:ngm:class:embedding-model",
         "label": "Embedding Model"
@@ -418,20 +406,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:customer-lifetime-value-optimisation",
-        "label": "Customer Lifetime Value Optimisation"
-      },
-      {
         "@id": "urn:ngm:class:dynamic-pricing",
         "label": "Dynamic Pricing"
-      },
-      {
-        "@id": "urn:ngm:class:next-best-action",
-        "label": "Next Best Action"
-      },
-      {
-        "@id": "urn:ngm:class:personalised-content-delivery",
-        "label": "Personalised Content Delivery"
       },
       {
         "@id": "urn:ngm:class:programmatic-advertising",
@@ -444,24 +420,12 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:contextual-bandits",
-        "label": "Contextual Bandits"
-      },
-      {
         "@id": "urn:ngm:class:graph-neural-network",
         "label": "Graph Neural Network"
       },
       {
         "@id": "urn:ngm:class:matrix-factorisation",
         "label": "Matrix Factorisation"
-      },
-      {
-        "@id": "urn:ngm:class:neural-collaborative-filtering",
-        "label": "Neural Collaborative Filtering"
-      },
-      {
-        "@id": "urn:ngm:class:transformer-sequential-recommendation",
-        "label": "Transformer Sequential Recommendation"
       },
       {
         "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
@@ -542,22 +506,6 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:financial-services-personalisation",
-        "label": "Financial Services Personalisation"
-      },
-      {
-        "@id": "urn:ngm:class:healthcare-personalisation",
-        "label": "Healthcare Personalisation"
-      },
-      {
-        "@id": "urn:ngm:class:media-streaming",
-        "label": "Media Streaming"
-      },
-      {
-        "@id": "urn:ngm:class:retail-ai",
-        "label": "Retail AI"
-      },
-      {
         "@id": "urn:ngm:class:digital-marketing",
         "label": "Digital Marketing"
       },
@@ -572,16 +520,8 @@ public:: true
         "label": "GDPR"
       },
       {
-        "@id": "urn:ngm:class:iab-open-rtb-protocol",
-        "label": "IAB OpenRTB Protocol"
-      },
-      {
         "@id": "urn:ngm:class:ico-ai-guidance",
         "label": "ICO AI Guidance"
-      },
-      {
-        "@id": "urn:ngm:class:uk-data-use-and-access-act-2025",
-        "label": "UK Data (Use and Access) Act 2025"
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",

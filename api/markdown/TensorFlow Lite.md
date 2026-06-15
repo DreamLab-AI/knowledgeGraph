@@ -62,14 +62,6 @@ public:: true
       {
         "@id": "urn:ngm:class:tensorflow-lite-micro",
         "label": "TensorFlow Lite Micro"
-      },
-      {
-        "@id": "urn:ngm:class:tflite-converter",
-        "label": "TFLite Converter"
-      },
-      {
-        "@id": "urn:ngm:class:tflite-interpreter",
-        "label": "TFLite Interpreter"
       }
     ],
     "requires": [
@@ -84,11 +76,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:flatbuffers",
-        "label": "FlatBuffers"
-      },
-      {
-        "@id": "urn:ngm:class:model-quantisation",
+        "@id": "urn:ngm:class:neural-network-quantisation",
         "label": "Model Quantisation"
       },
       {
@@ -168,10 +156,6 @@ public:: true
       {
         "@id": "urn:ngm:class:core-ml",
         "label": "Core ML"
-      },
-      {
-        "@id": "urn:ngm:class:ncnn",
-        "label": "NCNN"
       }
     ],
     "relatedTo": [

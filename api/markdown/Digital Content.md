@@ -87,19 +87,13 @@ public:: true
         "label": "Digital Rights"
       }
     ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:information-ecosystem",
-        "label": "Information Ecosystem"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:content-delivery-network",
         "label": "Content Delivery Network"
       },
       {
-        "@id": "urn:ngm:class:storage",
+        "@id": "urn:ngm:class:storage-systems",
         "label": "Storage"
       }
     ],
@@ -111,10 +105,6 @@ public:: true
       {
         "@id": "urn:ngm:class:user-experience",
         "label": "User Experience"
-      },
-      {
-        "@id": "urn:ngm:class:monetisation",
-        "label": "Monetisation"
       }
     ],
     "dependsOn": [
@@ -133,7 +123,7 @@ public:: true
         "label": "Digital Asset Management"
       },
       {
-        "@id": "urn:ngm:class:compression",
+        "@id": "urn:ngm:class:data-compression",
         "label": "Compression"
       },
       {
@@ -153,12 +143,6 @@ public:: true
       {
         "@id": "urn:ngm:class:e-commerce",
         "label": "E-Commerce"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:physical-media",
-        "label": "Physical Media"
       }
     ],
     "bridgesTo": [
@@ -181,7 +165,7 @@ public:: true
         "label": "NFT"
       },
       {
-        "@id": "urn:ngm:class:intellectual-property",
+        "@id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Intellectual Property"
       },
       {

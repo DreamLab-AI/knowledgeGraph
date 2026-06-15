@@ -158,12 +158,6 @@ public:: true
         "label": "ISO/IEC 42010"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:bespoke-architecture",
-        "label": "Bespoke Architecture"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:distributed-collaboration",

@@ -77,26 +77,14 @@ public:: true
         "label": "Decoder"
       },
       {
-        "@id": "urn:ngm:class:skip-connection",
+        "@id": "urn:ngm:class:residual-connection",
         "label": "Skip Connection"
-      },
-      {
-        "@id": "urn:ngm:class:bottleneck-layer",
-        "label": "Bottleneck Layer"
       }
     ],
     "requires": [
       {
         "@id": "urn:ngm:class:convolution",
         "label": "Convolution"
-      },
-      {
-        "@id": "urn:ngm:class:max-pooling",
-        "label": "Max Pooling"
-      },
-      {
-        "@id": "urn:ngm:class:upsampling",
-        "label": "Upsampling"
       },
       {
         "@id": "urn:ngm:class:batch-normalisation",
@@ -115,10 +103,6 @@ public:: true
       {
         "@id": "urn:ngm:class:instance-segmentation",
         "label": "Instance Segmentation"
-      },
-      {
-        "@id": "urn:ngm:class:dense-prediction",
-        "label": "Dense Prediction"
       }
     ],
     "implements": [
@@ -127,15 +111,11 @@ public:: true
         "label": "Encoder Decoder Architecture"
       },
       {
-        "@id": "urn:ngm:class:feature-pyramid",
+        "@id": "urn:ngm:class:feature-pyramid-network",
         "label": "Feature Pyramid"
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:rectified-linear-unit",
-        "label": "Rectified Linear Unit"
-      },
       {
         "@id": "urn:ngm:class:dropout-regularisation",
         "label": "Dropout Regularisation"
@@ -160,10 +140,6 @@ public:: true
       }
     ],
     "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:fully-convolutional-network",
-        "label": "Fully Convolutional Network"
-      },
       {
         "@id": "urn:ngm:class:feature-pyramid-network",
         "label": "Feature Pyramid Network"

@@ -38,58 +38,137 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:root-certificate", "label": "Root Certificate"},
-      {"@id": "urn:ngm:class:intermediate-certificate-authority", "label": "Intermediate Certificate Authority"},
-      {"@id": "urn:ngm:class:certificate-revocation-list", "label": "Certificate Revocation List"},
-      {"@id": "urn:ngm:class:online-certificate-status-protocol", "label": "Online Certificate Status Protocol"}
+      {
+        "@id": "urn:ngm:class:root-certificate",
+        "label": "Root Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-revocation-list",
+        "label": "Certificate Revocation List"
+      },
+      {
+        "@id": "urn:ngm:class:online-certificate-status-protocol",
+        "label": "Online Certificate Status Protocol"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:trust-hierarchy", "label": "Trust Hierarchy"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:asymmetric-key-cryptography", "label": "Asymmetric Key Cryptography"},
-      {"@id": "urn:ngm:class:hardware-security-module", "label": "Hardware Security Module"}
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-certificate", "label": "Digital Certificate"},
-      {"@id": "urn:ngm:class:transport-layer-security", "label": "Transport Layer Security"},
-      {"@id": "urn:ngm:class:code-signing", "label": "Code Signing"},
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
+      {
+        "@id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      },
+      {
+        "@id": "urn:ngm:class:code-signing",
+        "label": "Code Signing"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"},
-      {"@id": "urn:ngm:class:zero-trust-security", "label": "Zero Trust Security"},
-      {"@id": "urn:ngm:class:mutual-tls", "label": "Mutual TLS"}
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Security"
+      },
+      {
+        "@id": "urn:ngm:class:mutual-tls",
+        "label": "Mutual TLS"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ca-browser-forum", "label": "CA/Browser Forum"},
-      {"@id": "urn:ngm:class:rfc-5280", "label": "RFC 5280"},
-      {"@id": "urn:ngm:class:webtrust", "label": "WebTrust"}
+      {
+        "@id": "urn:ngm:class:ca-browser-forum",
+        "label": "CA/Browser Forum"
+      },
+      {
+        "@id": "urn:ngm:class:rfc-5280",
+        "label": "RFC 5280"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:web-of-trust", "label": "Web of Trust"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:web-of-trust",
+        "label": "Web of Trust"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:acme-protocol", "label": "ACME Protocol"},
-      {"@id": "urn:ngm:class:domain-validation", "label": "Domain Validation"},
-      {"@id": "urn:ngm:class:certificate-transparency", "label": "Certificate Transparency"},
-      {"@id": "urn:ngm:class:key-management", "label": "Key Management"}
+      {
+        "@id": "urn:ngm:class:certificate-transparency",
+        "label": "Certificate Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:certification-authority", "label": "Certification Authority"},
-    {"@id": "urn:ngm:class:trusted-third-party", "label": "Trusted Third Party"}
+    {
+      "@id": "urn:ngm:class:certification-authority",
+      "label": "Certification Authority"
+    },
+    {
+      "@id": "urn:ngm:class:trusted-third-party",
+      "label": "Trusted Third Party"
+    }
   ],
   "quality": 0.74,
   "provenance": {

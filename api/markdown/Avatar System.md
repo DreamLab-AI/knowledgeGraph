@@ -80,15 +80,11 @@ public:: true
         "label": "Animation Controller"
       },
       {
-        "@id": "urn:ngm:class:expression-system",
-        "label": "Expression System"
-      },
-      {
         "@id": "urn:ngm:class:physics-simulation",
         "label": "Physics Simulation"
       },
       {
-        "@id": "urn:ngm:class:level-of-detail-system",
+        "@id": "urn:ngm:class:level-of-detail",
         "label": "Level of Detail System"
       }
     ],
@@ -106,10 +102,6 @@ public:: true
       {
         "@id": "urn:ngm:class:animation-controller",
         "label": "Animation Controller"
-      },
-      {
-        "@id": "urn:ngm:class:input-processing",
-        "label": "Input Processing"
       },
       {
         "@id": "urn:ngm:class:3-d-rendering-engine",
@@ -136,19 +128,15 @@ public:: true
       {
         "@id": "urn:ngm:class:nonverbal-communication",
         "label": "Nonverbal Communication"
-      },
-      {
-        "@id": "urn:ngm:class:identity-expression",
-        "label": "Identity Expression"
       }
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:real-time-graphics-pipeline",
+        "@id": "urn:ngm:class:graphics-pipeline",
         "label": "Real-Time Graphics Pipeline"
       },
       {
-        "@id": "urn:ngm:class:motion-capture-system",
+        "@id": "urn:ngm:class:motion-capture",
         "label": "Motion Capture System"
       },
       {
@@ -174,10 +162,6 @@ public:: true
       {
         "@id": "urn:ngm:class:eye-tracking",
         "label": "Eye Tracking"
-      },
-      {
-        "@id": "urn:ngm:class:voice-driven-lip-sync",
-        "label": "Voice Driven Lip Sync"
       }
     ],
     "supports": [
@@ -186,7 +170,7 @@ public:: true
         "label": "Avatar Customization"
       },
       {
-        "@id": "urn:ngm:class:cross-platform-avatar-interoperability",
+        "@id": "urn:ngm:class:avatar-interoperability",
         "label": "Cross-Platform Avatar Interoperability"
       }
     ],
@@ -194,20 +178,12 @@ public:: true
       {
         "@id": "urn:ngm:class:non-player-character",
         "label": "Non Player Character"
-      },
-      {
-        "@id": "urn:ngm:class:static-user-profile",
-        "label": "Static User Profile"
       }
     ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:digital-identity",
         "label": "Digital Identity"
-      },
-      {
-        "@id": "urn:ngm:class:nft-wearable",
-        "label": "NFT Wearable"
       }
     ],
     "relatedTo": [
@@ -218,10 +194,6 @@ public:: true
       {
         "@id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
-      },
-      {
-        "@id": "urn:ngm:class:virtual-character-system",
-        "label": "Virtual Character System"
       }
     ]
   },
@@ -235,7 +207,7 @@ public:: true
       "label": "Digital Avatar"
     }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

@@ -20,14 +20,6 @@
       {
         "id": "urn:ngm:class:error-signal",
         "label": "Error Signal"
-      },
-      {
-        "id": "urn:ngm:class:reference-setpoint",
-        "label": "Reference Setpoint"
-      },
-      {
-        "id": "urn:ngm:class:control-output",
-        "label": "Control Output"
       }
     ],
     "requires": [
@@ -84,20 +76,12 @@
       {
         "id": "urn:ngm:class:linear-quadratic-regulator",
         "label": "Linear Quadratic Regulator"
-      },
-      {
-        "id": "urn:ngm:class:reinforcement-learning-policy",
-        "label": "Reinforcement Learning Policy"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:open-loop-control",
         "label": "Open-Loop Control"
-      },
-      {
-        "id": "urn:ngm:class:manual-control",
-        "label": "Manual Control"
       }
     ],
     "bridgesTo": [
@@ -136,11 +120,11 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:closed-loop-system",
+        "id": "urn:ngm:class:closed-loop-control",
         "label": "Closed Loop System"
       },
       {
-        "id": "urn:ngm:class:cyber-physical-system",
+        "id": "urn:ngm:class:cyber-physical-systems",
         "label": "Cyber-Physical System"
       }
     ],
@@ -154,7 +138,7 @@
         "label": "Dynamics"
       },
       {
-        "id": "urn:ngm:class:observer",
+        "id": "urn:ngm:class:state-observer",
         "label": "Observer"
       },
       {

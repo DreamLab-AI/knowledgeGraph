@@ -41,7 +41,7 @@
         "label": "Pose Estimation"
       },
       {
-        "id": "urn:ngm:class:3d-reconstruction",
+        "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
       },
       {
@@ -70,11 +70,11 @@
         "label": "Wheel Odometry"
       },
       {
-        "id": "urn:ngm:class:lidar-odometry",
+        "id": "urn:ngm:class:odometry",
         "label": "Lidar Odometry"
       },
       {
-        "id": "urn:ngm:class:gps-localisation",
+        "id": "urn:ngm:class:localisation",
         "label": "GPS Localisation"
       }
     ],
@@ -88,7 +88,7 @@
         "label": "Mixed Reality"
       },
       {
-        "id": "urn:ngm:class:autonomous-vehicles",
+        "id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
       }
     ],
@@ -140,7 +140,7 @@
         "label": "Loop Closure Detection"
       },
       {
-        "id": "urn:ngm:class:place-recognition",
+        "id": "urn:ngm:class:visual-place-recognition",
         "label": "Place Recognition"
       },
       {

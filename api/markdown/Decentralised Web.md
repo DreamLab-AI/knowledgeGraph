@@ -860,10 +860,6 @@ public:: true
         "label": "libp2p"
       },
       {
-        "@id": "urn:ngm:class:orbit-db",
-        "label": "OrbitDB"
-      },
-      {
         "@id": "urn:ngm:class:nostr-protocol",
         "label": "Nostr Protocol"
       },
@@ -916,7 +912,7 @@ public:: true
         "label": "Disintermediation"
       },
       {
-        "@id": "urn:ngm:class:offline-first-applications",
+        "@id": "urn:ngm:class:local-first-software",
         "label": "Offline-First Applications"
       },
       {
@@ -938,11 +934,11 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:account-portability",
+        "@id": "urn:ngm:class:portability",
         "label": "Account Portability"
       },
       {
-        "@id": "urn:ngm:class:crdt-synchronisation",
+        "@id": "urn:ngm:class:crdt",
         "label": "CRDT Synchronisation"
       },
       {
@@ -1006,7 +1002,7 @@ public:: true
         "label": "Crypto Anarchism"
       },
       {
-        "@id": "urn:ngm:class:cryptographic-privacy-activist-movement",
+        "@id": "urn:ngm:class:cryptographic-privacy-activist",
         "label": "Cypherpunk Movement"
       },
       {
@@ -1036,28 +1032,16 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:decentralised-social-media",
-        "label": "Decentralised Social Media"
-      },
-      {
         "@id": "urn:ngm:class:decentralized-storage",
         "label": "Decentralized Storage"
       },
       {
-        "@id": "urn:ngm:class:open-knowledge-graphs",
+        "@id": "urn:ngm:class:knowledge-graphs",
         "label": "Open Knowledge Graphs"
-      },
-      {
-        "@id": "urn:ngm:class:peer-to-peer-messaging",
-        "label": "Peer-to-Peer Messaging"
       },
       {
         "@id": "urn:ngm:class:permanent-archives",
         "label": "Permanent Archives"
-      },
-      {
-        "@id": "urn:ngm:class:tokenised-economics",
-        "label": "Tokenised Economics"
       },
       {
         "@id": "urn:ngm:class:self-sovereign-identity",

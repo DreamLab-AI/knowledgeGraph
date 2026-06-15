@@ -77,10 +77,6 @@ public:: true
       {
         "@id": "urn:ngm:class:holographic-rendering",
         "label": "Holographic Rendering"
-      },
-      {
-        "@id": "urn:ngm:class:cloud-scene-state",
-        "label": "Cloud Scene State"
       }
     ],
     "partOf": [
@@ -103,12 +99,8 @@ public:: true
         "label": "Spatial Anchors"
       },
       {
-        "@id": "urn:ngm:class:azure-cloud",
+        "@id": "urn:ngm:class:azure",
         "label": "Azure Cloud"
-      },
-      {
-        "@id": "urn:ngm:class:mixed-reality-headset",
-        "label": "Mixed Reality Headset"
       }
     ],
     "enables": [
@@ -117,21 +109,13 @@ public:: true
         "label": "Remote Collaboration"
       },
       {
-        "@id": "urn:ngm:class:immersive-meeting",
-        "label": "Immersive Meeting"
-      },
-      {
-        "@id": "urn:ngm:class:virtual-design-review",
-        "label": "Virtual Design Review"
-      },
-      {
         "@id": "urn:ngm:class:distributed-training",
         "label": "Distributed Training"
       }
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:azure-cloud",
+        "@id": "urn:ngm:class:azure",
         "label": "Azure Cloud"
       },
       {
@@ -149,13 +133,13 @@ public:: true
         "label": "Mixed Reality"
       },
       {
-        "@id": "urn:ngm:class:shared-virtual-environment",
+        "@id": "urn:ngm:class:shared-virtual-space",
         "label": "Shared Virtual Environment"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:azure-spatial-anchors",
+        "@id": "urn:ngm:class:spatial-anchors",
         "label": "Azure Spatial Anchors"
       },
       {
@@ -169,22 +153,8 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:enterprise-collaboration",
-        "label": "Enterprise Collaboration"
-      },
-      {
-        "@id": "urn:ngm:class:hololens",
+        "@id": "urn:ngm:class:tele-025-microsoft-hololens",
         "label": "HoloLens"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:meta-horizon-workrooms",
-        "label": "Meta Horizon Workrooms"
-      },
-      {
-        "@id": "urn:ngm:class:zoom",
-        "label": "Zoom"
       }
     ],
     "bridgesTo": [

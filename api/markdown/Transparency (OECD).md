@@ -66,10 +66,6 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:contestability",
-        "label": "contestability"
-      },
-      {
         "@id": "urn:ngm:class:informed-decision-making",
         "label": "Informed decision-making"
       },

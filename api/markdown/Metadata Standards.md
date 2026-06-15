@@ -64,14 +64,6 @@ public:: true
         "label": "Dublin Core"
       },
       {
-        "@id": "urn:ngm:class:iptc-metadata",
-        "label": "IPTC Metadata"
-      },
-      {
-        "@id": "urn:ngm:class:xmp-extensible-metadata-platform",
-        "label": "XMP Extensible Metadata Platform"
-      },
-      {
         "@id": "urn:ngm:class:schema-org",
         "label": "Schema.org"
       }
@@ -94,10 +86,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:cross-system-data-exchange",
-        "label": "Cross-System Data Exchange"
-      },
-      {
         "@id": "urn:ngm:class:data-interoperability",
         "label": "Data Interoperability"
       },
@@ -112,17 +100,13 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:uri-identifiers",
-        "label": "URI Identifiers"
-      },
-      {
         "@id": "urn:ngm:class:linked-data",
         "label": "Linked Data"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:semantic-web",
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       },
       {
@@ -131,10 +115,6 @@ public:: true
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:metadata-crosswalk",
-        "label": "Metadata Crosswalk"
-      },
       {
         "@id": "urn:ngm:class:rdf",
         "label": "RDF"
@@ -152,7 +132,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:dublin-core-metadata-initiative",
+        "@id": "urn:ngm:class:dublin-core",
         "label": "Dublin Core Metadata Initiative"
       },
       {
@@ -160,20 +140,10 @@ public:: true
         "label": "ISO 15836"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:proprietary-metadata-schema",
-        "label": "Proprietary Metadata Schema"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
-      },
-      {
-        "@id": "urn:ngm:class:ai-assisted-tagging",
-        "label": "AI-Assisted Tagging"
       }
     ],
     "relatedTo": [

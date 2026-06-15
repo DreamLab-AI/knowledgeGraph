@@ -86,10 +86,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:polygonal-mesh",
-        "label": "Polygonal Mesh"
-      },
-      {
         "@id": "urn:ngm:class:texture-mapping",
         "label": "Texture Mapping"
       },
@@ -108,7 +104,7 @@ public:: true
         "label": "3D Model"
       },
       {
-        "@id": "urn:ngm:class:game-asset-pipeline",
+        "@id": "urn:ngm:class:asset-pipeline",
         "label": "Game Asset Pipeline"
       }
     ],
@@ -116,10 +112,6 @@ public:: true
       {
         "@id": "urn:ngm:class:3-d-modeling-software",
         "label": "3D Modeling Software"
-      },
-      {
-        "@id": "urn:ngm:class:topology-design",
-        "label": "Topology Design"
       },
       {
         "@id": "urn:ngm:class:uv-unwrapping",
@@ -132,23 +124,11 @@ public:: true
         "label": "Character Animation"
       },
       {
-        "@id": "urn:ngm:class:game-characters",
-        "label": "Game Characters"
-      },
-      {
-        "@id": "urn:ngm:class:virtual-avatars",
-        "label": "Virtual Avatars"
-      },
-      {
         "@id": "urn:ngm:class:motion-capture",
         "label": "Motion Capture"
       }
     ],
     "dependsOn": [
-      {
-        "@id": "urn:ngm:class:retopology",
-        "label": "Retopology"
-      },
       {
         "@id": "urn:ngm:class:level-of-detail",
         "label": "Level of Detail"
@@ -182,12 +162,6 @@ public:: true
         "label": "Virtual Reality"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:procedural-character",
-        "label": "Procedural Character"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:computer-vision",
@@ -200,12 +174,6 @@ public:: true
       {
         "@id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
-      }
-    ],
-    "relatedTo": [
-      {
-        "@id": "urn:ngm:class:glb-format",
-        "label": "GLB Format"
       }
     ]
   },

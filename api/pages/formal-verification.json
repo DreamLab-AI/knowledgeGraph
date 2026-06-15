@@ -26,10 +26,6 @@
         "label": "Theorem Proving"
       },
       {
-        "id": "urn:ngm:class:abstract-interpretation",
-        "label": "Abstract Interpretation"
-      },
-      {
         "id": "urn:ngm:class:smt-solving",
         "label": "SMT Solving"
       }
@@ -70,10 +66,6 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:hoare-logic",
-        "label": "Hoare Logic"
-      },
-      {
         "id": "urn:ngm:class:type-theory",
         "label": "Type Theory"
       }
@@ -82,32 +74,15 @@
       {
         "id": "urn:ngm:class:software-testing",
         "label": "Software Testing"
-      },
-      {
-        "id": "urn:ngm:class:runtime-monitoring",
-        "label": "Runtime Monitoring"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
-      },
-      {
-        "id": "urn:ngm:class:neural-network-verification",
-        "label": "Neural Network Verification"
       }
     ],
-    "uses": [
-      {
-        "id": "urn:ngm:class:satisfiability-solver",
-        "label": "Satisfiability Solver"
-      },
-      {
-        "id": "urn:ngm:class:proof-assistant",
-        "label": "Proof Assistant"
-      }
-    ],
+    "uses": [],
     "supports": [
       {
         "id": "urn:ngm:class:smart-contract",

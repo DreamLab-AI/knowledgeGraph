@@ -23,51 +23,111 @@ public:: true
   "definition": "Camera Intrinsics are the internal optical and geometric parameters of a camera that define the mathematical relationship between 3D points in the camera's coordinate frame and their 2D projections onto the image sensor. The intrinsic parameter matrix encodes focal length in pixel units along each image axis, the principal point (optical axis intersection with the sensor), and skew, whilst associated distortion coefficients correct for lens aberrations that cause deviations from the ideal pinhole projection model.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:focal-length", "label": "Focal Length"},
-      {"@id": "urn:ngm:class:principal-point", "label": "Principal Point"},
-      {"@id": "urn:ngm:class:lens-distortion-model", "label": "Lens Distortion Model"}
+      {
+        "@id": "urn:ngm:class:lens-distortion-model",
+        "label": "Lens Distortion Model"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:camera-model", "label": "Camera Model"},
-      {"@id": "urn:ngm:class:projection-matrix", "label": "Projection Matrix"}
+      {
+        "@id": "urn:ngm:class:camera-model",
+        "label": "Camera Model"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"},
-      {"@id": "urn:ngm:class:reprojection-error-minimisation", "label": "Reprojection Error Minimisation"}
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:sensor-calibration", "label": "Sensor Calibration"},
-      {"@id": "urn:ngm:class:optical-calibration-target", "label": "Optical Calibration Target"},
-      {"@id": "urn:ngm:class:pinhole-camera-model", "label": "Pinhole Camera Model"},
-      {"@id": "urn:ngm:class:projective-geometry", "label": "Projective Geometry"}
+      {
+        "@id": "urn:ngm:class:sensor-calibration",
+        "label": "Sensor Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:optical-calibration-target",
+        "label": "Optical Calibration Target"
+      },
+      {
+        "@id": "urn:ngm:class:pinhole-camera-model",
+        "label": "Pinhole Camera Model"
+      },
+      {
+        "@id": "urn:ngm:class:projective-geometry",
+        "label": "Projective Geometry"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
-      {"@id": "urn:ngm:class:stereo-vision", "label": "Stereo Vision"},
-      {"@id": "urn:ngm:class:image-undistortion", "label": "Image Undistortion"},
-      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"}
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:stereo-vision",
+        "label": "Stereo Vision"
+      },
+      {
+        "@id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:camera-extrinsics", "label": "Camera Extrinsics"}
+      {
+        "@id": "urn:ngm:class:camera-extrinsics",
+        "label": "Camera Extrinsics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:epipolar-geometry", "label": "Epipolar Geometry"},
-      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure-from-Motion"},
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
-      {"@id": "urn:ngm:class:optical-flow", "label": "Optical Flow"}
+      {
+        "@id": "urn:ngm:class:epipolar-geometry",
+        "label": "Epipolar Geometry"
+      },
+      {
+        "@id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure-from-Motion"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:optical-flow",
+        "label": "Optical Flow"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:intrinsic-camera-parameters", "label": "Intrinsic Camera Parameters"},
-    {"@id": "urn:ngm:class:camera-intrinsic-matrix", "label": "Camera Intrinsic Matrix"}
+    {
+      "@id": "urn:ngm:class:intrinsic-camera-parameters",
+      "label": "Intrinsic Camera Parameters"
+    },
+    {
+      "@id": "urn:ngm:class:camera-intrinsic-matrix",
+      "label": "Camera Intrinsic Matrix"
+    }
   ],
   "quality": 0.75,
   "provenance": {

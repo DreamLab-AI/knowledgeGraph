@@ -23,52 +23,137 @@ public:: true
   "definition": "Operations research (OR) is an analytical discipline that applies advanced mathematical and computational methods — including linear programming, integer optimisation, stochastic modelling, and simulation — to support decision-making in complex systems. It originated during World War II to optimise military logistics and has since expanded to industrial, financial, and humanitarian domains. OR provides rigorous frameworks for formulating trade-off problems as constrained optimisation models, then solving them to global or near-global optimality using exact solvers or heuristic methods. Modern OR integrates machine learning for parameter estimation and reinforcement learning for sequential decision problems.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:optimisation", "label": "Optimisation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:optimisation",
+      "label": "Optimisation"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:optimization-algorithm", "label": "Optimization Algorithm"},
-      {"@id": "urn:ngm:class:constraint-solver", "label": "Constraint Solver"},
-      {"@id": "urn:ngm:class:heuristic-methods", "label": "Heuristic Methods"},
-      {"@id": "urn:ngm:class:monte-carlo-methods", "label": "Monte Carlo Methods"},
-      {"@id": "urn:ngm:class:integer-programming", "label": "Integer Programming"},
-      {"@id": "urn:ngm:class:stochastic-modelling", "label": "Stochastic Modelling"}
+      {
+        "@id": "urn:ngm:class:optimization-algorithm",
+        "label": "Optimization Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:constraint-solver",
+        "label": "Constraint Solver"
+      },
+      {
+        "@id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "@id": "urn:ngm:class:integer-programming",
+        "label": "Integer Programming"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-modelling",
+        "label": "Stochastic Modelling"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:logistics-optimization", "label": "Logistics Optimization"},
-      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"},
-      {"@id": "urn:ngm:class:planning-and-scheduling", "label": "Planning and Scheduling"},
-      {"@id": "urn:ngm:class:resource-allocation", "label": "Resource Allocation"},
-      {"@id": "urn:ngm:class:fleet-management", "label": "Fleet Management"}
+      {
+        "@id": "urn:ngm:class:logistics-optimization",
+        "label": "Logistics Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "@id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:resource-allocation",
+        "label": "Resource Allocation"
+      },
+      {
+        "@id": "urn:ngm:class:fleet-management",
+        "label": "Fleet Management"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:mathematical-modelling", "label": "Mathematical Modelling"},
-      {"@id": "urn:ngm:class:data", "label": "Data"}
+      {
+        "@id": "urn:ngm:class:mathematical-modelling",
+        "label": "Mathematical Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:data",
+        "label": "Data"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:linear-programming", "label": "Linear Programming"},
-      {"@id": "urn:ngm:class:network-flow", "label": "Network Flow"},
-      {"@id": "urn:ngm:class:queuing-theory", "label": "Queuing Theory"},
-      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"}
+      {
+        "@id": "urn:ngm:class:linear-programming",
+        "label": "Linear Programming"
+      },
+      {
+        "@id": "urn:ngm:class:queuing-theory",
+        "label": "Queuing Theory"
+      },
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:decision-support", "label": "Decision Support"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
-      {"@id": "urn:ngm:class:systems-engineering", "label": "Systems Engineering"},
-      {"@id": "urn:ngm:class:decision-theory", "label": "Decision Theory"}
+      {
+        "@id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:systems-engineering",
+        "label": "Systems Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:decision-theory",
+        "label": "Decision Theory"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:heuristic-methods", "label": "Heuristic Methods"}
+      {
+        "@id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:management-science", "label": "Management Science"},
-    {"@id": "urn:ngm:class:operational-research", "label": "Operational Research"}
+    {
+      "@id": "urn:ngm:class:management-science",
+      "label": "Management Science"
+    },
+    {
+      "@id": "urn:ngm:class:operational-research",
+      "label": "Operational Research"
+    }
   ],
   "quality": 0.8,
   "provenance": {

@@ -86,10 +86,6 @@ public:: true
         "label": "Order Book"
       },
       {
-        "@id": "urn:ngm:class:over-the-counter-desk",
-        "label": "Over-the-Counter Desk"
-      },
-      {
         "@id": "urn:ngm:class:decentralised-exchange",
         "label": "Decentralised Exchange"
       }
@@ -100,7 +96,7 @@ public:: true
         "label": "Digital Asset Ecosystem"
       },
       {
-        "@id": "urn:ngm:class:global-financial-system",
+        "@id": "urn:ngm:class:financial-system",
         "label": "Global Financial System"
       }
     ],
@@ -124,7 +120,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:tokenised-securities-trading",
+        "@id": "urn:ngm:class:tokenised-securities",
         "label": "Tokenised Securities Trading"
       },
       {
@@ -168,22 +164,8 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:financial-regulatory-framework",
-        "label": "Financial Regulatory Framework"
-      },
-      {
         "@id": "urn:ngm:class:travel-rule",
         "label": "Travel Rule"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:traditional-securities-exchange",
-        "label": "Traditional Securities Exchange"
-      },
-      {
-        "@id": "urn:ngm:class:fiat-currency-market",
-        "label": "Fiat Currency Market"
       }
     ],
     "bridgesTo": [

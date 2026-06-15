@@ -138,20 +138,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:data-processing-unit",
-        "label": "Data Processing Unit"
-      },
-      {
         "@id": "urn:ngm:class:imu-sensors",
         "label": "IMU Sensors"
-      },
-      {
-        "@id": "urn:ngm:class:optical-cameras",
-        "label": "Optical Cameras"
-      },
-      {
-        "@id": "urn:ngm:class:tracking-volume",
-        "label": "Tracking Volume"
       },
       {
         "@id": "urn:ngm:class:calibration-target",
@@ -172,19 +160,11 @@ public:: true
         "label": "High-Speed Networking"
       },
       {
-        "@id": "urn:ngm:class:synchronized-timing",
-        "label": "Synchronized Timing"
-      },
-      {
         "@id": "urn:ngm:class:motion-solver-software",
         "label": "Motion Solver Software"
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:biomechanical-analysis",
-        "label": "Biomechanical Analysis"
-      },
       {
         "@id": "urn:ngm:class:performance-capture",
         "label": "Performance Capture"

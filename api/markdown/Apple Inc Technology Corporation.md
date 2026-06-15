@@ -25,51 +25,108 @@ elevatedFrom:: [[Apple]]
   "domain": "infrastructure",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:hardware", "label": "Hardware"}
+    {
+      "@id": "urn:ngm:class:hardware",
+      "label": "Hardware"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:apple-silicon", "label": "Apple Silicon"},
-      {"@id": "urn:ngm:class:ios", "label": "iOS"},
-      {"@id": "urn:ngm:class:macos", "label": "macOS"},
-      {"@id": "urn:ngm:class:visionos", "label": "visionOS"},
-      {"@id": "urn:ngm:class:app-store", "label": "App Store"}
+      {
+        "@id": "urn:ngm:class:ios",
+        "label": "iOS"
+      },
+      {
+        "@id": "urn:ngm:class:visionos",
+        "label": "visionOS"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:on-device-machine-learning", "label": "On-Device Machine Learning"},
-      {"@id": "urn:ngm:class:private-cloud-compute", "label": "Private Cloud Compute"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:on-device-machine-learning",
+        "label": "On-Device Machine Learning"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:arm-architecture", "label": "ARM Architecture"},
-      {"@id": "urn:ngm:class:secure-enclave", "label": "Secure Enclave"},
-      {"@id": "urn:ngm:class:neural-engine", "label": "Neural Engine"}
+      {
+        "@id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclave"
+      },
+      {
+        "@id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Engine"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
-      {"@id": "urn:ngm:class:unified-memory-architecture", "label": "Unified Memory Architecture"},
-      {"@id": "urn:ngm:class:llvm-compiler-infrastructure", "label": "LLVM Compiler Infrastructure"}
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:compiler",
+        "label": "LLVM Compiler Infrastructure"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:microsoft-corporation", "label": "Microsoft Corporation"},
-      {"@id": "urn:ngm:class:google-llc", "label": "Google LLC"},
-      {"@id": "urn:ngm:class:android", "label": "Android"}
+      {
+        "@id": "urn:ngm:class:microsoft",
+        "label": "Microsoft Corporation"
+      },
+      {
+        "@id": "urn:ngm:class:google-ai-technology-corporation",
+        "label": "Google LLC"
+      },
+      {
+        "@id": "urn:ngm:class:android",
+        "label": "Android"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-ai", "label": "Spatial AI"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:spatial-ai",
+        "label": "Spatial AI"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:platform-economy", "label": "Platform Economy"},
-      {"@id": "urn:ngm:class:digital-markets-act", "label": "Digital Markets Act"},
-      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}
+      {
+        "@id": "urn:ngm:class:platform-economy",
+        "label": "Platform Economy"
+      },
+      {
+        "@id": "urn:ngm:class:digital-markets-act",
+        "label": "Digital Markets Act"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:apple-inc", "label": "Apple Inc"},
-    {"@id": "urn:ngm:class:apple-computer-inc", "label": "Apple Computer Inc"}
+    {
+      "@id": "urn:ngm:class:apple-inc",
+      "label": "Apple Inc"
+    },
+    {
+      "@id": "urn:ngm:class:apple-computer-inc",
+      "label": "Apple Computer Inc"
+    }
   ],
   "quality": 0.72,
   "provenance": {

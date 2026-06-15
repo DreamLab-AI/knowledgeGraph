@@ -24,10 +24,6 @@
       {
         "id": "urn:ngm:class:linked-data",
         "label": "Linked Data"
-      },
-      {
-        "id": "urn:ngm:class:uri-iri",
-        "label": "URI IRI"
       }
     ],
     "requires": [
@@ -69,7 +65,7 @@
         "label": "Open World Assumption"
       },
       {
-        "id": "urn:ngm:class:description-logics",
+        "id": "urn:ngm:class:description-logic",
         "label": "Description Logics"
       }
     ],
@@ -85,7 +81,7 @@
         "label": "Decentralized Identifier"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential",
+        "id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       }
     ],
@@ -99,15 +95,15 @@
         "label": "SPARQL"
       },
       {
-        "id": "urn:ngm:class:owl-web-ontology-language",
+        "id": "urn:ngm:class:owl-2-web-ontology-language",
         "label": "OWL Web Ontology Language"
       },
       {
-        "id": "urn:ngm:class:turtle-syntax",
+        "id": "urn:ngm:class:turtle",
         "label": "Turtle Syntax"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       }
     ],

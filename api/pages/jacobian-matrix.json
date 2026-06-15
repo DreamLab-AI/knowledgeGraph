@@ -20,17 +20,9 @@
       {
         "id": "urn:ngm:class:jacobian-determinant",
         "label": "Jacobian Determinant"
-      },
-      {
-        "id": "urn:ngm:class:null-space-projection",
-        "label": "Null Space Projection"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:multivariate-calculus",
-        "label": "Multivariate Calculus"
-      },
       {
         "id": "urn:ngm:class:denavit-hartenberg-parameters",
         "label": "Denavit-Hartenberg Parameters"
@@ -64,20 +56,11 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:hessian-matrix",
-        "label": "Hessian Matrix"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:neural-network-backpropagation",
+        "id": "urn:ngm:class:backpropagation",
         "label": "Neural Network Backpropagation"
-      },
-      {
-        "id": "urn:ngm:class:differentiable-simulation",
-        "label": "Differentiable Simulation"
       },
       {
         "id": "urn:ngm:class:coordinate-transformation",
@@ -94,16 +77,8 @@
         "label": "Forward Kinematics"
       },
       {
-        "id": "urn:ngm:class:partial-derivatives",
-        "label": "Partial Derivatives"
-      },
-      {
         "id": "urn:ngm:class:linear-algebra",
         "label": "Linear Algebra"
-      },
-      {
-        "id": "urn:ngm:class:moore-penrose-pseudoinverse",
-        "label": "Moore-Penrose Pseudoinverse"
       }
     ],
     "supports": [],
@@ -124,7 +99,7 @@
         "label": "Trajectory Control"
       },
       {
-        "id": "urn:ngm:class:manipulability",
+        "id": "urn:ngm:class:rb-0032-manipulability",
         "label": "Manipulability"
       },
       {

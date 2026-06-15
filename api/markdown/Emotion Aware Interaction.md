@@ -66,12 +66,6 @@ alias:: Emotion-Aware Interaction
         "@id": "urn:ngm:class:human-computer-interaction",
         "label": "Human Computer Interaction"
       }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:emotionally-intelligent-metaverse",
-        "label": "Emotionally Intelligent Metaverse"
-      }
     ]
   },
   "quality": 0.5,

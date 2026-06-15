@@ -30,7 +30,7 @@
         "label": "Serial Shipping Container Code"
       },
       {
-        "id": "urn:ngm:class:epcis",
+        "id": "urn:ngm:class:gs1-epcis",
         "label": "EPCIS"
       },
       {
@@ -84,7 +84,7 @@
         "label": "Decentralised Identifier"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential",
+        "id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       }
     ],
@@ -95,26 +95,17 @@
         "label": "Digital Product Passport"
       },
       {
-        "id": "urn:ngm:class:automated-identification",
-        "label": "Automated Identification"
-      },
-      {
         "id": "urn:ngm:class:rfid",
         "label": "RFID"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-standard",
+        "id": "urn:ngm:class:iso-standards",
         "label": "ISO Standard"
       }
     ],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:global-standards-infrastructure",
-        "label": "Global Standards Infrastructure"
-      }
-    ],
+    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:supply-chain",
@@ -131,14 +122,6 @@
       {
         "id": "urn:ngm:class:logistics-optimization",
         "label": "Logistics Optimization"
-      },
-      {
-        "id": "urn:ngm:class:retail-technology",
-        "label": "Retail Technology"
-      },
-      {
-        "id": "urn:ngm:class:healthcare-supply-chain",
-        "label": "Healthcare Supply Chain"
       }
     ]
   },

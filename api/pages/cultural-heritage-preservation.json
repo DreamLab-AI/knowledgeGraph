@@ -45,11 +45,11 @@
         "label": "Collective Memory Archive"
       },
       {
-        "id": "urn:ngm:class:virtual-heritage-tour",
+        "id": "urn:ngm:class:virtual-tour",
         "label": "Virtual Heritage Tour"
       },
       {
-        "id": "urn:ngm:class:augmented-reality-overlay",
+        "id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality Overlay"
       }
     ],
@@ -97,11 +97,11 @@
         "label": "Multispectral Imaging"
       },
       {
-        "id": "urn:ngm:class:3d-reconstruction",
+        "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
       },
       {
-        "id": "urn:ngm:class:gltf",
+        "id": "urn:ngm:class:gltf-standard",
         "label": "glTF"
       }
     ],

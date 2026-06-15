@@ -28,10 +28,6 @@
       {
         "id": "urn:ngm:class:dropout",
         "label": "Dropout"
-      },
-      {
-        "id": "urn:ngm:class:regularisation-coefficient",
-        "label": "Regularisation Coefficient"
       }
     ],
     "requires": [
@@ -71,7 +67,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:model-parameter",
+        "id": "urn:ngm:class:parameter",
         "label": "Model Parameter"
       },
       {

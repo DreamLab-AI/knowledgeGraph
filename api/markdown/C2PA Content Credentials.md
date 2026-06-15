@@ -38,53 +38,131 @@ public:: true
   ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:c2-pa-standard", "label": "C2PA Standard"},
-      {"@id": "urn:ngm:class:cose-signing", "label": "COSE Signing"},
-      {"@id": "urn:ngm:class:jumbf-container-format", "label": "JUMBF Container Format"}
+      {
+        "@id": "urn:ngm:class:c2-pa-standard",
+        "label": "C2PA Standard"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-signing",
+        "label": "COSE Signing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"},
-      {"@id": "urn:ngm:class:x-509-certificate", "label": "X.509 Certificate"},
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-generated-content-disclosure", "label": "AI-Generated Content Disclosure"},
-      {"@id": "urn:ngm:class:provenance-verification", "label": "Provenance Verification"},
-      {"@id": "urn:ngm:class:media-authenticity", "label": "Media Authenticity"},
-      {"@id": "urn:ngm:class:disinformation-countermeasures", "label": "Disinformation Countermeasures"},
-      {"@id": "urn:ngm:class:trust-and-safety", "label": "Trust and Safety"}
+      {
+        "@id": "urn:ngm:class:ai-generated-content-disclosure",
+        "label": "AI-Generated Content Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-verification",
+        "label": "Provenance Verification"
+      },
+      {
+        "@id": "urn:ngm:class:media-authenticity",
+        "label": "Media Authenticity"
+      },
+      {
+        "@id": "urn:ngm:class:disinformation-countermeasures",
+        "label": "Disinformation Countermeasures"
+      },
+      {
+        "@id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"},
-      {"@id": "urn:ngm:class:hardware-security-module", "label": "Hardware Security Module"}
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:content-supply-chain-integrity", "label": "Content Supply Chain Integrity"},
-      {"@id": "urn:ngm:class:creator-attribution", "label": "Creator Attribution"},
-      {"@id": "urn:ngm:class:ai-transparency", "label": "AI Transparency"}
+      {
+        "@id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Content Supply Chain Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:ai-transparency-framework",
+        "label": "AI Transparency"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:deepfakes", "label": "Deepfakes"},
-      {"@id": "urn:ngm:class:ai-watermarking", "label": "AI Watermarking"},
-      {"@id": "urn:ngm:class:steganography", "label": "Steganography"}
+      {
+        "@id": "urn:ngm:class:deepfakes",
+        "label": "Deepfakes"
+      },
+      {
+        "@id": "urn:ngm:class:steganography",
+        "label": "Steganography"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:open-content-authenticity-initiative", "label": "Open Content Authenticity Initiative"},
-      {"@id": "urn:ngm:class:iptc-photo-metadata", "label": "IPTC Photo Metadata"},
-      {"@id": "urn:ngm:class:exif-metadata", "label": "EXIF Metadata"},
-      {"@id": "urn:ngm:class:w3c-verifiable-credentials", "label": "W3C Verifiable Credentials"},
-      {"@id": "urn:ngm:class:digital-provenance", "label": "Digital Provenance"}
+      {
+        "@id": "urn:ngm:class:content-authenticity",
+        "label": "Open Content Authenticity Initiative"
+      },
+      {
+        "@id": "urn:ngm:class:iptc-photo-metadata",
+        "label": "IPTC Photo Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:metadata",
+        "label": "EXIF Metadata"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-verifiable-credentials",
+        "label": "W3C Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:provenance",
+        "label": "Digital Provenance"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:content-credentials", "label": "Content Credentials"},
-    {"@id": "urn:ngm:class:c2-pa-manifests", "label": "C2PA Manifests"}
+    {
+      "@id": "urn:ngm:class:content-credentials",
+      "label": "Content Credentials"
+    },
+    {
+      "@id": "urn:ngm:class:c2-pa-manifests",
+      "label": "C2PA Manifests"
+    }
   ],
   "quality": 0.74,
   "provenance": {

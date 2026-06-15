@@ -24,10 +24,6 @@
       {
         "id": "urn:ngm:class:transaction",
         "label": "Transaction"
-      },
-      {
-        "id": "urn:ngm:class:unconfirmed-transaction",
-        "label": "Unconfirmed Transaction"
       }
     ],
     "requires": [
@@ -54,7 +50,7 @@
         "label": "Block Production"
       },
       {
-        "id": "urn:ngm:class:fee-estimation",
+        "id": "urn:ngm:class:fee-market",
         "label": "Fee Estimation"
       }
     ],
@@ -84,7 +80,7 @@
         "label": "Block"
       },
       {
-        "id": "urn:ngm:class:confirmed-transaction",
+        "id": "urn:ngm:class:transaction",
         "label": "Confirmed Transaction"
       }
     ],
@@ -142,11 +138,11 @@
         "label": "Mining Pool"
       },
       {
-        "id": "urn:ngm:class:double-spend",
+        "id": "urn:ngm:class:double-spending",
         "label": "Double Spend"
       },
       {
-        "id": "urn:ngm:class:transaction-malleability",
+        "id": "urn:ngm:class:transaction",
         "label": "Transaction Malleability"
       }
     ]

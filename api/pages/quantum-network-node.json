@@ -18,38 +18,14 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:classical-communication-interface",
+        "id": "urn:ngm:class:communication-interface",
         "label": "Classical Communication Interface"
-      },
-      {
-        "id": "urn:ngm:class:environmental-isolation-chamber",
-        "label": "Environmental Isolation Chamber"
-      },
-      {
-        "id": "urn:ngm:class:optical-switch",
-        "label": "Optical Switch"
-      },
-      {
-        "id": "urn:ngm:class:quantum-light-source",
-        "label": "Quantum Light Source"
-      },
-      {
-        "id": "urn:ngm:class:quantum-memory-unit",
-        "label": "Quantum Memory Unit"
-      },
-      {
-        "id": "urn:ngm:class:single-photon-detector",
-        "label": "Single Photon Detector"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:cryogenic-cooling",
         "label": "Cryogenic Cooling"
-      },
-      {
-        "id": "urn:ngm:class:optical-fiber-connection",
-        "label": "Optical Fiber Connection"
       },
       {
         "id": "urn:ngm:class:vibration-isolation",
@@ -78,7 +54,7 @@
         "label": "Quantum Key Distribution"
       },
       {
-        "id": "urn:ngm:class:ultra-secure-communication",
+        "id": "urn:ngm:class:secure-communication",
         "label": "Ultra-Secure Communication"
       }
     ],
@@ -91,7 +67,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:quantum-communication-network",
+        "id": "urn:ngm:class:communication-network",
         "label": "Quantum Communication Network"
       },
       {

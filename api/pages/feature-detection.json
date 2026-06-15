@@ -21,10 +21,6 @@
       {
         "id": "urn:ngm:class:sensor-data",
         "label": "Sensor Data"
-      },
-      {
-        "id": "urn:ngm:class:capability-api",
-        "label": "Capability API"
       }
     ],
     "enables": [
@@ -35,10 +31,6 @@
       {
         "id": "urn:ngm:class:object-detection",
         "label": "Object Detection"
-      },
-      {
-        "id": "urn:ngm:class:progressive-enhancement",
-        "label": "Progressive Enhancement"
       },
       {
         "id": "urn:ngm:class:graceful-degradation",
@@ -57,23 +49,10 @@
       {
         "id": "urn:ngm:class:signal-processing",
         "label": "Signal Processing"
-      },
-      {
-        "id": "urn:ngm:class:browser-api",
-        "label": "Browser API"
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:user-agent-sniffing",
-        "label": "User-Agent Sniffing"
-      },
-      {
-        "id": "urn:ngm:class:version-detection",
-        "label": "Version Detection"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:spatial-computing",
@@ -94,10 +73,6 @@
         "label": "Convolutional Neural Network"
       },
       {
-        "id": "urn:ngm:class:keypoint-descriptor",
-        "label": "Keypoint Descriptor"
-      },
-      {
         "id": "urn:ngm:class:image-processing",
         "label": "Image Processing"
       }
@@ -114,10 +89,6 @@
       {
         "id": "urn:ngm:class:webxr",
         "label": "WebXR"
-      },
-      {
-        "id": "urn:ngm:class:cross-browser-compatibility",
-        "label": "Cross-Browser Compatibility"
       }
     ],
     "standardizedBy": [],

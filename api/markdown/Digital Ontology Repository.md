@@ -150,16 +150,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:ontology-storage-system",
-        "label": "Ontology Storage System"
-      },
-      {
         "@id": "urn:ngm:class:query-interface",
         "label": "Query Interface"
-      },
-      {
-        "@id": "urn:ngm:class:validation-engine",
-        "label": "Validation Engine"
       },
       {
         "@id": "urn:ngm:class:version-control",
@@ -184,10 +176,6 @@ public:: true
         "label": "Semantic Reasoning Engine"
       },
       {
-        "@id": "urn:ngm:class:uri-resolution-service",
-        "label": "URI Resolution Service"
-      },
-      {
         "@id": "urn:ngm:class:authentication-service",
         "label": "Authentication Service"
       },
@@ -197,10 +185,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:cross-domain-integration",
-        "label": "Cross-Domain Integration"
-      },
       {
         "@id": "urn:ngm:class:ontology-reuse",
         "label": "Ontology Reuse"

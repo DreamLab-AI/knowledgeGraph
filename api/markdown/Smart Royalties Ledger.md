@@ -138,23 +138,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:audit-record",
-        "label": "Audit Record"
-      },
-      {
-        "@id": "urn:ngm:class:distribution-queue",
-        "label": "Distribution Queue"
-      },
-      {
-        "@id": "urn:ngm:class:payment-tracking-engine",
-        "label": "Payment Tracking Engine"
-      },
-      {
-        "@id": "urn:ngm:class:royalty-calculator",
-        "label": "Royalty Calculator"
-      },
-      {
-        "@id": "urn:ngm:class:settlement-system",
+        "@id": "urn:ngm:class:settlement",
         "label": "Settlement System"
       }
     ],
@@ -168,7 +152,7 @@ public:: true
         "label": "Payment Gateway"
       },
       {
-        "@id": "urn:ngm:class:transaction-processor",
+        "@id": "urn:ngm:class:transaction-processing",
         "label": "Transaction Processor"
       },
       {
@@ -178,12 +162,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:automated-creator-compensation",
+        "@id": "urn:ngm:class:creator-compensation",
         "label": "Automated Creator Compensation"
-      },
-      {
-        "@id": "urn:ngm:class:cross-platform-attribution",
-        "label": "Cross-Platform Attribution"
       },
       {
         "@id": "urn:ngm:class:multi-party-royalties",
@@ -192,12 +172,6 @@ public:: true
       {
         "@id": "urn:ngm:class:transparent-revenue-sharing",
         "label": "Transparent Revenue Sharing"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:creator-economy-infrastructure",
-        "label": "Creator Economy Infrastructure"
       }
     ]
   },

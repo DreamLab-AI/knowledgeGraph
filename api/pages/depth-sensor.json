@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:infrared-emitter",
+        "id": "urn:ngm:class:infrared-light-source",
         "label": "Infrared Emitter"
       },
       {
@@ -46,7 +46,7 @@
         "label": "Object Detection"
       },
       {
-        "id": "urn:ngm:class:simultaneous-localization-and-mapping",
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
         "label": "Simultaneous Localization and Mapping"
       },
       {
@@ -66,10 +66,6 @@
     ],
     "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:rgb-camera",
-        "label": "RGB Camera"
-      },
       {
         "id": "urn:ngm:class:radar-sensor",
         "label": "Radar Sensor"
@@ -116,7 +112,7 @@
         "label": "Perception System"
       },
       {
-        "id": "urn:ngm:class:robotic-sensor-suite",
+        "id": "urn:ngm:class:sensor-suite",
         "label": "Robotic Sensor Suite"
       }
     ],

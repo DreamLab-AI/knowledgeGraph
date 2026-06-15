@@ -350,14 +350,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:ai-and-blockchain",
-        "label": "AI and Blockchain"
-      },
-      {
-        "@id": "urn:ngm:class:biocomputing",
-        "label": "Biocomputing"
-      },
-      {
         "@id": "urn:ngm:class:cyber-physical-systems",
         "label": "Cyber Physical Systems"
       },
@@ -392,10 +384,6 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:cross-domain-research-infrastructure",
-        "label": "Cross-Domain Research Infrastructure"
-      },
-      {
         "@id": "urn:ngm:class:interoperability-protocol",
         "label": "Interoperability Protocol"
       },
@@ -406,10 +394,6 @@ public:: true
       {
         "@id": "urn:ngm:class:open-standard",
         "label": "Open Standard"
-      },
-      {
-        "@id": "urn:ngm:class:regulatory-coordination",
-        "label": "Regulatory Coordination"
       }
     ],
     "enables": [
@@ -430,7 +414,7 @@ public:: true
         "label": "Smart Cities"
       },
       {
-        "@id": "urn:ngm:class:technological-singularity",
+        "@id": "urn:ngm:class:singularity",
         "label": "Technological Singularity"
       },
       {
@@ -444,20 +428,8 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:general-purpose-technology-theory",
-        "label": "General Purpose Technology Theory"
-      },
-      {
         "@id": "urn:ngm:class:platform-economy",
         "label": "Platform Economy"
-      },
-      {
-        "@id": "urn:ngm:class:schumpeterian-innovation",
-        "label": "Schumpeterian Innovation"
-      },
-      {
-        "@id": "urn:ngm:class:systems-of-systems-design",
-        "label": "Systems of Systems Design"
       },
       {
         "@id": "urn:ngm:class:digital-twin",
@@ -487,10 +459,6 @@ public:: true
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:disruptive-innovation",
-        "label": "Disruptive Innovation"
-      },
       {
         "@id": "urn:ngm:class:emerging-technologies",
         "label": "Emerging Technologies"
@@ -546,10 +514,6 @@ public:: true
       {
         "@id": "urn:ngm:class:nist-ai-rmf",
         "label": "NIST AI RMF"
-      },
-      {
-        "@id": "urn:ngm:class:oecd-sti-directorate",
-        "label": "OECD STI Directorate"
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",

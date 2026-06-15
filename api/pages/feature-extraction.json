@@ -34,10 +34,6 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
-      },
-      {
-        "id": "urn:ngm:class:data-normalisation",
-        "label": "Data Normalisation"
       }
     ],
     "enables": [
@@ -75,7 +71,7 @@
         "label": "Feature Engineering"
       },
       {
-        "id": "urn:ngm:class:raw-data-processing",
+        "id": "urn:ngm:class:data-processing",
         "label": "Raw Data Processing"
       }
     ],
@@ -111,7 +107,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:machine-learning-pipeline",
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
       },
       {

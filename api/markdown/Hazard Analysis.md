@@ -23,63 +23,151 @@ public:: true
   "definition": "Hazard analysis is the systematic identification, characterisation, and prioritisation of conditions or events with the potential to cause harm to people, systems, or environments, forming the foundational step in safety engineering processes that design controls to prevent or mitigate those harms. Methods range from qualitative techniques such as HAZOP and FMEA to quantitative probabilistic risk assessment, applied across aviation, automotive, nuclear, medical devices, and increasingly AI systems.",
   "domain": "governance",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:risk-assessment",
+      "label": "Risk Assessment"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:fault-tree-analysis", "label": "Fault Tree Analysis"},
-      {"@id": "urn:ngm:class:failure-modes-and-effects-analysis", "label": "Failure Modes and Effects Analysis"},
-      {"@id": "urn:ngm:class:hazard-identification", "label": "Hazard Identification"},
-      {"@id": "urn:ngm:class:risk-estimation", "label": "Risk Estimation"}
+      {
+        "@id": "urn:ngm:class:fault-tree-analysis",
+        "label": "Fault Tree Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:hazard-identification",
+        "label": "Hazard Identification"
+      },
+      {
+        "@id": "urn:ngm:class:risk",
+        "label": "Risk Estimation"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:safety-engineering", "label": "Safety Engineering"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+      {
+        "@id": "urn:ngm:class:safety-engineering",
+        "label": "Safety Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:system-definition", "label": "System Definition"},
-      {"@id": "urn:ngm:class:risk-assessment-methodology", "label": "Risk Assessment Methodology"}
+      {
+        "@id": "urn:ngm:class:risk-assessment-methodology",
+        "label": "Risk Assessment Methodology"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:fault-tree-analysis", "label": "Fault Tree Analysis"},
-      {"@id": "urn:ngm:class:risk-assessment-methodology", "label": "Risk Assessment Methodology"},
-      {"@id": "urn:ngm:class:probabilistic-risk-assessment", "label": "Probabilistic Risk Assessment"},
-      {"@id": "urn:ngm:class:hazop", "label": "HAZOP"}
+      {
+        "@id": "urn:ngm:class:fault-tree-analysis",
+        "label": "Fault Tree Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment-methodology",
+        "label": "Risk Assessment Methodology"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-risk-assessment",
+        "label": "Probabilistic Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:hazop",
+        "label": "HAZOP"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:compliance", "label": "Compliance"},
-      {"@id": "urn:ngm:class:safety-case", "label": "Safety Case"},
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"}
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:safety-case",
+        "label": "Safety Case"
+      },
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:system-model", "label": "System Model"},
-      {"@id": "urn:ngm:class:risk-criteria", "label": "Risk Criteria"}
+      {
+        "@id": "urn:ngm:class:system-model",
+        "label": "System Model"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:fault-tolerance-system", "label": "Fault Tolerance System"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:safety-integrity-level", "label": "Safety Integrity Level"}
+      {
+        "@id": "urn:ngm:class:fault-tolerance-system",
+        "label": "Fault Tolerance System"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:safety-integrity-level",
+        "label": "Safety Integrity Level"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-26262", "label": "ISO 26262"},
-      {"@id": "urn:ngm:class:iec-61508", "label": "IEC 61508"},
-      {"@id": "urn:ngm:class:mil-std-882", "label": "MIL-STD-882"}
+      {
+        "@id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      },
+      {
+        "@id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "@id": "urn:ngm:class:mil-std-882",
+        "label": "MIL-STD-882"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:technical-standards", "label": "Technical Standards"},
-      {"@id": "urn:ngm:class:system-theoretic-process-analysis", "label": "System-Theoretic Process Analysis"},
-      {"@id": "urn:ngm:class:safety-critical-systems", "label": "Safety-Critical Systems"}
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:technical-standards",
+        "label": "Technical Standards"
+      },
+      {
+        "@id": "urn:ngm:class:safety-critical-systems",
+        "label": "Safety-Critical Systems"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:hazard-and-risk-analysis", "label": "Hazard and Risk Analysis"},
-    {"@id": "urn:ngm:class:safety-risk-assessment", "label": "Safety Risk Assessment"}
+    {
+      "@id": "urn:ngm:class:hazard-and-risk-analysis",
+      "label": "Hazard and Risk Analysis"
+    },
+    {
+      "@id": "urn:ngm:class:safety-risk-assessment",
+      "label": "Safety Risk Assessment"
+    }
   ],
   "quality": 0.72,
   "provenance": {

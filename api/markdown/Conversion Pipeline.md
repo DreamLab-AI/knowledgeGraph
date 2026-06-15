@@ -150,22 +150,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:error-handler",
-        "label": "Error Handler"
-      },
-      {
-        "@id": "urn:ngm:class:output-generator",
-        "label": "Output Generator"
-      },
-      {
-        "@id": "urn:ngm:class:transformation-engine",
-        "label": "Transformation Engine"
-      },
-      {
-        "@id": "urn:ngm:class:validation-module",
-        "label": "Validation Module"
-      },
-      {
         "@id": "urn:ngm:class:format-parser",
         "label": "Format Parser"
       }
@@ -176,26 +160,14 @@ public:: true
         "label": "Asset Metadata"
       },
       {
-        "@id": "urn:ngm:class:conversion-rules",
-        "label": "Conversion Rules"
-      },
-      {
         "@id": "urn:ngm:class:data-schema",
         "label": "Data Schema"
-      },
-      {
-        "@id": "urn:ngm:class:format-specification",
-        "label": "Format Specification"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:asset-optimization",
         "label": "Asset Optimization"
-      },
-      {
-        "@id": "urn:ngm:class:data-harmonization",
-        "label": "Data Harmonization"
       },
       {
         "@id": "urn:ngm:class:format-migration",

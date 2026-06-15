@@ -57,10 +57,6 @@
       {
         "id": "urn:ngm:class:algorithmic-accountability",
         "label": "Algorithmic Accountability"
-      },
-      {
-        "id": "urn:ngm:class:risk-communication",
-        "label": "Risk Communication"
       }
     ],
     "implements": [],
@@ -125,10 +121,6 @@
       {
         "id": "urn:ngm:class:legitimacy",
         "label": "Legitimacy"
-      },
-      {
-        "id": "urn:ngm:class:social-licence-to-operate",
-        "label": "Social Licence to Operate"
       },
       {
         "id": "urn:ngm:class:reputational-risk",

@@ -94,10 +94,6 @@ public:: true
         "label": "Market Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:trading-platform",
-        "label": "Trading Platform"
-      },
-      {
         "@id": "urn:ngm:class:carbon-registry",
         "label": "Carbon Registry"
       }
@@ -110,10 +106,6 @@ public:: true
       {
         "@id": "urn:ngm:class:climate-finance",
         "label": "Climate Finance"
-      },
-      {
-        "@id": "urn:ngm:class:offset-liquidity",
-        "label": "Offset Liquidity"
       }
     ]
   },

@@ -75,15 +75,11 @@ public:: true
         "label": "Actuator"
       },
       {
-        "@id": "urn:ngm:class:joint-controller",
-        "label": "Joint Controller"
-      },
-      {
         "@id": "urn:ngm:class:force-torque-sensor",
         "label": "Force Torque Sensor"
       },
       {
-        "@id": "urn:ngm:class:wearable-device",
+        "@id": "urn:ngm:class:wearable-device-integration",
         "label": "Wearable Device"
       }
     ],
@@ -143,21 +139,7 @@ public:: true
         "label": "Embedded Systems"
       }
     ],
-    "supports": [
-      {
-        "@id": "urn:ngm:class:physical-therapy",
-        "label": "Physical Therapy"
-      },
-      {
-        "@id": "urn:ngm:class:augmented-physical-performance",
-        "label": "Augmented Physical Performance"
-      }
-    ],
     "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:endoskeleton",
-        "label": "Endoskeleton"
-      },
       {
         "@id": "urn:ngm:class:prosthetics",
         "label": "Prosthetics"

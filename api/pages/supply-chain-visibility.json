@@ -23,10 +23,6 @@
         "label": "Data Integration"
       },
       {
-        "id": "urn:ngm:class:erp-systems",
-        "label": "ERP Systems"
-      },
-      {
         "id": "urn:ngm:class:real-time-data-processing",
         "label": "Real-Time Data Processing"
       }
@@ -51,10 +47,6 @@
       {
         "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
-      },
-      {
-        "id": "urn:ngm:class:inventory-optimization",
-        "label": "Inventory Optimization"
       }
     ],
     "dependsOn": [],
@@ -84,16 +76,12 @@
         "label": "Logistics Optimization"
       },
       {
-        "id": "urn:ngm:class:iot-sensors",
+        "id": "urn:ngm:class:io-t-sensors",
         "label": "IoT Sensors"
       },
       {
         "id": "urn:ngm:class:rfid",
         "label": "RFID"
-      },
-      {
-        "id": "urn:ngm:class:gps-tracking",
-        "label": "GPS Tracking"
       },
       {
         "id": "urn:ngm:class:api-integration",
@@ -110,7 +98,7 @@
         "label": "Digital Product Passport"
       },
       {
-        "id": "urn:ngm:class:scope-3-emissions-accounting",
+        "id": "urn:ngm:class:scope-3-emissions",
         "label": "Scope 3 Emissions Accounting"
       }
     ],
@@ -128,10 +116,6 @@
       {
         "id": "urn:ngm:class:supply-chain-blockchain",
         "label": "Supply Chain Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:control-tower",
-        "label": "Control Tower"
       }
     ]
   },

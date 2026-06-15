@@ -23,58 +23,141 @@ public:: true
   "definition": "An integrated assembly of software, hardware, data, and processes that employs machine learning or related techniques to perceive inputs, infer patterns or decisions, and produce outputs that affect its environment or users. AI systems range from narrow task-specific classifiers to general-purpose language models and autonomous agents, and they are characterised by behaviour that emerges from learned parameters rather than explicit programming. Regulatory definitions such as that codified in the EU AI Act emphasise the system-level perspective, encompassing the full sociotechnical context of deployment.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:sociotechnical-system", "label": "Sociotechnical System"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:sociotechnical-system",
+    "label": "Sociotechnical System"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:ai-model", "label": "AI Model"},
-      {"@id": "urn:ngm:class:ai-inference", "label": "AI Inference"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:inference-runtime", "label": "Inference Runtime"},
-      {"@id": "urn:ngm:class:monitoring-instrumentation", "label": "Monitoring Instrumentation"}
+      {
+        "@id": "urn:ngm:class:ai-model",
+        "label": "AI Model"
+      },
+      {
+        "@id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:inference-runtime",
+        "label": "Inference Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring",
+        "label": "Monitoring Instrumentation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:machine-learning-framework", "label": "Machine Learning Framework"}
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-framework",
+        "label": "Machine Learning Framework"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-risk-assessment", "label": "AI Risk Assessment"},
-      {"@id": "urn:ngm:class:autonomous-decision-making", "label": "Autonomous Decision-Making"},
-      {"@id": "urn:ngm:class:intelligent-automation", "label": "Intelligent Automation"}
+      {
+        "@id": "urn:ngm:class:ai-risk-assessment",
+        "label": "AI Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-decision-making",
+        "label": "Autonomous Decision-Making"
+      },
+      {
+        "@id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:model-serving", "label": "Model Serving"}
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:machine-learning-algorithm", "label": "Machine Learning Algorithm"}
+      {
+        "@id": "urn:ngm:class:learning-algorithm",
+        "label": "Machine Learning Algorithm"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO IEC 42001"},
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"}
+      {
+        "@id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rule-based-system", "label": "Rule-Based System"},
-      {"@id": "urn:ngm:class:conventional-software", "label": "Conventional Software"}
+      {
+        "@id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-system-eu-definition", "label": "AI System (EU Definition)"},
-      {"@id": "urn:ngm:class:edge-ai-system", "label": "Edge AI System"},
-      {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"}
+      {
+        "@id": "urn:ngm:class:ai-system-eu-definition",
+        "label": "AI System (EU Definition)"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai-system",
+        "label": "Edge AI System"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ai-application", "label": "AI Application"},
-    {"@id": "urn:ngm:class:intelligent-system", "label": "Intelligent System"}
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
+      "@id": "urn:ngm:class:intelligent-system",
+      "label": "Intelligent System"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

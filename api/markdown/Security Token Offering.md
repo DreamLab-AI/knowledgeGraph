@@ -53,49 +53,129 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"},
-      {"@id": "urn:ngm:class:know-your-customer", "label": "Know Your Customer"},
-      {"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"},
-      {"@id": "urn:ngm:class:investor-accreditation", "label": "Investor Accreditation"}
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:investor-accreditation",
+        "label": "Investor Accreditation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:security-token", "label": "Security Token"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:digital-wallet", "label": "Digital Wallet"}
+      {
+        "@id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:asset-tokenization", "label": "Asset Tokenization"},
-      {"@id": "urn:ngm:class:fractional-ownership", "label": "Fractional Ownership"},
-      {"@id": "urn:ngm:class:secondary-market-trading", "label": "Secondary Market Trading"},
-      {"@id": "urn:ngm:class:programmable-compliance", "label": "Programmable Compliance"}
+      {
+        "@id": "urn:ngm:class:asset-tokenization",
+        "label": "Asset Tokenization"
+      },
+      {
+        "@id": "urn:ngm:class:fractional-ownership",
+        "label": "Fractional Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:secondary-market-integration",
+        "label": "Secondary Market Trading"
+      },
+      {
+        "@id": "urn:ngm:class:programmable-compliance",
+        "label": "Programmable Compliance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:initial-coin-offering", "label": "Initial Coin Offering"},
-      {"@id": "urn:ngm:class:initial-public-offering", "label": "Initial Public Offering"},
-      {"@id": "urn:ngm:class:initial-dex-offering", "label": "Initial DEX Offering"}
+      {
+        "@id": "urn:ngm:class:initial-coin-offering",
+        "label": "Initial Coin Offering"
+      },
+      {
+        "@id": "urn:ngm:class:initial-public-offering",
+        "label": "Initial Public Offering"
+      },
+      {
+        "@id": "urn:ngm:class:initial-dex-offering",
+        "label": "Initial DEX Offering"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
-      {"@id": "urn:ngm:class:decentralized-finance", "label": "Decentralized Finance"},
-      {"@id": "urn:ngm:class:capital-markets", "label": "Capital Markets"},
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
-      {"@id": "urn:ngm:class:token-offering", "label": "Token Offering"}
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "@id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:erc-1400", "label": "ERC-1400"},
-      {"@id": "urn:ngm:class:erc-3643", "label": "ERC-3643"}
+      {
+        "@id": "urn:ngm:class:erc-1400",
+        "label": "ERC-1400"
+      },
+      {
+        "@id": "urn:ngm:class:erc-3643",
+        "label": "ERC-3643"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:decentralized-autonomous-organization", "label": "Decentralized Autonomous Organization"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:regulated-token-offering", "label": "Regulated Token Offering"},
-    {"@id": "urn:ngm:class:tokenized-securities-offering", "label": "Tokenised Securities Offering"}
+    {
+      "@id": "urn:ngm:class:regulated-token-offering",
+      "label": "Regulated Token Offering"
+    },
+    {
+      "@id": "urn:ngm:class:tokenized-securities-offering",
+      "label": "Tokenised Securities Offering"
+    }
   ],
   "quality": 0.72,
   "provenance": {

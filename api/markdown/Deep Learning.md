@@ -215,10 +215,6 @@ alias:: DeepLearning
         "label": "Hidden Layer"
       },
       {
-        "@id": "urn:ngm:class:optimizer",
-        "label": "Optimizer"
-      },
-      {
         "@id": "urn:ngm:class:activation-function",
         "label": "Activation Function"
       },

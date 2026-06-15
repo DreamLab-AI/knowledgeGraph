@@ -23,53 +23,133 @@ public:: true
   "definition": "Raft is a distributed consensus algorithm designed explicitly for understandability, introduced by Diego Ongaro and John Ousterhout at USENIX ATC 2014 as a more comprehensible alternative to the Paxos family of protocols. Raft decomposes the consensus problem into three relatively independent sub-problems: leader election, log replication, and safety. A Raft cluster maintains a replicated log of commands through a strong leader that serialises all writes; followers replicate the leader's log entries and redirect client requests. Leader election uses randomised timeouts to avoid split votes. Raft has become the dominant consensus algorithm in modern distributed systems infrastructure, underpinning etcd, CockroachDB, TiKV, Consul, and many other widely deployed systems.",
   "domain": "distributed-systems",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:consensus-algorithm",
+    "label": "Consensus Algorithm"
+  },
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:raft-consensus", "label": "RAFT Consensus"},
-      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"},
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:replicated-state-machine", "label": "Replicated State Machine"}
+      {
+        "@id": "urn:ngm:class:raft-consensus",
+        "label": "RAFT Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:state-machine-replication",
+        "label": "Replicated State Machine"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:data-replication", "label": "Data Replication"},
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
-      {"@id": "urn:ngm:class:quorum", "label": "Quorum"},
-      {"@id": "urn:ngm:class:remote-procedure-call", "label": "Remote Procedure Call"},
-      {"@id": "urn:ngm:class:heartbeat-mechanism", "label": "Heartbeat Mechanism"}
+      {
+        "@id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      },
+      {
+        "@id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      },
+      {
+        "@id": "urn:ngm:class:heartbeat-mechanism",
+        "label": "Heartbeat Mechanism"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:distributed-system-architecture", "label": "Distributed System Architecture"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:fault-tolerant-system", "label": "Fault-Tolerant System"},
-      {"@id": "urn:ngm:class:high-availability", "label": "High Availability"},
-      {"@id": "urn:ngm:class:linearizability", "label": "Linearizability"}
+      {
+        "@id": "urn:ngm:class:distributed-system-architecture",
+        "label": "Distributed System Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance-system",
+        "label": "Fault-Tolerant System"
+      },
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "@id": "urn:ngm:class:linearizability",
+        "label": "Linearizability"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:byzantine-fault-tolerant-system", "label": "Byzantine Fault Tolerant System"},
-      {"@id": "urn:ngm:class:paxos", "label": "Paxos"},
-      {"@id": "urn:ngm:class:multi-paxos", "label": "Multi-Paxos"}
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerant-system",
+        "label": "Byzantine Fault Tolerant System"
+      },
+      {
+        "@id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:leader-election", "label": "Leader Election"},
-      {"@id": "urn:ngm:class:log-replication", "label": "Log Replication"},
-      {"@id": "urn:ngm:class:crash-fault-tolerance", "label": "Crash Fault Tolerance"}
+      {
+        "@id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      },
+      {
+        "@id": "urn:ngm:class:log-replication",
+        "label": "Log Replication"
+      },
+      {
+        "@id": "urn:ngm:class:crash-fault-tolerance",
+        "label": "Crash Fault Tolerance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:majority-quorum", "label": "Majority Quorum"},
-      {"@id": "urn:ngm:class:persistent-storage", "label": "Persistent Storage"}
+      {
+        "@id": "urn:ngm:class:quorum",
+        "label": "Majority Quorum"
+      },
+      {
+        "@id": "urn:ngm:class:persistent-storage",
+        "label": "Persistent Storage"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:etcd", "label": "etcd"},
-      {"@id": "urn:ngm:class:cockroachdb", "label": "CockroachDB"},
-      {"@id": "urn:ngm:class:consul", "label": "Consul"}
+      {
+        "@id": "urn:ngm:class:etcd",
+        "label": "etcd"
+      },
+      {
+        "@id": "urn:ngm:class:cockroachdb",
+        "label": "CockroachDB"
+      },
+      {
+        "@id": "urn:ngm:class:consul",
+        "label": "Consul"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain-consensus", "label": "Blockchain Consensus"}
+      {
+        "@id": "urn:ngm:class:blockchain-consensus",
+        "label": "Blockchain Consensus"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:raft-consensus-algorithm", "label": "Raft Consensus Algorithm"}
+    {
+      "@id": "urn:ngm:class:raft-consensus-algorithm",
+      "label": "Raft Consensus Algorithm"
+    }
   ],
   "quality": 0.72,
   "provenance": {

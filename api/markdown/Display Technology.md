@@ -23,58 +23,137 @@ public:: true
   "definition": "Display Technology encompasses the hardware substrates, optical systems, and electronic driving circuits used to present visual information to human observers across form factors ranging from flat panels and projection systems to head-mounted microdisplays and retinal projectors. Core substrate families include LCD with quantum dot backlights, OLED, microLED, and laser scanning systems, each offering distinct trade-offs in brightness, contrast ratio, colour gamut, refresh rate, and power consumption. For spatial computing and extended reality applications, display technology must additionally address field of view, vergence-accommodation conflict, waveguide efficiency, and eye-box uniformity. Advances in microdisplay resolution, diffractive waveguide engineering, and foveated rendering pipelines are critical enablers of lightweight, socially acceptable XR headsets and the broader convergence of physical and digital environments.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:display-hardware", "label": "Display Hardware"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:display-hardware",
+      "label": "Display Hardware"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:microdisplay", "label": "Microdisplay"},
-      {"@id": "urn:ngm:class:waveguide-optics", "label": "Waveguide Optics"},
-      {"@id": "urn:ngm:class:display-driver-ic", "label": "Display Driver IC"}
+      {
+        "@id": "urn:ngm:class:microdisplay",
+        "label": "Microdisplay"
+      },
+      {
+        "@id": "urn:ngm:class:waveguide-optics",
+        "label": "Waveguide Optics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:foveated-rendering", "label": "Foveated Rendering"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:foveated-rendering",
+        "label": "Foveated Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:optical-calibration-target", "label": "Optical Calibration Target"},
-      {"@id": "urn:ngm:class:colour-management", "label": "Colour Management"},
-      {"@id": "urn:ngm:class:display-metrology", "label": "Display Metrology"}
+      {
+        "@id": "urn:ngm:class:optical-calibration-target",
+        "label": "Optical Calibration Target"
+      },
+      {
+        "@id": "urn:ngm:class:colour-management",
+        "label": "Colour Management"
+      },
+      {
+        "@id": "urn:ngm:class:display-metrology",
+        "label": "Display Metrology"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:photorealistic-rendering", "label": "Photorealistic Rendering"},
-      {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"},
-      {"@id": "urn:ngm:class:light-field-display", "label": "Light Field Display"}
+      {
+        "@id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:light-field-display",
+        "label": "Light Field Display"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:xr-device", "label": "XR Device"},
-      {"@id": "urn:ngm:class:ar-display-device", "label": "Ar Display Device"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}
+      {
+        "@id": "urn:ngm:class:xr-device",
+        "label": "XR Device"
+      },
+      {
+        "@id": "urn:ngm:class:ar-display-device",
+        "label": "Ar Display Device"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:semiconductor-manufacturing", "label": "Semiconductor Manufacturing"},
-      {"@id": "urn:ngm:class:photonics", "label": "Photonics"}
-    ],
-    "standardizedBy": [
-      {"@id": "urn:ngm:class:display-industry-standards", "label": "Display Industry Standards"}
+      {
+        "@id": "urn:ngm:class:semiconductor-manufacturing",
+        "label": "Semiconductor Manufacturing"
+      },
+      {
+        "@id": "urn:ngm:class:photonics",
+        "label": "Photonics"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:audio-technology", "label": "Audio Technology"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"}
+      {
+        "@id": "urn:ngm:class:audio-technology",
+        "label": "Audio Technology"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:retinal-display", "label": "Retinal Display"}
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:retinal-display",
+        "label": "Retinal Display"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:visual-display-technology", "label": "Visual Display Technology"},
-    {"@id": "urn:ngm:class:display-systems", "label": "Display Systems"}
+    {
+      "@id": "urn:ngm:class:visual-display-technology",
+      "label": "Visual Display Technology"
+    },
+    {
+      "@id": "urn:ngm:class:display-systems",
+      "label": "Display Systems"
+    }
   ],
   "quality": 0.74,
   "provenance": {

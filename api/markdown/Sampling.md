@@ -400,14 +400,6 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:ddim",
-        "label": "DDIM"
-      },
-      {
-        "@id": "urn:ngm:class:dpm-solver",
-        "label": "DPM-Solver"
-      },
-      {
         "@id": "urn:ngm:class:gibbs-sampling",
         "label": "Gibbs Sampling"
       },
@@ -422,10 +414,6 @@ public:: true
       {
         "@id": "urn:ngm:class:nucleus-sampling",
         "label": "Nucleus Sampling"
-      },
-      {
-        "@id": "urn:ngm:class:nuts",
-        "label": "NUTS"
       },
       {
         "@id": "urn:ngm:class:speculative-decoding",
@@ -536,20 +524,8 @@ public:: true
         "label": "Hugging Face Diffusers"
       },
       {
-        "@id": "urn:ngm:class:num-pyro",
-        "label": "NumPyro"
-      },
-      {
         "@id": "urn:ngm:class:py-mc",
         "label": "PyMC"
-      },
-      {
-        "@id": "urn:ngm:class:robert-casella-monte-carlo-statistical-methods",
-        "label": "Robert-Casella Monte Carlo Statistical Methods"
-      },
-      {
-        "@id": "urn:ngm:class:stan-probabilistic-programming",
-        "label": "Stan Probabilistic Programming"
       }
     ]
   },

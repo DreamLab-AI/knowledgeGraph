@@ -23,48 +23,71 @@ public:: true
   "definition": "Network effects describe the phenomenon whereby a product or service gains additional value for each existing user as the number of participants increases, creating a self-reinforcing growth dynamic. Direct network effects arise when users directly benefit from others on the same platform; indirect effects emerge when complementary products or services multiply with scale, creating cross-side externalities.",
   "domain": "finance",
   "maturity": "mature",
-  "subClassOf": {"@id": "urn:ngm:class:positive-feedback", "label": "Positive Feedback"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:positive-feedback",
+    "label": "Positive Feedback"
+  },
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:technology-adoption", "label": "Technology Adoption"},
-      {"@id": "urn:ngm:class:ecosystem-connectivity", "label": "Ecosystem Connectivity"},
-      {"@id": "urn:ngm:class:mass-adoption", "label": "Mass Adoption"},
-      {"@id": "urn:ngm:class:platform-economy", "label": "Platform Economy"},
-      {"@id": "urn:ngm:class:winner-take-all", "label": "Winner-Take-All"},
-      {"@id": "urn:ngm:class:critical-mass", "label": "Critical Mass"},
-      {"@id": "urn:ngm:class:metcalfes-law", "label": "Metcalfe's Law"}
+      {
+        "@id": "urn:ngm:class:technology-adoption",
+        "label": "Technology Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:ecosystem-connectivity",
+        "label": "Ecosystem Connectivity"
+      },
+      {
+        "@id": "urn:ngm:class:mass-adoption",
+        "label": "Mass Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:platform-economy",
+        "label": "Platform Economy"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:technology-ecosystem", "label": "Technology Ecosystem"},
-      {"@id": "urn:ngm:class:startup-ecosystem", "label": "Startup Ecosystem"},
-      {"@id": "urn:ngm:class:market-dominance", "label": "Market Dominance"},
-      {"@id": "urn:ngm:class:data-flywheel", "label": "Data Flywheel"}
+      {
+        "@id": "urn:ngm:class:technology-ecosystem",
+        "label": "Technology Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:startup-ecosystem",
+        "label": "Startup Ecosystem"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:user-base", "label": "User Base"},
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
-    ],
-    "dependsOn": [
-      {"@id": "urn:ngm:class:platform-participation", "label": "Platform Participation"},
-      {"@id": "urn:ngm:class:switching-costs", "label": "Switching Costs"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:diseconomies-of-scale", "label": "Diseconomies of Scale"},
-      {"@id": "urn:ngm:class:congestion-effects", "label": "Congestion Effects"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"},
-      {"@id": "urn:ngm:class:ai-data-accumulation", "label": "AI Data Accumulation"},
-      {"@id": "urn:ngm:class:antitrust-regulation", "label": "Antitrust Regulation"}
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:antitrust-regulation",
+        "label": "Antitrust Regulation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:lock-in", "label": "Lock-In"},
-      {"@id": "urn:ngm:class:path-dependence", "label": "Path Dependence"}
+      {
+        "@id": "urn:ngm:class:path-dependence",
+        "label": "Path Dependence"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:demand-side-economies-of-scale", "label": "Demand-Side Economies of Scale"},
-    {"@id": "urn:ngm:class:bandwagon-effect", "label": "Bandwagon Effect"}
+    {
+      "@id": "urn:ngm:class:demand-side-economies-of-scale",
+      "label": "Demand-Side Economies of Scale"
+    },
+    {
+      "@id": "urn:ngm:class:bandwagon-effect",
+      "label": "Bandwagon Effect"
+    }
   ],
   "quality": 0.75,
   "provenance": {

@@ -37,46 +37,107 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"}
+    {
+      "@id": "urn:ngm:class:variational-autoencoder",
+      "label": "Variational Autoencoder"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:variational-inference", "label": "Variational Inference"},
-      {"@id": "urn:ngm:class:autoencoder", "label": "Autoencoder"},
-      {"@id": "urn:ngm:class:reparameterisation-trick", "label": "Reparameterisation Trick"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
-      {"@id": "urn:ngm:class:kl-divergence", "label": "KL Divergence"}
+      {
+        "@id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "@id": "urn:ngm:class:autoencoder",
+        "label": "Autoencoder"
+      },
+      {
+        "@id": "urn:ngm:class:reparameterisation-trick",
+        "label": "Reparameterisation Trick"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:kl-divergence",
+        "label": "KL Divergence"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:latent-diffusion", "label": "Latent Diffusion"},
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:representation-learning", "label": "Representation Learning"},
-      {"@id": "urn:ngm:class:disentangled-representation", "label": "Disentangled Representation"},
-      {"@id": "urn:ngm:class:data-augmentation", "label": "Data Augmentation"}
+      {
+        "@id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
+        "@id": "urn:ngm:class:disentangled-representation",
+        "label": "Disentangled Representation"
+      },
+      {
+        "@id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:encoder-network", "label": "Encoder Network"},
-      {"@id": "urn:ngm:class:decoder-network", "label": "Decoder Network"},
-      {"@id": "urn:ngm:class:latent-space", "label": "Latent Space"}
+      {
+        "@id": "urn:ngm:class:encoder",
+        "label": "Encoder Network"
+      },
+      {
+        "@id": "urn:ngm:class:decoder-network",
+        "label": "Decoder Network"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-latent-space",
+        "label": "Latent Space"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
-      {"@id": "urn:ngm:class:flow-based-model", "label": "Flow-Based Model"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"}
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "@id": "urn:ngm:class:flow-based-model",
+        "label": "Flow-Based Model"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:evidence-lower-bound", "label": "Evidence Lower Bound"},
-      {"@id": "urn:ngm:class:gaussian-distribution", "label": "Gaussian Distribution"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
-    ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:vq-vae", "label": "VQ-VAE"},
-      {"@id": "urn:ngm:class:beta-vae", "label": "Beta-VAE"},
-      {"@id": "urn:ngm:class:hierarchical-vae", "label": "Hierarchical VAE"}
+      {
+        "@id": "urn:ngm:class:evidence-lower-bound",
+        "label": "Evidence Lower Bound"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-distribution",
+        "label": "Gaussian Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:stable-diffusion", "label": "Stable Diffusion"},
-      {"@id": "urn:ngm:class:multimodal-learning", "label": "Multimodal Learning"}
+      {
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
+        "label": "Stable Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-learning",
+        "label": "Multimodal Learning"
+      }
     ]
   },
   "quality": 0.74,

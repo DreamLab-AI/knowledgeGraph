@@ -24,56 +24,132 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:bc-defi-and-economics", "label": "DeFi and Economics"}
+    {
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:gitcoin-passport", "label": "Gitcoin Passport"},
-      {"@id": "urn:ngm:class:gitcoin-grants", "label": "Gitcoin Grants"},
-      {"@id": "urn:ngm:class:gtc-token", "label": "GTC Token"}
+      {
+        "@id": "urn:ngm:class:gitcoin-passport",
+        "label": "Gitcoin Passport"
+      },
+      {
+        "@id": "urn:ngm:class:gitcoin-grants",
+        "label": "Gitcoin Grants"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:sybil-resistance", "label": "Sybil Resistance"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"}
+      {
+        "@id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:quadratic-funding", "label": "Quadratic Funding"},
-      {"@id": "urn:ngm:class:retroactive-public-goods-funding", "label": "Retroactive Public Goods Funding"},
-      {"@id": "urn:ngm:class:open-source-sustainability", "label": "Open Source Sustainability"},
-      {"@id": "urn:ngm:class:decentralised-grant-programme", "label": "Decentralised Grant Programme"}
+      {
+        "@id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
+      },
+      {
+        "@id": "urn:ngm:class:retroactive-public-goods-funding",
+        "label": "Retroactive Public Goods Funding"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-sustainability",
+        "label": "Open Source Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Grant Programme"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:dao", "label": "DAO"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
-      {"@id": "urn:ngm:class:identity-attestation", "label": "Identity Attestation"}
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:identity-attestation",
+        "label": "Identity Attestation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:web3-ecosystem", "label": "Web3 Ecosystem"},
-      {"@id": "urn:ngm:class:ethereum-developer-community", "label": "Ethereum Developer Community"}
+      {
+        "@id": "urn:ngm:class:web3",
+        "label": "Web3 Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum Developer Community"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:traditional-grant-making", "label": "Traditional Grant-Making"},
-      {"@id": "urn:ngm:class:venture-capital", "label": "Venture Capital"}
+      {
+        "@id": "urn:ngm:class:venture-capital",
+        "label": "Venture Capital"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:coordination-mechanism", "label": "Coordination Mechanism"}
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:coordination-mechanisms",
+        "label": "Coordination Mechanism"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:quadratic-voting", "label": "Quadratic Voting"},
-      {"@id": "urn:ngm:class:protocol-labs", "label": "Protocol Labs"},
-      {"@id": "urn:ngm:class:optimism-retroactive-public-goods-funding", "label": "Optimism Retroactive Public Goods Funding"}
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-labs",
+        "label": "Protocol Labs"
+      },
+      {
+        "@id": "urn:ngm:class:retroactive-public-goods-funding",
+        "label": "Optimism Retroactive Public Goods Funding"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:gitcoin-dao", "label": "GitcoinDAO"}
+    {
+      "@id": "urn:ngm:class:gitcoin-dao",
+      "label": "GitcoinDAO"
+    }
   ],
   "quality": 0.72,
   "provenance": {

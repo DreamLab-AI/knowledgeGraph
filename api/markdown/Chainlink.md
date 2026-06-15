@@ -23,63 +23,125 @@ public:: true
   "definition": "Chainlink is a decentralised oracle network and middleware layer that enables smart contracts on any blockchain to securely access off-chain data, computation, and cross-chain interoperability services. Founded in 2017 by Sergey Nazarov and Steve Ellis, it operates a network of independent node operators who retrieve, aggregate, and deliver external data — including price feeds, verifiable randomness, API responses, and event outcomes — to on-chain smart contracts, solving the oracle problem that prevents blockchains from natively interacting with real-world information. Its native token (LINK) provides cryptoeconomic incentives and collateral for node operators, whilst its Off-Chain Reporting protocol reduces on-chain costs through peer-to-peer consensus. Beyond data feeds, Chainlink has expanded into cross-chain messaging (CCIP), on-chain automation, and verifiable computation, positioning itself as general-purpose decentralised infrastructure for the entire blockchain ecosystem.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:blockchain-oracle", "label": "Blockchain Oracle"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain-oracle",
+      "label": "Blockchain Oracle"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:chainlink-oracles", "label": "Chainlink Oracles"},
-      {"@id": "urn:ngm:class:chainlink-ccip", "label": "Chainlink CCIP"},
-      {"@id": "urn:ngm:class:chainlink-vrf", "label": "Chainlink VRF"},
-      {"@id": "urn:ngm:class:chainlink-automation", "label": "Chainlink Automation"},
-      {"@id": "urn:ngm:class:chainlink-functions", "label": "Chainlink Functions"}
+      {
+        "@id": "urn:ngm:class:chainlink-oracles",
+        "label": "Chainlink Oracles"
+      },
+      {
+        "@id": "urn:ngm:class:chainlink-ccip",
+        "label": "Chainlink CCIP"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"}
+      {
+        "@id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
-      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:enterprise-smart-contracts", "label": "Enterprise Smart Contracts"},
-      {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"},
-      {"@id": "urn:ngm:class:on-chain-automation", "label": "On-Chain Automation"},
-      {"@id": "urn:ngm:class:verifiable-randomness", "label": "Verifiable Randomness"}
+      {
+        "@id": "urn:ngm:class:enterprise-smart-contracts",
+        "label": "Enterprise Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:staking", "label": "Staking"},
-      {"@id": "urn:ngm:class:cryptoeconomics", "label": "Cryptoeconomics"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "@id": "urn:ngm:class:cryptoeconomics",
+        "label": "Cryptoeconomics"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:off-chain-reporting", "label": "Off-Chain Reporting"},
-      {"@id": "urn:ngm:class:threshold-signature", "label": "Threshold Signature"},
-      {"@id": "urn:ngm:class:decentralized-computing", "label": "Decentralized Computing"}
+      {
+        "@id": "urn:ngm:class:off-chain-reporting",
+        "label": "Off-Chain Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:defi-protocol", "label": "DeFi Protocol"},
-      {"@id": "urn:ngm:class:non-fungible-token", "label": "Non-Fungible Token"},
-      {"@id": "urn:ngm:class:tokenization", "label": "Tokenization"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:pyth-network", "label": "Pyth Network"},
-      {"@id": "urn:ngm:class:band-protocol", "label": "Band Protocol"},
-      {"@id": "urn:ngm:class:api3", "label": "API3"}
+      {
+        "@id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:traditional-finance", "label": "Traditional Finance"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:enterprise-data-integration", "label": "Enterprise Data Integration"}
+      {
+        "@id": "urn:ngm:class:traditional-finance",
+        "label": "Traditional Finance"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"},
-      {"@id": "urn:ngm:class:cross-chain-messaging", "label": "Cross-Chain Messaging"},
-      {"@id": "urn:ngm:class:decentralized-autonomous-organisation", "label": "Decentralised Autonomous Organisation"}
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-messaging",
+        "label": "Cross-Chain Messaging"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralised Autonomous Organisation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:chainlink-network", "label": "Chainlink Network"},
-    {"@id": "urn:ngm:class:link-oracle-network", "label": "LINK Oracle Network"}
+    {
+      "@id": "urn:ngm:class:chainlink-network",
+      "label": "Chainlink Network"
+    },
+    {
+      "@id": "urn:ngm:class:link-oracle-network",
+      "label": "LINK Oracle Network"
+    }
   ],
   "quality": 0.74,
   "provenance": {

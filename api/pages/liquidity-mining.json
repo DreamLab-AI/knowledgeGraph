@@ -45,10 +45,6 @@
         "label": "Decentralized Exchange"
       },
       {
-        "id": "urn:ngm:class:protocol-bootstrapping",
-        "label": "Protocol Bootstrapping"
-      },
-      {
         "id": "urn:ngm:class:decentralized-autonomous-organization",
         "label": "Decentralized Autonomous Organization"
       }
@@ -78,7 +74,7 @@
         "label": "Order Book Exchange"
       },
       {
-        "id": "urn:ngm:class:traditional-market-making",
+        "id": "urn:ngm:class:market-making",
         "label": "Traditional Market Making"
       }
     ],
@@ -102,7 +98,7 @@
         "label": "LP Token"
       },
       {
-        "id": "urn:ngm:class:bonding-curve",
+        "id": "urn:ngm:class:token-bonding-curve",
         "label": "Bonding Curve"
       },
       {
@@ -123,7 +119,7 @@
         "label": "Staking"
       },
       {
-        "id": "urn:ngm:class:token-emission-schedule",
+        "id": "urn:ngm:class:emission-schedule",
         "label": "Token Emission Schedule"
       },
       {

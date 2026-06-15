@@ -75,55 +75,135 @@ public:: true
   },
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:ecdsa", "label": "ECDSA"},
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
-      {"@id": "urn:ngm:class:taproot-assets", "label": "Taproot Assets"},
-      {"@id": "urn:ngm:class:signature-scheme", "label": "Signature Scheme"},
-      {"@id": "urn:ngm:class:discrete-logarithm-problem", "label": "Discrete Logarithm Problem"}
+      {
+        "@id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:taproot-assets",
+        "label": "Taproot Assets"
+      },
+      {
+        "@id": "urn:ngm:class:signature-scheme",
+        "label": "Signature Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:discrete-logarithm-problem",
+        "label": "Discrete Logarithm Problem"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:secp256k1", "label": "secp256k1"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:elliptic-curve-point-multiplication", "label": "Elliptic Curve Point Multiplication"}
+      {
+        "@id": "urn:ngm:class:secp256k1",
+        "label": "secp256k1"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Point Multiplication"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-signature-verification", "label": "Digital Signature Verification"},
-      {"@id": "urn:ngm:class:key-aggregation", "label": "Key Aggregation"},
-      {"@id": "urn:ngm:class:signature-aggregation", "label": "Signature Aggregation"},
-      {"@id": "urn:ngm:class:threshold-signature", "label": "Threshold Signature"},
-      {"@id": "urn:ngm:class:musig", "label": "MuSig"}
+      {
+        "@id": "urn:ngm:class:digital-signature-verification",
+        "label": "Digital Signature Verification"
+      },
+      {
+        "@id": "urn:ngm:class:key-aggregation",
+        "label": "Key Aggregation"
+      },
+      {
+        "@id": "urn:ngm:class:signature-aggregation",
+        "label": "Signature Aggregation"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:taproot", "label": "Taproot"},
-      {"@id": "urn:ngm:class:bitcoin-improvement-proposal-340", "label": "BIP-340"}
+      {
+        "@id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
+        "label": "BIP-340"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:elliptic-curve-group", "label": "Elliptic Curve Group"},
-      {"@id": "urn:ngm:class:private-key", "label": "Private Key"}
+      {
+        "@id": "urn:ngm:class:elliptic-curve-group",
+        "label": "Elliptic Curve Group"
+      },
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ecdsa", "label": "ECDSA"},
-      {"@id": "urn:ngm:class:bls-signature", "label": "BLS Signature"}
+      {
+        "@id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "@id": "urn:ngm:class:bls-signature",
+        "label": "BLS Signature"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:multi-party-computation", "label": "Multi-Party Computation"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+      {
+        "@id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:bitcoin-protocol", "label": "Bitcoin Protocol"},
-      {"@id": "urn:ngm:class:cryptographic-primitive", "label": "Cryptographic Primitive"}
+      {
+        "@id": "urn:ngm:class:bitcoin-protocol",
+        "label": "Bitcoin Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:bip-340", "label": "BIP-340"},
-      {"@id": "urn:ngm:class:iso-iec-14888-3", "label": "ISO/IEC 14888-3"}
+      {
+        "@id": "urn:ngm:class:bip-340",
+        "label": "BIP-340"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-14888",
+        "label": "ISO/IEC 14888-3"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"}
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:schnorr-digital-signature", "label": "Schnorr Digital Signature"}
+    {
+      "@id": "urn:ngm:class:schnorr-digital-signature",
+      "label": "Schnorr Digital Signature"
+    }
   ],
   "quality": 0.72,
   "provenance": {

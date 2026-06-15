@@ -55,7 +55,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:evm-bytecode",
+        "id": "urn:ngm:class:evm",
         "label": "EVM Bytecode"
       },
       {
@@ -65,7 +65,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       },
       {
@@ -87,7 +87,7 @@
         "label": "Vyper"
       },
       {
-        "id": "urn:ngm:class:rust",
+        "id": "urn:ngm:class:rust-systems-programming-language",
         "label": "Rust"
       },
       {
@@ -109,10 +109,6 @@
       {
         "id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum Smart Contract Platform"
-      },
-      {
-        "id": "urn:ngm:class:abi",
-        "label": "Application Binary Interface"
       },
       {
         "id": "urn:ngm:class:opcode",

@@ -16,31 +16,14 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:domain-separator",
-        "label": "Domain Separator"
-      },
-      {
-        "id": "urn:ngm:class:type-hash",
-        "label": "Type Hash"
-      },
-      {
-        "id": "urn:ngm:class:struct-encoding",
-        "label": "Struct Encoding"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:ecdsa",
         "label": "ECDSA"
       },
       {
-        "id": "urn:ngm:class:keccak256",
-        "label": "Keccak-256"
-      },
-      {
-        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       }
     ],
@@ -64,10 +47,6 @@
       {
         "id": "urn:ngm:class:gasless-transaction",
         "label": "Gasless Transaction"
-      },
-      {
-        "id": "urn:ngm:class:off-chain-order-book",
-        "label": "Off-Chain Order Book"
       }
     ],
     "dependsOn": [],
@@ -75,22 +54,9 @@
       {
         "id": "urn:ngm:class:replay-attack-prevention",
         "label": "Replay Attack Prevention"
-      },
-      {
-        "id": "urn:ngm:class:eip-2612",
-        "label": "EIP-2612"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:eth-sign",
-        "label": "eth_sign"
-      },
-      {
-        "id": "urn:ngm:class:eip-191",
-        "label": "EIP-191"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:zero-knowledge-proof",
@@ -109,10 +75,6 @@
       {
         "id": "urn:ngm:class:digital-signature-verification",
         "label": "Digital Signature Verification"
-      },
-      {
-        "id": "urn:ngm:class:ecrecover",
-        "label": "ecrecover"
       }
     ],
     "supports": [
@@ -143,10 +105,6 @@
       {
         "id": "urn:ngm:class:eip-1559",
         "label": "EIP-1559"
-      },
-      {
-        "id": "urn:ngm:class:walletconnect",
-        "label": "WalletConnect"
       },
       {
         "id": "urn:ngm:class:non-fungible-token",

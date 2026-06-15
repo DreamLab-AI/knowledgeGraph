@@ -38,50 +38,125 @@ public:: true
   ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:deterministic-finality", "label": "Deterministic Finality"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:state-machine-replication", "label": "State Machine Replication"}
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:deterministic-finality",
+        "label": "Deterministic Finality"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:validator-set", "label": "Validator Set"},
-      {"@id": "urn:ngm:class:partial-synchrony", "label": "Partial Synchrony"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+      {
+        "@id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      },
+      {
+        "@id": "urn:ngm:class:partial-synchrony",
+        "label": "Partial Synchrony"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cosmos-ibc", "label": "Cosmos IBC"},
-      {"@id": "urn:ngm:class:application-specific-blockchain", "label": "Application-Specific Blockchain"},
-      {"@id": "urn:ngm:class:cross-chain-communication", "label": "Cross-Chain Communication"}
+      {
+        "@id": "urn:ngm:class:cosmos-ibc",
+        "label": "Cosmos IBC"
+      },
+      {
+        "@id": "urn:ngm:class:application-specific-blockchain",
+        "label": "Application-Specific Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-communication",
+        "label": "Cross-Chain Communication"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:abci", "label": "ABCI"},
-      {"@id": "urn:ngm:class:cosmos-sdk", "label": "Cosmos SDK"},
-      {"@id": "urn:ngm:class:p2p-gossip-protocol", "label": "P2P Gossip Protocol"}
+      {
+        "@id": "urn:ngm:class:abci",
+        "label": "ABCI"
+      },
+      {
+        "@id": "urn:ngm:class:cosmos-sdk",
+        "label": "Cosmos SDK"
+      },
+      {
+        "@id": "urn:ngm:class:gossip-protocol",
+        "label": "P2P Gossip Protocol"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:cosmos-network", "label": "Cosmos Network"}
+      {
+        "@id": "urn:ngm:class:cosmos",
+        "label": "Cosmos Network"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:practical-byzantine-fault-tolerance", "label": "Practical Byzantine Fault Tolerance"}
+      {
+        "@id": "urn:ngm:class:practical-byzantine-fault-tolerance",
+        "label": "Practical Byzantine Fault Tolerance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"},
-      {"@id": "urn:ngm:class:hotstuff", "label": "HotStuff"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:hotstuff",
+        "label": "HotStuff"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cap-theorem", "label": "CAP Theorem"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:smart-contract-platform", "label": "Smart Contract Platform"}
+      {
+        "@id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:decentralised-ai", "label": "Decentralised AI"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-ai",
+        "label": "Decentralised AI"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:tendermint-core", "label": "Tendermint Core"},
-    {"@id": "urn:ngm:class:cometbft", "label": "CometBFT"}
+    {
+      "@id": "urn:ngm:class:tendermint-core",
+      "label": "Tendermint Core"
+    },
+    {
+      "@id": "urn:ngm:class:cometbft",
+      "label": "CometBFT"
+    }
   ],
   "quality": 0.74,
   "provenance": {

@@ -318,28 +318,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:ai-audio-editing",
-        "label": "AI Audio Editing"
-      },
-      {
-        "@id": "urn:ngm:class:ai-script-generation",
-        "label": "AI Script Generation"
-      },
-      {
-        "@id": "urn:ngm:class:automated-transcription",
-        "label": "Automated Transcription"
-      },
-      {
         "@id": "urn:ngm:class:neural-audio-enhancement",
         "label": "Neural Audio Enhancement"
-      },
-      {
-        "@id": "urn:ngm:class:podcast-distribution-automation",
-        "label": "Podcast Distribution Automation"
-      },
-      {
-        "@id": "urn:ngm:class:show-notes-generation",
-        "label": "Show Notes Generation"
       },
       {
         "@id": "urn:ngm:class:speaker-diarisation",
@@ -360,7 +340,7 @@ public:: true
         "label": "Audio Signal Processing"
       },
       {
-        "@id": "urn:ngm:class:cloud-computing-infrastructure",
+        "@id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing Infrastructure"
       },
       {
@@ -382,30 +362,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:accessible-media",
-        "label": "Accessible Media"
-      },
-      {
-        "@id": "urn:ngm:class:low-cost-podcast-creation",
-        "label": "Low-Cost Podcast Creation"
-      },
-      {
-        "@id": "urn:ngm:class:multilingual-podcasting",
-        "label": "Multilingual Podcasting"
-      },
-      {
-        "@id": "urn:ngm:class:personalised-audio-summaries",
-        "label": "Personalised Audio Summaries"
-      },
-      {
-        "@id": "urn:ngm:class:real-time-content-conversion",
-        "label": "Real-Time Content Conversion"
-      },
-      {
-        "@id": "urn:ngm:class:scalable-audio-content-production",
-        "label": "Scalable Audio Content Production"
-      },
-      {
         "@id": "urn:ngm:class:creator-economy",
         "label": "Creator Economy"
       }
@@ -414,10 +370,6 @@ public:: true
       {
         "@id": "urn:ngm:class:automatic-speech-recognition",
         "label": "Automatic Speech Recognition"
-      },
-      {
-        "@id": "urn:ngm:class:dynamic-ad-insertion",
-        "label": "Dynamic Ad Insertion"
       },
       {
         "@id": "urn:ngm:class:neural-audio-enhancement",
@@ -432,34 +384,14 @@ public:: true
         "label": "Speaker Embedding"
       },
       {
-        "@id": "urn:ngm:class:transformer-based-tts",
-        "label": "Transformer-Based TTS"
-      },
-      {
         "@id": "urn:ngm:class:voice-cloning",
         "label": "Voice Cloning"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:adobe-podcast",
-        "label": "Adobe Podcast"
-      },
-      {
-        "@id": "urn:ngm:class:assembly-ai",
-        "label": "AssemblyAI"
-      },
-      {
-        "@id": "urn:ngm:class:descript",
-        "label": "Descript"
-      },
-      {
         "@id": "urn:ngm:class:eleven-labs",
         "label": "ElevenLabs"
-      },
-      {
-        "@id": "urn:ngm:class:notebook-lm",
-        "label": "NotebookLM"
       },
       {
         "@id": "urn:ngm:class:otter-ai",
@@ -510,18 +442,6 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:media-accessibility",
-        "label": "Media Accessibility"
-      },
-      {
-        "@id": "urn:ngm:class:podcast-distribution",
-        "label": "Podcast Distribution"
-      },
-      {
-        "@id": "urn:ngm:class:seo-optimisation",
-        "label": "SEO Optimisation"
-      },
-      {
         "@id": "urn:ngm:class:ai-companions",
         "label": "AI companions"
       },
@@ -546,14 +466,6 @@ public:: true
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument-article-50",
         "label": "EU AI Act Article 50"
-      },
-      {
-        "@id": "urn:ngm:class:ftc-endorsement-guidelines",
-        "label": "FTC Endorsement Guidelines"
-      },
-      {
-        "@id": "urn:ngm:class:ofcom-broadcasting-code",
-        "label": "Ofcom Broadcasting Code"
       }
     ]
   },

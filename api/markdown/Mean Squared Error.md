@@ -107,10 +107,6 @@ public:: true
       {
         "@id": "urn:ngm:class:bias-variance-tradeoff",
         "label": "Bias-Variance Tradeoff"
-      },
-      {
-        "@id": "urn:ngm:class:residual",
-        "label": "Residual"
       }
     ],
     "contrastsWith": [
@@ -123,18 +119,14 @@ public:: true
         "label": "Cross-Entropy Loss"
       },
       {
-        "@id": "urn:ngm:class:huber-loss",
+        "@id": "urn:ngm:class:loss-function",
         "label": "Huber Loss"
       }
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:root-mean-squared-error",
+        "@id": "urn:ngm:class:root-mean-square-error",
         "label": "Root Mean Squared Error"
-      },
-      {
-        "@id": "urn:ngm:class:r-squared",
-        "label": "R-Squared"
       },
       {
         "@id": "urn:ngm:class:regularisation",

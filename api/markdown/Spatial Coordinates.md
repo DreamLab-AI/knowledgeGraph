@@ -63,14 +63,7 @@ public:: true
       "label": "Coordinate System"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:object-positioning",
-        "label": "Object Positioning"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

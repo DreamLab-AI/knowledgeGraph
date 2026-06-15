@@ -220,7 +220,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:consent-management-framework",
+        "@id": "urn:ngm:class:consent-management",
         "label": "Consent Management Framework"
       }
     ]

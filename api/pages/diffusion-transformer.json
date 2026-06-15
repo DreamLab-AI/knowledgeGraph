@@ -23,7 +23,7 @@
         "label": "Diffusion Process"
       },
       {
-        "id": "urn:ngm:class:noise-scheduling",
+        "id": "urn:ngm:class:noise-schedule",
         "label": "Noise Scheduling"
       },
       {
@@ -45,7 +45,7 @@
         "label": "Text-to-Image"
       },
       {
-        "id": "urn:ngm:class:3d-generation",
+        "id": "urn:ngm:class:3-d-content-generation",
         "label": "3D Generation"
       },
       {

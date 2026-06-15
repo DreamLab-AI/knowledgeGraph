@@ -33,7 +33,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:privacy-preserving-ml",
+        "id": "urn:ngm:class:privacy-preserving",
         "label": "Privacy Preserving ML"
       },
       {

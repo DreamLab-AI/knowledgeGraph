@@ -140,76 +140,26 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:dynamic-routing",
-        "label": "Dynamic Routing"
-      },
-      {
-        "@id": "urn:ngm:class:latency-monitoring-system",
-        "label": "Latency Monitoring System"
-      },
-      {
-        "@id": "urn:ngm:class:predictive-buffering",
-        "label": "Predictive Buffering"
-      },
-      {
-        "@id": "urn:ngm:class:quality-of-service-manager",
+        "@id": "urn:ngm:class:quality-of-service",
         "label": "Quality of Service Manager"
-      },
-      {
-        "@id": "urn:ngm:class:traffic-prioritization-engine",
-        "label": "Traffic Prioritization Engine"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:latency-measurement-tools",
-        "label": "Latency Measurement Tools"
-      },
-      {
         "@id": "urn:ngm:class:network-performance-metrics",
         "label": "Network Performance Metrics"
-      },
-      {
-        "@id": "urn:ngm:class:priority-policies",
-        "label": "Priority Policies"
-      },
-      {
-        "@id": "urn:ngm:class:routing-algorithms",
-        "label": "Routing Algorithms"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:low-latency-interaction",
         "label": "Low-Latency Interaction"
-      },
-      {
-        "@id": "urn:ngm:class:predictable-performance",
-        "label": "Predictable Performance"
-      },
-      {
-        "@id": "urn:ngm:class:real-time-responsiveness",
-        "label": "Real-Time Responsiveness"
-      },
-      {
-        "@id": "urn:ngm:class:smooth-user-experience",
-        "label": "Smooth User Experience"
       }
     ],
     "implements": [
       {
         "@id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:network-performance-management",
-        "label": "Network Performance Management"
-      },
-      {
-        "@id": "urn:ngm:class:quality-of-experience-framework",
-        "label": "Quality of Experience Framework"
       }
     ]
   },

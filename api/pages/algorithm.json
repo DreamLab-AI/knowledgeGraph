@@ -40,7 +40,7 @@
         "label": "Data Structure"
       },
       {
-        "id": "urn:ngm:class:computational-complexity",
+        "id": "urn:ngm:class:computational-complexity-theory",
         "label": "Computational Complexity"
       }
     ],
@@ -76,7 +76,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:heuristic",
+        "id": "urn:ngm:class:heuristic-methods",
         "label": "Heuristic"
       }
     ],
@@ -96,7 +96,7 @@
         "label": "Inference"
       },
       {
-        "id": "urn:ngm:class:heuristic",
+        "id": "urn:ngm:class:heuristic-methods",
         "label": "Heuristic"
       }
     ],

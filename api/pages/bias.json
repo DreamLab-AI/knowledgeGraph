@@ -18,20 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:data-bias",
-        "label": "Data Bias"
-      },
-      {
         "id": "urn:ngm:class:algorithmic-bias",
         "label": "Algorithmic Bias"
-      },
-      {
-        "id": "urn:ngm:class:representation-bias",
-        "label": "Representation Bias"
-      },
-      {
-        "id": "urn:ngm:class:historical-bias",
-        "label": "Historical Bias"
       }
     ],
     "requires": [
@@ -87,7 +75,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:confusion-matrices",
+        "id": "urn:ngm:class:confusion-matrix",
         "label": "Confusion Matrices"
       },
       {
@@ -98,7 +86,7 @@
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
@@ -132,10 +120,6 @@
       {
         "id": "urn:ngm:class:accountability",
         "label": "Accountability"
-      },
-      {
-        "id": "urn:ngm:class:discrimination",
-        "label": "Discrimination"
       },
       {
         "id": "urn:ngm:class:safety-and-alignment",

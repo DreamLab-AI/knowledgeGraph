@@ -22,7 +22,7 @@
         "label": "Rigid Body Dynamics"
       },
       {
-        "id": "urn:ngm:class:soft-body-physics",
+        "id": "urn:ngm:class:soft-body-dynamics",
         "label": "Soft Body Physics"
       },
       {
@@ -82,20 +82,12 @@
       {
         "id": "urn:ngm:class:sim-to-real-transfer",
         "label": "Sim-to-Real Transfer"
-      },
-      {
-        "id": "urn:ngm:class:neural-physics",
-        "label": "Neural Physics"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:finite-element-method",
         "label": "Finite Element Method"
-      },
-      {
-        "id": "urn:ngm:class:smoothed-particle-hydrodynamics",
-        "label": "Smoothed Particle Hydrodynamics"
       }
     ],
     "supports": [

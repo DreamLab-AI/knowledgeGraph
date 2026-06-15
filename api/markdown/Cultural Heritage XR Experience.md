@@ -146,14 +146,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:cultural-metadata",
-        "label": "Cultural Metadata"
-      },
-      {
-        "@id": "urn:ngm:class:interactive-exhibit",
-        "label": "Interactive Exhibit"
-      },
-      {
         "@id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
       },
@@ -167,10 +159,6 @@ public:: true
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:cultural-database",
-        "label": "Cultural Database"
-      },
       {
         "@id": "urn:ngm:class:3-d-rendering-engine",
         "label": "3D Rendering Engine"
@@ -186,14 +174,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:cultural-education",
-        "label": "Cultural Education"
-      },
-      {
-        "@id": "urn:ngm:class:heritage-tourism",
-        "label": "Heritage Tourism"
-      },
-      {
         "@id": "urn:ngm:class:archaeological-site-reconstruction",
         "label": "Archaeological Site Reconstruction"
       },
@@ -204,7 +184,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:cultural-heritage-preservation-system",
+        "@id": "urn:ngm:class:cultural-heritage-preservation",
         "label": "Cultural Heritage Preservation System"
       }
     ]

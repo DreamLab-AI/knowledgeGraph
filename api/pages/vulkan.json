@@ -18,16 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:render-pass",
-        "label": "Render Pass"
-      },
-      {
         "id": "urn:ngm:class:pipeline-state-object",
         "label": "Pipeline State Object"
-      },
-      {
-        "id": "urn:ngm:class:queue-family",
-        "label": "Queue Family"
       }
     ],
     "requires": [
@@ -85,11 +77,11 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning-inference",
+        "id": "urn:ngm:class:inference",
         "label": "Machine Learning Inference"
       },
       {
-        "id": "urn:ngm:class:automotive-safety-critical-systems",
+        "id": "urn:ngm:class:safety-critical-systems",
         "label": "Automotive Safety-Critical Systems"
       }
     ],
@@ -131,14 +123,6 @@
       {
         "id": "urn:ngm:class:rendering-pipeline",
         "label": "Rendering Pipeline"
-      },
-      {
-        "id": "urn:ngm:class:moltenvk",
-        "label": "MoltenVK"
-      },
-      {
-        "id": "urn:ngm:class:dxvk",
-        "label": "DXVK"
       }
     ]
   },

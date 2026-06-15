@@ -44,11 +44,11 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:parallel-computation",
+        "id": "urn:ngm:class:parallel-computing",
         "label": "Parallel Computation"
       },
       {
-        "id": "urn:ngm:class:gpu-accelerated-computing",
+        "id": "urn:ngm:class:gpu-computing",
         "label": "GPU Accelerated Computing"
       }
     ],
@@ -66,17 +66,12 @@
         "label": "Transfer Learning"
       },
       {
-        "id": "urn:ngm:class:multimodal-learning",
+        "id": "urn:ngm:class:multimodal-ai-architecture-learning",
         "label": "Multimodal Learning"
       }
     ],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:sequence-to-sequence-modelling",
-        "label": "Sequence-to-Sequence Modelling"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:recurrent-neural-network",
@@ -133,7 +128,7 @@
         "label": "GPT"
       },
       {
-        "id": "urn:ngm:class:mixture-of-experts",
+        "id": "urn:ngm:class:mixture-of-experts-architecture",
         "label": "Mixture of Experts"
       },
       {

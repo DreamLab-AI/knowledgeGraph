@@ -65,20 +65,12 @@ public:: true
       {
         "@id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hash Function"
-      },
-      {
-        "@id": "urn:ngm:class:provable-security",
-        "label": "Provable Security"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:digital-signature",
         "label": "Digital Signature"
-      },
-      {
-        "@id": "urn:ngm:class:public-key-encryption",
-        "label": "Public-Key Encryption"
       },
       {
         "@id": "urn:ngm:class:key-derivation-function",
@@ -91,15 +83,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:reduction-proof",
-        "label": "Reduction Proof"
-      },
-      {
-        "@id": "urn:ngm:class:adversarial-model",
-        "label": "Adversarial Model"
-      },
-      {
-        "@id": "urn:ngm:class:computational-complexity",
+        "@id": "urn:ngm:class:computational-complexity-theory",
         "label": "Computational Complexity"
       }
     ],
@@ -113,25 +97,7 @@ public:: true
         "label": "SHA-3"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:standard-model",
-        "label": "Standard Model"
-      },
-      {
-        "@id": "urn:ngm:class:generic-group-model",
-        "label": "Generic Group Model"
-      },
-      {
-        "@id": "urn:ngm:class:ideal-cipher-model",
-        "label": "Ideal Cipher Model"
-      }
-    ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:rsa-oaep",
-        "label": "RSA-OAEP"
-      },
       {
         "@id": "urn:ngm:class:schnorr-signature",
         "label": "Schnorr Signature"
@@ -147,14 +113,6 @@ public:: true
       {
         "@id": "urn:ngm:class:post-quantum-cryptography",
         "label": "Post-Quantum Cryptography"
-      },
-      {
-        "@id": "urn:ngm:class:indistinguishability-obfuscation",
-        "label": "Indistinguishability Obfuscation"
-      },
-      {
-        "@id": "urn:ngm:class:cryptographic-proof-model",
-        "label": "Cryptographic Proof Model"
       }
     ],
     "bridgesTo": [

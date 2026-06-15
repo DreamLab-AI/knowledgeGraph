@@ -22,10 +22,6 @@
         "label": "ETL Pipeline"
       },
       {
-        "id": "urn:ngm:class:dimensional-model",
-        "label": "Dimensional Model"
-      },
-      {
         "id": "urn:ngm:class:data-mart",
         "label": "Data Mart"
       },
@@ -62,7 +58,7 @@
         "label": "Self-Service Analytics"
       },
       {
-        "id": "urn:ngm:class:executive-dashboard",
+        "id": "urn:ngm:class:monitoring-dashboard",
         "label": "Executive Dashboard"
       }
     ],
@@ -72,7 +68,7 @@
         "label": "Metadata Management"
       },
       {
-        "id": "urn:ngm:class:cloud-object-storage",
+        "id": "urn:ngm:class:object-storage",
         "label": "Cloud Object Storage"
       }
     ],
@@ -90,15 +86,11 @@
       {
         "id": "urn:ngm:class:data-lake",
         "label": "Data Lake"
-      },
-      {
-        "id": "urn:ngm:class:operational-database",
-        "label": "Operational Database"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning-platform",
+        "id": "urn:ngm:class:machine-learning-discipline-platform",
         "label": "Machine Learning Platform"
       },
       {
@@ -125,7 +117,7 @@
         "label": "Data Engineering"
       },
       {
-        "id": "urn:ngm:class:data-lakehouse",
+        "id": "urn:ngm:class:lakehouse-architecture",
         "label": "Data Lakehouse"
       }
     ]

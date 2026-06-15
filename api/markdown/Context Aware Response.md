@@ -101,14 +101,6 @@ alias:: Context-Aware Response
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:adaptive-ux",
-        "label": "Adaptive UX"
-      },
-      {
-        "@id": "urn:ngm:class:dynamic-content",
-        "label": "Dynamic Content"
-      },
-      {
         "@id": "urn:ngm:class:personalized-interaction",
         "label": "Personalized Interaction"
       }

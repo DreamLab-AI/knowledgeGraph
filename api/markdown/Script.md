@@ -81,53 +81,129 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:opcodes", "label": "Opcodes"},
-      {"@id": "urn:ngm:class:transaction", "label": "Transaction"},
-      {"@id": "urn:ngm:class:utxo-model", "label": "UTXO Model"},
-      {"@id": "urn:ngm:class:stack-machine", "label": "Stack Machine"},
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"}
+      {
+        "@id": "urn:ngm:class:opcodes",
+        "label": "Opcodes"
+      },
+      {
+        "@id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      },
+      {
+        "@id": "urn:ngm:class:stack-machine",
+        "label": "Stack Machine"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:transaction-processing", "label": "Transaction Processing"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:multisignature", "label": "Multisignature"},
-      {"@id": "urn:ngm:class:time-locked-transaction", "label": "Time-Locked Transaction"},
-      {"@id": "urn:ngm:class:payment-channel", "label": "Payment Channel"}
+      {
+        "@id": "urn:ngm:class:transaction-processing",
+        "label": "Transaction Processing"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
+      },
+      {
+        "@id": "urn:ngm:class:time-locked-transaction",
+        "label": "Time-Locked Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"}
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:bitcoin-protocol", "label": "Bitcoin Protocol"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:bitcoin-protocol",
+        "label": "Bitcoin Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:locking-script", "label": "Locking Script"},
-      {"@id": "urn:ngm:class:unlocking-script", "label": "Unlocking Script"}
+      {
+        "@id": "urn:ngm:class:locking-script",
+        "label": "Locking Script"
+      },
+      {
+        "@id": "urn:ngm:class:unlocking-script",
+        "label": "Unlocking Script"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:spending-condition", "label": "Spending Condition"},
-      {"@id": "urn:ngm:class:pay-to-public-key-hash", "label": "Pay-To-Public-Key-Hash"}
+      {
+        "@id": "urn:ngm:class:pay-to-public-key-hash",
+        "label": "Pay-To-Public-Key-Hash"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:turing-complete-language", "label": "Turing-Complete Language"},
-      {"@id": "urn:ngm:class:ethereum-virtual-machine", "label": "Ethereum Virtual Machine"}
+      {
+        "@id": "urn:ngm:class:turing-complete-language",
+        "label": "Turing-Complete Language"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:security", "label": "Security"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"},
-      {"@id": "urn:ngm:class:transaction-pool", "label": "Transaction Pool"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:node-validation", "label": "Node Validation"}
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-pool",
+        "label": "Transaction Pool"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:bitcoin-script", "label": "Bitcoin Script"}
+    {
+      "@id": "urn:ngm:class:bitcoin-script",
+      "label": "Bitcoin Script"
+    }
   ],
   "quality": 0.72,
   "provenance": {

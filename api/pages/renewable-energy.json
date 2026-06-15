@@ -16,28 +16,7 @@
   "qualityScore": 0.76,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:solar-photovoltaic",
-        "label": "Solar Photovoltaic"
-      },
-      {
-        "id": "urn:ngm:class:wind-power",
-        "label": "Wind Power"
-      },
-      {
-        "id": "urn:ngm:class:hydropower",
-        "label": "Hydropower"
-      },
-      {
-        "id": "urn:ngm:class:geothermal-energy",
-        "label": "Geothermal Energy"
-      },
-      {
-        "id": "urn:ngm:class:biomass-energy",
-        "label": "Biomass Energy"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:energy-storage",
@@ -64,32 +43,20 @@
       {
         "id": "urn:ngm:class:green-hydrogen",
         "label": "Green Hydrogen"
-      },
-      {
-        "id": "urn:ngm:class:electrification-of-transport",
-        "label": "Electrification of Transport"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:fossil-fuels",
-        "label": "Fossil Fuels"
-      },
-      {
-        "id": "urn:ngm:class:nuclear-power",
+        "id": "urn:ngm:class:nuclear-energy",
         "label": "Nuclear Power"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:ai-energy-consumption",
+        "id": "urn:ngm:class:energy-consumption",
         "label": "AI Energy Consumption"
-      },
-      {
-        "id": "urn:ngm:class:grid-aware-computing",
-        "label": "Grid-Aware Computing"
       }
     ],
     "uses": [
@@ -112,20 +79,11 @@
         "label": "Sustainable Technology"
       },
       {
-        "id": "urn:ngm:class:data-centre-operations",
+        "id": "urn:ngm:class:data-centre",
         "label": "Data Centre Operations"
       }
     ],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:international-renewable-energy-agency",
-        "label": "International Renewable Energy Agency"
-      },
-      {
-        "id": "urn:ngm:class:iec-standards",
-        "label": "IEC Standards"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
@@ -141,7 +99,7 @@
         "label": "SustainabilityReporting"
       },
       {
-        "id": "urn:ngm:class:carbon-market",
+        "id": "urn:ngm:class:carbon-markets",
         "label": "Carbon Market"
       }
     ]

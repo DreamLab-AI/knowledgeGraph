@@ -23,51 +23,115 @@ public:: true
   "definition": "DeepSpeed is an open-source deep learning optimisation library developed by Microsoft Research that enables training and inference of extremely large neural network models through ZeRO (Zero Redundancy Optimizer) memory partitioning, pipeline parallelism, and mixed-precision arithmetic. It reduces the per-device memory footprint of model states by partitioning optimiser states, gradients, and parameters across data-parallel devices.",
   "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-training",
+      "label": "Distributed Training"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:mixed-precision-training", "label": "Mixed Precision Training"},
-      {"@id": "urn:ngm:class:gradient-checkpointing", "label": "Gradient Checkpointing"},
-      {"@id": "urn:ngm:class:zero-redundancy-optimizer", "label": "ZeRO Redundancy Optimizer"},
-      {"@id": "urn:ngm:class:nvidia-cuda", "label": "NVIDIA CUDA"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
+      {
+        "@id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-checkpointing",
+        "label": "Gradient Checkpointing"
+      },
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "NVIDIA CUDA"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:large-language-model-training", "label": "Large Language Model Training"},
-      {"@id": "urn:ngm:class:model-parallelism", "label": "Model Parallelism"},
-      {"@id": "urn:ngm:class:billion-parameter-model", "label": "Billion Parameter Model"},
-      {"@id": "urn:ngm:class:inference-at-scale", "label": "Inference at Scale"}
+      {
+        "@id": "urn:ngm:class:large-language-model-training",
+        "label": "Large Language Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference at Scale"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:pipeline-parallelism", "label": "Pipeline Parallelism"},
-      {"@id": "urn:ngm:class:tensor-parallelism", "label": "Tensor Parallelism"},
-      {"@id": "urn:ngm:class:cpu-offloading", "label": "CPU Offloading"},
-      {"@id": "urn:ngm:class:sparse-attention", "label": "Sparse Attention"}
+      {
+        "@id": "urn:ngm:class:pipeline-parallelism",
+        "label": "Pipeline Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-parallelism",
+        "label": "Tensor Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:sparse-attention",
+        "label": "Sparse Attention"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:high-performance-computing", "label": "High Performance Computing"},
-      {"@id": "urn:ngm:class:gpu-cluster", "label": "GPU Cluster"}
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High Performance Computing"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-cluster",
+        "label": "GPU Cluster"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:pytorch", "label": "PyTorch"},
-      {"@id": "urn:ngm:class:message-passing-interface", "label": "Message Passing Interface"}
+      {
+        "@id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "label": "PyTorch"
+      },
+      {
+        "@id": "urn:ngm:class:message-passing-interface",
+        "label": "Message Passing Interface"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:megatron-lm", "label": "Megatron-LM"},
-      {"@id": "urn:ngm:class:fairscale", "label": "FairScale"}
+      {
+        "@id": "urn:ngm:class:megatron-lm",
+        "label": "Megatron-LM"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:hugging-face-accelerate", "label": "Hugging Face Accelerate"},
-      {"@id": "urn:ngm:class:data-parallelism", "label": "Data Parallelism"},
-      {"@id": "urn:ngm:class:model-quantization", "label": "Model Quantization"}
+      {
+        "@id": "urn:ngm:class:hugging-face-accelerate",
+        "label": "Hugging Face Accelerate"
+      },
+      {
+        "@id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:model-quantization",
+        "label": "Model Quantization"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:microsoft-deepspeed", "label": "Microsoft DeepSpeed"}
+    {
+      "@id": "urn:ngm:class:microsoft-deepspeed",
+      "label": "Microsoft DeepSpeed"
+    }
   ],
   "quality": 0.73,
   "provenance": {

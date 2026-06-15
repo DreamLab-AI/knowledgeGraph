@@ -18,18 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:event-broker",
-        "label": "Event Broker"
-      },
-      {
-        "id": "urn:ngm:class:event-producer",
-        "label": "Event Producer"
-      },
-      {
-        "id": "urn:ngm:class:event-consumer",
-        "label": "Event Consumer"
-      },
-      {
         "id": "urn:ngm:class:message-queue",
         "label": "Message Queue"
       }
@@ -46,7 +34,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:scalable-metaverse-infrastructure",
+        "id": "urn:ngm:class:metaverse-infrastructure",
         "label": "Scalable Metaverse Infrastructure"
       },
       {
@@ -126,7 +114,7 @@
         "label": "Microservices Architecture"
       },
       {
-        "id": "urn:ngm:class:serverless-computing",
+        "id": "urn:ngm:class:serverless-architecture",
         "label": "Serverless Computing"
       },
       {
@@ -138,7 +126,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:software-architecture-pattern",
+        "id": "urn:ngm:class:software-architecture",
         "label": "Software Architecture Pattern"
       },
       {

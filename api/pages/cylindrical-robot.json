@@ -24,51 +24,14 @@
   "qualityScore": 0.5,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:azimuth-drive",
-        "label": "Azimuth Drive"
-      },
-      {
-        "id": "urn:ngm:class:end-effector-mount",
-        "label": "End-Effector Mount"
-      },
-      {
-        "id": "urn:ngm:class:radial-actuator",
-        "label": "Radial Actuator"
-      },
-      {
-        "id": "urn:ngm:class:vertical-actuator",
-        "label": "Vertical Actuator"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:base-support",
-        "label": "Base Support"
-      },
-      {
-        "id": "urn:ngm:class:prismatic-actuators",
+        "id": "urn:ngm:class:actuators",
         "label": "Prismatic Actuators"
-      },
-      {
-        "id": "urn:ngm:class:rotary-joint",
-        "label": "Rotary Joint"
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:component-assembly",
-        "label": "Component Assembly"
-      },
-      {
-        "id": "urn:ngm:class:depalletising",
-        "label": "Depalletising"
-      },
-      {
-        "id": "urn:ngm:class:palletising",
-        "label": "Palletising"
-      },
       {
         "id": "urn:ngm:class:pick-and-place",
         "label": "Pick and Place"

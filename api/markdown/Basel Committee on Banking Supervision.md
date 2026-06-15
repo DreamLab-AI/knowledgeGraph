@@ -23,56 +23,125 @@ public:: true
   "definition": "The Basel Committee on Banking Supervision (BCBS) is the primary global standard-setter for the prudential regulation of banks, operating under the auspices of the Bank for International Settlements in Basel, Switzerland. It develops minimum capital, liquidity, and leverage requirements — collectively the Basel Accords (Basel I, II, III, and the finalised Basel III framework completed in 2017) — that are adopted into national law by its 45-member jurisdictions. The Committee does not possess formal supranational authority; compliance is achieved through voluntary adoption by member central banks and supervisory agencies.",
   "domain": "finance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:regulatory-authority", "label": "Regulatory Authority"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:regulatory-authority",
+      "label": "Regulatory Authority"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:basel-accords", "label": "Basel Accords"},
-      {"@id": "urn:ngm:class:capital-adequacy-framework", "label": "Capital Adequacy Framework"},
-      {"@id": "urn:ngm:class:liquidity-coverage-ratio", "label": "Liquidity Coverage Ratio"}
+      {
+        "@id": "urn:ngm:class:basel-accords",
+        "label": "Basel Accords"
+      },
+      {
+        "@id": "urn:ngm:class:capital-adequacy",
+        "label": "Capital Adequacy Framework"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-coverage-ratio",
+        "label": "Liquidity Coverage Ratio"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:bank-for-international-settlements", "label": "Bank for International Settlements"}
+      {
+        "@id": "urn:ngm:class:bank-for-international-settlements",
+        "label": "Bank for International Settlements"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:risk-weighted-assets", "label": "Risk-Weighted Assets"},
-      {"@id": "urn:ngm:class:common-equity-tier-1", "label": "Common Equity Tier 1"}
+      {
+        "@id": "urn:ngm:class:risk-weighted-assets",
+        "label": "Risk-Weighted Assets"
+      },
+      {
+        "@id": "urn:ngm:class:common-equity-tier-1",
+        "label": "Common Equity Tier 1"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"},
-      {"@id": "urn:ngm:class:prudential-supervision", "label": "Prudential Supervision"},
-      {"@id": "urn:ngm:class:financial-stability", "label": "Financial Stability"}
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "@id": "urn:ngm:class:prudential-supervision",
+        "label": "Prudential Supervision"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:central-bank", "label": "Central Bank"},
-      {"@id": "urn:ngm:class:national-supervisory-authority", "label": "National Supervisory Authority"}
+      {
+        "@id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "@id": "urn:ngm:class:national-competent-authority",
+        "label": "National Supervisory Authority"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:prudential-regulation", "label": "Prudential Regulation"},
-      {"@id": "urn:ngm:class:stress-testing", "label": "Stress Testing"}
+      {
+        "@id": "urn:ngm:class:prudential-regulation",
+        "label": "Prudential Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:stress-testing",
+        "label": "Stress Testing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
-      {"@id": "urn:ngm:class:systemic-risk", "label": "Systemic Risk"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:national-regulatory-authority", "label": "National Regulatory Authority"}
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:cryptoasset-regulation", "label": "Cryptoasset Regulation"},
-      {"@id": "urn:ngm:class:artificial-intelligence-governance", "label": "Artificial Intelligence Governance"},
-      {"@id": "urn:ngm:class:climate-risk-finance", "label": "Climate Risk Finance"}
+      {
+        "@id": "urn:ngm:class:cryptoasset-regulation",
+        "label": "Cryptoasset Regulation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:regulatory-standards", "label": "Regulatory Standards"},
-      {"@id": "urn:ngm:class:regulatory-technology", "label": "Regulatory Technology"},
-      {"@id": "urn:ngm:class:capital-requirements-regulation", "label": "Capital Requirements Regulation"},
-      {"@id": "urn:ngm:class:financial-stability-board", "label": "Financial Stability Board"}
+      {
+        "@id": "urn:ngm:class:regulatory-standards",
+        "label": "Regulatory Standards"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      },
+      {
+        "@id": "urn:ngm:class:capital-requirements-regulation",
+        "label": "Capital Requirements Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:bcbs", "label": "BCBS"}
+    {
+      "@id": "urn:ngm:class:bcbs",
+      "label": "BCBS"
+    }
   ],
   "quality": 0.75,
   "provenance": {

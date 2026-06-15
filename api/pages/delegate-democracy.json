@@ -18,54 +18,22 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:delegate",
-        "label": "Delegate"
-      },
-      {
-        "id": "urn:ngm:class:delegate-discovery",
-        "label": "Delegate Discovery"
-      },
-      {
-        "id": "urn:ngm:class:delegator",
-        "label": "Delegator"
-      },
-      {
-        "id": "urn:ngm:class:domain-specific-delegation",
-        "label": "Domain Specific Delegation"
-      },
-      {
-        "id": "urn:ngm:class:instant-revocation",
+        "id": "urn:ngm:class:revocation-mechanism",
         "label": "Instant Revocation"
       },
       {
-        "id": "urn:ngm:class:transitive-re-delegation",
+        "id": "urn:ngm:class:vote-delegation",
         "label": "Transitive Re-delegation"
       },
       {
-        "id": "urn:ngm:class:vote-delegation",
-        "label": "Vote Delegation"
-      },
-      {
-        "id": "urn:ngm:class:voting-power-checkpoints",
+        "id": "urn:ngm:class:checkpoints",
         "label": "Voting Power Checkpoints"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:membership-cryptographic-identity",
-        "label": "Membership Cryptographic Identity"
-      },
-      {
-        "id": "urn:ngm:class:on-chain-or-verifiable-vote-recording",
-        "label": "On-Chain Or Verifiable Vote Recording"
-      },
-      {
         "id": "urn:ngm:class:quorum-mechanism",
         "label": "Quorum Mechanism"
-      },
-      {
-        "id": "urn:ngm:class:voting-power-accounting",
-        "label": "Voting Power Accounting"
       },
       {
         "id": "urn:ngm:class:proposal-system",
@@ -74,49 +42,16 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:continuous-accountability",
+        "id": "urn:ngm:class:accountability",
         "label": "Continuous Accountability"
       },
       {
-        "id": "urn:ngm:class:expert-aggregation",
-        "label": "Expert Aggregation"
-      },
-      {
-        "id": "urn:ngm:class:professional-governance-class",
-        "label": "Professional Governance Class"
-      },
-      {
-        "id": "urn:ngm:class:rational-delegation",
+        "id": "urn:ngm:class:vote-delegation",
         "label": "Rational Delegation"
-      },
-      {
-        "id": "urn:ngm:class:reduced-voter-fatigue",
-        "label": "Reduced Voter Fatigue"
-      },
-      {
-        "id": "urn:ngm:class:specialised-governance-domains",
-        "label": "Specialised Governance Domains"
       }
     ],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:carroll-proportional-representation",
-        "label": "Carroll Proportional Representation"
-      },
-      {
-        "id": "urn:ngm:class:ford-delegative-theory",
-        "label": "Ford Delegative Theory"
-      },
-      {
-        "id": "urn:ngm:class:loar-transitive-delegation-calculus",
-        "label": "Loar Transitive Delegation Calculus"
-      },
-      {
-        "id": "urn:ngm:class:madisonian-republican-filter",
-        "label": "Madisonian Republican Filter"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [],
     "bridgesTo": [
       {
@@ -126,39 +61,23 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:agora-forum",
+        "id": "urn:ngm:class:project-agora",
         "label": "Agora Forum"
       },
       {
-        "id": "urn:ngm:class:compound-bravo-governance",
+        "id": "urn:ngm:class:compound-governor-bravo",
         "label": "Compound Bravo Governance"
       },
       {
-        "id": "urn:ngm:class:decidim-platform",
-        "label": "Decidim Platform"
-      },
-      {
-        "id": "urn:ngm:class:democracy-os-platform",
-        "label": "DemocracyOS Platform"
-      },
-      {
-        "id": "urn:ngm:class:erc20-votes-extension",
+        "id": "urn:ngm:class:erc20-votes-standard",
         "label": "ERC20Votes Extension"
       },
       {
-        "id": "urn:ngm:class:karma-delegate-analytics",
-        "label": "Karma Delegate Analytics"
-      },
-      {
-        "id": "urn:ngm:class:liquid-feedback-platform",
-        "label": "LiquidFeedback Platform"
-      },
-      {
-        "id": "urn:ngm:class:snapshot-off-chain-signed-voting",
+        "id": "urn:ngm:class:snapshot-off-chain-voting",
         "label": "Snapshot Off-Chain Signed Voting"
       },
       {
-        "id": "urn:ngm:class:tally-frontend",
+        "id": "urn:ngm:class:tally",
         "label": "Tally Frontend"
       }
     ],
@@ -168,7 +87,7 @@
         "label": "Citizen Engagement"
       },
       {
-        "id": "urn:ngm:class:dao-operations",
+        "id": "urn:ngm:class:dao",
         "label": "DAO Operations"
       },
       {
@@ -178,15 +97,11 @@
       {
         "id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
         "label": "Public Goods Funding"
-      },
-      {
-        "id": "urn:ngm:class:subsidiarity",
-        "label": "Subsidiarity"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:compound-governor-bravo-reference-implementation",
+        "id": "urn:ngm:class:compound-governor-bravo",
         "label": "Compound Governor Bravo Reference Implementation"
       },
       {
@@ -194,34 +109,22 @@
         "label": "ERC-20 Token Standard"
       },
       {
-        "id": "urn:ngm:class:erc-712-typed-structured-data-signing",
-        "label": "ERC-712 Typed Structured Data Signing"
-      },
-      {
         "id": "urn:ngm:class:open-zeppelin-governor-contracts",
         "label": "OpenZeppelin Governor Contracts"
       },
       {
-        "id": "urn:ngm:class:snapshot-strategy-specification",
+        "id": "urn:ngm:class:snapshot",
         "label": "Snapshot Strategy Specification"
       }
     ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:ai16z-dao",
-        "label": "ai16z DAO"
-      },
-      {
-        "id": "urn:ngm:class:aragon-court",
+        "id": "urn:ngm:class:aragon",
         "label": "Aragon Court"
       },
       {
-        "id": "urn:ngm:class:better-reykjavik",
-        "label": "Better Reykjavik"
-      },
-      {
-        "id": "urn:ngm:class:compound-bravo",
+        "id": "urn:ngm:class:compound-governor-bravo",
         "label": "Compound Bravo"
       },
       {
@@ -233,40 +136,16 @@
         "label": "Curve Wars"
       },
       {
-        "id": "urn:ngm:class:democracy-os",
-        "label": "DemocracyOS"
-      },
-      {
         "id": "urn:ngm:class:ens-dao",
         "label": "ENS DAO"
-      },
-      {
-        "id": "urn:ngm:class:liquid-feedback",
-        "label": "LiquidFeedback"
-      },
-      {
-        "id": "urn:ngm:class:olas-autonolas",
-        "label": "Olas Autonolas"
       },
       {
         "id": "urn:ngm:class:open-rights-group",
         "label": "Open Rights Group"
       },
       {
-        "id": "urn:ngm:class:optimism-citizens-house",
+        "id": "urn:ngm:class:optimism-collective",
         "label": "Optimism Citizens House"
-      },
-      {
-        "id": "urn:ngm:class:optimism-token-house",
-        "label": "Optimism Token House"
-      },
-      {
-        "id": "urn:ngm:class:pirate-party-germany",
-        "label": "Pirate Party Germany"
-      },
-      {
-        "id": "urn:ngm:class:sortition-foundation",
-        "label": "Sortition Foundation"
       },
       {
         "id": "urn:ngm:class:uniswap-governance",

@@ -482,58 +482,18 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:automatic-free-u-module",
-        "label": "Automatic FreeU Module"
-      },
-      {
-        "@id": "urn:ngm:class:automatic-refiner-scheduler",
-        "label": "Automatic Refiner Scheduler"
-      },
-      {
-        "@id": "urn:ngm:class:faceswap-module",
-        "label": "Faceswap Module"
-      },
-      {
-        "@id": "urn:ngm:class:gradio-web-ui",
-        "label": "Gradio Web UI"
-      },
-      {
-        "@id": "urn:ngm:class:image-prompt-ip-adapter-module",
+        "@id": "urn:ngm:class:ip-adapter",
         "label": "Image Prompt IP-Adapter Module"
       },
       {
-        "@id": "urn:ngm:class:inpaint-pipeline",
-        "label": "Inpaint Pipeline"
-      },
-      {
-        "@id": "urn:ngm:class:lo-ra-blending-module",
-        "label": "LoRA Blending Module"
-      },
-      {
-        "@id": "urn:ngm:class:prompt-expansion-engine",
-        "label": "Prompt Expansion Engine"
-      },
-      {
-        "@id": "urn:ngm:class:pyra-canny-control-net",
+        "@id": "urn:ngm:class:control-net",
         "label": "PyraCanny ControlNet"
-      },
-      {
-        "@id": "urn:ngm:class:style-preset-library",
-        "label": "Style Preset Library"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:cuda-toolkit",
+        "@id": "urn:ngm:class:cuda",
         "label": "CUDA Toolkit"
-      },
-      {
-        "@id": "urn:ngm:class:gpu-with-4-8-gb-vram",
-        "label": "GPU with 4-8GB VRAM"
-      },
-      {
-        "@id": "urn:ngm:class:gradio-framework",
-        "label": "Gradio Framework"
       },
       {
         "@id": "urn:ngm:class:py-torch",
@@ -544,7 +504,7 @@ public:: true
         "label": "Python Runtime"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion-image-model-xl",
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion XL"
       }
     ],
@@ -554,7 +514,7 @@ public:: true
         "label": "Face Swap"
       },
       {
-        "@id": "urn:ngm:class:local-ai-art-creation",
+        "@id": "urn:ngm:class:ai-art-generation",
         "label": "Local AI Art Creation"
       },
       {
@@ -588,50 +548,22 @@ public:: true
         "label": "ControlNet Conditioning"
       },
       {
-        "@id": "urn:ngm:class:free-u-free-lunch-rebalancing",
-        "label": "FreeU Free-Lunch Rebalancing"
-      },
-      {
-        "@id": "urn:ngm:class:ip-adapter-image-conditioning",
+        "@id": "urn:ngm:class:ip-adapter",
         "label": "IP-Adapter Image Conditioning"
       },
       {
-        "@id": "urn:ngm:class:latent-diffusion-sampling",
+        "@id": "urn:ngm:class:latent-diffusion",
         "label": "Latent Diffusion Sampling"
       },
       {
-        "@id": "urn:ngm:class:prompt-expansion",
-        "label": "Prompt Expansion"
-      },
-      {
-        "@id": "urn:ngm:class:sdxl-refiner-handoff",
+        "@id": "urn:ngm:class:sdxl",
         "label": "SDXL Refiner Handoff"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:clip-skip",
+        "@id": "urn:ngm:class:clip",
         "label": "CLIP Skip"
-      },
-      {
-        "@id": "urn:ngm:class:dpm-plus-plus-2-m-karras-sampler",
-        "label": "DPM Plus Plus 2M Karras Sampler"
-      },
-      {
-        "@id": "urn:ngm:class:gpt-2-prompt-expansion",
-        "label": "GPT-2 Prompt Expansion"
-      },
-      {
-        "@id": "urn:ngm:class:lcm-sampler",
-        "label": "LCM Sampler"
-      },
-      {
-        "@id": "urn:ngm:class:lightning-sampler",
-        "label": "Lightning Sampler"
-      },
-      {
-        "@id": "urn:ngm:class:sdxl-vae-fp16-fix",
-        "label": "SDXL VAE FP16 Fix"
       }
     ],
     "relatedTo": [
@@ -640,32 +572,8 @@ public:: true
         "label": "ControlNet"
       },
       {
-        "@id": "urn:ngm:class:fooocus-mre",
-        "label": "Fooocus-MRE"
-      },
-      {
-        "@id": "urn:ngm:class:frame-pack",
-        "label": "FramePack"
-      },
-      {
         "@id": "urn:ngm:class:hugging-face-diffusers",
         "label": "Hugging Face Diffusers"
-      },
-      {
-        "@id": "urn:ngm:class:ic-light",
-        "label": "IC-Light"
-      },
-      {
-        "@id": "urn:ngm:class:paints-undo",
-        "label": "Paints-Undo"
-      },
-      {
-        "@id": "urn:ngm:class:ruined-fooocus",
-        "label": "RuinedFooocus"
-      },
-      {
-        "@id": "urn:ngm:class:simple-sdxl2",
-        "label": "SimpleSDXL2"
       },
       {
         "@id": "urn:ngm:class:stability-ai",
@@ -674,7 +582,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:concept-art-workflows",
+        "@id": "urn:ngm:class:concept-art",
         "label": "Concept Art Workflows"
       },
       {
@@ -682,30 +590,14 @@ public:: true
         "label": "Creative Tools"
       },
       {
-        "@id": "urn:ngm:class:educational-ai-demonstrations",
-        "label": "Educational AI Demonstrations"
-      },
-      {
-        "@id": "urn:ngm:class:indie-game-asset-creation",
+        "@id": "urn:ngm:class:game-asset-generation",
         "label": "Indie Game Asset Creation"
-      },
-      {
-        "@id": "urn:ngm:class:local-privacy-workflows",
-        "label": "Local Privacy Workflows"
       }
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:creative-ml-open-rail-m-licence",
+        "@id": "urn:ngm:class:open-rail",
         "label": "CreativeML Open RAIL-M Licence"
-      },
-      {
-        "@id": "urn:ngm:class:gplv3-licence",
-        "label": "GPLv3 Licence"
-      },
-      {
-        "@id": "urn:ngm:class:gradio-specification",
-        "label": "Gradio Specification"
       },
       {
         "@id": "urn:ngm:class:hugging-face-model-hub",
@@ -713,7 +605,10 @@ public:: true
       }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
     ]
   },
   "quality": 0.52,

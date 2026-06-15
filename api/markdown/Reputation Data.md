@@ -138,19 +138,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:behavioral-pattern",
-        "label": "Behavioral Pattern"
-      },
-      {
-        "@id": "urn:ngm:class:feedback-score",
-        "label": "Feedback Score"
-      },
-      {
         "@id": "urn:ngm:class:transaction-history",
         "label": "Transaction History"
       },
       {
-        "@id": "urn:ngm:class:trust-indicator",
+        "@id": "urn:ngm:class:trust",
         "label": "Trust Indicator"
       }
     ],
@@ -170,7 +162,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:community-moderation",
+        "@id": "urn:ngm:class:community",
         "label": "Community Moderation"
       },
       {
@@ -178,7 +170,7 @@ public:: true
         "label": "Fraud Detection"
       },
       {
-        "@id": "urn:ngm:class:trust-scoring",
+        "@id": "urn:ngm:class:trust",
         "label": "Trust Scoring"
       },
       {
@@ -188,7 +180,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:social-graph",
+        "@id": "urn:ngm:class:social-network-graph",
         "label": "Social Graph"
       },
       {

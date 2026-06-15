@@ -19,10 +19,6 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:user-base",
-        "label": "User Base"
-      },
-      {
         "id": "urn:ngm:class:interoperability",
         "label": "Interoperability"
       }
@@ -35,45 +31,15 @@
       {
         "id": "urn:ngm:class:startup-ecosystem",
         "label": "Startup Ecosystem"
-      },
-      {
-        "id": "urn:ngm:class:market-dominance",
-        "label": "Market Dominance"
-      },
-      {
-        "id": "urn:ngm:class:data-flywheel",
-        "label": "Data Flywheel"
       }
     ],
-    "dependsOn": [
-      {
-        "id": "urn:ngm:class:platform-participation",
-        "label": "Platform Participation"
-      },
-      {
-        "id": "urn:ngm:class:switching-costs",
-        "label": "Switching Costs"
-      }
-    ],
+    "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:diseconomies-of-scale",
-        "label": "Diseconomies of Scale"
-      },
-      {
-        "id": "urn:ngm:class:congestion-effects",
-        "label": "Congestion Effects"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:blockchain-protocol",
         "label": "Blockchain Protocol"
-      },
-      {
-        "id": "urn:ngm:class:ai-data-accumulation",
-        "label": "AI Data Accumulation"
       },
       {
         "id": "urn:ngm:class:antitrust-regulation",
@@ -82,10 +48,6 @@
     ],
     "uses": [],
     "supports": [
-      {
-        "id": "urn:ngm:class:lock-in",
-        "label": "Lock-In"
-      },
       {
         "id": "urn:ngm:class:path-dependence",
         "label": "Path Dependence"
@@ -109,18 +71,6 @@
       {
         "id": "urn:ngm:class:platform-economy",
         "label": "Platform Economy"
-      },
-      {
-        "id": "urn:ngm:class:winner-take-all",
-        "label": "Winner-Take-All"
-      },
-      {
-        "id": "urn:ngm:class:critical-mass",
-        "label": "Critical Mass"
-      },
-      {
-        "id": "urn:ngm:class:metcalfes-law",
-        "label": "Metcalfe's Law"
       }
     ]
   },

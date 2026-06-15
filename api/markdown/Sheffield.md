@@ -63,30 +63,14 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:advanced-manufacturing-research-centre",
-        "label": "Advanced Manufacturing Research Centre"
-      },
-      {
-        "@id": "urn:ngm:class:nuclear-amrc",
-        "label": "Nuclear AMRC"
-      },
-      {
         "@id": "urn:ngm:class:university-of-sheffield",
         "label": "University of Sheffield"
-      },
-      {
-        "@id": "urn:ngm:class:sheffield-hallam-university",
-        "label": "Sheffield Hallam University"
       }
     ],
     "partOf": [
       {
         "@id": "urn:ngm:class:northern-powerhouse",
         "label": "Northern Powerhouse"
-      },
-      {
-        "@id": "urn:ngm:class:south-yorkshire",
-        "label": "South Yorkshire"
       }
     ],
     "enables": [
@@ -101,10 +85,6 @@ public:: true
       {
         "@id": "urn:ngm:class:aerospace-engineering",
         "label": "Aerospace Engineering"
-      },
-      {
-        "@id": "urn:ngm:class:nuclear-engineering",
-        "label": "Nuclear Engineering"
       }
     ],
     "uses": [
@@ -127,10 +107,6 @@ public:: true
         "label": "UK Industrial Strategy"
       },
       {
-        "@id": "urn:ngm:class:catapult-network",
-        "label": "Catapult Network"
-      },
-      {
         "@id": "urn:ngm:class:regional-economic-development",
         "label": "Regional Economic Development"
       }
@@ -145,16 +121,8 @@ public:: true
         "label": "Leeds"
       },
       {
-        "@id": "urn:ngm:class:innovation-district",
-        "label": "Innovation District"
-      },
-      {
         "@id": "urn:ngm:class:industry-4-0",
         "label": "Industry 4.0"
-      },
-      {
-        "@id": "urn:ngm:class:urban-innovation-cluster",
-        "label": "Urban Innovation Cluster"
       }
     ],
     "bridgesTo": [

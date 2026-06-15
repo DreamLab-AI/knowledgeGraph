@@ -148,10 +148,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:automated-delivery",
-        "label": "Automated Delivery"
-      },
-      {
         "@id": "urn:ngm:class:environmental-monitoring",
         "label": "Environmental Monitoring"
       },
@@ -161,10 +157,6 @@ public:: true
       }
     ],
     "partOf": [
-      {
-        "@id": "urn:ngm:class:aerial-vehicle",
-        "label": "Aerial Vehicle"
-      },
       {
         "@id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous System"

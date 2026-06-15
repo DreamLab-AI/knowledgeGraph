@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:hazard-and-risk-assessment",
+        "id": "urn:ngm:class:risk-assessment",
         "label": "Hazard and Risk Assessment"
       },
       {
@@ -35,34 +35,18 @@
       {
         "id": "urn:ngm:class:ce-marking",
         "label": "CE Marking"
-      },
-      {
-        "id": "urn:ngm:class:machinery-directive",
-        "label": "Machinery Directive"
-      },
-      {
-        "id": "urn:ngm:class:safety-validation",
-        "label": "Safety Validation"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:failure-mode-and-effects-analysis",
         "label": "Failure Mode and Effects Analysis"
-      },
-      {
-        "id": "urn:ngm:class:diagnostic-coverage",
-        "label": "Diagnostic Coverage"
       }
     ],
     "implements": [
       {
         "id": "urn:ngm:class:iec-61508",
         "label": "IEC 61508"
-      },
-      {
-        "id": "urn:ngm:class:risk-reduction",
-        "label": "Risk Reduction"
       }
     ],
     "contrastsWith": [
@@ -81,34 +65,17 @@
         "label": "IndustrialAutomation"
       },
       {
-        "id": "urn:ngm:class:collaborative-robot",
+        "id": "urn:ngm:class:collaborative-systems-modality-robot",
         "label": "Collaborative Robot"
       }
     ],
-    "uses": [
-      {
-        "id": "urn:ngm:class:programmable-electronic-system",
-        "label": "Programmable Electronic System"
-      },
-      {
-        "id": "urn:ngm:class:safety-related-control-system",
-        "label": "Safety-Related Control System"
-      },
-      {
-        "id": "urn:ngm:class:probability-of-failure-on-demand",
-        "label": "Probability of Failure on Demand"
-      }
-    ],
+    "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [
       {
         "id": "urn:ngm:class:functional-safety",
         "label": "Functional Safety"
-      },
-      {
-        "id": "urn:ngm:class:machinery-safety",
-        "label": "Machinery Safety"
       }
     ],
     "relatedTo": [
@@ -121,7 +88,7 @@
         "label": "ISO 12100"
       },
       {
-        "id": "urn:ngm:class:hardware-fault-tolerance",
+        "id": "urn:ngm:class:fault-tolerance",
         "label": "Hardware Fault Tolerance"
       },
       {

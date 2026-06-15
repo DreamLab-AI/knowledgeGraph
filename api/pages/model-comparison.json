@@ -16,23 +16,10 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:ablation-study",
-        "label": "Ablation Study"
-      },
-      {
-        "id": "urn:ngm:class:baseline-model",
-        "label": "Baseline Model"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:evaluation-dataset",
-        "label": "Evaluation Dataset"
-      },
-      {
-        "id": "urn:ngm:class:performance-metric",
+        "id": "urn:ngm:class:performance-metrics",
         "label": "Performance Metric"
       }
     ],
@@ -62,7 +49,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:pareto-optimality",
+        "id": "urn:ngm:class:optimality",
         "label": "Pareto Optimality"
       },
       {
@@ -102,19 +89,10 @@
       {
         "id": "urn:ngm:class:statistical-significance-testing",
         "label": "Statistical Significance Testing"
-      },
-      {
-        "id": "urn:ngm:class:held-out-test-set",
-        "label": "Held-Out Test Set"
       }
     ],
     "supports": [],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:helm-holistic-evaluation-of-language-models",
-        "label": "HELM Holistic Evaluation of Language Models"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
@@ -132,10 +110,6 @@
       {
         "id": "urn:ngm:class:reproducibility",
         "label": "Reproducibility"
-      },
-      {
-        "id": "urn:ngm:class:benchmark-contamination",
-        "label": "Benchmark Contamination"
       },
       {
         "id": "urn:ngm:class:leaderboard",

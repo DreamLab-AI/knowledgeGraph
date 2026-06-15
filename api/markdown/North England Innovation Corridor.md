@@ -62,52 +62,117 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:manchester-tech-cluster", "label": "Manchester Tech Cluster"},
-      {"@id": "urn:ngm:class:leeds-digital-hub", "label": "Leeds Digital Hub"},
-      {"@id": "urn:ngm:class:sheffield-advanced-manufacturing", "label": "Sheffield Advanced Manufacturing"},
-      {"@id": "urn:ngm:class:liverpool-smart-cities", "label": "Liverpool Smart Cities"},
-      {"@id": "urn:ngm:class:newcastle-ai-and-health-innovation", "label": "Newcastle AI & Health Innovation"}
+      {
+        "@id": "urn:ngm:class:manchester-tech-cluster",
+        "label": "Manchester Tech Cluster"
+      },
+      {
+        "@id": "urn:ngm:class:leeds-digital-hub",
+        "label": "Leeds Digital Hub"
+      },
+      {
+        "@id": "urn:ngm:class:sheffield-advanced-manufacturing",
+        "label": "Sheffield Advanced Manufacturing"
+      },
+      {
+        "@id": "urn:ngm:class:liverpool-smart-cities",
+        "label": "Liverpool Smart Cities"
+      },
+      {
+        "@id": "urn:ngm:class:newcastle-ai-and-health-innovation",
+        "label": "Newcastle AI & Health Innovation"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:uk-tech-ecosystem", "label": "UK Tech Ecosystem"},
-      {"@id": "urn:ngm:class:northern-powerhouse", "label": "Northern Powerhouse"}
+      {
+        "@id": "urn:ngm:class:uk-tech-ecosystem",
+        "label": "UK Tech Ecosystem"
+      },
+      {
+        "@id": "urn:ngm:class:northern-powerhouse",
+        "label": "Northern Powerhouse"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"},
-      {"@id": "urn:ngm:class:transport-connectivity", "label": "Transport Connectivity"},
-      {"@id": "urn:ngm:class:broadband-network", "label": "Broadband Network"}
+      {
+        "@id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:broadband-network",
+        "label": "Broadband Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:regional-economic-development", "label": "Regional Economic Development"},
-      {"@id": "urn:ngm:class:technology-transfer", "label": "Technology Transfer"},
-      {"@id": "urn:ngm:class:startup-ecosystem", "label": "Startup Ecosystem"}
+      {
+        "@id": "urn:ngm:class:regional-economic-development",
+        "label": "Regional Economic Development"
+      },
+      {
+        "@id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:startup-ecosystem",
+        "label": "Startup Ecosystem"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:research-university", "label": "Research University"},
-      {"@id": "urn:ngm:class:public-investment", "label": "Public Investment"},
-      {"@id": "urn:ngm:class:nhs-digital-transformation", "label": "NHS Digital Transformation"}
+      {
+        "@id": "urn:ngm:class:research-university",
+        "label": "Research University"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:smart-city-platform", "label": "Smart City Platform"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
+      {
+        "@id": "urn:ngm:class:smart-city",
+        "label": "Smart City Platform"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:advanced-manufacturing", "label": "Advanced Manufacturing"},
-      {"@id": "urn:ngm:class:health-innovation", "label": "Health Innovation"},
-      {"@id": "urn:ngm:class:fintech", "label": "Fintech"}
+      {
+        "@id": "urn:ngm:class:advanced-manufacturing",
+        "label": "Advanced Manufacturing"
+      },
+      {
+        "@id": "urn:ngm:class:fintech",
+        "label": "Fintech"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-economy", "label": "Digital Economy"},
-      {"@id": "urn:ngm:class:productivity-gap", "label": "Productivity Gap"},
-      {"@id": "urn:ngm:class:uk-industrial-strategy", "label": "UK Industrial Strategy"}
+      {
+        "@id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      },
+      {
+        "@id": "urn:ngm:class:productivity-gap",
+        "label": "Productivity Gap"
+      },
+      {
+        "@id": "urn:ngm:class:uk-industrial-strategy",
+        "label": "UK Industrial Strategy"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:northern-powerhouse-innovation-network", "label": "Northern Powerhouse Innovation Network"}
+    {
+      "@id": "urn:ngm:class:northern-powerhouse-innovation-network",
+      "label": "Northern Powerhouse Innovation Network"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

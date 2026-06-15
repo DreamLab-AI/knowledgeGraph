@@ -18,25 +18,17 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:latency-measurement",
+        "id": "urn:ngm:class:latency",
         "label": "Latency Measurement"
       },
       {
-        "id": "urn:ngm:class:throughput-measurement",
-        "label": "Throughput Measurement"
-      },
-      {
-        "id": "urn:ngm:class:resource-utilisation",
+        "id": "urn:ngm:class:resource-efficiency",
         "label": "Resource Utilisation"
-      },
-      {
-        "id": "urn:ngm:class:workload-profiling",
-        "label": "Workload Profiling"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:load-testing",
+        "id": "urn:ngm:class:testing",
         "label": "Load Testing"
       },
       {
@@ -56,10 +48,6 @@
       {
         "id": "urn:ngm:class:capacity-planning",
         "label": "Capacity Planning"
-      },
-      {
-        "id": "urn:ngm:class:vendor-evaluation",
-        "label": "Vendor Evaluation"
       }
     ],
     "dependsOn": [
@@ -74,7 +62,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:spec-benchmarks",
+        "id": "urn:ngm:class:benchmarks",
         "label": "SPEC Benchmarks"
       },
       {
@@ -94,7 +82,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:ai-model-evaluation",
+        "id": "urn:ngm:class:model-evaluation",
         "label": "AI Model Evaluation"
       },
       {
@@ -115,16 +103,8 @@
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:spec",
-        "label": "SPEC"
-      },
-      {
         "id": "urn:ngm:class:mlcommons",
         "label": "MLCommons"
-      },
-      {
-        "id": "urn:ngm:class:tpc",
-        "label": "TPC"
       }
     ],
     "partOf": [

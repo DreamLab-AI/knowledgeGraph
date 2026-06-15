@@ -22,10 +22,6 @@
         "label": "Sanctions Screening"
       },
       {
-        "id": "urn:ngm:class:asset-freezing",
-        "label": "Asset Freezing"
-      },
-      {
         "id": "urn:ngm:class:compliance-audit-trail",
         "label": "Compliance Audit Trail"
       }
@@ -50,10 +46,6 @@
         "label": "AML KYC Compliance"
       },
       {
-        "id": "urn:ngm:class:transaction-blocking",
-        "label": "Transaction Blocking"
-      },
-      {
         "id": "urn:ngm:class:regulatory-reporting",
         "label": "Regulatory Reporting"
       }
@@ -66,7 +58,7 @@
         "label": "Anti-Money Laundering"
       },
       {
-        "id": "urn:ngm:class:counter-terrorism-financing",
+        "id": "urn:ngm:class:counter-terrorist-financing",
         "label": "Counter-Terrorism Financing"
       }
     ],
@@ -86,10 +78,6 @@
         "label": "Blockchain Analytics"
       },
       {
-        "id": "urn:ngm:class:fuzzy-name-matching",
-        "label": "Fuzzy Name Matching"
-      },
-      {
         "id": "urn:ngm:class:machine-learning-classifier",
         "label": "Machine Learning Classifier"
       }
@@ -103,10 +91,6 @@
       {
         "id": "urn:ngm:class:ofac",
         "label": "OFAC"
-      },
-      {
-        "id": "urn:ngm:class:un-security-council-sanctions",
-        "label": "UN Security Council Sanctions"
       }
     ],
     "partOf": [
@@ -115,20 +99,11 @@
         "label": "Financial Regulation"
       },
       {
-        "id": "urn:ngm:class:aml-cft-regime",
+        "id": "urn:ngm:class:aml",
         "label": "AML/CFT Regime"
       }
     ],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:secondary-sanctions-liability",
-        "label": "Secondary Sanctions Liability"
-      },
-      {
-        "id": "urn:ngm:class:foreign-policy-instrument",
-        "label": "Foreign Policy Instrument"
-      }
-    ]
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

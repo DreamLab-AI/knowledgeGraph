@@ -133,7 +133,7 @@ public:: true
         "label": "Deep Learning"
       },
       {
-        "@id": "urn:ngm:class:latent-space",
+        "@id": "urn:ngm:class:neural-network-latent-space",
         "label": "Latent Space"
       },
       {

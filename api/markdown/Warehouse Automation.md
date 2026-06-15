@@ -38,55 +38,125 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:autonomous-mobile-robot", "label": "Autonomous Mobile Robot"},
-      {"@id": "urn:ngm:class:automated-storage-and-retrieval-system", "label": "Automated Storage and Retrieval System"},
-      {"@id": "urn:ngm:class:warehouse-management-system", "label": "Warehouse Management System"},
-      {"@id": "urn:ngm:class:robotic-picking", "label": "Robotic Picking"},
-      {"@id": "urn:ngm:class:conveyor-system", "label": "Conveyor System"}
+      {
+        "@id": "urn:ngm:class:autonomous-mobile-robots",
+        "label": "Autonomous Mobile Robot"
+      },
+      {
+        "@id": "urn:ngm:class:warehouse-management-system",
+        "label": "Warehouse Management System"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:robot-fleet-management", "label": "Robot Fleet Management"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:fleet-management",
+        "label": "Robot Fleet Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:logistics-optimization", "label": "Logistics Optimization"},
-      {"@id": "urn:ngm:class:order-fulfilment", "label": "Order Fulfilment"},
-      {"@id": "urn:ngm:class:inventory-management", "label": "Inventory Management"}
+      {
+        "@id": "urn:ngm:class:logistics-optimization",
+        "label": "Logistics Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"},
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:enterprise-resource-planning", "label": "Enterprise Resource Planning"},
-      {"@id": "urn:ngm:class:iot-sensors", "label": "IoT Sensors"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-sensors",
+        "label": "IoT Sensors"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:manual-warehousing", "label": "Manual Warehousing"},
-      {"@id": "urn:ngm:class:human-robot-collaboration", "label": "Human-Robot Collaboration"}
+      {
+        "@id": "urn:ngm:class:human-robot-collaboration",
+        "label": "Human-Robot Collaboration"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:last-mile-delivery", "label": "Last-Mile Delivery"},
-      {"@id": "urn:ngm:class:smart-manufacturing", "label": "Smart Manufacturing"},
-      {"@id": "urn:ngm:class:demand-forecasting", "label": "Demand Forecasting"}
+      {
+        "@id": "urn:ngm:class:last-mile-delivery",
+        "label": "Last-Mile Delivery"
+      },
+      {
+        "@id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      },
+      {
+        "@id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
-      {"@id": "urn:ngm:class:grasp-planning", "label": "Grasp Planning"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:grasp-planning",
+        "label": "Grasp Planning"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:intralogistics-automation", "label": "Intralogistics Automation"},
-    {"@id": "urn:ngm:class:fulfilment-centre-automation", "label": "Fulfilment Centre Automation"}
+    {
+      "@id": "urn:ngm:class:intralogistics-automation",
+      "label": "Intralogistics Automation"
+    },
+    {
+      "@id": "urn:ngm:class:fulfilment-centre-automation",
+      "label": "Fulfilment Centre Automation"
+    }
   ],
   "quality": 0.76,
   "provenance": {

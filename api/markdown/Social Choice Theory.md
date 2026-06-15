@@ -23,52 +23,119 @@ public:: true
   "definition": "Social choice theory is the formal study of how individual preferences can be aggregated into a collective decision, examining the properties, fairness, and impossibility constraints of voting rules and welfare functions. Foundational results such as Arrow's impossibility theorem show that no rank-aggregation rule can simultaneously satisfy a small set of seemingly reasonable fairness axioms. It provides the theoretical underpinning for voting mechanism design in both political and digital governance systems.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:economics", "label": "Economics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:arrows-impossibility-theorem", "label": "Arrow's Impossibility Theorem"},
-      {"@id": "urn:ngm:class:gibbard-satterthwaite-theorem", "label": "Gibbard-Satterthwaite Theorem"},
-      {"@id": "urn:ngm:class:condorcet-method", "label": "Condorcet Method"},
-      {"@id": "urn:ngm:class:welfare-function", "label": "Welfare Function"}
+      {
+        "@id": "urn:ngm:class:arrows-impossibility-theorem",
+        "label": "Arrow's Impossibility Theorem"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:preference-aggregation", "label": "Preference Aggregation"},
-      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"}
+      {
+        "@id": "urn:ngm:class:preference-aggregation",
+        "label": "Preference Aggregation"
+      },
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:voting-mechanism", "label": "Voting Mechanism"},
-      {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"},
-      {"@id": "urn:ngm:class:quadratic-voting", "label": "Quadratic Voting"},
-      {"@id": "urn:ngm:class:ranked-choice-voting", "label": "Ranked-Choice Voting"}
+      {
+        "@id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "@id": "urn:ngm:class:ranked-choice-voting",
+        "label": "Ranked-Choice Voting"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:governance", "label": "Governance"},
-      {"@id": "urn:ngm:class:collective-decision-making", "label": "Collective Decision-Making"},
-      {"@id": "urn:ngm:class:public-choice-theory", "label": "Public Choice Theory"}
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:collective-decision-making",
+        "label": "Collective Decision-Making"
+      },
+      {
+        "@id": "urn:ngm:class:public-choice-theory",
+        "label": "Public Choice Theory"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:utility-theory", "label": "Utility Theory"},
-      {"@id": "urn:ngm:class:formal-logic", "label": "Formal Logic"}
+      {
+        "@id": "urn:ngm:class:utility-theory",
+        "label": "Utility Theory"
+      },
+      {
+        "@id": "urn:ngm:class:formal-logic",
+        "label": "Formal Logic"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:individual-rationality", "label": "Individual Rationality"},
-      {"@id": "urn:ngm:class:market-mechanism", "label": "Market Mechanism"}
+      {
+        "@id": "urn:ngm:class:individual-rationality",
+        "label": "Individual Rationality"
+      },
+      {
+        "@id": "urn:ngm:class:market-mechanism",
+        "label": "Market Mechanism"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
-      {"@id": "urn:ngm:class:decentralized-autonomous-organization", "label": "Decentralized Autonomous Organization"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:economics", "label": "Economics"},
-      {"@id": "urn:ngm:class:governance", "label": "Governance"},
-      {"@id": "urn:ngm:class:political-science", "label": "Political Science"},
-      {"@id": "urn:ngm:class:axiomatic-method", "label": "Axiomatic Method"}
+      {
+        "@id": "urn:ngm:class:economics",
+        "label": "Economics"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:political-science",
+        "label": "Political Science"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:collective-choice-theory", "label": "Collective Choice Theory"}
+    {
+      "@id": "urn:ngm:class:collective-choice-theory",
+      "label": "Collective Choice Theory"
+    }
   ],
   "quality": 0.73,
   "provenance": {

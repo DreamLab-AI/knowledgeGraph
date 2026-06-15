@@ -16,20 +16,7 @@
   "qualityScore": 0.72,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:attended-automation",
-        "label": "Attended Automation"
-      },
-      {
-        "id": "urn:ngm:class:unattended-automation",
-        "label": "Unattended Automation"
-      },
-      {
-        "id": "urn:ngm:class:bot-orchestration",
-        "label": "Bot Orchestration"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:business-process-management",
@@ -104,10 +91,6 @@
       {
         "id": "urn:ngm:class:process-mining",
         "label": "Process Mining"
-      },
-      {
-        "id": "urn:ngm:class:low-code-development",
-        "label": "Low-Code Development"
       }
     ],
     "supports": [],

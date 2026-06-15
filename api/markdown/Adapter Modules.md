@@ -75,20 +75,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:bottleneck-architecture",
-        "label": "Bottleneck Architecture"
-      },
-      {
         "@id": "urn:ngm:class:residual-connection",
         "label": "Residual Connection"
-      },
-      {
-        "@id": "urn:ngm:class:down-projection",
-        "label": "Down-Projection"
-      },
-      {
-        "@id": "urn:ngm:class:up-projection",
-        "label": "Up-Projection"
       }
     ],
     "partOf": [
@@ -141,7 +129,7 @@ public:: true
         "label": "Transfer Learning"
       },
       {
-        "@id": "urn:ngm:class:modular-neural-network",
+        "@id": "urn:ngm:class:neural-network",
         "label": "Modular Neural Network"
       }
     ],
@@ -153,17 +141,9 @@ public:: true
       {
         "@id": "urn:ngm:class:neural-network-layer",
         "label": "Neural Network Layer"
-      },
-      {
-        "@id": "urn:ngm:class:non-linearity",
-        "label": "Non-Linearity"
       }
     ],
     "supports": [
-      {
-        "@id": "urn:ngm:class:cross-lingual-transfer",
-        "label": "Cross-Lingual Transfer"
-      },
       {
         "@id": "urn:ngm:class:model-compression",
         "label": "Model Compression"
@@ -189,10 +169,6 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:adapterfusion",
-        "label": "AdapterFusion"
-      },
-      {
         "@id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
       }
@@ -203,7 +179,7 @@ public:: true
         "label": "Computer Vision"
       },
       {
-        "@id": "urn:ngm:class:multimodal-learning",
+        "@id": "urn:ngm:class:multimodal-ai-architecture-learning",
         "label": "Multimodal Learning"
       }
     ]

@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:digital-certificates",
+        "id": "urn:ngm:class:digital-certificate",
         "label": "Digital Certificates"
       },
       {
@@ -66,12 +66,8 @@
         "label": "Transport Layer Security"
       },
       {
-        "id": "urn:ngm:class:server-side-encryption",
+        "id": "urn:ngm:class:encryption",
         "label": "Server-Side Encryption"
-      },
-      {
-        "id": "urn:ngm:class:lawful-interception",
-        "label": "Lawful Interception"
       }
     ],
     "bridgesTo": [
@@ -84,13 +80,13 @@
         "label": "Decentralised Identity"
       },
       {
-        "id": "urn:ngm:class:secure-multiparty-computation",
+        "id": "urn:ngm:class:secure-multi-party-computation",
         "label": "Secure Multiparty Computation"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -112,7 +108,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:zero-knowledge-architecture",
+        "id": "urn:ngm:class:zero-knowledge",
         "label": "Zero Knowledge Architecture"
       },
       {

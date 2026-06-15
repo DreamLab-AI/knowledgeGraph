@@ -19,16 +19,8 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:message-envelope",
-        "label": "Message Envelope"
-      },
-      {
         "id": "urn:ngm:class:ontology",
         "label": "Ontology"
-      },
-      {
-        "id": "urn:ngm:class:conversation-policy",
-        "label": "Conversation Policy"
       }
     ],
     "enables": [
@@ -90,7 +82,7 @@
         "label": "Speech Act Theory"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {

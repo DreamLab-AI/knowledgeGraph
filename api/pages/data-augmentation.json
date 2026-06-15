@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:geometric-transformation",
+        "id": "urn:ngm:class:coordinate-transformation",
         "label": "Geometric Transformation"
       },
       {
@@ -26,11 +26,7 @@
         "label": "Noise Injection"
       },
       {
-        "id": "urn:ngm:class:colour-jitter",
-        "label": "Colour Jitter"
-      },
-      {
-        "id": "urn:ngm:class:mixup-augmentation",
+        "id": "urn:ngm:class:mixup",
         "label": "Mixup Augmentation"
       }
     ],
@@ -38,10 +34,6 @@
       {
         "id": "urn:ngm:class:training-dataset",
         "label": "Training Dataset"
-      },
-      {
-        "id": "urn:ngm:class:label-preserving-transformation",
-        "label": "Label-Preserving Transformation"
       }
     ],
     "enables": [
@@ -52,10 +44,6 @@
       {
         "id": "urn:ngm:class:overfitting-prevention",
         "label": "Overfitting Prevention"
-      },
-      {
-        "id": "urn:ngm:class:class-imbalance-mitigation",
-        "label": "Class Imbalance Mitigation"
       }
     ],
     "dependsOn": [

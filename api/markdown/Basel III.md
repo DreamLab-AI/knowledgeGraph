@@ -77,14 +77,6 @@ public:: true
         "label": "Liquidity Coverage Ratio"
       },
       {
-        "@id": "urn:ngm:class:net-stable-funding-ratio",
-        "label": "Net Stable Funding Ratio"
-      },
-      {
-        "@id": "urn:ngm:class:leverage-ratio",
-        "label": "Leverage Ratio"
-      },
-      {
         "@id": "urn:ngm:class:capital-conservation-buffer",
         "label": "Capital Conservation Buffer"
       }
@@ -99,10 +91,6 @@ public:: true
       {
         "@id": "urn:ngm:class:regulatory-frameworks",
         "label": "Regulatory Frameworks"
-      },
-      {
-        "@id": "urn:ngm:class:tier-1-capital",
-        "label": "Tier 1 Capital"
       },
       {
         "@id": "urn:ngm:class:stress-testing",
@@ -174,10 +162,6 @@ public:: true
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:dodd-frank-act",
-        "label": "Dodd-Frank Act"
-      },
       {
         "@id": "urn:ngm:class:countercyclical-capital-buffer",
         "label": "Countercyclical Capital Buffer"

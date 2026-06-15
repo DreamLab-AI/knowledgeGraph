@@ -55,7 +55,7 @@ public:: true
   "relations": {
     "partOf": [
       {
-        "@id": "urn:ngm:class:etsi-mec-specification-series",
+        "@id": "urn:ngm:class:etsi-mec",
         "label": "ETSI MEC Specification Series"
       },
       {
@@ -67,23 +67,19 @@ public:: true
       {
         "@id": "urn:ngm:class:mec-network-slicing-reference-architecture",
         "label": "MEC Network Slicing Reference Architecture"
-      },
-      {
-        "@id": "urn:ngm:class:mec-application-placement",
-        "label": "MEC Application Placement"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:5g-network-slicing",
+        "@id": "urn:ngm:class:network-slicing",
         "label": "5G Network Slicing"
       },
       {
-        "@id": "urn:ngm:class:mec-platform",
+        "@id": "urn:ngm:class:etsi-mec",
         "label": "MEC Platform"
       },
       {
-        "@id": "urn:ngm:class:network-function-virtualisation",
+        "@id": "urn:ngm:class:network-function-virtualization",
         "label": "Network Function Virtualisation"
       }
     ],
@@ -91,52 +87,22 @@ public:: true
       {
         "@id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
-      },
-      {
-        "@id": "urn:ngm:class:low-latency-communication",
-        "label": "Low Latency Communication"
-      },
-      {
-        "@id": "urn:ngm:class:mec-service-continuity",
-        "label": "MEC Service Continuity"
       }
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:etsi-gr-mec-002",
+        "@id": "urn:ngm:class:etsi",
         "label": "ETSI GR MEC 002"
-      },
-      {
-        "@id": "urn:ngm:class:3gpp-5g-core",
-        "label": "3GPP 5G Core"
-      },
-      {
-        "@id": "urn:ngm:class:network-slice-management",
-        "label": "Network Slice Management"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:mec-reference-architecture",
+        "@id": "urn:ngm:class:reference-architecture",
         "label": "MEC Reference Architecture"
       },
       {
         "@id": "urn:ngm:class:technical-standard",
         "label": "Technical Standard"
-      }
-    ],
-    "uses": [
-      {
-        "@id": "urn:ngm:class:nsmf",
-        "label": "Network Slice Management Function"
-      },
-      {
-        "@id": "urn:ngm:class:mepm",
-        "label": "MEC Platform Manager"
-      },
-      {
-        "@id": "urn:ngm:class:meo",
-        "label": "MEC Orchestrator"
       }
     ],
     "supports": [
@@ -145,7 +111,7 @@ public:: true
         "label": "V2X Communication"
       },
       {
-        "@id": "urn:ngm:class:industrial-iot",
+        "@id": "urn:ngm:class:industrial-io-t",
         "label": "Industrial IoT"
       },
       {
@@ -155,7 +121,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:etsi-isg-mec",
+        "@id": "urn:ngm:class:etsi-mec",
         "label": "ETSI ISG MEC"
       }
     ],
@@ -171,10 +137,6 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:etsi-gs-mec-010",
-        "label": "ETSI GS MEC 010"
-      },
-      {
         "@id": "urn:ngm:class:mobile-edge-computing",
         "label": "Mobile Edge Computing"
       },
@@ -185,7 +147,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:ai-at-the-edge",
+        "@id": "urn:ngm:class:edge-ai",
         "label": "AI at the Edge"
       },
       {

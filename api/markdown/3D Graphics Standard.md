@@ -114,11 +114,11 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:driver-implementation",
+        "@id": "urn:ngm:class:driver-software",
         "label": "Driver Implementation"
       },
       {
-        "@id": "urn:ngm:class:gpu-support",
+        "@id": "urn:ngm:class:gpu",
         "label": "GPU Support"
       }
     ],
@@ -138,7 +138,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:technical-specification",
+        "@id": "urn:ngm:class:technical-standard",
         "label": "Technical Specification"
       }
     ]

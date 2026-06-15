@@ -62,20 +62,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
-      },
-      {
-        "@id": "urn:ngm:class:stable-audio",
-        "label": "Stable Audio"
-      },
-      {
-        "@id": "urn:ngm:class:stable-video-diffusion",
-        "label": "Stable Video Diffusion"
-      },
-      {
-        "@id": "urn:ngm:class:stablelm",
-        "label": "StableLM"
       }
     ],
     "enables": [
@@ -98,7 +86,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:latent-diffusion-model",
+        "@id": "urn:ngm:class:latent-diffusion",
         "label": "Latent Diffusion Model"
       },
       {
@@ -126,11 +114,11 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:openai",
+        "@id": "urn:ngm:class:openai-research-organisation",
         "label": "OpenAI"
       },
       {
-        "@id": "urn:ngm:class:midjourney",
+        "@id": "urn:ngm:class:midjourney-text-to-image-service",
         "label": "Midjourney"
       },
       {
@@ -152,7 +140,7 @@ public:: true
         "label": "AI Safety"
       },
       {
-        "@id": "urn:ngm:class:training-data-provenance",
+        "@id": "urn:ngm:class:data-provenance",
         "label": "Training Data Provenance"
       }
     ],

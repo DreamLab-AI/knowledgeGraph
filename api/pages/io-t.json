@@ -30,7 +30,7 @@
         "label": "IoT Gateway"
       },
       {
-        "id": "urn:ngm:class:embedded-system",
+        "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded System"
       }
     ],
@@ -42,10 +42,6 @@
       {
         "id": "urn:ngm:class:device-identity",
         "label": "Device Identity"
-      },
-      {
-        "id": "urn:ngm:class:firmware-update",
-        "label": "Firmware Update"
       }
     ],
     "enables": [
@@ -126,7 +122,7 @@
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:matter-standard",
+        "id": "urn:ngm:class:matter-protocol",
         "label": "Matter Standard"
       },
       {

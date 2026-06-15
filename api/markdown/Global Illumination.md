@@ -71,52 +71,117 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:direct-illumination", "label": "Direct Illumination"},
-      {"@id": "urn:ngm:class:indirect-illumination", "label": "Indirect Illumination"},
-      {"@id": "urn:ngm:class:ambient-occlusion", "label": "Ambient Occlusion"},
-      {"@id": "urn:ngm:class:caustics", "label": "Caustics"}
+      {
+        "@id": "urn:ngm:class:direct-illumination",
+        "label": "Direct Illumination"
+      },
+      {
+        "@id": "urn:ngm:class:ambient-occlusion",
+        "label": "Ambient Occlusion"
+      },
+      {
+        "@id": "urn:ngm:class:caustics",
+        "label": "Caustics"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"}
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ray-tracing", "label": "Ray Tracing"},
-      {"@id": "urn:ngm:class:light-transport-simulation", "label": "Light Transport Simulation"},
-      {"@id": "urn:ngm:class:compute-shader", "label": "Compute Shader"}
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:light-transport-simulation",
+        "label": "Light Transport Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:photorealistic-rendering", "label": "Photorealistic Rendering"},
-      {"@id": "urn:ngm:class:colour-bleeding", "label": "Colour Bleeding"},
-      {"@id": "urn:ngm:class:soft-shadows", "label": "Soft Shadows"}
+      {
+        "@id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:soft-shadows",
+        "label": "Soft Shadows"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"},
-      {"@id": "urn:ngm:class:light-probe", "label": "Light Probe"},
-      {"@id": "urn:ngm:class:photon-mapping", "label": "Photon Mapping"},
-      {"@id": "urn:ngm:class:radiosity", "label": "Radiosity"}
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:photon-mapping",
+        "label": "Photon Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:radiosity",
+        "label": "Radiosity"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
-      {"@id": "urn:ngm:class:architectural-visualisation", "label": "Architectural Visualisation"}
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:architectural-visualisation",
+        "label": "Architectural Visualisation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rasterization", "label": "Rasterization"},
-      {"@id": "urn:ngm:class:local-illumination", "label": "Local Illumination"}
+      {
+        "@id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning-denoising", "label": "Machine Learning Denoising"},
-      {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning Denoising"
+      },
+      {
+        "@id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:subsurface-scattering", "label": "Subsurface Scattering"},
-      {"@id": "urn:ngm:class:lightmap-baking", "label": "Lightmap Baking"},
-      {"@id": "urn:ngm:class:voxel-cone-tracing", "label": "Voxel Cone Tracing"}
+      {
+        "@id": "urn:ngm:class:subsurface-scattering",
+        "label": "Subsurface Scattering"
+      },
+      {
+        "@id": "urn:ngm:class:lightmap-baking",
+        "label": "Lightmap Baking"
+      },
+      {
+        "@id": "urn:ngm:class:voxel-cone-tracing",
+        "label": "Voxel Cone Tracing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:gi-rendering", "label": "GI Rendering"},
-    {"@id": "urn:ngm:class:indirect-lighting-simulation", "label": "Indirect Lighting Simulation"}
+    {
+      "@id": "urn:ngm:class:gi-rendering",
+      "label": "GI Rendering"
+    },
+    {
+      "@id": "urn:ngm:class:indirect-lighting-simulation",
+      "label": "Indirect Lighting Simulation"
+    }
   ],
   "quality": 0.72,
   "provenance": {

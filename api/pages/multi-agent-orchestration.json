@@ -73,10 +73,6 @@
       {
         "id": "urn:ngm:class:single-agent-systems",
         "label": "Single-Agent Systems"
-      },
-      {
-        "id": "urn:ngm:class:monolithic-ai-pipeline",
-        "label": "Monolithic AI Pipeline"
       }
     ],
     "bridgesTo": [

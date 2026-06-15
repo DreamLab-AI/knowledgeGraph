@@ -362,16 +362,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:collaborative-systems-modality-automation",
-        "label": "Collaborative Automation"
-      },
-      {
         "@id": "urn:ngm:class:flexible-manufacturing",
         "label": "Flexible Manufacturing"
-      },
-      {
-        "@id": "urn:ngm:class:high-speed-assembly",
-        "label": "High Speed Assembly"
       },
       {
         "@id": "urn:ngm:class:mass-customisation",
@@ -410,7 +402,7 @@ public:: true
         "label": "EtherCAT"
       },
       {
-        "@id": "urn:ngm:class:mqtt-protocol",
+        "@id": "urn:ngm:class:mqtt",
         "label": "MQTT Protocol"
       },
       {
@@ -427,10 +419,6 @@ public:: true
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:computer-numerical-control",
-        "label": "Computer Numerical Control"
-      },
       {
         "@id": "urn:ngm:class:machine-vision",
         "label": "Machine Vision"
@@ -450,31 +438,11 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:automotive-manufacturing",
-        "label": "Automotive Manufacturing"
-      },
-      {
-        "@id": "urn:ngm:class:electronics-assembly",
-        "label": "Electronics Assembly"
-      },
-      {
-        "@id": "urn:ngm:class:food-processing-automation",
-        "label": "Food Processing Automation"
-      },
-      {
         "@id": "urn:ngm:class:logistics-automation",
         "label": "Logistics Automation"
-      },
-      {
-        "@id": "urn:ngm:class:pharmaceutical-manufacturing",
-        "label": "Pharmaceutical Manufacturing"
       }
     ],
     "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:en-60204",
-        "label": "EN 60204"
-      },
       {
         "@id": "urn:ngm:class:iec-62061",
         "label": "IEC 62061"
@@ -493,7 +461,10 @@ public:: true
       }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:manufacturing-automation", "label": "Manufacturing Automation"}
+      {
+        "@id": "urn:ngm:class:manufacturing-automation",
+        "label": "Manufacturing Automation"
+      }
     ]
   },
   "quality": 0.52,

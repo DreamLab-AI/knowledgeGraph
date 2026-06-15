@@ -88,12 +88,8 @@ public:: true
         "label": "Entropy Source"
       },
       {
-        "@id": "urn:ngm:class:cryptographically-secure-pseudorandom-number-generator",
+        "@id": "urn:ngm:class:random-number-generator",
         "label": "Cryptographically Secure Pseudorandom Number Generator"
-      },
-      {
-        "@id": "urn:ngm:class:deterministic-random-bit-generator",
-        "label": "Deterministic Random Bit Generator"
       }
     ],
     "partOf": [
@@ -110,10 +106,6 @@ public:: true
       {
         "@id": "urn:ngm:class:entropy-source",
         "label": "Entropy Source"
-      },
-      {
-        "@id": "urn:ngm:class:seed-material",
-        "label": "Seed Material"
       }
     ],
     "enables": [
@@ -140,7 +132,7 @@ public:: true
         "label": "Verifiable Random Function"
       },
       {
-        "@id": "urn:ngm:class:nist-sp-800-90a",
+        "@id": "urn:ngm:class:nist",
         "label": "NIST SP 800-90A"
       }
     ],
@@ -155,10 +147,6 @@ public:: true
       }
     ],
     "supports": [
-      {
-        "@id": "urn:ngm:class:private-key-generation",
-        "label": "Private Key Generation"
-      },
       {
         "@id": "urn:ngm:class:nonce",
         "label": "Nonce"
@@ -176,12 +164,8 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:true-random-number-generator",
+        "@id": "urn:ngm:class:random-number-generator",
         "label": "True Random Number Generator"
-      },
-      {
-        "@id": "urn:ngm:class:pseudorandom-number-generator",
-        "label": "Pseudorandom Number Generator"
       }
     ],
     "bridgesTo": [

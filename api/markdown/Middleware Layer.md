@@ -45,62 +45,153 @@ alias:: MiddlewareLayer
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
-      {"@id": "urn:ngm:class:message-broker", "label": "Message Broker"},
-      {"@id": "urn:ngm:class:json-data-interchange-format-rpc", "label": "JSON-RPC"},
-      {"@id": "urn:ngm:class:price-oracle", "label": "Price Oracle"},
-      {"@id": "urn:ngm:class:service-mesh", "label": "Service Mesh"},
-      {"@id": "urn:ngm:class:event-bus", "label": "Event Bus"}
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-rpc",
+        "label": "JSON-RPC"
+      },
+      {
+        "@id": "urn:ngm:class:price-oracle",
+        "label": "Price Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
-      {"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"}
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
-      {"@id": "urn:ngm:class:application-programming-interface", "label": "Application Programming Interface"}
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:application-programming-interface",
+        "label": "Application Programming Interface"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"},
-      {"@id": "urn:ngm:class:microservices", "label": "Microservices"},
-      {"@id": "urn:ngm:class:scalability", "label": "Scalability"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:protocol-layer", "label": "Protocol Layer"},
-      {"@id": "urn:ngm:class:transport-layer", "label": "Transport Layer"}
+      {
+        "@id": "urn:ngm:class:protocol-layer",
+        "label": "Protocol Layer"
+      },
+      {
+        "@id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:service-oriented-architecture", "label": "Service Oriented Architecture"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"}
+      {
+        "@id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service Oriented Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:remote-procedure-call", "label": "Remote Procedure Call"},
-      {"@id": "urn:ngm:class:publish-subscribe-pattern", "label": "Publish-Subscribe Pattern"},
-      {"@id": "urn:ngm:class:load-balancing", "label": "Load Balancing"}
+      {
+        "@id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      },
+      {
+        "@id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:application-layer", "label": "Application Layer"},
-      {"@id": "urn:ngm:class:decentralised-application", "label": "Decentralised Application"}
+      {
+        "@id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:protocol-layer", "label": "Protocol Layer"},
-      {"@id": "urn:ngm:class:application-layer", "label": "Application Layer"}
+      {
+        "@id": "urn:ngm:class:protocol-layer",
+        "label": "Protocol Layer"
+      },
+      {
+        "@id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:oracle-network", "label": "Oracle Network"},
-      {"@id": "urn:ngm:class:machine-learning-inference", "label": "Machine Learning Inference"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Machine Learning Inference"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:abstraction-layer", "label": "Abstraction Layer"},
-      {"@id": "urn:ngm:class:integration-platform", "label": "Integration Platform"},
-      {"@id": "urn:ngm:class:enterprise-service-bus", "label": "Enterprise Service Bus"}
+      {
+        "@id": "urn:ngm:class:abstraction-layer",
+        "label": "Abstraction Layer"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-service-bus",
+        "label": "Enterprise Service Bus"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:integration-layer", "label": "Integration Layer"},
-    {"@id": "urn:ngm:class:middleware-tier", "label": "Middleware Tier"}
+    {
+      "@id": "urn:ngm:class:integration-layer",
+      "label": "Integration Layer"
+    },
+    {
+      "@id": "urn:ngm:class:middleware-tier",
+      "label": "Middleware Tier"
+    }
   ],
   "quality": 0.74,
   "provenance": {

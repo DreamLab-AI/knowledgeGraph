@@ -158,33 +158,17 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:compliance-validation-engine",
-        "label": "Compliance Validation Engine"
-      },
-      {
-        "@id": "urn:ngm:class:distribution-mechanism",
-        "label": "Distribution Mechanism"
-      },
-      {
-        "@id": "urn:ngm:class:investor-registry",
-        "label": "Investor Registry"
-      },
-      {
-        "@id": "urn:ngm:class:token-issuance-contract",
-        "label": "Token Issuance Contract"
-      },
-      {
         "@id": "urn:ngm:class:secondary-market-integration",
         "label": "Secondary Market Integration"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:custody-solution",
+        "@id": "urn:ngm:class:custody",
         "label": "Custody Solution"
       },
       {
-        "@id": "urn:ngm:class:kyc-aml-system",
+        "@id": "urn:ngm:class:kyc-aml",
         "label": "KYC/AML System"
       },
       {
@@ -202,24 +186,12 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:24-7-trading",
-        "label": "24/7 Trading"
-      },
-      {
         "@id": "urn:ngm:class:automated-compliance",
         "label": "Automated Compliance"
       },
       {
         "@id": "urn:ngm:class:fractional-ownership",
         "label": "Fractional Ownership"
-      },
-      {
-        "@id": "urn:ngm:class:global-capital-access",
-        "label": "Global Capital Access"
-      },
-      {
-        "@id": "urn:ngm:class:programmable-securities",
-        "label": "Programmable Securities"
       }
     ],
     "partOf": [

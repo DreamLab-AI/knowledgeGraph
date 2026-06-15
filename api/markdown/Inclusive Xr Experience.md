@@ -70,7 +70,7 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:equitable-metaverse-access",
+        "@id": "urn:ngm:class:equitable-access",
         "label": "Equitable Metaverse Access"
       }
     ]

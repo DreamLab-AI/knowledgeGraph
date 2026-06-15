@@ -50,20 +50,12 @@
         "label": "Scalability"
       },
       {
-        "id": "urn:ngm:class:time-travel-debugging",
-        "label": "Time Travel Debugging"
-      },
-      {
         "id": "urn:ngm:class:data-consistency",
         "label": "Data Consistency"
       }
     ],
     "dependsOn": [],
     "implements": [
-      {
-        "id": "urn:ngm:class:unidirectional-data-flow",
-        "label": "Unidirectional Data Flow"
-      },
       {
         "id": "urn:ngm:class:eventual-consistency",
         "label": "Eventual Consistency"
@@ -101,10 +93,6 @@
       {
         "id": "urn:ngm:class:consensus-protocol",
         "label": "Consensus Protocol"
-      },
-      {
-        "id": "urn:ngm:class:immutable-data-structure",
-        "label": "Immutable Data Structure"
       }
     ],
     "supports": [],
@@ -128,12 +116,8 @@
         "label": "CAP Theorem"
       },
       {
-        "id": "urn:ngm:class:raft-algorithm",
+        "id": "urn:ngm:class:raft",
         "label": "Raft Algorithm"
-      },
-      {
-        "id": "urn:ngm:class:redux",
-        "label": "Redux"
       }
     ]
   },

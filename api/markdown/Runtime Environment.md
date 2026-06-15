@@ -48,53 +48,119 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:memory-management", "label": "Memory Management"},
-      {"@id": "urn:ngm:class:garbage-collector", "label": "Garbage Collector"},
-      {"@id": "urn:ngm:class:just-in-time-compiler", "label": "Just-In-Time Compiler"},
-      {"@id": "urn:ngm:class:standard-library", "label": "Standard Library"}
+      {
+        "@id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      },
+      {
+        "@id": "urn:ngm:class:compiler",
+        "label": "Just-In-Time Compiler"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:operating-system", "label": "Operating System"},
-      {"@id": "urn:ngm:class:hardware-abstraction-layer", "label": "Hardware Abstraction Layer"}
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-abstraction-layer",
+        "label": "Hardware Abstraction Layer"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:scripting-language", "label": "Scripting Language"},
-      {"@id": "urn:ngm:class:containerisation", "label": "Containerisation"},
-      {"@id": "urn:ngm:class:serverless-computing", "label": "Serverless Computing"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:scripting-language",
+        "label": "Scripting Language"
+      },
+      {
+        "@id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "@id": "urn:ngm:class:serverless-architecture",
+        "label": "Serverless Computing"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:web-assembly", "label": "WebAssembly"},
-      {"@id": "urn:ngm:class:virtual-machine", "label": "Virtual Machine"},
-      {"@id": "urn:ngm:class:application-programming-interface", "label": "Application Programming Interface"}
+      {
+        "@id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:application-programming-interface",
+        "label": "Application Programming Interface"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:cross-platform-interoperability", "label": "Cross-Platform Interoperability"},
-      {"@id": "urn:ngm:class:3-d-rendering-engine", "label": "3D Rendering Engine"},
-      {"@id": "urn:ngm:class:on-device-inference", "label": "On-Device Inference"},
-      {"@id": "urn:ngm:class:debugging", "label": "Debugging"}
+      {
+        "@id": "urn:ngm:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:on-device-inference",
+        "label": "On-Device Inference"
+      },
+      {
+        "@id": "urn:ngm:class:debugging",
+        "label": "Debugging"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:instruction-set-architecture", "label": "Instruction Set Architecture"},
-      {"@id": "urn:ngm:class:process-scheduler", "label": "Process Scheduler"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:compile-time-environment", "label": "Compile-Time Environment"},
-      {"@id": "urn:ngm:class:bare-metal-execution", "label": "Bare-Metal Execution"}
+      {
+        "@id": "urn:ngm:class:instruction-set-architecture",
+        "label": "Instruction Set Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:process-scheduler",
+        "label": "Process Scheduler"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning-inference", "label": "Machine Learning Inference"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Machine Learning Inference"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:software-development-kit", "label": "Software Development Kit"},
-      {"@id": "urn:ngm:class:execution-model", "label": "Execution Model"}
+      {
+        "@id": "urn:ngm:class:software-development-kit",
+        "label": "Software Development Kit"
+      },
+      {
+        "@id": "urn:ngm:class:execution-model",
+        "label": "Execution Model"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:execution-environment", "label": "Execution Environment"},
-    {"@id": "urn:ngm:class:managed-runtime", "label": "Managed Runtime"}
+    {
+      "@id": "urn:ngm:class:execution-environment",
+      "label": "Execution Environment"
+    },
+    {
+      "@id": "urn:ngm:class:managed-runtime",
+      "label": "Managed Runtime"
+    }
   ],
   "quality": 0.74,
   "provenance": {

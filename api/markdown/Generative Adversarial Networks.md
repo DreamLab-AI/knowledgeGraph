@@ -446,10 +446,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:adversarial-loss",
-        "label": "Adversarial Loss"
-      },
-      {
         "@id": "urn:ngm:class:discriminator-network",
         "label": "Discriminator Network"
       },
@@ -528,24 +524,12 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:implicit-density-estimation",
-        "label": "Implicit Density Estimation"
-      },
-      {
-        "@id": "urn:ngm:class:jensen-shannon-divergence-minimisation",
-        "label": "Jensen-Shannon Divergence Minimisation"
-      },
-      {
-        "@id": "urn:ngm:class:minimax-optimisation",
+        "@id": "urn:ngm:class:minimax-algorithm",
         "label": "Minimax Optimisation"
       },
       {
         "@id": "urn:ngm:class:variational-inference",
         "label": "Variational Inference"
-      },
-      {
-        "@id": "urn:ngm:class:wasserstein-distance-minimisation",
-        "label": "Wasserstein Distance Minimisation"
       }
     ],
     "uses": [
@@ -558,16 +542,8 @@ public:: true
         "label": "Convolution"
       },
       {
-        "@id": "urn:ngm:class:gradient-penalty",
-        "label": "Gradient Penalty"
-      },
-      {
         "@id": "urn:ngm:class:re-lu-activation",
         "label": "ReLU Activation"
-      },
-      {
-        "@id": "urn:ngm:class:spectral-normalisation",
-        "label": "Spectral Normalisation"
       },
       {
         "@id": "urn:ngm:class:batch-normalisation",
@@ -608,10 +584,6 @@ public:: true
       {
         "@id": "urn:ngm:class:medical-image-synthesis",
         "label": "Medical Image Synthesis"
-      },
-      {
-        "@id": "urn:ngm:class:privacy-preserving-synthesis",
-        "label": "Privacy-Preserving Synthesis"
       },
       {
         "@id": "urn:ngm:class:scientific-simulation",

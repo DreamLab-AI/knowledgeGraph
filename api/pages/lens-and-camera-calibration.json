@@ -34,10 +34,6 @@
         "label": "Camera Intrinsics"
       },
       {
-        "id": "urn:ngm:class:ch-ar-uco-board",
-        "label": "ChArUco Board"
-      },
-      {
         "id": "urn:ngm:class:extrinsic-parameters",
         "label": "Extrinsic Parameters"
       },
@@ -72,7 +68,7 @@
         "label": "Linear Algebra"
       },
       {
-        "id": "urn:ngm:class:nonlinear-optimisation",
+        "id": "urn:ngm:class:optimisation",
         "label": "Nonlinear Optimisation"
       },
       {
@@ -98,15 +94,11 @@
         "label": "Autonomous Driving Perception"
       },
       {
-        "id": "urn:ngm:class:metric-reconstruction",
-        "label": "Metric Reconstruction"
-      },
-      {
         "id": "urn:ngm:class:robotic-grasping",
         "label": "Robotic Grasping"
       },
       {
-        "id": "urn:ngm:class:stereo-depth-estimation",
+        "id": "urn:ngm:class:depth-estimation",
         "label": "Stereo Depth Estimation"
       },
       {
@@ -133,28 +125,12 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:brown-conrady-distortion-model",
-        "label": "Brown-Conrady Distortion Model"
-      },
-      {
-        "id": "urn:ngm:class:direct-linear-transform",
-        "label": "Direct Linear Transform"
-      },
-      {
-        "id": "urn:ngm:class:dual-quaternion-hand-eye-calibration",
+        "id": "urn:ngm:class:calibration",
         "label": "Dual Quaternion Hand-Eye Calibration"
       },
       {
-        "id": "urn:ngm:class:kannala-brandt-fisheye-model",
-        "label": "Kannala-Brandt Fisheye Model"
-      },
-      {
-        "id": "urn:ngm:class:levenberg-marquardt-optimisation",
+        "id": "urn:ngm:class:optimisation",
         "label": "Levenberg-Marquardt Optimisation"
-      },
-      {
-        "id": "urn:ngm:class:zhang-calibration-method",
-        "label": "Zhang Calibration Method"
       }
     ],
     "contrastsWith": [],
@@ -170,24 +146,12 @@
         "label": "April Tag"
       },
       {
-        "id": "urn:ngm:class:ar-uco",
-        "label": "ArUco"
-      },
-      {
         "id": "urn:ngm:class:colmap",
         "label": "COLMAP"
       },
       {
-        "id": "urn:ngm:class:fiducial-markers",
-        "label": "Fiducial Markers"
-      },
-      {
         "id": "urn:ngm:class:imu-sensors",
         "label": "IMU Sensors"
-      },
-      {
-        "id": "urn:ngm:class:kalibr",
-        "label": "Kalibr"
       },
       {
         "id": "urn:ngm:class:open-cv",
@@ -208,11 +172,11 @@
         "label": "Autonomous Vehicle"
       },
       {
-        "id": "urn:ngm:class:drone-photogrammetry",
+        "id": "urn:ngm:class:photogrammetry",
         "label": "Drone Photogrammetry"
       },
       {
-        "id": "urn:ngm:class:industrial-machine-vision",
+        "id": "urn:ngm:class:machine-vision",
         "label": "Industrial Machine Vision"
       },
       {
@@ -234,19 +198,19 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:ieee-transactions-on-pattern-analysis-and-machine-intelligence",
+        "id": "urn:ngm:class:ieee",
         "label": "IEEE Transactions on Pattern Analysis and Machine Intelligence"
       },
       {
-        "id": "urn:ngm:class:iso-10110-optics-standards",
+        "id": "urn:ngm:class:iso-standards",
         "label": "ISO 10110 Optics Standards"
       },
       {
-        "id": "urn:ngm:class:iso-tc172-optics-standardisation",
+        "id": "urn:ngm:class:iso",
         "label": "ISO TC172 Optics Standardisation"
       },
       {
-        "id": "urn:ngm:class:open-cv-documentation",
+        "id": "urn:ngm:class:open-cv",
         "label": "OpenCV Documentation"
       }
     ],
@@ -257,15 +221,15 @@
         "label": "Bundle Adjustment"
       },
       {
-        "id": "urn:ngm:class:imu-preintegration",
+        "id": "urn:ngm:class:imu",
         "label": "IMU Preintegration"
       },
       {
-        "id": "urn:ngm:class:lidar-calibration",
+        "id": "urn:ngm:class:lidar",
         "label": "Lidar Calibration"
       },
       {
-        "id": "urn:ngm:class:photometric-calibration",
+        "id": "urn:ngm:class:calibration",
         "label": "Photometric Calibration"
       },
       {

@@ -23,52 +23,141 @@ public:: true
   "definition": "Privacy Enhancing Technologies (PETs) are a family of cryptographic and systems-engineering techniques designed to minimise the collection, use, and disclosure of personal data while still enabling legitimate data processing for analytics, machine learning, and regulatory compliance. The family encompasses Zero-Knowledge Proofs, Differential Privacy, Homomorphic Encryption, Secure Multi-Party Computation, Trusted Execution Environments, anonymisation pipelines, pseudonymisation, and synthetic data generation. PETs implement the data-minimisation and privacy-by-design principles mandated by frameworks such as GDPR and the UK Data Protection Act 2018. They are increasingly deployed by financial institutions, healthcare providers, and government agencies to unlock the utility of sensitive data without exposing individual records, and are recognised by the UK ICO, European Data Protection Board, and US NIST as essential infrastructure for trustworthy data ecosystems.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:privacy-preserving-technology", "label": "Privacy Preserving Technology"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:privacy-preserving-technology",
+      "label": "Privacy Preserving Technology"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:information-security", "label": "Information Security"}
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
-      {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"},
-      {"@id": "urn:ngm:class:secure-multi-party-computation", "label": "Secure Multi-Party Computation"},
-      {"@id": "urn:ngm:class:trusted-execution-environment", "label": "Trusted Execution Environment"},
-      {"@id": "urn:ngm:class:pseudonymisation", "label": "Pseudonymisation"},
-      {"@id": "urn:ngm:class:synthetic-data", "label": "Synthetic Data"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "@id": "urn:ngm:class:pseudonymisation",
+        "label": "Pseudonymisation"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:privacy-preserving-analytics", "label": "Privacy Preserving Analytics"},
-      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:confidential-computing", "label": "Confidential Computing"}
+      {
+        "@id": "urn:ngm:class:privacy-preserving-analytics",
+        "label": "Privacy Preserving Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:data-protection-regulation", "label": "Data Protection Regulation"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+      {
+        "@id": "urn:ngm:class:data-protection-regulation",
+        "label": "Data Protection Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist", "label": "NIST"},
-      {"@id": "urn:ngm:class:iso-iec-29101", "label": "ISO/IEC 29101"}
+      {
+        "@id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec",
+        "label": "ISO/IEC 29101"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:surveillance-technology", "label": "Surveillance Technology"}
+      {
+        "@id": "urn:ngm:class:surveillance-technology",
+        "label": "Surveillance Technology"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:pets", "label": "PETs"},
-    {"@id": "urn:ngm:class:privacy-preserving-computation", "label": "Privacy Preserving Computation"}
+    {
+      "@id": "urn:ngm:class:pets",
+      "label": "PETs"
+    },
+    {
+      "@id": "urn:ngm:class:privacy-preserving-computation",
+      "label": "Privacy Preserving Computation"
+    }
   ],
   "quality": 0.72,
   "provenance": {

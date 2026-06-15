@@ -92,10 +92,6 @@
       {
         "id": "urn:ngm:class:decentralised-governance",
         "label": "Decentralised Governance"
-      },
-      {
-        "id": "urn:ngm:class:standards-process",
-        "label": "Standards Process"
       }
     ],
     "contrastsWith": [
@@ -126,10 +122,6 @@
       {
         "id": "urn:ngm:class:github",
         "label": "GitHub"
-      },
-      {
-        "id": "urn:ngm:class:miner-signalling",
-        "label": "Miner Signalling"
       },
       {
         "id": "urn:ngm:class:user-activated-soft-fork",

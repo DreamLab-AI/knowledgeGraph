@@ -479,24 +479,12 @@ alias:: ForceControl
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:compliance-frame",
+        "@id": "urn:ngm:class:compliance-framework",
         "label": "Compliance Frame"
       },
       {
         "@id": "urn:ngm:class:control-law",
         "label": "Control Law"
-      },
-      {
-        "@id": "urn:ngm:class:joint-torque-sensor",
-        "label": "Joint Torque Sensor"
-      },
-      {
-        "@id": "urn:ngm:class:manipulator-jacobian",
-        "label": "Manipulator Jacobian"
-      },
-      {
-        "@id": "urn:ngm:class:reference-wrench",
-        "label": "Reference Wrench"
       },
       {
         "@id": "urn:ngm:class:end-effector",
@@ -517,15 +505,11 @@ alias:: ForceControl
         "label": "Coordinate Transformation"
       },
       {
-        "@id": "urn:ngm:class:force-measurement",
-        "label": "Force Measurement"
-      },
-      {
         "@id": "urn:ngm:class:real-time-computation",
         "label": "Real-Time Computation"
       },
       {
-        "@id": "urn:ngm:class:robot-dynamics-model",
+        "@id": "urn:ngm:class:robot-dynamics",
         "label": "Robot Dynamics Model"
       },
       {
@@ -543,50 +527,14 @@ alias:: ForceControl
         "label": "Compliant Manipulation"
       },
       {
-        "@id": "urn:ngm:class:deburring",
-        "label": "Deburring"
-      },
-      {
-        "@id": "urn:ngm:class:peg-in-hole-assembly",
-        "label": "Peg-in-Hole Assembly"
-      },
-      {
-        "@id": "urn:ngm:class:polishing",
-        "label": "Polishing"
-      },
-      {
         "@id": "urn:ngm:class:safe-human-robot-interaction",
         "label": "Safe Human-Robot Interaction"
-      },
-      {
-        "@id": "urn:ngm:class:surgical-suturing",
-        "label": "Surgical Suturing"
-      },
-      {
-        "@id": "urn:ngm:class:tactile-exploration",
-        "label": "Tactile Exploration"
       }
     ],
     "implements": [
       {
         "@id": "urn:ngm:class:computed-torque-control",
         "label": "Computed Torque Control"
-      },
-      {
-        "@id": "urn:ngm:class:explicit-force-control",
-        "label": "Explicit Force Control"
-      },
-      {
-        "@id": "urn:ngm:class:hybrid-position-force-control",
-        "label": "Hybrid Position-Force Control"
-      },
-      {
-        "@id": "urn:ngm:class:implicit-force-control",
-        "label": "Implicit Force Control"
-      },
-      {
-        "@id": "urn:ngm:class:operational-space-control",
-        "label": "Operational Space Control"
       },
       {
         "@id": "urn:ngm:class:admittance-control",
@@ -607,15 +555,11 @@ alias:: ForceControl
         "label": "Quadratic Programming"
       },
       {
-        "@id": "urn:ngm:class:remote-centre-of-compliance",
-        "label": "Remote Centre of Compliance"
-      },
-      {
         "@id": "urn:ngm:class:series-elastic-actuator",
         "label": "Series Elastic Actuator"
       },
       {
-        "@id": "urn:ngm:class:six-axis-force-torque-sensor",
+        "@id": "urn:ngm:class:force-torque-sensor",
         "label": "Six-Axis Force Torque Sensor"
       },
       {
@@ -623,7 +567,7 @@ alias:: ForceControl
         "label": "Variable Stiffness Actuator"
       },
       {
-        "@id": "urn:ngm:class:whole-body-controller",
+        "@id": "urn:ngm:class:whole-body-control",
         "label": "Whole-Body Controller"
       }
     ],
@@ -659,35 +603,15 @@ alias:: ForceControl
         "label": "Collaborative Robotics"
       },
       {
-        "@id": "urn:ngm:class:humanoid-locomotion",
-        "label": "Humanoid Locomotion"
-      },
-      {
-        "@id": "urn:ngm:class:industrial-assembly",
-        "label": "Industrial Assembly"
-      },
-      {
         "@id": "urn:ngm:class:rehabilitation-robotics",
         "label": "Rehabilitation Robotics"
       },
       {
-        "@id": "urn:ngm:class:robotic-polishing",
-        "label": "Robotic Polishing"
-      },
-      {
         "@id": "urn:ngm:class:surgical-robotics",
         "label": "Surgical Robotics"
-      },
-      {
-        "@id": "urn:ngm:class:telerobotics",
-        "label": "Telerobotics"
       }
     ],
     "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:humanoids-conference",
-        "label": "Humanoids Conference"
-      },
       {
         "@id": "urn:ngm:class:icra",
         "label": "ICRA"
@@ -707,10 +631,6 @@ alias:: ForceControl
       {
         "@id": "urn:ngm:class:iso-ts-15066",
         "label": "ISO TS 15066"
-      },
-      {
-        "@id": "urn:ngm:class:rss",
-        "label": "RSS"
       }
     ]
   },

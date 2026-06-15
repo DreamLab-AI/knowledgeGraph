@@ -22,7 +22,7 @@
         "label": "Tensor Core"
       },
       {
-        "id": "urn:ngm:class:cuda-kernel",
+        "id": "urn:ngm:class:cuda",
         "label": "CUDA Kernel"
       },
       {

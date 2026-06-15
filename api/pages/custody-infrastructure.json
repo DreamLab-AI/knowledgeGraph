@@ -84,7 +84,7 @@
         "label": "Traditional Securities Custody"
       },
       {
-        "id": "urn:ngm:class:distributed-key-management",
+        "id": "urn:ngm:class:key-management",
         "label": "Distributed Key Management"
       }
     ],
@@ -114,12 +114,8 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:mica-regulation",
+        "id": "urn:ngm:class:bc-0482-eu-mica-regulation",
         "label": "MiCA Regulation"
-      },
-      {
-        "id": "urn:ngm:class:occ-interpretive-letter",
-        "label": "OCC Interpretive Letter"
       }
     ],
     "partOf": [

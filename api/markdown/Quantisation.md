@@ -37,52 +37,125 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:neural-network-quantisation", "label": "Neural Network Quantisation"},
-    {"@id": "urn:ngm:class:weight-quantisation", "label": "Weight Quantisation"}
+    {
+      "@id": "urn:ngm:class:neural-network-quantisation",
+      "label": "Neural Network Quantisation"
+    },
+    {
+      "@id": "urn:ngm:class:weight-quantisation",
+      "label": "Weight Quantisation"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:post-training-quantisation", "label": "Post-Training Quantisation"},
-      {"@id": "urn:ngm:class:quantisation-aware-training", "label": "Quantisation-Aware Training"},
-      {"@id": "urn:ngm:class:mixed-precision-quantisation", "label": "Mixed-Precision Quantisation"}
+      {
+        "@id": "urn:ngm:class:post-training-quantisation",
+        "label": "Post-Training Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:quantisation-aware-training",
+        "label": "Quantisation-Aware Training"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:model-compression", "label": "Model Compression"},
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"}
+      {
+        "@id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      },
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:calibration-dataset", "label": "Calibration Dataset"},
-      {"@id": "urn:ngm:class:scale-factor", "label": "Scale Factor"}
+      {
+        "@id": "urn:ngm:class:calibration",
+        "label": "Calibration Dataset"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:inference", "label": "Inference"},
-      {"@id": "urn:ngm:class:edge-ai-accelerator", "label": "Edge AI Accelerator"},
-      {"@id": "urn:ngm:class:on-device-ai", "label": "On-Device AI"},
-      {"@id": "urn:ngm:class:large-language-model-deployment", "label": "Large Language Model Deployment"}
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai-accelerator",
+        "label": "Edge AI Accelerator"
+      },
+      {
+        "@id": "urn:ngm:class:on-device-ai",
+        "label": "On-Device AI"
+      },
+      {
+        "@id": "urn:ngm:class:model-deployment",
+        "label": "Large Language Model Deployment"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
-      {"@id": "urn:ngm:class:floating-point-arithmetic", "label": "Floating-Point Arithmetic"}
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:floating-point-arithmetic",
+        "label": "Floating-Point Arithmetic"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
-      {"@id": "urn:ngm:class:tensor-decomposition", "label": "Tensor Decomposition"}
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-decomposition",
+        "label": "Tensor Decomposition"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"},
-      {"@id": "urn:ngm:class:pruning", "label": "Pruning"},
-      {"@id": "urn:ngm:class:low-rank-factorisation", "label": "Low-Rank Factorisation"}
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "@id": "urn:ngm:class:pruning",
+        "label": "Pruning"
+      },
+      {
+        "@id": "urn:ngm:class:low-rank-adaptation",
+        "label": "Low-Rank Factorisation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-compression-for-edge", "label": "Model Compression for Edge"},
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:neural-architecture-search", "label": "Neural Architecture Search"},
-      {"@id": "urn:ngm:class:speculative-decoding", "label": "Speculative Decoding"}
+      {
+        "@id": "urn:ngm:class:model-compression-for-edge",
+        "label": "Model Compression for Edge"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
+        "@id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-signal-processing", "label": "Digital Signal Processing"},
-      {"@id": "urn:ngm:class:fixed-point-arithmetic", "label": "Fixed-Point Arithmetic"}
+      {
+        "@id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:floating-point-arithmetic",
+        "label": "Fixed-Point Arithmetic"
+      }
     ]
   },
   "quality": 0.74,

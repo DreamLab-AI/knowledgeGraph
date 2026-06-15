@@ -23,13 +23,21 @@ public:: true
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:dc-communication", "label": "Communication Technology"}
+    {
+      "@id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    }
   ],
   "relations": {
-    "enables": [{"@id": "urn:ngm:class:team-collaboration", "label": "Team Collaboration"}],
     "relatedTo": [
-      {"@id": "urn:ngm:class:instant-messaging", "label": "Instant Messaging"},
-      {"@id": "urn:ngm:class:mentions-and-notifications", "label": "Mentions and Notifications"}
+      {
+        "@id": "urn:ngm:class:instant-messaging",
+        "label": "Instant Messaging"
+      },
+      {
+        "@id": "urn:ngm:class:mentions-and-notifications",
+        "label": "Mentions and Notifications"
+      }
     ]
   },
   "quality": 0.7

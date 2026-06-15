@@ -100,10 +100,6 @@ public:: true
         "label": "Semiconductor Fabrication"
       },
       {
-        "@id": "urn:ngm:class:power-delivery-system",
-        "label": "Power Delivery System"
-      },
-      {
         "@id": "urn:ngm:class:cooling-system",
         "label": "Cooling System"
       }
@@ -180,10 +176,6 @@ public:: true
       {
         "@id": "urn:ngm:class:energy-consumption",
         "label": "Energy Consumption"
-      },
-      {
-        "@id": "urn:ngm:class:hardware-software-codesign",
-        "label": "Hardware-Software Co-Design"
       }
     ]
   },

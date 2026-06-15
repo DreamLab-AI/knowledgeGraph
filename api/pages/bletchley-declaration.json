@@ -23,7 +23,7 @@
         "label": "Frontier AI"
       },
       {
-        "id": "urn:ngm:class:foundation-models",
+        "id": "urn:ngm:class:foundation-model",
         "label": "Foundation Models"
       }
     ],
@@ -46,24 +46,11 @@
       }
     ],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:multilateral-governance",
-        "label": "Multilateral Governance"
-      },
-      {
-        "id": "urn:ngm:class:soft-law",
-        "label": "Soft Law"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
-      },
-      {
-        "id": "urn:ngm:class:binding-regulation",
-        "label": "Binding Regulation"
       }
     ],
     "bridgesTo": [
@@ -113,10 +100,6 @@
       {
         "id": "urn:ngm:class:existential-risk",
         "label": "Existential Risk"
-      },
-      {
-        "id": "urn:ngm:class:dual-use-technology",
-        "label": "Dual-Use Technology"
       },
       {
         "id": "urn:ngm:class:biosecurity",

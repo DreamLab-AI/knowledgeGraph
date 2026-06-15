@@ -22,25 +22,21 @@
         "label": "Identity Provider"
       },
       {
-        "id": "urn:ngm:class:service-provider",
+        "id": "urn:ngm:class:provider",
         "label": "Service Provider"
       },
       {
         "id": "urn:ngm:class:trust-framework",
         "label": "Trust Framework"
-      },
-      {
-        "id": "urn:ngm:class:security-assertion",
-        "label": "Security Assertion"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
-        "id": "urn:ngm:class:digital-certificates",
+        "id": "urn:ngm:class:digital-certificate",
         "label": "Digital Certificates"
       },
       {
@@ -106,7 +102,7 @@
         "label": "SAML"
       },
       {
-        "id": "urn:ngm:class:json-web-token",
+        "id": "urn:ngm:class:json-data-interchange-format-web-token",
         "label": "JSON Web Token"
       },
       {
@@ -138,7 +134,7 @@
         "label": "OASIS Standards"
       },
       {
-        "id": "urn:ngm:class:openid-foundation",
+        "id": "urn:ngm:class:open-id-foundation",
         "label": "OpenID Foundation"
       },
       {
@@ -149,11 +145,11 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:privilege-access-management",
+        "id": "urn:ngm:class:privileged-access-management",
         "label": "Privilege Access Management"
       },
       {
-        "id": "urn:ngm:class:directory-services",
+        "id": "urn:ngm:class:directory-service",
         "label": "Directory Services"
       },
       {

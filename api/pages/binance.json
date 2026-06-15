@@ -24,14 +24,6 @@
       {
         "id": "urn:ngm:class:bnb-chain",
         "label": "BNB Chain"
-      },
-      {
-        "id": "urn:ngm:class:binance-smart-chain",
-        "label": "Binance Smart Chain"
-      },
-      {
-        "id": "urn:ngm:class:binance-launchpad",
-        "label": "Binance Launchpad"
       }
     ],
     "requires": [
@@ -62,7 +54,7 @@
         "label": "Decentralised Finance"
       },
       {
-        "id": "urn:ngm:class:token-staking",
+        "id": "urn:ngm:class:staking",
         "label": "Token Staking"
       }
     ],
@@ -70,10 +62,6 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:proof-of-staked-authority",
-        "label": "Proof of Staked Authority"
       },
       {
         "id": "urn:ngm:class:smart-contract",
@@ -111,7 +99,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       },
       {
@@ -125,12 +113,7 @@
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:cryptocurrency-exchange-ecosystem",
-        "label": "Cryptocurrency Exchange Ecosystem"
-      }
-    ],
+    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:cryptocurrency",

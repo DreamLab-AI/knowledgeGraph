@@ -128,7 +128,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:risk-management-processes",
+        "@id": "urn:ngm:class:risk-management",
         "label": "risk management processes"
       },
       {
@@ -145,10 +145,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:social-licence-for-ai",
-        "label": "social licence for AI"
-      },
       {
         "@id": "urn:ngm:class:trustworthy-ai",
         "label": "Trustworthy AI"
@@ -174,7 +170,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
@@ -186,10 +182,6 @@ public:: true
       {
         "@id": "urn:ngm:class:algorithmic-bias",
         "label": "Algorithmic Bias"
-      },
-      {
-        "@id": "urn:ngm:class:ai-safety-washing",
-        "label": "AI Safety Washing"
       }
     ],
     "bridgesTo": [

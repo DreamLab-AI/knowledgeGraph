@@ -18,10 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:metaverse-agent",
-        "label": "Metaverse Agent"
-      },
-      {
         "id": "urn:ngm:class:digital-asset",
         "label": "Digital Asset"
       },
@@ -36,7 +32,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:owl-web-ontology-language",
+        "id": "urn:ngm:class:owl-2-web-ontology-language",
         "label": "OWL Web Ontology Language"
       },
       {
@@ -58,7 +54,7 @@
         "label": "Cross-Platform Interoperability"
       },
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       }
     ],
@@ -84,7 +80,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:game-engine-scene-graph",
+        "id": "urn:ngm:class:scene-graph",
         "label": "Game Engine Scene Graph"
       },
       {
@@ -162,10 +158,6 @@
       {
         "id": "urn:ngm:class:metaverse-ontology-schema",
         "label": "Metaverse Ontology Schema"
-      },
-      {
-        "id": "urn:ngm:class:ontology-conversation-with-ais",
-        "label": "Ontology Conversation with AIs"
       },
       {
         "id": "urn:ngm:class:universal-scene-description",

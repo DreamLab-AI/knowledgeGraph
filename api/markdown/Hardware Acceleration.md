@@ -72,7 +72,7 @@ public:: true
         "label": "Tensor Core"
       },
       {
-        "@id": "urn:ngm:class:ray-tracing-core",
+        "@id": "urn:ngm:class:ray-tracing",
         "label": "Ray Tracing Core"
       }
     ],
@@ -82,21 +82,17 @@ public:: true
         "label": "Parallel Computing"
       },
       {
-        "@id": "urn:ngm:class:device-driver",
+        "@id": "urn:ngm:class:device-drivers",
         "label": "Device Driver"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:real-time-vr-performance",
-        "label": "Real-Time VR Performance"
-      },
-      {
         "@id": "urn:ngm:class:foveated-rendering",
         "label": "Foveated Rendering"
       },
       {
-        "@id": "urn:ngm:class:real-time-ray-tracing",
+        "@id": "urn:ngm:class:ray-tracing",
         "label": "Real-Time Ray Tracing"
       },
       {
@@ -106,7 +102,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:vulkan-api",
+        "@id": "urn:ngm:class:vulkan",
         "label": "Vulkan API"
       },
       {
@@ -140,10 +136,6 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:software-rendering",
-        "label": "Software Rendering"
-      },
-      {
         "@id": "urn:ngm:class:cpu-compute",
         "label": "CPU Compute"
       }
@@ -154,7 +146,7 @@ public:: true
         "label": "Computing Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:machine-learning-inference",
+        "@id": "urn:ngm:class:inference",
         "label": "Machine Learning Inference"
       },
       {

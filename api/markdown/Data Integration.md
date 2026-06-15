@@ -57,49 +57,123 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:etl-pipeline", "label": "ETL Pipeline"},
-      {"@id": "urn:ngm:class:change-data-capture", "label": "Change Data Capture"},
-      {"@id": "urn:ngm:class:schema-harmonisation", "label": "Schema Harmonisation"},
-      {"@id": "urn:ngm:class:identity-resolution", "label": "Identity Resolution"}
+      {
+        "@id": "urn:ngm:class:etl-pipeline",
+        "label": "ETL Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:change-data-capture",
+        "label": "Change Data Capture"
+      },
+      {
+        "@id": "urn:ngm:class:identity-resolution",
+        "label": "Identity Resolution"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
-      {"@id": "urn:ngm:class:message-broker", "label": "Message Broker"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:data-catalog", "label": "Data Catalog"}
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:data-catalog",
+        "label": "Data Catalog"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:data-interoperability", "label": "Data Interoperability"},
-      {"@id": "urn:ngm:class:semantic-interoperability", "label": "Semantic Interoperability"},
-      {"@id": "urn:ngm:class:data-warehouse", "label": "Data Warehouse"},
-      {"@id": "urn:ngm:class:data-lakehouse", "label": "Data Lakehouse"},
-      {"@id": "urn:ngm:class:real-time-analytics", "label": "Real-Time Analytics"}
+      {
+        "@id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      },
+      {
+        "@id": "urn:ngm:class:lakehouse-architecture",
+        "label": "Data Lakehouse"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-analytics",
+        "label": "Real-Time Analytics"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:data-quality", "label": "Data Quality"},
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:sql", "label": "SQL"},
-      {"@id": "urn:ngm:class:open-lineage", "label": "OpenLineage"}
+      {
+        "@id": "urn:ngm:class:sql",
+        "label": "SQL"
+      },
+      {
+        "@id": "urn:ngm:class:open-lineage",
+        "label": "OpenLineage"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:data-federation", "label": "Data Federation"},
-      {"@id": "urn:ngm:class:data-replication", "label": "Data Replication"}
+      {
+        "@id": "urn:ngm:class:data-federation",
+        "label": "Data Federation"
+      },
+      {
+        "@id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:data-consolidation", "label": "Data Consolidation"},
-    {"@id": "urn:ngm:class:enterprise-information-integration", "label": "Enterprise Information Integration"}
+    {
+      "@id": "urn:ngm:class:data-consolidation",
+      "label": "Data Consolidation"
+    },
+    {
+      "@id": "urn:ngm:class:enterprise-information-integration",
+      "label": "Enterprise Information Integration"
+    }
   ],
   "quality": 0.72,
   "provenance": {

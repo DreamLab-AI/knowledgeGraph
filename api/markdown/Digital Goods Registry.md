@@ -142,19 +142,15 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:asset-catalog",
-        "label": "Asset Catalog"
-      },
-      {
-        "@id": "urn:ngm:class:metadata-store",
+        "@id": "urn:ngm:class:metadata-repository",
         "label": "Metadata Store"
       },
       {
-        "@id": "urn:ngm:class:ownership-records",
+        "@id": "urn:ngm:class:ownership-record",
         "label": "Ownership Records"
       },
       {
-        "@id": "urn:ngm:class:provenance-tracker",
+        "@id": "urn:ngm:class:provenance-tracking",
         "label": "Provenance Tracker"
       },
       {

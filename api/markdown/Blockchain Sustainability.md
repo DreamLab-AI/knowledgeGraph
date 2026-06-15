@@ -76,7 +76,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:carbon-offset-program",
+        "@id": "urn:ngm:class:carbon-offset-programme",
         "label": "Carbon Offset Program"
       },
       {
@@ -92,24 +92,12 @@ public:: true
       {
         "@id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
-      },
-      {
-        "@id": "urn:ngm:class:energy-efficiency-metrics",
-        "label": "Energy Efficiency Metrics"
       }
     ],
     "enables": [
       {
         "@id": "urn:ngm:class:carbon-credits",
         "label": "Carbon Credits"
-      },
-      {
-        "@id": "urn:ngm:class:tokenized-carbon-market",
-        "label": "Tokenized Carbon Market"
-      },
-      {
-        "@id": "urn:ngm:class:renewable-energy-certificate-trading",
-        "label": "Renewable Energy Certificate Trading"
       }
     ],
     "implements": [
@@ -154,20 +142,12 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:esg-compliance",
-        "label": "ESG Compliance"
-      },
-      {
         "@id": "urn:ngm:class:green-finance",
         "label": "Green Finance"
       },
       {
         "@id": "urn:ngm:class:crypto-climate-accord",
         "label": "Crypto Climate Accord"
-      },
-      {
-        "@id": "urn:ngm:class:energy-web-foundation",
-        "label": "Energy Web Foundation"
       }
     ],
     "bridgesTo": [
@@ -176,7 +156,7 @@ public:: true
         "label": "AI Energy Optimisation"
       },
       {
-        "@id": "urn:ngm:class:environmental-impact-verification",
+        "@id": "urn:ngm:class:environmental-verification",
         "label": "Environmental Impact Verification"
       }
     ]

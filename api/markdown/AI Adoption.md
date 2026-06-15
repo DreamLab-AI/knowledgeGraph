@@ -480,31 +480,15 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:ai-strategy",
-        "label": "AI Strategy"
-      },
-      {
-        "@id": "urn:ngm:class:ai-talent-capacity",
+        "@id": "urn:ngm:class:ai-talent",
         "label": "AI Talent Capacity"
       },
       {
-        "@id": "urn:ngm:class:ai-use-case-portfolio",
-        "label": "AI Use Case Portfolio"
-      },
-      {
-        "@id": "urn:ngm:class:ai-vendor-stack",
-        "label": "AI Vendor Stack"
-      },
-      {
-        "@id": "urn:ngm:class:change-management-programme",
+        "@id": "urn:ngm:class:change-management",
         "label": "Change Management Programme"
       },
       {
-        "@id": "urn:ngm:class:data-foundation",
-        "label": "Data Foundation"
-      },
-      {
-        "@id": "urn:ngm:class:mlops-infrastructure",
+        "@id": "urn:ngm:class:mlops",
         "label": "MLOps Infrastructure"
       },
       {
@@ -544,32 +528,12 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:cost-reduction",
-        "label": "Cost Reduction"
-      },
-      {
-        "@id": "urn:ngm:class:customer-experience-enhancement",
+        "@id": "urn:ngm:class:customer-experience",
         "label": "Customer Experience Enhancement"
-      },
-      {
-        "@id": "urn:ngm:class:decision-augmentation",
-        "label": "Decision Augmentation"
-      },
-      {
-        "@id": "urn:ngm:class:innovation-velocity",
-        "label": "Innovation Velocity"
       },
       {
         "@id": "urn:ngm:class:process-automation",
         "label": "Process Automation"
-      },
-      {
-        "@id": "urn:ngm:class:productivity-improvement",
-        "label": "Productivity Improvement"
-      },
-      {
-        "@id": "urn:ngm:class:revenue-growth",
-        "label": "Revenue Growth"
       }
     ],
     "implements": [
@@ -580,10 +544,6 @@ public:: true
       {
         "@id": "urn:ngm:class:organisational-learning",
         "label": "Organisational Learning"
-      },
-      {
-        "@id": "urn:ngm:class:stage-gate-adoption-process",
-        "label": "Stage-Gate Adoption Process"
       },
       {
         "@id": "urn:ngm:class:technology-acceptance-model",
@@ -600,7 +560,7 @@ public:: true
         "label": "Agentic AI"
       },
       {
-        "@id": "urn:ngm:class:copilot-systems",
+        "@id": "urn:ngm:class:microsoft-copilot",
         "label": "Copilot Systems"
       },
       {
@@ -630,12 +590,8 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:ai-investment-cycle",
+        "@id": "urn:ngm:class:ai-investment",
         "label": "AI Investment Cycle"
-      },
-      {
-        "@id": "urn:ngm:class:ai-productivity-paradox",
-        "label": "AI Productivity Paradox"
       },
       {
         "@id": "urn:ngm:class:ai-regulation",
@@ -646,11 +602,11 @@ public:: true
         "label": "AI Talent War"
       },
       {
-        "@id": "urn:ngm:class:foundation-model-race",
+        "@id": "urn:ngm:class:foundation-model",
         "label": "Foundation Model Race"
       },
       {
-        "@id": "urn:ngm:class:generative-ai-boom",
+        "@id": "urn:ngm:class:generative-ai",
         "label": "Generative AI Boom"
       },
       {
@@ -668,16 +624,8 @@ public:: true
         "label": "National Competitiveness"
       },
       {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-service-modernisation",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier",
         "label": "Public Service Modernisation"
-      },
-      {
-        "@id": "urn:ngm:class:sectoral-productivity",
-        "label": "Sectoral Productivity"
-      },
-      {
-        "@id": "urn:ngm:class:workforce-transformation",
-        "label": "Workforce Transformation"
       }
     ],
     "standardizedBy": [
@@ -696,10 +644,6 @@ public:: true
       {
         "@id": "urn:ngm:class:uk-ai-opportunities-action-plan",
         "label": "UK AI Opportunities Action Plan"
-      },
-      {
-        "@id": "urn:ngm:class:us-ai-action-plan-2025",
-        "label": "US AI Action Plan 2025"
       },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",

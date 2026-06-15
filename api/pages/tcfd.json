@@ -70,10 +70,6 @@
     "uses": [],
     "supports": [
       {
-        "id": "urn:ngm:class:corporate-reporting",
-        "label": "Corporate Reporting"
-      },
-      {
         "id": "urn:ngm:class:investor-disclosure",
         "label": "Investor Disclosure"
       }

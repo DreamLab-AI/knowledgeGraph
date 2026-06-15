@@ -124,10 +124,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:intelligence",
-        "label": "Intelligence"
-      },
-      {
         "@id": "urn:ngm:class:data-processing",
         "label": "Data Processing"
       },

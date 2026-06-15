@@ -22,16 +22,12 @@
         "label": "Liquidity Pool"
       },
       {
-        "id": "urn:ngm:class:uni-governance-token",
+        "id": "urn:ngm:class:governance-token",
         "label": "UNI Governance Token"
       },
       {
         "id": "urn:ngm:class:router-contract",
         "label": "Router Contract"
-      },
-      {
-        "id": "urn:ngm:class:factory-contract",
-        "label": "Factory Contract"
       }
     ],
     "requires": [
@@ -58,12 +54,8 @@
         "label": "Yield Farming"
       },
       {
-        "id": "urn:ngm:class:token-swap",
+        "id": "urn:ngm:class:token-swapping",
         "label": "Token Swap"
-      },
-      {
-        "id": "urn:ngm:class:permissionless-token-listing",
-        "label": "Permissionless Token Listing"
       }
     ],
     "dependsOn": [
@@ -111,7 +103,7 @@
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       },
       {
@@ -126,10 +118,6 @@
       {
         "id": "urn:ngm:class:curve-finance",
         "label": "Curve Finance"
-      },
-      {
-        "id": "urn:ngm:class:sushiswap",
-        "label": "SushiSwap"
       },
       {
         "id": "urn:ngm:class:impermanent-loss",

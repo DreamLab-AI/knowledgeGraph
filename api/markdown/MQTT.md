@@ -38,58 +38,135 @@ public:: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:sensor-data", "label": "Sensor Data"},
-      {"@id": "urn:ngm:class:real-time-data-streaming", "label": "Real-Time Data Streaming"},
-      {"@id": "urn:ngm:class:telemetry-and-analytics", "label": "Telemetry & Analytics"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"}
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-data",
+        "label": "Sensor Data"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-data-streaming",
+        "label": "Real-Time Data Streaming"
+      },
+      {
+        "@id": "urn:ngm:class:telemetry-and-analytics",
+        "label": "Telemetry & Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"},
-      {"@id": "urn:ngm:class:tcp-ip", "label": "TCP/IP"},
-      {"@id": "urn:ngm:class:websockets", "label": "WebSockets"},
-      {"@id": "urn:ngm:class:tls-ssl", "label": "TLS/SSL"}
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:tcp-ip",
+        "label": "TCP/IP"
+      },
+      {
+        "@id": "urn:ngm:class:websockets",
+        "label": "WebSockets"
+      },
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "TLS/SSL"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:message-broker", "label": "Message Broker"},
-      {"@id": "urn:ngm:class:publish-subscribe-pattern", "label": "Publish-Subscribe Pattern"}
+      {
+        "@id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      },
+      {
+        "@id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"}
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:publish-subscribe-pattern", "label": "Publish-Subscribe Pattern"}
+      {
+        "@id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:industrial-iot", "label": "Industrial IoT"},
-      {"@id": "urn:ngm:class:smart-home-automation", "label": "Smart Home Automation"},
-      {"@id": "urn:ngm:class:vehicle-telematics", "label": "Vehicle Telematics"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "@id": "urn:ngm:class:smart-home-automation",
+        "label": "Smart Home Automation"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:oasis-open", "label": "OASIS Open"},
-      {"@id": "urn:ngm:class:iso-iec-20922", "label": "ISO/IEC 20922"}
+      {
+        "@id": "urn:ngm:class:oasis",
+        "label": "OASIS Open"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:amqp", "label": "AMQP"},
-      {"@id": "urn:ngm:class:coap", "label": "CoAP"},
-      {"@id": "urn:ngm:class:http", "label": "HTTP"},
-      {"@id": "urn:ngm:class:stomp", "label": "STOMP"}
+      {
+        "@id": "urn:ngm:class:amqp",
+        "label": "AMQP"
+      },
+      {
+        "@id": "urn:ngm:class:coap",
+        "label": "CoAP"
+      },
+      {
+        "@id": "urn:ngm:class:http",
+        "label": "HTTP"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ros2", "label": "ROS 2"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:machine-learning-inference", "label": "Machine Learning Inference"}
+      {
+        "@id": "urn:ngm:class:ros2",
+        "label": "ROS 2"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Machine Learning Inference"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:sparkplug-b", "label": "Sparkplug B"},
-      {"@id": "urn:ngm:class:data-serialisation", "label": "Data Serialisation"},
-      {"@id": "urn:ngm:class:scada", "label": "SCADA"}
+      {
+        "@id": "urn:ngm:class:data-serialisation",
+        "label": "Data Serialisation"
+      },
+      {
+        "@id": "urn:ngm:class:scada",
+        "label": "SCADA"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:message-queuing-telemetry-transport", "label": "Message Queuing Telemetry Transport"}
+    {
+      "@id": "urn:ngm:class:message-queuing-telemetry-transport",
+      "label": "Message Queuing Telemetry Transport"
+    }
   ],
   "qualityScore": 0.75,
   "quality": 0.75,

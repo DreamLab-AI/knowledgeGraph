@@ -57,7 +57,7 @@ public:: true
         "label": "Asynchronous Communication"
       },
       {
-        "@id": "urn:ngm:class:collaborative-document-editing",
+        "@id": "urn:ngm:class:tc-0002-collaborative-document-editing",
         "label": "Collaborative Document Editing"
       },
       {
@@ -113,17 +113,13 @@ public:: true
         "label": "Operational Transformation"
       },
       {
-        "@id": "urn:ngm:class:conflict-free-replicated-data-types",
-        "label": "Conflict-Free Replicated Data Types"
-      },
-      {
         "@id": "urn:ngm:class:version-control",
         "label": "Version Control"
       }
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:agile-development",
+        "@id": "urn:ngm:class:agile-software-development",
         "label": "Agile Development"
       },
       {
@@ -155,10 +151,6 @@ public:: true
         "label": "Telecollaboration"
       },
       {
-        "@id": "urn:ngm:class:metaverse-workspaces",
-        "label": "Metaverse Workspaces"
-      },
-      {
         "@id": "urn:ngm:class:immersive-communication",
         "label": "Immersive Communication"
       }
@@ -167,10 +159,6 @@ public:: true
       {
         "@id": "urn:ngm:class:computer-supported-cooperative-work",
         "label": "Computer-Supported Cooperative Work"
-      },
-      {
-        "@id": "urn:ngm:class:digital-workplace",
-        "label": "Digital Workplace"
       },
       {
         "@id": "urn:ngm:class:presence-awareness",

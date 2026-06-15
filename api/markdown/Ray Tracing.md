@@ -486,30 +486,6 @@ public:: true
         "label": "BVH Acceleration Structure"
       },
       {
-        "@id": "urn:ngm:class:denoiser",
-        "label": "Denoiser"
-      },
-      {
-        "@id": "urn:ngm:class:intersection-test",
-        "label": "Intersection Test"
-      },
-      {
-        "@id": "urn:ngm:class:primary-ray",
-        "label": "Primary Ray"
-      },
-      {
-        "@id": "urn:ngm:class:reservoir-sampling",
-        "label": "Reservoir Sampling"
-      },
-      {
-        "@id": "urn:ngm:class:rt-core",
-        "label": "RT Core"
-      },
-      {
-        "@id": "urn:ngm:class:secondary-ray",
-        "label": "Secondary Ray"
-      },
-      {
         "@id": "urn:ngm:class:shading-model",
         "label": "Shading Model"
       }
@@ -526,14 +502,6 @@ public:: true
       {
         "@id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
-      },
-      {
-        "@id": "urn:ngm:class:light-sources",
-        "label": "Light Sources"
-      },
-      {
-        "@id": "urn:ngm:class:material-model",
-        "label": "Material Model"
       },
       {
         "@id": "urn:ngm:class:monte-carlo-integration",
@@ -558,18 +526,6 @@ public:: true
         "label": "Caustics"
       },
       {
-        "@id": "urn:ngm:class:participating-media-rendering",
-        "label": "Participating Media Rendering"
-      },
-      {
-        "@id": "urn:ngm:class:real-time-path-tracing",
-        "label": "Real-Time Path Tracing"
-      },
-      {
-        "@id": "urn:ngm:class:reflections",
-        "label": "Reflections"
-      },
-      {
         "@id": "urn:ngm:class:soft-shadows",
         "label": "Soft Shadows"
       },
@@ -588,15 +544,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:bidirectional-path-tracing",
-        "label": "Bidirectional Path Tracing"
-      },
-      {
-        "@id": "urn:ngm:class:metropolis-light-transport",
-        "label": "Metropolis Light Transport"
-      },
-      {
-        "@id": "urn:ngm:class:multiple-importance-sampling",
+        "@id": "urn:ngm:class:importance-sampling",
         "label": "Multiple Importance Sampling"
       },
       {
@@ -608,21 +556,13 @@ public:: true
         "label": "Photon Mapping"
       },
       {
-        "@id": "urn:ngm:class:re-stir",
-        "label": "ReSTIR"
-      },
-      {
         "@id": "urn:ngm:class:volumetric-rendering",
         "label": "Volumetric Rendering"
-      },
-      {
-        "@id": "urn:ngm:class:whitted-ray-tracing",
-        "label": "Whitted Ray Tracing"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:ai-upscaling",
+        "@id": "urn:ngm:class:ai-upscaling-and-super-resolution",
         "label": "AI Upscaling"
       },
       {
@@ -636,22 +576,6 @@ public:: true
       {
         "@id": "urn:ngm:class:importance-sampling",
         "label": "Importance Sampling"
-      },
-      {
-        "@id": "urn:ngm:class:neural-denoising",
-        "label": "Neural Denoising"
-      },
-      {
-        "@id": "urn:ngm:class:reservoir-based-resampling",
-        "label": "Reservoir-Based Resampling"
-      },
-      {
-        "@id": "urn:ngm:class:russian-roulette-termination",
-        "label": "Russian Roulette Termination"
-      },
-      {
-        "@id": "urn:ngm:class:spatiotemporal-filtering",
-        "label": "Spatiotemporal Filtering"
       }
     ],
     "relatedTo": [
@@ -660,20 +584,12 @@ public:: true
         "label": "Denoising"
       },
       {
-        "@id": "urn:ngm:class:direct-x",
-        "label": "DirectX"
-      },
-      {
         "@id": "urn:ngm:class:dlss",
         "label": "DLSS"
       },
       {
         "@id": "urn:ngm:class:lumen",
         "label": "Lumen"
-      },
-      {
-        "@id": "urn:ngm:class:opti-x",
-        "label": "OptiX"
       },
       {
         "@id": "urn:ngm:class:vulkan",
@@ -698,14 +614,6 @@ public:: true
         "label": "Film VFX"
       },
       {
-        "@id": "urn:ngm:class:game-rendering",
-        "label": "Game Rendering"
-      },
-      {
-        "@id": "urn:ngm:class:product-visualisation",
-        "label": "Product Visualisation"
-      },
-      {
         "@id": "urn:ngm:class:scientific-visualisation",
         "label": "Scientific Visualisation"
       },
@@ -724,24 +632,8 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:direct-x-raytracing",
-        "label": "DirectX Raytracing"
-      },
-      {
-        "@id": "urn:ngm:class:khronos-vulkan-khr-ray-tracing",
+        "@id": "urn:ngm:class:vulkan",
         "label": "Khronos Vulkan KHR_ray_tracing"
-      },
-      {
-        "@id": "urn:ngm:class:open-rl",
-        "label": "OpenRL"
-      },
-      {
-        "@id": "urn:ngm:class:opti-x-sdk",
-        "label": "OptiX SDK"
-      },
-      {
-        "@id": "urn:ngm:class:pbrt-standard",
-        "label": "PBRT Standard"
       }
     ],
     "bridgesTo": [

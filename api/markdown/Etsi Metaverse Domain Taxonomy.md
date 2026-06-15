@@ -64,7 +64,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:standards-interoperability",
+        "@id": "urn:ngm:class:interoperability-standards",
         "label": "Standards Interoperability"
       }
     ]

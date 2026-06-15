@@ -256,7 +256,7 @@ public:: true
         "label": "NIST AI Risk Management Framework"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {

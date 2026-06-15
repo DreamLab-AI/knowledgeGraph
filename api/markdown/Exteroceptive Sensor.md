@@ -471,16 +471,8 @@ alias:: ExteroceptiveSensor
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:data-interface",
+        "@id": "urn:ngm:class:interface",
         "label": "Data Interface"
-      },
-      {
-        "@id": "urn:ngm:class:optical-window",
-        "label": "Optical Window"
-      },
-      {
-        "@id": "urn:ngm:class:sensing-element",
-        "label": "Sensing Element"
       },
       {
         "@id": "urn:ngm:class:sensor-housing",
@@ -503,10 +495,6 @@ alias:: ExteroceptiveSensor
       {
         "@id": "urn:ngm:class:calibration",
         "label": "Calibration"
-      },
-      {
-        "@id": "urn:ngm:class:computational-processing",
-        "label": "Computational Processing"
       },
       {
         "@id": "urn:ngm:class:coordinate-frame",
@@ -569,7 +557,7 @@ alias:: ExteroceptiveSensor
         "label": "Event-Driven Sensing"
       },
       {
-        "@id": "urn:ngm:class:radar-sensing",
+        "@id": "urn:ngm:class:radar",
         "label": "Radar Sensing"
       },
       {
@@ -673,7 +661,7 @@ alias:: ExteroceptiveSensor
         "label": "ISO 10218"
       },
       {
-        "@id": "urn:ngm:class:iso-21448-sotif",
+        "@id": "urn:ngm:class:iso-21448",
         "label": "ISO 21448 SOTIF"
       },
       {
@@ -681,7 +669,7 @@ alias:: ExteroceptiveSensor
         "label": "ISO TS 15066"
       },
       {
-        "@id": "urn:ngm:class:ros-sensor-msgs",
+        "@id": "urn:ngm:class:ros",
         "label": "ROS sensor_msgs"
       },
       {
@@ -690,7 +678,10 @@ alias:: ExteroceptiveSensor
       }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:environmental-sensor", "label": "Environmental Sensor"}
+      {
+        "@id": "urn:ngm:class:environmental-sensor",
+        "label": "Environmental Sensor"
+      }
     ]
   },
   "quality": 0.52,

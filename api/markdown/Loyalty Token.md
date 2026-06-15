@@ -128,16 +128,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:brand-engagement",
-        "label": "Brand Engagement"
-      },
-      {
         "@id": "urn:ngm:class:incentive-mechanism",
         "label": "Incentive Mechanism"
-      },
-      {
-        "@id": "urn:ngm:class:membership-program",
-        "label": "Membership Program"
       },
       {
         "@id": "urn:ngm:class:customer-rewards",

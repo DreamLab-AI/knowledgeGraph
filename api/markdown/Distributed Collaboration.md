@@ -29,56 +29,133 @@
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:synchronous-collaboration", "label": "Synchronous Collaboration"},
-      {"@id": "urn:ngm:class:asynchronous-collaboration", "label": "Asynchronous Collaboration"},
-      {"@id": "urn:ngm:class:shared-workspace", "label": "Shared Workspace"},
-      {"@id": "urn:ngm:class:presence-mechanism", "label": "Presence Mechanism"}
+      {
+        "@id": "urn:ngm:class:synchronous-collaboration",
+        "label": "Synchronous Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:shared-workspace",
+        "label": "Shared Workspace"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"},
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
-      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"}
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
-      {"@id": "urn:ngm:class:conflict-free-replicated-data-type", "label": "Conflict-Free Replicated Data Type"},
-      {"@id": "urn:ngm:class:operational-transformation", "label": "Operational Transformation"},
-      {"@id": "urn:ngm:class:real-time-messaging", "label": "Real-Time Messaging"},
-      {"@id": "urn:ngm:class:end-to-end-encryption", "label": "End-to-End Encryption"}
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:conflict-free-replicated-data-type",
+        "label": "Conflict-Free Replicated Data Type"
+      },
+      {
+        "@id": "urn:ngm:class:operational-transformation",
+        "label": "Operational Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-messaging",
+        "label": "Real-Time Messaging"
+      },
+      {
+        "@id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
-      {"@id": "urn:ngm:class:remote-work", "label": "Remote Work"},
-      {"@id": "urn:ngm:class:open-source-development", "label": "Open Source Development"},
-      {"@id": "urn:ngm:class:virtual-team", "label": "Virtual Team"}
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-development",
+        "label": "Open Source Development"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-team",
+        "label": "Virtual Team"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
-      {"@id": "urn:ngm:class:latency-management", "label": "Latency Management"}
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:latency-management",
+        "label": "Latency Management"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
-      {"@id": "urn:ngm:class:project-management", "label": "Project Management"}
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "@id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:co-located-collaboration", "label": "Co-Located Collaboration"},
-      {"@id": "urn:ngm:class:centralised-workflow", "label": "Centralised Workflow"}
+      {
+        "@id": "urn:ngm:class:co-located-collaboration",
+        "label": "Co-Located Collaboration"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:ai-assisted-collaboration", "label": "AI-Assisted Collaboration"},
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:computer-supported-cooperative-work", "label": "Computer-Supported Cooperative Work"},
-      {"@id": "urn:ngm:class:groupware", "label": "Groupware"},
-      {"@id": "urn:ngm:class:social-software", "label": "Social Software"}
+      {
+        "@id": "urn:ngm:class:computer-supported-cooperative-work",
+        "label": "Computer-Supported Cooperative Work"
+      },
+      {
+        "@id": "urn:ngm:class:groupware",
+        "label": "Groupware"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:remote-collaboration", "label": "Remote Collaboration"},
-    {"@id": "urn:ngm:class:computer-supported-cooperative-work", "label": "Computer-Supported Cooperative Work"}
+    {
+      "@id": "urn:ngm:class:remote-collaboration",
+      "label": "Remote Collaboration"
+    },
+    {
+      "@id": "urn:ngm:class:computer-supported-cooperative-work",
+      "label": "Computer-Supported Cooperative Work"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

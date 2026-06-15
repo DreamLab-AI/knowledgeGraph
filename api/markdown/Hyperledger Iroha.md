@@ -520,63 +520,21 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:iroha-executor",
-        "label": "Iroha Executor"
-      },
-      {
-        "@id": "urn:ngm:class:iroha-special-instructions",
-        "label": "Iroha Special Instructions"
-      },
-      {
-        "@id": "urn:ngm:class:iroha-trigger",
-        "label": "Iroha Trigger"
-      },
-      {
-        "@id": "urn:ngm:class:iroha-wasm-runtime",
-        "label": "Iroha WASM Runtime"
-      },
-      {
-        "@id": "urn:ngm:class:kura-block-store",
-        "label": "Kura Block Store"
-      },
-      {
-        "@id": "urn:ngm:class:sumeragi-block-producer",
-        "label": "Sumeragi Block Producer"
-      },
-      {
-        "@id": "urn:ngm:class:sumeragi-consensus",
-        "label": "Sumeragi Consensus"
-      },
-      {
-        "@id": "urn:ngm:class:torii-api",
-        "label": "Torii API"
-      },
-      {
-        "@id": "urn:ngm:class:yac-consensus",
-        "label": "YAC Consensus"
-      }
-    ],
     "requires": [
       {
-        "@id": "urn:ngm:class:blake2b-hashing",
-        "label": "BLAKE2b Hashing"
-      },
-      {
-        "@id": "urn:ngm:class:ed25519-signatures",
+        "@id": "urn:ngm:class:ed25519",
         "label": "Ed25519 Signatures"
       },
       {
-        "@id": "urn:ngm:class:g-rpc-transport",
+        "@id": "urn:ngm:class:g-rpc",
         "label": "gRPC Transport"
       },
       {
-        "@id": "urn:ngm:class:permissioned-validator-set",
+        "@id": "urn:ngm:class:validator-set",
         "label": "Permissioned Validator Set"
       },
       {
-        "@id": "urn:ngm:class:rust-systems-programming-language-runtime",
+        "@id": "urn:ngm:class:rust-systems-programming-language",
         "label": "Rust Runtime"
       },
       {
@@ -590,20 +548,12 @@ public:: true
         "label": "Asset Tokenisation"
       },
       {
-        "@id": "urn:ngm:class:atomic-multi-asset-transfer",
-        "label": "Atomic Multi-Asset Transfer"
-      },
-      {
-        "@id": "urn:ngm:class:cross-border-retail-payment",
+        "@id": "urn:ngm:class:cross-border-payments",
         "label": "Cross-Border Retail Payment"
       },
       {
-        "@id": "urn:ngm:class:national-payment-system",
+        "@id": "urn:ngm:class:payment-system",
         "label": "National Payment System"
-      },
-      {
-        "@id": "urn:ngm:class:permissioned-smart-contracts",
-        "label": "Permissioned Smart Contracts"
       },
       {
         "@id": "urn:ngm:class:central-bank-digital-currency",
@@ -616,39 +566,15 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:atomic-batch-transactions",
-        "label": "Atomic Batch Transactions"
-      },
-      {
-        "@id": "urn:ngm:class:command-query-separation",
-        "label": "Command Query Separation"
-      },
-      {
-        "@id": "urn:ngm:class:multi-signature-transactions",
+        "@id": "urn:ngm:class:multi-party-transactions",
         "label": "Multi-Signature Transactions"
       },
       {
         "@id": "urn:ngm:class:role-based-access-control",
         "label": "Role-Based Access Control"
-      },
-      {
-        "@id": "urn:ngm:class:sumeragi-bft",
-        "label": "Sumeragi BFT"
-      },
-      {
-        "@id": "urn:ngm:class:web-assembly-smart-contracts",
-        "label": "WebAssembly Smart Contracts"
-      },
-      {
-        "@id": "urn:ngm:class:yet-another-consensus",
-        "label": "Yet Another Consensus"
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:blake2b",
-        "label": "BLAKE2b"
-      },
       {
         "@id": "urn:ngm:class:ed25519",
         "label": "Ed25519"
@@ -658,7 +584,7 @@ public:: true
         "label": "gRPC"
       },
       {
-        "@id": "urn:ngm:class:kagome-polkadot-host",
+        "@id": "urn:ngm:class:polkadot",
         "label": "Kagome Polkadot Host"
       },
       {
@@ -674,10 +600,6 @@ public:: true
         "label": "RocksDB"
       },
       {
-        "@id": "urn:ngm:class:tokio",
-        "label": "Tokio"
-      },
-      {
         "@id": "urn:ngm:class:web-assembly",
         "label": "WebAssembly"
       }
@@ -686,10 +608,6 @@ public:: true
       {
         "@id": "urn:ngm:class:cosmos-sdk",
         "label": "Cosmos SDK"
-      },
-      {
-        "@id": "urn:ngm:class:hyperledger-sawtooth",
-        "label": "Hyperledger Sawtooth"
       },
       {
         "@id": "urn:ngm:class:iso-20022",
@@ -716,63 +634,21 @@ public:: true
         "label": "Hyperledger Indy"
       }
     ],
-    "supports": [
-      {
-        "@id": "urn:ngm:class:bakong",
-        "label": "Bakong"
-      },
-      {
-        "@id": "urn:ngm:class:bokolo-cash",
-        "label": "Bokolo Cash"
-      },
-      {
-        "@id": "urn:ngm:class:fraud-intelligence-limited",
-        "label": "Fraud Intelligence Limited"
-      },
-      {
-        "@id": "urn:ngm:class:klaytn",
-        "label": "Klaytn"
-      },
-      {
-        "@id": "urn:ngm:class:mufg-coin",
-        "label": "MUFG Coin"
-      },
-      {
-        "@id": "urn:ngm:class:polkaswap",
-        "label": "Polkaswap"
-      },
-      {
-        "@id": "urn:ngm:class:russian-federal-cadastre",
-        "label": "Russian Federal Cadastre"
-      },
-      {
-        "@id": "urn:ngm:class:sora-network",
-        "label": "SORA Network"
-      }
-    ],
     "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:bsi-pas-19668",
-        "label": "BSI PAS 19668"
-      },
       {
         "@id": "urn:ngm:class:hyperledger-foundation",
         "label": "Hyperledger Foundation"
-      },
-      {
-        "@id": "urn:ngm:class:hyperledger-tsc",
-        "label": "Hyperledger TSC"
       },
       {
         "@id": "urn:ngm:class:iso-22739",
         "label": "ISO 22739"
       },
       {
-        "@id": "urn:ngm:class:linux-foundation-decentralised-trust",
+        "@id": "urn:ngm:class:linux-foundation",
         "label": "Linux Foundation Decentralised Trust"
       },
       {
-        "@id": "urn:ngm:class:web-assembly-2-0-specification",
+        "@id": "urn:ngm:class:web-assembly",
         "label": "WebAssembly 2.0 Specification"
       }
     ]

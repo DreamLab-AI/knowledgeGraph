@@ -48,55 +48,119 @@ alias:: ProceduralGeneration
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:pcg", "label": "PCG"},
-    {"@id": "urn:ngm:class:procedural-content-generation", "label": "Procedural Content Generation"}
+    {
+      "@id": "urn:ngm:class:pcg",
+      "label": "PCG"
+    },
+    {
+      "@id": "urn:ngm:class:procedural-content-generation",
+      "label": "Procedural Content Generation"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:noise-function", "label": "Noise Function"},
-      {"@id": "urn:ngm:class:l-system", "label": "L-System"},
-      {"@id": "urn:ngm:class:wave-function-collapse", "label": "Wave Function Collapse"},
-      {"@id": "urn:ngm:class:voronoi-diagram", "label": "Voronoi Diagram"}
+      {
+        "@id": "urn:ngm:class:noise-function",
+        "label": "Noise Function"
+      },
+      {
+        "@id": "urn:ngm:class:wave-function-collapse",
+        "label": "Wave Function Collapse"
+      },
+      {
+        "@id": "urn:ngm:class:voronoi-diagram",
+        "label": "Voronoi Diagram"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:world-building", "label": "World Building"},
-      {"@id": "urn:ngm:class:procedural-terrain", "label": "Procedural Terrain"},
-      {"@id": "urn:ngm:class:infinite-world", "label": "Infinite World"},
-      {"@id": "urn:ngm:class:level-design", "label": "Level Design"}
+      {
+        "@id": "urn:ngm:class:world-building",
+        "label": "World Building"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-terrain",
+        "label": "Procedural Terrain"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:noise-function-library", "label": "Noise Function Library"},
-      {"@id": "urn:ngm:class:3-d-content-generation", "label": "3D Content Generation"},
-      {"@id": "urn:ngm:class:random-seed", "label": "Random Seed"},
-      {"@id": "urn:ngm:class:spatial-indexing", "label": "Spatial Indexing"}
+      {
+        "@id": "urn:ngm:class:noise-function-library",
+        "label": "Noise Function Library"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-content-generation",
+        "label": "3D Content Generation"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-index",
+        "label": "Spatial Indexing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"}
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:stochastic-modelling", "label": "Stochastic Modelling"},
-      {"@id": "urn:ngm:class:parametric-design", "label": "Parametric Design"}
+      {
+        "@id": "urn:ngm:class:stochastic-modelling",
+        "label": "Stochastic Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:parametric-design-methodology",
+        "label": "Parametric Design"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:virtual-world", "label": "Virtual World"},
-      {"@id": "urn:ngm:class:open-world-game", "label": "Open-World Game"},
-      {"@id": "urn:ngm:class:simulation", "label": "Simulation"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:manual-content-authoring", "label": "Manual Content Authoring"},
-      {"@id": "urn:ngm:class:hand-crafted-level-design", "label": "Hand-Crafted Level Design"}
+      {
+        "@id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      },
+      {
+        "@id": "urn:ngm:class:open-world-game",
+        "label": "Open-World Game"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:neural-style-transfer", "label": "Neural Style Transfer"},
-      {"@id": "urn:ngm:class:latent-diffusion-model", "label": "Latent Diffusion Model"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:style-transfer",
+        "label": "Neural Style Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion Model"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:computational-creativity", "label": "Computational Creativity"},
-      {"@id": "urn:ngm:class:generative-design", "label": "Generative Design"},
-      {"@id": "urn:ngm:class:metaverse-content-pipeline", "label": "Metaverse Content Pipeline"},
-      {"@id": "urn:ngm:class:algorithmic-content-creation", "label": "Algorithmic Content Creation"}
+      {
+        "@id": "urn:ngm:class:computational-creativity",
+        "label": "Computational Creativity"
+      },
+      {
+        "@id": "urn:ngm:class:generative-design",
+        "label": "Generative Design"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-content-pipeline",
+        "label": "Metaverse Content Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:content-creation",
+        "label": "Algorithmic Content Creation"
+      }
     ]
   },
   "quality": 0.74,

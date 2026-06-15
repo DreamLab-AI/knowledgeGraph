@@ -104,15 +104,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:sculpting",
-        "label": "Sculpting"
-      },
-      {
-        "@id": "urn:ngm:class:texturing",
-        "label": "Texturing"
-      },
-      {
-        "@id": "urn:ngm:class:rigging",
+        "@id": "urn:ngm:class:character-rigging",
         "label": "Rigging"
       },
       {
@@ -127,18 +119,6 @@ public:: true
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:modelling-software",
-        "label": "Modelling Software"
-      },
-      {
-        "@id": "urn:ngm:class:anatomical-knowledge",
-        "label": "Anatomical Knowledge"
-      },
-      {
-        "@id": "urn:ngm:class:material-understanding",
-        "label": "Material Understanding"
-      },
       {
         "@id": "urn:ngm:class:polygon-mesh",
         "label": "Polygon Mesh"
@@ -196,7 +176,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:gltf",
+        "@id": "urn:ngm:class:gltf-standard",
         "label": "glTF"
       },
       {
@@ -208,10 +188,6 @@ public:: true
       {
         "@id": "urn:ngm:class:digital-art",
         "label": "Digital Art"
-      },
-      {
-        "@id": "urn:ngm:class:2-d-illustration",
-        "label": "2D Illustration"
       }
     ],
     "bridgesTo": [
@@ -229,10 +205,6 @@ public:: true
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:3-d-printing",
-        "label": "3D Printing"
-      },
       {
         "@id": "urn:ngm:class:visual-effects",
         "label": "Visual Effects"

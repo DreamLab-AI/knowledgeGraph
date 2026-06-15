@@ -46,55 +46,109 @@ elevatedFrom:: [[Update Cycle]]
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:staleness-detection", "label": "Staleness Detection"},
-      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"},
-      {"@id": "urn:ngm:class:change-propagation", "label": "Change Propagation"}
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:knowledge-lifecycle-management", "label": "Knowledge Lifecycle Management"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Lifecycle Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
-      {"@id": "urn:ngm:class:ontology-versioning", "label": "Ontology Versioning"},
-      {"@id": "urn:ngm:class:data-quality-management", "label": "Data Quality Management"}
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:ontology-versioning",
+        "label": "Ontology Versioning"
+      },
+      {
+        "@id": "urn:ngm:class:data-quality-management",
+        "label": "Data Quality Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-graph-maintenance", "label": "Knowledge Graph Maintenance"},
-      {"@id": "urn:ngm:class:information-freshness", "label": "Information Freshness"},
-      {"@id": "urn:ngm:class:semantic-consistency", "label": "Semantic Consistency"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-maintenance",
+        "label": "Knowledge Graph Maintenance"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:change-detection", "label": "Change Detection"},
-      {"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"}
+      {
+        "@id": "urn:ngm:class:change-detection",
+        "label": "Change Detection"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"},
-      {"@id": "urn:ngm:class:automated-pipeline", "label": "Automated Pipeline"},
-      {"@id": "urn:ngm:class:data-lineage", "label": "Data Lineage"}
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "@id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:knowledge-management-system", "label": "Knowledge Management System"},
-      {"@id": "urn:ngm:class:documentation-standards", "label": "Documentation Standards"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"}
+      {
+        "@id": "urn:ngm:class:knowledge-management-system",
+        "label": "Knowledge Management System"
+      },
+      {
+        "@id": "urn:ngm:class:documentation-standards",
+        "label": "Documentation Standards"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
-      {"@id": "urn:ngm:class:ontology-engineering", "label": "Ontology Engineering"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:batch-data-migration", "label": "Batch Data Migration"},
-      {"@id": "urn:ngm:class:static-documentation", "label": "Static Documentation"}
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "@id": "urn:ngm:class:ontology-engineering",
+        "label": "Ontology Engineering"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:update-cycle", "label": "Update Cycle"},
-    {"@id": "urn:ngm:class:knowledge-refresh-cycle", "label": "Knowledge Refresh Cycle"},
-    {"@id": "urn:ngm:class:artefact-maintenance-cycle", "label": "Artefact Maintenance Cycle"}
+    {
+      "@id": "urn:ngm:class:update-cycle",
+      "label": "Update Cycle"
+    },
+    {
+      "@id": "urn:ngm:class:knowledge-refresh-cycle",
+      "label": "Knowledge Refresh Cycle"
+    },
+    {
+      "@id": "urn:ngm:class:artefact-maintenance-cycle",
+      "label": "Artefact Maintenance Cycle"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

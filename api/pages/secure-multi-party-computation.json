@@ -22,10 +22,6 @@
         "label": "Secret Sharing"
       },
       {
-        "id": "urn:ngm:class:garbled-circuit",
-        "label": "Garbled Circuit"
-      },
-      {
         "id": "urn:ngm:class:oblivious-transfer",
         "label": "Oblivious Transfer"
       }
@@ -70,7 +66,7 @@
         "label": "Trusted Execution Environment"
       },
       {
-        "id": "urn:ngm:class:fully-homomorphic-encryption",
+        "id": "urn:ngm:class:homomorphic-encryption",
         "label": "Fully Homomorphic Encryption"
       }
     ],
@@ -100,10 +96,6 @@
       {
         "id": "urn:ngm:class:shamir-secret-sharing",
         "label": "Shamir Secret Sharing"
-      },
-      {
-        "id": "urn:ngm:class:yao-s-garbled-circuits",
-        "label": "Yao's Garbled Circuits"
       }
     ],
     "supports": [],

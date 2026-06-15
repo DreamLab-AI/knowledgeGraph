@@ -28,12 +28,8 @@
         "label": "Policy Framework"
       },
       {
-        "id": "urn:ngm:class:fine-grained-authorization",
+        "id": "urn:ngm:class:authorization",
         "label": "Fine-Grained Authorization"
-      },
-      {
-        "id": "urn:ngm:class:continuous-authorization",
-        "label": "Continuous Authorization"
       }
     ],
     "dependsOn": [
@@ -51,10 +47,6 @@
       }
     ],
     "implements": [
-      {
-        "id": "urn:ngm:class:authorization-policy",
-        "label": "Authorization Policy"
-      },
       {
         "id": "urn:ngm:class:attribute-based-access-control",
         "label": "Attribute-Based Access Control"
@@ -90,7 +82,7 @@
         "label": "Open Policy Agent"
       },
       {
-        "id": "urn:ngm:class:json-web-token",
+        "id": "urn:ngm:class:json-data-interchange-format-web-token",
         "label": "JSON Web Token"
       }
     ],
@@ -102,10 +94,6 @@
       {
         "id": "urn:ngm:class:identity-federation",
         "label": "Identity Federation"
-      },
-      {
-        "id": "urn:ngm:class:cloud-iam",
-        "label": "Cloud IAM"
       }
     ],
     "standardizedBy": [

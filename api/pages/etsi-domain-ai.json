@@ -35,16 +35,7 @@
       }
     ],
     "requires": [],
-    "enables": [
-      {
-        "id": "urn:ngm:class:ai-service-classification",
-        "label": "AI Service Classification"
-      },
-      {
-        "id": "urn:ngm:class:intelligence-layer-categorization",
-        "label": "Intelligence Layer Categorization"
-      }
-    ],
+    "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],

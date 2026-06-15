@@ -44,7 +44,7 @@
         "label": "Inverse Kinematics"
       },
       {
-        "id": "urn:ngm:class:object-pose-estimation",
+        "id": "urn:ngm:class:pose-estimation",
         "label": "Object Pose Estimation"
       },
       {

@@ -68,12 +68,7 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:post-transaction-review",
-        "label": "Post-Transaction Review"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:blockchain-analytics",
@@ -121,7 +116,7 @@
         "label": "Bank Secrecy Act"
       },
       {
-        "id": "urn:ngm:class:anti-money-laundering-directive",
+        "id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering Directive"
       }
     ],

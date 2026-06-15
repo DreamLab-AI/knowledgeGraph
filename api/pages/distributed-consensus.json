@@ -45,11 +45,11 @@
         "label": "Decentralised Trust"
       },
       {
-        "id": "urn:ngm:class:replicated-state-machine",
+        "id": "urn:ngm:class:state-machine-replication",
         "label": "Replicated State Machine"
       },
       {
-        "id": "urn:ngm:class:distributed-database",
+        "id": "urn:ngm:class:distributed-databases",
         "label": "Distributed Database"
       }
     ],
@@ -77,10 +77,6 @@
       }
     ],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:centralised-coordination",
-        "label": "Centralised Coordination"
-      },
       {
         "id": "urn:ngm:class:eventual-consistency",
         "label": "Eventual Consistency"

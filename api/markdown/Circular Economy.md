@@ -375,15 +375,11 @@ alias:: CircularEconomy
         "label": "Material Flow Analysis"
       },
       {
-        "@id": "urn:ngm:class:product-as-a-service",
-        "label": "Product-as-a-Service"
-      },
-      {
         "@id": "urn:ngm:class:reverse-logistics",
         "label": "Reverse Logistics"
       },
       {
-        "@id": "urn:ngm:class:waste-hierarchy",
+        "@id": "urn:ngm:class:waste-management",
         "label": "Waste Hierarchy"
       }
     ],
@@ -393,12 +389,8 @@ alias:: CircularEconomy
         "label": "Life Cycle Assessment"
       },
       {
-        "@id": "urn:ngm:class:material-traceability",
+        "@id": "urn:ngm:class:traceability",
         "label": "Material Traceability"
-      },
-      {
-        "@id": "urn:ngm:class:stakeholder-collaboration",
-        "label": "Stakeholder Collaboration"
       },
       {
         "@id": "urn:ngm:class:supply-chain",
@@ -431,16 +423,8 @@ alias:: CircularEconomy
         "label": "Green Finance"
       },
       {
-        "@id": "urn:ngm:class:green-growth",
-        "label": "Green Growth"
-      },
-      {
         "@id": "urn:ngm:class:industrial-symbiosis",
         "label": "Industrial Symbiosis"
-      },
-      {
-        "@id": "urn:ngm:class:resource-security",
-        "label": "Resource Security"
       },
       {
         "@id": "urn:ngm:class:sustainable-manufacturing",
@@ -463,10 +447,6 @@ alias:: CircularEconomy
       {
         "@id": "urn:ngm:class:ecodesign-for-sustainable-products-regulation",
         "label": "Ecodesign For Sustainable Products Regulation"
-      },
-      {
-        "@id": "urn:ngm:class:ellen-mac-arthur-foundation",
-        "label": "Ellen MacArthur Foundation"
       },
       {
         "@id": "urn:ngm:class:eu-green-deal",
@@ -593,7 +573,7 @@ alias:: CircularEconomy
         "label": "Ecodesign For Sustainable Products Regulation"
       },
       {
-        "@id": "urn:ngm:class:epcis",
+        "@id": "urn:ngm:class:gs1-epcis",
         "label": "EPCIS"
       },
       {
@@ -611,14 +591,6 @@ alias:: CircularEconomy
       {
         "@id": "urn:ngm:class:iso-14044",
         "label": "ISO 14044"
-      },
-      {
-        "@id": "urn:ngm:class:iso-14072",
-        "label": "ISO 14072"
-      },
-      {
-        "@id": "urn:ngm:class:iso-59004",
-        "label": "ISO 59004"
       }
     ],
     "bridgesTo": [

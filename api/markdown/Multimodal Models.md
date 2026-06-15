@@ -70,7 +70,7 @@ public:: true
         "label": "Cross Attention"
       },
       {
-        "@id": "urn:ngm:class:paired-training-data",
+        "@id": "urn:ngm:class:training-data",
         "label": "Paired Training Data"
       }
     ],
@@ -88,17 +88,13 @@ public:: true
         "label": "Image Captioning"
       },
       {
-        "@id": "urn:ngm:class:audio-visual-speech-recognition",
+        "@id": "urn:ngm:class:speech-recognition",
         "label": "Audio-Visual Speech Recognition"
-      },
-      {
-        "@id": "urn:ngm:class:multimodal-retrieval",
-        "label": "Multimodal Retrieval"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:vision-encoder",
+        "@id": "urn:ngm:class:encoder",
         "label": "Vision Encoder"
       },
       {
@@ -120,32 +116,18 @@ public:: true
         "label": "Modality-Specific Encoder"
       },
       {
-        "@id": "urn:ngm:class:projection-layer",
-        "label": "Projection Layer"
-      },
-      {
-        "@id": "urn:ngm:class:multimodal-decoder",
+        "@id": "urn:ngm:class:decoder",
         "label": "Multimodal Decoder"
       }
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:class:foundation-model",
         "label": "Foundation Models"
       },
       {
         "@id": "urn:ngm:class:self-supervised-learning",
         "label": "Self-Supervised Learning"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:unimodal-models",
-        "label": "Unimodal Models"
-      },
-      {
-        "@id": "urn:ngm:class:modality-specific-pipeline",
-        "label": "Modality-Specific Pipeline"
       }
     ],
     "relatedTo": [

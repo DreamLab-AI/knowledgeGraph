@@ -38,55 +38,115 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:data-parallelism", "label": "Data Parallelism"},
-      {"@id": "urn:ngm:class:model-parallelism", "label": "Model Parallelism"},
-      {"@id": "urn:ngm:class:tensor-parallelism", "label": "Tensor Parallelism"},
-      {"@id": "urn:ngm:class:pipeline-parallelism", "label": "Pipeline Parallelism"}
+      {
+        "@id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-parallelism",
+        "label": "Tensor Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:pipeline-parallelism",
+        "label": "Pipeline Parallelism"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:high-speed-interconnect", "label": "High-Speed Interconnect"},
-      {"@id": "urn:ngm:class:gradient-synchronisation", "label": "Gradient Synchronisation"}
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-synchronisation",
+        "label": "Gradient Synchronisation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:large-language-model-training", "label": "Large Language Model Training"},
-      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"},
-      {"@id": "urn:ngm:class:model-scaling", "label": "Model Scaling"}
+      {
+        "@id": "urn:ngm:class:large-language-model-training",
+        "label": "Large Language Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "@id": "urn:ngm:class:model-scaling",
+        "label": "Model Scaling"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
-      {"@id": "urn:ngm:class:collective-communication", "label": "Collective Communication"},
-      {"@id": "urn:ngm:class:mixed-precision-training", "label": "Mixed Precision Training"}
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:collective-communication",
+        "label": "Collective Communication"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:all-reduce-algorithm", "label": "All-Reduce Algorithm"},
-      {"@id": "urn:ngm:class:gradient-checkpointing", "label": "Gradient Checkpointing"}
+      {
+        "@id": "urn:ngm:class:gradient-checkpointing",
+        "label": "Gradient Checkpointing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:pytorch", "label": "PyTorch"},
-      {"@id": "urn:ngm:class:jax", "label": "JAX"},
-      {"@id": "urn:ngm:class:nvidia-nccl", "label": "NVIDIA NCCL"}
+      {
+        "@id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "label": "PyTorch"
+      },
+      {
+        "@id": "urn:ngm:class:jax",
+        "label": "JAX"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:single-device-training", "label": "Single-Device Training"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:checkpoint-recovery", "label": "Checkpoint Recovery"},
-      {"@id": "urn:ngm:class:zero-redundancy-optimiser", "label": "ZeRO Redundancy Optimiser"},
-      {"@id": "urn:ngm:class:megatron-lm", "label": "Megatron-LM"}
+      {
+        "@id": "urn:ngm:class:checkpoint-recovery",
+        "label": "Checkpoint Recovery"
+      },
+      {
+        "@id": "urn:ngm:class:megatron-lm",
+        "label": "Megatron-LM"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:hpc-cluster", "label": "HPC Cluster"}
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:parallel-model-training", "label": "Parallel Model Training"}
+    {
+      "@id": "urn:ngm:class:parallel-model-training",
+      "label": "Parallel Model Training"
+    }
   ],
   "quality": 0.74,
   "provenance": {

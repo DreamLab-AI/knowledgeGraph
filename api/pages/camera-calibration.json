@@ -70,12 +70,8 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:self-calibration",
+        "id": "urn:ngm:class:calibration",
         "label": "Self-Calibration"
-      },
-      {
-        "id": "urn:ngm:class:radiometric-calibration",
-        "label": "Radiometric Calibration"
       }
     ],
     "bridgesTo": [
@@ -84,11 +80,11 @@
         "label": "Robotics Perception"
       },
       {
-        "id": "urn:ngm:class:autonomous-vehicles",
+        "id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
       },
       {
-        "id": "urn:ngm:class:lidar-camera-fusion",
+        "id": "urn:ngm:class:lidar",
         "label": "LiDAR-Camera Fusion"
       }
     ],
@@ -96,14 +92,6 @@
       {
         "id": "urn:ngm:class:homography",
         "label": "Homography"
-      },
-      {
-        "id": "urn:ngm:class:non-linear-least-squares",
-        "label": "Non-Linear Least Squares"
-      },
-      {
-        "id": "urn:ngm:class:chessboard-pattern",
-        "label": "Chessboard Pattern"
       }
     ],
     "supports": [

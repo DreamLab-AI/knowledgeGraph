@@ -16,16 +16,7 @@
   "qualityScore": 0.0,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:query-predicate",
-        "label": "Query Predicate"
-      },
-      {
-        "id": "urn:ngm:class:query-result-set",
-        "label": "Query Result Set"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:database-schema",
@@ -62,10 +53,6 @@
       {
         "id": "urn:ngm:class:relational-database",
         "label": "Relational Database"
-      },
-      {
-        "id": "urn:ngm:class:index-structure",
-        "label": "Index Structure"
       }
     ],
     "implements": [
@@ -112,7 +99,7 @@
         "label": "REST API"
       },
       {
-        "id": "urn:ngm:class:query-execution-engine",
+        "id": "urn:ngm:class:query-processor",
         "label": "Query Execution Engine"
       }
     ],
@@ -132,7 +119,7 @@
         "label": "ISO/IEC 9075 (SQL Standard)"
       },
       {
-        "id": "urn:ngm:class:w3c-sparql",
+        "id": "urn:ngm:class:sparql",
         "label": "W3C SPARQL Specification"
       }
     ],

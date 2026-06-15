@@ -16,24 +16,7 @@
   "qualityScore": 0.76,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:cybersecurity-framework-core",
-        "label": "Cybersecurity Framework Core"
-      },
-      {
-        "id": "urn:ngm:class:cybersecurity-framework-tiers",
-        "label": "Cybersecurity Framework Tiers"
-      },
-      {
-        "id": "urn:ngm:class:cybersecurity-framework-profile",
-        "label": "Cybersecurity Framework Profile"
-      },
-      {
-        "id": "urn:ngm:class:cybersecurity-framework-govern-function",
-        "label": "Cybersecurity Framework Govern Function"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:risk-assessment",
@@ -52,10 +35,6 @@
       {
         "id": "urn:ngm:class:supply-chain-risk-management",
         "label": "Supply Chain Risk Management"
-      },
-      {
-        "id": "urn:ngm:class:security-governance",
-        "label": "Security Governance"
       },
       {
         "id": "urn:ngm:class:threat-detection",
@@ -106,10 +85,6 @@
       {
         "id": "urn:ngm:class:risk-register",
         "label": "Risk Register"
-      },
-      {
-        "id": "urn:ngm:class:control-mapping",
-        "label": "Control Mapping"
       }
     ],
     "supports": [
@@ -120,10 +95,6 @@
       {
         "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
-      },
-      {
-        "id": "urn:ngm:class:cyber-insurance",
-        "label": "Cyber Insurance"
       }
     ],
     "standardizedBy": [
@@ -134,7 +105,7 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:nist-special-publications",
+        "id": "urn:ngm:class:nist",
         "label": "NIST Special Publications"
       }
     ],

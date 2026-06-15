@@ -23,46 +23,119 @@ public:: true
   "definition": "Manufacturing automation is the systematic application of control technologies, robotics, sensors, machine vision, and software to perform production tasks with minimal human intervention across discrete, process, and hybrid manufacturing environments. It encompasses programmable logic controllers (PLCs), industrial robots, computer numerical control (CNC) machines, distributed control systems (DCS), and integrated supervisory architectures that coordinate material flow, quality inspection, and assembly operations. Modern implementations leverage AI-driven process optimisation, digital twin synchronisation, and edge-cloud hybrid architectures to achieve adaptive, self-correcting production lines capable of real-time reconfiguration. The discipline aims to increase throughput, improve consistency, reduce cycle times, and enhance worker safety by reassigning operators away from hazardous or highly repetitive tasks.",
   "domain": "robotics",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:industrial-automation",
+      "label": "IndustrialAutomation"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"},
-      {"@id": "urn:ngm:class:programmable-logic-controller", "label": "Programmable Logic Controller"},
-      {"@id": "urn:ngm:class:cnc-machining", "label": "CNC Machining"},
-      {"@id": "urn:ngm:class:control-system", "label": "Control System"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:machine-vision", "label": "Machine Vision"}
+      {
+        "@id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "@id": "urn:ngm:class:programmable-logic-controller",
+        "label": "Programmable Logic Controller"
+      },
+      {
+        "@id": "urn:ngm:class:cnc-machining",
+        "label": "CNC Machining"
+      },
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:machine-vision",
+        "label": "Machine Vision"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"},
-      {"@id": "urn:ngm:class:scada", "label": "SCADA"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "@id": "urn:ngm:class:scada",
+        "label": "SCADA"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"},
-      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"},
-      {"@id": "urn:ngm:class:mass-customisation", "label": "Mass Customisation"},
-      {"@id": "urn:ngm:class:flexible-manufacturing", "label": "Flexible Manufacturing"}
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      },
+      {
+        "@id": "urn:ngm:class:mass-customisation",
+        "label": "Mass Customisation"
+      },
+      {
+        "@id": "urn:ngm:class:flexible-manufacturing",
+        "label": "Flexible Manufacturing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:smart-manufacturing", "label": "Smart Manufacturing"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:precision-manufacturing", "label": "Precision Manufacturing"},
-      {"@id": "urn:ngm:class:collaborative-robotics", "label": "Collaborative Robotics"},
-      {"@id": "urn:ngm:class:manufacturing-execution-system", "label": "Manufacturing Execution System"}
+      {
+        "@id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:precision-manufacturing",
+        "label": "Precision Manufacturing"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-robotics",
+        "label": "Collaborative Robotics"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:isa-95", "label": "ISA-95"},
-      {"@id": "urn:ngm:class:iso-10218", "label": "ISO 10218"}
+      {
+        "@id": "urn:ngm:class:isa-95",
+        "label": "ISA-95"
+      },
+      {
+        "@id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:factory-automation", "label": "Factory Automation"},
-    {"@id": "urn:ngm:class:industrial-automation-manufacturing", "label": "Industrial Automation Manufacturing"}
+    {
+      "@id": "urn:ngm:class:factory-automation",
+      "label": "Factory Automation"
+    },
+    {
+      "@id": "urn:ngm:class:industrial-automation-manufacturing",
+      "label": "Industrial Automation Manufacturing"
+    }
   ],
   "quality": 0.74,
   "provenance": {

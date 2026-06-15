@@ -114,10 +114,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:anonymization",
-        "label": "Anonymization"
-      },
-      {
         "@id": "urn:ngm:class:audit-logging",
         "label": "Audit Logging"
       },

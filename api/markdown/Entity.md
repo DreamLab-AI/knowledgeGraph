@@ -60,56 +60,137 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:autonomous-system", "label": "Autonomous System"},
-      {"@id": "urn:ngm:class:attribute", "label": "Attribute"},
-      {"@id": "urn:ngm:class:state", "label": "State"}
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      },
+      {
+        "@id": "urn:ngm:class:state",
+        "label": "State"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:world-model", "label": "World Model"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:world-model",
+        "label": "World Model"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:unique-identifier", "label": "Unique Identifier"},
-      {"@id": "urn:ngm:class:schema", "label": "Schema"}
+      {
+        "@id": "urn:ngm:class:unique-identifier",
+        "label": "Unique Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:schema",
+        "label": "Schema"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:semantic-reasoning", "label": "Semantic Reasoning"},
-      {"@id": "urn:ngm:class:situational-awareness", "label": "Situational Awareness"}
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-reasoning-engine",
+        "label": "Semantic Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:situational-awareness",
+        "label": "Situational Awareness"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:rdf", "label": "RDF"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:embodied-ai", "label": "Embodied AI"},
-      {"@id": "urn:ngm:class:provenance", "label": "Provenance"},
-      {"@id": "urn:ngm:class:lifecycle-management", "label": "Lifecycle Management"}
+      {
+        "@id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      },
+      {
+        "@id": "urn:ngm:class:provenance",
+        "label": "Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:lifecycle-management",
+        "label": "Lifecycle Management"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:agent", "label": "Agent"},
-      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
-      {"@id": "urn:ngm:class:owl-individual", "label": "OWL Individual"},
-      {"@id": "urn:ngm:class:object-identity", "label": "Object Identity"}
+      {
+        "@id": "urn:ngm:class:agent",
+        "label": "Agent"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:relation", "label": "Relation"},
-      {"@id": "urn:ngm:class:property", "label": "Property"}
+      {
+        "@id": "urn:ngm:class:relation",
+        "label": "Relation"
+      },
+      {
+        "@id": "urn:ngm:class:property",
+        "label": "Property"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:decentralised-identifier", "label": "Decentralised Identifier"}
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:thing", "label": "Thing"},
-    {"@id": "urn:ngm:class:object", "label": "Object"},
-    {"@id": "urn:ngm:class:resource", "label": "Resource"}
+    {
+      "@id": "urn:ngm:class:thing",
+      "label": "Thing"
+    },
+    {
+      "@id": "urn:ngm:class:object",
+      "label": "Object"
+    },
+    {
+      "@id": "urn:ngm:class:resource",
+      "label": "Resource"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

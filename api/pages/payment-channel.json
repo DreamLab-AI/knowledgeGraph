@@ -18,16 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:commitment-transaction",
-        "label": "Commitment Transaction"
-      },
-      {
         "id": "urn:ngm:class:revocation-mechanism",
         "label": "Revocation Mechanism"
-      },
-      {
-        "id": "urn:ngm:class:funding-transaction",
-        "label": "Funding Transaction"
       }
     ],
     "requires": [
@@ -88,10 +80,6 @@
       {
         "id": "urn:ngm:class:machine-economy",
         "label": "Machine Economy"
-      },
-      {
-        "id": "urn:ngm:class:iot-payments",
-        "label": "IoT Payments"
       }
     ],
     "uses": [

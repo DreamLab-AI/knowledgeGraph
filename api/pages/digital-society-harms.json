@@ -20,49 +20,8 @@
   "qualityScore": 0.52,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:child-safety-harms",
-        "label": "Child Safety Harms"
-      },
-      {
-        "id": "urn:ngm:class:economic-harms",
-        "label": "Economic Harms"
-      },
-      {
-        "id": "urn:ngm:class:environmental-harms",
-        "label": "Environmental Harms"
-      },
-      {
-        "id": "urn:ngm:class:human-rights-harms",
-        "label": "Human Rights Harms"
-      },
-      {
-        "id": "urn:ngm:class:information-harms",
-        "label": "Information Harms"
-      },
-      {
-        "id": "urn:ngm:class:labour-harms",
-        "label": "Labour Harms"
-      },
-      {
-        "id": "urn:ngm:class:psychological-harms",
-        "label": "Psychological Harms"
-      },
-      {
-        "id": "urn:ngm:class:social-harms",
-        "label": "Social Harms"
-      }
-    ],
+    "hasPart": [],
     "requires": [
-      {
-        "id": "urn:ngm:class:civil-society-oversight",
-        "label": "Civil Society Oversight"
-      },
-      {
-        "id": "urn:ngm:class:evidence-base",
-        "label": "Evidence Base"
-      },
       {
         "id": "urn:ngm:class:harm-taxonomy",
         "label": "Harm Taxonomy"
@@ -78,20 +37,8 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:harm-mitigation",
-        "label": "Harm Mitigation"
-      },
-      {
-        "id": "urn:ngm:class:online-safety-regulation",
-        "label": "Online Safety Regulation"
-      },
-      {
         "id": "urn:ngm:class:platform-liability",
         "label": "Platform Liability"
-      },
-      {
-        "id": "urn:ngm:class:user-empowerment",
-        "label": "User Empowerment"
       },
       {
         "id": "urn:ngm:class:algorithmic-accountability",
@@ -99,28 +46,7 @@
       }
     ],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:ada-lovelace-harms-framework",
-        "label": "Ada Lovelace Harms Framework"
-      },
-      {
-        "id": "urn:ngm:class:council-of-europe-huderia",
-        "label": "Council of Europe HUDERIA"
-      },
-      {
-        "id": "urn:ngm:class:ico-children-code",
-        "label": "ICO Children Code"
-      },
-      {
-        "id": "urn:ngm:class:mit-ai-risk-repository-taxonomy",
-        "label": "MIT AI Risk Repository Taxonomy"
-      },
-      {
-        "id": "urn:ngm:class:ofcom-online-safety-act-codes",
-        "label": "Ofcom Online Safety Act Codes"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [],
     "bridgesTo": [
       {
@@ -130,16 +56,12 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:algorithmic-audit",
+        "id": "urn:ngm:class:algorithmic-auditing",
         "label": "Algorithmic Audit"
       },
       {
         "id": "urn:ngm:class:impact-assessment",
         "label": "Impact Assessment"
-      },
-      {
-        "id": "urn:ngm:class:independent-research",
-        "label": "Independent Research"
       },
       {
         "id": "urn:ngm:class:transparency-reporting",
@@ -154,36 +76,12 @@
       {
         "id": "urn:ngm:class:child-safety-online",
         "label": "Child Safety Online"
-      },
-      {
-        "id": "urn:ngm:class:democratic-resilience",
-        "label": "Democratic Resilience"
-      },
-      {
-        "id": "urn:ngm:class:digital-rights-advocacy",
-        "label": "Digital Rights Advocacy"
-      },
-      {
-        "id": "urn:ngm:class:trauma-informed-policy",
-        "label": "Trauma-Informed Policy"
-      },
-      {
-        "id": "urn:ngm:class:worker-protection",
-        "label": "Worker Protection"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:council-of-europe-framework-convention-on-ai",
-        "label": "Council of Europe Framework Convention on AI"
-      },
-      {
-        "id": "urn:ngm:class:eu-digital-services-act",
+        "id": "urn:ngm:class:digital-services-act",
         "label": "EU Digital Services Act"
-      },
-      {
-        "id": "urn:ngm:class:ico-age-appropriate-design-code",
-        "label": "ICO Age-Appropriate Design Code"
       },
       {
         "id": "urn:ngm:class:online-safety-act-2023",

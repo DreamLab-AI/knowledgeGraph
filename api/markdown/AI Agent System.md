@@ -798,19 +798,11 @@ public:: true
         "label": "Decision Engine"
       },
       {
-        "@id": "urn:ngm:class:goal-planner",
-        "label": "Goal Planner"
-      },
-      {
         "@id": "urn:ngm:class:knowledge-base",
         "label": "Knowledge Base"
       },
       {
-        "@id": "urn:ngm:class:memory-system",
-        "label": "Memory System"
-      },
-      {
-        "@id": "urn:ngm:class:tool-use-system",
+        "@id": "urn:ngm:class:tool-use",
         "label": "Tool Use System"
       },
       {
@@ -832,20 +824,12 @@ public:: true
         "label": "Action Space"
       },
       {
-        "@id": "urn:ngm:class:api-access",
-        "label": "API Access"
-      },
-      {
         "@id": "urn:ngm:class:authentication-system",
         "label": "Authentication System"
       },
       {
         "@id": "urn:ngm:class:environment-model",
         "label": "Environment Model"
-      },
-      {
-        "@id": "urn:ngm:class:resource-budget",
-        "label": "Resource Budget"
       },
       {
         "@id": "urn:ngm:class:sensor-input",
@@ -858,7 +842,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:adaptive-behavior",
+        "@id": "urn:ngm:class:adaptive-behaviour",
         "label": "Adaptive Behavior"
       },
       {
@@ -870,16 +854,8 @@ public:: true
         "label": "Browser Automation"
       },
       {
-        "@id": "urn:ngm:class:database-interaction",
-        "label": "Database Interaction"
-      },
-      {
-        "@id": "urn:ngm:class:file-system-access",
+        "@id": "urn:ngm:class:file-system",
         "label": "File System Access"
-      },
-      {
-        "@id": "urn:ngm:class:goal-achievement",
-        "label": "Goal Achievement"
       },
       {
         "@id": "urn:ngm:class:multi-agent-coordination",
@@ -902,10 +878,6 @@ public:: true
       {
         "@id": "urn:ngm:class:meta-learning",
         "label": "Meta-Learning"
-      },
-      {
-        "@id": "urn:ngm:class:planning-algorithm",
-        "label": "Planning Algorithm"
       },
       {
         "@id": "urn:ngm:class:transfer-learning",

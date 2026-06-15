@@ -386,11 +386,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:cloud-io-t-platform",
-        "label": "Cloud IoT Platform"
-      },
-      {
-        "@id": "urn:ngm:class:data-aggregation-layer",
+        "@id": "urn:ngm:class:data-aggregation",
         "label": "Data Aggregation Layer"
       },
       {
@@ -398,7 +394,7 @@ public:: true
         "label": "Edge Gateway"
       },
       {
-        "@id": "urn:ngm:class:power-management-unit",
+        "@id": "urn:ngm:class:power-management",
         "label": "Power Management Unit"
       },
       {
@@ -406,11 +402,7 @@ public:: true
         "label": "Security Module"
       },
       {
-        "@id": "urn:ngm:class:sensor-node",
-        "label": "Sensor Node"
-      },
-      {
-        "@id": "urn:ngm:class:time-synchronisation-protocol",
+        "@id": "urn:ngm:class:time-synchronisation",
         "label": "Time Synchronisation Protocol"
       },
       {
@@ -442,10 +434,6 @@ public:: true
       {
         "@id": "urn:ngm:class:mqtt",
         "label": "MQTT"
-      },
-      {
-        "@id": "urn:ngm:class:power-source",
-        "label": "Power Source"
       },
       {
         "@id": "urn:ngm:class:radio-transceiver",
@@ -546,10 +534,6 @@ public:: true
         "label": "MQTT"
       },
       {
-        "@id": "urn:ngm:class:ota-firmware-update",
-        "label": "OTA Firmware Update"
-      },
-      {
         "@id": "urn:ngm:class:tls",
         "label": "TLS"
       },
@@ -632,24 +616,20 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:3-gpp-nb-io-t",
+        "@id": "urn:ngm:class:nb-io-t",
         "label": "3GPP NB-IoT"
       },
       {
-        "@id": "urn:ngm:class:etsi-en-303-645",
+        "@id": "urn:ngm:class:etsi",
         "label": "ETSI EN 303 645"
       },
       {
-        "@id": "urn:ngm:class:iec-62591-wireless-hart",
+        "@id": "urn:ngm:class:wireless-hart",
         "label": "IEC 62591 WirelessHART"
       },
       {
         "@id": "urn:ngm:class:ieee-802-15-4",
         "label": "IEEE 802.15.4"
-      },
-      {
-        "@id": "urn:ngm:class:ietf-rfc-1883",
-        "label": "IETF RFC 1883"
       },
       {
         "@id": "urn:ngm:class:ietf-rfc-7252",
@@ -660,7 +640,7 @@ public:: true
         "label": "LoRa Alliance"
       },
       {
-        "@id": "urn:ngm:class:matter-csa",
+        "@id": "urn:ngm:class:matter-protocol",
         "label": "Matter CSA"
       }
     ],

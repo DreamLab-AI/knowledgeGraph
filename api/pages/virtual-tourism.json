@@ -26,7 +26,7 @@
         "label": "Immersive Experience"
       },
       {
-        "id": "urn:ngm:class:heritage-site-preservation",
+        "id": "urn:ngm:class:cultural-heritage-preservation",
         "label": "Heritage Site Preservation"
       }
     ],
@@ -68,12 +68,7 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:physical-travel",
-        "label": "Physical Travel"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:spatial-computing",
@@ -102,7 +97,7 @@
         "label": "Augmented Reality"
       },
       {
-        "id": "urn:ngm:class:3d-modeling",
+        "id": "urn:ngm:class:3-d-modeling",
         "label": "3D Modeling"
       },
       {
@@ -111,10 +106,6 @@
       }
     ],
     "supports": [
-      {
-        "id": "urn:ngm:class:pre-trip-planning",
-        "label": "Pre-Trip Planning"
-      },
       {
         "id": "urn:ngm:class:hospitality-industry",
         "label": "Hospitality Industry"

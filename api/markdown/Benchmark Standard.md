@@ -78,20 +78,6 @@ public:: true
     "label": "Technical Standard"
   },
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:measurement-metric",
-        "label": "Measurement Metric"
-      },
-      {
-        "@id": "urn:ngm:class:test-workload",
-        "label": "Test Workload"
-      },
-      {
-        "@id": "urn:ngm:class:scoring-methodology",
-        "label": "Scoring Methodology"
-      }
-    ],
     "partOf": [
       {
         "@id": "urn:ngm:class:quality-assurance",
@@ -118,11 +104,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:performance-comparison",
-        "label": "Performance Comparison"
-      },
-      {
-        "@id": "urn:ngm:class:system-evaluation",
+        "@id": "urn:ngm:class:model-evaluation",
         "label": "System Evaluation"
       },
       {
@@ -130,7 +112,7 @@ public:: true
         "label": "Vendor Selection"
       },
       {
-        "@id": "urn:ngm:class:performance-regression-detection",
+        "@id": "urn:ngm:class:regression",
         "label": "Performance Regression Detection"
       }
     ],
@@ -138,15 +120,11 @@ public:: true
       {
         "@id": "urn:ngm:class:standards-body",
         "label": "Standards Body"
-      },
-      {
-        "@id": "urn:ngm:class:industry-consensus",
-        "label": "Industry Consensus"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:evaluation-framework",
+        "@id": "urn:ngm:class:evaluation-harness",
         "label": "Evaluation Framework"
       }
     ],
@@ -166,47 +144,33 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:procurement-decision",
-        "label": "Procurement Decision"
-      },
-      {
         "@id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
       }
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:spec-organization",
+        "@id": "urn:ngm:class:standards-organization",
         "label": "SPEC Organization"
       },
       {
-        "@id": "urn:ngm:class:iso-iec-jtc1",
+        "@id": "urn:ngm:class:iso-iec-jtc-1",
         "label": "ISO/IEC JTC1"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:proprietary-test",
-        "label": "Proprietary Test"
-      },
-      {
-        "@id": "urn:ngm:class:synthetic-benchmark",
-        "label": "Synthetic Benchmark"
       }
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:ai-model-evaluation",
+        "@id": "urn:ngm:class:model-evaluation",
         "label": "AI Model Evaluation"
       },
       {
-        "@id": "urn:ngm:class:mlperf-benchmark",
+        "@id": "urn:ngm:class:benchmark-evaluation",
         "label": "MLPerf Benchmark"
       }
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:performance-engineering",
+        "@id": "urn:ngm:class:performance",
         "label": "Performance Engineering"
       },
       {

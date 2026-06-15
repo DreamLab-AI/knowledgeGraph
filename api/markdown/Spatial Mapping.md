@@ -46,51 +46,127 @@ public:: true
   },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
-      {"@id": "urn:ngm:class:computer-vision-system", "label": "Computer Vision System"},
-      {"@id": "urn:ngm:class:depth-camera", "label": "Depth Camera"},
-      {"@id": "urn:ngm:class:inertial-measurement-unit", "label": "Inertial Measurement Unit"},
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
-      {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"}
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision-system",
+        "label": "Computer Vision System"
+      },
+      {
+        "@id": "urn:ngm:class:depth-camera",
+        "label": "Depth Camera"
+      },
+      {
+        "@id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:spatial-anchor", "label": "Spatial Anchor"},
-      {"@id": "urn:ngm:class:occlusion", "label": "Occlusion"},
-      {"@id": "urn:ngm:class:indoor-navigation", "label": "Indoor Navigation"},
-      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-anchor",
+        "label": "Spatial Anchor"
+      },
+      {
+        "@id": "urn:ngm:class:indoor-navigation",
+        "label": "Indoor Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:voxel-grid", "label": "Voxel Grid"},
-      {"@id": "urn:ngm:class:surface-mesh", "label": "Surface Mesh"},
-      {"@id": "urn:ngm:class:semantic-map", "label": "Semantic Map"},
-      {"@id": "urn:ngm:class:loop-closure-detection", "label": "Loop Closure Detection"}
+      {
+        "@id": "urn:ngm:class:voxel-grid",
+        "label": "Voxel Grid"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-map",
+        "label": "Semantic Map"
+      },
+      {
+        "@id": "urn:ngm:class:loop-closure-detection",
+        "label": "Loop Closure Detection"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"},
-      {"@id": "urn:ngm:class:odometry", "label": "Odometry"}
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:odometry",
+        "label": "Odometry"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:gps-positioning", "label": "GPS Positioning"}
+      {
+        "@id": "urn:ngm:class:gps",
+        "label": "GPS Positioning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ar-technology", "label": "AR Technology"},
-      {"@id": "urn:ngm:class:scene-understanding", "label": "Scene Understanding"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:ar-technology",
+        "label": "AR Technology"
+      },
+      {
+        "@id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:3d-environment-reconstruction", "label": "3D Environment Reconstruction"},
-    {"@id": "urn:ngm:class:world-mapping", "label": "World Mapping"}
+    {
+      "@id": "urn:ngm:class:3d-environment-reconstruction",
+      "label": "3D Environment Reconstruction"
+    },
+    {
+      "@id": "urn:ngm:class:world-mapping",
+      "label": "World Mapping"
+    }
   ],
   "quality": 0.72,
   "provenance": {

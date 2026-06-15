@@ -90,20 +90,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:exchange-platforms",
-        "label": "Exchange Platforms"
-      },
-      {
         "@id": "urn:ngm:class:wallet-infrastructure",
         "label": "Wallet Infrastructure"
       },
       {
         "@id": "urn:ngm:class:decentralized-exchange",
         "label": "Decentralized Exchange"
-      },
-      {
-        "@id": "urn:ngm:class:custodial-service",
-        "label": "Custodial Service"
       },
       {
         "@id": "urn:ngm:class:blockchain-oracle",
@@ -138,7 +130,7 @@ public:: true
         "label": "Digital Ownership"
       },
       {
-        "@id": "urn:ngm:class:cross-border-payment",
+        "@id": "urn:ngm:class:cross-border-payments",
         "label": "Cross-Border Payment"
       },
       {

@@ -22,16 +22,12 @@
         "label": "HNSW Index"
       },
       {
-        "id": "urn:ngm:class:inverted-file-index",
+        "id": "urn:ngm:class:inverted-index",
         "label": "Inverted File Index"
       },
       {
         "id": "urn:ngm:class:product-quantisation",
         "label": "Product Quantisation"
-      },
-      {
-        "id": "urn:ngm:class:metadata-filter",
-        "label": "Metadata Filter"
       }
     ],
     "requires": [
@@ -44,7 +40,7 @@
         "label": "Vector Embedding"
       },
       {
-        "id": "urn:ngm:class:approximate-nearest-neighbour-search",
+        "id": "urn:ngm:class:nearest-neighbor-search",
         "label": "Approximate Nearest Neighbour Search"
       }
     ],
@@ -76,10 +72,6 @@
       {
         "id": "urn:ngm:class:relational-database",
         "label": "Relational Database"
-      },
-      {
-        "id": "urn:ngm:class:document-database",
-        "label": "Document Database"
       },
       {
         "id": "urn:ngm:class:search-engine",

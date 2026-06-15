@@ -17,16 +17,7 @@
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [
-      {
-        "id": "urn:ngm:class:binding-property",
-        "label": "Binding Property"
-      },
-      {
-        "id": "urn:ngm:class:hiding-property",
-        "label": "Hiding Property"
-      }
-    ],
+    "requires": [],
     "enables": [
       {
         "id": "urn:ngm:class:zk-snarks",
@@ -45,7 +36,7 @@
         "label": "Cryptographic Protocol"
       },
       {
-        "id": "urn:ngm:class:confidential-transaction",
+        "id": "urn:ngm:class:confidential-transactions",
         "label": "Confidential Transaction"
       },
       {
@@ -53,7 +44,7 @@
         "label": "Atomic Swap"
       },
       {
-        "id": "urn:ngm:class:secure-multiparty-computation",
+        "id": "urn:ngm:class:secure-multi-party-computation",
         "label": "Secure Multiparty Computation"
       }
     ],
@@ -93,7 +84,7 @@
         "label": "AI Agent System"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential",
+        "id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       }
     ],

@@ -68,21 +68,12 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:data-source",
-        "label": "Data Source"
-      },
-      {
         "id": "urn:ngm:class:monitoring",
         "label": "Monitoring"
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:ad-hoc-query",
-        "label": "Ad Hoc Query"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:blockchain",
@@ -116,10 +107,6 @@
       }
     ],
     "supports": [
-      {
-        "id": "urn:ngm:class:data-reliability",
-        "label": "Data Reliability"
-      },
       {
         "id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail"

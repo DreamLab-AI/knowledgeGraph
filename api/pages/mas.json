@@ -26,7 +26,7 @@
         "label": "Agent Communication Language"
       },
       {
-        "id": "urn:ngm:class:coordination-mechanism",
+        "id": "urn:ngm:class:coordination-mechanisms",
         "label": "Coordination Mechanism"
       }
     ],
@@ -50,7 +50,7 @@
         "label": "Participant Coordination"
       },
       {
-        "id": "urn:ngm:class:emergent-behaviour",
+        "id": "urn:ngm:class:emergent-behavior",
         "label": "Emergent Behaviour"
       },
       {
@@ -71,7 +71,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:centralised-control-system",
+        "id": "urn:ngm:class:control-system",
         "label": "Centralised Control System"
       },
       {

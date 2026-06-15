@@ -23,53 +23,99 @@ public:: true
   "definition": "FASB Accounting Standards Update 2023-08 is a US accounting standard issued by the Financial Accounting Standards Board that requires public companies to measure certain cryptocurrency assets at fair value and recognise gains and losses in net income each reporting period. The standard applies to fungible crypto assets listed on active markets, effective for fiscal years beginning after 15 December 2024. It represents a significant departure from the previous indefinite-lived intangible asset treatment that suppressed recognised gains.",
   "domain": "finance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:compliance-standards", "label": "Compliance Standards"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:compliance-standards",
+      "label": "Compliance Standards"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
-      {"@id": "urn:ngm:class:digital-asset-standards", "label": "Digital Asset Standards"},
-      {"@id": "urn:ngm:class:us-gaap", "label": "US GAAP"},
-      {"@id": "urn:ngm:class:corporate-treasury", "label": "Corporate Treasury"},
-      {"@id": "urn:ngm:class:bitcoin", "label": "Bitcoin"}
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-standards",
+        "label": "Digital Asset Standards"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:regulatory-reporting", "label": "Regulatory Reporting"},
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
-      {"@id": "urn:ngm:class:financial-transparency", "label": "Financial Transparency"},
-      {"@id": "urn:ngm:class:investor-decision-making", "label": "Investor Decision-Making"}
+      {
+        "@id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:financial-transparency",
+        "label": "Financial Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:decision-making",
+        "label": "Investor Decision-Making"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:fair-value-measurement", "label": "Fair Value Measurement"},
-      {"@id": "urn:ngm:class:active-market", "label": "Active Market"},
-      {"@id": "urn:ngm:class:fungible-token", "label": "Fungible Token"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:mark-to-market-accounting", "label": "Mark-to-Market Accounting"},
-      {"@id": "urn:ngm:class:fair-value-accounting", "label": "Fair Value Accounting"}
-    ],
-    "standardizedBy": [
-      {"@id": "urn:ngm:class:financial-accounting-standards-board", "label": "Financial Accounting Standards Board"}
+      {
+        "@id": "urn:ngm:class:fungible-token",
+        "label": "Fungible Token"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:financial-stability", "label": "Financial Stability"},
-      {"@id": "urn:ngm:class:financial-services", "label": "Financial Services"},
-      {"@id": "urn:ngm:class:digital-asset-market", "label": "Digital Asset Market"},
-      {"@id": "urn:ngm:class:institutional-adoption", "label": "Institutional Adoption"}
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "@id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-market",
+        "label": "Digital Asset Market"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-adoption",
+        "label": "Institutional Adoption"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:mi-ca-regulation", "label": "MiCA Regulation"},
-      {"@id": "urn:ngm:class:cost-model-accounting", "label": "Cost Model Accounting"},
-      {"@id": "urn:ngm:class:intangible-asset-accounting", "label": "Intangible Asset Accounting"}
+      {
+        "@id": "urn:ngm:class:mi-ca-regulation",
+        "label": "MiCA Regulation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:governance", "label": "Governance"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:accounting-standards-update-2023-08", "label": "Accounting Standards Update 2023-08"}
+    {
+      "@id": "urn:ngm:class:accounting-standards-update-2023-08",
+      "label": "Accounting Standards Update 2023-08"
+    }
   ],
   "quality": 0.8,
   "provenance": {

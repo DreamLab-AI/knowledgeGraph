@@ -21,10 +21,6 @@
       {
         "id": "urn:ngm:class:violation-detection",
         "label": "Violation Detection"
-      },
-      {
-        "id": "urn:ngm:class:penalty-mechanism",
-        "label": "Penalty Mechanism"
       }
     ],
     "enables": [
@@ -43,10 +39,6 @@
       {
         "id": "urn:ngm:class:rule-of-law",
         "label": "Rule of Law"
-      },
-      {
-        "id": "urn:ngm:class:deterrence",
-        "label": "Deterrence"
       }
     ],
     "dependsOn": [],
@@ -61,10 +53,6 @@
       }
     ],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:voluntary-compliance",
-        "label": "Voluntary Compliance"
-      },
       {
         "id": "urn:ngm:class:self-regulation",
         "label": "Self-Regulation"

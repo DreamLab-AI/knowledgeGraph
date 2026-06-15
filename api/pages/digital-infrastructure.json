@@ -48,11 +48,7 @@
         "label": "Power Grid"
       },
       {
-        "id": "urn:ngm:class:physical-network",
-        "label": "Physical Network"
-      },
-      {
-        "id": "urn:ngm:class:cooling-systems",
+        "id": "urn:ngm:class:cooling-system",
         "label": "Cooling Systems"
       }
     ],
@@ -68,17 +64,9 @@
       {
         "id": "urn:ngm:class:cloud-computing",
         "label": "Cloud Computing"
-      },
-      {
-        "id": "urn:ngm:class:digital-services",
-        "label": "Digital Services"
       }
     ],
     "dependsOn": [
-      {
-        "id": "urn:ngm:class:internet-protocols",
-        "label": "Internet Protocols"
-      },
       {
         "id": "urn:ngm:class:open-source-software",
         "label": "Open Source Software"
@@ -94,12 +82,7 @@
         "label": "Containerisation"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:physical-infrastructure",
-        "label": "Physical Infrastructure"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:blockchain",
@@ -116,7 +99,7 @@
         "label": "Kubernetes"
       },
       {
-        "id": "urn:ngm:class:serverless-computing",
+        "id": "urn:ngm:class:serverless-architecture",
         "label": "Serverless Computing"
       }
     ],

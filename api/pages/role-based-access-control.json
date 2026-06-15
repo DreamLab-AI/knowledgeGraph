@@ -18,14 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:role-hierarchy",
-        "label": "Role Hierarchy"
-      },
-      {
-        "id": "urn:ngm:class:permission-assignment",
-        "label": "Permission Assignment"
-      },
-      {
         "id": "urn:ngm:class:separation-of-duties",
         "label": "Separation of Duties"
       }
@@ -93,10 +85,6 @@
       {
         "id": "urn:ngm:class:directory-service",
         "label": "Directory Service"
-      },
-      {
-        "id": "urn:ngm:class:scim-provisioning",
-        "label": "SCIM Provisioning"
       }
     ],
     "supports": [
@@ -129,7 +117,7 @@
         "label": "Open Policy Agent"
       },
       {
-        "id": "urn:ngm:class:kubernetes-rbac",
+        "id": "urn:ngm:class:kubernetes",
         "label": "Kubernetes RBAC"
       }
     ]

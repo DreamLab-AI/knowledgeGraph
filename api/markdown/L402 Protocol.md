@@ -67,10 +67,6 @@ public:: true
         "label": "Lightning Network"
       },
       {
-        "@id": "urn:ngm:class:macaroon-token",
-        "label": "Macaroon Token"
-      },
-      {
         "@id": "urn:ngm:class:payment-preimage",
         "label": "Payment Preimage"
       }
@@ -85,22 +81,18 @@ public:: true
         "label": "Pay-Per-Request"
       },
       {
-        "@id": "urn:ngm:class:metered-api",
+        "@id": "urn:ngm:class:api",
         "label": "Metered API"
       },
       {
-        "@id": "urn:ngm:class:machine-to-machine-payment",
+        "@id": "urn:ngm:class:machine-to-machine-payments",
         "label": "Machine-to-Machine Payment"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:http-402",
+        "@id": "urn:ngm:class:http",
         "label": "HTTP 402"
-      },
-      {
-        "@id": "urn:ngm:class:bolt11-invoice",
-        "label": "BOLT11 Invoice"
       },
       {
         "@id": "urn:ngm:class:bearer-token",
@@ -113,11 +105,11 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:http-authentication-scheme",
+        "@id": "urn:ngm:class:http",
         "label": "HTTP Authentication Scheme"
       },
       {
-        "@id": "urn:ngm:class:payment-channel-protocol",
+        "@id": "urn:ngm:class:payment-channel",
         "label": "Payment Channel Protocol"
       }
     ],
@@ -131,7 +123,7 @@ public:: true
         "label": "Content Monetisation"
       },
       {
-        "@id": "urn:ngm:class:decentralised-access-control",
+        "@id": "urn:ngm:class:access-control",
         "label": "Decentralised Access Control"
       }
     ],
@@ -153,10 +145,6 @@ public:: true
       {
         "@id": "urn:ngm:class:api-key-authentication",
         "label": "API Key Authentication"
-      },
-      {
-        "@id": "urn:ngm:class:subscription-model",
-        "label": "Subscription Model"
       }
     ],
     "bridgesTo": [
@@ -165,7 +153,7 @@ public:: true
         "label": "AI Agent"
       },
       {
-        "@id": "urn:ngm:class:autonomous-agent-economy",
+        "@id": "urn:ngm:class:autonomous-agent",
         "label": "Autonomous Agent Economy"
       },
       {

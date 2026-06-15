@@ -36,27 +36,15 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:caching-infrastructure",
-        "label": "Caching Infrastructure"
-      },
-      {
         "id": "urn:ngm:class:database-system",
         "label": "Database System"
       },
       {
-        "id": "urn:ngm:class:replication-mechanisms",
+        "id": "urn:ngm:class:replication",
         "label": "Replication Mechanisms"
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:cross-platform-synchronization",
-        "label": "Cross-Platform Synchronization"
-      },
-      {
-        "id": "urn:ngm:class:state-persistence",
-        "label": "State Persistence"
-      },
       {
         "id": "urn:ngm:class:data-analytics",
         "label": "Data Analytics"

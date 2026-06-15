@@ -24,10 +24,6 @@
       {
         "id": "urn:ngm:class:grasp-planning",
         "label": "Grasp Planning"
-      },
-      {
-        "id": "urn:ngm:class:contact-rich-control",
-        "label": "Contact-Rich Control"
       }
     ],
     "requires": [
@@ -56,10 +52,6 @@
       {
         "id": "urn:ngm:class:humanoid-robot",
         "label": "Humanoid Robot"
-      },
-      {
-        "id": "urn:ngm:class:robotic-assembly",
-        "label": "Robotic Assembly"
       }
     ],
     "dependsOn": [
@@ -77,10 +69,6 @@
       {
         "id": "urn:ngm:class:pick-and-place",
         "label": "Pick and Place"
-      },
-      {
-        "id": "urn:ngm:class:rigid-gripper",
-        "label": "Rigid Gripper"
       }
     ],
     "bridgesTo": [

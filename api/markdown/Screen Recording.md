@@ -23,51 +23,93 @@ public:: true
   "definition": "Screen recording is the capture of pixel-level output from a computer display — including cursor movement, application windows, and system UI — encoded into a video stream for later playback, streaming, or analysis. It combines display capture with optional audio recording and may include region selection, frame-rate control, hardware-accelerated encoding, and metadata tagging.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": {"@id": "urn:ngm:class:screen-capture", "label": "Screen Capture"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:screen-capture",
+    "label": "Screen Capture"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:video-encoder", "label": "Video Encoder"},
-      {"@id": "urn:ngm:class:audio-capture", "label": "Audio Capture"},
-      {"@id": "urn:ngm:class:frame-buffer", "label": "Frame Buffer"}
+      {
+        "@id": "urn:ngm:class:audio-capture",
+        "label": "Audio Capture"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:display-compositor", "label": "Display Compositor"},
-      {"@id": "urn:ngm:class:codec", "label": "Codec"}
+      {
+        "@id": "urn:ngm:class:codec",
+        "label": "Codec"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:tutorial-creation", "label": "Tutorial Creation"},
-      {"@id": "urn:ngm:class:ui-test-automation", "label": "UI Test Automation"},
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"}
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:screen-capture-api", "label": "Screen Capture API"},
-      {"@id": "urn:ngm:class:hardware-video-encoding", "label": "Hardware Video Encoding"},
-      {"@id": "urn:ngm:class:container-format", "label": "Container Format"}
+      {
+        "@id": "urn:ngm:class:screen-capture-api",
+        "label": "Screen Capture API"
+      },
+      {
+        "@id": "urn:ngm:class:video-encoding",
+        "label": "Hardware Video Encoding"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:video-conferencing", "label": "Video Conferencing"},
-      {"@id": "urn:ngm:class:asynchronous-communication", "label": "Asynchronous Communication"},
-      {"@id": "urn:ngm:class:remote-collaboration", "label": "Remote Collaboration"}
+      {
+        "@id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      },
+      {
+        "@id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:live-streaming", "label": "Live Streaming"},
-      {"@id": "urn:ngm:class:screenshot", "label": "Screenshot"}
+      {
+        "@id": "urn:ngm:class:live-streaming",
+        "label": "Live Streaming"
+      },
+      {
+        "@id": "urn:ngm:class:screenshot",
+        "label": "Screenshot"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:gui-agent-training", "label": "GUI Agent Training"},
-      {"@id": "urn:ngm:class:accessibility-auditing", "label": "Accessibility Auditing"}
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility Auditing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:display-capture", "label": "Display Capture"},
-      {"@id": "urn:ngm:class:application-window-capture", "label": "Application Window Capture"},
-      {"@id": "urn:ngm:class:browser-based-screen-capture", "label": "Browser-Based Screen Capture"},
-      {"@id": "urn:ngm:class:obs-studio", "label": "OBS Studio"},
-      {"@id": "urn:ngm:class:privacy-consent", "label": "Privacy Consent"}
+      {
+        "@id": "urn:ngm:class:display-capture",
+        "label": "Display Capture"
+      },
+      {
+        "@id": "urn:ngm:class:application-window-capture",
+        "label": "Application Window Capture"
+      },
+      {
+        "@id": "urn:ngm:class:browser-based-screen-capture",
+        "label": "Browser-Based Screen Capture"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:screencast", "label": "Screencast"},
-    {"@id": "urn:ngm:class:desktop-recording", "label": "Desktop Recording"}
+    {
+      "@id": "urn:ngm:class:screencast",
+      "label": "Screencast"
+    },
+    {
+      "@id": "urn:ngm:class:desktop-recording",
+      "label": "Desktop Recording"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

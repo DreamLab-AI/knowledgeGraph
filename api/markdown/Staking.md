@@ -135,7 +135,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:bonding-curve",
+        "@id": "urn:ngm:class:token-bonding-curve",
         "label": "Bonding Curve"
       },
       {
@@ -181,14 +181,6 @@ public:: true
       {
         "@id": "urn:ngm:class:validator-set",
         "label": "Validator Set"
-      },
-      {
-        "@id": "urn:ngm:class:staking-pool",
-        "label": "Staking Pool"
-      },
-      {
-        "@id": "urn:ngm:class:withdrawal-queue",
-        "label": "Withdrawal Queue"
       }
     ]
   },

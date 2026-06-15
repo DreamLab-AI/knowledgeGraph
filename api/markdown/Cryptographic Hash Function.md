@@ -39,56 +39,145 @@ alias:: Cryptographic Hash Functions
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:message-authentication-code", "label": "Message Authentication Code"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:commitment-scheme", "label": "Commitment Scheme"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:commitment-scheme",
+        "label": "Commitment Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:collision-resistance", "label": "Collision Resistance"},
-      {"@id": "urn:ngm:class:preimage-resistance", "label": "Preimage Resistance"},
-      {"@id": "urn:ngm:class:second-preimage-resistance", "label": "Second-Preimage Resistance"},
-      {"@id": "urn:ngm:class:avalanche-effect", "label": "Avalanche Effect"}
+      {
+        "@id": "urn:ngm:class:collision-resistance",
+        "label": "Collision Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:preimage-resistance",
+        "label": "Preimage Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:avalanche-effect",
+        "label": "Avalanche Effect"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:one-way-function", "label": "One-Way Function"},
-      {"@id": "urn:ngm:class:pseudorandom-function", "label": "Pseudorandom Function"}
+      {
+        "@id": "urn:ngm:class:one-way-function",
+        "label": "One-Way Function"
+      },
+      {
+        "@id": "urn:ngm:class:pseudorandom-function",
+        "label": "Pseudorandom Function"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"},
-      {"@id": "urn:ngm:class:keccak-256", "label": "Keccak-256"},
-      {"@id": "urn:ngm:class:blake2", "label": "BLAKE2"},
-      {"@id": "urn:ngm:class:sha-3", "label": "SHA-3"}
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "@id": "urn:ngm:class:keccak-256",
+        "label": "Keccak-256"
+      },
+      {
+        "@id": "urn:ngm:class:blake2",
+        "label": "BLAKE2"
+      },
+      {
+        "@id": "urn:ngm:class:sha-3",
+        "label": "SHA-3"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:password-hashing", "label": "Password Hashing"},
-      {"@id": "urn:ngm:class:content-addressed-storage", "label": "Content-Addressed Storage"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:password-hashing",
+        "label": "Password Hashing"
+      },
+      {
+        "@id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist", "label": "NIST"},
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"}
+      {
+        "@id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:symmetric-encryption", "label": "Symmetric Encryption"},
-      {"@id": "urn:ngm:class:checksums", "label": "Checksums"}
+      {
+        "@id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:checksums",
+        "label": "Checksums"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"},
-      {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"},
-      {"@id": "urn:ngm:class:decentralised-identifier", "label": "Decentralised Identifier"}
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:hmac", "label": "HMAC"},
-      {"@id": "urn:ngm:class:key-derivation-function", "label": "Key Derivation Function"}
+      {
+        "@id": "urn:ngm:class:hmac",
+        "label": "HMAC"
+      },
+      {
+        "@id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-    {"@id": "urn:ngm:class:one-way-hash-function", "label": "One-Way Hash Function"}
+    {
+      "@id": "urn:ngm:class:hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "@id": "urn:ngm:class:one-way-hash-function",
+      "label": "One-Way Hash Function"
+    }
   ],
   "quality": 0.75,
   "provenance": {

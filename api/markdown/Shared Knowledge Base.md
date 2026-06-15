@@ -61,11 +61,14 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:knowledge-management-system", "label": "Knowledge Management System"}
+      {
+        "@id": "urn:ngm:class:knowledge-management-system",
+        "label": "Knowledge Management System"
+      }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:collaborative-systems-modality-knowledge-discovery",
+        "@id": "urn:ngm:class:collaborative-systems-modality",
         "label": "Collaborative Knowledge Discovery"
       }
     ]

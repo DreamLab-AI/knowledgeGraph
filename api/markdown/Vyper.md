@@ -63,7 +63,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:ethereum-virtual-machine",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       },
       {
@@ -91,17 +91,13 @@ public:: true
         "label": "Solidity"
       },
       {
-        "@id": "urn:ngm:class:fe-language",
-        "label": "Fe Language"
-      },
-      {
         "@id": "urn:ngm:class:yul",
         "label": "Yul"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:evm-bytecode",
+        "@id": "urn:ngm:class:evm",
         "label": "EVM Bytecode"
       },
       {
@@ -139,7 +135,7 @@ public:: true
         "label": "Curve Finance"
       },
       {
-        "@id": "urn:ngm:class:compound-protocol",
+        "@id": "urn:ngm:class:compound",
         "label": "Compound Protocol"
       },
       {

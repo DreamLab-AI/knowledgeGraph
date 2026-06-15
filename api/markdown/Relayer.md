@@ -108,7 +108,7 @@ public:: true
         "label": "Interoperability Protocol"
       },
       {
-        "@id": "urn:ngm:class:ibc-protocol",
+        "@id": "urn:ngm:class:ibc",
         "label": "IBC Protocol"
       }
     ],
@@ -124,10 +124,6 @@ public:: true
       {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
-      },
-      {
-        "@id": "urn:ngm:class:event-listener",
-        "label": "Event Listener"
       }
     ],
     "requires": [
@@ -168,10 +164,6 @@ public:: true
       {
         "@id": "urn:ngm:class:blockchain-oracle",
         "label": "Blockchain Oracle"
-      },
-      {
-        "@id": "urn:ngm:class:custodial-bridge",
-        "label": "Custodial Bridge"
       }
     ],
     "bridgesTo": [

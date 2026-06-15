@@ -76,7 +76,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:embedded-system",
+        "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded System"
       },
       {
@@ -91,7 +91,7 @@
         "label": "Synthetic Data"
       },
       {
-        "id": "urn:ngm:class:annotated-dataset",
+        "id": "urn:ngm:class:annotated-training-data",
         "label": "Annotated Dataset"
       }
     ],
@@ -139,11 +139,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:ros-message-types",
-        "label": "ROS Message Types"
-      },
-      {
-        "id": "urn:ngm:class:ieee-1588",
+        "id": "urn:ngm:class:ieee-1588-ptp",
         "label": "IEEE 1588 PTP"
       }
     ],

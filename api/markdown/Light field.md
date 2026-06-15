@@ -330,32 +330,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:epipolar-plane-image",
-        "label": "Epipolar Plane Image"
-      },
-      {
-        "@id": "urn:ngm:class:hogel",
-        "label": "Hogel"
-      },
-      {
-        "@id": "urn:ngm:class:light-field-camera",
-        "label": "Light Field Camera"
-      },
-      {
         "@id": "urn:ngm:class:light-field-display",
         "label": "Light Field Display"
-      },
-      {
-        "@id": "urn:ngm:class:microlens-array",
-        "label": "Microlens Array"
-      },
-      {
-        "@id": "urn:ngm:class:plenoptic-function",
-        "label": "Plenoptic Function"
-      },
-      {
-        "@id": "urn:ngm:class:sub-aperture-image",
-        "label": "Sub-aperture Image"
       }
     ],
     "requires": [
@@ -368,14 +344,6 @@ public:: true
         "label": "GPU Compute"
       },
       {
-        "@id": "urn:ngm:class:multi-view-geometry",
-        "label": "Multi-view Geometry"
-      },
-      {
-        "@id": "urn:ngm:class:ray-parameterisation",
-        "label": "Ray Parameterisation"
-      },
-      {
         "@id": "urn:ngm:class:sampling-theory",
         "label": "Sampling Theory"
       },
@@ -386,24 +354,12 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:6-do-f-vr",
-        "label": "6-DoF VR"
-      },
-      {
         "@id": "urn:ngm:class:holographic-display",
         "label": "Holographic Display"
       },
       {
         "@id": "urn:ngm:class:novel-view-synthesis",
         "label": "Novel View Synthesis"
-      },
-      {
-        "@id": "urn:ngm:class:parallax-rendering",
-        "label": "Parallax Rendering"
-      },
-      {
-        "@id": "urn:ngm:class:refocusing-post-capture",
-        "label": "Refocusing Post-capture"
       },
       {
         "@id": "urn:ngm:class:depth-estimation",
@@ -416,24 +372,8 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:4-d-parameterisation",
-        "label": "4D Parameterisation"
-      },
-      {
         "@id": "urn:ngm:class:epipolar-geometry",
         "label": "Epipolar Geometry"
-      },
-      {
-        "@id": "urn:ngm:class:fourier-slice-theorem",
-        "label": "Fourier Slice Theorem"
-      },
-      {
-        "@id": "urn:ngm:class:microlens-multiplexing",
-        "label": "Microlens Multiplexing"
-      },
-      {
-        "@id": "urn:ngm:class:ray-plane-intersection",
-        "label": "Ray-plane Intersection"
       },
       {
         "@id": "urn:ngm:class:neural-radiance-fields",
@@ -446,10 +386,6 @@ public:: true
         "label": "Convolutional Neural Network"
       },
       {
-        "@id": "urn:ngm:class:lenticular-lens",
-        "label": "Lenticular Lens"
-      },
-      {
         "@id": "urn:ngm:class:structured-light",
         "label": "Structured Light"
       },
@@ -458,30 +394,14 @@ public:: true
         "label": "Volume Rendering"
       },
       {
-        "@id": "urn:ngm:class:wave-optics",
-        "label": "Wave Optics"
-      },
-      {
         "@id": "urn:ngm:class:gaussian-splatting",
         "label": "Gaussian Splatting"
       }
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:computational-holography",
-        "label": "Computational Holography"
-      },
-      {
         "@id": "urn:ngm:class:holography",
-        "label": "Holography"
-      },
-      {
-        "@id": "urn:ngm:class:integral-imaging",
-        "label": "Integral Imaging"
-      },
-      {
-        "@id": "urn:ngm:class:plenoptic-camera",
-        "label": "Plenoptic Camera"
+        "label": "Computational Holography"
       },
       {
         "@id": "urn:ngm:class:neural-radiance-fields",
@@ -498,16 +418,8 @@ public:: true
         "label": "Broadcast Production"
       },
       {
-        "@id": "urn:ngm:class:industrial-metrology",
-        "label": "Industrial Metrology"
-      },
-      {
         "@id": "urn:ngm:class:medical-imaging",
         "label": "Medical Imaging"
-      },
-      {
-        "@id": "urn:ngm:class:museum-digitalisation",
-        "label": "Museum Digitalisation"
       },
       {
         "@id": "urn:ngm:class:augmented-reality",
@@ -520,20 +432,12 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:acm-tog",
-        "label": "ACM TOG"
-      },
-      {
         "@id": "urn:ngm:class:cvpr",
         "label": "CVPR"
       },
       {
         "@id": "urn:ngm:class:iccv",
         "label": "ICCV"
-      },
-      {
-        "@id": "urn:ngm:class:ieee-tvcg",
-        "label": "IEEE TVCG"
       },
       {
         "@id": "urn:ngm:class:siggraph",

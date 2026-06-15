@@ -882,10 +882,6 @@ public:: true
         "label": "Resource Allocation"
       },
       {
-        "@id": "urn:ngm:class:rights-transfer",
-        "label": "Rights Transfer"
-      },
-      {
         "@id": "urn:ngm:class:barter-system",
         "label": "Barter System"
       },
@@ -904,38 +900,18 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:transfer-protocol",
-        "label": "Transfer Protocol"
-      },
-      {
         "@id": "urn:ngm:class:trust-mechanism",
         "label": "Trust Mechanism"
-      },
-      {
-        "@id": "urn:ngm:class:value-representation",
-        "label": "Value Representation"
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:commerce",
-        "label": "Commerce"
-      },
       {
         "@id": "urn:ngm:class:economic-exchange",
         "label": "Economic Exchange"
       },
       {
-        "@id": "urn:ngm:class:payment",
-        "label": "Payment"
-      },
-      {
         "@id": "urn:ngm:class:settlement",
         "label": "Settlement"
-      },
-      {
-        "@id": "urn:ngm:class:trade",
-        "label": "Trade"
       }
     ]
   },

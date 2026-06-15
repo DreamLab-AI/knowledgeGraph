@@ -72,10 +72,6 @@ public:: true
         "label": "Shader Pipeline"
       },
       {
-        "@id": "urn:ngm:class:rasteriser",
-        "label": "Rasteriser"
-      },
-      {
         "@id": "urn:ngm:class:scene-graph",
         "label": "Scene Graph"
       },
@@ -192,15 +188,11 @@ public:: true
         "label": "Metaverse"
       },
       {
-        "@id": "urn:ngm:class:machine-learning-inference",
+        "@id": "urn:ngm:class:inference",
         "label": "Machine Learning Inference"
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:motion-to-photon-latency",
-        "label": "Motion-to-Photon Latency"
-      },
       {
         "@id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"

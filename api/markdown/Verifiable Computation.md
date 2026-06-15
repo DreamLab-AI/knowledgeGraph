@@ -73,7 +73,7 @@ public:: true
         "label": "Arithmetic Circuit"
       },
       {
-        "@id": "urn:ngm:class:polynomial-commitment-scheme",
+        "@id": "urn:ngm:class:commitment-scheme",
         "label": "Polynomial Commitment Scheme"
       }
     ],
@@ -81,10 +81,6 @@ public:: true
       {
         "@id": "urn:ngm:class:scalability",
         "label": "Scalability"
-      },
-      {
-        "@id": "urn:ngm:class:trustless-outsourcing",
-        "label": "Trustless Outsourcing"
       },
       {
         "@id": "urn:ngm:class:privacy-preserving-computation",
@@ -97,16 +93,12 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:snark",
+        "@id": "urn:ngm:class:zk-snark",
         "label": "SNARK"
       },
       {
         "@id": "urn:ngm:class:stark",
         "label": "STARK"
-      },
-      {
-        "@id": "urn:ngm:class:proof-of-computation",
-        "label": "Proof of Computation"
       }
     ],
     "uses": [
@@ -153,7 +145,7 @@ public:: true
         "label": "Blockchain"
       },
       {
-        "@id": "urn:ngm:class:machine-learning-inference",
+        "@id": "urn:ngm:class:inference",
         "label": "Machine Learning Inference"
       },
       {
@@ -165,10 +157,6 @@ public:: true
       {
         "@id": "urn:ngm:class:interactive-proof-system",
         "label": "Interactive Proof System"
-      },
-      {
-        "@id": "urn:ngm:class:probabilistically-checkable-proof",
-        "label": "Probabilistically Checkable Proof"
       },
       {
         "@id": "urn:ngm:class:succinct-argument",

@@ -21,10 +21,6 @@
       {
         "id": "urn:ngm:class:game-mechanics",
         "label": "Game Mechanics"
-      },
-      {
-        "id": "urn:ngm:class:combinatorial-complexity",
-        "label": "Combinatorial Complexity"
       }
     ],
     "enables": [
@@ -35,37 +31,11 @@
       {
         "id": "urn:ngm:class:open-ended-learning",
         "label": "Open-Ended Learning"
-      },
-      {
-        "id": "urn:ngm:class:player-driven-narrative",
-        "label": "Player-Driven Narrative"
-      },
-      {
-        "id": "urn:ngm:class:emergent-narrative",
-        "label": "Emergent Narrative"
       }
     ],
-    "dependsOn": [
-      {
-        "id": "urn:ngm:class:player-interaction",
-        "label": "Player Interaction"
-      },
-      {
-        "id": "urn:ngm:class:non-linear-dynamics",
-        "label": "Non-Linear Dynamics"
-      }
-    ],
+    "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:scripted-gameplay",
-        "label": "Scripted Gameplay"
-      },
-      {
-        "id": "urn:ngm:class:linear-game-design",
-        "label": "Linear Game Design"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:multi-agent-reinforcement-learning",
@@ -88,10 +58,6 @@
       {
         "id": "urn:ngm:class:game-engine",
         "label": "Game Engine"
-      },
-      {
-        "id": "urn:ngm:class:rule-system",
-        "label": "Rule System"
       },
       {
         "id": "urn:ngm:class:agent-based-modelling",
@@ -125,10 +91,6 @@
       {
         "id": "urn:ngm:class:complex-adaptive-systems",
         "label": "Complex Adaptive Systems"
-      },
-      {
-        "id": "urn:ngm:class:sandbox-game",
-        "label": "Sandbox Game"
       },
       {
         "id": "urn:ngm:class:player-agency",

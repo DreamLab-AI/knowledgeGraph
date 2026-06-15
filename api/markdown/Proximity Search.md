@@ -63,14 +63,7 @@ public:: true
       "label": "Geospatial Technology"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:nearby-discovery",
-        "label": "Nearby Discovery"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

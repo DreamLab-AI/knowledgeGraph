@@ -16,20 +16,7 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:global-path-planning",
-        "label": "Global Path Planning"
-      },
-      {
-        "id": "urn:ngm:class:local-path-planning",
-        "label": "Local Path Planning"
-      },
-      {
-        "id": "urn:ngm:class:path-smoothing",
-        "label": "Path Smoothing"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:environment-model",
@@ -66,17 +53,17 @@
         "label": "Navigation"
       },
       {
-        "id": "urn:ngm:class:autonomous-systems",
+        "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
       },
       {
-        "id": "urn:ngm:class:autonomous-vehicles",
+        "id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:rb-1019-obstacle-avoidance",
+        "id": "urn:ngm:class:obstacle-avoidance",
         "label": "Obstacle Avoidance"
       },
       {
@@ -84,17 +71,12 @@
         "label": "Graph Search"
       },
       {
-        "id": "urn:ngm:class:rb-1003-optimal-control",
+        "id": "urn:ngm:class:optimal-control",
         "label": "Optimal Control"
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:reactive-navigation",
-        "label": "Reactive Navigation"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:reinforcement-learning",
@@ -115,26 +97,18 @@
         "label": "Dijkstra Algorithm"
       },
       {
-        "id": "urn:ngm:class:a-star-search",
+        "id": "urn:ngm:class:search-algorithm",
         "label": "A* Search"
       },
       {
         "id": "urn:ngm:class:probabilistic-roadmap",
         "label": "Probabilistic Roadmap"
-      },
-      {
-        "id": "urn:ngm:class:potential-fields",
-        "label": "Potential Fields"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:mobile-robots",
+        "id": "urn:ngm:class:mobile-robot",
         "label": "Mobile Robots"
-      },
-      {
-        "id": "urn:ngm:class:manipulators",
-        "label": "Manipulators"
       },
       {
         "id": "urn:ngm:class:drone-navigation",
@@ -151,10 +125,6 @@
       {
         "id": "urn:ngm:class:multi-robot-coordination",
         "label": "Multi-Robot Coordination"
-      },
-      {
-        "id": "urn:ngm:class:coverage-path-planning",
-        "label": "Coverage Path Planning"
       }
     ]
   },

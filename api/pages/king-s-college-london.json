@@ -16,16 +16,7 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:king-s-institute-for-artificial-intelligence",
-        "label": "King's Institute for Artificial Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:department-of-informatics",
-        "label": "Department of Informatics"
-      }
-    ],
+    "hasPart": [],
     "requires": [],
     "enables": [
       {
@@ -64,10 +55,6 @@
         "label": "Machine Learning"
       },
       {
-        "id": "urn:ngm:class:biomedical-informatics",
-        "label": "Biomedical Informatics"
-      },
-      {
         "id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graph"
       }
@@ -86,12 +73,7 @@
         "label": "Cybersecurity"
       }
     ],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:research-excellence-framework",
-        "label": "Research Excellence Framework"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [
       {
         "id": "urn:ngm:class:university-of-london",
@@ -114,10 +96,6 @@
       {
         "id": "urn:ngm:class:imperial-college-london",
         "label": "Imperial College London"
-      },
-      {
-        "id": "urn:ngm:class:nhs",
-        "label": "NHS"
       },
       {
         "id": "urn:ngm:class:ukri",

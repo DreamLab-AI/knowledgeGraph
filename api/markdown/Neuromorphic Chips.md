@@ -62,7 +62,7 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:ultra-low-power-ai",
+        "@id": "urn:ngm:class:power-efficient-ai",
         "label": "Ultra-Low-Power AI"
       }
     ]

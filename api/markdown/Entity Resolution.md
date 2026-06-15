@@ -91,14 +91,6 @@ public:: true
         "label": "Data Quality"
       },
       {
-        "@id": "urn:ngm:class:blocking",
-        "label": "Blocking"
-      },
-      {
-        "@id": "urn:ngm:class:string-similarity",
-        "label": "String Similarity"
-      },
-      {
         "@id": "urn:ngm:class:schema-mapping",
         "label": "Schema Mapping"
       }

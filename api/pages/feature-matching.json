@@ -16,16 +16,7 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:ratio-test",
-        "label": "Ratio Test"
-      },
-      {
-        "id": "urn:ngm:class:outlier-rejection",
-        "label": "Outlier Rejection"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:image-preprocessing",
@@ -54,7 +45,7 @@
         "label": "Photogrammetry"
       },
       {
-        "id": "urn:ngm:class:image-based-localisation",
+        "id": "urn:ngm:class:localisation",
         "label": "Image-Based Localisation"
       },
       {
@@ -65,19 +56,11 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:homography-estimation",
-        "label": "Homography Estimation"
-      },
-      {
         "id": "urn:ngm:class:epipolar-geometry",
         "label": "Epipolar Geometry"
       }
     ],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:template-matching",
-        "label": "Template Matching"
-      },
       {
         "id": "urn:ngm:class:optical-flow",
         "label": "Optical Flow"
@@ -111,11 +94,11 @@
         "label": "Keypoint Detection"
       },
       {
-        "id": "urn:ngm:class:descriptor-extraction",
+        "id": "urn:ngm:class:feature-extraction",
         "label": "Descriptor Extraction"
       },
       {
-        "id": "urn:ngm:class:nearest-neighbour-search",
+        "id": "urn:ngm:class:nearest-neighbor-search",
         "label": "Nearest-Neighbour Search"
       }
     ],

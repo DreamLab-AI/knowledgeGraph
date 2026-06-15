@@ -478,47 +478,15 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:ai-task-integration",
-        "label": "AI Task Integration"
-      },
-      {
-        "@id": "urn:ngm:class:assist-voice-pipeline",
-        "label": "Assist Voice Pipeline"
-      },
-      {
-        "@id": "urn:ngm:class:automation-engine",
+        "@id": "urn:ngm:class:automation",
         "label": "Automation Engine"
-      },
-      {
-        "@id": "urn:ngm:class:energy-dashboard",
-        "label": "Energy Dashboard"
       },
       {
         "@id": "urn:ngm:class:esphome",
         "label": "ESPHome"
       },
       {
-        "@id": "urn:ngm:class:hacs",
-        "label": "HACS"
-      },
-      {
-        "@id": "urn:ngm:class:home-assistant-cloud",
-        "label": "Home Assistant Cloud"
-      },
-      {
-        "@id": "urn:ngm:class:lovelace-dashboard",
-        "label": "Lovelace Dashboard"
-      },
-      {
-        "@id": "urn:ngm:class:matter-server",
-        "label": "Matter Server"
-      },
-      {
-        "@id": "urn:ngm:class:nabu-casa",
-        "label": "Nabu Casa"
-      },
-      {
-        "@id": "urn:ngm:class:local-llm-runtime-platform-integration",
+        "@id": "urn:ngm:class:local-llm-runtime-platform",
         "label": "Ollama Integration"
       },
       {
@@ -530,15 +498,11 @@ public:: true
         "label": "Wyoming Protocol"
       },
       {
-        "@id": "urn:ngm:class:z-wave-js",
+        "@id": "urn:ngm:class:z-wave-js-ui",
         "label": "Z-Wave JS"
       },
       {
-        "@id": "urn:ngm:class:z-wave-js-ui",
-        "label": "Z-Wave JS UI"
-      },
-      {
-        "@id": "urn:ngm:class:zigbee-home-automation",
+        "@id": "urn:ngm:class:zigbee",
         "label": "Zigbee Home Automation"
       },
       {
@@ -548,11 +512,11 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:local-network-infrastructure",
+        "@id": "urn:ngm:class:network-infrastructure",
         "label": "Local Network Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:mqtt-broker",
+        "@id": "urn:ngm:class:mqtt",
         "label": "MQTT Broker"
       },
       {
@@ -568,11 +532,7 @@ public:: true
         "label": "SQLite"
       },
       {
-        "@id": "urn:ngm:class:wake-word-engine",
-        "label": "Wake Word Engine"
-      },
-      {
-        "@id": "urn:ngm:class:zigbee-radio-dongle",
+        "@id": "urn:ngm:class:zigbee",
         "label": "Zigbee Radio Dongle"
       },
       {
@@ -586,7 +546,7 @@ public:: true
         "label": "Demand-Side Response"
       },
       {
-        "@id": "urn:ngm:class:device-interoperability",
+        "@id": "urn:ngm:class:interoperability",
         "label": "Device Interoperability"
       },
       {
@@ -594,27 +554,11 @@ public:: true
         "label": "Energy Management"
       },
       {
-        "@id": "urn:ngm:class:llm-controlled-devices",
-        "label": "LLM-Controlled Devices"
-      },
-      {
-        "@id": "urn:ngm:class:local-voice-control",
-        "label": "Local Voice Control"
-      },
-      {
-        "@id": "urn:ngm:class:matter-commissioning",
+        "@id": "urn:ngm:class:matter-protocol",
         "label": "Matter Commissioning"
       },
       {
-        "@id": "urn:ngm:class:multi-protocol-integration",
-        "label": "Multi-Protocol Integration"
-      },
-      {
-        "@id": "urn:ngm:class:privacy-preserving-io-t",
-        "label": "Privacy-Preserving IoT"
-      },
-      {
-        "@id": "urn:ngm:class:smart-grid-integration",
+        "@id": "urn:ngm:class:smart-grid",
         "label": "Smart Grid Integration"
       },
       {
@@ -652,7 +596,7 @@ public:: true
         "label": "Thread Protocol"
       },
       {
-        "@id": "urn:ngm:class:web-socket-api",
+        "@id": "urn:ngm:class:web-socket",
         "label": "WebSocket API"
       },
       {
@@ -660,26 +604,14 @@ public:: true
         "label": "Wyoming Protocol"
       },
       {
-        "@id": "urn:ngm:class:z-wave-protocol",
-        "label": "Z-Wave Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:zigbee-protocol",
+        "@id": "urn:ngm:class:zigbee",
         "label": "Zigbee Protocol"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:app-daemon",
-        "label": "AppDaemon"
-      },
-      {
         "@id": "urn:ngm:class:frigate-nvr",
         "label": "Frigate NVR"
-      },
-      {
-        "@id": "urn:ngm:class:micro-wake-word",
-        "label": "microWakeWord"
       },
       {
         "@id": "urn:ngm:class:node-red",
@@ -690,15 +622,11 @@ public:: true
         "label": "OpenAI API"
       },
       {
-        "@id": "urn:ngm:class:open-wake-word",
-        "label": "openWakeWord"
-      },
-      {
         "@id": "urn:ngm:class:piper-tts",
         "label": "Piper TTS"
       },
       {
-        "@id": "urn:ngm:class:whisper-stt",
+        "@id": "urn:ngm:class:whisper",
         "label": "Whisper STT"
       },
       {
@@ -736,10 +664,6 @@ public:: true
         "label": "Internet of Things"
       },
       {
-        "@id": "urn:ngm:class:local-ai",
-        "label": "Local AI"
-      },
-      {
         "@id": "urn:ngm:class:nilm",
         "label": "NILM"
       },
@@ -762,54 +686,18 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:arm64-linux",
-        "label": "ARM64 Linux"
-      },
-      {
-        "@id": "urn:ngm:class:home-assistant-green",
-        "label": "Home Assistant Green"
-      },
-      {
-        "@id": "urn:ngm:class:home-assistant-voice-preview-edition",
-        "label": "Home Assistant Voice Preview Edition"
-      },
-      {
-        "@id": "urn:ngm:class:home-assistant-yellow",
-        "label": "Home Assistant Yellow"
-      },
-      {
-        "@id": "urn:ngm:class:odroid-n2",
-        "label": "Odroid-N2"
-      },
-      {
-        "@id": "urn:ngm:class:orange-pi",
-        "label": "Orange Pi"
-      },
-      {
         "@id": "urn:ngm:class:proxmox",
         "label": "Proxmox"
       },
       {
-        "@id": "urn:ngm:class:qemu-kvm",
-        "label": "QEMU/KVM"
-      },
-      {
         "@id": "urn:ngm:class:raspberry-pi",
         "label": "Raspberry Pi"
-      },
-      {
-        "@id": "urn:ngm:class:x86-64-linux",
-        "label": "x86-64 Linux"
       }
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:csa-matter-specification",
+        "@id": "urn:ngm:class:matter-protocol",
         "label": "CSA Matter Specification"
-      },
-      {
-        "@id": "urn:ngm:class:ietf-co-ap-working-group",
-        "label": "IETF CoAP Working Group"
       },
       {
         "@id": "urn:ngm:class:open-home-foundation",
@@ -822,14 +710,6 @@ public:: true
       {
         "@id": "urn:ngm:class:wi-fi-alliance",
         "label": "Wi-Fi Alliance"
-      },
-      {
-        "@id": "urn:ngm:class:z-wave-alliance",
-        "label": "Z-Wave Alliance"
-      },
-      {
-        "@id": "urn:ngm:class:zigbee-alliance",
-        "label": "Zigbee Alliance"
       }
     ],
     "bridgesTo": [

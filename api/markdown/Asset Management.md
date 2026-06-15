@@ -92,7 +92,7 @@ public:: true
         "label": "Custody"
       },
       {
-        "@id": "urn:ngm:class:performance-analytics",
+        "@id": "urn:ngm:class:performance",
         "label": "Performance Analytics"
       }
     ],
@@ -120,20 +120,12 @@ public:: true
       {
         "@id": "urn:ngm:class:institutional-investment",
         "label": "Institutional Investment"
-      },
-      {
-        "@id": "urn:ngm:class:yield-optimization",
-        "label": "Yield Optimization"
       }
     ],
     "dependsOn": [
       {
         "@id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
-      },
-      {
-        "@id": "urn:ngm:class:market-data",
-        "label": "Market Data"
       }
     ],
     "uses": [
@@ -204,7 +196,7 @@ public:: true
         "label": "Tokenization"
       },
       {
-        "@id": "urn:ngm:class:real-world-asset-tokenization",
+        "@id": "urn:ngm:class:real-world-asset-tokenisation",
         "label": "Real-World Asset Tokenization"
       },
       {

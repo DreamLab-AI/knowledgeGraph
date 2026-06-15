@@ -38,44 +38,113 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:openid-connect-working-group", "label": "OpenID Connect Working Group"},
-      {"@id": "urn:ngm:class:fapi-working-group", "label": "FAPI Working Group"},
-      {"@id": "urn:ngm:class:digital-credentials-working-group", "label": "Digital Credentials Working Group"},
-      {"@id": "urn:ngm:class:modrna-working-group", "label": "MODRNA Working Group"}
+      {
+        "@id": "urn:ngm:class:openid-connect-working-group",
+        "label": "OpenID Connect Working Group"
+      },
+      {
+        "@id": "urn:ngm:class:fapi-working-group",
+        "label": "FAPI Working Group"
+      },
+      {
+        "@id": "urn:ngm:class:digital-credentials-working-group",
+        "label": "Digital Credentials Working Group"
+      },
+      {
+        "@id": "urn:ngm:class:modrna-working-group",
+        "label": "MODRNA Working Group"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:open-id-connect", "label": "OpenID Connect"},
-      {"@id": "urn:ngm:class:financial-grade-api", "label": "Financial-grade API"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:digital-identity-standards", "label": "Digital Identity Standards"}
+      {
+        "@id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "@id": "urn:ngm:class:financial-grade-api",
+        "label": "Financial-grade API"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-standards",
+        "label": "Digital Identity Standards"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:federated-identity", "label": "Federated Identity"},
-      {"@id": "urn:ngm:class:single-sign-on", "label": "Single Sign-On"},
-      {"@id": "urn:ngm:class:open-banking", "label": "Open Banking"},
-      {"@id": "urn:ngm:class:conformance-certification", "label": "Conformance Certification"}
+      {
+        "@id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "@id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
+        "@id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      },
+      {
+        "@id": "urn:ngm:class:standards-conformance",
+        "label": "Conformance Certification"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:oauth-2", "label": "OAuth 2.0"},
-      {"@id": "urn:ngm:class:json-web-token", "label": "JSON Web Token"}
+      {
+        "@id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-web-token",
+        "label": "JSON Web Token"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:identity-federation", "label": "Identity Federation"},
-      {"@id": "urn:ngm:class:authentication-standards", "label": "Authentication Standards"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"}
+      {
+        "@id": "urn:ngm:class:identity-federation",
+        "label": "Identity Federation"
+      },
+      {
+        "@id": "urn:ngm:class:authentication-standards",
+        "label": "Authentication Standards"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:saml", "label": "SAML"},
-      {"@id": "urn:ngm:class:w3c-did", "label": "W3C DID"}
+      {
+        "@id": "urn:ngm:class:saml",
+        "label": "SAML"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-did",
+        "label": "W3C DID"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-wallet", "label": "Digital Wallet"},
-      {"@id": "urn:ngm:class:eidas", "label": "eIDAS"}
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:eidas",
+        "label": "eIDAS"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:oidf", "label": "OIDF"}
+    {
+      "@id": "urn:ngm:class:oidf",
+      "label": "OIDF"
+    }
   ],
   "quality": 0.72,
   "provenance": {

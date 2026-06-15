@@ -23,56 +23,122 @@ public:: true
   "definition": "Supply chain transparency is the degree to which information about the origins, provenance, custody chain, working conditions, and environmental and social impacts of goods and services is visible, accessible, and verifiable to stakeholders across the entire value network — including manufacturers, tier-n suppliers, logistics operators, retailers, regulators, and end consumers. It encompasses voluntary disclosure practices, mandatory reporting frameworks (such as the UK Modern Slavery Act and the EU Corporate Sustainability Due Diligence Directive), and technical systems — including blockchain-based provenance tracking, IoT sensor data chains, and Digital Product Passports — that create auditable, tamper-resistant records of supply chain events. Transparency is increasingly mandated through due diligence regulations and ESG market expectations, requiring organisations to verify and disclose conditions several tiers deep into their supplier networks.",
   "domain": "supply-chain",
   "maturity": "emerging",
-  "subClassOf": {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:supply-chain-management",
+    "label": "Supply Chain Management"
+  },
   "sameAs": [
-    {"@id": "urn:ngm:class:supply-chain-disclosure", "label": "Supply Chain Disclosure"},
-    {"@id": "urn:ngm:class:supply-chain-visibility", "label": "Supply Chain Visibility"}
+    {
+      "@id": "urn:ngm:class:supply-chain-disclosure",
+      "label": "Supply Chain Disclosure"
+    },
+    {
+      "@id": "urn:ngm:class:supply-chain-visibility",
+      "label": "Supply Chain Visibility"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:digital-product-passport", "label": "Digital Product Passport"}
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:supplier-due-diligence", "label": "Supplier Due Diligence"},
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"},
-      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"},
-      {"@id": "urn:ngm:class:provenance-verification", "label": "Provenance Verification"},
-      {"@id": "urn:ngm:class:ethical-sourcing", "label": "Ethical Sourcing"}
+      {
+        "@id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:provenance-verification",
+        "label": "Provenance Verification"
+      },
+      {
+        "@id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:supply-chain-blockchain", "label": "Supply Chain Blockchain"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:decentralised-identifiers", "label": "Decentralised Identifiers"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:gs1-epcis", "label": "GS1 EPCIS"}
+      {
+        "@id": "urn:ngm:class:supply-chain-blockchain",
+        "label": "Supply Chain Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identifiers",
+        "label": "Decentralised Identifiers"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:gs1-epcis",
+        "label": "GS1 EPCIS"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:gs1-standards", "label": "GS1 Standards"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:supply-chain-opacity", "label": "Supply Chain Opacity"}
+      {
+        "@id": "urn:ngm:class:gs1-standards",
+        "label": "GS1 Standards"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:supply-chain-provenance", "label": "Supply Chain Provenance"},
-      {"@id": "urn:ngm:class:pharmaceutical-traceability", "label": "Pharmaceutical Traceability"},
-      {"@id": "urn:ngm:class:modern-slavery-reporting", "label": "Modern Slavery Reporting"}
+      {
+        "@id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:pharmaceutical-traceability",
+        "label": "Pharmaceutical Traceability"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:satellite-monitoring", "label": "Satellite Monitoring"},
-      {"@id": "urn:ngm:class:ai-document-verification", "label": "AI Document Verification"}
+      {
+        "@id": "urn:ngm:class:satellite-monitoring",
+        "label": "Satellite Monitoring"
+      }
     ]
   },
   "quality": 0.72,

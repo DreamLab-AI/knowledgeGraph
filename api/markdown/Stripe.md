@@ -59,20 +59,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:payment-api",
-        "label": "Payment API"
-      },
-      {
         "@id": "urn:ngm:class:fraud-detection",
         "label": "Fraud Detection"
-      },
-      {
-        "@id": "urn:ngm:class:subscription-billing",
-        "label": "Subscription Billing"
-      },
-      {
-        "@id": "urn:ngm:class:card-issuing",
-        "label": "Card Issuing"
       }
     ],
     "partOf": [
@@ -85,10 +73,6 @@ public:: true
       {
         "@id": "urn:ngm:class:payment-network",
         "label": "Payment Network"
-      },
-      {
-        "@id": "urn:ngm:class:banking-rail",
-        "label": "Banking Rail"
       },
       {
         "@id": "urn:ngm:class:kyc-aml-compliance",
@@ -105,12 +89,8 @@ public:: true
         "label": "E-Commerce"
       },
       {
-        "@id": "urn:ngm:class:marketplace-platform",
+        "@id": "urn:ngm:class:marketplace",
         "label": "Marketplace Platform"
-      },
-      {
-        "@id": "urn:ngm:class:embedded-finance",
-        "label": "Embedded Finance"
       }
     ],
     "uses": [
@@ -147,10 +127,6 @@ public:: true
         "label": "PayPal"
       },
       {
-        "@id": "urn:ngm:class:adyen",
-        "label": "Adyen"
-      },
-      {
         "@id": "urn:ngm:class:square",
         "label": "Square"
       }
@@ -166,10 +142,6 @@ public:: true
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:merchant-acquiring",
-        "label": "Merchant Acquiring"
-      },
       {
         "@id": "urn:ngm:class:payment-gateway",
         "label": "Payment Gateway"

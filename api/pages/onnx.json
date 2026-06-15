@@ -24,10 +24,6 @@
       {
         "id": "urn:ngm:class:onnx-runtime",
         "label": "ONNX Runtime"
-      },
-      {
-        "id": "urn:ngm:class:onnx-model-zoo",
-        "label": "ONNX Model Zoo"
       }
     ],
     "requires": [
@@ -65,16 +61,7 @@
         "label": "Open Standard"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:tensorflow-savedmodel",
-        "label": "TensorFlow SavedModel"
-      },
-      {
-        "id": "urn:ngm:class:torchscript",
-        "label": "TorchScript"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:neural-processing-unit",

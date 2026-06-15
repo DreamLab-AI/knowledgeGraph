@@ -73,7 +73,7 @@
         "label": "SAML"
       },
       {
-        "id": "urn:ngm:class:openid-connect",
+        "id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
       },
       {
@@ -81,29 +81,20 @@
         "label": "OAuth2"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:centralised-authentication",
-        "label": "Centralised Authentication"
-      },
-      {
-        "id": "urn:ngm:class:siloed-system",
-        "label": "Siloed System"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:decentralised-identifier",
         "label": "Decentralised Identifier"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential",
+        "id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {

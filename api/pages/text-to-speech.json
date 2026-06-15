@@ -24,22 +24,9 @@
       {
         "id": "urn:ngm:class:acoustic-model",
         "label": "Acoustic Model"
-      },
-      {
-        "id": "urn:ngm:class:prosody-model",
-        "label": "Prosody Model"
       }
     ],
-    "requires": [
-      {
-        "id": "urn:ngm:class:text-normalization",
-        "label": "Text Normalization"
-      },
-      {
-        "id": "urn:ngm:class:phoneme-conversion",
-        "label": "Phoneme Conversion"
-      }
-    ],
+    "requires": [],
     "enables": [
       {
         "id": "urn:ngm:class:voice-interaction",
@@ -54,7 +41,7 @@
         "label": "Accessibility"
       },
       {
-        "id": "urn:ngm:class:audio-content-generation",
+        "id": "urn:ngm:class:content-generation",
         "label": "Audio Content Generation"
       }
     ],
@@ -99,7 +86,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:speech-technology",
+        "id": "urn:ngm:class:speech-processing",
         "label": "Speech Technology"
       },
       {
@@ -123,10 +110,6 @@
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
-      },
-      {
-        "id": "urn:ngm:class:multilingual-model",
-        "label": "Multilingual Model"
       }
     ]
   },

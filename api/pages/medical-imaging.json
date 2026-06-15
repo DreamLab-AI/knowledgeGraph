@@ -18,10 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:image-reconstruction",
-        "label": "Image Reconstruction"
-      },
-      {
         "id": "urn:ngm:class:image-segmentation",
         "label": "Image Segmentation"
       },
@@ -122,14 +118,6 @@
       {
         "id": "urn:ngm:class:healthcare-ai",
         "label": "Healthcare AI"
-      },
-      {
-        "id": "urn:ngm:class:digital-pathology",
-        "label": "Digital Pathology"
-      },
-      {
-        "id": "urn:ngm:class:radiomics",
-        "label": "Radiomics"
       },
       {
         "id": "urn:ngm:class:electronic-health-record",

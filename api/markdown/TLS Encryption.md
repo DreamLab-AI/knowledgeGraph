@@ -23,56 +23,141 @@ public:: true
   "definition": "TLS (Transport Layer Security) encryption is the cryptographic protocol layer that provides confidentiality, integrity, and server authentication for communications over TCP/IP networks, most visibly as the foundation of HTTPS. It operates through a handshake that negotiates cipher suites, authenticates servers (and optionally clients) via X.509 certificates, establishes ephemeral session keys using asymmetric key exchange (ECDHE), and then encrypts all subsequent data using symmetric ciphers (AES-GCM). TLS 1.3 (RFC 8446, 2018) is the current standard, eliminating obsolete constructs and reducing handshake latency to one round trip.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:asymmetric-encryption", "label": "Asymmetric Encryption"},
-      {"@id": "urn:ngm:class:symmetric-encryption", "label": "Symmetric Encryption"},
-      {"@id": "urn:ngm:class:digital-certificate", "label": "Digital Certificate"},
-      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"},
-      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:elliptic-curve-diffie-hellman", "label": "Elliptic Curve Diffie-Hellman"}
+      {
+        "@id": "urn:ngm:class:asymmetric-encryption",
+        "label": "Asymmetric Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-diffie-hellman",
+        "label": "Elliptic Curve Diffie-Hellman"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:secure-communication", "label": "Secure Communication"},
-      {"@id": "urn:ngm:class:network-security", "label": "Network Security"},
-      {"@id": "urn:ngm:class:https", "label": "HTTPS"},
-      {"@id": "urn:ngm:class:forward-secrecy", "label": "Forward Secrecy"}
+      {
+        "@id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      },
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:https",
+        "label": "HTTPS"
+      },
+      {
+        "@id": "urn:ngm:class:forward-secrecy",
+        "label": "Forward Secrecy"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:x509-certificate", "label": "X.509 Certificate"},
-      {"@id": "urn:ngm:class:cipher-suite", "label": "Cipher Suite"},
-      {"@id": "urn:ngm:class:tcp-ip", "label": "TCP/IP"}
+      {
+        "@id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:tcp-ip",
+        "label": "TCP/IP"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:transport-layer-security", "label": "Transport Layer Security"}
+      {
+        "@id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:mutual-authentication", "label": "Mutual Authentication"},
-      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"}
+      {
+        "@id": "urn:ngm:class:mutual-authentication",
+        "label": "Mutual Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"},
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ssl", "label": "SSL"},
-      {"@id": "urn:ngm:class:ipsec", "label": "IPsec"}
+      {
+        "@id": "urn:ngm:class:ssl",
+        "label": "SSL"
+      },
+      {
+        "@id": "urn:ngm:class:ipsec",
+        "label": "IPsec"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:tls", "label": "TLS"},
-      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"},
-      {"@id": "urn:ngm:class:key-derivation-function", "label": "Key Derivation Function"},
-      {"@id": "urn:ngm:class:certificate-transparency", "label": "Certificate Transparency"}
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-transparency",
+        "label": "Certificate Transparency"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:transport-layer-security-encryption", "label": "Transport Layer Security Encryption"},
-    {"@id": "urn:ngm:class:tls-protocol", "label": "TLS Protocol"}
+    {
+      "@id": "urn:ngm:class:transport-layer-security-encryption",
+      "label": "Transport Layer Security Encryption"
+    },
+    {
+      "@id": "urn:ngm:class:tls-protocol",
+      "label": "TLS Protocol"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

@@ -130,31 +130,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:code-interpretation-service",
-        "label": "Code Interpretation Service"
-      },
-      {
-        "@id": "urn:ngm:class:contract-analysis-process",
-        "label": "Contract Analysis Process"
-      },
-      {
-        "@id": "urn:ngm:class:on-chain-evidence-verification",
-        "label": "On-Chain Evidence Verification"
-      },
-      {
         "@id": "urn:ngm:class:arbitration-decision-engine",
         "label": "Arbitration Decision Engine"
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:blockchain-transaction-log",
-        "label": "Blockchain Transaction Log"
-      },
-      {
-        "@id": "urn:ngm:class:smart-contract-code",
-        "label": "Smart Contract Code"
-      },
       {
         "@id": "urn:ngm:class:arbitrator-expertise",
         "label": "Arbitrator Expertise"
@@ -176,10 +156,6 @@ public:: true
       {
         "@id": "urn:ngm:class:fair-adjudication",
         "label": "Fair Adjudication"
-      },
-      {
-        "@id": "urn:ngm:class:transaction-reversal",
-        "label": "Transaction Reversal"
       }
     ],
     "partOf": [

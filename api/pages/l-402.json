@@ -24,10 +24,6 @@
       {
         "id": "urn:ngm:class:lightning-invoice",
         "label": "Lightning Invoice"
-      },
-      {
-        "id": "urn:ngm:class:http-402-status",
-        "label": "HTTP 402 Status"
       }
     ],
     "requires": [
@@ -58,7 +54,7 @@
         "label": "Pay-Per-Request"
       },
       {
-        "id": "urn:ngm:class:machine-to-machine-payment",
+        "id": "urn:ngm:class:machine-to-machine-payments",
         "label": "Machine-to-Machine Payment"
       },
       {
@@ -67,12 +63,7 @@
       }
     ],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:bearer-token-authentication",
-        "label": "Bearer Token Authentication"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:oauth",
@@ -81,20 +72,12 @@
       {
         "id": "urn:ngm:class:api-key-authentication",
         "label": "API Key Authentication"
-      },
-      {
-        "id": "urn:ngm:class:subscription-model",
-        "label": "Subscription Model"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"
-      },
-      {
-        "id": "urn:ngm:class:web-payments",
-        "label": "Web Payments"
       }
     ],
     "uses": [
@@ -107,7 +90,7 @@
         "label": "Bearer Token"
       },
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       }
     ],
@@ -115,7 +98,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:api-access-control",
+        "id": "urn:ngm:class:access-control",
         "label": "API Access Control"
       },
       {

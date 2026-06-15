@@ -50,25 +50,17 @@
       {
         "id": "urn:ngm:class:ai-ethics",
         "label": "AI Ethics"
-      },
-      {
-        "id": "urn:ngm:class:human-centred-ai",
-        "label": "Human-Centred AI"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
-      },
-      {
-        "id": "urn:ngm:class:binding-ai-regulation",
-        "label": "Binding AI Regulation"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:foundation-models",
+        "id": "urn:ngm:class:foundation-model",
         "label": "Foundation Models"
       },
       {
@@ -124,7 +116,7 @@
         "label": "Global Partnership on AI"
       },
       {
-        "id": "urn:ngm:class:unesco-ai-ethics",
+        "id": "urn:ngm:class:unesco-recommendation-on-the-ethics-of-ai",
         "label": "UNESCO AI Ethics Recommendation"
       },
       {

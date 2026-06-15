@@ -75,51 +75,135 @@ public:: true
   },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:validator-attestation", "label": "Validator Attestation"}
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:validator-attestation",
+        "label": "Validator Attestation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
-      {"@id": "urn:ngm:class:block-propagation", "label": "Block Propagation"},
-      {"@id": "urn:ngm:class:peer-discovery", "label": "Peer Discovery"}
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:block-propagation",
+        "label": "Block Propagation"
+      },
+      {
+        "@id": "urn:ngm:class:peer-discovery",
+        "label": "Peer Discovery"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:immutability", "label": "Immutability"},
-      {"@id": "urn:ngm:class:blockchain-finality", "label": "Blockchain Finality"},
-      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
-      {"@id": "urn:ngm:class:double-spend-prevention", "label": "Double-Spend Prevention"}
+      {
+        "@id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "@id": "urn:ngm:class:finality",
+        "label": "Blockchain Finality"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:double-spend-prevention",
+        "label": "Double-Spend Prevention"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"},
-      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"}
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:block-header", "label": "Block Header"},
-      {"@id": "urn:ngm:class:chain-weight", "label": "Chain Weight"}
+      {
+        "@id": "urn:ngm:class:block-header",
+        "label": "Block Header"
+      },
+      {
+        "@id": "urn:ngm:class:chain-weight",
+        "label": "Chain Weight"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:longest-chain-rule", "label": "Longest Chain Rule"},
-      {"@id": "urn:ngm:class:lmd-ghost", "label": "LMD-GHOST"}
+      {
+        "@id": "urn:ngm:class:longest-chain-rule",
+        "label": "Longest Chain Rule"
+      },
+      {
+        "@id": "urn:ngm:class:lmd-ghost",
+        "label": "LMD-GHOST"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"},
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"},
-      {"@id": "urn:ngm:class:consensus-rule", "label": "Consensus Rule"},
-      {"@id": "urn:ngm:class:network-partition-tolerance", "label": "Network Partition Tolerance"},
-      {"@id": "urn:ngm:class:selfish-mining", "label": "Selfish Mining"}
+      {
+        "@id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-protocol",
+        "label": "Blockchain Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-rule",
+        "label": "Consensus Rule"
+      },
+      {
+        "@id": "urn:ngm:class:network-partition-tolerance",
+        "label": "Network Partition Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:selfish-mining",
+        "label": "Selfish Mining"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-systems-consensus", "label": "Distributed Systems Consensus"},
-      {"@id": "urn:ngm:class:fault-tolerant-protocol", "label": "Fault Tolerant Protocol"}
+      {
+        "@id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Systems Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerant-protocol",
+        "label": "Fault Tolerant Protocol"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:chain-selection-rule", "label": "Chain Selection Rule"},
-    {"@id": "urn:ngm:class:canonical-chain-algorithm", "label": "Canonical Chain Algorithm"}
+    {
+      "@id": "urn:ngm:class:chain-selection-rule",
+      "label": "Chain Selection Rule"
+    },
+    {
+      "@id": "urn:ngm:class:canonical-chain-algorithm",
+      "label": "Canonical Chain Algorithm"
+    }
   ],
   "quality": 0.75,
   "provenance": {

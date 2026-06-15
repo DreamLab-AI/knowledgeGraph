@@ -26,7 +26,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:accumulator",
+        "id": "urn:ngm:class:cryptographic-accumulator",
         "label": "Accumulator"
       },
       {
@@ -34,24 +34,8 @@
         "label": "Force Sensor"
       },
       {
-        "id": "urn:ngm:class:hydraulic-manifold",
-        "label": "Hydraulic Manifold"
-      },
-      {
-        "id": "urn:ngm:class:hydraulic-pump",
-        "label": "Hydraulic Pump"
-      },
-      {
-        "id": "urn:ngm:class:hydraulic-reservoir",
-        "label": "Hydraulic Reservoir"
-      },
-      {
         "id": "urn:ngm:class:position-sensor",
         "label": "Position Sensor"
-      },
-      {
-        "id": "urn:ngm:class:pressure-relief-valve",
-        "label": "Pressure Relief Valve"
       },
       {
         "id": "urn:ngm:class:proportional-valve",
@@ -72,65 +56,29 @@
         "label": "Feedback Sensor"
       },
       {
-        "id": "urn:ngm:class:heat-exchanger",
-        "label": "Heat Exchanger"
-      },
-      {
-        "id": "urn:ngm:class:hydraulic-fluid",
-        "label": "Hydraulic Fluid"
-      },
-      {
-        "id": "urn:ngm:class:hydraulic-power-unit",
-        "label": "Hydraulic Power Unit"
-      },
-      {
-        "id": "urn:ngm:class:pressurised-fluid-supply",
-        "label": "Pressurised Fluid Supply"
-      },
-      {
-        "id": "urn:ngm:class:return-filter",
-        "label": "Return Filter"
-      },
-      {
-        "id": "urn:ngm:class:seal-system",
-        "label": "Seal System"
-      },
-      {
-        "id": "urn:ngm:class:servo-controller",
+        "id": "urn:ngm:class:servo-control",
         "label": "Servo Controller"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:compliant-force-control",
+        "id": "urn:ngm:class:force-control",
         "label": "Compliant Force Control"
-      },
-      {
-        "id": "urn:ngm:class:deep-sea-robotics",
-        "label": "Deep-Sea Robotics"
-      },
-      {
-        "id": "urn:ngm:class:exoskeleton-actuation",
-        "label": "Exoskeleton Actuation"
-      },
-      {
-        "id": "urn:ngm:class:flight-simulation",
-        "label": "Flight Simulation"
       },
       {
         "id": "urn:ngm:class:haptic-interface",
         "label": "Haptic Interface"
       },
       {
-        "id": "urn:ngm:class:heavy-manipulation",
+        "id": "urn:ngm:class:manipulation",
         "label": "Heavy Manipulation"
       },
       {
-        "id": "urn:ngm:class:high-force-industrial-automation",
+        "id": "urn:ngm:class:industrial-automation",
         "label": "High-Force Industrial Automation"
       },
       {
-        "id": "urn:ngm:class:legged-robot-locomotion",
+        "id": "urn:ngm:class:legged-locomotion",
         "label": "Legged Robot Locomotion"
       },
       {
@@ -141,23 +89,15 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:closed-loop-position-control",
+        "id": "urn:ngm:class:position-control",
         "label": "Closed-Loop Position Control"
       },
       {
-        "id": "urn:ngm:class:electrohydrostatic-drive",
-        "label": "Electrohydrostatic Drive"
-      },
-      {
-        "id": "urn:ngm:class:force-impedance-control",
+        "id": "urn:ngm:class:impedance-control",
         "label": "Force Impedance Control"
       },
       {
-        "id": "urn:ngm:class:pascal-law-actuation",
-        "label": "Pascal Law Actuation"
-      },
-      {
-        "id": "urn:ngm:class:proportional-flow-control",
+        "id": "urn:ngm:class:proportional-control",
         "label": "Proportional Flow Control"
       },
       {
@@ -169,16 +109,8 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:differential-pressure-sensing",
-        "label": "Differential Pressure Sensing"
-      },
-      {
-        "id": "urn:ngm:class:electrohydraulic-servo-valve",
+        "id": "urn:ngm:class:servo-valve",
         "label": "Electrohydraulic Servo Valve"
-      },
-      {
-        "id": "urn:ngm:class:linear-variable-differential-transformer",
-        "label": "Linear Variable Differential Transformer"
       },
       {
         "id": "urn:ngm:class:model-predictive-control",
@@ -199,62 +131,13 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:boston-dynamics-atlas",
-        "label": "Boston Dynamics Atlas"
-      },
-      {
-        "id": "urn:ngm:class:boston-dynamics-big-dog",
-        "label": "Boston Dynamics BigDog"
-      },
-      {
-        "id": "urn:ngm:class:darpa-robotics-challenge",
-        "label": "DARPA Robotics Challenge"
-      },
-      {
-        "id": "urn:ngm:class:iit-hy-q-family",
-        "label": "IIT HyQ Family"
-      },
-      {
-        "id": "urn:ngm:class:legged-locomotion-research",
+        "id": "urn:ngm:class:legged-locomotion",
         "label": "Legged Locomotion Research"
-      },
-      {
-        "id": "urn:ngm:class:nuclear-remote-handling",
-        "label": "Nuclear Remote Handling"
-      },
-      {
-        "id": "urn:ngm:class:sarcos-guardian-xo",
-        "label": "Sarcos Guardian XO"
       }
     ],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:din-24346-hydraulic-components",
-        "label": "DIN 24346 Hydraulic Components"
-      },
-      {
-        "id": "urn:ngm:class:iso-4413-hydraulics-safety",
-        "label": "ISO 4413 Hydraulics Safety"
-      },
-      {
-        "id": "urn:ngm:class:nfpa-t3-fluid-power-standard",
-        "label": "NFPA T3 Fluid Power Standard"
-      },
-      {
-        "id": "urn:ngm:class:sae-j2048-hydraulic-systems",
-        "label": "SAE J2048 Hydraulic Systems"
-      },
-      {
-        "id": "urn:ngm:class:uk-hse-hsg244",
-        "label": "UK HSE HSG244"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:construction-robotics",
-        "label": "Construction Robotics"
-      },
       {
         "id": "urn:ngm:class:exoskeleton",
         "label": "Exoskeleton"
@@ -266,10 +149,6 @@
       {
         "id": "urn:ngm:class:legged-robotics",
         "label": "Legged Robotics"
-      },
-      {
-        "id": "urn:ngm:class:subsea-robotics",
-        "label": "Subsea Robotics"
       },
       {
         "id": "urn:ngm:class:ai-agent-system",

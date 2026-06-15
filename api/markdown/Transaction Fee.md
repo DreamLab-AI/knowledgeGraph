@@ -75,53 +75,133 @@ public:: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:base-fee", "label": "Base Fee"},
-      {"@id": "urn:ngm:class:priority-fee", "label": "Priority Fee"},
-      {"@id": "urn:ngm:class:gas-price", "label": "Gas Price"}
+      {
+        "@id": "urn:ngm:class:base-fee",
+        "label": "Base Fee"
+      },
+      {
+        "@id": "urn:ngm:class:priority-fee",
+        "label": "Priority Fee"
+      },
+      {
+        "@id": "urn:ngm:class:gas-price",
+        "label": "Gas Price"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:digital-wallet", "label": "Digital Wallet"},
-      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"}
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
-      {"@id": "urn:ngm:class:miner", "label": "Miner"},
-      {"@id": "urn:ngm:class:transaction-prioritisation", "label": "Transaction Prioritisation"},
-      {"@id": "urn:ngm:class:spam-prevention", "label": "Spam Prevention"}
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "@id": "urn:ngm:class:miner",
+        "label": "Miner"
+      },
+      {
+        "@id": "urn:ngm:class:spam-prevention",
+        "label": "Spam Prevention"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:mempool", "label": "Mempool"},
-      {"@id": "urn:ngm:class:gas-limit", "label": "Gas Limit"},
-      {"@id": "urn:ngm:class:network-congestion", "label": "Network Congestion"}
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "@id": "urn:ngm:class:gas-limit",
+        "label": "Gas Limit"
+      },
+      {
+        "@id": "urn:ngm:class:network-congestion",
+        "label": "Network Congestion"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:eip-1559", "label": "EIP-1559"},
-      {"@id": "urn:ngm:class:incentive-mechanism", "label": "Incentive Mechanism"}
+      {
+        "@id": "urn:ngm:class:eip-1559",
+        "label": "EIP-1559"
+      },
+      {
+        "@id": "urn:ngm:class:incentive-mechanism",
+        "label": "Incentive Mechanism"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:block-reward", "label": "Block Reward"},
-      {"@id": "urn:ngm:class:feeless-blockchain", "label": "Feeless Blockchain"}
+      {
+        "@id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "@id": "urn:ngm:class:feeless-blockchain",
+        "label": "Feeless Blockchain"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:mining", "label": "Mining"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:mining",
+        "label": "Mining"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:micropayment", "label": "Micropayment"},
-      {"@id": "urn:ngm:class:payment-processing", "label": "Payment Processing"}
+      {
+        "@id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      },
+      {
+        "@id": "urn:ngm:class:payment-processing",
+        "label": "Payment Processing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:gas-fee", "label": "Gas Fee"},
-    {"@id": "urn:ngm:class:network-fee", "label": "Network Fee"}
+    {
+      "@id": "urn:ngm:class:gas-fee",
+      "label": "Gas Fee"
+    },
+    {
+      "@id": "urn:ngm:class:network-fee",
+      "label": "Network Fee"
+    }
   ],
   "quality": 0.72,
   "provenance": {

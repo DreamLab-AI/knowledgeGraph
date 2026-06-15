@@ -178,10 +178,6 @@ public:: true
         "label": "Cryptographic Hash Function"
       },
       {
-        "@id": "urn:ngm:class:distributed-network",
-        "label": "Distributed Network"
-      },
-      {
         "@id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       },

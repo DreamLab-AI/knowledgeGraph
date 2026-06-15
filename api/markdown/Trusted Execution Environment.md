@@ -38,54 +38,117 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:secure-enclave", "label": "Secure Enclave"},
-      {"@id": "urn:ngm:class:remote-attestation", "label": "Remote Attestation"},
-      {"@id": "urn:ngm:class:memory-encryption", "label": "Memory Encryption"}
+      {
+        "@id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclave"
+      },
+      {
+        "@id": "urn:ngm:class:remote-attestation",
+        "label": "Remote Attestation"
+      },
+      {
+        "@id": "urn:ngm:class:memory-encryption",
+        "label": "Memory Encryption"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:hardware-root-of-trust", "label": "Hardware Root of Trust"},
-      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"},
-      {"@id": "urn:ngm:class:secure-boot", "label": "Secure Boot"}
+      {
+        "@id": "urn:ngm:class:hardware-root-of-trust",
+        "label": "Hardware Root of Trust"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:secure-boot",
+        "label": "Secure Boot"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:confidential-computing", "label": "Confidential Computing"},
-      {"@id": "urn:ngm:class:privacy-enhancing-computation-pec", "label": "Privacy-Enhancing Computation (PEC)"},
-      {"@id": "urn:ngm:class:secure-multi-party-computation", "label": "Secure Multi-Party Computation"},
-      {"@id": "urn:ngm:class:private-inference", "label": "Private Inference"}
+      {
+        "@id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-enhancing-computation-pec",
+        "label": "Privacy-Enhancing Computation (PEC)"
+      },
+      {
+        "@id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      },
+      {
+        "@id": "urn:ngm:class:private-inference",
+        "label": "Private Inference"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:hardware-security-module", "label": "Hardware Security Module"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:symmetric-encryption", "label": "Symmetric Encryption"}
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:confidential-virtual-machine", "label": "Confidential Virtual Machine"},
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"}
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:digital-rights-management", "label": "Digital Rights Management"},
-      {"@id": "urn:ngm:class:biometric-authentication", "label": "Biometric Authentication"}
+      {
+        "@id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      },
+      {
+        "@id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:confidential-computing-consortium", "label": "Confidential Computing Consortium"},
-      {"@id": "urn:ngm:class:global-platform-specification", "label": "GlobalPlatform Specification"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:software-sandboxing", "label": "Software Sandboxing"},
-      {"@id": "urn:ngm:class:hypervisor-isolation", "label": "Hypervisor Isolation"}
+      {
+        "@id": "urn:ngm:class:confidential-computing-consortium",
+        "label": "Confidential Computing Consortium"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:secure-element", "label": "Secure Element"},
-      {"@id": "urn:ngm:class:trusted-platform-module", "label": "Trusted Platform Module"}
+      {
+        "@id": "urn:ngm:class:secure-element",
+        "label": "Secure Element"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-platform-module",
+        "label": "Trusted Platform Module"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:blockchain-oracle", "label": "Blockchain Oracle"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:tee", "label": "TEE"},
-    {"@id": "urn:ngm:class:secure-execution-environment", "label": "Secure Execution Environment"}
+    {
+      "@id": "urn:ngm:class:tee",
+      "label": "TEE"
+    },
+    {
+      "@id": "urn:ngm:class:secure-execution-environment",
+      "label": "Secure Execution Environment"
+    }
   ],
   "quality": 0.74,
   "provenance": {

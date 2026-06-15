@@ -76,7 +76,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:control-systems",
+        "@id": "urn:ngm:class:control-system",
         "label": "Control Systems"
       },
       {
@@ -108,11 +108,11 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:feedback-loops",
+        "@id": "urn:ngm:class:feedback-loop",
         "label": "Feedback Loops"
       },
       {
-        "@id": "urn:ngm:class:programmable-logic-controllers",
+        "@id": "urn:ngm:class:logic",
         "label": "Programmable Logic Controllers"
       }
     ],
@@ -146,10 +146,6 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:manual-processes",
-        "label": "Manual Processes"
-      },
-      {
         "@id": "urn:ngm:class:human-in-the-loop",
         "label": "Human in the Loop"
       }
@@ -160,7 +156,7 @@ public:: true
         "label": "Artificial Intelligence"
       },
       {
-        "@id": "urn:ngm:class:intelligent-agents",
+        "@id": "urn:ngm:class:agents",
         "label": "Intelligent Agents"
       },
       {
@@ -174,7 +170,7 @@ public:: true
         "label": "Orchestration"
       },
       {
-        "@id": "urn:ngm:class:autonomous-systems",
+        "@id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
       },
       {

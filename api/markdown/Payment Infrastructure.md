@@ -24,56 +24,132 @@ public:: true
   "domain": "finance",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:financial-infrastructure", "label": "Financial Infrastructure"}
+    {
+      "@id": "urn:ngm:class:financial-infrastructure",
+      "label": "Financial Infrastructure"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:payment-channel-network", "label": "Payment Channel Network"},
-      {"@id": "urn:ngm:class:payment-processor", "label": "Payment Processor"},
-      {"@id": "urn:ngm:class:payment-system", "label": "Payment System"},
-      {"@id": "urn:ngm:class:clearing-house", "label": "Clearing House"},
-      {"@id": "urn:ngm:class:real-time-gross-settlement", "label": "Real-Time Gross Settlement"}
+      {
+        "@id": "urn:ngm:class:payment-channel-network",
+        "label": "Payment Channel Network"
+      },
+      {
+        "@id": "urn:ngm:class:payment-processor",
+        "label": "Payment Processor"
+      },
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "@id": "urn:ngm:class:clearing-house",
+        "label": "Clearing House"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-gross-settlement",
+        "label": "Real-Time Gross Settlement"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:interbank-messaging", "label": "Interbank Messaging"},
-      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"},
-      {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"}
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:financial-inclusion", "label": "Financial Inclusion"},
-      {"@id": "urn:ngm:class:cross-border-payment", "label": "Cross-Border Payment"},
-      {"@id": "urn:ngm:class:micropayment", "label": "Micropayment"}
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payment"
+      },
+      {
+        "@id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
-      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"}
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:iso-20022", "label": "ISO 20022"},
-      {"@id": "urn:ngm:class:swift-messaging", "label": "SWIFT Messaging"}
+      {
+        "@id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      },
+      {
+        "@id": "urn:ngm:class:swift-messaging",
+        "label": "SWIFT Messaging"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:digital-commerce", "label": "Digital Commerce"},
-      {"@id": "urn:ngm:class:wholesale-settlement", "label": "Wholesale Settlement"}
+      {
+        "@id": "urn:ngm:class:digital-commerce",
+        "label": "Digital Commerce"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:decentralized-finance", "label": "Decentralized Finance"}
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
-      {"@id": "urn:ngm:class:cbdc-infrastructure", "label": "CBDC Infrastructure"},
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
-      {"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"},
-      {"@id": "urn:ngm:class:correspondent-banking", "label": "Correspondent Banking"}
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:cbdc-infrastructure",
+        "label": "CBDC Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "@id": "urn:ngm:class:correspondent-banking",
+        "label": "Correspondent Banking"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:payment-network", "label": "Payment Network"},
-    {"@id": "urn:ngm:class:payments-ecosystem", "label": "Payments Ecosystem"}
+    {
+      "@id": "urn:ngm:class:payment-network",
+      "label": "Payment Network"
+    },
+    {
+      "@id": "urn:ngm:class:payments-ecosystem",
+      "label": "Payments Ecosystem"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

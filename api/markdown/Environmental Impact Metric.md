@@ -150,19 +150,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:e-waste-measurement",
-        "label": "E-Waste Measurement"
-      },
-      {
-        "@id": "urn:ngm:class:energy-consumption-metric",
-        "label": "Energy Consumption Metric"
-      },
-      {
-        "@id": "urn:ngm:class:resource-efficiency-score",
-        "label": "Resource Efficiency Score"
-      },
-      {
-        "@id": "urn:ngm:class:sustainability-report",
+        "@id": "urn:ngm:class:sustainability-reporting",
         "label": "Sustainability Report"
       },
       {
@@ -172,12 +160,8 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:data-collection-system",
+        "@id": "urn:ngm:class:data-collection",
         "label": "Data Collection System"
-      },
-      {
-        "@id": "urn:ngm:class:lifecycle-assessment-tool",
-        "label": "Lifecycle Assessment Tool"
       },
       {
         "@id": "urn:ngm:class:monitoring-infrastructure",
@@ -190,14 +174,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:environmental-optimization",
-        "label": "Environmental Optimization"
-      },
-      {
-        "@id": "urn:ngm:class:green-it-compliance",
-        "label": "Green IT Compliance"
-      },
-      {
         "@id": "urn:ngm:class:sustainability-reporting",
         "label": "SustainabilityReporting"
       },
@@ -208,12 +184,8 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:esg-reporting-system",
+        "@id": "urn:ngm:class:esg-reporting",
         "label": "ESG Reporting System"
-      },
-      {
-        "@id": "urn:ngm:class:green-computing-initiative",
-        "label": "Green Computing Initiative"
       },
       {
         "@id": "urn:ngm:class:sustainability-framework",

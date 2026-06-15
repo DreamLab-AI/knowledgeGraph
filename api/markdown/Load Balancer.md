@@ -69,7 +69,7 @@ public:: true
         "label": "Session Persistence"
       },
       {
-        "@id": "urn:ngm:class:scheduling-algorithm",
+        "@id": "urn:ngm:class:planning-and-scheduling",
         "label": "Scheduling Algorithm"
       }
     ],
@@ -87,10 +87,6 @@ public:: true
       {
         "@id": "urn:ngm:class:network-architecture",
         "label": "Network Architecture"
-      },
-      {
-        "@id": "urn:ngm:class:server-pool",
-        "label": "Server Pool"
       }
     ],
     "enables": [
@@ -107,7 +103,7 @@ public:: true
         "label": "Fault Tolerance"
       },
       {
-        "@id": "urn:ngm:class:horizontal-scaling",
+        "@id": "urn:ngm:class:horizontal-scalability",
         "label": "Horizontal Scaling"
       }
     ],
@@ -125,10 +121,6 @@ public:: true
       {
         "@id": "urn:ngm:class:round-robin-scheduling",
         "label": "Round Robin Scheduling"
-      },
-      {
-        "@id": "urn:ngm:class:least-connections",
-        "label": "Least Connections"
       }
     ],
     "uses": [

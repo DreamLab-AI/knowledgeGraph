@@ -34,7 +34,7 @@
         "label": "Inference Runtime"
       },
       {
-        "id": "urn:ngm:class:monitoring-instrumentation",
+        "id": "urn:ngm:class:monitoring",
         "label": "Monitoring Instrumentation"
       }
     ],
@@ -48,7 +48,7 @@
         "label": "Training Data"
       },
       {
-        "id": "urn:ngm:class:machine-learning-framework",
+        "id": "urn:ngm:class:machine-learning-discipline-framework",
         "label": "Machine Learning Framework"
       }
     ],
@@ -82,18 +82,14 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:machine-learning-algorithm",
+        "id": "urn:ngm:class:learning-algorithm",
         "label": "Machine Learning Algorithm"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:rule-based-system",
+        "id": "urn:ngm:class:rule-based-systems",
         "label": "Rule-Based System"
-      },
-      {
-        "id": "urn:ngm:class:conventional-software",
-        "label": "Conventional Software"
       }
     ],
     "bridgesTo": [
@@ -123,7 +119,7 @@
         "label": "ISO IEC 42001"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],

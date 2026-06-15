@@ -81,16 +81,8 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:ring-confidential-transactions",
+        "@id": "urn:ngm:class:confidential-transactions",
         "label": "Ring Confidential Transactions"
-      },
-      {
-        "@id": "urn:ngm:class:cryptonote-protocol",
-        "label": "CryptoNote Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:randomx",
-        "label": "RandomX"
       }
     ],
     "uses": [
@@ -101,10 +93,6 @@ public:: true
       {
         "@id": "urn:ngm:class:bulletproofs",
         "label": "Bulletproofs"
-      },
-      {
-        "@id": "urn:ngm:class:dandelion-plus-plus",
-        "label": "Dandelion++"
       }
     ],
     "enables": [
@@ -133,10 +121,6 @@ public:: true
       {
         "@id": "urn:ngm:class:zcash",
         "label": "Zcash"
-      },
-      {
-        "@id": "urn:ngm:class:dash",
-        "label": "Dash"
       }
     ],
     "relatedTo": [

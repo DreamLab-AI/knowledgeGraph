@@ -27,12 +27,7 @@
         "label": "Autonomous Navigation"
       }
     ],
-    "enables": [
-      {
-        "id": "urn:ngm:class:remote-office-attendance",
-        "label": "RemoteOfficeAttendance"
-      }
-    ],
+    "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],

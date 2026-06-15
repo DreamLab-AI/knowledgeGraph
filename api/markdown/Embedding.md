@@ -23,48 +23,127 @@ public:: true
   "definition": "An embedding is a learned mapping from discrete or high-dimensional objects—such as words, sentences, images, graphs, or code—into a continuous, low-dimensional vector space, such that semantically or functionally similar inputs are mapped to geometrically proximate vectors. Embeddings are fundamental to modern machine learning, enabling downstream tasks including similarity search, classification, clustering, and retrieval through compact, transferable representations. The quality of an embedding space is typically measured by how well geometric proximity in the vector space reflects semantic or functional similarity in the original domain.",
   "domain": "ai",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:representation-learning", "label": "Representation Learning"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:representation-learning",
+      "label": "Representation Learning"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:dimensionality-reduction", "label": "Dimensionality Reduction"},
-      {"@id": "urn:ngm:class:encoder", "label": "Encoder"},
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "@id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
-      {"@id": "urn:ngm:class:text-classification", "label": "Text Classification"},
-      {"@id": "urn:ngm:class:recommendation-system", "label": "Recommendation System"},
-      {"@id": "urn:ngm:class:clustering", "label": "Clustering"},
-      {"@id": "urn:ngm:class:cross-modal-retrieval", "label": "Cross-Modal Retrieval"}
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "@id": "urn:ngm:class:text-classification",
+        "label": "Text Classification"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "@id": "urn:ngm:class:clustering",
+        "label": "Clustering"
+      },
+      {
+        "@id": "urn:ngm:class:cross-modal-retrieval",
+        "label": "Cross-Modal Retrieval"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"}
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:latent-space", "label": "Latent Space"},
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
-      {"@id": "urn:ngm:class:word2vec", "label": "Word2Vec"},
-      {"@id": "urn:ngm:class:bert", "label": "BERT"},
-      {"@id": "urn:ngm:class:approximate-nearest-neighbour", "label": "Approximate Nearest Neighbour"},
-      {"@id": "urn:ngm:class:knowledge-graph-embedding", "label": "Knowledge Graph Embedding"}
+      {
+        "@id": "urn:ngm:class:neural-network-latent-space",
+        "label": "Latent Space"
+      },
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:bert",
+        "label": "BERT"
+      },
+      {
+        "@id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Approximate Nearest Neighbour"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-embedding",
+        "label": "Knowledge Graph Embedding"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:one-hot-encoding", "label": "One-Hot Encoding"},
-      {"@id": "urn:ngm:class:sparse-representation", "label": "Sparse Representation"}
+      {
+        "@id": "urn:ngm:class:one-hot-encoding",
+        "label": "One-Hot Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:sparse-representation",
+        "label": "Sparse Representation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-index", "label": "Spatial Index"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:spatial-index",
+        "label": "Spatial Index"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:vector-embedding", "label": "Vector Embedding"},
-    {"@id": "urn:ngm:class:dense-vector-representation", "label": "Dense Vector Representation"}
+    {
+      "@id": "urn:ngm:class:vector-embedding",
+      "label": "Vector Embedding"
+    },
+    {
+      "@id": "urn:ngm:class:dense-vector-representation",
+      "label": "Dense Vector Representation"
+    }
   ],
   "quality": 0.74,
   "provenance": {

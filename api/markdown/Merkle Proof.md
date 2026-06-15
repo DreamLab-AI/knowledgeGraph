@@ -75,53 +75,121 @@ public:: true
   },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:merkle-root", "label": "Merkle Root"},
-      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"}
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-root",
+        "label": "Merkle Root"
+      },
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
-      {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"},
-      {"@id": "urn:ngm:class:simplified-payment-verification", "label": "Simplified Payment Verification"},
-      {"@id": "urn:ngm:class:light-client", "label": "Light Client"},
-      {"@id": "urn:ngm:class:stateless-verification", "label": "Stateless Verification"}
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      },
+      {
+        "@id": "urn:ngm:class:simplified-payment-verification",
+        "label": "Simplified Payment Verification"
+      },
+      {
+        "@id": "urn:ngm:class:light-client",
+        "label": "Light Client"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:hash-preimage", "label": "Hash Preimage"},
-      {"@id": "urn:ngm:class:sibling-hash", "label": "Sibling Hash"}
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:block-header", "label": "Block Header"}
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:block-header",
+        "label": "Block Header"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:proof-of-inclusion", "label": "Proof of Inclusion"},
-      {"@id": "urn:ngm:class:vector-commitment", "label": "Vector Commitment"}
+      {
+        "@id": "urn:ngm:class:proof-of-inclusion",
+        "label": "Proof of Inclusion"
+      },
+      {
+        "@id": "urn:ngm:class:vector-commitment",
+        "label": "Vector Commitment"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:blockchain-node", "label": "Blockchain Node"},
-      {"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"}
+      {
+        "@id": "urn:ngm:class:blockchain-node",
+        "label": "Blockchain Node"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:full-node-verification", "label": "Full Node Verification"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:block-header", "label": "Block Header"},
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"},
-      {"@id": "urn:ngm:class:patricia-trie", "label": "Patricia Trie"}
+      {
+        "@id": "urn:ngm:class:block-header",
+        "label": "Block Header"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "@id": "urn:ngm:class:patricia-trie",
+        "label": "Patricia Trie"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:supply-chain-provenance", "label": "Supply Chain Provenance"},
-      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"}
+      {
+        "@id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:merkle-path", "label": "Merkle Path"},
-    {"@id": "urn:ngm:class:merkle-branch", "label": "Merkle Branch"}
+    {
+      "@id": "urn:ngm:class:merkle-path",
+      "label": "Merkle Path"
+    },
+    {
+      "@id": "urn:ngm:class:merkle-branch",
+      "label": "Merkle Branch"
+    }
   ],
   "quality": 0.75,
   "provenance": {

@@ -47,59 +47,143 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:vfx", "label": "VFX"},
-    {"@id": "urn:ngm:class:special-visual-effects", "label": "Special Visual Effects"}
+    {
+      "@id": "urn:ngm:class:vfx",
+      "label": "VFX"
+    },
+    {
+      "@id": "urn:ngm:class:special-visual-effects",
+      "label": "Special Visual Effects"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:shader", "label": "Shader"},
-      {"@id": "urn:ngm:class:particle-systems", "label": "Particle Systems"},
-      {"@id": "urn:ngm:class:post-processing", "label": "Post Processing"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:motion-capture", "label": "Motion Capture"},
-      {"@id": "urn:ngm:class:digital-compositing", "label": "Digital Compositing"}
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "@id": "urn:ngm:class:particle-systems",
+        "label": "Particle Systems"
+      },
+      {
+        "@id": "urn:ngm:class:post-processing",
+        "label": "Post Processing"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"},
-      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"},
-      {"@id": "urn:ngm:class:compute-shader", "label": "Compute Shader"}
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:computer-graphics", "label": "Computer Graphics"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:fluid-simulation", "label": "Fluid Simulation"},
-      {"@id": "urn:ngm:class:volumetric-rendering", "label": "Volumetric Rendering"},
-      {"@id": "urn:ngm:class:procedural-animation", "label": "Procedural Animation"}
+      {
+        "@id": "urn:ngm:class:fluid-simulation",
+        "label": "Fluid Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:volumetric-rendering",
+        "label": "Volumetric Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-animation",
+        "label": "Procedural Animation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:virtual-production", "label": "Virtual Production"},
-      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"}
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:graphics-processing-unit", "label": "Graphics Processing Unit"},
-      {"@id": "urn:ngm:class:scene-graph", "label": "Scene Graph"}
+      {
+        "@id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:practical-effects", "label": "Practical Effects"},
-      {"@id": "urn:ngm:class:in-camera-vfx", "label": "In-Camera VFX"}
+      {
+        "@id": "urn:ngm:class:in-camera-vfx",
+        "label": "In-Camera VFX"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning-for-graphics", "label": "Machine Learning for Graphics"},
-      {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning for Graphics"
+      },
+      {
+        "@id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:openexr", "label": "OpenEXR"},
-      {"@id": "urn:ngm:class:academy-software-foundation", "label": "Academy Software Foundation"}
+      {
+        "@id": "urn:ngm:class:academy-software-foundation",
+        "label": "Academy Software Foundation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:3d-modelling", "label": "3D Modelling"},
-      {"@id": "urn:ngm:class:texture-mapping", "label": "Texture Mapping"},
-      {"@id": "urn:ngm:class:ray-tracing", "label": "Ray Tracing"}
+      {
+        "@id": "urn:ngm:class:3d-modelling",
+        "label": "3D Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      }
     ]
   },
   "quality": 0.72,

@@ -326,32 +326,16 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:annotation-overlay",
-        "label": "Annotation Overlay"
-      },
-      {
         "@id": "urn:ngm:class:application-window-capture",
         "label": "Application Window Capture"
-      },
-      {
-        "@id": "urn:ngm:class:clipboard-synchronisation",
-        "label": "Clipboard Synchronisation"
       },
       {
         "@id": "urn:ngm:class:display-capture",
         "label": "Display Capture"
       },
       {
-        "@id": "urn:ngm:class:intraframe-refresh",
-        "label": "Intraframe Refresh"
-      },
-      {
         "@id": "urn:ngm:class:remote-control",
         "label": "Remote Control"
-      },
-      {
-        "@id": "urn:ngm:class:tab-capture",
-        "label": "Tab Capture"
       },
       {
         "@id": "urn:ngm:class:video-encoding",
@@ -364,24 +348,8 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:network-device-interface",
-        "label": "Network Device Interface"
-      },
-      {
-        "@id": "urn:ngm:class:operating-system-capture-apis",
-        "label": "Operating System Capture APIs"
-      },
-      {
-        "@id": "urn:ngm:class:real-time-transport-protocol",
+        "@id": "urn:ngm:class:transport-protocol",
         "label": "Real-time Transport Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:session-signalling",
-        "label": "Session Signalling"
-      },
-      {
-        "@id": "urn:ngm:class:video-bandwidth",
-        "label": "Video Bandwidth"
       },
       {
         "@id": "urn:ngm:class:video-codec",
@@ -390,20 +358,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:ar-screen-projection",
-        "label": "AR Screen Projection"
-      },
-      {
-        "@id": "urn:ngm:class:live-code-demonstration",
-        "label": "Live Code Demonstration"
-      },
-      {
-        "@id": "urn:ngm:class:remote-technical-support",
+        "@id": "urn:ngm:class:remote-assistance",
         "label": "Remote Technical Support"
-      },
-      {
-        "@id": "urn:ngm:class:visual-design-review",
-        "label": "Visual Design Review"
       },
       {
         "@id": "urn:ngm:class:collaborative-systems-modality-whiteboard",
@@ -424,20 +380,8 @@ public:: true
         "label": "AV1 Codec"
       },
       {
-        "@id": "urn:ngm:class:h-264-screen-content-coding",
+        "@id": "urn:ngm:class:h-264",
         "label": "H.264 Screen Content Coding"
-      },
-      {
-        "@id": "urn:ngm:class:ndi-protocol",
-        "label": "NDI Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:remote-desktop-protocol",
-        "label": "Remote Desktop Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:rfb-protocol",
-        "label": "RFB Protocol"
       },
       {
         "@id": "urn:ngm:class:vp9-codec",
@@ -454,10 +398,6 @@ public:: true
         "label": "AV1 Codec"
       },
       {
-        "@id": "urn:ngm:class:gpu-hardware-encoding",
-        "label": "GPU Hardware Encoding"
-      },
-      {
         "@id": "urn:ngm:class:h-264",
         "label": "H.264"
       },
@@ -466,7 +406,7 @@ public:: true
         "label": "Screen Capture API"
       },
       {
-        "@id": "urn:ngm:class:stun-turn-servers",
+        "@id": "urn:ngm:class:stun-and-turn",
         "label": "STUN TURN Servers"
       },
       {
@@ -502,18 +442,6 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:design-collaboration",
-        "label": "Design Collaboration"
-      },
-      {
-        "@id": "urn:ngm:class:hybrid-working",
-        "label": "Hybrid Working"
-      },
-      {
-        "@id": "urn:ngm:class:technical-support-workflows",
-        "label": "Technical Support Workflows"
-      },
-      {
         "@id": "urn:ngm:class:collaborative-systems-modality-whiteboard",
         "label": "Collaborative Whiteboard"
       },
@@ -528,23 +456,19 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:alliance-for-open-media-av1",
-        "label": "Alliance for Open Media AV1"
-      },
-      {
-        "@id": "urn:ngm:class:ietf-web-rtc",
+        "@id": "urn:ngm:class:web-rtc",
         "label": "IETF WebRTC"
       },
       {
-        "@id": "urn:ngm:class:itu-t-h-264",
+        "@id": "urn:ngm:class:h-264",
         "label": "ITU-T H.264"
       },
       {
-        "@id": "urn:ngm:class:smpte-ndi-standard",
+        "@id": "urn:ngm:class:smpte-st-2128",
         "label": "SMPTE NDI Standard"
       },
       {
-        "@id": "urn:ngm:class:w3-c-screen-capture-api",
+        "@id": "urn:ngm:class:screen-capture-api",
         "label": "W3C Screen Capture API"
       }
     ]

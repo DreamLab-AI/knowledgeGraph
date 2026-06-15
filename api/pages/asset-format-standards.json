@@ -23,30 +23,14 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:conversion-tools",
-        "label": "Conversion Tools"
-      },
-      {
         "id": "urn:ngm:class:format-compliance",
         "label": "Format Compliance"
-      },
-      {
-        "id": "urn:ngm:class:validation-systems",
-        "label": "Validation Systems"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:content-portability",
         "label": "Content Portability"
-      },
-      {
-        "id": "urn:ngm:class:cross-platform-assets",
-        "label": "Cross-Platform Assets"
-      },
-      {
-        "id": "urn:ngm:class:tool-interoperability",
-        "label": "Tool Interoperability"
       }
     ],
     "dependsOn": [],

@@ -23,52 +23,119 @@ public:: true
   "definition": "Slack is a cloud-based team messaging and collaboration platform that organises workplace communication into persistent, searchable channels grouped by topic, project, or team, supplemented by direct messages and threaded conversations. Originally developed as an internal tool for the gaming company Tiny Speck in 2013 before pivoting to a standalone product, Slack is distinguished by its extensible integration ecosystem (over 2,500 app integrations), Workflow Builder for no-code automation, and its role as the de facto communication layer for software development teams. Acquired by Salesforce in 2021 for $27.7 billion, it competes primarily with Microsoft Teams.",
   "domain": "distributed-collaboration",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:collaboration-platform",
+      "label": "Collaboration Platform"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:threaded-messaging", "label": "Threaded Messaging"},
-      {"@id": "urn:ngm:class:api-integration", "label": "API Integration"},
-      {"@id": "urn:ngm:class:asynchronous-communication", "label": "Asynchronous Communication"},
-      {"@id": "urn:ngm:class:websocket", "label": "WebSocket"},
-      {"@id": "urn:ngm:class:oauth", "label": "OAuth"}
+      {
+        "@id": "urn:ngm:class:threaded-messaging",
+        "label": "Threaded Messaging"
+      },
+      {
+        "@id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      },
+      {
+        "@id": "urn:ngm:class:websocket",
+        "label": "WebSocket"
+      },
+      {
+        "@id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:remote-work", "label": "Remote Work"},
-      {"@id": "urn:ngm:class:digital-workplace-platform", "label": "Digital Workplace Platform"},
-      {"@id": "urn:ngm:class:distributed-team-collaboration", "label": "Distributed Team Collaboration"},
-      {"@id": "urn:ngm:class:enterprise-social-networking", "label": "Enterprise Social Networking"},
-      {"@id": "urn:ngm:class:devops", "label": "DevOps"}
+      {
+        "@id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      },
+      {
+        "@id": "urn:ngm:class:digital-workplace-platform",
+        "label": "Digital Workplace Platform"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-team-collaboration",
+        "label": "Distributed Team Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:remote-collaboration", "label": "Remote Collaboration"},
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"},
-      {"@id": "urn:ngm:class:incident-management", "label": "Incident Management"},
-      {"@id": "urn:ngm:class:chatops", "label": "ChatOps"}
+      {
+        "@id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "@id": "urn:ngm:class:incident-management",
+        "label": "Incident Management"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:channel", "label": "Channel"},
-      {"@id": "urn:ngm:class:workflow-builder", "label": "Workflow Builder"},
-      {"@id": "urn:ngm:class:slack-app-directory", "label": "Slack App Directory"}
+      {
+        "@id": "urn:ngm:class:channel",
+        "label": "Channel"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-engine",
+        "label": "Workflow Builder"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
-      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"}
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:microsoft-teams", "label": "Microsoft Teams"},
-      {"@id": "urn:ngm:class:email", "label": "Email"}
+      {
+        "@id": "urn:ngm:class:microsoft-teams",
+        "label": "Microsoft Teams"
+      },
+      {
+        "@id": "urn:ngm:class:email",
+        "label": "Email"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:real-time-messaging", "label": "Real-Time Messaging"},
-      {"@id": "urn:ngm:class:freemium-model", "label": "Freemium Model"}
+      {
+        "@id": "urn:ngm:class:real-time-messaging",
+        "label": "Real-Time Messaging"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:slack-technologies", "label": "Slack Technologies"}
+    {
+      "@id": "urn:ngm:class:slack-technologies",
+      "label": "Slack Technologies"
+    }
   ],
   "quality": 0.72,
   "provenance": {

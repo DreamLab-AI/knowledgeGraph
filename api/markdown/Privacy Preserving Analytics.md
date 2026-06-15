@@ -461,7 +461,7 @@ alias:: Privacy-Preserving Analytics
         "label": "Noise Mechanism"
       },
       {
-        "@id": "urn:ngm:class:privacy-budget",
+        "@id": "urn:ngm:class:privacy-budget-management",
         "label": "Privacy Budget"
       },
       {
@@ -495,10 +495,6 @@ alias:: Privacy-Preserving Analytics
         "label": "Data Governance Framework"
       },
       {
-        "@id": "urn:ngm:class:noise-calibration",
-        "label": "Noise Calibration"
-      },
-      {
         "@id": "urn:ngm:class:sensitivity-analysis",
         "label": "Sensitivity Analysis"
       },
@@ -508,14 +504,6 @@ alias:: Privacy-Preserving Analytics
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:ai-model-training-on-sensitive-data",
-        "label": "AI Model Training on Sensitive Data"
-      },
-      {
-        "@id": "urn:ngm:class:cross-institutional-data-collaboration",
-        "label": "Cross-Institutional Data Collaboration"
-      },
       {
         "@id": "urn:ngm:class:gdpr-compliance",
         "label": "GDPR Compliance"
@@ -531,16 +519,12 @@ alias:: Privacy-Preserving Analytics
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:bfv-scheme",
+        "@id": "urn:ngm:class:encryption-scheme",
         "label": "BFV Scheme"
       },
       {
         "@id": "urn:ngm:class:ckks-scheme",
         "label": "CKKS Scheme"
-      },
-      {
-        "@id": "urn:ngm:class:fed-avg-algorithm",
-        "label": "FedAvg Algorithm"
       },
       {
         "@id": "urn:ngm:class:garbled-circuits",
@@ -571,10 +555,6 @@ alias:: Privacy-Preserving Analytics
       {
         "@id": "urn:ngm:class:oblivious-ram",
         "label": "Oblivious RAM"
-      },
-      {
-        "@id": "urn:ngm:class:random-noise-injection",
-        "label": "Random Noise Injection"
       },
       {
         "@id": "urn:ngm:class:secure-aggregation",
@@ -609,7 +589,7 @@ alias:: Privacy-Preserving Analytics
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:clinical-trial-data-sharing",
+        "@id": "urn:ngm:class:data-sharing",
         "label": "Clinical Trial Data Sharing"
       },
       {
@@ -617,7 +597,7 @@ alias:: Privacy-Preserving Analytics
         "label": "Financial Crime Detection"
       },
       {
-        "@id": "urn:ngm:class:national-statistics",
+        "@id": "urn:ngm:class:statistics",
         "label": "National Statistics"
       },
       {
@@ -631,11 +611,11 @@ alias:: Privacy-Preserving Analytics
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:gdpr-article-89",
+        "@id": "urn:ngm:class:gdpr",
         "label": "GDPR Article 89"
       },
       {
-        "@id": "urn:ngm:class:ietf-prio-protocol",
+        "@id": "urn:ngm:class:ietf",
         "label": "IETF PRIO Protocol"
       },
       {
@@ -647,7 +627,7 @@ alias:: Privacy-Preserving Analytics
         "label": "NIST Privacy Framework"
       },
       {
-        "@id": "urn:ngm:class:w3-c-data-privacy-vocabulary",
+        "@id": "urn:ngm:class:w3-c",
         "label": "W3C Data Privacy Vocabulary"
       }
     ]

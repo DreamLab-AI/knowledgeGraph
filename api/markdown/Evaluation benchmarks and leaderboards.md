@@ -494,20 +494,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:elo-rating-system",
-        "label": "Elo Rating System"
-      },
-      {
         "@id": "urn:ngm:class:evaluation-harness",
         "label": "Evaluation Harness"
-      },
-      {
-        "@id": "urn:ngm:class:grader",
-        "label": "Grader"
-      },
-      {
-        "@id": "urn:ngm:class:held-out-set",
-        "label": "Held-out Set"
       },
       {
         "@id": "urn:ngm:class:leaderboard",
@@ -518,23 +506,11 @@ public:: true
         "label": "Prompt Template"
       },
       {
-        "@id": "urn:ngm:class:scoring-protocol",
-        "label": "Scoring Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:submission-pipeline",
-        "label": "Submission Pipeline"
-      },
-      {
         "@id": "urn:ngm:class:test-dataset",
         "label": "Test Dataset"
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:curated-dataset",
-        "label": "Curated Dataset"
-      },
       {
         "@id": "urn:ngm:class:ground-truth-labels",
         "label": "Ground Truth Labels"
@@ -542,10 +518,6 @@ public:: true
       {
         "@id": "urn:ngm:class:reference-model",
         "label": "Reference Model"
-      },
-      {
-        "@id": "urn:ngm:class:reproducible-protocol",
-        "label": "Reproducible Protocol"
       },
       {
         "@id": "urn:ngm:class:statistical-significance-testing",
@@ -570,64 +542,20 @@ public:: true
         "label": "Model Comparison"
       },
       {
-        "@id": "urn:ngm:class:pre-deployment-assessment",
-        "label": "Pre-Deployment Assessment"
-      },
-      {
-        "@id": "urn:ngm:class:procurement-decisions",
-        "label": "Procurement Decisions"
-      },
-      {
-        "@id": "urn:ngm:class:progress-measurement",
-        "label": "Progress Measurement"
-      },
-      {
         "@id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:bradley-terry-aggregation",
-        "label": "Bradley-Terry Aggregation"
-      },
-      {
-        "@id": "urn:ngm:class:contamination-detection",
-        "label": "Contamination Detection"
-      },
-      {
         "@id": "urn:ngm:class:cross-validation",
         "label": "Cross-Validation"
-      },
-      {
-        "@id": "urn:ngm:class:elo-rating-update",
-        "label": "Elo Rating Update"
-      },
-      {
-        "@id": "urn:ngm:class:exact-match-scoring",
-        "label": "Exact Match Scoring"
-      },
-      {
-        "@id": "urn:ngm:class:pass-at-k-metric",
-        "label": "Pass at k Metric"
-      },
-      {
-        "@id": "urn:ngm:class:win-rate-calculation",
-        "label": "Win Rate Calculation"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:adversarial-generation",
-        "label": "Adversarial Generation"
-      },
-      {
         "@id": "urn:ngm:class:crowdsourcing",
         "label": "Crowdsourcing"
-      },
-      {
-        "@id": "urn:ngm:class:expert-annotation",
-        "label": "Expert Annotation"
       },
       {
         "@id": "urn:ngm:class:multimodal-ai-architecture-models",
@@ -674,24 +602,8 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:ai-procurement",
-        "label": "AI Procurement"
-      },
-      {
         "@id": "urn:ngm:class:capability-forecasting",
         "label": "Capability Forecasting"
-      },
-      {
-        "@id": "urn:ngm:class:frontier-safety-framework",
-        "label": "Frontier Safety Framework"
-      },
-      {
-        "@id": "urn:ngm:class:preparedness-framework",
-        "label": "Preparedness Framework"
-      },
-      {
-        "@id": "urn:ngm:class:research-prioritisation",
-        "label": "Research Prioritisation"
       },
       {
         "@id": "urn:ngm:class:responsible-scaling-policy",
@@ -704,7 +616,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:eleuther-ai-lm-evaluation-harness",
+        "@id": "urn:ngm:class:evaluation-harness",
         "label": "EleutherAI lm-evaluation-harness"
       },
       {
@@ -720,16 +632,15 @@ public:: true
         "label": "NIST AI RMF"
       },
       {
-        "@id": "urn:ngm:class:stanford-crfm-helm",
-        "label": "Stanford CRFM HELM"
-      },
-      {
         "@id": "urn:ngm:class:uk-ai-safety-institute",
         "label": "UK AI Safety Institute"
       }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
     ]
   },
   "quality": 0.52,

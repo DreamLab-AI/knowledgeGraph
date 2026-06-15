@@ -191,11 +191,11 @@ alias:: BC-0029-permissioned-blockchain, BC-0429-permissioned-blockchain, Permis
         "label": "Distributed Ledger Technology"
       },
       {
-        "@id": "urn:ngm:class:cryptographic-hashing",
+        "@id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hashing"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -207,10 +207,6 @@ alias:: BC-0029-permissioned-blockchain, BC-0429-permissioned-blockchain, Permis
       {
         "@id": "urn:ngm:class:trade-finance",
         "label": "Trade Finance"
-      },
-      {
-        "@id": "urn:ngm:class:healthcare-data-exchange",
-        "label": "Healthcare Data Exchange"
       }
     ],
     "contrastsWith": [

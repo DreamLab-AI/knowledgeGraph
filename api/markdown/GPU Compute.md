@@ -38,52 +38,133 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:tensor-core", "label": "Tensor Core"},
-      {"@id": "urn:ngm:class:cuda-kernel", "label": "CUDA Kernel"},
-      {"@id": "urn:ngm:class:high-bandwidth-memory", "label": "High Bandwidth Memory"}
+      {
+        "@id": "urn:ngm:class:tensor-core",
+        "label": "Tensor Core"
+      },
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA Kernel"
+      },
+      {
+        "@id": "urn:ngm:class:high-bandwidth-memory",
+        "label": "High Bandwidth Memory"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"}
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cuda", "label": "CUDA"},
-      {"@id": "urn:ngm:class:nvlink", "label": "NVLink"}
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "@id": "urn:ngm:class:nvlink",
+        "label": "NVLink"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"},
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:neural-network-inference", "label": "Neural Network Inference"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:scientific-computing", "label": "Scientific Computing"}
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-inference",
+        "label": "Neural Network Inference"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cuda", "label": "CUDA"},
-      {"@id": "urn:ngm:class:rocm", "label": "ROCm"},
-      {"@id": "urn:ngm:class:mixed-precision-training", "label": "Mixed Precision Training"},
-      {"@id": "urn:ngm:class:parallel-computing", "label": "Parallel Computing"}
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "@id": "urn:ngm:class:rocm",
+        "label": "ROCm"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      },
+      {
+        "@id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:tpu", "label": "TPU"},
-      {"@id": "urn:ngm:class:cpu-compute", "label": "CPU Compute"}
+      {
+        "@id": "urn:ngm:class:tpu",
+        "label": "TPU"
+      },
+      {
+        "@id": "urn:ngm:class:cpu-compute",
+        "label": "CPU Compute"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:energy-consumption", "label": "Energy Consumption"},
-      {"@id": "urn:ngm:class:data-centre", "label": "Data Centre"},
-      {"@id": "urn:ngm:class:model-parallelism", "label": "Model Parallelism"}
+      {
+        "@id": "urn:ngm:class:energy-consumption",
+        "label": "Energy Consumption"
+      },
+      {
+        "@id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "@id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:ray-tracing", "label": "Ray Tracing"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:gpgpu", "label": "GPGPU"},
-    {"@id": "urn:ngm:class:general-purpose-gpu-computing", "label": "General-Purpose GPU Computing"}
+    {
+      "@id": "urn:ngm:class:gpgpu",
+      "label": "GPGPU"
+    },
+    {
+      "@id": "urn:ngm:class:general-purpose-gpu-computing",
+      "label": "General-Purpose GPU Computing"
+    }
   ],
   "quality": 0.74,
   "provenance": {

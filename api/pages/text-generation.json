@@ -36,7 +36,7 @@
         "label": "Transformer"
       },
       {
-        "id": "urn:ngm:class:neural-networks",
+        "id": "urn:ngm:class:neural-network",
         "label": "Neural Networks"
       },
       {
@@ -58,7 +58,7 @@
         "label": "Code Generation"
       },
       {
-        "id": "urn:ngm:class:summarisation",
+        "id": "urn:ngm:class:text-summarisation",
         "label": "Summarisation"
       },
       {
@@ -76,7 +76,7 @@
         "label": "Language Modeling"
       },
       {
-        "id": "urn:ngm:class:latent-space",
+        "id": "urn:ngm:class:neural-network-latent-space",
         "label": "Latent Space"
       }
     ],

@@ -68,11 +68,11 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:bias-detection",
+        "@id": "urn:ngm:class:bias-detection-methods",
         "label": "Bias Detection"
       },
       {
-        "@id": "urn:ngm:class:bias-mitigation",
+        "@id": "urn:ngm:class:bias-mitigation-techniques",
         "label": "Bias Mitigation"
       },
       {
@@ -108,7 +108,7 @@ public:: true
         "label": "Group Fairness"
       },
       {
-        "@id": "urn:ngm:class:individual-fairness",
+        "@id": "urn:ngm:class:group-vs-individual-fairness",
         "label": "Individual Fairness"
       },
       {
@@ -138,7 +138,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {

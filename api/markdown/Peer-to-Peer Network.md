@@ -75,54 +75,143 @@ alias:: Peer To Peer Network, Peer to Peer Network
     "label": "Network Component"
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:p2p-network", "label": "P2P Network"},
-    {"@id": "urn:ngm:class:overlay-network", "label": "Overlay Network"},
-    {"@id": "urn:ngm:class:decentralised-network", "label": "Decentralised Network"}
+    {
+      "@id": "urn:ngm:class:p2p-network",
+      "label": "P2P Network"
+    },
+    {
+      "@id": "urn:ngm:class:overlay-network",
+      "label": "Overlay Network"
+    },
+    {
+      "@id": "urn:ngm:class:decentralised-network",
+      "label": "Decentralised Network"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:gossip-protocol", "label": "Gossip Protocol"},
-      {"@id": "urn:ngm:class:peer-discovery", "label": "Peer Discovery"},
-      {"@id": "urn:ngm:class:mempool", "label": "Mempool"},
-      {"@id": "urn:ngm:class:transaction-pool", "label": "Transaction Pool"},
-      {"@id": "urn:ngm:class:bootstrap-node", "label": "Bootstrap Node"},
-      {"@id": "urn:ngm:class:archival-node", "label": "Archival Node"},
-      {"@id": "urn:ngm:class:full-node", "label": "Full Node"},
-      {"@id": "urn:ngm:class:dht", "label": "Distributed Hash Table"}
+      {
+        "@id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:peer-discovery",
+        "label": "Peer Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-pool",
+        "label": "Transaction Pool"
+      },
+      {
+        "@id": "urn:ngm:class:bootstrap-node",
+        "label": "Bootstrap Node"
+      },
+      {
+        "@id": "urn:ngm:class:archival-node",
+        "label": "Archival Node"
+      },
+      {
+        "@id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      },
+      {
+        "@id": "urn:ngm:class:kademlia-dht",
+        "label": "Distributed Hash Table"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"},
-      {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"},
-      {"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"},
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"}
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "@id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
-      {"@id": "urn:ngm:class:node", "label": "Node"},
-      {"@id": "urn:ngm:class:tcp-ip", "label": "TCP/IP"}
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:node",
+        "label": "Node"
+      },
+      {
+        "@id": "urn:ngm:class:tcp-ip",
+        "label": "TCP/IP"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:libp2p", "label": "libp2p"},
-      {"@id": "urn:ngm:class:bittorrent-protocol", "label": "BitTorrent Protocol"}
+      {
+        "@id": "urn:ngm:class:libp2p",
+        "label": "libp2p"
+      },
+      {
+        "@id": "urn:ngm:class:bittorrent-protocol",
+        "label": "BitTorrent Protocol"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:nat-traversal", "label": "NAT Traversal"},
-      {"@id": "urn:ngm:class:kademlia", "label": "Kademlia"}
+      {
+        "@id": "urn:ngm:class:nat-traversal",
+        "label": "NAT Traversal"
+      },
+      {
+        "@id": "urn:ngm:class:kademlia-dht",
+        "label": "Kademlia"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:client-server-architecture", "label": "Client-Server Architecture"},
-      {"@id": "urn:ngm:class:centralised-network", "label": "Centralised Network"}
+      {
+        "@id": "urn:ngm:class:client-server-architecture",
+        "label": "Client-Server Architecture"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"},
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ]
   },
   "quality": 0.72,

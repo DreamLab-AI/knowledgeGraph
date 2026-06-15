@@ -69,14 +69,6 @@ public:: true
       {
         "@id": "urn:ngm:class:thermodynamics",
         "label": "Thermodynamics"
-      },
-      {
-        "@id": "urn:ngm:class:materials-characterisation",
-        "label": "Materials Characterisation"
-      },
-      {
-        "@id": "urn:ngm:class:materials-processing",
-        "label": "Materials Processing"
       }
     ],
     "requires": [
@@ -99,10 +91,6 @@ public:: true
         "label": "Semiconductor Manufacturing"
       },
       {
-        "@id": "urn:ngm:class:battery-technology",
-        "label": "Battery Technology"
-      },
-      {
         "@id": "urn:ngm:class:additive-manufacturing",
         "label": "Additive Manufacturing"
       },
@@ -123,17 +111,9 @@ public:: true
       {
         "@id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
-      },
-      {
-        "@id": "urn:ngm:class:data-driven-discovery",
-        "label": "Data-Driven Discovery"
       }
     ],
     "dependsOn": [
-      {
-        "@id": "urn:ngm:class:experimental-physics",
-        "label": "Experimental Physics"
-      },
       {
         "@id": "urn:ngm:class:chemistry",
         "label": "Chemistry"
@@ -141,7 +121,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:quantum-computing",
+        "@id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
       },
       {
@@ -153,12 +133,6 @@ public:: true
         "label": "Supply Chain"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:materials-engineering",
-        "label": "Materials Engineering"
-      }
-    ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:nanoscience",
@@ -167,18 +141,6 @@ public:: true
       {
         "@id": "urn:ngm:class:condensed-matter-physics",
         "label": "Condensed Matter Physics"
-      },
-      {
-        "@id": "urn:ngm:class:surface-science",
-        "label": "Surface Science"
-      },
-      {
-        "@id": "urn:ngm:class:materials-informatics",
-        "label": "Materials Informatics"
-      },
-      {
-        "@id": "urn:ngm:class:engineering-discipline",
-        "label": "Engineering Discipline"
       }
     ]
   },

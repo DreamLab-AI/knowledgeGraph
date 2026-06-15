@@ -23,58 +23,152 @@ public:: true
   "definition": "The Internet of Things (IoT) is a networked ecosystem of physical devices — sensors, actuators, microcontrollers, and embedded processors — connected via IP-based communication protocols to collect, exchange, and act upon data with minimal direct human intervention. IoT extends digital connectivity into the physical world by binding heterogeneous hardware through standardised messaging protocols such as MQTT and CoAP, gateway middleware for local aggregation, and cloud or on-premises analytics platforms. It spans consumer, industrial, agricultural, and healthcare domains, each imposing distinct constraints on power, latency, security, and regulatory compliance. The discipline integrates edge computing, machine learning inference, and digital twin modelling to close feedback loops between the physical and digital realms.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-    {"@id": "urn:ngm:class:connected-devices", "label": "Connected Devices"}
+    {
+      "@id": "urn:ngm:class:internet-of-things",
+      "label": "Internet of Things"
+    },
+    {
+      "@id": "urn:ngm:class:connected-devices",
+      "label": "Connected Devices"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:sensor", "label": "Sensor"},
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:iot-gateway", "label": "IoT Gateway"},
-      {"@id": "urn:ngm:class:embedded-system", "label": "Embedded System"}
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:iot-gateway",
+        "label": "IoT Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded System"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:mqtt", "label": "MQTT"},
-      {"@id": "urn:ngm:class:coap", "label": "CoAP"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:lpwan", "label": "LPWAN"}
+      {
+        "@id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      },
+      {
+        "@id": "urn:ngm:class:coap",
+        "label": "CoAP"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:lpwan",
+        "label": "LPWAN"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"},
-      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:smart-city", "label": "Smart City"},
-      {"@id": "urn:ngm:class:precision-agriculture", "label": "Precision Agriculture"}
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      },
+      {
+        "@id": "urn:ngm:class:precision-agriculture",
+        "label": "Precision Agriculture"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
-      {"@id": "urn:ngm:class:device-identity", "label": "Device Identity"},
-      {"@id": "urn:ngm:class:firmware-update", "label": "Firmware Update"}
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:device-identity",
+        "label": "Device Identity"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:wireless-communication", "label": "Wireless Communication"}
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-communication",
+        "label": "Wireless Communication"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:time-series-data", "label": "Time-Series Data"},
-      {"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:time-series-data",
+        "label": "Time-Series Data"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:matter-standard", "label": "Matter Standard"},
-      {"@id": "urn:ngm:class:oneM2M", "label": "oneM2M"},
-      {"@id": "urn:ngm:class:ieee-802-15-4", "label": "IEEE 802.15.4"}
+      {
+        "@id": "urn:ngm:class:matter-protocol",
+        "label": "Matter Standard"
+      },
+      {
+        "@id": "urn:ngm:class:oneM2M",
+        "label": "oneM2M"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-802-15-4",
+        "label": "IEEE 802.15.4"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ]
   },
   "quality": 0.76,

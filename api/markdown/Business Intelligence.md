@@ -23,50 +23,127 @@ public:: true
   "definition": "Business intelligence is the set of technologies, processes, and practices for collecting, integrating, analysing, and presenting business data to support managerial decision-making. It encompasses data warehousing, reporting, dashboards, online analytical processing (OLAP), and ad-hoc querying that turn raw operational records into actionable insight. BI matters because it converts dispersed enterprise data into a coherent, queryable foundation for performance monitoring and strategic planning.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:data-warehousing", "label": "Data Warehousing"},
-      {"@id": "urn:ngm:class:olap", "label": "OLAP"},
-      {"@id": "urn:ngm:class:dashboard", "label": "Dashboard"},
-      {"@id": "urn:ngm:class:etl", "label": "ETL"}
+      {
+        "@id": "urn:ngm:class:data-warehousing",
+        "label": "Data Warehousing"
+      },
+      {
+        "@id": "urn:ngm:class:olap",
+        "label": "OLAP"
+      },
+      {
+        "@id": "urn:ngm:class:dashboard",
+        "label": "Dashboard"
+      },
+      {
+        "@id": "urn:ngm:class:etl-pipeline",
+        "label": "ETL"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:data-quality", "label": "Data Quality"},
-      {"@id": "urn:ngm:class:data-integration", "label": "Data Integration"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "@id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decision-support", "label": "Decision Support"},
-      {"@id": "urn:ngm:class:performance-management", "label": "Performance Management"},
-      {"@id": "urn:ngm:class:kpi-monitoring", "label": "KPI Monitoring"}
+      {
+        "@id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "@id": "urn:ngm:class:performance-management",
+        "label": "Performance Management"
+      },
+      {
+        "@id": "urn:ngm:class:kpi-monitoring",
+        "label": "KPI Monitoring"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:data-engineering", "label": "Data Engineering"},
-      {"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"},
-      {"@id": "urn:ngm:class:data-lake", "label": "Data Lake"}
+      {
+        "@id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:sql", "label": "SQL"},
-      {"@id": "urn:ngm:class:semantic-layer", "label": "Semantic Layer"}
+      {
+        "@id": "urn:ngm:class:sql",
+        "label": "SQL"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-layer",
+        "label": "Semantic Layer"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:data-science", "label": "Data Science"},
-      {"@id": "urn:ngm:class:advanced-analytics", "label": "Advanced Analytics"}
+      {
+        "@id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      },
+      {
+        "@id": "urn:ngm:class:advanced-analytics",
+        "label": "Advanced Analytics"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:enterprise-resource-planning", "label": "Enterprise Resource Planning"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-engineering", "label": "Data Engineering"},
-      {"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"},
-      {"@id": "urn:ngm:class:self-service-analytics", "label": "Self-Service Analytics"}
+      {
+        "@id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
+        "@id": "urn:ngm:class:self-service-analytics",
+        "label": "Self-Service Analytics"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:bi", "label": "BI"},
-    {"@id": "urn:ngm:class:enterprise-analytics", "label": "Enterprise Analytics"}
+    {
+      "@id": "urn:ngm:class:bi",
+      "label": "BI"
+    },
+    {
+      "@id": "urn:ngm:class:enterprise-analytics",
+      "label": "Enterprise Analytics"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

@@ -66,7 +66,7 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:spatial-data-discovery",
+        "@id": "urn:ngm:class:data-discovery",
         "label": "Spatial Data Discovery"
       }
     ]

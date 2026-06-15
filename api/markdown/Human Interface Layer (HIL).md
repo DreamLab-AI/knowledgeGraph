@@ -118,20 +118,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:haptic-systems",
+        "@id": "urn:ngm:class:haptic-feedback-system",
         "label": "Haptic Systems"
-      },
-      {
-        "@id": "urn:ngm:class:input-devices",
-        "label": "Input Devices"
-      },
-      {
-        "@id": "urn:ngm:class:interaction-models",
-        "label": "Interaction Models"
-      },
-      {
-        "@id": "urn:ngm:class:output-devices",
-        "label": "Output Devices"
       },
       {
         "@id": "urn:ngm:class:tracking-system",
@@ -154,7 +142,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:multimodal-ai-architecture-feedback",
+        "@id": "urn:ngm:class:multimodal-ai-architecture",
         "label": "Multimodal Feedback"
       },
       {
@@ -162,7 +150,7 @@ public:: true
         "label": "Natural Interaction"
       },
       {
-        "@id": "urn:ngm:class:user-immersion",
+        "@id": "urn:ngm:class:immersion",
         "label": "User Immersion"
       },
       {

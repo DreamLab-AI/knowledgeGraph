@@ -16,12 +16,7 @@
   "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:unix-time",
-        "label": "Unix Time"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:network-time-protocol",
@@ -44,10 +39,6 @@
       {
         "id": "urn:ngm:class:difficulty-adjustment",
         "label": "Difficulty Adjustment"
-      },
-      {
-        "id": "urn:ngm:class:chronological-ordering",
-        "label": "Chronological Ordering"
       },
       {
         "id": "urn:ngm:class:data-provenance",
@@ -89,10 +80,6 @@
       {
         "id": "urn:ngm:class:block-time",
         "label": "Block Time"
-      },
-      {
-        "id": "urn:ngm:class:median-time-past",
-        "label": "Median Time Past"
       }
     ],
     "supports": [

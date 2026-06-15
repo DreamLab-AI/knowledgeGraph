@@ -38,60 +38,143 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
-      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"},
-      {"@id": "urn:ngm:class:state-space-model", "label": "State Space Model"},
-      {"@id": "urn:ngm:class:control-law", "label": "Control Law"}
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "@id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      },
+      {
+        "@id": "urn:ngm:class:state-space-model",
+        "label": "State Space Model"
+      },
+      {
+        "@id": "urn:ngm:class:control-law",
+        "label": "Control Law"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop"},
-      {"@id": "urn:ngm:class:sensor", "label": "Sensor"},
-      {"@id": "urn:ngm:class:plant-model", "label": "Plant Model"}
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:plant-model",
+        "label": "Plant Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"},
-      {"@id": "urn:ngm:class:trajectory-tracking", "label": "Trajectory Tracking"},
-      {"@id": "urn:ngm:class:stability", "label": "Stability"}
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "@id": "urn:ngm:class:trajectory-tracking",
+        "label": "Trajectory Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:stability",
+        "label": "Stability"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:error-signal", "label": "Error Signal"},
-      {"@id": "urn:ngm:class:reference-setpoint", "label": "Reference Setpoint"},
-      {"@id": "urn:ngm:class:control-output", "label": "Control Output"}
+      {
+        "@id": "urn:ngm:class:error-signal",
+        "label": "Error Signal"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:closed-loop-system", "label": "Closed Loop System"},
-      {"@id": "urn:ngm:class:cyber-physical-system", "label": "Cyber-Physical System"}
+      {
+        "@id": "urn:ngm:class:closed-loop-control",
+        "label": "Closed Loop System"
+      },
+      {
+        "@id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber-Physical System"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:model-predictive-control", "label": "Model Predictive Control"},
-      {"@id": "urn:ngm:class:linear-quadratic-regulator", "label": "Linear Quadratic Regulator"},
-      {"@id": "urn:ngm:class:reinforcement-learning-policy", "label": "Reinforcement Learning Policy"}
+      {
+        "@id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "@id": "urn:ngm:class:linear-quadratic-regulator",
+        "label": "Linear Quadratic Regulator"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:system-identification", "label": "System Identification"},
-      {"@id": "urn:ngm:class:real-time-computing", "label": "Real-Time Computing"}
+      {
+        "@id": "urn:ngm:class:system-identification",
+        "label": "System Identification"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:open-loop-control", "label": "Open-Loop Control"},
-      {"@id": "urn:ngm:class:manual-control", "label": "Manual Control"}
+      {
+        "@id": "urn:ngm:class:open-loop-control",
+        "label": "Open-Loop Control"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:kinematics", "label": "Kinematics"},
-      {"@id": "urn:ngm:class:dynamics", "label": "Dynamics"},
-      {"@id": "urn:ngm:class:observer", "label": "Observer"},
-      {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"}
+      {
+        "@id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:dynamics",
+        "label": "Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:state-observer",
+        "label": "Observer"
+      },
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:control-system", "label": "Control System"},
-    {"@id": "urn:ngm:class:regulator", "label": "Regulator"}
+    {
+      "@id": "urn:ngm:class:control-system",
+      "label": "Control System"
+    },
+    {
+      "@id": "urn:ngm:class:regulator",
+      "label": "Regulator"
+    }
   ],
   "qualityScore": 0.76,
   "provenance": {

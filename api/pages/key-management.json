@@ -28,10 +28,6 @@
       {
         "id": "urn:ngm:class:key-revocation",
         "label": "Key Revocation"
-      },
-      {
-        "id": "urn:ngm:class:certificate-lifecycle-management",
-        "label": "Certificate Lifecycle Management"
       }
     ],
     "requires": [
@@ -67,16 +63,7 @@
       }
     ],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:envelope-encryption",
-        "label": "Envelope Encryption"
-      },
-      {
-        "id": "urn:ngm:class:key-hierarchy",
-        "label": "Key Hierarchy"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:password-management",
@@ -111,7 +98,7 @@
         "label": "Key Derivation Function"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],

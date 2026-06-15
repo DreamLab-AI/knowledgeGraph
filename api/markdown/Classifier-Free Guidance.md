@@ -39,52 +39,113 @@ alias:: Classifier Free Guidance
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:latent-diffusion", "label": "Latent Diffusion"},
-      {"@id": "urn:ngm:class:score-function", "label": "Score Function"},
-      {"@id": "urn:ngm:class:null-conditioning", "label": "Null Conditioning"},
-      {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"}
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:score-function",
+        "label": "Score Function"
+      },
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"},
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:text-to-video", "label": "Text-to-Video"},
-      {"@id": "urn:ngm:class:audio-generation", "label": "Audio Generation"},
-      {"@id": "urn:ngm:class:negative-prompting", "label": "Negative Prompting"},
-      {"@id": "urn:ngm:class:prompt-adherence", "label": "Prompt Adherence"}
+      {
+        "@id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-video-generation",
+        "label": "Text-to-Video"
+      },
+      {
+        "@id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:denoising-diffusion-probabilistic-model", "label": "Denoising Diffusion Probabilistic Model"},
-      {"@id": "urn:ngm:class:guidance-scale", "label": "Guidance Scale"},
-      {"@id": "urn:ngm:class:conditioning-signal", "label": "Conditioning Signal"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:classifier-guidance", "label": "Classifier Guidance"},
-      {"@id": "urn:ngm:class:unconditional-generation", "label": "Unconditional Generation"}
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Denoising Diffusion Probabilistic Model"
+      },
+      {
+        "@id": "urn:ngm:class:conditioning-signal",
+        "label": "Conditioning Signal"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:score-based-generative-model", "label": "Score-Based Generative Model"},
-      {"@id": "urn:ngm:class:dropout-training", "label": "Dropout Training"}
+      {
+        "@id": "urn:ngm:class:score-based-generative-model",
+        "label": "Score-Based Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:dropout",
+        "label": "Dropout Training"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"},
-      {"@id": "urn:ngm:class:stable-diffusion", "label": "Stable Diffusion"},
-      {"@id": "urn:ngm:class:controlnet", "label": "ControlNet"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:sampling-algorithm", "label": "Sampling Algorithm"},
-      {"@id": "urn:ngm:class:clip", "label": "CLIP"}
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
+        "label": "Stable Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:controlnet",
+        "label": "ControlNet"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:sampling",
+        "label": "Sampling Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
-      {"@id": "urn:ngm:class:reward-model", "label": "Reward Model"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:reward-model",
+        "label": "Reward Model"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:cfg", "label": "CFG"},
-    {"@id": "urn:ngm:class:guidance-without-a-classifier", "label": "Guidance Without a Classifier"}
+    {
+      "@id": "urn:ngm:class:cfg",
+      "label": "CFG"
+    },
+    {
+      "@id": "urn:ngm:class:guidance-without-a-classifier",
+      "label": "Guidance Without a Classifier"
+    }
   ],
   "quality": 0.74,
   "provenance": {

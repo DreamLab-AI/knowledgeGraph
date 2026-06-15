@@ -90,10 +90,6 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:audio-visual-systems",
-        "label": "Audio Visual Systems"
-      },
-      {
         "@id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
       },

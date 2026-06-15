@@ -168,32 +168,6 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:ai-agent-liability",
-        "label": "AI Agent Liability"
-      },
-      {
-        "@id": "urn:ngm:class:content-creator-liability",
-        "label": "Content Creator Liability"
-      },
-      {
-        "@id": "urn:ngm:class:harm-redress-mechanism",
-        "label": "Harm Redress Mechanism"
-      },
-      {
-        "@id": "urn:ngm:class:insurance-integration",
-        "label": "Insurance Integration"
-      },
-      {
-        "@id": "urn:ngm:class:platform-liability-framework",
-        "label": "Platform Liability Framework"
-      },
-      {
-        "@id": "urn:ngm:class:user-liability-rules",
-        "label": "User Liability Rules"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:dispute-resolution",
@@ -202,32 +176,12 @@ public:: true
       {
         "@id": "urn:ngm:class:evidence-collection",
         "label": "Evidence Collection"
-      },
-      {
-        "@id": "urn:ngm:class:harm-classification-system",
-        "label": "Harm Classification System"
-      },
-      {
-        "@id": "urn:ngm:class:jurisdiction-mapping",
-        "label": "Jurisdiction Mapping"
-      },
-      {
-        "@id": "urn:ngm:class:liability-attribution-engine",
-        "label": "Liability Attribution Engine"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:harm-compensation",
-        "label": "Harm Compensation"
-      },
-      {
         "@id": "urn:ngm:class:legal-accountability",
         "label": "Legal Accountability"
-      },
-      {
-        "@id": "urn:ngm:class:platform-protection",
-        "label": "Platform Protection"
       },
       {
         "@id": "urn:ngm:class:user-protection",
@@ -240,7 +194,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:legal-governance-framework",
+        "@id": "urn:ngm:class:governance-framework",
         "label": "Legal Governance Framework"
       },
       {

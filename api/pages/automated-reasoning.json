@@ -62,10 +62,6 @@
         "label": "Knowledge Graph"
       },
       {
-        "id": "urn:ngm:class:ontology-inference",
-        "label": "Ontology Inference"
-      },
-      {
         "id": "urn:ngm:class:program-synthesis",
         "label": "Program Synthesis"
       }
@@ -84,19 +80,11 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:smart-contract-verification",
-        "label": "Smart Contract Verification"
-      },
-      {
         "id": "urn:ngm:class:formal-methods",
         "label": "Formal Methods"
       }
     ],
     "uses": [
-      {
-        "id": "urn:ngm:class:resolution-principle",
-        "label": "Resolution Principle"
-      },
       {
         "id": "urn:ngm:class:first-order-logic",
         "label": "First-Order Logic"

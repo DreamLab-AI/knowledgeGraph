@@ -67,10 +67,6 @@
       {
         "id": "urn:ngm:class:supervised-fine-tuning",
         "label": "Supervised Fine Tuning"
-      },
-      {
-        "id": "urn:ngm:class:rlaif",
-        "label": "RLAIF"
       }
     ],
     "bridgesTo": [
@@ -107,12 +103,7 @@
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:model-alignment-pipeline",
-        "label": "Model Alignment Pipeline"
-      }
-    ],
+    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:constitutional-ai-training-methodology",

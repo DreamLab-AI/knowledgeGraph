@@ -363,7 +363,7 @@ alias:: MotionCapture
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:blendshape-rig",
+        "@id": "urn:ngm:class:animation-rig",
         "label": "Blendshape Rig"
       },
       {
@@ -375,12 +375,8 @@ alias:: MotionCapture
         "label": "IMU Suit"
       },
       {
-        "@id": "urn:ngm:class:optical-tracking-system",
+        "@id": "urn:ngm:class:optical-tracking",
         "label": "Optical Tracking System"
-      },
-      {
-        "@id": "urn:ngm:class:retargeting-solver",
-        "label": "Retargeting Solver"
       },
       {
         "@id": "urn:ngm:class:skeletal-animation",
@@ -393,10 +389,6 @@ alias:: MotionCapture
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:body-rig",
-        "label": "Body Rig"
-      },
-      {
         "@id": "urn:ngm:class:calibration",
         "label": "Calibration"
       },
@@ -405,12 +397,8 @@ alias:: MotionCapture
         "label": "Camera Array"
       },
       {
-        "@id": "urn:ngm:class:infrared-lighting",
+        "@id": "urn:ngm:class:infrared-light-source",
         "label": "Infrared Lighting"
-      },
-      {
-        "@id": "urn:ngm:class:temporal-filtering",
-        "label": "Temporal Filtering"
       },
       {
         "@id": "urn:ngm:class:3-d-reconstruction",
@@ -427,16 +415,12 @@ alias:: MotionCapture
         "label": "Film VFX"
       },
       {
-        "@id": "urn:ngm:class:games",
+        "@id": "urn:ngm:class:video-games",
         "label": "Games"
       },
       {
         "@id": "urn:ngm:class:real-time-animation",
         "label": "Real-Time Animation"
-      },
-      {
-        "@id": "urn:ngm:class:robotics-training-data",
-        "label": "Robotics Training Data"
       },
       {
         "@id": "urn:ngm:class:sports-analytics",
@@ -449,7 +433,7 @@ alias:: MotionCapture
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:action-unit-encoding",
+        "@id": "urn:ngm:class:facial-action-coding-system",
         "label": "Action Unit Encoding"
       },
       {
@@ -475,7 +459,7 @@ alias:: MotionCapture
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:imu-sensor-fusion",
+        "@id": "urn:ngm:class:sensor-fusion",
         "label": "IMU Sensor Fusion"
       },
       {
@@ -519,10 +503,6 @@ alias:: MotionCapture
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:cinematics",
-        "label": "Cinematics"
-      },
-      {
         "@id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
       },
@@ -541,15 +521,11 @@ alias:: MotionCapture
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:bvh-format",
-        "label": "BVH Format"
-      },
-      {
-        "@id": "urn:ngm:class:c3-d-format",
+        "@id": "urn:ngm:class:3-d-file-format",
         "label": "C3D Format"
       },
       {
-        "@id": "urn:ngm:class:fbx-format",
+        "@id": "urn:ngm:class:fbx",
         "label": "FBX Format"
       },
       {

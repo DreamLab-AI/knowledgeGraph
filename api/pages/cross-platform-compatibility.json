@@ -16,19 +16,10 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:runtime-abstraction",
-        "label": "Runtime Abstraction"
-      },
-      {
-        "id": "urn:ngm:class:platform-shim",
-        "label": "Platform Shim"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:api-standardisation",
+        "id": "urn:ngm:class:api-standard",
         "label": "API Standardisation"
       },
       {
@@ -44,10 +35,6 @@
       {
         "id": "urn:ngm:class:cross-platform-identity",
         "label": "Cross-Platform Identity"
-      },
-      {
-        "id": "urn:ngm:class:multi-platform-deployment",
-        "label": "Multi-Platform Deployment"
       },
       {
         "id": "urn:ngm:class:vendor-neutrality",
@@ -95,7 +82,7 @@
         "label": "Abstraction Layer"
       },
       {
-        "id": "urn:ngm:class:conformance-testing",
+        "id": "urn:ngm:class:standards-conformance-testing",
         "label": "Conformance Testing"
       }
     ],
@@ -132,10 +119,6 @@
       {
         "id": "urn:ngm:class:interoperability-standard",
         "label": "Interoperability Standard"
-      },
-      {
-        "id": "urn:ngm:class:platform-fragmentation",
-        "label": "Platform Fragmentation"
       },
       {
         "id": "urn:ngm:class:software-portability",

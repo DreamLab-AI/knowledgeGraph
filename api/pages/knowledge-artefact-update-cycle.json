@@ -18,16 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:staleness-detection",
-        "label": "Staleness Detection"
-      },
-      {
         "id": "urn:ngm:class:provenance-tracking",
         "label": "Provenance Tracking"
-      },
-      {
-        "id": "urn:ngm:class:change-propagation",
-        "label": "Change Propagation"
       }
     ],
     "requires": [
@@ -48,14 +40,6 @@
       {
         "id": "urn:ngm:class:knowledge-graph-maintenance",
         "label": "Knowledge Graph Maintenance"
-      },
-      {
-        "id": "urn:ngm:class:information-freshness",
-        "label": "Information Freshness"
-      },
-      {
-        "id": "urn:ngm:class:semantic-consistency",
-        "label": "Semantic Consistency"
       }
     ],
     "dependsOn": [
@@ -69,19 +53,10 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:batch-data-migration",
-        "label": "Batch Data Migration"
-      },
-      {
-        "id": "urn:ngm:class:static-documentation",
-        "label": "Static Documentation"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning-pipeline",
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
       },
       {
@@ -93,10 +68,6 @@
       {
         "id": "urn:ngm:class:continuous-integration",
         "label": "Continuous Integration"
-      },
-      {
-        "id": "urn:ngm:class:automated-pipeline",
-        "label": "Automated Pipeline"
       },
       {
         "id": "urn:ngm:class:data-lineage",
@@ -120,7 +91,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:knowledge-lifecycle-management",
+        "id": "urn:ngm:class:knowledge-management",
         "label": "Knowledge Lifecycle Management"
       },
       {

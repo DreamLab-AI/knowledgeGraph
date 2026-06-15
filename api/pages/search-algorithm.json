@@ -18,26 +18,14 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:uninformed-search",
-        "label": "Uninformed Search"
-      },
-      {
         "id": "urn:ngm:class:informed-search",
         "label": "Informed Search"
-      },
-      {
-        "id": "urn:ngm:class:pruning-strategy",
-        "label": "Pruning Strategy"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:state-space",
         "label": "State Space"
-      },
-      {
-        "id": "urn:ngm:class:goal-condition",
-        "label": "Goal Condition"
       }
     ],
     "enables": [
@@ -136,7 +124,7 @@
         "label": "Combinatorial Optimisation"
       },
       {
-        "id": "urn:ngm:class:complexity-theory",
+        "id": "urn:ngm:class:computational-complexity-theory",
         "label": "Complexity Theory"
       }
     ]

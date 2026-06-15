@@ -23,55 +23,127 @@ public:: true
   "definition": "Apple Vision Pro is a spatial computing head-mounted display developed by Apple, announced in June 2023 and released in the United States in February 2024, running the visionOS operating system. It combines ultra-high-resolution micro-OLED displays, a custom R1 chip for sensor processing, and an M2 chip for compute, enabling a fully immersive or passthrough-composited mixed reality experience. The device employs eye-tracking, hand-tracking, and voice input as its primary interaction modalities, replacing the traditional touchscreen paradigm with gaze-and-pinch gesture control.",
   "domain": "spatial-computing",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:head-mounted-display", "label": "Head-Mounted Display"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:head-mounted-display",
+      "label": "Head-Mounted Display"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:micro-oled-display", "label": "Micro-OLED Display"},
-      {"@id": "urn:ngm:class:apple-r1-chip", "label": "Apple R1 Chip"},
-      {"@id": "urn:ngm:class:apple-m2-chip", "label": "Apple M2 Chip"},
-      {"@id": "urn:ngm:class:visionos", "label": "visionOS"}
+      {
+        "@id": "urn:ngm:class:micro-oled-display",
+        "label": "Micro-OLED Display"
+      },
+      {
+        "@id": "urn:ngm:class:apple-inc-technology-corporation",
+        "label": "Apple R1 Chip"
+      },
+      {
+        "@id": "urn:ngm:class:visionos",
+        "label": "visionOS"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:apple-ecosystem", "label": "Apple Ecosystem"}
+      {
+        "@id": "urn:ngm:class:apple-inc-technology-corporation",
+        "label": "Apple Ecosystem"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:spatial-computing-runtime", "label": "Spatial Computing Runtime"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:spatial-computing-runtime",
+        "label": "Spatial Computing Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:spatial-user-interface", "label": "Spatial User Interface"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-user-interfaces",
+        "label": "Spatial User Interface"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"},
-      {"@id": "urn:ngm:class:hand-tracking", "label": "Hand Tracking"},
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
-      {"@id": "urn:ngm:class:passthrough-video", "label": "Passthrough Video"},
-      {"@id": "urn:ngm:class:realitykit", "label": "RealityKit"}
-    ],
-    "supports": [
-      {"@id": "urn:ngm:class:enterprise-xr", "label": "Enterprise Extended Reality"},
-      {"@id": "urn:ngm:class:immersive-training-simulation", "label": "Immersive Training Simulation"}
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "@id": "urn:ngm:class:passthrough-video",
+        "label": "Passthrough Video"
+      },
+      {
+        "@id": "urn:ngm:class:realitykit",
+        "label": "RealityKit"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:meta-quest", "label": "Meta Quest"},
-      {"@id": "urn:ngm:class:microsoft-hololens", "label": "Microsoft HoloLens"}
+      {
+        "@id": "urn:ngm:class:meta-quest",
+        "label": "Meta Quest"
+      },
+      {
+        "@id": "urn:ngm:class:tele-025-microsoft-hololens",
+        "label": "Microsoft HoloLens"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:display-technology", "label": "Display Technology"},
-      {"@id": "urn:ngm:class:wearable-computing", "label": "Wearable Computing"}
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
+      },
+      {
+        "@id": "urn:ngm:class:wearable-computing",
+        "label": "Wearable Computing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:apple-xr-headset", "label": "Apple XR Headset"},
-    {"@id": "urn:ngm:class:apple-spatial-computer", "label": "Apple Spatial Computer"}
+    {
+      "@id": "urn:ngm:class:apple-xr-headset",
+      "label": "Apple XR Headset"
+    },
+    {
+      "@id": "urn:ngm:class:apple-spatial-computer",
+      "label": "Apple Spatial Computer"
+    }
   ],
   "quality": 0.72,
   "provenance": {

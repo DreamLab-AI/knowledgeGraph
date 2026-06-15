@@ -87,10 +87,6 @@
       {
         "id": "urn:ngm:class:air-gapped-computer",
         "label": "Air-Gapped Computer"
-      },
-      {
-        "id": "urn:ngm:class:bip39-mnemonic",
-        "label": "BIP39 Mnemonic"
       }
     ],
     "supports": [

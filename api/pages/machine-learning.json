@@ -91,7 +91,7 @@
         "label": "Symbolic AI"
       },
       {
-        "id": "urn:ngm:class:expert-system",
+        "id": "urn:ngm:class:expert-systems",
         "label": "Expert System"
       }
     ],

@@ -89,7 +89,7 @@ public:: true
         "label": "Atomic Swap"
       },
       {
-        "@id": "urn:ngm:class:cross-chain-transfer",
+        "@id": "urn:ngm:class:cross-chain-asset-transfer",
         "label": "Cross-Chain Transfer"
       },
       {
@@ -117,7 +117,7 @@ public:: true
         "label": "SHA-256"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-script",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
         "label": "Bitcoin Script"
       },
       {

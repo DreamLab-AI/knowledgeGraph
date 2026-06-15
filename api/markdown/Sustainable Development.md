@@ -66,16 +66,8 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:computational-sustainability",
-        "label": "computational sustainability"
-      },
-      {
         "@id": "urn:ngm:class:green-ai",
         "label": "Green AI"
-      },
-      {
-        "@id": "urn:ngm:class:sustainable-ai-operations",
-        "label": "sustainable AI operations"
       },
       {
         "@id": "urn:ngm:class:circular-economy",
@@ -92,15 +84,11 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:environmental-governance",
-        "label": "Environmental Governance"
-      },
-      {
         "@id": "urn:ngm:class:policy-framework",
         "label": "Policy Framework"
       },
       {
-        "@id": "urn:ngm:class:multi-stakeholder-engagement",
+        "@id": "urn:ngm:class:stakeholder-engagement",
         "label": "Multi-Stakeholder Engagement"
       }
     ],
@@ -116,10 +104,6 @@ public:: true
       {
         "@id": "urn:ngm:class:inclusive-growth",
         "label": "Inclusive Growth"
-      },
-      {
-        "@id": "urn:ngm:class:social-inclusion",
-        "label": "Social Inclusion"
       }
     ],
     "supports": [
@@ -138,18 +122,8 @@ public:: true
         "label": "OECD AI Principles"
       },
       {
-        "@id": "urn:ngm:class:un-2030-agenda",
-        "label": "UN 2030 Agenda"
-      },
-      {
         "@id": "urn:ngm:class:iso-14001",
         "label": "ISO 14001 Environmental Management"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:extractive-economy",
-        "label": "Extractive Economy"
       }
     ],
     "bridgesTo": [
@@ -174,10 +148,6 @@ public:: true
       {
         "@id": "urn:ngm:class:well-being",
         "label": "Well-Being"
-      },
-      {
-        "@id": "urn:ngm:class:planetary-boundaries",
-        "label": "Planetary Boundaries"
       }
     ]
   },

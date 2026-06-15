@@ -18,15 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:endpoint",
-        "label": "Endpoint"
-      },
-      {
-        "id": "urn:ngm:class:api-schema",
-        "label": "API Schema"
-      },
-      {
-        "id": "urn:ngm:class:versioning",
+        "id": "urn:ngm:class:versioning-system",
         "label": "Versioning"
       }
     ],
@@ -56,10 +48,6 @@
       {
         "id": "urn:ngm:class:service-integration",
         "label": "Service Integration"
-      },
-      {
-        "id": "urn:ngm:class:third-party-extensions",
-        "label": "Third-Party Extensions"
       }
     ],
     "dependsOn": [],
@@ -77,16 +65,7 @@
         "label": "gRPC"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:sdk",
-        "label": "SDK"
-      },
-      {
-        "id": "urn:ngm:class:abi",
-        "label": "ABI"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:smart-contract",
@@ -103,7 +82,7 @@
         "label": "HTTP"
       },
       {
-        "id": "urn:ngm:class:json",
+        "id": "urn:ngm:class:json-data-interchange-format",
         "label": "JSON"
       },
       {

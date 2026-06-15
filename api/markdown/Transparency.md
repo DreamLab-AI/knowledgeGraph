@@ -64,7 +64,7 @@ public:: true
         "label": "Accountability (AI-0068)"
       },
       {
-        "@id": "urn:ngm:class:explainability-ai-0064",
+        "@id": "urn:ngm:class:explainability",
         "label": "Explainability (AI-0064)"
       },
       {
@@ -82,11 +82,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:data-documentation",
-        "label": "Data Documentation"
-      },
-      {
-        "@id": "urn:ngm:class:model-card",
+        "@id": "urn:ngm:class:ai-model-card",
         "label": "Model Card"
       },
       {
@@ -110,16 +106,8 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:data-transparency",
-        "label": "Data Transparency"
-      },
-      {
         "@id": "urn:ngm:class:algorithmic-transparency",
         "label": "Algorithmic Transparency"
-      },
-      {
-        "@id": "urn:ngm:class:operational-transparency",
-        "label": "Operational Transparency"
       }
     ],
     "dependsOn": [
@@ -128,7 +116,7 @@ public:: true
         "label": "Interpretability"
       },
       {
-        "@id": "urn:ngm:class:explainability-ai-0064",
+        "@id": "urn:ngm:class:explainability",
         "label": "Explainability (AI-0064)"
       }
     ],
@@ -144,12 +132,8 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
-      },
-      {
-        "@id": "urn:ngm:class:ieee-7001-2021",
-        "label": "IEEE 7001-2021"
       },
       {
         "@id": "urn:ngm:class:nist-ai-rmf",
@@ -164,10 +148,6 @@ public:: true
       {
         "@id": "urn:ngm:class:open-source-software",
         "label": "Open Source Software"
-      },
-      {
-        "@id": "urn:ngm:class:blockchain-auditability",
-        "label": "Blockchain Auditability"
       },
       {
         "@id": "urn:ngm:class:data-governance",

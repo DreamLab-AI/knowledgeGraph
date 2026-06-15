@@ -491,10 +491,6 @@ alias:: QuorumBlockchain
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:clique-consensus",
-        "label": "Clique Consensus"
-      },
-      {
         "@id": "urn:ngm:class:evm",
         "label": "EVM"
       },
@@ -503,19 +499,11 @@ alias:: QuorumBlockchain
         "label": "GoQuorum"
       },
       {
-        "@id": "urn:ngm:class:ibft-consensus",
-        "label": "IBFT Consensus"
-      },
-      {
-        "@id": "urn:ngm:class:permissioning-framework",
-        "label": "Permissioning Framework"
-      },
-      {
-        "@id": "urn:ngm:class:private-transaction-manager",
+        "@id": "urn:ngm:class:transaction-manager",
         "label": "Private Transaction Manager"
       },
       {
-        "@id": "urn:ngm:class:qbft-consensus",
+        "@id": "urn:ngm:class:qbft",
         "label": "QBFT Consensus"
       },
       {
@@ -537,7 +525,7 @@ alias:: QuorumBlockchain
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:enterprise-identity-management",
+        "@id": "urn:ngm:class:identity-management",
         "label": "Enterprise Identity Management"
       },
       {
@@ -567,20 +555,12 @@ alias:: QuorumBlockchain
         "label": "Cross-Border Payments"
       },
       {
-        "@id": "urn:ngm:class:institutional-settlement",
-        "label": "Institutional Settlement"
-      },
-      {
-        "@id": "urn:ngm:class:private-transactions",
+        "@id": "urn:ngm:class:confidential-transactions",
         "label": "Private Transactions"
       },
       {
-        "@id": "urn:ngm:class:tokenised-assets",
+        "@id": "urn:ngm:class:tokenised-real-world-assets",
         "label": "Tokenised Assets"
-      },
-      {
-        "@id": "urn:ngm:class:tokenised-repo",
-        "label": "Tokenised Repo"
       },
       {
         "@id": "urn:ngm:class:trade-finance-automation",
@@ -605,11 +585,7 @@ alias:: QuorumBlockchain
         "label": "ERC-721 Standard"
       },
       {
-        "@id": "urn:ngm:class:istanbul-bft",
-        "label": "Istanbul BFT"
-      },
-      {
-        "@id": "urn:ngm:class:qbft-protocol",
+        "@id": "urn:ngm:class:qbft",
         "label": "QBFT Protocol"
       },
       {
@@ -619,10 +595,6 @@ alias:: QuorumBlockchain
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:eth-signer",
-        "label": "EthSigner"
-      },
-      {
         "@id": "urn:ngm:class:hardhat",
         "label": "Hardhat"
       },
@@ -631,16 +603,8 @@ alias:: QuorumBlockchain
         "label": "Infura"
       },
       {
-        "@id": "urn:ngm:class:tessera-privacy-manager",
+        "@id": "urn:ngm:class:tessera",
         "label": "Tessera Privacy Manager"
-      },
-      {
-        "@id": "urn:ngm:class:truffle-framework",
-        "label": "Truffle Framework"
-      },
-      {
-        "@id": "urn:ngm:class:web3j",
-        "label": "Web3j"
       }
     ],
     "relatedTo": [
@@ -653,7 +617,7 @@ alias:: QuorumBlockchain
         "label": "Enterprise Ethereum Alliance"
       },
       {
-        "@id": "urn:ngm:class:jpmorgan-chase",
+        "@id": "urn:ngm:class:jpmorgan",
         "label": "JPMorgan Chase"
       },
       {
@@ -675,27 +639,15 @@ alias:: QuorumBlockchain
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:alastria-network",
-        "label": "Alastria Network"
-      },
-      {
-        "@id": "urn:ngm:class:digital-securities-settlement",
+        "@id": "urn:ngm:class:securities-settlement",
         "label": "Digital Securities Settlement"
       },
       {
-        "@id": "urn:ngm:class:jpm-coin",
-        "label": "JPM Coin"
-      },
-      {
-        "@id": "urn:ngm:class:kinexys-platform",
-        "label": "Kinexys Platform"
-      },
-      {
-        "@id": "urn:ngm:class:komgo-trade-finance",
+        "@id": "urn:ngm:class:trade-finance",
         "label": "Komgo Trade Finance"
       },
       {
-        "@id": "urn:ngm:class:onyx-digital-assets",
+        "@id": "urn:ngm:class:digital-asset",
         "label": "Onyx Digital Assets"
       }
     ],
@@ -705,16 +657,8 @@ alias:: QuorumBlockchain
         "label": "Apache License 2.0"
       },
       {
-        "@id": "urn:ngm:class:eip-225-clique",
-        "label": "EIP-225 Clique"
-      },
-      {
         "@id": "urn:ngm:class:enterprise-ethereum-alliance-specification",
         "label": "Enterprise Ethereum Alliance Specification"
-      },
-      {
-        "@id": "urn:ngm:class:ibft-2-0-specification",
-        "label": "IBFT 2.0 Specification"
       },
       {
         "@id": "urn:ngm:class:w3-c-did",

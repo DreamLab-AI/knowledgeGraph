@@ -22,10 +22,6 @@
         "label": "Physical Layer"
       },
       {
-        "id": "urn:ngm:class:medium-access-control",
-        "label": "Medium Access Control"
-      },
-      {
         "id": "urn:ngm:class:csma-ca",
         "label": "CSMA-CA"
       },
@@ -38,10 +34,6 @@
       {
         "id": "urn:ngm:class:ism-band",
         "label": "ISM Band"
-      },
-      {
-        "id": "urn:ngm:class:dsss-modulation",
-        "label": "DSSS Modulation"
       }
     ],
     "enables": [
@@ -56,10 +48,6 @@
       {
         "id": "urn:ngm:class:mesh-networking",
         "label": "Mesh Networking"
-      },
-      {
-        "id": "urn:ngm:class:real-time-location-system",
-        "label": "Real-Time Location System"
       }
     ],
     "dependsOn": [],
@@ -89,10 +77,6 @@
       {
         "id": "urn:ngm:class:bluetooth-mesh",
         "label": "Bluetooth Mesh"
-      },
-      {
-        "id": "urn:ngm:class:ieee-802-15-1",
-        "label": "IEEE 802.15.1"
       }
     ],
     "bridgesTo": [
@@ -124,20 +108,12 @@
       {
         "id": "urn:ngm:class:ieee",
         "label": "IEEE"
-      },
-      {
-        "id": "urn:ngm:class:iec-62591",
-        "label": "IEC 62591"
       }
     ],
     "partOf": [
       {
         "id": "urn:ngm:class:ieee-802-x",
         "label": "IEEE 802-X"
-      },
-      {
-        "id": "urn:ngm:class:low-rate-wpan",
-        "label": "Low-Rate WPAN"
       }
     ],
     "relatedTo": [

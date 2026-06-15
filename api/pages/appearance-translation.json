@@ -19,30 +19,14 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:content-preservation",
-        "label": "Content Preservation"
-      },
-      {
         "id": "urn:ngm:class:convolutional-neural-network",
         "label": "Convolutional Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:style-representations",
-        "label": "Style Representations"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:artistic-stylization",
-        "label": "Artistic Stylization"
-      },
-      {
         "id": "urn:ngm:class:domain-adaptation",
         "label": "Domain Adaptation"
-      },
-      {
-        "id": "urn:ngm:class:visual-content-transformation",
-        "label": "Visual Content Transformation"
       }
     ],
     "dependsOn": [],

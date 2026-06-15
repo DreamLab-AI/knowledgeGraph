@@ -23,54 +23,137 @@ public:: true
   "definition": "Transaction monitoring is the automated surveillance of financial transactions — payments, transfers, trade executions, and account activity — to identify patterns indicative of money laundering, terrorist financing, fraud, sanctions evasion, or other financial crimes, generating alerts for investigation and mandatory Suspicious Activity Reports (SARs) to regulators. It is a core component of Anti-Money Laundering compliance programmes required by FATF recommendations and national implementing legislation.",
   "domain": "finance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:compliance-monitoring",
+      "label": "Compliance Monitoring"
+    }
+  ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:customer-due-diligence", "label": "Customer Due Diligence"},
-      {"@id": "urn:ngm:class:financial-intelligence-unit", "label": "Financial Intelligence Unit"}
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:customer-due-diligence",
+        "label": "Customer Due Diligence"
+      },
+      {
+        "@id": "urn:ngm:class:financial-intelligence-unit",
+        "label": "Financial Intelligence Unit"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:pattern-recognition", "label": "Pattern Recognition"},
-      {"@id": "urn:ngm:class:behavioral-analytics", "label": "Behavioral Analytics"},
-      {"@id": "urn:ngm:class:graph-analytics", "label": "Graph Analytics"},
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
-      {"@id": "urn:ngm:class:rule-based-systems", "label": "Rule-Based Systems"},
-      {"@id": "urn:ngm:class:graph-neural-network", "label": "Graph Neural Network"}
+      {
+        "@id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:behavioral-analytics",
+        "label": "Behavioral Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:graph-analytics",
+        "label": "Graph Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based Systems"
+      },
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:financial-crime-detection", "label": "Financial Crime Detection"},
-      {"@id": "urn:ngm:class:regulatory-reporting", "label": "Regulatory Reporting"},
-      {"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"},
-      {"@id": "urn:ngm:class:suspicious-activity-report", "label": "Suspicious Activity Report"},
-      {"@id": "urn:ngm:class:sanctions-screening", "label": "Sanctions Screening"}
+      {
+        "@id": "urn:ngm:class:financial-crime-detection",
+        "label": "Financial Crime Detection"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "@id": "urn:ngm:class:suspicious-activity-report",
+        "label": "Suspicious Activity Report"
+      },
+      {
+        "@id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:alert-management", "label": "Alert Management"},
-      {"@id": "urn:ngm:class:case-management", "label": "Case Management"}
+      {
+        "@id": "urn:ngm:class:alert-management",
+        "label": "Alert Management"
+      },
+      {
+        "@id": "urn:ngm:class:case-management",
+        "label": "Case Management"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:fatf", "label": "FATF"},
-      {"@id": "urn:ngm:class:bank-secrecy-act", "label": "Bank Secrecy Act"},
-      {"@id": "urn:ngm:class:anti-money-laundering-directive", "label": "Anti-Money Laundering Directive"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:post-transaction-review", "label": "Post-Transaction Review"}
+      {
+        "@id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      },
+      {
+        "@id": "urn:ngm:class:bank-secrecy-act",
+        "label": "Bank Secrecy Act"
+      },
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering Directive"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain-analytics", "label": "Blockchain Analytics"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"},
-      {"@id": "urn:ngm:class:know-your-customer", "label": "Know Your Customer"},
-      {"@id": "urn:ngm:class:financial-crime-compliance", "label": "Financial Crime Compliance"}
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "@id": "urn:ngm:class:financial-crime-compliance",
+        "label": "Financial Crime Compliance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:aml-transaction-surveillance", "label": "AML Transaction Surveillance"},
-    {"@id": "urn:ngm:class:financial-transaction-surveillance", "label": "Financial Transaction Surveillance"}
+    {
+      "@id": "urn:ngm:class:aml-transaction-surveillance",
+      "label": "AML Transaction Surveillance"
+    },
+    {
+      "@id": "urn:ngm:class:financial-transaction-surveillance",
+      "label": "Financial Transaction Surveillance"
+    }
   ],
   "quality": 0.8,
   "provenance": {

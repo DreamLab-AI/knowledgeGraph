@@ -23,10 +23,6 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:affective-design",
-        "label": "Affective Design"
-      },
-      {
         "id": "urn:ngm:class:sensory-feedback",
         "label": "Sensory Feedback"
       },
@@ -35,20 +31,7 @@
         "label": "Narrative Content"
       }
     ],
-    "enables": [
-      {
-        "id": "urn:ngm:class:emotional-resonance",
-        "label": "Emotional Resonance"
-      },
-      {
-        "id": "urn:ngm:class:empathetic-connection",
-        "label": "Empathetic Connection"
-      },
-      {
-        "id": "urn:ngm:class:story-engagement",
-        "label": "Story Engagement"
-      }
-    ],
+    "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],

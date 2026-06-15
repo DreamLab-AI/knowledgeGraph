@@ -73,7 +73,7 @@ public:: true
         "label": "Identity Management"
       },
       {
-        "@id": "urn:ngm:class:secure-token",
+        "@id": "urn:ngm:class:token",
         "label": "Secure Token"
       }
     ],
@@ -83,11 +83,11 @@ public:: true
         "label": "Persistent State"
       },
       {
-        "@id": "urn:ngm:class:stateful-api",
+        "@id": "urn:ngm:class:api",
         "label": "Stateful API"
       },
       {
-        "@id": "urn:ngm:class:multi-user-collaboration",
+        "@id": "urn:ngm:class:multi-user-systems",
         "label": "Multi-User Collaboration"
       },
       {
@@ -101,15 +101,11 @@ public:: true
         "label": "Encryption"
       },
       {
-        "@id": "urn:ngm:class:json-web-token",
+        "@id": "urn:ngm:class:json-data-interchange-format-web-token",
         "label": "JSON Web Token"
       },
       {
-        "@id": "urn:ngm:class:cookie",
-        "label": "Cookie"
-      },
-      {
-        "@id": "urn:ngm:class:cache",
+        "@id": "urn:ngm:class:cache-layer",
         "label": "Cache"
       }
     ],

@@ -50,7 +50,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:low-latency-delivery",
+        "id": "urn:ngm:class:low-latency",
         "label": "Low-Latency Delivery"
       },
       {
@@ -60,10 +60,6 @@
       {
         "id": "urn:ngm:class:ddos-mitigation",
         "label": "DDoS Mitigation"
-      },
-      {
-        "id": "urn:ngm:class:origin-offload",
-        "label": "Origin Offload"
       }
     ],
     "dependsOn": [],
@@ -80,7 +76,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:edge-ai-inference",
+        "id": "urn:ngm:class:edge-inference",
         "label": "Edge AI Inference"
       },
       {
@@ -98,7 +94,7 @@
         "label": "Encryption"
       },
       {
-        "id": "urn:ngm:class:http3-quic",
+        "id": "urn:ngm:class:quic",
         "label": "HTTP/3 QUIC"
       },
       {
@@ -135,10 +131,6 @@
       {
         "id": "urn:ngm:class:network-latency",
         "label": "Network Latency"
-      },
-      {
-        "id": "urn:ngm:class:web-performance",
-        "label": "Web Performance"
       },
       {
         "id": "urn:ngm:class:reverse-proxy",

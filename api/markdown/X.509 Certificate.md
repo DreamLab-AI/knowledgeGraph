@@ -69,7 +69,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -111,25 +111,9 @@ public:: true
       {
         "@id": "urn:ngm:class:public-key",
         "label": "Public Key"
-      },
-      {
-        "@id": "urn:ngm:class:certificate-subject",
-        "label": "Certificate Subject"
-      },
-      {
-        "@id": "urn:ngm:class:validity-period",
-        "label": "Validity Period"
-      },
-      {
-        "@id": "urn:ngm:class:certificate-extension",
-        "label": "Certificate Extension"
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:itu-t-x-509-standard",
-        "label": "ITU-T X.509 Standard"
-      },
       {
         "@id": "urn:ngm:class:rfc-5280",
         "label": "RFC 5280"
@@ -167,15 +151,11 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:certificate-chain",
-        "label": "Certificate Chain"
-      },
-      {
         "@id": "urn:ngm:class:root-certificate",
         "label": "Root Certificate"
       },
       {
-        "@id": "urn:ngm:class:intermediate-certificate-authority",
+        "@id": "urn:ngm:class:certificate-authority",
         "label": "Intermediate Certificate Authority"
       }
     ],
@@ -185,7 +165,7 @@ public:: true
         "label": "Decentralized Identity"
       },
       {
-        "@id": "urn:ngm:class:verifiable-credential",
+        "@id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       }
     ]

@@ -23,59 +23,148 @@ public:: true
   "definition": "Atomic settlement is a transaction completion mechanism in which the transfer of assets between two or more parties either executes in its entirety or not at all, eliminating counterparty risk and the possibility of partial fulfilment. The mechanism is enforced at the protocol level, ensuring that delivery and payment occur simultaneously and indivisibly within a single transaction or smart contract execution. This property derives from atomicity — one of the four ACID properties of database transactions — applied to financial and digital asset exchanges. Atomic settlement is the foundational guarantee underpinning trustless exchange protocols, cross-chain bridges, real-time gross settlement systems, and delivery-versus-payment architectures in both decentralised and regulated financial markets.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:transaction", "label": "Transaction"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:transaction",
+      "label": "Transaction"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:atomic-dvp", "label": "Atomic Delivery-versus-Payment"},
-    {"@id": "urn:ngm:class:instant-settlement", "label": "Instant Settlement"}
+    {
+      "@id": "urn:ngm:class:atomic-dvp",
+      "label": "Atomic Delivery-versus-Payment"
+    },
+    {
+      "@id": "urn:ngm:class:instant-settlement",
+      "label": "Instant Settlement"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:hash-time-locked-contract", "label": "Hash Time-Locked Contract"},
-      {"@id": "urn:ngm:class:transaction-finality", "label": "Transaction Finality"},
-      {"@id": "urn:ngm:class:cryptographic-commitment", "label": "Cryptographic Commitment"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-finality",
+        "label": "Transaction Finality"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralized-exchange", "label": "Decentralized Exchange"},
-      {"@id": "urn:ngm:class:securities-settlement", "label": "Securities Settlement"},
-      {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"},
-      {"@id": "urn:ngm:class:trustless-settlement", "label": "Trustless Settlement"},
-      {"@id": "urn:ngm:class:t-plus-zero-settlement", "label": "T+0 Settlement"}
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:securities-settlement",
+        "label": "Securities Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:trustless-settlement",
+        "label": "Trustless Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:settlement",
+        "label": "T+0 Settlement"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:hash-time-locked-contract", "label": "Hash Time-Locked Contract"},
-      {"@id": "urn:ngm:class:escrow", "label": "Escrow"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      },
+      {
+        "@id": "urn:ngm:class:escrow-system",
+        "label": "Escrow"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:finality", "label": "Finality"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:acid-properties", "label": "ACID Properties"},
-      {"@id": "urn:ngm:class:delivery-versus-payment", "label": "Delivery-Versus-Payment"}
+      {
+        "@id": "urn:ngm:class:acid-properties",
+        "label": "ACID Properties"
+      },
+      {
+        "@id": "urn:ngm:class:delivery-versus-payment",
+        "label": "Delivery-Versus-Payment"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:cbdc", "label": "Central Bank Digital Currency"},
-      {"@id": "urn:ngm:class:tokenised-securities", "label": "Tokenised Securities"},
-      {"@id": "urn:ngm:class:defi", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency-cbdc",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:tokenised-securities",
+        "label": "Tokenised Securities"
+      },
+      {
+        "@id": "urn:ngm:class:defi",
+        "label": "Decentralised Finance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:settlement-risk", "label": "Settlement Risk"},
-      {"@id": "urn:ngm:class:bilateral-netting", "label": "Bilateral Netting"},
-      {"@id": "urn:ngm:class:deferred-net-settlement", "label": "Deferred Net Settlement"}
+      {
+        "@id": "urn:ngm:class:deferred-net-settlement",
+        "label": "Deferred Net Settlement"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:atomic-swap", "label": "Atomic Swap"},
-      {"@id": "urn:ngm:class:real-time-gross-settlement", "label": "Real-Time Gross Settlement"},
-      {"@id": "urn:ngm:class:central-counterparty", "label": "Central Counterparty"},
-      {"@id": "urn:ngm:class:payment-channel", "label": "Payment Channel"}
+      {
+        "@id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-gross-settlement",
+        "label": "Real-Time Gross Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-transaction", "label": "Distributed Transaction"},
-      {"@id": "urn:ngm:class:two-phase-commit", "label": "Two-Phase Commit"}
+      {
+        "@id": "urn:ngm:class:distributed-transaction",
+        "label": "Distributed Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:two-phase-commit",
+        "label": "Two-Phase Commit"
+      }
     ]
   },
   "quality": 0.74,

@@ -54,7 +54,7 @@
         "label": "Catastrophic Risk Reduction"
       },
       {
-        "id": "urn:ngm:class:ai-safety-policy",
+        "id": "urn:ngm:class:ai-policy",
         "label": "AI Safety Policy"
       },
       {
@@ -66,23 +66,10 @@
       {
         "id": "urn:ngm:class:longtermism",
         "label": "Longtermism"
-      },
-      {
-        "id": "urn:ngm:class:existential-risk-research",
-        "label": "Existential Risk Research"
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:recoverable-catastrophe",
-        "label": "Recoverable Catastrophe"
-      },
-      {
-        "id": "urn:ngm:class:local-risk",
-        "label": "Local Risk"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:ai-alignment",
@@ -104,7 +91,7 @@
         "label": "AI Governance"
       },
       {
-        "id": "urn:ngm:class:biosafety-regulation",
+        "id": "urn:ngm:class:regulation",
         "label": "Biosafety Regulation"
       },
       {
@@ -127,10 +114,6 @@
       {
         "id": "urn:ngm:class:longtermism",
         "label": "Longtermism"
-      },
-      {
-        "id": "urn:ngm:class:existential-risk-research",
-        "label": "Existential Risk Research"
       },
       {
         "id": "urn:ngm:class:biosecurity",

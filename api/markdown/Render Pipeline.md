@@ -48,58 +48,149 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:shader", "label": "Shader"},
-      {"@id": "urn:ngm:class:vertex-shader", "label": "Vertex Shader"},
-      {"@id": "urn:ngm:class:fragment-shader", "label": "Fragment Shader"},
-      {"@id": "urn:ngm:class:compute-shader", "label": "Compute Shader"},
-      {"@id": "urn:ngm:class:rasteriser", "label": "Rasteriser"},
-      {"@id": "urn:ngm:class:depth-buffer", "label": "Depth Buffer"},
-      {"@id": "urn:ngm:class:post-processing", "label": "Post Processing"}
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "@id": "urn:ngm:class:vertex-shader",
+        "label": "Vertex Shader"
+      },
+      {
+        "@id": "urn:ngm:class:pixel-shader",
+        "label": "Fragment Shader"
+      },
+      {
+        "@id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "@id": "urn:ngm:class:depth-buffer",
+        "label": "Depth Buffer"
+      },
+      {
+        "@id": "urn:ngm:class:post-processing",
+        "label": "Post Processing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:gpu", "label": "GPU"},
-      {"@id": "urn:ngm:class:graphics-api", "label": "Graphics API"},
-      {"@id": "urn:ngm:class:scene-graph", "label": "Scene Graph"}
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:3-d-rendering-engine", "label": "3D Rendering Engine"},
-      {"@id": "urn:ngm:class:vulkan", "label": "Vulkan"},
-      {"@id": "urn:ngm:class:webgpu", "label": "WebGPU"},
-      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"}
+      {
+        "@id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      },
+      {
+        "@id": "urn:ngm:class:webgpu",
+        "label": "WebGPU"
+      },
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:ray-tracing", "label": "Ray Tracing"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"}
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:memory-bandwidth", "label": "Memory Bandwidth"},
-      {"@id": "urn:ngm:class:driver-model", "label": "Driver Model"}
+      {
+        "@id": "urn:ngm:class:memory-bandwidth",
+        "label": "Memory Bandwidth"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:path-tracing", "label": "Path Tracing"},
-      {"@id": "urn:ngm:class:offline-rendering", "label": "Offline Rendering"}
+      {
+        "@id": "urn:ngm:class:path-tracing",
+        "label": "Path Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:offline-rendering",
+        "label": "Offline Rendering"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:khronos-group", "label": "Khronos Group"},
-      {"@id": "urn:ngm:class:w3c", "label": "W3C"}
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning-accelerator", "label": "Machine Learning Accelerator"},
-      {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"}
+      {
+        "@id": "urn:ngm:class:machine-learning-accelerator",
+        "label": "Machine Learning Accelerator"
+      },
+      {
+        "@id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"},
-      {"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"},
-      {"@id": "urn:ngm:class:level-of-detail", "label": "Level of Detail"},
-      {"@id": "urn:ngm:class:occlusion-culling", "label": "Occlusion Culling"}
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "@id": "urn:ngm:class:occlusion-culling",
+        "label": "Occlusion Culling"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:graphics-pipeline", "label": "Graphics Pipeline"},
-    {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"}
+    {
+      "@id": "urn:ngm:class:graphics-pipeline",
+      "label": "Graphics Pipeline"
+    },
+    {
+      "@id": "urn:ngm:class:rendering-pipeline",
+      "label": "Rendering Pipeline"
+    }
   ],
   "quality": 0.74,
   "provenance": {

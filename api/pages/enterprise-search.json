@@ -22,10 +22,6 @@
         "label": "Inverted Index"
       },
       {
-        "id": "urn:ngm:class:content-connector",
-        "label": "Content Connector"
-      },
-      {
         "id": "urn:ngm:class:relevance-ranking",
         "label": "Relevance Ranking"
       },

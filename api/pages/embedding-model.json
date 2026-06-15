@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:latent-space",
+        "id": "urn:ngm:class:neural-network-latent-space",
         "label": "Latent Space"
       },
       {
@@ -52,10 +52,6 @@
       {
         "id": "urn:ngm:class:anomaly-detection",
         "label": "Anomaly Detection"
-      },
-      {
-        "id": "urn:ngm:class:zero-shot-classification",
-        "label": "Zero-Shot Classification"
       }
     ],
     "dependsOn": [
@@ -99,7 +95,7 @@
         "label": "Vector Database"
       },
       {
-        "id": "urn:ngm:class:approximate-nearest-neighbour",
+        "id": "urn:ngm:class:nearest-neighbor-search",
         "label": "Approximate Nearest Neighbour"
       },
       {
@@ -120,7 +116,7 @@
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai",
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       },
       {

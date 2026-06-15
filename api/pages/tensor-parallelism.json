@@ -16,16 +16,7 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:column-parallel-linear",
-        "label": "Column-Parallel Linear Layer"
-      },
-      {
-        "id": "urn:ngm:class:row-parallel-linear",
-        "label": "Row-Parallel Linear Layer"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:high-bandwidth-interconnect",
@@ -34,10 +25,6 @@
       {
         "id": "urn:ngm:class:gpu-cluster",
         "label": "GPU Cluster"
-      },
-      {
-        "id": "urn:ngm:class:all-reduce",
-        "label": "All-Reduce Collective"
       }
     ],
     "enables": [
@@ -96,10 +83,6 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:all-gather",
-        "label": "All-Gather Collective"
-      },
-      {
         "id": "urn:ngm:class:nvlink",
         "label": "NVLink"
       }
@@ -137,10 +120,6 @@
       {
         "id": "urn:ngm:class:expert-parallelism",
         "label": "Expert Parallelism"
-      },
-      {
-        "id": "urn:ngm:class:sequence-parallelism",
-        "label": "Sequence Parallelism"
       }
     ]
   },

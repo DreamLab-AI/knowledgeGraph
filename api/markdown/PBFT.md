@@ -23,51 +23,131 @@ public:: true
   "definition": "Practical Byzantine Fault Tolerance (PBFT) is a state-machine replication protocol designed by Castro and Liskov (1999) that achieves consensus in asynchronous distributed systems despite up to f arbitrarily faulty (Byzantine) nodes, requiring a total of at least 3f+1 replicas. It proceeds through pre-prepare, prepare, and commit phases to ensure all correct replicas execute the same sequence of operations, providing both safety and liveness under partial synchrony assumptions. PBFT was the first Byzantine fault-tolerant protocol deemed practical for deployed systems, with latency polynomial rather than exponential in the number of nodes. Its communication complexity of O(n²) limits scalability but makes it highly suitable for small-to-medium permissioned blockchain networks.",
   "domain": "distributed-systems",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:byzantine-fault-tolerance",
+    "label": "Byzantine Fault Tolerance"
+  },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"},
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
-      {"@id": "urn:ngm:class:bc-cryptographic-primitive", "label": "Cryptographic Primitive"},
-      {"@id": "urn:ngm:class:message-authentication-code", "label": "Message Authentication Code"},
-      {"@id": "urn:ngm:class:quorum-system", "label": "Quorum System"},
-      {"@id": "urn:ngm:class:view-change-protocol", "label": "View Change Protocol"}
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:bc-cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      },
+      {
+        "@id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      },
+      {
+        "@id": "urn:ngm:class:quorum-system",
+        "label": "Quorum System"
+      },
+      {
+        "@id": "urn:ngm:class:view-change-protocol",
+        "label": "View Change Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:blockchain-infrastructure", "label": "Blockchain Infrastructure"},
-      {"@id": "urn:ngm:class:deterministic-finality", "label": "Deterministic Finality"},
-      {"@id": "urn:ngm:class:state-machine-replication", "label": "State Machine Replication"},
-      {"@id": "urn:ngm:class:permissioned-blockchain", "label": "Permissioned Blockchain"}
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:deterministic-finality",
+        "label": "Deterministic Finality"
+      },
+      {
+        "@id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      },
+      {
+        "@id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:partial-synchrony", "label": "Partial Synchrony"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:authenticated-communication", "label": "Authenticated Communication"}
+      {
+        "@id": "urn:ngm:class:partial-synchrony",
+        "label": "Partial Synchrony"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:byzantine-agreement", "label": "Byzantine Agreement"},
-      {"@id": "urn:ngm:class:total-order-broadcast", "label": "Total Order Broadcast"}
+      {
+        "@id": "urn:ngm:class:byzantine-agreement",
+        "label": "Byzantine Agreement"
+      },
+      {
+        "@id": "urn:ngm:class:total-order-broadcast",
+        "label": "Total Order Broadcast"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:dynamic-scalable-bft", "label": "Dynamic Scalable BFT"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:bc-protocol-and-consensus", "label": "Protocol and Consensus"},
-      {"@id": "urn:ngm:class:hotstuff", "label": "HotStuff"},
-      {"@id": "urn:ngm:class:tendermint", "label": "Tendermint"}
+      {
+        "@id": "urn:ngm:class:dynamic-scalable-bft",
+        "label": "Dynamic Scalable BFT"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:bc-protocol-and-consensus",
+        "label": "Protocol and Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:hotstuff",
+        "label": "HotStuff"
+      },
+      {
+        "@id": "urn:ngm:class:tendermint",
+        "label": "Tendermint"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:crash-fault-tolerance", "label": "Crash Fault Tolerance"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:crash-fault-tolerance",
+        "label": "Crash Fault Tolerance"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:hyperledger-fabric", "label": "Hyperledger Fabric"},
-      {"@id": "urn:ngm:class:enterprise-blockchain", "label": "Enterprise Blockchain"}
+      {
+        "@id": "urn:ngm:class:hyperledger-fabric",
+        "label": "Hyperledger Fabric"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-blockchain",
+        "label": "Enterprise Blockchain"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:practical-byzantine-fault-tolerance", "label": "Practical Byzantine Fault Tolerance"}
+    {
+      "@id": "urn:ngm:class:practical-byzantine-fault-tolerance",
+      "label": "Practical Byzantine Fault Tolerance"
+    }
   ],
   "quality": 0.72,
   "provenance": {

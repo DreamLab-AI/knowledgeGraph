@@ -24,10 +24,6 @@
       {
         "id": "urn:ngm:class:lens",
         "label": "Lens"
-      },
-      {
-        "id": "urn:ngm:class:baseline",
-        "label": "Baseline"
       }
     ],
     "requires": [
@@ -92,7 +88,7 @@
         "label": "LiDAR"
       },
       {
-        "id": "urn:ngm:class:time-of-flight-camera",
+        "id": "urn:ngm:class:time-of-flight-sensor",
         "label": "Time-of-Flight Camera"
       }
     ],
@@ -110,17 +106,13 @@
       {
         "id": "urn:ngm:class:camera-parameters",
         "label": "Camera Parameters"
-      },
-      {
-        "id": "urn:ngm:class:stereo-matching-algorithm",
-        "label": "Stereo Matching Algorithm"
       }
     ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:robot-perception-system",
+        "id": "urn:ngm:class:robot-perception",
         "label": "Robot Perception System"
       }
     ],

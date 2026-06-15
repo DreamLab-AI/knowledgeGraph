@@ -37,10 +37,6 @@
         "label": "Collaborative Simulation"
       },
       {
-        "id": "urn:ngm:class:multi-vendor-ecosystems",
-        "label": "Multi-Vendor Ecosystems"
-      },
-      {
         "id": "urn:ngm:class:data-integration",
         "label": "Data Integration"
       }

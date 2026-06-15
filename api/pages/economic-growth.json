@@ -18,23 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:productivity-growth",
-        "label": "Productivity Growth"
-      },
-      {
-        "id": "urn:ngm:class:capital-accumulation",
+        "id": "urn:ngm:class:capital-formation",
         "label": "Capital Accumulation"
-      },
-      {
-        "id": "urn:ngm:class:labour-force-growth",
-        "label": "Labour Force Growth"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:investment",
-        "label": "Investment"
-      },
       {
         "id": "urn:ngm:class:institutional-framework",
         "label": "Institutional Framework"
@@ -50,39 +38,18 @@
         "label": "Poverty Reduction"
       },
       {
-        "id": "urn:ngm:class:fiscal-capacity",
-        "label": "Fiscal Capacity"
-      },
-      {
-        "id": "urn:ngm:class:technological-diffusion",
+        "id": "urn:ngm:class:innovation-diffusion",
         "label": "Technological Diffusion"
       }
     ],
     "dependsOn": [
-      {
-        "id": "urn:ngm:class:total-factor-productivity",
-        "label": "Total Factor Productivity"
-      },
-      {
-        "id": "urn:ngm:class:human-capital",
-        "label": "Human Capital"
-      },
       {
         "id": "urn:ngm:class:infrastructure",
         "label": "Infrastructure"
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:economic-recession",
-        "label": "Economic Recession"
-      },
-      {
-        "id": "urn:ngm:class:stagflation",
-        "label": "Stagflation"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:artificial-intelligence",
@@ -117,10 +84,6 @@
       {
         "id": "urn:ngm:class:fiscal-policy",
         "label": "Fiscal Policy"
-      },
-      {
-        "id": "urn:ngm:class:trade-openness",
-        "label": "Trade Openness"
       }
     ]
   },

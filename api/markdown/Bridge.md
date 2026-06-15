@@ -93,10 +93,6 @@ public:: true
         "label": "Cross-Chain Messaging"
       },
       {
-        "@id": "urn:ngm:class:token-wrapping",
-        "label": "Token Wrapping"
-      },
-      {
         "@id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       }
@@ -107,17 +103,13 @@ public:: true
         "label": "Lock and Mint Mechanism"
       },
       {
-        "@id": "urn:ngm:class:burn-and-release-mechanism",
-        "label": "Burn And Release Mechanism"
-      },
-      {
         "@id": "urn:ngm:class:relayer",
         "label": "Relayer"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:multi-signature-scheme",
+        "@id": "urn:ngm:class:multi-signature",
         "label": "Multi-Signature Scheme"
       },
       {
@@ -170,10 +162,6 @@ public:: true
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:bridge-exploit",
-        "label": "Bridge Exploit"
-      },
       {
         "@id": "urn:ngm:class:trusted-bridge",
         "label": "Trusted Bridge"

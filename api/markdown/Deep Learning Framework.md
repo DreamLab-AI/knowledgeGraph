@@ -81,12 +81,6 @@ public:: true
         "label": "Computation Graph"
       }
     ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:machine-learning-toolchain",
-        "label": "Machine Learning Toolchain"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:automatic-differentiation",
@@ -95,10 +89,6 @@ public:: true
       {
         "@id": "urn:ngm:class:hardware-acceleration",
         "label": "Hardware Acceleration"
-      },
-      {
-        "@id": "urn:ngm:class:numerical-computation-library",
-        "label": "Numerical Computation Library"
       }
     ],
     "enables": [
@@ -143,10 +133,6 @@ public:: true
       {
         "@id": "urn:ngm:class:python",
         "label": "Python"
-      },
-      {
-        "@id": "urn:ngm:class:open-neural-network-exchange",
-        "label": "Open Neural Network Exchange"
       }
     ],
     "supports": [
@@ -161,17 +147,17 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:symbolic-ai-system",
+        "@id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI System"
       }
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:edge-inference-runtime",
+        "@id": "urn:ngm:class:edge-inference",
         "label": "Edge Inference Runtime"
       },
       {
-        "@id": "urn:ngm:class:model-serving-infrastructure",
+        "@id": "urn:ngm:class:model-serving",
         "label": "Model Serving Infrastructure"
       }
     ],

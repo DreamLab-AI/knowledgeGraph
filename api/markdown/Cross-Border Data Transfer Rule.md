@@ -134,10 +134,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:adequacy-decision-framework",
-        "label": "Adequacy Decision Framework"
-      },
-      {
         "@id": "urn:ngm:class:binding-corporate-rules",
         "label": "Binding Corporate Rules"
       },
@@ -152,27 +148,11 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:data-protection-authority-notification",
-        "label": "Data Protection Authority Notification"
-      },
-      {
-        "@id": "urn:ngm:class:legal-basis-determination",
-        "label": "Legal Basis Determination"
-      },
-      {
         "@id": "urn:ngm:class:privacy-impact-assessment",
         "label": "Privacy Impact Assessment"
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:international-data-flows",
-        "label": "International Data Flows"
-      },
-      {
-        "@id": "urn:ngm:class:user-privacy-protection",
-        "label": "User Privacy Protection"
-      },
       {
         "@id": "urn:ngm:class:compliance-verification",
         "label": "Compliance Verification"
@@ -180,12 +160,6 @@ public:: true
       {
         "@id": "urn:ngm:class:global-metaverse-operations",
         "label": "Global Metaverse Operations"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:data-privacy-governance-framework",
-        "label": "Data Privacy Governance Framework"
       }
     ]
   },

@@ -26,34 +26,22 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:actuator-motors",
+        "id": "urn:ngm:class:actuator",
         "label": "Actuator Motors"
       },
       {
-        "id": "urn:ngm:class:end-effector-platform",
+        "id": "urn:ngm:class:end-effector",
         "label": "End-Effector Platform"
       },
       {
         "id": "urn:ngm:class:kinematic-chain",
         "label": "Kinematic Chain"
-      },
-      {
-        "id": "urn:ngm:class:parallelogram-linkages",
-        "label": "Parallelogram Linkages"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:coordinated-control",
-        "label": "Coordinated Control"
-      },
-      {
-        "id": "urn:ngm:class:high-performance-actuators",
+        "id": "urn:ngm:class:actuators",
         "label": "High-Performance Actuators"
-      },
-      {
-        "id": "urn:ngm:class:stiff-support-structure",
-        "label": "Stiff Support Structure"
       },
       {
         "id": "urn:ngm:class:synchronisation",
@@ -61,18 +49,6 @@
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:high-speed-picking",
-        "label": "High-Speed Picking"
-      },
-      {
-        "id": "urn:ngm:class:rapid-sorting",
-        "label": "Rapid Sorting"
-      },
-      {
-        "id": "urn:ngm:class:ultra-fast-placement",
-        "label": "Ultra-Fast Placement"
-      },
       {
         "id": "urn:ngm:class:parallel-processing",
         "label": "Parallel Processing"

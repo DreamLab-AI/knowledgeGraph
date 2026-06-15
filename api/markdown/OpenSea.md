@@ -126,16 +126,8 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:blur",
-        "label": "Blur"
-      },
-      {
         "@id": "urn:ngm:class:rarible",
         "label": "Rarible"
-      },
-      {
-        "@id": "urn:ngm:class:foundation",
-        "label": "Foundation"
       }
     ],
     "relatedTo": [
@@ -166,7 +158,7 @@ public:: true
         "label": "Metaverse"
       },
       {
-        "@id": "urn:ngm:class:virtual-real-estate",
+        "@id": "urn:ngm:class:digital-real-estate",
         "label": "Virtual Real Estate"
       }
     ]

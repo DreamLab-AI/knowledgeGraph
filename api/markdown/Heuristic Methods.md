@@ -82,36 +82,14 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:metaheuristics",
-        "label": "Metaheuristics"
-      },
-      {
         "@id": "urn:ngm:class:local-search",
         "label": "Local Search"
-      },
-      {
-        "@id": "urn:ngm:class:greedy-algorithm",
-        "label": "Greedy Algorithm"
       }
     ],
     "partOf": [
       {
         "@id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
-      },
-      {
-        "@id": "urn:ngm:class:combinatorial-optimization",
-        "label": "Combinatorial Optimization"
-      }
-    ],
-    "requires": [
-      {
-        "@id": "urn:ngm:class:problem-formulation",
-        "label": "Problem Formulation"
-      },
-      {
-        "@id": "urn:ngm:class:evaluation-function",
-        "label": "Evaluation Function"
       }
     ],
     "enables": [
@@ -128,7 +106,7 @@ public:: true
         "label": "Constraint Satisfaction"
       },
       {
-        "@id": "urn:ngm:class:scheduling",
+        "@id": "urn:ngm:class:planning-and-scheduling",
         "label": "Scheduling"
       }
     ],
@@ -150,10 +128,6 @@ public:: true
       {
         "@id": "urn:ngm:class:genetic-algorithm",
         "label": "Genetic Algorithm"
-      },
-      {
-        "@id": "urn:ngm:class:hill-climbing",
-        "label": "Hill Climbing"
       }
     ],
     "uses": [
@@ -180,16 +154,6 @@ public:: true
         "label": "Machine Learning"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:exact-algorithm",
-        "label": "Exact Algorithm"
-      },
-      {
-        "@id": "urn:ngm:class:brute-force-search",
-        "label": "Brute Force Search"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:robotics",
@@ -206,7 +170,7 @@ public:: true
         "label": "Planning and Scheduling"
       },
       {
-        "@id": "urn:ngm:class:computational-complexity",
+        "@id": "urn:ngm:class:computational-complexity-theory",
         "label": "Computational Complexity"
       },
       {

@@ -23,53 +23,137 @@ public:: true
   "definition": "Bayesian Optimisation is a sequential, sample-efficient strategy for optimising expensive black-box objective functions by constructing a probabilistic surrogate model — most commonly a Gaussian Process — over the function's input space, then using an acquisition function to select the next evaluation point by trading off exploration of uncertain regions against exploitation of known optima. The method accumulates knowledge about the objective between evaluations, making it uniquely valuable when each function evaluation is computationally or financially costly. It maintains a posterior distribution over the objective that quantifies uncertainty and guides convergence to a global optimum with far fewer evaluations than grid search or random search. Applications span hyperparameter tuning, neural architecture search, drug discovery, materials science, and robotics controller design.",
   "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:optimisation", "label": "Optimisation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:optimisation",
+      "label": "Optimisation"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:gaussian-process", "label": "Gaussian Process"},
-      {"@id": "urn:ngm:class:acquisition-function", "label": "Acquisition Function"},
-      {"@id": "urn:ngm:class:surrogate-model", "label": "Surrogate Model"},
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
-      {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"}
+      {
+        "@id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "@id": "urn:ngm:class:acquisition-function",
+        "label": "Acquisition Function"
+      },
+      {
+        "@id": "urn:ngm:class:surrogate-model",
+        "label": "Surrogate Model"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:neural-architecture-search", "label": "Neural Architecture Search"},
-      {"@id": "urn:ngm:class:auto-ml", "label": "AutoML"},
-      {"@id": "urn:ngm:class:hyperparameter-tuning", "label": "Hyperparameter Tuning"},
-      {"@id": "urn:ngm:class:automated-experiment-design", "label": "Automated Experiment Design"},
-      {"@id": "urn:ngm:class:multi-objective-optimisation", "label": "Multi-Objective Optimisation"}
+      {
+        "@id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
+        "@id": "urn:ngm:class:auto-ml",
+        "label": "AutoML"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:automated-design",
+        "label": "Automated Experiment Design"
+      },
+      {
+        "@id": "urn:ngm:class:multi-objective-optimisation",
+        "label": "Multi-Objective Optimisation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:probabilistic-inference", "label": "Probabilistic Inference"},
-      {"@id": "urn:ngm:class:kernel-function", "label": "Kernel Function"}
+      {
+        "@id": "urn:ngm:class:probabilistic-inference",
+        "label": "Probabilistic Inference"
+      },
+      {
+        "@id": "urn:ngm:class:kernel-function",
+        "label": "Kernel Function"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:drug-discovery", "label": "Drug Discovery"},
-      {"@id": "urn:ngm:class:materials-science", "label": "Materials Science"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:materials-science",
+        "label": "Materials Science"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:grid-search", "label": "Grid Search"},
-      {"@id": "urn:ngm:class:random-search", "label": "Random Search"},
-      {"@id": "urn:ngm:class:evolutionary-algorithm", "label": "Evolutionary Algorithm"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
+      {
+        "@id": "urn:ngm:class:grid-search",
+        "label": "Grid Search"
+      },
+      {
+        "@id": "urn:ngm:class:random-search",
+        "label": "Random Search"
+      },
+      {
+        "@id": "urn:ngm:class:evolutionary-algorithm",
+        "label": "Evolutionary Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:exploration-exploitation-trade-off", "label": "Exploration-Exploitation Trade-off"},
-      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:kriging", "label": "Kriging"},
-      {"@id": "urn:ngm:class:expected-improvement", "label": "Expected Improvement"}
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:kriging",
+        "label": "Kriging"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:experimental-design", "label": "Experimental Design"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:experimental-design",
+        "label": "Experimental Design"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:bayesian-global-optimisation", "label": "Bayesian Global Optimisation"},
-    {"@id": "urn:ngm:class:sequential-model-based-optimisation", "label": "Sequential Model-Based Optimisation"}
+    {
+      "@id": "urn:ngm:class:bayesian-global-optimisation",
+      "label": "Bayesian Global Optimisation"
+    },
+    {
+      "@id": "urn:ngm:class:sequential-model-based-optimisation",
+      "label": "Sequential Model-Based Optimisation"
+    }
   ],
   "quality": 0.74,
   "provenance": {

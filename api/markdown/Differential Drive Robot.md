@@ -184,62 +184,20 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:caster-wheel",
-        "label": "Caster Wheel"
-      },
-      {
-        "@id": "urn:ngm:class:differential-drive-controller",
-        "label": "Differential Drive Controller"
-      },
-      {
-        "@id": "urn:ngm:class:left-drive-motor",
-        "label": "Left Drive Motor"
-      },
-      {
-        "@id": "urn:ngm:class:right-drive-motor",
-        "label": "Right Drive Motor"
-      },
-      {
-        "@id": "urn:ngm:class:wheel",
-        "label": "Wheel"
-      }
-    ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:independent-wheel-motors",
-        "label": "Independent Wheel Motors"
-      },
       {
         "@id": "urn:ngm:class:motor-driver",
         "label": "Motor Driver"
       },
       {
-        "@id": "urn:ngm:class:odometry-sensors",
+        "@id": "urn:ngm:class:odometry",
         "label": "Odometry Sensors"
-      },
-      {
-        "@id": "urn:ngm:class:power-battery",
-        "label": "Power Battery"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:arc-trajectory-following",
+        "@id": "urn:ngm:class:trajectory-tracking",
         "label": "Arc Trajectory Following"
-      },
-      {
-        "@id": "urn:ngm:class:forward-locomotion",
-        "label": "Forward Locomotion"
-      },
-      {
-        "@id": "urn:ngm:class:in-place-rotation",
-        "label": "In-Place Rotation"
-      },
-      {
-        "@id": "urn:ngm:class:point-turning",
-        "label": "Point Turning"
       }
     ]
   },

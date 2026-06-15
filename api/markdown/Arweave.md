@@ -23,54 +23,119 @@ public:: true
   "definition": "Arweave is a decentralised, blockweave-based storage protocol that enables permanent, censorship-resistant archival of data through a proof-of-access consensus mechanism, where miners must demonstrate retention of a randomly selected historic block to produce new blocks. It introduces the 'permaweb' — a permanent, publicly accessible layer of the web sustained by a one-time payment model where a portion of each storage fee accrues to an endowment that compensates miners across an indefinite time horizon. The network's economic model assumes that declining hardware costs will be outpaced by AR token appreciation, funding perpetual content replication across an open, permissionless peer set. Beyond raw storage, Arweave hosts SmartWeave lazy-evaluation contracts and the AO actor-oriented compute environment, extending it into a foundation for permanent, verifiable decentralised computation.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:decentralized-storage", "label": "Decentralized Storage"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:decentralized-storage",
+      "label": "Decentralized Storage"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:proof-of-access", "label": "Proof Of Access"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:content-addressing", "label": "Content Addressing"},
-      {"@id": "urn:ngm:class:merkle-dag", "label": "Merkle DAG"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-dag",
+        "label": "Merkle DAG"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:data-persistence", "label": "Data Persistence"},
-      {"@id": "urn:ngm:class:digital-archive", "label": "Digital Archive"},
-      {"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"},
-      {"@id": "urn:ngm:class:decentralised-application", "label": "Decentralised Application"},
-      {"@id": "urn:ngm:class:non-fungible-token", "label": "Non-Fungible Token"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:smartweave", "label": "SmartWeave"},
-      {"@id": "urn:ngm:class:ao-compute", "label": "AO Compute"},
-      {"@id": "urn:ngm:class:bundlr-network", "label": "Bundlr Network"},
-      {"@id": "urn:ngm:class:blockweave", "label": "Blockweave"}
+      {
+        "@id": "urn:ngm:class:data-persistence",
+        "label": "Data Persistence"
+      },
+      {
+        "@id": "urn:ngm:class:digital-archive",
+        "label": "Digital Archive"
+      },
+      {
+        "@id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ar-token", "label": "AR Token"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
-      {"@id": "urn:ngm:class:cryptographic-endowment", "label": "Cryptographic Endowment"}
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ipfs", "label": "IPFS"},
-      {"@id": "urn:ngm:class:filecoin", "label": "Filecoin"},
-      {"@id": "urn:ngm:class:bittorrent", "label": "BitTorrent"},
-      {"@id": "urn:ngm:class:cloud-object-storage", "label": "Cloud Object Storage"}
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "@id": "urn:ngm:class:filecoin",
+        "label": "Filecoin"
+      },
+      {
+        "@id": "urn:ngm:class:bittorrent",
+        "label": "BitTorrent"
+      },
+      {
+        "@id": "urn:ngm:class:object-storage",
+        "label": "Cloud Object Storage"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"},
-      {"@id": "urn:ngm:class:web3", "label": "Web3"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "@id": "urn:ngm:class:web3",
+        "label": "Web3"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:data-provenance", "label": "Data Provenance"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:permaweb", "label": "Permaweb"}
+    {
+      "@id": "urn:ngm:class:permaweb",
+      "label": "Permaweb"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -92,7 +92,7 @@ public:: true
         "label": "Robotic System"
       },
       {
-        "@id": "urn:ngm:class:cyber-physical-system",
+        "@id": "urn:ngm:class:cyber-physical-systems",
         "label": "Cyber-Physical System"
       }
     ],
@@ -116,7 +116,7 @@ public:: true
         "label": "IndustrialAutomation"
       },
       {
-        "@id": "urn:ngm:class:robot-process-automation",
+        "@id": "urn:ngm:class:robotic-process-automation",
         "label": "Robotic Process Automation"
       },
       {
@@ -126,11 +126,11 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:embedded-system",
+        "@id": "urn:ngm:class:embedded-systems",
         "label": "Embedded System"
       },
       {
-        "@id": "urn:ngm:class:power-system",
+        "@id": "urn:ngm:class:power-systems",
         "label": "Power System"
       }
     ],
@@ -162,10 +162,6 @@ public:: true
       {
         "@id": "urn:ngm:class:autonomous-agent",
         "label": "Autonomous Agent"
-      },
-      {
-        "@id": "urn:ngm:class:automated-machine",
-        "label": "Automated Machine"
       }
     ],
     "bridgesTo": [
@@ -183,10 +179,6 @@ public:: true
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:cobotic-system",
-        "label": "Cobotic System"
-      },
       {
         "@id": "urn:ngm:class:drone",
         "label": "Drone"

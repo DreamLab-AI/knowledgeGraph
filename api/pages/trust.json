@@ -21,14 +21,6 @@
       {
         "id": "urn:ngm:class:transparency",
         "label": "Transparency"
-      },
-      {
-        "id": "urn:ngm:class:verifiability",
-        "label": "Verifiability"
-      },
-      {
-        "id": "urn:ngm:class:integrity",
-        "label": "Integrity"
       }
     ],
     "enables": [
@@ -65,10 +57,6 @@
     ],
     "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:distrust",
-        "label": "Distrust"
-      },
       {
         "id": "urn:ngm:class:automation-bias",
         "label": "Automation Bias"
@@ -125,7 +113,7 @@
         "label": "ISO IEC 42001"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -144,7 +132,7 @@
         "label": "AI Trustworthiness"
       },
       {
-        "id": "urn:ngm:class:reputation",
+        "id": "urn:ngm:class:reputation-system",
         "label": "Reputation"
       },
       {

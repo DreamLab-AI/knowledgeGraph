@@ -89,56 +89,123 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:merkle-root", "label": "Merkle Root"},
-      {"@id": "urn:ngm:class:nonce", "label": "Nonce"},
-      {"@id": "urn:ngm:class:timestamp", "label": "Timestamp"},
-      {"@id": "urn:ngm:class:difficulty", "label": "Difficulty"},
-      {"@id": "urn:ngm:class:previous-block-hash", "label": "Previous Block Hash"}
+      {
+        "@id": "urn:ngm:class:merkle-root",
+        "label": "Merkle Root"
+      },
+      {
+        "@id": "urn:ngm:class:nonce",
+        "label": "Nonce"
+      },
+      {
+        "@id": "urn:ngm:class:timestamp",
+        "label": "Timestamp"
+      },
+      {
+        "@id": "urn:ngm:class:difficulty",
+        "label": "Difficulty"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:block", "label": "Block"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:chain-validation", "label": "Chain Validation"},
-      {"@id": "urn:ngm:class:light-client", "label": "Light Client"}
+      {
+        "@id": "urn:ngm:class:light-client",
+        "label": "Light Client"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer To Peer Network"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer To Peer Network"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof Of Stake"},
-      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof Of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:merkle-proof", "label": "Merkle Proof"},
-      {"@id": "urn:ngm:class:simplified-payment-verification", "label": "Simplified Payment Verification"}
+      {
+        "@id": "urn:ngm:class:merkle-proof",
+        "label": "Merkle Proof"
+      },
+      {
+        "@id": "urn:ngm:class:simplified-payment-verification",
+        "label": "Simplified Payment Verification"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-23257", "label": "ISO/IEC 23257"},
-      {"@id": "urn:ngm:class:ieee-2418-1", "label": "IEEE 2418.1"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:block-body", "label": "Block Body"}
+      {
+        "@id": "urn:ngm:class:iso-iec-23257-2021",
+        "label": "ISO/IEC 23257"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-2418-1",
+        "label": "IEEE 2418.1"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:block", "label": "Block"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:genesis-block", "label": "Genesis Block"},
-      {"@id": "urn:ngm:class:block-height", "label": "Block Height"}
+      {
+        "@id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:genesis-block",
+        "label": "Genesis Block"
+      },
+      {
+        "@id": "urn:ngm:class:block-height",
+        "label": "Block Height"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:security", "label": "Security"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:block-metadata", "label": "Block Metadata"}
+    {
+      "@id": "urn:ngm:class:block-metadata",
+      "label": "Block Metadata"
+    }
   ],
   "quality": 0.72,
   "provenance": {

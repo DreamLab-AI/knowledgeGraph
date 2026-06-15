@@ -146,10 +146,6 @@ public:: true
         "label": "Namespace Management"
       },
       {
-        "@id": "urn:ngm:class:relationship-mappings",
-        "label": "Relationship Mappings"
-      },
-      {
         "@id": "urn:ngm:class:schema-versioning",
         "label": "Schema Versioning"
       },
@@ -168,7 +164,7 @@ public:: true
         "label": "RDF Store"
       },
       {
-        "@id": "urn:ngm:class:schema-validator",
+        "@id": "urn:ngm:class:validator",
         "label": "Schema Validator"
       },
       {
@@ -178,7 +174,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:asset-cataloging",
+        "@id": "urn:ngm:class:asset-registry",
         "label": "Asset Cataloging"
       },
       {
@@ -196,7 +192,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:metadata-management-infrastructure",
+        "@id": "urn:ngm:class:metadata-management",
         "label": "Metadata Management Infrastructure"
       }
     ]

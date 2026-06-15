@@ -24,53 +24,135 @@ alias:: SimulationEnvironment
   "definition": "A simulation environment is a software-defined system that models physical or virtual worlds with sufficient fidelity to support training, testing, or validation of agents, algorithms, or hardware without exposure to real-world risk or cost. It integrates a physics engine, sensor models, actuator dynamics, and observation/action interfaces, and is used across robotics, autonomous vehicle development, reinforcement learning research, and military mission planning. Fidelity-reality gaps — differences between simulated and real-world dynamics — are the primary challenge in transferring learned behaviours from simulation to deployment.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:simulation", "label": "Simulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:simulation",
+      "label": "Simulation"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"},
-      {"@id": "urn:ngm:class:sensor-model", "label": "Sensor Model"},
-      {"@id": "urn:ngm:class:actuator-model", "label": "Actuator Model"},
-      {"@id": "urn:ngm:class:observation-space", "label": "Observation Space"},
-      {"@id": "urn:ngm:class:action-space", "label": "Action Space"}
+      {
+        "@id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-model",
+        "label": "Sensor Model"
+      },
+      {
+        "@id": "urn:ngm:class:actuator-model",
+        "label": "Actuator Model"
+      },
+      {
+        "@id": "urn:ngm:class:observation-space",
+        "label": "Observation Space"
+      },
+      {
+        "@id": "urn:ngm:class:action-space",
+        "label": "Action Space"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"},
-      {"@id": "urn:ngm:class:rendering-engine", "label": "Rendering Engine"}
+      {
+        "@id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:synthetic-data-generation", "label": "Synthetic Data Generation"},
-      {"@id": "urn:ngm:class:embodied-ai-simulation", "label": "Embodied AI Simulation"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:sim-to-real-transfer", "label": "Sim-to-Real Transfer"},
-      {"@id": "urn:ngm:class:domain-randomisation", "label": "Domain Randomisation"}
+      {
+        "@id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      },
+      {
+        "@id": "urn:ngm:class:embodied-ai-simulation",
+        "label": "Embodied AI Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:sim-to-real-transfer",
+        "label": "Sim-to-Real Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:domain-randomisation",
+        "label": "Domain Randomisation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"}
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:simulation-engine", "label": "Simulation Engine"},
-      {"@id": "urn:ngm:class:autonomous-vehicle-testing", "label": "Autonomous Vehicle Testing"},
-      {"@id": "urn:ngm:class:robot-learning", "label": "Robot Learning"}
+      {
+        "@id": "urn:ngm:class:simulation-engine",
+        "label": "Simulation Engine"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle-testing",
+        "label": "Autonomous Vehicle Testing"
+      },
+      {
+        "@id": "urn:ngm:class:robot-learning",
+        "label": "Robot Learning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:real-world-deployment", "label": "Real-World Deployment"},
-      {"@id": "urn:ngm:class:hardware-in-the-loop", "label": "Hardware-in-the-Loop"}
+      {
+        "@id": "urn:ngm:class:hardware-in-the-loop-testing",
+        "label": "Hardware-in-the-Loop"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
-      {"@id": "urn:ngm:class:openai-gym", "label": "OpenAI Gym"},
-      {"@id": "urn:ngm:class:world-model", "label": "World Model"}
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:openai-gym",
+        "label": "OpenAI Gym"
+      },
+      {
+        "@id": "urn:ngm:class:world-model",
+        "label": "World Model"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:virtual-testbed", "label": "Virtual Testbed"},
-    {"@id": "urn:ngm:class:simulated-world", "label": "Simulated World"}
+    {
+      "@id": "urn:ngm:class:virtual-testbed",
+      "label": "Virtual Testbed"
+    },
+    {
+      "@id": "urn:ngm:class:simulated-world",
+      "label": "Simulated World"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

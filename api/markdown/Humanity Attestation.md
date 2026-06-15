@@ -130,7 +130,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:behavioral-analysis",
+        "@id": "urn:ngm:class:behavior-analysis",
         "label": "Behavioral Analysis"
       },
       {
@@ -148,11 +148,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:challenge-protocol",
-        "label": "Challenge Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:verification-mechanism",
+        "@id": "urn:ngm:class:verification",
         "label": "Verification Mechanism"
       },
       {
@@ -161,14 +157,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:account-security",
-        "label": "Account Security"
-      },
-      {
-        "@id": "urn:ngm:class:bot-prevention",
-        "label": "Bot Prevention"
-      },
       {
         "@id": "urn:ngm:class:fraud-prevention",
         "label": "Fraud Prevention"

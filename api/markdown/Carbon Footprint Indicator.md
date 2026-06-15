@@ -100,10 +100,6 @@ public:: true
       {
         "@id": "urn:ngm:class:measurement-methodology",
         "label": "Measurement Methodology"
-      },
-      {
-        "@id": "urn:ngm:class:reporting-framework",
-        "label": "Reporting Framework"
       }
     ],
     "enables": [

@@ -152,16 +152,8 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:distributed-nodes",
-        "label": "Distributed Nodes"
-      },
-      {
         "@id": "urn:ngm:class:load-balancing",
         "label": "Load Balancing"
-      },
-      {
-        "@id": "urn:ngm:class:replication-strategy",
-        "label": "Replication Strategy"
       },
       {
         "@id": "urn:ngm:class:consensus-protocol",

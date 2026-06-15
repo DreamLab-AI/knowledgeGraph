@@ -101,20 +101,6 @@ public:: true
         "@id": "urn:ngm:class:spatial-mapping",
         "label": "Spatial Mapping"
       }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:content-composition",
-        "label": "Content Composition"
-      },
-      {
-        "@id": "urn:ngm:class:dynamic-rendering",
-        "label": "Dynamic Rendering"
-      },
-      {
-        "@id": "urn:ngm:class:layer-management",
-        "label": "Layer Management"
-      }
     ]
   },
   "quality": 0.5,

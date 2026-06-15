@@ -138,7 +138,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:cache-system",
+        "@id": "urn:ngm:class:cache-layer",
         "label": "Cache System"
       },
       {
@@ -160,7 +160,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:dns-service",
+        "@id": "urn:ngm:class:dns",
         "label": "DNS Service"
       },
       {
@@ -170,24 +170,6 @@ public:: true
       {
         "@id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
-      }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:ddo-s-protection",
-        "label": "DDoS Protection"
-      },
-      {
-        "@id": "urn:ngm:class:geographic-redundancy",
-        "label": "Geographic Redundancy"
-      },
-      {
-        "@id": "urn:ngm:class:low-latency-content-delivery",
-        "label": "Low-Latency Content Delivery"
-      },
-      {
-        "@id": "urn:ngm:class:scalable-distribution",
-        "label": "Scalable Distribution"
       }
     ],
     "partOf": [

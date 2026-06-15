@@ -20,14 +20,6 @@
       {
         "id": "urn:ngm:class:health-check",
         "label": "Health Check"
-      },
-      {
-        "id": "urn:ngm:class:connection-draining",
-        "label": "Connection Draining"
-      },
-      {
-        "id": "urn:ngm:class:load-balancing-algorithm",
-        "label": "Load Balancing Algorithm"
       }
     ],
     "requires": [
@@ -42,7 +34,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:horizontal-scaling",
+        "id": "urn:ngm:class:horizontal-scalability",
         "label": "Horizontal Scaling"
       },
       {

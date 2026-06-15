@@ -445,8 +445,14 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:infra-network-and-comms", "label": "Network and Communication"},
-      {"@id": "urn:ngm:class:hardware-abstraction-layer", "label": "Hardware Abstraction Layer"}
+      {
+        "@id": "urn:ngm:class:infra-network-and-comms",
+        "label": "Network and Communication"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-abstraction-layer",
+        "label": "Hardware Abstraction Layer"
+      }
     ],
     "hasPart": [
       {
@@ -458,24 +464,16 @@ public:: true
         "label": "Descriptor Set"
       },
       {
-        "@id": "urn:ngm:class:memory-allocator",
-        "label": "Memory Allocator"
-      },
-      {
         "@id": "urn:ngm:class:pipeline-state-object",
         "label": "Pipeline State Object"
       },
       {
-        "@id": "urn:ngm:class:resource-manager",
+        "@id": "urn:ngm:class:resource-management",
         "label": "Resource Manager"
       },
       {
         "@id": "urn:ngm:class:shader-compiler",
         "label": "Shader Compiler"
-      },
-      {
-        "@id": "urn:ngm:class:swap-chain",
-        "label": "Swap Chain"
       },
       {
         "@id": "urn:ngm:class:synchronisation-primitive",
@@ -484,15 +482,11 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:device-driver",
+        "@id": "urn:ngm:class:device-drivers",
         "label": "Device Driver"
       },
       {
-        "@id": "urn:ngm:class:driver-compiler",
-        "label": "Driver Compiler"
-      },
-      {
-        "@id": "urn:ngm:class:gpu-hardware",
+        "@id": "urn:ngm:class:gpu",
         "label": "GPU Hardware"
       },
       {
@@ -538,28 +532,6 @@ public:: true
         "label": "Spatial Computing"
       }
     ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:command-submission-pattern",
-        "label": "Command Submission Pattern"
-      },
-      {
-        "@id": "urn:ngm:class:frame-presentation-protocol",
-        "label": "Frame Presentation Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:multi-queue-submission",
-        "label": "Multi-Queue Submission"
-      },
-      {
-        "@id": "urn:ngm:class:pipeline-compilation",
-        "label": "Pipeline Compilation"
-      },
-      {
-        "@id": "urn:ngm:class:resource-binding-model",
-        "label": "Resource Binding Model"
-      }
-    ],
     "uses": [
       {
         "@id": "urn:ngm:class:glsl",
@@ -570,19 +542,11 @@ public:: true
         "label": "HLSL"
       },
       {
-        "@id": "urn:ngm:class:kernel-mode-driver",
-        "label": "Kernel Mode Driver"
-      },
-      {
-        "@id": "urn:ngm:class:msl",
-        "label": "MSL"
-      },
-      {
         "@id": "urn:ngm:class:spir-v",
         "label": "SPIR-V"
       },
       {
-        "@id": "urn:ngm:class:vendor-driver",
+        "@id": "urn:ngm:class:driver-software",
         "label": "Vendor Driver"
       },
       {
@@ -592,20 +556,8 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:driver-stack",
-        "label": "Driver Stack"
-      },
-      {
-        "@id": "urn:ngm:class:gpu-compute-api",
+        "@id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute API"
-      },
-      {
-        "@id": "urn:ngm:class:window-system-api",
-        "label": "Window System API"
-      },
-      {
-        "@id": "urn:ngm:class:xr-runtime-api",
-        "label": "XR Runtime API"
       },
       {
         "@id": "urn:ngm:class:shader-language",
@@ -630,27 +582,11 @@ public:: true
         "label": "Medical Imaging"
       },
       {
-        "@id": "urn:ngm:class:professional-visualisation",
-        "label": "Professional Visualisation"
-      },
-      {
         "@id": "urn:ngm:class:scientific-computing",
         "label": "Scientific Computing"
-      },
-      {
-        "@id": "urn:ngm:class:web-rendering",
-        "label": "Web Rendering"
-      },
-      {
-        "@id": "urn:ngm:class:xr-compositing",
-        "label": "XR Compositing"
       }
     ],
     "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:gpu-for-the-web-working-group",
-        "label": "GPU for the Web Working Group"
-      },
       {
         "@id": "urn:ngm:class:khronos-group",
         "label": "Khronos Group"

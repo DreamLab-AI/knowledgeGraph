@@ -74,7 +74,7 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:distributed-database",
+        "id": "urn:ngm:class:distributed-databases",
         "label": "Distributed Database"
       }
     ],
@@ -135,10 +135,6 @@
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:computing-system",
-        "label": "Computing System"
-      },
       {
         "id": "urn:ngm:class:sharding",
         "label": "Sharding"

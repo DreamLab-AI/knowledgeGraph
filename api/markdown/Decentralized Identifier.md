@@ -67,7 +67,7 @@ public:: true
         "label": "DID Resolution"
       },
       {
-        "@id": "urn:ngm:class:public-key-cryptography",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       },
       {
@@ -85,7 +85,7 @@ public:: true
         "label": "Self Sovereign Identity"
       },
       {
-        "@id": "urn:ngm:class:verifiable-credential",
+        "@id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       },
       {
@@ -95,7 +95,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:w3c-did-core",
+        "@id": "urn:ngm:class:w3-c-did-core",
         "label": "W3C DID Core"
       },
       {
@@ -163,7 +163,7 @@ public:: true
         "label": "Verifiable Data Registry"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {

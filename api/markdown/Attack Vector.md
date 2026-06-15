@@ -80,55 +80,113 @@ public:: true
   },
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:vulnerability", "label": "Vulnerability"},
-      {"@id": "urn:ngm:class:threat-actor", "label": "Threat Actor"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+      {
+        "@id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      },
+      {
+        "@id": "urn:ngm:class:threat-actor",
+        "label": "Threat Actor"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:exploit", "label": "Exploit"},
-      {"@id": "urn:ngm:class:data-breach", "label": "Data Breach"},
-      {"@id": "urn:ngm:class:lateral-movement", "label": "Lateral Movement"},
-      {"@id": "urn:ngm:class:privilege-escalation", "label": "Privilege Escalation"}
+      {
+        "@id": "urn:ngm:class:exploit",
+        "label": "Exploit"
+      },
+      {
+        "@id": "urn:ngm:class:data-breach",
+        "label": "Data Breach"
+      },
+      {
+        "@id": "urn:ngm:class:privilege-escalation",
+        "label": "Privilege Escalation"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:network-attack", "label": "Network Attack"},
-      {"@id": "urn:ngm:class:social-engineering", "label": "Social Engineering"},
-      {"@id": "urn:ngm:class:supply-chain-attack", "label": "Supply Chain Attack"},
-      {"@id": "urn:ngm:class:insider-threat", "label": "Insider Threat"}
+      {
+        "@id": "urn:ngm:class:social-engineering",
+        "label": "Social Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-attack",
+        "label": "Supply Chain Attack"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:threat-model", "label": "Threat Model"},
-      {"@id": "urn:ngm:class:cyber-kill-chain", "label": "Cyber Kill Chain"}
+      {
+        "@id": "urn:ngm:class:threat-model",
+        "label": "Threat Model"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:malware", "label": "Malware"},
-      {"@id": "urn:ngm:class:zero-day", "label": "Zero-Day"}
+      {
+        "@id": "urn:ngm:class:malware",
+        "label": "Malware"
+      },
+      {
+        "@id": "urn:ngm:class:zero-day-exploits",
+        "label": "Zero-Day"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:mitre-attack", "label": "MITRE ATT&CK"},
-      {"@id": "urn:ngm:class:cvss", "label": "CVSS"}
+      {
+        "@id": "urn:ngm:class:cvss",
+        "label": "CVSS"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:resilience", "label": "Resilience"},
-      {"@id": "urn:ngm:class:security", "label": "Security"},
-      {"@id": "urn:ngm:class:defense-in-depth", "label": "Defense in Depth"}
+      {
+        "@id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "@id": "urn:ngm:class:defense-in-depth",
+        "label": "Defense in Depth"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:risk", "label": "Risk"},
-      {"@id": "urn:ngm:class:adversarial-robustness", "label": "Adversarial Robustness"},
-      {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"},
-      {"@id": "urn:ngm:class:intrusion-detection", "label": "Intrusion Detection"},
-      {"@id": "urn:ngm:class:threat", "label": "Threat"}
+      {
+        "@id": "urn:ngm:class:risk",
+        "label": "Risk"
+      },
+      {
+        "@id": "urn:ngm:class:adversarial-robustness",
+        "label": "Adversarial Robustness"
+      },
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "@id": "urn:ngm:class:intrusion-detection",
+        "label": "Intrusion Detection"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:adversarial-machine-learning", "label": "Adversarial Machine Learning"},
-      {"@id": "urn:ngm:class:smart-contract-vulnerability", "label": "Smart Contract Vulnerability"},
-      {"@id": "urn:ngm:class:sensor-spoofing", "label": "Sensor Spoofing"}
+      {
+        "@id": "urn:ngm:class:adversarial-machine-learning",
+        "label": "Adversarial Machine Learning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:attack-method", "label": "Attack Method"},
-    {"@id": "urn:ngm:class:exploitation-technique", "label": "Exploitation Technique"}
+    {
+      "@id": "urn:ngm:class:attack-method",
+      "label": "Attack Method"
+    },
+    {
+      "@id": "urn:ngm:class:exploitation-technique",
+      "label": "Exploitation Technique"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

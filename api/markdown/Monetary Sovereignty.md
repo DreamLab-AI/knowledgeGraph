@@ -59,51 +59,117 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"},
-      {"@id": "urn:ngm:class:currency-issuance", "label": "Currency Issuance"},
-      {"@id": "urn:ngm:class:monetary-policy", "label": "Monetary Policy"}
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:national-sovereignty", "label": "National Sovereignty"},
-      {"@id": "urn:ngm:class:economic-governance", "label": "Economic Governance"}
+      {
+        "@id": "urn:ngm:class:national-sovereignty",
+        "label": "National Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:economic-governance",
+        "label": "Economic Governance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:central-bank", "label": "Central Bank"},
-      {"@id": "urn:ngm:class:legal-tender-framework", "label": "Legal Tender Framework"},
-      {"@id": "urn:ngm:class:financial-regulatory-authority", "label": "Financial Regulatory Authority"}
+      {
+        "@id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-authority",
+        "label": "Financial Regulatory Authority"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:national-financial-control", "label": "National Financial Control"},
-      {"@id": "urn:ngm:class:sanctions-policy", "label": "Sanctions Policy"},
-      {"@id": "urn:ngm:class:capital-controls", "label": "Capital Controls"}
+      {
+        "@id": "urn:ngm:class:sanctions-policy",
+        "label": "Sanctions Policy"
+      },
+      {
+        "@id": "urn:ngm:class:capital-controls",
+        "label": "Capital Controls"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:fiat-currency", "label": "Fiat Currency"},
-      {"@id": "urn:ngm:class:payment-infrastructure", "label": "Payment Infrastructure"},
-      {"@id": "urn:ngm:class:international-monetary-system", "label": "International Monetary System"}
+      {
+        "@id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "@id": "urn:ngm:class:payment-infrastructure",
+        "label": "Payment Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:international-monetary-system",
+        "label": "International Monetary System"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:dollarisation", "label": "Dollarisation"}
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:dollarisation",
+        "label": "Dollarisation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:geopolitics", "label": "Geopolitics"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:geopolitics",
+        "label": "Geopolitics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"},
-      {"@id": "urn:ngm:class:financial-privacy", "label": "Financial Privacy"},
-      {"@id": "urn:ngm:class:programmable-money", "label": "Programmable Money"},
-      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"}
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:financial-privacy",
+        "label": "Financial Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:currency-sovereignty", "label": "Currency Sovereignty"},
-    {"@id": "urn:ngm:class:national-currency-control", "label": "National Currency Control"}
+    {
+      "@id": "urn:ngm:class:currency-sovereignty",
+      "label": "Currency Sovereignty"
+    },
+    {
+      "@id": "urn:ngm:class:national-currency-control",
+      "label": "National Currency Control"
+    }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

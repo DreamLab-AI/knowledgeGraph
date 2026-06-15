@@ -175,20 +175,12 @@ alias:: VirtualWorld
         "label": "Economic Systems"
       },
       {
-        "@id": "urn:ngm:class:object-persistence",
-        "label": "Object Persistence"
-      },
-      {
         "@id": "urn:ngm:class:social-system",
         "label": "Social System"
       },
       {
         "@id": "urn:ngm:class:user-representation",
         "label": "User Representation"
-      },
-      {
-        "@id": "urn:ngm:class:world-space",
-        "label": "World Space"
       },
       {
         "@id": "urn:ngm:class:digital-real-estate",
@@ -231,7 +223,7 @@ alias:: VirtualWorld
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:collaborative-systems-modality-work",
+        "@id": "urn:ngm:class:collaborative-systems-modality",
         "label": "Collaborative Work"
       },
       {

@@ -90,7 +90,7 @@ public:: true
     "@id": "urn:ngm:class:explainable-ai",
     "label": "Explainable AI"
   },
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",
@@ -159,16 +159,8 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:shapley-additive-explanations",
-        "label": "SHAP"
-      },
-      {
         "@id": "urn:ngm:class:lime",
         "label": "LIME"
-      },
-      {
-        "@id": "urn:ngm:class:saliency-map",
-        "label": "Saliency Map"
       },
       {
         "@id": "urn:ngm:class:attention-mechanism",
@@ -181,7 +173,7 @@ public:: true
         "label": "Fairness"
       },
       {
-        "@id": "urn:ngm:class:algorithmic-bias-detection",
+        "@id": "urn:ngm:class:algorithmic-bias",
         "label": "Algorithmic Bias Detection"
       },
       {
@@ -219,7 +211,7 @@ public:: true
         "label": "AI Regulation"
       },
       {
-        "@id": "urn:ngm:class:medical-decision-support",
+        "@id": "urn:ngm:class:clinical-decision-support",
         "label": "Medical Decision Support"
       }
     ]

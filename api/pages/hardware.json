@@ -34,10 +34,6 @@
         "label": "Memory Subsystem"
       },
       {
-        "id": "urn:ngm:class:storage-device",
-        "label": "Storage Device"
-      },
-      {
         "id": "urn:ngm:class:sensor",
         "label": "Sensor"
       }
@@ -48,7 +44,7 @@
         "label": "Operating System"
       },
       {
-        "id": "urn:ngm:class:device-driver",
+        "id": "urn:ngm:class:device-drivers",
         "label": "Device Driver"
       },
       {
@@ -90,10 +86,6 @@
     ],
     "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:software",
-        "label": "Software"
-      },
       {
         "id": "urn:ngm:class:virtual-machine",
         "label": "Virtual Machine"

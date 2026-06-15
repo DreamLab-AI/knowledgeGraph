@@ -22,7 +22,7 @@
         "label": "Metadata Catalog"
       },
       {
-        "id": "urn:ngm:class:digital-object",
+        "id": "urn:ngm:class:digital-objects",
         "label": "Digital Object"
       },
       {
@@ -53,10 +53,6 @@
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:cultural-heritage-access",
-        "label": "Cultural Heritage Access"
-      },
       {
         "id": "urn:ngm:class:historical-research",
         "label": "Historical Research"
@@ -121,7 +117,7 @@
         "label": "Open Access"
       },
       {
-        "id": "urn:ngm:class:rights-management",
+        "id": "urn:ngm:class:digital-rights-management",
         "label": "Rights Management"
       }
     ],
@@ -138,7 +134,7 @@
         "label": "Records Management"
       },
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       }
     ]

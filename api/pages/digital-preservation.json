@@ -54,11 +54,7 @@
         "label": "Digital Asset Management"
       },
       {
-        "id": "urn:ngm:class:long-term-access",
-        "label": "Long-Term Access"
-      },
-      {
-        "id": "urn:ngm:class:cultural-heritage-management",
+        "id": "urn:ngm:class:etsi-domain-data-management-cultural-heritage",
         "label": "Cultural Heritage Management"
       }
     ],
@@ -66,12 +62,8 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:data-backup",
+        "id": "urn:ngm:class:backup-and-recovery",
         "label": "Data Backup"
-      },
-      {
-        "id": "urn:ngm:class:data-archiving",
-        "label": "Data Archiving"
       }
     ],
     "bridgesTo": [
@@ -102,18 +94,18 @@
         "label": "Cryptographic Hash"
       },
       {
-        "id": "urn:ngm:class:content-addressable-storage",
+        "id": "urn:ngm:class:content-addressed-storage",
         "label": "Content-Addressable Storage"
       }
     ],
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:oais-reference-model",
+        "id": "urn:ngm:class:reference-model",
         "label": "OAIS Reference Model"
       },
       {
-        "id": "urn:ngm:class:premis-metadata-standard",
+        "id": "urn:ngm:class:metadata-standard",
         "label": "PREMIS Metadata Standard"
       },
       {
@@ -128,7 +120,7 @@
         "label": "Archival Standards"
       },
       {
-        "id": "urn:ngm:class:information-lifecycle-management",
+        "id": "urn:ngm:class:lifecycle-management",
         "label": "Information Lifecycle Management"
       },
       {

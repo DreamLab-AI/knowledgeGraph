@@ -109,7 +109,7 @@ alias:: Cross Chain Messaging, cross-chain-messaging
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:handler-execution",
+        "@id": "urn:ngm:class:code-execution",
         "label": "Handler Execution"
       },
       {
@@ -117,19 +117,15 @@ alias:: Cross Chain Messaging, cross-chain-messaging
         "label": "Message Queue"
       },
       {
-        "@id": "urn:ngm:class:proof-verification",
+        "@id": "urn:ngm:class:verification",
         "label": "Proof Verification"
       },
       {
-        "@id": "urn:ngm:class:message-passing-system",
+        "@id": "urn:ngm:class:message-passing",
         "label": "Message Passing System"
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:blockchain-proof",
-        "label": "Blockchain Proof"
-      },
       {
         "@id": "urn:ngm:class:message-authentication",
         "label": "Message Authentication"
@@ -149,11 +145,7 @@ alias:: Cross Chain Messaging, cross-chain-messaging
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:asset-movement",
-        "label": "Asset Movement"
-      },
-      {
-        "@id": "urn:ngm:class:cross-chain-function-calls",
+        "@id": "urn:ngm:class:cross-chain-communication",
         "label": "Cross-Chain Function Calls"
       },
       {
@@ -165,25 +157,17 @@ alias:: Cross Chain Messaging, cross-chain-messaging
         "label": "Decentralised Computation"
       },
       {
-        "@id": "urn:ngm:class:cross-chain-token-transfer",
+        "@id": "urn:ngm:class:cross-chain-asset-transfer",
         "label": "Cross-Chain Token Transfer"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:ibc-protocol",
+        "@id": "urn:ngm:class:ibc",
         "label": "IBC Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:optimistic-messaging",
-        "label": "Optimistic Messaging"
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:economic-bonding",
-        "label": "Economic Bonding"
-      },
       {
         "@id": "urn:ngm:class:merkle-proof",
         "label": "Merkle Proof"

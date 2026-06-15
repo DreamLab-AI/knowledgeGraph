@@ -68,10 +68,6 @@
       {
         "id": "urn:ngm:class:360-video",
         "label": "360-Degree Video"
-      },
-      {
-        "id": "urn:ngm:class:stereoscopic-3d",
-        "label": "Stereoscopic 3D"
       }
     ],
     "bridgesTo": [

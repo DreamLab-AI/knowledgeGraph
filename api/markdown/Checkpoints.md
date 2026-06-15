@@ -342,43 +342,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:checkpoint-index",
-        "label": "Checkpoint Index"
-      },
-      {
-        "@id": "urn:ngm:class:ema-shadow-weights",
-        "label": "EMA Shadow Weights"
-      },
-      {
-        "@id": "urn:ngm:class:optimiser-state",
-        "label": "Optimiser State"
-      },
-      {
-        "@id": "urn:ngm:class:rng-state",
-        "label": "RNG State"
-      },
-      {
-        "@id": "urn:ngm:class:shard-metadata",
-        "label": "Shard Metadata"
-      },
-      {
-        "@id": "urn:ngm:class:step-counter",
-        "label": "Step Counter"
-      },
-      {
-        "@id": "urn:ngm:class:weight-tensor",
-        "label": "Weight Tensor"
-      },
-      {
         "@id": "urn:ngm:class:learning-rate-schedule",
         "label": "Learning Rate Schedule"
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:checkpoint-frequency-policy",
-        "label": "Checkpoint Frequency Policy"
-      },
       {
         "@id": "urn:ngm:class:file-system",
         "label": "File System"
@@ -402,15 +370,11 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:checkpoint-averaging",
-        "label": "Checkpoint Averaging"
-      },
-      {
-        "@id": "urn:ngm:class:distributed-training-recovery",
+        "@id": "urn:ngm:class:distributed-training",
         "label": "Distributed Training Recovery"
       },
       {
-        "@id": "urn:ngm:class:empirical-experimental-design-reproducibility",
+        "@id": "urn:ngm:class:empirical-experimental-design",
         "label": "Experiment Reproducibility"
       },
       {
@@ -420,10 +384,6 @@ public:: true
       {
         "@id": "urn:ngm:class:model-versioning",
         "label": "Model Versioning"
-      },
-      {
-        "@id": "urn:ngm:class:training-resumption",
-        "label": "Training Resumption"
       },
       {
         "@id": "urn:ngm:class:transfer-learning",
@@ -478,7 +438,7 @@ public:: true
         "label": "FSDP"
       },
       {
-        "@id": "urn:ngm:class:gguf",
+        "@id": "urn:ngm:class:gguf-format",
         "label": "GGUF"
       },
       {
@@ -492,10 +452,6 @@ public:: true
       {
         "@id": "urn:ngm:class:safetensors",
         "label": "Safetensors"
-      },
-      {
-        "@id": "urn:ngm:class:saved-model",
-        "label": "SavedModel"
       },
       {
         "@id": "urn:ngm:class:ze-ro",
@@ -536,7 +492,7 @@ public:: true
         "label": "Quantisation"
       },
       {
-        "@id": "urn:ngm:class:torch-script",
+        "@id": "urn:ngm:class:py-torch",
         "label": "TorchScript"
       },
       {
@@ -605,8 +561,14 @@ public:: true
       }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:model-versioning", "label": "Model Versioning"},
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+      {
+        "@id": "urn:ngm:class:model-versioning",
+        "label": "Model Versioning"
+      },
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
     ]
   },
   "quality": 0.52,

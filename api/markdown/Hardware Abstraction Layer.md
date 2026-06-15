@@ -24,60 +24,139 @@ alias:: HardwareAbstractionLayer
   "definition": "A Hardware Abstraction Layer (HAL) is a software layer that presents a uniform, hardware-independent interface to upper software layers — operating systems, middleware, or application code — while encapsulating the vendor-specific, register-level details of physical devices in the implementation beneath it. By isolating hardware dependencies behind a stable API, the HAL enables the same kernel or application binary to run on different processor architectures, microcontroller families, or peripheral configurations without source-code changes. HALs appear throughout the software stack: in embedded microcontroller SDKs (STM32 HAL, Arduino abstraction), in operating-system kernels (Windows HAL.dll), in robotic middleware (ROS Hardware Interface), and in graphics stacks (Vulkan's hardware abstraction over GPU vendors). The HAL pattern is a foundational principle of portable, maintainable system software.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:hardware-abstraction", "label": "Hardware Abstraction"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:hardware-abstraction",
+    "label": "Hardware Abstraction"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:device-driver", "label": "Device Driver"},
-      {"@id": "urn:ngm:class:application-programming-interface", "label": "Application Programming Interface"}
+      {
+        "@id": "urn:ngm:class:device-drivers",
+        "label": "Device Driver"
+      },
+      {
+        "@id": "urn:ngm:class:application-programming-interface",
+        "label": "Application Programming Interface"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:operating-system-kernel", "label": "Operating System Kernel"},
-      {"@id": "urn:ngm:class:embedded-software-stack", "label": "Embedded Software Stack"}
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System Kernel"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Software Stack"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:driver-software", "label": "Driver Software"},
-      {"@id": "urn:ngm:class:firmware", "label": "Firmware"}
+      {
+        "@id": "urn:ngm:class:driver-software",
+        "label": "Driver Software"
+      },
+      {
+        "@id": "urn:ngm:class:firmware",
+        "label": "Firmware"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cross-platform-interoperability", "label": "Cross-Platform Interoperability"},
-      {"@id": "urn:ngm:class:operating-system", "label": "Operating System"},
-      {"@id": "urn:ngm:class:software-portability", "label": "Software Portability"},
-      {"@id": "urn:ngm:class:platform-independence", "label": "Platform Independence"}
+      {
+        "@id": "urn:ngm:class:cross-platform-interoperability",
+        "label": "Cross-Platform Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:software-portability",
+        "label": "Software Portability"
+      },
+      {
+        "@id": "urn:ngm:class:platform-independence",
+        "label": "Platform Independence"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:processor-architecture", "label": "Processor Architecture"},
-      {"@id": "urn:ngm:class:system-on-chip", "label": "System-on-Chip"}
+      {
+        "@id": "urn:ngm:class:architecture",
+        "label": "Processor Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:system-on-chip",
+        "label": "System-on-Chip"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:separation-of-concerns", "label": "Separation of Concerns"},
-      {"@id": "urn:ngm:class:layered-architecture", "label": "Layered Architecture"}
+      {
+        "@id": "urn:ngm:class:separation-of-concerns",
+        "label": "Separation of Concerns"
+      },
+      {
+        "@id": "urn:ngm:class:architecture",
+        "label": "Layered Architecture"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:system-software", "label": "System Software"},
-      {"@id": "urn:ngm:class:middleware-layer", "label": "Middleware Layer"}
+      {
+        "@id": "urn:ngm:class:system-software",
+        "label": "System Software"
+      },
+      {
+        "@id": "urn:ngm:class:middleware-layer",
+        "label": "Middleware Layer"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"},
-      {"@id": "urn:ngm:class:real-time-operating-system", "label": "Real-Time Operating System"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:bare-metal-programming", "label": "Bare-Metal Programming"},
-      {"@id": "urn:ngm:class:direct-memory-access", "label": "Direct Memory Access"}
+      {
+        "@id": "urn:ngm:class:bare-metal-programming",
+        "label": "Bare-Metal Programming"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotics-middleware", "label": "Robotics Middleware"},
-      {"@id": "urn:ngm:class:graphics-api", "label": "Graphics API"}
+      {
+        "@id": "urn:ngm:class:middleware",
+        "label": "Robotics Middleware"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:middleware", "label": "Middleware"},
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
-      {"@id": "urn:ngm:class:board-support-package", "label": "Board Support Package"}
+      {
+        "@id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:hal", "label": "HAL"},
-    {"@id": "urn:ngm:class:hardware-interface-layer", "label": "Hardware Interface Layer"}
+    {
+      "@id": "urn:ngm:class:hal",
+      "label": "HAL"
+    },
+    {
+      "@id": "urn:ngm:class:hardware-interface-layer",
+      "label": "Hardware Interface Layer"
+    }
   ],
   "quality": 0.75,
   "provenance": {

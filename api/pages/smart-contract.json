@@ -26,14 +26,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:abi",
-        "label": "ABI"
-      },
-      {
-        "id": "urn:ngm:class:constructor",
-        "label": "Constructor"
-      },
-      {
         "id": "urn:ngm:class:contract-code",
         "label": "Contract Code"
       },
@@ -42,20 +34,12 @@
         "label": "Event Emission"
       },
       {
-        "id": "urn:ngm:class:fallback-function",
-        "label": "Fallback Function"
-      },
-      {
         "id": "urn:ngm:class:oracle-integration",
         "label": "Oracle Integration"
       },
       {
         "id": "urn:ngm:class:proxy-pattern",
         "label": "Proxy Pattern"
-      },
-      {
-        "id": "urn:ngm:class:state-variables",
-        "label": "State Variables"
       },
       {
         "id": "urn:ngm:class:access-control-system",
@@ -137,14 +121,6 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:eip-2535-diamond",
-        "label": "EIP-2535 Diamond"
-      },
-      {
-        "id": "urn:ngm:class:erc-1967-proxy",
-        "label": "ERC-1967 Proxy"
-      },
-      {
         "id": "urn:ngm:class:erc-20",
         "label": "ERC-20"
       },
@@ -157,25 +133,13 @@
         "label": "ERC-721"
       },
       {
-        "id": "urn:ngm:class:open-zeppelin-standards",
+        "id": "urn:ngm:class:open-zeppelin",
         "label": "OpenZeppelin Standards"
       }
     ],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [
-      {
-        "id": "urn:ngm:class:cairo-language",
-        "label": "Cairo Language"
-      },
-      {
-        "id": "urn:ngm:class:ink",
-        "label": "Ink!"
-      },
-      {
-        "id": "urn:ngm:class:move-language",
-        "label": "Move Language"
-      },
       {
         "id": "urn:ngm:class:solidity",
         "label": "Solidity"
@@ -249,7 +213,7 @@
         "label": "OpenZeppelin"
       },
       {
-        "id": "urn:ngm:class:w3-c-did-spec",
+        "id": "urn:ngm:class:w3-c-did-specification",
         "label": "W3C DID Spec"
       }
     ],

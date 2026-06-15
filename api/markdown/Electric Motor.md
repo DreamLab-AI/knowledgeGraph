@@ -160,43 +160,17 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:bearings",
-        "label": "Bearings"
-      },
-      {
-        "@id": "urn:ngm:class:power-terminals",
-        "label": "Power Terminals"
-      },
-      {
-        "@id": "urn:ngm:class:rotor",
-        "label": "Rotor"
-      },
-      {
-        "@id": "urn:ngm:class:shaft",
-        "label": "Shaft"
-      },
-      {
-        "@id": "urn:ngm:class:stator",
-        "label": "Stator"
-      }
-    ],
     "requires": [
       {
-        "@id": "urn:ngm:class:electrical-power-supply",
+        "@id": "urn:ngm:class:power-supply",
         "label": "Electrical Power Supply"
-      },
-      {
-        "@id": "urn:ngm:class:heat-dissipation",
-        "label": "Heat Dissipation"
       },
       {
         "@id": "urn:ngm:class:mechanical-load",
         "label": "Mechanical Load"
       },
       {
-        "@id": "urn:ngm:class:motor-driver-electronics",
+        "@id": "urn:ngm:class:motor-driver",
         "label": "Motor Driver Electronics"
       }
     ],
@@ -204,14 +178,6 @@ public:: true
       {
         "@id": "urn:ngm:class:joint-actuation",
         "label": "Joint Actuation"
-      },
-      {
-        "@id": "urn:ngm:class:rotational-motion",
-        "label": "Rotational Motion"
-      },
-      {
-        "@id": "urn:ngm:class:speed-control",
-        "label": "Speed Control"
       },
       {
         "@id": "urn:ngm:class:torque-generation",

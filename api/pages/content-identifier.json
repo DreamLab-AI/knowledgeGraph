@@ -21,15 +21,11 @@
       {
         "id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hash Function"
-      },
-      {
-        "id": "urn:ngm:class:hash-digest",
-        "label": "Hash Digest"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:content-deduplication",
+        "id": "urn:ngm:class:deduplication",
         "label": "Content Deduplication"
       },
       {
@@ -37,12 +33,8 @@
         "label": "Tamper Detection"
       },
       {
-        "id": "urn:ngm:class:verifiable-data",
+        "id": "urn:ngm:class:verifiable-data-registry",
         "label": "Verifiable Data"
-      },
-      {
-        "id": "urn:ngm:class:permanent-link",
-        "label": "Permanent Link"
       }
     ],
     "dependsOn": [],
@@ -50,19 +42,11 @@
       {
         "id": "urn:ngm:class:content-addressing",
         "label": "Content Addressing"
-      },
-      {
-        "id": "urn:ngm:class:self-describing-format",
-        "label": "Self-Describing Format"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:uniform-resource-locator",
-        "label": "Uniform Resource Locator"
-      },
-      {
-        "id": "urn:ngm:class:location-addressing",
+        "id": "urn:ngm:class:content-addressing",
         "label": "Location Addressing"
       }
     ],

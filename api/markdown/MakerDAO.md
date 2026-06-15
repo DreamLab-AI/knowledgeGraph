@@ -38,46 +38,101 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
-      {"@id": "urn:ngm:class:dutch-auction", "label": "Dutch Auction"},
-      {"@id": "urn:ngm:class:collateralised-debt-position", "label": "Collateralised Debt Position"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:dutch-auction",
+        "label": "Dutch Auction"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
-      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"},
-      {"@id": "urn:ngm:class:real-world-asset-tokenisation", "label": "Real-World Asset Tokenisation"},
-      {"@id": "urn:ngm:class:algorithmic-stablecoin", "label": "Algorithmic Stablecoin"}
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "@id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real-World Asset Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-stablecoin",
+        "label": "Algorithmic Stablecoin"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:peg-stability-module", "label": "Peg Stability Module"},
-      {"@id": "urn:ngm:class:mkr-token", "label": "MKR Token"},
-      {"@id": "urn:ngm:class:dai-stablecoin", "label": "DAI Stablecoin"},
-      {"@id": "urn:ngm:class:sub-dao", "label": "SubDAO"}
+      {
+        "@id": "urn:ngm:class:dai",
+        "label": "DAI Stablecoin"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:over-collateralisation", "label": "Over-Collateralisation"},
-      {"@id": "urn:ngm:class:oracle-network", "label": "Oracle Network"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"}
+      {
+        "@id": "urn:ngm:class:over-collateralisation",
+        "label": "Over-Collateralisation"
+      },
+      {
+        "@id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:dao", "label": "DAO"},
-      {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"},
-      {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"},
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"}
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:fiat-backed-stablecoin", "label": "Fiat-Backed Stablecoin"},
-      {"@id": "urn:ngm:class:centralised-exchange", "label": "Centralised Exchange"}
+      {
+        "@id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:traditional-finance", "label": "Traditional Finance"},
-      {"@id": "urn:ngm:class:asset-tokenisation", "label": "Asset Tokenisation"}
+      {
+        "@id": "urn:ngm:class:traditional-finance",
+        "label": "Traditional Finance"
+      },
+      {
+        "@id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:maker-protocol", "label": "Maker Protocol"}
+    {
+      "@id": "urn:ngm:class:maker-protocol",
+      "label": "Maker Protocol"
+    }
   ],
   "quality": 0.74,
   "provenance": {

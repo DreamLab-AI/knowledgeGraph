@@ -24,60 +24,133 @@ elevatedFrom:: [[Docker]]
   "definition": "Docker is an open-source platform that automates the deployment, scaling, and management of applications by packaging them together with their runtime dependencies into lightweight, portable containers built on Linux kernel primitives (namespaces and cgroups). Unlike virtual machines, Docker containers share the host operating system kernel, providing process and filesystem isolation with far lower overhead while guaranteeing consistent execution across heterogeneous computing environments. Launched in 2013 by Docker Inc., the platform introduced an intuitive developer-facing toolchain, a layered image format, and the Docker Hub public registry, collectively mainstreaming container technology and catalysing the cloud-native ecosystem. Docker standardised container packaging through the Open Container Initiative (OCI) specification and remains the dominant interface for building, distributing, and running container images in both development and production contexts.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:software-platform", "label": "Software Platform"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-platform",
+      "label": "Software Platform"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:container-image", "label": "Container Image"},
-      {"@id": "urn:ngm:class:container-registry", "label": "Container Registry"},
-      {"@id": "urn:ngm:class:docker-compose", "label": "Docker Compose"},
-      {"@id": "urn:ngm:class:container-runtime", "label": "Container Runtime"}
+      {
+        "@id": "urn:ngm:class:container-image",
+        "label": "Container Image"
+      },
+      {
+        "@id": "urn:ngm:class:container-registry",
+        "label": "Container Registry"
+      },
+      {
+        "@id": "urn:ngm:class:container-runtime",
+        "label": "Container Runtime"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:linux-kernel", "label": "Linux Kernel"},
-      {"@id": "urn:ngm:class:operating-system-namespaces", "label": "Operating System Namespaces"},
-      {"@id": "urn:ngm:class:control-groups", "label": "Control Groups"}
+      {
+        "@id": "urn:ngm:class:linux-kernel",
+        "label": "Linux Kernel"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cloud-native-applications", "label": "Cloud-Native Applications"},
-      {"@id": "urn:ngm:class:continuous-integration-continuous-delivery", "label": "Continuous Integration Continuous Delivery"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"},
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:devops", "label": "DevOps"}
+      {
+        "@id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration Continuous Delivery"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"},
-      {"@id": "urn:ngm:class:cloud-platform", "label": "Cloud Platform"}
-    ],
-    "uses": [
-      {"@id": "urn:ngm:class:overlay-filesystem", "label": "Overlay Filesystem"},
-      {"@id": "urn:ngm:class:container-networking", "label": "Container Networking"}
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-platform",
+        "label": "Cloud Platform"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
-      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"},
-      {"@id": "urn:ngm:class:model-ops", "label": "ModelOps"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:model-ops",
+        "label": "ModelOps"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:open-container-initiative", "label": "Open Container Initiative"}
+      {
+        "@id": "urn:ngm:class:open-container-initiative",
+        "label": "Open Container Initiative"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:virtual-machine", "label": "Virtual Machine"},
-      {"@id": "urn:ngm:class:serverless-computing", "label": "Serverless Computing"}
+      {
+        "@id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:serverless-architecture",
+        "label": "Serverless Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"},
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
-      {"@id": "urn:ngm:class:software-infrastructure", "label": "Software Infrastructure"},
-      {"@id": "urn:ngm:class:development-platform", "label": "Development Platform"}
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:software-infrastructure",
+        "label": "Software Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:development-platform",
+        "label": "Development Platform"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:docker-engine", "label": "Docker Engine"}
+    {
+      "@id": "urn:ngm:class:docker-engine",
+      "label": "Docker Engine"
+    }
   ],
   "quality": 0.75,
   "provenance": {

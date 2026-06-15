@@ -793,15 +793,15 @@ alias:: DistributedLedger
         "label": "Channel Isolation Pattern"
       },
       {
-        "@id": "urn:ngm:class:merkle-tree-structure",
+        "@id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Tree Structure"
       },
       {
-        "@id": "urn:ngm:class:notary-validation-pattern",
+        "@id": "urn:ngm:class:notary-service",
         "label": "Notary Validation Pattern"
       },
       {
-        "@id": "urn:ngm:class:state-replication-protocol",
+        "@id": "urn:ngm:class:state-machine-replication",
         "label": "State Replication Protocol"
       },
       {

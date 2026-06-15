@@ -74,58 +74,128 @@ public:: true
     "label": "Cryptographic Primitive"
   },
   "relations": {
-    "hasPart": [
-      {"@id": "urn:ngm:class:key-material", "label": "Key Material"}
-    ],
     "partOf": [
-      {"@id": "urn:ngm:class:cryptographic-system", "label": "Cryptographic System"},
-      {"@id": "urn:ngm:class:asymmetric-key-pair", "label": "Asymmetric Key Pair"}
+      {
+        "@id": "urn:ngm:class:cryptographic-system",
+        "label": "Cryptographic System"
+      },
+      {
+        "@id": "urn:ngm:class:asymmetric-key-pair",
+        "label": "Asymmetric Key Pair"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cryptographically-secure-random-number-generator", "label": "Cryptographically Secure Random Number Generator"},
-      {"@id": "urn:ngm:class:secure-storage", "label": "Secure Storage"}
+      {
+        "@id": "urn:ngm:class:random-number-generator",
+        "label": "Cryptographically Secure Random Number Generator"
+      },
+      {
+        "@id": "urn:ngm:class:secure-storage",
+        "label": "Secure Storage"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"},
-      {"@id": "urn:ngm:class:transaction-signing", "label": "Transaction Signing"},
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:non-custodial-wallet", "label": "Non-Custodial Wallet"}
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-signing",
+        "label": "Transaction Signing"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:non-custodial-wallet",
+        "label": "Non-Custodial Wallet"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:discrete-logarithm-problem", "label": "Discrete Logarithm Problem"}
+      {
+        "@id": "urn:ngm:class:discrete-logarithm-problem",
+        "label": "Discrete Logarithm Problem"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:secp256k1", "label": "secp256k1"}
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:secp256k1",
+        "label": "secp256k1"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:asymmetric-cryptography", "label": "Asymmetric Cryptography"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"}
+      {
+        "@id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist-fips-186", "label": "NIST FIPS 186"},
-      {"@id": "urn:ngm:class:rfc-5958", "label": "RFC 5958"}
+      {
+        "@id": "urn:ngm:class:nist-fips-186",
+        "label": "NIST FIPS 186"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:public-key", "label": "Public Key"},
-      {"@id": "urn:ngm:class:symmetric-key", "label": "Symmetric Key"}
+      {
+        "@id": "urn:ngm:class:public-key",
+        "label": "Public Key"
+      },
+      {
+        "@id": "urn:ngm:class:symmetric-key",
+        "label": "Symmetric Key"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cryptographic-keys", "label": "Cryptographic Keys"},
-      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"},
-      {"@id": "urn:ngm:class:hierarchical-deterministic-wallet", "label": "Hierarchical Deterministic Wallet"},
-      {"@id": "urn:ngm:class:mnemonic-seed-phrase", "label": "Mnemonic Seed Phrase"},
-      {"@id": "urn:ngm:class:hardware-security-module", "label": "Hardware Security Module"}
+      {
+        "@id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:hierarchical-deterministic-wallet",
+        "label": "Hierarchical Deterministic Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:secret-key", "label": "Secret Key"},
-    {"@id": "urn:ngm:class:signing-key", "label": "Signing Key"}
+    {
+      "@id": "urn:ngm:class:secret-key",
+      "label": "Secret Key"
+    },
+    {
+      "@id": "urn:ngm:class:signing-key",
+      "label": "Signing Key"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -92,53 +92,129 @@ alias:: DecentralizedAutonomousOrganization
   },
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:blockchain-infrastructure", "label": "Blockchain Infrastructure"},
-      {"@id": "urn:ngm:class:cryptographic-wallet", "label": "Cryptographic Wallet"}
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:wallet",
+        "label": "Cryptographic Wallet"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:on-chain-voting", "label": "On Chain Voting"},
-      {"@id": "urn:ngm:class:treasury-management", "label": "Treasury Management"},
-      {"@id": "urn:ngm:class:proposal-system", "label": "Proposal System"},
-      {"@id": "urn:ngm:class:multisig-wallet", "label": "Multisig Wallet"}
+      {
+        "@id": "urn:ngm:class:on-chain-voting",
+        "label": "On Chain Voting"
+      },
+      {
+        "@id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      },
+      {
+        "@id": "urn:ngm:class:proposal-system",
+        "label": "Proposal System"
+      },
+      {
+        "@id": "urn:ngm:class:multisig-wallet",
+        "label": "Multisig Wallet"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
-      {"@id": "urn:ngm:class:token-weighted-voting", "label": "Token-Weighted Voting"},
-      {"@id": "urn:ngm:class:quadratic-voting", "label": "Quadratic Voting"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      },
+      {
+        "@id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"},
-      {"@id": "urn:ngm:class:distributed-governance", "label": "Distributed Governance"},
-      {"@id": "urn:ngm:class:permissionless-participation", "label": "Permissionless Participation"},
-      {"@id": "urn:ngm:class:trustless-coordination", "label": "Trustless Coordination"}
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-governance",
+        "label": "Distributed Governance"
+      },
+      {
+        "@id": "urn:ngm:class:permissionless-participation",
+        "label": "Permissionless Participation"
+      },
+      {
+        "@id": "urn:ngm:class:trustless-coordination",
+        "label": "Trustless Coordination"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:decentralization", "label": "Decentralization"},
-      {"@id": "urn:ngm:class:stakeholder-democracy", "label": "Stakeholder Democracy"}
+      {
+        "@id": "urn:ngm:class:decentralization",
+        "label": "Decentralization"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
-      {"@id": "urn:ngm:class:decentralized-finance", "label": "Decentralized Finance"}
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:traditional-corporation", "label": "Traditional Corporation"},
-      {"@id": "urn:ngm:class:centralized-governance", "label": "Centralized Governance"}
+      {
+        "@id": "urn:ngm:class:traditional-corporation",
+        "label": "Traditional Corporation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"},
-      {"@id": "urn:ngm:class:collective-intelligence", "label": "Collective Intelligence"}
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:web3", "label": "Web3"},
-      {"@id": "urn:ngm:class:token-economics", "label": "Token Economics"}
+      {
+        "@id": "urn:ngm:class:web3",
+        "label": "Web3"
+      },
+      {
+        "@id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:dao", "label": "DAO"},
-    {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"}
+    {
+      "@id": "urn:ngm:class:dao",
+      "label": "DAO"
+    },
+    {
+      "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+      "label": "Decentralised Autonomous Organisation"
+    }
   ],
   "quality": 0.68,
   "provenance": {

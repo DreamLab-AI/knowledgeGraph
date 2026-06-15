@@ -38,50 +38,109 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:arithmetic-reasoning", "label": "Arithmetic Reasoning"},
-      {"@id": "urn:ngm:class:theorem-proving", "label": "Theorem Proving"},
-      {"@id": "urn:ngm:class:symbolic-computation", "label": "Symbolic Computation"},
-      {"@id": "urn:ngm:class:proof-search", "label": "Proof Search"}
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Arithmetic Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:theorem-proving",
+        "label": "Theorem Proving"
+      },
+      {
+        "@id": "urn:ngm:class:symbolic-computation",
+        "label": "Symbolic Computation"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}
+      {
+        "@id": "urn:ngm:class:ai-research-area",
+        "label": "AI Research Area"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:formal-logic", "label": "Formal Logic"},
-      {"@id": "urn:ngm:class:compositional-reasoning", "label": "Compositional Reasoning"}
+      {
+        "@id": "urn:ngm:class:formal-logic",
+        "label": "Formal Logic"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:automated-theorem-proving", "label": "Automated Theorem Proving"},
-      {"@id": "urn:ngm:class:scientific-reasoning", "label": "Scientific Reasoning"},
-      {"@id": "urn:ngm:class:code-verification", "label": "Code Verification"}
+      {
+        "@id": "urn:ngm:class:automated-theorem-proving",
+        "label": "Automated Theorem Proving"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:chain-of-thought-reasoning", "label": "Chain-of-Thought Reasoning"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-thought-reasoning",
+        "label": "Chain-of-Thought Reasoning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:symbolic-ai", "label": "Symbolic AI"},
-      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+      {
+        "@id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:commonsense-reasoning", "label": "Commonsense Reasoning"},
-      {"@id": "urn:ngm:class:probabilistic-reasoning", "label": "Probabilistic Reasoning"}
+      {
+        "@id": "urn:ngm:class:commonsense-reasoning",
+        "label": "Commonsense Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-reasoning",
+        "label": "Probabilistic Reasoning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"},
-      {"@id": "urn:ngm:class:logic-programming", "label": "Logic Programming"},
-      {"@id": "urn:ngm:class:neuro-symbolic-ai", "label": "Neuro-Symbolic AI"},
-      {"@id": "urn:ngm:class:benchmark-evaluation", "label": "Benchmark Evaluation"}
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "@id": "urn:ngm:class:logic-programming",
+        "label": "Logic Programming"
+      },
+      {
+        "@id": "urn:ngm:class:neuro-symbolic-ai",
+        "label": "Neuro-Symbolic AI"
+      },
+      {
+        "@id": "urn:ngm:class:benchmark-evaluation",
+        "label": "Benchmark Evaluation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"},
-      {"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"}
+      {
+        "@id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:quantitative-reasoning", "label": "Quantitative Reasoning"}
+    {
+      "@id": "urn:ngm:class:quantitative-reasoning",
+      "label": "Quantitative Reasoning"
+    }
   ],
   "quality": 0.74,
   "provenance": {

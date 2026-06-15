@@ -85,7 +85,7 @@ public:: true
         "label": "Data Pipeline"
       },
       {
-        "@id": "urn:ngm:class:etl",
+        "@id": "urn:ngm:class:etl-pipeline",
         "label": "ETL"
       },
       {
@@ -101,7 +101,7 @@ public:: true
         "label": "Stream Processing"
       },
       {
-        "@id": "urn:ngm:class:data-orchestration",
+        "@id": "urn:ngm:class:orchestration",
         "label": "Data Orchestration"
       }
     ],
@@ -145,10 +145,6 @@ public:: true
       {
         "@id": "urn:ngm:class:apache-kafka",
         "label": "Apache Kafka"
-      },
-      {
-        "@id": "urn:ngm:class:apache-airflow",
-        "label": "Apache Airflow"
       },
       {
         "@id": "urn:ngm:class:object-storage",

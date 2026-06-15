@@ -23,50 +23,111 @@ public:: true
   "definition": "The 3rd Generation Partnership Project (3GPP) is a global consortium of regional telecommunications standards bodies that develops and maintains versioned technical specifications governing mobile communication systems, from UMTS (3G) through LTE (4G) to NR (5G) and the emerging 6G framework. Operating through working groups (RAN, SA, CT), it produces Releases that introduce new radio access technologies, core network architectures, and service-layer capabilities. 3GPP specifications are the foundational technical substrate for the global cellular infrastructure serving billions of devices.",
   "domain": "standards",
   "maturity": "mature",
-  "subClassOf": {"@id": "urn:ngm:class:standards-body", "label": "Standards Body"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:standards-body",
+    "label": "Standards Body"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:radio-access-network", "label": "Radio Access Network"},
-      {"@id": "urn:ngm:class:5g-core-network", "label": "5G Core Network"},
-      {"@id": "urn:ngm:class:long-term-evolution", "label": "Long-Term Evolution"},
-      {"@id": "urn:ngm:class:5g-new-radio", "label": "5G New Radio"}
+      {
+        "@id": "urn:ngm:class:radio-access-network",
+        "label": "Radio Access Network"
+      },
+      {
+        "@id": "urn:ngm:class:5g-core-network",
+        "label": "5G Core Network"
+      },
+      {
+        "@id": "urn:ngm:class:5g-new-radio",
+        "label": "5G New Radio"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:network-function-virtualization", "label": "Network Function Virtualization"},
-      {"@id": "urn:ngm:class:multi-access-edge-computing", "label": "MultiAccessEdgeComputing"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:vehicle-to-everything", "label": "Vehicle-to-Everything"},
-      {"@id": "urn:ngm:class:network-slicing", "label": "Network Slicing"}
+      {
+        "@id": "urn:ngm:class:network-function-virtualization",
+        "label": "Network Function Virtualization"
+      },
+      {
+        "@id": "urn:ngm:class:multi-access-edge-computing",
+        "label": "MultiAccessEdgeComputing"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:vehicle-to-everything",
+        "label": "Vehicle-to-Everything"
+      },
+      {
+        "@id": "urn:ngm:class:network-slicing",
+        "label": "Network Slicing"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:5-g-network", "label": "5G Network"},
-      {"@id": "urn:ngm:class:5-g-connectivity", "label": "5G Connectivity"},
-      {"@id": "urn:ngm:class:narrowband-iot", "label": "Narrowband IoT"}
+      {
+        "@id": "urn:ngm:class:5-g-network",
+        "label": "5G Network"
+      },
+      {
+        "@id": "urn:ngm:class:5-g-connectivity",
+        "label": "5G Connectivity"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:spectrum-allocation", "label": "Spectrum Allocation"},
-      {"@id": "urn:ngm:class:radio-frequency-engineering", "label": "Radio Frequency Engineering"}
+      {
+        "@id": "urn:ngm:class:spectrum-allocation",
+        "label": "Spectrum Allocation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ultra-reliable-low-latency-communications", "label": "Ultra-Reliable Low-Latency Communications"},
-      {"@id": "urn:ngm:class:massive-machine-type-communications", "label": "Massive Machine-Type Communications"},
-      {"@id": "urn:ngm:class:non-terrestrial-networks", "label": "Non-Terrestrial Networks"}
+      {
+        "@id": "urn:ngm:class:low-latency",
+        "label": "Ultra-Reliable Low-Latency Communications"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:etsi", "label": "ETSI"},
-      {"@id": "urn:ngm:class:telecommunications", "label": "Telecommunications"},
-      {"@id": "urn:ngm:class:network-architecture", "label": "Network Architecture"},
-      {"@id": "urn:ngm:class:itu-r", "label": "ITU-R"},
-      {"@id": "urn:ngm:class:ieee", "label": "IEEE"}
+      {
+        "@id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      },
+      {
+        "@id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      },
+      {
+        "@id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:itu-r",
+        "label": "ITU-R"
+      },
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:third-generation-partnership-project", "label": "Third Generation Partnership Project"}
+    {
+      "@id": "urn:ngm:class:third-generation-partnership-project",
+      "label": "Third Generation Partnership Project"
+    }
   ],
   "quality": 0.72,
   "provenance": {

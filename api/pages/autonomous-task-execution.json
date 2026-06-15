@@ -18,11 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:perceive-plan-act-loop",
-        "label": "Perceive-Plan-Act Loop"
-      },
-      {
-        "id": "urn:ngm:class:tool-invocation",
+        "id": "urn:ngm:class:tool-use",
         "label": "Tool Invocation"
       }
     ],
@@ -73,10 +69,6 @@
       {
         "id": "urn:ngm:class:robotic-process-automation",
         "label": "Robotic Process Automation"
-      },
-      {
-        "id": "urn:ngm:class:supervised-automation",
-        "label": "Supervised Automation"
       }
     ],
     "bridgesTo": [
@@ -122,10 +114,6 @@
       {
         "id": "urn:ngm:class:long-horizon-planning",
         "label": "Long-Horizon Planning"
-      },
-      {
-        "id": "urn:ngm:class:agent-benchmarking",
-        "label": "Agent Benchmarking"
       },
       {
         "id": "urn:ngm:class:react-prompting",

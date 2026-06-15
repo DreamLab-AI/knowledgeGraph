@@ -128,14 +128,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:carbon-emissions",
-        "label": "Carbon Emissions"
-      },
-      {
-        "@id": "urn:ngm:class:computational-power",
-        "label": "Computational Power"
-      },
-      {
         "@id": "urn:ngm:class:electricity-consumption",
         "label": "Electricity Consumption"
       },
@@ -148,12 +140,6 @@ public:: true
         "label": "E-Waste"
       }
     ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:blockchain-performance",
-        "label": "Blockchain Performance"
-      }
-    ],
     "dependsOn": [
       {
         "@id": "urn:ngm:class:consensus-mechanism",
@@ -164,16 +150,8 @@ public:: true
         "label": "Mining Hardware"
       },
       {
-        "@id": "urn:ngm:class:network-size",
-        "label": "Network Size"
-      },
-      {
         "@id": "urn:ngm:class:energy-source",
         "label": "Energy Source"
-      },
-      {
-        "@id": "urn:ngm:class:electricity-price",
-        "label": "Electricity Price"
       }
     ],
     "uses": [
@@ -192,11 +170,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:carbon-credit-tokenization",
-        "label": "Carbon Credit Tokenization"
-      },
-      {
-        "@id": "urn:ngm:class:renewable-energy-certificate",
+        "@id": "urn:ngm:class:renewable-energy-certificates",
         "label": "Renewable Energy Certificate"
       }
     ],
@@ -236,10 +210,6 @@ public:: true
       {
         "@id": "urn:ngm:class:layer-2-scaling",
         "label": "Layer 2 Scaling"
-      },
-      {
-        "@id": "urn:ngm:class:environmental-impact",
-        "label": "Environmental Impact"
       }
     ],
     "bridgesTo": [
@@ -250,14 +220,6 @@ public:: true
       {
         "@id": "urn:ngm:class:ai-energy-optimisation",
         "label": "AI Energy Optimisation"
-      },
-      {
-        "@id": "urn:ngm:class:energy-sector",
-        "label": "Energy Sector"
-      },
-      {
-        "@id": "urn:ngm:class:environmental-regulation",
-        "label": "Environmental Regulation"
       }
     ]
   },

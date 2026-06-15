@@ -89,7 +89,7 @@
         "label": "SPARQL"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       }
     ],
@@ -104,7 +104,7 @@
         "label": "HL7 FHIR"
       },
       {
-        "id": "urn:ngm:class:iso-iec-11179",
+        "id": "urn:ngm:class:iso-11179",
         "label": "ISO/IEC 11179"
       }
     ],

@@ -20,22 +20,9 @@
       {
         "id": "urn:ngm:class:impact-assessment",
         "label": "Impact Assessment"
-      },
-      {
-        "id": "urn:ngm:class:change-readiness-assessment",
-        "label": "Change Readiness Assessment"
       }
     ],
-    "requires": [
-      {
-        "id": "urn:ngm:class:leadership-commitment",
-        "label": "Leadership Commitment"
-      },
-      {
-        "id": "urn:ngm:class:organisational-culture",
-        "label": "Organisational Culture"
-      }
-    ],
+    "requires": [],
     "enables": [
       {
         "id": "urn:ngm:class:ai-adoption",
@@ -44,10 +31,6 @@
       {
         "id": "urn:ngm:class:workforce-development",
         "label": "Workforce Development"
-      },
-      {
-        "id": "urn:ngm:class:process-improvement",
-        "label": "Process Improvement"
       },
       {
         "id": "urn:ngm:class:continuous-improvement",
@@ -88,14 +71,6 @@
       {
         "id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail"
-      },
-      {
-        "id": "urn:ngm:class:communication-planning",
-        "label": "Communication Planning"
-      },
-      {
-        "id": "urn:ngm:class:training-and-development",
-        "label": "Training and Development"
       }
     ],
     "supports": [
@@ -130,10 +105,6 @@
       {
         "id": "urn:ngm:class:enterprise-architecture",
         "label": "Enterprise Architecture"
-      },
-      {
-        "id": "urn:ngm:class:programme-management",
-        "label": "Programme Management"
       }
     ]
   },

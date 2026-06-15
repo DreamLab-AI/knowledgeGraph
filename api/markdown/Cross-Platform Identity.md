@@ -84,12 +84,8 @@ public:: true
         "label": "Identity Provider"
       },
       {
-        "@id": "urn:ngm:class:federation-server",
+        "@id": "urn:ngm:class:federation",
         "label": "Federation Server"
-      },
-      {
-        "@id": "urn:ngm:class:identity-broker",
-        "label": "Identity Broker"
       }
     ],
     "partOf": [
@@ -100,11 +96,11 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:trust-relationships",
+        "@id": "urn:ngm:class:trust",
         "label": "Trust Relationships"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -114,7 +110,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:federated-access",
+        "@id": "urn:ngm:class:federated-identity-system",
         "label": "Federated Access"
       },
       {
@@ -126,13 +122,13 @@ public:: true
         "label": "User Experience"
       },
       {
-        "@id": "urn:ngm:class:cross-domain-authorisation",
+        "@id": "urn:ngm:class:authorisation",
         "label": "Cross-Domain Authorisation"
       }
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:directory-services",
+        "@id": "urn:ngm:class:directory-service",
         "label": "Directory Services"
       },
       {
@@ -146,7 +142,7 @@ public:: true
         "label": "Identity Federation"
       },
       {
-        "@id": "urn:ngm:class:openid-connect",
+        "@id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
       },
       {
@@ -196,12 +192,8 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:zero-trust-security",
+        "@id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Security"
-      },
-      {
-        "@id": "urn:ngm:class:access-governance",
-        "label": "Access Governance"
       }
     ]
   },

@@ -25,10 +25,6 @@
       {
         "id": "urn:ngm:class:sybil-resistance",
         "label": "Sybil Resistance"
-      },
-      {
-        "id": "urn:ngm:class:vote-checkpointing",
-        "label": "Vote Checkpointing"
       }
     ],
     "enables": [
@@ -41,12 +37,8 @@
         "label": "On-chain Governance"
       },
       {
-        "id": "urn:ngm:class:delegative-democracy",
+        "id": "urn:ngm:class:delegate-democracy",
         "label": "Delegative Democracy"
-      },
-      {
-        "id": "urn:ngm:class:participatory-governance",
-        "label": "Participatory Governance"
       }
     ],
     "dependsOn": [
@@ -59,16 +51,7 @@
         "label": "Token-Weighted Voting"
       }
     ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:transitive-delegation",
-        "label": "Transitive Delegation"
-      },
-      {
-        "id": "urn:ngm:class:vote-weight-aggregation",
-        "label": "Vote Weight Aggregation"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:quadratic-voting",
@@ -109,10 +92,6 @@
       {
         "id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
-      },
-      {
-        "id": "urn:ngm:class:delegation-graph",
-        "label": "Delegation Graph"
       }
     ],
     "supports": [],

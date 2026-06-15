@@ -18,30 +18,18 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:bgv-scheme",
+        "id": "urn:ngm:class:encryption-scheme",
         "label": "BGV Scheme"
       },
       {
         "id": "urn:ngm:class:ckks-scheme",
         "label": "CKKS Scheme"
-      },
-      {
-        "id": "urn:ngm:class:tfhe-scheme",
-        "label": "TFHE Scheme"
-      },
-      {
-        "id": "urn:ngm:class:bootstrapping",
-        "label": "Bootstrapping"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:lattice-based-cryptography",
+        "id": "urn:ngm:class:lattice-cryptography",
         "label": "Lattice-Based Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:learning-with-errors",
-        "label": "Learning With Errors"
       }
     ],
     "enables": [
@@ -54,11 +42,7 @@
         "label": "Federated Learning"
       },
       {
-        "id": "urn:ngm:class:private-information-retrieval",
-        "label": "Private Information Retrieval"
-      },
-      {
-        "id": "urn:ngm:class:encrypted-machine-learning",
+        "id": "urn:ngm:class:homomorphic-encryption-for-machine-learning",
         "label": "Encrypted Machine Learning"
       }
     ],
@@ -66,10 +50,6 @@
       {
         "id": "urn:ngm:class:post-quantum-cryptography",
         "label": "Post-Quantum Cryptography"
-      },
-      {
-        "id": "urn:ngm:class:noise-management",
-        "label": "Noise Management"
       }
     ],
     "implements": [],
@@ -79,7 +59,7 @@
         "label": "Differential Privacy"
       },
       {
-        "id": "urn:ngm:class:secure-enclaves",
+        "id": "urn:ngm:class:secure-enclave",
         "label": "Secure Enclaves"
       },
       {
@@ -101,16 +81,7 @@
         "label": "Confidential Computing"
       }
     ],
-    "uses": [
-      {
-        "id": "urn:ngm:class:ring-learning-with-errors",
-        "label": "Ring Learning With Errors"
-      },
-      {
-        "id": "urn:ngm:class:number-theoretic-transform",
-        "label": "Number Theoretic Transform"
-      }
-    ],
+    "uses": [],
     "supports": [
       {
         "id": "urn:ngm:class:cloud-computing",
@@ -119,19 +90,11 @@
       {
         "id": "urn:ngm:class:healthcare-data-privacy",
         "label": "Healthcare Data Privacy"
-      },
-      {
-        "id": "urn:ngm:class:genomic-data-analysis",
-        "label": "Genomic Data Analysis"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:homomorphicencryption-org",
-        "label": "HomomorphicEncryption.org"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec-jtc1-sc27",
+        "id": "urn:ngm:class:iso-iec-jtc-1",
         "label": "ISO/IEC JTC1 SC27"
       }
     ],
@@ -149,10 +112,6 @@
       {
         "id": "urn:ngm:class:oblivious-ram",
         "label": "Oblivious RAM"
-      },
-      {
-        "id": "urn:ngm:class:functional-encryption",
-        "label": "Functional Encryption"
       }
     ]
   },

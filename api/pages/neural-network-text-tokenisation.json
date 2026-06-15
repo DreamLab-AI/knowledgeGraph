@@ -22,16 +22,8 @@
         "label": "Byte Pair Encoding"
       },
       {
-        "id": "urn:ngm:class:wordpiece-tokenisation",
-        "label": "WordPiece Tokenisation"
-      },
-      {
-        "id": "urn:ngm:class:sentencepiece-tokenisation",
-        "label": "SentencePiece Tokenisation"
-      },
-      {
         "id": "urn:ngm:class:subword-tokenisation",
-        "label": "Subword Tokenisation"
+        "label": "WordPiece Tokenisation"
       }
     ],
     "requires": [
@@ -70,26 +62,13 @@
       {
         "id": "urn:ngm:class:language-model",
         "label": "Language Model"
-      },
-      {
-        "id": "urn:ngm:class:unicode-text-encoding",
-        "label": "Unicode Text Encoding"
       }
     ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:text-segmentation-algorithm",
-        "label": "Text Segmentation Algorithm"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:word-level-tokenisation",
         "label": "Word-Level Tokenisation"
-      },
-      {
-        "id": "urn:ngm:class:character-level-tokenisation",
-        "label": "Character-Level Tokenisation"
       }
     ],
     "bridgesTo": [
@@ -98,7 +77,7 @@
         "label": "Computational Linguistics"
       },
       {
-        "id": "urn:ngm:class:digital-asset-tokenisation",
+        "id": "urn:ngm:class:asset-tokenisation",
         "label": "Digital Asset Tokenisation"
       }
     ],
@@ -112,7 +91,7 @@
         "label": "Embedding Layer"
       },
       {
-        "id": "urn:ngm:class:statistical-language-model",
+        "id": "urn:ngm:class:language-model",
         "label": "Statistical Language Model"
       }
     ],

@@ -62,59 +62,149 @@ public:: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:eu-digital-finance-strategy", "label": "EU Digital Finance Strategy"},
-      {"@id": "urn:ngm:class:eu-single-market", "label": "EU Single Market"}
+      {
+        "@id": "urn:ngm:class:eu-digital-finance-strategy",
+        "label": "EU Digital Finance Strategy"
+      },
+      {
+        "@id": "urn:ngm:class:eu-single-market",
+        "label": "EU Single Market"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:crypto-asset-white-paper", "label": "Crypto-Asset White Paper"},
-      {"@id": "urn:ngm:class:national-competent-authority", "label": "National Competent Authority"},
-      {"@id": "urn:ngm:class:capital-adequacy", "label": "Capital Adequacy"}
+      {
+        "@id": "urn:ngm:class:crypto-asset-white-paper",
+        "label": "Crypto-Asset White Paper"
+      },
+      {
+        "@id": "urn:ngm:class:national-competent-authority",
+        "label": "National Competent Authority"
+      },
+      {
+        "@id": "urn:ngm:class:capital-adequacy",
+        "label": "Capital Adequacy"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:eu-passporting", "label": "EU Passporting"},
-      {"@id": "urn:ngm:class:consumer-protection", "label": "Consumer Protection"},
-      {"@id": "urn:ngm:class:market-integrity", "label": "Market Integrity"}
+      {
+        "@id": "urn:ngm:class:eu-passporting",
+        "label": "EU Passporting"
+      },
+      {
+        "@id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "@id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:european-banking-authority", "label": "European Banking Authority"},
-      {"@id": "urn:ngm:class:european-securities-and-markets-authority", "label": "European Securities and Markets Authority"}
+      {
+        "@id": "urn:ngm:class:european-banking-authority",
+        "label": "European Banking Authority"
+      },
+      {
+        "@id": "urn:ngm:class:european-securities-and-markets-authority",
+        "label": "European Securities and Markets Authority"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:crypto-asset-regulation", "label": "Crypto-Asset Regulation"},
-      {"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"}
+      {
+        "@id": "urn:ngm:class:crypto-regulation",
+        "label": "Crypto-Asset Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:asset-referenced-token", "label": "Asset-Referenced Token"},
-      {"@id": "urn:ngm:class:e-money-token", "label": "E-Money Token"}
+      {
+        "@id": "urn:ngm:class:asset-referenced-token",
+        "label": "Asset-Referenced Token"
+      },
+      {
+        "@id": "urn:ngm:class:e-money-token",
+        "label": "E-Money Token"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:european-union", "label": "European Union"},
-      {"@id": "urn:ngm:class:eba", "label": "EBA"},
-      {"@id": "urn:ngm:class:esma", "label": "ESMA"}
+      {
+        "@id": "urn:ngm:class:european-union",
+        "label": "European Union"
+      },
+      {
+        "@id": "urn:ngm:class:eba",
+        "label": "EBA"
+      },
+      {
+        "@id": "urn:ngm:class:esma",
+        "label": "ESMA"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:mifid-ii", "label": "MiFID II"},
-      {"@id": "urn:ngm:class:sec-crypto-regulation", "label": "SEC Crypto Regulation"}
+      {
+        "@id": "urn:ngm:class:mifid-ii",
+        "label": "MiFID II"
+      },
+      {
+        "@id": "urn:ngm:class:crypto-regulation",
+        "label": "SEC Crypto Regulation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:dora", "label": "DORA"},
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
-      {"@id": "urn:ngm:class:fatf-travel-rule", "label": "FATF Travel Rule"},
-      {"@id": "urn:ngm:class:transfer-of-funds-regulation", "label": "Transfer of Funds Regulation"}
+      {
+        "@id": "urn:ngm:class:dora",
+        "label": "DORA"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-of-funds-regulation",
+        "label": "Transfer of Funds Regulation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:markets-in-crypto-assets-regulation", "label": "Markets in Crypto-Assets Regulation"},
-    {"@id": "urn:ngm:class:regulation-eu-2023-1114", "label": "Regulation (EU) 2023/1114"}
+    {
+      "@id": "urn:ngm:class:markets-in-crypto-assets-regulation",
+      "label": "Markets in Crypto-Assets Regulation"
+    },
+    {
+      "@id": "urn:ngm:class:regulation-eu-2023-1114",
+      "label": "Regulation (EU) 2023/1114"
+    }
   ],
   "quality": 0.74,
   "provenance": {

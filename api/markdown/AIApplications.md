@@ -67,14 +67,7 @@ public:: true
       "label": "AI Application"
     }
   ],
-  "relations": {
-    "implements": [
-      {
-        "@id": "urn:ngm:class:ai-capability",
-        "label": "AI Capability"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

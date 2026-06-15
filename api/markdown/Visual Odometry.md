@@ -38,54 +38,147 @@ alias:: VisualOdometry
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:visual-inertial-odometry", "label": "Visual-Inertial Odometry"},
-    {"@id": "urn:ngm:class:camera-odometry", "label": "Camera Odometry"}
+    {
+      "@id": "urn:ngm:class:visual-inertial-odometry",
+      "label": "Visual-Inertial Odometry"
+    },
+    {
+      "@id": "urn:ngm:class:camera-odometry",
+      "label": "Camera Odometry"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
-      {"@id": "urn:ngm:class:feature-matching", "label": "Feature Matching"},
-      {"@id": "urn:ngm:class:ransac", "label": "RANSAC"},
-      {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"},
-      {"@id": "urn:ngm:class:bundle-adjustment", "label": "Bundle Adjustment"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:feature-matching",
+        "label": "Feature Matching"
+      },
+      {
+        "@id": "urn:ngm:class:ransac",
+        "label": "RANSAC"
+      },
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "@id": "urn:ngm:class:bundle-adjustment",
+        "label": "Bundle Adjustment"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"},
-      {"@id": "urn:ngm:class:image-processing", "label": "Image Processing"},
-      {"@id": "urn:ngm:class:epipolar-geometry", "label": "Epipolar Geometry"}
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
+        "@id": "urn:ngm:class:epipolar-geometry",
+        "label": "Epipolar Geometry"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
-      {"@id": "urn:ngm:class:3d-reconstruction", "label": "3D Reconstruction"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:robot-localisation", "label": "Robot Localisation"}
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:robot-localisation",
+        "label": "Robot Localisation"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
-      {"@id": "urn:ngm:class:visual-slam", "label": "Visual SLAM"}
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:visual-slam",
+        "label": "Visual SLAM"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:inertial-measurement-unit", "label": "Inertial Measurement Unit"},
-      {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"}
+      {
+        "@id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "@id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:wheel-odometry", "label": "Wheel Odometry"},
-      {"@id": "urn:ngm:class:lidar-odometry", "label": "Lidar Odometry"},
-      {"@id": "urn:ngm:class:gps-localisation", "label": "GPS Localisation"}
+      {
+        "@id": "urn:ngm:class:wheel-odometry",
+        "label": "Wheel Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:odometry",
+        "label": "Lidar Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:localisation",
+        "label": "GPS Localisation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ego-motion-estimation", "label": "Ego-Motion Estimation"},
-      {"@id": "urn:ngm:class:loop-closure-detection", "label": "Loop Closure Detection"},
-      {"@id": "urn:ngm:class:place-recognition", "label": "Place Recognition"},
-      {"@id": "urn:ngm:class:point-cloud-processing", "label": "Point Cloud Processing"},
-      {"@id": "urn:ngm:class:factor-graph-optimisation", "label": "Factor Graph Optimisation"}
+      {
+        "@id": "urn:ngm:class:ego-motion-estimation",
+        "label": "Ego-Motion Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:loop-closure-detection",
+        "label": "Loop Closure Detection"
+      },
+      {
+        "@id": "urn:ngm:class:visual-place-recognition",
+        "label": "Place Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud-processing",
+        "label": "Point Cloud Processing"
+      },
+      {
+        "@id": "urn:ngm:class:factor-graph-optimisation",
+        "label": "Factor Graph Optimisation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
-      {"@id": "urn:ngm:class:autonomous-vehicles", "label": "Autonomous Vehicles"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
+      }
     ]
   },
   "quality": 0.74,

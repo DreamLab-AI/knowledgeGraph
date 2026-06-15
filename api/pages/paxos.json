@@ -45,11 +45,11 @@
         "label": "Consensus Protocol"
       },
       {
-        "id": "urn:ngm:class:fault-tolerant-system",
+        "id": "urn:ngm:class:fault-tolerance-system",
         "label": "Fault Tolerant System"
       },
       {
-        "id": "urn:ngm:class:replicated-state-machine",
+        "id": "urn:ngm:class:state-machine-replication",
         "label": "Replicated State Machine"
       }
     ],
@@ -117,10 +117,6 @@
       {
         "id": "urn:ngm:class:zookeeper",
         "label": "ZooKeeper"
-      },
-      {
-        "id": "urn:ngm:class:chubby-lock-service",
-        "label": "Chubby Lock Service"
       },
       {
         "id": "urn:ngm:class:cap-theorem",

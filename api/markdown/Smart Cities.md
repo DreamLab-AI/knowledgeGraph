@@ -23,54 +23,141 @@ public:: true
   "definition": "Smart Cities are urban environments that integrate digital technologies, data analytics, Internet of Things infrastructure, and connectivity to optimise the delivery of public services, improve quality of life, increase operational efficiency, and advance sustainability goals. They instrumentalise physical infrastructure — transport networks, utilities, buildings, and public spaces — with sensors and actuators connected through communication networks, and apply data-driven decision-making to city operations, planning, and citizen engagement.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-twin-of-society-dto-s", "label": "Digital Twin of Society (DToS)"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-twin-of-society-dto-s",
+      "label": "Digital Twin of Society (DToS)"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:edge-ai-for-smart-cities", "label": "Edge AI for Smart Cities"},
-      {"@id": "urn:ngm:class:5g-networks", "label": "5G Networks"},
-      {"@id": "urn:ngm:class:data-analytics", "label": "Data Analytics"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai-for-smart-cities",
+        "label": "Edge AI for Smart Cities"
+      },
+      {
+        "@id": "urn:ngm:class:5g-networks",
+        "label": "5G Networks"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:sustainable-development", "label": "Sustainable Development"},
-      {"@id": "urn:ngm:class:smart-grid", "label": "Smart Grid"},
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
-      {"@id": "urn:ngm:class:urban-mobility", "label": "Urban Mobility"},
-      {"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"},
-      {"@id": "urn:ngm:class:open-data", "label": "Open Data"}
+      {
+        "@id": "urn:ngm:class:sustainable-development",
+        "label": "Sustainable Development"
+      },
+      {
+        "@id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      },
+      {
+        "@id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:urban-infrastructure", "label": "Urban Infrastructure"}
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:urban-infrastructure",
+        "label": "Urban Infrastructure"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:smart-grid", "label": "Smart Grid"},
-      {"@id": "urn:ngm:class:intelligent-transportation-system", "label": "Intelligent Transportation System"}
+      {
+        "@id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
-      {"@id": "urn:ngm:class:governance", "label": "Governance"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:liverpool-smart-cities", "label": "Liverpool Smart Cities"},
-      {"@id": "urn:ngm:class:real-time-monitoring", "label": "Real-Time Monitoring"},
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
-      {"@id": "urn:ngm:class:urban-computing", "label": "Urban Computing"}
+      {
+        "@id": "urn:ngm:class:liverpool-smart-cities",
+        "label": "Liverpool Smart Cities"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:urban-computing",
+        "label": "Urban Computing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:intelligent-city", "label": "Intelligent City"},
-    {"@id": "urn:ngm:class:connected-city", "label": "Connected City"}
+    {
+      "@id": "urn:ngm:class:intelligent-city",
+      "label": "Intelligent City"
+    },
+    {
+      "@id": "urn:ngm:class:connected-city",
+      "label": "Connected City"
+    }
   ],
   "quality": 0.8,
   "provenance": {

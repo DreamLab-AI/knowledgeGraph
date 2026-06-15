@@ -21,10 +21,6 @@
       {
         "id": "urn:ngm:class:tokenisation",
         "label": "Tokenisation"
-      },
-      {
-        "id": "urn:ngm:class:corpus-statistics",
-        "label": "Corpus Statistics"
       }
     ],
     "enables": [
@@ -39,27 +35,14 @@
       {
         "id": "urn:ngm:class:hybrid-retrieval",
         "label": "Hybrid Retrieval"
-      },
-      {
-        "id": "urn:ngm:class:document-ranking",
-        "label": "Document Ranking"
       }
     ],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:probabilistic-ranking-principle",
-        "label": "Probabilistic Ranking Principle"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:dense-retrieval",
         "label": "Dense Retrieval"
-      },
-      {
-        "id": "urn:ngm:class:neural-ranking-model",
-        "label": "Neural Ranking Model"
       }
     ],
     "bridgesTo": [
@@ -80,14 +63,6 @@
       {
         "id": "urn:ngm:class:embeddings",
         "label": "Embeddings"
-      },
-      {
-        "id": "urn:ngm:class:term-frequency",
-        "label": "Term Frequency"
-      },
-      {
-        "id": "urn:ngm:class:inverse-document-frequency",
-        "label": "Inverse Document Frequency"
       }
     ],
     "supports": [
@@ -114,10 +89,6 @@
       {
         "id": "urn:ngm:class:semantic-search",
         "label": "Semantic Search"
-      },
-      {
-        "id": "urn:ngm:class:probabilistic-relevance-model",
-        "label": "Probabilistic Relevance Model"
       },
       {
         "id": "urn:ngm:class:inverted-index",

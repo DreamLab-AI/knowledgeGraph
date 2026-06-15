@@ -18,12 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:horizontal-scaling",
+        "id": "urn:ngm:class:horizontal-scalability",
         "label": "Horizontal Scaling"
-      },
-      {
-        "id": "urn:ngm:class:vertical-scaling",
-        "label": "Vertical Scaling"
       },
       {
         "id": "urn:ngm:class:data-partitioning",
@@ -56,14 +52,6 @@
       {
         "id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
-      },
-      {
-        "id": "urn:ngm:class:elastic-computing",
-        "label": "Elastic Computing"
-      },
-      {
-        "id": "urn:ngm:class:global-deployments",
-        "label": "Global Deployments"
       }
     ],
     "dependsOn": [
@@ -81,20 +69,12 @@
       {
         "id": "urn:ngm:class:monolithic-architecture",
         "label": "Monolithic Architecture"
-      },
-      {
-        "id": "urn:ngm:class:vertical-integration",
-        "label": "Vertical Integration"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:blockchain-scalability",
         "label": "Blockchain Scalability"
-      },
-      {
-        "id": "urn:ngm:class:ai-model-scaling",
-        "label": "AI Model Scaling"
       }
     ],
     "uses": [
@@ -113,10 +93,6 @@
       {
         "id": "urn:ngm:class:caching",
         "label": "Caching"
-      },
-      {
-        "id": "urn:ngm:class:message-queuing",
-        "label": "Message Queuing"
       }
     ],
     "supports": [
@@ -155,10 +131,6 @@
       {
         "id": "urn:ngm:class:distributed-architecture",
         "label": "Distributed Architecture"
-      },
-      {
-        "id": "urn:ngm:class:system-properties",
-        "label": "System Properties"
       }
     ]
   },

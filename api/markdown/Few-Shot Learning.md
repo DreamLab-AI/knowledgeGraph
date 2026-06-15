@@ -75,10 +75,6 @@ public:: true
       {
         "@id": "urn:ngm:class:inductive-bias",
         "label": "Inductive Bias"
-      },
-      {
-        "@id": "urn:ngm:class:support-set",
-        "label": "Support Set"
       }
     ],
     "enables": [
@@ -87,26 +83,14 @@ public:: true
         "label": "In-Context Learning"
       },
       {
-        "@id": "urn:ngm:class:low-resource-learning",
-        "label": "Low-Resource Learning"
-      },
-      {
-        "@id": "urn:ngm:class:rapid-task-adaptation",
+        "@id": "urn:ngm:class:task-adaptation",
         "label": "Rapid Task Adaptation"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:metric-learning",
-        "label": "Metric Learning"
-      },
-      {
         "@id": "urn:ngm:class:prototypical-networks",
         "label": "Prototypical Networks"
-      },
-      {
-        "@id": "urn:ngm:class:siamese-networks",
-        "label": "Siamese Networks"
       },
       {
         "@id": "urn:ngm:class:model-agnostic-meta-learning",
@@ -121,16 +105,6 @@ public:: true
       {
         "@id": "urn:ngm:class:embedding-space",
         "label": "Embedding Space"
-      }
-    ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:n-way-k-shot-classification",
-        "label": "N-Way K-Shot Classification"
-      },
-      {
-        "@id": "urn:ngm:class:episodic-training",
-        "label": "Episodic Training"
       }
     ],
     "contrastsWith": [
@@ -149,16 +123,12 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:class:foundation-model",
         "label": "Foundation Models"
       },
       {
         "@id": "urn:ngm:class:continual-learning",
         "label": "Continual Learning"
-      },
-      {
-        "@id": "urn:ngm:class:one-shot-learning",
-        "label": "One-Shot Learning"
       }
     ],
     "bridgesTo": [

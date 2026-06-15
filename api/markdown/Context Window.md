@@ -63,49 +63,127 @@ public:: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:token", "label": "Token"},
-      {"@id": "urn:ngm:class:positional-encoding", "label": "Positional Encoding"}
+      {
+        "@id": "urn:ngm:class:token",
+        "label": "Token"
+      },
+      {
+        "@id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:neural-network-text-tokenisation", "label": "Neural Network Text Tokenisation"},
-      {"@id": "urn:ngm:class:key-value-cache", "label": "Key-Value Cache"}
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-text-tokenisation",
+        "label": "Neural Network Text Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:key-value-cache",
+        "label": "Key-Value Cache"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:in-context-learning", "label": "In-Context Learning"},
-      {"@id": "urn:ngm:class:few-shot-prompting", "label": "Few-Shot Prompting"},
-      {"@id": "urn:ngm:class:long-document-summarisation", "label": "Long Document Summarisation"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      },
+      {
+        "@id": "urn:ngm:class:few-shot-prompting",
+        "label": "Few-Shot Prompting"
+      },
+      {
+        "@id": "urn:ngm:class:long-document-summarisation",
+        "label": "Long Document Summarisation"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:gpu-memory", "label": "GPU Memory"},
-      {"@id": "urn:ngm:class:floating-point-precision", "label": "Floating-Point Precision"}
+      {
+        "@id": "urn:ngm:class:gpu-memory",
+        "label": "GPU Memory"
+      },
+      {
+        "@id": "urn:ngm:class:floating-point-arithmetic",
+        "label": "Floating-Point Precision"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:external-memory", "label": "External Memory"},
-      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"}
+      {
+        "@id": "urn:ngm:class:external-memory",
+        "label": "External Memory"
+      },
+      {
+        "@id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-hyperparameter", "label": "Model Hyperparameter"},
-      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:context-engineering", "label": "Context Engineering"},
-      {"@id": "urn:ngm:class:lost-in-the-middle-effect", "label": "Lost-in-the-Middle Effect"},
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"}
+      {
+        "@id": "urn:ngm:class:hyperparameter",
+        "label": "Model Hyperparameter"
+      },
+      {
+        "@id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:context-engineering",
+        "label": "Context Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:lost-in-the-middle-effect",
+        "label": "Lost-in-the-Middle Effect"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:autonomous-robot", "label": "Autonomous Robot"},
-      {"@id": "urn:ngm:class:collaborative-virtual-environment", "label": "Collaborative Virtual Environment"}
+      {
+        "@id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-environment",
+        "label": "Collaborative Virtual Environment"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:maximum-sequence-length", "label": "Maximum Sequence Length"},
-    {"@id": "urn:ngm:class:context-length", "label": "Context Length"}
+    {
+      "@id": "urn:ngm:class:maximum-sequence-length",
+      "label": "Maximum Sequence Length"
+    },
+    {
+      "@id": "urn:ngm:class:context-length",
+      "label": "Context Length"
+    }
   ],
   "quality": 0.72,
   "provenance": {

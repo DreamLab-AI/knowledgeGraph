@@ -107,10 +107,6 @@ public:: true
         "label": "Ordinary Differential Equation"
       },
       {
-        "@id": "urn:ngm:class:partial-differential-equation",
-        "label": "Partial Differential Equation"
-      },
-      {
         "@id": "urn:ngm:class:stochastic-differential-equation",
         "label": "Stochastic Differential Equation"
       }
@@ -119,10 +115,6 @@ public:: true
       {
         "@id": "urn:ngm:class:finite-element-method",
         "label": "Finite Element Method"
-      },
-      {
-        "@id": "urn:ngm:class:runge-kutta-method",
-        "label": "Runge-Kutta Method"
       },
       {
         "@id": "urn:ngm:class:laplace-transform",
@@ -137,16 +129,6 @@ public:: true
       {
         "@id": "urn:ngm:class:functional-analysis",
         "label": "Functional Analysis"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:algebraic-equations",
-        "label": "Algebraic Equations"
-      },
-      {
-        "@id": "urn:ngm:class:difference-equations",
-        "label": "Difference Equations"
       }
     ],
     "bridgesTo": [

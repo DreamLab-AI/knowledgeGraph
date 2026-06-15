@@ -38,54 +38,137 @@ public:: true
   ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"},
-      {"@id": "urn:ngm:class:compound-governor-bravo", "label": "Compound Governor Bravo"}
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:compound-governor-bravo",
+        "label": "Compound Governor Bravo"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:erc-20", "label": "ERC-20"},
-      {"@id": "urn:ngm:class:erc-721", "label": "ERC-721"},
-      {"@id": "urn:ngm:class:timelock-controller", "label": "Timelock Controller"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "@id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "@id": "urn:ngm:class:timelock-controller",
+        "label": "Timelock Controller"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:dao-governance", "label": "DAO Governance"},
-      {"@id": "urn:ngm:class:voting-mechanism", "label": "Voting Mechanism"},
-      {"@id": "urn:ngm:class:treasury-management", "label": "Treasury Management"},
-      {"@id": "urn:ngm:class:protocol-upgrade", "label": "Protocol Upgrade"}
+      {
+        "@id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "@id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:solidity", "label": "Solidity"},
-      {"@id": "urn:ngm:class:ethereum-virtual-machine", "label": "Ethereum Virtual Machine"},
-      {"@id": "urn:ngm:class:vote-delegation", "label": "Vote Delegation"}
+      {
+        "@id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:vote-delegation",
+        "label": "Vote Delegation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:openzeppelin-contracts", "label": "OpenZeppelin Contracts"},
-      {"@id": "urn:ngm:class:eip-5805", "label": "EIP-5805"},
-      {"@id": "urn:ngm:class:eip-712", "label": "EIP-712"}
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "OpenZeppelin Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:eip-5805",
+        "label": "EIP-5805"
+      },
+      {
+        "@id": "urn:ngm:class:eip-712",
+        "label": "EIP-712"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"},
-      {"@id": "urn:ngm:class:defi-protocol", "label": "DeFi Protocol"},
-      {"@id": "urn:ngm:class:upgradeable-proxy", "label": "Upgradeable Proxy"}
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:multisig-wallet", "label": "Multisig Wallet"},
-      {"@id": "urn:ngm:class:optimistic-governance", "label": "Optimistic Governance"}
+      {
+        "@id": "urn:ngm:class:multisig-wallet",
+        "label": "Multisig Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:optimistic-governance",
+        "label": "Optimistic Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:quorum-fraction", "label": "Quorum Fraction"},
-      {"@id": "urn:ngm:class:snapshot-voting", "label": "Snapshot Voting"},
-      {"@id": "urn:ngm:class:token-weighted-voting", "label": "Token-Weighted Voting"}
+      {
+        "@id": "urn:ngm:class:quorum",
+        "label": "Quorum Fraction"
+      },
+      {
+        "@id": "urn:ngm:class:snapshot-voting",
+        "label": "Snapshot Voting"
+      },
+      {
+        "@id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:collective-intelligence", "label": "Collective Intelligence"},
-      {"@id": "urn:ngm:class:liquid-democracy", "label": "Liquid Democracy"}
+      {
+        "@id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:liquid-democracy",
+        "label": "Liquid Democracy"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:oz-governor", "label": "OZ Governor"},
-    {"@id": "urn:ngm:class:governor-contracts", "label": "Governor Contracts"}
+    {
+      "@id": "urn:ngm:class:oz-governor",
+      "label": "OZ Governor"
+    },
+    {
+      "@id": "urn:ngm:class:governor-contracts",
+      "label": "Governor Contracts"
+    }
   ],
   "quality": 0.74,
   "provenance": {

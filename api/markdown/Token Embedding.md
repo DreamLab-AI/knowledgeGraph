@@ -85,10 +85,6 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:embedding-matrix",
-        "label": "Embedding Matrix"
-      },
-      {
         "@id": "urn:ngm:class:vocabulary",
         "label": "Vocabulary"
       }
@@ -125,12 +121,6 @@ public:: true
       {
         "@id": "urn:ngm:class:gradient-descent",
         "label": "Gradient Descent"
-      }
-    ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:distributed-representation",
-        "label": "Distributed Representation"
       }
     ],
     "uses": [
@@ -185,10 +175,6 @@ public:: true
       {
         "@id": "urn:ngm:class:contextual-embedding",
         "label": "Contextual Embedding"
-      },
-      {
-        "@id": "urn:ngm:class:weight-tying",
-        "label": "Weight Tying"
       },
       {
         "@id": "urn:ngm:class:hidden-state",

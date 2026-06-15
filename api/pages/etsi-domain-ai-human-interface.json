@@ -18,16 +18,7 @@
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [
-      {
-        "id": "urn:ngm:class:conversational-ai-classification",
-        "label": "Conversational AI Classification"
-      },
-      {
-        "id": "urn:ngm:class:intelligent-ux-categorization",
-        "label": "Intelligent UX Categorization"
-      }
-    ],
+    "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],

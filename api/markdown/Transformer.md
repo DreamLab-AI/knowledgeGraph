@@ -210,7 +210,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:iso-iec-22989",
+        "@id": "urn:ngm:class:iso-iec-22989-2022",
         "label": "ISO/IEC 22989"
       },
       {
@@ -222,10 +222,6 @@ public:: true
       {
         "@id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
-      },
-      {
-        "@id": "urn:ngm:class:robotics-policy",
-        "label": "Robotics Policy"
       }
     ],
     "relatedTo": [

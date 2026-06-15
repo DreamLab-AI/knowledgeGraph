@@ -24,10 +24,6 @@
       {
         "id": "urn:ngm:class:collision-avoidance",
         "label": "Collision Avoidance"
-      },
-      {
-        "id": "urn:ngm:class:kinodynamic-planning",
-        "label": "Kinodynamic Planning"
       }
     ],
     "requires": [
@@ -42,10 +38,6 @@
       {
         "id": "urn:ngm:class:configuration-space",
         "label": "Configuration Space"
-      },
-      {
-        "id": "urn:ngm:class:obstacle-representation",
-        "label": "Obstacle Representation"
       }
     ],
     "enables": [

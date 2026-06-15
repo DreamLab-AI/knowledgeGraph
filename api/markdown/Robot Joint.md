@@ -114,12 +114,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:degrees-of-freedom",
+        "@id": "urn:ngm:class:rb-0023-degrees-of-freedom",
         "label": "Degrees of Freedom"
-      },
-      {
-        "@id": "urn:ngm:class:end-effector-positioning",
-        "label": "End-Effector Positioning"
       },
       {
         "@id": "urn:ngm:class:human-robot-collaboration",
@@ -142,10 +138,6 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:mechanical-design",
-        "label": "Mechanical Design"
-      },
-      {
         "@id": "urn:ngm:class:bearing",
         "label": "Bearing"
       }
@@ -158,16 +150,6 @@ public:: true
       {
         "@id": "urn:ngm:class:iso-8373",
         "label": "ISO 8373"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:rigid-link",
-        "label": "Rigid Link"
-      },
-      {
-        "@id": "urn:ngm:class:soft-robot-continuum",
-        "label": "Soft Robot Continuum"
       }
     ],
     "bridgesTo": [

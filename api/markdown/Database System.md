@@ -98,11 +98,11 @@ public:: true
         "label": "Query Processing"
       },
       {
-        "@id": "urn:ngm:class:transaction-management",
+        "@id": "urn:ngm:class:transaction-manager",
         "label": "Transaction Management"
       },
       {
-        "@id": "urn:ngm:class:concurrent-access-control",
+        "@id": "urn:ngm:class:access-control",
         "label": "Concurrent Access Control"
       },
       {
@@ -124,10 +124,6 @@ public:: true
       {
         "@id": "urn:ngm:class:acid-properties",
         "label": "ACID Properties"
-      },
-      {
-        "@id": "urn:ngm:class:relational-model",
-        "label": "Relational Model"
       },
       {
         "@id": "urn:ngm:class:cap-theorem",
@@ -164,10 +160,6 @@ public:: true
       {
         "@id": "urn:ngm:class:file-system",
         "label": "File System"
-      },
-      {
-        "@id": "urn:ngm:class:in-memory-data-store",
-        "label": "In-Memory Data Store"
       }
     ],
     "bridgesTo": [
@@ -176,7 +168,7 @@ public:: true
         "label": "Blockchain"
       },
       {
-        "@id": "urn:ngm:class:machine-learning-pipeline",
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
       }
     ],
@@ -186,12 +178,8 @@ public:: true
         "label": "Data Warehouse"
       },
       {
-        "@id": "urn:ngm:class:distributed-database",
+        "@id": "urn:ngm:class:distributed-databases",
         "label": "Distributed Database"
-      },
-      {
-        "@id": "urn:ngm:class:cloud-database",
-        "label": "Cloud Database"
       }
     ]
   },

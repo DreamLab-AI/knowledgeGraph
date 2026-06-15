@@ -158,10 +158,6 @@ public:: true
       {
         "@id": "urn:ngm:class:provenance-tracking",
         "label": "Provenance Tracking"
-      },
-      {
-        "@id": "urn:ngm:class:tokenized-intellectual-property",
-        "label": "Tokenized Intellectual Property"
       }
     ],
     "partOf": [

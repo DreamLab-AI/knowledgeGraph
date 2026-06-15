@@ -18,18 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:sequence-node",
-        "label": "Sequence Node"
-      },
-      {
-        "id": "urn:ngm:class:selector-node",
-        "label": "Selector Node"
-      },
-      {
-        "id": "urn:ngm:class:decorator-node",
-        "label": "Decorator Node"
-      },
-      {
         "id": "urn:ngm:class:blackboard",
         "label": "Blackboard"
       }
@@ -48,10 +36,6 @@
       {
         "id": "urn:ngm:class:npc-interaction",
         "label": "NPC Interaction"
-      },
-      {
-        "id": "urn:ngm:class:robot-mission-execution",
-        "label": "Robot Mission Execution"
       }
     ],
     "dependsOn": [],

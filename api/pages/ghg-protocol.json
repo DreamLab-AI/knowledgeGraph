@@ -34,10 +34,6 @@
       {
         "id": "urn:ngm:class:greenhouse-gas-inventory",
         "label": "Greenhouse Gas Inventory"
-      },
-      {
-        "id": "urn:ngm:class:emissions-factor",
-        "label": "Emissions Factor"
       }
     ],
     "enables": [
@@ -52,10 +48,6 @@
       {
         "id": "urn:ngm:class:carbon-offsetting",
         "label": "Carbon Offsetting"
-      },
-      {
-        "id": "urn:ngm:class:carbon-neutral-certification",
-        "label": "Carbon Neutral Certification"
       }
     ],
     "dependsOn": [],
@@ -76,10 +68,6 @@
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:blockchain-carbon-credits",
-        "label": "Blockchain Carbon Credits"
-      },
       {
         "id": "urn:ngm:class:supply-chain-transparency",
         "label": "Supply Chain Transparency"
@@ -104,10 +92,6 @@
       {
         "id": "urn:ngm:class:iso-14064",
         "label": "ISO 14064"
-      },
-      {
-        "id": "urn:ngm:class:world-resources-institute",
-        "label": "World Resources Institute"
       }
     ],
     "partOf": [
@@ -120,14 +104,6 @@
       {
         "id": "urn:ngm:class:tcfd",
         "label": "TCFD"
-      },
-      {
-        "id": "urn:ngm:class:eu-csrd",
-        "label": "EU CSRD"
-      },
-      {
-        "id": "urn:ngm:class:cdp-reporting",
-        "label": "CDP Reporting"
       },
       {
         "id": "urn:ngm:class:net-zero-transition",

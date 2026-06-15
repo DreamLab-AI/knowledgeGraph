@@ -23,51 +23,111 @@ public:: true
   "definition": "Balancer is a decentralised automated market maker (AMM) protocol on Ethereum and compatible EVM chains that generalises the constant-product AMM model to support weighted multi-asset pools, where pool weights can be set arbitrarily (e.g., 80/20 or 60/20/20 distributions) rather than the 50/50 split of Uniswap. It functions simultaneously as a self-rebalancing portfolio manager, a liquidity provider, and a price sensor.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:automated-market-maker",
+      "label": "Automated Market Maker"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"},
-      {"@id": "urn:ngm:class:evm", "label": "EVM"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:weighted-pool", "label": "Weighted Pool"},
-      {"@id": "urn:ngm:class:stableswap-invariant", "label": "StableSwap Invariant"},
-      {"@id": "urn:ngm:class:vote-escrowed-token", "label": "Vote-Escrowed Token"}
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:evm",
+        "label": "EVM"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:stable-swap-invariant",
+        "label": "StableSwap Invariant"
+      },
+      {
+        "@id": "urn:ngm:class:vote-escrow-model",
+        "label": "Vote-Escrowed Token"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"},
-      {"@id": "urn:ngm:class:asset-liquidity", "label": "Asset Liquidity"},
-      {"@id": "urn:ngm:class:on-chain-portfolio-management", "label": "On-Chain Portfolio Management"},
-      {"@id": "urn:ngm:class:yield-bearing-liquidity", "label": "Yield-Bearing Liquidity"},
-      {"@id": "urn:ngm:class:decentralized-exchange", "label": "Decentralized Exchange"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:vault", "label": "Vault"},
-      {"@id": "urn:ngm:class:boosted-pool", "label": "Boosted Pool"},
-      {"@id": "urn:ngm:class:managed-pool", "label": "Managed Pool"}
+      {
+        "@id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "@id": "urn:ngm:class:asset-liquidity",
+        "label": "Asset Liquidity"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:arbitrage", "label": "Arbitrage"},
-      {"@id": "urn:ngm:class:liquidity-provider", "label": "Liquidity Provider"}
+      {
+        "@id": "urn:ngm:class:arbitrage",
+        "label": "Arbitrage"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-provider",
+        "label": "Liquidity Provider"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:lp-token", "label": "LP Token"},
-      {"@id": "urn:ngm:class:concentrated-liquidity", "label": "Concentrated Liquidity"},
-      {"@id": "urn:ngm:class:curve-finance", "label": "Curve Finance"},
-      {"@id": "urn:ngm:class:uniswap", "label": "Uniswap"},
-      {"@id": "urn:ngm:class:liquid-staking-token", "label": "Liquid Staking Token"}
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:lp-token",
+        "label": "LP Token"
+      },
+      {
+        "@id": "urn:ngm:class:concentrated-liquidity",
+        "label": "Concentrated Liquidity"
+      },
+      {
+        "@id": "urn:ngm:class:curve-finance",
+        "label": "Curve Finance"
+      },
+      {
+        "@id": "urn:ngm:class:uniswap",
+        "label": "Uniswap"
+      },
+      {
+        "@id": "urn:ngm:class:liquid-staking-token",
+        "label": "Liquid Staking Token"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:constant-product-amm", "label": "Constant-Product AMM"},
-      {"@id": "urn:ngm:class:order-book-exchange", "label": "Order Book Exchange"}
+      {
+        "@id": "urn:ngm:class:constant-product-amm",
+        "label": "Constant-Product AMM"
+      },
+      {
+        "@id": "urn:ngm:class:order-book-exchange",
+        "label": "Order Book Exchange"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:finance", "label": "Finance"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:finance",
+        "label": "Finance"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:balancer-protocol", "label": "Balancer Protocol"}
+    {
+      "@id": "urn:ngm:class:balancer-protocol",
+      "label": "Balancer Protocol"
+    }
   ],
   "quality": 0.8,
   "provenance": {

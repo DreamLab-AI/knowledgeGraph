@@ -79,7 +79,7 @@ alias:: MicroservicesArchitecture
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:cloud-native-computing",
+        "@id": "urn:ngm:class:cloud-native",
         "label": "Cloud-Native Computing"
       }
     ],
@@ -89,26 +89,12 @@ alias:: MicroservicesArchitecture
         "label": "Container Orchestration"
       },
       {
-        "@id": "urn:ngm:class:continuous-integration-and-delivery",
+        "@id": "urn:ngm:class:continuous-integration",
         "label": "Continuous Integration and Delivery"
       },
       {
         "@id": "urn:ngm:class:distributed-tracing",
         "label": "Distributed Tracing"
-      }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:scalable-applications",
-        "label": "Scalable Applications"
-      },
-      {
-        "@id": "urn:ngm:class:fault-isolation",
-        "label": "Fault Isolation"
-      },
-      {
-        "@id": "urn:ngm:class:independent-deployability",
-        "label": "Independent Deployability"
       }
     ],
     "dependsOn": [
@@ -117,7 +103,7 @@ alias:: MicroservicesArchitecture
         "label": "Kubernetes"
       },
       {
-        "@id": "urn:ngm:class:docker",
+        "@id": "urn:ngm:class:docker-containerisation-platform",
         "label": "Docker"
       }
     ],
@@ -167,7 +153,7 @@ alias:: MicroservicesArchitecture
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:serverless-computing",
+        "@id": "urn:ngm:class:serverless-architecture",
         "label": "Serverless Computing"
       },
       {
@@ -196,7 +182,7 @@ alias:: MicroservicesArchitecture
       "label": "Micro-Services Pattern"
     }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

@@ -56,10 +56,6 @@
       {
         "id": "urn:ngm:class:unmanned-aerial-vehicle",
         "label": "Unmanned Aerial Vehicle"
-      },
-      {
-        "id": "urn:ngm:class:delivery-robot",
-        "label": "Delivery Robot"
       }
     ],
     "dependsOn": [

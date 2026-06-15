@@ -20,10 +20,6 @@
       {
         "id": "urn:ngm:class:world-id",
         "label": "World ID"
-      },
-      {
-        "id": "urn:ngm:class:worldcoin-token",
-        "label": "Worldcoin Token"
       }
     ],
     "requires": [

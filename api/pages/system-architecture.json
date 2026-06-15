@@ -26,10 +26,6 @@
         "label": "Model Registry"
       },
       {
-        "id": "urn:ngm:class:inference-server",
-        "label": "Inference Server"
-      },
-      {
         "id": "urn:ngm:class:monitoring-system",
         "label": "Monitoring System"
       },

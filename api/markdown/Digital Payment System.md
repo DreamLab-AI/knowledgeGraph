@@ -130,10 +130,6 @@ public:: true
       {
         "@id": "urn:ngm:class:micropayments",
         "label": "Micropayments"
-      },
-      {
-        "@id": "urn:ngm:class:peer-to-peer-transfer",
-        "label": "Peer-to-Peer Transfer"
       }
     ],
     "uses": [
@@ -162,12 +158,8 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:traditional-banking-system",
+        "@id": "urn:ngm:class:traditional-banking",
         "label": "Traditional Banking System"
-      },
-      {
-        "@id": "urn:ngm:class:cash-payment",
-        "label": "Cash Payment"
       }
     ],
     "bridgesTo": [

@@ -143,7 +143,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:double-spending-problem",
+        "@id": "urn:ngm:class:double-spending",
         "label": "Double-Spending Problem"
       },
       {
@@ -151,7 +151,7 @@ public:: true
         "label": "Mining Incentive"
       },
       {
-        "@id": "urn:ngm:class:51-percent-attack",
+        "@id": "urn:ngm:class:51-attack",
         "label": "51% Attack"
       }
     ],

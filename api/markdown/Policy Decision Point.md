@@ -23,56 +23,133 @@ public:: true
   "definition": "A Policy Decision Point (PDP) is the logical component in an attribute-based or policy-based access control architecture that evaluates access requests against a set of authorisation policies and returns a permit, deny, or indeterminate decision. The PDP receives a request context—including subject attributes, resource attributes, action, and environment conditions—from a Policy Enforcement Point (PEP), retrieves applicable policies from a Policy Information Point (PIP) or Policy Administration Point (PAP), and applies the XACML combining algorithms or equivalent logic to reach a binding decision. PDPs are the computational core of fine-grained, dynamic authorisation systems used in zero-trust security architectures, identity federation, API gateways, and cloud IAM platforms.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:access-control-system", "label": "Access Control System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:access-control-system",
+      "label": "Access Control System"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:policy-enforcement-point", "label": "Policy Enforcement Point"},
-      {"@id": "urn:ngm:class:policy-enforcement", "label": "Policy Enforcement"},
-      {"@id": "urn:ngm:class:policy-engine", "label": "Policy Engine"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:policy-administration-point", "label": "Policy Administration Point"},
-      {"@id": "urn:ngm:class:policy-information-point", "label": "Policy Information Point"}
+      {
+        "@id": "urn:ngm:class:policy-enforcement-point",
+        "label": "Policy Enforcement Point"
+      },
+      {
+        "@id": "urn:ngm:class:policy-enforcement",
+        "label": "Policy Enforcement"
+      },
+      {
+        "@id": "urn:ngm:class:policy-engine",
+        "label": "Policy Engine"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:policy-administration-point",
+        "label": "Policy Administration Point"
+      },
+      {
+        "@id": "urn:ngm:class:policy-information-point",
+        "label": "Policy Information Point"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
-      {"@id": "urn:ngm:class:policy-framework", "label": "Policy Framework"},
-      {"@id": "urn:ngm:class:fine-grained-authorization", "label": "Fine-Grained Authorization"},
-      {"@id": "urn:ngm:class:continuous-authorization", "label": "Continuous Authorization"}
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:policy-framework",
+        "label": "Policy Framework"
+      },
+      {
+        "@id": "urn:ngm:class:authorization",
+        "label": "Fine-Grained Authorization"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"},
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-verification",
+        "label": "Cryptographic Verification"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:authorization-policy", "label": "Authorization Policy"},
-      {"@id": "urn:ngm:class:attribute-based-access-control", "label": "Attribute-Based Access Control"},
-      {"@id": "urn:ngm:class:xacml", "label": "XACML"}
+      {
+        "@id": "urn:ngm:class:attribute-based-access-control",
+        "label": "Attribute-Based Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:xacml",
+        "label": "XACML"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:open-policy-agent", "label": "Open Policy Agent"},
-      {"@id": "urn:ngm:class:json-web-token", "label": "JSON Web Token"}
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:open-policy-agent",
+        "label": "Open Policy Agent"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-web-token",
+        "label": "JSON Web Token"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
-      {"@id": "urn:ngm:class:identity-federation", "label": "Identity Federation"},
-      {"@id": "urn:ngm:class:cloud-iam", "label": "Cloud IAM"}
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:identity-federation",
+        "label": "Identity Federation"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:oasis", "label": "OASIS"}
+      {
+        "@id": "urn:ngm:class:oasis",
+        "label": "OASIS"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:network-perimeter-security", "label": "Network Perimeter Security"}
+      {
+        "@id": "urn:ngm:class:network-perimeter-security",
+        "label": "Network Perimeter Security"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:service-mesh", "label": "Service Mesh"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:pdp", "label": "PDP"},
-    {"@id": "urn:ngm:class:authorization-decision-engine", "label": "Authorization Decision Engine"}
+    {
+      "@id": "urn:ngm:class:pdp",
+      "label": "PDP"
+    },
+    {
+      "@id": "urn:ngm:class:authorization-decision-engine",
+      "label": "Authorization Decision Engine"
+    }
   ],
   "quality": 0.8,
   "provenance": {

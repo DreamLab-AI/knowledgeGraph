@@ -36,13 +36,13 @@
         "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:ngm:class:cryptographic-hashing",
+        "id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Cryptographic Hashing"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:product-traceability",
+        "id": "urn:ngm:class:traceability",
         "label": "Product Traceability"
       },
       {

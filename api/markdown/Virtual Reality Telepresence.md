@@ -113,7 +113,7 @@ alias:: TELE-020-virtual-reality-telepresence
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:remote-design-review",
+        "@id": "urn:ngm:class:remote-collaboration",
         "label": "RemoteDesignReview"
       }
     ]

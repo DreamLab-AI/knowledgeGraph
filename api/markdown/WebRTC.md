@@ -231,68 +231,24 @@ alias:: TELE-150-webrtc
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:get-user-media-api",
-        "label": "getUserMedia API"
-      },
-      {
         "@id": "urn:ngm:class:ice-protocol",
         "label": "ICE Protocol"
       },
       {
-        "@id": "urn:ngm:class:rtcdata-channel",
-        "label": "RTCDataChannel"
-      },
-      {
-        "@id": "urn:ngm:class:rtcpeer-connection",
-        "label": "RTCPeerConnection"
-      },
-      {
-        "@id": "urn:ngm:class:sdp-offer-answer",
-        "label": "SDP Offer-Answer"
-      },
-      {
-        "@id": "urn:ngm:class:stun-server",
+        "@id": "urn:ngm:class:stun-and-turn",
         "label": "STUN Server"
-      },
-      {
-        "@id": "urn:ngm:class:turn-server",
-        "label": "TURN Server"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:dtls-srtp-encryption",
-        "label": "DTLS-SRTP Encryption"
-      },
-      {
         "@id": "urn:ngm:class:ice-protocol",
         "label": "ICE Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:sdp-session-description",
-        "label": "SDP Session Description"
-      },
-      {
-        "@id": "urn:ngm:class:web-socket-signalling",
-        "label": "WebSocket Signalling"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:collaborative-systems-modality-xr",
+        "@id": "urn:ngm:class:collaborative-systems-modality",
         "label": "Collaborative XR"
-      },
-      {
-        "@id": "urn:ngm:class:peer-to-peer-video-conferencing",
-        "label": "Peer-to-Peer Video Conferencing"
-      },
-      {
-        "@id": "urn:ngm:class:real-time-data-transfer",
-        "label": "Real-Time Data Transfer"
-      },
-      {
-        "@id": "urn:ngm:class:zero-install-communication",
-        "label": "Zero-Install Communication"
       },
       {
         "@id": "urn:ngm:class:screen-sharing",
@@ -301,25 +257,17 @@ alias:: TELE-150-webrtc
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:dtls-srtp-rfc-5764",
-        "label": "DTLS-SRTP RFC 5764"
-      },
-      {
-        "@id": "urn:ngm:class:ietf-rtcweb-standards",
-        "label": "IETF RTCWEB Standards"
-      },
-      {
-        "@id": "urn:ngm:class:w3-c-web-rtc-1-0-specification",
+        "@id": "urn:ngm:class:web-rtc-w-3-c-specification",
         "label": "W3C WebRTC 1.0 Specification"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:telecollaboration-stack",
+        "@id": "urn:ngm:class:telecollaboration",
         "label": "Telecollaboration Stack"
       },
       {
-        "@id": "urn:ngm:class:video-conferencing-platform",
+        "@id": "urn:ngm:class:video-conferencing",
         "label": "Video Conferencing Platform"
       }
     ],

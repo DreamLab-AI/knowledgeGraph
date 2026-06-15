@@ -86,7 +86,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:mathematical-optimisation",
+        "@id": "urn:ngm:class:optimisation",
         "label": "Mathematical Optimisation"
       }
     ],

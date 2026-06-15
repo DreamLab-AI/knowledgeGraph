@@ -75,7 +75,7 @@ alias:: MachineLearningModel
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:machine-learning-pipeline",
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
       }
     ],
@@ -157,7 +157,7 @@ alias:: MachineLearningModel
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:rule-based-system",
+        "@id": "urn:ngm:class:rule-based-systems",
         "label": "Rule-Based System"
       },
       {

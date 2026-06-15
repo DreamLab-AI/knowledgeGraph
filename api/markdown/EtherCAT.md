@@ -38,54 +38,91 @@ public:: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"},
-      {"@id": "urn:ngm:class:real-time-communication", "label": "Real-Time Communication"},
-      {"@id": "urn:ngm:class:distributed-clock-synchronisation", "label": "Distributed Clock Synchronisation"},
-      {"@id": "urn:ngm:class:multi-axis-control", "label": "Multi-Axis Control"}
+      {
+        "@id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"},
-      {"@id": "urn:ngm:class:servo-motor", "label": "Servo Motor"},
-      {"@id": "urn:ngm:class:programmable-logic-controller", "label": "Programmable Logic Controller"},
-      {"@id": "urn:ngm:class:cnc-machining", "label": "CNC Machining"}
+      {
+        "@id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "@id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      },
+      {
+        "@id": "urn:ngm:class:programmable-logic-controller",
+        "label": "Programmable Logic Controller"
+      },
+      {
+        "@id": "urn:ngm:class:cnc-machining",
+        "label": "CNC Machining"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ethernet", "label": "Ethernet"},
-      {"@id": "urn:ngm:class:ethercat-master", "label": "EtherCAT Master"},
-      {"@id": "urn:ngm:class:ethercat-slave-controller", "label": "EtherCAT Slave Controller"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:distributed-clocks", "label": "Distributed Clocks"},
-      {"@id": "urn:ngm:class:safety-over-ethercat", "label": "Safety over EtherCAT"},
-      {"@id": "urn:ngm:class:ethercat-automation-protocol", "label": "EtherCAT Automation Protocol"}
+      {
+        "@id": "urn:ngm:class:ethernet",
+        "label": "Ethernet"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:iec-61158", "label": "IEC 61158"},
-      {"@id": "urn:ngm:class:iec-61784", "label": "IEC 61784"}
+      {
+        "@id": "urn:ngm:class:iec-61158",
+        "label": "IEC 61158"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ethercat-technology-group", "label": "EtherCAT Technology Group"},
-      {"@id": "urn:ngm:class:iec", "label": "IEC"}
+      {
+        "@id": "urn:ngm:class:iec",
+        "label": "IEC"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:profinet", "label": "PROFINET"},
-      {"@id": "urn:ngm:class:ethernetip", "label": "EtherNet/IP"},
-      {"@id": "urn:ngm:class:powerlink", "label": "POWERLINK"},
-      {"@id": "urn:ngm:class:sercos-iii", "label": "SERCOS III"}
+      {
+        "@id": "urn:ngm:class:profinet",
+        "label": "PROFINET"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"},
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"},
-      {"@id": "urn:ngm:class:opc-ua", "label": "OPC UA"},
-      {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"}
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "@id": "urn:ngm:class:opc-ua",
+        "label": "OPC UA"
+      },
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:time-sensitive-networking", "label": "Time-Sensitive Networking"},
-      {"@id": "urn:ngm:class:industrial-internet-of-things", "label": "Industrial Internet of Things"}
+      {
+        "@id": "urn:ngm:class:time-sensitive-networking",
+        "label": "Time-Sensitive Networking"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial Internet of Things"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ethernet-for-control-automation-technology", "label": "Ethernet for Control Automation Technology"}
+    {
+      "@id": "urn:ngm:class:ethernet-for-control-automation-technology",
+      "label": "Ethernet for Control Automation Technology"
+    }
   ],
   "quality": 0.73,
   "provenance": {

@@ -23,53 +23,117 @@ public:: true
   "definition": "Celestia is a modular blockchain network that decouples data availability from execution and consensus, functioning as a dedicated data availability layer that rollups and sovereign chains can use to publish and order transaction data without requiring a monolithic execution environment. It employs data availability sampling (DAS) via erasure coding so that light nodes can probabilistically verify that block data has been published without downloading it in full, enabling Celestia nodes to scale with the number of light clients rather than validators. Celestia introduced the concept of sovereign rollups, in which chains publish data to Celestia for ordering and availability whilst handling their own execution and settlement independently.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": {"@id": "urn:ngm:class:data-availability", "label": "Data Availability"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:data-availability",
+    "label": "Data Availability"
+  },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:erasure-coding", "label": "Erasure Coding"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:tendermint-consensus", "label": "Tendermint Consensus"},
-      {"@id": "urn:ngm:class:reed-solomon-erasure-coding", "label": "Reed-Solomon Erasure Coding"},
-      {"@id": "urn:ngm:class:namespaced-merkle-tree", "label": "Namespaced Merkle Tree"},
-      {"@id": "urn:ngm:class:inter-blockchain-communication", "label": "Inter-Blockchain Communication"}
+      {
+        "@id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:tendermint-consensus",
+        "label": "Tendermint Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:reed-solomon-erasure-coding",
+        "label": "Reed-Solomon Erasure Coding"
+      },
+      {
+        "@id": "urn:ngm:class:inter-blockchain-communication",
+        "label": "Inter-Blockchain Communication"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer 2 Scaling"},
-      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
-      {"@id": "urn:ngm:class:sovereign-rollup", "label": "Sovereign Rollup"},
-      {"@id": "urn:ngm:class:rollup-as-a-service", "label": "Rollup-as-a-Service"},
-      {"@id": "urn:ngm:class:modular-blockchain", "label": "Modular Blockchain"}
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:modular-blockchain",
+        "label": "Modular Blockchain"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:data-availability-sampling", "label": "Data Availability Sampling"},
-      {"@id": "urn:ngm:class:blob-transaction", "label": "Blob Transaction"}
+      {
+        "@id": "urn:ngm:class:data-availability-sampling",
+        "label": "Data Availability Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:blob-transaction",
+        "label": "Blob Transaction"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:light-node", "label": "Light Node"},
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
+      {
+        "@id": "urn:ngm:class:light-node",
+        "label": "Light Node"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:cosmos-ecosystem", "label": "Cosmos Ecosystem"},
-      {"@id": "urn:ngm:class:modular-blockchain-stack", "label": "Modular Blockchain Stack"}
+      {
+        "@id": "urn:ngm:class:cosmos",
+        "label": "Cosmos Ecosystem"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:monolithic-blockchain", "label": "Monolithic Blockchain"},
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"}
+      {
+        "@id": "urn:ngm:class:monolithic-blockchain",
+        "label": "Monolithic Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cosmos", "label": "Cosmos"},
-      {"@id": "urn:ngm:class:eigenda", "label": "EigenDA"},
-      {"@id": "urn:ngm:class:avail", "label": "Avail"},
-      {"@id": "urn:ngm:class:danksharding", "label": "Danksharding"},
-      {"@id": "urn:ngm:class:proto-danksharding", "label": "Proto-Danksharding"}
+      {
+        "@id": "urn:ngm:class:cosmos",
+        "label": "Cosmos"
+      },
+      {
+        "@id": "urn:ngm:class:avail",
+        "label": "Avail"
+      },
+      {
+        "@id": "urn:ngm:class:danksharding",
+        "label": "Danksharding"
+      },
+      {
+        "@id": "urn:ngm:class:proto-danksharding",
+        "label": "Proto-Danksharding"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:celestia-network", "label": "Celestia Network"}
+    {
+      "@id": "urn:ngm:class:celestia-network",
+      "label": "Celestia Network"
+    }
   ],
   "quality": 0.72,
   "provenance": {

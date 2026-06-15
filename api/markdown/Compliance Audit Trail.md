@@ -138,22 +138,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:compliance-event-log",
-        "label": "Compliance Event Log"
-      },
-      {
-        "@id": "urn:ngm:class:policy-document",
-        "label": "Policy Document"
-      },
-      {
-        "@id": "urn:ngm:class:regulatory-evidence",
-        "label": "Regulatory Evidence"
-      },
-      {
-        "@id": "urn:ngm:class:verification-record",
-        "label": "Verification Record"
-      },
-      {
         "@id": "urn:ngm:class:timestamp",
         "label": "Timestamp"
       }
@@ -196,7 +180,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:compliance-management-system",
+        "@id": "urn:ngm:class:compliance-management",
         "label": "Compliance Management System"
       }
     ]

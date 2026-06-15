@@ -92,7 +92,7 @@ public:: true
         "label": "3D Modeling"
       },
       {
-        "@id": "urn:ngm:class:data-synchronisation",
+        "@id": "urn:ngm:class:synchronisation",
         "label": "Data Synchronisation"
       }
     ],
@@ -102,7 +102,7 @@ public:: true
         "label": "Cyber Physical Systems"
       },
       {
-        "@id": "urn:ngm:class:industrial-internet-of-things",
+        "@id": "urn:ngm:class:industrial-io-t",
         "label": "Industrial Internet of Things"
       }
     ],
@@ -152,10 +152,6 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:cad-modeling",
-        "label": "CAD Modeling"
-      },
-      {
         "@id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
       },
@@ -194,7 +190,7 @@ public:: true
         "label": "Smart City"
       },
       {
-        "@id": "urn:ngm:class:product-lifecycle-management",
+        "@id": "urn:ngm:class:lifecycle-management",
         "label": "Product Lifecycle Management"
       }
     ],
@@ -218,10 +214,6 @@ public:: true
       {
         "@id": "urn:ngm:class:asset-management",
         "label": "Asset Management"
-      },
-      {
-        "@id": "urn:ngm:class:systems-integration",
-        "label": "Systems Integration"
       }
     ]
   },

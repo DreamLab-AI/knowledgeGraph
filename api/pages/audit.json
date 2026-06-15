@@ -28,33 +28,9 @@
       {
         "id": "urn:ngm:class:audit-mechanism",
         "label": "Audit Mechanism"
-      },
-      {
-        "id": "urn:ngm:class:audit-opinion",
-        "label": "Audit Opinion"
-      },
-      {
-        "id": "urn:ngm:class:audit-finding",
-        "label": "Audit Finding"
-      },
-      {
-        "id": "urn:ngm:class:audit-report",
-        "label": "Audit Report"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:independence",
-        "label": "Independence"
-      },
-      {
-        "id": "urn:ngm:class:professional-judgement",
-        "label": "Professional Judgement"
-      },
-      {
-        "id": "urn:ngm:class:evidence",
-        "label": "Evidence"
-      },
       {
         "id": "urn:ngm:class:documentation",
         "label": "Documentation"
@@ -84,24 +60,12 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:internal-controls",
-        "label": "Internal Controls"
-      },
-      {
         "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
       }
     ],
     "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:inspection",
-        "label": "Inspection"
-      },
-      {
-        "id": "urn:ngm:class:review",
-        "label": "Review"
-      },
       {
         "id": "urn:ngm:class:monitoring",
         "label": "Monitoring"
@@ -142,10 +106,6 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:international-standards-on-auditing",
-        "label": "International Standards on Auditing"
-      },
-      {
         "id": "urn:ngm:class:iso-iec-27001",
         "label": "ISO/IEC 27001"
       },
@@ -169,7 +129,7 @@
         "label": "Data Governance"
       },
       {
-        "id": "urn:ngm:class:zero-trust",
+        "id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust"
       }
     ]

@@ -113,7 +113,10 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
     ],
     "hasPart": [
       {
@@ -135,7 +138,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:ai-and-machine-learning",
+        "@id": "urn:ngm:class:ai-machine-learning",
         "label": "AI & Machine Learning"
       },
       {
@@ -144,10 +147,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:ml-operations",
-        "label": "ML Operations"
-      },
       {
         "@id": "urn:ngm:class:model-deployment",
         "label": "Model Deployment"

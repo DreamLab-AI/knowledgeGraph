@@ -95,7 +95,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:approximate-nearest-neighbour",
+        "@id": "urn:ngm:class:nearest-neighbor-search",
         "label": "Approximate Nearest Neighbour"
       },
       {
@@ -105,11 +105,11 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:hnsw",
+        "@id": "urn:ngm:class:hnsw-index",
         "label": "HNSW"
       },
       {
-        "@id": "urn:ngm:class:inverted-file-index",
+        "@id": "urn:ngm:class:inverted-index",
         "label": "Inverted File Index"
       },
       {
@@ -143,7 +143,7 @@ public:: true
         "label": "Keyword Search"
       },
       {
-        "@id": "urn:ngm:class:exact-nearest-neighbour",
+        "@id": "urn:ngm:class:nearest-neighbor-search",
         "label": "Exact Nearest Neighbour"
       }
     ],
@@ -167,7 +167,7 @@ public:: true
         "label": "Knowledge Graph"
       },
       {
-        "@id": "urn:ngm:class:spatial-indexing",
+        "@id": "urn:ngm:class:spatial-index",
         "label": "Spatial Indexing"
       }
     ]

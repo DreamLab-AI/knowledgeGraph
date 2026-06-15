@@ -64,10 +64,6 @@
       {
         "id": "urn:ngm:class:streaming-payments",
         "label": "Streaming Payments"
-      },
-      {
-        "id": "urn:ngm:class:pay-per-use",
-        "label": "Pay-Per-Use"
       }
     ],
     "dependsOn": [
@@ -113,29 +109,16 @@
     "uses": [],
     "supports": [
       {
-        "id": "urn:ngm:class:l402-protocol",
+        "id": "urn:ngm:class:x402-and-l402-payment-protocols",
         "label": "L402 Protocol"
-      },
-      {
-        "id": "urn:ngm:class:recurring-payments",
-        "label": "Recurring Payments"
       }
     ],
     "standardizedBy": [],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:bitcoin-scaling-ecosystem",
-        "label": "Bitcoin Scaling Ecosystem"
-      }
-    ],
+    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:privacy",
         "label": "Privacy"
-      },
-      {
-        "id": "urn:ngm:class:peer-to-peer",
-        "label": "Peer-to-Peer"
       },
       {
         "id": "urn:ngm:class:liquidity-pool",

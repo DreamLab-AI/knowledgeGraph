@@ -57,7 +57,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:crypto-asset-regulation",
+        "id": "urn:ngm:class:crypto-regulation",
         "label": "Crypto-Asset Regulation"
       },
       {
@@ -71,7 +71,7 @@
         "label": "MiFID II"
       },
       {
-        "id": "urn:ngm:class:sec-crypto-regulation",
+        "id": "urn:ngm:class:crypto-regulation",
         "label": "SEC Crypto Regulation"
       }
     ],

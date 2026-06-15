@@ -16,20 +16,7 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:graphql-schema-definition-language",
-        "label": "GraphQL Schema Definition Language"
-      },
-      {
-        "id": "urn:ngm:class:graphql-query",
-        "label": "GraphQL Query"
-      },
-      {
-        "id": "urn:ngm:class:graphql-subscription",
-        "label": "GraphQL Subscription"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:type-system",
@@ -46,21 +33,12 @@
         "label": "Microservices Architecture"
       },
       {
-        "id": "urn:ngm:class:schema-introspection",
-        "label": "Schema Introspection"
-      },
-      {
         "id": "urn:ngm:class:code-generation",
         "label": "Code Generation"
       }
     ],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:declarative-data-fetching",
-        "label": "Declarative Data Fetching"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:rest-api",
@@ -101,19 +79,11 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:federation-pattern",
+        "id": "urn:ngm:class:federation",
         "label": "Federation Pattern"
-      },
-      {
-        "id": "urn:ngm:class:dataloader-pattern",
-        "label": "DataLoader Pattern"
       }
     ],
     "standardizedBy": [
-      {
-        "id": "urn:ngm:class:graphql-foundation",
-        "label": "GraphQL Foundation"
-      },
       {
         "id": "urn:ngm:class:linux-foundation",
         "label": "Linux Foundation"

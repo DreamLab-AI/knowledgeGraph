@@ -130,7 +130,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:fair-principles",
+        "@id": "urn:ngm:class:fair-data-principles",
         "label": "FAIR Principles"
       }
     ],
@@ -140,7 +140,7 @@ public:: true
         "label": "XML"
       },
       {
-        "@id": "urn:ngm:class:json",
+        "@id": "urn:ngm:class:json-data-interchange-format",
         "label": "JSON"
       },
       {
@@ -196,7 +196,7 @@ public:: true
         "label": "Federated Learning"
       },
       {
-        "@id": "urn:ngm:class:semantic-web",
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       }
     ],

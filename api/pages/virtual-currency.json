@@ -16,20 +16,7 @@
   "qualityScore": 0.0,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:closed-loop-currency",
-        "label": "Closed Loop Currency"
-      },
-      {
-        "id": "urn:ngm:class:convertible-virtual-currency",
-        "label": "Convertible Virtual Currency"
-      },
-      {
-        "id": "urn:ngm:class:non-convertible-virtual-currency",
-        "label": "Non-Convertible Virtual Currency"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:digital-wallet",
@@ -46,11 +33,7 @@
         "label": "Cross Metaverse Commerce"
       },
       {
-        "id": "urn:ngm:class:microtransaction",
-        "label": "Microtransaction"
-      },
-      {
-        "id": "urn:ngm:class:play-to-earn",
+        "id": "urn:ngm:class:play-to-earn-p2-e",
         "label": "Play To Earn"
       }
     ],
@@ -108,10 +91,6 @@
       }
     ],
     "supports": [
-      {
-        "id": "urn:ngm:class:virtual-goods",
-        "label": "Virtual Goods"
-      },
       {
         "id": "urn:ngm:class:digital-commerce",
         "label": "Digital Commerce"

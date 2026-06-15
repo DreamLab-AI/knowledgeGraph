@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:symmetric-cipher",
+        "id": "urn:ngm:class:symmetric-encryption",
         "label": "Symmetric Cipher"
       },
       {
@@ -26,7 +26,7 @@
         "label": "Hash Function"
       },
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public-Key Cryptography"
       }
     ],
@@ -108,15 +108,11 @@
         "label": "Transport Layer Security"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
     "standardizedBy": [
-      {
-        "id": "urn:ngm:class:national-institute-of-standards-and-technology",
-        "label": "National Institute of Standards and Technology"
-      },
       {
         "id": "urn:ngm:class:internet-engineering-task-force",
         "label": "Internet Engineering Task Force"

@@ -70,54 +70,131 @@ alias:: semanticWeb
     "label": "AI Research Area"
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:semantic-web", "label": "Semantic Web"},
-    {"@id": "urn:ngm:class:linked-data-standard", "label": "Linked Data Standard"}
+    {
+      "@id": "urn:ngm:class:semantic-web",
+      "label": "Semantic Web"
+    },
+    {
+      "@id": "urn:ngm:class:linked-data-standard",
+      "label": "Linked Data Standard"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:sparql", "label": "SPARQL"},
-      {"@id": "urn:ngm:class:owl-web-ontology-language", "label": "OWL Web Ontology Language"},
-      {"@id": "urn:ngm:class:turtle-syntax", "label": "Turtle Syntax"},
-      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"}
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "@id": "urn:ngm:class:owl-2-web-ontology-language",
+        "label": "OWL Web Ontology Language"
+      },
+      {
+        "@id": "urn:ngm:class:turtle",
+        "label": "Turtle Syntax"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:automated-reasoning", "label": "Automated Reasoning"},
-      {"@id": "urn:ngm:class:ontology-alignment", "label": "Ontology Alignment"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:ontology-alignment",
+        "label": "Ontology Alignment"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:uri-iri", "label": "URI IRI"}
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:information-extraction", "label": "Information Extraction"},
-      {"@id": "urn:ngm:class:entity-linking", "label": "Entity Linking"}
+      {
+        "@id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:entity-linking",
+        "label": "Entity Linking"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:w3c", "label": "W3C"}
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:open-world-assumption", "label": "Open World Assumption"},
-      {"@id": "urn:ngm:class:description-logics", "label": "Description Logics"}
+      {
+        "@id": "urn:ngm:class:open-world-assumption",
+        "label": "Open World Assumption"
+      },
+      {
+        "@id": "urn:ngm:class:description-logic",
+        "label": "Description Logics"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:data-integration", "label": "Data Integration"},
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:relational-database", "label": "Relational Database"}
+      {
+        "@id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralized-identifier", "label": "Decentralized Identifier"},
-      {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"}
+      {
+        "@id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard-standards", "label": "Semantic Web Standards"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard-standards",
+        "label": "Semantic Web Standards"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ]
   }
 }

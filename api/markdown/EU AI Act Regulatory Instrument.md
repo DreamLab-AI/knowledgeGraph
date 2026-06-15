@@ -24,52 +24,130 @@ elevatedFrom:: [[EU AI Act]]
   "definition": "The EU AI Act (Regulation (EU) 2024/1689) is the European Union's comprehensive, legally binding horizontal regulation for artificial intelligence, establishing a four-tier risk-based classification system that prohibits certain AI practices outright, imposes strict pre-market conformity obligations on high-risk AI systems, mandates transparency duties for limited-risk AI, and introduces a dedicated governance regime for general-purpose AI models. Published in the Official Journal in July 2024 and progressively entering into force through 2025–2027, it represents the world's first binding horizontal AI law and creates a de facto global compliance benchmark through its extraterritorial scope. Enforcement is shared between national market surveillance authorities, the European AI Office, and the European AI Board, with penalties reaching up to €35 million or 7% of global annual turnover.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-regulation",
+      "label": "AI Regulation"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:regulation-eu-2024-1689", "label": "Regulation EU 2024/1689"},
-    {"@id": "urn:ngm:class:artificial-intelligence-act", "label": "Artificial Intelligence Act"}
+    {
+      "@id": "urn:ngm:class:regulation-eu-2024-1689",
+      "label": "Regulation EU 2024/1689"
+    },
+    {
+      "@id": "urn:ngm:class:artificial-intelligence-act",
+      "label": "Artificial Intelligence Act"
+    }
   ],
   "relations": {
     "standardizedBy": [
-      {"@id": "urn:ngm:class:european-commission", "label": "European Commission"},
-      {"@id": "urn:ngm:class:european-parliament", "label": "European Parliament"}
+      {
+        "@id": "urn:ngm:class:european-commission",
+        "label": "European Commission"
+      },
+      {
+        "@id": "urn:ngm:class:european-parliament",
+        "label": "European Parliament"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"},
-      {"@id": "urn:ngm:class:notified-body", "label": "Notified Body"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:human-oversight", "label": "Human Oversight"},
-      {"@id": "urn:ngm:class:technical-documentation", "label": "Technical Documentation"}
+      {
+        "@id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:notified-body",
+        "label": "Notified Body"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "@id": "urn:ngm:class:technical-documentation",
+        "label": "Technical Documentation"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:prohibited-ai-practice", "label": "Prohibited AI Practice"},
-      {"@id": "urn:ngm:class:high-risk-ai-system", "label": "High Risk AI System"},
-      {"@id": "urn:ngm:class:general-purpose-ai-model", "label": "General Purpose AI Model"},
-      {"@id": "urn:ngm:class:eu-ai-office", "label": "EU AI Office"}
+      {
+        "@id": "urn:ngm:class:prohibited-ai-practice",
+        "label": "Prohibited AI Practice"
+      },
+      {
+        "@id": "urn:ngm:class:high-risk-ai-system",
+        "label": "High Risk AI System"
+      },
+      {
+        "@id": "urn:ngm:class:general-purpose-ai-model",
+        "label": "General Purpose AI Model"
+      },
+      {
+        "@id": "urn:ngm:class:ai-office",
+        "label": "EU AI Office"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:trustworthy-ai", "label": "Trustworthy AI"}
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
-      {"@id": "urn:ngm:class:new-legislative-framework", "label": "New Legislative Framework"}
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:us-ai-executive-order", "label": "US AI Executive Order"},
-      {"@id": "urn:ngm:class:uk-ai-regulatory-approach", "label": "UK AI Regulatory Approach"}
+      {
+        "@id": "urn:ngm:class:us-ai-executive-order",
+        "label": "US AI Executive Order"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:biometric-identification", "label": "Biometric Identification"}
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:biometric-identification",
+        "label": "Biometric Identification"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:brussels-effect", "label": "Brussels Effect"},
-      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:brussels-effect",
+        "label": "Brussels Effect"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
     ]
   },
   "quality": 0.76,

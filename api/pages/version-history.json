@@ -20,12 +20,8 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:change-audit-trail",
+        "id": "urn:ngm:class:audit-trail",
         "label": "Change Audit Trail"
-      },
-      {
-        "id": "urn:ngm:class:rollback",
-        "label": "Rollback"
       }
     ],
     "dependsOn": [],

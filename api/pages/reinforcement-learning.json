@@ -54,7 +54,7 @@
         "label": "Autonomous Robot"
       },
       {
-        "id": "urn:ngm:class:game-playing-agent",
+        "id": "urn:ngm:class:ai-game-agent",
         "label": "Game Playing Agent"
       },
       {
@@ -103,7 +103,7 @@
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:model-based-planning",
+        "id": "urn:ngm:class:automated-planning",
         "label": "Model-Based Planning"
       }
     ],

@@ -49,7 +49,7 @@
         "label": "Pose Estimation"
       },
       {
-        "id": "urn:ngm:class:object-tracking",
+        "id": "urn:ngm:class:object-detection-and-tracking",
         "label": "Object Tracking"
       },
       {
@@ -77,14 +77,6 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:yolo",
-        "label": "YOLO"
-      },
-      {
-        "id": "urn:ngm:class:faster-r-cnn",
-        "label": "Faster R-CNN"
-      },
-      {
         "id": "urn:ngm:class:detr",
         "label": "DETR"
       }
@@ -107,10 +99,6 @@
       {
         "id": "urn:ngm:class:robotics-perception",
         "label": "Robotics Perception"
-      },
-      {
-        "id": "urn:ngm:class:surveillance-system",
-        "label": "Surveillance System"
       },
       {
         "id": "urn:ngm:class:spatial-computing",

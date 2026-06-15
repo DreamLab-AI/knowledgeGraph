@@ -30,7 +30,7 @@
         "label": "General Purpose AI Model"
       },
       {
-        "id": "urn:ngm:class:eu-ai-office",
+        "id": "urn:ngm:class:ai-office",
         "label": "EU AI Office"
       }
     ],
@@ -74,10 +74,6 @@
       {
         "id": "urn:ngm:class:gdpr",
         "label": "GDPR"
-      },
-      {
-        "id": "urn:ngm:class:new-legislative-framework",
-        "label": "New Legislative Framework"
       }
     ],
     "implements": [],
@@ -85,10 +81,6 @@
       {
         "id": "urn:ngm:class:us-ai-executive-order",
         "label": "US AI Executive Order"
-      },
-      {
-        "id": "urn:ngm:class:uk-ai-regulatory-approach",
-        "label": "UK AI Regulatory Approach"
       }
     ],
     "bridgesTo": [

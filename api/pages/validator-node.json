@@ -16,25 +16,8 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:validator-client",
-        "label": "Validator Client"
-      },
-      {
-        "id": "urn:ngm:class:beacon-node",
-        "label": "Beacon Node"
-      },
-      {
-        "id": "urn:ngm:class:staking-key",
-        "label": "Staking Key"
-      }
-    ],
+    "hasPart": [],
     "requires": [
-      {
-        "id": "urn:ngm:class:stake",
-        "label": "Stake"
-      },
       {
         "id": "urn:ngm:class:slashing-condition",
         "label": "Slashing Condition"
@@ -54,10 +37,6 @@
         "label": "Transaction Finality"
       },
       {
-        "id": "urn:ngm:class:block-attestation",
-        "label": "Block Attestation"
-      },
-      {
         "id": "urn:ngm:class:staking-reward",
         "label": "Staking Reward"
       }
@@ -72,7 +51,7 @@
         "label": "Epoch"
       },
       {
-        "id": "urn:ngm:class:committee-selection",
+        "id": "urn:ngm:class:validator-selection",
         "label": "Committee Selection"
       }
     ],
@@ -116,7 +95,7 @@
         "label": "Schnorr Signature"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],

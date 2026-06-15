@@ -18,14 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:synchronous-replication",
-        "label": "Synchronous Replication"
-      },
-      {
-        "id": "urn:ngm:class:asynchronous-replication",
-        "label": "Asynchronous Replication"
-      },
-      {
         "id": "urn:ngm:class:replication-log",
         "label": "Replication Log"
       }
@@ -50,7 +42,7 @@
         "label": "Disaster Recovery"
       },
       {
-        "id": "urn:ngm:class:read-scalability",
+        "id": "urn:ngm:class:scalability",
         "label": "Read Scalability"
       }
     ],

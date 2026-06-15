@@ -52,55 +52,147 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:automatic-speech-recognition", "label": "Automatic Speech Recognition"},
-    {"@id": "urn:ngm:class:voice-recognition", "label": "Voice Recognition"},
-    {"@id": "urn:ngm:class:asr", "label": "ASR"}
+    {
+      "@id": "urn:ngm:class:automatic-speech-recognition",
+      "label": "Automatic Speech Recognition"
+    },
+    {
+      "@id": "urn:ngm:class:voice-recognition",
+      "label": "Voice Recognition"
+    },
+    {
+      "@id": "urn:ngm:class:asr",
+      "label": "ASR"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:connectionist-temporal-classification", "label": "Connectionist Temporal Classification"}
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:connectionist-temporal-classification",
+        "label": "Connectionist Temporal Classification"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:language-translation", "label": "Language Translation"},
-      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
-      {"@id": "urn:ngm:class:voice-user-interface", "label": "Voice User Interface"},
-      {"@id": "urn:ngm:class:virtual-assistant", "label": "Virtual Assistant"},
-      {"@id": "urn:ngm:class:real-time-captioning", "label": "Real-Time Captioning"},
-      {"@id": "urn:ngm:class:clinical-documentation", "label": "Clinical Documentation"}
+      {
+        "@id": "urn:ngm:class:language-translation",
+        "label": "Language Translation"
+      },
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "@id": "urn:ngm:class:voice-user-interface",
+        "label": "Voice User Interface"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-assistant",
+        "label": "Virtual Assistant"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-captioning",
+        "label": "Real-Time Captioning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:acoustic-model", "label": "Acoustic Model"},
-      {"@id": "urn:ngm:class:language-model", "label": "Language Model"},
-      {"@id": "urn:ngm:class:audio-signal-processing", "label": "Audio Signal Processing"},
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"}
+      {
+        "@id": "urn:ngm:class:acoustic-model",
+        "label": "Acoustic Model"
+      },
+      {
+        "@id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:audio-signal-processing",
+        "label": "Audio Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:labelled-training-data", "label": "Labelled Training Data"},
-      {"@id": "urn:ngm:class:model-compression", "label": "Model Compression"}
+      {
+        "@id": "urn:ngm:class:labelled-training-data",
+        "label": "Labelled Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:sentiment-analysis", "label": "Sentiment Analysis"},
-      {"@id": "urn:ngm:class:speaker-diarisation", "label": "Speaker Diarisation"},
-      {"@id": "urn:ngm:class:text-to-speech", "label": "Text-to-Speech"},
-      {"@id": "urn:ngm:class:speech-synthesis", "label": "SpeechSynthesis"},
-      {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"}
+      {
+        "@id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:speaker-diarisation",
+        "label": "Speaker Diarisation"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      },
+      {
+        "@id": "urn:ngm:class:speech-synthesis",
+        "label": "SpeechSynthesis"
+      },
+      {
+        "@id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist", "label": "NIST"},
-      {"@id": "urn:ngm:class:w3c-web-speech-api", "label": "W3C Web Speech API"}
+      {
+        "@id": "urn:ngm:class:nist",
+        "label": "NIST"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-web-speech-api",
+        "label": "W3C Web Speech API"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:speaker-recognition", "label": "Speaker Recognition"},
-      {"@id": "urn:ngm:class:voice-activity-detection", "label": "Voice Activity Detection"}
+      {
+        "@id": "urn:ngm:class:speaker-recognition",
+        "label": "Speaker Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:voice-activity-detection",
+        "label": "Voice Activity Detection"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:voice-user-interface", "label": "Voice User Interface"},
-      {"@id": "urn:ngm:class:multimodal-interaction", "label": "Multimodal Interaction"},
-      {"@id": "urn:ngm:class:accessibility-technology", "label": "Accessibility Technology"}
+      {
+        "@id": "urn:ngm:class:voice-user-interface",
+        "label": "Voice User Interface"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-interaction",
+        "label": "Multimodal Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility-technology",
+        "label": "Accessibility Technology"
+      }
     ]
   },
   "quality": 0.74,

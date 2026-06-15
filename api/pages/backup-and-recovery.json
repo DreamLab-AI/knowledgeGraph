@@ -18,18 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:full-backup",
-        "label": "Full Backup"
-      },
-      {
-        "id": "urn:ngm:class:incremental-backup",
-        "label": "Incremental Backup"
-      },
-      {
-        "id": "urn:ngm:class:differential-backup",
-        "label": "Differential Backup"
-      },
-      {
         "id": "urn:ngm:class:recovery-time-objective",
         "label": "Recovery Time Objective"
       },
@@ -56,10 +44,6 @@
       {
         "id": "urn:ngm:class:operational-resilience",
         "label": "Operational Resilience"
-      },
-      {
-        "id": "urn:ngm:class:point-in-time-recovery",
-        "label": "Point-in-Time Recovery"
       }
     ],
     "dependsOn": [
@@ -113,10 +97,6 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:ransomware-protection",
-        "label": "Ransomware Protection"
-      },
-      {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
       }
@@ -140,10 +120,6 @@
       {
         "id": "urn:ngm:class:data-protection",
         "label": "Data Protection"
-      },
-      {
-        "id": "urn:ngm:class:continuous-data-protection",
-        "label": "Continuous Data Protection"
       },
       {
         "id": "urn:ngm:class:air-gap",

@@ -32,10 +32,6 @@
       {
         "id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"
-      },
-      {
-        "id": "urn:ngm:class:developer-toolchain",
-        "label": "Developer Toolchain"
       }
     ],
     "requires": [
@@ -80,7 +76,7 @@
         "label": "Peer-to-Peer Network"
       },
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       },
       {
@@ -93,10 +89,6 @@
       {
         "id": "urn:ngm:class:traditional-contract",
         "label": "Traditional Contract"
-      },
-      {
-        "id": "urn:ngm:class:centralised-application-server",
-        "label": "Centralised Application Server"
       }
     ],
     "bridgesTo": [

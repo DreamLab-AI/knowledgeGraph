@@ -20,23 +20,15 @@
       {
         "id": "urn:ngm:class:cambridge-bitcoin-electricity-consumption-index",
         "label": "Cambridge Bitcoin Electricity Consumption Index"
-      },
-      {
-        "id": "urn:ngm:class:global-cryptoasset-benchmarking-study",
-        "label": "Global Cryptoasset Benchmarking Study"
-      },
-      {
-        "id": "urn:ngm:class:global-alternative-finance-market-benchmarking-report",
-        "label": "Global Alternative Finance Market Benchmarking Report"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:empirical-research-methodology",
+        "id": "urn:ngm:class:research-methods",
         "label": "Empirical Research Methodology"
       },
       {
-        "id": "urn:ngm:class:survey-based-data-collection",
+        "id": "urn:ngm:class:data-collection",
         "label": "Survey-Based Data Collection"
       }
     ],
@@ -46,21 +38,17 @@
         "label": "Cryptocurrency Regulation"
       },
       {
-        "id": "urn:ngm:class:cryptoasset-policy",
+        "id": "urn:ngm:class:cryptoasset-regulatory-framework",
         "label": "Cryptoasset Policy"
-      },
-      {
-        "id": "urn:ngm:class:fintech-benchmarking",
-        "label": "Fintech Benchmarking"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:blockchain-network-data",
+        "id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Network Data"
       },
       {
-        "id": "urn:ngm:class:open-data-publishing",
+        "id": "urn:ngm:class:open-data",
         "label": "Open Data Publishing"
       }
     ],
@@ -71,17 +59,17 @@
         "label": "Traditional Banking"
       },
       {
-        "id": "urn:ngm:class:incumbent-financial-system",
+        "id": "urn:ngm:class:financial-system",
         "label": "Incumbent Financial System"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:bitcoin-environmental-issues",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-environmental-issues",
         "label": "Bitcoin Environmental Issues"
       },
       {
-        "id": "urn:ngm:class:energy-consumption-monitoring",
+        "id": "urn:ngm:class:energy-consumption",
         "label": "Energy Consumption Monitoring"
       },
       {
@@ -99,7 +87,7 @@
         "label": "Distributed Ledger Technology"
       },
       {
-        "id": "urn:ngm:class:peer-to-peer-lending",
+        "id": "urn:ngm:class:peer-to-peer-trading",
         "label": "Peer-to-Peer Lending"
       }
     ],
@@ -132,10 +120,6 @@
       {
         "id": "urn:ngm:class:crowdfunding",
         "label": "Crowdfunding"
-      },
-      {
-        "id": "urn:ngm:class:alternative-finance",
-        "label": "Alternative Finance"
       }
     ]
   },

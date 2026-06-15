@@ -638,36 +638,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:build-pipeline",
-        "label": "Build Pipeline"
-      },
-      {
-        "@id": "urn:ngm:class:diagram-grammar",
-        "label": "Diagram Grammar"
-      },
-      {
-        "@id": "urn:ngm:class:icon-library",
-        "label": "Icon Library"
-      },
-      {
         "@id": "urn:ngm:class:layout-engine",
         "label": "Layout Engine"
       },
       {
-        "@id": "urn:ngm:class:preview-plugin",
-        "label": "Preview Plugin"
-      },
-      {
         "@id": "urn:ngm:class:renderer",
         "label": "Renderer"
-      },
-      {
-        "@id": "urn:ngm:class:source-file",
-        "label": "Source File"
-      },
-      {
-        "@id": "urn:ngm:class:theme",
-        "label": "Theme"
       }
     ],
     "requires": [
@@ -680,23 +656,11 @@ public:: true
         "label": "Markdown"
       },
       {
-        "@id": "urn:ngm:class:render-toolchain",
-        "label": "Render Toolchain"
-      },
-      {
-        "@id": "urn:ngm:class:text-editor",
-        "label": "Text Editor"
-      },
-      {
         "@id": "urn:ngm:class:version-control",
         "label": "Version Control"
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:architectural-decision-records",
-        "label": "Architectural Decision Records"
-      },
       {
         "@id": "urn:ngm:class:c4-model",
         "label": "C4 Model"
@@ -706,16 +670,8 @@ public:: true
         "label": "Continuous Integration"
       },
       {
-        "@id": "urn:ngm:class:living-documentation",
-        "label": "Living Documentation"
-      },
-      {
-        "@id": "urn:ngm:class:pull-request-review",
+        "@id": "urn:ngm:class:code-review",
         "label": "Pull Request Review"
-      },
-      {
-        "@id": "urn:ngm:class:refactor-time-consistency",
-        "label": "Refactor-Time Consistency"
       },
       {
         "@id": "urn:ngm:class:runbook",
@@ -724,40 +680,8 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:d2",
-        "label": "D2"
-      },
-      {
-        "@id": "urn:ngm:class:graphviz-dot",
-        "label": "Graphviz DOT"
-      },
-      {
-        "@id": "urn:ngm:class:penrose",
-        "label": "Penrose"
-      },
-      {
-        "@id": "urn:ngm:class:pikchr",
-        "label": "Pikchr"
-      },
-      {
-        "@id": "urn:ngm:class:plant-uml",
-        "label": "PlantUML"
-      },
-      {
         "@id": "urn:ngm:class:structurizr-dsl",
         "label": "Structurizr DSL"
-      },
-      {
-        "@id": "urn:ngm:class:tik-z",
-        "label": "TikZ"
-      },
-      {
-        "@id": "urn:ngm:class:vega-lite",
-        "label": "Vega-Lite"
-      },
-      {
-        "@id": "urn:ngm:class:wavedrom",
-        "label": "Wavedrom"
       },
       {
         "@id": "urn:ngm:class:markdown-diagramming-as-code-tool",
@@ -770,34 +694,14 @@ public:: true
         "label": "JSON Schema"
       },
       {
-        "@id": "urn:ngm:class:markdown-code-fence",
-        "label": "Markdown Code Fence"
-      },
-      {
         "@id": "urn:ngm:class:open-api-specification",
         "label": "OpenAPI Specification"
-      },
-      {
-        "@id": "urn:ngm:class:web-components",
-        "label": "Web Components"
-      },
-      {
-        "@id": "urn:ngm:class:yaml-frontmatter",
-        "label": "YAML Frontmatter"
       }
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:adr",
-        "label": "ADR"
-      },
-      {
         "@id": "urn:ngm:class:c4-model",
         "label": "C4 Model"
-      },
-      {
-        "@id": "urn:ngm:class:diagrams-py",
-        "label": "Diagrams.py"
       },
       {
         "@id": "urn:ngm:class:documentation-as-code",
@@ -808,16 +712,8 @@ public:: true
         "label": "Excalidraw"
       },
       {
-        "@id": "urn:ngm:class:kroki",
-        "label": "Kroki"
-      },
-      {
         "@id": "urn:ngm:class:notion",
         "label": "Notion"
-      },
-      {
-        "@id": "urn:ngm:class:static-site-generator",
-        "label": "Static Site Generator"
       },
       {
         "@id": "urn:ngm:class:ai-diagram-tools",
@@ -830,40 +726,8 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:class-diagram",
-        "label": "Class Diagram"
-      },
-      {
-        "@id": "urn:ngm:class:deployment-diagram",
-        "label": "Deployment Diagram"
-      },
-      {
-        "@id": "urn:ngm:class:entity-relationship-diagram",
-        "label": "Entity-Relationship Diagram"
-      },
-      {
-        "@id": "urn:ngm:class:flowchart",
-        "label": "Flowchart"
-      },
-      {
-        "@id": "urn:ngm:class:gantt-chart",
-        "label": "Gantt Chart"
-      },
-      {
         "@id": "urn:ngm:class:mind-map",
         "label": "Mind Map"
-      },
-      {
-        "@id": "urn:ngm:class:sequence-diagram",
-        "label": "Sequence Diagram"
-      },
-      {
-        "@id": "urn:ngm:class:state-diagram",
-        "label": "State Diagram"
-      },
-      {
-        "@id": "urn:ngm:class:timing-diagram",
-        "label": "Timing Diagram"
       }
     ],
     "standardizedBy": [
@@ -872,20 +736,12 @@ public:: true
         "label": "IEEE"
       },
       {
-        "@id": "urn:ngm:class:markdown-diagramming-as-code-tool-open-source-project",
+        "@id": "urn:ngm:class:markdown-diagramming-as-code-tool",
         "label": "Mermaid Open-Source Project"
       },
       {
         "@id": "urn:ngm:class:object-management-group",
         "label": "Object Management Group"
-      },
-      {
-        "@id": "urn:ngm:class:omg",
-        "label": "OMG"
-      },
-      {
-        "@id": "urn:ngm:class:thought-works-tech-radar",
-        "label": "ThoughtWorks Tech Radar"
       },
       {
         "@id": "urn:ngm:class:w3-c",

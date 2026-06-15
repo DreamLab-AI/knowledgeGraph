@@ -22,10 +22,6 @@
         "label": "Collision Resistance"
       },
       {
-        "id": "urn:ngm:class:pre-image-resistance",
-        "label": "Pre-image Resistance"
-      },
-      {
         "id": "urn:ngm:class:avalanche-effect",
         "label": "Avalanche Effect"
       }
@@ -139,7 +135,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:nist-fips-180",
+        "id": "urn:ngm:class:nist-fips-186",
         "label": "NIST FIPS 180"
       },
       {
@@ -149,7 +145,7 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -158,10 +154,6 @@
       }
     ],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:digital-fingerprint",
-        "label": "Digital Fingerprint"
-      },
       {
         "id": "urn:ngm:class:blockchain-security",
         "label": "Blockchain Security"

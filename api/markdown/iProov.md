@@ -69,10 +69,6 @@ public:: true
       {
         "@id": "urn:ngm:class:liveness-detection",
         "label": "Liveness Detection"
-      },
-      {
-        "@id": "urn:ngm:class:camera-hardware",
-        "label": "Camera Hardware"
       }
     ],
     "enables": [
@@ -87,26 +83,6 @@ public:: true
       {
         "@id": "urn:ngm:class:digital-onboarding",
         "label": "Digital Onboarding"
-      },
-      {
-        "@id": "urn:ngm:class:remote-authentication",
-        "label": "Remote Authentication"
-      }
-    ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:genuine-presence-assurance",
-        "label": "Genuine Presence Assurance"
-      },
-      {
-        "@id": "urn:ngm:class:flashmark",
-        "label": "Flashmark"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:identity-orchestration",
-        "label": "Identity Orchestration"
       }
     ],
     "uses": [
@@ -138,10 +114,6 @@ public:: true
       }
     ],
     "supports": [
-      {
-        "@id": "urn:ngm:class:electronic-identity",
-        "label": "Electronic Identity"
-      },
       {
         "@id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"

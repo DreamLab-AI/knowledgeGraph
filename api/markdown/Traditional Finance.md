@@ -58,47 +58,121 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:commercial-banking", "label": "Commercial Banking"},
-      {"@id": "urn:ngm:class:investment-banking", "label": "Investment Banking"},
-      {"@id": "urn:ngm:class:securities-exchange", "label": "Securities Exchange"},
-      {"@id": "urn:ngm:class:central-banking", "label": "Central Banking"},
-      {"@id": "urn:ngm:class:clearing-house", "label": "Clearing House"}
+      {
+        "@id": "urn:ngm:class:traditional-banking",
+        "label": "Commercial Banking"
+      },
+      {
+        "@id": "urn:ngm:class:investment-banking",
+        "label": "Investment Banking"
+      },
+      {
+        "@id": "urn:ngm:class:central-banking",
+        "label": "Central Banking"
+      },
+      {
+        "@id": "urn:ngm:class:clearing-house",
+        "label": "Clearing House"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:fiat-currency", "label": "Fiat Currency"},
-      {"@id": "urn:ngm:class:kyc-aml", "label": "KYC/AML"}
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "@id": "urn:ngm:class:kyc-aml",
+        "label": "KYC/AML"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:institutional-adoption", "label": "Institutional Adoption"},
-      {"@id": "urn:ngm:class:capital-markets", "label": "Capital Markets"},
-      {"@id": "urn:ngm:class:payment-systems", "label": "Payment Systems"}
+      {
+        "@id": "urn:ngm:class:institutional-adoption",
+        "label": "Institutional Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      },
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment Systems"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:financial-infrastructure", "label": "Financial Infrastructure"},
-      {"@id": "urn:ngm:class:central-banking", "label": "Central Banking"}
+      {
+        "@id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:central-banking",
+        "label": "Central Banking"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:de-fi", "label": "DeFi"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"}
+      {
+        "@id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"},
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"},
-      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"},
-      {"@id": "urn:ngm:class:real-world-assets", "label": "Real World Assets"}
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:tokenised-real-world-assets",
+        "label": "Real World Assets"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:asset-management", "label": "Asset Management"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
-      {"@id": "urn:ngm:class:market-microstructure", "label": "Market Microstructure"}
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:market-microstructure",
+        "label": "Market Microstructure"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:trad-fi", "label": "TradFi"},
-    {"@id": "urn:ngm:class:conventional-finance", "label": "Conventional Finance"}
+    {
+      "@id": "urn:ngm:class:trad-fi",
+      "label": "TradFi"
+    },
+    {
+      "@id": "urn:ngm:class:conventional-finance",
+      "label": "Conventional Finance"
+    }
   ],
   "quality": 0.75,
   "provenance": {

@@ -45,7 +45,7 @@
         "label": "Music Generation"
       },
       {
-        "id": "urn:ngm:class:3d-asset-creation",
+        "id": "urn:ngm:class:asset-creation",
         "label": "3D Asset Creation"
       },
       {
@@ -59,18 +59,18 @@
         "label": "Training Data"
       },
       {
-        "id": "urn:ngm:class:api-endpoint",
+        "id": "urn:ngm:class:api",
         "label": "API Endpoint"
       }
     ],
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:traditional-design-software",
+        "id": "urn:ngm:class:design-software",
         "label": "Traditional Design Software"
       },
       {
-        "id": "urn:ngm:class:rule-based-procedural-generation",
+        "id": "urn:ngm:class:procedural-generation",
         "label": "Rule-Based Procedural Generation"
       }
     ],
@@ -102,7 +102,7 @@
         "label": "Large Language Model"
       },
       {
-        "id": "urn:ngm:class:multimodal-model",
+        "id": "urn:ngm:class:multimodal-ai-architecture-models",
         "label": "Multimodal Model"
       },
       {
@@ -114,10 +114,6 @@
       {
         "id": "urn:ngm:class:human-computer-interaction",
         "label": "Human Computer Interaction"
-      },
-      {
-        "id": "urn:ngm:class:creative-economy",
-        "label": "Creative Economy"
       }
     ],
     "standardizedBy": [],
@@ -132,7 +128,7 @@
         "label": "Content Provenance"
       },
       {
-        "id": "urn:ngm:class:intellectual-property",
+        "id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Intellectual Property"
       },
       {

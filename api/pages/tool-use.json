@@ -27,7 +27,7 @@
         "label": "Function Calling"
       },
       {
-        "id": "urn:ngm:class:json-schema",
+        "id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       },
       {
@@ -73,7 +73,7 @@
         "label": "Model Context Protocol"
       },
       {
-        "id": "urn:ngm:class:openai-function-calling-api",
+        "id": "urn:ngm:class:function-calling",
         "label": "OpenAI Function Calling API"
       }
     ],

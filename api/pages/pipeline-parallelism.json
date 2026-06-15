@@ -16,24 +16,11 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:pipeline-stage",
-        "label": "Pipeline Stage"
-      },
-      {
-        "id": "urn:ngm:class:bubble-overhead",
-        "label": "Bubble Overhead"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:parallel-computing",
         "label": "Parallel Computing"
-      },
-      {
-        "id": "urn:ngm:class:inter-device-communication",
-        "label": "Inter-Device Communication"
       },
       {
         "id": "urn:ngm:class:micro-batch-scheduling",
@@ -46,12 +33,8 @@
         "label": "Real-Time Rendering"
       },
       {
-        "id": "urn:ngm:class:large-model-training",
+        "id": "urn:ngm:class:model-training",
         "label": "Large Model Training"
-      },
-      {
-        "id": "urn:ngm:class:throughput-scaling",
-        "label": "Throughput Scaling"
       }
     ],
     "dependsOn": [
@@ -68,10 +51,6 @@
       {
         "id": "urn:ngm:class:graphics-pipeline",
         "label": "Graphics Pipeline"
-      },
-      {
-        "id": "urn:ngm:class:gpipe-algorithm",
-        "label": "GPipe Algorithm"
       }
     ],
     "contrastsWith": [
@@ -100,7 +79,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:activation-checkpointing",
+        "id": "urn:ngm:class:gradient-checkpointing",
         "label": "Activation Checkpointing"
       },
       {
@@ -133,10 +112,6 @@
       {
         "id": "urn:ngm:class:deepspeed",
         "label": "DeepSpeed"
-      },
-      {
-        "id": "urn:ngm:class:instruction-pipelining",
-        "label": "Instruction Pipelining"
       }
     ]
   },

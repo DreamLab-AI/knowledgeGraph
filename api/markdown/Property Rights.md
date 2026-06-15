@@ -133,10 +133,6 @@ public:: true
       {
         "@id": "urn:ngm:class:open-access",
         "label": "Open Access"
-      },
-      {
-        "@id": "urn:ngm:class:commons",
-        "label": "Commons"
       }
     ],
     "relatedTo": [
@@ -151,10 +147,6 @@ public:: true
       {
         "@id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
-      },
-      {
-        "@id": "urn:ngm:class:land-registry",
-        "label": "Land Registry"
       }
     ],
     "bridgesTo": [

@@ -111,7 +111,7 @@ alias:: TC-0010-Synchronous-Collaboration
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:tc-0040-communication-protocols",
+        "@id": "urn:ngm:class:communication-protocols",
         "label": "TC-0040-Communication-Protocols"
       }
     ],

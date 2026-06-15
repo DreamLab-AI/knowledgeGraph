@@ -50,12 +50,8 @@
         "label": "User Experience"
       },
       {
-        "id": "urn:ngm:class:dynamic-content-delivery",
+        "id": "urn:ngm:class:content-delivery",
         "label": "Dynamic Content Delivery"
-      },
-      {
-        "id": "urn:ngm:class:customer-engagement",
-        "label": "Customer Engagement"
       }
     ],
     "dependsOn": [
@@ -73,16 +69,7 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:reactive-recommendation",
-        "label": "Reactive Recommendation"
-      },
-      {
-        "id": "urn:ngm:class:rule-based-personalization",
-        "label": "Rule-Based Personalization"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:privacy-by-design",

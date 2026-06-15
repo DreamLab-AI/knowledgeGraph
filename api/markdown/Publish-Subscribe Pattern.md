@@ -60,14 +60,6 @@ public:: true
       {
         "@id": "urn:ngm:class:message-broker",
         "label": "Message Broker"
-      },
-      {
-        "@id": "urn:ngm:class:event-channel",
-        "label": "Event Channel"
-      },
-      {
-        "@id": "urn:ngm:class:topic",
-        "label": "Topic"
       }
     ],
     "partOf": [
@@ -124,20 +116,12 @@ public:: true
       {
         "@id": "urn:ngm:class:serialisation",
         "label": "Serialisation"
-      },
-      {
-        "@id": "urn:ngm:class:content-based-routing",
-        "label": "Content-Based Routing"
       }
     ],
     "supports": [
       {
         "@id": "urn:ngm:class:microservices-architecture",
         "label": "Microservices Architecture"
-      },
-      {
-        "@id": "urn:ngm:class:iot-architecture",
-        "label": "IoT Architecture"
       }
     ],
     "standardizedBy": [
@@ -156,16 +140,8 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:request-reply-pattern",
-        "label": "Request-Reply Pattern"
-      },
-      {
         "@id": "urn:ngm:class:point-to-point-messaging",
         "label": "Point-to-Point Messaging"
-      },
-      {
-        "@id": "urn:ngm:class:polling-pattern",
-        "label": "Polling Pattern"
       }
     ],
     "bridgesTo": [
@@ -190,10 +166,6 @@ public:: true
       {
         "@id": "urn:ngm:class:cqrs",
         "label": "CQRS"
-      },
-      {
-        "@id": "urn:ngm:class:messaging-pattern",
-        "label": "Messaging Pattern"
       }
     ]
   },

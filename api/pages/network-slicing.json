@@ -18,16 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:virtualised-network-function",
-        "label": "Virtualised Network Function"
-      },
-      {
         "id": "urn:ngm:class:radio-access-network",
         "label": "Radio Access Network"
-      },
-      {
-        "id": "urn:ngm:class:service-function-chain",
-        "label": "Service Function Chain"
       }
     ],
     "requires": [
@@ -38,10 +30,6 @@
       {
         "id": "urn:ngm:class:network-function-virtualization",
         "label": "Network Function Virtualization"
-      },
-      {
-        "id": "urn:ngm:class:resource-orchestration",
-        "label": "Resource Orchestration"
       }
     ],
     "enables": [
@@ -72,38 +60,21 @@
         "label": "5G Core Network"
       },
       {
-        "id": "urn:ngm:class:segment-routing",
-        "label": "Segment Routing"
-      },
-      {
         "id": "urn:ngm:class:service-level-agreement",
         "label": "Service Level Agreement"
       }
     ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:3gpp-release-15",
-        "label": "3GPP Release 15"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:best-effort-networking",
         "label": "Best-Effort Networking"
-      },
-      {
-        "id": "urn:ngm:class:dedicated-hardware-provisioning",
-        "label": "Dedicated Hardware Provisioning"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:multi-access-edge-computing",
         "label": "MultiAccessEdgeComputing"
-      },
-      {
-        "id": "urn:ngm:class:intent-based-networking",
-        "label": "Intent-Based Networking"
       }
     ],
     "uses": [],
@@ -117,7 +88,7 @@
         "label": "Vehicle-to-Everything"
       },
       {
-        "id": "urn:ngm:class:industrial-iot",
+        "id": "urn:ngm:class:industrial-io-t",
         "label": "Industrial IoT"
       }
     ],

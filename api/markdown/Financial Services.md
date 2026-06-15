@@ -28,53 +28,139 @@
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:financial-industry", "label": "Financial Industry"},
-    {"@id": "urn:ngm:class:fintech", "label": "FinTech"}
+    {
+      "@id": "urn:ngm:class:financial-industry",
+      "label": "Financial Industry"
+    },
+    {
+      "@id": "urn:ngm:class:fintech",
+      "label": "FinTech"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:banking", "label": "Banking"},
-      {"@id": "urn:ngm:class:insurance", "label": "Insurance"},
-      {"@id": "urn:ngm:class:investment-management", "label": "Investment Management"},
-      {"@id": "urn:ngm:class:payment-systems", "label": "Payment Systems"},
-      {"@id": "urn:ngm:class:capital-markets", "label": "Capital Markets"},
-      {"@id": "urn:ngm:class:financial-instruments", "label": "Financial Instruments"}
+      {
+        "@id": "urn:ngm:class:banking",
+        "label": "Banking"
+      },
+      {
+        "@id": "urn:ngm:class:insurance",
+        "label": "Insurance"
+      },
+      {
+        "@id": "urn:ngm:class:investment-management",
+        "label": "Investment Management"
+      },
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment Systems"
+      },
+      {
+        "@id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      },
+      {
+        "@id": "urn:ngm:class:financial-instruments",
+        "label": "Financial Instruments"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
-      {"@id": "urn:ngm:class:financial-infrastructure", "label": "Financial Infrastructure"},
-      {"@id": "urn:ngm:class:kyc-aml", "label": "KYC/AML"}
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:kyc-aml",
+        "label": "KYC/AML"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:capital-allocation", "label": "Capital Allocation"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
-      {"@id": "urn:ngm:class:economic-growth", "label": "Economic Growth"},
-      {"@id": "urn:ngm:class:financial-inclusion", "label": "Financial Inclusion"}
+      {
+        "@id": "urn:ngm:class:capital-allocation",
+        "label": "Capital Allocation"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      },
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:api-economy", "label": "API Economy"}
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:api-economy",
+        "label": "API Economy"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:basel-iii", "label": "Basel III"},
-      {"@id": "urn:ngm:class:iso-20022", "label": "ISO 20022"},
-      {"@id": "urn:ngm:class:psd2", "label": "PSD2"}
+      {
+        "@id": "urn:ngm:class:basel-iii",
+        "label": "Basel III"
+      },
+      {
+        "@id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:shadow-banking", "label": "Shadow Banking"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:shadow-banking",
+        "label": "Shadow Banking"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"},
-      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"},
-      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"}
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:open-banking", "label": "Open Banking"},
-      {"@id": "urn:ngm:class:regulatory-technology", "label": "Regulatory Technology"}
+      {
+        "@id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      }
     ]
   },
   "provenance": {

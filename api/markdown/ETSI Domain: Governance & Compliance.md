@@ -114,11 +114,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:audit-systems",
+        "@id": "urn:ngm:class:audit",
         "label": "Audit Systems"
       },
       {
-        "@id": "urn:ngm:class:reporting-tools",
+        "@id": "urn:ngm:class:reporting-mechanisms",
         "label": "Reporting Tools"
       },
       {

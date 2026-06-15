@@ -18,15 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:prepare-phase",
-        "label": "Prepare Phase"
-      },
-      {
         "id": "urn:ngm:class:commit-phase",
         "label": "Commit Phase"
       },
       {
-        "id": "urn:ngm:class:transaction-coordinator",
+        "id": "urn:ngm:class:transaction-manager",
         "label": "Transaction Coordinator"
       }
     ],
@@ -36,7 +32,7 @@
         "label": "Write-Ahead Logging"
       },
       {
-        "id": "urn:ngm:class:durable-storage",
+        "id": "urn:ngm:class:persistent-storage",
         "label": "Durable Storage"
       }
     ],
@@ -56,20 +52,11 @@
         "label": "Crash Recovery"
       }
     ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:atomic-commitment-protocol",
-        "label": "Atomic Commitment Protocol"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:raft-consensus",
         "label": "RAFT Consensus"
-      },
-      {
-        "id": "urn:ngm:class:three-phase-commit",
-        "label": "Three-Phase Commit"
       },
       {
         "id": "urn:ngm:class:saga-pattern",
@@ -86,7 +73,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:cross-chain-atomic-swap",
+        "id": "urn:ngm:class:atomic-swap",
         "label": "Cross-Chain Atomic Swap"
       }
     ],
@@ -104,23 +91,15 @@
       {
         "id": "urn:ngm:class:relational-database",
         "label": "Relational Database"
-      },
-      {
-        "id": "urn:ngm:class:microservice-architecture",
-        "label": "Microservice Architecture"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-iec-standard",
+        "id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC Standard"
       }
     ],
     "partOf": [
-      {
-        "id": "urn:ngm:class:xa-protocol",
-        "label": "XA Protocol"
-      },
       {
         "id": "urn:ngm:class:distributed-transaction",
         "label": "Distributed Transaction"

@@ -21,10 +21,6 @@
       {
         "id": "urn:ngm:class:elliptic-curve-parameters",
         "label": "Elliptic Curve Parameters"
-      },
-      {
-        "id": "urn:ngm:class:cryptographically-secure-prng",
-        "label": "Cryptographically Secure PRNG"
       }
     ],
     "enables": [
@@ -61,7 +57,7 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public-Key Cryptography"
       },
       {
@@ -87,10 +83,6 @@
       {
         "id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:pki",
-        "label": "Public Key Infrastructure"
       }
     ],
     "uses": [
@@ -141,10 +133,6 @@
       {
         "id": "urn:ngm:class:nist",
         "label": "NIST"
-      },
-      {
-        "id": "urn:ngm:class:ansi-x9-62",
-        "label": "ANSI X9.62"
       },
       {
         "id": "urn:ngm:class:sec-standards",

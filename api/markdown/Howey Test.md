@@ -23,54 +23,89 @@ public:: true
   "definition": "The Howey Test is a four-part legal framework established by the U.S. Supreme Court in SEC v. W.J. Howey Co. (1946) to determine whether a transaction qualifies as an 'investment contract' and therefore constitutes a security subject to federal securities regulation. An instrument is a security if it involves (1) an investment of money, (2) in a common enterprise, (3) with an expectation of profits, (4) derived from the efforts of others.",
   "domain": "blockchain",
   "maturity": "mature",
-  "subClassOf": {"@id": "urn:ngm:class:investment-contract-analysis", "label": "Investment Contract Analysis"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:investment-contract-analysis",
+    "label": "Investment Contract Analysis"
+  },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:securities-regulation", "label": "Securities Regulation"},
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}
-    ],
-    "requires": [
-      {"@id": "urn:ngm:class:common-enterprise", "label": "Common Enterprise"},
-      {"@id": "urn:ngm:class:investment-of-money", "label": "Investment of Money"},
-      {"@id": "urn:ngm:class:expectation-of-profits", "label": "Expectation of Profits"},
-      {"@id": "urn:ngm:class:efforts-of-others", "label": "Efforts of Others"}
+      {
+        "@id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:sec-enforcement-action", "label": "SEC Enforcement Action"},
-      {"@id": "urn:ngm:class:security-token-registration", "label": "Security Token Registration"}
+      {
+        "@id": "urn:ngm:class:enforcement-action",
+        "label": "SEC Enforcement Action"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:securities-act-1933", "label": "Securities Act 1933"},
-      {"@id": "urn:ngm:class:securities-exchange-act-1934", "label": "Securities Exchange Act 1934"}
+      {
+        "@id": "urn:ngm:class:securities-act-1933",
+        "label": "Securities Act 1933"
+      },
+      {
+        "@id": "urn:ngm:class:securities-exchange-act-1934",
+        "label": "Securities Exchange Act 1934"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:investment-contract", "label": "Investment Contract"},
-      {"@id": "urn:ngm:class:economic-substance-test", "label": "Economic Substance Test"}
+      {
+        "@id": "urn:ngm:class:economic-substance-test",
+        "label": "Economic Substance Test"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:investor-protection", "label": "Investor Protection"},
-      {"@id": "urn:ngm:class:securities-disclosure", "label": "Securities Disclosure"}
+      {
+        "@id": "urn:ngm:class:investor-protection",
+        "label": "Investor Protection"
+      },
+      {
+        "@id": "urn:ngm:class:securities-disclosure",
+        "label": "Securities Disclosure"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:commodity-classification", "label": "Commodity Classification"},
-      {"@id": "urn:ngm:class:reves-test", "label": "Reves Test"},
-      {"@id": "urn:ngm:class:eu-mica-regulation", "label": "EU MiCA Regulation"}
+      {
+        "@id": "urn:ngm:class:eu-mi-ca-regulation",
+        "label": "EU MiCA Regulation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:security-token-offering", "label": "Security Token Offering"},
-      {"@id": "urn:ngm:class:initial-coin-offering", "label": "Initial Coin Offering"},
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"},
-      {"@id": "urn:ngm:class:crypto-token-classification", "label": "Crypto Token Classification"}
+      {
+        "@id": "urn:ngm:class:security-token-offering",
+        "label": "Security Token Offering"
+      },
+      {
+        "@id": "urn:ngm:class:initial-coin-offering",
+        "label": "Initial Coin Offering"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-asset-regulation", "label": "Digital Asset Regulation"},
-      {"@id": "urn:ngm:class:ripple-xrp-litigation", "label": "Ripple XRP Litigation"},
-      {"@id": "urn:ngm:class:dao-report-2017", "label": "DAO Report 2017"}
+      {
+        "@id": "urn:ngm:class:digital-asset-regulation",
+        "label": "Digital Asset Regulation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:investment-contract-test", "label": "Investment Contract Test"},
-    {"@id": "urn:ngm:class:sec-v-howey-standard", "label": "SEC v Howey Standard"}
+    {
+      "@id": "urn:ngm:class:investment-contract-test",
+      "label": "Investment Contract Test"
+    },
+    {
+      "@id": "urn:ngm:class:sec-v-howey-standard",
+      "label": "SEC v Howey Standard"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

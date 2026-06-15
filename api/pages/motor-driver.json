@@ -26,7 +26,7 @@
         "label": "Gate Driver"
       },
       {
-        "id": "urn:ngm:class:current-sensing",
+        "id": "urn:ngm:class:current-sensor",
         "label": "Current Sensing"
       }
     ],
@@ -113,7 +113,7 @@
         "label": "Stepper Motor"
       },
       {
-        "id": "urn:ngm:class:brushless-dc-motor",
+        "id": "urn:ngm:class:dc-servo-motor",
         "label": "Brushless DC Motor"
       }
     ],

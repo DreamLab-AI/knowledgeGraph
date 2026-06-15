@@ -121,7 +121,7 @@ alias:: BC-0427-hyperledger-besu
         "label": "Consensus Protocol"
       },
       {
-        "@id": "urn:ngm:class:ethereum-virtual-machine",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       },
       {
@@ -133,7 +133,7 @@ alias:: BC-0427-hyperledger-besu
         "label": "Practical Byzantine Fault Tolerance"
       },
       {
-        "@id": "urn:ngm:class:json-rpc",
+        "@id": "urn:ngm:class:json-data-interchange-format-rpc",
         "label": "JSON-RPC"
       }
     ],
@@ -183,20 +183,12 @@ alias:: BC-0427-hyperledger-besu
       {
         "@id": "urn:ngm:class:hyperledger-fabric",
         "label": "Hyperledger Fabric"
-      },
-      {
-        "@id": "urn:ngm:class:geth",
-        "label": "Geth"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:ethereum-network",
+        "@id": "urn:ngm:class:ethereum",
         "label": "Ethereum Network"
-      },
-      {
-        "@id": "urn:ngm:class:node-identity-permissioning",
-        "label": "Node Identity Permissioning"
       }
     ],
     "enables": [
@@ -210,10 +202,6 @@ alias:: BC-0427-hyperledger-besu
       }
     ],
     "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:interledger-protocol",
-        "label": "Interledger Protocol"
-      },
       {
         "@id": "urn:ngm:class:decentralized-finance",
         "label": "Decentralized Finance"
@@ -231,7 +219,7 @@ alias:: BC-0427-hyperledger-besu
         "label": "Blockchain"
       },
       {
-        "@id": "urn:ngm:class:enterprise-blockchain-client",
+        "@id": "urn:ngm:class:enterprise-blockchain",
         "label": "Enterprise Blockchain Client"
       }
     ]

@@ -104,10 +104,6 @@ public:: true
         "label": "Enforcement Mechanism"
       },
       {
-        "@id": "urn:ngm:class:technical-safeguards",
-        "label": "Technical Safeguards"
-      },
-      {
         "@id": "urn:ngm:class:legal-framework",
         "label": "Legal Framework"
       },
@@ -120,10 +116,6 @@ public:: true
       {
         "@id": "urn:ngm:class:data-sovereignty",
         "label": "Data Sovereignty"
-      },
-      {
-        "@id": "urn:ngm:class:digital-freedom",
-        "label": "Digital Freedom"
       },
       {
         "@id": "urn:ngm:class:privacy-protection",
@@ -148,7 +140,7 @@ public:: true
         "label": "Digital Services Act"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
@@ -170,10 +162,6 @@ public:: true
       {
         "@id": "urn:ngm:class:digital-inclusion",
         "label": "Digital Inclusion"
-      },
-      {
-        "@id": "urn:ngm:class:open-internet",
-        "label": "Open Internet"
       }
     ],
     "contrastsWith": [
@@ -210,7 +198,7 @@ public:: true
         "label": "Net Neutrality"
       },
       {
-        "@id": "urn:ngm:class:intellectual-property",
+        "@id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Intellectual Property"
       }
     ]

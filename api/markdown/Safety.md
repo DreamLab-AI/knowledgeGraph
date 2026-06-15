@@ -108,30 +108,12 @@ public:: true
         "label": "Hazard Analysis"
       },
       {
-        "@id": "urn:ngm:class:risk-assessment-ai-0079",
+        "@id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment (AI-0079)"
       },
       {
         "@id": "urn:ngm:class:human-oversight",
         "label": "Human Oversight"
-      },
-      {
-        "@id": "urn:ngm:class:fail-safe-design",
-        "label": "Fail-Safe Design"
-      }
-    ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:physical-safety",
-        "label": "Physical Safety"
-      },
-      {
-        "@id": "urn:ngm:class:operational-safety",
-        "label": "Operational Safety"
-      },
-      {
-        "@id": "urn:ngm:class:societal-safety",
-        "label": "Societal Safety"
       }
     ],
     "enables": [
@@ -178,7 +160,7 @@ public:: true
         "label": "ISO 26262"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
@@ -200,10 +182,6 @@ public:: true
       {
         "@id": "urn:ngm:class:infrastructure",
         "label": "Infrastructure"
-      },
-      {
-        "@id": "urn:ngm:class:politics-law-privacy",
-        "label": "Politics, Law, Privacy"
       }
     ],
     "relatedTo": [

@@ -24,52 +24,124 @@ alias:: Multi Party Computation
   "definition": "Multi-Party Computation (MPC) is a subfield of cryptography that enables a set of mutually distrusting parties to jointly compute a function over their private inputs without revealing those inputs to any other participant. Correctness is guaranteed even when a bounded subset of participants behave maliciously, making MPC a cornerstone of privacy-preserving collaborative computation. The technique generalises two-party secure computation to arbitrary numbers of participants using secret-sharing or garbled-circuit protocols.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:cryptography",
+    "label": "Cryptography"
+  },
   "sameAs": [
-    {"@id": "urn:ngm:class:secure-multi-party-computation", "label": "Secure Multi-Party Computation"},
-    {"@id": "urn:ngm:class:mpc", "label": "MPC"}
+    {
+      "@id": "urn:ngm:class:secure-multi-party-computation",
+      "label": "Secure Multi-Party Computation"
+    },
+    {
+      "@id": "urn:ngm:class:mpc",
+      "label": "MPC"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:secret-sharing", "label": "Secret Sharing"},
-      {"@id": "urn:ngm:class:oblivious-transfer", "label": "Oblivious Transfer"},
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}
+      {
+        "@id": "urn:ngm:class:secret-sharing",
+        "label": "Secret Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:oblivious-transfer",
+        "label": "Oblivious Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
-      {"@id": "urn:ngm:class:garbled-circuits", "label": "Garbled Circuits"},
-      {"@id": "urn:ngm:class:boolean-circuit", "label": "Boolean Circuit"},
-      {"@id": "urn:ngm:class:arithmetic-circuit", "label": "Arithmetic Circuit"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:garbled-circuits",
+        "label": "Garbled Circuits"
+      },
+      {
+        "@id": "urn:ngm:class:arithmetic-circuit",
+        "label": "Arithmetic Circuit"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:privacy-preserving-data-sharing", "label": "Privacy Preserving Data Sharing"},
-      {"@id": "urn:ngm:class:privacy-preserving-analytics", "label": "Privacy Preserving Analytics"},
-      {"@id": "urn:ngm:class:private-set-intersection", "label": "Private Set Intersection"},
-      {"@id": "urn:ngm:class:threshold-key-management", "label": "Threshold Key Management"},
-      {"@id": "urn:ngm:class:verifiable-computation", "label": "Verifiable Computation"}
+      {
+        "@id": "urn:ngm:class:privacy-preserving-data-sharing",
+        "label": "Privacy Preserving Data Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-analytics",
+        "label": "Privacy Preserving Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:private-set-intersection",
+        "label": "Private Set Intersection"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-computation",
+        "label": "Verifiable Computation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:threshold-cryptography", "label": "Threshold Cryptography"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"},
-      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
-      {"@id": "urn:ngm:class:trusted-execution-environment", "label": "Trusted Execution Environment"}
+      {
+        "@id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:computational-hardness-assumption", "label": "Computational Hardness Assumption"},
-      {"@id": "urn:ngm:class:authenticated-channel", "label": "Authenticated Channel"}
+      {
+        "@id": "urn:ngm:class:computational-hardness-assumption",
+        "label": "Computational Hardness Assumption"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
-      {"@id": "urn:ngm:class:data-sovereignty", "label": "Data Sovereignty"}
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:digital-asset-custody", "label": "Digital Asset Custody"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-custody",
+        "label": "Digital Asset Custody"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:trusted-third-party", "label": "Trusted Third Party"}
+      {
+        "@id": "urn:ngm:class:trusted-third-party",
+        "label": "Trusted Third Party"
+      }
     ]
   },
   "quality": 0.75,

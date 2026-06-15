@@ -23,58 +23,151 @@ public:: true
   "definition": "Privacy-preserving authentication encompasses cryptographic mechanisms that allow a party to prove identity, membership, or credential possession to a verifier without revealing the underlying identity attributes, credential content, or linkage information across sessions. Core techniques include zero-knowledge proofs, anonymous credentials (e.g., U-Prove, BBS+), blind signatures, and selective disclosure, enabling authentication that is both unforgeable and unlinkable. The goal is to satisfy verifier assurance requirements while minimising the personal data exposed in each authentication event.",
   "domain": "security",
   "maturity": "emerging",
-  "subClassOf": {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:authentication",
+    "label": "Authentication"
+  },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof-zkp", "label": "Zero-Knowledge Proof (ZKP)"},
-      {"@id": "urn:ngm:class:blind-signature", "label": "Blind Signature"},
-      {"@id": "urn:ngm:class:bbs-plus-signature", "label": "BBS+ Signature"},
-      {"@id": "urn:ngm:class:ring-signature", "label": "Ring Signature"}
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof-zkp",
+        "label": "Zero-Knowledge Proof (ZKP)"
+      },
+      {
+        "@id": "urn:ngm:class:blind-signatures",
+        "label": "Blind Signature"
+      },
+      {
+        "@id": "urn:ngm:class:bbs-signature",
+        "label": "BBS+ Signature"
+      },
+      {
+        "@id": "urn:ngm:class:ring-signature",
+        "label": "Ring Signature"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:credential-issuer", "label": "Credential Issuer"},
-      {"@id": "urn:ngm:class:commitment-scheme", "label": "Commitment Scheme"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:credential-issuer",
+        "label": "Credential Issuer"
+      },
+      {
+        "@id": "urn:ngm:class:commitment-scheme",
+        "label": "Commitment Scheme"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:anonymous-credential-system", "label": "Anonymous Credential System"},
-      {"@id": "urn:ngm:class:unlinkable-authentication", "label": "Unlinkable Authentication"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:anonymous-credential-system",
+        "label": "Anonymous Credential System"
+      },
+      {
+        "@id": "urn:ngm:class:unlinkable-authentication",
+        "label": "Unlinkable Authentication"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:selective-disclosure", "label": "Selective Disclosure"},
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
-      {"@id": "urn:ngm:class:minimal-disclosure-principle", "label": "Minimal Disclosure Principle"}
+      {
+        "@id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "@id": "urn:ngm:class:minimal-disclosure-principle",
+        "label": "Minimal Disclosure Principle"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:digital-identity-wallet", "label": "Digital Identity Wallet"},
-      {"@id": "urn:ngm:class:age-verification", "label": "Age Verification"}
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:age-verification",
+        "label": "Age Verification"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:w3c-verifiable-credentials-data-model", "label": "W3C Verifiable Credentials Data Model"},
-      {"@id": "urn:ngm:class:ietf-sd-jwt", "label": "IETF SD-JWT"},
-      {"@id": "urn:ngm:class:eidas-2", "label": "eIDAS 2.0"}
+      {
+        "@id": "urn:ngm:class:w-3-c-verifiable-credentials-data-model",
+        "label": "W3C Verifiable Credentials Data Model"
+      },
+      {
+        "@id": "urn:ngm:class:sd-jwt",
+        "label": "IETF SD-JWT"
+      },
+      {
+        "@id": "urn:ngm:class:e-idas-2-0",
+        "label": "eIDAS 2.0"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:federated-identity", "label": "Federated Identity"},
-      {"@id": "urn:ngm:class:oauth", "label": "OAuth"}
+      {
+        "@id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "@id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:privacy-preserving-identity", "label": "Privacy-Preserving Identity"},
-      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-identity",
+        "label": "Privacy-Preserving Identity"
+      },
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"},
-      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"}
+      {
+        "@id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:anonymous-authentication", "label": "Anonymous Authentication"},
-    {"@id": "urn:ngm:class:privacy-enhanced-authentication", "label": "Privacy-Enhanced Authentication"}
+    {
+      "@id": "urn:ngm:class:anonymous-authentication",
+      "label": "Anonymous Authentication"
+    },
+    {
+      "@id": "urn:ngm:class:privacy-enhanced-authentication",
+      "label": "Privacy-Enhanced Authentication"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -22,20 +22,8 @@
         "label": "Search Engine Optimisation"
       },
       {
-        "id": "urn:ngm:class:content-marketing",
-        "label": "Content Marketing"
-      },
-      {
-        "id": "urn:ngm:class:email-marketing",
-        "label": "Email Marketing"
-      },
-      {
         "id": "urn:ngm:class:programmatic-advertising",
         "label": "Programmatic Advertising"
-      },
-      {
-        "id": "urn:ngm:class:social-media-marketing",
-        "label": "Social Media Marketing"
       }
     ],
     "requires": [
@@ -46,10 +34,6 @@
       {
         "id": "urn:ngm:class:audience-segmentation",
         "label": "Audience Segmentation"
-      },
-      {
-        "id": "urn:ngm:class:attribution-modelling",
-        "label": "Attribution Modelling"
       }
     ],
     "enables": [

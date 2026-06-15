@@ -118,10 +118,6 @@ public:: true
         "label": "Network Latency"
       },
       {
-        "@id": "urn:ngm:class:high-bandwidth-networking",
-        "label": "High Bandwidth Networking"
-      },
-      {
         "@id": "urn:ngm:class:gpu-acceleration",
         "label": "GPU Acceleration"
       },
@@ -144,7 +140,7 @@ public:: true
         "label": "Digital Twin"
       },
       {
-        "@id": "urn:ngm:class:multiplayer-gaming",
+        "@id": "urn:ngm:class:gaming",
         "label": "Multiplayer Gaming"
       }
     ],

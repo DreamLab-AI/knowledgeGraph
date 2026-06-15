@@ -148,15 +148,11 @@ public:: true
         "label": "Access Control Module"
       },
       {
-        "@id": "urn:ngm:class:content-encryption-engine",
-        "label": "Content Encryption Engine"
-      },
-      {
-        "@id": "urn:ngm:class:intellectual-property-licence-instrument-management-system",
+        "@id": "urn:ngm:class:intellectual-property-licence-instrument",
         "label": "License Management System"
       },
       {
-        "@id": "urn:ngm:class:usage-tracking-system",
+        "@id": "urn:ngm:class:tracking-system",
         "label": "Usage Tracking System"
       },
       {
@@ -188,7 +184,7 @@ public:: true
         "label": "Piracy Prevention"
       },
       {
-        "@id": "urn:ngm:class:usage-rights-enforcement",
+        "@id": "urn:ngm:class:digital-rights-management",
         "label": "Usage Rights Enforcement"
       },
       {
@@ -198,7 +194,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:content-protection-infrastructure",
+        "@id": "urn:ngm:class:content-protection",
         "label": "Content Protection Infrastructure"
       }
     ]

@@ -22,16 +22,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:hash-computation",
+        "id": "urn:ngm:class:cryptographic-hash-function",
         "label": "Hash Computation"
-      },
-      {
-        "id": "urn:ngm:class:scope-bearer",
-        "label": "Scope Bearer"
-      },
-      {
-        "id": "urn:ngm:class:slug-derivation",
-        "label": "Slug Derivation"
       },
       {
         "id": "urn:ngm:class:content-addressing",
@@ -40,27 +32,19 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:bip-340-pubkey",
+        "id": "urn:ngm:class:bip-340",
         "label": "BIP-340 Pubkey"
       },
       {
-        "id": "urn:ngm:class:json-data-interchange-format-stringification",
+        "id": "urn:ngm:class:json-data-interchange-format-serialisation",
         "label": "JSON Stringification"
       },
       {
-        "id": "urn:ngm:class:sha-256-hash-function",
+        "id": "urn:ngm:class:sha-256",
         "label": "SHA-256 Hash Function"
-      },
-      {
-        "id": "urn:ngm:class:uri-rfc-8141",
-        "label": "URI RFC 8141"
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:decentralised-resolution",
-        "label": "Decentralised Resolution"
-      },
       {
         "id": "urn:ngm:class:deterministic-serialisation",
         "label": "Deterministic Serialisation"
@@ -76,14 +60,6 @@
     ],
     "dependsOn": [],
     "implements": [
-      {
-        "id": "urn:ngm:class:ietf-content-addressable-architecture",
-        "label": "IETF Content-Addressable Architecture"
-      },
-      {
-        "id": "urn:ngm:class:rfc-8141-urn-syntax",
-        "label": "RFC 8141 URN Syntax"
-      },
       {
         "id": "urn:ngm:class:w3-c-did-core",
         "label": "W3C DID Core"

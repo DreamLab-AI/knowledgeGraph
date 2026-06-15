@@ -23,56 +23,121 @@ public:: true
   "definition": "Feature detection is the programmatic technique of querying a runtime environment to determine whether a specific capability, API, or behaviour is available before invoking it, rather than inferring support from user-agent strings or version numbers. In computer vision, it also denotes the algorithmic identification of salient points, edges, or regions within images that carry discriminative information for downstream tasks.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:runtime-inspection", "label": "Runtime Inspection"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:runtime-inspection",
+      "label": "Runtime Inspection"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
-      {"@id": "urn:ngm:class:progressive-enhancement", "label": "Progressive Enhancement"},
-      {"@id": "urn:ngm:class:graceful-degradation", "label": "Graceful Degradation"},
-      {"@id": "urn:ngm:class:image-segmentation", "label": "Image Segmentation"},
-      {"@id": "urn:ngm:class:augmented-reality-tracking", "label": "Augmented Reality Tracking"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:graceful-degradation",
+        "label": "Graceful Degradation"
+      },
+      {
+        "@id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality-tracking",
+        "label": "Augmented Reality Tracking"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:runtime-environment", "label": "Runtime Environment"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:keypoint-descriptor", "label": "Keypoint Descriptor"},
-      {"@id": "urn:ngm:class:image-processing", "label": "Image Processing"}
+      {
+        "@id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:computer-vision-system", "label": "Computer Vision System"},
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
-      {"@id": "urn:ngm:class:webxr", "label": "WebXR"},
-      {"@id": "urn:ngm:class:cross-browser-compatibility", "label": "Cross-Browser Compatibility"}
+      {
+        "@id": "urn:ngm:class:computer-vision-system",
+        "label": "Computer Vision System"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:webxr",
+        "label": "WebXR"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:sensor-data", "label": "Sensor Data"},
-      {"@id": "urn:ngm:class:capability-api", "label": "Capability API"}
+      {
+        "@id": "urn:ngm:class:sensor-data",
+        "label": "Sensor Data"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"},
-      {"@id": "urn:ngm:class:browser-api", "label": "Browser API"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:user-agent-sniffing", "label": "User-Agent Sniffing"},
-      {"@id": "urn:ngm:class:version-detection", "label": "Version Detection"}
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:edge-detection", "label": "Edge Detection"},
-      {"@id": "urn:ngm:class:corner-detection", "label": "Corner Detection"},
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
-      {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:edge-detection",
+        "label": "Edge Detection"
+      },
+      {
+        "@id": "urn:ngm:class:corner-detection",
+        "label": "Corner Detection"
+      },
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:capability-detection", "label": "Capability Detection"},
-    {"@id": "urn:ngm:class:keypoint-detection", "label": "Keypoint Detection"}
+    {
+      "@id": "urn:ngm:class:capability-detection",
+      "label": "Capability Detection"
+    },
+    {
+      "@id": "urn:ngm:class:keypoint-detection",
+      "label": "Keypoint Detection"
+    }
   ],
   "quality": 0.72,
   "provenance": {

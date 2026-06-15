@@ -42,20 +42,12 @@
       {
         "id": "urn:ngm:class:browser-engine",
         "label": "Browser Engine"
-      },
-      {
-        "id": "urn:ngm:class:vendor-implementation",
-        "label": "Vendor Implementation"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:web-interoperability",
+        "id": "urn:ngm:class:interoperability",
         "label": "Web Interoperability"
-      },
-      {
-        "id": "urn:ngm:class:open-web-platform",
-        "label": "Open Web Platform"
       },
       {
         "id": "urn:ngm:class:progressive-web-app",
@@ -69,10 +61,6 @@
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:proprietary-technology",
-        "label": "Proprietary Technology"
-      },
       {
         "id": "urn:ngm:class:vendor-lock-in",
         "label": "Vendor Lock-in"
@@ -97,10 +85,6 @@
       {
         "id": "urn:ngm:class:accessibility",
         "label": "Accessibility"
-      },
-      {
-        "id": "urn:ngm:class:web-security",
-        "label": "Web Security"
       },
       {
         "id": "urn:ngm:class:privacy",

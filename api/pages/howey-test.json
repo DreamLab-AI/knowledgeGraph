@@ -17,32 +17,11 @@
   "maturity": "mature",
   "relationships": {
     "hasPart": [],
-    "requires": [
-      {
-        "id": "urn:ngm:class:common-enterprise",
-        "label": "Common Enterprise"
-      },
-      {
-        "id": "urn:ngm:class:investment-of-money",
-        "label": "Investment of Money"
-      },
-      {
-        "id": "urn:ngm:class:expectation-of-profits",
-        "label": "Expectation of Profits"
-      },
-      {
-        "id": "urn:ngm:class:efforts-of-others",
-        "label": "Efforts of Others"
-      }
-    ],
+    "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:sec-enforcement-action",
+        "id": "urn:ngm:class:enforcement-action",
         "label": "SEC Enforcement Action"
-      },
-      {
-        "id": "urn:ngm:class:security-token-registration",
-        "label": "Security Token Registration"
       }
     ],
     "dependsOn": [
@@ -58,15 +37,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:commodity-classification",
-        "label": "Commodity Classification"
-      },
-      {
-        "id": "urn:ngm:class:reves-test",
-        "label": "Reves Test"
-      },
-      {
-        "id": "urn:ngm:class:eu-mica-regulation",
+        "id": "urn:ngm:class:eu-mi-ca-regulation",
         "label": "EU MiCA Regulation"
       }
     ],
@@ -82,17 +53,9 @@
       {
         "id": "urn:ngm:class:decentralised-autonomous-organisation",
         "label": "Decentralised Autonomous Organisation"
-      },
-      {
-        "id": "urn:ngm:class:crypto-token-classification",
-        "label": "Crypto Token Classification"
       }
     ],
     "uses": [
-      {
-        "id": "urn:ngm:class:investment-contract",
-        "label": "Investment Contract"
-      },
       {
         "id": "urn:ngm:class:economic-substance-test",
         "label": "Economic Substance Test"
@@ -123,14 +86,6 @@
       {
         "id": "urn:ngm:class:digital-asset-regulation",
         "label": "Digital Asset Regulation"
-      },
-      {
-        "id": "urn:ngm:class:ripple-xrp-litigation",
-        "label": "Ripple XRP Litigation"
-      },
-      {
-        "id": "urn:ngm:class:dao-report-2017",
-        "label": "DAO Report 2017"
       }
     ]
   },

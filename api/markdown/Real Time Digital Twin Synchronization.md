@@ -66,12 +66,6 @@ alias:: Real-Time Digital Twin Synchronization
         "@id": "urn:ngm:class:digital-twin-technology",
         "label": "Digital Twin Technology"
       }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:virtual-real-interaction",
-        "label": "Virtual Real Interaction"
-      }
     ]
   },
   "quality": 0.35,

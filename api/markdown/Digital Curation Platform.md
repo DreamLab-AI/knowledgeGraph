@@ -145,20 +145,15 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-asset-management", "label": "Digital Asset Management"}
+      {
+        "@id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      }
     ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:content-repository",
         "label": "Content Repository"
-      },
-      {
-        "@id": "urn:ngm:class:metadata-manager",
-        "label": "Metadata Manager"
-      },
-      {
-        "@id": "urn:ngm:class:preservation-engine",
-        "label": "Preservation Engine"
       },
       {
         "@id": "urn:ngm:class:versioning-system",
@@ -196,10 +191,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:collection-management",
-        "label": "Collection Management"
-      },
       {
         "@id": "urn:ngm:class:content-discovery",
         "label": "Content Discovery"

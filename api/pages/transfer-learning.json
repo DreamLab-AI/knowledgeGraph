@@ -26,7 +26,7 @@
         "label": "Domain Adaptation"
       },
       {
-        "id": "urn:ngm:class:adapter-layers",
+        "id": "urn:ngm:class:adapter-modules",
         "label": "Adapter Layers"
       },
       {
@@ -38,10 +38,6 @@
       {
         "id": "urn:ngm:class:pre-trained-model",
         "label": "Pre-trained Model"
-      },
-      {
-        "id": "urn:ngm:class:feature-representation",
-        "label": "Feature Representation"
       }
     ],
     "enables": [
@@ -58,7 +54,7 @@
         "label": "Zero-Shot Learning"
       },
       {
-        "id": "urn:ngm:class:foundation-models",
+        "id": "urn:ngm:class:foundation-model",
         "label": "Foundation Models"
       }
     ],
@@ -77,10 +73,6 @@
       {
         "id": "urn:ngm:class:training-from-scratch",
         "label": "Training From Scratch"
-      },
-      {
-        "id": "urn:ngm:class:multitask-learning",
-        "label": "Multitask Learning"
       }
     ],
     "bridgesTo": [

@@ -20,18 +20,6 @@
       {
         "id": "urn:ngm:class:arrows-impossibility-theorem",
         "label": "Arrow's Impossibility Theorem"
-      },
-      {
-        "id": "urn:ngm:class:gibbard-satterthwaite-theorem",
-        "label": "Gibbard-Satterthwaite Theorem"
-      },
-      {
-        "id": "urn:ngm:class:condorcet-method",
-        "label": "Condorcet Method"
-      },
-      {
-        "id": "urn:ngm:class:welfare-function",
-        "label": "Welfare Function"
       }
     ],
     "requires": [
@@ -130,10 +118,6 @@
       {
         "id": "urn:ngm:class:political-science",
         "label": "Political Science"
-      },
-      {
-        "id": "urn:ngm:class:axiomatic-method",
-        "label": "Axiomatic Method"
       }
     ]
   },

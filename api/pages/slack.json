@@ -22,12 +22,8 @@
         "label": "Channel"
       },
       {
-        "id": "urn:ngm:class:workflow-builder",
+        "id": "urn:ngm:class:workflow-engine",
         "label": "Workflow Builder"
-      },
-      {
-        "id": "urn:ngm:class:slack-app-directory",
-        "label": "Slack App Directory"
       }
     ],
     "requires": [
@@ -52,10 +48,6 @@
       {
         "id": "urn:ngm:class:incident-management",
         "label": "Incident Management"
-      },
-      {
-        "id": "urn:ngm:class:chatops",
-        "label": "ChatOps"
       }
     ],
     "dependsOn": [],
@@ -63,10 +55,6 @@
       {
         "id": "urn:ngm:class:real-time-messaging",
         "label": "Real-Time Messaging"
-      },
-      {
-        "id": "urn:ngm:class:freemium-model",
-        "label": "Freemium Model"
       }
     ],
     "contrastsWith": [
@@ -126,10 +114,6 @@
       {
         "id": "urn:ngm:class:distributed-team-collaboration",
         "label": "Distributed Team Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:enterprise-social-networking",
-        "label": "Enterprise Social Networking"
       },
       {
         "id": "urn:ngm:class:devops",

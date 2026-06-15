@@ -578,26 +578,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:cbdc-api",
-        "label": "CBDC API"
-      },
-      {
-        "@id": "urn:ngm:class:cbdc-ledger",
-        "label": "CBDC Ledger"
-      },
-      {
-        "@id": "urn:ngm:class:cbdc-wallet",
-        "label": "CBDC Wallet"
-      },
-      {
-        "@id": "urn:ngm:class:distribution-tier",
-        "label": "Distribution Tier"
-      },
-      {
-        "@id": "urn:ngm:class:offline-cbdc",
-        "label": "Offline CBDC"
-      },
-      {
         "@id": "urn:ngm:class:programmable-money",
         "label": "Programmable Money"
       },
@@ -654,10 +634,6 @@ public:: true
         "label": "Monetary Policy Transmission"
       },
       {
-        "@id": "urn:ngm:class:offline-payments",
-        "label": "Offline Payments"
-      },
-      {
         "@id": "urn:ngm:class:programmable-money",
         "label": "Programmable Money"
       },
@@ -676,20 +652,12 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:centralised-ledger-design",
-        "label": "Centralised Ledger Design"
-      },
-      {
-        "@id": "urn:ngm:class:dlt-ledger-design",
+        "@id": "urn:ngm:class:distributed-ledger-technology-dlt",
         "label": "DLT Ledger Design"
       },
       {
         "@id": "urn:ngm:class:interoperability-protocol",
         "label": "Interoperability Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:tiered-anonymity",
-        "label": "Tiered Anonymity"
       },
       {
         "@id": "urn:ngm:class:two-tier-distribution-model",
@@ -740,10 +708,6 @@ public:: true
         "label": "Digital Pound"
       },
       {
-        "@id": "urn:ngm:class:digital-yuan",
-        "label": "Digital Yuan"
-      },
-      {
         "@id": "urn:ngm:class:financial-inclusion",
         "label": "Financial Inclusion"
       },
@@ -778,16 +742,8 @@ public:: true
         "label": "Anti-Money Laundering"
       },
       {
-        "@id": "urn:ngm:class:currency-internationalisation",
-        "label": "Currency Internationalisation"
-      },
-      {
         "@id": "urn:ngm:class:financial-stability",
         "label": "Financial Stability"
-      },
-      {
-        "@id": "urn:ngm:class:payment-efficiency",
-        "label": "Payment Efficiency"
       },
       {
         "@id": "urn:ngm:class:sanctions-enforcement",
@@ -802,10 +758,6 @@ public:: true
       {
         "@id": "urn:ngm:class:basel-committee",
         "label": "Basel Committee"
-      },
-      {
-        "@id": "urn:ngm:class:bis-cpmi-standards",
-        "label": "BIS CPMI Standards"
       },
       {
         "@id": "urn:ngm:class:ecb-digital-euro-regulation",

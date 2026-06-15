@@ -61,51 +61,119 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
-      {"@id": "urn:ngm:class:360-degree-video", "label": "360-Degree Video"},
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"}
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:360-degree-video",
+        "label": "360-Degree Video"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:volumetric-capture", "label": "Volumetric Capture"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:3d-modeling", "label": "3D Modeling"},
-      {"@id": "urn:ngm:class:geospatial-data", "label": "Geospatial Data"}
+      {
+        "@id": "urn:ngm:class:volumetric-capture",
+        "label": "Volumetric Capture"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-modeling",
+        "label": "3D Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:geospatial-data",
+        "label": "Geospatial Data"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:heritage-site-preservation", "label": "Heritage Site Preservation"}
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:cultural-heritage-preservation",
+        "label": "Heritage Site Preservation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:accessible-tourism", "label": "Accessible Tourism"},
-      {"@id": "urn:ngm:class:destination-marketing", "label": "Destination Marketing"},
-      {"@id": "urn:ngm:class:sustainable-travel", "label": "Sustainable Travel"}
+      {
+        "@id": "urn:ngm:class:accessible-tourism",
+        "label": "Accessible Tourism"
+      },
+      {
+        "@id": "urn:ngm:class:destination-marketing",
+        "label": "Destination Marketing"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-travel",
+        "label": "Sustainable Travel"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:pre-trip-planning", "label": "Pre-Trip Planning"},
-      {"@id": "urn:ngm:class:hospitality-industry", "label": "Hospitality Industry"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:physical-travel", "label": "Physical Travel"}
+      {
+        "@id": "urn:ngm:class:hospitality-industry",
+        "label": "Hospitality Industry"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:cultural-heritage", "label": "Cultural Heritage"}
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:cultural-heritage",
+        "label": "Cultural Heritage"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:vr-tourism", "label": "VR Tourism"},
-    {"@id": "urn:ngm:class:remote-destination-exploration", "label": "Remote Destination Exploration"}
+    {
+      "@id": "urn:ngm:class:vr-tourism",
+      "label": "VR Tourism"
+    },
+    {
+      "@id": "urn:ngm:class:remote-destination-exploration",
+      "label": "Remote Destination Exploration"
+    }
   ],
   "quality": 0.72,
   "provenance": {

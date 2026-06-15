@@ -20,12 +20,7 @@
     "requires": [],
     "enables": [],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:ai-capability",
-        "label": "AI Capability"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],

@@ -30,7 +30,7 @@
         "label": "Sensor Fusion"
       },
       {
-        "id": "urn:ngm:class:physics-based-simulation",
+        "id": "urn:ngm:class:physics-simulation",
         "label": "Physics-Based Simulation"
       }
     ],
@@ -70,7 +70,7 @@
         "label": "Smart City"
       },
       {
-        "id": "urn:ngm:class:autonomous-systems",
+        "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
       }
     ],
@@ -78,11 +78,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:simulation-modelling",
-        "label": "Simulation Modelling"
-      },
-      {
-        "id": "urn:ngm:class:bim",
+        "id": "urn:ngm:class:bim-virtual-model",
         "label": "Building Information Modelling"
       }
     ],
@@ -121,25 +117,12 @@
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iso-iec-jtc1",
+        "id": "urn:ngm:class:iso-iec-jtc-1",
         "label": "ISO/IEC JTC 1"
-      },
-      {
-        "id": "urn:ngm:class:industrial-internet-consortium",
-        "label": "Industrial Internet Consortium"
       }
     ],
     "partOf": [],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:model-based-engineering",
-        "label": "Model-Based Engineering"
-      },
-      {
-        "id": "urn:ngm:class:asset-lifecycle-management",
-        "label": "Asset Lifecycle Management"
-      }
-    ]
+    "relatedTo": []
   },
   "wikilinks": [
     {

@@ -103,14 +103,6 @@ alias:: Cross-Metaverse Commerce
       {
         "@id": "urn:ngm:class:asset-portability",
         "label": "Asset Portability"
-      },
-      {
-        "@id": "urn:ngm:class:cross-platform-trading",
-        "label": "Cross-Platform Trading"
-      },
-      {
-        "@id": "urn:ngm:class:virtual-market-integration",
-        "label": "Virtual Market Integration"
       }
     ],
     "bridgesTo": [

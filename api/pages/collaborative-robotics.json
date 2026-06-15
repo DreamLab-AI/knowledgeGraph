@@ -62,7 +62,7 @@
         "label": "Flexible Manufacturing"
       },
       {
-        "id": "urn:ngm:class:human-robot-teaming",
+        "id": "urn:ngm:class:human-robot-collaboration",
         "label": "Human-Robot Teaming"
       }
     ],
@@ -74,7 +74,7 @@
         "label": "Industrial Robot"
       },
       {
-        "id": "urn:ngm:class:autonomous-mobile-robot",
+        "id": "urn:ngm:class:autonomous-mobile-robots",
         "label": "Autonomous Mobile Robot"
       }
     ],

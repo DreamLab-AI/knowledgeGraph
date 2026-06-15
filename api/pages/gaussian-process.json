@@ -20,24 +20,12 @@
       {
         "id": "urn:ngm:class:kernel-function",
         "label": "Kernel Function"
-      },
-      {
-        "id": "urn:ngm:class:mean-function",
-        "label": "Mean Function"
-      },
-      {
-        "id": "urn:ngm:class:posterior-predictive-distribution",
-        "label": "Posterior Predictive Distribution"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:gaussian-distribution",
         "label": "Gaussian Distribution"
-      },
-      {
-        "id": "urn:ngm:class:positive-definite-matrix",
-        "label": "Positive Definite Matrix"
       }
     ],
     "enables": [
@@ -85,10 +73,6 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:spatial-interpolation",
-        "label": "Spatial Interpolation"
-      },
-      {
         "id": "urn:ngm:class:scientific-computing",
         "label": "Scientific Computing"
       }
@@ -97,14 +81,6 @@
       {
         "id": "urn:ngm:class:kernel-methods",
         "label": "Kernel Methods"
-      },
-      {
-        "id": "urn:ngm:class:marginal-likelihood",
-        "label": "Marginal Likelihood"
-      },
-      {
-        "id": "urn:ngm:class:cholesky-decomposition",
-        "label": "Cholesky Decomposition"
       }
     ],
     "supports": [],
@@ -122,14 +98,6 @@
       {
         "id": "urn:ngm:class:variational-inference",
         "label": "Variational Inference"
-      },
-      {
-        "id": "urn:ngm:class:deep-kernel-learning",
-        "label": "Deep Kernel Learning"
-      },
-      {
-        "id": "urn:ngm:class:sparse-gaussian-process",
-        "label": "Sparse Gaussian Process"
       }
     ]
   },

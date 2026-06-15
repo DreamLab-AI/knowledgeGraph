@@ -16,20 +16,7 @@
   "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:sdg-targets-and-indicators",
-        "label": "SDG Targets and Indicators"
-      },
-      {
-        "id": "urn:ngm:class:voluntary-national-reviews",
-        "label": "Voluntary National Reviews"
-      },
-      {
-        "id": "urn:ngm:class:high-level-political-forum",
-        "label": "High-Level Political Forum"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:sustainability-reporting",
@@ -42,10 +29,6 @@
       {
         "id": "urn:ngm:class:multilateral-cooperation",
         "label": "Multilateral Cooperation"
-      },
-      {
-        "id": "urn:ngm:class:official-development-assistance",
-        "label": "Official Development Assistance"
       }
     ],
     "enables": [
@@ -66,37 +49,15 @@
         "label": "Green Finance"
       }
     ],
-    "dependsOn": [
-      {
-        "id": "urn:ngm:class:national-statistical-systems",
-        "label": "National Statistical Systems"
-      },
-      {
-        "id": "urn:ngm:class:technology-facilitation-mechanism",
-        "label": "Technology Facilitation Mechanism"
-      }
-    ],
+    "dependsOn": [],
     "implements": [
       {
         "id": "urn:ngm:class:paris-agreement",
         "label": "Paris Agreement"
-      },
-      {
-        "id": "urn:ngm:class:addis-ababa-action-agenda",
-        "label": "Addis Ababa Action Agenda"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:millennium-development-goals",
-        "label": "Millennium Development Goals"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:artificial-intelligence-for-development",
-        "label": "Artificial Intelligence for Development"
-      },
       {
         "id": "urn:ngm:class:blockchain-governance",
         "label": "Blockchain Governance"
@@ -113,26 +74,8 @@
         "label": "Poverty Reduction"
       }
     ],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:united-nations",
-        "label": "United Nations"
-      },
-      {
-        "id": "urn:ngm:class:un-statistical-commission",
-        "label": "UN Statistical Commission"
-      }
-    ],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:2030-agenda-for-sustainable-development",
-        "label": "2030 Agenda for Sustainable Development"
-      },
-      {
-        "id": "urn:ngm:class:un-global-governance-framework",
-        "label": "UN Global Governance Framework"
-      }
-    ],
+    "standardizedBy": [],
+    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:esg-investing",

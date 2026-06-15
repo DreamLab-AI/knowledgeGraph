@@ -154,10 +154,6 @@ public:: true
         "label": "Fragment Shading"
       },
       {
-        "@id": "urn:ngm:class:frame-buffer-operations",
-        "label": "Frame Buffer Operations"
-      },
-      {
         "@id": "urn:ngm:class:geometry-processing",
         "label": "Geometry Processing"
       },
@@ -192,10 +188,6 @@ public:: true
         "label": "Shader"
       },
       {
-        "@id": "urn:ngm:class:textures",
-        "label": "Textures"
-      },
-      {
         "@id": "urn:ngm:class:scene-graph",
         "label": "Scene Graph"
       }
@@ -206,23 +198,11 @@ public:: true
         "label": "Dynamic Lighting"
       },
       {
-        "@id": "urn:ngm:class:interactive-3-d-graphics",
-        "label": "Interactive 3D Graphics"
-      },
-      {
-        "@id": "urn:ngm:class:real-time-visualization",
-        "label": "Real-Time Visualization"
-      },
-      {
         "@id": "urn:ngm:class:immersive-experiences",
         "label": "Immersive Experiences"
       }
     ],
     "partOf": [
-      {
-        "@id": "urn:ngm:class:graphics-rendering-system",
-        "label": "Graphics Rendering System"
-      },
       {
         "@id": "urn:ngm:class:game-engine",
         "label": "Game Engine"

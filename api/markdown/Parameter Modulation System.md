@@ -61,12 +61,9 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:audio-system", "label": "Audio System"}
-    ],
-    "enables": [
       {
-        "@id": "urn:ngm:class:dynamic-sound-design",
-        "label": "Dynamic Sound Design"
+        "@id": "urn:ngm:class:audio-system",
+        "label": "Audio System"
       }
     ]
   },

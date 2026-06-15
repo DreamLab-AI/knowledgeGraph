@@ -21,10 +21,6 @@
       {
         "id": "urn:ngm:class:internet-of-things",
         "label": "Internet of Things"
-      },
-      {
-        "id": "urn:ngm:class:low-power-wide-area-network",
-        "label": "Low-Power Wide Area Network"
       }
     ],
     "enables": [
@@ -37,20 +33,12 @@
         "label": "Credential Format Standard"
       },
       {
-        "id": "urn:ngm:class:constrained-restful-environments",
-        "label": "Constrained RESTful Environments"
-      },
-      {
         "id": "urn:ngm:class:remote-attestation",
         "label": "Remote Attestation"
       }
     ],
     "dependsOn": [],
     "implements": [
-      {
-        "id": "urn:ngm:class:rfc-8949",
-        "label": "RFC 8949"
-      },
       {
         "id": "urn:ngm:class:cose",
         "label": "CBOR Object Signing and Encryption"
@@ -60,16 +48,7 @@
         "label": "Deterministic Encoding"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:extensible-markup-language",
-        "label": "Extensible Markup Language"
-      },
-      {
-        "id": "urn:ngm:class:bson",
-        "label": "BSON"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:linked-data",
@@ -84,14 +63,6 @@
       {
         "id": "urn:ngm:class:binary-encoding",
         "label": "Binary Encoding"
-      },
-      {
-        "id": "urn:ngm:class:type-length-value",
-        "label": "Type-Length-Value"
-      },
-      {
-        "id": "urn:ngm:class:tagged-data-item",
-        "label": "Tagged Data Item"
       }
     ],
     "supports": [
@@ -102,10 +73,6 @@
       {
         "id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"
-      },
-      {
-        "id": "urn:ngm:class:mobile-drivers-licence",
-        "label": "Mobile Driver's Licence"
       }
     ],
     "standardizedBy": [
@@ -114,7 +81,7 @@
         "label": "Internet Engineering Task Force"
       },
       {
-        "id": "urn:ngm:class:iso-18013-5",
+        "id": "urn:ngm:class:iso-iec-18013-5-m-dl",
         "label": "ISO 18013-5 mDL Standard"
       }
     ],
@@ -135,10 +102,6 @@
       {
         "id": "urn:ngm:class:messagepack",
         "label": "MessagePack"
-      },
-      {
-        "id": "urn:ngm:class:asn1",
-        "label": "ASN.1"
       }
     ]
   },

@@ -44,7 +44,7 @@
         "label": "Identity Provider"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -109,11 +109,11 @@
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:w3c-did-core",
+        "id": "urn:ngm:class:w3-c-did-core",
         "label": "W3C DID Core 1.0"
       },
       {
-        "id": "urn:ngm:class:eidas-2-0",
+        "id": "urn:ngm:class:e-idas-2-0",
         "label": "eIDAS 2.0"
       },
       {

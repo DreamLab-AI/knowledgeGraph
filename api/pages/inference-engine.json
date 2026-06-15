@@ -50,7 +50,7 @@
         "label": "Real-Time Inference at Edge"
       },
       {
-        "id": "urn:ngm:class:large-language-model-serving",
+        "id": "urn:ngm:class:model-serving",
         "label": "Large Language Model Serving"
       },
       {

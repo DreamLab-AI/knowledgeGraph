@@ -20,14 +20,6 @@
       {
         "id": "urn:ngm:class:data-provenance",
         "label": "Data Provenance"
-      },
-      {
-        "id": "urn:ngm:class:impact-analysis",
-        "label": "Impact Analysis"
-      },
-      {
-        "id": "urn:ngm:class:data-transformation-record",
-        "label": "Data Transformation Record"
       }
     ],
     "requires": [
@@ -111,7 +103,7 @@
         "label": "OpenLineage"
       },
       {
-        "id": "urn:ngm:class:w3c-prov",
+        "id": "urn:ngm:class:w3-c-prov",
         "label": "W3C PROV"
       }
     ],
@@ -131,7 +123,7 @@
         "label": "Data Observability"
       },
       {
-        "id": "urn:ngm:class:etl-process",
+        "id": "urn:ngm:class:etl-pipeline",
         "label": "ETL Process"
       }
     ]

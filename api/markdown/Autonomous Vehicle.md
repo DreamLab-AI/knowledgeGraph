@@ -96,53 +96,129 @@ alias:: Autonomous Vehicles
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:perception-system", "label": "Perception System"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:decision-making-system", "label": "Decision Making System"}
+      {
+        "@id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:decision-making",
+        "label": "Decision Making System"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:hd-map", "label": "HD Map"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:robotaxi", "label": "Robotaxi"},
-      {"@id": "urn:ngm:class:last-mile-delivery", "label": "Last-Mile Delivery"}
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:robotaxi",
+        "label": "Robotaxi"
+      },
+      {
+        "@id": "urn:ngm:class:last-mile-delivery",
+        "label": "Last-Mile Delivery"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
-      {"@id": "urn:ngm:class:adas", "label": "ADAS"}
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:adas",
+        "label": "ADAS"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:sae-j3016", "label": "SAE J3016"},
-      {"@id": "urn:ngm:class:iso-26262", "label": "ISO 26262"},
-      {"@id": "urn:ngm:class:iso-21448", "label": "ISO 21448"}
+      {
+        "@id": "urn:ngm:class:sae-j-3016",
+        "label": "SAE J3016"
+      },
+      {
+        "@id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      },
+      {
+        "@id": "urn:ngm:class:iso-21448",
+        "label": "ISO 21448"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:human-driven-vehicle", "label": "Human-Driven Vehicle"},
-      {"@id": "urn:ngm:class:remote-operated-vehicle", "label": "Remote Operated Vehicle"}
+      {
+        "@id": "urn:ngm:class:remotely-operated-vehicle-rov",
+        "label": "Remote Operated Vehicle"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:smart-city-infrastructure", "label": "Smart City Infrastructure"},
-      {"@id": "urn:ngm:class:v2x-communication", "label": "V2X Communication"}
+      {
+        "@id": "urn:ngm:class:smart-city-infrastructure",
+        "label": "Smart City Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:v2x-communication",
+        "label": "V2X Communication"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
-      {"@id": "urn:ngm:class:self-driving-car", "label": "Self Driving Car"},
-      {"@id": "urn:ngm:class:unmanned-ground-vehicle", "label": "Unmanned Ground Vehicle"}
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:self-driving-car",
+        "label": "Self Driving Car"
+      },
+      {
+        "@id": "urn:ngm:class:ground-robot",
+        "label": "Unmanned Ground Vehicle"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:self-driving-car", "label": "Self Driving Car"},
-    {"@id": "urn:ngm:class:driverless-vehicle", "label": "Driverless Vehicle"},
-    {"@id": "urn:ngm:class:automated-vehicle", "label": "Automated Vehicle"}
+    {
+      "@id": "urn:ngm:class:self-driving-car",
+      "label": "Self Driving Car"
+    },
+    {
+      "@id": "urn:ngm:class:driverless-vehicle",
+      "label": "Driverless Vehicle"
+    },
+    {
+      "@id": "urn:ngm:class:automated-vehicle",
+      "label": "Automated Vehicle"
+    }
   ],
   "quality": 0.72,
   "provenance": {

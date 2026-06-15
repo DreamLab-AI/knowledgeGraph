@@ -446,20 +446,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:conditioning-encoder",
-        "label": "Conditioning Encoder"
-      },
-      {
-        "@id": "urn:ngm:class:context-region",
-        "label": "Context Region"
-      },
-      {
         "@id": "urn:ngm:class:generator-network",
         "label": "Generator Network"
-      },
-      {
-        "@id": "urn:ngm:class:mask",
-        "label": "Mask"
       },
       {
         "@id": "urn:ngm:class:sampling-procedure",
@@ -480,64 +468,28 @@ public:: true
         "label": "GPU Compute"
       },
       {
-        "@id": "urn:ngm:class:mask-specification",
-        "label": "Mask Specification"
-      },
-      {
-        "@id": "urn:ngm:class:pretrained-generative-prior",
-        "label": "Pretrained Generative Prior"
-      },
-      {
         "@id": "urn:ngm:class:training-data-distribution",
         "label": "Training Data Distribution"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:disocclusion",
-        "label": "Disocclusion"
-      },
-      {
-        "@id": "urn:ngm:class:garment-removal",
-        "label": "Garment Removal"
-      },
-      {
         "@id": "urn:ngm:class:generative-fill",
         "label": "Generative Fill"
-      },
-      {
-        "@id": "urn:ngm:class:object-removal",
-        "label": "Object Removal"
       },
       {
         "@id": "urn:ngm:class:outpainting",
         "label": "Outpainting"
       },
       {
-        "@id": "urn:ngm:class:photo-restoration",
+        "@id": "urn:ngm:class:image-and-video-restoration",
         "label": "Photo Restoration"
-      },
-      {
-        "@id": "urn:ngm:class:scene-completion",
-        "label": "Scene Completion"
       }
     ],
     "implements": [
       {
         "@id": "urn:ngm:class:conditional-generation",
         "label": "Conditional Generation"
-      },
-      {
-        "@id": "urn:ngm:class:diffusion-reverse-process",
-        "label": "Diffusion Reverse Process"
-      },
-      {
-        "@id": "urn:ngm:class:patch-synthesis",
-        "label": "Patch Synthesis"
-      },
-      {
-        "@id": "urn:ngm:class:pde-anisotropic-diffusion",
-        "label": "PDE Anisotropic Diffusion"
       },
       {
         "@id": "urn:ngm:class:variational-inference",
@@ -554,16 +506,8 @@ public:: true
         "label": "ControlNet"
       },
       {
-        "@id": "urn:ngm:class:fourier-convolution",
+        "@id": "urn:ngm:class:convolution",
         "label": "Fourier Convolution"
-      },
-      {
-        "@id": "urn:ngm:class:gated-convolution",
-        "label": "Gated Convolution"
-      },
-      {
-        "@id": "urn:ngm:class:partial-convolution",
-        "label": "Partial Convolution"
       },
       {
         "@id": "urn:ngm:class:cross-attention",
@@ -576,7 +520,7 @@ public:: true
         "label": "Adobe Firefly"
       },
       {
-        "@id": "urn:ngm:class:apple-inc-technology-corporation-intelligence",
+        "@id": "urn:ngm:class:apple-inc-technology-corporation",
         "label": "Apple Intelligence"
       },
       {
@@ -594,7 +538,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:cultural-heritage-restoration",
+        "@id": "urn:ngm:class:cultural-heritage-preservation",
         "label": "Cultural Heritage Restoration"
       },
       {
@@ -602,15 +546,11 @@ public:: true
         "label": "Digital Forensics"
       },
       {
-        "@id": "urn:ngm:class:medical-image-reconstruction",
-        "label": "Medical Image Reconstruction"
-      },
-      {
-        "@id": "urn:ngm:class:photo-editing-software",
+        "@id": "urn:ngm:class:image-editing",
         "label": "Photo Editing Software"
       },
       {
-        "@id": "urn:ngm:class:video-post-production",
+        "@id": "urn:ngm:class:video-production-pipeline",
         "label": "Video Post-Production"
       }
     ],

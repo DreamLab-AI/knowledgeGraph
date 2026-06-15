@@ -86,7 +86,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:least-squares-regression",
+        "id": "urn:ngm:class:regression",
         "label": "Least-Squares Regression"
       },
       {

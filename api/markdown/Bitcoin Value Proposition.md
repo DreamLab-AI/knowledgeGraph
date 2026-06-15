@@ -642,16 +642,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:21-million-supply-cap",
+        "@id": "urn:ngm:class:supply-cap",
         "label": "21 Million Supply Cap"
       },
       {
         "@id": "urn:ngm:class:block-reward-halving",
         "label": "Block Reward Halving"
-      },
-      {
-        "@id": "urn:ngm:class:digital-scarcity",
-        "label": "Digital Scarcity"
       },
       {
         "@id": "urn:ngm:class:financial-sovereignty",
@@ -674,10 +670,6 @@ public:: true
         "label": "Network Effects"
       },
       {
-        "@id": "urn:ngm:class:proof-of-work-security",
-        "label": "Proof of Work Security"
-      },
-      {
         "@id": "urn:ngm:class:self-custody",
         "label": "Self-Custody"
       },
@@ -692,10 +684,6 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-miners",
-        "label": "Bitcoin Miners"
-      },
-      {
         "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
         "label": "Bitcoin Network"
       },
@@ -704,12 +692,8 @@ public:: true
         "label": "Decentralisation"
       },
       {
-        "@id": "urn:ngm:class:full-node-infrastructure",
+        "@id": "urn:ngm:class:full-node",
         "label": "Full Node Infrastructure"
-      },
-      {
-        "@id": "urn:ngm:class:open-source-protocol",
-        "label": "Open Source Protocol"
       },
       {
         "@id": "urn:ngm:class:cryptographic-security",
@@ -722,16 +706,12 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:ai-economy-payments",
+        "@id": "urn:ngm:class:ai-agent-payments",
         "label": "AI Economy Payments"
       },
       {
         "@id": "urn:ngm:class:censorship-resistant-payments",
         "label": "Censorship Resistant Payments"
-      },
-      {
-        "@id": "urn:ngm:class:corporate-treasury-strategy",
-        "label": "Corporate Treasury Strategy"
       },
       {
         "@id": "urn:ngm:class:financial-inclusion",
@@ -754,15 +734,11 @@ public:: true
         "label": "Remittances"
       },
       {
-        "@id": "urn:ngm:class:rural-electrification-subsidy",
-        "label": "Rural Electrification Subsidy"
-      },
-      {
         "@id": "urn:ngm:class:self-custody",
         "label": "Self-Custody"
       },
       {
-        "@id": "urn:ngm:class:sovereign-bitcoin-reserve",
+        "@id": "urn:ngm:class:strategic-bitcoin-reserve",
         "label": "Sovereign Bitcoin Reserve"
       },
       {
@@ -776,19 +752,7 @@ public:: true
         "label": "Austrian Economics"
       },
       {
-        "@id": "urn:ngm:class:gresham-s-law",
-        "label": "Gresham's Law"
-      },
-      {
-        "@id": "urn:ngm:class:hayek-denationalisation",
-        "label": "Hayek Denationalisation"
-      },
-      {
-        "@id": "urn:ngm:class:mises-regression-theorem",
-        "label": "Mises Regression Theorem"
-      },
-      {
-        "@id": "urn:ngm:class:saifedean-ammous-bitcoin-standard",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard",
         "label": "Saifedean Ammous Bitcoin Standard"
       },
       {
@@ -806,10 +770,6 @@ public:: true
         "label": "Cold Storage"
       },
       {
-        "@id": "urn:ngm:class:corporate-treasury-reserve",
-        "label": "Corporate Treasury Reserve"
-      },
-      {
         "@id": "urn:ngm:class:l-402",
         "label": "L402"
       },
@@ -818,7 +778,7 @@ public:: true
         "label": "Multisignature Wallets"
       },
       {
-        "@id": "urn:ngm:class:self-custody-wallets",
+        "@id": "urn:ngm:class:self-custody",
         "label": "Self Custody Wallets"
       },
       {
@@ -856,10 +816,6 @@ public:: true
         "label": "Digital Gold"
       },
       {
-        "@id": "urn:ngm:class:financial-nihilism",
-        "label": "Financial Nihilism"
-      },
-      {
         "@id": "urn:ngm:class:hyperbitcoinization",
         "label": "Hyperbitcoinization"
       },
@@ -876,10 +832,6 @@ public:: true
         "label": "Sound Money"
       },
       {
-        "@id": "urn:ngm:class:stock-to-flow-model",
-        "label": "Stock to Flow Model"
-      },
-      {
         "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
         "label": "Bitcoin Mining"
       },
@@ -890,24 +842,8 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-standard-adoption",
-        "label": "Bitcoin Standard Adoption"
-      },
-      {
         "@id": "urn:ngm:class:black-rock-bitcoin-etf",
         "label": "BlackRock Bitcoin ETF"
-      },
-      {
-        "@id": "urn:ngm:class:el-salvador-bitcoin-adoption",
-        "label": "El Salvador Bitcoin Adoption"
-      },
-      {
-        "@id": "urn:ngm:class:gridless",
-        "label": "Gridless"
-      },
-      {
-        "@id": "urn:ngm:class:human-rights-foundation-bitcoin-fund",
-        "label": "Human Rights Foundation Bitcoin Fund"
       },
       {
         "@id": "urn:ngm:class:strategic-bitcoin-reserve",
@@ -934,14 +870,6 @@ public:: true
       {
         "@id": "urn:ngm:class:fasb-asu-2023-08",
         "label": "FASB ASU 2023-08"
-      },
-      {
-        "@id": "urn:ngm:class:sec-spot-bitcoin-etf-approval-2024",
-        "label": "SEC Spot Bitcoin ETF Approval 2024"
-      },
-      {
-        "@id": "urn:ngm:class:us-strategic-bitcoin-reserve-executive-order-2025",
-        "label": "US Strategic Bitcoin Reserve Executive Order 2025"
       }
     ]
   },

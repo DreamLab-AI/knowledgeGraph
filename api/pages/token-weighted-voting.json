@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:erc-20-token",
+        "id": "urn:ngm:class:erc-20-tokens",
         "label": "ERC-20 Token"
       },
       {
@@ -81,10 +81,6 @@
       {
         "id": "urn:ngm:class:one-person-one-vote",
         "label": "One Person One Vote"
-      },
-      {
-        "id": "urn:ngm:class:reputation-based-voting",
-        "label": "Reputation-Based Voting"
       }
     ],
     "bridgesTo": [
@@ -142,10 +138,6 @@
       {
         "id": "urn:ngm:class:plutocracy",
         "label": "Plutocracy"
-      },
-      {
-        "id": "urn:ngm:class:voter-turnout",
-        "label": "Voter Turnout"
       },
       {
         "id": "urn:ngm:class:governance-attack",

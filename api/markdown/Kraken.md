@@ -81,11 +81,11 @@ public:: true
         "label": "Spot Trading"
       },
       {
-        "@id": "urn:ngm:class:margin-trading",
+        "@id": "urn:ngm:class:leveraged-trading",
         "label": "Margin Trading"
       },
       {
-        "@id": "urn:ngm:class:staking-service",
+        "@id": "urn:ngm:class:staking",
         "label": "Staking Service"
       }
     ],
@@ -125,10 +125,6 @@ public:: true
       {
         "@id": "urn:ngm:class:blockchain-infrastructure",
         "label": "Blockchain Infrastructure"
-      },
-      {
-        "@id": "urn:ngm:class:banking-integration",
-        "label": "Banking Integration"
       }
     ],
     "implements": [

@@ -475,10 +475,6 @@ alias:: MixedReality
         "label": "Occlusion Rendering"
       },
       {
-        "@id": "urn:ngm:class:pass-through-video",
-        "label": "Pass-Through Video"
-      },
-      {
         "@id": "urn:ngm:class:visual-inertial-odometry",
         "label": "Visual-Inertial Odometry"
       },
@@ -513,20 +509,12 @@ alias:: MixedReality
         "label": "6DoF Tracking"
       },
       {
-        "@id": "urn:ngm:class:compute-so-c",
-        "label": "Compute SoC"
-      },
-      {
         "@id": "urn:ngm:class:display-calibration",
         "label": "Display Calibration"
       },
       {
         "@id": "urn:ngm:class:inside-out-tracking",
         "label": "Inside-Out Tracking"
-      },
-      {
-        "@id": "urn:ngm:class:latency-budget",
-        "label": "Latency Budget"
       },
       {
         "@id": "urn:ngm:class:scene-reconstruction",
@@ -555,18 +543,6 @@ alias:: MixedReality
         "label": "Architectural Visualisation"
       },
       {
-        "@id": "urn:ngm:class:avatar-presence",
-        "label": "Avatar Presence"
-      },
-      {
-        "@id": "urn:ngm:class:digital-twin-overlay",
-        "label": "Digital Twin Overlay"
-      },
-      {
-        "@id": "urn:ngm:class:holographic-training",
-        "label": "Holographic Training"
-      },
-      {
         "@id": "urn:ngm:class:immersive-collaboration",
         "label": "Immersive Collaboration"
       },
@@ -579,12 +555,8 @@ alias:: MixedReality
         "label": "Remote Assistance"
       },
       {
-        "@id": "urn:ngm:class:spatial-audio-experience",
+        "@id": "urn:ngm:class:spatial-audio",
         "label": "Spatial Audio Experience"
-      },
-      {
-        "@id": "urn:ngm:class:spatial-data-visualisation",
-        "label": "Spatial Data Visualisation"
       },
       {
         "@id": "urn:ngm:class:surgical-navigation",
@@ -597,7 +569,7 @@ alias:: MixedReality
         "label": "Foveated Rendering"
       },
       {
-        "@id": "urn:ngm:class:milgram-kishino-continuum",
+        "@id": "urn:ngm:class:reality-virtuality-continuum",
         "label": "Milgram-Kishino Continuum"
       },
       {
@@ -605,49 +577,29 @@ alias:: MixedReality
         "label": "Occlusion Rendering"
       },
       {
-        "@id": "urn:ngm:class:physics-coherent-holography",
-        "label": "Physics Coherent Holography"
-      },
-      {
         "@id": "urn:ngm:class:semantic-scene-understanding",
         "label": "Semantic Scene Understanding"
       },
       {
-        "@id": "urn:ngm:class:spatial-anchor-services",
+        "@id": "urn:ngm:class:spatial-anchor",
         "label": "Spatial Anchor Services"
-      },
-      {
-        "@id": "urn:ngm:class:reality-virtuality-continuum",
-        "label": "Reality Virtuality Continuum"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:diffractive-waveguide",
+        "@id": "urn:ngm:class:waveguide-optics",
         "label": "Diffractive Waveguide"
-      },
-      {
-        "@id": "urn:ngm:class:li-dar-scanner",
-        "label": "LiDAR Scanner"
       },
       {
         "@id": "urn:ngm:class:micro-oled-display",
         "label": "Micro-OLED Display"
       },
       {
-        "@id": "urn:ngm:class:pancake-lens",
-        "label": "Pancake Lens"
-      },
-      {
-        "@id": "urn:ngm:class:silicon-carbide-waveguide",
-        "label": "Silicon Carbide Waveguide"
-      },
-      {
         "@id": "urn:ngm:class:time-of-flight-sensor",
         "label": "Time-of-Flight Sensor"
       },
       {
-        "@id": "urn:ngm:class:transformer-vision-model",
+        "@id": "urn:ngm:class:vision-transformer",
         "label": "Transformer Vision Model"
       },
       {
@@ -703,27 +655,23 @@ alias:: MixedReality
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:azure-spatial-anchors",
+        "@id": "urn:ngm:class:spatial-anchors",
         "label": "Azure Spatial Anchors"
-      },
-      {
-        "@id": "urn:ngm:class:meta-spatial-anchors",
-        "label": "Meta Spatial Anchors"
       },
       {
         "@id": "urn:ngm:class:microsoft-mesh",
         "label": "Microsoft Mesh"
       },
       {
-        "@id": "urn:ngm:class:unity-xri",
+        "@id": "urn:ngm:class:unity",
         "label": "Unity XRI"
       },
       {
-        "@id": "urn:ngm:class:unreal-engine-xr",
+        "@id": "urn:ngm:class:unreal-engine",
         "label": "Unreal Engine XR"
       },
       {
-        "@id": "urn:ngm:class:vision-os",
+        "@id": "urn:ngm:class:apple-inc-technology-corporation-vision-pro",
         "label": "visionOS"
       },
       {
@@ -745,23 +693,15 @@ alias:: MixedReality
         "label": "IEEE VR"
       },
       {
-        "@id": "urn:ngm:class:iso-tc-159-ergonomics",
-        "label": "ISO TC 159 Ergonomics"
-      },
-      {
         "@id": "urn:ngm:class:khronos-group",
         "label": "Khronos Group"
       },
       {
-        "@id": "urn:ngm:class:open-xr-scene-understanding-extension",
-        "label": "OpenXR Scene Understanding Extension"
-      },
-      {
-        "@id": "urn:ngm:class:open-xr-standard",
+        "@id": "urn:ngm:class:open-xr",
         "label": "OpenXR Standard"
       },
       {
-        "@id": "urn:ngm:class:usd-aousd",
+        "@id": "urn:ngm:class:open-usd",
         "label": "USD AOUSD"
       },
       {

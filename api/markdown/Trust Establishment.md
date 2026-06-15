@@ -23,53 +23,129 @@ public:: true
   "definition": "Trust Establishment is the process by which parties in a digital or physical system form justified confidence in each other's identities, capabilities, intentions, and assertions prior to exchanging sensitive information or delegating authority. It encompasses cryptographic mechanisms such as certificate chain validation, attestation, and verifiable credential presentation, as well as organisational mechanisms including trust frameworks, legal agreements, and reputation systems. In decentralised and multi-stakeholder environments, trust establishment must operate without relying on a single trusted authority, requiring distributed protocols such as web-of-trust models, blockchain-anchored attestations, and federated identity systems. Trust establishment is a foundational prerequisite for secure communication, authorisation, and coordination across organisational and jurisdictional boundaries.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:trust-architecture", "label": "Trust Architecture"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:trust-architecture",
+      "label": "Trust Architecture"
+    }
+  ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"},
-      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-verification",
+        "label": "Cryptographic Verification"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:trust-and-safety", "label": "Trust and Safety"},
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:authorisation", "label": "Authorisation"},
-      {"@id": "urn:ngm:class:secure-communication", "label": "Secure Communication"}
+      {
+        "@id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "@id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:digital-signature-verification", "label": "Digital Signature Verification"},
-      {"@id": "urn:ngm:class:humanity-attestation", "label": "Humanity Attestation"},
-      {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"},
-      {"@id": "urn:ngm:class:decentralised-identifier", "label": "Decentralised Identifier"}
+      {
+        "@id": "urn:ngm:class:digital-signature-verification",
+        "label": "Digital Signature Verification"
+      },
+      {
+        "@id": "urn:ngm:class:humanity-attestation",
+        "label": "Humanity Attestation"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
-      {"@id": "urn:ngm:class:web-of-trust", "label": "Web of Trust"}
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:web-of-trust",
+        "label": "Web of Trust"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"},
-      {"@id": "urn:ngm:class:reputation-system", "label": "Reputation System"}
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:trust-framework", "label": "Trust Framework"},
-      {"@id": "urn:ngm:class:eidas-2", "label": "eIDAS 2.0"}
+      {
+        "@id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      },
+      {
+        "@id": "urn:ngm:class:e-idas-2-0",
+        "label": "eIDAS 2.0"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:implicit-trust", "label": "Implicit Trust"},
-      {"@id": "urn:ngm:class:perimeter-security", "label": "Perimeter Security"}
+      {
+        "@id": "urn:ngm:class:perimeter-security",
+        "label": "Perimeter Security"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:federated-identity", "label": "Federated Identity"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:certificate-transparency", "label": "Certificate Transparency"},
-      {"@id": "urn:ngm:class:attestation", "label": "Attestation"}
+      {
+        "@id": "urn:ngm:class:certificate-transparency",
+        "label": "Certificate Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:attestation",
+        "label": "Attestation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:trust-bootstrapping", "label": "Trust Bootstrapping"},
-    {"@id": "urn:ngm:class:mutual-authentication", "label": "Mutual Authentication"}
+    {
+      "@id": "urn:ngm:class:trust-bootstrapping",
+      "label": "Trust Bootstrapping"
+    },
+    {
+      "@id": "urn:ngm:class:mutual-authentication",
+      "label": "Mutual Authentication"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

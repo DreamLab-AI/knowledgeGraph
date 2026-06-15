@@ -92,11 +92,11 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:blockchain-recording",
+        "@id": "urn:ngm:class:blockchain",
         "label": "Blockchain Recording"
       },
       {
-        "@id": "urn:ngm:class:documentation-practices",
+        "@id": "urn:ngm:class:technical-documentation",
         "label": "Documentation Practices"
       },
       {
@@ -106,7 +106,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:authenticity-tracking",
+        "@id": "urn:ngm:class:content-authenticity",
         "label": "Authenticity Tracking"
       },
       {

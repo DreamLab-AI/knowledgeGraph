@@ -61,12 +61,9 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:computing-infrastructure", "label": "Computing Infrastructure"}
-    ],
-    "enables": [
       {
-        "@id": "urn:ngm:class:metaverse-access",
-        "label": "Metaverse Access"
+        "@id": "urn:ngm:class:computing-infrastructure",
+        "label": "Computing Infrastructure"
       }
     ]
   },

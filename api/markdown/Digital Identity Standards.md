@@ -126,19 +126,15 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:conformance-testing",
+        "@id": "urn:ngm:class:standards-conformance-testing",
         "label": "Conformance Testing"
-      },
-      {
-        "@id": "urn:ngm:class:protocol-specifications",
-        "label": "Protocol Specifications"
       },
       {
         "@id": "urn:ngm:class:standards-body",
         "label": "Standards Body"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -150,10 +146,6 @@ public:: true
       {
         "@id": "urn:ngm:class:credential-exchange",
         "label": "Credential Exchange"
-      },
-      {
-        "@id": "urn:ngm:class:identity-interoperability",
-        "label": "Identity Interoperability"
       },
       {
         "@id": "urn:ngm:class:trust-framework",
@@ -170,11 +162,11 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:w3c-did-core",
+        "@id": "urn:ngm:class:w3-c-did-core",
         "label": "W3C DID Core"
       },
       {
-        "@id": "urn:ngm:class:eidas-2",
+        "@id": "urn:ngm:class:e-idas-2-0",
         "label": "eIDAS 2.0"
       },
       {
@@ -194,7 +186,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:centralized-identity",
+        "@id": "urn:ngm:class:centralized-identity-provider",
         "label": "Centralized Identity"
       }
     ],

@@ -18,23 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:challenge-workshop",
-        "label": "Challenge Workshop"
-      },
-      {
         "id": "urn:ngm:class:tutorial",
         "label": "Tutorial"
-      },
-      {
-        "id": "urn:ngm:class:conference-proceedings",
-        "label": "Conference Proceedings"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:double-blind-peer-review",
-        "label": "Double-Blind Peer Review"
-      },
       {
         "id": "urn:ngm:class:image-recognition",
         "label": "Image Recognition"
@@ -48,10 +36,6 @@
       {
         "id": "urn:ngm:class:model-evaluation-results",
         "label": "Model Evaluation Results"
-      },
-      {
-        "id": "urn:ngm:class:state-of-the-art-results",
-        "label": "State-of-the-Art Results"
       }
     ],
     "dependsOn": [],
@@ -108,12 +92,7 @@
         "label": "Medical Image Analysis"
       }
     ],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:springer-lecture-notes-in-computer-science",
-        "label": "Springer Lecture Notes in Computer Science"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [
       {
         "id": "urn:ngm:class:academic-conference",

@@ -1158,55 +1158,15 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:ai-framework-act",
-        "label": "AI Framework Act"
-      },
-      {
-        "@id": "urn:ngm:class:ai-verify",
-        "label": "AI Verify"
-      },
-      {
-        "@id": "urn:ngm:class:asean-ai-governance-guide",
-        "label": "ASEAN AI Governance Guide"
-      },
-      {
-        "@id": "urn:ngm:class:digital-personal-data-protection-act-2023",
-        "label": "Digital Personal Data Protection Act 2023"
-      },
-      {
-        "@id": "urn:ngm:class:india-ai-mission",
-        "label": "IndiaAI Mission"
-      },
-      {
-        "@id": "urn:ngm:class:interim-measures-for-generative-ai-services",
-        "label": "Interim Measures for Generative AI Services"
-      },
-      {
-        "@id": "urn:ngm:class:meti-ai-guidelines-for-business",
-        "label": "METI AI Guidelines for Business"
-      },
-      {
-        "@id": "urn:ngm:class:model-ai-governance-framework",
+        "@id": "urn:ngm:class:ai-governance-framework",
         "label": "Model AI Governance Framework"
       },
       {
-        "@id": "urn:ngm:class:pcpd-ai-model-personal-data-protection-framework",
-        "label": "PCPD AI Model Personal Data Protection Framework"
-      },
-      {
-        "@id": "urn:ngm:class:voluntary-ai-safety-standard",
+        "@id": "urn:ngm:class:safety-standard",
         "label": "Voluntary AI Safety Standard"
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:algorithm-filing",
-        "label": "Algorithm Filing"
-      },
-      {
-        "@id": "urn:ngm:class:content-labelling",
-        "label": "Content Labelling"
-      },
       {
         "@id": "urn:ngm:class:data-localisation",
         "label": "Data Localisation"
@@ -1234,28 +1194,16 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:ai-compliance",
+        "@id": "urn:ngm:class:compliance",
         "label": "AI Compliance"
       },
       {
-        "@id": "urn:ngm:class:ai-risk-mitigation",
+        "@id": "urn:ngm:class:risk-mitigation",
         "label": "AI Risk Mitigation"
-      },
-      {
-        "@id": "urn:ngm:class:ai-safety-testing",
-        "label": "AI Safety Testing"
-      },
-      {
-        "@id": "urn:ngm:class:cross-border-ai-cooperation",
-        "label": "Cross-Border AI Cooperation"
       },
       {
         "@id": "urn:ngm:class:frontier-model-evaluation",
         "label": "Frontier Model Evaluation"
-      },
-      {
-        "@id": "urn:ngm:class:generative-ai-labelling",
-        "label": "Generative AI Labelling"
       },
       {
         "@id": "urn:ngm:class:algorithmic-accountability",
@@ -1268,15 +1216,11 @@ public:: true
         "label": "Bletchley Declaration"
       },
       {
-        "@id": "urn:ngm:class:frontier-ai-safety-commitments",
-        "label": "Frontier AI Safety Commitments"
-      },
-      {
         "@id": "urn:ngm:class:g20-ai-principles",
         "label": "G20 AI Principles"
       },
       {
-        "@id": "urn:ngm:class:hiroshima-ai-code-of-conduct",
+        "@id": "urn:ngm:class:hiroshima-ai-process",
         "label": "Hiroshima AI Code of Conduct"
       },
       {
@@ -1290,10 +1234,6 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:algorithm-registry",
-        "label": "Algorithm Registry"
-      },
-      {
         "@id": "urn:ngm:class:model-cards",
         "label": "Model Cards"
       },
@@ -1306,11 +1246,11 @@ public:: true
         "label": "Self-Regulatory Organisation"
       },
       {
-        "@id": "urn:ngm:class:standard-contract-clauses",
+        "@id": "urn:ngm:class:standard-contractual-clauses",
         "label": "Standard Contract Clauses"
       },
       {
-        "@id": "urn:ngm:class:watermarking",
+        "@id": "urn:ngm:class:watermarking-service",
         "label": "Watermarking"
       },
       {
@@ -1320,11 +1260,11 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:ai-safety-institute-network",
+        "@id": "urn:ngm:class:ai-safety-institute",
         "label": "AI Safety Institute Network"
       },
       {
-        "@id": "urn:ngm:class:bis-export-controls",
+        "@id": "urn:ngm:class:export-controls",
         "label": "BIS Export Controls"
       },
       {
@@ -1332,7 +1272,7 @@ public:: true
         "label": "Cross-Border Data Transfer"
       },
       {
-        "@id": "urn:ngm:class:data-security-law",
+        "@id": "urn:ngm:class:data-security",
         "label": "Data Security Law"
       },
       {
@@ -1362,46 +1302,14 @@ public:: true
         "label": "Cross-Border Data Transfer"
       },
       {
-        "@id": "urn:ngm:class:foundation-model-governance",
-        "label": "Foundation Model Governance"
-      },
-      {
         "@id": "urn:ngm:class:hiroshima-ai-process",
         "label": "Hiroshima AI Process"
-      },
-      {
-        "@id": "urn:ngm:class:international-ai-safety-report",
-        "label": "International AI Safety Report"
       }
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:ai-verify-foundation",
-        "label": "AI Verify Foundation"
-      },
-      {
-        "@id": "urn:ngm:class:asean-digital-ministers-meeting",
-        "label": "ASEAN Digital Ministers Meeting"
-      },
-      {
-        "@id": "urn:ngm:class:cyberspace-administration-of-china",
-        "label": "Cyberspace Administration of China"
-      },
-      {
         "@id": "urn:ngm:class:iso-iec-jtc-1-sc-42",
         "label": "ISO/IEC JTC 1/SC 42"
-      },
-      {
-        "@id": "urn:ngm:class:meti",
-        "label": "METI"
-      },
-      {
-        "@id": "urn:ngm:class:national-science-and-technology-council-taiwan",
-        "label": "National Science and Technology Council Taiwan"
-      },
-      {
-        "@id": "urn:ngm:class:personal-information-protection-commission",
-        "label": "Personal Information Protection Commission"
       }
     ]
   },

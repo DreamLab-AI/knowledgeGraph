@@ -77,16 +77,12 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:bitcoin-mining",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
         "label": "Bitcoin Mining"
       },
       {
         "@id": "urn:ngm:class:spam-prevention",
         "label": "Spam Prevention"
-      },
-      {
-        "@id": "urn:ngm:class:denial-of-service-protection",
-        "label": "Denial of Service Protection"
       },
       {
         "@id": "urn:ngm:class:rate-limiting",
@@ -97,10 +93,6 @@ public:: true
       {
         "@id": "urn:ngm:class:proof-of-work",
         "label": "Proof Of Work"
-      },
-      {
-        "@id": "urn:ngm:class:computational-puzzle",
-        "label": "Computational Puzzle"
       }
     ],
     "uses": [
@@ -114,10 +106,6 @@ public:: true
       }
     ],
     "supports": [
-      {
-        "@id": "urn:ngm:class:email-security",
-        "label": "Email Security"
-      },
       {
         "@id": "urn:ngm:class:sybil-resistance",
         "label": "Sybil Resistance"

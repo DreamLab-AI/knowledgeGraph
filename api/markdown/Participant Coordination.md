@@ -61,12 +61,9 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:multi-user-systems", "label": "Multi User Systems"}
-    ],
-    "enables": [
       {
-        "@id": "urn:ngm:class:shared-virtual-experiences",
-        "label": "Shared Virtual Experiences"
+        "@id": "urn:ngm:class:multi-user-systems",
+        "label": "Multi User Systems"
       }
     ]
   },

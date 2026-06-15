@@ -41,7 +41,7 @@
         "label": "Fungible Token"
       },
       {
-        "id": "urn:ngm:class:token-minting",
+        "id": "urn:ngm:class:minting",
         "label": "Token Minting"
       },
       {
@@ -90,7 +90,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:json",
+        "id": "urn:ngm:class:json-data-interchange-format",
         "label": "JSON"
       },
       {
@@ -132,7 +132,7 @@
         "label": "Mempool"
       },
       {
-        "id": "urn:ngm:class:bitcoin-script",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
         "label": "Bitcoin Script"
       }
     ]

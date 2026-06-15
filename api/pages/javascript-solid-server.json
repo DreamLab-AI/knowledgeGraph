@@ -18,10 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:podkey",
-        "label": "PodKey"
-      },
-      {
         "id": "urn:ngm:class:single-sign-on",
         "label": "Single Sign-On"
       }
@@ -93,7 +89,7 @@
         "label": "WebAuthn"
       },
       {
-        "id": "urn:ngm:class:rust",
+        "id": "urn:ngm:class:rust-systems-programming-language",
         "label": "Rust"
       }
     ],

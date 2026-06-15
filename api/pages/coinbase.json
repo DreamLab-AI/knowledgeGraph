@@ -18,16 +18,12 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:base-network",
+        "id": "urn:ngm:class:base",
         "label": "Base Network"
       },
       {
         "id": "urn:ngm:class:coinbase-wallet",
         "label": "Coinbase Wallet"
-      },
-      {
-        "id": "urn:ngm:class:coinbase-prime",
-        "label": "Coinbase Prime"
       },
       {
         "id": "urn:ngm:class:coinbase-custody",
@@ -50,7 +46,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:cryptocurrency-trading",
+        "id": "urn:ngm:class:crypto-trading",
         "label": "Cryptocurrency Trading"
       },
       {
@@ -72,7 +68,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],

@@ -146,25 +146,13 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:control-electronics",
-        "label": "Control Electronics"
-      },
-      {
-        "@id": "urn:ngm:class:current-driver",
-        "label": "Current Driver"
-      },
-      {
-        "@id": "urn:ngm:class:dc-motor",
-        "label": "DC Motor"
-      },
-      {
         "@id": "urn:ngm:class:position-encoder",
         "label": "Position Encoder"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:dc-power-supply",
+        "@id": "urn:ngm:class:power-supply",
         "label": "DC Power Supply"
       },
       {
@@ -181,18 +169,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:dynamic-control",
-        "label": "Dynamic Control"
-      },
-      {
-        "@id": "urn:ngm:class:load-adaptation",
-        "label": "Load Adaptation"
-      },
-      {
-        "@id": "urn:ngm:class:precise-positioning",
-        "label": "Precise Positioning"
-      },
       {
         "@id": "urn:ngm:class:trajectory-tracking",
         "label": "Trajectory Tracking"

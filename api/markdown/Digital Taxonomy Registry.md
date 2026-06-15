@@ -150,16 +150,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:api-interface",
+        "@id": "urn:ngm:class:api",
         "label": "API Interface"
-      },
-      {
-        "@id": "urn:ngm:class:classification-scheme-database",
-        "label": "Classification Scheme Database"
-      },
-      {
-        "@id": "urn:ngm:class:unique-identifier-system",
-        "label": "Unique Identifier System"
       },
       {
         "@id": "urn:ngm:class:versioning-system",
@@ -176,7 +168,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:change-management-process",
+        "@id": "urn:ngm:class:change-management",
         "label": "Change Management Process"
       },
       {
@@ -184,7 +176,7 @@ public:: true
         "label": "Database Management System"
       },
       {
-        "@id": "urn:ngm:class:quality-assurance-system",
+        "@id": "urn:ngm:class:quality-assurance",
         "label": "Quality Assurance System"
       },
       {
@@ -197,14 +189,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:analytics-and-reporting",
-        "label": "Analytics & Reporting"
-      },
-      {
-        "@id": "urn:ngm:class:cross-platform-categorization",
-        "label": "Cross-Platform Categorization"
-      },
       {
         "@id": "urn:ngm:class:semantic-interoperability",
         "label": "Semantic Interoperability"

@@ -120,14 +120,6 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:competence-development",
-        "label": "competence development"
-      },
-      {
-        "@id": "urn:ngm:class:ongoing-support",
-        "label": "ongoing support"
-      },
-      {
         "@id": "urn:ngm:class:training",
         "label": "Training"
       }

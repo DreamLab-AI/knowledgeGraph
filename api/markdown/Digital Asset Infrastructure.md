@@ -94,17 +94,13 @@ public:: true
         "label": "Cryptographic System"
       },
       {
-        "@id": "urn:ngm:class:node-network",
-        "label": "Node Network"
-      },
-      {
-        "@id": "urn:ngm:class:storage-solutions",
+        "@id": "urn:ngm:class:storage-systems",
         "label": "Storage Solutions"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:asset-custody",
+        "@id": "urn:ngm:class:digital-asset-custody",
         "label": "Asset Custody"
       },
       {

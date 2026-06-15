@@ -24,61 +24,148 @@ public:: true
   "domain": "security",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:authentication", "label": "Authentication"}
+    {
+      "@id": "urn:ngm:class:authentication",
+      "label": "Authentication"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:credential", "label": "Credential"},
-      {"@id": "urn:ngm:class:challenge-response-protocol", "label": "Challenge-Response Protocol"}
+      {
+        "@id": "urn:ngm:class:verifiable-credential-standard",
+        "label": "Credential"
+      },
+      {
+        "@id": "urn:ngm:class:challenge-response-protocol",
+        "label": "Challenge-Response Protocol"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"},
-      {"@id": "urn:ngm:class:security-protocol", "label": "Security Protocol"}
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:security-protocol",
+        "label": "Security Protocol"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cryptographic-keys", "label": "Cryptographic Keys"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:secure-channel", "label": "Secure Channel"}
+      {
+        "@id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:secure-channel",
+        "label": "Secure Channel"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:authorisation", "label": "Authorisation"},
-      {"@id": "urn:ngm:class:multi-factor-authentication", "label": "Multi-Factor Authentication"},
-      {"@id": "urn:ngm:class:zero-trust-security", "label": "Zero Trust Security"}
+      {
+        "@id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "@id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Security"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:trust-anchor", "label": "Trust Anchor"}
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:trust-anchor",
+        "label": "Trust Anchor"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:authentication-standards", "label": "Authentication Standards"},
-      {"@id": "urn:ngm:class:biometric-data", "label": "Biometric Data"},
-      {"@id": "urn:ngm:class:one-time-password", "label": "One-Time Password"}
+      {
+        "@id": "urn:ngm:class:authentication-standards",
+        "label": "Authentication Standards"
+      },
+      {
+        "@id": "urn:ngm:class:biometric-data",
+        "label": "Biometric Data"
+      },
+      {
+        "@id": "urn:ngm:class:one-time-password",
+        "label": "One-Time Password"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:non-repudiation", "label": "Non-Repudiation"}
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:fido2", "label": "FIDO2"},
-      {"@id": "urn:ngm:class:oauth2", "label": "OAuth 2.0"},
-      {"@id": "urn:ngm:class:openid-connect", "label": "OpenID Connect"}
+      {
+        "@id": "urn:ngm:class:fido2",
+        "label": "FIDO2"
+      },
+      {
+        "@id": "urn:ngm:class:oauth2",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:anonymous-access", "label": "Anonymous Access"}
+      {
+        "@id": "urn:ngm:class:anonymous-access",
+        "label": "Anonymous Access"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:session-management", "label": "Session Management"}
+      {
+        "@id": "urn:ngm:class:session-management",
+        "label": "Session Management"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:identity-verification-mechanism", "label": "Identity Verification Mechanism"},
-    {"@id": "urn:ngm:class:authentication-scheme", "label": "Authentication Scheme"}
+    {
+      "@id": "urn:ngm:class:identity-verification-mechanism",
+      "label": "Identity Verification Mechanism"
+    },
+    {
+      "@id": "urn:ngm:class:authentication-scheme",
+      "label": "Authentication Scheme"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

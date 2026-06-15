@@ -203,51 +203,123 @@ public:: true
   },
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
-      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"}
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:anonymous-credential", "label": "Anonymous Credential"}
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:anonymous-credential",
+        "label": "Anonymous Credential"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"},
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"},
-      {"@id": "urn:ngm:class:trust-and-safety", "label": "Trust and Safety"}
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
-      {"@id": "urn:ngm:class:iso-iec-27701", "label": "ISO-IEC 27701"},
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"}
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-27701",
+        "label": "ISO-IEC 27701"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-29100", "label": "ISO/IEC 29100"},
-      {"@id": "urn:ngm:class:nist-privacy-framework", "label": "NIST Privacy Framework"}
+      {
+        "@id": "urn:ngm:class:nist-privacy-framework",
+        "label": "NIST Privacy Framework"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:surveillance", "label": "Surveillance"},
-      {"@id": "urn:ngm:class:mass-data-collection", "label": "Mass Data Collection"},
-      {"@id": "urn:ngm:class:hyper-personalisation", "label": "Hyper personalisation"}
+      {
+        "@id": "urn:ngm:class:surveillance",
+        "label": "Surveillance"
+      },
+      {
+        "@id": "urn:ngm:class:data-collection",
+        "label": "Mass Data Collection"
+      },
+      {
+        "@id": "urn:ngm:class:hyper-personalisation",
+        "label": "Hyper personalisation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:digital-rights", "label": "Digital Rights"},
-      {"@id": "urn:ngm:class:data-rights", "label": "Data Rights"}
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:cypherpunk", "label": "Cypherpunk"},
-      {"@id": "urn:ngm:class:decentralised-web", "label": "Decentralised Web"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:decentralised-web",
+        "label": "Decentralised Web"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:informational-privacy", "label": "Informational Privacy"},
-    {"@id": "urn:ngm:class:data-privacy", "label": "Data Privacy"}
+    {
+      "@id": "urn:ngm:class:informational-privacy",
+      "label": "Informational Privacy"
+    },
+    {
+      "@id": "urn:ngm:class:data-privacy",
+      "label": "Data Privacy"
+    }
   ],
   "quality": 0.72,
   "provenance": {

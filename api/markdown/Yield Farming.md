@@ -38,50 +38,123 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:cryptocurrency-wallet", "label": "Cryptocurrency Wallet"}
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency-wallet",
+        "label": "Cryptocurrency Wallet"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:liquidity-provision", "label": "Liquidity Provision"},
-      {"@id": "urn:ngm:class:liquidity-mining", "label": "Liquidity Mining"},
-      {"@id": "urn:ngm:class:staking", "label": "Staking"}
+      {
+        "@id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-mining",
+        "label": "Liquidity Mining"
+      },
+      {
+        "@id": "urn:ngm:class:staking",
+        "label": "Staking"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:token-emission", "label": "Token Emission"},
-      {"@id": "urn:ngm:class:yield-aggregator", "label": "Yield Aggregator"}
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:token-emission",
+        "label": "Token Emission"
+      },
+      {
+        "@id": "urn:ngm:class:yield-aggregator",
+        "label": "Yield Aggregator"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:passive-income", "label": "Passive Income"},
-      {"@id": "urn:ngm:class:liquidity-bootstrapping", "label": "Liquidity Bootstrapping"},
-      {"@id": "urn:ngm:class:protocol-governance", "label": "Protocol Governance"}
+      {
+        "@id": "urn:ngm:class:passive-income",
+        "label": "Passive Income"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-governance",
+        "label": "Protocol Governance"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:oracle", "label": "Oracle"},
-      {"@id": "urn:ngm:class:decentralised-exchange", "label": "Decentralised Exchange"},
-      {"@id": "urn:ngm:class:lending-protocol", "label": "Lending Protocol"}
+      {
+        "@id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:lending-protocol",
+        "label": "Lending Protocol"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:centralised-finance", "label": "Centralised Finance"},
-      {"@id": "urn:ngm:class:hodling", "label": "HODLing"},
-      {"@id": "urn:ngm:class:proof-of-work-mining", "label": "Proof-of-Work Mining"}
+      {
+        "@id": "urn:ngm:class:centralised-finance",
+        "label": "Centralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:mining",
+        "label": "Proof-of-Work Mining"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:impermanent-loss", "label": "Impermanent Loss"},
-      {"@id": "urn:ngm:class:annual-percentage-yield", "label": "Annual Percentage Yield"},
-      {"@id": "urn:ngm:class:total-value-locked", "label": "Total Value Locked"},
-      {"@id": "urn:ngm:class:flash-loan", "label": "Flash Loan"}
+      {
+        "@id": "urn:ngm:class:impermanent-loss",
+        "label": "Impermanent Loss"
+      },
+      {
+        "@id": "urn:ngm:class:annual-percentage-yield",
+        "label": "Annual Percentage Yield"
+      },
+      {
+        "@id": "urn:ngm:class:total-value-locked",
+        "label": "Total Value Locked"
+      },
+      {
+        "@id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:algorithmic-trading", "label": "Algorithmic Trading"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+      {
+        "@id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:defi-yield-farming", "label": "DeFi Yield Farming"},
-    {"@id": "urn:ngm:class:liquidity-farming", "label": "Liquidity Farming"}
+    {
+      "@id": "urn:ngm:class:defi-yield-farming",
+      "label": "DeFi Yield Farming"
+    },
+    {
+      "@id": "urn:ngm:class:liquidity-farming",
+      "label": "Liquidity Farming"
+    }
   ],
   "quality": 0.74,
   "provenance": {

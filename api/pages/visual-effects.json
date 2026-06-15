@@ -75,17 +75,13 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:practical-effects",
-        "label": "Practical Effects"
-      },
-      {
         "id": "urn:ngm:class:in-camera-vfx",
         "label": "In-Camera VFX"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning-for-graphics",
+        "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning for Graphics"
       },
       {
@@ -117,18 +113,10 @@
       {
         "id": "urn:ngm:class:motion-capture",
         "label": "Motion Capture"
-      },
-      {
-        "id": "urn:ngm:class:digital-compositing",
-        "label": "Digital Compositing"
       }
     ],
     "supports": [],
     "standardizedBy": [
-      {
-        "id": "urn:ngm:class:openexr",
-        "label": "OpenEXR"
-      },
       {
         "id": "urn:ngm:class:academy-software-foundation",
         "label": "Academy Software Foundation"

@@ -73,10 +73,6 @@ alias:: QualityOfService
       {
         "@id": "urn:ngm:class:network-protocol",
         "label": "Network Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:traffic-classification",
-        "label": "Traffic Classification"
       }
     ],
     "enables": [
@@ -103,32 +99,14 @@ alias:: QualityOfService
         "label": "Packet Switching"
       },
       {
-        "@id": "urn:ngm:class:routing",
+        "@id": "urn:ngm:class:routing-protocol",
         "label": "Routing"
-      }
-    ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:differentiated-services",
-        "label": "Differentiated Services"
-      },
-      {
-        "@id": "urn:ngm:class:integrated-services",
-        "label": "Integrated Services"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:traffic-shaping",
         "label": "Traffic Shaping"
-      },
-      {
-        "@id": "urn:ngm:class:queuing-discipline",
-        "label": "Queuing Discipline"
-      },
-      {
-        "@id": "urn:ngm:class:admission-control",
-        "label": "Admission Control"
       }
     ],
     "supports": [
@@ -151,14 +129,8 @@ alias:: QualityOfService
         "label": "IETF"
       },
       {
-        "@id": "urn:ngm:class:ieee-802-1",
+        "@id": "urn:ngm:class:ieee-802-x",
         "label": "IEEE 802.1"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:best-effort-delivery",
-        "label": "Best-Effort Delivery"
       }
     ],
     "relatedTo": [

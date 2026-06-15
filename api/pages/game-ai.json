@@ -54,10 +54,6 @@
         "label": "Procedural Content Generation"
       },
       {
-        "id": "urn:ngm:class:adaptive-gameplay",
-        "label": "Adaptive Gameplay"
-      },
-      {
         "id": "urn:ngm:class:non-player-character",
         "label": "Non-Player Character"
       }

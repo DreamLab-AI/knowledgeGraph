@@ -23,55 +23,135 @@ public:: true
   "definition": "WebAuthn (Web Authentication) is a W3C and FIDO Alliance standard that enables web applications to authenticate users using public-key cryptography rather than passwords, through hardware or software authenticators such as security keys, platform biometrics, and passkeys. The browser exposes the navigator.credentials API, which delegates cryptographic operations to a CTAP-compliant authenticator; the authenticator generates a key pair, stores the private key in a secure enclave, and signs authentication challenges that the relying party verifies using the registered public key. WebAuthn eliminates shared secrets from the authentication path, making phishing, credential stuffing, and replay attacks fundamentally impossible by design. It is the technical foundation of the passkey ecosystem deployed by Apple, Google, and Microsoft.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:authentication-mechanism", "label": "Authentication Mechanism"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:authentication-mechanism",
+      "label": "Authentication Mechanism"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
-      {"@id": "urn:ngm:class:fido2", "label": "FIDO2"},
-      {"@id": "urn:ngm:class:asymmetric-encryption", "label": "Asymmetric Encryption"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:secure-enclave", "label": "Secure Enclave"},
-      {"@id": "urn:ngm:class:challenge-response-authentication", "label": "Challenge-Response Authentication"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:fido2",
+        "label": "FIDO2"
+      },
+      {
+        "@id": "urn:ngm:class:asymmetric-encryption",
+        "label": "Asymmetric Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclave"
+      },
+      {
+        "@id": "urn:ngm:class:challenge-response-authentication",
+        "label": "Challenge-Response Authentication"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:passwordless-authentication", "label": "Passwordless Authentication"},
-      {"@id": "urn:ngm:class:privacy-preserving-authentication", "label": "Privacy-Preserving Authentication"},
-      {"@id": "urn:ngm:class:multi-factor-authentication", "label": "Multi-Factor Authentication"},
-      {"@id": "urn:ngm:class:phishing-resistant-authentication", "label": "Phishing-Resistant Authentication"},
-      {"@id": "urn:ngm:class:passkey", "label": "Passkey"}
+      {
+        "@id": "urn:ngm:class:passwordless-authentication",
+        "label": "Passwordless Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-authentication",
+        "label": "Privacy-Preserving Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:phishing-resistant-authentication",
+        "label": "Phishing-Resistant Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:passkey",
+        "label": "Passkey"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:relying-party", "label": "Relying Party"},
-      {"@id": "urn:ngm:class:authenticator", "label": "Authenticator"},
-      {"@id": "urn:ngm:class:origin-binding", "label": "Origin Binding"}
+      {
+        "@id": "urn:ngm:class:relying-party",
+        "label": "Relying Party"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:fido-ctap", "label": "FIDO CTAP"},
-      {"@id": "urn:ngm:class:w3c-recommendation", "label": "W3C Recommendation"}
+      {
+        "@id": "urn:ngm:class:w3c-recommendation",
+        "label": "W3C Recommendation"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:w3-c", "label": "W3C"},
-      {"@id": "urn:ngm:class:fido-alliance", "label": "FIDO Alliance"}
+      {
+        "@id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      },
+      {
+        "@id": "urn:ngm:class:fido-alliance",
+        "label": "FIDO Alliance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:password-authentication", "label": "Password Authentication"},
-      {"@id": "urn:ngm:class:one-time-password", "label": "One-Time Password"}
+      {
+        "@id": "urn:ngm:class:password-authentication",
+        "label": "Password Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:one-time-password",
+        "label": "One-Time Password"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:web-standard", "label": "Web Standard"},
-      {"@id": "urn:ngm:class:credential-verification", "label": "Credential Verification"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:biometric-authentication", "label": "Biometric Authentication"},
-      {"@id": "urn:ngm:class:security-key", "label": "Security Key"}
+      {
+        "@id": "urn:ngm:class:web-standard",
+        "label": "Web Standard"
+      },
+      {
+        "@id": "urn:ngm:class:credential-verification",
+        "label": "Credential Verification"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:security-key",
+        "label": "Security Key"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:web-authentication-api", "label": "Web Authentication API"},
-    {"@id": "urn:ngm:class:fido2-web-authentication", "label": "FIDO2 Web Authentication"}
+    {
+      "@id": "urn:ngm:class:web-authentication-api",
+      "label": "Web Authentication API"
+    },
+    {
+      "@id": "urn:ngm:class:fido2-web-authentication",
+      "label": "FIDO2 Web Authentication"
+    }
   ],
   "quality": 0.72,
   "provenance": {

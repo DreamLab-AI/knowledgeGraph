@@ -74,10 +74,6 @@ public:: true
       {
         "@id": "urn:ngm:class:deterministic-scheduling",
         "label": "Deterministic Scheduling"
-      },
-      {
-        "@id": "urn:ngm:class:interrupt-handling",
-        "label": "Interrupt Handling"
       }
     ],
     "enables": [
@@ -86,7 +82,7 @@ public:: true
         "label": "Embedded Systems"
       },
       {
-        "@id": "urn:ngm:class:autonomous-vehicles",
+        "@id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
       },
       {
@@ -94,19 +90,11 @@ public:: true
         "label": "IndustrialAutomation"
       },
       {
-        "@id": "urn:ngm:class:flight-control-systems",
+        "@id": "urn:ngm:class:control-system",
         "label": "Flight Control Systems"
       }
     ],
     "hasPart": [
-      {
-        "@id": "urn:ngm:class:hard-real-time",
-        "label": "Hard Real-Time"
-      },
-      {
-        "@id": "urn:ngm:class:soft-real-time",
-        "label": "Soft Real-Time"
-      },
       {
         "@id": "urn:ngm:class:deadline-scheduling",
         "label": "Deadline Scheduling"
@@ -120,10 +108,6 @@ public:: true
       {
         "@id": "urn:ngm:class:memory-management",
         "label": "Memory Management"
-      },
-      {
-        "@id": "urn:ngm:class:watchdog-timer",
-        "label": "Watchdog Timer"
       }
     ],
     "dependsOn": [
@@ -132,7 +116,7 @@ public:: true
         "label": "Latency"
       },
       {
-        "@id": "urn:ngm:class:clock-synchronisation",
+        "@id": "urn:ngm:class:clock-synchronization",
         "label": "Clock Synchronisation"
       }
     ],
@@ -154,10 +138,6 @@ public:: true
       {
         "@id": "urn:ngm:class:batch-processing",
         "label": "Batch Processing"
-      },
-      {
-        "@id": "urn:ngm:class:time-sharing",
-        "label": "Time-Sharing"
       }
     ],
     "standardizedBy": [
@@ -172,7 +152,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:machine-learning-inference",
+        "@id": "urn:ngm:class:inference",
         "label": "Machine Learning Inference"
       },
       {

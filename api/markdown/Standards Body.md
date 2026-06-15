@@ -59,11 +59,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:technical-working-group",
-        "label": "Technical Working Group"
-      },
-      {
-        "@id": "urn:ngm:class:conformance-test-suite",
+        "@id": "urn:ngm:class:standards-conformance-testing",
         "label": "Conformance Test Suite"
       },
       {
@@ -87,7 +83,7 @@ public:: true
         "label": "Consensus Process"
       },
       {
-        "@id": "urn:ngm:class:intellectual-property-licensing",
+        "@id": "urn:ngm:class:intellectual-property-licence-instrument",
         "label": "Intellectual Property Licensing"
       }
     ],
@@ -151,7 +147,7 @@ public:: true
         "label": "AI Safety Framework"
       },
       {
-        "@id": "urn:ngm:class:spatial-computing-standard",
+        "@id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing Standard"
       },
       {
@@ -161,7 +157,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:governance-institution",
+        "@id": "urn:ngm:class:governance",
         "label": "Governance Institution"
       },
       {

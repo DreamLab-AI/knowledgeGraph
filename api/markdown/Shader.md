@@ -84,10 +84,6 @@ public:: true
       {
         "@id": "urn:ngm:class:tessellation-shader",
         "label": "Tessellation Shader"
-      },
-      {
-        "@id": "urn:ngm:class:ray-generation-shader",
-        "label": "Ray Generation Shader"
       }
     ],
     "partOf": [
@@ -164,21 +160,11 @@ public:: true
       {
         "@id": "urn:ngm:class:khronos-group",
         "label": "Khronos Group"
-      },
-      {
-        "@id": "urn:ngm:class:opengl-arb",
-        "label": "OpenGL ARB"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:fixed-function-pipeline",
-        "label": "Fixed Function Pipeline"
       }
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:machine-learning-inference",
+        "@id": "urn:ngm:class:inference",
         "label": "Machine Learning Inference"
       },
       {

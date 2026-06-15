@@ -82,10 +82,6 @@ public:: true
       {
         "@id": "urn:ngm:class:optical-character-recognition",
         "label": "Optical Character Recognition"
-      },
-      {
-        "@id": "urn:ngm:class:database-lookup",
-        "label": "Database Lookup"
       }
     ],
     "enables": [
@@ -112,7 +108,7 @@ public:: true
         "label": "Machine Learning"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -152,7 +148,7 @@ public:: true
         "label": "NIST SP 800-63"
       },
       {
-        "@id": "urn:ngm:class:iso-iec-30107",
+        "@id": "urn:ngm:class:iso-iec",
         "label": "ISO/IEC 30107"
       },
       {
@@ -176,7 +172,7 @@ public:: true
         "label": "Decentralised Identity"
       },
       {
-        "@id": "urn:ngm:class:verifiable-credential",
+        "@id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       }
     ],

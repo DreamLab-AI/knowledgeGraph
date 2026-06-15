@@ -24,49 +24,120 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"}
+    {
+      "@id": "urn:ngm:class:cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    }
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:cross-chain-asset-transfer", "label": "Cross Chain Asset Transfer"},
-      {"@id": "urn:ngm:class:cross-chain-messaging", "label": "Cross-Chain Messaging"},
-      {"@id": "urn:ngm:class:token-bridging", "label": "Token Bridging"},
-      {"@id": "urn:ngm:class:nft-bridging", "label": "NFT Bridging"}
+      {
+        "@id": "urn:ngm:class:cross-chain-asset-transfer",
+        "label": "Cross Chain Asset Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-messaging",
+        "label": "Cross-Chain Messaging"
+      },
+      {
+        "@id": "urn:ngm:class:token-bridging",
+        "label": "Token Bridging"
+      },
+      {
+        "@id": "urn:ngm:class:nft-bridging",
+        "label": "NFT Bridging"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:guardian-network", "label": "Guardian Network"},
-      {"@id": "urn:ngm:class:multisignature-scheme", "label": "Multisignature Scheme"},
-      {"@id": "urn:ngm:class:lock-and-mint-mechanism", "label": "Lock and Mint Mechanism"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:multisignature",
+        "label": "Multisignature Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:lock-and-mint-mechanism",
+        "label": "Lock and Mint Mechanism"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
-      {"@id": "urn:ngm:class:quorum-consensus", "label": "Quorum Consensus"},
-      {"@id": "urn:ngm:class:event-log", "label": "Event Log"}
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "@id": "urn:ngm:class:quorum-consensus",
+        "label": "Quorum Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:event-log",
+        "label": "Event Log"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:layerzero", "label": "LayerZero"},
-      {"@id": "urn:ngm:class:axelar", "label": "Axelar"},
-      {"@id": "urn:ngm:class:ibc-protocol", "label": "IBC Protocol"},
-      {"@id": "urn:ngm:class:light-client-bridge", "label": "Light-Client Bridge"}
+      {
+        "@id": "urn:ngm:class:layerzero",
+        "label": "LayerZero"
+      },
+      {
+        "@id": "urn:ngm:class:axelar",
+        "label": "Axelar"
+      },
+      {
+        "@id": "urn:ngm:class:ibc",
+        "label": "IBC Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:light-client",
+        "label": "Light-Client Bridge"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"},
-      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:oracle-network", "label": "Oracle Network"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+      {
+        "@id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:intent-based-bridging", "label": "Intent-Based Bridging"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:intent-based-bridging",
+        "label": "Intent-Based Bridging"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:multichain-ecosystem", "label": "Multi-Chain Ecosystem"}
+      {
+        "@id": "urn:ngm:class:multichain-ecosystem",
+        "label": "Multi-Chain Ecosystem"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:wormhole-protocol", "label": "Wormhole Protocol"}
+    {
+      "@id": "urn:ngm:class:wormhole-protocol",
+      "label": "Wormhole Protocol"
+    }
   ],
   "quality": 0.72,
   "provenance": {

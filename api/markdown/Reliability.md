@@ -74,10 +74,6 @@ public:: true
         "label": "Testing"
       },
       {
-        "@id": "urn:ngm:class:validation-ai-0095",
-        "label": "Validation (AI-0095)"
-      },
-      {
         "@id": "urn:ngm:class:fault-tolerance",
         "label": "Fault Tolerance"
       },
@@ -88,7 +84,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:trustworthiness",
+        "@id": "urn:ngm:class:ai-trustworthiness",
         "label": "Trustworthiness"
       },
       {
@@ -124,10 +120,6 @@ public:: true
       {
         "@id": "urn:ngm:class:robustness",
         "label": "Robustness"
-      },
-      {
-        "@id": "urn:ngm:class:validity",
-        "label": "Validity"
       }
     ],
     "standardizedBy": [

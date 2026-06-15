@@ -23,58 +23,127 @@ public:: true
   "definition": "Tactile sensing is the ability of a robotic or prosthetic system to detect and interpret physical contact information — including contact force magnitude, direction, distribution, texture, slip, and temperature — through sensors embedded in or on the surface of an end effector or robotic skin. It is the mechanical analogue of the human sense of touch and provides information that visual sensing alone cannot supply, such as the internal stress distribution of a grasped object or the onset of slippage. Tactile sensing is fundamental to dexterous manipulation, safe human-robot interaction, and feedback-controlled assembly, and has become a defining capability differentiating next-generation robotic systems from conventional industrial manipulators.",
   "domain": "robotics",
   "maturity": "emerging",
-  "subClassOf": {"@id": "urn:ngm:class:perception-system", "label": "Perception System"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:perception-system",
+    "label": "Perception System"
+  },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:force-torque-sensor", "label": "Force Torque Sensor"},
-      {"@id": "urn:ngm:class:pressure-sensor", "label": "Pressure Sensor"},
-      {"@id": "urn:ngm:class:piezoresistive-sensor", "label": "Piezoresistive Sensor"},
-      {"@id": "urn:ngm:class:capacitive-sensor", "label": "Capacitive Sensor"},
-      {"@id": "urn:ngm:class:optical-tactile-sensor", "label": "Optical Tactile Sensor"}
+      {
+        "@id": "urn:ngm:class:force-torque-sensor",
+        "label": "Force Torque Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:pressure-sensor",
+        "label": "Pressure Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:piezoresistive-sensor",
+        "label": "Piezoresistive Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:capacitive-sensor",
+        "label": "Capacitive Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:tactile-sensor",
+        "label": "Optical Tactile Sensor"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:manipulation", "label": "Manipulation"},
-      {"@id": "urn:ngm:class:force-control", "label": "Force Control"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:dexterous-grasping", "label": "Dexterous Grasping"},
-      {"@id": "urn:ngm:class:slip-detection", "label": "Slip Detection"}
+      {
+        "@id": "urn:ngm:class:manipulation",
+        "label": "Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:dexterous-grasping",
+        "label": "Dexterous Grasping"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:tactile-array", "label": "Tactile Array"},
-      {"@id": "urn:ngm:class:robotic-skin", "label": "Robotic Skin"}
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:robotic-manipulation-system", "label": "Robotic Manipulation System"}
+      {
+        "@id": "urn:ngm:class:robotic-system",
+        "label": "Robotic Manipulation System"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"},
-      {"@id": "urn:ngm:class:soft-robotics", "label": "Soft Robotics"}
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      },
+      {
+        "@id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"},
-      {"@id": "urn:ngm:class:prosthetics", "label": "Prosthetics"}
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "@id": "urn:ngm:class:prosthetics",
+        "label": "Prosthetics"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:visual-perception", "label": "Visual Perception"},
-      {"@id": "urn:ngm:class:proximity-sensing", "label": "Proximity Sensing"}
+      {
+        "@id": "urn:ngm:class:visual-perception",
+        "label": "Visual Perception"
+      },
+      {
+        "@id": "urn:ngm:class:proximity-sensing",
+        "label": "Proximity Sensing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:neuromorphic-computing", "label": "Neuromorphic Computing"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:neuromorphic-computing",
+        "label": "Neuromorphic Computing"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:texture-recognition", "label": "Texture Recognition"},
-      {"@id": "urn:ngm:class:grasp-planning", "label": "Grasp Planning"}
+      {
+        "@id": "urn:ngm:class:grasp-planning",
+        "label": "Grasp Planning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:touch-sensing", "label": "Touch Sensing"},
-    {"@id": "urn:ngm:class:haptic-sensing", "label": "Haptic Sensing"}
+    {
+      "@id": "urn:ngm:class:touch-sensing",
+      "label": "Touch Sensing"
+    },
+    {
+      "@id": "urn:ngm:class:haptic-sensing",
+      "label": "Haptic Sensing"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

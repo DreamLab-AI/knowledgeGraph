@@ -18,20 +18,12 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:circuit-analysis",
-        "label": "Circuit Analysis"
-      },
-      {
-        "id": "urn:ngm:class:sparse-autoencoder",
+        "id": "urn:ngm:class:sparse-autoencoders",
         "label": "Sparse Autoencoder"
       },
       {
         "id": "urn:ngm:class:activation-patching",
         "label": "Activation Patching"
-      },
-      {
-        "id": "urn:ngm:class:feature-visualization",
-        "label": "Feature Visualization"
       }
     ],
     "requires": [
@@ -48,14 +40,6 @@
       {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
-      },
-      {
-        "id": "urn:ngm:class:model-auditing",
-        "label": "Model Auditing"
-      },
-      {
-        "id": "urn:ngm:class:deception-detection",
-        "label": "Deception Detection"
       }
     ],
     "dependsOn": [
@@ -76,10 +60,6 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:black-box-interpretability",
-        "label": "Black-Box Interpretability"
-      },
-      {
         "id": "urn:ngm:class:post-hoc-explanation",
         "label": "Post-Hoc Explanation"
       }
@@ -94,16 +74,7 @@
         "label": "Security"
       }
     ],
-    "uses": [
-      {
-        "id": "urn:ngm:class:probing-classifier",
-        "label": "Probing Classifier"
-      },
-      {
-        "id": "urn:ngm:class:logit-lens",
-        "label": "Logit Lens"
-      }
-    ],
+    "uses": [],
     "supports": [
       {
         "id": "urn:ngm:class:safety-and-alignment",
@@ -137,10 +108,6 @@
       {
         "id": "urn:ngm:class:superposition-hypothesis",
         "label": "Superposition Hypothesis"
-      },
-      {
-        "id": "urn:ngm:class:polysemanticity",
-        "label": "Polysemanticity"
       },
       {
         "id": "urn:ngm:class:model-evaluation",

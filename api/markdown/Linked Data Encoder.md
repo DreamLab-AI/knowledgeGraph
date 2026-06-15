@@ -174,10 +174,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:context-pinning",
-        "label": "Context Pinning"
-      },
-      {
         "@id": "urn:ngm:class:json-data-interchange-format-ld-context",
         "label": "JSON-LD Context"
       },
@@ -236,7 +232,7 @@ public:: true
         "label": "RDF Semantics"
       },
       {
-        "@id": "urn:ngm:class:w3-c-linked-data",
+        "@id": "urn:ngm:class:linked-data",
         "label": "W3C Linked Data"
       }
     ]

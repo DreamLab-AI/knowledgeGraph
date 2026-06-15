@@ -23,13 +23,21 @@ public:: true
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:dc-communication", "label": "Communication Technology"}
+    {
+      "@id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    }
   ],
   "relations": {
-    "enables": [{"@id": "urn:ngm:class:audio-quality", "label": "Audio Quality"}],
     "relatedTo": [
-      {"@id": "urn:ngm:class:live-captions", "label": "Live Captions"},
-      {"@id": "urn:ngm:class:webinar-broadcast", "label": "Webinar Broadcast"}
+      {
+        "@id": "urn:ngm:class:live-captions",
+        "label": "Live Captions"
+      },
+      {
+        "@id": "urn:ngm:class:webinar-broadcast",
+        "label": "Webinar Broadcast"
+      }
     ]
   },
   "quality": 0.7

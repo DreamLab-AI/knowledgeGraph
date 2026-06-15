@@ -70,11 +70,11 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:conformity-assessment-ai-0103",
+        "@id": "urn:ngm:class:conformity-assessment",
         "label": "Conformity Assessment (AI-0103)"
       },
       {
-        "@id": "urn:ngm:class:human-oversight-ai-0041",
+        "@id": "urn:ngm:class:human-oversight",
         "label": "Human Oversight (AI-0041)"
       }
     ]

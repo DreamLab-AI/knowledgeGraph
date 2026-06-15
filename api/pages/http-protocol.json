@@ -26,7 +26,7 @@
         "label": "HTTP Status Code"
       },
       {
-        "id": "urn:ngm:class:http-method",
+        "id": "urn:ngm:class:http",
         "label": "HTTP Method"
       }
     ],
@@ -87,10 +87,6 @@
       {
         "id": "urn:ngm:class:ai-agent",
         "label": "AI Agent"
-      },
-      {
-        "id": "urn:ngm:class:llm-api",
-        "label": "LLM API"
       }
     ],
     "uses": [
@@ -107,7 +103,7 @@
         "label": "TCP/IP"
       },
       {
-        "id": "urn:ngm:class:quic-protocol",
+        "id": "urn:ngm:class:quic",
         "label": "QUIC Protocol"
       },
       {

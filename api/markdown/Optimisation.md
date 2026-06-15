@@ -23,52 +23,138 @@ public:: true
   "definition": "Optimisation is the mathematical and computational discipline concerned with finding the best solution — maximum or minimum — of an objective function subject to given constraints, across a search space of possible decisions or parameter configurations. It encompasses deterministic methods (linear programming, convex optimisation, gradient-based search), stochastic methods (simulated annealing, evolutionary algorithms, Monte Carlo sampling), and learned methods (differentiable optimisation, meta-learning, neural combinatorial solvers). Optimisation is the theoretical core of machine learning training, operations research, control engineering, signal processing, and resource scheduling. The choice of optimisation algorithm fundamentally determines convergence speed, solution quality, and computational cost across all application domains.",
   "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:mathematical-foundations", "label": "Mathematical Foundations"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:mathematical-foundations",
+      "label": "Mathematical Foundations"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:optimization", "label": "Optimization"},
-    {"@id": "urn:ngm:class:mathematical-optimisation", "label": "Mathematical Optimisation"}
+    {
+      "@id": "urn:ngm:class:optimization",
+      "label": "Optimization"
+    },
+    {
+      "@id": "urn:ngm:class:mathematical-optimisation",
+      "label": "Mathematical Optimisation"
+    }
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:optimal-control", "label": "Optimal Control"},
-      {"@id": "urn:ngm:class:operations-research", "label": "Operations Research"},
-      {"@id": "urn:ngm:class:hyperparameter-tuning", "label": "Hyperparameter Tuning"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      },
+      {
+        "@id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:convex-optimisation", "label": "Convex Optimisation"},
-      {"@id": "urn:ngm:class:bayesian-optimisation", "label": "Bayesian Optimisation"},
-      {"@id": "urn:ngm:class:evolutionary-algorithm", "label": "Evolutionary Algorithm"},
-      {"@id": "urn:ngm:class:linear-programming", "label": "Linear Programming"}
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:convex-optimisation",
+        "label": "Convex Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:evolutionary-algorithm",
+        "label": "Evolutionary Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:linear-programming",
+        "label": "Linear Programming"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
-      {"@id": "urn:ngm:class:objective-function", "label": "Objective Function"},
-      {"@id": "urn:ngm:class:constraint", "label": "Constraint"}
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:objective-function",
+        "label": "Objective Function"
+      },
+      {
+        "@id": "urn:ngm:class:constraint",
+        "label": "Constraint"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:calculus", "label": "Calculus"},
-      {"@id": "urn:ngm:class:linear-algebra", "label": "Linear Algebra"},
-      {"@id": "urn:ngm:class:probability-theory", "label": "Probability Theory"}
+      {
+        "@id": "urn:ngm:class:calculus",
+        "label": "Calculus"
+      },
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "@id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:neural-network-training", "label": "Neural Network Training"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:portfolio-optimisation", "label": "Portfolio Optimisation"},
-      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"}
+      {
+        "@id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:portfolio-optimisation",
+        "label": "Portfolio Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:satisfiability", "label": "Satisfiability"}
+      {
+        "@id": "urn:ngm:class:satisfiability",
+        "label": "Satisfiability"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:quantum-computing", "label": "Quantum Computing"}
+      {
+        "@id": "urn:ngm:class:quantum-computation-paradigm",
+        "label": "Quantum Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:numerical-methods", "label": "Numerical Methods"},
-      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"},
-      {"@id": "urn:ngm:class:information-theory", "label": "Information Theory"}
+      {
+        "@id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
     ]
   },
   "quality": 0.72,

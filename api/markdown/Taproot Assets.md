@@ -432,40 +432,6 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:asset-group-key",
-        "label": "Asset Group Key"
-      },
-      {
-        "@id": "urn:ngm:class:asset-witness-proof",
-        "label": "Asset Witness Proof"
-      },
-      {
-        "@id": "urn:ngm:class:lightning-asset-channel",
-        "label": "Lightning Asset Channel"
-      },
-      {
-        "@id": "urn:ngm:class:merkle-sum-sparse-merkle-tree",
-        "label": "Merkle Sum Sparse Merkle Tree"
-      },
-      {
-        "@id": "urn:ngm:class:rfq-market",
-        "label": "RFQ Market"
-      },
-      {
-        "@id": "urn:ngm:class:tapd-daemon",
-        "label": "tapd Daemon"
-      },
-      {
-        "@id": "urn:ngm:class:taproot-script-leaf",
-        "label": "Taproot Script Leaf"
-      },
-      {
-        "@id": "urn:ngm:class:universe-registry",
-        "label": "Universe Registry"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:bip-341",
@@ -480,7 +446,7 @@ public:: true
         "label": "Schnorr Signature"
       },
       {
-        "@id": "urn:ngm:class:taproot-upgrade",
+        "@id": "urn:ngm:class:taproot",
         "label": "Taproot Upgrade"
       },
       {
@@ -498,27 +464,15 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:atomic-cross-asset-swaps",
+        "@id": "urn:ngm:class:atomic-swap",
         "label": "Atomic Cross-Asset Swaps"
-      },
-      {
-        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-native-stablecoins",
-        "label": "Bitcoin-Native Stablecoins"
       },
       {
         "@id": "urn:ngm:class:machine-to-machine-payments",
         "label": "Machine to Machine Payments"
       },
       {
-        "@id": "urn:ngm:class:multi-asset-lightning-payments",
-        "label": "Multi-Asset Lightning Payments"
-      },
-      {
-        "@id": "urn:ngm:class:nfts-on-bitcoin",
-        "label": "NFTs on Bitcoin"
-      },
-      {
-        "@id": "urn:ngm:class:tokenised-securities-on-bitcoin",
+        "@id": "urn:ngm:class:tokenised-securities",
         "label": "Tokenised Securities on Bitcoin"
       }
     ],
@@ -544,15 +498,11 @@ public:: true
         "label": "Client-Side Validation"
       },
       {
-        "@id": "urn:ngm:class:ms-smt-commitment-scheme",
+        "@id": "urn:ngm:class:commitment-scheme",
         "label": "MS-SMT Commitment Scheme"
       },
       {
-        "@id": "urn:ngm:class:rfq-multi-asset-routing",
-        "label": "RFQ Multi-Asset Routing"
-      },
-      {
-        "@id": "urn:ngm:class:universe-gossip-protocol",
+        "@id": "urn:ngm:class:gossip-protocol",
         "label": "Universe Gossip Protocol"
       }
     ],
@@ -562,24 +512,12 @@ public:: true
         "label": "HTLC"
       },
       {
-        "@id": "urn:ngm:class:lightning-channels",
-        "label": "Lightning Channels"
-      },
-      {
         "@id": "urn:ngm:class:schnorr-signature",
         "label": "Schnorr Signature"
       },
       {
-        "@id": "urn:ngm:class:taproot-transactions",
-        "label": "Taproot Transactions"
-      },
-      {
         "@id": "urn:ngm:class:tlv-encoding",
         "label": "TLV Encoding"
-      },
-      {
-        "@id": "urn:ngm:class:universe-servers",
-        "label": "Universe Servers"
       },
       {
         "@id": "urn:ngm:class:utxo-model",
@@ -592,10 +530,6 @@ public:: true
         "label": "Atomic Swap"
       },
       {
-        "@id": "urn:ngm:class:joltz-wallet",
-        "label": "Joltz Wallet"
-      },
-      {
         "@id": "urn:ngm:class:l-402-protocol",
         "label": "L402 Protocol"
       },
@@ -604,11 +538,7 @@ public:: true
         "label": "Lightning Labs"
       },
       {
-        "@id": "urn:ngm:class:lightning-terminal",
-        "label": "Lightning Terminal"
-      },
-      {
-        "@id": "urn:ngm:class:x402-protocol",
+        "@id": "urn:ngm:class:x402-and-l402-payment-protocols",
         "label": "X402 Protocol"
       },
       {
@@ -622,10 +552,6 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:ai-agent-economies",
-        "label": "AI Agent Economies"
-      },
-      {
         "@id": "urn:ngm:class:decentralized-exchange",
         "label": "Decentralized Exchange"
       },
@@ -634,16 +560,8 @@ public:: true
         "label": "Machine to Machine Payments"
       },
       {
-        "@id": "urn:ngm:class:programmable-assets",
-        "label": "Programmable Assets"
-      },
-      {
         "@id": "urn:ngm:class:stablecoins-on-bitcoin",
         "label": "Stablecoins on Bitcoin"
-      },
-      {
-        "@id": "urn:ngm:class:tether-usdt-on-lightning",
-        "label": "Tether USDt on Lightning"
       }
     ],
     "standardizedBy": [

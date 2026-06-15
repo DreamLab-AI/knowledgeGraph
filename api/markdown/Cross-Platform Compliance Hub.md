@@ -150,19 +150,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:audit-aggregator",
+        "@id": "urn:ngm:class:audit",
         "label": "Audit Aggregator"
       },
       {
-        "@id": "urn:ngm:class:policy-synchronization",
-        "label": "Policy Synchronization"
-      },
-      {
-        "@id": "urn:ngm:class:regulatory-mapping-engine",
-        "label": "Regulatory Mapping Engine"
-      },
-      {
-        "@id": "urn:ngm:class:risk-assessment-module",
+        "@id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment Module"
       },
       {
@@ -171,14 +163,6 @@ public:: true
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:multi-jurisdictional-policy-store",
-        "label": "Multi-Jurisdictional Policy Store"
-      },
-      {
-        "@id": "urn:ngm:class:reporting-engine",
-        "label": "Reporting Engine"
-      },
       {
         "@id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail"
@@ -190,18 +174,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:cross-platform-auditing",
-        "label": "Cross-Platform Auditing"
-      },
-      {
-        "@id": "urn:ngm:class:regulatory-harmonization",
-        "label": "Regulatory Harmonization"
-      },
-      {
-        "@id": "urn:ngm:class:unified-compliance-reporting",
-        "label": "Unified Compliance Reporting"
-      },
-      {
         "@id": "urn:ngm:class:policy-enforcement",
         "label": "Policy Enforcement"
       }
@@ -212,7 +184,7 @@ public:: true
         "label": "Governance Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:regulatory-compliance-framework",
+        "@id": "urn:ngm:class:compliance-framework",
         "label": "Regulatory Compliance Framework"
       }
     ]

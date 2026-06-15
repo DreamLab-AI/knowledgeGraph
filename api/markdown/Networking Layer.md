@@ -133,14 +133,6 @@ alias:: NetworkingLayer
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:data-transmission-service",
-        "label": "Data Transmission Service"
-      },
-      {
-        "@id": "urn:ngm:class:routing-infrastructure",
-        "label": "Routing Infrastructure"
-      },
-      {
         "@id": "urn:ngm:class:communication-software",
         "label": "Communication Software"
       },
@@ -164,10 +156,6 @@ alias:: NetworkingLayer
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:cross-platform-connectivity",
-        "label": "Cross-Platform Connectivity"
-      },
       {
         "@id": "urn:ngm:class:low-latency-interaction",
         "label": "Low-Latency Interaction"

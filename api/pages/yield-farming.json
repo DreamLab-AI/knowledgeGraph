@@ -50,10 +50,6 @@
         "label": "Passive Income"
       },
       {
-        "id": "urn:ngm:class:liquidity-bootstrapping",
-        "label": "Liquidity Bootstrapping"
-      },
-      {
         "id": "urn:ngm:class:protocol-governance",
         "label": "Protocol Governance"
       }
@@ -79,11 +75,7 @@
         "label": "Centralised Finance"
       },
       {
-        "id": "urn:ngm:class:hodling",
-        "label": "HODLing"
-      },
-      {
-        "id": "urn:ngm:class:proof-of-work-mining",
+        "id": "urn:ngm:class:mining",
         "label": "Proof-of-Work Mining"
       }
     ],

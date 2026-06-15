@@ -101,10 +101,6 @@ public:: true
       {
         "@id": "urn:ngm:class:block-proposal",
         "label": "Block Proposal"
-      },
-      {
-        "@id": "urn:ngm:class:validator-committee",
-        "label": "Validator Committee"
       }
     ],
     "dependsOn": [

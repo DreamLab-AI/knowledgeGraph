@@ -56,10 +56,6 @@
         "label": "Q-Learning"
       },
       {
-        "id": "urn:ngm:class:actor-critic-architecture",
-        "label": "Actor-Critic Architecture"
-      },
-      {
         "id": "urn:ngm:class:temporal-difference-learning",
         "label": "Temporal Difference Learning"
       }

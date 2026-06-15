@@ -60,10 +60,6 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
-      },
-      {
-        "id": "urn:ngm:class:immersive-training",
-        "label": "Immersive Training"
       }
     ],
     "dependsOn": [
@@ -83,7 +79,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:traditional-display-technology",
+        "id": "urn:ngm:class:display-technology",
         "label": "Traditional Display Technology"
       }
     ],
@@ -107,7 +103,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:simultaneous-localization-and-mapping",
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
         "label": "Simultaneous Localization and Mapping"
       },
       {
@@ -119,10 +115,6 @@
       {
         "id": "urn:ngm:class:enterprise-training",
         "label": "Enterprise Training"
-      },
-      {
-        "id": "urn:ngm:class:healthcare-simulation",
-        "label": "Healthcare Simulation"
       },
       {
         "id": "urn:ngm:class:remote-collaboration",

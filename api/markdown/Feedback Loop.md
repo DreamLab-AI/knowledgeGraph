@@ -501,16 +501,15 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:control-system", "label": "Control System"}
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
     ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:actuator",
         "label": "Actuator"
-      },
-      {
-        "@id": "urn:ngm:class:comparator",
-        "label": "Comparator"
       },
       {
         "@id": "urn:ngm:class:controller",
@@ -519,18 +518,6 @@ public:: true
       {
         "@id": "urn:ngm:class:error-signal",
         "label": "Error Signal"
-      },
-      {
-        "@id": "urn:ngm:class:feedback-path",
-        "label": "Feedback Path"
-      },
-      {
-        "@id": "urn:ngm:class:loop-delay",
-        "label": "Loop Delay"
-      },
-      {
-        "@id": "urn:ngm:class:loop-gain",
-        "label": "Loop Gain"
       },
       {
         "@id": "urn:ngm:class:setpoint",
@@ -551,14 +538,6 @@ public:: true
         "label": "Energy Source"
       },
       {
-        "@id": "urn:ngm:class:measurement",
-        "label": "Measurement"
-      },
-      {
-        "@id": "urn:ngm:class:process-variable",
-        "label": "Process Variable"
-      },
-      {
         "@id": "urn:ngm:class:reference-signal",
         "label": "Reference Signal"
       },
@@ -568,14 +547,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:adaptation",
-        "label": "Adaptation"
-      },
-      {
-        "@id": "urn:ngm:class:goal-directed-behaviour",
-        "label": "Goal-Directed Behaviour"
-      },
       {
         "@id": "urn:ngm:class:homeostasis",
         "label": "Homeostasis"
@@ -598,10 +569,6 @@ public:: true
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:bang-bang-control",
-        "label": "Bang-Bang Control"
-      },
       {
         "@id": "urn:ngm:class:model-predictive-control",
         "label": "Model Predictive Control"
@@ -637,14 +604,6 @@ public:: true
         "label": "Laplace Transform"
       },
       {
-        "@id": "urn:ngm:class:lyapunov-stability",
-        "label": "Lyapunov Stability"
-      },
-      {
-        "@id": "urn:ngm:class:nyquist-criterion",
-        "label": "Nyquist Criterion"
-      },
-      {
         "@id": "urn:ngm:class:transfer-function",
         "label": "Transfer Function"
       },
@@ -655,20 +614,12 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:autopoiesis",
-        "label": "Autopoiesis"
-      },
-      {
         "@id": "urn:ngm:class:causal-loop-diagram",
         "label": "Causal Loop Diagram"
       },
       {
         "@id": "urn:ngm:class:cybernetics",
         "label": "Cybernetics"
-      },
-      {
-        "@id": "urn:ngm:class:goodhart-s-law",
-        "label": "Goodhart's Law"
       },
       {
         "@id": "urn:ngm:class:homeostasis",
@@ -683,23 +634,11 @@ public:: true
         "label": "RLHF"
       },
       {
-        "@id": "urn:ngm:class:systems-dynamics",
-        "label": "Systems Dynamics"
-      },
-      {
-        "@id": "urn:ngm:class:tipping-point",
-        "label": "Tipping Point"
-      },
-      {
         "@id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
       }
     ],
     "supports": [
-      {
-        "@id": "urn:ngm:class:climate-regulation",
-        "label": "Climate Regulation"
-      },
       {
         "@id": "urn:ngm:class:engagement-optimisation",
         "label": "Engagement Optimisation"
@@ -711,10 +650,6 @@ public:: true
       {
         "@id": "urn:ngm:class:model-alignment",
         "label": "Model Alignment"
-      },
-      {
-        "@id": "urn:ngm:class:population-dynamics",
-        "label": "Population Dynamics"
       },
       {
         "@id": "urn:ngm:class:process-control",
@@ -745,10 +680,6 @@ public:: true
       {
         "@id": "urn:ngm:class:isa-95",
         "label": "ISA-95"
-      },
-      {
-        "@id": "urn:ngm:class:iso-9001-pdca",
-        "label": "ISO 9001 PDCA"
       }
     ]
   },

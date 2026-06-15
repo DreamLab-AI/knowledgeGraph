@@ -40,7 +40,7 @@
         "label": "Network Protocol"
       },
       {
-        "id": "urn:ngm:class:clock-synchronisation",
+        "id": "urn:ngm:class:clock-synchronization",
         "label": "Clock Synchronisation"
       }
     ],

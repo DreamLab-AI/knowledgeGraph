@@ -18,19 +18,15 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:jurisdiction-mapping-service",
-        "label": "Jurisdiction Mapping Service"
-      },
-      {
         "id": "urn:ngm:class:regulatory-reporting-module",
         "label": "Regulatory Reporting Module"
       },
       {
-        "id": "urn:ngm:class:corporate-tax-compliance-framework-calculation-engine",
+        "id": "urn:ngm:class:corporate-tax-compliance-framework",
         "label": "Tax Calculation Engine"
       },
       {
-        "id": "urn:ngm:class:transaction-monitor",
+        "id": "urn:ngm:class:transaction-monitoring",
         "label": "Transaction Monitor"
       }
     ],
@@ -40,30 +36,18 @@
         "label": "Identity Verification System"
       },
       {
-        "id": "urn:ngm:class:regulatory-database",
-        "label": "Regulatory Database"
-      },
-      {
         "id": "urn:ngm:class:transaction-ledger",
         "label": "Transaction Ledger"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:audit-trail-generation",
+        "id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail Generation"
       },
       {
-        "id": "urn:ngm:class:automated-tax-filing",
-        "label": "Automated Tax Filing"
-      },
-      {
-        "id": "urn:ngm:class:cross-border-tax-settlement",
+        "id": "urn:ngm:class:cross-border-settlement",
         "label": "Cross-border Tax Settlement"
-      },
-      {
-        "id": "urn:ngm:class:real-time-compliance",
-        "label": "Real-time Compliance"
       }
     ],
     "dependsOn": [],

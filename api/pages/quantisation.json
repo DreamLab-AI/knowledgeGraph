@@ -24,20 +24,12 @@
       {
         "id": "urn:ngm:class:quantisation-aware-training",
         "label": "Quantisation-Aware Training"
-      },
-      {
-        "id": "urn:ngm:class:mixed-precision-quantisation",
-        "label": "Mixed-Precision Quantisation"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:calibration-dataset",
+        "id": "urn:ngm:class:calibration",
         "label": "Calibration Dataset"
-      },
-      {
-        "id": "urn:ngm:class:scale-factor",
-        "label": "Scale Factor"
       }
     ],
     "enables": [
@@ -54,7 +46,7 @@
         "label": "On-Device AI"
       },
       {
-        "id": "urn:ngm:class:large-language-model-deployment",
+        "id": "urn:ngm:class:model-deployment",
         "label": "Large Language Model Deployment"
       }
     ],
@@ -79,7 +71,7 @@
         "label": "Pruning"
       },
       {
-        "id": "urn:ngm:class:low-rank-factorisation",
+        "id": "urn:ngm:class:low-rank-adaptation",
         "label": "Low-Rank Factorisation"
       }
     ],
@@ -89,7 +81,7 @@
         "label": "Digital Signal Processing"
       },
       {
-        "id": "urn:ngm:class:fixed-point-arithmetic",
+        "id": "urn:ngm:class:floating-point-arithmetic",
         "label": "Fixed-Point Arithmetic"
       }
     ],

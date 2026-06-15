@@ -62,27 +62,13 @@ public:: true
     "label": "Inference Hardware"
   },
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:lookup-table",
-        "label": "Lookup Table"
-      },
-      {
-        "@id": "urn:ngm:class:dsp-slice",
-        "label": "DSP Slice"
-      },
-      {
-        "@id": "urn:ngm:class:block-ram",
-        "label": "Block RAM"
-      }
-    ],
     "partOf": [
       {
         "@id": "urn:ngm:class:ai-accelerator",
         "label": "AI Accelerator"
       },
       {
-        "@id": "urn:ngm:class:edge-computing-infrastructure",
+        "@id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing Infrastructure"
       }
     ],
@@ -90,42 +76,20 @@ public:: true
       {
         "@id": "urn:ngm:class:hardware-description-language",
         "label": "Hardware Description Language"
-      },
-      {
-        "@id": "urn:ngm:class:bitstream",
-        "label": "Bitstream"
-      },
-      {
-        "@id": "urn:ngm:class:high-level-synthesis",
-        "label": "High-Level Synthesis"
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:custom-neural-architectures",
-        "label": "Custom Neural Architectures"
-      },
       {
         "@id": "urn:ngm:class:low-latency-inference",
         "label": "Low-Latency Inference"
       },
       {
-        "@id": "urn:ngm:class:neural-network-quantization",
+        "@id": "urn:ngm:class:neural-network-quantisation",
         "label": "Neural Network Quantization"
       },
       {
         "@id": "urn:ngm:class:real-time-signal-processing",
         "label": "Real-Time Signal Processing"
-      }
-    ],
-    "dependsOn": [
-      {
-        "@id": "urn:ngm:class:eda-toolchain",
-        "label": "EDA Toolchain"
-      },
-      {
-        "@id": "urn:ngm:class:place-and-route",
-        "label": "Place and Route"
       }
     ],
     "implements": [
@@ -136,12 +100,6 @@ public:: true
       {
         "@id": "urn:ngm:class:hardware-accelerator",
         "label": "Hardware Accelerator"
-      }
-    ],
-    "uses": [
-      {
-        "@id": "urn:ngm:class:partial-reconfiguration",
-        "label": "Partial Reconfiguration"
       }
     ],
     "supports": [

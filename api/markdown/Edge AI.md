@@ -23,58 +23,151 @@ public:: true
   "definition": "Edge AI is the deployment and execution of artificial intelligence inference workloads directly on edge devices—such as smartphones, IoT sensors, surveillance cameras, and embedded systems—close to the data source, rather than in centralised cloud data centres. It reduces latency, preserves data privacy, enables offline operation, and cuts bandwidth costs by processing data locally using optimised neural network models and dedicated hardware accelerators such as neural processing units (NPUs). Edge AI encompasses model compression techniques (quantisation, pruning, knowledge distillation), specialised deployment runtimes, and on-device training paradigms such as federated learning. It bridges the domains of machine learning, embedded systems, and distributed computing to enable intelligent applications at the network periphery.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:edge-computing",
+      "label": "Edge Computing"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"},
-      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"},
-      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
-      {"@id": "urn:ngm:class:onnx", "label": "ONNX"},
-      {"@id": "urn:ngm:class:model-quantisation", "label": "Model Quantisation"},
-      {"@id": "urn:ngm:class:neural-architecture-search", "label": "Neural Architecture Search"},
-      {"@id": "urn:ngm:class:tflite", "label": "TFLite"}
+      {
+        "@id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-quantisation",
+        "label": "Model Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:real-time-inference-at-edge", "label": "Real-Time Inference at Edge"},
-      {"@id": "urn:ngm:class:io-t-ai-integration", "label": "IoT AI Integration"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:autonomous-vehicles", "label": "Autonomous Vehicles"},
-      {"@id": "urn:ngm:class:smart-manufacturing", "label": "Smart Manufacturing"}
+      {
+        "@id": "urn:ngm:class:real-time-inference-at-edge",
+        "label": "Real-Time Inference at Edge"
+      },
+      {
+        "@id": "urn:ngm:class:io-t-ai-integration",
+        "label": "IoT AI Integration"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicles"
+      },
+      {
+        "@id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
-      {"@id": "urn:ngm:class:neural-processing-unit", "label": "Neural Processing Unit"},
-      {"@id": "urn:ngm:class:model-compression", "label": "Model Compression"}
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:cloud-ai", "label": "Cloud AI"},
-      {"@id": "urn:ngm:class:fog-computing", "label": "Fog Computing"}
+      {
+        "@id": "urn:ngm:class:fog-computing",
+        "label": "Fog Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:tinyml", "label": "TinyML"},
-      {"@id": "urn:ngm:class:on-device-machine-learning", "label": "On-Device Machine Learning"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:small-language-models", "label": "Small Language Models"}
+      {
+        "@id": "urn:ngm:class:tinyml",
+        "label": "TinyML"
+      },
+      {
+        "@id": "urn:ngm:class:on-device-machine-learning",
+        "label": "On-Device Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:small-language-models",
+        "label": "Small Language Models"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:smart-city", "label": "Smart City"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:mlperf", "label": "MLPerf"},
-      {"@id": "urn:ngm:class:etsi-mec", "label": "ETSI MEC"}
+      {
+        "@id": "urn:ngm:class:mlperf",
+        "label": "MLPerf"
+      },
+      {
+        "@id": "urn:ngm:class:etsi-mec",
+        "label": "ETSI MEC"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:on-device-ai", "label": "On-Device AI"},
-    {"@id": "urn:ngm:class:tinyml", "label": "TinyML"}
+    {
+      "@id": "urn:ngm:class:on-device-ai",
+      "label": "On-Device AI"
+    },
+    {
+      "@id": "urn:ngm:class:tinyml",
+      "label": "TinyML"
+    }
   ],
   "quality": 0.75,
   "provenance": {

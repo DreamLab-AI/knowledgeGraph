@@ -315,14 +315,6 @@ alias:: Feed-Forward Network
         "label": "Hidden Layer"
       },
       {
-        "@id": "urn:ngm:class:input-layer",
-        "label": "Input Layer"
-      },
-      {
-        "@id": "urn:ngm:class:output-layer",
-        "label": "Output Layer"
-      },
-      {
         "@id": "urn:ngm:class:weight-matrix",
         "label": "Weight Matrix"
       },
@@ -389,10 +381,6 @@ alias:: Feed-Forward Network
         "label": "Multi-Layer Perceptron"
       },
       {
-        "@id": "urn:ngm:class:position-wise-ffn",
-        "label": "Position-wise FFN"
-      },
-      {
         "@id": "urn:ngm:class:swi-glu",
         "label": "SwiGLU"
       },
@@ -407,11 +395,7 @@ alias:: Feed-Forward Network
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:gelu",
-        "label": "GELU"
-      },
-      {
-        "@id": "urn:ngm:class:re-lu",
+        "@id": "urn:ngm:class:re-lu-activation",
         "label": "ReLU"
       },
       {

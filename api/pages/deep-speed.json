@@ -26,10 +26,6 @@
         "label": "Tensor Parallelism"
       },
       {
-        "id": "urn:ngm:class:cpu-offloading",
-        "label": "CPU Offloading"
-      },
-      {
         "id": "urn:ngm:class:sparse-attention",
         "label": "Sparse Attention"
       }
@@ -54,17 +50,13 @@
         "label": "Model Parallelism"
       },
       {
-        "id": "urn:ngm:class:billion-parameter-model",
-        "label": "Billion Parameter Model"
-      },
-      {
-        "id": "urn:ngm:class:inference-at-scale",
+        "id": "urn:ngm:class:inference",
         "label": "Inference at Scale"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:pytorch",
+        "id": "urn:ngm:class:python-pytorch-deep-learning-stack",
         "label": "PyTorch"
       },
       {
@@ -77,10 +69,6 @@
       {
         "id": "urn:ngm:class:megatron-lm",
         "label": "Megatron-LM"
-      },
-      {
-        "id": "urn:ngm:class:fairscale",
-        "label": "FairScale"
       }
     ],
     "bridgesTo": [
@@ -103,11 +91,7 @@
         "label": "Gradient Checkpointing"
       },
       {
-        "id": "urn:ngm:class:zero-redundancy-optimizer",
-        "label": "ZeRO Redundancy Optimizer"
-      },
-      {
-        "id": "urn:ngm:class:nvidia-cuda",
+        "id": "urn:ngm:class:cuda",
         "label": "NVIDIA CUDA"
       },
       {

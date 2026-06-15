@@ -112,24 +112,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:accessibility-requirement",
-        "label": "Accessibility Requirement"
-      },
-      {
-        "@id": "urn:ngm:class:compliance-metric",
-        "label": "Compliance Metric"
-      },
-      {
-        "@id": "urn:ngm:class:testing-protocol",
-        "label": "Testing Protocol"
-      },
-      {
         "@id": "urn:ngm:class:xr-accessibility-guideline",
         "label": "XR Accessibility Guideline"
-      },
-      {
-        "@id": "urn:ngm:class:conformance-level",
-        "label": "Conformance Level"
       }
     ],
     "partOf": [
@@ -138,13 +122,13 @@ public:: true
         "label": "Governance Framework"
       },
       {
-        "@id": "urn:ngm:class:regulatory-compliance-framework",
+        "@id": "urn:ngm:class:compliance-framework",
         "label": "Regulatory Compliance Framework"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:accessibility-guideline",
+        "@id": "urn:ngm:class:xr-accessibility-guideline",
         "label": "Accessibility Guideline"
       },
       {
@@ -176,7 +160,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:wcag",
+        "@id": "urn:ngm:class:wcag-2-2",
         "label": "WCAG"
       },
       {
@@ -200,18 +184,8 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:disability-accommodation",
-        "label": "Disability Accommodation"
-      },
-      {
         "@id": "urn:ngm:class:user-experience-design",
         "label": "User Experience Design"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:voluntary-guideline",
-        "label": "Voluntary Guideline"
       }
     ],
     "bridgesTo": [

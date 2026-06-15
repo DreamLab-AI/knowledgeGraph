@@ -39,54 +39,137 @@ alias:: SelectiveDisclosure
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:cryptographic-commitment-scheme", "label": "Cryptographic Commitment Scheme"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:commitment-scheme",
+        "label": "Cryptographic Commitment Scheme"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"},
-      {"@id": "urn:ngm:class:attribute-based-access-control", "label": "Attribute-Based Access Control"},
-      {"@id": "urn:ngm:class:privacy-preserving-authentication", "label": "Privacy-Preserving Authentication"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "@id": "urn:ngm:class:attribute-based-access-control",
+        "label": "Attribute-Based Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-authentication",
+        "label": "Privacy-Preserving Authentication"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:bbs-plus-signatures", "label": "BBS+ Signatures"},
-      {"@id": "urn:ngm:class:sd-jwt", "label": "SD-JWT"},
-      {"@id": "urn:ngm:class:zk-snarks", "label": "ZK-SNARKs"}
+      {
+        "@id": "urn:ngm:class:bbs-signatures",
+        "label": "BBS+ Signatures"
+      },
+      {
+        "@id": "urn:ngm:class:sd-jwt",
+        "label": "SD-JWT"
+      },
+      {
+        "@id": "urn:ngm:class:zk-snarks",
+        "label": "ZK-SNARKs"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"}
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:w3c-verifiable-credentials-data-model", "label": "W3C Verifiable Credentials Data Model"},
-      {"@id": "urn:ngm:class:ietf-sd-jwt", "label": "IETF SD-JWT"},
-      {"@id": "urn:ngm:class:decentralised-identity-foundation", "label": "Decentralised Identity Foundation"}
+      {
+        "@id": "urn:ngm:class:w-3-c-verifiable-credentials-data-model",
+        "label": "W3C Verifiable Credentials Data Model"
+      },
+      {
+        "@id": "urn:ngm:class:sd-jwt",
+        "label": "IETF SD-JWT"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identity-foundation",
+        "label": "Decentralised Identity Foundation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:eidas-2", "label": "eIDAS 2.0"},
-      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
+      {
+        "@id": "urn:ngm:class:e-idas-2-0",
+        "label": "eIDAS 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:full-credential-presentation", "label": "Full Credential Presentation"},
-      {"@id": "urn:ngm:class:bearer-token", "label": "Bearer Token"}
+      {
+        "@id": "urn:ngm:class:bearer-token",
+        "label": "Bearer Token"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:credential-format-standard", "label": "Credential Format Standard"},
-      {"@id": "urn:ngm:class:decentralised-identifier", "label": "Decentralised Identifier"},
-      {"@id": "urn:ngm:class:digital-identity-wallet", "label": "Digital Identity Wallet"}
+      {
+        "@id": "urn:ngm:class:credential-format-standard",
+        "label": "Credential Format Standard"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:partial-disclosure", "label": "Partial Disclosure"},
-    {"@id": "urn:ngm:class:attribute-disclosure", "label": "Attribute Disclosure"}
+    {
+      "@id": "urn:ngm:class:partial-disclosure",
+      "label": "Partial Disclosure"
+    },
+    {
+      "@id": "urn:ngm:class:attribute-disclosure",
+      "label": "Attribute Disclosure"
+    }
   ],
   "quality": 0.74,
   "provenance": {

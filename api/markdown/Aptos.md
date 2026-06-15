@@ -81,14 +81,6 @@ public:: true
         "label": "Move Programming Language"
       },
       {
-        "@id": "urn:ngm:class:block-stm",
-        "label": "Block-STM"
-      },
-      {
-        "@id": "urn:ngm:class:aptosbft",
-        "label": "AptosBFT"
-      },
-      {
         "@id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Tree"
       }
@@ -119,10 +111,6 @@ public:: true
       {
         "@id": "urn:ngm:class:parallel-execution",
         "label": "Parallel Execution"
-      },
-      {
-        "@id": "urn:ngm:class:resource-oriented-programming",
-        "label": "Resource-Oriented Programming"
       }
     ],
     "contrastsWith": [
@@ -133,17 +121,9 @@ public:: true
       {
         "@id": "urn:ngm:class:solana",
         "label": "Solana"
-      },
-      {
-        "@id": "urn:ngm:class:sui",
-        "label": "Sui"
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:diem",
-        "label": "Diem"
-      },
       {
         "@id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"

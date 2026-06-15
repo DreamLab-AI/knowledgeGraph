@@ -16,20 +16,7 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:hipaa-privacy-rule",
-        "label": "HIPAA Privacy Rule"
-      },
-      {
-        "id": "urn:ngm:class:hipaa-security-rule",
-        "label": "HIPAA Security Rule"
-      },
-      {
-        "id": "urn:ngm:class:hipaa-breach-notification-rule",
-        "label": "HIPAA Breach Notification Rule"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:data-protection",
@@ -50,10 +37,6 @@
       {
         "id": "urn:ngm:class:encryption",
         "label": "Encryption"
-      },
-      {
-        "id": "urn:ngm:class:business-associate-agreement",
-        "label": "Business Associate Agreement"
       }
     ],
     "enables": [
@@ -62,19 +45,11 @@
         "label": "Privacy"
       },
       {
-        "id": "urn:ngm:class:health-data-portability",
+        "id": "urn:ngm:class:data-portability",
         "label": "Health Data Portability"
-      },
-      {
-        "id": "urn:ngm:class:patient-data-rights",
-        "label": "Patient Data Rights"
       }
     ],
     "dependsOn": [
-      {
-        "id": "urn:ngm:class:covered-entity",
-        "label": "Covered Entity"
-      },
       {
         "id": "urn:ngm:class:protected-health-information",
         "label": "Protected Health Information"
@@ -106,7 +81,7 @@
         "label": "Electronic Health Record"
       },
       {
-        "id": "urn:ngm:class:healthcare-interoperability",
+        "id": "urn:ngm:class:interoperability",
         "label": "Healthcare Interoperability"
       },
       {
@@ -116,15 +91,10 @@
     ],
     "uses": [],
     "supports": [],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:hhs-office-for-civil-rights",
-        "label": "HHS Office for Civil Rights"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:us-healthcare-regulation",
+        "id": "urn:ngm:class:us-regulatory-framework",
         "label": "US Healthcare Regulation"
       }
     ],

@@ -75,7 +75,7 @@ public:: true
         "label": "Neural Network"
       },
       {
-        "@id": "urn:ngm:class:deep-learning-model",
+        "@id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning Model"
       }
     ],
@@ -143,17 +143,13 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:hyperparameters",
-        "label": "Hyperparameters"
-      },
-      {
         "@id": "urn:ngm:class:model-architecture",
         "label": "Model Architecture"
       }
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:iso-iec-22989",
+        "@id": "urn:ngm:class:iso-iec-22989-2022",
         "label": "ISO/IEC 22989"
       },
       {
@@ -181,7 +177,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:intellectual-property",
+        "@id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Intellectual Property"
       },
       {

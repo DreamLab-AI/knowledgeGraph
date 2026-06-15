@@ -80,57 +80,135 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:deterministic-finality", "label": "Deterministic Finality"},
-      {"@id": "urn:ngm:class:probabilistic-finality", "label": "Probabilistic Finality"},
-      {"@id": "urn:ngm:class:economic-finality", "label": "Economic Finality"},
-      {"@id": "urn:ngm:class:checkpoint-finality", "label": "Checkpoint Finality"}
+      {
+        "@id": "urn:ngm:class:deterministic-finality",
+        "label": "Deterministic Finality"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-finality",
+        "label": "Probabilistic Finality"
+      },
+      {
+        "@id": "urn:ngm:class:economic-finality",
+        "label": "Economic Finality"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:block-confirmation", "label": "Block Confirmation"},
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:block-confirmation",
+        "label": "Block Confirmation"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"},
-      {"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"},
-      {"@id": "urn:ngm:class:atomic-swap", "label": "Atomic Swap"},
-      {"@id": "urn:ngm:class:settlement", "label": "Settlement"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "@id": "urn:ngm:class:settlement",
+        "label": "Settlement"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:network-partition-tolerance", "label": "Network Partition Tolerance"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:network-partition-tolerance",
+        "label": "Network Partition Tolerance"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:transaction-confirmation", "label": "Transaction Confirmation"},
-      {"@id": "urn:ngm:class:slashing-condition", "label": "Slashing Condition"}
+      {
+        "@id": "urn:ngm:class:transaction-confirmation",
+        "label": "Transaction Confirmation"
+      },
+      {
+        "@id": "urn:ngm:class:slashing-condition",
+        "label": "Slashing Condition"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:block-reorganization", "label": "Block Reorganization"},
-      {"@id": "urn:ngm:class:fork-choice-rule", "label": "Fork Choice Rule"}
+      {
+        "@id": "urn:ngm:class:fork-choice-rule",
+        "label": "Fork Choice Rule"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:double-spend", "label": "Double Spend"},
-      {"@id": "urn:ngm:class:51-percent-attack", "label": "51% Attack"},
-      {"@id": "urn:ngm:class:long-range-attack", "label": "Long-Range Attack"}
+      {
+        "@id": "urn:ngm:class:double-spending",
+        "label": "Double Spend"
+      },
+      {
+        "@id": "urn:ngm:class:51-attack",
+        "label": "51% Attack"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:payment-settlement", "label": "Payment Settlement"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"}
+      {
+        "@id": "urn:ngm:class:payment-settlement",
+        "label": "Payment Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:transaction-confirmation-time", "label": "Transaction Confirmation Time"},
-      {"@id": "urn:ngm:class:liveness", "label": "Liveness"},
-      {"@id": "urn:ngm:class:safety", "label": "Safety"}
+      {
+        "@id": "urn:ngm:class:transaction-confirmation",
+        "label": "Transaction Confirmation Time"
+      },
+      {
+        "@id": "urn:ngm:class:liveness",
+        "label": "Liveness"
+      },
+      {
+        "@id": "urn:ngm:class:safety",
+        "label": "Safety"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:settlement-finality", "label": "Settlement Finality"},
-    {"@id": "urn:ngm:class:ledger-finality", "label": "Ledger Finality"}
+    {
+      "@id": "urn:ngm:class:settlement-finality",
+      "label": "Settlement Finality"
+    },
+    {
+      "@id": "urn:ngm:class:ledger-finality",
+      "label": "Ledger Finality"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

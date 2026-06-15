@@ -26,10 +26,6 @@
         "label": "Reserve Requirements"
       },
       {
-        "id": "urn:ngm:class:standing-lending-facility",
-        "label": "Standing Lending Facility"
-      },
-      {
         "id": "urn:ngm:class:forward-guidance",
         "label": "Forward Guidance"
       }

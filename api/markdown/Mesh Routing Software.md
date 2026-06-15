@@ -60,12 +60,6 @@ public:: true
     }
   ],
   "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:decentralised-networks",
-        "label": "Decentralised Networks"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:network-infrastructure",

@@ -87,10 +87,6 @@ public:: true
         "label": "Large Language Model Training"
       },
       {
-        "@id": "urn:ngm:class:long-context-training",
-        "label": "Long Context Training"
-      },
-      {
         "@id": "urn:ngm:class:model-scaling",
         "label": "Model Scaling"
       }
@@ -101,17 +97,13 @@ public:: true
         "label": "Forward Pass"
       },
       {
-        "@id": "urn:ngm:class:recomputation",
-        "label": "Recomputation"
-      },
-      {
         "@id": "urn:ngm:class:memory-management",
         "label": "Memory Management"
       }
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:checkpoint-segment",
+        "@id": "urn:ngm:class:model-checkpoint",
         "label": "Checkpoint Segment"
       }
     ],
@@ -147,10 +139,6 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:full-activation-storage",
-        "label": "Full Activation Storage"
-      },
-      {
         "@id": "urn:ngm:class:gradient-accumulation",
         "label": "Gradient Accumulation"
       },
@@ -175,10 +163,6 @@ public:: true
       {
         "@id": "urn:ngm:class:model-parallelism",
         "label": "Model Parallelism"
-      },
-      {
-        "@id": "urn:ngm:class:offloading",
-        "label": "Offloading"
       }
     ],
     "bridgesTo": [

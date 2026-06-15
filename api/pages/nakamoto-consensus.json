@@ -62,7 +62,7 @@
         "label": "Block Reward"
       },
       {
-        "id": "urn:ngm:class:decentralized-ledger",
+        "id": "urn:ngm:class:ledger",
         "label": "Decentralized Ledger"
       },
       {
@@ -131,12 +131,8 @@
         "label": "Sybil Resistance"
       },
       {
-        "id": "urn:ngm:class:51-percent-attack",
+        "id": "urn:ngm:class:51-attack",
         "label": "51 Percent Attack"
-      },
-      {
-        "id": "urn:ngm:class:fork-resolution",
-        "label": "Fork Resolution"
       }
     ]
   },

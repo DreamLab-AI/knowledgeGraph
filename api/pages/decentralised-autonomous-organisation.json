@@ -18,12 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:governance-module",
+        "id": "urn:ngm:class:governance",
         "label": "Governance Module"
-      },
-      {
-        "id": "urn:ngm:class:treasury-contract",
-        "label": "Treasury Contract"
       },
       {
         "id": "urn:ngm:class:voting-mechanism",
@@ -77,10 +73,6 @@
       {
         "id": "urn:ngm:class:traditional-corporation",
         "label": "Traditional Corporation"
-      },
-      {
-        "id": "urn:ngm:class:centralised-autonomous-organisation",
-        "label": "Centralised Autonomous Organisation"
       }
     ],
     "bridgesTo": [

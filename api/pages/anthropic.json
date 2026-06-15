@@ -33,11 +33,11 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:claude-model-family",
+        "id": "urn:ngm:class:claude",
         "label": "Claude Model Family"
       },
       {
-        "id": "urn:ngm:class:model-api",
+        "id": "urn:ngm:class:api",
         "label": "Model API"
       },
       {
@@ -49,11 +49,11 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:openai",
+        "id": "urn:ngm:class:openai-research-organisation",
         "label": "OpenAI"
       },
       {
-        "id": "urn:ngm:class:google-deepmind",
+        "id": "urn:ngm:class:google-ai-technology-corporation-deep-mind",
         "label": "Google DeepMind"
       },
       {

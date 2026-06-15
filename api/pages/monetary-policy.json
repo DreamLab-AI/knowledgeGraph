@@ -42,10 +42,6 @@
       {
         "id": "urn:ngm:class:central-bank",
         "label": "Central Bank"
-      },
-      {
-        "id": "urn:ngm:class:monetary-authority",
-        "label": "Monetary Authority"
       }
     ],
     "enables": [
@@ -81,10 +77,6 @@
       {
         "id": "urn:ngm:class:fiscal-policy",
         "label": "Fiscal Policy"
-      },
-      {
-        "id": "urn:ngm:class:algorithmic-monetary-policy",
-        "label": "Algorithmic Monetary Policy"
       }
     ],
     "bridgesTo": [
@@ -119,10 +111,6 @@
       {
         "id": "urn:ngm:class:financial-stability",
         "label": "Financial Stability"
-      },
-      {
-        "id": "urn:ngm:class:full-employment",
-        "label": "Full Employment"
       }
     ],
     "standardizedBy": [
@@ -137,14 +125,6 @@
     ],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:exchange-rate-policy",
-        "label": "Exchange Rate Policy"
-      },
-      {
-        "id": "urn:ngm:class:banking-regulation",
-        "label": "Banking Regulation"
-      },
       {
         "id": "urn:ngm:class:defi-protocol",
         "label": "DeFi Protocol"

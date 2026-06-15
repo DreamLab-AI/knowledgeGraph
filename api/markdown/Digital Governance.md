@@ -126,10 +126,6 @@ public:: true
       {
         "@id": "urn:ngm:class:rule-of-law",
         "label": "Rule of Law"
-      },
-      {
-        "@id": "urn:ngm:class:institutional-capacity",
-        "label": "Institutional Capacity"
       }
     ],
     "implements": [
@@ -138,7 +134,7 @@ public:: true
         "label": "GDPR"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
@@ -156,7 +152,7 @@ public:: true
         "label": "IETF"
       },
       {
-        "@id": "urn:ngm:class:iso-iec-jtc1",
+        "@id": "urn:ngm:class:iso-iec-jtc-1",
         "label": "ISO/IEC JTC 1"
       }
     ],
@@ -164,10 +160,6 @@ public:: true
       {
         "@id": "urn:ngm:class:deregulation",
         "label": "Deregulation"
-      },
-      {
-        "@id": "urn:ngm:class:techno-solutionism",
-        "label": "Techno-Solutionism"
       }
     ],
     "bridgesTo": [

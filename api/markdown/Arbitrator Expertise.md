@@ -90,32 +90,10 @@ public:: true
         "label": "Legal and Regulatory"
       }
     ],
-    "requires": [
-      {
-        "@id": "urn:ngm:class:blockchain-knowledge",
-        "label": "Blockchain Knowledge"
-      },
-      {
-        "@id": "urn:ngm:class:industry-experience",
-        "label": "Industry Experience"
-      },
-      {
-        "@id": "urn:ngm:class:legal-training",
-        "label": "Legal Training"
-      }
-    ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:fair-outcomes",
-        "label": "Fair Outcomes"
-      },
       {
         "@id": "urn:ngm:class:informed-decision-making",
         "label": "Informed decision-making"
-      },
-      {
-        "@id": "urn:ngm:class:technical-evidence-evaluation",
-        "label": "Technical Evidence Evaluation"
       }
     ]
   },

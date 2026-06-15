@@ -18,15 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:robotics-vocabulary",
+        "id": "urn:ngm:class:iso-8373-robotics-vocabulary",
         "label": "Robotics Vocabulary"
       },
       {
-        "id": "urn:ngm:class:robot-terminology",
-        "label": "Robot Terminology"
-      },
-      {
-        "id": "urn:ngm:class:manipulator-definition",
+        "id": "urn:ngm:class:manipulator",
         "label": "Manipulator Definition"
       }
     ],
@@ -42,10 +38,6 @@
         "label": "Interoperability"
       },
       {
-        "id": "urn:ngm:class:robot-safety-certification",
-        "label": "Robot Safety Certification"
-      },
-      {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
       }
@@ -57,12 +49,7 @@
         "label": "ISO TC 299 Robotics"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:iec-62264",
-        "label": "IEC 62264 Enterprise Control System Integration"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:artificial-intelligence",
@@ -93,7 +80,7 @@
         "label": "ISO 10218 Industrial Robot Safety"
       },
       {
-        "id": "urn:ngm:class:iso-15066",
+        "id": "urn:ngm:class:iso-ts-15066",
         "label": "ISO 15066 Collaborative Robots"
       },
       {
@@ -115,12 +102,7 @@
         "label": "ISO"
       }
     ],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:iso-robotics-standards-series",
-        "label": "ISO Robotics Standards Series"
-      }
-    ],
+    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:robotics",
@@ -131,7 +113,7 @@
         "label": "Automation"
       },
       {
-        "id": "urn:ngm:class:robot-manipulator",
+        "id": "urn:ngm:class:manipulator-robot",
         "label": "Robot Manipulator"
       },
       {
@@ -139,7 +121,7 @@
         "label": "End Effector"
       },
       {
-        "id": "urn:ngm:class:collaborative-robot",
+        "id": "urn:ngm:class:collaborative-systems-modality-robot",
         "label": "Collaborative Robot"
       }
     ]

@@ -382,49 +382,17 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:answer-synthesiser",
-        "label": "Answer Synthesiser"
-      },
-      {
-        "@id": "urn:ngm:class:citation-grounding-layer",
-        "label": "Citation Grounding Layer"
-      },
-      {
-        "@id": "urn:ngm:class:dense-retriever",
+        "@id": "urn:ngm:class:dense-retrieval",
         "label": "Dense Retriever"
-      },
-      {
-        "@id": "urn:ngm:class:embedding-index",
-        "label": "Embedding Index"
-      },
-      {
-        "@id": "urn:ngm:class:follow-up-suggester",
-        "label": "Follow-up Suggester"
-      },
-      {
-        "@id": "urn:ngm:class:llm-generator",
-        "label": "LLM Generator"
-      },
-      {
-        "@id": "urn:ngm:class:query-understanding-module",
-        "label": "Query Understanding Module"
       },
       {
         "@id": "urn:ngm:class:reranker",
         "label": "Reranker"
-      },
-      {
-        "@id": "urn:ngm:class:sparse-retriever",
-        "label": "Sparse Retriever"
-      },
-      {
-        "@id": "urn:ngm:class:web-index",
-        "label": "Web Index"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:content-licensing-agreement",
+        "@id": "urn:ngm:class:content-licensing",
         "label": "Content Licensing Agreement"
       },
       {
@@ -450,36 +418,6 @@ public:: true
       {
         "@id": "urn:ngm:class:web-crawler",
         "label": "Web Crawler"
-      }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:agentic-browsing",
-        "label": "Agentic Browsing"
-      },
-      {
-        "@id": "urn:ngm:class:citation-grounded-answers",
-        "label": "Citation-Grounded Answers"
-      },
-      {
-        "@id": "urn:ngm:class:conversational-web-access",
-        "label": "Conversational Web Access"
-      },
-      {
-        "@id": "urn:ngm:class:multi-source-synthesis",
-        "label": "Multi-Source Synthesis"
-      },
-      {
-        "@id": "urn:ngm:class:programmatic-knowledge-lookup",
-        "label": "Programmatic Knowledge Lookup"
-      },
-      {
-        "@id": "urn:ngm:class:research-workflows",
-        "label": "Research Workflows"
-      },
-      {
-        "@id": "urn:ngm:class:zero-click-information-access",
-        "label": "Zero-Click Information Access"
       }
     ],
     "implements": [
@@ -522,12 +460,8 @@ public:: true
         "label": "Reciprocal Rank Fusion"
       },
       {
-        "@id": "urn:ngm:class:sentence-embeddings",
+        "@id": "urn:ngm:class:embeddings",
         "label": "Sentence Embeddings"
-      },
-      {
-        "@id": "urn:ngm:class:streaming-generation",
-        "label": "Streaming Generation"
       },
       {
         "@id": "urn:ngm:class:function-calling",
@@ -539,10 +473,6 @@ public:: true
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:agentic-browser",
-        "label": "Agentic Browser"
-      },
       {
         "@id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
@@ -570,28 +500,16 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:academic-research",
-        "label": "Academic Research"
-      },
-      {
         "@id": "urn:ngm:class:customer-support",
         "label": "Customer Support"
       },
       {
-        "@id": "urn:ngm:class:enterprise-knowledge-management",
+        "@id": "urn:ngm:class:knowledge-management",
         "label": "Enterprise Knowledge Management"
-      },
-      {
-        "@id": "urn:ngm:class:journalism",
-        "label": "Journalism"
       },
       {
         "@id": "urn:ngm:class:legal-research",
         "label": "Legal Research"
-      },
-      {
-        "@id": "urn:ngm:class:medical-information-retrieval",
-        "label": "Medical Information Retrieval"
       },
       {
         "@id": "urn:ngm:class:software-development",
@@ -616,11 +534,7 @@ public:: true
         "label": "NIST AI RMF"
       },
       {
-        "@id": "urn:ngm:class:trec-rag-track",
-        "label": "TREC RAG Track"
-      },
-      {
-        "@id": "urn:ngm:class:uk-online-safety-act-2023",
+        "@id": "urn:ngm:class:uk-online-safety-act",
         "label": "UK Online Safety Act 2023"
       }
     ]

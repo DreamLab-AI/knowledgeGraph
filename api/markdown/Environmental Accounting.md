@@ -129,19 +129,11 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:financial-accounting",
-        "label": "Financial Accounting"
-      },
-      {
         "@id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:seea-framework",
-        "label": "SEEA Framework"
-      },
       {
         "@id": "urn:ngm:class:gri-standards",
         "label": "GRI Standards"
@@ -155,10 +147,6 @@ public:: true
       {
         "@id": "urn:ngm:class:greenhouse-gas-inventory",
         "label": "Greenhouse Gas Inventory"
-      },
-      {
-        "@id": "urn:ngm:class:input-output-analysis",
-        "label": "Input-Output Analysis"
       }
     ],
     "supports": [
@@ -177,17 +165,13 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:un-seea",
-        "label": "UN System of Environmental-Economic Accounting"
-      },
-      {
-        "@id": "urn:ngm:class:tcfd-framework",
+        "@id": "urn:ngm:class:tcfd",
         "label": "TCFD Framework"
       }
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:traditional-financial-accounting",
+        "@id": "urn:ngm:class:traditional-finance",
         "label": "Traditional Financial Accounting"
       }
     ],
@@ -211,12 +195,8 @@ public:: true
         "label": "Waste Management"
       },
       {
-        "@id": "urn:ngm:class:carbon-market",
+        "@id": "urn:ngm:class:carbon-markets",
         "label": "Carbon Market"
-      },
-      {
-        "@id": "urn:ngm:class:biodiversity-accounting",
-        "label": "Biodiversity Accounting"
       }
     ]
   }

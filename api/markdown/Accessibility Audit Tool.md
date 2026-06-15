@@ -138,16 +138,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:automated-testing-engine",
+        "@id": "urn:ngm:class:automated-testing",
         "label": "Automated Testing Engine"
-      },
-      {
-        "@id": "urn:ngm:class:report-generator",
-        "label": "Report Generator"
-      },
-      {
-        "@id": "urn:ngm:class:wcag-validator",
-        "label": "WCAG Validator"
       },
       {
         "@id": "urn:ngm:class:compliance-dashboard",
@@ -156,12 +148,8 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:testing-framework",
+        "@id": "urn:ngm:class:testing",
         "label": "Testing Framework"
-      },
-      {
-        "@id": "urn:ngm:class:user-interface-analyzer",
-        "label": "User Interface Analyzer"
       },
       {
         "@id": "urn:ngm:class:accessibility-standards",
@@ -169,10 +157,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:accessibility-reporting",
-        "label": "Accessibility Reporting"
-      },
       {
         "@id": "urn:ngm:class:inclusive-design",
         "label": "Inclusive Design"
@@ -188,7 +172,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:quality-assurance-toolchain",
+        "@id": "urn:ngm:class:quality-assurance",
         "label": "Quality Assurance Toolchain"
       }
     ]

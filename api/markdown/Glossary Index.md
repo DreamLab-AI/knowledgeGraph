@@ -133,24 +133,15 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:knowledge-organization-system", "label": "Knowledge Organization System"}
+      {
+        "@id": "urn:ngm:class:knowledge-organization-system",
+        "label": "Knowledge Organization System"
+      }
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:cross-references",
-        "label": "Cross References"
-      },
-      {
-        "@id": "urn:ngm:class:synonym-mappings",
-        "label": "Synonym Mappings"
-      },
-      {
         "@id": "urn:ngm:class:term-definitions",
         "label": "Term Definitions"
-      },
-      {
-        "@id": "urn:ngm:class:usage-examples",
-        "label": "Usage Examples"
       },
       {
         "@id": "urn:ngm:class:category-hierarchies",
@@ -158,10 +149,6 @@ public:: true
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:multi-language-support",
-        "label": "Multi-Language Support"
-      },
       {
         "@id": "urn:ngm:class:metaverse-ontology-schema",
         "label": "Metaverse Ontology Schema"
@@ -177,26 +164,12 @@ public:: true
         "label": "Consistency Checking"
       },
       {
-        "@id": "urn:ngm:class:terminology-lookup",
-        "label": "Terminology Lookup"
-      },
-      {
         "@id": "urn:ngm:class:learning-resources",
         "label": "Learning Resources"
       },
       {
         "@id": "urn:ngm:class:semantic-search",
         "label": "Semantic Search"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:documentation-system",
-        "label": "Documentation System"
-      },
-      {
-        "@id": "urn:ngm:class:knowledge-management-infrastructure",
-        "label": "Knowledge Management Infrastructure"
       }
     ]
   },

@@ -94,7 +94,7 @@
         "label": "Zero-Knowledge Proof"
       },
       {
-        "id": "urn:ngm:class:multi-signature-scheme",
+        "id": "urn:ngm:class:multi-signature",
         "label": "Multi-Signature Scheme"
       },
       {

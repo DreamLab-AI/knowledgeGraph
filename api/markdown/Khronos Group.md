@@ -23,56 +23,145 @@ public:: true
   "definition": "The Khronos Group is an open, member-driven industry consortium founded in January 2000 that creates and maintains royalty-free open standards for graphics, parallel compute, media, and extended reality APIs across heterogeneous hardware platforms. Its portfolio spans OpenGL, Vulkan, OpenCL, OpenXR, glTF, NNEF, WebGL, and SPIR-V, forming the portable API foundation that underpins GPU-accelerated rendering, XR runtimes, and cross-vendor compute across the technology industry. Khronos operates through working groups composed of member companies — including NVIDIA, AMD, Intel, ARM, Apple, Google, and Meta — that collaboratively draft, ratify, and publish specifications under open licences with conformance test suites.",
   "domain": "standards",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:standardization-bodies", "label": "Standardization Bodies"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:standardization-bodies",
+      "label": "Standardization Bodies"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:vulkan", "label": "Vulkan"},
-      {"@id": "urn:ngm:class:opengl", "label": "OpenGL"},
-      {"@id": "urn:ngm:class:opencl", "label": "OpenCL"},
-      {"@id": "urn:ngm:class:openxr", "label": "OpenXR"},
-      {"@id": "urn:ngm:class:gltf", "label": "glTF"},
-      {"@id": "urn:ngm:class:spir-v", "label": "SPIR-V"},
-      {"@id": "urn:ngm:class:webgl", "label": "WebGL"},
-      {"@id": "urn:ngm:class:nnef", "label": "NNEF"}
+      {
+        "@id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      },
+      {
+        "@id": "urn:ngm:class:opengl",
+        "label": "OpenGL"
+      },
+      {
+        "@id": "urn:ngm:class:opencl",
+        "label": "OpenCL"
+      },
+      {
+        "@id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      },
+      {
+        "@id": "urn:ngm:class:gltf-standard",
+        "label": "glTF"
+      },
+      {
+        "@id": "urn:ngm:class:spir-v",
+        "label": "SPIR-V"
+      },
+      {
+        "@id": "urn:ngm:class:webgl",
+        "label": "WebGL"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:graphics-api", "label": "Graphics API"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:cross-platform-rendering", "label": "Cross-Platform Rendering"},
-      {"@id": "urn:ngm:class:hardware-abstraction-layer", "label": "Hardware Abstraction Layer"}
+      {
+        "@id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:cross-platform-rendering",
+        "label": "Cross-Platform Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-abstraction-layer",
+        "label": "Hardware Abstraction Layer"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:neural-network-portability", "label": "Neural Network Portability"},
-      {"@id": "urn:ngm:class:3d-asset-interchange", "label": "3D Asset Interchange"}
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:3d-asset-interchange",
+        "label": "3D Asset Interchange"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso", "label": "ISO"},
-      {"@id": "urn:ngm:class:ieee", "label": "IEEE"}
+      {
+        "@id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"},
-      {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"},
-      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"},
-      {"@id": "urn:ngm:class:3d-file-format", "label": "3D File Format"},
-      {"@id": "urn:ngm:class:shader-language", "label": "Shader Language"}
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-file-format",
+        "label": "3D File Format"
+      },
+      {
+        "@id": "urn:ngm:class:shader-language",
+        "label": "Shader Language"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:directx", "label": "DirectX"},
-      {"@id": "urn:ngm:class:metal-api", "label": "Metal API"},
-      {"@id": "urn:ngm:class:proprietary-graphics-api", "label": "Proprietary Graphics API"}
+      {
+        "@id": "urn:ngm:class:directx",
+        "label": "DirectX"
+      },
+      {
+        "@id": "urn:ngm:class:metal-api",
+        "label": "Metal API"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning-accelerator", "label": "Machine Learning Accelerator"},
-      {"@id": "urn:ngm:class:edge-inference", "label": "Edge Inference"},
-      {"@id": "urn:ngm:class:metaverse-infrastructure", "label": "Metaverse Infrastructure"}
+      {
+        "@id": "urn:ngm:class:machine-learning-accelerator",
+        "label": "Machine Learning Accelerator"
+      },
+      {
+        "@id": "urn:ngm:class:edge-inference",
+        "label": "Edge Inference"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-infrastructure",
+        "label": "Metaverse Infrastructure"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:khronos", "label": "Khronos"}
+    {
+      "@id": "urn:ngm:class:khronos",
+      "label": "Khronos"
+    }
   ],
   "quality": 0.74,
   "provenance": {

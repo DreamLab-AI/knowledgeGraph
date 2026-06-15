@@ -26,7 +26,7 @@
         "label": "DID Document"
       },
       {
-        "id": "urn:ngm:class:trust-score",
+        "id": "urn:ngm:class:trust-score-metric",
         "label": "Trust Score"
       }
     ],
@@ -50,12 +50,8 @@
         "label": "Quadratic Funding"
       },
       {
-        "id": "urn:ngm:class:public-goods-funding",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-goods-funding",
         "label": "Public Goods Funding"
-      },
-      {
-        "id": "urn:ngm:class:token-airdrop",
-        "label": "Token Airdrop"
       },
       {
         "id": "urn:ngm:class:decentralized-governance",
@@ -68,7 +64,7 @@
         "label": "Ethereum"
       },
       {
-        "id": "urn:ngm:class:w3c-did-specification",
+        "id": "urn:ngm:class:w3-c-did-specification",
         "label": "W3C DID Specification"
       }
     ],
@@ -76,10 +72,6 @@
       {
         "id": "urn:ngm:class:sybil-resistance",
         "label": "Sybil Resistance"
-      },
-      {
-        "id": "urn:ngm:class:identity-aggregation",
-        "label": "Identity Aggregation"
       }
     ],
     "contrastsWith": [
@@ -94,7 +86,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:ai-content-authenticity",
+        "id": "urn:ngm:class:content-authenticity",
         "label": "AI Content Authenticity"
       },
       {
@@ -108,11 +100,7 @@
         "label": "Proof of Humanity"
       },
       {
-        "id": "urn:ngm:class:brightid",
-        "label": "BrightID"
-      },
-      {
-        "id": "urn:ngm:class:ens-ethereum-name-service",
+        "id": "urn:ngm:class:ens",
         "label": "ENS (Ethereum Name Service)"
       },
       {

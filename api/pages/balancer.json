@@ -16,20 +16,7 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:vault",
-        "label": "Vault"
-      },
-      {
-        "id": "urn:ngm:class:boosted-pool",
-        "label": "Boosted Pool"
-      },
-      {
-        "id": "urn:ngm:class:managed-pool",
-        "label": "Managed Pool"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:arbitrage",
@@ -48,14 +35,6 @@
       {
         "id": "urn:ngm:class:asset-liquidity",
         "label": "Asset Liquidity"
-      },
-      {
-        "id": "urn:ngm:class:on-chain-portfolio-management",
-        "label": "On-Chain Portfolio Management"
-      },
-      {
-        "id": "urn:ngm:class:yield-bearing-liquidity",
-        "label": "Yield-Bearing Liquidity"
       },
       {
         "id": "urn:ngm:class:decentralized-exchange",
@@ -98,15 +77,11 @@
         "label": "Smart Contract"
       },
       {
-        "id": "urn:ngm:class:weighted-pool",
-        "label": "Weighted Pool"
-      },
-      {
-        "id": "urn:ngm:class:stableswap-invariant",
+        "id": "urn:ngm:class:stable-swap-invariant",
         "label": "StableSwap Invariant"
       },
       {
-        "id": "urn:ngm:class:vote-escrowed-token",
+        "id": "urn:ngm:class:vote-escrow-model",
         "label": "Vote-Escrowed Token"
       }
     ],

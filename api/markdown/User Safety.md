@@ -53,50 +53,119 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"},
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"},
-      {"@id": "urn:ngm:class:age-verification", "label": "Age Verification"},
-      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"}
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:age-verification",
+        "label": "Age Verification"
+      },
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-wellbeing", "label": "Digital Wellbeing"},
-      {"@id": "urn:ngm:class:inclusive-design", "label": "Inclusive Design"},
-      {"@id": "urn:ngm:class:trust-and-safety", "label": "Trust and Safety"}
+      {
+        "@id": "urn:ngm:class:inclusive-design",
+        "label": "Inclusive Design"
+      },
+      {
+        "@id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"},
-      {"@id": "urn:ngm:class:metaverse-safety-protocol", "label": "Metaverse Safety Protocol"},
-      {"@id": "urn:ngm:class:platform-accountability", "label": "Platform Accountability"}
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-safety-protocol",
+        "label": "Metaverse Safety Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:platform-accountability",
+        "label": "Platform Accountability"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"},
-      {"@id": "urn:ngm:class:reputation-system", "label": "Reputation System"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:reputation-system",
+        "label": "Reputation System"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:ai-moderation", "label": "AI Moderation"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:privacy-preserving-computation", "label": "Privacy-Preserving Computation"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:surveillance-capitalism", "label": "Surveillance Capitalism"},
-      {"@id": "urn:ngm:class:censorship", "label": "Censorship"}
+      {
+        "@id": "urn:ngm:class:surveillance-capitalism",
+        "label": "Surveillance Capitalism"
+      },
+      {
+        "@id": "urn:ngm:class:censorship",
+        "label": "Censorship"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-rights", "label": "Digital Rights"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
-      {"@id": "urn:ngm:class:online-harassment", "label": "Online Harassment"},
-      {"@id": "urn:ngm:class:human-factors", "label": "Human Factors"},
-      {"@id": "urn:ngm:class:child-online-protection", "label": "Child Online Protection"}
+      {
+        "@id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:human-factors",
+        "label": "Human Factors"
+      },
+      {
+        "@id": "urn:ngm:class:child-online-protection",
+        "label": "Child Online Protection"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:platform-safety", "label": "Platform Safety"},
-    {"@id": "urn:ngm:class:online-safety", "label": "Online Safety"}
+    {
+      "@id": "urn:ngm:class:platform-safety",
+      "label": "Platform Safety"
+    },
+    {
+      "@id": "urn:ngm:class:online-safety",
+      "label": "Online Safety"
+    }
   ],
   "quality": 0.72,
   "provenance": {

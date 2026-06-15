@@ -29,20 +29,12 @@
       {
         "id": "urn:ngm:class:containerisation",
         "label": "Containerisation"
-      },
-      {
-        "id": "urn:ngm:class:pre-registration",
-        "label": "Pre-registration"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:robustness",
         "label": "Robustness"
-      },
-      {
-        "id": "urn:ngm:class:scientific-trust",
-        "label": "Scientific Trust"
       },
       {
         "id": "urn:ngm:class:peer-review",
@@ -68,10 +60,6 @@
       {
         "id": "urn:ngm:class:replication",
         "label": "Replication"
-      },
-      {
-        "id": "urn:ngm:class:generalisability",
-        "label": "Generalisability"
       }
     ],
     "bridgesTo": [

@@ -26,10 +26,6 @@
         "label": "Transmission Delay"
       },
       {
-        "id": "urn:ngm:class:queuing-delay",
-        "label": "Queuing Delay"
-      },
-      {
         "id": "urn:ngm:class:processing-delay",
         "label": "Processing Delay"
       }
@@ -48,17 +44,9 @@
       {
         "id": "urn:ngm:class:real-time-communication",
         "label": "Real-Time Communication"
-      },
-      {
-        "id": "urn:ngm:class:distributed-coordination",
-        "label": "Distributed Coordination"
       }
     ],
     "dependsOn": [
-      {
-        "id": "urn:ngm:class:physical-distance",
-        "label": "Physical Distance"
-      },
       {
         "id": "urn:ngm:class:network-topology",
         "label": "Network Topology"
@@ -85,7 +73,7 @@
         "label": "Blockchain Scalability"
       },
       {
-        "id": "urn:ngm:class:spatial-computing-rendering",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing Rendering"
       },
       {
@@ -97,10 +85,6 @@
       {
         "id": "urn:ngm:class:round-trip-time",
         "label": "Round-Trip Time"
-      },
-      {
-        "id": "urn:ngm:class:ping",
-        "label": "Ping"
       }
     ],
     "supports": [
@@ -116,7 +100,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:network-performance",
+        "id": "urn:ngm:class:network-performance-metrics",
         "label": "Network Performance"
       },
       {

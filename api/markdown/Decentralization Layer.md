@@ -142,7 +142,7 @@ public:: true
         "label": "Data Sovereignty"
       },
       {
-        "@id": "urn:ngm:class:trust-distribution",
+        "@id": "urn:ngm:class:trust",
         "label": "Trust Distribution"
       },
       {

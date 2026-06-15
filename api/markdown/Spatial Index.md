@@ -148,20 +148,12 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:grid-based-index",
-        "label": "Grid-based Index"
-      },
-      {
-        "@id": "urn:ngm:class:octree",
+        "@id": "urn:ngm:class:octree-spatial-index",
         "label": "Octree"
       },
       {
         "@id": "urn:ngm:class:quadtree",
         "label": "Quadtree"
-      },
-      {
-        "@id": "urn:ngm:class:r-tree-structure",
-        "label": "R-tree Structure"
       },
       {
         "@id": "urn:ngm:class:bounding-volume-hierarchy",
@@ -170,16 +162,8 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:bounding-box",
-        "label": "Bounding Box"
-      },
-      {
         "@id": "urn:ngm:class:distance-metric",
         "label": "Distance Metric"
-      },
-      {
-        "@id": "urn:ngm:class:geometric-primitives",
-        "label": "Geometric Primitives"
       },
       {
         "@id": "urn:ngm:class:coordinate-system",
@@ -188,11 +172,11 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:level-of-detail-selection",
+        "@id": "urn:ngm:class:level-of-detail",
         "label": "Level of Detail Selection"
       },
       {
-        "@id": "urn:ngm:class:view-frustum-culling",
+        "@id": "urn:ngm:class:frustum-culling",
         "label": "View Frustum Culling"
       },
       {

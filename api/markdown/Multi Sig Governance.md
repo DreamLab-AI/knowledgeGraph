@@ -471,47 +471,27 @@ alias:: Multi-Sig Governance
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:guardian-set",
-        "label": "Guardian Set"
-      },
-      {
         "@id": "urn:ngm:class:hardware-wallet",
         "label": "Hardware Wallet"
       },
       {
-        "@id": "urn:ngm:class:mpc-key-share",
-        "label": "MPC Key Share"
-      },
-      {
-        "@id": "urn:ngm:class:nonce-commitment",
-        "label": "Nonce Commitment"
-      },
-      {
-        "@id": "urn:ngm:class:redeem-script",
+        "@id": "urn:ngm:class:script",
         "label": "Redeem Script"
       },
       {
-        "@id": "urn:ngm:class:signer-ceremony",
-        "label": "Signer Ceremony"
-      },
-      {
-        "@id": "urn:ngm:class:signer-quorum",
+        "@id": "urn:ngm:class:quorum",
         "label": "Signer Quorum"
       },
       {
-        "@id": "urn:ngm:class:signing-key",
+        "@id": "urn:ngm:class:cryptographic-signing",
         "label": "Signing Key"
       },
       {
-        "@id": "urn:ngm:class:threshold-parameter",
-        "label": "Threshold Parameter"
-      },
-      {
-        "@id": "urn:ngm:class:timelock-module",
+        "@id": "urn:ngm:class:timelock",
         "label": "Timelock Module"
       },
       {
-        "@id": "urn:ngm:class:transaction-queue",
+        "@id": "urn:ngm:class:transaction",
         "label": "Transaction Queue"
       },
       {
@@ -541,11 +521,11 @@ alias:: Multi-Sig Governance
         "label": "Schnorr Signature"
       },
       {
-        "@id": "urn:ngm:class:secure-key-storage",
+        "@id": "urn:ngm:class:secure-storage",
         "label": "Secure Key Storage"
       },
       {
-        "@id": "urn:ngm:class:signer-coordination-protocol",
+        "@id": "urn:ngm:class:coordination-protocol",
         "label": "Signer Coordination Protocol"
       },
       {
@@ -567,12 +547,8 @@ alias:: Multi-Sig Governance
         "label": "Bitcoin ETF Custody"
       },
       {
-        "@id": "urn:ngm:class:cross-chain-bridge-security",
+        "@id": "urn:ngm:class:cross-chain-bridge",
         "label": "Cross-Chain Bridge Security"
-      },
-      {
-        "@id": "urn:ngm:class:emergency-response-governance",
-        "label": "Emergency Response Governance"
       },
       {
         "@id": "urn:ngm:class:institutional-custody",
@@ -581,10 +557,6 @@ alias:: Multi-Sig Governance
       {
         "@id": "urn:ngm:class:layer-2-security-council",
         "label": "Layer 2 Security Council"
-      },
-      {
-        "@id": "urn:ngm:class:protocol-upgrade-control",
-        "label": "Protocol Upgrade Control"
       },
       {
         "@id": "urn:ngm:class:social-recovery",
@@ -605,20 +577,12 @@ alias:: Multi-Sig Governance
         "label": "BIP-16"
       },
       {
-        "@id": "urn:ngm:class:cggmp21-protocol",
-        "label": "CGGMP21 Protocol"
-      },
-      {
         "@id": "urn:ngm:class:erc-4337-account-abstraction",
         "label": "ERC-4337 Account Abstraction"
       },
       {
-        "@id": "urn:ngm:class:frost-threshold-signatures",
+        "@id": "urn:ngm:class:threshold-signature-scheme",
         "label": "FROST Threshold Signatures"
-      },
-      {
-        "@id": "urn:ngm:class:gg20-protocol",
-        "label": "GG20 Protocol"
       },
       {
         "@id": "urn:ngm:class:mpc-wallet",
@@ -633,29 +597,25 @@ alias:: Multi-Sig Governance
         "label": "Pay-to-Script-Hash"
       },
       {
-        "@id": "urn:ngm:class:roast-protocol",
-        "label": "ROAST Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:safe-smart-account",
+        "@id": "urn:ngm:class:gnosis-safe",
         "label": "Safe Smart Account"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:argent-account",
+        "@id": "urn:ngm:class:argent",
         "label": "Argent Account"
       },
       {
-        "@id": "urn:ngm:class:bit-go-wallet",
+        "@id": "urn:ngm:class:bit-go",
         "label": "BitGo Wallet"
       },
       {
-        "@id": "urn:ngm:class:copper-mpc",
+        "@id": "urn:ngm:class:copper-co",
         "label": "Copper MPC"
       },
       {
-        "@id": "urn:ngm:class:fireblocks-mpc",
+        "@id": "urn:ngm:class:fireblocks",
         "label": "Fireblocks MPC"
       },
       {
@@ -669,14 +629,6 @@ alias:: Multi-Sig Governance
       {
         "@id": "urn:ngm:class:ledger",
         "label": "Ledger"
-      },
-      {
-        "@id": "urn:ngm:class:safe-wallet",
-        "label": "Safe Wallet"
-      },
-      {
-        "@id": "urn:ngm:class:squads-protocol",
-        "label": "Squads Protocol"
       },
       {
         "@id": "urn:ngm:class:trezor",
@@ -735,7 +687,7 @@ alias:: Multi-Sig Governance
         "label": "Bitcoin ETF Custody"
       },
       {
-        "@id": "urn:ngm:class:de-fi-protocol-security",
+        "@id": "urn:ngm:class:de-fi-protocol",
         "label": "DeFi Protocol Security"
       },
       {
@@ -747,11 +699,11 @@ alias:: Multi-Sig Governance
         "label": "Layer 2 Security Council"
       },
       {
-        "@id": "urn:ngm:class:regulatory-compliance-custody",
+        "@id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance Custody"
       },
       {
-        "@id": "urn:ngm:class:wholesale-payment-system",
+        "@id": "urn:ngm:class:payment-system",
         "label": "Wholesale Payment System"
       },
       {
@@ -785,10 +737,6 @@ alias:: Multi-Sig Governance
         "label": "BIP-341"
       },
       {
-        "@id": "urn:ngm:class:bip-373",
-        "label": "BIP-373"
-      },
-      {
         "@id": "urn:ngm:class:eip-1271",
         "label": "EIP-1271"
       },
@@ -799,14 +747,6 @@ alias:: Multi-Sig Governance
       {
         "@id": "urn:ngm:class:eip-7702",
         "label": "EIP-7702"
-      },
-      {
-        "@id": "urn:ngm:class:nist-ir-8214-b",
-        "label": "NIST IR 8214B"
-      },
-      {
-        "@id": "urn:ngm:class:rfc-9591",
-        "label": "RFC 9591"
       }
     ]
   },

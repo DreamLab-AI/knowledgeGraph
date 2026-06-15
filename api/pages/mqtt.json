@@ -77,10 +77,6 @@
       {
         "id": "urn:ngm:class:http",
         "label": "HTTP"
-      },
-      {
-        "id": "urn:ngm:class:stomp",
-        "label": "STOMP"
       }
     ],
     "bridgesTo": [
@@ -93,7 +89,7 @@
         "label": "Digital Twin"
       },
       {
-        "id": "urn:ngm:class:machine-learning-inference",
+        "id": "urn:ngm:class:inference",
         "label": "Machine Learning Inference"
       }
     ],
@@ -111,7 +107,7 @@
         "label": "WebSockets"
       },
       {
-        "id": "urn:ngm:class:tls-ssl",
+        "id": "urn:ngm:class:tls",
         "label": "TLS/SSL"
       }
     ],
@@ -121,34 +117,22 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:industrial-iot",
+        "id": "urn:ngm:class:industrial-io-t",
         "label": "Industrial IoT"
       },
       {
         "id": "urn:ngm:class:smart-home-automation",
         "label": "Smart Home Automation"
-      },
-      {
-        "id": "urn:ngm:class:vehicle-telematics",
-        "label": "Vehicle Telematics"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:oasis-open",
+        "id": "urn:ngm:class:oasis",
         "label": "OASIS Open"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec-20922",
-        "label": "ISO/IEC 20922"
       }
     ],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:sparkplug-b",
-        "label": "Sparkplug B"
-      },
       {
         "id": "urn:ngm:class:data-serialisation",
         "label": "Data Serialisation"

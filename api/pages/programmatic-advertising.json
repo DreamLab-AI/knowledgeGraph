@@ -18,27 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:demand-side-platform",
-        "label": "Demand-Side Platform"
-      },
-      {
-        "id": "urn:ngm:class:supply-side-platform",
-        "label": "Supply-Side Platform"
-      },
-      {
-        "id": "urn:ngm:class:ad-exchange",
-        "label": "Ad Exchange"
-      },
-      {
         "id": "urn:ngm:class:data-management-platform",
         "label": "Data Management Platform"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:real-time-bidding",
-        "label": "Real-Time Bidding"
-      },
       {
         "id": "urn:ngm:class:identity-resolution",
         "label": "Identity Resolution"
@@ -52,29 +36,16 @@
       {
         "id": "urn:ngm:class:targeted-advertising",
         "label": "Targeted Advertising"
-      },
-      {
-        "id": "urn:ngm:class:attribution-measurement",
-        "label": "Attribution Measurement"
       }
     ],
     "dependsOn": [
-      {
-        "id": "urn:ngm:class:openrtb-protocol",
-        "label": "OpenRTB Protocol"
-      },
       {
         "id": "urn:ngm:class:first-party-data",
         "label": "First-Party Data"
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:direct-media-buying",
-        "label": "Direct Media Buying"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:artificial-intelligence",
@@ -105,12 +76,8 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:connected-tv-advertising",
+        "id": "urn:ngm:class:advertising",
         "label": "Connected TV Advertising"
-      },
-      {
-        "id": "urn:ngm:class:retail-media-network",
-        "label": "Retail Media Network"
       }
     ],
     "standardizedBy": [],
@@ -125,16 +92,8 @@
         "label": "Digital Marketing"
       },
       {
-        "id": "urn:ngm:class:header-bidding",
-        "label": "Header Bidding"
-      },
-      {
-        "id": "urn:ngm:class:brand-safety",
+        "id": "urn:ngm:class:safety",
         "label": "Brand Safety"
-      },
-      {
-        "id": "urn:ngm:class:contextual-targeting",
-        "label": "Contextual Targeting"
       }
     ]
   },

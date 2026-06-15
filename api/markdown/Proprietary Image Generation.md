@@ -428,7 +428,7 @@ public:: true
         "label": "Large-Scale Compute"
       },
       {
-        "@id": "urn:ngm:class:latent-diffusion-architecture",
+        "@id": "urn:ngm:class:latent-diffusion",
         "label": "Latent Diffusion Architecture"
       },
       {
@@ -462,7 +462,7 @@ public:: true
         "label": "Marketing Asset Production"
       },
       {
-        "@id": "urn:ngm:class:multimodal-ai-architecture-editing",
+        "@id": "urn:ngm:class:multimodal-ai-architecture",
         "label": "Multimodal Editing"
       },
       {
@@ -506,7 +506,7 @@ public:: true
         "label": "Adobe Creative Cloud"
       },
       {
-        "@id": "urn:ngm:class:instruction-following-conversational-ai-system-integration",
+        "@id": "urn:ngm:class:instruction-following-conversational-ai-system",
         "label": "ChatGPT Integration"
       },
       {
@@ -514,7 +514,7 @@ public:: true
         "label": "Discord API"
       },
       {
-        "@id": "urn:ngm:class:gemini-multimodal-language-model-api",
+        "@id": "urn:ngm:class:gemini-multimodal-language-model",
         "label": "Gemini API"
       },
       {
@@ -574,7 +574,7 @@ public:: true
         "label": "Fashion Design"
       },
       {
-        "@id": "urn:ngm:class:film-pre-production",
+        "@id": "urn:ngm:class:pre-production",
         "label": "Film Pre-Production"
       },
       {
@@ -586,7 +586,7 @@ public:: true
         "label": "Medical Illustration"
       },
       {
-        "@id": "urn:ngm:class:social-media-platform-infrastructure-content",
+        "@id": "urn:ngm:class:social-media-platform-infrastructure",
         "label": "Social Media Content"
       }
     ],
@@ -596,7 +596,7 @@ public:: true
         "label": "Adobe Content Authenticity Initiative"
       },
       {
-        "@id": "urn:ngm:class:c2-pa-content-provenance-standards",
+        "@id": "urn:ngm:class:c2-pa",
         "label": "C2PA Content Provenance Standards"
       },
       {

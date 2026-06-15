@@ -19,10 +19,6 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:blockchain-atomicity",
-        "label": "Blockchain Atomicity"
-      },
-      {
         "id": "urn:ngm:class:evm-compatible-chain",
         "label": "EVM-Compatible Chain"
       }
@@ -45,10 +41,6 @@
         "label": "Arbitrage"
       },
       {
-        "id": "urn:ngm:class:collateral-swap",
-        "label": "Collateral Swap"
-      },
-      {
         "id": "urn:ngm:class:self-liquidation",
         "label": "Self-Liquidation"
       }
@@ -64,16 +56,7 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:collateralised-loan",
-        "label": "Collateralised Loan"
-      },
-      {
-        "id": "urn:ngm:class:traditional-unsecured-loan",
-        "label": "Traditional Unsecured Loan"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:financial-derivatives",
@@ -100,14 +83,6 @@
       {
         "id": "urn:ngm:class:smart-contract-execution",
         "label": "Smart Contract Execution"
-      },
-      {
-        "id": "urn:ngm:class:evm-transaction",
-        "label": "EVM Transaction"
-      },
-      {
-        "id": "urn:ngm:class:callback-function",
-        "label": "Callback Function"
       }
     ],
     "supports": [],
@@ -125,10 +100,6 @@
       {
         "id": "urn:ngm:class:transaction",
         "label": "Transaction"
-      },
-      {
-        "id": "urn:ngm:class:oracle-manipulation",
-        "label": "Oracle Manipulation"
       },
       {
         "id": "urn:ngm:class:automated-market-maker",

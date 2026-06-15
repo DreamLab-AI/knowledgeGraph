@@ -105,15 +105,11 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:customer-identification-program",
-        "label": "Customer Identification Program"
-      },
-      {
         "@id": "urn:ngm:class:enhanced-due-diligence",
         "label": "Enhanced Due Diligence"
       },
       {
-        "@id": "urn:ngm:class:politically-exposed-person-screening",
+        "@id": "urn:ngm:class:sanctions-screening",
         "label": "Politically Exposed Person Screening"
       },
       {
@@ -145,7 +141,7 @@ public:: true
         "label": "Bank Secrecy Act"
       },
       {
-        "@id": "urn:ngm:class:eu-anti-money-laundering-directive",
+        "@id": "urn:ngm:class:anti-money-laundering",
         "label": "EU Anti-Money Laundering Directive"
       }
     ],
@@ -179,7 +175,7 @@ public:: true
         "label": "Know Your Customer"
       },
       {
-        "@id": "urn:ngm:class:aml-cft",
+        "@id": "urn:ngm:class:aml",
         "label": "AML/CFT"
       }
     ]

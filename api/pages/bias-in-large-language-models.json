@@ -24,65 +24,8 @@
   "qualityScore": 0.52,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:age-bias",
-        "label": "Age Bias"
-      },
-      {
-        "id": "urn:ngm:class:allocational-bias",
-        "label": "Allocational Bias"
-      },
-      {
-        "id": "urn:ngm:class:disability-bias",
-        "label": "Disability Bias"
-      },
-      {
-        "id": "urn:ngm:class:gender-bias",
-        "label": "Gender Bias"
-      },
-      {
-        "id": "urn:ngm:class:linguistic-bias",
-        "label": "Linguistic Bias"
-      },
-      {
-        "id": "urn:ngm:class:political-bias",
-        "label": "Political Bias"
-      },
-      {
-        "id": "urn:ngm:class:racial-bias",
-        "label": "Racial Bias"
-      },
-      {
-        "id": "urn:ngm:class:religious-bias",
-        "label": "Religious Bias"
-      },
-      {
-        "id": "urn:ngm:class:representational-bias",
-        "label": "Representational Bias"
-      },
-      {
-        "id": "urn:ngm:class:socioeconomic-bias",
-        "label": "Socioeconomic Bias"
-      },
-      {
-        "id": "urn:ngm:class:sycophancy-bias",
-        "label": "Sycophancy Bias"
-      }
-    ],
+    "hasPart": [],
     "requires": [
-      {
-        "id": "urn:ngm:class:human-rater-pool",
-        "label": "Human Rater Pool"
-      },
-      {
-        "id": "urn:ngm:class:instruction-tuning-dataset",
-        "label": "Instruction Tuning Dataset"
-      },
-      {
-        "id": "urn:ngm:class:pretraining-corpus",
-        "label": "Pretraining Corpus"
-      },
       {
         "id": "urn:ngm:class:rlhf-pipeline",
         "label": "RLHF Pipeline"
@@ -90,101 +33,28 @@
       {
         "id": "urn:ngm:class:tokeniser",
         "label": "Tokeniser"
-      },
-      {
-        "id": "urn:ngm:class:training-data-composition",
-        "label": "Training Data Composition"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:cultural-homogenization",
-        "label": "Cultural Homogenization"
-      },
-      {
-        "id": "urn:ngm:class:discriminatory-decision-making",
-        "label": "Discriminatory Decision Making"
-      },
-      {
         "id": "urn:ngm:class:information-asymmetry",
         "label": "Information Asymmetry"
-      },
-      {
-        "id": "urn:ngm:class:stereotype-propagation",
-        "label": "Stereotype Propagation"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:distributional-representation-learning",
-        "label": "Distributional Representation Learning"
-      },
-      {
-        "id": "urn:ngm:class:implicit-association-encoding",
-        "label": "Implicit Association Encoding"
-      },
-      {
         "id": "urn:ngm:class:preference-aggregation",
         "label": "Preference Aggregation"
-      },
-      {
-        "id": "urn:ngm:class:statistical-pattern-reproduction",
-        "label": "Statistical Pattern Reproduction"
       }
     ],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [
-      {
-        "id": "urn:ngm:class:bbq-benchmark",
-        "label": "BBQ Benchmark"
-      },
-      {
-        "id": "urn:ngm:class:bold-benchmark",
-        "label": "BOLD Benchmark"
-      },
-      {
-        "id": "urn:ngm:class:crow-s-pairs",
-        "label": "CrowS-Pairs"
-      },
-      {
-        "id": "urn:ngm:class:honest-benchmark",
-        "label": "HONEST Benchmark"
-      },
-      {
-        "id": "urn:ngm:class:real-toxicity-prompts",
-        "label": "RealToxicityPrompts"
-      },
-      {
-        "id": "urn:ngm:class:stereo-set",
-        "label": "StereoSet"
-      },
-      {
-        "id": "urn:ngm:class:wino-bias",
-        "label": "WinoBias"
-      },
-      {
-        "id": "urn:ngm:class:wino-queer",
-        "label": "WinoQueer"
-      },
-      {
-        "id": "urn:ngm:class:word-embedding-association-test",
-        "label": "Word Embedding Association Test"
-      }
-    ],
+    "uses": [],
     "supports": [
-      {
-        "id": "urn:ngm:class:bias-auditing",
-        "label": "Bias Auditing"
-      },
       {
         "id": "urn:ngm:class:model-evaluation",
         "label": "Model Evaluation"
-      },
-      {
-        "id": "urn:ngm:class:responsible-ai-reporting",
-        "label": "Responsible AI Reporting"
       },
       {
         "id": "urn:ngm:class:algorithmic-accountability",
@@ -201,19 +71,11 @@
         "label": "ACL"
       },
       {
-        "id": "urn:ngm:class:aies",
-        "label": "AIES"
-      },
-      {
-        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument-article-10",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act Article 10"
       },
       {
-        "id": "urn:ngm:class:facc-t",
-        "label": "FAccT"
-      },
-      {
-        "id": "urn:ngm:class:ico-guidance-on-ai",
+        "id": "urn:ngm:class:ico-ai-guidance",
         "label": "ICO Guidance on AI"
       },
       {
@@ -232,7 +94,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:fairness-in-ai",
+        "id": "urn:ngm:class:ai-fairness",
         "label": "Fairness in AI"
       },
       {

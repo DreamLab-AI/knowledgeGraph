@@ -24,50 +24,129 @@ alias:: Real Time Control
   "definition": "Real-Time Control is the design and implementation of control systems that must respond to sensor inputs and actuator commands within bounded, deterministic time deadlines, where missing a deadline constitutes system failure. Hard real-time systems—common in aircraft fly-by-wire, automotive ABS, and surgical robotics—require guaranteed worst-case execution times measured in microseconds to milliseconds. Soft real-time systems tolerate occasional deadline misses with degraded performance rather than catastrophic failure. Real-time control relies on real-time operating systems (RTOS), dedicated hardware co-processors, and carefully bounded software to ensure predictable timing under all operating conditions.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:control-system", "label": "Control System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:control-system",
+      "label": "Control System"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:feedback-control", "label": "Feedback Control"},
-      {"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"},
-      {"@id": "urn:ngm:class:real-time-operating-system", "label": "Real-Time Operating System"},
-      {"@id": "urn:ngm:class:determinism", "label": "Determinism"},
-      {"@id": "urn:ngm:class:worst-case-execution-time", "label": "Worst-Case Execution Time"},
-      {"@id": "urn:ngm:class:interrupt-handling", "label": "Interrupt Handling"}
+      {
+        "@id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:determinism",
+        "label": "Determinism"
+      },
+      {
+        "@id": "urn:ngm:class:worst-case-execution-time",
+        "label": "Worst-Case Execution Time"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:pid-controller", "label": "Pid Controller"},
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"},
-      {"@id": "urn:ngm:class:latency", "label": "Latency"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:state-estimation", "label": "State Estimation"}
+      {
+        "@id": "urn:ngm:class:pid-controller",
+        "label": "Pid Controller"
+      },
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:robot-control", "label": "Robot Control"},
-      {"@id": "urn:ngm:class:motion-control", "label": "Motion Control"},
-      {"@id": "urn:ngm:class:closed-loop-control", "label": "Closed-Loop Control"},
-      {"@id": "urn:ngm:class:autonomous-systems", "label": "Autonomous Systems"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"}
+      {
+        "@id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "@id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      },
+      {
+        "@id": "urn:ngm:class:closed-loop-control",
+        "label": "Closed-Loop Control"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:task-scheduling", "label": "Task Scheduling"},
-      {"@id": "urn:ngm:class:priority-scheduling", "label": "Priority Scheduling"},
-      {"@id": "urn:ngm:class:deterministic-networking", "label": "Deterministic Networking"}
+      {
+        "@id": "urn:ngm:class:task-scheduling",
+        "label": "Task Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:priority-scheduling",
+        "label": "Priority Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:deterministic-networking",
+        "label": "Deterministic Networking"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:control-loop", "label": "Control Loop"},
-      {"@id": "urn:ngm:class:deadline-scheduling", "label": "Deadline Scheduling"}
+      {
+        "@id": "urn:ngm:class:control-loop",
+        "label": "Control Loop"
+      },
+      {
+        "@id": "urn:ngm:class:deadline-scheduling",
+        "label": "Deadline Scheduling"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:batch-processing", "label": "Batch Processing"}
+      {
+        "@id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:hard-real-time-control", "label": "Hard Real-Time Control"},
-    {"@id": "urn:ngm:class:deterministic-control", "label": "Deterministic Control"}
+    {
+      "@id": "urn:ngm:class:hard-real-time-control",
+      "label": "Hard Real-Time Control"
+    },
+    {
+      "@id": "urn:ngm:class:deterministic-control",
+      "label": "Deterministic Control"
+    }
   ],
   "quality": 0.75,
   "provenance": {

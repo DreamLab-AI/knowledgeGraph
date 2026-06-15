@@ -19,10 +19,6 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:haptic-rendering",
-        "label": "Haptic Rendering"
-      },
-      {
         "id": "urn:ngm:class:real-time-control",
         "label": "Real-Time Control"
       }
@@ -51,10 +47,6 @@
       {
         "id": "urn:ngm:class:visual-feedback",
         "label": "Visual Feedback"
-      },
-      {
-        "id": "urn:ngm:class:auditory-feedback",
-        "label": "Auditory Feedback"
       }
     ],
     "bridgesTo": [
@@ -119,12 +111,8 @@
         "label": "Proprioception"
       },
       {
-        "id": "urn:ngm:class:bilateral-teleoperation",
+        "id": "urn:ngm:class:teleoperation",
         "label": "Bilateral Teleoperation"
-      },
-      {
-        "id": "urn:ngm:class:vibrotactile-feedback",
-        "label": "Vibrotactile Feedback"
       }
     ]
   },

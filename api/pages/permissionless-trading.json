@@ -23,10 +23,6 @@
         "label": "Public Blockchain"
       },
       {
-        "id": "urn:ngm:class:on-chain-liquidity",
-        "label": "On-Chain Liquidity"
-      },
-      {
         "id": "urn:ngm:class:non-custodial-wallet",
         "label": "Non-Custodial Wallet"
       }
@@ -95,10 +91,6 @@
       {
         "id": "urn:ngm:class:blockchain-wallet",
         "label": "Blockchain Wallet"
-      },
-      {
-        "id": "urn:ngm:class:dex-aggregator",
-        "label": "DEX Aggregator"
       }
     ],
     "supports": [],

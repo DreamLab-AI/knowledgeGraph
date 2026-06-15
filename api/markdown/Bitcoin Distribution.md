@@ -310,24 +310,12 @@ public:: true
         "label": "Bitcoin Halving"
       },
       {
-        "@id": "urn:ngm:class:dormant-supply",
-        "label": "Dormant Supply"
-      },
-      {
         "@id": "urn:ngm:class:gini-coefficient",
         "label": "Gini Coefficient"
       },
       {
         "@id": "urn:ngm:class:hodl-waves",
         "label": "HODL Waves"
-      },
-      {
-        "@id": "urn:ngm:class:long-term-holders",
-        "label": "Long-Term Holders"
-      },
-      {
-        "@id": "urn:ngm:class:lost-coins",
-        "label": "Lost Coins"
       },
       {
         "@id": "urn:ngm:class:nakamoto-coefficient",
@@ -338,14 +326,6 @@ public:: true
         "label": "Satoshi Nakamoto"
       },
       {
-        "@id": "urn:ngm:class:short-term-holders",
-        "label": "Short-Term Holders"
-      },
-      {
-        "@id": "urn:ngm:class:whale-addresses",
-        "label": "Whale Addresses"
-      },
-      {
         "@id": "urn:ngm:class:utxo-model",
         "label": "UTXO Model"
       }
@@ -354,10 +334,6 @@ public:: true
       {
         "@id": "urn:ngm:class:blockchain-analysis",
         "label": "Blockchain Analysis"
-      },
-      {
-        "@id": "urn:ngm:class:cryptographic-addresses",
-        "label": "Cryptographic Addresses"
       },
       {
         "@id": "urn:ngm:class:on-chain-data",
@@ -382,7 +358,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-scarcity",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
         "label": "Bitcoin Scarcity"
       },
       {
@@ -442,10 +418,6 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:bit-info-charts",
-        "label": "BitInfoCharts"
-      },
-      {
         "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-halving",
         "label": "Bitcoin Halving"
       },
@@ -456,14 +428,6 @@ public:: true
       {
         "@id": "urn:ngm:class:chainalysis",
         "label": "Chainalysis"
-      },
-      {
-        "@id": "urn:ngm:class:crypto-quant",
-        "label": "CryptoQuant"
-      },
-      {
-        "@id": "urn:ngm:class:glassnode",
-        "label": "Glassnode"
       }
     ],
     "relatedTo": [

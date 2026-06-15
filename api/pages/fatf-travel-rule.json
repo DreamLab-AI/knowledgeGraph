@@ -33,17 +33,9 @@
       {
         "id": "urn:ngm:class:ivms-101",
         "label": "IVMS 101"
-      },
-      {
-        "id": "urn:ngm:class:vasp-counterparty-discovery",
-        "label": "VASP Counterparty Discovery"
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:crypto-asset-compliance",
-        "label": "Crypto-Asset Compliance"
-      },
       {
         "id": "urn:ngm:class:financial-intelligence",
         "label": "Financial Intelligence"
@@ -58,10 +50,6 @@
       {
         "id": "urn:ngm:class:fatf-recommendation-16",
         "label": "FATF Recommendation 16"
-      },
-      {
-        "id": "urn:ngm:class:wire-transfer-rule",
-        "label": "Wire Transfer Rule"
       }
     ],
     "contrastsWith": [
@@ -70,7 +58,7 @@
         "label": "Privacy Coin"
       },
       {
-        "id": "urn:ngm:class:self-hosted-wallet",
+        "id": "urn:ngm:class:wallet",
         "label": "Self-Hosted Wallet"
       },
       {
@@ -84,7 +72,7 @@
         "label": "Decentralised Identity"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential",
+        "id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       },
       {
@@ -102,11 +90,7 @@
         "label": "Travel Rule Protocol"
       },
       {
-        "id": "urn:ngm:class:openvasp",
-        "label": "OpenVASP"
-      },
-      {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -132,7 +116,7 @@
         "label": "Compliance Framework"
       },
       {
-        "id": "urn:ngm:class:virtual-asset-service-provider",
+        "id": "urn:ngm:class:bc-0456-virtual-asset-service-providers",
         "label": "Virtual Asset Service Provider"
       },
       {

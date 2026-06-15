@@ -95,14 +95,6 @@ public:: true
         "label": "PAC Learning"
       },
       {
-        "@id": "urn:ngm:class:rademacher-complexity",
-        "label": "Rademacher Complexity"
-      },
-      {
-        "@id": "urn:ngm:class:generalisation-bounds",
-        "label": "Generalisation Bounds"
-      },
-      {
         "@id": "urn:ngm:class:empirical-risk-minimisation",
         "label": "Empirical Risk Minimisation"
       }
@@ -156,10 +148,6 @@ public:: true
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:computational-learning-theory",
-        "label": "Computational Learning Theory"
-      },
       {
         "@id": "urn:ngm:class:information-theory",
         "label": "Information Theory"

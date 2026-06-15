@@ -89,7 +89,7 @@ public:: true
         "label": "Privacy"
       },
       {
-        "@id": "urn:ngm:class:confidential-transaction",
+        "@id": "urn:ngm:class:confidential-transactions",
         "label": "Confidential Transaction"
       },
       {
@@ -103,17 +103,13 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:encrypted-note",
-        "label": "Encrypted Note"
-      },
-      {
         "@id": "urn:ngm:class:aztec-protocol",
         "label": "Aztec Protocol"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:ethereum-ecosystem",
+        "@id": "urn:ngm:class:ethereum",
         "label": "Ethereum Ecosystem"
       },
       {
@@ -123,7 +119,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:noir-programming-language",
+        "@id": "urn:ngm:class:noir",
         "label": "Noir Programming Language"
       },
       {
@@ -167,7 +163,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:transparent-blockchain",
+        "@id": "urn:ngm:class:blockchain",
         "label": "Transparent Blockchain"
       },
       {

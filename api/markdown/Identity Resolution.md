@@ -23,59 +23,115 @@ public:: true
   "definition": "Identity resolution is the process of determining that multiple data records, identifiers, or signals across different systems refer to the same real-world entity — whether a person, organisation, or device — and consolidating them into a unified, persistent representation. It combines probabilistic and deterministic matching algorithms, data enrichment, and graph-linking to resolve fragmented identities across first-party, second-party, and third-party data sources.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:entity-resolution", "label": "Entity Resolution"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:entity-resolution",
+    "label": "Entity Resolution"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:probabilistic-matching", "label": "Probabilistic Matching"},
-      {"@id": "urn:ngm:class:deterministic-matching", "label": "Deterministic Matching"},
-      {"@id": "urn:ngm:class:identity-graph", "label": "Identity Graph"}
+      {
+        "@id": "urn:ngm:class:probabilistic-matching",
+        "label": "Probabilistic Matching"
+      },
+      {
+        "@id": "urn:ngm:class:identity-graph",
+        "label": "Identity Graph"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:master-data-management", "label": "Master Data Management"},
-      {"@id": "urn:ngm:class:customer-data-platform", "label": "Customer Data Platform"}
+      {
+        "@id": "urn:ngm:class:master-data-management",
+        "label": "Master Data Management"
+      },
+      {
+        "@id": "urn:ngm:class:customer-data-platform",
+        "label": "Customer Data Platform"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-deduplication", "label": "Data Deduplication"},
-      {"@id": "urn:ngm:class:record-linkage", "label": "Record Linkage"}
+      {
+        "@id": "urn:ngm:class:data-deduplication",
+        "label": "Data Deduplication"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cross-device-tracking", "label": "Cross-Device Tracking"},
-      {"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"},
-      {"@id": "urn:ngm:class:personalisation", "label": "Personalisation"}
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "@id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:graph-database", "label": "Graph Database"},
-      {"@id": "urn:ngm:class:hashing-function", "label": "Hashing Function"}
+      {
+        "@id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:data-enrichment", "label": "Data Enrichment"},
-      {"@id": "urn:ngm:class:universal-id", "label": "Universal ID"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:audience-segmentation", "label": "Audience Segmentation"},
-      {"@id": "urn:ngm:class:patient-matching", "label": "Patient Matching"}
+      {
+        "@id": "urn:ngm:class:audience-segmentation",
+        "label": "Audience Segmentation"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:w3c-did", "label": "W3C Decentralized Identifiers"}
+      {
+        "@id": "urn:ngm:class:w3-c-did",
+        "label": "W3C Decentralized Identifiers"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"},
-      {"@id": "urn:ngm:class:anonymous-credential", "label": "Anonymous Credential"}
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "@id": "urn:ngm:class:anonymous-credential",
+        "label": "Anonymous Credential"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
+      {
+        "@id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:privacy-preserving-analytics", "label": "Privacy Preserving Analytics"},
-      {"@id": "urn:ngm:class:data-clean-room", "label": "Data Clean Room"},
-      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"}
+      {
+        "@id": "urn:ngm:class:privacy-preserving-analytics",
+        "label": "Privacy Preserving Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:data-clean-room",
+        "label": "Data Clean Room"
+      },
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:entity-matching", "label": "Entity Matching"},
-    {"@id": "urn:ngm:class:record-deduplication", "label": "Record Deduplication"}
+    {
+      "@id": "urn:ngm:class:entity-matching",
+      "label": "Entity Matching"
+    },
+    {
+      "@id": "urn:ngm:class:record-deduplication",
+      "label": "Record Deduplication"
+    }
   ],
   "quality": 0.72,
   "provenance": {

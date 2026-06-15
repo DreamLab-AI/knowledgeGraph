@@ -61,12 +61,9 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:user-safety", "label": "User Safety"}
-    ],
-    "enables": [
       {
-        "@id": "urn:ngm:class:responsible-xr-design",
-        "label": "Responsible XR Design"
+        "@id": "urn:ngm:class:user-safety",
+        "label": "User Safety"
       }
     ]
   },

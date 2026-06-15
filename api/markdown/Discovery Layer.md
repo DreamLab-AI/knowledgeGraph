@@ -114,10 +114,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:content-indexer",
-        "label": "Content Indexer"
-      },
-      {
         "@id": "urn:ngm:class:recommendation-system",
         "label": "Recommendation System"
       },
@@ -131,10 +127,6 @@ public:: true
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:content-catalog",
-        "label": "Content Catalog"
-      },
       {
         "@id": "urn:ngm:class:query-interface",
         "label": "Query Interface"
@@ -150,15 +142,11 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:asset-browsing",
-        "label": "Asset Browsing"
-      },
-      {
         "@id": "urn:ngm:class:content-discovery",
         "label": "Content Discovery"
       },
       {
-        "@id": "urn:ngm:class:experience-navigation",
+        "@id": "urn:ngm:class:navigation",
         "label": "Experience Navigation"
       },
       {

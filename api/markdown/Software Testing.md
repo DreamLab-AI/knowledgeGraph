@@ -69,14 +69,6 @@ public:: true
         "label": "Integration Testing"
       },
       {
-        "@id": "urn:ngm:class:system-testing",
-        "label": "System Testing"
-      },
-      {
-        "@id": "urn:ngm:class:acceptance-testing",
-        "label": "Acceptance Testing"
-      },
-      {
         "@id": "urn:ngm:class:regression-testing",
         "label": "Regression Testing"
       },
@@ -115,7 +107,7 @@ public:: true
         "label": "Defect Detection"
       },
       {
-        "@id": "urn:ngm:class:software-reliability",
+        "@id": "urn:ngm:class:reliability",
         "label": "Software Reliability"
       }
     ],
@@ -133,21 +125,9 @@ public:: true
       {
         "@id": "urn:ngm:class:test-driven-development",
         "label": "Test-Driven Development"
-      },
-      {
-        "@id": "urn:ngm:class:mock-objects",
-        "label": "Mock Objects"
-      },
-      {
-        "@id": "urn:ngm:class:code-coverage",
-        "label": "Code Coverage"
       }
     ],
     "supports": [
-      {
-        "@id": "urn:ngm:class:software-security",
-        "label": "Software Security"
-      },
       {
         "@id": "urn:ngm:class:robustness",
         "label": "Robustness"
@@ -158,10 +138,6 @@ public:: true
       }
     ],
     "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:iso-iec-29119",
-        "label": "ISO/IEC 29119"
-      },
       {
         "@id": "urn:ngm:class:ieee-829",
         "label": "IEEE 829"
@@ -179,10 +155,6 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:ai-testing",
-        "label": "AI Testing"
-      },
-      {
         "@id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
       },
@@ -197,7 +169,7 @@ public:: true
         "label": "DevOps"
       },
       {
-        "@id": "urn:ngm:class:agile-development",
+        "@id": "urn:ngm:class:agile-software-development",
         "label": "Agile Development"
       }
     ]

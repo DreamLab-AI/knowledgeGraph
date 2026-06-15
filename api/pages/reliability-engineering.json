@@ -24,14 +24,6 @@
       {
         "id": "urn:ngm:class:fmea",
         "label": "FMEA"
-      },
-      {
-        "id": "urn:ngm:class:accelerated-life-testing",
-        "label": "Accelerated Life Testing"
-      },
-      {
-        "id": "urn:ngm:class:reliability-block-diagram",
-        "label": "Reliability Block Diagram"
       }
     ],
     "requires": [
@@ -40,7 +32,7 @@
         "label": "Probabilistic Risk Assessment"
       },
       {
-        "id": "urn:ngm:class:failure-data-collection",
+        "id": "urn:ngm:class:data-collection",
         "label": "Failure Data Collection"
       }
     ],
@@ -73,10 +65,6 @@
       {
         "id": "urn:ngm:class:safety-engineering",
         "label": "Safety Engineering"
-      },
-      {
-        "id": "urn:ngm:class:quality-engineering",
-        "label": "Quality Engineering"
       }
     ],
     "bridgesTo": [
@@ -95,11 +83,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:weibull-analysis",
-        "label": "Weibull Analysis"
-      },
-      {
-        "id": "urn:ngm:class:markov-chains",
+        "id": "urn:ngm:class:markov-chain",
         "label": "Markov Chains"
       },
       {
@@ -111,20 +95,12 @@
       {
         "id": "urn:ngm:class:functional-safety",
         "label": "Functional Safety"
-      },
-      {
-        "id": "urn:ngm:class:maintenance-engineering",
-        "label": "Maintenance Engineering"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:iec-61508",
         "label": "IEC 61508"
-      },
-      {
-        "id": "urn:ngm:class:mil-hdbk-217",
-        "label": "MIL-HDBK-217"
       },
       {
         "id": "urn:ngm:class:iso-26262",
@@ -136,10 +112,6 @@
       {
         "id": "urn:ngm:class:availability",
         "label": "Availability"
-      },
-      {
-        "id": "urn:ngm:class:maintainability",
-        "label": "Maintainability"
       }
     ]
   },

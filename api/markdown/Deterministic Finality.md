@@ -106,26 +106,18 @@ public:: true
         "label": "Byzantine Fault Tolerance"
       },
       {
-        "@id": "urn:ngm:class:supermajority-voting",
-        "label": "Supermajority Voting"
-      },
-      {
         "@id": "urn:ngm:class:proof-of-stake",
         "label": "Proof of Stake"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:absolute-transaction-guarantee",
+        "@id": "urn:ngm:class:transaction-finality",
         "label": "Absolute Transaction Guarantee"
       },
       {
         "@id": "urn:ngm:class:cross-chain-bridge",
         "label": "Cross-Chain Bridge"
-      },
-      {
-        "@id": "urn:ngm:class:synchronous-composability",
-        "label": "Synchronous Composability"
       }
     ],
     "implements": [
@@ -136,10 +128,6 @@ public:: true
       {
         "@id": "urn:ngm:class:casper-ffg",
         "label": "Casper FFG"
-      },
-      {
-        "@id": "urn:ngm:class:grandpa-protocol",
-        "label": "GRANDPA Protocol"
       }
     ],
     "uses": [
@@ -171,10 +159,6 @@ public:: true
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:weak-subjectivity",
-        "label": "Weak Subjectivity"
-      },
       {
         "@id": "urn:ngm:class:validator",
         "label": "Validator"

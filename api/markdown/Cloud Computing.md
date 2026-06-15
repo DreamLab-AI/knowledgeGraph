@@ -24,67 +24,167 @@ alias:: CloudComputing
   "definition": "Cloud computing is the on-demand delivery of computing resources — servers, storage, databases, networking, software, analytics, and AI accelerators — over the internet via provider-managed data centres, abstracting physical infrastructure into programmable APIs with pay-per-use economics. Service models (IaaS, PaaS, SaaS) and deployment models (public, private, hybrid, multi-cloud) define the boundary of managed responsibility between provider and consumer. Hyperscale providers such as AWS, Microsoft Azure, and Google Cloud Platform underpin modern AI training, inference serving, and distributed application deployment at global scale. The paradigm enables elastic provisioning — scaling from zero to thousands of compute nodes in seconds — transforming both software engineering and machine learning operations.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:infrastructure-as-a-service", "label": "Infrastructure as a Service"},
-      {"@id": "urn:ngm:class:platform-as-a-service", "label": "Platform as a Service"},
-      {"@id": "urn:ngm:class:software-as-a-service", "label": "Software as a Service"},
-      {"@id": "urn:ngm:class:serverless-computing", "label": "Serverless Computing"}
+      {
+        "@id": "urn:ngm:class:infrastructure-as-a-service",
+        "label": "Infrastructure as a Service"
+      },
+      {
+        "@id": "urn:ngm:class:platform-as-a-service",
+        "label": "Platform as a Service"
+      },
+      {
+        "@id": "urn:ngm:class:software-as-a-service",
+        "label": "Software as a Service"
+      },
+      {
+        "@id": "urn:ngm:class:serverless-architecture",
+        "label": "Serverless Computing"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:internet-infrastructure", "label": "Internet Infrastructure"}
+      {
+        "@id": "urn:ngm:class:internet-infrastructure",
+        "label": "Internet Infrastructure"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
-      {"@id": "urn:ngm:class:data-centre", "label": "Data Centre"},
-      {"@id": "urn:ngm:class:virtualisation", "label": "Virtualisation"}
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "@id": "urn:ngm:class:virtualisation",
+        "label": "Virtualisation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"},
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"},
-      {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"},
-      {"@id": "urn:ngm:class:inference", "label": "Inference"},
-      {"@id": "urn:ngm:class:devops", "label": "DevOps"},
-      {"@id": "urn:ngm:class:big-data", "label": "Big Data"}
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "@id": "urn:ngm:class:big-data",
+        "label": "Big Data"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
-      {"@id": "urn:ngm:class:high-availability", "label": "High Availability"}
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"},
-      {"@id": "urn:ngm:class:containerisation", "label": "Containerisation"},
-      {"@id": "urn:ngm:class:object-storage", "label": "Object Storage"},
-      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"}
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "@id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:cloud-platform", "label": "Cloud Platform"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:hybrid-cloud", "label": "Hybrid Cloud"}
+      {
+        "@id": "urn:ngm:class:cloud-platform",
+        "label": "Cloud Platform"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:hybrid-cloud",
+        "label": "Hybrid Cloud"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist-cloud-computing", "label": "NIST Cloud Computing Definition"},
-      {"@id": "urn:ngm:class:iso-iec-17788", "label": "ISO/IEC 17788"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:on-premises-computing", "label": "On-Premises Computing"},
-      {"@id": "urn:ngm:class:mainframe-computing", "label": "Mainframe Computing"}
+      {
+        "@id": "urn:ngm:class:nist-cloud-computing",
+        "label": "NIST Cloud Computing Definition"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-17788",
+        "label": "ISO/IEC 17788"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:multi-cloud", "label": "Multi-Cloud"},
-      {"@id": "urn:ngm:class:cloud-security", "label": "Cloud Security"},
-      {"@id": "urn:ngm:class:cost-optimisation", "label": "Cost Optimisation"}
+      {
+        "@id": "urn:ngm:class:multi-cloud",
+        "label": "Multi-Cloud"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-security",
+        "label": "Cloud Security"
+      },
+      {
+        "@id": "urn:ngm:class:cost-optimisation",
+        "label": "Cost Optimisation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:utility-computing", "label": "Utility Computing"},
-    {"@id": "urn:ngm:class:on-demand-computing", "label": "On-Demand Computing"}
+    {
+      "@id": "urn:ngm:class:utility-computing",
+      "label": "Utility Computing"
+    },
+    {
+      "@id": "urn:ngm:class:on-demand-computing",
+      "label": "On-Demand Computing"
+    }
   ],
   "quality": 0.76,
   "provenance": {

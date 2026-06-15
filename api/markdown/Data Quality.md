@@ -62,14 +62,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:data-profiling",
-        "label": "Data Profiling"
-      },
-      {
-        "@id": "urn:ngm:class:data-cleansing",
-        "label": "Data Cleansing"
-      },
-      {
         "@id": "urn:ngm:class:data-validation",
         "label": "Data Validation"
       },
@@ -92,10 +84,6 @@ public:: true
       {
         "@id": "urn:ngm:class:metadata-management",
         "label": "Metadata Management"
-      },
-      {
-        "@id": "urn:ngm:class:data-cataloguing",
-        "label": "Data Cataloguing"
       }
     ],
     "enables": [
@@ -118,7 +106,7 @@ public:: true
         "label": "Data Integration"
       },
       {
-        "@id": "urn:ngm:class:etl",
+        "@id": "urn:ngm:class:etl-pipeline",
         "label": "ETL"
       }
     ],
@@ -150,16 +138,6 @@ public:: true
       {
         "@id": "urn:ngm:class:dama-dmbok",
         "label": "DAMA DMBOK"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:data-debt",
-        "label": "Data Debt"
-      },
-      {
-        "@id": "urn:ngm:class:dark-data",
-        "label": "Dark Data"
       }
     ],
     "bridgesTo": [

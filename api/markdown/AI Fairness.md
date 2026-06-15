@@ -67,14 +67,7 @@ public:: true
       "label": "AI Ethics"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:equitable-ai-systems",
-        "label": "Equitable AI Systems"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

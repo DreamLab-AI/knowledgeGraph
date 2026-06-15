@@ -37,52 +37,121 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:defi-price-feed", "label": "DeFi Price Feed"},
-    {"@id": "urn:ngm:class:on-chain-price-feed", "label": "On-Chain Price Feed"}
+    {
+      "@id": "urn:ngm:class:defi-price-feed",
+      "label": "DeFi Price Feed"
+    },
+    {
+      "@id": "urn:ngm:class:on-chain-price-feed",
+      "label": "On-Chain Price Feed"
+    }
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:defi-infrastructure", "label": "DeFi Infrastructure"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:defi-infrastructure",
+        "label": "DeFi Infrastructure"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:twap-oracle", "label": "TWAP Oracle"},
-      {"@id": "urn:ngm:class:aggregator-feed", "label": "Aggregator Feed"}
+      {
+        "@id": "urn:ngm:class:twap-oracle",
+        "label": "TWAP Oracle"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:oracle-network", "label": "Oracle Network"},
-      {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"},
-      {"@id": "urn:ngm:class:decentralised-exchange", "label": "Decentralised Exchange"},
-      {"@id": "urn:ngm:class:cryptoeconomic-staking", "label": "Cryptoeconomic Staking"}
+      {
+        "@id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      },
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:staking",
+        "label": "Cryptoeconomic Staking"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:collateralised-lending", "label": "Collateralised Lending"},
-      {"@id": "urn:ngm:class:synthetic-asset", "label": "Synthetic Asset"},
-      {"@id": "urn:ngm:class:perpetual-futures", "label": "Perpetual Futures"},
-      {"@id": "urn:ngm:class:liquidation-mechanism", "label": "Liquidation Mechanism"},
-      {"@id": "urn:ngm:class:real-world-asset-tokenisation", "label": "Real-World Asset Tokenisation"}
+      {
+        "@id": "urn:ngm:class:lending-protocol",
+        "label": "Collateralised Lending"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-asset",
+        "label": "Synthetic Asset"
+      },
+      {
+        "@id": "urn:ngm:class:perpetual-futures",
+        "label": "Perpetual Futures"
+      },
+      {
+        "@id": "urn:ngm:class:liquidation-mechanism",
+        "label": "Liquidation Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real-World Asset Tokenisation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:defi-protocol", "label": "DeFi Protocol"}
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-aggregation", "label": "Data Aggregation"},
-      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"}
+      {
+        "@id": "urn:ngm:class:data-aggregation",
+        "label": "Data Aggregation"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:centralised-exchange-feed", "label": "Centralised Exchange Feed"},
-      {"@id": "urn:ngm:class:spot-price", "label": "Spot Price"}
+      {
+        "@id": "urn:ngm:class:price-discovery",
+        "label": "Spot Price"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:flash-loan", "label": "Flash Loan"},
-      {"@id": "urn:ngm:class:mev-manipulation", "label": "MEV Manipulation"},
-      {"@id": "urn:ngm:class:proof-of-reserve", "label": "Proof of Reserve"}
+      {
+        "@id": "urn:ngm:class:flash-loan",
+        "label": "Flash Loan"
+      },
+      {
+        "@id": "urn:ngm:class:mev",
+        "label": "MEV Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-reserve",
+        "label": "Proof of Reserve"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:financial-data-api", "label": "Financial Data API"},
-      {"@id": "urn:ngm:class:trusted-execution-environment", "label": "Trusted Execution Environment"}
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
     ]
   },
   "qualityScore": 0.74,

@@ -60,10 +60,6 @@
       {
         "id": "urn:ngm:class:precision-medicine",
         "label": "Precision Medicine"
-      },
-      {
-        "id": "urn:ngm:class:value-based-care",
-        "label": "Value-Based Care"
       }
     ],
     "dependsOn": [
@@ -111,16 +107,7 @@
         "label": "Federated Learning"
       }
     ],
-    "supports": [
-      {
-        "id": "urn:ngm:class:public-health-informatics",
-        "label": "Public Health Informatics"
-      },
-      {
-        "id": "urn:ngm:class:health-policy",
-        "label": "Health Policy"
-      }
-    ],
+    "supports": [],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:hl7-fhir",

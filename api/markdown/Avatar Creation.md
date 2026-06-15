@@ -86,30 +86,26 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:3-d-modeling-tools",
+        "@id": "urn:ngm:class:3-d-modeling",
         "label": "3D Modeling Tools"
       },
       {
-        "@id": "urn:ngm:class:ai-generation-systems",
+        "@id": "urn:ngm:class:ai-art-generation",
         "label": "AI Generation Systems"
       },
       {
-        "@id": "urn:ngm:class:customization-interfaces",
+        "@id": "urn:ngm:class:avatar-customization",
         "label": "Customization Interfaces"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:digital-persona-management",
+        "@id": "urn:ngm:class:persona",
         "label": "Digital Persona Management"
       },
       {
-        "@id": "urn:ngm:class:metaverse-participation",
+        "@id": "urn:ngm:class:metaverse",
         "label": "Metaverse Participation"
-      },
-      {
-        "@id": "urn:ngm:class:virtual-self-expression",
-        "label": "Virtual Self-Expression"
       }
     ]
   },

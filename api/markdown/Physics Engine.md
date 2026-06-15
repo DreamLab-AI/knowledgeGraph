@@ -189,10 +189,6 @@ alias:: PhysicsEngine
       {
         "@id": "urn:ngm:class:physical-simulation",
         "label": "Physical Simulation"
-      },
-      {
-        "@id": "urn:ngm:class:realistic-interaction",
-        "label": "Realistic Interaction"
       }
     ],
     "partOf": [

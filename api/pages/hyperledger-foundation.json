@@ -28,10 +28,6 @@
       {
         "id": "urn:ngm:class:hyperledger-aries",
         "label": "Hyperledger Aries"
-      },
-      {
-        "id": "urn:ngm:class:hyperledger-cacti",
-        "label": "Hyperledger Cacti"
       }
     ],
     "requires": [],
@@ -140,10 +136,6 @@
       {
         "id": "urn:ngm:class:open-source-software",
         "label": "Open Source Software"
-      },
-      {
-        "id": "urn:ngm:class:open-source-foundation",
-        "label": "Open Source Foundation"
       }
     ]
   },

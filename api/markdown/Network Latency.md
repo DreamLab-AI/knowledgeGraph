@@ -76,55 +76,123 @@ alias:: NetworkLatency
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:propagation-delay", "label": "Propagation Delay"},
-      {"@id": "urn:ngm:class:transmission-delay", "label": "Transmission Delay"},
-      {"@id": "urn:ngm:class:queuing-delay", "label": "Queuing Delay"},
-      {"@id": "urn:ngm:class:processing-delay", "label": "Processing Delay"}
+      {
+        "@id": "urn:ngm:class:propagation-delay",
+        "label": "Propagation Delay"
+      },
+      {
+        "@id": "urn:ngm:class:transmission-delay",
+        "label": "Transmission Delay"
+      },
+      {
+        "@id": "urn:ngm:class:processing-delay",
+        "label": "Processing Delay"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:network-performance", "label": "Network Performance"},
-      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality Of Service"}
+      {
+        "@id": "urn:ngm:class:network-performance-metrics",
+        "label": "Network Performance"
+      },
+      {
+        "@id": "urn:ngm:class:quality-of-service",
+        "label": "Quality Of Service"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:latency-management-protocol", "label": "Latency Management Protocol"},
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"}
+      {
+        "@id": "urn:ngm:class:latency-management-protocol",
+        "label": "Latency Management Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:real-time-communication", "label": "Real-Time Communication"},
-      {"@id": "urn:ngm:class:distributed-coordination", "label": "Distributed Coordination"}
+      {
+        "@id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:physical-distance", "label": "Physical Distance"},
-      {"@id": "urn:ngm:class:network-topology", "label": "Network Topology"},
-      {"@id": "urn:ngm:class:bandwidth", "label": "Bandwidth"}
+      {
+        "@id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      },
+      {
+        "@id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:round-trip-time", "label": "Round-Trip Time"},
-      {"@id": "urn:ngm:class:ping", "label": "Ping"}
+      {
+        "@id": "urn:ngm:class:round-trip-time",
+        "label": "Round-Trip Time"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:block-propagation-time", "label": "Block Propagation Time"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {
+        "@id": "urn:ngm:class:block-propagation-time",
+        "label": "Block Propagation Time"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:latency", "label": "Latency"},
-      {"@id": "urn:ngm:class:throughput", "label": "Throughput"}
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
-      {"@id": "urn:ngm:class:spatial-computing-rendering", "label": "Spatial Computing Rendering"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-network", "label": "Blockchain Network"},
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
-      {"@id": "urn:ngm:class:gossip-protocol", "label": "Gossip Protocol"},
-      {"@id": "urn:ngm:class:sub-millisecond-latency", "label": "Sub-Millisecond Latency"}
+      {
+        "@id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:sub-millisecond-latency",
+        "label": "Sub-Millisecond Latency"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:network-delay", "label": "Network Delay"},
-    {"@id": "urn:ngm:class:end-to-end-delay", "label": "End-to-End Delay"}
+    {
+      "@id": "urn:ngm:class:network-delay",
+      "label": "Network Delay"
+    },
+    {
+      "@id": "urn:ngm:class:end-to-end-delay",
+      "label": "End-to-End Delay"
+    }
   ],
   "quality": 0.75,
   "provenance": {

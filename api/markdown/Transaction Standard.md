@@ -148,7 +148,7 @@ public:: true
         "label": "Message Format"
       },
       {
-        "@id": "urn:ngm:class:settlement-protocol",
+        "@id": "urn:ngm:class:settlement",
         "label": "Settlement Protocol"
       },
       {
@@ -178,18 +178,6 @@ public:: true
       {
         "@id": "urn:ngm:class:atomic-swap",
         "label": "Atomic Swap"
-      },
-      {
-        "@id": "urn:ngm:class:economic-interoperability",
-        "label": "Economic Interoperability"
-      },
-      {
-        "@id": "urn:ngm:class:secure-asset-transfer",
-        "label": "Secure Asset Transfer"
-      },
-      {
-        "@id": "urn:ngm:class:transaction-auditability",
-        "label": "Transaction Auditability"
       },
       {
         "@id": "urn:ngm:class:multi-party-transactions",

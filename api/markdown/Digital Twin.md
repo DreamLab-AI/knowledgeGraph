@@ -149,7 +149,7 @@ alias:: Digital Twins, Digital-Twin, DigitalTwin
         "label": "Control Interface"
       },
       {
-        "@id": "urn:ngm:class:io-t-sensor-data",
+        "@id": "urn:ngm:class:sensor-data",
         "label": "IoT Sensor Data"
       },
       {
@@ -171,10 +171,6 @@ alias:: Digital Twins, Digital-Twin, DigitalTwin
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:3-d-visualisation",
-        "label": "3D Visualisation"
-      },
-      {
         "@id": "urn:ngm:class:data-aggregation",
         "label": "Data Aggregation"
       },
@@ -191,14 +187,6 @@ alias:: Digital Twins, Digital-Twin, DigitalTwin
       {
         "@id": "urn:ngm:class:collaborative-systems-modality-design",
         "label": "Collaborative Design"
-      },
-      {
-        "@id": "urn:ngm:class:process-optimisation",
-        "label": "Process Optimisation"
-      },
-      {
-        "@id": "urn:ngm:class:remote-monitoring",
-        "label": "Remote Monitoring"
       },
       {
         "@id": "urn:ngm:class:predictive-maintenance",

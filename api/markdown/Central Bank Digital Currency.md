@@ -101,7 +101,7 @@ alias:: CBDC, CentralBankDigitalCurrency
         "label": "Distributed Ledger Technology"
       },
       {
-        "@id": "urn:ngm:class:aml-cft-compliance",
+        "@id": "urn:ngm:class:kyc-aml-compliance",
         "label": "AML/CFT Compliance"
       }
     ],
@@ -169,14 +169,6 @@ alias:: CBDC, CentralBankDigitalCurrency
       {
         "@id": "urn:ngm:class:financial-stability",
         "label": "Financial Stability"
-      },
-      {
-        "@id": "urn:ngm:class:payment-system-resilience",
-        "label": "Payment System Resilience"
-      },
-      {
-        "@id": "urn:ngm:class:government-benefit-distribution",
-        "label": "Government Benefit Distribution"
       }
     ],
     "standardizedBy": [

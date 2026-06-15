@@ -59,7 +59,7 @@ public:: true
   "relations": {
     "implements": [
       {
-        "@id": "urn:ngm:class:bolt-protocol",
+        "@id": "urn:ngm:class:bolt-specifications",
         "label": "BOLT Protocol"
       },
       {
@@ -79,20 +79,12 @@ public:: true
       {
         "@id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin"
-      },
-      {
-        "@id": "urn:ngm:class:bitcoind",
-        "label": "Bitcoin Core"
       }
     ],
     "uses": [
       {
         "@id": "urn:ngm:class:grpc",
         "label": "gRPC"
-      },
-      {
-        "@id": "urn:ngm:class:macaroon-authentication",
-        "label": "Macaroon Authentication"
       },
       {
         "@id": "urn:ngm:class:onion-routing",
@@ -115,24 +107,12 @@ public:: true
       {
         "@id": "urn:ngm:class:streaming-payments",
         "label": "Streaming Payments"
-      },
-      {
-        "@id": "urn:ngm:class:keysend",
-        "label": "Keysend"
       }
     ],
     "hasPart": [
       {
         "@id": "urn:ngm:class:watchtower",
         "label": "Watchtower"
-      },
-      {
-        "@id": "urn:ngm:class:channel-graph",
-        "label": "Channel Graph"
-      },
-      {
-        "@id": "urn:ngm:class:lncli",
-        "label": "lncli"
       }
     ],
     "contrastsWith": [
@@ -153,10 +133,6 @@ public:: true
       {
         "@id": "urn:ngm:class:loop",
         "label": "Lightning Loop"
-      },
-      {
-        "@id": "urn:ngm:class:pool",
-        "label": "Lightning Pool"
       }
     ],
     "bridgesTo": [

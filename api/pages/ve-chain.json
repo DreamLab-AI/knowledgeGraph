@@ -16,16 +16,7 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:vethor-token",
-        "label": "VeThor Token"
-      },
-      {
-        "id": "urn:ngm:class:vechain-thor",
-        "label": "VeChainThor"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:proof-of-authority",
@@ -99,10 +90,6 @@
       }
     ],
     "uses": [
-      {
-        "id": "urn:ngm:class:dual-token-model",
-        "label": "Dual Token Model"
-      },
       {
         "id": "urn:ngm:class:internet-of-things",
         "label": "Internet of Things"

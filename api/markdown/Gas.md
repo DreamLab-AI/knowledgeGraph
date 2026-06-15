@@ -75,57 +75,125 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:gas-limit", "label": "Gas Limit"},
-      {"@id": "urn:ngm:class:gas-price", "label": "Gas Price"},
-      {"@id": "urn:ngm:class:gas-fee-market", "label": "Gas Fee Market"},
-      {"@id": "urn:ngm:class:base-fee", "label": "Base Fee"},
-      {"@id": "urn:ngm:class:priority-fee", "label": "Priority Fee"}
+      {
+        "@id": "urn:ngm:class:gas-limit",
+        "label": "Gas Limit"
+      },
+      {
+        "@id": "urn:ngm:class:gas-price",
+        "label": "Gas Price"
+      },
+      {
+        "@id": "urn:ngm:class:gas-fee-market",
+        "label": "Gas Fee Market"
+      },
+      {
+        "@id": "urn:ngm:class:base-fee",
+        "label": "Base Fee"
+      },
+      {
+        "@id": "urn:ngm:class:priority-fee",
+        "label": "Priority Fee"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:ethereum-virtual-machine", "label": "Ethereum Virtual Machine"},
-      {"@id": "urn:ngm:class:blockchain-consensus-protocol", "label": "Blockchain Consensus Protocol"}
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-consensus",
+        "label": "Blockchain Consensus Protocol"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:ethereum-account", "label": "Ethereum Account"},
-      {"@id": "urn:ngm:class:ether", "label": "Ether"}
+      {
+        "@id": "urn:ngm:class:ethereum-account",
+        "label": "Ethereum Account"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:smart-contract-execution", "label": "Smart Contract Execution"},
-      {"@id": "urn:ngm:class:denial-of-service-prevention", "label": "Denial of Service Prevention"},
-      {"@id": "urn:ngm:class:block-space-market", "label": "Block Space Market"}
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"}
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:eip-1559", "label": "EIP-1559"},
-      {"@id": "urn:ngm:class:yellow-paper-specification", "label": "Yellow Paper Specification"}
+      {
+        "@id": "urn:ngm:class:eip-1559",
+        "label": "EIP-1559"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:opcode", "label": "Opcode"},
-      {"@id": "urn:ngm:class:mempool", "label": "Mempool"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:opcode",
+        "label": "Opcode"
+      },
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:utxo-model", "label": "UTXO Model"},
-      {"@id": "urn:ngm:class:feeless-blockchain", "label": "Feeless Blockchain"}
+      {
+        "@id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      },
+      {
+        "@id": "urn:ngm:class:feeless-blockchain",
+        "label": "Feeless Blockchain"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:microeconomics", "label": "Microeconomics"},
-      {"@id": "urn:ngm:class:resource-allocation", "label": "Resource Allocation"}
+      {
+        "@id": "urn:ngm:class:microeconomics",
+        "label": "Microeconomics"
+      },
+      {
+        "@id": "urn:ngm:class:resource-allocation",
+        "label": "Resource Allocation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"},
-      {"@id": "urn:ngm:class:fee-market", "label": "Fee Market"},
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"}
+      {
+        "@id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      },
+      {
+        "@id": "urn:ngm:class:fee-market",
+        "label": "Fee Market"
+      },
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:transaction-execution-cost", "label": "Transaction Execution Cost"},
-    {"@id": "urn:ngm:class:evm-gas", "label": "EVM Gas"}
+    {
+      "@id": "urn:ngm:class:transaction-execution-cost",
+      "label": "Transaction Execution Cost"
+    },
+    {
+      "@id": "urn:ngm:class:evm-gas",
+      "label": "EVM Gas"
+    }
   ],
-  "quality": 0.80,
+  "quality": 0.8,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",

@@ -82,10 +82,6 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:medical-platform-categorization",
-        "label": "Medical Platform Categorization"
-      },
-      {
         "@id": "urn:ngm:class:healthcare-application-classification",
         "label": "Healthcare Application Classification"
       }

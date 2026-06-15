@@ -55,50 +55,107 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:neural-vocoder", "label": "Neural Vocoder"},
-      {"@id": "urn:ngm:class:acoustic-model", "label": "Acoustic Model"},
-      {"@id": "urn:ngm:class:prosody-model", "label": "Prosody Model"}
+      {
+        "@id": "urn:ngm:class:neural-vocoder",
+        "label": "Neural Vocoder"
+      },
+      {
+        "@id": "urn:ngm:class:acoustic-model",
+        "label": "Acoustic Model"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:speech-technology", "label": "Speech Technology"},
-      {"@id": "urn:ngm:class:voice-assistant", "label": "Voice Assistant"}
-    ],
-    "requires": [
-      {"@id": "urn:ngm:class:text-normalization", "label": "Text Normalization"},
-      {"@id": "urn:ngm:class:phoneme-conversion", "label": "Phoneme Conversion"}
+      {
+        "@id": "urn:ngm:class:speech-processing",
+        "label": "Speech Technology"
+      },
+      {
+        "@id": "urn:ngm:class:voice-assistant",
+        "label": "Voice Assistant"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:voice-interaction", "label": "Voice Interaction"},
-      {"@id": "urn:ngm:class:real-time-language-translation", "label": "Real-Time Language Translation"},
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"},
-      {"@id": "urn:ngm:class:audio-content-generation", "label": "Audio Content Generation"}
+      {
+        "@id": "urn:ngm:class:voice-interaction",
+        "label": "Voice Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-language-translation",
+        "label": "Real-Time Language Translation"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:content-generation",
+        "label": "Audio Content Generation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"}
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:speech-synthesis", "label": "SpeechSynthesis"}
+      {
+        "@id": "urn:ngm:class:speech-synthesis",
+        "label": "SpeechSynthesis"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"}
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:voice-cloning", "label": "Voice Cloning"},
-      {"@id": "urn:ngm:class:natural-language-understanding", "label": "Natural Language Understanding"},
-      {"@id": "urn:ngm:class:dialogue-system", "label": "Dialogue System"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:multilingual-model", "label": "Multilingual Model"}
+      {
+        "@id": "urn:ngm:class:voice-cloning",
+        "label": "Voice Cloning"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:dialogue-system",
+        "label": "Dialogue System"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:speech-synthesis", "label": "SpeechSynthesis"},
-    {"@id": "urn:ngm:class:tts", "label": "TTS"}
+    {
+      "@id": "urn:ngm:class:speech-synthesis",
+      "label": "SpeechSynthesis"
+    },
+    {
+      "@id": "urn:ngm:class:tts",
+      "label": "TTS"
+    }
   ],
   "quality": 0.72,
   "provenance": {

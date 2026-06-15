@@ -614,10 +614,6 @@ public:: true
         "label": "Chaincode"
       },
       {
-        "@id": "urn:ngm:class:contract-state",
-        "label": "Contract State"
-      },
-      {
         "@id": "urn:ngm:class:cor-dapp",
         "label": "CorDapp"
       },
@@ -642,7 +638,7 @@ public:: true
         "label": "Ricardian Contract Template"
       },
       {
-        "@id": "urn:ngm:class:solidity-contract",
+        "@id": "urn:ngm:class:solidity",
         "label": "Solidity Contract"
       }
     ],
@@ -716,24 +712,20 @@ public:: true
         "label": "Accord Project Cicero"
       },
       {
-        "@id": "urn:ngm:class:erc-1400-security-token",
+        "@id": "urn:ngm:class:erc-1400",
         "label": "ERC-1400 Security Token"
       },
       {
-        "@id": "urn:ngm:class:erc-3475-abstract-bond",
+        "@id": "urn:ngm:class:erc-3475",
         "label": "ERC-3475 Abstract Bond"
       },
       {
-        "@id": "urn:ngm:class:erc-3643-t-rex",
+        "@id": "urn:ngm:class:erc-3643",
         "label": "ERC-3643 T-REX"
       },
       {
-        "@id": "urn:ngm:class:finos-common-domain-model",
-        "label": "FINOS Common Domain Model"
-      },
-      {
         "@id": "urn:ngm:class:isda-common-domain-model",
-        "label": "ISDA Common Domain Model"
+        "label": "FINOS Common Domain Model"
       },
       {
         "@id": "urn:ngm:class:ricardian-contracts",
@@ -774,11 +766,11 @@ public:: true
         "label": "Node.js"
       },
       {
-        "@id": "urn:ngm:class:open-zeppelin-proxy-pattern",
+        "@id": "urn:ngm:class:open-zeppelin-contracts",
         "label": "OpenZeppelin Proxy Pattern"
       },
       {
-        "@id": "urn:ngm:class:orion",
+        "@id": "urn:ngm:class:hsbc-orion",
         "label": "Orion"
       },
       {
@@ -804,7 +796,7 @@ public:: true
         "label": "Contour"
       },
       {
-        "@id": "urn:ngm:class:dtcc-digital-securities-initiative",
+        "@id": "urn:ngm:class:dtcc",
         "label": "DTCC Digital Securities Initiative"
       },
       {
@@ -896,16 +888,12 @@ public:: true
         "label": "ERC-3643"
       },
       {
-        "@id": "urn:ngm:class:finos-cdm",
+        "@id": "urn:ngm:class:isda-cdm",
         "label": "FINOS CDM"
       },
       {
         "@id": "urn:ngm:class:hyperledger-foundation",
         "label": "Hyperledger Foundation"
-      },
-      {
-        "@id": "urn:ngm:class:isda-cdm",
-        "label": "ISDA CDM"
       },
       {
         "@id": "urn:ngm:class:iso-tc-307",

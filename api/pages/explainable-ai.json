@@ -110,16 +110,7 @@
         "label": "AI Safety"
       }
     ],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:ieee-p2976",
-        "label": "IEEE P2976 (XAI)"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec-12792",
-        "label": "ISO/IEC 12792"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [
       {
         "id": "urn:ngm:class:responsible-ai",
@@ -134,10 +125,6 @@
       {
         "id": "urn:ngm:class:interpretable-ai",
         "label": "Interpretable AI"
-      },
-      {
-        "id": "urn:ngm:class:xai-methods",
-        "label": "XAI Methods"
       }
     ]
   },

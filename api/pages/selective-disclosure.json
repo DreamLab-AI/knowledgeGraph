@@ -27,7 +27,7 @@
         "label": "Verifiable Credentials"
       },
       {
-        "id": "urn:ngm:class:cryptographic-commitment-scheme",
+        "id": "urn:ngm:class:commitment-scheme",
         "label": "Cryptographic Commitment Scheme"
       }
     ],
@@ -52,7 +52,7 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:bbs-plus-signatures",
+        "id": "urn:ngm:class:bbs-signatures",
         "label": "BBS+ Signatures"
       },
       {
@@ -65,10 +65,6 @@
       }
     ],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:full-credential-presentation",
-        "label": "Full Credential Presentation"
-      },
       {
         "id": "urn:ngm:class:bearer-token",
         "label": "Bearer Token"
@@ -104,7 +100,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:eidas-2",
+        "id": "urn:ngm:class:e-idas-2-0",
         "label": "eIDAS 2.0"
       },
       {
@@ -118,15 +114,15 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:w3c-verifiable-credentials-data-model",
+        "id": "urn:ngm:class:w-3-c-verifiable-credentials-data-model",
         "label": "W3C Verifiable Credentials Data Model"
       },
       {
-        "id": "urn:ngm:class:ietf-sd-jwt",
+        "id": "urn:ngm:class:sd-jwt",
         "label": "IETF SD-JWT"
       },
       {
-        "id": "urn:ngm:class:decentralised-identity-foundation",
+        "id": "urn:ngm:class:decentralized-identity-foundation",
         "label": "Decentralised Identity Foundation"
       }
     ],

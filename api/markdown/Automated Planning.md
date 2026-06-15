@@ -70,10 +70,6 @@ public:: true
       {
         "@id": "urn:ngm:class:pddl",
         "label": "PDDL"
-      },
-      {
-        "@id": "urn:ngm:class:plan-space-search",
-        "label": "Plan Space Search"
       }
     ],
     "partOf": [
@@ -124,17 +120,9 @@ public:: true
       {
         "@id": "urn:ngm:class:strips",
         "label": "STRIPS"
-      },
-      {
-        "@id": "urn:ngm:class:graphplan",
-        "label": "GraphPlan"
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:sat-solver",
-        "label": "SAT Solver"
-      },
       {
         "@id": "urn:ngm:class:constraint-satisfaction",
         "label": "Constraint Satisfaction"
@@ -172,7 +160,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:scheduling",
+        "@id": "urn:ngm:class:planning-and-scheduling",
         "label": "Scheduling"
       },
       {

@@ -48,46 +48,108 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:html", "label": "HTML"},
-      {"@id": "urn:ngm:class:css", "label": "CSS"},
-      {"@id": "urn:ngm:class:javascript", "label": "JavaScript"},
-      {"@id": "urn:ngm:class:web-api", "label": "Web API"},
-      {"@id": "urn:ngm:class:http", "label": "HTTP"}
+      {
+        "@id": "urn:ngm:class:html",
+        "label": "HTML"
+      },
+      {
+        "@id": "urn:ngm:class:css",
+        "label": "CSS"
+      },
+      {
+        "@id": "urn:ngm:class:javascript",
+        "label": "JavaScript"
+      },
+      {
+        "@id": "urn:ngm:class:web-api",
+        "label": "Web API"
+      },
+      {
+        "@id": "urn:ngm:class:http",
+        "label": "HTTP"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:w3c", "label": "W3C"},
-      {"@id": "urn:ngm:class:whatwg", "label": "WHATWG"},
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"},
-      {"@id": "urn:ngm:class:ecma-international", "label": "ECMA International"}
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "@id": "urn:ngm:class:whatwg",
+        "label": "WHATWG"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:ecma-international",
+        "label": "ECMA International"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:web-interoperability", "label": "Web Interoperability"},
-      {"@id": "urn:ngm:class:open-web-platform", "label": "Open Web Platform"},
-      {"@id": "urn:ngm:class:progressive-web-app", "label": "Progressive Web App"},
-      {"@id": "urn:ngm:class:webxr", "label": "WebXR"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Web Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:progressive-web-app",
+        "label": "Progressive Web App"
+      },
+      {
+        "@id": "urn:ngm:class:webxr",
+        "label": "WebXR"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:browser-engine", "label": "Browser Engine"},
-      {"@id": "urn:ngm:class:vendor-implementation", "label": "Vendor Implementation"}
+      {
+        "@id": "urn:ngm:class:browser-engine",
+        "label": "Browser Engine"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"},
-      {"@id": "urn:ngm:class:web-security", "label": "Web Security"},
-      {"@id": "urn:ngm:class:privacy", "label": "Privacy"}
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "@id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proprietary-technology", "label": "Proprietary Technology"},
-      {"@id": "urn:ngm:class:vendor-lock-in", "label": "Vendor Lock-in"}
+      {
+        "@id": "urn:ngm:class:vendor-lock-in",
+        "label": "Vendor Lock-in"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:open-source", "label": "Open Source"},
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:web-platform", "label": "Web Platform"}
+      {
+        "@id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:web-platform",
+        "label": "Web Platform"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:webgpu", "label": "WebGPU"},
-      {"@id": "urn:ngm:class:webgl", "label": "WebGL"},
-      {"@id": "urn:ngm:class:webassembly", "label": "WebAssembly"}
+      {
+        "@id": "urn:ngm:class:webgpu",
+        "label": "WebGPU"
+      },
+      {
+        "@id": "urn:ngm:class:webgl",
+        "label": "WebGL"
+      },
+      {
+        "@id": "urn:ngm:class:webassembly",
+        "label": "WebAssembly"
+      }
     ]
   },
   "sameAs": [

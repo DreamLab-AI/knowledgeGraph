@@ -24,58 +24,118 @@ public:: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"}
+    {
+      "@id": "urn:ngm:class:microservices-architecture",
+      "label": "Microservices Architecture"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:data-plane", "label": "Data Plane"},
-      {"@id": "urn:ngm:class:control-plane", "label": "Control Plane"},
-      {"@id": "urn:ngm:class:sidecar-proxy", "label": "Sidecar Proxy"}
+      {
+        "@id": "urn:ngm:class:control-plane",
+        "label": "Control Plane"
+      },
+      {
+        "@id": "urn:ngm:class:sidecar-proxy",
+        "label": "Sidecar Proxy"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:cloud-native-computing", "label": "Cloud Native Computing"}
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native Computing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:service-discovery", "label": "Service Discovery"},
-      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"},
-      {"@id": "urn:ngm:class:container-orchestration", "label": "Container Orchestration"}
+      {
+        "@id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:observability", "label": "Observability"},
-      {"@id": "urn:ngm:class:zero-trust-security", "label": "Zero Trust Security"},
-      {"@id": "urn:ngm:class:canary-deployment", "label": "Canary Deployment"},
-      {"@id": "urn:ngm:class:circuit-breaking", "label": "Circuit Breaking"}
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Security"
+      },
+      {
+        "@id": "urn:ngm:class:canary-deployment",
+        "label": "Canary Deployment"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"},
-      {"@id": "urn:ngm:class:load-balancing", "label": "Load Balancing"},
-      {"@id": "urn:ngm:class:mutual-tls", "label": "Mutual TLS"},
-      {"@id": "urn:ngm:class:envoy-proxy", "label": "Envoy Proxy"},
-      {"@id": "urn:ngm:class:ebpf", "label": "eBPF"}
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      },
+      {
+        "@id": "urn:ngm:class:mutual-tls",
+        "label": "Mutual TLS"
+      },
+      {
+        "@id": "urn:ngm:class:envoy-proxy",
+        "label": "Envoy Proxy"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:xds-api", "label": "xDS API"},
-      {"@id": "urn:ngm:class:distributed-tracing", "label": "Distributed Tracing"}
+      {
+        "@id": "urn:ngm:class:distributed-tracing",
+        "label": "Distributed Tracing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:multi-cluster-federation", "label": "Multi-Cluster Federation"},
-      {"@id": "urn:ngm:class:traffic-management", "label": "Traffic Management"}
+      {
+        "@id": "urn:ngm:class:traffic-management",
+        "label": "Traffic Management"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"}
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:zero-trust-network-access", "label": "Zero Trust Network Access"},
-      {"@id": "urn:ngm:class:webassembly", "label": "WebAssembly"}
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Network Access"
+      },
+      {
+        "@id": "urn:ngm:class:webassembly",
+        "label": "WebAssembly"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:microservices", "label": "Microservices"},
-      {"@id": "urn:ngm:class:istio", "label": "Istio"}
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:service-to-service-communication-layer", "label": "Service-to-Service Communication Layer"}
+    {
+      "@id": "urn:ngm:class:service-to-service-communication-layer",
+      "label": "Service-to-Service Communication Layer"
+    }
   ],
   "quality": 0.8,
   "provenance": {

@@ -94,12 +94,6 @@ alias:: TELE-200-robotic-telepresence
         "@id": "urn:ngm:class:autonomous-navigation",
         "label": "Autonomous Navigation"
       }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:remote-office-attendance",
-        "label": "RemoteOfficeAttendance"
-      }
     ]
   },
   "quality": 0.5,

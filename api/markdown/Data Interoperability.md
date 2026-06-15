@@ -57,52 +57,139 @@ public:: true
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:data-standards", "label": "Data Standards"},
-      {"@id": "urn:ngm:class:data-format", "label": "Data Format"},
-      {"@id": "urn:ngm:class:schema-registry", "label": "Schema Registry"},
-      {"@id": "urn:ngm:class:api-contract", "label": "API Contract"}
+      {
+        "@id": "urn:ngm:class:data-standards",
+        "label": "Data Standards"
+      },
+      {
+        "@id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      },
+      {
+        "@id": "urn:ngm:class:schema-registry",
+        "label": "Schema Registry"
+      },
+      {
+        "@id": "urn:ngm:class:api-contract",
+        "label": "API Contract"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:open-data", "label": "Open Data"}
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"},
-      {"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
-      {"@id": "urn:ngm:class:graphql", "label": "GraphQL"}
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:graphql",
+        "label": "GraphQL"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:semantic-interoperability", "label": "Semantic Interoperability"},
-      {"@id": "urn:ngm:class:syntactic-interoperability", "label": "Syntactic Interoperability"},
-      {"@id": "urn:ngm:class:data-integration", "label": "Data Integration"},
-      {"@id": "urn:ngm:class:data-mesh", "label": "Data Mesh"},
-      {"@id": "urn:ngm:class:data-fabric", "label": "Data Fabric"}
+      {
+        "@id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:syntactic-interoperability",
+        "label": "Syntactic Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "@id": "urn:ngm:class:data-mesh",
+        "label": "Data Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:data-fabric",
+        "label": "Data Fabric"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:w3c", "label": "W3C"},
-      {"@id": "urn:ngm:class:iso", "label": "ISO"},
-      {"@id": "urn:ngm:class:oasis", "label": "OASIS"}
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "@id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "@id": "urn:ngm:class:oasis",
+        "label": "OASIS"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:decentralised-identifier", "label": "Decentralised Identifier"},
-      {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:data-silos", "label": "Data Silos"},
-      {"@id": "urn:ngm:class:vendor-lock-in", "label": "Vendor Lock-in"}
+      {
+        "@id": "urn:ngm:class:data-silos",
+        "label": "Data Silos"
+      },
+      {
+        "@id": "urn:ngm:class:vendor-lock-in",
+        "label": "Vendor Lock-in"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:information-interoperability", "label": "Information Interoperability"}
+    {
+      "@id": "urn:ngm:class:information-interoperability",
+      "label": "Information Interoperability"
+    }
   ],
   "quality": 0.72,
   "provenance": {

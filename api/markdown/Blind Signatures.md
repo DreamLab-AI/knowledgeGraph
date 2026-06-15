@@ -24,55 +24,125 @@ alias:: BlindSignatures
   "definition": "Blind Signatures are a cryptographic primitive invented by David Chaum in 1982 that allow a signer to sign a message without being able to see its content, enabling the message author to later unblind the signature and present a valid signature from the signer without the signer being able to link the signing event to the subsequent presentation. The scheme preserves the unlinkability property — the signer cannot correlate a signing request with a later use of that signature — making it foundational for privacy-preserving payment systems and anonymous credential issuance.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptographic-primitive", "label": "Cryptographic Primitive"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:blinding-factor", "label": "Blinding Factor"},
-      {"@id": "urn:ngm:class:unblinding-operation", "label": "Unblinding Operation"}
+      {
+        "@id": "urn:ngm:class:blinding-factor",
+        "label": "Blinding Factor"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"},
-      {"@id": "urn:ngm:class:rsa-cryptosystem", "label": "RSA Cryptosystem"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:rsa-cryptosystem",
+        "label": "RSA Cryptosystem"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ecash", "label": "ecash"},
-      {"@id": "urn:ngm:class:privacy-enhancing-technologies", "label": "Privacy Enhancing Technologies"},
-      {"@id": "urn:ngm:class:anonymous-credential", "label": "Anonymous Credential"},
-      {"@id": "urn:ngm:class:unlinkability", "label": "Unlinkability"},
-      {"@id": "urn:ngm:class:privacy-pass", "label": "Privacy Pass"}
+      {
+        "@id": "urn:ngm:class:ecash",
+        "label": "ecash"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-enhancing-technologies",
+        "label": "Privacy Enhancing Technologies"
+      },
+      {
+        "@id": "urn:ngm:class:anonymous-credential",
+        "label": "Anonymous Credential"
+      },
+      {
+        "@id": "urn:ngm:class:unlinkability",
+        "label": "Unlinkability"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:cryptographic-algorithm", "label": "Cryptographic Algorithm"},
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-algorithm",
+        "label": "Cryptographic Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:unlinkability", "label": "Unlinkability"},
-      {"@id": "urn:ngm:class:signer-privacy", "label": "Signer Privacy"}
+      {
+        "@id": "urn:ngm:class:unlinkability",
+        "label": "Unlinkability"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ietf-rfc", "label": "IETF RFC"},
-      {"@id": "urn:ngm:class:w3c-verifiable-credentials", "label": "W3C Verifiable Credentials"}
+      {
+        "@id": "urn:ngm:class:ietf-rfc",
+        "label": "IETF RFC"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-verifiable-credentials",
+        "label": "W3C Verifiable Credentials"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ring-signature", "label": "Ring Signature"},
-      {"@id": "urn:ngm:class:threshold-signature", "label": "Threshold Signature"}
+      {
+        "@id": "urn:ngm:class:ring-signature",
+        "label": "Ring Signature"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:selective-disclosure", "label": "Selective Disclosure"},
-      {"@id": "urn:ngm:class:oblivious-http", "label": "Oblivious HTTP"},
-      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:finance", "label": "Finance"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:finance",
+        "label": "Finance"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:blind-digital-signature", "label": "Blind Digital Signature"},
-    {"@id": "urn:ngm:class:chaum-blind-signature", "label": "Chaum Blind Signature"}
+    {
+      "@id": "urn:ngm:class:blind-digital-signature",
+      "label": "Blind Digital Signature"
+    },
+    {
+      "@id": "urn:ngm:class:chaum-blind-signature",
+      "label": "Chaum Blind Signature"
+    }
   ],
   "quality": 0.72,
   "provenance": {

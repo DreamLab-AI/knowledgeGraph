@@ -618,7 +618,7 @@ public:: true
         "label": "Structural Risks"
       },
       {
-        "@id": "urn:ngm:class:training-data-poisoning",
+        "@id": "urn:ngm:class:data-poisoning",
         "label": "Training Data Poisoning"
       },
       {
@@ -666,7 +666,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:ai-liability-frameworks",
+        "@id": "urn:ngm:class:ai-liability",
         "label": "AI Liability Frameworks"
       },
       {
@@ -718,7 +718,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:adversarial-robustness-testing",
+        "@id": "urn:ngm:class:adversarial-robustness",
         "label": "Adversarial Robustness Testing"
       },
       {
@@ -806,15 +806,11 @@ public:: true
         "label": "International Coordination"
       },
       {
-        "@id": "urn:ngm:class:liability-adjudication",
-        "label": "Liability Adjudication"
-      },
-      {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-awareness",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier",
         "label": "Public Awareness"
       },
       {
-        "@id": "urn:ngm:class:standards-development",
+        "@id": "urn:ngm:class:standards",
         "label": "Standards Development"
       }
     ],

@@ -70,10 +70,6 @@ public:: true
         "label": "Fiscal Policy"
       },
       {
-        "@id": "urn:ngm:class:business-cycle",
-        "label": "Business Cycle"
-      },
-      {
         "@id": "urn:ngm:class:national-income-accounting",
         "label": "National Income Accounting"
       },
@@ -104,22 +100,8 @@ public:: true
         "label": "Inflation Hedge"
       },
       {
-        "@id": "urn:ngm:class:economic-forecasting",
-        "label": "Economic Forecasting"
-      },
-      {
         "@id": "urn:ngm:class:central-banking",
         "label": "Central Banking"
-      }
-    ],
-    "dependsOn": [
-      {
-        "@id": "urn:ngm:class:aggregate-demand",
-        "label": "Aggregate Demand"
-      },
-      {
-        "@id": "urn:ngm:class:aggregate-supply",
-        "label": "Aggregate Supply"
       }
     ],
     "uses": [
@@ -148,20 +130,12 @@ public:: true
         "label": "Inflation"
       },
       {
-        "@id": "urn:ngm:class:unemployment",
-        "label": "Unemployment"
-      },
-      {
         "@id": "urn:ngm:class:economic-growth",
         "label": "Economic Growth"
       },
       {
         "@id": "urn:ngm:class:exchange-rate",
         "label": "Exchange Rate"
-      },
-      {
-        "@id": "urn:ngm:class:public-debt",
-        "label": "Public Debt"
       },
       {
         "@id": "urn:ngm:class:balance-of-payments",

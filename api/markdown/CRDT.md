@@ -412,44 +412,12 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:causal-history-graph",
-        "label": "Causal History Graph"
-      },
-      {
-        "@id": "urn:ngm:class:causal-ordering",
-        "label": "Causal Ordering"
-      },
-      {
-        "@id": "urn:ngm:class:delta-state",
-        "label": "Delta State"
-      },
-      {
-        "@id": "urn:ngm:class:g-counter",
-        "label": "G-Counter"
-      },
-      {
-        "@id": "urn:ngm:class:g-set",
-        "label": "G-Set"
-      },
-      {
-        "@id": "urn:ngm:class:lww-element-set",
-        "label": "LWW-Element-Set"
-      },
-      {
         "@id": "urn:ngm:class:or-set",
         "label": "OR-Set"
       },
       {
-        "@id": "urn:ngm:class:replicated-growable-array",
-        "label": "Replicated Growable Array"
-      },
-      {
-        "@id": "urn:ngm:class:semilattice-merge-function",
+        "@id": "urn:ngm:class:join-semilattice",
         "label": "Semilattice Merge Function"
-      },
-      {
-        "@id": "urn:ngm:class:tombstone-record",
-        "label": "Tombstone Record"
       },
       {
         "@id": "urn:ngm:class:unique-identifier",
@@ -466,61 +434,29 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:causal-broadcast-protocol",
-        "label": "Causal Broadcast Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:causal-delivery",
-        "label": "Causal Delivery"
-      },
-      {
         "@id": "urn:ngm:class:eventual-consistency",
         "label": "Eventual Consistency"
       },
       {
-        "@id": "urn:ngm:class:idempotent-merge",
-        "label": "Idempotent Merge"
-      },
-      {
-        "@id": "urn:ngm:class:monotone-operations",
-        "label": "Monotone Operations"
-      },
-      {
-        "@id": "urn:ngm:class:semilattice-ordering",
+        "@id": "urn:ngm:class:join-semilattice",
         "label": "Semilattice Ordering"
-      },
-      {
-        "@id": "urn:ngm:class:unique-replica-identifiers",
-        "label": "Unique Replica Identifiers"
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:coordination-free-computing",
-        "label": "Coordination-free Computing"
-      },
       {
         "@id": "urn:ngm:class:local-first-software",
         "label": "Local-First Software"
       },
       {
-        "@id": "urn:ngm:class:multi-datacenter-replication",
+        "@id": "urn:ngm:class:replication",
         "label": "Multi-datacenter Replication"
       },
       {
-        "@id": "urn:ngm:class:offline-first-collaboration",
-        "label": "Offline-first Collaboration"
-      },
-      {
-        "@id": "urn:ngm:class:optimistic-replication",
-        "label": "Optimistic Replication"
-      },
-      {
-        "@id": "urn:ngm:class:partition-tolerant-databases",
+        "@id": "urn:ngm:class:distributed-databases",
         "label": "Partition-tolerant Databases"
       },
       {
-        "@id": "urn:ngm:class:peer-to-peer-synchronisation",
+        "@id": "urn:ngm:class:synchronisation",
         "label": "Peer-to-peer Synchronisation"
       },
       {
@@ -530,19 +466,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:associativity",
-        "label": "Associativity"
-      },
-      {
-        "@id": "urn:ngm:class:causal-broadcast",
-        "label": "Causal Broadcast"
-      },
-      {
-        "@id": "urn:ngm:class:commutativity",
-        "label": "Commutativity"
-      },
-      {
-        "@id": "urn:ngm:class:delta-synchronisation",
+        "@id": "urn:ngm:class:synchronisation",
         "label": "Delta Synchronisation"
       },
       {
@@ -554,21 +478,13 @@ public:: true
         "label": "Join-Semilattice"
       },
       {
-        "@id": "urn:ngm:class:state-lattice-merge",
-        "label": "State Lattice Merge"
-      },
-      {
-        "@id": "urn:ngm:class:strong-eventual-consistency",
+        "@id": "urn:ngm:class:eventual-consistency",
         "label": "Strong Eventual Consistency"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:causal-history",
-        "label": "Causal History"
-      },
-      {
-        "@id": "urn:ngm:class:hybrid-logical-clocks",
+        "@id": "urn:ngm:class:vector-clocks",
         "label": "Hybrid Logical Clocks"
       },
       {
@@ -576,20 +492,8 @@ public:: true
         "label": "Join-Semilattice"
       },
       {
-        "@id": "urn:ngm:class:logical-clocks",
-        "label": "Logical Clocks"
-      },
-      {
         "@id": "urn:ngm:class:merkle-dag",
         "label": "Merkle DAG"
-      },
-      {
-        "@id": "urn:ngm:class:unique-identifiers-per-replica",
-        "label": "Unique Identifiers per Replica"
-      },
-      {
-        "@id": "urn:ngm:class:version-vectors",
-        "label": "Version Vectors"
       }
     ],
     "relatedTo": [
@@ -628,7 +532,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:collaborative-systems-modality-ides",
+        "@id": "urn:ngm:class:collaborative-systems-modality",
         "label": "Collaborative IDEs"
       },
       {
@@ -636,19 +540,15 @@ public:: true
         "label": "Distributed Databases"
       },
       {
-        "@id": "urn:ngm:class:io-t-synchronisation",
+        "@id": "urn:ngm:class:synchronisation",
         "label": "IoT Synchronisation"
       },
       {
-        "@id": "urn:ngm:class:mobile-sync",
-        "label": "Mobile Sync"
-      },
-      {
-        "@id": "urn:ngm:class:multiplayer-collaboration-tools",
+        "@id": "urn:ngm:class:collaboration-tools",
         "label": "Multiplayer Collaboration Tools"
       },
       {
-        "@id": "urn:ngm:class:offline-first-architecture",
+        "@id": "urn:ngm:class:local-first-software",
         "label": "Offline-first Architecture"
       },
       {
@@ -658,20 +558,6 @@ public:: true
       {
         "@id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
-      }
-    ],
-    "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:inria-technical-report-rr-7506",
-        "label": "INRIA Technical Report RR-7506"
-      },
-      {
-        "@id": "urn:ngm:class:shapiro-et-al-2011-so-cc",
-        "label": "Shapiro et al. 2011 SoCC"
-      },
-      {
-        "@id": "urn:ngm:class:sync-free-eu-project-fp7-ict-2011-7-609551",
-        "label": "SyncFree EU Project FP7-ICT-2011-7 609551"
       }
     ]
   },

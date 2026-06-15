@@ -28,7 +28,7 @@
         "label": "Carbon Neutrality Verification"
       },
       {
-        "id": "urn:ngm:class:decarbonisation-strategy",
+        "id": "urn:ngm:class:decarbonisation",
         "label": "Decarbonisation Strategy"
       },
       {
@@ -50,16 +50,8 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:data-centre-energy-efficiency",
-        "label": "Data Centre Energy Efficiency"
-      },
-      {
         "id": "urn:ngm:class:24-7-carbon-free-energy",
         "label": "24/7 Carbon-Free Energy"
-      },
-      {
-        "id": "urn:ngm:class:ai-sustainability",
-        "label": "AI Sustainability"
       }
     ],
     "uses": [],
@@ -93,10 +85,6 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:ghg-emissions-inventory",
-        "label": "GHG Emissions Inventory"
-      },
-      {
         "id": "urn:ngm:class:corporate-sustainability-reporting-directive",
         "label": "Corporate Sustainability Reporting Directive"
       }
@@ -119,15 +107,11 @@
         "label": "ESG Reporting"
       },
       {
-        "id": "urn:ngm:class:carbon-emission-factor",
-        "label": "Carbon Emission Factor"
-      },
-      {
         "id": "urn:ngm:class:grid-electricity",
         "label": "Grid Electricity"
       },
       {
-        "id": "urn:ngm:class:corporate-carbon-footprint",
+        "id": "urn:ngm:class:carbon-footprint",
         "label": "Corporate Carbon Footprint"
       }
     ]

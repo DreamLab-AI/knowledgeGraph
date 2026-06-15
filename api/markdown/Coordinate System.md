@@ -50,60 +50,116 @@ public:: true
   "domain": "spatial-computing",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:sc-display-and-rendering", "label": "Display and Rendering"}
+    {
+      "@id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:reference-frame", "label": "Reference Frame"},
-      {"@id": "urn:ngm:class:basis-vector", "label": "Basis Vector"},
-      {"@id": "urn:ngm:class:origin", "label": "Origin"}
+      {
+        "@id": "urn:ngm:class:reference-frames",
+        "label": "Reference Frame"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:spatial-mapping", "label": "Spatial Mapping"},
-      {"@id": "urn:ngm:class:homogeneous-transformation", "label": "Homogeneous Transformation"}
+      {
+        "@id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:homogeneous-transformation",
+        "label": "Homogeneous Transformation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"},
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:spatial-anchor", "label": "Spatial Anchor"},
-      {"@id": "urn:ngm:class:3d-rendering", "label": "3D Rendering"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-anchor",
+        "label": "Spatial Anchor"
+      },
+      {
+        "@id": "urn:ngm:class:3d-rendering",
+        "label": "3D Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:linear-algebra", "label": "Linear Algebra"},
-      {"@id": "urn:ngm:class:rotation-representation", "label": "Rotation Representation"}
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:quaternion", "label": "Quaternion"},
-      {"@id": "urn:ngm:class:transformation-matrix", "label": "Transformation Matrix"}
+      {
+        "@id": "urn:ngm:class:quaternion-math",
+        "label": "Quaternion"
+      },
+      {
+        "@id": "urn:ngm:class:coordinate-transformation",
+        "label": "Transformation Matrix"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:scene-graph", "label": "Scene Graph"},
-      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"},
-      {"@id": "urn:ngm:class:geographic-information-system", "label": "Geographic Information System"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "@id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:geographic-information-system",
+        "label": "Geographic Information System"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:openxr", "label": "OpenXR"},
-      {"@id": "urn:ngm:class:iso-19111", "label": "ISO 19111"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:polar-coordinate-system", "label": "Polar Coordinate System"},
-      {"@id": "urn:ngm:class:curvilinear-coordinate-system", "label": "Curvilinear Coordinate System"}
+      {
+        "@id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:world-model", "label": "World Model"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:world-model",
+        "label": "World Model"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:mathematical-framework", "label": "Mathematical Framework"},
-      {"@id": "urn:ngm:class:projection-model", "label": "Projection Model"},
-      {"@id": "urn:ngm:class:euclidean-geometry", "label": "Euclidean Geometry"}
+      {
+        "@id": "urn:ngm:class:euclidean-geometry",
+        "label": "Euclidean Geometry"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:reference-frame", "label": "Reference Frame"},
-    {"@id": "urn:ngm:class:frame-of-reference", "label": "Frame of Reference"}
+    {
+      "@id": "urn:ngm:class:reference-frame",
+      "label": "Reference Frame"
+    },
+    {
+      "@id": "urn:ngm:class:frame-of-reference",
+      "label": "Frame of Reference"
+    }
   ],
   "quality": 0.74,
   "provenance": {

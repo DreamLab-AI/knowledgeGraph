@@ -166,12 +166,6 @@ public:: true
         "@id": "urn:ngm:class:institutional-finance",
         "label": "Institutional Finance"
       }
-    ],
-    "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:tezos-improvement-proposal",
-        "label": "Tezos Improvement Proposal"
-      }
     ]
   },
   "sameAs": [

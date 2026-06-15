@@ -65,7 +65,7 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:ar-reference-architecture",
+        "@id": "urn:ngm:class:reference-architecture",
         "label": "AR Reference Architecture"
       },
       {
@@ -83,7 +83,7 @@ public:: true
         "label": "Coordinate System"
       },
       {
-        "@id": "urn:ngm:class:scene-description",
+        "@id": "urn:ngm:class:universal-scene-description",
         "label": "Scene Description"
       }
     ],
@@ -93,11 +93,7 @@ public:: true
         "label": "AR Interoperability"
       },
       {
-        "@id": "urn:ngm:class:multi-device-ar",
-        "label": "Multi-Device AR"
-      },
-      {
-        "@id": "urn:ngm:class:shared-ar-experience",
+        "@id": "urn:ngm:class:shared-ar-experiences",
         "label": "Shared AR Experience"
       }
     ],
@@ -121,7 +117,7 @@ public:: true
         "label": "Pose Estimation"
       },
       {
-        "@id": "urn:ngm:class:3d-registration",
+        "@id": "urn:ngm:class:physical-virtual-registration",
         "label": "3D Registration"
       }
     ],

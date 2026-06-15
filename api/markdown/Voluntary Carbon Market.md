@@ -24,61 +24,134 @@ public:: true
   "domain": "governance",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:carbon-markets", "label": "Carbon Markets"}
+    {
+      "@id": "urn:ngm:class:carbon-markets",
+      "label": "Carbon Markets"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:carbon-credits", "label": "Carbon Credits"},
-      {"@id": "urn:ngm:class:carbon-registries", "label": "Carbon Registries"},
-      {"@id": "urn:ngm:class:carbon-project-developers", "label": "Carbon Project Developers"}
+      {
+        "@id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:carbon-markets", "label": "Carbon Markets"},
-      {"@id": "urn:ngm:class:climate-finance", "label": "Climate Finance"}
+      {
+        "@id": "urn:ngm:class:carbon-markets",
+        "label": "Carbon Markets"
+      },
+      {
+        "@id": "urn:ngm:class:climate-finance",
+        "label": "Climate Finance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:carbon-verification", "label": "Carbon Verification"},
-      {"@id": "urn:ngm:class:third-party-auditing", "label": "Third-Party Auditing"},
-      {"@id": "urn:ngm:class:additionality", "label": "Additionality"}
+      {
+        "@id": "urn:ngm:class:carbon-neutrality-verification",
+        "label": "Carbon Verification"
+      },
+      {
+        "@id": "urn:ngm:class:third-party-auditing",
+        "label": "Third-Party Auditing"
+      },
+      {
+        "@id": "urn:ngm:class:additionality",
+        "label": "Additionality"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:net-zero-targets", "label": "Net Zero Targets"},
-      {"@id": "urn:ngm:class:climate-change-mitigation", "label": "Climate Change Mitigation"},
-      {"@id": "urn:ngm:class:biodiversity-co-benefits", "label": "Biodiversity Co-Benefits"},
-      {"@id": "urn:ngm:class:nature-based-solutions", "label": "Nature-Based Solutions"}
+      {
+        "@id": "urn:ngm:class:net-zero-targets",
+        "label": "Net Zero Targets"
+      },
+      {
+        "@id": "urn:ngm:class:climate-change-mitigation",
+        "label": "Climate Change Mitigation"
+      },
+      {
+        "@id": "urn:ngm:class:nature-based-solutions",
+        "label": "Nature-Based Solutions"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:carbon-offsetting", "label": "Carbon Offsetting"},
-      {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"},
-      {"@id": "urn:ngm:class:price-discovery", "label": "Price Discovery"}
+      {
+        "@id": "urn:ngm:class:carbon-offsetting",
+        "label": "Carbon Offsetting"
+      },
+      {
+        "@id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:paris-agreement", "label": "Paris Agreement"},
-      {"@id": "urn:ngm:class:sustainable-development-goals", "label": "Sustainable Development Goals"},
-      {"@id": "urn:ngm:class:redd-plus", "label": "REDD+"}
+      {
+        "@id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-development-goals",
+        "label": "Sustainable Development Goals"
+      },
+      {
+        "@id": "urn:ngm:class:redd-plus",
+        "label": "REDD+"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:integrity-council-for-the-voluntary-carbon-market", "label": "Integrity Council for the Voluntary Carbon Market"},
-      {"@id": "urn:ngm:class:verra-verified-carbon-standard", "label": "Verra Verified Carbon Standard"},
-      {"@id": "urn:ngm:class:gold-standard", "label": "Gold Standard"}
+      {
+        "@id": "urn:ngm:class:integrity-council-for-the-voluntary-carbon-market",
+        "label": "Integrity Council for the Voluntary Carbon Market"
+      },
+      {
+        "@id": "urn:ngm:class:verra-vcs-standard",
+        "label": "Verra Verified Carbon Standard"
+      },
+      {
+        "@id": "urn:ngm:class:gold-standard",
+        "label": "Gold Standard"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:compliance-carbon-market", "label": "Compliance Carbon Market"},
-      {"@id": "urn:ngm:class:emissions-trading-scheme", "label": "Emissions Trading Scheme"}
+      {
+        "@id": "urn:ngm:class:compliance-carbon-market",
+        "label": "Compliance Carbon Market"
+      },
+      {
+        "@id": "urn:ngm:class:emissions-trading-scheme",
+        "label": "Emissions Trading Scheme"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain-carbon-tokens", "label": "Blockchain Carbon Tokens"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:digital-mrvs", "label": "Digital MRVs"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:article-6-paris-agreement", "label": "Article 6 Paris Agreement"},
-      {"@id": "urn:ngm:class:direct-air-capture", "label": "Direct Air Capture"},
-      {"@id": "urn:ngm:class:corporate-sustainability-reporting", "label": "Corporate Sustainability Reporting"}
+      {
+        "@id": "urn:ngm:class:paris-agreement-article-6",
+        "label": "Article 6 Paris Agreement"
+      },
+      {
+        "@id": "urn:ngm:class:direct-air-capture",
+        "label": "Direct Air Capture"
+      },
+      {
+        "@id": "urn:ngm:class:corporate-sustainability-reporting",
+        "label": "Corporate Sustainability Reporting"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:vcm", "label": "VCM"}
+    {
+      "@id": "urn:ngm:class:vcm",
+      "label": "VCM"
+    }
   ],
   "quality": 0.74,
   "provenance": {

@@ -76,53 +76,133 @@ alias:: Public Key Cryptography
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key", "label": "Public Key"},
-      {"@id": "urn:ngm:class:private-key", "label": "Private Key"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:ecdsa", "label": "ECDSA"},
-      {"@id": "urn:ngm:class:key-pair", "label": "Key Pair"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key",
+        "label": "Public Key"
+      },
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "@id": "urn:ngm:class:key-pair",
+        "label": "Key Pair"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
-      {"@id": "urn:ngm:class:asymmetric-encryption", "label": "Asymmetric Encryption"},
-      {"@id": "urn:ngm:class:trapdoor-function", "label": "Trapdoor Function"}
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:asymmetric-encryption",
+        "label": "Asymmetric Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:trapdoor-function",
+        "label": "Trapdoor Function"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:digital-signature-verification", "label": "Digital Signature Verification"},
-      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"},
-      {"@id": "urn:ngm:class:non-repudiation", "label": "Non-Repudiation"},
-      {"@id": "urn:ngm:class:secure-key-exchange", "label": "Secure Key Exchange"}
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature-verification",
+        "label": "Digital Signature Verification"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      },
+      {
+        "@id": "urn:ngm:class:secure-key-exchange",
+        "label": "Secure Key Exchange"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:random-number-generation", "label": "Random Number Generation"},
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}
+      {
+        "@id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:diffie-hellman-key-exchange", "label": "Diffie-Hellman Key Exchange"},
-      {"@id": "urn:ngm:class:tls-protocol", "label": "TLS Protocol"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:diffie-hellman-key-exchange",
+        "label": "Diffie-Hellman Key Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "TLS Protocol"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist-cryptographic-standards", "label": "NIST Cryptographic Standards"},
-      {"@id": "urn:ngm:class:rfc-5280", "label": "RFC 5280"}
+      {
+        "@id": "urn:ngm:class:nist-cryptographic-standards",
+        "label": "NIST Cryptographic Standards"
+      },
+      {
+        "@id": "urn:ngm:class:rfc-5280",
+        "label": "RFC 5280"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:symmetric-key-cryptography", "label": "Symmetric Key Cryptography"}
+      {
+        "@id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Key Cryptography"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"},
-      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain-transaction-signing", "label": "Blockchain Transaction Signing"},
-      {"@id": "urn:ngm:class:decentralized-identity", "label": "Decentralized Identity"}
+      {
+        "@id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:asymmetric-cryptography", "label": "Asymmetric Cryptography"},
-    {"@id": "urn:ngm:class:public-key-encryption", "label": "Public-Key Encryption"}
+    {
+      "@id": "urn:ngm:class:asymmetric-cryptography",
+      "label": "Asymmetric Cryptography"
+    },
+    {
+      "@id": "urn:ngm:class:public-key-encryption",
+      "label": "Public-Key Encryption"
+    }
   ],
   "quality": 0.75,
   "provenance": {

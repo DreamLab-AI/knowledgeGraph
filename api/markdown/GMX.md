@@ -77,14 +77,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:glp-token",
-        "label": "GLP Token"
-      },
-      {
-        "@id": "urn:ngm:class:gmx-token",
-        "label": "GMX Token"
-      },
-      {
         "@id": "urn:ngm:class:liquidity-pool",
         "label": "Liquidity Pool"
       }
@@ -93,10 +85,6 @@ public:: true
       {
         "@id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
-      },
-      {
-        "@id": "urn:ngm:class:layer-two-ecosystem",
-        "label": "Layer Two Ecosystem"
       }
     ],
     "requires": [
@@ -115,10 +103,6 @@ public:: true
       {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
-      },
-      {
-        "@id": "urn:ngm:class:price-feed",
-        "label": "Price Feed"
       }
     ],
     "enables": [
@@ -133,10 +117,6 @@ public:: true
       {
         "@id": "urn:ngm:class:liquidity-provision",
         "label": "Liquidity Provision"
-      },
-      {
-        "@id": "urn:ngm:class:fee-distribution",
-        "label": "Fee Distribution"
       }
     ],
     "dependsOn": [
@@ -145,15 +125,15 @@ public:: true
         "label": "Arbitrum"
       },
       {
-        "@id": "urn:ngm:class:avalanche-network",
+        "@id": "urn:ngm:class:avalanche",
         "label": "Avalanche Network"
       },
       {
-        "@id": "urn:ngm:class:chainlink-oracle",
+        "@id": "urn:ngm:class:chainlink-oracles",
         "label": "Chainlink Oracle"
       },
       {
-        "@id": "urn:ngm:class:ethereum-virtual-machine",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       }
     ],
@@ -163,7 +143,7 @@ public:: true
         "label": "Automated Market Maker"
       },
       {
-        "@id": "urn:ngm:class:pooled-liquidity-model",
+        "@id": "urn:ngm:class:liquidity-pool",
         "label": "Pooled Liquidity Model"
       }
     ],
@@ -171,10 +151,6 @@ public:: true
       {
         "@id": "urn:ngm:class:oracle",
         "label": "Oracle"
-      },
-      {
-        "@id": "urn:ngm:class:multi-asset-pool",
-        "label": "Multi-Asset Pool"
       },
       {
         "@id": "urn:ngm:class:liquidation-mechanism",
@@ -196,10 +172,6 @@ public:: true
       }
     ],
     "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:derivatives-market",
-        "label": "Derivatives Market"
-      },
       {
         "@id": "urn:ngm:class:token-economics",
         "label": "Token Economics"

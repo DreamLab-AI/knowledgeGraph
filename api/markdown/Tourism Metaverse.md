@@ -142,18 +142,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:cultural-exhibit",
-        "label": "Cultural Exhibit"
-      },
-      {
-        "@id": "urn:ngm:class:tour-guide-system",
-        "label": "Tour Guide System"
-      },
-      {
-        "@id": "urn:ngm:class:travel-planner",
-        "label": "Travel Planner"
-      },
-      {
         "@id": "urn:ngm:class:geospatial-engine",
         "label": "Geospatial Engine"
       },
@@ -182,7 +170,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:accessibility-enhancement",
+        "@id": "urn:ngm:class:accessibility",
         "label": "Accessibility Enhancement"
       },
       {

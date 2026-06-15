@@ -156,32 +156,6 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:de-identification-module",
-        "label": "De-identification Module"
-      },
-      {
-        "@id": "urn:ngm:class:generalization-engine",
-        "label": "Generalization Engine"
-      },
-      {
-        "@id": "urn:ngm:class:perturbation-function",
-        "label": "Perturbation Function"
-      },
-      {
-        "@id": "urn:ngm:class:pii-detector",
-        "label": "PII Detector"
-      },
-      {
-        "@id": "urn:ngm:class:risk-assessor",
-        "label": "Risk Assessor"
-      },
-      {
-        "@id": "urn:ngm:class:suppression-filter",
-        "label": "Suppression Filter"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:data-classification",

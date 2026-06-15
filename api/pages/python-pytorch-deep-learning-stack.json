@@ -18,16 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:pytorch",
-        "label": "PyTorch"
-      },
-      {
         "id": "urn:ngm:class:python-programming-language",
         "label": "Python Programming Language"
-      },
-      {
-        "id": "urn:ngm:class:autograd",
-        "label": "Autograd"
       }
     ],
     "requires": [
@@ -105,10 +97,6 @@
       {
         "id": "urn:ngm:class:hugging-face",
         "label": "Hugging Face"
-      },
-      {
-        "id": "urn:ngm:class:dynamic-computational-graph",
-        "label": "Dynamic Computational Graph"
       }
     ],
     "supports": [
@@ -135,10 +123,6 @@
       {
         "id": "urn:ngm:class:model-inference",
         "label": "Model Inference"
-      },
-      {
-        "id": "urn:ngm:class:spacy",
-        "label": "spaCy"
       }
     ]
   },

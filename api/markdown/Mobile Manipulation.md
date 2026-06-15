@@ -91,10 +91,6 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:mobile-base",
-        "label": "Mobile Base"
-      },
-      {
         "@id": "urn:ngm:class:robotic-arm",
         "label": "Robotic Arm"
       },
@@ -131,10 +127,6 @@ public:: true
         "label": "Service Robotics"
       },
       {
-        "@id": "urn:ngm:class:domestic-robot",
-        "label": "Domestic Robot"
-      },
-      {
         "@id": "urn:ngm:class:surgical-robot",
         "label": "Surgical Robot"
       }
@@ -154,10 +146,6 @@ public:: true
       }
     ],
     "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:fixed-base-manipulation",
-        "label": "Fixed-Base Manipulation"
-      },
       {
         "@id": "urn:ngm:class:autonomous-navigation",
         "label": "Autonomous Navigation"

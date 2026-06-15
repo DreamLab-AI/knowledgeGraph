@@ -28,24 +28,12 @@
       {
         "id": "urn:ngm:class:multi-party-computation",
         "label": "Multi-Party Computation"
-      },
-      {
-        "id": "urn:ngm:class:transaction-policy-engine",
-        "label": "Transaction Policy Engine"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:key-management-infrastructure",
+        "id": "urn:ngm:class:key-management-system",
         "label": "Key Management Infrastructure"
-      },
-      {
-        "id": "urn:ngm:class:segregated-accounts",
-        "label": "Segregated Accounts"
-      },
-      {
-        "id": "urn:ngm:class:soc-2-attestation",
-        "label": "SOC 2 Attestation"
       }
     ],
     "enables": [
@@ -56,10 +44,6 @@
       {
         "id": "urn:ngm:class:spot-bitcoin-etf",
         "label": "Spot Bitcoin ETF"
-      },
-      {
-        "id": "urn:ngm:class:qualified-custody",
-        "label": "Qualified Custody"
       }
     ],
     "dependsOn": [
@@ -94,10 +78,6 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:traditional-asset-custody",
-        "label": "Traditional Asset Custody"
-      },
-      {
         "id": "urn:ngm:class:securities-regulation",
         "label": "Securities Regulation"
       }
@@ -125,10 +105,6 @@
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:insurance-for-digital-assets",
-        "label": "Insurance for Digital Assets"
-      },
       {
         "id": "urn:ngm:class:proof-of-reserves",
         "label": "Proof of Reserves"

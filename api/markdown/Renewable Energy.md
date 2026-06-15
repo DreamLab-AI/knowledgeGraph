@@ -24,58 +24,104 @@ public:: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:energy-and-power", "label": "Energy and Power"}
+    {
+      "@id": "urn:ngm:class:energy-and-power",
+      "label": "Energy and Power"
+    }
   ],
   "relations": {
-    "hasPart": [
-      {"@id": "urn:ngm:class:solar-photovoltaic", "label": "Solar Photovoltaic"},
-      {"@id": "urn:ngm:class:wind-power", "label": "Wind Power"},
-      {"@id": "urn:ngm:class:hydropower", "label": "Hydropower"},
-      {"@id": "urn:ngm:class:geothermal-energy", "label": "Geothermal Energy"},
-      {"@id": "urn:ngm:class:biomass-energy", "label": "Biomass Energy"}
-    ],
     "requires": [
-      {"@id": "urn:ngm:class:energy-storage", "label": "Energy Storage"},
-      {"@id": "urn:ngm:class:smart-grid", "label": "Smart Grid"},
-      {"@id": "urn:ngm:class:power-electronics", "label": "Power Electronics"}
+      {
+        "@id": "urn:ngm:class:energy-storage",
+        "label": "Energy Storage"
+      },
+      {
+        "@id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "@id": "urn:ngm:class:power-electronics",
+        "label": "Power Electronics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:sustainable-development", "label": "Sustainable Development"},
-      {"@id": "urn:ngm:class:carbon-neutrality-planning", "label": "Carbon Neutrality Planning"},
-      {"@id": "urn:ngm:class:green-hydrogen", "label": "Green Hydrogen"},
-      {"@id": "urn:ngm:class:electrification-of-transport", "label": "Electrification of Transport"}
+      {
+        "@id": "urn:ngm:class:sustainable-development",
+        "label": "Sustainable Development"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-neutrality-planning",
+        "label": "Carbon Neutrality Planning"
+      },
+      {
+        "@id": "urn:ngm:class:green-hydrogen",
+        "label": "Green Hydrogen"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:energy-management", "label": "Energy Management"},
-      {"@id": "urn:ngm:class:sustainable-technology", "label": "Sustainable Technology"},
-      {"@id": "urn:ngm:class:data-centre-operations", "label": "Data Centre Operations"}
+      {
+        "@id": "urn:ngm:class:energy-management",
+        "label": "Energy Management"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-technology",
+        "label": "Sustainable Technology"
+      },
+      {
+        "@id": "urn:ngm:class:data-centre",
+        "label": "Data Centre Operations"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:renewable-energy-certificates", "label": "Renewable Energy Certificates"},
-      {"@id": "urn:ngm:class:power-purchase-agreement", "label": "Power Purchase Agreement"}
-    ],
-    "standardizedBy": [
-      {"@id": "urn:ngm:class:international-renewable-energy-agency", "label": "International Renewable Energy Agency"},
-      {"@id": "urn:ngm:class:iec-standards", "label": "IEC Standards"}
+      {
+        "@id": "urn:ngm:class:renewable-energy-certificates",
+        "label": "Renewable Energy Certificates"
+      },
+      {
+        "@id": "urn:ngm:class:power-purchase-agreement",
+        "label": "Power Purchase Agreement"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:fossil-fuels", "label": "Fossil Fuels"},
-      {"@id": "urn:ngm:class:nuclear-power", "label": "Nuclear Power"}
+      {
+        "@id": "urn:ngm:class:nuclear-energy",
+        "label": "Nuclear Power"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:scope-2-emissions", "label": "Scope 2 Emissions"},
-      {"@id": "urn:ngm:class:environmental-sustainability", "label": "Environmental Sustainability"},
-      {"@id": "urn:ngm:class:sustainability-reporting", "label": "SustainabilityReporting"},
-      {"@id": "urn:ngm:class:carbon-market", "label": "Carbon Market"}
+      {
+        "@id": "urn:ngm:class:scope-2-emissions",
+        "label": "Scope 2 Emissions"
+      },
+      {
+        "@id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability-reporting",
+        "label": "SustainabilityReporting"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-markets",
+        "label": "Carbon Market"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-energy-consumption", "label": "AI Energy Consumption"},
-      {"@id": "urn:ngm:class:grid-aware-computing", "label": "Grid-Aware Computing"}
+      {
+        "@id": "urn:ngm:class:energy-consumption",
+        "label": "AI Energy Consumption"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:clean-energy", "label": "Clean Energy"},
-    {"@id": "urn:ngm:class:green-energy", "label": "Green Energy"}
+    {
+      "@id": "urn:ngm:class:clean-energy",
+      "label": "Clean Energy"
+    },
+    {
+      "@id": "urn:ngm:class:green-energy",
+      "label": "Green Energy"
+    }
   ],
   "quality": 0.76,
   "provenance": {

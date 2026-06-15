@@ -72,14 +72,7 @@ alias:: TELE-004-media-richness-theory
       "label": "Communication Technology"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:communication-effectiveness",
-        "label": "CommunicationEffectiveness"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

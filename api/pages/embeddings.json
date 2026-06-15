@@ -85,10 +85,6 @@
       {
         "id": "urn:ngm:class:bag-of-words",
         "label": "Bag of Words"
-      },
-      {
-        "id": "urn:ngm:class:symbolic-representation",
-        "label": "Symbolic Representation"
       }
     ],
     "bridgesTo": [
@@ -124,7 +120,7 @@
         "label": "Cosine Similarity"
       },
       {
-        "id": "urn:ngm:class:approximate-nearest-neighbour",
+        "id": "urn:ngm:class:nearest-neighbor-search",
         "label": "Approximate Nearest Neighbour"
       },
       {
@@ -132,7 +128,7 @@
         "label": "Knowledge Graph"
       },
       {
-        "id": "urn:ngm:class:multimodal-learning",
+        "id": "urn:ngm:class:multimodal-ai-architecture-learning",
         "label": "Multimodal Learning"
       }
     ]

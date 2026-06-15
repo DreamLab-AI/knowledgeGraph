@@ -116,24 +116,6 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:force-feedback-actuators",
-        "label": "Force Feedback Actuators"
-      },
-      {
-        "@id": "urn:ngm:class:piezoelectric-sensors",
-        "label": "Piezoelectric Sensors"
-      },
-      {
-        "@id": "urn:ngm:class:tactile-actuators",
-        "label": "Tactile Actuators"
-      },
-      {
-        "@id": "urn:ngm:class:vibration-motors",
-        "label": "Vibration Motors"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:signal-processing-unit",
@@ -158,12 +140,8 @@ public:: true
         "label": "Physical Presence"
       },
       {
-        "@id": "urn:ngm:class:tactile-feedback",
+        "@id": "urn:ngm:class:haptic-feedback",
         "label": "Tactile Feedback"
-      },
-      {
-        "@id": "urn:ngm:class:texture-simulation",
-        "label": "Texture Simulation"
       }
     ],
     "partOf": [

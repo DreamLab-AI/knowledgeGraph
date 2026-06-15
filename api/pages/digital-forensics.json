@@ -16,40 +16,11 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:network-forensics",
-        "label": "Network Forensics"
-      },
-      {
-        "id": "urn:ngm:class:mobile-forensics",
-        "label": "Mobile Forensics"
-      },
-      {
-        "id": "urn:ngm:class:memory-forensics",
-        "label": "Memory Forensics"
-      },
-      {
-        "id": "urn:ngm:class:cloud-forensics",
-        "label": "Cloud Forensics"
-      },
-      {
-        "id": "urn:ngm:class:malware-forensics",
-        "label": "Malware Forensics"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:chain-of-custody",
         "label": "Chain of Custody"
-      },
-      {
-        "id": "urn:ngm:class:evidence-integrity",
-        "label": "Evidence Integrity"
-      },
-      {
-        "id": "urn:ngm:class:forensic-readiness",
-        "label": "Forensic Readiness"
       }
     ],
     "enables": [
@@ -104,10 +75,6 @@
       {
         "id": "urn:ngm:class:write-blocker",
         "label": "Write Blocker"
-      },
-      {
-        "id": "urn:ngm:class:disk-imaging",
-        "label": "Disk Imaging"
       }
     ],
     "supports": [
@@ -128,10 +95,6 @@
       {
         "id": "urn:ngm:class:iso-iec-27037",
         "label": "ISO/IEC 27037"
-      },
-      {
-        "id": "urn:ngm:class:nist-sp-800-86",
-        "label": "NIST SP 800-86"
       }
     ],
     "partOf": [],

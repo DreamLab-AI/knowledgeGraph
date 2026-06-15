@@ -88,14 +88,6 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:encoding-rules",
-        "label": "Encoding Rules"
-      },
-      {
-        "@id": "urn:ngm:class:parser-implementation",
-        "label": "Parser Implementation"
-      },
-      {
         "@id": "urn:ngm:class:schema-definition",
         "label": "Schema Definition"
       }
@@ -106,11 +98,7 @@ public:: true
         "label": "Data Serialization"
       },
       {
-        "@id": "urn:ngm:class:efficient-storage",
-        "label": "Efficient Storage"
-      },
-      {
-        "@id": "urn:ngm:class:network-transmission",
+        "@id": "urn:ngm:class:transmission-network",
         "label": "Network Transmission"
       }
     ]

@@ -72,7 +72,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -113,10 +113,6 @@
       {
         "id": "urn:ngm:class:transport-layer-security",
         "label": "Transport Layer Security"
-      },
-      {
-        "id": "urn:ngm:class:deep-packet-inspection",
-        "label": "Deep Packet Inspection"
       }
     ],
     "supports": [],

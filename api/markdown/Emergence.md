@@ -544,58 +544,12 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:cross-scale-mapping",
-        "label": "Cross-Scale Mapping"
-      },
-      {
         "@id": "urn:ngm:class:local-interaction-rules",
         "label": "Local Interaction Rules"
       },
       {
-        "@id": "urn:ngm:class:lower-level-components",
-        "label": "Lower-Level Components"
-      },
-      {
-        "@id": "urn:ngm:class:macro-level-pattern",
-        "label": "Macro-Level Pattern"
-      },
-      {
-        "@id": "urn:ngm:class:order-parameter",
-        "label": "Order Parameter"
-      },
-      {
-        "@id": "urn:ngm:class:symmetry-breaking",
-        "label": "Symmetry Breaking"
-      },
-      {
         "@id": "urn:ngm:class:feedback-loop",
         "label": "Feedback Loop"
-      }
-    ],
-    "requires": [
-      {
-        "@id": "urn:ngm:class:critical-threshold",
-        "label": "Critical Threshold"
-      },
-      {
-        "@id": "urn:ngm:class:energy-or-information-flow",
-        "label": "Energy or Information Flow"
-      },
-      {
-        "@id": "urn:ngm:class:local-coupling",
-        "label": "Local Coupling"
-      },
-      {
-        "@id": "urn:ngm:class:many-body-system",
-        "label": "Many-Body System"
-      },
-      {
-        "@id": "urn:ngm:class:non-linear-interaction",
-        "label": "Non-Linear Interaction"
-      },
-      {
-        "@id": "urn:ngm:class:sufficient-composition",
-        "label": "Sufficient Composition"
       }
     ],
     "enables": [
@@ -608,46 +562,18 @@ public:: true
         "label": "Collective Intelligence"
       },
       {
-        "@id": "urn:ngm:class:computational-universality",
-        "label": "Computational Universality"
-      },
-      {
-        "@id": "urn:ngm:class:pattern-formation",
-        "label": "Pattern Formation"
-      },
-      {
         "@id": "urn:ngm:class:phase-transition",
         "label": "Phase Transition"
       },
       {
         "@id": "urn:ngm:class:self-organisation",
         "label": "Self-Organisation"
-      },
-      {
-        "@id": "urn:ngm:class:universality",
-        "label": "Universality"
       }
     ],
     "implements": [
       {
         "@id": "urn:ngm:class:mean-field-approximation",
         "label": "Mean-Field Approximation"
-      },
-      {
-        "@id": "urn:ngm:class:preferential-attachment",
-        "label": "Preferential Attachment"
-      },
-      {
-        "@id": "urn:ngm:class:renormalisation-group-flow",
-        "label": "Renormalisation Group Flow"
-      },
-      {
-        "@id": "urn:ngm:class:self-organised-criticality",
-        "label": "Self-Organised Criticality"
-      },
-      {
-        "@id": "urn:ngm:class:variational-free-energy-minimisation",
-        "label": "Variational Free-Energy Minimisation"
       },
       {
         "@id": "urn:ngm:class:stigmergy",
@@ -668,18 +594,6 @@ public:: true
         "label": "Network Analysis"
       },
       {
-        "@id": "urn:ngm:class:order-parameters",
-        "label": "Order Parameters"
-      },
-      {
-        "@id": "urn:ngm:class:phase-diagrams",
-        "label": "Phase Diagrams"
-      },
-      {
-        "@id": "urn:ngm:class:power-law-distributions",
-        "label": "Power-Law Distributions"
-      },
-      {
         "@id": "urn:ngm:class:scaling-laws",
         "label": "Scaling Laws"
       }
@@ -698,20 +612,8 @@ public:: true
         "label": "Cybernetics"
       },
       {
-        "@id": "urn:ngm:class:downward-causation",
-        "label": "Downward Causation"
-      },
-      {
         "@id": "urn:ngm:class:self-organisation",
         "label": "Self-Organisation"
-      },
-      {
-        "@id": "urn:ngm:class:supervenience",
-        "label": "Supervenience"
-      },
-      {
-        "@id": "urn:ngm:class:synergetics",
-        "label": "Synergetics"
       },
       {
         "@id": "urn:ngm:class:systems-theory",
@@ -724,10 +626,6 @@ public:: true
         "label": "Agent-Based Modelling"
       },
       {
-        "@id": "urn:ngm:class:ai-capability-forecasting",
-        "label": "AI Capability Forecasting"
-      },
-      {
         "@id": "urn:ngm:class:behavioural-economics",
         "label": "Behavioural Economics"
       },
@@ -736,38 +634,8 @@ public:: true
         "label": "Complex Systems"
       },
       {
-        "@id": "urn:ngm:class:consciousness-studies",
-        "label": "Consciousness Studies"
-      },
-      {
         "@id": "urn:ngm:class:epidemiology",
         "label": "Epidemiology"
-      },
-      {
-        "@id": "urn:ngm:class:multi-scale-simulation",
-        "label": "Multi-Scale Simulation"
-      }
-    ],
-    "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:complex-systems-society",
-        "label": "Complex Systems Society"
-      },
-      {
-        "@id": "urn:ngm:class:imperial-centre-for-complexity-science",
-        "label": "Imperial Centre for Complexity Science"
-      },
-      {
-        "@id": "urn:ngm:class:net-sci-conference-series",
-        "label": "NetSci Conference Series"
-      },
-      {
-        "@id": "urn:ngm:class:royal-society-theo-murphy-meetings",
-        "label": "Royal Society Theo Murphy meetings"
-      },
-      {
-        "@id": "urn:ngm:class:santa-fe-institute",
-        "label": "Santa Fe Institute"
       }
     ]
   },

@@ -29,50 +29,123 @@
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:neural-text-to-speech", "label": "Neural Text-to-Speech"},
-      {"@id": "urn:ngm:class:video-generation", "label": "Video Generation"},
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"}
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:neural-text-to-speech",
+        "label": "Neural Text-to-Speech"
+      },
+      {
+        "@id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:deepfakes", "label": "Deepfakes"},
-      {"@id": "urn:ngm:class:voice-cloning", "label": "Voice Cloning"},
-      {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"},
-      {"@id": "urn:ngm:class:avatar-synthesis", "label": "Avatar Synthesis"}
+      {
+        "@id": "urn:ngm:class:deepfakes",
+        "label": "Deepfakes"
+      },
+      {
+        "@id": "urn:ngm:class:voice-cloning",
+        "label": "Voice Cloning"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "@id": "urn:ngm:class:avatar-synthesis",
+        "label": "Avatar Synthesis"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:synthetic-speech", "label": "Synthetic Speech"},
-      {"@id": "urn:ngm:class:synthetic-video", "label": "Synthetic Video"},
-      {"@id": "urn:ngm:class:ai-generated-text", "label": "AI-Generated Text"}
+      {
+        "@id": "urn:ngm:class:text-to-speech",
+        "label": "Synthetic Speech"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:deepfake-detection", "label": "Deepfake Detection"},
-      {"@id": "urn:ngm:class:media-authenticity", "label": "Media Authenticity"}
+      {
+        "@id": "urn:ngm:class:deepfake-detection",
+        "label": "Deepfake Detection"
+      },
+      {
+        "@id": "urn:ngm:class:media-authenticity",
+        "label": "Media Authenticity"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:c2pa", "label": "C2PA"},
-      {"@id": "urn:ngm:class:ai-generated-content-disclosure", "label": "AI-Generated Content Disclosure"}
+      {
+        "@id": "urn:ngm:class:c2pa",
+        "label": "C2PA"
+      },
+      {
+        "@id": "urn:ngm:class:ai-generated-content-disclosure",
+        "label": "AI-Generated Content Disclosure"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"},
-      {"@id": "urn:ngm:class:disinformation", "label": "Disinformation"},
-      {"@id": "urn:ngm:class:digital-watermarking", "label": "Digital Watermarking"},
-      {"@id": "urn:ngm:class:content-provenance", "label": "Content Provenance"}
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "@id": "urn:ngm:class:disinformation",
+        "label": "Disinformation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-watermarking",
+        "label": "Digital Watermarking"
+      },
+      {
+        "@id": "urn:ngm:class:content-provenance",
+        "label": "Content Provenance"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ai-generated-content", "label": "AI-Generated Content"},
-    {"@id": "urn:ngm:class:algorithmically-generated-media", "label": "Algorithmically Generated Media"}
+    {
+      "@id": "urn:ngm:class:ai-generated-content",
+      "label": "AI-Generated Content"
+    },
+    {
+      "@id": "urn:ngm:class:algorithmically-generated-media",
+      "label": "Algorithmically Generated Media"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

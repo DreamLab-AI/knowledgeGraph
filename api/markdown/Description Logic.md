@@ -73,20 +73,6 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:tbox",
-        "label": "TBox"
-      },
-      {
-        "@id": "urn:ngm:class:abox",
-        "label": "ABox"
-      },
-      {
-        "@id": "urn:ngm:class:role-restriction",
-        "label": "Role Restriction"
-      }
-    ],
     "partOf": [
       {
         "@id": "urn:ngm:class:knowledge-representation",
@@ -97,10 +83,6 @@ public:: true
       {
         "@id": "urn:ngm:class:set-theory",
         "label": "Set Theory"
-      },
-      {
-        "@id": "urn:ngm:class:model-theoretic-semantics",
-        "label": "Model-Theoretic Semantics"
       },
       {
         "@id": "urn:ngm:class:first-order-logic",
@@ -121,10 +103,6 @@ public:: true
         "label": "Automated Reasoning"
       },
       {
-        "@id": "urn:ngm:class:subsumption-reasoning",
-        "label": "Subsumption Reasoning"
-      },
-      {
         "@id": "urn:ngm:class:consistency-checking",
         "label": "Consistency Checking"
       }
@@ -135,34 +113,14 @@ public:: true
         "label": "Ontology"
       }
     ],
-    "uses": [
-      {
-        "@id": "urn:ngm:class:tableau-algorithm",
-        "label": "Tableau Algorithm"
-      },
-      {
-        "@id": "urn:ngm:class:concept-subsumption",
-        "label": "Concept Subsumption"
-      }
-    ],
     "supports": [
       {
-        "@id": "urn:ngm:class:semantic-web",
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       },
       {
         "@id": "urn:ngm:class:ontology-engineering",
         "label": "Ontology Engineering"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:full-first-order-logic",
-        "label": "Full First-Order Logic"
-      },
-      {
-        "@id": "urn:ngm:class:horn-logic",
-        "label": "Horn Logic"
       }
     ],
     "bridgesTo": [

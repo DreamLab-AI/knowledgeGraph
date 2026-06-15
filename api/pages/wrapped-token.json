@@ -25,10 +25,6 @@
       {
         "id": "urn:ngm:class:mint-burn-mechanism",
         "label": "Mint-Burn Mechanism"
-      },
-      {
-        "id": "urn:ngm:class:collateral-locking",
-        "label": "Collateral Locking"
       }
     ],
     "enables": [
@@ -79,10 +75,6 @@
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:decentralized-lending",
-        "label": "Decentralized Lending"
-      },
       {
         "id": "urn:ngm:class:automated-market-maker",
         "label": "Automated Market Maker"

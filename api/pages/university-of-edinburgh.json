@@ -16,28 +16,11 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:school-of-informatics",
-        "label": "School of Informatics"
-      },
-      {
-        "id": "urn:ngm:class:bayes-centre",
-        "label": "Bayes Centre"
-      },
-      {
-        "id": "urn:ngm:class:institute-for-adaptive-and-neural-computation",
-        "label": "Institute for Adaptive and Neural Computation"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:research-funding",
         "label": "Research Funding"
-      },
-      {
-        "id": "urn:ngm:class:academic-peer-review",
-        "label": "Academic Peer Review"
       }
     ],
     "enables": [
@@ -71,10 +54,6 @@
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:industry-academia-collaboration",
-        "label": "Industry-Academia Collaboration"
-      },
       {
         "id": "urn:ngm:class:technology-transfer",
         "label": "Technology Transfer"
@@ -117,10 +96,6 @@
       {
         "id": "urn:ngm:class:russell-group",
         "label": "Russell Group"
-      },
-      {
-        "id": "urn:ngm:class:league-of-european-research-universities",
-        "label": "League of European Research Universities"
       }
     ],
     "relatedTo": [
@@ -141,12 +116,8 @@
         "label": "University of Manchester"
       },
       {
-        "id": "urn:ngm:class:oxford-university",
+        "id": "urn:ngm:class:university-of-oxford",
         "label": "University of Oxford"
-      },
-      {
-        "id": "urn:ngm:class:carnegie-mellon-university",
-        "label": "Carnegie Mellon University"
       }
     ]
   },

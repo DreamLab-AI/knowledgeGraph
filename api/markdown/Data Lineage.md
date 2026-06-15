@@ -23,58 +23,133 @@ public:: true
   "definition": "Data lineage is the documented record of data's origins, movements, transformations and consumption as it flows through systems and pipelines. It maps how a data element is derived end to end, supporting impact analysis, debugging, audit and regulatory compliance. As a pillar of data governance and metadata management it makes data trustworthy by exposing its provenance.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infra-data-management", "label": "Data Management"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:data-provenance", "label": "Data Provenance"},
-      {"@id": "urn:ngm:class:impact-analysis", "label": "Impact Analysis"},
-      {"@id": "urn:ngm:class:data-transformation-record", "label": "Data Transformation Record"}
+      {
+        "@id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:metadata-catalog", "label": "Metadata Catalog"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+      {
+        "@id": "urn:ngm:class:metadata-catalog",
+        "label": "Metadata Catalog"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:root-cause-analysis", "label": "Root Cause Analysis"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:root-cause-analysis",
+        "label": "Root Cause Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:directed-acyclic-graph", "label": "Directed Acyclic Graph"},
-      {"@id": "urn:ngm:class:data-schema", "label": "Data Schema"}
+      {
+        "@id": "urn:ngm:class:directed-acyclic-graph",
+        "label": "Directed Acyclic Graph"
+      },
+      {
+        "@id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:graph-database", "label": "Graph Database"},
-      {"@id": "urn:ngm:class:apache-atlas", "label": "Apache Atlas"},
-      {"@id": "urn:ngm:class:openlineage", "label": "OpenLineage"}
+      {
+        "@id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "@id": "urn:ngm:class:apache-atlas",
+        "label": "Apache Atlas"
+      },
+      {
+        "@id": "urn:ngm:class:openlineage",
+        "label": "OpenLineage"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:data-quality-management", "label": "Data Quality Management"},
-      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"}
+      {
+        "@id": "urn:ngm:class:data-quality-management",
+        "label": "Data Quality Management"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:openlineage", "label": "OpenLineage"},
-      {"@id": "urn:ngm:class:w3c-prov", "label": "W3C PROV"}
+      {
+        "@id": "urn:ngm:class:openlineage",
+        "label": "OpenLineage"
+      },
+      {
+        "@id": "urn:ngm:class:w3-c-prov",
+        "label": "W3C PROV"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:data-catalog", "label": "Data Catalog"}
+      {
+        "@id": "urn:ngm:class:data-catalog",
+        "label": "Data Catalog"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain-provenance", "label": "Blockchain Provenance"},
-      {"@id": "urn:ngm:class:supply-chain-transparency", "label": "Supply Chain Transparency"}
+      {
+        "@id": "urn:ngm:class:blockchain-provenance",
+        "label": "Blockchain Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-observability", "label": "Data Observability"},
-      {"@id": "urn:ngm:class:etl-process", "label": "ETL Process"}
+      {
+        "@id": "urn:ngm:class:data-observability",
+        "label": "Data Observability"
+      },
+      {
+        "@id": "urn:ngm:class:etl-pipeline",
+        "label": "ETL Process"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:data-provenance-tracking", "label": "Data Provenance Tracking"},
-    {"@id": "urn:ngm:class:data-flow-tracing", "label": "Data Flow Tracing"}
+    {
+      "@id": "urn:ngm:class:data-provenance-tracking",
+      "label": "Data Provenance Tracking"
+    },
+    {
+      "@id": "urn:ngm:class:data-flow-tracing",
+      "label": "Data Flow Tracing"
+    }
   ],
   "quality": 0.72,
   "provenance": {

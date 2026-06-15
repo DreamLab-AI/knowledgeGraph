@@ -38,51 +38,121 @@ public:: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:decentralised-identifier", "label": "Decentralised Identifier"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
+      {
+        "@id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:verification-method", "label": "Verification Method"},
-      {"@id": "urn:ngm:class:service-endpoint", "label": "Service Endpoint"},
-      {"@id": "urn:ngm:class:verification-relationship", "label": "Verification Relationship"}
+      {
+        "@id": "urn:ngm:class:verification-method",
+        "label": "Verification Method"
+      },
+      {
+        "@id": "urn:ngm:class:service-endpoint",
+        "label": "Service Endpoint"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:verifiable-data-registry", "label": "Verifiable Data Registry"},
-      {"@id": "urn:ngm:class:did-method", "label": "DID Method"},
-      {"@id": "urn:ngm:class:did-resolver", "label": "DID Resolver"}
+      {
+        "@id": "urn:ngm:class:verifiable-data-registry",
+        "label": "Verifiable Data Registry"
+      },
+      {
+        "@id": "urn:ngm:class:did-method",
+        "label": "DID Method"
+      },
+      {
+        "@id": "urn:ngm:class:did-resolver",
+        "label": "DID Resolver"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
-      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:decentralised-authentication", "label": "Decentralised Authentication"},
-      {"@id": "urn:ngm:class:key-agreement-protocol", "label": "Key Agreement Protocol"}
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-authentication",
+        "label": "Decentralised Authentication"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:w3c-did-core", "label": "W3C DID Core"},
-      {"@id": "urn:ngm:class:w3c", "label": "W3C"}
+      {
+        "@id": "urn:ngm:class:w3-c-did-core",
+        "label": "W3C DID Core"
+      },
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:x-509-certificate", "label": "X.509 Certificate"},
-      {"@id": "urn:ngm:class:centralised-identity-provider", "label": "Centralised Identity Provider"}
+      {
+        "@id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:centralized-identity-provider",
+        "label": "Centralised Identity Provider"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"},
-      {"@id": "urn:ngm:class:did-resolution", "label": "DID Resolution"},
-      {"@id": "urn:ngm:class:did-url", "label": "DID URL"}
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "@id": "urn:ngm:class:did-resolution",
+        "label": "DID Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:did-url",
+        "label": "DID URL"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:agent-identity", "label": "Agent Identity"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:agent-identity",
+        "label": "Agent Identity"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:did-descriptor-object", "label": "DID Descriptor Object"}
+    {
+      "@id": "urn:ngm:class:did-descriptor-object",
+      "label": "DID Descriptor Object"
+    }
   ],
   "quality": 0.72,
   "provenance": {

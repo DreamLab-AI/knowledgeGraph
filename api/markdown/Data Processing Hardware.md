@@ -104,10 +104,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:ai-processing",
-        "label": "AI Processing"
-      },
-      {
         "@id": "urn:ngm:class:immersive-computing",
         "label": "Immersive Computing"
       },

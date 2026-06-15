@@ -38,49 +38,105 @@ public:: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:continuous-normalising-flow", "label": "Continuous Normalising Flow"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:conditional-flow-matching", "label": "Conditional Flow Matching"},
-      {"@id": "urn:ngm:class:vector-field", "label": "Vector Field"},
-      {"@id": "urn:ngm:class:ode-solver", "label": "ODE Solver"}
+      {
+        "@id": "urn:ngm:class:normalising-flow",
+        "label": "Continuous Normalising Flow"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:probability-distribution", "label": "Probability Distribution"},
-      {"@id": "urn:ngm:class:ordinary-differential-equation", "label": "Ordinary Differential Equation"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:ordinary-differential-equation",
+        "label": "Ordinary Differential Equation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:image-synthesis", "label": "Image Synthesis"},
-      {"@id": "urn:ngm:class:audio-generation", "label": "Audio Generation"},
-      {"@id": "urn:ngm:class:protein-structure-prediction", "label": "Protein Structure Prediction"},
-      {"@id": "urn:ngm:class:molecular-generation", "label": "Molecular Generation"}
+      {
+        "@id": "urn:ngm:class:image-synthesis",
+        "label": "Image Synthesis"
+      },
+      {
+        "@id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      },
+      {
+        "@id": "urn:ngm:class:protein-structure-prediction",
+        "label": "Protein Structure Prediction"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:score-matching", "label": "Score Matching"},
-      {"@id": "urn:ngm:class:optimal-transport", "label": "Optimal Transport"},
-      {"@id": "urn:ngm:class:stochastic-interpolant", "label": "Stochastic Interpolant"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:score-matching",
+        "label": "Score Matching"
+      },
+      {
+        "@id": "urn:ngm:class:optimal-transport",
+        "label": "Optimal Transport"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
-      {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"},
-      {"@id": "urn:ngm:class:normalising-flow", "label": "Normalising Flow"}
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "@id": "urn:ngm:class:normalising-flow",
+        "label": "Normalising Flow"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:denoising-diffusion-probabilistic-model", "label": "Denoising Diffusion Probabilistic Model"},
-      {"@id": "urn:ngm:class:score-based-generative-model", "label": "Score-based Generative Model"},
-      {"@id": "urn:ngm:class:latent-diffusion-model", "label": "Latent Diffusion Model"},
-      {"@id": "urn:ngm:class:rectified-flow", "label": "Rectified Flow"}
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Denoising Diffusion Probabilistic Model"
+      },
+      {
+        "@id": "urn:ngm:class:score-based-generative-model",
+        "label": "Score-based Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:rectified-flow",
+        "label": "Rectified Flow"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:computational-biology", "label": "Computational Biology"},
-      {"@id": "urn:ngm:class:drug-discovery", "label": "Drug Discovery"}
+      {
+        "@id": "urn:ngm:class:computational-biology",
+        "label": "Computational Biology"
+      },
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:conditional-flow-matching", "label": "Conditional Flow Matching"}
+    {
+      "@id": "urn:ngm:class:conditional-flow-matching",
+      "label": "Conditional Flow Matching"
+    }
   ],
   "quality": 0.74,
   "provenance": {

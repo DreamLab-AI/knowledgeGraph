@@ -51,57 +51,101 @@ public:: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"}
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:sinusoidal-encoding", "label": "Sinusoidal Encoding"},
-      {"@id": "urn:ngm:class:rotary-position-embedding", "label": "Rotary Position Embedding"}
+      {
+        "@id": "urn:ngm:class:rotary-position-embedding",
+        "label": "Rotary Position Embedding"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:token-embedding", "label": "Token Embedding"},
-      {"@id": "urn:ngm:class:embedding-dimension", "label": "Embedding Dimension"}
+      {
+        "@id": "urn:ngm:class:token-embedding",
+        "label": "Token Embedding"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:language-modeling", "label": "Language Modeling"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:sequence-to-sequence-learning", "label": "Sequence-to-Sequence Learning"},
-      {"@id": "urn:ngm:class:long-context-modeling", "label": "Long-Context Modeling"}
+      {
+        "@id": "urn:ngm:class:language-modeling",
+        "label": "Language Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:sequence-to-sequence-learning",
+        "label": "Sequence-to-Sequence Learning"
+      },
+      {
+        "@id": "urn:ngm:class:long-context-modeling",
+        "label": "Long-Context Modeling"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:self-attention", "label": "Self Attention"},
-      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:sequence-order-representation", "label": "Sequence Order Representation"}
+      {
+        "@id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:sinusoidal-functions", "label": "Sinusoidal Functions"},
-      {"@id": "urn:ngm:class:learnable-parameters", "label": "Learnable Parameters"}
+      {
+        "@id": "urn:ngm:class:model-parameters",
+        "label": "Learnable Parameters"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:vision-transformer", "label": "Vision Transformer"},
-      {"@id": "urn:ngm:class:time-series-forecasting", "label": "Time Series Forecasting"}
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:time-series-forecasting",
+        "label": "Time Series Forecasting"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"},
-      {"@id": "urn:ngm:class:relative-positional-encoding", "label": "Relative Positional Encoding"},
-      {"@id": "urn:ngm:class:attention-with-linear-biases", "label": "Attention with Linear Biases"}
+      {
+        "@id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:word-embedding", "label": "Word Embedding"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:sequence-length-extrapolation", "label": "Sequence Length Extrapolation"},
-      {"@id": "urn:ngm:class:sequence-representation", "label": "Sequence Representation"}
-    ],
-    "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-encoding", "label": "Spatial Encoding"}
+      {
+        "@id": "urn:ngm:class:word-embedding",
+        "label": "Word Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:position-embedding", "label": "Position Embedding"},
-    {"@id": "urn:ngm:class:positional-embedding", "label": "Positional Embedding"}
+    {
+      "@id": "urn:ngm:class:position-embedding",
+      "label": "Position Embedding"
+    },
+    {
+      "@id": "urn:ngm:class:positional-embedding",
+      "label": "Positional Embedding"
+    }
   ],
   "quality": 0.72,
   "provenance": {

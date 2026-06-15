@@ -24,14 +24,6 @@
       {
         "id": "urn:ngm:class:retroactive-public-goods-funding",
         "label": "Retroactive Public Goods Funding"
-      },
-      {
-        "id": "urn:ngm:class:grants-programme",
-        "label": "Grants Programme"
-      },
-      {
-        "id": "urn:ngm:class:matching-pool",
-        "label": "Matching Pool"
       }
     ],
     "requires": [
@@ -77,10 +69,6 @@
       {
         "id": "urn:ngm:class:venture-capital",
         "label": "Venture Capital"
-      },
-      {
-        "id": "urn:ngm:class:rent-seeking",
-        "label": "Rent Seeking"
       }
     ],
     "bridgesTo": [
@@ -124,12 +112,8 @@
         "label": "Welfare Economics"
       },
       {
-        "id": "urn:ngm:class:collective-action-problem",
+        "id": "urn:ngm:class:collective-action",
         "label": "Collective Action Problem"
-      },
-      {
-        "id": "urn:ngm:class:impact-certificates",
-        "label": "Impact Certificates"
       }
     ]
   },

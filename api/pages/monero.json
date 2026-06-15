@@ -52,16 +52,8 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:ring-confidential-transactions",
+        "id": "urn:ngm:class:confidential-transactions",
         "label": "Ring Confidential Transactions"
-      },
-      {
-        "id": "urn:ngm:class:cryptonote-protocol",
-        "label": "CryptoNote Protocol"
-      },
-      {
-        "id": "urn:ngm:class:randomx",
-        "label": "RandomX"
       }
     ],
     "contrastsWith": [
@@ -76,10 +68,6 @@
       {
         "id": "urn:ngm:class:zcash",
         "label": "Zcash"
-      },
-      {
-        "id": "urn:ngm:class:dash",
-        "label": "Dash"
       }
     ],
     "bridgesTo": [
@@ -100,10 +88,6 @@
       {
         "id": "urn:ngm:class:bulletproofs",
         "label": "Bulletproofs"
-      },
-      {
-        "id": "urn:ngm:class:dandelion-plus-plus",
-        "label": "Dandelion++"
       }
     ],
     "supports": [],

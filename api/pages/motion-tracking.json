@@ -58,42 +58,21 @@
         "label": "Embodied Presence"
       },
       {
-        "id": "urn:ngm:class:gesture-control",
+        "id": "urn:ngm:class:gesture-recognition",
         "label": "Gesture Control"
-      },
-      {
-        "id": "urn:ngm:class:user-identification",
-        "label": "User Identification"
       },
       {
         "id": "urn:ngm:class:foveated-rendering",
         "label": "Foveated Rendering"
-      },
-      {
-        "id": "urn:ngm:class:full-body-avatar",
-        "label": "Full Body Avatar"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:controller-based-input",
-        "label": "Controller-Based Input"
-      },
-      {
-        "id": "urn:ngm:class:outside-in-tracking",
-        "label": "Outside-In Tracking"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:sc-interaction",
         "label": "Interaction Technology"
-      },
-      {
-        "id": "urn:ngm:class:biometric-privacy",
-        "label": "Biometric Privacy"
       },
       {
         "id": "urn:ngm:class:digital-twin",
@@ -118,19 +97,10 @@
       {
         "id": "urn:ngm:class:sports-analytics",
         "label": "Sports Analytics"
-      },
-      {
-        "id": "urn:ngm:class:healthcare-rehabilitation",
-        "label": "Healthcare Rehabilitation"
       }
     ],
     "standardizedBy": [],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:xr-input-technologies",
-        "label": "XR Input Technologies"
-      }
-    ],
+    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:six-degrees-of-freedom",

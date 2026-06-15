@@ -18,11 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:temporal-attention",
-        "label": "Temporal Attention"
-      },
-      {
-        "id": "urn:ngm:class:video-vae",
+        "id": "urn:ngm:class:vae",
         "label": "Video VAE"
       },
       {
@@ -56,10 +52,6 @@
       {
         "id": "urn:ngm:class:synthetic-media",
         "label": "Synthetic Media"
-      },
-      {
-        "id": "urn:ngm:class:film-previzualisation",
-        "label": "Film Previsualization"
       },
       {
         "id": "urn:ngm:class:autonomous-driving-simulation",
@@ -111,7 +103,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:3d-convolution",
+        "id": "urn:ngm:class:convolution",
         "label": "3D Convolution"
       },
       {
@@ -135,7 +127,7 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai",
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       }
     ],

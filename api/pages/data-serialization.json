@@ -47,12 +47,7 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:in-memory-representation",
-        "label": "In-Memory Representation"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:machine-learning",
@@ -67,10 +62,6 @@
       {
         "id": "urn:ngm:class:data-schema",
         "label": "Data Schema"
-      },
-      {
-        "id": "urn:ngm:class:encoding-scheme",
-        "label": "Encoding Scheme"
       },
       {
         "id": "urn:ngm:class:type-system",

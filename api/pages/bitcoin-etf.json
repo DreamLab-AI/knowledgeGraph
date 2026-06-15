@@ -26,117 +26,19 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:authorized-participant",
-        "label": "Authorized Participant"
-      },
-      {
         "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-custody",
         "label": "Bitcoin Custody"
-      },
-      {
-        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-reference-rate",
-        "label": "Bitcoin Reference Rate"
-      },
-      {
-        "id": "urn:ngm:class:creation-unit-basket",
-        "label": "Creation Unit Basket"
-      },
-      {
-        "id": "urn:ngm:class:fund-administrator",
-        "label": "Fund Administrator"
-      },
-      {
-        "id": "urn:ngm:class:net-asset-value-calculation",
-        "label": "Net Asset Value Calculation"
-      },
-      {
-        "id": "urn:ngm:class:trust-agreement",
-        "label": "Trust Agreement"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:fund-sponsor",
-        "label": "Fund Sponsor"
-      },
-      {
-        "id": "urn:ngm:class:independent-trustee",
-        "label": "Independent Trustee"
-      },
-      {
         "id": "urn:ngm:class:qualified-custodian",
         "label": "Qualified Custodian"
-      },
-      {
-        "id": "urn:ngm:class:rule-19b-4-approval",
-        "label": "Rule 19b-4 Approval"
-      },
-      {
-        "id": "urn:ngm:class:sec-form-s-1-registration",
-        "label": "SEC Form S-1 Registration"
-      },
-      {
-        "id": "urn:ngm:class:stock-exchange-listing",
-        "label": "Stock Exchange Listing"
-      },
-      {
-        "id": "urn:ngm:class:surveillance-sharing-agreement",
-        "label": "Surveillance Sharing Agreement"
       }
     ],
-    "enables": [
-      {
-        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-inclusion-in-model-portfolio",
-        "label": "Bitcoin Inclusion in Model Portfolio"
-      },
-      {
-        "id": "urn:ngm:class:brokerage-account-bitcoin-access",
-        "label": "Brokerage-Account Bitcoin Access"
-      },
-      {
-        "id": "urn:ngm:class:options-on-bitcoin-etf",
-        "label": "Options on Bitcoin ETF"
-      },
-      {
-        "id": "urn:ngm:class:pension-fund-bitcoin-allocation",
-        "label": "Pension Fund Bitcoin Allocation"
-      },
-      {
-        "id": "urn:ngm:class:retirement-account-bitcoin-allocation",
-        "label": "Retirement Account Bitcoin Allocation"
-      },
-      {
-        "id": "urn:ngm:class:corporate-tax-compliance-framework-advantaged-bitcoin-exposure",
-        "label": "Tax-Advantaged Bitcoin Exposure"
-      }
-    ],
+    "enables": [],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:cash-creation-process",
-        "label": "Cash Creation Process"
-      },
-      {
-        "id": "urn:ngm:class:daily-creation-redemption-mechanism",
-        "label": "Daily Creation Redemption Mechanism"
-      },
-      {
-        "id": "urn:ngm:class:in-kind-creation-process",
-        "label": "In-Kind Creation Process"
-      },
-      {
-        "id": "urn:ngm:class:investment-company-act-1940-wrapper",
-        "label": "Investment Company Act 1940 Wrapper"
-      },
-      {
-        "id": "urn:ngm:class:nav-based-pricing",
-        "label": "NAV-Based Pricing"
-      },
-      {
-        "id": "urn:ngm:class:passive-bitcoin-tracking",
-        "label": "Passive Bitcoin Tracking"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [
@@ -149,10 +51,6 @@
         "label": "BitGo"
       },
       {
-        "id": "urn:ngm:class:cme-brr",
-        "label": "CME BRR"
-      },
-      {
         "id": "urn:ngm:class:coinbase-custody",
         "label": "Coinbase Custody"
       },
@@ -161,38 +59,14 @@
         "label": "Cold Storage"
       },
       {
-        "id": "urn:ngm:class:fidelity-digital-assets",
-        "label": "Fidelity Digital Assets"
-      },
-      {
-        "id": "urn:ngm:class:gemini-multimodal-language-model-custody",
-        "label": "Gemini Custody"
-      },
-      {
         "id": "urn:ngm:class:multi-signature-wallet",
         "label": "Multi-Signature Wallet"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-liquidity",
-        "label": "Bitcoin Liquidity"
-      },
-      {
         "id": "urn:ngm:class:institutional-bitcoin-adoption",
         "label": "Institutional Bitcoin Adoption"
-      },
-      {
-        "id": "urn:ngm:class:regulated-bitcoin-market",
-        "label": "Regulated Bitcoin Market"
-      },
-      {
-        "id": "urn:ngm:class:retail-bitcoin-access",
-        "label": "Retail Bitcoin Access"
-      },
-      {
-        "id": "urn:ngm:class:wealth-manager-distribution",
-        "label": "Wealth Manager Distribution"
       },
       {
         "id": "urn:ngm:class:price-discovery",
@@ -201,28 +75,8 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:cftc-commodity-classification",
-        "label": "CFTC Commodity Classification"
-      },
-      {
         "id": "urn:ngm:class:fasb-asu-2023-08",
         "label": "FASB ASU 2023-08"
-      },
-      {
-        "id": "urn:ngm:class:fca-cryptoasset-promotions-regime",
-        "label": "FCA Cryptoasset Promotions Regime"
-      },
-      {
-        "id": "urn:ngm:class:investment-company-act-1940",
-        "label": "Investment Company Act 1940"
-      },
-      {
-        "id": "urn:ngm:class:sec-form-s-1",
-        "label": "SEC Form S-1"
-      },
-      {
-        "id": "urn:ngm:class:sec-rule-19b-4",
-        "label": "SEC Rule 19b-4"
       },
       {
         "id": "urn:ngm:class:securities-act-1933",
@@ -236,31 +90,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-options",
-        "label": "Bitcoin Options"
-      },
-      {
-        "id": "urn:ngm:class:european-bitcoin-etp",
-        "label": "European Bitcoin ETP"
-      },
-      {
-        "id": "urn:ngm:class:grayscale-v-sec",
-        "label": "Grayscale v SEC"
-      },
-      {
-        "id": "urn:ngm:class:hong-kong-spot-bitcoin-etf",
-        "label": "Hong Kong Spot Bitcoin ETF"
-      },
-      {
-        "id": "urn:ngm:class:monochrome-ibtc",
-        "label": "Monochrome IBTC"
-      },
-      {
-        "id": "urn:ngm:class:purpose-bitcoin-etf",
-        "label": "Purpose Bitcoin ETF"
-      },
-      {
-        "id": "urn:ngm:class:spot-ether-etf",
+        "id": "urn:ngm:class:spot-ethereum-etf",
         "label": "Spot Ether ETF"
       }
     ]

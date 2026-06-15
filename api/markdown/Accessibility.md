@@ -448,48 +448,12 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:accessibility-statement",
-        "label": "Accessibility Statement"
-      },
-      {
-        "@id": "urn:ngm:class:accessible-name-computation",
-        "label": "Accessible Name Computation"
-      },
-      {
-        "@id": "urn:ngm:class:alternative-text",
-        "label": "Alternative Text"
-      },
-      {
-        "@id": "urn:ngm:class:audio-description",
-        "label": "Audio Description"
-      },
-      {
-        "@id": "urn:ngm:class:captions",
+        "@id": "urn:ngm:class:live-captions",
         "label": "Captions"
-      },
-      {
-        "@id": "urn:ngm:class:focus-management",
-        "label": "Focus Management"
-      },
-      {
-        "@id": "urn:ngm:class:keyboard-navigation",
-        "label": "Keyboard Navigation"
-      },
-      {
-        "@id": "urn:ngm:class:operability",
-        "label": "Operability"
-      },
-      {
-        "@id": "urn:ngm:class:perceivability",
-        "label": "Perceivability"
       },
       {
         "@id": "urn:ngm:class:semantic-html",
         "label": "Semantic HTML"
-      },
-      {
-        "@id": "urn:ngm:class:understandability",
-        "label": "Understandability"
       },
       {
         "@id": "urn:ngm:class:robustness",
@@ -498,23 +462,15 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:assistive-technology-compatibility",
+        "@id": "urn:ngm:class:assistive-technology",
         "label": "Assistive Technology Compatibility"
-      },
-      {
-        "@id": "urn:ngm:class:colour-contrast",
-        "label": "Colour Contrast"
-      },
-      {
-        "@id": "urn:ngm:class:keyboard-operability",
-        "label": "Keyboard Operability"
       },
       {
         "@id": "urn:ngm:class:semantic-html",
         "label": "Semantic HTML"
       },
       {
-        "@id": "urn:ngm:class:user-research-with-disabled-users",
+        "@id": "urn:ngm:class:user-research",
         "label": "User Research with Disabled Users"
       },
       {
@@ -540,7 +496,7 @@ public:: true
         "label": "Market Expansion"
       },
       {
-        "@id": "urn:ngm:class:universal-usability",
+        "@id": "urn:ngm:class:usability",
         "label": "Universal Usability"
       },
       {
@@ -550,24 +506,12 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:atag-2-0",
-        "label": "ATAG 2.0"
-      },
-      {
         "@id": "urn:ngm:class:en-301-549",
         "label": "EN 301 549"
       },
       {
-        "@id": "urn:ngm:class:pour-principles",
-        "label": "POUR Principles"
-      },
-      {
         "@id": "urn:ngm:class:section-508",
         "label": "Section 508"
-      },
-      {
-        "@id": "urn:ngm:class:wai-aria-1-2",
-        "label": "WAI-ARIA 1.2"
       },
       {
         "@id": "urn:ngm:class:wcag-2-2",
@@ -575,10 +519,6 @@ public:: true
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:axe-core",
-        "label": "axe-core"
-      },
       {
         "@id": "urn:ngm:class:jaws",
         "label": "JAWS"
@@ -594,18 +534,6 @@ public:: true
       {
         "@id": "urn:ngm:class:pa11y",
         "label": "Pa11y"
-      },
-      {
-        "@id": "urn:ngm:class:talk-back",
-        "label": "TalkBack"
-      },
-      {
-        "@id": "urn:ngm:class:voice-over",
-        "label": "VoiceOver"
-      },
-      {
-        "@id": "urn:ngm:class:wave",
-        "label": "WAVE"
       }
     ],
     "relatedTo": [
@@ -640,54 +568,18 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:captioning-users",
+        "@id": "urn:ngm:class:accessibility-captioning",
         "label": "Captioning Users"
-      },
-      {
-        "@id": "urn:ngm:class:cognitively-diverse-users",
-        "label": "Cognitively Diverse Users"
-      },
-      {
-        "@id": "urn:ngm:class:eye-tracking-users",
-        "label": "Eye-Tracking Users"
-      },
-      {
-        "@id": "urn:ngm:class:keyboard-only-users",
-        "label": "Keyboard-Only Users"
-      },
-      {
-        "@id": "urn:ngm:class:screen-reader-users",
-        "label": "Screen Reader Users"
-      },
-      {
-        "@id": "urn:ngm:class:switch-users",
-        "label": "Switch Users"
-      },
-      {
-        "@id": "urn:ngm:class:voice-control-users",
-        "label": "Voice-Control Users"
       }
     ],
     "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:bs-8878",
-        "label": "BS 8878"
-      },
       {
         "@id": "urn:ngm:class:en-301-549",
         "label": "EN 301 549"
       },
       {
-        "@id": "urn:ngm:class:iso-iec-40500",
-        "label": "ISO/IEC 40500"
-      },
-      {
         "@id": "urn:ngm:class:section-508",
         "label": "Section 508"
-      },
-      {
-        "@id": "urn:ngm:class:w3-c-wai",
-        "label": "W3C WAI"
       }
     ]
   },

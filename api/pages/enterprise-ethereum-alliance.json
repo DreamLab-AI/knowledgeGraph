@@ -16,34 +16,8 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:eea-client-specification",
-        "label": "EEA Client Specification"
-      },
-      {
-        "id": "urn:ngm:class:token-taxonomy-framework",
-        "label": "Token Taxonomy Framework"
-      },
-      {
-        "id": "urn:ngm:class:eea-crosschain-interoperability-specification",
-        "label": "EEA Crosschain Interoperability Specification"
-      },
-      {
-        "id": "urn:ngm:class:eea-mainnet-working-group",
-        "label": "EEA Mainnet Working Group"
-      }
-    ],
-    "requires": [
-      {
-        "id": "urn:ngm:class:private-transaction-management",
-        "label": "Private Transaction Management"
-      },
-      {
-        "id": "urn:ngm:class:on-chain-permissioning",
-        "label": "On-Chain Permissioning"
-      }
-    ],
+    "hasPart": [],
+    "requires": [],
     "enables": [
       {
         "id": "urn:ngm:class:blockchain-interoperability",
@@ -52,10 +26,6 @@
       {
         "id": "urn:ngm:class:enterprise-blockchain-architecture",
         "label": "Enterprise Blockchain Architecture"
-      },
-      {
-        "id": "urn:ngm:class:regulated-defi",
-        "label": "Regulated DeFi"
       },
       {
         "id": "urn:ngm:class:central-bank-digital-currency",
@@ -104,7 +74,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:byzantine-fault-tolerant-consensus",
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
         "label": "Byzantine Fault-Tolerant Consensus"
       }
     ],
@@ -130,15 +100,11 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:ethereum-ecosystem",
+        "id": "urn:ngm:class:ethereum",
         "label": "Ethereum Ecosystem"
       }
     ],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:blockchain-standards-body",
-        "label": "Blockchain Standards Body"
-      },
       {
         "id": "urn:ngm:class:enterprise-blockchain",
         "label": "Enterprise Blockchain"

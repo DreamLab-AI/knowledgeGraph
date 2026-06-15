@@ -109,12 +109,6 @@ public:: true
         "@id": "urn:ngm:class:haptic-feedback-telepresence",
         "label": "Haptic Feedback Telepresence"
       }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:hazardous-environment-access",
-        "label": "HazardousEnvironmentAccess"
-      }
     ]
   },
   "quality": 0.6,

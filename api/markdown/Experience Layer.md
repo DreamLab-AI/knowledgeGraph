@@ -138,7 +138,7 @@ public:: true
         "label": "Interaction Manager"
       },
       {
-        "@id": "urn:ngm:class:presence-system",
+        "@id": "urn:ngm:class:presence",
         "label": "Presence System"
       },
       {

@@ -23,58 +23,137 @@ public:: true
   "definition": "Sensor calibration is the process of determining and correcting systematic measurement errors in sensing devices by comparing their outputs against known reference values or through geometric constraint solving, yielding intrinsic parameter models and extrinsic transformation matrices that map raw sensor readings to physically meaningful quantities. It is a prerequisite for sensor fusion, perception pipelines, and any application requiring quantitatively accurate environmental measurements.",
   "domain": "robotics",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:calibration", "label": "Calibration"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:calibration",
+      "label": "Calibration"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:calibration-target", "label": "Calibration Target"},
-      {"@id": "urn:ngm:class:coordinate-transformation", "label": "Coordinate Transformation"},
-      {"@id": "urn:ngm:class:camera-intrinsics", "label": "Camera Intrinsics"},
-      {"@id": "urn:ngm:class:levenberg-marquardt-algorithm", "label": "Levenberg-Marquardt Algorithm"},
-      {"@id": "urn:ngm:class:least-squares-optimisation", "label": "Least-Squares Optimisation"},
-      {"@id": "urn:ngm:class:allan-variance", "label": "Allan Variance"}
+      {
+        "@id": "urn:ngm:class:calibration-target",
+        "label": "Calibration Target"
+      },
+      {
+        "@id": "urn:ngm:class:coordinate-transformation",
+        "label": "Coordinate Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:camera-intrinsics",
+        "label": "Camera Intrinsics"
+      },
+      {
+        "@id": "urn:ngm:class:levenberg-marquardt-algorithm",
+        "label": "Levenberg-Marquardt Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:optimisation",
+        "label": "Least-Squares Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:allan-variance",
+        "label": "Allan Variance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:slam", "label": "SLAM"},
-      {"@id": "urn:ngm:class:localization", "label": "Localization"},
-      {"@id": "urn:ngm:class:visual-inertial-odometry", "label": "Visual-Inertial Odometry"},
-      {"@id": "urn:ngm:class:autonomous-vehicle-perception", "label": "Autonomous Vehicle Perception"},
-      {"@id": "urn:ngm:class:robot-perception", "label": "Robot Perception"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "@id": "urn:ngm:class:localization",
+        "label": "Localization"
+      },
+      {
+        "@id": "urn:ngm:class:visual-inertial-odometry",
+        "label": "Visual-Inertial Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle-perception",
+        "label": "Autonomous Vehicle Perception"
+      },
+      {
+        "@id": "urn:ngm:class:robot-perception",
+        "label": "Robot Perception"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:reference-standard", "label": "Reference Standard"},
-      {"@id": "urn:ngm:class:point-correspondence", "label": "Point Correspondence"},
-      {"@id": "urn:ngm:class:reprojection-error", "label": "Reprojection Error"}
+      {
+        "@id": "urn:ngm:class:reference-standard",
+        "label": "Reference Standard"
+      },
+      {
+        "@id": "urn:ngm:class:reprojection-error",
+        "label": "Reprojection Error"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:intrinsic-calibration", "label": "Intrinsic Calibration"},
-      {"@id": "urn:ngm:class:extrinsic-calibration", "label": "Extrinsic Calibration"}
+      {
+        "@id": "urn:ngm:class:calibration",
+        "label": "Intrinsic Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:extrinsic-calibration",
+        "label": "Extrinsic Calibration"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:sensor", "label": "Sensor"},
-      {"@id": "urn:ngm:class:measurement-error-model", "label": "Measurement Error Model"}
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:3d-reconstruction", "label": "3D Reconstruction"}
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:sensor-validation", "label": "Sensor Validation"}
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor Validation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:imu", "label": "IMU"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
-      {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"},
-      {"@id": "urn:ngm:class:distortion-correction", "label": "Distortion Correction"},
-      {"@id": "urn:ngm:class:thermal-compensation", "label": "Thermal Compensation"}
+      {
+        "@id": "urn:ngm:class:imu",
+        "label": "IMU"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:sensor-parameter-estimation", "label": "Sensor Parameter Estimation"}
+    {
+      "@id": "urn:ngm:class:sensor-parameter-estimation",
+      "label": "Sensor Parameter Estimation"
+    }
   ],
   "quality": 0.8,
   "provenance": {

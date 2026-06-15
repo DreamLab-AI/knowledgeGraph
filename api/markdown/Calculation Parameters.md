@@ -86,10 +86,6 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:parameter-definition",
-        "label": "Parameter Definition"
-      },
-      {
         "@id": "urn:ngm:class:sensitivity-analysis",
         "label": "Sensitivity Analysis"
       },
@@ -102,14 +98,6 @@ public:: true
       {
         "@id": "urn:ngm:class:model-calibration",
         "label": "Model Calibration"
-      },
-      {
-        "@id": "urn:ngm:class:performance-tuning",
-        "label": "Performance Tuning"
-      },
-      {
-        "@id": "urn:ngm:class:simulation-control",
-        "label": "Simulation Control"
       }
     ]
   },

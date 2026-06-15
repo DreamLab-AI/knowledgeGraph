@@ -72,10 +72,6 @@ public:: true
       {
         "@id": "urn:ngm:class:code-review",
         "label": "Code Review"
-      },
-      {
-        "@id": "urn:ngm:class:package-management",
-        "label": "Package Management"
       }
     ],
     "partOf": [
@@ -99,10 +95,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:collaborative-development",
-        "label": "Collaborative Development"
-      },
       {
         "@id": "urn:ngm:class:continuous-integration",
         "label": "Continuous Integration"
@@ -138,30 +130,18 @@ public:: true
       {
         "@id": "urn:ngm:class:software-supply-chain",
         "label": "Software Supply Chain"
-      },
-      {
-        "@id": "urn:ngm:class:ai-model-transparency",
-        "label": "AI Model Transparency"
       }
     ],
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:open-source-initiative",
         "label": "Open Source Initiative"
-      },
-      {
-        "@id": "urn:ngm:class:free-software-foundation",
-        "label": "Free Software Foundation"
       }
     ],
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:proprietary-software",
         "label": "Proprietary Software"
-      },
-      {
-        "@id": "urn:ngm:class:closed-source",
-        "label": "Closed Source"
       }
     ],
     "bridgesTo": [
@@ -186,10 +166,6 @@ public:: true
       {
         "@id": "urn:ngm:class:software-bill-of-materials",
         "label": "Software Bill of Materials"
-      },
-      {
-        "@id": "urn:ngm:class:open-hardware",
-        "label": "Open Hardware"
       }
     ]
   },

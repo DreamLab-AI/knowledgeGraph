@@ -99,28 +99,12 @@ public:: true
       {
         "@id": "urn:ngm:class:stability-analysis",
         "label": "Stability Analysis"
-      },
-      {
-        "@id": "urn:ngm:class:bifurcation-analysis",
-        "label": "Bifurcation Analysis"
       }
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:attractor",
-        "label": "Attractor"
-      },
-      {
         "@id": "urn:ngm:class:phase-space",
         "label": "Phase Space"
-      },
-      {
-        "@id": "urn:ngm:class:fixed-point",
-        "label": "Fixed Point"
-      },
-      {
-        "@id": "urn:ngm:class:lyapunov-exponent",
-        "label": "Lyapunov Exponent"
       }
     ],
     "uses": [
@@ -139,10 +123,6 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:neural-ordinary-differential-equations",
-        "label": "Neural Ordinary Differential Equations"
-      },
-      {
         "@id": "urn:ngm:class:recurrent-neural-network",
         "label": "Recurrent Neural Network"
       },
@@ -155,10 +135,6 @@ public:: true
       {
         "@id": "urn:ngm:class:stochastic-processes",
         "label": "Stochastic Processes"
-      },
-      {
-        "@id": "urn:ngm:class:static-optimization",
-        "label": "Static Optimization"
       }
     ],
     "bridgesTo": [

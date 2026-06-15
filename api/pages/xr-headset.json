@@ -26,7 +26,7 @@
         "label": "Micro-OLED Display"
       },
       {
-        "id": "urn:ngm:class:inside-out-tracking-system",
+        "id": "urn:ngm:class:tracking-system",
         "label": "Inside-Out Tracking System"
       },
       {
@@ -91,10 +91,6 @@
       }
     ],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:smart-glasses",
-        "label": "Smart Glasses"
-      },
       {
         "id": "urn:ngm:class:holographic-display",
         "label": "Holographic Display"

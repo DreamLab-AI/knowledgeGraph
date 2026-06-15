@@ -16,28 +16,11 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:inode",
-        "label": "Inode"
-      },
-      {
-        "id": "urn:ngm:class:directory-structure",
-        "label": "Directory Structure"
-      },
-      {
-        "id": "urn:ngm:class:block-allocation-table",
-        "label": "Block Allocation Table"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:storage-hardware",
         "label": "Storage Hardware"
-      },
-      {
-        "id": "urn:ngm:class:block-device",
-        "label": "Block Device"
       },
       {
         "id": "urn:ngm:class:kernel",
@@ -60,24 +43,11 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:virtual-file-system",
-        "label": "Virtual File System"
-      },
-      {
-        "id": "urn:ngm:class:device-driver",
+        "id": "urn:ngm:class:device-drivers",
         "label": "Device Driver"
       }
     ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:posix-interface",
-        "label": "POSIX Interface"
-      },
-      {
-        "id": "urn:ngm:class:journaling",
-        "label": "Journaling"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:object-storage",
@@ -128,10 +98,6 @@
       {
         "id": "urn:ngm:class:operating-system",
         "label": "Operating System"
-      },
-      {
-        "id": "urn:ngm:class:storage-stack",
-        "label": "Storage Stack"
       }
     ],
     "relatedTo": [

@@ -23,64 +23,133 @@ public:: true
   "definition": "A distributed hash table (DHT) is a decentralised data structure that partitions a key-value store across a set of participating nodes so that each node is responsible for only a fraction of the total keyspace, with lookups routed through a structured overlay network in O(log n) hops without any central coordinator. Nodes join and leave dynamically, and the system rebalances key responsibility through consistent hashing or an XOR-metric routing algorithm, tolerating high churn without degrading availability. DHTs form the foundational lookup and routing primitive of peer-to-peer networks, underpinning decentralised content addressing, peer discovery, and distributed storage at global scale.",
   "domain": "distributed-systems",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-system",
+      "label": "Distributed System"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:routing-table", "label": "Routing Table"},
-      {"@id": "urn:ngm:class:keyspace-partition", "label": "Keyspace Partition"},
-      {"@id": "urn:ngm:class:node-identifier", "label": "Node Identifier"}
+      {
+        "@id": "urn:ngm:class:routing-table",
+        "label": "Routing Table"
+      },
+      {
+        "@id": "urn:ngm:class:node-identifier",
+        "label": "Node Identifier"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
-      {"@id": "urn:ngm:class:overlay-network", "label": "Overlay Network"}
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:overlay-network",
+        "label": "Overlay Network"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:consistent-hashing", "label": "Consistent Hashing"},
-      {"@id": "urn:ngm:class:network-node", "label": "Network Node"}
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:consistent-hashing",
+        "label": "Consistent Hashing"
+      },
+      {
+        "@id": "urn:ngm:class:network-node",
+        "label": "Network Node"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ipfs", "label": "IPFS"},
-      {"@id": "urn:ngm:class:content-addressing", "label": "Content Addressing"},
-      {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"},
-      {"@id": "urn:ngm:class:decentralised-peer-discovery", "label": "Decentralised Peer Discovery"},
-      {"@id": "urn:ngm:class:censorship-resistant-communication", "label": "Censorship-Resistant Communication"}
-    ],
-    "dependsOn": [
-      {"@id": "urn:ngm:class:structured-overlay-network", "label": "Structured Overlay Network"},
-      {"@id": "urn:ngm:class:bootstrap-protocol", "label": "Bootstrap Protocol"}
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "@id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "@id": "urn:ngm:class:peer-discovery",
+        "label": "Decentralised Peer Discovery"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:kademlia-dht", "label": "Kademlia DHT"},
-      {"@id": "urn:ngm:class:chord-protocol", "label": "Chord Protocol"}
+      {
+        "@id": "urn:ngm:class:kademlia-dht",
+        "label": "Kademlia DHT"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:libp2p", "label": "libp2p"},
-      {"@id": "urn:ngm:class:xor-metric", "label": "XOR Metric"},
-      {"@id": "urn:ngm:class:k-bucket", "label": "k-Bucket"}
+      {
+        "@id": "urn:ngm:class:libp2p",
+        "label": "libp2p"
+      },
+      {
+        "@id": "urn:ngm:class:xor-metric",
+        "label": "XOR Metric"
+      },
+      {
+        "@id": "urn:ngm:class:k-bucket",
+        "label": "k-Bucket"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:bittorrent", "label": "BitTorrent"},
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
-      {"@id": "urn:ngm:class:filecoin", "label": "Filecoin"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:centralised-index", "label": "Centralised Index"},
-      {"@id": "urn:ngm:class:unstructured-overlay-network", "label": "Unstructured Overlay Network"}
+      {
+        "@id": "urn:ngm:class:bittorrent",
+        "label": "BitTorrent"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "@id": "urn:ngm:class:filecoin",
+        "label": "Filecoin"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:gossip-protocol", "label": "Gossip Protocol"},
-      {"@id": "urn:ngm:class:eclipse-attack", "label": "Eclipse Attack"},
-      {"@id": "urn:ngm:class:sybil-attack", "label": "Sybil Attack"},
-      {"@id": "urn:ngm:class:replication", "label": "Replication"}
+      {
+        "@id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:eclipse-attack",
+        "label": "Eclipse Attack"
+      },
+      {
+        "@id": "urn:ngm:class:sybil-attack",
+        "label": "Sybil Attack"
+      },
+      {
+        "@id": "urn:ngm:class:replication",
+        "label": "Replication"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:decentralised-identifier", "label": "Decentralised Identifier"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:dht", "label": "DHT"}
+    {
+      "@id": "urn:ngm:class:dht",
+      "label": "DHT"
+    }
   ],
   "quality": 0.74,
   "provenance": {

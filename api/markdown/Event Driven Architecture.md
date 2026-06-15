@@ -60,57 +60,135 @@ alias:: Event-Driven Architecture
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:event-broker", "label": "Event Broker"},
-      {"@id": "urn:ngm:class:event-producer", "label": "Event Producer"},
-      {"@id": "urn:ngm:class:event-consumer", "label": "Event Consumer"},
-      {"@id": "urn:ngm:class:message-queue", "label": "Message Queue"}
+      {
+        "@id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:message-passing", "label": "Message Passing"},
-      {"@id": "urn:ngm:class:asynchronous-communication", "label": "Asynchronous Communication"}
+      {
+        "@id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:scalable-metaverse-infrastructure", "label": "Scalable Metaverse Infrastructure"},
-      {"@id": "urn:ngm:class:real-time-data-processing", "label": "Real-Time Data Processing"},
-      {"@id": "urn:ngm:class:loose-coupling", "label": "Loose Coupling"},
-      {"@id": "urn:ngm:class:stream-processing", "label": "Stream Processing"}
+      {
+        "@id": "urn:ngm:class:metaverse-infrastructure",
+        "label": "Scalable Metaverse Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-data-processing",
+        "label": "Real-Time Data Processing"
+      },
+      {
+        "@id": "urn:ngm:class:loose-coupling",
+        "label": "Loose Coupling"
+      },
+      {
+        "@id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:publish-subscribe-pattern", "label": "Publish-Subscribe Pattern"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:reactive-programming", "label": "Reactive Programming"},
-      {"@id": "urn:ngm:class:cqrs", "label": "CQRS"}
+      {
+        "@id": "urn:ngm:class:reactive-programming",
+        "label": "Reactive Programming"
+      },
+      {
+        "@id": "urn:ngm:class:cqrs",
+        "label": "CQRS"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:apache-kafka", "label": "Apache Kafka"},
-      {"@id": "urn:ngm:class:rabbitmq", "label": "RabbitMQ"},
-      {"@id": "urn:ngm:class:event-sourcing", "label": "Event Sourcing"}
+      {
+        "@id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      },
+      {
+        "@id": "urn:ngm:class:rabbitmq",
+        "label": "RabbitMQ"
+      },
+      {
+        "@id": "urn:ngm:class:event-sourcing",
+        "label": "Event Sourcing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:serverless-computing", "label": "Serverless Computing"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:serverless-architecture",
+        "label": "Serverless Computing"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:request-response-pattern", "label": "Request-Response Pattern"},
-      {"@id": "urn:ngm:class:service-oriented-architecture", "label": "Service Oriented Architecture"}
+      {
+        "@id": "urn:ngm:class:request-response-pattern",
+        "label": "Request-Response Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service Oriented Architecture"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:system-architecture", "label": "System Architecture"},
-      {"@id": "urn:ngm:class:iot-platform", "label": "IoT Platform"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:system-architecture",
+        "label": "System Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:iot-platform",
+        "label": "IoT Platform"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:software-architecture-pattern", "label": "Software Architecture Pattern"},
-      {"@id": "urn:ngm:class:saga-pattern", "label": "Saga Pattern"},
-      {"@id": "urn:ngm:class:observability", "label": "Observability"}
+      {
+        "@id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:saga-pattern",
+        "label": "Saga Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:eda", "label": "EDA"},
-    {"@id": "urn:ngm:class:event-based-architecture", "label": "Event-Based Architecture"}
+    {
+      "@id": "urn:ngm:class:eda",
+      "label": "EDA"
+    },
+    {
+      "@id": "urn:ngm:class:event-based-architecture",
+      "label": "Event-Based Architecture"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -185,7 +185,7 @@ public:: true
         "label": "Hyperparameter Tuning"
       },
       {
-        "@id": "urn:ngm:class:ci-cd-pipeline",
+        "@id": "urn:ngm:class:ci-cd-automation",
         "label": "CI/CD Pipeline"
       }
     ]

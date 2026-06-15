@@ -24,56 +24,149 @@ alias:: Text to Image Generation
   "definition": "Text-to-image generation is a class of generative AI techniques that synthesise photorealistic or stylised images from natural-language textual descriptions, typically employing diffusion models, autoregressive transformers, or hybrid architectures trained on large paired datasets of images and captions. The synthesis process encodes a text prompt into a conditioning latent representation, then iteratively denoises random noise into structured visual output guided by that signal through cross-attention mechanisms. Leading systems such as DALL-E 3, Stable Diffusion XL, Midjourney, Imagen, and Flux exemplify the paradigm across proprietary and open-weight deployment modes. The field intersects creative tooling, computer vision, multimodal AI, and contested questions of copyright, consent, and synthetic media provenance.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:image-generation", "label": "Image Generation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:image-generation",
+      "label": "Image Generation"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:latent-diffusion", "label": "Latent Diffusion"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:cross-attention", "label": "Cross Attention"},
-      {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"},
-      {"@id": "urn:ngm:class:clip", "label": "CLIP"},
-      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"}
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:cross-attention",
+        "label": "Cross Attention"
+      },
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "@id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "@id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"},
-      {"@id": "urn:ngm:class:text-to-video-generation", "label": "Text-to-Video Generation"},
-      {"@id": "urn:ngm:class:image-editing", "label": "Image Editing"},
-      {"@id": "urn:ngm:class:synthetic-data-generation", "label": "Synthetic Data Generation"}
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-video-generation",
+        "label": "Text-to-Video Generation"
+      },
+      {
+        "@id": "urn:ngm:class:image-editing",
+        "label": "Image Editing"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:large-scale-pretraining", "label": "Large-Scale Pretraining"},
-      {"@id": "urn:ngm:class:image-caption-dataset", "label": "Image-Caption Dataset"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+      {
+        "@id": "urn:ngm:class:large-scale-pretraining",
+        "label": "Large-Scale Pretraining"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:text-encoder", "label": "Text Encoder"},
-      {"@id": "urn:ngm:class:denoising-network", "label": "Denoising Network"},
-      {"@id": "urn:ngm:class:image-decoder", "label": "Image Decoder"}
+      {
+        "@id": "urn:ngm:class:text-encoder",
+        "label": "Text Encoder"
+      },
+      {
+        "@id": "urn:ngm:class:denoising-network",
+        "label": "Denoising Network"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:stable-diffusion", "label": "Stable Diffusion"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:lora", "label": "LoRA"},
-      {"@id": "urn:ngm:class:dreambooth", "label": "DreamBooth"},
-      {"@id": "urn:ngm:class:content-moderation", "label": "Content Moderation"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
+        "label": "Stable Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:lora",
+        "label": "LoRA"
+      },
+      {
+        "@id": "urn:ngm:class:kohya-dreambooth-and-similar",
+        "label": "DreamBooth"
+      },
+      {
+        "@id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:image-recognition", "label": "Image Recognition"},
-      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"}
+      {
+        "@id": "urn:ngm:class:image-recognition",
+        "label": "Image Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:c2pa", "label": "C2PA"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:intellectual-property", "label": "Intellectual Property"},
-      {"@id": "urn:ngm:class:synthetic-media", "label": "Synthetic Media"}
+      {
+        "@id": "urn:ngm:class:c2pa",
+        "label": "C2PA"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:intellectual-property-rights-framework",
+        "label": "Intellectual Property"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"},
-    {"@id": "urn:ngm:class:text-conditioned-image-synthesis", "label": "Text-Conditioned Image Synthesis"}
+    {
+      "@id": "urn:ngm:class:text-to-image",
+      "label": "Text-to-Image"
+    },
+    {
+      "@id": "urn:ngm:class:text-conditioned-image-synthesis",
+      "label": "Text-Conditioned Image Synthesis"
+    }
   ],
   "quality": 0.74,
   "provenance": {

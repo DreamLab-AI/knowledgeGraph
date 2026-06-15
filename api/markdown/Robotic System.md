@@ -91,7 +91,7 @@ alias:: RoboticSystem
         "label": "Robot Controller"
       },
       {
-        "@id": "urn:ngm:class:power-supply-unit",
+        "@id": "urn:ngm:class:power-supply",
         "label": "Power Supply Unit"
       }
     ],
@@ -105,7 +105,7 @@ alias:: RoboticSystem
         "label": "Real-Time Operating System"
       },
       {
-        "@id": "urn:ngm:class:localisation-and-mapping",
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
         "label": "Localisation and Mapping"
       }
     ],
@@ -157,7 +157,7 @@ alias:: RoboticSystem
         "label": "Human Robot Interaction"
       },
       {
-        "@id": "urn:ngm:class:collaborative-robotics",
+        "@id": "urn:ngm:class:collaborative-systems-modality-robotics",
         "label": "Collaborative Robotics"
       }
     ],
@@ -185,10 +185,6 @@ alias:: RoboticSystem
       {
         "@id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
-      },
-      {
-        "@id": "urn:ngm:class:mechatronics",
-        "label": "Mechatronics"
       }
     ]
   }

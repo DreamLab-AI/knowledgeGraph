@@ -22,10 +22,6 @@
         "label": "Linear Programming"
       },
       {
-        "id": "urn:ngm:class:network-flow",
-        "label": "Network Flow"
-      },
-      {
         "id": "urn:ngm:class:queuing-theory",
         "label": "Queuing Theory"
       },

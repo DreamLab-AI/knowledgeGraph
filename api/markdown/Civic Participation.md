@@ -110,10 +110,6 @@ public:: true
       {
         "@id": "urn:ngm:class:digital-democracy",
         "label": "Digital Democracy"
-      },
-      {
-        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-deliberation",
-        "label": "Public Deliberation"
       }
     ]
   },

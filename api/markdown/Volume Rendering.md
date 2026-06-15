@@ -73,10 +73,6 @@ public:: true
       {
         "@id": "urn:ngm:class:ray-casting",
         "label": "Ray Casting"
-      },
-      {
-        "@id": "urn:ngm:class:opacity-mapping",
-        "label": "Opacity Mapping"
       }
     ],
     "requires": [
@@ -87,10 +83,6 @@ public:: true
       {
         "@id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
-      },
-      {
-        "@id": "urn:ngm:class:3d-scalar-field",
-        "label": "3D Scalar Field"
       }
     ],
     "enables": [
@@ -103,11 +95,11 @@ public:: true
         "label": "Volumetric Video"
       },
       {
-        "@id": "urn:ngm:class:medical-imaging-visualization",
+        "@id": "urn:ngm:class:medical-imaging",
         "label": "Medical Imaging Visualization"
       },
       {
-        "@id": "urn:ngm:class:scientific-visualization",
+        "@id": "urn:ngm:class:scientific-visualisation",
         "label": "Scientific Visualization"
       }
     ],
@@ -136,10 +128,6 @@ public:: true
       }
     ],
     "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:surface-rendering",
-        "label": "Surface Rendering"
-      },
       {
         "@id": "urn:ngm:class:rasterization",
         "label": "Rasterization"

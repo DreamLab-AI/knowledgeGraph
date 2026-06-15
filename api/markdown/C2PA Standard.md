@@ -100,10 +100,6 @@ public:: true
         "label": "Cryptographic Signing"
       },
       {
-        "@id": "urn:ngm:class:metadata-framework",
-        "label": "Metadata Framework"
-      },
-      {
         "@id": "urn:ngm:class:trust-model",
         "label": "Trust Model"
       }
@@ -116,10 +112,6 @@ public:: true
       {
         "@id": "urn:ngm:class:content-provenance",
         "label": "Content Provenance"
-      },
-      {
-        "@id": "urn:ngm:class:media-verification",
-        "label": "Media Verification"
       }
     ]
   },

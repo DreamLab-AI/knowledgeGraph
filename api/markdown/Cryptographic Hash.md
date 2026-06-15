@@ -100,65 +100,165 @@ alias:: CryptographicHash
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:collision-resistance", "label": "Collision Resistance"},
-      {"@id": "urn:ngm:class:pre-image-resistance", "label": "Pre-image Resistance"},
-      {"@id": "urn:ngm:class:avalanche-effect", "label": "Avalanche Effect"}
+      {
+        "@id": "urn:ngm:class:collision-resistance",
+        "label": "Collision Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:avalanche-effect",
+        "label": "Avalanche Effect"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:one-way-function", "label": "One-Way Function"}
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:one-way-function",
+        "label": "One-Way Function"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-signatures", "label": "Digital Signatures"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:password-hashing", "label": "Password Hashing"},
-      {"@id": "urn:ngm:class:message-authentication-code", "label": "Message Authentication Code"},
-      {"@id": "urn:ngm:class:commitment-scheme", "label": "Commitment Scheme"}
+      {
+        "@id": "urn:ngm:class:digital-signatures",
+        "label": "Digital Signatures"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:password-hashing",
+        "label": "Password Hashing"
+      },
+      {
+        "@id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      },
+      {
+        "@id": "urn:ngm:class:commitment-scheme",
+        "label": "Commitment Scheme"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"},
-      {"@id": "urn:ngm:class:sha-3", "label": "SHA-3"},
-      {"@id": "urn:ngm:class:blake2", "label": "BLAKE2"},
-      {"@id": "urn:ngm:class:keccak-256", "label": "Keccak-256"}
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "@id": "urn:ngm:class:sha-3",
+        "label": "SHA-3"
+      },
+      {
+        "@id": "urn:ngm:class:blake2",
+        "label": "BLAKE2"
+      },
+      {
+        "@id": "urn:ngm:class:keccak-256",
+        "label": "Keccak-256"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:compression-function", "label": "Compression Function"},
-      {"@id": "urn:ngm:class:merkle-damgard-construction", "label": "Merkle-Damgard Construction"}
+      {
+        "@id": "urn:ngm:class:compression-function",
+        "label": "Compression Function"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-damgard-construction",
+        "label": "Merkle-Damgard Construction"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"},
-      {"@id": "urn:ngm:class:tamper-detection", "label": "Tamper Detection"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:tamper-detection",
+        "label": "Tamper Detection"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist-fips-180", "label": "NIST FIPS 180"},
-      {"@id": "urn:ngm:class:nist-fips-202", "label": "NIST FIPS 202"}
+      {
+        "@id": "urn:ngm:class:nist-fips-186",
+        "label": "NIST FIPS 180"
+      },
+      {
+        "@id": "urn:ngm:class:nist-fips-202",
+        "label": "NIST FIPS 202"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:symmetric-encryption", "label": "Symmetric Encryption"},
-      {"@id": "urn:ngm:class:checksums", "label": "Checksums"}
+      {
+        "@id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:checksums",
+        "label": "Checksums"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"},
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:supply-chain-provenance", "label": "Supply Chain Provenance"}
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-fingerprint", "label": "Digital Fingerprint"},
-      {"@id": "urn:ngm:class:blockchain-security", "label": "Blockchain Security"},
-      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"}
+      {
+        "@id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain Security"
+      },
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-    {"@id": "urn:ngm:class:message-digest", "label": "Message Digest"},
-    {"@id": "urn:ngm:class:digest-algorithm", "label": "Digest Algorithm"}
+    {
+      "@id": "urn:ngm:class:cryptographic-hash-function",
+      "label": "Cryptographic Hash Function"
+    },
+    {
+      "@id": "urn:ngm:class:message-digest",
+      "label": "Message Digest"
+    },
+    {
+      "@id": "urn:ngm:class:digest-algorithm",
+      "label": "Digest Algorithm"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -38,51 +38,135 @@ public:: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:confidential-computing", "label": "Confidential Computing"},
-      {"@id": "urn:ngm:class:hardware-root-of-trust", "label": "Hardware Root of Trust"}
+      {
+        "@id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-root-of-trust",
+        "label": "Hardware Root of Trust"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:remote-attestation", "label": "Remote Attestation"},
-      {"@id": "urn:ngm:class:memory-encryption", "label": "Memory Encryption"},
-      {"@id": "urn:ngm:class:sealed-storage", "label": "Sealed Storage"}
+      {
+        "@id": "urn:ngm:class:remote-attestation",
+        "label": "Remote Attestation"
+      },
+      {
+        "@id": "urn:ngm:class:memory-encryption",
+        "label": "Memory Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:sealed-storage",
+        "label": "Sealed Storage"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:hardware-root-of-trust", "label": "Hardware Root of Trust"},
-      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"}
+      {
+        "@id": "urn:ngm:class:hardware-root-of-trust",
+        "label": "Hardware Root of Trust"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:privacy-preserving-machine-learning", "label": "Privacy-Preserving Machine Learning"},
-      {"@id": "urn:ngm:class:secure-multi-party-computation", "label": "Secure Multi-Party Computation"},
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:confidential-smart-contract", "label": "Confidential Smart Contract"},
-      {"@id": "urn:ngm:class:digital-rights-management", "label": "Digital Rights Management"}
+      {
+        "@id": "urn:ngm:class:privacy-preserving-machine-learning",
+        "label": "Privacy-Preserving Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:confidential-smart-contract",
+        "label": "Confidential Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"},
-      {"@id": "urn:ngm:class:symmetric-encryption", "label": "Symmetric Encryption"},
-      {"@id": "urn:ngm:class:side-channel-attack", "label": "Side-Channel Attack"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:side-channel-attack",
+        "label": "Side-Channel Attack"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:hardware-security-module", "label": "Hardware Security Module"},
-      {"@id": "urn:ngm:class:virtual-machine", "label": "Virtual Machine"},
-      {"@id": "urn:ngm:class:hypervisor", "label": "Hypervisor"}
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:hypervisor",
+        "label": "Hypervisor"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:intel-sgx", "label": "Intel SGX"},
-      {"@id": "urn:ngm:class:arm-trustzone", "label": "ARM TrustZone"},
-      {"@id": "urn:ngm:class:amd-sev", "label": "AMD SEV"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:supply-chain-security", "label": "Supply Chain Security"}
+      {
+        "@id": "urn:ngm:class:intel-sgx",
+        "label": "Intel SGX"
+      },
+      {
+        "@id": "urn:ngm:class:arm-trust-zone",
+        "label": "ARM TrustZone"
+      },
+      {
+        "@id": "urn:ngm:class:amd-sev",
+        "label": "AMD SEV"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:hardware-enclave", "label": "Hardware Enclave"},
-    {"@id": "urn:ngm:class:processor-enclave", "label": "Processor Enclave"}
+    {
+      "@id": "urn:ngm:class:hardware-enclave",
+      "label": "Hardware Enclave"
+    },
+    {
+      "@id": "urn:ngm:class:processor-enclave",
+      "label": "Processor Enclave"
+    }
   ],
   "quality": 0.74,
   "provenance": {

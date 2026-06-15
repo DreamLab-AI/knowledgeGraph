@@ -151,16 +151,6 @@ public:: true
         "label": "Transformer Architecture"
       }
     ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:maskformer",
-        "label": "MaskFormer"
-      },
-      {
-        "@id": "urn:ngm:class:panoptic-deeplab",
-        "label": "Panoptic-DeepLab"
-      }
-    ],
     "uses": [
       {
         "@id": "urn:ngm:class:coco-dataset",
@@ -169,10 +159,6 @@ public:: true
       {
         "@id": "urn:ngm:class:cityscapes-dataset",
         "label": "Cityscapes Dataset"
-      },
-      {
-        "@id": "urn:ngm:class:mask-rcnn",
-        "label": "Mask R-CNN"
       }
     ],
     "contrastsWith": [

@@ -130,19 +130,11 @@ public:: true
         "label": "Constraint Solver"
       },
       {
-        "@id": "urn:ngm:class:force-integrator",
-        "label": "Force Integrator"
-      },
-      {
         "@id": "urn:ngm:class:physics-simulation-engine",
         "label": "Physics Simulation Engine"
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:3-d-transform-system",
-        "label": "3D Transform System"
-      },
       {
         "@id": "urn:ngm:class:animation-controller",
         "label": "Animation Controller"
@@ -177,7 +169,10 @@ public:: true
       }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
     ]
   },
   "quality": 0.35,

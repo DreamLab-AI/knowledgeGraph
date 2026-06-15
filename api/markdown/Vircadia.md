@@ -386,10 +386,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:assignment-client",
-        "label": "Assignment Client"
-      },
-      {
         "@id": "urn:ngm:class:audio-mixer",
         "label": "Audio Mixer"
       },
@@ -398,24 +394,8 @@ public:: true
         "label": "Domain Access Control"
       },
       {
-        "@id": "urn:ngm:class:domain-server",
-        "label": "Domain Server"
-      },
-      {
-        "@id": "urn:ngm:class:entity-server",
-        "label": "Entity Server"
-      },
-      {
-        "@id": "urn:ngm:class:java-script-scripting-engine",
-        "label": "JavaScript Scripting Engine"
-      },
-      {
         "@id": "urn:ngm:class:octree-spatial-index",
         "label": "Octree Spatial Index"
-      },
-      {
-        "@id": "urn:ngm:class:vr-client",
-        "label": "VR Client"
       },
       {
         "@id": "urn:ngm:class:avatar-system",
@@ -428,24 +408,8 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:c-runtime",
-        "label": "C++ Runtime"
-      },
-      {
-        "@id": "urn:ngm:class:open-source-infrastructure",
-        "label": "Open Source Infrastructure"
-      },
-      {
         "@id": "urn:ngm:class:qt-framework",
         "label": "Qt Framework"
-      },
-      {
-        "@id": "urn:ngm:class:udp-networking",
-        "label": "UDP Networking"
-      },
-      {
-        "@id": "urn:ngm:class:vr-hardware",
-        "label": "VR Hardware"
       },
       {
         "@id": "urn:ngm:class:3-d-rendering-engine",
@@ -462,20 +426,12 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:federated-virtual-worlds",
-        "label": "Federated Virtual Worlds"
-      },
-      {
         "@id": "urn:ngm:class:immersive-education",
         "label": "Immersive Education"
       },
       {
         "@id": "urn:ngm:class:open-metaverse-interoperability",
         "label": "Open Metaverse Interoperability"
-      },
-      {
-        "@id": "urn:ngm:class:self-hosted-metaverse",
-        "label": "Self-Hosted Metaverse"
       },
       {
         "@id": "urn:ngm:class:virtual-event",
@@ -496,20 +452,8 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:apache-2-0-licence",
+        "@id": "urn:ngm:class:apache-license-2-0",
         "label": "Apache 2.0 Licence"
-      },
-      {
-        "@id": "urn:ngm:class:assignment-client-architecture",
-        "label": "Assignment Client Architecture"
-      },
-      {
-        "@id": "urn:ngm:class:avatar-physics",
-        "label": "Avatar Physics"
-      },
-      {
-        "@id": "urn:ngm:class:domain-federation",
-        "label": "Domain Federation"
       },
       {
         "@id": "urn:ngm:class:frustum-culling",
@@ -534,7 +478,7 @@ public:: true
         "label": "Bullet Physics"
       },
       {
-        "@id": "urn:ngm:class:gl-tf-format",
+        "@id": "urn:ngm:class:gl-tf",
         "label": "glTF Format"
       },
       {
@@ -550,19 +494,11 @@ public:: true
         "label": "Qt Framework"
       },
       {
-        "@id": "urn:ngm:class:v8-java-script-engine",
-        "label": "V8 JavaScript Engine"
-      },
-      {
         "@id": "urn:ngm:class:web-rtc",
         "label": "WebRTC"
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:high-fidelity",
-        "label": "High Fidelity"
-      },
       {
         "@id": "urn:ngm:class:metaverse-standards-forum",
         "label": "Metaverse Standards Forum"
@@ -570,10 +506,6 @@ public:: true
       {
         "@id": "urn:ngm:class:open-metaverse-interoperability-group",
         "label": "Open Metaverse Interoperability Group"
-      },
-      {
-        "@id": "urn:ngm:class:philip-rosedale",
-        "label": "Philip Rosedale"
       },
       {
         "@id": "urn:ngm:class:web-xr",
@@ -598,32 +530,12 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:avatar-customisation",
-        "label": "Avatar Customisation"
-      },
-      {
-        "@id": "urn:ngm:class:desktop-clients",
-        "label": "Desktop Clients"
-      },
-      {
         "@id": "urn:ngm:class:domain-access-control",
         "label": "Domain Access Control"
       },
       {
-        "@id": "urn:ngm:class:full-body-tracking",
-        "label": "Full-Body Tracking"
-      },
-      {
-        "@id": "urn:ngm:class:java-script-scripting",
-        "label": "JavaScript Scripting"
-      },
-      {
         "@id": "urn:ngm:class:open-vr",
         "label": "OpenVR"
-      },
-      {
-        "@id": "urn:ngm:class:vr-headsets",
-        "label": "VR Headsets"
       },
       {
         "@id": "urn:ngm:class:spatial-audio",
@@ -632,7 +544,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:gl-tf-specification",
+        "@id": "urn:ngm:class:khronos-group-gl-tf-2-0-specification",
         "label": "glTF Specification"
       },
       {
@@ -648,7 +560,7 @@ public:: true
         "label": "Open Metaverse Interoperability Group"
       },
       {
-        "@id": "urn:ngm:class:web-xr-device-api",
+        "@id": "urn:ngm:class:w-3-c-web-xr-device-api",
         "label": "WebXR Device API"
       }
     ]

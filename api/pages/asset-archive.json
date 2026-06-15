@@ -37,14 +37,6 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:asset-preservation",
-        "label": "Asset Preservation"
-      },
-      {
-        "id": "urn:ngm:class:content-reuse",
-        "label": "Content Reuse"
-      },
-      {
         "id": "urn:ngm:class:cross-platform-interoperability",
         "label": "Cross-Platform Interoperability"
       }

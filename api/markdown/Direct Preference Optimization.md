@@ -454,24 +454,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:beta-temperature",
-        "label": "Beta Temperature"
-      },
-      {
         "@id": "urn:ngm:class:bradley-terry-model",
         "label": "Bradley-Terry Model"
-      },
-      {
-        "@id": "urn:ngm:class:implicit-reward-function",
-        "label": "Implicit Reward Function"
-      },
-      {
-        "@id": "urn:ngm:class:kl-divergence-regulariser",
-        "label": "KL Divergence Regulariser"
-      },
-      {
-        "@id": "urn:ngm:class:log-ratio-term",
-        "label": "Log-Ratio Term"
       },
       {
         "@id": "urn:ngm:class:preference-dataset",
@@ -488,20 +472,8 @@ public:: true
         "label": "Cross-Entropy Loss"
       },
       {
-        "@id": "urn:ngm:class:frozen-reference-policy",
-        "label": "Frozen Reference Policy"
-      },
-      {
         "@id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
-      },
-      {
-        "@id": "urn:ngm:class:pairwise-preference-data",
-        "label": "Pairwise Preference Data"
-      },
-      {
-        "@id": "urn:ngm:class:supervised-fine-tuned-model",
-        "label": "Supervised Fine-Tuned Model"
       },
       {
         "@id": "urn:ngm:class:stochastic-gradient-descent",
@@ -509,14 +481,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:harmlessness-tuning",
-        "label": "Harmlessness Tuning"
-      },
-      {
-        "@id": "urn:ngm:class:helpfulness-tuning",
-        "label": "Helpfulness Tuning"
-      },
       {
         "@id": "urn:ngm:class:instruction-following",
         "label": "Instruction Following"
@@ -526,31 +490,11 @@ public:: true
         "label": "Language Model Alignment"
       },
       {
-        "@id": "urn:ngm:class:multi-turn-dialogue-alignment",
-        "label": "Multi-Turn Dialogue Alignment"
-      },
-      {
-        "@id": "urn:ngm:class:safety-alignment",
+        "@id": "urn:ngm:class:safety-and-alignment",
         "label": "Safety Alignment"
-      },
-      {
-        "@id": "urn:ngm:class:style-transfer-alignment",
-        "label": "Style Transfer Alignment"
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:bradley-terry-luce-choice-model",
-        "label": "Bradley-Terry-Luce Choice Model"
-      },
-      {
-        "@id": "urn:ngm:class:implicit-reward-estimation",
-        "label": "Implicit Reward Estimation"
-      },
-      {
-        "@id": "urn:ngm:class:kl-constrained-reward-maximisation",
-        "label": "KL-Constrained Reward Maximisation"
-      },
       {
         "@id": "urn:ngm:class:maximum-likelihood-estimation",
         "label": "Maximum Likelihood Estimation"
@@ -566,16 +510,8 @@ public:: true
         "label": "Gradient Accumulation"
       },
       {
-        "@id": "urn:ngm:class:lo-ra-adaptation",
+        "@id": "urn:ngm:class:lo-ra",
         "label": "LoRA Adaptation"
-      },
-      {
-        "@id": "urn:ngm:class:log-likelihood-ratio",
-        "label": "Log-Likelihood Ratio"
-      },
-      {
-        "@id": "urn:ngm:class:sigmoid-function",
-        "label": "Sigmoid Function"
       },
       {
         "@id": "urn:ngm:class:mixed-precision-training",
@@ -584,32 +520,12 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:ipo",
-        "label": "IPO"
-      },
-      {
-        "@id": "urn:ngm:class:iterative-dpo",
-        "label": "Iterative DPO"
-      },
-      {
         "@id": "urn:ngm:class:kto",
         "label": "KTO"
       },
       {
-        "@id": "urn:ngm:class:online-dpo",
-        "label": "Online DPO"
-      },
-      {
-        "@id": "urn:ngm:class:orpo",
-        "label": "ORPO"
-      },
-      {
         "@id": "urn:ngm:class:rlhf",
         "label": "RLHF"
-      },
-      {
-        "@id": "urn:ngm:class:sim-po",
-        "label": "SimPO"
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology",
@@ -618,39 +534,11 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:open-weight-model-alignment",
-        "label": "Open-Weight Model Alignment"
-      },
-      {
-        "@id": "urn:ngm:class:preference-distillation",
-        "label": "Preference Distillation"
-      },
-      {
-        "@id": "urn:ngm:class:red-teaming-mitigation",
-        "label": "Red-Teaming Mitigation"
-      },
-      {
-        "@id": "urn:ngm:class:reward-model-replacement",
-        "label": "Reward Model Replacement"
-      },
-      {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI Training Methodology"
       }
     ],
     "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:aisi-inspect-framework",
-        "label": "AISI Inspect Framework"
-      },
-      {
-        "@id": "urn:ngm:class:axolotl",
-        "label": "Axolotl"
-      },
-      {
-        "@id": "urn:ngm:class:hugging-face-trl",
-        "label": "Hugging Face TRL"
-      },
       {
         "@id": "urn:ngm:class:iclr",
         "label": "ICLR"
@@ -662,10 +550,6 @@ public:: true
       {
         "@id": "urn:ngm:class:neur-ips",
         "label": "NeurIPS"
-      },
-      {
-        "@id": "urn:ngm:class:open-rlhf",
-        "label": "OpenRLHF"
       }
     ]
   },

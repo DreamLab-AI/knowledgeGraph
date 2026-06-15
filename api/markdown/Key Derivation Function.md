@@ -122,20 +122,12 @@ public:: true
       {
         "@id": "urn:ngm:class:bip39",
         "label": "BIP39"
-      },
-      {
-        "@id": "urn:ngm:class:bip32",
-        "label": "BIP32"
       }
     ],
     "requires": [
       {
         "@id": "urn:ngm:class:entropy-source",
         "label": "Entropy Source"
-      },
-      {
-        "@id": "urn:ngm:class:master-secret",
-        "label": "Master Secret"
       }
     ],
     "dependsOn": [
@@ -168,19 +160,9 @@ public:: true
         "label": "Symmetric Key Exchange"
       }
     ],
-    "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:nist-sp800-132",
-        "label": "NIST SP 800-132"
-      },
-      {
-        "@id": "urn:ngm:class:rfc-8018",
-        "label": "RFC 8018"
-      }
-    ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],

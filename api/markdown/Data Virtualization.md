@@ -110,10 +110,6 @@ public:: true
       {
         "@id": "urn:ngm:class:real-time-data-access",
         "label": "Real-Time Data Access"
-      },
-      {
-        "@id": "urn:ngm:class:unified-data-view",
-        "label": "Unified Data View"
       }
     ]
   },

@@ -38,57 +38,153 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:fundamental-ai-research", "label": "Fundamental AI Research"},
-      {"@id": "urn:ngm:class:llama", "label": "LLaMA"},
-      {"@id": "urn:ngm:class:segment-anything", "label": "Segment Anything"},
-      {"@id": "urn:ngm:class:imagebind", "label": "ImageBind"}
+      {
+        "@id": "urn:ngm:class:fundamental-ai-research",
+        "label": "Fundamental AI Research"
+      },
+      {
+        "@id": "urn:ngm:class:meta-llama-model-family",
+        "label": "LLaMA"
+      },
+      {
+        "@id": "urn:ngm:class:segment-anything",
+        "label": "Segment Anything"
+      },
+      {
+        "@id": "urn:ngm:class:imagebind",
+        "label": "ImageBind"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:open-source-ai", "label": "Open-Source AI"},
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"},
-      {"@id": "urn:ngm:class:on-device-inference", "label": "On-Device Inference"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+      {
+        "@id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "@id": "urn:ngm:class:on-device-inference",
+        "label": "On-Device Inference"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:instruction-tuning", "label": "Instruction Tuning"},
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
-      {"@id": "urn:ngm:class:self-supervised-learning", "label": "Self-Supervised Learning"},
-      {"@id": "urn:ngm:class:pytorch", "label": "PyTorch"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "label": "PyTorch"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:gpu-cluster", "label": "GPU Cluster"},
-      {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"}
+      {
+        "@id": "urn:ngm:class:gpu-cluster",
+        "label": "GPU Cluster"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:model-card", "label": "Model Card"}
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-model-card",
+        "label": "Model Card"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:openai", "label": "OpenAI"},
-      {"@id": "urn:ngm:class:google-deepmind", "label": "Google DeepMind"},
-      {"@id": "urn:ngm:class:anthropic", "label": "Anthropic"}
+      {
+        "@id": "urn:ngm:class:openai-research-organisation",
+        "label": "OpenAI"
+      },
+      {
+        "@id": "urn:ngm:class:google-ai-technology-corporation-deep-mind",
+        "label": "Google DeepMind"
+      },
+      {
+        "@id": "urn:ngm:class:anthropic",
+        "label": "Anthropic"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:zero-shot-learning", "label": "Zero-Shot Learning"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:open-weight-model", "label": "Open-Weight Model"},
-      {"@id": "urn:ngm:class:ai-research-organisation", "label": "AI Research Organisation"}
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:zero-shot-learning",
+        "label": "Zero-Shot Learning"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:open-weight-model",
+        "label": "Open-Weight Model"
+      },
+      {
+        "@id": "urn:ngm:class:ai-research-organisation",
+        "label": "AI Research Organisation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:meta-platforms-ai", "label": "Meta Platforms AI"},
-    {"@id": "urn:ngm:class:facebook-ai-research", "label": "Facebook AI Research"}
+    {
+      "@id": "urn:ngm:class:meta-platforms-ai",
+      "label": "Meta Platforms AI"
+    },
+    {
+      "@id": "urn:ngm:class:facebook-ai-research",
+      "label": "Facebook AI Research"
+    }
   ],
   "quality": 0.74,
   "provenance": {

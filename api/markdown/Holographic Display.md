@@ -74,32 +74,6 @@ public:: true
       {
         "@id": "urn:ngm:class:holography",
         "label": "Holography"
-      },
-      {
-        "@id": "urn:ngm:class:spatial-light-modulator",
-        "label": "Spatial Light Modulator"
-      },
-      {
-        "@id": "urn:ngm:class:coherent-light-source",
-        "label": "Coherent Light Source"
-      },
-      {
-        "@id": "urn:ngm:class:computer-generated-holography",
-        "label": "Computer-Generated Holography"
-      }
-    ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:diffractive-optical-element",
-        "label": "Diffractive Optical Element"
-      },
-      {
-        "@id": "urn:ngm:class:wavefront-reconstruction",
-        "label": "Wavefront Reconstruction"
-      },
-      {
-        "@id": "urn:ngm:class:hologram-rendering-pipeline",
-        "label": "Hologram Rendering Pipeline"
       }
     ],
     "enables": [
@@ -112,10 +86,6 @@ public:: true
         "label": "Augmented Reality"
       },
       {
-        "@id": "urn:ngm:class:volumetric-display",
-        "label": "Volumetric Display"
-      },
-      {
         "@id": "urn:ngm:class:telepresence",
         "label": "Telepresence"
       }
@@ -126,14 +96,6 @@ public:: true
         "label": "Light field"
       },
       {
-        "@id": "urn:ngm:class:diffraction",
-        "label": "Diffraction"
-      },
-      {
-        "@id": "urn:ngm:class:interference",
-        "label": "Interference"
-      },
-      {
         "@id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
       }
@@ -142,10 +104,6 @@ public:: true
       {
         "@id": "urn:ngm:class:stereoscopic-display",
         "label": "Stereoscopic Display"
-      },
-      {
-        "@id": "urn:ngm:class:autostereoscopic-display",
-        "label": "Autostereoscopic Display"
       },
       {
         "@id": "urn:ngm:class:flat-panel-display",
@@ -184,10 +142,6 @@ public:: true
       {
         "@id": "urn:ngm:class:mixed-reality",
         "label": "Mixed Reality"
-      },
-      {
-        "@id": "urn:ngm:class:optical-see-through",
-        "label": "Optical See-Through"
       }
     ]
   },

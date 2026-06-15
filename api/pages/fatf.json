@@ -22,16 +22,8 @@
         "label": "FATF Travel Rule"
       },
       {
-        "id": "urn:ngm:class:forty-recommendations",
+        "id": "urn:ngm:class:fatf-40-recommendations",
         "label": "Forty Recommendations"
-      },
-      {
-        "id": "urn:ngm:class:mutual-evaluation",
-        "label": "Mutual Evaluation"
-      },
-      {
-        "id": "urn:ngm:class:grey-list",
-        "label": "Grey List"
       }
     ],
     "requires": [
@@ -60,10 +52,6 @@
       {
         "id": "urn:ngm:class:financial-stability",
         "label": "Financial Stability"
-      },
-      {
-        "id": "urn:ngm:class:proliferation-financing-controls",
-        "label": "Proliferation Financing Controls"
       }
     ],
     "dependsOn": [],
@@ -114,10 +102,6 @@
         "label": "Standards Organization"
       },
       {
-        "id": "urn:ngm:class:g7",
-        "label": "G7"
-      },
-      {
         "id": "urn:ngm:class:financial-stability-board",
         "label": "Financial Stability Board"
       }
@@ -133,7 +117,7 @@
         "label": "Virtual Asset"
       },
       {
-        "id": "urn:ngm:class:virtual-asset-service-provider",
+        "id": "urn:ngm:class:bc-0456-virtual-asset-service-providers",
         "label": "Virtual Asset Service Provider"
       },
       {

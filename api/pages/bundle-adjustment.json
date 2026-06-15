@@ -24,10 +24,6 @@
       {
         "id": "urn:ngm:class:levenberg-marquardt-algorithm",
         "label": "Levenberg-Marquardt Algorithm"
-      },
-      {
-        "id": "urn:ngm:class:schur-complement-elimination",
-        "label": "Schur Complement Elimination"
       }
     ],
     "requires": [
@@ -58,23 +54,19 @@
         "label": "Photogrammetry"
       },
       {
-        "id": "urn:ngm:class:dense-point-cloud",
+        "id": "urn:ngm:class:point-cloud",
         "label": "Dense Point Cloud"
-      },
-      {
-        "id": "urn:ngm:class:map-building",
-        "label": "Map Building"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:incremental-reconstruction",
+        "id": "urn:ngm:class:3-d-reconstruction",
         "label": "Incremental Reconstruction"
       },
       {
-        "id": "urn:ngm:class:pose-graph-optimisation",
+        "id": "urn:ngm:class:pose-graph",
         "label": "Pose Graph Optimisation"
       }
     ],
@@ -84,7 +76,7 @@
         "label": "Augmented Reality"
       },
       {
-        "id": "urn:ngm:class:autonomous-vehicles",
+        "id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
       }
     ],
@@ -92,14 +84,6 @@
       {
         "id": "urn:ngm:class:sparse-matrix",
         "label": "Sparse Matrix"
-      },
-      {
-        "id": "urn:ngm:class:ceres-solver",
-        "label": "Ceres Solver"
-      },
-      {
-        "id": "urn:ngm:class:sift-features",
-        "label": "SIFT Features"
       }
     ],
     "supports": [],

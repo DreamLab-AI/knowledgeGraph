@@ -94,10 +94,6 @@ public:: true
         "label": "Skinning"
       },
       {
-        "@id": "urn:ngm:class:weight-painting",
-        "label": "Weight Painting"
-      },
-      {
         "@id": "urn:ngm:class:character-model",
         "label": "Character Model"
       }
@@ -108,7 +104,7 @@ public:: true
         "label": "Character Animation"
       },
       {
-        "@id": "urn:ngm:class:motion-capture-retargeting",
+        "@id": "urn:ngm:class:motion-capture",
         "label": "Motion Capture Retargeting"
       },
       {

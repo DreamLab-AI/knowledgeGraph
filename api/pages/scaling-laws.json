@@ -20,14 +20,6 @@
       {
         "id": "urn:ngm:class:parameter-count",
         "label": "Parameter Count"
-      },
-      {
-        "id": "urn:ngm:class:token-count",
-        "label": "Token Count"
-      },
-      {
-        "id": "urn:ngm:class:power-law-exponent",
-        "label": "Power Law Exponent"
       }
     ],
     "requires": [],
@@ -43,10 +35,6 @@
       {
         "id": "urn:ngm:class:capability-forecasting",
         "label": "Capability Forecasting"
-      },
-      {
-        "id": "urn:ngm:class:compute-optimal-training",
-        "label": "Compute-Optimal Training"
       }
     ],
     "dependsOn": [
@@ -59,10 +47,6 @@
         "label": "Training Data"
       },
       {
-        "id": "urn:ngm:class:compute-budget",
-        "label": "Compute Budget"
-      },
-      {
         "id": "urn:ngm:class:cross-entropy-loss",
         "label": "Cross-Entropy Loss"
       }
@@ -70,12 +54,8 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:emergent-abilities",
+        "id": "urn:ngm:class:emergent-capabilities",
         "label": "Emergent Abilities"
-      },
-      {
-        "id": "urn:ngm:class:diminishing-returns",
-        "label": "Diminishing Returns"
       }
     ],
     "bridgesTo": [
@@ -94,22 +74,14 @@
         "label": "Transformer Architecture"
       },
       {
-        "id": "urn:ngm:class:floating-point-operations",
-        "label": "Floating-Point Operations"
-      },
-      {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:foundation-models",
+        "id": "urn:ngm:class:foundation-model",
         "label": "Foundation Models"
-      },
-      {
-        "id": "urn:ngm:class:ai-infrastructure-planning",
-        "label": "AI Infrastructure Planning"
       },
       {
         "id": "urn:ngm:class:neural-architecture-search",
@@ -120,24 +92,8 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:power-law",
-        "label": "Power Law"
-      },
-      {
-        "id": "urn:ngm:class:irreducible-loss",
-        "label": "Irreducible Loss"
-      },
-      {
-        "id": "urn:ngm:class:data-efficiency",
-        "label": "Data Efficiency"
-      },
-      {
         "id": "urn:ngm:class:model-compression",
         "label": "Model Compression"
-      },
-      {
-        "id": "urn:ngm:class:empirical-machine-learning",
-        "label": "Empirical Machine Learning"
       }
     ]
   },

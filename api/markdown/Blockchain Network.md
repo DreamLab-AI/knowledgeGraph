@@ -531,7 +531,7 @@ alias:: BlockchainNetwork
         "label": "Archive Node"
       },
       {
-        "@id": "urn:ngm:class:finality-mechanism",
+        "@id": "urn:ngm:class:finality",
         "label": "Finality Mechanism"
       },
       {
@@ -539,7 +539,7 @@ alias:: BlockchainNetwork
         "label": "Mining Node"
       },
       {
-        "@id": "urn:ngm:class:peer-discovery-protocol",
+        "@id": "urn:ngm:class:peer-discovery",
         "label": "Peer Discovery Protocol"
       },
       {
@@ -577,7 +577,7 @@ alias:: BlockchainNetwork
         "label": "Cryptographic Hash Function"
       },
       {
-        "@id": "urn:ngm:class:network-transport-protocol",
+        "@id": "urn:ngm:class:transport-protocol",
         "label": "Network Transport Protocol"
       },
       {
@@ -633,7 +633,7 @@ alias:: BlockchainNetwork
         "label": "Casper FFG"
       },
       {
-        "@id": "urn:ngm:class:gossip-sub",
+        "@id": "urn:ngm:class:gossip-protocol",
         "label": "GossipSub"
       },
       {
@@ -643,10 +643,6 @@ alias:: BlockchainNetwork
       {
         "@id": "urn:ngm:class:lmd-ghost",
         "label": "LMD-GHOST"
-      },
-      {
-        "@id": "urn:ngm:class:gossip-protocol",
-        "label": "Gossip Protocol"
       },
       {
         "@id": "urn:ngm:class:nakamoto-consensus",
@@ -662,18 +658,6 @@ alias:: BlockchainNetwork
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:dev-p2-p",
-        "label": "devP2P"
-      },
-      {
-        "@id": "urn:ngm:class:discv5",
-        "label": "discv5"
-      },
-      {
-        "@id": "urn:ngm:class:dns-seed-bootstrap",
-        "label": "DNS Seed Bootstrap"
-      },
       {
         "@id": "urn:ngm:class:libp2p",
         "label": "libp2p"
@@ -773,20 +757,12 @@ alias:: BlockchainNetwork
         "label": "Bitcoin Improvement Proposals"
       },
       {
-        "@id": "urn:ngm:class:ethereum-smart-contract-platform-foundation-eips",
-        "label": "Ethereum Foundation EIPs"
-      },
-      {
         "@id": "urn:ngm:class:ieee-blockchain-initiative",
         "label": "IEEE Blockchain Initiative"
       },
       {
         "@id": "urn:ngm:class:iso-tc-307",
         "label": "ISO TC 307"
-      },
-      {
-        "@id": "urn:ngm:class:nist-sp-800-188",
-        "label": "NIST SP 800-188"
       }
     ]
   },

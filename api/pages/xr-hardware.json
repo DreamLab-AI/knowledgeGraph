@@ -46,10 +46,6 @@
       {
         "id": "urn:ngm:class:wireless-connectivity",
         "label": "Wireless Connectivity"
-      },
-      {
-        "id": "urn:ngm:class:xr-software-platform",
-        "label": "XR Software Platform"
       }
     ],
     "enables": [
@@ -88,7 +84,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:edge-ai-inference",
+        "id": "urn:ngm:class:edge-inference",
         "label": "Edge AI Inference"
       },
       {
@@ -141,7 +137,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:display-and-rendering",
+        "id": "urn:ngm:class:sc-display-and-rendering",
         "label": "Display and Rendering"
       },
       {

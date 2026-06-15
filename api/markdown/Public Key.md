@@ -74,53 +74,133 @@ public:: true
     "label": "Cryptographic Primitive"
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:public-encryption-key", "label": "Public Encryption Key"},
-    {"@id": "urn:ngm:class:asymmetric-public-key", "label": "Asymmetric Public Key"}
+    {
+      "@id": "urn:ngm:class:public-encryption-key",
+      "label": "Public Encryption Key"
+    },
+    {
+      "@id": "urn:ngm:class:asymmetric-public-key",
+      "label": "Asymmetric Public Key"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
-      {"@id": "urn:ngm:class:asymmetric-encryption", "label": "Asymmetric Encryption"},
-      {"@id": "urn:ngm:class:rsa-algorithm", "label": "RSA Algorithm"},
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:asymmetric-encryption",
+        "label": "Asymmetric Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:rsa-algorithm",
+        "label": "RSA Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:private-key", "label": "Private Key"},
-      {"@id": "urn:ngm:class:key-generation-algorithm", "label": "Key Generation Algorithm"}
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "@id": "urn:ngm:class:key-generation-algorithm",
+        "label": "Key Generation Algorithm"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-signature-verification", "label": "Digital Signature Verification"},
-      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"},
-      {"@id": "urn:ngm:class:encrypted-communication", "label": "Encrypted Communication"},
-      {"@id": "urn:ngm:class:key-exchange", "label": "Key Exchange"},
-      {"@id": "urn:ngm:class:certificate-binding", "label": "Certificate Binding"}
+      {
+        "@id": "urn:ngm:class:digital-signature-verification",
+        "label": "Digital Signature Verification"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-verification",
+        "label": "Cryptographic Verification"
+      },
+      {
+        "@id": "urn:ngm:class:secure-communication",
+        "label": "Encrypted Communication"
+      },
+      {
+        "@id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:asymmetric-key-pair", "label": "Asymmetric Key Pair"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:asymmetric-key-pair",
+        "label": "Asymmetric Key Pair"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:one-way-function", "label": "One-Way Function"},
-      {"@id": "urn:ngm:class:discrete-logarithm-problem", "label": "Discrete Logarithm Problem"}
+      {
+        "@id": "urn:ngm:class:one-way-function",
+        "label": "One-Way Function"
+      },
+      {
+        "@id": "urn:ngm:class:discrete-logarithm-problem",
+        "label": "Discrete Logarithm Problem"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist-nistir", "label": "NIST NISTIR"},
-      {"@id": "urn:ngm:class:iso-iec-23257-2021", "label": "ISO-IEC 23257 2021"},
-      {"@id": "urn:ngm:class:x-509-certificate-standard", "label": "X.509 Certificate Standard"}
+      {
+        "@id": "urn:ngm:class:nist-nistir",
+        "label": "NIST NISTIR"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-23257-2021",
+        "label": "ISO-IEC 23257 2021"
+      },
+      {
+        "@id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate Standard"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:private-key", "label": "Private Key"},
-      {"@id": "urn:ngm:class:symmetric-key", "label": "Symmetric Key"}
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "@id": "urn:ngm:class:symmetric-key",
+        "label": "Symmetric Key"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:cryptographic-keys", "label": "Cryptographic Keys"},
-      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"},
-      {"@id": "urn:ngm:class:digital-certificate", "label": "Digital Certificate"}
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "@id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain-wallet-address", "label": "Blockchain Wallet Address"},
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"}
+      {
+        "@id": "urn:ngm:class:address",
+        "label": "Blockchain Wallet Address"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
     ]
   },
   "quality": 0.75,

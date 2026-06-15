@@ -107,10 +107,6 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:root-finding-algorithms",
-        "label": "Root-Finding Algorithms"
-      },
-      {
         "@id": "urn:ngm:class:numerical-integration",
         "label": "Numerical Integration"
       },
@@ -129,16 +125,8 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:floating-point-representation",
-        "label": "Floating-Point Representation"
-      },
-      {
         "@id": "urn:ngm:class:error-analysis",
         "label": "Error Analysis"
-      },
-      {
-        "@id": "urn:ngm:class:iterative-methods",
-        "label": "Iterative Methods"
       }
     ],
     "supports": [
@@ -155,10 +143,6 @@ public:: true
       {
         "@id": "urn:ngm:class:symbolic-computation",
         "label": "Symbolic Computation"
-      },
-      {
-        "@id": "urn:ngm:class:exact-arithmetic",
-        "label": "Exact Arithmetic"
       }
     ],
     "bridgesTo": [
@@ -171,22 +155,14 @@ public:: true
         "label": "Computer Graphics"
       },
       {
-        "@id": "urn:ngm:class:robotics-motion-planning",
+        "@id": "urn:ngm:class:motion-planning",
         "label": "Robotics Motion Planning"
       }
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:algorithm-complexity",
-        "label": "Algorithm Complexity"
-      },
-      {
         "@id": "urn:ngm:class:parallel-computing",
         "label": "Parallel Computing"
-      },
-      {
-        "@id": "urn:ngm:class:computational-mathematics",
-        "label": "Computational Mathematics"
       }
     ]
   },

@@ -18,20 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:learnability",
-        "label": "Learnability"
-      },
-      {
         "id": "urn:ngm:class:efficiency",
         "label": "Efficiency"
-      },
-      {
-        "id": "urn:ngm:class:memorability",
-        "label": "Memorability"
-      },
-      {
-        "id": "urn:ngm:class:error-prevention",
-        "label": "Error Prevention"
       },
       {
         "id": "urn:ngm:class:user-satisfaction",
@@ -86,16 +74,7 @@
         "label": "Heuristic Evaluation"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:functionality",
-        "label": "Functionality"
-      },
-      {
-        "id": "urn:ngm:class:aesthetics",
-        "label": "Aesthetics"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:explainability",
@@ -106,7 +85,7 @@
         "label": "Human Robot Interaction"
       },
       {
-        "id": "urn:ngm:class:spatial-user-interface",
+        "id": "urn:ngm:class:spatial-user-interfaces",
         "label": "Spatial User Interface"
       }
     ],
@@ -140,7 +119,7 @@
         "label": "ISO 9241"
       },
       {
-        "id": "urn:ngm:class:wcag",
+        "id": "urn:ngm:class:wcag-2-2",
         "label": "WCAG"
       }
     ],

@@ -64,10 +64,6 @@ public:: true
       {
         "@id": "urn:ngm:class:retrieval-augmented-generation",
         "label": "Retrieval-Augmented Generation"
-      },
-      {
-        "@id": "urn:ngm:class:microsoft-graph",
-        "label": "Microsoft Graph"
       }
     ],
     "uses": [
@@ -100,10 +96,6 @@ public:: true
       {
         "@id": "urn:ngm:class:conversational-ai",
         "label": "Conversational AI"
-      },
-      {
-        "@id": "urn:ngm:class:automated-meeting-notes",
-        "label": "Automated Meeting Notes"
       }
     ],
     "implements": [
@@ -118,11 +110,11 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:microsoft-365",
+        "@id": "urn:ngm:class:microsoft",
         "label": "Microsoft 365"
       },
       {
-        "@id": "urn:ngm:class:azure-ai",
+        "@id": "urn:ngm:class:azure",
         "label": "Azure AI"
       }
     ],
@@ -132,12 +124,8 @@ public:: true
         "label": "ChatGPT"
       },
       {
-        "@id": "urn:ngm:class:google-gemini",
+        "@id": "urn:ngm:class:google-ai-technology-corporation-gemini",
         "label": "Google Gemini"
-      },
-      {
-        "@id": "urn:ngm:class:amazon-q",
-        "label": "Amazon Q"
       }
     ],
     "relatedTo": [
@@ -146,12 +134,8 @@ public:: true
         "label": "GitHub Copilot"
       },
       {
-        "@id": "urn:ngm:class:openai",
+        "@id": "urn:ngm:class:openai-research-organisation",
         "label": "OpenAI"
-      },
-      {
-        "@id": "urn:ngm:class:bing-chat",
-        "label": "Bing Chat"
       },
       {
         "@id": "urn:ngm:class:enterprise-ai",

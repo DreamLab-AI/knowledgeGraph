@@ -23,58 +23,127 @@ public:: true
   "definition": "gRPC (gRPC Remote Procedure Call) is an open-source, high-performance remote procedure call framework developed by Google and released in 2015, built on HTTP/2 transport and Protocol Buffers as the interface definition language and serialisation format. It supports four communication patterns—unary, server-streaming, client-streaming, and bidirectional streaming—enabling efficient, strongly typed, low-latency communication between services in polyglot distributed systems. gRPC generates client and server stubs in over a dozen programming languages from a single .proto service definition, making it the dominant choice for internal microservices communication in cloud-native architectures. Its binary encoding and multiplexed HTTP/2 connections deliver significantly lower overhead than REST/JSON at high throughput.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:communication-protocol",
+    "label": "Communication Protocol"
+  },
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:protocol-buffer", "label": "Protocol Buffer"},
-      {"@id": "urn:ngm:class:http2", "label": "HTTP/2"},
-      {"@id": "urn:ngm:class:tls", "label": "TLS"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:proto-file", "label": "Proto File"},
-      {"@id": "urn:ngm:class:stub-generation", "label": "Stub Generation"},
-      {"@id": "urn:ngm:class:bidirectional-streaming", "label": "Bidirectional Streaming"}
+      {
+        "@id": "urn:ngm:class:protocol-buffer",
+        "label": "Protocol Buffer"
+      },
+      {
+        "@id": "urn:ngm:class:http2",
+        "label": "HTTP/2"
+      },
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "TLS"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:remote-procedure-call", "label": "Remote Procedure Call"},
-      {"@id": "urn:ngm:class:service-interface-definition", "label": "Service Interface Definition"}
+      {
+        "@id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cloud-native-applications", "label": "Cloud-Native Applications"},
-      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"},
-      {"@id": "urn:ngm:class:envoy-proxy", "label": "Envoy Proxy"}
+      {
+        "@id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      },
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:envoy-proxy",
+        "label": "Envoy Proxy"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
-      {"@id": "urn:ngm:class:realtime-communication", "label": "Realtime Communication"},
-      {"@id": "urn:ngm:class:service-mesh", "label": "Service Mesh"},
-      {"@id": "urn:ngm:class:polyglot-microservices", "label": "Polyglot Microservices"}
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:realtime-communication",
+        "label": "Realtime Communication"
+      },
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Polyglot Microservices"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:load-balancing", "label": "Load Balancing"}
+      {
+        "@id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
-      {"@id": "urn:ngm:class:graphql", "label": "GraphQL"},
-      {"@id": "urn:ngm:class:websocket", "label": "WebSocket"}
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:graphql",
+        "label": "GraphQL"
+      },
+      {
+        "@id": "urn:ngm:class:websocket",
+        "label": "WebSocket"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:cloud-native-computing-foundation", "label": "Cloud Native Computing Foundation"}
+      {
+        "@id": "urn:ngm:class:cloud-native-computing-foundation",
+        "label": "Cloud Native Computing Foundation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:mobile-computing", "label": "Mobile Computing"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+      {
+        "@id": "urn:ngm:class:mobile-computing",
+        "label": "Mobile Computing"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:api-standard", "label": "API Standard"},
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
-      {"@id": "urn:ngm:class:mutual-tls", "label": "Mutual TLS"}
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:api-standard",
+        "label": "API Standard"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:mutual-tls",
+        "label": "Mutual TLS"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:grpc-framework", "label": "gRPC Framework"},
-    {"@id": "urn:ngm:class:google-remote-procedure-call", "label": "Google Remote Procedure Call"}
+    {
+      "@id": "urn:ngm:class:grpc-framework",
+      "label": "gRPC Framework"
+    },
+    {
+      "@id": "urn:ngm:class:google-remote-procedure-call",
+      "label": "Google Remote Procedure Call"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

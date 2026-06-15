@@ -58,11 +58,11 @@ public:: true
   "relations": {
     "implements": [
       {
-        "@id": "urn:ngm:class:bolt-specification",
+        "@id": "urn:ngm:class:bolt-specifications",
         "label": "BOLT Specification"
       },
       {
-        "@id": "urn:ngm:class:lightning-network-protocol",
+        "@id": "urn:ngm:class:lightning-network",
         "label": "Lightning Network Protocol"
       }
     ],
@@ -90,7 +90,7 @@ public:: true
         "label": "Gossip Protocol"
       },
       {
-        "@id": "urn:ngm:class:scala-programming-language",
+        "@id": "urn:ngm:class:programming-language",
         "label": "Scala Programming Language"
       },
       {
@@ -104,7 +104,7 @@ public:: true
         "label": "Micropayment"
       },
       {
-        "@id": "urn:ngm:class:instant-bitcoin-payment",
+        "@id": "urn:ngm:class:instant-settlement",
         "label": "Instant Bitcoin Payment"
       },
       {
@@ -128,7 +128,7 @@ public:: true
         "label": "Phoenix Wallet"
       },
       {
-        "@id": "urn:ngm:class:bitcoin-payment-network",
+        "@id": "urn:ngm:class:payment-network",
         "label": "Bitcoin Payment Network"
       }
     ],

@@ -48,62 +48,153 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:vertex-shader", "label": "Vertex Shader"},
-      {"@id": "urn:ngm:class:fragment-shader", "label": "Fragment Shader"},
-      {"@id": "urn:ngm:class:compute-shader", "label": "Compute Shader"},
-      {"@id": "urn:ngm:class:geometry-shader", "label": "Geometry Shader"},
-      {"@id": "urn:ngm:class:tessellation-shader", "label": "Tessellation Shader"}
+      {
+        "@id": "urn:ngm:class:vertex-shader",
+        "label": "Vertex Shader"
+      },
+      {
+        "@id": "urn:ngm:class:pixel-shader",
+        "label": "Fragment Shader"
+      },
+      {
+        "@id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "@id": "urn:ngm:class:geometry-shader",
+        "label": "Geometry Shader"
+      },
+      {
+        "@id": "urn:ngm:class:tessellation-shader",
+        "label": "Tessellation Shader"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"}
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:gpu", "label": "GPU"},
-      {"@id": "urn:ngm:class:graphics-api", "label": "Graphics API"},
-      {"@id": "urn:ngm:class:shader-compiler", "label": "Shader Compiler"}
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      },
+      {
+        "@id": "urn:ngm:class:shader-compiler",
+        "label": "Shader Compiler"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:ray-tracing", "label": "Ray Tracing"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:procedural-generation", "label": "Procedural Generation"}
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:spirv", "label": "SPIR-V"},
-      {"@id": "urn:ngm:class:parallel-computing", "label": "Parallel Computing"}
+      {
+        "@id": "urn:ngm:class:spirv",
+        "label": "SPIR-V"
+      },
+      {
+        "@id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:glsl", "label": "GLSL"},
-      {"@id": "urn:ngm:class:hlsl", "label": "HLSL"},
-      {"@id": "urn:ngm:class:wgsl", "label": "WGSL"},
-      {"@id": "urn:ngm:class:metal-shading-language", "label": "Metal Shading Language"}
+      {
+        "@id": "urn:ngm:class:glsl",
+        "label": "GLSL"
+      },
+      {
+        "@id": "urn:ngm:class:hlsl",
+        "label": "HLSL"
+      },
+      {
+        "@id": "urn:ngm:class:wgsl",
+        "label": "WGSL"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:webgpu", "label": "WebGPU"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"}
+      {
+        "@id": "urn:ngm:class:webgpu",
+        "label": "WebGPU"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:khronos-group", "label": "Khronos Group"},
-      {"@id": "urn:ngm:class:w3c", "label": "W3C"}
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:general-purpose-programming-language", "label": "General-Purpose Programming Language"},
-      {"@id": "urn:ngm:class:opencl-c", "label": "OpenCL C"}
+      {
+        "@id": "urn:ngm:class:programming-language",
+        "label": "General-Purpose Programming Language"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning-accelerator", "label": "Machine Learning Accelerator"},
-      {"@id": "urn:ngm:class:neural-rendering", "label": "Neural Rendering"}
+      {
+        "@id": "urn:ngm:class:machine-learning-accelerator",
+        "label": "Machine Learning Accelerator"
+      },
+      {
+        "@id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:graphics-processing-unit", "label": "Graphics Processing Unit"},
-      {"@id": "urn:ngm:class:texture-mapping", "label": "Texture Mapping"}
+      {
+        "@id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:shading-language", "label": "Shading Language"},
-    {"@id": "urn:ngm:class:gpu-shader-language", "label": "GPU Shader Language"}
+    {
+      "@id": "urn:ngm:class:shading-language",
+      "label": "Shading Language"
+    },
+    {
+      "@id": "urn:ngm:class:gpu-shader-language",
+      "label": "GPU Shader Language"
+    }
   ],
   "quality": 0.74,
   "provenance": {

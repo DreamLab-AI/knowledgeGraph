@@ -138,29 +138,17 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:claim",
-        "label": "Claim"
-      },
-      {
-        "@id": "urn:ngm:class:credential-metadata",
-        "label": "Credential Metadata"
-      },
-      {
         "@id": "urn:ngm:class:credential-schema",
         "label": "Credential Schema"
       },
       {
         "@id": "urn:ngm:class:cryptographic-proof",
         "label": "Cryptographic Proof"
-      },
-      {
-        "@id": "urn:ngm:class:issuer-signature",
-        "label": "Issuer Signature"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:identity-wallet",
+        "@id": "urn:ngm:class:digital-identity-wallet",
         "label": "Identity Wallet"
       },
       {
@@ -178,16 +166,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:privacy-preserving-verification",
-        "label": "Privacy-Preserving Verification"
-      },
-      {
         "@id": "urn:ngm:class:selective-disclosure",
         "label": "Selective Disclosure"
-      },
-      {
-        "@id": "urn:ngm:class:trustable-attestations",
-        "label": "Trustable Attestations"
       },
       {
         "@id": "urn:ngm:class:verifiable-presentations",

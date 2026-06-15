@@ -24,13 +24,13 @@
         "label": "Provenance Tracking"
       },
       {
-        "id": "urn:ngm:class:software-supply-chain-security",
+        "id": "urn:ngm:class:supply-chain-security",
         "label": "Software Supply Chain Security"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:bitcoin-network",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
         "label": "Bitcoin Network"
       },
       {

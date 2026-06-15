@@ -52,10 +52,6 @@
       {
         "id": "urn:ngm:class:autonomous-agent",
         "label": "Autonomous Agent"
-      },
-      {
-        "id": "urn:ngm:class:user-behavior-analytics",
-        "label": "User Behavior Analytics"
       }
     ],
     "dependsOn": [
@@ -70,17 +66,13 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:agent-policy",
-        "label": "Agent Policy"
-      },
-      {
         "id": "urn:ngm:class:markov-decision-process",
         "label": "Markov Decision Process"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:rule-based-system",
+        "id": "urn:ngm:class:rule-based-systems",
         "label": "Rule-Based System"
       }
     ],
@@ -104,7 +96,7 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:machine-learning-model",
+        "id": "urn:ngm:class:machine-learning-discipline-model",
         "label": "Machine Learning Model"
       },
       {
@@ -137,12 +129,7 @@
         "label": "Predictive Analytics"
       }
     ],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:cognitive-modeling",
-        "label": "Cognitive Modeling"
-      }
-    ]
+    "relatedTo": []
   },
   "wikilinks": [
     {

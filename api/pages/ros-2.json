@@ -22,23 +22,15 @@
         "label": "Nav2"
       },
       {
-        "id": "urn:ngm:class:moveit-2",
+        "id": "urn:ngm:class:move-it-2",
         "label": "MoveIt 2"
       },
       {
         "id": "urn:ngm:class:ros2-control",
         "label": "ros2_control"
-      },
-      {
-        "id": "urn:ngm:class:rviz2",
-        "label": "RViz 2"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:dds-security",
-        "label": "DDS-Security"
-      },
       {
         "id": "urn:ngm:class:quality-of-service",
         "label": "Quality Of Service"
@@ -73,7 +65,7 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:robotics-middleware",
+        "id": "urn:ngm:class:middleware",
         "label": "Robotics Middleware"
       },
       {
@@ -83,7 +75,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:ros-1",
+        "id": "urn:ngm:class:ros",
         "label": "ROS 1"
       }
     ],
@@ -97,7 +89,7 @@
         "label": "IndustrialAutomation"
       },
       {
-        "id": "urn:ngm:class:autonomous-vehicles",
+        "id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
       }
     ],
@@ -117,14 +109,6 @@
       {
         "id": "urn:ngm:class:publish-subscribe-pattern",
         "label": "Publish-Subscribe Pattern"
-      },
-      {
-        "id": "urn:ngm:class:colcon",
-        "label": "Colcon"
-      },
-      {
-        "id": "urn:ngm:class:unified-robot-description-format",
-        "label": "Unified Robot Description Format"
       }
     ],
     "supports": [
@@ -153,7 +137,7 @@
         "label": "Gazebo Simulator"
       },
       {
-        "id": "urn:ngm:class:cyclone-dds",
+        "id": "urn:ngm:class:dds",
         "label": "Cyclone DDS"
       }
     ]

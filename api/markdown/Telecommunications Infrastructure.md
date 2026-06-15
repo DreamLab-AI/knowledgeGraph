@@ -49,54 +49,135 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:fibre-optic-network", "label": "Fibre-Optic Network"},
-      {"@id": "urn:ngm:class:cellular-network", "label": "Cellular Network"},
-      {"@id": "urn:ngm:class:satellite-communication", "label": "Satellite Communication"},
-      {"@id": "urn:ngm:class:internet-exchange-point", "label": "Internet Exchange Point"},
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
-      {"@id": "urn:ngm:class:bandwidth-adaptation", "label": "Bandwidth Adaptation"}
+      {
+        "@id": "urn:ngm:class:fibre-optic-network",
+        "label": "Fibre-Optic Network"
+      },
+      {
+        "@id": "urn:ngm:class:cellular-network",
+        "label": "Cellular Network"
+      },
+      {
+        "@id": "urn:ngm:class:satellite-communication",
+        "label": "Satellite Communication"
+      },
+      {
+        "@id": "urn:ngm:class:internet-exchange-point",
+        "label": "Internet Exchange Point"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:remote-communication", "label": "Remote Communication"},
-      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
-      {"@id": "urn:ngm:class:video-conferencing", "label": "Video Conferencing"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"}
+      {
+        "@id": "urn:ngm:class:remote-communication",
+        "label": "Remote Communication"
+      },
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:latency-management-protocol", "label": "Latency Management Protocol"},
-      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:latency-management-protocol",
+        "label": "Latency Management Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:spectrum-management", "label": "Spectrum Management"},
-      {"@id": "urn:ngm:class:network-security", "label": "Network Security"}
+      {
+        "@id": "urn:ngm:class:spectrum-management",
+        "label": "Spectrum Management"
+      },
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:itu-r", "label": "ITU-R"},
-      {"@id": "urn:ngm:class:3gpp", "label": "3GPP"},
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"}
+      {
+        "@id": "urn:ngm:class:itu-r",
+        "label": "ITU-R"
+      },
+      {
+        "@id": "urn:ngm:class:3gpp",
+        "label": "3GPP"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:power-grid-infrastructure", "label": "Power Grid Infrastructure"},
-      {"@id": "urn:ngm:class:software-defined-networking", "label": "Software-Defined Networking"}
+      {
+        "@id": "urn:ngm:class:grid-infrastructure",
+        "label": "Power Grid Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:edge-ai", "label": "Edge AI"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:terrestrial-broadcast", "label": "Terrestrial Broadcast"}
+      {
+        "@id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:network-function-virtualisation", "label": "Network Function Virtualisation"},
-      {"@id": "urn:ngm:class:open-ran", "label": "Open RAN"}
+      {
+        "@id": "urn:ngm:class:network-function-virtualization",
+        "label": "Network Function Virtualisation"
+      },
+      {
+        "@id": "urn:ngm:class:open-ran",
+        "label": "Open RAN"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:comms-infrastructure", "label": "Comms Infrastructure"},
-    {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"}
+    {
+      "@id": "urn:ngm:class:comms-infrastructure",
+      "label": "Comms Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:network-infrastructure",
+      "label": "Network Infrastructure"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

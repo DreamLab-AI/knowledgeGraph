@@ -18,10 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:image-filtering",
-        "label": "Image Filtering"
-      },
-      {
         "id": "urn:ngm:class:morphological-operations",
         "label": "Morphological Operations"
       },
@@ -119,7 +115,7 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:machine-learning-pipeline",
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
       }
     ],

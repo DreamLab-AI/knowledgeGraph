@@ -282,24 +282,12 @@ public:: true
         "label": "Acquisition Function"
       },
       {
-        "@id": "urn:ngm:class:diversity-measure",
-        "label": "Diversity Measure"
-      },
-      {
-        "@id": "urn:ngm:class:label-budget",
-        "label": "Label Budget"
-      },
-      {
         "@id": "urn:ngm:class:query-strategy",
         "label": "Query Strategy"
       },
       {
-        "@id": "urn:ngm:class:stopping-criterion",
+        "@id": "urn:ngm:class:early-stopping",
         "label": "Stopping Criterion"
-      },
-      {
-        "@id": "urn:ngm:class:unlabeled-data-pool",
-        "label": "Unlabeled Data Pool"
       },
       {
         "@id": "urn:ngm:class:blockchain-oracle",
@@ -316,12 +304,8 @@ public:: true
         "label": "Evaluation Metric"
       },
       {
-        "@id": "urn:ngm:class:human-oracle",
+        "@id": "urn:ngm:class:oracle",
         "label": "Human Oracle"
-      },
-      {
-        "@id": "urn:ngm:class:query-selection-algorithm",
-        "label": "Query Selection Algorithm"
       },
       {
         "@id": "urn:ngm:class:unlabeled-data",
@@ -330,20 +314,12 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:cost-effective-annotation",
+        "@id": "urn:ngm:class:data-annotation",
         "label": "Cost-Effective Annotation"
       },
       {
-        "@id": "urn:ngm:class:expert-knowledge-elicitation",
-        "label": "Expert Knowledge Elicitation"
-      },
-      {
-        "@id": "urn:ngm:class:rapid-model-development",
+        "@id": "urn:ngm:class:rapid-prototyping",
         "label": "Rapid Model Development"
-      },
-      {
-        "@id": "urn:ngm:class:sample-complexity-reduction",
-        "label": "Sample Complexity Reduction"
       },
       {
         "@id": "urn:ngm:class:data-efficient-learning",
@@ -352,23 +328,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:density-weighted-methods",
-        "label": "Density-Weighted Methods"
-      },
-      {
-        "@id": "urn:ngm:class:expected-error-reduction",
-        "label": "Expected Error Reduction"
-      },
-      {
-        "@id": "urn:ngm:class:expected-model-change",
-        "label": "Expected Model Change"
-      },
-      {
-        "@id": "urn:ngm:class:query-by-committee",
-        "label": "Query-by-Committee"
-      },
-      {
-        "@id": "urn:ngm:class:uncertainty-sampling",
+        "@id": "urn:ngm:class:sampling",
         "label": "Uncertainty Sampling"
       },
       {

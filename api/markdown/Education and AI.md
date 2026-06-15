@@ -554,16 +554,8 @@ public:: true
         "label": "AI Detection"
       },
       {
-        "@id": "urn:ngm:class:ai-literacy-curriculum",
-        "label": "AI Literacy Curriculum"
-      },
-      {
         "@id": "urn:ngm:class:ai-tutor",
         "label": "AI Tutor"
-      },
-      {
-        "@id": "urn:ngm:class:automated-grading",
-        "label": "Automated Grading"
       },
       {
         "@id": "urn:ngm:class:intelligent-tutoring-system",
@@ -580,28 +572,8 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:assessment-framework",
-        "label": "Assessment Framework"
-      },
-      {
         "@id": "urn:ngm:class:curriculum",
         "label": "Curriculum"
-      },
-      {
-        "@id": "urn:ngm:class:pedagogical-theory",
-        "label": "Pedagogical Theory"
-      },
-      {
-        "@id": "urn:ngm:class:safeguarding-policy",
-        "label": "Safeguarding Policy"
-      },
-      {
-        "@id": "urn:ngm:class:student-data",
-        "label": "Student Data"
-      },
-      {
-        "@id": "urn:ngm:class:teacher-oversight",
-        "label": "Teacher Oversight"
       },
       {
         "@id": "urn:ngm:class:large-language-models",
@@ -610,16 +582,12 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:accessibility-provisioning",
+        "@id": "urn:ngm:class:accessibility",
         "label": "Accessibility Provisioning"
       },
       {
         "@id": "urn:ngm:class:differentiated-instruction",
         "label": "Differentiated Instruction"
-      },
-      {
-        "@id": "urn:ngm:class:formative-feedback",
-        "label": "Formative Feedback"
       },
       {
         "@id": "urn:ngm:class:mastery-learning",
@@ -628,14 +596,6 @@ public:: true
       {
         "@id": "urn:ngm:class:personalised-learning",
         "label": "Personalised Learning"
-      },
-      {
-        "@id": "urn:ngm:class:scalable-tutoring",
-        "label": "Scalable Tutoring"
-      },
-      {
-        "@id": "urn:ngm:class:teacher-time-recovery",
-        "label": "Teacher Time Recovery"
       }
     ],
     "implements": [
@@ -648,35 +608,11 @@ public:: true
         "label": "Item Response Theory"
       },
       {
-        "@id": "urn:ngm:class:retrieval-practice",
-        "label": "Retrieval Practice"
-      },
-      {
-        "@id": "urn:ngm:class:rubric-based-assessment",
-        "label": "Rubric-Based Assessment"
-      },
-      {
-        "@id": "urn:ngm:class:socratic-dialogue",
-        "label": "Socratic Dialogue"
-      },
-      {
         "@id": "urn:ngm:class:spaced-repetition",
         "label": "Spaced Repetition"
-      },
-      {
-        "@id": "urn:ngm:class:worked-example-generation",
-        "label": "Worked Example Generation"
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:khan-academy",
-        "label": "Khan Academy"
-      },
-      {
-        "@id": "urn:ngm:class:microsoft-immersive-reader",
-        "label": "Microsoft Immersive Reader"
-      },
       {
         "@id": "urn:ngm:class:claude",
         "label": "Claude"
@@ -700,14 +636,6 @@ public:: true
         "label": "AI Literacy"
       },
       {
-        "@id": "urn:ngm:class:assessment-integrity",
-        "label": "Assessment Integrity"
-      },
-      {
-        "@id": "urn:ngm:class:datafication",
-        "label": "Datafication"
-      },
-      {
         "@id": "urn:ngm:class:ethan-mollick",
         "label": "Ethan Mollick"
       },
@@ -724,76 +652,10 @@ public:: true
         "label": "Generative AI"
       }
     ],
-    "supports": [
-      {
-        "@id": "urn:ngm:class:aleks",
-        "label": "ALEKS"
-      },
-      {
-        "@id": "urn:ngm:class:carnegie-learning-mathia",
-        "label": "Carnegie Learning Mathia"
-      },
-      {
-        "@id": "urn:ngm:class:century-tech",
-        "label": "Century Tech"
-      },
-      {
-        "@id": "urn:ngm:class:duolingo-max",
-        "label": "Duolingo Max"
-      },
-      {
-        "@id": "urn:ngm:class:gradescope",
-        "label": "Gradescope"
-      },
-      {
-        "@id": "urn:ngm:class:khanmigo",
-        "label": "Khanmigo"
-      },
-      {
-        "@id": "urn:ngm:class:magic-school",
-        "label": "MagicSchool"
-      },
-      {
-        "@id": "urn:ngm:class:squirrel-ai",
-        "label": "Squirrel AI"
-      },
-      {
-        "@id": "urn:ngm:class:synthesis-tutor",
-        "label": "Synthesis Tutor"
-      },
-      {
-        "@id": "urn:ngm:class:tassomai",
-        "label": "Tassomai"
-      },
-      {
-        "@id": "urn:ngm:class:turnitin-ai-detection",
-        "label": "Turnitin AI Detection"
-      }
-    ],
     "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:df-e-generative-ai-guidance",
-        "label": "DfE Generative AI Guidance"
-      },
       {
         "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument-annex-iii",
         "label": "EU AI Act Annex III"
-      },
-      {
-        "@id": "urn:ngm:class:ib-ai-policy",
-        "label": "IB AI Policy"
-      },
-      {
-        "@id": "urn:ngm:class:oecd-ai-literacy-framework",
-        "label": "OECD AI Literacy Framework"
-      },
-      {
-        "@id": "urn:ngm:class:ofqual-ai-guidance",
-        "label": "Ofqual AI Guidance"
-      },
-      {
-        "@id": "urn:ngm:class:unesco-ai-education-recommendation",
-        "label": "UNESCO AI Education Recommendation"
       }
     ]
   },

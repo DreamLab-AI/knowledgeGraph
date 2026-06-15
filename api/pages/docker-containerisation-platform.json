@@ -26,10 +26,6 @@
         "label": "Container Registry"
       },
       {
-        "id": "urn:ngm:class:docker-compose",
-        "label": "Docker Compose"
-      },
-      {
         "id": "urn:ngm:class:container-runtime",
         "label": "Container Runtime"
       }
@@ -38,14 +34,6 @@
       {
         "id": "urn:ngm:class:linux-kernel",
         "label": "Linux Kernel"
-      },
-      {
-        "id": "urn:ngm:class:operating-system-namespaces",
-        "label": "Operating System Namespaces"
-      },
-      {
-        "id": "urn:ngm:class:control-groups",
-        "label": "Control Groups"
       }
     ],
     "enables": [
@@ -54,7 +42,7 @@
         "label": "Cloud-Native Applications"
       },
       {
-        "id": "urn:ngm:class:continuous-integration-continuous-delivery",
+        "id": "urn:ngm:class:continuous-integration",
         "label": "Continuous Integration Continuous Delivery"
       },
       {
@@ -87,7 +75,7 @@
         "label": "Virtual Machine"
       },
       {
-        "id": "urn:ngm:class:serverless-computing",
+        "id": "urn:ngm:class:serverless-architecture",
         "label": "Serverless Computing"
       }
     ],
@@ -101,16 +89,7 @@
         "label": "GPU Computing"
       }
     ],
-    "uses": [
-      {
-        "id": "urn:ngm:class:overlay-filesystem",
-        "label": "Overlay Filesystem"
-      },
-      {
-        "id": "urn:ngm:class:container-networking",
-        "label": "Container Networking"
-      }
-    ],
+    "uses": [],
     "supports": [
       {
         "id": "urn:ngm:class:machine-learning-discipline-pipeline",

@@ -18,15 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:rtps-protocol",
-        "label": "RTPS Protocol"
-      },
-      {
-        "id": "urn:ngm:class:quality-of-service-policy",
+        "id": "urn:ngm:class:quality-of-service",
         "label": "Quality of Service Policy"
       },
       {
-        "id": "urn:ngm:class:data-centric-publish-subscribe",
+        "id": "urn:ngm:class:publish-subscribe-pattern",
         "label": "Data-Centric Publish-Subscribe"
       }
     ],
@@ -34,10 +30,6 @@
       {
         "id": "urn:ngm:class:network-transport",
         "label": "Network Transport"
-      },
-      {
-        "id": "urn:ngm:class:multicast-networking",
-        "label": "Multicast Networking"
       }
     ],
     "enables": [
@@ -113,7 +105,7 @@
         "label": "ROS 2"
       },
       {
-        "id": "urn:ngm:class:safety-critical-system",
+        "id": "urn:ngm:class:safety-critical-systems",
         "label": "Safety-Critical System"
       },
       {

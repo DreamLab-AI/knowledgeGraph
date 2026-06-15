@@ -41,22 +41,13 @@
         "label": "Semantic Web Linked Data Standard"
       },
       {
-        "id": "urn:ngm:class:automated-validation",
-        "label": "Automated Validation"
-      },
-      {
         "id": "urn:ngm:class:code-generation",
         "label": "Code Generation"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:schemaless-data",
-        "label": "Schemaless Data"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:artificial-intelligence",

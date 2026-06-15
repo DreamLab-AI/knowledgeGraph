@@ -18,10 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:query-pipeline",
-        "label": "Query Pipeline"
-      },
-      {
         "id": "urn:ngm:class:data-connectors",
         "label": "Data Connectors"
       },
@@ -32,11 +28,11 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:document-chunking",
+        "id": "urn:ngm:class:chunking",
         "label": "Document Chunking"
       },
       {
-        "id": "urn:ngm:class:text-embedding",
+        "id": "urn:ngm:class:text-embeddings",
         "label": "Text Embedding"
       },
       {
@@ -62,7 +58,7 @@
         "label": "Multi-Agent Systems"
       },
       {
-        "id": "urn:ngm:class:document-question-answering",
+        "id": "urn:ngm:class:question-answering",
         "label": "Document Question Answering"
       }
     ],
@@ -107,11 +103,11 @@
         "label": "Large Language Models"
       },
       {
-        "id": "urn:ngm:class:transformer-models",
+        "id": "urn:ngm:class:transformer",
         "label": "Transformer Models"
       },
       {
-        "id": "urn:ngm:class:approximate-nearest-neighbour-search",
+        "id": "urn:ngm:class:nearest-neighbor-search",
         "label": "Approximate Nearest Neighbour Search"
       }
     ],

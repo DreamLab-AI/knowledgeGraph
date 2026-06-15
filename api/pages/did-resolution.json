@@ -20,14 +20,6 @@
       {
         "id": "urn:ngm:class:did-document",
         "label": "DID Document"
-      },
-      {
-        "id": "urn:ngm:class:did-resolution-metadata",
-        "label": "DID Resolution Metadata"
-      },
-      {
-        "id": "urn:ngm:class:did-document-metadata",
-        "label": "DID Document Metadata"
       }
     ],
     "requires": [
@@ -50,7 +42,7 @@
         "label": "Identity Verification System"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential",
+        "id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       },
       {
@@ -65,13 +57,13 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:w3c-did-core-specification",
+        "id": "urn:ngm:class:w-3-c-did-core-specification",
         "label": "W3C DID Core Specification"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:dns-resolution",
+        "id": "urn:ngm:class:dns",
         "label": "DNS Resolution"
       },
       {
@@ -95,7 +87,7 @@
         "label": "DID Resolver"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -117,16 +109,8 @@
         "label": "Identity Management"
       },
       {
-        "id": "urn:ngm:class:did-deref",
-        "label": "DID URL Dereferencing"
-      },
-      {
         "id": "urn:ngm:class:service-endpoint",
         "label": "Service Endpoint"
-      },
-      {
-        "id": "urn:ngm:class:did-comm",
-        "label": "DIDComm"
       }
     ]
   },

@@ -106,10 +106,6 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:ai-orchestration",
-        "label": "AI Orchestration"
-      },
-      {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
       },

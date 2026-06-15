@@ -24,18 +24,6 @@
       {
         "id": "urn:ngm:class:crm-integration",
         "label": "CRM Integration"
-      },
-      {
-        "id": "urn:ngm:class:sales-pipeline-management",
-        "label": "Sales Pipeline Management"
-      },
-      {
-        "id": "urn:ngm:class:contact-management",
-        "label": "Contact Management"
-      },
-      {
-        "id": "urn:ngm:class:campaign-management",
-        "label": "Campaign Management"
       }
     ],
     "requires": [
@@ -56,18 +44,6 @@
       {
         "id": "urn:ngm:class:customer-support-automation",
         "label": "Customer Support Automation"
-      },
-      {
-        "id": "urn:ngm:class:revenue-operations",
-        "label": "Revenue Operations"
-      },
-      {
-        "id": "urn:ngm:class:lead-qualification",
-        "label": "Lead Qualification"
-      },
-      {
-        "id": "urn:ngm:class:churn-prediction",
-        "label": "Churn Prediction"
       }
     ],
     "dependsOn": [
@@ -107,10 +83,6 @@
         "label": "Enterprise Workflow"
       },
       {
-        "id": "urn:ngm:class:marketing-automation",
-        "label": "Marketing Automation"
-      },
-      {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
       }
@@ -119,10 +91,6 @@
       {
         "id": "urn:ngm:class:omnichannel",
         "label": "Omnichannel"
-      },
-      {
-        "id": "urn:ngm:class:customer-360",
-        "label": "Customer 360"
       },
       {
         "id": "urn:ngm:class:consent-management",

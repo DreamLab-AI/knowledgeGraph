@@ -63,53 +63,133 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:etl-pipeline", "label": "ETL Pipeline"},
-      {"@id": "urn:ngm:class:batch-processing", "label": "Batch Processing"},
-      {"@id": "urn:ngm:class:metadata-catalog", "label": "Metadata Catalog"},
-      {"@id": "urn:ngm:class:object-storage", "label": "Object Storage"}
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:etl-pipeline",
+        "label": "ETL Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      },
+      {
+        "@id": "urn:ngm:class:metadata-catalog",
+        "label": "Metadata Catalog"
+      },
+      {
+        "@id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:data-architecture", "label": "Data Architecture"},
-      {"@id": "urn:ngm:class:modern-data-stack", "label": "Modern Data Stack"}
+      {
+        "@id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:distributed-file-system", "label": "Distributed File System"},
-      {"@id": "urn:ngm:class:cloud-storage", "label": "Cloud Storage"}
+      {
+        "@id": "urn:ngm:class:distributed-file-system",
+        "label": "Distributed File System"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning-discipline-pipeline", "label": "Machine Learning Pipeline"},
-      {"@id": "urn:ngm:class:machine-learning-discipline-infrastructure", "label": "Machine Learning Infrastructure"},
-      {"@id": "urn:ngm:class:big-data-analytics", "label": "Big Data Analytics"},
-      {"@id": "urn:ngm:class:exploratory-data-analysis", "label": "Exploratory Data Analysis"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-infrastructure",
+        "label": "Machine Learning Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:data-analytics",
+        "label": "Big Data Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:exploratory-data-analysis",
+        "label": "Exploratory Data Analysis"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
-      {"@id": "urn:ngm:class:apache-parquet", "label": "Apache Parquet"},
-      {"@id": "urn:ngm:class:apache-iceberg", "label": "Apache Iceberg"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "@id": "urn:ngm:class:apache-parquet",
+        "label": "Apache Parquet"
+      },
+      {
+        "@id": "urn:ngm:class:apache-iceberg",
+        "label": "Apache Iceberg"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:stream-processing", "label": "Stream Processing"},
-      {"@id": "urn:ngm:class:real-time-analytics", "label": "Real-Time Analytics"}
+      {
+        "@id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-analytics",
+        "label": "Real-Time Analytics"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:data-warehouse", "label": "Data Warehouse"},
-      {"@id": "urn:ngm:class:relational-database", "label": "Relational Database"}
+      {
+        "@id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      },
+      {
+        "@id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:data-lakehouse", "label": "Data Lakehouse"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:lakehouse-architecture",
+        "label": "Data Lakehouse"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-fabric-architecture", "label": "Data Fabric Architecture"},
-      {"@id": "urn:ngm:class:graph-database", "label": "Graph Database"},
-      {"@id": "urn:ngm:class:data-mesh", "label": "Data Mesh"}
+      {
+        "@id": "urn:ngm:class:data-fabric-architecture",
+        "label": "Data Fabric Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "@id": "urn:ngm:class:data-mesh",
+        "label": "Data Mesh"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:enterprise-data-lake", "label": "Enterprise Data Lake"},
-    {"@id": "urn:ngm:class:big-data-lake", "label": "Big Data Lake"}
+    {
+      "@id": "urn:ngm:class:enterprise-data-lake",
+      "label": "Enterprise Data Lake"
+    },
+    {
+      "@id": "urn:ngm:class:big-data-lake",
+      "label": "Big Data Lake"
+    }
   ],
   "quality": 0.75,
   "provenance": {

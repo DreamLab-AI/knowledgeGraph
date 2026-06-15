@@ -19,17 +19,13 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:tamper-resistance",
-        "label": "Tamper Resistance"
-      },
-      {
         "id": "urn:ngm:class:hardware-root-of-trust",
         "label": "Hardware Root of Trust"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -43,10 +39,6 @@
       {
         "id": "urn:ngm:class:certificate-authority",
         "label": "Certificate Authority"
-      },
-      {
-        "id": "urn:ngm:class:payment-security",
-        "label": "Payment Security"
       },
       {
         "id": "urn:ngm:class:secure-boot",
@@ -65,19 +57,11 @@
         "label": "Secure Enclave"
       },
       {
-        "id": "urn:ngm:class:software-keystore",
-        "label": "Software Keystore"
-      },
-      {
         "id": "urn:ngm:class:trusted-platform-module",
         "label": "Trusted Platform Module"
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:blockchain-key-custody",
-        "label": "Blockchain Key Custody"
-      },
       {
         "id": "urn:ngm:class:confidential-computing",
         "label": "Confidential Computing"
@@ -101,27 +85,19 @@
         "label": "Random Number Generation"
       },
       {
-        "id": "urn:ngm:class:pkcs11",
-        "label": "PKCS#11"
-      },
-      {
-        "id": "urn:ngm:class:symmetric-key-cryptography",
+        "id": "urn:ngm:class:symmetric-encryption",
         "label": "Symmetric Key Cryptography"
       },
       {
-        "id": "urn:ngm:class:asymmetric-key-cryptography",
+        "id": "urn:ngm:class:asymmetric-cryptography",
         "label": "Asymmetric Key Cryptography"
       }
     ],
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:fips-140",
+        "id": "urn:ngm:class:fips-140-3",
         "label": "FIPS 140"
-      },
-      {
-        "id": "urn:ngm:class:common-criteria",
-        "label": "Common Criteria"
       },
       {
         "id": "urn:ngm:class:pci-dss",
@@ -130,10 +106,6 @@
     ],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:cryptographic-hardware",
-        "label": "Cryptographic Hardware"
-      },
       {
         "id": "urn:ngm:class:cryptography",
         "label": "Cryptography"
@@ -147,7 +119,7 @@
         "label": "Secure Element"
       },
       {
-        "id": "urn:ngm:class:cloud-key-management-service",
+        "id": "urn:ngm:class:key-management",
         "label": "Cloud Key Management Service"
       }
     ]

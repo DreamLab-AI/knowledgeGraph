@@ -18,10 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:ctoken",
-        "label": "cToken"
-      },
-      {
         "id": "urn:ngm:class:compound-governor-bravo",
         "label": "Compound Governor Bravo"
       },
@@ -68,7 +64,7 @@
         "label": "Price Oracle"
       },
       {
-        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       }
     ],
@@ -88,10 +84,6 @@
       }
     ],
     "bridgesTo": [
-      {
-        "id": "urn:ngm:class:algorithmic-market-design",
-        "label": "Algorithmic Market Design"
-      },
       {
         "id": "urn:ngm:class:mechanism-design",
         "label": "Mechanism Design"
@@ -129,19 +121,7 @@
         "label": "Total Value Locked"
       },
       {
-        "id": "urn:ngm:class:liquidation",
-        "label": "Liquidation"
-      },
-      {
-        "id": "urn:ngm:class:collateral-factor",
-        "label": "Collateral Factor"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-market-operations",
-        "label": "Autonomous Market Operations"
-      },
-      {
-        "id": "urn:ngm:class:decentralised-finance-protocol",
+        "id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance Protocol"
       }
     ]

@@ -24,20 +24,12 @@
       {
         "id": "urn:ngm:class:denoising-network",
         "label": "Denoising Network"
-      },
-      {
-        "id": "urn:ngm:class:image-decoder",
-        "label": "Image Decoder"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:large-scale-pretraining",
         "label": "Large-Scale Pretraining"
-      },
-      {
-        "id": "urn:ngm:class:image-caption-dataset",
-        "label": "Image-Caption Dataset"
       },
       {
         "id": "urn:ngm:class:gpu-compute",
@@ -50,7 +42,7 @@
         "label": "Prompt Engineering"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai",
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       },
       {
@@ -88,7 +80,7 @@
         "label": "AI Governance"
       },
       {
-        "id": "urn:ngm:class:intellectual-property",
+        "id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Intellectual Property"
       },
       {
@@ -135,7 +127,7 @@
         "label": "Generative AI"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion",
+        "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
       },
       {
@@ -147,7 +139,7 @@
         "label": "LoRA"
       },
       {
-        "id": "urn:ngm:class:dreambooth",
+        "id": "urn:ngm:class:kohya-dreambooth-and-similar",
         "label": "DreamBooth"
       },
       {

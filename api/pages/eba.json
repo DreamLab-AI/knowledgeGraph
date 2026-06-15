@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:binding-technical-standards",
+        "id": "urn:ngm:class:technical-standards",
         "label": "Binding Technical Standards"
       },
       {
@@ -26,7 +26,7 @@
         "label": "Stress Testing"
       },
       {
-        "id": "urn:ngm:class:supervisory-convergence",
+        "id": "urn:ngm:class:convergence",
         "label": "Supervisory Convergence"
       }
     ],
@@ -50,19 +50,11 @@
         "label": "AML KYC Compliance"
       },
       {
-        "id": "urn:ngm:class:single-rulebook",
-        "label": "Single Rulebook"
-      },
-      {
-        "id": "urn:ngm:class:supervisory-transparency",
+        "id": "urn:ngm:class:transparency",
         "label": "Supervisory Transparency"
       }
     ],
     "dependsOn": [
-      {
-        "id": "urn:ngm:class:eu-banking-directives",
-        "label": "EU Banking Directives"
-      },
       {
         "id": "urn:ngm:class:basel-accords",
         "label": "Basel Accords"
@@ -74,13 +66,13 @@
         "label": "Capital Requirements Regulation"
       },
       {
-        "id": "urn:ngm:class:digital-operational-resilience-act",
+        "id": "urn:ngm:class:operational-resilience",
         "label": "Digital Operational Resilience Act"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:ecb-banking-supervision",
+        "id": "urn:ngm:class:ecb",
         "label": "ECB Banking Supervision"
       },
       {
@@ -119,16 +111,7 @@
         "label": "European Commission"
       }
     ],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:european-system-of-financial-supervision",
-        "label": "European System of Financial Supervision"
-      },
-      {
-        "id": "urn:ngm:class:eu-financial-regulatory-architecture",
-        "label": "EU Financial Regulatory Architecture"
-      }
-    ],
+    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:regulatory-framework",

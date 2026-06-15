@@ -106,12 +106,6 @@ alias:: TELE-028-horizon-workrooms
         "@id": "urn:ngm:class:ai-avatars",
         "label": "AI Avatars"
       }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:virtual-whiteboarding",
-        "label": "VirtualWhiteboarding"
-      }
     ]
   },
   "quality": 0.5,

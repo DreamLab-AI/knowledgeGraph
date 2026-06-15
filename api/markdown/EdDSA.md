@@ -23,53 +23,133 @@ public:: true
   "definition": "EdDSA (Edwards-curve Digital Signature Algorithm) is a high-performance digital signature scheme based on twisted Edwards elliptic curves, standardised in RFC 8032. It provides deterministic signing—eliminating the random number generation vulnerabilities that afflicted earlier schemes like ECDSA—whilst offering strong security with compact key and signature sizes. The most widely deployed instantiation is Ed25519, which operates over Curve25519 and produces 64-byte signatures with 128-bit security. EdDSA is extensively used in secure communications protocols, blockchain systems, verifiable credentials, and decentralised identity frameworks.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:digital-signature",
+    "label": "Digital Signature"
+  },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:twisted-edwards-curve", "label": "Twisted Edwards Curve"},
-      {"@id": "urn:ngm:class:curve25519", "label": "Curve25519"}
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:twisted-edwards-curve",
+        "label": "Twisted Edwards Curve"
+      },
+      {
+        "@id": "urn:ngm:class:curve25519",
+        "label": "Curve25519"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public-Key Cryptography"},
-      {"@id": "urn:ngm:class:deterministic-signature", "label": "Deterministic Signature"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:rfc-8032", "label": "RFC 8032"},
-      {"@id": "urn:ngm:class:internet-engineering-task-force", "label": "Internet Engineering Task Force"}
+      {
+        "@id": "urn:ngm:class:rfc-8032",
+        "label": "RFC 8032"
+      },
+      {
+        "@id": "urn:ngm:class:internet-engineering-task-force",
+        "label": "Internet Engineering Task Force"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cryptographic-verification", "label": "Cryptographic Verification"},
-      {"@id": "urn:ngm:class:digital-signature-verification", "label": "Digital Signature Verification"},
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"}
+      {
+        "@id": "urn:ngm:class:cryptographic-verification",
+        "label": "Cryptographic Verification"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature-verification",
+        "label": "Digital Signature Verification"
+      },
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:private-key", "label": "Private Key"},
-      {"@id": "urn:ngm:class:public-key", "label": "Public Key"}
+      {
+        "@id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "@id": "urn:ngm:class:public-key",
+        "label": "Public Key"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ecdsa", "label": "ECDSA"},
-      {"@id": "urn:ngm:class:rsa-signature", "label": "RSA Signature"},
-      {"@id": "urn:ngm:class:post-quantum-signature", "label": "Post-Quantum Signature"}
+      {
+        "@id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "@id": "urn:ngm:class:rsa-signature",
+        "label": "RSA Signature"
+      },
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Signature"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ed25519", "label": "Ed25519"},
-      {"@id": "urn:ngm:class:schnorr-signature", "label": "Schnorr Signature"},
-      {"@id": "urn:ngm:class:signature-scheme", "label": "Signature Scheme"},
-      {"@id": "urn:ngm:class:tls", "label": "TLS"},
-      {"@id": "urn:ngm:class:wireguard", "label": "WireGuard"},
-      {"@id": "urn:ngm:class:openssh", "label": "OpenSSH"}
+      {
+        "@id": "urn:ngm:class:ed25519",
+        "label": "Ed25519"
+      },
+      {
+        "@id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "@id": "urn:ngm:class:signature-scheme",
+        "label": "Signature Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "@id": "urn:ngm:class:wireguard",
+        "label": "WireGuard"
+      },
+      {
+        "@id": "urn:ngm:class:openssh",
+        "label": "OpenSSH"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"},
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:decentralised-identifier", "label": "Decentralised Identifier"}
+      {
+        "@id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:edwards-curve-digital-signature-algorithm", "label": "Edwards-curve Digital Signature Algorithm"}
+    {
+      "@id": "urn:ngm:class:edwards-curve-digital-signature-algorithm",
+      "label": "Edwards-curve Digital Signature Algorithm"
+    }
   ],
   "quality": 0.8,
   "provenance": {

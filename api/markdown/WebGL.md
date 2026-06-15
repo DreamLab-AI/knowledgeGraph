@@ -66,11 +66,7 @@ public:: true
         "label": "GPU"
       },
       {
-        "@id": "urn:ngm:class:html-canvas",
-        "label": "HTML Canvas"
-      },
-      {
-        "@id": "urn:ngm:class:glsl-es",
+        "@id": "urn:ngm:class:glsl",
         "label": "GLSL ES"
       },
       {
@@ -82,10 +78,6 @@ public:: true
       {
         "@id": "urn:ngm:class:real-time-rendering",
         "label": "Real-Time Rendering"
-      },
-      {
-        "@id": "urn:ngm:class:browser-based-games",
-        "label": "Browser-Based Games"
       },
       {
         "@id": "urn:ngm:class:web-xr",
@@ -104,10 +96,6 @@ public:: true
       {
         "@id": "urn:ngm:class:opengl-es",
         "label": "OpenGL ES"
-      },
-      {
-        "@id": "urn:ngm:class:browser-graphics-pipeline",
-        "label": "Browser Graphics Pipeline"
       }
     ],
     "implements": [
@@ -120,10 +108,6 @@ public:: true
       {
         "@id": "urn:ngm:class:shader-programming",
         "label": "Shader Programming"
-      },
-      {
-        "@id": "urn:ngm:class:vertex-buffer-object",
-        "label": "Vertex Buffer Object"
       },
       {
         "@id": "urn:ngm:class:texture-mapping",
@@ -146,10 +130,6 @@ public:: true
         "label": "WebGPU"
       },
       {
-        "@id": "urn:ngm:class:canvas-2d",
-        "label": "Canvas 2D"
-      },
-      {
         "@id": "urn:ngm:class:direct3d",
         "label": "Direct3D"
       },
@@ -159,10 +139,6 @@ public:: true
       }
     ],
     "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:machine-learning-in-browser",
-        "label": "Machine Learning in Browser"
-      },
       {
         "@id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"

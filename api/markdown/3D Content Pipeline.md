@@ -46,55 +46,121 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:3-d-asset", "label": "3D Asset"},
-      {"@id": "urn:ngm:class:3-d-animation", "label": "3D Animation"},
-      {"@id": "urn:ngm:class:rendering-pipeline", "label": "Rendering Pipeline"},
-      {"@id": "urn:ngm:class:level-of-detail", "label": "Level of Detail"},
-      {"@id": "urn:ngm:class:pbr-texturing", "label": "PBR Texturing"},
-      {"@id": "urn:ngm:class:rigging-and-skinning", "label": "Rigging and Skinning"}
+      {
+        "@id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-animation",
+        "label": "3D Animation"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "@id": "urn:ngm:class:character-rigging",
+        "label": "Rigging and Skinning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:digital-content-creation-tools", "label": "Digital Content Creation Tools"},
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:version-control-system", "label": "Version Control System"}
+      {
+        "@id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation Tools"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control System"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:metaverse-and-telecollaboration", "label": "Metaverse and Telecollaboration"},
-      {"@id": "urn:ngm:class:xr-content-delivery", "label": "XR Content Delivery"},
-      {"@id": "urn:ngm:class:procedural-generation", "label": "Procedural Generation"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-and-telecollaboration",
+        "label": "Metaverse and Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:xr-content-delivery",
+        "label": "XR Content Delivery"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:asset-management-system", "label": "Asset Management System"},
-      {"@id": "urn:ngm:class:ci-cd-pipeline", "label": "CI/CD Pipeline"}
+      {
+        "@id": "urn:ngm:class:asset-management-system",
+        "label": "Asset Management System"
+      },
+      {
+        "@id": "urn:ngm:class:ci-cd-automation",
+        "label": "CI/CD Pipeline"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"},
-      {"@id": "urn:ngm:class:geometry-processing", "label": "Geometry Processing"}
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:geometry-processing",
+        "label": "Geometry Processing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:distributed-team-collaboration", "label": "Distributed Team Collaboration"},
-      {"@id": "urn:ngm:class:continuous-asset-delivery", "label": "Continuous Asset Delivery"}
+      {
+        "@id": "urn:ngm:class:distributed-team-collaboration",
+        "label": "Distributed Team Collaboration"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:gltf-standard", "label": "Gltf Standard"},
-      {"@id": "urn:ngm:class:universal-scene-description", "label": "Universal Scene Description"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:2-d-content-pipeline", "label": "2D Content Pipeline"}
+      {
+        "@id": "urn:ngm:class:gltf-standard",
+        "label": "Gltf Standard"
+      },
+      {
+        "@id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence-assisted-art", "label": "AI-Assisted Art Generation"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:3-d-content-generation", "label": "3D Content Generation"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:3-d-content-generation",
+        "label": "3D Content Generation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:3-d-asset-pipeline", "label": "3D Asset Pipeline"},
-    {"@id": "urn:ngm:class:3-d-production-pipeline", "label": "3D Production Pipeline"}
+    {
+      "@id": "urn:ngm:class:3-d-asset-pipeline",
+      "label": "3D Asset Pipeline"
+    },
+    {
+      "@id": "urn:ngm:class:3-d-production-pipeline",
+      "label": "3D Production Pipeline"
+    }
   ],
   "quality": 0.73,
   "provenance": {

@@ -23,54 +23,131 @@ public:: true
   "definition": "A paradigm in which computing capability is invisibly embedded throughout the physical environment, enabling technology to sense, infer, and respond to human needs without requiring deliberate interaction with discrete devices. Ambient computing dissolves the boundary between the digital and physical worlds by distributing processing, sensing, and actuation across interconnected objects, surfaces, and spaces that operate continuously in the background. It represents the convergence of pervasive connectivity, miniaturised hardware, and AI-driven contextual inference into an always-present computational substrate.",
   "domain": "spatial-computing",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:pervasive-computing", "label": "Pervasive Computing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:pervasive-computing",
+      "label": "Pervasive Computing"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:edge-ai", "label": "Edge AI"},
-      {"@id": "urn:ngm:class:wireless-sensor-network", "label": "Wireless Sensor Network"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-sensor-network",
+        "label": "Wireless Sensor Network"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:context-aware-computing", "label": "Context Aware Computing"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:smart-home", "label": "Smart Home"},
-      {"@id": "urn:ngm:class:smart-building", "label": "Smart Building"},
-      {"@id": "urn:ngm:class:proactive-computing", "label": "Proactive Computing"}
+      {
+        "@id": "urn:ngm:class:context-aware-computing",
+        "label": "Context Aware Computing"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:smart-home",
+        "label": "Smart Home"
+      },
+      {
+        "@id": "urn:ngm:class:smart-building",
+        "label": "Smart Building"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:low-power-wireless", "label": "Low Power Wireless"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:real-time-inference", "label": "Real Time Inference"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-inference",
+        "label": "Real Time Inference"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:personal-computing", "label": "Personal Computing"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
-      {"@id": "urn:ngm:class:io-t", "label": "IoT"},
-      {"@id": "urn:ngm:class:industrial-iot", "label": "Industrial IoT"},
-      {"@id": "urn:ngm:class:privacy-preserving-computing", "label": "Privacy Preserving Computing"}
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:io-t",
+        "label": "IoT"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-preserving",
+        "label": "Privacy Preserving Computing"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:matter-protocol", "label": "Matter Protocol"}
+      {
+        "@id": "urn:ngm:class:matter-protocol",
+        "label": "Matter Protocol"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ubiquitous-computing", "label": "Ubiquitous Computing"},
-    {"@id": "urn:ngm:class:calm-technology", "label": "Calm Technology"}
+    {
+      "@id": "urn:ngm:class:ubiquitous-computing",
+      "label": "Ubiquitous Computing"
+    },
+    {
+      "@id": "urn:ngm:class:calm-technology",
+      "label": "Calm Technology"
+    }
   ],
   "quality": 0.72,
   "provenance": {

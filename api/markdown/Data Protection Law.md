@@ -121,10 +121,6 @@ public:: true
       {
         "@id": "urn:ngm:class:personal-data",
         "label": "Personal Data"
-      },
-      {
-        "@id": "urn:ngm:class:data-controller",
-        "label": "Data Controller"
       }
     ],
     "implements": [

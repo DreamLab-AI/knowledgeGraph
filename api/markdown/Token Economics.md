@@ -93,7 +93,7 @@ alias:: TokenEconomics
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:token-supply-mechanics",
+        "@id": "urn:ngm:class:token",
         "label": "Token Supply Mechanics"
       },
       {
@@ -101,7 +101,7 @@ alias:: TokenEconomics
         "label": "Token Distribution"
       },
       {
-        "@id": "urn:ngm:class:incentive-structure",
+        "@id": "urn:ngm:class:incentive-structures",
         "label": "Incentive Structure"
       }
     ],
@@ -127,11 +127,7 @@ alias:: TokenEconomics
         "label": "Decentralized Governance"
       },
       {
-        "@id": "urn:ngm:class:network-incentives",
-        "label": "Network Incentives"
-      },
-      {
-        "@id": "urn:ngm:class:value-capture",
+        "@id": "urn:ngm:class:value",
         "label": "Value Capture"
       },
       {
@@ -159,7 +155,7 @@ alias:: TokenEconomics
         "label": "Monetary Policy"
       },
       {
-        "@id": "urn:ngm:class:deflationary-mechanism",
+        "@id": "urn:ngm:class:deflationary-token",
         "label": "Deflationary Mechanism"
       }
     ],

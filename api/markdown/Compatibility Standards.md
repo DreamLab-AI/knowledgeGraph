@@ -94,7 +94,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:industry-collaboration",
+        "@id": "urn:ngm:class:collaboration",
         "label": "Industry Collaboration"
       },
       {
@@ -110,10 +110,6 @@ public:: true
       {
         "@id": "urn:ngm:class:asset-portability",
         "label": "Asset Portability"
-      },
-      {
-        "@id": "urn:ngm:class:cross-platform-experience",
-        "label": "Cross-Platform Experience"
       },
       {
         "@id": "urn:ngm:class:interoperability",

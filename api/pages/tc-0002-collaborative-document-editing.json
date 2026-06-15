@@ -22,7 +22,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:comments",
+        "id": "urn:ngm:class:document-comments",
         "label": "Comments"
       },
       {
@@ -39,10 +39,6 @@
       {
         "id": "urn:ngm:class:distributed-teamwork",
         "label": "Distributed Teamwork"
-      },
-      {
-        "id": "urn:ngm:class:knowledge-building",
-        "label": "Knowledge Building"
       },
       {
         "id": "urn:ngm:class:peer-learning",

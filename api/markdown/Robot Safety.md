@@ -55,64 +55,159 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"},
-      {"@id": "urn:ngm:class:safety-monitoring", "label": "Safety Monitoring"}
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "@id": "urn:ngm:class:safety-monitoring",
+        "label": "Safety Monitoring"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "IndustrialAutomation"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:collision-avoidance", "label": "Collision Avoidance"},
-      {"@id": "urn:ngm:class:real-time-systems", "label": "Real-Time Systems"},
-      {"@id": "urn:ngm:class:force-torque-sensing", "label": "Force Torque Sensing"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-systems",
+        "label": "Real-Time Systems"
+      },
+      {
+        "@id": "urn:ngm:class:force-torque-sensing",
+        "label": "Force Torque Sensing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human Robot Interaction"},
-      {"@id": "urn:ngm:class:collaborative-robotics", "label": "Collaborative Robotics"},
-      {"@id": "urn:ngm:class:autonomous-systems", "label": "Autonomous Systems"}
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-robotics",
+        "label": "Collaborative Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous Systems"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:robot-dynamics", "label": "Robot Dynamics"},
-      {"@id": "urn:ngm:class:state-estimation", "label": "State Estimation"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"}
+      {
+        "@id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:iso-10218", "label": "ISO 10218"},
-      {"@id": "urn:ngm:class:iso-13849", "label": "ISO 13849"},
-      {"@id": "urn:ngm:class:iec-62061", "label": "IEC 62061"}
+      {
+        "@id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "@id": "urn:ngm:class:iso-13849",
+        "label": "ISO 13849"
+      },
+      {
+        "@id": "urn:ngm:class:iec-62061",
+        "label": "IEC 62061"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:human-robot-collaboration", "label": "Human-Robot Collaboration"},
-      {"@id": "urn:ngm:class:workplace-safety", "label": "Workplace Safety"}
+      {
+        "@id": "urn:ngm:class:human-robot-collaboration",
+        "label": "Human-Robot Collaboration"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso", "label": "ISO"},
-      {"@id": "urn:ngm:class:iec", "label": "IEC"},
-      {"@id": "urn:ngm:class:ieee", "label": "IEEE"}
+      {
+        "@id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "@id": "urn:ngm:class:iec",
+        "label": "IEC"
+      },
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:traditional-industrial-robotics", "label": "Traditional Industrial Robotics"}
+      {
+        "@id": "urn:ngm:class:industrial-robotics",
+        "label": "Traditional Industrial Robotics"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:safety-integrity-level", "label": "Safety Integrity Level"},
-      {"@id": "urn:ngm:class:human-factors-engineering", "label": "Human Factors Engineering"}
+      {
+        "@id": "urn:ngm:class:safety-integrity-level",
+        "label": "Safety Integrity Level"
+      },
+      {
+        "@id": "urn:ngm:class:human-factors",
+        "label": "Human Factors Engineering"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:robotic-system-safety", "label": "Robotic System Safety"},
-    {"@id": "urn:ngm:class:robot-functional-safety", "label": "Robot Functional Safety"}
+    {
+      "@id": "urn:ngm:class:robotic-system-safety",
+      "label": "Robotic System Safety"
+    },
+    {
+      "@id": "urn:ngm:class:robot-functional-safety",
+      "label": "Robot Functional Safety"
+    }
   ],
   "quality": 0.72,
   "provenance": {

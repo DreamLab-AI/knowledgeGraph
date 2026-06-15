@@ -103,11 +103,7 @@ public:: true
         "label": "Version Control"
       },
       {
-        "@id": "urn:ngm:class:task-management",
-        "label": "Task Management"
-      },
-      {
-        "@id": "urn:ngm:class:document-collaboration",
+        "@id": "urn:ngm:class:tc-0002-collaborative-document-editing",
         "label": "Document Collaboration"
       },
       {
@@ -141,7 +137,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:agile-development",
+        "@id": "urn:ngm:class:agile-software-development",
         "label": "Agile Development"
       },
       {

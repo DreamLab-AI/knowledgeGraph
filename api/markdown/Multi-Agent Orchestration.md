@@ -23,53 +23,129 @@ public:: true
   "definition": "Multi-agent orchestration is the coordination and management of multiple autonomous AI agents — each capable of perceiving, reasoning, and acting — such that their collective behaviour accomplishes complex tasks beyond the capacity of any single agent. Orchestration encompasses task decomposition, agent assignment, inter-agent communication, state sharing, conflict resolution, and result aggregation, typically mediated by an orchestrator layer or emergent via peer protocols.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:orchestration", "label": "Orchestration"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:orchestration",
+      "label": "Orchestration"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:agent-orchestrator", "label": "Agent Orchestrator"},
-      {"@id": "urn:ngm:class:task-decomposition", "label": "Task Decomposition"},
-      {"@id": "urn:ngm:class:orchestration-layer", "label": "Orchestration Layer"}
+      {
+        "@id": "urn:ngm:class:agent-orchestrator",
+        "label": "Agent Orchestrator"
+      },
+      {
+        "@id": "urn:ngm:class:task-decomposition",
+        "label": "Task Decomposition"
+      },
+      {
+        "@id": "urn:ngm:class:orchestration-layer",
+        "label": "Orchestration Layer"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:agentic-systems", "label": "Agentic Systems"}
+      {
+        "@id": "urn:ngm:class:agentic-systems",
+        "label": "Agentic Systems"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:agent-communication-protocol", "label": "Agent Communication Protocol"},
-      {"@id": "urn:ngm:class:state-management", "label": "State Management"},
-      {"@id": "urn:ngm:class:context-window", "label": "Context Window"}
+      {
+        "@id": "urn:ngm:class:agent-communication-protocol",
+        "label": "Agent Communication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:state-management",
+        "label": "State Management"
+      },
+      {
+        "@id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks"},
-      {"@id": "urn:ngm:class:agent-runtime", "label": "Agent Runtime"},
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:agent-runtime",
+        "label": "Agent Runtime"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
-      {"@id": "urn:ngm:class:autonomous-ai-agents", "label": "Autonomous AI Agents"},
-      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"}
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-ai-agents",
+        "label": "Autonomous AI Agents"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"}
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:single-agent-systems", "label": "Single-Agent Systems"},
-      {"@id": "urn:ngm:class:monolithic-ai-pipeline", "label": "Monolithic AI Pipeline"}
+      {
+        "@id": "urn:ngm:class:single-agent-systems",
+        "label": "Single-Agent Systems"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
-      {"@id": "urn:ngm:class:swarm-intelligence", "label": "Swarm Intelligence"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:multi-agent-coordination", "label": "Multi-Agent Coordination"},
-    {"@id": "urn:ngm:class:agentic-orchestration", "label": "Agentic Orchestration"}
+    {
+      "@id": "urn:ngm:class:multi-agent-coordination",
+      "label": "Multi-Agent Coordination"
+    },
+    {
+      "@id": "urn:ngm:class:agentic-orchestration",
+      "label": "Agentic Orchestration"
+    }
   ],
   "quality": 0.72,
   "provenance": {

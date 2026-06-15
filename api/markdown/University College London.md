@@ -73,11 +73,11 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:ucl-computer-science",
+        "@id": "urn:ngm:class:computer-science",
         "label": "UCL Computer Science"
       },
       {
-        "@id": "urn:ngm:class:ucl-centre-for-artificial-intelligence",
+        "@id": "urn:ngm:class:artificial-intelligence",
         "label": "UCL Centre for Artificial Intelligence"
       },
       {
@@ -145,11 +145,11 @@ public:: true
         "label": "Imperial College London"
       },
       {
-        "@id": "urn:ngm:class:oxford-university",
+        "@id": "urn:ngm:class:university-of-oxford",
         "label": "University of Oxford"
       },
       {
-        "@id": "urn:ngm:class:cambridge-university",
+        "@id": "urn:ngm:class:university-of-cambridge",
         "label": "University of Cambridge"
       },
       {
@@ -167,7 +167,7 @@ public:: true
         "label": "Digital Health"
       },
       {
-        "@id": "urn:ngm:class:quantum-computing",
+        "@id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
       }
     ],
@@ -177,7 +177,7 @@ public:: true
         "label": "Imperial College London"
       },
       {
-        "@id": "urn:ngm:class:kings-college-london",
+        "@id": "urn:ngm:class:king-s-college-london",
         "label": "King's College London"
       }
     ]

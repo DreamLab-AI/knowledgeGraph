@@ -23,58 +23,143 @@ public:: true
   "definition": "An agentic workflow is a structured, iterative execution pattern in which an AI agent autonomously plans actions, invokes external tools or APIs, observes results, and revises its approach through successive reasoning cycles until a goal condition is satisfied or a stopping criterion is met. Unlike single-pass inference, agentic workflows employ persistent memory, branching logic, and multi-step planning that may span many inference calls and involve specialised sub-agents coordinated by an orchestrator. The pattern relies on large language model capabilities — tool use, function calling, long-context reasoning — and is the architectural basis for systems such as AutoGPT, LangGraph, CrewAI, OpenAI Agents SDK, and Anthropic's Claude toolset. Agentic workflows introduce novel safety and reliability challenges including error compounding, prompt injection via tool outputs, and the need for human-in-the-loop checkpoints in high-stakes deployments.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:workflow-automation",
+      "label": "Workflow Automation"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"},
-      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"},
-      {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"},
-      {"@id": "urn:ngm:class:chain-of-thought", "label": "Chain of Thought"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:react-pattern", "label": "ReAct Pattern"}
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:re-act-pattern",
+        "label": "ReAct Pattern"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"},
-      {"@id": "urn:ngm:class:agent-frameworks", "label": "Agent Frameworks"},
-      {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"},
-      {"@id": "urn:ngm:class:planning-and-scheduling", "label": "Planning and Scheduling"},
-      {"@id": "urn:ngm:class:robotic-process-automation", "label": "Robotic Process Automation"}
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "@id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "@id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"},
-      {"@id": "urn:ngm:class:task-planning", "label": "Task Planning"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:autonomous-coding", "label": "Autonomous Coding"},
-      {"@id": "urn:ngm:class:ai-research-assistant", "label": "AI Research Assistant"}
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-coding",
+        "label": "Autonomous Coding"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:context-window", "label": "Context Window"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:agent-memory", "label": "Agent Memory"}
+      {
+        "@id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:agent-memory",
+        "label": "Agent Memory"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:plan-and-execute-pattern", "label": "Plan and Execute Pattern"},
-      {"@id": "urn:ngm:class:reflection-pattern", "label": "Reflection Pattern"},
-      {"@id": "urn:ngm:class:tool-call-loop", "label": "Tool Call Loop"}
+      {
+        "@id": "urn:ngm:class:plan-and-execute-pattern",
+        "label": "Plan and Execute Pattern"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:llm-inference", "label": "LLM Inference"},
-      {"@id": "urn:ngm:class:api-integration", "label": "API Integration"}
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "LLM Inference"
+      },
+      {
+        "@id": "urn:ngm:class:api-integration",
+        "label": "API Integration"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:single-turn-inference", "label": "Single-Turn Inference"},
-      {"@id": "urn:ngm:class:traditional-workflow-orchestration", "label": "Traditional Workflow Orchestration"}
+      {
+        "@id": "urn:ngm:class:single-turn-inference",
+        "label": "Single-Turn Inference"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:human-in-the-loop", "label": "Human in the Loop"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:prompt-injection", "label": "Prompt Injection"}
+      {
+        "@id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human in the Loop"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:llm-agent-loop", "label": "LLM Agent Loop"},
-    {"@id": "urn:ngm:class:autonomous-agent-workflow", "label": "Autonomous Agent Workflow"}
+    {
+      "@id": "urn:ngm:class:llm-agent-loop",
+      "label": "LLM Agent Loop"
+    },
+    {
+      "@id": "urn:ngm:class:autonomous-agent-workflow",
+      "label": "Autonomous Agent Workflow"
+    }
   ],
   "quality": 0.74,
   "provenance": {

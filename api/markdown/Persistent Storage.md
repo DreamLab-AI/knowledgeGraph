@@ -24,53 +24,135 @@ alias:: PersistentStorage
   "definition": "Persistent storage refers to any data storage mechanism that retains data independently of the lifecycle of the process or system that created it, surviving power-off events, container restarts, and application failures. It contrasts with ephemeral or in-memory storage whose contents are lost when the host process terminates. Persistent storage encompasses file systems, relational and NoSQL databases, object stores, block volumes, and distributed storage systems, all of which provide durability guarantees through techniques such as write-ahead logging, replication, and erasure coding. It is a foundational concern in cloud-native architectures, stateful microservices, and any system that must maintain reliable long-term data.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:data-storage", "label": "Data Storage"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:data-storage",
+      "label": "Data Storage"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:file-system", "label": "File System"},
-      {"@id": "urn:ngm:class:database-system", "label": "Database System"},
-      {"@id": "urn:ngm:class:cloud-storage", "label": "Cloud Storage"},
-      {"@id": "urn:ngm:class:block-storage", "label": "Block Storage"},
-      {"@id": "urn:ngm:class:object-storage", "label": "Object Storage"}
+      {
+        "@id": "urn:ngm:class:file-system",
+        "label": "File System"
+      },
+      {
+        "@id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
+      },
+      {
+        "@id": "urn:ngm:class:block-storage",
+        "label": "Block Storage"
+      },
+      {
+        "@id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:replication", "label": "Replication"},
-      {"@id": "urn:ngm:class:write-ahead-logging", "label": "Write-Ahead Logging"},
-      {"@id": "urn:ngm:class:erasure-coding", "label": "Erasure Coding"}
+      {
+        "@id": "urn:ngm:class:replication",
+        "label": "Replication"
+      },
+      {
+        "@id": "urn:ngm:class:write-ahead-logging",
+        "label": "Write-Ahead Logging"
+      },
+      {
+        "@id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:data-management", "label": "Data Management"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:stateful-application", "label": "Stateful Application"},
-      {"@id": "urn:ngm:class:data-persistence", "label": "Data Persistence"}
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:data-persistence",
+        "label": "Data Persistence"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:storage-hardware", "label": "Storage Hardware"},
-      {"@id": "urn:ngm:class:operating-system", "label": "Operating System"}
+      {
+        "@id": "urn:ngm:class:storage-hardware",
+        "label": "Storage Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ephemeral-storage", "label": "Ephemeral Storage"},
-      {"@id": "urn:ngm:class:in-memory-computing", "label": "In-Memory Computing"}
+      {
+        "@id": "urn:ngm:class:ephemeral-storage",
+        "label": "Ephemeral Storage"
+      },
+      {
+        "@id": "urn:ngm:class:in-memory-computing",
+        "label": "In-Memory Computing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:cloud-native-architecture", "label": "Cloud-Native Architecture"},
-      {"@id": "urn:ngm:class:microservices", "label": "Microservices"},
-      {"@id": "urn:ngm:class:disaster-recovery", "label": "Disaster Recovery"}
+      {
+        "@id": "urn:ngm:class:cloud-native-architecture",
+        "label": "Cloud-Native Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "@id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:distributed-storage", "label": "Distributed Storage"},
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
-      {"@id": "urn:ngm:class:data-storage-layer", "label": "Data Storage Layer"},
-      {"@id": "urn:ngm:class:storage-tiering", "label": "Storage Tiering"}
+      {
+        "@id": "urn:ngm:class:distributed-storage",
+        "label": "Distributed Storage"
+      },
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "@id": "urn:ngm:class:data-storage-layer",
+        "label": "Data Storage Layer"
+      },
+      {
+        "@id": "urn:ngm:class:storage-tiering",
+        "label": "Storage Tiering"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:durable-storage", "label": "Durable Storage"},
-    {"@id": "urn:ngm:class:non-volatile-storage", "label": "Non-Volatile Storage"}
+    {
+      "@id": "urn:ngm:class:durable-storage",
+      "label": "Durable Storage"
+    },
+    {
+      "@id": "urn:ngm:class:non-volatile-storage",
+      "label": "Non-Volatile Storage"
+    }
   ],
   "quality": 0.72,
   "provenance": {

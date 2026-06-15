@@ -30,7 +30,7 @@
         "label": "Noise Cancellation"
       },
       {
-        "id": "urn:ngm:class:audio-feature-extraction",
+        "id": "urn:ngm:class:feature-extraction",
         "label": "Audio Feature Extraction"
       }
     ],
@@ -87,7 +87,7 @@
         "label": "Image Processing"
       },
       {
-        "id": "urn:ngm:class:analogue-signal-processing",
+        "id": "urn:ngm:class:signal-processing",
         "label": "Analogue Signal Processing"
       }
     ],
@@ -161,14 +161,6 @@
       {
         "id": "urn:ngm:class:audio-processing-system",
         "label": "Audio Processing System"
-      },
-      {
-        "id": "urn:ngm:class:waveform",
-        "label": "Waveform"
-      },
-      {
-        "id": "urn:ngm:class:spectrogram",
-        "label": "Spectrogram"
       }
     ]
   },

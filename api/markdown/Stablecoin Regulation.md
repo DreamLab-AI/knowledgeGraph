@@ -361,40 +361,15 @@ public:: true
         "@id": "urn:ngm:class:infra-legal-and-regulatory",
         "label": "Legal and Regulatory"
       },
-      {"@id": "urn:ngm:class:crypto-regulation", "label": "Crypto Regulation"}
+      {
+        "@id": "urn:ngm:class:crypto-regulation",
+        "label": "Crypto Regulation"
+      }
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:attestation-regime",
-        "label": "Attestation Regime"
-      },
-      {
         "@id": "urn:ngm:class:capital-adequacy",
         "label": "Capital Adequacy"
-      },
-      {
-        "@id": "urn:ngm:class:disclosure-standard",
-        "label": "Disclosure Standard"
-      },
-      {
-        "@id": "urn:ngm:class:licensing-regime",
-        "label": "Licensing Regime"
-      },
-      {
-        "@id": "urn:ngm:class:recovery-plan",
-        "label": "Recovery Plan"
-      },
-      {
-        "@id": "urn:ngm:class:redemption-right",
-        "label": "Redemption Right"
-      },
-      {
-        "@id": "urn:ngm:class:reserve-requirement",
-        "label": "Reserve Requirement"
-      },
-      {
-        "@id": "urn:ngm:class:systemic-designation",
-        "label": "Systemic Designation"
       },
       {
         "@id": "urn:ngm:class:aml-kyc-compliance",
@@ -407,10 +382,6 @@ public:: true
         "label": "Capital Adequacy"
       },
       {
-        "@id": "urn:ngm:class:independent-attestation",
-        "label": "Independent Attestation"
-      },
-      {
         "@id": "urn:ngm:class:operational-resilience",
         "label": "Operational Resilience"
       },
@@ -421,10 +392,6 @@ public:: true
       {
         "@id": "urn:ngm:class:regulatory-licence",
         "label": "Regulatory Licence"
-      },
-      {
-        "@id": "urn:ngm:class:reserve-asset-segregation",
-        "label": "Reserve Asset Segregation"
       },
       {
         "@id": "urn:ngm:class:aml-kyc-compliance",
@@ -441,16 +408,12 @@ public:: true
         "label": "Cross-Border Payments"
       },
       {
-        "@id": "urn:ngm:class:de-fi-integration",
+        "@id": "urn:ngm:class:de-fi",
         "label": "DeFi Integration"
       },
       {
         "@id": "urn:ngm:class:financial-stability",
         "label": "Financial Stability"
-      },
-      {
-        "@id": "urn:ngm:class:payment-stablecoin-issuance",
-        "label": "Payment Stablecoin Issuance"
       },
       {
         "@id": "urn:ngm:class:regulatory-clarity",
@@ -467,7 +430,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:fca-regulatory-regime",
+        "@id": "urn:ngm:class:fca",
         "label": "FCA Regulatory Regime"
       },
       {
@@ -477,10 +440,6 @@ public:: true
       {
         "@id": "urn:ngm:class:genius-act",
         "label": "GENIUS Act"
-      },
-      {
-        "@id": "urn:ngm:class:mas-scs-framework",
-        "label": "MAS SCS Framework"
       },
       {
         "@id": "urn:ngm:class:aml-kyc-compliance",
@@ -605,10 +564,6 @@ public:: true
       {
         "@id": "urn:ngm:class:mas",
         "label": "MAS"
-      },
-      {
-        "@id": "urn:ngm:class:occ",
-        "label": "OCC"
       }
     ]
   },

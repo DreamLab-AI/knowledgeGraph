@@ -560,36 +560,8 @@ public:: true
         "label": "Behaviour Tree"
       },
       {
-        "@id": "urn:ngm:class:d-star-lite",
-        "label": "D Star Lite"
-      },
-      {
-        "@id": "urn:ngm:class:dwa",
-        "label": "DWA"
-      },
-      {
-        "@id": "urn:ngm:class:mpc",
-        "label": "MPC"
-      },
-      {
-        "@id": "urn:ngm:class:mppi",
-        "label": "MPPI"
-      },
-      {
-        "@id": "urn:ngm:class:prm",
-        "label": "PRM"
-      },
-      {
-        "@id": "urn:ngm:class:rrt",
+        "@id": "urn:ngm:class:rrt-algorithm",
         "label": "RRT"
-      },
-      {
-        "@id": "urn:ngm:class:rrt-star",
-        "label": "RRT Star"
-      },
-      {
-        "@id": "urn:ngm:class:teb-planner",
-        "label": "TEB Planner"
       },
       {
         "@id": "urn:ngm:class:a-star-algorithm",
@@ -606,7 +578,7 @@ public:: true
         "label": "Neural Network"
       },
       {
-        "@id": "urn:ngm:class:rgb-d-cameras",
+        "@id": "urn:ngm:class:rgb-d-camera",
         "label": "RGB-D Cameras"
       },
       {
@@ -676,7 +648,7 @@ public:: true
         "label": "IEC 62443"
       },
       {
-        "@id": "urn:ngm:class:ieee-1872-ontology-for-robotics",
+        "@id": "urn:ngm:class:ieee-1872",
         "label": "IEEE 1872 Ontology for Robotics"
       },
       {
@@ -684,7 +656,7 @@ public:: true
         "label": "ISO 13482"
       },
       {
-        "@id": "urn:ngm:class:ros-2-nav2",
+        "@id": "urn:ngm:class:nav2",
         "label": "ROS 2 Nav2"
       }
     ]

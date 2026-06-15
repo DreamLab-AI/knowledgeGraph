@@ -99,11 +99,7 @@ alias:: PowerSupply
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:continuous-operation",
-        "label": "Continuous Operation"
-      },
-      {
-        "@id": "urn:ngm:class:system-reliability",
+        "@id": "urn:ngm:class:reliability",
         "label": "System Reliability"
       },
       {
@@ -113,32 +109,14 @@ alias:: PowerSupply
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:uninterruptible-power-supply",
-        "label": "Uninterruptible Power Supply"
-      },
-      {
         "@id": "urn:ngm:class:power-distribution-unit",
         "label": "Power Distribution Unit"
-      }
-    ],
-    "uses": [
-      {
-        "@id": "urn:ngm:class:ac-to-dc-conversion",
-        "label": "AC to DC Conversion"
-      },
-      {
-        "@id": "urn:ngm:class:switched-mode-power-supply",
-        "label": "Switched-Mode Power Supply"
       }
     ],
     "supports": [
       {
         "@id": "urn:ngm:class:redundancy",
         "label": "Redundancy"
-      },
-      {
-        "@id": "urn:ngm:class:hot-swap",
-        "label": "Hot Swap"
       }
     ],
     "standardizedBy": [
@@ -155,10 +133,6 @@ alias:: PowerSupply
       {
         "@id": "urn:ngm:class:power-distribution-unit",
         "label": "Power Distribution Unit"
-      },
-      {
-        "@id": "urn:ngm:class:battery-backup",
-        "label": "Battery Backup"
       }
     ],
     "bridgesTo": [
@@ -167,7 +141,7 @@ alias:: PowerSupply
         "label": "Energy Efficiency"
       },
       {
-        "@id": "urn:ngm:class:data-centre-power-management",
+        "@id": "urn:ngm:class:power-management",
         "label": "Data Centre Power Management"
       }
     ],

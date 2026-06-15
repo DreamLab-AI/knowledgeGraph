@@ -38,7 +38,7 @@
         "label": "Network Interface"
       },
       {
-        "id": "urn:ngm:class:power-management-unit",
+        "id": "urn:ngm:class:power-management",
         "label": "Power Management Unit"
       }
     ],
@@ -87,7 +87,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:software-component",
+        "id": "urn:ngm:class:component",
         "label": "Software Component"
       },
       {
@@ -111,17 +111,13 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:bus-interface",
-        "label": "Bus Interface"
-      },
-      {
         "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:device-driver",
+        "id": "urn:ngm:class:device-drivers",
         "label": "Device Driver"
       },
       {
@@ -141,7 +137,7 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:embedded-system",
+        "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded System"
       },
       {
@@ -150,14 +146,6 @@
       }
     ],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:physical-system",
-        "label": "Physical System"
-      },
-      {
-        "id": "urn:ngm:class:printed-circuit-board",
-        "label": "Printed Circuit Board"
-      },
       {
         "id": "urn:ngm:class:system-on-chip",
         "label": "System-on-Chip"

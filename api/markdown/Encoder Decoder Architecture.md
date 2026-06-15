@@ -87,10 +87,6 @@ public:: true
       {
         "@id": "urn:ngm:class:feed-forward-network",
         "label": "Feed Forward Network"
-      },
-      {
-        "@id": "urn:ngm:class:latent-representation",
-        "label": "Latent Representation"
       }
     ],
     "partOf": [
@@ -181,17 +177,13 @@ public:: true
         "label": "Decoder Only Architecture"
       },
       {
-        "@id": "urn:ngm:class:encoder-only-architecture",
-        "label": "Encoder Only Architecture"
-      },
-      {
         "@id": "urn:ngm:class:recurrent-neural-network",
         "label": "Recurrent Neural Network"
       }
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:multimodal-ai",
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       }
     ],
@@ -205,7 +197,7 @@ public:: true
         "label": "T5 Model"
       },
       {
-        "@id": "urn:ngm:class:bart-model",
+        "@id": "urn:ngm:class:bart",
         "label": "BART Model"
       }
     ]

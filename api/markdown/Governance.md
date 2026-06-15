@@ -114,10 +114,6 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:anarchy",
-        "label": "Anarchy"
-      },
-      {
         "@id": "urn:ngm:class:self-organisation",
         "label": "Self-Organisation"
       }
@@ -142,10 +138,6 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:public-administration",
-        "label": "Public Administration"
-      },
-      {
         "@id": "urn:ngm:class:corporate-governance",
         "label": "Corporate Governance"
       },
@@ -164,7 +156,7 @@ public:: true
         "label": "ISO-IEC 38500"
       },
       {
-        "@id": "urn:ngm:class:oecd-principles-on-ai",
+        "@id": "urn:ngm:class:oecd-ai-principles",
         "label": "OECD Principles on AI"
       }
     ]

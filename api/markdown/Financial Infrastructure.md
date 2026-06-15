@@ -53,53 +53,137 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:payment-network", "label": "Payment Network"},
-      {"@id": "urn:ngm:class:clearing-and-settlement", "label": "Clearing and Settlement"},
-      {"@id": "urn:ngm:class:central-securities-depository", "label": "Central Securities Depository"},
-      {"@id": "urn:ngm:class:correspondent-banking", "label": "Correspondent Banking"},
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"}
+      {
+        "@id": "urn:ngm:class:payment-network",
+        "label": "Payment Network"
+      },
+      {
+        "@id": "urn:ngm:class:clearing-and-settlement",
+        "label": "Clearing and Settlement"
+      },
+      {
+        "@id": "urn:ngm:class:central-securities-depository",
+        "label": "Central Securities Depository"
+      },
+      {
+        "@id": "urn:ngm:class:correspondent-banking",
+        "label": "Correspondent Banking"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:financial-services", "label": "Financial Services"},
-      {"@id": "urn:ngm:class:financial-instruments", "label": "Financial Instruments"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:capital-markets", "label": "Capital Markets"}
+      {
+        "@id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      },
+      {
+        "@id": "urn:ngm:class:financial-instruments",
+        "label": "Financial Instruments"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
-      {"@id": "urn:ngm:class:network-security", "label": "Network Security"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"}
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:monetary-policy", "label": "Monetary Policy"},
-      {"@id": "urn:ngm:class:cross-border-payment", "label": "Cross-Border Payment"},
-      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"}
+      {
+        "@id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payment"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"},
-      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"},
-      {"@id": "urn:ngm:class:blockchain-infrastructure", "label": "Blockchain Infrastructure"}
+      {
+        "@id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      },
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-infrastructure",
+        "label": "Blockchain Infrastructure"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-20022", "label": "ISO 20022"},
-      {"@id": "urn:ngm:class:swift-network", "label": "SWIFT Network"}
+      {
+        "@id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      },
+      {
+        "@id": "urn:ngm:class:swift",
+        "label": "SWIFT Network"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:shadow-banking", "label": "Shadow Banking"}
+      {
+        "@id": "urn:ngm:class:shadow-banking",
+        "label": "Shadow Banking"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"}
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:economic-layer", "label": "Economic Layer"},
-      {"@id": "urn:ngm:class:systemic-risk", "label": "Systemic Risk"},
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}
+      {
+        "@id": "urn:ngm:class:economic-layer",
+        "label": "Economic Layer"
+      },
+      {
+        "@id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:financial-market-infrastructure", "label": "Financial Market Infrastructure"}
+    {
+      "@id": "urn:ngm:class:financial-market-infrastructure",
+      "label": "Financial Market Infrastructure"
+    }
   ],
   "quality": 0.72,
   "provenance": {

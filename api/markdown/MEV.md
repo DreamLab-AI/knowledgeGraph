@@ -86,32 +86,6 @@ public:: true
       {
         "@id": "urn:ngm:class:mempool",
         "label": "Mempool"
-      },
-      {
-        "@id": "urn:ngm:class:priority-gas-auction",
-        "label": "Priority Gas Auction"
-      },
-      {
-        "@id": "urn:ngm:class:transaction-bundling",
-        "label": "Transaction Bundling"
-      }
-    ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:sandwich-attack",
-        "label": "Sandwich Attack"
-      },
-      {
-        "@id": "urn:ngm:class:arbitrage-mev",
-        "label": "Arbitrage MEV"
-      },
-      {
-        "@id": "urn:ngm:class:liquidation-mev",
-        "label": "Liquidation MEV"
-      },
-      {
-        "@id": "urn:ngm:class:time-bandit-attack",
-        "label": "Time-Bandit Attack"
       }
     ],
     "requires": [
@@ -124,16 +98,6 @@ public:: true
         "label": "Block Production"
       }
     ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:mev-boost",
-        "label": "MEV-Boost"
-      },
-      {
-        "@id": "urn:ngm:class:searcher-strategy",
-        "label": "Searcher Strategy"
-      }
-    ],
     "dependsOn": [
       {
         "@id": "urn:ngm:class:smart-contract",
@@ -144,37 +108,13 @@ public:: true
         "label": "Decentralized Exchange"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:encrypted-mempool",
-        "label": "Encrypted Mempool"
-      },
-      {
-        "@id": "urn:ngm:class:fair-ordering-service",
-        "label": "Fair Ordering Service"
-      }
-    ],
-    "supports": [
-      {
-        "@id": "urn:ngm:class:proposer-builder-separation",
-        "label": "Proposer-Builder Separation"
-      },
-      {
-        "@id": "urn:ngm:class:flashbots",
-        "label": "Flashbots"
-      }
-    ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:consensus-security",
         "label": "Consensus Security"
       },
       {
-        "@id": "urn:ngm:class:defi-ecosystem",
-        "label": "DeFi Ecosystem"
-      },
-      {
-        "@id": "urn:ngm:class:blockchain-validator",
+        "@id": "urn:ngm:class:validator",
         "label": "Blockchain Validator"
       },
       {

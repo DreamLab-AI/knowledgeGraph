@@ -26,10 +26,6 @@
         "label": "Financial Stability Board"
       },
       {
-        "id": "urn:ngm:class:committee-on-payments-and-market-infrastructures",
-        "label": "Committee on Payments and Market Infrastructures"
-      },
-      {
         "id": "urn:ngm:class:bis-innovation-hub",
         "label": "BIS Innovation Hub"
       }
@@ -60,7 +56,7 @@
         "label": "Basel Accords"
       },
       {
-        "id": "urn:ngm:class:capital-adequacy-framework",
+        "id": "urn:ngm:class:capital-adequacy",
         "label": "Capital Adequacy Framework"
       }
     ],
@@ -134,10 +130,6 @@
       {
         "id": "urn:ngm:class:payment-system",
         "label": "Payment System"
-      },
-      {
-        "id": "urn:ngm:class:international-financial-institution",
-        "label": "International Financial Institution"
       }
     ]
   },

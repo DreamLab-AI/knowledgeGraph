@@ -36,22 +36,14 @@
         "label": "Compute Infrastructure"
       },
       {
-        "id": "urn:ngm:class:deep-learning-frameworks",
+        "id": "urn:ngm:class:deep-learning-framework",
         "label": "Deep Learning Frameworks"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:hardware-ai-benchmarking",
-        "label": "Hardware AI Benchmarking"
-      },
-      {
-        "id": "urn:ngm:class:ai-model-evaluation",
+        "id": "urn:ngm:class:model-evaluation",
         "label": "AI Model Evaluation"
-      },
-      {
-        "id": "urn:ngm:class:fair-comparison",
-        "label": "Fair Comparison"
       }
     ],
     "dependsOn": [],
@@ -88,7 +80,7 @@
     "uses": [],
     "supports": [
       {
-        "id": "urn:ngm:class:open-datasets",
+        "id": "urn:ngm:class:open-data",
         "label": "Open Datasets"
       },
       {

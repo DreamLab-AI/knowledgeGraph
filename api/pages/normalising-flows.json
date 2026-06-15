@@ -37,7 +37,7 @@
         "label": "Density Estimation"
       },
       {
-        "id": "urn:ngm:class:generative-modelling",
+        "id": "urn:ngm:class:generative-model",
         "label": "Generative Modelling"
       },
       {
@@ -52,7 +52,7 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:probabilistic-generative-model",
+        "id": "urn:ngm:class:generative-model",
         "label": "Probabilistic Generative Model"
       },
       {

@@ -23,56 +23,127 @@ public:: true
   "definition": "Compliance is the organisational practice of adhering to laws, regulations, standards, and internal policies that govern the conduct of systems, processes, and personnel. It encompasses the identification of applicable obligations, the implementation of controls to satisfy them, continuous monitoring to verify ongoing conformance, and documented evidence to demonstrate that conformance to internal and external stakeholders. Modern compliance programmes span regulatory domains including data protection, financial services, cybersecurity, environmental obligations, and increasingly AI-specific requirements.",
   "domain": "governance",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:governance", "label": "Governance"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
-      {"@id": "urn:ngm:class:control", "label": "Control"}
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:audit", "label": "Audit"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:policy", "label": "Policy"}
+      {
+        "@id": "urn:ngm:class:audit",
+        "label": "Audit"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:policy",
+        "label": "Policy"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"},
-      {"@id": "urn:ngm:class:trust", "label": "Trust"},
-      {"@id": "urn:ngm:class:regulatory-approval", "label": "Regulatory Approval"}
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:trust",
+        "label": "Trust"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-approval",
+        "label": "Regulatory Approval"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:governance-framework", "label": "Governance Framework"},
-      {"@id": "urn:ngm:class:data-protection", "label": "Data Protection"}
+      {
+        "@id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:regulation", "label": "Regulation"},
-      {"@id": "urn:ngm:class:standard", "label": "Standard"}
+      {
+        "@id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:grc-platform", "label": "GRC Platform"},
-      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"}
+      {
+        "@id": "urn:ngm:class:grc-platform",
+        "label": "GRC Platform"
+      },
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:non-conformance", "label": "Non-Conformance"}
+      {
+        "@id": "urn:ngm:class:non-conformance",
+        "label": "Non-Conformance"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ethics", "label": "Ethics"},
-      {"@id": "urn:ngm:class:certification", "label": "Certification"},
-      {"@id": "urn:ngm:class:reporting", "label": "Reporting"}
+      {
+        "@id": "urn:ngm:class:ethics",
+        "label": "Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:certification",
+        "label": "Certification"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-    {"@id": "urn:ngm:class:conformance", "label": "Conformance"}
+    {
+      "@id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "@id": "urn:ngm:class:conformance",
+      "label": "Conformance"
+    }
   ],
   "quality": 0.72,
   "provenance": {

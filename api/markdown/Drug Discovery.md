@@ -38,46 +38,85 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:graph-neural-network", "label": "Graph Neural Network"},
-      {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"},
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:variational-autoencoder", "label": "Variational Autoencoder"},
-      {"@id": "urn:ngm:class:molecular-dynamics-simulation", "label": "Molecular Dynamics Simulation"}
-    ],
-    "requires": [
-      {"@id": "urn:ngm:class:cheminformatics", "label": "Cheminformatics"},
-      {"@id": "urn:ngm:class:structural-biology", "label": "Structural Biology"},
-      {"@id": "urn:ngm:class:biomedical-data", "label": "Biomedical Data"}
+      {
+        "@id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:clinical-trials", "label": "Clinical Trials"},
-      {"@id": "urn:ngm:class:personalised-medicine", "label": "Personalised Medicine"},
-      {"@id": "urn:ngm:class:biomarker-discovery", "label": "Biomarker Discovery"}
+      {
+        "@id": "urn:ngm:class:clinical-trials",
+        "label": "Clinical Trials"
+      },
+      {
+        "@id": "urn:ngm:class:precision-medicine",
+        "label": "Personalised Medicine"
+      },
+      {
+        "@id": "urn:ngm:class:biomarker-discovery",
+        "label": "Biomarker Discovery"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"},
-      {"@id": "urn:ngm:class:protein-structure-prediction", "label": "Protein Structure Prediction"},
-      {"@id": "urn:ngm:class:high-throughput-screening", "label": "High-Throughput Screening"}
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "@id": "urn:ngm:class:protein-structure-prediction",
+        "label": "Protein Structure Prediction"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:simulation", "label": "Simulation"},
-      {"@id": "urn:ngm:class:genomics", "label": "Genomics"},
-      {"@id": "urn:ngm:class:proteomics", "label": "Proteomics"},
-      {"@id": "urn:ngm:class:multi-omics", "label": "Multi-Omics"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:genomics",
+        "label": "Genomics"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:traditional-high-throughput-screening", "label": "Traditional High-Throughput Screening"}
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ai-drug-discovery", "label": "AI Drug Discovery"},
-    {"@id": "urn:ngm:class:computer-aided-drug-design", "label": "Computer-Aided Drug Design"}
+    {
+      "@id": "urn:ngm:class:ai-drug-discovery",
+      "label": "AI Drug Discovery"
+    },
+    {
+      "@id": "urn:ngm:class:computer-aided-drug-design",
+      "label": "Computer-Aided Drug Design"
+    }
   ],
   "quality": 0.72,
   "provenance": {

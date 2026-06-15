@@ -39,10 +39,6 @@
       {
         "id": "urn:ngm:class:fungibility",
         "label": "Fungibility"
-      },
-      {
-        "id": "urn:ngm:class:personal-autonomy",
-        "label": "Personal Autonomy"
       }
     ],
     "dependsOn": [],
@@ -59,10 +55,6 @@
       {
         "id": "urn:ngm:class:transaction-monitoring",
         "label": "Transaction Monitoring"
-      },
-      {
-        "id": "urn:ngm:class:financial-surveillance",
-        "label": "Financial Surveillance"
       }
     ],
     "bridgesTo": [

@@ -23,51 +23,126 @@ public:: true
   "definition": "CVPR (Conference on Computer Vision and Pattern Recognition) is the premier annual peer-reviewed academic conference for computer vision and pattern recognition research, co-sponsored by IEEE and the Computer Vision Foundation (CVF). It is consistently ranked among the most impactful venues in artificial intelligence, serving as the primary publication channel for breakthroughs in image recognition, object detection, semantic segmentation, generative modelling, video understanding, and 3D vision. The conference has been held annually since 1983 and its open-access proceedings, published through the CVF, represent a foundational evidence base for both academic research and applied AI development.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:conference-on-computer-vision-and-pattern-recognition", "label": "Conference on Computer Vision and Pattern Recognition"},
-    {"@id": "urn:ngm:class:ieee-cvpr", "label": "IEEE CVPR"}
+    {
+      "@id": "urn:ngm:class:conference-on-computer-vision-and-pattern-recognition",
+      "label": "Conference on Computer Vision and Pattern Recognition"
+    },
+    {
+      "@id": "urn:ngm:class:ieee-cvpr",
+      "label": "IEEE CVPR"
+    }
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:academic-conference", "label": "Academic Conference"},
-      {"@id": "urn:ngm:class:iccv", "label": "ICCV"},
-      {"@id": "urn:ngm:class:eccv", "label": "ECCV"},
-      {"@id": "urn:ngm:class:neurips", "label": "NeurIPS"},
-      {"@id": "urn:ngm:class:icml", "label": "ICML"},
-      {"@id": "urn:ngm:class:iclr", "label": "ICLR"},
-      {"@id": "urn:ngm:class:aaai", "label": "AAAI"}
+      {
+        "@id": "urn:ngm:class:academic-conference",
+        "label": "Academic Conference"
+      },
+      {
+        "@id": "urn:ngm:class:iccv",
+        "label": "ICCV"
+      },
+      {
+        "@id": "urn:ngm:class:eccv",
+        "label": "ECCV"
+      },
+      {
+        "@id": "urn:ngm:class:neurips",
+        "label": "NeurIPS"
+      },
+      {
+        "@id": "urn:ngm:class:icml",
+        "label": "ICML"
+      },
+      {
+        "@id": "urn:ngm:class:iclr",
+        "label": "ICLR"
+      },
+      {
+        "@id": "urn:ngm:class:aaai",
+        "label": "AAAI"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:image-classification", "label": "Image Classification"},
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
-      {"@id": "urn:ngm:class:semantic-segmentation", "label": "Semantic Segmentation"},
-      {"@id": "urn:ngm:class:3d-reconstruction", "label": "3D Reconstruction"},
-      {"@id": "urn:ngm:class:video-understanding", "label": "Video Understanding"},
-      {"@id": "urn:ngm:class:generative-vision", "label": "Generative Vision"}
+      {
+        "@id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:video-understanding",
+        "label": "Video Understanding"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:benchmark-standard", "label": "Benchmark Standard"},
-      {"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"},
-      {"@id": "urn:ngm:class:peer-review", "label": "Peer Review"}
+      {
+        "@id": "urn:ngm:class:benchmark-standard",
+        "label": "Benchmark Standard"
+      },
+      {
+        "@id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      },
+      {
+        "@id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:pattern-recognition", "label": "Pattern Recognition"},
-      {"@id": "urn:ngm:class:neural-architecture", "label": "Neural Architecture"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Architecture"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ieee", "label": "IEEE"},
-      {"@id": "urn:ngm:class:computer-vision-foundation", "label": "Computer Vision Foundation"}
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:autonomous-driving", "label": "Autonomous Driving"},
-      {"@id": "urn:ngm:class:medical-image-analysis", "label": "Medical Image Analysis"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:arxiv-preprint", "label": "ArXiv Preprint"}
+      {
+        "@id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "@id": "urn:ngm:class:medical-image-analysis",
+        "label": "Medical Image Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ]
   },
   "quality": 0.72,

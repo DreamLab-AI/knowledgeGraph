@@ -24,41 +24,95 @@ alias:: Git-mark, git-mark, Gitmark
   "definition": "Git Mark is a Block Trails Profile that anchors a Git history to Bitcoin by using each commit hash as the tweak that advances a trail, so the sequence of commits becomes a single-use-seal chain whose ordering and uniqueness are enforced by Bitcoin's UTXO model. The Blocktrails verifier checks a git-mark trail against the chain, confirming that each marked commit was timestamped and is tamper-evident on Bitcoin — it proves the history's immutability and temporal anchoring, not the correctness of the code itself. This gives a Bitcoin-secured provenance log for source repositories without storing any repository data on-chain.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:block-trails", "label": "Block Trails"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:block-trails",
+      "label": "Block Trails"
+    }
+  ],
   "sameAs": [],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:block-trails", "label": "Block Trails"}
+      {
+        "@id": "urn:ngm:class:block-trails",
+        "label": "Block Trails"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:git", "label": "Git"},
-      {"@id": "urn:ngm:class:single-use-seals", "label": "Single Use Seals"},
-      {"@id": "urn:ngm:class:taproot", "label": "Taproot"},
-      {"@id": "urn:ngm:class:sha-256", "label": "SHA-256"}
+      {
+        "@id": "urn:ngm:class:git",
+        "label": "Git"
+      },
+      {
+        "@id": "urn:ngm:class:single-use-seals",
+        "label": "Single Use Seals"
+      },
+      {
+        "@id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      },
+      {
+        "@id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:bitcoin-network", "label": "Bitcoin Network"},
-      {"@id": "urn:ngm:class:proof-of-publication", "label": "Proof of Publication"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
+        "label": "Bitcoin Network"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-publication",
+        "label": "Proof of Publication"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"},
-      {"@id": "urn:ngm:class:software-supply-chain-security", "label": "Software Supply Chain Security"}
+      {
+        "@id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-security",
+        "label": "Software Supply Chain Security"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:timestamping", "label": "Timestamping"}
+      {
+        "@id": "urn:ngm:class:timestamping",
+        "label": "Timestamping"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
-      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"}
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:content-provenance", "label": "Content Provenance"},
-      {"@id": "urn:ngm:class:audit-log", "label": "Audit Log"},
-      {"@id": "urn:ngm:class:client-side-validation", "label": "Client-Side Validation"}
+      {
+        "@id": "urn:ngm:class:content-provenance",
+        "label": "Content Provenance"
+      },
+      {
+        "@id": "urn:ngm:class:audit-log",
+        "label": "Audit Log"
+      },
+      {
+        "@id": "urn:ngm:class:client-side-validation",
+        "label": "Client-Side Validation"
+      }
     ]
   },
   "quality": 0.72,
-  "provenance": {"attributedTo": "did:nostr:ontology-mesh", "generatedAt": "2026-06-14T00:00:00Z", "inferenceRule": "ResearchAuthored"}
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-14T00:00:00Z",
+    "inferenceRule": "ResearchAuthored"
+  }
 }
 ```
 

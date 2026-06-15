@@ -130,10 +130,6 @@ public:: true
         "label": "Colorimeter"
       },
       {
-        "@id": "urn:ngm:class:contrast-ratio-meter",
-        "label": "Contrast Ratio Meter"
-      },
-      {
         "@id": "urn:ngm:class:luminance-meter",
         "label": "Luminance Meter"
       },
@@ -148,11 +144,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:environmental-control",
-        "label": "Environmental Control"
-      },
-      {
-        "@id": "urn:ngm:class:measurement-protocols",
+        "@id": "urn:ngm:class:measurement-methodology",
         "label": "Measurement Protocols"
       },
       {
@@ -168,14 +160,6 @@ public:: true
       {
         "@id": "urn:ngm:class:display-calibration",
         "label": "Display Calibration"
-      },
-      {
-        "@id": "urn:ngm:class:performance-validation",
-        "label": "Performance Validation"
-      },
-      {
-        "@id": "urn:ngm:class:visual-quality-assessment",
-        "label": "Visual Quality Assessment"
       }
     ],
     "partOf": [

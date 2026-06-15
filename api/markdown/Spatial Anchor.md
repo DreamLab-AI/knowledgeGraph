@@ -130,16 +130,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:gps-reference",
+        "@id": "urn:ngm:class:gps",
         "label": "GPS Reference"
       },
       {
-        "@id": "urn:ngm:class:pose-data",
+        "@id": "urn:ngm:class:pose-estimation",
         "label": "Pose Data"
-      },
-      {
-        "@id": "urn:ngm:class:tracking-features",
-        "label": "Tracking Features"
       },
       {
         "@id": "urn:ngm:class:coordinate-system",

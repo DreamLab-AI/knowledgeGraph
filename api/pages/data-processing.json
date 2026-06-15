@@ -22,7 +22,7 @@
         "label": "Data Pipeline"
       },
       {
-        "id": "urn:ngm:class:etl",
+        "id": "urn:ngm:class:etl-pipeline",
         "label": "ETL"
       },
       {
@@ -121,12 +121,7 @@
         "label": "Data Lineage"
       }
     ],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:sql-standard",
-        "label": "SQL Standard"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [
       {
         "id": "urn:ngm:class:data-management",

@@ -70,12 +70,8 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:voluntary-self-regulation",
+        "id": "urn:ngm:class:self-regulation",
         "label": "Voluntary Self-Regulation"
-      },
-      {
-        "id": "urn:ngm:class:ethics-washing",
-        "label": "Ethics Washing"
       }
     ],
     "bridgesTo": [
@@ -98,7 +94,7 @@
         "label": "RegTech"
       },
       {
-        "id": "urn:ngm:class:model-card",
+        "id": "urn:ngm:class:ai-model-card",
         "label": "Model Card"
       },
       {
@@ -138,18 +134,14 @@
         "label": "GDPR"
       },
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:liability",
-        "label": "Liability"
-      },
-      {
-        "id": "urn:ngm:class:intellectual-property",
+        "id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Intellectual Property"
       },
       {

@@ -33,10 +33,6 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:role-specialisation",
-        "label": "Role Specialisation"
-      },
-      {
         "id": "urn:ngm:class:reasoning",
         "label": "Reasoning"
       },
@@ -65,10 +61,6 @@
     ],
     "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:user-message",
-        "label": "User Message"
-      },
       {
         "id": "urn:ngm:class:fine-tuning",
         "label": "Fine Tuning"
@@ -127,7 +119,7 @@
         "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:constitutional-ai",
+        "id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
       }
     ]

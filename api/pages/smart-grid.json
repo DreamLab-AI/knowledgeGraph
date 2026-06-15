@@ -22,15 +22,7 @@
         "label": "Advanced Metering Infrastructure"
       },
       {
-        "id": "urn:ngm:class:distribution-automation",
-        "label": "Distribution Automation"
-      },
-      {
-        "id": "urn:ngm:class:phasor-measurement-unit",
-        "label": "Phasor Measurement Unit"
-      },
-      {
-        "id": "urn:ngm:class:energy-management-system",
+        "id": "urn:ngm:class:energy-management",
         "label": "Energy Management System"
       }
     ],
@@ -118,24 +110,12 @@
       {
         "id": "urn:ngm:class:carbon-markets",
         "label": "Carbon Markets"
-      },
-      {
-        "id": "urn:ngm:class:distributed-energy-resources",
-        "label": "Distributed Energy Resources"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:iec-61968",
-        "label": "IEC 61968"
-      },
-      {
-        "id": "urn:ngm:class:ieee-2030",
+        "id": "urn:ngm:class:ieee",
         "label": "IEEE 2030"
-      },
-      {
-        "id": "urn:ngm:class:nist-smart-grid-framework",
-        "label": "NIST Smart Grid Framework"
       }
     ],
     "partOf": [],

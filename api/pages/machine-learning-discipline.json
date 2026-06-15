@@ -46,10 +46,6 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
-      },
-      {
-        "id": "urn:ngm:class:computational-statistics",
-        "label": "Computational Statistics"
       }
     ],
     "enables": [
@@ -87,10 +83,6 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:rule-based-ai",
-        "label": "Rule-Based AI"
-      },
-      {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
       }
@@ -125,7 +117,7 @@
         "label": "AI Governance"
       },
       {
-        "id": "urn:ngm:class:decision-support-system",
+        "id": "urn:ngm:class:decision-support",
         "label": "Decision Support System"
       }
     ],

@@ -29,48 +29,121 @@
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:working-memory", "label": "Working Memory"},
-      {"@id": "urn:ngm:class:long-term-memory", "label": "Long-Term Memory"},
-      {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"},
-      {"@id": "urn:ngm:class:planning-and-scheduling", "label": "Planning and Scheduling"},
-      {"@id": "urn:ngm:class:perception", "label": "Perception"},
-      {"@id": "urn:ngm:class:action-selection", "label": "Action Selection"}
+      {
+        "@id": "urn:ngm:class:working-memory",
+        "label": "Working Memory"
+      },
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:perception",
+        "label": "Perception"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:symbolic-reasoning", "label": "Symbolic Reasoning"},
-      {"@id": "urn:ngm:class:autonomous-agents", "label": "Autonomous Agents"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:symbolic-reasoning",
+        "label": "Symbolic Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agents"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:production-rules", "label": "Production Rules"},
-      {"@id": "urn:ngm:class:neural-networks", "label": "Neural Networks"},
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:production-rules",
+        "label": "Production Rules"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Networks"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:narrow-ai", "label": "Narrow AI"},
-      {"@id": "urn:ngm:class:task-specific-model", "label": "Task-Specific Model"}
+      {
+        "@id": "urn:ngm:class:narrow-ai",
+        "label": "Narrow AI"
+      },
+      {
+        "@id": "urn:ngm:class:task-specific-model",
+        "label": "Task-Specific Model"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:general-intelligence", "label": "General Intelligence"},
-      {"@id": "urn:ngm:class:computational-neuroscience", "label": "Computational Neuroscience"},
-      {"@id": "urn:ngm:class:cognitive-science", "label": "Cognitive Science"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"}
+      {
+        "@id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "General Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:computational-neuroscience",
+        "label": "Computational Neuroscience"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:brain-computer-interface", "label": "Brain-Computer Interface"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:brain-computer-interfaces",
+        "label": "Brain-Computer Interface"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:intelligent-agent-architecture", "label": "Intelligent Agent Architecture"},
-    {"@id": "urn:ngm:class:unified-theory-of-cognition", "label": "Unified Theory of Cognition"}
+    {
+      "@id": "urn:ngm:class:intelligent-agent-architecture",
+      "label": "Intelligent Agent Architecture"
+    },
+    {
+      "@id": "urn:ngm:class:unified-theory-of-cognition",
+      "label": "Unified Theory of Cognition"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

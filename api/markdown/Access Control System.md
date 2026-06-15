@@ -642,15 +642,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:attribute-evaluation",
-        "label": "Attribute Evaluation"
-      },
-      {
         "@id": "urn:ngm:class:audit-log",
         "label": "Audit Log"
       },
       {
-        "@id": "urn:ngm:class:identity-store",
+        "@id": "urn:ngm:class:identity-system",
         "label": "Identity Store"
       },
       {
@@ -692,7 +688,7 @@ public:: true
         "label": "Cryptographic Primitive"
       },
       {
-        "@id": "urn:ngm:class:trusted-time-source",
+        "@id": "urn:ngm:class:trusted-timestamping",
         "label": "Trusted Time Source"
       },
       {
@@ -742,36 +738,6 @@ public:: true
         "label": "Risk Assessment"
       }
     ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:abac",
-        "label": "ABAC"
-      },
-      {
-        "@id": "urn:ngm:class:capability-based-security",
-        "label": "Capability-Based Security"
-      },
-      {
-        "@id": "urn:ngm:class:dac",
-        "label": "DAC"
-      },
-      {
-        "@id": "urn:ngm:class:mac",
-        "label": "MAC"
-      },
-      {
-        "@id": "urn:ngm:class:pbac",
-        "label": "PBAC"
-      },
-      {
-        "@id": "urn:ngm:class:rbac",
-        "label": "RBAC"
-      },
-      {
-        "@id": "urn:ngm:class:re-bac",
-        "label": "ReBAC"
-      }
-    ],
     "uses": [
       {
         "@id": "urn:ngm:class:kerberos",
@@ -804,15 +770,11 @@ public:: true
       {
         "@id": "urn:ngm:class:xacml",
         "label": "XACML"
-      },
-      {
-        "@id": "urn:ngm:class:zanzibar",
-        "label": "Zanzibar"
       }
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:customer-identity-and-access-management",
+        "@id": "urn:ngm:class:identity-and-access-management",
         "label": "Customer Identity and Access Management"
       },
       {
@@ -864,19 +826,15 @@ public:: true
         "label": "ANSI INCITS 359"
       },
       {
-        "@id": "urn:ngm:class:ietf-rfc-4120",
+        "@id": "urn:ngm:class:ietf",
         "label": "IETF RFC 4120"
-      },
-      {
-        "@id": "urn:ngm:class:ietf-rfc-6749",
-        "label": "IETF RFC 6749"
       },
       {
         "@id": "urn:ngm:class:iso-iec-27002",
         "label": "ISO IEC 27002"
       },
       {
-        "@id": "urn:ngm:class:nist-sp-800-162",
+        "@id": "urn:ngm:class:nist",
         "label": "NIST SP 800-162"
       },
       {
@@ -884,11 +842,11 @@ public:: true
         "label": "NIST SP 800-207"
       },
       {
-        "@id": "urn:ngm:class:oasis-xacml",
+        "@id": "urn:ngm:class:oasis",
         "label": "OASIS XACML"
       },
       {
-        "@id": "urn:ngm:class:w3-c-web-authn",
+        "@id": "urn:ngm:class:web-authn",
         "label": "W3C WebAuthn"
       }
     ]

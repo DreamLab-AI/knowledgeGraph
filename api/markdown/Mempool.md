@@ -75,57 +75,143 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:transaction-pool", "label": "Transaction Pool"},
-      {"@id": "urn:ngm:class:transaction", "label": "Transaction"},
-      {"@id": "urn:ngm:class:unconfirmed-transaction", "label": "Unconfirmed Transaction"}
+      {
+        "@id": "urn:ngm:class:transaction-pool",
+        "label": "Transaction Pool"
+      },
+      {
+        "@id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:blockchain-node", "label": "Blockchain Node"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+      {
+        "@id": "urn:ngm:class:blockchain-node",
+        "label": "Blockchain Node"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:transaction-propagation", "label": "Transaction Propagation"},
-      {"@id": "urn:ngm:class:gossip-protocol", "label": "Gossip Protocol"}
+      {
+        "@id": "urn:ngm:class:transaction-propagation",
+        "label": "Transaction Propagation"
+      },
+      {
+        "@id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:transaction-confirmation", "label": "Transaction Confirmation"},
-      {"@id": "urn:ngm:class:transaction-processing", "label": "Transaction Processing"},
-      {"@id": "urn:ngm:class:block-production", "label": "Block Production"},
-      {"@id": "urn:ngm:class:fee-estimation", "label": "Fee Estimation"}
+      {
+        "@id": "urn:ngm:class:transaction-confirmation",
+        "label": "Transaction Confirmation"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-processing",
+        "label": "Transaction Processing"
+      },
+      {
+        "@id": "urn:ngm:class:block-production",
+        "label": "Block Production"
+      },
+      {
+        "@id": "urn:ngm:class:fee-market",
+        "label": "Fee Estimation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:transaction-validation", "label": "Transaction Validation"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"}
+      {
+        "@id": "urn:ngm:class:transaction-validation",
+        "label": "Transaction Validation"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:replace-by-fee", "label": "Replace-by-Fee"},
-      {"@id": "urn:ngm:class:child-pays-for-parent", "label": "Child-Pays-for-Parent"}
+      {
+        "@id": "urn:ngm:class:replace-by-fee",
+        "label": "Replace-by-Fee"
+      },
+      {
+        "@id": "urn:ngm:class:child-pays-for-parent",
+        "label": "Child-Pays-for-Parent"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:utxo-set", "label": "UTXO Set"},
-      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"}
+      {
+        "@id": "urn:ngm:class:utxo-set",
+        "label": "UTXO Set"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:block", "label": "Block"},
-      {"@id": "urn:ngm:class:confirmed-transaction", "label": "Confirmed Transaction"}
+      {
+        "@id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "@id": "urn:ngm:class:transaction",
+        "label": "Confirmed Transaction"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:layer-2-protocol", "label": "Layer-2 Protocol"},
-      {"@id": "urn:ngm:class:decentralised-exchange", "label": "Decentralised Exchange"}
+      {
+        "@id": "urn:ngm:class:layer-2-protocol",
+        "label": "Layer-2 Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:fee-market", "label": "Fee Market"},
-      {"@id": "urn:ngm:class:block-size", "label": "Block Size"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"},
-      {"@id": "urn:ngm:class:double-spend", "label": "Double Spend"},
-      {"@id": "urn:ngm:class:transaction-malleability", "label": "Transaction Malleability"}
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:fee-market",
+        "label": "Fee Market"
+      },
+      {
+        "@id": "urn:ngm:class:block-size",
+        "label": "Block Size"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      },
+      {
+        "@id": "urn:ngm:class:double-spending",
+        "label": "Double Spend"
+      },
+      {
+        "@id": "urn:ngm:class:transaction",
+        "label": "Transaction Malleability"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:transaction-pool", "label": "Transaction Pool"},
-    {"@id": "urn:ngm:class:pending-transaction-queue", "label": "Pending Transaction Queue"}
+    {
+      "@id": "urn:ngm:class:transaction-pool",
+      "label": "Transaction Pool"
+    },
+    {
+      "@id": "urn:ngm:class:pending-transaction-queue",
+      "label": "Pending Transaction Queue"
+    }
   ],
   "quality": 0.72,
   "provenance": {

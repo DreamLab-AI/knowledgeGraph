@@ -16,20 +16,7 @@
   "qualityScore": 0.72,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:shopping-cart",
-        "label": "Shopping Cart"
-      },
-      {
-        "id": "urn:ngm:class:product-catalogue",
-        "label": "Product Catalogue"
-      },
-      {
-        "id": "urn:ngm:class:order-management",
-        "label": "Order Management"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:payment-system",
@@ -73,12 +60,7 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:traditional-retail",
-        "label": "Traditional Retail"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:decentralised-finance",

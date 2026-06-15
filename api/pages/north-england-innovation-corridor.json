@@ -44,10 +44,6 @@
         "label": "Digital Infrastructure"
       },
       {
-        "id": "urn:ngm:class:transport-connectivity",
-        "label": "Transport Connectivity"
-      },
-      {
         "id": "urn:ngm:class:broadband-network",
         "label": "Broadband Network"
       }
@@ -70,14 +66,6 @@
       {
         "id": "urn:ngm:class:research-university",
         "label": "Research University"
-      },
-      {
-        "id": "urn:ngm:class:public-investment",
-        "label": "Public Investment"
-      },
-      {
-        "id": "urn:ngm:class:nhs-digital-transformation",
-        "label": "NHS Digital Transformation"
       }
     ],
     "implements": [],
@@ -94,7 +82,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:smart-city-platform",
+        "id": "urn:ngm:class:smart-city",
         "label": "Smart City Platform"
       },
       {
@@ -106,10 +94,6 @@
       {
         "id": "urn:ngm:class:advanced-manufacturing",
         "label": "Advanced Manufacturing"
-      },
-      {
-        "id": "urn:ngm:class:health-innovation",
-        "label": "Health Innovation"
       },
       {
         "id": "urn:ngm:class:fintech",

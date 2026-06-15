@@ -16,20 +16,7 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:opc-ua-address-space",
-        "label": "OPC UA Address Space"
-      },
-      {
-        "id": "urn:ngm:class:opc-ua-information-model",
-        "label": "OPC UA Information Model"
-      },
-      {
-        "id": "urn:ngm:class:opc-ua-pubsub",
-        "label": "OPC UA PubSub"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:x-509-certificate",
@@ -74,10 +61,6 @@
       }
     ],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:modbus",
-        "label": "Modbus"
-      },
       {
         "id": "urn:ngm:class:profinet",
         "label": "PROFINET"

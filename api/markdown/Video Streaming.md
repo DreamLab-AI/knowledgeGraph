@@ -49,59 +49,143 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:adaptive-bitrate-streaming", "label": "Adaptive Bitrate Streaming"},
-      {"@id": "urn:ngm:class:live-streaming", "label": "Live Streaming"},
-      {"@id": "urn:ngm:class:video-on-demand", "label": "Video On Demand"},
-      {"@id": "urn:ngm:class:volumetric-video", "label": "Volumetric Video"}
+      {
+        "@id": "urn:ngm:class:adaptive-bitrate-streaming",
+        "label": "Adaptive Bitrate Streaming"
+      },
+      {
+        "@id": "urn:ngm:class:live-streaming",
+        "label": "Live Streaming"
+      },
+      {
+        "@id": "urn:ngm:class:volumetric-video",
+        "label": "Volumetric Video"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:content-delivery-network", "label": "Content Delivery Network"},
-      {"@id": "urn:ngm:class:video-codec", "label": "Video Codec"}
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "@id": "urn:ngm:class:video-codec",
+        "label": "Video Codec"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-production", "label": "Virtual Production"},
-      {"@id": "urn:ngm:class:metaverse-platform", "label": "Metaverse Platform"},
-      {"@id": "urn:ngm:class:remote-rendering", "label": "Remote Rendering"},
-      {"@id": "urn:ngm:class:cloud-gaming", "label": "Cloud Gaming"}
+      {
+        "@id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-platform",
+        "label": "Metaverse Platform"
+      },
+      {
+        "@id": "urn:ngm:class:remote-rendering",
+        "label": "Remote Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-gaming",
+        "label": "Cloud Gaming"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:webrtc", "label": "WebRTC"},
-      {"@id": "urn:ngm:class:http-live-streaming", "label": "HTTP Live Streaming"},
-      {"@id": "urn:ngm:class:data-compression", "label": "Data Compression"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:webrtc",
+        "label": "WebRTC"
+      },
+      {
+        "@id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:360-degree-video", "label": "360-Degree Video"},
-      {"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"},
-      {"@id": "urn:ngm:class:social-vr", "label": "Social VR"}
+      {
+        "@id": "urn:ngm:class:360-degree-video",
+        "label": "360-Degree Video"
+      },
+      {
+        "@id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "@id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:bandwidth-management", "label": "Bandwidth Management"},
-      {"@id": "urn:ngm:class:latency-optimisation", "label": "Latency Optimisation"}
+      {
+        "@id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth Management"
+      },
+      {
+        "@id": "urn:ngm:class:latency-optimisation",
+        "label": "Latency Optimisation"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:mpeg-dash", "label": "MPEG-DASH"},
-      {"@id": "urn:ngm:class:webrtc", "label": "WebRTC"}
+      {
+        "@id": "urn:ngm:class:mpeg-dash",
+        "label": "MPEG-DASH"
+      },
+      {
+        "@id": "urn:ngm:class:webrtc",
+        "label": "WebRTC"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:file-download", "label": "File Download"},
-      {"@id": "urn:ngm:class:broadcast-television", "label": "Broadcast Television"}
+      {
+        "@id": "urn:ngm:class:broadcast-television",
+        "label": "Broadcast Television"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:machine-learning-inference", "label": "Machine Learning Inference"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Machine Learning Inference"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bandwidth-adaptation", "label": "Bandwidth Adaptation"},
-      {"@id": "urn:ngm:class:quality-of-service", "label": "Quality Of Service"},
-      {"@id": "urn:ngm:class:digital-rights-management", "label": "Digital Rights Management"}
+      {
+        "@id": "urn:ngm:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      },
+      {
+        "@id": "urn:ngm:class:quality-of-service",
+        "label": "Quality Of Service"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:media-streaming", "label": "Media Streaming"},
-    {"@id": "urn:ngm:class:online-video-delivery", "label": "Online Video Delivery"}
+    {
+      "@id": "urn:ngm:class:media-streaming",
+      "label": "Media Streaming"
+    },
+    {
+      "@id": "urn:ngm:class:online-video-delivery",
+      "label": "Online Video Delivery"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

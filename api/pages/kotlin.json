@@ -21,36 +21,16 @@
       {
         "id": "urn:ngm:class:jvm-runtime",
         "label": "JVM Runtime"
-      },
-      {
-        "id": "urn:ngm:class:build-system",
-        "label": "Build System"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:cross-platform-compatibility",
         "label": "Cross-Platform Compatibility"
-      },
-      {
-        "id": "urn:ngm:class:null-safety",
-        "label": "Null Safety"
-      },
-      {
-        "id": "urn:ngm:class:structured-concurrency",
-        "label": "Structured Concurrency"
-      },
-      {
-        "id": "urn:ngm:class:server-side-development",
-        "label": "Server-Side Development"
       }
     ],
     "dependsOn": [],
     "implements": [
-      {
-        "id": "urn:ngm:class:object-oriented-programming",
-        "label": "Object-Oriented Programming"
-      },
       {
         "id": "urn:ngm:class:static-typing",
         "label": "Static Typing"
@@ -60,10 +40,6 @@
       {
         "id": "urn:ngm:class:java",
         "label": "Java"
-      },
-      {
-        "id": "urn:ngm:class:scala",
-        "label": "Scala"
       },
       {
         "id": "urn:ngm:class:swift",
@@ -86,27 +62,11 @@
         "label": "Compiler"
       },
       {
-        "id": "urn:ngm:class:llvm",
-        "label": "LLVM"
-      },
-      {
         "id": "urn:ngm:class:type-system",
         "label": "Type System"
-      },
-      {
-        "id": "urn:ngm:class:coroutines",
-        "label": "Coroutines"
       }
     ],
     "supports": [
-      {
-        "id": "urn:ngm:class:multiplatform-development",
-        "label": "Multiplatform Development"
-      },
-      {
-        "id": "urn:ngm:class:mobile-development",
-        "label": "Mobile Development"
-      },
       {
         "id": "urn:ngm:class:webassembly",
         "label": "WebAssembly"
@@ -128,15 +88,7 @@
         "label": "Gradle"
       },
       {
-        "id": "urn:ngm:class:jetbrains",
-        "label": "JetBrains"
-      },
-      {
-        "id": "urn:ngm:class:android-development",
-        "label": "Android Development"
-      },
-      {
-        "id": "urn:ngm:class:functional-programming",
+        "id": "urn:ngm:class:programming-language",
         "label": "Functional Programming"
       }
     ]

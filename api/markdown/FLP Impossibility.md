@@ -66,34 +66,16 @@ public:: true
         "label": "Distributed Systems Theory"
       }
     ],
-    "requires": [
-      {
-        "@id": "urn:ngm:class:asynchronous-network",
-        "label": "Asynchronous Network"
-      },
-      {
-        "@id": "urn:ngm:class:crash-fault-model",
-        "label": "Crash Fault Model"
-      }
-    ],
     "enables": [
       {
         "@id": "urn:ngm:class:partial-synchrony",
         "label": "Partial Synchrony"
-      },
-      {
-        "@id": "urn:ngm:class:randomised-consensus",
-        "label": "Randomised Consensus"
       }
     ],
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:cap-theorem",
         "label": "CAP Theorem"
-      },
-      {
-        "@id": "urn:ngm:class:paxi-impossibility",
-        "label": "PAXI Impossibility"
       }
     ],
     "relatedTo": [
@@ -120,14 +102,6 @@ public:: true
       {
         "@id": "urn:ngm:class:state-machine-replication",
         "label": "State Machine Replication"
-      },
-      {
-        "@id": "urn:ngm:class:bivalent-configuration",
-        "label": "Bivalent Configuration"
-      },
-      {
-        "@id": "urn:ngm:class:safety-liveness-tradeoff",
-        "label": "Safety-Liveness Tradeoff"
       }
     ],
     "bridgesTo": [
@@ -144,10 +118,6 @@ public:: true
       {
         "@id": "urn:ngm:class:formal-proof",
         "label": "Formal Proof"
-      },
-      {
-        "@id": "urn:ngm:class:valence-argument",
-        "label": "Valence Argument"
       }
     ]
   },

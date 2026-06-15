@@ -31,7 +31,7 @@
         "label": "Algorithmic Accountability"
       },
       {
-        "id": "urn:ngm:class:bias-mitigation",
+        "id": "urn:ngm:class:bias-mitigation-techniques",
         "label": "Bias Mitigation"
       },
       {
@@ -56,7 +56,7 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
@@ -72,10 +72,6 @@
       {
         "id": "urn:ngm:class:black-box-ai",
         "label": "Black-Box AI"
-      },
-      {
-        "id": "urn:ngm:class:unregulated-ai",
-        "label": "Unregulated AI"
       }
     ],
     "bridgesTo": [
@@ -126,7 +122,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:eu-high-level-expert-group-on-ai",
+        "id": "urn:ngm:class:eu-hleg-ai",
         "label": "EU High-Level Expert Group on AI"
       },
       {
@@ -151,10 +147,6 @@
       {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
-      },
-      {
-        "id": "urn:ngm:class:fairness-aware-machine-learning",
-        "label": "Fairness-Aware Machine Learning"
       }
     ]
   },

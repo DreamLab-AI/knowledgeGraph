@@ -62,10 +62,6 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:predictable-scaling",
-        "label": "Predictable Scaling"
-      },
-      {
         "id": "urn:ngm:class:narrow-ai",
         "label": "Narrow AI"
       }

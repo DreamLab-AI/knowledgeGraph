@@ -16,21 +16,8 @@
   "qualityScore": 0.75,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:do-calculus",
-        "label": "Do-Calculus"
-      },
-      {
-        "id": "urn:ngm:class:back-door-criterion",
-        "label": "Back-Door Criterion"
-      }
-    ],
+    "hasPart": [],
     "requires": [
-      {
-        "id": "urn:ngm:class:structural-causal-model",
-        "label": "Structural Causal Model"
-      },
       {
         "id": "urn:ngm:class:observational-data",
         "label": "Observational Data"
@@ -54,10 +41,6 @@
         "label": "Counterfactual Reasoning"
       },
       {
-        "id": "urn:ngm:class:heterogeneous-treatment-effect-estimation",
-        "label": "Heterogeneous Treatment Effect Estimation"
-      },
-      {
         "id": "urn:ngm:class:algorithmic-fairness",
         "label": "Algorithmic Fairness"
       }
@@ -68,10 +51,6 @@
       {
         "id": "urn:ngm:class:correlation-analysis",
         "label": "Correlation Analysis"
-      },
-      {
-        "id": "urn:ngm:class:statistical-association",
-        "label": "Statistical Association"
       }
     ],
     "bridgesTo": [
@@ -98,16 +77,8 @@
         "label": "Directed Acyclic Graph"
       },
       {
-        "id": "urn:ngm:class:propensity-score-matching",
-        "label": "Propensity Score Matching"
-      },
-      {
         "id": "urn:ngm:class:instrumental-variables",
         "label": "Instrumental Variables"
-      },
-      {
-        "id": "urn:ngm:class:potential-outcomes-framework",
-        "label": "Potential Outcomes Framework"
       }
     ],
     "supports": [],

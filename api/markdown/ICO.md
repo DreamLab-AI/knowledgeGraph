@@ -23,56 +23,123 @@ public:: true
   "definition": "An Initial Coin Offering (ICO) is a blockchain-based fundraising mechanism in which a project or organisation sells newly issued cryptographic tokens to investors in exchange for established cryptocurrencies (typically ETH or BTC) or fiat currency, with the tokens granting access to a future service, governance rights, or speculative value appreciation. ICOs gained widespread use in 2017–2018 as an alternative to traditional venture capital and IPO processes, raising billions of dollars before facing significant regulatory scrutiny from securities authorities worldwide. They differ from traditional securities offerings in being permissionless, globally accessible, and typically not subject to investor accreditation requirements.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:crypto-token", "label": "Crypto Token"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:crypto-token",
+    "label": "Crypto Token"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:whitepaper", "label": "Whitepaper"},
-      {"@id": "urn:ngm:class:token-sale", "label": "Token Sale"},
-      {"@id": "urn:ngm:class:tokenomics", "label": "Tokenomics"}
+      {
+        "@id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"},
-      {"@id": "urn:ngm:class:erc-20", "label": "ERC-20"},
-      {"@id": "urn:ngm:class:kyc-aml", "label": "KYC/AML"}
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "@id": "urn:ngm:class:kyc-aml",
+        "label": "KYC/AML"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralised-project-funding", "label": "Decentralised Project Funding"},
-      {"@id": "urn:ngm:class:token-distribution", "label": "Token Distribution"}
+      {
+        "@id": "urn:ngm:class:token-distribution",
+        "label": "Token Distribution"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:smart-contracts", "label": "Smart Contracts"},
-      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"},
-      {"@id": "urn:ngm:class:multi-signature-wallet", "label": "Multi-Signature Wallet"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contracts",
+        "label": "Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "@id": "urn:ngm:class:multi-signature-wallet",
+        "label": "Multi-Signature Wallet"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:ethereum", "label": "Ethereum"},
-      {"@id": "urn:ngm:class:investor-trust", "label": "Investor Trust"}
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:mi-ca-regulation", "label": "MiCA Regulation"},
-      {"@id": "urn:ngm:class:initial-public-offering", "label": "Initial Public Offering"},
-      {"@id": "urn:ngm:class:venture-capital", "label": "Venture Capital"}
+      {
+        "@id": "urn:ngm:class:mi-ca-regulation",
+        "label": "MiCA Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:initial-public-offering",
+        "label": "Initial Public Offering"
+      },
+      {
+        "@id": "urn:ngm:class:venture-capital",
+        "label": "Venture Capital"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:securities-and-exchange-commission", "label": "Securities and Exchange Commission"},
-      {"@id": "urn:ngm:class:financial-conduct-authority", "label": "Financial Conduct Authority"}
+      {
+        "@id": "urn:ngm:class:securities-and-exchange-commission",
+        "label": "Securities and Exchange Commission"
+      },
+      {
+        "@id": "urn:ngm:class:financial-conduct-authority",
+        "label": "Financial Conduct Authority"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:security-token-offering", "label": "Security Token Offering"},
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
-      {"@id": "urn:ngm:class:blockchain-economics", "label": "Blockchain Economics"},
-      {"@id": "urn:ngm:class:initial-exchange-offering", "label": "Initial Exchange Offering"},
-      {"@id": "urn:ngm:class:initial-dex-offering", "label": "Initial DEX Offering"}
+      {
+        "@id": "urn:ngm:class:security-token-offering",
+        "label": "Security Token Offering"
+      },
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-economics",
+        "label": "Blockchain Economics"
+      },
+      {
+        "@id": "urn:ngm:class:initial-dex-offering",
+        "label": "Initial DEX Offering"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:crowdfunding", "label": "Crowdfunding"},
-      {"@id": "urn:ngm:class:securities-law", "label": "Securities Law"}
+      {
+        "@id": "urn:ngm:class:crowdfunding",
+        "label": "Crowdfunding"
+      },
+      {
+        "@id": "urn:ngm:class:securities-law",
+        "label": "Securities Law"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:initial-coin-offering", "label": "Initial Coin Offering"},
-    {"@id": "urn:ngm:class:token-crowdsale", "label": "Token Crowdsale"}
+    {
+      "@id": "urn:ngm:class:initial-coin-offering",
+      "label": "Initial Coin Offering"
+    },
+    {
+      "@id": "urn:ngm:class:token-crowdsale",
+      "label": "Token Crowdsale"
+    }
   ],
   "quality": 0.72,
   "provenance": {

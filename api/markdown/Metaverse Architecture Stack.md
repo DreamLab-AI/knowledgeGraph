@@ -134,14 +134,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:component-definitions",
-        "label": "Component Definitions"
-      },
-      {
-        "@id": "urn:ngm:class:interface-specifications",
-        "label": "Interface Specifications"
-      },
-      {
         "@id": "urn:ngm:class:application-layer",
         "label": "Application Layer"
       },
@@ -168,23 +160,11 @@ public:: true
         "label": "Interoperability Protocol"
       },
       {
-        "@id": "urn:ngm:class:layering-principles",
-        "label": "Layering Principles"
-      },
-      {
         "@id": "urn:ngm:class:interface-standards",
         "label": "Interface Standards"
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:component-reusability",
-        "label": "Component Reusability"
-      },
-      {
-        "@id": "urn:ngm:class:multi-vendor-integration",
-        "label": "Multi-vendor Integration"
-      },
       {
         "@id": "urn:ngm:class:scalable-architecture",
         "label": "Scalable Architecture"

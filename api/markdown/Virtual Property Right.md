@@ -148,36 +148,10 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:enforcement-system",
-        "label": "Enforcement System"
-      },
-      {
-        "@id": "urn:ngm:class:exclusion-right",
-        "label": "Exclusion Right"
-      },
-      {
-        "@id": "urn:ngm:class:ownership-claim",
-        "label": "Ownership Claim"
-      },
-      {
-        "@id": "urn:ngm:class:transfer-mechanism",
-        "label": "Transfer Mechanism"
-      },
-      {
-        "@id": "urn:ngm:class:usage-permission",
-        "label": "Usage Permission"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:authentication-mechanism",
         "label": "Authentication Mechanism"
-      },
-      {
-        "@id": "urn:ngm:class:legal-recognition",
-        "label": "Legal Recognition"
       },
       {
         "@id": "urn:ngm:class:asset-registry",
@@ -189,10 +163,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:ip-protection",
-        "label": "IP Protection"
-      },
       {
         "@id": "urn:ngm:class:digital-ownership",
         "label": "Digital Ownership"
@@ -210,10 +180,6 @@ public:: true
       {
         "@id": "urn:ngm:class:legal-system",
         "label": "Legal System"
-      },
-      {
-        "@id": "urn:ngm:class:property-law-framework",
-        "label": "Property Law Framework"
       }
     ]
   },

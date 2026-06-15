@@ -407,32 +407,12 @@ alias:: ColdChainMonitoring
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:alert-system",
-        "label": "Alert System"
-      },
-      {
-        "@id": "urn:ngm:class:blockchain-records",
-        "label": "Blockchain Records"
-      },
-      {
-        "@id": "urn:ngm:class:certificate-of-compliance",
-        "label": "Certificate of Compliance"
-      },
-      {
-        "@id": "urn:ngm:class:data-analytics-platform",
-        "label": "Data Analytics Platform"
-      },
-      {
         "@id": "urn:ngm:class:edge-gateway",
         "label": "Edge Gateway"
       },
       {
         "@id": "urn:ngm:class:rfid",
         "label": "RFID"
-      },
-      {
-        "@id": "urn:ngm:class:temperature-logger",
-        "label": "Temperature Logger"
       },
       {
         "@id": "urn:ngm:class:asset-registry",
@@ -469,10 +449,6 @@ alias:: ColdChainMonitoring
         "label": "Network Connectivity"
       },
       {
-        "@id": "urn:ngm:class:refrigeration-technology",
-        "label": "Refrigeration Technology"
-      },
-      {
         "@id": "urn:ngm:class:sensor-networks",
         "label": "Sensor Networks"
       },
@@ -491,16 +467,8 @@ alias:: ColdChainMonitoring
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:automated-lot-release",
-        "label": "Automated Lot Release"
-      },
-      {
         "@id": "urn:ngm:class:compliance-evidence",
         "label": "Compliance Evidence"
-      },
-      {
-        "@id": "urn:ngm:class:excursion-detection",
-        "label": "Excursion Detection"
       },
       {
         "@id": "urn:ngm:class:food-safety",
@@ -531,18 +499,6 @@ alias:: ColdChainMonitoring
       {
         "@id": "urn:ngm:class:dscsa-compliance",
         "label": "DSCSA Compliance"
-      },
-      {
-        "@id": "urn:ngm:class:fsma-204",
-        "label": "FSMA 204"
-      },
-      {
-        "@id": "urn:ngm:class:gdp-chapter-9",
-        "label": "GDP Chapter 9"
-      },
-      {
-        "@id": "urn:ngm:class:good-distribution-practice",
-        "label": "Good Distribution Practice"
       },
       {
         "@id": "urn:ngm:class:gs1-epcis",
@@ -577,10 +533,6 @@ alias:: ColdChainMonitoring
       {
         "@id": "urn:ngm:class:rfid",
         "label": "RFID"
-      },
-      {
-        "@id": "urn:ngm:class:satellite-connectivity",
-        "label": "Satellite Connectivity"
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
@@ -655,20 +607,8 @@ alias:: ColdChainMonitoring
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:biologics-logistics",
-        "label": "Biologics Logistics"
-      },
-      {
-        "@id": "urn:ngm:class:chemical-logistics",
-        "label": "Chemical Logistics"
-      },
-      {
         "@id": "urn:ngm:class:food-safety",
         "label": "Food Safety"
-      },
-      {
-        "@id": "urn:ngm:class:insurance-claims-processing",
-        "label": "Insurance Claims Processing"
       },
       {
         "@id": "urn:ngm:class:pharmaceutical-supply-chain",
@@ -677,10 +617,6 @@ alias:: ColdChainMonitoring
       {
         "@id": "urn:ngm:class:sustainability-reporting",
         "label": "SustainabilityReporting"
-      },
-      {
-        "@id": "urn:ngm:class:vaccine-distribution",
-        "label": "Vaccine Distribution"
       }
     ],
     "standardizedBy": [
@@ -689,11 +625,7 @@ alias:: ColdChainMonitoring
         "label": "Codex Alimentarius"
       },
       {
-        "@id": "urn:ngm:class:eu-gdp-guidelines",
-        "label": "EU GDP Guidelines"
-      },
-      {
-        "@id": "urn:ngm:class:fda-dscsa",
+        "@id": "urn:ngm:class:dscsa-compliance",
         "label": "FDA DSCSA"
       },
       {
@@ -707,14 +639,6 @@ alias:: ColdChainMonitoring
       {
         "@id": "urn:ngm:class:iso-22000",
         "label": "ISO 22000"
-      },
-      {
-        "@id": "urn:ngm:class:mhra-gdp-chapter-9",
-        "label": "MHRA GDP Chapter 9"
-      },
-      {
-        "@id": "urn:ngm:class:uk-food-standards-agency",
-        "label": "UK Food Standards Agency"
       },
       {
         "@id": "urn:ngm:class:who-evm",

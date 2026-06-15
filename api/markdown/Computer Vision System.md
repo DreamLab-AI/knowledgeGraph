@@ -55,52 +55,129 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:image-sensor", "label": "Image Sensor"},
-      {"@id": "urn:ngm:class:depth-sensor", "label": "Depth Sensor"},
-      {"@id": "urn:ngm:class:inference-pipeline", "label": "Inference Pipeline"},
-      {"@id": "urn:ngm:class:camera-calibration", "label": "Camera Calibration"}
+      {
+        "@id": "urn:ngm:class:image-sensor",
+        "label": "Image Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:depth-sensor",
+        "label": "Depth Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:gpu-accelerator", "label": "GPU Accelerator"},
-      {"@id": "urn:ngm:class:image-preprocessing", "label": "Image Preprocessing"},
-      {"@id": "urn:ngm:class:labeled-dataset", "label": "Labeled Dataset"}
+      {
+        "@id": "urn:ngm:class:gpu-accelerator",
+        "label": "GPU Accelerator"
+      },
+      {
+        "@id": "urn:ngm:class:image-preprocessing",
+        "label": "Image Preprocessing"
+      },
+      {
+        "@id": "urn:ngm:class:training-dataset",
+        "label": "Labeled Dataset"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:optical-flow", "label": "Optical Flow"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:optical-flow",
+        "label": "Optical Flow"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:spatial-mapping", "label": "Spatial Mapping"},
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:simultaneous-localization-and-mapping", "label": "Simultaneous Localization and Mapping"},
-      {"@id": "urn:ngm:class:pose-estimation", "label": "Pose Estimation"}
+      {
+        "@id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localization and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:image-classification", "label": "Image Classification"},
-      {"@id": "urn:ngm:class:semantic-segmentation", "label": "Semantic Segmentation"}
+      {
+        "@id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
-      {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"}
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:pattern-recognition", "label": "Pattern Recognition"},
-      {"@id": "urn:ngm:class:real-time-processing", "label": "Real-time Processing"}
+      {
+        "@id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-processing",
+        "label": "Real-time Processing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:lidar-system", "label": "LiDAR System"}
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "LiDAR System"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:robotics-perception", "label": "Robotics Perception"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:robotics-perception",
+        "label": "Robotics Perception"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:machine-vision-system", "label": "Machine Vision System"},
-    {"@id": "urn:ngm:class:visual-perception-system", "label": "Visual Perception System"}
+    {
+      "@id": "urn:ngm:class:machine-vision-system",
+      "label": "Machine Vision System"
+    },
+    {
+      "@id": "urn:ngm:class:visual-perception-system",
+      "label": "Visual Perception System"
+    }
   ],
   "quality": 0.72,
   "provenance": {

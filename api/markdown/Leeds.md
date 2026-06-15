@@ -65,24 +65,6 @@ public:: true
       {
         "@id": "urn:ngm:class:northern-powerhouse",
         "label": "Northern Powerhouse"
-      },
-      {
-        "@id": "urn:ngm:class:west-yorkshire",
-        "label": "West Yorkshire"
-      }
-    ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:university-of-leeds",
-        "label": "University of Leeds"
-      },
-      {
-        "@id": "urn:ngm:class:leeds-bradford-airport",
-        "label": "Leeds Bradford Airport"
-      },
-      {
-        "@id": "urn:ngm:class:leeds-city-region",
-        "label": "Leeds City Region"
       }
     ],
     "enables": [
@@ -91,46 +73,20 @@ public:: true
         "label": "Financial Technology"
       },
       {
-        "@id": "urn:ngm:class:health-data",
-        "label": "Health Data"
-      },
-      {
         "@id": "urn:ngm:class:digital-innovation",
         "label": "Digital Innovation"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:rail-infrastructure",
-        "label": "Rail Infrastructure"
-      },
-      {
         "@id": "urn:ngm:class:broadband-connectivity",
         "label": "Broadband Connectivity"
-      }
-    ],
-    "requires": [
-      {
-        "@id": "urn:ngm:class:regional-governance",
-        "label": "Regional Governance"
-      },
-      {
-        "@id": "urn:ngm:class:skilled-workforce",
-        "label": "Skilled Workforce"
       }
     ],
     "supports": [
       {
         "@id": "urn:ngm:class:research-and-development",
         "label": "Research and Development"
-      },
-      {
-        "@id": "urn:ngm:class:legal-services",
-        "label": "Legal Services"
-      },
-      {
-        "@id": "urn:ngm:class:professional-services",
-        "label": "Professional Services"
       }
     ],
     "relatedTo": [
@@ -141,34 +97,12 @@ public:: true
       {
         "@id": "urn:ngm:class:sheffield",
         "label": "Sheffield"
-      },
-      {
-        "@id": "urn:ngm:class:bradford",
-        "label": "Bradford"
-      },
-      {
-        "@id": "urn:ngm:class:yorkshire",
-        "label": "Yorkshire"
-      },
-      {
-        "@id": "urn:ngm:class:urban-centre",
-        "label": "Urban Centre"
       }
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:data-driven-healthcare",
-        "label": "Data-Driven Healthcare"
-      },
-      {
         "@id": "urn:ngm:class:smart-city",
         "label": "Smart City"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:london",
-        "label": "London"
       }
     ]
   },

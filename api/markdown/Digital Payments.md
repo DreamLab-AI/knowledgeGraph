@@ -84,10 +84,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:mobile-payment",
-        "label": "Mobile Payment"
-      },
-      {
         "@id": "urn:ngm:class:contactless-payment",
         "label": "Contactless Payment"
       },
@@ -130,20 +126,8 @@ public:: true
         "label": "Cross-Border Transfer"
       },
       {
-        "@id": "urn:ngm:class:virtual-purchases",
-        "label": "Virtual Purchases"
-      },
-      {
         "@id": "urn:ngm:class:e-commerce",
         "label": "E-Commerce"
-      },
-      {
-        "@id": "urn:ngm:class:microtransaction",
-        "label": "Microtransaction"
-      },
-      {
-        "@id": "urn:ngm:class:international-remittance",
-        "label": "International Remittance"
       }
     ],
     "dependsOn": [

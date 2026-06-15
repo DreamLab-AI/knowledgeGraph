@@ -127,11 +127,11 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:soft-prompt-embeddings",
+        "@id": "urn:ngm:class:soft-prompt-embedding",
         "label": "Soft Prompt Embeddings"
       },
       {
-        "@id": "urn:ngm:class:gradient-descent-optimisation",
+        "@id": "urn:ngm:class:gradient-descent",
         "label": "Gradient Descent Optimisation"
       }
     ],
@@ -139,15 +139,11 @@ public:: true
       {
         "@id": "urn:ngm:class:pre-trained-language-model",
         "label": "Pre-Trained Language Model"
-      },
-      {
-        "@id": "urn:ngm:class:task-specific-labelled-dataset",
-        "label": "Task-Specific Labelled Dataset"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:multi-task-model-deployment",
+        "@id": "urn:ngm:class:model-deployment",
         "label": "Multi-Task Model Deployment"
       },
       {
@@ -223,7 +219,7 @@ public:: true
         "label": "Fine Tuning"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:class:foundation-model",
         "label": "Foundation Models"
       },
       {

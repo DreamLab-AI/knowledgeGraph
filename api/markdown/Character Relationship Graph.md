@@ -90,30 +90,8 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:character-attributes",
-        "label": "Character Attributes"
-      },
-      {
-        "@id": "urn:ngm:class:relationship-modeling",
-        "label": "Relationship Modeling"
-      },
-      {
         "@id": "urn:ngm:class:graph-database",
         "label": "Graph Database"
-      }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:character-ai",
-        "label": "Character AI"
-      },
-      {
-        "@id": "urn:ngm:class:narrative-generation",
-        "label": "Narrative Generation"
-      },
-      {
-        "@id": "urn:ngm:class:story-analysis",
-        "label": "Story Analysis"
       }
     ]
   },

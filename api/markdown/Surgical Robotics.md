@@ -39,58 +39,119 @@ alias:: SurgicalRobotics
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:robotic-arm", "label": "Robotic Arm"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:endoscope", "label": "Endoscope"},
-      {"@id": "urn:ngm:class:master-slave-control", "label": "Master-Slave Control"}
+      {
+        "@id": "urn:ngm:class:robotic-arm",
+        "label": "Robotic Arm"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:medical-robotics", "label": "Medical Robotics"},
-      {"@id": "urn:ngm:class:minimally-invasive-surgery", "label": "Minimally Invasive Surgery"}
+      {
+        "@id": "urn:ngm:class:medical-robotics",
+        "label": "Medical Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:minimally-invasive-surgery",
+        "label": "Minimally Invasive Surgery"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:real-time-control", "label": "Real-Time Control"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:medical-imaging", "label": "Medical Imaging"}
+      {
+        "@id": "urn:ngm:class:real-time-control",
+        "label": "Real-Time Control"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"},
-      {"@id": "urn:ngm:class:remote-surgery", "label": "Remote Surgery"},
-      {"@id": "urn:ngm:class:autonomous-suturing", "label": "Autonomous Suturing"},
-      {"@id": "urn:ngm:class:medical-ai", "label": "Medical AI"}
+      {
+        "@id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "@id": "urn:ngm:class:remote-surgery",
+        "label": "Remote Surgery"
+      },
+      {
+        "@id": "urn:ngm:class:medical-ai",
+        "label": "Medical AI"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:image-segmentation", "label": "Image Segmentation"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
-      {"@id": "urn:ngm:class:force-torque-sensing", "label": "Force-Torque Sensing"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:force-torque-sensing",
+        "label": "Force-Torque Sensing"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-13485", "label": "ISO 13485"},
-      {"@id": "urn:ngm:class:iec-62304", "label": "IEC 62304"},
-      {"@id": "urn:ngm:class:iec-60601", "label": "IEC 60601"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:open-surgery", "label": "Open Surgery"},
-      {"@id": "urn:ngm:class:laparoscopic-surgery", "label": "Laparoscopic Surgery"}
+      {
+        "@id": "urn:ngm:class:iec-62304",
+        "label": "IEC 62304"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:5g-networks", "label": "5G Networks"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:5g-networks",
+        "label": "5G Networks"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:surgical-robot", "label": "Surgical Robot"},
-      {"@id": "urn:ngm:class:orthopaedic-robotics", "label": "Orthopaedic Robotics"},
-      {"@id": "urn:ngm:class:neurosurgical-robotics", "label": "Neurosurgical Robotics"},
-      {"@id": "urn:ngm:class:patient-safety", "label": "Patient Safety"}
+      {
+        "@id": "urn:ngm:class:surgical-robot",
+        "label": "Surgical Robot"
+      },
+      {
+        "@id": "urn:ngm:class:patient-safety",
+        "label": "Patient Safety"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:robot-assisted-surgery", "label": "Robot-Assisted Surgery"},
-    {"@id": "urn:ngm:class:robotic-surgery", "label": "Robotic Surgery"}
+    {
+      "@id": "urn:ngm:class:robot-assisted-surgery",
+      "label": "Robot-Assisted Surgery"
+    },
+    {
+      "@id": "urn:ngm:class:robotic-surgery",
+      "label": "Robotic Surgery"
+    }
   ],
   "quality": 0.74,
   "qualityScore": 0.74,

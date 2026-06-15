@@ -18,11 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:approximate-nearest-neighbor",
-        "label": "Approximate Nearest Neighbor"
-      },
-      {
-        "id": "urn:ngm:class:hnsw",
+        "id": "urn:ngm:class:hnsw-index",
         "label": "HNSW"
       },
       {
@@ -30,7 +26,7 @@
         "label": "Locality-Sensitive Hashing"
       },
       {
-        "id": "urn:ngm:class:inverted-file-index",
+        "id": "urn:ngm:class:inverted-index",
         "label": "Inverted File Index"
       }
     ],
@@ -75,17 +71,13 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:exact-search",
-        "label": "Exact Search"
-      },
-      {
         "id": "urn:ngm:class:keyword-search",
         "label": "Keyword Search"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:spatial-indexing",
+        "id": "urn:ngm:class:spatial-index",
         "label": "Spatial Indexing"
       },
       {

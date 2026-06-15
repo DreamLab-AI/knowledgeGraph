@@ -23,54 +23,131 @@ public:: true
   "definition": "Event sourcing is an architectural pattern for data persistence in which the state of a system is stored not as a mutable current-state record but as an append-only, ordered log of discrete domain events — each representing a fact that occurred at a specific point in time. Current application state is derived by replaying the event log from the beginning (or from a periodic snapshot), making the full history of state transitions a first-class, queryable artefact. This contrasts with CRUD-oriented architectures where only the latest state is stored, discarding historical change information.",
   "domain": "distributed-systems",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:audit-log", "label": "Audit Log"},
-      {"@id": "urn:ngm:class:domain-driven-design", "label": "Domain Driven Design"},
-      {"@id": "urn:ngm:class:write-ahead-log", "label": "Write Ahead Log"}
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:audit-log",
+        "label": "Audit Log"
+      },
+      {
+        "@id": "urn:ngm:class:domain-driven-design",
+        "label": "Domain Driven Design"
+      },
+      {
+        "@id": "urn:ngm:class:write-ahead-log",
+        "label": "Write Ahead Log"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:message-queue", "label": "Message Queue"},
-      {"@id": "urn:ngm:class:apache-kafka", "label": "Apache Kafka"},
-      {"@id": "urn:ngm:class:data-persistence", "label": "Data Persistence"},
-      {"@id": "urn:ngm:class:eventstoredb", "label": "EventStoreDB"},
-      {"@id": "urn:ngm:class:append-only-log", "label": "Append Only Log"}
+      {
+        "@id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "@id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      },
+      {
+        "@id": "urn:ngm:class:data-persistence",
+        "label": "Data Persistence"
+      },
+      {
+        "@id": "urn:ngm:class:eventstoredb",
+        "label": "EventStoreDB"
+      },
+      {
+        "@id": "urn:ngm:class:append-only-log",
+        "label": "Append Only Log"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:state-management", "label": "State Management"},
-      {"@id": "urn:ngm:class:agent-event-stream", "label": "Agent Event Stream"},
-      {"@id": "urn:ngm:class:temporal-query", "label": "Temporal Query"},
-      {"@id": "urn:ngm:class:retroactive-correction", "label": "Retroactive Correction"}
+      {
+        "@id": "urn:ngm:class:state-management",
+        "label": "State Management"
+      },
+      {
+        "@id": "urn:ngm:class:agent-event-stream",
+        "label": "Agent Event Stream"
+      },
+      {
+        "@id": "urn:ngm:class:temporal-query",
+        "label": "Temporal Query"
+      },
+      {
+        "@id": "urn:ngm:class:retroactive-correction",
+        "label": "Retroactive Correction"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:immutability", "label": "Immutability"},
-      {"@id": "urn:ngm:class:cqrs", "label": "CQRS"}
+      {
+        "@id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "@id": "urn:ngm:class:cqrs",
+        "label": "CQRS"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:event-store", "label": "Event Store"},
-      {"@id": "urn:ngm:class:idempotency", "label": "Idempotency"}
+      {
+        "@id": "urn:ngm:class:event-store",
+        "label": "Event Store"
+      },
+      {
+        "@id": "urn:ngm:class:idempotency",
+        "label": "Idempotency"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:event-projection", "label": "Event Projection"},
-      {"@id": "urn:ngm:class:snapshot", "label": "Snapshot"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:crud-architecture", "label": "CRUD Architecture"}
+      {
+        "@id": "urn:ngm:class:event-projection",
+        "label": "Event Projection"
+      },
+      {
+        "@id": "urn:ngm:class:snapshot",
+        "label": "Snapshot"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:eventual-consistency", "label": "Eventual Consistency"},
-      {"@id": "urn:ngm:class:optimistic-concurrency-control", "label": "Optimistic Concurrency Control"}
+      {
+        "@id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      },
+      {
+        "@id": "urn:ngm:class:optimistic-concurrency-control",
+        "label": "Optimistic Concurrency Control"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},
-      {"@id": "urn:ngm:class:ai-agent-memory", "label": "AI Agent Memory"}
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:agent-memory",
+        "label": "AI Agent Memory"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:event-log-architecture", "label": "Event Log Architecture"}
+    {
+      "@id": "urn:ngm:class:event-log-architecture",
+      "label": "Event Log Architecture"
+    }
   ],
   "quality": 0.72,
   "provenance": {

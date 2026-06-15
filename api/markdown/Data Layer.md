@@ -409,20 +409,12 @@ alias:: DataLayer
         "label": "Cache Layer"
       },
       {
-        "@id": "urn:ngm:class:connection-pool",
-        "label": "Connection Pool"
-      },
-      {
         "@id": "urn:ngm:class:data-availability-sampling",
         "label": "Data Availability Sampling"
       },
       {
-        "@id": "urn:ngm:class:data-indexing",
+        "@id": "urn:ngm:class:on-chain-data-indexing",
         "label": "Data Indexing"
-      },
-      {
-        "@id": "urn:ngm:class:database-engine",
-        "label": "Database Engine"
       },
       {
         "@id": "urn:ngm:class:erasure-coding",
@@ -433,11 +425,7 @@ alias:: DataLayer
         "label": "KZG Commitment"
       },
       {
-        "@id": "urn:ngm:class:object-relational-mapper",
-        "label": "Object-Relational Mapper"
-      },
-      {
-        "@id": "urn:ngm:class:replication-service",
+        "@id": "urn:ngm:class:replication",
         "label": "Replication Service"
       },
       {
@@ -455,7 +443,7 @@ alias:: DataLayer
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:backup-strategy",
+        "@id": "urn:ngm:class:backup-and-recovery",
         "label": "Backup Strategy"
       },
       {
@@ -465,10 +453,6 @@ alias:: DataLayer
       {
         "@id": "urn:ngm:class:schema-definition",
         "label": "Schema Definition"
-      },
-      {
-        "@id": "urn:ngm:class:storage-medium",
-        "label": "Storage Medium"
       },
       {
         "@id": "urn:ngm:class:consensus-protocol",
@@ -497,11 +481,11 @@ alias:: DataLayer
         "label": "Data Persistence"
       },
       {
-        "@id": "urn:ngm:class:horizontal-scaling",
+        "@id": "urn:ngm:class:horizontal-scalability",
         "label": "Horizontal Scaling"
       },
       {
-        "@id": "urn:ngm:class:polyglot-persistence",
+        "@id": "urn:ngm:class:persistence",
         "label": "Polyglot Persistence"
       },
       {
@@ -509,46 +493,18 @@ alias:: DataLayer
         "label": "Retrieval-Augmented Generation"
       },
       {
-        "@id": "urn:ngm:class:rollup-scaling",
+        "@id": "urn:ngm:class:rollup",
         "label": "Rollup Scaling"
-      },
-      {
-        "@id": "urn:ngm:class:semantic-query",
-        "label": "Semantic Query"
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:active-record",
-        "label": "Active Record"
-      },
       {
         "@id": "urn:ngm:class:cqrs",
         "label": "CQRS"
       },
       {
-        "@id": "urn:ngm:class:data-mapper-pattern",
-        "label": "Data Mapper Pattern"
-      },
-      {
         "@id": "urn:ngm:class:event-sourcing",
         "label": "Event Sourcing"
-      },
-      {
-        "@id": "urn:ngm:class:hexagonal-architecture",
-        "label": "Hexagonal Architecture"
-      },
-      {
-        "@id": "urn:ngm:class:ports-and-adapters",
-        "label": "Ports and Adapters"
-      },
-      {
-        "@id": "urn:ngm:class:repository-pattern",
-        "label": "Repository Pattern"
-      },
-      {
-        "@id": "urn:ngm:class:unit-of-work",
-        "label": "Unit of Work"
       }
     ],
     "uses": [
@@ -557,24 +513,8 @@ alias:: DataLayer
         "label": "Bloom Filter"
       },
       {
-        "@id": "urn:ngm:class:cypher",
-        "label": "Cypher"
-      },
-      {
         "@id": "urn:ngm:class:graph-ql",
         "label": "GraphQL"
-      },
-      {
-        "@id": "urn:ngm:class:jdbc",
-        "label": "JDBC"
-      },
-      {
-        "@id": "urn:ngm:class:odbc",
-        "label": "ODBC"
-      },
-      {
-        "@id": "urn:ngm:class:orm-frameworks",
-        "label": "ORM Frameworks"
       },
       {
         "@id": "urn:ngm:class:reed-solomon-codes",
@@ -603,16 +543,8 @@ alias:: DataLayer
         "label": "Celestia"
       },
       {
-        "@id": "urn:ngm:class:clean-architecture",
-        "label": "Clean Architecture"
-      },
-      {
         "@id": "urn:ngm:class:domain-driven-design",
         "label": "Domain-Driven Design"
-      },
-      {
-        "@id": "urn:ngm:class:eigen-da",
-        "label": "EigenDA"
       },
       {
         "@id": "urn:ngm:class:microservices",
@@ -645,14 +577,6 @@ alias:: DataLayer
         "label": "Domain Model"
       },
       {
-        "@id": "urn:ngm:class:execution-layer",
-        "label": "Execution Layer"
-      },
-      {
-        "@id": "urn:ngm:class:reporting-layer",
-        "label": "Reporting Layer"
-      },
-      {
         "@id": "urn:ngm:class:settlement-layer",
         "label": "Settlement Layer"
       },
@@ -667,12 +591,8 @@ alias:: DataLayer
         "label": "ANSI SQL"
       },
       {
-        "@id": "urn:ngm:class:celestia-specifications",
+        "@id": "urn:ngm:class:celestia",
         "label": "Celestia Specifications"
-      },
-      {
-        "@id": "urn:ngm:class:cidr-architecture",
-        "label": "CIDR Architecture"
       },
       {
         "@id": "urn:ngm:class:eip-4844",
@@ -681,18 +601,6 @@ alias:: DataLayer
       {
         "@id": "urn:ngm:class:iso-iec-9075",
         "label": "ISO/IEC 9075"
-      },
-      {
-        "@id": "urn:ngm:class:jdbc-specification",
-        "label": "JDBC Specification"
-      },
-      {
-        "@id": "urn:ngm:class:jpa-specification",
-        "label": "JPA Specification"
-      },
-      {
-        "@id": "urn:ngm:class:odbc-specification",
-        "label": "ODBC Specification"
       }
     ]
   },

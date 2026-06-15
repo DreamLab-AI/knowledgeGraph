@@ -18,14 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:name-matching-algorithm",
-        "label": "Name Matching Algorithm"
-      },
-      {
-        "id": "urn:ngm:class:alert-adjudication",
-        "label": "Alert Adjudication"
-      },
-      {
         "id": "urn:ngm:class:watchlist-management",
         "label": "Watchlist Management"
       }
@@ -38,10 +30,6 @@
       {
         "id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail"
-      },
-      {
-        "id": "urn:ngm:class:real-time-data-feed",
-        "label": "Real-Time Data Feed"
       }
     ],
     "enables": [
@@ -59,10 +47,6 @@
       }
     ],
     "dependsOn": [
-      {
-        "id": "urn:ngm:class:sanctions-list",
-        "label": "Sanctions List"
-      },
       {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
@@ -95,7 +79,7 @@
         "label": "Blockchain Compliance"
       },
       {
-        "id": "urn:ngm:class:fuzzy-matching",
+        "id": "urn:ngm:class:fuzzy-logic",
         "label": "Fuzzy Matching"
       },
       {

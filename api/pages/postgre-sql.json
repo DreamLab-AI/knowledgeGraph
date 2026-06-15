@@ -16,16 +16,7 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:query-planner",
-        "label": "Query Planner"
-      },
-      {
-        "id": "urn:ngm:class:extension-system",
-        "label": "Extension System"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:storage-engine",
@@ -44,19 +35,11 @@
       {
         "id": "urn:ngm:class:retrieval-augmented-generation",
         "label": "Retrieval-Augmented Generation"
-      },
-      {
-        "id": "urn:ngm:class:analytical-processing",
-        "label": "Analytical Processing"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:mysql",
-        "label": "MySQL"
-      },
       {
         "id": "urn:ngm:class:nosql-database",
         "label": "NoSQL Database"
@@ -100,12 +83,8 @@
         "label": "Full-Text Search"
       },
       {
-        "id": "urn:ngm:class:multi-version-concurrency-control",
+        "id": "urn:ngm:class:version-control",
         "label": "Multi-Version Concurrency Control"
-      },
-      {
-        "id": "urn:ngm:class:logical-replication",
-        "label": "Logical Replication"
       }
     ],
     "standardizedBy": [],
@@ -122,10 +101,6 @@
       {
         "id": "urn:ngm:class:query-processor",
         "label": "Query Processor"
-      },
-      {
-        "id": "urn:ngm:class:acid-transaction",
-        "label": "ACID Transaction"
       },
       {
         "id": "urn:ngm:class:sql",

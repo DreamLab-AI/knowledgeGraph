@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:class-hierarchy",
+        "id": "urn:ngm:class:owl-class-hierarchy",
         "label": "Class Hierarchy"
       },
       {
@@ -34,10 +34,6 @@
       {
         "id": "urn:ngm:class:formal-language",
         "label": "Formal Language"
-      },
-      {
-        "id": "urn:ngm:class:axiom",
-        "label": "Axiom"
       }
     ],
     "enables": [
@@ -94,7 +90,7 @@
         "label": "OWL Class Hierarchy"
       },
       {
-        "id": "urn:ngm:class:description-logics",
+        "id": "urn:ngm:class:description-logic",
         "label": "Description Logics"
       },
       {
@@ -106,7 +102,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       }
     ],

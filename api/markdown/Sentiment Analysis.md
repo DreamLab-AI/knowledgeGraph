@@ -66,51 +66,92 @@ public:: true
     "label": "Natural Language Processing"
   },
   "relations": {
-    "hasPart": [
-      {"@id": "urn:ngm:class:aspect-based-sentiment-analysis", "label": "Aspect-Based Sentiment Analysis"},
-      {"@id": "urn:ngm:class:emotion-detection", "label": "Emotion Detection"},
-      {"@id": "urn:ngm:class:opinion-mining", "label": "Opinion Mining"}
-    ],
     "partOf": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:text-classification", "label": "Text Classification"},
-      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"}
+      {
+        "@id": "urn:ngm:class:text-classification",
+        "label": "Text Classification"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:word-embeddings", "label": "Word Embeddings"},
-      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"}
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:word-embeddings",
+        "label": "Word Embeddings"
+      },
+      {
+        "@id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
-      {"@id": "urn:ngm:class:social-media-monitoring", "label": "Social Media Monitoring"},
-      {"@id": "urn:ngm:class:customer-feedback-analysis", "label": "Customer Feedback Analysis"},
-      {"@id": "urn:ngm:class:brand-reputation-management", "label": "Brand Reputation Management"}
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:reputation-system",
+        "label": "Brand Reputation Management"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:labelled-training-data", "label": "Labelled Training Data"},
-      {"@id": "urn:ngm:class:feature-extraction", "label": "Feature Extraction"}
+      {
+        "@id": "urn:ngm:class:labelled-training-data",
+        "label": "Labelled Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"},
-      {"@id": "urn:ngm:class:machine-translation", "label": "Machine Translation"}
+      {
+        "@id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
-      {"@id": "urn:ngm:class:subjectivity-analysis", "label": "Subjectivity Analysis"},
-      {"@id": "urn:ngm:class:stance-detection", "label": "Stance Detection"}
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:market-research", "label": "Market Research"},
-      {"@id": "urn:ngm:class:financial-analytics", "label": "Financial Analytics"}
+      {
+        "@id": "urn:ngm:class:market-research",
+        "label": "Market Research"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:opinion-mining", "label": "Opinion Mining"},
-    {"@id": "urn:ngm:class:subjectivity-classification", "label": "Subjectivity Classification"}
+    {
+      "@id": "urn:ngm:class:opinion-mining",
+      "label": "Opinion Mining"
+    },
+    {
+      "@id": "urn:ngm:class:subjectivity-classification",
+      "label": "Subjectivity Classification"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -38,52 +38,129 @@ public:: true
   ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:securities-regulation", "label": "Securities Regulation"},
-      {"@id": "urn:ngm:class:financial-stability", "label": "Financial Stability"},
-      {"@id": "urn:ngm:class:investor-protection", "label": "Investor Protection"},
-      {"@id": "urn:ngm:class:market-integrity", "label": "Market Integrity"}
+      {
+        "@id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "@id": "urn:ngm:class:investor-protection",
+        "label": "Investor Protection"
+      },
+      {
+        "@id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-asset-market", "label": "Digital Asset Market"},
-      {"@id": "urn:ngm:class:systemic-risk", "label": "Systemic Risk"},
-      {"@id": "urn:ngm:class:financial-stability-board", "label": "Financial Stability Board"},
-      {"@id": "urn:ngm:class:g20", "label": "G20"},
-      {"@id": "urn:ngm:class:basel-committee", "label": "Basel Committee"},
-      {"@id": "urn:ngm:class:imf", "label": "IMF"},
-      {"@id": "urn:ngm:class:world-bank", "label": "World Bank"}
+      {
+        "@id": "urn:ngm:class:digital-asset-market",
+        "label": "Digital Asset Market"
+      },
+      {
+        "@id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      },
+      {
+        "@id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      },
+      {
+        "@id": "urn:ngm:class:g20",
+        "label": "G20"
+      },
+      {
+        "@id": "urn:ngm:class:basel-committee",
+        "label": "Basel Committee"
+      },
+      {
+        "@id": "urn:ngm:class:imf",
+        "label": "IMF"
+      },
+      {
+        "@id": "urn:ngm:class:world-bank",
+        "label": "World Bank"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"}
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:principles-of-securities-regulation", "label": "Principles of Securities Regulation"},
-      {"@id": "urn:ngm:class:iosco-objectives-and-principles", "label": "IOSCO Objectives and Principles"}
+      {
+        "@id": "urn:ngm:class:securities-regulation",
+        "label": "Principles of Securities Regulation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:cross-border-regulatory-cooperation", "label": "Cross-Border Regulatory Cooperation"},
-      {"@id": "urn:ngm:class:market-surveillance", "label": "Market Surveillance"},
-      {"@id": "urn:ngm:class:capital-markets", "label": "Capital Markets"}
+      {
+        "@id": "urn:ngm:class:cross-border-regulatory-cooperation",
+        "label": "Cross-Border Regulatory Cooperation"
+      },
+      {
+        "@id": "urn:ngm:class:market-surveillance",
+        "label": "Market Surveillance"
+      },
+      {
+        "@id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:regulatory-enforcement", "label": "Regulatory Enforcement"},
-      {"@id": "urn:ngm:class:information-sharing", "label": "Information Sharing"}
+      {
+        "@id": "urn:ngm:class:regulatory-enforcement",
+        "label": "Regulatory Enforcement"
+      },
+      {
+        "@id": "urn:ngm:class:information-sharing",
+        "label": "Information Sharing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:multilateral-memorandum-of-understanding", "label": "Multilateral Memorandum of Understanding"},
-      {"@id": "urn:ngm:class:fsap", "label": "FSAP"}
+      {
+        "@id": "urn:ngm:class:multilateral-memorandum-of-understanding",
+        "label": "Multilateral Memorandum of Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:fsap",
+        "label": "FSAP"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:fatf", "label": "FATF"},
-      {"@id": "urn:ngm:class:bis", "label": "BIS"}
+      {
+        "@id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      },
+      {
+        "@id": "urn:ngm:class:bis",
+        "label": "BIS"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:algorithmic-trading", "label": "Algorithmic Trading"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:international-organisation-of-securities-commissions", "label": "International Organisation of Securities Commissions"}
+    {
+      "@id": "urn:ngm:class:international-organisation-of-securities-commissions",
+      "label": "International Organisation of Securities Commissions"
+    }
   ],
   "quality": 0.74,
   "provenance": {

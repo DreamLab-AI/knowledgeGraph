@@ -104,10 +104,6 @@ public:: true
         "label": "Data Models"
       },
       {
-        "@id": "urn:ngm:class:integration-standards",
-        "label": "Integration Standards"
-      },
-      {
         "@id": "urn:ngm:class:reference-architecture",
         "label": "Reference Architecture"
       }

@@ -23,52 +23,123 @@ public:: true
   "definition": "Model parallelism is a distributed training strategy that splits a single neural network's parameters and computation across multiple accelerators when the model is too large to fit in one device's memory. Variants include tensor parallelism (splitting within layers) and pipeline parallelism (splitting across layers into stages). It is essential for training large language models and is often combined with data parallelism.",
   "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:distributed-training",
+    "label": "Distributed Training"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:tensor-parallelism", "label": "Tensor Parallelism"},
-      {"@id": "urn:ngm:class:pipeline-parallelism", "label": "Pipeline Parallelism"},
-      {"@id": "urn:ngm:class:expert-parallelism", "label": "Expert Parallelism"}
+      {
+        "@id": "urn:ngm:class:tensor-parallelism",
+        "label": "Tensor Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:pipeline-parallelism",
+        "label": "Pipeline Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:expert-parallelism",
+        "label": "Expert Parallelism"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:3d-parallelism", "label": "3D Parallelism"},
-      {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"}
+      {
+        "@id": "urn:ngm:class:3d-parallelism",
+        "label": "3D Parallelism"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:gpu-cluster", "label": "GPU Cluster"},
-      {"@id": "urn:ngm:class:high-bandwidth-interconnect", "label": "High-Bandwidth Interconnect"},
-      {"@id": "urn:ngm:class:collective-communication", "label": "Collective Communication"}
+      {
+        "@id": "urn:ngm:class:gpu-cluster",
+        "label": "GPU Cluster"
+      },
+      {
+        "@id": "urn:ngm:class:high-bandwidth-interconnect",
+        "label": "High-Bandwidth Interconnect"
+      },
+      {
+        "@id": "urn:ngm:class:collective-communication",
+        "label": "Collective Communication"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:large-language-model-training", "label": "Large Language Model Training"},
-      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"},
-      {"@id": "urn:ngm:class:mixture-of-experts", "label": "Mixture of Experts"}
+      {
+        "@id": "urn:ngm:class:large-language-model-training",
+        "label": "Large Language Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "@id": "urn:ngm:class:mixture-of-experts-architecture",
+        "label": "Mixture of Experts"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"},
-      {"@id": "urn:ngm:class:nvlink", "label": "NVLink"},
-      {"@id": "urn:ngm:class:rdma", "label": "RDMA"}
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:nvlink",
+        "label": "NVLink"
+      },
+      {
+        "@id": "urn:ngm:class:rdma",
+        "label": "RDMA"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:deep-speed", "label": "DeepSpeed"},
-      {"@id": "urn:ngm:class:megatron-lm", "label": "Megatron-LM"},
-      {"@id": "urn:ngm:class:pytorch-fsdp", "label": "PyTorch FSDP"}
+      {
+        "@id": "urn:ngm:class:deep-speed",
+        "label": "DeepSpeed"
+      },
+      {
+        "@id": "urn:ngm:class:megatron-lm",
+        "label": "Megatron-LM"
+      },
+      {
+        "@id": "urn:ngm:class:fsdp",
+        "label": "PyTorch FSDP"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:data-parallelism", "label": "Data Parallelism"},
-      {"@id": "urn:ngm:class:fully-sharded-data-parallel", "label": "Fully Sharded Data Parallel"}
+      {
+        "@id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:micro-batch-scheduling", "label": "Micro-Batch Scheduling"},
-      {"@id": "urn:ngm:class:gradient-checkpointing", "label": "Gradient Checkpointing"}
+      {
+        "@id": "urn:ngm:class:micro-batch-scheduling",
+        "label": "Micro-Batch Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-checkpointing",
+        "label": "Gradient Checkpointing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:hardware-accelerator", "label": "Hardware Accelerator"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-accelerator",
+        "label": "Hardware Accelerator"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:inter-device-model-splitting", "label": "Inter-Device Model Splitting"}
+    {
+      "@id": "urn:ngm:class:inter-device-model-splitting",
+      "label": "Inter-Device Model Splitting"
+    }
   ],
   "quality": 0.73,
   "provenance": {

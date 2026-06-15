@@ -23,54 +23,127 @@ public:: true
   "definition": "An animation controller is a software component that manages the selection, blending, and sequencing of animation clips for a character or object in real-time interactive environments. It typically implements a state machine model in which transitions between animation states are governed by parametric conditions such as velocity, input events, or AI signals. Animation controllers sit between high-level game logic and the low-level skeletal animation runtime, abstracting away the complexity of blend trees, IK passes, and additive layers.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:controller", "label": "Controller"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:controller",
+      "label": "Controller"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:skeletal-animation", "label": "Skeletal Animation"},
-      {"@id": "urn:ngm:class:state-machine", "label": "State Machine"},
-      {"@id": "urn:ngm:class:inverse-kinematics", "label": "Inverse Kinematics"},
-      {"@id": "urn:ngm:class:blend-tree", "label": "Blend Tree"},
-      {"@id": "urn:ngm:class:animation-clip", "label": "Animation Clip"}
+      {
+        "@id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      },
+      {
+        "@id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      },
+      {
+        "@id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "@id": "urn:ngm:class:blend-tree",
+        "label": "Blend Tree"
+      },
+      {
+        "@id": "urn:ngm:class:animation-clip",
+        "label": "Animation Clip"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:blend-tree", "label": "Blend Tree"},
-      {"@id": "urn:ngm:class:animation-state", "label": "Animation State"},
-      {"@id": "urn:ngm:class:transition-condition", "label": "Transition Condition"}
+      {
+        "@id": "urn:ngm:class:blend-tree",
+        "label": "Blend Tree"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:animation-runtime", "label": "Animation Runtime"}
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:character-rigging", "label": "Character Rigging"},
-      {"@id": "urn:ngm:class:animation-clip", "label": "Animation Clip"}
+      {
+        "@id": "urn:ngm:class:character-rigging",
+        "label": "Character Rigging"
+      },
+      {
+        "@id": "urn:ngm:class:animation-clip",
+        "label": "Animation Clip"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:animation-retargeting", "label": "Animation Retargeting"},
-      {"@id": "urn:ngm:class:procedural-animation", "label": "Procedural Animation"},
-      {"@id": "urn:ngm:class:motion-matching", "label": "Motion Matching"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:animation-retargeting",
+        "label": "Animation Retargeting"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-animation",
+        "label": "Procedural Animation"
+      },
+      {
+        "@id": "urn:ngm:class:motion-matching",
+        "label": "Motion Matching"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"},
-      {"@id": "urn:ngm:class:game-logic", "label": "Game Logic"}
+      {
+        "@id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:animation", "label": "Animation"},
-      {"@id": "urn:ngm:class:character-animation", "label": "Character Animation"},
-      {"@id": "urn:ngm:class:procedural-animation", "label": "Procedural Animation"},
-      {"@id": "urn:ngm:class:character-rigging", "label": "Character Rigging"},
-      {"@id": "urn:ngm:class:locomotion-system", "label": "Locomotion System"},
-      {"@id": "urn:ngm:class:ragdoll-physics", "label": "Ragdoll Physics"}
+      {
+        "@id": "urn:ngm:class:animation",
+        "label": "Animation"
+      },
+      {
+        "@id": "urn:ngm:class:character-animation",
+        "label": "Character Animation"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-animation",
+        "label": "Procedural Animation"
+      },
+      {
+        "@id": "urn:ngm:class:character-rigging",
+        "label": "Character Rigging"
+      },
+      {
+        "@id": "urn:ngm:class:locomotion",
+        "label": "Locomotion System"
+      },
+      {
+        "@id": "urn:ngm:class:ragdoll-physics",
+        "label": "Ragdoll Physics"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:animator-controller", "label": "Animator Controller"},
-    {"@id": "urn:ngm:class:animation-state-machine", "label": "Animation State Machine"}
+    {
+      "@id": "urn:ngm:class:animator-controller",
+      "label": "Animator Controller"
+    },
+    {
+      "@id": "urn:ngm:class:animation-state-machine",
+      "label": "Animation State Machine"
+    }
   ],
   "quality": 0.8,
   "provenance": {

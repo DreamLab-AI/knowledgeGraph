@@ -86,18 +86,6 @@ public:: true
       {
         "@id": "urn:ngm:class:animation-rig",
         "label": "Animation Rig"
-      },
-      {
-        "@id": "urn:ngm:class:visual-mesh",
-        "label": "Visual Mesh"
-      },
-      {
-        "@id": "urn:ngm:class:skeleton",
-        "label": "Skeleton"
-      },
-      {
-        "@id": "urn:ngm:class:identity-credential",
-        "label": "Identity Credential"
       }
     ],
     "partOf": [
@@ -126,10 +114,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:user-embodiment",
-        "label": "User Embodiment"
-      },
-      {
         "@id": "urn:ngm:class:social-presence",
         "label": "Social Presence"
       },
@@ -154,11 +138,11 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:hanim",
+        "@id": "urn:ngm:class:hanim-standard",
         "label": "HAnim"
       },
       {
-        "@id": "urn:ngm:class:glb-gltf",
+        "@id": "urn:ngm:class:gltf-standard",
         "label": "glTF/GLB"
       }
     ],
@@ -180,16 +164,6 @@ public:: true
       {
         "@id": "urn:ngm:class:personalisation",
         "label": "Personalisation"
-      }
-    ],
-    "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:acm-web3-d-hanim",
-        "label": "ACM + Web3D HAnim"
-      },
-      {
-        "@id": "urn:ngm:class:iso-iec-19775",
-        "label": "ISO/IEC 19775 X3D"
       }
     ],
     "contrastsWith": [
@@ -220,10 +194,6 @@ public:: true
       {
         "@id": "urn:ngm:class:augmented-reality",
         "label": "Augmented Reality"
-      },
-      {
-        "@id": "urn:ngm:class:xr-user-interface",
-        "label": "XR User Interface"
       }
     ]
   },
@@ -237,7 +207,7 @@ public:: true
       "label": "Digital Persona"
     }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

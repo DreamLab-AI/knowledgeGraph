@@ -38,50 +38,107 @@ alias:: Retrieval Augmented Generation, RAG, Retrieval-Augmented LLM
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:retrieval-augmented-llm", "label": "Retrieval-Augmented LLM"},
-    {"@id": "urn:ngm:class:grounded-language-generation", "label": "Grounded Language Generation"}
+    {
+      "@id": "urn:ngm:class:retrieval-augmented-llm",
+      "label": "Retrieval-Augmented LLM"
+    },
+    {
+      "@id": "urn:ngm:class:grounded-language-generation",
+      "label": "Grounded Language Generation"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
-      {"@id": "urn:ngm:class:embedding-model", "label": "Embedding Model"},
-      {"@id": "urn:ngm:class:document-chunking", "label": "Document Chunking"},
-      {"@id": "urn:ngm:class:approximate-nearest-neighbour-search", "label": "Approximate Nearest Neighbour Search"}
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      },
+      {
+        "@id": "urn:ngm:class:chunking",
+        "label": "Document Chunking"
+      },
+      {
+        "@id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Approximate Nearest Neighbour Search"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
-      {"@id": "urn:ngm:class:semantic-search", "label": "Semantic Search"},
-      {"@id": "urn:ngm:class:knowledge-grounding", "label": "Knowledge Grounding"},
-      {"@id": "urn:ngm:class:source-attribution", "label": "Source Attribution"},
-      {"@id": "urn:ngm:class:hallucination-mitigation", "label": "Hallucination Mitigation"}
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "@id": "urn:ngm:class:hallucination-reduction",
+        "label": "Hallucination Mitigation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:knowledge-base", "label": "Knowledge Base"},
-      {"@id": "urn:ngm:class:dense-retrieval", "label": "Dense Retrieval"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:retriever-component", "label": "Retriever Component"},
-      {"@id": "urn:ngm:class:reader-component", "label": "Reader Component"},
-      {"@id": "urn:ngm:class:context-window-management", "label": "Context Window Management"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "@id": "urn:ngm:class:dense-retrieval",
+        "label": "Dense Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:parametric-knowledge", "label": "Parametric Knowledge"},
-      {"@id": "urn:ngm:class:model-pretraining", "label": "Model Pre-training"}
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:information-retrieval", "label": "Information Retrieval"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:ai-inference-architecture", "label": "AI Inference Architecture"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference Architecture"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:enterprise-search", "label": "Enterprise Search"},
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
+      {
+        "@id": "urn:ngm:class:enterprise-search",
+        "label": "Enterprise Search"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
     ]
   },
   "quality": 0.76,

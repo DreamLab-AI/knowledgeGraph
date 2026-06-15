@@ -143,12 +143,8 @@ alias:: PlatformLayer
         "label": "Identity Service"
       },
       {
-        "@id": "urn:ngm:class:persistence-service",
+        "@id": "urn:ngm:class:persistence",
         "label": "Persistence Service"
-      },
-      {
-        "@id": "urn:ngm:class:world-state-service",
-        "label": "World State Service"
       },
       {
         "@id": "urn:ngm:class:platform-middleware",
@@ -179,7 +175,7 @@ alias:: PlatformLayer
         "label": "Asset Portability"
       },
       {
-        "@id": "urn:ngm:class:cross-world-interoperability",
+        "@id": "urn:ngm:class:interoperability",
         "label": "Cross-World Interoperability"
       },
       {

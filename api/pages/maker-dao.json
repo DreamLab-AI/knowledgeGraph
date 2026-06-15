@@ -18,20 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:peg-stability-module",
-        "label": "Peg Stability Module"
-      },
-      {
-        "id": "urn:ngm:class:mkr-token",
-        "label": "MKR Token"
-      },
-      {
-        "id": "urn:ngm:class:dai-stablecoin",
+        "id": "urn:ngm:class:dai",
         "label": "DAI Stablecoin"
-      },
-      {
-        "id": "urn:ngm:class:sub-dao",
-        "label": "SubDAO"
       }
     ],
     "requires": [
@@ -70,10 +58,6 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:fiat-backed-stablecoin",
-        "label": "Fiat-Backed Stablecoin"
-      },
-      {
         "id": "urn:ngm:class:centralised-exchange",
         "label": "Centralised Exchange"
       }
@@ -104,10 +88,6 @@
       {
         "id": "urn:ngm:class:dutch-auction",
         "label": "Dutch Auction"
-      },
-      {
-        "id": "urn:ngm:class:collateralised-debt-position",
-        "label": "Collateralised Debt Position"
       }
     ],
     "supports": [],

@@ -63,16 +63,12 @@ elevatedFrom:: [[Google]]
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:google-deepmind",
+        "@id": "urn:ngm:class:google-ai-technology-corporation-deep-mind",
         "label": "Google DeepMind"
       },
       {
-        "@id": "urn:ngm:class:google-cloud",
+        "@id": "urn:ngm:class:google-ai-technology-corporation-cloud",
         "label": "Google Cloud"
-      },
-      {
-        "@id": "urn:ngm:class:google-brain",
-        "label": "Google Brain"
       },
       {
         "@id": "urn:ngm:class:vertex-ai",
@@ -91,7 +87,7 @@ elevatedFrom:: [[Google]]
         "label": "Tensor Processing Unit"
       },
       {
-        "@id": "urn:ngm:class:large-scale-distributed-training",
+        "@id": "urn:ngm:class:distributed-training",
         "label": "Large-Scale Distributed Training"
       }
     ],
@@ -101,12 +97,8 @@ elevatedFrom:: [[Google]]
         "label": "Generative AI"
       },
       {
-        "@id": "urn:ngm:class:ai-assisted-search",
+        "@id": "urn:ngm:class:ai-search",
         "label": "AI-Assisted Search"
-      },
-      {
-        "@id": "urn:ngm:class:enterprise-ai-platform",
-        "label": "Enterprise AI Platform"
       }
     ],
     "dependsOn": [
@@ -149,25 +141,17 @@ elevatedFrom:: [[Google]]
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:openai",
+        "@id": "urn:ngm:class:openai-research-organisation",
         "label": "OpenAI"
-      },
-      {
-        "@id": "urn:ngm:class:microsoft-ai",
-        "label": "Microsoft AI"
       },
       {
         "@id": "urn:ngm:class:meta-ai",
         "label": "Meta AI"
-      },
-      {
-        "@id": "urn:ngm:class:amazon-web-services-ai",
-        "label": "Amazon Web Services AI"
       }
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:quantum-computing",
+        "@id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
       },
       {
@@ -176,10 +160,6 @@ elevatedFrom:: [[Google]]
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:artificial-intelligence-company",
-        "label": "Artificial Intelligence Company"
-      },
       {
         "@id": "urn:ngm:class:large-language-model",
         "label": "Large Language Model"

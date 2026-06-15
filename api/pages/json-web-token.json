@@ -19,15 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:json-web-signature",
-        "label": "JSON Web Signature"
-      },
-      {
-        "id": "urn:ngm:class:json-web-algorithms",
-        "label": "JSON Web Algorithms"
-      },
-      {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -45,7 +37,7 @@
         "label": "REST API"
       },
       {
-        "id": "urn:ngm:class:stateless-session-management",
+        "id": "urn:ngm:class:session-management",
         "label": "Stateless Session Management"
       },
       {
@@ -62,21 +54,9 @@
       {
         "id": "urn:ngm:class:bearer-token",
         "label": "Bearer Token"
-      },
-      {
-        "id": "urn:ngm:class:claims-based-identity",
-        "label": "Claims-Based Identity"
       }
     ],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:opaque-token",
-        "label": "Opaque Token"
-      },
-      {
-        "id": "urn:ngm:class:session-cookie",
-        "label": "Session Cookie"
-      },
       {
         "id": "urn:ngm:class:saml-assertion",
         "label": "SAML Assertion"
@@ -84,7 +64,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:verifiable-credential",
+        "id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       },
       {
@@ -123,12 +103,7 @@
       }
     ],
     "supports": [],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:rfc-7519",
-        "label": "RFC 7519"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {

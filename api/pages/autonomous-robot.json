@@ -26,10 +26,6 @@
         "label": "Actuators"
       },
       {
-        "id": "urn:ngm:class:processing-units",
-        "label": "Processing Units"
-      },
-      {
         "id": "urn:ngm:class:obstacle-avoidance",
         "label": "Obstacle Avoidance"
       }
@@ -72,7 +68,7 @@
         "label": "Artificial Intelligence"
       },
       {
-        "id": "urn:ngm:class:simultaneous-localization-and-mapping",
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
         "label": "Simultaneous Localization and Mapping"
       }
     ],
@@ -90,10 +86,6 @@
       {
         "id": "urn:ngm:class:teleoperated-robot",
         "label": "Teleoperated Robot"
-      },
-      {
-        "id": "urn:ngm:class:remote-controlled-vehicle",
-        "label": "Remote-Controlled Vehicle"
       }
     ],
     "bridgesTo": [

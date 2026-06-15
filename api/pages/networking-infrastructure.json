@@ -30,7 +30,7 @@
         "label": "Software-Defined Networking"
       },
       {
-        "id": "urn:ngm:class:network-function-virtualisation",
+        "id": "urn:ngm:class:network-function-virtualization",
         "label": "Network Function Virtualisation"
       },
       {
@@ -50,10 +50,6 @@
       {
         "id": "urn:ngm:class:quality-of-service",
         "label": "Quality Of Service"
-      },
-      {
-        "id": "urn:ngm:class:traffic-engineering",
-        "label": "Traffic Engineering"
       }
     ],
     "enables": [
@@ -113,7 +109,7 @@
         "label": "Decentralised Network"
       },
       {
-        "id": "urn:ngm:class:ai-inference-infrastructure",
+        "id": "urn:ngm:class:inference-infrastructure",
         "label": "AI Inference Infrastructure"
       }
     ],
@@ -128,7 +124,7 @@
         "label": "Internet of Things"
       },
       {
-        "id": "urn:ngm:class:autonomous-systems",
+        "id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
       }
     ],

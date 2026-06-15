@@ -45,14 +45,14 @@
         "label": "Federated Query"
       },
       {
-        "id": "urn:ngm:class:ontology-reasoning",
+        "id": "urn:ngm:class:ontology",
         "label": "Ontology Reasoning"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:semantic-web",
+        "id": "urn:ngm:class:semantic-web-linked-data-standard",
         "label": "Semantic Web"
       },
       {
@@ -86,16 +86,8 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:triple-pattern",
-        "label": "Triple Pattern"
-      },
-      {
         "id": "urn:ngm:class:graph-pattern-matching",
         "label": "Graph Pattern Matching"
-      },
-      {
-        "id": "urn:ngm:class:property-path",
-        "label": "Property Path"
       },
       {
         "id": "urn:ngm:class:http-protocol",
@@ -104,7 +96,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:owl-ontology",
+        "id": "urn:ngm:class:owl-2-web-ontology-language",
         "label": "OWL Ontology"
       },
       {
@@ -129,11 +121,11 @@
         "label": "Knowledge Graph"
       },
       {
-        "id": "urn:ngm:class:turtle-syntax",
+        "id": "urn:ngm:class:turtle",
         "label": "Turtle Syntax"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       },
       {

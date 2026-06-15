@@ -75,12 +75,8 @@ public:: true
         "label": "Encryption"
       },
       {
-        "@id": "urn:ngm:class:symmetric-key-cryptography",
+        "@id": "urn:ngm:class:symmetric-encryption",
         "label": "Symmetric Key Cryptography"
-      },
-      {
-        "@id": "urn:ngm:class:key-distribution-centre",
-        "label": "Key Distribution Centre"
       },
       {
         "@id": "urn:ngm:class:trusted-third-party",
@@ -105,10 +101,6 @@ public:: true
       {
         "@id": "urn:ngm:class:cryptographic-protocols",
         "label": "Cryptographic Protocols"
-      },
-      {
-        "@id": "urn:ngm:class:ticket-based-authentication",
-        "label": "Ticket-Based Authentication"
       }
     ],
     "uses": [
@@ -117,11 +109,7 @@ public:: true
         "label": "AES"
       },
       {
-        "@id": "urn:ngm:class:des",
-        "label": "DES"
-      },
-      {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -143,10 +131,6 @@ public:: true
       {
         "@id": "urn:ngm:class:ietf",
         "label": "IETF"
-      },
-      {
-        "@id": "urn:ngm:class:rfc-4120",
-        "label": "RFC 4120"
       }
     ],
     "contrastsWith": [
@@ -157,10 +141,6 @@ public:: true
       {
         "@id": "urn:ngm:class:saml",
         "label": "SAML"
-      },
-      {
-        "@id": "urn:ngm:class:ntlm",
-        "label": "NTLM"
       }
     ],
     "bridgesTo": [
@@ -179,11 +159,11 @@ public:: true
         "label": "Identity and Access Management"
       },
       {
-        "@id": "urn:ngm:class:zero-trust-security",
+        "@id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust Security"
       },
       {
-        "@id": "urn:ngm:class:directory-services",
+        "@id": "urn:ngm:class:directory-service",
         "label": "Directory Services"
       }
     ]

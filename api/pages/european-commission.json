@@ -21,10 +21,6 @@
       {
         "id": "urn:ngm:class:european-parliament",
         "label": "European Parliament"
-      },
-      {
-        "id": "urn:ngm:class:council-of-the-european-union",
-        "label": "Council of the European Union"
       }
     ],
     "enables": [
@@ -48,15 +44,11 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       },
       {
-        "id": "urn:ngm:class:data-act",
-        "label": "Data Act"
-      },
-      {
-        "id": "urn:ngm:class:general-data-protection-regulation",
+        "id": "urn:ngm:class:data-protection-regulation",
         "label": "General Data Protection Regulation"
       }
     ],
@@ -75,16 +67,7 @@
         "label": "Distributed Ledger Technology"
       }
     ],
-    "uses": [
-      {
-        "id": "urn:ngm:class:horizon-europe",
-        "label": "Horizon Europe"
-      },
-      {
-        "id": "urn:ngm:class:european-blockchain-services-infrastructure",
-        "label": "European Blockchain Services Infrastructure"
-      }
-    ],
+    "uses": [],
     "supports": [
       {
         "id": "urn:ngm:class:governance",
@@ -116,7 +99,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:regulatory-body",
+        "id": "urn:ngm:class:regulatory-authority",
         "label": "Regulatory Body"
       },
       {

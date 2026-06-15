@@ -117,10 +117,6 @@ alias:: EconomicMechanism
       {
         "@id": "urn:ngm:class:slashing",
         "label": "Slashing"
-      },
-      {
-        "@id": "urn:ngm:class:fee-burning",
-        "label": "Fee Burning"
       }
     ],
     "partOf": [
@@ -193,12 +189,6 @@ alias:: EconomicMechanism
         "label": "Decentralized Governance"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:centralized-monetary-policy",
-        "label": "Centralized Monetary Policy"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:artificial-intelligence",
@@ -217,10 +207,6 @@ alias:: EconomicMechanism
       {
         "@id": "urn:ngm:class:proof-of-stake",
         "label": "Proof of Stake"
-      },
-      {
-        "@id": "urn:ngm:class:supply-curve",
-        "label": "Supply Curve"
       }
     ]
   },

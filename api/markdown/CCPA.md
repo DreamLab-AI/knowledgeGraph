@@ -69,30 +69,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:right-to-know",
-        "label": "Right to Know"
-      },
-      {
-        "@id": "urn:ngm:class:right-to-delete",
+        "@id": "urn:ngm:class:right-to-be-forgotten",
         "label": "Right to Delete"
       },
       {
-        "@id": "urn:ngm:class:opt-out-right",
-        "label": "Opt-Out Right"
-      },
-      {
-        "@id": "urn:ngm:class:privacy-notice",
+        "@id": "urn:ngm:class:privacy-disclosure",
         "label": "Privacy Notice"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:us-privacy-law",
-        "label": "US Privacy Law"
-      },
-      {
-        "@id": "urn:ngm:class:california-law",
-        "label": "California Law"
       }
     ],
     "requires": [
@@ -149,10 +131,6 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:personal-information",
-        "label": "Personal Information"
-      },
-      {
         "@id": "urn:ngm:class:data-broker",
         "label": "Data Broker"
       }
@@ -167,16 +145,6 @@ public:: true
         "label": "Data Minimisation"
       }
     ],
-    "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:california-attorney-general",
-        "label": "California Attorney General"
-      },
-      {
-        "@id": "urn:ngm:class:california-privacy-protection-agency",
-        "label": "California Privacy Protection Agency"
-      }
-    ],
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:gdpr",
@@ -185,10 +153,6 @@ public:: true
       {
         "@id": "urn:ngm:class:hipaa",
         "label": "HIPAA"
-      },
-      {
-        "@id": "urn:ngm:class:coppa",
-        "label": "COPPA"
       }
     ],
     "bridgesTo": [
@@ -206,10 +170,6 @@ public:: true
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:cpra",
-        "label": "CPRA"
-      },
       {
         "@id": "urn:ngm:class:data-breach-notification",
         "label": "Data Breach Notification"

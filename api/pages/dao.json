@@ -54,12 +54,8 @@
         "label": "On-Chain Treasury"
       },
       {
-        "id": "urn:ngm:class:permissionless-membership",
+        "id": "urn:ngm:class:permissionless-participation",
         "label": "Permissionless Membership"
-      },
-      {
-        "id": "urn:ngm:class:community-funded-protocol",
-        "label": "Community-Funded Protocol"
       }
     ],
     "dependsOn": [
@@ -82,10 +78,6 @@
       {
         "id": "urn:ngm:class:traditional-corporation",
         "label": "Traditional Corporation"
-      },
-      {
-        "id": "urn:ngm:class:centralised-organisation",
-        "label": "Centralised Organisation"
       }
     ],
     "bridgesTo": [
@@ -98,7 +90,7 @@
         "label": "Distributed Collaboration"
       },
       {
-        "id": "urn:ngm:class:metaverse-governance",
+        "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
         "label": "Metaverse Governance"
       }
     ],
@@ -131,10 +123,6 @@
       {
         "id": "urn:ngm:class:defi-protocol",
         "label": "DeFi Protocol"
-      },
-      {
-        "id": "urn:ngm:class:nft-collective",
-        "label": "NFT Collective"
       },
       {
         "id": "urn:ngm:class:token-economics",

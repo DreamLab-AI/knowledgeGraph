@@ -85,11 +85,11 @@ public:: true
         "label": "Threshold Cryptography"
       },
       {
-        "@id": "urn:ngm:class:distributed-key-management",
+        "@id": "urn:ngm:class:key-management",
         "label": "Distributed Key Management"
       },
       {
-        "@id": "urn:ngm:class:secure-multiparty-computation",
+        "@id": "urn:ngm:class:secure-multi-party-computation",
         "label": "Secure Multiparty Computation"
       },
       {
@@ -107,24 +107,10 @@ public:: true
         "label": "Information-Theoretic Security"
       }
     ],
-    "uses": [
-      {
-        "@id": "urn:ngm:class:lagrange-interpolation",
-        "label": "Lagrange Interpolation"
-      },
-      {
-        "@id": "urn:ngm:class:random-polynomial",
-        "label": "Random Polynomial"
-      }
-    ],
     "supports": [
       {
         "@id": "urn:ngm:class:decentralized-key-storage",
         "label": "Decentralized Key Storage"
-      },
-      {
-        "@id": "urn:ngm:class:wallet-backup",
-        "label": "Wallet Backup"
       },
       {
         "@id": "urn:ngm:class:multi-signature",

@@ -38,54 +38,109 @@ public:: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:llm-security", "label": "LLM Security"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:direct-prompt-injection", "label": "Direct Prompt Injection"},
-      {"@id": "urn:ngm:class:indirect-prompt-injection", "label": "Indirect Prompt Injection"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:system-prompt", "label": "System Prompt"}
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:system-prompt",
+        "label": "System Prompt"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:data-exfiltration", "label": "Data Exfiltration"},
-      {"@id": "urn:ngm:class:privilege-escalation", "label": "Privilege Escalation"},
-      {"@id": "urn:ngm:class:adversarial-testing", "label": "Adversarial Testing"}
+      {
+        "@id": "urn:ngm:class:privilege-escalation",
+        "label": "Privilege Escalation"
+      },
+      {
+        "@id": "urn:ngm:class:adversarial-testing",
+        "label": "Adversarial Testing"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:instruction-following", "label": "Instruction Following"},
-      {"@id": "urn:ngm:class:context-window", "label": "Context Window"}
+      {
+        "@id": "urn:ngm:class:instruction-following",
+        "label": "Instruction Following"
+      },
+      {
+        "@id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:adversarial-robustness", "label": "Adversarial Robustness"},
-      {"@id": "urn:ngm:class:input-sanitisation", "label": "Input Sanitisation"}
+      {
+        "@id": "urn:ngm:class:adversarial-robustness",
+        "label": "Adversarial Robustness"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:jailbreaking", "label": "Jailbreaking"},
-      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"},
-      {"@id": "urn:ngm:class:sql-injection", "label": "SQL Injection"},
-      {"@id": "urn:ngm:class:social-engineering", "label": "Social Engineering"},
-      {"@id": "urn:ngm:class:alignment", "label": "Alignment"},
-      {"@id": "urn:ngm:class:constitutional-ai", "label": "Constitutional AI"}
+      {
+        "@id": "urn:ngm:class:jailbreaking",
+        "label": "Jailbreaking"
+      },
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "@id": "urn:ngm:class:social-engineering",
+        "label": "Social Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:alignment",
+        "label": "Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:governance", "label": "Governance"},
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"}
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:owasp-llm-top-10", "label": "OWASP LLM Top 10"},
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"}
+      {
+        "@id": "urn:ngm:class:owasp-llm-top-10-2025",
+        "label": "OWASP LLM Top 10"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:llm-prompt-injection", "label": "LLM Prompt Injection"},
-    {"@id": "urn:ngm:class:instruction-injection", "label": "Instruction Injection"}
+    {
+      "@id": "urn:ngm:class:llm-prompt-injection",
+      "label": "LLM Prompt Injection"
+    },
+    {
+      "@id": "urn:ngm:class:instruction-injection",
+      "label": "Instruction Injection"
+    }
   ],
   "quality": 0.74,
   "provenance": {

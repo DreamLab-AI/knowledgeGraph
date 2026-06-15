@@ -18,29 +18,13 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:accessibility-requirement",
-        "label": "Accessibility Requirement"
-      },
-      {
-        "id": "urn:ngm:class:compliance-metric",
-        "label": "Compliance Metric"
-      },
-      {
-        "id": "urn:ngm:class:testing-protocol",
-        "label": "Testing Protocol"
-      },
-      {
         "id": "urn:ngm:class:xr-accessibility-guideline",
         "label": "XR Accessibility Guideline"
-      },
-      {
-        "id": "urn:ngm:class:conformance-level",
-        "label": "Conformance Level"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:accessibility-guideline",
+        "id": "urn:ngm:class:xr-accessibility-guideline",
         "label": "Accessibility Guideline"
       },
       {
@@ -73,7 +57,7 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:wcag",
+        "id": "urn:ngm:class:wcag-2-2",
         "label": "WCAG"
       },
       {
@@ -81,12 +65,7 @@
         "label": "Section 508"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:voluntary-guideline",
-        "label": "Voluntary Guideline"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:telecollaboration",
@@ -99,10 +78,6 @@
     ],
     "uses": [],
     "supports": [
-      {
-        "id": "urn:ngm:class:disability-accommodation",
-        "label": "Disability Accommodation"
-      },
       {
         "id": "urn:ngm:class:user-experience-design",
         "label": "User Experience Design"
@@ -128,7 +103,7 @@
         "label": "Governance Framework"
       },
       {
-        "id": "urn:ngm:class:regulatory-compliance-framework",
+        "id": "urn:ngm:class:compliance-framework",
         "label": "Regulatory Compliance Framework"
       }
     ],

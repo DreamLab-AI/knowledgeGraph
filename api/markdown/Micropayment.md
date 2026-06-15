@@ -116,15 +116,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:fee-calculation",
-        "label": "Fee Calculation"
-      },
-      {
         "@id": "urn:ngm:class:payment-protocol",
         "label": "Payment Protocol"
       },
       {
-        "@id": "urn:ngm:class:settlement-mechanism",
+        "@id": "urn:ngm:class:settlement",
         "label": "Settlement Mechanism"
       },
       {
@@ -144,7 +140,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:cryptographic-authentication",
+        "@id": "urn:ngm:class:authentication",
         "label": "Cryptographic Authentication"
       },
       {
@@ -158,16 +154,12 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:instant-settlements",
+        "@id": "urn:ngm:class:instant-settlement",
         "label": "Instant Settlements"
       },
       {
         "@id": "urn:ngm:class:microtransactions",
         "label": "Microtransactions"
-      },
-      {
-        "@id": "urn:ngm:class:pay-per-use-models",
-        "label": "Pay-Per-Use Models"
       },
       {
         "@id": "urn:ngm:class:content-monetisation",
@@ -206,7 +198,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:traditional-banking-transfer",
+        "@id": "urn:ngm:class:traditional-banking",
         "label": "Traditional Banking Transfer"
       }
     ],
@@ -235,7 +227,7 @@ public:: true
       }
     ]
   },
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

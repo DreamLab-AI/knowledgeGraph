@@ -60,16 +60,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:course-authoring-tool",
+        "@id": "urn:ngm:class:authoring-tool",
         "label": "Course Authoring Tool"
-      },
-      {
-        "@id": "urn:ngm:class:learner-analytics-dashboard",
-        "label": "Learner Analytics Dashboard"
-      },
-      {
-        "@id": "urn:ngm:class:assessment-engine",
-        "label": "Assessment Engine"
       }
     ],
     "requires": [
@@ -83,10 +75,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:vr-training-delivery",
-        "label": "VR Training Delivery"
-      },
       {
         "@id": "urn:ngm:class:adaptive-learning",
         "label": "Adaptive Learning"
@@ -108,10 +96,6 @@ public:: true
       {
         "@id": "urn:ngm:class:xapi",
         "label": "xAPI"
-      },
-      {
-        "@id": "urn:ngm:class:lti",
-        "label": "LTI"
       }
     ],
     "uses": [
@@ -130,10 +114,6 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:metaverse-training",
-        "label": "Metaverse Training"
-      },
-      {
         "@id": "urn:ngm:class:mobile-learning",
         "label": "Mobile Learning"
       },
@@ -144,25 +124,11 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:ieee-learning-technology-standards-committee",
+        "@id": "urn:ngm:class:ieee",
         "label": "IEEE Learning Technology Standards Committee"
-      },
-      {
-        "@id": "urn:ngm:class:ims-global-learning-consortium",
-        "label": "IMS Global Learning Consortium"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:learning-experience-platform",
-        "label": "Learning Experience Platform"
       }
     ],
     "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:human-resource-information-system",
-        "label": "Human Resource Information System"
-      },
       {
         "@id": "urn:ngm:class:extended-reality",
         "label": "Extended Reality"

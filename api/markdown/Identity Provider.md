@@ -390,32 +390,12 @@ public:: true
         "label": "Audit Log"
       },
       {
-        "@id": "urn:ngm:class:authentication-engine",
-        "label": "Authentication Engine"
-      },
-      {
         "@id": "urn:ngm:class:credential-store",
         "label": "Credential Store"
       },
       {
-        "@id": "urn:ngm:class:federation-gateway",
-        "label": "Federation Gateway"
-      },
-      {
-        "@id": "urn:ngm:class:mfa-module",
-        "label": "MFA Module"
-      },
-      {
-        "@id": "urn:ngm:class:risk-engine",
-        "label": "Risk Engine"
-      },
-      {
         "@id": "urn:ngm:class:session-manager",
         "label": "Session Manager"
-      },
-      {
-        "@id": "urn:ngm:class:token-issuance-service",
-        "label": "Token Issuance Service"
       },
       {
         "@id": "urn:ngm:class:user-directory",
@@ -450,7 +430,7 @@ public:: true
         "label": "Continuous Authentication"
       },
       {
-        "@id": "urn:ngm:class:delegated-authorization",
+        "@id": "urn:ngm:class:authorization",
         "label": "Delegated Authorization"
       },
       {
@@ -458,7 +438,7 @@ public:: true
         "label": "Federated Identity"
       },
       {
-        "@id": "urn:ngm:class:identity-governance",
+        "@id": "urn:ngm:class:identity-and-access-management",
         "label": "Identity Governance"
       },
       {
@@ -565,14 +545,6 @@ public:: true
       }
     ],
     "supports": [
-      {
-        "@id": "urn:ngm:class:b2-c-identity",
-        "label": "B2C Identity"
-      },
-      {
-        "@id": "urn:ngm:class:b2-e-identity",
-        "label": "B2E Identity"
-      },
       {
         "@id": "urn:ngm:class:multi-factor-authentication",
         "label": "Multi-Factor Authentication"

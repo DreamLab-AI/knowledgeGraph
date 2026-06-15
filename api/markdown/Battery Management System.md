@@ -23,64 +23,125 @@ public:: true
   "definition": "A Battery Management System (BMS) is an embedded electronic system that monitors, protects, and optimises the operation of a rechargeable battery pack by continuously measuring cell voltages, currents, and temperatures, then enforcing safety limits and balancing cell state-of-charge to extend pack lifetime. It provides the digital intelligence layer between raw electrochemical energy storage and the broader power electronics or vehicle system, communicating pack status via standardised interfaces such as CAN bus. Accurate state-of-charge and state-of-health estimation algorithms are the defining computational challenge of modern BMS design.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:embedded-systems", "label": "Embedded Systems"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:embedded-systems",
+      "label": "Embedded Systems"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:current-sensor", "label": "Current Sensor"},
-      {"@id": "urn:ngm:class:monitoring-system", "label": "Monitoring System"},
-      {"@id": "urn:ngm:class:voltage-sensor", "label": "Voltage Sensor"},
-      {"@id": "urn:ngm:class:temperature-sensor", "label": "Temperature Sensor"},
-      {"@id": "urn:ngm:class:cell-balancing-circuit", "label": "Cell Balancing Circuit"},
-      {"@id": "urn:ngm:class:microcontroller-unit", "label": "Microcontroller Unit"}
+      {
+        "@id": "urn:ngm:class:current-sensor",
+        "label": "Current Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:monitoring-system",
+        "label": "Monitoring System"
+      },
+      {
+        "@id": "urn:ngm:class:temperature-sensor",
+        "label": "Temperature Sensor"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:electric-vehicle", "label": "Electric Vehicle"},
-      {"@id": "urn:ngm:class:energy-storage-system", "label": "Energy Storage System"}
+      {
+        "@id": "urn:ngm:class:electric-vehicle",
+        "label": "Electric Vehicle"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:can-bus", "label": "CAN Bus"},
-      {"@id": "urn:ngm:class:firmware", "label": "Firmware"},
-      {"@id": "urn:ngm:class:battery-pack", "label": "Battery Pack"}
+      {
+        "@id": "urn:ngm:class:can-bus",
+        "label": "CAN Bus"
+      },
+      {
+        "@id": "urn:ngm:class:firmware",
+        "label": "Firmware"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:control-system", "label": "Control System"},
-      {"@id": "urn:ngm:class:power-management", "label": "Power Management"},
-      {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"},
-      {"@id": "urn:ngm:class:coulomb-counting", "label": "Coulomb Counting"}
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "@id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      },
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:power-supply", "label": "Power Supply"},
-      {"@id": "urn:ngm:class:predictive-maintenance", "label": "Predictive Maintenance"},
-      {"@id": "urn:ngm:class:thermal-management", "label": "Thermal Management"}
+      {
+        "@id": "urn:ngm:class:power-supply",
+        "label": "Power Supply"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      },
+      {
+        "@id": "urn:ngm:class:thermal-management",
+        "label": "Thermal Management"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"},
-      {"@id": "urn:ngm:class:fleet-management", "label": "Fleet Management"},
-      {"@id": "urn:ngm:class:grid-energy-storage", "label": "Grid Energy Storage"}
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "@id": "urn:ngm:class:fleet-management",
+        "label": "Fleet Management"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-26262", "label": "ISO 26262"},
-      {"@id": "urn:ngm:class:iec-62133", "label": "IEC 62133"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:protection-circuit", "label": "Protection Circuit"}
+      {
+        "@id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:energy-management", "label": "Energy Management"},
-      {"@id": "urn:ngm:class:energy-and-power", "label": "Energy and Power"},
-      {"@id": "urn:ngm:class:hardware-component", "label": "Hardware Component"},
-      {"@id": "urn:ngm:class:state-of-charge", "label": "State of Charge"},
-      {"@id": "urn:ngm:class:solid-state-battery", "label": "Solid State Battery"}
+      {
+        "@id": "urn:ngm:class:energy-management",
+        "label": "Energy Management"
+      },
+      {
+        "@id": "urn:ngm:class:energy-and-power",
+        "label": "Energy and Power"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-component",
+        "label": "Hardware Component"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:bms", "label": "BMS"},
-    {"@id": "urn:ngm:class:battery-protection-system", "label": "Battery Protection System"}
+    {
+      "@id": "urn:ngm:class:bms",
+      "label": "BMS"
+    },
+    {
+      "@id": "urn:ngm:class:battery-protection-system",
+      "label": "Battery Protection System"
+    }
   ],
   "quality": 0.8,
   "provenance": {

@@ -76,7 +76,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:rb-1015-kalman-filter",
+        "id": "urn:ngm:class:kalman-filter",
         "label": "Kalman Filter"
       },
       {
@@ -171,10 +171,6 @@
       }
     ],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:adaptability",
-        "label": "Adaptability"
-      },
       {
         "id": "urn:ngm:class:system-identification",
         "label": "System Identification"

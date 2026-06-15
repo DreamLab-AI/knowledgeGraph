@@ -91,10 +91,6 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:ethereum-scaling-roadmap",
-        "label": "Ethereum Scaling Roadmap"
-      },
-      {
         "@id": "urn:ngm:class:layer-2-scaling",
         "label": "Layer 2 Scaling"
       }
@@ -137,22 +133,12 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:ethereum-virtual-machine",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
       },
       {
         "@id": "urn:ngm:class:cryptographic-proof",
         "label": "Cryptographic Proof"
-      }
-    ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:off-chain-computation",
-        "label": "Off-Chain Computation"
-      },
-      {
-        "@id": "urn:ngm:class:transaction-batching",
-        "label": "Transaction Batching"
       }
     ],
     "uses": [

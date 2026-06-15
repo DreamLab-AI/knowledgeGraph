@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:majority-quorum",
+        "id": "urn:ngm:class:quorum",
         "label": "Majority Quorum"
       },
       {
@@ -37,7 +37,7 @@
         "label": "Distributed Ledger Technology"
       },
       {
-        "id": "urn:ngm:class:fault-tolerant-system",
+        "id": "urn:ngm:class:fault-tolerance-system",
         "label": "Fault-Tolerant System"
       },
       {
@@ -72,10 +72,6 @@
       {
         "id": "urn:ngm:class:paxos",
         "label": "Paxos"
-      },
-      {
-        "id": "urn:ngm:class:multi-paxos",
-        "label": "Multi-Paxos"
       }
     ],
     "bridgesTo": [
@@ -136,7 +132,7 @@
         "label": "Byzantine Fault Tolerance"
       },
       {
-        "id": "urn:ngm:class:replicated-state-machine",
+        "id": "urn:ngm:class:state-machine-replication",
         "label": "Replicated State Machine"
       }
     ]

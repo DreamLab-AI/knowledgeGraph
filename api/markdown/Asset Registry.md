@@ -350,10 +350,6 @@ public:: true
         "label": "Real-World Asset Tokenisation"
       },
       {
-        "@id": "urn:ngm:class:secondary-market-liquidity",
-        "label": "Secondary Market Liquidity"
-      },
-      {
         "@id": "urn:ngm:class:provenance-tracking",
         "label": "Provenance Tracking"
       }
@@ -434,10 +430,6 @@ public:: true
         "label": "Decentralised Finance"
       },
       {
-        "@id": "urn:ngm:class:real-estate-registry",
-        "label": "Real Estate Registry"
-      },
-      {
         "@id": "urn:ngm:class:securities-settlement",
         "label": "Securities Settlement"
       },
@@ -452,7 +444,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:cmta-token-standard",
+        "@id": "urn:ngm:class:token-standard",
         "label": "CMTA Token Standard"
       },
       {
@@ -462,10 +454,6 @@ public:: true
       {
         "@id": "urn:ngm:class:iso-24165",
         "label": "ISO 24165"
-      },
-      {
-        "@id": "urn:ngm:class:polymesh-protocol",
-        "label": "Polymesh Protocol"
       },
       {
         "@id": "urn:ngm:class:hyperledger-indy",

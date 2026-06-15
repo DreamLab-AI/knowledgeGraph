@@ -86,11 +86,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:design-data",
-        "label": "Design Data"
-      },
-      {
-        "@id": "urn:ngm:class:modeling-standards",
+        "@id": "urn:ngm:class:standards",
         "label": "Modeling Standards"
       },
       {
@@ -104,12 +100,8 @@ public:: true
         "label": "Clash Detection"
       },
       {
-        "@id": "urn:ngm:class:construction-simulation",
+        "@id": "urn:ngm:class:simulation",
         "label": "Construction Simulation"
-      },
-      {
-        "@id": "urn:ngm:class:design-visualization",
-        "label": "Design Visualization"
       }
     ]
   },

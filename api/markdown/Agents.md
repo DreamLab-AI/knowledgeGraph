@@ -528,10 +528,6 @@ public:: true
         "label": "Large Language Models"
       },
       {
-        "@id": "urn:ngm:class:observation-buffer",
-        "label": "Observation Buffer"
-      },
-      {
         "@id": "urn:ngm:class:planning-module",
         "label": "Planning Module"
       },
@@ -584,7 +580,7 @@ public:: true
         "label": "Agentic Workflow"
       },
       {
-        "@id": "urn:ngm:class:ai-software-engineering",
+        "@id": "urn:ngm:class:ai-augmented-software-engineering",
         "label": "AI Software Engineering"
       },
       {
@@ -610,7 +606,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:bdi-architecture",
+        "@id": "urn:ngm:class:bdi-model",
         "label": "BDI Architecture"
       },
       {
@@ -736,10 +732,6 @@ public:: true
       {
         "@id": "urn:ngm:class:agent2-agent-protocol-google-2025",
         "label": "Agent2Agent Protocol (Google 2025)"
-      },
-      {
-        "@id": "urn:ngm:class:fipa-acl-2002",
-        "label": "FIPA-ACL (2002)"
       },
       {
         "@id": "urn:ngm:class:model-context-protocol-anthropic-2024",

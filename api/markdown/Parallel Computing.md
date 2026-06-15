@@ -97,10 +97,6 @@ public:: true
         "label": "GPU Architecture"
       },
       {
-        "@id": "urn:ngm:class:multicore-processor",
-        "label": "Multicore Processor"
-      },
-      {
         "@id": "urn:ngm:class:memory-bandwidth",
         "label": "Memory Bandwidth"
       }
@@ -151,16 +147,6 @@ public:: true
         "label": "Message Passing Interface"
       }
     ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:amdahls-law",
-        "label": "Amdahl's Law"
-      },
-      {
-        "@id": "urn:ngm:class:gustafson-law",
-        "label": "Gustafson's Law"
-      }
-    ],
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:sequential-computing",
@@ -181,10 +167,6 @@ public:: true
       {
         "@id": "urn:ngm:class:concurrency",
         "label": "Concurrency"
-      },
-      {
-        "@id": "urn:ngm:class:thread-safety",
-        "label": "Thread Safety"
       },
       {
         "@id": "urn:ngm:class:load-balancing",

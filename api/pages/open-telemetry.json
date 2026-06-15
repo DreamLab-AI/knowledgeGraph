@@ -16,25 +16,8 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:otlp",
-        "label": "OpenTelemetry Protocol (OTLP)"
-      },
-      {
-        "id": "urn:ngm:class:otel-collector",
-        "label": "OTel Collector"
-      },
-      {
-        "id": "urn:ngm:class:otel-sdk",
-        "label": "OTel SDK"
-      }
-    ],
+    "hasPart": [],
     "requires": [
-      {
-        "id": "urn:ngm:class:context-propagation",
-        "label": "Context Propagation"
-      },
       {
         "id": "urn:ngm:class:distributed-tracing",
         "label": "Distributed Tracing"
@@ -68,24 +51,15 @@
         "label": "Protocol Buffers"
       }
     ],
-    "implements": [
-      {
-        "id": "urn:ngm:class:opentracing",
-        "label": "OpenTracing"
-      },
-      {
-        "id": "urn:ngm:class:opencensus",
-        "label": "OpenCensus"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:llm-observability",
+        "id": "urn:ngm:class:observability",
         "label": "LLM Observability"
       },
       {
-        "id": "urn:ngm:class:ai-system-monitoring",
+        "id": "urn:ngm:class:ai-monitoring",
         "label": "AI System Monitoring"
       }
     ],
@@ -97,10 +71,6 @@
       {
         "id": "urn:ngm:class:distributed-system",
         "label": "Distributed System"
-      },
-      {
-        "id": "urn:ngm:class:semantic-conventions",
-        "label": "Semantic Conventions"
       }
     ],
     "supports": [
@@ -111,10 +81,6 @@
       {
         "id": "urn:ngm:class:prometheus",
         "label": "Prometheus"
-      },
-      {
-        "id": "urn:ngm:class:jaeger",
-        "label": "Jaeger"
       }
     ],
     "standardizedBy": [

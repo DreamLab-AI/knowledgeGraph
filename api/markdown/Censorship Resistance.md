@@ -76,48 +76,129 @@ alias:: CensorshipResistance, censorship-resistance
   },
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:sybil-resistance", "label": "Sybil Resistance"},
-      {"@id": "urn:ngm:class:permissionless-participation", "label": "Permissionless Participation"},
-      {"@id": "urn:ngm:class:decentralisation", "label": "Decentralisation"}
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "@id": "urn:ngm:class:permissionless-participation",
+        "label": "Permissionless Participation"
+      },
+      {
+        "@id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:immutability", "label": "Immutability"},
-      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"},
-      {"@id": "urn:ngm:class:financial-inclusion", "label": "Financial Inclusion"},
-      {"@id": "urn:ngm:class:trustless-transaction", "label": "Trustless Transaction"}
+      {
+        "@id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      },
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "@id": "urn:ngm:class:trustless-transaction",
+        "label": "Trustless Transaction"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:byzantine-fault-tolerance", "label": "Byzantine Fault Tolerance"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"},
-      {"@id": "urn:ngm:class:economic-incentive-design", "label": "Economic Incentive Design"}
+      {
+        "@id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:economic-model",
+        "label": "Economic Incentive Design"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:permissioned-blockchain", "label": "Permissioned Blockchain"},
-      {"@id": "urn:ngm:class:transaction-filtering", "label": "Transaction Filtering"},
-      {"@id": "urn:ngm:class:ofac-compliance", "label": "OFAC Compliance"}
+      {
+        "@id": "urn:ngm:class:permissioned-blockchain",
+        "label": "Permissioned Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:transaction",
+        "label": "Transaction Filtering"
+      },
+      {
+        "@id": "urn:ngm:class:ofac-compliance",
+        "label": "OFAC Compliance"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:fork-choice-rule", "label": "Fork Choice Rule"},
-      {"@id": "urn:ngm:class:mempool-propagation", "label": "Mempool Propagation"}
+      {
+        "@id": "urn:ngm:class:fork-choice-rule",
+        "label": "Fork Choice Rule"
+      },
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Mempool Propagation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:peer-discovery", "label": "Peer Discovery"},
-      {"@id": "urn:ngm:class:double-spending", "label": "Double Spending"},
-      {"@id": "urn:ngm:class:blockchain-governance", "label": "Blockchain Governance"},
-      {"@id": "urn:ngm:class:miner-extractable-value", "label": "Miner Extractable Value"},
-      {"@id": "urn:ngm:class:51-percent-attack", "label": "51% Attack"}
+      {
+        "@id": "urn:ngm:class:peer-discovery",
+        "label": "Peer Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:double-spending",
+        "label": "Double Spending"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-governance",
+        "label": "Blockchain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:miner-extractable-value",
+        "label": "Miner Extractable Value"
+      },
+      {
+        "@id": "urn:ngm:class:51-attack",
+        "label": "51% Attack"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:freedom-of-speech", "label": "Freedom of Speech"},
-      {"@id": "urn:ngm:class:information-security", "label": "Information Security"}
+      {
+        "@id": "urn:ngm:class:freedom-of-speech",
+        "label": "Freedom of Speech"
+      },
+      {
+        "@id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:transaction-censorship-resistance", "label": "Transaction Censorship Resistance"},
-    {"@id": "urn:ngm:class:inclusion-liveness", "label": "Inclusion Liveness"}
+    {
+      "@id": "urn:ngm:class:transaction-censorship-resistance",
+      "label": "Transaction Censorship Resistance"
+    },
+    {
+      "@id": "urn:ngm:class:inclusion-liveness",
+      "label": "Inclusion Liveness"
+    }
   ],
   "quality": 0.72,
   "provenance": {

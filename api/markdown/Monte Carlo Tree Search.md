@@ -56,20 +56,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:tree-selection-policy",
-        "label": "Tree Selection Policy"
-      },
-      {
-        "@id": "urn:ngm:class:rollout-simulation",
-        "label": "Rollout Simulation"
-      },
-      {
-        "@id": "urn:ngm:class:backpropagation-update",
+        "@id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation Update"
-      },
-      {
-        "@id": "urn:ngm:class:node-expansion",
-        "label": "Node Expansion"
       }
     ],
     "partOf": [
@@ -78,33 +66,15 @@ public:: true
         "label": "Game Tree Search"
       }
     ],
-    "requires": [
-      {
-        "@id": "urn:ngm:class:upper-confidence-bound",
-        "label": "Upper Confidence Bound"
-      },
-      {
-        "@id": "urn:ngm:class:stochastic-simulation",
-        "label": "Stochastic Simulation"
-      }
-    ],
     "enables": [
       {
-        "@id": "urn:ngm:class:game-playing-ai",
+        "@id": "urn:ngm:class:game-ai",
         "label": "Game Playing AI"
-      },
-      {
-        "@id": "urn:ngm:class:planning-under-uncertainty",
-        "label": "Planning Under Uncertainty"
-      },
-      {
-        "@id": "urn:ngm:class:general-game-playing",
-        "label": "General Game Playing"
       }
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:tree-data-structure",
+        "@id": "urn:ngm:class:data-structure",
         "label": "Tree Data Structure"
       },
       {
@@ -112,44 +82,22 @@ public:: true
         "label": "Random Number Generation"
       }
     ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:bandit-algorithm",
-        "label": "Bandit Algorithm"
-      },
-      {
-        "@id": "urn:ngm:class:anytime-algorithm",
-        "label": "Anytime Algorithm"
-      }
-    ],
     "uses": [
       {
         "@id": "urn:ngm:class:exploration-exploitation-tradeoff",
         "label": "Exploration-Exploitation Tradeoff"
-      },
-      {
-        "@id": "urn:ngm:class:ucb1-formula",
-        "label": "UCB1 Formula"
       }
     ],
     "supports": [
       {
         "@id": "urn:ngm:class:alphago",
         "label": "AlphaGo"
-      },
-      {
-        "@id": "urn:ngm:class:alphazero",
-        "label": "AlphaZero"
       }
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:minimax-search",
+        "@id": "urn:ngm:class:minimax-algorithm",
         "label": "Minimax Search"
-      },
-      {
-        "@id": "urn:ngm:class:alpha-beta-pruning",
-        "label": "Alpha-Beta Pruning"
       },
       {
         "@id": "urn:ngm:class:dynamic-programming",
@@ -167,10 +115,6 @@ public:: true
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:uct-algorithm",
-        "label": "UCT Algorithm"
-      },
       {
         "@id": "urn:ngm:class:beam-search",
         "label": "Beam Search"

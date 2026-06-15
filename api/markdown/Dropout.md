@@ -63,53 +63,133 @@ public:: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"},
-      {"@id": "urn:ngm:class:model-training-pipeline", "label": "Model Training Pipeline"}
+      {
+        "@id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "@id": "urn:ngm:class:model-training-pipeline",
+        "label": "Model Training Pipeline"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:training", "label": "Training"},
-      {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"},
-      {"@id": "urn:ngm:class:forward-pass", "label": "Forward Pass"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:training",
+        "label": "Training"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:forward-pass",
+        "label": "Forward Pass"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:generalisation", "label": "Generalisation"},
-      {"@id": "urn:ngm:class:model-robustness", "label": "Model Robustness"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:generalisation",
+        "label": "Generalisation"
+      },
+      {
+        "@id": "urn:ngm:class:model-robustness",
+        "label": "Model Robustness"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"},
-      {"@id": "urn:ngm:class:batch-normalisation", "label": "Batch Normalisation"},
-      {"@id": "urn:ngm:class:weight-decay", "label": "Weight Decay"}
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "@id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
+      },
+      {
+        "@id": "urn:ngm:class:weight-decay",
+        "label": "Weight Decay"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:bernoulli-distribution", "label": "Bernoulli Distribution"},
-      {"@id": "urn:ngm:class:random-masking", "label": "Random Masking"},
-      {"@id": "urn:ngm:class:monte-carlo-approximation", "label": "Monte Carlo Approximation"}
+      {
+        "@id": "urn:ngm:class:bernoulli-distribution",
+        "label": "Bernoulli Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Approximation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:ensemble-learning", "label": "Ensemble Learning"},
-      {"@id": "urn:ngm:class:variational-inference", "label": "Variational Inference"}
+      {
+        "@id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Learning"
+      },
+      {
+        "@id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"},
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:hyperparameter-tuning", "label": "Hyperparameter Tuning"},
-      {"@id": "urn:ngm:class:data-augmentation", "label": "Data Augmentation"}
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-22989-2022", "label": "ISO-IEC 22989 2022"},
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"}
+      {
+        "@id": "urn:ngm:class:iso-iec-22989-2022",
+        "label": "ISO-IEC 22989 2022"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:bayesian-deep-learning", "label": "Bayesian Deep Learning"},
-      {"@id": "urn:ngm:class:uncertainty-quantification", "label": "Uncertainty Quantification"}
+      {
+        "@id": "urn:ngm:class:bayesian-deep-learning",
+        "label": "Bayesian Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:dropout-regularisation", "label": "Dropout Regularisation"},
-    {"@id": "urn:ngm:class:inverted-dropout", "label": "Inverted Dropout"}
+    {
+      "@id": "urn:ngm:class:dropout-regularisation",
+      "label": "Dropout Regularisation"
+    },
+    {
+      "@id": "urn:ngm:class:inverted-dropout",
+      "label": "Inverted Dropout"
+    }
   ],
   "quality": 0.72,
   "provenance": {

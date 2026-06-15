@@ -68,7 +68,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:play-to-earn",
+        "@id": "urn:ngm:class:play-to-earn-p2-e",
         "label": "Play-to-Earn"
       }
     ]

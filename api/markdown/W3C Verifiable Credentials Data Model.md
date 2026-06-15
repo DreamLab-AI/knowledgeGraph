@@ -79,7 +79,7 @@ public:: true
         "label": "Cryptographic Proof"
       },
       {
-        "@id": "urn:ngm:class:json-ld",
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       }
     ],
@@ -89,12 +89,8 @@ public:: true
         "label": "Linked Data Proofs"
       },
       {
-        "@id": "urn:ngm:class:json-web-token",
+        "@id": "urn:ngm:class:json-data-interchange-format-web-token",
         "label": "JSON Web Token"
-      },
-      {
-        "@id": "urn:ngm:class:selective-disclosure-jwt",
-        "label": "Selective Disclosure JWT"
       },
       {
         "@id": "urn:ngm:class:digital-signature",
@@ -139,7 +135,7 @@ public:: true
         "label": "OAuth 2.0"
       },
       {
-        "@id": "urn:ngm:class:openid-connect",
+        "@id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
       },
       {
@@ -157,7 +153,7 @@ public:: true
         "label": "SAML"
       },
       {
-        "@id": "urn:ngm:class:centralised-identity-provider",
+        "@id": "urn:ngm:class:centralized-identity-provider",
         "label": "Centralised Identity Provider"
       }
     ],
@@ -167,7 +163,7 @@ public:: true
         "label": "Blockchain"
       },
       {
-        "@id": "urn:ngm:class:european-digital-identity-wallet",
+        "@id": "urn:ngm:class:digital-identity-wallet",
         "label": "European Digital Identity Wallet"
       }
     ]

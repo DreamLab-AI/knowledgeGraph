@@ -62,7 +62,7 @@
         "label": "Legal Research"
       },
       {
-        "id": "urn:ngm:class:digital-accessibility",
+        "id": "urn:ngm:class:accessibility",
         "label": "Digital Accessibility"
       },
       {
@@ -72,16 +72,7 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:intelligent-character-recognition",
-        "label": "Intelligent Character Recognition"
-      },
-      {
-        "id": "urn:ngm:class:optical-mark-recognition",
-        "label": "Optical Mark Recognition"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:robotic-process-automation",

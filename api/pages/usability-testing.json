@@ -18,16 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:task-scenario",
-        "label": "Task Scenario"
-      },
-      {
         "id": "urn:ngm:class:session-recording",
         "label": "Session Recording"
-      },
-      {
-        "id": "urn:ngm:class:debrief-interview",
-        "label": "Debrief Interview"
       }
     ],
     "requires": [
@@ -40,7 +32,7 @@
         "label": "Prototype"
       },
       {
-        "id": "urn:ngm:class:research-protocol",
+        "id": "urn:ngm:class:research-methods",
         "label": "Research Protocol"
       }
     ],
@@ -98,7 +90,7 @@
         "label": "Participant Recruitment"
       },
       {
-        "id": "urn:ngm:class:observational-methods",
+        "id": "urn:ngm:class:research-methods",
         "label": "Observational Methods"
       }
     ],
@@ -109,7 +101,7 @@
         "label": "ISO 9241"
       },
       {
-        "id": "urn:ngm:class:wcag",
+        "id": "urn:ngm:class:wcag-2-2",
         "label": "WCAG"
       }
     ],

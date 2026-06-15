@@ -75,11 +75,7 @@ public:: true
         "label": "Custody Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:reserve-management",
-        "label": "Reserve Management"
-      },
-      {
-        "@id": "urn:ngm:class:tether-limited",
+        "@id": "urn:ngm:class:tether",
         "label": "Tether Limited"
       }
     ],
@@ -103,7 +99,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:cross-border-payment",
+        "@id": "urn:ngm:class:cross-border-payments",
         "label": "Cross-Border Payment"
       },
       {
@@ -131,7 +127,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:stablecoin-ecosystem",
+        "@id": "urn:ngm:class:stablecoin",
         "label": "Stablecoin Ecosystem"
       },
       {
@@ -167,10 +163,6 @@ public:: true
       {
         "@id": "urn:ngm:class:automated-market-maker",
         "label": "Automated Market Maker"
-      },
-      {
-        "@id": "urn:ngm:class:crypto-exchange",
-        "label": "Crypto Exchange"
       }
     ]
   },

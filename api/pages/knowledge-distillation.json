@@ -18,16 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:teacher-model",
+        "id": "urn:ngm:class:teacher-student-training",
         "label": "Teacher Model"
-      },
-      {
-        "id": "urn:ngm:class:student-model",
-        "label": "Student Model"
-      },
-      {
-        "id": "urn:ngm:class:soft-targets",
-        "label": "Soft Targets"
       }
     ],
     "requires": [
@@ -42,10 +34,6 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
-      },
-      {
-        "id": "urn:ngm:class:softmax-temperature",
-        "label": "Softmax Temperature"
       }
     ],
     "enables": [
@@ -67,20 +55,7 @@
       }
     ],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:offline-distillation",
-        "label": "Offline Distillation"
-      },
-      {
-        "id": "urn:ngm:class:online-distillation",
-        "label": "Online Distillation"
-      },
-      {
-        "id": "urn:ngm:class:self-distillation",
-        "label": "Self-Distillation"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:parameter-efficient-fine-tuning",
@@ -99,10 +74,6 @@
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
-      },
-      {
-        "id": "urn:ngm:class:iot-devices",
-        "label": "IoT Devices"
       }
     ],
     "uses": [
@@ -123,7 +94,7 @@
         "label": "Model Compression"
       },
       {
-        "id": "urn:ngm:class:neural-network-optimisation",
+        "id": "urn:ngm:class:neural-network",
         "label": "Neural Network Optimisation"
       }
     ],

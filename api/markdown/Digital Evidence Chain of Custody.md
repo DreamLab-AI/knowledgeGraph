@@ -182,10 +182,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:evidence-integrity-verification",
-        "label": "Evidence Integrity Verification"
-      },
-      {
         "@id": "urn:ngm:class:forensic-investigation",
         "label": "Forensic Investigation"
       },

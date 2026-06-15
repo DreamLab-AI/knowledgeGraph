@@ -50,10 +50,6 @@
         "label": "Miner"
       },
       {
-        "id": "urn:ngm:class:transaction-prioritisation",
-        "label": "Transaction Prioritisation"
-      },
-      {
         "id": "urn:ngm:class:spam-prevention",
         "label": "Spam Prevention"
       }

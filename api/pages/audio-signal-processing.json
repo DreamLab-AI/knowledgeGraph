@@ -24,21 +24,9 @@
       {
         "id": "urn:ngm:class:fast-fourier-transform",
         "label": "Fast Fourier Transform"
-      },
-      {
-        "id": "urn:ngm:class:psychoacoustic-model",
-        "label": "Psychoacoustic Model"
-      },
-      {
-        "id": "urn:ngm:class:dynamic-range-compression",
-        "label": "Dynamic Range Compression"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:sampling-theorem",
-        "label": "Sampling Theorem"
-      },
       {
         "id": "urn:ngm:class:real-time-computing",
         "label": "Real-Time Computing"
@@ -64,10 +52,6 @@
       {
         "id": "urn:ngm:class:noise-suppression",
         "label": "Noise Suppression"
-      },
-      {
-        "id": "urn:ngm:class:acoustic-echo-cancellation",
-        "label": "Acoustic Echo Cancellation"
       }
     ],
     "dependsOn": [],
@@ -103,10 +87,6 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:digital-audio-workstation",
-        "label": "Digital Audio Workstation"
-      },
-      {
         "id": "urn:ngm:class:telecommunications",
         "label": "Telecommunications"
       }
@@ -125,10 +105,6 @@
       {
         "id": "urn:ngm:class:neural-audio-codec",
         "label": "Neural Audio Codec"
-      },
-      {
-        "id": "urn:ngm:class:source-separation",
-        "label": "Source Separation"
       }
     ]
   },

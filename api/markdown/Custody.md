@@ -75,7 +75,7 @@ public:: true
         "label": "Institutional Custody"
       },
       {
-        "@id": "urn:ngm:class:multi-signature-scheme",
+        "@id": "urn:ngm:class:multi-signature",
         "label": "Multi-Signature Scheme"
       }
     ],

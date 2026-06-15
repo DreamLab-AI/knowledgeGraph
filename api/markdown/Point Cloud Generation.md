@@ -24,52 +24,122 @@ public:: true
   "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:point-cloud", "label": "Point Cloud"}
+    {
+      "@id": "urn:ngm:class:point-cloud",
+      "label": "Point Cloud"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"},
-      {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"},
-      {"@id": "urn:ngm:class:structured-light-scanning", "label": "Structured Light Scanning"},
-      {"@id": "urn:ngm:class:time-of-flight-sensor", "label": "Time-of-Flight Sensor"},
-      {"@id": "urn:ngm:class:stereo-vision", "label": "Stereo Vision"}
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "@id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:structured-light",
+        "label": "Structured Light Scanning"
+      },
+      {
+        "@id": "urn:ngm:class:time-of-flight-sensor",
+        "label": "Time-of-Flight Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:stereo-vision",
+        "label": "Stereo Vision"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:3-d-scanning", "label": "3D Scanning"},
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:object-detection", "label": "Object Detection"}
+      {
+        "@id": "urn:ngm:class:3-d-scanning",
+        "label": "3D Scanning"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:coordinate-system", "label": "Coordinate System"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:coordinate-system",
+        "label": "Coordinate System"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:point-cloud-registration", "label": "Point Cloud Registration"},
-      {"@id": "urn:ngm:class:surface-normal-estimation", "label": "Surface Normal Estimation"}
+      {
+        "@id": "urn:ngm:class:point-cloud-registration",
+        "label": "Point Cloud Registration"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:range-imaging", "label": "Range Imaging"},
-      {"@id": "urn:ngm:class:calibration", "label": "Calibration"}
+      {
+        "@id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"},
-      {"@id": "urn:ngm:class:geospatial-data", "label": "Geospatial Data"},
-      {"@id": "urn:ngm:class:structure-from-motion", "label": "Structure from Motion"},
-      {"@id": "urn:ngm:class:mesh-generation", "label": "Mesh Generation"}
+      {
+        "@id": "urn:ngm:class:3-d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "@id": "urn:ngm:class:geospatial-data",
+        "label": "Geospatial Data"
+      },
+      {
+        "@id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure from Motion"
+      },
+      {
+        "@id": "urn:ngm:class:mesh-generation",
+        "label": "Mesh Generation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:3-d-gaussian-splatting", "label": "3D Gaussian Splatting"}
+      {
+        "@id": "urn:ngm:class:3-d-gaussian-splatting",
+        "label": "3D Gaussian Splatting"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:3-d-point-cloud-acquisition", "label": "3D Point Cloud Acquisition"}
+    {
+      "@id": "urn:ngm:class:3-d-point-cloud-acquisition",
+      "label": "3D Point Cloud Acquisition"
+    }
   ],
   "quality": 0.75,
   "provenance": {

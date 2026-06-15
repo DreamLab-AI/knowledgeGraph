@@ -174,36 +174,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:dynamic-world",
-        "label": "Dynamic World"
-      },
-      {
         "@id": "urn:ngm:class:emergent-gameplay",
         "label": "Emergent Gameplay"
       },
       {
-        "@id": "urn:ngm:class:exploration-system",
-        "label": "Exploration System"
-      },
-      {
-        "@id": "urn:ngm:class:free-roaming",
-        "label": "Free Roaming"
-      },
-      {
-        "@id": "urn:ngm:class:multiple-objectives",
-        "label": "Multiple Objectives"
-      },
-      {
         "@id": "urn:ngm:class:player-agency",
         "label": "Player Agency"
-      },
-      {
-        "@id": "urn:ngm:class:quest-system",
-        "label": "Quest System"
-      },
-      {
-        "@id": "urn:ngm:class:sandbox-mechanics",
-        "label": "Sandbox Mechanics"
       },
       {
         "@id": "urn:ngm:class:non-linear-narrative",
@@ -222,10 +198,6 @@ public:: true
       {
         "@id": "urn:ngm:class:state-management",
         "label": "State Management"
-      },
-      {
-        "@id": "urn:ngm:class:streaming-technology",
-        "label": "Streaming Technology"
       },
       {
         "@id": "urn:ngm:class:game-engine",
@@ -248,18 +220,6 @@ public:: true
       {
         "@id": "urn:ngm:class:emergent-behavior",
         "label": "Emergent Behavior"
-      },
-      {
-        "@id": "urn:ngm:class:exploration",
-        "label": "Exploration"
-      },
-      {
-        "@id": "urn:ngm:class:player-choice",
-        "label": "Player Choice"
-      },
-      {
-        "@id": "urn:ngm:class:sandbox-creation",
-        "label": "Sandbox Creation"
       },
       {
         "@id": "urn:ngm:class:non-linear-storytelling",

@@ -36,7 +36,7 @@
         "label": "Training Data"
       },
       {
-        "id": "urn:ngm:class:labeled-dataset",
+        "id": "urn:ngm:class:training-dataset",
         "label": "Labeled Dataset"
       }
     ],
@@ -107,7 +107,7 @@
         "label": "Convolutional Neural Network"
       },
       {
-        "id": "urn:ngm:class:statistical-classification",
+        "id": "urn:ngm:class:classification",
         "label": "Statistical Classification"
       },
       {

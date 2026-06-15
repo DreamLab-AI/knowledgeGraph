@@ -118,16 +118,6 @@ public:: true
         "label": "Task Planning"
       }
     ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:production-flexibility",
-        "label": "Production Flexibility"
-      },
-      {
-        "@id": "urn:ngm:class:workspace-efficiency",
-        "label": "Workspace Efficiency"
-      }
-    ],
     "partOf": [
       {
         "@id": "urn:ngm:class:manufacturing-process",

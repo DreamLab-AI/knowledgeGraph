@@ -37,52 +37,129 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:stochastic-simulation", "label": "Stochastic Simulation"},
-    {"@id": "urn:ngm:class:random-sampling-methods", "label": "Random Sampling Methods"}
+    {
+      "@id": "urn:ngm:class:stochastic-simulation",
+      "label": "Stochastic Simulation"
+    },
+    {
+      "@id": "urn:ngm:class:random-sampling-methods",
+      "label": "Random Sampling Methods"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:markov-chain-monte-carlo", "label": "Markov Chain Monte Carlo"},
-      {"@id": "urn:ngm:class:monte-carlo-tree-search", "label": "Monte Carlo Tree Search"},
-      {"@id": "urn:ngm:class:sequential-monte-carlo", "label": "Sequential Monte Carlo"},
-      {"@id": "urn:ngm:class:importance-sampling", "label": "Importance Sampling"},
-      {"@id": "urn:ngm:class:quasi-monte-carlo", "label": "Quasi-Monte Carlo"}
+      {
+        "@id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      },
+      {
+        "@id": "urn:ngm:class:sequential-monte-carlo",
+        "label": "Sequential Monte Carlo"
+      },
+      {
+        "@id": "urn:ngm:class:importance-sampling",
+        "label": "Importance Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:quasi-monte-carlo",
+        "label": "Quasi-Monte Carlo"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:random-number-generation", "label": "Random Number Generation"},
-      {"@id": "urn:ngm:class:probability-theory", "label": "Probability Theory"},
-      {"@id": "urn:ngm:class:law-of-large-numbers", "label": "Law of Large Numbers"}
+      {
+        "@id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      },
+      {
+        "@id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "@id": "urn:ngm:class:law-of-large-numbers",
+        "label": "Law of Large Numbers"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
-      {"@id": "urn:ngm:class:monte-carlo-localization", "label": "Monte Carlo Localization"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:risk-analysis", "label": "Risk Analysis"},
-      {"@id": "urn:ngm:class:probabilistic-programming", "label": "Probabilistic Programming"}
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-localization",
+        "label": "Monte Carlo Localization"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:risk-analysis",
+        "label": "Risk Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-programming",
+        "label": "Probabilistic Programming"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:sampling", "label": "Sampling"},
-      {"@id": "urn:ngm:class:stochastic-process", "label": "Stochastic Process"},
-      {"@id": "urn:ngm:class:variance-reduction", "label": "Variance Reduction"}
+      {
+        "@id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      },
+      {
+        "@id": "urn:ngm:class:variance-reduction",
+        "label": "Variance Reduction"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:numerical-integration", "label": "Numerical Integration"},
-      {"@id": "urn:ngm:class:optimisation", "label": "Optimisation"},
-      {"@id": "urn:ngm:class:uncertainty-quantification", "label": "Uncertainty Quantification"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:deterministic-algorithms", "label": "Deterministic Algorithms"},
-      {"@id": "urn:ngm:class:numerical-quadrature", "label": "Numerical Quadrature"}
+      {
+        "@id": "urn:ngm:class:numerical-integration",
+        "label": "Numerical Integration"
+      },
+      {
+        "@id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:financial-modelling", "label": "Financial Modelling"},
-      {"@id": "urn:ngm:class:physics-simulation", "label": "Physics Simulation"},
-      {"@id": "urn:ngm:class:drug-discovery", "label": "Drug Discovery"}
+      {
+        "@id": "urn:ngm:class:financial-modelling",
+        "label": "Financial Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:particle-filter", "label": "Particle Filter"},
-      {"@id": "urn:ngm:class:statistical-inference", "label": "Statistical Inference"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-inference",
+        "label": "Statistical Inference"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ]
   },
   "quality": 0.74,

@@ -18,32 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:bias-analysis",
-        "label": "Bias Analysis"
-      },
-      {
-        "id": "urn:ngm:class:ethical-considerations",
-        "label": "Ethical Considerations"
-      },
-      {
-        "id": "urn:ngm:class:limitations-section",
-        "label": "Limitations Section"
-      },
-      {
-        "id": "urn:ngm:class:model-details",
-        "label": "Model Details"
-      },
-      {
-        "id": "urn:ngm:class:security-considerations",
-        "label": "Security Considerations"
-      },
-      {
-        "id": "urn:ngm:class:training-data-information",
+        "id": "urn:ngm:class:training-data",
         "label": "Training Data Information"
-      },
-      {
-        "id": "urn:ngm:class:use-case-descriptions",
-        "label": "Use Case Descriptions"
       },
       {
         "id": "urn:ngm:class:fairness-metrics",
@@ -55,14 +31,6 @@
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:demographic-performance-analysis",
-        "label": "Demographic Performance Analysis"
-      },
-      {
-        "id": "urn:ngm:class:safety-testing-results",
-        "label": "Safety Testing Results"
-      },
       {
         "id": "urn:ngm:class:model-evaluation-results",
         "label": "Model Evaluation Results"
@@ -84,10 +52,6 @@
       {
         "id": "urn:ngm:class:informed-decision-making",
         "label": "Informed decision-making"
-      },
-      {
-        "id": "urn:ngm:class:procurement-due-diligence",
-        "label": "Procurement Due Diligence"
       },
       {
         "id": "urn:ngm:class:responsible-ai-deployment",
@@ -114,18 +78,6 @@
     "supports": [],
     "standardizedBy": [],
     "partOf": [
-      {
-        "id": "urn:ngm:class:ai-documentation-framework",
-        "label": "AI Documentation Framework"
-      },
-      {
-        "id": "urn:ngm:class:compliance-documentation",
-        "label": "Compliance Documentation"
-      },
-      {
-        "id": "urn:ngm:class:model-governance-system",
-        "label": "Model Governance System"
-      },
       {
         "id": "urn:ngm:class:ai-risk-management",
         "label": "AI Risk Management"

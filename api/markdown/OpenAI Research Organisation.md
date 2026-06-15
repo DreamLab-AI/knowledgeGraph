@@ -25,56 +25,143 @@ alias:: Open AI
   "definition": "OpenAI is an American artificial intelligence research and deployment organisation founded in December 2015 with the stated mission of ensuring that artificial general intelligence (AGI) benefits all of humanity. Originally incorporated as a non-profit, it restructured into a capped-profit hybrid in 2019 to attract large-scale investment while retaining mission-oriented governance. OpenAI is responsible for the GPT series of large language models, the DALL-E image generation systems, the Codex code-generation model, the Whisper speech-recognition model, the Sora video-generation model, and the ChatGPT conversational interface, as well as foundational research in reinforcement learning from human feedback (RLHF) and AI alignment. Through its API platform and strategic partnership with Microsoft, it has become a central commercial and research force in the global AI industry.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-research-area", "label": "AI Research Area"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:gpt", "label": "GPT"},
-      {"@id": "urn:ngm:class:chatgpt", "label": "ChatGPT"},
-      {"@id": "urn:ngm:class:dall-e", "label": "DALL-E"},
-      {"@id": "urn:ngm:class:codex", "label": "Codex"},
-      {"@id": "urn:ngm:class:whisper", "label": "Whisper"},
-      {"@id": "urn:ngm:class:sora", "label": "Sora"}
+      {
+        "@id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      },
+      {
+        "@id": "urn:ngm:class:chatgpt",
+        "label": "ChatGPT"
+      },
+      {
+        "@id": "urn:ngm:class:dall-e-3",
+        "label": "DALL-E"
+      },
+      {
+        "@id": "urn:ngm:class:whisper",
+        "label": "Whisper"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
-      {"@id": "urn:ngm:class:training-hardware", "label": "Training Hardware"}
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:training-hardware",
+        "label": "Training Hardware"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-safety-research", "label": "AI Safety Research"},
-      {"@id": "urn:ngm:class:model-evaluation-results", "label": "Model Evaluation Results"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:large-scale-pretrained-foundation-model", "label": "Large-Scale Pretrained Foundation Model"},
-      {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"},
-      {"@id": "urn:ngm:class:microsoft-azure", "label": "Microsoft Azure"}
+      {
+        "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
+        "label": "Large-Scale Pretrained Foundation Model"
+      },
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:microsoft-azure",
+        "label": "Microsoft Azure"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:anthropic", "label": "Anthropic"},
-      {"@id": "urn:ngm:class:deepmind", "label": "DeepMind"},
-      {"@id": "urn:ngm:class:meta-ai-research", "label": "Meta AI Research"}
+      {
+        "@id": "urn:ngm:class:anthropic",
+        "label": "Anthropic"
+      },
+      {
+        "@id": "urn:ngm:class:deepmind",
+        "label": "DeepMind"
+      },
+      {
+        "@id": "urn:ngm:class:meta-ai",
+        "label": "Meta AI Research"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:open-source-ai", "label": "Open-Source AI"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:ai-research-organisation", "label": "AI Research Organisation"}
+      {
+        "@id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-research-organisation",
+        "label": "AI Research Organisation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-regulation", "label": "AI Regulation"},
-      {"@id": "urn:ngm:class:developer-ecosystem", "label": "Developer Ecosystem"}
+      {
+        "@id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:developer-ecosystem",
+        "label": "Developer Ecosystem"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:openai", "label": "OpenAI"}
+    {
+      "@id": "urn:ngm:class:openai",
+      "label": "OpenAI"
+    }
   ],
   "quality": 0.74,
   "provenance": {

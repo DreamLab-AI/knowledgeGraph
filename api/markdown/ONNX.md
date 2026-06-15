@@ -24,53 +24,114 @@ public:: true
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:interoperability-standard", "label": "Interoperability Standard"}
+    {
+      "@id": "urn:ngm:class:interoperability-standard",
+      "label": "Interoperability Standard"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:onnx-operator-set", "label": "ONNX Operator Set"},
-      {"@id": "urn:ngm:class:onnx-runtime", "label": "ONNX Runtime"},
-      {"@id": "urn:ngm:class:onnx-model-zoo", "label": "ONNX Model Zoo"}
+      {
+        "@id": "urn:ngm:class:onnx-operator-set",
+        "label": "ONNX Operator Set"
+      },
+      {
+        "@id": "urn:ngm:class:onnx-runtime",
+        "label": "ONNX Runtime"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:protocol-buffers", "label": "Protocol Buffers"},
-      {"@id": "urn:ngm:class:computation-graph", "label": "Computation Graph"}
+      {
+        "@id": "urn:ngm:class:protocol-buffers",
+        "label": "Protocol Buffers"
+      },
+      {
+        "@id": "urn:ngm:class:computation-graph",
+        "label": "Computation Graph"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-deployment", "label": "Model Deployment"},
-      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
-      {"@id": "urn:ngm:class:model-optimization", "label": "Model Optimization"},
-      {"@id": "urn:ngm:class:edge-inference", "label": "Edge Inference"}
+      {
+        "@id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:model-optimization",
+        "label": "Model Optimization"
+      },
+      {
+        "@id": "urn:ngm:class:edge-inference",
+        "label": "Edge Inference"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"}
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:deep-learning-framework", "label": "Deep Learning Framework"},
-      {"@id": "urn:ngm:class:quantisation", "label": "Quantisation"},
-      {"@id": "urn:ngm:class:graph-optimisation", "label": "Graph Optimisation"}
+      {
+        "@id": "urn:ngm:class:deep-learning-framework",
+        "label": "Deep Learning Framework"
+      },
+      {
+        "@id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:graph-optimisation",
+        "label": "Graph Optimisation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:tensorflow-savedmodel", "label": "TensorFlow SavedModel"},
-      {"@id": "urn:ngm:class:torchscript", "label": "TorchScript"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:neural-processing-unit", "label": "Neural Processing Unit"},
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"}
+      {
+        "@id": "urn:ngm:class:neural-processing-unit",
+        "label": "Neural Processing Unit"
+      },
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-serialisation", "label": "Model Serialisation"},
-      {"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"},
-      {"@id": "urn:ngm:class:knowledge-distillation", "label": "Knowledge Distillation"}
+      {
+        "@id": "urn:ngm:class:model-serialisation",
+        "label": "Model Serialisation"
+      },
+      {
+        "@id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:open-neural-network-exchange", "label": "Open Neural Network Exchange"}
+    {
+      "@id": "urn:ngm:class:open-neural-network-exchange",
+      "label": "Open Neural Network Exchange"
+    }
   ],
   "quality": 0.74,
   "provenance": {

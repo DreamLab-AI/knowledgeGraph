@@ -91,10 +91,6 @@ public:: true
       {
         "@id": "urn:ngm:class:distributed-hash-table",
         "label": "Distributed Hash Table"
-      },
-      {
-        "@id": "urn:ngm:class:node-incentivisation",
-        "label": "Node Incentivisation"
       }
     ],
     "enables": [
@@ -109,10 +105,6 @@ public:: true
       {
         "@id": "urn:ngm:class:censorship-resistance",
         "label": "Censorship Resistance"
-      },
-      {
-        "@id": "urn:ngm:class:persistent-data-availability",
-        "label": "Persistent Data Availability"
       }
     ],
     "dependsOn": [

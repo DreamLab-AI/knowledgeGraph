@@ -23,15 +23,23 @@ public:: true
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:dc-workspace-tools", "label": "Workspace Tools"}
+    {
+      "@id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    }
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:brainstorming", "label": "Brainstorming"},
-      {"@id": "urn:ngm:class:retrospective", "label": "Retrospective"}
+      {
+        "@id": "urn:ngm:class:retrospective",
+        "label": "Retrospective"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaborative-whiteboard", "label": "Collaborative Whiteboard"}
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-whiteboard",
+        "label": "Collaborative Whiteboard"
+      }
     ]
   },
   "quality": 0.7

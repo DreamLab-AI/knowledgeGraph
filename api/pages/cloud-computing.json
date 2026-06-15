@@ -30,7 +30,7 @@
         "label": "Software as a Service"
       },
       {
-        "id": "urn:ngm:class:serverless-computing",
+        "id": "urn:ngm:class:serverless-architecture",
         "label": "Serverless Computing"
       }
     ],
@@ -85,16 +85,7 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:on-premises-computing",
-        "label": "On-Premises Computing"
-      },
-      {
-        "id": "urn:ngm:class:mainframe-computing",
-        "label": "Mainframe Computing"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:federated-learning",

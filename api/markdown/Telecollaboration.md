@@ -221,26 +221,8 @@ alias:: TELE-002-telecollaboration
         "label": "Coordination Mechanisms"
       },
       {
-        "@id": "urn:ngm:class:real-time-protocols",
+        "@id": "urn:ngm:class:tele-151-real-time-protocols",
         "label": "Real-Time Protocols"
-      }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:cross-cultural-teamwork",
-        "label": "Cross-Cultural Teamwork"
-      },
-      {
-        "@id": "urn:ngm:class:distributed-knowledge-work",
-        "label": "Distributed Knowledge Work"
-      },
-      {
-        "@id": "urn:ngm:class:global-research-collaboration",
-        "label": "Global Research Collaboration"
-      },
-      {
-        "@id": "urn:ngm:class:remote-team-productivity",
-        "label": "Remote Team Productivity"
       }
     ]
   },

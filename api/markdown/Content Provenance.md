@@ -66,7 +66,7 @@ public:: true
         "label": "Digital Signatures"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -74,10 +74,6 @@ public:: true
       {
         "@id": "urn:ngm:class:metadata-standards",
         "label": "Metadata Standards"
-      },
-      {
-        "@id": "urn:ngm:class:hashing",
-        "label": "Hashing"
       },
       {
         "@id": "urn:ngm:class:verifiable-credentials",
@@ -88,14 +84,6 @@ public:: true
       {
         "@id": "urn:ngm:class:media-authentication",
         "label": "Media Authentication"
-      },
-      {
-        "@id": "urn:ngm:class:disinformation-detection",
-        "label": "Disinformation Detection"
-      },
-      {
-        "@id": "urn:ngm:class:trust-signals",
-        "label": "Trust Signals"
       }
     ],
     "supports": [
@@ -152,7 +140,7 @@ public:: true
         "label": "Information Integrity"
       },
       {
-        "@id": "urn:ngm:class:watermarking",
+        "@id": "urn:ngm:class:watermarking-service",
         "label": "Watermarking"
       },
       {

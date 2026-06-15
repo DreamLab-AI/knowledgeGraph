@@ -23,51 +23,133 @@ public:: true
   "definition": "A generator network is the synthesis component of a generative deep learning architecture — most prominently within Generative Adversarial Networks (GANs) — that learns to map samples from a low-dimensional latent space into high-dimensional data outputs (images, audio, video, 3D shapes) whose statistical distribution matches that of a training dataset. The generator is trained in adversarial competition with a discriminator network, receiving gradient signal not from direct comparison with target samples but from the discriminator's attempt to distinguish generated from real samples, forcing the generator to produce increasingly realistic outputs. Generator networks are the conceptual precursors to the decoder components of VAEs and the denoising networks of diffusion models.",
   "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:generative-model", "label": "Generative Model"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:neural-network-latent-space", "label": "Neural Network Latent Space"},
-      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"},
-      {"@id": "urn:ngm:class:generative-adversarial-network", "label": "Generative Adversarial Network"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"},
-      {"@id": "urn:ngm:class:backpropagation", "label": "Backpropagation"},
-      {"@id": "urn:ngm:class:batch-normalisation", "label": "Batch Normalisation"}
+      {
+        "@id": "urn:ngm:class:neural-network-latent-space",
+        "label": "Neural Network Latent Space"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"},
-      {"@id": "urn:ngm:class:style-transfer", "label": "Style Transfer"},
-      {"@id": "urn:ngm:class:synthetic-data-generator", "label": "Synthetic Data Generator"},
-      {"@id": "urn:ngm:class:data-augmentation", "label": "Data Augmentation"},
-      {"@id": "urn:ngm:class:image-super-resolution", "label": "Image Super-Resolution"},
-      {"@id": "urn:ngm:class:text-to-image-synthesis", "label": "Text-to-Image Synthesis"}
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "@id": "urn:ngm:class:style-transfer",
+        "label": "Style Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data-generator",
+        "label": "Synthetic Data Generator"
+      },
+      {
+        "@id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      },
+      {
+        "@id": "urn:ngm:class:super-resolution",
+        "label": "Image Super-Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:text-to-image-generation",
+        "label": "Text-to-Image Synthesis"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:transposed-convolution", "label": "Transposed Convolution"},
-      {"@id": "urn:ngm:class:upsampling-layer", "label": "Upsampling Layer"}
+      {
+        "@id": "urn:ngm:class:convolution",
+        "label": "Transposed Convolution"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:discriminator-network", "label": "Discriminator Network"},
-      {"@id": "urn:ngm:class:adversarial-training", "label": "Adversarial Training"},
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"}
+      {
+        "@id": "urn:ngm:class:discriminator-network",
+        "label": "Discriminator Network"
+      },
+      {
+        "@id": "urn:ngm:class:adversarial-training",
+        "label": "Adversarial Training"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:discriminator-network", "label": "Discriminator Network"},
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:variational-autoencoders", "label": "Variational Autoencoders"}
+      {
+        "@id": "urn:ngm:class:discriminator-network",
+        "label": "Discriminator Network"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:variational-autoencoders",
+        "label": "Variational Autoencoders"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:deep-generative-model", "label": "Deep Generative Model"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:noise-injection", "label": "Noise Injection"}
+      {
+        "@id": "urn:ngm:class:deep-generative-model",
+        "label": "Deep Generative Model"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:noise-injection",
+        "label": "Noise Injection"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:gan-generator", "label": "GAN Generator"},
-    {"@id": "urn:ngm:class:generative-decoder", "label": "Generative Decoder"}
+    {
+      "@id": "urn:ngm:class:gan-generator",
+      "label": "GAN Generator"
+    },
+    {
+      "@id": "urn:ngm:class:generative-decoder",
+      "label": "Generative Decoder"
+    }
   ],
   "quality": 0.72,
   "provenance": {

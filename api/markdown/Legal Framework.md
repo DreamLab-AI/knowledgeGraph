@@ -98,11 +98,11 @@ public:: true
         "label": "Privacy Requirements"
       },
       {
-        "@id": "urn:ngm:class:security-obligations",
+        "@id": "urn:ngm:class:security",
         "label": "Security Obligations"
       },
       {
-        "@id": "urn:ngm:class:data-protection-by-design",
+        "@id": "urn:ngm:class:privacy-by-design",
         "label": "Data Protection by Design"
       }
     ],
@@ -112,7 +112,7 @@ public:: true
         "label": "Regulatory Framework"
       },
       {
-        "@id": "urn:ngm:class:compliance-programme",
+        "@id": "urn:ngm:class:compliance",
         "label": "Compliance Programme"
       },
       {
@@ -138,10 +138,6 @@ public:: true
       {
         "@id": "urn:ngm:class:jurisdiction",
         "label": "Jurisdiction"
-      },
-      {
-        "@id": "urn:ngm:class:legislative-process",
-        "label": "Legislative Process"
       }
     ],
     "supports": [
@@ -160,7 +156,7 @@ public:: true
         "label": "GDPR"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],

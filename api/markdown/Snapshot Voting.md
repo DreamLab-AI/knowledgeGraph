@@ -542,23 +542,19 @@ public:: true
         "label": "Delegation Registry"
       },
       {
-        "@id": "urn:ngm:class:graph-ql-api",
+        "@id": "urn:ngm:class:graph-ql",
         "label": "GraphQL API"
       },
       {
-        "@id": "urn:ngm:class:hub-relayer",
+        "@id": "urn:ngm:class:relayer",
         "label": "Hub Relayer"
       },
       {
-        "@id": "urn:ngm:class:ipfs-vote-record",
-        "label": "IPFS Vote Record"
-      },
-      {
-        "@id": "urn:ngm:class:reality-eth-oracle-integration",
+        "@id": "urn:ngm:class:reality-eth-oracle",
         "label": "Reality.eth Oracle Integration"
       },
       {
-        "@id": "urn:ngm:class:safe-snap-module",
+        "@id": "urn:ngm:class:safe-snap",
         "label": "SafeSnap Module"
       },
       {
@@ -570,11 +566,11 @@ public:: true
         "label": "Snapshot Hub"
       },
       {
-        "@id": "urn:ngm:class:snapshot-space",
+        "@id": "urn:ngm:class:snapshot",
         "label": "Snapshot Space"
       },
       {
-        "@id": "urn:ngm:class:voting-strategy",
+        "@id": "urn:ngm:class:voting-systems",
         "label": "Voting Strategy"
       }
     ],
@@ -584,16 +580,12 @@ public:: true
         "label": "ECDSA Cryptography"
       },
       {
-        "@id": "urn:ngm:class:eip-712-signature",
+        "@id": "urn:ngm:class:eip-712",
         "label": "EIP-712 Signature"
       },
       {
-        "@id": "urn:ngm:class:ens-name",
+        "@id": "urn:ngm:class:ens",
         "label": "ENS Name"
-      },
-      {
-        "@id": "urn:ngm:class:ethereum-smart-contract-platform-rpc-node",
-        "label": "Ethereum RPC Node"
       },
       {
         "@id": "urn:ngm:class:ipfs",
@@ -606,40 +598,16 @@ public:: true
       {
         "@id": "urn:ngm:class:snapshot-hub",
         "label": "Snapshot Hub"
-      },
-      {
-        "@id": "urn:ngm:class:voting-strategy-plugin",
-        "label": "Voting Strategy Plugin"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:cross-chain-voting-aggregation",
-        "label": "Cross-Chain Voting Aggregation"
-      },
-      {
-        "@id": "urn:ngm:class:gasless-dao-participation",
-        "label": "Gasless DAO Participation"
-      },
-      {
-        "@id": "urn:ngm:class:liquid-democracy-delegation",
+        "@id": "urn:ngm:class:liquid-democracy",
         "label": "Liquid Democracy Delegation"
       },
       {
-        "@id": "urn:ngm:class:nft-gated-governance",
-        "label": "NFT-Gated Governance"
-      },
-      {
-        "@id": "urn:ngm:class:on-chain-execution-via-safe-snap",
+        "@id": "urn:ngm:class:safe-snap",
         "label": "On-Chain Execution via SafeSnap"
-      },
-      {
-        "@id": "urn:ngm:class:reputation-weighted-voting",
-        "label": "Reputation-Weighted Voting"
-      },
-      {
-        "@id": "urn:ngm:class:token-weighted-governance",
-        "label": "Token-Weighted Governance"
       },
       {
         "@id": "urn:ngm:class:quadratic-voting",
@@ -648,11 +616,11 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:ecdsa-signature-verification",
+        "@id": "urn:ngm:class:digital-signature-verification",
         "label": "ECDSA Signature Verification"
       },
       {
-        "@id": "urn:ngm:class:eip-712-typed-structured-data",
+        "@id": "urn:ngm:class:eip-712",
         "label": "EIP-712 Typed Structured Data"
       },
       {
@@ -664,16 +632,8 @@ public:: true
         "label": "Reality ETH Oracle"
       },
       {
-        "@id": "urn:ngm:class:snapshot-block-mechanism",
+        "@id": "urn:ngm:class:snapshot-block",
         "label": "Snapshot Block Mechanism"
-      },
-      {
-        "@id": "urn:ngm:class:strategy-plugin-pattern",
-        "label": "Strategy Plugin Pattern"
-      },
-      {
-        "@id": "urn:ngm:class:zodiac-module-standard",
-        "label": "Zodiac Module Standard"
       }
     ],
     "uses": [
@@ -690,20 +650,8 @@ public:: true
         "label": "Keccak-256 Hashing"
       },
       {
-        "@id": "urn:ngm:class:multicall-contract",
-        "label": "Multicall Contract"
-      },
-      {
-        "@id": "urn:ngm:class:pinata-ipfs-pinning",
-        "label": "Pinata IPFS Pinning"
-      },
-      {
         "@id": "urn:ngm:class:reality-eth",
         "label": "Reality.eth"
-      },
-      {
-        "@id": "urn:ngm:class:stark-net-cairo",
-        "label": "StarkNet Cairo"
       }
     ],
     "relatedTo": [
@@ -718,10 +666,6 @@ public:: true
       {
         "@id": "urn:ngm:class:governance-attack",
         "label": "Governance Attack"
-      },
-      {
-        "@id": "urn:ngm:class:karma-delegate-scoring",
-        "label": "Karma Delegate Scoring"
       },
       {
         "@id": "urn:ngm:class:liquid-democracy",
@@ -746,10 +690,6 @@ public:: true
         "label": "Aave Governance"
       },
       {
-        "@id": "urn:ngm:class:ape-coin-dao",
-        "label": "ApeCoin DAO"
-      },
-      {
         "@id": "urn:ngm:class:arbitrum-dao",
         "label": "Arbitrum DAO"
       },
@@ -758,7 +698,7 @@ public:: true
         "label": "ENS DAO"
       },
       {
-        "@id": "urn:ngm:class:gitcoin-dao",
+        "@id": "urn:ngm:class:gitcoin",
         "label": "Gitcoin DAO"
       },
       {
@@ -792,16 +732,12 @@ public:: true
         "label": "ERC-20"
       },
       {
-        "@id": "urn:ngm:class:erc-20-votes-delegation-standard",
+        "@id": "urn:ngm:class:erc20-votes-standard",
         "label": "ERC-20Votes Delegation Standard"
       },
       {
         "@id": "urn:ngm:class:erc-721",
         "label": "ERC-721"
-      },
-      {
-        "@id": "urn:ngm:class:ipfs-specification",
-        "label": "IPFS Specification"
       }
     ]
   },

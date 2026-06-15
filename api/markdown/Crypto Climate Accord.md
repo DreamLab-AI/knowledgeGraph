@@ -23,48 +23,117 @@ public:: true
   "definition": "The Crypto Climate Accord is a private-sector initiative launched in 2021 to decarbonise the cryptocurrency and blockchain industry, modelled on the Paris Climate Agreement. It commits signatory companies and projects to achieving net-zero greenhouse-gas emissions from electricity consumption by 2030 and to developing open-source accounting standards and tools for measuring and reporting crypto energy use.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:esg", "label": "ESG"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:esg",
+      "label": "ESG"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-energy-consumption", "label": "Blockchain Energy Consumption"},
-      {"@id": "urn:ngm:class:renewable-energy", "label": "Renewable Energy"},
-      {"@id": "urn:ngm:class:carbon-credits", "label": "Carbon Credits"},
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:paris-climate-agreement", "label": "Paris Climate Agreement"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"},
-      {"@id": "urn:ngm:class:energy-web-chain", "label": "Energy Web Chain"},
-      {"@id": "urn:ngm:class:scope-2-emissions", "label": "Scope 2 Emissions"}
+      {
+        "@id": "urn:ngm:class:blockchain-energy-consumption",
+        "label": "Blockchain Energy Consumption"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Climate Agreement"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "@id": "urn:ngm:class:scope-2-emissions",
+        "label": "Scope 2 Emissions"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:esg-compliant-blockchain", "label": "ESG-Compliant Blockchain"},
-      {"@id": "urn:ngm:class:renewable-energy-tracking", "label": "Renewable Energy Tracking"},
-      {"@id": "urn:ngm:class:decarbonisation", "label": "Decarbonisation"},
-      {"@id": "urn:ngm:class:institutional-adoption", "label": "Institutional Adoption"}
+      {
+        "@id": "urn:ngm:class:esg-compliant-blockchain",
+        "label": "ESG-Compliant Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy-tracking",
+        "label": "Renewable Energy Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:decarbonisation",
+        "label": "Decarbonisation"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-adoption",
+        "label": "Institutional Adoption"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:renewable-energy-certificates", "label": "Renewable Energy Certificates"},
-      {"@id": "urn:ngm:class:carbon-accounting-standard", "label": "Carbon Accounting Standard"},
-      {"@id": "urn:ngm:class:24-7-carbon-free-energy", "label": "24/7 Carbon-Free Energy"}
+      {
+        "@id": "urn:ngm:class:renewable-energy-certificates",
+        "label": "Renewable Energy Certificates"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting Standard"
+      },
+      {
+        "@id": "urn:ngm:class:24-7-carbon-free-energy",
+        "label": "24/7 Carbon-Free Energy"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:power-purchase-agreement", "label": "Power Purchase Agreement"},
-      {"@id": "urn:ngm:class:emissions-reporting", "label": "Emissions Reporting"}
+      {
+        "@id": "urn:ngm:class:power-purchase-agreement",
+        "label": "Power Purchase Agreement"
+      },
+      {
+        "@id": "urn:ngm:class:emissions-reporting",
+        "label": "Emissions Reporting"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:net-zero-blockchain", "label": "Net-Zero Blockchain"},
-      {"@id": "urn:ngm:class:voluntary-carbon-market", "label": "Voluntary Carbon Market"}
+      {
+        "@id": "urn:ngm:class:voluntary-carbon-market",
+        "label": "Voluntary Carbon Market"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:bitcoin-mining", "label": "Bitcoin Mining"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
+        "label": "Bitcoin Mining"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:governance", "label": "Governance"},
-      {"@id": "urn:ngm:class:sustainability-reporting", "label": "Sustainability Reporting"},
-      {"@id": "urn:ngm:class:mica-regulation", "label": "MiCA Regulation"}
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:sustainability-reporting",
+        "label": "Sustainability Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:bc-0482-eu-mica-regulation",
+        "label": "MiCA Regulation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:cca-crypto-climate-accord", "label": "CCA (Crypto Climate Accord)"}
+    {
+      "@id": "urn:ngm:class:cca-crypto-climate-accord",
+      "label": "CCA (Crypto Climate Accord)"
+    }
   ],
   "quality": 0.82,
   "provenance": {

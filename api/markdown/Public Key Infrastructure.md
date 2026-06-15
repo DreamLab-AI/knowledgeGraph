@@ -49,59 +49,161 @@ alias:: Public-Key Infrastructure, PublicKeyInfrastructure
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:certificate-authority", "label": "Certificate Authority"},
-      {"@id": "urn:ngm:class:registration-authority", "label": "Registration Authority"},
-      {"@id": "urn:ngm:class:certificate-revocation-list", "label": "Certificate Revocation List"},
-      {"@id": "urn:ngm:class:online-certificate-status-protocol", "label": "Online Certificate Status Protocol"},
-      {"@id": "urn:ngm:class:root-certificate", "label": "Root Certificate"},
-      {"@id": "urn:ngm:class:digital-certificate", "label": "Digital Certificate"}
+      {
+        "@id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "@id": "urn:ngm:class:registration-authority",
+        "label": "Registration Authority"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-revocation-list",
+        "label": "Certificate Revocation List"
+      },
+      {
+        "@id": "urn:ngm:class:online-certificate-status-protocol",
+        "label": "Online Certificate Status Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:root-certificate",
+        "label": "Root Certificate"
+      },
+      {
+        "@id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:asymmetric-cryptography", "label": "Asymmetric Cryptography"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:cryptographic-keys", "label": "Cryptographic Keys"},
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"}
+      {
+        "@id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:transport-layer-security", "label": "Transport Layer Security"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"},
-      {"@id": "urn:ngm:class:mutual-authentication", "label": "Mutual Authentication"},
-      {"@id": "urn:ngm:class:non-repudiation", "label": "Non-Repudiation"},
-      {"@id": "urn:ngm:class:code-signing", "label": "Code Signing"},
-      {"@id": "urn:ngm:class:encrypted-email", "label": "Encrypted Email"}
+      {
+        "@id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "@id": "urn:ngm:class:mutual-authentication",
+        "label": "Mutual Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      },
+      {
+        "@id": "urn:ngm:class:code-signing",
+        "label": "Code Signing"
+      },
+      {
+        "@id": "urn:ngm:class:encrypted-email",
+        "label": "Encrypted Email"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:x509-standard", "label": "X.509 Standard"},
-      {"@id": "urn:ngm:class:rfc-5280", "label": "RFC 5280"}
+      {
+        "@id": "urn:ngm:class:x509-standard",
+        "label": "X.509 Standard"
+      },
+      {
+        "@id": "urn:ngm:class:rfc-5280",
+        "label": "RFC 5280"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
-      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"},
-      {"@id": "urn:ngm:class:secure-communication", "label": "Secure Communication"}
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:internet-engineering-task-force", "label": "Internet Engineering Task Force"},
-      {"@id": "urn:ngm:class:ca-browser-forum", "label": "CA/Browser Forum"},
-      {"@id": "urn:ngm:class:nist", "label": "NIST"}
+      {
+        "@id": "urn:ngm:class:internet-engineering-task-force",
+        "label": "Internet Engineering Task Force"
+      },
+      {
+        "@id": "urn:ngm:class:ca-browser-forum",
+        "label": "CA/Browser Forum"
+      },
+      {
+        "@id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:web-of-trust", "label": "Web of Trust"},
-      {"@id": "urn:ngm:class:decentralised-identifier", "label": "Decentralised Identifier"}
+      {
+        "@id": "urn:ngm:class:web-of-trust",
+        "label": "Web of Trust"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:blockchain-identity", "label": "Blockchain Identity"},
-      {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"}
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-identity",
+        "label": "Blockchain Identity"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
-      {"@id": "urn:ngm:class:post-quantum-cryptography", "label": "Post-Quantum Cryptography"}
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:pki", "label": "PKI"},
-    {"@id": "urn:ngm:class:public-key-infrastructure-pki", "label": "Public-Key Infrastructure (PKI)"}
+    {
+      "@id": "urn:ngm:class:pki",
+      "label": "PKI"
+    },
+    {
+      "@id": "urn:ngm:class:public-key-infrastructure-pki",
+      "label": "Public-Key Infrastructure (PKI)"
+    }
   ],
   "quality": 0.74,
   "provenance": {

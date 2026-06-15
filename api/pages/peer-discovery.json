@@ -27,10 +27,6 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:node-address",
-        "label": "Node Address"
-      },
-      {
         "id": "urn:ngm:class:network-protocol",
         "label": "Network Protocol"
       }
@@ -67,17 +63,9 @@
       {
         "id": "urn:ngm:class:overlay-network",
         "label": "Overlay Network"
-      },
-      {
-        "id": "urn:ngm:class:address-propagation",
-        "label": "Address Propagation"
       }
     ],
     "contrastsWith": [
-      {
-        "id": "urn:ngm:class:centralized-directory",
-        "label": "Centralized Directory"
-      },
       {
         "id": "urn:ngm:class:client-server-architecture",
         "label": "Client-Server Architecture"
@@ -107,11 +95,7 @@
         "label": "Distributed Hash Table"
       },
       {
-        "id": "urn:ngm:class:dns-seed",
-        "label": "DNS Seed"
-      },
-      {
-        "id": "urn:ngm:class:kademlia",
+        "id": "urn:ngm:class:kademlia-dht",
         "label": "Kademlia"
       }
     ],

@@ -21,14 +21,6 @@
       {
         "id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Tree"
-      },
-      {
-        "id": "urn:ngm:class:hash-preimage",
-        "label": "Hash Preimage"
-      },
-      {
-        "id": "urn:ngm:class:sibling-hash",
-        "label": "Sibling Hash"
       }
     ],
     "enables": [
@@ -47,10 +39,6 @@
       {
         "id": "urn:ngm:class:light-client",
         "label": "Light Client"
-      },
-      {
-        "id": "urn:ngm:class:stateless-verification",
-        "label": "Stateless Verification"
       }
     ],
     "dependsOn": [],
@@ -68,10 +56,6 @@
       {
         "id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proof"
-      },
-      {
-        "id": "urn:ngm:class:full-node-verification",
-        "label": "Full Node Verification"
       }
     ],
     "bridgesTo": [

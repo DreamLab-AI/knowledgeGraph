@@ -54,11 +54,11 @@
         "label": "Carbon Accounting"
       },
       {
-        "id": "urn:ngm:class:net-zero-strategy",
+        "id": "urn:ngm:class:net-zero-targets",
         "label": "Net Zero Strategy"
       },
       {
-        "id": "urn:ngm:class:scope-3-emissions-reporting",
+        "id": "urn:ngm:class:scope-3-emissions",
         "label": "Scope 3 Emissions Reporting"
       }
     ],
@@ -103,7 +103,7 @@
         "label": "Satellite Monitoring"
       },
       {
-        "id": "urn:ngm:class:iot-sensors",
+        "id": "urn:ngm:class:io-t-sensors",
         "label": "IoT Sensors"
       },
       {
@@ -135,13 +135,13 @@
         "label": "Gold Standard"
       },
       {
-        "id": "urn:ngm:class:article-6-paris-agreement",
+        "id": "urn:ngm:class:paris-agreement-article-6",
         "label": "Article 6 Paris Agreement"
       }
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:carbon-market",
+        "id": "urn:ngm:class:carbon-markets",
         "label": "Carbon Market"
       },
       {

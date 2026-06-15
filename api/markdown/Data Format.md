@@ -57,58 +57,127 @@ public:: true
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:data-standards", "label": "Data Standards"},
-      {"@id": "urn:ngm:class:data-architecture", "label": "Data Architecture"}
+      {
+        "@id": "urn:ngm:class:data-standards",
+        "label": "Data Standards"
+      },
+      {
+        "@id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:schema", "label": "Schema"},
-      {"@id": "urn:ngm:class:encoding", "label": "Encoding"},
-      {"@id": "urn:ngm:class:serialisation", "label": "Serialisation"}
+      {
+        "@id": "urn:ngm:class:schema",
+        "label": "Schema"
+      },
+      {
+        "@id": "urn:ngm:class:encoding",
+        "label": "Encoding"
+      },
+      {
+        "@id": "urn:ngm:class:serialisation",
+        "label": "Serialisation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:schema-registry", "label": "Schema Registry"},
-      {"@id": "urn:ngm:class:codec", "label": "Codec"}
+      {
+        "@id": "urn:ngm:class:schema-registry",
+        "label": "Schema Registry"
+      },
+      {
+        "@id": "urn:ngm:class:codec",
+        "label": "Codec"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:data-interoperability", "label": "Data Interoperability"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:data-exchange", "label": "Data Exchange"},
-      {"@id": "urn:ngm:class:api-design", "label": "API Design"}
+      {
+        "@id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:data-exchange",
+        "label": "Data Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:character-encoding", "label": "Character Encoding"},
-      {"@id": "urn:ngm:class:type-system", "label": "Type System"}
+      {
+        "@id": "urn:ngm:class:type-system",
+        "label": "Type System"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"},
-      {"@id": "urn:ngm:class:interface-definition-language", "label": "Interface Definition Language"}
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:compression", "label": "Compression"},
-      {"@id": "urn:ngm:class:data-validation", "label": "Data Validation"}
+      {
+        "@id": "urn:ngm:class:data-compression",
+        "label": "Compression"
+      },
+      {
+        "@id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"},
-      {"@id": "urn:ngm:class:iso", "label": "ISO"},
-      {"@id": "urn:ngm:class:w3c", "label": "W3C"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:binary-format", "label": "Binary Format"},
-      {"@id": "urn:ngm:class:text-format", "label": "Text Format"}
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "@id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:json-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:protocol-buffers", "label": "Protocol Buffers"},
-      {"@id": "urn:ngm:class:apache-parquet", "label": "Apache Parquet"}
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-ld",
+        "label": "JSON-LD"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-buffers",
+        "label": "Protocol Buffers"
+      },
+      {
+        "@id": "urn:ngm:class:apache-parquet",
+        "label": "Apache Parquet"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:file-format", "label": "File Format"},
-    {"@id": "urn:ngm:class:data-serialisation-format", "label": "Data Serialisation Format"}
+    {
+      "@id": "urn:ngm:class:file-format",
+      "label": "File Format"
+    },
+    {
+      "@id": "urn:ngm:class:data-serialisation-format",
+      "label": "Data Serialisation Format"
+    }
   ],
   "quality": 0.72,
   "provenance": {

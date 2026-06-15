@@ -16,21 +16,8 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:plane-intersection-test",
-        "label": "Plane Intersection Test"
-      },
-      {
-        "id": "urn:ngm:class:sphere-frustum-test",
-        "label": "Sphere-Frustum Test"
-      }
-    ],
+    "hasPart": [],
     "requires": [
-      {
-        "id": "urn:ngm:class:view-projection-matrix",
-        "label": "View-Projection Matrix"
-      },
       {
         "id": "urn:ngm:class:bounding-volume",
         "label": "Bounding Volume"
@@ -56,10 +43,6 @@
       {
         "id": "urn:ngm:class:gpu-driven-rendering",
         "label": "GPU-Driven Rendering"
-      },
-      {
-        "id": "urn:ngm:class:draw-call-batching",
-        "label": "Draw Call Batching"
       }
     ],
     "dependsOn": [],
@@ -68,10 +51,6 @@
       {
         "id": "urn:ngm:class:occlusion-culling",
         "label": "Occlusion Culling"
-      },
-      {
-        "id": "urn:ngm:class:backface-culling",
-        "label": "Backface Culling"
       },
       {
         "id": "urn:ngm:class:portal-culling",
@@ -98,11 +77,11 @@
         "label": "Bounding Volume Hierarchy"
       },
       {
-        "id": "urn:ngm:class:octree",
+        "id": "urn:ngm:class:octree-spatial-index",
         "label": "Octree"
       },
       {
-        "id": "urn:ngm:class:axis-aligned-bounding-box",
+        "id": "urn:ngm:class:bounding-volume",
         "label": "Axis-Aligned Bounding Box"
       }
     ],
@@ -119,11 +98,7 @@
         "label": "Scene Management"
       },
       {
-        "id": "urn:ngm:class:clipping",
-        "label": "Clipping"
-      },
-      {
-        "id": "urn:ngm:class:spatial-indexing",
+        "id": "urn:ngm:class:spatial-index",
         "label": "Spatial Indexing"
       }
     ]

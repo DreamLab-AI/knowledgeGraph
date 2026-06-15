@@ -158,7 +158,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:city-infrastructure-twin",
+        "@id": "urn:ngm:class:digital-twin-infrastructure",
         "label": "City Infrastructure Twin"
       },
       {
@@ -166,27 +166,11 @@ public:: true
         "label": "Economic Model"
       },
       {
-        "@id": "urn:ngm:class:environmental-sensor-network",
+        "@id": "urn:ngm:class:io-t-sensor-network",
         "label": "Environmental Sensor Network"
-      },
-      {
-        "@id": "urn:ngm:class:population-simulation",
-        "label": "Population Simulation"
-      },
-      {
-        "@id": "urn:ngm:class:traffic-management-system",
-        "label": "Traffic Management System"
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:agent-based-simulation",
-        "label": "Agent-Based Simulation"
-      },
-      {
-        "@id": "urn:ngm:class:real-time-city-data",
-        "label": "Real-time City Data"
-      },
       {
         "@id": "urn:ngm:class:urban-data-platform",
         "label": "Urban Data Platform"
@@ -198,16 +182,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:crisis-management",
-        "label": "Crisis Management"
-      },
-      {
         "@id": "urn:ngm:class:policy-simulation",
         "label": "Policy Simulation"
-      },
-      {
-        "@id": "urn:ngm:class:sustainability-optimization",
-        "label": "Sustainability Optimization"
       },
       {
         "@id": "urn:ngm:class:urban-planning",
@@ -216,7 +192,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:smart-city-ecosystem",
+        "@id": "urn:ngm:class:smart-city",
         "label": "Smart City Ecosystem"
       },
       {

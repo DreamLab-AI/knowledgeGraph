@@ -433,7 +433,10 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:game-development", "label": "Game Development"}
+      {
+        "@id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      }
     ],
     "hasPart": [
       {
@@ -449,27 +452,19 @@ public:: true
         "label": "Finite State Machine"
       },
       {
-        "@id": "urn:ngm:class:game-playing-agents",
+        "@id": "urn:ngm:class:ai-game-agent",
         "label": "Game-Playing Agents"
-      },
-      {
-        "@id": "urn:ngm:class:goap",
-        "label": "GOAP"
       },
       {
         "@id": "urn:ngm:class:htn-planning",
         "label": "HTN Planning"
       },
       {
-        "@id": "urn:ngm:class:influence-map",
-        "label": "Influence Map"
-      },
-      {
         "@id": "urn:ngm:class:navigation-mesh",
         "label": "Navigation Mesh"
       },
       {
-        "@id": "urn:ngm:class:npc-dialogue-system",
+        "@id": "urn:ngm:class:dialogue-system",
         "label": "NPC Dialogue System"
       },
       {
@@ -487,24 +482,12 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:content-authoring-pipeline",
+        "@id": "urn:ngm:class:content-creation-pipeline",
         "label": "Content Authoring Pipeline"
-      },
-      {
-        "@id": "urn:ngm:class:game-state-representation",
-        "label": "Game State Representation"
       },
       {
         "@id": "urn:ngm:class:player-modelling",
         "label": "Player Modelling"
-      },
-      {
-        "@id": "urn:ngm:class:real-time-constraints",
-        "label": "Real-Time Constraints"
-      },
-      {
-        "@id": "urn:ngm:class:spatial-reasoning",
-        "label": "Spatial Reasoning"
       },
       {
         "@id": "urn:ngm:class:game-engine",
@@ -517,78 +500,30 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:adaptive-tutoring",
-        "label": "Adaptive Tutoring"
-      },
-      {
-        "@id": "urn:ngm:class:automated-playtesting",
-        "label": "Automated Playtesting"
-      },
-      {
-        "@id": "urn:ngm:class:believable-npc-behaviour",
-        "label": "Believable NPC Behaviour"
-      },
-      {
-        "@id": "urn:ngm:class:dynamic-difficulty-adjustment",
+        "@id": "urn:ngm:class:difficulty-adjustment",
         "label": "Dynamic Difficulty Adjustment"
-      },
-      {
-        "@id": "urn:ngm:class:dynamic-narrative",
-        "label": "Dynamic Narrative"
       },
       {
         "@id": "urn:ngm:class:emergent-gameplay",
         "label": "Emergent Gameplay"
-      },
-      {
-        "@id": "urn:ngm:class:personalised-game-experience",
-        "label": "Personalised Game Experience"
-      },
-      {
-        "@id": "urn:ngm:class:procedural-replayability",
-        "label": "Procedural Replayability"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:a-search",
+        "@id": "urn:ngm:class:search-algorithm",
         "label": "A* Search"
-      },
-      {
-        "@id": "urn:ngm:class:alpha-zero",
-        "label": "AlphaZero"
       },
       {
         "@id": "urn:ngm:class:behaviour-tree",
         "label": "Behaviour Tree"
       },
       {
-        "@id": "urn:ngm:class:dreamer-v3",
-        "label": "DreamerV3"
-      },
-      {
-        "@id": "urn:ngm:class:impala",
-        "label": "IMPALA"
-      },
-      {
         "@id": "urn:ngm:class:mu-zero",
         "label": "MuZero"
       },
       {
-        "@id": "urn:ngm:class:perlin-noise",
-        "label": "Perlin Noise"
-      },
-      {
-        "@id": "urn:ngm:class:proximal-policy-optimization",
+        "@id": "urn:ngm:class:proximal-policy-optimisation",
         "label": "Proximal Policy Optimization"
-      },
-      {
-        "@id": "urn:ngm:class:recast-navmesh",
-        "label": "Recast Navmesh"
-      },
-      {
-        "@id": "urn:ngm:class:simplex-noise",
-        "label": "Simplex Noise"
       },
       {
         "@id": "urn:ngm:class:utility-ai",
@@ -605,24 +540,12 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:domain-randomization",
-        "label": "Domain Randomization"
-      },
-      {
         "@id": "urn:ngm:class:markov-decision-process",
         "label": "Markov Decision Process"
       },
       {
-        "@id": "urn:ngm:class:partially-observable-mdp",
-        "label": "Partially Observable MDP"
-      },
-      {
         "@id": "urn:ngm:class:reward-shaping",
         "label": "Reward Shaping"
-      },
-      {
-        "@id": "urn:ngm:class:self-play",
-        "label": "Self-Play"
       },
       {
         "@id": "urn:ngm:class:curriculum-learning",
@@ -639,28 +562,8 @@ public:: true
         "label": "Computational Creativity"
       },
       {
-        "@id": "urn:ngm:class:esports",
-        "label": "Esports"
-      },
-      {
-        "@id": "urn:ngm:class:game-analytics",
-        "label": "Game Analytics"
-      },
-      {
-        "@id": "urn:ngm:class:game-user-research",
-        "label": "Game User Research"
-      },
-      {
         "@id": "urn:ngm:class:player-modelling",
         "label": "Player Modelling"
-      },
-      {
-        "@id": "urn:ngm:class:speedrunning",
-        "label": "Speedrunning"
-      },
-      {
-        "@id": "urn:ngm:class:twitch-plays",
-        "label": "Twitch Plays"
       },
       {
         "@id": "urn:ngm:class:ai-safety",
@@ -673,22 +576,6 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:bevy",
-        "label": "Bevy"
-      },
-      {
-        "@id": "urn:ngm:class:convai",
-        "label": "Convai"
-      },
-      {
-        "@id": "urn:ngm:class:cry-engine",
-        "label": "CryEngine"
-      },
-      {
-        "@id": "urn:ngm:class:game-maker",
-        "label": "GameMaker"
-      },
-      {
         "@id": "urn:ngm:class:godot",
         "label": "Godot"
       },
@@ -697,7 +584,7 @@ public:: true
         "label": "Inworld AI"
       },
       {
-        "@id": "urn:ngm:class:nvidia-corporation-ace",
+        "@id": "urn:ngm:class:nvidia-corporation",
         "label": "NVIDIA ACE"
       },
       {
@@ -705,7 +592,7 @@ public:: true
         "label": "Roblox"
       },
       {
-        "@id": "urn:ngm:class:unity-ml-agents",
+        "@id": "urn:ngm:class:unity",
         "label": "Unity ML-Agents"
       },
       {
@@ -715,20 +602,8 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:aaai-aiide",
-        "label": "AAAI AIIDE"
-      },
-      {
-        "@id": "urn:ngm:class:fdg-conference",
-        "label": "FDG Conference"
-      },
-      {
-        "@id": "urn:ngm:class:ieee-conference-on-games",
+        "@id": "urn:ngm:class:ieee",
         "label": "IEEE Conference on Games"
-      },
-      {
-        "@id": "urn:ngm:class:igda-ai-special-interest-group",
-        "label": "IGDA AI Special Interest Group"
       },
       {
         "@id": "urn:ngm:class:khronos-gl-tf",

@@ -135,10 +135,6 @@ alias:: StateChannel
       {
         "@id": "urn:ngm:class:smart-contract",
         "label": "Smart Contract"
-      },
-      {
-        "@id": "urn:ngm:class:collateral-lockup",
-        "label": "Collateral Lockup"
       }
     ],
     "enables": [
@@ -147,7 +143,7 @@ alias:: StateChannel
         "label": "Micropayments"
       },
       {
-        "@id": "urn:ngm:class:instant-finality",
+        "@id": "urn:ngm:class:finality",
         "label": "Instant Finality"
       },
       {
@@ -171,7 +167,7 @@ alias:: StateChannel
         "label": "Off-Chain Scaling"
       },
       {
-        "@id": "urn:ngm:class:peer-to-peer-protocol",
+        "@id": "urn:ngm:class:peerto-peer-protocol",
         "label": "Peer-to-Peer Protocol"
       }
     ],
@@ -183,10 +179,6 @@ alias:: StateChannel
       {
         "@id": "urn:ngm:class:raiden-network",
         "label": "Raiden Network"
-      },
-      {
-        "@id": "urn:ngm:class:perun",
-        "label": "Perun"
       }
     ],
     "supports": [
@@ -195,7 +187,7 @@ alias:: StateChannel
         "label": "Decentralised Finance"
       },
       {
-        "@id": "urn:ngm:class:iot-machine-payments",
+        "@id": "urn:ngm:class:machine-to-machine-payments",
         "label": "IoT Machine Payments"
       }
     ],
@@ -217,10 +209,6 @@ alias:: StateChannel
       {
         "@id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
-      },
-      {
-        "@id": "urn:ngm:class:real-time-data-stream",
-        "label": "Real-Time Data Stream"
       }
     ],
     "relatedTo": [
@@ -233,7 +221,7 @@ alias:: StateChannel
         "label": "Zero-Knowledge Proof"
       },
       {
-        "@id": "urn:ngm:class:multiparty-computation",
+        "@id": "urn:ngm:class:secure-multi-party-computation",
         "label": "Multiparty Computation"
       }
     ]

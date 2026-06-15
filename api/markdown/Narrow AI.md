@@ -65,15 +65,11 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:image-classifier",
-        "label": "Image Classifier"
-      },
-      {
         "@id": "urn:ngm:class:recommendation-engine",
         "label": "Recommendation Engine"
       },
       {
-        "@id": "urn:ngm:class:speech-recogniser",
+        "@id": "urn:ngm:class:automatic-speech-recognition",
         "label": "Speech Recogniser"
       }
     ],
@@ -107,7 +103,7 @@ public:: true
         "label": "Natural Language Processing"
       },
       {
-        "@id": "urn:ngm:class:autonomous-systems",
+        "@id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
       }
     ],
@@ -147,7 +143,7 @@ public:: true
         "label": "Artificial General Intelligence"
       },
       {
-        "@id": "urn:ngm:class:artificial-superintelligence",
+        "@id": "urn:ngm:class:superintelligence",
         "label": "Artificial Superintelligence"
       }
     ],

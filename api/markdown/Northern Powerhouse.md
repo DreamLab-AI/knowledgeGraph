@@ -69,24 +69,6 @@ public:: true
       {
         "@id": "urn:ngm:class:uk-industrial-strategy",
         "label": "UK Industrial Strategy"
-      },
-      {
-        "@id": "urn:ngm:class:levelling-up",
-        "label": "Levelling Up"
-      }
-    ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:northern-powerhouse-rail",
-        "label": "Northern Powerhouse Rail"
-      },
-      {
-        "@id": "urn:ngm:class:mayoral-combined-authority",
-        "label": "Mayoral Combined Authority"
-      },
-      {
-        "@id": "urn:ngm:class:science-and-innovation-audit",
-        "label": "Science and Innovation Audit"
       }
     ],
     "enables": [
@@ -97,34 +79,12 @@ public:: true
       {
         "@id": "urn:ngm:class:advanced-manufacturing",
         "label": "Advanced Manufacturing"
-      },
-      {
-        "@id": "urn:ngm:class:inward-investment",
-        "label": "Inward Investment"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:fiscal-devolution",
-        "label": "Fiscal Devolution"
-      },
-      {
         "@id": "urn:ngm:class:transport-infrastructure",
         "label": "Transport Infrastructure"
-      }
-    ],
-    "uses": [
-      {
-        "@id": "urn:ngm:class:city-deal",
-        "label": "City Deal"
-      },
-      {
-        "@id": "urn:ngm:class:freeport",
-        "label": "Freeport"
-      },
-      {
-        "@id": "urn:ngm:class:enterprise-zone",
-        "label": "Enterprise Zone"
       }
     ],
     "supports": [
@@ -133,21 +93,13 @@ public:: true
         "label": "Research and Development"
       },
       {
-        "@id": "urn:ngm:class:skills-development",
+        "@id": "urn:ngm:class:workforce-development",
         "label": "Skills Development"
-      },
-      {
-        "@id": "urn:ngm:class:clean-energy-transition",
-        "label": "Clean Energy Transition"
       }
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:golden-triangle",
-        "label": "Golden Triangle"
-      },
-      {
-        "@id": "urn:ngm:class:north-south-divide",
+        "@id": "urn:ngm:class:digital-divide",
         "label": "North-South Divide"
       }
     ],
@@ -163,19 +115,11 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:devolution",
-        "label": "Devolution"
-      },
-      {
-        "@id": "urn:ngm:class:regional-development-agency",
-        "label": "Regional Development Agency"
-      },
-      {
         "@id": "urn:ngm:class:productivity-gap",
         "label": "Productivity Gap"
       },
       {
-        "@id": "urn:ngm:class:regional-economic-policy",
+        "@id": "urn:ngm:class:economic-model",
         "label": "Regional Economic Policy"
       }
     ]

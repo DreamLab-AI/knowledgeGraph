@@ -64,29 +64,17 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:laser-emitter",
-        "label": "Laser Emitter"
-      },
-      {
-        "@id": "urn:ngm:class:photodetector",
-        "label": "Photodetector"
-      },
-      {
         "@id": "urn:ngm:class:time-of-flight-sensor",
         "label": "Time-of-Flight Sensor"
-      },
-      {
-        "@id": "urn:ngm:class:rotating-mirror",
-        "label": "Rotating Mirror"
       }
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:autonomous-vehicle-sensor-suite",
+        "@id": "urn:ngm:class:sensor-suite",
         "label": "Autonomous Vehicle Sensor Suite"
       },
       {
-        "@id": "urn:ngm:class:robotic-perception-system",
+        "@id": "urn:ngm:class:perception-system",
         "label": "Robotic Perception System"
       }
     ],
@@ -110,7 +98,7 @@ public:: true
         "label": "Obstacle Detection"
       },
       {
-        "@id": "urn:ngm:class:3d-scene-reconstruction",
+        "@id": "urn:ngm:class:3-d-scene-reconstruction",
         "label": "3D Scene Reconstruction"
       },
       {
@@ -120,22 +108,14 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:laser-pulse-technology",
-        "label": "Laser Pulse Technology"
-      },
-      {
-        "@id": "urn:ngm:class:time-of-flight-measurement",
+        "@id": "urn:ngm:class:time-of-flight-sensor",
         "label": "Time-of-Flight Measurement"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:infrared-laser",
+        "@id": "urn:ngm:class:infrared-light-source",
         "label": "Infrared Laser"
-      },
-      {
-        "@id": "urn:ngm:class:avalanche-photodiode",
-        "label": "Avalanche Photodiode"
       }
     ],
     "supports": [

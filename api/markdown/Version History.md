@@ -23,15 +23,23 @@ public:: true
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:dc-workspace-tools", "label": "Workspace Tools"}
+    {
+      "@id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    }
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:change-audit-trail", "label": "Change Audit Trail"},
-      {"@id": "urn:ngm:class:rollback", "label": "Rollback"}
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Change Audit Trail"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:live-co-authoring", "label": "Live Co-authoring"}
+      {
+        "@id": "urn:ngm:class:live-co-authoring",
+        "label": "Live Co-authoring"
+      }
     ]
   },
   "quality": 0.7

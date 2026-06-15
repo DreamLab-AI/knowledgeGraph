@@ -23,53 +23,136 @@ public:: true
   "definition": "A Multi-Agent System (MAS) is a computational framework composed of multiple interacting autonomous agents that perceive their environment and act to achieve individual or collective goals. Each agent maintains local knowledge, reasoning capabilities, and the ability to communicate with peers, enabling emergent collective intelligence without centralised control. MAS architectures address problems that are too complex, distributed, or dynamic for monolithic solutions, drawing on distributed AI, game theory, and coordination theory. The paradigm spans reactive swarm systems, deliberative BDI agents, and modern LLM-orchestrated agentic pipelines.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},
-    {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"}
+    {
+      "@id": "urn:ngm:class:multi-agent-system",
+      "label": "Multi-Agent System"
+    },
+    {
+      "@id": "urn:ngm:class:multi-agent-systems",
+      "label": "Multi-Agent Systems"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
-      {"@id": "urn:ngm:class:agent-communication-language", "label": "Agent Communication Language"},
-      {"@id": "urn:ngm:class:coordination-mechanism", "label": "Coordination Mechanism"}
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "@id": "urn:ngm:class:agent-communication-language",
+        "label": "Agent Communication Language"
+      },
+      {
+        "@id": "urn:ngm:class:coordination-mechanisms",
+        "label": "Coordination Mechanism"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:communication-protocol", "label": "Communication Protocol"},
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"}
+      {
+        "@id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralized-swarm-control", "label": "Decentralized Swarm Control"},
-      {"@id": "urn:ngm:class:participant-coordination", "label": "Participant Coordination"},
-      {"@id": "urn:ngm:class:emergent-behaviour", "label": "Emergent Behaviour"},
-      {"@id": "urn:ngm:class:collective-intelligence", "label": "Collective Intelligence"}
+      {
+        "@id": "urn:ngm:class:decentralized-swarm-control",
+        "label": "Decentralized Swarm Control"
+      },
+      {
+        "@id": "urn:ngm:class:participant-coordination",
+        "label": "Participant Coordination"
+      },
+      {
+        "@id": "urn:ngm:class:emergent-behavior",
+        "label": "Emergent Behaviour"
+      },
+      {
+        "@id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:belief-desire-intention", "label": "Belief-Desire-Intention"},
-      {"@id": "urn:ngm:class:contract-net-protocol", "label": "Contract Net Protocol"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:belief-desire-intention",
+        "label": "Belief-Desire-Intention"
+      },
+      {
+        "@id": "urn:ngm:class:contract-net-protocol",
+        "label": "Contract Net Protocol"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:fipa-standard", "label": "FIPA Standard"},
-      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"}
+      {
+        "@id": "urn:ngm:class:fipa-standard",
+        "label": "FIPA Standard"
+      },
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:multi-agent-reinforcement-learning", "label": "Multi-Agent Reinforcement Learning"},
-      {"@id": "urn:ngm:class:agentic-pipeline", "label": "Agentic Pipeline"}
+      {
+        "@id": "urn:ngm:class:multi-agent-reinforcement-learning",
+        "label": "Multi-Agent Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-pipeline",
+        "label": "Agentic Pipeline"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:centralised-control-system", "label": "Centralised Control System"},
-      {"@id": "urn:ngm:class:monolithic-ai", "label": "Monolithic AI"}
+      {
+        "@id": "urn:ngm:class:control-system",
+        "label": "Centralised Control System"
+      },
+      {
+        "@id": "urn:ngm:class:monolithic-ai",
+        "label": "Monolithic AI"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:swarm-robotics", "label": "Swarm Robotics"},
-      {"@id": "urn:ngm:class:distributed-artificial-intelligence", "label": "Distributed Artificial Intelligence"},
-      {"@id": "urn:ngm:class:agent-based-modelling", "label": "Agent-Based Modelling"}
+      {
+        "@id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-artificial-intelligence",
+        "label": "Distributed Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:agent-based-modelling",
+        "label": "Agent-Based Modelling"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"}
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      }
     ]
   },
   "quality": 0.74,

@@ -42,56 +42,124 @@ alias:: SoftwareEngineering
   "domain": "infrastructure",
   "maturity": "mature",
   "subClassOf": [
-    {"@id": "urn:ngm:class:systems-engineering", "label": "Systems Engineering"}
+    {
+      "@id": "urn:ngm:class:systems-engineering",
+      "label": "Systems Engineering"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:software-architecture", "label": "Software Architecture"},
-      {"@id": "urn:ngm:class:software-testing", "label": "Software Testing"},
-      {"@id": "urn:ngm:class:requirements-engineering", "label": "Requirements Engineering"},
-      {"@id": "urn:ngm:class:devops", "label": "DevOps"},
-      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"},
-      {"@id": "urn:ngm:class:software-design-patterns", "label": "Software Design Patterns"}
+      {
+        "@id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      },
+      {
+        "@id": "urn:ngm:class:requirements-engineering",
+        "label": "Requirements Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
-      {"@id": "urn:ngm:class:agile-methodology", "label": "Agile Methodology"},
-      {"@id": "urn:ngm:class:code-review", "label": "Code Review"}
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Methodology"
+      },
+      {
+        "@id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:system-integration", "label": "System Integration"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:platform-engineering", "label": "Platform Engineering"},
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"}
+      {
+        "@id": "urn:ngm:class:system-integration",
+        "label": "System Integration"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:platform-engineering",
+        "label": "Platform Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:containerisation", "label": "Containerisation"},
-      {"@id": "urn:ngm:class:infrastructure-as-code", "label": "Infrastructure as Code"},
-      {"@id": "urn:ngm:class:observability", "label": "Observability"},
-      {"@id": "urn:ngm:class:static-analysis", "label": "Static Analysis"}
-    ],
-    "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-12207", "label": "ISO/IEC 12207"},
-      {"@id": "urn:ngm:class:ieee-std-730", "label": "IEEE Std 730"},
-      {"@id": "urn:ngm:class:swebok", "label": "SWEBOK"}
+      {
+        "@id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "@id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:computer-science", "label": "Computer Science"},
-      {"@id": "urn:ngm:class:hardware-engineering", "label": "Hardware Engineering"}
+      {
+        "@id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning-engineering", "label": "Machine Learning Engineering"},
-      {"@id": "urn:ngm:class:security-engineering", "label": "Security Engineering"}
+      {
+        "@id": "urn:ngm:class:machine-learning-engineering",
+        "label": "Machine Learning Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:security-engineering",
+        "label": "Security Engineering"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:technical-debt", "label": "Technical Debt"},
-      {"@id": "urn:ngm:class:domain-driven-design", "label": "Domain-Driven Design"},
-      {"@id": "urn:ngm:class:test-driven-development", "label": "Test-Driven Development"},
-      {"@id": "urn:ngm:class:refactoring", "label": "Refactoring"}
+      {
+        "@id": "urn:ngm:class:technical-debt",
+        "label": "Technical Debt"
+      },
+      {
+        "@id": "urn:ngm:class:domain-driven-design",
+        "label": "Domain-Driven Design"
+      },
+      {
+        "@id": "urn:ngm:class:test-driven-development",
+        "label": "Test-Driven Development"
+      },
+      {
+        "@id": "urn:ngm:class:refactoring",
+        "label": "Refactoring"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:software-development", "label": "Software Development"}
+    {
+      "@id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    }
   ],
   "quality": 0.72,
   "provenance": {

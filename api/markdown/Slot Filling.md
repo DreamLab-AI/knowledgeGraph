@@ -23,54 +23,127 @@ public:: true
   "definition": "Slot filling is a natural language processing task in which a system extracts and populates predefined semantic fields (slots) from user utterances within a task-oriented dialogue context, enabling the system to gather the structured information required to fulfil a user request. It operates alongside intent classification to transform free-form text into actionable structured representations.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:information-extraction", "label": "Information Extraction"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:information-extraction",
+      "label": "Information Extraction"
+    }
+  ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:intent-classification", "label": "Intent Classification"},
-      {"@id": "urn:ngm:class:named-entity-recognition", "label": "Named Entity Recognition"},
-      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"},
-      {"@id": "urn:ngm:class:sequence-labelling", "label": "Sequence Labelling"}
+      {
+        "@id": "urn:ngm:class:intent-classification",
+        "label": "Intent Classification"
+      },
+      {
+        "@id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:sequence-labelling",
+        "label": "Sequence Labelling"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:dialogue-system", "label": "Dialogue System"},
-      {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"},
-      {"@id": "urn:ngm:class:task-oriented-dialogue", "label": "Task-Oriented Dialogue"},
-      {"@id": "urn:ngm:class:voice-assistant", "label": "Voice Assistant"},
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}
+      {
+        "@id": "urn:ngm:class:dialogue-system",
+        "label": "Dialogue System"
+      },
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "@id": "urn:ngm:class:task-oriented-dialogue",
+        "label": "Task-Oriented Dialogue"
+      },
+      {
+        "@id": "urn:ngm:class:voice-assistant",
+        "label": "Voice Assistant"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:pretrained-language-model", "label": "Pretrained Language Model"},
-      {"@id": "urn:ngm:class:semantic-frame", "label": "Semantic Frame"},
-      {"@id": "urn:ngm:class:bio-tagging", "label": "BIO Tagging"}
+      {
+        "@id": "urn:ngm:class:pretrained-model",
+        "label": "Pretrained Language Model"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:bert", "label": "BERT"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:joint-training", "label": "Joint Training"}
+      {
+        "@id": "urn:ngm:class:bert",
+        "label": "BERT"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:question-answering", "label": "Question Answering"},
-      {"@id": "urn:ngm:class:knowledge-base-population", "label": "Knowledge Base Population"}
+      {
+        "@id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:open-domain-information-extraction", "label": "Open-Domain Information Extraction"},
-      {"@id": "urn:ngm:class:relation-extraction", "label": "Relation Extraction"}
+      {
+        "@id": "urn:ngm:class:information-extraction",
+        "label": "Open-Domain Information Extraction"
+      },
+      {
+        "@id": "urn:ngm:class:relation-extraction",
+        "label": "Relation Extraction"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:dialogue-state-tracking", "label": "Dialogue State Tracking"},
-      {"@id": "urn:ngm:class:natural-language-understanding", "label": "Natural Language Understanding"},
-      {"@id": "urn:ngm:class:semantic-parsing", "label": "Semantic Parsing"},
-      {"@id": "urn:ngm:class:coreference-resolution", "label": "Coreference Resolution"},
-      {"@id": "urn:ngm:class:few-shot-learning", "label": "Few-Shot Learning"}
+      {
+        "@id": "urn:ngm:class:dialogue-state-tracking",
+        "label": "Dialogue State Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-parsing",
+        "label": "Semantic Parsing"
+      },
+      {
+        "@id": "urn:ngm:class:coreference-resolution",
+        "label": "Coreference Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:few-shot-learning",
+        "label": "Few-Shot Learning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotic-process-automation", "label": "Robotic Process Automation"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:semantic-slot-filling", "label": "Semantic Slot Filling"},
-    {"@id": "urn:ngm:class:frame-slot-filling", "label": "Frame Slot Filling"}
+    {
+      "@id": "urn:ngm:class:semantic-slot-filling",
+      "label": "Semantic Slot Filling"
+    },
+    {
+      "@id": "urn:ngm:class:frame-slot-filling",
+      "label": "Frame Slot Filling"
+    }
   ],
   "quality": 0.75,
   "provenance": {

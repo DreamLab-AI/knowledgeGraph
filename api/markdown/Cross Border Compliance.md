@@ -518,28 +518,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:compliance-architecture",
-        "label": "Compliance Architecture"
-      },
-      {
-        "@id": "urn:ngm:class:data-transfer-mechanism",
-        "label": "Data Transfer Mechanism"
-      },
-      {
-        "@id": "urn:ngm:class:enforcement-liaison",
-        "label": "Enforcement Liaison"
-      },
-      {
-        "@id": "urn:ngm:class:jurisdictional-mapping",
-        "label": "Jurisdictional Mapping"
-      },
-      {
         "@id": "urn:ngm:class:legal-entity-structure",
         "label": "Legal Entity Structure"
-      },
-      {
-        "@id": "urn:ngm:class:regulatory-monitoring",
-        "label": "Regulatory Monitoring"
       },
       {
         "@id": "urn:ngm:class:transfer-impact-assessment",
@@ -552,20 +532,12 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:data-residency-infrastructure",
-        "label": "Data Residency Infrastructure"
-      },
-      {
-        "@id": "urn:ngm:class:kyc-aml-framework",
+        "@id": "urn:ngm:class:kyc-aml",
         "label": "KYC AML Framework"
       },
       {
         "@id": "urn:ngm:class:legal-expertise",
         "label": "Legal Expertise"
-      },
-      {
-        "@id": "urn:ngm:class:regulatory-intelligence",
-        "label": "Regulatory Intelligence"
       },
       {
         "@id": "urn:ngm:class:sanctions-screening",
@@ -594,25 +566,13 @@ public:: true
         "label": "Financial Crime Prevention"
       },
       {
-        "@id": "urn:ngm:class:global-market-access",
-        "label": "Global Market Access"
-      },
-      {
-        "@id": "urn:ngm:class:level-playing-field",
-        "label": "Level Playing Field"
-      },
-      {
-        "@id": "urn:ngm:class:regulatory-trust",
-        "label": "Regulatory Trust"
-      },
-      {
         "@id": "urn:ngm:class:consumer-protection",
         "label": "Consumer Protection"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:basel-iii-standards",
+        "@id": "urn:ngm:class:basel-iii",
         "label": "Basel III Standards"
       },
       {
@@ -624,27 +584,15 @@ public:: true
         "label": "FATF Travel Rule"
       },
       {
-        "@id": "urn:ngm:class:gdpr-standard-contractual-clauses",
+        "@id": "urn:ngm:class:standard-contractual-clauses",
         "label": "GDPR Standard Contractual Clauses"
-      },
-      {
-        "@id": "urn:ngm:class:mi-ca-passporting",
-        "label": "MiCA Passporting"
       },
       {
         "@id": "urn:ngm:class:oecd-ai-principles",
         "label": "OECD AI Principles"
-      },
-      {
-        "@id": "urn:ngm:class:oecd-carf-reporting",
-        "label": "OECD CARF Reporting"
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:adequacy-decisions",
-        "label": "Adequacy Decisions"
-      },
       {
         "@id": "urn:ngm:class:binding-corporate-rules",
         "label": "Binding Corporate Rules"
@@ -654,12 +602,8 @@ public:: true
         "label": "IVMS 101"
       },
       {
-        "@id": "urn:ngm:class:legal-entity-architecture",
+        "@id": "urn:ngm:class:legal-entity-structure",
         "label": "Legal Entity Architecture"
-      },
-      {
-        "@id": "urn:ngm:class:reg-tech",
-        "label": "RegTech"
       },
       {
         "@id": "urn:ngm:class:risk-based-approach",
@@ -684,28 +628,8 @@ public:: true
         "label": "Data Sovereignty"
       },
       {
-        "@id": "urn:ngm:class:digital-trade-agreements",
-        "label": "Digital Trade Agreements"
-      },
-      {
-        "@id": "urn:ngm:class:extraterritorial-jurisdiction",
-        "label": "Extraterritorial Jurisdiction"
-      },
-      {
-        "@id": "urn:ngm:class:mutual-legal-assistance",
-        "label": "Mutual Legal Assistance"
-      },
-      {
-        "@id": "urn:ngm:class:oecd-carf",
-        "label": "OECD CARF"
-      },
-      {
         "@id": "urn:ngm:class:regulatory-harmonisation",
         "label": "Regulatory Harmonisation"
-      },
-      {
-        "@id": "urn:ngm:class:schrems-ii",
-        "label": "Schrems II"
       }
     ],
     "supports": [
@@ -714,7 +638,7 @@ public:: true
         "label": "Anti-Money Laundering"
       },
       {
-        "@id": "urn:ngm:class:data-protection-rights",
+        "@id": "urn:ngm:class:data-protection",
         "label": "Data Protection Rights"
       },
       {
@@ -726,7 +650,7 @@ public:: true
         "label": "Financial Stability"
       },
       {
-        "@id": "urn:ngm:class:corporate-tax-compliance-framework-transparency",
+        "@id": "urn:ngm:class:corporate-tax-compliance-framework",
         "label": "Tax Transparency"
       },
       {
@@ -740,24 +664,12 @@ public:: true
         "label": "Basel Committee"
       },
       {
-        "@id": "urn:ngm:class:edpb",
-        "label": "EDPB"
-      },
-      {
-        "@id": "urn:ngm:class:eu-commission",
-        "label": "EU Commission"
-      },
-      {
         "@id": "urn:ngm:class:fatf",
         "label": "FATF"
       },
       {
         "@id": "urn:ngm:class:financial-stability-board",
         "label": "Financial Stability Board"
-      },
-      {
-        "@id": "urn:ngm:class:iapp",
-        "label": "IAPP"
       },
       {
         "@id": "urn:ngm:class:ico",

@@ -37,55 +37,133 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:edtech", "label": "EdTech"},
-    {"@id": "urn:ngm:class:instructional-technology", "label": "Instructional Technology"},
-    {"@id": "urn:ngm:class:e-learning", "label": "E-Learning"}
+    {
+      "@id": "urn:ngm:class:edtech",
+      "label": "EdTech"
+    },
+    {
+      "@id": "urn:ngm:class:instructional-technology",
+      "label": "Instructional Technology"
+    },
+    {
+      "@id": "urn:ngm:class:e-learning",
+      "label": "E-Learning"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:learning-management-system", "label": "Learning Management System"},
-      {"@id": "urn:ngm:class:intelligent-tutoring-system", "label": "Intelligent Tutoring System"},
-      {"@id": "urn:ngm:class:adaptive-learning", "label": "Adaptive Learning"},
-      {"@id": "urn:ngm:class:learning-analytics", "label": "Learning Analytics"},
-      {"@id": "urn:ngm:class:automated-assessment", "label": "Automated Assessment"}
+      {
+        "@id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      },
+      {
+        "@id": "urn:ngm:class:intelligent-tutoring-system",
+        "label": "Intelligent Tutoring System"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-learning",
+        "label": "Adaptive Learning"
+      },
+      {
+        "@id": "urn:ngm:class:learning-analytics",
+        "label": "Learning Analytics"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:immersive-learning", "label": "Immersive Learning"},
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
-      {"@id": "urn:ngm:class:recommendation-systems", "label": "Recommendation Systems"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      },
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:personalised-learning", "label": "Personalised Learning"},
-      {"@id": "urn:ngm:class:collaborative-learning", "label": "Collaborative Learning"},
-      {"@id": "urn:ngm:class:remote-education", "label": "Remote Education"},
-      {"@id": "urn:ngm:class:competency-based-education", "label": "Competency-Based Education"}
+      {
+        "@id": "urn:ngm:class:personalised-learning",
+        "label": "Personalised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-learning",
+        "label": "Collaborative Learning"
+      },
+      {
+        "@id": "urn:ngm:class:remote-education",
+        "label": "Remote Education"
+      },
+      {
+        "@id": "urn:ngm:class:competency-based-education",
+        "label": "Competency-Based Education"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-privacy", "label": "Data Privacy"},
-      {"@id": "urn:ngm:class:digital-infrastructure", "label": "Digital Infrastructure"},
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}
+      {
+        "@id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:cognitive-science", "label": "Cognitive Science"},
-      {"@id": "urn:ngm:class:gamification", "label": "Gamification"},
-      {"@id": "urn:ngm:class:open-educational-resources", "label": "Open Educational Resources"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "@id": "urn:ngm:class:gamification",
+        "label": "Gamification"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ieee-learning-technology", "label": "IEEE Learning Technology Standards Committee"},
-      {"@id": "urn:ngm:class:scorm", "label": "SCORM"},
-      {"@id": "urn:ngm:class:xapi", "label": "xAPI"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:traditional-classroom-instruction", "label": "Traditional Classroom Instruction"}
+      {
+        "@id": "urn:ngm:class:scorm",
+        "label": "SCORM"
+      },
+      {
+        "@id": "urn:ngm:class:xapi",
+        "label": "xAPI"
+      }
     ]
   },
   "quality": 0.74,

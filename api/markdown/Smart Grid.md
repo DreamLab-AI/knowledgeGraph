@@ -23,59 +23,140 @@ public:: true
   "definition": "A smart grid is a modernised electricity distribution and transmission network that integrates digital communication, real-time sensing, automated control, and distributed intelligence to improve efficiency, reliability, resilience, and sustainability relative to the traditional centralised grid. It enables bidirectional power and information flows, accommodating distributed generation from renewable sources, battery energy storage systems, demand-side flexibility, and vehicle-to-grid interactions. Advanced metering infrastructure, distribution automation, phasor measurement units, and AI-driven optimisation allow operators to balance supply and demand dynamically across thousands of grid-edge resources. Smart grids are a foundational component of low-carbon energy infrastructure and are governed by a set of interoperability standards spanning communications, cybersecurity, and market protocols.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cyber-physical-systems",
+      "label": "Cyber Physical Systems"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:intelligent-grid", "label": "Intelligent Grid"},
-    {"@id": "urn:ngm:class:advanced-metering-infrastructure", "label": "Advanced Metering Infrastructure"}
+    {
+      "@id": "urn:ngm:class:intelligent-grid",
+      "label": "Intelligent Grid"
+    },
+    {
+      "@id": "urn:ngm:class:advanced-metering-infrastructure",
+      "label": "Advanced Metering Infrastructure"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:advanced-metering-infrastructure", "label": "Advanced Metering Infrastructure"},
-      {"@id": "urn:ngm:class:distribution-automation", "label": "Distribution Automation"},
-      {"@id": "urn:ngm:class:phasor-measurement-unit", "label": "Phasor Measurement Unit"},
-      {"@id": "urn:ngm:class:energy-management-system", "label": "Energy Management System"}
+      {
+        "@id": "urn:ngm:class:advanced-metering-infrastructure",
+        "label": "Advanced Metering Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:energy-management",
+        "label": "Energy Management System"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:io-t-sensor-network", "label": "IoT Sensor Network"},
-      {"@id": "urn:ngm:class:real-time-monitoring", "label": "Real-Time Monitoring"},
-      {"@id": "urn:ngm:class:demand-response", "label": "Demand Response"},
-      {"@id": "urn:ngm:class:scada", "label": "SCADA"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:io-t-sensor-network",
+        "label": "IoT Sensor Network"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:demand-response",
+        "label": "Demand Response"
+      },
+      {
+        "@id": "urn:ngm:class:scada",
+        "label": "SCADA"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:renewable-energy-certificates", "label": "Renewable Energy Certificates"},
-      {"@id": "urn:ngm:class:energy-and-power", "label": "Energy and Power"},
-      {"@id": "urn:ngm:class:vehicle-to-grid", "label": "Vehicle-to-Grid"},
-      {"@id": "urn:ngm:class:peer-to-peer-energy-trading", "label": "Peer-to-Peer Energy Trading"}
+      {
+        "@id": "urn:ngm:class:renewable-energy-certificates",
+        "label": "Renewable Energy Certificates"
+      },
+      {
+        "@id": "urn:ngm:class:energy-and-power",
+        "label": "Energy and Power"
+      },
+      {
+        "@id": "urn:ngm:class:vehicle-to-grid",
+        "label": "Vehicle-to-Grid"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-energy-trading",
+        "label": "Peer-to-Peer Energy Trading"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:telecommunications-infrastructure", "label": "Telecommunications Infrastructure"},
-      {"@id": "urn:ngm:class:power-management", "label": "Power Management"}
+      {
+        "@id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-energy-scarcity", "label": "AI Energy Scarcity"},
-      {"@id": "urn:ngm:class:carbon-markets", "label": "Carbon Markets"},
-      {"@id": "urn:ngm:class:distributed-energy-resources", "label": "Distributed Energy Resources"}
+      {
+        "@id": "urn:ngm:class:ai-energy-scarcity",
+        "label": "AI Energy Scarcity"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-markets",
+        "label": "Carbon Markets"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iec-61968", "label": "IEC 61968"},
-      {"@id": "urn:ngm:class:ieee-2030", "label": "IEEE 2030"},
-      {"@id": "urn:ngm:class:nist-smart-grid-framework", "label": "NIST Smart Grid Framework"}
+      {
+        "@id": "urn:ngm:class:ieee",
+        "label": "IEEE 2030"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"},
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ]
   },
   "quality": 0.72,

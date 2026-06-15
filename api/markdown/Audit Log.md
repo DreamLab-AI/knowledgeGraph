@@ -23,57 +23,137 @@ public:: true
   "definition": "An audit log is an immutable, chronologically ordered record of discrete system events that captures who performed an action, what action was performed, on which resource, at what time, and from what source context, providing an authoritative evidence trail for security investigation, regulatory compliance, and forensic analysis. Each entry is structured with a timestamp, actor identity, event type, affected object identifier, outcome status, and contextual metadata. Audit logs are foundational to accountability in information systems, distinguished from operational logs by their emphasis on human-actionable accountability and legal evidentiary weight rather than system diagnostics. In high-assurance environments, entries are cryptographically chained so that deletion or modification of any record invalidates all subsequent hashes, making tampering detectable.",
   "domain": "security",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:audit-trail",
+      "label": "Audit Trail"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:audit-logging", "label": "Audit Logging"},
-      {"@id": "urn:ngm:class:compliance-audit-trail", "label": "Compliance Audit Trail"},
-      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"},
-      {"@id": "urn:ngm:class:non-repudiation", "label": "Non-Repudiation"},
-      {"@id": "urn:ngm:class:forensic-analysis", "label": "Forensic Analysis"},
-      {"@id": "urn:ngm:class:siem", "label": "SIEM"}
+      {
+        "@id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-audit-trail",
+        "label": "Compliance Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      },
+      {
+        "@id": "urn:ngm:class:forensic-analysis",
+        "label": "Forensic Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:siem",
+        "label": "SIEM"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"},
-      {"@id": "urn:ngm:class:information-security", "label": "Information Security"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"},
-      {"@id": "urn:ngm:class:threat-detection", "label": "Threat Detection"}
+      {
+        "@id": "urn:ngm:class:compliance-framework",
+        "label": "Compliance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "@id": "urn:ngm:class:threat-detection",
+        "label": "Threat Detection"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:event-sourcing", "label": "Event Sourcing"},
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:append-only-data-structure", "label": "Append-Only Data Structure"}
+      {
+        "@id": "urn:ngm:class:event-sourcing",
+        "label": "Event Sourcing"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"},
-      {"@id": "urn:ngm:class:time-synchronisation", "label": "Time Synchronisation"},
-      {"@id": "urn:ngm:class:tamper-evident-storage", "label": "Tamper-Evident Storage"}
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:time-synchronisation",
+        "label": "Time Synchronisation"
+      },
+      {
+        "@id": "urn:ngm:class:tamper-evident-storage",
+        "label": "Tamper-Evident Storage"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:security-audit", "label": "Security Audit"},
-      {"@id": "urn:ngm:class:regulatory-reporting", "label": "Regulatory Reporting"},
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:operational-log", "label": "Operational Log"},
-      {"@id": "urn:ngm:class:debug-log", "label": "Debug Log"}
+      {
+        "@id": "urn:ngm:class:security-audit",
+        "label": "Security Audit"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:certificate-transparency", "label": "Certificate Transparency"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:certificate-transparency",
+        "label": "Certificate Transparency"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist-sp-800-92", "label": "NIST SP 800-92"},
-      {"@id": "urn:ngm:class:iso-27001", "label": "ISO 27001"},
-      {"@id": "urn:ngm:class:common-event-format", "label": "Common Event Format"}
+      {
+        "@id": "urn:ngm:class:nist",
+        "label": "NIST SP 800-92"
+      },
+      {
+        "@id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:audit-trail-record", "label": "Audit Trail Record"},
-    {"@id": "urn:ngm:class:security-event-log", "label": "Security Event Log"}
+    {
+      "@id": "urn:ngm:class:audit-trail-record",
+      "label": "Audit Trail Record"
+    },
+    {
+      "@id": "urn:ngm:class:security-event-log",
+      "label": "Security Event Log"
+    }
   ],
   "quality": 0.74,
   "provenance": {

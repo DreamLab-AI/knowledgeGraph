@@ -38,53 +38,111 @@ public:: true
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:data-science", "label": "Data Science"},
-      {"@id": "urn:ngm:class:scientific-computing", "label": "Scientific Computing"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:cpython", "label": "CPython"},
-      {"@id": "urn:ngm:class:python-standard-library", "label": "Python Standard Library"},
-      {"@id": "urn:ngm:class:python-package-index", "label": "Python Package Index"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:virtual-environment", "label": "Virtual Environment"},
-      {"@id": "urn:ngm:class:package-manager", "label": "Package Manager"}
+      {
+        "@id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      },
+      {
+        "@id": "urn:ngm:class:package-manager",
+        "label": "Package Manager"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:numpy", "label": "NumPy"},
-      {"@id": "urn:ngm:class:pandas", "label": "Pandas"},
-      {"@id": "urn:ngm:class:pytorch", "label": "PyTorch"},
-      {"@id": "urn:ngm:class:tensorflow", "label": "TensorFlow"},
-      {"@id": "urn:ngm:class:scikit-learn", "label": "Scikit-learn"},
-      {"@id": "urn:ngm:class:jupyter-notebook", "label": "Jupyter Notebook"}
+      {
+        "@id": "urn:ngm:class:numpy",
+        "label": "NumPy"
+      },
+      {
+        "@id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "label": "PyTorch"
+      },
+      {
+        "@id": "urn:ngm:class:tensorflow",
+        "label": "TensorFlow"
+      },
+      {
+        "@id": "urn:ngm:class:scikit-learn",
+        "label": "Scikit-learn"
+      },
+      {
+        "@id": "urn:ngm:class:jupyter-notebook",
+        "label": "Jupyter Notebook"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
-      {"@id": "urn:ngm:class:web-framework", "label": "Web Framework"},
-      {"@id": "urn:ngm:class:infrastructure-as-code", "label": "Infrastructure as Code"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:r-language", "label": "R Language"},
-      {"@id": "urn:ngm:class:julia-language", "label": "Julia Language"}
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:python-pytorch-deep-learning-stack", "label": "Python PyTorch Deep Learning Stack"},
-      {"@id": "urn:ngm:class:machine-learning-pipeline", "label": "Machine Learning Pipeline"},
-      {"@id": "urn:ngm:class:machine-learning-framework", "label": "Machine Learning Framework"},
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+      {
+        "@id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "label": "Python PyTorch Deep Learning Stack"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline-framework",
+        "label": "Machine Learning Framework"
+      },
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:python3", "label": "Python 3"}
+    {
+      "@id": "urn:ngm:class:python3",
+      "label": "Python 3"
+    }
   ],
   "qualityScore": 0.76,
   "quality": 0.76,

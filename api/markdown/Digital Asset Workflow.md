@@ -134,16 +134,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:approval-workflow",
-        "label": "Approval Workflow"
-      },
-      {
         "@id": "urn:ngm:class:content-creation-pipeline",
         "label": "Content Creation Pipeline"
-      },
-      {
-        "@id": "urn:ngm:class:distribution-system",
-        "label": "Distribution System"
       },
       {
         "@id": "urn:ngm:class:asset-archive",
@@ -165,10 +157,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:asset-monetization",
-        "label": "Asset Monetization"
-      },
       {
         "@id": "urn:ngm:class:content-distribution",
         "label": "Content Distribution"

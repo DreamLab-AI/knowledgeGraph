@@ -90,14 +90,6 @@ public:: true
       {
         "@id": "urn:ngm:class:object-storage",
         "label": "Object Storage"
-      },
-      {
-        "@id": "urn:ngm:class:storage-area-network",
-        "label": "Storage Area Network"
-      },
-      {
-        "@id": "urn:ngm:class:network-attached-storage",
-        "label": "Network-Attached Storage"
       }
     ],
     "partOf": [
@@ -107,10 +99,6 @@ public:: true
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:storage-media",
-        "label": "Storage Media"
-      },
       {
         "@id": "urn:ngm:class:file-system",
         "label": "File System"
@@ -168,7 +156,7 @@ public:: true
         "label": "Disaster Recovery"
       },
       {
-        "@id": "urn:ngm:class:data-lifecycle-management",
+        "@id": "urn:ngm:class:lifecycle-management",
         "label": "Data Lifecycle Management"
       }
     ],

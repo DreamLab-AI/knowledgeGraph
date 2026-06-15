@@ -23,71 +23,178 @@ public:: true
   "definition": "eIDAS 2.0 (Regulation EU 2024/1183) is the amended EU framework for electronic identification, authentication, and trust services, entered into force in May 2024 as a successor to the original eIDAS Regulation (EU 910/2014). Its cornerstone is the European Digital Identity Wallet (EUDIW), a mandatory public-infrastructure obligation requiring each EU member state to offer citizens, residents, and businesses a certified wallet for storing qualified electronic attestations of attributes, verifiable credentials, and qualified electronic signatures. The regulation obliges online platforms with more than 45 million EU users to accept the wallet as an authentication mechanism, dismantling private-sector identity lock-in and creating a public-interest counterweight to data concentration. eIDAS 2.0 aligns with W3C Verifiable Credentials, Decentralised Identifiers, OpenID for Verifiable Credential Issuance (OID4VCI), and OpenID for Verifiable Presentations (OID4VP), embedding open interoperability requirements and selective-disclosure privacy protections into binding EU law.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:digital-identity-framework", "label": "Digital Identity Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-identity-framework",
+      "label": "Digital Identity Framework"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:eu-digital-identity-regulation", "label": "EU Digital Identity Regulation"},
-    {"@id": "urn:ngm:class:regulation-eu-2024-1183", "label": "Regulation EU 2024/1183"}
+    {
+      "@id": "urn:ngm:class:eu-digital-identity-regulation",
+      "label": "EU Digital Identity Regulation"
+    },
+    {
+      "@id": "urn:ngm:class:regulation-eu-2024-1183",
+      "label": "Regulation EU 2024/1183"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:european-digital-identity-wallet", "label": "European Digital Identity Wallet"},
-      {"@id": "urn:ngm:class:qualified-electronic-attestation-of-attributes", "label": "Qualified Electronic Attestation of Attributes"},
-      {"@id": "urn:ngm:class:qualified-electronic-signature", "label": "Qualified Electronic Signature"},
-      {"@id": "urn:ngm:class:architecture-and-reference-framework", "label": "Architecture and Reference Framework"}
+      {
+        "@id": "urn:ngm:class:digital-identity-wallet",
+        "label": "European Digital Identity Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:qualified-electronic-signature",
+        "label": "Qualified Electronic Signature"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:eu-digital-single-market", "label": "EU Digital Single Market"},
-      {"@id": "urn:ngm:class:digital-regulation", "label": "Digital Regulation"}
+      {
+        "@id": "urn:ngm:class:eu-digital-single-market",
+        "label": "EU Digital Single Market"
+      },
+      {
+        "@id": "urn:ngm:class:digital-regulation",
+        "label": "Digital Regulation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:selective-disclosure", "label": "Selective Disclosure"},
-      {"@id": "urn:ngm:class:conformance-testing", "label": "Conformance Testing"}
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      },
+      {
+        "@id": "urn:ngm:class:standards-conformance-testing",
+        "label": "Conformance Testing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-identity-management", "label": "Digital Identity Management"},
-      {"@id": "urn:ngm:class:cross-border-authentication", "label": "Cross-Border Authentication"},
-      {"@id": "urn:ngm:class:attribute-based-access-control", "label": "Attribute-Based Access Control"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
+      {
+        "@id": "urn:ngm:class:digital-identity-management",
+        "label": "Digital Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-authentication",
+        "label": "Cross-Border Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:attribute-based-access-control",
+        "label": "Attribute-Based Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:trust-service-provider", "label": "Trust Service Provider"},
-      {"@id": "urn:ngm:class:member-state-digital-infrastructure", "label": "Member State Digital Infrastructure"}
+      {
+        "@id": "urn:ngm:class:trust-service-provider",
+        "label": "Trust Service Provider"
+      },
+      {
+        "@id": "urn:ngm:class:digital-infrastructure",
+        "label": "Member State Digital Infrastructure"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:decentralised-identifiers", "label": "Decentralised Identifiers"},
-      {"@id": "urn:ngm:class:openid-connect", "label": "OpenID Connect"}
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-identifiers",
+        "label": "Decentralised Identifiers"
+      },
+      {
+        "@id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:cryptographic-key-management", "label": "Cryptographic Key Management"},
-      {"@id": "urn:ngm:class:mdoc-iso-18013-5", "label": "mDoc ISO 18013-5"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-18013-5-m-dl",
+        "label": "mDoc ISO 18013-5"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:data-protection-regulation", "label": "Data Protection Regulation"},
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
-      {"@id": "urn:ngm:class:digital-markets-act", "label": "Digital Markets Act"}
+      {
+        "@id": "urn:ngm:class:data-protection-regulation",
+        "label": "Data Protection Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:digital-markets-act",
+        "label": "Digital Markets Act"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:european-commission", "label": "European Commission"},
-      {"@id": "urn:ngm:class:etsi", "label": "ETSI"},
-      {"@id": "urn:ngm:class:w3c", "label": "W3C"}
+      {
+        "@id": "urn:ngm:class:european-commission",
+        "label": "European Commission"
+      },
+      {
+        "@id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      },
+      {
+        "@id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:federated-identity", "label": "Federated Identity"},
-      {"@id": "urn:ngm:class:social-login", "label": "Social Login"},
-      {"@id": "urn:ngm:class:centralised-identity-provider", "label": "Centralised Identity Provider"}
+      {
+        "@id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "@id": "urn:ngm:class:social-login",
+        "label": "Social Login"
+      },
+      {
+        "@id": "urn:ngm:class:centralized-identity-provider",
+        "label": "Centralised Identity Provider"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-identity-standards", "label": "Digital Identity Standards"},
-      {"@id": "urn:ngm:class:authentication-standards", "label": "Authentication Standards"},
-      {"@id": "urn:ngm:class:nis2-directive", "label": "NIS2 Directive"},
-      {"@id": "urn:ngm:class:digital-identity-wallet", "label": "Digital Identity Wallet"}
+      {
+        "@id": "urn:ngm:class:digital-identity-standards",
+        "label": "Digital Identity Standards"
+      },
+      {
+        "@id": "urn:ngm:class:authentication-standards",
+        "label": "Authentication Standards"
+      },
+      {
+        "@id": "urn:ngm:class:nis2-directive",
+        "label": "NIS2 Directive"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-wallet",
+        "label": "Digital Identity Wallet"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:artificial-intelligence-act", "label": "Artificial Intelligence Act"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ]
   },
   "quality": 0.74,

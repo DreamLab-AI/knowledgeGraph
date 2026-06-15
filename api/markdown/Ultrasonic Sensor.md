@@ -58,58 +58,129 @@ public:: true
     "inferenceRule": "RelationEnrichment"
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:sonar-sensor", "label": "Sonar Sensor"},
-    {"@id": "urn:ngm:class:ultrasonic-transducer", "label": "Ultrasonic Transducer"},
-    {"@id": "urn:ngm:class:acoustic-range-sensor", "label": "Acoustic Range Sensor"}
+    {
+      "@id": "urn:ngm:class:sonar-sensor",
+      "label": "Sonar Sensor"
+    },
+    {
+      "@id": "urn:ngm:class:ultrasonic-transducer",
+      "label": "Ultrasonic Transducer"
+    },
+    {
+      "@id": "urn:ngm:class:acoustic-range-sensor",
+      "label": "Acoustic Range Sensor"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:ultrasonic-transmitter", "label": "Ultrasonic Transmitter"},
-      {"@id": "urn:ngm:class:ultrasonic-receiver", "label": "Ultrasonic Receiver"},
-      {"@id": "urn:ngm:class:piezoelectric-transducer", "label": "Piezoelectric Transducer"}
+      {
+        "@id": "urn:ngm:class:piezoelectric-transducer",
+        "label": "Piezoelectric Transducer"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:robot-perception-system", "label": "Robot Perception System"},
-      {"@id": "urn:ngm:class:obstacle-detection-system", "label": "Obstacle Detection System"}
+      {
+        "@id": "urn:ngm:class:robot-perception",
+        "label": "Robot Perception System"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:microcontroller", "label": "Microcontroller"},
-      {"@id": "urn:ngm:class:embedded-system", "label": "Embedded System"}
+      {
+        "@id": "urn:ngm:class:microcontroller",
+        "label": "Microcontroller"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded System"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:obstacle-avoidance", "label": "Obstacle Avoidance"},
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:distance-measurement", "label": "Distance Measurement"}
+      {
+        "@id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:distance-measurement",
+        "label": "Distance Measurement"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:time-of-flight-measurement", "label": "Time-of-Flight Measurement"},
-      {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"}
+      {
+        "@id": "urn:ngm:class:time-of-flight-sensor",
+        "label": "Time-of-Flight Measurement"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:echolocation", "label": "Echolocation"},
-      {"@id": "urn:ngm:class:pulse-echo-technique", "label": "Pulse-Echo Technique"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:echolocation",
+        "label": "Echolocation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:industrial-automation", "label": "Industrial Automation"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-13482", "label": "ISO 13482 Robot Safety"},
-      {"@id": "urn:ngm:class:iec-61508", "label": "IEC 61508 Functional Safety"}
+      {
+        "@id": "urn:ngm:class:iso-13482",
+        "label": "ISO 13482 Robot Safety"
+      },
+      {
+        "@id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508 Functional Safety"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:lidar", "label": "LiDAR"},
-      {"@id": "urn:ngm:class:infrared-sensor", "label": "Infrared Sensor"},
-      {"@id": "urn:ngm:class:radar-sensor", "label": "Radar Sensor"}
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      },
+      {
+        "@id": "urn:ngm:class:infrared-sensor",
+        "label": "Infrared Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:radar-sensor",
+        "label": "Radar Sensor"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:sensor", "label": "Sensor"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaborative-robot", "label": "Collaborative Robot"}
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      }
     ]
   }
 }

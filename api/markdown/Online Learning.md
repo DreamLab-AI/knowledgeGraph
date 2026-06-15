@@ -59,14 +59,7 @@ public:: true
       "label": "Machine Learning Discipline"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:real-time-learning",
-        "label": "Real-Time Learning"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

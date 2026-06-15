@@ -76,12 +76,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:learnable-scale-parameter",
+        "@id": "urn:ngm:class:parameter",
         "label": "Learnable Scale Parameter"
-      },
-      {
-        "@id": "urn:ngm:class:learnable-shift-parameter",
-        "label": "Learnable Shift Parameter"
       }
     ],
     "partOf": [
@@ -110,10 +106,6 @@ public:: true
         "label": "Deep Learning"
       },
       {
-        "@id": "urn:ngm:class:higher-learning-rate",
-        "label": "Higher Learning Rate"
-      },
-      {
         "@id": "urn:ngm:class:faster-convergence",
         "label": "Faster Convergence"
       }
@@ -134,7 +126,7 @@ public:: true
         "label": "Neural Network"
       },
       {
-        "@id": "urn:ngm:class:mean-and-variance-statistics",
+        "@id": "urn:ngm:class:statistics",
         "label": "Mean and Variance Statistics"
       }
     ],
@@ -170,15 +162,11 @@ public:: true
         "label": "Gradient Descent"
       },
       {
-        "@id": "urn:ngm:class:internal-covariate-shift",
-        "label": "Internal Covariate Shift"
-      },
-      {
-        "@id": "urn:ngm:class:optimisation-landscape-smoothing",
+        "@id": "urn:ngm:class:optimisation",
         "label": "Optimisation Landscape Smoothing"
       },
       {
-        "@id": "urn:ngm:class:normalisation-technique",
+        "@id": "urn:ngm:class:technique",
         "label": "Normalisation Technique"
       }
     ],

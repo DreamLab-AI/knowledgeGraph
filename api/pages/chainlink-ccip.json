@@ -16,32 +16,11 @@
   "qualityScore": 0.75,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:risk-management-network",
-        "label": "Risk Management Network"
-      },
-      {
-        "id": "urn:ngm:class:onramp-contract",
-        "label": "OnRamp Contract"
-      },
-      {
-        "id": "urn:ngm:class:offramp-contract",
-        "label": "OffRamp Contract"
-      },
-      {
-        "id": "urn:ngm:class:commit-store",
-        "label": "CommitStore"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:evm-compatible-blockchain",
         "label": "EVM-Compatible Blockchain"
-      },
-      {
-        "id": "urn:ngm:class:link-token",
-        "label": "LINK Token"
       }
     ],
     "enables": [
@@ -54,15 +33,7 @@
         "label": "Cross-Chain Messaging"
       },
       {
-        "id": "urn:ngm:class:programmable-token-transfer",
-        "label": "Programmable Token Transfer"
-      },
-      {
-        "id": "urn:ngm:class:cross-chain-defi",
-        "label": "Cross-Chain DeFi"
-      },
-      {
-        "id": "urn:ngm:class:tokenised-real-world-asset",
+        "id": "urn:ngm:class:tokenised-real-world-assets",
         "label": "Tokenised Real-World Asset"
       }
     ],
@@ -82,7 +53,7 @@
         "label": "Wormhole"
       },
       {
-        "id": "urn:ngm:class:ibc-protocol",
+        "id": "urn:ngm:class:ibc",
         "label": "IBC Protocol"
       }
     ],
@@ -110,7 +81,7 @@
         "label": "Blockchain Oracle"
       },
       {
-        "id": "urn:ngm:class:decentralised-oracle-network",
+        "id": "urn:ngm:class:oracle-network",
         "label": "Decentralised Oracle Network"
       },
       {

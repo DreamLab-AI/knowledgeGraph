@@ -50,10 +50,6 @@
         "label": "Economic Growth"
       },
       {
-        "id": "urn:ngm:class:credit-intermediation",
-        "label": "Credit Intermediation"
-      },
-      {
         "id": "urn:ngm:class:payment-settlement",
         "label": "Payment Settlement"
       }
@@ -77,14 +73,6 @@
       {
         "id": "urn:ngm:class:systemic-risk",
         "label": "Systemic Risk"
-      },
-      {
-        "id": "urn:ngm:class:financial-contagion",
-        "label": "Financial Contagion"
-      },
-      {
-        "id": "urn:ngm:class:bank-run",
-        "label": "Bank Run"
       }
     ],
     "bridgesTo": [
@@ -93,7 +81,7 @@
         "label": "Decentralised Finance"
       },
       {
-        "id": "urn:ngm:class:crypto-asset-regulation",
+        "id": "urn:ngm:class:crypto-regulation",
         "label": "Crypto-Asset Regulation"
       },
       {
@@ -111,10 +99,6 @@
       {
         "id": "urn:ngm:class:basel-committee",
         "label": "Basel Committee"
-      },
-      {
-        "id": "urn:ngm:class:imf-fsap",
-        "label": "IMF Financial Sector Assessment Programme"
       }
     ],
     "partOf": [],

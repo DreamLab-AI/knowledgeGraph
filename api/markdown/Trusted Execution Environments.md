@@ -72,20 +72,12 @@ public:: true
       {
         "@id": "urn:ngm:class:memory-encryption",
         "label": "Memory Encryption"
-      },
-      {
-        "@id": "urn:ngm:class:trusted-measurement",
-        "label": "Trusted Measurement"
       }
     ],
     "requires": [
       {
         "@id": "urn:ngm:class:hardware-root-of-trust",
         "label": "Hardware Root of Trust"
-      },
-      {
-        "@id": "urn:ngm:class:cryptographic-attestation",
-        "label": "Cryptographic Attestation"
       },
       {
         "@id": "urn:ngm:class:secure-boot",
@@ -122,10 +114,6 @@ public:: true
       {
         "@id": "urn:ngm:class:amd-sev",
         "label": "AMD SEV"
-      },
-      {
-        "@id": "urn:ngm:class:tpm",
-        "label": "Trusted Platform Module"
       }
     ],
     "contrastsWith": [
@@ -134,7 +122,7 @@ public:: true
         "label": "Homomorphic Encryption"
       },
       {
-        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "@id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proofs"
       }
     ],
@@ -160,25 +148,17 @@ public:: true
       {
         "@id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
-      },
-      {
-        "@id": "urn:ngm:class:decentralised-oracle",
-        "label": "Decentralised Oracle"
       }
     ],
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:confidential-computing-consortium",
         "label": "Confidential Computing Consortium"
-      },
-      {
-        "@id": "urn:ngm:class:global-platform-standard",
-        "label": "GlobalPlatform Standard"
       }
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:side-channel-attacks",
+        "@id": "urn:ngm:class:side-channel-attack",
         "label": "Side-Channel Attacks"
       },
       {

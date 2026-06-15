@@ -18,66 +18,14 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:abr-algorithm",
-        "label": "ABR Algorithm"
-      },
-      {
-        "id": "urn:ngm:class:bandwidth-estimator",
-        "label": "Bandwidth Estimator"
-      },
-      {
-        "id": "urn:ngm:class:bitrate-ladder",
-        "label": "Bitrate Ladder"
-      },
-      {
-        "id": "urn:ngm:class:buffer-manager",
-        "label": "Buffer Manager"
-      },
-      {
-        "id": "urn:ngm:class:codec-parameter-controller",
-        "label": "Codec Parameter Controller"
-      },
-      {
-        "id": "urn:ngm:class:network-capacity-probing",
-        "label": "Network Capacity Probing"
-      },
-      {
-        "id": "urn:ngm:class:rate-distortion-optimisation",
-        "label": "Rate-Distortion Optimisation"
-      },
-      {
         "id": "urn:ngm:class:rtcp-feedback",
         "label": "RTCP Feedback"
-      },
-      {
-        "id": "urn:ngm:class:segment-scheduler",
-        "label": "Segment Scheduler"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:congestion-signal",
-        "label": "Congestion Signal"
-      },
-      {
-        "id": "urn:ngm:class:multi-bitrate-encoding",
-        "label": "Multi-bitrate Encoding"
-      },
-      {
-        "id": "urn:ngm:class:network-measurement",
-        "label": "Network Measurement"
-      },
-      {
-        "id": "urn:ngm:class:playback-buffer",
-        "label": "Playback Buffer"
-      },
-      {
         "id": "urn:ngm:class:rtcp-feedback",
         "label": "RTCP Feedback"
-      },
-      {
-        "id": "urn:ngm:class:throughput-estimation",
-        "label": "Throughput Estimation"
       }
     ],
     "enables": [
@@ -86,62 +34,26 @@
         "label": "Cloud Gaming"
       },
       {
-        "id": "urn:ngm:class:emerging-market-accessibility",
-        "label": "Emerging Market Accessibility"
-      },
-      {
-        "id": "urn:ngm:class:global-participation-across-networks",
-        "label": "Global Participation Across Networks"
-      },
-      {
         "id": "urn:ngm:class:graceful-degradation",
         "label": "Graceful Degradation"
       },
       {
-        "id": "urn:ngm:class:mobile-collaboration",
-        "label": "Mobile Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:resilient-video-streaming",
+        "id": "urn:ngm:class:video-streaming",
         "label": "Resilient Video Streaming"
       },
       {
-        "id": "urn:ngm:class:spatial-computing-paradigm-streaming",
+        "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing Streaming"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:bbr-congestion-control",
+        "id": "urn:ngm:class:congestion-control",
         "label": "BBR Congestion Control"
       },
       {
-        "id": "urn:ngm:class:bola-algorithm",
-        "label": "BOLA Algorithm"
-      },
-      {
-        "id": "urn:ngm:class:dash-adaptive-streaming",
-        "label": "DASH Adaptive Streaming"
-      },
-      {
-        "id": "urn:ngm:class:hls-adaptive-bitrate",
-        "label": "HLS Adaptive Bitrate"
-      },
-      {
-        "id": "urn:ngm:class:mpc-algorithm",
-        "label": "MPC Algorithm"
-      },
-      {
-        "id": "urn:ngm:class:pensieve-rl-policy",
-        "label": "Pensieve RL Policy"
-      },
-      {
-        "id": "urn:ngm:class:scalable-video-coding",
-        "label": "Scalable Video Coding"
-      },
-      {
-        "id": "urn:ngm:class:web-rtc-simulcast",
+        "id": "urn:ngm:class:web-rtc",
         "label": "WebRTC Simulcast"
       }
     ],
@@ -158,10 +70,6 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:lyapunov-optimisation",
-        "label": "Lyapunov Optimisation"
-      },
-      {
         "id": "urn:ngm:class:model-predictive-control",
         "label": "Model Predictive Control"
       },
@@ -172,10 +80,6 @@
       {
         "id": "urn:ngm:class:ssim-metric",
         "label": "SSIM Metric"
-      },
-      {
-        "id": "urn:ngm:class:vmaf-metric",
-        "label": "VMAF Metric"
       },
       {
         "id": "urn:ngm:class:kalman-filter",
@@ -191,10 +95,6 @@
       }
     ],
     "supports": [
-      {
-        "id": "urn:ngm:class:ar-vr-streaming",
-        "label": "AR VR Streaming"
-      },
       {
         "id": "urn:ngm:class:cloud-gaming",
         "label": "Cloud Gaming"
@@ -222,27 +122,27 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:3-gpp-5-g-standards",
+        "id": "urn:ngm:class:3-gpp",
         "label": "3GPP 5G Standards"
       },
       {
-        "id": "urn:ngm:class:apple-inc-technology-corporation-hls-rfc-8216",
+        "id": "urn:ngm:class:apple-inc-technology-corporation",
         "label": "Apple HLS RFC 8216"
       },
       {
-        "id": "urn:ngm:class:ietf-rfc-9000-quic",
+        "id": "urn:ngm:class:quic",
         "label": "IETF RFC 9000 QUIC"
       },
       {
-        "id": "urn:ngm:class:itu-t-h-264-h-265",
+        "id": "urn:ngm:class:itu-t",
         "label": "ITU-T H.264 H.265"
       },
       {
-        "id": "urn:ngm:class:mpeg-dash-iso-23009",
+        "id": "urn:ngm:class:iso",
         "label": "MPEG DASH ISO 23009"
       },
       {
-        "id": "urn:ngm:class:web-rtc-w3-c-standard",
+        "id": "urn:ngm:class:web-rtc-w-3-c-specification",
         "label": "WebRTC W3C Standard"
       }
     ],

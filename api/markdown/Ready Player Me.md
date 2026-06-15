@@ -60,19 +60,11 @@ public:: true
       {
         "@id": "urn:ngm:class:avatar",
         "label": "Avatar"
-      },
-      {
-        "@id": "urn:ngm:class:avatar-creator",
-        "label": "Avatar Creator"
-      },
-      {
-        "@id": "urn:ngm:class:morph-target",
-        "label": "Morph Target"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:gltf",
+        "@id": "urn:ngm:class:gltf-standard",
         "label": "glTF"
       },
       {
@@ -100,7 +92,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:3d-scanning",
+        "@id": "urn:ngm:class:3-d-scanning",
         "label": "3D Scanning"
       },
       {
@@ -140,16 +132,6 @@ public:: true
         "label": "Cloud Storage"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:vroid-studio",
-        "label": "VRoid Studio"
-      },
-      {
-        "@id": "urn:ngm:class:metahuman-creator",
-        "label": "MetaHuman Creator"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:self-sovereign-identity",
@@ -166,20 +148,8 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:wolf3d",
-        "label": "Wolf3D"
-      },
-      {
         "@id": "urn:ngm:class:open-metaverse-interoperability",
         "label": "Open Metaverse Interoperability"
-      },
-      {
-        "@id": "urn:ngm:class:avatar-sdk",
-        "label": "Avatar SDK"
-      },
-      {
-        "@id": "urn:ngm:class:avatar-platform",
-        "label": "Avatar Platform"
       }
     ]
   },

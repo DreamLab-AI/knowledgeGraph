@@ -22,7 +22,7 @@
         "label": "OpenXR"
       },
       {
-        "id": "urn:ngm:class:gltf",
+        "id": "urn:ngm:class:gltf-standard",
         "label": "glTF"
       },
       {
@@ -40,7 +40,7 @@
         "label": "Protocol Specification"
       },
       {
-        "id": "urn:ngm:class:conformance-testing",
+        "id": "urn:ngm:class:standards-conformance-testing",
         "label": "Conformance Testing"
       }
     ],
@@ -50,12 +50,8 @@
         "label": "Cross-Platform Compatibility"
       },
       {
-        "id": "urn:ngm:class:xr-content-portability",
+        "id": "urn:ngm:class:content-portability",
         "label": "XR Content Portability"
-      },
-      {
-        "id": "urn:ngm:class:vendor-neutral-api",
-        "label": "Vendor-Neutral API"
       }
     ],
     "dependsOn": [
@@ -78,16 +74,7 @@
         "label": "Metaverse Standards Forum"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:proprietary-platform-lock-in",
-        "label": "Proprietary Platform Lock-In"
-      },
-      {
-        "id": "urn:ngm:class:fragmented-ecosystem",
-        "label": "Fragmented Ecosystem"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:distributed-systems",
@@ -134,7 +121,7 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:open-standards-ecosystem",
+        "id": "urn:ngm:class:open-standards",
         "label": "Open Standards Ecosystem"
       }
     ],

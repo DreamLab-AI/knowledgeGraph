@@ -23,13 +23,27 @@ public:: true
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:dc-communication", "label": "Communication Technology"}
+    {
+      "@id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    }
   ],
   "relations": {
-    "enables": [{"@id": "urn:ngm:class:attention-management", "label": "Attention Management"}],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:attention",
+        "label": "Attention Management"
+      }
+    ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:group-chat-channel", "label": "Group Chat Channel"},
-      {"@id": "urn:ngm:class:instant-messaging", "label": "Instant Messaging"}
+      {
+        "@id": "urn:ngm:class:group-chat-channel",
+        "label": "Group Chat Channel"
+      },
+      {
+        "@id": "urn:ngm:class:instant-messaging",
+        "label": "Instant Messaging"
+      }
     ]
   },
   "quality": 0.7

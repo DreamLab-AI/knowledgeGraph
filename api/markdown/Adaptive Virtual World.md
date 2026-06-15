@@ -106,14 +106,6 @@ public:: true
       {
         "@id": "urn:ngm:class:emergent-gameplay",
         "label": "Emergent Gameplay"
-      },
-      {
-        "@id": "urn:ngm:class:persistent-world-evolution",
-        "label": "Persistent World Evolution"
-      },
-      {
-        "@id": "urn:ngm:class:personalized-environments",
-        "label": "Personalized Environments"
       }
     ]
   },

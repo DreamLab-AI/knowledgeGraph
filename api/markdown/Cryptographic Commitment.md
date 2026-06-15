@@ -79,57 +79,143 @@ public:: true
   },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:hash-function", "label": "Hash Function"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:pedersen-commitment", "label": "Pedersen Commitment"},
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:pedersen-commitment",
+        "label": "Pedersen Commitment"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:zk-snarks", "label": "ZK-SNARKs"},
-      {"@id": "urn:ngm:class:zk-starks", "label": "ZK-STARKs"},
-      {"@id": "urn:ngm:class:immutability", "label": "Immutability"},
-      {"@id": "urn:ngm:class:cryptographic-protocol", "label": "Cryptographic Protocol"},
-      {"@id": "urn:ngm:class:confidential-transaction", "label": "Confidential Transaction"},
-      {"@id": "urn:ngm:class:atomic-swap", "label": "Atomic Swap"},
-      {"@id": "urn:ngm:class:secure-multiparty-computation", "label": "Secure Multiparty Computation"}
-    ],
-    "requires": [
-      {"@id": "urn:ngm:class:binding-property", "label": "Binding Property"},
-      {"@id": "urn:ngm:class:hiding-property", "label": "Hiding Property"}
+      {
+        "@id": "urn:ngm:class:zk-snarks",
+        "label": "ZK-SNARKs"
+      },
+      {
+        "@id": "urn:ngm:class:zk-starks",
+        "label": "ZK-STARKs"
+      },
+      {
+        "@id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:confidential-transactions",
+        "label": "Confidential Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "@id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multiparty Computation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:vector-commitment", "label": "Vector Commitment"},
-      {"@id": "urn:ngm:class:polynomial-commitment", "label": "Polynomial Commitment"}
+      {
+        "@id": "urn:ngm:class:vector-commitment",
+        "label": "Vector Commitment"
+      },
+      {
+        "@id": "urn:ngm:class:polynomial-commitment",
+        "label": "Polynomial Commitment"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:random-oracle-model", "label": "Random Oracle Model"},
-      {"@id": "urn:ngm:class:discrete-logarithm-problem", "label": "Discrete Logarithm Problem"}
+      {
+        "@id": "urn:ngm:class:random-oracle-model",
+        "label": "Random Oracle Model"
+      },
+      {
+        "@id": "urn:ngm:class:discrete-logarithm-problem",
+        "label": "Discrete Logarithm Problem"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:schnorr-signature", "label": "Schnorr Signature"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"},
-      {"@id": "urn:ngm:class:zero-knowledge", "label": "Zero Knowledge"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:oblivious-transfer", "label": "Oblivious Transfer"},
-      {"@id": "urn:ngm:class:coin-flipping-protocol", "label": "Coin Flipping Protocol"}
+      {
+        "@id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge",
+        "label": "Zero Knowledge"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:oblivious-transfer",
+        "label": "Oblivious Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:coin-flipping-protocol",
+        "label": "Coin Flipping Protocol"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"},
-      {"@id": "urn:ngm:class:verifiable-credential", "label": "Verifiable Credential"}
+      {
+        "@id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credential-vc",
+        "label": "Verifiable Credential"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:commitment-scheme", "label": "Commitment Scheme"},
-    {"@id": "urn:ngm:class:cryptographic-commitment-scheme", "label": "Cryptographic Commitment Scheme"}
+    {
+      "@id": "urn:ngm:class:commitment-scheme",
+      "label": "Commitment Scheme"
+    },
+    {
+      "@id": "urn:ngm:class:cryptographic-commitment-scheme",
+      "label": "Cryptographic Commitment Scheme"
+    }
   ],
   "quality": 0.75,
   "provenance": {

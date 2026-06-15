@@ -99,7 +99,7 @@ public:: true
         "label": "Regulatory Clarity"
       },
       {
-        "@id": "urn:ngm:class:settlement-infrastructure",
+        "@id": "urn:ngm:class:settlement",
         "label": "Settlement Infrastructure"
       },
       {
@@ -129,16 +129,6 @@ public:: true
       {
         "@id": "urn:ngm:class:capital-markets",
         "label": "Capital Markets"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:retail-adoption",
-        "label": "Retail Adoption"
-      },
-      {
-        "@id": "urn:ngm:class:speculative-investment",
-        "label": "Speculative Investment"
       }
     ],
     "relatedTo": [

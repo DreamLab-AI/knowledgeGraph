@@ -20,14 +20,6 @@
       {
         "id": "urn:ngm:class:strict-liability",
         "label": "Strict Liability"
-      },
-      {
-        "id": "urn:ngm:class:negligence",
-        "label": "Negligence"
-      },
-      {
-        "id": "urn:ngm:class:warranty",
-        "label": "Warranty"
       }
     ],
     "requires": [
@@ -54,13 +46,13 @@
         "label": "Safety"
       },
       {
-        "id": "urn:ngm:class:redress",
+        "id": "urn:ngm:class:redress-procedure",
         "label": "Redress"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:product-safety-standards",
+        "id": "urn:ngm:class:safety-standard",
         "label": "Product Safety Standards"
       },
       {
@@ -69,12 +61,7 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:contributory-negligence",
-        "label": "Contributory Negligence"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:artificial-intelligence",
@@ -91,10 +78,6 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:due-diligence",
-        "label": "Due Diligence"
-      },
-      {
         "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
       }
@@ -105,7 +88,7 @@
         "label": "Market Surveillance"
       },
       {
-        "id": "urn:ngm:class:product-recall",
+        "id": "urn:ngm:class:product-recall-management",
         "label": "Product Recall"
       }
     ],
@@ -121,10 +104,6 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:tort-law",
-        "label": "Tort Law"
-      },
-      {
         "id": "urn:ngm:class:consumer-protection",
         "label": "Consumer Protection"
       }
@@ -135,7 +114,7 @@
         "label": "Insurance"
       },
       {
-        "id": "urn:ngm:class:intellectual-property",
+        "id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Intellectual Property"
       }
     ]

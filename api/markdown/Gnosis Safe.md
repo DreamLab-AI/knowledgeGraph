@@ -115,24 +115,12 @@ public:: true
       {
         "@id": "urn:ngm:class:erc-4337",
         "label": "ERC-4337"
-      },
-      {
-        "@id": "urn:ngm:class:erc-1271",
-        "label": "ERC-1271 Contract Signature Validation"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:ethereum-virtual-machine",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
         "label": "Ethereum Virtual Machine"
-      },
-      {
-        "@id": "urn:ngm:class:module-pattern",
-        "label": "Module Pattern"
-      },
-      {
-        "@id": "urn:ngm:class:proxy-contract",
-        "label": "Proxy Contract"
       }
     ],
     "supports": [
@@ -173,10 +161,6 @@ public:: true
       {
         "@id": "urn:ngm:class:gnosis-chain",
         "label": "Gnosis Chain"
-      },
-      {
-        "@id": "urn:ngm:class:safe-core-protocol",
-        "label": "Safe Core Protocol"
       }
     ]
   },

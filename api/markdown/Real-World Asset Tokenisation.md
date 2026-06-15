@@ -38,55 +38,139 @@ alias:: Real World Asset Tokenisation
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:rwa-tokenisation", "label": "RWA Tokenisation"},
-    {"@id": "urn:ngm:class:asset-tokenisation", "label": "Asset Tokenisation"}
+    {
+      "@id": "urn:ngm:class:rwa-tokenisation",
+      "label": "RWA Tokenisation"
+    },
+    {
+      "@id": "urn:ngm:class:asset-tokenisation",
+      "label": "Asset Tokenisation"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:oracle-network", "label": "Oracle Network"},
-      {"@id": "urn:ngm:class:special-purpose-vehicle", "label": "Special Purpose Vehicle"},
-      {"@id": "urn:ngm:class:kyc-aml-compliance", "label": "KYC/AML Compliance"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:oracle-network",
+        "label": "Oracle Network"
+      },
+      {
+        "@id": "urn:ngm:class:special-purpose-vehicle",
+        "label": "Special Purpose Vehicle"
+      },
+      {
+        "@id": "urn:ngm:class:kyc-aml-compliance",
+        "label": "KYC/AML Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:liquidity-provision", "label": "Liquidity Provision"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:fractional-ownership", "label": "Fractional Ownership"},
-      {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"},
-      {"@id": "urn:ngm:class:on-chain-collateral", "label": "On-Chain Collateral"}
+      {
+        "@id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:fractional-ownership",
+        "label": "Fractional Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:token-issuance", "label": "Token Issuance"},
-      {"@id": "urn:ngm:class:transfer-restriction-mechanism", "label": "Transfer Restriction Mechanism"},
-      {"@id": "urn:ngm:class:redemption-mechanism", "label": "Redemption Mechanism"}
+      {
+        "@id": "urn:ngm:class:token-issuance",
+        "label": "Token Issuance"
+      },
+      {
+        "@id": "urn:ngm:class:redemption-mechanism",
+        "label": "Redemption Mechanism"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:erc-20", "label": "ERC-20"},
-      {"@id": "urn:ngm:class:erc-3643", "label": "ERC-3643"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+      {
+        "@id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      },
+      {
+        "@id": "urn:ngm:class:erc-3643",
+        "label": "ERC-3643"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:security-token", "label": "Security Token"},
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
-      {"@id": "urn:ngm:class:security-token-offering", "label": "Security Token Offering"},
-      {"@id": "urn:ngm:class:tokenised-fund", "label": "Tokenised Fund"},
-      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"}
+      {
+        "@id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:security-token-offering",
+        "label": "Security Token Offering"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:financial-stability-board", "label": "Financial Stability Board"},
-      {"@id": "urn:ngm:class:iosco", "label": "IOSCO"},
-      {"@id": "urn:ngm:class:bis-innovation-hub", "label": "BIS Innovation Hub"}
+      {
+        "@id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      },
+      {
+        "@id": "urn:ngm:class:iosco",
+        "label": "IOSCO"
+      },
+      {
+        "@id": "urn:ngm:class:bis-innovation-hub",
+        "label": "BIS Innovation Hub"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:non-fungible-token", "label": "Non-Fungible Token"},
-      {"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"}
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "@id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:capital-markets", "label": "Capital Markets"},
-      {"@id": "urn:ngm:class:asset-management", "label": "Asset Management"},
-      {"@id": "urn:ngm:class:trade-finance", "label": "Trade Finance"}
+      {
+        "@id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      },
+      {
+        "@id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "@id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      }
     ]
   },
   "quality": 0.72,

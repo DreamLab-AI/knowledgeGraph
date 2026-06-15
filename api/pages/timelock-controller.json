@@ -19,10 +19,6 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:smart-contract-executor",
-        "label": "Smart Contract Executor"
-      },
-      {
         "id": "urn:ngm:class:governance-token",
         "label": "Governance Token"
       }
@@ -35,37 +31,11 @@
       {
         "id": "urn:ngm:class:blockchain-governance",
         "label": "Blockchain Governance"
-      },
-      {
-        "id": "urn:ngm:class:decentralised-protocol-administration",
-        "label": "Decentralised Protocol Administration"
-      },
-      {
-        "id": "urn:ngm:class:emergency-pause-mechanism",
-        "label": "Emergency Pause Mechanism"
       }
     ],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:time-delay-enforcement",
-        "label": "Time-Delay Enforcement"
-      },
-      {
-        "id": "urn:ngm:class:governance-security-pattern",
-        "label": "Governance Security Pattern"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:immediate-execution-governance",
-        "label": "Immediate Execution Governance"
-      },
-      {
-        "id": "urn:ngm:class:centralised-admin-key",
-        "label": "Centralised Admin Key"
-      }
-    ],
+    "implements": [],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:security",
@@ -128,7 +98,7 @@
         "label": "Role-Based Access Control"
       },
       {
-        "id": "urn:ngm:class:multisignature-wallet",
+        "id": "urn:ngm:class:multisignature-wallets",
         "label": "Multisignature Wallet"
       },
       {

@@ -547,14 +547,6 @@ alias:: BC-0432-consortium-blockchain, ConsortiumBlockchain
         "label": "Certificate Authority"
       },
       {
-        "@id": "urn:ngm:class:chaincode-container",
-        "label": "Chaincode Container"
-      },
-      {
-        "@id": "urn:ngm:class:channels-and-private-data-collections",
-        "label": "Channels and Private Data Collections"
-      },
-      {
         "@id": "urn:ngm:class:endorsement-policy",
         "label": "Endorsement Policy"
       },
@@ -567,10 +559,6 @@ alias:: BC-0432-consortium-blockchain, ConsortiumBlockchain
         "label": "Notary Service"
       },
       {
-        "@id": "urn:ngm:class:off-chain-data-store",
-        "label": "Off-Chain Data Store"
-      },
-      {
         "@id": "urn:ngm:class:ordering-service",
         "label": "Ordering Service"
       },
@@ -580,14 +568,6 @@ alias:: BC-0432-consortium-blockchain, ConsortiumBlockchain
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:multi-party-governance",
-        "label": "Multi-Party Governance"
-      },
-      {
-        "@id": "urn:ngm:class:network-membership-agreement",
-        "label": "Network Membership Agreement"
-      },
       {
         "@id": "urn:ngm:class:byzantine-fault-tolerance",
         "label": "Byzantine Fault Tolerance"
@@ -607,7 +587,7 @@ alias:: BC-0432-consortium-blockchain, ConsortiumBlockchain
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:atomic-dv-p-settlement",
+        "@id": "urn:ngm:class:atomic-delivery-versus-payment",
         "label": "Atomic DvP Settlement"
       },
       {
@@ -627,12 +607,8 @@ alias:: BC-0432-consortium-blockchain, ConsortiumBlockchain
         "label": "Tokenised Deposit"
       },
       {
-        "@id": "urn:ngm:class:tokenised-real-world-asset",
+        "@id": "urn:ngm:class:tokenised-real-world-assets",
         "label": "Tokenised Real-World Asset"
-      },
-      {
-        "@id": "urn:ngm:class:trade-finance-digitisation",
-        "label": "Trade Finance Digitisation"
       },
       {
         "@id": "urn:ngm:class:wholesale-cbdc",
@@ -640,14 +616,6 @@ alias:: BC-0432-consortium-blockchain, ConsortiumBlockchain
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:crash-fault-tolerant-ordering",
-        "label": "Crash Fault Tolerant Ordering"
-      },
-      {
-        "@id": "urn:ngm:class:ibft",
-        "label": "IBFT"
-      },
       {
         "@id": "urn:ngm:class:pbft",
         "label": "PBFT"
@@ -670,10 +638,6 @@ alias:: BC-0432-consortium-blockchain, ConsortiumBlockchain
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:azure-confidential-consortium-framework",
-        "label": "Azure Confidential Consortium Framework"
-      },
       {
         "@id": "urn:ngm:class:go-quorum",
         "label": "GoQuorum"
@@ -759,19 +723,11 @@ alias:: BC-0432-consortium-blockchain, ConsortiumBlockchain
         "label": "IBM Food Trust"
       },
       {
-        "@id": "urn:ngm:class:jpmorgan-onyx",
-        "label": "JPMorgan Onyx"
-      },
-      {
-        "@id": "urn:ngm:class:kinexys",
-        "label": "Kinexys"
-      },
-      {
         "@id": "urn:ngm:class:medi-ledger",
         "label": "MediLedger"
       },
       {
-        "@id": "urn:ngm:class:project-agor",
+        "@id": "urn:ngm:class:project-agora",
         "label": "Project Agorá"
       },
       {
@@ -789,16 +745,8 @@ alias:: BC-0432-consortium-blockchain, ConsortiumBlockchain
         "label": "Enterprise Ethereum Alliance"
       },
       {
-        "@id": "urn:ngm:class:eth-trust-security-levels",
-        "label": "EthTrust Security Levels"
-      },
-      {
         "@id": "urn:ngm:class:hyperledger-foundation",
         "label": "Hyperledger Foundation"
-      },
-      {
-        "@id": "urn:ngm:class:inter-work-alliance-token-taxonomy",
-        "label": "InterWork Alliance Token Taxonomy"
       },
       {
         "@id": "urn:ngm:class:iso-22739",
@@ -813,11 +761,7 @@ alias:: BC-0432-consortium-blockchain, ConsortiumBlockchain
         "label": "ISO 24165"
       },
       {
-        "@id": "urn:ngm:class:iso-tr-23455",
-        "label": "ISO/TR 23455"
-      },
-      {
-        "@id": "urn:ngm:class:linux-foundation-decentralized-trust",
+        "@id": "urn:ngm:class:lf-decentralized-trust",
         "label": "Linux Foundation Decentralized Trust"
       }
     ],

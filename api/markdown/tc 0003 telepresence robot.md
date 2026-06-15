@@ -393,15 +393,18 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:mobile-robot", "label": "Mobile Robot"}
+      {
+        "@id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      }
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:camera-system",
+        "@id": "urn:ngm:class:camera",
         "label": "Camera System"
       },
       {
-        "@id": "urn:ngm:class:manipulation-mechanism",
+        "@id": "urn:ngm:class:manipulation",
         "label": "Manipulation Mechanism"
       },
       {
@@ -415,7 +418,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:autonomous-navigation-support",
+        "@id": "urn:ngm:class:autonomous-navigation",
         "label": "Autonomous Navigation Support"
       }
     ],
@@ -423,10 +426,6 @@ public:: true
       {
         "@id": "urn:ngm:class:embodied-collaboration",
         "label": "Embodied Collaboration"
-      },
-      {
-        "@id": "urn:ngm:class:hybrid-presence-avatar",
-        "label": "Hybrid Presence Avatar"
       },
       {
         "@id": "urn:ngm:class:physical-presence",
@@ -439,13 +438,13 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:computer-vision-understanding",
+        "@id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision Understanding"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:5-g-low-latency-networks",
+        "@id": "urn:ngm:class:5-g-network",
         "label": "5G Low-Latency Networks"
       }
     ]

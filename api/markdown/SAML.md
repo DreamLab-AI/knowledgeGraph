@@ -63,7 +63,7 @@ public:: true
         "label": "XML"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -89,36 +89,12 @@ public:: true
       {
         "@id": "urn:ngm:class:saml-assertion",
         "label": "SAML Assertion"
-      },
-      {
-        "@id": "urn:ngm:class:saml-protocol",
-        "label": "SAML Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:saml-binding",
-        "label": "SAML Binding"
-      },
-      {
-        "@id": "urn:ngm:class:saml-metadata",
-        "label": "SAML Metadata"
       }
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:xml-signature",
-        "label": "XML Signature"
-      },
-      {
         "@id": "urn:ngm:class:xml-encryption",
         "label": "XML Encryption"
-      },
-      {
-        "@id": "urn:ngm:class:http-redirect-binding",
-        "label": "HTTP Redirect Binding"
-      },
-      {
-        "@id": "urn:ngm:class:http-post-binding",
-        "label": "HTTP POST Binding"
       }
     ],
     "implements": [
@@ -147,7 +123,7 @@ public:: true
         "label": "OAuth 2.0"
       },
       {
-        "@id": "urn:ngm:class:openid-connect",
+        "@id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
       },
       {
@@ -157,7 +133,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:access-management",
+        "@id": "urn:ngm:class:identity-and-access-management",
         "label": "Access Management"
       },
       {
@@ -165,15 +141,11 @@ public:: true
         "label": "Identity Management"
       },
       {
-        "@id": "urn:ngm:class:zero-trust",
+        "@id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero Trust"
       }
     ],
     "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:cloud-identity",
-        "label": "Cloud Identity"
-      },
       {
         "@id": "urn:ngm:class:decentralised-identity",
         "label": "Decentralised Identity"

@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:arithmetic-reasoning",
+        "id": "urn:ngm:class:reasoning",
         "label": "Arithmetic Reasoning"
       },
       {
@@ -28,34 +28,18 @@
       {
         "id": "urn:ngm:class:symbolic-computation",
         "label": "Symbolic Computation"
-      },
-      {
-        "id": "urn:ngm:class:proof-search",
-        "label": "Proof Search"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:formal-logic",
         "label": "Formal Logic"
-      },
-      {
-        "id": "urn:ngm:class:compositional-reasoning",
-        "label": "Compositional Reasoning"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:automated-theorem-proving",
         "label": "Automated Theorem Proving"
-      },
-      {
-        "id": "urn:ngm:class:scientific-reasoning",
-        "label": "Scientific Reasoning"
-      },
-      {
-        "id": "urn:ngm:class:code-verification",
-        "label": "Code Verification"
       }
     ],
     "dependsOn": [

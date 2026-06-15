@@ -106,10 +106,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:electronic-payments",
-        "label": "Electronic Payments"
-      },
-      {
         "@id": "urn:ngm:class:instant-settlement",
         "label": "Instant Settlement"
       },

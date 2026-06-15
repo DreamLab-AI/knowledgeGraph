@@ -285,11 +285,14 @@ public:: true
   ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:remote-collaboration", "label": "Remote Collaboration"}
+      {
+        "@id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      }
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:comments",
+        "@id": "urn:ngm:class:document-comments",
         "label": "Comments"
       },
       {
@@ -305,10 +308,6 @@ public:: true
       {
         "@id": "urn:ngm:class:distributed-teamwork",
         "label": "Distributed Teamwork"
-      },
-      {
-        "@id": "urn:ngm:class:knowledge-building",
-        "label": "Knowledge Building"
       },
       {
         "@id": "urn:ngm:class:peer-learning",

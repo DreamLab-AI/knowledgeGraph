@@ -44,7 +44,7 @@
         "label": "Power Infrastructure"
       },
       {
-        "id": "urn:ngm:class:cooling-systems",
+        "id": "urn:ngm:class:cooling-system",
         "label": "Cooling Systems"
       }
     ],
@@ -71,10 +71,6 @@
       }
     ],
     "dependsOn": [
-      {
-        "id": "urn:ngm:class:hardware-accelerators",
-        "label": "Hardware Accelerators"
-      },
       {
         "id": "urn:ngm:class:virtualisation",
         "label": "Virtualisation"
@@ -127,10 +123,6 @@
       {
         "id": "urn:ngm:class:resource-allocation",
         "label": "Resource Allocation"
-      },
-      {
-        "id": "urn:ngm:class:sovereign-compute",
-        "label": "Sovereign Compute"
       }
     ]
   },

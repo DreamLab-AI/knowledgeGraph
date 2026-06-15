@@ -18,54 +18,26 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:token-verification",
-        "label": "Token Verification"
-      },
-      {
         "id": "urn:ngm:class:rejection-sampling",
         "label": "Rejection Sampling"
-      },
-      {
-        "id": "urn:ngm:class:acceptance-criterion",
-        "label": "Acceptance Criterion"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:draft-model",
-        "label": "Draft Model"
-      },
-      {
         "id": "urn:ngm:class:inference-hardware",
         "label": "Inference Hardware"
-      },
-      {
-        "id": "urn:ngm:class:shared-vocabulary",
-        "label": "Shared Vocabulary"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:low-latency-inference",
         "label": "Low-Latency Inference"
-      },
-      {
-        "id": "urn:ngm:class:real-time-text-generation",
-        "label": "Real-Time Text Generation"
-      },
-      {
-        "id": "urn:ngm:class:llm-serving",
-        "label": "LLM Serving"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:parallel-computation",
+        "id": "urn:ngm:class:parallel-computing",
         "label": "Parallel Computation"
-      },
-      {
-        "id": "urn:ngm:class:gpu-accelerated-inference",
-        "label": "GPU Accelerated Inference"
       }
     ],
     "implements": [
@@ -121,11 +93,11 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:model-quantisation",
+        "id": "urn:ngm:class:neural-network-quantisation",
         "label": "Model Quantisation"
       },
       {
-        "id": "urn:ngm:class:model-distillation",
+        "id": "urn:ngm:class:knowledge-distillation",
         "label": "Model Distillation"
       },
       {
@@ -137,7 +109,7 @@
         "label": "Context Window"
       },
       {
-        "id": "urn:ngm:class:sampling-strategies",
+        "id": "urn:ngm:class:sampling",
         "label": "Sampling Strategies"
       },
       {

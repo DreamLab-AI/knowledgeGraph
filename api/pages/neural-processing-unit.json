@@ -20,23 +20,15 @@
       {
         "id": "urn:ngm:class:systolic-array",
         "label": "Systolic Array"
-      },
-      {
-        "id": "urn:ngm:class:on-chip-sram",
-        "label": "On-Chip SRAM"
-      },
-      {
-        "id": "urn:ngm:class:multiply-accumulate-unit",
-        "label": "Multiply-Accumulate Unit"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:model-quantisation",
+        "id": "urn:ngm:class:neural-network-quantisation",
         "label": "Model Quantisation"
       },
       {
-        "id": "urn:ngm:class:neural-network-model",
+        "id": "urn:ngm:class:neural-network",
         "label": "Neural Network Model"
       }
     ],
@@ -54,7 +46,7 @@
         "label": "Real-Time AI Inference"
       },
       {
-        "id": "urn:ngm:class:private-ai-inference",
+        "id": "urn:ngm:class:ai-inference",
         "label": "Private AI Inference"
       },
       {
@@ -116,7 +108,7 @@
         "label": "Hardware Acceleration"
       },
       {
-        "id": "urn:ngm:class:int8-quantisation",
+        "id": "urn:ngm:class:quantisation",
         "label": "INT8 Quantisation"
       }
     ],
@@ -139,24 +131,12 @@
       {
         "id": "urn:ngm:class:system-on-chip",
         "label": "System-on-Chip"
-      },
-      {
-        "id": "urn:ngm:class:mobile-soc",
-        "label": "Mobile SoC"
       }
     ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:npu",
         "label": "NPU"
-      },
-      {
-        "id": "urn:ngm:class:apple-neural-engine",
-        "label": "Apple Neural Engine"
-      },
-      {
-        "id": "urn:ngm:class:copilot-plus-pc",
-        "label": "Copilot+ PC"
       }
     ]
   },

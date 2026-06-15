@@ -496,19 +496,7 @@ public:: true
         "label": "Affordance"
       },
       {
-        "@id": "urn:ngm:class:body-schema",
-        "label": "Body Schema"
-      },
-      {
-        "@id": "urn:ngm:class:morphological-computation",
-        "label": "Morphological Computation"
-      },
-      {
-        "@id": "urn:ngm:class:sensorimotor-loop",
-        "label": "Sensorimotor Loop"
-      },
-      {
-        "@id": "urn:ngm:class:vision-language-action-model",
+        "@id": "urn:ngm:class:vision-language-action-models",
         "label": "Vision-Language-Action Model"
       },
       {
@@ -530,16 +518,8 @@ public:: true
         "label": "Environment"
       },
       {
-        "@id": "urn:ngm:class:physical-body",
-        "label": "Physical Body"
-      },
-      {
         "@id": "urn:ngm:class:real-time-control",
         "label": "Real-Time Control"
-      },
-      {
-        "@id": "urn:ngm:class:sensorimotor-coupling",
-        "label": "Sensorimotor Coupling"
       },
       {
         "@id": "urn:ngm:class:sensor",
@@ -560,14 +540,6 @@ public:: true
         "label": "Locomotion"
       },
       {
-        "@id": "urn:ngm:class:robust-generalisation",
-        "label": "Robust Generalisation"
-      },
-      {
-        "@id": "urn:ngm:class:social-cognition",
-        "label": "Social Cognition"
-      },
-      {
         "@id": "urn:ngm:class:tool-use",
         "label": "Tool Use"
       },
@@ -578,16 +550,8 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:4-e-cognition",
-        "label": "4E Cognition"
-      },
-      {
         "@id": "urn:ngm:class:behaviour-based-robotics",
         "label": "Behaviour-Based Robotics"
-      },
-      {
-        "@id": "urn:ngm:class:free-energy-principle",
-        "label": "Free Energy Principle"
       },
       {
         "@id": "urn:ngm:class:predictive-processing",
@@ -606,10 +570,6 @@ public:: true
       {
         "@id": "urn:ngm:class:deep-reinforcement-learning",
         "label": "Deep Reinforcement Learning"
-      },
-      {
-        "@id": "urn:ngm:class:differentiable-physics",
-        "label": "Differentiable Physics"
       },
       {
         "@id": "urn:ngm:class:diffusion-policy",
@@ -638,12 +598,8 @@ public:: true
         "label": "Developmental Robotics"
       },
       {
-        "@id": "urn:ngm:class:large-scale-pretrained-foundation-model-for-robotics",
+        "@id": "urn:ngm:class:large-scale-pretrained-foundation-model",
         "label": "Foundation Models for Robotics"
-      },
-      {
-        "@id": "urn:ngm:class:phenomenology-of-perception",
-        "label": "Phenomenology of Perception"
       },
       {
         "@id": "urn:ngm:class:world-models",
@@ -690,7 +646,7 @@ public:: true
         "label": "IEEE Robotics Standards"
       },
       {
-        "@id": "urn:ngm:class:isaac-lab",
+        "@id": "urn:ngm:class:nvidia-corporation-isaac-sim",
         "label": "Isaac Lab"
       },
       {

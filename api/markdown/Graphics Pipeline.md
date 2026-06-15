@@ -69,7 +69,7 @@ public:: true
         "label": "Vertex Shader"
       },
       {
-        "@id": "urn:ngm:class:fragment-shader",
+        "@id": "urn:ngm:class:pixel-shader",
         "label": "Fragment Shader"
       },
       {
@@ -133,16 +133,6 @@ public:: true
         "label": "OpenGL"
       }
     ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:rendering-algorithm",
-        "label": "Rendering Algorithm"
-      },
-      {
-        "@id": "urn:ngm:class:scan-line-rendering",
-        "label": "Scan-Line Rendering"
-      }
-    ],
     "uses": [
       {
         "@id": "urn:ngm:class:texture-mapping",
@@ -175,17 +165,13 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:ray-tracing-pipeline",
-        "label": "Ray Tracing Pipeline"
-      },
-      {
         "@id": "urn:ngm:class:path-tracing",
         "label": "Path Tracing"
       }
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:machine-learning-inference",
+        "@id": "urn:ngm:class:inference",
         "label": "Machine Learning Inference"
       },
       {

@@ -18,23 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:fsb-plenary",
-        "label": "FSB Plenary"
-      },
-      {
-        "id": "urn:ngm:class:standing-committee-on-supervisory-and-regulatory-cooperation",
-        "label": "Standing Committee on Supervisory and Regulatory Cooperation"
-      },
-      {
         "id": "urn:ngm:class:peer-review",
         "label": "Peer Review"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:member-jurisdiction-commitment",
-        "label": "Member Jurisdiction Commitment"
-      },
       {
         "id": "urn:ngm:class:regulatory-reporting",
         "label": "Regulatory Reporting"
@@ -48,10 +36,6 @@
       {
         "id": "urn:ngm:class:cross-border-regulatory-cooperation",
         "label": "Cross-Border Regulatory Cooperation"
-      },
-      {
-        "id": "urn:ngm:class:resolution-planning",
-        "label": "Resolution Planning"
       }
     ],
     "dependsOn": [
@@ -78,24 +62,11 @@
         "label": "Basel III"
       },
       {
-        "id": "urn:ngm:class:crypto-asset-regulation",
+        "id": "urn:ngm:class:crypto-regulation",
         "label": "Crypto-Asset Regulation"
-      },
-      {
-        "id": "urn:ngm:class:global-stablecoin-framework",
-        "label": "Global Stablecoin Framework"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:financial-stability-forum",
-        "label": "Financial Stability Forum"
-      },
-      {
-        "id": "urn:ngm:class:national-prudential-regulator",
-        "label": "National Prudential Regulator"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:decentralised-finance",
@@ -121,10 +92,6 @@
         "label": "Compliance"
       },
       {
-        "id": "urn:ngm:class:shadow-banking-oversight",
-        "label": "Shadow Banking Oversight"
-      },
-      {
         "id": "urn:ngm:class:climate-related-financial-risk",
         "label": "Climate-Related Financial Risk"
       }
@@ -141,7 +108,7 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:g20-governance-architecture",
+        "id": "urn:ngm:class:governance-architecture",
         "label": "G20 Governance Architecture"
       },
       {
@@ -159,7 +126,7 @@
         "label": "Compliance Framework"
       },
       {
-        "id": "urn:ngm:class:tokenised-assets",
+        "id": "urn:ngm:class:tokenised-real-world-assets",
         "label": "Tokenised Assets"
       }
     ]

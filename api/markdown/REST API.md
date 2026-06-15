@@ -38,52 +38,123 @@ public:: true
   ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:http", "label": "HTTP"},
-      {"@id": "urn:ngm:class:representational-state-transfer", "label": "Representational State Transfer"},
-      {"@id": "urn:ngm:class:openapi-specification", "label": "OpenAPI Specification"},
-      {"@id": "urn:ngm:class:hateoas", "label": "HATEOAS"}
+      {
+        "@id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "@id": "urn:ngm:class:openapi-specification",
+        "label": "OpenAPI Specification"
+      },
+      {
+        "@id": "urn:ngm:class:hateoas",
+        "label": "HATEOAS"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:service-oriented-architecture", "label": "Service Oriented Architecture"},
-      {"@id": "urn:ngm:class:cloud-native-computing", "label": "Cloud Native Computing"},
-      {"@id": "urn:ngm:class:api-economy", "label": "API Economy"}
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service Oriented Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native Computing"
+      },
+      {
+        "@id": "urn:ngm:class:api-economy",
+        "label": "API Economy"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:json-data-interchange-format", "label": "JSON Data Interchange Format"},
-      {"@id": "urn:ngm:class:xml", "label": "XML"},
-      {"@id": "urn:ngm:class:oauth2", "label": "OAuth 2.0"},
-      {"@id": "urn:ngm:class:tls", "label": "TLS"}
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format",
+        "label": "JSON Data Interchange Format"
+      },
+      {
+        "@id": "urn:ngm:class:xml",
+        "label": "XML"
+      },
+      {
+        "@id": "urn:ngm:class:oauth2",
+        "label": "OAuth 2.0"
+      },
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "TLS"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:http-server", "label": "HTTP Server"},
-      {"@id": "urn:ngm:class:uri", "label": "URI"}
+      {
+        "@id": "urn:ngm:class:uri",
+        "label": "URI"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:graphql", "label": "GraphQL"},
-      {"@id": "urn:ngm:class:grpc", "label": "gRPC"},
-      {"@id": "urn:ngm:class:simple-object-access-protocol", "label": "SOAP"},
-      {"@id": "urn:ngm:class:websocket", "label": "WebSocket"}
+      {
+        "@id": "urn:ngm:class:graphql",
+        "label": "GraphQL"
+      },
+      {
+        "@id": "urn:ngm:class:grpc",
+        "label": "gRPC"
+      },
+      {
+        "@id": "urn:ngm:class:websocket",
+        "label": "WebSocket"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
-      {"@id": "urn:ngm:class:rate-limiting", "label": "Rate Limiting"},
-      {"@id": "urn:ngm:class:content-negotiation", "label": "Content Negotiation"}
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:rate-limiting",
+        "label": "Rate Limiting"
+      },
+      {
+        "@id": "urn:ngm:class:content-negotiation",
+        "label": "Content Negotiation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:llm-inference-api", "label": "LLM Inference API"},
-      {"@id": "urn:ngm:class:model-serving", "label": "Model Serving"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:llm-inference-api",
+        "label": "LLM Inference API"
+      },
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:api-design", "label": "API Design"},
-      {"@id": "urn:ngm:class:hypermedia", "label": "Hypermedia"},
-      {"@id": "urn:ngm:class:stateless-protocol", "label": "Stateless Protocol"}
+      {
+        "@id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      },
+      {
+        "@id": "urn:ngm:class:stateless-protocol",
+        "label": "Stateless Protocol"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:restful-api", "label": "RESTful API"},
-    {"@id": "urn:ngm:class:restful-web-service", "label": "RESTful Web Service"}
+    {
+      "@id": "urn:ngm:class:restful-api",
+      "label": "RESTful API"
+    },
+    {
+      "@id": "urn:ngm:class:restful-web-service",
+      "label": "RESTful Web Service"
+    }
   ],
   "quality": 0.74,
   "provenance": {

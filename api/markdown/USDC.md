@@ -83,7 +83,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:stablecoin-ecosystem",
+        "@id": "urn:ngm:class:stablecoin",
         "label": "Stablecoin Ecosystem"
       },
       {
@@ -93,7 +93,7 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:erc-20-token",
+        "@id": "urn:ngm:class:erc-20-tokens",
         "label": "ERC-20 Token"
       },
       {
@@ -103,11 +103,11 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:erc-20-standard",
+        "@id": "urn:ngm:class:erc-20-token-standard",
         "label": "ERC-20 Standard"
       },
       {
-        "@id": "urn:ngm:class:cross-chain-bridge-protocol",
+        "@id": "urn:ngm:class:cross-chain-bridge",
         "label": "Cross-Chain Bridge Protocol"
       }
     ],
@@ -131,11 +131,11 @@ public:: true
         "label": "On-Chain Settlement"
       },
       {
-        "@id": "urn:ngm:class:defi-collateral",
+        "@id": "urn:ngm:class:collateral-management",
         "label": "DeFi Collateral"
       },
       {
-        "@id": "urn:ngm:class:cross-border-payment",
+        "@id": "urn:ngm:class:cross-border-payments",
         "label": "Cross-Border Payment"
       }
     ],
@@ -185,7 +185,7 @@ public:: true
         "label": "Money Market Fund"
       },
       {
-        "@id": "urn:ngm:class:circle-financial",
+        "@id": "urn:ngm:class:circle",
         "label": "Circle Financial"
       }
     ]

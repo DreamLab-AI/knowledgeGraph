@@ -16,20 +16,7 @@
   "qualityScore": 0.72,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:aspect-based-sentiment-analysis",
-        "label": "Aspect-Based Sentiment Analysis"
-      },
-      {
-        "id": "urn:ngm:class:emotion-detection",
-        "label": "Emotion Detection"
-      },
-      {
-        "id": "urn:ngm:class:opinion-mining",
-        "label": "Opinion Mining"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:text-classification",
@@ -46,15 +33,7 @@
         "label": "Information Retrieval"
       },
       {
-        "id": "urn:ngm:class:social-media-monitoring",
-        "label": "Social Media Monitoring"
-      },
-      {
-        "id": "urn:ngm:class:customer-feedback-analysis",
-        "label": "Customer Feedback Analysis"
-      },
-      {
-        "id": "urn:ngm:class:brand-reputation-management",
+        "id": "urn:ngm:class:reputation-system",
         "label": "Brand Reputation Management"
       }
     ],
@@ -83,10 +62,6 @@
       {
         "id": "urn:ngm:class:market-research",
         "label": "Market Research"
-      },
-      {
-        "id": "urn:ngm:class:financial-analytics",
-        "label": "Financial Analytics"
       }
     ],
     "uses": [
@@ -119,14 +94,6 @@
       {
         "id": "urn:ngm:class:speech-recognition",
         "label": "Speech Recognition"
-      },
-      {
-        "id": "urn:ngm:class:subjectivity-analysis",
-        "label": "Subjectivity Analysis"
-      },
-      {
-        "id": "urn:ngm:class:stance-detection",
-        "label": "Stance Detection"
       }
     ]
   },

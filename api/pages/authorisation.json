@@ -26,12 +26,8 @@
         "label": "Attribute-Based Access Control"
       },
       {
-        "id": "urn:ngm:class:policy-based-access-control",
+        "id": "urn:ngm:class:access-control",
         "label": "Policy-Based Access Control"
-      },
-      {
-        "id": "urn:ngm:class:relationship-based-access-control",
-        "label": "Relationship-Based Access Control"
       }
     ],
     "requires": [
@@ -78,10 +74,6 @@
       {
         "id": "urn:ngm:class:digital-identity",
         "label": "Digital Identity"
-      },
-      {
-        "id": "urn:ngm:class:secure-token-service",
-        "label": "Secure Token Service"
       }
     ],
     "implements": [],
@@ -115,7 +107,7 @@
         "label": "Access Token"
       },
       {
-        "id": "urn:ngm:class:json-web-token",
+        "id": "urn:ngm:class:json-data-interchange-format-web-token",
         "label": "JSON Web Token"
       },
       {
@@ -138,7 +130,7 @@
         "label": "OAuth 2.0"
       },
       {
-        "id": "urn:ngm:class:openid-connect",
+        "id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
       },
       {

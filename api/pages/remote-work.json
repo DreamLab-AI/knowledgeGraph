@@ -27,7 +27,7 @@
         "label": "Endpoint Security"
       },
       {
-        "id": "urn:ngm:class:digital-communication-infrastructure",
+        "id": "urn:ngm:class:communication-infrastructure",
         "label": "Digital Communication Infrastructure"
       }
     ],
@@ -39,14 +39,6 @@
       {
         "id": "urn:ngm:class:asynchronous-collaboration",
         "label": "Asynchronous Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:global-talent-acquisition",
-        "label": "Global Talent Acquisition"
-      },
-      {
-        "id": "urn:ngm:class:work-life-integration",
-        "label": "Work-Life Integration"
       }
     ],
     "dependsOn": [
@@ -64,27 +56,14 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:collocated-work",
-        "label": "Collocated Work"
-      },
-      {
-        "id": "urn:ngm:class:open-plan-office",
-        "label": "Open-Plan Office"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:ai-meeting-assistant",
+        "id": "urn:ngm:class:meeting-ai-assistant",
         "label": "AI Meeting Assistant"
       },
       {
-        "id": "urn:ngm:class:virtual-reality-workspace",
-        "label": "Virtual Reality Workspace"
-      },
-      {
-        "id": "urn:ngm:class:zero-trust-security",
+        "id": "urn:ngm:class:zero-trust-architecture",
         "label": "Zero-Trust Security"
       }
     ],
@@ -137,10 +116,6 @@
       {
         "id": "urn:ngm:class:hybrid-work",
         "label": "Hybrid Work"
-      },
-      {
-        "id": "urn:ngm:class:organisational-design",
-        "label": "Organisational Design"
       },
       {
         "id": "urn:ngm:class:knowledge-management",

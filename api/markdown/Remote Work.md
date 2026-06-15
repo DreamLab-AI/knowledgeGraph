@@ -23,55 +23,127 @@ public:: true
   "definition": "Remote work is a work arrangement in which employees perform their professional duties from locations outside the traditional employer premises — including home offices, co-working spaces, or while travelling — using digital communication, collaboration, and productivity tools to maintain output and team cohesion. It encompasses fully remote models, hybrid arrangements that blend in-office and remote days, and asynchronous-first organisational cultures that decouple productive work from synchronous physical presence. The practice spans individual contributor roles through entire distributed organisations and intersects deeply with workforce management, digital infrastructure provisioning, cybersecurity policy, and organisational design. Remote work has become a core dimension of modern knowledge-work governance, influencing talent acquisition geographically, commercial real estate demand, and the architecture of digital workplace platforms.",
   "domain": "distributed-collaboration",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-work", "label": "Distributed Work"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-work",
+      "label": "Distributed Work"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"},
-      {"@id": "urn:ngm:class:asynchronous-communication", "label": "Asynchronous Communication"},
-      {"@id": "urn:ngm:class:digital-workplace-platform", "label": "Digital Workplace Platform"},
-      {"@id": "urn:ngm:class:video-conferencing", "label": "Video Conferencing"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:virtual-private-network", "label": "Virtual Private Network"}
+      {
+        "@id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      },
+      {
+        "@id": "urn:ngm:class:digital-workplace-platform",
+        "label": "Digital Workplace Platform"
+      },
+      {
+        "@id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-private-network",
+        "label": "Virtual Private Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
-      {"@id": "urn:ngm:class:asynchronous-collaboration", "label": "Asynchronous Collaboration"},
-      {"@id": "urn:ngm:class:global-talent-acquisition", "label": "Global Talent Acquisition"},
-      {"@id": "urn:ngm:class:work-life-integration", "label": "Work-Life Integration"}
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"},
-      {"@id": "urn:ngm:class:endpoint-security", "label": "Endpoint Security"},
-      {"@id": "urn:ngm:class:digital-communication-infrastructure", "label": "Digital Communication Infrastructure"}
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:endpoint-security",
+        "label": "Endpoint Security"
+      },
+      {
+        "@id": "urn:ngm:class:communication-infrastructure",
+        "label": "Digital Communication Infrastructure"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:broadband-internet", "label": "Broadband Internet"},
-      {"@id": "urn:ngm:class:cloud-storage", "label": "Cloud Storage"},
-      {"@id": "urn:ngm:class:project-management-software", "label": "Project Management Software"}
+      {
+        "@id": "urn:ngm:class:broadband-internet",
+        "label": "Broadband Internet"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
+      },
+      {
+        "@id": "urn:ngm:class:project-management-software",
+        "label": "Project Management Software"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:distributed-team-collaboration", "label": "Distributed Team Collaboration"},
-      {"@id": "urn:ngm:class:remote-collaboration", "label": "Remote Collaboration"},
-      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
-      {"@id": "urn:ngm:class:workforce-management", "label": "Workforce Management"},
-      {"@id": "urn:ngm:class:hybrid-work", "label": "Hybrid Work"},
-      {"@id": "urn:ngm:class:organisational-design", "label": "Organisational Design"},
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:collocated-work", "label": "Collocated Work"},
-      {"@id": "urn:ngm:class:open-plan-office", "label": "Open-Plan Office"}
+      {
+        "@id": "urn:ngm:class:distributed-team-collaboration",
+        "label": "Distributed Team Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:workforce-management",
+        "label": "Workforce Management"
+      },
+      {
+        "@id": "urn:ngm:class:hybrid-work",
+        "label": "Hybrid Work"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-meeting-assistant", "label": "AI Meeting Assistant"},
-      {"@id": "urn:ngm:class:virtual-reality-workspace", "label": "Virtual Reality Workspace"},
-      {"@id": "urn:ngm:class:zero-trust-security", "label": "Zero-Trust Security"}
+      {
+        "@id": "urn:ngm:class:meeting-ai-assistant",
+        "label": "AI Meeting Assistant"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero-Trust Security"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:telecommuting", "label": "Telecommuting"},
-    {"@id": "urn:ngm:class:telework", "label": "Telework"},
-    {"@id": "urn:ngm:class:work-from-home", "label": "Work From Home"}
+    {
+      "@id": "urn:ngm:class:telecommuting",
+      "label": "Telecommuting"
+    },
+    {
+      "@id": "urn:ngm:class:telework",
+      "label": "Telework"
+    },
+    {
+      "@id": "urn:ngm:class:work-from-home",
+      "label": "Work From Home"
+    }
   ],
   "quality": 0.75,
   "provenance": {

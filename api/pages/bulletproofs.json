@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:discrete-logarithm-assumption",
+        "id": "urn:ngm:class:computational-hardness-assumption",
         "label": "Discrete Logarithm Assumption"
       }
     ],
@@ -50,10 +50,6 @@
       {
         "id": "urn:ngm:class:non-interactive-proof",
         "label": "Non-Interactive Proof"
-      },
-      {
-        "id": "urn:ngm:class:arithmetic-circuit-satisfiability",
-        "label": "Arithmetic Circuit Satisfiability"
       }
     ],
     "contrastsWith": [
@@ -62,7 +58,7 @@
         "label": "zk-SNARK"
       },
       {
-        "id": "urn:ngm:class:zk-stark",
+        "id": "urn:ngm:class:zk-starks",
         "label": "zk-STARK"
       },
       {
@@ -100,10 +96,6 @@
       {
         "id": "urn:ngm:class:pedersen-commitment",
         "label": "Pedersen Commitment"
-      },
-      {
-        "id": "urn:ngm:class:inner-product-argument",
-        "label": "Inner Product Argument"
       }
     ],
     "supports": [

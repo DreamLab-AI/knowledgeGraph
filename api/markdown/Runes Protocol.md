@@ -66,10 +66,6 @@ public:: true
         "label": "UTXO"
       },
       {
-        "@id": "urn:ngm:class:op-return",
-        "label": "OP_RETURN"
-      },
-      {
         "@id": "urn:ngm:class:bitcoin-transaction",
         "label": "Bitcoin Transaction"
       }
@@ -80,7 +76,7 @@ public:: true
         "label": "Fungible Token"
       },
       {
-        "@id": "urn:ngm:class:token-minting",
+        "@id": "urn:ngm:class:minting",
         "label": "Token Minting"
       },
       {
@@ -110,21 +106,17 @@ public:: true
         "label": "BRC-20"
       },
       {
-        "@id": "urn:ngm:class:ordinals-protocol",
+        "@id": "urn:ngm:class:ordinals",
         "label": "Ordinals Protocol"
       },
       {
         "@id": "urn:ngm:class:erc-20",
         "label": "ERC-20"
-      },
-      {
-        "@id": "urn:ngm:class:colored-coins",
-        "label": "Colored Coins"
       }
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:bitcoin-script",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
         "label": "Bitcoin Script"
       },
       {

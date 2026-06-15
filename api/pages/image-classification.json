@@ -20,10 +20,6 @@
       {
         "id": "urn:ngm:class:feature-map",
         "label": "Feature Map"
-      },
-      {
-        "id": "urn:ngm:class:classification-head",
-        "label": "Classification Head"
       }
     ],
     "requires": [
@@ -36,7 +32,7 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:labeled-training-data",
+        "id": "urn:ngm:class:training-data",
         "label": "Labeled Training Data"
       },
       {
@@ -131,10 +127,6 @@
       {
         "id": "urn:ngm:class:vision-transformer",
         "label": "Vision Transformer"
-      },
-      {
-        "id": "urn:ngm:class:imagenet",
-        "label": "ImageNet"
       },
       {
         "id": "urn:ngm:class:benchmark-dataset",

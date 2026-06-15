@@ -20,10 +20,6 @@
       {
         "id": "urn:ngm:class:nonlinearity",
         "label": "Nonlinearity"
-      },
-      {
-        "id": "urn:ngm:class:derivative",
-        "label": "Derivative"
       }
     ],
     "requires": [
@@ -52,25 +48,12 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:weighted-sum",
-        "label": "Weighted Sum"
-      },
-      {
         "id": "urn:ngm:class:neuron",
         "label": "Neuron"
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:linear-activation",
-        "label": "Linear Activation"
-      },
-      {
-        "id": "urn:ngm:class:step-function",
-        "label": "Step Function"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:neuromorphic-computing",

@@ -21,12 +21,7 @@
     "enables": [],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:civil-service-job",
-        "label": "civil service job"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
     "supports": [],

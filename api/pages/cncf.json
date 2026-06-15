@@ -32,14 +32,6 @@
       {
         "id": "urn:ngm:class:envoy-proxy",
         "label": "Envoy Proxy"
-      },
-      {
-        "id": "urn:ngm:class:argo-workflows",
-        "label": "Argo Workflows"
-      },
-      {
-        "id": "urn:ngm:class:falco",
-        "label": "Falco"
       }
     ],
     "requires": [],
@@ -113,7 +105,7 @@
         "label": "Linux Foundation"
       },
       {
-        "id": "urn:ngm:class:open-source-ecosystem",
+        "id": "urn:ngm:class:open-source",
         "label": "Open Source Ecosystem"
       }
     ],

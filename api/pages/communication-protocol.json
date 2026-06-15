@@ -36,7 +36,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:bandwidth-constraints",
+        "id": "urn:ngm:class:bandwidth",
         "label": "Bandwidth Constraints"
       },
       {
@@ -44,15 +44,15 @@
         "label": "Data Serialisation"
       },
       {
-        "id": "urn:ngm:class:latency-tolerance",
+        "id": "urn:ngm:class:latency",
         "label": "Latency Tolerance"
       },
       {
-        "id": "urn:ngm:class:network-physical-layer",
+        "id": "urn:ngm:class:physical-layer",
         "label": "Network Physical Layer"
       },
       {
-        "id": "urn:ngm:class:synchronisation-mechanism",
+        "id": "urn:ngm:class:synchronisation",
         "label": "Synchronisation Mechanism"
       },
       {
@@ -62,26 +62,22 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:distributed-control",
-        "label": "Distributed Control"
-      },
-      {
-        "id": "urn:ngm:class:remote-teleoperation",
+        "id": "urn:ngm:class:teleoperation",
         "label": "Remote Teleoperation"
       },
       {
-        "id": "urn:ngm:class:sensor-data-fusion",
+        "id": "urn:ngm:class:sensor-fusion",
         "label": "Sensor Data Fusion"
       },
       {
-        "id": "urn:ngm:class:swarm-coordination",
+        "id": "urn:ngm:class:swarm-control",
         "label": "Swarm Coordination"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:communication-systems",
+        "id": "urn:ngm:class:communication-infrastructure",
         "label": "Communication Systems"
       },
       {

@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:social-graph",
+        "id": "urn:ngm:class:social-network-graph",
         "label": "Social Graph"
       },
       {
@@ -27,7 +27,7 @@
         "label": "Peer-to-Peer Network"
       },
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       }
     ],
@@ -59,10 +59,6 @@
       {
         "id": "urn:ngm:class:centralised-identity",
         "label": "Centralised Identity"
-      },
-      {
-        "id": "urn:ngm:class:biometric-identity",
-        "label": "Biometric Identity"
       }
     ],
     "bridgesTo": [

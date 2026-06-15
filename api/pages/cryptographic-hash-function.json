@@ -27,10 +27,6 @@
         "label": "Preimage Resistance"
       },
       {
-        "id": "urn:ngm:class:second-preimage-resistance",
-        "label": "Second-Preimage Resistance"
-      },
-      {
         "id": "urn:ngm:class:avalanche-effect",
         "label": "Avalanche Effect"
       }
@@ -88,7 +84,7 @@
         "label": "Post-Quantum Cryptography"
       },
       {
-        "id": "urn:ngm:class:verifiable-credential",
+        "id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       },
       {
@@ -120,7 +116,7 @@
         "label": "Blockchain"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {

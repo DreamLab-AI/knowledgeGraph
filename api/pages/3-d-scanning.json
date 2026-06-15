@@ -22,10 +22,6 @@
         "label": "Point Cloud"
       },
       {
-        "id": "urn:ngm:class:scan-registration",
-        "label": "Scan Registration"
-      },
-      {
         "id": "urn:ngm:class:mesh-generation",
         "label": "Mesh Generation"
       }
@@ -58,7 +54,7 @@
         "label": "Reverse Engineering"
       },
       {
-        "id": "urn:ngm:class:heritage-digitisation",
+        "id": "urn:ngm:class:digital-heritage",
         "label": "Heritage Digitisation"
       }
     ],

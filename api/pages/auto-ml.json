@@ -22,7 +22,7 @@
         "label": "Algorithm Selection"
       },
       {
-        "id": "urn:ngm:class:feature-engineering-automation",
+        "id": "urn:ngm:class:feature-engineering",
         "label": "Feature Engineering Automation"
       },
       {
@@ -38,7 +38,7 @@
         "label": "Neural Architecture Search"
       },
       {
-        "id": "urn:ngm:class:pipeline-optimisation",
+        "id": "urn:ngm:class:optimisation",
         "label": "Pipeline Optimisation"
       }
     ],
@@ -62,19 +62,11 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:democratised-ml-development",
-        "label": "Democratised ML Development"
-      },
-      {
-        "id": "urn:ngm:class:rapid-model-iteration",
-        "label": "Rapid Model Iteration"
-      },
-      {
         "id": "urn:ngm:class:reproducible-experiments",
         "label": "Reproducible Experiments"
       },
       {
-        "id": "urn:ngm:class:resource-efficient-training",
+        "id": "urn:ngm:class:resource-efficiency",
         "label": "Resource-Efficient Training"
       }
     ],
@@ -85,11 +77,11 @@
         "label": "Bayesian Optimisation"
       },
       {
-        "id": "urn:ngm:class:darts-differentiable-nas",
+        "id": "urn:ngm:class:differentiable-architecture",
         "label": "DARTS Differentiable NAS"
       },
       {
-        "id": "urn:ngm:class:evolutionary-neural-architecture-search",
+        "id": "urn:ngm:class:neural-architecture-search",
         "label": "Evolutionary Neural Architecture Search"
       }
     ],
@@ -109,11 +101,11 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:ai-development-lifecycle",
+        "id": "urn:ngm:class:ai-lifecycle",
         "label": "AI Development Lifecycle"
       },
       {
-        "id": "urn:ngm:class:mlops-platform",
+        "id": "urn:ngm:class:mlops",
         "label": "MLOps Platform"
       }
     ],

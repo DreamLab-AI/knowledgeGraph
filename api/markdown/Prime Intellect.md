@@ -402,48 +402,12 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:compute-exchange",
-        "label": "Compute Exchange"
-      },
-      {
         "@id": "urn:ngm:class:di-lo-co",
         "label": "DiLoCo"
       },
       {
         "@id": "urn:ngm:class:elastic-device-mesh",
         "label": "ElasticDeviceMesh"
-      },
-      {
-        "@id": "urn:ngm:class:gpu-marketplace",
-        "label": "GPU Marketplace"
-      },
-      {
-        "@id": "urn:ngm:class:intellect-1",
-        "label": "INTELLECT-1"
-      },
-      {
-        "@id": "urn:ngm:class:intellect-2",
-        "label": "INTELLECT-2"
-      },
-      {
-        "@id": "urn:ngm:class:intellect-3",
-        "label": "INTELLECT-3"
-      },
-      {
-        "@id": "urn:ngm:class:metagene-1",
-        "label": "METAGENE-1"
-      },
-      {
-        "@id": "urn:ngm:class:open-di-lo-co",
-        "label": "OpenDiLoCo"
-      },
-      {
-        "@id": "urn:ngm:class:prime-framework",
-        "label": "PRIME Framework"
-      },
-      {
-        "@id": "urn:ngm:class:prime-rl",
-        "label": "PRIME-RL"
       },
       {
         "@id": "urn:ngm:class:shardcast",
@@ -472,10 +436,6 @@ public:: true
         "label": "Gradient Synchronisation"
       },
       {
-        "@id": "urn:ngm:class:low-bandwidth-networking",
-        "label": "Low-Bandwidth Networking"
-      },
-      {
         "@id": "urn:ngm:class:verifiable-inference",
         "label": "Verifiable Inference"
       },
@@ -490,19 +450,15 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:collaborative-systems-modality-model-ownership",
+        "@id": "urn:ngm:class:collaborative-systems-modality",
         "label": "Collaborative Model Ownership"
       },
       {
-        "@id": "urn:ngm:class:compute-democratisation",
-        "label": "Compute Democratisation"
-      },
-      {
-        "@id": "urn:ngm:class:decentralised-foundation-model-training",
+        "@id": "urn:ngm:class:model-training",
         "label": "Decentralised Foundation Model Training"
       },
       {
-        "@id": "urn:ngm:class:globally-distributed-reinforcement-learning",
+        "@id": "urn:ngm:class:reinforcement-learning",
         "label": "Globally Distributed Reinforcement Learning"
       },
       {
@@ -514,7 +470,7 @@ public:: true
         "label": "Pandemic Preparedness AI"
       },
       {
-        "@id": "urn:ngm:class:permissionless-compute-contribution",
+        "@id": "urn:ngm:class:permissionless-participation",
         "label": "Permissionless Compute Contribution"
       }
     ],
@@ -548,7 +504,7 @@ public:: true
         "label": "Verifiable Inference"
       },
       {
-        "@id": "urn:ngm:class:ze-ro-3-sharding",
+        "@id": "urn:ngm:class:sharding",
         "label": "ZeRO-3 Sharding"
       }
     ],
@@ -570,7 +526,7 @@ public:: true
         "label": "Hugging Face"
       },
       {
-        "@id": "urn:ngm:class:meta-llama-model-family-architecture",
+        "@id": "urn:ngm:class:meta-llama-model-family",
         "label": "Llama Architecture"
       },
       {
@@ -582,7 +538,7 @@ public:: true
         "label": "QwQ-32B"
       },
       {
-        "@id": "urn:ngm:class:ray-distributed-computing",
+        "@id": "urn:ngm:class:distributed-computing",
         "label": "Ray Distributed Computing"
       }
     ],
@@ -656,15 +612,11 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:apache-2-0-open-source-licence",
+        "@id": "urn:ngm:class:apache-license-2-0",
         "label": "Apache 2.0 Open Source Licence"
       },
       {
-        "@id": "urn:ngm:class:ar-xiv-preprint-standards",
-        "label": "arXiv Preprint Standards"
-      },
-      {
-        "@id": "urn:ngm:class:py-torch-fsdp-api",
+        "@id": "urn:ngm:class:fsdp",
         "label": "PyTorch FSDP API"
       }
     ],

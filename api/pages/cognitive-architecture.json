@@ -22,10 +22,6 @@
         "label": "Working Memory"
       },
       {
-        "id": "urn:ngm:class:long-term-memory",
-        "label": "Long-Term Memory"
-      },
-      {
         "id": "urn:ngm:class:reasoning",
         "label": "Reasoning"
       },
@@ -36,10 +32,6 @@
       {
         "id": "urn:ngm:class:perception",
         "label": "Perception"
-      },
-      {
-        "id": "urn:ngm:class:action-selection",
-        "label": "Action Selection"
       }
     ],
     "requires": [
@@ -66,7 +58,7 @@
         "label": "Symbolic Reasoning"
       },
       {
-        "id": "urn:ngm:class:autonomous-agents",
+        "id": "urn:ngm:class:autonomous-agent",
         "label": "Autonomous Agents"
       },
       {
@@ -92,7 +84,7 @@
         "label": "Robotics"
       },
       {
-        "id": "urn:ngm:class:brain-computer-interface",
+        "id": "urn:ngm:class:brain-computer-interfaces",
         "label": "Brain-Computer Interface"
       }
     ],
@@ -102,7 +94,7 @@
         "label": "Production Rules"
       },
       {
-        "id": "urn:ngm:class:neural-networks",
+        "id": "urn:ngm:class:neural-network",
         "label": "Neural Networks"
       },
       {
@@ -119,7 +111,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:general-intelligence",
+        "id": "urn:ngm:class:artificial-general-intelligence",
         "label": "General Intelligence"
       },
       {

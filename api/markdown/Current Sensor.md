@@ -128,12 +128,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:efficiency-monitoring",
+        "@id": "urn:ngm:class:monitoring",
         "label": "Efficiency Monitoring"
-      },
-      {
-        "@id": "urn:ngm:class:overload-protection",
-        "label": "Overload Protection"
       },
       {
         "@id": "urn:ngm:class:predictive-maintenance",
@@ -151,7 +147,10 @@ public:: true
       }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:sensor", "label": "Sensor"}
+      {
+        "@id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
     ]
   },
   "quality": 0.52,

@@ -48,51 +48,121 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:rigid-body-dynamics", "label": "Rigid Body Dynamics"},
-      {"@id": "urn:ngm:class:soft-body-physics", "label": "Soft Body Physics"},
-      {"@id": "urn:ngm:class:fluid-simulation", "label": "Fluid Simulation"},
-      {"@id": "urn:ngm:class:collision-detection", "label": "Collision Detection"},
-      {"@id": "urn:ngm:class:constraint-solver", "label": "Constraint Solver"}
+      {
+        "@id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:soft-body-dynamics",
+        "label": "Soft Body Physics"
+      },
+      {
+        "@id": "urn:ngm:class:fluid-simulation",
+        "label": "Fluid Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "@id": "urn:ngm:class:constraint-solver",
+        "label": "Constraint Solver"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:numerical-integration", "label": "Numerical Integration"},
-      {"@id": "urn:ngm:class:spatial-data-structure", "label": "Spatial Data Structure"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"}
+      {
+        "@id": "urn:ngm:class:numerical-integration",
+        "label": "Numerical Integration"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-data-structure",
+        "label": "Spatial Data Structure"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"}
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:finite-element-method", "label": "Finite Element Method"},
-      {"@id": "urn:ngm:class:smoothed-particle-hydrodynamics", "label": "Smoothed Particle Hydrodynamics"}
+      {
+        "@id": "urn:ngm:class:finite-element-method",
+        "label": "Finite Element Method"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:robot-learning", "label": "Robot Learning"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}
+      {
+        "@id": "urn:ngm:class:robot-learning",
+        "label": "Robot Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:sim-to-real-transfer", "label": "Sim-to-Real Transfer"},
-      {"@id": "urn:ngm:class:neural-physics", "label": "Neural Physics"}
+      {
+        "@id": "urn:ngm:class:sim-to-real-transfer",
+        "label": "Sim-to-Real Transfer"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:3d-rendering", "label": "3D Rendering"},
-      {"@id": "urn:ngm:class:animation", "label": "Animation"},
-      {"@id": "urn:ngm:class:scientific-computing", "label": "Scientific Computing"},
-      {"@id": "urn:ngm:class:real-time-systems", "label": "Real-Time Systems"}
+      {
+        "@id": "urn:ngm:class:3d-rendering",
+        "label": "3D Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:animation",
+        "label": "Animation"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-systems",
+        "label": "Real-Time Systems"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:kinematic-animation", "label": "Kinematic Animation"}
+      {
+        "@id": "urn:ngm:class:kinematic-animation",
+        "label": "Kinematic Animation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:physics-engine", "label": "Physics Engine"}
+    {
+      "@id": "urn:ngm:class:physics-engine",
+      "label": "Physics Engine"
+    }
   ],
   "quality": 0.74,
   "provenance": {

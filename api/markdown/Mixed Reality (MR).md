@@ -172,11 +172,11 @@ public:: true
         "label": "Environmental Lighting"
       },
       {
-        "@id": "urn:ngm:class:object-tracking",
+        "@id": "urn:ngm:class:object-detection-and-tracking",
         "label": "Object Tracking"
       },
       {
-        "@id": "urn:ngm:class:real-time-3-d-reconstruction",
+        "@id": "urn:ngm:class:3-d-reconstruction",
         "label": "Real-Time 3D Reconstruction"
       },
       {

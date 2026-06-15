@@ -18,10 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:digital-token-identifier",
-        "label": "Digital Token Identifier"
-      },
-      {
         "id": "urn:ngm:class:registration-authority",
         "label": "Registration Authority"
       }
@@ -32,7 +28,7 @@
         "label": "Distributed Ledger Technology"
       },
       {
-        "id": "urn:ngm:class:digital-token",
+        "id": "urn:ngm:class:token",
         "label": "Digital Token"
       }
     ],
@@ -46,7 +42,7 @@
         "label": "Regulatory Reporting"
       },
       {
-        "id": "urn:ngm:class:financial-data-aggregation",
+        "id": "urn:ngm:class:data-aggregation",
         "label": "Financial Data Aggregation"
       }
     ],
@@ -66,19 +62,10 @@
         "label": "Unique Identifier"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:isin",
-        "label": "ISIN"
-      },
-      {
-        "id": "urn:ngm:class:figi",
-        "label": "FIGI"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:financial-instrument",
+        "id": "urn:ngm:class:financial-instruments",
         "label": "Financial Instrument"
       },
       {
@@ -114,10 +101,6 @@
       {
         "id": "urn:ngm:class:iso",
         "label": "ISO"
-      },
-      {
-        "id": "urn:ngm:class:digital-token-identifier-foundation",
-        "label": "Digital Token Identifier Foundation"
       }
     ],
     "partOf": [
@@ -128,7 +111,7 @@
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:lei",
+        "id": "urn:ngm:class:lei-system",
         "label": "Legal Entity Identifier"
       },
       {

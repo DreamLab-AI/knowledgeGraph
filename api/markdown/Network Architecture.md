@@ -62,7 +62,7 @@ public:: true
     "@id": "urn:ngm:class:ai-model-architecture",
     "label": "AI Model Architecture"
   },
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
@@ -93,7 +93,7 @@ public:: true
         "label": "Activation Function"
       },
       {
-        "@id": "urn:ngm:class:skip-connection",
+        "@id": "urn:ngm:class:residual-connection",
         "label": "Skip Connection"
       },
       {
@@ -103,7 +103,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:deep-learning-system",
+        "@id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning System"
       }
     ],
@@ -151,7 +151,7 @@ public:: true
         "label": "Neural Network"
       },
       {
-        "@id": "urn:ngm:class:convolutional-neural-networks",
+        "@id": "urn:ngm:class:convolutional-neural-network",
         "label": "Convolutional Neural Networks"
       },
       {

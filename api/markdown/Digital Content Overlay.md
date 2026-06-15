@@ -90,11 +90,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:camera-systems",
-        "label": "Camera Systems"
-      },
-      {
-        "@id": "urn:ngm:class:slam-technology",
+        "@id": "urn:ngm:class:slam",
         "label": "SLAM Technology"
       },
       {
@@ -103,14 +99,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:information-display",
-        "label": "Information Display"
-      },
-      {
-        "@id": "urn:ngm:class:interactive-guidance",
-        "label": "Interactive Guidance"
-      },
       {
         "@id": "urn:ngm:class:spatial-annotation",
         "label": "Spatial Annotation"

@@ -67,16 +67,8 @@ elevatedFrom:: [[copyright]]
         "label": "Copyright"
       },
       {
-        "@id": "urn:ngm:class:patent-law",
+        "@id": "urn:ngm:class:patent",
         "label": "Patent Law"
-      },
-      {
-        "@id": "urn:ngm:class:trade-mark",
-        "label": "Trade Mark"
-      },
-      {
-        "@id": "urn:ngm:class:trade-secret",
-        "label": "Trade Secret"
       },
       {
         "@id": "urn:ngm:class:licensing",
@@ -121,10 +113,6 @@ elevatedFrom:: [[copyright]]
       {
         "@id": "urn:ngm:class:open-data",
         "label": "Open Data"
-      },
-      {
-        "@id": "urn:ngm:class:public-domain",
-        "label": "Public Domain"
       }
     ],
     "supports": [
@@ -135,20 +123,6 @@ elevatedFrom:: [[copyright]]
       {
         "@id": "urn:ngm:class:content-monetisation",
         "label": "Content Monetisation"
-      },
-      {
-        "@id": "urn:ngm:class:innovation-ecosystem",
-        "label": "Innovation Ecosystem"
-      }
-    ],
-    "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:world-intellectual-property-organization",
-        "label": "World Intellectual Property Organization"
-      },
-      {
-        "@id": "urn:ngm:class:trips-agreement",
-        "label": "TRIPS Agreement"
       }
     ],
     "bridgesTo": [
@@ -177,10 +151,6 @@ elevatedFrom:: [[copyright]]
       {
         "@id": "urn:ngm:class:content-moderation",
         "label": "Content Moderation"
-      },
-      {
-        "@id": "urn:ngm:class:fair-use",
-        "label": "Fair Use"
       },
       {
         "@id": "urn:ngm:class:regulatory-compliance",

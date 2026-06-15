@@ -22,10 +22,6 @@
         "label": "Voxel Grid"
       },
       {
-        "id": "urn:ngm:class:surface-mesh",
-        "label": "Surface Mesh"
-      },
-      {
         "id": "urn:ngm:class:semantic-map",
         "label": "Semantic Map"
       },
@@ -54,10 +50,6 @@
         "label": "Spatial Anchor"
       },
       {
-        "id": "urn:ngm:class:occlusion",
-        "label": "Occlusion"
-      },
-      {
         "id": "urn:ngm:class:indoor-navigation",
         "label": "Indoor Navigation"
       },
@@ -79,7 +71,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:gps-positioning",
+        "id": "urn:ngm:class:gps",
         "label": "GPS Positioning"
       }
     ],

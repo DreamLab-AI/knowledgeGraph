@@ -18,16 +18,12 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:commercial-banking",
+        "id": "urn:ngm:class:traditional-banking",
         "label": "Commercial Banking"
       },
       {
         "id": "urn:ngm:class:investment-banking",
         "label": "Investment Banking"
-      },
-      {
-        "id": "urn:ngm:class:securities-exchange",
-        "label": "Securities Exchange"
       },
       {
         "id": "urn:ngm:class:central-banking",
@@ -62,7 +58,7 @@
         "label": "Capital Markets"
       },
       {
-        "id": "urn:ngm:class:payment-systems",
+        "id": "urn:ngm:class:payment-system",
         "label": "Payment Systems"
       }
     ],
@@ -105,7 +101,7 @@
         "label": "Blockchain Interoperability"
       },
       {
-        "id": "urn:ngm:class:real-world-assets",
+        "id": "urn:ngm:class:tokenised-real-world-assets",
         "label": "Real World Assets"
       }
     ],

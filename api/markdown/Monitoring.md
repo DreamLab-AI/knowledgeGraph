@@ -68,10 +68,6 @@ public:: true
       {
         "@id": "urn:ngm:class:alerting",
         "label": "Alerting"
-      },
-      {
-        "@id": "urn:ngm:class:dashboarding",
-        "label": "Dashboarding"
       }
     ],
     "partOf": [

@@ -36,7 +36,7 @@
         "label": "Cryptography"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -65,10 +65,6 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:credential-validation",
-        "label": "Credential Validation"
-      },
-      {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
       },
@@ -77,13 +73,13 @@
         "label": "OAuth 2.0"
       },
       {
-        "id": "urn:ngm:class:openid-connect",
+        "id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:authorisation-service",
+        "id": "urn:ngm:class:authorisation",
         "label": "Authorisation Service"
       }
     ],
@@ -99,7 +95,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:json-web-token",
+        "id": "urn:ngm:class:json-data-interchange-format-web-token",
         "label": "JSON Web Token"
       },
       {

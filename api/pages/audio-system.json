@@ -85,12 +85,7 @@
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:visual-rendering-system",
-        "label": "Visual Rendering System"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:natural-language-processing",
@@ -129,16 +124,7 @@
         "label": "Telepresence"
       }
     ],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:web-audio-api",
-        "label": "Web Audio API"
-      },
-      {
-        "id": "urn:ngm:class:openal",
-        "label": "OpenAL"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {

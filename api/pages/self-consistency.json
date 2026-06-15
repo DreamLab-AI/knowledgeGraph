@@ -25,10 +25,6 @@
       {
         "id": "urn:ngm:class:chain-of-thought",
         "label": "Chain of Thought"
-      },
-      {
-        "id": "urn:ngm:class:stochastic-sampling",
-        "label": "Stochastic Sampling"
       }
     ],
     "enables": [
@@ -61,10 +57,6 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:ensemble-decoding",
-        "label": "Ensemble Decoding"
-      },
-      {
         "id": "urn:ngm:class:test-time-compute",
         "label": "Test-Time Compute"
       }
@@ -93,10 +85,6 @@
       {
         "id": "urn:ngm:class:majority-voting",
         "label": "Majority Voting"
-      },
-      {
-        "id": "urn:ngm:class:temperature-sampling",
-        "label": "Temperature Sampling"
       },
       {
         "id": "urn:ngm:class:ensemble-methods",
@@ -131,10 +119,6 @@
       {
         "id": "urn:ngm:class:tree-of-thoughts",
         "label": "Tree of Thoughts"
-      },
-      {
-        "id": "urn:ngm:class:mixture-of-agents",
-        "label": "Mixture of Agents"
       }
     ]
   },

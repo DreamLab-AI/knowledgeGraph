@@ -16,12 +16,7 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:target-hash",
-        "label": "Target Hash"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:hash-rate",
@@ -70,7 +65,7 @@
         "label": "Nakamoto Consensus"
       },
       {
-        "id": "urn:ngm:class:feedback-control-loop",
+        "id": "urn:ngm:class:feedback-control",
         "label": "Feedback Control Loop"
       }
     ],
@@ -110,7 +105,7 @@
         "label": "Decentralization"
       },
       {
-        "id": "urn:ngm:class:51-percent-attack-resistance",
+        "id": "urn:ngm:class:51-attack",
         "label": "51 Percent Attack Resistance"
       }
     ],

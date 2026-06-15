@@ -18,16 +18,12 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:did-method-driver",
+        "id": "urn:ngm:class:did-method",
         "label": "DID Method Driver"
       },
       {
         "id": "urn:ngm:class:did-document",
         "label": "DID Document"
-      },
-      {
-        "id": "urn:ngm:class:resolution-metadata",
-        "label": "Resolution Metadata"
       }
     ],
     "requires": [
@@ -56,7 +52,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {
@@ -70,11 +66,11 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:w3c-did-core-specification",
+        "id": "urn:ngm:class:w-3-c-did-core-specification",
         "label": "W3C DID Core Specification"
       },
       {
-        "id": "urn:ngm:class:did-resolution-protocol",
+        "id": "urn:ngm:class:did-resolution",
         "label": "DID Resolution Protocol"
       }
     ],
@@ -90,7 +86,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:blockchain-smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "Blockchain Smart Contract"
       },
       {
@@ -104,7 +100,7 @@
         "label": "Cryptographic Key Pair"
       },
       {
-        "id": "urn:ngm:class:json-ld",
+        "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
       }
     ],
@@ -124,10 +120,6 @@
       {
         "id": "urn:ngm:class:decentralized-identifiers",
         "label": "Decentralized Identifiers"
-      },
-      {
-        "id": "urn:ngm:class:universal-resolver",
-        "label": "Universal Resolver"
       },
       {
         "id": "urn:ngm:class:identity-verification",

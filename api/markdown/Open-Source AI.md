@@ -38,55 +38,117 @@ alias:: Open Source AI
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:open-weights-ai", "label": "Open-Weights AI"},
-    {"@id": "urn:ngm:class:open-ai-ecosystem", "label": "Open AI Ecosystem"}
+    {
+      "@id": "urn:ngm:class:open-weights-ai",
+      "label": "Open-Weights AI"
+    },
+    {
+      "@id": "urn:ngm:class:open-ai-ecosystem",
+      "label": "Open AI Ecosystem"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:model-weights", "label": "Model Weights"},
-      {"@id": "urn:ngm:class:training-dataset", "label": "Training Dataset"},
-      {"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"},
-      {"@id": "urn:ngm:class:evaluation-benchmark", "label": "Evaluation Benchmark"}
+      {
+        "@id": "urn:ngm:class:model-weights",
+        "label": "Model Weights"
+      },
+      {
+        "@id": "urn:ngm:class:training-dataset",
+        "label": "Training Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "@id": "urn:ngm:class:benchmark-evaluation",
+        "label": "Evaluation Benchmark"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:open-source-software", "label": "Open Source Software"}
+      {
+        "@id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:open-source-licence", "label": "Open Source Licence"},
-      {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"}
+      {
+        "@id": "urn:ngm:class:open-source-licence",
+        "label": "Open Source Licence"
+      },
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"},
-      {"@id": "urn:ngm:class:model-quantisation", "label": "Model Quantisation"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:edge-ai", "label": "Edge AI"}
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-quantisation",
+        "label": "Model Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"},
-      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"}
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:scientific-reproducibility", "label": "Scientific Reproducibility"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:scientific-reproducibility",
+        "label": "Scientific Reproducibility"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:osi-open-source-ai-definition", "label": "OSI Open Source AI Definition"},
-      {"@id": "urn:ngm:class:eu-ai-act", "label": "EU AI Act"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:proprietary-ai", "label": "Proprietary AI"},
-      {"@id": "urn:ngm:class:closed-source-model", "label": "Closed-Source Model"}
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-hub", "label": "Model Hub"},
-      {"@id": "urn:ngm:class:community-fine-tuning", "label": "Community Fine-Tuning"},
-      {"@id": "urn:ngm:class:dual-use-risk", "label": "Dual-Use Risk"}
+      {
+        "@id": "urn:ngm:class:model-hub",
+        "label": "Model Hub"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ]
   },
   "quality": 0.74,

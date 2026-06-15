@@ -22,36 +22,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:annotation",
+        "id": "urn:ngm:class:data-annotation",
         "label": "Annotation"
-      },
-      {
-        "id": "urn:ngm:class:code-corpus",
-        "label": "Code Corpus"
-      },
-      {
-        "id": "urn:ngm:class:data-cards",
-        "label": "Data Cards"
-      },
-      {
-        "id": "urn:ngm:class:data-splits",
-        "label": "Data Splits"
-      },
-      {
-        "id": "urn:ngm:class:features",
-        "label": "Features"
-      },
-      {
-        "id": "urn:ngm:class:image-dataset",
-        "label": "Image Dataset"
-      },
-      {
-        "id": "urn:ngm:class:labels",
-        "label": "Labels"
-      },
-      {
-        "id": "urn:ngm:class:quality-signals",
-        "label": "Quality Signals"
       },
       {
         "id": "urn:ngm:class:text-corpus",
@@ -60,15 +32,11 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:annotation-standards",
-        "label": "Annotation Standards"
-      },
-      {
         "id": "urn:ngm:class:data-deduplication",
         "label": "Data Deduplication"
       },
       {
-        "id": "urn:ngm:class:data-quality-assurance",
+        "id": "urn:ngm:class:data-quality",
         "label": "Data Quality Assurance"
       },
       {
@@ -121,28 +89,8 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:language-identification",
-        "label": "Language Identification"
-      },
-      {
         "id": "urn:ngm:class:locality-sensitive-hashing",
         "label": "Locality-Sensitive Hashing"
-      },
-      {
-        "id": "urn:ngm:class:min-hash",
-        "label": "MinHash"
-      },
-      {
-        "id": "urn:ngm:class:near-duplicate-removal",
-        "label": "Near Duplicate Removal"
-      },
-      {
-        "id": "urn:ngm:class:quality-filtering",
-        "label": "Quality Filtering"
-      },
-      {
-        "id": "urn:ngm:class:sem-de-dup",
-        "label": "SemDeDup"
       }
     ],
     "contrastsWith": [],
@@ -216,14 +164,6 @@
       {
         "id": "urn:ngm:class:open-rail",
         "label": "OpenRAIL"
-      },
-      {
-        "id": "urn:ngm:class:uk-ipo",
-        "label": "UK IPO"
-      },
-      {
-        "id": "urn:ngm:class:us-copyright-office",
-        "label": "US Copyright Office"
       },
       {
         "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",

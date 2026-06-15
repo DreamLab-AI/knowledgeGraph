@@ -132,21 +132,17 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:creative-media",
-        "label": "Creative Media"
-      },
-      {
         "@id": "urn:ngm:class:data-management",
         "label": "Data Management"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:asset-version-control",
+        "@id": "urn:ngm:class:version-control",
         "label": "Asset Version Control"
       },
       {
-        "@id": "urn:ngm:class:collaborative-systems-modality-authoring",
+        "@id": "urn:ngm:class:collaborative-systems-modality",
         "label": "Collaborative Authoring"
       },
       {

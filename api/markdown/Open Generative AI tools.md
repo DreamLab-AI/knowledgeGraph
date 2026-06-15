@@ -358,7 +358,7 @@ public:: true
         "label": "HuggingFace Hub"
       },
       {
-        "@id": "urn:ngm:class:llm-inference",
+        "@id": "urn:ngm:class:inference",
         "label": "LLM Inference"
       },
       {
@@ -404,20 +404,12 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:community-licensing",
-        "label": "Community Licensing"
-      },
-      {
         "@id": "urn:ngm:class:compute-resources",
         "label": "Compute Resources"
       },
       {
         "@id": "urn:ngm:class:cuda",
         "label": "CUDA"
-      },
-      {
-        "@id": "urn:ngm:class:gpu-infrastructure",
-        "label": "GPU Infrastructure"
       },
       {
         "@id": "urn:ngm:class:inference-runtime",
@@ -437,10 +429,6 @@ public:: true
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:local-ai-deployment",
-        "label": "Local AI Deployment"
-      },
       {
         "@id": "urn:ngm:class:privacy-preserving-ai",
         "label": "Privacy-Preserving AI"
@@ -496,7 +484,7 @@ public:: true
         "label": "RLHF"
       },
       {
-        "@id": "urn:ngm:class:rotary-positional-encoding",
+        "@id": "urn:ngm:class:positional-encoding",
         "label": "Rotary Positional Encoding"
       },
       {
@@ -518,7 +506,7 @@ public:: true
         "label": "CUDA"
       },
       {
-        "@id": "urn:ngm:class:diffusers-library",
+        "@id": "urn:ngm:class:hugging-face-diffusers",
         "label": "Diffusers Library"
       },
       {
@@ -582,7 +570,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:research-reproducibility",
+        "@id": "urn:ngm:class:reproducibility",
         "label": "Research Reproducibility"
       },
       {
@@ -620,7 +608,7 @@ public:: true
         "label": "Apache License 2.0"
       },
       {
-        "@id": "urn:ngm:class:gguf-specification",
+        "@id": "urn:ngm:class:gguf-format",
         "label": "GGUF Specification"
       },
       {
@@ -637,7 +625,10 @@ public:: true
       }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-ecosystem", "label": "AI Ecosystem"}
+      {
+        "@id": "urn:ngm:class:ai-ecosystem",
+        "label": "AI Ecosystem"
+      }
     ]
   },
   "quality": 0.52,

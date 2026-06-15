@@ -62,57 +62,137 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:micro-oled-display", "label": "Micro-OLED Display"},
-      {"@id": "urn:ngm:class:inside-out-tracking-system", "label": "Inside-Out Tracking System"},
-      {"@id": "urn:ngm:class:spatial-audio-system", "label": "Spatial Audio System"}
+      {
+        "@id": "urn:ngm:class:micro-oled-display",
+        "label": "Micro-OLED Display"
+      },
+      {
+        "@id": "urn:ngm:class:tracking-system",
+        "label": "Inside-Out Tracking System"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio-system",
+        "label": "Spatial Audio System"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:wearable-computing-platform", "label": "Wearable Computing Platform"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:wearable-computing-platform",
+        "label": "Wearable Computing Platform"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:web-xr-api", "label": "WebXR API"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:six-degrees-of-freedom", "label": "Six Degrees of Freedom"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+      {
+        "@id": "urn:ngm:class:web-xr-api",
+        "label": "WebXR API"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:six-degrees-of-freedom",
+        "label": "Six Degrees of Freedom"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
-      {"@id": "urn:ngm:class:immersive-collaboration", "label": "Immersive Collaboration"}
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:immersive-collaboration",
+        "label": "Immersive Collaboration"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:system-on-chip", "label": "System on Chip"},
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"}
+      {
+        "@id": "urn:ngm:class:system-on-chip",
+        "label": "System on Chip"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:openxr-standard", "label": "OpenXR Standard"}
+      {
+        "@id": "urn:ngm:class:openxr-standard",
+        "label": "OpenXR Standard"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:hand-tracking", "label": "Hand Tracking"},
-      {"@id": "urn:ngm:class:passthrough-camera", "label": "Passthrough Camera"},
-      {"@id": "urn:ngm:class:foveated-rendering", "label": "Foveated Rendering"}
+      {
+        "@id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:passthrough-camera",
+        "label": "Passthrough Camera"
+      },
+      {
+        "@id": "urn:ngm:class:foveated-rendering",
+        "label": "Foveated Rendering"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:khronos-group", "label": "Khronos Group"}
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:smart-glasses", "label": "Smart Glasses"},
-      {"@id": "urn:ngm:class:holographic-display", "label": "Holographic Display"}
+      {
+        "@id": "urn:ngm:class:holographic-display",
+        "label": "Holographic Display"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:field-of-view", "label": "Field of View"}
+      {
+        "@id": "urn:ngm:class:field-of-view",
+        "label": "Field of View"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:head-mounted-display", "label": "Head-Mounted Display"},
-    {"@id": "urn:ngm:class:vr-headset", "label": "VR Headset"}
+    {
+      "@id": "urn:ngm:class:head-mounted-display",
+      "label": "Head-Mounted Display"
+    },
+    {
+      "@id": "urn:ngm:class:vr-headset",
+      "label": "VR Headset"
+    }
   ],
   "quality": 0.72,
   "provenance": {

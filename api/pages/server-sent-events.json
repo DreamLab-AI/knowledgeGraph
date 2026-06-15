@@ -21,10 +21,6 @@
       {
         "id": "urn:ngm:class:http",
         "label": "HTTP"
-      },
-      {
-        "id": "urn:ngm:class:persistent-connection",
-        "label": "Persistent Connection"
       }
     ],
     "enables": [
@@ -37,11 +33,7 @@
         "label": "Server Push"
       },
       {
-        "id": "urn:ngm:class:token-streaming",
-        "label": "Token Streaming"
-      },
-      {
-        "id": "urn:ngm:class:live-notifications",
+        "id": "urn:ngm:class:mentions-and-notifications",
         "label": "Live Notifications"
       }
     ],
@@ -62,10 +54,6 @@
         "label": "WebSocket"
       },
       {
-        "id": "urn:ngm:class:grpc-streaming",
-        "label": "gRPC Streaming"
-      },
-      {
         "id": "urn:ngm:class:long-polling",
         "label": "Long Polling"
       }
@@ -82,14 +70,6 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:eventsource-api",
-        "label": "EventSource API"
-      },
-      {
-        "id": "urn:ngm:class:text-event-stream",
-        "label": "text/event-stream MIME Type"
-      },
-      {
         "id": "urn:ngm:class:http2",
         "label": "HTTP/2"
       }
@@ -102,10 +82,6 @@
       {
         "id": "urn:ngm:class:llm-inference-api",
         "label": "LLM Inference API"
-      },
-      {
-        "id": "urn:ngm:class:real-time-dashboard",
-        "label": "Real-Time Dashboard"
       }
     ],
     "standardizedBy": [
@@ -127,14 +103,6 @@
       {
         "id": "urn:ngm:class:reverse-proxy",
         "label": "Reverse Proxy"
-      },
-      {
-        "id": "urn:ngm:class:chunked-transfer-encoding",
-        "label": "Chunked Transfer Encoding"
-      },
-      {
-        "id": "urn:ngm:class:streaming-protocol",
-        "label": "Streaming Protocol"
       }
     ]
   },

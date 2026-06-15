@@ -23,50 +23,133 @@ public:: true
   "definition": "Claude is a family of large language model AI assistants developed by Anthropic, trained using Constitutional AI and reinforcement learning from human feedback to be helpful, harmless, and honest. The Claude model family encompasses tiered variants (Haiku, Sonnet, and Opus) spanning cost-performance trade-offs, with support for extended context windows, multimodal inputs, tool use, and agentic workflows via the Model Context Protocol. Claude embodies Anthropic's research programme on aligning advanced AI systems with human values, serving as both a commercial API product and a living demonstration that safety and capability are complementary rather than opposed. The model family has evolved through multiple generations, with each iteration advancing state-of-the-art performance on reasoning, coding, and instruction-following benchmarks whilst maintaining rigorous safety evaluation.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:large-language-model", "label": "Large Language Model"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:large-language-model",
+      "label": "Large Language Model"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:anthropic", "label": "Anthropic"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:alignment-research", "label": "Alignment Research"},
-      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}
+      {
+        "@id": "urn:ngm:class:anthropic",
+        "label": "Anthropic"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:alignment-research",
+        "label": "Alignment Research"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:constitutional-ai-training-methodology", "label": "Constitutional AI Training Methodology"},
-      {"@id": "urn:ngm:class:rlhf", "label": "RLHF"},
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:instruction-tuning", "label": "Instruction Tuning"}
+      {
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology",
+        "label": "Constitutional AI Training Methodology"
+      },
+      {
+        "@id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"},
-      {"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"},
-      {"@id": "urn:ngm:class:function-calling", "label": "Function Calling"},
-      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"},
-      {"@id": "urn:ngm:class:multi-step-reasoning", "label": "Multi-Step Reasoning"}
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "@id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "@id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "@id": "urn:ngm:class:multi-step-reasoning",
+        "label": "Multi-Step Reasoning"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:model-context-protocol", "label": "Model Context Protocol"},
-      {"@id": "urn:ngm:class:ai-model-card", "label": "AI Model Card"}
+      {
+        "@id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:ai-model-card",
+        "label": "AI Model Card"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:gpt-4", "label": "GPT 4"},
-      {"@id": "urn:ngm:class:gemini", "label": "Gemini"},
-      {"@id": "urn:ngm:class:llama", "label": "Llama"}
+      {
+        "@id": "urn:ngm:class:gpt-4",
+        "label": "GPT 4"
+      },
+      {
+        "@id": "urn:ngm:class:gemini-multimodal-language-model",
+        "label": "Gemini"
+      },
+      {
+        "@id": "urn:ngm:class:meta-llama-model-family",
+        "label": "Llama"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:enterprise-software-integration", "label": "Enterprise Software Integration"},
-      {"@id": "urn:ngm:class:workflow-automation", "label": "Workflow Automation"}
+      {
+        "@id": "urn:ngm:class:enterprise-software-integration",
+        "label": "Enterprise Software Integration"
+      },
+      {
+        "@id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:pre-training", "label": "Pre Training"},
-      {"@id": "urn:ngm:class:human-feedback", "label": "Human Feedback"}
+      {
+        "@id": "urn:ngm:class:pre-training",
+        "label": "Pre Training"
+      },
+      {
+        "@id": "urn:ngm:class:human-feedback",
+        "label": "Human Feedback"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:anthropic-claude", "label": "Anthropic Claude"}
+    {
+      "@id": "urn:ngm:class:anthropic-claude",
+      "label": "Anthropic Claude"
+    }
   ],
   "quality": 0.74,
   "provenance": {

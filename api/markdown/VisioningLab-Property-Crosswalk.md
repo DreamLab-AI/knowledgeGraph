@@ -55,32 +55,7 @@ public:: true
       "label": "Standards and Interoperability"
     }
   ],
-  "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:ai-has-part",
-        "label": "→ ai:hasPart"
-      }
-    ],
-    "requires": [
-      {
-        "@id": "urn:ngm:class:ai-requires",
-        "label": "→ ai:requires"
-      }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:ai-enables",
-        "label": "→ ai:enables"
-      }
-    ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:ai-implements",
-        "label": "→ ai:implements"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",

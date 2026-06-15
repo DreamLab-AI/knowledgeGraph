@@ -18,21 +18,17 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:nucleus-server",
-        "label": "Nucleus Server"
-      },
-      {
-        "id": "urn:ngm:class:omniverse-kit",
+        "id": "urn:ngm:class:omniverse",
         "label": "Omniverse Kit"
       },
       {
-        "id": "urn:ngm:class:isaac-sim",
+        "id": "urn:ngm:class:nvidia-corporation-isaac-sim",
         "label": "Isaac Sim"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:nvidia-rtx-gpu",
+        "id": "urn:ngm:class:gpu",
         "label": "NVIDIA RTX GPU"
       },
       {
@@ -62,7 +58,7 @@
         "label": "Robot Learning"
       },
       {
-        "id": "urn:ngm:class:collaborative-design",
+        "id": "urn:ngm:class:collaborative-systems-modality-design",
         "label": "Collaborative Design"
       }
     ],
@@ -74,7 +70,7 @@
         "label": "Unreal Engine"
       },
       {
-        "id": "urn:ngm:class:unity-platform",
+        "id": "urn:ngm:class:unity",
         "label": "Unity Platform"
       }
     ],
@@ -108,10 +104,6 @@
       {
         "id": "urn:ngm:class:materialx",
         "label": "MaterialX"
-      },
-      {
-        "id": "urn:ngm:class:physx-engine",
-        "label": "PhysX Engine"
       }
     ],
     "supports": [
@@ -120,12 +112,8 @@
         "label": "Autonomous Vehicle Simulation"
       },
       {
-        "id": "urn:ngm:class:industrial-digital-twin",
+        "id": "urn:ngm:class:digital-twin",
         "label": "Industrial Digital Twin"
-      },
-      {
-        "id": "urn:ngm:class:computer-vision-training",
-        "label": "Computer Vision Training"
       }
     ],
     "standardizedBy": [],
@@ -136,7 +124,7 @@
         "label": "Real-Time Rendering"
       },
       {
-        "id": "urn:ngm:class:3d-collaboration-platform",
+        "id": "urn:ngm:class:collaboration-platform",
         "label": "3D Collaboration Platform"
       }
     ]

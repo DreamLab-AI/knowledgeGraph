@@ -143,10 +143,6 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:centralized-authority",
-        "label": "Centralized Authority"
-      },
-      {
         "@id": "urn:ngm:class:leader-election",
         "label": "Leader Election"
       }
@@ -167,11 +163,11 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:network-finality",
+        "@id": "urn:ngm:class:finality",
         "label": "Network Finality"
       },
       {
-        "@id": "urn:ngm:class:validator-nodes",
+        "@id": "urn:ngm:class:validator-node",
         "label": "Validator Nodes"
       }
     ],

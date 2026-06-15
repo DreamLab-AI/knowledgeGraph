@@ -68,27 +68,10 @@
       {
         "id": "urn:ngm:class:byzantine-fault-tolerance",
         "label": "Byzantine Fault Tolerance"
-      },
-      {
-        "id": "urn:ngm:class:proof-of-identity",
-        "label": "Proof of Identity"
       }
     ],
-    "bridgesTo": [
-      {
-        "id": "urn:ngm:class:federated-learning-poisoning",
-        "label": "Federated Learning Poisoning"
-      },
-      {
-        "id": "urn:ngm:class:social-network-manipulation",
-        "label": "Social Network Manipulation"
-      }
-    ],
+    "bridgesTo": [],
     "uses": [
-      {
-        "id": "urn:ngm:class:fake-node",
-        "label": "Fake Node"
-      },
       {
         "id": "urn:ngm:class:reputation-system",
         "label": "Reputation System"
@@ -105,10 +88,6 @@
       {
         "id": "urn:ngm:class:51-attack",
         "label": "51% Attack"
-      },
-      {
-        "id": "urn:ngm:class:witch-attack",
-        "label": "Witch Attack"
       },
       {
         "id": "urn:ngm:class:decentralized-identity",

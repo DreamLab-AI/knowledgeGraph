@@ -146,10 +146,6 @@ public:: true
         "label": "Head-Mounted Display"
       },
       {
-        "@id": "urn:ngm:class:tracking-sensors",
-        "label": "Tracking Sensors"
-      },
-      {
         "@id": "urn:ngm:class:spatial-audio-system",
         "label": "Spatial Audio System"
       },
@@ -168,7 +164,7 @@ public:: true
         "label": "6DoF Tracking"
       },
       {
-        "@id": "urn:ngm:class:low-latency-display",
+        "@id": "urn:ngm:class:low-latency",
         "label": "Low-Latency Display"
       },
       {

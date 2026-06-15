@@ -54,7 +54,7 @@
         "label": "Provenance Verification"
       },
       {
-        "id": "urn:ngm:class:recall-management",
+        "id": "urn:ngm:class:product-recall-management",
         "label": "Recall Management"
       }
     ],
@@ -87,10 +87,6 @@
       {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
-      },
-      {
-        "id": "urn:ngm:class:erp-system",
-        "label": "ERP System"
       }
     ],
     "uses": [
@@ -118,12 +114,7 @@
       }
     ],
     "standardizedBy": [],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:food-supply-chain",
-        "label": "Food Supply Chain"
-      }
-    ],
+    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:ethereum",

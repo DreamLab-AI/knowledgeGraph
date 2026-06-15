@@ -51,7 +51,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:post-market-surveillance",
+        "id": "urn:ngm:class:market-surveillance",
         "label": "Post-Market Surveillance"
       },
       {
@@ -61,12 +61,8 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:eu-ai-act",
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
-      },
-      {
-        "id": "urn:ngm:class:iso-iec-17000",
-        "label": "ISO/IEC 17000"
       },
       {
         "id": "urn:ngm:class:nist-ai-rmf",
@@ -101,10 +97,6 @@
       {
         "id": "urn:ngm:class:model-evaluation",
         "label": "Model Evaluation"
-      },
-      {
-        "id": "urn:ngm:class:bias-testing",
-        "label": "Bias Testing"
       },
       {
         "id": "urn:ngm:class:robustness-testing",
@@ -144,10 +136,6 @@
       {
         "id": "urn:ngm:class:certification",
         "label": "Certification"
-      },
-      {
-        "id": "urn:ngm:class:accreditation",
-        "label": "Accreditation"
       }
     ]
   },

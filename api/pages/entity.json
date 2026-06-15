@@ -22,10 +22,6 @@
         "label": "Autonomous System"
       },
       {
-        "id": "urn:ngm:class:attribute",
-        "label": "Attribute"
-      },
-      {
         "id": "urn:ngm:class:state",
         "label": "State"
       }
@@ -50,7 +46,7 @@
         "label": "Agentic AI"
       },
       {
-        "id": "urn:ngm:class:semantic-reasoning",
+        "id": "urn:ngm:class:semantic-reasoning-engine",
         "label": "Semantic Reasoning"
       },
       {
@@ -139,14 +135,6 @@
       {
         "id": "urn:ngm:class:simulation",
         "label": "Simulation"
-      },
-      {
-        "id": "urn:ngm:class:owl-individual",
-        "label": "OWL Individual"
-      },
-      {
-        "id": "urn:ngm:class:object-identity",
-        "label": "Object Identity"
       }
     ]
   },

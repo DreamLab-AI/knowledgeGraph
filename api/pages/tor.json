@@ -16,20 +16,7 @@
   "qualityScore": 0.72,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:tor-exit-node",
-        "label": "Tor Exit Node"
-      },
-      {
-        "id": "urn:ngm:class:tor-relay",
-        "label": "Tor Relay"
-      },
-      {
-        "id": "urn:ngm:class:tor-directory-authority",
-        "label": "Tor Directory Authority"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:onion-routing",
@@ -44,7 +31,7 @@
         "label": "Relay Network"
       },
       {
-        "id": "urn:ngm:class:public-key-cryptography",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       }
     ],
@@ -75,10 +62,6 @@
       {
         "id": "urn:ngm:class:onion-routing",
         "label": "Onion Routing"
-      },
-      {
-        "id": "urn:ngm:class:circuit-based-routing",
-        "label": "Circuit-Based Routing"
       }
     ],
     "contrastsWith": [
@@ -105,10 +88,6 @@
       {
         "id": "urn:ngm:class:transport-layer-security",
         "label": "Transport Layer Security"
-      },
-      {
-        "id": "urn:ngm:class:volunteer-infrastructure",
-        "label": "Volunteer Infrastructure"
       }
     ],
     "supports": [],

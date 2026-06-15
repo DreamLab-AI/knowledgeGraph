@@ -18,16 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:field-definition",
-        "label": "Field Definition"
-      },
-      {
         "id": "urn:ngm:class:constraint",
         "label": "Constraint"
-      },
-      {
-        "id": "urn:ngm:class:cardinality-rule",
-        "label": "Cardinality Rule"
       }
     ],
     "requires": [
@@ -66,7 +58,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:schemaless-database",
+        "id": "urn:ngm:class:database-system",
         "label": "Schemaless Database"
       }
     ],

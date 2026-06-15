@@ -22,7 +22,7 @@
         "label": "Fundamental AI Research"
       },
       {
-        "id": "urn:ngm:class:llama",
+        "id": "urn:ngm:class:meta-llama-model-family",
         "label": "LLaMA"
       },
       {
@@ -50,7 +50,7 @@
         "label": "Open-Source AI"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai",
+        "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       },
       {
@@ -69,17 +69,17 @@
         "label": "Responsible AI"
       },
       {
-        "id": "urn:ngm:class:model-card",
+        "id": "urn:ngm:class:ai-model-card",
         "label": "Model Card"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:openai",
+        "id": "urn:ngm:class:openai-research-organisation",
         "label": "OpenAI"
       },
       {
-        "id": "urn:ngm:class:google-deepmind",
+        "id": "urn:ngm:class:google-ai-technology-corporation-deep-mind",
         "label": "Google DeepMind"
       },
       {
@@ -115,7 +115,7 @@
         "label": "Self-Supervised Learning"
       },
       {
-        "id": "urn:ngm:class:pytorch",
+        "id": "urn:ngm:class:python-pytorch-deep-learning-stack",
         "label": "PyTorch"
       }
     ],

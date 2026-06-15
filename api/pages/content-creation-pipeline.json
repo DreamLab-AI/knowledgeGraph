@@ -60,10 +60,6 @@
       {
         "id": "urn:ngm:class:metaverse-content-creation",
         "label": "Metaverse Content Creation"
-      },
-      {
-        "id": "urn:ngm:class:automated-publishing",
-        "label": "Automated Publishing"
       }
     ],
     "dependsOn": [
@@ -86,15 +82,10 @@
         "label": "Provenance Tracking"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:manual-production-workflow",
-        "label": "Manual Production Workflow"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:machine-learning-pipeline",
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
         "label": "Machine Learning Pipeline"
       },
       {
@@ -131,10 +122,6 @@
       {
         "id": "urn:ngm:class:video-production-pipeline",
         "label": "Video Production Pipeline"
-      },
-      {
-        "id": "urn:ngm:class:creative-automation",
-        "label": "Creative Automation"
       }
     ]
   },

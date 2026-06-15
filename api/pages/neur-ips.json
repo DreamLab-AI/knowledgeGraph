@@ -18,19 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:workshop",
-        "label": "Workshop"
-      },
-      {
         "id": "urn:ngm:class:tutorial",
         "label": "Tutorial"
       },
       {
-        "id": "urn:ngm:class:poster-session",
-        "label": "Poster Session"
-      },
-      {
-        "id": "urn:ngm:class:competition",
+        "id": "urn:ngm:class:competition-in-ai",
         "label": "Competition"
       }
     ],
@@ -43,10 +35,6 @@
       {
         "id": "urn:ngm:class:peer-review",
         "label": "Peer Review"
-      },
-      {
-        "id": "urn:ngm:class:open-access-research",
-        "label": "Open Access Research"
       },
       {
         "id": "urn:ngm:class:reproducibility",
@@ -65,10 +53,6 @@
       {
         "id": "urn:ngm:class:double-blind-review",
         "label": "Double-Blind Review"
-      },
-      {
-        "id": "urn:ngm:class:programme-committee",
-        "label": "Programme Committee"
       }
     ],
     "implements": [],
@@ -92,10 +76,6 @@
       {
         "id": "urn:ngm:class:aaai",
         "label": "AAAI"
-      },
-      {
-        "id": "urn:ngm:class:ijcai",
-        "label": "IJCAI"
       }
     ],
     "bridgesTo": [

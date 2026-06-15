@@ -73,10 +73,6 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:min-max-game",
-        "label": "Min-Max Game"
-      },
-      {
         "id": "urn:ngm:class:unsupervised-learning",
         "label": "Unsupervised Learning"
       }
@@ -111,7 +107,7 @@
         "label": "Convolutional Neural Network"
       },
       {
-        "id": "urn:ngm:class:latent-space",
+        "id": "urn:ngm:class:neural-network-latent-space",
         "label": "Latent Space"
       }
     ],

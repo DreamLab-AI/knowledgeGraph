@@ -29,57 +29,129 @@
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:requirements-engineering", "label": "Requirements Engineering"},
-      {"@id": "urn:ngm:class:system-architecture", "label": "System Architecture"},
-      {"@id": "urn:ngm:class:verification-and-validation", "label": "Verification and Validation"},
-      {"@id": "urn:ngm:class:interface-management", "label": "Interface Management"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+      {
+        "@id": "urn:ngm:class:requirements-engineering",
+        "label": "Requirements Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:system-architecture",
+        "label": "System Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:model-based-systems-engineering", "label": "Model-Based Systems Engineering"},
-      {"@id": "urn:ngm:class:configuration-management", "label": "Configuration Management"},
-      {"@id": "urn:ngm:class:stakeholder-analysis", "label": "Stakeholder Analysis"}
+      {
+        "@id": "urn:ngm:class:model-based-systems-engineering",
+        "label": "Model-Based Systems Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-analysis",
+        "label": "Stakeholder Analysis"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:technology-infrastructure", "label": "Technology Infrastructure"},
-      {"@id": "urn:ngm:class:technical-architecture-framework", "label": "Technical Architecture Framework"},
-      {"@id": "urn:ngm:class:system-of-systems", "label": "System of Systems"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:technology-infrastructure",
+        "label": "Technology Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:technical-architecture-framework",
+        "label": "Technical Architecture Framework"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:formal-methods", "label": "Formal Methods"},
-      {"@id": "urn:ngm:class:simulation", "label": "Simulation"}
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:formal-methods",
+        "label": "Formal Methods"
+      },
+      {
+        "@id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:robo-safety-and-standards", "label": "Safety and Standards"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:functional-safety", "label": "Functional Safety"}
+      {
+        "@id": "urn:ngm:class:robo-safety-and-standards",
+        "label": "Safety and Standards"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:open-standard", "label": "Open Standard"},
-      {"@id": "urn:ngm:class:iso-iec-ieee-15288", "label": "ISO/IEC/IEEE 15288"}
+      {
+        "@id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"},
-      {"@id": "urn:ngm:class:project-management", "label": "Project Management"}
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:cyber-physical-systems", "label": "Cyber Physical Systems"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:cyber-physical-systems",
+        "label": "Cyber Physical Systems"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:engineering-methodology", "label": "Engineering Methodology"},
-      {"@id": "urn:ngm:class:systems-thinking", "label": "Systems Thinking"},
-      {"@id": "urn:ngm:class:complexity-theory", "label": "Complexity Theory"},
-      {"@id": "urn:ngm:class:lifecycle-management", "label": "Lifecycle Management"}
+      {
+        "@id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Complexity Theory"
+      },
+      {
+        "@id": "urn:ngm:class:lifecycle-management",
+        "label": "Lifecycle Management"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:se-discipline", "label": "SE Discipline"},
-    {"@id": "urn:ngm:class:systems-integration", "label": "Systems Integration"}
+    {
+      "@id": "urn:ngm:class:se-discipline",
+      "label": "SE Discipline"
+    },
+    {
+      "@id": "urn:ngm:class:systems-integration",
+      "label": "Systems Integration"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

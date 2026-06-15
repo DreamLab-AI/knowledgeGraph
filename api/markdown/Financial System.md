@@ -66,10 +66,6 @@ public:: true
         "label": "Financial Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:capital-market",
-        "label": "Capital Market"
-      },
-      {
         "@id": "urn:ngm:class:banking-system",
         "label": "Banking System"
       },
@@ -146,7 +142,7 @@ public:: true
         "label": "Smart Contract"
       },
       {
-        "@id": "urn:ngm:class:tokenised-economy",
+        "@id": "urn:ngm:class:token-economy",
         "label": "Tokenised Economy"
       }
     ],
@@ -162,7 +158,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:economic-system",
+        "@id": "urn:ngm:class:economic-systems",
         "label": "Economic System"
       },
       {

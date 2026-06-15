@@ -18,43 +18,11 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:checkpoint-index",
-        "label": "Checkpoint Index"
-      },
-      {
-        "id": "urn:ngm:class:ema-shadow-weights",
-        "label": "EMA Shadow Weights"
-      },
-      {
-        "id": "urn:ngm:class:optimiser-state",
-        "label": "Optimiser State"
-      },
-      {
-        "id": "urn:ngm:class:rng-state",
-        "label": "RNG State"
-      },
-      {
-        "id": "urn:ngm:class:shard-metadata",
-        "label": "Shard Metadata"
-      },
-      {
-        "id": "urn:ngm:class:step-counter",
-        "label": "Step Counter"
-      },
-      {
-        "id": "urn:ngm:class:weight-tensor",
-        "label": "Weight Tensor"
-      },
-      {
         "id": "urn:ngm:class:learning-rate-schedule",
         "label": "Learning Rate Schedule"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:checkpoint-frequency-policy",
-        "label": "Checkpoint Frequency Policy"
-      },
       {
         "id": "urn:ngm:class:file-system",
         "label": "File System"
@@ -78,15 +46,11 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:checkpoint-averaging",
-        "label": "Checkpoint Averaging"
-      },
-      {
-        "id": "urn:ngm:class:distributed-training-recovery",
+        "id": "urn:ngm:class:distributed-training",
         "label": "Distributed Training Recovery"
       },
       {
-        "id": "urn:ngm:class:empirical-experimental-design-reproducibility",
+        "id": "urn:ngm:class:empirical-experimental-design",
         "label": "Experiment Reproducibility"
       },
       {
@@ -96,10 +60,6 @@
       {
         "id": "urn:ngm:class:model-versioning",
         "label": "Model Versioning"
-      },
-      {
-        "id": "urn:ngm:class:training-resumption",
-        "label": "Training Resumption"
       },
       {
         "id": "urn:ngm:class:transfer-learning",
@@ -166,7 +126,7 @@
         "label": "FSDP"
       },
       {
-        "id": "urn:ngm:class:gguf",
+        "id": "urn:ngm:class:gguf-format",
         "label": "GGUF"
       },
       {
@@ -180,10 +140,6 @@
       {
         "id": "urn:ngm:class:safetensors",
         "label": "Safetensors"
-      },
-      {
-        "id": "urn:ngm:class:saved-model",
-        "label": "SavedModel"
       },
       {
         "id": "urn:ngm:class:ze-ro",
@@ -281,7 +237,7 @@
         "label": "Quantisation"
       },
       {
-        "id": "urn:ngm:class:torch-script",
+        "id": "urn:ngm:class:py-torch",
         "label": "TorchScript"
       },
       {

@@ -362,7 +362,7 @@ public:: true
         "label": "Dexterous Manipulation"
       },
       {
-        "@id": "urn:ngm:class:onboard-compute",
+        "@id": "urn:ngm:class:compute-resources",
         "label": "Onboard Compute"
       },
       {
@@ -378,7 +378,7 @@ public:: true
         "label": "Tactile Sensing"
       },
       {
-        "@id": "urn:ngm:class:vision-system",
+        "@id": "urn:ngm:class:computer-vision-system",
         "label": "Vision System"
       },
       {
@@ -390,10 +390,6 @@ public:: true
       {
         "@id": "urn:ngm:class:bipedal-balance",
         "label": "Bipedal Balance"
-      },
-      {
-        "@id": "urn:ngm:class:contact-dynamics",
-        "label": "Contact Dynamics"
       },
       {
         "@id": "urn:ngm:class:power-management",
@@ -414,16 +410,12 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:elder-care-robotics",
+        "@id": "urn:ngm:class:social-robotics",
         "label": "Elder Care Robotics"
       },
       {
-        "@id": "urn:ngm:class:general-purpose-manipulation",
+        "@id": "urn:ngm:class:manipulation",
         "label": "General-Purpose Manipulation"
-      },
-      {
-        "@id": "urn:ngm:class:hazardous-environment-inspection",
-        "label": "Hazardous Environment Inspection"
       },
       {
         "@id": "urn:ngm:class:human-robot-collaboration",
@@ -468,10 +460,6 @@ public:: true
       {
         "@id": "urn:ngm:class:domain-randomisation",
         "label": "Domain Randomisation"
-      },
-      {
-        "@id": "urn:ngm:class:multi-modal-sensing",
-        "label": "Multi-Modal Sensing"
       },
       {
         "@id": "urn:ngm:class:deep-learning",

@@ -292,10 +292,6 @@ public:: true
       {
         "@id": "urn:ngm:class:superintelligence",
         "label": "Superintelligence"
-      },
-      {
-        "@id": "urn:ngm:class:takeoff-scenarios",
-        "label": "Takeoff Scenarios"
       }
     ],
     "requires": [
@@ -330,30 +326,18 @@ public:: true
         "label": "Mind Uploading"
       },
       {
-        "@id": "urn:ngm:class:post-scarcity-economics",
+        "@id": "urn:ngm:class:economics",
         "label": "Post-Scarcity Economics"
       },
       {
         "@id": "urn:ngm:class:superintelligence",
         "label": "Superintelligence"
-      },
-      {
-        "@id": "urn:ngm:class:technological-acceleration",
-        "label": "Technological Acceleration"
       }
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:exponential-growth-models",
-        "label": "Exponential Growth Models"
-      },
-      {
         "@id": "urn:ngm:class:intelligence-explosion",
         "label": "Intelligence Explosion"
-      },
-      {
-        "@id": "urn:ngm:class:kurzweil-law-of-accelerating-returns",
-        "label": "Kurzweil Law of Accelerating Returns"
       },
       {
         "@id": "urn:ngm:class:recursive-self-improvement",
@@ -364,22 +348,6 @@ public:: true
       {
         "@id": "urn:ngm:class:agi-timelines",
         "label": "AGI Timelines"
-      },
-      {
-        "@id": "urn:ngm:class:ai-impacts-surveys",
-        "label": "AI Impacts Surveys"
-      },
-      {
-        "@id": "urn:ngm:class:bayesian-forecasting",
-        "label": "Bayesian Forecasting"
-      },
-      {
-        "@id": "urn:ngm:class:compute-scaling",
-        "label": "Compute Scaling"
-      },
-      {
-        "@id": "urn:ngm:class:metaculus",
-        "label": "Metaculus"
       }
     ],
     "relatedTo": [
@@ -428,20 +396,8 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:cambridge-cser",
-        "label": "Cambridge CSER"
-      },
-      {
         "@id": "urn:ngm:class:future-of-humanity-institute",
         "label": "Future of Humanity Institute"
-      },
-      {
-        "@id": "urn:ngm:class:machine-intelligence-research-institute",
-        "label": "Machine Intelligence Research Institute"
-      },
-      {
-        "@id": "urn:ngm:class:oxford-gov-ai",
-        "label": "Oxford GovAI"
       }
     ]
   },

@@ -173,15 +173,11 @@ alias:: ObstacleAvoidance, RB-1019-obstacle-avoidance
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:collision-free-motion",
-        "label": "Collision-Free Motion"
-      },
-      {
-        "@id": "urn:ngm:class:safe-navigation",
+        "@id": "urn:ngm:class:navigation",
         "label": "Safe Navigation"
       },
       {
-        "@id": "urn:ngm:class:autonomous-vehicles",
+        "@id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
       }
     ],
@@ -205,14 +201,6 @@ alias:: ObstacleAvoidance, RB-1019-obstacle-avoidance
       {
         "@id": "urn:ngm:class:potential-field-method",
         "label": "Potential Field Method"
-      },
-      {
-        "@id": "urn:ngm:class:dynamic-window-approach",
-        "label": "Dynamic Window Approach"
-      },
-      {
-        "@id": "urn:ngm:class:velocity-obstacles",
-        "label": "Velocity Obstacles"
       }
     ],
     "dependsOn": [
@@ -227,7 +215,7 @@ alias:: ObstacleAvoidance, RB-1019-obstacle-avoidance
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:safety-systems",
+        "@id": "urn:ngm:class:safety-system",
         "label": "Safety Systems"
       },
       {
@@ -237,22 +225,14 @@ alias:: ObstacleAvoidance, RB-1019-obstacle-avoidance
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:deliberative-planning",
+        "@id": "urn:ngm:class:planning",
         "label": "Deliberative Planning"
       }
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:mobile-robots",
+        "@id": "urn:ngm:class:mobile-robot",
         "label": "Mobile Robots"
-      },
-      {
-        "@id": "urn:ngm:class:drones",
-        "label": "Drones"
-      },
-      {
-        "@id": "urn:ngm:class:avoidance-maneuver",
-        "label": "Avoidance Maneuver"
       },
       {
         "@id": "urn:ngm:class:cobot-safety-levels",

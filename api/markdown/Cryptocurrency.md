@@ -742,7 +742,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:24-7-settlement",
+        "@id": "urn:ngm:class:real-time-settlement",
         "label": "24/7 Settlement"
       },
       {
@@ -776,19 +776,15 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:cryptographic-ownership",
-        "label": "Cryptographic Ownership"
-      },
-      {
-        "@id": "urn:ngm:class:double-spending-prevention",
+        "@id": "urn:ngm:class:double-spend-prevention",
         "label": "Double-Spending Prevention"
       },
       {
-        "@id": "urn:ngm:class:hard-money-property",
+        "@id": "urn:ngm:class:hard-money",
         "label": "Hard Money Property"
       },
       {
-        "@id": "urn:ngm:class:predictable-issuance-schedule",
+        "@id": "urn:ngm:class:emission-schedule",
         "label": "Predictable Issuance Schedule"
       },
       {
@@ -874,10 +870,6 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:de-pin",
-        "label": "DePIN"
-      },
-      {
         "@id": "urn:ngm:class:decentralised-finance",
         "label": "Decentralised Finance"
       },
@@ -908,7 +900,7 @@ public:: true
         "label": "Bitcoin Improvement Proposals"
       },
       {
-        "@id": "urn:ngm:class:ethereum-smart-contract-platform-request-for-comments",
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
         "label": "Ethereum Request for Comments"
       },
       {
@@ -920,11 +912,7 @@ public:: true
         "label": "FATF Travel Rule"
       },
       {
-        "@id": "urn:ngm:class:fca-cryptoasset-promotions-regime-ps23-6",
-        "label": "FCA Cryptoasset Promotions Regime PS23-6"
-      },
-      {
-        "@id": "urn:ngm:class:iso-24165-digital-token-identifier",
+        "@id": "urn:ngm:class:iso-24165",
         "label": "ISO 24165 Digital Token Identifier"
       },
       {

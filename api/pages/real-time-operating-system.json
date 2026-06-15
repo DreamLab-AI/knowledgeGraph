@@ -18,10 +18,6 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:task-scheduler",
-        "label": "Task Scheduler"
-      },
-      {
         "id": "urn:ngm:class:interrupt-handler",
         "label": "Interrupt Handler"
       },
@@ -31,10 +27,6 @@
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:embedded-processor",
-        "label": "Embedded Processor"
-      },
       {
         "id": "urn:ngm:class:deterministic-scheduling",
         "label": "Deterministic Scheduling"
@@ -69,28 +61,11 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:preemptive-scheduling",
-        "label": "Preemptive Scheduling"
-      },
-      {
-        "id": "urn:ngm:class:priority-inversion-prevention",
-        "label": "Priority Inversion Prevention"
-      },
-      {
         "id": "urn:ngm:class:inter-process-communication",
         "label": "Inter-Process Communication"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:general-purpose-operating-system",
-        "label": "General-Purpose Operating System"
-      },
-      {
-        "id": "urn:ngm:class:soft-real-time-system",
-        "label": "Soft Real-Time System"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:edge-ai",
@@ -109,10 +84,6 @@
       {
         "id": "urn:ngm:class:embedded-ai-frameworks",
         "label": "Embedded AI Frameworks"
-      },
-      {
-        "id": "urn:ngm:class:semaphore",
-        "label": "Semaphore"
       },
       {
         "id": "urn:ngm:class:message-queue",
@@ -151,10 +122,6 @@
       {
         "id": "urn:ngm:class:freertos",
         "label": "FreeRTOS"
-      },
-      {
-        "id": "urn:ngm:class:zephyr-rtos",
-        "label": "Zephyr RTOS"
       }
     ]
   },

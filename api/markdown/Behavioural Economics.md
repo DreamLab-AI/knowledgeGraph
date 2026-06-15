@@ -23,53 +23,133 @@ public:: true
   "definition": "Behavioural economics is an interdisciplinary field that integrates insights from cognitive psychology and social science into economic modelling, documenting systematic ways in which human decision-making deviates from the predictions of classical rational-choice theory. It explains phenomena such as loss aversion, anchoring, present bias, and herd behaviour that standard utility maximisation models cannot account for.",
   "domain": "finance",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:economics", "label": "Economics"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:economics",
+    "label": "Economics"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:prospect-theory", "label": "Prospect Theory"},
-      {"@id": "urn:ngm:class:nudge-theory", "label": "Nudge Theory"},
-      {"@id": "urn:ngm:class:bounded-rationality", "label": "Bounded Rationality"},
-      {"@id": "urn:ngm:class:loss-aversion", "label": "Loss Aversion"},
-      {"@id": "urn:ngm:class:present-bias", "label": "Present Bias"}
+      {
+        "@id": "urn:ngm:class:prospect-theory",
+        "label": "Prospect Theory"
+      },
+      {
+        "@id": "urn:ngm:class:nudge-theory",
+        "label": "Nudge Theory"
+      },
+      {
+        "@id": "urn:ngm:class:bounded-rationality",
+        "label": "Bounded Rationality"
+      },
+      {
+        "@id": "urn:ngm:class:loss-aversion",
+        "label": "Loss Aversion"
+      },
+      {
+        "@id": "urn:ngm:class:present-bias",
+        "label": "Present Bias"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:decision-science", "label": "Decision Science"}
+      {
+        "@id": "urn:ngm:class:decision-science",
+        "label": "Decision Science"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cognitive-psychology", "label": "Cognitive Psychology"},
-      {"@id": "urn:ngm:class:experimental-economics", "label": "Experimental Economics"}
+      {
+        "@id": "urn:ngm:class:cognitive-psychology",
+        "label": "Cognitive Psychology"
+      },
+      {
+        "@id": "urn:ngm:class:experimental-economics",
+        "label": "Experimental Economics"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:heuristic-methods", "label": "Heuristic Methods"},
-      {"@id": "urn:ngm:class:behavioral-modeling", "label": "Behavioral Modeling"},
-      {"@id": "urn:ngm:class:randomised-controlled-trial", "label": "Randomised Controlled Trial"}
+      {
+        "@id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      },
+      {
+        "@id": "urn:ngm:class:behavioral-modeling",
+        "label": "Behavioral Modeling"
+      },
+      {
+        "@id": "urn:ngm:class:randomised-controlled-trial",
+        "label": "Randomised Controlled Trial"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:mechanism-design", "label": "Mechanism Design"},
-      {"@id": "urn:ngm:class:incentive-alignment", "label": "Incentive Alignment"},
-      {"@id": "urn:ngm:class:choice-architecture", "label": "Choice Architecture"},
-      {"@id": "urn:ngm:class:public-policy-design", "label": "Public Policy Design"}
+      {
+        "@id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "@id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      },
+      {
+        "@id": "urn:ngm:class:choice-architecture",
+        "label": "Choice Architecture"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rational-choice-theory", "label": "Rational Choice Theory"},
-      {"@id": "urn:ngm:class:expected-utility-theory", "label": "Expected Utility Theory"}
+      {
+        "@id": "urn:ngm:class:rational-choice-theory",
+        "label": "Rational Choice Theory"
+      },
+      {
+        "@id": "urn:ngm:class:expected-utility-theory",
+        "label": "Expected Utility Theory"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:reward-modelling", "label": "Reward Modelling"},
-      {"@id": "urn:ngm:class:algorithmic-recommendation", "label": "Algorithmic Recommendation"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reward-modelling",
+        "label": "Reward Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-recommendation",
+        "label": "Algorithmic Recommendation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:incentive-compatibility", "label": "Incentive Compatibility"},
-      {"@id": "urn:ngm:class:behavioral-analytics", "label": "Behavioral Analytics"},
-      {"@id": "urn:ngm:class:game-theory", "label": "Game Theory"},
-      {"@id": "urn:ngm:class:contract-theory", "label": "Contract Theory"},
-      {"@id": "urn:ngm:class:development-economics", "label": "Development Economics"}
+      {
+        "@id": "urn:ngm:class:incentive-compatibility",
+        "label": "Incentive Compatibility"
+      },
+      {
+        "@id": "urn:ngm:class:behavioral-analytics",
+        "label": "Behavioral Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "@id": "urn:ngm:class:contract-theory",
+        "label": "Contract Theory"
+      },
+      {
+        "@id": "urn:ngm:class:development-economics",
+        "label": "Development Economics"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:behavioral-economics", "label": "Behavioral Economics"},
-    {"@id": "urn:ngm:class:psychological-economics", "label": "Psychological Economics"}
+    {
+      "@id": "urn:ngm:class:behavioral-economics",
+      "label": "Behavioral Economics"
+    },
+    {
+      "@id": "urn:ngm:class:psychological-economics",
+      "label": "Psychological Economics"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -24,55 +24,134 @@ public:: true
   "domain": "governance",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:compliance-framework", "label": "Compliance Framework"}
+    {
+      "@id": "urn:ngm:class:compliance-framework",
+      "label": "Compliance Framework"
+    }
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:policy-engine", "label": "Policy Engine"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:regulatory-technology", "label": "Regulatory Technology"},
-      {"@id": "urn:ngm:class:rule-engine", "label": "Rule Engine"},
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"}
+      {
+        "@id": "urn:ngm:class:policy-engine",
+        "label": "Policy Engine"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      },
+      {
+        "@id": "urn:ngm:class:rule-engine",
+        "label": "Rule Engine"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
-      {"@id": "urn:ngm:class:compliance-verification", "label": "Compliance Verification"},
-      {"@id": "urn:ngm:class:compliance-audit-trail", "label": "Compliance Audit Trail"},
-      {"@id": "urn:ngm:class:continuous-auditing", "label": "Continuous Auditing"},
-      {"@id": "urn:ngm:class:real-time-reporting", "label": "Real-Time Reporting"}
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-verification",
+        "label": "Compliance Verification"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-audit-trail",
+        "label": "Compliance Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-auditing",
+        "label": "Continuous Auditing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:machine-readable-policy", "label": "Machine-Readable Policy"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
-      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
-      {"@id": "urn:ngm:class:regulatory-reporting", "label": "Regulatory Reporting"}
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:compliance-as-code", "label": "Compliance as Code"},
-      {"@id": "urn:ngm:class:policy-as-code", "label": "Policy as Code"}
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance as Code"
+      },
+      {
+        "@id": "urn:ngm:class:policy-as-code",
+        "label": "Policy as Code"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:devsecops", "label": "DevSecOps"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:devsecops",
+        "label": "DevSecOps"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:security", "label": "Security"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:manual-audit", "label": "Manual Audit"}
+      {
+        "@id": "urn:ngm:class:audit",
+        "label": "Manual Audit"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:compliance-automation", "label": "Compliance Automation"},
-    {"@id": "urn:ngm:class:regtech-automation", "label": "RegTech Automation"}
+    {
+      "@id": "urn:ngm:class:compliance-automation",
+      "label": "Compliance Automation"
+    },
+    {
+      "@id": "urn:ngm:class:regtech-automation",
+      "label": "RegTech Automation"
+    }
   ],
   "quality": 0.72,
   "provenance": {

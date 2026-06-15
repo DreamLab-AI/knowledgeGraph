@@ -24,66 +24,154 @@ public:: true
   "domain": "security",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:authentication-mechanism", "label": "Authentication Mechanism"}
+    {
+      "@id": "urn:ngm:class:authentication-mechanism",
+      "label": "Authentication Mechanism"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:one-time-password", "label": "One-Time Password"},
-      {"@id": "urn:ngm:class:hardware-security-key", "label": "Hardware Security Key"},
-      {"@id": "urn:ngm:class:push-notification-authentication", "label": "Push Notification Authentication"},
-      {"@id": "urn:ngm:class:biometric-authentication", "label": "Biometric Authentication"}
+      {
+        "@id": "urn:ngm:class:one-time-password",
+        "label": "One-Time Password"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security-key",
+        "label": "Hardware Security Key"
+      },
+      {
+        "@id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:identity-verification", "label": "Identity Verification"},
-      {"@id": "urn:ngm:class:credential-management", "label": "Credential Management"},
-      {"@id": "urn:ngm:class:shared-secret", "label": "Shared Secret"}
+      {
+        "@id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:digital-identity-management", "label": "Digital Identity Management"},
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"},
-      {"@id": "urn:ngm:class:privileged-access-management", "label": "Privileged Access Management"}
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity-management",
+        "label": "Digital Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:privileged-access-management",
+        "label": "Privileged Access Management"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cryptographic-keys", "label": "Cryptographic Keys"},
-      {"@id": "urn:ngm:class:public-key-infrastructure", "label": "Public Key Infrastructure"},
-      {"@id": "urn:ngm:class:secure-channel", "label": "Secure Channel"}
+      {
+        "@id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:secure-channel",
+        "label": "Secure Channel"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:biometric-binding-mechanism", "label": "Biometric Binding Mechanism"},
-      {"@id": "urn:ngm:class:time-based-one-time-password", "label": "Time-Based One-Time Password"},
-      {"@id": "urn:ngm:class:fido2-webauthn", "label": "FIDO2 WebAuthn"}
+      {
+        "@id": "urn:ngm:class:biometric-binding-mechanism",
+        "label": "Biometric Binding Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:fido2",
+        "label": "FIDO2 WebAuthn"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:data-security", "label": "Data Security"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+      {
+        "@id": "urn:ngm:class:data-security",
+        "label": "Data Security"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:authentication-standards", "label": "Authentication Standards"},
-      {"@id": "urn:ngm:class:nist-sp-800-63", "label": "NIST SP 800-63"},
-      {"@id": "urn:ngm:class:fido-alliance", "label": "FIDO Alliance"}
+      {
+        "@id": "urn:ngm:class:authentication-standards",
+        "label": "Authentication Standards"
+      },
+      {
+        "@id": "urn:ngm:class:nist-sp-800-63",
+        "label": "NIST SP 800-63"
+      },
+      {
+        "@id": "urn:ngm:class:fido-alliance",
+        "label": "FIDO Alliance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:single-factor-authentication", "label": "Single-Factor Authentication"},
-      {"@id": "urn:ngm:class:password-authentication", "label": "Password Authentication"}
+      {
+        "@id": "urn:ngm:class:password-authentication",
+        "label": "Password Authentication"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:authentication", "label": "Authentication"},
-      {"@id": "urn:ngm:class:cybersecurity-standard", "label": "Cybersecurity Standard"},
-      {"@id": "urn:ngm:class:identity-and-access-management", "label": "Identity and Access Management"},
-      {"@id": "urn:ngm:class:adaptive-authentication", "label": "Adaptive Authentication"},
-      {"@id": "urn:ngm:class:phishing-resistance", "label": "Phishing Resistance"}
+      {
+        "@id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity-standard",
+        "label": "Cybersecurity Standard"
+      },
+      {
+        "@id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-authentication",
+        "label": "Adaptive Authentication"
+      },
+      {
+        "@id": "urn:ngm:class:phishing-resistance",
+        "label": "Phishing Resistance"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:mfa", "label": "MFA"},
-    {"@id": "urn:ngm:class:two-factor-authentication", "label": "Two-Factor Authentication"},
-    {"@id": "urn:ngm:class:strong-authentication", "label": "Strong Authentication"}
+    {
+      "@id": "urn:ngm:class:mfa",
+      "label": "MFA"
+    },
+    {
+      "@id": "urn:ngm:class:two-factor-authentication",
+      "label": "Two-Factor Authentication"
+    },
+    {
+      "@id": "urn:ngm:class:strong-authentication",
+      "label": "Strong Authentication"
+    }
   ],
   "quality": 0.74,
   "provenance": {

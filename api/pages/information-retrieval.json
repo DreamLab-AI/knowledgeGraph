@@ -28,17 +28,9 @@
       {
         "id": "urn:ngm:class:relevance-ranking",
         "label": "Relevance Ranking"
-      },
-      {
-        "id": "urn:ngm:class:document-indexing",
-        "label": "Document Indexing"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:text-representation",
-        "label": "Text Representation"
-      },
       {
         "id": "urn:ngm:class:tokenisation",
         "label": "Tokenisation"
@@ -68,7 +60,7 @@
         "label": "Corpus"
       },
       {
-        "id": "urn:ngm:class:evaluation-metrics",
+        "id": "urn:ngm:class:evaluation-metric",
         "label": "Evaluation Metrics"
       }
     ],
@@ -77,10 +69,6 @@
       {
         "id": "urn:ngm:class:database-query",
         "label": "Database Query"
-      },
-      {
-        "id": "urn:ngm:class:data-mining",
-        "label": "Data Mining"
       }
     ],
     "bridgesTo": [
@@ -128,7 +116,7 @@
         "label": "Large Language Model"
       },
       {
-        "id": "urn:ngm:class:approximate-nearest-neighbour",
+        "id": "urn:ngm:class:nearest-neighbor-search",
         "label": "Approximate Nearest Neighbour"
       }
     ]

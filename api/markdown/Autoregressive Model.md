@@ -77,10 +77,6 @@ public:: true
         "label": "Probabilistic Model"
       },
       {
-        "@id": "urn:ngm:class:chain-rule-of-probability",
-        "label": "Chain Rule of Probability"
-      },
-      {
         "@id": "urn:ngm:class:tokenisation",
         "label": "Tokenisation"
       }
@@ -95,10 +91,6 @@ public:: true
         "label": "Text Generation"
       },
       {
-        "@id": "urn:ngm:class:neural-audio-synthesis",
-        "label": "Neural Audio Synthesis"
-      },
-      {
         "@id": "urn:ngm:class:image-generation",
         "label": "Image Generation"
       }
@@ -109,7 +101,7 @@ public:: true
         "label": "Transformer"
       },
       {
-        "@id": "urn:ngm:class:masked-self-attention",
+        "@id": "urn:ngm:class:self-attention",
         "label": "Masked Self-Attention"
       },
       {
@@ -173,7 +165,7 @@ public:: true
         "label": "Reinforcement Learning from Human Feedback"
       },
       {
-        "@id": "urn:ngm:class:multimodal-ai",
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       }
     ]

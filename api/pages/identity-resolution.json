@@ -22,10 +22,6 @@
         "label": "Probabilistic Matching"
       },
       {
-        "id": "urn:ngm:class:deterministic-matching",
-        "label": "Deterministic Matching"
-      },
-      {
         "id": "urn:ngm:class:identity-graph",
         "label": "Identity Graph"
       }
@@ -34,17 +30,9 @@
       {
         "id": "urn:ngm:class:data-deduplication",
         "label": "Data Deduplication"
-      },
-      {
-        "id": "urn:ngm:class:record-linkage",
-        "label": "Record Linkage"
       }
     ],
     "enables": [
-      {
-        "id": "urn:ngm:class:cross-device-tracking",
-        "label": "Cross-Device Tracking"
-      },
       {
         "id": "urn:ngm:class:fraud-detection",
         "label": "Fraud Detection"
@@ -58,10 +46,6 @@
       {
         "id": "urn:ngm:class:graph-database",
         "label": "Graph Database"
-      },
-      {
-        "id": "urn:ngm:class:hashing-function",
-        "label": "Hashing Function"
       }
     ],
     "implements": [],
@@ -77,7 +61,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:verifiable-credential",
+        "id": "urn:ngm:class:verifiable-credential-vc",
         "label": "Verifiable Credential"
       },
       {
@@ -89,29 +73,17 @@
       {
         "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
-      },
-      {
-        "id": "urn:ngm:class:data-enrichment",
-        "label": "Data Enrichment"
-      },
-      {
-        "id": "urn:ngm:class:universal-id",
-        "label": "Universal ID"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:audience-segmentation",
         "label": "Audience Segmentation"
-      },
-      {
-        "id": "urn:ngm:class:patient-matching",
-        "label": "Patient Matching"
       }
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:w3c-did",
+        "id": "urn:ngm:class:w3-c-did",
         "label": "W3C Decentralized Identifiers"
       }
     ],

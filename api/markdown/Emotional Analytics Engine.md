@@ -142,24 +142,8 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:affective-state-predictor",
-        "label": "Affective State Predictor"
-      },
-      {
-        "@id": "urn:ngm:class:facial-expression-analyzer",
-        "label": "Facial Expression Analyzer"
-      },
-      {
-        "@id": "urn:ngm:class:physiological-sensor-processor",
-        "label": "Physiological Sensor Processor"
-      },
-      {
-        "@id": "urn:ngm:class:sentiment-classification-model",
+        "@id": "urn:ngm:class:sentiment-analysis",
         "label": "Sentiment Classification Model"
-      },
-      {
-        "@id": "urn:ngm:class:voice-emotion-detector",
-        "label": "Voice Emotion Detector"
       }
     ],
     "requires": [
@@ -168,7 +152,7 @@ public:: true
         "label": "Privacy Protection"
       },
       {
-        "@id": "urn:ngm:class:sensor-data-stream",
+        "@id": "urn:ngm:class:sensor-data",
         "label": "Sensor Data Stream"
       },
       {
@@ -202,10 +186,6 @@ public:: true
       {
         "@id": "urn:ngm:class:affective-computing-system",
         "label": "Affective Computing System"
-      },
-      {
-        "@id": "urn:ngm:class:user-experience-analytics-platform",
-        "label": "User Experience Analytics Platform"
       }
     ]
   },

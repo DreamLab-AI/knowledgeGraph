@@ -23,58 +23,131 @@ public:: true
   "definition": "A Threshold Signature Scheme (TSS) is a cryptographic protocol in which a private key is distributed among n parties such that any subset of at least t parties can jointly compute a valid digital signature without any single party ever possessing the complete private key, while fewer than t parties gain zero information about the key. TSS extends threshold secret sharing (Shamir's Secret Sharing) to the signing operation itself, producing a signature that is indistinguishable on-chain from a standard single-key signature, thereby enhancing privacy and reducing transaction fees compared to traditional on-chain multisig. TSS underpins distributed key management for exchanges, MPC wallets, and cross-chain bridge custody architectures.",
   "domain": "security",
   "maturity": "emerging",
-  "subClassOf": {"@id": "urn:ngm:class:signature-scheme", "label": "Signature Scheme"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:signature-scheme",
+    "label": "Signature Scheme"
+  },
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:distributed-key-generation", "label": "Distributed Key Generation"},
-      {"@id": "urn:ngm:class:secret-sharing", "label": "Secret Sharing"},
-      {"@id": "urn:ngm:class:secure-multi-party-computation", "label": "Secure Multi-Party Computation"}
+      {
+        "@id": "urn:ngm:class:distributed-key-generation",
+        "label": "Distributed Key Generation"
+      },
+      {
+        "@id": "urn:ngm:class:secret-sharing",
+        "label": "Secret Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-keys", "label": "Cryptographic Keys"},
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"},
-      {"@id": "urn:ngm:class:schnorr-signature", "label": "Schnorr Signature"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+      {
+        "@id": "urn:ngm:class:cryptographic-keys",
+        "label": "Cryptographic Keys"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:key-management", "label": "Key Management"},
-      {"@id": "urn:ngm:class:threshold-cryptography", "label": "Threshold Cryptography"},
-      {"@id": "urn:ngm:class:decentralized-governance", "label": "Decentralized Governance"},
-      {"@id": "urn:ngm:class:mpc-wallet", "label": "MPC Wallet"},
-      {"@id": "urn:ngm:class:institutional-custody", "label": "Institutional Custody"}
+      {
+        "@id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "@id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      },
+      {
+        "@id": "urn:ngm:class:mpc-wallet",
+        "label": "MPC Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:institutional-custody",
+        "label": "Institutional Custody"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:proactive-secret-sharing", "label": "Proactive Secret Sharing"}
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:multi-party-computation", "label": "Multi-Party Computation"},
-      {"@id": "urn:ngm:class:paillier-encryption", "label": "Paillier Encryption"}
+      {
+        "@id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Paillier Encryption"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:multi-signature", "label": "Multi-Signature"},
-      {"@id": "urn:ngm:class:hardware-security-module", "label": "Hardware Security Module"},
-      {"@id": "urn:ngm:class:single-key-custody", "label": "Single-Key Custody"}
+      {
+        "@id": "urn:ngm:class:multi-signature",
+        "label": "Multi-Signature"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"},
-      {"@id": "urn:ngm:class:proof-of-stake-consensus", "label": "Proof-of-Stake Consensus"}
-    ],
-    "standardizedBy": [
-      {"@id": "urn:ngm:class:ietf-rfc-9591", "label": "IETF RFC 9591 (FROST)"}
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof-of-Stake Consensus"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:trusted-execution-environment", "label": "Trusted Execution Environment"},
-      {"@id": "urn:ngm:class:decentralized-finance", "label": "Decentralized Finance"}
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:bls-signature", "label": "BLS Signature"},
-      {"@id": "urn:ngm:class:taproot", "label": "Taproot"}
+      {
+        "@id": "urn:ngm:class:bls-signature",
+        "label": "BLS Signature"
+      },
+      {
+        "@id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:tss", "label": "TSS"},
-    {"@id": "urn:ngm:class:threshold-ecdsa", "label": "Threshold ECDSA"}
+    {
+      "@id": "urn:ngm:class:tss",
+      "label": "TSS"
+    },
+    {
+      "@id": "urn:ngm:class:threshold-ecdsa",
+      "label": "Threshold ECDSA"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

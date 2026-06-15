@@ -77,12 +77,8 @@ public:: true
         "label": "UTXO"
       },
       {
-        "@id": "urn:ngm:class:ada-cryptocurrency",
+        "@id": "urn:ngm:class:cryptocurrency",
         "label": "ADA Cryptocurrency"
-      },
-      {
-        "@id": "urn:ngm:class:peer-reviewed-research",
-        "label": "Peer-Reviewed Research"
       }
     ],
     "enables": [
@@ -105,11 +101,11 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:ouroboros-protocol",
+        "@id": "urn:ngm:class:ouroboros-consensus",
         "label": "Ouroboros Protocol"
       },
       {
-        "@id": "urn:ngm:class:extended-utxo-model",
+        "@id": "urn:ngm:class:utxo-model",
         "label": "Extended UTXO Model"
       },
       {
@@ -117,28 +113,10 @@ public:: true
         "label": "Formal Verification"
       }
     ],
-    "uses": [
-      {
-        "@id": "urn:ngm:class:plutus",
-        "label": "Plutus"
-      },
-      {
-        "@id": "urn:ngm:class:haskell",
-        "label": "Haskell"
-      },
-      {
-        "@id": "urn:ngm:class:stake-pool",
-        "label": "Stake Pool"
-      }
-    ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:cardano-settlement-layer",
+        "@id": "urn:ngm:class:settlement-layer",
         "label": "Cardano Settlement Layer"
-      },
-      {
-        "@id": "urn:ngm:class:cardano-computation-layer",
-        "label": "Cardano Computation Layer"
       }
     ],
     "contrastsWith": [
@@ -166,10 +144,6 @@ public:: true
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:iohk",
-        "label": "IOHK"
-      },
       {
         "@id": "urn:ngm:class:consensus-mechanism",
         "label": "Consensus Mechanism"

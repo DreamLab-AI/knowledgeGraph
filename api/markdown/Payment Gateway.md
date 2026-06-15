@@ -23,59 +23,133 @@ public:: true
   "definition": "A Payment Gateway is a technology service that authorises, processes, and routes financial transactions between buyers and merchants, acting as the intermediary between a merchant's point-of-sale or e-commerce system and the acquiring bank or payment network. It encrypts sensitive payment credentials, communicates with card networks and issuing banks to obtain authorisation, and returns the result to the merchant in real time. Modern payment gateways provide APIs, SDKs, fraud detection, currency conversion, and compliance tooling, and increasingly support cryptocurrency payments and programmable settlement rails alongside traditional card and bank transfer methods. Payment gateways are foundational infrastructure for e-commerce and digital commerce ecosystems.",
   "domain": "finance",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:payment-system", "label": "Payment System"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:payment-system",
+    "label": "Payment System"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"},
-      {"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"},
-      {"@id": "urn:ngm:class:currency-conversion", "label": "Currency Conversion"}
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "@id": "urn:ngm:class:currency-conversion",
+        "label": "Currency Conversion"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:pci-dss", "label": "PCI DSS"},
-      {"@id": "urn:ngm:class:acquiring-bank", "label": "Acquiring Bank"},
-      {"@id": "urn:ngm:class:ssl-tls", "label": "SSL/TLS"}
+      {
+        "@id": "urn:ngm:class:pci-dss",
+        "label": "PCI DSS"
+      },
+      {
+        "@id": "urn:ngm:class:tls",
+        "label": "SSL/TLS"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:card-network", "label": "Card Network"},
-      {"@id": "urn:ngm:class:issuing-bank", "label": "Issuing Bank"},
-      {"@id": "urn:ngm:class:iso-8583", "label": "ISO 8583"}
+      {
+        "@id": "urn:ngm:class:card-network",
+        "label": "Card Network"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
-      {"@id": "urn:ngm:class:digital-wallet", "label": "Digital Wallet"},
-      {"@id": "urn:ngm:class:restful-api", "label": "RESTful API"}
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "@id": "urn:ngm:class:restful-api",
+        "label": "RESTful API"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:micropayment", "label": "Micropayment"},
-      {"@id": "urn:ngm:class:payment-token", "label": "Payment Token"},
-      {"@id": "urn:ngm:class:x402-and-l402-payment-protocols", "label": "x402 and l402 payment protocols"},
-      {"@id": "urn:ngm:class:recurring-billing", "label": "Recurring Billing"},
-      {"@id": "urn:ngm:class:cross-border-payment", "label": "Cross-Border Payment"}
+      {
+        "@id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      },
+      {
+        "@id": "urn:ngm:class:payment-token",
+        "label": "Payment Token"
+      },
+      {
+        "@id": "urn:ngm:class:x402-and-l402-payment-protocols",
+        "label": "x402 and l402 payment protocols"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payment"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:e-commerce", "label": "E-Commerce"},
-      {"@id": "urn:ngm:class:point-of-sale", "label": "Point of Sale"},
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
+      {
+        "@id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce"
+      },
+      {
+        "@id": "urn:ngm:class:point-of-sale",
+        "label": "Point of Sale"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-20022", "label": "ISO 20022"}
+      {
+        "@id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:payment-processor", "label": "Payment Processor"}
+      {
+        "@id": "urn:ngm:class:payment-processor",
+        "label": "Payment Processor"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-payment-system", "label": "Digital Payment System"},
-      {"@id": "urn:ngm:class:open-banking", "label": "Open Banking"},
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"}
+      {
+        "@id": "urn:ngm:class:digital-payment-system",
+        "label": "Digital Payment System"
+      },
+      {
+        "@id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:payment-service-provider", "label": "Payment Service Provider"}
+    {
+      "@id": "urn:ngm:class:payment-service-provider",
+      "label": "Payment Service Provider"
+    }
   ],
   "quality": 0.8,
   "provenance": {

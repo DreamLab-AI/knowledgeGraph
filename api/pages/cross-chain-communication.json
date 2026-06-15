@@ -71,10 +71,6 @@
       {
         "id": "urn:ngm:class:polkadot-xcm",
         "label": "Polkadot XCM"
-      },
-      {
-        "id": "urn:ngm:class:layerzero-protocol",
-        "label": "LayerZero Protocol"
       }
     ],
     "contrastsWith": [

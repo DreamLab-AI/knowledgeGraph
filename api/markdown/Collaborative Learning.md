@@ -83,20 +83,6 @@ alias:: CollaborativeLearning
     "label": "Educational Methodology"
   },
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:peer-instruction",
-        "label": "Peer Instruction"
-      },
-      {
-        "@id": "urn:ngm:class:group-discussion",
-        "label": "Group Discussion"
-      },
-      {
-        "@id": "urn:ngm:class:collaborative-problem-solving",
-        "label": "Collaborative Problem Solving"
-      }
-    ],
     "partOf": [
       {
         "@id": "urn:ngm:class:educational-methodology",
@@ -141,22 +127,12 @@ alias:: CollaborativeLearning
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:avatar-representation",
+        "@id": "urn:ngm:class:avatar",
         "label": "Avatar Representation"
       },
       {
         "@id": "urn:ngm:class:network-infrastructure",
         "label": "Network Infrastructure"
-      }
-    ],
-    "implements": [
-      {
-        "@id": "urn:ngm:class:zone-of-proximal-development",
-        "label": "Zone of Proximal Development"
-      },
-      {
-        "@id": "urn:ngm:class:situated-learning",
-        "label": "Situated Learning"
       }
     ],
     "uses": [
@@ -169,7 +145,7 @@ alias:: CollaborativeLearning
         "label": "Spatial Audio"
       },
       {
-        "@id": "urn:ngm:class:real-time-collaboration-platform",
+        "@id": "urn:ngm:class:collaboration-platform",
         "label": "Real-Time Collaboration Platform"
       }
     ],
@@ -181,16 +157,6 @@ alias:: CollaborativeLearning
       {
         "@id": "urn:ngm:class:formative-assessment",
         "label": "Formative Assessment"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:individual-learning",
-        "label": "Individual Learning"
-      },
-      {
-        "@id": "urn:ngm:class:traditional-classroom-instruction",
-        "label": "Traditional Classroom Instruction"
       }
     ],
     "bridgesTo": [

@@ -18,16 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:dead-letter-queue",
+        "id": "urn:ngm:class:message-queue",
         "label": "Dead-Letter Queue"
-      },
-      {
-        "id": "urn:ngm:class:routing-rule",
-        "label": "Routing Rule"
-      },
-      {
-        "id": "urn:ngm:class:topic",
-        "label": "Topic"
       }
     ],
     "requires": [

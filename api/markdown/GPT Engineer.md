@@ -302,22 +302,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:file-planning-agent",
-        "label": "File Planning Agent"
-      },
-      {
-        "@id": "urn:ngm:class:sandbox-execution",
-        "label": "Sandbox Execution"
-      },
-      {
-        "@id": "urn:ngm:class:self-repair-loop",
-        "label": "Self-Repair Loop"
-      },
-      {
-        "@id": "urn:ngm:class:specification-elicitation",
-        "label": "Specification Elicitation"
-      },
-      {
         "@id": "urn:ngm:class:code-generation",
         "label": "Code Generation"
       },
@@ -358,20 +342,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:ai-assisted-software-engineering",
+        "@id": "urn:ngm:class:ai-augmented-software-engineering",
         "label": "AI-Assisted Software Engineering"
-      },
-      {
-        "@id": "urn:ngm:class:automated-software-scaffolding",
-        "label": "Automated Software Scaffolding"
-      },
-      {
-        "@id": "urn:ngm:class:full-stack-application-generation",
-        "label": "Full-Stack Application Generation"
-      },
-      {
-        "@id": "urn:ngm:class:non-engineer-development",
-        "label": "Non-Engineer Development"
       },
       {
         "@id": "urn:ngm:class:rapid-prototyping",
@@ -380,24 +352,16 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:agentic-loop",
-        "label": "Agentic Loop"
-      },
-      {
         "@id": "urn:ngm:class:chain-of-thought",
         "label": "Chain of Thought"
       },
       {
-        "@id": "urn:ngm:class:multi-file-code-generation",
+        "@id": "urn:ngm:class:code-generation",
         "label": "Multi-File Code Generation"
       },
       {
-        "@id": "urn:ngm:class:re-act-framework",
+        "@id": "urn:ngm:class:re-act",
         "label": "ReAct Framework"
-      },
-      {
-        "@id": "urn:ngm:class:self-debugging-code-generation",
-        "label": "Self-Debugging Code Generation"
       },
       {
         "@id": "urn:ngm:class:tool-use",
@@ -416,10 +380,6 @@ public:: true
       {
         "@id": "urn:ngm:class:react",
         "label": "React"
-      },
-      {
-        "@id": "urn:ngm:class:supabase",
-        "label": "Supabase"
       },
       {
         "@id": "urn:ngm:class:type-script",
@@ -462,46 +422,18 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:hackathon-development",
-        "label": "Hackathon Development"
-      },
-      {
-        "@id": "urn:ngm:class:no-code-development",
-        "label": "No-Code Development"
-      },
-      {
         "@id": "urn:ngm:class:open-source-ai",
         "label": "Open-Source AI"
       },
       {
         "@id": "urn:ngm:class:software-development",
         "label": "Software Development"
-      },
-      {
-        "@id": "urn:ngm:class:startup-prototyping",
-        "label": "Startup Prototyping"
-      },
-      {
-        "@id": "urn:ngm:class:web-development",
-        "label": "Web Development"
       }
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:human-eval",
-        "label": "HumanEval"
-      },
-      {
-        "@id": "urn:ngm:class:mbpp-benchmark",
-        "label": "MBPP Benchmark"
-      },
-      {
         "@id": "urn:ngm:class:openai-research-organisation-api",
         "label": "OpenAI API"
-      },
-      {
-        "@id": "urn:ngm:class:swe-bench-benchmark",
-        "label": "SWE-bench Benchmark"
       },
       {
         "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",

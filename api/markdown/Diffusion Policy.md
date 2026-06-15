@@ -23,49 +23,113 @@ public:: true
   "definition": "Diffusion Policy is a class of robot learning algorithms that represent robot action sequences as the output of a conditional denoising diffusion process, treating action prediction as iterative noise removal conditioned on sensor observations rather than as direct regression or classification. By leveraging the expressiveness of diffusion models to capture multi-modal action distributions, Diffusion Policy can represent one-to-many mappings from observation to action — a critical capability for dexterous manipulation tasks where multiple valid action trajectories exist. The approach, introduced by Chi et al. (2023), achieves state-of-the-art performance on imitation learning benchmarks and generalises across diverse manipulation settings.",
   "domain": "robotics",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:robot-learning", "label": "Robot Learning"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robot-learning",
+      "label": "Robot Learning"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:imitation-learning", "label": "Imitation Learning"},
-      {"@id": "urn:ngm:class:flow-matching", "label": "Flow Matching"},
-      {"@id": "urn:ngm:class:denoising-score-matching", "label": "Denoising Score Matching"},
-      {"@id": "urn:ngm:class:transformer-architecture", "label": "Transformer Architecture"},
-      {"@id": "urn:ngm:class:convolutional-neural-network", "label": "Convolutional Neural Network"}
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "@id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      },
+      {
+        "@id": "urn:ngm:class:flow-matching",
+        "label": "Flow Matching"
+      },
+      {
+        "@id": "urn:ngm:class:denoising-score-matching",
+        "label": "Denoising Score Matching"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:robot-manipulation", "label": "Robot Manipulation"},
-      {"@id": "urn:ngm:class:teleoperation", "label": "Teleoperation"},
-      {"@id": "urn:ngm:class:embodied-ai", "label": "Embodied AI"},
-      {"@id": "urn:ngm:class:dexterous-manipulation", "label": "Dexterous Manipulation"},
-      {"@id": "urn:ngm:class:bimanual-robot-control", "label": "Bimanual Robot Control"},
-      {"@id": "urn:ngm:class:multi-modal-action-distribution", "label": "Multi-Modal Action Distribution"}
+      {
+        "@id": "urn:ngm:class:robot-manipulation",
+        "label": "Robot Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      },
+      {
+        "@id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      },
+      {
+        "@id": "urn:ngm:class:dexterous-manipulation",
+        "label": "Dexterous Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:robot-control",
+        "label": "Bimanual Robot Control"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:demonstration-data", "label": "Demonstration Data"},
-      {"@id": "urn:ngm:class:proprioception", "label": "Proprioception"},
-      {"@id": "urn:ngm:class:visual-observation", "label": "Visual Observation"}
+      {
+        "@id": "urn:ngm:class:demonstration-data",
+        "label": "Demonstration Data"
+      },
+      {
+        "@id": "urn:ngm:class:proprioception",
+        "label": "Proprioception"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:behavioural-cloning", "label": "Behavioural Cloning"},
-      {"@id": "urn:ngm:class:action-chunking", "label": "Action Chunking"}
+      {
+        "@id": "urn:ngm:class:behavioural-cloning",
+        "label": "Behavioural Cloning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:gaussian-mixture-model", "label": "Gaussian Mixture Model"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-mixture-model",
+        "label": "Gaussian Mixture Model"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:end-effector", "label": "End Effector"},
-      {"@id": "urn:ngm:class:consistency-policy", "label": "Consistency Policy"},
-      {"@id": "urn:ngm:class:score-based-generative-model", "label": "Score-Based Generative Model"}
+      {
+        "@id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      },
+      {
+        "@id": "urn:ngm:class:score-based-generative-model",
+        "label": "Score-Based Generative Model"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:vision-language-model", "label": "Vision-Language Model"}
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:vision-language-model",
+        "label": "Vision-Language Model"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ddpm-robot-policy", "label": "DDPM Robot Policy"}
+    {
+      "@id": "urn:ngm:class:ddpm-robot-policy",
+      "label": "DDPM Robot Policy"
+    }
   ],
   "quality": 0.72,
   "provenance": {

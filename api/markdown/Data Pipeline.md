@@ -240,10 +240,6 @@ alias:: DataPipeline
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:data-source",
-        "label": "Data Source"
-      },
-      {
         "@id": "urn:ngm:class:monitoring",
         "label": "Monitoring"
       }
@@ -268,18 +264,8 @@ alias:: DataPipeline
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:data-reliability",
-        "label": "Data Reliability"
-      },
-      {
         "@id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:ad-hoc-query",
-        "label": "Ad Hoc Query"
       }
     ],
     "bridgesTo": [

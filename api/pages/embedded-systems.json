@@ -36,10 +36,6 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:real-time-scheduling",
-        "label": "Real-Time Scheduling"
-      },
-      {
         "id": "urn:ngm:class:hardware-abstraction-layer",
         "label": "Hardware Abstraction Layer"
       }
@@ -116,10 +112,6 @@
         "label": "Actuator"
       },
       {
-        "id": "urn:ngm:class:interrupt-controller",
-        "label": "Interrupt Controller"
-      },
-      {
         "id": "urn:ngm:class:digital-signal-processor",
         "label": "Digital Signal Processor"
       }
@@ -150,10 +142,6 @@
     ],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:computing-systems",
-        "label": "Computing Systems"
-      },
       {
         "id": "urn:ngm:class:control-system",
         "label": "Control System"

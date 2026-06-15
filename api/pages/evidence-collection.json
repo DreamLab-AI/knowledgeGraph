@@ -20,10 +20,6 @@
       {
         "id": "urn:ngm:class:memory-acquisition",
         "label": "Memory Acquisition"
-      },
-      {
-        "id": "urn:ngm:class:network-capture",
-        "label": "Network Capture"
       }
     ],
     "requires": [

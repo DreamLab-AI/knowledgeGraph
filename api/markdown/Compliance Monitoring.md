@@ -691,16 +691,12 @@ alias:: BC-0487-compliance-monitoring
         "label": "GDPR"
       },
       {
-        "@id": "urn:ngm:class:iso-27001-controls",
+        "@id": "urn:ngm:class:iso-27001",
         "label": "ISO 27001 Controls"
       },
       {
         "@id": "urn:ngm:class:sanctions-screening",
         "label": "Sanctions Screening"
-      },
-      {
-        "@id": "urn:ngm:class:soc-2-compliance",
-        "label": "SOC 2 Compliance"
       }
     ],
     "implements": [

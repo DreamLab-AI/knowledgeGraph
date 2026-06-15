@@ -59,14 +59,7 @@ public:: true
       "label": "Platform and Environment"
     }
   ],
-  "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:geospatially-accurate-metaverse",
-        "label": "Geospatially-Accurate Metaverse"
-      }
-    ]
-  },
+  "relations": {},
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

@@ -139,10 +139,6 @@ alias:: RB-1014-monte-carlo-localization
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:map",
-        "label": "Map"
-      },
-      {
         "@id": "urn:ngm:class:motion-model",
         "label": "Motion Model"
       },
@@ -153,12 +149,8 @@ alias:: RB-1014-monte-carlo-localization
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:global-localization",
+        "@id": "urn:ngm:class:localization",
         "label": "Global Localization"
-      },
-      {
-        "@id": "urn:ngm:class:kidnapped-robot-problem",
-        "label": "Kidnapped Robot Problem"
       }
     ],
     "uses": [

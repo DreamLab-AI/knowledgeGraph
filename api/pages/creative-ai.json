@@ -57,10 +57,6 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:discriminative-ai",
-        "label": "Discriminative AI"
-      },
-      {
         "id": "urn:ngm:class:rule-based-systems",
         "label": "Rule-Based Systems"
       }
@@ -101,7 +97,7 @@
         "label": "Variational Autoencoder"
       },
       {
-        "id": "urn:ngm:class:neural-style-transfer",
+        "id": "urn:ngm:class:style-transfer",
         "label": "Neural Style Transfer"
       }
     ],
@@ -131,7 +127,7 @@
         "label": "Human-AI Collaboration"
       },
       {
-        "id": "urn:ngm:class:intellectual-property",
+        "id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Intellectual Property"
       }
     ]

@@ -38,55 +38,137 @@ public:: true
   ],
   "relations": {
     "supports": [
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:digital-rights", "label": "Digital Rights"}
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:conformity-assessment", "label": "Conformity Assessment"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"},
-      {"@id": "urn:ngm:class:ai-transparency", "label": "AI Transparency"},
-      {"@id": "urn:ngm:class:public-trust-in-ai", "label": "Public Trust in AI"}
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:ai-transparency-framework",
+        "label": "AI Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:public-trust-in-ai",
+        "label": "Public Trust in AI"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:ai-policy", "label": "AI Policy"},
-      {"@id": "urn:ngm:class:risk-based-regulation", "label": "Risk-Based Regulation"}
+      {
+        "@id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "@id": "urn:ngm:class:risk-based-regulation",
+        "label": "Risk-Based Regulation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:regulatory-sandboxes", "label": "Regulatory Sandboxes"},
-      {"@id": "urn:ngm:class:impact-assessment", "label": "Impact Assessment"},
-      {"@id": "urn:ngm:class:audit-and-certification", "label": "Audit and Certification"}
+      {
+        "@id": "urn:ngm:class:regulatory-sandbox",
+        "label": "Regulatory Sandboxes"
+      },
+      {
+        "@id": "urn:ngm:class:impact-assessment",
+        "label": "Impact Assessment"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-42001", "label": "ISO IEC 42001"},
-      {"@id": "urn:ngm:class:nist-ai-rmf", "label": "NIST AI RMF"},
-      {"@id": "urn:ngm:class:oecd-ai-principles", "label": "OECD AI Principles"}
+      {
+        "@id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO IEC 42001"
+      },
+      {
+        "@id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "@id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ai-self-regulation", "label": "AI Self-Regulation"},
-      {"@id": "urn:ngm:class:voluntary-ai-commitments", "label": "Voluntary AI Commitments"}
+      {
+        "@id": "urn:ngm:class:ai-self-regulation",
+        "label": "AI Self-Regulation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"}
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:financial-regulation", "label": "Financial Regulation"},
-      {"@id": "urn:ngm:class:cybersecurity-law", "label": "Cybersecurity Law"},
-      {"@id": "urn:ngm:class:product-liability", "label": "Product Liability"}
+      {
+        "@id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:cybersecurity-law",
+        "label": "Cybersecurity Law"
+      },
+      {
+        "@id": "urn:ngm:class:product-liability",
+        "label": "Product Liability"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ai-law", "label": "AI Law"},
-    {"@id": "urn:ngm:class:artificial-intelligence-governance-regulation", "label": "Artificial Intelligence Governance Regulation"}
+    {
+      "@id": "urn:ngm:class:ai-law",
+      "label": "AI Law"
+    },
+    {
+      "@id": "urn:ngm:class:artificial-intelligence-governance-regulation",
+      "label": "Artificial Intelligence Governance Regulation"
+    }
   ],
   "quality": 0.74,
   "provenance": {

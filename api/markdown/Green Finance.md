@@ -37,56 +37,145 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:climate-finance", "label": "Climate Finance"},
-    {"@id": "urn:ngm:class:environmental-finance", "label": "Environmental Finance"}
+    {
+      "@id": "urn:ngm:class:climate-finance",
+      "label": "Climate Finance"
+    },
+    {
+      "@id": "urn:ngm:class:environmental-finance",
+      "label": "Environmental Finance"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:green-bonds", "label": "Green Bonds"},
-      {"@id": "urn:ngm:class:sustainability-linked-loans", "label": "Sustainability-Linked Loans"},
-      {"@id": "urn:ngm:class:carbon-markets", "label": "Carbon Markets"},
-      {"@id": "urn:ngm:class:impact-investing", "label": "Impact Investing"},
-      {"@id": "urn:ngm:class:blended-finance", "label": "Blended Finance"}
+      {
+        "@id": "urn:ngm:class:green-bonds",
+        "label": "Green Bonds"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-markets",
+        "label": "Carbon Markets"
+      },
+      {
+        "@id": "urn:ngm:class:impact-investing",
+        "label": "Impact Investing"
+      },
+      {
+        "@id": "urn:ngm:class:blended-finance",
+        "label": "Blended Finance"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:sustainable-finance", "label": "Sustainable Finance"},
-      {"@id": "urn:ngm:class:capital-markets", "label": "Capital Markets"}
+      {
+        "@id": "urn:ngm:class:sustainable-finance",
+        "label": "Sustainable Finance"
+      },
+      {
+        "@id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"},
-      {"@id": "urn:ngm:class:green-taxonomy", "label": "Green Taxonomy"},
-      {"@id": "urn:ngm:class:life-cycle-assessment", "label": "Life Cycle Assessment"}
+      {
+        "@id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:eu-taxonomy",
+        "label": "Green Taxonomy"
+      },
+      {
+        "@id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:environmental-sustainability", "label": "Environmental Sustainability"},
-      {"@id": "urn:ngm:class:carbon-credit-tracking", "label": "Carbon Credit Tracking"},
-      {"@id": "urn:ngm:class:net-zero-transition", "label": "Net Zero Transition"},
-      {"@id": "urn:ngm:class:renewable-energy-investment", "label": "Renewable Energy Investment"}
+      {
+        "@id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      },
+      {
+        "@id": "urn:ngm:class:carbon-credit-tracking",
+        "label": "Carbon Credit Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:net-zero-transition",
+        "label": "Net Zero Transition"
+      },
+      {
+        "@id": "urn:ngm:class:renewable-energy-investment",
+        "label": "Renewable Energy Investment"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:carbon-credits", "label": "Carbon Credits"},
-      {"@id": "urn:ngm:class:esg-investing", "label": "ESG Investing"},
-      {"@id": "urn:ngm:class:financial-instruments", "label": "Financial Instruments"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+      {
+        "@id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      },
+      {
+        "@id": "urn:ngm:class:esg-investing",
+        "label": "ESG Investing"
+      },
+      {
+        "@id": "urn:ngm:class:financial-instruments",
+        "label": "Financial Instruments"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:icma-green-bond-principles", "label": "ICMA Green Bond Principles"},
-      {"@id": "urn:ngm:class:eu-taxonomy", "label": "EU Taxonomy"},
-      {"@id": "urn:ngm:class:tcfd", "label": "TCFD"}
+      {
+        "@id": "urn:ngm:class:icma-green-bond-principles",
+        "label": "ICMA Green Bond Principles"
+      },
+      {
+        "@id": "urn:ngm:class:eu-taxonomy",
+        "label": "EU Taxonomy"
+      },
+      {
+        "@id": "urn:ngm:class:tcfd",
+        "label": "TCFD"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:conventional-finance", "label": "Conventional Finance"},
-      {"@id": "urn:ngm:class:greenwashing", "label": "Greenwashing"}
+      {
+        "@id": "urn:ngm:class:conventional-finance",
+        "label": "Conventional Finance"
+      },
+      {
+        "@id": "urn:ngm:class:greenwashing",
+        "label": "Greenwashing"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:blockchain-tokenisation", "label": "Blockchain Tokenisation"},
-      {"@id": "urn:ngm:class:regenerative-finance", "label": "Regenerative Finance"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-tokenisation",
+        "label": "Blockchain Tokenisation"
+      },
+      {
+        "@id": "urn:ngm:class:regenerative-finance",
+        "label": "Regenerative Finance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:corporate-social-responsibility", "label": "Corporate Social Responsibility"},
-      {"@id": "urn:ngm:class:climate-risk", "label": "Climate Risk"},
-      {"@id": "urn:ngm:class:sustainable-development-goals", "label": "Sustainable Development Goals"}
+      {
+        "@id": "urn:ngm:class:corporate-social-responsibility",
+        "label": "Corporate Social Responsibility"
+      },
+      {
+        "@id": "urn:ngm:class:climate-risk",
+        "label": "Climate Risk"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-development-goals",
+        "label": "Sustainable Development Goals"
+      }
     ]
   },
   "quality": 0.74,

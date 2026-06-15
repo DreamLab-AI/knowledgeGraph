@@ -26,19 +26,11 @@
         "label": "Content-Based Filtering"
       },
       {
-        "id": "urn:ngm:class:retrieval-ranking-pipeline",
-        "label": "Retrieval-Ranking Pipeline"
-      },
-      {
         "id": "urn:ngm:class:candidate-generation",
         "label": "Candidate Generation"
       }
     ],
     "requires": [
-      {
-        "id": "urn:ngm:class:user-item-interaction-data",
-        "label": "User-Item Interaction Data"
-      },
       {
         "id": "urn:ngm:class:implicit-feedback",
         "label": "Implicit Feedback"
@@ -115,7 +107,7 @@
         "label": "Matrix Factorisation"
       },
       {
-        "id": "urn:ngm:class:approximate-nearest-neighbour-search",
+        "id": "urn:ngm:class:nearest-neighbor-search",
         "label": "Approximate Nearest Neighbour Search"
       }
     ],

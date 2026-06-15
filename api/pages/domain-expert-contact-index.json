@@ -16,38 +16,12 @@
   "qualityScore": 0.0,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:contact-record",
-        "label": "Contact Record"
-      },
-      {
-        "id": "urn:ngm:class:relationship-context",
-        "label": "Relationship Context"
-      },
-      {
-        "id": "urn:ngm:class:follow-up-action",
-        "label": "Follow-up Action"
-      }
-    ],
-    "requires": [
-      {
-        "id": "urn:ngm:class:expert-identification",
-        "label": "Expert Identification"
-      },
-      {
-        "id": "urn:ngm:class:relationship-management",
-        "label": "Relationship Management"
-      }
-    ],
+    "hasPart": [],
+    "requires": [],
     "enables": [
       {
         "id": "urn:ngm:class:collaboration",
         "label": "Collaboration"
-      },
-      {
-        "id": "urn:ngm:class:opportunity-development",
-        "label": "Opportunity Development"
       },
       {
         "id": "urn:ngm:class:knowledge-transfer",
@@ -102,10 +76,6 @@
       {
         "id": "urn:ngm:class:education-and-ai",
         "label": "Education and AI"
-      },
-      {
-        "id": "urn:ngm:class:research-collaboration",
-        "label": "Research Collaboration"
       }
     ],
     "standardizedBy": [],

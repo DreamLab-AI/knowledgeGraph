@@ -41,11 +41,11 @@
         "label": "Model Compression for Edge"
       },
       {
-        "id": "urn:ngm:class:hardware-aware-inference",
+        "id": "urn:ngm:class:inference",
         "label": "Hardware-Aware Inference"
       },
       {
-        "id": "urn:ngm:class:efficient-neural-network",
+        "id": "urn:ngm:class:neural-network",
         "label": "Efficient Neural Network"
       }
     ],
@@ -66,11 +66,11 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:hand-crafted-architecture",
+        "id": "urn:ngm:class:architecture",
         "label": "Hand-Crafted Architecture"
       },
       {
-        "id": "urn:ngm:class:manual-feature-engineering",
+        "id": "urn:ngm:class:feature-engineering",
         "label": "Manual Feature Engineering"
       }
     ],
@@ -127,7 +127,7 @@
         "label": "Zero-Cost Proxy"
       },
       {
-        "id": "urn:ngm:class:mixture-of-experts",
+        "id": "urn:ngm:class:mixture-of-experts-architecture",
         "label": "Mixture of Experts"
       },
       {

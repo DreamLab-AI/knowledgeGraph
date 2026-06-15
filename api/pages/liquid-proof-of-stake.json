@@ -22,16 +22,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:baker",
-        "label": "Baker"
-      },
-      {
         "id": "urn:ngm:class:delegation",
         "label": "Delegation"
-      },
-      {
-        "id": "urn:ngm:class:security-deposit",
-        "label": "Security Deposit"
       }
     ],
     "requires": [
@@ -42,10 +34,6 @@
       {
         "id": "urn:ngm:class:epoch",
         "label": "Epoch"
-      },
-      {
-        "id": "urn:ngm:class:stake-snapshot",
-        "label": "Stake Snapshot"
       }
     ],
     "enables": [

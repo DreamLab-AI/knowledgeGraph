@@ -75,57 +75,127 @@ public:: true
   },
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:block-header", "label": "Block Header"},
-      {"@id": "urn:ngm:class:block", "label": "Block"},
-      {"@id": "urn:ngm:class:merkle-tree", "label": "Merkle Tree"}
-    ],
-    "hasPart": [
-      {"@id": "urn:ngm:class:unix-time", "label": "Unix Time"}
+      {
+        "@id": "urn:ngm:class:block-header",
+        "label": "Block Header"
+      },
+      {
+        "@id": "urn:ngm:class:block",
+        "label": "Block"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:network-time-protocol", "label": "Network Time Protocol"},
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"}
+      {
+        "@id": "urn:ngm:class:network-time-protocol",
+        "label": "Network Time Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:finality", "label": "Finality"},
-      {"@id": "urn:ngm:class:block-height", "label": "Block Height"},
-      {"@id": "urn:ngm:class:difficulty-adjustment", "label": "Difficulty Adjustment"},
-      {"@id": "urn:ngm:class:chronological-ordering", "label": "Chronological Ordering"},
-      {"@id": "urn:ngm:class:data-provenance", "label": "Data Provenance"}
+      {
+        "@id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "@id": "urn:ngm:class:block-height",
+        "label": "Block Height"
+      },
+      {
+        "@id": "urn:ngm:class:difficulty-adjustment",
+        "label": "Difficulty Adjustment"
+      },
+      {
+        "@id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:consensus-protocol", "label": "Consensus Protocol"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"}
+      {
+        "@id": "urn:ngm:class:consensus-protocol",
+        "label": "Consensus Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:block-time", "label": "Block Time"},
-      {"@id": "urn:ngm:class:median-time-past", "label": "Median Time Past"}
+      {
+        "@id": "urn:ngm:class:block-time",
+        "label": "Block Time"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:time-locked-transaction", "label": "Time-Locked Transaction"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:time-locked-transaction",
+        "label": "Time-Locked Transaction"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:iso-iec-23257-2021", "label": "ISO-IEC 23257 2021"},
-      {"@id": "urn:ngm:class:ieee-2418-1", "label": "IEEE 2418.1"}
+      {
+        "@id": "urn:ngm:class:iso-iec-23257-2021",
+        "label": "ISO-IEC 23257 2021"
+      },
+      {
+        "@id": "urn:ngm:class:ieee-2418-1",
+        "label": "IEEE 2418.1"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:logical-clock", "label": "Logical Clock"},
-      {"@id": "urn:ngm:class:vector-clock", "label": "Vector Clock"}
+      {
+        "@id": "urn:ngm:class:logical-clock",
+        "label": "Logical Clock"
+      },
+      {
+        "@id": "urn:ngm:class:vector-clock",
+        "label": "Vector Clock"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-signature", "label": "Digital Signature"},
-      {"@id": "urn:ngm:class:trusted-timestamping", "label": "Trusted Timestamping"}
+      {
+        "@id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-timestamping",
+        "label": "Trusted Timestamping"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:transaction-confirmation", "label": "Transaction Confirmation"},
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"}
+      {
+        "@id": "urn:ngm:class:transaction-confirmation",
+        "label": "Transaction Confirmation"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:block-timestamp", "label": "Block Timestamp"},
-    {"@id": "urn:ngm:class:time-record", "label": "Time Record"}
+    {
+      "@id": "urn:ngm:class:block-timestamp",
+      "label": "Block Timestamp"
+    },
+    {
+      "@id": "urn:ngm:class:time-record",
+      "label": "Time Record"
+    }
   ],
   "quality": 0.75,
   "provenance": {

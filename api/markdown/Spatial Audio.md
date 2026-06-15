@@ -105,20 +105,12 @@ alias:: SpatialAudio
       {
         "@id": "urn:ngm:class:virtual-presence",
         "label": "Virtual Presence"
-      },
-      {
-        "@id": "urn:ngm:class:audio-augmented-reality",
-        "label": "Audio Augmented Reality"
       }
     ],
     "dependsOn": [
       {
         "@id": "urn:ngm:class:audio-codec",
         "label": "Audio Codec"
-      },
-      {
-        "@id": "urn:ngm:class:speaker-system",
-        "label": "Speaker System"
       }
     ],
     "implements": [
@@ -127,18 +119,8 @@ alias:: SpatialAudio
         "label": "Dolby Atmos"
       },
       {
-        "@id": "urn:ngm:class:dts-x",
-        "label": "DTS:X"
-      },
-      {
         "@id": "urn:ngm:class:mpeg-h-audio",
         "label": "MPEG-H Audio"
-      }
-    ],
-    "uses": [
-      {
-        "@id": "urn:ngm:class:room-acoustics-modelling",
-        "label": "Room Acoustics Modelling"
       }
     ],
     "supports": [
@@ -178,10 +160,6 @@ alias:: SpatialAudio
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:surround-sound",
-        "label": "Surround Sound"
-      },
       {
         "@id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"

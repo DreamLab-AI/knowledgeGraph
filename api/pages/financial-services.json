@@ -30,7 +30,7 @@
         "label": "Investment Management"
       },
       {
-        "id": "urn:ngm:class:payment-systems",
+        "id": "urn:ngm:class:payment-system",
         "label": "Payment Systems"
       },
       {
@@ -131,10 +131,6 @@
       {
         "id": "urn:ngm:class:iso-20022",
         "label": "ISO 20022"
-      },
-      {
-        "id": "urn:ngm:class:psd2",
-        "label": "PSD2"
       }
     ],
     "partOf": [],

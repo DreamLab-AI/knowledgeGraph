@@ -24,51 +24,119 @@ alias:: CollaborativeDesign
   "definition": "Collaborative Design is a design methodology in which multiple stakeholders—including designers, engineers, end users, and domain experts—jointly participate in defining, iterating, and validating artefacts or systems. It draws on participatory design traditions to ensure that lived experience and diverse expertise shape outcomes rather than being consulted retrospectively. Digital collaborative design platforms support real-time co-authoring, version management, and synchronous review across distributed teams. The approach is applied in product development, spatial design, software architecture, and policy co-creation.",
   "domain": "distributed-collaboration",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:design-thinking", "label": "Design Thinking"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:design-thinking",
+    "label": "Design Thinking"
+  },
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:collaborative-systems-modality-whiteboard", "label": "Collaborative Whiteboard"},
-      {"@id": "urn:ngm:class:design-software", "label": "Design Software"},
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"},
-      {"@id": "urn:ngm:class:real-time-collaboration", "label": "Real-Time Collaboration"}
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-whiteboard",
+        "label": "Collaborative Whiteboard"
+      },
+      {
+        "@id": "urn:ngm:class:design-software",
+        "label": "Design Software"
+      },
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-collaboration",
+        "label": "Real-Time Collaboration"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:product-design", "label": "Product Design"},
-      {"@id": "urn:ngm:class:generative-design-tool", "label": "Generative Design Tool"},
-      {"@id": "urn:ngm:class:co-creation", "label": "Co-Creation"},
-      {"@id": "urn:ngm:class:iterative-prototyping", "label": "Iterative Prototyping"}
+      {
+        "@id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      },
+      {
+        "@id": "urn:ngm:class:generative-design-tool",
+        "label": "Generative Design Tool"
+      },
+      {
+        "@id": "urn:ngm:class:co-creation",
+        "label": "Co-Creation"
+      },
+      {
+        "@id": "urn:ngm:class:rapid-prototyping",
+        "label": "Iterative Prototyping"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:stakeholder-engagement", "label": "Stakeholder Engagement"},
-      {"@id": "urn:ngm:class:shared-workspace", "label": "Shared Workspace"},
-      {"@id": "urn:ngm:class:facilitation", "label": "Facilitation"}
+      {
+        "@id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      },
+      {
+        "@id": "urn:ngm:class:shared-workspace",
+        "label": "Shared Workspace"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:participatory-design", "label": "Participatory Design"},
-      {"@id": "urn:ngm:class:human-centred-design", "label": "Human-Centred Design"}
+      {
+        "@id": "urn:ngm:class:participatory-design",
+        "label": "Participatory Design"
+      },
+      {
+        "@id": "urn:ngm:class:human-centred-design",
+        "label": "Human-Centred Design"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:design-sprint", "label": "Design Sprint"},
-      {"@id": "urn:ngm:class:agile-development", "label": "Agile Development"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:expert-driven-design", "label": "Expert-Driven Design"}
+      {
+        "@id": "urn:ngm:class:design-sprint",
+        "label": "Design Sprint"
+      },
+      {
+        "@id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Development"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:human-ai-interaction", "label": "Human-AI Interaction"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:human-ai-interaction",
+        "label": "Human-AI Interaction"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:user-research", "label": "User Research"},
-      {"@id": "urn:ngm:class:participatory-policy-making", "label": "Participatory Policy Making"},
-      {"@id": "urn:ngm:class:collaborative-systems-modality-learning", "label": "Collaborative Learning"},
-      {"@id": "urn:ngm:class:usability-testing", "label": "Usability Testing"}
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
+        "@id": "urn:ngm:class:participatory-policy-making",
+        "label": "Participatory Policy Making"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-systems-modality-learning",
+        "label": "Collaborative Learning"
+      },
+      {
+        "@id": "urn:ngm:class:usability-testing",
+        "label": "Usability Testing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:participatory-design", "label": "Participatory Design"},
-    {"@id": "urn:ngm:class:co-design", "label": "Co-Design"}
+    {
+      "@id": "urn:ngm:class:participatory-design",
+      "label": "Participatory Design"
+    },
+    {
+      "@id": "urn:ngm:class:co-design",
+      "label": "Co-Design"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

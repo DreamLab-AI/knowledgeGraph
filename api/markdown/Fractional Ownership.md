@@ -23,56 +23,143 @@ public:: true
   "definition": "Fractional ownership is a model in which a high-value asset is divided into discrete shares that multiple parties hold simultaneously, each acquiring proportional economic rights and, in some structures, governance rights over the underlying asset. Historically applied to aircraft, real estate, and fine art through legal syndication, it has been radically simplified by blockchain-based tokenisation, which encodes shares as on-chain tokens transferable without traditional intermediaries. Fractional ownership democratises access to asset classes previously restricted to institutional or wealthy investors. It raises important questions of regulatory classification, valuation, and liquidity management.",
   "domain": "finance",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:asset-tokenization", "label": "Asset Tokenization"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:asset-tokenization",
+    "label": "Asset Tokenization"
+  },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:ownership-share", "label": "Ownership Share"},
-      {"@id": "urn:ngm:class:governance-rights", "label": "Governance Rights"}
+      {
+        "@id": "urn:ngm:class:ownership-share",
+        "label": "Ownership Share"
+      },
+      {
+        "@id": "urn:ngm:class:governance-rights",
+        "label": "Governance Rights"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:asset-tokenization", "label": "Asset Tokenization"},
-      {"@id": "urn:ngm:class:alternative-investment", "label": "Alternative Investment"}
+      {
+        "@id": "urn:ngm:class:asset-tokenization",
+        "label": "Asset Tokenization"
+      },
+      {
+        "@id": "urn:ngm:class:alternative-investment",
+        "label": "Alternative Investment"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:kyc-aml-compliance", "label": "KYC/AML Compliance"},
-      {"@id": "urn:ngm:class:securities-regulation", "label": "Securities Regulation"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:kyc-aml-compliance",
+        "label": "KYC/AML Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:nft", "label": "NFT"},
-      {"@id": "urn:ngm:class:fractionalized-nft", "label": "Fractionalized NFT"},
-      {"@id": "urn:ngm:class:enterprise-smart-contracts", "label": "Enterprise Smart Contracts"},
-      {"@id": "urn:ngm:class:erc-20-token", "label": "ERC-20 Token"}
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:fractionalized-nft",
+        "label": "Fractionalized NFT"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-smart-contracts",
+        "label": "Enterprise Smart Contracts"
+      },
+      {
+        "@id": "urn:ngm:class:erc-20-tokens",
+        "label": "ERC-20 Token"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:investment-management", "label": "Investment Management"},
-      {"@id": "urn:ngm:class:digital-asset-trading", "label": "Digital Asset Trading"},
-      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"},
-      {"@id": "urn:ngm:class:liquidity-provision", "label": "Liquidity Provision"}
+      {
+        "@id": "urn:ngm:class:investment-management",
+        "label": "Investment Management"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset-trading",
+        "label": "Digital Asset Trading"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:token-standard", "label": "Token Standard"},
-      {"@id": "urn:ngm:class:asset-valuation", "label": "Asset Valuation"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "@id": "urn:ngm:class:asset-valuation",
+        "label": "Asset Valuation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:sole-ownership", "label": "Sole Ownership"},
-      {"@id": "urn:ngm:class:timeshare", "label": "Timeshare"}
+      {
+        "@id": "urn:ngm:class:sole-ownership",
+        "label": "Sole Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:timeshare",
+        "label": "Timeshare"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:real-world-asset-tokenization", "label": "Real-World Asset Tokenization"},
-      {"@id": "urn:ngm:class:metaverse-land-ownership", "label": "Metaverse Land Ownership"}
+      {
+        "@id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real-World Asset Tokenization"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse-land-ownership",
+        "label": "Metaverse Land Ownership"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-ownership", "label": "Digital Ownership"},
-      {"@id": "urn:ngm:class:digital-property-rights", "label": "Digital Property Rights"},
-      {"@id": "urn:ngm:class:digital-technology-access-equity", "label": "Digital Technology Access Equity"},
-      {"@id": "urn:ngm:class:secondary-market", "label": "Secondary Market"}
+      {
+        "@id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:digital-property-rights",
+        "label": "Digital Property Rights"
+      },
+      {
+        "@id": "urn:ngm:class:digital-technology-access-equity",
+        "label": "Digital Technology Access Equity"
+      },
+      {
+        "@id": "urn:ngm:class:secondary-market",
+        "label": "Secondary Market"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:co-ownership", "label": "Co-Ownership"},
-    {"@id": "urn:ngm:class:shared-ownership", "label": "Shared Ownership"}
+    {
+      "@id": "urn:ngm:class:co-ownership",
+      "label": "Co-Ownership"
+    },
+    {
+      "@id": "urn:ngm:class:shared-ownership",
+      "label": "Shared Ownership"
+    }
   ],
   "quality": 0.72,
   "provenance": {

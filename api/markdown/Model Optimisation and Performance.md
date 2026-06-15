@@ -404,11 +404,11 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:calibration-dataset",
+        "@id": "urn:ngm:class:calibration",
         "label": "Calibration Dataset"
       },
       {
-        "@id": "urn:ngm:class:cuda-runtime",
+        "@id": "urn:ngm:class:cuda",
         "label": "CUDA Runtime"
       },
       {
@@ -430,15 +430,11 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:cost-effective-llm-serving",
-        "label": "Cost-Effective LLM Serving"
-      },
-      {
         "@id": "urn:ngm:class:edge-deployment",
         "label": "Edge Deployment"
       },
       {
-        "@id": "urn:ngm:class:low-latency-apis",
+        "@id": "urn:ngm:class:low-latency",
         "label": "Low-Latency APIs"
       },
       {
@@ -455,10 +451,6 @@ public:: true
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:attention-tiling",
-        "label": "Attention Tiling"
-      },
       {
         "@id": "urn:ngm:class:graph-optimisation",
         "label": "Graph Optimisation"
@@ -486,20 +478,8 @@ public:: true
         "label": "BFLOAT16"
       },
       {
-        "@id": "urn:ngm:class:int8-arithmetic",
-        "label": "INT8 Arithmetic"
-      },
-      {
-        "@id": "urn:ngm:class:neon-simd",
-        "label": "NEON SIMD"
-      },
-      {
-        "@id": "urn:ngm:class:onnx-graph",
+        "@id": "urn:ngm:class:onnx",
         "label": "ONNX Graph"
-      },
-      {
-        "@id": "urn:ngm:class:sme2",
-        "label": "SME2"
       },
       {
         "@id": "urn:ngm:class:tensor-cores",
@@ -508,7 +488,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:efficient-transformers",
+        "@id": "urn:ngm:class:transformers",
         "label": "Efficient Transformers"
       },
       {
@@ -556,10 +536,6 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:khronos-nnapi",
-        "label": "Khronos NNAPI"
-      },
-      {
         "@id": "urn:ngm:class:mlperf-inference",
         "label": "MLPerf Inference"
       },
@@ -573,7 +549,10 @@ public:: true
       }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-infrastructure", "label": "AI Infrastructure"}
+      {
+        "@id": "urn:ngm:class:ai-infrastructure",
+        "label": "AI Infrastructure"
+      }
     ]
   },
   "quality": 0.52,

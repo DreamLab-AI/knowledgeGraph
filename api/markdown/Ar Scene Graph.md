@@ -90,21 +90,13 @@ public:: true
         "label": "3D Scene Reconstruction"
       },
       {
-        "@id": "urn:ngm:class:spatial-relationships",
-        "label": "Spatial Relationships"
-      },
-      {
         "@id": "urn:ngm:class:object-detection",
         "label": "Object Detection"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:context-aware-ar",
-        "label": "Context-Aware AR"
-      },
-      {
-        "@id": "urn:ngm:class:retargetable-ar-experiences",
+        "@id": "urn:ngm:class:ar-experiences",
         "label": "Retargetable AR Experiences"
       },
       {
@@ -113,7 +105,10 @@ public:: true
       }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-data-structure", "label": "Spatial Data Structure"}
+      {
+        "@id": "urn:ngm:class:spatial-data-structure",
+        "label": "Spatial Data Structure"
+      }
     ]
   },
   "quality": 0.35,

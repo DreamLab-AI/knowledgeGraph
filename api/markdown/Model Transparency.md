@@ -102,7 +102,7 @@ public:: true
         "label": "AI Accountability"
       },
       {
-        "@id": "urn:ngm:class:bias-detection",
+        "@id": "urn:ngm:class:bias-detection-methods",
         "label": "Bias Detection"
       },
       {
@@ -118,14 +118,6 @@ public:: true
       {
         "@id": "urn:ngm:class:lime",
         "label": "LIME"
-      },
-      {
-        "@id": "urn:ngm:class:saliency-maps",
-        "label": "Saliency Maps"
-      },
-      {
-        "@id": "urn:ngm:class:counterfactual-explanations",
-        "label": "Counterfactual Explanations"
       }
     ],
     "supports": [
@@ -148,7 +140,7 @@ public:: true
         "label": "GDPR"
       },
       {
-        "@id": "urn:ngm:class:eu-ai-act",
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
       }
     ],
@@ -170,11 +162,11 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:fairness-in-ai",
+        "@id": "urn:ngm:class:ai-fairness",
         "label": "Fairness in AI"
       },
       {
-        "@id": "urn:ngm:class:model-card",
+        "@id": "urn:ngm:class:ai-model-card",
         "label": "Model Card"
       }
     ]

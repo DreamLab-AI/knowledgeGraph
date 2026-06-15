@@ -600,7 +600,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:adam-w",
+        "@id": "urn:ngm:class:adam-optimiser",
         "label": "AdamW"
       },
       {
@@ -720,10 +720,6 @@ public:: true
       {
         "@id": "urn:ngm:class:google-ai-technology-corporation-deep-mind",
         "label": "Google DeepMind"
-      },
-      {
-        "@id": "urn:ngm:class:grok",
-        "label": "Grok"
       }
     ],
     "standardizedBy": [
@@ -732,7 +728,7 @@ public:: true
         "label": "AISI Frontier AI Safety Framework"
       },
       {
-        "@id": "urn:ngm:class:chinchilla-scaling-laws",
+        "@id": "urn:ngm:class:scaling-laws",
         "label": "Chinchilla Scaling Laws"
       },
       {

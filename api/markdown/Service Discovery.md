@@ -23,61 +23,155 @@ public:: true
   "definition": "Service discovery is the runtime mechanism by which distributed applications automatically locate the network endpoints of services they depend on, without relying on hardcoded addresses or manual configuration. It operates through a service registry that maintains a dynamic catalogue of available service instances alongside their health status, enabling clients to resolve service names to live endpoints at query time. Discovery patterns divide into client-side discovery, where the consumer queries the registry directly and selects from returned healthy instances, and server-side discovery, where a load balancer or API gateway mediates resolution transparently. It is a foundational pattern in microservices and cloud-native architectures, enabling dynamic scaling, zero-downtime rolling updates, and fault-tolerant inter-service communication.",
   "domain": "distributed-systems",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:distributed-system-architecture", "label": "Distributed System Architecture"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-system-architecture",
+      "label": "Distributed System Architecture"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:service-registry", "label": "Service Registry"},
-      {"@id": "urn:ngm:class:health-check", "label": "Health Check"},
-      {"@id": "urn:ngm:class:service-registration", "label": "Service Registration"}
+      {
+        "@id": "urn:ngm:class:service-registry",
+        "label": "Service Registry"
+      },
+      {
+        "@id": "urn:ngm:class:health-check",
+        "label": "Health Check"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:cloud-native-computing", "label": "Cloud-Native Computing"}
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-native",
+        "label": "Cloud-Native Computing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:service-registry", "label": "Service Registry"},
-      {"@id": "urn:ngm:class:network-addressing", "label": "Network Addressing"}
+      {
+        "@id": "urn:ngm:class:service-registry",
+        "label": "Service Registry"
+      },
+      {
+        "@id": "urn:ngm:class:network-addressing",
+        "label": "Network Addressing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:operational-resilience", "label": "Operational Resilience"},
-      {"@id": "urn:ngm:class:horizontal-scaling", "label": "Horizontal Scaling"},
-      {"@id": "urn:ngm:class:zero-downtime-deployment", "label": "Zero-Downtime Deployment"}
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      },
+      {
+        "@id": "urn:ngm:class:horizontal-scalability",
+        "label": "Horizontal Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:zero-downtime-deployment",
+        "label": "Zero-Downtime Deployment"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:dns", "label": "DNS"},
-      {"@id": "urn:ngm:class:load-balancing", "label": "Load Balancing"},
-      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"}
+      {
+        "@id": "urn:ngm:class:dns",
+        "label": "DNS"
+      },
+      {
+        "@id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"},
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
-      {"@id": "urn:ngm:class:service-mesh", "label": "Service Mesh"}
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:microservices", "label": "Microservices"},
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
-      {"@id": "urn:ngm:class:container-orchestration", "label": "Container Orchestration"}
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:static-configuration", "label": "Static Configuration"},
-      {"@id": "urn:ngm:class:monolithic-architecture", "label": "Monolithic Architecture"}
+      {
+        "@id": "urn:ngm:class:configuration",
+        "label": "Static Configuration"
+      },
+      {
+        "@id": "urn:ngm:class:monolithic-architecture",
+        "label": "Monolithic Architecture"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-agent", "label": "AI Agent"},
-      {"@id": "urn:ngm:class:tool-use", "label": "Tool Use"}
+      {
+        "@id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      },
+      {
+        "@id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"},
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:circuit-breaker", "label": "Circuit Breaker"},
-      {"@id": "urn:ngm:class:sidecar-proxy", "label": "Sidecar Proxy"},
-      {"@id": "urn:ngm:class:configuration-management", "label": "Configuration Management"}
+      {
+        "@id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:circuit-breaker",
+        "label": "Circuit Breaker"
+      },
+      {
+        "@id": "urn:ngm:class:sidecar-proxy",
+        "label": "Sidecar Proxy"
+      },
+      {
+        "@id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:dynamic-endpoint-resolution", "label": "Dynamic Endpoint Resolution"},
-    {"@id": "urn:ngm:class:service-location", "label": "Service Location"}
+    {
+      "@id": "urn:ngm:class:dynamic-endpoint-resolution",
+      "label": "Dynamic Endpoint Resolution"
+    },
+    {
+      "@id": "urn:ngm:class:service-location",
+      "label": "Service Location"
+    }
   ],
   "quality": 0.74,
   "provenance": {

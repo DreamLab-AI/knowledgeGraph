@@ -125,7 +125,7 @@ alias:: InverseKinematics, RB-1006-inverse-kinematics
   "relations": {
     "partOf": [
       {
-        "@id": "urn:ngm:class:robot-motion-planning",
+        "@id": "urn:ngm:class:motion-planning",
         "label": "Robot Motion Planning"
       },
       {
@@ -139,15 +139,11 @@ alias:: InverseKinematics, RB-1006-inverse-kinematics
         "label": "KinematicModel"
       },
       {
-        "@id": "urn:ngm:class:target-pose",
-        "label": "Target Pose"
-      },
-      {
         "@id": "urn:ngm:class:joint-configuration",
         "label": "Joint Configuration"
       },
       {
-        "@id": "urn:ngm:class:degrees-of-freedom",
+        "@id": "urn:ngm:class:rb-0023-degrees-of-freedom",
         "label": "Degrees of Freedom"
       }
     ],
@@ -185,20 +181,12 @@ alias:: InverseKinematics, RB-1006-inverse-kinematics
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:analytical-methods",
-        "label": "Analytical Methods"
-      },
-      {
         "@id": "urn:ngm:class:jacobian-matrix",
         "label": "Jacobian Matrix"
       },
       {
         "@id": "urn:ngm:class:numerical-methods",
         "label": "Numerical Methods"
-      },
-      {
-        "@id": "urn:ngm:class:pseudoinverse",
-        "label": "Pseudoinverse"
       },
       {
         "@id": "urn:ngm:class:optimization",
@@ -209,25 +197,9 @@ alias:: InverseKinematics, RB-1006-inverse-kinematics
       {
         "@id": "urn:ngm:class:forward-kinematics",
         "label": "Forward Kinematics"
-      },
-      {
-        "@id": "urn:ngm:class:singularities",
-        "label": "Singularities"
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:joint-limits",
-        "label": "Joint Limits"
-      },
-      {
-        "@id": "urn:ngm:class:workspace",
-        "label": "Workspace"
-      },
-      {
-        "@id": "urn:ngm:class:redundant-robot",
-        "label": "Redundant Robot"
-      },
       {
         "@id": "urn:ngm:class:end-effector",
         "label": "End Effector"
@@ -237,10 +209,6 @@ alias:: InverseKinematics, RB-1006-inverse-kinematics
       {
         "@id": "urn:ngm:class:character-animation",
         "label": "Character Animation"
-      },
-      {
-        "@id": "urn:ngm:class:virtual-reality-interaction",
-        "label": "Virtual Reality Interaction"
       }
     ]
   },

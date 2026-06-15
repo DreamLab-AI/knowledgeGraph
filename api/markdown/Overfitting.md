@@ -81,12 +81,6 @@ public:: true
         "label": "Model Capacity"
       }
     ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:memorisation",
-        "label": "Memorisation"
-      }
-    ],
     "dependsOn": [
       {
         "@id": "urn:ngm:class:bias-variance-tradeoff",
@@ -108,10 +102,6 @@ public:: true
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:machine-learning-phenomenon",
-        "label": "Machine Learning Phenomenon"
-      },
       {
         "@id": "urn:ngm:class:dropout",
         "label": "Dropout"

@@ -23,56 +23,133 @@ public:: true
   "definition": "A liquidity provider is an entity — individual, institution, or automated protocol participant — that deposits assets into a trading venue or liquidity pool to enable others to execute trades, receiving fee income or other incentives in return. In decentralised finance, liquidity providers supply token pairs to automated market makers, receiving LP tokens representing their proportional pool share.",
   "domain": "finance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:automated-market-maker", "label": "Automated Market Maker"},
-      {"@id": "urn:ngm:class:liquidity-pool", "label": "Liquidity Pool"},
-      {"@id": "urn:ngm:class:lp-token", "label": "LP Token"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "@id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "@id": "urn:ngm:class:lp-token",
+        "label": "LP Token"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:fee-income", "label": "Fee Income"},
-      {"@id": "urn:ngm:class:liquidity-position", "label": "Liquidity Position"}
+      {
+        "@id": "urn:ngm:class:liquidity-position",
+        "label": "Liquidity Position"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:decentralized-finance-de-fi", "label": "Decentralized Finance (DeFi)"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:token-pair", "label": "Token Pair"},
-      {"@id": "urn:ngm:class:capital", "label": "Capital"},
-      {"@id": "urn:ngm:class:wallet", "label": "Wallet"}
+      {
+        "@id": "urn:ngm:class:token-pair",
+        "label": "Token Pair"
+      },
+      {
+        "@id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:price-discovery", "label": "Price Discovery"},
-      {"@id": "urn:ngm:class:trade-execution", "label": "Trade Execution"},
-      {"@id": "urn:ngm:class:market-depth", "label": "Market Depth"}
+      {
+        "@id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      },
+      {
+        "@id": "urn:ngm:class:trade-execution",
+        "label": "Trade Execution"
+      },
+      {
+        "@id": "urn:ngm:class:market-depth",
+        "label": "Market Depth"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:price-oracle", "label": "Price Oracle"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:price-oracle",
+        "label": "Price Oracle"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:order-book", "label": "Order Book"},
-      {"@id": "urn:ngm:class:market-maker", "label": "Market Maker"}
+      {
+        "@id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:traditional-finance", "label": "Traditional Finance"},
-      {"@id": "urn:ngm:class:real-world-asset", "label": "Real-World Asset"}
+      {
+        "@id": "urn:ngm:class:traditional-finance",
+        "label": "Traditional Finance"
+      },
+      {
+        "@id": "urn:ngm:class:real-world-asset",
+        "label": "Real-World Asset"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:impermanent-loss", "label": "Impermanent Loss"},
-      {"@id": "urn:ngm:class:yield-farming", "label": "Yield Farming"},
-      {"@id": "urn:ngm:class:decentralized-exchange", "label": "Decentralized Exchange"},
-      {"@id": "urn:ngm:class:total-value-locked", "label": "Total Value Locked"},
-      {"@id": "urn:ngm:class:slippage", "label": "Slippage"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"}
+      {
+        "@id": "urn:ngm:class:impermanent-loss",
+        "label": "Impermanent Loss"
+      },
+      {
+        "@id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "@id": "urn:ngm:class:total-value-locked",
+        "label": "Total Value Locked"
+      },
+      {
+        "@id": "urn:ngm:class:slippage",
+        "label": "Slippage"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:market-maker", "label": "Market Maker"},
-    {"@id": "urn:ngm:class:lp", "label": "LP"}
+    {
+      "@id": "urn:ngm:class:market-maker",
+      "label": "Market Maker"
+    },
+    {
+      "@id": "urn:ngm:class:lp",
+      "label": "LP"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

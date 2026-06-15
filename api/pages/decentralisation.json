@@ -75,11 +75,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:centralisation",
-        "label": "Centralisation"
-      },
-      {
-        "id": "urn:ngm:class:federated-architecture",
+        "id": "urn:ngm:class:federated-system",
         "label": "Federated Architecture"
       }
     ],

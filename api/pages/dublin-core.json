@@ -16,35 +16,9 @@
   "qualityScore": 0.8,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:dc-elements",
-        "label": "DC Elements"
-      },
-      {
-        "id": "urn:ngm:class:dc-terms",
-        "label": "DC Terms"
-      },
-      {
-        "id": "urn:ngm:class:dc-type-vocabulary",
-        "label": "DC Type Vocabulary"
-      }
-    ],
-    "requires": [
-      {
-        "id": "urn:ngm:class:resource-description-framework",
-        "label": "Resource Description Framework"
-      }
-    ],
+    "hasPart": [],
+    "requires": [],
     "enables": [
-      {
-        "id": "urn:ngm:class:metadata-harvesting",
-        "label": "Metadata Harvesting"
-      },
-      {
-        "id": "urn:ngm:class:federated-search",
-        "label": "Federated Search"
-      },
       {
         "id": "urn:ngm:class:fair-data-principles",
         "label": "FAIR Data Principles"
@@ -55,22 +29,9 @@
       {
         "id": "urn:ngm:class:iso-15836",
         "label": "ISO 15836"
-      },
-      {
-        "id": "urn:ngm:class:ansi-niso-z39-85",
-        "label": "ANSI/NISO Z39.85"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:marc21",
-        "label": "MARC 21"
-      },
-      {
-        "id": "urn:ngm:class:mods-metadata",
-        "label": "MODS Metadata"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:knowledge-graph",
@@ -85,23 +46,15 @@
       {
         "id": "urn:ngm:class:json-data-interchange-format-ld",
         "label": "JSON-LD"
-      },
-      {
-        "id": "urn:ngm:class:uniform-resource-identifier",
-        "label": "Uniform Resource Identifier"
       }
     ],
     "supports": [
-      {
-        "id": "urn:ngm:class:digital-library",
-        "label": "Digital Library"
-      },
       {
         "id": "urn:ngm:class:institutional-repository",
         "label": "Institutional Repository"
       },
       {
-        "id": "urn:ngm:class:open-data-portal",
+        "id": "urn:ngm:class:open-data",
         "label": "Open Data Portal"
       }
     ],
@@ -109,20 +62,12 @@
       {
         "id": "urn:ngm:class:interoperability-standard",
         "label": "Interoperability Standard"
-      },
-      {
-        "id": "urn:ngm:class:dublin-core-metadata-initiative",
-        "label": "Dublin Core Metadata Initiative"
       }
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:semantic-web-standards",
+        "id": "urn:ngm:class:web-standards",
         "label": "Semantic Web Standards"
-      },
-      {
-        "id": "urn:ngm:class:open-archives-initiative",
-        "label": "Open Archives Initiative"
       }
     ],
     "relatedTo": [

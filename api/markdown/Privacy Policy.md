@@ -38,50 +38,121 @@ public:: true
   ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:privacy-framework", "label": "Privacy Framework"},
-      {"@id": "urn:ngm:class:transparency-principle", "label": "Transparency Principle"},
-      {"@id": "urn:ngm:class:accountability-principle", "label": "Accountability Principle"}
+      {
+        "@id": "urn:ngm:class:privacy-framework",
+        "label": "Privacy Framework"
+      },
+      {
+        "@id": "urn:ngm:class:transparency-principle",
+        "label": "Transparency Principle"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability Principle"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-protection-regulation", "label": "Data Protection Regulation"},
-      {"@id": "urn:ngm:class:legal-basis-for-processing", "label": "Legal Basis for Processing"},
-      {"@id": "urn:ngm:class:data-protection-officer", "label": "Data Protection Officer"}
+      {
+        "@id": "urn:ngm:class:data-protection-regulation",
+        "label": "Data Protection Regulation"
+      },
+      {
+        "@id": "urn:ngm:class:legal-basis-for-processing",
+        "label": "Legal Basis for Processing"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection-officer",
+        "label": "Data Protection Officer"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"},
-      {"@id": "urn:ngm:class:data-subject-rights", "label": "Data Subject Rights"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-subject-rights",
+        "label": "Data Subject Rights"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:informed-consent", "label": "Informed Consent"},
-      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"},
-      {"@id": "urn:ngm:class:purpose-limitation", "label": "Purpose Limitation"}
+      {
+        "@id": "urn:ngm:class:informed-consent",
+        "label": "Informed Consent"
+      },
+      {
+        "@id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "@id": "urn:ngm:class:purpose-limitation",
+        "label": "Purpose Limitation"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:gdpr-compliance", "label": "GDPR Compliance"},
-      {"@id": "urn:ngm:class:data-protection-impact-assessment", "label": "Data Protection Impact Assessment"}
+      {
+        "@id": "urn:ngm:class:gdpr-compliance",
+        "label": "GDPR Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection-impact-assessment",
+        "label": "Data Protection Impact Assessment"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:data-privacy-vocabulary", "label": "Data Privacy Vocabulary"},
-      {"@id": "urn:ngm:class:odrl", "label": "ODRL"}
+      {
+        "@id": "urn:ngm:class:data-privacy-vocabulary",
+        "label": "Data Privacy Vocabulary"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:terms-of-service", "label": "Terms of Service"},
-      {"@id": "urn:ngm:class:cookie-policy", "label": "Cookie Policy"}
+      {
+        "@id": "urn:ngm:class:terms-of-service",
+        "label": "Terms of Service"
+      },
+      {
+        "@id": "urn:ngm:class:cookie-policy",
+        "label": "Cookie Policy"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:personal-data", "label": "Personal Data"},
-      {"@id": "urn:ngm:class:data-retention", "label": "Data Retention"},
-      {"@id": "urn:ngm:class:cross-border-data-transfer", "label": "Cross-Border Data Transfer"}
+      {
+        "@id": "urn:ngm:class:personal-data",
+        "label": "Personal Data"
+      },
+      {
+        "@id": "urn:ngm:class:data-retention",
+        "label": "Data Retention"
+      },
+      {
+        "@id": "urn:ngm:class:cross-border-data-transfer",
+        "label": "Cross-Border Data Transfer"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-transparency", "label": "AI Transparency"},
-      {"@id": "urn:ngm:class:automated-decision-making", "label": "Automated Decision-Making"}
+      {
+        "@id": "urn:ngm:class:ai-transparency-framework",
+        "label": "AI Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:automated-decision-making",
+        "label": "Automated Decision-Making"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:privacy-notice", "label": "Privacy Notice"},
-    {"@id": "urn:ngm:class:data-protection-notice", "label": "Data Protection Notice"}
+    {
+      "@id": "urn:ngm:class:privacy-notice",
+      "label": "Privacy Notice"
+    },
+    {
+      "@id": "urn:ngm:class:data-protection-notice",
+      "label": "Data Protection Notice"
+    }
   ],
   "quality": 0.74,
   "provenance": {

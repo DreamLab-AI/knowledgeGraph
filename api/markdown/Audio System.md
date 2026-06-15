@@ -56,58 +56,135 @@ public:: true
     }
   ],
   "sameAs": [
-    {"@id": "urn:ngm:class:sound-system", "label": "Sound System"},
-    {"@id": "urn:ngm:class:audio-subsystem", "label": "Audio Subsystem"}
+    {
+      "@id": "urn:ngm:class:sound-system",
+      "label": "Sound System"
+    },
+    {
+      "@id": "urn:ngm:class:audio-subsystem",
+      "label": "Audio Subsystem"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
-      {"@id": "urn:ngm:class:audio-spatialization", "label": "Audio Spatialization"},
-      {"@id": "urn:ngm:class:digital-signal-processor", "label": "Digital Signal Processor"},
-      {"@id": "urn:ngm:class:audio-codec", "label": "Audio Codec"},
-      {"@id": "urn:ngm:class:microphone-array", "label": "Microphone Array"}
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "@id": "urn:ngm:class:audio-spatialization",
+        "label": "Audio Spatialization"
+      },
+      {
+        "@id": "urn:ngm:class:digital-signal-processor",
+        "label": "Digital Signal Processor"
+      },
+      {
+        "@id": "urn:ngm:class:audio-codec",
+        "label": "Audio Codec"
+      },
+      {
+        "@id": "urn:ngm:class:microphone-array",
+        "label": "Microphone Array"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:digital-signal-processing", "label": "Digital Signal Processing"},
-      {"@id": "urn:ngm:class:acoustic-model", "label": "Acoustic Model"},
-      {"@id": "urn:ngm:class:audio-driver", "label": "Audio Driver"}
+      {
+        "@id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:acoustic-model",
+        "label": "Acoustic Model"
+      },
+      {
+        "@id": "urn:ngm:class:audio-driver",
+        "label": "Audio Driver"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},
-      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
-      {"@id": "urn:ngm:class:voice-user-interface", "label": "Voice User Interface"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}
+      {
+        "@id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:voice-user-interface",
+        "label": "Voice User Interface"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:head-related-transfer-function", "label": "Head-Related Transfer Function"},
-      {"@id": "urn:ngm:class:pulse-code-modulation", "label": "Pulse-Code Modulation"},
-      {"@id": "urn:ngm:class:audio-compression", "label": "Audio Compression"}
+      {
+        "@id": "urn:ngm:class:head-related-transfer-function",
+        "label": "Head-Related Transfer Function"
+      },
+      {
+        "@id": "urn:ngm:class:pulse-code-modulation",
+        "label": "Pulse-Code Modulation"
+      },
+      {
+        "@id": "urn:ngm:class:audio-compression",
+        "label": "Audio Compression"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
-      {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"}
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:real-time-computing", "label": "Real-Time Computing"},
-      {"@id": "urn:ngm:class:operating-system", "label": "Operating System"}
-    ],
-    "standardizedBy": [
-      {"@id": "urn:ngm:class:web-audio-api", "label": "Web Audio API"},
-      {"@id": "urn:ngm:class:openal", "label": "OpenAL"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:visual-rendering-system", "label": "Visual Rendering System"}
+      {
+        "@id": "urn:ngm:class:real-time-computing",
+        "label": "Real-Time Computing"
+      },
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:audio-processing-system", "label": "Audio Processing System"},
-      {"@id": "urn:ngm:class:ambisonics", "label": "Ambisonics"},
-      {"@id": "urn:ngm:class:binaural-audio", "label": "Binaural Audio"}
+      {
+        "@id": "urn:ngm:class:audio-processing-system",
+        "label": "Audio Processing System"
+      },
+      {
+        "@id": "urn:ngm:class:ambisonics",
+        "label": "Ambisonics"
+      },
+      {
+        "@id": "urn:ngm:class:binaural-audio",
+        "label": "Binaural Audio"
+      }
     ]
   },
   "quality": 0.74,

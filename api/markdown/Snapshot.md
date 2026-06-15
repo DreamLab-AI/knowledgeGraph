@@ -105,21 +105,17 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:multisignature-wallet",
+        "@id": "urn:ngm:class:multisignature-wallets",
         "label": "Multisignature Wallet"
       },
       {
         "@id": "urn:ngm:class:gnosis-safe",
         "label": "Gnosis Safe"
-      },
-      {
-        "@id": "urn:ngm:class:blockchain-block",
-        "label": "Blockchain Block"
       }
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:voting-strategy",
+        "@id": "urn:ngm:class:voting-systems",
         "label": "Voting Strategy"
       },
       {
@@ -137,10 +133,6 @@ public:: true
       {
         "@id": "urn:ngm:class:decentralised-governance",
         "label": "Decentralised Governance"
-      },
-      {
-        "@id": "urn:ngm:class:token-delegation",
-        "label": "Token Delegation"
       }
     ],
     "dependsOn": [
@@ -159,7 +151,7 @@ public:: true
         "label": "On Chain Voting"
       },
       {
-        "@id": "urn:ngm:class:compound-governance",
+        "@id": "urn:ngm:class:governance",
         "label": "Compound Governance"
       }
     ],

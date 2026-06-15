@@ -63,27 +63,15 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:transformer-engine",
-        "label": "Transformer Engine"
-      },
-      {
         "@id": "urn:ngm:class:nvlink",
         "label": "NVLink"
       },
       {
         "@id": "urn:ngm:class:high-bandwidth-memory",
         "label": "High Bandwidth Memory"
-      },
-      {
-        "@id": "urn:ngm:class:nvswitch",
-        "label": "NVSwitch"
       }
     ],
     "partOf": [
-      {
-        "@id": "urn:ngm:class:dgx-h100",
-        "label": "DGX H100"
-      },
       {
         "@id": "urn:ngm:class:gpu-cluster",
         "label": "GPU Cluster"
@@ -119,23 +107,11 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:hopper-architecture",
-        "label": "Hopper Architecture"
-      },
-      {
         "@id": "urn:ngm:class:cuda",
         "label": "CUDA"
-      },
-      {
-        "@id": "urn:ngm:class:nvidia-software-stack",
-        "label": "NVIDIA Software Stack"
       }
     ],
     "implements": [
-      {
-        "@id": "urn:ngm:class:fp8-precision",
-        "label": "FP8 Precision"
-      },
       {
         "@id": "urn:ngm:class:mixed-precision-training",
         "label": "Mixed Precision Training"
@@ -147,25 +123,13 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:pcie-5",
-        "label": "PCIe 5"
-      },
-      {
         "@id": "urn:ngm:class:infiniband",
         "label": "InfiniBand"
       }
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:nvidia-a100",
-        "label": "NVIDIA A100"
-      },
-      {
-        "@id": "urn:ngm:class:amd-instinct-mi300x",
-        "label": "AMD Instinct MI300X"
-      },
-      {
-        "@id": "urn:ngm:class:google-tpu-v4",
+        "@id": "urn:ngm:class:tpu",
         "label": "Google TPU v4"
       }
     ],
@@ -179,15 +143,11 @@ public:: true
         "label": "Foundation Model"
       },
       {
-        "@id": "urn:ngm:class:ai-data-centre",
+        "@id": "urn:ngm:class:data-centre",
         "label": "AI Data Centre"
       }
     ],
     "relatedTo": [
-      {
-        "@id": "urn:ngm:class:nvidia-h200",
-        "label": "NVIDIA H200"
-      },
       {
         "@id": "urn:ngm:class:nvidia-corporation",
         "label": "NVIDIA Corporation"

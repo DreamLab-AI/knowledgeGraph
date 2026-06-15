@@ -134,25 +134,21 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:asset-verification",
+        "@id": "urn:ngm:class:verification",
         "label": "Asset Verification"
       },
       {
-        "@id": "urn:ngm:class:atomic-transaction",
+        "@id": "urn:ngm:class:transaction",
         "label": "Atomic Transaction"
       },
       {
-        "@id": "urn:ngm:class:exchange-agreement",
-        "label": "Exchange Agreement"
-      },
-      {
-        "@id": "urn:ngm:class:swap-smart-contract",
+        "@id": "urn:ngm:class:smart-contract",
         "label": "Swap Smart Contract"
       }
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:gas-fee-payment",
+        "@id": "urn:ngm:class:gas-fee",
         "label": "Gas Fee Payment"
       },
       {
@@ -174,16 +170,8 @@ public:: true
         "label": "Asset Liquidity"
       },
       {
-        "@id": "urn:ngm:class:direct-exchange",
-        "label": "Direct Exchange"
-      },
-      {
         "@id": "urn:ngm:class:peer-to-peer-trading",
         "label": "Peer-to-Peer Trading"
-      },
-      {
-        "@id": "urn:ngm:class:trust-minimized-transfer",
-        "label": "Trust-Minimized Transfer"
       }
     ],
     "partOf": [
@@ -197,7 +185,10 @@ public:: true
       }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:virtual-economy", "label": "Virtual Economy"}
+      {
+        "@id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
     ]
   },
   "quality": 0.35,

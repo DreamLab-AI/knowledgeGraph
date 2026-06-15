@@ -111,10 +111,6 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:abi",
-        "label": "ABI"
-      },
-      {
         "@id": "urn:ngm:class:bytecode",
         "label": "Bytecode"
       }
@@ -163,7 +159,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:bitcoin-script",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
         "label": "Bitcoin Script"
       }
     ],
@@ -183,7 +179,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:layer-2",
+        "@id": "urn:ngm:class:layer-2-solutions",
         "label": "Layer 2"
       },
       {

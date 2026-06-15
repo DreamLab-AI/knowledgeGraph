@@ -20,14 +20,6 @@
       {
         "id": "urn:ngm:class:operation-queue",
         "label": "Operation Queue"
-      },
-      {
-        "id": "urn:ngm:class:execution-delay",
-        "label": "Execution Delay"
-      },
-      {
-        "id": "urn:ngm:class:cancellation-window",
-        "label": "Cancellation Window"
       }
     ],
     "requires": [
@@ -52,15 +44,11 @@
       {
         "id": "urn:ngm:class:optimistic-governance",
         "label": "Optimistic Governance"
-      },
-      {
-        "id": "urn:ngm:class:fraud-proof-window",
-        "label": "Fraud Proof Window"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:evm-smart-contract",
+        "id": "urn:ngm:class:smart-contract",
         "label": "EVM Smart Contract"
       },
       {
@@ -70,24 +58,11 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:time-release-encryption",
-        "label": "Time-Release Encryption"
-      },
-      {
-        "id": "urn:ngm:class:bitcoin-script",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
         "label": "Bitcoin Script"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:immediate-execution",
-        "label": "Immediate Execution"
-      },
-      {
-        "id": "urn:ngm:class:flashloan",
-        "label": "Flash Loan"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:regulatory-compliance",
@@ -114,10 +89,6 @@
       {
         "id": "urn:ngm:class:dao-treasury",
         "label": "DAO Treasury"
-      },
-      {
-        "id": "urn:ngm:class:protocol-upgrade-pipeline",
-        "label": "Protocol Upgrade Pipeline"
       }
     ],
     "relatedTo": [

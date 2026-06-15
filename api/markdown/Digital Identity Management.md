@@ -130,7 +130,7 @@ public:: true
         "label": "Identity Provider"
       },
       {
-        "@id": "urn:ngm:class:public-key-infrastructure",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       }
     ],
@@ -168,11 +168,11 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:w3c-did-core",
+        "@id": "urn:ngm:class:w3-c-did-core",
         "label": "W3C DID Core 1.0"
       },
       {
-        "@id": "urn:ngm:class:eidas-2-0",
+        "@id": "urn:ngm:class:e-idas-2-0",
         "label": "eIDAS 2.0"
       },
       {
@@ -225,7 +225,7 @@ public:: true
       "label": "Identity and Access Management"
     }
   ],
-  "quality": 0.70,
+  "quality": 0.7,
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",
     "generatedAt": "2026-06-14T00:00:00Z",

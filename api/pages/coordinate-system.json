@@ -18,16 +18,8 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:reference-frame",
+        "id": "urn:ngm:class:reference-frames",
         "label": "Reference Frame"
-      },
-      {
-        "id": "urn:ngm:class:basis-vector",
-        "label": "Basis Vector"
-      },
-      {
-        "id": "urn:ngm:class:origin",
-        "label": "Origin"
       }
     ],
     "requires": [
@@ -66,23 +58,10 @@
       {
         "id": "urn:ngm:class:linear-algebra",
         "label": "Linear Algebra"
-      },
-      {
-        "id": "urn:ngm:class:rotation-representation",
-        "label": "Rotation Representation"
       }
     ],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:polar-coordinate-system",
-        "label": "Polar Coordinate System"
-      },
-      {
-        "id": "urn:ngm:class:curvilinear-coordinate-system",
-        "label": "Curvilinear Coordinate System"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:sensor-fusion",
@@ -95,11 +74,11 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:quaternion",
+        "id": "urn:ngm:class:quaternion-math",
         "label": "Quaternion"
       },
       {
-        "id": "urn:ngm:class:transformation-matrix",
+        "id": "urn:ngm:class:coordinate-transformation",
         "label": "Transformation Matrix"
       }
     ],
@@ -125,22 +104,10 @@
       {
         "id": "urn:ngm:class:openxr",
         "label": "OpenXR"
-      },
-      {
-        "id": "urn:ngm:class:iso-19111",
-        "label": "ISO 19111"
       }
     ],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:mathematical-framework",
-        "label": "Mathematical Framework"
-      },
-      {
-        "id": "urn:ngm:class:projection-model",
-        "label": "Projection Model"
-      },
       {
         "id": "urn:ngm:class:euclidean-geometry",
         "label": "Euclidean Geometry"

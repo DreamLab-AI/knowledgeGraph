@@ -24,57 +24,149 @@ elevatedFrom:: [[ChatGPT]]
   "definition": "An instruction-following conversational AI system is a natural language processing architecture trained to interpret, decompose, and execute open-ended user directives within a multi-turn dialogue context, producing contextually coherent and task-appropriate responses. Such systems combine large-scale pre-training on diverse corpora with alignment techniques — notably reinforcement learning from human feedback (RLHF) and instruction fine-tuning — to bridge the gap between raw language modelling capability and safe, helpful behaviour. They are distinguished from earlier rule-based chatbots by their generalisation across task types (summarisation, coding, question-answering, reasoning) without requiring task-specific engineering. Representative instances include OpenAI's ChatGPT, Google's Gemini, and Anthropic's Claude.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:conversational-ai", "label": "Conversational AI"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:conversational-ai",
+      "label": "Conversational AI"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:transformer", "label": "Transformer"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:reinforcement-learning-from-human-feedback", "label": "Reinforcement Learning from Human Feedback"},
-      {"@id": "urn:ngm:class:instruction-tuning", "label": "Instruction Tuning"},
-      {"@id": "urn:ngm:class:pre-training", "label": "Pre Training"},
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"}
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:pre-training",
+        "label": "Pre Training"
+      },
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},
-      {"@id": "urn:ngm:class:ai-agents", "label": "AI Agents"},
-      {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-      {"@id": "urn:ngm:class:retrieval-augmented-generation", "label": "Retrieval-Augmented Generation"}
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      },
+      {
+        "@id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:human-feedback", "label": "Human Feedback"},
-      {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"},
-      {"@id": "urn:ngm:class:alignment-techniques", "label": "Alignment Techniques"}
+      {
+        "@id": "urn:ngm:class:human-feedback",
+        "label": "Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:alignment-techniques",
+        "label": "Alignment Techniques"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:natural-language-understanding", "label": "Natural Language Understanding"},
-      {"@id": "urn:ngm:class:dialogue-management", "label": "Dialogue Management"}
+      {
+        "@id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:dialogue-management",
+        "label": "Dialogue Management"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rule-based-chatbot", "label": "Rule-Based Chatbot"},
-      {"@id": "urn:ngm:class:retrieval-based-dialogue-system", "label": "Retrieval-Based Dialogue System"}
+      {
+        "@id": "urn:ngm:class:chatbot",
+        "label": "Rule-Based Chatbot"
+      },
+      {
+        "@id": "urn:ngm:class:dialogue-system",
+        "label": "Retrieval-Based Dialogue System"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:gpt", "label": "GPT"},
-      {"@id": "urn:ngm:class:gemini-multimodal-language-model", "label": "Gemini Multimodal Language Model"},
-      {"@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family", "label": "Constitutional AI Language Model Family"},
-      {"@id": "urn:ngm:class:hallucination-in-language-models", "label": "Hallucination in Language Models"},
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"}
+      {
+        "@id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      },
+      {
+        "@id": "urn:ngm:class:gemini-multimodal-language-model",
+        "label": "Gemini Multimodal Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:constitutional-ai-training-methodology-language-model-family",
+        "label": "Constitutional AI Language Model Family"
+      },
+      {
+        "@id": "urn:ngm:class:hallucination",
+        "label": "Hallucination in Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:eu-ai-act-regulatory-instrument", "label": "EU AI Act Regulatory Instrument"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}
+      {
+        "@id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:openai-research-organisation", "label": "OpenAI Research Organisation"}
+      {
+        "@id": "urn:ngm:class:openai-research-organisation",
+        "label": "OpenAI Research Organisation"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:code-generation", "label": "Code Generation"},
-      {"@id": "urn:ngm:class:document-summarisation", "label": "Document Summarisation"}
+      {
+        "@id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "@id": "urn:ngm:class:document-summarisation",
+        "label": "Document Summarisation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:chat-gpt", "label": "ChatGPT"},
-    {"@id": "urn:ngm:class:instruction-tuned-language-model", "label": "Instruction-Tuned Language Model"}
+    {
+      "@id": "urn:ngm:class:chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "@id": "urn:ngm:class:instruction-tuned-language-model",
+      "label": "Instruction-Tuned Language Model"
+    }
   ],
   "quality": 0.72,
   "provenance": {

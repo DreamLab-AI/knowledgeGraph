@@ -59,30 +59,6 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:acm-digital-library",
-        "label": "ACM Digital Library"
-      },
-      {
-        "@id": "urn:ngm:class:acm-special-interest-group",
-        "label": "ACM Special Interest Group"
-      },
-      {
-        "@id": "urn:ngm:class:acm-turing-award",
-        "label": "ACM Turing Award"
-      },
-      {
-        "@id": "urn:ngm:class:acm-code-of-ethics",
-        "label": "ACM Code of Ethics"
-      }
-    ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:computing-research-community",
-        "label": "Computing Research Community"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:peer-review",
@@ -113,7 +89,7 @@ public:: true
         "label": "DOI System"
       },
       {
-        "@id": "urn:ngm:class:creative-commons-licensing",
+        "@id": "urn:ngm:class:creative-commons",
         "label": "Creative Commons Licensing"
       }
     ],
@@ -121,25 +97,11 @@ public:: true
       {
         "@id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
-      },
-      {
-        "@id": "urn:ngm:class:computer-science-curriculum",
-        "label": "Computer Science Curriculum"
-      },
-      {
-        "@id": "urn:ngm:class:diversity-in-computing",
-        "label": "Diversity in Computing"
-      }
-    ],
-    "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:acm-curriculum-guidelines",
-        "label": "ACM Curriculum Guidelines"
       }
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:ieee-computer-society",
+        "@id": "urn:ngm:class:ieee",
         "label": "IEEE Computer Society"
       },
       {
@@ -161,7 +123,7 @@ public:: true
         "label": "Cybersecurity"
       },
       {
-        "@id": "urn:ngm:class:programming-languages",
+        "@id": "urn:ngm:class:programming-language",
         "label": "Programming Languages"
       }
     ],
@@ -169,10 +131,6 @@ public:: true
       {
         "@id": "urn:ngm:class:artificial-intelligence-research",
         "label": "Artificial Intelligence Research"
-      },
-      {
-        "@id": "urn:ngm:class:machine-learning-conferences",
-        "label": "Machine Learning Conferences"
       }
     ]
   },

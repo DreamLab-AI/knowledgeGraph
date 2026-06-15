@@ -23,53 +23,109 @@ public:: true
   "definition": "Change Management is the structured discipline of guiding organisations, teams, and individuals through transitions in technology, process, or culture to achieve desired outcomes whilst minimising disruption and resistance. It encompasses planning, communication, training, stakeholder alignment, and feedback loops that collectively ensure adoption of new working methods. In technology contexts it also covers the formal control of modifications to systems and infrastructure to reduce risk. Effective change management is widely recognised as a critical determinant of whether digital transformation initiatives deliver their intended value.",
   "domain": "governance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai-governance-framework", "label": "AI Governance Framework"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-framework",
+      "label": "AI Governance Framework"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-transformation", "label": "Digital Transformation"},
-      {"@id": "urn:ngm:class:stakeholder-engagement", "label": "Stakeholder Engagement"},
-      {"@id": "urn:ngm:class:human-factors", "label": "Human Factors"},
-      {"@id": "urn:ngm:class:organisational-resilience", "label": "Organisational Resilience"},
-      {"@id": "urn:ngm:class:enterprise-architecture", "label": "Enterprise Architecture"},
-      {"@id": "urn:ngm:class:programme-management", "label": "Programme Management"}
+      {
+        "@id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      },
+      {
+        "@id": "urn:ngm:class:human-factors",
+        "label": "Human Factors"
+      },
+      {
+        "@id": "urn:ngm:class:organisational-resilience",
+        "label": "Organisational Resilience"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-adoption", "label": "AI Adoption"},
-      {"@id": "urn:ngm:class:workforce-development", "label": "Workforce Development"},
-      {"@id": "urn:ngm:class:process-improvement", "label": "Process Improvement"},
-      {"@id": "urn:ngm:class:continuous-improvement", "label": "Continuous Improvement"}
+      {
+        "@id": "urn:ngm:class:ai-adoption",
+        "label": "AI Adoption"
+      },
+      {
+        "@id": "urn:ngm:class:workforce-development",
+        "label": "Workforce Development"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-improvement",
+        "label": "Continuous Improvement"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:communication-planning", "label": "Communication Planning"},
-      {"@id": "urn:ngm:class:training-and-development", "label": "Training and Development"}
-    ],
-    "requires": [
-      {"@id": "urn:ngm:class:leadership-commitment", "label": "Leadership Commitment"},
-      {"@id": "urn:ngm:class:organisational-culture", "label": "Organisational Culture"}
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:impact-assessment", "label": "Impact Assessment"},
-      {"@id": "urn:ngm:class:change-readiness-assessment", "label": "Change Readiness Assessment"}
+      {
+        "@id": "urn:ngm:class:impact-assessment",
+        "label": "Impact Assessment"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:governance", "label": "Governance"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:technical-debt", "label": "Technical Debt"}
+      {
+        "@id": "urn:ngm:class:technical-debt",
+        "label": "Technical Debt"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"},
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:organisational-change-management", "label": "Organisational Change Management"},
-    {"@id": "urn:ngm:class:it-change-management", "label": "IT Change Management"}
+    {
+      "@id": "urn:ngm:class:organisational-change-management",
+      "label": "Organisational Change Management"
+    },
+    {
+      "@id": "urn:ngm:class:it-change-management",
+      "label": "IT Change Management"
+    }
   ],
   "quality": 0.72,
   "provenance": {

@@ -24,60 +24,176 @@ public:: true
   "definition": "Ethereum is an open-source, decentralised layer-1 blockchain platform conceived by Vitalik Buterin and launched in 2015, distinguished from Bitcoin by its general-purpose programmability via the Ethereum Virtual Machine (EVM), which executes Turing-complete smart contracts deployed on a shared global state. It transitioned from Proof of Work to Proof of Stake in September 2022 (the Merge), dramatically reducing energy consumption while preserving consensus security through a validator set staking Ether (ETH). Ethereum serves as the foundational settlement layer for the majority of decentralised finance (DeFi) protocols, NFT standards, DAOs, and Layer-2 rollup networks, with its fee market governed by EIP-1559's base-fee-burn mechanism.",
   "domain": "blockchain",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:smart-contract-platform", "label": "Smart Contract Platform"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:smart-contract-platform",
+      "label": "Smart Contract Platform"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum Smart Contract Platform"},
-    {"@id": "urn:ngm:class:ethereum-network", "label": "Ethereum Network"}
+    {
+      "@id": "urn:ngm:class:ethereum-smart-contract-platform",
+      "label": "Ethereum Smart Contract Platform"
+    },
+    {
+      "@id": "urn:ngm:class:ethereum-network",
+      "label": "Ethereum Network"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:ethereum-virtual-machine", "label": "Ethereum Virtual Machine"},
-      {"@id": "urn:ngm:class:evm", "label": "EVM"},
-      {"@id": "urn:ngm:class:solidity", "label": "Solidity"},
-      {"@id": "urn:ngm:class:gas", "label": "Gas"},
-      {"@id": "urn:ngm:class:mempool", "label": "Mempool"},
-      {"@id": "urn:ngm:class:merkle-patricia-trie", "label": "Merkle Patricia Trie"},
-      {"@id": "urn:ngm:class:ethereum-node", "label": "Ethereum Node"}
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:evm",
+        "label": "EVM"
+      },
+      {
+        "@id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      },
+      {
+        "@id": "urn:ngm:class:gas",
+        "label": "Gas"
+      },
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-patricia-trie",
+        "label": "Merkle Patricia Trie"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum-node",
+        "label": "Ethereum Node"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:proof-of-stake", "label": "Proof of Stake"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"},
-      {"@id": "urn:ngm:class:validator-node", "label": "Validator Node"},
-      {"@id": "urn:ngm:class:public-key-cryptography", "label": "Public Key Cryptography"}
+      {
+        "@id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:dao", "label": "DAO"},
-      {"@id": "urn:ngm:class:nft", "label": "NFT"},
-      {"@id": "urn:ngm:class:decentralised-application", "label": "Decentralised Application"},
-      {"@id": "urn:ngm:class:account-abstraction", "label": "Account Abstraction"},
-      {"@id": "urn:ngm:class:restaking", "label": "Restaking"},
-      {"@id": "urn:ngm:class:rollup", "label": "Rollup"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "@id": "urn:ngm:class:account-abstraction",
+        "label": "Account Abstraction"
+      },
+      {
+        "@id": "urn:ngm:class:restaking",
+        "label": "Restaking"
+      },
+      {
+        "@id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:eip-1559", "label": "EIP-1559"},
-      {"@id": "urn:ngm:class:eip-4844", "label": "EIP-4844"},
-      {"@id": "urn:ngm:class:eip", "label": "EIP"},
-      {"@id": "urn:ngm:class:erc20", "label": "ERC20"},
-      {"@id": "urn:ngm:class:erc721", "label": "ERC721"}
+      {
+        "@id": "urn:ngm:class:eip-1559",
+        "label": "EIP-1559"
+      },
+      {
+        "@id": "urn:ngm:class:eip-4844",
+        "label": "EIP-4844"
+      },
+      {
+        "@id": "urn:ngm:class:eip",
+        "label": "EIP"
+      },
+      {
+        "@id": "urn:ngm:class:erc20",
+        "label": "ERC20"
+      },
+      {
+        "@id": "urn:ngm:class:erc721",
+        "label": "ERC721"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:token-standard", "label": "Token Standard"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:elliptic-curve-cryptography", "label": "Elliptic Curve Cryptography"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:bitcoin", "label": "Bitcoin"},
-      {"@id": "urn:ngm:class:solana", "label": "Solana"},
-      {"@id": "urn:ngm:class:polkadot", "label": "Polkadot"},
-      {"@id": "urn:ngm:class:avalanche", "label": "Avalanche"}
+      {
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "@id": "urn:ngm:class:solana",
+        "label": "Solana"
+      },
+      {
+        "@id": "urn:ngm:class:polkadot",
+        "label": "Polkadot"
+      },
+      {
+        "@id": "urn:ngm:class:avalanche",
+        "label": "Avalanche"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:digital-sovereignty", "label": "Digital Sovereignty"},
-      {"@id": "urn:ngm:class:distributed-ledger-technology", "label": "Distributed Ledger Technology"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:digital-sovereignty",
+        "label": "Digital Sovereignty"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      }
     ]
   },
   "quality": 0.74,

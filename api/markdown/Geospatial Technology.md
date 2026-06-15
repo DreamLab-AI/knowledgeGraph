@@ -54,56 +54,131 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:gps", "label": "Gps"},
-      {"@id": "urn:ngm:class:lidar", "label": "Lidar"},
-      {"@id": "urn:ngm:class:remote-sensing", "label": "Remote Sensing"},
-      {"@id": "urn:ngm:class:geographic-information-system", "label": "Geographic Information System"},
-      {"@id": "urn:ngm:class:geospatial-information", "label": "Geospatial Information"},
-      {"@id": "urn:ngm:class:photogrammetry", "label": "Photogrammetry"}
+      {
+        "@id": "urn:ngm:class:gps",
+        "label": "Gps"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "@id": "urn:ngm:class:remote-sensing",
+        "label": "Remote Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:geographic-information-system",
+        "label": "Geographic Information System"
+      },
+      {
+        "@id": "urn:ngm:class:geospatial-information",
+        "label": "Geospatial Information"
+      },
+      {
+        "@id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:venue-tethered-immersive-experience", "label": "Venue-Tethered Immersive Experience"},
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"},
-      {"@id": "urn:ngm:class:smart-city", "label": "Smart City"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:venue-tethered-immersive-experience",
+        "label": "Venue-Tethered Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:geospatial-engine", "label": "Geospatial Engine"},
-      {"@id": "urn:ngm:class:coordinate-reference-system", "label": "Coordinate Reference System"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:geospatial-engine",
+        "label": "Geospatial Engine"
+      },
+      {
+        "@id": "urn:ngm:class:coordinate-reference-system",
+        "label": "Coordinate Reference System"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:spatial-database", "label": "Spatial Database"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-database",
+        "label": "Spatial Database"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:environmental-monitoring", "label": "Environmental Monitoring"},
-      {"@id": "urn:ngm:class:supply-chain-management", "label": "Supply Chain Management"},
-      {"@id": "urn:ngm:class:disaster-response", "label": "Disaster Response"}
+      {
+        "@id": "urn:ngm:class:environmental-monitoring",
+        "label": "Environmental Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "@id": "urn:ngm:class:disaster-response",
+        "label": "Disaster Response"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:open-geospatial-consortium", "label": "Open Geospatial Consortium"},
-      {"@id": "urn:ngm:class:iso-tc211", "label": "ISO TC/211"}
+      {
+        "@id": "urn:ngm:class:open-geospatial-consortium",
+        "label": "Open Geospatial Consortium"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:indoor-positioning-system", "label": "Indoor Positioning System"}
+      {
+        "@id": "urn:ngm:class:indoor-positioning-system",
+        "label": "Indoor Positioning System"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:internet-of-things", "label": "Internet of Things"},
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
-    ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:geodesy", "label": "Geodesy"},
-      {"@id": "urn:ngm:class:cartography", "label": "Cartography"},
-      {"@id": "urn:ngm:class:spatial-data-infrastructure", "label": "Spatial Data Infrastructure"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:geomatics", "label": "Geomatics"},
-    {"@id": "urn:ngm:class:geo-informatics", "label": "Geo-Informatics"}
+    {
+      "@id": "urn:ngm:class:geomatics",
+      "label": "Geomatics"
+    },
+    {
+      "@id": "urn:ngm:class:geo-informatics",
+      "label": "Geo-Informatics"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

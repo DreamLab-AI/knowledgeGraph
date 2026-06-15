@@ -71,7 +71,7 @@ public:: true
         "label": "Embeddings"
       },
       {
-        "@id": "urn:ngm:class:approximate-nearest-neighbour",
+        "@id": "urn:ngm:class:nearest-neighbor-search",
         "label": "Approximate Nearest Neighbour"
       },
       {
@@ -117,7 +117,7 @@ public:: true
         "label": "Euclidean Distance"
       },
       {
-        "@id": "urn:ngm:class:hnsw",
+        "@id": "urn:ngm:class:hnsw-index",
         "label": "HNSW"
       }
     ],
@@ -127,7 +127,7 @@ public:: true
         "label": "Large Language Models"
       },
       {
-        "@id": "urn:ngm:class:multimodal-ai",
+        "@id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
       }
     ],
@@ -157,7 +157,7 @@ public:: true
         "label": "Knowledge Graphs"
       },
       {
-        "@id": "urn:ngm:class:feature-stores",
+        "@id": "urn:ngm:class:feature-store",
         "label": "Feature Stores"
       },
       {

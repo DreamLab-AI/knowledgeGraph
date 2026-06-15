@@ -57,7 +57,7 @@
         "label": "Point Time-Locked Contract"
       },
       {
-        "id": "urn:ngm:class:threshold-signature",
+        "id": "urn:ngm:class:threshold-signature-scheme",
         "label": "Threshold Signature"
       }
     ],
@@ -100,17 +100,9 @@
       {
         "id": "urn:ngm:class:sha256",
         "label": "SHA-256"
-      },
-      {
-        "id": "urn:ngm:class:bip32-hierarchical-deterministic-wallets",
-        "label": "BIP-32 HD Wallets"
       }
     ],
     "supports": [
-      {
-        "id": "urn:ngm:class:bitcoin-privacy",
-        "label": "Bitcoin Privacy"
-      },
       {
         "id": "urn:ngm:class:lightning-network",
         "label": "Lightning Network"
@@ -122,13 +114,13 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:bitcoin-core",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
         "label": "Bitcoin Core"
       }
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:taproot-soft-fork",
+        "id": "urn:ngm:class:taproot",
         "label": "Taproot Soft Fork"
       }
     ],

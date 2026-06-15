@@ -33,20 +33,12 @@
       {
         "id": "urn:ngm:class:bioinformatics",
         "label": "Bioinformatics"
-      },
-      {
-        "id": "urn:ngm:class:clinical-data-infrastructure",
-        "label": "Clinical Data Infrastructure"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:drug-discovery-ai",
         "label": "Drug Discovery AI"
-      },
-      {
-        "id": "urn:ngm:class:pharmacogenomics",
-        "label": "Pharmacogenomics"
       },
       {
         "id": "urn:ngm:class:biomarker-discovery",
@@ -122,10 +114,6 @@
       {
         "id": "urn:ngm:class:digital-health",
         "label": "Digital Health"
-      },
-      {
-        "id": "urn:ngm:class:health-informatics",
-        "label": "Health Informatics"
       }
     ]
   },

@@ -378,13 +378,12 @@ alias:: BC-0485-travel-rule
         "@id": "urn:ngm:class:anti-money-laundering",
         "label": "Anti-Money Laundering"
       },
-      {"@id": "urn:ngm:class:counter-terrorist-financing", "label": "Counter-Terrorist Financing"}
+      {
+        "@id": "urn:ngm:class:counter-terrorist-financing",
+        "label": "Counter-Terrorist Financing"
+      }
     ],
     "hasPart": [
-      {
-        "@id": "urn:ngm:class:beneficiary-information-requirement",
-        "label": "Beneficiary Information Requirement"
-      },
       {
         "@id": "urn:ngm:class:eba-travel-rule-guidelines",
         "label": "EBA Travel Rule Guidelines"
@@ -394,36 +393,12 @@ alias:: BC-0485-travel-rule
         "label": "IVMS 101"
       },
       {
-        "@id": "urn:ngm:class:notabene",
-        "label": "Notabene"
-      },
-      {
-        "@id": "urn:ngm:class:originator-information-requirement",
-        "label": "Originator Information Requirement"
-      },
-      {
-        "@id": "urn:ngm:class:self-hosted-wallet-verification",
-        "label": "Self-Hosted Wallet Verification"
-      },
-      {
-        "@id": "urn:ngm:class:sunrise-problem",
-        "label": "Sunrise Problem"
-      },
-      {
         "@id": "urn:ngm:class:travel-rule-protocol",
         "label": "Travel Rule Protocol"
       },
       {
         "@id": "urn:ngm:class:trisa",
         "label": "TRISA"
-      },
-      {
-        "@id": "urn:ngm:class:vasp-discovery",
-        "label": "VASP Discovery"
-      },
-      {
-        "@id": "urn:ngm:class:veriscope",
-        "label": "Veriscope"
       }
     ],
     "requires": [
@@ -432,7 +407,7 @@ alias:: BC-0485-travel-rule
         "label": "Blockchain Analytics"
       },
       {
-        "@id": "urn:ngm:class:kyc-verification",
+        "@id": "urn:ngm:class:kyc",
         "label": "KYC Verification"
       },
       {
@@ -444,23 +419,11 @@ alias:: BC-0485-travel-rule
         "label": "Sanctions Screening"
       },
       {
-        "@id": "urn:ngm:class:vasp-registration",
-        "label": "VASP Registration"
-      },
-      {
-        "@id": "urn:ngm:class:vasp-to-vasp-messaging",
-        "label": "VASP-to-VASP Messaging"
-      },
-      {
-        "@id": "urn:ngm:class:virtual-asset-service-provider",
+        "@id": "urn:ngm:class:bc-0456-virtual-asset-service-providers",
         "label": "Virtual Asset Service Provider"
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:aml-enforcement",
-        "label": "AML Enforcement"
-      },
       {
         "@id": "urn:ngm:class:cross-border-payment-transparency",
         "label": "Cross-Border Payment Transparency"
@@ -476,10 +439,6 @@ alias:: BC-0485-travel-rule
       {
         "@id": "urn:ngm:class:sanctions-compliance",
         "label": "Sanctions Compliance"
-      },
-      {
-        "@id": "urn:ngm:class:transaction-tracing",
-        "label": "Transaction Tracing"
       }
     ],
     "implements": [
@@ -500,7 +459,7 @@ alias:: BC-0485-travel-rule
         "label": "IVMS 101"
       },
       {
-        "@id": "urn:ngm:class:money-laundering-regulations",
+        "@id": "urn:ngm:class:anti-money-laundering",
         "label": "Money Laundering Regulations"
       },
       {
@@ -509,14 +468,6 @@ alias:: BC-0485-travel-rule
       }
     ],
     "uses": [
-      {
-        "@id": "urn:ngm:class:blockchain-address-attribution",
-        "label": "Blockchain Address Attribution"
-      },
-      {
-        "@id": "urn:ngm:class:https-messaging",
-        "label": "HTTPS Messaging"
-      },
       {
         "@id": "urn:ngm:class:ivms-101",
         "label": "IVMS 101"
@@ -574,14 +525,6 @@ alias:: BC-0485-travel-rule
         "label": "Counter-Terrorist Financing"
       },
       {
-        "@id": "urn:ngm:class:de-risking-prevention",
-        "label": "De-risking Prevention"
-      },
-      {
-        "@id": "urn:ngm:class:financial-intelligence-units",
-        "label": "Financial Intelligence Units"
-      },
-      {
         "@id": "urn:ngm:class:law-enforcement-access",
         "label": "Law Enforcement Access"
       },
@@ -612,16 +555,8 @@ alias:: BC-0485-travel-rule
         "label": "Financial Action Task Force"
       },
       {
-        "@id": "urn:ngm:class:gbbc-digital-finance",
-        "label": "GBBC Digital Finance"
-      },
-      {
         "@id": "urn:ngm:class:global-digital-finance",
         "label": "Global Digital Finance"
-      },
-      {
-        "@id": "urn:ngm:class:ivms-101-working-group",
-        "label": "IVMS 101 Working Group"
       }
     ]
   },

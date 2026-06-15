@@ -19,10 +19,6 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:secure-clock",
-        "label": "Secure Clock"
-      },
-      {
         "id": "urn:ngm:class:trust-service-provider",
         "label": "Trust Service Provider"
       }
@@ -43,29 +39,16 @@
       {
         "id": "urn:ngm:class:long-term-archival",
         "label": "Long-Term Archival"
-      },
-      {
-        "id": "urn:ngm:class:document-authenticity",
-        "label": "Document Authenticity"
       }
     ],
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:rfc-3161",
-        "label": "RFC 3161"
-      },
-      {
         "id": "urn:ngm:class:eidas-regulation",
         "label": "eIDAS Regulation"
       }
     ],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:blockchain-timestamping",
-        "label": "Blockchain Timestamping"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:blockchain",
@@ -86,7 +69,7 @@
         "label": "Cryptographic Signature"
       },
       {
-        "id": "urn:ngm:class:x509-certificate",
+        "id": "urn:ngm:class:x-509-certificate",
         "label": "X.509 Certificate"
       }
     ],
@@ -98,10 +81,6 @@
       {
         "id": "urn:ngm:class:archival-standards",
         "label": "Archival Standards"
-      },
-      {
-        "id": "urn:ngm:class:electronic-contracting",
-        "label": "Electronic Contracting"
       }
     ],
     "standardizedBy": [
@@ -129,7 +108,7 @@
         "label": "Digital Signature"
       },
       {
-        "id": "urn:ngm:class:public-key-infrastructure",
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
         "label": "Public Key Infrastructure"
       },
       {

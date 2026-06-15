@@ -44,10 +44,6 @@
       {
         "id": "urn:ngm:class:distributed-hash-table",
         "label": "Distributed Hash Table"
-      },
-      {
-        "id": "urn:ngm:class:state-tree",
-        "label": "State Tree"
       }
     ],
     "requires": [
@@ -62,10 +58,6 @@
       {
         "id": "urn:ngm:class:replication-protocol",
         "label": "Replication Protocol"
-      },
-      {
-        "id": "urn:ngm:class:network-partition-handling",
-        "label": "Network Partition Handling"
       }
     ],
     "enables": [

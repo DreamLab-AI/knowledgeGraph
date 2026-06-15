@@ -556,7 +556,7 @@ public:: true
         "label": "Signal Protocol"
       },
       {
-        "@id": "urn:ngm:class:threshold-signatures",
+        "@id": "urn:ngm:class:threshold-signature-scheme",
         "label": "Threshold Signatures"
       },
       {
@@ -650,16 +650,8 @@ public:: true
         "label": "Critical National Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:defence-and-intelligence",
-        "label": "Defence and Intelligence"
-      },
-      {
         "@id": "urn:ngm:class:financial-services",
         "label": "Financial Services"
-      },
-      {
-        "@id": "urn:ngm:class:healthcare-data-security",
-        "label": "Healthcare Data Security"
       },
       {
         "@id": "urn:ngm:class:blockchain",
@@ -682,10 +674,6 @@ public:: true
       {
         "@id": "urn:ngm:class:bsi-germany",
         "label": "BSI Germany"
-      },
-      {
-        "@id": "urn:ngm:class:enisa",
-        "label": "ENISA"
       },
       {
         "@id": "urn:ngm:class:etsi",

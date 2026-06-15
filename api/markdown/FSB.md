@@ -95,20 +95,6 @@ public:: true
         "label": "Cross-Border Regulatory Cooperation"
       }
     ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:plenary",
-        "label": "Plenary"
-      },
-      {
-        "@id": "urn:ngm:class:standing-committee",
-        "label": "Standing Committee"
-      },
-      {
-        "@id": "urn:ngm:class:regional-consultative-group",
-        "label": "Regional Consultative Group"
-      }
-    ],
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:basel-committee",
@@ -117,10 +103,6 @@ public:: true
       {
         "@id": "urn:ngm:class:iosco",
         "label": "IOSCO"
-      },
-      {
-        "@id": "urn:ngm:class:iais",
-        "label": "IAIS"
       }
     ],
     "uses": [
@@ -141,14 +123,6 @@ public:: true
       {
         "@id": "urn:ngm:class:macroprudential-policy",
         "label": "Macroprudential Policy"
-      },
-      {
-        "@id": "urn:ngm:class:resolution-framework",
-        "label": "Resolution Framework"
-      },
-      {
-        "@id": "urn:ngm:class:too-big-to-fail",
-        "label": "Too Big To Fail"
       }
     ],
     "contrastsWith": [
@@ -171,11 +145,7 @@ public:: true
         "label": "Financial System"
       },
       {
-        "@id": "urn:ngm:class:non-bank-financial-intermediation",
-        "label": "Non-Bank Financial Intermediation"
-      },
-      {
-        "@id": "urn:ngm:class:crypto-asset-regulation",
+        "@id": "urn:ngm:class:crypto-regulation",
         "label": "Crypto-Asset Regulation"
       },
       {

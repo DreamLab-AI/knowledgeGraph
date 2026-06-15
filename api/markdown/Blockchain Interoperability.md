@@ -543,16 +543,8 @@ alias:: BC-0440-blockchain-interoperability
         "label": "Cryptographic Proof System"
       },
       {
-        "@id": "urn:ngm:class:message-passing-protocol",
+        "@id": "urn:ngm:class:message-passing",
         "label": "Message Passing Protocol"
-      },
-      {
-        "@id": "urn:ngm:class:state-verification-mechanism",
-        "label": "State Verification Mechanism"
-      },
-      {
-        "@id": "urn:ngm:class:trust-assumption-model",
-        "label": "Trust Assumption Model"
       },
       {
         "@id": "urn:ngm:class:validator-set",
@@ -569,7 +561,7 @@ alias:: BC-0440-blockchain-interoperability
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:consensus-finality",
+        "@id": "urn:ngm:class:finality",
         "label": "Consensus Finality"
       },
       {
@@ -577,11 +569,7 @@ alias:: BC-0440-blockchain-interoperability
         "label": "Destination Chain Execution"
       },
       {
-        "@id": "urn:ngm:class:message-ordering",
-        "label": "Message Ordering"
-      },
-      {
-        "@id": "urn:ngm:class:source-chain-state",
+        "@id": "urn:ngm:class:chain-state",
         "label": "Source Chain State"
       },
       {
@@ -603,12 +591,8 @@ alias:: BC-0440-blockchain-interoperability
         "label": "Cross-Chain Governance"
       },
       {
-        "@id": "urn:ngm:class:interchain-token-standard",
+        "@id": "urn:ngm:class:token-standard",
         "label": "Interchain Token Standard"
-      },
-      {
-        "@id": "urn:ngm:class:modular-blockchain-architecture",
-        "label": "Modular Blockchain Architecture"
       },
       {
         "@id": "urn:ngm:class:multi-chain-de-fi",
@@ -617,10 +601,6 @@ alias:: BC-0440-blockchain-interoperability
       {
         "@id": "urn:ngm:class:omnichain-application",
         "label": "Omnichain Application"
-      },
-      {
-        "@id": "urn:ngm:class:unified-liquidity",
-        "label": "Unified Liquidity"
       }
     ],
     "implements": [
@@ -633,10 +613,6 @@ alias:: BC-0440-blockchain-interoperability
         "label": "Hash Time-Locked Contract"
       },
       {
-        "@id": "urn:ngm:class:intent-based-settlement",
-        "label": "Intent-Based Settlement"
-      },
-      {
         "@id": "urn:ngm:class:light-client-verification",
         "label": "Light Client Verification"
       },
@@ -647,10 +623,6 @@ alias:: BC-0440-blockchain-interoperability
       {
         "@id": "urn:ngm:class:optimistic-verification",
         "label": "Optimistic Verification"
-      },
-      {
-        "@id": "urn:ngm:class:zero-knowledge-proof-bridge",
-        "label": "Zero-Knowledge Proof Bridge"
       },
       {
         "@id": "urn:ngm:class:atomic-swap",
@@ -675,10 +647,6 @@ alias:: BC-0440-blockchain-interoperability
         "label": "Optimistic Oracle"
       },
       {
-        "@id": "urn:ngm:class:restaked-validator",
-        "label": "Restaked Validator"
-      },
-      {
         "@id": "urn:ngm:class:threshold-signature-scheme",
         "label": "Threshold Signature Scheme"
       },
@@ -693,7 +661,7 @@ alias:: BC-0440-blockchain-interoperability
         "label": "Across Protocol"
       },
       {
-        "@id": "urn:ngm:class:arbitrum-orbit",
+        "@id": "urn:ngm:class:arbitrum",
         "label": "Arbitrum Orbit"
       },
       {
@@ -729,7 +697,7 @@ alias:: BC-0440-blockchain-interoperability
         "label": "LayerZero"
       },
       {
-        "@id": "urn:ngm:class:optimism-superchain",
+        "@id": "urn:ngm:class:optimism",
         "label": "Optimism Superchain"
       },
       {
@@ -767,11 +735,7 @@ alias:: BC-0440-blockchain-interoperability
         "label": "Cross-Chain NFT"
       },
       {
-        "@id": "urn:ngm:class:interchain-identity",
-        "label": "Interchain Identity"
-      },
-      {
-        "@id": "urn:ngm:class:multi-chain-governance",
+        "@id": "urn:ngm:class:cross-chain-governance",
         "label": "Multi-Chain Governance"
       },
       {
@@ -797,16 +761,8 @@ alias:: BC-0440-blockchain-interoperability
         "label": "ISO 20022"
       },
       {
-        "@id": "urn:ngm:class:itu-cross-chain-reference-architecture",
-        "label": "ITU Cross-Chain Reference Architecture"
-      },
-      {
         "@id": "urn:ngm:class:open-bridge-standard",
         "label": "Open Bridge Standard"
-      },
-      {
-        "@id": "urn:ngm:class:xcm-format-specification",
-        "label": "XCM Format Specification"
       }
     ],
     "bridgesTo": [

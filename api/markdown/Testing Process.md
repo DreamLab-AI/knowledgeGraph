@@ -148,31 +148,15 @@ public:: true
       {
         "@id": "urn:ngm:class:unit-testing",
         "label": "Unit Testing"
-      },
-      {
-        "@id": "urn:ngm:class:user-acceptance-testing",
-        "label": "User Acceptance Testing"
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:defect-tracking-system",
-        "label": "Defect Tracking System"
-      },
-      {
-        "@id": "urn:ngm:class:test-automation-framework",
-        "label": "Test Automation Framework"
-      },
       {
         "@id": "urn:ngm:class:test-data-management",
         "label": "Test Data Management"
       }
     ],
     "enables": [
-      {
-        "@id": "urn:ngm:class:quality-validation",
-        "label": "Quality Validation"
-      },
       {
         "@id": "urn:ngm:class:compliance-verification",
         "label": "Compliance Verification"
@@ -187,10 +171,6 @@ public:: true
       }
     ],
     "partOf": [
-      {
-        "@id": "urn:ngm:class:development-workflow",
-        "label": "Development Workflow"
-      },
       {
         "@id": "urn:ngm:class:quality-assurance",
         "label": "Quality Assurance"

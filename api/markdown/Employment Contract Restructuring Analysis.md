@@ -46,11 +46,14 @@ elevatedFrom:: [[Role reorg]]
   ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:augmented-connected-workforce", "label": "Augmented Connected Workforce"},
-      {"@id": "urn:ngm:class:economics", "label": "Economics"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:civil-service-job", "label": "civil service job"}
+      {
+        "@id": "urn:ngm:class:augmented-connected-workforce",
+        "label": "Augmented Connected Workforce"
+      },
+      {
+        "@id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
     ]
   },
   "quality": 0.5,

@@ -24,57 +24,120 @@ public:: true
   "domain": "machine-learning",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"}
+    {
+      "@id": "urn:ngm:class:bayesian-inference",
+      "label": "Bayesian Inference"
+    }
   ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:markov-chain-monte-carlo", "label": "Markov Chain Monte Carlo"},
-      {"@id": "urn:ngm:class:probabilistic-programming", "label": "Probabilistic Programming"}
+      {
+        "@id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-programming",
+        "label": "Probabilistic Programming"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:leapfrog-integrator", "label": "Leapfrog Integrator"},
-      {"@id": "urn:ngm:class:metropolis-hastings", "label": "Metropolis-Hastings"},
-      {"@id": "urn:ngm:class:no-u-turn-sampler", "label": "No-U-Turn Sampler"}
+      {
+        "@id": "urn:ngm:class:metropolis-hastings",
+        "label": "Metropolis-Hastings"
+      },
+      {
+        "@id": "urn:ngm:class:no-u-turn-sampler",
+        "label": "No-U-Turn Sampler"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:automatic-differentiation", "label": "Automatic Differentiation"},
-      {"@id": "urn:ngm:class:gradient-computation", "label": "Gradient Computation"}
+      {
+        "@id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-computation",
+        "label": "Gradient Computation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:gaussian-distribution", "label": "Gaussian Distribution"},
-      {"@id": "urn:ngm:class:hamiltonian-dynamics", "label": "Hamiltonian Dynamics"},
-      {"@id": "urn:ngm:class:phase-space", "label": "Phase Space"}
+      {
+        "@id": "urn:ngm:class:gaussian-distribution",
+        "label": "Gaussian Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:hamiltonian-dynamics",
+        "label": "Hamiltonian Dynamics"
+      },
+      {
+        "@id": "urn:ngm:class:phase-space",
+        "label": "Phase Space"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bayesian-optimisation", "label": "Bayesian Optimisation"},
-      {"@id": "urn:ngm:class:posterior-inference", "label": "Posterior Inference"},
-      {"@id": "urn:ngm:class:uncertainty-quantification", "label": "Uncertainty Quantification"},
-      {"@id": "urn:ngm:class:hierarchical-modelling", "label": "Hierarchical Modelling"}
+      {
+        "@id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:posterior-inference",
+        "label": "Posterior Inference"
+      },
+      {
+        "@id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
-      {"@id": "urn:ngm:class:detailed-balance", "label": "Detailed Balance"}
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:detailed-balance",
+        "label": "Detailed Balance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:variational-inference", "label": "Variational Inference"},
-      {"@id": "urn:ngm:class:random-walk-metropolis", "label": "Random Walk Metropolis"},
-      {"@id": "urn:ngm:class:gibbs-sampling", "label": "Gibbs Sampling"}
+      {
+        "@id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "@id": "urn:ngm:class:gibbs-sampling",
+        "label": "Gibbs Sampling"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:molecular-dynamics", "label": "Molecular Dynamics"},
-      {"@id": "urn:ngm:class:quantum-field-theory", "label": "Quantum Field Theory"}
+      {
+        "@id": "urn:ngm:class:molecular-dynamics",
+        "label": "Molecular Dynamics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:gaussian-process", "label": "Gaussian Process"},
-      {"@id": "urn:ngm:class:bayesian-deep-learning", "label": "Bayesian Deep Learning"},
-      {"@id": "urn:ngm:class:inference-algorithm", "label": "Inference Algorithm"},
-      {"@id": "urn:ngm:class:stan-language", "label": "Stan Language"},
-      {"@id": "urn:ngm:class:normalising-flow", "label": "Normalising Flow"},
-      {"@id": "urn:ngm:class:riemannian-manifold", "label": "Riemannian Manifold"}
+      {
+        "@id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-deep-learning",
+        "label": "Bayesian Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:inference-algorithm",
+        "label": "Inference Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:normalising-flow",
+        "label": "Normalising Flow"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:hybrid-monte-carlo", "label": "Hybrid Monte Carlo"}
+    {
+      "@id": "urn:ngm:class:hybrid-monte-carlo",
+      "label": "Hybrid Monte Carlo"
+    }
   ],
   "quality": 0.72,
   "provenance": {

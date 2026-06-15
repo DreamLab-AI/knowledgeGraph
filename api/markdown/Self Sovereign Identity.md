@@ -455,8 +455,8 @@ alias:: BC-0188-self-sovereign-identity, BC-0456-self-sovereign-identity, Self-S
   "relations": {
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:decentralised-identity",
-        "label": "Decentralised Identity"
+        "@id": "urn:ngm:class:privacy-enhancing-technologies",
+        "label": "Privacy Enhancing Technologies"
       }
     ],
     "hasPart": [
@@ -475,10 +475,6 @@ alias:: BC-0188-self-sovereign-identity, BC-0456-self-sovereign-identity, Self-S
       {
         "@id": "urn:ngm:class:didcomm",
         "label": "DIDComm"
-      },
-      {
-        "@id": "urn:ngm:class:link-secret",
-        "label": "Link Secret"
       },
       {
         "@id": "urn:ngm:class:revocation-registry",
@@ -511,19 +507,11 @@ alias:: BC-0188-self-sovereign-identity, BC-0456-self-sovereign-identity, Self-S
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:issuer-agent",
-        "label": "Issuer Agent"
-      },
-      {
         "@id": "urn:ngm:class:key-management",
         "label": "Key Management"
       },
       {
-        "@id": "urn:ngm:class:verifier-agent",
-        "label": "Verifier Agent"
-      },
-      {
-        "@id": "urn:ngm:class:wallet-software",
+        "@id": "urn:ngm:class:wallet",
         "label": "Wallet Software"
       },
       {
@@ -553,10 +541,6 @@ alias:: BC-0188-self-sovereign-identity, BC-0456-self-sovereign-identity, Self-S
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:correlation-resistance",
-        "label": "Correlation Resistance"
-      },
-      {
         "@id": "urn:ngm:class:cross-border-identity",
         "label": "Cross-Border Identity"
       },
@@ -573,11 +557,7 @@ alias:: BC-0188-self-sovereign-identity, BC-0456-self-sovereign-identity, Self-S
         "label": "Portable Identity"
       },
       {
-        "@id": "urn:ngm:class:privacy-preserving-kyc",
-        "label": "Privacy-Preserving KYC"
-      },
-      {
-        "@id": "urn:ngm:class:reusable-identity-verification",
+        "@id": "urn:ngm:class:identity-verification",
         "label": "Reusable Identity Verification"
       },
       {
@@ -585,7 +565,7 @@ alias:: BC-0188-self-sovereign-identity, BC-0456-self-sovereign-identity, Self-S
         "label": "Selective Disclosure"
       },
       {
-        "@id": "urn:ngm:class:zero-knowledge-predicate-proof",
+        "@id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Predicate Proof"
       }
     ],
@@ -603,12 +583,8 @@ alias:: BC-0188-self-sovereign-identity, BC-0456-self-sovereign-identity, Self-S
         "label": "DIDComm v2"
       },
       {
-        "@id": "urn:ngm:class:iso-18013-5",
+        "@id": "urn:ngm:class:iso-iec-18013-5-m-dl",
         "label": "ISO 18013-5"
-      },
-      {
-        "@id": "urn:ngm:class:open-id-for-verifiable-credentials",
-        "label": "OpenID for Verifiable Credentials"
       },
       {
         "@id": "urn:ngm:class:sd-jwt",
@@ -637,16 +613,8 @@ alias:: BC-0188-self-sovereign-identity, BC-0456-self-sovereign-identity, Self-S
         "label": "Bitstring Status List"
       },
       {
-        "@id": "urn:ngm:class:camenisch-lysyanskaya-signatures",
-        "label": "Camenisch-Lysyanskaya Signatures"
-      },
-      {
         "@id": "urn:ngm:class:cbor",
         "label": "CBOR"
-      },
-      {
-        "@id": "urn:ngm:class:ecdh-1-pu",
-        "label": "ECDH-1PU"
       },
       {
         "@id": "urn:ngm:class:ed-dsa",
@@ -665,7 +633,7 @@ alias:: BC-0188-self-sovereign-identity, BC-0456-self-sovereign-identity, Self-S
         "label": "Sidetree Protocol"
       },
       {
-        "@id": "urn:ngm:class:xchacha20-poly1305",
+        "@id": "urn:ngm:class:cha-cha20-poly1305",
         "label": "XChacha20Poly1305"
       }
     ],
@@ -709,10 +677,6 @@ alias:: BC-0188-self-sovereign-identity, BC-0456-self-sovereign-identity, Self-S
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:digital-government",
-        "label": "Digital Government"
-      },
-      {
         "@id": "urn:ngm:class:e-idas",
         "label": "eIDAS"
       },
@@ -723,14 +687,6 @@ alias:: BC-0188-self-sovereign-identity, BC-0456-self-sovereign-identity, Self-S
       {
         "@id": "urn:ngm:class:gdpr",
         "label": "GDPR"
-      },
-      {
-        "@id": "urn:ngm:class:healthcare-identity",
-        "label": "Healthcare Identity"
-      },
-      {
-        "@id": "urn:ngm:class:io-t-security",
-        "label": "IoT Security"
       },
       {
         "@id": "urn:ngm:class:supply-chain-provenance",
@@ -777,12 +733,6 @@ alias:: BC-0188-self-sovereign-identity, BC-0456-self-sovereign-identity, Self-S
       {
         "@id": "urn:ngm:class:w3-c",
         "label": "W3C"
-      }
-    ],
-    "bridgesTo": [
-      {
-        "@id": "urn:ngm:class:privacy-enhancing-technologies",
-        "label": "Privacy Enhancing Technologies"
       }
     ]
   },

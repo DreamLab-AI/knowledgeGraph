@@ -145,7 +145,7 @@ public:: true
         "label": "Training Data"
       },
       {
-        "@id": "urn:ngm:class:multilingual-corpus",
+        "@id": "urn:ngm:class:parallel-corpus",
         "label": "Multilingual Corpus"
       },
       {
@@ -163,7 +163,7 @@ public:: true
         "label": "Large Language Models"
       },
       {
-        "@id": "urn:ngm:class:cross-lingual-transfer-learning",
+        "@id": "urn:ngm:class:transfer-learning",
         "label": "Cross-Lingual Transfer Learning"
       },
       {
@@ -173,21 +173,17 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:document-localisation",
+        "@id": "urn:ngm:class:localisation",
         "label": "Document Localisation"
       },
       {
         "@id": "urn:ngm:class:real-time-interpretation",
         "label": "Real-Time Interpretation"
-      },
-      {
-        "@id": "urn:ngm:class:multilingual-content-access",
-        "label": "Multilingual Content Access"
       }
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:parallel-corpora",
+        "@id": "urn:ngm:class:parallel-corpus",
         "label": "Parallel Corpora"
       },
       {
@@ -203,15 +199,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:rule-based-machine-translation",
-        "label": "Rule-Based Machine Translation"
-      },
-      {
-        "@id": "urn:ngm:class:statistical-machine-translation",
-        "label": "Statistical Machine Translation"
-      },
-      {
-        "@id": "urn:ngm:class:human-translation",
+        "@id": "urn:ngm:class:translation",
         "label": "Human Translation"
       }
     ],
@@ -231,10 +219,6 @@ public:: true
       {
         "@id": "urn:ngm:class:bleu-score",
         "label": "BLEU Score"
-      },
-      {
-        "@id": "urn:ngm:class:low-resource-language",
-        "label": "Low-Resource Language"
       }
     ],
     "bridgesTo": [

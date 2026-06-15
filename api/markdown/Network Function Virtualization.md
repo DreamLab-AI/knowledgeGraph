@@ -60,57 +60,84 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {"@id": "urn:ngm:class:virtual-network-function", "label": "Virtual Network Function"},
-      {"@id": "urn:ngm:class:nfv-infrastructure", "label": "NFV Infrastructure"},
-      {"@id": "urn:ngm:class:nfv-mano", "label": "NFV Management and Orchestration"}
-    ],
     "requires": [
-      {"@id": "urn:ngm:class:hypervisor", "label": "Hypervisor"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:virtualisation", "label": "Virtualisation"}
+      {
+        "@id": "urn:ngm:class:hypervisor",
+        "label": "Hypervisor"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:virtualisation",
+        "label": "Virtualisation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:network-scalability", "label": "Network Scalability"},
-      {"@id": "urn:ngm:class:network-slicing", "label": "Network Slicing"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:service-function-chaining", "label": "Service Function Chaining"}
+      {
+        "@id": "urn:ngm:class:network-slicing",
+        "label": "Network Slicing"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:container-orchestration", "label": "Container Orchestration"},
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:open-stack", "label": "OpenStack"}
-    ],
-    "implements": [
-      {"@id": "urn:ngm:class:etsi-nfv-standard", "label": "ETSI NFV Standard"}
+      {
+        "@id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:software-defined-networking", "label": "Software-Defined Networking"},
-      {"@id": "urn:ngm:class:commercial-off-the-shelf-hardware", "label": "Commercial Off-the-Shelf Hardware"}
+      {
+        "@id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:5g-networks", "label": "5G Networks"},
-      {"@id": "urn:ngm:class:telecom-cloud", "label": "Telecom Cloud"}
+      {
+        "@id": "urn:ngm:class:5g-networks",
+        "label": "5G Networks"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:etsi", "label": "ETSI"},
-      {"@id": "urn:ngm:class:ietf", "label": "IETF"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:network-appliance", "label": "Network Appliance"},
-      {"@id": "urn:ngm:class:proprietary-hardware", "label": "Proprietary Hardware"}
+      {
+        "@id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      },
+      {
+        "@id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:software-defined-networking", "label": "Software-Defined Networking"},
-      {"@id": "urn:ngm:class:cloud-native-network-function", "label": "Cloud-Native Network Function"}
+      {
+        "@id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"},
-      {"@id": "urn:ngm:class:edge-ai", "label": "Edge AI"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:nfv", "label": "NFV"}
+    {
+      "@id": "urn:ngm:class:nfv",
+      "label": "NFV"
+    }
   ],
   "quality": 0.74,
   "provenance": {

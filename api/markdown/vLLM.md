@@ -95,10 +95,6 @@ public:: true
       {
         "@id": "urn:ngm:class:continuous-batching",
         "label": "Continuous Batching"
-      },
-      {
-        "@id": "urn:ngm:class:high-throughput-inference",
-        "label": "High-Throughput Inference"
       }
     ],
     "implements": [
@@ -107,7 +103,7 @@ public:: true
         "label": "Paged Attention"
       },
       {
-        "@id": "urn:ngm:class:openai-api",
+        "@id": "urn:ngm:class:openai-research-organisation-api",
         "label": "OpenAI API"
       }
     ],
@@ -137,10 +133,6 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:open-weight-models",
-        "label": "Open-Weight Models"
-      },
-      {
         "@id": "urn:ngm:class:speculative-decoding",
         "label": "Speculative Decoding"
       }
@@ -149,10 +141,6 @@ public:: true
       {
         "@id": "urn:ngm:class:triton-inference-server",
         "label": "Triton Inference Server"
-      },
-      {
-        "@id": "urn:ngm:class:text-generation-inference",
-        "label": "Text Generation Inference"
       }
     ],
     "relatedTo": [

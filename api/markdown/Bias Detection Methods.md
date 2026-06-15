@@ -67,56 +67,145 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:fairness-metrics", "label": "Fairness Metrics"},
-      {"@id": "urn:ngm:class:disparate-impact", "label": "Disparate Impact"},
-      {"@id": "urn:ngm:class:fairness-auditing-tools", "label": "Fairness Auditing Tools"},
-      {"@id": "urn:ngm:class:algorithmic-bias", "label": "Algorithmic Bias"},
-      {"@id": "urn:ngm:class:statistical-hypothesis-testing", "label": "Statistical Hypothesis Testing"},
-      {"@id": "urn:ngm:class:counterfactual-analysis", "label": "Counterfactual Analysis"},
-      {"@id": "urn:ngm:class:intersectional-analysis", "label": "Intersectional Analysis"}
+      {
+        "@id": "urn:ngm:class:fairness-metrics",
+        "label": "Fairness Metrics"
+      },
+      {
+        "@id": "urn:ngm:class:disparate-impact",
+        "label": "Disparate Impact"
+      },
+      {
+        "@id": "urn:ngm:class:fairness-auditing-tools",
+        "label": "Fairness Auditing Tools"
+      },
+      {
+        "@id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-hypothesis-testing",
+        "label": "Statistical Hypothesis Testing"
+      },
+      {
+        "@id": "urn:ngm:class:counterfactual-analysis",
+        "label": "Counterfactual Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:intersectional-fairness",
+        "label": "Intersectional Analysis"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:protected-attribute-data", "label": "Protected Attribute Data"},
-      {"@id": "urn:ngm:class:ground-truth-labels", "label": "Ground Truth Labels"},
-      {"@id": "urn:ngm:class:statistical-significance-testing", "label": "Statistical Significance Testing"}
+      {
+        "@id": "urn:ngm:class:ground-truth-labels",
+        "label": "Ground Truth Labels"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-significance-testing",
+        "label": "Statistical Significance Testing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:bias-mitigation", "label": "Bias Mitigation"},
-      {"@id": "urn:ngm:class:ai-fairness-certification", "label": "AI Fairness Certification"},
-      {"@id": "urn:ngm:class:regulatory-compliance-reporting", "label": "Regulatory Compliance Reporting"}
+      {
+        "@id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation"
+      },
+      {
+        "@id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness Certification"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Compliance Reporting"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:causal-inference", "label": "Causal Inference"},
-      {"@id": "urn:ngm:class:machine-learning-model-evaluation", "label": "Machine Learning Model Evaluation"},
-      {"@id": "urn:ngm:class:confusion-matrix", "label": "Confusion Matrix"}
+      {
+        "@id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Machine Learning Model Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-fairness", "label": "AI Fairness"},
-      {"@id": "urn:ngm:class:responsible-ai", "label": "Responsible AI"},
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
-      {"@id": "urn:ngm:class:ai-audit", "label": "AI Audit"}
+      {
+        "@id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:ai-audit",
+        "label": "AI Audit"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:ieee-p7003-2021", "label": "IEEE P7003-2021"},
-      {"@id": "urn:ngm:class:iso-iec-tr-24027", "label": "ISO-IEC TR 24027"},
-      {"@id": "urn:ngm:class:nist-sp-1270", "label": "NIST SP 1270"}
+      {
+        "@id": "urn:ngm:class:ieee-p-7003-2021",
+        "label": "IEEE P7003-2021"
+      },
+      {
+        "@id": "urn:ngm:class:iso-iec-tr-24027",
+        "label": "ISO-IEC TR 24027"
+      },
+      {
+        "@id": "urn:ngm:class:nist-sp-1270",
+        "label": "NIST SP 1270"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:bias-amplification", "label": "Bias Amplification"}
+      {
+        "@id": "urn:ngm:class:bias",
+        "label": "Bias Amplification"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:algorithmic-accountability", "label": "Algorithmic Accountability"},
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:bias-in-large-language-models", "label": "Bias in Large Language Models"}
+      {
+        "@id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:bias-in-large-language-models",
+        "label": "Bias in Large Language Models"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:algorithmic-bias-detection", "label": "Algorithmic Bias Detection"},
-    {"@id": "urn:ngm:class:fairness-testing", "label": "Fairness Testing"}
+    {
+      "@id": "urn:ngm:class:algorithmic-bias-detection",
+      "label": "Algorithmic Bias Detection"
+    },
+    {
+      "@id": "urn:ngm:class:fairness-testing",
+      "label": "Fairness Testing"
+    }
   ],
   "quality": 0.75,
   "provenance": {

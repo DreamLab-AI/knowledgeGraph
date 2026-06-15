@@ -63,21 +63,7 @@ public:: true
     "label": "Fiat Currency"
   },
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:federal-reserve-note",
-        "label": "Federal Reserve Note"
-      },
-      {
-        "@id": "urn:ngm:class:us-treasury-bill",
-        "label": "US Treasury Bill"
-      }
-    ],
     "partOf": [
-      {
-        "@id": "urn:ngm:class:global-reserve-currency-system",
-        "label": "Global Reserve Currency System"
-      },
       {
         "@id": "urn:ngm:class:bretton-woods-system",
         "label": "Bretton Woods System"
@@ -103,10 +89,6 @@ public:: true
         "label": "USDT"
       },
       {
-        "@id": "urn:ngm:class:dollar-denominated-settlement",
-        "label": "Dollar-Denominated Settlement"
-      },
-      {
         "@id": "urn:ngm:class:stablecoin",
         "label": "Stablecoin"
       }
@@ -115,10 +97,6 @@ public:: true
       {
         "@id": "urn:ngm:class:federal-reserve",
         "label": "Federal Reserve"
-      },
-      {
-        "@id": "urn:ngm:class:us-government-debt",
-        "label": "US Government Debt"
       }
     ],
     "supports": [
@@ -143,10 +121,6 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:euro",
-        "label": "Euro"
-      },
-      {
         "@id": "urn:ngm:class:bitcoin",
         "label": "Bitcoin"
       },
@@ -165,7 +139,7 @@ public:: true
         "label": "Decentralised Finance"
       },
       {
-        "@id": "urn:ngm:class:cross-border-payment",
+        "@id": "urn:ngm:class:cross-border-payments",
         "label": "Cross-Border Payment"
       }
     ],
@@ -177,10 +151,6 @@ public:: true
       {
         "@id": "urn:ngm:class:inflation",
         "label": "Inflation"
-      },
-      {
-        "@id": "urn:ngm:class:petrodollar",
-        "label": "Petrodollar"
       }
     ]
   },

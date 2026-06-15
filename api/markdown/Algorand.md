@@ -23,55 +23,131 @@ public:: true
   "definition": "Algorand is a permissionless, pure proof-of-stake Layer 1 blockchain protocol designed by MIT cryptographer Silvio Micali, providing instant transaction finality, high throughput, and carbon-negative operation through a cryptographically random committee-selection consensus mechanism. It resolves the blockchain trilemma of security, scalability, and decentralisation without forks by ensuring all confirmed blocks are final. The Algorand Virtual Machine (AVM) supports smart contract execution in TEAL bytecode and, via ARC standards, enables NFTs, DeFi, and tokenised assets at scale.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:blockchain-protocol", "label": "Blockchain Protocol"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain-protocol",
+      "label": "Blockchain Protocol"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:pure-proof-of-stake", "label": "Pure Proof of Stake"},
-      {"@id": "urn:ngm:class:verifiable-random-function", "label": "Verifiable Random Function"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:byzantine-agreement", "label": "Byzantine Agreement"},
-      {"@id": "urn:ngm:class:cryptographic-sortition", "label": "Cryptographic Sortition"},
-      {"@id": "urn:ngm:class:teal-bytecode", "label": "TEAL Bytecode"}
+      {
+        "@id": "urn:ngm:class:pure-proof-of-stake",
+        "label": "Pure Proof of Stake"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-random-function",
+        "label": "Verifiable Random Function"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:byzantine-agreement",
+        "label": "Byzantine Agreement"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-sortition",
+        "label": "Cryptographic Sortition"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:decentralized-application", "label": "Decentralized Application"},
-      {"@id": "urn:ngm:class:asset-tokenization", "label": "Asset Tokenization"},
-      {"@id": "urn:ngm:class:decentralized-finance", "label": "Decentralized Finance"},
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"},
-      {"@id": "urn:ngm:class:non-fungible-token", "label": "Non-Fungible Token"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-application",
+        "label": "Decentralized Application"
+      },
+      {
+        "@id": "urn:ngm:class:asset-tokenization",
+        "label": "Asset Tokenization"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:algorand-virtual-machine", "label": "Algorand Virtual Machine"},
-      {"@id": "urn:ngm:class:arc-token-standard", "label": "ARC Token Standard"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-chain Governance"}
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:algo-token", "label": "ALGO Token"},
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:cross-border-payment", "label": "Cross-Border Payment"},
-      {"@id": "urn:ngm:class:stablecoin", "label": "Stablecoin"},
-      {"@id": "urn:ngm:class:real-world-asset-tokenization", "label": "Real-World Asset Tokenization"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+      {
+        "@id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payment"
+      },
+      {
+        "@id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "@id": "urn:ngm:class:real-world-asset-tokenisation",
+        "label": "Real-World Asset Tokenization"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:delegated-proof-of-stake", "label": "Delegated Proof of Stake"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:financial-technology", "label": "Financial Technology"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+      {
+        "@id": "urn:ngm:class:financial-technology",
+        "label": "Financial Technology"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:blockchain-scalability", "label": "Blockchain Scalability"},
-      {"@id": "urn:ngm:class:state-proof", "label": "State Proof"},
-      {"@id": "urn:ngm:class:blockchain-interoperability", "label": "Blockchain Interoperability"}
+      {
+        "@id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:state-proof",
+        "label": "State Proof"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:algorand-network", "label": "Algorand Network"}
+    {
+      "@id": "urn:ngm:class:algorand-network",
+      "label": "Algorand Network"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:ontology-mesh",

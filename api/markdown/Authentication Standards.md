@@ -94,10 +94,6 @@ public:: true
       {
         "@id": "urn:ngm:class:webauthn",
         "label": "WebAuthn"
-      },
-      {
-        "@id": "urn:ngm:class:passkeys",
-        "label": "Passkeys"
       }
     ],
     "partOf": [
@@ -108,19 +104,11 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:client-implementation",
-        "label": "Client Implementation"
-      },
-      {
-        "@id": "urn:ngm:class:hardware-authenticators",
-        "label": "Hardware Authenticators"
-      },
-      {
-        "@id": "urn:ngm:class:public-key-cryptography",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key-cryptography",
         "label": "Public Key Cryptography"
       },
       {
-        "@id": "urn:ngm:class:digital-certificates",
+        "@id": "urn:ngm:class:digital-certificate",
         "label": "Digital Certificates"
       }
     ],
@@ -132,10 +120,6 @@ public:: true
       {
         "@id": "urn:ngm:class:phishing-resistance",
         "label": "Phishing Resistance"
-      },
-      {
-        "@id": "urn:ngm:class:secure-platform-access",
-        "label": "Secure Platform Access"
       },
       {
         "@id": "urn:ngm:class:multi-factor-authentication",
@@ -150,7 +134,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:nist-sp-800-63b",
+        "@id": "urn:ngm:class:nist-sp-800-63",
         "label": "NIST SP 800-63B"
       }
     ],
@@ -200,7 +184,7 @@ public:: true
         "label": "Blockchain Identity"
       },
       {
-        "@id": "urn:ngm:class:metaverse-access-control",
+        "@id": "urn:ngm:class:access-control",
         "label": "Metaverse Access Control"
       }
     ],
@@ -210,7 +194,7 @@ public:: true
         "label": "OAuth2"
       },
       {
-        "@id": "urn:ngm:class:openid-connect",
+        "@id": "urn:ngm:class:open-id-connect",
         "label": "OpenID Connect"
       }
     ]

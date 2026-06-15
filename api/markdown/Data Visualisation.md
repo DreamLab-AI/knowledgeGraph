@@ -68,49 +68,96 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:chart", "label": "Chart"},
-      {"@id": "urn:ngm:class:dashboard", "label": "Dashboard"},
-      {"@id": "urn:ngm:class:geospatial-map", "label": "Geospatial Map"},
-      {"@id": "urn:ngm:class:network-graph", "label": "Network Graph"}
+      {
+        "@id": "urn:ngm:class:dashboard",
+        "label": "Dashboard"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:rendering-engine", "label": "Rendering Engine"},
-      {"@id": "urn:ngm:class:data-access-interface", "label": "Data Access Interface"}
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      },
+      {
+        "@id": "urn:ngm:class:data-access-interface",
+        "label": "Data Access Interface"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:dimensionality-reduction", "label": "Dimensionality Reduction"},
-      {"@id": "urn:ngm:class:colour-theory", "label": "Colour Theory"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:decision-support-system", "label": "Decision Support System"},
-      {"@id": "urn:ngm:class:exploratory-data-analysis", "label": "Exploratory Data Analysis"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:decision-support",
+        "label": "Decision Support System"
+      },
+      {
+        "@id": "urn:ngm:class:exploratory-data-analysis",
+        "label": "Exploratory Data Analysis"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:data-model", "label": "Data Model"},
-      {"@id": "urn:ngm:class:graphics-processing-unit", "label": "Graphics Processing Unit"}
+      {
+        "@id": "urn:ngm:class:data-model",
+        "label": "Data Model"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:telecollaboration", "label": "Telecollaboration"},
-      {"@id": "urn:ngm:class:business-intelligence", "label": "Business Intelligence"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:data-table", "label": "Data Table"},
-      {"@id": "urn:ngm:class:text-report", "label": "Text Report"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:telecollaboration",
+        "label": "Telecollaboration"
+      },
+      {
+        "@id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:information-design", "label": "Information Design"},
-      {"@id": "urn:ngm:class:scientific-visualisation", "label": "Scientific Visualisation"},
-      {"@id": "urn:ngm:class:visual-analytics", "label": "Visual Analytics"}
+      {
+        "@id": "urn:ngm:class:scientific-visualisation",
+        "label": "Scientific Visualisation"
+      }
     ]
   },
   "provenance": {

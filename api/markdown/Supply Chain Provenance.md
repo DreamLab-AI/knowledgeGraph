@@ -23,56 +23,137 @@ public:: true
   "definition": "Supply chain provenance is the verified documentary record of an item's origin, material composition, transformation steps, custody changes, and transportation history from raw material extraction through to the end consumer, enabling authenticity verification, ethical sourcing attestation, and regulatory compliance. It extends data provenance principles to physical goods, typically combining IoT sensor data, third-party audit records, and cryptographic anchors (hashes or blockchain transactions) to create an immutable chain of evidence that resists falsification and supports granular attribution.",
   "domain": "supply-chain",
   "maturity": "established",
-  "subClassOf": {"@id": "urn:ngm:class:provenance-tracking", "label": "Provenance Tracking"},
+  "subClassOf": {
+    "@id": "urn:ngm:class:provenance-tracking",
+    "label": "Provenance Tracking"
+  },
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:supply-chain", "label": "Supply Chain"},
-      {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"},
-      {"@id": "urn:ngm:class:chain-of-custody", "label": "Chain of Custody"},
-      {"@id": "urn:ngm:class:digital-product-passport", "label": "Digital Product Passport"},
-      {"@id": "urn:ngm:class:conflict-minerals", "label": "Conflict Minerals"}
+      {
+        "@id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      },
+      {
+        "@id": "urn:ngm:class:chain-of-custody",
+        "label": "Chain of Custody"
+      },
+      {
+        "@id": "urn:ngm:class:digital-product-passport",
+        "label": "Digital Product Passport"
+      },
+      {
+        "@id": "urn:ngm:class:conflict-mineral-tracking",
+        "label": "Conflict Minerals"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:anti-counterfeiting", "label": "Anti Counterfeiting"},
-      {"@id": "urn:ngm:class:supply-chain-transparency", "label": "Supply Chain Transparency"},
-      {"@id": "urn:ngm:class:ethical-sourcing", "label": "Ethical Sourcing"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:anti-counterfeiting",
+        "label": "Anti Counterfeiting"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "@id": "urn:ngm:class:ethical-sourcing",
+        "label": "Ethical Sourcing"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:supply-chain-blockchain", "label": "Supply Chain Blockchain"},
-      {"@id": "urn:ngm:class:audit-trail", "label": "Audit Trail"},
-      {"@id": "urn:ngm:class:iot-sensor-data", "label": "IoT Sensor Data"},
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:cryptographic-hashing", "label": "Cryptographic Hashing"},
-      {"@id": "urn:ngm:class:decentralized-identifiers", "label": "Decentralized Identifiers"}
+      {
+        "@id": "urn:ngm:class:supply-chain-blockchain",
+        "label": "Supply Chain Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-data",
+        "label": "IoT Sensor Data"
+      },
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hashing"
+      },
+      {
+        "@id": "urn:ngm:class:decentralized-identifiers",
+        "label": "Decentralized Identifiers"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:provenance-verification", "label": "Provenance Verification"},
-      {"@id": "urn:ngm:class:esg-reporting", "label": "ESG Reporting"},
-      {"@id": "urn:ngm:class:food-safety", "label": "Food Safety"}
+      {
+        "@id": "urn:ngm:class:provenance-verification",
+        "label": "Provenance Verification"
+      },
+      {
+        "@id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "@id": "urn:ngm:class:food-safety",
+        "label": "Food Safety"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"},
-      {"@id": "urn:ngm:class:unique-identifier", "label": "Unique Identifier"}
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:unique-identifier",
+        "label": "Unique Identifier"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:epcis", "label": "EPCIS"},
-      {"@id": "urn:ngm:class:gs1-standards", "label": "GS1 Standards"}
+      {
+        "@id": "urn:ngm:class:gs1-epcis",
+        "label": "EPCIS"
+      },
+      {
+        "@id": "urn:ngm:class:gs1-standards",
+        "label": "GS1 Standards"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:w3c-provenance", "label": "W3C PROV"},
-      {"@id": "urn:ngm:class:gs1-digital-link", "label": "GS1 Digital Link"}
-    ],
-    "contrastsWith": [
-      {"@id": "urn:ngm:class:self-reported-origin", "label": "Self-Reported Origin"}
+      {
+        "@id": "urn:ngm:class:provenance-standard",
+        "label": "W3C PROV"
+      },
+      {
+        "@id": "urn:ngm:class:gs1-digital-link",
+        "label": "GS1 Digital Link"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"}
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:product-provenance", "label": "Product Provenance"},
-    {"@id": "urn:ngm:class:supply-chain-traceability", "label": "Supply Chain Traceability"}
+    {
+      "@id": "urn:ngm:class:product-provenance",
+      "label": "Product Provenance"
+    },
+    {
+      "@id": "urn:ngm:class:supply-chain-traceability",
+      "label": "Supply Chain Traceability"
+    }
   ],
   "quality": 0.72,
   "provenance": {

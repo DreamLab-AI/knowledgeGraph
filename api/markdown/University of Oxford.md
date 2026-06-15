@@ -68,10 +68,6 @@ public:: true
       {
         "@id": "urn:ngm:class:oxford-internet-institute",
         "label": "Oxford Internet Institute"
-      },
-      {
-        "@id": "urn:ngm:class:oxford-robotics-institute",
-        "label": "Oxford Robotics Institute"
       }
     ],
     "enables": [
@@ -128,16 +124,12 @@ public:: true
         "label": "UK Research and Innovation"
       },
       {
-        "@id": "urn:ngm:class:cambridge-university",
+        "@id": "urn:ngm:class:university-of-cambridge",
         "label": "University of Cambridge"
       },
       {
         "@id": "urn:ngm:class:imperial-college-london",
         "label": "Imperial College London"
-      },
-      {
-        "@id": "urn:ngm:class:european-laboratory-for-molecular-biology",
-        "label": "European Laboratory for Molecular Biology"
       }
     ],
     "bridgesTo": [
@@ -150,7 +142,7 @@ public:: true
         "label": "Spatial Computing"
       },
       {
-        "@id": "urn:ngm:class:quantum-computing",
+        "@id": "urn:ngm:class:quantum-computation-paradigm",
         "label": "Quantum Computing"
       }
     ],
@@ -158,10 +150,6 @@ public:: true
       {
         "@id": "urn:ngm:class:russell-group",
         "label": "Russell Group"
-      },
-      {
-        "@id": "urn:ngm:class:uk-higher-education-sector",
-        "label": "UK Higher Education Sector"
       }
     ]
   },
